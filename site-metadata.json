@@ -80,7 +80,8 @@
                 "icon_class": "github",
                 "new_window": true
             }
-        ]
+        ],
+        "content": "github: https://github.com/bgoonz"
     },
     "title": "Stackbit Libris Theme",
     "domain": "https://best-celery-b2d7c.netlify.app"
