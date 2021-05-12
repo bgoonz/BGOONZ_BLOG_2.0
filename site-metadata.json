@@ -50,7 +50,7 @@
                 "subnav_links": [
                     {
                         "label": "Github HTML Previewer",
-                        "url": "#",
+                        "url": "#https://githtmlpreview.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
