@@ -6,7 +6,7 @@ excerpt: >-
   accumsan vis phasellus adipiscing. 
 date: '2019-04-24'
 thumb_image: images/4.jpg
-image: images/3.jpg
+image: images/10.jpg
 seo:
   title: Introducing The Libris Theme
   description: >-
