@@ -1,5 +1,5 @@
 ---
-title: 'Python '
+title: Python For Javascript Developers
 excerpt: >-
   Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa
   massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing
