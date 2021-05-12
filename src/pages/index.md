@@ -109,15 +109,8 @@ sections:
     col_number: two
     grid_items:
       - title: Overview
-        content: >+
-          **Programming\*\* Languages:\*\*JavaScript ES-6, NodeJS, React, HTML5,
-          CSS3, SCSS, Bash Shell, Excel, SQL, NoSQL, MATLAB, Python,
-          C++Databases:**PostgreSQL, MongoDB**Cloud:**Docker, AWS, Google App
-          Engine, Netlify, Digital Ocean, Heroku, Azure Cloud
-          Services**OS:**Linux, Windows (WSL), IOS**Agile:**GitHub, BitBucket,
-          Jira, Confluence**IDEs:**VSCode, Visual Studio, Atom, Code Blocks,
-          Sublime Text 3, Brackets
-
+        content: |
+          ![](/images/skillz.PNG)
         actions:
           - label: Learn More
             url: /overview
