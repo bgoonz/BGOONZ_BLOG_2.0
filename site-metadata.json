@@ -55,7 +55,6 @@
                 "has_subnav": false
             },
             {
-                "label": "lorem-ipsum",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
