@@ -59,7 +59,7 @@
                     },
                     {
                         "label": "Text Tools",
-                        "url": "#",
+                        "url": "#https://devtools42.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
