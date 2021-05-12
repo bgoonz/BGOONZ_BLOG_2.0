@@ -52,7 +52,7 @@ sections:
       cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
       consectetur lobortis.
     actions:
-      - label: View Demo
+      - label: 'Watch '
         url: /docs/getting-started
         style: primary
       - label: Get Started
