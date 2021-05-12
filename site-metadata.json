@@ -49,7 +49,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Github ",
+                        "label": "Github HTML Pr",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
