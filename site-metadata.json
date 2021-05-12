@@ -84,7 +84,6 @@
         "content": "My (now) Depreciated Blog: https://web-dev-resource-hub.netlify.app/",
         "links": [
             {
-                "label": "lorem-ipsum",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
