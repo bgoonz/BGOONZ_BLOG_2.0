@@ -1,9 +1,9 @@
 {
     "palette": "blue",
     "header": {
-        "title": "Libris",
+        "title": "WEB-DEV-HUB",
         "logo_img": "images/logo.svg",
-        "logo_img_alt": "Libris logo",
+        "logo_img_alt": "WEB-DEV-HUB logo",
         "has_nav": true,
         "nav_links": [
             {
@@ -57,7 +57,7 @@
         ]
     },
     "footer": {
-        "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=libris&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>",
+        "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=WEB-DEV-HUB&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>",
         "has_social": true,
         "social_links": [
             {
@@ -83,6 +83,6 @@
             }
         ]
     },
-    "title": "Stackbit Libris Theme",
+    "title": "Stackbit WEB-DEV-HUB Theme",
     "domain": "https://best-celery-b2d7c.netlify.app"
 }
