@@ -13,10 +13,32 @@
                 "has_subnav": false
             },
             {
-                "label": "Docs",
-                "url": "/docs",
+                "label": "Resources",
+                "url": "/https://lambda-resources.netlify.app/",
                 "style": "link",
-                "has_subnav": false
+                "has_subnav": false,
+                "subnav_links": [
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ]
+            },
+            {
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": false,
+                "subnav_links": [],
+                "type": "action_menu"
             },
             {
                 "label": "Blog",
@@ -36,7 +58,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "Sample Pages",
+                "label": "About",
                 "url": "#",
                 "style": "link",
                 "has_subnav": true,
@@ -47,8 +69,8 @@
                         "style": "link"
                     },
                     {
-                        "label": "Showcase",
-                        "url": "/showcase",
+                        "label": "Mini Projects",
+                        "url": "https://project-showcase-bgoonz.netlify.app/",
                         "style": "link"
                     }
                 ]
