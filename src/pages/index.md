@@ -52,7 +52,7 @@ sections:
     type: section_content
     image_position: left
     title: Musician
-    content: "\n\n#                                                              Hi\_\U0001F44B, I'm Bryan\n\n                                                                                                                            ![](/images/gravatar.png)\n\n"
+    content: "# Hi\_\U0001F44B, I'm Bryan\n\n```\n                                                                                                                        ![](/images/gravatar.png)\n\n\n\n```\n"
     actions: []
   - section_id: text-no-img
     type: section_content
