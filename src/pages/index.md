@@ -44,7 +44,7 @@ sections:
             style: link
   - section_id: text-img
     type: section_content
-    image: images/jamstack.svg
+    image: images/2.jpg
     image_position: left
     title: Musician
     content: >-
