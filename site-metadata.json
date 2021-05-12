@@ -69,7 +69,7 @@
             {
                 "label": "LinkedIn",
                 "url": "https://www.linkedin.com/in/bryan-guner-046199128/",
-                "style": "icon",
+                "style": "primary",
                 "icon_class": "linkedin",
                 "new_window": true
             },
