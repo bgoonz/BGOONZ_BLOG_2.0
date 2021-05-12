@@ -166,6 +166,11 @@ sections:
       - dolor sit amet
     actions: []
     type: section_content
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    subtitle: lorem-ipsum
+    col_number: three
+    type: section_docs
 seo:
   title: Stackbit Libris Theme
   description: The preview of the Libris theme
