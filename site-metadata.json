@@ -67,7 +67,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Ternary 2 If Else",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
