@@ -46,7 +46,18 @@
                 "label": "Tools",
                 "url": "/style-guide",
                 "style": "link",
-                "has_subnav": true
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ]
             },
             {
                 "label": "GitHub",
