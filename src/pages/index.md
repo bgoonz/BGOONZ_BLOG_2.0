@@ -3,7 +3,7 @@ title: Bryan Guner Web Dev Resource Gub
 sections:
   - section_id: hero
     type: section_hero
-    title: 'I am a musician/electrical Engineer turned '
+    title: 'I am a musician/electrical engineer turned '
     image: images/3.jpg
     content: >-
       This section can contain a subtitle or tagline. The recommended length is
