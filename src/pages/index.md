@@ -16,19 +16,19 @@ sections:
     type: section_grid
     col_number: three
     grid_items:
-      - title: Documentation
-        content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus. Vivamus rhoncus mattis varius.
+      - title: Blog
+        content: >
+          # A Quick Guide to Big-O Notation, Memoization, Tabulation, and
+          Sorting
+          ![](https://miro.medium.com/max/2000/0\*yjlSk3T9c2\_14in1.png)***Curating
+          Complexity: A Guide to Big-O Notation***
         actions:
           - label: Get Started
             url: /docs
             style: link
-      - title: Blog
-        content: >-
-          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
-          nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
+      - title: Tools
+        content: >
+          <https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb>
         actions:
           - label: View Posts
             url: /blog
@@ -44,16 +44,16 @@ sections:
             style: link
   - section_id: text-img
     type: section_content
-    image: images/jamstack.svg
+    image: images/2.jpg
     image_position: left
-    title: A Section With An Image
+    title: Musician
     content: >-
       Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
       cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
       consectetur lobortis.
     actions:
-      - label: View Demo
-        url: /docs/getting-started
+      - label: 'Watch '
+        url: 'https://www.youtube.com/watch?v=xGZSWvFess8&ab_channel=BryanGuner'
         style: primary
       - label: Get Started
         url: /docs/getting-started
