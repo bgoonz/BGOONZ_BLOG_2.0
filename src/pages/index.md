@@ -53,7 +53,7 @@ sections:
       consectetur lobortis.
     actions:
       - label: 'Watch '
-        url: /docs/getting-started
+        url: 'https://www.youtube.com/watch?v=xGZSWvFess8&ab_channel=BryanGuner'
         style: primary
       - label: Get Started
         url: /docs/getting-started
