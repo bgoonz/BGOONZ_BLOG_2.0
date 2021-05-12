@@ -58,7 +58,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Text Tools",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
