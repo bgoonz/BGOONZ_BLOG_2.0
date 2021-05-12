@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Bryan Guner Web Dev Resource Gub
 sections:
   - section_id: hero
     type: section_hero
