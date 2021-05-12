@@ -81,7 +81,18 @@
                 "new_window": true
             }
         ],
-        "content": "My (now) Depreciated Blog: https://web-dev-resource-hub.netlify.app/"
+        "content": "My (now) Depreciated Blog: https://web-dev-resource-hub.netlify.app/",
+        "links": [
+            {
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
+            }
+        ]
     },
     "title": "Stackbit Libris Theme",
     "domain": "https://best-celery-b2d7c.netlify.app"
