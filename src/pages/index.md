@@ -18,10 +18,16 @@ sections:
     grid_items:
       - title: Blog
         content: >
-          # A Quick Guide to Big-O Notation, Memoization, Tabulation, and
-          Sorting
-          ![](https://miro.medium.com/max/2000/0\*yjlSk3T9c2\_14in1.png)***Curating
-          Complexity: A Guide to Big-O Notation***
+          > A Quick Guide to Big-O Notation, Memoization, Tabulation, and
+          Sorting 
+
+          >
+
+          > ![](https://miro.medium.com/max/2000/0*yjlSk3T9c2_14in1.png)
+
+          >
+
+          > ***Curating Complexity: A Guide to Big-O Notation***
         actions:
           - label: Get Started
             url: /docs
