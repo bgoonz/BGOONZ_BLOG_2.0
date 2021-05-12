@@ -36,7 +36,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "Sample Pages",
+                "label": "About",
                 "url": "#",
                 "style": "link",
                 "has_subnav": true,
