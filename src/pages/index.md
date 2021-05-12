@@ -101,13 +101,6 @@ sections:
       - label: Get Started
         url: /docs/getting-started/installation
         style: primary
-      - label: lorem-ipsum
-        url: '#'
-        style: link
-        icon_class: dev
-        new_window: false
-        no_follow: false
-        type: action
 seo:
   title: Stackbit Libris Theme
   description: The preview of the Libris theme
