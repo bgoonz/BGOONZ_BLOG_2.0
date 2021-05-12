@@ -20,6 +20,7 @@ seo:
     - name: 'twitter:description'
       value: This is the documentation page
 template: docs
+weight: 900
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt id ante id varius. Fusce a gravida dolor.
