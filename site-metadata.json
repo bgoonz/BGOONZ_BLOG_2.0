@@ -46,7 +46,7 @@
                 "label": "Tools",
                 "url": "/style-guide",
                 "style": "link",
-                "has_subnav": false
+                "has_subnav": true
             },
             {
                 "label": "GitHub",
