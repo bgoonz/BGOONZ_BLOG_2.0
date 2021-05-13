@@ -28,10 +28,12 @@ sections:
             url: /docs
             style: link
       - title: Mini Project Showcase
-        content: |
-          ###### ***Mini Project Showcase***
+        content: >
+          ###### ***Whenever I find my skills laking I try to learn by doing a
+          mini project that emphasizes the skill I want to improve on!***
 
-          # ![](/images/code.png)
+
+          ******![](/images/important-tiger.png)
         actions:
           - label: View Posts
             url: 'https://project-showcase-bgoonz.netlify.app/'
