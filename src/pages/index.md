@@ -133,16 +133,9 @@ sections:
     title: Contact Me!
     subtitle: This is an optional description for the call to action block.
     actions:
-      - label: Get Started
+      - label: Don't be shy
         url: /docs/getting-started/installation
         style: primary
-      - label: lorem-ipsum
-        url: '#'
-        style: link
-        icon_class: dev
-        new_window: false
-        no_follow: false
-        type: action
   - title: lorem-ipsum
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
