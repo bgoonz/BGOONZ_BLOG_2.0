@@ -24,7 +24,7 @@ sections:
 
           ***Curating Complexity: A Guide to Big-O Notation***
         actions:
-          - label: Get Started
+          - label: Tell me about data structures
             url: /docs
             style: link
       - title: Mini Project Showcase
