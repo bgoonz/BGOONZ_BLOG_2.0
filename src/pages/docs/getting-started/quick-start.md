@@ -22,36 +22,236 @@ seo:
       value: This is the quick start page
 template: docs
 ---
-<div class="note">
-  <strong>Note:</strong> 
-  This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
-</div>
 
-## Callouts
 
-<hr>
+**# Python Study Guide for a JavaScript Programmer**
+*> A guide to commands in Python from what you know in JavaScript*
+\[!\[Bryan Guner]\(https://miro.medium.com/fit/c/96/96/1\*ao1cHo7EQ4faDV8YNJwh_Q.png)]\(https://bryanguner.medium.com/?source=post_page-----5cfdf3d2bdfb--------------------------------)
+!\[]\(https://miro.medium.com/max/1970/1\*3V9VOfPk_hrFdbEAd3j-QQ.png)
+\*   **\*\*PEP8\*\*** : Python Enhancement Proposals, style-guide for Python.\*   \`print\` is the equivalent of \`console.log\`.
+*> ‘print() == console.log()’*
+def foo():      """      The foo function does many amazing things that you      should not question. Just accept that it exists and      use it with caution.      """      secretThing()
+*> \_Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”\_*
+\*   Python has three types of numbers:
+1.  **\*\*Integer\*\***2.  **\*\*Positive and Negative Counting Numbers.\*\***
+No Decimal Point
+*> Created by a literal non-decimal point number … ***\*\*or\*\**** … with the *\`\_int()\_\`* constructor.*
+print(3) # => 3   print(int(19)) # => 19   print(int()) # => 0
+**\*\*3\\. Complex Numbers\*\***
+*> Consist of a real part and imaginary part.*
+Boolean is a subtype of integer in Python.🤷‍♂️**-----------------------------------------------**
+*> If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…*
+!\[]\(https://miro.medium.com/max/52/0\*eC4EvZcv6hhH88jX.png?q=20)
+!\[]\(https://miro.medium.com/max/1278/0\*eC4EvZcv6hhH88jX.png)
+*> Than I am sure you will find the means to suspend your disbelief.*
+print(2.24) # => 2.24   print(2.) # => 2.0   print(float()) # => 0.0   print(27e-5) # => 0.00027
+*> ***\*\*The\*\**** *\`\*\*i\*\*\`* ***\*\*is switched to a\*\**** *\`\*\*j\*\*\`* ***\*\*in programming.\*\***
+T_his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\_**\*\****\_space\_***\*\*** *\_when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.\_*
+print(7j) # => 7j   print(5.1+7.7j)) # => 5.1+7.7j   print(complex(3, 5)) # => 3+5j   print(complex(17)) # => 17+0j   print(complex()) # => 0j
+\*   **\*\*Type Casting\*\*** : The process of converting one number to another.
+\\# Using Float  print(17)               # => 17  print(float(17))        # => 17.0\\# Using Int  print(17.0)             # => 17.0  print(int(17.0))        # => 17\\# Using Str  print(str(17.0) + ' and ' + str(17))        # => 17.0 and 17
+**\*\*The arithmetic operators are the same between JS and Python, with two additions:\*\***
+\*   *\_“\\*\\*” : Double asterisk for exponent.\_*\*   *\_“//” : Integer Division.\_*\*   **\*\*There are no spaces between math operations in Python.\*\***\*   **\*\*Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing\*\*** \`\*\*Math.floor()\*\*\` **\*\*in JS.\*\***\*   **\*\*There are no\*\*** \`\*\*++\*\*\` **\*\*and\*\*** \`\*\*--\*\*\` **\*\*in Python, the only shorthand operators are:\*\***
+!\[]\(https://miro.medium.com/max/60/0\*Ez\_1PZ93N4FfvkRr.png?q=20)
+!\[]\(https://miro.medium.com/max/1200/0\*Ez\_1PZ93N4FfvkRr.png)
+\*   Python uses both single and double quotes.\*   You can escape strings like so \`'Jodi asked, "What\\'s up, Sam?"'\`\*   Multiline strings use triple quotes.
+print('''My instructions are very long so to make them  more readable in the code I am putting them on  more than one line. I can even include "quotes"  of any kind because they won't get confused with  the end of the string!''')
+**\*\*Use the\*\*** \`\*\*len()\*\*\` **\*\*function to get the length of a string.\*\***
+print(len(“Spaghetti”)) # => 9
+Python allows negative indexing (thank god!)**--------------------------------------------**
+print(“Spaghetti”\\[-1\\]) # => i print(“Spaghetti”\\[-4\\]) # => e
+\*   Python let’s you use ranges
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *\_(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type\_* **\*\****\_by textbook definition\_***\*\****\_, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\_*
+print(“Spaghetti”\\[1:4\\]) # => pag   print(“Spaghetti”\\[4:-1\\]) # => hett   print(“Spaghetti”\\[4:4\\]) # => (empty string)
+\*   The end range is exclusive just like \`slice\` in JS.
+\\# Shortcut to get from the beginning of a string to a certain index.  print("Spaghetti"\\[:4\\])  # => Spag  print("Spaghetti"\\[:-1\\])    # => Spaghett\\# Shortcut to get from a certain index to the end of a string.  print("Spaghetti"\\[1:\\])  # => paghetti  print("Spaghetti"\\[-4:\\])    # => etti
+\*   The \`index\` string function is the equiv. of \`indexOf()\` in JS
+print("Spaghetti".index("h"))    # => 4  print("Spaghetti".index("t"))    # => 6
+\*   The \`count\` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
+print("Spaghetti".count("h"))    # => 1  print("Spaghetti".count("t"))    # => 2  print("Spaghetti".count("s"))    # => 0  print('''We choose to go to the moon in this decade and do the other things,  not because they are easy, but because they are hard, because that goal will  serve to organize and measure the best of our energies and skills, because that  challenge is one that we are willing to accept, one we are unwilling to  postpone, and one which we intend to win, and the others, too.  '''.count('the '))                # => 4
+\*   **\*\*You can use\*\*** \`\*\*+\*\*\` **\*\*to concatenate strings, just like in JS.\*\***\*   **\*\*You can also use “\\*” to repeat strings or multiply strings.\*\***\*   **\*\*Use the\*\*** \`\*\*format()\*\*\` **\*\*function to use placeholders in a string to input values later on.\*\***
+first\\\_name = "Billy"  last\\\_name = "Bob"  print('Your name is {0} {1}'.format(first\\\_name, last\\\_name))  # => Your name is Billy Bob
+\*   \_Shorthand way to use format function is:      \_\`print(f'Your name is {first_name} {last_name}')\`
+Some useful string methods.**---------------------------**
+\*   **\*\*Note that in JS\*\*** \`\*\*join\*\*\` **\*\*is used on an Array, in Python it is used on String.\*\***
+!\[]\(https://miro.medium.com/max/60/0\*eE3E5H0AoqkhqK1z.png?q=20)
+!\[]\(https://miro.medium.com/max/3256/0\*eE3E5H0AoqkhqK1z.png)
+\*   There are also many handy testing methods.
+!\[]\(https://miro.medium.com/max/60/0\*Q0CMqFd4PozLDFPB.png?q=20)
+!\[]\(https://miro.medium.com/max/3236/0\*Q0CMqFd4PozLDFPB.png)
+\*   **\*\*Duck-Typing\*\*** : Programming Style which avoids checking an object’s type to figure out what it can do.\*   Duck Typing is the fundamental approach of Python.\*   Assignment of a value automatically declares a variable.
+a = 7  b = 'Marbles'  print(a)         # => 7  print(b)         # => Marbles
+\*   **\*\****\_You can chain variable assignments to give multiple var names the same value.\_***\*\***
+Use with caution as this is highly unreadable**---------------------------------------------**
+count = max = min = 0  print(count)           # => 0  print(max)             # => 0  print(min)             # => 0
+The value and type of a variable can be re-assigned at any time.**----------------------------------------------------------------**
+a = 17  print(a)         # => 17  a = 'seventeen'  print(a)         # => seventeen
+\*   \`\_NaN_\` *\_does not exist in Python, but you can 'create' it like so:\_*\`\*\*\_print(float("nan"))\_\*\*\`\*   *\_Python replaces\_* \`\_null_\` *\_with\_* \`\_none_\`*\_.\_*\*   \`\*\*\_none_\*\*\` **\*\****\_is an object\_***\*\*** *\_and can be directly assigned to a variable.\_*
+*> Using none is a convenient way to check to see why an action may not be operating correctly in your program.*
+\*   One of the biggest benefits of Python is that it reads more like English than JS does.
+!\[]\(https://miro.medium.com/max/3216/0\*HQpndNhm1Z_xSoHb.png)
+\\# Logical AND  print(True and True)    # => True  print(True and False)   # => False  print(False and False)  # => False\\# Logical OR  print(True or True)     # => True  print(True or False)    # => True  print(False or False)   # => False\\# Logical NOT  print(not True)             # => False  print(not False and True)   # => True  print(not True or False)    # => False
+\*   By default, Python considers an object to be true UNLESS it is one of the following:\*   Constant \`None\` or \`False\`\*   Zero of any numeric type.\*   Empty Sequence or Collection.\*   \`True\` and \`False\` must be capitalized
+\*   Python uses all the same equality operators as JS.\*   In Python, equality operators are processed from left to right.\*   Logical operators are processed in this order:
+1.  **\*\*NOT\*\***2.  **\*\*AND\*\***3.  **\*\*OR\*\***
+*> Just like in JS, you can use *\`parentheses\`* to change the inherent order of operations.> > ***\*\*Short Circuit\*\**** : Stopping a program when a *\`true\`* or *\`false\`* has been reached.*
+!\[]\(https://miro.medium.com/max/60/0\*qHzGRLTOMTf30miT.png?q=20)
+!\[]\(https://miro.medium.com/max/3188/0\*qHzGRLTOMTf30miT.png)
+print (2 == '2')    # => False  print (2 is '2')    # => Falseprint ("2" == '2')    # => True  print ("2" is '2')    # => True\\# There is a distinction between the number types.  print (2 == 2.0)    # => True  print (2 is 2.0)    # => False
+\*   In the Python community it is better to use \`is\` and \`is not\` over \`==\` or \`!=\`
+if name == 'Monica':      print('Hi, Monica.')if name == 'Monica':      print('Hi, Monica.')  else:      print('Hello, stranger.')if name == 'Monica':      print('Hi, Monica.')  elif age < 12:      print('You are not Monica, kiddo.')  elif age > 2000:     print('Unlike you, Monica is not an undead, immortal vampire.')  elif age > 100:     print('You are not Monica, grannie.')
+*> Remember the order of *\`elif\`* statements matter.*
+spam = 0  while spam < 5:    print('Hello, world.')    spam = spam + 1
+\*   \`Break\` statement also exists in Python.
+spam = 0  while True:    print('Hello, world.')    spam = spam + 1    if spam >= 5:      break
+\*   As are \`continue\` statements
+spam = 0  while True:    print('Hello, world.')    spam = spam + 1    if spam < 5:      continue    break
+\*   Python equivalent to \`try/catch\`
+a = 321  try:      print(len(a))  except:      print('Silently handle error here') # Optionally include a correction to the issue      a = str(a)      print(len(a)a = '321'  try:      print(len(a))  except:      print('Silently handle error here') # Optionally include a correction to the issue      a = str(a)      print(len(a))
+\*   You can name an error to give the output more specificity.
+a = 100  b = 0  try:      c = a / b  except ZeroDivisionError:      c = None  print(c)
+\*   You can also use the \`pass\` commmand to by pass a certain error.
+a = 100  b = 0  try:      print(a / b)  except ZeroDivisionError:      pass
+\*   The \`pass\` method won't allow you to bypass every single error so you can chain an exception series like so:
+a = 100  \\# b = "5"  try:      print(a / b)  except ZeroDivisionError:      pass  except (TypeError, NameError):      print("ERROR!")
+\*   You can use an \`else\` statement to end a chain of \`except\` statements.
+\\# tuple of file names  files = ('one.txt', 'two.txt', 'three.txt')\\# simple loop  for filename in files:      try:          # open the file in read mode          f = open(filename, 'r')      except OSError:          # handle the case where file does not exist or permission is denied          print('cannot open file', filename)      else:          # do stuff with the file object (f)          print(filename, 'opened successfully')          print('found', len(f.readlines()), 'lines')          f.close()
+\*   \`finally\` is used at the end to clean up all actions under any circumstance.
+def divide(x, y):      try:          result = x / y      except ZeroDivisionError:          print("Cannot divide by zero")      else:          print("Result is", result)      finally:          print("Finally...")
+\*   Using duck typing to check to see if some value is able to use a certain method.
+\\# Try a number - nothing will print out  a = 321  if hasattr(a, '\\_\\\_len\\_\\_'):      print(len(a))\\# Try a string - the length will print out (4 in this case)  b = "5555"  if hasattr(b, '\\_\\\_len\\_\\_'):      print(len(b))
+\*   Pass Keyword is required to write the JS equivalent of :
+if (true) {  }while (true) {}if True:    passwhile True:    pass
+\*   **\*\*Function definition includes:\*\***\*   **\*\*The\*\*** \`\*\*def\*\*\` **\*\*keyword\*\***\*   **\*\*The name of the function\*\***\*   **\*\*A list of parameters enclosed in parentheses.\*\***\*   **\*\*A colon at the end of the line.\*\***\*   **\*\*One tab indentation for the code to run.\*\***\*   **\*\*You can use default parameters just like in JS\*\***
+def greeting(name, saying="Hello"):      print(saying, name)greeting("Monica")  \\# Hello Monicagreeting("Barry", "Hey")  \\# Hey Barry
+**\*\*Keep in mind, default parameters must always come after regular parameters.\*\*-------------------------------------------------------------------------------**
+\\# THIS IS BAD CODE AND WILL NOT RUN  def increment(delta=1, value):      return delta + value
+\*   *\_You can specify arguments by name without destructuring in Python.\_*
+def greeting(name, saying="Hello"):      print(saying, name)\\# name has no default value, so just provide the value  \\# saying has a default value, so use a keyword argument  greeting("Monica", saying="Hi")
+\*   The \`lambda\` keyword is used to create anonymous functions and are supposed to be \`one-liners\`.
+\`toUpper = lambda s: s.upper()\`
+Formatted Strings**-----------------**
+*> Remember that in Python join() is called on a string with an array/list passed in as the argument.  > Python has a very powerful formatting engine.  > format() is also applied directly to strings.*
+shopping\\\_list = \\[‘bread’,’milk’,’eggs’\\]  print(‘,’.join(shopping\\\_list))
+print(‘{:,}’.format(1234567890))  ‘1,234,567,890’
+d = datetime.datetime(2020, 7, 4, 12, 15, 58)  print(‘{:%Y-%m-%d %H:%M:%S}’.format(d))  ‘2020–07–04 12:15:58’
+points = 190  total = 220  print(‘Correct answers: {:.2%}’.format(points/total))  Correct answers: 86.36%
+width=8  print(‘ decimal hex binary’)  print(‘-’\\*27)  for num in range(1,16):  for base in ‘dXb’:  print(‘{0:{width}{base}}’.format(num, base=base, width=width), end=’ ‘)  print()  Getting Input from the Command Line  Python runs synchronously, all programs and processes will stop when listening for a user input.  The input function shows a prompt to a user and waits for them to type ‘ENTER’.  Scripts vs Programs  Programming Script : A set of code that runs in a linear fashion.  The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.
+**\*\*Python can be used to display html, css, and JS.\*\***  *\_It is common to use Python as an API (Application Programming Interface)\_*
+Structured Data**---------------**
+Sequence : The most basic data structure in Python where the index determines the order.**----------------------------------------------------------------------------------------**
+*> List  > Tuple  > Range  > Collections : Unordered data structures, hashable values.*
+Dictionaries  Sets**-------------------**
+Iterable : Generic name for a sequence or collection; any object that can be iterated through.**----------------------------------------------------------------------------------------------**
+Can be mutable or immutable.  Built In Data Types**--------------------------------------------------**
+empty\\\_list = \\[\\]  departments = \\[‘HR’,’Development’,’Sales’,’Finance’,’IT’,’Customer Support’\\]
+specials = list()
+Test if a value is in a list.**-----------------------------**
+print(1 in \\[1, 2, 3\\]) #> True  print(4 in \\[1, 2, 3\\]) #> False  \\# Tuples : Very similar to lists, but they are immutable
+Instantiated with parentheses**-----------------------------**
+time\\\_blocks = (‘AM’,’PM’)
+Sometimes instantiated without**------------------------------**
+colors = ‘red’,’blue’,’green’  numbers = 1, 2, 3
+Tuple() built in can be used to convert other data into a tuple**---------------------------------------------------------------**
+tuple(‘abc’) # returns (‘a’, ‘b’, ‘c’)  tuple(\\[1,2,3\\]) # returns (1, 2, 3)  \\# Think of tuples as constant variables.
+Ranges : A list of numbers which can’t be changed; often used with for loops.**-----------------------------------------------------------------------------**
+**\*\*Declared using one to three parameters\*\***.
+*> Start : opt. default 0, first # in sequence.  > Stop : required next number past the last number in the sequence.  > Step : opt. default 1, difference between each number in the sequence.*
+range(5) # \\[0, 1, 2, 3, 4\\]  range(1,5) # \\[1, 2, 3, 4\\]  range(0, 25, 5) # \\[0, 5, 10, 15, 20\\]  range(0) # \\[ \\]  for let (i = 0; i < 5; i++)  for let (i = 1; i < 5; i++)  for let (i = 0; i < 25; i+=5)  for let(i = 0; i = 0; i++)  \\# Keep in mind that stop is not included in the range.
+Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.**----------------------------------------------------------------------------------------------------------------------**
+Mutable.**--------**
+a = {‘one’:1, ‘two’:2, ‘three’:3}  b = dict(one=1, two=2, three=3)  c = dict(\\[(‘two’, 2), (‘one’, 1), (‘three’, 3)\\])  \\# a, b, and c are all equal
+**\*\****\_Declared with curly braces of the built in dict()\_***\*\***
+*> \_Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.\_*
+**\*\*Use the in operator to see if a key exists in a dictionary.\*\***
+S**\*\*ets : Unordered collection of distinct objects; objects that need to be hashable.\*\***
+*> \_Always be unique, duplicate items are auto dropped from the set.\_*
+Common Uses:**------------**
+*> Removing Duplicates  > Membership Testing  > Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.*
+\*\*Standard Set is mutable, Python has a immutable version called frozenset.  Sets created by putting comma seperated values inside braces:\*\*
+school\\\_bag = {‘book’,’paper’,’pencil’,’pencil’,’book’,’book’,’book’,’eraser’}  print(school\\\_bag)
+Also can use set constructor to automatically put it into a set.**----------------------------------------------------------------**
+letters = set(‘abracadabra’)  print(letters)  #Built-In Functions  #Functions using iterables
+**\*\*filter(function, iterable) : creates new iterable of the same type which includes each item for which the function returns true.\*\***
+**\*\*map(function, iterable) : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.\*\***
+**\*\*sorted(iterable, key=None, reverse=False) : creates a new sorted list from the items in the iterable.\*\***
+**\*\*Output is always a list\*\***
+**\*\*key: opt function which coverts and item to a value to be compared.\*\***
+**\*\*reverse: optional boolean.\*\***
+**\*\*enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples\*\***
+quarters = \\[‘First’, ‘Second’, ‘Third’, ‘Fourth’\\]  print(enumerate(quarters))  print(enumerate(quarters, start=1))
+(0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)**--------------------------------------------------------**
+(1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)**--------------------------------------------------------**
+*> zip(\\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.  > Functions that analyze iterable*
+**\*\*len(iterable) : returns the count of the number of items.\*\***
+**\*\*max(\\*args, key=None) : returns the largest of two or more arguments.\*\***
+**\*\*max(iterable, key=None) : returns the largest item in the iterable.\*\***
+\_key optional function which converts an item to a value to be compared.  min works the same way as max\_
+**\*\*sum(iterable) : used with a list of numbers to generate the total.\*\***
+*\_There is a faster way to concatenate an array of strings into one string, so do not use sum for that.\_*
+**\*\*any(iterable) : returns True if any items in the iterable are true.\*\***
+**\*\*all(iterable) : returns True is all items in the iterable are true.\*\***
+\*\*dir(dictionary) : returns the list of keys in the dictionary.  Working with sets\*\*
+**\*\*Union : The pipe | operator or union(\\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.\*\***
+a = {1, 2, 3}  b = {2, 4, 6}  print(a | b) # => {1, 2, 3, 4, 6}
+Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.**-----------------------------------------------------------------------------------------------------------**
+  a = {1, 2, 3}  b = {2, 4, 6}  print(a & b) # => {2}  Difference : The — operator can be used to produce a new set of only the elements that appear in the first set and NOT the others.
+**\*\*Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.\*\***
+a = {1, 2, 3}  b = {2, 4, 6}  print(a — b) # => {1, 3}  print(b — a) # => {4, 6}  print(a ^ b) # => {1, 3, 4, 6}
+Always Includes:
+*> 1\\. The for keyword  > 2\\. A variable name  > 3\\. The ‘in’ keyword  > 4\\. An iterable of some kid  > 5\\. A colon  > 6\\. On the next line, an indented block of code called the for clause.*
+**\*\*You can use break and continue statements inside for loops as well.\*\***
+**\*\*You can use the range function as the iterable for the for loop.\*\***
+print(‘My name is’)  for i in range(5):  print(‘Carlita Cinco (‘ + str(i) + ‘)’)total = 0  for num in range(101):  total += num  print(total)  Looping over a list in Python  for c in \\[‘a’, ‘b’, ‘c’\\]:  print(c)lst = \\[0, 1, 2, 3\\]  for i in lst:  print(i)
+**\*\****\_Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.\_***\*\***
+supplies = \\[‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’\\]  for i in range(len(supplies)):  print(‘Index ‘ + str(i) + ‘ in supplies is: ‘ + supplies\\[i\\])  
+**\*\*You can loop and destructure at the same time.\*\***
+l = 1, 2\\], \\[3, 4\\], \\[5, 6  for a, b in l:  print(a, ‘, ‘, b)
+*> Prints 1, 2> > Prints 3, 4> > Prints 5, 6*
+**\*\*You can use values() and keys() to loop over dictionaries.\*\***
+spam = {‘color’: ‘red’, ‘age’: 42}  for v in spam.values():  print(v)
+*\_Prints red\_*
+*\_Prints 42\_*
+for k in spam.keys():  print(k)
+*\_Prints color\_*
+*\_Prints age\_*
+**\*\*For loops can also iterate over both keys and values.\*\***
+**\*\*Getting tuples\*\***
+for i in spam.items():  print(i)
+*\_Prints (‘color’, ‘red’)\_*
+*\_Prints (‘age’, 42)\_*
+*\_Destructuring to values\_*
+for k, v in spam.items():  print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
+*\_Prints Key: age Value: 42\_*
+*\_Prints Key: color Value: red\_*
+**\*\*Looping over string\*\***
+for c in “abcdefg”:  print(c)
+**\*\*When you order arguments within a function or function call, the args need to occur in a particular order:\*\***
+*\_formal positional args.\_*
+\\*args
+*\_keyword args with default values\_*
+\\*\\*kwargs
+def example(arg\\_1, arg\\_2, \\*args, \\*\\*kwargs):  passdef example2(arg\\_1, arg\\_2, \\*args, kw\\_1=”shark”, kw\\_2=”blowfish”, \\*\\*kwargs):  pass  
+**\*\*Modules are similar to packages in Node.js\*\***  Come in different types:
+Built-In,
+Third-Party,
+Custom.
+**\*\*All loaded using import statements.\*\***
+*> module : Python code in a separate file.  > package : Path to a directory that contains modules.  > \[\*\*init.py\*\*]\(http://init.py/) : Default file for a package.  > submodule : Another file in a module’s folder.  > function : Function in a module.*
+**\*\*A module can be any file but it is usually created by placing a special file init.py into a folder. pic\*\***
+*\_Try to avoid importing with wildcards in Python.\_*
+*\_Use multiple lines for clarity when importing.\_*
+from urllib.request import (  HTTPDefaultErrorHandler as ErrorHandler,  HTTPRedirectHandler as RedirectHandler,  Request,  pathname2url,  url2pathname,  urlopen,  )
+**\*\*Python 3 removed <> and only uses !=\*\***
+**\*\*format() was introduced with P3\*\***
+\*\*All strings in P3 are unicode and encoded.  md5 was removed.\*\*
+\*\*ConfigParser was renamed to configparser  sets were killed in favor of set() class.\*\*
+**\*\*print was a statement in P2, but is a function in P3.\*\*---------------------------------------------------------**
+If you found this guide helpful feel free to checkout my github/gists where I host similar content:**---------------------------------------------------------------------------------------------------**
+\[bgoonz’s gists · GitHub]\(https://gist.github.com/bgoonz)
+Or Checkout my personal Resource Site:
 
-There are two types of callouts available in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note`. Like in the example bellow.
+\[Source]\(https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb)
 
-### HTML example
 
-Copy the code and modify these blocks according to your needs.
 
-```html
-<div class="important">
-  <strong>Important:</strong> 
-  This is an "Important" callout block of text.
-  This block indicates a warning or caution. 
-  Use it for an important message. 
-</div>
-```
-
-```html
-<div class="note">
-  <strong>Note:</strong> 
-  This is a "Note" callout block of text. 
-  This block signifies a general note.
-</div>
-```
-
-\<section class="fd fe ff fg fh">\<div class="n p">\<div class="ab ac ae af ag fi ai aj">\<div class="">\<h1 id="03e2" class="fj fk fl fm b fn fo fp fq fr fs ft fu fv fw fx fy fz ga gb gc gd ge gf gg gh cr">Python Study Guide for a JavaScript Programmer\</h1>\<div class="gi">\<div class="n gj gk gl gm">\<div class="o n">\<div>\<a href="https://bryanguner.medium.com/?source=post_page-----5cfdf3d2bdfb--------------------------------" rel="noopener">\<img alt="Bryan Guner" class="s db gn go" src="https://miro.medium.com/fit/c/96/96/1\*ao1cHo7EQ4faDV8YNJwh_Q.png" width="48" height="48">\</a>\</div>\<div class="cj aj s">\<div class="n">\<div style="flex:1">\<span class="as b at au cr">\<div class="gp n o gq">\<span class="as b at au bv gr gs gt gu gv gw cr">\<a href="https://bryanguner.medium.com/?source=post_page-----5cfdf3d2bdfb--------------------------------" class="cd ce ay az ba bb bc bd be bf gx bi ch ci" rel="noopener">Bryan Guner\</a>\</span>\<div class="gy s bl h">\</div>\</div>\</span>\</div>\</div>\<span class="as b at au av">\<span class="as b at au bv gr gs gt gu gv gw av">\<div>\<a class="cd ce ay az ba bb bc bd be bf gx bi ch ci" rel="noopener" href="/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb?source=post_page-----5cfdf3d2bdfb--------------------------------">Mar 5\</a> \<!-- -->·\<!-- --> \<!-- -->15\<!-- --> min read\<span style="padding-left:4px">\<svg class="star-15px_svg\_\_svgIcon-use" width="15" height="15" viewBox="0 0 15 15" style="margin-top:-2px">\<path d="M7.44 2.32c.03-.1.09-.1.12 0l1.2 3.53a.29.29 0 0 0 .26.2h3.88c.11 0 .13.04.04.1L9.8 8.33a.27.27 0 0 0-.1.29l1.2 3.53c.03.1-.01.13-.1.07l-3.14-2.18a.3.3 0 0 0-.32 0L4.2 12.22c-.1.06-.14.03-.1-.07l1.2-3.53a.27.27 0 0 0-.1-.3L2.06 6.16c-.1-.06-.07-.12.03-.12h3.89a.29.29 0 0 0 .26-.19l1.2-3.52z">\</path>\</svg>\</span>\</div>\</span>\</span>\</div>\</div>\<div class="n gz ha hb hc hd he hf hg z">\<div class="n o">\<div class="hh s bl">\<button class="cd ce ay az ba bb bc bd be bf cf cg bi ch ci" aria-label="Share on twitter">\<svg width="29" height="29" class="bm">\<path d="M22.05 7.54a4.47 4.47 0 0 0-3.3-1.46 4.53 4.53 0 0 0-4.53 4.53c0 .35.04.7.08 1.05A12.9 12.9 0 0 1 5 6.89a5.1 5.1 0 0 0-.65 2.26c.03 1.6.83 2.99 2.02 3.79a4.3 4.3 0 0 1-2.02-.57v.08a4.55 4.55 0 0 0 3.63 4.44c-.4.08-.8.13-1.21.16l-.81-.08a4.54 4.54 0 0 0 4.2 3.15 9.56 9.56 0 0 1-5.66 1.94l-1.05-.08c2 1.27 4.38 2.02 6.94 2.02 8.3 0 12.86-6.9 12.84-12.85.02-.24 0-.43 0-.65a8.68 8.68 0 0 0 2.26-2.34c-.82.38-1.7.62-2.6.72a4.37 4.37 0 0 0 1.95-2.51c-.84.53-1.81.9-2.83 1.13z">\</path>\</svg>\</button>\</div>\<div class="hh s bl">\<button class="cd ce ay az ba bb bc bd be bf cf cg bi ch ci" aria-label="Share on linkedin">\<svg width="29" height="29" viewBox="0 0 29 29" fill="none" class="bm">\<path d="M5 6.36C5 5.61 5.63 5 6.4 5h16.2c.77 0 1.4.61 1.4 1.36v16.28c0 .75-.63 1.36-1.4 1.36H6.4c-.77 0-1.4-.6-1.4-1.36V6.36z">\</path>\<path fill-rule="evenodd" clip-rule="evenodd" d="M10.76 20.9v-8.57H7.89v8.58h2.87zm-1.44-9.75c1 0 1.63-.65 1.63-1.48-.02-.84-.62-1.48-1.6-1.48-.99 0-1.63.64-1.63 1.48 0 .83.62 1.48 1.59 1.48h.01zM12.35 20.9h2.87v-4.79c0-.25.02-.5.1-.7.2-.5.67-1.04 1.46-1.04 1.04 0 1.46.8 1.46 1.95v4.59h2.87v-4.92c0-2.64-1.42-3.87-3.3-3.87-1.55 0-2.23.86-2.61 1.45h.02v-1.24h-2.87c.04.8 0 8.58 0 8.58z" fill="#fff">\</path>\</svg>\</button>\</div>\<div class="hh s bl">\<button class="cd ce ay az ba bb bc bd be bf cf cg bi ch ci" aria-label="Share on facebook">\<svg width="29" height="29" class="bm">\<path d="M23.2 5H5.8a.8.8 0 0 0-.8.8V23.2c0 .44.35.8.8.8h9.3v-7.13h-2.38V13.9h2.38v-2.38c0-2.45 1.55-3.66 3.74-3.66 1.05 0 1.95.08 2.2.11v2.57h-1.5c-1.2 0-1.48.57-1.48 1.4v1.96h2.97l-.6 2.97h-2.37l.05 7.12h5.1a.8.8 0 0 0 .79-.8V5.8a.8.8 0 0 0-.8-.79">\</path>\</svg>\</button>\</div>\<div class="hi s">\<div>\<div class="bo">\<div>\<div class="by" role="tooltip" aria-hidden="false" aria-describedby="1" aria-labelledby="1">\<button class="cd ce ay az ba bb bc bd be bf cf cg bi ch ci" aria-label="Bookmark Post">\<svg width="25" height="25" viewBox="0 0 25 25">\<path d="M19 6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14.66h.01c.01.1.05.2.12.28a.5.5 0 0 0 .7.03l5.67-4.12 5.66 4.13a.5.5 0 0 0 .71-.03.5.5 0 0 0 .12-.29H19V6zm-6.84 9.97L7 19.64V6a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v13.64l-5.16-3.67a.49.49 0 0 0-.68 0z" fill-rule="evenodd">\</path>\</svg>\</button>\</div>\</div>\</div>\</div>\</div>\<div class="s an">\<div class="by" aria-hidden="false" aria-describedby="creatorActionOverflowMenu" aria-labelledby="creatorActionOverflowMenu">\<div class="by" aria-hidden="false" aria-describedby="collectionSubmissionPopover" aria-labelledby="collectionSubmissionPopover">\<div class="by" aria-hidden="false" aria-describedby="removeFromPublicationPopover" aria-labelledby="removeFromPublicationPopover">\<div class="hj s bl">\<button class="cd ce ay az ba bb bc bd be bf cf cg bi ch ci" aria-controls="creatorActionOverflowMenu" aria-expanded="false" aria-label="More options">\<svg class="r bp hk" width="25" height="25">\<path d="M5 12.5c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z" fill-rule="evenodd">\</path>\</svg>\</button>\</div>\</div>\</div>\</div>\</div>\</div>\</div>\</div>\</div>\</div>\<figure class="hm hn ho hp hq hr ep eq paragraph-image">\<div role="button" tabindex="0" class="hs ht ct hu aj hv">\<div class="ep eq hl">\<img alt="" class="hw hx" src="https://miro.medium.com/max/1970/1\*3V9VOfPk_hrFdbEAd3j-QQ.png" width="985" height="662" role="presentation">\</div>\</div>\</figure>\<h1 id="5a5b" class="hy hz fl as ia ib ic id ie if ig ih ii ij ik il im in io ip iq ir is it iu iv cr" data-selectable-paragraph="">\<span class="zv ct zw me">\<span class="s">\<span class="t v u zx zy qi vt">\<div>\<button class="cd bm ay az ba bb bc bd be cm bf">\<svg width="19" height="19" aria-label="View 2 Private Notes">\<path d="M14.78 8.07a8.68 8.68 0 0 0-.43-1.38.48.48 0 0 0-.58-.27l-3.12.77V4.03c0-.24-.2-.48-.43-.5a7.23 7.23 0 0 0-1.38 0c-.24.02-.43.26-.43.5V7.2L5.3 6.41a.48.48 0 0 0-.58.27c-.18.45-.33.92-.43 1.39-.05.24.1.5.32.58l3.06.75-1.98 2.96c-.14.2-.13.5.04.67.34.33.7.63 1.1.9.2.13.48.07.62-.12l2.1-3.12 2.08 3.12c.15.19.43.25.63.11a7.7 7.7 0 0 0 1.1-.89.53.53 0 0 0 .03-.67L11.4 9.41l3.06-.76a.52.52 0 0 0 .32-.58" fill-rule="evenodd">\</path>\</svg>\</button>\</div>\</span>\</span>\</span>Applications of Tutorial \&amp; Cheat Sheet Respectivley (At Bottom Of Tutorial):\</h1>\<h1 id="b0f3" class="hy hz fl as ia ib ic id ie if ig ih ii ij ik il im in io ip iq ir is it iu iv cr" data-selectable-paragraph="">Basics\</h1>\<ul class="">\<li id="f893" class="iw ix fl iy b iz ja id jb jc jd ih je jf jg jh ji jj jk jl jm jn jo jp jq jr js jt ju cr" data-selectable-paragraph="">\<span class="zv ct zw me">\<span class="s">\<span class="t v u zx zy qi vt">\<div>\<button class="cd bm ay az ba bb bc bd be cm bf">\<svg width="19" height="19" aria-label="View 2 Private Notes">\<path d="M14.78 8.07a8.68 8.68 0 0 0-.43-1.38.48.48 0 0 0-.58-.27l-3.12.77V4.03c0-.24-.2-.48-.43-.5a7.23 7.23 0 0 0-1.38 0c-.24.02-.43.26-.43.5V7.2L5.3 6.41a.48.48 0 0 0-.58.27c-.18.45-.33.92-.43 1.39-.05.24.1.5.32.58l3.06.75-1.98 2.96c-.14.2-.13.5.04.67.34.33.7.63 1.1.9.2.13.48.07.62-.12l2.1-3.12 2.08 3.12c.15.19.43.25.63.11a7.7 7.7 0 0 0 1.1-.89.53.53 0 0 0 .03-.67L11.4 9.41l3.06-.76a.52.52 0 0 0 .32-.58" fill-rule="evenodd">\</path>\</svg>\</button>\</div>\</span>\</span>\</span>\<strong class="iy jv">PEP8\</strong> : Python Enhancement Proposals, style-guide for Python.\</li>\<li id="c0bf" class="iw ix fl iy b iz jw id jb jc jx ih je jf jy jh ji jj jz jl jm jn ka jp jq jr js jt ju cr" data-selectable-paragraph="">\<code class="kb kc kd ke kf b">print\</code> is the equivalent of \<code class="kb kc kd ke kf b">console.log\</code>.\</li>\</ul>\<blockquote class="kg kh ki">\<p id="01c1" class="iw ix kj iy b iz kk id jb jc kl ih je jf km jh ji jj kn jl jm jn ko jp jq jr fd cr" data-selectable-paragraph="">‘print() == console.log()’\</p>\</blockquote>\<h1 id="117c" class="hy hz fl as ia ib ic id ie if ig ih ii ij ik il im in io ip iq ir is it iu iv cr" data-selectable-paragraph="">\<code class="kb kc kd ke kf b">#\</code> is used to make comments in your code.\</h1>\<pre class="hm hn ho hp hq kp kq dp" data-initialized="true" data-gclp-id="0" style="position: relative;" data-cacher="true" data-cacher-block-id="3841584776">\<span id="02b0" class="cr kr hz fl kf b co ks kt s ku" data-selectable-paragraph="">def foo():    """    The foo function does many amazing things that you    should not question. Just accept that it exists and    use it with caution.    """    secretThing()\</span>\<div class="open_grepper_editor" title="Edit \&amp; Save To Grepper">\</div>\</pre>\<blockquote class="kg kh ki">\<p id="0e6c" class="iw ix kj iy b iz kk id jb jc kl ih je jf km jh ji jj kn jl jm jn ko jp jq jr fd cr" data-selectable-paragraph="">\<em class="fl">Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”\</em>\</p>\</blockquote>\</div>\</div>\</section>
