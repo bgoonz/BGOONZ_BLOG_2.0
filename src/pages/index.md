@@ -32,12 +32,12 @@ sections:
           - label: Get Started
             url: /docs
             style: link
-      - title: Tools
+      - title: Mini Showcase
         content: >
           <https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb>
         actions:
           - label: View Posts
-            url: /blog
+            url: 'https://project-showcase-bgoonz.netlify.app/'
             style: link
       - title: Goals
         content: >+
