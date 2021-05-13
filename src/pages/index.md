@@ -40,10 +40,7 @@ sections:
         content: >
           ***I want to make things that change the lives of the people that use
           them for the better.***
-        actions:
-          - label: Learn More
-            url: /style-guide
-            style: link
+        actions: []
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
