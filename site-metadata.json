@@ -151,6 +151,15 @@
                 "type": "action"
             },
             {
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
                 "url": "#https://app.stackbit.com/studio/609b2d7c71a5dd0016f36326?previewToken=9eb306c2-4cbd-475e-b37f-21e2876c6752#/docs/tools/plug-ins/",
                 "style": "link",
                 "icon_class": "dev",
