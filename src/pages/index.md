@@ -136,13 +136,6 @@ sections:
       - label: Get Started
         url: /docs/getting-started/installation
         style: primary
-      - label: lorem-ipsum
-        url: '#'
-        style: link
-        icon_class: dev
-        new_window: false
-        no_follow: false
-        type: action
   - title: lorem-ipsum
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
