@@ -103,7 +103,7 @@ sections:
   - section_id: text-img
     type: section_content
     image_position: left
-    title: Musician
+    title: 'Music, Engineering & Lifelong Pursuit of Knowledge'
     content: |
       ```
       ```
