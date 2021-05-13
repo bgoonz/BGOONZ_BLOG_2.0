@@ -104,7 +104,12 @@ sections:
     type: section_content
     image_position: left
     title: Musician
-    content: "# Hi\_\U0001F44B, I'm Bryan\n\n```\n                                                                                                                        ![](/images/gravatar.png)\n\n\n\n```\n"
+    content: |
+      ```
+
+
+
+      ```
     actions: []
   - section_id: features-two-col
     type: section_grid
