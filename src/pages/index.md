@@ -45,7 +45,6 @@ sections:
           - label: Learn More
             url: /style-guide
             style: link
-        image: images/goals.PNG
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
