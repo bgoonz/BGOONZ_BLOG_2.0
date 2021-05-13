@@ -1,5 +1,5 @@
 ---
-title: Style Guide
+title: My Developer Tools
 subtitle: The style guide provides you with a blueprint of default post and page styles.
 seo:
   title: Theme Style Guide
