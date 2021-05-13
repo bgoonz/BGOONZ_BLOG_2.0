@@ -8,46 +8,50 @@ sections:
     content: >-
       This section can contain a subtitle or tagline. The recommended length is
       one to three sentences, but can be changed as you prefer.
-    actions:
-      - label: Get Started
-        url: /docs
-        style: primary
+    actions: []
   - section_id: features
     type: section_grid
     col_number: three
     grid_items:
       - title: Blog
         content: >
-          > A Quick Guide to Big-O Notation, Memoization, Tabulation, and
-          Sorting 
+          ###### **A Quick Guide to Big-O Notation, Memoization, Tabulation, and
+          Sorting**
 
-          >
 
-          > ![](https://miro.medium.com/max/2000/0*yjlSk3T9c2_14in1.png)
+          ###### ![](https://miro.medium.com/max/2000/0\*yjlSk3T9c2\_14in1.png)
 
-          >
 
-          > ***Curating Complexity: A Guide to Big-O Notation***
+          ***Curating Complexity: A Guide to Big-O Notation***
         actions:
-          - label: Get Started
+          - label: Tell me about data structures
             url: /docs
             style: link
-      - title: Mini Showcase
+      - title: Mini Project Showcase
         content: >
-          <https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb>
+          ###### ***Whenever I find my skills laking I try to learn by doing a
+          mini project that emphasizes the skill I want to improve on!***
+
+
+          ******![](/images/important-tiger.png)
         actions:
-          - label: View Posts
+          - label: Navigate to showcase
             url: 'https://project-showcase-bgoonz.netlify.app/'
             style: link
       - title: Goals
-        content: >+
-          This section exists for me to day dream ideas for the future... and
-          maybe... just maybe, hold myself accountable to them.
-
+        content: >
+          ***I want to make things that change the lives of the people that use
+          them for the better.***
         actions:
-          - label: Learn More
-            url: /style-guide
+          - label: My goals and how I plan to achieve them
+            url: >-
+              #https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering
             style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
+        image: images/goals.jpg
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
@@ -100,7 +104,9 @@ sections:
     type: section_content
     image_position: left
     title: Musician
-    content: "# Hi\_\U0001F44B, I'm Bryan\n\n```\n                                                                                                                        ![](/images/gravatar.png)\n\n\n\n```\n"
+    content: |
+      ```
+      ```
     actions: []
   - section_id: features-two-col
     type: section_grid
