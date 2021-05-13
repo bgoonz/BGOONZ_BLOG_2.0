@@ -42,7 +42,14 @@ sections:
         content: >
           ***I want to make things that change the lives of the people that use
           them for the better.***
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
         image: images/goals.jpg
       - title: lorem-ipsum
         title_url: lorem-ipsum
