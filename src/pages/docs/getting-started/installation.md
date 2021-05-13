@@ -21,6 +21,7 @@ seo:
     - name: 'twitter:description'
       value: This is the installation page
 template: docs
+excerpt: Portfolio Resume PDF Bryan's email Blog Linkedin AngelList GitHub bgoonz
 ---
 
 <div class="note">
