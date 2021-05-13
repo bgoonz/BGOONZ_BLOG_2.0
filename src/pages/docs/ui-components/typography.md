@@ -1,5 +1,5 @@
 ---
-title: Typography
+title: Lambda Student Resources
 weight: 1
 seo:
   title: Typography
