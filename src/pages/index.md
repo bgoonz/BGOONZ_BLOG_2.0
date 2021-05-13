@@ -44,7 +44,8 @@ sections:
           them for the better.***
         actions:
           - label: My goals and how I plan to achieve them
-            url: '#'
+            url: >-
+              #https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering
             style: link
             icon_class: dev
             new_window: false
