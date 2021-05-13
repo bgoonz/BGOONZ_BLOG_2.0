@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Contact
 weight: 1
 seo:
   title: Installation
