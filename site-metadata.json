@@ -48,7 +48,7 @@
             },
             {
                 "label": "About Me",
-                "url": "#",
+                "url": "#portfolio",
                 "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
