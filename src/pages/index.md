@@ -35,7 +35,7 @@ sections:
 
           ******![](/images/important-tiger.png)
         actions:
-          - label: View Posts
+          - label: Navigate to showcase
             url: 'https://project-showcase-bgoonz.netlify.app/'
             style: link
       - title: Goals
