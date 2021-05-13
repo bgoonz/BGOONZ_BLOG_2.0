@@ -30,8 +30,10 @@ sections:
             url: /docs
             style: link
       - title: Mini Showcase
-        content: >
-          <https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb>
+        content: |
+          # Mini Project Showcase
+
+          ![](/images/code.png)
         actions:
           - label: View Posts
             url: 'https://project-showcase-bgoonz.netlify.app/'
