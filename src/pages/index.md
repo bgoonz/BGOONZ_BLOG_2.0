@@ -29,7 +29,7 @@ sections:
             style: link
       - title: Mini Showcase
         content: |
-          # Mini Project Showcase
+          # **Mini Project Showcase**
 
           ![](/images/code.png)
         actions:
