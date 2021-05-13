@@ -82,7 +82,7 @@
 </div>
 
 
-
+<div align="center">
 
 
 |  |  |
@@ -110,7 +110,7 @@
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_email_)
 
 
-
+</div>
 
 
 
