@@ -1,7 +1,7 @@
 ---
 title: Python For Javascript Developers
 date: '2019-05-27'
-image: images/2.jpg
+image: images/sinewave.gif
 seo:
   title: Community Round-up
   description: Commodo ante vis placerat interdum massa massa primis
