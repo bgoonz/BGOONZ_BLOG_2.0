@@ -29,9 +29,9 @@ sections:
             style: link
       - title: Mini Showcase
         content: |
-          # ***Mini Project Showcase***
+          ###### ***Mini Project Showcase***
 
-          ![](/images/code.png)
+          # ![](/images/code.png)
         actions:
           - label: View Posts
             url: 'https://project-showcase-bgoonz.netlify.app/'
