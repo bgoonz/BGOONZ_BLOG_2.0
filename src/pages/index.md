@@ -4,7 +4,7 @@ sections:
   - section_id: hero
     type: section_hero
     title: I am a musician/electrical engineer turned web developer
-    image: images/imageonline-co-overlayed-image - Copy.png
+    image: images/3.jpg
     content: >-
       This section can contain a subtitle or tagline. The recommended length is
       one to three sentences, but can be changed as you prefer.
