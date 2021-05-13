@@ -22,8 +22,6 @@ seo:
       value: This is the quick start page
 template: docs
 ---
-
-
 **# Python Study Guide for a JavaScript Programmer**
 *> A guide to commands in Python from what you know in JavaScript*
 \[!\[Bryan Guner]\(https://miro.medium.com/fit/c/96/96/1\*ao1cHo7EQ4faDV8YNJwh_Q.png)]\(https://bryanguner.medium.com/?source=post_page-----5cfdf3d2bdfb--------------------------------)
@@ -252,6 +250,4 @@ If you found this guide helpful feel free to checkout my github/gists
 Or Checkout my personal Resource Site:
 
 \[Source]\(https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb)
-
-
 
