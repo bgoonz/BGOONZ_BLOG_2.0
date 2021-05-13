@@ -43,7 +43,7 @@ sections:
           ***I want to make things that change the lives of the people that use
           them for the better.***
         actions:
-          - label: lorem-ipsum
+          - label: My Goals and how I intend to acomplish them
             url: '#'
             style: link
             icon_class: dev
