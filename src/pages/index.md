@@ -105,8 +105,7 @@ sections:
     image_position: left
     title: 'Music, Engineering & Lifelong Pursuit of Knowledge'
     content: |
-      ```
-      ```
+      https://www.youtube.com/watch?v=xGZSWvFess8
     actions: []
   - section_id: features-two-col
     type: section_grid
