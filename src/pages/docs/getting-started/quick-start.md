@@ -1,5 +1,5 @@
 ---
-title: Quick Start
+title: Python for JavaScript Developers
 weight: 2
 seo:
   title: Quick Start
