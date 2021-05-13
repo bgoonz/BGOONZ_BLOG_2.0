@@ -4,7 +4,7 @@ sections:
   - section_id: hero
     type: section_hero
     title: I am a musician/electrical engineer turned web developer
-    image: images/3.jpg
+    image: images/code.gif
     content: >-
       This section can contain a subtitle or tagline. The recommended length is
       one to three sentences, but can be changed as you prefer.
@@ -103,14 +103,14 @@ sections:
   - section_id: text-img
     type: section_content
     image_position: left
-    title: Musician
+    title: 'Music, Engineering & Lifelong Pursuit of Knowledge'
     content: |
       ```
       ```
     actions: []
   - section_id: features-two-col
     type: section_grid
-    title: Sample Layouts
+    title: Resume & Portfolio
     subtitle: An optional subtitle of the section
     col_number: two
     grid_items:

@@ -1,7 +1,8 @@
 ---
-title: Style Guide
-subtitle: The style guide provides you with a blueprint of default post and page styles.
-image: images/5.jpg
+title: My Developer Tools
+subtitle: >-
+  These tools range from npm packages to websites that cut down on menial tasks
+  even down to a github workflow that I developed for my personal projects
 seo:
   title: Theme Style Guide
   description: A reference for suggested typographic treatment and styles for your content
@@ -33,6 +34,7 @@ seo:
       value: images/5.jpg
       relativeUrl: true
 template: page
+image: images/drip.jpg
 ---
 
 **This is a paragraph**. Pellentesque habitant morbi *tristique senectus et netus et malesuada* fames ac turpis egestas. Vestibulum [tortor quam](https://www.google.com), feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit <mark>amet est et sapien ullamcorper</mark> pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.

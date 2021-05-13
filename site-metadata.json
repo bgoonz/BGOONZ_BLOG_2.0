@@ -47,8 +47,8 @@
                 "type": "action_menu"
             },
             {
-                "label": "About",
-                "url": "#",
+                "label": "About Me",
+                "url": "#portfolio",
                 "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
