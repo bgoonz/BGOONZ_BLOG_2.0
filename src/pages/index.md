@@ -15,7 +15,7 @@ sections:
     grid_items:
       - title: Blog
         content: >
-          # A Quick Guide to Big-O Notation, Memoization, Tabulation, and
+          #### A Quick Guide to Big-O Notation, Memoization, Tabulation, and
           Sorting
 
 
