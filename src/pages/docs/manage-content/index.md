@@ -24,10 +24,9 @@ seo:
       value: This is the manage content page
 template: docs
 ---
-
-<div class="note">
-  <strong>Note:</strong> This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
-</div>
+\<div class="note">
+\<iframe width="560" height="315" src="https://www.youtube.com/embed/xGZSWvFess8?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+\</div>
 
 ### Syntax highlighting
 
