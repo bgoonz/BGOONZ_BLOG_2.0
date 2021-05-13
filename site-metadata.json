@@ -47,7 +47,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "About",
+                "label": "About Me",
                 "url": "#",
                 "style": "link",
                 "has_subnav": true,
