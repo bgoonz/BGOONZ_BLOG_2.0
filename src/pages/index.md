@@ -38,7 +38,7 @@ sections:
           - label: Navigate to showcase
             url: 'https://project-showcase-bgoonz.netlify.app/'
             style: link
-      - title: Goals
+      - title: Long Term Asperations
         content: >
           ***I want to make things that change the lives of the people that use
           them for the better.***
