@@ -151,7 +151,7 @@
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "Depreciated Blog",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
