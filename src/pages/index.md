@@ -13,7 +13,7 @@ sections:
     type: section_grid
     col_number: three
     grid_items:
-      - title: Blog
+      - title: Data Structures Series
         content: >
           ###### **A Quick Guide to Big-O Notation, Memoization, Tabulation, and
           Sorting**
