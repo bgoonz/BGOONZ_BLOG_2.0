@@ -1,6 +1,6 @@
 ---
 title: Contact
-weight: 1
+weight: 1.5
 seo:
   title: Installation
   description: This is the installation page
