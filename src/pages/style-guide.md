@@ -1,6 +1,8 @@
 ---
 title: My Developer Tools
-subtitle: The style guide provides you with a blueprint of default post and page styles
+subtitle: >-
+  These tools range from npm packages to websites that cut down on menial tasks
+  even down to a github workflow that I developed for my personal projects
 seo:
   title: Theme Style Guide
   description: A reference for suggested typographic treatment and styles for your content
