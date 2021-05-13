@@ -1,11 +1,11 @@
 ---
-title: New Conference
+title: What I am doing imediatly after the pandemic
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ac ut consequat semper viverra
   nam libero justo laoreet sit.
 date: '2019-03-10'
-thumb_image: images/2.jpg
+thumb_image: images/giphy.gif
 image: images/2.jpg
 seo:
   title: New Conference
