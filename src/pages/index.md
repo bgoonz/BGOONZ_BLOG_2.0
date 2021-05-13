@@ -106,9 +106,6 @@ sections:
     title: Musician
     content: |
       ```
-
-
-
       ```
     actions: []
   - section_id: features-two-col
