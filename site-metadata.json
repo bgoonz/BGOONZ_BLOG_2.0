@@ -179,7 +179,7 @@
             {
                 "label": "lorem-ipsum",
                 "url": "#https://web-dev-resource-hub.netlify.app/",
-                "style": "link",
+                "style": "secondary",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
