@@ -37,10 +37,9 @@ sections:
             url: 'https://project-showcase-bgoonz.netlify.app/'
             style: link
       - title: Goals
-        content: >+
-          This section exists for me to day dream ideas for the future... and
-          maybe... just maybe, hold myself accountable to them.
-
+        content: >
+          I want to make things that change the lives of the people that use
+          them for the better.
         actions:
           - label: Learn More
             url: /style-guide
