@@ -133,7 +133,7 @@ sections:
     title: Contact Me!
     subtitle: This is an optional description for the call to action block.
     actions:
-      - label: Get Started
+      - label: Don't be shy
         url: /docs/getting-started/installation
         style: primary
   - title: lorem-ipsum
