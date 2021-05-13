@@ -37,7 +37,7 @@ sections:
           <https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb>
         actions:
           - label: View Posts
-            url: /blog
+            url: '/bloghttps://project-showcase-bgoonz.netlify.app/'
             style: link
       - title: Goals
         content: >+
