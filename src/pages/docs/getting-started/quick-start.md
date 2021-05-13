@@ -1,5 +1,5 @@
 ---
-title: Python for JavaScript Developers
+title: Web Developer Resource List
 weight: 2
 seo:
   title: Quick Start
