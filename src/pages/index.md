@@ -41,6 +41,7 @@ sections:
           ***I want to make things that change the lives of the people that use
           them for the better.***
         actions: []
+        image: images/thoughtful-neptune.PNG
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
