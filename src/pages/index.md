@@ -27,7 +27,7 @@ sections:
           - label: Get Started
             url: /docs
             style: link
-      - title: Mini Showcase
+      - title: Mini Project Showcase
         content: |
           ###### ***Mini Project Showcase***
 
