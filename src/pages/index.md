@@ -13,7 +13,7 @@ sections:
     type: section_grid
     col_number: three
     grid_items:
-      - title: Blog
+      - title: Data Structures Series
         content: >
           ###### **A Quick Guide to Big-O Notation, Memoization, Tabulation, and
           Sorting**
@@ -38,7 +38,7 @@ sections:
           - label: Navigate to showcase
             url: 'https://project-showcase-bgoonz.netlify.app/'
             style: link
-      - title: Goals
+      - title: Long Term Asperations
         content: >
           ***I want to make things that change the lives of the people that use
           them for the better.***
@@ -105,8 +105,7 @@ sections:
     image_position: left
     title: 'Music, Engineering & Lifelong Pursuit of Knowledge'
     content: |
-      ```
-      ```
+      https://www.youtube.com/watch?v=xGZSWvFess8
     actions: []
   - section_id: features-two-col
     type: section_grid
