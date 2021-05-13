@@ -159,7 +159,7 @@
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "My dev.to",
                 "url": "https://dev.to/bgoonz",
                 "style": "icon",
                 "icon_class": "dev",
