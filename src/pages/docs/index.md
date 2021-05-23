@@ -94,7 +94,7 @@ weight: 900
 - [https://levelup.gitconnected.com/](https://levelup.gitconnected.com/?source=your_stories_page-------------------------------------)
 
 
-- [javascript-frameworks-libraries-35931e187a35](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------)
+- [javascript-frameworks-libraries](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------)
 
 
 - [my-take-on-awesome-javascript](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74?source=your_stories_page-------------------------------------)
