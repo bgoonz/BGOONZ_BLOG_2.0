@@ -13,20 +13,16 @@ sections:
     grid_items:
       - title: Blog
         content: >
-          > # A Quick Guide to Big-O Notation, Memoization, Tabulation, and
+          > ## A Quick Guide to Big-O Notation, Memoization, Tabulation, and
           Sorting
 
           >
 
-          >
+          > ###### ![](/\_static/app-assets/happy-basil.png)
 
           >
 
-          > ######
-
-          >
-
-          > [***Curating Complexity: A Guide to Big-O
+          > ###### [***Curating Complexity: A Guide to Big-O
           Notation***](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
         actions:
           - label: Get Started
