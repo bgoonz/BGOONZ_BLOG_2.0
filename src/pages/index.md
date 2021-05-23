@@ -110,7 +110,7 @@ sections:
             url: /showcase
             style: link
   - title: Musical Persuits
-    section_id: lorem-ipsum
+    section_id: guitar
     image_alt: lorem-ipsum
     image_position: left
     content: |
