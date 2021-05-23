@@ -24,7 +24,7 @@ sections:
           data implemented in python
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
-        image: images/8.jpg
+        image: images/data-struc2.gif
         content: |
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
       - title: Mihir-Beg-Music.com
