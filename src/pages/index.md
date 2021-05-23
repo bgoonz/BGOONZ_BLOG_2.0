@@ -112,7 +112,7 @@ sections:
   - title: Musical Persuits
     section_id: guitar
     image_alt: bryan-guner
-    image_position: left
+    image_position: center
     content: |
       ![](/\_static/app-assets/music-profile.PNG)
     actions: []
