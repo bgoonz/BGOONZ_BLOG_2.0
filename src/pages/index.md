@@ -52,8 +52,7 @@ sections:
           - label: Learn More
             url: /style-guide
             style: link
-      - title: lorem-ipsum
-        title_url: lorem-ipsum
+      - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >+
           ## Beginner’s Guide To React Part
