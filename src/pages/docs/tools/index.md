@@ -26,30 +26,27 @@ template: docs
 ---
 
 
-            <h2>One-Drive-File-Storage!</h2>
-            <div style=" margin-bottom: 2em; display:flex; flex-direction: row;">
-               <br>
-               <iframe class="embed"
-                  src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E"
-                  loading="lazy" width="165" height="128" frameborder="0" scrolling="no">
-
-               </iframe>
-             <!-------================================================================================================================------->              
-               
-               
-               <iframe class="embed"
-                  src="https://lambda-resources.netlify.app/"
-                  loading="lazy" width="165" height="128" frameborder="0" scrolling="no">
 
 
-    <!-------===============================Web Dev-Quizes======================================================================------->
-            <h2 style=" margin-bottom: 2em; color:white; align-content:center;">Web Dev Quizes</h2>
-            <br>
-            <br>
-            <iframe class="embed" src="https://web-dev-interview-prep-quiz-website.netlify.app/" loading="lazy"
-               style=" margin-bottom: 2em; width:90%!important; height:800px;">
+<iframe class="embed"
+src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E"
+loading="lazy" width="165" height="128" frameborder="0" scrolling="no">
 
-            </iframe>
-            <br>
-            <br>
-            <!-------================================================================================================================------->
+</iframe>
+<!-------================================================================================================================------->              
+
+
+<iframe class="embed"
+src="https://lambda-resources.netlify.app/"
+loading="lazy" width="165" height="128" frameborder="0" scrolling="no">
+</iframe>
+
+<!-------===============================Web Dev-Quizes======================================================================------->
+
+<iframe class="embed" src="https://web-dev-interview-prep-quiz-website.netlify.app/" loading="lazy"
+style=" margin-bottom: 2em; width:90%!important; height:800px;">
+
+</iframe>
+<br>
+<br>
+<!-------================================================================================================================------->
