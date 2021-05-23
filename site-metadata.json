@@ -58,24 +58,6 @@
                 "type": "action_menu"
             },
             {
-                "label": "About",
-                "url": "#",
-                "style": "link",
-                "has_subnav": true,
-                "subnav_links": [
-                    {
-                        "label": "Resource-Map",
-                        "url": "/overview",
-                        "style": "link"
-                    },
-                    {
-                        "label": "Mini Projects",
-                        "url": "https://project-showcase-bgoonz.netlify.app/",
-                        "style": "link"
-                    }
-                ]
-            },
-            {
                 "label": "Tools",
                 "url": "/style-guide",
                 "style": "link",
