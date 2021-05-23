@@ -55,7 +55,7 @@ sections:
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
-          # Beginner’s Guide To React Part
+          ###### Beginner’s Guide To React Part
           2&#xA;![](https://preview--best-celery-b2d7c.stackbit.dev/\_static/app-assets/react.gif)&#xA;[As
           I learn to build web applications in React I will blog about it in
           this series in an attempt to capture the questions that a complete
