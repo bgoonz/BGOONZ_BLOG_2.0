@@ -19,7 +19,7 @@ sections:
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/pure-data.png
         content: A personal theme for Unibit
-      - title: Fjord
+      - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/8.jpg
         content: A minimal blogging theme for Unibit
