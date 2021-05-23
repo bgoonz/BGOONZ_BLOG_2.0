@@ -1,5 +1,5 @@
 ---
-date: '2019-05-27'
+date: '2021-05-23'
 image: images/2.jpg
 seo:
   title:Python Study Guide for a JavaScript Programmer

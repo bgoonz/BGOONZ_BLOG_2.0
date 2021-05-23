@@ -1,9 +1,9 @@
 ---
-title: Beginner's Guide To JavaScript
+title: The function of design is letting design function
 subtitle: A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as ‘subprograms’)
 excerpt: >-
-The string data type is a primitive data type that used to represent textual data.
-date: '2018-01-15'
+  A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as ‘subprograms’)
+date: '2021-05-23'
 image: images/code.png
 seo:
   title: Beginner's Guide To JavaScript
