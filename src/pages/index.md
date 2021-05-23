@@ -78,8 +78,18 @@ sections:
       - title: My Medium Blog
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: |+
-          Here's a running list of my blog posts
+        content: >+
+          [Here's a running list of my blog
+          posts](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
+
+
+
+
+
+
+
+
+          ![](/\_static/app-assets/posts1.png)
 
         actions: []
         type: grid_item
