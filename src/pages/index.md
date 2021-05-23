@@ -104,7 +104,7 @@ sections:
             style: link
       - title: Showcase
         content: |
-          Here's a series of mini projects I work on to sharpen my skills!
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
         actions:
           - label: Learn More
             url: /showcase
