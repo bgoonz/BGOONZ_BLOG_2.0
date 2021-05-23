@@ -6,54 +6,32 @@ seo:
   title: Theme Style Guide
   description: A reference for suggested typographic treatment and styles for your content
   extra:
-
     - name: 'og:type'
-
       value: website
-
       keyName: property
-
     - name: 'og:title'
-
       value: Theme Style Guide
-
       keyName: property
-
     - name: 'og:description'
-
       value: >-
         A reference for suggested typographic treatment and styles for your
         content
-
       keyName: property
-
     - name: 'og:image'
-
       value: images/5.jpg
-
       keyName: property
-
       relativeUrl: true
-
     - name: 'twitter:card'
-
       value: summary_large_image
-
     - name: 'twitter:title'
-
       value: Theme Style Guide
-
     - name: 'twitter:description'
-
       value: >-
         A reference for suggested typographic treatment and styles for your
         content
-
     - name: 'twitter:image'
-
       value: images/5.jpg
       relativeUrl: true
-
 template: page
 ---
 
@@ -79,7 +57,7 @@ Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
-> Creativity is allowing yourself to make mistakes. Design is knowing which ones to keep. - Scott Adams
+>Creativity is allowing yourself to make mistakes. Design is knowing which ones to keep. - Scott Adams
 
 Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.
 
@@ -87,11 +65,11 @@ Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar
 
 ## Unordered Lists
 
-* Donec non tortor in arcu mollis feugiat
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-* Donec id eros eget quam aliquam gravida
-* Vivamus convallis urna id felis
-* Nulla porta tempus sapien
++ Donec non tortor in arcu mollis feugiat
++ Lorem ipsum dolor sit amet, consectetuer adipiscing elit
++ Donec id eros eget quam aliquam gravida
++ Vivamus convallis urna id felis
++ Nulla porta tempus sapien
 
 ## Ordered Lists
 
@@ -107,7 +85,7 @@ Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar
 
 ## Code Blocks
 
-Blocks of code are either fenced by `lines with three back-ticks` , or are indented with four spaces.
+Blocks of code are either fenced by `lines with three back-ticks`, or are indented with four spaces.
 
 ```
 <!-- Some example CSS code -->
@@ -118,19 +96,19 @@ body {
 
 ```javascript
 window.$docsify = {
-    coverpage: true,
+  coverpage: true,
 
-    // Custom file name
-    coverpage: 'cover.md',
+  // Custom file name
+  coverpage: 'cover.md',
 
-    // mutiple covers
-    coverpage: ['/', '/zh-cn/'],
+  // mutiple covers
+  coverpage: ['/', '/zh-cn/'],
 
-    // mutiple covers and custom file name
-    coverpage: {
-        '/': 'cover.md',
-        '/zh-cn/': 'cover.md'
-    }
+  // mutiple covers and custom file name
+  coverpage: {
+    '/': 'cover.md',
+    '/zh-cn/': 'cover.md'
+  }
 };
 ```
 
@@ -138,7 +116,6 @@ window.$docsify = {
 
 <div class="responsive-table">
   <table>
-
       <caption>Table with thead, tfoot, and tbody</caption>
     <thead>
       <tr>
@@ -158,7 +135,6 @@ window.$docsify = {
         <td>Footer content 2</td>
       </tr>
     </tfoot>
-
   </table>
 </div>
 

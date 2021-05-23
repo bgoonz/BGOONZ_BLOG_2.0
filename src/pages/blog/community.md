@@ -6,58 +6,37 @@ seo:
   title: Community Round-up
   description: Commodo ante vis placerat interdum massa massa primis
   extra:
-
     - name: 'og:type'
-
       value: article
-
       keyName: property
-
     - name: 'og:title'
-
       value: Community Round-up
-
       keyName: property
-
     - name: 'og:description'
-
       value: Commodo ante vis placerat interdum massa massa primis
-
       keyName: property
-
     - name: 'og:image'
-
       value: images/2.jpg
-
       keyName: property
-
       relativeUrl: true
-
     - name: 'twitter:card'
-
       value: summary_large_image
-
     - name: 'twitter:title'
-
       value: Community Round-up
-
     - name: 'twitter:description'
-
       value: Commodo ante vis placerat interdum massa massa primis
-
     - name: 'twitter:image'
-
       value: images/2.jpg
       relativeUrl: true
-
 template: post
 ---
+# Python Study Guide for a JavaScript Programmer&#xA;
 
-# Python Study Guide for a JavaScript Programmer&#xA; 
 
-![](https://miro.medium.com/max/1970/1\*3V9VOfPk_hrFdbEAd3j-QQ.png)![](https://miro.medium.com/max/52/0\*eC4EvZcv6hhH88jX.png?q=20)![](https://miro.medium.com/max/647/0\*eC4EvZcv6hhH88jX.png)![](https://miro.medium.com/max/60/0\*Ez\_1PZ93N4FfvkRr.png?q=20)![](https://miro.medium.com/max/608/0\*Ez\_1PZ93N4FfvkRr.png)![](https://miro.medium.com/max/60/0\*eE3E5H0AoqkhqK1z.png?q=20)![](https://miro.medium.com/max/1648/0\*eE3E5H0AoqkhqK1z.png)![](https://miro.medium.com/max/60/0\*Q0CMqFd4PozLDFPB.png?q=20)![](https://miro.medium.com/max/1638/0\*Q0CMqFd4PozLDFPB.png)![](https://miro.medium.com/max/3216/0\*HQpndNhm1Z_xSoHb.png)![](https://miro.medium.com/max/60/0\*qHzGRLTOMTf30miT.png?q=20)![](https://miro.medium.com/max/1614/0\*qHzGRLTOMTf30miT.png)
 
-[
+
+![](https://miro.medium.com/max/1970/1\*3V9VOfPk_hrFdbEAd3j-QQ.png)![](https://miro.medium.com/max/52/0\*eC4EvZcv6hhH88jX.png?q=20)![](https://miro.medium.com/max/647/0\*eC4EvZcv6hhH88jX.png)![](https://miro.medium.com/max/60/0\*Ez\_1PZ93N4FfvkRr.png?q=20)![](https://miro.medium.com/max/608/0\*Ez\_1PZ93N4FfvkRr.png)![](https://miro.medium.com/max/60/0\*eE3E5H0AoqkhqK1z.png?q=20)![](https://miro.medium.com/max/1648/0\*eE3E5H0AoqkhqK1z.png)![](https://miro.medium.com/max/60/0\*Q0CMqFd4PozLDFPB.png?q=20)![](https://miro.medium.com/max/1638/0\*Q0CMqFd4PozLDFPB.png)![](https://miro.medium.com/max/3216/0\*HQpndNhm1Z_xSoHb.png)![](https://miro.medium.com/max/60/0\*qHzGRLTOMTf30miT.png?q=20)![](https://miro.medium.com/max/1614/0\*qHzGRLTOMTf30miT.png)[
+
 
 ](https://github.com/bgoonz)
 
@@ -156,7 +135,6 @@ You can think of this as roughly equivalent to the slice method called on a Java
 <!---->
 
 *   *Shorthand way to use format function is:
-
     *print(f'Your name is {first_name} {last_name}')
 
 ## Some useful string methods.
@@ -184,7 +162,6 @@ You can think of this as roughly equivalent to the slice method called on a Java
 ## The value and type of a variable can be re-assigned at any time.
 
 *   *NaN does not exist in Python, but you can 'create' it like so:
-
     **print(float("nan"))***
 
 *   *Python replaces null with none.*
@@ -329,11 +306,11 @@ toUpper = lambda s: s.upper()
 > Range
 > Collections : Unordered data structures, hashable values.
 
-## Dictionaries&#xA; Sets
+## Dictionaries&#xA;Sets
 
 ## Iterable : Generic name for a sequence or collection; any object that can be iterated through.
 
-## Can be mutable or immutable.&#xA; Built In Data Types
+## Can be mutable or immutable.&#xA;Built In Data Types
 
 # Lists are the python equivalent of arrays.
 
@@ -429,7 +406,7 @@ Working with sets**
 
 **Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.**
 
-# **For Statements&#xA; In python, there is only one for loop.**
+# **For Statements&#xA;In python, there is only one for loop.**
 
 Always Includes:
 
@@ -495,9 +472,9 @@ Always Includes:
 **Modules are similar to packages in Node.js**
 Come in different types:
 
-Built-In, 
+Built-In,
 
-Third-Party, 
+Third-Party,
 
 Custom.
 
