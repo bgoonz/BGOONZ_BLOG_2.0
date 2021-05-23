@@ -17,8 +17,7 @@ seo:
       keyName: property
     - name: 'og:description'
       value: >-
-        Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
-        accumsan
+         Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a\_detailed component API reference here
       keyName: property
     - name: 'og:image'
       value: images/3.jpg
@@ -30,8 +29,7 @@ seo:
       value: Introducing The Web-Dev-HubTheme
     - name: 'twitter:description'
       value: >-
-        Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
-        accumsan
+        Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a\_detailed component API reference here
     - name: 'twitter:image'
       value: images/3.jpg
       relativeUrl: true
