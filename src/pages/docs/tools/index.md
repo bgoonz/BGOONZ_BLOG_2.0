@@ -34,6 +34,22 @@ template: docs
                   loading="lazy" width="165" height="128" frameborder="0" scrolling="no">
 
                </iframe>
+             <!-------================================================================================================================------->              
+               
+               
                <iframe class="embed"
                   src="https://lambda-resources.netlify.app/"
                   loading="lazy" width="165" height="128" frameborder="0" scrolling="no">
+
+
+    <!-------===============================Web Dev-Quizes======================================================================------->
+            <h2 style=" margin-bottom: 2em; color:white; align-content:center;">Web Dev Quizes</h2>
+            <br>
+            <br>
+            <iframe class="embed" src="https://web-dev-interview-prep-quiz-website.netlify.app/" loading="lazy"
+               style=" margin-bottom: 2em; width:90%!important; height:800px;">
+
+            </iframe>
+            <br>
+            <br>
+            <!-------================================================================================================================------->
