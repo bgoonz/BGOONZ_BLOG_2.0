@@ -82,7 +82,7 @@ weight: 900
 - [the-best-cloud-based-code-playgrounds-of-2021-part-1](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------)
 
 
-- [front-end-interview-questions-part-2-86ddc0e91443](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
+- [front-end-interview-questions-part-2](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
 
 
 - [web-developer-resource-list-part-2-9c5cb56ab263](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
