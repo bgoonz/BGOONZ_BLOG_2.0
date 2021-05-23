@@ -114,7 +114,7 @@ sections:
     image_alt: bryan-guner
     image_position: center
     content: |
-      ![](/\_static/app-assets/music-profile.PNG)
+      ![ancestrial](/\_static/app-assets/music-profile.PNG)
     actions: []
     type: section_content
   - section_id: cta
