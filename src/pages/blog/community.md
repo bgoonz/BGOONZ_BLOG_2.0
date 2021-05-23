@@ -2,14 +2,14 @@
 date: '2019-05-27'
 image: images/2.jpg
 seo:
-  title: Community Round-up
+  title:Python Study Guide for a JavaScript Programmer
   description: python for javascript developers
   extra:
     - name: 'og:type'
       value: article
       keyName: property
     - name: 'og:title'
-      value: Community Round-up
+      value:Python Study Guide for a JavaScript Programmer
       keyName: property
     - name: 'og:description'
       value: python for javascript developers
@@ -21,7 +21,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Community Round-up
+      value:Python Study Guide for a JavaScript Programmer
     - name: 'twitter:description'
       value: python for javascript developers
     - name: 'twitter:image'
