@@ -28,8 +28,7 @@ sections:
           - label: Get Started
             url: /docs
             style: link
-      - title: Python Study Guide for a JavaScript Programmer
-        content: >+
+      - content: >+
           *Python has a built in help function that let’s you see a description
           of the source code without having to navigate to it… “-SickNasty …
           Autor Unknown”*
