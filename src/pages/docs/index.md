@@ -25,7 +25,7 @@ weight: 900
 
 
 
-- [introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
+- [introductory-react-part-2](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
 
 
 
