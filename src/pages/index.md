@@ -74,17 +74,7 @@ sections:
         type: grid_item
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
+        content: "##\n\n[Scope & Context in JavaScript:](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)\n\n\n\n\n\n[The\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. If a variable or other expression is not in the current scope, then it is unavailable for use. If we declare a variable, this variable will only be valid in the scope where we declared it. We can have nested scopes, but we'll see that in a little bit.\n](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)\n"
         actions:
           - label: lorem-ipsum
             url: '#'
