@@ -32,7 +32,7 @@ template: docs
 
 <iframe class="embed"
 src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E"
-style=" width:90%!important; height:800px;">
+style=" width:105%!important; height:800px;">
 
 </iframe>
 <!-------================================================================================================================------->              <br>
@@ -44,7 +44,7 @@ style=" width:90%!important; height:800px;">
 
 <iframe class="embed"
 src="https://lambda-resources.netlify.app/"
-loading="lazy" style=" width:90%!important; height:800px;">
+loading="lazy" style=" width:105%!important; height:800px;">
 </iframe>
 <br>
 <br>
@@ -58,7 +58,7 @@ loading="lazy" style=" width:90%!important; height:800px;">
 <br>
 
 <iframe class="embed" src="https://web-dev-interview-prep-quiz-website.netlify.app/" loading="lazy"
-style=" width:90%!important; height:800px;">
+style=" width:105%!important; height:800px;">
 
 </iframe>
 <br>
