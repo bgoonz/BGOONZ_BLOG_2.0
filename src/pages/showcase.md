@@ -18,7 +18,9 @@ sections:
       - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/pure-data.png
-        content: A personal theme for Unibit
+        content: >
+          Modified subsequence dynamic time warping feature detection using pure
+          data implemented in python
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/8.jpg
