@@ -1,73 +1,71 @@
 # React-Resources
 
-
-
 #### **Awesome React** [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 A collection of awesome things regarding the React ecosystem.
 
 * React
-  * React General Resources
-  * React Community
-  * React Online Playgrounds
-  * React Tutorials
-    * React General Tutorials
-    * React Hooks
-    * React and TypeScript
-    * React Performance
-    * React Internals
-    * React Interview Questions
-  * React Tools
-    * React Development Tools
-    * React Frameworks
-    * React Styling
-    * React Routing
-    * React Component Libraries
-    * React Awesome Components
-    * React Testing
-    * React Libraries
-    * React Integration
-    * React State Management
-    * React AR and VR
-    * React Renderers
-    * Forms
-    * Autocomplete
-    * Graphics
-    * Data Managing
-    * Maps
-    * Charts
+  + React General Resources
+  + React Community
+  + React Online Playgrounds
+  + React Tutorials
+    - React General Tutorials
+    - React Hooks
+    - React and TypeScript
+    - React Performance
+    - React Internals
+    - React Interview Questions
+  + React Tools
+    - React Development Tools
+    - React Frameworks
+    - React Styling
+    - React Routing
+    - React Component Libraries
+    - React Awesome Components
+    - React Testing
+    - React Libraries
+    - React Integration
+    - React State Management
+    - React AR and VR
+    - React Renderers
+    - Forms
+    - Autocomplete
+    - Graphics
+    - Data Managing
+    - Maps
+    - Charts
 * React Native
-  * React Native General Resources
-  * React Native Tutorials
-  * React Native Development Tools
-  * React Native Sample Apps
-  * React Native Boilerplates
-  * React Native Awesome Components
-  * React Native Libraries
+  + React Native General Resources
+  + React Native Tutorials
+  + React Native Development Tools
+  + React Native Sample Apps
+  + React Native Boilerplates
+  + React Native Awesome Components
+  + React Native Libraries
 * Redux
-  * Redux General Resources
-  * Redux Tools
-  * Redux Tutorials
+  + Redux General Resources
+  + Redux Tools
+  + Redux Tutorials
 * GraphQL
-  * GraphQL General Resources
-  * GraphQL Tools
-  * GraphQL Tutorials
-  * GraphQL Implementations
-  * Database Integration
+  + GraphQL General Resources
+  + GraphQL Tools
+  + GraphQL Tutorials
+  + GraphQL Implementations
+  + Database Integration
 * Relay
-  * Relay General Resources
-  * Relay Tutorials
-  * Relay Tools
+  + Relay General Resources
+  + Relay Tutorials
+  + Relay Tools
 * Videos
-  * Important Talks
-  * React.js Conf 2015 Playlist
-  * ReactEurope Conf 2015 Day 1 Playlist
-  * ReactEurope Conf 2015 Day 2 Playlist
-  * ReactRally Conf 2015 Playlist
-  * React.js Conf 2016 Playlist
-  * ReactRally Conf 2016 Playlist
-  * React.js Amsterdam 2018 Playlist
-  * Video Tutorials
+  + Important Talks
+  + React.js Conf 2015 Playlist
+  + ReactEurope Conf 2015 Day 1 Playlist
+  + ReactEurope Conf 2015 Day 2 Playlist
+  + ReactRally Conf 2015 Playlist
+  + React.js Conf 2016 Playlist
+  + ReactRally Conf 2016 Playlist
+  + React.js Amsterdam 2018 Playlist
+  + Video Tutorials
 * Demo React Apps
 * Real React Apps
 * Contribution
@@ -282,7 +280,7 @@ A collection of awesome things regarding the React ecosystem.
 * [react-slick](https://github.com/akiran/react-slick) - Carousel component built with React
 * [react-gtm-module](https://github.com/alinemorelli/react-gtm) - Google Tag Manager Module for React
 * [react-device-detect](https://github.com/duskload/react-device-detect) - Detect device for React
-* [react-colorful](https://github.com/omgovich/react-colorful) - A tiny \(2,5 KB\), dependency-free, fast and accessible color picker component
+* [react-colorful](https://github.com/omgovich/react-colorful) - A tiny \(2, 5 KB\), dependency-free, fast and accessible color picker component
 * [react-modal](https://github.com/reactjs/react-modal) - Accessible modal dialog component for React
 * [cleave.js](https://github.com/nosir/cleave.js) - Format input text content when you are typing
 * [react-fontawesome](https://github.com/FortAwesome/react-fontawesome) - Font Awesome 5 React component
@@ -333,7 +331,7 @@ A collection of awesome things regarding the React ecosystem.
 
 * [ReasonReact](https://reasonml.github.io/reason-react/)
 * [React Rails](https://github.com/reactjs/react-rails)
-* [ReactJS.NET](https://github.com/reactjs/React.NET)
+* [ReactJS. NET](https://github.com/reactjs/React.NET)
 * [om](https://github.com/swannodette/om) - ClojureScript interface
 * [Reagent](https://github.com/reagent-project/reagent) - A minimalistic ClojureScript interface to React.js
 * [Express React views](https://github.com/reactjs/express-react-views)
@@ -357,7 +355,7 @@ A collection of awesome things regarding the React ecosystem.
 * [react-topcoat by @arnemart](https://github.com/arnemart/react-topcoat) - A collection of React components for Topcoat
 * [reactdown](https://github.com/andreypopp/reactdown) - Write React components using markdown syntax
 * [react-jade](https://github.com/ForbesLindesay/react-jade) - Compile Jade to React JavaScript
-* [jade-react](https://github.com/duncanbeevers/jade-react) - Compile Jade templates to React.DOM expressions
+* [jade-react](https://github.com/duncanbeevers/jade-react) - Compile Jade templates to React. DOM expressions
 * [gulp-jade-react](https://github.com/duncanbeevers/gulp-jade-react) - Compile Jade templates into React de-sugared JSX with Gulp
 * [sbt-reactjs](https://github.com/ddispaltro/sbt-reactjs) - React SBT Plugin using npm
 * [scalajs-react](https://github.com/japgolly/scalajs-react) - A guilty affair between Scala.js and Facebook's React
@@ -611,7 +609,7 @@ A collection of awesome things regarding the React ecosystem.
 * [sangria](https://github.com/sangria-graphql/sangria) - **Scala** GraphQL client and server library
 * [graphql-php](https://github.com/webonyx/graphql-php) - A **PHP** port of GraphQL reference implementation
 * [graphene](https://github.com/graphql-python/graphene) - GraphQL framework for **Python**
-* [graphql-dotnet](https://github.com/graphql-dotnet/graphql-dotnet) - GraphQL for **.NET**
+* [graphql-dotnet](https://github.com/graphql-dotnet/graphql-dotnet) - GraphQL for **. NET**
 * [graphql-go](https://github.com/graphql-go/graphql) - GraphQL for **Go**
 * [juniper](https://github.com/graphql-rust/juniper) - GraphQL server library for **Rust**
 
@@ -654,7 +652,7 @@ A collection of awesome things regarding the React ecosystem.
 **Important Talks**
 
 * [Pete Hunt: React: Rethinking best practices - JSConf EU 2013](https://www.youtube.com/watch?v=x7cQ3mrcKaY)
-* [Pete Hunt: React: Rethinking Best Practices \(updated\) - JSConf.Asia 2013](https://www.youtube.com/watch?v=DgVS-zXgMTk)
+* [Pete Hunt: React: Rethinking Best Practices \(updated\) - JSConf. Asia 2013](https://www.youtube.com/watch?v=DgVS-zXgMTk)
 * [Tom Occhino and Jordan Walke: JS Apps at Facebook - JSConfUS 2013](https://www.youtube.com/watch?v=GW0rj4sNH2w)
 * [React: CSS in JS](http://blog.vjeux.com/2014/javascript/react-css-in-js-nationjs.html)
 * [Pete Hunt: Be Predictable, Not Correct - Mountain West JavaScript 2014](https://www.youtube.com/watch?v=h3KksH8gfcQ)
@@ -718,4 +716,3 @@ A collection of awesome things regarding the React ecosystem.
 * [overreacted](https://github.com/gaearon/overreacted.io) - Personal blog by Dan Abramov
 * [winamp2-js](https://github.com/captbaritone/winamp2-js) - Winamp 2 reimplemented for the browser
 * [dnote](https://github.com/dnote/dnote) - A command line notebook with multi-device sync and web interface
-

@@ -5,4 +5,3 @@
 {% file src="../.gitbook/assets/lifting-state-up-react.md" caption="State" %}
 
 {% file src="../.gitbook/assets/jsx-in-depth-react \(1\).md" caption="JSX" %}
-
