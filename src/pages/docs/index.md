@@ -30,7 +30,7 @@ weight: 900
 
 
 
-[a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
+[a-very-quick-guide-to-calculating-big-o-computational-complexity](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
 
 
 - [https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------)
