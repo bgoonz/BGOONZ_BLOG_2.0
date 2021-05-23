@@ -39,7 +39,7 @@ weight: 900
 - [https://javascript.plainenglish.io/](https://javascript.plainenglish.io/?source=your_stories_page-------------------------------------)
 
 
-- [https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------)
+- [https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------)
 
 
 - [css-animations-d196a20099a5](https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------)
