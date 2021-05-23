@@ -1,9 +1,9 @@
 {
     "palette": "blue",
     "header": {
-        "title": "Libris",
+        "title": "webdevhub",
         "logo_img": "images/imageonline-co-overlayed-image - Copy.png",
-        "logo_img_alt": "Libris logo",
+        "logo_img_alt": "webdevhub logo",
         "has_nav": true,
         "nav_links": [
             {
@@ -183,6 +183,6 @@
             }
         ]
     },
-    "title": "Stackbit Libris Theme",
+    "title": "webdevhub",
     "domain": "https://best-celery-b2d7c.netlify.app"
 }
