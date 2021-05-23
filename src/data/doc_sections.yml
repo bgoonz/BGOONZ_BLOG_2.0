@@ -1,6 +1,6 @@
 root_docs_path: /docs
 sections:
-  - about
+  - My-Content
   - getting-started
   - ui-components
   - manage-content
