@@ -27,7 +27,7 @@ sections:
         content: |
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
       - title: Ampersand
-        title_url: 'https://themes.stackbit.com/demos/ampersandexto/'
+        title_url: 'https://mihirbegmusic.netlify.app/'
         image: images/9.jpg
         content: Medium inspired blogging theme for Unibit
 seo:
