@@ -70,10 +70,7 @@ sections:
           # My Medium Blog
 
 
-
-
-          [Here's a running list of my blog
-          posts](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
+          ![](/\_static/app-assets/oval-robin.png)
 
 
           ![](/\_static/app-assets/posts1.png)
