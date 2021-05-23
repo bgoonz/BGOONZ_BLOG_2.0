@@ -28,8 +28,8 @@ sections:
             url: /docs
             style: link
       - title: Tools
-        content: >
-          <https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb>
+        content: |
+          ![](/\_static/app-assets/friendly-robin.png)
         actions:
           - label: View Posts
             url: /blog
