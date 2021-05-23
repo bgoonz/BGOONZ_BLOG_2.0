@@ -32,11 +32,10 @@ sections:
           # Python Study Guide for a JavaScript Programmer&#xA;&#xA;
 
 
-
-
-          *Python has a built in help function that let’s you see a description
+          [*Python has a built in help function that let’s you see a description
           of the source code without having to navigate to it… “-SickNasty …
-          Autor Unknown”*
+          Autor
+          Unknown”*](https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb)
         actions:
           - label: View Posts
             url: >-
