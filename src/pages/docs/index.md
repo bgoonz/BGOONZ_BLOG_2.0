@@ -85,7 +85,7 @@ weight: 900
 - [front-end-interview-questions-part-2](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
 
 
-- [web-developer-resource-list-part-2-9c5cb56ab263](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
+- [web-developer-resource-list-part-2](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
 
 
 - [https://levelup.gitconnected.com/http-basics-8f02a96a834a](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
