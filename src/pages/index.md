@@ -68,7 +68,12 @@ sections:
       - title: My Medium Blog
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >+
+        content: >
+          # My Medium Blog
+
+
+
+
           [Here's a running list of my blog
           posts](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
 
@@ -81,12 +86,6 @@ sections:
           Understanding Git... etc....
 
           ](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
-
-
-
-
-
-
         actions: []
         type: grid_item
   - section_id: features-two-col
