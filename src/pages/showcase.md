@@ -10,20 +10,24 @@ sections:
     type: section_grid
     col_number: three
     grid_items:
-      - title: Exto
+      - title: Git HTML PREVIEW
         title_url: 'https://themes.stackbit.com/demos/exto/'
-        image: images/6.jpg
-        content: A portfolio theme for Unibit
-      - title: Fresh
-        title_url: 'https://themes.stackbit.com/demos/fresh/'
-        image: images/7.jpg
-        content: A personal theme for Unibit
-      - title: Fjord
-        title_url: 'https://themes.stackbit.com/demos/fjord/'
+        image: images/git-html-preview.gif
+        content: |
+          Preview html files by pasting their url into the search bar
+      - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
+        title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
+        image: images/pure-data.png
+        content: >
+          Modified subsequence dynamic time warping feature detection using pure
+          data implemented in python
+      - title: Data Structures Interactive Learning Hub
+        title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/8.jpg
-        content: A minimal blogging theme for Unibit
-      - title: Ampersand
-        title_url: 'https://themes.stackbit.com/demos/ampersandexto/'
+        content: |
+          <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
+      - title: Mihir-Beg-Music.com
+        title_url: 'https://mihirbegmusic.netlify.app/'
         image: images/9.jpg
         content: Medium inspired blogging theme for Unibit
 seo:
