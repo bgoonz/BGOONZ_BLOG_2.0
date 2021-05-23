@@ -1,25 +1,25 @@
 ---
-title: Overview
+title: Resume
 weight: 1
 seo:
-  title: Overview
-  description: This is the overview page
+  title: Resume
+  description: This is the Resume page
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Overview
+      value: Resume
       keyName: property
     - name: 'og:description'
-      value: This is the overview page
+      value: This is the Resume page
       keyName: property
     - name: 'twitter:card'
       value: summary
     - name: 'twitter:title'
-      value: Overview
+      value: Resume
     - name: 'twitter:description'
-      value: This is the overview page
+      value: This is the Resume page
 template: docs
 ---
 

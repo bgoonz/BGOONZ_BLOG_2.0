@@ -1,17 +1,17 @@
 ---
-title: Where To Get Support
+title: Links
 excerpt: >-
   We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get
   connected.
 seo:
-  title: Where To Get Support
+  title: Links
   description: This is the community page
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Where To Get Support
+      value: Links
       keyName: property
     - name: 'og:description'
       value: This is the community page
@@ -19,61 +19,69 @@ seo:
     - name: 'twitter:card'
       value: summary
     - name: 'twitter:title'
-      value: Where To Get Support
+      value: Links
     - name: 'twitter:description'
       value: This is the community page
 template: docs
 ---
 
+* [introductory-react-part-2](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
 
-How To Implement Native(ES6) Data Structures Using Arrays & Objects
-===================================================================
+* [a-very-quick-guide-to-calculating-big-o-computational-complexity](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
 
-Smart data structures and dumb code works better than the other way around -“Eric S. Raymond”
+* [introduction-to-react-for-complete-beginners](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------)
 
-------------------------------------------------------------------------
+* [scheduling-settimeout-and-setinterval](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------)
 
-### How To Implement Native(ES6) Data Structures Using Arrays & Objects
+* [css-animations](https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------)
 
-<a href="https://www.azquotes.com/quote/636065?ref=data-structures" class="markup--anchor markup--p-anchor">Smart data structures and dumb code works better than the other way around</a> <a href="https://twitter.com/esrtweet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="markup--anchor markup--p-anchor"><strong>-“Eric S. Raymond”</strong></a>
+* [these-are-the-bash-shell-commands-that-stand-between-me-and-insanity](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------)
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/0*ZBBOzoXj5SgXtZb7.png" alt="https://data-flair.training/blogs/javascript-data-structures/" class="graf-image" /><figcaption><a href="https://data-flair.training/blogs/javascript-data-structures/" class="markup--anchor markup--figure-anchor">https://data-flair.training/blogs/javascript-data-structures/</a></figcaption></figure>#### *Abstract Data type (ADT) is a type (or class) for objects whose behavior is*
+* [how-to-implement-native-es6-data-structures-using-arrays-objects](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------)
 
-#### *defined by a set of value and a set of operations. The definition of ADT only mentions what operations are to be performed but not how these operations will be implemented.*
+* [objects-in-javascript](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
 
-> <a href="https://stackoverflow.com/a/31113335/15158587" class="markup--anchor markup--blockquote-anchor">Abstract Data Type(ADT) is a data type, where only behavior is defined but not implementation.</a>
+* [absolute-beginners-guide-to-javascript-part1](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
 
-> <a href="https://stackoverflow.com/a/31113335/15158587" class="markup--anchor markup--blockquote-anchor">Opposite of ADT is Concrete Data Type (CDT), where it contains an implementation of ADT.</a>
+* [web-developer-resource-list-part-4](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
 
-> **Examples:**  
-> `Array, List, Map, Queue, Set, Stack, Table, Tree, and Vector` are ADTs. Each of these ADTs has many implementations i.e. CDT. The container is a high-level ADT of above all ADTs.
+* [vscode-extensions-specifically-for-javascript-development](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
 
-> **Real life example:**  
-> book is Abstract (Telephone Book is an implementation)
+* [a-list-of-all-of-my-articles-to-link-to-future-posts](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------)
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*mAq2n01VTypXYWh0.jpg" class="graf-image" /></figure><a href="https://stackoverflow.com/a/65771454/15158587" class="markup--anchor markup--p-anchor">Abstract data types, commonly abbreviated ADTs, are a way of classifying data structures based on how they are used and the behaviors they provide.</a> They do not specify how the data structure must be implemented or laid out in memory, but simply provide a minimal expected interface and set of behaviors. For example, a stack is an abstract data type that specifies a linear data structure with LIFO (last in, first out) behavior. Stacks are commonly implemented using arrays or linked lists, but a needlessly complicated implementation using a binary search tree is still a valid implementation. To be clear, it is incorrect to say that stacks are arrays or vice versa. An array can be used as a stack. Likewise, a stack can be implemented using an array.
+* [lists-stacks-and-queues-in-javascript](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------)
 
-Since abstract data types don’t specify an implementation, this means it’s also incorrect to talk about the time complexity of a given abstract data type. An associative array may or may not have O(1) average search times. An associative array that is implemented by a hash table does have O(1) average search times.
+* [web-development-resources-part-3](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------)
 
-Further Reading:
+* [web-development-interview-part-3](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#map_object" class="markup--anchor markup--p-anchor">Keyed collections — JavaScript | MDN (mozilla.org)</a>
+* [running-list-of-interesting-articles-tools](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------)
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#class-based_vs._prototype-based_languages" class="markup--anchor markup--p-anchor">Details of the object model — JavaScript | MDN (mozilla.org)</a>
+* [the-best-cloud-based-code-playgrounds-of-2021-part-1](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------)
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set" class="markup--anchor markup--p-anchor">Set — JavaScript | MDN (mozilla.org)</a>
+* [front-end-interview-questions-part-2](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" class="markup--anchor markup--p-anchor">Map — JavaScript | MDN (mozilla.org)</a>
+* [web-developer-resource-list-part-2](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" class="markup--anchor markup--p-anchor">JavaScript data types and data structures — JavaScript | MDN (mozilla.org)</a>
+* [http-basics](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
 
-### For more content… go to :
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br />
-<em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+* [javascript-frameworks-libraries](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------)
 
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 15, 2021](https://medium.com/p/ce953b9f6a07).
+* [my-take-on-awesome-javascript](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74?source=your_stories_page-------------------------------------)
 
-<a href="https://medium.com/@bryanguner/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07" class="p-canonical">Canonical link</a>
+* [get-started-with-vscode-extensions](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931?source=your_stories_page-------------------------------------)
 
-Exported from [Medium](https://medium.com) on May 23, 2021.
+* [my-favorite-vscode-themes](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f?source=your_stories_page-------------------------------------)
+
+* [object-oriented-programming-in-javascript](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333?source=your_stories_page-------------------------------------)
+
+* [javascript-rotate-array-problemwalkthrough](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------)
+
+* [super-simple-intro-to-html-651d695f9bc](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc?source=your_stories_page-------------------------------------)
+
+* [everything-you-need-to-know-about-relational-databases-sql-postgresql](https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------)
+
+* [understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------)
+
+* [complete-javascript-reference-guide-64306cd6b0db](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------)
