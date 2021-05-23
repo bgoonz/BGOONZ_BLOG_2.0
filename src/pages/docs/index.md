@@ -36,9 +36,6 @@ weight: 900
 - [introduction-to-react-for-complete-beginners](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------)
 
 
-- [](https://javascript.plainenglish.io/?source=your_stories_page-------------------------------------)
-
-
 - [scheduling-settimeout-and-setinterval](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------)
 
 
