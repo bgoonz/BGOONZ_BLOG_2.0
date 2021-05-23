@@ -30,8 +30,8 @@
                 ]
             },
             {
-                "label": "lorem-ipsum",
-                "url": "#",
+                "label": "Portfolio",
+                "url": "https://1drv.ms/p/s!AkGiZ9n9CRDSnIQr93ky5YLm9NU1VA?e=FFJMlz",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
@@ -175,6 +175,15 @@
         "links": [
             {
                 "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "Old Blog",
+                "url": " https://web-dev-resource-hub.netlify.app/",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,

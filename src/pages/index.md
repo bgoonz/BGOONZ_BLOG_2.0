@@ -27,12 +27,13 @@ sections:
           - label: Get Started
             url: /docs
             style: link
-      - title: Tools
-        content: >
-          <https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb>
+      - title: Python Study Guide for a JavaScript Programmer
+        content: |
+          ![](/\_static/app-assets/friendly-robin.png)
         actions:
           - label: View Posts
-            url: /blog
+            url: >-
+              https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             style: link
       - title: Goals
         content: >+
@@ -122,7 +123,7 @@ sections:
     title: Contact Me!
     subtitle: This is an optional description for the call to action block.
     actions:
-      - label: Get Started
+      - label: Contact Me
         url: /docs/getting-started/installation
         style: primary
       - label: lorem-ipsum
@@ -132,28 +133,6 @@ sections:
         new_window: false
         no_follow: false
         type: action
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
-    image_position: left
-    content: >-
-      ## Lorem ipsum
-
-
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-      - Lorem ipsum
-
-      - dolor sit amet
-    actions: []
-    type: section_content
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    subtitle: lorem-ipsum
-    col_number: three
-    type: section_docs
 seo:
   title: Stackbit Libris Theme
   description: The preview of the Libris theme
