@@ -65,13 +65,6 @@ sections:
           granted!](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186)
         actions: []
         type: grid_item
-      - title: My Medium Blog Posts
-        title_url: >-
-          https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
-        image_alt: lorem-ipsum
-        content: "# My Blog Posts\n\n[\\*\\*![](/\\_static/app-assets/posts1.png)](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)\n\n[Postgresql\_Cheat\_Sheet,\_Everything\_You\_Need\_to\_Get\_Started\_With\_VSCode\_+\_Extensions\_&\_Resources,\_Super\_Simple\_Intro\_To\_HTML,\_Understanding\_Git\_(A\_Beginners\_Guide\_Containing\_Cheat\_Sheets\_&\_Resources),\_Git-Tricks,\_Lists\_Stacks\_and\_Queue’s\_In\_JavaScript,\_Web\_Development\_Resources\_Part\_3,\_My\_‘awesome’\_list\_of\_JavaScript\_resources,\_The\_Best\_Cloud-Based\_Code\_Playgrounds\_of\_2021\_(Part\_1) ...etc....](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)\n"
-        actions: []
-        type: grid_item
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: "## Scope & Context in JS\n\n\n\n\n\n\n\n[The\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. If a variable or other expression is not in the current scope, then it is unavailable for use. If we declare a variable, this variable will only be valid in the scope where we declared it. We can have nested scopes, but we'll see that in a little bit.](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)\n"
