@@ -25,28 +25,46 @@ seo:
 template: docs
 ---
 
-
-
+<br>
+<br>
+<br>
+<br>
 
 <iframe class="embed"
 src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E"
-loading="lazy" width="165" height="128" frameborder="0" scrolling="no">
+style=" width:90%!important; height:800px;">
 
 </iframe>
-<!-------================================================================================================================------->              
+<!-------================================================================================================================------->              <br>
+<br>
+<br>
+<br>
+
 
 
 <iframe class="embed"
 src="https://lambda-resources.netlify.app/"
-loading="lazy" width="165" height="128" frameborder="0" scrolling="no">
+loading="lazy" style=" width:90%!important; height:800px;">
 </iframe>
+<br>
+<br>
+<br>
+<br>
 
 <!-------===============================Web Dev-Quizes======================================================================------->
+<br>
+<br>
+<br>
+<br>
 
 <iframe class="embed" src="https://web-dev-interview-prep-quiz-website.netlify.app/" loading="lazy"
-style=" margin-bottom: 2em; width:90%!important; height:800px;">
+style=" width:90%!important; height:800px;">
 
 </iframe>
 <br>
 <br>
 <!-------================================================================================================================------->
+<br>
+<br>
+<br>
+<br>
