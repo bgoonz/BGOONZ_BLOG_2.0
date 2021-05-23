@@ -27,7 +27,7 @@ sections:
           - label: Get Started
             url: /docs
             style: link
-      - title: Tools
+      - title: Python Study Guide for a JavaScript Programmer
         content: |
           ![](/\_static/app-assets/friendly-robin.png)
         actions:
