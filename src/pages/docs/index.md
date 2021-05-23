@@ -57,7 +57,7 @@ weight: 900
 - [absolute-beginners-guide-to-javascript-part1](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
 
 
-- [https://medium.com/star-gazers/web-developer-resource-list-part-4](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
+- [web-developer-resource-list-part-4](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
 
 
 
@@ -85,7 +85,7 @@ weight: 900
 [front-end-interview-questions-part-2-86ddc0e91443](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
 
 
-- [https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
+- [web-developer-resource-list-part-2-9c5cb56ab263](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
 
 
 - [https://levelup.gitconnected.com/http-basics-8f02a96a834a](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
