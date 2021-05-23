@@ -1,7 +1,7 @@
 ---
 title: Blog
 subtitle: This is an optional subtitle for the blog page
-image: images/friendly-robin.png
+image: images/incredible-birch.gif
 has_more_link: true
 more_link_text: Read more
 seo:
