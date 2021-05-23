@@ -13,8 +13,7 @@ sections:
     grid_items:
       - title: Blog
         content: >
-          > ## A Quick Guide to Big-O Notation, Memoization, Tabulation, and
-          Sorting
+          > ## A Quick Guide to Big-O Notation
 
           >
 
@@ -22,8 +21,9 @@ sections:
 
           >
 
-          > ###### [***Curating Complexity: A Guide to Big-O
-          Notation***](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
+          > ###### [***Curating Complexity: A Guide to Big-O Notation
+          ***](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)(Memoization,
+          Tabulation, and Sorting)
         actions:
           - label: Get Started
             url: /docs
