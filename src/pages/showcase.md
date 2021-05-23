@@ -16,7 +16,7 @@ sections:
         content: |
           Preview html files by pasting their url into the search bar
       - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
-        title_url: 'https://themes.stackbit.com/demos/fresh/'
+        title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/pure-data.png
         content: A personal theme for Unibit
       - title: Fjord
