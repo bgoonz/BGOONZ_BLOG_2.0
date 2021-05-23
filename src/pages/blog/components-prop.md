@@ -7,8 +7,7 @@ image: images/10.jpg
 seo:
   title: Introducing The Web-Dev-HubTheme
   description: >-
-    Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
-    accumsan
+    Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a\_detailed component API reference here
   extra:
     - name: 'og:type'
       value: article
