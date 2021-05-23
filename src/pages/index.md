@@ -86,7 +86,14 @@ sections:
           - Lorem ipsum
 
           - dolor sit amet
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
         type: grid_item
         image: images/scope-context.png
   - section_id: features-two-col
