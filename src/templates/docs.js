@@ -16,36 +16,34 @@ export const query = graphql`
   }
 `;
 
-export default class Docs extends React.Component {
-    render() {
-        let root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
-        let current_page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
-        return (
-            <Layout {...this.props}>
+export const Docs = props => {
+  let root_docs_path = _.trim(_.get(props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
+
+  let current_page_url = _.trim(_.get(props, 'pageContext.url', null), '/');
+
+  return <Layout {...props}>
             <div className="inner outer">
               <div className="docs-content">
-                <DocsMenu {...this.props} page={this.props.pageContext} site={this.props.pageContext.site} />
+                <DocsMenu {...props} page={props.pageContext} site={props.pageContext.site} />
                 <article className="post type-docs">
                   <div className="post-inside">
                     <header className="post-header">
-                      <h1 className="post-title line-left">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                      <h1 className="post-title line-left">{_.get(props, 'pageContext.frontmatter.title', null)}</h1>
                     </header>
                     <div className="post-content">
-                      {htmlToReact(_.get(this.props, 'pageContext.html', null))}
-                      {(root_docs_path !== current_page_url) && ((() => {
-                          let child_pages = _.orderBy(getPages(this.props.pageContext.pages, current_page_url), 'frontmatter.weight');
-                          let child_count = _.size(child_pages);
-                          let has_children = (child_count > 0) ? (true) : false;
-                          return (<React.Fragment>
-                            {has_children && (
-                              <ul id="docs-section-items" className="docs-section-items">
-                                {_.map(child_pages, (child_page, child_page_idx) => (
-                                <li key={child_page_idx} className="docs-section-item"><Link to={withPrefix(_.get(child_page, 'url', null))} className="docs-item-link">{_.get(child_page, 'frontmatter.title', null)}<span className="icon-angle-right" aria-hidden="true" /></Link></li>
-                                ))}
-                              </ul>
-                            )}
-                          </React.Fragment>);
-                      })())}
+                      {htmlToReact(_.get(props, 'pageContext.html', null))}
+                      {root_docs_path !== current_page_url && (() => {
+                let child_pages = _.orderBy(getPages(props.pageContext.pages, current_page_url), 'frontmatter.weight');
+
+                let child_count = _.size(child_pages);
+
+                let has_children = child_count > 0 ? true : false;
+                return <React.Fragment>
+                            {has_children && <ul id="docs-section-items" className="docs-section-items">
+                                {_.map(child_pages, (child_page, child_page_idx) => <li key={child_page_idx} className="docs-section-item"><Link to={withPrefix(_.get(child_page, 'url', null))} className="docs-item-link">{_.get(child_page, 'frontmatter.title', null)}<span className="icon-angle-right" aria-hidden="true" /></Link></li>)}
+                              </ul>}
+                          </React.Fragment>;
+              })()}
                     </div>
                   </div>
                 </article>
@@ -57,7 +55,5 @@ export default class Docs extends React.Component {
                 </nav>
               </div>
             </div>
-            </Layout>
-        );
-    }
-}
+            </Layout>;
+};
