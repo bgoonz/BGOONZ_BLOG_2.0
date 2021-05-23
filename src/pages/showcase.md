@@ -20,7 +20,7 @@ sections:
         image: images/pure-data.png
         content: A personal theme for Unibit
       - title: Fjord
-        title_url: 'https://themes.stackbit.com/demos/fjord/'
+        title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/8.jpg
         content: A minimal blogging theme for Unibit
       - title: Ampersand
