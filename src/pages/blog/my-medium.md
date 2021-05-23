@@ -5,8 +5,8 @@ excerpt: >-
   incididunt ut labore et dolore magna aliqua. Ac ut consequat semper viverra
   nam libero justo laoreet sit.
 date: '2019-03-10'
-thumb_image: images/2.jpg
-image: images/2.jpg
+thumb_image: images/medium.png
+image: images/medium.png
 seo:
   title: Medium Articles
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
@@ -21,7 +21,7 @@ seo:
       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
       keyName: property
     - name: 'og:image'
-      value: images/2.jpg
+      value: images/medium.png
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -31,7 +31,7 @@ seo:
     - name: 'twitter:description'
       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     - name: 'twitter:image'
-      value: images/2.jpg
+      value: images/medium.png
       relativeUrl: true
 template: post
 ---
