@@ -83,7 +83,7 @@
                 "subnav_links": [
                     {
                         "label": "Github HTML Previewer",
-                        "url": "#https://githtmlpreview.netlify.app/",
+                        "url": "https://githtmlpreview.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
@@ -92,7 +92,7 @@
                     },
                     {
                         "label": "Text Tools",
-                        "url": "#https://devtools42.netlify.app/",
+                        "url": "https://devtools42.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
@@ -101,7 +101,7 @@
                     },
                     {
                         "label": "Ternary 2 If Else",
-                        "url": "#https://ternary42.netlify.app/",
+                        "url": "https://ternary42.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
@@ -154,7 +154,7 @@
             },
             {
                 "label": "Youtube",
-                "url": "#https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA",
+                "url": "https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA",
                 "style": "icon",
                 "icon_class": "youtube",
                 "new_window": true,
