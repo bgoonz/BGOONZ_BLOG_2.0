@@ -48,7 +48,7 @@ weight: 900
 - [how-to-implement-native-es6-data-structures-using-arrays-objects](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------)
 
 
-- [/objects-in-javascript](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
+[objects-in-javascript](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
 
 
 
@@ -61,7 +61,7 @@ weight: 900
 
 
 
-- [/vscode-extensions-specifically-for-javascript-development](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
+[vscode-extensions-specifically-for-javascript-development](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
 
 
 - [a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------)
@@ -73,7 +73,7 @@ weight: 900
 - [web-development-resources-part-3-f862ceb2b82a](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------)
 
 
-- [/web-development-interview-part-3-826ae81a9107](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
+[web-development-interview-part-3-826ae81a9107](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
 
 
 - [running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------)
@@ -82,7 +82,7 @@ weight: 900
 - [the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------)
 
 
-- [/front-end-interview-questions-part-2-86ddc0e91443](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
+[front-end-interview-questions-part-2-86ddc0e91443](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
 
 
 - [https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
@@ -109,13 +109,13 @@ weight: 900
 - [https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333?source=your_stories_page-------------------------------------)
 
 
-- [/javascript-rotate-array-problemwalkthrough-31deb19ebba1](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------)
+[javascript-rotate-array-problemwalkthrough-31deb19ebba1](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------)
 
 
 - [https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc?source=your_stories_page-------------------------------------)
 
 
-- [/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98](https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------)
+[everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98](https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------)
 
 
 - [https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------)
