@@ -110,11 +110,11 @@ sections:
             url: /showcase
             style: link
   - title: Musical Persuits
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
-    image_position: left
+    section_id: guitar
+    image_alt: bryan-guner
+    image_position: center
     content: |
-      ![](/\_static/app-assets/music-profile.PNG)
+      ![ancestrial](https://www.youtube.com/watch?v=xGZSWvFess8)
     actions: []
     type: section_content
   - section_id: cta
