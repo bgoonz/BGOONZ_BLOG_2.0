@@ -22,7 +22,8 @@ sections:
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/8.jpg
-        content: A minimal blogging theme for Unibit
+        content: |
+          <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
       - title: Ampersand
         title_url: 'https://themes.stackbit.com/demos/ampersandexto/'
         image: images/9.jpg
