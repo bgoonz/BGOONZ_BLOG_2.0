@@ -36,10 +36,18 @@ sections:
               https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             style: link
       - title: Goals
-        content: >+
+        content: >
+
+
+          ![](/\_static/app-assets/dtw.png)
+
+
+
+
+
+
           This section exists for me to day dream ideas for the future... and
           maybe... just maybe, hold myself accountable to them.
-
         actions:
           - label: Learn More
             url: /style-guide
