@@ -89,6 +89,7 @@ sections:
           - dolor sit amet
         actions: []
         type: grid_item
+        image: images/scope-context.png
   - section_id: features-two-col
     type: section_grid
     title: Resume & Portfolio
