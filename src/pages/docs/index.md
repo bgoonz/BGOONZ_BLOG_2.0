@@ -88,7 +88,7 @@ weight: 900
 - [web-developer-resource-list-part-2](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
 
 
-- [https://levelup.gitconnected.com/http-basics-8f02a96a834a](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
+- [https://levelup.gitconnected.com/http-basics](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
 
 
 - [https://levelup.gitconnected.com/](https://levelup.gitconnected.com/?source=your_stories_page-------------------------------------)
