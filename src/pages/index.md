@@ -106,7 +106,7 @@ sections:
     subtitle: An optional subtitle of the section
     col_number: two
     grid_items:
-      - title: Overview
+      - title: Resume
         content: |
           ![](/images/skillz.PNG)
         actions:
