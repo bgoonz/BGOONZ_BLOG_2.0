@@ -31,6 +31,22 @@ sections:
         title_url: 'https://mihirbegmusic.netlify.app/'
         image: images/pic02.jpg
         content: Medium inspired blogging theme for Unibit
+      - title: lorem-ipsum
+        title_url: lorem-ipsum
+        image_alt: lorem-ipsum
+        content: >-
+          ## Lorem ipsum
+
+
+          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+          - Lorem ipsum
+
+          - dolor sit amet
+        actions: []
+        type: grid_item
 seo:
   title: Showcase
   description: This is the showcase page
