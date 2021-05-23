@@ -33,17 +33,12 @@ sections:
         image: images/fierce-sun.png
       - title: Goals
         content: >
-
-
           ![](/\_static/app-assets/dtw.png)
 
 
-
-
-
-
-          This section exists for me to day dream ideas for the future... and
-          maybe... just maybe, hold myself accountable to them.
+          ###### [This section exists for me to day dream ideas for the
+          future... and maybe... just maybe, hold myself accountable to
+          them.](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
         actions:
           - label: Learn More
             url: /style-guide
