@@ -64,7 +64,7 @@ weight: 900
 [vscode-extensions-specifically-for-javascript-development](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
 
 
-- [a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------)
+- [a-list-of-all-of-my-articles-to-link-to-future-posts](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------)
 
 
 - [lists-stacks-and-queues-in-javascript](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------)
