@@ -57,7 +57,7 @@ weight: 900
 
 
 
-- [https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
+- [https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part1](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
 
 
 - [https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
