@@ -1,4 +1,4 @@
----
+Plug-ins---
 title: lorem-ipsum
 weight: 0
 excerpt: lorem-ipsum
