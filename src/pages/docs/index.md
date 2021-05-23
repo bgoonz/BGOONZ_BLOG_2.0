@@ -45,7 +45,7 @@ weight: 900
 - [css-animations](https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------)
 
 
-- [these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------)
+- [these-are-the-bash-shell-commands-that-stand-between-me-and-insanity](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------)
 
 
 - [how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------)
