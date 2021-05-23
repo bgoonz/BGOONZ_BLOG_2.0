@@ -18,7 +18,7 @@ seo:
       value: This is the blog page
       keyName: property
     - name: 'og:image'
-      value: images/5.jpg
+      value: images/background.gif
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -28,7 +28,7 @@ seo:
     - name: 'twitter:description'
       value: This is the blog page
     - name: 'twitter:image'
-      value: images/5.jpg
+      value: images/background.gif
       relativeUrl: true
 template: blog
 ---

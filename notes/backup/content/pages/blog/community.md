@@ -4,7 +4,7 @@ excerpt: >-
   Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa
   massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing
   placerat lorem turpis at.
-date: '2019-05-27'
+date: '2021-05-23'
 image: images/2.jpg
 seo:
   title: Community Round-up
