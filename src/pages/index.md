@@ -100,12 +100,6 @@ sections:
           - dolor sit amet
         actions: []
         type: grid_item
-  - section_id: text-img
-    type: section_content
-    image_position: left
-    title: Musician
-    content: "# Hi\_\U0001F44B, I'm Bryan\n\n```\n                                                                                                                        ![](/images/gravatar.png)\n\n\n\n```\n"
-    actions: []
   - section_id: features-two-col
     type: section_grid
     title: Sample Layouts
