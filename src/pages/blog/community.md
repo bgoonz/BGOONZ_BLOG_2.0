@@ -3,7 +3,7 @@ date: '2019-05-27'
 image: images/2.jpg
 seo:
   title: Community Round-up
-  description: Commodo ante vis placerat interdum massa massa primis
+  description: python for javascript developers
   extra:
     - name: 'og:type'
       value: article
@@ -12,7 +12,7 @@ seo:
       value: Community Round-up
       keyName: property
     - name: 'og:description'
-      value: Commodo ante vis placerat interdum massa massa primis
+      value: python for javascript developers
       keyName: property
     - name: 'og:image'
       value: images/2.jpg
@@ -23,7 +23,7 @@ seo:
     - name: 'twitter:title'
       value: Community Round-up
     - name: 'twitter:description'
-      value: Commodo ante vis placerat interdum massa massa primis
+      value: python for javascript developers
     - name: 'twitter:image'
       value: images/2.jpg
       relativeUrl: true
