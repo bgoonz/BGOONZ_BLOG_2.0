@@ -5,9 +5,7 @@ sections:
     type: section_hero
     title: I am a musician/electrical engineer turned web developer
     image: images/3.jpg
-    content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
+    content: "\U0001F331\_I'm currently learning\_**React/Redux, Python, Java, Express, jQuery**\n\n\U0001F46F\_I'm looking to collaborate on\_[Any web audio or open source educational tools.](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)\n\n[](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)\U0001F91D\_I'm looking for help with\_[Learning React](https://github.com/bgoonz/React-Practice)\n"
     actions: []
   - section_id: features
     type: section_grid
