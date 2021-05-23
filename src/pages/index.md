@@ -31,8 +31,7 @@ sections:
               https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             style: link
         image: images/fierce-sun.png
-      - title: Goals
-        content: >
+      - content: >
           ![](/\_static/app-assets/dtw.png)
 
 
