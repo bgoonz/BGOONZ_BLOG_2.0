@@ -6,7 +6,7 @@ While this appendix doesn't cover ES6 classes, we go over the basics while learn
 
 ## Prefer `const` and `let` over `var`
 
-If you've worked with ES5 JavaScript before, you're likely used to seeing variables declared with `var`:
+If you've worked with ES5 JavaScript before, you're likely used to seeing variables declared with `var` :
 
 ```text
 ar myVariable = 5;
@@ -16,9 +16,9 @@ Both the `const` and `let` statements also declare variables. They were introduc
 
 Use `const` in cases where a variable is never re-assigned. Using `const` makes this clear to whoever is reading your code. It refers to the "constant" state of the variable in the context it is defined within.
 
-If the variable will be re-assigned, use `let`.
+If the variable will be re-assigned, use `let` .
 
-We encourage the use of `const` and `let` instead of `var`. In addition to the restriction introduced by `const`, both `const` and `let` are _block scoped_ as opposed to _function scoped_. This scoping can help avoid unexpected bugs.
+We encourage the use of `const` and `let` instead of `var` . In addition to the restriction introduced by `const` , both `const` and `let` are _block scoped_ as opposed to _function scoped_. This scoping can help avoid unexpected bugs.
 
 ## Arrow functions
 
@@ -68,7 +68,7 @@ const popsNoArrow = cities.map(function(city) { return city.pop });
 
 Of greater benefit, though, is how arrow functions bind the `this` object.
 
-The traditional JavaScript function declaration syntax \(`function () {}`\) will bind `this` in anonymous functions to the global object. To illustrate the confusion this causes, consider the following example:
+The traditional JavaScript function declaration syntax \( `function () {}` \) will bind `this` in anonymous functions to the global object. To illustrate the confusion this causes, consider the following example:
 
 ```text
 unction printSong() {
@@ -101,7 +101,7 @@ const jukebox = {
 jukebox.printSongs();
 ```
 
-The method `printSongs()` iterates over `this.songs` with `forEach()`. In this context, `this` is bound to the object \(`jukebox`\) as expected. However, the anonymous function passed to `forEach()` binds its internal `this` to the global object. As such, `this.printSong(song)` calls the function declared at the top of the example, _not_ the method on `jukebox`.
+The method `printSongs()` iterates over `this.songs` with `forEach()` . In this context, `this` is bound to the object \( `jukebox` \) as expected. However, the anonymous function passed to `forEach()` binds its internal `this` to the global object. As such, `this.printSong(song)` calls the function declared at the top of the example, _not_ the method on `jukebox` .
 
 JavaScript developers have traditionally used workarounds for this behavior, but arrow functions solve the problem by **capturing the `this` value of the enclosing context**. Using an arrow function for `printSongs()` has the expected result:
 
@@ -121,7 +121,7 @@ For this reason, throughout the book we use arrow functions for all anonymous fu
 
 ## Modules
 
-ES6 formally supports modules using the `import`/`export` syntax.
+ES6 formally supports modules using the `import` / `export` syntax.
 
 **Named exports**
 
@@ -134,7 +134,7 @@ export const sayBye = () => (console.log('Bye!'));
 const saySomething = () => (console.log('Something!'));
 ```
 
-Now, anywhere we wanted to use these functions we could use `import`. We need to specify which functions we want to import. A common way of doing this is using ES6's destructuring assignment syntax to list them out like this:
+Now, anywhere we wanted to use these functions we could use `import` . We need to specify which functions we want to import. A common way of doing this is using ES6's destructuring assignment syntax to list them out like this:
 
 ```text
 import { sayHi, sayBye } from './greetings';
@@ -143,9 +143,9 @@ sayHi();
 sayBye();
 ```
 
-Importantly, the function that was _not_ exported \(`saySomething`\) is unavailable outside of the module.
+Importantly, the function that was _not_ exported \( `saySomething` \) is unavailable outside of the module.
 
-Also note that we supply a **relative path** to `from`, indicating that the ES6 module is a local file as opposed to an npm package.
+Also note that we supply a **relative path** to `from` , indicating that the ES6 module is a local file as opposed to an npm package.
 
 Instead of inserting an `export` before each variable you'd like to export, you can use this syntax to list off all the exposed variables in one area:
 
@@ -194,7 +194,7 @@ Greetings.sayHi();
 Greetings.sayBye();
 ```
 
-It's not uncommon for a module to use a mix of both named exports and default exports. For instance, with `react-dom`, you can import `ReactDOM` \(a default export\) like this:
+It's not uncommon for a module to use a mix of both named exports and default exports. For instance, with `react-dom` , you can import `ReactDOM` \(a default export\) like this:
 
 ```text
 import ReactDOM from 'react-dom';
@@ -229,7 +229,7 @@ const ReactDOM = {
 export default ReactDOM;
 ```
 
-If you want to play around with the module syntax, check out the folder `code/webpack/es6-modules`.
+If you want to play around with the module syntax, check out the folder `code/webpack/es6-modules` .
 
 For more reading on ES6 modules, see this article from Mozilla: "[ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)".
 
@@ -246,7 +246,7 @@ const noMilk = { milk: false };
 Object.assign(coffee, noCream);
 ```
 
-It is idiomatic to pass in three arguments to `Object.assign()`. The first argument is a new JavaScript object, the one that `Object.assign()` will ultimately return. The second is the object whose properties we'd like to build off of. The last is the changes we'd like to apply:
+It is idiomatic to pass in three arguments to `Object.assign()` . The first argument is a new JavaScript object, the one that `Object.assign()` will ultimately return. The second is the object whose properties we'd like to build off of. The last is the changes we'd like to apply:
 
 ```text
 const coffeeWithMilk = Object.assign({}, coffee, { milk: true });
@@ -268,7 +268,7 @@ With ES6 template literals, we can create the same string like this:
 const greeting = `Hello, ${user}! It is ${degF} degrees outside.`;
 ```
 
-## The spread operator \(`...`\)
+## The spread operator \( `...` \)
 
 In arrays, the ellipsis `...` operator will _expand_ the array that follows into the parent array. The spread operator enables us to succinctly construct new arrays as a composite of existing arrays.
 
@@ -344,7 +344,7 @@ divide(14, undefined);
 divide(14);
 ```
 
-Whenever the argument `b` in the example above is `undefined`, the default argument is used. Note that `null` will not use the default argument:
+Whenever the argument `b` in the example above is `undefined` , the default argument is used. Note that `null` will not use the default argument:
 
 ```text
 divide(14, null);
@@ -426,5 +426,4 @@ const IngredientList = ({ ingredients, onClick }) => (
 )
 ```
 
-Here, we use destructuring to extract the props into variables \(`ingredients` and `onClick`\) that we then use inside the component's function body.
-
+Here, we use destructuring to extract the props into variables \( `ingredients` and `onClick` \) that we then use inside the component's function body.

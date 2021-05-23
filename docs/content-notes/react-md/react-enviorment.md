@@ -97,7 +97,7 @@ We also need to create our `index.html` file that we are including in our `app.j
 </html>
 ```
 
-This is a basic HTML page. We are including Bootstrap and its basic theme for some simple styles. We also are adding some styles in a `style` tag to help with the sizing of some elements. In the `body`, we are adding our container element and our main app bundle.
+This is a basic HTML page. We are including Bootstrap and its basic theme for some simple styles. We also are adding some styles in a `style` tag to help with the sizing of some elements. In the `body` , we are adding our container element and our main app bundle.
 
 Now that we have all that setup, let's create a webpack config that we can use to build our project. Create a file in the root of your project called `webpack.config.js` and put the following in it.
 
@@ -150,4 +150,3 @@ Let's create a `.babelrc` file to configure babel.
 ```
 
 Last thing. Let's create some npm scripts so that we don't need to remember the commands we need to run our application. Add the following scripts to your `package.json` file in the `scripts` section.
-

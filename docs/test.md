@@ -68,7 +68,7 @@ jsDelivr also supports NPM and WordPress.
 
 <aside>
 
-_**Like this?** I send out a short email each weekday with code snippets, tools, techniques, and interesting stuff from around the web. Join 11,500+ daily subscribers._
+_**Like this?** I send out a short email each weekday with code snippets, tools, techniques, and interesting stuff from around the web. Join 11, 500+ daily subscribers._
 
 <form action="https://gomakethings.us1.list-manage.com/subscribe/post?u=f2d244c0df42a0431bd08ddea&amp;id=aeaa9dd034" method="post" name="mc-embedded-subscribe-form" id="mailchimp-form" novalidate="">
 

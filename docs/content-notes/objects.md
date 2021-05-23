@@ -1,7 +1,5 @@
 # Objects
 
-
-
 ## **Notes**
 
 ### **The Object Type**
@@ -25,33 +23,44 @@ In other programming languages, objects are referred to as, "dictionaries", "map
 
 ```javascript
 // here "color" is the key!
-> car["color"] = "Blue";
+>
+car["color"] = "Blue";
 "Blue"
 
-> car["seats"] = 2;
+>
+car["seats"] = 2;
 2
 
-// accessing our object at the key of color
-> car["color"]
+    // accessing our object at the key of color
+    >
+    car["color"]
 "Blue"
 
-> car["seats"]
+>
+car["seats"]
 2
 
-> car
-{color: "Blue", seats: 2}
+    >
+    car {
+        color: "Blue",
+        seats: 2
+    }
 ```
 
 * We assign values to an object by defining the name of the key in brackets and assigning it to a value.
 
 ```javascript
-> car
-{color: "Blue", seats: 2}
+> car {
+    color: "Blue",
+    seats: 2
+}
 
-> "color" in car;
+>
+"color" in car;
 true
 
-> "model" in car;
+    >
+    "model" in car;
 false
 ```
 
@@ -61,32 +70,45 @@ false
 **Using Variables as Keys**
 
 ```javascript
-> car
-{color: "Blue", seats: 2}
+> car {
+    color: "Blue",
+    seats: 2
+}
 
-> let newVariable = "color";
+>
+let newVariable = "color";
 undefined
 
-> newVariable
-"color"
+    >
+    newVariable "color"
 
-> car[newVariable]
+    >
+    car[newVariable]
 "Blue"
 
----
+-- -
 
-> car
-{color: "Blue", seats: 2}
+>
+car {
+    color: "Blue",
+    seats: 2
+}
 
-> newVariable
-"weight"
+>
+newVariable
+    "weight"
 
-// assigning a key value pair using a variable!
-> car[newVariable] = 1000;
+    // assigning a key value pair using a variable!
+    >
+    car[newVariable] = 1000;
 1000
 
-> car
-{color: "Blue", seats: 2, weight: 1000}
+    >
+    car {
+        color: "Blue",
+        seats: 2,
+        weight: 1000
+    }
 ```
 
 * It is useful to set a variable as a key, because variables can be re-assigned new values - this way we can quickly access different data and also create new key/value pairs.
@@ -94,21 +116,25 @@ undefined
 ### **Using Different Notations**
 
 ```javascript
-> let dog = {};
+>
+let dog = {};
 undefined
 
-> dog.bark = "Bowowowo";
+    >
+    dog.bark = "Bowowowo";
 "Bowowowowo"
 
-> dog.bark
-"Bowowowo"
+>
+dog.bark "Bowowowo"
 
-> dog
-{ bark: "Bowowowowo" }
+    >
+    dog {
+        bark: "Bowowowowo"
+    }
 ```
 
 * We can also use **dot notation** **"."** to access key/value pairs in an object.
-  * One thing to note is that when using dot notation, we do not have to use string quotes as the key.
+  + One thing to note is that when using dot notation, we do not have to use string quotes as the key.
 
 **Bracket Notation vs Dot Notation**
 
@@ -141,10 +167,10 @@ You can put an object together in a single statement.
 
 ```javascript
 let myDog = {
-  name: "Fido",
-  type: "Doge",
-  age: 2,
-  favoriteToys: ["bone", "ball"],
+    name: "Fido",
+    type: "Doge",
+    age: 2,
+    favoriteToys: ["bone", "ball"],
 };
 ```
 
@@ -152,22 +178,26 @@ let myDog = {
 
 * The concept of Operator Precedence also applies to objects.
 * There are two types of associativity:
-  * **`Right Associativity`** : When code is evaluted right to left.
+  + **`Right Associativity`** : When code is evaluted right to left.
 
-    ```javascript
+    
+
+```javascript
     a = b = 1;
-    ```
+```
 
-    * Since **assignment of variables** takes lowest precendence, we end up evaluating b = 1 first before a = b.
+    - Since **assignment of variables** takes lowest precendence, we end up evaluating b = 1 first before a = b.
 
-  * **`Left Associativity`** : When code is evaluated left to right.
+  + **`Left Associativity`** : When code is evaluated left to right.
 
-    ```javascript
+    
+
+```javascript
     let id = "header";
     let element = document.getElementById(id).value;
-    ```
+```
 
-    * We first resolve the document variable, then use dot notation to retrive the getElementById function, we eval it's arguments, access it's value, and then retrieve assignment \(the lowest precedence\).
+    - We first resolve the document variable, then use dot notation to retrive the getElementById function, we eval it's arguments, access it's value, and then retrieve assignment \(the lowest precedence\).
 
 ### **Iterating Through Objects**
 
@@ -177,19 +207,22 @@ Because objects store _**unordered**_ key-value pairs, we do not rely on indices
 
 ```javascript
 for (let variable in object) {
-  statement;
+    statement;
 
-  let obj = { name: "Rose", cats: 2 };
-  for (let currentKey in obj) {
-    console.log(currentKey);
-    console.log(obj[currentKey]);
-  }
+    let obj = {
+        name: "Rose",
+        cats: 2
+    };
+    for (let currentKey in obj) {
+        console.log(currentKey);
+        console.log(obj[currentKey]);
+    }
 
-  // prints out:
-  // name
-  // cats
-  // Rose
-  // 2
+    // prints out:
+    // name
+    // cats
+    // Rose
+    // 2
 }
 ```
 
@@ -200,7 +233,8 @@ for (let variable in object) {
 A **`Method`** is a function that _belongs_ to an object. Every method is a function, but _not_ every function is a method.
 
 ```javascript
-myFunc is a function
+myFunc is a
+function
 myObject.myFunc is a method of the object myObject
 myObject["myFunc"] is a method of the object myObject
 ```
@@ -209,31 +243,31 @@ myObject["myFunc"] is a method of the object myObject
 
 ```javascript
 let dog = {
-  name: "Fido",
+    name: "Fido",
 };
 
-dog.bark = function () {
-  console.log("bark bark!");
+dog.bark = function() {
+    console.log("bark bark!");
 };
 
 // this is the same thing as above just using Bracket Notation
-dog["speak"] = function (string) {
-  console.log("WOOF " + string + " WOOF!!!");
+dog["speak"] = function(string) {
+    console.log("WOOF " + string + " WOOF!!!");
 };
 
 dog.bark(); // prints `bark bark!`
 dog.speak("pizza"); // prints `WOOF pizza WOOF!!!`
 
 let dog2 = {
-  name: "Rover",
+    name: "Rover",
 
-  bark: function () {
-    console.log("bork bork!");
-  },
+    bark: function() {
+        console.log("bork bork!");
+    },
 
-  speak: function (string) {
-    console.log("BORK " + string + " BORK!!!");
-  },
+    speak: function(string) {
+        console.log("BORK " + string + " BORK!!!");
+    },
 };
 // Notice that in the object above, we still separate the key-value pairs with commas.
 // `bark` and `speak` are just keys with functions as values.
@@ -255,11 +289,10 @@ myObject.methodName();
 
 **Iterating through an Object's keys & values**
 
-* **`Object.entries`** : Method that accepts an object as the argument and returns an array of the \[key,value\] pairs within.
+* **`Object.entries`** : Method that accepts an object as the argument and returns an array of the \[key, value\] pairs within.
 
 ```javascript
-> Object.entries(cat)
-[ [ 'name', 'Freyja' ], [ 'color', 'orange' ] ]
+> Object.entries(cat)[['name', 'Freyja'], ['color', 'orange']]
 ```
 
 ### **References vs Primitives**
@@ -297,8 +330,8 @@ So far we have learned about 6 different data types:
 **Utilizing Spread Syntax**
 
 * **Spread Operator** : Allows us to break down a data type into the elements that make it up.
-  * Takes a data type \(i.e. array, obj\) and spreads the values of that type where elements are expected.
-  * Takes iterable data and spreads the elements of that type where arguments are expected.
+  + Takes a data type \(i.e. array, obj\) and spreads the values of that type where elements are expected.
+  + Takes iterable data and spreads the elements of that type where arguments are expected.
 
 ```javascript
 let numArray = [1, 2, 3];
@@ -307,27 +340,43 @@ let numArray = [1, 2, 3];
 // comma separated elements are expected to be
 let moreNums = [...numArray, 4, 5, 6];
 
-> moreNums
+>
+moreNums
 // => [1, 2, 3, 4, 5, 6]
 ```
 
 **With Objects**
 
 ```javascript
-let colors = { red: "scarlet", blue: "aquamarine" };
-let newColors = { ...colors };
+let colors = {
+    red: "scarlet",
+    blue: "aquamarine"
+};
+let newColors = {
+    ...colors
+};
 
-> newColors
+>
+newColors
 // { red: "scarlet", blue: "aquamarine" };
 ```
 
 ```javascript
-let colors = { red: "scarlet", blue: "aquamarine" };
-let colors2 = { green: "forest", yellow: "sunflower" };
+let colors = {
+    red: "scarlet",
+    blue: "aquamarine"
+};
+let colors2 = {
+    green: "forest",
+    yellow: "sunflower"
+};
 
-let moreColors = { ...colors, ...colors2 };
+let moreColors = {
+    ...colors,
+    ...colors2
+};
 
-> moreColors
+>
+moreColors
 // {red: "scarlet", blue: "aquamarine", green: "forest", yellow: "sunflo
 ```
-

@@ -1,7 +1,5 @@
 # JSX
 
-
-
 ## Introducing JSX
 
 Consider this variable declaration:
@@ -38,9 +36,9 @@ ReactDOM.render(
 );
 ```
 
-You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, `2 + 2`, `user.firstName`, or `formatName(user)` are all valid JavaScript expressions.
+You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, `2 + 2` , `user.firstName` , or `formatName(user)` are all valid JavaScript expressions.
 
-In the example below, we embed the result of calling a JavaScript function, `formatName(user)`, into an `<h1>` element.
+In the example below, we embed the result of calling a JavaScript function, `formatName(user)` , into an `<h1>` element.
 
 ```text
 function formatName(user) {
@@ -100,11 +98,11 @@ Don’t put quotes around curly braces when embedding a JavaScript expression in
 >
 > Since JSX is closer to JavaScript than to HTML, React DOM uses `camelCase` property naming convention instead of HTML attribute names.
 >
-> For example, `class` becomes [`className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) in JSX, and `tabindex` becomes [`tabIndex`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex).
+> For example, `class` becomes [ `className` ](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) in JSX, and `tabindex` becomes [ `tabIndex` ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex).
 
 #### Specifying Children with JSX <a id="specifying-children-with-jsx"></a>
 
-If a tag is empty, you may close it immediately with `/>`, like XML:
+If a tag is empty, you may close it immediately with `/>` , like XML:
 
 ```text
 const element = <img src={user.avatarUrl} />;
@@ -175,4 +173,3 @@ We will explore rendering React elements to the DOM in the [next section](https:
 > **Tip:**
 >
 > We recommend using the [“Babel” language definition](https://babeljs.io/docs/en/next/editors) for your editor of choice so that both ES6 and JSX code is properly highlighted.
-

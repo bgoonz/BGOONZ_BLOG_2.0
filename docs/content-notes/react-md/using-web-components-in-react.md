@@ -50,4 +50,3 @@ customElements.define('x-search', XSearch);
 ```
 
 >
-

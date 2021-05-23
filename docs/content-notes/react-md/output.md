@@ -1,12 +1,10 @@
-
-
 This appendix is a non-exhaustive list of new syntactic features and methods that were added to JavaScript in ES6. These features are the most commonly used and most helpful.
 
 While this appendix doesn't cover ES6 classes, we go over the basics while learning about components in the book. In addition, this appendix doesn't include descriptions of some larger new features like promises and generators. If you'd like more info on those or on any topic below, we encourage you to reference the [Mozilla Developer Network's website](https://developer.mozilla.org/) \(MDN\).
 
 ## Prefer `const` and `let` over `var`
 
-If you've worked with ES5 JavaScript before, you're likely used to seeing variables declared with `var`:
+If you've worked with ES5 JavaScript before, you're likely used to seeing variables declared with `var` :
 
 ```text
 ar myVariable = 5;
@@ -16,9 +14,9 @@ Both the `const` and `let` statements also declare variables. They were introduc
 
 Use `const` in cases where a variable is never re-assigned. Using `const` makes this clear to whoever is reading your code. It refers to the "constant" state of the variable in the context it is defined within.
 
-If the variable will be re-assigned, use `let`.
+If the variable will be re-assigned, use `let` .
 
-We encourage the use of `const` and `let` instead of `var`. In addition to the restriction introduced by `const`, both `const` and `let` are _block scoped_ as opposed to _function scoped_. This scoping can help avoid unexpected bugs.
+We encourage the use of `const` and `let` instead of `var` . In addition to the restriction introduced by `const` , both `const` and `let` are _block scoped_ as opposed to _function scoped_. This scoping can help avoid unexpected bugs.
 
 ## Arrow functions
 
@@ -68,7 +66,7 @@ const popsNoArrow = cities.map(function(city) { return city.pop });
 
 Of greater benefit, though, is how arrow functions bind the `this` object.
 
-The traditional JavaScript function declaration syntax \(`function () {}`\) will bind `this` in anonymous functions to the global object. To illustrate the confusion this causes, consider the following example:
+The traditional JavaScript function declaration syntax \( `function () {}` \) will bind `this` in anonymous functions to the global object. To illustrate the confusion this causes, consider the following example:
 
 ```text
 unction printSong() {
@@ -101,7 +99,7 @@ const jukebox = {
 jukebox.printSongs();
 ```
 
-The method `printSongs()` iterates over `this.songs` with `forEach()`. In this context, `this` is bound to the object \(`jukebox`\) as expected. However, the anonymous function passed to `forEach()` binds its internal `this` to the global object. As such, `this.printSong(song)` calls the function declared at the top of the example, _not_ the method on `jukebox`.
+The method `printSongs()` iterates over `this.songs` with `forEach()` . In this context, `this` is bound to the object \( `jukebox` \) as expected. However, the anonymous function passed to `forEach()` binds its internal `this` to the global object. As such, `this.printSong(song)` calls the function declared at the top of the example, _not_ the method on `jukebox` .
 
 JavaScript developers have traditionally used workarounds for this behavior, but arrow functions solve the problem by **capturing the `this` value of the enclosing context**. Using an arrow function for `printSongs()` has the expected result:
 
@@ -121,7 +119,7 @@ For this reason, throughout the book we use arrow functions for all anonymous fu
 
 ## Modules
 
-ES6 formally supports modules using the `import`/`export` syntax.
+ES6 formally supports modules using the `import` / `export` syntax.
 
 **Named exports**
 
@@ -134,7 +132,7 @@ export const sayBye = () => (console.log('Bye!'));
 const saySomething = () => (console.log('Something!'));
 ```
 
-Now, anywhere we wanted to use these functions we could use `import`. We need to specify which functions we want to import. A common way of doing this is using ES6's destructuring assignment syntax to list them out like this:
+Now, anywhere we wanted to use these functions we could use `import` . We need to specify which functions we want to import. A common way of doing this is using ES6's destructuring assignment syntax to list them out like this:
 
 ```text
 import { sayHi, sayBye } from './greetings';
@@ -143,9 +141,9 @@ sayHi();
 sayBye();
 ```
 
-Importantly, the function that was _not_ exported \(`saySomething`\) is unavailable outside of the module.
+Importantly, the function that was _not_ exported \( `saySomething` \) is unavailable outside of the module.
 
-Also note that we supply a **relative path** to `from`, indicating that the ES6 module is a local file as opposed to an npm package.
+Also note that we supply a **relative path** to `from` , indicating that the ES6 module is a local file as opposed to an npm package.
 
 Instead of inserting an `export` before each variable you'd like to export, you can use this syntax to list off all the exposed variables in one area:
 
@@ -194,7 +192,7 @@ Greetings.sayHi();
 Greetings.sayBye();
 ```
 
-It's not uncommon for a module to use a mix of both named exports and default exports. For instance, with `react-dom`, you can import `ReactDOM` \(a default export\) like this:
+It's not uncommon for a module to use a mix of both named exports and default exports. For instance, with `react-dom` , you can import `ReactDOM` \(a default export\) like this:
 
 ```text
 import ReactDOM from 'react-dom';
@@ -229,7 +227,7 @@ const ReactDOM = {
 export default ReactDOM;
 ```
 
-If you want to play around with the module syntax, check out the folder `code/webpack/es6-modules`.
+If you want to play around with the module syntax, check out the folder `code/webpack/es6-modules` .
 
 For more reading on ES6 modules, see this article from Mozilla: "[ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)".
 
@@ -246,7 +244,7 @@ const noMilk = { milk: false };
 Object.assign(coffee, noCream);
 ```
 
-It is idiomatic to pass in three arguments to `Object.assign()`. The first argument is a new JavaScript object, the one that `Object.assign()` will ultimately return. The second is the object whose properties we'd like to build off of. The last is the changes we'd like to apply:
+It is idiomatic to pass in three arguments to `Object.assign()` . The first argument is a new JavaScript object, the one that `Object.assign()` will ultimately return. The second is the object whose properties we'd like to build off of. The last is the changes we'd like to apply:
 
 ```text
 const coffeeWithMilk = Object.assign({}, coffee, { milk: true });
@@ -268,7 +266,7 @@ With ES6 template literals, we can create the same string like this:
 const greeting = `Hello, ${user}! It is ${degF} degrees outside.`;
 ```
 
-## The spread operator \(`...`\)
+## The spread operator \( `...` \)
 
 In arrays, the ellipsis `...` operator will _expand_ the array that follows into the parent array. The spread operator enables us to succinctly construct new arrays as a composite of existing arrays.
 
@@ -344,7 +342,7 @@ divide(14, undefined);
 divide(14);
 ```
 
-Whenever the argument `b` in the example above is `undefined`, the default argument is used. Note that `null` will not use the default argument:
+Whenever the argument `b` in the example above is `undefined` , the default argument is used. Note that `null` will not use the default argument:
 
 ```text
 divide(14, null);
@@ -426,7 +424,7 @@ const IngredientList = ({ ingredients, onClick }) => (
 )
 ```
 
-Here, we use destructuring to extract the props into variables \(`ingredients` and `onClick`\) that we then use inside the component's function body.
+Here, we use destructuring to extract the props into variables \( `ingredients` and `onClick` \) that we then use inside the component's function body.
 
 # Components And Props
 
@@ -569,7 +567,7 @@ It accepts `author` \(an object\), `text` \(a string\), and `date` \(a date\) as
 
 This component can be tricky to change because of all the nesting, and it is also hard to reuse individual parts of it. Let’s extract a few components from it.
 
-First, we will extract `Avatar`:
+First, we will extract `Avatar` :
 
 ```text
 function Avatar(props) {
@@ -578,7 +576,7 @@ function Avatar(props) {
 }
 ```
 
-The `Avatar` doesn’t need to know that it is being rendered inside a `Comment`. This is why we have given its prop a more generic name: `user` rather than `author`.
+The `Avatar` doesn’t need to know that it is being rendered inside a `Comment` . This is why we have given its prop a more generic name: `user` rather than `author` .
 
 We recommend naming props from the component’s own point of view rather than the context in which it is being used.
 
@@ -632,7 +630,7 @@ function Comment(props) {
 
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/components-and-props/extracting-components-continued)
 
-Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times \(`Button`, `Panel`, `Avatar`\), or is complex enough on its own \(`App`, `FeedStory`, `Comment`\), it is a good candidate to be extracted to a separate component.
+Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times \( `Button` , `Panel` , `Avatar` \), or is complex enough on its own \( `App` , `FeedStory` , `Comment` \), it is a good candidate to be extracted to a separate component.
 
 ### Props are Read-Only <a id="props-are-read-only"></a>
 
@@ -694,9 +692,9 @@ function WelcomeDialog() {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/ozqNOV?editors=0010)
 
-Anything inside the `<FancyBorder>` JSX tag gets passed into the `FancyBorder` component as a `children` prop. Since `FancyBorder` renders `{props.children}` inside a `<div>`, the passed elements appear in the final output.
+Anything inside the `<FancyBorder>` JSX tag gets passed into the `FancyBorder` component as a `children` prop. Since `FancyBorder` renders `{props.children}` inside a `<div>` , the passed elements appear in the final output.
 
-While this is less common, sometimes you might need multiple “holes” in a component. In such cases you may come up with your own convention instead of using `children`:
+While this is less common, sometimes you might need multiple “holes” in a component. In such cases you may come up with your own convention instead of using `children` :
 
 ```text
 function SplitPane(props) {
@@ -727,7 +725,7 @@ React elements like `<Contacts />` and `<Chat />` are just objects, so you can p
 
 ### Specialization
 
-Sometimes we think about components as being “special cases” of other components. For example, we might say that a `WelcomeDialog` is a special case of `Dialog`.
+Sometimes we think about components as being “special cases” of other components. For example, we might say that a `WelcomeDialog` is a special case of `Dialog` .
 
 In React, this is also achieved by composition, where a more “specific” component renders a more “generic” one and configures it with props:
 
@@ -813,8 +811,6 @@ If you want to reuse non-UI functionality between components, we suggest extract
 
 # Hello World
 
-
-
 ## Hello World
 
 The smallest React example looks like this:
@@ -854,8 +850,6 @@ React is a JavaScript library, and so we’ll assume you have a basic understand
 
 # JSX
 
-
-
 ## Introducing JSX
 
 Consider this variable declaration:
@@ -892,9 +886,9 @@ ReactDOM.render(
 );
 ```
 
-You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, `2 + 2`, `user.firstName`, or `formatName(user)` are all valid JavaScript expressions.
+You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, `2 + 2` , `user.firstName` , or `formatName(user)` are all valid JavaScript expressions.
 
-In the example below, we embed the result of calling a JavaScript function, `formatName(user)`, into an `<h1>` element.
+In the example below, we embed the result of calling a JavaScript function, `formatName(user)` , into an `<h1>` element.
 
 ```text
 function formatName(user) {
@@ -954,11 +948,11 @@ Don’t put quotes around curly braces when embedding a JavaScript expression in
 >
 > Since JSX is closer to JavaScript than to HTML, React DOM uses `camelCase` property naming convention instead of HTML attribute names.
 >
-> For example, `class` becomes [`className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) in JSX, and `tabindex` becomes [`tabIndex`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex).
+> For example, `class` becomes [ `className` ](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) in JSX, and `tabindex` becomes [ `tabIndex` ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex).
 
 #### Specifying Children with JSX <a id="specifying-children-with-jsx"></a>
 
-If a tag is empty, you may close it immediately with `/>`, like XML:
+If a tag is empty, you may close it immediately with `/>` , like XML:
 
 ```text
 const element = <img src={user.avatarUrl} />;
@@ -1129,7 +1123,7 @@ We also need to create our `index.html` file that we are including in our `app.j
 </html>
 ```
 
-This is a basic HTML page. We are including Bootstrap and its basic theme for some simple styles. We also are adding some styles in a `style` tag to help with the sizing of some elements. In the `body`, we are adding our container element and our main app bundle.
+This is a basic HTML page. We are including Bootstrap and its basic theme for some simple styles. We also are adding some styles in a `style` tag to help with the sizing of some elements. In the `body` , we are adding our container element and our main app bundle.
 
 Now that we have all that setup, let's create a webpack config that we can use to build our project. Create a file in the root of your project called `webpack.config.js` and put the following in it.
 
@@ -1185,74 +1179,72 @@ Last thing. Let's create some npm scripts so that we don't need to remember the 
 
 # React-Resources
 
-
-
 #### **Awesome React** [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 A collection of awesome things regarding the React ecosystem.
 
 * React
-  * React General Resources
-  * React Community
-  * React Online Playgrounds
-  * React Tutorials
-    * React General Tutorials
-    * React Hooks
-    * React and TypeScript
-    * React Performance
-    * React Internals
-    * React Interview Questions
-  * React Tools
-    * React Development Tools
-    * React Frameworks
-    * React Styling
-    * React Routing
-    * React Component Libraries
-    * React Awesome Components
-    * React Testing
-    * React Libraries
-    * React Integration
-    * React State Management
-    * React AR and VR
-    * React Renderers
-    * Forms
-    * Autocomplete
-    * Graphics
-    * Data Managing
-    * Maps
-    * Charts
+  + React General Resources
+  + React Community
+  + React Online Playgrounds
+  + React Tutorials
+    - React General Tutorials
+    - React Hooks
+    - React and TypeScript
+    - React Performance
+    - React Internals
+    - React Interview Questions
+  + React Tools
+    - React Development Tools
+    - React Frameworks
+    - React Styling
+    - React Routing
+    - React Component Libraries
+    - React Awesome Components
+    - React Testing
+    - React Libraries
+    - React Integration
+    - React State Management
+    - React AR and VR
+    - React Renderers
+    - Forms
+    - Autocomplete
+    - Graphics
+    - Data Managing
+    - Maps
+    - Charts
 * React Native
-  * React Native General Resources
-  * React Native Tutorials
-  * React Native Development Tools
-  * React Native Sample Apps
-  * React Native Boilerplates
-  * React Native Awesome Components
-  * React Native Libraries
+  + React Native General Resources
+  + React Native Tutorials
+  + React Native Development Tools
+  + React Native Sample Apps
+  + React Native Boilerplates
+  + React Native Awesome Components
+  + React Native Libraries
 * Redux
-  * Redux General Resources
-  * Redux Tools
-  * Redux Tutorials
+  + Redux General Resources
+  + Redux Tools
+  + Redux Tutorials
 * GraphQL
-  * GraphQL General Resources
-  * GraphQL Tools
-  * GraphQL Tutorials
-  * GraphQL Implementations
-  * Database Integration
+  + GraphQL General Resources
+  + GraphQL Tools
+  + GraphQL Tutorials
+  + GraphQL Implementations
+  + Database Integration
 * Relay
-  * Relay General Resources
-  * Relay Tutorials
-  * Relay Tools
+  + Relay General Resources
+  + Relay Tutorials
+  + Relay Tools
 * Videos
-  * Important Talks
-  * React.js Conf 2015 Playlist
-  * ReactEurope Conf 2015 Day 1 Playlist
-  * ReactEurope Conf 2015 Day 2 Playlist
-  * ReactRally Conf 2015 Playlist
-  * React.js Conf 2016 Playlist
-  * ReactRally Conf 2016 Playlist
-  * React.js Amsterdam 2018 Playlist
-  * Video Tutorials
+  + Important Talks
+  + React.js Conf 2015 Playlist
+  + ReactEurope Conf 2015 Day 1 Playlist
+  + ReactEurope Conf 2015 Day 2 Playlist
+  + ReactRally Conf 2015 Playlist
+  + React.js Conf 2016 Playlist
+  + ReactRally Conf 2016 Playlist
+  + React.js Amsterdam 2018 Playlist
+  + Video Tutorials
 * Demo React Apps
 * Real React Apps
 * Contribution
@@ -1467,7 +1459,7 @@ A collection of awesome things regarding the React ecosystem.
 * [react-slick](https://github.com/akiran/react-slick) - Carousel component built with React
 * [react-gtm-module](https://github.com/alinemorelli/react-gtm) - Google Tag Manager Module for React
 * [react-device-detect](https://github.com/duskload/react-device-detect) - Detect device for React
-* [react-colorful](https://github.com/omgovich/react-colorful) - A tiny \(2,5 KB\), dependency-free, fast and accessible color picker component
+* [react-colorful](https://github.com/omgovich/react-colorful) - A tiny \(2, 5 KB\), dependency-free, fast and accessible color picker component
 * [react-modal](https://github.com/reactjs/react-modal) - Accessible modal dialog component for React
 * [cleave.js](https://github.com/nosir/cleave.js) - Format input text content when you are typing
 * [react-fontawesome](https://github.com/FortAwesome/react-fontawesome) - Font Awesome 5 React component
@@ -1518,7 +1510,7 @@ A collection of awesome things regarding the React ecosystem.
 
 * [ReasonReact](https://reasonml.github.io/reason-react/)
 * [React Rails](https://github.com/reactjs/react-rails)
-* [ReactJS.NET](https://github.com/reactjs/React.NET)
+* [ReactJS. NET](https://github.com/reactjs/React.NET)
 * [om](https://github.com/swannodette/om) - ClojureScript interface
 * [Reagent](https://github.com/reagent-project/reagent) - A minimalistic ClojureScript interface to React.js
 * [Express React views](https://github.com/reactjs/express-react-views)
@@ -1542,7 +1534,7 @@ A collection of awesome things regarding the React ecosystem.
 * [react-topcoat by @arnemart](https://github.com/arnemart/react-topcoat) - A collection of React components for Topcoat
 * [reactdown](https://github.com/andreypopp/reactdown) - Write React components using markdown syntax
 * [react-jade](https://github.com/ForbesLindesay/react-jade) - Compile Jade to React JavaScript
-* [jade-react](https://github.com/duncanbeevers/jade-react) - Compile Jade templates to React.DOM expressions
+* [jade-react](https://github.com/duncanbeevers/jade-react) - Compile Jade templates to React. DOM expressions
 * [gulp-jade-react](https://github.com/duncanbeevers/gulp-jade-react) - Compile Jade templates into React de-sugared JSX with Gulp
 * [sbt-reactjs](https://github.com/ddispaltro/sbt-reactjs) - React SBT Plugin using npm
 * [scalajs-react](https://github.com/japgolly/scalajs-react) - A guilty affair between Scala.js and Facebook's React
@@ -1796,7 +1788,7 @@ A collection of awesome things regarding the React ecosystem.
 * [sangria](https://github.com/sangria-graphql/sangria) - **Scala** GraphQL client and server library
 * [graphql-php](https://github.com/webonyx/graphql-php) - A **PHP** port of GraphQL reference implementation
 * [graphene](https://github.com/graphql-python/graphene) - GraphQL framework for **Python**
-* [graphql-dotnet](https://github.com/graphql-dotnet/graphql-dotnet) - GraphQL for **.NET**
+* [graphql-dotnet](https://github.com/graphql-dotnet/graphql-dotnet) - GraphQL for **. NET**
 * [graphql-go](https://github.com/graphql-go/graphql) - GraphQL for **Go**
 * [juniper](https://github.com/graphql-rust/juniper) - GraphQL server library for **Rust**
 
@@ -1839,7 +1831,7 @@ A collection of awesome things regarding the React ecosystem.
 **Important Talks**
 
 * [Pete Hunt: React: Rethinking best practices - JSConf EU 2013](https://www.youtube.com/watch?v=x7cQ3mrcKaY)
-* [Pete Hunt: React: Rethinking Best Practices \(updated\) - JSConf.Asia 2013](https://www.youtube.com/watch?v=DgVS-zXgMTk)
+* [Pete Hunt: React: Rethinking Best Practices \(updated\) - JSConf. Asia 2013](https://www.youtube.com/watch?v=DgVS-zXgMTk)
 * [Tom Occhino and Jordan Walke: JS Apps at Facebook - JSConfUS 2013](https://www.youtube.com/watch?v=GW0rj4sNH2w)
 * [React: CSS in JS](http://blog.vjeux.com/2014/javascript/react-css-in-js-nationjs.html)
 * [Pete Hunt: Be Predictable, Not Correct - Mountain West JavaScript 2014](https://www.youtube.com/watch?v=h3KksH8gfcQ)
@@ -1906,8 +1898,6 @@ A collection of awesome things regarding the React ecosystem.
 
 # Thinking in React
 
-
-
 ## Start With A Mock
 
 Imagine that we already have a JSON API and a mock from our designer. The mock looks like this:
@@ -1945,15 +1935,15 @@ You’ll see here that we have five components in our app. We’ve italicized th
 4. **`ProductCategoryRow` \(turquoise\):** displays a heading for each _category_
 5. **`ProductRow` \(red\):** displays a row for each _product_
 
-If you look at `ProductTable`, you’ll see that the table header \(containing the “Name” and “Price” labels\) isn’t its own component. This is a matter of preference, and there’s an argument to be made either way. For this example, we left it as part of `ProductTable` because it is part of rendering the _data collection_ which is `ProductTable`’s responsibility. However, if this header grows to be complex \(e.g., if we were to add affordances for sorting\), it would certainly make sense to make this its own `ProductTableHeader` component.
+If you look at `ProductTable` , you’ll see that the table header \(containing the “Name” and “Price” labels\) isn’t its own component. This is a matter of preference, and there’s an argument to be made either way. For this example, we left it as part of `ProductTable` because it is part of rendering the _data collection_ which is `ProductTable` ’s responsibility. However, if this header grows to be complex \(e.g., if we were to add affordances for sorting\), it would certainly make sense to make this its own `ProductTableHeader` component.
 
 Now that we’ve identified the components in our mock, let’s arrange them into a hierarchy. Components that appear within another component in the mock should appear as a child in the hierarchy:
 
 * `FilterableProductTable`
-  * `SearchBar`
-  * `ProductTable`
-    * `ProductCategoryRow`
-    * `ProductRow`
+  + `SearchBar`
+  + `ProductTable`
+    - `ProductCategoryRow`
+    - `ProductRow`
 
 ## Step 2: Build A Static Version in React
 
@@ -1961,9 +1951,9 @@ Now that you have your component hierarchy, it’s time to implement your app. T
 
 To build a static version of your app that renders your data model, you’ll want to build components that reuse other components and pass data using _props_. _props_ are a way of passing data from parent to child. If you’re familiar with the concept of _state_, **don’t use state at all** to build this static version. State is reserved only for interactivity, that is, data that changes over time. Since this is a static version of the app, you don’t need it.
 
-You can build top-down or bottom-up. That is, you can either start with building the components higher up in the hierarchy \(i.e. starting with `FilterableProductTable`\) or with the ones lower in it \(`ProductRow`\). In simpler examples, it’s usually easier to go top-down, and on larger projects, it’s easier to go bottom-up and write tests as you build.
+You can build top-down or bottom-up. That is, you can either start with building the components higher up in the hierarchy \(i.e. starting with `FilterableProductTable` \) or with the ones lower in it \( `ProductRow` \). In simpler examples, it’s usually easier to go top-down, and on larger projects, it’s easier to go bottom-up and write tests as you build.
 
-At the end of this step, you’ll have a library of reusable components that render your data model. The components will only have `render()` methods since this is a static version of your app. The component at the top of the hierarchy \(`FilterableProductTable`\) will take your data model as a prop. If you make a change to your underlying data model and call `ReactDOM.render()` again, the UI will be updated. You can see how your UI is updated and where to make changes. React’s **one-way data flow** \(also called _one-way binding_\) keeps everything modular and fast.
+At the end of this step, you’ll have a library of reusable components that render your data model. The components will only have `render()` methods since this is a static version of your app. The component at the top of the hierarchy \( `FilterableProductTable` \) will take your data model as a prop. If you make a change to your underlying data model and call `ReactDOM.render()` again, the UI will be updated. You can see how your UI is updated and where to make changes. React’s **one-way data flow** \(also called _one-way binding_\) keeps everything modular and fast.
 
 Refer to the [React docs](https://reactjs.org/docs/) if you need help executing this step.
 
@@ -2001,7 +1991,7 @@ So finally, our state is:
 
 OK, so we’ve identified what the minimal set of app state is. Next, we need to identify which component mutates, or _owns_, this state.
 
-Remember: React is all about one-way data flow down the component hierarchy. It may not be immediately clear which component should own what state. **This is often the most challenging part for newcomers to understand,** so follow these steps to figure it out:
+Remember: React is all about one-way data flow down the component hierarchy. It may not be immediately clear which component should own what state. **This is often the most challenging part for newcomers to understand, ** so follow these steps to figure it out:
 
 For each piece of state in your application:
 
@@ -2016,19 +2006,19 @@ Let’s run through this strategy for our application:
 * The common owner component is `FilterableProductTable`.
 * It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
 
-Cool, so we’ve decided that our state lives in `FilterableProductTable`. First, add an instance property `this.state = {filterText: '', inStockOnly: false}` to `FilterableProductTable`’s `constructor` to reflect the initial state of your application. Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as a prop. Finally, use these props to filter the rows in `ProductTable` and set the values of the form fields in `SearchBar`.
+Cool, so we’ve decided that our state lives in `FilterableProductTable` . First, add an instance property `this.state = {filterText: '', inStockOnly: false}` to `FilterableProductTable` ’s `constructor` to reflect the initial state of your application. Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as a prop. Finally, use these props to filter the rows in `ProductTable` and set the values of the form fields in `SearchBar` .
 
 You can start seeing how your application will behave: set `filterText` to `"ball"` and refresh your app. You’ll see that the data table is updated correctly.
 
 ## Step 5: Add Inverse Data Flow
 
-So far, we’ve built an app that renders correctly as a function of props and state flowing down the hierarchy. Now it’s time to support data flowing the other way: the form components deep in the hierarchy need to update the state in `FilterableProductTable`.
+So far, we’ve built an app that renders correctly as a function of props and state flowing down the hierarchy. Now it’s time to support data flowing the other way: the form components deep in the hierarchy need to update the state in `FilterableProductTable` .
 
 React makes this data flow explicit to help you understand how your program works, but it does require a little more typing than traditional two-way data binding.
 
-If you try to type or check the box in the current version of the example, you’ll see that React ignores your input. This is intentional, as we’ve set the `value` prop of the `input` to always be equal to the `state` passed in from `FilterableProductTable`.
+If you try to type or check the box in the current version of the example, you’ll see that React ignores your input. This is intentional, as we’ve set the `value` prop of the `input` to always be equal to the `state` passed in from `FilterableProductTable` .
 
-Let’s think about what we want to happen. We want to make sure that whenever the user changes the form, we update the state to reflect the user input. Since components should only update their own state, `FilterableProductTable` will pass callbacks to `SearchBar` that will fire whenever the state should be updated. We can use the `onChange` event on the inputs to be notified of it. The callbacks passed by `FilterableProductTable` will call `setState()`, and the app will be updated.
+Let’s think about what we want to happen. We want to make sure that whenever the user changes the form, we update the state to reflect the user input. Since components should only update their own state, `FilterableProductTable` will pass callbacks to `SearchBar` that will fire whenever the state should be updated. We can use the `onChange` event on the inputs to be notified of it. The callbacks passed by `FilterableProductTable` will call `setState()` , and the app will be updated.
 
 ## And That’s It
 
@@ -2106,9 +2096,9 @@ class Welcome extends React.Component {
 }
 ```
 
-Components can be broken down into distinct pieces of functionality and used within other components. Components can return other components, arrays, strings and numbers. A good rule of thumb is that if a part of your UI is used several times \(Button, Panel, Avatar\), or is complex enough on its own \(App, FeedStory, Comment\), it is a good candidate to be a reusable component. Component names should also always start with a capital letter \(`<Wrapper/>` **not** `<wrapper/>`\). See [this documentation](https://reactjs.org/docs/components-and-props.html#rendering-a-component) for more information on rendering components.
+Components can be broken down into distinct pieces of functionality and used within other components. Components can return other components, arrays, strings and numbers. A good rule of thumb is that if a part of your UI is used several times \(Button, Panel, Avatar\), or is complex enough on its own \(App, FeedStory, Comment\), it is a good candidate to be a reusable component. Component names should also always start with a capital letter \( `<Wrapper/>` **not** `<wrapper/>` \). See [this documentation](https://reactjs.org/docs/components-and-props.html#rendering-a-component) for more information on rendering components.
 
-### [`props`](https://reactjs.org/docs/components-and-props.html)
+### [ `props` ](https://reactjs.org/docs/components-and-props.html)
 
 `props` are inputs to a React component. They are data passed down from a parent component to a child component.
 
@@ -2132,7 +2122,7 @@ function Welcome(props) {
 }
 ```
 
-For components defined as classes, use `this.props.children`:
+For components defined as classes, use `this.props.children` :
 
 ```text
 class Welcome extends React.Component {
@@ -2142,11 +2132,11 @@ class Welcome extends React.Component {
 }
 ```
 
-### [`state`](https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-class)
+### [ `state` ](https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-class)
 
 A component needs `state` when some data associated with it changes over time. For example, a `Checkbox` component might need `isChecked` in its state, and a `NewsFeed` component might want to keep track of `fetchedPosts` in its state.
 
-The most important difference between `state` and `props` is that `props` are passed from a parent component, but `state` is managed by the component itself. A component cannot change its `props`, but it can change its `state`.
+The most important difference between `state` and `props` is that `props` are passed from a parent component, but `state` is managed by the component itself. A component cannot change its `props` , but it can change its `state` .
 
 For each particular piece of changing data, there should be just one component that “owns” it in its state. Don’t try to synchronize states of two different components. Instead, [lift it up](https://reactjs.org/docs/lifting-state-up.html) to their closest shared ancestor, and pass it down as props to both of them.
 
@@ -2170,11 +2160,11 @@ A “key” is a special string attribute you need to include when creating arra
 
 Keys only need to be unique among sibling elements in the same array. They don’t need to be unique across the whole application or even a single component.
 
-Don’t pass something like `Math.random()` to keys. It is important that keys have a “stable identity” across re-renders so that React can determine when items are added, removed, or re-ordered. Ideally, keys should correspond to unique and stable identifiers coming from your data, such as `post.id`.
+Don’t pass something like `Math.random()` to keys. It is important that keys have a “stable identity” across re-renders so that React can determine when items are added, removed, or re-ordered. Ideally, keys should correspond to unique and stable identifiers coming from your data, such as `post.id` .
 
 ## [Refs](https://reactjs.org/docs/refs-and-the-dom.html)
 
-React supports a special attribute that you can attach to any component. The `ref` attribute can be an object created by [`React.createRef()` function](https://reactjs.org/docs/react-api.html#reactcreateref) or a callback function, or a string \(in legacy API\). When the `ref` attribute is a callback function, the function receives the underlying DOM element or class instance \(depending on the type of element\) as its argument. This allows you to have direct access to the DOM element or component instance.
+React supports a special attribute that you can attach to any component. The `ref` attribute can be an object created by [ `React.createRef()` function](https://reactjs.org/docs/react-api.html#reactcreateref) or a callback function, or a string \(in legacy API\). When the `ref` attribute is a callback function, the function receives the underlying DOM element or class instance \(depending on the type of element\) as its argument. This allows you to have direct access to the DOM element or component instance.
 
 Use refs sparingly. If you find yourself often using refs to “make things happen” in your app, consider getting more familiar with [top-down data flow](https://reactjs.org/docs/lifting-state-up.html).
 
@@ -2241,4 +2231,3 @@ customElements.define('x-search', XSearch);
 ```
 
 >
-

@@ -70,9 +70,9 @@ class Welcome extends React.Component {
 }
 ```
 
-Components can be broken down into distinct pieces of functionality and used within other components. Components can return other components, arrays, strings and numbers. A good rule of thumb is that if a part of your UI is used several times \(Button, Panel, Avatar\), or is complex enough on its own \(App, FeedStory, Comment\), it is a good candidate to be a reusable component. Component names should also always start with a capital letter \(`<Wrapper/>` **not** `<wrapper/>`\). See [this documentation](https://reactjs.org/docs/components-and-props.html#rendering-a-component) for more information on rendering components.
+Components can be broken down into distinct pieces of functionality and used within other components. Components can return other components, arrays, strings and numbers. A good rule of thumb is that if a part of your UI is used several times \(Button, Panel, Avatar\), or is complex enough on its own \(App, FeedStory, Comment\), it is a good candidate to be a reusable component. Component names should also always start with a capital letter \( `<Wrapper/>` **not** `<wrapper/>` \). See [this documentation](https://reactjs.org/docs/components-and-props.html#rendering-a-component) for more information on rendering components.
 
-### [`props`](https://reactjs.org/docs/components-and-props.html)
+### [ `props` ](https://reactjs.org/docs/components-and-props.html)
 
 `props` are inputs to a React component. They are data passed down from a parent component to a child component.
 
@@ -96,7 +96,7 @@ function Welcome(props) {
 }
 ```
 
-For components defined as classes, use `this.props.children`:
+For components defined as classes, use `this.props.children` :
 
 ```text
 class Welcome extends React.Component {
@@ -106,11 +106,11 @@ class Welcome extends React.Component {
 }
 ```
 
-### [`state`](https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-class)
+### [ `state` ](https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-class)
 
 A component needs `state` when some data associated with it changes over time. For example, a `Checkbox` component might need `isChecked` in its state, and a `NewsFeed` component might want to keep track of `fetchedPosts` in its state.
 
-The most important difference between `state` and `props` is that `props` are passed from a parent component, but `state` is managed by the component itself. A component cannot change its `props`, but it can change its `state`.
+The most important difference between `state` and `props` is that `props` are passed from a parent component, but `state` is managed by the component itself. A component cannot change its `props` , but it can change its `state` .
 
 For each particular piece of changing data, there should be just one component that “owns” it in its state. Don’t try to synchronize states of two different components. Instead, [lift it up](https://reactjs.org/docs/lifting-state-up.html) to their closest shared ancestor, and pass it down as props to both of them.
 
@@ -134,11 +134,11 @@ A “key” is a special string attribute you need to include when creating arra
 
 Keys only need to be unique among sibling elements in the same array. They don’t need to be unique across the whole application or even a single component.
 
-Don’t pass something like `Math.random()` to keys. It is important that keys have a “stable identity” across re-renders so that React can determine when items are added, removed, or re-ordered. Ideally, keys should correspond to unique and stable identifiers coming from your data, such as `post.id`.
+Don’t pass something like `Math.random()` to keys. It is important that keys have a “stable identity” across re-renders so that React can determine when items are added, removed, or re-ordered. Ideally, keys should correspond to unique and stable identifiers coming from your data, such as `post.id` .
 
 ## [Refs](https://reactjs.org/docs/refs-and-the-dom.html)
 
-React supports a special attribute that you can attach to any component. The `ref` attribute can be an object created by [`React.createRef()` function](https://reactjs.org/docs/react-api.html#reactcreateref) or a callback function, or a string \(in legacy API\). When the `ref` attribute is a callback function, the function receives the underlying DOM element or class instance \(depending on the type of element\) as its argument. This allows you to have direct access to the DOM element or component instance.
+React supports a special attribute that you can attach to any component. The `ref` attribute can be an object created by [ `React.createRef()` function](https://reactjs.org/docs/react-api.html#reactcreateref) or a callback function, or a string \(in legacy API\). When the `ref` attribute is a callback function, the function receives the underlying DOM element or class instance \(depending on the type of element\) as its argument. This allows you to have direct access to the DOM element or component instance.
 
 Use refs sparingly. If you find yourself often using refs to “make things happen” in your app, consider getting more familiar with [top-down data flow](https://reactjs.org/docs/lifting-state-up.html).
 
@@ -152,4 +152,3 @@ Handling events with React elements has some syntactic differences:
 ## [Reconciliation](https://reactjs.org/docs/reconciliation.html)
 
 When a component’s props or state change, React decides whether an actual DOM update is necessary by comparing the newly returned element with the previously rendered one. When they are not equal, React will update the DOM. This process is called “reconciliation”.
-
