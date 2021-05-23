@@ -63,8 +63,6 @@ weight: 900
 - [https://medium.com/star-gazers/web-developer-resource-list-part-4](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
 
 
-- [https://medium.com/star-gazers](https://medium.com/star-gazers?source=your_stories_page-------------------------------------)
-
 
 - [https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
 
