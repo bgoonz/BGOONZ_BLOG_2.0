@@ -26,7 +26,7 @@ sections:
         image: images/8.jpg
         content: |
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
-      - title: Mihir
+      - title: Mihir_Beg
         title_url: 'https://mihirbegmusic.netlify.app/'
         image: images/9.jpg
         content: Medium inspired blogging theme for Unibit
