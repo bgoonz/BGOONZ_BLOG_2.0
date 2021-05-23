@@ -36,10 +36,18 @@ sections:
               https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             style: link
       - title: Goals
-        content: >+
+        content: >
+
+
+          ![](/\_static/app-assets/dtw.png)
+
+
+
+
+
+
           This section exists for me to day dream ideas for the future... and
           maybe... just maybe, hold myself accountable to them.
-
         actions:
           - label: Learn More
             url: /style-guide
@@ -47,17 +55,22 @@ sections:
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >+
+          ## Beginner’s Guide To React Part
+          2&#xA;![](/\_static/app-assets/react.gif)
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          As I learn to build web applications in React I will blog about it in
+          this series in an attempt to capture the questions that a complete
+          beginner might encounter that a more seasoned developer would take for
+          granted!
 
-
-          - Lorem ipsum
-
-          - dolor sit amet
+        actions: []
+        type: grid_item
+      - title: lorem-ipsum
+        title_url: lorem-ipsum
+        image_alt: lorem-ipsum
+        content: "*My Blog Posts:*\n\n\\*\\*![](/\\_static/app-assets/posts1.png)\n\nPostgresql\_Cheat\_Sheet,\_Everything\_You\_Need\_to\_Get\_Started\_With\_VSCode\_+\_Extensions\_&\_Resources,\_Super\_Simple\_Intro\_To\_HTML,\_Understanding\_Git\_(A\_Beginners\_Guide\_Containing\_Cheat\_Sheets\_&\_Resources),\_Git-Tricks,\_Lists\_Stacks\_and\_Queue’s\_In\_JavaScript,\_Web\_Development\_Resources\_Part\_3,\_My\_‘awesome’\_list\_of\_JavaScript\_resources,\_The\_Best\_Cloud-Based\_Code\_Playgrounds\_of\_2021\_(Part\_1) ...etc....\n"
         actions: []
         type: grid_item
       - title: lorem-ipsum
@@ -76,40 +89,18 @@ sections:
           - dolor sit amet
         actions: []
         type: grid_item
-      - title: lorem-ipsum
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
-        actions: []
-        type: grid_item
-  - section_id: text-img
-    type: section_content
-    image_position: left
-    title: Musician
-    content: "# Hi\_\U0001F44B, I'm Bryan\n\n```\n                                                                                                                        ![](/images/gravatar.png)\n\n\n\n```\n"
-    actions: []
   - section_id: features-two-col
     type: section_grid
     title: Sample Layouts
     subtitle: An optional subtitle of the section
     col_number: two
     grid_items:
-      - title: Overview
+      - title: Resume
         content: |
           ![](/images/skillz.PNG)
         actions:
           - label: Learn More
-            url: /overview
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
       - title: Showcase
         content: |
@@ -126,13 +117,6 @@ sections:
       - label: Contact Me
         url: /docs/getting-started/installation
         style: primary
-      - label: lorem-ipsum
-        url: '#'
-        style: link
-        icon_class: dev
-        new_window: false
-        no_follow: false
-        type: action
 seo:
   title: Stackbit Libris Theme
   description: The preview of the Libris theme
