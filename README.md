@@ -7,9 +7,18 @@
 
 
 
+<h1 align="center">Hi 👋, I'm Bryan</h1>
+
+---
+
+
 <div align="center">
 
-![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)
+###  [WEBSITE](https://best-celery-b2d7c.netlify.app/)
+  
+  
+  
+![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 <img align="center" src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img> 
 
@@ -40,12 +49,12 @@
 [![GitHub bgoonz](https://img.shields.io/github/followers/bgoonz?label=follow&style=social)](https://github.com/bgoonz) 
 
 
-<img align="center" src="https://readme-jokes.vercel.app/api" stye="width:500; height:320;">
 
 
 #### Refresh the page for a new joke!
 
 
+<img align="center" src="https://readme-jokes.vercel.app/api" stye="width:500; height:320;">
 
 </div>    
 <div align="center">
@@ -53,34 +62,10 @@
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_email_)
 
 
-
-<div align="center">
-
-[![][banner-url]][repo-url]  
-
-
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" /><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" /></p>
   
-
-</div>
-
-
-
-
-[panda]: https://user-images.githubusercontent.com/7276145/117089593-ec02d000-ad23-11eb-8019-80bd34eecaa3.gif
-[repo-url]: https://github.com/wizardsource/
-[banner-url]: https://user-images.githubusercontent.com/7276145/117090386-308f6b00-ad26-11eb-9763-2c0c3d47c5db.gif
-
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" /></p>
-
- [![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&row=1)](https://github.com/bgoonz/github-profile-trophy)
- 
- 
- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bgoonz&hide=html,mathematica&langs_count=16)](https://github.com/bgoonz/github-readme-stats)
-
-
+ [![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&row=1)](https://github.com/bgoonz/github-profile-trophy) 
+ [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bgoonz&layout=compact&hide=html,mathematica&langs_count=16)](https://github.com/bgoonz/github-readme-stats)
 |  |  |
 |:----------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Languages**    | ![](https://img.shields.io/badge/Lang-HTML5-informational?style=flat&logo=HTML5&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-CSS-informational?style=flat&logo=CSS%20Wizardry&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-JavaScript-informational?style=flat&logo=JavaScript&logoColor=white&color=00FF00)  ![](https://img.shields.io/badge/Lang-SQL-informational?style=flat&logo=SQL&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-Java-informational?style=flat&logo=Java&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Lang-Python-informational?style=flat&logo=Python&logoColor=white&color=00FF00)   ![](https://img.shields.io/badge/Lang-TypeScript-informational?style=flat&logo=TypeScript&logoColor=white&color=00FF00) |
@@ -93,11 +78,6 @@
 
  <br />
 
-## ➤ Current Projects:
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=Lambda)](https://github.com/bgoonz/Lambda)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=bgoonz.github.io)](https://github.com/bgoonz/bgoonz.github.io)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=WEB-DEV-TOOLS-HUB)](https://github.com/bgoonz/WEB-DEV-TOOLS-HUB)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=DS-ALGO-OFFICIAL)](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
 
 </div>
 
@@ -122,42 +102,39 @@
   <a href="mailto:bryan.guner@gmail.com"><img src="https://img.icons8.com/color/96/000000/gmail.png" alt="email"/></a><a href="https://www.facebook.com/bryan.guner/"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook"/></a><a href="https://twitter.com/bgooonz"><img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt="twitter"/></a><a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos"><img src="https://img.icons8.com/color/96/000000/youtube.png" alt="youtube"/></a><a href="https://www.instagram.com/bgoonz/?hl=en"><img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="instagram"/></a><a href="https://www.pinterest.com/bryanguner/_saved/"><img src="https://img.icons8.com/color/96/000000/pinterest--v1.png" alt="pinterest"/></a><a href="https://www.linkedin.com/in/bryan-guner-046199128/"><img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin"/></a>
   <a href="https://bryanguner.medium.com/"><img src="https://img.icons8.com/color/96/000000/medium-logo.png" alt="medium"/></a><a href="https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw"><img src="https://img.icons8.com/color/96/000000/spotify--v1.png" alt="spotify"/></a>
   </p>
-<p align="left">
-
--   [GitHub](https://github.com/bgoonz)
--   [Gitlab](https://gitlab.com/bryan.guner.dev)
--   [Bitbucket](https://bitbucket.org/bgoonz/)
--   [code pen](https://codepen.io/bgoonz)
--   [Glitch](https://glitch.com/@bgoonz)
--   [Replit](https://repl.it/@bgoonz/)
--   [Redit](https://www.reddit.com/user/bgoonz1)
--   [runkit](https://runkit.com/bgoonz)
--   [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner)
--   [Netlify](https://app.netlify.com/user/settings#profile)
--   [Medium](https://bryanguner.medium.com/)
--   [webcomponents.dev](https://webcomponents.dev/user/bgoonz)
--   [npm](https://www.npmjs.com/~bgoonz11)
--   [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368)
--   [AngelList](https://angel.co/u/bryan-guner)
--   [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN)               
--   [dev.to](https://dev.to/bgoonz)
--   [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)
--   [Notation](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)
--   [StackShare](https://stackshare.io/bryanguner)
--   [Plunk](http://plnkr.co/account/plunks)
--   [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)
--   [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)
--   [giphy](https://giphy.com/channel/bryanguner)
-</p>
 
 
+<div align="center">
 
+| [GitHub](https://github.com/bgoonz)          | [Replit](https://repl.it/@bgoonz/)                                        | [Medium](https://bryanguner.medium.com/)                                                          | [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN) |
+|----------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| [Gitlab](https://gitlab.com/bryan.guner.dev) | [Redit](https://www.reddit.com/user/bgoonz1)                              | [webcomponents.dev](https://webcomponents.dev/user/bgoonz)                                        | [dev.to](https://dev.to/bgoonz)                                                     |
+| [Bitbucket](https://bitbucket.org/bgoonz/)   | [runkit](https://runkit.com/bgoonz)                                       | [npm](https://www.npmjs.com/~bgoonz11)                                                            | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)                |
+| [code pen](https://codepen.io/bgoonz)        | [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner) | [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368) | [Notation](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)  |
+| [Glitch](https://glitch.com/@bgoonz)         | [Netlify](https://app.netlify.com/user/settings#profile)                  | [AngelList](https://angel.co/u/bryan-guner)                                                       | [StackShare](https://stackshare.io/bryanguner)                                      |
+| [Plunk](http://plnkr.co/account/plunks)      | [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)                | [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)           | [giphy](https://giphy.com/channel/bryanguner)                                       |
+|     
 
-
-
+  <h3 align="left">Support:</h3><p><a href="https://www.buymeacoffee.com/bgoonz"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="bgoonz" /></a></p><br><br>
+  
+</div>
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blog)
+
+
+
+<details>
+
+<summary>About Me</summary>
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
+
+![skills](./skills.PNG)
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
 
 ##### ➤ [Blog:](https://modest-booth-4e17df.netlify.app/)
 
@@ -178,26 +155,8 @@
   <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Bryan C Guner's DEV Community Profile" height="30px" width="30px">
 </a>
         
-
 <a href="https://dev.to/bgoonz">
  
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
-
-
-
-<details>
-
-<summary>About Me</summary>
-
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
-
-![skills](./skills.PNG)
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
-
-
 
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-orange.svg)](https://github.com/chetanraj/awesome-github-badges)
@@ -470,6 +429,11 @@ Creating things that change my every day life.
   </tbody>
 </table>
 
+## ➤ Current Projects:
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=Lambda)](https://github.com/bgoonz/Lambda)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=bgoonz.github.io)](https://github.com/bgoonz/bgoonz.github.io)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=WEB-DEV-TOOLS-HUB)](https://github.com/bgoonz/WEB-DEV-TOOLS-HUB)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=DS-ALGO-OFFICIAL)](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
 
 
 
