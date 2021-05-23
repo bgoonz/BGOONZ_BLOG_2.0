@@ -13,7 +13,7 @@
                 "has_subnav": false
             },
             {
-                "label": "Study Re",
+                "label": "Study Reasources",
                 "url": "https://lambda-resources.netlify.app/",
                 "style": "link",
                 "has_subnav": false,
