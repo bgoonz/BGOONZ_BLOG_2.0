@@ -75,14 +75,7 @@ sections:
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: "#### [Scope & Context in JavaScript:](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)\n\n[The\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. If a variable or other expression is not in the current scope, then it is unavailable for use. If we declare a variable, this variable will only be valid in the scope where we declared it. We can have nested scopes, but we'll see that in a little bit.\n](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)\n"
-        actions:
-          - label: lorem-ipsum
-            url: '#'
-            style: link
-            icon_class: dev
-            new_window: false
-            no_follow: false
-            type: action
+        actions: []
         type: grid_item
         image: images/scope-context.png
   - section_id: features-two-col
