@@ -51,7 +51,7 @@ weight: 900
 - [how-to-implement-native-es6-data-structures-using-arrays-objects](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------)
 
 
-- [https://medium.com/codex/objects-in-javascript-cc578a781e1d](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
+- [https://medium.com/codex/objects-in-javascript](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
 
 
 - [https://medium.com/codex](https://medium.com/codex?source=your_stories_page-------------------------------------)
