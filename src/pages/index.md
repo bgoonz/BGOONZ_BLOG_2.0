@@ -114,7 +114,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |
-      *   ![](/\_static/app-assets/music-profile.PNG)
+      ![](/\_static/app-assets/music-profile.PNG)
     actions: []
     type: section_content
   - section_id: cta
