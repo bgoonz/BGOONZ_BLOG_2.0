@@ -14,7 +14,7 @@
             },
             {
                 "label": "Resources",
-                "url": "https://lambda-resources.netlify.app/",
+                "url": "/https://lambda-resources.netlify.app/",
                 "style": "link",
                 "has_subnav": false,
                 "subnav_links": [
@@ -28,6 +28,17 @@
                         "type": "action"
                     }
                 ]
+            },
+            {
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": false,
+                "subnav_links": [],
+                "type": "action_menu"
             },
             {
                 "label": "Blog",
@@ -47,8 +58,8 @@
                 "type": "action_menu"
             },
             {
-                "label": "About Me",
-                "url": "#portfolio",
+                "label": "About",
+                "url": "#",
                 "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
@@ -152,40 +163,15 @@
             },
             {
                 "label": "lorem-ipsum",
-                "url": "#https://www.facebook.com/bryan.guner/",
-                "style": "icon",
-                "icon_class": "facebook",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "url": "#https://app.stackbit.com/studio/609b2d7c71a5dd0016f36326?previewToken=9eb306c2-4cbd-475e-b37f-21e2876c6752#/docs/tools/plug-ins/",
+                "url": "#",
                 "style": "link",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "My dev.to",
-                "url": "https://dev.to/bgoonz",
-                "style": "icon",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "Depreciated Blog",
-                "url": "#https://web-dev-resource-hub.netlify.app/",
-                "style": "secondary",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
                 "type": "action"
             }
         ],
+        "content": "My (now) Depreciated Blog: https://web-dev-resource-hub.netlify.app/",
         "links": [
             {
                 "url": "#",

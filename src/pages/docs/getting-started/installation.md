@@ -1,6 +1,6 @@
 ---
-title: Contact
-weight: 1.5
+title: Installation
+weight: 1
 seo:
   title: Installation
   description: This is the installation page
@@ -21,71 +21,137 @@ seo:
     - name: 'twitter:description'
       value: This is the installation page
 template: docs
-excerpt: Portfolio Resume PDF Bryan's email Blog Linkedin AngelList GitHub bgoonz
 ---
-➤ \*Email                          \*
 
-## &#xA;[](https://github.com/bgoonz#bryangunergmailcom)[bryan.guner@gmail.com](https://github.com/bgoonz#)
+<div class="note">
+  <strong>Note:</strong> 
+  This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
+</div>
 
-[![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](https://github.com/bgoonz#\_phone\_)
+## Callouts
 
-## [](https://github.com/bgoonz#-phone)➤ *Phone*
+<hr>
 
-\*\*
+There are two types of callouts available in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note`. Like in the example bellow. 
 
-#### [](https://github.com/bgoonz#551-254-5505)[551-254-5505](https://github.com/bgoonz/bgoonz/blob/master/551-254-5505)
+### HTML example
 
-## [](https://github.com/bgoonz#-connect-with-me)➤ Connect with me:
+Copy the code and modify these blocks according to your needs.
 
-[![](https://camo.githubusercontent.com/987e9d7d7e70f98c5cd1d613add6ef56bcab60a8eda9e3df9f4f505b611ff773/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f676d61696c2e706e67)](mailto:bryan.guner@gmail.com)[![](https://camo.githubusercontent.com/6acccefe72a9ad3380c0802e7a78988adad9d186eefff43b715bd7d7d07dc52a/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f66616365626f6f6b2e706e67)](https://www.facebook.com/bryan.guner/)[![](https://camo.githubusercontent.com/a6a76173a04df8b3239debac70858c0d8bebd8d882b6572a0419cff3f51a2fc3/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f747769747465722d737175617265642e706e67)](https://twitter.com/bgooonz)[![](https://camo.githubusercontent.com/aec347ccecfb57c504334b6723d26a419c1e7a871d467603d0a301272d5ac329/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f796f75747562652e706e67)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://camo.githubusercontent.com/13b4ab64e1a639ef039c1688b03c7a1a0aaa875a1858fa56888aa09c492aac6a/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f696e7374616772616d2d6e65772e706e67)](https://www.instagram.com/bgoonz/?hl=en)[![](https://camo.githubusercontent.com/4d14fb643e9f849728e8157811f502e1f146b7a2766a4c0a90e22afe106c0fbd/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f70696e7465726573742d2d76312e706e67)](https://www.pinterest.com/bryanguner/\_saved/)[![](https://camo.githubusercontent.com/4f660401d8469647f004f5740254c81a657f48d4c55a635be05ffb196c2be320/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f6c696e6b6564696e2e706e67)](https://www.linkedin.com/in/bryan-guner-046199128/) 
+```html
+<div class="important">
+  <strong>Important:</strong> 
+  This is an "Important" callout block of text.
+  This block indicates a warning or caution. 
+  Use it for an important message. 
+</div>
+```
 
-*   [GitHub](https://github.com/bgoonz)
+```html
+<div class="note">
+  <strong>Note:</strong> 
+  This is a "Note" callout block of text. 
+  This block signifies a general note.
+</div>
+```
+### Live example
 
-*   [Gitlab](https://gitlab.com/bryan.guner.dev)
+<div class="important">
+  <strong>Important:</strong> 
+  This is an "Important" callout block of text. 
+  This block indicates a warning or caution.
+  Use it for an important message. 
+</div>
 
-*   [Bitbucket](https://bitbucket.org/bgoonz/)
+<div class="note">
+  <strong>Note:</strong> 
+  This is an "Note" callout block of text. 
+  This block signifies a general note.
+</div>
 
-*   [code pen](https://codepen.io/bgoonz)
+## Code blocks
 
-*   [Glitch](https://glitch.com/@bgoonz)
+<hr>
 
-*   [Replit](https://repl.it/@bgoonz/)
+<div class="note">
+  <strong>Note:</strong>
+  Code blocks have copy functionality. To copy the code press the grey button located in the right side top corner.
+</div>
 
-*   [Redit](https://www.reddit.com/user/bgoonz1)
+You can create simple code blocks by placing triple backticks <code>```</code> before and after the code block. To render a code block more readable, we recommend placing a blank line before and after code blocks.
 
-*   [runkit](https://runkit.com/bgoonz)
+<pre>```
+if (condition) {
+  code to run if condition is true
+} else {
+  run some other code instead
+}
+```
+</pre>
 
-*   [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner)
+```
+if (condition) {
+  code to run if condition is true
+} else {
+  run some other code instead
+}
+```
 
-*   [Netlify](https://app.netlify.com/user/settings#profile)
+### Syntax highlighting
 
-*   [Medium](https://bryanguner.medium.com/)
+You can add a language identifier to enable syntax highlighting in your code block. For example, to syntax highlight **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
 
-*   [webcomponents.dev](https://webcomponents.dev/user/bgoonz)
+<pre>
+```javascript
+if (condition) {
+  code to run if condition is true
+} else {
+  run some other code instead
+}
+```
+</pre>
 
-*   [npm](https://www.npmjs.com/~bgoonz11)
+The rendered output looks like this:
 
-*   [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1\&s=1110580755057594368)
+```javascript
+if (condition) {
+  code to run if condition is true
+} else {
+  run some other code instead
+}
+```
 
-*   [AngelList](https://angel.co/u/bryan-guner)
+## Tables
 
-*   [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN)
+<hr>
 
-*   [dev.to](https://dev.to/bgoonz)
+You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
 
-*   [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)
+<pre>
+| Title | Title |
+| ------| ----- |
+| Text  | Text  |
+| Text  | Text  |
+</pre>
 
-*   [Notation](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)
+| Title | Title |
+| ------| ----- |
+| Text  | Text  |
+| Text  | Text  |
 
-*   [StackShare](https://stackshare.io/bryanguner)
+<div class="note">
+  <strong>Note:</strong> 
+  Creating tables with hyphens and pipes can be time-consuming. To speed up the process, try using the <a href="http://www.tablesgenerator.com/markdown_tables" >Markdown Tables Generator</a>.
+</div>
 
-*   [Plunk](http://plnkr.co/account/plunks)
+## Start using Libris theme
 
-*   [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)
+<hr>
 
-*   [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)
+We’ve packed this theme with powerful features to help you have awesome documentation for your current or next project.
 
-*   [giphy](https://giphy.com/channel/bryanguner)
+<br>
 
+**Why not start using this theme today?**
 
-
+<a href="https://www.stackbit.com/" class="button">Join Stackbit</a>
