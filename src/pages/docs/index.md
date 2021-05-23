@@ -70,7 +70,7 @@ weight: 900
 - [lists-stacks-and-queues-in-javascript-88466fae0fbb](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------)
 
 
-- [web-development-resources-part-3-f862ceb2b82a](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------)
+- [web-development-resources-part-3](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------)
 
 
 [web-development-interview-part-3-826ae81a9107](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
