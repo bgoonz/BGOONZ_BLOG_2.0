@@ -1,7 +1,7 @@
 ---
 title: Where To Get Support
 excerpt: >-
-  We'd love it if you participate in the Libris community. Find out how to get
+  We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get
   connected.
 seo:
   title: Where To Get Support

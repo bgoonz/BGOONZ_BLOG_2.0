@@ -137,17 +137,17 @@ sections:
         url: 'mailto:bryan.guner@gmail.com'
         style: primary
 seo:
-  title: Stackbit Libris Theme
-  description: The preview of the Libris theme
+  title: Stackbit Web-Dev-HubTheme
+  description: The preview of the Web-Dev-Hubtheme
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Stackbit Libris Theme
+      value: Stackbit Web-Dev-HubTheme
       keyName: property
     - name: 'og:description'
-      value: The preview of the Libris theme
+      value: The preview of the Web-Dev-Hubtheme
       keyName: property
     - name: 'og:image'
       value: images/4.jpg
@@ -156,9 +156,9 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Stackbit Libris Theme
+      value: Stackbit Web-Dev-HubTheme
     - name: 'twitter:description'
-      value: The preview of the Libris theme
+      value: The preview of the Web-Dev-Hubtheme
     - name: 'twitter:image'
       value: images/4.jpg
       relativeUrl: true
