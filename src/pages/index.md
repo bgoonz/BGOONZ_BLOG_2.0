@@ -75,6 +75,22 @@ sections:
         actions: []
         type: grid_item
         image: images/scope-context.png
+      - title: lorem-ipsum
+        title_url: lorem-ipsum
+        image_alt: lorem-ipsum
+        content: >-
+          ## Lorem ipsum
+
+
+          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+          - Lorem ipsum
+
+          - dolor sit amet
+        actions: []
+        type: grid_item
   - section_id: features-two-col
     type: section_grid
     title: Resume & Portfolio
