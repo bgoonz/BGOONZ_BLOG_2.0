@@ -1,5 +1,5 @@
 ---
-title: New Conference
+title: Medium Articles
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ac ut consequat semper viverra
@@ -8,14 +8,14 @@ date: '2019-03-10'
 thumb_image: images/2.jpg
 image: images/2.jpg
 seo:
-  title: New Conference
+  title: Medium Articles
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
   extra:
     - name: 'og:type'
       value: article
       keyName: property
     - name: 'og:title'
-      value: New Conference
+      value: Medium Articles
       keyName: property
     - name: 'og:description'
       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
@@ -27,7 +27,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: New Conference
+      value: Medium Articles
     - name: 'twitter:description'
       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     - name: 'twitter:image'
