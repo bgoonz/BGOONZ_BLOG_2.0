@@ -75,7 +75,7 @@ sections:
         actions: []
         type: grid_item
         image: images/scope-context.png
-      - title: lorem-ipsum
+      - title: My Medium Blog
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
