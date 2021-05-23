@@ -65,7 +65,7 @@
                     },
                     {
                         "label": "docs",
-                        "url": "/docs/",
+                        "url": "/docs",
                         "style": "secondary",
                         "icon_class": "dev",
                         "new_window": false,
