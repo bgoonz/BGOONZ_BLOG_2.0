@@ -123,7 +123,7 @@ sections:
     title: Contact Me!
     subtitle: This is an optional description for the call to action block.
     actions:
-      - label: Get Started
+      - label: Contact Me
         url: /docs/getting-started/installation
         style: primary
       - label: lorem-ipsum
