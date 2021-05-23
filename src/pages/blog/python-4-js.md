@@ -3,7 +3,7 @@ date: '2019-05-27'
 image: images/2.jpg
 seo:
   title:Python Study Guide for a JavaScript Programmer
-  description: python for javascript developers
+  description:python for javascript developers
   extra:
     - name: 'og:type'
       value: article
