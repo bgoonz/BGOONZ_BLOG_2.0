@@ -17,7 +17,7 @@ sections:
           Preview html files by pasting their url into the search bar
       - title: Fresh
         title_url: 'https://themes.stackbit.com/demos/fresh/'
-        image: images/7.jpg
+        image: images/pure-data.png
         content: A personal theme for Unibit
       - title: Fjord
         title_url: 'https://themes.stackbit.com/demos/fjord/'
