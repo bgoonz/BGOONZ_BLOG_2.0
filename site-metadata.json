@@ -56,7 +56,7 @@
                 "subnav_links": [
                     {
                         "label": "blog",
-                        "url": "/blog/",
+                        "url": "/blog",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
