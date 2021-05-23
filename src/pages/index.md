@@ -67,7 +67,7 @@ sections:
 
         actions: []
         type: grid_item
-      - title: lorem-ipsum
+      - title: My Medium Blog Posts
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: "*My Blog Posts:*\n\n\\*\\*![](/\\_static/app-assets/posts1.png)\n\nPostgresql\_Cheat\_Sheet,\_Everything\_You\_Need\_to\_Get\_Started\_With\_VSCode\_+\_Extensions\_&\_Resources,\_Super\_Simple\_Intro\_To\_HTML,\_Understanding\_Git\_(A\_Beginners\_Guide\_Containing\_Cheat\_Sheets\_&\_Resources),\_Git-Tricks,\_Lists\_Stacks\_and\_Queue’s\_In\_JavaScript,\_Web\_Development\_Resources\_Part\_3,\_My\_‘awesome’\_list\_of\_JavaScript\_resources,\_The\_Best\_Cloud-Based\_Code\_Playgrounds\_of\_2021\_(Part\_1) ...etc....\n"
@@ -104,7 +104,7 @@ sections:
             style: link
       - title: Showcase
         content: |
-          Here's a series of mini projects I work on to sharpen my skills!
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
         actions:
           - label: Learn More
             url: /showcase
