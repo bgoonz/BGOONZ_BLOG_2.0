@@ -114,9 +114,7 @@ sections:
     image_alt: bryan-guner
     image_position: center
     content: |
-     
-[![](http://img.youtube.com/vi/xGZSWvFess8/0.jpg)](http://www.youtube.com/watch?v=xGZSWvFess8 "Ancestrial Solo")
-
+     [![](http://img.youtube.com/vi/xGZSWvFess8/0.jpg)](http://www.youtube.com/watch?v=xGZSWvFess8 "Ancestrial Solo")
     actions: []
     type: section_content
   - section_id: cta
