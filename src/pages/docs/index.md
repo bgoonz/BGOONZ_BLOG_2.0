@@ -25,7 +25,7 @@ weight: 900
 
 
 
-[https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
+[introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
 [https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
 [https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------)
 [https://javascript.plainenglish.io/?source=your_stories_page-------------------------------------](https://javascript.plainenglish.io/?source=your_stories_page-------------------------------------)
