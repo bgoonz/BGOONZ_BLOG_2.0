@@ -13,7 +13,8 @@ sections:
       - title: Git HTML PREVIEW
         title_url: 'https://themes.stackbit.com/demos/exto/'
         image: images/6.jpg
-        content: A portfolio theme for Unibit
+        content: |
+          Preview html files by pasting their url into the search bar
       - title: Fresh
         title_url: 'https://themes.stackbit.com/demos/fresh/'
         image: images/7.jpg
