@@ -14,7 +14,7 @@
             },
             {
                 "label": "Resources",
-                "url": "/https://lambda-resources.netlify.app/",
+                "url": "https://lambda-resources.netlify.app/",
                 "style": "link",
                 "has_subnav": false,
                 "subnav_links": [
