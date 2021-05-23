@@ -29,7 +29,7 @@ seo:
       relativeUrl: true
 template: post
 ---
-# Python Study Guide for a JavaScript Programmer&#xA;
+# Python Study Guide for a JavaScript Programmer;
 
 
 
