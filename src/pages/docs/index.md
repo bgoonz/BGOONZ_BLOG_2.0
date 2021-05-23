@@ -54,7 +54,7 @@ weight: 900
 - [https://medium.com/codex/objects-in-javascript](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
 
 
-- [https://medium.com/codex](https://medium.com/codex?source=your_stories_page-------------------------------------)
+
 
 
 - [https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
