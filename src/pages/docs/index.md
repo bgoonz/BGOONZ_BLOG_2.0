@@ -76,7 +76,7 @@ weight: 900
 [web-development-interview-part-3-826ae81a9107](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
 
 
-- [running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------)
+- [running-list-of-interesting-articles-tools](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------)
 
 
 - [the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------)
