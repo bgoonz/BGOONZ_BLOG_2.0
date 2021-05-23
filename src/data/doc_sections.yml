@@ -8,3 +8,13 @@ sections:
   - react
   - quick-reference
   - links
+root_docs_path: /blog
+sections:
+  - about
+  - data-structures
+  - faq
+  - My-Content
+  - tools
+  - react
+  - quick-reference
+  - links
