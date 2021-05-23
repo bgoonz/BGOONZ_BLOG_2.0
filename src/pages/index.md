@@ -114,7 +114,6 @@ sections:
     image_alt: bryan-guner
     image_position: center
     content: |
-     [![](http://img.youtube.com/vi/xGZSWvFess8/0.jpg)](http://www.youtube.com/watch?v=xGZSWvFess8 "Ancestrial Solo") |
      <iframe width="560" height="315" src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
