@@ -56,7 +56,7 @@
                 "has_subnav": false,
                 "subnav_links": [
                     {
-                        "label": "lorem-ipsum",
+                        "label": "blog",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
