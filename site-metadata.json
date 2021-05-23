@@ -47,7 +47,7 @@
                 "label": "Miscellaneous"
             },
             {
-                "label": "About",
+                "label": "Navigation",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
