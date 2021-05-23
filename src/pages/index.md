@@ -78,12 +78,9 @@ sections:
       - title: My Medium Blog
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: |
-
-
+        content: |+
           Here's a running list of my blog posts
 
-          ![](/\_static/app-assets/oceanic-ant.png)
         actions: []
         type: grid_item
   - section_id: features-two-col
