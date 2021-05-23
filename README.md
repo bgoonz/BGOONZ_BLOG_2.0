@@ -1,12 +1,3 @@
-
-<h1 align="center">Hi 👋, I'm Bryan</h1>
-
----
-
-[Live Site](https://best-celery-b2d7c.netlify.app/)
-
-
-
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
 ---
