@@ -12,7 +12,7 @@ sections:
     col_number: three
     grid_items:
       - title: Blog
-        content: "A Quick Guide To Big O\n\n![](/\\_static/app-assets/green-spruce.png)\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n\n#\n\n######\n"
+        content: "A Quick Guide To Big O\n\n![](/\\_static/app-assets/green-spruce.png)\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n"
         actions:
           - label: Get Started
             url: /docs
