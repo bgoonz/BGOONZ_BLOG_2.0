@@ -15,7 +15,7 @@ sections:
         image: images/git-html-preview.gif
         content: |
           Preview html files by pasting their url into the search bar
-      - title: Fresh
+      - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
         title_url: 'https://themes.stackbit.com/demos/fresh/'
         image: images/pure-data.png
         content: A personal theme for Unibit
