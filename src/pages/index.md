@@ -111,7 +111,7 @@ sections:
           ![](/images/skillz.PNG)
         actions:
           - label: Learn More
-            url: /overview
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
       - title: Showcase
         content: |
