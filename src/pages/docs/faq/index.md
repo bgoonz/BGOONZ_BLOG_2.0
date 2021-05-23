@@ -5,7 +5,7 @@ excerpt: >-
   theme. If you have questions, don’t hesitate to ask us directly.
 seo:
   title: FAQ
-  description: This is the Links-n-resourcespage
+  description: This is the faqpage
   extra:
     - name: 'og:type'
       value: website
@@ -14,18 +14,18 @@ seo:
       value: FAQ
       keyName: property
     - name: 'og:description'
-      value: This is the Links-n-resourcespage
+      value: This is the faqpage
       keyName: property
     - name: 'twitter:card'
       value: summary
     - name: 'twitter:title'
       value: FAQ
     - name: 'twitter:description'
-      value: This is the Links-n-resourcespage
+      value: This is the faqpage
 template: docs
 ---
 
-This is an example of the Links-n-resourcespage.
+This is an example of the faqpage.
 
 <div class="note">
   <strong>Note:</strong> 
