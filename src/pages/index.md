@@ -115,7 +115,7 @@ sections:
     subtitle: This is an optional description for the call to action block.
     actions:
       - label: Contact Me
-        url: /docs/getting-started/installation
+        url: 'mailto:bryan.guner@gmail.com'
         style: primary
 seo:
   title: Stackbit Libris Theme
