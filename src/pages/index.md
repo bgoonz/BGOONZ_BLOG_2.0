@@ -109,6 +109,14 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
+  - title: Musical Persuits
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |
+      ![](/\_static/app-assets/music-profile.PNG)
+    actions: []
+    type: section_content
   - section_id: cta
     type: section_cta
     title: Contact Me!
