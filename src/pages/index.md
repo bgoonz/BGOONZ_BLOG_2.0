@@ -114,7 +114,7 @@ sections:
     image_alt: bryan-guner
     image_position: center
     content: |
-      ![ancestrial](/\_static/app-assets/music-profile.PNG)
+      ![ancestrial](https://www.youtube.com/watch?v=xGZSWvFess8)
     actions: []
     type: section_content
   - section_id: cta
