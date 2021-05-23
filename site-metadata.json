@@ -64,7 +64,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Overview",
+                        "label": "Resource-Map",
                         "url": "/overview",
                         "style": "link"
                     },
