@@ -32,11 +32,19 @@ sections:
             style: link
         image: images/fierce-sun.png
       - content: >
-          ![](/\_static/app-assets/dtw.png)
+          #
+          Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/square-cedar.png)
 
 
-          ###### [This section exists for me to day dream ideas for the
-          future... and maybe... just maybe, hold myself accountable to
+          ######
+
+
+
+
+
+
+          [This section exists for me to day dream ideas for the future... and
+          maybe... just maybe, hold myself accountable to
           them.](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
         actions:
           - label: Learn More
