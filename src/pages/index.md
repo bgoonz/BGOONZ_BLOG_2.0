@@ -91,7 +91,7 @@ sections:
         type: grid_item
   - section_id: features-two-col
     type: section_grid
-    title: Sample Layouts
+    title: Resume & Portfolio
     subtitle: An optional subtitle of the section
     col_number: two
     grid_items:
@@ -113,8 +113,11 @@ sections:
     section_id: guitar
     image_alt: bryan-guner
     image_position: center
-    content: |
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    content: >
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
+      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - section_id: cta
