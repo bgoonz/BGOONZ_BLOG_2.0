@@ -36,7 +36,6 @@
                 "has_subnav": false
             },
             {
-                "label": "Interests",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
