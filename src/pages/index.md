@@ -29,8 +29,17 @@ sections:
             url: /docs
             style: link
       - title: Python Study Guide for a JavaScript Programmer
-        content: |
-          ![](/\_static/app-assets/friendly-robin.png)
+        content: |+
+
+
+
+
+
+
+
+
+
+
         actions:
           - label: View Posts
             url: >-
