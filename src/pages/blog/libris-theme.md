@@ -10,35 +10,59 @@ image: images/10.jpg
 seo:
   title: Introducing The Libris Theme
   description: >-
+
     Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
     accumsan
+
   extra:
+
     - name: 'og:type'
+
       value: article
+
       keyName: property
+
     - name: 'og:title'
+
       value: Introducing The Libris Theme
+
       keyName: property
+
     - name: 'og:description'
+
       value: >-
         Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
         accumsan
+
       keyName: property
+
     - name: 'og:image'
+
       value: images/3.jpg
+
       keyName: property
+
       relativeUrl: true
+
     - name: 'twitter:card'
+
       value: summary_large_image
+
     - name: 'twitter:title'
+
       value: Introducing The Libris Theme
+
     - name: 'twitter:description'
+
       value: >-
         Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
         accumsan
+
     - name: 'twitter:image'
+
       value: images/3.jpg
       relativeUrl: true
+
 template: post
 ---
 
@@ -183,7 +207,7 @@ It accepts `author` \(an object\), `text` \(a string\), and `date` \(a date\) as
 
 This component can be tricky to change because of all the nesting, and it is also hard to reuse individual parts of it. Let’s extract a few components from it.
 
-First, we will extract `Avatar`:
+First, we will extract `Avatar` :
 
 ```text
 function Avatar(props) {
@@ -192,7 +216,7 @@ function Avatar(props) {
 }
 ```
 
-The `Avatar` doesn’t need to know that it is being rendered inside a `Comment`. This is why we have given its prop a more generic name: `user` rather than `author`.
+The `Avatar` doesn’t need to know that it is being rendered inside a `Comment` . This is why we have given its prop a more generic name: `user` rather than `author` .
 
 We recommend naming props from the component’s own point of view rather than the context in which it is being used.
 
@@ -246,7 +270,7 @@ function Comment(props) {
 
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/components-and-props/extracting-components-continued)
 
-Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times \(`Button`, `Panel`, `Avatar`\), or is complex enough on its own \(`App`, `FeedStory`, `Comment`\), it is a good candidate to be extracted to a separate component.
+Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times \( `Button` , `Panel` , `Avatar` \), or is complex enough on its own \( `App` , `FeedStory` , `Comment` \), it is a good candidate to be extracted to a separate component.
 
 ### Props are Read-Only <a id="props-are-read-only"></a>
 
@@ -273,4 +297,3 @@ React is pretty flexible but it has a single strict rule:
 **All React components must act like pure functions with respect to their props.**
 
 Of course, application UIs are dynamic and change over time. In the [next section](https://reactjs.org/docs/state-and-lifecycle.html), we will introduce a new concept of “state”. State allows React components to change their output over time in response to user actions, network responses, and anything else, without violating this rule.
-
