@@ -176,7 +176,7 @@
                 "label": "Old Blog",
                 "url": "https://lambda-resources.netlify.app/",
                 "style": "link",
-                "icon_class": "github",
+                "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
                 "type": "action"
