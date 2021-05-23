@@ -29,7 +29,7 @@ sections:
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
       - title: Mihir-Beg-Music.com
         title_url: 'https://mihirbegmusic.netlify.app/'
-        image: images/pic02.jpg
+        image: images/mihir2.gif
         content: Medium inspired blogging theme for Unibit
       - title: lorem-ipsum
         title_url: lorem-ipsum
