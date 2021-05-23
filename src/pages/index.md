@@ -55,17 +55,16 @@ sections:
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >+
+          ## Beginner’s Guide To React Part
+          2&#xA;![](/\_static/app-assets/react.gif)
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          As I learn to build web applications in React I will blog about it in
+          this series in an attempt to capture the questions that a complete
+          beginner might encounter that a more seasoned developer would take for
+          granted!
 
-
-          - Lorem ipsum
-
-          - dolor sit amet
         actions: []
         type: grid_item
       - title: lorem-ipsum
