@@ -12,50 +12,7 @@ sections:
     col_number: three
     grid_items:
       - title: Blog
-        content: >
-          > ## A Quick Guide to Big-O Notation
-
-          >
-
-          > ###### ![](/\_static/app-assets/happy-basil.png)
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          >
-
-          > [Curating Complexity: A Guide to Big-O Notation (Memoization,
-          Tabulation, and Sorting)
-
-          >
-          ](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
-
-          >
+        content: "A Quick Guide To Big O\n\n![](/\\_static/app-assets/green-spruce.png)\n\n\n\n###### [Memoization, Tabulation, and Sorting Algorithms by Example &#xA;Why is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)&#xA;&#xA;\n\n# &#xA;&#xA;&#xA;\n\n######\n"
         actions:
           - label: Get Started
             url: /docs
