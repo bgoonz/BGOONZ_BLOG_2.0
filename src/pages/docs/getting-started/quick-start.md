@@ -5,37 +5,21 @@ seo:
   title: Quick Start
   description: This is the quick start page
   extra:
-
     - name: 'og:type'
-
       value: website
-
       keyName: property
-
     - name: 'og:title'
-
       value: Quick Start
-
       keyName: property
-
     - name: 'og:description'
-
       value: This is the quick start page
-
       keyName: property
-
     - name: 'twitter:card'
-
       value: summary
-
     - name: 'twitter:title'
-
       value: Quick Start
-
     - name: 'twitter:description'
-
       value: This is the quick start page
-
 template: docs
 ---
 
@@ -48,7 +32,7 @@ template: docs
 
 <hr>
 
-There are two types of callouts available in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note` . Like in the example bellow. 
+There are two types of callouts available in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note`. Like in the example bellow. 
 
 ### HTML example
 
@@ -56,21 +40,20 @@ Copy the code and modify these blocks according to your needs.
 
 ```html
 <div class="important">
-    <strong>Important:</strong>
-    This is an "Important" callout block of text.
-    This block indicates a warning or caution.
-    Use it for an important message.
+  <strong>Important:</strong> 
+  This is an "Important" callout block of text.
+  This block indicates a warning or caution. 
+  Use it for an important message. 
 </div>
 ```
 
 ```html
 <div class="note">
-    <strong>Note:</strong>
-    This is a "Note" callout block of text.
-    This block signifies a general note.
+  <strong>Note:</strong> 
+  This is a "Note" callout block of text. 
+  This block signifies a general note.
 </div>
 ```
-
 ### Live example
 
 <div class="important">
@@ -97,25 +80,20 @@ Copy the code and modify these blocks according to your needs.
 
 You can create simple code blocks by placing triple backticks <code>```</code> before and after the code block. To render a code block more readable, we recommend placing a blank line before and after code blocks.
 
-<pre>
-
-```
+<pre>```
 if (condition) {
-    code to run
-    if condition is true
+  code to run if condition is true
 } else {
-    run some other code instead
+  run some other code instead
 }
 ```
-
 </pre>
 
 ```
 if (condition) {
-    code to run
-    if condition is true
+  code to run if condition is true
 } else {
-    run some other code instead
+  run some other code instead
 }
 ```
 
@@ -124,26 +102,22 @@ if (condition) {
 You can add a language identifier to enable syntax highlighting in your code block. For example, to syntax highlight **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
 
 <pre>
-
 ```javascript
 if (condition) {
-    code to run
-    if condition is true
+  code to run if condition is true
 } else {
-    run some other code instead
+  run some other code instead
 }
 ```
-
 </pre>
 
 The rendered output looks like this:
 
 ```javascript
 if (condition) {
-    code to run
-    if condition is true
+  code to run if condition is true
 } else {
-    run some other code instead
+  run some other code instead
 }
 ```
 

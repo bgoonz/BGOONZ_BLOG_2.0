@@ -1,43 +1,27 @@
 ---
 title: Manage Content
 excerpt: >-
-  In this section you'll learn how to add syntax highlighting, examples, 
+  In this section you'll learn how to add syntax highlighting, examples,
   callouts and much more.
 seo:
   title: Manage Content
   description: This is the manage content page
   extra:
-
     - name: 'og:type'
-
       value: website
-
       keyName: property
-
     - name: 'og:title'
-
       value: Manage Content
-
       keyName: property
-
     - name: 'og:description'
-
       value: This is the manage content page
-
       keyName: property
-
     - name: 'twitter:card'
-
       value: summary
-
     - name: 'twitter:title'
-
       value: Manage Content
-
     - name: 'twitter:description'
-
       value: This is the manage content page
-
 template: docs
 ---
 
@@ -50,75 +34,63 @@ template: docs
 You can add a language identifier to enable syntax highlighting in your code block. For example, to highlight the **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
 
 <pre>
-
 ```javascript
 if (condition) {
-    code to run
-    if condition is true
+  code to run if condition is true
 } else {
-    run some other code instead
+  run some other code instead
 }
 ```
-
 </pre>
 
 The rendered output looks like this:
 
 ```javascript
 if (condition) {
-    code to run
-    if condition is true
+  code to run if condition is true
 } else {
-    run some other code instead
+  run some other code instead
 }
 ```
 
 Or to highlight the **CSS** code, specify `css` next to the tick marks before the fenced code block:
 
 <pre>
-
 ```css
 body {
-    background: #fff;
-    color: #666;
-    line-height: 1.66667;
-}
+  background: #fff;
+  color: #666;
+  line-height: 1.66667; }
 
 a {
-    color: #d4a259;
-    text-decoration: underline;
-    -webkit-transition: background .3s ease, color .3s ease;
-    transition: background .3s ease, color .3s ease;
-}
+  color: #d4a259;
+  text-decoration: underline;
+  -webkit-transition: background .3s ease, color .3s ease;
+  transition: background .3s ease, color .3s ease; }
 
 a:hover {
-    color: #1d1d1d;
-    text-decoration: none;
-}
+  color: #1d1d1d;
+  text-decoration: none; }
 ```
-
 </pre>
 
 The rendered output looks like this:
 
 ```css
 body {
-    background: #fff;
-    color: #666;
-    line-height: 1.66667;
-}
+  background: #fff;
+  color: #666;
+  line-height: 1.66667; }
 
 a {
-    color: #d4a259;
-    text-decoration: underline;
-    -webkit-transition: background .3s ease, color .3s ease;
-    transition: background .3s ease, color .3s ease;
-}
+  color: #d4a259;
+  text-decoration: underline;
+  -webkit-transition: background .3s ease, color .3s ease;
+  transition: background .3s ease, color .3s ease; }
 
 a:hover {
-    color: #1d1d1d;
-    text-decoration: none;
-}
+  color: #1d1d1d;
+  text-decoration: none; }
 ```
 
 ## Callouts
