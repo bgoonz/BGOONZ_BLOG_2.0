@@ -21,9 +21,41 @@ sections:
 
           >
 
-          > ###### [Curating Complexity: A Guide to Big-O Notation (Memoization,
-          Tabulation, and
-          Sorting)](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          >
+
+          > [Curating Complexity: A Guide to Big-O Notation (Memoization,
+          Tabulation, and Sorting)
+
+          >
+          ](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
+
+          >
         actions:
           - label: Get Started
             url: /docs
