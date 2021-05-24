@@ -1,7 +1,7 @@
 ---
 title: Components & Props in React
 excerpt: "Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a\_detailed component API reference here."
-date: '2021-05-23'
+date: '2019-04-24'
 thumb_image: images/react.jpg
 image: images/10.jpg
 seo:
