@@ -31,7 +31,8 @@ seo:
       value: Introducing The Web-Dev-HubTheme
     - name: 'twitter:description'
       value: >-
- 
+        Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
+        accumsan
     - name: 'twitter:image'
       value: images/3.jpg
       relativeUrl: true
