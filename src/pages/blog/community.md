@@ -2,14 +2,14 @@
 date: '2019-05-27'
 image: images/2.jpg
 seo:
-  title: Community Round-up
+  title: python
   description: Commodo ante vis placerat interdum massa massa primis
   extra:
     - name: 'og:type'
       value: article
       keyName: property
     - name: 'og:title'
-      value: Community Round-up
+      value: python
       keyName: property
     - name: 'og:description'
       value: Commodo ante vis placerat interdum massa massa primis
@@ -21,7 +21,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Community Round-up
+      value: python
     - name: 'twitter:description'
       value: Commodo ante vis placerat interdum massa massa primis
     - name: 'twitter:image'
