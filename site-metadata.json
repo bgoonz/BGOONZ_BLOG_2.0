@@ -31,7 +31,7 @@
             },
             {
                 "label": "Blog",
-                "url": "/blog/index.md",
+                "url": "/blog",
                 "style": "link",
                 "has_subnav": false
             },
