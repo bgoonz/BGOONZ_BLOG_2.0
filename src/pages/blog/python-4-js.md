@@ -1,7 +1,9 @@
 ---
 date: '2021-05-23'
 image: images/2.jpg
-seo: title:Python Study Guide for a JavaScript Programmer description:python for javascript developers
+seo:
+  title:Python Study Guide for a JavaScript Programmer
+  description:python for javascript developers
   extra:
     - name: 'og:type'
       value: article
@@ -41,13 +43,13 @@ template: post
 
 # Basics
 
-*   **PEP8** : Python Enhancement Proposals, style-guide for Python.
+*   **PEP8** : Python Enhancement Proposals, style-guide for Python.
 
-*   print is the equivalent of console.log.
+*   print is the equivalent of console.log.
 
 > ‘print() == console.log()’
 
-# # is used to make comments in your code.
+# # is used to make comments in your code.
 
 > *Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”*
 
@@ -61,7 +63,7 @@ template: post
 
 No Decimal Point
 
-> Created by a literal non-decimal point number … **or** … with the *int()* constructor.
+> Created by a literal non-decimal point number … **or** … with the *int()* constructor.
 
 **3. Complex Numbers**
 
@@ -75,11 +77,11 @@ No Decimal Point
 
 # KEEP IN MIND:
 
-> **The i is switched to a j in programming.**
+> **The i is switched to a j in programming.**
 
-T*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space **when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
+T*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space **when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
 
-*   **Type Casting** : The process of converting one number to another.
+*   **Type Casting** : The process of converting one number to another.
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
@@ -89,45 +91,45 @@ T*his is because the letter i is common place as the de facto index for any and 
 
 *   **There are no spaces between math operations in Python.**
 
-*   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
+*   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
 
-*   **There are no ++ and -- in Python, the only shorthand operators are:**
+*   **There are no ++ and -- in Python, the only shorthand operators are:**
 
 # Strings
 
 *   Python uses both single and double quotes.
 
-*   You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
+*   You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
 
 *   Multiline strings use triple quotes.
 
-**Use the len() function to get the length of a string.**
+**Use the len() function to get the length of a string.**
 
-# **Python uses zero-based indexing**
+# **Python uses zero-based indexing**
 
 ## Python allows negative indexing (thank god!)
 
 *   Python let’s you use ranges
 
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
 
-*   The end range is exclusive just like slice in JS.
-
-<!---->
-
-*   The index string function is the equiv. of indexOf() in JS
+*   The end range is exclusive just like slice in JS.
 
 <!---->
 
-*   The count function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
+*   The index string function is the equiv. of indexOf() in JS
 
 <!---->
 
-*   **You can use + to concatenate strings, just like in JS.**
+*   The count function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
+
+<!---->
+
+*   **You can use + to concatenate strings, just like in JS.**
 
 *   **You can also use “\*” to repeat strings or multiply strings.**
 
-*   **Use the format() function to use placeholders in a string to input values later on.**
+*   **Use the format() function to use placeholders in a string to input values later on.**
 
 <!---->
 
@@ -136,7 +138,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ## Some useful string methods.
 
-*   **Note that in JS join is used on an Array, in Python it is used on String.**
+*   **Note that in JS join is used on an Array, in Python it is used on String.**
 
 <!---->
 
@@ -144,7 +146,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 # Variables and Expressions
 
-*   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
+*   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
 
 *   Duck Typing is the fundamental approach of Python.
 
@@ -158,12 +160,12 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ## The value and type of a variable can be re-assigned at any time.
 
-*   *NaN does not exist in Python, but you can 'create' it like so:
+*   *NaN does not exist in Python, but you can 'create' it like so:
     **print(float("nan"))***
 
-*   *Python replaces null with none.*
+*   *Python replaces null with none.*
 
-*   ***none is an object** and can be directly assigned to a variable.*
+*   ***none is an object** and can be directly assigned to a variable.*
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
@@ -175,13 +177,13 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 *   By default, Python considers an object to be true UNLESS it is one of the following:
 
-*   Constant None or False
+*   Constant None or False
 
 *   Zero of any numeric type.
 
 *   Empty Sequence or Collection.
 
-*   True and False must be capitalized
+*   True and False must be capitalized
 
 # Comparison Operators
 
@@ -197,29 +199,29 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 3.  **OR**
 
-> Just like in JS, you can use parentheses to change the inherent order of operations.
+> Just like in JS, you can use parentheses to change the inherent order of operations.
 >
-> **Short Circuit** : Stopping a program when a true or false has been reached.
+> **Short Circuit** : Stopping a program when a true or false has been reached.
 
 # Identity vs Equality
 
-*   In the Python community it is better to use is and is not over == or !=
+*   In the Python community it is better to use is and is not over == or !=
 
 # If Statements
 
-> Remember the order of elif statements matter.
+> Remember the order of elif statements matter.
 
 # While Statements
 
-*   Break statement also exists in Python.
+*   Break statement also exists in Python.
 
 <!---->
 
-*   As are continue statements
+*   As are continue statements
 
 # Try/Except Statements
 
-*   Python equivalent to try/catch
+*   Python equivalent to try/catch
 
 <!---->
 
@@ -227,19 +229,19 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 <!---->
 
-*   You can also use the pass commmand to by pass a certain error.
+*   You can also use the pass commmand to by pass a certain error.
 
 <!---->
 
-*   The pass method won't allow you to bypass every single error so you can chain an exception series like so:
+*   The pass method won't allow you to bypass every single error so you can chain an exception series like so:
 
 <!---->
 
-*   You can use an else statement to end a chain of except statements.
+*   You can use an else statement to end a chain of except statements.
 
 <!---->
 
-*   finally is used at the end to clean up all actions under any circumstance.
+*   finally is used at the end to clean up all actions under any circumstance.
 
 <!---->
 
@@ -253,7 +255,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 *   **Function definition includes:**
 
-*   **The def keyword**
+*   **The def keyword**
 
 *   **The name of the function**
 
@@ -271,7 +273,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 <!---->
 
-*   The lambda keyword is used to create anonymous functions and are supposed to be one-liners.
+*   The lambda keyword is used to create anonymous functions and are supposed to be one-liners.
 
 toUpper = lambda s: s.upper()
 
@@ -481,7 +483,7 @@ Custom.
 
 > module : Python code in a separate file.
 > package : Path to a directory that contains modules.
-> [**init.py**](http://init.py/) : Default file for a package.
+> [**init.py**](http://init.py/) : Default file for a package.
 > submodule : Another file in a module’s folder.
 > function : Function in a module.
 
@@ -518,3 +520,4 @@ Or Checkout my personal Resource Site:
 # Python Cheat Sheet:
 
 # If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+SAVE TO CACHER
