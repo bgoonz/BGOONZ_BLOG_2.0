@@ -48,13 +48,40 @@
             },
             {
                 "label": "Navigation",
-                "url": "#",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
-                "has_subnav": false,
-                "subnav_links": [],
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "blog",
+                        "url": "/blog",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "docs",
+                        "url": "/docs",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Showcase",
+                        "url": "/showcase",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
                 "type": "action_menu"
             },
             {

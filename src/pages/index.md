@@ -1,5 +1,5 @@
 ---
-title: Bryan Guner Web Dev Resource Gub
+title: Bryan Guner Web Dev Resource Hub
 sections:
   - section_id: hero
     type: section_hero
@@ -11,8 +11,7 @@ sections:
     type: section_grid
     col_number: three
     grid_items:
-      - title: Blog
-        content: "A Quick Guide To Big O\n\n![](/\\_static/app-assets/green-spruce.png)\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n"
+      - content: "# A Quick Guide To Big O\n\n# ![](/\\_static/app-assets/green-spruce.png)\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n"
         actions:
           - label: Get Started
             url: /docs
@@ -34,13 +33,6 @@ sections:
       - content: >
           #
           Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/square-cedar.png)
-
-
-          ######
-
-
-
-
 
 
           [This section exists for me to day dream ideas for the future... and
@@ -78,10 +70,7 @@ sections:
           # My Medium Blog
 
 
-
-
-          [Here's a running list of my blog
-          posts](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
+          ![](/\_static/app-assets/oval-robin.png)
 
 
           ![](/\_static/app-assets/posts1.png)
