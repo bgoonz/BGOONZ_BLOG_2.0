@@ -1,8 +1,7 @@
 ---
-title: Portfolio
 excerpt: >-
-  Web-Dev-Hubis a Unibit theme created for project documentations. You can use it
-  for your project.
+  Web-Dev-Hubis a Unibit theme created for project documentations. You can use
+  it for your project.
 seo:
   title: Portfolio
   description: This is the Portfolio page
