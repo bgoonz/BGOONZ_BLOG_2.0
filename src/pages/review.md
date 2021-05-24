@@ -1,5 +1,5 @@
 ---
-title: review
+title: lorem-ipsum
 sections: []
 seo:
   title: ''

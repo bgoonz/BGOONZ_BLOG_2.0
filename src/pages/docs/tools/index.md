@@ -40,10 +40,6 @@ seo:
 template: docs
 ---
 
-<br>
-<br>
-<br>
-<br>
 
 <br>
 
