@@ -1,13 +1,14 @@
 ---
 title: Components & Props in React
 excerpt: "Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a\_detailed component API reference here."
-date: '2021-05-23'
+date: '2019-04-24'
 thumb_image: images/react.jpg
 image: images/10.jpg
 seo:
   title: Introducing The Web-Dev-HubTheme
   description: >-
-    Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a\_detailed component API reference here
+    Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
+    accumsan
   extra:
     - name: 'og:type'
       value: article
@@ -17,7 +18,8 @@ seo:
       keyName: property
     - name: 'og:description'
       value: >-
-         Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a\_detailed component API reference here
+        Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
+        accumsan
       keyName: property
     - name: 'og:image'
       value: images/3.jpg
@@ -29,7 +31,8 @@ seo:
       value: Introducing The Web-Dev-HubTheme
     - name: 'twitter:description'
       value: >-
-        Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a\_detailed component API reference here
+        Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
+        accumsan
     - name: 'twitter:image'
       value: images/3.jpg
       relativeUrl: true
