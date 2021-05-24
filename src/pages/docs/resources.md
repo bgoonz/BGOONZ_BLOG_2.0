@@ -1,7 +1,7 @@
 ---
-title: resources
+title: lorem-ipsum
 weight: 0
-excerpt: resources
+excerpt: lorem-ipsum
 seo:
   title: ''
   description: ''
