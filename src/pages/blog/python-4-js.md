@@ -1,8 +1,7 @@
 ---
 date: '2021-05-23'
 image: images/2.jpg
-seo: title:Python Study Guide for a JavaScript Programmer
-  description:python for javascript developers
+seo: title:Python Study Guide for a JavaScript Programmer description:python for javascript developers
   extra:
     - name: 'og:type'
       value: article
