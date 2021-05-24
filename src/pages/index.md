@@ -1694,11 +1694,3 @@ Task automation and asset delivery.
     *   **[OctoLinker](https://github.com/OctoLinker/browser-extension)**: The OctoLinker is a browser extensions which makes references to other files in GitHub clickable.
 
 * * *
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
-Please provide a link back to this repository. This is not necessary for GitHub forks.
-
-
-[Source](https://lambda-resources.netlify.app/web-developer-links.html)
