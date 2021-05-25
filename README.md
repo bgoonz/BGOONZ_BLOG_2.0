@@ -22,7 +22,7 @@
 
 
 
-
+![blog](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog.png?raw=true)
 
 
 
