@@ -119,7 +119,7 @@
                     },
                     {
                         "label": "Job Search Resources",
-                        "url": "#",
+                        "url": "https://determined-dijkstra-ee7390.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
