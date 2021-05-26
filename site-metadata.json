@@ -36,7 +36,7 @@
                 "has_subnav": false
             },
             {
-                "url": "#",
+                "url": "https://tetris42.netlify.app/",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
