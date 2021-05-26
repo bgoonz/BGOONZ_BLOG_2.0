@@ -125,14 +125,14 @@ sections:
         url: 'mailto:bryan.guner@gmail.com'
         style: primary
 seo:
-  title: Stackbit Web-Dev-HubTheme
+  title:Web-Dev-Hub
   description: The preview of the Web-Dev-Hubtheme
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Stackbit Web-Dev-HubTheme
+      value:Web-Dev-Hub
       keyName: property
     - name: 'og:description'
       value: The preview of the Web-Dev-Hubtheme
@@ -144,7 +144,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Stackbit Web-Dev-HubTheme
+      value:Web-Dev-Hub
     - name: 'twitter:description'
       value: The preview of the Web-Dev-Hubtheme
     - name: 'twitter:image'
