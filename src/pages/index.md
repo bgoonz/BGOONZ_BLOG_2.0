@@ -126,7 +126,7 @@ sections:
         style: primary
 seo:
   title:Web-Dev-Hub
-  description: The preview of the Web-Dev-Hub
+  description The preview of the Web-Dev-Hub
   extra:
     - name: 'og:type'
       value: website
