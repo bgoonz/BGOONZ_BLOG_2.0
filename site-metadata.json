@@ -122,7 +122,7 @@
                         "url": "https://determined-dijkstra-ee7390.netlify.app/",
                         "style": "icon",
                         "icon_class": "dev",
-                        "new_window": false,
+                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     }
