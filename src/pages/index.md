@@ -126,7 +126,7 @@ sections:
         style: primary
 seo:
   title:Web-Dev-Hub
-  description: The preview of the Web-Dev-Hubtheme
+  description: The preview of the Web-Dev-Hub
   extra:
     - name: 'og:type'
       value: website
@@ -135,7 +135,7 @@ seo:
       value:Web-Dev-Hub
       keyName: property
     - name: 'og:description'
-      value: The preview of the Web-Dev-Hubtheme
+      value: The preview of the Web-Dev-Hub
       keyName: property
     - name: 'og:image'
       value: images/4.jpg
@@ -146,7 +146,7 @@ seo:
     - name: 'twitter:title'
       value:Web-Dev-Hub
     - name: 'twitter:description'
-      value: The preview of the Web-Dev-Hubtheme
+      value: The preview of the Web-Dev-Hub
     - name: 'twitter:image'
       value: images/4.jpg
       relativeUrl: true
