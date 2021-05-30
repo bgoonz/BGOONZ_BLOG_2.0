@@ -1,6 +1,4 @@
-;
 
-;
 
 PostgreSQL Setup For Windows & WSL/Ubuntu
 =========================================

@@ -1,6 +1,4 @@
-;
 
-;
 
 Introduction to React for Complete Beginners
 ============================================

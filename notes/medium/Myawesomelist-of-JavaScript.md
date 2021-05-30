@@ -1,6 +1,4 @@
-;
 
-;
 
 My ‘awesome’ list of JavaScript resources
 =========================================

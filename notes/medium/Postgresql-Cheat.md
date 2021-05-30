@@ -1,6 +1,4 @@
-;
 
-;
 
 Postgresql Cheat Sheet
 ======================

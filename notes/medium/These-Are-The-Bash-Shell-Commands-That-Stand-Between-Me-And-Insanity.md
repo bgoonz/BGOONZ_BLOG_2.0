@@ -1,6 +1,4 @@
-;
 
-;
 
 These Are The Bash Shell Commands That Stand Between Me And Insanity.
 =====================================================================

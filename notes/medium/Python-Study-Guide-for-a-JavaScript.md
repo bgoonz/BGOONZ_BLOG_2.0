@@ -1,6 +1,4 @@
-;
 
-;
 
 Python Study Guide for a JavaScript Programmer
 ==============================================

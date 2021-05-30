@@ -1,6 +1,4 @@
-;
 
-;
 
 Web Developer Resource List Part 4
 ==================================

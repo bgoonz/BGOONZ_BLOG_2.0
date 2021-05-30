@@ -1,6 +1,4 @@
-;
 
-;
 
 Web Dev Resources
 =================

@@ -1,6 +1,4 @@
-;
 
-;
 
 Objects in Javascript
 =====================
