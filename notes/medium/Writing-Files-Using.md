@@ -1,6 +1,4 @@
-;
 
-;
 
 Writing Files Using Python
 ==========================

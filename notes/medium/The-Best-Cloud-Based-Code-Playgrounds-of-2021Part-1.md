@@ -1,6 +1,4 @@
-;
 
-;
 
 The Best Cloud-Based Code Playgrounds of 2021 (Part 1)
 ======================================================

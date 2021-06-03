@@ -1,6 +1,4 @@
-;
 
-;
 
 Learn CSS So That Your Site Doesn’t Look Like Garbage
 =====================================================

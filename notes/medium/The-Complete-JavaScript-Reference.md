@@ -1,6 +1,4 @@
-;
 
-;
 
 The Complete JavaScript Reference Guide
 =======================================

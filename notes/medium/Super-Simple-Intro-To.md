@@ -1,6 +1,4 @@
-;
 
-;
 
 Super Simple Intro To HTML
 ==========================

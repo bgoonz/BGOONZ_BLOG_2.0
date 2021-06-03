@@ -1,6 +1,4 @@
-;
 
-;
 
 Web Development Resources Part 3
 ================================

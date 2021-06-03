@@ -1,6 +1,4 @@
-;
 
-;
 
 My Favorite VSCode Themes
 =========================

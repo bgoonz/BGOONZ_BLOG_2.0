@@ -1,6 +1,4 @@
-;
 
-;
 
 Understanding Git (A Beginners Guide Containing Cheat Sheets & Resources)
 =========================================================================

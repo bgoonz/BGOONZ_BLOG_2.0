@@ -1,6 +1,4 @@
-;
 
-;
 
 LocalStorage VS SessionStorage
 ==============================

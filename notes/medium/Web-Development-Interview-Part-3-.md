@@ -1,6 +1,4 @@
-;
 
-;
 
 Web Development Interview Part 3💻
 =================================

@@ -1,6 +1,4 @@
-;
 
-;
 
 Running List Of Interesting Articles, Tools and Ideas… as I Explore Them
 ========================================================================

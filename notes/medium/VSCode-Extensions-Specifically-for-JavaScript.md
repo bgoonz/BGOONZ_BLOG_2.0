@@ -1,6 +1,4 @@
-;
 
-;
 
 VSCode Extensions Specifically for JavaScript Development
 =========================================================

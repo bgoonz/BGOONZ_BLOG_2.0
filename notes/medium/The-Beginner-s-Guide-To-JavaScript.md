@@ -1,6 +1,4 @@
-;
 
-;
 
 The Beginner’s Guide To JavaScript
 ==================================

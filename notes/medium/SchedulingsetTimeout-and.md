@@ -1,6 +1,4 @@
-;
 
-;
 
 Scheduling: setTimeout and setInterval
 ======================================
