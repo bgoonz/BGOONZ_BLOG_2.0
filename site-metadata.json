@@ -144,7 +144,7 @@
                 "has_subnav": false
             },
             {
-                "url": "#",
+                "url": "./",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
