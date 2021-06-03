@@ -32,494 +32,351 @@ title: Python Resources
 thumb_image: images/violet-pluto.png
 thumb_image_alt: python logo
 ---
-# Python Study Guide for a JavaScript Programmer&#xA;
+# Beginners Guide To Python[**Basic Web Development Environment Setup**&#xA;*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1\*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0\*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web**&#xA;*Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)&#xA;&#xA;
 
+My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
+*   Bram Cohen
 
+Article on basic web development setup… it is geared towards web but VSCode is an incredibly versitile editor and this stack really could suit just about anyone working in the field of computer science. 
 
-![](https://miro.medium.com/max/1970/1\*3V9VOfPk_hrFdbEAd3j-QQ.png)![](https://miro.medium.com/max/52/0\*eC4EvZcv6hhH88jX.png?q=20)![](https://miro.medium.com/max/647/0\*eC4EvZcv6hhH88jX.png)![](https://miro.medium.com/max/60/0\*Ez\_1PZ93N4FfvkRr.png?q=20)![](https://miro.medium.com/max/608/0\*Ez\_1PZ93N4FfvkRr.png)![](https://miro.medium.com/max/60/0\*eE3E5H0AoqkhqK1z.png?q=20)![](https://miro.medium.com/max/1648/0\*eE3E5H0AoqkhqK1z.png)![](https://miro.medium.com/max/60/0\*Q0CMqFd4PozLDFPB.png?q=20)![](https://miro.medium.com/max/1638/0\*Q0CMqFd4PozLDFPB.png)![](https://miro.medium.com/max/3216/0\*HQpndNhm1Z_xSoHb.png)![](https://miro.medium.com/max/60/0\*qHzGRLTOMTf30miT.png?q=20)![](https://miro.medium.com/max/1614/0\*qHzGRLTOMTf30miT.png)[
+### The Repository & Live Site Behind This Article:
 
 
-](https://github.com/bgoonz)
 
-# Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
 
-# Basics
 
-*   **PEP8** : Python Enhancement Proposals, style-guide for Python.
 
-*   print is the equivalent of console.log.
 
-> ‘print() == console.log()’
 
-# # is used to make comments in your code.
 
-> *Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”*
 
-# Numbers
 
-*   Python has three types of numbers:
 
-1.  **Integer**
 
-2.  **Positive and Negative Counting Numbers.**
+### About Python(Taken From Tutorial Page Of Docs):
 
-No Decimal Point
+[Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:](https://docs.python.org/3/tutorial/appetite.html)
 
-> Created by a literal non-decimal point number … **or** … with the *int()* constructor.
+*   the high-level data types allow you to express complex operations in a single statement;
 
-**3. Complex Numbers**
+*   statement grouping is done by indentation instead of beginning and ending brackets;
 
-> Consist of a real part and imaginary part.
+*   no variable or argument declarations are necessary.
 
-## Boolean is a subtype of integer in Python.🤷‍♂️
+### Installing Python:
 
-> If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…
+### Windows
 
-> Than I am sure you will find the means to suspend your disbelief.
+To determine if your Windows computer already has Python 3:
 
-# KEEP IN MIND:
+1.  Open a command prompt by entering command prompt in the Windows 10 search box and selecting the Command Prompt App in the Best match section of the results.
 
-> **The i is switched to a j in programming.**
+2.  Enter the following command and then select the Enter key:
 
-T*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space **when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
+3.  ConsoleCopy
 
-*   **Type Casting** : The process of converting one number to another.
+python --version
 
-**The arithmetic operators are the same between JS and Python, with two additions:**
+1.  Running python --version may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.
 
-*   *“\*\*” : Double asterisk for exponent.*
+2.  If you see the word Python with a set of numbers separated by . characters, some version of Python is installed. 
 
-*   *“//” : Integer Division.*
+#### i.e.
 
-*   **There are no spaces between math operations in Python.**
+> Python 3.8.0
 
-*   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
+**As long as the first number is 3**, you have Python 3 installed.
 
-*   **There are no ++ and -- in Python, the only shorthand operators are:**
-
-# Strings
-
-*   Python uses both single and double quotes.
-
-*   You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
-
-*   Multiline strings use triple quotes.
-
-**Use the len() function to get the length of a string.**
-
-# **Python uses zero-based indexing**
-
-## Python allows negative indexing (thank god!)
-
-*   Python let’s you use ranges
-
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
-
-*   The end range is exclusive just like slice in JS.
-
-<!---->
-
-*   The index string function is the equiv. of indexOf() in JS
-
-<!---->
-
-*   The count function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
-
-<!---->
-
-*   **You can use + to concatenate strings, just like in JS.**
-
-*   **You can also use “\*” to repeat strings or multiply strings.**
-
-*   **Use the format() function to use placeholders in a string to input values later on.**
-
-<!---->
-
-*   *Shorthand way to use format function is:
-    *print(f'Your name is {first_name} {last_name}')
-
-## Some useful string methods.
-
-*   **Note that in JS join is used on an Array, in Python it is used on String.**
-
-<!---->
-
-*   There are also many handy testing methods.
-
-# Variables and Expressions
-
-*   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
-
-*   Duck Typing is the fundamental approach of Python.
-
-*   Assignment of a value automatically declares a variable.
-
-<!---->
-
-*   ***You can chain variable assignments to give multiple var names the same value.***
-
-## Use with caution as this is highly unreadable
-
-## The value and type of a variable can be re-assigned at any time.
-
-*   *NaN does not exist in Python, but you can 'create' it like so:
-    **print(float("nan"))***
-
-*   *Python replaces null with none.*
-
-*   ***none is an object** and can be directly assigned to a variable.*
-
-> Using none is a convenient way to check to see why an action may not be operating correctly in your program.
-
-# Boolean Data Type
-
-*   One of the biggest benefits of Python is that it reads more like English than JS does.
-
-<!---->
-
-*   By default, Python considers an object to be true UNLESS it is one of the following:
-
-*   Constant None or False
-
-*   Zero of any numeric type.
-
-*   Empty Sequence or Collection.
-
-*   True and False must be capitalized
-
-# Comparison Operators
-
-*   Python uses all the same equality operators as JS.
-
-*   In Python, equality operators are processed from left to right.
-
-*   Logical operators are processed in this order:
-
-1.  **NOT**
-
-2.  **AND**
-
-3.  **OR**
-
-> Just like in JS, you can use parentheses to change the inherent order of operations.
+> Download Page: 
 >
-> **Short Circuit** : Stopping a program when a true or false has been reached.
+> <https://www.python.org/downloads/release/python-395/>
 
-# Identity vs Equality
-
-*   In the Python community it is better to use is and is not over == or !=
-
-# If Statements
-
-> Remember the order of elif statements matter.
-
-# While Statements
-
-*   Break statement also exists in Python.
-
-<!---->
-
-*   As are continue statements
-
-# Try/Except Statements
-
-*   Python equivalent to try/catch
-
-<!---->
-
-*   You can name an error to give the output more specificity.
-
-<!---->
-
-*   You can also use the pass commmand to by pass a certain error.
-
-<!---->
-
-*   The pass method won't allow you to bypass every single error so you can chain an exception series like so:
-
-<!---->
-
-*   You can use an else statement to end a chain of except statements.
-
-<!---->
-
-*   finally is used at the end to clean up all actions under any circumstance.
-
-<!---->
-
-*   Using duck typing to check to see if some value is able to use a certain method.
-
-# Pass
-
-*   Pass Keyword is required to write the JS equivalent of :
-
-# Functions
-
-*   **Function definition includes:**
-
-*   **The def keyword**
-
-*   **The name of the function**
-
-*   **A list of parameters enclosed in parentheses.**
-
-*   **A colon at the end of the line.**
-
-*   **One tab indentation for the code to run.**
-
-*   **You can use default parameters just like in JS**
-
-## **Keep in mind, default parameters must always come after regular parameters.**
-
-*   *You can specify arguments by name without destructuring in Python.*
-
-<!---->
-
-*   The lambda keyword is used to create anonymous functions and are supposed to be one-liners.
-
-toUpper = lambda s: s.upper()
-
-# Notes
-
-## Formatted Strings
-
-> Remember that in Python join() is called on a string with an array/list passed in as the argument.
-> Python has a very powerful formatting engine.
-> format() is also applied directly to strings.
-
-# Comma Thousands Separator
-
-# Date and Time
-
-# Percentage
-
-# Data Tables
-
-**Python can be used to display html, css, and JS.**
-*It is common to use Python as an API (Application Programming Interface)*
-
-## Structured Data
-
-## Sequence : The most basic data structure in Python where the index determines the order.
-
-> List
-> Tuple
-> Range
-> Collections : Unordered data structures, hashable values.
-
-## Dictionaries&#xA;Sets
-
-## Iterable : Generic name for a sequence or collection; any object that can be iterated through.
-
-## Can be mutable or immutable.&#xA;Built In Data Types
-
-# Lists are the python equivalent of arrays.
-
-# You can instantiate
-
-## Test if a value is in a list.
-
-## Instantiated with parentheses
-
-## Sometimes instantiated without
-
-## Tuple() built in can be used to convert other data into a tuple
-
-## Ranges : A list of numbers which can’t be changed; often used with for loops.
-
-**Declared using one to three parameters**.
-
-> Start : opt. default 0, first # in sequence.
-> Stop : required next number past the last number in the sequence.
-> Step : opt. default 1, difference between each number in the sequence.
-
-## Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.
-
-## Mutable.
-
-***Declared with curly braces of the built in dict()***
-
-> *Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.*
-
-**Use the in operator to see if a key exists in a dictionary.**
-
-S**ets : Unordered collection of distinct objects; objects that need to be hashable.**
-
-> *Always be unique, duplicate items are auto dropped from the set.*
-
-## Common Uses:
-
-> Removing Duplicates
-> Membership Testing
-> Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.
-
-**Standard Set is mutable, Python has a immutable version called frozenset.
-Sets created by putting comma seperated values inside braces:**
-
-## Also can use set constructor to automatically put it into a set.
-
-**filter(function, iterable) : creates new iterable of the same type which includes each item for which the function returns true.**
-
-**map(function, iterable) : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.**
-
-**sorted(iterable, key=None, reverse=False) : creates a new sorted list from the items in the iterable.**
-
-**Output is always a list**
-
-**key: opt function which coverts and item to a value to be compared.**
-
-**reverse: optional boolean.**
-
-**enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
-
-## (0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)
-
-## (1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)
-
-> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.
-> Functions that analyze iterable
-
-**len(iterable) : returns the count of the number of items.**
-
-**max(\*args, key=None) : returns the largest of two or more arguments.**
-
-**max(iterable, key=None) : returns the largest item in the iterable.**
-
-*key optional function which converts an item to a value to be compared.
-min works the same way as max*
-
-**sum(iterable) : used with a list of numbers to generate the total.**
-
-*There is a faster way to concatenate an array of strings into one string, so do not use sum for that.*
-
-**any(iterable) : returns True if any items in the iterable are true.**
-
-**all(iterable) : returns True is all items in the iterable are true.**
-
-# Working with dictionaries
-
-**dir(dictionary) : returns the list of keys in the dictionary.
-Working with sets**
-
-**Union : The pipe | operator or union(\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.**
-
-## Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.
-
-**Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.**
-
-# **For Statements&#xA;In python, there is only one for loop.**
-
-Always Includes:
-
-> 1\. The for keyword
-> 2\. A variable name
-> 3\. The ‘in’ keyword
-> 4\. An iterable of some kid
-> 5\. A colon
-> 6\. On the next line, an indented block of code called the for clause.
-
-**You can use break and continue statements inside for loops as well.**
-
-**You can use the range function as the iterable for the for loop.**
-
-***Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.***
-
-**You can loop and destructure at the same time.**
-
-> Prints 1, 2
+> Download Link: 
 >
-> Prints 3, 4
+> <https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe>
+
+
+
+
+### Install Jupyter Notebooks:
+
+### pip
+
+If you use pip, you can install it with:
+
+If installing using pip install --user, you must add the user-level bin directory to your PATH environment variable in order to launch jupyter lab. If you are using a Unix derivative (FreeBSD, GNU / Linux, OS X), you can achieve this by using export PATH="$HOME/.local/bin:$PATH" command.
+
+### pipenv
+
+If you use pipenv, you can install it as:
+
+or from a git checkout:
+
+When using pipenv, in order to launch jupyter lab, you must activate the project’s virtualenv. For example, in the directory where pipenv’s Pipfile and Pipfile.lock live (i.e., where you ran the above commands):
+
+Alternatively, you can run jupyter lab inside the virtualenv with
+
+[Jupyter Notebook Viewer](https://nbviewer.jupyter.org/github/bgoonz/Jupyter-Notebooks/tree/master/)
+
+### Python Syntax
+
+Python syntax was made for readability, and easy editing. For example, the python language uses a : and indented code, while javascript and others generally use {} and indented code.
+
+### First Program
+
+Lets create a [python 3](https://repl.it/languages/python3) repl, and call it *Hello World*. Now you have a blank file called *main.py*. Now let us write our first line of code:
+
+> *Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.*
+
+Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
+
+### Command Line
+
+If you look to your left at the console where hello world was just printed, you can see a >, >>>, or $ depending on what you are using. After the prompt, try typing a line of code.
+
+The command line allows you to execute single lines of code at a time. It is often used when trying out a new function or method in the language.
+
+### New: Comments!
+
+Another cool thing that you can generally do with all languages, are comments. In python, a comment starts with a #. The computer ignores all text starting after the #.
+
+\# Write some comments!
+
+If you have a huge comment, do **not** comment all the 350 lines, just put ''' before it, and ''' at the end. Technically, this is not a comment but a string, but the computer still ignores it, so we will use it.
+
+
+
+
+### New: Variables!
+
+Unlike many other languages, there is no var, let, or const to declare a variable in python. You simply go name = 'value'.
+
+Remember, there is a difference between integers and strings. *Remember: String = "".* To convert between these two, you can put an int in a str() function, and a string in a int() function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the float() command.
+
+
+
+
+<https://repl.it/@bgoonz/second-scr?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com>
+
+
+
+
+Instead of using the , in the print function, you can put a + to combine the variables and string.
+
+### Operators
+
+There are many operators in python:
+
+*   \+
+
+*   \-
+
+*   /
+
+*   \*
+    These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
+    Now, we can look at a few more complicated ones:
+
+*simpleops.py*
+
+You should already know everything shown above, as it is similar to other languages. If you continue down, you will see more complicated ones.
+
+*complexop.py*
+
+The ones above are to edit the current value of the variable.
+Sorry to JS users, as there is no i++; or anything.
+
+### *Fun Fact:&#xA;The python language was named after Monty Python.*
+
+If you really want to know about the others, view [Py Operators](https://www.tutorialspoint.com/python/python_basic_operators.htm)
+
+### More Things With Strings
+
+Like the title?
+Anyways, a ' and a " both indicate a string, but **do not combine them!**
+
+*quotes.py*
+
+*slicing.py*
+
+### String Slicing
+
+You can look at only certain parts of the string by slicing it, using \[num:num].
+The first number stands for how far in you go from the front, and the second stands for how far in you go from the back.
+
+### Methods and Functions
+
+Here is a list of functions/methods we will go over:
+
+*   .strip()
+
+*   len()
+
+*   .lower()
+
+*   .upper()
+
+*   .replace()
+
+*   .split()
+
+
+
+
+
+
+
+### New: Input()
+
+Input is a function that gathers input entered from the user in the command line. It takes one optional parameter, which is the users prompt.
+
+*inp.py*
+
+If you wanted to make it smaller, and look neater to the user, you could do…
+
+*inp2.py*
+
+Running:
+*inp.py*
+
+*inp2.py*
+
+### New: Importing Modules
+
+Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write input \<modulename>. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
+
+*module.py*
+
+Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do \<module>.\<function>. For example:
+
+*module2.py*
+
+> *Pro Tip:
+> Do from random import randint to not have to do random.randint(), just randint()
+> To import all functions from a module, you could do from random import **
+
 >
-> Prints 5, 6
+>
 
-**You can use values() and keys() to loop over dictionaries.**
+### New: Loops!
 
-*Prints red*
+Loops allow you to repeat code over and over again. This is useful if you want to print Hi with a delay of one second 100 times.
 
-*Prints 42*
+#### for Loop
 
-*Prints color*
+The for loop goes through a list of variables, making a seperate variable equal one of the list every time.
+Let’s say we wanted to create the example above.
 
-*Prints age*
+*loop.py*
 
-**For loops can also iterate over both keys and values.**
+This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
 
-**Getting tuples**
+*loop2.py*
 
-*Prints (‘color’, ‘red’)*
+<https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn>
 
-*Prints (‘age’, 42)*
+#### while Loop
 
-*Destructuring to values*
+The while loop runs the code while something stays true. You would put while \<expression>. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:
 
-*Prints Key: age Value: 42*
+*while.py*
 
-*Prints Key: color Value: red*
+Or you could do:
 
-**Looping over string**
+*while2.py*
 
-**When you order arguments within a function or function call, the args need to occur in a particular order:**
+### New: if Statement
 
-*formal positional args.*
+The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes **only once**. An if statement is written:
 
-\*args
+*if.py*
 
-*keyword args with default values*
+Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an elif statement:
 
-\*\*kwargs
+*elif.py*
 
-# **Importing in Python**
+Now, you may wonder how to run code if none work. Well, there is a simple statement called else:
 
-**Modules are similar to packages in Node.js**
-Come in different types:
+*else.py*
 
-Built-In,
+### New: Functions (def)
 
-Third-Party,
+So far, you have only seen how to use functions other people have made. Let use the example that you want to print the a random number between 1 and 9, and print different text every time.
+It is quite tiring to type:
 
-Custom.
+Characters: 389
 
-**All loaded using import statements.**
+*nofunc.py*
 
-# **Terms**
+Now with functions, you can seriously lower the amount of characters:
 
-> module : Python code in a separate file.
-> package : Path to a directory that contains modules.
-> [**init.py**](http://init.py/) : Default file for a package.
-> submodule : Another file in a module’s folder.
-> function : Function in a module.
+Characters: 254
 
-**A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
+*functions.py*
 
-*Try to avoid importing with wildcards in Python.*
+### Project Based Learning:
 
-*Use multiple lines for clarity when importing.*
+The following is a modified version of a tutorial posted By: [InvisibleOne ](https://replit.com/@InvisibleOne)
 
-# Watching Out for Python 2
+I would cite the original tutorial it’s self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it. 
 
-**Python 3 removed <> and only uses !=**
 
-**format() was introduced with P3**
 
-**All strings in P3 are unicode and encoded.
-md5 was removed.**
 
-**ConfigParser was renamed to configparser
-sets were killed in favor of set() class.**
 
-## **print was a statement in P2, but is a function in P3.**
 
-# Topics revisited (in python syntax)
 
-# Cheat Sheet:
+### 1. Adventure Story
 
-## If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+The first thing you need with an adventure story is a great storyline, something that is exciting and fun. The idea is, that at each pivotal point in the story, you give the player the opportunity to make a choice.
+First things first, let’s import the stuff that we need, like this:
 
-[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+Now, we need some variables to hold some of the player data.
 
-Or Checkout my personal Resource Site:
+Ok, now we have the player’s name and nickname, let’s welcome them to the game
 
-# Python Cheat Sheet:
+Now for the story. The most important part of all stories is the introduction, so let’s print our introduction
 
-# If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+Now, we’ll give the player their first choice
+
+There you have it, a pretty simple choose your own ending story. You can make it as complex or uncomplex as you like.
+
+### 2. TEXT ENCODER
+
+Ever make secret messages as a kid? I used to. Anyways, here’s the way you can make a program to encode messages! It’s pretty simple. First things first, let’s get the message the user wants to encode, we’ll use input() for that:
+
+Now we need to split that string into a list of characters, this part is a bit more complicated.
+
+Now we need to convert the characters into code, well do this with a for loop:
+
+Once we’ve encoded the text, we’ll print it back for the user
+
+And if you want to decode something, it is this same process but in reverse!
+
+### 3. Guess my Number
+
+Number guessing games are fun and pretty simple, all you need are a few loops. To start, we need to import random.
+
+That is pretty simple. Now we’ll make a list with the numbers were want available for the game
+
+Next, we get a random number from the list
+
+Now, we need to ask the user for input, we’ll to this with a while loop
+
+Have fun with this!
+
+### 4. Notes
+
+Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it ‘notes.txt’
+Now, to open a file in python we use open(‘filename’, type) The type can be ‘r’ for read, or ‘w’ for write. There is another option, but we won’t be using that here. Now, the first thing we are going to do is get what the user would like to save:
+
+Now we’ll open our file and save that text
+
+There we go, now the information is in the file. Next, we’ll retrieve it
+
+There we go, that’s how you can open files and close files with python
+
+### 5. Random Dare Generator
+
+Who doesn’t love a good dare? Here is a program that can generate random dares. The first thing we’ll need to do is as always, import random. Then we’ll make some lists of dares
