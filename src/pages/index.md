@@ -203,27 +203,4 @@ sections:
     type: section_hero
     image: >-
       images/screencapture-gist-github-bgoonz-894d714a116f2ed23f2474882c71abbf-2021-06-03_16_57_221024_2.png
-  - title: Musical Persuits
-    section_id: guitar
-    image_alt: bryan-guner
-    image_position: center
-    content: >
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
-      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      actions: []
-    type: section_content
-  - section_id: cta
-    type: section_cta
-    title: Contact Me!
-    subtitle: This is an optional description for the call to action block.
-    actions:
-      - label: Contact Me
-        url: 'mailto:bryan.guner@gmail.com'
-        style: primary
-seo:
-  title: Stackbit Web-Dev-HubTheme
-  description: The preview of the Web-Dev-Hubtheme
-  extra:
-    - name: 'og:type'
+  
