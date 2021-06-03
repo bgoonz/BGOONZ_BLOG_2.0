@@ -664,3 +664,4 @@ models:
     label: htmlpage
     description: html content
     folder: html
+    match: '*.html'
