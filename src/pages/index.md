@@ -30,6 +30,7 @@ sections:
               https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             style: link
         image: images/fierce-sun.png
+        image_alt: python
       - content: >
           #
           Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/square-cedar.png)
