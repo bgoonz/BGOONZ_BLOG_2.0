@@ -178,11 +178,10 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: >
-      \<iframe width="100%" height="500px"
-      src="https://stackblitz.com/edit/sdk-github-project-earatb?devtoolsheight=33\&embed=1\&file=index.ts\&theme=dark"
-      title="Embeddable Code Playground" frameborder="0" allow="accelerometer;
-      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>\</iframe>
+      \<iframe width="560" height="315"
+      src="https://stackblitz.com/edit/sdk-github-project-earatb?devtoolsheight=33\&embed=1\&file=index.ts" title="YouTube video
+      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Musical Persuits
