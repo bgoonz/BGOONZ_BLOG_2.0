@@ -103,7 +103,7 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-  - title: lorem-ipsum
+  - title: Portfolio
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
