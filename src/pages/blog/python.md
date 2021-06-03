@@ -31,13 +31,9 @@ template: post
 ---
 # Python Study Guide for a JavaScript Programmer&#xA;
 
+![](https://miro.medium.com/max/1970/1\*3V9VOfPk_hrFdbEAd3j-QQ.png)![](https://miro.medium.com/max/52/0\*eC4EvZcv6hhH88jX.png?q=20)![](https://miro.medium.com/max/647/0\*eC4EvZcv6hhH88jX.png)![](https://miro.medium.com/max/60/0\*Ez\_1PZ93N4FfvkRr.png?q=20)![](https://miro.medium.com/max/608/0\*Ez\_1PZ93N4FfvkRr.png)![](https://miro.medium.com/max/60/0\*eE3E5H0AoqkhqK1z.png?q=20)![](https://miro.medium.com/max/1648/0\*eE3E5H0AoqkhqK1z.png)![](https://miro.medium.com/max/60/0\*Q0CMqFd4PozLDFPB.png?q=20)![](https://miro.medium.com/max/1638/0\*Q0CMqFd4PozLDFPB.png)![](https://miro.medium.com/max/3216/0\*HQpndNhm1Z_xSoHb.png)![](https://miro.medium.com/max/60/0\*qHzGRLTOMTf30miT.png?q=20)![](https://miro.medium.com/max/1614/0\*qHzGRLTOMTf30miT.png)\[
 
-
-
-![](https://miro.medium.com/max/1970/1\*3V9VOfPk_hrFdbEAd3j-QQ.png)![](https://miro.medium.com/max/52/0\*eC4EvZcv6hhH88jX.png?q=20)![](https://miro.medium.com/max/647/0\*eC4EvZcv6hhH88jX.png)![](https://miro.medium.com/max/60/0\*Ez\_1PZ93N4FfvkRr.png?q=20)![](https://miro.medium.com/max/608/0\*Ez\_1PZ93N4FfvkRr.png)![](https://miro.medium.com/max/60/0\*eE3E5H0AoqkhqK1z.png?q=20)![](https://miro.medium.com/max/1648/0\*eE3E5H0AoqkhqK1z.png)![](https://miro.medium.com/max/60/0\*Q0CMqFd4PozLDFPB.png?q=20)![](https://miro.medium.com/max/1638/0\*Q0CMqFd4PozLDFPB.png)![](https://miro.medium.com/max/3216/0\*HQpndNhm1Z_xSoHb.png)![](https://miro.medium.com/max/60/0\*qHzGRLTOMTf30miT.png?q=20)![](https://miro.medium.com/max/1614/0\*qHzGRLTOMTf30miT.png)[
-
-
-](https://github.com/bgoonz)
+]\(https://github.com/bgoonz)
 
 # Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
 
@@ -79,7 +75,7 @@ No Decimal Point
 
 > **The i is switched to a j in programming.**
 
-T*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space **when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
+T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \**when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
 
 *   **Type Casting** : The process of converting one number to another.
 
@@ -133,8 +129,8 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 <!---->
 
-*   *Shorthand way to use format function is:
-    *print(f'Your name is {first_name} {last_name}')
+*   \*Shorthand way to use format function is:
+    \*print(f'Your name is {first_name} {last_name}')
 
 ## Some useful string methods.
 
