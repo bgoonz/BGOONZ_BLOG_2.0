@@ -28,6 +28,7 @@ seo:
       value: images/2.jpg
       relativeUrl: true
 template: post
+title: P
 ---
 # Python Study Guide for a JavaScript Programmer&#xA;
 
