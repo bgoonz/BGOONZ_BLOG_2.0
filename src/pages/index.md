@@ -85,7 +85,7 @@ sections:
         actions: []
         type: grid_item
   - title: Current Interests
-    section_id: lorem-ipsum
+    section_id: interests
     subtitle: From github repositories to existential questions.
     col_number: three
     grid_items:
