@@ -667,6 +667,6 @@ models:
     match: '*.html'
     fields:
       - name: iframe
-        type: string
+        type: url
         description: iframe inclusions
         readOnly: true
