@@ -29,6 +29,7 @@ seo:
       relativeUrl: true
 template: post
 title: Python Resources
+thumb_image: images/violet-pluto.png
 ---
 # Python Study Guide for a JavaScript Programmer&#xA;
 
