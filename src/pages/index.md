@@ -202,7 +202,7 @@ sections:
         type: action
     type: section_hero
     image: >-
-      images/screencapture-gist-github-bgoonz-894d714a116f2ed23f2474882c71abbf-2021-06-03_16_57_221024_1.png
+      images/screencapture-gist-github-bgoonz-894d714a116f2ed23f2474882c71abbf-2021-06-03_16_57_221024_2.png
   - title: Musical Persuits
     section_id: guitar
     image_alt: bryan-guner
