@@ -668,3 +668,4 @@ models:
     fields:
       - name: iframe
         type: string
+        description: iframe inclusions
