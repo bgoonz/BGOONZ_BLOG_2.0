@@ -670,3 +670,4 @@ models:
         type: url
         description: iframe inclusions
         readOnly: true
+        required: true
