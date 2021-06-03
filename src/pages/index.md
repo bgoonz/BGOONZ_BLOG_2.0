@@ -187,7 +187,7 @@ sections:
     section_id: guitar
     image_alt: bryan-guner
     image_position: center
-    content: >
+    content: >-
       <iframe width="560" height="315"
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
