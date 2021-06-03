@@ -211,5 +211,6 @@
         ]
     },
     "title": "webdevhub",
-    "domain": "https://best-celery-b2d7c.netlify.app"
+    "domain": "https://best-celery-b2d7c.netlify.app",
+    "favicon": "images/magnificent-maple.ico"
 }
