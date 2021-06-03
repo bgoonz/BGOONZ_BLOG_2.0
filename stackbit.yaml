@@ -43,7 +43,7 @@ models:
           - green
           - navy
           - violet
-        default: blue
+        default: 8F1500
         required: true
       - type: model
         name: header
