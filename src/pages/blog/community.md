@@ -30,6 +30,7 @@ seo:
 template: post
 title: Python Resources
 thumb_image: images/violet-pluto.png
+thumb_image_alt: python logo
 ---
 # Python Study Guide for a JavaScript Programmer&#xA;
 
