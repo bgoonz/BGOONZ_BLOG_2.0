@@ -212,6 +212,10 @@ sections:
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+https://stackblitz.com/edit/sdk-github-project-earatb?devtoolsheight=33\&embed=1\&file=index.ts
+
+
     actions: []
     type: section_content
   - section_id: cta
