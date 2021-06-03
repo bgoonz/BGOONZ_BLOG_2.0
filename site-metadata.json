@@ -149,7 +149,7 @@
                 "icon_class": "dev",
                 "new_window": true,
                 "no_follow": false,
-                "has_subnav": false,
+                "has_subnav": true,
                 "subnav_links": [],
                 "type": "action_menu",
                 "label": "Portfolio"
