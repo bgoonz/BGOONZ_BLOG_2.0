@@ -1,6 +1,6 @@
 ---
 date: '2019-05-27'
-image: images/2.jpg
+image: images/space.gif
 seo:
   title: Community Round-up
   description: Commodo ante vis placerat interdum massa massa primis
