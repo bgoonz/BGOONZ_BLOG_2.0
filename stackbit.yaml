@@ -665,3 +665,6 @@ models:
     description: html content
     folder: html
     match: '*.html'
+    fields:
+      - name: ''
+        type: string
