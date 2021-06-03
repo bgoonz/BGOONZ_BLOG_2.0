@@ -173,7 +173,7 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-  - title: Portfolio
+  - title: Embadable Content
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
