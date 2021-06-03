@@ -1,9 +1,6 @@
 ---
 title: Medium Articles
-excerpt: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ac ut consequat semper viverra
-  nam libero justo laoreet sit.
+excerpt: A list of my medium articles!
 date: '2021-05-23'
 thumb_image: images/medium.png
 image: images/medium.png
