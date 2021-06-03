@@ -17,10 +17,7 @@ sections:
             url: /docs
             style: link
       - content: >
-          # Python Study Guide for a JavaScript Programmer&#xA;&#xA;
-
-
-          [*Python has a built in help function that let’s you see a description
+          # Python Study Guide for a JavaScript Programmer&#xA;&#xA;  [*Python has a built in help function that let’s you see a description
           of the source code without having to navigate to it… “-SickNasty …
           Autor
           Unknown”*](https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb)
@@ -33,10 +30,7 @@ sections:
         image_alt: python
       - content: >
           #
-          Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/square-cedar.png)
-
-
-          [This section exists for me to day dream ideas for the future... and
+          Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/square-cedar.png)  [This section exists for me to day dream ideas for the future... and
           maybe... just maybe, hold myself accountable to
           them.](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
         actions:
@@ -46,14 +40,8 @@ sections:
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
-          # Beginner’s Guide To React Part 2
-
-
-          ![](https://preview--best-celery-b2d7c.stackbit.dev/\_static/app-assets/react.gif)
-
-
-
-          [As I learn to build web applications in React I will blog about it in
+          # Beginner’s Guide To React Part 2  ![](https://preview--best-celery-b2d7c..dev/\_static/app-assets/react.gif)
+  [As I learn to build web applications in React I will blog about it in
           this series in an attempt to capture the questions that a complete
           beginner might encounter that a more seasoned developer would take for
           granted!](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186)
@@ -68,16 +56,7 @@ sections:
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
-          # My Medium Blog
-
-
-          ![](/\_static/app-assets/oval-robin.png)
-
-
-          ![](/\_static/app-assets/posts1.png)
-
-
-          [PostgreSQL Cheat Sheet, Everything You Need to Get Started With
+          # My Medium Blog  ![](/\_static/app-assets/oval-robin.png)  ![](/\_static/app-assets/posts1.png)  [PostgreSQL Cheat Sheet, Everything You Need to Get Started With
           VSCode + Extensions & Resources, Super Simple Intro To HTML, 
           Understanding Git... etc....
 
@@ -93,14 +72,8 @@ sections:
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
+          ## Lorem ipsum  Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.  - Lorem ipsum
 
           - dolor sit amet
         actions: []
@@ -109,14 +82,8 @@ sections:
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
+          ## Lorem ipsum  Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.  - Lorem ipsum
 
           - dolor sit amet
         actions: []
@@ -125,14 +92,8 @@ sections:
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
+          ## Lorem ipsum  Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.  - Lorem ipsum
 
           - dolor sit amet
         actions: []
@@ -141,14 +102,8 @@ sections:
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
+          ## Lorem ipsum  Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.  - Lorem ipsum
 
           - dolor sit amet
         actions: []
@@ -215,14 +170,14 @@ sections:
         url: "mailto:bryan.guner@gmail.com"
         style: primary
 seo:
-  title: Stackbit Web-Dev-HubTheme
+  title:  Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
   extra:
     - name: "og:type"
       value: website
       keyName: property
     - name: "og:title"
-      value: Stackbit Web-Dev-HubTheme
+      value:  Web-Dev-HubTheme
       keyName: property
     - name: "og:description"
       value: The preview of the Web-Dev-Hubtheme
@@ -234,7 +189,7 @@ seo:
     - name: "twitter:card"
       value: summary_large_image
     - name: "twitter:title"
-      value: Stackbit Web-Dev-HubTheme
+      value:  Web-Dev-HubTheme
     - name: "twitter:description"
       value: The preview of the Web-Dev-Hubtheme
     - name: "twitter:image"
