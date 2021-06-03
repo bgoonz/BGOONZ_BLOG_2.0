@@ -662,3 +662,4 @@ models:
   htmlpage:
     type: data
     label: htmlpage
+    description: html content
