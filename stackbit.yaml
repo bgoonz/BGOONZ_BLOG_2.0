@@ -666,5 +666,5 @@ models:
     folder: html
     match: '*.html'
     fields:
-      - name: ''
+      - name: iframe
         type: string
