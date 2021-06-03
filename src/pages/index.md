@@ -179,8 +179,8 @@ sections:
     image_position: left
     content: >
       \<iframe width="100%" height="500px"
-      src="https://code-playground.netlify.app/" title="Embeddable Code
-      Playground" frameborder="0" allow="accelerometer; autoplay;
+      src="https://code-playground.netlify.app/index.html" title="Embeddable
+      Code Playground" frameborder="0" allow="accelerometer; autoplay;
       clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>\</iframe>
     actions: []
