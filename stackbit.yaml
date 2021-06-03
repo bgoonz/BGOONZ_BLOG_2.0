@@ -669,3 +669,4 @@ models:
       - name: iframe
         type: string
         description: iframe inclusions
+        readOnly: true
