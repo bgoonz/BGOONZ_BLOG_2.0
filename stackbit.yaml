@@ -663,3 +663,4 @@ models:
     type: data
     label: htmlpage
     description: html content
+    folder: html
