@@ -659,3 +659,6 @@ models:
             - type: boolean
               name: relativeUrl
               label: Relative Url
+  htmlpage:
+    type: data
+    label: htmlpage
