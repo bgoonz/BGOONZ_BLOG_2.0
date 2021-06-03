@@ -188,7 +188,7 @@ sections:
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
-    content: |
+    content: >-
        <iframe width="800" height="575"
       src="https://code-playground.netlify.app/" title="YouTube video
       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
