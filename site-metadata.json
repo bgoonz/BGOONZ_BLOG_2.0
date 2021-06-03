@@ -100,7 +100,17 @@
                 "new_window": true,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [],
+                "subnav_links": [
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
                 "type": "action_menu",
                 "url": "https://lambda-static-landing.netlify.app/"
             },
