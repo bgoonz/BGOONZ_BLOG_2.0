@@ -664,9 +664,11 @@ models:
     label: htmlpage
     description: html content
     folder: html
-    match: '*.html'
+    match:
+      - '*.html'
     fields:
       - name: iframe
         type: url
         description: iframe inclusions
         required: true
+        label: Iframe
