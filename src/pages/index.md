@@ -4,7 +4,7 @@ sections:
   - section_id: hero
     type: section_hero
     title: I am a musician/electrical engineer turned web developer
-    image: images/cube.gif
+    image: images/3.jpg
     content: "###### **A passionate frontend developer from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
     actions: []
   - section_id: features
@@ -173,36 +173,14 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-  - title: Embeds
+  - title: Portfolio
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
+    content: |
+      *
     actions: []
     type: section_content
-  - title: lorem-ipsum
-    section_id: react cheat sheet
-    content: >-
-      ## Lorem ipsum
-
-
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-      - Lorem ipsum
-
-      - dolor sit amet
-    actions:
-      - label: lorem-ipsum
-        url: '#'
-        style: link
-        icon_class: dev
-        new_window: false
-        no_follow: false
-        type: action
-    type: section_hero
-    image: >-
-      images/screencapture-gist-github-bgoonz-894d714a116f2ed23f2474882c71abbf-2021-06-03_16_57_221024_2.png
   - title: Musical Persuits
     section_id: guitar
     image_alt: bryan-guner
@@ -210,17 +188,6 @@ sections:
     content: >
       <iframe width="560" height="315"
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
-      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
-  - title: Embed Git Repo Stackblitz
-    section_id: Embed Git Repo Stackblitz
-    image_alt: Embed Git Repo Stackblitz
-    image_position: left
-    content: >
-    <iframe width="560" height="315"
-      src="https://stackblitz.com/edit/sdk-github-project-earatb?devtoolsheight=33&embed=1&file=index.ts&theme=dark" title="YouTube video
       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
@@ -261,4 +228,3 @@ seo:
       relativeUrl: true
 template: advanced
 ---
-https://stackblitz.com/edit/sdk-github-project-earatb?devtoolsheight=33\&embed=1\&file=index.ts
