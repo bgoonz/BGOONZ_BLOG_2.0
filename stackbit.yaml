@@ -144,6 +144,7 @@ models:
           slug representing the section.
         items:
           type: string
+    description: my documentation collection
   docs:
     type: page
     urlPath: /docs/{slug}
