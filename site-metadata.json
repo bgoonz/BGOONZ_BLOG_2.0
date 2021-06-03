@@ -153,7 +153,8 @@
                 "subnav_links": [],
                 "type": "action_menu"
             }
-        ]
+        ],
+        "url": "WebDevHub"
     },
     "footer": {
         "has_social": true,
