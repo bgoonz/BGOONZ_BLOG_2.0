@@ -227,26 +227,3 @@ seo:
   description: The preview of the Web-Dev-Hubtheme
   extra:
     - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Stackbit Web-Dev-HubTheme
-      keyName: property
-    - name: 'og:description'
-      value: The preview of the Web-Dev-Hubtheme
-      keyName: property
-    - name: 'og:image'
-      value: images/4.jpg
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:card'
-      value: summary_large_image
-    - name: 'twitter:title'
-      value: Stackbit Web-Dev-HubTheme
-    - name: 'twitter:description'
-      value: The preview of the Web-Dev-Hubtheme
-    - name: 'twitter:image'
-      value: images/4.jpg
-      relativeUrl: true
-template: advanced
----
