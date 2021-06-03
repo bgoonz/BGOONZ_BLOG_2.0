@@ -84,6 +84,12 @@ sections:
           ](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
         actions: []
         type: grid_item
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    subtitle: lorem-ipsum
+    col_number: three
+    grid_items: []
+    type: section_grid
   - section_id: features-two-col
     type: section_grid
     title: Resume & Portfolio
