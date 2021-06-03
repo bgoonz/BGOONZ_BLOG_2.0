@@ -178,7 +178,9 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |
-      *
+
+
+      #### Content:
     actions: []
     type: section_content
   - title: Musical Persuits
