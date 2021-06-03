@@ -84,7 +84,7 @@ sections:
           ](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
         actions: []
         type: grid_item
-  - title: lorem-ipsum
+  - title: Current Interests
     section_id: lorem-ipsum
     subtitle: lorem-ipsum
     col_number: three
