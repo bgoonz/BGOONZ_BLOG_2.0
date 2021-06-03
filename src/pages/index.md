@@ -214,9 +214,9 @@ sections:
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
+  - title: Embed Git Repo Stackblitz
+    section_id: Embed Git Repo Stackblitz
+    image_alt: Embed Git Repo Stackblitz
     image_position: left
     content: >
     <iframe width="560" height="315"
