@@ -160,7 +160,7 @@ sections:
           ![](/\_static/app-assets/iter.jpg)
         actions: []
         type: grid_item
-        title: Enviornment
+        title: Environment
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
