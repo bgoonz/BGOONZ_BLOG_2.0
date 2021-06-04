@@ -9,6 +9,7 @@ sections:
     type: section_docs
     col_number: three
     title: Data Structures
+    subtitle: Hi
   - section_id: cta
     type: section_cta
     title: Go To My Auxillary Blog
