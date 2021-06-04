@@ -164,17 +164,8 @@ sections:
       - title: Ice Hockey
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
+        content: |
+          ![](/\_static/app-assets/festive-dolphin.jpg)
         actions: []
         type: grid_item
     type: section_grid
