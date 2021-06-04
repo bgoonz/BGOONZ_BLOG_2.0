@@ -3,7 +3,6 @@
   "description": "webdevhub",
   "version": "0.0.1",
   "license": "MIT",
-  
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
