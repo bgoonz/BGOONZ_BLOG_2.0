@@ -238,7 +238,7 @@
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "Git Html Previewer",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
