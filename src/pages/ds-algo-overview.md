@@ -13,7 +13,7 @@ sections:
     title: Go To My Auxillary Blog
     actions:
       - label: Contact
-        url: /docs/getting-started
+        url: 'https://melodic-lettuce-8d58b.netlify.app/contact/'
         style: primary
 seo:
   title: ds-algo-Overview
