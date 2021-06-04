@@ -242,5 +242,3 @@ seo:
       relativeUrl: true
 template: advanced
 ---
-
-
