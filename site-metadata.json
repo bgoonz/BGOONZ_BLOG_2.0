@@ -103,7 +103,7 @@
                 "subnav_links": [
                     {
                         "label": "Projects",
-                        "url": "#",
+                        "url": "https://lambda-static-resources.netlify.app/1-projects/directory.html",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
