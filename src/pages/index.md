@@ -92,12 +92,12 @@ sections:
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >
-          ## Angolia Full Text Search
+        content: |
+          ## Full Text Search
 
+          [Full Text Search](https://www.algolia.com/)
 
-          ## [Full Text
-          Search](https://www.algolia.com/)&#xA;![](/\_static/app-assets/kind-lavender.png)
+          ## &#xA;![](/\_static/app-assets/kind-lavender.png)
         actions: []
         type: grid_item
       - title: lorem-ipsum
