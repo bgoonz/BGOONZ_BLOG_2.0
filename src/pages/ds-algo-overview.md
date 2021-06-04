@@ -4,7 +4,7 @@ sections:
   - section_id: hero
     type: section_hero
     title: Blog Overview
-    image: images/code.gif
+    image: images/square-tiger.gif
   - section_id: docs-ds-algo-Overview
     type: section_docs
     col_number: three
