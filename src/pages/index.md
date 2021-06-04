@@ -127,6 +127,7 @@ sections:
           ![](/\_static/app-assets/noo.PNG)
         actions: []
         type: grid_item
+        image: images/clever-mustard.gif
       - title: Guthrie Govan
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
