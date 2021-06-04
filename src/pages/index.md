@@ -161,7 +161,7 @@ sections:
         actions: []
         type: grid_item
         title: Environment
-      - title: lorem-ipsum
+      - title: Ice Hockey
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
