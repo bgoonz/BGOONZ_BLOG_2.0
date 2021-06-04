@@ -247,7 +247,7 @@
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "Python Practice",
                 "url": "#",
                 "style": "primary",
                 "icon_class": "dev",
