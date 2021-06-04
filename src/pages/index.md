@@ -111,7 +111,7 @@ sections:
 
         actions: []
         type: grid_item
-        image: images/kind-whale.gif
+        image: images/background.gif
       - title: Nootropics
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
