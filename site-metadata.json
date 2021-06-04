@@ -231,7 +231,7 @@
             {
                 "label": "My Medium Blog",
                 "url": "https://bryanguner.medium.com/",
-                "style": "link",
+                "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
                 "no_follow": false,
