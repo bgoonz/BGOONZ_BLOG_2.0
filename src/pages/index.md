@@ -69,10 +69,11 @@ sections:
           # My Medium Blog
 
 
-          ![](/\_static/app-assets/oval-robin.png)
+          ![](/\_static/app-assets/my-back.png)
 
 
-          ![](/\_static/app-assets/posts1.png)
+
+
 
 
           [PostgreSQL Cheat Sheet, Everything You Need to Get Started With
