@@ -129,17 +129,17 @@ sections:
       - title: Guthrie Govan
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: |+
+          ##
+
+          [Guthrie](https://www.youtube.com/watch?v=R2llLs4D5PA)
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
-          - Lorem ipsum
 
-          - dolor sit amet
+
+
         actions: []
         type: grid_item
       - title: lorem-ipsum
