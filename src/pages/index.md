@@ -92,17 +92,12 @@ sections:
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >
+          ## Angolia Full Text Search
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
+          ## [Full Text
+          Search](https://www.algolia.com/)&#xA;![](/\_static/app-assets/kind-lavender.png)
         actions: []
         type: grid_item
       - title: lorem-ipsum
@@ -188,11 +183,11 @@ sections:
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
-    content: >-
-     <iframe width="800" height="575"
-       src="https://code-playground.netlify.app/index.html" title="YouTube video
-       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    content: |-
+      <iframe width="800" height="575"
+        src="https://code-playground.netlify.app/index.html" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Musical Persuits
