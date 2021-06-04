@@ -222,7 +222,7 @@
             {
                 "label": "Old Blog",
                 "url": "https://lambda-resources.netlify.app/",
-                "style": "icon",
+                "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
