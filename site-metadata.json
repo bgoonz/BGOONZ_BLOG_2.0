@@ -229,7 +229,7 @@
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "My Medium Blog",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
