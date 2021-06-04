@@ -103,17 +103,12 @@ sections:
       - title: Convolutional Neural Networks
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >
+          Artificial neural networks, usually simply called neural networks, are
+          computing systems vaguely inspired by the biological neural networks
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
+          ![](/\_static/app-assets/neural-nets.jpg)
         actions: []
         type: grid_item
       - title: lorem-ipsum
