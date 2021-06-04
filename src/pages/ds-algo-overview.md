@@ -11,7 +11,6 @@ sections:
   - section_id: cta
     type: section_cta
     title: Go To My Auxillary Blog
-    subtitle: This is an optional description for the call to action block.
     actions:
       - label: Contact
         url: /docs/getting-started
