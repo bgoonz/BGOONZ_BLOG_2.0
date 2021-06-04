@@ -89,7 +89,7 @@ sections:
     subtitle: From github repositories to existential questions.
     col_number: three
     grid_items:
-      - title: lorem-ipsum
+      - title: Angolia
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: |
