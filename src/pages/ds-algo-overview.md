@@ -1,5 +1,5 @@
 ---
-title: ds-algo-Overview
+title: Data Structures
 sections:
   - section_id: hero
     type: section_hero
