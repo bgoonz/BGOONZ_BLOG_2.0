@@ -265,7 +265,7 @@
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "Connect 4",
                 "url": "#",
                 "style": "primary",
                 "icon_class": "dev",
