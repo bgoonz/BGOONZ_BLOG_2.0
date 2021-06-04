@@ -1,0 +1,161 @@
+/**
+ * Site Header
+ */
+.site-header {
+  border-bottom: 1px solid $color-border;
+  padding-bottom: 1.125rem;
+  padding-top: 1.125rem;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+}
+
+.navbar__logo,
+.navbar__title {
+  flex: 0 1 auto;
+  margin: 0 1.25rem 0 0;
+  text-decoration: none;
+}
+
+.navbar__logo {
+  img {
+    max-height: 2rem;
+  }
+}
+
+.navbar__menu {
+  margin-left: auto;
+}
+
+.navbar__item {
+  font-size: 0.875em;
+}
+
+@include media-breakpoint-up(md) {
+  .js-nav-toggle {
+    display: none;
+  }
+
+  .navbar__list {
+    align-items: center;
+    display: flex;
+  }
+
+  .navbar__item {
+    margin-left: 1.25rem;
+  }
+
+  .js-menu-toggle {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .navbar {
+    &:after {
+      background: $color-bg-overlay;
+      content: "";
+      height: 100vh;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      transition: opacity .25s, visibility 0s .25s;
+      visibility: hidden;
+      width: 100%;
+    }
+  }
+
+  .navbar__menu-btn,
+  .navbar__close-btn {
+    margin-left: auto;
+  }
+
+  .navbar__menu {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: $color-bg;
+    bottom: 0;
+    right: -100%;
+    max-width: $width-xs;
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+    top: 0;
+    transition: right .3s cubic-bezier(.65,.05,.36,1), visibility 0s .3s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .navbar__scroller {
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .navbar__inner {
+    padding: 1.125rem 1.5rem;
+  }
+
+  .navbar__close-btn {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.125rem;
+  }
+
+  .navbar__list {
+    margin-top: 3rem;
+  }
+
+  .navbar__item {
+    border-top: 1px solid $color-border;
+
+    &:not(.navbar__item--btn):last-child {
+      border-bottom: 1px solid $color-border;
+    }
+
+    a {
+      &:not(.btn) {
+        display: block;
+        padding: 0.75rem 0;
+      }
+    }
+
+    .btn {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      width: 100%;
+    }
+  }
+
+  .navbar__item--btn {
+    padding: 1.125rem 0;
+
+    & + & {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+  }
+
+  .js-nav-open {
+    overflow: hidden;
+
+    .navbar {
+      &:after {
+        opacity: 1;
+        transition: opacity .25s;
+        visibility: visible;
+        z-index: 998;
+      }
+    }
+
+    .navbar__menu {
+      right: 0;
+      transition: right .3s ease;
+      visibility: visible;
+    }
+  }
+}
