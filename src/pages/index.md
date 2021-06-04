@@ -140,17 +140,18 @@ sections:
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >
+          # Global Warming
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          [Fusion, the nuclear reaction that powers the Sun and the stars, is a
+          potential source of safe, non-carbon emitting and virtually limitless
+          energy. Harnessing fusion's power is the goal of ITER, which has been
+          designed as the key experimental step between today's fusion research
+          machines and tomorrow's fusion power plants.](https://www.iter.org/)
 
 
-          - Lorem ipsum
-
-          - dolor sit amet
+          ![](/\_static/app-assets/iter.jpg)
         actions: []
         type: grid_item
       - title: lorem-ipsum
