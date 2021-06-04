@@ -3,7 +3,7 @@ title: ds-algo-Overview
 sections:
   - section_id: hero
     type: section_hero
-    title: ds-algo-Overview
+    title: Blog Overview
     image: images/5.jpg
     content: An optional subtitle
   - section_id: docs-ds-algo-Overview
