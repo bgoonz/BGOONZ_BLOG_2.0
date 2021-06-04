@@ -111,68 +111,60 @@ sections:
 
         actions: []
         type: grid_item
-      - title: lorem-ipsum
+      - title: Nootropics
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >
+          ## Nootropics
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Nootropics are drugs, supplements, and other substances that are
+          claimed to improve cognitive function, particularly executive
+          functions, memory, creativity, or motivation, in healthy individuals.
 
 
-          - Lorem ipsum
-
-          - dolor sit amet
+          ![](/\_static/app-assets/noo.PNG)
         actions: []
         type: grid_item
-      - title: lorem-ipsum
+      - title: Guthrie Govan
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >+
+          [Guthrie](https://www.youtube.com/watch?v=R2llLs4D5PA)
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          ![](/\_static/app-assets/futuristic-turtle.jpg)
 
 
-          - Lorem ipsum
+          Guthrie Govan is an English guitarist and guitar teacher, known for
+          his work with the bands The Aristocrats, Asia,Steven Wilson and Hans
+          Zimmer.
 
-          - dolor sit amet
+
+
         actions: []
         type: grid_item
-      - title: lorem-ipsum
-        title_url: lorem-ipsum
+      - title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >
+          # Global Warming
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          [Fusion, the nuclear reaction that powers the Sun and the stars, is a
+          potential source of safe, non-carbon emitting and virtually limitless
+          energy. Harnessing fusion's power is the goal of ITER, which has been
+          designed as the key experimental step between today's fusion research
+          machines and tomorrow's fusion power plants.](https://www.iter.org/)
 
 
-          - Lorem ipsum
-
-          - dolor sit amet
+          ![](/\_static/app-assets/iter.jpg)
         actions: []
         type: grid_item
-      - title: lorem-ipsum
+        title: Environment
+      - title: Ice Hockey
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
+        content: "![](/\\_static/app-assets/festive-dolphin.jpg)\n\n\n\n**New Jersey Devils**, American professional\_[ice hockey](https://www.britannica.com/sports/ice-hockey)\_team based in\_[Newark](https://www.britannica.com/place/Newark-New-Jersey),\_[New Jersey](https://www.britannica.com/place/New-Jersey). The Devils play in the Atlantic Division of the Eastern Conference in the\_[National Hockey League](https://www.britannica.com/topic/National-Hockey-League)\_(NHL). The franchise found little success until the 1990s, when it established itself as one of the NHL’s most dominant teams, winning\_[Stanley Cup](https://www.britannica.com/sports/Stanley-Cup)\_titles in 1995, 2000, and 2003.\n\n"
         actions: []
         type: grid_item
     type: section_grid
