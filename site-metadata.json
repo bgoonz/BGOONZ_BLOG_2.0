@@ -157,7 +157,7 @@
                     },
                     {
                         "label": "Setup Checker",
-                        "url": "#",
+                        "url": "https://github.com/bgoonz/web-dev-setup-checker",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
