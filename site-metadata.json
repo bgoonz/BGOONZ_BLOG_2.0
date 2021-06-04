@@ -102,7 +102,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Projects",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
