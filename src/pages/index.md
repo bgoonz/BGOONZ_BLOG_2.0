@@ -97,7 +97,7 @@ sections:
 
           [Full Text Search](https://www.algolia.com/)
 
-          ## &#xA;![](/\_static/app-assets/kind-lavender.png)
+          ## &#xA;![](/\_static/app-assets/spectacular-turmeric.png)
         actions: []
         type: grid_item
       - title: lorem-ipsum
