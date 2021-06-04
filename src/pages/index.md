@@ -111,7 +111,7 @@ sections:
 
         actions: []
         type: grid_item
-      - title: lorem-ipsum
+      - title: Nootropics
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
