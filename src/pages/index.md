@@ -129,12 +129,19 @@ sections:
       - title: Guthrie Govan
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: |
+        content: >+
           [Guthrie](https://www.youtube.com/watch?v=R2llLs4D5PA)
 
 
-
           ![](/\_static/app-assets/futuristic-turtle.jpg)
+
+
+          Guthrie Govan is an English guitarist and guitar teacher, known for
+          his work with the bands The Aristocrats, Asia,Steven Wilson and Hans
+          Zimmer.
+
+
+
         actions: []
         type: grid_item
       - title: lorem-ipsum
