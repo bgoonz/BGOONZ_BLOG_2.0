@@ -115,7 +115,7 @@ sections:
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
-          ## Lorem ipsum
+          ## Nootropics
 
 
           Nootropics are drugs, supplements, and other substances that are
@@ -123,7 +123,7 @@ sections:
           functions, memory, creativity, or motivation, in healthy individuals.
 
 
-          ![](/\_static/app-assets/noo.jpg)
+          ![](/\_static/app-assets/noo.PNG)
         actions: []
         type: grid_item
       - title: lorem-ipsum
