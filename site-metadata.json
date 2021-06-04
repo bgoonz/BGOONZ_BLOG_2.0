@@ -209,7 +209,6 @@
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
                 "url": "https://www.instagram.com/bgoonz/?hl=en",
                 "style": "link",
                 "icon_class": "instagram",
