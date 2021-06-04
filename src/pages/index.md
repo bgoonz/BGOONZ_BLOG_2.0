@@ -164,8 +164,7 @@ sections:
       - title: Ice Hockey
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: |
-          ![](/\_static/app-assets/festive-dolphin.jpg)
+        content: "![](/\\_static/app-assets/festive-dolphin.jpg)\n\n\n\n**New Jersey Devils**, American professional\_[ice hockey](https://www.britannica.com/sports/ice-hockey)\_team based in\_[Newark](https://www.britannica.com/place/Newark-New-Jersey),\_[New Jersey](https://www.britannica.com/place/New-Jersey). The Devils play in the Atlantic Division of the Eastern Conference in the\_[National Hockey League](https://www.britannica.com/topic/National-Hockey-League)\_(NHL). The franchise found little success until the 1990s, when it established itself as one of the NHL’s most dominant teams, winning\_[Stanley Cup](https://www.britannica.com/sports/Stanley-Cup)\_titles in 1995, 2000, and 2003.\n\n"
         actions: []
         type: grid_item
     type: section_grid
