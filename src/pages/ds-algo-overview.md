@@ -5,7 +5,6 @@ sections:
     type: section_hero
     title: Blog Overview
     image: images/5.jpg
-    content: An optional subtitle
   - section_id: docs-ds-algo-Overview
     type: section_docs
     col_number: three
