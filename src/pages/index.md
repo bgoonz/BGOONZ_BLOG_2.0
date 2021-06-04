@@ -33,7 +33,9 @@ sections:
         image_alt: python
       - content: >
           #
-          Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/square-cedar.png)
+          Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/dtw.gif)
+
+
 
 
           [This section exists for me to day dream ideas for the future... and
