@@ -103,12 +103,11 @@ sections:
       - title: Convolutional Neural Networks
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >
+        content: >+
           Artificial neural networks, usually simply called neural networks, are
-          computing systems vaguely inspired by the biological neural networks
+          computing systems vaguely inspired by the biological [neural
+          networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
 
-
-          ![](/\_static/app-assets/neural-nets.jpg)
         actions: []
         type: grid_item
       - title: lorem-ipsum
