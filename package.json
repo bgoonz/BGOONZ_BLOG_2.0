@@ -3,7 +3,6 @@
   "description": "webdevhub",
   "version": "0.0.1",
   "license": "MIT",
-  
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
@@ -12,6 +11,7 @@
   },
   "dependencies": {
     "@stackbit/gatsby-plugin-menus": "0.0.4",
+    "algoliasearch": "^4.9.1",
     "babel-runtime": "6.26.0",
     "chokidar": "3.4.0",
     "classnames": "2.2.6",
