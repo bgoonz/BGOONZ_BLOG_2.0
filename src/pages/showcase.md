@@ -31,7 +31,7 @@ sections:
         title_url: 'https://mihirbegmusic.netlify.app/'
         image: images/mihir2.gif
         content: Medium inspired blogging theme for Unibit
-      - title: lorem-ipsum
+      - title: Zumzi Video Conference App
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
