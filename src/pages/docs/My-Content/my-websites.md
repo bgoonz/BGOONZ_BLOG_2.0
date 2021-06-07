@@ -25,6 +25,78 @@ seo:
 template: docs
 ---
 
+
+## Navigation of this site
+
+
+1. [https://best-celery-b2d7c.netlify.app/notes-template/](https://best-celery-b2d7c.netlify.app/notes-template/)
+2. [https://best-celery-b2d7c.netlify.app/ds-algo-overview/](https://best-celery-b2d7c.netlify.app/ds-algo-overview/)
+3. [https://best-celery-b2d7c.netlify.app/showcase/](https://best-celery-b2d7c.netlify.app/showcase/)
+4. [https://best-celery-b2d7c.netlify.app/style-guide/](https://best-celery-b2d7c.netlify.app/style-guide/)
+5. [https://best-celery-b2d7c.netlify.app/blog/community/](https://best-celery-b2d7c.netlify.app/blog/community/)
+6. [https://best-celery-b2d7c.netlify.app/blog/data-structures/](https://best-celery-b2d7c.netlify.app/blog/data-structures/)
+7. [https://best-celery-b2d7c.netlify.app/review/](https://best-celery-b2d7c.netlify.app/review/)
+8. [https://best-celery-b2d7c.netlify.app/blog/my-medium/](https://best-celery-b2d7c.netlify.app/blog/my-medium/)
+9. [https://best-celery-b2d7c.netlify.app/blog/](https://best-celery-b2d7c.netlify.app/blog/)
+10. [https://best-celery-b2d7c.netlify.app/docs/python/](https://best-celery-b2d7c.netlify.app/docs/python/)
+11. [https://best-celery-b2d7c.netlify.app/blog/python/](https://best-celery-b2d7c.netlify.app/blog/python/)
+12. [https://best-celery-b2d7c.netlify.app/docs/](https://best-celery-b2d7c.netlify.app/docs/)
+13. [https://best-celery-b2d7c.netlify.app/](https://best-celery-b2d7c.netlify.app/)
+14. [https://best-celery-b2d7c.netlify.app/docs/resources/](https://best-celery-b2d7c.netlify.app/docs/resources/)
+15. [https://best-celery-b2d7c.netlify.app/docs/My-Content/my-websites/](https://best-celery-b2d7c.netlify.app/docs/My-Content/my-websites/)
+16. [https://best-celery-b2d7c.netlify.app/docs/about/resume/](https://best-celery-b2d7c.netlify.app/docs/about/resume/)
+17. [https://best-celery-b2d7c.netlify.app/docs/about/](https://best-celery-b2d7c.netlify.app/docs/about/)
+18. [https://best-celery-b2d7c.netlify.app/docs/about/me/](https://best-celery-b2d7c.netlify.app/docs/about/me/)
+19. [https://best-celery-b2d7c.netlify.app/docs/faq/](https://best-celery-b2d7c.netlify.app/docs/faq/)
+20. [https://best-celery-b2d7c.netlify.app/docs/links/](https://best-celery-b2d7c.netlify.app/docs/links/)
+21. [https://best-celery-b2d7c.netlify.app/docs/quick-reference/Emmet/](https://best-celery-b2d7c.netlify.app/docs/quick-reference/Emmet/)
+22. [https://best-celery-b2d7c.netlify.app/docs/quick-reference/](https://best-celery-b2d7c.netlify.app/docs/quick-reference/)
+23. [https://best-celery-b2d7c.netlify.app/docs/quick-reference/installation/](https://best-celery-b2d7c.netlify.app/docs/quick-reference/installation/)
+24. [https://best-celery-b2d7c.netlify.app/docs/quick-reference/new-repo-instructions/](https://best-celery-b2d7c.netlify.app/docs/quick-reference/new-repo-instructions/)
+25. [https://best-celery-b2d7c.netlify.app/docs/react/createReactApp/](https://best-celery-b2d7c.netlify.app/docs/react/createReactApp/)
+26. [https://best-celery-b2d7c.netlify.app/docs/tools/](https://best-celery-b2d7c.netlify.app/docs/tools/)
+27. [https://best-celery-b2d7c.netlify.app/docs/react/](https://best-celery-b2d7c.netlify.app/docs/react/)
+28. [https://best-celery-b2d7c.netlify.app/docs/tools/Git-Html-Preview/](https://best-celery-b2d7c.netlify.app/docs/tools/Git-Html-Preview/)
+29. [https://best-celery-b2d7c.netlify.app/docs/tools/plug-ins/](https://best-celery-b2d7c.netlify.app/docs/tools/plug-ins/)
+30. [https://best-celery-b2d7c.netlify.app/docs/tools/starter-theme/](https://best-celery-b2d7c.netlify.app/docs/tools/starter-theme/)
+
+1. [https://best-celery-b2d7c.netlify.app/notes-template/](https://best-celery-b2d7c.netlify.app/notes-template/)
+2. [https://best-celery-b2d7c.netlify.app/ds-algo-overview/](https://best-celery-b2d7c.netlify.app/ds-algo-overview/)
+3. [https://best-celery-b2d7c.netlify.app/showcase/](https://best-celery-b2d7c.netlify.app/showcase/)
+4. [https://best-celery-b2d7c.netlify.app/style-guide/](https://best-celery-b2d7c.netlify.app/style-guide/)
+5. [https://best-celery-b2d7c.netlify.app/blog/community/](https://best-celery-b2d7c.netlify.app/blog/community/)
+6. [https://best-celery-b2d7c.netlify.app/blog/data-structures/](https://best-celery-b2d7c.netlify.app/blog/data-structures/)
+7. [https://best-celery-b2d7c.netlify.app/review/](https://best-celery-b2d7c.netlify.app/review/)
+8. [https://best-celery-b2d7c.netlify.app/blog/my-medium/](https://best-celery-b2d7c.netlify.app/blog/my-medium/)
+9. [https://best-celery-b2d7c.netlify.app/blog/](https://best-celery-b2d7c.netlify.app/blog/)
+10. [https://best-celery-b2d7c.netlify.app/docs/python/](https://best-celery-b2d7c.netlify.app/docs/python/)
+11. [https://best-celery-b2d7c.netlify.app/blog/python/](https://best-celery-b2d7c.netlify.app/blog/python/)
+12. [https://best-celery-b2d7c.netlify.app/docs/](https://best-celery-b2d7c.netlify.app/docs/)
+13. [https://best-celery-b2d7c.netlify.app/](https://best-celery-b2d7c.netlify.app/)
+14. [https://best-celery-b2d7c.netlify.app/docs/resources/](https://best-celery-b2d7c.netlify.app/docs/resources/)
+15. [https://best-celery-b2d7c.netlify.app/docs/My-Content/my-websites/](https://best-celery-b2d7c.netlify.app/docs/My-Content/my-websites/)
+16. [https://best-celery-b2d7c.netlify.app/docs/about/resume/](https://best-celery-b2d7c.netlify.app/docs/about/resume/)
+17. [https://best-celery-b2d7c.netlify.app/docs/about/](https://best-celery-b2d7c.netlify.app/docs/about/)
+18. [https://best-celery-b2d7c.netlify.app/docs/about/me/](https://best-celery-b2d7c.netlify.app/docs/about/me/)
+19. [https://best-celery-b2d7c.netlify.app/docs/faq/](https://best-celery-b2d7c.netlify.app/docs/faq/)
+20. [https://best-celery-b2d7c.netlify.app/docs/links/](https://best-celery-b2d7c.netlify.app/docs/links/)
+21. [https://best-celery-b2d7c.netlify.app/docs/quick-reference/Emmet/](https://best-celery-b2d7c.netlify.app/docs/quick-reference/Emmet/)
+22. [https://best-celery-b2d7c.netlify.app/docs/quick-reference/](https://best-celery-b2d7c.netlify.app/docs/quick-reference/)
+23. [https://best-celery-b2d7c.netlify.app/docs/quick-reference/installation/](https://best-celery-b2d7c.netlify.app/docs/quick-reference/installation/)
+24. [https://best-celery-b2d7c.netlify.app/docs/quick-reference/new-repo-instructions/](https://best-celery-b2d7c.netlify.app/docs/quick-reference/new-repo-instructions/)
+25. [https://best-celery-b2d7c.netlify.app/docs/react/createReactApp/](https://best-celery-b2d7c.netlify.app/docs/react/createReactApp/)
+26. [https://best-celery-b2d7c.netlify.app/docs/tools/](https://best-celery-b2d7c.netlify.app/docs/tools/)
+27. [https://best-celery-b2d7c.netlify.app/docs/react/](https://best-celery-b2d7c.netlify.app/docs/react/)
+28. [https://best-celery-b2d7c.netlify.app/docs/tools/Git-Html-Preview/](https://best-celery-b2d7c.netlify.app/docs/tools/Git-Html-Preview/)
+29. [https://best-celery-b2d7c.netlify.app/docs/tools/plug-ins/](https://best-celery-b2d7c.netlify.app/docs/tools/plug-ins/)
+30. [https://best-celery-b2d7c.netlify.app/docs/tools/starter-theme/](https://best-celery-b2d7c.netlify.app/docs/tools/starter-theme/)
+
+
+
+## Link to my other sites
+
+
+
 1. [ WEB DEV RESOURCE HUB ](https://web-dev-resource-hub.netlify.app)
 2. [NEW BLOG](https://best-celery-b2d7c.netlify.app/)
 3. [ Data Structures Website ](https://trusting-dijkstra-4d3b17.netlify.app)
