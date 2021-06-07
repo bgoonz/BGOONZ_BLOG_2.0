@@ -209,6 +209,7 @@
         "type": "action"
       },
       {
+        "label": "Instagram",
         "url": "https://www.instagram.com/bgoonz/?hl=en",
         "style": "link",
         "icon_class": "instagram",
@@ -220,6 +221,7 @@
     "content": "Created & Maintained by Bryan Guner",
     "links": [
       {
+        "label": "Home",
         "url": "#",
         "style": "link",
         "icon_class": "dev",
