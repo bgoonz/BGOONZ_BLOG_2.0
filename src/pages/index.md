@@ -219,7 +219,7 @@ sections:
   - title: Musical Persuits
     section_id: guitar
     image_alt: bryan-guner
-    image_position: center
+    image_position: left
     content: >-
       <iframe width="560" height="415"
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
