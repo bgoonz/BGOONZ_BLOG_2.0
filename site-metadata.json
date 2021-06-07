@@ -1,7 +1,6 @@
 {
     "palette": "navy",
     "header": {
-        "title": "webdevhub",
         "logo_img": "images/imageonline-co-overlayed-image - Copy.png",
         "logo_img_alt": "webdevhub logo",
         "has_nav": true,
@@ -44,7 +43,7 @@
                 "has_subnav": false,
                 "subnav_links": [],
                 "type": "action_menu",
-                "label": "Roll The Dice"
+                "label": "Tetris"
             },
             {
                 "label": "Navigation",
@@ -157,8 +156,8 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
-                        "url": "#",
+                        "label": "Setup Checker",
+                        "url": "https://github.com/bgoonz/web-dev-setup-checker",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
@@ -208,9 +207,17 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
+            },
+            {
+                "url": "https://www.instagram.com/bgoonz/?hl=en",
+                "style": "link",
+                "icon_class": "instagram",
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
             }
         ],
-        "content": "My (now) Depreciated Blog: https://web-dev-resource-hub.netlify.app/",
+        "content": "Created & Maintained by Bryan Guner",
         "links": [
             {
                 "url": "#",
@@ -223,7 +230,43 @@
             {
                 "label": "Old Blog",
                 "url": "https://lambda-resources.netlify.app/",
-                "style": "icon",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "My Medium Blog",
+                "url": "https://bryanguner.medium.com/",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": true,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "Git Html Previewer",
+                "url": "#",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "Python Practice",
+                "url": "https://github.com/bgoonz/PYTHON_PRAC",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "Freelance Work",
+                "url": "https://github.com/bgoonz/MihirBegMusicV3",
+                "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
