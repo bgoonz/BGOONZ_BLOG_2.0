@@ -1,6 +1,6 @@
 ---
 title: Utrum Igitur Tibi Litteram Videor An Totas Paginas
-date: '2020-04-16'
+date: "2020-04-16"
 author: content/data/team/dianne-ameter.yaml
 categories:
   - content/data/categories/tutorials.yaml
@@ -12,28 +12,28 @@ excerpt: >-
   magnitudine obruebantur. Duo Reges: constructio interrete.
 seo:
   title: Utrum Igitur Tibi Litteram Videor An Totas Paginas
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Utrum Igitur Tibi Litteram Videor An Totas Paginas
       keyName: property
-    - name: 'og:description'
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    - name: "og:description"
+      value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/1.png
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Utrum Igitur Tibi Litteram Videor An Totas Paginas
-    - name: 'twitter:description'
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-    - name: 'twitter:image'
+    - name: "twitter:description"
+      value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    - name: "twitter:image"
       value: images/1.png
       relativeUrl: true
 layout: post

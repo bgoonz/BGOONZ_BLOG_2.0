@@ -1,6 +1,6 @@
 ---
 title: Amet Nulla Facilisi Morbi Tempus
-date: '2020-06-02'
+date: "2020-06-02"
 author: content/data/team/gordon-norman.yaml
 categories:
   - content/data/categories/tutorials.yaml
@@ -15,28 +15,28 @@ excerpt: >-
   affecit, quanto.
 seo:
   title: Amet Nulla Facilisi Morbi Tempus
-  description: 'Estne, quaeso, inquam, sitienti in bibendo voluptas'
+  description: "Estne, quaeso, inquam, sitienti in bibendo voluptas"
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Amet Nulla Facilisi Morbi Tempus
       keyName: property
-    - name: 'og:description'
-      value: 'Estne, quaeso, inquam, sitienti in bibendo voluptas'
+    - name: "og:description"
+      value: "Estne, quaeso, inquam, sitienti in bibendo voluptas"
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/5.png
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Amet Nulla Facilisi Morbi Tempus
-    - name: 'twitter:description'
-      value: 'Estne, quaeso, inquam, sitienti in bibendo voluptas'
-    - name: 'twitter:image'
+    - name: "twitter:description"
+      value: "Estne, quaeso, inquam, sitienti in bibendo voluptas"
+    - name: "twitter:image"
       value: images/5.png
       relativeUrl: true
 layout: post

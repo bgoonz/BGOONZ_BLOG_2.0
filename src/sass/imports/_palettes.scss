@@ -23,8 +23,14 @@
 
     .has-gradient {
       background: $color-primary;
-      background: -webkit-gradient(linear, left top, right top, from($color-secondary), to($color-primary));
-      background: linear-gradient(to right,$color-secondary, $color-primary);
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from($color-secondary),
+        to($color-primary)
+      );
+      background: linear-gradient(to right, $color-secondary, $color-primary);
     }
 
     .button-secondary,
@@ -37,9 +43,9 @@
     #colophon a:not(.button):hover,
     .post.type-docs .hash-link:hover,
     .post.type-docs .hash-link:focus,
-    #docs-menu  a:hover,
+    #docs-menu a:hover,
     #docs-menu .current,
-    #docs-menu  .current-parent,
+    #docs-menu .current-parent,
     #page-nav li.active > a,
     #page-nav a:hover {
       color: $color-primary;

@@ -9,20 +9,20 @@ seo:
   title: Contact
   description: This is the contact page
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Contact
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: This is the contact page
       keyName: property
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Contact
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: This is the contact page
 layout: advanced
 ---

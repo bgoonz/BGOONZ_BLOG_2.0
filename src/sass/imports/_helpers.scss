@@ -60,8 +60,14 @@
 // Background gradients
 .has-gradient {
   background: $color-primary;
-  background: -webkit-gradient(linear, left top, right top, from($color-secondary), to($color-primary));
-  background: linear-gradient(to right,$color-secondary, $color-primary);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($color-secondary),
+    to($color-primary)
+  );
+  background: linear-gradient(to right, $color-secondary, $color-primary);
   color: #fff;
   position: relative;
 
@@ -79,7 +85,7 @@
       color: inherit !important;
 
       &:hover {
-        opacity: .8;
+        opacity: 0.8;
       }
     }
   }
@@ -92,7 +98,7 @@
       &:hover,
       &:focus,
       &:active {
-        opacity: .85;
+        opacity: 0.85;
       }
     }
   }
@@ -108,8 +114,8 @@
 
 // Background image
 .bg-img {
-  -webkit-animation: fadeIn20 .75s ease-in-out;
-  animation: fadeIn20 .75s ease-in-out;
+  -webkit-animation: fadeIn20 0.75s ease-in-out;
+  animation: fadeIn20 0.75s ease-in-out;
   background-position: center;
   background-size: cover;
   bottom: 0;

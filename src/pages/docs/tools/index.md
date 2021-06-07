@@ -7,33 +7,32 @@ seo:
   title: Tools
   description: This is the tools page
   extra:
-
-    - name: 'og:type'
+    - name: "og:type"
 
       value: website
       keyName: property
 
-    - name: 'og:title'
+    - name: "og:title"
 
       value: Tools
 
       keyName: property
 
-    - name: 'og:description'
+    - name: "og:description"
 
       value: This is the tools page
 
       keyName: property
 
-    - name: 'twitter:card'
+    - name: "twitter:card"
 
       value: summary
 
-    - name: 'twitter:title'
+    - name: "twitter:title"
 
       value: Tools
 
-    - name: 'twitter:description'
+    - name: "twitter:description"
 
       value: This is the tools page
 
@@ -74,6 +73,5 @@ template: docs
 <br>
 
 <br>
-
 
 <iframe src="https://lambda-resources.netlify.app/"></iframe>

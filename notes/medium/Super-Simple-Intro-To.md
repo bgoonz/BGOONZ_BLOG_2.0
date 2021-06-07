@@ -1,11 +1,8 @@
-
-
-Super Simple Intro To HTML
-==========================
+# Super Simple Intro To HTML
 
 What is HTML, CSS & JS and why do we need all three?
 
-------------------------------------------------------------------------
+---
 
 ### Super Simple Intro To HTML
 
@@ -55,9 +52,9 @@ If you’re using Visual Studio Code, congrats! There is Emmet support built int
 
 ### Basic Syntax
 
-***HTML Boilerplate***
+**_HTML Boilerplate_**
 
-If you’ve been working in VSCode, you’ve probably seen Emmet syntax highlighting when working in HTML documents. In my opinion, the most convenient Emmet shortcut is ***html:5***. This will create an HTML boilerplate, and fill out metadata tags in the head of your document.
+If you’ve been working in VSCode, you’ve probably seen Emmet syntax highlighting when working in HTML documents. In my opinion, the most convenient Emmet shortcut is **_html:5_**. This will create an HTML boilerplate, and fill out metadata tags in the head of your document.
 
     html:5
 
@@ -82,7 +79,7 @@ There are generally two types of tags in HTML:
 
 > i.e.
 
-    <hr> 
+    <hr>
     <p> The tag above me is a horizontal line that doesn't need a closing tag </p>
 
 HTML tags have two main types: **block-level** and **inline tags**.
@@ -98,9 +95,9 @@ The three block level tags every HTML document needs to contain are **&lt;html&g
 2.  <span id="c015">The **&lt;head&gt;&lt;/head&gt;** tag holds meta information such as the page’s title and charset.</span>
 3.  <span id="5ca8">Finally, the **&lt;body&gt;&lt;/body&gt;** tag encloses all the content that appears on the page.</span>
 
--   <span id="7864">Paragraphs are enclosed by ***&lt;p&gt;&lt;/p&gt;***, while blockquotes use the ***&lt;blockquote&gt;&lt;/blockquote&gt;*** tag.</span>
--   <span id="82ad">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the ***&lt;div&gt;&lt;/div&gt;*** tag. A div element can contain another div tag inside it as well.</span>
--   <span id="39c6">You may also use ***&lt;ol&gt;&lt;/ol&gt;*** tags for ordered lists and ***&lt;ul&gt;&lt;/ul&gt;*** for unordered ones. Individual list items must be enclosed by the ***&lt;li&gt;&lt;/li&gt;*** tag. For example, this is how a basic unordered list looks like in HTML:</span>
+- <span id="7864">Paragraphs are enclosed by **_&lt;p&gt;&lt;/p&gt;_**, while blockquotes use the **_&lt;blockquote&gt;&lt;/blockquote&gt;_** tag.</span>
+- <span id="82ad">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the **_&lt;div&gt;&lt;/div&gt;_** tag. A div element can contain another div tag inside it as well.</span>
+- <span id="39c6">You may also use **_&lt;ol&gt;&lt;/ol&gt;_** tags for ordered lists and **_&lt;ul&gt;&lt;/ul&gt;_** for unordered ones. Individual list items must be enclosed by the **_&lt;li&gt;&lt;/li&gt;_** tag. For example, this is how a basic unordered list looks like in HTML:</span>
 
 1.  <span id="e470">**&lt;ul&gt;**</span>
 2.  <span id="b8c5">**&lt;li&gt;**List item 1**&lt;/li&gt;**</span>
@@ -112,14 +109,14 @@ The three block level tags every HTML document needs to contain are **&lt;html&g
 
 An HTML Document is mainly divided into two parts:
 
--   <span id="0424">**HEAD**: This contains the information about the HTML document. For Example, Title of the page, version of HTML, Meta-Data etc.</span>
+- <span id="0424">**HEAD**: This contains the information about the HTML document. For Example, Title of the page, version of HTML, Meta-Data etc.</span>
 
 HTML TAG Specifies an html document. The HTML element (or HTML root element) represents the root of an HTML document. All other elements must be descendants of this element. Since the element is the first in a document, it is called the root element.
 
 Although this tag can be implied, or not required, with HTML, it is required to be opened and closed in XHTML.
 
--   <span id="83fe">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the ***&lt;div&gt;&lt;/div&gt;*** tag. A div element can contain another div tag inside it as well.</span>
--   <span id="9d53">You may also use ***&lt;ol&gt;&lt;/ol&gt;*** tags for ordered lists and ***&lt;ul&gt;&lt;/ul&gt;*** for unordered ones. Individual list items must be enclosed by the ***&lt;li&gt;&lt;/li&gt;*** tag. For example, this is how a basic unordered list looks like in HTML:</span>
+- <span id="83fe">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the **_&lt;div&gt;&lt;/div&gt;_** tag. A div element can contain another div tag inside it as well.</span>
+- <span id="9d53">You may also use **_&lt;ol&gt;&lt;/ol&gt;_** tags for ordered lists and **_&lt;ul&gt;&lt;/ul&gt;_** for unordered ones. Individual list items must be enclosed by the **_&lt;li&gt;&lt;/li&gt;_** tag. For example, this is how a basic unordered list looks like in HTML:</span>
 
 1.  <span id="4097">**&lt;ul&gt;**</span>
 2.  <span id="0103">**&lt;li&gt;**List item 1**&lt;/li&gt;**</span>
@@ -129,13 +126,13 @@ Although this tag can be implied, or not required, with HTML, it is required to 
 
 ### Inline Tags
 
-Many inline tags are used to format text. For example, a **&lt;strong&gt;&lt;/strong&gt;** tag would render an element in **bold**, whereas *&lt;em&gt;&lt;/em&gt;* tags would show it in *italics*.
+Many inline tags are used to format text. For example, a **&lt;strong&gt;&lt;/strong&gt;** tag would render an element in **bold**, whereas _&lt;em&gt;&lt;/em&gt;_ tags would show it in _italics_.
 
-Hyperlinks are also inline elements that require ***&lt;a&gt;&lt;/a&gt;*** tags and **href** attributes to indicate the link’s destination:
+Hyperlinks are also inline elements that require **_&lt;a&gt;&lt;/a&gt;_** tags and **href** attributes to indicate the link’s destination:
 
 1.  <span id="f67d">**&lt;a** **href=**”https://example.com/"**&gt;**Click me!**&lt;/a&gt;**</span>
 
-Images are inline elements too. You can add one using ***&lt;img&gt;*** without any closing tag. But you will also need to use the ***src*** attribute to specify the image path, for example:
+Images are inline elements too. You can add one using **_&lt;img&gt;_** without any closing tag. But you will also need to use the **_src_** attribute to specify the image path, for example:
 
 1.  <span id="3924">**&lt;img** **src=**”/images/example.jpg” **alt=**”Example image”**&gt;**</span>
 
@@ -149,21 +146,21 @@ Images are inline elements too. You can add one using ***&lt;img&gt;*** without 
 
 Let us now have a look on the basic structure of HTML. That is the code which is must for every webpage to have:
 
-***&lt;!DOCTYPE html&gt;***
+**_&lt;!DOCTYPE html&gt;_**
 
 #### Here is some boilerplate html you can use as a starting point:!!Every Webpage must contain this code.!!
 
-------------------------------------------------------------------------
+---
 
 ### **&lt;!DOCTYPE html&gt;**
 
-------------------------------------------------------------------------
+---
 
 Below is the complete explanation of each of the tags used in the above piece of HTML code:
 
 **&lt;!DOCTYPE html&gt;:** This tag is used to tells the HTML version. This currently tells that the version is HTML 5.
 
-> ***&lt;html&gt;*:** This is called HTML root element and used to wrap all the code.
+> **_&lt;html&gt;_:** This is called HTML root element and used to wrap all the code.
 
 > **&lt;head&gt;:** Head tag contains metadata, title, page CSS etc. All the HTML elements that can be used inside the &lt;head&gt; element are:
 
@@ -179,7 +176,7 @@ Below is the complete explanation of each of the tags used in the above piece of
 
 **HEADING/S:**
 
-*6 types from largest(h1) to smallest (h6)*
+_6 types from largest(h1) to smallest (h6)_
 
 &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;
 
@@ -187,7 +184,7 @@ Below is the complete explanation of each of the tags used in the above piece of
 
 **ITALICS:** There are two ways to use it, the first one is the &lt;i&gt; tag and the second one is the &lt;em&gt; tag. They both italicize the text<a href="https://emojipedia.org/person-shrugging/" class="markup--anchor markup--p-anchor">🤷</a>
 
-&lt;i&gt; *this is fancy text that’s too good to for us*&lt;/i&gt;
+&lt;i&gt; _this is fancy text that’s too good to for us_&lt;/i&gt;
 
 \_\_\_\_\_\_\_\_\_\_\_
 

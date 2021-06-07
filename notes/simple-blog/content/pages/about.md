@@ -28,7 +28,7 @@ sections:
       - content/data/team/gordon-norman.yaml
   - type: cta_section
     title: Join the Team
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     actions:
       - label: Contact Us
         url: /contact
@@ -39,26 +39,26 @@ seo:
   title: Who We Are
   description: This is the about us page
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Who We Are
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: This is the about us page
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/1.png
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Who We Are
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: This is the about us page
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/1.png
       relativeUrl: true
 layout: advanced

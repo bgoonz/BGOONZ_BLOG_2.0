@@ -7,25 +7,26 @@ seo:
   title: My Websites
   description: This is the My Websites page
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: My Websites
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: This is the My Websites page
       keyName: property
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: My Websites
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: This is the My Websites page
 template: docs
 ---
+
 1. [ WEB DEV RESOURCE HUB ](https://web-dev-resource-hub.netlify.app)
-2.  [NEW BLOG](https://best-celery-b2d7c.netlify.app/)
+2. [NEW BLOG](https://best-celery-b2d7c.netlify.app/)
 3. [ Data Structures Website ](https://trusting-dijkstra-4d3b17.netlify.app)
 4. [Web-Dev-Quizzes](https://web-dev-interview-prep-quiz-website.netlify.app/intro-js2.html)
 5. [ Recursion ](https://zen-lamport-5aab2c.netlify.app)
@@ -73,6 +74,3 @@ template: docs
 47. [bad reads](https://bad-reads42.herokuapp.com/)
 48. [docusaurus](https://documentation-site-react2.vercel.app/)
 49. [stackbit](https://app.stackbit.com/studio/609b2d7c71a5dd0016f36326)
-
-
-

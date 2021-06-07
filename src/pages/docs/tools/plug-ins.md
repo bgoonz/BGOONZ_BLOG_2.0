@@ -5,20 +5,20 @@ seo:
   title: Plug-ins
   description: This is the plug-ins page
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Plug-ins
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: This is the plug-ins page
       keyName: property
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Plug-ins
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: This is the plug-ins page
 template: docs
 ---
@@ -78,17 +78,20 @@ The rendered output looks like this:
 body {
   background: #fff;
   color: #666;
-  line-height: 1.66667; }
+  line-height: 1.66667;
+}
 
 a {
   color: #d4a259;
   text-decoration: underline;
-  -webkit-transition: background .3s ease, color .3s ease;
-  transition: background .3s ease, color .3s ease; }
+  -webkit-transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
+}
 
 a:hover {
   color: #1d1d1d;
-  text-decoration: none; }
+  text-decoration: none;
+}
 ```
 
 ## Tables
@@ -103,6 +106,6 @@ You can build tables with markdown to help you organize information. To add a ta
 </pre>
 
 | Title | Title |
-| ------| ----- |
+| ----- | ----- |
 | Text  | Text  |
 | Text  | Text  |

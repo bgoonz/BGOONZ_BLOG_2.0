@@ -133,7 +133,6 @@ figure {
   margin: 0;
 }
 
-
 @include media-breakpoint-down(sm) {
   h1 {
     font-size: 2.25em;
@@ -146,7 +145,7 @@ figure {
   h3 {
     font-size: 1.5em;
   }
-  
+
   h4 {
     font-size: 1.3125em;
   }

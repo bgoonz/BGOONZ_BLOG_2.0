@@ -1,6 +1,6 @@
 {
     "env": {
-        "node" : true,
+        "node": true,
         "es6": true
     },
     "extends": "eslint:recommended",
@@ -8,22 +8,10 @@
         "ecmaVersion": 2018
     },
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
         "no-unused-vars": 0
     }
 }

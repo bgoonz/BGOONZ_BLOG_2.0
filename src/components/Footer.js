@@ -1,34 +1,35 @@
-import React from 'react';
-import _ from 'lodash';
+import React from "react";
+import _ from "lodash";
 
-import {htmlToReact} from '../utils';
-import ActionLink from './ActionLink';
+import { htmlToReact } from "../utils";
+import ActionLink from "./ActionLink";
 
 export default class Footer extends React.Component {
-  render () {
+  render() {
     return (
       <footer id="colophon" className="site-footer outer">
         <div className="inner">
           <div className="site-footer-inside">
             <p className="site-info">
-              {_.get (
+              {_.get(
                 this.props,
-                'pageContext.site.siteMetadata.footer.content',
+                "pageContext.site.siteMetadata.footer.content",
                 null
-              ) &&
+              ) && (
                 <span className="copyright">
-                  {htmlToReact (
-                    _.get (
+                  {htmlToReact(
+                    _.get(
                       this.props,
-                      'pageContext.site.siteMetadata.footer.content',
+                      "pageContext.site.siteMetadata.footer.content",
                       null
                     )
                   )}
-                </span>}
-              {_.map (
-                _.get (
+                </span>
+              )}
+              {_.map(
+                _.get(
                   this.props,
-                  'pageContext.site.siteMetadata.footer.links',
+                  "pageContext.site.siteMetadata.footer.links",
                   null
                 ),
                 (action, action_idx) => (
@@ -40,16 +41,16 @@ export default class Footer extends React.Component {
                 )
               )}
             </p>
-            {_.get (
+            {_.get(
               this.props,
-              'pageContext.site.siteMetadata.footer.has_social',
+              "pageContext.site.siteMetadata.footer.has_social",
               null
-            ) &&
+            ) && (
               <div className="social-links">
-                {_.map (
-                  _.get (
+                {_.map(
+                  _.get(
                     this.props,
-                    'pageContext.site.siteMetadata.footer.social_links',
+                    "pageContext.site.siteMetadata.footer.social_links",
                     null
                   ),
                   (action, action_idx) => (
@@ -60,7 +61,8 @@ export default class Footer extends React.Component {
                     />
                   )
                 )}
-              </div>}
+              </div>
+            )}
           </div>
         </div>
       </footer>

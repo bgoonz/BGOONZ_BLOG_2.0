@@ -1,11 +1,8 @@
-
-
-Fundamental Data Structures in JavaScript
-=========================================
+# Fundamental Data Structures in JavaScript
 
 A simple to follow guide to Lists Stacks and Queues, with animated gifs, diagrams, and code examples!
 
-------------------------------------------------------------------------
+---
 
 ### Fundamental Data Structures in JavaScript
 
@@ -37,25 +34,25 @@ Depending on the type of Linked List (there are many), Node instances track some
 
 **NOTE:** The `previous` property is for Doubly Linked Lists only!
 
-Linked Lists contain *ordered* data, just like arrays. The first node in the list is, indeed, first. From the perspective of the very first node in the list, the *next* node is the second node. From the perspective of the second node in the list, the *previous* node is the first node, and the *next* node is the third node. And so it goes.
+Linked Lists contain _ordered_ data, just like arrays. The first node in the list is, indeed, first. From the perspective of the very first node in the list, the _next_ node is the second node. From the perspective of the second node in the list, the _previous_ node is the first node, and the _next_ node is the third node. And so it goes.
 
 #### “So…this sounds a lot like an Array…”
 
-Admittedly, this does *sound* a lot like an Array so far, and that’s because Arrays and Linked Lists are both implementations of the List ADT. However, there is an incredibly important distinction to be made between Arrays and Linked Lists, and that is how they *physically store* their data. (As opposed to how they *represent* the order of their data.)
+Admittedly, this does _sound_ a lot like an Array so far, and that’s because Arrays and Linked Lists are both implementations of the List ADT. However, there is an incredibly important distinction to be made between Arrays and Linked Lists, and that is how they _physically store_ their data. (As opposed to how they _represent_ the order of their data.)
 
-Recall that Arrays contain *contiguous* data. Each element of an array is actually stored *next to* it’s neighboring element *in the actual hardware of your machine*, in a single continuous block in memory.
+Recall that Arrays contain _contiguous_ data. Each element of an array is actually stored _next to_ it’s neighboring element _in the actual hardware of your machine_, in a single continuous block in memory.
 
-*An Array’s contiguous data being stored in a continuous block of addresses in memory.*
+_An Array’s contiguous data being stored in a continuous block of addresses in memory._
 
-Unlike Arrays, Linked Lists contain *non-contiguous* data. Though Linked Lists *represent* data that is ordered linearly, that mental model is just that — an interpretation of the *representation* of information, not reality.
+Unlike Arrays, Linked Lists contain _non-contiguous_ data. Though Linked Lists _represent_ data that is ordered linearly, that mental model is just that — an interpretation of the _representation_ of information, not reality.
 
 In reality, in the actual hardware of your machine, whether it be in disk or in memory, a Linked List’s Nodes are not stored in a single continuous block of addresses. Rather, Linked List Nodes live at randomly distributed addresses throughout your machine! The only reason we know which node comes next in the list is because we’ve assigned its reference to the current node’s `next` pointer.
 
-*A Singly Linked List’s non-contiguous data (Nodes) being stored at randomly distributed addresses in memory.*
+_A Singly Linked List’s non-contiguous data (Nodes) being stored at randomly distributed addresses in memory._
 
-For this reason, Linked List Nodes have *no indices*, and no *random access*. Without random access, we do not have the ability to look up an individual Linked List Node in constant time. Instead, to find a particular Node, we have to start at the very first Node and iterate through the Linked List one node at a time, checking each Node’s *next* Node until we find the one we’re interested in.
+For this reason, Linked List Nodes have _no indices_, and no _random access_. Without random access, we do not have the ability to look up an individual Linked List Node in constant time. Instead, to find a particular Node, we have to start at the very first Node and iterate through the Linked List one node at a time, checking each Node’s _next_ Node until we find the one we’re interested in.
 
-So when implementing a Linked List, we actually must implement both the Linked List class *and* the Node class. Since the actual data lives in the Nodes, it’s simpler to implement the Node class first.
+So when implementing a Linked List, we actually must implement both the Linked List class _and_ the Node class. Since the actual data lives in the Nodes, it’s simpler to implement the Node class first.
 
 ### Types of Linked Lists
 
@@ -67,10 +64,10 @@ There are four flavors of Linked List you should be familiar with when walking i
 
 For instance:
 
-*   <span id="a0e8">Any type of Linked List can be implemented Circularly (e.g. A Circular Doubly Linked List).</span>
-*   <span id="c0ff">A Doubly Linked List is actually just a special case of a Multiply Linked List.</span>
+- <span id="a0e8">Any type of Linked List can be implemented Circularly (e.g. A Circular Doubly Linked List).</span>
+- <span id="c0ff">A Doubly Linked List is actually just a special case of a Multiply Linked List.</span>
 
-You are most likely to encounter Singly and Doubly Linked Lists in your upcoming job search, so we are going to focus exclusively on those two moving forward. However, in more senior level interviews, it is very valuable to have some familiarity with the other types of Linked Lists. Though you may not actually code them out, *you will win extra points by illustrating your ability to weigh the tradeoffs of your technical decisions* by discussing how your choice of Linked List type may affect the efficiency of the solutions you propose.
+You are most likely to encounter Singly and Doubly Linked Lists in your upcoming job search, so we are going to focus exclusively on those two moving forward. However, in more senior level interviews, it is very valuable to have some familiarity with the other types of Linked Lists. Though you may not actually code them out, _you will win extra points by illustrating your ability to weigh the tradeoffs of your technical decisions_ by discussing how your choice of Linked List type may affect the efficiency of the solutions you propose.
 
 ### Linked List Methods
 
@@ -126,7 +123,7 @@ Yes, it is tempting to call insertion or deletion in the middle of a Linked List
 
 For this reason, we separate the Access time complexity from the Insertion/Deletion time complexity, and formally state that Insertion and Deletion in a Linked List are **Constant Time** across the board.
 
-***Note:*** *Without a reference to the node at which an insertion or deletion will occur, due to linear time lookup, an insertion or deletion in the middle of a Linked List will still take Linear Time, sum total.*
+**_Note:_** _Without a reference to the node at which an insertion or deletion will occur, due to linear time lookup, an insertion or deletion in the middle of a Linked List will still take Linear Time, sum total._
 
 ### Space Complexity
 
@@ -137,15 +134,15 @@ For this reason, we separate the Access time complexity from the Insertion/Delet
 
 #### Discussion
 
-It’s obvious that Linked Lists have one node for every one item in the list, and for that reason we know that Linked Lists take up Linear Space in memory. However, when asked in an interview setting what the Space Complexity *of your solution* to a problem is, it’s important to recognize the difference between the two scenarios above.
+It’s obvious that Linked Lists have one node for every one item in the list, and for that reason we know that Linked Lists take up Linear Space in memory. However, when asked in an interview setting what the Space Complexity _of your solution_ to a problem is, it’s important to recognize the difference between the two scenarios above.
 
-In Scenario 1, we *are not* creating a new Linked List. We simply need to operate on the one given. Since we are not storing a *new* node for every node represented in the Linked List we are provided, our solution is *not necessarily* linear in space.
+In Scenario 1, we _are not_ creating a new Linked List. We simply need to operate on the one given. Since we are not storing a _new_ node for every node represented in the Linked List we are provided, our solution is _not necessarily_ linear in space.
 
-In Scenario 2, we *are* creating a new Linked List. If the number of nodes we create is linearly correlated to the size of our input data, we are now operating in Linear Space.
+In Scenario 2, we _are_ creating a new Linked List. If the number of nodes we create is linearly correlated to the size of our input data, we are now operating in Linear Space.
 
-***Note****: Linked Lists can be traversed both iteratively and recursively. If you choose to traverse a Linked List recursively, there will be a recursive function call added to the call stack for every node in the Linked List. Even if you’re provided the Linked List, as in Scenario 1, you will still use Linear Space in the call stack, and that counts.*
+**\*Note\*\***: Linked Lists can be traversed both iteratively and recursively. If you choose to traverse a Linked List recursively, there will be a recursive function call added to the call stack for every node in the Linked List. Even if you’re provided the Linked List, as in Scenario 1, you will still use Linear Space in the call stack, and that counts.\*
 
-------------------------------------------------------------------------
+---
 
 ### Stacks and Queues
 
@@ -167,11 +164,11 @@ The name Stack actually comes from this characteristic, as it is helpful to visu
 
 If you can imagine adding items to, or removing items from, a Stack of…literally anything…you’ll realize that every (sane) person naturally obeys the LIFO rule.
 
-We add things to the *top* of a stack. We remove things from the *top* of a stack. We never add things to, or remove things from, the *bottom* of the stack. That’s just crazy.
+We add things to the _top_ of a stack. We remove things from the _top_ of a stack. We never add things to, or remove things from, the _bottom_ of the stack. That’s just crazy.
 
 Note: We can use JavaScript Arrays to implement a basic stack. `Array#push` adds to the top of the stack and `Array#pop` will remove from the top of the stack. In the exercise that follows, we’ll build our own Stack class from scratch (without using any arrays). In an interview setting, your evaluator may be okay with you using an array as a stack.
 
-------------------------------------------------------------------------
+---
 
 ### What is a Queue?
 
@@ -179,9 +176,9 @@ Queues are a First In First Out (FIFO) data structure. The first Node added to t
 
 The name Queue comes from this characteristic, as it is helpful to visualize this data structure as a horizontal line of items with a beginning and an end. Personally, I like to think of a Queue as the line one waits on for an amusement park, at a grocery store checkout, or to see the teller at a bank.
 
-If you can imagine a queue of humans waiting…again, for literally anything…you’ll realize that *most* people (the civil ones) naturally obey the FIFO rule.
+If you can imagine a queue of humans waiting…again, for literally anything…you’ll realize that _most_ people (the civil ones) naturally obey the FIFO rule.
 
-People add themselves to the *back* of a queue, wait their turn in line, and make their way toward the *front*. People exit from the *front* of a queue, but only when they have made their way to being first in line.
+People add themselves to the _back_ of a queue, wait their turn in line, and make their way toward the _front_. People exit from the _front_ of a queue, but only when they have made their way to being first in line.
 
 We never add ourselves to the front of a queue (unless there is no one else in line), otherwise we would be “cutting” the line, and other humans don’t seem to appreciate that.
 
@@ -195,7 +192,7 @@ Stacks and Queues are so similar in composition that we can discuss their proper
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*aZCnZJzaeY74DTb2CTRuFA.png" class="graf-image" /></figure>Notice that rather than having a `head` and a `tail` like Linked Lists, Stacks have a `top` , and Queues have a `front` and a `back` instead. Stacks don’t have the equivalent of a `tail` because you only ever push or pop things off the top of Stacks. These properties are essentially the same; pointers to the end points of the respective List ADT where important actions way take place. The differences in naming conventions are strictly for human comprehension.
 
-------------------------------------------------------------------------
+---
 
 Similarly to Linked Lists, the values stored inside a Stack or a Queue are actually contained within Stack Node and Queue Node instances. Stack, Queue, and Singly Linked List Nodes are all identical, but just as a reminder and for the sake of completion, these List Nodes track the following two properties:
 
@@ -241,22 +238,22 @@ Additionally, Stacks and Queues serve as the essential underlying data structure
 
 #### Stacks
 
-*   <span id="f63a">The Call Stack is a Stack data structure, and is used to manage the order of function invocations in your code.</span>
-*   <span id="6b24">Browser History is often implemented using a Stack, with one great example being the browser history object in the very popular React Router module.</span>
-*   <span id="098f">Undo/Redo functionality in just about any application. For example:</span>
-*   <span id="f15d">When you’re coding in your text editor, each of the actions you take on your keyboard are recorded by `push`ing that event to a Stack.</span>
-*   <span id="e303">When you hit \[cmd + z\] to undo your most recent action, that event is `pop`ed off the Stack, because the last event that occured should be the first one to be undone (LIFO).</span>
-*   <span id="9248">When you hit \[cmd + y\] to redo your most recent action, that event is `push`ed back onto the Stack.</span>
+- <span id="f63a">The Call Stack is a Stack data structure, and is used to manage the order of function invocations in your code.</span>
+- <span id="6b24">Browser History is often implemented using a Stack, with one great example being the browser history object in the very popular React Router module.</span>
+- <span id="098f">Undo/Redo functionality in just about any application. For example:</span>
+- <span id="f15d">When you’re coding in your text editor, each of the actions you take on your keyboard are recorded by `push`ing that event to a Stack.</span>
+- <span id="e303">When you hit \[cmd + z\] to undo your most recent action, that event is `pop`ed off the Stack, because the last event that occured should be the first one to be undone (LIFO).</span>
+- <span id="9248">When you hit \[cmd + y\] to redo your most recent action, that event is `push`ed back onto the Stack.</span>
 
 #### Queues
 
-*   <span id="7c8d">Printers use a Queue to manage incoming jobs to ensure that documents are printed in the order they are received.</span>
-*   <span id="89e7">Chat rooms, online video games, and customer service phone lines use a Queue to ensure that patrons are served in the order they arrive.</span>
-*   <span id="c02a">In the case of a Chat Room, to be admitted to a size-limited room.</span>
-*   <span id="353e">In the case of an Online Multi-Player Game, players wait in a lobby until there is enough space and it is their turn to be admitted to a game.</span>
-*   <span id="6a8e">In the case of a Customer Service Phone Line…you get the point.</span>
-*   <span id="0ad5">As a more advanced use case, Queues are often used as components or services in the system design of a service-oriented architecture. A very popular and easy to use example of this is Amazon’s Simple Queue Service (SQS), which is a part of their Amazon Web Services (AWS) offering.</span>
-*   <span id="48e7">You would add this service to your system between two other services, one that is sending information for processing, and one that is receiving information to be processed, when the volume of incoming requests is high and the integrity of the order with which those requests are processed must be maintained.</span>
+- <span id="7c8d">Printers use a Queue to manage incoming jobs to ensure that documents are printed in the order they are received.</span>
+- <span id="89e7">Chat rooms, online video games, and customer service phone lines use a Queue to ensure that patrons are served in the order they arrive.</span>
+- <span id="c02a">In the case of a Chat Room, to be admitted to a size-limited room.</span>
+- <span id="353e">In the case of an Online Multi-Player Game, players wait in a lobby until there is enough space and it is their turn to be admitted to a game.</span>
+- <span id="6a8e">In the case of a Customer Service Phone Line…you get the point.</span>
+- <span id="0ad5">As a more advanced use case, Queues are often used as components or services in the system design of a service-oriented architecture. A very popular and easy to use example of this is Amazon’s Simple Queue Service (SQS), which is a part of their Amazon Web Services (AWS) offering.</span>
+- <span id="48e7">You would add this service to your system between two other services, one that is sending information for processing, and one that is receiving information to be processed, when the volume of incoming requests is high and the integrity of the order with which those requests are processed must be maintained.</span>
 
 **If you found this guide helpful feel free to checkout my other articles:**
 

@@ -6,101 +6,93 @@ description: Review
 
 ### Review of Concepts
 
-### Running JS Locally  Concepts
+### Running JS Locally Concepts
 
-* Match the commands `ls`, `cd`,  `pwd` to their descriptions
-  + `ls` lists contents of current directory
-  + `cd` changes current directory
+- Match the commands `ls`, `cd`, `pwd` to their descriptions
+  - `ls` lists contents of current directory
+  - `cd` changes current directory
     - `cd ..` takes you up one level
     - `cd` alone takes you back home
-  + `pwd` returns current directory
-* Given a folder structure diagram, a list of 'cd \(path\)' commands and target files, match the paths to the target files.
-* Use VSCode to create a folder. Within the folder create a .js file containing `console.log('hello new world');` and save it.
-* Use node to execute a JavaScript file in the terminal
+  - `pwd` returns current directory
+- Given a folder structure diagram, a list of 'cd \(path\)' commands and target files, match the paths to the target files.
+- Use VSCode to create a folder. Within the folder create a .js file containing `console.log('hello new world');` and save it.
+- Use node to execute a JavaScript file in the terminal
 
 ### Plain Old JS Object Lesson Concepts
 
-* Label variables as either Primitive vs. Reference
-  + primitives: strings, booleans, numbers, null and undefined
+- Label variables as either Primitive vs. Reference
+  - primitives: strings, booleans, numbers, null and undefined
     - primitives are immutable
-  + refereces: objects \(including arrays\)
+  - refereces: objects \(including arrays\)
     - references are mutable
-* Identify when to use `.` vs `[]` when accessing values of an object
-  + dot syntax `object.key`
+- Identify when to use `.` vs `[]` when accessing values of an object
+  - dot syntax `object.key`
     - easier to read
     - easier to write
     - cannot use variables as keys
     - keys cannot begin with a number
-  + bracket notation `object["key]`
+  - bracket notation `object["key]`
     - allows variables as keys
     - strings that start with numbers can be use as keys
-* Write an object literal with a variable key using interpolation
-  + put it in brackets to access the value of the variable, rather than just make the value that string
-
-    
+- Write an object literal with a variable key using interpolation
+  - put it in brackets to access the value of the variable, rather than just make the value that string
 
 ```javascript
-    let a = "b";
-    let obj = {
-        a: "letter_a",
-        [a]: "letter b"
-    }
+let a = "b";
+let obj = {
+  a: "letter_a",
+  [a]: "letter b",
+};
 ```
 
-* Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
-  + can also use `(key in object)` syntax interchangeably \(returns a boolean\)
-* Utilize Object.keys and Object.values in a function
-  + `Object.keys(obj)` returns an array of all the keys in `obj`
-  + `Object.values(obj)` returns an array of the values in `obj`
-* Iterate through an object using a `for in` loop
-
-  
+- Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
+  - can also use `(key in object)` syntax interchangeably \(returns a boolean\)
+- Utilize Object.keys and Object.values in a function
+  - `Object.keys(obj)` returns an array of all the keys in `obj`
+  - `Object.values(obj)` returns an array of the values in `obj`
+- Iterate through an object using a `for in` loop
 
 ```javascript
-  let printValues = function(obj) {
-      for (let key in obj) {
-          let value = obj[key];
-          console.log(value);
-      }
+let printValues = function (obj) {
+  for (let key in obj) {
+    let value = obj[key];
+    console.log(value);
   }
+};
 ```
 
-* Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
-  + `...rest` syntax will store all additional arguments in an array
-  + array will be empty if there are no additional arguments
-
-    
+- Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
+  - `...rest` syntax will store all additional arguments in an array
+  - array will be empty if there are no additional arguments
 
 ```javascript
-    let myFunction = function(str, ...strs) {
-        console.log("The first string is " + str);
-        console.log("The rest of the strings are:");
-        strs.forEach(function(str) {
-            console.log(str);
-        })
-    }
+let myFunction = function (str, ...strs) {
+  console.log("The first string is " + str);
+  console.log("The rest of the strings are:");
+  strs.forEach(function (str) {
+    console.log(str);
+  });
+};
 ```
 
-### 
+###
 
-* Use `...spread` syntax for Object literals and Array literals
-
-  
+- Use `...spread` syntax for Object literals and Array literals
 
 ```javascript
-  let arr1 = ["a", "b", "c"];
-  let longer = [...arr1, "d", "e"]; // ["a", "b", "c", "d", "e"]
-  // without spread syntax, this would give you a nested array
-  let withoutRest = [arr1, "d", "e"] // [["a", "b", "c"], "d", "e"]
+let arr1 = ["a", "b", "c"];
+let longer = [...arr1, "d", "e"]; // ["a", "b", "c", "d", "e"]
+// without spread syntax, this would give you a nested array
+let withoutRest = [arr1, "d", "e"]; // [["a", "b", "c"], "d", "e"]
 ```
 
-* Destructure an array to reference specific elements
+- Destructure an array to reference specific elements
 
   \ `\` \`javascript
 
-  let array = \[35, 9\]; 
+  let array = \[35, 9\];
 
-  let \[firstEl, secondEl\] = array; 
+  let \[firstEl, secondEl\] = array;
 
   console.log\(firstEl\); // =&gt; 35
 
@@ -145,50 +137,48 @@ let { favorites: {color, food: vegetable} } = obj;
 console.log(color, vegetable); //=> mauve spaghetti squash
 ```
 
-* Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
-
-  
+- Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
 
 ```javascript
-  //
-  let elementCounts = function(array) {
-      let obj = {};
-      array.forEach(function(el) {
-          if (el in obj) obj[el] += 1;
-          else obj[el] = 1;
-      })
-      return obj;
-  }
-  console.log(elementCounts(["e", "f", "g", "f"])); // => Object {e: 1, f: 2, g: 1}
+//
+let elementCounts = function (array) {
+  let obj = {};
+  array.forEach(function (el) {
+    if (el in obj) obj[el] += 1;
+    else obj[el] = 1;
+  });
+  return obj;
+};
+console.log(elementCounts(["e", "f", "g", "f"])); // => Object {e: 1, f: 2, g: 1}
 ```
 
 ### Callbacks Lesson Concepts
 
-* Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.
-  + they can be stored in variables, passed as arguments to other functions, and serve as return value for a function
-  + supports same basic operations as other types \(strings, bools, numbers\)
-  + higher-order functions take functions as arguments or return functions as values
-* Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed
-  + what is this referring to?
-* Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
+- Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.
+  - they can be stored in variables, passed as arguments to other functions, and serve as return value for a function
+  - supports same basic operations as other types \(strings, bools, numbers\)
+  - higher-order functions take functions as arguments or return functions as values
+- Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed
+  - what is this referring to?
+- Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
 
 ```javascript
-let greaterCB = function(val, callback1, callback2) {
-    if (callback1(val) > callback2(val)) {
-        return callback1(val);
-    }
-    return callback2(val);
-}
+let greaterCB = function (val, callback1, callback2) {
+  if (callback1(val) > callback2(val)) {
+    return callback1(val);
+  }
+  return callback2(val);
+};
 
-let greaterCB = function(val, callback1, callback2) {
-    if (callback1(val) > callback2(val)) {
-        return callback1(val);
-    }
-    return callback2(val);
-}
+let greaterCB = function (val, callback1, callback2) {
+  if (callback1(val) > callback2(val)) {
+    return callback1(val);
+  }
+  return callback2(val);
+};
 ```
 
-// shorter version let greaterCB = function\(val, callback1, callback2\) { return Math.max\(callback1\(val\), callback2\(val\)\); } // even shorter, cause why not let greaterCB = \(val, cb1, cb2\) =&gt; Math.max\(cb1\(val\), cb2\(val\)\); 
+// shorter version let greaterCB = function\(val, callback1, callback2\) { return Math.max\(callback1\(val\), callback2\(val\)\); } // even shorter, cause why not let greaterCB = \(val, cb1, cb2\) =&gt; Math.max\(cb1\(val\), cb2\(val\)\);
 
 ```javascript
 -Write a
@@ -216,98 +206,95 @@ let myMapArrow = (array, callback) => {
 console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
 ```
 
-* Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#filter`.
-
-  
+- Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#filter`.
 
 ```javascript
-  let myFilter = function(array, callback) {
-      let filtered = [];
-      for (let i = 0; i < array.length; i++) {
-          if (callback(array[i])) {
-              filtered.push(array[i], i, array);
-          }
-      }
+let myFilter = function (array, callback) {
+  let filtered = [];
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i])) {
+      filtered.push(array[i], i, array);
+    }
   }
+};
 ```
 
-* Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
-
-  
+- Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
 
 ```javascript
-  let myEvery = function(array, callback) {
-      for (let i = 0; i < array.length; i++) {
-          if (!callback(array[i], i, array)) {
-              return false
-          }
-      }
-      return true;
+let myEvery = function (array, callback) {
+  for (let i = 0; i < array.length; i++) {
+    if (!callback(array[i], i, array)) {
+      return false;
+    }
   }
-  // with arrow function syntax
-  let myEvery = (array, callback) => {
-      for (let i = 0; i < array.length; i++) {
-          if (!callback(array[i])) {
-              return false
-          }
-      }
-      return true;
+  return true;
+};
+// with arrow function syntax
+let myEvery = (array, callback) => {
+  for (let i = 0; i < array.length; i++) {
+    if (!callback(array[i])) {
+      return false;
+    }
   }
+  return true;
+};
 ```
 
 ### Scope Lesson Concepts
 
-* Identify the difference between `const`, `let`, and `var` declarations
-  + `const` - cannot reassign variable, scoped to block
-  + `let` - can reassign variable, scoped to block
-  + `var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!
-  + a variable will always evaluate to the value it contains regardless of how it was declared
-* Explain the difference between `const`, `let`, and `var` declarations
-  + `var` is function scoped—so if you declare it anywhere in a function, the declaration \(but not assignment\) is "hoisted"
+- Identify the difference between `const`, `let`, and `var` declarations
+  - `const` - cannot reassign variable, scoped to block
+  - `let` - can reassign variable, scoped to block
+  - `var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!
+  - a variable will always evaluate to the value it contains regardless of how it was declared
+- Explain the difference between `const`, `let`, and `var` declarations
+  - `var` is function scoped—so if you declare it anywhere in a function, the declaration \(but not assignment\) is "hoisted"
     - so it will exist in memory as "undefined" which is bad and unpredictable
-  + `var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!
-  + `const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object
-  + block-scoped variables allow new variables with the same name in new scopes
-  + block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared
-  + if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD
+  - `var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!
+  - `const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object
+  - block-scoped variables allow new variables with the same name in new scopes
+  - block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared
+  - if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD
     - if you assign a value without a declaration, it exists in the global scope \(so then it would be accessible by all outer scopes, so bad\). however, there's no hoisting, so it doesn't exist in the scope until after the line is run
-* Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
-  + scope of a program means the set of variables that are available for use within the program
-  + global scope is represented by the `window` object in the browser and the `global` object in Node.js
+- Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+  - scope of a program means the set of variables that are available for use within the program
+  - global scope is represented by the `window` object in the browser and the `global` object in Node.js
     - global variables are available everywhere, and so increase the risk of name collisions
-  + local scope is the set of variables available for use within the function
+  - local scope is the set of variables available for use within the function
     - when we enter a function, we enter a new scope
     - includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined \(hmm about that last one\)
-  + for blocks \(denoted by curly braces `{}`, as in conditionals or `for` loops\), variables can be block scoped
-  + inner scope does not have access to variables in the outer scope
+  - for blocks \(denoted by curly braces `{}`, as in conditionals or `for` loops\), variables can be block scoped
+  - inner scope does not have access to variables in the outer scope
     - scope chaining—if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found
     - so an inner scope can access outer scope variables
     - but an outer scope can never access inner scope variables
-* Define an arrow function
+- Define an arrow function
 
   \ `\` \`javascript
 
   let arrowFunction = \(param1, param2\) =&gt; {
 
-   let sum = param1 + param2; 
+  let sum = param1 + param2;
 
-   return sum; 
+  return sum;
 
   }
 
 // with 1 param you can remove parens around parameters let arrowFunction = param =&gt; { param += 1; return param; }
 
-// if your return statement is one line, you can use implied return let arrowFunction = param =&gt; param + 1; 
+// if your return statement is one line, you can use implied return let arrowFunction = param =&gt; param + 1;
 
-// you don't have to assign to variable, can be anonymous // if you never need to use it again param =&gt; param + 1; 
+// you don't have to assign to variable, can be anonymous // if you never need to use it again param =&gt; param + 1;
 
 \ `\` \`
 
-* Given an arrow function, deduce the value of `this` without executing the code
-  + arrow functions are automatically bound to the context they were declared in
-  + unlike regular function which use the context they are invoked in \(unless they have been bound using `Function#bind`\)
-  + if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context
-  + so you can't use an arrow function to define a method directly
+- Given an arrow function, deduce the value of `this` without executing the code
+
+  - arrow functions are automatically bound to the context they were declared in
+  - unlike regular function which use the context they are invoked in \(unless they have been bound using `Function#bind`\)
+  - if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context
+  - so you can't use an arrow function to define a method directly
 
     \ `\` \`javascript
 
@@ -317,15 +304,15 @@ console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
 
     unboundFunc: function \(\) {
 
-       return this.name;
+    return this.name;
 
-       // this function will be able to be called on different objects
+    // this function will be able to be called on different objects
 
     },
 
-### 
+###
 
-boundToGlobal: \(\) =&gt; { return this.name; // this function, no matter how you call it, will be called // on the global object, and it cannot be rebound // this is because it was defined using arrow syntax }, 
+boundToGlobal: \(\) =&gt; { return this.name; // this function, no matter how you call it, will be called // on the global object, and it cannot be rebound // this is because it was defined using arrow syntax },
 
 ```javascript
 makeFuncBoundToObj: function() {
@@ -448,18 +435,16 @@ let counter3 = counter2;
 console.log(counter3());
 ```
 
-* Define a method that references `this` on an object literal
-  + when we use `this` in a method it refers to the object that the method is invoked on
+- Define a method that references `this` on an object literal
+  - when we use `this` in a method it refers to the object that the method is invoked on
     - it will let you access other pieces of information from within that object, or even other methods
-    - method style invocation -  `object.method(args)` \(e.g. built in examples like `Array#push`, or `String#toUpperCase`\)
-  + context is set every time we invoke a function
-  + function style invocation sets the context to the global object no matter what
-  + being inside an object does not make the context that object! you still have to use method-style invocation
-* Utilize the built in `Function#bind` on a callback to maintain the context of this
+    - method style invocation - `object.method(args)` \(e.g. built in examples like `Array#push`, or `String#toUpperCase`\)
+  - context is set every time we invoke a function
+  - function style invocation sets the context to the global object no matter what
+  - being inside an object does not make the context that object! you still have to use method-style invocation
+- Utilize the built in `Function#bind` on a callback to maintain the context of this
 
-  + when we call bind on a function, we get an exotic function back—so the context will always be the same for that new function
-
-  
+  - when we call bind on a function, we get an exotic function back—so the context will always be the same for that new function
 
 ```text
   let cat = {
@@ -474,13 +459,13 @@ console.log(counter3());
 
   // we can use the built in Function.bind to ensure our context, our this, // is the cat object let boundCat = sayMeow.bind(cat);
   boundCat(); // prints "meow"
-  ```
+```
 
-  \ `\`
+\ `\`
 
-### 
+###
 
-### 
+###
 
 ```javascript
    -`bind`
@@ -521,12 +506,10 @@ console.log(dog); // { name: 'Bowser', changeName: [Function: changeName] }
 console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 ```
 
-* CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
-  + could throw an error if it expects this to have some other method or whatever that doesn't exist
-  + you could also overwrite values or assign values to exist in a space where they should not exist
-* if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
-
-  
+- CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+  - could throw an error if it expects this to have some other method or whatever that doesn't exist
+  - you could also overwrite values or assign values to exist in a space where they should not exist
+- if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
 
 ```text
   let cat = {
@@ -538,15 +521,15 @@ console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
   },
   };
   global.setTimeout(cat.purrMore, 5000); // 5 seconds later: TypeError: this.purr is not a function
-  ```
+```
 
 we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 
-### 
+###
 
 let sayMeow = cat.purrMore; console.log\(sayMeow\(\)\); // TypeError: this.purr is not a function
 
-// we can use the built in Function.bind to ensure our context, our `this` , // is the cat object let boundCat = sayMeow.bind\(cat\); 
+// we can use the built in Function.bind to ensure our context, our `this` , // is the cat object let boundCat = sayMeow.bind\(cat\);
 
 boundCat\(\); // prints "meow"
 
@@ -589,10 +572,10 @@ console.log(dog); // { name: 'Bowser', changeName: [Function: changeName] }
 console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 ```
 
-* CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
-  + could throw an error if it expects this to have some other method or whatever that doesn't exist
-  + you could also overwrite values or assign values to exist in a space where they should not exist
-* if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
+- CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+  - could throw an error if it expects this to have some other method or whatever that doesn't exist
+  - you could also overwrite values or assign values to exist in a space where they should not exist
+- if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
 
   \ `\` \`javascript
 
@@ -600,23 +583,23 @@ console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
   purr: function \(\) {
 
-  console.log\("meow"\); 
+  console.log\("meow"\);
 
-  }, 
+  },
 
   purrMore: function \(\) {
 
-  this.purr\(\); 
+  this.purr\(\);
 
-  }, 
+  },
 
-  }; 
+  };
 
 global.setTimeout\(cat.purrMore, 5000\); // 5 seconds later: TypeError: this.purr is not a function
 
 \ `\` \`
 
-* we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
+- we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 
 ### POJOs
 
@@ -624,21 +607,21 @@ global.setTimeout\(cat.purrMore, 5000\); // 5 seconds later: TypeError: this.pur
 
 Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
 
-* Boolean - Primitive
-* Null - Primitive
-* Undefined - Primitive
-* Number - Primitive
-* String - Primitive
-* Array - Reference
-* Object - Reference
-* Function - Reference
+- Boolean - Primitive
+- Null - Primitive
+- Undefined - Primitive
+- Number - Primitive
+- String - Primitive
+- Array - Reference
+- Object - Reference
+- Function - Reference
 
 #### 2. Identify when to use . vs \[\] when accessing values of an object
 
 ```javascript
 let obj = {
-    "one": 1,
-    "two": 2
+  one: 1,
+  two: 2,
 };
 
 // Choose the square brackets property accessor when the property name is determined at
@@ -658,8 +641,8 @@ let keyName = "two";
 // If the key is not known, you can use an alternative `[]` syntax for
 // object initialization only
 let obj2 = {
-    [keyName]: 2
-}
+  [keyName]: 2,
+};
 console.log(obj2);
 ```
 
@@ -667,50 +650,54 @@ console.log(obj2);
 
 ```javascript
 function doesKeyExist(obj, key) {
-    // obj[key] !== undefined
-    // or:
-    return key in obj;
+  // obj[key] !== undefined
+  // or:
+  return key in obj;
 }
 
 let course = {
-    bootcamp: 'Lambda',
-    course: 'Bootcamp Prep'
-}
-console.log(doesKeyExist(course, 'course')); // => true
-console.log(doesKeyExist(course, 'name')); // => false
+  bootcamp: "Lambda",
+  course: "Bootcamp Prep",
+};
+console.log(doesKeyExist(course, "course")); // => true
+console.log(doesKeyExist(course, "name")); // => false
 ```
 
 #### 5. Utilize Object.keys and Object.values in a function
 
 ```javascript
 function printKeys(object) {
-    return Object.keys(object);
+  return Object.keys(object);
 }
 
 function printValues(object) {
-    return Object.values(object);
+  return Object.values(object);
 }
 
-console.log(printKeys({
+console.log(
+  printKeys({
     dog: "Strelka",
-    dog2: "Belka"
-}));
-console.log(printValues({
+    dog2: "Belka",
+  })
+);
+console.log(
+  printValues({
     dog: "Strelka",
-    dog2: "Belka"
-}));
+    dog2: "Belka",
+  })
+);
 ```
 
 #### 6. Iterate through an object using a for in loop
 
 ```javascript
 let player = {
-    name: "Sergey",
-    skill: "hockey"
+  name: "Sergey",
+  skill: "hockey",
 };
 
 for (let key in player) {
-    console.log(key, player[key]);
+  console.log(key, player[key]);
 }
 
 console.log(Object.entries(player));
@@ -720,13 +707,13 @@ console.log(Object.entries(player));
 
 ```javascript
 function restSum(...otherNums) {
-    let sum = 0;
-    console.log(otherNums);
-    otherNums.forEach(function(num) {
-        sum += num;
-    });
+  let sum = 0;
+  console.log(otherNums);
+  otherNums.forEach(function (num) {
+    sum += num;
+  });
 
-    return sum;
+  return sum;
 }
 
 console.log(restSum(3, 5, 6)); // => 14
@@ -738,18 +725,18 @@ console.log(restSum(0)); // => 0
 
 ```javascript
 let numArray = [1, 2, 3];
-let moreNums = [...numArray, 4, 5, 6]
+let moreNums = [...numArray, 4, 5, 6];
 
 console.log(moreNums);
 
 let shoe = {
-    color: "red",
-    size: 10
+  color: "red",
+  size: 10,
 };
 let newShoe = {
-    ...shoe,
-    brand: "Nike",
-    size: 12
+  ...shoe,
+  brand: "Nike",
+  size: 12,
 };
 console.log(newShoe);
 newShoe.color = "black";
@@ -761,7 +748,7 @@ console.log(shoe);
 #### 9. Destructure an array to reference specific elements
 
 ```javascript
-let arr = ['one', 'two', 'three'];
+let arr = ["one", "two", "three"];
 
 let [first] = arr;
 console.log(first);
@@ -771,20 +758,18 @@ console.log(first);
 
 ```javascript
 let me = {
-    name: "Ian",
-    instruments: ['bass', 'synth', 'guitar'],
-    siblings: {
-        brothers: ['Alistair'],
-        sisters: ['Meghan']
-    }
-}
+  name: "Ian",
+  instruments: ["bass", "synth", "guitar"],
+  siblings: {
+    brothers: ["Alistair"],
+    sisters: ["Meghan"],
+  },
+};
 
 let {
-    name,
-    instruments: musical_instruments,
-    siblings: {
-        sisters
-    }
+  name,
+  instruments: musical_instruments,
+  siblings: { sisters },
 } = me;
 
 console.log(name);
@@ -796,23 +781,21 @@ console.log(sisters);
 
 ```javascript
 function charCount(inputString) {
-
-    let res = inputString.split("").reduce(function(accum, el) {
-        if (el in accum) {
-            accum[el] = accum[el] + 1;
-        } else {
-            accum[el] = 1;
-        }
-        return accum;
-    }, {})
-    return res;
-
+  let res = inputString.split("").reduce(function (accum, el) {
+    if (el in accum) {
+      accum[el] = accum[el] + 1;
+    } else {
+      accum[el] = 1;
+    }
+    return accum;
+  }, {});
+  return res;
 }
 
-console.log(charCount('aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds'));
+console.log(charCount("aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds"));
 ```
 
-### 
+###
 
 ### Review of Concepts
 
@@ -824,25 +807,25 @@ console.log(charCount('aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds'));
 var a = "a";
 ```
 
-* `var` is the historical keyword used for variable declaration.
-* `var` declares variables in function scope, or global scope if not inside a function.
-* We consider `var` to be _deprecated_ and it is never used in this course.
+- `var` is the historical keyword used for variable declaration.
+- `var` declares variables in function scope, or global scope if not inside a function.
+- We consider `var` to be _deprecated_ and it is never used in this course.
 
 ```javascript
 let b = "b";
 ```
 
-* `let` is the keyword we use most often for variable declaration.
-* `let` declares variables in block scope.
-* variables declared with `let` are re-assignable.
+- `let` is the keyword we use most often for variable declaration.
+- `let` declares variables in block scope.
+- variables declared with `let` are re-assignable.
 
 ```javascript
 const c = "c";
 ```
 
-* `const` is a specialized form of `let` that can only be used to **initialize** a variable.
-* Except when it is declared, you cannot assign to a `const` variable.
-* `const` scopes variables the same way that `let` does.
+- `const` is a specialized form of `let` that can only be used to **initialize** a variable.
+- Except when it is declared, you cannot assign to a `const` variable.
+- `const` scopes variables the same way that `let` does.
 
 #### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
@@ -851,18 +834,18 @@ Consider this `run` function, inside which `foo` and `bar` have `function scope`
 ```javascript
 // function and block scope in this example
 function run() {
-    var foo = "Foo";
-    let bar = "Bar";
+  var foo = "Foo";
+  let bar = "Bar";
 
-    console.log(foo, bar);
+  console.log(foo, bar);
 
-    {
-        console.log(foo);
-        let baz = "Bazz";
-        console.log(baz);
-    }
+  {
+    console.log(foo);
+    let baz = "Bazz";
+    console.log(baz);
+  }
 
-    console.log(baz); // ReferenceError
+  console.log(baz); // ReferenceError
 }
 
 run();
@@ -874,9 +857,9 @@ Consider this `run` function, inside of which `foo` has `function scope` .
 
 ```javascript
 function run() {
-    console.log(foo); // undefined
-    var foo = "Foo";
-    console.log(foo); // Foo
+  console.log(foo); // undefined
+  var foo = "Foo";
+  console.log(foo); // Foo
 }
 
 run();
@@ -887,17 +870,17 @@ Consider this `func1` function and it's nested scopes.
 ```javascript
 // global scope
 function func1(arg1) {
-    // func1 scope
+  // func1 scope
 
-    return function func2(arg2) {
-        // func2 scope
+  return function func2(arg2) {
+    // func2 scope
 
-        return function func3(arg3) {
-            // func3 scope
+    return function func3(arg3) {
+      // func3 scope
 
-            console.log(arg1, arg2, arg3);
-        }
-    }
+      console.log(arg1, arg2, arg3);
+    };
+  };
 }
 ```
 
@@ -905,9 +888,9 @@ function func1(arg1) {
 
 ```javascript
 const adder = (arg1) => {
-    return (arg2) => {
-        return arg1 + arg2;
-    }
+  return (arg2) => {
+    return arg1 + arg2;
+  };
 };
 
 const func2 = adder(2);
@@ -927,7 +910,7 @@ Identically, we could write
 
 ```javascript
 const returnValue = (val) => {
-    return val;
+  return val;
 };
 ```
 
@@ -935,12 +918,12 @@ const returnValue = (val) => {
 
 ```javascript
 function fDAdder(arr) {
-    console.log(this);
+  console.log(this);
 
-    return arr.reduce((acc, ele) => {
-        return acc + ele;
-    });
-};
+  return arr.reduce((acc, ele) => {
+    return acc + ele;
+  });
+}
 
 fDAdder([1, 2, 4, 6]);
 ```
@@ -949,8 +932,8 @@ If we use a _function declaration_ style function, the `this` variable is set to
 
 ```javascript
 const adder = (arr) => {
-    console.log(this);
-    arr.reduce((acc, ele) => sum += ele);
+  console.log(this);
+  arr.reduce((acc, ele) => (sum += ele));
 };
 adder([1, 2, 4, 6]);
 ```
@@ -961,12 +944,12 @@ In this example, we use a _fat arrow_ style function. Note that when we declare 
 
 ```javascript
 const pokemon = {
-    firstname: 'Pika',
-    lastname: 'Chu',
-    getPokeName: function() {
-        const fullname = `${this.firstname} ${this.lastname}`;
-        return fullname;
-    }
+  firstname: "Pika",
+  lastname: "Chu",
+  getPokeName: function () {
+    const fullname = `${this.firstname} ${this.lastname}`;
+    return fullname;
+  },
 };
 
 console.log(pokemon.getPokeName());
@@ -976,36 +959,36 @@ console.log(pokemon.getPokeName());
 
 ```javascript
 const pokemon = {
-    firstname: 'Pika',
-    lastname: 'Chu',
-    getPokeName: function() {
-        const fullname = `${this.firstname} ${this.lastname}`;
-        return fullname;
-    }
+  firstname: "Pika",
+  lastname: "Chu",
+  getPokeName: function () {
+    const fullname = `${this.firstname} ${this.lastname}`;
+    return fullname;
+  },
 };
 
 const logPokemon = pokemon.getPokename.bind(pokemon);
 
-logPokemon('sushi', 'algorithms'); // Pika Chu loves sushi and algorithms
+logPokemon("sushi", "algorithms"); // Pika Chu loves sushi and algorithms
 ```
 
 #### 9. Given a code snippet, identify what `this` refers to
 
 ```javascript
 function Person(name) {
-    // this.name = name; 
-    // let that = this;
+  // this.name = name;
+  // let that = this;
 
-    setTimeout(function() {
-        // console.log(this); // => Window
-        // console.log(that); // => [Function] => Person
-        // this.sayName(); // => no method error
-        that.sayName();
-    }, 1000);
+  setTimeout(function () {
+    // console.log(this); // => Window
+    // console.log(that); // => [Function] => Person
+    // this.sayName(); // => no method error
+    that.sayName();
+  }, 1000);
 }
 
-Person.prototype.sayName = function() {
-    console.log(this.name);
+Person.prototype.sayName = function () {
+  console.log(this.name);
 };
 
 const jane = new Person("Jane");

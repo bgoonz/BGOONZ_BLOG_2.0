@@ -185,7 +185,7 @@ sections:
           ![](/images/skillz.PNG)
         actions:
           - label: Learn More
-            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
+            url: "https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A"
             style: link
       - title: Showcase
         content: |
@@ -233,32 +233,32 @@ sections:
     subtitle: This is an optional description for the call to action block.
     actions:
       - label: Contact Me
-        url: 'mailto:bryan.guner@gmail.com'
+        url: "mailto:bryan.guner@gmail.com"
         style: primary
 seo:
   title: Stackbit Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Stackbit Web-Dev-HubTheme
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: The preview of the Web-Dev-Hubtheme
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/4.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Stackbit Web-Dev-HubTheme
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: The preview of the Web-Dev-Hubtheme
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/4.jpg
       relativeUrl: true
 template: advanced

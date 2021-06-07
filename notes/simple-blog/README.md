@@ -35,21 +35,19 @@ You can [create a site](https://app.stackbit.com/create?theme=https://github.com
 
 ## Develop Locally
 
-1. Install [Node.js and npm](https://nodejs.org/en/)
+1.  Install [Node.js and npm](https://nodejs.org/en/)
 
-1. Install npm dependencies:
+1.  Install npm dependencies:
 
         npm install
 
-
-
-1. Start the Next.js local development server:
+1.  Start the Next.js local development server:
 
         npm run develop
 
-1. Open [http://localhost:3000/](http://localhost:3000/) in the browser
+1.  Open [http://localhost:3000/](http://localhost:3000/) in the browser
 
-1. 🎉
+1.  🎉
 
 ## Editing Content
 

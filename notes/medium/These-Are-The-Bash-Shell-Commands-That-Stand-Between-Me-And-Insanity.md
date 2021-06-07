@@ -1,17 +1,14 @@
-
-
-These Are The Bash Shell Commands That Stand Between Me And Insanity.
-=====================================================================
+# These Are The Bash Shell Commands That Stand Between Me And Insanity.
 
 I will not profess to be a bash shell wizard… but I have managed to scour some pretty helpful little scripts from Stack Overflow and modify…
 
-------------------------------------------------------------------------
+---
 
 ### These Are The Bash Shell Commands That Stand Between Me And Insanity.
 
 #### I will not profess to be a bash shell wizard… but I have managed to scour some pretty helpful little scripts from Stack Overflow and modify them to suit my needs.
 
-***All of these commands are for Ubuntu/WSL … some may work in other scenarios but I can’t guarantee it.***
+**_All of these commands are for Ubuntu/WSL … some may work in other scenarios but I can’t guarantee it._**
 
 > **As of this writing I have about 120 more bash snippets I regularly use… I am not writing the whole article right now but I wanted to get it started so I feel obligated to finish it!**
 
@@ -53,9 +50,9 @@ I will not profess to be a bash shell wizard… but I have managed to scour some
 ### Remove Empty Files and Folders:
 
     find . -empty -type f -print -delete
-    find . -empty -type d -print -delete 
+    find . -empty -type d -print -delete
 
-***or***
+**_or_**
 
     find . -depth -exec rmdir {} \;
 

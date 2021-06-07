@@ -6,9 +6,9 @@
 
 <div class="nav-menu" id="nav-menu">
 
-*   [About](https://gomakethings.com/about)
-*   [Daily Tips](https://gomakethings.com/articles)
-*   [Learn JS](https://gomakethings.com/resources)
+- [About](https://gomakethings.com/about)
+- [Daily Tips](https://gomakethings.com/articles)
+- [Learn JS](https://gomakethings.com/resources)
 
 </div>
 
@@ -96,14 +96,14 @@ _**Like this?** I send out a short email each weekday with code snippets, tools,
 
 <footer class="container container-large">
 
-* * *
+---
 
 <nav class="tabindex nav-secondary" id="nav-secondary" tabindex="-1">
 
-*   [About](https://gomakethings.com/about)
-*   [Daily Tips](https://gomakethings.com/articles)
-*   [Learn JS](https://gomakethings.com/resources)
-*   [Search](https://gomakethings.com/search)
+- [About](https://gomakethings.com/about)
+- [Daily Tips](https://gomakethings.com/articles)
+- [Learn JS](https://gomakethings.com/resources)
+- [Search](https://gomakethings.com/search)
 
 </nav>
 

@@ -1,6 +1,6 @@
 ---
 title: Cur Ipse Pythagoras Et Aegyptum Lustravit
-date: '2020-05-28'
+date: "2020-05-28"
 author: content/data/team/gordon-norman.yaml
 categories:
   - content/data/categories/general.yaml
@@ -15,28 +15,28 @@ excerpt: >-
   inquit, me dixisse.
 seo:
   title: Cur Ipse Pythagoras Et Aegyptum Lustravit
-  description: 'Quis est, qui non oderit libidinosam, protervam adolescentiam'
+  description: "Quis est, qui non oderit libidinosam, protervam adolescentiam"
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Cur Ipse Pythagoras Et Aegyptum Lustravit
       keyName: property
-    - name: 'og:description'
-      value: 'Quis est, qui non oderit libidinosam, protervam adolescentiam'
+    - name: "og:description"
+      value: "Quis est, qui non oderit libidinosam, protervam adolescentiam"
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/3.png
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Cur Ipse Pythagoras Et Aegyptum Lustravit
-    - name: 'twitter:description'
-      value: 'Quis est, qui non oderit libidinosam, protervam adolescentiam'
-    - name: 'twitter:image'
+    - name: "twitter:description"
+      value: "Quis est, qui non oderit libidinosam, protervam adolescentiam"
+    - name: "twitter:image"
       value: images/3.png
       relativeUrl: true
 layout: post

@@ -19,15 +19,15 @@
   opacity: 1;
   padding: 0.9em 2.14285em;
   text-decoration: none;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   vertical-align: middle;
 
   &:hover,
   &:focus,
   &:active {
     color: #fff;
-    opacity: .8;
+    opacity: 0.8;
     outline: 0;
   }
 }

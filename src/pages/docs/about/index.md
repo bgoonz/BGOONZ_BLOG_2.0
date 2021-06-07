@@ -7,20 +7,20 @@ seo:
   title: Portfolio
   description: This is the Portfolio page
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Portfolio
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: This is the Portfolio page
       keyName: property
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Portfolio
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: This is the Portfolio page
 template: docs
 ---

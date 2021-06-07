@@ -1,11 +1,8 @@
-
-
-Front End Interview Questions Part 2
-====================================
+# Front End Interview Questions Part 2
 
 These will focus more on vocabulary and concepts than the application driven approach in my last post!
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -20,11 +17,11 @@ These will focus more on vocabulary and concepts than the application driven app
 <a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer’s Technical Interview</strong><br />
 <em>Questions…. Answers… and links to the missing pieces.</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-*   <span id="0232">**­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**</span>
+- <span id="0232">**­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**</span>
 
 Semantic HTML is markup that conveys meaning, not appearance, to search engines to make everything easier to identify.
 
-*   <span id="37b8">**Name two big differences between display: block; and display: inline; .**</span>
+- <span id="37b8">**Name two big differences between display: block; and display: inline; .**</span>
 
 block starts on a new line and takes up the full width of the content.  
  inline starts on the same line as previous content, in line with other content, and takes up only the space needed for the content.
@@ -87,23 +84,23 @@ It is code identified elsewhere that we can use later; gives the ability to put 
 
 Super ties the parent to the child.
 
-*   <span id="d57b">**What is the DOM?**</span>
+- <span id="d57b">**What is the DOM?**</span>
 
 Document object model, the ‘window’ or container that holds all the page’s elements
 
-*   <span id="6172">**What is an event?**</span>
+- <span id="6172">**What is an event?**</span>
 
 An event is something happening on or to the page, like a mouse click, doubleclick, key up/down, pointer out of element/over element, things like this. There are tons of “events” that javascript can detect.
 
-*   <span id="75c5">**What is an event listener?**</span>
+- <span id="75c5">**What is an event listener?**</span>
 
 Javascript command that ‘listens’ for an event to happen on the page to a given element and then runs a function when that event happens
 
-*   <span id="157d">**Why would we convert a NodeList into an Array?**</span>
+- <span id="157d">**Why would we convert a NodeList into an Array?**</span>
 
 A NodeList isn’t a real array, so it won’t have access to array methods such as slice or map.
 
-*   <span id="6934">**What is a component?**</span>
+- <span id="6934">**What is a component?**</span>
 
 Reusable pieces of code to display info in a consistent repeatable way
 
@@ -111,7 +108,7 @@ Reusable pieces of code to display info in a consistent repeatable way
 
 ReactJS is a library used to build large applications. It’s very good at assisting developers in manipulating the DOM element to create rich user experiences. We need a way to off-load the state/data that our apps use, and React helps us do that.
 
-· **What does it mean to *think* in react?**
+· **What does it mean to _think_ in react?**
 
 It makes you think about how to organize/build apps a little differently because it’s very scalable and allows you to build huge apps. React’s one-way data flow makes everything modular and fast. You can build apps top-down or bottom-up.
 
@@ -233,11 +230,11 @@ To uniquely identify each record/row.
 
 Foreign key
 
-· **What do we need in order to have a *many to many* relationship between two tables.**
+· **What do we need in order to have a _many to many_ relationship between two tables.**
 
 An **intermediary table** that holds foreign keys that reference the primary key on the related tables.
 
-· **What is the purpose of using *sessions*?**
+· **What is the purpose of using _sessions_?**
 
 The purpose is to persist data across requests.
 

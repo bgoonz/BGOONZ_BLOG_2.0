@@ -1,11 +1,8 @@
-
-
-Regular Expressions
-===================
+# Regular Expressions
 
 description:
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -13,7 +10,7 @@ description:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*VdDVM2Nzv6oGC5I0.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*D83R_a0SSgMR0hI4jP6Asw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*vk5n412Bs-dx6UdgyUywdg.png" class="graf-image" /></figure>### description:
 
-*Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the* `exec()` *and* `test()` *methods of* `RegExp`*, and with the* `match()`*,* `matchAll()`*,* `replace()`*,* `replaceAll()`*,* `search()`*, and* `split()` *methods of* `String`*. This chapter describes JavaScript regular expressions.*
+_Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the_ `exec()` _and_ `test()` _methods of_ `RegExp`_, and with the_ `match()`_,_ `matchAll()`_,_ `replace()`_,_ `replaceAll()`_,_ `search()`_, and_ `split()` _methods of_ `String`_. This chapter describes JavaScript regular expressions._
 
 ### Creating a regular expression
 
@@ -23,19 +20,19 @@ You construct a regular expression in one of two ways:
 
 `let re = /ab+c/;`
 
--   <span id="f4e2">Regular expression literals provide compilation of the regular expression when the script is loaded. If the regular expression remains constant, using this can improve performance.</span>
+- <span id="f4e2">Regular expression literals provide compilation of the regular expression when the script is loaded. If the regular expression remains constant, using this can improve performance.</span>
 
 **2. Or calling the constructor function of the** `RegExp` **object, as follows:**
 
--   <span id="2016">`let re = new RegExp('ab+c');`</span>
+- <span id="2016">`let re = new RegExp('ab+c');`</span>
 
-> *Using the constructor function provides runtime compilation of the regular expression*. Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input.
+> _Using the constructor function provides runtime compilation of the regular expression_. Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input.
 
 ### Writing a regular expression pattern
 
 A regular expression pattern is composed of simple characters, such as `/abc/`, or a combination of simple and special characters, such as `/ab*c/` or `/Chapter (\d+)\.\d*/`.
 
-The last example includes **parentheses, which are used as a memory device**. *The match made with this part of the pattern is remembered for later use.*
+The last example includes **parentheses, which are used as a memory device**. _The match made with this part of the pattern is remembered for later use._
 
 ### Using simple patterns
 
@@ -53,7 +50,7 @@ There is no match in the string `"Grab crab"` because while it contains the subs
 
 When the search for a match requires something more than a direct match, such as finding one or more b's, or finding white space, you can include special characters in the pattern.
 
-For example, to match *a single* `"a"` *followed by zero or more* `"b"`*s followed by* `"c"`, you'd use the pattern `/ab*c/`:
+For example, to match _a single_ `"a"` _followed by zero or more_ `"b"`_s followed by_ `"c"`, you'd use the pattern `/ab*c/`:
 
 > the `*` after `"b"` means "0 or more occurrences of the preceding item." In the string `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
 
@@ -121,7 +118,7 @@ Regular expressions are used with the `RegExp` **methods**
 
 and with the `String` **methods** `match()`**,** `replace()`**,** `search()`**, and** `split()`**.**
 
-------------------------------------------------------------------------
+---
 
 ### Method Descriptions
 
@@ -180,9 +177,9 @@ In the following example, the script uses the `exec()` method to find a match in
 
 If you do not need to access the properties of the regular expression, an alternative way of creating `myArray` is with this script:
 
-    let myArray = /d(b+)d/g.exec('cdbbdbsbz'); 
+    let myArray = /d(b+)d/g.exec('cdbbdbsbz');
         // similar to "cdbbdbsbz".match(/d(b+)d/g); however,
-        // "cdbbdbsbz".match(/d(b+)d/g) outputs Array [ "dbbd" ], while 
+        // "cdbbdbsbz".match(/d(b+)d/g) outputs Array [ "dbbd" ], while
         // /d(b+)d/g.exec('cdbbdbsbz') outputs Array [ 'dbbd', 'bb', index: 1, input: 'cdbbdbsbz' ].
 
 (See <a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions.md#g-different-behaviors" class="markup--anchor markup--p-anchor">different behaviors</a> for further info about the different behaviors.)
@@ -229,7 +226,7 @@ These flags can be used separately or together in any order, and are included as
 
 Flag Description Corresponding property
 
-------------------------------------------------------------------------
+---
 
 `g` Global search. `RegExp.prototype.global`
 
@@ -245,7 +242,7 @@ Flag Description Corresponding property
 
 #### Regular expression flags
 
-*To include a flag with the regular expression, use this syntax:*
+_To include a flag with the regular expression, use this syntax:_
 
     let re = /pattern/flags;
 
@@ -287,7 +284,7 @@ Contrast this `str.match(re)` versus `re.exec(str)`.
 The `g` flag is used with the `.exec()` method to get iterative progression.
 
     let xArray; while(xArray = re.exec(str)) console.log(xArray);
-    // produces: 
+    // produces:
     // ["fee ", index: 0, input: "fee fi fo fum"]
     // ["fi ", index: 4, input: "fee fi fo fum"]
     // ["fo ", index: 7, input: "fee fi fo fum"]
@@ -322,7 +319,7 @@ The `Change` event activated when the user presses Enter sets the value of `RegE
     function testInfo(phoneInput) {
       let OK = re.exec(phoneInput.value);
       if (!OK) {
-        console.error(phoneInput.value + ' isn\'t a phone number with area code!'); 
+        console.error(phoneInput.value + ' isn\'t a phone number with area code!');
       } else {
         console.log('Thanks, your phone number is ' + OK[0]);}
     }

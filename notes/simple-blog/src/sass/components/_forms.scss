@@ -61,7 +61,7 @@ textarea {
   &:before,
   &:after {
     border: solid transparent;
-    border-width: .3125em;
+    border-width: 0.3125em;
     box-sizing: border-box;
     content: "";
     position: absolute;
@@ -72,12 +72,12 @@ textarea {
 
   &:before {
     border-top-color: $color-text;
-    margin-top: .125em;
+    margin-top: 0.125em;
   }
 
   &:after {
     border-bottom-color: $color-text;
-    margin-top: -.75em;
+    margin-top: -0.75em;
   }
 }
 
@@ -85,7 +85,7 @@ textarea {
   padding-left: 1.5em;
   position: relative;
 
-  input[type=checkbox] {
+  input[type="checkbox"] {
     height: 1.5em;
     left: 0;
     position: absolute;

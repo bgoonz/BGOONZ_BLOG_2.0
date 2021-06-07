@@ -1,5 +1,5 @@
-window.onGatsbyRouteUpdate = function() {
-window.addMainNavigationHandlers();
-window.addDocsNavigationHandlers();
-window.addPageNavLinks();
+window.onGatsbyRouteUpdate = function () {
+  window.addMainNavigationHandlers();
+  window.addDocsNavigationHandlers();
+  window.addPageNavLinks();
 };

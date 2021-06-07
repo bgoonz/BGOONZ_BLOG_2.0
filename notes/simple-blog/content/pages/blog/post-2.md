@@ -1,6 +1,6 @@
 ---
-title: 'Non Minor, Inquit, Voluptas Percipitur Ex Vilissimis'
-date: '2020-05-25'
+title: "Non Minor, Inquit, Voluptas Percipitur Ex Vilissimis"
+date: "2020-05-25"
 author: content/data/team/miles-tone.yaml
 categories:
   - content/data/categories/news.yaml
@@ -14,29 +14,29 @@ excerpt: >-
   Quae diligentissime contra Aristonem dicuntur a Chryippo. Videamus igitur
   sententias eorum, tum ad verba redeamus. Levatio igitur vitiorum magna.
 seo:
-  title: 'Non Minor, Inquit, Voluptas Percipitur Ex Vilissimis'
+  title: "Non Minor, Inquit, Voluptas Percipitur Ex Vilissimis"
   description: Quae diligentissime contra Aristonem dicuntur a Chryippo
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
-      value: 'Non Minor, Inquit, Voluptas Percipitur Ex Vilissimis'
+    - name: "og:title"
+      value: "Non Minor, Inquit, Voluptas Percipitur Ex Vilissimis"
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: Quae diligentissime contra Aristonem dicuntur a Chryippo
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/2.png
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
-      value: 'Non Minor, Inquit, Voluptas Percipitur Ex Vilissimis'
-    - name: 'twitter:description'
+    - name: "twitter:title"
+      value: "Non Minor, Inquit, Voluptas Percipitur Ex Vilissimis"
+    - name: "twitter:description"
       value: Quae diligentissime contra Aristonem dicuntur a Chryippo
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/2.png
       relativeUrl: true
 layout: post

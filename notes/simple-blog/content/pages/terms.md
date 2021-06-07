@@ -4,20 +4,20 @@ seo:
   title: Privacy and Terms
   description: This is the privacy and terms page
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Privacy and Terms
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: This is the privacy and terms page
       keyName: property
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Privacy and Terms
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: This is the privacy and terms page
 layout: page
 ---
