@@ -17,39 +17,39 @@
 │   │   │   │   ├── ./notes/backup/content/data/config.json
 │   │   │   │   └── ./notes/backup/content/data/doc_sections.yml
 │   │   │   └── ./notes/backup/content/pages
-│   │   │       ├── ./notes/backup/content/pages/blog
-│   │   │       │   ├── ./notes/backup/content/pages/blog/community.md
-│   │   │       │   ├── ./notes/backup/content/pages/blog/conf.md
-│   │   │       │   ├── ./notes/backup/content/pages/blog/function-of-design.md
-│   │   │       │   ├── ./notes/backup/content/pages/blog/index.md
-│   │   │       │   └── ./notes/backup/content/pages/blog/libris-theme.md
-│   │   │       ├── ./notes/backup/content/pages/docs
-│   │   │       │   ├── ./notes/backup/content/pages/docs/about
-│   │   │       │   │   ├── ./notes/backup/content/pages/docs/about/features.md
-│   │   │       │   │   ├── ./notes/backup/content/pages/docs/about/index.md
-│   │   │       │   │   └── ./notes/backup/content/pages/docs/about/overview.md
-│   │   │       │   ├── ./notes/backup/content/pages/docs/community
-│   │   │       │   │   └── ./notes/backup/content/pages/docs/community/index.md
-│   │   │       │   ├── ./notes/backup/content/pages/docs/faq
-│   │   │       │   │   └── ./notes/backup/content/pages/docs/faq/index.md
-│   │   │       │   ├── ./notes/backup/content/pages/docs/getting-started
-│   │   │       │   │   ├── ./notes/backup/content/pages/docs/getting-started/index.md
-│   │   │       │   │   ├── ./notes/backup/content/pages/docs/getting-started/installation.md
-│   │   │       │   │   └── ./notes/backup/content/pages/docs/getting-started/quick-start.md
-│   │   │       │   ├── ./notes/backup/content/pages/docs/index.md
-│   │   │       │   ├── ./notes/backup/content/pages/docs/manage-content
-│   │   │       │   │   └── ./notes/backup/content/pages/docs/manage-content/index.md
-│   │   │       │   ├── ./notes/backup/content/pages/docs/tools
-│   │   │       │   │   ├── ./notes/backup/content/pages/docs/tools/index.md
-│   │   │       │   │   ├── ./notes/backup/content/pages/docs/tools/plug-ins.md
-│   │   │       │   │   └── ./notes/backup/content/pages/docs/tools/starter-theme.md
-│   │   │       │   └── ./notes/backup/content/pages/docs/ui-components
-│   │   │       │       ├── ./notes/backup/content/pages/docs/ui-components/index.md
-│   │   │       │       └── ./notes/backup/content/pages/docs/ui-components/typography.md
-│   │   │       ├── ./notes/backup/content/pages/index.md
-│   │   │       ├── ./notes/backup/content/pages/overview.md
-│   │   │       ├── ./notes/backup/content/pages/showcase.md
-│   │   │       └── ./notes/backup/content/pages/style-guide.md
+│   │   │   ├── ./notes/backup/content/pages/blog
+│   │   │   │   ├── ./notes/backup/content/pages/blog/community.md
+│   │   │   │   ├── ./notes/backup/content/pages/blog/conf.md
+│   │   │   │   ├── ./notes/backup/content/pages/blog/function-of-design.md
+│   │   │   │   ├── ./notes/backup/content/pages/blog/index.md
+│   │   │   │   └── ./notes/backup/content/pages/blog/libris-theme.md
+│   │   │   ├── ./notes/backup/content/pages/docs
+│   │   │   │   ├── ./notes/backup/content/pages/docs/about
+│   │   │   │   │   ├── ./notes/backup/content/pages/docs/about/features.md
+│   │   │   │   │   ├── ./notes/backup/content/pages/docs/about/index.md
+│   │   │   │   │   └── ./notes/backup/content/pages/docs/about/overview.md
+│   │   │   │   ├── ./notes/backup/content/pages/docs/community
+│   │   │   │   │   └── ./notes/backup/content/pages/docs/community/index.md
+│   │   │   │   ├── ./notes/backup/content/pages/docs/faq
+│   │   │   │   │   └── ./notes/backup/content/pages/docs/faq/index.md
+│   │   │   │   ├── ./notes/backup/content/pages/docs/getting-started
+│   │   │   │   │   ├── ./notes/backup/content/pages/docs/getting-started/index.md
+│   │   │   │   │   ├── ./notes/backup/content/pages/docs/getting-started/installation.md
+│   │   │   │   │   └── ./notes/backup/content/pages/docs/getting-started/quick-start.md
+│   │   │   │   ├── ./notes/backup/content/pages/docs/index.md
+│   │   │   │   ├── ./notes/backup/content/pages/docs/manage-content
+│   │   │   │   │   └── ./notes/backup/content/pages/docs/manage-content/index.md
+│   │   │   │   ├── ./notes/backup/content/pages/docs/tools
+│   │   │   │   │   ├── ./notes/backup/content/pages/docs/tools/index.md
+│   │   │   │   │   ├── ./notes/backup/content/pages/docs/tools/plug-ins.md
+│   │   │   │   │   └── ./notes/backup/content/pages/docs/tools/starter-theme.md
+│   │   │   │   └── ./notes/backup/content/pages/docs/ui-components
+│   │   │   │   ├── ./notes/backup/content/pages/docs/ui-components/index.md
+│   │   │   │   └── ./notes/backup/content/pages/docs/ui-components/typography.md
+│   │   │   ├── ./notes/backup/content/pages/index.md
+│   │   │   ├── ./notes/backup/content/pages/overview.md
+│   │   │   ├── ./notes/backup/content/pages/showcase.md
+│   │   │   └── ./notes/backup/content/pages/style-guide.md
 │   │   ├── ./notes/backup/links.txt
 │   │   ├── ./notes/backup/netlify.toml
 │   │   ├── ./notes/backup/next.config.js
@@ -65,33 +65,33 @@
 │   │   │   │   │   │   └── ./notes/backup/simple-blog/content/data/categories/tutorials.yaml
 │   │   │   │   │   ├── ./notes/backup/simple-blog/content/data/config.json
 │   │   │   │   │   └── ./notes/backup/simple-blog/content/data/team
-│   │   │   │   │       ├── ./notes/backup/simple-blog/content/data/team/dianne-ameter.yaml
-│   │   │   │   │       ├── ./notes/backup/simple-blog/content/data/team/eleanor-carr.yaml
-│   │   │   │   │       ├── ./notes/backup/simple-blog/content/data/team/gordon-norman.yaml
-│   │   │   │   │       ├── ./notes/backup/simple-blog/content/data/team/hanson-deck.yaml
-│   │   │   │   │       └── ./notes/backup/simple-blog/content/data/team/miles-tone.yaml
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/data/team/dianne-ameter.yaml
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/data/team/eleanor-carr.yaml
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/data/team/gordon-norman.yaml
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/data/team/hanson-deck.yaml
+│   │   │   │   │   └── ./notes/backup/simple-blog/content/data/team/miles-tone.yaml
 │   │   │   │   └── ./notes/backup/simple-blog/content/pages
-│   │   │   │       ├── ./notes/backup/simple-blog/content/pages/about.md
-│   │   │   │       ├── ./notes/backup/simple-blog/content/pages/blog
-│   │   │   │       │   ├── ./notes/backup/simple-blog/content/pages/blog/author
-│   │   │   │       │   │   ├── ./notes/backup/simple-blog/content/pages/blog/author/dianne-ameter.md
-│   │   │   │       │   │   ├── ./notes/backup/simple-blog/content/pages/blog/author/gordon-norman.md
-│   │   │   │       │   │   └── ./notes/backup/simple-blog/content/pages/blog/author/miles-tone.md
-│   │   │   │       │   ├── ./notes/backup/simple-blog/content/pages/blog/category
-│   │   │   │       │   │   ├── ./notes/backup/simple-blog/content/pages/blog/category/general.md
-│   │   │   │       │   │   ├── ./notes/backup/simple-blog/content/pages/blog/category/news.md
-│   │   │   │       │   │   └── ./notes/backup/simple-blog/content/pages/blog/category/tutorials.md
-│   │   │   │       │   ├── ./notes/backup/simple-blog/content/pages/blog/index.md
-│   │   │   │       │   ├── ./notes/backup/simple-blog/content/pages/blog/post-1.md
-│   │   │   │       │   ├── ./notes/backup/simple-blog/content/pages/blog/post-2.md
-│   │   │   │       │   ├── ./notes/backup/simple-blog/content/pages/blog/post-3.md
-│   │   │   │       │   ├── ./notes/backup/simple-blog/content/pages/blog/post-4.md
-│   │   │   │       │   └── ./notes/backup/simple-blog/content/pages/blog/post-5.md
-│   │   │   │       ├── ./notes/backup/simple-blog/content/pages/contact.md
-│   │   │   │       ├── ./notes/backup/simple-blog/content/pages/features.md
-│   │   │   │       ├── ./notes/backup/simple-blog/content/pages/index.md
-│   │   │   │       ├── ./notes/backup/simple-blog/content/pages/style-guide.md
-│   │   │   │       └── ./notes/backup/simple-blog/content/pages/terms.md
+│   │   │   │   ├── ./notes/backup/simple-blog/content/pages/about.md
+│   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/author
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/author/dianne-ameter.md
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/author/gordon-norman.md
+│   │   │   │   │   │   └── ./notes/backup/simple-blog/content/pages/blog/author/miles-tone.md
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/category
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/category/general.md
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/category/news.md
+│   │   │   │   │   │   └── ./notes/backup/simple-blog/content/pages/blog/category/tutorials.md
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/index.md
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/post-1.md
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/post-2.md
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/post-3.md
+│   │   │   │   │   ├── ./notes/backup/simple-blog/content/pages/blog/post-4.md
+│   │   │   │   │   └── ./notes/backup/simple-blog/content/pages/blog/post-5.md
+│   │   │   │   ├── ./notes/backup/simple-blog/content/pages/contact.md
+│   │   │   │   ├── ./notes/backup/simple-blog/content/pages/features.md
+│   │   │   │   ├── ./notes/backup/simple-blog/content/pages/index.md
+│   │   │   │   ├── ./notes/backup/simple-blog/content/pages/style-guide.md
+│   │   │   │   └── ./notes/backup/simple-blog/content/pages/terms.md
 │   │   │   ├── ./notes/backup/simple-blog/netlify.toml
 │   │   │   ├── ./notes/backup/simple-blog/next.config.js
 │   │   │   ├── ./notes/backup/simple-blog/package.json
@@ -123,51 +123,51 @@
 │   │   │   │   │   ├── ./notes/backup/simple-blog/src/layouts/page.js
 │   │   │   │   │   └── ./notes/backup/simple-blog/src/layouts/post.js
 │   │   │   │   ├── ./notes/backup/simple-blog/src/pages
-│   │   │   │   │   ├── ./notes/backup/simple-blog/src/pages/_app.js
-│   │   │   │   │   ├── ./notes/backup/simple-blog/src/pages/_document.js
+│   │   │   │   │   ├── ./notes/backup/simple-blog/src/pages/\_app.js
+│   │   │   │   │   ├── ./notes/backup/simple-blog/src/pages/\_document.js
 │   │   │   │   │   ├── ./notes/backup/simple-blog/src/pages/index.js
 │   │   │   │   │   └── ./notes/backup/simple-blog/src/pages/[...slug].js
 │   │   │   │   ├── ./notes/backup/simple-blog/src/sass
 │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/abstracts
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/abstracts/_mixins.scss
-│   │   │   │   │   │   └── ./notes/backup/simple-blog/src/sass/abstracts/_variables.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/abstracts/\_mixins.scss
+│   │   │   │   │   │   └── ./notes/backup/simple-blog/src/sass/abstracts/\_variables.scss
 │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/base
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/base/_base.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/base/_helpers.scss
-│   │   │   │   │   │   └── ./notes/backup/simple-blog/src/sass/base/_reset.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/base/\_base.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/base/\_helpers.scss
+│   │   │   │   │   │   └── ./notes/backup/simple-blog/src/sass/base/\_reset.scss
 │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/_banner.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/_buttons.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/_cards.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/_forms.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/_grids.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/_icons.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/_inverse.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/_menus.scss
-│   │   │   │   │   │   └── ./notes/backup/simple-blog/src/sass/components/_tables.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/\_banner.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/\_buttons.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/\_cards.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/\_forms.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/\_grids.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/\_icons.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/\_inverse.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/components/\_menus.scss
+│   │   │   │   │   │   └── ./notes/backup/simple-blog/src/sass/components/\_tables.scss
 │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/layouts
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/layouts/_footer.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/layouts/_header.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/layouts/_post-page.scss
-│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/layouts/_section.scss
-│   │   │   │   │   │   └── ./notes/backup/simple-blog/src/sass/layouts/_site.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/layouts/\_footer.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/layouts/\_header.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/layouts/\_post-page.scss
+│   │   │   │   │   │   ├── ./notes/backup/simple-blog/src/sass/layouts/\_section.scss
+│   │   │   │   │   │   └── ./notes/backup/simple-blog/src/sass/layouts/\_site.scss
 │   │   │   │   │   └── ./notes/backup/simple-blog/src/sass/main.scss
 │   │   │   │   └── ./notes/backup/simple-blog/src/utils
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/attribute.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/classNames.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/cycler.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/getData.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/getPageByFilePath.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/getPage.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/getPages.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/htmlToReact.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/index.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/link.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/markdownify.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/pathJoin.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/toStyleObj.js
-│   │   │   │       ├── ./notes/backup/simple-blog/src/utils/toUrl.js
-│   │   │   │       └── ./notes/backup/simple-blog/src/utils/withPrefix.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/attribute.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/classNames.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/cycler.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/getData.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/getPageByFilePath.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/getPage.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/getPages.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/htmlToReact.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/index.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/link.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/markdownify.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/pathJoin.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/toStyleObj.js
+│   │   │   │   ├── ./notes/backup/simple-blog/src/utils/toUrl.js
+│   │   │   │   └── ./notes/backup/simple-blog/src/utils/withPrefix.js
 │   │   │   └── ./notes/backup/simple-blog/stackbit.yaml
 │   │   ├── ./notes/backup/sourcebit.js
 │   │   ├── ./notes/backup/src
@@ -193,42 +193,42 @@
 │   │   │   │   ├── ./notes/backup/src/layouts/page.js
 │   │   │   │   └── ./notes/backup/src/layouts/post.js
 │   │   │   ├── ./notes/backup/src/pages
-│   │   │   │   ├── ./notes/backup/src/pages/_app.js
-│   │   │   │   ├── ./notes/backup/src/pages/_document.js
+│   │   │   │   ├── ./notes/backup/src/pages/\_app.js
+│   │   │   │   ├── ./notes/backup/src/pages/\_document.js
 │   │   │   │   └── ./notes/backup/src/pages/[[...slug]].js
 │   │   │   ├── ./notes/backup/src/sass
 │   │   │   │   ├── ./notes/backup/src/sass/imports
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_animations.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_buttons.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_docs.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_footer.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_forms.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_functions.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_general.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_header.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_helpers.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_icons.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_palettes.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_posts.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_reset.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_sections.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_structure.scss
-│   │   │   │   │   ├── ./notes/backup/src/sass/imports/_tables.scss
-│   │   │   │   │   └── ./notes/backup/src/sass/imports/_variables.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_animations.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_buttons.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_docs.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_footer.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_forms.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_functions.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_general.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_header.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_helpers.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_icons.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_palettes.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_posts.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_reset.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_sections.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_structure.scss
+│   │   │   │   │   ├── ./notes/backup/src/sass/imports/\_tables.scss
+│   │   │   │   │   └── ./notes/backup/src/sass/imports/\_variables.scss
 │   │   │   │   └── ./notes/backup/src/sass/main.scss
 │   │   │   └── ./notes/backup/src/utils
-│   │   │       ├── ./notes/backup/src/utils/attribute.js
-│   │   │       ├── ./notes/backup/src/utils/classNames.js
-│   │   │       ├── ./notes/backup/src/utils/getData.js
-│   │   │       ├── ./notes/backup/src/utils/getPage.js
-│   │   │       ├── ./notes/backup/src/utils/getPages.js
-│   │   │       ├── ./notes/backup/src/utils/getPageUrl.js
-│   │   │       ├── ./notes/backup/src/utils/htmlToReact.js
-│   │   │       ├── ./notes/backup/src/utils/index.js
-│   │   │       ├── ./notes/backup/src/utils/link.js
-│   │   │       ├── ./notes/backup/src/utils/markdownify.js
-│   │   │       ├── ./notes/backup/src/utils/pathJoin.js
-│   │   │       └── ./notes/backup/src/utils/withPrefix.js
+│   │   │   ├── ./notes/backup/src/utils/attribute.js
+│   │   │   ├── ./notes/backup/src/utils/classNames.js
+│   │   │   ├── ./notes/backup/src/utils/getData.js
+│   │   │   ├── ./notes/backup/src/utils/getPage.js
+│   │   │   ├── ./notes/backup/src/utils/getPages.js
+│   │   │   ├── ./notes/backup/src/utils/getPageUrl.js
+│   │   │   ├── ./notes/backup/src/utils/htmlToReact.js
+│   │   │   ├── ./notes/backup/src/utils/index.js
+│   │   │   ├── ./notes/backup/src/utils/link.js
+│   │   │   ├── ./notes/backup/src/utils/markdownify.js
+│   │   │   ├── ./notes/backup/src/utils/pathJoin.js
+│   │   │   └── ./notes/backup/src/utils/withPrefix.js
 │   │   └── ./notes/backup/stackbit.yaml
 │   ├── ./notes/content-notes
 │   │   ├── ./notes/content-notes/array-cb-methods.md
@@ -320,33 +320,33 @@
 │   │   │   │   │   └── ./notes/simple-blog/content/data/categories/tutorials.yaml
 │   │   │   │   ├── ./notes/simple-blog/content/data/config.json
 │   │   │   │   └── ./notes/simple-blog/content/data/team
-│   │   │   │       ├── ./notes/simple-blog/content/data/team/dianne-ameter.yaml
-│   │   │   │       ├── ./notes/simple-blog/content/data/team/eleanor-carr.yaml
-│   │   │   │       ├── ./notes/simple-blog/content/data/team/gordon-norman.yaml
-│   │   │   │       ├── ./notes/simple-blog/content/data/team/hanson-deck.yaml
-│   │   │   │       └── ./notes/simple-blog/content/data/team/miles-tone.yaml
+│   │   │   │   ├── ./notes/simple-blog/content/data/team/dianne-ameter.yaml
+│   │   │   │   ├── ./notes/simple-blog/content/data/team/eleanor-carr.yaml
+│   │   │   │   ├── ./notes/simple-blog/content/data/team/gordon-norman.yaml
+│   │   │   │   ├── ./notes/simple-blog/content/data/team/hanson-deck.yaml
+│   │   │   │   └── ./notes/simple-blog/content/data/team/miles-tone.yaml
 │   │   │   └── ./notes/simple-blog/content/pages
-│   │   │       ├── ./notes/simple-blog/content/pages/about.md
-│   │   │       ├── ./notes/simple-blog/content/pages/blog
-│   │   │       │   ├── ./notes/simple-blog/content/pages/blog/author
-│   │   │       │   │   ├── ./notes/simple-blog/content/pages/blog/author/dianne-ameter.md
-│   │   │       │   │   ├── ./notes/simple-blog/content/pages/blog/author/gordon-norman.md
-│   │   │       │   │   └── ./notes/simple-blog/content/pages/blog/author/miles-tone.md
-│   │   │       │   ├── ./notes/simple-blog/content/pages/blog/category
-│   │   │       │   │   ├── ./notes/simple-blog/content/pages/blog/category/general.md
-│   │   │       │   │   ├── ./notes/simple-blog/content/pages/blog/category/news.md
-│   │   │       │   │   └── ./notes/simple-blog/content/pages/blog/category/tutorials.md
-│   │   │       │   ├── ./notes/simple-blog/content/pages/blog/index.md
-│   │   │       │   ├── ./notes/simple-blog/content/pages/blog/post-1.md
-│   │   │       │   ├── ./notes/simple-blog/content/pages/blog/post-2.md
-│   │   │       │   ├── ./notes/simple-blog/content/pages/blog/post-3.md
-│   │   │       │   ├── ./notes/simple-blog/content/pages/blog/post-4.md
-│   │   │       │   └── ./notes/simple-blog/content/pages/blog/post-5.md
-│   │   │       ├── ./notes/simple-blog/content/pages/contact.md
-│   │   │       ├── ./notes/simple-blog/content/pages/features.md
-│   │   │       ├── ./notes/simple-blog/content/pages/index.md
-│   │   │       ├── ./notes/simple-blog/content/pages/style-guide.md
-│   │   │       └── ./notes/simple-blog/content/pages/terms.md
+│   │   │   ├── ./notes/simple-blog/content/pages/about.md
+│   │   │   ├── ./notes/simple-blog/content/pages/blog
+│   │   │   │   ├── ./notes/simple-blog/content/pages/blog/author
+│   │   │   │   │   ├── ./notes/simple-blog/content/pages/blog/author/dianne-ameter.md
+│   │   │   │   │   ├── ./notes/simple-blog/content/pages/blog/author/gordon-norman.md
+│   │   │   │   │   └── ./notes/simple-blog/content/pages/blog/author/miles-tone.md
+│   │   │   │   ├── ./notes/simple-blog/content/pages/blog/category
+│   │   │   │   │   ├── ./notes/simple-blog/content/pages/blog/category/general.md
+│   │   │   │   │   ├── ./notes/simple-blog/content/pages/blog/category/news.md
+│   │   │   │   │   └── ./notes/simple-blog/content/pages/blog/category/tutorials.md
+│   │   │   │   ├── ./notes/simple-blog/content/pages/blog/index.md
+│   │   │   │   ├── ./notes/simple-blog/content/pages/blog/post-1.md
+│   │   │   │   ├── ./notes/simple-blog/content/pages/blog/post-2.md
+│   │   │   │   ├── ./notes/simple-blog/content/pages/blog/post-3.md
+│   │   │   │   ├── ./notes/simple-blog/content/pages/blog/post-4.md
+│   │   │   │   └── ./notes/simple-blog/content/pages/blog/post-5.md
+│   │   │   ├── ./notes/simple-blog/content/pages/contact.md
+│   │   │   ├── ./notes/simple-blog/content/pages/features.md
+│   │   │   ├── ./notes/simple-blog/content/pages/index.md
+│   │   │   ├── ./notes/simple-blog/content/pages/style-guide.md
+│   │   │   └── ./notes/simple-blog/content/pages/terms.md
 │   │   ├── ./notes/simple-blog/netlify.toml
 │   │   ├── ./notes/simple-blog/next.config.js
 │   │   ├── ./notes/simple-blog/package.json
@@ -378,51 +378,51 @@
 │   │   │   │   ├── ./notes/simple-blog/src/layouts/page.js
 │   │   │   │   └── ./notes/simple-blog/src/layouts/post.js
 │   │   │   ├── ./notes/simple-blog/src/pages
-│   │   │   │   ├── ./notes/simple-blog/src/pages/_app.js
-│   │   │   │   ├── ./notes/simple-blog/src/pages/_document.js
+│   │   │   │   ├── ./notes/simple-blog/src/pages/\_app.js
+│   │   │   │   ├── ./notes/simple-blog/src/pages/\_document.js
 │   │   │   │   ├── ./notes/simple-blog/src/pages/index.js
 │   │   │   │   └── ./notes/simple-blog/src/pages/[...slug].js
 │   │   │   ├── ./notes/simple-blog/src/sass
 │   │   │   │   ├── ./notes/simple-blog/src/sass/abstracts
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/abstracts/_mixins.scss
-│   │   │   │   │   └── ./notes/simple-blog/src/sass/abstracts/_variables.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/abstracts/\_mixins.scss
+│   │   │   │   │   └── ./notes/simple-blog/src/sass/abstracts/\_variables.scss
 │   │   │   │   ├── ./notes/simple-blog/src/sass/base
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/base/_base.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/base/_helpers.scss
-│   │   │   │   │   └── ./notes/simple-blog/src/sass/base/_reset.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/base/\_base.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/base/\_helpers.scss
+│   │   │   │   │   └── ./notes/simple-blog/src/sass/base/\_reset.scss
 │   │   │   │   ├── ./notes/simple-blog/src/sass/components
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/_banner.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/_buttons.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/_cards.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/_forms.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/_grids.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/_icons.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/_inverse.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/_menus.scss
-│   │   │   │   │   └── ./notes/simple-blog/src/sass/components/_tables.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/\_banner.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/\_buttons.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/\_cards.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/\_forms.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/\_grids.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/\_icons.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/\_inverse.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/components/\_menus.scss
+│   │   │   │   │   └── ./notes/simple-blog/src/sass/components/\_tables.scss
 │   │   │   │   ├── ./notes/simple-blog/src/sass/layouts
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/layouts/_footer.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/layouts/_header.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/layouts/_post-page.scss
-│   │   │   │   │   ├── ./notes/simple-blog/src/sass/layouts/_section.scss
-│   │   │   │   │   └── ./notes/simple-blog/src/sass/layouts/_site.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/layouts/\_footer.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/layouts/\_header.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/layouts/\_post-page.scss
+│   │   │   │   │   ├── ./notes/simple-blog/src/sass/layouts/\_section.scss
+│   │   │   │   │   └── ./notes/simple-blog/src/sass/layouts/\_site.scss
 │   │   │   │   └── ./notes/simple-blog/src/sass/main.scss
 │   │   │   └── ./notes/simple-blog/src/utils
-│   │   │       ├── ./notes/simple-blog/src/utils/attribute.js
-│   │   │       ├── ./notes/simple-blog/src/utils/classNames.js
-│   │   │       ├── ./notes/simple-blog/src/utils/cycler.js
-│   │   │       ├── ./notes/simple-blog/src/utils/getData.js
-│   │   │       ├── ./notes/simple-blog/src/utils/getPageByFilePath.js
-│   │   │       ├── ./notes/simple-blog/src/utils/getPage.js
-│   │   │       ├── ./notes/simple-blog/src/utils/getPages.js
-│   │   │       ├── ./notes/simple-blog/src/utils/htmlToReact.js
-│   │   │       ├── ./notes/simple-blog/src/utils/index.js
-│   │   │       ├── ./notes/simple-blog/src/utils/link.js
-│   │   │       ├── ./notes/simple-blog/src/utils/markdownify.js
-│   │   │       ├── ./notes/simple-blog/src/utils/pathJoin.js
-│   │   │       ├── ./notes/simple-blog/src/utils/toStyleObj.js
-│   │   │       ├── ./notes/simple-blog/src/utils/toUrl.js
-│   │   │       └── ./notes/simple-blog/src/utils/withPrefix.js
+│   │   │   ├── ./notes/simple-blog/src/utils/attribute.js
+│   │   │   ├── ./notes/simple-blog/src/utils/classNames.js
+│   │   │   ├── ./notes/simple-blog/src/utils/cycler.js
+│   │   │   ├── ./notes/simple-blog/src/utils/getData.js
+│   │   │   ├── ./notes/simple-blog/src/utils/getPageByFilePath.js
+│   │   │   ├── ./notes/simple-blog/src/utils/getPage.js
+│   │   │   ├── ./notes/simple-blog/src/utils/getPages.js
+│   │   │   ├── ./notes/simple-blog/src/utils/htmlToReact.js
+│   │   │   ├── ./notes/simple-blog/src/utils/index.js
+│   │   │   ├── ./notes/simple-blog/src/utils/link.js
+│   │   │   ├── ./notes/simple-blog/src/utils/markdownify.js
+│   │   │   ├── ./notes/simple-blog/src/utils/pathJoin.js
+│   │   │   ├── ./notes/simple-blog/src/utils/toStyleObj.js
+│   │   │   ├── ./notes/simple-blog/src/utils/toUrl.js
+│   │   │   └── ./notes/simple-blog/src/utils/withPrefix.js
 │   │   └── ./notes/simple-blog/stackbit.yaml
 │   └── ./notes/test.md
 ├── ./package.json
@@ -433,9 +433,9 @@
 │   │   ├── ./plugins/gatsby-remark-page-creator/package.json
 │   │   └── ./plugins/gatsby-remark-page-creator/package-lock.json
 │   └── ./plugins/gatsby-source-data
-│       ├── ./plugins/gatsby-source-data/gatsby-node.js
-│       ├── ./plugins/gatsby-source-data/package.json
-│       └── ./plugins/gatsby-source-data/package-lock.json
+│   ├── ./plugins/gatsby-source-data/gatsby-node.js
+│   ├── ./plugins/gatsby-source-data/package.json
+│   └── ./plugins/gatsby-source-data/package-lock.json
 ├── ./public
 │   ├── ./public/images
 │   │   ├── ./public/images/10.jpg
@@ -745,24 +745,24 @@
 │   │   │   │   └── ./public/page-data/blog/my-medium/page-data.json
 │   │   │   ├── ./public/page-data/blog/page-data.json
 │   │   │   └── ./public/page-data/blog/python
-│   │   │       └── ./public/page-data/blog/python/page-data.json
+│   │   │   └── ./public/page-data/blog/python/page-data.json
 │   │   ├── ./public/page-data/dev-404-page
 │   │   ├── ./public/page-data/docs
 │   │   │   ├── ./public/page-data/docs/about
 │   │   │   │   └── ./public/page-data/docs/about/me
-│   │   │   │       └── ./public/page-data/docs/about/me/page-data.json
+│   │   │   │   └── ./public/page-data/docs/about/me/page-data.json
 │   │   │   ├── ./public/page-data/docs/links
 │   │   │   │   └── ./public/page-data/docs/links/page-data.json
 │   │   │   ├── ./public/page-data/docs/My-Content
 │   │   │   │   └── ./public/page-data/docs/My-Content/my-websites
-│   │   │   │       └── ./public/page-data/docs/My-Content/my-websites/page-data.json
+│   │   │   │   └── ./public/page-data/docs/My-Content/my-websites/page-data.json
 │   │   │   ├── ./public/page-data/docs/page-data.json
 │   │   │   ├── ./public/page-data/docs/python
 │   │   │   │   └── ./public/page-data/docs/python/page-data.json
 │   │   │   └── ./public/page-data/docs/quick-reference
-│   │   │       ├── ./public/page-data/docs/quick-reference/installation
-│   │   │       │   └── ./public/page-data/docs/quick-reference/installation/page-data.json
-│   │   │       └── ./public/page-data/docs/quick-reference/page-data.json
+│   │   │   ├── ./public/page-data/docs/quick-reference/installation
+│   │   │   │   └── ./public/page-data/docs/quick-reference/installation/page-data.json
+│   │   │   └── ./public/page-data/docs/quick-reference/page-data.json
 │   │   ├── ./public/page-data/index
 │   │   │   └── ./public/page-data/index/page-data.json
 │   │   ├── ./public/page-data/notes-template
@@ -770,103 +770,103 @@
 │   │   ├── ./public/page-data/showcase
 │   │   │   └── ./public/page-data/showcase/page-data.json
 │   │   └── ./public/page-data/style-guide
-│   │       └── ./public/page-data/style-guide/page-data.json
+│   │   └── ./public/page-data/style-guide/page-data.json
 │   ├── ./public/render-page.js
 │   ├── ./public/render-page.js.map
 │   ├── ./public/static
 │   └── ./public/videos
-│       ├── ./public/videos/2018-01-16_03-34-44_UTC.mp4
-│       ├── ./public/videos/2018-03-13_22-10-44_UTC.mp4
-│       ├── ./public/videos/2018-05-09_21-22-11_UTC.mp4
-│       ├── ./public/videos/2019-02-21_00-41-29_UTC.mp4
-│       ├── ./public/videos/2019-04-17_19-04-50_UTC.mp4
-│       ├── ./public/videos/2019-05-16_16-22-06_UTC.mp4
-│       ├── ./public/videos/2019-06-12_01-58-13_UTC.mp4
-│       ├── ./public/videos/2019-06-12_03-24-24_UTC.mp4
-│       ├── ./public/videos/2019-08-13_14-39-09_UTC.mp4
-│       ├── ./public/videos/2019-08-13_19-21-26_UTC.mp4
-│       ├── ./public/videos/2019-08-15_09-18-30_UTC.mp4
-│       ├── ./public/videos/2019-09-06_13-03-13_UTC.mp4
-│       ├── ./public/videos/2019-09-20_01-19-17_UTC_1.mp4
-│       ├── ./public/videos/2019-09-20_01-19-17_UTC_2.mp4
-│       ├── ./public/videos/2019-09-20_01-19-17_UTC_6.mp4
-│       ├── ./public/videos/2019-10-22_00-26-26_UTC.mp4
-│       ├── ./public/videos/2020-01-01_04-36-17_UTC.mp4
-│       ├── ./public/videos/2020-02-08_22-48-08_UTC.mp4
-│       ├── ./public/videos/2020-03-03_20-58-08_UTC.mp4
-│       ├── ./public/videos/2020-03-05_19-50-23_UTC_1.mp4
-│       ├── ./public/videos/2020-03-05_19-50-23_UTC_2.mp4
-│       ├── ./public/videos/2020-03-18_19-15-36_UTC.mp4
-│       ├── ./public/videos/2020-03-18_22-06-56_UTC_1.mp4
-│       ├── ./public/videos/2020-03-18_22-06-56_UTC_2.mp4
-│       ├── ./public/videos/2020-03-18_23-03-52_UTC.mp4
-│       ├── ./public/videos/2020-03-19_00-07-01_UTC_1.mp4
-│       ├── ./public/videos/2020-03-19_00-07-01_UTC_2.mp4
-│       ├── ./public/videos/2020-03-25_21-43-21_UTC.mp4
-│       ├── ./public/videos/2020-03-29_19-26-17_UTC.mp4
-│       ├── ./public/videos/2020-03-29_21-26-01_UTC_1.mp4
-│       ├── ./public/videos/2020-03-29_21-26-01_UTC_2.mp4
-│       ├── ./public/videos/2020-03-30_00-29-38_UTC.mp4
-│       ├── ./public/videos/2020-03-30_18-55-38_UTC.mp4
-│       ├── ./public/videos/2020-03-31_05-20-03_UTC.mp4
-│       ├── ./public/videos/2020-03-31_06-28-16_UTC.mp4
-│       ├── ./public/videos/2020-03-31_06-54-14_UTC_2.mp4
-│       ├── ./public/videos/2020-03-31_07-03-39_UTC.mp4
-│       ├── ./public/videos/2020-04-03_17-11-56_UTC.mp4
-│       ├── ./public/videos/2020-04-12_12-36-50_UTC.mp4
-│       ├── ./public/videos/2020-04-18_22-45-38_UTC.mp4
-│       ├── ./public/videos/2020-04-24_02-50-13_UTC.mp4
-│       ├── ./public/videos/2020-05-16_18-50-04_UTC_1.mp4
-│       ├── ./public/videos/2020-05-16_18-50-04_UTC_2.mp4
-│       ├── ./public/videos/2020-05-16_18-50-04_UTC_3.mp4
-│       ├── ./public/videos/2020-05-16_18-50-04_UTC_4.mp4
-│       ├── ./public/videos/2020-05-16_18-50-04_UTC_5.mp4
-│       ├── ./public/videos/2020-05-16_18-50-04_UTC_6.mp4
-│       ├── ./public/videos/2020-05-16_18-50-04_UTC_8.mp4
-│       ├── ./public/videos/2020-05-16_19-06-35_UTC.mp4
-│       ├── ./public/videos/2020-05-17_00-15-01_UTC_1.mp4
-│       ├── ./public/videos/2020-05-17_00-15-01_UTC_2.mp4
-│       ├── ./public/videos/2020-05-17_00-15-01_UTC_3.mp4
-│       ├── ./public/videos/2020-05-17_00-15-01_UTC_4.mp4
-│       ├── ./public/videos/2020-05-17_04-02-29_UTC_1.mp4
-│       ├── ./public/videos/2020-05-17_04-02-29_UTC_2.mp4
-│       ├── ./public/videos/2020-05-17_23-25-28_UTC_1.mp4
-│       ├── ./public/videos/2020-05-17_23-25-28_UTC_2.mp4
-│       ├── ./public/videos/2020-05-17_23-25-28_UTC_3.mp4
-│       ├── ./public/videos/2020-05-17_23-25-28_UTC_5.mp4
-│       ├── ./public/videos/2020-05-17_23-25-28_UTC_6.mp4
-│       ├── ./public/videos/2020-05-18_00-06-39_UTC_1.mp4
-│       ├── ./public/videos/2020-05-18_00-08-05_UTC.mp4
-│       ├── ./public/videos/2020-05-18_02-30-25_UTC_1.mp4
-│       ├── ./public/videos/2020-05-18_02-30-25_UTC_2.mp4
-│       ├── ./public/videos/2020-05-18_02-30-25_UTC_3.mp4
-│       ├── ./public/videos/2020-05-18_02-30-25_UTC_4.mp4
-│       ├── ./public/videos/2020-05-18_02-30-25_UTC_5.mp4
-│       ├── ./public/videos/2020-05-18_22-42-31_UTC.mp4
-│       ├── ./public/videos/2020-05-19_02-03-02_UTC.mp4
-│       ├── ./public/videos/2020-05-20_00-18-25_UTC_1.mp4
-│       ├── ./public/videos/2020-05-20_00-18-25_UTC_2.mp4
-│       ├── ./public/videos/2020-05-20_00-18-25_UTC_3.mp4
-│       ├── ./public/videos/2020-05-20_00-18-25_UTC_4.mp4
-│       ├── ./public/videos/2020-05-20_13-46-08_UTC.mp4
-│       ├── ./public/videos/2020-06-03_07-18-12_UTC.mp4
-│       ├── ./public/videos/2020-06-03_12-04-36_UTC.mp4
-│       ├── ./public/videos/2020-06-03_21-03-00_UTC.mp4
-│       ├── ./public/videos/2020-06-03_22-03-48_UTC.mp4
-│       ├── ./public/videos/2020-07-09_20-15-47_UTC.mp4
-│       ├── ./public/videos/2020-07-10_06-31-45_UTC.mp4
-│       ├── ./public/videos/2020-07-26_00-03-10_UTC.mp4
-│       ├── ./public/videos/2020-07-31_20-19-53_UTC.mp4
-│       ├── ./public/videos/2020-08-01_16-04-53_UTC.mp4
-│       ├── ./public/videos/2020-08-08_19-10-06_UTC.mp4
-│       ├── ./public/videos/2020-08-11_22-27-16_UTC.mp4
-│       ├── ./public/videos/2020-08-21_12-54-48_UTC.mp4
-│       ├── ./public/videos/2020-09-27_04-48-03_UTC.mp4
-│       ├── ./public/videos/2021-01-27_00-09-16_UTC.mp4
-│       ├── ./public/videos/2021-04-25_13-25-33_UTC.mp4
-│       ├── ./public/videos/2021-05-16_22-40-15_UTC.mp4
-│       ├── ./public/videos/2021-05-26_21-36-41_UTC.mp4
-│       └── ./public/videos/2021-05-27_00-07-28_UTC.mp4
+│   ├── ./public/videos/2018-01-16_03-34-44_UTC.mp4
+│   ├── ./public/videos/2018-03-13_22-10-44_UTC.mp4
+│   ├── ./public/videos/2018-05-09_21-22-11_UTC.mp4
+│   ├── ./public/videos/2019-02-21_00-41-29_UTC.mp4
+│   ├── ./public/videos/2019-04-17_19-04-50_UTC.mp4
+│   ├── ./public/videos/2019-05-16_16-22-06_UTC.mp4
+│   ├── ./public/videos/2019-06-12_01-58-13_UTC.mp4
+│   ├── ./public/videos/2019-06-12_03-24-24_UTC.mp4
+│   ├── ./public/videos/2019-08-13_14-39-09_UTC.mp4
+│   ├── ./public/videos/2019-08-13_19-21-26_UTC.mp4
+│   ├── ./public/videos/2019-08-15_09-18-30_UTC.mp4
+│   ├── ./public/videos/2019-09-06_13-03-13_UTC.mp4
+│   ├── ./public/videos/2019-09-20_01-19-17_UTC_1.mp4
+│   ├── ./public/videos/2019-09-20_01-19-17_UTC_2.mp4
+│   ├── ./public/videos/2019-09-20_01-19-17_UTC_6.mp4
+│   ├── ./public/videos/2019-10-22_00-26-26_UTC.mp4
+│   ├── ./public/videos/2020-01-01_04-36-17_UTC.mp4
+│   ├── ./public/videos/2020-02-08_22-48-08_UTC.mp4
+│   ├── ./public/videos/2020-03-03_20-58-08_UTC.mp4
+│   ├── ./public/videos/2020-03-05_19-50-23_UTC_1.mp4
+│   ├── ./public/videos/2020-03-05_19-50-23_UTC_2.mp4
+│   ├── ./public/videos/2020-03-18_19-15-36_UTC.mp4
+│   ├── ./public/videos/2020-03-18_22-06-56_UTC_1.mp4
+│   ├── ./public/videos/2020-03-18_22-06-56_UTC_2.mp4
+│   ├── ./public/videos/2020-03-18_23-03-52_UTC.mp4
+│   ├── ./public/videos/2020-03-19_00-07-01_UTC_1.mp4
+│   ├── ./public/videos/2020-03-19_00-07-01_UTC_2.mp4
+│   ├── ./public/videos/2020-03-25_21-43-21_UTC.mp4
+│   ├── ./public/videos/2020-03-29_19-26-17_UTC.mp4
+│   ├── ./public/videos/2020-03-29_21-26-01_UTC_1.mp4
+│   ├── ./public/videos/2020-03-29_21-26-01_UTC_2.mp4
+│   ├── ./public/videos/2020-03-30_00-29-38_UTC.mp4
+│   ├── ./public/videos/2020-03-30_18-55-38_UTC.mp4
+│   ├── ./public/videos/2020-03-31_05-20-03_UTC.mp4
+│   ├── ./public/videos/2020-03-31_06-28-16_UTC.mp4
+│   ├── ./public/videos/2020-03-31_06-54-14_UTC_2.mp4
+│   ├── ./public/videos/2020-03-31_07-03-39_UTC.mp4
+│   ├── ./public/videos/2020-04-03_17-11-56_UTC.mp4
+│   ├── ./public/videos/2020-04-12_12-36-50_UTC.mp4
+│   ├── ./public/videos/2020-04-18_22-45-38_UTC.mp4
+│   ├── ./public/videos/2020-04-24_02-50-13_UTC.mp4
+│   ├── ./public/videos/2020-05-16_18-50-04_UTC_1.mp4
+│   ├── ./public/videos/2020-05-16_18-50-04_UTC_2.mp4
+│   ├── ./public/videos/2020-05-16_18-50-04_UTC_3.mp4
+│   ├── ./public/videos/2020-05-16_18-50-04_UTC_4.mp4
+│   ├── ./public/videos/2020-05-16_18-50-04_UTC_5.mp4
+│   ├── ./public/videos/2020-05-16_18-50-04_UTC_6.mp4
+│   ├── ./public/videos/2020-05-16_18-50-04_UTC_8.mp4
+│   ├── ./public/videos/2020-05-16_19-06-35_UTC.mp4
+│   ├── ./public/videos/2020-05-17_00-15-01_UTC_1.mp4
+│   ├── ./public/videos/2020-05-17_00-15-01_UTC_2.mp4
+│   ├── ./public/videos/2020-05-17_00-15-01_UTC_3.mp4
+│   ├── ./public/videos/2020-05-17_00-15-01_UTC_4.mp4
+│   ├── ./public/videos/2020-05-17_04-02-29_UTC_1.mp4
+│   ├── ./public/videos/2020-05-17_04-02-29_UTC_2.mp4
+│   ├── ./public/videos/2020-05-17_23-25-28_UTC_1.mp4
+│   ├── ./public/videos/2020-05-17_23-25-28_UTC_2.mp4
+│   ├── ./public/videos/2020-05-17_23-25-28_UTC_3.mp4
+│   ├── ./public/videos/2020-05-17_23-25-28_UTC_5.mp4
+│   ├── ./public/videos/2020-05-17_23-25-28_UTC_6.mp4
+│   ├── ./public/videos/2020-05-18_00-06-39_UTC_1.mp4
+│   ├── ./public/videos/2020-05-18_00-08-05_UTC.mp4
+│   ├── ./public/videos/2020-05-18_02-30-25_UTC_1.mp4
+│   ├── ./public/videos/2020-05-18_02-30-25_UTC_2.mp4
+│   ├── ./public/videos/2020-05-18_02-30-25_UTC_3.mp4
+│   ├── ./public/videos/2020-05-18_02-30-25_UTC_4.mp4
+│   ├── ./public/videos/2020-05-18_02-30-25_UTC_5.mp4
+│   ├── ./public/videos/2020-05-18_22-42-31_UTC.mp4
+│   ├── ./public/videos/2020-05-19_02-03-02_UTC.mp4
+│   ├── ./public/videos/2020-05-20_00-18-25_UTC_1.mp4
+│   ├── ./public/videos/2020-05-20_00-18-25_UTC_2.mp4
+│   ├── ./public/videos/2020-05-20_00-18-25_UTC_3.mp4
+│   ├── ./public/videos/2020-05-20_00-18-25_UTC_4.mp4
+│   ├── ./public/videos/2020-05-20_13-46-08_UTC.mp4
+│   ├── ./public/videos/2020-06-03_07-18-12_UTC.mp4
+│   ├── ./public/videos/2020-06-03_12-04-36_UTC.mp4
+│   ├── ./public/videos/2020-06-03_21-03-00_UTC.mp4
+│   ├── ./public/videos/2020-06-03_22-03-48_UTC.mp4
+│   ├── ./public/videos/2020-07-09_20-15-47_UTC.mp4
+│   ├── ./public/videos/2020-07-10_06-31-45_UTC.mp4
+│   ├── ./public/videos/2020-07-26_00-03-10_UTC.mp4
+│   ├── ./public/videos/2020-07-31_20-19-53_UTC.mp4
+│   ├── ./public/videos/2020-08-01_16-04-53_UTC.mp4
+│   ├── ./public/videos/2020-08-08_19-10-06_UTC.mp4
+│   ├── ./public/videos/2020-08-11_22-27-16_UTC.mp4
+│   ├── ./public/videos/2020-08-21_12-54-48_UTC.mp4
+│   ├── ./public/videos/2020-09-27_04-48-03_UTC.mp4
+│   ├── ./public/videos/2021-01-27_00-09-16_UTC.mp4
+│   ├── ./public/videos/2021-04-25_13-25-33_UTC.mp4
+│   ├── ./public/videos/2021-05-16_22-40-15_UTC.mp4
+│   ├── ./public/videos/2021-05-26_21-36-41_UTC.mp4
+│   └── ./public/videos/2021-05-27_00-07-28_UTC.mp4
 ├── ./README.md
 ├── ./robots.txt
 ├── ./site-metadata.json
@@ -921,10 +921,10 @@
 │   │   │   │   └── ./src/pages/docs/react/index.md
 │   │   │   ├── ./src/pages/docs/resources.md
 │   │   │   └── ./src/pages/docs/tools
-│   │   │       ├── ./src/pages/docs/tools/Git-Html-Preview.md
-│   │   │       ├── ./src/pages/docs/tools/index.md
-│   │   │       ├── ./src/pages/docs/tools/plug-ins.md
-│   │   │       └── ./src/pages/docs/tools/starter-theme.md
+│   │   │   ├── ./src/pages/docs/tools/Git-Html-Preview.md
+│   │   │   ├── ./src/pages/docs/tools/index.md
+│   │   │   ├── ./src/pages/docs/tools/plug-ins.md
+│   │   │   └── ./src/pages/docs/tools/starter-theme.md
 │   │   ├── ./src/pages/ds-algo-overview.md
 │   │   ├── ./src/pages/index.md
 │   │   ├── ./src/pages/notes-template.md
@@ -933,24 +933,24 @@
 │   │   └── ./src/pages/style-guide.md
 │   ├── ./src/sass
 │   │   ├── ./src/sass/imports
-│   │   │   ├── ./src/sass/imports/_animations.scss
-│   │   │   ├── ./src/sass/imports/_buttons.scss
-│   │   │   ├── ./src/sass/imports/_docs.scss
-│   │   │   ├── ./src/sass/imports/_footer.scss
-│   │   │   ├── ./src/sass/imports/_forms.scss
-│   │   │   ├── ./src/sass/imports/_functions.scss
-│   │   │   ├── ./src/sass/imports/_general.scss
-│   │   │   ├── ./src/sass/imports/_header.scss
-│   │   │   ├── ./src/sass/imports/_helpers.scss
-│   │   │   ├── ./src/sass/imports/_icons.scss
-│   │   │   ├── ./src/sass/imports/_palettes.scss
-│   │   │   ├── ./src/sass/imports/_posts.scss
-│   │   │   ├── ./src/sass/imports/_prism.scss
-│   │   │   ├── ./src/sass/imports/_reset.scss
-│   │   │   ├── ./src/sass/imports/_sections.scss
-│   │   │   ├── ./src/sass/imports/_structure.scss
-│   │   │   ├── ./src/sass/imports/_tables.scss
-│   │   │   └── ./src/sass/imports/_variables.scss
+│   │   │   ├── ./src/sass/imports/\_animations.scss
+│   │   │   ├── ./src/sass/imports/\_buttons.scss
+│   │   │   ├── ./src/sass/imports/\_docs.scss
+│   │   │   ├── ./src/sass/imports/\_footer.scss
+│   │   │   ├── ./src/sass/imports/\_forms.scss
+│   │   │   ├── ./src/sass/imports/\_functions.scss
+│   │   │   ├── ./src/sass/imports/\_general.scss
+│   │   │   ├── ./src/sass/imports/\_header.scss
+│   │   │   ├── ./src/sass/imports/\_helpers.scss
+│   │   │   ├── ./src/sass/imports/\_icons.scss
+│   │   │   ├── ./src/sass/imports/\_palettes.scss
+│   │   │   ├── ./src/sass/imports/\_posts.scss
+│   │   │   ├── ./src/sass/imports/\_prism.scss
+│   │   │   ├── ./src/sass/imports/\_reset.scss
+│   │   │   ├── ./src/sass/imports/\_sections.scss
+│   │   │   ├── ./src/sass/imports/\_structure.scss
+│   │   │   ├── ./src/sass/imports/\_tables.scss
+│   │   │   └── ./src/sass/imports/\_variables.scss
 │   │   └── ./src/sass/main.scss
 │   ├── ./src/templates
 │   │   ├── ./src/templates/advanced.js
@@ -959,21 +959,21 @@
 │   │   ├── ./src/templates/page.js
 │   │   └── ./src/templates/post.js
 │   └── ./src/utils
-│       ├── ./src/utils/attribute.js
-│       ├── ./src/utils/classNames.js
-│       ├── ./src/utils/cycler.js
-│       ├── ./src/utils/getData.js
-│       ├── ./src/utils/getPageByFilePath.js
-│       ├── ./src/utils/getPage.js
-│       ├── ./src/utils/getPages.js
-│       ├── ./src/utils/htmlToReact.js
-│       ├── ./src/utils/index.js
-│       ├── ./src/utils/link.js
-│       ├── ./src/utils/markdownify.js
-│       ├── ./src/utils/pathJoin.js
-│       ├── ./src/utils/toStyleObj.js
-│       ├── ./src/utils/toUrl.js
-│       └── ./src/utils/withPrefix.js
+│   ├── ./src/utils/attribute.js
+│   ├── ./src/utils/classNames.js
+│   ├── ./src/utils/cycler.js
+│   ├── ./src/utils/getData.js
+│   ├── ./src/utils/getPageByFilePath.js
+│   ├── ./src/utils/getPage.js
+│   ├── ./src/utils/getPages.js
+│   ├── ./src/utils/htmlToReact.js
+│   ├── ./src/utils/index.js
+│   ├── ./src/utils/link.js
+│   ├── ./src/utils/markdownify.js
+│   ├── ./src/utils/pathJoin.js
+│   ├── ./src/utils/toStyleObj.js
+│   ├── ./src/utils/toUrl.js
+│   └── ./src/utils/withPrefix.js
 ├── ./stackbit.yaml
 ├── ./static
 │   ├── ./static/images
@@ -1277,98 +1277,98 @@
 │   │   ├── ./static/js/plugins.js
 │   │   └── ./static/js/prism.js
 │   └── ./static/videos
-│       ├── ./static/videos/2018-01-16_03-34-44_UTC.mp4
-│       ├── ./static/videos/2018-03-13_22-10-44_UTC.mp4
-│       ├── ./static/videos/2018-05-09_21-22-11_UTC.mp4
-│       ├── ./static/videos/2019-02-21_00-41-29_UTC.mp4
-│       ├── ./static/videos/2019-04-17_19-04-50_UTC.mp4
-│       ├── ./static/videos/2019-05-16_16-22-06_UTC.mp4
-│       ├── ./static/videos/2019-06-12_01-58-13_UTC.mp4
-│       ├── ./static/videos/2019-06-12_03-24-24_UTC.mp4
-│       ├── ./static/videos/2019-08-13_14-39-09_UTC.mp4
-│       ├── ./static/videos/2019-08-13_19-21-26_UTC.mp4
-│       ├── ./static/videos/2019-08-15_09-18-30_UTC.mp4
-│       ├── ./static/videos/2019-09-06_13-03-13_UTC.mp4
-│       ├── ./static/videos/2019-09-20_01-19-17_UTC_1.mp4
-│       ├── ./static/videos/2019-09-20_01-19-17_UTC_2.mp4
-│       ├── ./static/videos/2019-09-20_01-19-17_UTC_6.mp4
-│       ├── ./static/videos/2019-10-22_00-26-26_UTC.mp4
-│       ├── ./static/videos/2020-01-01_04-36-17_UTC.mp4
-│       ├── ./static/videos/2020-02-08_22-48-08_UTC.mp4
-│       ├── ./static/videos/2020-03-03_20-58-08_UTC.mp4
-│       ├── ./static/videos/2020-03-05_19-50-23_UTC_1.mp4
-│       ├── ./static/videos/2020-03-05_19-50-23_UTC_2.mp4
-│       ├── ./static/videos/2020-03-18_19-15-36_UTC.mp4
-│       ├── ./static/videos/2020-03-18_22-06-56_UTC_1.mp4
-│       ├── ./static/videos/2020-03-18_22-06-56_UTC_2.mp4
-│       ├── ./static/videos/2020-03-18_23-03-52_UTC.mp4
-│       ├── ./static/videos/2020-03-19_00-07-01_UTC_1.mp4
-│       ├── ./static/videos/2020-03-19_00-07-01_UTC_2.mp4
-│       ├── ./static/videos/2020-03-25_21-43-21_UTC.mp4
-│       ├── ./static/videos/2020-03-29_19-26-17_UTC.mp4
-│       ├── ./static/videos/2020-03-29_21-26-01_UTC_1.mp4
-│       ├── ./static/videos/2020-03-29_21-26-01_UTC_2.mp4
-│       ├── ./static/videos/2020-03-30_00-29-38_UTC.mp4
-│       ├── ./static/videos/2020-03-30_18-55-38_UTC.mp4
-│       ├── ./static/videos/2020-03-31_05-20-03_UTC.mp4
-│       ├── ./static/videos/2020-03-31_06-28-16_UTC.mp4
-│       ├── ./static/videos/2020-03-31_06-54-14_UTC_2.mp4
-│       ├── ./static/videos/2020-03-31_07-03-39_UTC.mp4
-│       ├── ./static/videos/2020-04-03_17-11-56_UTC.mp4
-│       ├── ./static/videos/2020-04-12_12-36-50_UTC.mp4
-│       ├── ./static/videos/2020-04-18_22-45-38_UTC.mp4
-│       ├── ./static/videos/2020-04-24_02-50-13_UTC.mp4
-│       ├── ./static/videos/2020-05-16_18-50-04_UTC_1.mp4
-│       ├── ./static/videos/2020-05-16_18-50-04_UTC_2.mp4
-│       ├── ./static/videos/2020-05-16_18-50-04_UTC_3.mp4
-│       ├── ./static/videos/2020-05-16_18-50-04_UTC_4.mp4
-│       ├── ./static/videos/2020-05-16_18-50-04_UTC_5.mp4
-│       ├── ./static/videos/2020-05-16_18-50-04_UTC_6.mp4
-│       ├── ./static/videos/2020-05-16_18-50-04_UTC_8.mp4
-│       ├── ./static/videos/2020-05-16_19-06-35_UTC.mp4
-│       ├── ./static/videos/2020-05-17_00-15-01_UTC_1.mp4
-│       ├── ./static/videos/2020-05-17_00-15-01_UTC_2.mp4
-│       ├── ./static/videos/2020-05-17_00-15-01_UTC_3.mp4
-│       ├── ./static/videos/2020-05-17_00-15-01_UTC_4.mp4
-│       ├── ./static/videos/2020-05-17_04-02-29_UTC_1.mp4
-│       ├── ./static/videos/2020-05-17_04-02-29_UTC_2.mp4
-│       ├── ./static/videos/2020-05-17_23-25-28_UTC_1.mp4
-│       ├── ./static/videos/2020-05-17_23-25-28_UTC_2.mp4
-│       ├── ./static/videos/2020-05-17_23-25-28_UTC_3.mp4
-│       ├── ./static/videos/2020-05-17_23-25-28_UTC_5.mp4
-│       ├── ./static/videos/2020-05-17_23-25-28_UTC_6.mp4
-│       ├── ./static/videos/2020-05-18_00-06-39_UTC_1.mp4
-│       ├── ./static/videos/2020-05-18_00-08-05_UTC.mp4
-│       ├── ./static/videos/2020-05-18_02-30-25_UTC_1.mp4
-│       ├── ./static/videos/2020-05-18_02-30-25_UTC_2.mp4
-│       ├── ./static/videos/2020-05-18_02-30-25_UTC_3.mp4
-│       ├── ./static/videos/2020-05-18_02-30-25_UTC_4.mp4
-│       ├── ./static/videos/2020-05-18_02-30-25_UTC_5.mp4
-│       ├── ./static/videos/2020-05-18_22-42-31_UTC.mp4
-│       ├── ./static/videos/2020-05-19_02-03-02_UTC.mp4
-│       ├── ./static/videos/2020-05-20_00-18-25_UTC_1.mp4
-│       ├── ./static/videos/2020-05-20_00-18-25_UTC_2.mp4
-│       ├── ./static/videos/2020-05-20_00-18-25_UTC_3.mp4
-│       ├── ./static/videos/2020-05-20_00-18-25_UTC_4.mp4
-│       ├── ./static/videos/2020-05-20_13-46-08_UTC.mp4
-│       ├── ./static/videos/2020-06-03_07-18-12_UTC.mp4
-│       ├── ./static/videos/2020-06-03_12-04-36_UTC.mp4
-│       ├── ./static/videos/2020-06-03_21-03-00_UTC.mp4
-│       ├── ./static/videos/2020-06-03_22-03-48_UTC.mp4
-│       ├── ./static/videos/2020-07-09_20-15-47_UTC.mp4
-│       ├── ./static/videos/2020-07-10_06-31-45_UTC.mp4
-│       ├── ./static/videos/2020-07-26_00-03-10_UTC.mp4
-│       ├── ./static/videos/2020-07-31_20-19-53_UTC.mp4
-│       ├── ./static/videos/2020-08-01_16-04-53_UTC.mp4
-│       ├── ./static/videos/2020-08-08_19-10-06_UTC.mp4
-│       ├── ./static/videos/2020-08-11_22-27-16_UTC.mp4
-│       ├── ./static/videos/2020-08-21_12-54-48_UTC.mp4
-│       ├── ./static/videos/2020-09-27_04-48-03_UTC.mp4
-│       ├── ./static/videos/2021-01-27_00-09-16_UTC.mp4
-│       ├── ./static/videos/2021-04-25_13-25-33_UTC.mp4
-│       ├── ./static/videos/2021-05-16_22-40-15_UTC.mp4
-│       ├── ./static/videos/2021-05-26_21-36-41_UTC.mp4
-│       └── ./static/videos/2021-05-27_00-07-28_UTC.mp4
+│   ├── ./static/videos/2018-01-16_03-34-44_UTC.mp4
+│   ├── ./static/videos/2018-03-13_22-10-44_UTC.mp4
+│   ├── ./static/videos/2018-05-09_21-22-11_UTC.mp4
+│   ├── ./static/videos/2019-02-21_00-41-29_UTC.mp4
+│   ├── ./static/videos/2019-04-17_19-04-50_UTC.mp4
+│   ├── ./static/videos/2019-05-16_16-22-06_UTC.mp4
+│   ├── ./static/videos/2019-06-12_01-58-13_UTC.mp4
+│   ├── ./static/videos/2019-06-12_03-24-24_UTC.mp4
+│   ├── ./static/videos/2019-08-13_14-39-09_UTC.mp4
+│   ├── ./static/videos/2019-08-13_19-21-26_UTC.mp4
+│   ├── ./static/videos/2019-08-15_09-18-30_UTC.mp4
+│   ├── ./static/videos/2019-09-06_13-03-13_UTC.mp4
+│   ├── ./static/videos/2019-09-20_01-19-17_UTC_1.mp4
+│   ├── ./static/videos/2019-09-20_01-19-17_UTC_2.mp4
+│   ├── ./static/videos/2019-09-20_01-19-17_UTC_6.mp4
+│   ├── ./static/videos/2019-10-22_00-26-26_UTC.mp4
+│   ├── ./static/videos/2020-01-01_04-36-17_UTC.mp4
+│   ├── ./static/videos/2020-02-08_22-48-08_UTC.mp4
+│   ├── ./static/videos/2020-03-03_20-58-08_UTC.mp4
+│   ├── ./static/videos/2020-03-05_19-50-23_UTC_1.mp4
+│   ├── ./static/videos/2020-03-05_19-50-23_UTC_2.mp4
+│   ├── ./static/videos/2020-03-18_19-15-36_UTC.mp4
+│   ├── ./static/videos/2020-03-18_22-06-56_UTC_1.mp4
+│   ├── ./static/videos/2020-03-18_22-06-56_UTC_2.mp4
+│   ├── ./static/videos/2020-03-18_23-03-52_UTC.mp4
+│   ├── ./static/videos/2020-03-19_00-07-01_UTC_1.mp4
+│   ├── ./static/videos/2020-03-19_00-07-01_UTC_2.mp4
+│   ├── ./static/videos/2020-03-25_21-43-21_UTC.mp4
+│   ├── ./static/videos/2020-03-29_19-26-17_UTC.mp4
+│   ├── ./static/videos/2020-03-29_21-26-01_UTC_1.mp4
+│   ├── ./static/videos/2020-03-29_21-26-01_UTC_2.mp4
+│   ├── ./static/videos/2020-03-30_00-29-38_UTC.mp4
+│   ├── ./static/videos/2020-03-30_18-55-38_UTC.mp4
+│   ├── ./static/videos/2020-03-31_05-20-03_UTC.mp4
+│   ├── ./static/videos/2020-03-31_06-28-16_UTC.mp4
+│   ├── ./static/videos/2020-03-31_06-54-14_UTC_2.mp4
+│   ├── ./static/videos/2020-03-31_07-03-39_UTC.mp4
+│   ├── ./static/videos/2020-04-03_17-11-56_UTC.mp4
+│   ├── ./static/videos/2020-04-12_12-36-50_UTC.mp4
+│   ├── ./static/videos/2020-04-18_22-45-38_UTC.mp4
+│   ├── ./static/videos/2020-04-24_02-50-13_UTC.mp4
+│   ├── ./static/videos/2020-05-16_18-50-04_UTC_1.mp4
+│   ├── ./static/videos/2020-05-16_18-50-04_UTC_2.mp4
+│   ├── ./static/videos/2020-05-16_18-50-04_UTC_3.mp4
+│   ├── ./static/videos/2020-05-16_18-50-04_UTC_4.mp4
+│   ├── ./static/videos/2020-05-16_18-50-04_UTC_5.mp4
+│   ├── ./static/videos/2020-05-16_18-50-04_UTC_6.mp4
+│   ├── ./static/videos/2020-05-16_18-50-04_UTC_8.mp4
+│   ├── ./static/videos/2020-05-16_19-06-35_UTC.mp4
+│   ├── ./static/videos/2020-05-17_00-15-01_UTC_1.mp4
+│   ├── ./static/videos/2020-05-17_00-15-01_UTC_2.mp4
+│   ├── ./static/videos/2020-05-17_00-15-01_UTC_3.mp4
+│   ├── ./static/videos/2020-05-17_00-15-01_UTC_4.mp4
+│   ├── ./static/videos/2020-05-17_04-02-29_UTC_1.mp4
+│   ├── ./static/videos/2020-05-17_04-02-29_UTC_2.mp4
+│   ├── ./static/videos/2020-05-17_23-25-28_UTC_1.mp4
+│   ├── ./static/videos/2020-05-17_23-25-28_UTC_2.mp4
+│   ├── ./static/videos/2020-05-17_23-25-28_UTC_3.mp4
+│   ├── ./static/videos/2020-05-17_23-25-28_UTC_5.mp4
+│   ├── ./static/videos/2020-05-17_23-25-28_UTC_6.mp4
+│   ├── ./static/videos/2020-05-18_00-06-39_UTC_1.mp4
+│   ├── ./static/videos/2020-05-18_00-08-05_UTC.mp4
+│   ├── ./static/videos/2020-05-18_02-30-25_UTC_1.mp4
+│   ├── ./static/videos/2020-05-18_02-30-25_UTC_2.mp4
+│   ├── ./static/videos/2020-05-18_02-30-25_UTC_3.mp4
+│   ├── ./static/videos/2020-05-18_02-30-25_UTC_4.mp4
+│   ├── ./static/videos/2020-05-18_02-30-25_UTC_5.mp4
+│   ├── ./static/videos/2020-05-18_22-42-31_UTC.mp4
+│   ├── ./static/videos/2020-05-19_02-03-02_UTC.mp4
+│   ├── ./static/videos/2020-05-20_00-18-25_UTC_1.mp4
+│   ├── ./static/videos/2020-05-20_00-18-25_UTC_2.mp4
+│   ├── ./static/videos/2020-05-20_00-18-25_UTC_3.mp4
+│   ├── ./static/videos/2020-05-20_00-18-25_UTC_4.mp4
+│   ├── ./static/videos/2020-05-20_13-46-08_UTC.mp4
+│   ├── ./static/videos/2020-06-03_07-18-12_UTC.mp4
+│   ├── ./static/videos/2020-06-03_12-04-36_UTC.mp4
+│   ├── ./static/videos/2020-06-03_21-03-00_UTC.mp4
+│   ├── ./static/videos/2020-06-03_22-03-48_UTC.mp4
+│   ├── ./static/videos/2020-07-09_20-15-47_UTC.mp4
+│   ├── ./static/videos/2020-07-10_06-31-45_UTC.mp4
+│   ├── ./static/videos/2020-07-26_00-03-10_UTC.mp4
+│   ├── ./static/videos/2020-07-31_20-19-53_UTC.mp4
+│   ├── ./static/videos/2020-08-01_16-04-53_UTC.mp4
+│   ├── ./static/videos/2020-08-08_19-10-06_UTC.mp4
+│   ├── ./static/videos/2020-08-11_22-27-16_UTC.mp4
+│   ├── ./static/videos/2020-08-21_12-54-48_UTC.mp4
+│   ├── ./static/videos/2020-09-27_04-48-03_UTC.mp4
+│   ├── ./static/videos/2021-01-27_00-09-16_UTC.mp4
+│   ├── ./static/videos/2021-04-25_13-25-33_UTC.mp4
+│   ├── ./static/videos/2021-05-16_22-40-15_UTC.mp4
+│   ├── ./static/videos/2021-05-26_21-36-41_UTC.mp4
+│   └── ./static/videos/2021-05-27_00-07-28_UTC.mp4
 └── ./TREE.md
 
 112 directories, 1259 files
