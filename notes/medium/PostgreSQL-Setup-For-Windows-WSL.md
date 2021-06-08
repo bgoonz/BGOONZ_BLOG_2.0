@@ -34,10 +34,10 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" /></figure>Once that installer downloads, run it. You need to go through the normal steps of installing software.
 
-- <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
-- <span id="d4d0">Thanks for the welcome. Next.</span>
-- <span id="1283">Yeah, that’s a good place to install it. Next.</span>
-- <span id="79cc">I don’t want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
+-   <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
+-   <span id="d4d0">Thanks for the welcome. Next.</span>
+-   <span id="1283">Yeah, that’s a good place to install it. Next.</span>
+-   <span id="79cc">I don’t want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" /></figure>-   <span id="e09d">Also, great looking directory. Thanks. Next.</span>
 
@@ -45,9 +45,9 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 ### I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it’s not worth it.
 
-- <span id="25b7">Sure. 5432. Good to go. Next.</span>
-- <span id="28be">Not even sure what that means. Default! Next.</span>
-- <span id="b378">Yep. Looks good. Next.</span>
+-   <span id="25b7">Sure. 5432. Good to go. Next.</span>
+-   <span id="28be">Not even sure what that means. Default! Next.</span>
+-   <span id="b378">Yep. Looks good. Next.</span>
 
 Insert pop culture reference to pass the time
 

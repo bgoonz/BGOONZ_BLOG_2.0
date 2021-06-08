@@ -3,35 +3,35 @@ title: Notes Template
 subtitle: The Notes Template provides you with a blueprint of default post and page styles.
 image: images/5.jpg
 seo:
-  title: Theme Notes Template
-  description: A reference for suggested typographic treatment and styles for your content
-  extra:
-    - name: "og:type"
-      value: website
-      keyName: property
-    - name: "og:title"
-      value: Theme Notes Template
-      keyName: property
-    - name: "og:description"
-      value: >-
-        A reference for suggested typographic treatment and styles for your
-        content
-      keyName: property
-    - name: "og:image"
-      value: images/5.jpg
-      keyName: property
-      relativeUrl: true
-    - name: "twitter:card"
-      value: summary_large_image
-    - name: "twitter:title"
-      value: Theme Notes Template
-    - name: "twitter:description"
-      value: >-
-        A reference for suggested typographic treatment and styles for your
-        content
-    - name: "twitter:image"
-      value: images/5.jpg
-      relativeUrl: true
+    title: Theme Notes Template
+    description: A reference for suggested typographic treatment and styles for your content
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Theme Notes Template
+          keyName: property
+        - name: 'og:description'
+          value: >-
+              A reference for suggested typographic treatment and styles for your
+              content
+          keyName: property
+        - name: 'og:image'
+          value: images/5.jpg
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: summary_large_image
+        - name: 'twitter:title'
+          value: Theme Notes Template
+        - name: 'twitter:description'
+          value: >-
+              A reference for suggested typographic treatment and styles for your
+              content
+        - name: 'twitter:image'
+          value: images/5.jpg
+          relativeUrl: true
 template: page
 ---
 
@@ -39,48 +39,48 @@ template: page
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
 
-- Description:
-  > /_ Description here _/
+-   Description:
+    > /_ Description here _/
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
 
 ## ToC:
 
-- [Title](#title)
-  - [ToC:](#toc)
-  - [Main Notes:](#main-notes)
-  - [Resource Links:](#resource-links)
-  - [10 X 10 Table](#10-x-10-table)
-  - [Headers](#headers)
-- [H1](#h1)
-  - [H2](#h2)
-    - [H3](#h3)
-      - [H4](#h4)
-        - [H5](#h5)
-          - [H6](#h6)
-- [Alt-H1](#alt-h1)
-  - [Alt-H2](#alt-h2)
-  - [Emphasis](#emphasis)
-  - [Lists](#lists)
-  - [Links](#links)
-  - [Images](#images)
-  - [Code and Syntax Highlighting](#code-and-syntax-highlighting)
-  - [Tables](#tables)
-  - [Blockquotes](#blockquotes)
-  - [Inline HTML](#inline-html)
-  - [Horizontal Rule](#horizontal-rule)
-  - [Line Breaks](#line-breaks)
-  - [YouTube Videos](#youtube-videos)
-- [This is an H1](#this-is-an-h1)
-  - [This is an H2](#this-is-an-h2)
-    - [This is an H3](#this-is-an-h3)
-      - [This is an H4](#this-is-an-h4)
-  - [Quoting](#quoting)
-  - [Unordered Lists](#unordered-lists)
-  - [Ordered Lists](#ordered-lists)
-  - [Video Embeds](#video-embeds)
-  - [Code Blocks](#code-blocks)
-  - [Tables](#tables-1)
+-   [Title](#title)
+    -   [ToC:](#toc)
+    -   [Main Notes:](#main-notes)
+    -   [Resource Links:](#resource-links)
+    -   [10 X 10 Table](#10-x-10-table)
+    -   [Headers](#headers)
+-   [H1](#h1)
+    -   [H2](#h2)
+        -   [H3](#h3)
+            -   [H4](#h4)
+                -   [H5](#h5)
+                    -   [H6](#h6)
+-   [Alt-H1](#alt-h1)
+    -   [Alt-H2](#alt-h2)
+    -   [Emphasis](#emphasis)
+    -   [Lists](#lists)
+    -   [Links](#links)
+    -   [Images](#images)
+    -   [Code and Syntax Highlighting](#code-and-syntax-highlighting)
+    -   [Tables](#tables)
+    -   [Blockquotes](#blockquotes)
+    -   [Inline HTML](#inline-html)
+    -   [Horizontal Rule](#horizontal-rule)
+    -   [Line Breaks](#line-breaks)
+    -   [YouTube Videos](#youtube-videos)
+-   [This is an H1](#this-is-an-h1)
+    -   [This is an H2](#this-is-an-h2)
+        -   [This is an H3](#this-is-an-h3)
+            -   [This is an H4](#this-is-an-h4)
+    -   [Quoting](#quoting)
+    -   [Unordered Lists](#unordered-lists)
+    -   [Ordered Lists](#ordered-lists)
+    -   [Video Embeds](#video-embeds)
+    -   [Code Blocks](#code-blocks)
+    -   [Tables](#tables-1)
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
 
@@ -342,23 +342,23 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 1. First ordered list item
 2. Another item
 
-- Unordered sub-list.
+-   Unordered sub-list.
 
 1. Actual numbers don't matter, just that it's a number
 1. Ordered sub-list
 1. And another item.
 
-   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+    You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
 
-   To have a line break without a paragraph, you will need to use two trailing spaces.  
-   Note that this line is separate, but within the same paragraph.  
-   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+    To have a line break without a paragraph, you will need to use two trailing spaces.  
+    Note that this line is separate, but within the same paragraph.  
+    (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 
-- Unordered list can use asterisks
+-   Unordered list can use asterisks
 
-* Or minuses
+*   Or minuses
 
-- Or pluses
+-   Or pluses
 
 <a name="links"/>
 
@@ -431,12 +431,12 @@ Reference-style:
 Here's our logo (hover to see the title text):
 
 Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
 
 Reference-style:
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
 
 <a name="code"/>
 
@@ -469,7 +469,7 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 </code></pre>
 
 ```javascript
-var s = "JavaScript syntax highlighting";
+var s = 'JavaScript syntax highlighting';
 alert(s);
 ```
 
@@ -675,11 +675,11 @@ Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar
 
 ## Unordered Lists
 
-- Donec non tortor in arcu mollis feugiat
-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-- Donec id eros eget quam aliquam gravida
-- Vivamus convallis urna id felis
-- Nulla porta tempus sapien
+-   Donec non tortor in arcu mollis feugiat
+-   Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+-   Donec id eros eget quam aliquam gravida
+-   Vivamus convallis urna id felis
+-   Nulla porta tempus sapien
 
 ## Ordered Lists
 
@@ -706,19 +706,19 @@ body {
 
 ```javascript
 window.$docsify = {
-  coverpage: true,
+    coverpage: true,
 
-  // Custom file name
-  coverpage: "cover.md",
+    // Custom file name
+    coverpage: 'cover.md',
 
-  // mutiple covers
-  coverpage: ["/", "/zh-cn/"],
+    // mutiple covers
+    coverpage: ['/', '/zh-cn/'],
 
-  // mutiple covers and custom file name
-  coverpage: {
-    "/": "cover.md",
-    "/zh-cn/": "cover.md",
-  },
+    // mutiple covers and custom file name
+    coverpage: {
+        '/': 'cover.md',
+        '/zh-cn/': 'cover.md'
+    }
 };
 ```
 

@@ -6,32 +6,32 @@
 
 Here are some of the reasons:
 
-- A function is an instance of the Object type
-- A function can have properties and has a link back to its constructor method
-- You can store the function in a variable
-- You can pass the function as a parameter to another function
-- You can return the function from a function
+-   A function is an instance of the Object type
+-   A function can have properties and has a link back to its constructor method
+-   You can store the function in a variable
+-   You can pass the function as a parameter to another function
+-   You can return the function from a function
 
 #### 2. Given a code snippet containing an anonymous callback, a named callback, and multiple console.logs, predict what will be printed
 
 ```javascript
 function foo(callback) {
-  console.log("grape");
-  callback();
+    console.log('grape');
+    callback();
 }
 
 function bar() {
-  console.log("banana");
+    console.log('banana');
 }
 
 const fruitBasket = function () {
-  console.log("apple");
-  bar();
-  foo(bar);
-  foo(function () {
-    console.log("orange");
-  });
-  console.log("pear");
+    console.log('apple');
+    bar();
+    foo(bar);
+    foo(function () {
+        console.log('orange');
+    });
+    console.log('pear');
 };
 
 fruitBasket();
@@ -43,24 +43,24 @@ You should be able to predict what is going to be logged when we call fruitBaske
 
 ```javascript
 function greaterValue(value, cb1, cb2) {
-  // compare cb1 invoked with value to cb2 invoked with value
-  // return the greater result
+    // compare cb1 invoked with value to cb2 invoked with value
+    // return the greater result
 
-  let res1 = cb1(value);
-  let res2 = cb2(value);
-  if (res1 > res2) {
-    // if this is false, we move out of if statement
-    return res1;
-  }
-  return res2;
+    let res1 = cb1(value);
+    let res2 = cb2(value);
+    if (res1 > res2) {
+        // if this is false, we move out of if statement
+        return res1;
+    }
+    return res2;
 }
 
 let negate = function (num) {
-  return num * -1;
+    return num * -1;
 };
 
 let addOne = function (num) {
-  return num + 1;
+    return num + 1;
 };
 
 console.log(greaterValue(3, negate, addOne));
@@ -73,22 +73,22 @@ Note: we do not invoke `negate` or `addOne` \(by using `()` to call them\), we a
 
 ```javascript
 function myMap(arr, callback) {
-  // iterate through the array, perform the cb on each element
-  // return a new array with those new values
+    // iterate through the array, perform the cb on each element
+    // return a new array with those new values
 
-  let mapped = [];
+    let mapped = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    // remember that map passes three args with each element.
-    let val = callback(arr[i], i, arr);
-    mapped.push(val);
-  }
+    for (let i = 0; i < arr.length; i++) {
+        // remember that map passes three args with each element.
+        let val = callback(arr[i], i, arr);
+        mapped.push(val);
+    }
 
-  return mapped;
+    return mapped;
 }
 
 let double = function (num) {
-  return num * 2;
+    return num * 2;
 };
 
 console.log(myMap([1, 2, 3], double));
@@ -98,17 +98,17 @@ console.log(myMap([1, 2, 3], double));
 
 ```javascript
 function myFilter(arr, callback) {
-  let filtered = [];
+    let filtered = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    let element = arr[i];
+    for (let i = 0; i < arr.length; i++) {
+        let element = arr[i];
 
-    if (callback(element, i, arr)) {
-      filtered.push(element);
+        if (callback(element, i, arr)) {
+            filtered.push(element);
+        }
     }
-  }
 
-  return filtered;
+    return filtered;
 }
 ```
 
@@ -116,14 +116,14 @@ function myFilter(arr, callback) {
 
 ```javascript
 function myEvery(arr, callback) {
-  for (let i = 0; i < arr.length; i++) {
-    let element = arr[i];
+    for (let i = 0; i < arr.length; i++) {
+        let element = arr[i];
 
-    if (callback(element, i, arr) === false) {
-      return false;
+        if (callback(element, i, arr) === false) {
+            return false;
+        }
     }
-  }
-  return true;
+    return true;
 }
 ```
 

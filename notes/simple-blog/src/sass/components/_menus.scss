@@ -2,29 +2,29 @@
  * Menus
  */
 .menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-  li {
-    color: $color-nav-link;
-    line-height: 1.25;
+    li {
+        color: $color-nav-link;
+        line-height: 1.25;
 
-    &.is-active {
-      color: $color-nav-link-active;
+        &.is-active {
+            color: $color-nav-link-active;
+        }
     }
-  }
 
-  a {
-    &:not(.btn) {
-      border: 0;
-      color: inherit;
-      display: inline-block;
-      text-decoration: none;
+    a {
+        &:not(.btn) {
+            border: 0;
+            color: inherit;
+            display: inline-block;
+            text-decoration: none;
 
-      &:hover {
-        color: $color-nav-link-hover;
-      }
+            &:hover {
+                color: $color-nav-link-hover;
+            }
+        }
     }
-  }
 }

@@ -106,14 +106,14 @@ The code editor has a JSX element similar to what you created in the last challe
 
 `ReactDOM.render(componentToRender, targetNode)`
 
-- <span id="f724">the first argument is the React element or component that you want to render,</span>
-- <span id="7093">and the second argument is the DOM node that you want to render the component to.</span>
+-   <span id="f724">the first argument is the React element or component that you want to render,</span>
+-   <span id="7093">and the second argument is the DOM node that you want to render the component to.</span>
 
 > _ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them._
 
 > _key difference in JSX is that you can no longer use the word class to define HTML classes._
 
-- <span id="aafc">— -&gt; This is because class is a reserved word in JavaScript. Instead, JSX uses className</span>
+-   <span id="aafc">— -&gt; This is because class is a reserved word in JavaScript. Instead, JSX uses className</span>
 
 > _the naming convention for all HTML attributes and event references in JSX become camelCase_
 
@@ -121,8 +121,8 @@ The code editor has a JSX element similar to what you created in the last challe
 
 ### Apply a class of myDiv to the div provided in the JSX code.
 
-- <span id="9500">The constant JSX should return a div element.</span>
-- <span id="8d42">The div should have a class of myDiv.</span>
+-   <span id="9500">The constant JSX should return a div element.</span>
+-   <span id="8d42">The div should have a class of myDiv.</span>
 
 <!-- -->
 
@@ -187,7 +187,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 #### To create a component with a function, you simply write a JavaScript function that returns either JSX or null
 
-- <span id="b514">React requires your function name to begin with a capital letter.</span>
+-   <span id="b514">React requires your function name to begin with a capital letter.</span>
 
 > _Here’s an example of a stateless functional component that assigns an HTML class in JSX:_
 
@@ -291,7 +291,7 @@ Note: The text is considered a child of the div element, so you will not be able
 
 > _To compose these components together, you could create an App parent component which renders each of these three components as children. To render a component as a child in a React component, you include the component name written as a custom HTML tag in the JSX._
 
-- <span id="000b">For example, in the render method you could write:</span>
+-   <span id="000b">For example, in the render method you could write:</span>
 
 <!-- -->
 
@@ -309,8 +309,8 @@ Note: The text is considered a child of the div element, so you will not be able
 
 > _In the code editor, there is a simple functional component called ChildComponent and a class component called ParentComponent. Compose the two together by rendering the ChildComponent within the ParentComponent. Make sure to close the ChildComponent tag with a forward slash._
 
-- <span id="2ed5">Note:**ChildComponent is defined with an ES6 arrow function because this is a very common practice when using React**.</span>
-- <span id="fddd">However, know that this is just a function.</span>
+-   <span id="2ed5">Note:**ChildComponent is defined with an ES6 arrow function because this is a very common practice when using React**.</span>
+-   <span id="fddd">However, know that this is just a function.</span>
 
 <!-- -->
 

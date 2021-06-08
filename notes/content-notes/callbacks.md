@@ -131,18 +131,18 @@ Code language: JavaScript \(javascript\)
 
 This is not what you expected because the `process()` function executes before the `download()` function. The correct sequence should be:
 
-- Download the picture, wait for it to complete.
-- Process the picture.
+-   Download the picture, wait for it to complete.
+-   Process the picture.
 
 To fix the issue above, you can pass the `process()` function to the `download()` function and execute the `process()` function inside the `download()` function once the download completes, like this:
 
 ```javascript
 function download(url, callback) {
-  setTimeout(() => {
-    console.log(`Downloading ${url} ...`);
+    setTimeout(() => {
+        console.log(`Downloading ${url} ...`);
 
-    callback(url);
-  }, 3000);
+        callback(url);
+    }, 3000);
 }
 ```
 
@@ -170,11 +170,11 @@ To make the code cleaner, you can define the `process()` function as an anonymou
 
 ```javascript
 function download(url, callback) {
-  setTimeout(() => {
-    console.log(`Downloading ${url} ...`);
+    setTimeout(() => {
+        console.log(`Downloading ${url} ...`);
 
-    callback(url);
-  }, 3000);
+        callback(url);
+    }, 3000);
 }
 ```
 
@@ -188,13 +188,13 @@ The `download()` function assumes that everything works fine and does not consid
 
 ```javascript
 function download(url, success, failure) {
-  setTimeout(() => {
-    console.log(`Downloading ${url} ...`);
+    setTimeout(() => {
+        console.log(`Downloading ${url} ...`);
 
-    let error = url.length === 0 || !url;
+        let error = url.length === 0 || !url;
 
-    error ? failure(url) : success(url);
-  }, 3000);
+        error ? failure(url) : success(url);
+    }, 3000);
 }
 ```
 
@@ -262,8 +262,8 @@ To avoid the pyramid of doom, you use [promises](https://www.javascripttutorial.
 
 ### Summary
 
-- A callback is a function passed into another function as an argument to be executed later.
-- Callback functions can be synchronous or asynchronous.
+-   A callback is a function passed into another function as an argument to be executed later.
+-   Callback functions can be synchronous or asynchronous.
 
 ###
 
@@ -303,7 +303,7 @@ To understand what I’ve explained above, let me start with a simple example. W
 
 ```javascript
 const message = function () {
-  console.log("This message is shown after 3 seconds");
+    console.log('This message is shown after 3 seconds');
 };
 
 setTimeout(message, 3000);
@@ -319,7 +319,7 @@ Alternatively, we can define a function directly inside another function, instea
 
 ```javascript
 setTimeout(function () {
-  console.log("This message is shown after 3 seconds");
+    console.log('This message is shown after 3 seconds');
 }, 3000);
 ```
 
@@ -331,7 +331,7 @@ If you prefer, you can also write the same callback function as an ES6 arrow fun
 
 ```javascript
 setTimeout(() => {
-  console.log("This message is shown after 3 seconds");
+    console.log('This message is shown after 3 seconds');
 }, 3000);
 ```
 
@@ -344,8 +344,8 @@ Click here
 This time we will see a message on the console only when the user clicks on the button:
 
 ```javascript
-document.queryselector("#callback-btn").addEventListener("click", function () {
-  console.log("User has clicked on the button!");
+document.queryselector('#callback-btn').addEventListener('click', function () {
+    console.log('User has clicked on the button!');
 });
 ```
 

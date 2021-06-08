@@ -1,61 +1,61 @@
 ---
 title: FAQ
 excerpt: >-
-  In this section you'll find commonly asked questions regarding the Libris
-  theme. If you have questions, don’t hesitate to ask us directly.
+    In this section you'll find commonly asked questions regarding the Libris
+    theme. If you have questions, don’t hesitate to ask us directly.
 seo:
-  title: FAQ
-  description: This is the faqpage
-  extra:
-    - name: "og:type"
+    title: FAQ
+    description: This is the faqpage
+    extra:
+        - name: 'og:type'
 
-      value: website
-      keyName: property
+          value: website
+          keyName: property
 
-    - name: "og:title"
+        - name: 'og:title'
 
-      value: FAQ
+          value: FAQ
 
-      keyName: property
+          keyName: property
 
-    - name: "og:description"
+        - name: 'og:description'
 
-      value: This is the faqpage
+          value: This is the faqpage
 
-      keyName: property
+          keyName: property
 
-    - name: "twitter:card"
+        - name: 'twitter:card'
 
-      value: summary
+          value: summary
 
-    - name: "twitter:title"
+        - name: 'twitter:title'
 
-      value: FAQ
+          value: FAQ
 
-    - name: "twitter:description"
+        - name: 'twitter:description'
 
-      value: This is the faqpage
+          value: This is the faqpage
 
 template: docs
 ---
 
-- 🔭 Contract Web Development **Relational Concepts**
+-   🔭 Contract Web Development **Relational Concepts**
 
-- 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+-   🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
 
-- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+-   👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
 
-- 🤝 I'm looking for help with [Learning React](https://github.com/bgoonz/React-Practice)
+-   🤝 I'm looking for help with [Learning React](https://github.com/bgoonz/React-Practice)
 
-- 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
+-   👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
 
-- 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+-   📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
 
-- 💬 Ask me about **Anything:**
+-   💬 Ask me about **Anything:**
 
-- 📫 How to reach me **bryan.guner@gmail.com**
+-   📫 How to reach me **bryan.guner@gmail.com**
 
-- ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+-   ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
 
 ### i really like music :headphones:
 

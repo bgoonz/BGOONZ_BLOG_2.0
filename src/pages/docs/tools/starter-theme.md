@@ -2,24 +2,24 @@
 title: Default Readme
 weight: 1
 seo:
-  title: Default Readme
-  description: This is the Default Readme page
-  extra:
-    - name: "og:type"
-      value: website
-      keyName: property
-    - name: "og:title"
-      value: Default Readme
-      keyName: property
-    - name: "og:description"
-      value: This is the Default Readme page
-      keyName: property
-    - name: "twitter:card"
-      value: summary
-    - name: "twitter:title"
-      value: Default Readme
-    - name: "twitter:description"
-      value: This is the Default Readme page
+    title: Default Readme
+    description: This is the Default Readme page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Default Readme
+          keyName: property
+        - name: 'og:description'
+          value: This is the Default Readme page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Default Readme
+        - name: 'twitter:description'
+          value: This is the Default Readme page
 template: docs
 ---
 
@@ -138,18 +138,18 @@ Describe overview of app, themes and philosophy, inspiration, audience, or whate
 
 </div>
 
-- **Key action word** a feature here.
-- **Emphasize action** for this feature.
-- Feature 3 **highlights this benefit**.
+-   **Key action word** a feature here.
+-   **Emphasize action** for this feature.
+-   Feature 3 **highlights this benefit**.
 
 ##For the Future
 
 An optional _brief_ note describing scheduling or other planning details.
 
-- **Major** _(high priority)_ A major feature
-- **Major** A major feature
-- **Minor** _(low priority)_ A minor feature
-- **Maybe** Undecided ideas or brainstorming
+-   **Major** _(high priority)_ A major feature
+-   **Major** A major feature
+-   **Minor** _(low priority)_ A minor feature
+-   **Maybe** Undecided ideas or brainstorming
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
 
@@ -173,10 +173,10 @@ An optional _brief_ note describing scheduling or other planning details.
   width="50%"
   align="right">
 
-- To **do a thing**, follow this step.
-- **\*TIP** This is a helpful tip.\*
-- **\*NOTE** This is note about something.\*
-- **\*WARNING!** This is a warning!\*
+-   To **do a thing**, follow this step.
+-   **\*TIP** This is a helpful tip.\*
+-   **\*NOTE** This is note about something.\*
+-   **\*WARNING!** This is a warning!\*
 
 <br clear="both">
 
@@ -226,8 +226,8 @@ Repeat the pattern.
 5. Select the 'Hobby Dev - Free' plan.
 6. Navigate to the _Settings_ tab. Click 'Reveal Config Vars'. Set the environment variables needed to run the app.
 
-- **NOTE** NEVER check in `.env` files or any private keys. Environment variables set in an `.env` file won't work in Heroku anyway.
-- **NOTE** See the `DATABASE_URL` is already set. This is done when the Heroku Postgres database was set up. Therefore, `DB_USERNAME`, `DB_PASSWORD`, and `DB_DATABASE` arent' required.
+-   **NOTE** NEVER check in `.env` files or any private keys. Environment variables set in an `.env` file won't work in Heroku anyway.
+-   **NOTE** See the `DATABASE_URL` is already set. This is done when the Heroku Postgres database was set up. Therefore, `DB_USERNAME`, `DB_PASSWORD`, and `DB_DATABASE` arent' required.
 
 ##Configure the app to use the Heroku Postgres database
 There are two ways to configure the `production` environment:
@@ -242,15 +242,15 @@ Update the `config/database.js` file with a `production` key like so.
 // config/database.js
 // ...
 module.exports = {
-  development: {
-    // ...
-  },
-  production: {
-    use_env_variable: "DATABASE_URL",
-    dialect: "postgres",
-    dialectOptions: { ssl: true },
-    seederStorage: "sequelize",
-  },
+    development: {
+        // ...
+    },
+    production: {
+        use_env_variable: 'DATABASE_URL',
+        dialect: 'postgres',
+        dialectOptions: { ssl: true },
+        seederStorage: 'sequelize'
+    }
 };
 ```
 

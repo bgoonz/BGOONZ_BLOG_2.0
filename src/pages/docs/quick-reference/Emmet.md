@@ -2,24 +2,24 @@
 title: Emmet Cheat Sheet
 excerpt: In this section you'll find basic information about Web-Dev-Huband how to use it.
 seo:
-  title: Emmet Cheat Sheet
-  description: This is the Emmet Cheat Sheet page
-  extra:
-    - name: "og:type"
-      value: website
-      keyName: property
-    - name: "og:title"
-      value: Emmet Cheat Sheet
-      keyName: property
-    - name: "og:description"
-      value: This is the Emmet Cheat Sheet page
-      keyName: property
-    - name: "twitter:card"
-      value: summary
-    - name: "twitter:title"
-      value: Emmet Cheat Sheet
-    - name: "twitter:description"
-      value: This is the Emmet Cheat Sheet page
+    title: Emmet Cheat Sheet
+    description: This is the Emmet Cheat Sheet page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Emmet Cheat Sheet
+          keyName: property
+        - name: 'og:description'
+          value: This is the Emmet Cheat Sheet page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Emmet Cheat Sheet
+        - name: 'twitter:description'
+          value: This is the Emmet Cheat Sheet page
 template: docs
 ---
 
@@ -47,8 +47,8 @@ Normally, installation for Emmet should be a straight-forward process from the p
 
 You can use Emmet in two ways:
 
-- <span id="856f">Tab Expand Way: Type your emmet code and press `Tab` key</span>
-- <span id="9aea">Interactive Method: Press `alt + ctrl + Enter` and start typing your expressions. This should automatically generate HTML snippets on the fly.</span>
+-   <span id="856f">Tab Expand Way: Type your emmet code and press `Tab` key</span>
+-   <span id="9aea">Interactive Method: Press `alt + ctrl + Enter` and start typing your expressions. This should automatically generate HTML snippets on the fly.</span>
 
 **This cheatsheet will assume that you press**`Tab`**after each expressions.**
 
@@ -209,7 +209,7 @@ To start the numbering from specific number, use this way
 
 ### Tips
 
-- <span id="b708">Use `:` to expand known abbreviations</span>
+-   <span id="b708">Use `:` to expand known abbreviations</span>
 
 `input:date`
 
@@ -223,7 +223,7 @@ To start the numbering from specific number, use this way
 
     <link rel="stylesheet" href="style.css">
 
-- <span id="d43e">Building Navbar</span>
+-   <span id="d43e">Building Navbar</span>
 
 `.navbar>ul>li*3>a[href=#]{Item $@-}`
 
@@ -239,7 +239,7 @@ To start the numbering from specific number, use this way
 
 Emmet works surprisingly well with css as well.
 
-- <span id="68eb">`f:l`</span>
+-   <span id="68eb">`f:l`</span>
 
 <!-- -->
 
@@ -247,7 +247,7 @@ Emmet works surprisingly well with css as well.
 
 You can also use any options n/r/l
 
-- <span id="d9cc">`pos:a­`</span>
+-   <span id="d9cc">`pos:a­`</span>
 
 <!-- -->
 
@@ -255,19 +255,19 @@ You can also use any options n/r/l
 
 Also use any options, pos:a/r/f
 
-- <span id="5b67">`d:n/b­/f/­i/ib`</span>
+-   <span id="5b67">`d:n/b­/f/­i/ib`</span>
 
 `d:ib`
 
     display: inline-block;
 
-- <span id="26f6">You can use `m` for margin and `p` for padding followed by direction</span>
+-   <span id="26f6">You can use `m` for margin and `p` for padding followed by direction</span>
 
 `mr` -&gt; `margin-right`
 
 `pr` -&gt; `padding-right`
 
-- <span id="01cc">`@f` will result in</span>
+-   <span id="01cc">`@f` will result in</span>
 
 <!-- -->
 

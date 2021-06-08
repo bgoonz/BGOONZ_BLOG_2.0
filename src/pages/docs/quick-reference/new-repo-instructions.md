@@ -2,24 +2,24 @@
 title: new-repo-git
 weight: 2
 seo:
-  title: new-repo-git
-  description: This is the new-repo-git page
-  extra:
-    - name: "og:type"
-      value: website
-      keyName: property
-    - name: "og:title"
-      value: new-repo-git
-      keyName: property
-    - name: "og:description"
-      value: This is the new-repo-git page
-      keyName: property
-    - name: "twitter:card"
-      value: summary
-    - name: "twitter:title"
-      value: new-repo-git
-    - name: "twitter:description"
-      value: This is the new-repo-git page
+    title: new-repo-git
+    description: This is the new-repo-git page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: new-repo-git
+          keyName: property
+        - name: 'og:description'
+          value: This is the new-repo-git page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: new-repo-git
+        - name: 'twitter:description'
+          value: This is the new-repo-git page
 template: docs
 ---
 

@@ -50,41 +50,41 @@ I've collected a list of resources that will help you and guide you through the 
 
 Click on the titles to access to the resources.
 
-- [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+-   [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 [![Markdown Cheat Sheet Sample](https://res.cloudinary.com/practicaldev/image/fetch/s--0h7zqV__--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/ivasoqwzyf6xl8kku0ml.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--0h7zqV__--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/ivasoqwzyf6xl8kku0ml.png)
 
 Get to know the fundamentals of Markdown, and how to leverage its features on your README.
 
-- [Simple Icons](https://simpleicons.org/)
+-   [Simple Icons](https://simpleicons.org/)
 
 [![Simple Icons Sample](https://res.cloudinary.com/practicaldev/image/fetch/s--QvpBv6-y--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/gsk65ee0f2hik7oxsguf.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--QvpBv6-y--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/gsk65ee0f2hik7oxsguf.png)
 
 Include icons from the most "iconic" software projects and tools used in your day-to-day job.
 
-- [GitHub README Profile Creator](https://github.com/rajk3770/Github-Profile-Readme-Creator)
+-   [GitHub README Profile Creator](https://github.com/rajk3770/Github-Profile-Readme-Creator)
 
 [![GitHub README Profile Creator Sample](https://res.cloudinary.com/practicaldev/image/fetch/s--qh_a_nT7--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/rajk3770/Github-Profile-Readme-Creator/master/screenshots/Profile.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--qh_a_nT7--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/rajk3770/Github-Profile-Readme-Creator/master/screenshots/Profile.png)
 
 Easy and simple way to create your profile README with an open-source tool.
 
-- [Markdown Icons](https://gist.github.com/rxaviers/7360908)
+-   [Markdown Icons](https://gist.github.com/rxaviers/7360908)
 
 [![Alt Text](https://res.cloudinary.com/practicaldev/image/fetch/s--PkdhBNaP--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/u6h57wrwu12ew9gp68qb.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--PkdhBNaP--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/u6h57wrwu12ew9gp68qb.png)
 
-- [GitHub Profile Views Counter](https://github.com/arturssmirnovs/github-profile-views-counter)
+-   [GitHub Profile Views Counter](https://github.com/arturssmirnovs/github-profile-views-counter)
 
 [![profile-views-counter-banner](https://res.cloudinary.com/practicaldev/image/fetch/s--eZmeO8cn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/arturssmirnovs/github-profile-views-counter/master/banner.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--eZmeO8cn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/arturssmirnovs/github-profile-views-counter/master/banner.png)
 
-- [GitHub README Profile Generator](https://github.com/arturssmirnovs/github-profile-readme-generator)
+-   [GitHub README Profile Generator](https://github.com/arturssmirnovs/github-profile-readme-generator)
 
 [![GitHub README Profile Generator GIF](https://camo.githubusercontent.com/34607ef851813101484b49c3a391faf3653cd143/68747470733a2f2f617274757273736d69726e6f76732e6769746875622e696f2f6769746875622d70726f66696c652d726561646d652d67656e657261746f722f696d616765732f6769662e6769663f763d313233)](https://camo.githubusercontent.com/34607ef851813101484b49c3a391faf3653cd143/68747470733a2f2f617274757273736d69726e6f76732e6769746875622e696f2f6769746875622d70726f66696c652d726561646d652d67656e657261746f722f696d616765732f6769662e6769663f763d313233)
 
-- [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
+-   [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
 
 [![GitHub Readme Stats Sample](https://camo.githubusercontent.com/5bfcb715afe67fc2e0174b0275ed2fe1a5ce1f32/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f616e7572616768617a72612f696d6167652f75706c6f61642f76313539353137343533362f6772732d7468656d65735f6c34796e6a612e706e67)](https://camo.githubusercontent.com/5bfcb715afe67fc2e0174b0275ed2fe1a5ce1f32/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f616e7572616768617a72612f696d6167652f75706c6f61642f76313539353137343533362f6772732d7468656d65735f6c34796e6a612e706e67)
 
-- [Social Badges | Shields](https://shields.io/)
+-   [Social Badges | Shields](https://shields.io/)
 
 [![Shields.io Home Page](https://res.cloudinary.com/practicaldev/image/fetch/s--HC3hggrH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/bfx0ni1rzjqb3k819jh6.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--HC3hggrH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/bfx0ni1rzjqb3k819jh6.png)
 
@@ -92,14 +92,14 @@ Easy and simple way to create your profile README with an open-source tool.
 
 Here is a quick dose of inspiration for creating your own profile:
 
-- [Kat Fukui](https://github.com/katmeister)  
-  [![Kat Fukui Face](https://res.cloudinary.com/practicaldev/image/fetch/s--YgnHYjxX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--M-TxY9Vf--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/3mholgldn3lloxjmu4r4.jpeg)](https://res.cloudinary.com/practicaldev/image/fetch/s--YgnHYjxX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--M-TxY9Vf--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/3mholgldn3lloxjmu4r4.jpeg)
-- [Monica Powell](https://www.aboutmonica.com/blog/how-to-create-a-github-profile-readme)  
-  [![Monica Powell Github Profile](https://res.cloudinary.com/practicaldev/image/fetch/s--Jzq_Etea--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://www.aboutmonica.com/media/monica-github-readme-edit.gif)](https://res.cloudinary.com/practicaldev/image/fetch/s--Jzq_Etea--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://www.aboutmonica.com/media/monica-github-readme-edit.gif)
-- [Martin Heinz](https://github.com/MartinHeinz)  
-  [![Martin Heinz Github Profile](https://res.cloudinary.com/practicaldev/image/fetch/s--Vo_Bsfvs--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/2426/1%2ANBUfL7eDm8ednodVwWbFDw.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--Vo_Bsfvs--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/2426/1%2ANBUfL7eDm8ednodVwWbFDw.png)
-- [Thomas Guibert](https://github.com/thmsgbrt)  
-  [![Thomas Github Profile](https://res.cloudinary.com/practicaldev/image/fetch/s--ZXQ9S8CD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/2556/1%2AZggRWyvgxX417fUi7goosQ.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--ZXQ9S8CD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/2556/1%2AZggRWyvgxX417fUi7goosQ.png)
+-   [Kat Fukui](https://github.com/katmeister)  
+    [![Kat Fukui Face](https://res.cloudinary.com/practicaldev/image/fetch/s--YgnHYjxX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--M-TxY9Vf--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/3mholgldn3lloxjmu4r4.jpeg)](https://res.cloudinary.com/practicaldev/image/fetch/s--YgnHYjxX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--M-TxY9Vf--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/3mholgldn3lloxjmu4r4.jpeg)
+-   [Monica Powell](https://www.aboutmonica.com/blog/how-to-create-a-github-profile-readme)  
+    [![Monica Powell Github Profile](https://res.cloudinary.com/practicaldev/image/fetch/s--Jzq_Etea--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://www.aboutmonica.com/media/monica-github-readme-edit.gif)](https://res.cloudinary.com/practicaldev/image/fetch/s--Jzq_Etea--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://www.aboutmonica.com/media/monica-github-readme-edit.gif)
+-   [Martin Heinz](https://github.com/MartinHeinz)  
+    [![Martin Heinz Github Profile](https://res.cloudinary.com/practicaldev/image/fetch/s--Vo_Bsfvs--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/2426/1%2ANBUfL7eDm8ednodVwWbFDw.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--Vo_Bsfvs--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/2426/1%2ANBUfL7eDm8ednodVwWbFDw.png)
+-   [Thomas Guibert](https://github.com/thmsgbrt)  
+    [![Thomas Github Profile](https://res.cloudinary.com/practicaldev/image/fetch/s--ZXQ9S8CD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/2556/1%2AZggRWyvgxX417fUi7goosQ.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--ZXQ9S8CD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/2556/1%2AZggRWyvgxX417fUi7goosQ.png)
 
 ## [](#runner-where-to-go-from-here)🏃 **Where to go from here?**
 

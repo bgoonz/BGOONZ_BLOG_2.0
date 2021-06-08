@@ -14,17 +14,17 @@ A plethora of front-end code playgrounds have appeared over the years. They offe
 
 ### Typical features of these online playgrounds include:
 
-- <span id="3386">**_color-coded HTML, CSS and JavaScript editors_**</span>
-- <span id="152b">**_a preview window — many update on the fly without a refresh_**</span>
-- <span id="c746">**_HTML pre-processors such as HAML_**</span>
-- <span id="bf6f">**_LESS, SASS and Stylus CSS pre-processing_**</span>
-- <span id="8093">**_inclusion of popular JavaScript libraries_**</span>
-- <span id="b6d5">**_developer consoles and code validation tools_**</span>
-- <span id="98e5">**_sharing via a short URL_**</span>
-- <span id="e7c5">**_embedding demonstrations in other pages_**</span>
-- <span id="2e11">**_code forking_**</span>
-- <span id="efa6">**_zero cost (or payment for premium services only)_**</span>
-- <span id="782a">**_showing off your coding skills to the world!_**</span>
+-   <span id="3386">**_color-coded HTML, CSS and JavaScript editors_**</span>
+-   <span id="152b">**_a preview window — many update on the fly without a refresh_**</span>
+-   <span id="c746">**_HTML pre-processors such as HAML_**</span>
+-   <span id="bf6f">**_LESS, SASS and Stylus CSS pre-processing_**</span>
+-   <span id="8093">**_inclusion of popular JavaScript libraries_**</span>
+-   <span id="b6d5">**_developer consoles and code validation tools_**</span>
+-   <span id="98e5">**_sharing via a short URL_**</span>
+-   <span id="e7c5">**_embedding demonstrations in other pages_**</span>
+-   <span id="2e11">**_code forking_**</span>
+-   <span id="efa6">**_zero cost (or payment for premium services only)_**</span>
+-   <span id="782a">**_showing off your coding skills to the world!_**</span>
 
 ---
 
@@ -70,16 +70,16 @@ Repl from Repo. Get started with any Github repo, right from your browser. Commi
 
 > JSFiddle has the notion of panels (or tabs if you switch into the tabbed layout), there are 4 panels, 3 where you can enter code, and 1 to see the result.
 
-- <span id="0c0b">**HTML** — structure code, no need to add `body` `doctype` `head`, that's added automatically</span>
-- <span id="b95b">**CSS** — styles. You can switch pre-pocessor to SCSS</span>
-- <span id="1709">**JavaScript** — behavior. There are many frameworks and code pre-processors you can use</span>
+-   <span id="0c0b">**HTML** — structure code, no need to add `body` `doctype` `head`, that's added automatically</span>
+-   <span id="b95b">**CSS** — styles. You can switch pre-pocessor to SCSS</span>
+-   <span id="1709">**JavaScript** — behavior. There are many frameworks and code pre-processors you can use</span>
 
 Once you enter code, just hit **Run** in the top actions bar, and the fourth panel with results will appear.
 
 ### ⚫Saving and Forking code
 
-- <span id="f034">**Save** / **Update** will do what you think, it’ll save a new fiddle or update an existing one (and add a version number to it)</span>
-- <span id="f634">**Fork** will split out an existing fiddle into a new one, starting with version 0</span>
+-   <span id="f034">**Save** / **Update** will do what you think, it’ll save a new fiddle or update an existing one (and add a version number to it)</span>
+-   <span id="f634">**Fork** will split out an existing fiddle into a new one, starting with version 0</span>
 
 ---
 
@@ -87,10 +87,10 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 <a href="https://stackblitz.com/" class="markup--anchor markup--p-anchor">StackBlitz</a>
 
-- <span id="9cf4">**Installs packages ≥5x faster than Yarn & NPM 🔥**</span>
-- <span id="d50f">**Reduces the size of** `node_modules` **up to two orders of magnitude 😮**</span>
-- <span id="288c">**Has multiple layers of redundancy for production grade reliability** 💪</span>
-- <span id="ba5d">**Works _entirely_ within your web browser, enabling lightning fast dev environments ⚡️**</span>
+-   <span id="9cf4">**Installs packages ≥5x faster than Yarn & NPM 🔥**</span>
+-   <span id="d50f">**Reduces the size of** `node_modules` **up to two orders of magnitude 😮**</span>
+-   <span id="288c">**Has multiple layers of redundancy for production grade reliability** 💪</span>
+-   <span id="ba5d">**Works _entirely_ within your web browser, enabling lightning fast dev environments ⚡️**</span>
 
 > Dependencies still slip into the install process as dev & sub-dependencies and are downloaded & extracted all the same, resulting in the infamous black hole known as `node_modules`:
 
@@ -127,9 +127,9 @@ If you know the type of project that you would like to create, <a href="https://
 
 An existing project will be identified by Glitch as a **static** site if it does not contain one of the following files:
 
-- <span id="69e6">**package.json**</span>
-- <span id="fbe0">**requirements.txt**</span>
-- <span id="4fe5">**glitch.json**</span>
+-   <span id="69e6">**package.json**</span>
+-   <span id="fbe0">**requirements.txt**</span>
+-   <span id="4fe5">**glitch.json**</span>
 
 ### ⚫**Node.js**
 
@@ -142,14 +142,14 @@ An existing project will be identified by Glitch as a **static** site if it does
 
 **Still not sure where to start? Check out these categories of community-built apps for inspiration:**
 
-- <span id="53a7"><a href="https://glitch.com/@glitch/games" class="markup--anchor markup--li-anchor">Games</a></span>
-- <span id="05b5"><a href="https://glitch.com/@glitch/bots" class="markup--anchor markup--li-anchor">Bots</a></span>
-- <span id="a9e4"><a href="https://glitch.com/@glitch/music" class="markup--anchor markup--li-anchor">Music</a></span>
-- <span id="0d44"><a href="https://glitch.com/@glitch/art" class="markup--anchor markup--li-anchor">Art</a></span>
-- <span id="8927"><a href="https://glitch.com/@glitch/tools-for-work" class="markup--anchor markup--li-anchor">Productivity</a></span>
-- <span id="7068"><a href="https://glitch.com/@glitch/hardware" class="markup--anchor markup--li-anchor">Hardware</a></span>
-- <span id="5dd4"><a href="https://glitch.com/@glitch/building-blocks" class="markup--anchor markup--li-anchor">Building Blocks</a></span>
-- <span id="0c79"><a href="https://glitch.com/@glitch/learn-to-code" class="markup--anchor markup--li-anchor">Learn to Code</a></span>
+-   <span id="53a7"><a href="https://glitch.com/@glitch/games" class="markup--anchor markup--li-anchor">Games</a></span>
+-   <span id="05b5"><a href="https://glitch.com/@glitch/bots" class="markup--anchor markup--li-anchor">Bots</a></span>
+-   <span id="a9e4"><a href="https://glitch.com/@glitch/music" class="markup--anchor markup--li-anchor">Music</a></span>
+-   <span id="0d44"><a href="https://glitch.com/@glitch/art" class="markup--anchor markup--li-anchor">Art</a></span>
+-   <span id="8927"><a href="https://glitch.com/@glitch/tools-for-work" class="markup--anchor markup--li-anchor">Productivity</a></span>
+-   <span id="7068"><a href="https://glitch.com/@glitch/hardware" class="markup--anchor markup--li-anchor">Hardware</a></span>
+-   <span id="5dd4"><a href="https://glitch.com/@glitch/building-blocks" class="markup--anchor markup--li-anchor">Building Blocks</a></span>
+-   <span id="0c79"><a href="https://glitch.com/@glitch/learn-to-code" class="markup--anchor markup--li-anchor">Learn to Code</a></span>
 
 ### Here’s a (temporarily) broken version of my personal portfolio .. hosted on glitch
 

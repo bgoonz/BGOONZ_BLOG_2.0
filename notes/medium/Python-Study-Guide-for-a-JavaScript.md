@@ -10,8 +10,8 @@ A guide to commands in Python from what you know in JavaScript
 
 ### Basics
 
-- <span id="f893">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
-- <span id="c0bf">`print` is the equivalent of `console.log`.</span>
+-   <span id="f893">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
+-   <span id="c0bf">`print` is the equivalent of `console.log`.</span>
 
 > ‘print() == console.log()’
 
@@ -31,7 +31,7 @@ A guide to commands in Python from what you know in JavaScript
 
 ### Numbers
 
-- <span id="4060">Python has three types of numbers:</span>
+-   <span id="4060">Python has three types of numbers:</span>
 
 1.  <span id="8aef">**Integer**</span>
 2.  <span id="723f">**Positive and Negative Counting Numbers.**</span>
@@ -71,7 +71,7 @@ No Decimal Point
     print(complex(17)) # => 17+0j
     print(complex()) # => 0j
 
-- <span id="2579">**Type Casting** : The process of converting one number to another.</span>
+-   <span id="2579">**Type Casting** : The process of converting one number to another.</span>
 
 <!-- -->
 
@@ -88,11 +88,11 @@ No Decimal Point
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
-- <span id="8cf4">_“\*\*” : Double asterisk for exponent._</span>
-- <span id="03b4">_“//” : Integer Division._</span>
-- <span id="2ce5">**There are no spaces between math operations in Python.**</span>
-- <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
-- <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
+-   <span id="8cf4">_“\*\*” : Double asterisk for exponent._</span>
+-   <span id="03b4">_“//” : Integer Division._</span>
+-   <span id="2ce5">**There are no spaces between math operations in Python.**</span>
+-   <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
+-   <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png" class="graf-image" /></figure>
 
@@ -100,9 +100,9 @@ No Decimal Point
 
 ### Strings
 
-- <span id="e98c">Python uses both single and double quotes.</span>
-- <span id="225e">You can escape strings like so `'Jodi asked, "What\'s up, Sam?"'`</span>
-- <span id="9f74">Multiline strings use triple quotes.</span>
+-   <span id="e98c">Python uses both single and double quotes.</span>
+-   <span id="225e">You can escape strings like so `'Jodi asked, "What\'s up, Sam?"'`</span>
+-   <span id="9f74">Multiline strings use triple quotes.</span>
 
 <!-- -->
 
@@ -124,7 +124,7 @@ No Decimal Point
 
     print(“Spaghetti”[-4]) # => e
 
-- <span id="7567">Python let’s you use ranges</span>
+-   <span id="7567">Python let’s you use ranges</span>
 
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **\*by textbook definition\*\***, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
 
@@ -132,7 +132,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print(“Spaghetti”[4:-1]) # => hett
     print(“Spaghetti”[4:4]) # => (empty string)
 
-- <span id="1366">The end range is exclusive just like `slice` in JS.</span>
+-   <span id="1366">The end range is exclusive just like `slice` in JS.</span>
 
 <!-- -->
 
@@ -144,14 +144,14 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print("Spaghetti"[1:])  # => paghetti
     print("Spaghetti"[-4:])    # => etti
 
-- <span id="c786">The `index` string function is the equiv. of `indexOf()` in JS</span>
+-   <span id="c786">The `index` string function is the equiv. of `indexOf()` in JS</span>
 
 <!-- -->
 
     print("Spaghetti".index("h"))    # => 4
     print("Spaghetti".index("t"))    # => 6
 
-- <span id="fbb6">The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.</span>
+-   <span id="fbb6">The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.</span>
 
 <!-- -->
 
@@ -165,9 +165,9 @@ You can think of this as roughly equivalent to the slice method called on a Java
     postpone, and one which we intend to win, and the others, too.
     '''.count('the '))                # => 4
 
-- <span id="7816">**You can use** `+` **to concatenate strings, just like in JS.**</span>
-- <span id="ed0a">**You can also use “\*” to repeat strings or multiply strings.**</span>
-- <span id="f95c">**Use the** `format()` **function to use placeholders in a string to input values later on.**</span>
+-   <span id="7816">**You can use** `+` **to concatenate strings, just like in JS.**</span>
+-   <span id="ed0a">**You can also use “\*” to repeat strings or multiply strings.**</span>
+-   <span id="f95c">**Use the** `format()` **function to use placeholders in a string to input values later on.**</span>
 
 <!-- -->
 
@@ -175,12 +175,12 @@ You can think of this as roughly equivalent to the slice method called on a Java
     last_name = "Bob"
     print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
 
-- <span id="445b">_Shorthand way to use format function is:  
-  _`print(f'Your name is {first_name} {last_name}')`</span>
+-   <span id="445b">_Shorthand way to use format function is:  
+    _`print(f'Your name is {first_name} {last_name}')`</span>
 
 #### Some useful string methods.
 
-- <span id="118c">**Note that in JS** `join` **is used on an Array, in Python it is used on String.**</span>
+-   <span id="118c">**Note that in JS** `join` **is used on an Array, in Python it is used on String.**</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" /></figure>-   <span id="e95e">There are also many handy testing methods.</span>
 
@@ -190,9 +190,9 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ### Variables and Expressions
 
-- <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
-- <span id="6e70">Duck Typing is the fundamental approach of Python.</span>
-- <span id="5666">Assignment of a value automatically declares a variable.</span>
+-   <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
+-   <span id="6e70">Duck Typing is the fundamental approach of Python.</span>
+-   <span id="5666">Assignment of a value automatically declares a variable.</span>
 
 <!-- -->
 
@@ -201,7 +201,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print(a)         # => 7
     print(b)         # => Marbles
 
-- <span id="f6cf">**_You can chain variable assignments to give multiple var names the same value._**</span>
+-   <span id="f6cf">**_You can chain variable assignments to give multiple var names the same value._**</span>
 
 #### Use with caution as this is highly unreadable
 
@@ -217,10 +217,10 @@ You can think of this as roughly equivalent to the slice method called on a Java
     a = 'seventeen'
     print(a)         # => seventeen
 
-- <span id="4605">`NaN` _does not exist in Python, but you can 'create' it like so:  
-  _`print(float("nan"))`</span>
-- <span id="d150">_Python replaces_ `null` _with_ `none`_._</span>
-- <span id="6fa7">`none` **_is an object_** _and can be directly assigned to a variable._</span>
+-   <span id="4605">`NaN` _does not exist in Python, but you can 'create' it like so:  
+    _`print(float("nan"))`</span>
+-   <span id="d150">_Python replaces_ `null` _with_ `none`_._</span>
+-   <span id="6fa7">`none` **_is an object_** _and can be directly assigned to a variable._</span>
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
@@ -228,7 +228,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ### Boolean Data Type
 
-- <span id="b843">One of the biggest benefits of Python is that it reads more like English than JS does.</span>
+-   <span id="b843">One of the biggest benefits of Python is that it reads more like English than JS does.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*HQpndNhm1Z_xSoHb.png" class="graf-image" /></figure># Logical AND
     print(True and True)    # => True
@@ -245,19 +245,19 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print(not False and True)   # => True
     print(not True or False)    # => False
 
-- <span id="18cc">By default, Python considers an object to be true UNLESS it is one of the following:</span>
-- <span id="6e0a">Constant `None` or `False`</span>
-- <span id="9552">Zero of any numeric type.</span>
-- <span id="e7ce">Empty Sequence or Collection.</span>
-- <span id="11d6">`True` and `False` must be capitalized</span>
+-   <span id="18cc">By default, Python considers an object to be true UNLESS it is one of the following:</span>
+-   <span id="6e0a">Constant `None` or `False`</span>
+-   <span id="9552">Zero of any numeric type.</span>
+-   <span id="e7ce">Empty Sequence or Collection.</span>
+-   <span id="11d6">`True` and `False` must be capitalized</span>
 
 ---
 
 ### Comparison Operators
 
-- <span id="a4fa">Python uses all the same equality operators as JS.</span>
-- <span id="7f98">In Python, equality operators are processed from left to right.</span>
-- <span id="fb68">Logical operators are processed in this order:</span>
+-   <span id="a4fa">Python uses all the same equality operators as JS.</span>
+-   <span id="7f98">In Python, equality operators are processed from left to right.</span>
+-   <span id="fb68">Logical operators are processed in this order:</span>
 
 1.  <span id="bf08">**NOT**</span>
 2.  <span id="4888">**AND**</span>
@@ -283,7 +283,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print (2 == 2.0)    # => True
     print (2 is 2.0)    # => False
 
-- <span id="c5a5">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
+-   <span id="c5a5">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
 
 ---
 
@@ -317,7 +317,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
       print('Hello, world.')
       spam = spam + 1
 
-- <span id="c7f3">`Break` statement also exists in Python.</span>
+-   <span id="c7f3">`Break` statement also exists in Python.</span>
 
 <!-- -->
 
@@ -328,7 +328,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
       if spam >= 5:
         break
 
-- <span id="7a99">As are `continue` statements</span>
+-   <span id="7a99">As are `continue` statements</span>
 
 <!-- -->
 
@@ -344,7 +344,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ### Try/Except Statements
 
-- <span id="72ec">Python equivalent to `try/catch`</span>
+-   <span id="72ec">Python equivalent to `try/catch`</span>
 
 <!-- -->
 
@@ -368,7 +368,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
         a = str(a)
         print(len(a))
 
-- <span id="dcd1">You can name an error to give the output more specificity.</span>
+-   <span id="dcd1">You can name an error to give the output more specificity.</span>
 
 <!-- -->
 
@@ -380,7 +380,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
         c = None
     print(c)
 
-- <span id="4027">You can also use the `pass` commmand to by pass a certain error.</span>
+-   <span id="4027">You can also use the `pass` commmand to by pass a certain error.</span>
 
 <!-- -->
 
@@ -391,7 +391,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     except ZeroDivisionError:
         pass
 
-- <span id="030b">The `pass` method won't allow you to bypass every single error so you can chain an exception series like so:</span>
+-   <span id="030b">The `pass` method won't allow you to bypass every single error so you can chain an exception series like so:</span>
 
 <!-- -->
 
@@ -404,7 +404,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     except (TypeError, NameError):
         print("ERROR!")
 
-- <span id="bf45">You can use an `else` statement to end a chain of `except` statements.</span>
+-   <span id="bf45">You can use an `else` statement to end a chain of `except` statements.</span>
 
 <!-- -->
 
@@ -425,7 +425,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
             print('found', len(f.readlines()), 'lines')
             f.close()
 
-- <span id="0e91">`finally` is used at the end to clean up all actions under any circumstance.</span>
+-   <span id="0e91">`finally` is used at the end to clean up all actions under any circumstance.</span>
 
 <!-- -->
 
@@ -439,7 +439,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
         finally:
             print("Finally...")
 
-- <span id="84ee">Using duck typing to check to see if some value is able to use a certain method.</span>
+-   <span id="84ee">Using duck typing to check to see if some value is able to use a certain method.</span>
 
 <!-- -->
 
@@ -457,7 +457,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ### Pass
 
-- <span id="2b80">Pass Keyword is required to write the JS equivalent of :</span>
+-   <span id="2b80">Pass Keyword is required to write the JS equivalent of :</span>
 
 <!-- -->
 
@@ -476,13 +476,13 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ### Functions
 
-- <span id="7091">**Function definition includes:**</span>
-- <span id="1f11">**The** `def` **keyword**</span>
-- <span id="ec14">**The name of the function**</span>
-- <span id="7733">**A list of parameters enclosed in parentheses.**</span>
-- <span id="1516">**A colon at the end of the line.**</span>
-- <span id="b2dd">**One tab indentation for the code to run.**</span>
-- <span id="bcef">**You can use default parameters just like in JS**</span>
+-   <span id="7091">**Function definition includes:**</span>
+-   <span id="1f11">**The** `def` **keyword**</span>
+-   <span id="ec14">**The name of the function**</span>
+-   <span id="7733">**A list of parameters enclosed in parentheses.**</span>
+-   <span id="1516">**A colon at the end of the line.**</span>
+-   <span id="b2dd">**One tab indentation for the code to run.**</span>
+-   <span id="bcef">**You can use default parameters just like in JS**</span>
 
 <!-- -->
 
@@ -501,7 +501,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     def increment(delta=1, value):
         return delta + value
 
-- <span id="c1aa">_You can specify arguments by name without destructuring in Python._</span>
+-   <span id="c1aa">_You can specify arguments by name without destructuring in Python._</span>
 
 <!-- -->
 
@@ -512,7 +512,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     # saying has a default value, so use a keyword argument
     greeting("Monica", saying="Hi")
 
-- <span id="54ac">The `lambda` keyword is used to create anonymous functions and are supposed to be `one-liners`.</span>
+-   <span id="54ac">The `lambda` keyword is used to create anonymous functions and are supposed to be `one-liners`.</span>
 
 `toUpper = lambda s: s.upper()`
 

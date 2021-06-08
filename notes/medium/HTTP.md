@@ -30,11 +30,11 @@ Each individual request is sent to a server, which handles it and provides an an
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*WR6l6JwNOvkfrljt.png" class="graf-image" /></figure>**Properties of HTTP**
 
-- <span id="bc5b">`Reliable Connections` : Messages passed between a client & server sacrifice a little speed for the sake of trust.</span>
-- <span id="aec2">`TCP` is HTTP’s preferred connection type.</span>
-- <span id="9880">`Stateless Transfer` : HTTP is a stateless protocol - meaning it does not store any kind of information.</span>
-- <span id="b204">HTTP supports cookies.</span>
-- <span id="5e72">`Intermediaries` : Servers or devices that pass your request along which come in three types:</span>
+-   <span id="bc5b">`Reliable Connections` : Messages passed between a client & server sacrifice a little speed for the sake of trust.</span>
+-   <span id="aec2">`TCP` is HTTP’s preferred connection type.</span>
+-   <span id="9880">`Stateless Transfer` : HTTP is a stateless protocol - meaning it does not store any kind of information.</span>
+-   <span id="b204">HTTP supports cookies.</span>
+-   <span id="5e72">`Intermediaries` : Servers or devices that pass your request along which come in three types:</span>
 
 1.  <span id="fb4d">`Proxies` : Modify your request so it appears to come from a different source.</span>
 2.  <span id="bd02">`Gateways` : Pretend to be the resource server you requested.</span>
@@ -59,43 +59,43 @@ Each individual request is sent to a server, which handles it and provides an an
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*tq-BRYuzZ_Dx8s1g5xJKKQ.png" class="graf-image" /></figure>
 
-- <span id="bfa1">**Request-line & HTTP verbs**</span>
-- <span id="0e3d">The first line of an HTTP Request made up of three parts:</span>
+-   <span id="bfa1">**Request-line & HTTP verbs**</span>
+-   <span id="0e3d">The first line of an HTTP Request made up of three parts:</span>
 
 1.  <span id="e67b">The `Method` : Indicated by an HTTP Verb.</span>
 2.  <span id="f17e">The `URI` : Uniform Resource Indicator that ID’s our request.</span>
 3.  <span id="cf4a">THe `HTTP` **Version** : Version we expect to use.</span>
 
-- <span id="6fd5">HTTP Verbs are a simply way of declaring our intention to the server.</span>
-- <span id="5435">`GET` : Used for direct requests.</span>
-- <span id="9059">`POST`: Used for creating new resources on the server.</span>
-- <span id="456b">`PUT`: Used to updated a resource on the server.</span>
-- <span id="5c1a">`PATCH` : Similar to PUT, but do not require the whole resource to perform the update.</span>
-- <span id="3940">`DELETE` : Used to destroy resources on the server.</span>
+-   <span id="6fd5">HTTP Verbs are a simply way of declaring our intention to the server.</span>
+-   <span id="5435">`GET` : Used for direct requests.</span>
+-   <span id="9059">`POST`: Used for creating new resources on the server.</span>
+-   <span id="456b">`PUT`: Used to updated a resource on the server.</span>
+-   <span id="5c1a">`PATCH` : Similar to PUT, but do not require the whole resource to perform the update.</span>
+-   <span id="3940">`DELETE` : Used to destroy resources on the server.</span>
 
 **Headers**
 
-- <span id="682b">Key-Value pairs that come after the request line — they appear on sep. lines and define metadata needed to process the request.</span>
-- <span id="5e4d">Some common headers:</span>
-- <span id="2971">`Host` : Root path for our URI.</span>
-- <span id="21e1">`User-Agent` : Displays information about which browser the request originated from.</span>
-- <span id="2555">`Referer` : Defines the URL you’re coming from.</span>
-- <span id="e946">`Accept` : Indicates what the client will receive.</span>
-- <span id="2011">`Content`**-** : Define Details about the body of the request.</span>
+-   <span id="682b">Key-Value pairs that come after the request line — they appear on sep. lines and define metadata needed to process the request.</span>
+-   <span id="5e4d">Some common headers:</span>
+-   <span id="2971">`Host` : Root path for our URI.</span>
+-   <span id="21e1">`User-Agent` : Displays information about which browser the request originated from.</span>
+-   <span id="2555">`Referer` : Defines the URL you’re coming from.</span>
+-   <span id="e946">`Accept` : Indicates what the client will receive.</span>
+-   <span id="2011">`Content`**-** : Define Details about the body of the request.</span>
 
 **Body**
 
-- <span id="8af8">For when we need to send data that doesn’t fit into the header & is too complex for the URI we can use the _body_.</span>
-- <span id="9271">`URL encoding` : Most common way form data is formatted.</span>
-- <span id="852a">`name=claire&age=29&iceCream=vanilla`</span>
-- <span id="cb18">We can also format using JSON or XML.</span>
+-   <span id="8af8">For when we need to send data that doesn’t fit into the header & is too complex for the URI we can use the _body_.</span>
+-   <span id="9271">`URL encoding` : Most common way form data is formatted.</span>
+-   <span id="852a">`name=claire&age=29&iceCream=vanilla`</span>
+-   <span id="cb18">We can also format using JSON or XML.</span>
 
 **Sending an HTTP request from the command line**
 
-- <span id="7586">**netcat** : (nc) A Utility that comes as part of Unix-line environments such as Ubuntu and macOS.</span>
-- <span id="4288">Allows us to open a direct connection with a URL and manually send HTTP requests.</span>
-- <span id="07dd">`nc -v appacademy.io 80`</span>
-- <span id="b93e">`man nc` to open the netcat manual.</span>
+-   <span id="7586">**netcat** : (nc) A Utility that comes as part of Unix-line environments such as Ubuntu and macOS.</span>
+-   <span id="4288">Allows us to open a direct connection with a URL and manually send HTTP requests.</span>
+-   <span id="07dd">`nc -v appacademy.io 80`</span>
+-   <span id="b93e">`man nc` to open the netcat manual.</span>
 
 ---
 
@@ -129,45 +129,45 @@ Each individual request is sent to a server, which handles it and provides an an
 
 **Status**
 
-- <span id="f3f8">First line of an HTTP response — gives us a high level overview of the server’s intentions. (`status line`)</span>
-- <span id="5353">`HTTP/1.1 200 OK`</span>
-- <span id="5882">`HTTP status codes` : numeric way of representing a server’s response.</span>
-- <span id="78bc">Follow the structure: x: xxx — xxx;</span>
+-   <span id="f3f8">First line of an HTTP response — gives us a high level overview of the server’s intentions. (`status line`)</span>
+-   <span id="5353">`HTTP/1.1 200 OK`</span>
+-   <span id="5882">`HTTP status codes` : numeric way of representing a server’s response.</span>
+-   <span id="78bc">Follow the structure: x: xxx — xxx;</span>
 
 ### `Status codes 100 - 199: Informational`
 
-- <span id="61b2">Allow the clinet to know that a req. was received, and provides extra info from the server.</span>
+-   <span id="61b2">Allow the clinet to know that a req. was received, and provides extra info from the server.</span>
 
 ### `Status codes 200 - 299: Successful`
 
-- <span id="da7c">Indicate that the request has succeeded and the server is handling it.</span>
-- <span id="c109">Common Examples: 200 OK (req received and fulfilled) & 201 Created (received and new record was created)</span>
+-   <span id="da7c">Indicate that the request has succeeded and the server is handling it.</span>
+-   <span id="c109">Common Examples: 200 OK (req received and fulfilled) & 201 Created (received and new record was created)</span>
 
 ### `Status codes 300 - 399: Redirection`
 
-- <span id="003b">Let the client know if there has been a change.</span>
-- <span id="0ca4">Common Examples: 301 Moved Permanently (resource you requested is in a totally new location) & 302 Found (indicates a temporary move)</span>
+-   <span id="003b">Let the client know if there has been a change.</span>
+-   <span id="0ca4">Common Examples: 301 Moved Permanently (resource you requested is in a totally new location) & 302 Found (indicates a temporary move)</span>
 
 ### `Status codes 400 - 499: Client Error`
 
-- <span id="1f8a">Indicate problem with client’s request.</span>
-- <span id="d68d">Common Examples: 400 Bad Request (received, but could not understand) & 401 Unauthorized (resource exists but you’re not allowed to see w/o authentication) & 403 Forbidden (resource exists but you’re not allowed to see it at all ) & 404 Not Found (resource requested does not exist);</span>
+-   <span id="1f8a">Indicate problem with client’s request.</span>
+-   <span id="d68d">Common Examples: 400 Bad Request (received, but could not understand) & 401 Unauthorized (resource exists but you’re not allowed to see w/o authentication) & 403 Forbidden (resource exists but you’re not allowed to see it at all ) & 404 Not Found (resource requested does not exist);</span>
 
 ### `Status codes 500 - 599: Server Error`
 
-- <span id="93fc">Indicates request was formatted correctly, but the server couldn’t do what you asked due to an internal problem.</span>
-- <span id="96cf">Common Examples: 500 Internal Server Error (Server had trouble processing) & 504 Gateway Timeout (Server timeout);</span>
+-   <span id="93fc">Indicates request was formatted correctly, but the server couldn’t do what you asked due to an internal problem.</span>
+-   <span id="96cf">Common Examples: 500 Internal Server Error (Server had trouble processing) & 504 Gateway Timeout (Server timeout);</span>
 
 ### **Headers** : Work just like HTTP requests.
 
 > Common Examples:
 
-- <span id="6859">`Location` : Used by client for redirection responses.</span>
-- <span id="a497">`Content-Type` : Let’s client know what format the body is in.</span>
-- <span id="1e08">`Expires` : When response is no longer valid</span>
-- <span id="f45d">`Content-Disposition` : Let’s client know how to display the response.</span>
-- <span id="b46e">`Set-Cookie` : Sends data back to the client to set on the cookie.</span>
-- <span id="1e80">`Data` : If the request is successful, the body of the response will contain the resource you have requested.</span>
+-   <span id="6859">`Location` : Used by client for redirection responses.</span>
+-   <span id="a497">`Content-Type` : Let’s client know what format the body is in.</span>
+-   <span id="1e08">`Expires` : When response is no longer valid</span>
+-   <span id="f45d">`Content-Disposition` : Let’s client know how to display the response.</span>
+-   <span id="b46e">`Set-Cookie` : Sends data back to the client to set on the cookie.</span>
+-   <span id="1e80">`Data` : If the request is successful, the body of the response will contain the resource you have requested.</span>
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 

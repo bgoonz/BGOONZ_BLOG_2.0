@@ -1,35 +1,35 @@
 ---
 title: Style Guide
 seo:
-  title: Theme Style Guide
-  description: A reference for suggested typographic treatment and styles for your content
-  extra:
-    - name: "og:type"
-      value: website
-      keyName: property
-    - name: "og:title"
-      value: Theme Style Guide
-      keyName: property
-    - name: "og:description"
-      value: >-
-        A reference for suggested typographic treatment and styles for your
-        content
-      keyName: property
-    - name: "og:image"
-      value: images/1.png
-      keyName: property
-      relativeUrl: true
-    - name: "twitter:card"
-      value: summary_large_image
-    - name: "twitter:title"
-      value: Theme Style Guide
-    - name: "twitter:description"
-      value: >-
-        A reference for suggested typographic treatment and styles for your
-        content
-    - name: "twitter:image"
-      value: images/1.png
-      relativeUrl: true
+    title: Theme Style Guide
+    description: A reference for suggested typographic treatment and styles for your content
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Theme Style Guide
+          keyName: property
+        - name: 'og:description'
+          value: >-
+              A reference for suggested typographic treatment and styles for your
+              content
+          keyName: property
+        - name: 'og:image'
+          value: images/1.png
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: summary_large_image
+        - name: 'twitter:title'
+          value: Theme Style Guide
+        - name: 'twitter:description'
+          value: >-
+              A reference for suggested typographic treatment and styles for your
+              content
+        - name: 'twitter:image'
+          value: images/1.png
+          relativeUrl: true
 layout: page
 ---
 
@@ -57,11 +57,11 @@ In cursus turpis massa tincidunt. Tempor nec feugiat nisl pretium. Odio aenean s
 
 ## Unordered and Ordered Lists
 
-- Donec non tortor in arcu mollis feugiat
-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-- Donec id eros eget quam aliquam gravida
-- Vivamus convallis urna id felis
-- Nulla porta tempus sapien
+-   Donec non tortor in arcu mollis feugiat
+-   Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+-   Donec id eros eget quam aliquam gravida
+-   Vivamus convallis urna id felis
+-   Nulla porta tempus sapien
 
 ---
 

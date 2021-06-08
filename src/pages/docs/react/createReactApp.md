@@ -2,24 +2,24 @@
 title: npx-create-react-app
 weight: 1
 seo:
-  title: npx-create-react-app
-  description: This is the npx-create-react-app page
-  extra:
-    - name: "og:type"
-      value: website
-      keyName: property
-    - name: "og:title"
-      value: npx-create-react-app
-      keyName: property
-    - name: "og:description"
-      value: This is the npx-create-react-app page
-      keyName: property
-    - name: "twitter:card"
-      value: summary
-    - name: "twitter:title"
-      value: npx-create-react-app
-    - name: "twitter:description"
-      value: This is the npx-create-react-app page
+    title: npx-create-react-app
+    description: This is the npx-create-react-app page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: npx-create-react-app
+          keyName: property
+        - name: 'og:description'
+          value: This is the npx-create-react-app page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: npx-create-react-app
+        - name: 'twitter:description'
+          value: This is the npx-create-react-app page
 template: docs
 ---
 

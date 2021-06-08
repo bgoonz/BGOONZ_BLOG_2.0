@@ -1,4 +1,4 @@
-import _ from "lodash";
+import _ from 'lodash';
 
 /**
  * Get the page at the provided `urlPath`.
@@ -8,9 +8,9 @@ import _ from "lodash";
  * @return {Object}
  */
 export default function getPage(pages, urlPath) {
-  urlPath = _.trim(urlPath, "/");
-  return _.find(pages, (page) => {
-    const pageUrlPath = _.trim(_.get(page, "__metadata.urlPath"), "/");
-    return urlPath === pageUrlPath;
-  });
+    urlPath = _.trim(urlPath, '/');
+    return _.find(pages, (page) => {
+        const pageUrlPath = _.trim(_.get(page, '__metadata.urlPath'), '/');
+        return urlPath === pageUrlPath;
+    });
 }

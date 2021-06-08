@@ -1,39 +1,39 @@
 // import App from 'next/app'
-import { useEffect } from "react";
-import Router from "next/router";
-import "../sass/main.scss";
+import { useEffect } from 'react';
+import Router from 'next/router';
+import '../sass/main.scss';
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    if (window.onNextjsAppDidMount) {
-      window.onNextjsAppDidMount();
-    }
+    useEffect(() => {
+        if (window.onNextjsAppDidMount) {
+            window.onNextjsAppDidMount();
+        }
 
-    if (window.onNextjsRouteChangeComplete) {
-      window.onNextjsRouteChangeComplete();
-    }
+        if (window.onNextjsRouteChangeComplete) {
+            window.onNextjsRouteChangeComplete();
+        }
 
-    const handleRouteChangeStart = () => {
-      if (window.onNextjsRouteChangeStart) {
-        window.onNextjsRouteChangeStart();
-      }
-    };
+        const handleRouteChangeStart = () => {
+            if (window.onNextjsRouteChangeStart) {
+                window.onNextjsRouteChangeStart();
+            }
+        };
 
-    const handleRouteChangeComplete = () => {
-      if (window.onNextjsRouteChangeComplete) {
-        window.onNextjsRouteChangeComplete();
-      }
-    };
+        const handleRouteChangeComplete = () => {
+            if (window.onNextjsRouteChangeComplete) {
+                window.onNextjsRouteChangeComplete();
+            }
+        };
 
-    Router.events.on("routeChangeStart", handleRouteChangeStart);
-    Router.events.on("routeChangeComplete", handleRouteChangeComplete);
-    return () => {
-      Router.events.off("routeChangeStart", handleRouteChangeStart);
-      Router.events.off("routeChangeComplete", handleRouteChangeComplete);
-    };
-  }, []);
+        Router.events.on('routeChangeStart', handleRouteChangeStart);
+        Router.events.on('routeChangeComplete', handleRouteChangeComplete);
+        return () => {
+            Router.events.off('routeChangeStart', handleRouteChangeStart);
+            Router.events.off('routeChangeComplete', handleRouteChangeComplete);
+        };
+    }, []);
 
-  return <Component {...pageProps} />;
+    return <Component {...pageProps} />;
 }
 
 // Only uncomment this method if you have blocking data requirements for

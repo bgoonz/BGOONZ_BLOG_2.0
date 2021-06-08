@@ -1,33 +1,33 @@
 ---
 title: python blog post
-date: "2019-05-27"
+date: '2019-05-27'
 image: images/2.jpg
 seo:
-  title: python
-  description: Commodo ante vis placerat interdum massa massa primis
-  extra:
-    - name: "og:type"
-      value: article
-      keyName: property
-    - name: "og:title"
-      value: python
-      keyName: property
-    - name: "og:description"
-      value: Commodo ante vis placerat interdum massa massa primis
-      keyName: property
-    - name: "og:image"
-      value: images/2.jpg
-      keyName: property
-      relativeUrl: true
-    - name: "twitter:card"
-      value: summary_large_image
-    - name: "twitter:title"
-      value: python
-    - name: "twitter:description"
-      value: Commodo ante vis placerat interdum massa massa primis
-    - name: "twitter:image"
-      value: images/2.jpg
-      relativeUrl: true
+    title: python
+    description: Commodo ante vis placerat interdum massa massa primis
+    extra:
+        - name: 'og:type'
+          value: article
+          keyName: property
+        - name: 'og:title'
+          value: python
+          keyName: property
+        - name: 'og:description'
+          value: Commodo ante vis placerat interdum massa massa primis
+          keyName: property
+        - name: 'og:image'
+          value: images/2.jpg
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: summary_large_image
+        - name: 'twitter:title'
+          value: python
+        - name: 'twitter:description'
+          value: Commodo ante vis placerat interdum massa massa primis
+        - name: 'twitter:image'
+          value: images/2.jpg
+          relativeUrl: true
 template: post
 ---
 
@@ -41,9 +41,9 @@ template: post
 
 # Basics
 
-- **PEP8** : Python Enhancement Proposals, style-guide for Python.
+-   **PEP8** : Python Enhancement Proposals, style-guide for Python.
 
-- print is the equivalent of console.log.
+-   print is the equivalent of console.log.
 
 > ‘print() == console.log()’
 
@@ -53,7 +53,7 @@ template: post
 
 # Numbers
 
-- Python has three types of numbers:
+-   Python has three types of numbers:
 
 1.  **Integer**
 
@@ -79,27 +79,27 @@ No Decimal Point
 
 T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \*_when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
-- **Type Casting** : The process of converting one number to another.
+-   **Type Casting** : The process of converting one number to another.
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
-- _“\*\*” : Double asterisk for exponent._
+-   _“\*\*” : Double asterisk for exponent._
 
-- _“//” : Integer Division._
+-   _“//” : Integer Division._
 
-- **There are no spaces between math operations in Python.**
+-   **There are no spaces between math operations in Python.**
 
-- **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
+-   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
 
-- **There are no ++ and -- in Python, the only shorthand operators are:**
+-   **There are no ++ and -- in Python, the only shorthand operators are:**
 
 # Strings
 
-- Python uses both single and double quotes.
+-   Python uses both single and double quotes.
 
-- You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
+-   You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
 
-- Multiline strings use triple quotes.
+-   Multiline strings use triple quotes.
 
 **Use the len() function to get the length of a string.**
 
@@ -107,89 +107,89 @@ T\*his is because the letter i is common place as the de facto index for any and
 
 ## Python allows negative indexing (thank god!)
 
-- Python let’s you use ranges
+-   Python let’s you use ranges
 
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
 
-- The end range is exclusive just like slice in JS.
+-   The end range is exclusive just like slice in JS.
 
 <!---->
 
-- The index string function is the equiv. of indexOf() in JS
+-   The index string function is the equiv. of indexOf() in JS
 
 <!---->
 
-- The count function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
+-   The count function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
 
 <!---->
 
-- **You can use + to concatenate strings, just like in JS.**
+-   **You can use + to concatenate strings, just like in JS.**
 
-- **You can also use “\*” to repeat strings or multiply strings.**
+-   **You can also use “\*” to repeat strings or multiply strings.**
 
-- **Use the format() function to use placeholders in a string to input values later on.**
+-   **Use the format() function to use placeholders in a string to input values later on.**
 
 <!---->
 
-- \*Shorthand way to use format function is:
-  \*print(f'Your name is {first_name} {last_name}')
+-   \*Shorthand way to use format function is:
+    \*print(f'Your name is {first_name} {last_name}')
 
 ## Some useful string methods.
 
-- **Note that in JS join is used on an Array, in Python it is used on String.**
+-   **Note that in JS join is used on an Array, in Python it is used on String.**
 
 <!---->
 
-- There are also many handy testing methods.
+-   There are also many handy testing methods.
 
 # Variables and Expressions
 
-- **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
+-   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
 
-- Duck Typing is the fundamental approach of Python.
+-   Duck Typing is the fundamental approach of Python.
 
-- Assignment of a value automatically declares a variable.
+-   Assignment of a value automatically declares a variable.
 
 <!---->
 
-- **_You can chain variable assignments to give multiple var names the same value._**
+-   **_You can chain variable assignments to give multiple var names the same value._**
 
 ## Use with caution as this is highly unreadable
 
 ## The value and type of a variable can be re-assigned at any time.
 
-- \*NaN does not exist in Python, but you can 'create' it like so:
-  **print(float("nan"))\***
+-   \*NaN does not exist in Python, but you can 'create' it like so:
+    **print(float("nan"))\***
 
-- _Python replaces null with none._
+-   _Python replaces null with none._
 
-- **\*none is an object** and can be directly assigned to a variable.\*
+-   **\*none is an object** and can be directly assigned to a variable.\*
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
 # Boolean Data Type
 
-- One of the biggest benefits of Python is that it reads more like English than JS does.
+-   One of the biggest benefits of Python is that it reads more like English than JS does.
 
 <!---->
 
-- By default, Python considers an object to be true UNLESS it is one of the following:
+-   By default, Python considers an object to be true UNLESS it is one of the following:
 
-- Constant None or False
+-   Constant None or False
 
-- Zero of any numeric type.
+-   Zero of any numeric type.
 
-- Empty Sequence or Collection.
+-   Empty Sequence or Collection.
 
-- True and False must be capitalized
+-   True and False must be capitalized
 
 # Comparison Operators
 
-- Python uses all the same equality operators as JS.
+-   Python uses all the same equality operators as JS.
 
-- In Python, equality operators are processed from left to right.
+-   In Python, equality operators are processed from left to right.
 
-- Logical operators are processed in this order:
+-   Logical operators are processed in this order:
 
 1.  **NOT**
 
@@ -203,7 +203,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 # Identity vs Equality
 
-- In the Python community it is better to use is and is not over == or !=
+-   In the Python community it is better to use is and is not over == or !=
 
 # If Statements
 
@@ -211,67 +211,67 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 # While Statements
 
-- Break statement also exists in Python.
+-   Break statement also exists in Python.
 
 <!---->
 
-- As are continue statements
+-   As are continue statements
 
 # Try/Except Statements
 
-- Python equivalent to try/catch
+-   Python equivalent to try/catch
 
 <!---->
 
-- You can name an error to give the output more specificity.
+-   You can name an error to give the output more specificity.
 
 <!---->
 
-- You can also use the pass commmand to by pass a certain error.
+-   You can also use the pass commmand to by pass a certain error.
 
 <!---->
 
-- The pass method won't allow you to bypass every single error so you can chain an exception series like so:
+-   The pass method won't allow you to bypass every single error so you can chain an exception series like so:
 
 <!---->
 
-- You can use an else statement to end a chain of except statements.
+-   You can use an else statement to end a chain of except statements.
 
 <!---->
 
-- finally is used at the end to clean up all actions under any circumstance.
+-   finally is used at the end to clean up all actions under any circumstance.
 
 <!---->
 
-- Using duck typing to check to see if some value is able to use a certain method.
+-   Using duck typing to check to see if some value is able to use a certain method.
 
 # Pass
 
-- Pass Keyword is required to write the JS equivalent of :
+-   Pass Keyword is required to write the JS equivalent of :
 
 # Functions
 
-- **Function definition includes:**
+-   **Function definition includes:**
 
-- **The def keyword**
+-   **The def keyword**
 
-- **The name of the function**
+-   **The name of the function**
 
-- **A list of parameters enclosed in parentheses.**
+-   **A list of parameters enclosed in parentheses.**
 
-- **A colon at the end of the line.**
+-   **A colon at the end of the line.**
 
-- **One tab indentation for the code to run.**
+-   **One tab indentation for the code to run.**
 
-- **You can use default parameters just like in JS**
+-   **You can use default parameters just like in JS**
 
 ## **Keep in mind, default parameters must always come after regular parameters.**
 
-- _You can specify arguments by name without destructuring in Python._
+-   _You can specify arguments by name without destructuring in Python._
 
 <!---->
 
-- The lambda keyword is used to create anonymous functions and are supposed to be one-liners.
+-   The lambda keyword is used to create anonymous functions and are supposed to be one-liners.
 
 toUpper = lambda s: s.upper()
 

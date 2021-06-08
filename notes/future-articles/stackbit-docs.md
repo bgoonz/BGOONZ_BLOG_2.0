@@ -125,8 +125,8 @@ Or add a script tag to the UMD build on jsDelivr/Unpkg — the SDK will be avail
 
 Creating custom projects on-demand from any data source is super simple with the SDK. There are two methods for doing this:
 
-- [`openProject`](#sdkopenprojectproject-opts) to create a new project & open it in a new tab (or current window).
-- [`embedProject`](#sdkembedprojectelementorid-project-embedopts) to create a new project & embed it on the current page.
+-   [`openProject`](#sdkopenprojectproject-opts) to create a new project & open it in a new tab (or current window).
+-   [`embedProject`](#sdkembedprojectelementorid-project-embedopts) to create a new project & embed it on the current page.
 
 **[View live demo on StackBlitz.](https://stackblitz.com/edit/sdk-create-project)**
 
@@ -328,18 +328,13 @@ Below is an example HTML form that generates a project from the RxJS docs using 
 
 ```html
 <html lang="en">
-  <head></head>
-  <body>
-    <form
-      id="mainForm"
-      method="post"
-      action="https://stackblitz.com/run"
-      target="_self"
-    >
-      <input
-        type="hidden"
-        name="project[files][index.ts]"
-        value="import { Observable } from 'rxjs/Observable';
+    <head></head>
+    <body>
+        <form id="mainForm" method="post" action="https://stackblitz.com/run" target="_self">
+            <input
+                type="hidden"
+                name="project[files][index.ts]"
+                value="import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/fromEvent';
 import 'rxjs/add/operator/scan';
 
@@ -348,32 +343,24 @@ Observable.fromEvent(button, 'click')
   .scan((count: number) => count + 1, 0)
   .subscribe(count => console.log(`Clicked ${count} times`));
 "
-      />
-      <input
-        type="hidden"
-        name="project[files][index.html]"
-        value="<button>Click Me</button>
+            />
+            <input
+                type="hidden"
+                name="project[files][index.html]"
+                value="<button>Click Me</button>
 "
-      />
-      <input type="hidden" name="project[tags][]" value="rxjs" />
-      <input type="hidden" name="project[tags][]" value="example" />
-      <input type="hidden" name="project[tags][]" value="tutorial" />
-      <input type="hidden" name="project[description]" value="RxJS Example" />
-      <input
-        type="hidden"
-        name="project[dependencies]"
-        value='{"rxjs":"5.5.6"}'
-      />
-      <input type="hidden" name="project[template]" value="typescript" />
-      <input
-        type="hidden"
-        name="project[settings]"
-        value='{"compile":{"clearConsole":false}}'
-      />
-    </form>
-    <script>
-      document.getElementById("mainForm").submit();
-    </script>
-  </body>
+            />
+            <input type="hidden" name="project[tags][]" value="rxjs" />
+            <input type="hidden" name="project[tags][]" value="example" />
+            <input type="hidden" name="project[tags][]" value="tutorial" />
+            <input type="hidden" name="project[description]" value="RxJS Example" />
+            <input type="hidden" name="project[dependencies]" value='{"rxjs":"5.5.6"}' />
+            <input type="hidden" name="project[template]" value="typescript" />
+            <input type="hidden" name="project[settings]" value='{"compile":{"clearConsole":false}}' />
+        </form>
+        <script>
+            document.getElementById('mainForm').submit();
+        </script>
+    </body>
 </html>
 ```

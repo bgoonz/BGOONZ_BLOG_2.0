@@ -1,40 +1,40 @@
 ---
 title: Tools
 excerpt: >-
-  See some interesting tools developed by the Web-Dev-Hubcommunity to help automate
-  parts of your workflow.
+    See some interesting tools developed by the Web-Dev-Hubcommunity to help automate
+    parts of your workflow.
 seo:
-  title: Tools
-  description: This is the tools page
-  extra:
-    - name: "og:type"
+    title: Tools
+    description: This is the tools page
+    extra:
+        - name: 'og:type'
 
-      value: website
-      keyName: property
+          value: website
+          keyName: property
 
-    - name: "og:title"
+        - name: 'og:title'
 
-      value: Tools
+          value: Tools
 
-      keyName: property
+          keyName: property
 
-    - name: "og:description"
+        - name: 'og:description'
 
-      value: This is the tools page
+          value: This is the tools page
 
-      keyName: property
+          keyName: property
 
-    - name: "twitter:card"
+        - name: 'twitter:card'
 
-      value: summary
+          value: summary
 
-    - name: "twitter:title"
+        - name: 'twitter:title'
 
-      value: Tools
+          value: Tools
 
-    - name: "twitter:description"
+        - name: 'twitter:description'
 
-      value: This is the tools page
+          value: This is the tools page
 
 template: docs
 ---

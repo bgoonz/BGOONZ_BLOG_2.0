@@ -2,24 +2,24 @@
 title: Plug-ins
 weight: 2
 seo:
-  title: Plug-ins
-  description: This is the plug-ins page
-  extra:
-    - name: "og:type"
-      value: website
-      keyName: property
-    - name: "og:title"
-      value: Plug-ins
-      keyName: property
-    - name: "og:description"
-      value: This is the plug-ins page
-      keyName: property
-    - name: "twitter:card"
-      value: summary
-    - name: "twitter:title"
-      value: Plug-ins
-    - name: "twitter:description"
-      value: This is the plug-ins page
+    title: Plug-ins
+    description: This is the plug-ins page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Plug-ins
+          keyName: property
+        - name: 'og:description'
+          value: This is the plug-ins page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Plug-ins
+        - name: 'twitter:description'
+          value: This is the plug-ins page
 template: docs
 ---
 
@@ -76,21 +76,21 @@ The rendered output looks like this:
 
 ```css
 body {
-  background: #fff;
-  color: #666;
-  line-height: 1.66667;
+    background: #fff;
+    color: #666;
+    line-height: 1.66667;
 }
 
 a {
-  color: #d4a259;
-  text-decoration: underline;
-  -webkit-transition: background 0.3s ease, color 0.3s ease;
-  transition: background 0.3s ease, color 0.3s ease;
+    color: #d4a259;
+    text-decoration: underline;
+    -webkit-transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 a:hover {
-  color: #1d1d1d;
-  text-decoration: none;
+    color: #1d1d1d;
+    text-decoration: none;
 }
 ```
 
