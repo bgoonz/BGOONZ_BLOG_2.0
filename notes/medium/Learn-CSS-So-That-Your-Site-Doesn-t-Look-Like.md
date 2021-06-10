@@ -1,11 +1,8 @@
-
-
-Learn CSS So That Your Site Doesn’t Look Like Garbage
-=====================================================
+# Learn CSS So That Your Site Doesn’t Look Like Garbage
 
 CSS Selectors
 
-------------------------------------------------------------------------
+---
 
 ### Learn CSS So That Your Site Doesn’t Look Like Garbage
 
@@ -54,7 +51,7 @@ CSS Selectors
     <div class="circle orange"></div>
 
 -   <span id="7dd3">i.e. .box.yellow will select only the first element.</span>
--   <span id="8904">KEEP IN MIND that if you do include a space it will make the selector into a *descendant selector*.</span>
+-   <span id="8904">KEEP IN MIND that if you do include a space it will make the selector into a _descendant selector_.</span>
 
 <!-- -->
 
@@ -75,7 +72,7 @@ CSS Selectors
 -   <span id="e90c">`Direct Child Selectors`</span>
 -   <span id="52b5">Indicated with a `>`.</span>
 -   <span id="ea8e">Different from descendants because it only affects the direct children of an element.</span>
--   <span id="486f">`.menu > .is-active { background-color: #ffe0b2; }`</span>
+-   <span id="486f">`.menu > .is-active { background-color: #ffe0b2; }`</span>
 -   <span id="96f9">`<body> <div class="menu"> <div class="is-active">Belka</div> <div> <div class="is-active">Strelka</div> </div> </div> </body> <div class="is-active"> Laika </div> </body>`</span>
 -   <span id="59ca">Belka would be the only element selected.</span>
 -   <span id="0266">`Adjacent Sibling Selectors`</span>
@@ -158,7 +155,7 @@ Last Read in the browser wins.
 
 -   <span id="1939">Coming back to our example where all the CSS Rules have tied, the last step 4 wins out so our element will have a `purple border`.</span>
 
-------------------------------------------------------------------------
+---
 
 ### CSS: Type, Properties, and Imports
 
@@ -186,7 +183,7 @@ Last Read in the browser wins.
 
 -   <span id="13eb">You can use the background-image property to set a background image for an element.</span>
 
-------------------------------------------------------------------------
+---
 
 ### CSS: Colors, Borders, and Shadows
 
@@ -208,7 +205,7 @@ Last Read in the browser wins.
 -   <span id="f3a7">Text refers to text.</span>
 -   <span id="2a53">Shadows take values such as, the horizontal & vertical offsets of the shadow, the blur radius of the shadow, the spread radius, and of course the colors.</span>
 
-------------------------------------------------------------------------
+---
 
 ### The Box Model
 
@@ -242,7 +239,7 @@ This bothered many programmers so they created the **border box** to include the
 **Relative Positioning**
 
 -   <span id="adc3">Remains in it’s original position in the page flow.</span>
--   <span id="9533">It is positioned *RELATIVE* to the it’s *ORIGINAL PLACE* on the page flow.</span>
+-   <span id="9533">It is positioned _RELATIVE_ to the it’s _ORIGINAL PLACE_ on the page flow.</span>
 -   <span id="8c0b">Creates a **stacking context** : overlapping elements whose order can be set by the z-index property.</span>
 
 <!-- -->
@@ -321,20 +318,20 @@ This bothered many programmers so they created the **border box** to include the
 
 **Sticky Positioning**
 
--   <span id="8ae2">Remains in it’s original position in the page flow, and it is positioned relative to it’s closest block-level ancestor and any *scrolling* ancestors.</span>
+-   <span id="8ae2">Remains in it’s original position in the page flow, and it is positioned relative to it’s closest block-level ancestor and any _scrolling_ ancestors.</span>
 -   <span id="abe8">Behaves like a relatively positioned element until the point at which you would normally scroll past it’s viewport — then it sticks!</span>
 -   <span id="7ac0">It is positioned with top, right, bottom, and left.</span>
 -   <span id="9080">A good example are headers in a scrollable list.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*BRVlqobKK0IZtnXq" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*jQQJYWVoQY2eNANS.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Flexible Box Model
 
 -   <span id="46aa">Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.</span>
 -   <span id="ebb3">Float was used back in the day to display position of elements in a container.</span>
--   <span id="2a8e">A very inconvenient aspect of float is the need to *clear* the float.</span>
+-   <span id="2a8e">A very inconvenient aspect of float is the need to _clear_ the float.</span>
 -   <span id="ba98">To ‘clear’ a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
 
 **Using Flexbox**
@@ -363,7 +360,7 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="d9f2">`flex` : shorthand for grow, shrink and basis.</span>
 -   <span id="f127">`align-self` : Overrides default alignment in the container.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Grid Layout
 
@@ -419,7 +416,7 @@ This bothered many programmers so they created the **border box** to include the
       grid-auto-rows: 50px;
     }
 
--   <span id="e6d3">Any grid items that aren’t explicity placed are automatically placed or *re-flowed*</span>
+-   <span id="e6d3">Any grid items that aren’t explicity placed are automatically placed or _re-flowed_</span>
 
 **Spanning Columns & Rows**
 
@@ -457,13 +454,13 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="72bb">**Align Self** is used to align self on the column.</span>
 -   <span id="d5d4">It can take four values: start, end, center, stretch.</span>
 
-------------------------------------------------------------------------
+---
 
 **CSS Hover Effect and Handling**
 
 **Overflow**
 
-`css .btn { background-color: #00bfff; color: #ffffff; border-radius: 10px; padding: 1.5rem; }`
+`css .btn { background-color: #00bfff; color: #ffffff; border-radius: 10px; padding: 1.5rem; }`
 
 `.btn--active:hover { cursor: pointer; transform: translateY(-0.25rem);`
 
@@ -518,7 +515,7 @@ There are three members in the overflow family: — `overflow-x` : Apply ho
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*PH5_YmVDFVGqWGjO" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Ya7xiy0AqJaJ9RPq.gif" class="graf-image" /></figure>-   <span id="c336">When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.</span>
 
-------------------------------------------------------------------------
+---
 
 ### BEM Guidelines
 

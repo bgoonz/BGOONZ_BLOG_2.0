@@ -41,11 +41,11 @@ If you look at `ProductTable` , you’ll see that the table header \(containing 
 
 Now that we’ve identified the components in our mock, let’s arrange them into a hierarchy. Components that appear within another component in the mock should appear as a child in the hierarchy:
 
-* `FilterableProductTable`
-  + `SearchBar`
-  + `ProductTable`
-    - `ProductCategoryRow`
-    - `ProductRow`
+-   `FilterableProductTable`
+    -   `SearchBar`
+    -   `ProductTable`
+        -   `ProductCategoryRow`
+        -   `ProductRow`
 
 ## Step 2: Build A Static Version in React
 
@@ -71,10 +71,10 @@ To build your app correctly, you first need to think of the minimal set of mutab
 
 Think of all of the pieces of data in our example application. We have:
 
-* The original list of products
-* The search text the user has entered
-* The value of the checkbox
-* The filtered list of products
+-   The original list of products
+-   The search text the user has entered
+-   The value of the checkbox
+-   The filtered list of products
 
 Let’s go through each one and figure out which one is state. Ask three questions about each piece of data:
 
@@ -86,8 +86,8 @@ The original list of products is passed in as props, so that’s not state. The 
 
 So finally, our state is:
 
-* The search text the user has entered
-* The value of the checkbox
+-   The search text the user has entered
+-   The value of the checkbox
 
 ## Step 4: Identify Where Your State Should Live
 
@@ -97,16 +97,16 @@ Remember: React is all about one-way data flow down the component hierarchy. It 
 
 For each piece of state in your application:
 
-* Identify every component that renders something based on that state.
-* Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
-* Either the common owner or another component higher up in the hierarchy should own the state.
-* If you can’t find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
+-   Identify every component that renders something based on that state.
+-   Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
+-   Either the common owner or another component higher up in the hierarchy should own the state.
+-   If you can’t find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
 
 Let’s run through this strategy for our application:
 
-* `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
-* The common owner component is `FilterableProductTable`.
-* It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
+-   `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
+-   The common owner component is `FilterableProductTable`.
+-   It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
 
 Cool, so we’ve decided that our state lives in `FilterableProductTable` . First, add an instance property `this.state = {filterText: '', inStockOnly: false}` to `FilterableProductTable` ’s `constructor` to reflect the initial state of your application. Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as a prop. Finally, use these props to filter the rows in `ProductTable` and set the values of the form fields in `SearchBar` .
 

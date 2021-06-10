@@ -1,11 +1,8 @@
-
-
-Python Study Guide for a JavaScript Programmer
-==============================================
+# Python Study Guide for a JavaScript Programmer
 
 A guide to commands in Python from what you know in JavaScript
 
-------------------------------------------------------------------------
+---
 
 ### Python Study Guide for a JavaScript Programmer
 
@@ -28,9 +25,9 @@ A guide to commands in Python from what you know in JavaScript
         """
         secretThing()
 
-> *Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”*
+> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
 
-------------------------------------------------------------------------
+---
 
 ### Numbers
 
@@ -43,8 +40,8 @@ No Decimal Point
 
 > Created by a literal non-decimal point number … **or** … with the `int()` constructor.
 
-    print(3) # => 3 
-    print(int(19)) # => 19 
+    print(3) # => 3
+    print(int(19)) # => 19
     print(int()) # => 0
 
 **3. Complex Numbers**
@@ -57,21 +54,21 @@ No Decimal Point
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*eC4EvZcv6hhH88jX.png" class="graf-image" /></figure>Than I am sure you will find the means to suspend your disbelief.
 
-    print(2.24) # => 2.24 
-    print(2.) # => 2.0 
-    print(float()) # => 0.0 
+    print(2.24) # => 2.24
+    print(2.) # => 2.0
+    print(float()) # => 0.0
     print(27e-5) # => 0.00027
 
 ### KEEP IN MIND:
 
 > **The** `i` **is switched to a** `j` **in programming.**
 
-<span class="graf-dropCap">T</span>*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-****space*** *when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
+<span class="graf-dropCap">T</span>\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\***_space_** _when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
-    print(7j) # => 7j 
-    print(5.1+7.7j)) # => 5.1+7.7j 
-    print(complex(3, 5)) # => 3+5j 
-    print(complex(17)) # => 17+0j 
+    print(7j) # => 7j
+    print(5.1+7.7j)) # => 5.1+7.7j
+    print(complex(3, 5)) # => 3+5j
+    print(complex(17)) # => 17+0j
     print(complex()) # => 0j
 
 -   <span id="2579">**Type Casting** : The process of converting one number to another.</span>
@@ -91,15 +88,15 @@ No Decimal Point
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   <span id="8cf4">*“\*\*” : Double asterisk for exponent.*</span>
--   <span id="03b4">*“//” : Integer Division.*</span>
+-   <span id="8cf4">_“\*\*” : Double asterisk for exponent._</span>
+-   <span id="03b4">_“//” : Integer Division._</span>
 -   <span id="2ce5">**There are no spaces between math operations in Python.**</span>
 -   <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
 -   <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Strings
 
@@ -123,16 +120,16 @@ No Decimal Point
 
 #### Python allows negative indexing (thank god!)
 
-    print(“Spaghetti”[-1]) # => i 
+    print(“Spaghetti”[-1]) # => i
 
     print(“Spaghetti”[-4]) # => e
 
 -   <span id="7567">Python let’s you use ranges</span>
 
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type* ***by textbook definition****, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **\*by textbook definition\*\***, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
 
-    print(“Spaghetti”[1:4]) # => pag 
-    print(“Spaghetti”[4:-1]) # => hett 
+    print(“Spaghetti”[1:4]) # => pag
+    print(“Spaghetti”[4:-1]) # => hett
     print(“Spaghetti”[4:4]) # => (empty string)
 
 -   <span id="1366">The end range is exclusive just like `slice` in JS.</span>
@@ -178,8 +175,8 @@ You can think of this as roughly equivalent to the slice method called on a Java
     last_name = "Bob"
     print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
 
--   <span id="445b">*Shorthand way to use format function is:  
-    *`print(f'Your name is {first_name} {last_name}')`</span>
+-   <span id="445b">_Shorthand way to use format function is:  
+    _`print(f'Your name is {first_name} {last_name}')`</span>
 
 #### Some useful string methods.
 
@@ -189,7 +186,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Variables and Expressions
 
@@ -204,7 +201,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print(a)         # => 7
     print(b)         # => Marbles
 
--   <span id="f6cf">***You can chain variable assignments to give multiple var names the same value.***</span>
+-   <span id="f6cf">**_You can chain variable assignments to give multiple var names the same value._**</span>
 
 #### Use with caution as this is highly unreadable
 
@@ -220,14 +217,14 @@ You can think of this as roughly equivalent to the slice method called on a Java
     a = 'seventeen'
     print(a)         # => seventeen
 
--   <span id="4605">`NaN` *does not exist in Python, but you can 'create' it like so:  
-    *`print(float("nan"))`</span>
--   <span id="d150">*Python replaces* `null` *with* `none`*.*</span>
--   <span id="6fa7">`none` ***is an object*** *and can be directly assigned to a variable.*</span>
+-   <span id="4605">`NaN` _does not exist in Python, but you can 'create' it like so:  
+    _`print(float("nan"))`</span>
+-   <span id="d150">_Python replaces_ `null` _with_ `none`_._</span>
+-   <span id="6fa7">`none` **_is an object_** _and can be directly assigned to a variable._</span>
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
-------------------------------------------------------------------------
+---
 
 ### Boolean Data Type
 
@@ -254,7 +251,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 -   <span id="e7ce">Empty Sequence or Collection.</span>
 -   <span id="11d6">`True` and `False` must be capitalized</span>
 
-------------------------------------------------------------------------
+---
 
 ### Comparison Operators
 
@@ -272,7 +269,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Identity vs Equality
 
@@ -288,7 +285,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 -   <span id="c5a5">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
 
-------------------------------------------------------------------------
+---
 
 ### If Statements
 
@@ -311,7 +308,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 > Remember the order of `elif` statements matter.
 
-------------------------------------------------------------------------
+---
 
 ### While Statements
 
@@ -343,7 +340,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
         continue
       break
 
-------------------------------------------------------------------------
+---
 
 ### Try/Except Statements
 
@@ -456,7 +453,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     if hasattr(b, '__len__'):
         print(len(b))
 
-------------------------------------------------------------------------
+---
 
 ### Pass
 
@@ -475,7 +472,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     while True:
       pass
 
-------------------------------------------------------------------------
+---
 
 ### Functions
 
@@ -504,7 +501,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     def increment(delta=1, value):
         return delta + value
 
--   <span id="c1aa">*You can specify arguments by name without destructuring in Python.*</span>
+-   <span id="c1aa">_You can specify arguments by name without destructuring in Python._</span>
 
 <!-- -->
 
@@ -519,7 +516,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 `toUpper = lambda s: s.upper()`
 
-------------------------------------------------------------------------
+---
 
 ### Notes
 
@@ -567,7 +564,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.
 
 **Python can be used to display html, css, and JS.**  
-*It is common to use Python as an API (Application Programming Interface)*
+_It is common to use Python as an API (Application Programming Interface)_
 
 #### Structured Data
 
@@ -578,7 +575,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 > Range  
 > Collections : Unordered data structures, hashable values.
 
-------------------------------------------------------------------------
+---
 
 #### Dictionaries Sets
 
@@ -586,7 +583,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 #### Can be mutable or immutable. Built In Data Types
 
-------------------------------------------------------------------------
+---
 
 ### Lists are the python equivalent of arrays.
 
@@ -645,15 +642,15 @@ You can think of this as roughly equivalent to the slice method called on a Java
     c = dict([(‘two’, 2), (‘one’, 1), (‘three’, 3)])
     # a, b, and c are all equal
 
-***Declared with curly braces of the built in dict()***
+**_Declared with curly braces of the built in dict()_**
 
-> *Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.*
+> _Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
 
 **Use the in operator to see if a key exists in a dictionary.**
 
 <span class="graf-dropCap">S</span>**ets : Unordered collection of distinct objects; objects that need to be hashable.**
 
-> *Always be unique, duplicate items are auto dropped from the set.*
+> _Always be unique, duplicate items are auto dropped from the set._
 
 #### Common Uses:
 
@@ -705,12 +702,12 @@ Sets created by putting comma seperated values inside braces:**
 
 **max(iterable, key=None) : returns the largest item in the iterable.**
 
-*key optional function which converts an item to a value to be compared.  
-min works the same way as max*
+_key optional function which converts an item to a value to be compared.  
+min works the same way as max_
 
 **sum(iterable) : used with a list of numbers to generate the total.**
 
-*There is a faster way to concatenate an array of strings into one string, so do not use sum for that.*
+_There is a faster way to concatenate an array of strings into one string, so do not use sum for that._
 
 **any(iterable) : returns True if any items in the iterable are true.**
 
@@ -742,17 +739,17 @@ Working with sets**
     print(b — a) # => {4, 6}
     print(a ^ b) # => {1, 3, 4, 6}
 
-------------------------------------------------------------------------
+---
 
 ### **For Statements In python, there is only one for loop.**
 
 Always Includes:
 
-> 1. The for keyword  
-> 2. A variable name  
-> 3. The ‘in’ keyword  
-> 4. An iterable of some kid  
-> 5. A colon  
+> 1. The for keyword
+> 2. A variable name
+> 3. The ‘in’ keyword
+> 4. An iterable of some kid
+> 5. A colon
 > 6. On the next line, an indented block of code called the for clause.
 
 **You can use break and continue statements inside for loops as well.**
@@ -775,7 +772,7 @@ Always Includes:
     for i in lst:
     print(i)
 
-***Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.***
+**_Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list._**
 
     supplies = [‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’]
     for i in range(len(supplies)):
@@ -799,16 +796,16 @@ Always Includes:
     for v in spam.values():
     print(v)
 
-*Prints red*
+_Prints red_
 
-*Prints 42*
+_Prints 42_
 
     for k in spam.keys():
     print(k)
 
-*Prints color*
+_Prints color_
 
-*Prints age*
+_Prints age_
 
 **For loops can also iterate over both keys and values.**
 
@@ -817,18 +814,18 @@ Always Includes:
     for i in spam.items():
     print(i)
 
-*Prints (‘color’, ‘red’)*
+_Prints (‘color’, ‘red’)_
 
-*Prints (‘age’, 42)*
+_Prints (‘age’, 42)_
 
-*Destructuring to values*
+_Destructuring to values_
 
     for k, v in spam.items():
     print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
 
-*Prints Key: age Value: 42*
+_Prints Key: age Value: 42_
 
-*Prints Key: color Value: red*
+_Prints Key: color Value: red_
 
 **Looping over string**
 
@@ -837,11 +834,11 @@ Always Includes:
 
 **When you order arguments within a function or function call, the args need to occur in a particular order:**
 
-*formal positional args.*
+_formal positional args._
 
 \*args
 
-*keyword args with default values*
+_keyword args with default values_
 
 \*\*kwargs
 
@@ -851,7 +848,7 @@ Always Includes:
     def example2(arg_1, arg_2, *args, kw_1=”shark”, kw_2=”blowfish”, **kwargs):
     pass
 
-------------------------------------------------------------------------
+---
 
 ### **Importing in Python**
 
@@ -866,7 +863,7 @@ Custom.
 
 **All loaded using import statements.**
 
-------------------------------------------------------------------------
+---
 
 ### **Terms**
 
@@ -878,9 +875,9 @@ Custom.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
 
-*Try to avoid importing with wildcards in Python.*
+_Try to avoid importing with wildcards in Python._
 
-*Use multiple lines for clarity when importing.*
+_Use multiple lines for clarity when importing._
 
     from urllib.request import (
     HTTPDefaultErrorHandler as ErrorHandler,
@@ -891,7 +888,7 @@ Custom.
     urlopen,
     )
 
-------------------------------------------------------------------------
+---
 
 ### Watching Out for Python 2
 

@@ -1,11 +1,8 @@
-
-
-Deploy React App To Heroku Using Postgres & Express
-===================================================
+# Deploy React App To Heroku Using Postgres & Express
 
 Heroku is an web application that makes deploying applications easy for a beginner.
 
-------------------------------------------------------------------------
+---
 
 ### Deploy React App To Heroku Using Postgres & Express
 

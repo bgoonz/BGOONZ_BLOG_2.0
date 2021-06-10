@@ -1,11 +1,8 @@
-
-
-PostgreSQL Setup For Windows & WSL/Ubuntu
-=========================================
+# PostgreSQL Setup For Windows & WSL/Ubuntu
 
 If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install psql in your…
 
-------------------------------------------------------------------------
+---
 
 ### PostgreSQL Setup For Windows & WSL/Ubuntu
 
@@ -37,7 +34,7 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" /></figure>Once that installer downloads, run it. You need to go through the normal steps of installing software.
 
--   <span id="a223">Yes, Windows, let the installer make changes to *my* device.</span>
+-   <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
 -   <span id="d4d0">Thanks for the welcome. Next.</span>
 -   <span id="1283">Yeah, that’s a good place to install it. Next.</span>
 -   <span id="79cc">I don’t want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
@@ -68,7 +65,7 @@ If prompted for your password, type it.
 
 The last line of output of those two commands running should read “OK”. If it does not, try copying and pasting them one at a time.
 
-Now that you’ve registered the PostgreSQL repositories as a source to look for PostgreSQL, you need to update the `apt` registry. You should do this before you install *any* software on Ubuntu.
+Now that you’ve registered the PostgreSQL repositories as a source to look for PostgreSQL, you need to update the `apt` registry. You should do this before you install _any_ software on Ubuntu.
 
     sudo apt update
 
@@ -86,13 +83,13 @@ Since you’re going to be accessing the PosgreSQL installation from your Ubuntu
 
 This assumes you’re still using Bash. If you changed the shell that your Ubuntu installation uses, please follow that shell’s directions for adding an alias to its startup file.
 
-Make sure you’re in your Ubuntu home directory. You can do that by typing `cd` and hitting enter. Use `ls` to find out if you have a `.bashrc` file. Type `ls .bashrc`. If it shows you that one exists, that's the one you will add the alias to. If it tells you that there is no file named that, then type `ls .profile`. If it shows you that one exists, that's the one you will add the alias to. If it shows you that it does not exist, then use the file name `.bashrc` in the following section.
+Make sure you’re in your Ubuntu home directory. You can do that by typing `cd` and hitting enter. Use `ls` to find out if you have a `.bashrc` file. Type `ls .bashrc`. If it shows you that one exists, that's the one you will add the alias to. If it tells you that there is no file named that, then type `ls .profile`. If it shows you that one exists, that's the one you will add the alias to. If it shows you that it does not exist, then use the file name `.bashrc` in the following section.
 
 Now that you know which profile file to use, type `code «profile file name»` where "profile file name" is the name of the file you determined from the last section. Once Visual Studio Code starts up with your file, at the end of it (or if you've already added aliases, in that section), type the following.
 
     alias psql="psql -h localhost"
 
-When you run `psql` from the command line, it will now always add the part about wanting to connect to *localhost* every time. You would have to type that each time, otherwise.
+When you run `psql` from the command line, it will now always add the part about wanting to connect to _localhost_ every time. You would have to type that each time, otherwise.
 
 To make sure that you set that up correctly, type `psql -U postgres postgres`. This tells the `psql` client that you want to connect as the user "postgres" (`-U postgres`) to the database postgres (`postgres` at the end), which is the default database created when PostgreSQL is installed. It will prompt you for a password. Type the password that you used when you installed PostgrSQL, earlier. If the alias works correctly and you type the correct password, then you should see something like the following output.
 
@@ -105,7 +102,7 @@ Type `\q` and hit Enter to exit the PostgreSQL client tool.
 
 Now, you will add a user for your Ubuntu identity so that you don’t have to specify it all the time. Then, you will create a file that PostgreSQL will use to automatically send your password every time.
 
-Copy and paste the following into your Ubuntu shell. Think of a password that you want to use for your user. **Replace the password in the single quotes in the command with the password that you want.** It *has* to be a non-empty string. PostgreSQL doesn’t like it when it’s not.
+Copy and paste the following into your Ubuntu shell. Think of a password that you want to use for your user. **Replace the password in the single quotes in the command with the password that you want.** It _has_ to be a non-empty string. PostgreSQL doesn’t like it when it’s not.
 
     psql -U postgres -c "CREATE USER `whoami` WITH PASSWORD 'password' SUPERUSER"
 
@@ -121,7 +118,7 @@ In that file, you will add this line, which tells it that on localhost for port 
 
 Once you have that information in the file, save it, and close Visual Studio Code.
 
-The last step you have to take is change the permission on that file so that it is only readable by your user. PostgreSQL will ignore it if just anyone can read and write to it. This is for *your* security. Change the file permissions so only you can read and write to it. You did this once upon a time. Here’s the command.
+The last step you have to take is change the permission on that file so that it is only readable by your user. PostgreSQL will ignore it if just anyone can read and write to it. This is for _your_ security. Change the file permissions so only you can read and write to it. You did this once upon a time. Here’s the command.
 
     chmod go-rw ~/.pgpass
 
@@ -241,7 +238,7 @@ This is the output.
 
 In the following example, we get the columns names of a database.
 
-> column\_names.js
+> column_names.js
 
     const pg = require(‘pg’);
 
@@ -274,7 +271,7 @@ The output shows three column names of the `cars` table.
 
 In the next example, we select all rows from the database table.
 
-> all\_rows.js
+> all_rows.js
 
     const pg = require(‘pg’);
     const R = require(‘ramda’);

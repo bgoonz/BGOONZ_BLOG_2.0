@@ -1,11 +1,8 @@
-
-
-The Beginner’s Guide To JavaScript
-==================================
+# The Beginner’s Guide To JavaScript
 
 Part 1
 
-------------------------------------------------------------------------
+---
 
 ### The Beginner’s Guide To JavaScript
 
@@ -37,19 +34,19 @@ Part 1
 
 -   <span id="a7b3">Consistent effort &gt; cramming =&gt; for **durable knowledge**</span>
 
-------------------------------------------------------------------------
+---
 
 #### Here’s a REPL to practice with:
 
 <a href="https://replit.com/@bgoonz/lambda-prep#README.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/lambda-prep#README.html"><strong>lambda-prep</strong><br />
 <em>pre-course-work</em>replit.com</a><a href="https://replit.com/@bgoonz/lambda-prep#README.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 <a href="https://lambda-prep.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://lambda-prep.netlify.app/"><strong>INTRO@JSWEB</strong><br />
 <em>Resource-sharing-hub</em>lambda-prep.netlify.app</a><a href="https://lambda-prep.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### Hello World
 
@@ -58,9 +55,9 @@ Part 1
 -   <span id="a287">**//** : notation for creating a code comment in JS.</span>
 -   <span id="e2e6">**code comment** : useful for annotating pieces of code to explain how something works, ignored by computer.</span>
 
-> ***“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra***
+> **_“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra_**
 
-------------------------------------------------------------------------
+---
 
 ### The Number Data Type
 
@@ -79,20 +76,20 @@ Operators are the symbols that perform particular operations.
 JS evaluates more complex expressions using the general math order of operations aka PEMDAS.
 
 -   <span id="d1a4">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
--   <span id="81a2">*To force a specific order of operation, use the group operator ( ) around a part of the expression.*</span>
+-   <span id="81a2">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
 
-**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! *(Discrete Math concept, circular problems can be solved with modulo)*
+**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
 
 -   <span id="20ad">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.</span>
 -   <span id="2fbf">`console.log(7 % 10); // => 7;`</span>
 
-------------------------------------------------------------------------
+---
 
 ### The String Data Type
 
 The **string** data type is a primitive data type that used to represent textual data.
 
--   <span id="310e">can be wrapped by either **single** or **double** quotation marks, *best to choose one and stick with it for consistency*.</span>
+-   <span id="310e">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
 -   <span id="664c">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.</span>
 -   <span id="46e7">`"That's a great string"; (valid)`</span>
 -   <span id="4667">`'Shakespeare wrote, "To be or not to be"'; (valid)`</span>
@@ -119,7 +116,7 @@ The **string** data type is a primitive data type that used to represent textual
 -   <span id="7e6a">the indexOf() search will return the first instanced index of the the char in the string.</span>
 -   <span id="8729">**concatenate** : word to describe joining strings together into a single string.</span>
 
-------------------------------------------------------------------------
+---
 
 ### The Boolean Data Type
 
@@ -137,7 +134,7 @@ The **boolean** data type is the simplest data type since there are only two val
 -   <span id="a8c1">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.</span>
 -   <span id="58a3">`console.log(true || !false); // => stops after it sees "true ||"`</span>
 
-------------------------------------------------------------------------
+---
 
 ### Comparison Operators
 
@@ -152,16 +149,16 @@ All comparison operators will result in a boolean output.
 -   <span id="fb41">**===** (equal to)</span>
 -   <span id="0fd1">**!==** (not equal to)</span>
 
-> *Fun Fact: “a” &lt; “b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so “a” is less than “b” because it appears earlier!*
+> _Fun Fact: “a” &lt; “b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so “a” is less than “b” because it appears earlier!_
 
-> *If there is ever a standstill comparison of two string lexicographically (i.e. app vs apple) the comparison will deem the shorter string lesser.*
+> _If there is ever a standstill comparison of two string lexicographically (i.e. app vs apple) the comparison will deem the shorter string lesser._
 
 **Difference between == and ===**
 
 -   <span id="8cc0">**===** : Strict Equality, will only return true if the two comparisons are entirely the same.</span>
 -   <span id="b25c">**==** : Loose Equality, will return true even if the values are of a different type, due to coercion. (Avoid using this)</span>
 
-------------------------------------------------------------------------
+---
 
 ### Variables
 
@@ -187,7 +184,7 @@ Variables are used to store information to be referenced and manipulated in a pr
 -   <span id="22c2">**declaration** : process of simply introducing a variable name.</span>
 -   <span id="caeb">**initialization** : process of both declaring and assigning a variable on the same line.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Functions
 
@@ -196,7 +193,7 @@ A function is a procedure of code that will run when called. Functions are used 
 -   <span id="4c89">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="d3fe">Includes three things:</span>
 -   <span id="b57c">Name of the function.</span>
--   <span id="dfea">A list of *parameters* ()</span>
+-   <span id="dfea">A list of _parameters_ ()</span>
 -   <span id="da88">The code to execute {}</span>
 -   <span id="8eb3">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
 -   <span id="cb1d">JS evaluates code top down, left to right.</span>
@@ -205,13 +202,13 @@ A function is a procedure of code that will run when called. Functions are used 
 -   <span id="059e">When we hit a **return** statement in a function we immediately exit the function and return to where we called the function.</span>
 -   <span id="d906">When naming functions in JS always use camelCase and name it something appropriate. &gt; Greate code reads like English and almost explains itself. Think: Elegant, readable, and maintainable!</span>
 
-------------------------------------------------------------------------
+---
 
 ### Parameters and Arguments
 
 -   <span id="eb19">**Parameters** : Comma seperated variables specified as part of a function’s declaration.</span>
 -   <span id="6abb">**Arguments** : Values passed to the function when it is invoked.</span>
--   <span id="ab31">*If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work.*</span>
+-   <span id="ab31">_If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work._</span>
 -   <span id="12ee">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
 
 #### Further resources:
@@ -228,7 +225,7 @@ A function is a procedure of code that will run when called. Functions are used 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-*More content at* <a href="https://plainenglish.io/" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a>
+_More content at_ <a href="https://plainenglish.io/" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [April 4, 2021](https://medium.com/p/e222d166b6e1).
 

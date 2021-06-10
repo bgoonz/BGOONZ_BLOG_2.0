@@ -1,11 +1,8 @@
-
-
-Git-Tricks
-==========
+# Git-Tricks
 
 Refs
 
-------------------------------------------------------------------------
+---
 
 ### Awesome GitHub Commands Reference Sheet (Quick Reference)
 
@@ -31,7 +28,7 @@ Refs
 
     # delete remote branch
       git push origin :$branchname
-      
+
     # go back to previous branch
       git checkout -
 
@@ -39,7 +36,7 @@ Refs
 
     # Rebase your changes on top of the remote master
       git pull --rebase upstream master
-      
+
     # Squash multiple commits into one for a cleaner git log
     # (on the following screen change the word pick to either 'f' or 's')
       git rebase -i $commit_ref
@@ -170,7 +167,7 @@ Refs
 
     # delete remote branch
       git push origin :$branchname
-      
+
     # go back to previous branch
       git checkout -
 
@@ -178,7 +175,7 @@ Refs
 
     # Rebase your changes on top of the remote master
       git pull --rebase upstream master
-      
+
     # Squash multiple commits into one for a cleaner git log
     # (on the following screen change the word pick to either 'f' or 's')
       git rebase -i $commit_ref

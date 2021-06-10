@@ -6,11 +6,11 @@
 
 Here are some of the reasons:
 
-* A function is an instance of the Object type
-* A function can have properties and has a link back to its constructor method
-* You can store the function in a variable
-* You can pass the function as a parameter to another function
-* You can return the function from a function
+-   A function is an instance of the Object type
+-   A function can have properties and has a link back to its constructor method
+-   You can store the function in a variable
+-   You can pass the function as a parameter to another function
+-   You can return the function from a function
 
 #### 2. Given a code snippet containing an anonymous callback, a named callback, and multiple console.logs, predict what will be printed
 
@@ -24,11 +24,11 @@ function bar() {
     console.log('banana');
 }
 
-const fruitBasket = function() {
+const fruitBasket = function () {
     console.log('apple');
     bar();
     foo(bar);
-    foo(function() {
+    foo(function () {
         console.log('orange');
     });
     console.log('pear');
@@ -55,11 +55,11 @@ function greaterValue(value, cb1, cb2) {
     return res2;
 }
 
-let negate = function(num) {
+let negate = function (num) {
     return num * -1;
 };
 
-let addOne = function(num) {
+let addOne = function (num) {
     return num + 1;
 };
 
@@ -87,7 +87,7 @@ function myMap(arr, callback) {
     return mapped;
 }
 
-let double = function(num) {
+let double = function (num) {
     return num * 2;
 };
 

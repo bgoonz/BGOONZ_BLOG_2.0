@@ -2,24 +2,24 @@
 title: Plug-ins
 weight: 2
 seo:
-  title: Plug-ins
-  description: This is the plug-ins page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Plug-ins
-      keyName: property
-    - name: 'og:description'
-      value: This is the plug-ins page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Plug-ins
-    - name: 'twitter:description'
-      value: This is the plug-ins page
+    title: Plug-ins
+    description: This is the plug-ins page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Plug-ins
+          keyName: property
+        - name: 'og:description'
+          value: This is the plug-ins page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Plug-ins
+        - name: 'twitter:description'
+          value: This is the plug-ins page
 layout: docs
 ---
 
@@ -81,6 +81,6 @@ You can build tables with markdown to help you organize information. To add a ta
 </pre>
 
 | Title | Title |
-| ------| ----- |
+| ----- | ----- |
 | Text  | Text  |
 | Text  | Text  |

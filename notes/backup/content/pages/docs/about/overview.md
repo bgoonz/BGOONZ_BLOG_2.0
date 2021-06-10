@@ -2,24 +2,24 @@
 title: Overview
 weight: 1
 seo:
-  title: Overview
-  description: This is the overview page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Overview
-      keyName: property
-    - name: 'og:description'
-      value: This is the overview page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Overview
-    - name: 'twitter:description'
-      value: This is the overview page
+    title: Overview
+    description: This is the overview page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Overview
+          keyName: property
+        - name: 'og:description'
+          value: This is the overview page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Overview
+        - name: 'twitter:description'
+          value: This is the overview page
 layout: docs
 ---
 
@@ -40,17 +40,17 @@ Copy the code and modify these blocks according to your needs.
 
 ```
 <div class="important">
-  <strong>Important:</strong> 
+  <strong>Important:</strong>
   This is an "Important" callout block of text.
-  This block indicates a warning or caution. 
-  Use it for an important message. 
+  This block indicates a warning or caution.
+  Use it for an important message.
 </div>
 ```
 
 ```
 <div class="note">
-  <strong>Note:</strong> 
-  This is a "Note" callout block of text. 
+  <strong>Note:</strong>
+  This is a "Note" callout block of text.
   This block signifies a general note.
 </div>
 ```
@@ -107,7 +107,7 @@ You can build tables with markdown to help you organize information. To add a ta
 </pre>
 
 | Title | Title |
-| ------| ----- |
+| ----- | ----- |
 | Text  | Text  |
 | Text  | Text  |
 

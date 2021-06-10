@@ -2,24 +2,24 @@
 title: Installation
 weight: 1
 seo:
-  title: Installation
-  description: This is the installation page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Installation
-      keyName: property
-    - name: 'og:description'
-      value: This is the installation page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Installation
-    - name: 'twitter:description'
-      value: This is the installation page
+    title: Installation
+    description: This is the installation page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Installation
+          keyName: property
+        - name: 'og:description'
+          value: This is the installation page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Installation
+        - name: 'twitter:description'
+          value: This is the installation page
 layout: docs
 ---
 
@@ -32,7 +32,7 @@ layout: docs
 
 ## Callouts
 
-There are two types of callouts available in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note`. Like in the example bellow. 
+There are two types of callouts available in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note`. Like in the example bellow.
 
 ### HTML example
 
@@ -40,17 +40,17 @@ Copy the code and modify these blocks according to your needs.
 
 ```
 <div class="important">
-  <strong>Important:</strong> 
+  <strong>Important:</strong>
   This is an "Important" callout block of text.
-  This block indicates a warning or caution. 
-  Use it for an important message. 
+  This block indicates a warning or caution.
+  Use it for an important message.
 </div>
 ```
 
 ```
 <div class="note">
-  <strong>Note:</strong> 
-  This is a "Note" callout block of text. 
+  <strong>Note:</strong>
+  This is a "Note" callout block of text.
   This block signifies a general note.
 </div>
 ```
@@ -112,7 +112,7 @@ You can build tables with markdown to help you organize information. To add a ta
 </pre>
 
 | Title | Title |
-| ------| ----- |
+| ----- | ----- |
 | Text  | Text  |
 | Text  | Text  |
 

@@ -35,21 +35,19 @@ You can [create a site](https://app.stackbit.com/create?theme=https://github.com
 
 ## Develop Locally
 
-1. Install [Node.js and npm](https://nodejs.org/en/)
+1.  Install [Node.js and npm](https://nodejs.org/en/)
 
-1. Install npm dependencies:
+1.  Install npm dependencies:
 
         npm install
 
-
-
-1. Start the Next.js local development server:
+1.  Start the Next.js local development server:
 
         npm run develop
 
-1. Open [http://localhost:3000/](http://localhost:3000/) in the browser
+1.  Open [http://localhost:3000/](http://localhost:3000/) in the browser
 
-1. 🎉
+1.  🎉
 
 ## Editing Content
 
@@ -61,11 +59,11 @@ Alternatively, you can use the free on-page editing experience provided by the [
 
 Here's a few resources to get you started:
 
-- 📺 &nbsp; [Editing Content](https://stackbit.link/project-readme-editing-video)
-- 📺 &nbsp; [Adding, Reordering and Deleting Items](https://stackbit.link/project-readme-adding-video)
-- 📺 &nbsp; [Collaboration](https://stackbit.link/project-readme-collaboration-video)
-- 📺 &nbsp; [Publishing](https://stackbit.link/project-readme-publishing-video)
-- 📚 &nbsp; [Stackbit Documentation](https://stackbit.link/project-readme-documentation)
+-   📺 &nbsp; [Editing Content](https://stackbit.link/project-readme-editing-video)
+-   📺 &nbsp; [Adding, Reordering and Deleting Items](https://stackbit.link/project-readme-adding-video)
+-   📺 &nbsp; [Collaboration](https://stackbit.link/project-readme-collaboration-video)
+-   📺 &nbsp; [Publishing](https://stackbit.link/project-readme-publishing-video)
+-   📚 &nbsp; [Stackbit Documentation](https://stackbit.link/project-readme-documentation)
 
 If you need a hand, make sure to check the [Stackbit support page](https://stackbit.link/project-readme-support).
 

@@ -1,11 +1,8 @@
-
-
-Basic Web Development Environment Setup
-=======================================
+# Basic Web Development Environment Setup
 
 Windows Subsystem for Linux (WSL) and Ubuntu
 
-------------------------------------------------------------------------
+---
 
 ### Basic Web Development Environment Setup
 
@@ -17,15 +14,15 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 ‌
 
-01.  <span id="110a">In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”</span>
-02.  <span id="54fd">Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu</span>
-03.  <span id="a018">In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`</span>
-04.  <span id="6269">Restart your computer</span>
-05.  <span id="6dd9">In the application search box in the bottom bar, type “Store” to find the application named “Microsoft Store”</span>
-06.  <span id="eb4e">Click “Microsoft Store”</span>
-07.  <span id="74c1">Click the “Search” button in the upper-right corner of the window</span>
-08.  <span id="9d35">Type in “Ubuntu”</span>
-09.  <span id="4205">Click “Run Linux on Windows (Get the apps)”</span>
+1.  <span id="110a">In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”</span>
+2.  <span id="54fd">Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu</span>
+3.  <span id="a018">In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`</span>
+4.  <span id="6269">Restart your computer</span>
+5.  <span id="6dd9">In the application search box in the bottom bar, type “Store” to find the application named “Microsoft Store”</span>
+6.  <span id="eb4e">Click “Microsoft Store”</span>
+7.  <span id="74c1">Click the “Search” button in the upper-right corner of the window</span>
+8.  <span id="9d35">Type in “Ubuntu”</span>
+9.  <span id="4205">Click “Run Linux on Windows (Get the apps)”</span>
 10. <span id="1799">Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu’</span>
 11. <span id="edec">Click “Install”</span>
 12. <span id="2935">After it downloads, click “Launch”</span>
@@ -42,8 +39,8 @@ Git comes with Ubuntu, so there’s nothing to install. However, you should conf
 
 ‌Open an Ubuntu terminal if you don’t have one open already.
 
-01.  <span id="8cfe">You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.</span>
-02.  <span id="0e0d">You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.</span>
+1.  <span id="8cfe">You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.</span>
+2.  <span id="0e0d">You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.</span>
 
 **Note: if you want git to remember your login credentials type:**
 
@@ -57,19 +54,19 @@ Test if you have Chrome installed by typing “Chrome” in the search box in th
 
 ‌
 
-01.  <span id="578c">Open Microsoft Edge, the blue “e” in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.</span>
-02.  <span id="40db">Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.</span>
+1.  <span id="578c">Open Microsoft Edge, the blue “e” in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.</span>
+2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.</span>
 
 ### Node.js
 
 Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version` . If it reports "Command 'node' not found", then you need to follow these directions.
 
-01.  <span id="9098">In the Ubuntu terminal, type `sudo apt update` and press Enter</span>
-02.  <span id="806b">In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter</span>
-03.  <span id="5f3a">In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter</span>
-04.  <span id="2abd">In the Ubuntu terminal, type `. ./.bashrc` and press Enter</span>
-05.  <span id="3c16">In the Ubuntu terminal, type `nvm install --lts` and press Enter</span>
-06.  <span id="d567">Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!</span>
+1.  <span id="9098">In the Ubuntu terminal, type `sudo apt update` and press Enter</span>
+2.  <span id="806b">In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter</span>
+3.  <span id="5f3a">In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter</span>
+4.  <span id="2abd">In the Ubuntu terminal, type `. ./.bashrc` and press Enter</span>
+5.  <span id="3c16">In the Ubuntu terminal, type `nvm install --lts` and press Enter</span>
+6.  <span id="d567">Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!</span>
 
 ### Unzip
 

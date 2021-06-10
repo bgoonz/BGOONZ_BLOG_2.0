@@ -1,11 +1,8 @@
-
-
-Objects in Javascript
-=====================
+# Objects in Javascript
 
 Codepen with examples for you to practice with below!
 
-------------------------------------------------------------------------
+---
 
 ### Objects in Javascript
 
@@ -17,15 +14,15 @@ The `object` is a data structure that stores other data, similar to how an array
 
 Javascript simple types:
 
--   <span id="5a44">numbers *(has object-like methods but they are immutable)*</span>
--   <span id="8cd7">strings *(has object-like methods but they are immutable)*</span>
--   <span id="7ed9">booleans *(has object-like methods but they are immutable)*</span>
+-   <span id="5a44">numbers _(has object-like methods but they are immutable)_</span>
+-   <span id="8cd7">strings _(has object-like methods but they are immutable)_</span>
+-   <span id="7ed9">booleans _(has object-like methods but they are immutable)_</span>
 -   <span id="420c">null</span>
 -   <span id="b51f">undefined</span>
 
-All other values are *objects* including arrays and functions.
+All other values are _objects_ including arrays and functions.
 
-Objects are class free, can contain other objects and can inherit properties from their prototypes (which can *reduce object initialisation time and memory consumption*).
+Objects are class free, can contain other objects and can inherit properties from their prototypes (which can _reduce object initialisation time and memory consumption_).
 
 In other programming languages, objects are referred to as, “dictionaries”, “maps”, or “associative arrays”.
 
@@ -34,7 +31,7 @@ In other programming languages, objects are referred to as, “dictionaries”, 
 -   <span id="4575">Objects are defined by using curly braces `{}`</span>
 -   <span id="0c11">You can think of Objects as tables.</span>
 
-> *Fun Fact: Objects are affectionately known as POJO’s (Plain Old Javascript Objects)*
+> _Fun Fact: Objects are affectionately known as POJO’s (Plain Old Javascript Objects)_
 
 **Setting Keys and Values**
 
@@ -70,11 +67,11 @@ You can put an object together in a single statement.
 
 ### Iterating Through Objects
 
-Because objects store ***unordered*** key-value pairs, we do not rely on indices to access values; instead we rely on our keys.
+Because objects store **_unordered_** key-value pairs, we do not rely on indices to access values; instead we rely on our keys.
 
 **Methods vs Functions**
 
-A is a function that *belongs* to an object. Every method is a function, but *not* every function is a method.
+A is a function that _belongs_ to an object. Every method is a function, but _not_ every function is a method.
 
 **Useful Object Methods**
 
@@ -132,11 +129,11 @@ So far we have learned about 6 different data types:
 We can also destructure **incoming parameters** of a function.  
  This is very useful when we’re passing objects around to different functions.
 
-------------------------------------------------------------------------
+---
 
 ### Object Literals
 
--   <span id="b0a3">An object literal is *zero or more comma-separated name/value pairs surrounded by curly braces* {}</span>
+-   <span id="b0a3">An object literal is _zero or more comma-separated name/value pairs surrounded by curly braces_ {}</span>
 
 <!-- -->
 
@@ -156,7 +153,7 @@ We can also destructure **incoming parameters** of a function.
 ### Retrieval
 
 -   <span id="ee43">Can be done with either dot notation `today.weather.morning` or with square brackets `today['month']`</span>
--   <span id="d7ae">Or operand (||) can be used to fill in default values for nonexistent data to prevent and *undefined* error: `var weath = today.weather.evening || "unknown"`</span>
+-   <span id="d7ae">Or operand (||) can be used to fill in default values for nonexistent data to prevent and _undefined_ error: `var weath = today.weather.evening || "unknown"`</span>
 
 ### Update
 
@@ -169,7 +166,7 @@ We can also destructure **incoming parameters** of a function.
 ### Prototype
 
 -   <span id="b567">Every object has a prototype object from which it inherits properties</span>
--   <span id="943e">*Object.prototype* comes standard with Javascript and is almost like a ‘root parent’</span>
+-   <span id="943e">_Object.prototype_ comes standard with Javascript and is almost like a ‘root parent’</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*1MKtZt0a5gREie59" class="graf-image" /></figure>-   <span id="2293">The `Object.create` method is now available in ES5 (but the method is in the book if required for older versions)</span>
 -   <span id="5001">If an object does not have a property you ask it for, it will keep looking up the prototype chain until it finds it</span>
@@ -182,7 +179,7 @@ More details in <a href="https://github.com/Lambda-April/Unsorted-Notes/blob/mai
 
 -   <span id="60ed">Determining what properties an object has</span>
 -   <span id="a00d">Using `typeof` includes all properties in the prototype chain including functions</span>
--   <span id="4365">To avoid inherited properties, use `hasOwnProperty(type);` which returns *true* if that property exists only in that object itself (not the chain)</span>
+-   <span id="4365">To avoid inherited properties, use `hasOwnProperty(type);` which returns _true_ if that property exists only in that object itself (not the chain)</span>
 
 <!-- -->
 
@@ -195,12 +192,12 @@ More details in <a href="https://github.com/Lambda-April/Unsorted-Notes/blob/mai
 <!-- -->
 
     let i;
-    let properties = [ ‘day’, ‘month’, ‘year’ ]; 
-    for (i = 0; i < properties.length; i++) { 
+    let properties = [ ‘day’, ‘month’, ‘year’ ];
+    for (i = 0; i < properties.length; i++) {
         document.writeIn(properties[i] + ‘:’ + today[properties[i]]);
      }
 
--   <span id="5d1f">This ensures you get the properties you want (i.e. not up the prototype chain) and in the order you want, as opposed to a *for in* loop which achieves neither of these</span>
+-   <span id="5d1f">This ensures you get the properties you want (i.e. not up the prototype chain) and in the order you want, as opposed to a _for in_ loop which achieves neither of these</span>
 
 ### Delete
 
@@ -209,7 +206,7 @@ More details in <a href="https://github.com/Lambda-April/Unsorted-Notes/blob/mai
 
 ### Global Abatement
 
--   <span id="5b97">One way to mitigate the risks of global variables is to *create a single global variable* which then contains your whole application</span>
+-   <span id="5b97">One way to mitigate the risks of global variables is to _create a single global variable_ which then contains your whole application</span>
 
 <!-- -->
 

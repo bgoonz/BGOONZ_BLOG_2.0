@@ -3,7 +3,6 @@ const sourcebit = require('sourcebit');
 
 const sourcebitConfig = require('./sourcebit.js');
 
-
 sourcebit.fetch(sourcebitConfig);
 
 module.exports = {
@@ -18,7 +17,7 @@ module.exports = {
         // @import "../../public/assets/css/example.css";
         importer: (url, prev, done) => {
             if (/\.css$/i.test(url)) {
-                return { file: path.join('../../public/css', url) }
+                return { file: path.join('../../public/css', url) };
             }
             return null;
         }

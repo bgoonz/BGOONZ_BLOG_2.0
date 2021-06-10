@@ -1,6 +1,6 @@
 # Mutability
 
-### 
+###
 
 ### Mutability && Primitive && Reference Examples
 
@@ -13,7 +13,7 @@ function rotateLeft(arr, num) {
         arr.unshift(el);
     }
 }
-let myArr = [1, 2, 3, 4, 5, ];
+let myArr = [1, 2, 3, 4, 5];
 rotateLeft(myArr, 2);
 console.log(myArr);
 ```
@@ -25,7 +25,7 @@ function rotateString(str, num) {
     return str.slice(num) + str.slice(0, num);
 }
 
-let str = "foobar";
+let str = 'foobar';
 let ret = rotateString(str, 3);
 console.log(str);
 console.log(ret);
@@ -50,20 +50,18 @@ To dereference attributes from an object, use `let {}` syntax.
 
 ```javascript
 let me = {
-    name: "Ian",
+    name: 'Ian',
     instruments: ['bass', 'synth', 'guitar'],
     siblings: {
         brothers: ['Alistair'],
         sisters: ['Meghan']
     }
-}
+};
 
 let {
     name,
     instruments: musical_instruments,
-    siblings: {
-        sisters
-    }
+    siblings: { sisters }
 } = me;
 
 console.log(sisters);
