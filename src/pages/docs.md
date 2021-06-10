@@ -1,5 +1,5 @@
 ---
-subtitle: lorem-ipsum
+subtitle: 'Here are some '
 seo:
   title: ''
   description: ''
