@@ -9,9 +9,9 @@ seo:
 template: page
 title: Embeded-Repos
 ---
-## Lorem ipsum
+# My Top Repos:
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-- Lorem ipsum
-- dolor sit amet
+
+*   [Python Practice](https://github.com/bgoonz/PYTHON_PRAC)
+
