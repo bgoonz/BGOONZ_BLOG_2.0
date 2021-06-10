@@ -112,7 +112,7 @@
                     },
                     {
                         "label": "Learning-Assets",
-                        "url": "#",
+                        "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
