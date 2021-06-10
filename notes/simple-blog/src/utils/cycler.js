@@ -4,4 +4,8 @@ export default function cycler() {
     return {
         next: () => args[index++ % args.length]
     };
+<<<<<<< HEAD
+}
+=======
 };
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2

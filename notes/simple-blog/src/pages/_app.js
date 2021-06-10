@@ -50,4 +50,8 @@ function MyApp({ Component, pageProps }) {
 //   return { ...appProps }
 // }
 
+<<<<<<< HEAD
+export default MyApp;
+=======
 export default MyApp
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2

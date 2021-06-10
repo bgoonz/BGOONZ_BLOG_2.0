@@ -56,7 +56,12 @@ Omnes enim iucundum motum, quo sensus hilaretur. Hoc est non dividere, sed frang
 
 Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. **Audeo dicere, inquit.** Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis. Nunc haec primum fortasse audientis servire debemus. Nihil ad rem! Ne sit sane; Et certamen honestum et disputatio splendida! omnis est enim de virtutis dignitate contentio. Quonam, inquit, modo? Nullum inveniri verbum potest quod magis idem declaret Latine, quod Graece, quam declarat voluptas. Hoc ille tuus non vult omnibusque ex rebus voluptatem quasi mercedem exigit.
 
+<<<<<<< HEAD
+-   Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari - virum vetant in dolore.
+-   Non igitur bene.
+=======
 - Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari - virum vetant in dolore.
 - Non igitur bene.
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
 Maximas vero virtutes iacere omnis necesse est voluptate dominante.

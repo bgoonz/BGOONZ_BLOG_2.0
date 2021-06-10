@@ -1,11 +1,8 @@
-
-
-Web Development Resources Part 3
-================================
+# Web Development Resources Part 3
 
 I’m the psychological equivalent of a physical hoarder only instead of empty soda cans and dead racoons it’s lists of links and resources.
 
-------------------------------------------------------------------------
+---
 
 ### Web Development Resources Part 3
 
@@ -19,7 +16,7 @@ I’m the psychological equivalent of a physical hoarder only instead of empty s
 <a href="https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263"><strong>Web Developer Resource List Part 2</strong><br />
 <em>Because I compile these things compulsively anyway…</em>medium.com</a><a href="https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/0*7Taf8gWWh5YjoM-s.png" class="graf-image" /></figure>### Performance
 

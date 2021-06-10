@@ -9,7 +9,7 @@ import _ from 'lodash';
  */
 export default function getPage(pages, urlPath) {
     urlPath = _.trim(urlPath, '/');
-    return _.find(pages, page => {
+    return _.find(pages, (page) => {
         const pageUrlPath = _.trim(_.get(page, '__metadata.urlPath'), '/');
         return urlPath === pageUrlPath;
     });

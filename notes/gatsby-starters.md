@@ -34,17 +34,16 @@ You will see something more or less like this:
     success write out page data — 0.015 s
     success write out redirect data — 0.002 s
     success onPostBootstrap — 0.001 s
-    
+
     info bootstrap finished
      DONE  Compiled successfully
-    
+
     You can now view gatsby-starter-personal-blog in the browser.
       http://localhost:8000/
 
 That means you can see the blog running in your web browser under the `http://localhost:8000/` address.
 
-Folders structure
------------------
+## Folders structure
 
 This is the starter’s main folders structure.
 
@@ -55,8 +54,7 @@ This is the starter’s main folders structure.
       ├── src
       └── static
 
-Content
--------
+## Content
 
 To easily customize all texts of the blog, not only posts, I extracted all content to its own separate folder.
 
@@ -81,26 +79,26 @@ There is a `config.js` file inside the `/content/meta/` folder.
 Content of the `config.js` file.
 
     module.exports = {
-      siteTitle: "PersonalBlog - a blog starter for GatsbyJS", 
-      shortSiteTitle: "PersonalBlog GatsbyJS Starter", 
+      siteTitle: "PersonalBlog - a blog starter for GatsbyJS",
+      shortSiteTitle: "PersonalBlog GatsbyJS Starter",
       siteDescription: "PersonalBlog is a GatsbyJS starter.",
       siteUrl: "https://gatsby-starter-personal-blog.greglobinski.com",
       siteImage: "preview.jpg",
       siteLanguage: "en",
-      
+
       authorName: "greg lobinski",
       authorTwitterAccount: "greglobinski",
-      
+
       infoTitle: "greg lobinski",
       infoTitleNote: "personal blog",
-      
+
       manifestName: "PersonalBlog - a blog starter for GatsbyJS",
-      manifestShortName: "PersonalBlog", 
+      manifestShortName: "PersonalBlog",
       manifestStartUrl: "/",
       manifestBackgroundColor: colors.bg,
       manifestThemeColor: colors.bg,
       manifestDisplay: "standalone",
-      
+
       authorSocialLinks: [
         { name: "github", url: "https://github.com/greglobinski" },
         { name: "twitter", url: "https://twitter.com/greglobinski" },
@@ -127,14 +125,13 @@ When you change or add new post, remeber to keep up with the post folder name pa
 
 There are three obligatory parts:
 
-*   a post date prefix `YYYY-MM-DD`,
-*   a separator `--` (two dashes)
-*   a slug
+-   a post date prefix `YYYY-MM-DD`,
+-   a separator `--` (two dashes)
+-   a slug
 
 Only posts inside properly named folders are displayed on the blog post list.
 
-Pages
------
+## Pages
 
 The same way as posts, every page has its own folder.
 
@@ -149,14 +146,13 @@ When you change or add new page, remember to properly use the page folder name p
 
 There are three parts.
 
-*   a page order number prefix `No` (one or more digit)
-*   a separator `--` (two dashes)
-*   a slug
+-   a page order number prefix `No` (one or more digit)
+-   a separator `--` (two dashes)
+-   a slug
 
 Only pages inside folders with order prefix are displayed in the Info menu.
 
-Parts
------
+## Parts
 
 Through `parts` you can edit content of elements which are parts of the blog’s layout, like an author note under a post or a footer.
 
@@ -167,14 +163,13 @@ Through `parts` you can edit content of elements which are parts of the blog’s
       │   │   ├── footnote.md
       │   │   └── info.md
 
-Environment variables
----------------------
+## Environment variables
 
 The starter uses some external services:
 
-*   Analytics by [Google Analytics](https://www.google.com/analytics/)
-*   Comments by [Facebook Comments](https://developers.facebook.com/docs/plugins/comments/)
-*   Search by [Algolia](https://www.algolia.com/)
+-   Analytics by [Google Analytics](https://www.google.com/analytics/)
+-   Comments by [Facebook Comments](https://developers.facebook.com/docs/plugins/comments/)
+-   Search by [Algolia](https://www.algolia.com/)
 
 To make them work you have to secure some access data. All services are free or have generous free tiers big enough for a personal blog.
 
@@ -198,24 +193,21 @@ For `gatsby build` you absolutely need a real Algolia access data, without it th
 If you want to delay singing-up to Algolia you can temporarily turn off `gatsby-plugin-algolia`. Open the `gatsby-config.js` file in the root folder and comment or remove the `gatsby-plugin-algolia` setup.
 
     plugins: [
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
         {
           resolve: `gatsby-source-filesystem`,
 
 But hey, it’s not diffucult or long to [setup](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/setup-algolia-account/) your Algolia account for the starter.
 
-Summary
--------
+## Summary
 
 That’s all for the first step. Now you should have a running blog with your own data running on your localhost. In the next post we will talk how to change the look of your blog. Stay tuned.
-
-

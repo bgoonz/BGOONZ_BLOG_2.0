@@ -1,4 +1,3 @@
-
 [links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/notes/links.md)
 [links.md](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/notes/links.md)
 [my-website-links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/notes/my-website-links.md)

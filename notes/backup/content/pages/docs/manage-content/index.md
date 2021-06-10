@@ -1,27 +1,27 @@
 ---
 title: Manage Content
 excerpt: >-
-  In this section you'll learn how to add syntax highlighting, examples,
-  callouts and much more.
+    In this section you'll learn how to add syntax highlighting, examples,
+    callouts and much more.
 seo:
-  title: Manage Content
-  description: This is the manage content page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Manage Content
-      keyName: property
-    - name: 'og:description'
-      value: This is the manage content page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Manage Content
-    - name: 'twitter:description'
-      value: This is the manage content page
+    title: Manage Content
+    description: This is the manage content page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Manage Content
+          keyName: property
+        - name: 'og:description'
+          value: This is the manage content page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Manage Content
+        - name: 'twitter:description'
+          value: This is the manage content page
 layout: docs
 ---
 
@@ -81,17 +81,17 @@ Copy the code and modify these blocks according to your needs.
 
 ```
 <div class="important">
-  <strong>Important:</strong> 
+  <strong>Important:</strong>
   This is an "Important" callout block of text.
-  This block indicates a warning or caution. 
-  Use it for an important message. 
+  This block indicates a warning or caution.
+  Use it for an important message.
 </div>
 ```
 
 ```
 <div class="note">
-  <strong>Note:</strong> 
-  This is a "Note" callout block of text. 
+  <strong>Note:</strong>
+  This is a "Note" callout block of text.
   This block signifies a general note.
 </div>
 ```
@@ -116,6 +116,6 @@ Copy the code and modify these blocks according to your needs.
 You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
 
 | Title | Title |
-| ------| ----- |
+| ----- | ----- |
 | Text  | Text  |
 | Text  | Text  |

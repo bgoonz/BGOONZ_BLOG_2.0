@@ -4,18 +4,17 @@ const fse = require('fs-extra');
 const chokidar = require('chokidar');
 const _ = require('lodash');
 
-
 const metadataFileName = 'site-metadata.json';
 
 const parsers = {
-    yaml: (data) => yaml.safeLoad(data, {schema: yaml.JSON_SCHEMA}),
+    yaml: (data) => yaml.safeLoad(data, { schema: yaml.JSON_SCHEMA }),
     json: (data) => JSON.parse(data)
 };
 
 const supportedExtensions = {
-    'yaml': parsers.yaml,
-    'yml': parsers.yaml,
-    'json': parsers.json
+    yaml: parsers.yaml,
+    yml: parsers.yaml,
+    json: parsers.json
 };
 
 exports.sourceNodes = (props, pluginOptions = {}) => {
@@ -28,13 +27,18 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     }
 
     if (!path.isAbsolute(pluginOptions.path)) {
-        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path)
+        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path);
     }
 
     reporter.info(`[gatsby-source-data] setup file watcher and create site data`);
 
     const dataPath = pluginOptions.path;
-    const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, { dataPath, createNode, createContentDigest, reporter });
+    const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, {
+        dataPath,
+        createNode,
+        createContentDigest,
+        reporter
+    });
     const watcher = chokidar.watch([dataPath, metadataFileName], {
         cwd: '.',
         ignoreInitial: true
@@ -80,11 +84,11 @@ async function createSiteDataFromFiles({ dataPath, createNode, createContentDige
 async function readDirRecursively(dir, options) {
     const rootDir = _.get(options, 'rootDir', dir);
     const files = await fse.readdir(dir);
-    const promises = _.map(files, async file => {
+    const promises = _.map(files, async (file) => {
         const filePath = path.join(dir, file);
         const stats = await fse.stat(filePath);
         if (stats.isDirectory()) {
-            return readDirRecursively(filePath, {rootDir});
+            return readDirRecursively(filePath, { rootDir });
         } else if (stats.isFile()) {
             return path.relative(rootDir, filePath);
         } else {
@@ -96,7 +100,7 @@ async function readDirRecursively(dir, options) {
 }
 
 function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
-    let promises = _.map(dataFiles, filePath => {
+    let promises = _.map(dataFiles, (filePath) => {
         const pathObject = path.parse(filePath);
         const absFilePath = pathObject.base === metadataFileName ? metadataFileName : path.join(dataDirPath, filePath);
         const relPath = pathObject.base === metadataFileName ? metadataFileName : filePath;
@@ -105,7 +109,7 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
         if (!_.has(supportedExtensions, ext)) {
             return null;
         }
-        return fse.readFile(absFilePath).then(data => {
+        return fse.readFile(absFilePath).then((data) => {
             const propPath = _.compact(relDir.split(path.sep).concat(pathObject.name));
             const res = {};
             try {
@@ -117,7 +121,7 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
             return res;
         });
     });
-    return Promise.all(promises).then(results => {
-        return _.reduce(results, (data, res) => _.merge(data, res), {})
+    return Promise.all(promises).then((results) => {
+        return _.reduce(results, (data, res) => _.merge(data, res), {});
     });
 }

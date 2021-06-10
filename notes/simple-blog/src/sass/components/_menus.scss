@@ -2,6 +2,33 @@
  * Menus
  */
 .menu {
+<<<<<<< HEAD
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        color: $color-nav-link;
+        line-height: 1.25;
+
+        &.is-active {
+            color: $color-nav-link-active;
+        }
+    }
+
+    a {
+        &:not(.btn) {
+            border: 0;
+            color: inherit;
+            display: inline-block;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-nav-link-hover;
+            }
+        }
+    }
+=======
   list-style: none;
   margin: 0;
   padding: 0;
@@ -27,4 +54,5 @@
       }
     }
   }
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }

@@ -44,14 +44,29 @@ This is a paragraph. Malesuada bibendum arcu vitae elementum curabitur vitae nun
 
 ## Quoting
 
+<<<<<<< HEAD
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam. Turpis massa sed elementum tempus egestas sed sed. Orci a scelerisque purus semper eget duis at tellus at. Lacus luctus accumsan tortor posuere ac.
+
+> Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Ultrices sagittis orci a scelerisque purus semper eget duis. Pharetra pharetra massa massa ultricies. Felis eget nunc lobortis mattis aliquam.
+=======
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam. Turpis massa sed elementum tempus egestas sed sed. Orci a scelerisque purus semper eget duis at tellus at. Lacus luctus accumsan tortor posuere ac. 
 
 > Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Ultrices sagittis orci a scelerisque purus semper eget duis. Pharetra pharetra massa massa ultricies. Felis eget nunc lobortis mattis aliquam. 
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
 In cursus turpis massa tincidunt. Tempor nec feugiat nisl pretium. Odio aenean sed adipiscing diam. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Justo laoreet sit amet cursus sit amet dictum. Turpis tincidunt id aliquet risus feugiat in ante metus.
 
 ## Unordered and Ordered Lists
 
+<<<<<<< HEAD
+-   Donec non tortor in arcu mollis feugiat
+-   Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+-   Donec id eros eget quam aliquam gravida
+-   Vivamus convallis urna id felis
+-   Nulla porta tempus sapien
+
+---
+=======
 + Donec non tortor in arcu mollis feugiat
 + Lorem ipsum dolor sit amet, consectetuer adipiscing elit
 + Donec id eros eget quam aliquam gravida
@@ -59,6 +74,7 @@ In cursus turpis massa tincidunt. Tempor nec feugiat nisl pretium. Odio aenean s
 + Nulla porta tempus sapien
 
 ***
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
 1. Donec non tortor in arcu mollis feugiat
 2. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
@@ -79,11 +95,19 @@ for (let i = 0; i < sequence.length; i++) {
 
 ## Inline Elements
 
+<<<<<<< HEAD
+Emphasis, aka italics, with _asterisks_ or _underscores_.
+
+This is [an example](http://example.com) link.
+
+Strong emphasis, aka bold, with **asterisks** or **underscores**.
+=======
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
 This is [an example](http://example.com) link.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
 Combined emphasis with **asterisks and _underscores_**.
 

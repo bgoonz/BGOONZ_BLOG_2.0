@@ -1,11 +1,8 @@
-
-
-Postgresql Cheat Sheet
-======================
+# Postgresql Cheat Sheet
 
 PostgreSQL commands
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -299,7 +296,7 @@ Collect statistics:
 
     ANALYZE table_name;
 
-------------------------------------------------------------------------
+---
 
 ### Postgres & JSON:
 
@@ -330,7 +327,7 @@ Output:
 
 Selecting 1 column:
 
-    SELECT client, 
+    SELECT client,
         data->'title' AS title
         FROM books;
 
@@ -338,7 +335,7 @@ Output:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*OIVYOfYcbVh65Mt5" class="graf-image" /></figure>Selecting 2 columns:
 
-    SELECT client, 
+    SELECT client,
        data->'title' AS title, data->'author' AS author
        FROM books;
 
@@ -352,7 +349,7 @@ The `->` operator returns the original JSON type (which might be an object), whe
 
 You can use the `->` to return a nested object and thus chain the operators:
 
-    SELECT client, 
+    SELECT client,
        data->'author'->'last_name' AS author
        FROM books;
 
@@ -362,7 +359,7 @@ Output:
 
 Select rows based on a value inside your JSON:
 
-    SELECT 
+    SELECT
      client,
      data->'title' AS title
      FROM books
@@ -378,7 +375,7 @@ Output:
 
 Find rows based on the value of a nested JSON object:
 
-    SELECT 
+    SELECT
      client,
      data->'title' AS title
      FROM books
