@@ -7,6 +7,7 @@ seo:
   extra: []
   type: stackbit_page_meta
 template: page
+title: Embeded-Repos
 ---
 ## Lorem ipsum
 
