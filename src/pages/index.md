@@ -4,7 +4,7 @@ sections:
   - section_id: hero
     type: section_hero
     title: I am a musician/electrical engineer turned web developer
-    image: images/clever-mustard.gif
+    image: images/3.jpg
     content: "###### **A passionate frontend developer from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
     actions: []
   - section_id: features
@@ -185,7 +185,7 @@ sections:
           ![](/images/skillz.PNG)
         actions:
           - label: Learn More
-            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
+            url: "https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A"
             style: link
       - title: Showcase
         content: |
@@ -219,7 +219,7 @@ sections:
   - title: Musical Persuits
     section_id: guitar
     image_alt: bryan-guner
-    image_position: center
+    image_position: left
     content: >-
       <iframe width="560" height="415"
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
@@ -233,33 +233,34 @@ sections:
     subtitle: This is an optional description for the call to action block.
     actions:
       - label: Contact Me
-        url: 'mailto:bryan.guner@gmail.com'
+        url: "mailto:bryan.guner@gmail.com"
         style: primary
 seo:
   title: Stackbit Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Stackbit Web-Dev-HubTheme
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: The preview of the Web-Dev-Hubtheme
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/4.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Stackbit Web-Dev-HubTheme
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: The preview of the Web-Dev-Hubtheme
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/4.jpg
       relativeUrl: true
 template: advanced
 ---
+SAVE TO CACHER
