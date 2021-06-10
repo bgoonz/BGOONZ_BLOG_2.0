@@ -94,7 +94,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "Archive",
+                "label": "Knowledge-Base",
                 "style": "link",
                 "icon_class": "github",
                 "new_window": true,
