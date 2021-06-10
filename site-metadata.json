@@ -47,7 +47,6 @@
                 "label": "Roll The Dice"
             },
             {
-                "url": "docs/My-Content/my-websites/",
                 "label": "Navigation",
                 "style": "link",
                 "icon_class": "dev",
@@ -218,24 +217,11 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-<<<<<<< HEAD
-            },
-            {
-                "label": "Instagram",
-                "url": "https://www.instagram.com/bgoonz/?hl=en",
-                "style": "link",
-                "icon_class": "instagram",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-=======
->>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
             }
         ],
         "content": "My (now) Depreciated Blog: https://web-dev-resource-hub.netlify.app/",
         "links": [
             {
-                "label": "Home",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
