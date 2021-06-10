@@ -1,5 +1,5 @@
 ---
-subtitle: 'Here are some '
+subtitle: Here are some of my github repositories to pay around with!
 seo:
   title: ''
   description: ''
