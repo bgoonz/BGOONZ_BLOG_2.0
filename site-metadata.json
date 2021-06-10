@@ -120,7 +120,8 @@
                         "type": "action"
                     }
                 ],
-                "type": "action_menu"
+                "type": "action_menu",
+                "url": "https://lambda-static-resources.netlify.app/1-projects/directory.html"
             },
             {
                 "label": "Tools",
