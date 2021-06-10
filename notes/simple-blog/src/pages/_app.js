@@ -3,7 +3,9 @@ import { useEffect } from 'react';
 import Router from 'next/router';
 import '../sass/main.scss';
 
+
 function MyApp({ Component, pageProps }) {
+
     useEffect(() => {
         if (window.onNextjsAppDidMount) {
             window.onNextjsAppDidMount();
@@ -17,13 +19,13 @@ function MyApp({ Component, pageProps }) {
             if (window.onNextjsRouteChangeStart) {
                 window.onNextjsRouteChangeStart();
             }
-        };
+        }
 
         const handleRouteChangeComplete = () => {
             if (window.onNextjsRouteChangeComplete) {
                 window.onNextjsRouteChangeComplete();
             }
-        };
+        }
 
         Router.events.on('routeChangeStart', handleRouteChangeStart);
         Router.events.on('routeChangeComplete', handleRouteChangeComplete);
@@ -48,4 +50,8 @@ function MyApp({ Component, pageProps }) {
 //   return { ...appProps }
 // }
 
+<<<<<<< HEAD
 export default MyApp;
+=======
+export default MyApp
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2

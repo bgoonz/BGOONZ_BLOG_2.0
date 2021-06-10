@@ -11,15 +11,12 @@ class Page extends React.Component {
         // on the model of the page (_type in Sanity CMS)
         const componentName = _.get(this.props, 'page.__metadata.modelName');
         const PageLayout = pageLayouts[componentName];
-        return <PageLayout {...this.props} />;
-    }
-}
 
-export async function getStaticPaths() {
+        return <PageLayout {...this.props}/>;
     console.log('Page [...slug].js getStaticPaths');
     // filter out the root page as it has its own page file `src/pages/index.js`
     const paths = await sourcebitDataClient.getStaticPaths();
-    return { paths: _.reject(paths, (path) => path === '/'), fallback: false };
+    return { paths: _.reject(paths, path => path === '/'), fallback: false };
 }
 
 export async function getStaticProps({ params }) {

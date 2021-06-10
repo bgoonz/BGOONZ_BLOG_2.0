@@ -2,6 +2,7 @@
  * Styles for dark backgrounds
  */
 .inverse {
+<<<<<<< HEAD
     color: $color-inverse-text;
 
     a {
@@ -34,3 +35,37 @@
         color: $color-inverse-btn-clear;
     }
 }
+=======
+  color: $color-inverse-text;
+
+  a {
+    color: $color-inverse-link;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-inverse-heading;
+  }
+
+  .btn {
+    background-color: $color-inverse-btn-bg;
+    border-color: $color-inverse-btn-border;
+    color: $color-inverse-btn;
+  }
+
+  .btn--secondary {
+    background-color: $color-inverse-btn-alt-bg;
+    border-color: $color-inverse-btn-alt-border;
+    color: $color-inverse-btn-alt;
+  }
+
+  .btn--clear {
+    background: 0;
+    color: $color-inverse-btn-clear;
+  }
+}
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2

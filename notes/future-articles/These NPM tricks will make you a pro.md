@@ -8,7 +8,7 @@ After using NPM for almost 8 years, I’ve learned things along the way that I w
 
 ### 1\. Save time. ⏲ Use Shortcuts
 
-This is one of the most useful but not so well-documented features. A shortcut for a command might seem like a trivial thing, but the truth is that you will write \***\*30–60%\*\*** less code. You’ll save time you can spend on something meaningful, like drinking an extra cup of coffee ☕️ ?
+This is one of the most useful but not so well-documented features. A shortcut for a command might seem like a trivial thing, but the truth is that you will write ****30–60%**** less code. You’ll save time you can spend on something meaningful, like drinking an extra cup of coffee ☕️ ?
 
 Instead of `npm ****install**** <package>`  
 write `npm ****i**** <package>`.
@@ -31,7 +31,7 @@ write `npm ****t****`.
 
 Why write multiple lines when you can write one? ? If you know your packages by heart, the fastest option is to install them all in a one-liner, but be careful! One misspelled package and the whole command will fail. If you’re unsure about the names just install them one by one.
 
-    npm i -S react redux react-redux
+    npm i -S react redux react-redux 
 
 ### 3\. Install packages from different sources
 
@@ -41,7 +41,11 @@ But there’s more! NPM can install packages from other sources as well, like an
 
 When making your own packages or pull-requests for existing packages, this feature is powerful. For example, if you have your own fork of [Redux](https://redux.js.org/), you can install your package directly from your fork. _(Change_ `_username_` _to your username on GitHub.)_
 
+<<<<<<< HEAD
     npm i
+=======
+    npm i 
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
 Even better, if you’re using a GitHub repository, you can use this shortcut:
 
@@ -51,7 +55,11 @@ There’s more! You can also install a package from a specific branch. Useful wh
 
     npm i username/redux#
 
+<<<<<<< HEAD
 ? Bonus shortcut! Are you not using GitHub? No worries, there are shortcuts for \***\*BitBucket\*\*** and \***\*GitLab\*\*** as well:
+=======
+? Bonus shortcut! Are you not using GitHub? No worries, there are shortcuts for ****BitBucket**** and ****GitLab**** as well:
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
     npm i bitbucket:username/myrepositorynpm i gitlab:username/myrepository
 
@@ -59,7 +67,11 @@ There’s more! You can also install a package from a specific branch. Useful wh
 
 Sometimes you want to work on a project and develop its packages at the same time. Committing and pushing your package to a remote repository for every change you want to try out is tiresome! ? Instead, you can use a feature called _package linking_.
 
+<<<<<<< HEAD
 _Package linking_ works by creating a symlink in your node_modules folder that points to the local repository of your package. In this way, you can edit packages locally and the changes will be instantly available in the project using it.
+=======
+_Package linking_ works by creating a symlink in your node\_modules folder that points to the local repository of your package. In this way, you can edit packages locally and the changes will be instantly available in the project using it.
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
 The easiest way to understand _package linking_ is to try it out!  
 Let’s say we have a project called `myproject` and a package called `mypackage`. We want `mypackage` to be a dependency of `myproject`.
@@ -106,7 +118,11 @@ First of all, we need a good overview of the dependency tree and which package v
 
 ![](https://cdn-media-1.freecodecamp.org/images/1*W6rh263TrzZReldwNC7TCg.png)
 
+<<<<<<< HEAD
 NPM is good at maintaining itself and flattening the dependency tree on the fly, but it’s always a good habit to \***\*dedupe\*\*** your project before publishing. It might remove a few packages for you.
+=======
+NPM is good at maintaining itself and flattening the dependency tree on the fly, but it’s always a good habit to ****dedupe**** your project before publishing. It might remove a few packages for you.
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
 `npm dedupe`
 
@@ -118,7 +134,11 @@ It’s also a great idea to get a good overview of your outdated and missing pac
 
 The outdated list is really beautiful!
 
+<<<<<<< HEAD
 If you get a lot of red rows, you need to run `npm update` to update your packages to the latest possible version according to your package.json, which is as well stated in the \***\*wanted\*\*** column
+=======
+If you get a lot of red rows, you need to run `npm update` to update your packages to the latest possible version according to your package.json, which is as well stated in the ****wanted**** column
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
 `npm update`
 
@@ -176,7 +196,11 @@ You can do a lot of things with npm-scripts like running shell-commands and chai
 
 ### 9\. Running NPM Scripts in vsCode
 
+<<<<<<< HEAD
 Sometimes I have \***\*30\*\*** npm-scripts in my package.json (No kidding). ? Luckily, if you are using [Visual Studio Code](https://code.visualstudio.com/), you can list all your npm-scripts in the explorer and run your scripts with a click of a button! Be sure this setting is enabled:
+=======
+Sometimes I have ****30**** npm-scripts in my package.json (No kidding). ? Luckily, if you are using [Visual Studio Code](https://code.visualstudio.com/), you can list all your npm-scripts in the explorer and run your scripts with a click of a button! Be sure this setting is enabled:
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 
 `npm.enableScriptExplorer: true`
 
@@ -208,4 +232,9 @@ Thank you for reading.
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
+<<<<<<< HEAD
 [Source](https://www.freecodecamp.org/news/10-npm-tricks-that-will-make-you-a-pro-a945982afb25/)
+=======
+
+[Source](https://www.freecodecamp.org/news/10-npm-tricks-that-will-make-you-a-pro-a945982afb25/)
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2

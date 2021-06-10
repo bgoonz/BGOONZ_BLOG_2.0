@@ -1,11 +1,17 @@
 // Font rendering
 @mixin fontSmooth {
+<<<<<<< HEAD
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+=======
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }
 
 // Clearing floats
 @mixin clearfix() {
+<<<<<<< HEAD
     &:after {
         clear: both;
     }
@@ -15,10 +21,22 @@
         content: '';
         display: table;
     }
+=======
+  &:after {
+    clear: both;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }
 
 // Screen reader text
 @mixin sr-only {
+<<<<<<< HEAD
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
     height: 1px;
@@ -26,10 +44,20 @@
     position: absolute !important;
     width: 1px;
     word-wrap: normal !important;
+=======
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }
 
 // Breakpoints
 @mixin media-breakpoint-up($name, $breakpoints: $media-breakpoints) {
+<<<<<<< HEAD
     @if map-has-key($breakpoints, $name) {
         $min: map-get($breakpoints, $name) + 1;
         @media (min-width: $min) {
@@ -45,4 +73,21 @@
             @content;
         }
     }
+=======
+  @if map-has-key($breakpoints, $name) {
+    $min: map-get($breakpoints, $name) + 1;
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+}
+
+@mixin media-breakpoint-down($name, $breakpoints: $media-breakpoints) {
+  @if map-has-key($breakpoints, $name) {
+    $max: map-get($breakpoints, $name);
+    @media (max-width: $max) {
+      @content;
+    }
+  }
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }

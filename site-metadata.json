@@ -1,6 +1,7 @@
 {
     "palette": "navy",
     "header": {
+        "title": "webdevhub",
         "logo_img": "images/imageonline-co-overlayed-image - Copy.png",
         "logo_img_alt": "webdevhub logo",
         "has_nav": true,
@@ -12,7 +13,7 @@
                 "has_subnav": false
             },
             {
-                "label": "Study Resources ",
+                "label": "Bootcamp-Resources",
                 "url": "https://lambda-resources.netlify.app/",
                 "style": "link",
                 "has_subnav": false,
@@ -43,7 +44,7 @@
                 "has_subnav": false,
                 "subnav_links": [],
                 "type": "action_menu",
-                "label": "Tetris"
+                "label": "Roll The Dice"
             },
             {
                 "url": "docs/My-Content/my-websites/",
@@ -94,7 +95,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "Archive",
+                "label": "Knowledge-Base",
                 "style": "link",
                 "icon_class": "github",
                 "new_window": true,
@@ -109,10 +110,19 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "Learning-Assets",
+                        "url": "https://github.com/bgoonz/Learning-Assets",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
                     }
                 ],
                 "type": "action_menu",
-                "url": "https://lambda-static-landing.netlify.app/"
+                "url": "https://lambda-static-resources.netlify.app/1-projects/directory.html"
             },
             {
                 "label": "Tools",
@@ -157,8 +167,8 @@
                         "type": "action"
                     },
                     {
-                        "label": "Setup Checker",
-                        "url": "https://github.com/bgoonz/web-dev-setup-checker",
+                        "label": "lorem-ipsum",
+                        "url": "#",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
@@ -208,6 +218,7 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
+<<<<<<< HEAD
             },
             {
                 "label": "Instagram",
@@ -217,9 +228,11 @@
                 "new_window": false,
                 "no_follow": false,
                 "type": "action"
+=======
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
             }
         ],
-        "content": "Created & Maintained by Bryan Guner",
+        "content": "My (now) Depreciated Blog: https://web-dev-resource-hub.netlify.app/",
         "links": [
             {
                 "label": "Home",
@@ -233,43 +246,7 @@
             {
                 "label": "Old Blog",
                 "url": "https://lambda-resources.netlify.app/",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "My Medium Blog",
-                "url": "https://bryanguner.medium.com/",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "Git Html Previewer",
-                "url": "#",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "Python Practice",
-                "url": "https://github.com/bgoonz/PYTHON_PRAC",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "Freelance Work",
-                "url": "https://github.com/bgoonz/MihirBegMusicV3",
-                "style": "primary",
+                "style": "icon",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,

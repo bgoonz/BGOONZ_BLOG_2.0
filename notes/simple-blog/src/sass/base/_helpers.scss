@@ -2,6 +2,7 @@
  * Helper Classes
  */
 .container {
+<<<<<<< HEAD
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -15,10 +16,26 @@
 
 .container--lg {
     max-width: $width-lg;
+=======
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+}
+
+.container--md {
+  max-width: $width-md;
+}
+
+.container--lg {
+  max-width: $width-lg;
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }
 
 /* Headings */
 .h1 {
+<<<<<<< HEAD
     @extend h1;
 }
 
@@ -40,10 +57,34 @@
 
 .h6 {
     @extend h6;
+=======
+  @extend h1;
+}
+
+.h2 {
+  @extend h2;
+}
+
+.h3 {
+  @extend h3;
+}
+
+.h4 {
+  @extend h4;
+}
+
+.h5 {
+  @extend h5;
+}
+
+.h6 {
+  @extend h6;
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }
 
 /* Text alignment */
 .align-left {
+<<<<<<< HEAD
     text-align: left;
 }
 
@@ -53,10 +94,22 @@
 
 .align-center {
     text-align: center;
+=======
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }
 
 /* Background image */
 .bg-image {
+<<<<<<< HEAD
     position: relative;
 }
 
@@ -67,14 +120,35 @@
     position: absolute;
     right: 0;
     top: 0;
+=======
+  position: relative;
+}
+
+.bg-image__image {
+  background-position: center center;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }
 
 /* Text meant only for screen readers */
 .sr-only {
+<<<<<<< HEAD
     @include sr-only();
+=======
+  @include sr-only();
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }
 
 /* Clear floats */
 .clear {
+<<<<<<< HEAD
     @include clearfix();
 }
+=======
+  @include clearfix();
+}
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2

@@ -11,7 +11,11 @@ export default function getPageByFilePath(pages, filePath) {
     filePath = _.trim(filePath, '.md');
     const urlPath = filePath.replace(/^\/?content\/pages\//, '');
 
+<<<<<<< HEAD
     return _.find(pages, (page) => {
+=======
+    return _.find(pages, page => {
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
         const pageUrlPath = _.trim(_.get(page, '__metadata.urlPath'), '/');
         return urlPath === pageUrlPath;
     });
