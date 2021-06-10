@@ -4,14 +4,14 @@ sections:
   - section_id: hero
     type: section_hero
     title: I am a musician/electrical engineer turned web developer
-    image: images/cube.gif
+    image: images/3.jpg
     content: "###### **A passionate frontend developer from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
     actions: []
   - section_id: features
     type: section_grid
     col_number: three
     grid_items:
-      - content: "# A Quick Guide To Big O\n\n# ![](/\\_static/app-assets/green-spruce.png)![](/\\_static/app-assets/ds-algo.gif)\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n"
+      - content: "# A Quick Guide To Big O\n\n# ![](/\\_static/app-assets/green-spruce.png)\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n"
         actions:
           - label: Get Started
             url: /docs
@@ -33,9 +33,7 @@ sections:
         image_alt: python
       - content: >
           #
-          Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/dtw.gif)
-
-
+          Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/square-cedar.png)
 
 
           [This section exists for me to day dream ideas for the future... and
@@ -48,8 +46,10 @@ sections:
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
-          # ![](/\_static/app-assets/react.png)Beginner’s Guide To React Part 2
+          # Beginner’s Guide To React Part 2
 
+
+          ![](https://preview--best-celery-b2d7c.stackbit.dev/\_static/app-assets/react.gif)
 
 
 
@@ -71,11 +71,10 @@ sections:
           # My Medium Blog
 
 
-          ![](/\_static/app-assets/my-back.png)
+          ![](/\_static/app-assets/oval-robin.png)
 
 
-
-
+          ![](/\_static/app-assets/posts1.png)
 
 
           [PostgreSQL Cheat Sheet, Everything You Need to Get Started With
@@ -111,62 +110,68 @@ sections:
 
         actions: []
         type: grid_item
-        image: images/background.gif
-      - title: Nootropics
+      - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >
-          ## Nootropics
+        content: >-
+          ## Lorem ipsum
 
 
-          Nootropics are drugs, supplements, and other substances that are
-          claimed to improve cognitive function, particularly executive
-          functions, memory, creativity, or motivation, in healthy individuals.
+          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
-          ![](/\_static/app-assets/noo.PNG)
+          - Lorem ipsum
+
+          - dolor sit amet
         actions: []
         type: grid_item
-        image: images/clever-mustard.gif
-      - title: Guthrie Govan
+      - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >+
-          [Guthrie](https://www.youtube.com/watch?v=R2llLs4D5PA)
+        content: >-
+          ## Lorem ipsum
 
 
-          ![](/\_static/app-assets/futuristic-turtle.jpg)
+          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
-          Guthrie Govan is an English guitarist and guitar teacher, known for
-          his work with the bands The Aristocrats, Asia,Steven Wilson and Hans
-          Zimmer.
+          - Lorem ipsum
 
-
-
+          - dolor sit amet
         actions: []
         type: grid_item
-      - title_url: lorem-ipsum
-        image_alt: lorem-ipsum
-        content: >
-          # Global Warming
-
-
-          [Fusion, the nuclear reaction that powers the Sun and the stars, is a
-          potential source of safe, non-carbon emitting and virtually limitless
-          energy. Harnessing fusion's power is the goal of ITER, which has been
-          designed as the key experimental step between today's fusion research
-          machines and tomorrow's fusion power plants.](https://www.iter.org/)
-
-
-          ![](/\_static/app-assets/iter.jpg)
-        actions: []
-        type: grid_item
-        title: Environment
-      - title: Ice Hockey
+      - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: "![](/\\_static/app-assets/festive-dolphin.jpg)\n\n\n\n**New Jersey Devils**, American professional\_[ice hockey](https://www.britannica.com/sports/ice-hockey)\_team based in\_[Newark](https://www.britannica.com/place/Newark-New-Jersey),\_[New Jersey](https://www.britannica.com/place/New-Jersey). The Devils play in the Atlantic Division of the Eastern Conference in the\_[National Hockey League](https://www.britannica.com/topic/National-Hockey-League)\_(NHL). The franchise found little success until the 1990s, when it established itself as one of the NHL’s most dominant teams, winning\_[Stanley Cup](https://www.britannica.com/sports/Stanley-Cup)\_titles in 1995, 2000, and 2003.\n\n"
+        content: >-
+          ## Lorem ipsum
+
+
+          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+          - Lorem ipsum
+
+          - dolor sit amet
+        actions: []
+        type: grid_item
+      - title: lorem-ipsum
+        title_url: lorem-ipsum
+        image_alt: lorem-ipsum
+        content: >-
+          ## Lorem ipsum
+
+
+          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+          - Lorem ipsum
+
+          - dolor sit amet
         actions: []
         type: grid_item
     type: section_grid
@@ -189,7 +194,6 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-        image: images/back.jpeg
   - title: Embadable Content
     section_id: lorem-ipsum
     image_alt: lorem-ipsum

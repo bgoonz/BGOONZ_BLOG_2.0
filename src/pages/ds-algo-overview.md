@@ -1,20 +1,21 @@
 ---
-title: Data Structures
+title: ds-algo-Overview
 sections:
   - section_id: hero
     type: section_hero
-    title: Blog Overview
-    image: images/square-tiger.gif
+    title: ds-algo-Overview
+    image: images/5.jpg
+    content: An optional subtitle
   - section_id: docs-ds-algo-Overview
     type: section_docs
     col_number: three
-    title: Data Structures
   - section_id: cta
     type: section_cta
-    title: Go To My Auxillary Blog
+    title: The Title of The Call to Action Block
+    subtitle: This is an optional description for the call to action block.
     actions:
-      - label: Contact
-        url: 'https://melodic-lettuce-8d58b.netlify.app/contact/'
+      - label: Get Started
+        url: /docs/getting-started
         style: primary
 seo:
   title: ds-algo-Overview
