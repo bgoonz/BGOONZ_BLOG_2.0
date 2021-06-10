@@ -1,5 +1,5 @@
 1.  [ WEB DEV RESOURCE HUB ](https://web-dev-resource-hub.netlify.app)
-2.  [Recursion](https://zen-bhabha-bd046f.netlify.app/)
+2.  [Npm Package Readme Compilation](https://zen-bhabha-bd046f.netlify.app/)
 3.  [ Data Structures Website ](https://trusting-dijkstra-4d3b17.netlify.app)
 4.  [Web-Dev-Quizzes](https://web-dev-interview-prep-quiz-website.netlify.app/intro-js2.html)
 5.  [ Recursion ](https://zen-lamport-5aab2c.netlify.app)
