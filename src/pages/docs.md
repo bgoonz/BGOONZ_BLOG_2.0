@@ -8,6 +8,7 @@ seo:
   type: stackbit_page_meta
 template: page
 title: Embeded-Repos
+image: images/kind-whale.gif
 ---
 # My Top Repos / Websites:
 
