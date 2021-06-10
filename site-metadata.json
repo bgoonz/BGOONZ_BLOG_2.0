@@ -121,7 +121,7 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "https://lambda-static-landing.netlify.app/"
+                "url": "https://lambda-static-landing.netlify.app"
             },
             {
                 "label": "Tools",
