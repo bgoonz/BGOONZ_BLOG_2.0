@@ -1,40 +1,41 @@
 ---
 title: Tools
 excerpt: >-
-    See some interesting tools developed by the Web-Dev-Hubcommunity to help automate
-    parts of your workflow.
+  See some interesting tools developed by the Web-Dev-Hubcommunity to help automate
+  parts of your workflow.
 seo:
-    title: Tools
-    description: This is the tools page
-    extra:
-        - name: 'og:type'
+  title: Tools
+  description: This is the tools page
+  extra:
 
-          value: website
-          keyName: property
+    - name: 'og:type'
 
-        - name: 'og:title'
+      value: website
+      keyName: property
 
-          value: Tools
+    - name: 'og:title'
 
-          keyName: property
+      value: Tools
 
-        - name: 'og:description'
+      keyName: property
 
-          value: This is the tools page
+    - name: 'og:description'
 
-          keyName: property
+      value: This is the tools page
 
-        - name: 'twitter:card'
+      keyName: property
 
-          value: summary
+    - name: 'twitter:card'
 
-        - name: 'twitter:title'
+      value: summary
 
-          value: Tools
+    - name: 'twitter:title'
 
-        - name: 'twitter:description'
+      value: Tools
 
-          value: This is the tools page
+    - name: 'twitter:description'
+
+      value: This is the tools page
 
 template: docs
 ---
@@ -73,5 +74,6 @@ template: docs
 <br>
 
 <br>
+
 
 <iframe src="https://lambda-resources.netlify.app/"></iframe>

@@ -2,32 +2,32 @@
 title: Installation
 weight: 1
 seo:
-    title: Installation
-    description: This is the installation page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Installation
-          keyName: property
-        - name: 'og:description'
-          value: This is the installation page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Installation
-        - name: 'twitter:description'
-          value: This is the installation page
+  title: Installation
+  description: This is the installation page
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: Installation
+      keyName: property
+    - name: 'og:description'
+      value: This is the installation page
+      keyName: property
+    - name: 'twitter:card'
+      value: summary
+    - name: 'twitter:title'
+      value: Installation
+    - name: 'twitter:description'
+      value: This is the installation page
 template: docs
 ---
-
 # Basic Web Development Environment Setup
 
 > Windows Subsystem for Linux (WSL) and Ubuntu
 
-## Windows Subsystem for Linux (WSL) and Ubuntu
+Windows Subsystem for Linux (WSL) and Ubuntu
+--------------------------------------------
 
 [![Bryan Guner](https://miro.medium.com/fit/c/96/96/1*ao1cHo7EQ4faDV8YNJwh_Q.png)](https://bryanguner.medium.com/?source=post_page-----9f36c3f15afe--------------------------------)
 
@@ -50,15 +50,15 @@ Test if you have Ubuntu installed by typing “Ubuntu” in the search box in th
 7.  Click the “Search” button in the upper-right corner of the window
 8.  Type in “Ubuntu”
 9.  Click “Run Linux on Windows (Get the apps)”
-10. Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu’
-11. Click “Install”
-12. After it downloads, click “Launch”
-13. If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose “Pin to taskbar”
-14. When prompted to “Enter new UNIX username”, type your first name with no spaces
-15. When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)
-16. Confirm your installation by typing the command `whoami ‘as in who-am-i'`followed by Enter at the prompt (it should print your first name)
-17. You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
-18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
+10.  Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu’
+11.  Click “Install”
+12.  After it downloads, click “Launch”
+13.  If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose “Pin to taskbar”
+14.  When prompted to “Enter new UNIX username”, type your first name with no spaces
+15.  When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)
+16.  Confirm your installation by typing the command `whoami ‘as in who-am-i'`followed by Enter at the prompt (it should print your first name)
+17.  You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
+18.  You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
 
 Git comes with Ubuntu, so there’s nothing to install. However, you should configure it using the following instructions.
 
@@ -149,10 +149,12 @@ sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar
 \# FileZilla - a FTP client  
 sudo apt-get install -y filezilla
 
-## If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+---------------------------------------------------------------------------------------------------
 
 [bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
 
 Or Checkout my personal Resource Site:
+
 
 [Source](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)
