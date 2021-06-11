@@ -11,18 +11,17 @@ sections:
     type: section_grid
     col_number: three
     grid_items:
-      - content: "#\n\n# A Quick Guide To Big O\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n"
+      - content: "![](/\\_static/app-assets/cool-spider.jpg)\n\n### A Quick Guide To Big O\n\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n"
         actions:
           - label: Get Started
             url: /docs
             style: link
       - content: >
-          ![](/\_static/app-assets/2018-03-30\_21-14-06\_UTC.jpg)
+          ![](/\_static/app-assets/parallel-europa.jpg)
 
 
+          ### Python Study Guide
 
-
-          # Python Study Guide 
 
 
           [*Python has a built in help function that let’s you see a description
@@ -34,11 +33,16 @@ sections:
             url: >-
               https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             style: link
-        image: images/fierce-sun.png
         image_alt: python
       - content: >
-          #
-          Revamped-Automatic-Guitar-Effect-Triggering&#xA;![](/\_static/app-assets/square-cedar.png)
+          ![](/\_static/app-assets/superb-panda.PNG)
+
+
+
+
+          ### Revamped-Automatic-Guitar-Effect-Triggering
+
+
 
 
           [This section exists for me to day dream ideas for the future... and
@@ -51,10 +55,13 @@ sections:
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
-          # Beginner’s Guide To React Part 2
+          ![](/\_static/app-assets/react.gif)
 
 
-          ![](https://preview--best-celery-b2d7c.stackbit.dev/\_static/app-assets/react.gif)
+
+
+          ### Beginner’s Guide To React Part 2
+
 
 
 
