@@ -237,6 +237,7 @@ sections:
       - label: Contact Me
         url: 'mailto:bryan.guner@gmail.com'
         style: primary
+        new_window: true
 seo:
   title: Stackbit Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
