@@ -17,7 +17,9 @@ sections:
             url: /docs
             style: link
       - content: >
-          # Python Study Guide for a JavaScript Programmer&#xA;&#xA;
+
+
+          Python Study Guide for a JavaScript Programmer
 
 
           [*Python has a built in help function that let’s you see a description
