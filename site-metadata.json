@@ -101,7 +101,7 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "https://lambda-static-landing.netlify.app/"
+                "url": "https://github.com/bgoonz/Learning-Assets"
             },
             {
                 "label": "Tools",
