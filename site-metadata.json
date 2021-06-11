@@ -163,7 +163,8 @@
                 "has_subnav": false
             }
         ],
-        "url": "WebDevHub"
+        "url": "WebDevHub",
+        "title": "WebDevHub"
     },
     "footer": {
         "has_social": true,
