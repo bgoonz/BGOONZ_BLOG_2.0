@@ -35,7 +35,10 @@ sections:
             style: link
         image_alt: python
       - content: >
-          ![](/\_static/app-assets/superb-panda.PNG)
+          ![](/\_static/app-assets/Capture.PNG)
+
+
+          ###
 
 
 
