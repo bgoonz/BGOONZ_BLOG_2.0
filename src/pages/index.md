@@ -35,6 +35,9 @@ sections:
             style: link
         image_alt: python
       - content: >
+          ![](/\_static/app-assets/superb-panda.PNG)
+
+
 
 
           ### Revamped-Automatic-Guitar-Effect-Triggering
