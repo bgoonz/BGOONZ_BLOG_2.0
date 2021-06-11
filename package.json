@@ -3,7 +3,6 @@
   "description": "webdevhub",
   "version": "0.0.1",
   "license": "MIT",
-  
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
@@ -33,6 +32,7 @@
     "react-dom": "16.13.1",
     "react-helmet": "5.2.1",
     "react-html-parser": "2.0.2",
+    "react-player": "^2.9.0",
     "react-script-tag": "1.1.2",
     "rehype-react": "3.0.2",
     "sprintf-js": "1.1.2"
