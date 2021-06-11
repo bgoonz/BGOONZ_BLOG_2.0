@@ -1,7 +1,9 @@
 ---
 title: Notes Template
-subtitle: The Notes Template provides you with a blueprint of default post and page styles.
-image: images/5.jpg
+subtitle: >-
+  The Notes Template provides you with a blueprint of default post and page
+  styles.
+image: images/back.jpeg
 seo:
   title: Theme Notes Template
   description: A reference for suggested typographic treatment and styles for your content

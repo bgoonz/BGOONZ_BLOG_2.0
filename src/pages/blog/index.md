@@ -1,7 +1,7 @@
 ---
 title: Blog
 subtitle: Exclusive Blog Content
-image: images/background.gif
+image: images/cool-background.png
 has_more_link: true
 more_link_text: Read more
 seo:

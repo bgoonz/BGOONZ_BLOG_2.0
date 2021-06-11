@@ -201,7 +201,7 @@
             {
                 "label": "Instagram",
                 "url": "https://www.instagram.com/bgoonz/?hl=en",
-                "style": "link",
+                "style": "icon",
                 "icon_class": "instagram",
                 "new_window": false,
                 "no_follow": false,
@@ -250,15 +250,6 @@
                 "label": "Freelance Work",
                 "url": "https://github.com/bgoonz/MihirBegMusicV3",
                 "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "lorem-ipsum",
-                "url": "#",
-                "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
