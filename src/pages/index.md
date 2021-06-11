@@ -17,11 +17,7 @@ sections:
             url: /docs
             style: link
       - content: >
-
-
-          #
-
-
+          # ![](/\_static/app-assets/py.jpg)
 
 
           Python Study Guide
