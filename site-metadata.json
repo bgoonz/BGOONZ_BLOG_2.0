@@ -12,7 +12,7 @@
                 "has_subnav": false
             },
             {
-                "label": "Study Resources ",
+                "label": "Bootcamp Resources",
                 "url": "https://lambda-resources.netlify.app/",
                 "style": "link",
                 "has_subnav": false,
@@ -33,17 +33,6 @@
                 "url": "/blog",
                 "style": "link",
                 "has_subnav": false
-            },
-            {
-                "url": "https://tetris42.netlify.app/",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": false,
-                "subnav_links": [],
-                "type": "action_menu",
-                "label": "Tetris"
             },
             {
                 "url": "docs/My-Content/my-websites/",
@@ -261,6 +250,15 @@
                 "label": "Freelance Work",
                 "url": "https://github.com/bgoonz/MihirBegMusicV3",
                 "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
