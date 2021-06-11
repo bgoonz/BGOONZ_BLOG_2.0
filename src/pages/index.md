@@ -52,10 +52,13 @@ sections:
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
-          # Beginner’s Guide To React Part 2
+          ![](/\_static/app-assets/react.gif)
 
 
-          ![](https://preview--best-celery-b2d7c.stackbit.dev/\_static/app-assets/react.gif)
+
+
+          ### Beginner’s Guide To React Part 2
+
 
 
 
