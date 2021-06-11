@@ -1,9 +1,9 @@
 ---
-title: lorem-ipsum
+title: Data Structures
 subtitle: lorem-ipsum
 date: '2021-06-03'
 thumb_image_alt: lorem-ipsum
-excerpt: lorem-ipsum
+excerpt: A guide to computational complexity
 seo:
   title: ''
   description: ''
