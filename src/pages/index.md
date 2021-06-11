@@ -17,9 +17,12 @@ sections:
             url: /docs
             style: link
       - content: >
+          ![](/\_static/app-assets/2018-03-30\_21-14-06\_UTC.jpg)
 
 
-          Python Study Guide for a JavaScript Programmer
+
+
+          # Python Study Guide 
 
 
           [*Python has a built in help function that let’s you see a description
