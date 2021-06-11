@@ -1,7 +1,7 @@
 {
     "palette": "navy",
     "header": {
-        "logo_img": "images/imageonline-co-overlayed-image - Copy.png",
+        "logo_img": "images/mini-logo.png",
         "logo_img_alt": "webdevhub logo",
         "has_nav": true,
         "nav_links": [
