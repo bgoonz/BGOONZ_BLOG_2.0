@@ -222,15 +222,6 @@
         "content": "Created & Maintained by Bryan Guner",
         "links": [
             {
-                "label": "Home",
-                "url": "#",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
                 "label": "Old Blog",
                 "url": "https://lambda-resources.netlify.app/",
                 "style": "primary",
