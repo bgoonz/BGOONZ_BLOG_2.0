@@ -17,10 +17,12 @@ sections:
             url: /docs
             style: link
       - content: >
-          # ![](/\_static/app-assets/py.jpg)
+          ![](https://preview--best-celery-b2d7c.stackbit.dev/\_static/app-assets/py.jpg)
 
 
-          Python Study Guide
+
+
+          # Python Study Guide
 
 
           [*Python has a built in help function that let’s you see a description
