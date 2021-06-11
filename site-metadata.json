@@ -255,6 +255,15 @@
                 "new_window": false,
                 "no_follow": false,
                 "type": "action"
+            },
+            {
+                "label": "Github Pages For This Website",
+                "url": "https://bgoonz.github.io/BGOONZ_BLOG_2.0/",
+                "style": "secondary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
             }
         ]
     },
