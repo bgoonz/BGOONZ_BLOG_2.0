@@ -17,17 +17,15 @@ sections:
             url: /docs
             style: link
       - content: >
-          ![](https://preview--best-celery-b2d7c.stackbit.dev/\_static/app-assets/py.jpg)
 
 
 
 
-          # Python Study Guide
 
 
-          [*Python has a built in help function that let’s you see a description
-          of the source code without having to navigate to it… “-SickNasty …
-          Autor
+          # Python Study Guide&#xA;[*Python has a built in help function that
+          let’s you see a description of the source code without having to
+          navigate to it… “-SickNasty … Autor
           Unknown”*](https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb)
         actions:
           - label: View Posts
