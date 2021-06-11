@@ -1,7 +1,7 @@
 {
     "palette": "navy",
     "header": {
-        "logo_img": "images/mini-logo.png",
+        "logo_img": "images/logo-circle.png",
         "logo_img_alt": "webdevhub logo",
         "has_nav": true,
         "nav_links": [
@@ -163,7 +163,8 @@
                 "has_subnav": false
             }
         ],
-        "url": "WebDevHub"
+        "url": "WebDevHub",
+        "title": "WebDevHub"
     },
     "footer": {
         "has_social": true,
