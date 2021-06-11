@@ -257,7 +257,7 @@
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "Github Pages For This Website",
                 "url": "https://bgoonz.github.io/BGOONZ_BLOG_2.0/",
                 "style": "link",
                 "icon_class": "dev",
