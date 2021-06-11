@@ -4,14 +4,14 @@ sections:
   - section_id: hero
     type: section_hero
     title: I am a musician/electrical engineer turned web developer
-    image: images/3.jpg
+    image: images/sine-wav-bak.gif
     content: "###### **A passionate frontend developer from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
     actions: []
   - section_id: features
     type: section_grid
     col_number: three
     grid_items:
-      - content: "# A Quick Guide To Big O\n\n# ![](/\\_static/app-assets/green-spruce.png)\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n"
+      - content: "#\n\n# A Quick Guide To Big O\n\n[Memoization, Tabulation, and Sorting Algorithms by Example\nWhy is looking at runtime not a reliable method of calculating time complexity? Not all computers are made equal( some may be stronger and therefore boost our runtime speed )The real question we need to answering is:\_How does our performance scale?.](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)\n"
         actions:
           - label: Get Started
             url: /docs
@@ -185,7 +185,7 @@ sections:
           ![](/images/skillz.PNG)
         actions:
           - label: Learn More
-            url: "https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A"
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
       - title: Showcase
         content: |
@@ -233,32 +233,32 @@ sections:
     subtitle: This is an optional description for the call to action block.
     actions:
       - label: Contact Me
-        url: "mailto:bryan.guner@gmail.com"
+        url: 'mailto:bryan.guner@gmail.com'
         style: primary
 seo:
   title: Stackbit Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
   extra:
-    - name: "og:type"
+    - name: 'og:type'
       value: website
       keyName: property
-    - name: "og:title"
+    - name: 'og:title'
       value: Stackbit Web-Dev-HubTheme
       keyName: property
-    - name: "og:description"
+    - name: 'og:description'
       value: The preview of the Web-Dev-Hubtheme
       keyName: property
-    - name: "og:image"
+    - name: 'og:image'
       value: images/4.jpg
       keyName: property
       relativeUrl: true
-    - name: "twitter:card"
+    - name: 'twitter:card'
       value: summary_large_image
-    - name: "twitter:title"
+    - name: 'twitter:title'
       value: Stackbit Web-Dev-HubTheme
-    - name: "twitter:description"
+    - name: 'twitter:description'
       value: The preview of the Web-Dev-Hubtheme
-    - name: "twitter:image"
+    - name: 'twitter:image'
       value: images/4.jpg
       relativeUrl: true
 template: advanced
