@@ -20,7 +20,9 @@ sections:
           ![](/\_static/app-assets/parallel-europa.jpg)
 
 
-          Python Study Guide
+          ### Python Study Guide
+
+
 
           [*Python has a built in help function that let’s you see a description
           of the source code without having to navigate to it… “-SickNasty …
