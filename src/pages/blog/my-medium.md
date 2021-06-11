@@ -2,7 +2,6 @@
 title: Medium Articles
 excerpt: A list of my medium articles!
 date: '2021-05-23'
-thumb_image: images/medium.png
 image: images/medium.png
 seo:
   title: Medium Articles
