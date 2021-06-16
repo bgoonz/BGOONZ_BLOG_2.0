@@ -100,7 +100,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Blog-Navigation",
+                        "label": "Previous-iterations",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
