@@ -37,7 +37,7 @@ sections:
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
         actions:
           - label: Live Site
-            url: '#'
+            url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
             style: link
             icon_class: dev
             new_window: false
