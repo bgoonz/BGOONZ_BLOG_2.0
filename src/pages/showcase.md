@@ -79,7 +79,7 @@ sections:
             url: 'https://learning-redux42.netlify.app/'
             style: icon
             icon_class: dev
-            new_window: false
+            new_window: true
             no_follow: false
             type: action
         type: grid_item
