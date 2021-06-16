@@ -16,7 +16,7 @@ sections:
         image: images/futuristic-mars.gif
         content: >
           [Preview html files by pasting their url into the search
-          bar](https://goofy-perlman-0f61df.netlify.app/)
+          bar](https://githtmlpreview.netlify.app/)
 
 
           Access-Control-Allow-Origin Header When Site A tries to fetch content
