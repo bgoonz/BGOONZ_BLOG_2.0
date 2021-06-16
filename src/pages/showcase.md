@@ -32,6 +32,7 @@ sections:
             new_window: true
             no_follow: false
             type: action
+        image_alt: git html preview
       - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/thoughtful-neptune.PNG
