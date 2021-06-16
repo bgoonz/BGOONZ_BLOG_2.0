@@ -12,10 +12,18 @@ sections:
     col_number: three
     grid_items:
       - title: Git HTML PREVIEW
-        title_url: 'https://themes.stackbit.com/demos/exto/'
+        title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/futuristic-mars.gif
-        content: |
+        content: >+
           Preview html files by pasting their url into the search bar
+
+
+
+
+          load HTML using CORS proxy, then process all links, frames, scripts
+          and styles, and load each of them using CORS proxy, so they can be
+          evaluated by the browser.
+
         actions:
           - label: Git Repo
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
@@ -24,6 +32,7 @@ sections:
             new_window: true
             no_follow: false
             type: action
+        image_alt: git html preview
       - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/thoughtful-neptune.PNG
@@ -33,18 +42,23 @@ sections:
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/3.jpg
-        content: |
+        content: >+
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
+
+
+          #### The idea behind big O notation
+
+
+
+          Big O notation is the language we use for talking about how long an
+          algorithm takes to run. It's how we compare the efficiency of
+          different approaches to a problem.
+
+
+
         actions:
           - label: Live Site
             url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
-            style: link
-            icon_class: dev
-            new_window: false
-            no_follow: false
-            type: action
-          - label: lorem-ipsum
-            url: '#'
             style: link
             icon_class: dev
             new_window: false
