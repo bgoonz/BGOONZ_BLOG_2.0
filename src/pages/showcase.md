@@ -69,7 +69,7 @@ sections:
             new_window: false
             no_follow: false
             type: action
-      - title: lorem-ipsum
+      - title: Learning Redux
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
