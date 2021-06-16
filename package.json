@@ -7,7 +7,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build --prefix-paths",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "pretty": "prettier --write \"./**/*.{jsx,html,css}\"" 
   },
   "dependencies": {
     "@stackbit/gatsby-plugin-menus": "0.0.4",
