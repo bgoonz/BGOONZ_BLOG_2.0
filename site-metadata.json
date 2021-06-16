@@ -240,7 +240,7 @@
             },
             {
                 "label": "Python Practice",
-                "url": "https://github.com/bgoonz/PYTHON_PRAC",
+                "url": "https://py-prac-42.netlify.app/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
