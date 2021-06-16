@@ -13,7 +13,7 @@ sections:
     grid_items:
       - title: Git HTML PREVIEW
         title_url: 'https://themes.stackbit.com/demos/exto/'
-        image: images/git-html-preview.gif
+        image: images/futuristic-mars.gif
         content: |
           Preview html files by pasting their url into the search bar
       - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
