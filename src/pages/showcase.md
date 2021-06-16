@@ -16,6 +16,14 @@ sections:
         image: images/futuristic-mars.gif
         content: |
           Preview html files by pasting their url into the search bar
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
       - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/thoughtful-neptune.PNG
