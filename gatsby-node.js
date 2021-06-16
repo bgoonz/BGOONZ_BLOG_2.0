@@ -29,3 +29,20 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+Copycopy code to clipboard
+// Async/await
+exports.createPages = async () => {
+  // do async work
+  const result = await fetchExternalData()
+}
+// Promise API
+exports.createPages = () => {
+  return new Promise((resolve, reject) => {
+    // do async work
+  })
+}
+// Callback API
+exports.createPages = (_, pluginOptions, cb) => {
+  // do async work
+  cb()
+}
