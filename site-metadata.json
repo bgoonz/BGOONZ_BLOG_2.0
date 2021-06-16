@@ -100,7 +100,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Blog-Navigation",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
