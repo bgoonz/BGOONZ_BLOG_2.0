@@ -1,6 +1,6 @@
 
 ---
-title: Auto Triggered Guitar Effects Using Modified DTW Subsequence Matching
+title:Social Links
 sections: []
 seo:
   title: ''
