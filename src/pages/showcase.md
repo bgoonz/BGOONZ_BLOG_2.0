@@ -17,7 +17,7 @@ sections:
         content: |
           Preview html files by pasting their url into the search bar
         actions:
-          - label: lorem-ipsum
+          - label: Git Repo
             url: '#'
             style: link
             icon_class: dev
