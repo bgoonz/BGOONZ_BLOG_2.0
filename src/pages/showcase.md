@@ -36,7 +36,7 @@ sections:
         content: |
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
         actions:
-          - label: lorem-ipsum
+          - label: Live Site
             url: '#'
             style: link
             icon_class: dev
