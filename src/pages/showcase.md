@@ -13,12 +13,20 @@ sections:
     grid_items:
       - title: Git HTML PREVIEW
         title_url: 'https://themes.stackbit.com/demos/exto/'
-        image: images/git-html-preview.gif
+        image: images/futuristic-mars.gif
         content: |
           Preview html files by pasting their url into the search bar
+        actions:
+          - label: Git Repo
+            url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
+            style: icon
+            icon_class: github
+            new_window: true
+            no_follow: false
+            type: action
       - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-        image: images/pure-data.png
+        image: images/thoughtful-neptune.PNG
         content: >
           Modified subsequence dynamic time warping feature detection using pure
           data implemented in python
