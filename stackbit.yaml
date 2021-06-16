@@ -178,6 +178,8 @@ models:
         label: Seo
       - name: embed
         type: html
+        label: embed-content
+        description: embedded iframe
   advanced:
     type: page
     label: Advanced Page
