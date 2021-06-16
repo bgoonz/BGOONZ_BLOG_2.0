@@ -74,7 +74,14 @@ sections:
         image_alt: lorem-ipsum
         content: |
           ![](/\_static/app-assets/redux.gif)
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
         type: grid_item
       - title: Mihir-Beg-Music.com
         title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
