@@ -14,16 +14,21 @@ sections:
       - title: Git HTML PREVIEW
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/futuristic-mars.gif
-        content: >+
-          Preview html files by pasting their url into the search bar
+        content: >
+          [Preview html files by pasting their url into the search
+          bar](https://githtmlpreview.netlify.app/)
 
 
-
-
-          load HTML using CORS proxy, then process all links, frames, scripts
-          and styles, and load each of them using CORS proxy, so they can be
-          evaluated by the browser.
-
+          Access-Control-Allow-Origin Header When Site A tries to fetch content
+          from Site B, Site B can send an Access-Control-Allow-Origin response
+          header to tell the browser that the content of this page is accessible
+          to certain origins. (An origin is a domain, plus a scheme and port
+          number.) By default, Site B's pages are not accessible to any other
+          origin; using the Access-Control-Allow-Origin header opens a door for
+          cross-origin access by specific requesting origins. The
+          Access-Control-Allow-Origin header is critical to resource security.
+          You can find a description of each CORS header at the following: CORS
+          Headers.
         actions:
           - label: Git Repo
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
@@ -117,16 +122,18 @@ sections:
           - dolor sit amet
         actions: []
         type: grid_item
-      - title: lorem-ipsum
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
-        content: |
-          ### ZUMZI VIDEO CONFRENCING APP
-
-          [home](https://goofy-perlman-0f61df.netlify.app/)
-
-          ![](/\_static/app-assets/zumzi-video-chat.png)
-        actions: []
+      - title: Zumzi Video Conferencing
+        title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
+        image_alt: video chat
+        content: "### ZUMZI VIDEO CONFRENCING APP\n\n[home](https://goofy-perlman-0f61df.netlify.app/)\n\n![](/\\_static/app-assets/zumzi-video-chat.png)\n\n\n\n## Features:&#xA;&#xA;\n\n*   Group Voice and Video Call with unlimited members\n\n*   Live Streaming\n\n*   Screen Sharing\n\n*   Fine control over all video & audio parameters and user permissions\n\n*   Supports video streaming at various resolutions: Standard, HD, FHD and 4K\n\n*   Group Chat\n\n*   One-to-One chat\n\n*   Invite Participants\n\nThere are two sub-folders:\n\n*   **backend**\_contains the source code for hosting the backend APIs for the app\n\n*   **web**\_contains the source code for the app which you can directly integrate into your website.\n"
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
         type: grid_item
 seo:
   title: Showcase
