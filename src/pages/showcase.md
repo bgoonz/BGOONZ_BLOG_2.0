@@ -81,7 +81,7 @@ sections:
         actions: []
         type: grid_item
       - title: Mihir-Beg-Music.com
-        title_url: 'https://mihirbegmusic.netlify.app/'
+        title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
         image: images/top-half-mihir.png
         content: |
           Artist Showcase & Podcasting Site
