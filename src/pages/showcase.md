@@ -35,6 +35,14 @@ sections:
         image: images/data-struc2.gif
         content: |
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
