@@ -72,17 +72,8 @@ sections:
       - title: Learning Redux
         title_url: 'https://learning-redux42.netlify.app/'
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
+        content: |
+          ![](/\_static/app-assets/redux.gif)
         actions: []
         type: grid_item
       - title: Mihir-Beg-Music.com
