@@ -14,8 +14,16 @@ sections:
       - title: Git HTML PREVIEW
         title_url: 'https://themes.stackbit.com/demos/exto/'
         image: images/futuristic-mars.gif
-        content: |
+        content: >+
           Preview html files by pasting their url into the search bar
+
+
+
+
+          load HTML using CORS proxy, then process all links, frames, scripts
+          and styles, and load each of them using CORS proxy, so they can be
+          evaluated by the browser.
+
         actions:
           - label: Git Repo
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
