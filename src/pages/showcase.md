@@ -75,7 +75,7 @@ sections:
         content: |
           ![](/\_static/app-assets/redux.gif)
         actions:
-          - label: lorem-ipsum
+          - label: Website
             url: '#'
             style: link
             icon_class: dev
