@@ -100,7 +100,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Previous-iterations",
+                        "label": "Previous-iteration ",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
