@@ -33,8 +33,7 @@ sections:
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/3.jpg
-        content: |
-          <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
+        content: "<https://github.com/bgoonz/DS-ALGO-OFFICIAL>\n\n\n\n## The idea behind big O notation&#xA;&#xA;\n\n**Big O notation is the language we use for talking about how long an algorithm takes to run**. It's how we compare the efficiency of different approaches to a problem.\n\nWith big O notation we express the runtime in terms of\n\n### how quickly it grows relative to the input, as the input gets arbitrarily large\\_.\n\n1.  **how quickly the runtime grows**—\n\nIt's hard to pin down the\_*exact runtime*\_of an algorithm.\n\n*   It depends on the speed of the processor,\n\n*   what else the computer is running, etc.\n\nSo instead of talking about the runtime directly, we use big O notation to talk about\_*how quickly the runtime grows*.\n\n1.  **relative to the input**—If we were measuring our runtime directly,\n\nwe could express our speed in seconds. Since we're measuring\_*how quickly our runtime grows*, we need to express our speed in terms of...something else. With Big O notation, we use the size of the input, which we call \"n.\" So we can say things like the runtime grows \"on the order of the size of the input\" () or \"on the order of the square of the size of the input\" ().\n\n"
         actions:
           - label: Live Site
             url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
