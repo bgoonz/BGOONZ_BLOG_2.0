@@ -18,7 +18,7 @@ sections:
           Preview html files by pasting their url into the search bar
       - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-        image: images/pure-data.png
+        image: images/thoughtful-neptune.PNG
         content: >
           Modified subsequence dynamic time warping feature detection using pure
           data implemented in python
