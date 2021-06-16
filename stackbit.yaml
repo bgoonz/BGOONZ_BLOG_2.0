@@ -176,7 +176,7 @@ models:
         models:
           - stackbit_page_meta
         label: Seo
-      - name: ''
+      - name: embed
         type: string
   advanced:
     type: page
