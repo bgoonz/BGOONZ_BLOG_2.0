@@ -32,7 +32,7 @@ sections:
           data implemented in python
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
-        image: images/data-struc2.gif
+        image: images/3.jpg
         content: |
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
         actions:
