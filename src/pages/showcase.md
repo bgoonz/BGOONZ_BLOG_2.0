@@ -119,7 +119,7 @@ sections:
         type: grid_item
       - title: Zumzi Video Conferencing
         title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
-        image_alt: lorem-ipsum
+        image_alt: video chat
         content: |
           ### ZUMZI VIDEO CONFRENCING APP
 
