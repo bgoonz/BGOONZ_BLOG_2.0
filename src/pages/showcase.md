@@ -18,7 +18,7 @@ sections:
           Preview html files by pasting their url into the search bar
         actions:
           - label: Git Repo
-            url: '#'
+            url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
             style: link
             icon_class: dev
             new_window: false
