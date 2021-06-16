@@ -66,17 +66,12 @@ sections:
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: |+
-          # ZUMZI VIDEO CONFRENCING APP
-
-
+        content: |
+          ### ZUMZI VIDEO CONFRENCING APP
 
           [home](https://goofy-perlman-0f61df.netlify.app/)
 
-
-
           ![](/\_static/app-assets/zumzi-video-chat.png)
-
         actions: []
         type: grid_item
 seo:
