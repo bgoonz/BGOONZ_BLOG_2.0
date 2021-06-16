@@ -177,7 +177,7 @@ models:
           - stackbit_page_meta
         label: Seo
       - name: embed
-        type: string
+        type: html
   advanced:
     type: page
     label: Advanced Page
