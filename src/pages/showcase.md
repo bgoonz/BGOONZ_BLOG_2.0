@@ -72,8 +72,7 @@ sections:
       - title: Learning Redux
         title_url: 'https://learning-redux42.netlify.app/'
         image_alt: lorem-ipsum
-        content: |
-          ![](/\_static/app-assets/redux.gif)
+        content: "![](/\\_static/app-assets/redux.gif)\n\n###### Provider&#xA;&#xA;React Redux includes a\_\\<Provider />\_component, which makes the Redux store available to the rest of your app:\n\n###### Hooks\n\nReact Redux provides a pair of custom React hooks that allow your React components to interact with the Redux store.\n\nuseSelector\_reads a value from the store state and subscribes to updates, while\_useDispatch\_returns the store's\_dispatch\_method to let you dispatch actions.\n\n##\n"
         actions:
           - label: Website
             url: 'https://learning-redux42.netlify.app/'
