@@ -1,6 +1,6 @@
 
 ---
-title:Social Links
+title: Social Links
 sections: []
 seo:
   title: ''
