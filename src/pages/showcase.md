@@ -35,6 +35,37 @@ sections:
         image: images/data-struc2.gif
         content: |
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
+        actions:
+          - label: Live Site
+            url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
+      - title: lorem-ipsum
+        title_url: lorem-ipsum
+        image_alt: lorem-ipsum
+        content: >-
+          ## Lorem ipsum
+
+
+          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+          - Lorem ipsum
+
+          - dolor sit amet
+        actions: []
+        type: grid_item
       - title: Mihir-Beg-Music.com
         title_url: 'https://mihirbegmusic.netlify.app/'
         image: images/mihir2.gif
