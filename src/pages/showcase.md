@@ -70,7 +70,7 @@ sections:
             no_follow: false
             type: action
       - title: Learning Redux
-        title_url: lorem-ipsum
+        title_url: 'https://learning-redux42.netlify.app/'
         image_alt: lorem-ipsum
         content: >-
           ## Lorem ipsum
