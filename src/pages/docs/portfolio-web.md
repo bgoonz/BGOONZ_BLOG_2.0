@@ -25,4 +25,4 @@ excerpt: My Porjects
 ---
 # Portfolio:
 
-\<iframe src="https://bg-portfolio.netlify.app/" width="1186px" height="691px" frameborder="0">This is an embedded \<a target="\_blank" href="https://office.com">Microsoft Office\</a> presentation, powered by \<a target="\_blank" href="https://office.com/webapps">Office\</a>.\</iframe>
+\<iframe src="https://bg-portfolio.netlify.app/" width="1000px" height="891px" frameborder="0">\</iframe>
