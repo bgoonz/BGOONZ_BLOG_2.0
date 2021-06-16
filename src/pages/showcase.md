@@ -20,7 +20,7 @@ sections:
           - label: Git Repo
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
             style: icon
-            icon_class: dev
+            icon_class: github
             new_window: false
             no_follow: false
             type: action
