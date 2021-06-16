@@ -21,6 +21,7 @@ seo:
     - name: 'twitter:description'
       value: This is the Portfolio page
 template: docs
+excerpt: My Porjects
 ---
 
 # Portfolio:
