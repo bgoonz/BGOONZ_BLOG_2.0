@@ -117,7 +117,7 @@ sections:
           - dolor sit amet
         actions: []
         type: grid_item
-      - title: lorem-ipsum
+      - title: Zumzi Video Confrencing
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: |
