@@ -69,21 +69,19 @@ sections:
             new_window: false
             no_follow: false
             type: action
-      - title: lorem-ipsum
-        title_url: lorem-ipsum
+      - title: Learning Redux
+        title_url: 'https://learning-redux42.netlify.app/'
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
-        actions: []
+        content: |
+          ![](/\_static/app-assets/redux.gif)
+        actions:
+          - label: Website
+            url: 'https://learning-redux42.netlify.app/'
+            style: icon
+            icon_class: dev
+            new_window: true
+            no_follow: false
+            type: action
         type: grid_item
       - title: Mihir-Beg-Music.com
         title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
