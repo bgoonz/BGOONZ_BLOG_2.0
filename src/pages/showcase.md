@@ -77,7 +77,7 @@ sections:
         actions:
           - label: Website
             url: 'https://learning-redux42.netlify.app/'
-            style: link
+            style: icon
             icon_class: dev
             new_window: false
             no_follow: false
