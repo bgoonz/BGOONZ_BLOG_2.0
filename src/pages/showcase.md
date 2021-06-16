@@ -21,7 +21,7 @@ sections:
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
             style: icon
             icon_class: github
-            new_window: false
+            new_window: true
             no_follow: false
             type: action
       - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
