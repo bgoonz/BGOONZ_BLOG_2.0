@@ -120,12 +120,7 @@ sections:
       - title: Zumzi Video Conferencing
         title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
         image_alt: video chat
-        content: |
-          ### ZUMZI VIDEO CONFRENCING APP
-
-          [home](https://goofy-perlman-0f61df.netlify.app/)
-
-          ![](/\_static/app-assets/zumzi-video-chat.png)
+        content: "### ZUMZI VIDEO CONFRENCING APP\n\n[home](https://goofy-perlman-0f61df.netlify.app/)\n\n![](/\\_static/app-assets/zumzi-video-chat.png)\n\n\n\n## Features:&#xA;&#xA;\n\n*   Group Voice and Video Call with unlimited members\n\n*   Live Streaming\n\n*   Screen Sharing\n\n*   Fine control over all video & audio parameters and user permissions\n\n*   Supports video streaming at various resolutions: Standard, HD, FHD and 4K\n\n*   Group Chat\n\n*   One-to-One chat\n\n*   Invite Participants\n\nThere are two sub-folders:\n\n*   **backend**\_contains the source code for hosting the backend APIs for the app\n\n*   **web**\_contains the source code for the app which you can directly integrate into your website.\n"
         actions:
           - label: lorem-ipsum
             url: '#'
