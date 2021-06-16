@@ -14,15 +14,8 @@ sections:
       - title: Git HTML PREVIEW
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/futuristic-mars.gif
-        content: >+
+        content: >
           Preview html files by pasting their url into the search bar
-
-
-          load HTML using CORS proxy, then process all links, frames, scripts
-          and styles, and load each of them using CORS proxy, so they can be
-          evaluated by the browser.
-
-
 
 
           Access-Control-Allow-Origin Header When Site A tries to fetch content
@@ -35,7 +28,6 @@ sections:
           Access-Control-Allow-Origin header is critical to resource security.
           You can find a description of each CORS header at the following: CORS
           Headers.
-
         actions:
           - label: Git Repo
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
