@@ -126,7 +126,14 @@ sections:
           [home](https://goofy-perlman-0f61df.netlify.app/)
 
           ![](/\_static/app-assets/zumzi-video-chat.png)
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
         type: grid_item
 seo:
   title: Showcase
