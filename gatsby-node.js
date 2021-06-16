@@ -29,7 +29,6 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
-Copycopy code to clipboard
 // Async/await
 exports.createPages = async () => {
   // do async work
