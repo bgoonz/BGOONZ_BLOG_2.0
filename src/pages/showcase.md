@@ -76,7 +76,7 @@ sections:
           ![](/\_static/app-assets/redux.gif)
         actions:
           - label: Website
-            url: '#'
+            url: 'https://learning-redux42.netlify.app/'
             style: link
             icon_class: dev
             new_window: false
