@@ -82,7 +82,7 @@ sections:
         type: grid_item
       - title: Mihir-Beg-Music.com
         title_url: 'https://mihirbegmusic.netlify.app/'
-        image: images/mihir2.gif
+        image: images/top-half-mihir.png
         content: Medium inspired blogging theme for Unibit
       - title: lorem-ipsum
         title_url: lorem-ipsum
