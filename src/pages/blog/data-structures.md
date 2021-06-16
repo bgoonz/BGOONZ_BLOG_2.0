@@ -13,6 +13,6 @@ seo:
 template: post
 image: images/dtw.jpg
 ---
-## Lorem ipsum
+## Data Structures & Algorithms
 
 [DS Algo Codebase](https://github.com/bgoonz/Data-Structures-Algos-Codebase)
