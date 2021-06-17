@@ -66,6 +66,7 @@ sections:
         actions: []
         type: grid_item
         image: images/pleasant-birch.png
+        title: Scope & Closure
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
