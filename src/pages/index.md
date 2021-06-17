@@ -77,6 +77,8 @@ sections:
         type: grid_item
         title: My Medium Blog
         image: images/curious-mustard.png
+        title_url: >-
+          https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
