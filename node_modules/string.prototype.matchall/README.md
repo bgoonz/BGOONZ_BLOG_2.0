@@ -1,5 +1,7 @@
 # string.prototype.matchall <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
+[![github actions][actions-image]][actions-url]
+[![coverage][codecov-image]][codecov-url]
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
@@ -7,11 +9,9 @@
 
 [![npm badge][npm-badge-png]][package-url]
 
-[![browser support][testling-svg]][testling-url]
+ES2020 spec-compliant shim for String.prototype.matchAll. Invoke its "shim" method to shim `String.prototype.matchAll` if it is unavailable or noncompliant.
 
-ES Proposal spec-compliant shim for String.prototype.matchAll. Invoke its "shim" method to shim `String.prototype.matchAll` if it is unavailable or noncompliant.
-
-This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment, and complies with the [proposed spec](https://github.com/tc39/proposal-string-matchall).
+This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment, and complies with the [spec](https://tc39.es/ecma262/#sec-string.prototype.matchall).
 
 Most common usage:
 ```js
@@ -64,10 +64,12 @@ Simply clone the repo, `npm install`, and run `npm test`
 [deps-url]: https://david-dm.org/es-shims/String.prototype.matchAll
 [dev-deps-svg]: https://david-dm.org/es-shims/String.prototype.matchAll/dev-status.svg
 [dev-deps-url]: https://david-dm.org/es-shims/String.prototype.matchAll#info=devDependencies
-[testling-svg]: https://ci.testling.com/es-shims/String.prototype.matchAll.png
-[testling-url]: https://ci.testling.com/es-shims/String.prototype.matchAll
 [npm-badge-png]: https://nodei.co/npm/string.prototype.matchall.png?downloads=true&stars=true
 [license-image]: https://img.shields.io/npm/l/string.prototype.matchall.svg
 [license-url]: LICENSE
 [downloads-image]: https://img.shields.io/npm/dm/string.prototype.matchall.svg
 [downloads-url]: https://npm-stat.com/charts.html?package=string.prototype.matchall
+[codecov-image]: https://codecov.io/gh/es-shims/String.prototype.matchAll/branch/main/graphs/badge.svg
+[codecov-url]: https://app.codecov.io/gh/es-shims/String.prototype.matchAll/
+[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/es-shims/String.prototype.matchAll
+[actions-url]: https://github.com/es-shims/String.prototype.matchAll/actions

@@ -147,6 +147,12 @@ console.log(isSsh("http://host.xz/path/to/repo.git/"));
 console.log(isSsh("https://host.xz/path/to/repo.git/"));
 // false
 
+console.log(isSsh("http://host.xz:8000/path/to/repo.git/"))
+// false
+
+console.log(isSsh("https://host.xz:8000/path/to/repo.git/"))
+// false
+
 // Local (Filesystem) Transport Protocol
 console.log(isSsh("/path/to/repo.git/"));
 // false
@@ -258,8 +264,8 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `parse-path`
  - `git-up`
  - `nodegit-clone`
- - `bb-git-up`
  - `bb-parse-url`
+ - `bb-git-up`
  - `normalize-ssh`
  - `xl-git-up`
  - `@hawkingnetwork/react-native-tab-view`
@@ -268,6 +274,24 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `@apardellass/react-native-audio-stream`
  - `l2forlerna`
  - `react-native-plugpag-wrapper`
+ - `react-native-pulsator-native`
+ - `react-native-kakao-maps`
+ - `@geeky-apo/react-native-advanced-clipboard`
+ - `native-apple-login`
+ - `native-google-login`
+ - `@hemith/react-native-tnk`
+ - `react-native-contact-list`
+ - `@corelmax/react-native-my2c2p-sdk`
+ - `clonit`
+ - `react-native-responsive-size`
+ - `react-native-test-module-hhh`
+ - `react-native-is7`
+ - `@buganto/client`
+ - `@datalogic/react-native-datalogic-module`
+ - `birken-react-native-community-image-editor`
+ - `@lakutata/core`
+ - `react-native-flyy`
+ - `native-kakao-login`
 
 
 

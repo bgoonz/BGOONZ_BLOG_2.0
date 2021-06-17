@@ -1,3 +1,13 @@
+4.0.5 / 2021-05-25
+==================
+  * [Refactor] use `get-intrinsic` directly
+  * [readme] update badges, spec year
+  * [Deps] update `es-abstract`, `has-symbols`
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `object-inspect`, `tape`
+  * [meta] use `prepublishOnly` script for npm 7+
+  * [actions] update workflows
+  * [actions] use `node/install` instead of `node/run`; use `codecov` action
+
 4.0.4 / 2021-02-21
 ==================
   * [readme] fix repo URLs; remove travis badge
