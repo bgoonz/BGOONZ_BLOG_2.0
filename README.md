@@ -4,7 +4,7 @@
 
 <div align="center">
 
-### [WEBSITE](https://best-celery-b2d7c.netlify.app/)
+### [WEBSITE](https://bgoonz-blog.netlify.app/)
 
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
