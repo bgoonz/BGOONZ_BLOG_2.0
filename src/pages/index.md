@@ -46,7 +46,7 @@ sections:
           - label: Learn More
             url: /style-guide
             style: link
-        title: 'Guitar Effects '
+        title: Guitar Effects Triggering w DTW
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
