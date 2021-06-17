@@ -109,7 +109,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Medium Articles",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
