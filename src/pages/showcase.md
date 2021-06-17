@@ -64,7 +64,9 @@ sections:
       - title: Learning Redux
         title_url: 'https://learning-redux42.netlify.app/'
         image_alt: lorem-ipsum
-        content: "\n\n###### *React Redux provides a pair of custom React hooks that allow your React components to interact with the Redux store.*\n\n###### *useSelector\_reads a value from the store state and subscribes to updates, while\_useDispatch\_returns the store's\_dispatch\_method to let you dispatch actions.*\n"
+        content: >
+          ###### *React Redux provides a pair of custom React hooks that allow
+          your React components to interact with the Redux store.*
         actions:
           - label: Website
             url: 'https://learning-redux42.netlify.app/'
