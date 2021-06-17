@@ -116,27 +116,10 @@ sections:
           ## Features:&#xA;Group Voice and Video Call with unlimited members
 
 
-          *   Live Streaming
-
-
-          *   Screen Sharing
-
-
-          *   Fine control over all video & audio parameters and user
-          permissions
-
-
-          *   Supports video streaming at various resolutions: Standard, HD, FHD
-          and 4K
-
-
-          *   Group Chat
-
-
-          *   One-to-One chat
-
-
-          *   Invite Participants
+          **Live Streaming, Screen Sharing, Fine control over all video & audio
+          parameters and user permissions, Supports video streaming at various
+          resolutions: Standard, HD, FHD and 4K, Group Chat, One-to-One chat,
+          Invite Participants**
         actions:
           - label: lorem-ipsum
             url: '#'
