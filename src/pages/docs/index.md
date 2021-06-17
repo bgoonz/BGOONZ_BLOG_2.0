@@ -21,7 +21,7 @@ seo:
       value: Docs Home
 template: docs
 weight: 900
-excerpt: docs
+excerpt: docs quick reference
 ---
 [/blog/](https://bgoonz-blog.netlify.app/blog/)
 
