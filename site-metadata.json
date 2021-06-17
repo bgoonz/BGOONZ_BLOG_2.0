@@ -249,7 +249,7 @@
                 "type": "action"
             },
             {
-                "label": "Python Practice",
+                "label": "Python",
                 "url": "https://github.com/bgoonz/PYTHON_PRAC",
                 "style": "primary",
                 "icon_class": "dev",
