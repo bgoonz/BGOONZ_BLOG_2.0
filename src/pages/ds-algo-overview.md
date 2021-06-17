@@ -1,50 +1,51 @@
 ---
 title: ds-algo-Overview
 sections:
-  - section_id: hero
-    type: section_hero
-    title: ds-algo-Overview
-    image: images/5.jpg
-    content: An optional subtitle
-  - section_id: docs-ds-algo-Overview
-    type: section_docs
-    col_number: three
-  - section_id: cta
-    type: section_cta
-    title: The Title of The Call to Action Block
-    subtitle: This is an optional description for the call to action block.
-    actions:
-      - label: Get Started
-        url: /docs/getting-started
-        style: primary
+    - section_id: hero
+      type: section_hero
+      title: ds-algo-Overview
+      image: images/5.jpg
+      content: An optional subtitle
+    - section_id: docs-ds-algo-Overview
+      type: section_docs
+      col_number: three
+    - section_id: cta
+      type: section_cta
+      title: The Title of The Call to Action Block
+      subtitle: This is an optional description for the call to action block.
+      actions:
+          - label: Get Started
+            url: /docs/getting-started
+            style: primary
 seo:
-  title: ds-algo-Overview
-  description: This is the ds-algo-Overview page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: ds-algo-Overview
-      keyName: property
-    - name: 'og:description'
-      value: This is the ds-algo-Overview page
-      keyName: property
-    - name: 'og:image'
-      value: images/5.jpg
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:card'
-      value: summary_large_image
-    - name: 'twitter:title'
-      value: ds-algo-Overview
-    - name: 'twitter:description'
-      value: This is the ds-algo-Overview page
-    - name: 'twitter:image'
-      value: images/5.jpg
-      relativeUrl: true
+    title: ds-algo-Overview
+    description: This is the ds-algo-Overview page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: ds-algo-Overview
+          keyName: property
+        - name: 'og:description'
+          value: This is the ds-algo-Overview page
+          keyName: property
+        - name: 'og:image'
+          value: images/5.jpg
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: summary_large_image
+        - name: 'twitter:title'
+          value: ds-algo-Overview
+        - name: 'twitter:description'
+          value: This is the ds-algo-Overview page
+        - name: 'twitter:image'
+          value: images/5.jpg
+          relativeUrl: true
 template: advanced
 ---
+
 # Fundamental Data Structures In JavaScript
 
 Fundamental Data Structures In JavaScript
@@ -63,85 +64,85 @@ Here's the repo that the website is built on:
 
 ### Videos
 
-- [Abdul Bari: YouTubeChannel for Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=2&t=0s)
+-   [Abdul Bari: YouTubeChannel for Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=2&t=0s)
 
-- [Data Structures and algorithms](https://www.youtube.com/watch?v=lxja8wBwN0k&list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s)
+-   [Data Structures and algorithms](https://www.youtube.com/watch?v=lxja8wBwN0k&list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s)
 
-- [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
+-   [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
 
-- [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
+-   [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
 
-- [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
+-   [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
 
-- [MIT 6.006: Intro to Algorithms(2011)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+-   [MIT 6.006: Intro to Algorithms(2011)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
-- [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
+-   [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
 
 ### Books
 
-- [Introduction to Algorithms](https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
+-   [Introduction to Algorithms](https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
 
-- [Competitive Programming 3](http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf) by Steven Halim and Felix Halim
+-   [Competitive Programming 3](http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf) by Steven Halim and Felix Halim
 
-- [Competitive Programmers Hand Book](https://cses.fi/book/book.pdf) Beginner friendly hand book for competitive programmers.
+-   [Competitive Programmers Hand Book](https://cses.fi/book/book.pdf) Beginner friendly hand book for competitive programmers.
 
-- [Data Structures and Algorithms Made Easy](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf) by Narasimha Karumanchi
+-   [Data Structures and Algorithms Made Easy](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf) by Narasimha Karumanchi
 
-- [Learning Algorithms Through Programming and Puzzle Solving](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf) by Alexander Kulikov and Pavel Pevzner
+-   [Learning Algorithms Through Programming and Puzzle Solving](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf) by Alexander Kulikov and Pavel Pevzner
 
 ### Coding practice
 
-- [LeetCode](https://leetcode.com/)
+-   [LeetCode](https://leetcode.com/)
 
-- [InterviewBit](https://www.interviewbit.com/)
+-   [InterviewBit](https://www.interviewbit.com/)
 
-- [Codility](https://codility.com/)
+-   [Codility](https://codility.com/)
 
-- [HackerRank](https://www.hackerrank.com/)
+-   [HackerRank](https://www.hackerrank.com/)
 
-- [Project Euler](https://projecteuler.net/)
+-   [Project Euler](https://projecteuler.net/)
 
-- [Spoj](https://spoj.com/)
+-   [Spoj](https://spoj.com/)
 
-- [Google Code Jam practice problems](https://code.google.com/codejam/contests.html)
+-   [Google Code Jam practice problems](https://code.google.com/codejam/contests.html)
 
-- [HackerEarth](https://www.hackerearth.com/)
+-   [HackerEarth](https://www.hackerearth.com/)
 
-- [Top Coder](https://www.topcoder.com/)
+-   [Top Coder](https://www.topcoder.com/)
 
-- [CodeChef](https://www.codechef.com/)
+-   [CodeChef](https://www.codechef.com/)
 
-- [Codewars](https://www.codewars.com/)
+-   [Codewars](https://www.codewars.com/)
 
-- [CodeSignal](https://codesignal.com/)
+-   [CodeSignal](https://codesignal.com/)
 
-- [CodeKata](http://codekata.com/)
+-   [CodeKata](http://codekata.com/)
 
-- [Firecode](https://www.firecode.io/)
+-   [Firecode](https://www.firecode.io/)
 
 ### Courses
 
-- [Master the Coding Interview: Big Tech (FAANG) Interviews](https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep) Course by Andrei and his team.
+-   [Master the Coding Interview: Big Tech (FAANG) Interviews](https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep) Course by Andrei and his team.
 
-- [Common Python Data Structures](https://realpython.com/python-data-structures) Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.
+-   [Common Python Data Structures](https://realpython.com/python-data-structures) Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.
 
-- [Fork CPP](https://www.geeksforgeeks.org/fork-cpp-course-structure) A good course for beginners.
+-   [Fork CPP](https://www.geeksforgeeks.org/fork-cpp-course-structure) A good course for beginners.
 
-- [EDU](https://codeforces.com/edu/course/2) Advanced course.
+-   [EDU](https://codeforces.com/edu/course/2) Advanced course.
 
-- [C++ For Programmers](https://www.udacity.com/course/c-for-programmers--ud210) Learn features and constructs for C++.
+-   [C++ For Programmers](https://www.udacity.com/course/c-for-programmers--ud210) Learn features and constructs for C++.
 
 ### Guides
 
-- [GeeksForGeeks — A CS portal for geeks](http://www.geeksforgeeks.org/)
+-   [GeeksForGeeks — A CS portal for geeks](http://www.geeksforgeeks.org/)
 
-- [Learneroo — Algorithms](https://www.learneroo.com/subjects/8)
+-   [Learneroo — Algorithms](https://www.learneroo.com/subjects/8)
 
-- [Top Coder tutorials](http://www.topcoder.com/tc?d1=tutorials&d2=alg_index&module=Static)
+-   [Top Coder tutorials](http://www.topcoder.com/tc?d1=tutorials&d2=alg_index&module=Static)
 
-- [Infoarena training path](http://www.infoarena.ro/training-path) (RO)
+-   [Infoarena training path](http://www.infoarena.ro/training-path) (RO)
 
-- Steven & Felix Halim — [Increasing the Lower Bound of Programming Contests](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=118) (UVA Online Judge)
+-   Steven & Felix Halim — [Increasing the Lower Bound of Programming Contests](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=118) (UVA Online Judge)
 
 ## **_space_**
 
@@ -159,11 +160,11 @@ Here's the repo that the website is built on:
 
 > _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
-- **The best-case complexity: when the data looks the best**
+-   **The best-case complexity: when the data looks the best**
 
-- **The worst-case complexity: when the data looks the worst**
+-   **The worst-case complexity: when the data looks the worst**
 
-- **The average-case complexity: when the data looks average**
+-   **The average-case complexity: when the data looks average**
 
 ## Big O notation
 
@@ -187,38 +188,38 @@ O(1) O(n) O(1) O(n)
 
 ```js
 class ArrayADT {
-  constructor() {
-    this.array = [];
-  }
-
-  add(data) {
-    this.array.push(data);
-  }
-
-  remove(data) {
-    this.array = this.array.filter((current) => current !== data);
-  }
-
-  search(data) {
-    const foundIndex = this.array.indexOf(data);
-    if (foundIndex === -1) {
-      return foundIndex;
+    constructor() {
+        this.array = [];
     }
 
-    return null;
-  }
+    add(data) {
+        this.array.push(data);
+    }
 
-  getAtIndex(index) {
-    return this.array[index];
-  }
+    remove(data) {
+        this.array = this.array.filter((current) => current !== data);
+    }
 
-  length() {
-    return this.array.length;
-  }
+    search(data) {
+        const foundIndex = this.array.indexOf(data);
+        if (foundIndex === -1) {
+            return foundIndex;
+        }
 
-  print() {
-    console.log(this.array.join(' '));
-  }
+        return null;
+    }
+
+    getAtIndex(index) {
+        return this.array[index];
+    }
+
+    length() {
+        return this.array.length;
+    }
+
+    print() {
+        console.log(this.array.join(' '));
+    }
 }
 
 const array = new ArrayADT();
@@ -228,14 +229,7 @@ console.log('-------------------------------');
 console.log('array.add(1): ', array.add(1));
 array.add(3);
 array.add(4);
-console.log(
-  'array.add(2);: ',
-  array.add(2),
-  'array.add(3);',
-  array.add(3),
-  'array.add(4); ',
-  array.add(4)
-);
+console.log('array.add(2);: ', array.add(2), 'array.add(3);', array.add(3), 'array.add(4); ', array.add(4));
 
 console.log('-------------------------------');
 array.print();
@@ -391,10 +385,10 @@ The main difference is that object's "index" need not be numbers and is not nece
 // 16. Creating an Object
 
 let newObj = {
-  name: "I'm an object",
-  values: [1, 10, 11, 20],
-  others: '',
-  '1property': 'example of property name starting with digit',
+    name: "I'm an object",
+    values: [1, 10, 11, 20],
+    others: '',
+    '1property': 'example of property name starting with digit'
 };
 
 // 17. Figure out what keys/properties are in an object
@@ -412,7 +406,7 @@ console.log(Object.values(newObj));
 
 // 19. Show all key and values of the object
 for (let [key, value] of Object.entries(newObj)) {
-  console.log(`${key}: ${value}`);
+    console.log(`${key}: ${value}`);
 }
 // Results:
 // name: I'm an object
@@ -431,7 +425,7 @@ console.log(newObj['1property']);
 
 // 21. Adding a Method to an Object
 newObj.helloWorld = function () {
-  console.log('Hello World from inside an object!');
+    console.log('Hello World from inside an object!');
 };
 
 // 22. Invoking an Object's Method
@@ -454,64 +448,58 @@ Complexity
 Average
 Access Search Insertion Deletion
 
-- O(1) O(1) O(1)
-  > _The code_
+-   O(1) O(1) O(1)
+    > _The code_
 
 Note, here I am storing another object for every hash in my Hash Table.
 
 ```js
 class HashTable {
-  constructor(size) {
-    this.values = {};
-    this.numberOfValues = 0;
-    this.size = size;
-  }
-  add(key, value) {
-    let hash = this.calculateHash(key);
-    if (!this.values.hasOwnProperty(hash)) {
-      this.values[hash] = {};
+    constructor(size) {
+        this.values = {};
+        this.numberOfValues = 0;
+        this.size = size;
     }
-    if (!this.values[hash].hasOwnProperty(key)) {
-      this.numberOfValues++;
+    add(key, value) {
+        let hash = this.calculateHash(key);
+        if (!this.values.hasOwnProperty(hash)) {
+            this.values[hash] = {};
+        }
+        if (!this.values[hash].hasOwnProperty(key)) {
+            this.numberOfValues++;
+        }
+        this.values[hash][key] = value;
     }
-    this.values[hash][key] = value;
-  }
-  remove(key) {
-    let hash = this.calculateHash(key);
-    if (
-      this.values.hasOwnProperty(hash) &&
-      this.values[hash].hasOwnProperty(key)
-    ) {
-      delete this.values[hash][key];
-      this.numberOfValues--;
+    remove(key) {
+        let hash = this.calculateHash(key);
+        if (this.values.hasOwnProperty(hash) && this.values[hash].hasOwnProperty(key)) {
+            delete this.values[hash][key];
+            this.numberOfValues--;
+        }
     }
-  }
-  calculateHash(key) {
-    return key.toString().length % this.size;
-  }
-  search(key) {
-    let hash = this.calculateHash(key);
-    if (
-      this.values.hasOwnProperty(hash) &&
-      this.values[hash].hasOwnProperty(key)
-    ) {
-      return this.values[hash][key];
-    } else {
-      return null;
+    calculateHash(key) {
+        return key.toString().length % this.size;
     }
-  }
-  length() {
-    return this.numberOfValues;
-  }
-  print() {
-    let string = '';
-    for (let value in this.values) {
-      for (let key in this.values[value]) {
-        string += this.values[value][key] + ' ';
-      }
+    search(key) {
+        let hash = this.calculateHash(key);
+        if (this.values.hasOwnProperty(hash) && this.values[hash].hasOwnProperty(key)) {
+            return this.values[hash][key];
+        } else {
+            return null;
+        }
     }
-    console.log(string.trim());
-  }
+    length() {
+        return this.numberOfValues;
+    }
+    print() {
+        let string = '';
+        for (let value in this.values) {
+            for (let key in this.values[value]) {
+                string += this.values[value][key] + ' ';
+            }
+        }
+        console.log(string.trim());
+    }
 }
 let hashTable = new HashTable(3);
 hashTable.add('first', 1);
@@ -561,51 +549,51 @@ newSet.delete(1); // Set["text"]
 
 // 27. Set Operations: isSuperSet
 function isSuperset(set, subset) {
-  for (let elem of subset) {
-    if (!set.has(elem)) {
-      return false;
+    for (let elem of subset) {
+        if (!set.has(elem)) {
+            return false;
+        }
     }
-  }
-  return true;
+    return true;
 }
 // 28. Set Operations: union
 function union(setA, setB) {
-  let _union = new Set(setA);
-  for (let elem of setB) {
-    _union.add(elem);
-  }
-  return _union;
+    let _union = new Set(setA);
+    for (let elem of setB) {
+        _union.add(elem);
+    }
+    return _union;
 }
 
 // 29. Set Operations: intersection
 function intersection(setA, setB) {
-  let _intersection = new Set();
-  for (let elem of setB) {
-    if (setA.has(elem)) {
-      _intersection.add(elem);
+    let _intersection = new Set();
+    for (let elem of setB) {
+        if (setA.has(elem)) {
+            _intersection.add(elem);
+        }
     }
-  }
-  return _intersection;
+    return _intersection;
 }
 // 30. Set Operations: symmetricDifference
 function symmetricDifference(setA, setB) {
-  let _difference = new Set(setA);
-  for (let elem of setB) {
-    if (_difference.has(elem)) {
-      _difference.delete(elem);
-    } else {
-      _difference.add(elem);
+    let _difference = new Set(setA);
+    for (let elem of setB) {
+        if (_difference.has(elem)) {
+            _difference.delete(elem);
+        } else {
+            _difference.add(elem);
+        }
     }
-  }
-  return _difference;
+    return _difference;
 }
 // 31. Set Operations: difference
 function difference(setA, setB) {
-  let _difference = new Set(setA);
-  for (let elem of setB) {
-    _difference.delete(elem);
-  }
-  return _difference;
+    let _difference = new Set(setA);
+    for (let elem of setB) {
+        _difference.delete(elem);
+    }
+    return _difference;
 }
 
 // Examples
@@ -632,69 +620,69 @@ Complexity
 Average
 Access Search Insertion Deletion
 
-- O(n) O(n) O(n)
-  > _The code_
+-   O(n) O(n) O(n)
+    > _The code_
 
 ```js
 function Set() {
-  this.values = [];
-  this.numberOfValues = 0;
+    this.values = [];
+    this.numberOfValues = 0;
 }
 
 Set.prototype.add = function (value) {
-  if (!~this.values.indexOf(value)) {
-    this.values.push(value);
-    this.numberOfValues++;
-  }
+    if (!~this.values.indexOf(value)) {
+        this.values.push(value);
+        this.numberOfValues++;
+    }
 };
 Set.prototype.remove = function (value) {
-  let index = this.values.indexOf(value);
-  if (~index) {
-    this.values.splice(index, 1);
-    this.numberOfValues--;
-  }
+    let index = this.values.indexOf(value);
+    if (~index) {
+        this.values.splice(index, 1);
+        this.numberOfValues--;
+    }
 };
 Set.prototype.contains = function (value) {
-  return this.values.indexOf(value) !== -1;
+    return this.values.indexOf(value) !== -1;
 };
 Set.prototype.union = function (set) {
-  let newSet = new Set();
-  set.values.forEach(function (value) {
-    newSet.add(value);
-  });
-  this.values.forEach(function (value) {
-    newSet.add(value);
-  });
-  return newSet;
+    let newSet = new Set();
+    set.values.forEach(function (value) {
+        newSet.add(value);
+    });
+    this.values.forEach(function (value) {
+        newSet.add(value);
+    });
+    return newSet;
 };
 Set.prototype.intersect = function (set) {
-  let newSet = new Set();
-  this.values.forEach(function (value) {
-    if (set.contains(value)) {
-      newSet.add(value);
-    }
-  });
-  return newSet;
+    let newSet = new Set();
+    this.values.forEach(function (value) {
+        if (set.contains(value)) {
+            newSet.add(value);
+        }
+    });
+    return newSet;
 };
 Set.prototype.difference = function (set) {
-  let newSet = new Set();
-  this.values.forEach(function (value) {
-    if (!set.contains(value)) {
-      newSet.add(value);
-    }
-  });
-  return newSet;
+    let newSet = new Set();
+    this.values.forEach(function (value) {
+        if (!set.contains(value)) {
+            newSet.add(value);
+        }
+    });
+    return newSet;
 };
 Set.prototype.isSubset = function (set) {
-  return set.values.every(function (value) {
-    return this.contains(value);
-  }, this);
+    return set.values.every(function (value) {
+        return this.contains(value);
+    }, this);
 };
 Set.prototype.length = function () {
-  return this.numberOfValues;
+    return this.numberOfValues;
 };
 Set.prototype.print = function () {
-  console.log(this.values.join(' '));
+    console.log(this.values.join(' '));
 };
 
 let set = new Set();
@@ -747,83 +735,83 @@ O(n) O(n) O(1) O(1)
 
 ```js
 function Node(data) {
-  this.data = data;
-  this.next = null;
+    this.data = data;
+    this.next = null;
 }
 
 function SinglyLinkedList() {
-  this.head = null;
-  this.tail = null;
-  this.numberOfValues = 0;
+    this.head = null;
+    this.tail = null;
+    this.numberOfValues = 0;
 }
 
 SinglyLinkedList.prototype.add = function (data) {
-  let node = new Node(data);
-  if (!this.head) {
-    this.head = node;
-    this.tail = node;
-  } else {
-    this.tail.next = node;
-    this.tail = node;
-  }
-  this.numberOfValues++;
-};
-SinglyLinkedList.prototype.remove = function (data) {
-  let previous = this.head;
-  let current = this.head;
-  while (current) {
-    if (current.data === data) {
-      if (current === this.head) {
-        this.head = this.head.next;
-      }
-      if (current === this.tail) {
-        this.tail = previous;
-      }
-      previous.next = current.next;
-      this.numberOfValues--;
+    let node = new Node(data);
+    if (!this.head) {
+        this.head = node;
+        this.tail = node;
     } else {
-      previous = current;
-    }
-    current = current.next;
-  }
-};
-SinglyLinkedList.prototype.insertAfter = function (data, toNodeData) {
-  let current = this.head;
-  while (current) {
-    if (current.data === toNodeData) {
-      let node = new Node(data);
-      if (current === this.tail) {
         this.tail.next = node;
         this.tail = node;
-      } else {
-        node.next = current.next;
-        current.next = node;
-      }
-      this.numberOfValues++;
     }
-    current = current.next;
-  }
+    this.numberOfValues++;
+};
+SinglyLinkedList.prototype.remove = function (data) {
+    let previous = this.head;
+    let current = this.head;
+    while (current) {
+        if (current.data === data) {
+            if (current === this.head) {
+                this.head = this.head.next;
+            }
+            if (current === this.tail) {
+                this.tail = previous;
+            }
+            previous.next = current.next;
+            this.numberOfValues--;
+        } else {
+            previous = current;
+        }
+        current = current.next;
+    }
+};
+SinglyLinkedList.prototype.insertAfter = function (data, toNodeData) {
+    let current = this.head;
+    while (current) {
+        if (current.data === toNodeData) {
+            let node = new Node(data);
+            if (current === this.tail) {
+                this.tail.next = node;
+                this.tail = node;
+            } else {
+                node.next = current.next;
+                current.next = node;
+            }
+            this.numberOfValues++;
+        }
+        current = current.next;
+    }
 };
 SinglyLinkedList.prototype.traverse = function (fn) {
-  let current = this.head;
-  while (current) {
-    if (fn) {
-      fn(current);
+    let current = this.head;
+    while (current) {
+        if (fn) {
+            fn(current);
+        }
+        current = current.next;
     }
-    current = current.next;
-  }
 };
 SinglyLinkedList.prototype.length = function () {
-  return this.numberOfValues;
+    return this.numberOfValues;
 };
 SinglyLinkedList.prototype.print = function () {
-  let string = '';
-  let current = this.head;
-  while (current) {
-    string += current.data + ' ';
-    current = current.next;
-  }
-  console.log(string.trim());
+    let string = '';
+    let current = this.head;
+    while (current) {
+        string += current.data + ' ';
+        current = current.next;
+    }
+    console.log(string.trim());
 };
 
 let singlyLinkedList = new SinglyLinkedList();
@@ -858,11 +846,11 @@ singlyLinkedList.add(8); // add node with normal method
 singlyLinkedList.print(); // => 2 3 4 5 6 7 8
 console.log('length is 7:', singlyLinkedList.length()); // => 7
 singlyLinkedList.traverse(function (node) {
-  node.data = node.data + 10;
+    node.data = node.data + 10;
 });
 singlyLinkedList.print(); // => 12 13 14 15 16 17 18
 singlyLinkedList.traverse(function (node) {
-  console.log(node.data);
+    console.log(node.data);
 }); // => 12 13 14 15 16 17 18
 console.log('length is 7:', singlyLinkedList.length()); // => 7
 ```

@@ -4,42 +4,40 @@ excerpt: A list of my medium articles!
 date: '2021-05-23'
 image: images/medium.png
 seo:
-  title: Medium Articles
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-  extra:
-    - name: 'og:type'
-      value: article
-      keyName: property
-    - name: 'og:title'
-      value: Medium Articles
-      keyName: property
-    - name: 'og:description'
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-      keyName: property
-    - name: 'og:image'
-      value: images/medium.png
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:card'
-      value: summary_large_image
-    - name: 'twitter:title'
-      value: Medium Articles
-    - name: 'twitter:description'
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-    - name: 'twitter:image'
-      value: images/medium.png
-      relativeUrl: true
+    title: Medium Articles
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    extra:
+        - name: 'og:type'
+          value: article
+          keyName: property
+        - name: 'og:title'
+          value: Medium Articles
+          keyName: property
+        - name: 'og:description'
+          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+          keyName: property
+        - name: 'og:image'
+          value: images/medium.png
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: summary_large_image
+        - name: 'twitter:title'
+          value: Medium Articles
+        - name: 'twitter:description'
+          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        - name: 'twitter:image'
+          value: images/medium.png
+          relativeUrl: true
 template: post
 thumb_image: images/enthusiastic-tiger.png
 ---
 
-
-A list of all of my articles to link to future posts
-====================================================
+# A list of all of my articles to link to future posts
 
 You should probably skip this one… seriously it’s just for internal use!
 
-------------------------------------------------------------------------
+---
 
 ### A list of all of my articles to link to future posts
 

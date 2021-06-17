@@ -2,27 +2,28 @@
 title: npx-create-react-app
 weight: 1
 seo:
-  title: npx-create-react-app
-  description: This is the npx-create-react-app page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: npx-create-react-app
-      keyName: property
-    - name: 'og:description'
-      value: This is the npx-create-react-app page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: npx-create-react-app
-    - name: 'twitter:description'
-      value: This is the npx-create-react-app page
+    title: npx-create-react-app
+    description: This is the npx-create-react-app page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: npx-create-react-app
+          keyName: property
+        - name: 'og:description'
+          value: This is the npx-create-react-app page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: npx-create-react-app
+        - name: 'twitter:description'
+          value: This is the npx-create-react-app page
 template: docs
 ---
-***
+
+---
 
 ## description: takes soooo much time!
 
@@ -30,25 +31,11 @@ template: docs
 
 takes soooo much time!
 
-
-
 ```text
 npx create-react-app my-app
 cd my-app
 npm start
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 #### Babel can translate between different versions of javascript so that your code can run on browsers that are limited to ES5 compatibility... included by default with every new react project.
 
@@ -177,4 +164,3 @@ Note that the development build is not optimized.
 To create a production build, use yarn build.
 
 ```
-
