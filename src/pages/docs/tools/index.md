@@ -54,7 +54,7 @@ template: docs
 
 <br>
 
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E">
+<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="1600px" width="100%" style="zoom:0.75;">
 </iframe>
 <br>
 
@@ -74,4 +74,4 @@ template: docs
 
 <br>
 
-<iframe src="https://lambda-resources.netlify.app/"></iframe>
+<iframe src="https://lambda-resources.netlify.app/" height="1600px" width="100%" style="zoom:0.75;"></iframe>
