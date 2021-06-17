@@ -165,7 +165,7 @@
                     },
                     {
                         "label": "Github-Advanced-Search",
-                        "url": "#",
+                        "url": "https://github.com/search/advanced",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
