@@ -65,8 +65,8 @@ sections:
         title_url: 'https://learning-redux42.netlify.app/'
         image_alt: lorem-ipsum
         content: >
-          ###### *React Redux provides a pair of custom React hooks that allow
-          your React components to interact with the Redux store.*
+          ***React Redux provides a pair of custom React hooks that allow your
+          React components to interact with the Redux store.***
         actions:
           - label: Website
             url: 'https://learning-redux42.netlify.app/'
