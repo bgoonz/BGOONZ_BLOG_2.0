@@ -17,11 +17,10 @@ sections:
             url: /docs
             style: link
       - content: >
-          ![](/\_static/app-assets/parallel-europa.jpg)
+          ![](/\_static/app-assets/python.png)
 
 
           ### Python Study Guide
-
 
 
           [*Python has a built in help function that let’s you see a description
