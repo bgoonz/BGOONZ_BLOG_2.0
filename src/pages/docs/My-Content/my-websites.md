@@ -23,6 +23,7 @@ seo:
     - name: 'twitter:description'
       value: This is the My Websites page
 template: docs
+weight: 1
 ---
 1.  [ WEB DEV RESOURCE HUB ](https://web-dev-resource-hub.netlify.app)
 
