@@ -35,8 +35,7 @@ sections:
         title_url: >-
           https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
       - content: >
-          ###
-          ![](/\_static/app-assets/pure-data.png)Revamped-Automatic-Guitar-Effect-Triggering
+          ### Revamped-Automatic-Guitar-Effect-Triggering
 
 
           [This section exists for me to day dream ideas for the future... and
