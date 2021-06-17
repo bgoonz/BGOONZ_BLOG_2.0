@@ -83,7 +83,7 @@ sections:
         content: |
           Artist Showcase & Podcasting Site
         actions:
-          - label: lorem-ipsum
+          - label: Live Site
             url: '#'
             style: link
             icon_class: dev
