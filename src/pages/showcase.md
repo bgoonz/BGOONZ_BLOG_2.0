@@ -96,7 +96,7 @@ sections:
         content: |
           **Here lives my alternate/backup blog site!**
         actions:
-          - label: lorem-ipsum
+          - label: git repo
             url: '#'
             style: link
             icon_class: dev
