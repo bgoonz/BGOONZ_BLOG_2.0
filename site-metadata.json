@@ -231,7 +231,7 @@
                 "type": "action"
             },
             {
-                "label": "My Medium Blog",
+                "label": "Medium",
                 "url": "https://bryanguner.medium.com/",
                 "style": "primary",
                 "icon_class": "dev",
