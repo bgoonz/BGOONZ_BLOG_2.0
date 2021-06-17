@@ -4,6 +4,9 @@
 
 <div align="center">
 
+    [![wakatime](https://wakatime.com/badge/github/bgoonz/BGOONZ_BLOG_2.0.svg)](https://wakatime.com/badge/github/bgoonz/BGOONZ_BLOG_2.0)
+    
+    
 ### [WEBSITE](https://bgoonz-blog.netlify.app/)
 
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
