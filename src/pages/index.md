@@ -34,6 +34,7 @@ sections:
               https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             style: link
         image_alt: python
+        title: 'Python '
       - content: >
           ###
           ![](/\_static/app-assets/pure-data.png)Revamped-Automatic-Guitar-Effect-Triggering
