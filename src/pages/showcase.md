@@ -74,17 +74,8 @@ sections:
       - title: Aux Blog w NextJS
         title_url: 'https://bgoonz-blog-v3-0.netlify.app/'
         image_alt: get in touch
-        content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
+        content: |
+          **Here lives my alternate/backup blog site!**
         actions: []
         type: grid_item
         image: images/21ecc2f26e2641c8e9aae5479481bbe2 (5).png
