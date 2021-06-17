@@ -17,6 +17,8 @@ var _getDirectory = require("./getDirectory");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _asyncIterator(iterable) { var method; if (typeof Symbol !== "undefined") { if (Symbol.asyncIterator) { method = iterable[Symbol.asyncIterator]; if (method != null) return method.call(iterable); } if (Symbol.iterator) { method = iterable[Symbol.iterator]; if (method != null) return method.call(iterable); } } throw new TypeError("Object is not async iterable"); }
+
 class Explorer extends _ExplorerBase.ExplorerBase {
   constructor(options) {
     super(options);
@@ -51,14 +53,35 @@ class Explorer extends _ExplorerBase.ExplorerBase {
   }
 
   async searchDirectory(dir) {
-    for await (const place of this.config.searchPlaces) {
-      const placeResult = await this.loadSearchPlace(dir, place);
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
 
-      if (this.shouldSearchStopWithResult(placeResult) === true) {
-        return placeResult;
+    var _iteratorError;
+
+    try {
+      for (var _iterator = _asyncIterator(this.config.searchPlaces), _step, _value; _step = await _iterator.next(), _iteratorNormalCompletion = _step.done, _value = await _step.value, !_iteratorNormalCompletion; _iteratorNormalCompletion = true) {
+        const place = _value;
+        const placeResult = await this.loadSearchPlace(dir, place);
+
+        if (this.shouldSearchStopWithResult(placeResult) === true) {
+          return placeResult;
+        }
+      } // config not found
+
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return != null) {
+          await _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
       }
-    } // config not found
-
+    }
 
     return null;
   }
