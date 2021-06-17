@@ -47,7 +47,7 @@ sections:
           different approaches to a problem.**
         actions:
           - label: Live Site
-            url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
+            url: 'https://github.com/bgoonz/DS-ALGO-OFFICIAL'
             style: icon
             icon_class: github
             new_window: false
