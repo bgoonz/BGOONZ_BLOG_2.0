@@ -84,7 +84,7 @@ sections:
           Artist Showcase & Podcasting Site
         actions:
           - label: Live Site
-            url: '#'
+            url: 'https://panoramic-eggplant-452e4.netlify.app/'
             style: link
             icon_class: dev
             new_window: false
