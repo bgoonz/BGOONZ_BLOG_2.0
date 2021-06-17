@@ -103,9 +103,6 @@ sections:
           APP](https://goofy-perlman-0f61df.netlify.app/)
 
 
-          ![](/\_static/app-assets/zumzi-video-chat.png)
-
-
           ###### Features:&#xA;**Live Streaming, Screen Sharing, Fine control
           over all video & audio parameters and user permissions, Supports video
           streaming at various resolutions: Standard, HD, FHD and 4K, Group
