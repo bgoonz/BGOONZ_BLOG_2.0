@@ -111,7 +111,7 @@
                     {
                         "label": "Resource-Archive-Server",
                         "url": "https://lambda-static-server.netlify.app/directory.html",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
