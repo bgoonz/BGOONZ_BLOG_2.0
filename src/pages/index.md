@@ -48,14 +48,9 @@ sections:
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
-          ![](/\_static/app-assets/react.gif)
-
-
 
 
           ### Beginner’s Guide To React Part 2
-
-
 
 
           [As I learn to build web applications in React I will blog about it in
