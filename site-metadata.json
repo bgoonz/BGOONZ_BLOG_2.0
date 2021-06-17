@@ -268,7 +268,7 @@
             {
                 "label": "Github Pages",
                 "url": "https://bgoonz.github.io/BGOONZ_BLOG_2.0/",
-                "style": "secondary",
+                "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
