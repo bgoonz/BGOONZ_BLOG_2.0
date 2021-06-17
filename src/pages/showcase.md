@@ -82,6 +82,14 @@ sections:
         image: images/7a8bc98e902a2f6dea90386cdfb154c2.png
         content: |
           Artist Showcase & Podcasting Site
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
       - title: Aux Blog w NextJS
         title_url: 'https://bgoonz-blog-v3-0.netlify.app/'
         image_alt: get in touch
