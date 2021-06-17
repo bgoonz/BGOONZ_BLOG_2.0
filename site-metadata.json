@@ -52,6 +52,15 @@
                         "no_follow": false,
                         "type": "action",
                         "url": "https://bg-portfolio.netlify.app/"
+                    },
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
                     }
                 ],
                 "type": "action_menu"
