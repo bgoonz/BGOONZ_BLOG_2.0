@@ -107,7 +107,8 @@ sections:
         title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
         image_alt: video chat
         content: >
-          ### ZUMZI VIDEO CONFRENCING APP
+          #### [ZUMZI VIDEO CONFRENCING
+          APP](https://goofy-perlman-0f61df.netlify.app/)
 
 
           ![](/\_static/app-assets/zumzi-video-chat.png)
