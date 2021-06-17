@@ -39,6 +39,13 @@ seo:
 template: docs
 ---
 
+<iframe src="https://bgoonz-blog-v3-0.netlify.app/contact/" >
+
+
+
+
+
+
 -   🔭 Contract Web Development **Relational Concepts**
 
 -   🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
