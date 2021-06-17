@@ -68,11 +68,9 @@ sections:
         title: Scope & Closure
       - image_alt: Every idea needs a medium
         content: >
-          [PostgreSQL Cheat Sheet, Everything You Need to Get Started With
-          VSCode + Extensions & Resources, Super Simple Intro To HTML, 
-          Understanding Git... etc....
-
-          ](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
+          PostgreSQL Cheat Sheet, Everything You Need to Get Started With VSCode
+          + Extensions & Resources, Super Simple Intro To HTML,  Understanding
+          Git... etc....
         actions: []
         type: grid_item
         title: My Medium Blog
