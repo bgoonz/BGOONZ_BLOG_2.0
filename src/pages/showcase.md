@@ -66,6 +66,7 @@ sections:
             no_follow: false
             type: action
         type: grid_item
+        image: images/best-birch.gif
       - title: Mihir-Beg-Music.com
         title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
         image: images/7a8bc98e902a2f6dea90386cdfb154c2.png
