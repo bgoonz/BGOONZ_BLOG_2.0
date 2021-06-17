@@ -12,7 +12,7 @@ sections:
     col_number: three
     grid_items:
       - title: Git HTML PREVIEW
-        title_url: 'https://githtmlpreview.netlify.app/'
+        title_url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
         image: images/futuristic-mars.gif
         content: >
           Preview html files by pasting their url into the search bar
