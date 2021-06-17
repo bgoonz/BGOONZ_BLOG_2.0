@@ -68,14 +68,6 @@ sections:
         title: Scope & Closure
       - image_alt: lorem-ipsum
         content: >
-          # My Medium Blog
-
-
-          ![](/\_static/app-assets/beige-maple.png)
-
-
-
-
           [PostgreSQL Cheat Sheet, Everything You Need to Get Started With
           VSCode + Extensions & Resources, Super Simple Intro To HTML, 
           Understanding Git... etc....
