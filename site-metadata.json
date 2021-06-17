@@ -122,7 +122,7 @@
                         "url": "https://lambda-static-server.netlify.app/directory.html",
                         "style": "link",
                         "icon_class": "dev",
-                        "new_window": false,
+                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     }
