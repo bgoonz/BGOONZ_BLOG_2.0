@@ -110,7 +110,7 @@
                     },
                     {
                         "label": "Medium Articles",
-                        "url": "#",
+                        "url": "https://bryanguner.medium.com/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
