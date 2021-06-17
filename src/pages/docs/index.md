@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Navigation
 seo:
   title: Welcome to Libris
   description: This is the documentation page
