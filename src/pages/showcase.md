@@ -114,13 +114,10 @@ sections:
           ![](/\_static/app-assets/zumzi-video-chat.png)
 
 
-          ## Features:&#xA;Group Voice and Video Call with unlimited members
-
-
-          **Live Streaming, Screen Sharing, Fine control over all video & audio
-          parameters and user permissions, Supports video streaming at various
-          resolutions: Standard, HD, FHD and 4K, Group Chat, One-to-One chat,
-          Invite Participants**
+          ###### Features:&#xA;**Live Streaming, Screen Sharing, Fine control
+          over all video & audio parameters and user permissions, Supports video
+          streaming at various resolutions: Standard, HD, FHD and 4K, Group
+          Chat, One-to-One chat, Invite Participants**
         actions:
           - label: lorem-ipsum
             url: '#'
