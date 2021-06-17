@@ -38,6 +38,14 @@ sections:
         content: >
           **Modified subsequence dynamic time warping feature detection using
           pure data implemented in python**
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/3.jpg
