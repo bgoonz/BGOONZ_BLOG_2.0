@@ -232,7 +232,7 @@ sections:
         style: primary
         new_window: true
       - label: Contact Form
-        url: '#'
+        url: 'https://bgoonz-blog-v3-0.netlify.app/contact/'
         style: link
         icon_class: dev
         new_window: false
