@@ -235,7 +235,7 @@ sections:
         url: 'https://bgoonz-blog-v3-0.netlify.app/contact/'
         style: primary
         icon_class: dev
-        new_window: false
+        new_window: true
         no_follow: false
         type: action
 seo:
