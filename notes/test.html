@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>test</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<div class="container container-large">
+<a href="https://gomakethings.com/how-to-turn-any-github-repo-into-a-cdn/#main">Skip to main content</a> <a href="mailto:chris@gomakethings.com?subject=Go%20Make%20Things:%20Accessibility%20Feedback">Accessibility Feedback</a>
+</div>
+<header class="container container-large margin-bottom-large">
+<p><nav class="nav-wrap"><a href="https://gomakethings.com/">Go Make Things</a></p>
+<div id="nav-menu" class="nav-menu">
+<ul>
+<li><a href="https://gomakethings.com/about">About</a></li>
+<li><a href="https://gomakethings.com/articles">Daily Tips</a></li>
+<li><a href="https://gomakethings.com/resources">Learn JS</a></li>
+</ul>
+</div>
+<p></nav></p>
+</header>
+<main id="main" tabindex="-1">
+<div class="container">
+<article>
+<header>
+<aside class="text-muted">
+<time datetime="2018-05-23 10:30:00 -0400 EDT" pubdate="">May 23, 2018</time>
+</aside>
+<h1 id="how-to-turn-any-github-repo-into-a-cdn">How to turn any GitHub repo into a CDN</h1>
+</header>
+<p>Last week I discovered <a href="https://www.jsdelivr.com/">jsDeliver</a>, a service that let’s you turn any GitHub repository into a CDN.</p>
+<p>(<em>Hat tip to <a href="https://frontstuff.io/">Sarah Dayan, aka Frontstuff</a>, for this one.</em>)</p>
+<p>Here’s how it works.</p>
+<ol type="1">
+<li>The base URL is <code>https://cdn.jsdelivr.net/gh/{username}/{repo}/</code>, where you replace <code>{username}</code> with the GitHub username and <code>{repo}</code> with the repository name for the project.</li>
+<li>Append that URL with the path to the file you want to access in the project. For example, for my <a href="https://github.com/cferdinandi/atomic">Atomic XHR plugin</a>, the JavaScript file is located in the <code>/dist</code> directory. You’d use this. <code>html &lt;script src="https://cdn.jsdelivr.net/gh/cferdinandi/atomic/dist/atomic.js"&gt;&lt;/script&gt;</code></li>
+</ol>
+<p>You can also take advantage of semantic versioning by adding <code>@{version-number}</code> to the repository name. You can target major, minor, and patch releases as desired.</p>
+<div class="highlight">
+<pre><code>&lt;!-- Always get the latest version --&gt;
+&lt;!-- Not recommended for production sites! --&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/cferdinandi/atomic/dist/atomic.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Get minor updates and patch fixes within a major version --&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/cferdinandi/atomic@4/dist/atomic.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Get patch fixes within a minor version --&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/cferdinandi/atomic@4.0/dist/atomic.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Get a specific version --&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/cferdinandi/atomic@4.0.0/dist/atomic.js&quot;&gt;&lt;/script&gt;</code></pre>
+</div>
+<p>I’ve already added instructions on this to <a href="https://github.com/cferdinandi/atomic">Atomic</a>, <a href="https://github.com/cferdinandi/validate">Validate</a>, and <a href="https://github.com/cferdinandi/smooth-scroll">Smooth Scroll</a>, and will be updating the docs for <a href="https://vanillajstoolkit.com/plugins">my other plugins</a> as well.</p>
+<p>But where this really shines is for use with other peoples’ OSS projects when a CDN isn’t provided but you need a quick and easy way to load the code into your site.</p>
+<p>jsDelivr also supports NPM and WordPress.</p>
+</article>
+<aside>
+<p><em><strong>Like this?</strong> I send out a short email each weekday with code snippets, tools, techniques, and interesting stuff from around the web. Join 11, 500+ daily subscribers.</em></p>
+<form action="https://gomakethings.us1.list-manage.com/subscribe/post?u=f2d244c0df42a0431bd08ddea&amp;id=aeaa9dd034" method="post" name="mc-embedded-subscribe-form" id="mailchimp-form" novalidate>
+<div class="row">
+<div class="grid-two-thirds">
+<div class="tarpit">
+<label for="name">If you’re human, leave this blank</label> <input type="text" name="name" id="name" value="">
+</div>
+<div>
+<label class="screen-reader" for="mailchimp-email">Email Address</label> <input type="email" name="email" id="mailchimp-email" placeholder="Your email address..." required="">
+</div>
+<input type="hidden" name="TbVktzD9dNZiQyZQ3Dk64w6L" value="WqJELdqqHHFTLUrEWJLu4DspKjeoBawWdWnZVVwti7RYpCyLr8WoWtm7UozshPy6"> <input type="hidden" name="group[aaf6f8b9a3]" value="1"> <input type="hidden" name="tag[21913]" value="1">
+</div>
+<div class="grid-third">
+<button data-processing="Signing Up..." data-ready="Get Daily Developer Tips" class="btn btn-block" type="submit">
+Get Daily Developer Tips
+</button>
+</div>
+</div>
+</form>
+</aside>
+</div>
+</main>
+<footer class="container container-large">
+<hr />
+<p><nav class="tabindex nav-secondary" id="nav-secondary" tabindex="-1"></p>
+<ul>
+<li><a href="https://gomakethings.com/about">About</a></li>
+<li><a href="https://gomakethings.com/articles">Daily Tips</a></li>
+<li><a href="https://gomakethings.com/resources">Learn JS</a></li>
+<li><a href="https://gomakethings.com/search">Search</a></li>
+</ul>
+<p></nav></p>
+<p>Made with ❤️ in Massachusetts. Unless otherwise noted, all code is free to use under the <a href="https://gomakethings.com/mit">MIT License</a>. I also very irregularly share non-coding <a href="https://gomakethings.com/notes">thoughts</a>.</p>
+</footer>
+</body>
+</html>

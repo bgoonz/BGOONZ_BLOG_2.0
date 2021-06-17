@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Objects-in</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="objects-in-javascript">Objects in Javascript</h1>
+<p>Codepen with examples for you to practice with below!</p>
+<hr />
+<h3 id="objects-in-javascript-1">Objects in Javascript</h3>
+<h4 id="codepen-with-examples-for-you-to-practice-with-below">Codepen with examples for you to practice with below!</h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*F_xu5P1BJ300C3OixplWNA.png" class="graf-image" />
+</figure>
+<h3 id="the-object-type">The Object Type</h3>
+<p>The <code>object</code> is a data structure that stores other data, similar to how an array stores elements.</p>
+<p>Javascript simple types:</p>
+<ul>
+<li><span id="5a44">numbers <em>(has object-like methods but they are immutable)</em></span></li>
+<li><span id="8cd7">strings <em>(has object-like methods but they are immutable)</em></span></li>
+<li><span id="7ed9">booleans <em>(has object-like methods but they are immutable)</em></span></li>
+<li><span id="420c">null</span></li>
+<li><span id="b51f">undefined</span></li>
+</ul>
+<p>All other values are <em>objects</em> including arrays and functions.</p>
+<p>Objects are class free, can contain other objects and can inherit properties from their prototypes (which can <em>reduce object initialisation time and memory consumption</em>).</p>
+<p>In other programming languages, objects are referred to as, “dictionaries”, “maps”, or “associative arrays”.</p>
+<ul>
+<li><span id="2839">Objects are indexed with <code>keys</code> instead of numbers.</span></li>
+<li><span id="faa0">Order is not guaranteed within an Object.</span></li>
+<li><span id="4575">Objects are defined by using curly braces <code>{}</code></span></li>
+<li><span id="0c11">You can think of Objects as tables.</span></li>
+</ul>
+<blockquote>
+<p><em>Fun Fact: Objects are affectionately known as POJO’s (Plain Old Javascript Objects)</em></p>
+</blockquote>
+<p><strong>Setting Keys and Values</strong></p>
+<ul>
+<li><span id="2d68">If we try to access a key that has not yet been assigned within an object we will output undefined.</span></li>
+<li><span id="f945">The <strong>preferred method</strong> for checking to see if an object exists at a key is to use the operator.</span></li>
+</ul>
+<p><strong>Using Variables as Keys</strong></p>
+<h3 id="using-different-notations">Using Different Notations</h3>
+<p><strong>Bracket Notation vs Dot Notation</strong></p>
+<p>Easier To Read</p>
+<p>You can use variables as keys!</p>
+<p>Easier To Write b/c do not need Quotations.</p>
+<p>Okay to use variables and Strings that start with numbers.</p>
+<p>Cannot access with Variables</p>
+<p>Keys cannot contain numbers as their first character</p>
+<ul>
+<li><span id="7b34"><strong>When accessing object keys</strong>: Bracket notation needs to refer to that key in quotations, dot notation doesn’t.</span></li>
+<li><span id="9e11"><strong>When accessing object keys via a variable</strong>: Bracket notation can refer to that key w/o use of quotations, dot notation can’t do this at all.</span></li>
+</ul>
+<p><strong>Putting it All Together</strong></p>
+<p>You can put an object together in a single statement.</p>
+<p><strong>Operator Precedence Revisited</strong></p>
+<h3 id="iterating-through-objects">Iterating Through Objects</h3>
+<p>Because objects store <strong><em>unordered</em></strong> key-value pairs, we do not rely on indices to access values; instead we rely on our keys.</p>
+<p><strong>Methods vs Functions</strong></p>
+<p>A is a function that <em>belongs</em> to an object. Every method is a function, but <em>not</em> every function is a method.</p>
+<p><strong>Useful Object Methods</strong></p>
+<ul>
+<li><span id="b0e3"><code>Object.keys()</code> : A method that allows us to iterate through keys, it accepts an obj as the argument and returns an array of the keys.</span></li>
+<li><span id="7fbd"><code>Object.values()</code> : Method that accepts an object as the argument and returns an array of the values.</span></li>
+</ul>
+<p><strong>Iterating through an Object’s keys &amp; values</strong></p>
+<h3 id="references-vs-primitives">References vs Primitives</h3>
+<p><strong>Primitives vs Objects</strong></p>
+<p>So far we have learned about 6 different data types:</p>
+<ul>
+<li><span id="5918"><strong>Primitive</strong> : Boolean, Null, Undefined, Number, String.</span></li>
+<li><span id="d57e"><strong>Reference</strong> : Object (Arrays are a type of object)</span></li>
+<li><span id="f915">Remember that <strong>primitive</strong> types are immutable!</span></li>
+</ul>
+<p><strong>Immutability</strong></p>
+<ul>
+<li><span id="85e1">When we reassign primitives we simply have our variable point elsewhere in memory.</span></li>
+<li><span id="ae03">In a nutshell, <strong>immutability</strong> cannot change values in memory, but only reassign where our variables are pointing to.</span></li>
+</ul>
+<p><strong>Mutability</strong></p>
+<h3 id="rest-and-spread">Rest and Spread</h3>
+<p><strong>Using the Spread Operator and Rest Parameter Syntax</strong><br />
+<strong>Accepting Arguments</strong></p>
+<ul>
+<li><span id="5f1f">Just keep in mind that function will still run even if it is not passed any arguments.</span></li>
+<li><span id="e494">Parameters will take just as many arguments they need even if more than enough are offered.</span></li>
+<li><span id="f2c8">We will encounter an error if there are not enough parameters ( &gt; 0).</span></li>
+</ul>
+<p><strong>Utilizing Rest Parameters</strong></p>
+<ul>
+<li><span id="e9b5"><code>Rest Parameter Syntax</code> : Allows us to capture all of a function’s incoming arguments into an array.</span></li>
+<li><span id="f072">Only the last parameter can be a rest parameter.</span></li>
+</ul>
+<p><strong>Utilizing Spread Syntax</strong></p>
+<ul>
+<li><span id="347a">Takes a data type (i.e. array, obj) and spreads the values of that type where elements are expected.</span></li>
+<li><span id="4612">Takes iterable data and spreads the elements of that type where arguments are expected.</span></li>
+</ul>
+<h3 id="destructuring">Destructuring</h3>
+<p><strong>Swapping Variables using destructuring</strong></p>
+<p><strong>Destructuring objects into variables</strong></p>
+<p><strong>Destructuring and the Rest Pattern</strong></p>
+<h3 id="destructuring-parameters">Destructuring Parameters</h3>
+<p>We can also destructure <strong>incoming parameters</strong> of a function.<br />
+ This is very useful when we’re passing objects around to different functions.</p>
+<hr />
+<h3 id="object-literals">Object Literals</h3>
+<ul>
+<li><span id="b0a3">An object literal is <em>zero or more comma-separated name/value pairs surrounded by curly braces</em> {}</span></li>
+</ul>
+<!-- -->
+<pre><code>let empty_object = {};
+
+let today = {
+    day: &quot;Wednesday&quot;,
+    month: &quot;April&quot;,
+    year: 2014,
+
+weather: { //objects can contain nested objects like this one
+        morning: &quot;sunny&quot;,
+        afternoon: &quot;cloudy&quot;
+    }
+}</code></pre>
+<h3 id="retrieval">Retrieval</h3>
+<ul>
+<li><span id="ee43">Can be done with either dot notation <code>today.weather.morning</code> or with square brackets <code>today['month']</code></span></li>
+<li><span id="d7ae">Or operand (||) can be used to fill in default values for nonexistent data to prevent and <em>undefined</em> error: <code>var weath = today.weather.evening || "unknown"</code></span></li>
+</ul>
+<h3 id="update">Update</h3>
+<ul>
+<li><span id="2d21">Assigning a property value to an object overwrites any existing property values with that property name</span></li>
+</ul>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><span id="413d">Objects refer to each other, they don’t hold duplicate copies of data</span></li>
+</ul>
+<h3 id="prototype">Prototype</h3>
+<ul>
+<li><span id="b567">Every object has a prototype object from which it inherits properties</span></li>
+<li><span id="943e"><em>Object.prototype</em> comes standard with Javascript and is almost like a ‘root parent’</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*1MKtZt0a5gREie59" class="graf-image" />
+</figure>
+<ul>
+<li><span id="2293">The <code>Object.create</code> method is now available in ES5 (but the method is in the book if required for older versions)</span></li>
+<li><span id="5001">If an object does not have a property you ask it for, it will keep looking up the prototype chain until it finds it</span></li>
+<li><span id="abaf">If the property <em>does note exist</em> anywhere in the chain, it will return <em>undefined</em></span></li>
+<li><span id="03eb">A new property is <em>immediately visible</em> to all of the objects below it in the chain once created</span></li>
+</ul>
+<p>More details in <a href="https://github.com/Lambda-April/Unsorted-Notes/blob/main" class="markup--anchor markup--p-anchor">Chapter 6</a></p>
+<h3 id="reflection">Reflection</h3>
+<ul>
+<li><span id="60ed">Determining what properties an object has</span></li>
+<li><span id="a00d">Using <code>typeof</code> includes all properties in the prototype chain including functions</span></li>
+<li><span id="4365">To avoid inherited properties, use <code>hasOwnProperty(type);</code> which returns <em>true</em> if that property exists only in that object itself (not the chain)</span></li>
+</ul>
+<!-- -->
+<pre><code>today.hasOwnProperty(‘number’) //will return true today.hasOwnProperty(‘constructor’) //will return false</code></pre>
+<h3 id="enumeration">Enumeration</h3>
+<ul>
+<li><span id="ce3f">Best way to enumerate all the properties you want is a for loop:</span></li>
+</ul>
+<!-- -->
+<pre><code>let i;
+let properties = [ ‘day’, ‘month’, ‘year’ ];
+for (i = 0; i &lt; properties.length; i++) {
+    document.writeIn(properties[i] + ‘:’ + today[properties[i]]);
+ }</code></pre>
+<ul>
+<li><span id="5d1f">This ensures you get the properties you want (i.e. not up the prototype chain) and in the order you want, as opposed to a <em>for in</em> loop which achieves neither of these</span></li>
+</ul>
+<h3 id="delete">Delete</h3>
+<ul>
+<li><span id="546d">Removes property from object, but also reveals property from further up the prototype chain if it exists</span></li>
+<li><span id="9258">Format: <code>delete today.month</code></span></li>
+</ul>
+<h3 id="global-abatement">Global Abatement</h3>
+<ul>
+<li><span id="5b97">One way to mitigate the risks of global variables is to <em>create a single global variable</em> which then contains your whole application</span></li>
+</ul>
+<!-- -->
+<pre><code>let MYAPP = {}
+
+MYAPP.today = {
+    day: &quot;Wednesday&quot;,
+    month: &quot;April&quot;,
+    year: 2014,
+
+weather: { //objects can contain nested objects like this one
+        morning: &quot;sunny&quot;,
+        afternoon: &quot;cloudy&quot;
+    }
+}
+//Making sure all other variables (like today) are contained within this one global variable (MYAPP) means none of them have global scope and therefore the risk of naming conflicts, etc in your application is reduced</code></pre>
+<h4 id="further-resources">Further resources:</h4>
+<p><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br /> <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
+<p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br /> <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br /> <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br /> <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/cc578a781e1d">April 15, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/objects-in-javascript-cc578a781e1d" class="p-canonical">Canonical link</a></p>
+<p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+</body>
+</html>
