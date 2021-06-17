@@ -39,7 +39,7 @@ sections:
           **Modified subsequence dynamic time warping feature detection using
           pure data implemented in python**
         actions:
-          - label: lorem-ipsum
+          - label: Slide Show
             url: '#'
             style: link
             icon_class: dev
