@@ -125,10 +125,6 @@ sections:
         title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
         image_alt: video chat
         content: >
-          ###### [ZUMZI VIDEO CONFRENCING
-          APP](https://goofy-perlman-0f61df.netlify.app/)
-
-
           **Features:   Live Streaming, Screen Sharing, Fine control over all
           video & audio parameters and user permissions, Supports video
           streaming at various resolutions: Standard, HD, FHD and 4K, Group
