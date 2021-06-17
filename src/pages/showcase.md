@@ -73,7 +73,7 @@ sections:
           Artist Showcase & Podcasting Site
       - title: Aux Blog w NextJS
         title_url: 'https://bgoonz-blog-v3-0.netlify.app/'
-        image_alt: lorem-ipsum
+        image_alt: get
         content: >-
           ## Lorem ipsum
 
