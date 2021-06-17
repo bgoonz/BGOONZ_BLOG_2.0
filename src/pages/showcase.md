@@ -22,7 +22,8 @@ sections:
           content from Site B**
         actions:
           - label: Live Site
-            url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
+            url: >-
+              /https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL
             style: icon
             icon_class: github
             new_window: true
