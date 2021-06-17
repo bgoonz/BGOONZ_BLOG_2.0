@@ -36,8 +36,8 @@ sections:
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/thoughtful-neptune.PNG
         content: >
-          Modified subsequence dynamic time warping feature detection using pure
-          data implemented in python
+          **Modified subsequence dynamic time warping feature detection using
+          pure data implemented in python**
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/3.jpg
