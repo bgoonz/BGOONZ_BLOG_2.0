@@ -48,7 +48,7 @@ sections:
         actions:
           - label: Live Site
             url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
-            style: link
+            style: icon
             icon_class: dev
             new_window: false
             no_follow: false
