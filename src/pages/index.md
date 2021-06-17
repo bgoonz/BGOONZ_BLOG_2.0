@@ -69,8 +69,7 @@ sections:
         type: grid_item
         image: images/pleasant-birch.png
         title: Scope & Closure
-      - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
-        image_alt: lorem-ipsum
+      - image_alt: lorem-ipsum
         content: >
           # My Medium Blog
 
