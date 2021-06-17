@@ -50,7 +50,7 @@ sections:
             url: 'https://github.com/bgoonz/DS-ALGO-OFFICIAL'
             style: icon
             icon_class: github
-            new_window: false
+            new_window: true
             no_follow: false
             type: action
       - title: Learning Redux
