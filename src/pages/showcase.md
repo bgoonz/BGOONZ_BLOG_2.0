@@ -131,7 +131,7 @@ sections:
           Chat, One-to-One chat, Invite Participants**
         actions:
           - label: Live Site
-            url: '#'
+            url: 'https://goofy-perlman-0f61df.netlify.app/'
             style: link
             icon_class: dev
             new_window: false
