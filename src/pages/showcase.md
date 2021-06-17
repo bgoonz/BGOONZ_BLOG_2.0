@@ -15,8 +15,7 @@ sections:
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/futuristic-mars.gif
         content: >
-          [Preview html files by pasting their url into the search
-          bar](https://githtmlpreview.netlify.app/)
+          Preview html files by pasting their url into the search bar
 
 
           **Access-Control-Allow-Origin Header When Site A tries to fetch
