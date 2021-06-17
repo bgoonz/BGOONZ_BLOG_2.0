@@ -12,7 +12,8 @@ sections:
     col_number: three
     grid_items:
       - title: Git HTML PREVIEW
-        title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
+        title_url: >-
+          https://githtmlpreview.netlify.app/https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/
         image: images/futuristic-mars.gif
         content: >
           Preview html files by pasting their url into the search bar
