@@ -66,7 +66,7 @@ sections:
         type: grid_item
         image: images/pleasant-birch.png
         title: Scope & Closure
-      - image_alt: lorem-ipsum
+      - image_alt: Every idea needs a medium
         content: >
           [PostgreSQL Cheat Sheet, Everything You Need to Get Started With
           VSCode + Extensions & Resources, Super Simple Intro To HTML, 
