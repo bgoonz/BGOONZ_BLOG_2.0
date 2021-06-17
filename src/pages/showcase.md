@@ -48,7 +48,7 @@ sections:
             type: action
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
-        image: images/3.jpg
+        image: images/ds-algo.gif
         content: >
           **Big O notation is the language we use for talking about how long an
           algorithm takes to run. It's how we compare the efficiency of
