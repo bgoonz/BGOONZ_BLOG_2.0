@@ -97,7 +97,7 @@ sections:
           **Here lives my alternate/backup blog site!**
         actions:
           - label: git repo
-            url: '#'
+            url: 'https://github.com/bgoonz/alternate-blog-theme'
             style: link
             icon_class: dev
             new_window: false
