@@ -22,13 +22,7 @@ sections:
           Access-Control-Allow-Origin Header When Site A tries to fetch content
           from Site B, Site B can send an Access-Control-Allow-Origin response
           header to tell the browser that the content of this page is accessible
-          to certain origins. (An origin is a domain, plus a scheme and port
-          number.) By default, Site B's pages are not accessible to any other
-          origin; using the Access-Control-Allow-Origin header opens a door for
-          cross-origin access by specific requesting origins. The
-          Access-Control-Allow-Origin header is critical to resource security.
-          You can find a description of each CORS header at the following: CORS
-          Headers.
+          to certain origins. 
         actions:
           - label: Git Repo
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
