@@ -99,7 +99,7 @@ sections:
           - label: git repo
             url: 'https://github.com/bgoonz/alternate-blog-theme'
             style: icon
-            icon_class: dev
+            icon_class: github
             new_window: false
             no_follow: false
             type: action
