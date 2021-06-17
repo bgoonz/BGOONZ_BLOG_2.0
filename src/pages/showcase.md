@@ -130,7 +130,7 @@ sections:
           streaming at various resolutions: Standard, HD, FHD and 4K, Group
           Chat, One-to-One chat, Invite Participants**
         actions:
-          - label: lorem-ipsum
+          - label: Live Site
             url: '#'
             style: link
             icon_class: dev
