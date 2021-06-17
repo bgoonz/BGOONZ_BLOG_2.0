@@ -84,6 +84,7 @@ sections:
         actions: []
         type: grid_item
         title: React Guide
+        image: images/curious-mustard.png
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
