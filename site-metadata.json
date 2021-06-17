@@ -240,7 +240,7 @@
                 "type": "action"
             },
             {
-                "label": "Git Html Previewer",
+                "label": "Html Previewer",
                 "url": "#",
                 "style": "primary",
                 "icon_class": "dev",
