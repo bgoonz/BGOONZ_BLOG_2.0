@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PostgreSQL-Setup-For-Windows-WSL</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="postgresql-setup-for-windows-wslubuntu">PostgreSQL Setup For Windows &amp; WSL/Ubuntu</h1>
+<p>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install psql in your…</p>
+<hr />
+<h3 id="postgresql-setup-for-windows-wslubuntu-1">PostgreSQL Setup For Windows &amp; WSL/Ubuntu</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J" class="graf-image" />
+</figure>
+<p>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install <code>psql</code> in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL ‘allegedly’ …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the <strong>command line tool</strong> <code>psql</code><strong>.</strong></p>
+<h3 id="important-distinction-psql-is-the-frontend-interface-for-postgresql-they-are-not-synonymous">Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!</h3>
+<p><strong>Postgres</strong>, is a <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" class="markup--anchor markup--p-anchor" title="Free and open-source software">free and open-source</a> <a href="https://en.wikipedia.org/wiki/Relational_database_management_system" class="markup--anchor markup--p-anchor" title="Relational database management system">relational database management system</a> (RDBMS)</p>
+<p><strong>PSQL:</strong></p>
+<p>The primary <a href="https://en.wikipedia.org/wiki/Front_and_back_ends" class="markup--anchor markup--p-anchor" title="Front and back ends">front-end</a> for PostgreSQL is the <code>psql</code> <a href="https://en.wikipedia.org/wiki/Command-line_program" class="markup--anchor markup--p-anchor" title="Command-line program">command-line program</a>, which can be used to enter SQL queries directly, or execute them from a file.</p>
+<p>In addition, psql provides a number of meta-commands and various shell-like features to facilitate writing scripts and automating a wide variety of tasks; for example tab completion of object names and SQL syntax.</p>
+<p><strong>pgAdmin:</strong></p>
+<p>The pgAdmin package is a free and open-source <a href="https://en.wikipedia.org/wiki/Graphical_user_interface" class="markup--anchor markup--p-anchor" title="Graphical user interface">graphical user interface</a> (GUI) administration tool for PostgreSQL.</p>
+<p>When you read “installation”, that means the actual OS that’s running on your machine. So, you have a Windows installation, Windows 10, that’s running when you boot your computer. Then, when you start the Ubuntu installation, it’s as if there’s a completely separate computer running inside your computer. It’s like having two completely different laptops.</p>
+<h3 id="other-noteworthy-distinctions">Other Noteworthy Distinctions:</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*um8fm6FDTYYOXZrLudddpg.png" class="graf-image" />
+</figure>
+<h3 id="installing-postgresql-12">Installing PostgreSQL 12</h3>
+<p>To install PostgreSQL 12, you need to download the installer from the Internet. PostgreSQL’s commercial company, Enterprise DB, offers installers for PostgreSQL for every major platform.</p>
+<p>Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" class="markup--anchor markup--p-anchor">https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a>. Click the link for PostgreSQL 12 for Windows x86–64.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" />
+</figure>
+<p>Once that installer downloads, run it. You need to go through the normal steps of installing software.</p>
+<ul>
+<li><span id="a223">Yes, Windows, let the installer make changes to <em>my</em> device.</span></li>
+<li><span id="d4d0">Thanks for the welcome. Next.</span></li>
+<li><span id="1283">Yeah, that’s a good place to install it. Next.</span></li>
+<li><span id="79cc">I don’t want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" />
+</figure>
+<ul>
+<li><span id="e09d">Also, great looking directory. Thanks. Next.</span></li>
+</ul>
+<h3 id="oooh-a-password-ill-enter-.-i-sure-wont-forget-that-because-if-i-do-ill-have-to-uninstall-and-reinstall-postgresql-and-lose-all-of-my-hard-work.-seriously-write-down-this-password-or-use-one-you-will-not-forget">Oooh! A password! I’ll enter <strong>****</strong>. I sure won’t forget that because, if I do, I’ll have to uninstall and reinstall PostgreSQL and lose all of my hard work. <strong>Seriously, write down this password or use one you will not forget!!!!!!!!!!!!!!!</strong></h3>
+<h3 id="i-really-cannot-stress-the-above-point-enough-experience-is-a-great-teacher-but-in-this-case-its-not-worth-it.">I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it’s not worth it.</h3>
+<ul>
+<li><span id="25b7">Sure. 5432. Good to go. Next.</span></li>
+<li><span id="28be">Not even sure what that means. Default! Next.</span></li>
+<li><span id="b378">Yep. Looks good. Next.</span></li>
+</ul>
+<p>Insert pop culture reference to pass the time</p>
+<h3 id="installing-postgresql-client-tools-on-ubuntu">Installing PostgreSQL Client Tools on Ubuntu</h3>
+<p>Now, to install the PostgreSQL Client tools for Ubuntu. You need to do this so that the Node.js (and later Python) programs running on your Ubuntu installation can access the PostgreSQL server running on your Windows installation. You need to tell <code>apt</code>, the package manager, that you want it to go find the PostgreSQL 12 client tools from PostgreSQL itself rather than the common package repositories. You do that by issuing the following two commands. Copy and paste them one at a time into your shell. (If your Ubuntu shell isn’t running, start one.)</p>
+<p><strong>Pro-tip</strong>: Copy those commands because you’re not going to type them, right? After you copy one of them, you can just right-click on the Ubuntu shell. That should paste them in there for you.</p>
+<pre><code>wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -</code></pre>
+<p>If prompted for your password, type it.</p>
+<pre><code>echo &quot;deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main&quot; | sudo tee  /etc/apt/sources.list.d/pgdg.list</code></pre>
+<p>The last line of output of those two commands running should read “OK”. If it does not, try copying and pasting them one at a time.</p>
+<p>Now that you’ve registered the PostgreSQL repositories as a source to look for PostgreSQL, you need to update the <code>apt</code> registry. You should do this before you install <em>any</em> software on Ubuntu.</p>
+<pre><code>sudo apt update</code></pre>
+<p>Once that’s finished running, the new entries for PostgreSQL 12 should be in the repository. Now, you can install them with the following command.</p>
+<pre><code>sudo apt install postgresql-client-12 postgresql-common</code></pre>
+<p>If it asks you if you want to install them, please tell it “Y”.</p>
+<p>Test that it installed by typing <code>psql --version</code>. You should see it print out information about the version of the installed tools. If it tells you that it can’t find the command, try these instructions over.</p>
+<h3 id="configuring-the-client-tools">Configuring the client tools</h3>
+<p>Since you’re going to be accessing the PosgreSQL installation from your Ubuntu installation on your Windows installation, you’re going to have to type that you want to access it over and over, which means extra typing. To prevent you from having to do this, you can customize your shell to always add the extra commands for you.</p>
+<p>This assumes you’re still using Bash. If you changed the shell that your Ubuntu installation uses, please follow that shell’s directions for adding an alias to its startup file.</p>
+<p>Make sure you’re in your Ubuntu home directory. You can do that by typing <code>cd</code> and hitting enter. Use <code>ls</code> to find out if you have a <code>.bashrc</code> file. Type <code>ls .bashrc</code>. If it shows you that one exists, that’s the one you will add the alias to. If it tells you that there is no file named that, then type <code>ls .profile</code>. If it shows you that one exists, that’s the one you will add the alias to. If it shows you that it does not exist, then use the file name <code>.bashrc</code> in the following section.</p>
+<p>Now that you know which profile file to use, type <code>code «profile file name»</code> where “profile file name” is the name of the file you determined from the last section. Once Visual Studio Code starts up with your file, at the end of it (or if you’ve already added aliases, in that section), type the following.</p>
+<pre><code>alias psql=&quot;psql -h localhost&quot;</code></pre>
+<p>When you run <code>psql</code> from the command line, it will now always add the part about wanting to connect to <em>localhost</em> every time. You would have to type that each time, otherwise.</p>
+<p>To make sure that you set that up correctly, type <code>psql -U postgres postgres</code>. This tells the <code>psql</code> client that you want to connect as the user “postgres” (<code>-U postgres</code>) to the database postgres (<code>postgres</code> at the end), which is the default database created when PostgreSQL is installed. It will prompt you for a password. Type the password that you used when you installed PostgrSQL, earlier. If the alias works correctly and you type the correct password, then you should see something like the following output.</p>
+<pre><code>psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1))
+Type &quot;help&quot; for help.
+
+postgres=#</code></pre>
+<p>Type <code>\q</code> and hit Enter to exit the PostgreSQL client tool.</p>
+<p>Now, you will add a user for your Ubuntu identity so that you don’t have to specify it all the time. Then, you will create a file that PostgreSQL will use to automatically send your password every time.</p>
+<p>Copy and paste the following into your Ubuntu shell. Think of a password that you want to use for your user. <strong>Replace the password in the single quotes in the command with the password that you want.</strong> It <em>has</em> to be a non-empty string. PostgreSQL doesn’t like it when it’s not.</p>
+<pre><code>psql -U postgres -c &quot;CREATE USER `whoami` WITH PASSWORD &#39;password&#39; SUPERUSER&quot;</code></pre>
+<p>It should prompt you for a password. Type the password that you created when you installed PostgreSQL. Once you type the correct password, you should see “CREATE ROLE”.</p>
+<p>Now you will create your PostgreSQL password file. Type the following into your Ubuntu shell to open Visual Studio Code and create a new file.</p>
+<pre><code>code ~/.pgpass</code></pre>
+<p>In that file, you will add this line, which tells it that on localhost for port 5432 (where PostgreSQL is running), for all databases (*), <strong>use your Ubuntu user name and the password that you just created for that user with the</strong> <code>psql</code> <strong>command you just typed.</strong> (If you have forgotten your Ubuntu user name, type <code>whoami</code> on the command line.) Your entry in the file should have this format.</p>
+<pre><code>localhost:5432:*:«your Ubuntu user name»:«the password you just used»</code></pre>
+<p>Once you have that information in the file, save it, and close Visual Studio Code.</p>
+<p>The last step you have to take is change the permission on that file so that it is only readable by your user. PostgreSQL will ignore it if just anyone can read and write to it. This is for <em>your</em> security. Change the file permissions so only you can read and write to it. You did this once upon a time. Here’s the command.</p>
+<pre><code>chmod go-rw ~/.pgpass</code></pre>
+<p>You can confirm that only you have read/write permission by typing <code>ls -al ~/.pgpass</code>. That should return output that looks like this, <strong>with your Ubuntu user name instead of “web-dev-hub”.</strong></p>
+<pre><code>-rw------- 1 web-dev-hub web-dev-hub 37 Mar 28 21:20 /home/web-dev-hub/.pgpass</code></pre>
+<p>Now, try connecting to PostreSQL by typing <code>psql postgres</code>. Because you added the alias to your startup script, and because you created your <strong>.pgpass</strong> file, it should now connect without prompting you for any credentials! Type <code>\q</code> and press Enter to exit the PostgreSQL command line client.</p>
+<h3 id="installing-postbird">Installing Postbird</h3>
+<p>Head over to the <a href="https://github.com/Paxa/postbird/releases" class="markup--anchor markup--p-anchor">Postbird releases page on GitHub</a>. Click the installer for Windows which you can recognize because it’s the only file in the list that ends with “.exe”.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*ZdKurvQ4bHs3vDLT.png" class="graf-image" />
+</figure>
+<p>After that installer downloads, run it. You will get a warning from Windows that this is from an unidentified developer. If you don’t want to install this, find a PostgreSQL GUI client that you do trust and install it or do everything from the command line.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*EWpFEwM0YUDQCW_i.png" class="graf-image" />
+</figure>
+<p>You should get used to seeing this because many open-source applications aren’t signed with the Microsoft Store for monetary and philosophical reasons.</p>
+<p>Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads “More info” and the “Run anyway” button.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*9pDpx8XsYt2KnMku.png" class="graf-image" />
+</figure>
+<p>When it’s done installing, it will launch itself. Test it out by typing the “postgres” into the “Username” field and the password from your installation in the “Password” field. Click the Connect button. It should properly connect to the running</p>
+<p>You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any time.</p>
+<h3 id="now..-if-you-still-have-some-gas-in-the-tank-lets-put-our-new-tools-to-work">Now.. if you still have some gas in the tank… let’s put our new tools to work:</h3>
+<h3 id="the-node-postgres">The node-postgres</h3>
+<p>The node-postgres is a collection of Node.js modules for interfacing with the PostgreSQL database. It has support for callbacks, promises, async/await, connection pooling, prepared statements, cursors, and streaming results.</p>
+<p>In our examples we also use the Ramda library. See Ramda tutorial for more information.</p>
+<h3 id="setting-up-node-postgres">Setting up node-postgres</h3>
+<p>First, we install node-postgres.</p>
+<p>$ node -v<br />
+v14.2</p>
+<p>$ npm init -y</p>
+<p>We initiate a new Node application.</p>
+<p>npm i pg</p>
+<p>We install node-postgres with <code>nmp i pg</code>.</p>
+<p>npm i ramda</p>
+<p>In addition, we install Ramda for beautiful work with data.</p>
+<p>cars.sql</p>
+<p>DROP TABLE IF EXISTS cars;</p>
+<p>CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT);<br />
+INSERT INTO cars(name, price) VALUES(‘Audi’, 52642);<br />
+INSERT INTO cars(name, price) VALUES(‘Mercedes’, 57127);<br />
+INSERT INTO cars(name, price) VALUES(‘Skoda’, 9000);<br />
+INSERT INTO cars(name, price) VALUES(‘Volvo’, 29000);<br />
+INSERT INTO cars(name, price) VALUES(‘Bentley’, 350000);<br />
+INSERT INTO cars(name, price) VALUES(‘Citroen’, 21000);<br />
+INSERT INTO cars(name, price) VALUES(‘Hummer’, 41400);<br />
+INSERT INTO cars(name, price) VALUES(‘Volkswagen’, 21600);</p>
+<p>In some of the examples, we use this <code>cars</code> table.</p>
+<h3 id="the-node-postgres-first-example">The node-postgres first example</h3>
+<p>In the first example, we connect to the PostgreSQL database and return a simple SELECT query result.</p>
+<p>first.js</p>
+<pre><code>const pg = require(‘pg’);
+const R = require(‘ramda’);
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;
+const client = new pg.Client(cs);
+client.connect();
+client.query(‘SELECT 1 + 4’).then(res =&gt; {
+
+const result = R.head(R.values(R.head(res.rows)))
+
+console.log(result)
+}).finally(() =&gt; client.end());</code></pre>
+<p>The example connects to the database and issues a SELECT statement.</p>
+<pre><code>const pg = require(‘pg’);
+const R = require(‘ramda’);</code></pre>
+<p>We include the <code>pg</code> and <code>ramda</code> modules.</p>
+<pre><code>const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</code></pre>
+<p>This is the PostgreSQL connection string. It is used to build a connection to the database.</p>
+<pre><code>const client = new pg.Client(cs);
+client.connect();</code></pre>
+<p>A client is created. We connect to the database with <code>connect()</code>.</p>
+<pre><code>client.query(‘SELECT 1 + 4’).then(res =&gt; {
+
+const result = R.head(R.values(R.head(res.rows)));
+
+console.log(result);
+
+}).finally(() =&gt; client.end());</code></pre>
+<p>We issue a simple SELECT query. We get the result and output it to the console. The <code>res.rows</code> is an array of objects; we use Ramda to get the returned scalar value. In the end, we close the connection with <code>end()</code>.</p>
+<pre><code>node first.js
+5</code></pre>
+<p>This is the output.</p>
+<h3 id="the-node-postgres-column-names">The node-postgres column names</h3>
+<p>In the following example, we get the columns names of a database.</p>
+<blockquote>
+<p>column_names.js</p>
+</blockquote>
+<pre><code>const pg = require(‘pg’);
+
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;
+
+const client = new pg.Client(cs);
+
+client.connect();
+
+client.query(‘SELECT * FROM cars’).then(res =&gt; {
+
+const fields = res.fields.map(field =&gt; field.name);
+
+console.log(fields);
+
+}).catch(err =&gt; {
+console.log(err.stack);
+}).finally(() =&gt; {
+client.end()
+});</code></pre>
+<p>The column names are retrieved with <code>res.fields</code> attribute. We also use the <code>catch</code> clause to output potential errors.</p>
+<pre><code>node column_names.js
+‘id’, ‘name’, ‘price’′id′,′name′,′price′</code></pre>
+<p>The output shows three column names of the <code>cars</code> table.</p>
+<h3 id="selecting-all-rows">Selecting all rows</h3>
+<p>In the next example, we select all rows from the database table.</p>
+<blockquote>
+<p>all_rows.js</p>
+</blockquote>
+<pre><code>const pg = require(‘pg’);
+const R = require(‘ramda’);
+
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;
+
+const client = new pg.Client(cs);
+
+client.connect();
+
+client.query(‘SELECT * FROM cars’).then(res =&gt; {
+
+const data = res.rows;
+
+console.log(&#39;all data&#39;);
+data.forEach(row =&gt; {
+    console.log(\`Id: ${row.id} Name: ${row.name} Price: ${row.price}\`);
+})
+
+console.log(&#39;Sorted prices:&#39;);
+const prices = R.pluck(&#39;price&#39;, R.sortBy(R.prop(&#39;price&#39;), data));
+console.log(prices);
+
+}).finally(() =&gt; {
+client.end()
+});</code></pre>
+<p><strong>TBC…</strong></p>
+<h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h4>
+<p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
+<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br /> <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p>Or Checkout my personal Resource Site:</p>
+<p><a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br /> <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/801672ab7089">March 6, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="p-canonical">Canonical link</a></p>
+<p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+</body>
+</html>

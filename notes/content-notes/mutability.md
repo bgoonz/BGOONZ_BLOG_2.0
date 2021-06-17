@@ -1,8 +1,6 @@
 # Mutability
 
-###
-
-### Mutability && Primitive && Reference Examples
+## Mutability && Primitive && Reference Examples
 
 Objects are passed by reference, are mutable, and can be modified by our functions:
 
@@ -13,7 +11,7 @@ function rotateLeft(arr, num) {
         arr.unshift(el);
     }
 }
-let myArr = [1, 2, 3, 4, 5];
+let myArr = [1, 2, 3, 4, 5, ];
 rotateLeft(myArr, 2);
 console.log(myArr);
 ```
@@ -25,15 +23,15 @@ function rotateString(str, num) {
     return str.slice(num) + str.slice(0, num);
 }
 
-let str = 'foobar';
+let str = "foobar";
 let ret = rotateString(str, 3);
 console.log(str);
 console.log(ret);
 ```
 
-### Dereferencing
+## Dereferencing
 
-#### Arrays
+### Arrays
 
 To dereference an array, use `let [var1, var2]` syntax.
 
@@ -44,24 +42,26 @@ let [first] = arr;
 console.log(first);
 ```
 
-#### Objects
+### Objects
 
 To dereference attributes from an object, use `let {}` syntax.
 
 ```javascript
 let me = {
-    name: 'Ian',
+    name: "Ian",
     instruments: ['bass', 'synth', 'guitar'],
     siblings: {
         brothers: ['Alistair'],
         sisters: ['Meghan']
     }
-};
+}
 
 let {
     name,
     instruments: musical_instruments,
-    siblings: { sisters }
+    siblings: {
+        sisters
+    }
 } = me;
 
 console.log(sisters);
@@ -136,3 +136,4 @@ let newMe = {
     ...countries
 }
 ```
+
