@@ -98,7 +98,7 @@ sections:
         actions:
           - label: git repo
             url: 'https://github.com/bgoonz/alternate-blog-theme'
-            style: link
+            style: icon
             icon_class: dev
             new_window: false
             no_follow: false
