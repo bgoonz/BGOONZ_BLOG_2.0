@@ -241,34 +241,3 @@ The rendered output looks like this:
 body {
     background: #fff;
     color: #666;
-    line-height: 1.66667;
-}
-
-a {
-    color: #d4a259;
-    text-decoration: underline;
-    -webkit-transition: background 0.3s ease, color 0.3s ease;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-a:hover {
-    color: #1d1d1d;
-    text-decoration: none;
-}
-```
-
-## Tables
-
-You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
-
-<pre>
-| Title | Title |
-| ------| ----- |
-| Text  | Text  |
-| Text  | Text  |
-</pre>
-
-| Title | Title |
-| ----- | ----- |
-| Text  | Text  |
-| Text  | Text  |
