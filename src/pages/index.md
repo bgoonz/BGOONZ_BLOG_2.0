@@ -51,10 +51,10 @@ sections:
       - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
         image_alt: lorem-ipsum
         content: >
-          [As I learn to build web applications in React I will blog about it in
+          As I learn to build web applications in React I will blog about it in
           this series in an attempt to capture the questions that a complete
           beginner might encounter that a more seasoned developer would take for
-          granted!](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186)
+          granted!
         actions: []
         type: grid_item
         title: Beginner Guide React
