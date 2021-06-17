@@ -39,8 +39,6 @@ seo:
 template: docs
 ---
 
-<iframe src="https://bgoonz-blog-v3-0.netlify.app/contact/" ></iframe>
-
 
 
 
