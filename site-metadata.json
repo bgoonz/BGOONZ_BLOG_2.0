@@ -62,7 +62,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "portfolio",
+                        "label": "Portfolio",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
