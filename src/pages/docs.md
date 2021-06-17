@@ -7,7 +7,7 @@ seo:
   extra: []
   type: stackbit_page_meta
 template: page
-title: Embeded-Repos
+title: Site Layout
 image: images/perpetual-comet.jpeg
 ---
 # My Top Repos / Websites:
