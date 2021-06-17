@@ -17,6 +17,7 @@ sections:
             url: /docs
             style: link
         title: A Quick Guide To Big O
+        image: images/my-back.png
       - content: >
 
 
