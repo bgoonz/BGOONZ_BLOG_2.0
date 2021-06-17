@@ -19,10 +19,10 @@ sections:
           bar](https://githtmlpreview.netlify.app/)
 
 
-          Access-Control-Allow-Origin Header When Site A tries to fetch content
-          from Site B, Site B can send an Access-Control-Allow-Origin response
-          header to tell the browser that the content of this page is accessible
-          to certain origins. 
+          **Access-Control-Allow-Origin Header When Site A tries to fetch
+          content from Site B, Site B can send an Access-Control-Allow-Origin
+          response header to tell the browser that the content of this page is
+          accessible to certain origins.**
         actions:
           - label: Git Repo
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
