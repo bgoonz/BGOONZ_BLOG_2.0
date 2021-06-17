@@ -233,7 +233,7 @@ sections:
         new_window: true
       - label: Contact Form
         url: 'https://bgoonz-blog-v3-0.netlify.app/contact/'
-        style: link
+        style: primary
         icon_class: dev
         new_window: false
         no_follow: false
