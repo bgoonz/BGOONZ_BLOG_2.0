@@ -118,7 +118,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Resource-Archive-Server",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
