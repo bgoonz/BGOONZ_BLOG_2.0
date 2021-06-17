@@ -20,9 +20,7 @@ sections:
 
 
           **Access-Control-Allow-Origin Header When Site A tries to fetch
-          content from Site B, Site B can send an Access-Control-Allow-Origin
-          response header to tell the browser that the content of this page is
-          accessible to certain origins.**
+          content from Site B**
         actions:
           - label: Git Repo
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
