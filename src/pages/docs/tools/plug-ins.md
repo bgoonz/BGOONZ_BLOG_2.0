@@ -213,31 +213,3 @@ if (condition) {
   run some other code instead
 }
 ```
-
-Or to highlight the **CSS** code, specify `css` next to the tick marks before the fenced code block:
-
-<pre>
-```css
-body {
-  background: #fff;
-  color: #666;
-  line-height: 1.66667; }
-
-a {
-  color: #d4a259;
-  text-decoration: underline;
-  -webkit-transition: background .3s ease, color .3s ease;
-  transition: background .3s ease, color .3s ease; }
-
-a:hover {
-  color: #1d1d1d;
-  text-decoration: none; }
-```
-</pre>
-
-The rendered output looks like this:
-
-```css
-body {
-    background: #fff;
-    color: #666;
