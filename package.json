@@ -4,6 +4,7 @@
     "version": "0.0.1",
     "license": "MIT",
     "scripts": {
+        "main": "/vercel/path0/node_modules/lru-cache/index.js",
         "develop": "gatsby develop",
         "start": "npm run develop",
         "build": "gatsby build --prefix-paths",
@@ -37,6 +38,7 @@
         "react-player": "^2.9.0",
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
-        "sprintf-js": "1.1.2"
+        "sprintf-js": "1.1.2",
+        "vercel": "^23.0.1"
     }
 }
