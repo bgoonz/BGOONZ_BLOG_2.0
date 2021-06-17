@@ -26,4 +26,4 @@ excerpt: My Porjects
 
 # Portfolio:
 
-\<iframe src="https://bg-portfolio.netlify.app/" width="1000px" height="891px" frameborder="0">\</iframe>
+<iframe src="https://bg-portfolio.netlify.app/" width="1000px" height="891px" frameborder="0">\</iframe>
