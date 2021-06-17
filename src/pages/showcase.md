@@ -87,7 +87,7 @@ sections:
             url: 'https://panoramic-eggplant-452e4.netlify.app/'
             style: link
             icon_class: dev
-            new_window: false
+            new_window: true
             no_follow: false
             type: action
       - title: Aux Blog w NextJS
