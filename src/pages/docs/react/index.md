@@ -1,35 +1,33 @@
 ---
 title: React
 excerpt: >-
-  To make it easy to write documentation in plain Markdown, most React are
-  styled using Markdown elements with few additional CSS classes.
+    To make it easy to write documentation in plain Markdown, most React
+    are styled using Markdown elements with few additional CSS classes.
 seo:
-  title: React
-  description: This is the React page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: React
-      keyName: property
-    - name: 'og:description'
-      value: This is the React page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: React
-    - name: 'twitter:description'
-      value: This is the React page
+    title: React
+    description: This is the React page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: React
+          keyName: property
+        - name: 'og:description'
+          value: This is the React page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: React
+        - name: 'twitter:description'
+          value: This is the React page
 template: docs
 ---
 
-# index
-
 ### For more resources visit: <a id="36ee"></a>
 
-[bgoonz/React\_Notes\_V3A JavaScript library for building user interfaces React makes it painless to create interactive UIs. Design simple…github.com](https://github.com/bgoonz/React_Notes_V3)
+[bgoonz/React_Notes_V3A JavaScript library for building user interfaces React makes it painless to create interactive UIs. Design simple…github.com](https://github.com/bgoonz/React_Notes_V3)
 
 [Use this appendix to get any prerequisite concepts and terminology under your belt:](https://gist.github.com/bgoonz/e07d9e7917ae9e98807358d1e7cc4a67)![](https://miro.medium.com/freeze/max/60/0*bZjlAJDEmP6yfpKI.gif?q=20)![](https://miro.medium.com/max/647/0*bZjlAJDEmP6yfpKI.gif)
 
@@ -37,22 +35,22 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 ## React Demo <a id="b2b8"></a>
 
-* ex1 — A Basic React Component
-* ex2 — A Basic React Class Component
-* ex3 — A Class Component with State
-* ex4 — A Class Component that Updates State
-* ex5 — A Class Component that Iterates through State
-* ex6 — An Example of Parent and Child Components
+-   ex1 — A Basic React Component
+-   ex2 — A Basic React Class Component
+-   ex3 — A Class Component with State
+-   ex4 — A Class Component that Updates State
+-   ex5 — A Class Component that Iterates through State
+-   ex6 — An Example of Parent and Child Components
 
 With regards to converting an existing HTML, CSS, and JS site into React, first you’ll want to think about how to break up your site into components,
 
-* as well as think about what the general hierarchical component structure of your site will look like.
-* From there, it’s a simple matter of copying the relevant HTML for that component and throwing it into the **render method of your component file.**
-* _Any methods that are needed for that component to function properly can added onto your new component._
+-   as well as think about what the general hierarchical component structure of your site will look like.
+-   From there, it’s a simple matter of copying the relevant HTML for that component and throwing it into the **render method of your component file.**
+-   _Any methods that are needed for that component to function properly can added onto your new component._
 
 Once you’ve refactored your HTML components into React components, you’ll want to lay them out in the desired hierarchical structure
 
-* with children components being rendered by their parents, as well as ensuring that the parent components are passing down the necessary data as props to their children components.
+-   with children components being rendered by their parents, as well as ensuring that the parent components are passing down the necessary data as props to their children components.
 
 ex.\)
 
@@ -68,19 +66,19 @@ ex.\)
 Is equivalent to:
 
 ```jsx
-let NewComponent = React.createClass ({
-  render: function () {
-    return (
-      <div>
-        {/* Hello world */}
-        <div className="awesome" style={{border: '1px solid red'}}>
-          <label htmlFor="name">Enter your name: </label>
-          <input type="text" id="name" />
-        </div>
-        <p>Enter your HTML here</p>
-      </div>
-    );
-  },
+let NewComponent = React.createClass({
+    render: function () {
+        return (
+            <div>
+                {/* Hello world */}
+                <div className="awesome" style={{ border: '1px solid red' }}>
+                    <label htmlFor="name">Enter your name: </label>
+                    <input type="text" id="name" />
+                </div>
+                <p>Enter your HTML here</p>
+            </div>
+        );
+    }
 });
 ```
 
@@ -141,9 +139,9 @@ Components defined as classes currently provide more features . To define a Reac
 
 ```javascript
 class Welcome extends React.Component {
-  render() {
-    return <h1>Hello, {this.props.name}</h1>;
-  }
+    render() {
+        return <h1>Hello, {this.props.name}</h1>;
+    }
 }
 ```
 
@@ -155,11 +153,11 @@ The `render()` method is the only required method in a class component.
 
 When called, it should examine `this.props` and `this.state` and return one of the following types:
 
-* **React elements.** Typically created via [JSX](https://reactjs.org/docs/introducing-jsx.html). For example, `<div />` and `<MyComponent />` are React elements that instruct React to render a DOM node, or another user-defined component, respectively.
-* **Arrays and fragments.** Let you return multiple elements from render. See the documentation on [fragments](https://reactjs.org/docs/fragments.html) for more details.
-* **Portals**. Let you render children into a different DOM subtree. See the documentation on [portals](https://reactjs.org/docs/portals.html) for more details.
-* **String and numbers.** These are rendered as text nodes in the DOM.
-* **Booleans or `null`**. Render nothing. \(Mostly exists to support `return test && <Child />` pattern, where `test` is boolean.\)
+-   **React elements.** Typically created via [JSX](https://reactjs.org/docs/introducing-jsx.html). For example, `<div />` and `<MyComponent />` are React elements that instruct React to render a DOM node, or another user-defined component, respectively.
+-   **Arrays and fragments.** Let you return multiple elements from render. See the documentation on [fragments](https://reactjs.org/docs/fragments.html) for more details.
+-   **Portals**. Let you render children into a different DOM subtree. See the documentation on [portals](https://reactjs.org/docs/portals.html) for more details.
+-   **String and numbers.** These are rendered as text nodes in the DOM.
+-   **Booleans or `null`**. Render nothing. \(Mostly exists to support `return test && <Child />` pattern, where `test` is boolean.\)
 
 The `render()` function should be pure, meaning that it does not modify component state, it returns the same result each time it’s invoked, and it does not directly interact with the browser.
 
@@ -176,9 +174,7 @@ import React, { Component } from 'react';
 
 class BasicClassComponent extends Component {
     render() {
-        return (
-            <div>Hello World!</div>
-        );
+        return <div>Hello World!</div>;
     }
 }
 
@@ -227,9 +223,7 @@ class ClassComponentWithState extends Component {
     }
 
     render() {
-        return (
-            <div>Hello World!</div>
-        );
+        return <div>Hello World!</div>;
     }
 }
 
@@ -242,8 +236,8 @@ export default ClassComponentWithState;
 
 ### Point being, the constructor function and the call to the `super` function are _not_ associated with React, they are associated with all JavaScript classes. <a id="7791"></a>
 
-* Then there is the **`this.state` property inside the constructor function that is set as an empty object**.
-* We're adding a property called `state` to our class and setting it to an empty object.
+-   Then there is the **`this.state` property inside the constructor function that is set as an empty object**.
+-   We're adding a property called `state` to our class and setting it to an empty object.
 
 ### State objects in React are always just plain old objects. <a id="2e40"></a>
 
@@ -271,9 +265,7 @@ class ClassComponentWithState extends Component {
     }
 
     render() {
-        return (
-            <div>{`Here's some data to render: ${this.state.someData}`}</div>
-        );
+        return <div>{`Here's some data to render: ${this.state.someData}`}</div>;
     }
 }
 
@@ -282,9 +274,9 @@ export default ClassComponentWithState;
 
 We added a key-value pair to our state object inside our constructor.
 
-* Then we changed the contents of the render function.
-* Now, it’s actually rendering the data that we have inside the state object.
-* Notice that inside the div tags we’re using a template string literal so that we can access the value of `this.state.someData` straight inside of our rendered content.
+-   Then we changed the contents of the render function.
+-   Now, it’s actually rendering the data that we have inside the state object.
+-   Notice that inside the div tags we’re using a template string literal so that we can access the value of `this.state.someData` straight inside of our rendered content.
 
 **With Reacts newest version, we can actually now add state to a component without explicitly defining a constructor on the class. We can refactor our class component to look like this:**
 
@@ -295,9 +287,7 @@ class ClassComponentWithState extends Component {
     };
 
     render() {
-        return (
-            <div>{`Here's some data to render: ${this.state.someData}`}</div>
-        );
+        return <div>{`Here's some data to render: ${this.state.someData}`}</div>;
     }
 }
 
@@ -324,30 +314,30 @@ So now let’s walk through how to update component state.
 import React, { Component } from 'react';
 
 class ClassComponentUpdatingState extends Component {
-  constructor() {
-    super();
-    this.state = {
-      aNumber: 8
+    constructor() {
+        super();
+        this.state = {
+            aNumber: 8
+        };
+    }
+
+    increment = () => {
+        this.setState({ aNumber: ++this.state.aNumber });
     };
-  }
 
-  increment = () => {
-    this.setState({ aNumber: ++this.state.aNumber });
-  };
+    decrement = () => {
+        this.setState({ aNumber: --this.state.aNumber });
+    };
 
-  decrement = () => {
-    this.setState({ aNumber: --this.state.aNumber });
-  };
-
-  render() {
-    return (
-      <div>
-        <div>{`Our number: ${this.state.aNumber}`}</div>
-        <button onClick={this.increment}>+</button>
-        <button onClick={this.decrement}>-</button>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <div>{`Our number: ${this.state.aNumber}`}</div>
+                <button onClick={this.increment}>+</button>
+                <button onClick={this.decrement}>-</button>
+            </div>
+        );
+    }
 }
 
 export default ClassComponentUpdatingState;
@@ -367,7 +357,7 @@ The more interesting thing is what is going on within the bodies of these method
 
 ### Each calls the `setState` function. <a id="3d7e"></a>
 
-* `setState` in fact _is_ provided to us by React.
+-   `setState` in fact _is_ provided to us by React.
 
 It is the standard way to update a component's state.
 
@@ -490,7 +480,9 @@ class ClassComponentIteratingState extends Component {
     render() {
         return (
             <div>
-                {this.state.ingredients.map(ingredient => <div>{ingredient}</div>)}
+                {this.state.ingredients.map((ingredient) => (
+                    <div>{ingredient}</div>
+                ))}
                 <form onSubmit={this.addIngredient}>
                     <input type="text" onChange={this.handleIngredientInput} placeholder="Add a new ingredient" value={this.state.newIngredient} />
                 </form>
@@ -512,9 +504,9 @@ This event object is part of the browser's API.
 
 When we interact with some DOM element, **such as clicking on an HTML button, the** _**function that is invoked upon that button being clicked**_ **actually receives the event object.**
 
-* So when we type some input into an input tag, we're able grab each character that was typed into the input field through the event object parameter.
-* The `handleIngredientInput` method is what gets invoked every time the user presses a key to enter text in the input box for adding a new ingredient.
-* Every character the user types gets persisted in the `newIngredient` field on the state object.
+-   So when we type some input into an input tag, we're able grab each character that was typed into the input field through the event object parameter.
+-   The `handleIngredientInput` method is what gets invoked every time the user presses a key to enter text in the input box for adding a new ingredient.
+-   Every character the user types gets persisted in the `newIngredient` field on the state object.
 
 We're able to grab the text in the input box using `event.target.value`
 
@@ -607,7 +599,9 @@ class ParentComponent extends Component {
     render() {
         return (
             <div>
-                {this.state.ingredients.map(ingredient => <ChildComponent thing={ingredient} />)}
+                {this.state.ingredients.map((ingredient) => (
+                    <ChildComponent thing={ingredient} />
+                ))}
                 <form onSubmit={this.addIngredient}>
                     <input type="text" onChange={this.handleIngredientInput} placeholder="Add a new ingredient" value={this.state.newIngredient} />
                 </form>
@@ -646,23 +640,25 @@ Let’s take a look now at the Child Component. It serves two purposes:
 import React, { Component } from 'react';
 
 class ChildComponent extends Component {
-  constructor() {
-    super();
-    this.state = {
-      clicked: false
+    constructor() {
+        super();
+        this.state = {
+            clicked: false
+        };
+    }
+
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked });
     };
-  }
 
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
-  };
-
-  render() {
-    const styles = this.state.clicked ? { textDecoration: 'line-through'} : { textDecoration: 'none' };
-    return (
-      <div style={styles} onClick={this.handleClick}>{this.props.thing}</div>
-    );
-  }
+    render() {
+        const styles = this.state.clicked ? { textDecoration: 'line-through' } : { textDecoration: 'none' };
+        return (
+            <div style={styles} onClick={this.handleClick}>
+                {this.props.thing}
+            </div>
+        );
+    }
 }
 
 export default ChildComponent;
@@ -690,13 +686,13 @@ The overall structure of React applications can be represented as a hierarchical
 
 > React manages the **creation and continuous updating of DOM nodes in your Web page**.
 
-* _It does not handle_ [_AJAX_ ](https://skillcrush.com/blog/what-is-ajax/)_requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in ‘state’. Because it’s function is so limited in scope you may hear it referred to as a library… \(not a framework … like Angular for example\) and you may also hear it described as unopinionated._
+-   _It does not handle_ [_AJAX_ ](https://skillcrush.com/blog/what-is-ajax/)_requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in ‘state’. Because it’s function is so limited in scope you may hear it referred to as a library… \(not a framework … like Angular for example\) and you may also hear it described as unopinionated._
 
 ### 2. Why use react? <a id="643d"></a>
 
-* Works for teams and helps UI workflow patterns
-* The components can be reusable
-* Componentized UI is the future of web dev
+-   Works for teams and helps UI workflow patterns
+-   The components can be reusable
+-   Componentized UI is the future of web dev
 
 ![](https://miro.medium.com/max/60/1*pFe_v7Ea--vfdmvR3UcunA.png?q=20)![](https://miro.medium.com/max/846/1*pFe_v7Ea--vfdmvR3UcunA.png)
 
@@ -709,9 +705,9 @@ look like, React provides the same mechanism in its **`createElement`** method o
 
 A number of other common definitions attempt to define it by simply contrasting it with imperative programming. For example:
 
-* A high-level program that describes what a computation should perform.
-* Any programming language that lacks [side effects](https://en.wikipedia.org/wiki/Side_effect_%28computer_science%29)
-* A language with a clear correspondence to [mathematical logic](https://en.wikipedia.org/wiki/Mathematical_logic).[\[5\]](https://en.wikipedia.org/wiki/Declarative_programming#cite_note-5)
+-   A high-level program that describes what a computation should perform.
+-   Any programming language that lacks [side effects](https://en.wikipedia.org/wiki/Side_effect_%28computer_science%29)
+-   A language with a clear correspondence to [mathematical logic](https://en.wikipedia.org/wiki/Mathematical_logic).[\[5\]](https://en.wikipedia.org/wiki/Declarative_programming#cite_note-5)
 
 These definitions overlap substantially.
 
@@ -727,8 +723,8 @@ _In a_ [_pure functional language_](https://en.wikipedia.org/wiki/Pure_functiona
 
 [Based on the concept of purity in functional programming paradigms, a function is said to be pure if:](https://blog.logrocket.com/react-pure-components-functional/#whatisareactpurecomponent)
 
-* Its return value is only determined by its input values
-* Its return value is always the same for the same input values
+-   Its return value is only determined by its input values
+-   Its return value is always the same for the same input values
 
 A React component is considered pure if it renders the same output for the same state and props. For class components like this, React provides the `PureComponent` base class. Class components that extend the `React.PureComponent` class are treated as pure components.
 
@@ -744,29 +740,26 @@ If you want React to treat a functional component as a pure component, you’ll 
 
 ```jsx
 function PercentageStat({ label, score = 0, total = Math.max(1, score) }) {
-  return (
-    <div>
-      <h6>{ label }</h6>
-      <span>{ Math.round(score / total * 100) }%</span>
-    </div>
-  )
+    return (
+        <div>
+            <h6>{label}</h6>
+            <span>{Math.round((score / total) * 100)}%</span>
+        </div>
+    );
 }
-
 
 // CONVERTED TO PURE COMPONENT
 class PercentageStat extends React.PureComponent {
+    render() {
+        const { label, score = 0, total = Math.max(1, score) } = this.props;
 
-  render() {
-    const { label, score = 0, total = Math.max(1, score) } = this.props;
-
-    return (
-      <div>
-        <h6>{ label }</h6>
-        <span>{ Math.round(score / total * 100) }%</span>
-      </div>
-    )
-  }
-
+        return (
+            <div>
+                <h6>{label}</h6>
+                <span>{Math.round((score / total) * 100)}%</span>
+            </div>
+        );
+    }
 }
 ```
 
@@ -798,36 +791,37 @@ makes React one of the speediest front-end libraries available.![](https://miro.
 
 ### 3. Who uses react? <a id="c395"></a>
 
-* Companies such as Facebook app for android and Instagram
-* [Here](https://facebook.github.io/react-native/showcase.html) is a link to a list of other companies who use react.
+-   Companies such as Facebook app for android and Instagram
+-   [Here](https://facebook.github.io/react-native/showcase.html) is a link to a list of other companies who use react.
 
 ![](https://miro.medium.com/max/60/1*Cn9JvaSmkxdLwgXIO9Y8iQ.png?q=20)![](https://miro.medium.com/max/1027/1*Cn9JvaSmkxdLwgXIO9Y8iQ.png)Who uses react
 
 ### 4. Setting up react <a id="ba44"></a>
 
-* React can be set up in CodePen for quick practice development by adding react.js, react-dom and babel.
-* It can also be set up by downloading a react starter project from GitHub installing node and following these [instructions](https://github.com/hjb23/ReduxSimpleStarter).
-* Alternatively it can be set up through NPM like [this](https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr).
+-   React can be set up in CodePen for quick practice development by adding react.js, react-dom and babel.
+-   It can also be set up by downloading a react starter project from GitHub installing node and following these [instructions](https://github.com/hjb23/ReduxSimpleStarter).
+-   Alternatively it can be set up through NPM like [this](https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr).
 
 ### 5. Intro to eco system <a id="6ef8"></a>
 
-* Composition, being able to wrap up sections of code into there own containers so they can be re used.
-* How to make a large application? by combining small components to create a larger complex application.
+-   Composition, being able to wrap up sections of code into there own containers so they can be re used.
+-   How to make a large application? by combining small components to create a larger complex application.
 
 ### 6. Imperative vs Declarative [\(React is Declarative\)](https://medium.com/trabe/why-is-react-declarative-a-story-about-function-components-aaae83198f79) <a id="ea7a"></a>
 
-* **Imperative, ‘telling to computer HOW to do something’ e.g looping over an array of numbers using a for loop.**
-* **Declarative, is concerned about WHAT we want to happen. e.g using a reduce method on an array.**
-* Benefits of using declarative code:
-* Reduce side effects
-* Minimize mutability
-* Less Bugs
+-   **Imperative, ‘telling to computer HOW to do something’ e.g looping over an array of numbers using a for loop.**
+-   **Declarative, is concerned about WHAT we want to happen. e.g using a reduce method on an array.**
+-   Benefits of using declarative code:
+-   Reduce side effects
+-   Minimize mutability
+-   Less Bugs
 
 ### 7. Unidirectional Data Flow <a id="e6f2"></a>
 
-* As the state collects from user interaction, the UI gets updated.
-* Explicit Mutations
-* Whenever the state needs to be updated in our application setState has to be called.
+-   As the state collects from user interaction, the UI gets updated.
+
+1. Explicit Mutations
+2. Whenever the state needs to be updated in our application setState has to be called.
 
 ```text
 this.setState({
@@ -837,12 +831,12 @@ this.setState({
 
 ### 7.1. First component <a id="d1c5"></a>
 
-* Components are the building blocks of React.
-* They are similar to a collection of HTML,CSS, JS and data specific to that component.
-* They can be defined in pure JavaScript or JSX.
-* Data is either received from a component’s parent component, or it’s contained in the component itself.
-* Applications can be separated into smaller components like this…
-* React components can be created using ES6 class like this.
+-   Components are the building blocks of React.
+-   They are similar to a collection of HTML,CSS, JS and data specific to that component.
+-   They can be defined in pure JavaScript or JSX.
+-   Data is either received from a component’s parent component, or it’s contained in the component itself.
+-   Applications can be separated into smaller components like this…
+-   React components can be created using ES6 class like this.
 
 ```text
 import React from 'react';class Hello extends React.Component {
@@ -852,13 +846,13 @@ import React from 'react';class Hello extends React.Component {
 }export default Hello;
 ```
 
-* At the top with have the code to bring react and react dom libraries in.
-* React library is used for the react syntax.
-* React DOM is used to update the DOM.
-* We then have the Class section which creates the component.
-* Render\(\) describes the specific UI for the component.
-* Return is used to return the JSX
-* And Finally ReactDOM.render is used to update the DOM.
+-   At the top with have the code to bring react and react dom libraries in.
+-   React library is used for the react syntax.
+-   React DOM is used to update the DOM.
+-   We then have the Class section which creates the component.
+-   Render\(\) describes the specific UI for the component.
+-   Return is used to return the JSX
+-   And Finally ReactDOM.render is used to update the DOM.
 
 ### 8. Data flow with props <a id="91ff"></a>
 
@@ -866,21 +860,21 @@ Small examples of data flow, see if you can get the code to work.
 
 [https://codepen.io/bgoonz/embed/WNpoLbg?default-tab=&theme-id=](https://codepen.io/bgoonz/embed/WNpoLbg?default-tab=&theme-id=)
 
-{% embed url="https://codepen.io/bgoonz/embed/BaWQGQp?default-tab=&theme-id=" caption="" %}
+{% embed url="https://codepen.io/bgoonz/embed/BaWQGQp?default-tab=&theme-id=" %}
 
 ### 9. Creating lists with map <a id="6790"></a>
 
-{% embed url="https://codepen.io/bgoonz/embed/XWMNoJr?default-tab=&theme-id=" caption="" %}
+{% embed url="https://codepen.io/bgoonz/embed/XWMNoJr?default-tab=&theme-id=" %}
 
 The parent component passes down to the child component as props.
 
 Using props to access names and map to loop through each list item. Then passing this by using props.
 
-{% embed url="https://codepen.io/bgoonz/embed/gOmLZbX?default-tab=&theme-id=" caption="" %}
+{% embed url="https://codepen.io/bgoonz/embed/gOmLZbX?default-tab=&theme-id=" %}
 
 Checking data to see if Boolean is true then adding detail to the list.
 
-{% embed url="https://codepen.io/bgoonz/embed/WNpoLbg?default-tab=&theme-id=" caption="" %}
+{% embed url="https://codepen.io/bgoonz/embed/WNpoLbg?default-tab=&theme-id=" %}
 
 ### 10. Prop types <a id="18ed"></a>
 
@@ -924,6 +918,5 @@ React allows you to interface with other libraries and frameworks. This example 
 
 React-Tutorial-1:[react-tutorial-1A React repl by bgoonzreplit.com](https://replit.com/@bgoonz/react-tutorial-1)
 
-React Boilerplate:[React.js + Babel + Webpack BoilerplateCreated by @eankeen \| The ultimate trifecta - React, Babel, and Webpack - complete with hot module reloading and a…replit.com    
+React Boilerplate:[React.js + Babel + Webpack BoilerplateCreated by @eankeen \| The ultimate trifecta - React, Babel, and Webpack - complete with hot module reloading and a…replit.com  
 ](https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js)
-
