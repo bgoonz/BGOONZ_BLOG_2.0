@@ -2,24 +2,24 @@
 title: Plug-ins
 weight: 2
 seo:
-    title: Plug-ins
-    description: This is the plug-ins page
+    title: Gatsby Plugins For This Sites Content Model
+    description: This is the Gatsby Plugins For This Sites Content Model page
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value: Plug-ins
+          value: Gatsby Plugins For This Sites Content Model
           keyName: property
         - name: 'og:description'
-          value: This is the plug-ins page
+          value: This is the Gatsby Plugins For This Sites Content Model page
           keyName: property
         - name: 'twitter:card'
           value: summary
         - name: 'twitter:title'
-          value: Plug-ins
+          value: Gatsby Plugins For This Sites Content Model
         - name: 'twitter:description'
-          value: This is the plug-ins page
+          value: This is the Gatsby Plugins For This Sites Content Model page
 template: docs
 ---
 
