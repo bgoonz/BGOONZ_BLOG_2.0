@@ -41,20 +41,16 @@ sections:
       - title: Data Structures Interactive Learning Hub
         title_url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
         image: images/3.jpg
-        content: >+
+        content: >
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
 
 
-          #### The idea behind big O notation
-
+          ####
 
 
           Big O notation is the language we use for talking about how long an
           algorithm takes to run. It's how we compare the efficiency of
           different approaches to a problem.
-
-
-
         actions:
           - label: Live Site
             url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
