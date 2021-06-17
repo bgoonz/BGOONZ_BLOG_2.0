@@ -104,6 +104,7 @@ sections:
           ## &#xA;![](/\_static/app-assets/spectacular-turmeric.png)
         actions: []
         type: grid_item
+        image: images/spectacular-turmeric.png
       - title: Convolutional Neural Networks
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
