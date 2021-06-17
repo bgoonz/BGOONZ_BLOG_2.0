@@ -231,6 +231,13 @@ sections:
         url: 'mailto:bryan.guner@gmail.com'
         style: primary
         new_window: true
+      - label: lorem-ipsum
+        url: '#'
+        style: link
+        icon_class: dev
+        new_window: false
+        no_follow: false
+        type: action
 seo:
   title: Stackbit Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
