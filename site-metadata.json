@@ -54,7 +54,7 @@
                         "url": "https://bg-portfolio.netlify.app/"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "posts",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
