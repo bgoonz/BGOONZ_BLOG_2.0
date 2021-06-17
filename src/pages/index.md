@@ -66,16 +66,8 @@ sections:
         type: grid_item
         image: images/pleasant-birch.png
         title: Scope & Closure
-      - image_alt: lorem-ipsum
+      - image_alt: Every idea needs a medium
         content: >
-          # My Medium Blog
-
-
-          ![](/\_static/app-assets/beige-maple.png)
-
-
-
-
           [PostgreSQL Cheat Sheet, Everything You Need to Get Started With
           VSCode + Extensions & Resources, Super Simple Intro To HTML, 
           Understanding Git... etc....
@@ -83,7 +75,10 @@ sections:
           ](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
         actions: []
         type: grid_item
-        title: React Guide
+        title: My Medium Blog
+        image: images/curious-mustard.png
+        title_url: >-
+          https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
