@@ -7,30 +7,49 @@ var list = require('./handlers/list')
 var wrap = require('./wrap')
 
 function generateFootnotes(h) {
-  var footnotes = h.footnotes
-  var length = footnotes.length
+  var footnoteById = h.footnoteById
+  var footnoteOrder = h.footnoteOrder
+  var length = footnoteOrder.length
   var index = -1
   var listItems = []
   var def
-
-  if (!length) {
-    return null
-  }
+  var backReference
+  var content
+  var tail
 
   while (++index < length) {
-    def = footnotes[index]
+    def = footnoteById[footnoteOrder[index].toUpperCase()]
 
-    listItems[index] = {
+    if (!def) {
+      continue
+    }
+
+    content = def.children.concat()
+    tail = content[content.length - 1]
+    backReference = {
+      type: 'link',
+      url: '#fnref-' + def.identifier,
+      data: {hProperties: {className: ['footnote-backref']}},
+      children: [{type: 'text', value: '↩'}]
+    }
+
+    if (!tail || tail.type !== 'paragraph') {
+      tail = {type: 'paragraph', children: []}
+      content.push(tail)
+    }
+
+    tail.children.push(backReference)
+
+    listItems.push({
       type: 'listItem',
       data: {hProperties: {id: 'fn-' + def.identifier}},
-      children: def.children.concat({
-        type: 'link',
-        url: '#fnref-' + def.identifier,
-        data: {hProperties: {className: ['footnote-backref']}},
-        children: [{type: 'text', value: '↩'}]
-      }),
+      children: content,
       position: def.position
-    }
+    })
+  }
+
+  if (listItems.length === 0) {
+    return null
   }
 
   return h(
@@ -40,11 +59,7 @@ function generateFootnotes(h) {
     wrap(
       [
         thematicBreak(h),
-        list(h, {
-          type: 'list',
-          ordered: true,
-          children: listItems
-        })
+        list(h, {type: 'list', ordered: true, children: listItems})
       ],
       true
     )

@@ -1,42 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import loader, { PageResourceStatus } from "./loader"
-import redirects from "./redirects.json"
+import { maybeGetBrowserRedirect } from "./redirect-utils.js"
 import { apiRunner } from "./api-runner-browser"
 import emitter from "./emitter"
 import { RouteAnnouncerProps } from "./route-announcer-props"
-import { navigate as reachNavigate } from "@reach/router"
-import { globalHistory } from "@reach/router/lib/history"
+import { navigate as reachNavigate } from "@gatsbyjs/reach-router"
+import { globalHistory } from "@gatsbyjs/reach-router/lib/history"
 import { parsePath } from "gatsby-link"
 
-// Convert to a map for faster lookup in maybeRedirect()
-
-const redirectMap = new Map()
-const redirectIgnoreCaseMap = new Map()
-
-redirects.forEach(redirect => {
-  if (redirect.ignoreCase) {
-    redirectIgnoreCaseMap.set(redirect.fromPath, redirect)
-  } else {
-    redirectMap.set(redirect.fromPath, redirect)
-  }
-})
-
 function maybeRedirect(pathname) {
-  let redirect = redirectMap.get(pathname)
-  if (!redirect) {
-    redirect = redirectIgnoreCaseMap.get(pathname.toLowerCase())
-  }
+  const redirect = maybeGetBrowserRedirect(pathname)
 
   if (redirect != null) {
-    if (process.env.NODE_ENV !== `production`) {
-      if (!loader.isPageNotFound(pathname)) {
-        console.error(
-          `The route "${pathname}" matches both a page and a redirect; this is probably not intentional.`
-        )
-      }
-    }
-
     window.___replace(redirect.toPath)
     return true
   } else {
@@ -72,10 +48,7 @@ const navigate = (to, options = {}) => {
   }
 
   let { pathname } = parsePath(to)
-  let redirect = redirectMap.get(pathname)
-  if (!redirect) {
-    redirect = redirectIgnoreCaseMap.get(pathname.toLowerCase())
-  }
+  const redirect = maybeGetBrowserRedirect(pathname)
 
   // If we're redirecting, just replace the passed in pathname
   // to the one we want to redirect to.
@@ -149,6 +122,8 @@ function shouldUpdateScroll(prevRouterProps, { location }) {
     routerProps: { location },
     getSavedScrollPosition: args => [
       0,
+      // FIXME this is actually a big code smell, we should fix this
+      // eslint-disable-next-line @babel/no-invalid-this
       this._stateStorage.read(args, args.key),
     ],
   })
@@ -268,4 +243,4 @@ RouteUpdates.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export { init, shouldUpdateScroll, RouteUpdates }
+export { init, shouldUpdateScroll, RouteUpdates, maybeGetBrowserRedirect }

@@ -13,7 +13,7 @@ var _server = require("react-dom/server");
 
 var _lodash = require("lodash");
 
-var _path = require("path");
+var _path = _interopRequireDefault(require("path"));
 
 var _apiRunnerSsr = _interopRequireDefault(require("./api-runner-ssr"));
 
@@ -35,7 +35,17 @@ const testRequireError = (moduleName, err) => {
   return regex.test(firstLine);
 };
 
-const stats = JSON.parse(_fs.default.readFileSync(`${process.cwd()}/public/webpack.stats.json`, `utf-8`));
+let cachedStats;
+
+const getStats = publicDir => {
+  if (cachedStats) {
+    return cachedStats;
+  } else {
+    cachedStats = JSON.parse(_fs.default.readFileSync(_path.default.join(publicDir, `webpack.stats.json`), `utf-8`));
+    return cachedStats;
+  }
+};
+
 let Html;
 
 try {
@@ -51,7 +61,7 @@ try {
 
 Html = Html && Html.__esModule ? Html.default : Html;
 
-var _default = (pagePath, isClientOnlyPage, callback) => {
+var _default = (pagePath, isClientOnlyPage, publicDir, error, callback) => {
   let bodyHtml = ``;
   let headComponents = [/*#__PURE__*/_react.default.createElement("meta", {
     key: "environment",
@@ -63,6 +73,17 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
   let preBodyComponents = [];
   let postBodyComponents = [];
   let bodyProps = {};
+
+  if (error) {
+    postBodyComponents.push([/*#__PURE__*/_react.default.createElement("script", {
+      key: "dev-ssr-error",
+      dangerouslySetInnerHTML: {
+        __html: `window._gatsbyEvents = window._gatsbyEvents || []; window._gatsbyEvents.push(["FAST_REFRESH", { action: "SHOW_DEV_SSR_ERROR", payload: ${JSON.stringify(error)} }])`
+      }
+    }), /*#__PURE__*/_react.default.createElement("noscript", {
+      key: "dev-ssr-error-noscript"
+    }, /*#__PURE__*/_react.default.createElement("h1", null, "Failed to Server Render (SSR)"), /*#__PURE__*/_react.default.createElement("h2", null, "Error message:"), /*#__PURE__*/_react.default.createElement("p", null, error.sourceMessage), /*#__PURE__*/_react.default.createElement("h2", null, "File:"), /*#__PURE__*/_react.default.createElement("p", null, error.source, ":", error.line, ":", error.column), /*#__PURE__*/_react.default.createElement("h2", null, "Stack:"), /*#__PURE__*/_react.default.createElement("pre", null, /*#__PURE__*/_react.default.createElement("code", null, error.stack)))]);
+  }
 
   const generateBodyHTML = () => {
     const setHeadComponents = components => {
@@ -113,12 +134,13 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
 
     const getPageDataPath = path => {
       const fixedPagePath = path === `/` ? `index` : path;
-      return (0, _path.join)(`page-data`, fixedPagePath, `page-data.json`);
+      return _path.default.join(`page-data`, fixedPagePath, `page-data.json`);
     };
 
     const getPageData = pagePath => {
       const pageDataPath = getPageDataPath(pagePath);
-      const absolutePageDataPath = (0, _path.join)(process.cwd(), `public`, pageDataPath);
+
+      const absolutePageDataPath = _path.default.join(publicDir, pageDataPath);
 
       const pageDataJson = _fs.default.readFileSync(absolutePageDataPath, `utf8`);
 
@@ -136,6 +158,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
     } = pageData;
     let scriptsAndStyles = (0, _lodash.flatten)([`commons`].map(chunkKey => {
       const fetchKey = `assetsByChunkName[${chunkKey}]`;
+      const stats = getStats(publicDir);
       let chunks = (0, _lodash.get)(stats, fetchKey);
       const namedChunkGroups = (0, _lodash.get)(stats, `namedChunkGroups`);
 
@@ -155,17 +178,19 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
       });
       namedChunkGroups[chunkKey].assets.forEach(asset => chunks.push({
         rel: `preload`,
-        name: asset
+        name: asset.name
       }));
       const childAssets = namedChunkGroups[chunkKey].childAssets;
 
       for (const rel in childAssets) {
-        chunks = (0, _lodash.concat)(chunks, childAssets[rel].map(chunk => {
-          return {
-            rel,
-            name: chunk
-          };
-        }));
+        if (childAssets.hasownProperty(rel)) {
+          chunks = (0, _lodash.concat)(chunks, childAssets[rel].map(chunk => {
+            return {
+              rel,
+              name: chunk
+            };
+          }));
+        }
       }
 
       return chunks;
@@ -192,9 +217,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
           ...pageData.result,
           params: { ...(0, _findPath.grabMatchParams)(this.props.location.pathname),
             ...(((_pageData$result = pageData.result) === null || _pageData$result === void 0 ? void 0 : (_pageData$result$page = _pageData$result.pageContext) === null || _pageData$result$page === void 0 ? void 0 : _pageData$result$page.__params) || {})
-          },
-          // pathContext was deprecated in v2. Renamed to pageContext
-          pathContext: pageData.result ? pageData.result.pageContext : undefined
+          }
         };
         let pageElement;
 
@@ -301,6 +324,9 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
       key: `polyfill`,
       src: "/polyfill.js",
       noModule: true
+    }), /*#__PURE__*/_react.default.createElement("script", {
+      key: `framework`,
+      src: "/framework.js"
     }), /*#__PURE__*/_react.default.createElement("script", {
       key: `commons`,
       src: "/commons.js"
