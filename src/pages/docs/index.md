@@ -87,17 +87,4 @@ excerpt: docs quick reference
 
 *   [**/docs/My-Content/my-websites/**](https://bgoonz-blog.netlify.app/docs/My-Content/my-websites/)
 
-****
-
-```
-.├── blog│   ├── community.md│   ├── data-structures.md│   ├── index.md│   ├── my-medium.md│   └── python.md├── docs│   ├── about│   │   ├── index.md│   │   ├── me.md│   │   └── resume.md│   ├── faq│   │   └── index.md│   ├── index.md│   ├── links│   │   ├── index.md│   │   ├── my-websites.md│   │   └── Social.md│   ├── portfolio│   │   └── dtw-platform.md│   ├── portfolio-web.md│   ├── python.md│   ├── quick-reference│   │   ├── Emmet.md│   │   ├── index.md│   │   ├── installation.md│   │   └── new-repo-instructions.md│   ├── react│   │   ├── createReactApp.md│   │   └── index.md│   ├── resources.md│   └── tools│       ├── default-readme.md│       ├── Git-Html-Preview.md│       ├── index.md│       └── plug-ins.md├── docs.md├── ds-algo-overview.md├── index.md├── notes-template.md├── review.md├── showcase.md├── style-guide.md└── tree.md
-9 directories, 35 files
-
-
-
-```
-
-```
-```
-
-****
+***
