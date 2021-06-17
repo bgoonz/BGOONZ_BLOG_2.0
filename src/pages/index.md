@@ -63,6 +63,7 @@ sections:
         actions: []
         type: grid_item
         title: Beginner Guide React
+        image: images/successful-panda.gif
       - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
         image_alt: lorem-ipsum
         content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. If a variable or other expression is not in the current scope, then it is unavailable for use. If we declare a variable, this variable will only be valid in the scope where we declared it. We can have nested scopes, but we'll see that in a little bit.\n"
