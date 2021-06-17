@@ -21,7 +21,7 @@ sections:
           **Access-Control-Allow-Origin Header When Site A tries to fetch
           content from Site B**
         actions:
-          - label: Git Repo
+          - label: Live Site
             url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
             style: icon
             icon_class: github
