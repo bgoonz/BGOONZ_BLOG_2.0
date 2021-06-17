@@ -1,18 +1,18 @@
 # Array-CB-Methods
 
-### Review of Concepts
+## Review of Concepts
 
-#### 1. Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.
+### 1. Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.
 
 Here are some of the reasons:
 
--   A function is an instance of the Object type
--   A function can have properties and has a link back to its constructor method
--   You can store the function in a variable
--   You can pass the function as a parameter to another function
--   You can return the function from a function
+* A function is an instance of the Object type
+* A function can have properties and has a link back to its constructor method
+* You can store the function in a variable
+* You can pass the function as a parameter to another function
+* You can return the function from a function
 
-#### 2. Given a code snippet containing an anonymous callback, a named callback, and multiple console.logs, predict what will be printed
+### 2. Given a code snippet containing an anonymous callback, a named callback, and multiple console.logs, predict what will be printed
 
 ```javascript
 function foo(callback) {
@@ -24,11 +24,11 @@ function bar() {
     console.log('banana');
 }
 
-const fruitBasket = function () {
+const fruitBasket = function() {
     console.log('apple');
     bar();
     foo(bar);
-    foo(function () {
+    foo(function() {
         console.log('orange');
     });
     console.log('pear');
@@ -39,7 +39,7 @@ fruitBasket();
 
 You should be able to predict what is going to be logged when we call fruitBasket.
 
-#### 3. Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
+### 3. Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
 
 ```javascript
 function greaterValue(value, cb1, cb2) {
@@ -55,11 +55,11 @@ function greaterValue(value, cb1, cb2) {
     return res2;
 }
 
-let negate = function (num) {
+let negate = function(num) {
     return num * -1;
 };
 
-let addOne = function (num) {
+let addOne = function(num) {
     return num + 1;
 };
 
@@ -69,7 +69,7 @@ console.log(greaterValue(-2, negate, addOne));
 
 Note: we do not invoke `negate` or `addOne` \(by using `()` to call them\), we are passing the function itself.
 
-#### 4. Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array\#map.
+### 4. Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array\#map.
 
 ```javascript
 function myMap(arr, callback) {
@@ -87,14 +87,14 @@ function myMap(arr, callback) {
     return mapped;
 }
 
-let double = function (num) {
+let double = function(num) {
     return num * 2;
 };
 
 console.log(myMap([1, 2, 3], double));
 ```
 
-#### 5. Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array\#filter.
+### 5. Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array\#filter.
 
 ```javascript
 function myFilter(arr, callback) {
@@ -112,7 +112,7 @@ function myFilter(arr, callback) {
 }
 ```
 
-#### 6. Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array\#every.
+### 6. Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array\#every.
 
 ```javascript
 function myEvery(arr, callback) {
@@ -127,7 +127,7 @@ function myEvery(arr, callback) {
 }
 ```
 
-### Practice:
+## Practice:
 
 ```java
 const createMeowValue = () => {
@@ -195,3 +195,4 @@ function createSmoothie(ingredient) {
 // return an array
 // DO NOT USE forEach
 ```
+

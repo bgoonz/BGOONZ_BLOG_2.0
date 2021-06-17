@@ -5,7 +5,7 @@
 // Take in any remaining parameters passed into a function
 // and places them in an array
 
-// JavaScript will NOT tell us if we provided the wrong
+// JavaScript will NOT tell us if we provided the wrong 
 // number of arguments to a function
 // Used if we want to capture all arguments being passed to a function
 // The rest parameter must be the last argument in a function definition.
@@ -17,18 +17,18 @@ function smoothie(ingredient1, ingredient2) {
 
 // smoothie('mango', 'apple');
 
-// We can use rest parameters to make the function more dynamic and
+// We can use rest parameters to make the function more dynamic and 
 // take in any number of arguments.
 
 function restSmoothie(ingredient1, ...otherIngredients) {
     let string = 'My smoothie has ' + ingredient1;
-    console.log('\n --- Displaying Rest Parameters: ---');
+    console.log('\n --- Displaying Rest Parameters: ---')
     console.log(otherIngredients);
-    console.log(' --- End Display --- \n');
+    console.log(' --- End Display --- \n')
 
-    otherIngredients.forEach(function (ingredient) {
+    otherIngredients.forEach(function(ingredient) {
         string = string + ' and ' + ingredient;
-    });
+    })
 
     console.log(string);
 }
@@ -84,7 +84,7 @@ console.log(nyInstructors);
 
 // Spread when passing arguments to a function
 
-// The individual values from the array / object are passed
+// The individual values from the array / object are passed 
 // as arguments to the function
 
 function goodDogs(dog1, dog2, dog3) {
@@ -102,3 +102,4 @@ function goodDogs(dog1, dog2, dog3) {
 // console.log(largeDogs);
 // goodDogs(largeDogs);
 ```
+

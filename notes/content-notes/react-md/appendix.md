@@ -139,7 +139,7 @@ Now, anywhere we wanted to use these functions we could use `import` . We need t
 ```text
 import { sayHi, sayBye } from './greetings';
 
-sayHi();
+sayHi(); 
 sayBye();
 ```
 
@@ -190,7 +190,7 @@ This is a common pattern for libraries. It means you can easily import the libra
 ```text
 import Greetings from './greetings';
 
-Greetings.sayHi();
+Greetings.sayHi(); 
 Greetings.sayBye();
 ```
 
@@ -366,7 +366,7 @@ In ES6, we can use the destructuring syntax to accomplish the same task like thi
 
 ```text
 const [ veg1, veg2 ] = [ 'asparagus', 'broccoli', 'onion' ];
-console.log(veg1);
+console.log(veg1); 
 console.log(veg2);
 ```
 
@@ -386,7 +386,7 @@ const smoothie = {
 
 const { liquids, fruits } = smoothie;
 
-console.log(liquids);
+console.log(liquids); 
 console.log(fruits);
 ```
 
@@ -427,3 +427,4 @@ const IngredientList = ({ ingredients, onClick }) => (
 ```
 
 Here, we use destructuring to extract the props into variables \( `ingredients` and `onClick` \) that we then use inside the component's function body.
+
