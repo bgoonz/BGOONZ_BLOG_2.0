@@ -53,7 +53,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "docs",
+                        "label": "DOCS",
                         "url": "/docs",
                         "style": "link",
                         "icon_class": "dev",
