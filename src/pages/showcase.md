@@ -71,7 +71,7 @@ sections:
         image: images/7a8bc98e902a2f6dea90386cdfb154c2.png
         content: |
           Artist Showcase & Podcasting Site
-      - title: lorem-ipsum
+      - title: Aux Blog w NextJS
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
