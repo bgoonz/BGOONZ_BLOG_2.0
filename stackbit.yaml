@@ -142,7 +142,7 @@ models:
           The main sections of the documentation. Every item must be the URL
           slug representing the section.
         items:
-          type: string
+          type: slug
     description: my documentation collection
   docs:
     type: page
