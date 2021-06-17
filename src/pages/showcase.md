@@ -45,12 +45,9 @@ sections:
           <https://github.com/bgoonz/DS-ALGO-OFFICIAL>
 
 
-          ####
-
-
-          Big O notation is the language we use for talking about how long an
+          **Big O notation is the language we use for talking about how long an
           algorithm takes to run. It's how we compare the efficiency of
-          different approaches to a problem.
+          different approaches to a problem.**
         actions:
           - label: Live Site
             url: 'https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/'
