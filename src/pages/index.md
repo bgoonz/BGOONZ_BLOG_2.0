@@ -34,17 +34,8 @@ sections:
             style: link
         image_alt: python
       - content: >
-          ![](/\_static/app-assets/Capture.PNG)
-
-
           ###
-
-
-
-
-          ### Revamped-Automatic-Guitar-Effect-Triggering
-
-
+          ![](/\_static/app-assets/pure-data.png)Revamped-Automatic-Guitar-Effect-Triggering
 
 
           [This section exists for me to day dream ideas for the future... and
