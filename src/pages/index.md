@@ -231,7 +231,7 @@ sections:
         url: 'mailto:bryan.guner@gmail.com'
         style: primary
         new_window: true
-      - label: lorem-ipsum
+      - label: Contact Form
         url: '#'
         style: link
         icon_class: dev
