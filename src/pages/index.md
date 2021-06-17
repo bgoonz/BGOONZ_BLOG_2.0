@@ -18,7 +18,6 @@ sections:
             style: link
         title: A Quick Guide To Big O
       - content: >
-          ![](/\_static/app-assets/python.png)
 
 
           [*Python has a built in help function that let’s you see a description
