@@ -10,7 +10,6 @@ seo:
 template: advanced
 ---
 
-|
 
 | [GitHub](https://github.com/bgoonz)          | [Replit](https://repl.it/@bgoonz/)                                        | [Medium](https://bryanguner.medium.com/)                                                          | [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN) |
 | -------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
