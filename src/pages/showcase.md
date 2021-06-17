@@ -68,7 +68,7 @@ sections:
         type: grid_item
       - title: Mihir-Beg-Music.com
         title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
-        image: images/top-half-mihir.png
+        image: images/7a8bc98e902a2f6dea90386cdfb154c2.png
         content: |
           Artist Showcase & Podcasting Site
       - title: lorem-ipsum
