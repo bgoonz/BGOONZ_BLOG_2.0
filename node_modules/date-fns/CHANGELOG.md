@@ -8,6 +8,66 @@ This change log follows the format documented in [Keep a CHANGELOG].
 [semantic versioning]: http://semver.org/
 [keep a changelog]: http://keepachangelog.com/
 
+## v2.22.1 - 2021-05-28
+
+Thanks to [Sasha Koss](http://github.com/kossnocorp) for working on the release.
+
+### Fixed
+
+- Fixed constant typings. ([#2491](https://github.com/date-fns/date-fns/issues/2491))
+
+## v2.22.0 - 2021-05-28
+
+On this release worked [Sasha Koss](http://github.com/kossnocorp), [Lucas Silva](http://github.com/LucasHFS), [Lay](http://github.com/brownsugar), [jwbth](http://github.com/jwbth), [fturmel](http://github.com/fturmel), [Tan75](http://github.com/tan75) and [Anastasia Kobzar](http://github.com/rikkalo).
+
+### Fixed
+
+- [Fixed Taiwanese locale to use traditional Chinese and removed unnecessary spaces.](https://github.com/date-fns/date-fns/pull/2436)
+
+- [Fixed Russian locale to use correct long formats.](https://github.com/date-fns/date-fns/pull/2478)
+
+### Added
+
+- [Added 18 new conversion functions](https://github.com/date-fns/date-fns/pull/2433):
+  - `daysToWeeks`
+  - `hoursToMilliseconds`
+  - `hoursToMinutes`
+  - `hoursToSeconds`
+  - `millisecondsToHours`
+  - `millisecondsToMinutes`
+  - `millisecondsToSeconds`
+  - `minutesToHours`
+  - `minutesToMilliseconds`
+  - `minutesToSeconds`
+  - `monthsToQuarters`
+  - `monthsToYears`
+  - `quartersToMonths`
+  - `quartersToYears`
+  - `secondsToHours`
+  - `secondsToMilliseconds`
+  - `secondsToMinutes`
+  - `weeksToDays`
+  - `yearsToMonths`
+  - `yearsToQuarters`
+
+## v2.21.3 - 2021-05-08
+
+This release is brought to you by [Maxim Topciu](http://github.com/maximtop).
+
+### Fixed
+
+- [Fixed IE11 support by babelifing the shorthand properties.](https://github.com/date-fns/date-fns/pull/2467)
+
+## v2.21.2 - 2021-05-05
+
+Kudos to [Aleksei Korzun](http://github.com/a-korzun), [Maxim Topciu](http://github.com/maximtop), [Jonas L](http://github.com/jooola), [Mohammad ali Ali panah](http://github.com/always-maap) and [Tan75](http://github.com/tan75) for working on the release.
+
+### Fixed
+
+- [`differenceInBusinessDays` now returns `NaN` instead of `Invalid Date` when an invalid argument is passed to the function.](https://github.com/date-fns/date-fns/pull/2414)
+
+- [Fixed `weekStartsOn` in Persian locale.](https://github.com/date-fns/date-fns/pull/2430)
+
 ## v2.21.1 - 2021-04-15
 
 Thanks to [Sasha Koss](http://github.com/kossnocorp) for working on the release.
