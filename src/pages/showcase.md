@@ -43,7 +43,7 @@ sections:
             url: 'https://1drv.ms/p/s!AkGiZ9n9CRDSpY88x407JwfEKNrDxg?e=faHSx9'
             style: link
             icon_class: dev
-            new_window: false
+            new_window: true
             no_follow: false
             type: action
       - title: Data Structures Interactive Learning Hub
