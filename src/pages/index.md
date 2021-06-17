@@ -18,6 +18,8 @@ sections:
             style: link
         title: A Quick Guide To Big O
         image: images/my-back.png
+        title_url: >-
+          https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
       - content: >
 
 
