@@ -2,34 +2,33 @@
 title: Plug-ins
 weight: 2
 seo:
-    title: Gatsby Plugins For This Sites Content Model
-    description: This is the Gatsby Plugins For This Sites Content Model page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Gatsby Plugins For This Sites Content Model
-          keyName: property
-        - name: 'og:description'
-          value: This is the Gatsby Plugins For This Sites Content Model page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Gatsby Plugins For This Sites Content Model
-        - name: 'twitter:description'
-          value: This is the Gatsby Plugins For This Sites Content Model page
+  title: Gatsby Plugins For This Sites Content Model
+  description: This is the Gatsby Plugins For This Sites Content Model page
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: Gatsby Plugins For This Sites Content Model
+      keyName: property
+    - name: 'og:description'
+      value: This is the Gatsby Plugins For This Sites Content Model page
+      keyName: property
+    - name: 'twitter:card'
+      value: summary
+    - name: 'twitter:title'
+      value: Gatsby Plugins For This Sites Content Model
+    - name: 'twitter:description'
+      value: This is the Gatsby Plugins For This Sites Content Model page
 template: docs
 ---
-
 <div class="note">
-  <strong>Note:</strong> This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
+  <strong>Note:</strong> These are the gatsby plugins that power the file system of this website! <strong>See more in the Docs</strong> section.
 </div>
 
-### Syntax highlighting
+### Code:
 
-You can add a language identifier to enable syntax highlighting in your code block. For example, to highlight the **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
+> Gatsby Source File System
 
 <pre>
 ```javascript
@@ -204,7 +203,20 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
 ```
 </pre>
 
-The rendered output looks like this:
+
+
+
+
+##### Gatsby Source Data
+
+
+
+````
+<pre>
+```javascript
+
+
+````
 
 ```javascript
 const path = require('path');
@@ -335,4 +347,8 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
     });
 }
 
+```
+
+```javascript
+</pre>
 ```
