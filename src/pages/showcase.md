@@ -119,6 +119,7 @@ sections:
             no_follow: false
             type: action
         type: grid_item
+        image: images/energetic-sunflower.png
 seo:
   title: Showcase
   description: This is the showcase page
