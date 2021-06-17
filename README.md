@@ -4,7 +4,7 @@
 
 <div align="center">
 
-    [![wakatime](https://wakatime.com/badge/github/bgoonz/BGOONZ_BLOG_2.0.svg)](https://wakatime.com/badge/github/bgoonz/BGOONZ_BLOG_2.0)
+ ![wakatime](https://wakatime.com/badge/github/bgoonz/BGOONZ_BLOG_2.0.svg)](https://wakatime.com/badge/github/bgoonz/BGOONZ_BLOG_2.0)
     
     
 ### [WEBSITE](https://bgoonz-blog.netlify.app/)
