@@ -95,7 +95,14 @@ sections:
         image_alt: get in touch
         content: |
           **Here lives my alternate/backup blog site!**
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
         type: grid_item
         image: images/21ecc2f26e2641c8e9aae5479481bbe2 (5).png
       - title: lorem-ipsum
