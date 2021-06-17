@@ -12,23 +12,6 @@
                 "has_subnav": false
             },
             {
-                "label": "Bootcamp Resources",
-                "url": "https://lambda-resources.netlify.app/",
-                "style": "link",
-                "has_subnav": false,
-                "subnav_links": [
-                    {
-                        "label": "lorem-ipsum",
-                        "url": "#",
-                        "style": "link",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    }
-                ]
-            },
-            {
                 "label": "Blog",
                 "url": "/blog",
                 "style": "link",
