@@ -1,30 +1,31 @@
 ---
 title: My Websites
 excerpt: >-
-  In this section you'll learn how to add syntax highlighting, examples,
-  callouts and much more.
+    In this section you'll learn how to add syntax highlighting, examples,
+    callouts and much more.
 seo:
-  title: My Websites
-  description: This is the My Websites page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: My Websites
-      keyName: property
-    - name: 'og:description'
-      value: This is the My Websites page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: My Websites
-    - name: 'twitter:description'
-      value: This is the My Websites page
+    title: My Websites
+    description: This is the My Websites page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: My Websites
+          keyName: property
+        - name: 'og:description'
+          value: This is the My Websites page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: My Websites
+        - name: 'twitter:description'
+          value: This is the My Websites page
 template: docs
 weight: 1
 ---
+
 1.  [ WEB DEV RESOURCE HUB ](https://web-dev-resource-hub.netlify.app)
 
 2.  [Learn Redux](https://learning-redux42.netlify.app/)

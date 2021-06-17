@@ -5,19 +5,19 @@ date: '2021-06-03'
 thumb_image_alt: lorem-ipsum
 excerpt: A guide to computational complexity
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: post
 image: images/dtw.jpg
 thumb_image: images/green-spruce.png
 ---
+
 ## Data Structures & Algorithms
 
 [DS Algo Codebase](https://github.com/bgoonz/Data-Structures-Algos-Codebase)
-
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#115-distinct-subsequenceshttpsleetcodecomproblemsdistinct-subsequencesdescription)
 
@@ -90,18 +90,18 @@ Dynamic array can be used.
  * @return {number}
  */
 let numDistinct = function (s, t) {
-  const lens = s.length;
-  const lent = t.length;
-  const dp = new Array(lent + 1).fill(0);
-  dp[0] = 1;
-  for (let i = 1; i <= lens; i++) {
-    for (let j = lent; j >= 1; j--) {
-      if (s[i - 1] === t[j - 1]) {
-        dp[j] += dp[j - 1];
-      }
+    const lens = s.length;
+    const lent = t.length;
+    const dp = new Array(lent + 1).fill(0);
+    dp[0] = 1;
+    for (let i = 1; i <= lens; i++) {
+        for (let j = lent; j >= 1; j--) {
+            if (s[i - 1] === t[j - 1]) {
+                dp[j] += dp[j - 1];
+            }
+        }
     }
-  }
-  return dp[lent];
+    return dp[lent];
 };
 ```
 
@@ -140,9 +140,9 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
-- You may only use constant extra space.
-- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
-- You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
+-   You may only use constant extra space.
+-   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+-   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
 
 **Example:**
 
@@ -176,8 +176,8 @@ Recursive.
 
 For every `node`:
 
-- Left child: points to `node.right`.
-- Right child: points to `node.next.left` if `node.next` exists.
+-   Left child: points to `node.right`.
+-   Right child: points to `node.next.left` if `node.next` exists.
 
 ```javascript
 /**
@@ -193,19 +193,19 @@ For every `node`:
  * @return {void} Do not return anything, modify tree in-place instead.
  */
 let connect = function (root) {
-  if (!root) {
-    return;
-  }
-  if (root.left !== null) {
-    root.left.next = root.right;
-    connect(root.left);
-  }
-  if (root.right !== null) {
-    if (root.next !== null) {
-      root.right.next = root.next.left;
+    if (!root) {
+        return;
     }
-    connect(root.right);
-  }
+    if (root.left !== null) {
+        root.left.next = root.right;
+        connect(root.left);
+    }
+    if (root.right !== null) {
+        if (root.next !== null) {
+            root.right.next = root.next.left;
+        }
+        connect(root.right);
+    }
 };
 ```
 
@@ -227,27 +227,27 @@ Level order traversal.
  * @return {void} Do not return anything, modify tree in-place instead.
  */
 let connect = function (root) {
-  if (!root) {
-    return;
-  }
-
-  const queue = [NaN, root];
-  while (queue.length > 1) {
-    const node = queue.shift();
-    if (node !== node) {
-      for (let i = 0; i < queue.length; i++) {
-        queue[i].next = queue[i + 1] || null;
-      }
-      queue.push(NaN);
-    } else {
-      if (node.left !== null) {
-        queue.push(node.left);
-      }
-      if (node.right !== null) {
-        queue.push(node.right);
-      }
+    if (!root) {
+        return;
     }
-  }
+
+    const queue = [NaN, root];
+    while (queue.length > 1) {
+        const node = queue.shift();
+        if (node !== node) {
+            for (let i = 0; i < queue.length; i++) {
+                queue[i].next = queue[i + 1] || null;
+            }
+            queue.push(NaN);
+        } else {
+            if (node.left !== null) {
+                queue.push(node.left);
+            }
+            if (node.right !== null) {
+                queue.push(node.right);
+            }
+        }
+    }
 };
 ```
 
@@ -285,8 +285,8 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
-- You may only use constant extra space.
-- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+-   You may only use constant extra space.
+-   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
 
 **Example:**
 
@@ -336,28 +336,28 @@ This also means post-order traversal is required.
  * @return {void} Do not return anything, modify tree in-place instead.
  */
 let connect = function (root) {
-  if (!root) {
-    return;
-  }
-  let next = null;
-  for (let node = root.next; node !== null; node = node.next) {
-    if (node.left !== null) {
-      next = node.left;
-      break;
+    if (!root) {
+        return;
     }
-    if (node.right !== null) {
-      next = node.right;
-      break;
+    let next = null;
+    for (let node = root.next; node !== null; node = node.next) {
+        if (node.left !== null) {
+            next = node.left;
+            break;
+        }
+        if (node.right !== null) {
+            next = node.right;
+            break;
+        }
     }
-  }
-  if (root.right !== null) {
-    root.right.next = next;
-  }
-  if (root.left !== null) {
-    root.left.next = root.right || next;
-  }
-  connect(root.right);
-  connect(root.left);
+    if (root.right !== null) {
+        root.right.next = next;
+    }
+    if (root.left !== null) {
+        root.left.next = root.right || next;
+    }
+    connect(root.right);
+    connect(root.left);
 };
 ```
 
@@ -379,27 +379,27 @@ Level order traversal. Exact same as [116. Populating Next Right Pointers in Eac
  * @return {void} Do not return anything, modify tree in-place instead.
  */
 let connect = function (root) {
-  if (!root) {
-    return;
-  }
-
-  const queue = [NaN, root];
-  while (queue.length > 1) {
-    const node = queue.shift();
-    if (node !== node) {
-      for (let i = 0; i < queue.length; i++) {
-        queue[i].next = queue[i + 1] || null;
-      }
-      queue.push(NaN);
-    } else {
-      if (node.left !== null) {
-        queue.push(node.left);
-      }
-      if (node.right !== null) {
-        queue.push(node.right);
-      }
+    if (!root) {
+        return;
     }
-  }
+
+    const queue = [NaN, root];
+    while (queue.length > 1) {
+        const node = queue.shift();
+        if (node !== node) {
+            for (let i = 0; i < queue.length; i++) {
+                queue[i].next = queue[i + 1] || null;
+            }
+            queue.push(NaN);
+        } else {
+            if (node.left !== null) {
+                queue.push(node.left);
+            }
+            if (node.right !== null) {
+                queue.push(node.right);
+            }
+        }
+    }
 };
 ```
 
@@ -419,7 +419,7 @@ Similar Questions:
 
 ### Problem:
 
-Given a non-negative integer *numRows*, generate the first _numRows_ of Pascal's triangle.
+Given a non-negative integer _numRows_, generate the first _numRows_ of Pascal's triangle.
 
 ![PascalTriangleAnimated2.gif](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
 
@@ -450,22 +450,22 @@ Dynamic Programming 101.
  * @return {number[][]}
  */
 let generate = function (numRows) {
-  if (numRows <= 0) {
-    return [];
-  }
-
-  const result = [[1]];
-  for (let i = 1; i < numRows; i++) {
-    const lastRow = result[i - 1];
-    const row = [1];
-    for (let j = 1; j < i; j++) {
-      row[j] = lastRow[j] + lastRow[j - 1];
+    if (numRows <= 0) {
+        return [];
     }
-    row.push(1);
-    result.push(row);
-  }
 
-  return result;
+    const result = [[1]];
+    for (let i = 1; i < numRows; i++) {
+        const lastRow = result[i - 1];
+        const row = [1];
+        for (let j = 1; j < i; j++) {
+            row[j] = lastRow[j] + lastRow[j - 1];
+        }
+        row.push(1);
+        result.push(row);
+    }
+
+    return result;
 };
 ```
 
@@ -485,7 +485,7 @@ Similar Questions:
 
 ### Problem:
 
-Given a non-negative index *k* where _k_ ≤ 33, return the *k*th index row of the Pascal's triangle.
+Given a non-negative index _k_ where _k_ ≤ 33, return the *k*th index row of the Pascal's triangle.
 
 Note that the row index starts from 0.
 
@@ -517,19 +517,19 @@ State `(i, j)` depends on `(i-1, j)` and `(i-1, j-1)`. So to access `(i-1, j-1)`
  * @return {number[]}
  */
 let getRow = function (rowIndex) {
-  if (rowIndex < 0) {
-    return [];
-  }
-
-  const row = [1];
-  for (let i = 1; i <= rowIndex; i++) {
-    for (let j = i - 1; j > 0; j--) {
-      row[j] += row[j - 1];
+    if (rowIndex < 0) {
+        return [];
     }
-    row.push(1);
-  }
 
-  return row;
+    const row = [1];
+    for (let i = 1; i <= rowIndex; i++) {
+        for (let j = i - 1; j > 0; j--) {
+            row[j] += row[j - 1];
+        }
+        row.push(1);
+    }
+
+    return row;
 };
 ```
 
@@ -586,19 +586,19 @@ Dynamic array can be used.
  * @return {number}
  */
 let minimumTotal = function (triangle) {
-  if (triangle.length <= 0) {
-    return 0;
-  }
-
-  const dp = [triangle[0][0]];
-  for (let i = 1; i < triangle.length; i++) {
-    dp[i] = dp[i - 1] + triangle[i][i];
-    for (let j = i - 1; j >= 1; j--) {
-      dp[j] = Math.min(dp[j], dp[j - 1]) + triangle[i][j];
+    if (triangle.length <= 0) {
+        return 0;
     }
-    dp[0] += triangle[i][0];
-  }
-  return Math.min(...dp);
+
+    const dp = [triangle[0][0]];
+    for (let i = 1; i < triangle.length; i++) {
+        dp[i] = dp[i - 1] + triangle[i][i];
+        for (let j = i - 1; j >= 1; j--) {
+            dp[j] = Math.min(dp[j], dp[j - 1]) + triangle[i][j];
+        }
+        dp[0] += triangle[i][0];
+    }
+    return Math.min(...dp);
 };
 ```
 
@@ -660,17 +660,17 @@ Because `price[j]` is lower that the base, using `j` as new base is guaranteed t
  * @return {number}
  */
 let maxProfit = function (prices) {
-  let max = 0;
-  let base = prices[0];
-  for (let i = 1; i < prices.length; i++) {
-    const profit = prices[i] - base;
-    if (profit > max) {
-      max = profit;
-    } else if (profit < 0) {
-      base = prices[i];
+    let max = 0;
+    let base = prices[0];
+    for (let i = 1; i < prices.length; i++) {
+        const profit = prices[i] - base;
+        if (profit > max) {
+            max = profit;
+        } else if (profit < 0) {
+            base = prices[i];
+        }
     }
-  }
-  return max;
+    return max;
 };
 ```
 
@@ -740,13 +740,13 @@ Sell immediately after the price drops. Or in other perspective, it is the sum o
  * @return {number}
  */
 let maxProfit = function (prices) {
-  let max = 0;
-  for (let i = 1; i < prices.length; i++) {
-    if (prices[i] > prices[i - 1]) {
-      max += prices[i] - prices[i - 1];
+    let max = 0;
+    for (let i = 1; i < prices.length; i++) {
+        if (prices[i] > prices[i - 1]) {
+            max += prices[i] - prices[i - 1];
+        }
     }
-  }
-  return max;
+    return max;
 };
 ```
 
@@ -830,28 +830,28 @@ Define `f(k)` to be `p1(k) + p2(k)`. We need to get `max( f(0), ..., f(n-1) )`.
  * @return {number}
  */
 let maxProfit = function (prices) {
-  const len = prices.length;
-  if (len <= 1) {
-    return 0;
-  }
+    const len = prices.length;
+    if (len <= 1) {
+        return 0;
+    }
 
-  const dp = [0];
+    const dp = [0];
 
-  let min = prices[0];
-  for (let i = 1; i < len; i++) {
-    dp[i] = Math.max(dp[i - 1], prices[i] - min);
-    min = Math.min(prices[i], min);
-  }
+    let min = prices[0];
+    for (let i = 1; i < len; i++) {
+        dp[i] = Math.max(dp[i - 1], prices[i] - min);
+        min = Math.min(prices[i], min);
+    }
 
-  let p2 = 0;
-  let max = prices[len - 1];
-  for (let i = len - 2; i >= 0; i--) {
-    max = Math.max(prices[i], max);
-    p2 = Math.max(p2, max - prices[i]);
-    dp[i] += p2;
-  }
+    let p2 = 0;
+    let max = prices[len - 1];
+    for (let i = len - 2; i >= 0; i--) {
+        max = Math.max(prices[i], max);
+        p2 = Math.max(p2, max - prices[i]);
+        dp[i] += p2;
+    }
 
-  return Math.max(...dp);
+    return Math.max(...dp);
 };
 ```
 
@@ -911,14 +911,14 @@ Output: 42
 
 For every `node`, there are six possible ways to get the max path sum:
 
-- With `node.val`
-  1. `node.val` plus the max sum of a path that ends with `node.left`.
-  2. `node.val` plus the max sum of a path that starts with `node.right`.
-  3. `node.val` plus the max sum of both paths.
-  4. Just `node.val` (the max sum of both paths are negative).
-- Without`node.val` (disconnected)
-  1. The max-sum path is somewhere under the `node.left` subtree.
-  2. The max-sum path is somewhere under the `node.right` subtree.
+-   With `node.val`
+    1. `node.val` plus the max sum of a path that ends with `node.left`.
+    2. `node.val` plus the max sum of a path that starts with `node.right`.
+    3. `node.val` plus the max sum of both paths.
+    4. Just `node.val` (the max sum of both paths are negative).
+-   Without`node.val` (disconnected)
+    1. The max-sum path is somewhere under the `node.left` subtree.
+    2. The max-sum path is somewhere under the `node.right` subtree.
 
 There are two ways to implement this.
 
@@ -939,7 +939,7 @@ Define a function that returns two values. The max sum of a path that may or may
  * @return {number}
  */
 let maxPathSum = function (root) {
-  return Math.max(..._maxPathSum(root));
+    return Math.max(..._maxPathSum(root));
 };
 
 /**
@@ -947,20 +947,13 @@ let maxPathSum = function (root) {
  * @return {number[]}
  */
 function _maxPathSum(root) {
-  if (!root) {
-    return [-Infinity, -Infinity];
-  }
+    if (!root) {
+        return [-Infinity, -Infinity];
+    }
 
-  const left = _maxPathSum(root.left);
-  const right = _maxPathSum(root.right);
-  return [
-    Math.max(
-      left[0],
-      right[0],
-      root.val + Math.max(0, left[1], right[1], left[1] + right[1])
-    ),
-    Math.max(left[1], right[1], 0) + root.val,
-  ];
+    const left = _maxPathSum(root.left);
+    const right = _maxPathSum(root.right);
+    return [Math.max(left[0], right[0], root.val + Math.max(0, left[1], right[1], left[1] + right[1])), Math.max(left[1], right[1], 0) + root.val];
 }
 ```
 
@@ -981,9 +974,9 @@ Just return the later (max sum of a path that ends with `root`). Maintain a glob
  * @return {number}
  */
 let maxPathSum = function (root) {
-  const global = { max: -Infinity };
-  _maxPathSum(root, global);
-  return global.max;
+    const global = { max: -Infinity };
+    _maxPathSum(root, global);
+    return global.max;
 };
 
 /**
@@ -993,15 +986,15 @@ let maxPathSum = function (root) {
  * @return {number[]}
  */
 function _maxPathSum(root, global) {
-  if (!root) {
-    return -Infinity;
-  }
+    if (!root) {
+        return -Infinity;
+    }
 
-  const left = _maxPathSum(root.left, global);
-  const right = _maxPathSum(root.right, global);
-  const localMax = Math.max(left, right, 0) + root.val;
-  global.max = Math.max(global.max, localMax, root.val + left + right);
-  return localMax;
+    const left = _maxPathSum(root.left, global);
+    const right = _maxPathSum(root.right, global);
+    const localMax = Math.max(left, right, 0) + root.val;
+    global.max = Math.max(global.max, localMax, root.val + left + right);
+    return localMax;
 }
 ```
 
@@ -1053,8 +1046,8 @@ Output: false
  * @return {boolean}
  */
 let isPalindrome = function (s) {
-  const clean = s.toLowerCase().split(/[^a-z0-9]*/);
-  return clean.join("") === clean.reverse().join("");
+    const clean = s.toLowerCase().split(/[^a-z0-9]*/);
+    return clean.join('') === clean.reverse().join('');
 };
 ```
 
@@ -1068,13 +1061,13 @@ Remove non-alphanumeric characters then compare.
  * @return {boolean}
  */
 let isPalindrome = function (s) {
-  const clean = s.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
-  for (let i = 0, j = clean.length - 1; i < j; i++, j--) {
-    if (clean[i] !== clean[j]) {
-      return false;
+    const clean = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    for (let i = 0, j = clean.length - 1; i < j; i++, j--) {
+        if (clean[i] !== clean[j]) {
+            return false;
+        }
     }
-  }
-  return true;
+    return true;
 };
 ```
 
@@ -1088,47 +1081,35 @@ Compare the char codes.
  * @return {boolean}
  */
 let isPalindrome = function (s) {
-  for (let i = 0, j = s.length - 1; i < j; i++, j--) {
-    let left = s.charCodeAt(i);
-    while (
-      i < j &&
-      (left < 48 ||
-        (left > 57 && left < 65) ||
-        (left > 90 && left < 97) ||
-        left > 122)
-    ) {
-      left = s.charCodeAt(++i);
-    }
-    if (i >= j) {
-      return true;
-    }
-    if (left >= 65 && left <= 90) {
-      left += 32;
+    for (let i = 0, j = s.length - 1; i < j; i++, j--) {
+        let left = s.charCodeAt(i);
+        while (i < j && (left < 48 || (left > 57 && left < 65) || (left > 90 && left < 97) || left > 122)) {
+            left = s.charCodeAt(++i);
+        }
+        if (i >= j) {
+            return true;
+        }
+        if (left >= 65 && left <= 90) {
+            left += 32;
+        }
+
+        let right = s.charCodeAt(j);
+        while (i < j && (right < 48 || (right > 57 && right < 65) || (right > 90 && right < 97) || right > 122)) {
+            right = s.charCodeAt(--j);
+        }
+        if (i >= j) {
+            return true;
+        }
+        if (right >= 65 && right <= 90) {
+            right += 32;
+        }
+
+        if (left !== right) {
+            return false;
+        }
     }
 
-    let right = s.charCodeAt(j);
-    while (
-      i < j &&
-      (right < 48 ||
-        (right > 57 && right < 65) ||
-        (right > 90 && right < 97) ||
-        right > 122)
-    ) {
-      right = s.charCodeAt(--j);
-    }
-    if (i >= j) {
-      return true;
-    }
-    if (right >= 65 && right <= 90) {
-      right += 32;
-    }
-
-    if (left !== right) {
-      return false;
-    }
-  }
-
-  return true;
+    return true;
 };
 ```
 
@@ -1158,11 +1139,11 @@ Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find 
 
 **Note:**
 
-- Return an empty list if there is no such transformation sequence.
-- All words have the same length.
-- All words contain only lowercase alphabetic characters.
-- You may assume no duplicates in the word list.
-- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+-   Return an empty list if there is no such transformation sequence.
+-   All words have the same length.
+-   All words contain only lowercase alphabetic characters.
+-   You may assume no duplicates in the word list.
+-   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1210,57 +1191,57 @@ The items in the queue are not just words now. Parent nodes are also kept so tha
  * @return {string[][]}
  */
 function findLadders(beginWord, endWord, wordList) {
-  wordList = new Set(wordList);
-  if (!wordList.has(endWord)) {
-    return [];
-  }
-
-  const ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-
-  const result = [];
-  let isEndWordFound = false;
-  const levelWords = new Set();
-  const queue = [[beginWord, null], null];
-  while (queue.length > 1) {
-    const node = queue.shift();
-
-    if (node === null) {
-      if (isEndWordFound) {
-        break;
-      }
-      levelWords.forEach((word) => wordList.delete(word));
-      levelWords.clear();
-      queue.push(null);
-      continue;
+    wordList = new Set(wordList);
+    if (!wordList.has(endWord)) {
+        return [];
     }
 
-    const word = node[0];
+    const ALPHABET = 'abcdefghijklmnopqrstuvwxyz';
 
-    for (let i = word.length - 1; i >= 0; i--) {
-      const head = word.slice(0, i);
-      const tail = word.slice(i + 1);
+    const result = [];
+    let isEndWordFound = false;
+    const levelWords = new Set();
+    const queue = [[beginWord, null], null];
+    while (queue.length > 1) {
+        const node = queue.shift();
 
-      for (let c = 0; c < 26; c++) {
-        if (ALPHABET[c] !== word[i]) {
-          const w = head + ALPHABET[c] + tail;
-          if (w === endWord) {
-            const path = [endWord];
-            for (let n = node; n !== null; n = n[1]) {
-              path.unshift(n[0]);
+        if (node === null) {
+            if (isEndWordFound) {
+                break;
             }
-            result.push(path);
-            isEndWordFound = true;
-          }
-          if (wordList.has(w)) {
-            levelWords.add(w);
-            queue.push([w, node]);
-          }
+            levelWords.forEach((word) => wordList.delete(word));
+            levelWords.clear();
+            queue.push(null);
+            continue;
         }
-      }
-    }
-  }
 
-  return result;
+        const word = node[0];
+
+        for (let i = word.length - 1; i >= 0; i--) {
+            const head = word.slice(0, i);
+            const tail = word.slice(i + 1);
+
+            for (let c = 0; c < 26; c++) {
+                if (ALPHABET[c] !== word[i]) {
+                    const w = head + ALPHABET[c] + tail;
+                    if (w === endWord) {
+                        const path = [endWord];
+                        for (let n = node; n !== null; n = n[1]) {
+                            path.unshift(n[0]);
+                        }
+                        result.push(path);
+                        isEndWordFound = true;
+                    }
+                    if (wordList.has(w)) {
+                        levelWords.add(w);
+                        queue.push([w, node]);
+                    }
+                }
+            }
+        }
+    }
+
+    return result;
 }
 ```
 
@@ -1288,11 +1269,11 @@ Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find 
 
 **Note:**
 
-- Return 0 if there is no such transformation sequence.
-- All words have the same length.
-- All words contain only lowercase alphabetic characters.
-- You may assume no duplicates in the word list.
-- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+-   Return 0 if there is no such transformation sequence.
+-   All words have the same length.
+-   All words contain only lowercase alphabetic characters.
+-   You may assume no duplicates in the word list.
+-   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1341,43 +1322,43 @@ To find all the next words, instead of filtering the `wordList`, enumerate all 2
  * @return {number}
  */
 let ladderLength = function (beginWord, endWord, wordList) {
-  wordList = new Set(wordList);
-  if (!wordList.has(endWord)) {
-    return 0;
-  }
-
-  const ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-
-  let level = 1;
-  const queue = [beginWord, null];
-  while (queue.length > 1) {
-    const word = queue.shift();
-
-    if (word === null) {
-      level++;
-      queue.push(null);
-      continue;
+    wordList = new Set(wordList);
+    if (!wordList.has(endWord)) {
+        return 0;
     }
 
-    for (let i = word.length - 1; i >= 0; i--) {
-      const head = word.slice(0, i);
-      const tail = word.slice(i + 1);
+    const ALPHABET = 'abcdefghijklmnopqrstuvwxyz';
 
-      for (let c = 0; c < 26; c++) {
-        if (ALPHABET[c] !== word[i]) {
-          const word = head + ALPHABET[c] + tail;
-          if (word === endWord) {
-            return level + 1;
-          }
-          if (wordList.delete(word)) {
-            queue.push(word);
-          }
+    let level = 1;
+    const queue = [beginWord, null];
+    while (queue.length > 1) {
+        const word = queue.shift();
+
+        if (word === null) {
+            level++;
+            queue.push(null);
+            continue;
         }
-      }
-    }
-  }
 
-  return 0;
+        for (let i = word.length - 1; i >= 0; i--) {
+            const head = word.slice(0, i);
+            const tail = word.slice(i + 1);
+
+            for (let c = 0; c < 26; c++) {
+                if (ALPHABET[c] !== word[i]) {
+                    const word = head + ALPHABET[c] + tail;
+                    if (word === endWord) {
+                        return level + 1;
+                    }
+                    if (wordList.delete(word)) {
+                        queue.push(word);
+                    }
+                }
+            }
+        }
+    }
+
+    return 0;
 };
 ```
 
@@ -1421,23 +1402,23 @@ Build a Set from the list. Pick a number, find all it's adjacent numbers that ar
  * @return {number}
  */
 let longestConsecutive = function (nums) {
-  const numSet = new Set(nums);
-  let maxCount = 0;
-  while (numSet.size > 0) {
-    const num = numSet.values().next().value;
-    numSet.delete(num);
-    let count = 1;
-    for (let n = num + 1; numSet.delete(n); n++) {
-      count++;
+    const numSet = new Set(nums);
+    let maxCount = 0;
+    while (numSet.size > 0) {
+        const num = numSet.values().next().value;
+        numSet.delete(num);
+        let count = 1;
+        for (let n = num + 1; numSet.delete(n); n++) {
+            count++;
+        }
+        for (let n = num - 1; numSet.delete(n); n--) {
+            count++;
+        }
+        if (count > maxCount) {
+            maxCount = count;
+        }
     }
-    for (let n = num - 1; numSet.delete(n); n--) {
-      count++;
-    }
-    if (count > maxCount) {
-      maxCount = count;
-    }
-  }
-  return maxCount;
+    return maxCount;
 };
 ```
 
@@ -1515,11 +1496,11 @@ To write a clean solution for this promblem, use `0` as indicator of leaf node. 
  * @return {number}
  */
 let sumNumbers = function (root, sum = 0) {
-  if (!root) {
-    return 0;
-  }
-  sum = sum * 10 + root.val;
-  return sumNumbers(root.left, sum) + sumNumbers(root.right, sum) || sum;
+    if (!root) {
+        return 0;
+    }
+    sum = sum * 10 + root.val;
+    return sumNumbers(root.left, sum) + sumNumbers(root.right, sum) || sum;
 };
 ```
 
@@ -1584,72 +1565,72 @@ So both BFS and DFS are good. I prefer BFS when pruning is not needed in favor o
  * @return {void} Do not return anything, modify board in-place instead.
  */
 let solve = function (board) {
-  const height = board.length;
-  if (height <= 1) {
-    return;
-  }
-  const width = board[0].length;
-  if (width <= 1) {
-    return;
-  }
+    const height = board.length;
+    if (height <= 1) {
+        return;
+    }
+    const width = board[0].length;
+    if (width <= 1) {
+        return;
+    }
 
-  const rowend = height - 1;
-  const colend = width - 1;
+    const rowend = height - 1;
+    const colend = width - 1;
 
-  const queue = [];
+    const queue = [];
 
-  for (let row = 0; row < height; row++) {
-    if (board[row][0] === "O") {
-      board[row][0] = "#";
-      queue.push(row, 0);
+    for (let row = 0; row < height; row++) {
+        if (board[row][0] === 'O') {
+            board[row][0] = '#';
+            queue.push(row, 0);
+        }
+        if (board[row][colend] === 'O') {
+            board[row][colend] = '#';
+            queue.push(row, colend);
+        }
     }
-    if (board[row][colend] === "O") {
-      board[row][colend] = "#";
-      queue.push(row, colend);
-    }
-  }
 
-  for (let col = 0; col < width; col++) {
-    if (board[0][col] === "O") {
-      board[0][col] = "#";
-      queue.push(0, col);
-    }
-    if (board[rowend][col] === "O") {
-      board[rowend][col] = "#";
-      queue.push(rowend, col);
-    }
-  }
-
-  while (queue.length > 0) {
-    const row = queue.shift();
-    const col = queue.shift();
-    if (row < rowend && board[row + 1][col] === "O") {
-      board[row + 1][col] = "#";
-      queue.push(row + 1, col);
-    }
-    if (row > 0 && board[row - 1][col] === "O") {
-      board[row - 1][col] = "#";
-      queue.push(row - 1, col);
-    }
-    if (board[row][col + 1] === "O") {
-      board[row][col + 1] = "#";
-      queue.push(row, col + 1);
-    }
-    if (board[row][col - 1] === "O") {
-      board[row][col - 1] = "#";
-      queue.push(row, col - 1);
-    }
-  }
-
-  for (let row = 0; row < height; row++) {
     for (let col = 0; col < width; col++) {
-      if (board[row][col] === "#") {
-        board[row][col] = "O";
-      } else if (board[row][col] === "O") {
-        board[row][col] = "X";
-      }
+        if (board[0][col] === 'O') {
+            board[0][col] = '#';
+            queue.push(0, col);
+        }
+        if (board[rowend][col] === 'O') {
+            board[rowend][col] = '#';
+            queue.push(rowend, col);
+        }
     }
-  }
+
+    while (queue.length > 0) {
+        const row = queue.shift();
+        const col = queue.shift();
+        if (row < rowend && board[row + 1][col] === 'O') {
+            board[row + 1][col] = '#';
+            queue.push(row + 1, col);
+        }
+        if (row > 0 && board[row - 1][col] === 'O') {
+            board[row - 1][col] = '#';
+            queue.push(row - 1, col);
+        }
+        if (board[row][col + 1] === 'O') {
+            board[row][col + 1] = '#';
+            queue.push(row, col + 1);
+        }
+        if (board[row][col - 1] === 'O') {
+            board[row][col - 1] = '#';
+            queue.push(row, col - 1);
+        }
+    }
+
+    for (let row = 0; row < height; row++) {
+        for (let col = 0; col < width; col++) {
+            if (board[row][col] === '#') {
+                board[row][col] = 'O';
+            } else if (board[row][col] === 'O') {
+                board[row][col] = 'X';
+            }
+        }
+    }
 };
 ```
 
@@ -1719,24 +1700,24 @@ DFS. Cache the visited node before entering the next recursion.
  * @return {UndirectedGraphNode}
  */
 let cloneGraph = function (graph) {
-  const cache = {};
-  return _clone(graph);
+    const cache = {};
+    return _clone(graph);
 
-  function _clone(graph) {
-    if (!graph) {
-      return graph;
+    function _clone(graph) {
+        if (!graph) {
+            return graph;
+        }
+        const label = graph.label;
+        if (!cache[label]) {
+            cache[label] = new UndirectedGraphNode(label);
+            cache[label].neighbors = graph.neighbors.map(_clone);
+        }
+        return cache[label];
     }
-    const label = graph.label;
-    if (!cache[label]) {
-      cache[label] = new UndirectedGraphNode(label);
-      cache[label].neighbors = graph.neighbors.map(_clone);
-    }
-    return cache[label];
-  }
 };
 ```
 
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/binary-tree-upside-down.webp "binary-tree-upside-down")
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/binary-tree-upside-down.webp 'binary-tree-upside-down')
 
 ```js
 /**
@@ -1751,37 +1732,37 @@ let cloneGraph = function (graph) {
  * @return {TreeNode}
  */
 const upsideDownBinaryTree = function (root) {
-  let curr = root;
-  let next = null;
-  let temp = null;
-  let prev = null;
-  while (curr !== null) {
-    next = curr.left;
-    curr.left = temp;
-    temp = curr.right;
-    curr.right = prev;
-    prev = curr;
-    curr = next;
-  }
-  return prev;
+    let curr = root;
+    let next = null;
+    let temp = null;
+    let prev = null;
+    while (curr !== null) {
+        next = curr.left;
+        curr.left = temp;
+        temp = curr.right;
+        curr.right = prev;
+        prev = curr;
+        curr = next;
+    }
+    return prev;
 };
 
 // another
 
 const upsideDownBinaryTree = function (root) {
-  if (root == null || root.left == null) {
-    return root;
-  }
-  const newRoot = upsideDownBinaryTree(root.left);
-  root.left.left = root.right;
-  root.left.right = root;
-  root.left = null;
-  root.right = null;
-  return newRoot;
+    if (root == null || root.left == null) {
+        return root;
+    }
+    const newRoot = upsideDownBinaryTree(root.left);
+    root.left.left = root.right;
+    root.left.right = root;
+    root.left = null;
+    root.right = null;
+    return newRoot;
 };
 ```
 
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png "maximum-sum-circular-subarray")
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png 'maximum-sum-circular-subarray')
 
 ```js
 /**
@@ -1789,19 +1770,19 @@ const upsideDownBinaryTree = function (root) {
  * @return {number}
  */
 const maxSubarraySumCircular = function (A) {
-  let minSum = Infinity,
-    sum = 0,
-    maxSum = -Infinity,
-    curMax = 0,
-    curMin = 0;
-  for (let a of A) {
-    sum += a;
-    curMax = Math.max(curMax + a, a);
-    maxSum = Math.max(maxSum, curMax);
-    curMin = Math.min(curMin + a, a);
-    minSum = Math.min(minSum, curMin);
-  }
-  return maxSum > 0 ? Math.max(maxSum, sum - minSum) : maxSum;
+    let minSum = Infinity,
+        sum = 0,
+        maxSum = -Infinity,
+        curMax = 0,
+        curMin = 0;
+    for (let a of A) {
+        sum += a;
+        curMax = Math.max(curMax + a, a);
+        maxSum = Math.max(maxSum, curMax);
+        curMin = Math.min(curMin + a, a);
+        minSum = Math.min(minSum, curMin);
+    }
+    return maxSum > 0 ? Math.max(maxSum, sum - minSum) : maxSum;
 };
 ```
 
@@ -1838,8 +1819,8 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Constraints:**
 
-- The number of nodes in the tree is in the range `[0, 5000]`.
-- `-104 <= Node.val <= 104`
+-   The number of nodes in the tree is in the range `[0, 5000]`.
+-   `-104 <= Node.val <= 104`
 
 [Source](https://leetcode.com/problems/balanced-binary-tree/)# Convert Sorted Array to Binary Search Tree
 
@@ -1899,14 +1880,14 @@ Please notice that another valid answer is \[5,2,6,null,4,null,7\] and it's also
 
 **Constraints:**
 
-- The number of nodes in the tree is in the range `[0, 104]`.
-- `-105 <= Node.val <= 105`
-- Each node has a **unique** value.
-- `root` is a valid binary search tree.
-- `-105 <= key <= 105`
+-   The number of nodes in the tree is in the range `[0, 104]`.
+-   `-105 <= Node.val <= 105`
+-   Each node has a **unique** value.
+-   `root` is a valid binary search tree.
+-   `-105 <= key <= 105`
 
-[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg "meeting-room-ii")
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg "meeting-room-ii")
+[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg 'meeting-room-ii')
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg 'meeting-room-ii')
 
 ```javascript
 /**
@@ -1914,22 +1895,22 @@ Please notice that another valid answer is \[5,2,6,null,4,null,7\] and it's also
  * @return {number}
  */
 const minMeetingRooms = function (intervals) {
-  const len = intervals.length;
-  const starts = new Array(len);
-  const ends = new Array(len);
-  for (let i = 0; i < len; i++) {
-    starts[i] = intervals[i][0];
-    ends[i] = intervals[i][1];
-  }
-  starts.sort((a, b) => a - b);
-  ends.sort((a, b) => a - b);
-  let rooms = 0;
-  let endsIdx = 0;
-  for (let i = 0; i < len; i++) {
-    if (starts[i] < ends[endsIdx]) rooms++;
-    else endsIdx++;
-  }
-  return rooms;
+    const len = intervals.length;
+    const starts = new Array(len);
+    const ends = new Array(len);
+    for (let i = 0; i < len; i++) {
+        starts[i] = intervals[i][0];
+        ends[i] = intervals[i][1];
+    }
+    starts.sort((a, b) => a - b);
+    ends.sort((a, b) => a - b);
+    let rooms = 0;
+    let endsIdx = 0;
+    for (let i = 0; i < len; i++) {
+        if (starts[i] < ends[endsIdx]) rooms++;
+        else endsIdx++;
+    }
+    return rooms;
 };
 ```
 
