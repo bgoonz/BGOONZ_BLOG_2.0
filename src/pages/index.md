@@ -47,6 +47,7 @@ sections:
             url: /style-guide
             style: link
         title: Guitar Effects Triggering w DTW
+        title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
       - title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >
