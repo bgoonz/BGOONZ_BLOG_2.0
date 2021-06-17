@@ -16,6 +16,7 @@ sections:
           - label: Get Started
             url: /docs
             style: link
+        title: A Quick Guide To Big O
       - content: >
           ![](/\_static/app-assets/python.png)
 
