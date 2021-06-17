@@ -225,7 +225,7 @@ sections:
   - section_id: cta
     type: section_cta
     title: Contact Me!
-    subtitle: This is an optional description for the call to action block.
+    subtitle: Contact me
     actions:
       - label: Send Email
         url: 'mailto:bryan.guner@gmail.com'
