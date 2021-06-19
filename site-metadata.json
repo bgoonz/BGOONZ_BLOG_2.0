@@ -63,7 +63,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "BonusPages",
+                        "label": "extra",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
