@@ -9,7 +9,7 @@ seo:
     robots: []
     extra: []
     type: stackbit_page_meta
-template: docs
+template: embed
 
 
 content: '<iframe height="900px" width="100%" src="https://replit.com/@bgoonz/live-examples-1?lite=true" scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
