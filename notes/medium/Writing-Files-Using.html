@@ -1,65 +1,111 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Writing-Files-Using</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="writing-files-using-python">Writing Files Using Python</h1>
-<p>Basics of Writing Files in Python The common methods to operate with files are open() to open a file,</p>
-<hr />
-<h3 id="writing-files-using-python-1">Writing Files Using Python</h3>
-<p>Basics of Writing Files in Python<br />
-The common methods to operate with files are open() to open a file,</p>
-<p>seek() to set the file’s current position at the given offset, and</p>
-<p>close() to close th</p>
-<p>As pointed out in a previous article that deals with reading data from files, file handling belongs to the essential knowledge of every professional Python programmer. This feature is a core part of the Python language, and no extra module needs to be loaded to do it properly.</p>
-<h3 id="basics-of-writing-files-in-python">Basics of Writing Files in Python</h3>
-<p>The common methods to operate with files are <code>open()</code> to open a file, <code>seek()</code> to set the file’s current position at the given offset, and <code>close()</code> to close the file afterwards. The <code>open()</code> method returns a file handle that represents a <a href="https://docs.python.org/3/glossary.html#term-file-object" class="markup--anchor markup--p-anchor">file object</a> to be used to access the file for reading, writing, or appending.</p>
-<p>Writing to a file requires a few decisions — the name of the file in which to store data and the access mode of the file. Available are two modes, writing to a new file (and overwriting any existing data) and appending data at the end of a file that already exists. The according abbreviations are “w”, and “a”, and have to be specified before opening a file.</p>
-<p>In this article we will explain how to write data to a file line by line, as a list of lines, and appending data at the end of a file.</p>
-<h3 id="writing-a-single-line-to-a-file">Writing a Single Line to a File</h3>
-<p>This first example is pretty similar to writing to files with the popular programming languages C and C++, as you’ll see in <em>Listing 1</em>. The process is pretty straightforward. First, we open the file using the <code>open()</code> method for writing, write a single line of text to the file using the <code>write()</code> method, and then close the file using the <code>close()</code> method. Keep in mind that due to the way we opened the “helloworld.txt” file it will either be created if it does not exist yet, or it will be completely overwritten.</p>
-<pre><code>filehandle = open(&#39;helloworld.txt&#39;, &#39;w&#39;)
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>Writing-Files-Using</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="writing-files-using-python">Writing Files Using Python</h1>
+        <p>Basics of Writing Files in Python The common methods to operate with files are open() to open a file,</p>
+        <hr />
+        <h3 id="writing-files-using-python-1">Writing Files Using Python</h3>
+        <p>
+            Basics of Writing Files in Python<br />
+            The common methods to operate with files are open() to open a file,
+        </p>
+        <p>seek() to set the file’s current position at the given offset, and</p>
+        <p>close() to close th</p>
+        <p>
+            As pointed out in a previous article that deals with reading data from files, file handling belongs to the essential knowledge of every professional
+            Python programmer. This feature is a core part of the Python language, and no extra module needs to be loaded to do it properly.
+        </p>
+        <h3 id="basics-of-writing-files-in-python">Basics of Writing Files in Python</h3>
+        <p>
+            The common methods to operate with files are <code>open()</code> to open a file, <code>seek()</code> to set the file’s current position at the given
+            offset, and <code>close()</code> to close the file afterwards. The <code>open()</code> method returns a file handle that represents a
+            <a href="https://docs.python.org/3/glossary.html#term-file-object" class="markup--anchor markup--p-anchor">file object</a> to be used to access the
+            file for reading, writing, or appending.
+        </p>
+        <p>
+            Writing to a file requires a few decisions — the name of the file in which to store data and the access mode of the file. Available are two modes,
+            writing to a new file (and overwriting any existing data) and appending data at the end of a file that already exists. The according abbreviations
+            are “w”, and “a”, and have to be specified before opening a file.
+        </p>
+        <p>In this article we will explain how to write data to a file line by line, as a list of lines, and appending data at the end of a file.</p>
+        <h3 id="writing-a-single-line-to-a-file">Writing a Single Line to a File</h3>
+        <p>
+            This first example is pretty similar to writing to files with the popular programming languages C and C++, as you’ll see in <em>Listing 1</em>. The
+            process is pretty straightforward. First, we open the file using the <code>open()</code> method for writing, write a single line of text to the file
+            using the <code>write()</code> method, and then close the file using the <code>close()</code> method. Keep in mind that due to the way we opened the
+            “helloworld.txt” file it will either be created if it does not exist yet, or it will be completely overwritten.
+        </p>
+        <pre><code>filehandle = open(&#39;helloworld.txt&#39;, &#39;w&#39;)
 filehandle.write(&#39;Hello, world!\n&#39;)
 filehandle.close()</code></pre>
-<p><em>Listing 1</em></p>
-<p>This entire process can be shortened using the <code>with</code> statement. <em>Listing 2</em> shows how to write that. As already said before keep in mind that by opening the “helloworld.txt” file this way will either create if it does not exist yet or completely overwritten, otherwise.</p>
-<pre><code>with open(&#39;helloworld.txt&#39;, &#39;w&#39;) as filehandle:
+        <p><em>Listing 1</em></p>
+        <p>
+            This entire process can be shortened using the <code>with</code> statement. <em>Listing 2</em> shows how to write that. As already said before keep
+            in mind that by opening the “helloworld.txt” file this way will either create if it does not exist yet or completely overwritten, otherwise.
+        </p>
+        <pre><code>with open(&#39;helloworld.txt&#39;, &#39;w&#39;) as filehandle:
     filehandle.write(&#39;Hello, world!\n&#39;)</code></pre>
-<p><em>Listing 2</em></p>
-<h3 id="writing-a-list-of-lines-to-a-file">Writing a List of Lines to a File</h3>
-<p>In reality a file does not consist only of a single line, but much more data. Therefore, the contents of the file are stored in a list that represents a file buffer. To write the entire file buffer we’ll use the <code>writelines()</code> method. <em>Listing 3</em> gives you an example of this.</p>
-<pre><code>filehandle = open(&quot;helloworld.txt&quot;, &quot;w&quot;)
+        <p><em>Listing 2</em></p>
+        <h3 id="writing-a-list-of-lines-to-a-file">Writing a List of Lines to a File</h3>
+        <p>
+            In reality a file does not consist only of a single line, but much more data. Therefore, the contents of the file are stored in a list that
+            represents a file buffer. To write the entire file buffer we’ll use the <code>writelines()</code> method. <em>Listing 3</em> gives you an example of
+            this.
+        </p>
+        <pre><code>filehandle = open(&quot;helloworld.txt&quot;, &quot;w&quot;)
 filebuffer = [&quot;a first line of text&quot;, &quot;a second line of text&quot;, &quot;a third line&quot;]
 filehandle.writelines(filebuffer)
 filehandle.close()</code></pre>
-<p><em>Listing 3</em></p>
-<p>Running the Python program shown in <em>Listing 3</em> and then using the <code>cat</code> command we can see that the file “helloworld.txt” has the following content:</p>
-<pre><code>$ cat helloworld.txt
+        <p><em>Listing 3</em></p>
+        <p>
+            Running the Python program shown in <em>Listing 3</em> and then using the <code>cat</code> command we can see that the file “helloworld.txt” has the
+            following content:
+        </p>
+        <pre><code>$ cat helloworld.txt
 a first line of text a second line of text a third line</code></pre>
-<p><em>Listing 4</em></p>
-<p>This happens because <strong>the</strong> <code>writelines()</code> <strong>method does not automatically add any line separators when writing the data</strong>. <em>Listing 5</em> shows how to achieve that, writing each line of text on a single line by adding the line separator “\n”. Using a generator expression each line is substituted by the line plus line separator. Again, you can formulate this using the <code>with</code> statement.</p>
-<pre><code>with open(&#39;helloworld.txt&#39;, &#39;w&#39;) as filehandle:
+        <p><em>Listing 4</em></p>
+        <p>
+            This happens because <strong>the</strong> <code>writelines()</code>
+            <strong>method does not automatically add any line separators when writing the data</strong>. <em>Listing 5</em> shows how to achieve that, writing
+            each line of text on a single line by adding the line separator “\n”. Using a generator expression each line is substituted by the line plus line
+            separator. Again, you can formulate this using the <code>with</code> statement.
+        </p>
+        <pre><code>with open(&#39;helloworld.txt&#39;, &#39;w&#39;) as filehandle:
     filebuffer = [&quot;a line of text&quot;, &quot;another line of text&quot;, &quot;a third line&quot;]
     filehandle.writelines(&quot;%s\n&quot; % line for line in filebuffer)</code></pre>
-<p><em>Listing 5</em></p>
-<p>Now, the output file “helloworld.txt” has the desired content as shown in <em>Listing 6</em>:</p>
-<pre><code>$ cat helloworld.txt
+        <p><em>Listing 5</em></p>
+        <p>Now, the output file “helloworld.txt” has the desired content as shown in <em>Listing 6</em>:</p>
+        <pre><code>$ cat helloworld.txt
 a first line of text
 a second line of text
 a third line</code></pre>
-<p><em>Listing 6</em></p>
-<p>Interestingly, there is a way to use output redirection in Python to write data to files. <em>Listing 7</em> shows how to code that for Python 2.x.</p>
-<pre><code>filename = &quot;helloworld.txt&quot;
+        <p><em>Listing 6</em></p>
+        <p>
+            Interestingly, there is a way to use output redirection in Python to write data to files. <em>Listing 7</em> shows how to code that for Python 2.x.
+        </p>
+        <pre><code>filename = &quot;helloworld.txt&quot;
 
 filecontent = [&quot;Hello, world&quot;, &quot;a second line&quot;, &quot;and a third line&quot;]
 
@@ -67,11 +113,20 @@ with open(filename, &#39;w&#39;) as filehandle:
 
     for line in filecontent:
         print &gt;&gt;filehandle, line</code></pre>
-<p><em>Listing 7</em></p>
-<p>For the latest Python releases this does not work in the same way anymore. To do something like this we must use the <code>sys</code> module. It allows us to access the UNIX standard output channels via <code>sys.stdout</code>, <code>sys.stdin</code>, and <code>sys.stderr</code>.</p>
-<p>In our case we preserve the original value of the output channel <code>sys.stdout</code>, first (line 8 in the code below), redefine it to the handle of our output file,</p>
-<p>next (line 15), print the data as usual (line 18), and finally restore the original value of the output channel <code>sys.stdout</code> (line 21). <em>Listing 8</em> contains the example code.</p>
-<pre><code>import sys
+        <p><em>Listing 7</em></p>
+        <p>
+            For the latest Python releases this does not work in the same way anymore. To do something like this we must use the <code>sys</code> module. It
+            allows us to access the UNIX standard output channels via <code>sys.stdout</code>, <code>sys.stdin</code>, and <code>sys.stderr</code>.
+        </p>
+        <p>
+            In our case we preserve the original value of the output channel <code>sys.stdout</code>, first (line 8 in the code below), redefine it to the
+            handle of our output file,
+        </p>
+        <p>
+            next (line 15), print the data as usual (line 18), and finally restore the original value of the output channel <code>sys.stdout</code> (line 21).
+            <em>Listing 8</em> contains the example code.
+        </p>
+        <pre><code>import sys
 
 filename = &quot;helloworld.txt&quot;
 
@@ -88,34 +143,58 @@ with open(filename, &#39;w&#39;) as filehandle:
 
 
     sys.stdout = original</code></pre>
-<p><em>Listing 8</em></p>
-<p>This is not necessarily best practice, but it does give you other options for writing lines to a file.</p>
-<h3 id="appending-data-to-a-file">Appending Data to a File</h3>
-<p>So far, we have stored data in new files or in overwritten data in existing files. But what if we want to append data to the end of an existing file? In this case we would need to open the existing file using a different access mode. We change that to ‘a’ instead of ‘w’.</p>
-<p><em>Listing 9</em> shows how to handle that. And <em>Listing 10</em> does the same thing, but it uses the <code>with</code> statement rather.</p>
-<pre><code>filehandle = open(&#39;helloworld.txt&#39;,&#39;a&#39;)
+        <p><em>Listing 8</em></p>
+        <p>This is not necessarily best practice, but it does give you other options for writing lines to a file.</p>
+        <h3 id="appending-data-to-a-file">Appending Data to a File</h3>
+        <p>
+            So far, we have stored data in new files or in overwritten data in existing files. But what if we want to append data to the end of an existing
+            file? In this case we would need to open the existing file using a different access mode. We change that to ‘a’ instead of ‘w’.
+        </p>
+        <p><em>Listing 9</em> shows how to handle that. And <em>Listing 10</em> does the same thing, but it uses the <code>with</code> statement rather.</p>
+        <pre><code>filehandle = open(&#39;helloworld.txt&#39;,&#39;a&#39;)
 filehandle.write(&#39;\n&#39; + &#39;Hello, world!\n&#39;)
 filehandle.close()</code></pre>
-<p><em>Listing 9</em></p>
-<pre><code>with open(&#39;helloworld.txt&#39;, &#39;a&#39;) as filehandle:
+        <p><em>Listing 9</em></p>
+        <pre><code>with open(&#39;helloworld.txt&#39;, &#39;a&#39;) as filehandle:
     filehandle.write(&#39;\n&#39; + &#39;Hello, world!\n&#39;)</code></pre>
-<p><em>Listing 10</em></p>
-<p>Using the same helloworld.txt file from before, running this code will produce the following file contents:</p>
-<pre><code>$ cat helloworld.txt
+        <p><em>Listing 10</em></p>
+        <p>Using the same helloworld.txt file from before, running this code will produce the following file contents:</p>
+        <pre><code>$ cat helloworld.txt
 Hello, world
 a second line
 and a third line
 
 Hello, world!</code></pre>
-<h3 id="conclusion">Conclusion</h3>
-<p>Writing plain text data to files, or appending data to existing files, is as easy as reading from files in Python. As soon as a file is closed after writing or appending data, Python triggers a synchronization call. As a result, the updated file is immediately written to disk.</p>
-<h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h4>
-<p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
-<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br /> <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<p>Or Checkout my personal Resource Site:</p>
-<p><a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br /> <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/d46b4851366f">March 6, 2021</a>.</p>
-<p><a href="https://medium.com/@bryanguner/writing-files-using-python-d46b4851366f" class="p-canonical">Canonical link</a></p>
-<p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
-</body>
+        <h3 id="conclusion">Conclusion</h3>
+        <p>
+            Writing plain text data to files, or appending data to existing files, is as easy as reading from files in Python. As soon as a file is closed after
+            writing or appending data, Python triggers a synchronization call. As a result, the updated file is immediately written to disk.
+        </p>
+        <h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">
+            If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+        </h4>
+        <p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
+        <p>
+            <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"
+                ><strong>bgoonz — Overview</strong><br />
+                <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a
+            ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>Or Checkout my personal Resource Site:</p>
+        <p>
+            <a
+                href="https://goofy-euclid-1cd736.netlify.app/"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://goofy-euclid-1cd736.netlify.app/"
+                ><strong>a/A-Student-Resources</strong><br />
+                <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a
+            ><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>
+            By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+            <a href="https://medium.com/p/d46b4851366f">March 6, 2021</a>.
+        </p>
+        <p><a href="https://medium.com/@bryanguner/writing-files-using-python-d46b4851366f" class="p-canonical">Canonical link</a></p>
+        <p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+    </body>
 </html>

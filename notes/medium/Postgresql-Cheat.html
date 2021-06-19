@@ -1,136 +1,185 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Postgresql-Cheat</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="postgresql-cheat-sheet">Postgresql Cheat Sheet</h1>
-<p>PostgreSQL commands</p>
-<hr />
-<h4 id="codex"><a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a></h4>
-<h3 id="postgresql-cheat-sheet-1">PostgreSQL Cheat Sheet</h3>
-<h4 id="each-table-is-made-up-of-rows-and-columns.-if-you-think-of-a-table-as-a-grid-the-column-go-from-left-to-right-across-the-grid-and-each-entry-of-data-is-listed-down-as-a-row."><strong>Each table is made up of rows and columns. If you think of a table as a grid, the column go from left to right across the grid and each entry of data is listed down as a row.</strong></h4>
-<p>Each row in a relational is uniquely identified by a primary key. This can be by one or more sets of column values. In most scenarios it is a single column, such as employeeID.</p>
-<p>Every relational table has one primary key. Its purpose is to uniquely identify each row in the database. No two rows can have the same primary key value. The practical result of this is that you can select every single row by just knowing its primary key.</p>
-<p>SQL Server UNIQUE constraints allow you to ensure that the data stored in a column, or a group of columns, is unique among the rows in a table.</p>
-<p>Although both UNIQUE and <a href="https://www.sqlservertutorial.net/sql-server-basics/sql-server-primary-key/" class="markup--anchor markup--p-anchor">PRIMARY KEY</a> constraints enforce the uniqueness of data, you should use the UNIQUE constraint instead of PRIMARY KEY constraint when you want to enforce the uniqueness of a column, or a group of columns, that are not the primary key columns.</p>
-<p>Different from PRIMARY KEY constraints, UNIQUE constraints allow NULL. Moreover, UNIQUE constraints treat the NULL as a regular value, therefore, it only allows one NULL per column.</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*kgzq5NoL5ejBGvuZ4qLDaQ.png" class="graf-image" />
-</figure>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*hr8DccnpiR2Uj5UI3iLsOQ.png" class="graf-image" />
-</figure>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*RiWJpwpVMdge3Sqofn3srA.png" class="graf-image" />
-</figure>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*GN5aSwENOvntpfk90rHYFg.png" class="graf-image" />
-</figure>
-<p>Create a new <a href="https://www.postgresqltutorial.com/postgresql-roles/" class="markup--anchor markup--p-anchor">role</a>:</p>
-<pre><code>CREATE ROLE role_name;</code></pre>
-<p>Create a new role with a <code>username</code> and <code>password</code>:</p>
-<pre><code>CREATE ROLE username NOINHERIT LOGIN PASSWORD password;</code></pre>
-<p>Change role for the current session to the <code>new_role</code>:</p>
-<pre><code>SET ROLE new_role;</code></pre>
-<p>Allow <code>role_1</code> to set its role as <code>role_2:</code></p>
-<pre><code>GRANT role_2 TO role_1;</code></pre>
-<h3 id="managing-databases">Managing databases</h3>
-<p><a href="https://www.postgresqltutorial.com/postgresql-create-database/" class="markup--anchor markup--p-anchor">Create a new database</a>:</p>
-<pre><code>CREATE DATABASE [IF NOT EXISTS] db_name;</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-drop-database/" class="markup--anchor markup--p-anchor">Delete a database permanently</a>:</p>
-<pre><code>DROP DATABASE [IF EXISTS] db_name;</code></pre>
-<h3 id="managing-tables">Managing tables</h3>
-<p><a href="https://www.postgresqltutorial.com/postgresql-create-table/" class="markup--anchor markup--p-anchor">Create a new table</a> or a <a href="https://www.postgresqltutorial.com/postgresql-temporary-table/" class="markup--anchor markup--p-anchor">temporary table</a></p>
-<pre><code>CREATE [TEMP] TABLE [IF NOT EXISTS] table_name(
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>Postgresql-Cheat</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="postgresql-cheat-sheet">Postgresql Cheat Sheet</h1>
+        <p>PostgreSQL commands</p>
+        <hr />
+        <h4 id="codex"><a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a></h4>
+        <h3 id="postgresql-cheat-sheet-1">PostgreSQL Cheat Sheet</h3>
+        <h4
+            id="each-table-is-made-up-of-rows-and-columns.-if-you-think-of-a-table-as-a-grid-the-column-go-from-left-to-right-across-the-grid-and-each-entry-of-data-is-listed-down-as-a-row."
+        >
+            <strong
+                >Each table is made up of rows and columns. If you think of a table as a grid, the column go from left to right across the grid and each entry
+                of data is listed down as a row.</strong
+            >
+        </h4>
+        <p>
+            Each row in a relational is uniquely identified by a primary key. This can be by one or more sets of column values. In most scenarios it is a single
+            column, such as employeeID.
+        </p>
+        <p>
+            Every relational table has one primary key. Its purpose is to uniquely identify each row in the database. No two rows can have the same primary key
+            value. The practical result of this is that you can select every single row by just knowing its primary key.
+        </p>
+        <p>SQL Server UNIQUE constraints allow you to ensure that the data stored in a column, or a group of columns, is unique among the rows in a table.</p>
+        <p>
+            Although both UNIQUE and
+            <a href="https://www.sqlservertutorial.net/sql-server-basics/sql-server-primary-key/" class="markup--anchor markup--p-anchor">PRIMARY KEY</a>
+            constraints enforce the uniqueness of data, you should use the UNIQUE constraint instead of PRIMARY KEY constraint when you want to enforce the
+            uniqueness of a column, or a group of columns, that are not the primary key columns.
+        </p>
+        <p>
+            Different from PRIMARY KEY constraints, UNIQUE constraints allow NULL. Moreover, UNIQUE constraints treat the NULL as a regular value, therefore, it
+            only allows one NULL per column.
+        </p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/1*kgzq5NoL5ejBGvuZ4qLDaQ.png" class="graf-image" />
+        </figure>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/1*hr8DccnpiR2Uj5UI3iLsOQ.png" class="graf-image" />
+        </figure>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/1*RiWJpwpVMdge3Sqofn3srA.png" class="graf-image" />
+        </figure>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/1*GN5aSwENOvntpfk90rHYFg.png" class="graf-image" />
+        </figure>
+        <p>Create a new <a href="https://www.postgresqltutorial.com/postgresql-roles/" class="markup--anchor markup--p-anchor">role</a>:</p>
+        <pre><code>CREATE ROLE role_name;</code></pre>
+        <p>Create a new role with a <code>username</code> and <code>password</code>:</p>
+        <pre><code>CREATE ROLE username NOINHERIT LOGIN PASSWORD password;</code></pre>
+        <p>Change role for the current session to the <code>new_role</code>:</p>
+        <pre><code>SET ROLE new_role;</code></pre>
+        <p>Allow <code>role_1</code> to set its role as <code>role_2:</code></p>
+        <pre><code>GRANT role_2 TO role_1;</code></pre>
+        <h3 id="managing-databases">Managing databases</h3>
+        <p><a href="https://www.postgresqltutorial.com/postgresql-create-database/" class="markup--anchor markup--p-anchor">Create a new database</a>:</p>
+        <pre><code>CREATE DATABASE [IF NOT EXISTS] db_name;</code></pre>
+        <p><a href="https://www.postgresqltutorial.com/postgresql-drop-database/" class="markup--anchor markup--p-anchor">Delete a database permanently</a>:</p>
+        <pre><code>DROP DATABASE [IF EXISTS] db_name;</code></pre>
+        <h3 id="managing-tables">Managing tables</h3>
+        <p>
+            <a href="https://www.postgresqltutorial.com/postgresql-create-table/" class="markup--anchor markup--p-anchor">Create a new table</a> or a
+            <a href="https://www.postgresqltutorial.com/postgresql-temporary-table/" class="markup--anchor markup--p-anchor">temporary table</a>
+        </p>
+        <pre><code>CREATE [TEMP] TABLE [IF NOT EXISTS] table_name(
        pk SERIAL PRIMARY KEY,
    c1 type(size) NOT NULL,
    c2 type(size) NULL,
    ...
 );</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-add-column/" class="markup--anchor markup--p-anchor">Add a new column</a> to a table:</p>
-<pre><code>ALTER TABLE table_name ADD COLUMN new_column_name TYPE;</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-drop-column/" class="markup--anchor markup--p-anchor">Drop a column</a> in a table:</p>
-<pre><code>ALTER TABLE table_name DROP COLUMN column_name;</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-rename-column/" class="markup--anchor markup--p-anchor">Rename a column</a>:</p>
-<pre><code>ALTER TABLE table_name RENAME column_name TO new_column_name;</code></pre>
-<p>Set or remove a default value for a column:</p>
-<pre><code>ALTER TABLE table_name ALTER COLUMN [SET DEFAULT value | DROP DEFAULT]</code></pre>
-<p>Add a <a href="https://www.postgresqltutorial.com/postgresql-primary-key/" class="markup--anchor markup--p-anchor">primary key</a> to a table.</p>
-<pre><code>ALTER TABLE table_name ADD PRIMARY KEY (column,...);</code></pre>
-<p>Remove the primary key from a table.</p>
-<pre><code>ALTER TABLE table_name
+        <p><a href="https://www.postgresqltutorial.com/postgresql-add-column/" class="markup--anchor markup--p-anchor">Add a new column</a> to a table:</p>
+        <pre><code>ALTER TABLE table_name ADD COLUMN new_column_name TYPE;</code></pre>
+        <p><a href="https://www.postgresqltutorial.com/postgresql-drop-column/" class="markup--anchor markup--p-anchor">Drop a column</a> in a table:</p>
+        <pre><code>ALTER TABLE table_name DROP COLUMN column_name;</code></pre>
+        <p><a href="https://www.postgresqltutorial.com/postgresql-rename-column/" class="markup--anchor markup--p-anchor">Rename a column</a>:</p>
+        <pre><code>ALTER TABLE table_name RENAME column_name TO new_column_name;</code></pre>
+        <p>Set or remove a default value for a column:</p>
+        <pre><code>ALTER TABLE table_name ALTER COLUMN [SET DEFAULT value | DROP DEFAULT]</code></pre>
+        <p>Add a <a href="https://www.postgresqltutorial.com/postgresql-primary-key/" class="markup--anchor markup--p-anchor">primary key</a> to a table.</p>
+        <pre><code>ALTER TABLE table_name ADD PRIMARY KEY (column,...);</code></pre>
+        <p>Remove the primary key from a table.</p>
+        <pre><code>ALTER TABLE table_name
 DROP CONSTRAINT primary_key_constraint_name;</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-rename-table/" class="markup--anchor markup--p-anchor">Rename a table</a>.</p>
-<pre><code>ALTER TABLE table_name RENAME TO new_table_name;</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-drop-table/" class="markup--anchor markup--p-anchor">Drop a table</a> and its dependent objects:</p>
-<pre><code>DROP TABLE [IF EXISTS] table_name CASCADE;</code></pre>
-<h3 id="managing-views">Managing views</h3>
-<p><a href="https://www.postgresqltutorial.com/managing-postgresql-views/" class="markup--anchor markup--p-anchor">Create a view</a>:</p>
-<pre><code>CREATE OR REPLACE view_name AS
+        <p><a href="https://www.postgresqltutorial.com/postgresql-rename-table/" class="markup--anchor markup--p-anchor">Rename a table</a>.</p>
+        <pre><code>ALTER TABLE table_name RENAME TO new_table_name;</code></pre>
+        <p>
+            <a href="https://www.postgresqltutorial.com/postgresql-drop-table/" class="markup--anchor markup--p-anchor">Drop a table</a> and its dependent
+            objects:
+        </p>
+        <pre><code>DROP TABLE [IF EXISTS] table_name CASCADE;</code></pre>
+        <h3 id="managing-views">Managing views</h3>
+        <p><a href="https://www.postgresqltutorial.com/managing-postgresql-views/" class="markup--anchor markup--p-anchor">Create a view</a>:</p>
+        <pre><code>CREATE OR REPLACE view_name AS
 query;</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-recursive-view/" class="markup--anchor markup--p-anchor">Create a recursive view</a>:</p>
-<pre><code>CREATE RECURSIVE VIEW view_name(column_list) AS
+        <p><a href="https://www.postgresqltutorial.com/postgresql-recursive-view/" class="markup--anchor markup--p-anchor">Create a recursive view</a>:</p>
+        <pre><code>CREATE RECURSIVE VIEW view_name(column_list) AS
 SELECT column_list;</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-materialized-views/" class="markup--anchor markup--p-anchor">Create a materialized view</a>:</p>
-<pre><code>CREATE MATERIALIZED VIEW view_name
+        <p>
+            <a href="https://www.postgresqltutorial.com/postgresql-materialized-views/" class="markup--anchor markup--p-anchor">Create a materialized view</a>:
+        </p>
+        <pre><code>CREATE MATERIALIZED VIEW view_name
 AS
 query
 WITH [NO] DATA;</code></pre>
-<p>Refresh a materialized view:</p>
-<pre><code>REFRESH MATERIALIZED VIEW CONCURRENTLY view_name;</code></pre>
-<p>Drop a view:</p>
-<pre><code>DROP VIEW [ IF EXISTS ] view_name;</code></pre>
-<p>Drop a materialized view:</p>
-<pre><code>DROP MATERIALIZED VIEW view_name;</code></pre>
-<p>Rename a view:</p>
-<pre><code>ALTER VIEW view_name RENAME TO new_name;</code></pre>
-<h3 id="managing-indexes">Managing indexes</h3>
-<p>Creating an index with the specified name on a table</p>
-<pre><code>CREATE [UNIQUE] INDEX index_name
+        <p>Refresh a materialized view:</p>
+        <pre><code>REFRESH MATERIALIZED VIEW CONCURRENTLY view_name;</code></pre>
+        <p>Drop a view:</p>
+        <pre><code>DROP VIEW [ IF EXISTS ] view_name;</code></pre>
+        <p>Drop a materialized view:</p>
+        <pre><code>DROP MATERIALIZED VIEW view_name;</code></pre>
+        <p>Rename a view:</p>
+        <pre><code>ALTER VIEW view_name RENAME TO new_name;</code></pre>
+        <h3 id="managing-indexes">Managing indexes</h3>
+        <p>Creating an index with the specified name on a table</p>
+        <pre><code>CREATE [UNIQUE] INDEX index_name
 ON table (column,...)</code></pre>
-<p>Removing a specified index from a table</p>
-<pre><code>DROP INDEX index_name;</code></pre>
-<h3 id="querying-data-from-tables">Querying data from tables</h3>
-<p>Query all data from a table:</p>
-<pre><code>SELECT * FROM table_name;</code></pre>
-<p>Query data from specified columns of all rows in a table:</p>
-<pre><code>SELECT column_list
+        <p>Removing a specified index from a table</p>
+        <pre><code>DROP INDEX index_name;</code></pre>
+        <h3 id="querying-data-from-tables">Querying data from tables</h3>
+        <p>Query all data from a table:</p>
+        <pre><code>SELECT * FROM table_name;</code></pre>
+        <p>Query data from specified columns of all rows in a table:</p>
+        <pre><code>SELECT column_list
 FROM table;</code></pre>
-<p>Query data and select only unique rows:</p>
-<pre><code>SELECT DISTINCT (column)
+        <p>Query data and select only unique rows:</p>
+        <pre><code>SELECT DISTINCT (column)
 FROM table;</code></pre>
-<p>Query data from a table with a filter:</p>
-<pre><code>SELECT *
+        <p>Query data from a table with a filter:</p>
+        <pre><code>SELECT *
 FROM table
 WHERE condition;</code></pre>
-<p>Assign an <a href="https://www.postgresqltutorial.com/postgresql-alias/" class="markup--anchor markup--p-anchor">alias</a> to a column in the result set:</p>
-<pre><code>SELECT column_1 AS new_column_1, ...
+        <p>
+            Assign an <a href="https://www.postgresqltutorial.com/postgresql-alias/" class="markup--anchor markup--p-anchor">alias</a> to a column in the result
+            set:
+        </p>
+        <pre><code>SELECT column_1 AS new_column_1, ...
 FROM table;</code></pre>
-<p>Query data using the <code>LIKE</code> operator:</p>
-<pre><code>SELECT * FROM table_name
+        <p>Query data using the <code>LIKE</code> operator:</p>
+        <pre><code>SELECT * FROM table_name
 WHERE column LIKE &#39;%value%&#39;</code></pre>
-<p>Query data using the <code>BETWEEN</code>operator:</p>
-<pre><code>SELECT * FROM table_name
+        <p>Query data using the <code>BETWEEN</code>operator:</p>
+        <pre><code>SELECT * FROM table_name
 WHERE column BETWEEN low AND high;</code></pre>
-<p>Query data using the <code>IN</code>operator:</p>
-<pre><code>SELECT * FROM table_name
+        <p>Query data using the <code>IN</code>operator:</p>
+        <pre><code>SELECT * FROM table_name
 WHERE column IN (value1, value2,...);</code></pre>
-<p>Constrain the returned rows with the <code>LIMIT</code> clause:</p>
-<pre><code>SELECT * FROM table_name
+        <p>Constrain the returned rows with the <code>LIMIT</code> clause:</p>
+        <pre><code>SELECT * FROM table_name
 LIMIT limit OFFSET offset
 ORDER BY column_name;</code></pre>
-<p>Query data from multiple using the <a href="https://www.postgresqltutorial.com/postgresql-inner-join/" class="markup--anchor markup--p-anchor">inner join</a>, <a href="https://www.postgresqltutorial.com/postgresql-left-join/" class="markup--anchor markup--p-anchor">left join</a>, <a href="https://www.postgresqltutorial.com/postgresql-full-outer-join/" class="markup--anchor markup--p-anchor">full outer join</a>, <a href="https://www.postgresqltutorial.com/postgresql-cross-join/" class="markup--anchor markup--p-anchor">cross join</a> and <a href="https://www.postgresqltutorial.com/postgresql-natural-join/" class="markup--anchor markup--p-anchor">natural join</a>:</p>
-<pre><code>SELECT *
+        <p>
+            Query data from multiple using the
+            <a href="https://www.postgresqltutorial.com/postgresql-inner-join/" class="markup--anchor markup--p-anchor">inner join</a>,
+            <a href="https://www.postgresqltutorial.com/postgresql-left-join/" class="markup--anchor markup--p-anchor">left join</a>,
+            <a href="https://www.postgresqltutorial.com/postgresql-full-outer-join/" class="markup--anchor markup--p-anchor">full outer join</a>,
+            <a href="https://www.postgresqltutorial.com/postgresql-cross-join/" class="markup--anchor markup--p-anchor">cross join</a> and
+            <a href="https://www.postgresqltutorial.com/postgresql-natural-join/" class="markup--anchor markup--p-anchor">natural join</a>:
+        </p>
+        <pre><code>SELECT *
 FROM table1
 INNER JOIN table2 ON conditions
 SELECT *
@@ -145,69 +194,69 @@ CROSS JOIN table2;
 SELECT *
 FROM table1
 NATURAL JOIN table2;</code></pre>
-<p>Return the number of rows of a table.</p>
-<pre><code>SELECT COUNT (*)
+        <p>Return the number of rows of a table.</p>
+        <pre><code>SELECT COUNT (*)
 FROM table_name;</code></pre>
-<p>Sort rows in ascending or descending order:</p>
-<pre><code>SELECT select_list
+        <p>Sort rows in ascending or descending order:</p>
+        <pre><code>SELECT select_list
 FROM table
 ORDER BY column ASC [DESC], column2 ASC [DESC],...;</code></pre>
-<p>Group rows using <code>GROUP BY</code> clause.</p>
-<pre><code>SELECT *
+        <p>Group rows using <code>GROUP BY</code> clause.</p>
+        <pre><code>SELECT *
 FROM table
 GROUP BY column_1, column_2, ...;</code></pre>
-<p>Filter groups using the <code>HAVING</code> clause.</p>
-<pre><code>SELECT *
+        <p>Filter groups using the <code>HAVING</code> clause.</p>
+        <pre><code>SELECT *
 FROM table
 GROUP BY column_1
 HAVING condition;</code></pre>
-<h3 id="set-operations">Set operations</h3>
-<p>Combine the result set of two or more queries with <code>UNION</code> operator:</p>
-<pre><code>SELECT * FROM table1
+        <h3 id="set-operations">Set operations</h3>
+        <p>Combine the result set of two or more queries with <code>UNION</code> operator:</p>
+        <pre><code>SELECT * FROM table1
 UNION
 SELECT * FROM table2;</code></pre>
-<p>Minus a result set using <code>EXCEPT</code> operator:</p>
-<pre><code>SELECT * FROM table1
+        <p>Minus a result set using <code>EXCEPT</code> operator:</p>
+        <pre><code>SELECT * FROM table1
 EXCEPT
 SELECT * FROM table2;</code></pre>
-<p>Get intersection of the result sets of two queries:</p>
-<pre><code>SELECT * FROM table1
+        <p>Get intersection of the result sets of two queries:</p>
+        <pre><code>SELECT * FROM table1
 INTERSECT
 SELECT * FROM table2;</code></pre>
-<h3 id="modifying-data">Modifying data</h3>
-<p><a href="https://www.postgresqltutorial.com/postgresql-insert/" class="markup--anchor markup--p-anchor">Insert a new row into a table</a>:</p>
-<pre><code>INSERT INTO table(column1,column2,...)
+        <h3 id="modifying-data">Modifying data</h3>
+        <p><a href="https://www.postgresqltutorial.com/postgresql-insert/" class="markup--anchor markup--p-anchor">Insert a new row into a table</a>:</p>
+        <pre><code>INSERT INTO table(column1,column2,...)
 VALUES(value_1,value_2,...);</code></pre>
-<p>Insert multiple rows into a table:</p>
-<pre><code>INSERT INTO table_name(column1,column2,...)
+        <p>Insert multiple rows into a table:</p>
+        <pre><code>INSERT INTO table_name(column1,column2,...)
 VALUES(value_1,value_2,...),
       (value_1,value_2,...),
       (value_1,value_2,...)...</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-update/" class="markup--anchor markup--p-anchor">Update</a> data for all rows:</p>
-<pre><code>UPDATE table_name
+        <p><a href="https://www.postgresqltutorial.com/postgresql-update/" class="markup--anchor markup--p-anchor">Update</a> data for all rows:</p>
+        <pre><code>UPDATE table_name
 SET column_1 = value_1,
     ...;</code></pre>
-<p>Update data for a set of rows specified by a condition in the <code>WHERE</code> clause.</p>
-<pre><code>UPDATE table
+        <p>Update data for a set of rows specified by a condition in the <code>WHERE</code> clause.</p>
+        <pre><code>UPDATE table
 SET column_1 = value_1,
     ...
 WHERE condition;</code></pre>
-<p><a href="https://www.postgresqltutorial.com/postgresql-delete/" class="markup--anchor markup--p-anchor">Delete all rows</a> of a table:</p>
-<pre><code>DELETE FROM table_name;</code></pre>
-<p>Delete specific rows based on a condition:</p>
-<pre><code>DELETE FROM table_name
+        <p><a href="https://www.postgresqltutorial.com/postgresql-delete/" class="markup--anchor markup--p-anchor">Delete all rows</a> of a table:</p>
+        <pre><code>DELETE FROM table_name;</code></pre>
+        <p>Delete specific rows based on a condition:</p>
+        <pre><code>DELETE FROM table_name
 WHERE condition;</code></pre>
-<h3 id="performance">Performance</h3>
-<p>Show the query plan for a query:</p>
-<pre><code>EXPLAIN query;</code></pre>
-<p>Show and execute the query plan for a query:</p>
-<pre><code>EXPLAIN ANALYZE query;</code></pre>
-<p>Collect statistics:</p>
-<pre><code>ANALYZE table_name;</code></pre>
-<hr />
-<h3 id="postgres-json">Postgres &amp; JSON:</h3>
-<h3 id="creating-the-db-and-the-table">Creating the DB and the Table</h3>
-<pre><code>DROP DATABASE IF EXISTS books_db;
+        <h3 id="performance">Performance</h3>
+        <p>Show the query plan for a query:</p>
+        <pre><code>EXPLAIN query;</code></pre>
+        <p>Show and execute the query plan for a query:</p>
+        <pre><code>EXPLAIN ANALYZE query;</code></pre>
+        <p>Collect statistics:</p>
+        <pre><code>ANALYZE table_name;</code></pre>
+        <hr />
+        <h3 id="postgres-json">Postgres &amp; JSON:</h3>
+        <h3 id="creating-the-db-and-the-table">Creating the DB and the Table</h3>
+        <pre><code>DROP DATABASE IF EXISTS books_db;
 CREATE DATABASE books_db WITH ENCODING=&#39;UTF8&#39; TEMPLATE template0;
 
 DROP TABLE IF EXISTS books;
@@ -217,75 +266,79 @@ CREATE TABLE books (
   client VARCHAR NOT NULL,
   data JSONb NOT NULL
 );</code></pre>
-<h3 id="populating-the-db">Populating the DB</h3>
-<pre><code>INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;: &quot;Siddhartha&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Herman&quot;, &quot;last_name&quot;: &quot;Hesse&quot; } }&#39; ); INSERT INTO books(client, data) values(&#39;Jenny&#39;, &#39;{ &quot;title&quot;: &quot;Bryan Guner&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Jack&quot;, &quot;last_name&quot;: &quot;Kerouac&quot; } }&#39;); INSERT INTO books(client, data) values(&#39;Jenny&#39;, &#39;{ &quot;title&quot;: &quot;100 años de soledad&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Gabo&quot;, &quot;last_name&quot;: &quot;Marquéz&quot; } }&#39;);</code></pre>
-<p>Lets see everything inside the table books:</p>
-<pre><code>SELECT * FROM books;</code></pre>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*GOQQ0qNGak2yIrtQ" class="graf-image" />
-</figure>
-<h3 id="operator-returns-values-out-of-json-columns"><code>-&gt;</code> operator returns values out of JSON columns</h3>
-<p>Selecting 1 column:</p>
-<pre><code>SELECT client,
+        <h3 id="populating-the-db">Populating the DB</h3>
+        <pre><code>INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;: &quot;Siddhartha&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Herman&quot;, &quot;last_name&quot;: &quot;Hesse&quot; } }&#39; ); INSERT INTO books(client, data) values(&#39;Jenny&#39;, &#39;{ &quot;title&quot;: &quot;Bryan Guner&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Jack&quot;, &quot;last_name&quot;: &quot;Kerouac&quot; } }&#39;); INSERT INTO books(client, data) values(&#39;Jenny&#39;, &#39;{ &quot;title&quot;: &quot;100 años de soledad&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Gabo&quot;, &quot;last_name&quot;: &quot;Marquéz&quot; } }&#39;);</code></pre>
+        <p>Lets see everything inside the table books:</p>
+        <pre><code>SELECT * FROM books;</code></pre>
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*GOQQ0qNGak2yIrtQ" class="graf-image" />
+        </figure>
+        <h3 id="operator-returns-values-out-of-json-columns"><code>-&gt;</code> operator returns values out of JSON columns</h3>
+        <p>Selecting 1 column:</p>
+        <pre><code>SELECT client,
     data-&gt;&#39;title&#39; AS title
     FROM books;</code></pre>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*OIVYOfYcbVh65Mt5" class="graf-image" />
-</figure>
-<p>Selecting 2 columns:</p>
-<pre><code>SELECT client,
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*OIVYOfYcbVh65Mt5" class="graf-image" />
+        </figure>
+        <p>Selecting 2 columns:</p>
+        <pre><code>SELECT client,
    data-&gt;&#39;title&#39; AS title, data-&gt;&#39;author&#39; AS author
    FROM books;</code></pre>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*fEzPkSY8yGexKOk4" class="graf-image" />
-</figure>
-<h3 id="vs--"><code>-&gt;</code> vs <code>-&gt;&gt;</code></h3>
-<p>The <code>-&gt;</code> operator returns the original JSON type (which might be an object), whereas <code>-&gt;&gt;</code> returns text.</p>
-<h3 id="return-nested-objects">Return NESTED objects</h3>
-<p>You can use the <code>-&gt;</code> to return a nested object and thus chain the operators:</p>
-<pre><code>SELECT client,
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*fEzPkSY8yGexKOk4" class="graf-image" />
+        </figure>
+        <h3 id="vs--"><code>-&gt;</code> vs <code>-&gt;&gt;</code></h3>
+        <p>The <code>-&gt;</code> operator returns the original JSON type (which might be an object), whereas <code>-&gt;&gt;</code> returns text.</p>
+        <h3 id="return-nested-objects">Return NESTED objects</h3>
+        <p>You can use the <code>-&gt;</code> to return a nested object and thus chain the operators:</p>
+        <pre><code>SELECT client,
    data-&gt;&#39;author&#39;-&gt;&#39;last_name&#39; AS author
    FROM books;</code></pre>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*lwy8bR7igaroMXeb" class="graf-image" />
-</figure>
-<h3 id="filtering">Filtering</h3>
-<p>Select rows based on a value inside your JSON:</p>
-<pre><code>SELECT
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*lwy8bR7igaroMXeb" class="graf-image" />
+        </figure>
+        <h3 id="filtering">Filtering</h3>
+        <p>Select rows based on a value inside your JSON:</p>
+        <pre><code>SELECT
  client,
  data-&gt;&#39;title&#39; AS title
  FROM books
   WHERE data-&gt;&#39;title&#39; = &#39;&quot;Bryan Guner&quot;&#39;;</code></pre>
-<p>Notice WHERE uses <code>-&gt;</code> so we must compare to JSON <code>'"Bryan Guner"'</code></p>
-<p>Or we could use <code>-&gt;&gt;</code> and compare to <code>'Bryan Guner'</code></p>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*poASndLoU71qlXqE" class="graf-image" />
-</figure>
-<h3 id="nested-filtering">Nested filtering</h3>
-<p>Find rows based on the value of a nested JSON object:</p>
-<pre><code>SELECT
+        <p>Notice WHERE uses <code>-&gt;</code> so we must compare to JSON <code>'"Bryan Guner"'</code></p>
+        <p>Or we could use <code>-&gt;&gt;</code> and compare to <code>'Bryan Guner'</code></p>
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*poASndLoU71qlXqE" class="graf-image" />
+        </figure>
+        <h3 id="nested-filtering">Nested filtering</h3>
+        <p>Find rows based on the value of a nested JSON object:</p>
+        <pre><code>SELECT
  client,
  data-&gt;&#39;title&#39; AS title
  FROM books
   WHERE data-&gt;&#39;author&#39;-&gt;&gt;&#39;last_name&#39; = &#39;Kerouac&#39;;</code></pre>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*R1kOhDK19ntdUYkq" class="graf-image" />
-</figure>
-<h3 id="a-real-world-example">A real world example</h3>
-<pre><code>CREATE TABLE events (
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*R1kOhDK19ntdUYkq" class="graf-image" />
+        </figure>
+        <h3 id="a-real-world-example">A real world example</h3>
+        <pre><code>CREATE TABLE events (
   name varchar(200),
   visitor_id varchar(200),
   properties json,
   browser json
 );</code></pre>
-<p>We’re going to store events in this table, like pageviews. Each event has properties, which could be anything (e.g. current page) and also sends information about the browser (like OS, screen resolution, etc). Both of these are completely free form and could change over time (as we think of extra stuff to track).</p>
-<pre><code>INSERT INTO events VALUES (
+        <p>
+            We’re going to store events in this table, like pageviews. Each event has properties, which could be anything (e.g. current page) and also sends
+            information about the browser (like OS, screen resolution, etc). Both of these are completely free form and could change over time (as we think of
+            extra stuff to track).
+        </p>
+        <pre><code>INSERT INTO events VALUES (
   &#39;pageview&#39;, &#39;1&#39;,
   &#39;{ &quot;page&quot;: &quot;/&quot; }&#39;,
   &#39;{ &quot;name&quot;: &quot;Chrome&quot;, &quot;os&quot;: &quot;Mac&quot;, &quot;resolution&quot;: { &quot;x&quot;: 1440, &quot;y&quot;: 900 } }&#39;
@@ -315,50 +368,106 @@ INSERT INTO events VALUES (
   &#39;{ &quot;amount&quot;: 500 }&#39;,
   &#39;{ &quot;name&quot;: &quot;Firefox&quot;, &quot;os&quot;: &quot;Windows&quot;, &quot;resolution&quot;: { &quot;x&quot;: 1280, &quot;y&quot;: 800 } }&#39;
 );</code></pre>
-<p>Now lets select everything:</p>
-<pre><code>SELECT * FROM events;</code></pre>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*ZPHfB4FxjSIlAVxL" class="graf-image" />
-</figure>
-<h3 id="json-operators-postgresql-aggregate-functions">JSON operators + PostgreSQL aggregate functions</h3>
-<p>Using the JSON operators, combined with traditional PostgreSQL aggregate functions, we can pull out whatever we want. You have the full might of an RDBMS at your disposal.</p>
-<ul>
-<li><span id="4ffd">Lets see browser usage:</span></li>
-<li><span id="261c"><code>SELECT browser-&gt;&gt;'name' AS browser, count(browser) FROM events GROUP BY browser-&gt;&gt;'name';</code></span></li>
-</ul>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*4lEv2DgUk33FeUgo" class="graf-image" />
-</figure>
-<ul>
-<li><span id="946c">Total revenue per visitor:</span></li>
-</ul>
-<p><code>SELECT visitor_id, SUM(CAST(properties-&gt;&gt;'amount' AS integer)) AS total FROM events WHERE CAST(properties-&gt;&gt;'amount' AS integer) &gt; 0 GROUP BY visitor_id;</code></p>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*HxOS3CgwXBJ6A2FP" class="graf-image" />
-</figure>
-<ul>
-<li><span id="9850">Average screen resolution</span></li>
-<li><span id="132f"><code>SELECT AVG(CAST(browser-&gt;'resolution'-&gt;&gt;'x' AS integer)) AS width, AVG(CAST(browser-&gt;'resolution'-&gt;&gt;'y' AS integer)) AS height FROM events;</code></span></li>
-</ul>
-<p>Output:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*iyv4Iv4Rc8M8mwt1" class="graf-image" />
-</figure>
-<h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h4>
-<p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
-<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br /> <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<p>Or Checkout my personal Resource Site:</p>
-<p><a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br /> <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<h3 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content-1">If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:</h3>
-<p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br /> <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br /> <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<h3 id="or-checkout-my-personal-resource-site">Or Checkout my personal Resource Site:</h3>
-<p><a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br /> <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
-<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/718b813d3e31">March 5, 2021</a>.</p>
-<p><a href="https://medium.com/@bryanguner/postgresql-cheat-sheet-718b813d3e31" class="p-canonical">Canonical link</a></p>
-<p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
-</body>
+        <p>Now lets select everything:</p>
+        <pre><code>SELECT * FROM events;</code></pre>
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*ZPHfB4FxjSIlAVxL" class="graf-image" />
+        </figure>
+        <h3 id="json-operators-postgresql-aggregate-functions">JSON operators + PostgreSQL aggregate functions</h3>
+        <p>
+            Using the JSON operators, combined with traditional PostgreSQL aggregate functions, we can pull out whatever we want. You have the full might of an
+            RDBMS at your disposal.
+        </p>
+        <ul>
+            <li><span id="4ffd">Lets see browser usage:</span></li>
+            <li>
+                <span id="261c"><code>SELECT browser-&gt;&gt;'name' AS browser, count(browser) FROM events GROUP BY browser-&gt;&gt;'name';</code></span>
+            </li>
+        </ul>
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*4lEv2DgUk33FeUgo" class="graf-image" />
+        </figure>
+        <ul>
+            <li><span id="946c">Total revenue per visitor:</span></li>
+        </ul>
+        <p>
+            <code
+                >SELECT visitor_id, SUM(CAST(properties-&gt;&gt;'amount' AS integer)) AS total FROM events WHERE CAST(properties-&gt;&gt;'amount' AS integer)
+                &gt; 0 GROUP BY visitor_id;</code
+            >
+        </p>
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*HxOS3CgwXBJ6A2FP" class="graf-image" />
+        </figure>
+        <ul>
+            <li><span id="9850">Average screen resolution</span></li>
+            <li>
+                <span id="132f"
+                    ><code
+                        >SELECT AVG(CAST(browser-&gt;'resolution'-&gt;&gt;'x' AS integer)) AS width, AVG(CAST(browser-&gt;'resolution'-&gt;&gt;'y' AS integer))
+                        AS height FROM events;</code
+                    ></span
+                >
+            </li>
+        </ul>
+        <p>Output:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*iyv4Iv4Rc8M8mwt1" class="graf-image" />
+        </figure>
+        <h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">
+            If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+        </h4>
+        <p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
+        <p>
+            <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"
+                ><strong>bgoonz — Overview</strong><br />
+                <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a
+            ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>Or Checkout my personal Resource Site:</p>
+        <p>
+            <a
+                href="https://goofy-euclid-1cd736.netlify.app/"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://goofy-euclid-1cd736.netlify.app/"
+                ><strong>a/A-Student-Resources</strong><br />
+                <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a
+            ><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <h3 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content-1">
+            If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+        </h3>
+        <p>
+            <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"
+                ><strong>bgoonz’s gists</strong><br />
+                <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em
+                >gist.github.com</a
+            ><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>
+            <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"
+                ><strong>bgoonz — Overview</strong><br />
+                <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a
+            ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <h3 id="or-checkout-my-personal-resource-site">Or Checkout my personal Resource Site:</h3>
+        <p>
+            <a
+                href="https://web-dev-resource-hub.netlify.app/"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://web-dev-resource-hub.netlify.app/"
+                ><strong>Web-Dev-Resource-Hub</strong><br />
+                <em>Edit description</em>web-dev-resource-hub.netlify.app</a
+            ><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+        </p>
+        <p>
+            By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+            <a href="https://medium.com/p/718b813d3e31">March 5, 2021</a>.
+        </p>
+        <p><a href="https://medium.com/@bryanguner/postgresql-cheat-sheet-718b813d3e31" class="p-canonical">Canonical link</a></p>
+        <p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+    </body>
 </html>

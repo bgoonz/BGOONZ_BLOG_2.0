@@ -1,339 +1,547 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>A-Quick-Guide-to-Big-O-NotationMemoizationTabulationand-Sorting-Algorithms-by</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example">A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example</h1>
-<p>Curating Complexity: A Guide to Big-O Notation</p>
-<hr />
-<h3 id="a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-1">A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example</h3>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png" class="graf-image" />
-</figure>
-<p><strong><em>Curating Complexity: A Guide to Big-O Notation</em></strong></p>
-<p><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Medium-article-comp-complex"><strong>Medium-article-comp-complex</strong><br /> <em>A Node.js repl by bgoonz</em>replit.com</a><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<ul>
-<li><span id="b70f">Why is looking at runtime not a reliable method of calculating time complexity?</span></li>
-<li><span id="2b21">Not all computers are made equal( some may be stronger and therefore boost our runtime speed )</span></li>
-<li><span id="1e1a">How many background processes ran concurrently with our program that was being tested?</span></li>
-<li><span id="1cad">We also need to ask if our code remains performant if we increase the size of the input.</span></li>
-<li><span id="3cb7">The real question we need to answering is: <code>How does our performance scale?</code>.</span></li>
-</ul>
-<h3 id="big-o-notation">big ‘O’ notation</h3>
-<ul>
-<li><span id="9b21">Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.</span></li>
-<li><span id="c0e6">Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:</span></li>
-<li><span id="2e86">The function should be defined by the size of the input.</span></li>
-<li><span id="07b0"><code>Smaller</code> Big O is better (lower time complexity)</span></li>
-<li><span id="f1b0">Big O is used to describe the worst case scenario.</span></li>
-<li><span id="e11f">Big O is simplified to show only its most dominant mathematical term.</span></li>
-</ul>
-<h3 id="simplifying-math-terms">Simplifying Math Terms</h3>
-<ul>
-<li><span id="64a4">We can use the following rules to simplify the our Big O functions:</span></li>
-<li><span id="a2c2"><code>Simplify Products</code> : If the function is a product of many terms, we drop the terms that don’t depend on n.</span></li>
-<li><span id="b058"><code>Simplify Sums</code> : If the function is a sum of many terms, we drop the non-dominant terms.</span></li>
-<li><span id="eb32"><code>n</code> : size of the input</span></li>
-<li><span id="c042"><code>T(f)</code> : unsimplified math function</span></li>
-<li><span id="7b41"><code>O(f)</code> : simplified math function.</span></li>
-</ul>
-<p><code>Putting it all together</code></p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png" class="graf-image" />
-</figure>
-<ul>
-<li><p><span id="d18b">First we apply the product rule to drop all constants.</span></p></li>
-<li><p><span id="4335">Then we apply the sum rule to select the single most dominant term.</span></p></li>
-</ul>
-<hr />
-<h3 id="complexity-classes">Complexity Classes</h3>
-<p>Common Complexity Classes</p>
-<h4 id="there-are-7-major-classes-in-time-complexity">There are 7 major classes in Time Complexity</h4>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*6zKhmJoHkvDbrd8jfUDf3A.png" class="graf-image" />
-</figure>
-<h4 id="o1-constant"><code>O(1) Constant</code></h4>
-<blockquote>
-<p><strong>The algorithm takes roughly the same number of steps for any input size.</strong></p>
-</blockquote>
-<h4 id="ologn-logarithmic"><code>O(log(n)) Logarithmic</code></h4>
-<blockquote>
-<p><strong>In most cases our hidden base of Logarithmic time is 2, log complexity algorithm’s will typically display ‘halving’ the size of the input (like binary search!)</strong></p>
-</blockquote>
-<h4 id="on-linear"><code>O(n) Linear</code></h4>
-<blockquote>
-<p><strong>Linear algorithm’s will access each item of the input “once”.</strong></p>
-</blockquote>
-<h3 id="onlogn-log-linear-time"><code>O(nlog(n)) Log Linear Time</code></h3>
-<blockquote>
-<p><strong>Combination of linear and logarithmic behavior, we will see features from both classes.</strong></p>
-</blockquote>
-<blockquote>
-<p>Algorithm’s that are log-linear will use <strong>both recursion AND iteration.</strong></p>
-</blockquote>
-<h3 id="onc-polynomial"><code>O(nc) Polynomial</code></h3>
-<blockquote>
-<p><strong>C is a fixed constant.</strong></p>
-</blockquote>
-<h3 id="ocn-exponential"><code>O(c^n) Exponential</code></h3>
-<blockquote>
-<p><strong>C is now the number of recursive calls made in each stack frame.</strong></p>
-</blockquote>
-<blockquote>
-<p><strong>Algorithm’s with exponential time are VERY SLOW.</strong></p>
-</blockquote>
-<hr />
-<h3 id="memoization">Memoization</h3>
-<ul>
-<li><span id="b3b0">Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use recursive strategies to solve.</span></li>
-<li><span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only ‘solve’ each problem once.</span></li>
-<li><span id="65c9">Two features that comprise memoization:</span></li>
-</ul>
-<ol type="1">
-<li><span id="b2d2">FUNCTION MUST BE RECURSIVE.</span></li>
-<li><span id="91a3">Our additional Data Structure is usually an object (we refer to it as our memo… or sometimes cache!)</span></li>
-</ol>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png" class="graf-image" />
-</figure>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png" class="graf-image" />
-</figure>
-<h3 id="memoizing-factorial">Memoizing Factorial</h3>
-<p>Our memo object is <em>mapping</em> out our arguments of factorial to it’s return value.</p>
-<ul>
-<li><span id="854a">Keep in mind we didn’t improve the speed of our algorithm.</span></li>
-</ul>
-<h3 id="memoizing-fibonacci">Memoizing Fibonacci</h3>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb" class="graf-image" />
-</figure>
-<ul>
-<li><span id="5be6">Our time complexity for Fibonacci goes from O(2^n) to O(n) after applying memoization.</span></li>
-</ul>
-<h3 id="the-memoization-formula">The Memoization Formula</h3>
-<blockquote>
-<p><em>Rules:</em></p>
-</blockquote>
-<ol type="1">
-<li><span id="b3f0"><em>Write the unoptimized brute force recursion (make sure it works);</em></span></li>
-<li><span id="b36e"><em>Add memo object as an additional argument .</em></span></li>
-<li><span id="f81f"><em>Add a base case condition that returns the stored value if the function’s argument is in the memo.</em></span></li>
-<li><span id="1b0f"><em>Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key.</em></span></li>
-</ol>
-<h4 id="things-to-remember">Things to remember</h4>
-<ol type="1">
-<li><span id="bc4a"><em>When solving DP problems with Memoization, it is helpful to draw out the visual tree first.</em></span></li>
-<li><span id="7bb1"><em>When you notice duplicate sub-tree’s that means we can memoize.</em></span></li>
-</ol>
-<hr />
-<h3 id="tabulation">Tabulation</h3>
-<h4 id="tabulation-strategy">Tabulation Strategy</h4>
-<blockquote>
-<p>Use When:</p>
-</blockquote>
-<ul>
-<li><span id="f5b0"><strong>The function is iterative and not recursive.</strong></span></li>
-<li><span id="015c"><em>The accompanying DS is usually an array.</em></span></li>
-</ul>
-<h4 id="steps-for-tabulation">Steps for tabulation</h4>
-<ul>
-<li><span id="8918"><em>Create a table array based off the size of the input.</em></span></li>
-<li><span id="b4e7"><em>Initialize some values in the table to ‘answer’ the trivially small subproblem.</em></span></li>
-<li><span id="072e"><em>Iterate through the array and fill in the remaining entries.</em></span></li>
-<li><span id="192e"><em>Your final answer is usually the last entry in the table.</em></span></li>
-</ul>
-<hr />
-<h3 id="memo-and-tab-demo-with-fibonacci">Memo and Tab Demo with Fibonacci</h3>
-<blockquote>
-<p><em>Normal Recursive Fibonacci</em></p>
-</blockquote>
-<pre><code>function fibonacci(n) {
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>A-Quick-Guide-to-Big-O-NotationMemoizationTabulationand-Sorting-Algorithms-by</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example">
+            A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
+        </h1>
+        <p>Curating Complexity: A Guide to Big-O Notation</p>
+        <hr />
+        <h3 id="a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-1">
+            A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
+        </h3>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png" class="graf-image" />
+        </figure>
+        <p>
+            <strong><em>Curating Complexity: A Guide to Big-O Notation</em></strong>
+        </p>
+        <p>
+            <a
+                href="https://replit.com/@bgoonz/Medium-article-comp-complex"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://replit.com/@bgoonz/Medium-article-comp-complex"
+                ><strong>Medium-article-comp-complex</strong><br />
+                <em>A Node.js repl by bgoonz</em>replit.com</a
+            ><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <ul>
+            <li><span id="b70f">Why is looking at runtime not a reliable method of calculating time complexity?</span></li>
+            <li><span id="2b21">Not all computers are made equal( some may be stronger and therefore boost our runtime speed )</span></li>
+            <li><span id="1e1a">How many background processes ran concurrently with our program that was being tested?</span></li>
+            <li><span id="1cad">We also need to ask if our code remains performant if we increase the size of the input.</span></li>
+            <li>
+                <span id="3cb7">The real question we need to answering is: <code>How does our performance scale?</code>.</span>
+            </li>
+        </ul>
+        <h3 id="big-o-notation">big ‘O’ notation</h3>
+        <ul>
+            <li>
+                <span id="9b21">Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.</span>
+            </li>
+            <li><span id="c0e6">Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:</span></li>
+            <li><span id="2e86">The function should be defined by the size of the input.</span></li>
+            <li>
+                <span id="07b0"><code>Smaller</code> Big O is better (lower time complexity)</span>
+            </li>
+            <li><span id="f1b0">Big O is used to describe the worst case scenario.</span></li>
+            <li><span id="e11f">Big O is simplified to show only its most dominant mathematical term.</span></li>
+        </ul>
+        <h3 id="simplifying-math-terms">Simplifying Math Terms</h3>
+        <ul>
+            <li><span id="64a4">We can use the following rules to simplify the our Big O functions:</span></li>
+            <li>
+                <span id="a2c2"><code>Simplify Products</code> : If the function is a product of many terms, we drop the terms that don’t depend on n.</span>
+            </li>
+            <li>
+                <span id="b058"><code>Simplify Sums</code> : If the function is a sum of many terms, we drop the non-dominant terms.</span>
+            </li>
+            <li>
+                <span id="eb32"><code>n</code> : size of the input</span>
+            </li>
+            <li>
+                <span id="c042"><code>T(f)</code> : unsimplified math function</span>
+            </li>
+            <li>
+                <span id="7b41"><code>O(f)</code> : simplified math function.</span>
+            </li>
+        </ul>
+        <p><code>Putting it all together</code></p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png" class="graf-image" />
+        </figure>
+        <ul>
+            <li>
+                <p><span id="d18b">First we apply the product rule to drop all constants.</span></p>
+            </li>
+            <li>
+                <p><span id="4335">Then we apply the sum rule to select the single most dominant term.</span></p>
+            </li>
+        </ul>
+        <hr />
+        <h3 id="complexity-classes">Complexity Classes</h3>
+        <p>Common Complexity Classes</p>
+        <h4 id="there-are-7-major-classes-in-time-complexity">There are 7 major classes in Time Complexity</h4>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/1*6zKhmJoHkvDbrd8jfUDf3A.png" class="graf-image" />
+        </figure>
+        <h4 id="o1-constant"><code>O(1) Constant</code></h4>
+        <blockquote>
+            <p><strong>The algorithm takes roughly the same number of steps for any input size.</strong></p>
+        </blockquote>
+        <h4 id="ologn-logarithmic"><code>O(log(n)) Logarithmic</code></h4>
+        <blockquote>
+            <p>
+                <strong
+                    >In most cases our hidden base of Logarithmic time is 2, log complexity algorithm’s will typically display ‘halving’ the size of the input
+                    (like binary search!)</strong
+                >
+            </p>
+        </blockquote>
+        <h4 id="on-linear"><code>O(n) Linear</code></h4>
+        <blockquote>
+            <p><strong>Linear algorithm’s will access each item of the input “once”.</strong></p>
+        </blockquote>
+        <h3 id="onlogn-log-linear-time"><code>O(nlog(n)) Log Linear Time</code></h3>
+        <blockquote>
+            <p><strong>Combination of linear and logarithmic behavior, we will see features from both classes.</strong></p>
+        </blockquote>
+        <blockquote>
+            <p>Algorithm’s that are log-linear will use <strong>both recursion AND iteration.</strong></p>
+        </blockquote>
+        <h3 id="onc-polynomial"><code>O(nc) Polynomial</code></h3>
+        <blockquote>
+            <p><strong>C is a fixed constant.</strong></p>
+        </blockquote>
+        <h3 id="ocn-exponential"><code>O(c^n) Exponential</code></h3>
+        <blockquote>
+            <p><strong>C is now the number of recursive calls made in each stack frame.</strong></p>
+        </blockquote>
+        <blockquote>
+            <p><strong>Algorithm’s with exponential time are VERY SLOW.</strong></p>
+        </blockquote>
+        <hr />
+        <h3 id="memoization">Memoization</h3>
+        <ul>
+            <li>
+                <span id="b3b0"
+                    >Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use recursive strategies
+                    to solve.</span
+                >
+            </li>
+            <li>
+                <span id="2583"
+                    >MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only ‘solve’ each
+                    problem once.</span
+                >
+            </li>
+            <li><span id="65c9">Two features that comprise memoization:</span></li>
+        </ul>
+        <ol type="1">
+            <li><span id="b2d2">FUNCTION MUST BE RECURSIVE.</span></li>
+            <li><span id="91a3">Our additional Data Structure is usually an object (we refer to it as our memo… or sometimes cache!)</span></li>
+        </ol>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png" class="graf-image" />
+        </figure>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png" class="graf-image" />
+        </figure>
+        <h3 id="memoizing-factorial">Memoizing Factorial</h3>
+        <p>Our memo object is <em>mapping</em> out our arguments of factorial to it’s return value.</p>
+        <ul>
+            <li><span id="854a">Keep in mind we didn’t improve the speed of our algorithm.</span></li>
+        </ul>
+        <h3 id="memoizing-fibonacci">Memoizing Fibonacci</h3>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb" class="graf-image" />
+        </figure>
+        <ul>
+            <li><span id="5be6">Our time complexity for Fibonacci goes from O(2^n) to O(n) after applying memoization.</span></li>
+        </ul>
+        <h3 id="the-memoization-formula">The Memoization Formula</h3>
+        <blockquote>
+            <p><em>Rules:</em></p>
+        </blockquote>
+        <ol type="1">
+            <li>
+                <span id="b3f0"><em>Write the unoptimized brute force recursion (make sure it works);</em></span>
+            </li>
+            <li>
+                <span id="b36e"><em>Add memo object as an additional argument .</em></span>
+            </li>
+            <li>
+                <span id="f81f"><em>Add a base case condition that returns the stored value if the function’s argument is in the memo.</em></span>
+            </li>
+            <li>
+                <span id="1b0f"
+                    ><em
+                        >Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key.</em
+                    ></span
+                >
+            </li>
+        </ol>
+        <h4 id="things-to-remember">Things to remember</h4>
+        <ol type="1">
+            <li>
+                <span id="bc4a"><em>When solving DP problems with Memoization, it is helpful to draw out the visual tree first.</em></span>
+            </li>
+            <li>
+                <span id="7bb1"><em>When you notice duplicate sub-tree’s that means we can memoize.</em></span>
+            </li>
+        </ol>
+        <hr />
+        <h3 id="tabulation">Tabulation</h3>
+        <h4 id="tabulation-strategy">Tabulation Strategy</h4>
+        <blockquote>
+            <p>Use When:</p>
+        </blockquote>
+        <ul>
+            <li>
+                <span id="f5b0"><strong>The function is iterative and not recursive.</strong></span>
+            </li>
+            <li>
+                <span id="015c"><em>The accompanying DS is usually an array.</em></span>
+            </li>
+        </ul>
+        <h4 id="steps-for-tabulation">Steps for tabulation</h4>
+        <ul>
+            <li>
+                <span id="8918"><em>Create a table array based off the size of the input.</em></span>
+            </li>
+            <li>
+                <span id="b4e7"><em>Initialize some values in the table to ‘answer’ the trivially small subproblem.</em></span>
+            </li>
+            <li>
+                <span id="072e"><em>Iterate through the array and fill in the remaining entries.</em></span>
+            </li>
+            <li>
+                <span id="192e"><em>Your final answer is usually the last entry in the table.</em></span>
+            </li>
+        </ul>
+        <hr />
+        <h3 id="memo-and-tab-demo-with-fibonacci">Memo and Tab Demo with Fibonacci</h3>
+        <blockquote>
+            <p><em>Normal Recursive Fibonacci</em></p>
+        </blockquote>
+        <pre><code>function fibonacci(n) {
   if (n &lt;= 2) return 1;
   return fibonacci(n - 1) + fibonacci(n - 2);
 }</code></pre>
-<blockquote>
-<p><em>Memoization Fibonacci 1</em></p>
-</blockquote>
-<blockquote>
-<p><em>Memoization Fibonacci 2</em></p>
-</blockquote>
-<blockquote>
-<p><em>Tabulated Fibonacci</em></p>
-</blockquote>
-<h3 id="example-of-linear-search">Example of Linear Search</h3>
-<ul>
-<li><span id="84b2"><em>Worst Case Scenario: The term does not even exist in the array.</em></span></li>
-<li><span id="30dc"><em>Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n).</em></span></li>
-</ul>
-<hr />
-<h3 id="sorting-algorithms">Sorting Algorithms</h3>
-<h3 id="bubble-sort">Bubble Sort</h3>
-<p><code>Time Complexity</code> : Quadratic O(n^2)</p>
-<ul>
-<li><span id="ce1e">The inner for-loop contributes to O(n), however in a worst case scenario the while loop will need to run n times before bringing all n elements to their final resting spot.</span></li>
-</ul>
-<p><code>Space Complexity</code> : O(1)</p>
-<ul>
-<li><span id="664f">Bubble Sort will always use the same amount of memory regardless of n.</span></li>
-</ul>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT" class="graf-image" />
-</figure>
-<ul>
-<li><p><span id="4115">The first major sorting algorithm one learns in introductory programming courses.</span></p></li>
-<li><p><span id="ecd4">Gives an intro on how to convert unsorted data into sorted data.</span></p></li>
-</ul>
-<blockquote>
-<p>It’s almost never used in production code because:</p>
-</blockquote>
-<ul>
-<li><span id="3cb1"><em>It’s not efficient</em></span></li>
-<li><span id="4eac"><em>It’s not commonly used</em></span></li>
-<li><span id="d730"><em>There is stigma attached to it</em></span></li>
-<li><span id="8da7"><code>Bubbling Up</code><em> : Term that infers that an item is in motion, moving in some direction, and has some final resting destination.</em></span></li>
-<li><span id="8447"><em>Bubble sort, sorts an array of integers by bubbling the largest integer to the top.</em></span></li>
-</ul>
-<!-- -->
-<ul>
-<li><span id="dcd2"><em>Worst Case &amp; Best Case are always the same because it makes nested loops.</em></span></li>
-<li><span id="9a6a"><em>Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)</em></span></li>
-</ul>
-<h3 id="selection-sort">Selection Sort</h3>
-<p><code>Time Complexity</code> : Quadratic O(n^2)</p>
-<ul>
-<li><span id="646d">Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested we will get O(n²); </span></li>
-</ul>
-<p><code>Space Complexity</code> : O(1)</p>
-<ul>
-<li><span id="45ae">Selection Sort will always use the same amount of memory regardless of n.</span></li>
-</ul>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu" class="graf-image" />
-</figure>
-<ul>
-<li><span id="c618">Selection sort organizes the smallest elements to the start of the array.</span></li>
-</ul>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY" class="graf-image" />
-</figure>
-<p>Summary of how Selection Sort should work:</p>
-<ol type="1">
-<li><span id="2277"><em>Set MIN to location 0</em></span></li>
-<li><span id="c76c"><em>Search the minimum element in the list.</em></span></li>
-<li><span id="79d3"><em>Swap with value at location Min</em></span></li>
-<li><span id="4ede"><em>Increment Min to point to next element.</em></span></li>
-<li><span id="a649"><em>Repeat until list is sorted.</em></span></li>
-</ol>
-<h3 id="insertion-sort">Insertion Sort</h3>
-<p><code>Time Complexity</code> : Quadratic O(n^2)</p>
-<ul>
-<li><span id="95ea">Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested we will get O(n²); </span></li>
-</ul>
-<p><code>Space Complexity</code> : O(n)</p>
-<ul>
-<li><span id="f6fa">Because we are creating a subArray for each element in the original input, our Space Comlexity becomes linear.</span></li>
-</ul>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG" class="graf-image" />
-</figure>
-<h3 id="merge-sort">Merge Sort</h3>
-<p><code>Time Complexity</code> : Log Linear O(nlog(n))</p>
-<ul>
-<li><span id="44b2">Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); <code>Space Complexity</code>: O(n)</span></li>
-<li><span id="9a83">We are linear O(n) time because we are creating subArrays.</span></li>
-</ul>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD" class="graf-image" />
-</figure>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl" class="graf-image" />
-</figure>
-<h3 id="example-of-merge-sort">Example of Merge Sort</h3>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M" class="graf-image" />
-</figure>
-<ul>
-<li><p><span id="48b4"><strong>Merge sort is O(nlog(n)) time.</strong></span></p></li>
-<li><p><span id="c598"><em>We need a function for merging and a function for sorting.</em></span></p></li>
-</ul>
-<blockquote>
-<p>Steps:</p>
-</blockquote>
-<ol type="1">
-<li><span id="213f"><em>If there is only one element in the list, it is already sorted; return the array.</em></span></li>
-<li><span id="6214"><em>Otherwise, divide the list recursively into two halves until it can no longer be divided.</em></span></li>
-<li><span id="3cc8"><em>Merge the smallest lists into new list in a sorted order.</em></span></li>
-</ol>
-<h3 id="quick-sort">Quick Sort</h3>
-<p><code>Time Complexity</code> : Quadratic O(n^2)</p>
-<ul>
-<li><span id="8e34">Even though the average time complexity O(nLog(n)), the worst case scenario is always quadratic.</span></li>
-</ul>
-<p><code>Space Complexity</code> : O(n)</p>
-<ul>
-<li><span id="626b">Our space complexity is linear O(n) because of the partition arrays we create.</span></li>
-<li><span id="7e3a">QS is another Divide and Conquer strategy.</span></li>
-<li><span id="233d">Some key ideas to keep in mind:</span></li>
-<li><span id="1173">It is easy to sort elements of an array relative to a particular target value.</span></li>
-<li><span id="8634">An array of 0 or 1 elements is already trivially sorted.</span></li>
-</ul>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T" class="graf-image" />
-</figure>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf" class="graf-image" />
-</figure>
-<h3 id="binary-search">Binary Search</h3>
-<p><code>Time Complexity</code> : Log Time O(log(n))</p>
-<p><code>Space Complexity</code> : O(1)</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali" class="graf-image" />
-</figure>
-<p><em>Recursive Solution</em></p>
-<blockquote>
-<p><em>Min Max Solution</em></p>
-</blockquote>
-<ul>
-<li><span id="6fb1"><em>Must be conducted on a sorted array.</em></span></li>
-<li><span id="383b"><em>Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing.</em></span></li>
-<li><span id="c940"><em>Binary Search is part of Divide and Conquer.</em></span></li>
-</ul>
-<h3 id="insertion-sort-1">Insertion Sort</h3>
-<ul>
-<li><span id="26b7"><strong>Works by building a larger and larger sorted region at the left-most end of the array.</strong></span></li>
-</ul>
-<blockquote>
-<p>Steps:</p>
-</blockquote>
-<ol type="1">
-<li><span id="8c1f"><em>If it is the first element, and it is already sorted; return 1.</em></span></li>
-<li><span id="1451"><em>Pick next element.</em></span></li>
-<li><span id="0f8b"><em>Compare with all elements in the sorted sub list</em></span></li>
-<li><span id="4d78"><em>Shift all the elements in the sorted sub list that is greater than the value to be sorted.</em></span></li>
-<li><span id="9131"><em>Insert the value</em></span></li>
-<li><span id="6c8a"><em>Repeat until list is sorted.</em></span></li>
-</ol>
-<h3 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:</h3>
-<p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br /> <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br /> <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<h3 id="or-checkout-my-personal-resource-site">Or Checkout my personal Resource Site:</h3>
-<p><a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br /> <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png" class="graf-image" />
-</figure>
-<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/803ff193c522">February 27, 2021</a>.</p>
-<p><a href="https://medium.com/@bryanguner/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" class="p-canonical">Canonical link</a></p>
-<p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
-</body>
+        <blockquote>
+            <p><em>Memoization Fibonacci 1</em></p>
+        </blockquote>
+        <blockquote>
+            <p><em>Memoization Fibonacci 2</em></p>
+        </blockquote>
+        <blockquote>
+            <p><em>Tabulated Fibonacci</em></p>
+        </blockquote>
+        <h3 id="example-of-linear-search">Example of Linear Search</h3>
+        <ul>
+            <li>
+                <span id="84b2"><em>Worst Case Scenario: The term does not even exist in the array.</em></span>
+            </li>
+            <li>
+                <span id="30dc"
+                    ><em>Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n).</em></span
+                >
+            </li>
+        </ul>
+        <hr />
+        <h3 id="sorting-algorithms">Sorting Algorithms</h3>
+        <h3 id="bubble-sort">Bubble Sort</h3>
+        <p><code>Time Complexity</code> : Quadratic O(n^2)</p>
+        <ul>
+            <li>
+                <span id="ce1e"
+                    >The inner for-loop contributes to O(n), however in a worst case scenario the while loop will need to run n times before bringing all n
+                    elements to their final resting spot.</span
+                >
+            </li>
+        </ul>
+        <p><code>Space Complexity</code> : O(1)</p>
+        <ul>
+            <li><span id="664f">Bubble Sort will always use the same amount of memory regardless of n.</span></li>
+        </ul>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT" class="graf-image" />
+        </figure>
+        <ul>
+            <li>
+                <p><span id="4115">The first major sorting algorithm one learns in introductory programming courses.</span></p>
+            </li>
+            <li>
+                <p><span id="ecd4">Gives an intro on how to convert unsorted data into sorted data.</span></p>
+            </li>
+        </ul>
+        <blockquote>
+            <p>It’s almost never used in production code because:</p>
+        </blockquote>
+        <ul>
+            <li>
+                <span id="3cb1"><em>It’s not efficient</em></span>
+            </li>
+            <li>
+                <span id="4eac"><em>It’s not commonly used</em></span>
+            </li>
+            <li>
+                <span id="d730"><em>There is stigma attached to it</em></span>
+            </li>
+            <li>
+                <span id="8da7"
+                    ><code>Bubbling Up</code
+                    ><em> : Term that infers that an item is in motion, moving in some direction, and has some final resting destination.</em></span
+                >
+            </li>
+            <li>
+                <span id="8447"><em>Bubble sort, sorts an array of integers by bubbling the largest integer to the top.</em></span>
+            </li>
+        </ul>
+        <!-- -->
+        <ul>
+            <li>
+                <span id="dcd2"><em>Worst Case &amp; Best Case are always the same because it makes nested loops.</em></span>
+            </li>
+            <li>
+                <span id="9a6a"><em>Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)</em></span>
+            </li>
+        </ul>
+        <h3 id="selection-sort">Selection Sort</h3>
+        <p><code>Time Complexity</code> : Quadratic O(n^2)</p>
+        <ul>
+            <li>
+                <span id="646d"
+                    >Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested we will get
+                    O(n²);
+                </span>
+            </li>
+        </ul>
+        <p><code>Space Complexity</code> : O(1)</p>
+        <ul>
+            <li><span id="45ae">Selection Sort will always use the same amount of memory regardless of n.</span></li>
+        </ul>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu" class="graf-image" />
+        </figure>
+        <ul>
+            <li><span id="c618">Selection sort organizes the smallest elements to the start of the array.</span></li>
+        </ul>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY" class="graf-image" />
+        </figure>
+        <p>Summary of how Selection Sort should work:</p>
+        <ol type="1">
+            <li>
+                <span id="2277"><em>Set MIN to location 0</em></span>
+            </li>
+            <li>
+                <span id="c76c"><em>Search the minimum element in the list.</em></span>
+            </li>
+            <li>
+                <span id="79d3"><em>Swap with value at location Min</em></span>
+            </li>
+            <li>
+                <span id="4ede"><em>Increment Min to point to next element.</em></span>
+            </li>
+            <li>
+                <span id="a649"><em>Repeat until list is sorted.</em></span>
+            </li>
+        </ol>
+        <h3 id="insertion-sort">Insertion Sort</h3>
+        <p><code>Time Complexity</code> : Quadratic O(n^2)</p>
+        <ul>
+            <li>
+                <span id="95ea"
+                    >Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested we will get
+                    O(n²);
+                </span>
+            </li>
+        </ul>
+        <p><code>Space Complexity</code> : O(n)</p>
+        <ul>
+            <li><span id="f6fa">Because we are creating a subArray for each element in the original input, our Space Comlexity becomes linear.</span></li>
+        </ul>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG" class="graf-image" />
+        </figure>
+        <h3 id="merge-sort">Merge Sort</h3>
+        <p><code>Time Complexity</code> : Log Linear O(nlog(n))</p>
+        <ul>
+            <li>
+                <span id="44b2"
+                    >Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function
+                    contributes O(n) therefore our time complexity is O(nlog(n)); <code>Space Complexity</code>: O(n)</span
+                >
+            </li>
+            <li><span id="9a83">We are linear O(n) time because we are creating subArrays.</span></li>
+        </ul>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD" class="graf-image" />
+        </figure>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl" class="graf-image" />
+        </figure>
+        <h3 id="example-of-merge-sort">Example of Merge Sort</h3>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M" class="graf-image" />
+        </figure>
+        <ul>
+            <li>
+                <p>
+                    <span id="48b4"><strong>Merge sort is O(nlog(n)) time.</strong></span>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span id="c598"><em>We need a function for merging and a function for sorting.</em></span>
+                </p>
+            </li>
+        </ul>
+        <blockquote>
+            <p>Steps:</p>
+        </blockquote>
+        <ol type="1">
+            <li>
+                <span id="213f"><em>If there is only one element in the list, it is already sorted; return the array.</em></span>
+            </li>
+            <li>
+                <span id="6214"><em>Otherwise, divide the list recursively into two halves until it can no longer be divided.</em></span>
+            </li>
+            <li>
+                <span id="3cc8"><em>Merge the smallest lists into new list in a sorted order.</em></span>
+            </li>
+        </ol>
+        <h3 id="quick-sort">Quick Sort</h3>
+        <p><code>Time Complexity</code> : Quadratic O(n^2)</p>
+        <ul>
+            <li><span id="8e34">Even though the average time complexity O(nLog(n)), the worst case scenario is always quadratic.</span></li>
+        </ul>
+        <p><code>Space Complexity</code> : O(n)</p>
+        <ul>
+            <li><span id="626b">Our space complexity is linear O(n) because of the partition arrays we create.</span></li>
+            <li><span id="7e3a">QS is another Divide and Conquer strategy.</span></li>
+            <li><span id="233d">Some key ideas to keep in mind:</span></li>
+            <li><span id="1173">It is easy to sort elements of an array relative to a particular target value.</span></li>
+            <li><span id="8634">An array of 0 or 1 elements is already trivially sorted.</span></li>
+        </ul>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T" class="graf-image" />
+        </figure>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf" class="graf-image" />
+        </figure>
+        <h3 id="binary-search">Binary Search</h3>
+        <p><code>Time Complexity</code> : Log Time O(log(n))</p>
+        <p><code>Space Complexity</code> : O(1)</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali" class="graf-image" />
+        </figure>
+        <p><em>Recursive Solution</em></p>
+        <blockquote>
+            <p><em>Min Max Solution</em></p>
+        </blockquote>
+        <ul>
+            <li>
+                <span id="6fb1"><em>Must be conducted on a sorted array.</em></span>
+            </li>
+            <li>
+                <span id="383b"><em>Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing.</em></span>
+            </li>
+            <li>
+                <span id="c940"><em>Binary Search is part of Divide and Conquer.</em></span>
+            </li>
+        </ul>
+        <h3 id="insertion-sort-1">Insertion Sort</h3>
+        <ul>
+            <li>
+                <span id="26b7"><strong>Works by building a larger and larger sorted region at the left-most end of the array.</strong></span>
+            </li>
+        </ul>
+        <blockquote>
+            <p>Steps:</p>
+        </blockquote>
+        <ol type="1">
+            <li>
+                <span id="8c1f"><em>If it is the first element, and it is already sorted; return 1.</em></span>
+            </li>
+            <li>
+                <span id="1451"><em>Pick next element.</em></span>
+            </li>
+            <li>
+                <span id="0f8b"><em>Compare with all elements in the sorted sub list</em></span>
+            </li>
+            <li>
+                <span id="4d78"><em>Shift all the elements in the sorted sub list that is greater than the value to be sorted.</em></span>
+            </li>
+            <li>
+                <span id="9131"><em>Insert the value</em></span>
+            </li>
+            <li>
+                <span id="6c8a"><em>Repeat until list is sorted.</em></span>
+            </li>
+        </ol>
+        <h3 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">
+            If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+        </h3>
+        <p>
+            <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"
+                ><strong>bgoonz’s gists</strong><br />
+                <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em
+                >gist.github.com</a
+            ><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>
+            <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"
+                ><strong>bgoonz — Overview</strong><br />
+                <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a
+            ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <h3 id="or-checkout-my-personal-resource-site">Or Checkout my personal Resource Site:</h3>
+        <p>
+            <a
+                href="https://web-dev-resource-hub.netlify.app/"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://web-dev-resource-hub.netlify.app/"
+                ><strong>Web-Dev-Resource-Hub</strong><br />
+                <em>Edit description</em>web-dev-resource-hub.netlify.app</a
+            ><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+        </p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png" class="graf-image" />
+        </figure>
+        <p>
+            By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+            <a href="https://medium.com/p/803ff193c522">February 27, 2021</a>.
+        </p>
+        <p>
+            <a
+                href="https://medium.com/@bryanguner/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522"
+                class="p-canonical"
+                >Canonical link</a
+            >
+        </p>
+        <p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+    </body>
 </html>
