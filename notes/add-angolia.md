@@ -43,4 +43,3 @@ And copy **Application ID**, **Search-Only API Key** and **Admin API Key** and p
 More info about the searching feature in the following post. Stay tuned. If you have any question use the Comment form below.
 
 [Source](https://dev.greglobinski.com/setup-algolia-account/)
-

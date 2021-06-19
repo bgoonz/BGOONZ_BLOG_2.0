@@ -2,30 +2,33 @@
 title: Quick Start
 weight: 2
 seo:
-  title: Quick Start
-  description: This is the quick start page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Quick Start
-      keyName: property
-    - name: 'og:description'
-      value: This is the quick start page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Quick Start
-    - name: 'twitter:description'
-      value: This is the quick start page
+    title: Quick Start
+    description: This is the quick start page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Quick Start
+          keyName: property
+        - name: 'og:description'
+          value: This is the quick start page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Quick Start
+        - name: 'twitter:description'
+          value: This is the quick start page
 layout: docs
 ---
 
-# quick-start
+<div class="note">
+  <strong>Note:</strong> 
+  This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
+</div>
 
- **Note:** This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the **Getting Started** section.
+<hr>
 
 ## Callouts
 
@@ -35,36 +38,58 @@ There are two types of callouts available in this theme, **note** and **importan
 
 Copy the code and modify these blocks according to your needs.
 
-```text
+```
 <div class="important">
-  <strong>Important:</strong> 
+  <strong>Important:</strong>
   This is an "Important" callout block of text.
-  This block indicates a warning or caution. 
-  Use it for an important message. 
+  This block indicates a warning or caution.
+  Use it for an important message.
 </div>
 ```
 
-```text
+```
 <div class="note">
-  <strong>Note:</strong> 
-  This is a "Note" callout block of text. 
+  <strong>Note:</strong>
+  This is a "Note" callout block of text.
   This block signifies a general note.
 </div>
 ```
 
 ### Live example
 
- **Important:** This is an "Important" callout block of text. This block indicates a warning or caution. Use it for an important message.
+<div class="important">
+  <strong>Important:</strong> 
+  This is an "Important" callout block of text. 
+  This block indicates a warning or caution.
+  Use it for an important message. 
+</div>
 
- **Note:** This is a "Note" callout block of text. This block signifies a general note.
+<div class="note">
+  <strong>Note:</strong> 
+  This is a "Note" callout block of text. 
+  This block signifies a general note.
+</div>
+
+<hr>
 
 ## Code blocks
 
- **Note:** Code blocks have copy functionality. To copy the code press the grey button located in the right side top corner.
+<div class="note">
+  <strong>Note:</strong>
+  Code blocks have copy functionality. To copy the code press the grey button located in the right side top corner.
+</div>
 
-You can create simple code blocks by placing triple backticks ``````````` before and after the code block. To render a code block more readable, we recommend placing a blank line before and after code blocks.
+You can create simple code blocks by placing triple backticks <code>```</code> before and after the code block. To render a code block more readable, we recommend placing a blank line before and after code blocks.
 
-```text
+<pre>```
+if (condition) {
+  code to run if condition is true
+} else {
+  run some other code instead
+}
+```
+</pre>
+
 ```
 if (condition) {
   code to run if condition is true
@@ -72,40 +97,38 @@ if (condition) {
   run some other code instead
 }
 ```
-```
 
-```text
-if (condition) {
-  code to run if condition is true
-} else {
-  run some other code instead
-}
-```
+<hr>
 
 ## Tables
 
-You can build tables with markdown to help you organize information. To add a table, use three or more hyphens \(---\) to create each column’s header, and use pipes \(\|\) to separate each column like in the example below.
+You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
 
-```text
-
+<pre>
 | Title | Title |
 | ------| ----- |
 | Text  | Text  |
 | Text  | Text  |
-```
+</pre>
 
 | Title | Title |
-| :--- | :--- |
-| Text | Text |
-| Text | Text |
+| ----- | ----- |
+| Text  | Text  |
+| Text  | Text  |
 
- **Note:** Creating tables with hyphens and pipes can be time-consuming. To speed up the process, try using the [Markdown Tables Generator](http://www.tablesgenerator.com/markdown_tables).
+<div class="note">
+  <strong>Note:</strong> 
+  Creating tables with hyphens and pipes can be time-consuming. To speed up the process, try using the <a href="http://www.tablesgenerator.com/markdown_tables" >Markdown Tables Generator</a>.
+</div>
+
+<hr>
 
 ## Start using Libris theme
 
 We’ve packed this theme with powerful features to help you have awesome documentation for your current or next project.
 
+<br>
+
 **Why not start using this theme today?**
 
-[Join Stackbit](https://www.stackbit.com/)
-
+<a href="https://www.stackbit.com/" class="button">Join Stackbit</a>

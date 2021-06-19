@@ -2,25 +2,29 @@
 
 These will focus more on vocabulary and concepts than the application driven approach in my last post!
 
-### [CODEX](http://medium.com/codex)
+---
 
-## Front End Interview Questions Part 2
+#### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
-### These will focus more on vocabulary and concepts than the application-driven approach in my last post!
+### Front End Interview Questions Part 2
 
-## Here’s part one for reference:
+#### These will focus more on vocabulary and concepts than the application-driven approach in my last post!
 
-[**The Web Developer’s Technical Interview**  
- _Questions…. Answers…_ _and links to the missing pieces._bryanguner.medium.com](https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822)
+<figure><img src="https://cdn-images-1.medium.com/max/1200/0*D3yQI42gBkYpnLXY.jpg" class="graf-image" /></figure>
 
-* **­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**
+### Here’s part one for reference:
+
+<a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer’s Technical Interview</strong><br />
+<em>Questions…. Answers… and links to the missing pieces.</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+-   <span id="0232">**­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**</span>
 
 Semantic HTML is markup that conveys meaning, not appearance, to search engines to make everything easier to identify.
 
-* **Name two big differences between display: block; and display: inline; .**
+-   <span id="37b8">**Name two big differences between display: block; and display: inline; .**</span>
 
 block starts on a new line and takes up the full width of the content.  
-inline starts on the same line as previous content, in line with other content, and takes up only the space needed for the content.
+ inline starts on the same line as previous content, in line with other content, and takes up only the space needed for the content.
 
 · **What are the 4 areas of the box model?**
 
@@ -52,9 +56,9 @@ Preprocessing is basically a bunch of functions and variables you can use to sto
 
 · **What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?**
 
-Favorite is \(parametric\) mixins; but I don’t have a lot of trouble with preprocessing. What gives me the most trouble is knowing ahead of time what would be good to go in a mixin for a given site.
+Favorite is (parametric) mixins; but I don’t have a lot of trouble with preprocessing. What gives me the most trouble is knowing ahead of time what would be good to go in a mixin for a given site.
 
-· **Describe the biggest difference between .forEach & .map.**
+· **Describe the biggest difference between .forEach & .map.**
 
 forEach iterates over an array item by item, and map calls a function on each array item, but returns another/additional array, unlike forEach.
 
@@ -68,32 +72,35 @@ It is code identified elsewhere that we can use later; gives the ability to put 
 
 · **Describe the four rules of the ‘this’ keyword.**
 
-1. Window/global binding — this is the window/console object. ‘use strict’; to prevent window binding.
-2. Implicit binding — when a function is called by a dot, the object preceding the dot is the ‘this’. 80 percent of ‘this’ is from this type of binding.
-3. New binding — points to new object created & returned by constructor function
-4. Explicit binding — whenever call, bind, or apply are used.
+1. Window/global binding — this is the window/console object. ‘use strict’; to prevent window binding.
 
-· **Why do we need super\(\) in an extended class?**
+2. Implicit binding — when a function is called by a dot, the object preceding the dot is the ‘this’. 80 percent of ‘this’ is from this type of binding.
+
+3. New binding — points to new object created & returned by constructor function
+
+4. Explicit binding — whenever call, bind, or apply are used.
+
+· **Why do we need super() in an extended class?**
 
 Super ties the parent to the child.
 
-* **What is the DOM?**
+-   <span id="d57b">**What is the DOM?**</span>
 
 Document object model, the ‘window’ or container that holds all the page’s elements
 
-* **What is an event?**
+-   <span id="6172">**What is an event?**</span>
 
 An event is something happening on or to the page, like a mouse click, doubleclick, key up/down, pointer out of element/over element, things like this. There are tons of “events” that javascript can detect.
 
-* **What is an event listener?**
+-   <span id="75c5">**What is an event listener?**</span>
 
 Javascript command that ‘listens’ for an event to happen on the page to a given element and then runs a function when that event happens
 
-* **Why would we convert a NodeList into an Array?**
+-   <span id="157d">**Why would we convert a NodeList into an Array?**</span>
 
 A NodeList isn’t a real array, so it won’t have access to array methods such as slice or map.
 
-* **What is a component?**
+-   <span id="6934">**What is a component?**</span>
 
 Reusable pieces of code to display info in a consistent repeatable way
 
@@ -101,7 +108,7 @@ Reusable pieces of code to display info in a consistent repeatable way
 
 ReactJS is a library used to build large applications. It’s very good at assisting developers in manipulating the DOM element to create rich user experiences. We need a way to off-load the state/data that our apps use, and React helps us do that.
 
-· **What does it mean to** _**think**_ **in react?**
+· **What does it mean to _think_ in react?**
 
 It makes you think about how to organize/build apps a little differently because it’s very scalable and allows you to build huge apps. React’s one-way data flow makes everything modular and fast. You can build apps top-down or bottom-up.
 
@@ -117,11 +124,11 @@ Props are like function arguments in JS and attributes in HTML.
 
 Side effects are anything that affects something outside the executed function’s scope like fetching data from an API, a timer, or logging.
 
-· **Explain benefit\(s\) using client-side routing?**
+· **Explain benefit(s) using client-side routing?**
 
 Answer: It’s much more efficient than the traditional way, because a lot of data isn’t being transmitted unnecessarily.
 
-· **Why would you use class component over function components \(removing hooks from the question\)?**
+· **Why would you use class component over function components (removing hooks from the question)?**
 
 Because some companies still use class components and don’t want to switch their millions of dollars’ worth of code over to all functional hooks, and also there’s currently a lot more troubleshooting content out there for classes that isn’t out there for hooks. Also, functional components are better when you don’t need state, presentational components.
 
@@ -163,15 +170,15 @@ Redux, because I felt it was easier to understand than the context API.
 
 · **Explain what a token is used for.**
 
-Many services out in the wild require the client \(our React app, for example\) to provide proof that it’s authenticated with them. The server running these services can issue a JWT \(JSON Web Token\) as the authentication token, in exchange for correct login credentials.
+Many services out in the wild require the client (our React app, for example) to provide proof that it’s authenticated with them. The server running these services can issue a JWT (JSON Web Token) as the authentication token, in exchange for correct login credentials.
 
 · **What steps can you take in your web apps to keep your data secure?**
 
-As we build our web apps, we will most likely have some “protected” routes — routes that we only want to render if the user has logged in and been authenticated by our server. The way this normally works is we make a login request, sending the server the user’s username and password. The server will check those credentials against what is in the database, and if it can authenticate the user, it will return a token. Once we have this token, we can add two layers of protection to our app. One with protected routes, the other by sending an authentication header with our API calls \(as we learned in the above objective\).
+As we build our web apps, we will most likely have some “protected” routes — routes that we only want to render if the user has logged in and been authenticated by our server. The way this normally works is we make a login request, sending the server the user’s username and password. The server will check those credentials against what is in the database, and if it can authenticate the user, it will return a token. Once we have this token, we can add two layers of protection to our app. One with protected routes, the other by sending an authentication header with our API calls (as we learned in the above objective).
 
 · **Describe how web servers work.**
 
-The “world wide web” \(which we’ll refer to as “the web”\) is just a part of the internet — which is itself a network of interconnected computers. The web is just one way to share data over the internet. It consists of a body of information stored on web servers, ready to be shared across the world. The term “web server” can mean two things:
+The “world wide web” (which we’ll refer to as “the web”) is just a part of the internet — which is itself a network of interconnected computers. The web is just one way to share data over the internet. It consists of a body of information stored on web servers, ready to be shared across the world. The term “web server” can mean two things:
 
 · a computer that stores the code for a website
 
@@ -199,7 +206,7 @@ o each resource is accessible via a **unique URI**.
 
 o resources can have multiple **representations**.
 
-o communication is done over a **stateless** protocol \(HTTP\).
+o communication is done over a **stateless** protocol (HTTP).
 
 o management of resources is done via **HTTP methods**.
 
@@ -223,11 +230,11 @@ To uniquely identify each record/row.
 
 Foreign key
 
-· **What do we need in order to have a** _**many to many**_ **relationship between two tables.**
+· **What do we need in order to have a _many to many_ relationship between two tables.**
 
 An **intermediary table** that holds foreign keys that reference the primary key on the related tables.
 
-· **What is the purpose of using** _**sessions**_**?**
+· **What is the purpose of using _sessions_?**
 
 The purpose is to persist data across requests.
 
@@ -241,28 +248,27 @@ o accumulative hashing rounds.
 
 · **What does bcrypt do to slow down attackers?**
 
-Having an algorithm that hashes the information multiple times \(rounds\) means an attacker needs to have the hash, know the algorithm used, and how many rounds were used to generate the hash in the first place. So it basically makes it a lot more difficult to get somebody’s password.
+Having an algorithm that hashes the information multiple times (rounds) means an attacker needs to have the hash, know the algorithm used, and how many rounds were used to generate the hash in the first place. So it basically makes it a lot more difficult to get somebody’s password.
 
 · **What are the three parts of the JSON Web Token?**
 
 Header, payload, signature
 
-## If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-[**bgoonz’s gists**  
- _Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript \| CSS \| Bootstrap \| Python \|…_gist.github.com](https://gist.github.com/bgoonz)
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-[**bgoonz** **—** **Overview**  
- _Web Developer, Electrical Engineer JavaScript \| CSS \| Bootstrap \| Python \| React \| Node.js \| Express \| Sequelize…_github.com](https://github.com/bgoonz)
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-## Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
-[**Web-Dev-Resource-Hub**  
- _Edit description_web-dev-resource-hub.netlify.app](https://web-dev-resource-hub.netlify.app/)
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
+<em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-By [Bryan Guner](https://medium.com/@bryanguner) on [March 19, 2021](https://medium.com/p/86ddc0e91443).
+By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 19, 2021](https://medium.com/p/86ddc0e91443).
 
-[Canonical link](https://medium.com/@bryanguner/front-end-interview-questions-part-2-86ddc0e91443)
+<a href="https://medium.com/@bryanguner/front-end-interview-questions-part-2-86ddc0e91443" class="p-canonical">Canonical link</a>
 
 Exported from [Medium](https://medium.com) on May 23, 2021.
-

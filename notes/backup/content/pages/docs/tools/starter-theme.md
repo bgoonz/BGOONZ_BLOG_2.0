@@ -2,30 +2,30 @@
 title: Starter Theme
 weight: 1
 seo:
-  title: Starter Theme
-  description: This is the starter theme page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Starter Theme
-      keyName: property
-    - name: 'og:description'
-      value: This is the starter theme page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Starter Theme
-    - name: 'twitter:description'
-      value: This is the starter theme page
+    title: Starter Theme
+    description: This is the starter theme page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Starter Theme
+          keyName: property
+        - name: 'og:description'
+          value: This is the starter theme page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Starter Theme
+        - name: 'twitter:description'
+          value: This is the starter theme page
 layout: docs
 ---
 
-# starter-theme
-
- **Note:** This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the **Getting Started** section.
+<div class="note">
+  <strong>Note:</strong> This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
+</div>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nullam non nisi est. Enim diam vulputate ut pharetra sit amet. Malesuada fames ac turpis egestas integer eget aliquet nibh praesent. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Id leo in vitae turpis massa sed elementum. Sed elementum tempus egestas sed sed risus pretium quam. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis.
 
@@ -40,4 +40,3 @@ Non diam phasellus vestibulum lorem sed risus ultricies. Rhoncus est pellentesqu
 ## NPM
 
 Tellus integer feugiat scelerisque varius morbi enim. Mattis ullamcorper velit sed ullamcorper. Risus nullam eget felis eget nunc lobortis mattis. Elementum facilisis leo vel fringilla. Sit amet venenatis urna cursus eget nunc scelerisque viverra mauris. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Dignissim convallis aenean et tortor at risus. Nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus. Aliquam sem et tortor consequat id porta nibh venenatis. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Cras sed felis eget velit aliquet sagittis. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum.
-

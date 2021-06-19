@@ -2,349 +2,298 @@
 
 Refs
 
-## Awesome GitHub Commands Reference Sheet \(Quick Reference\)
-
-```text
-HEAD^       # 1 commit before head
-HEAD^^      # 2 commits before head
-HEAD~5      # 5 commits before head
-```
-
-## Branches
-
-```text
-# create a new branch
-  git checkout -b $branchname
-  git push origin $branchname --set-upstream
-
-# get a remote branch
-  git fetch origin
-  git checkout --track origin/$branchname
-
-# delete local remote-tracking branches (lol)
-  git remote prune origin
-
-# list merged branches
-  git branch -a --merged
-
-# delete remote branch
-  git push origin :$branchname
-
-# go back to previous branch
-  git checkout -
-```
-
-## Collaboration
-
-```text
-# Rebase your changes on top of the remote master
-  git pull --rebase upstream master
-
-# Squash multiple commits into one for a cleaner git log
-# (on the following screen change the word pick to either 'f' or 's')
-  git rebase -i $commit_ref
-```
-
-## Submodules
-
-```text
-# Import .gitmodules
-  git submodule init
-
-# Clone missing submodules, and checkout commits
-  git submodule update --init --recursive
-
-# Update remote URLs in .gitmodules
-# (Use when you changed remotes in submodules)
-  git submodule sync
-```
-
-## Diff
-
-## Diff with stats
-
-```text
-git diff --stat
-app/a.txt    | 2 +-
-app/b.txt    | 8 ++----
-2 files changed, 10 insertions(+), 84 deletions(-)
-```
-
-## Just filenames
-
-```text
-git diff --summary
-```
-
-## Log options
-
-```text
---oneline
-  e11e9f9 Commit message here
-
---decorate
-  shows "(origin/master)"
-
---graph
-  shows graph lines
-
---date=relative
-  "2 hours ago"
-```
-
-## Misc
-
-## Cherry pick
-
-```text
-git rebase 76acada^
-
-# get current sha1 (?)
-  git show-ref HEAD -s
-
-# show single commit info
-  git log -1 f5a960b5
-
-# Go back up to root directory
-  cd "$(git rev-parse --show-top-level)"
-```
-
-## Short log
-
-```text
-$ git shortlog
- $ git shortlog HEAD~20..    # last 20 commits
-
- James Dean (1):
-     Commit here
-     Commit there
-
- Frank Sinatra (5):
-     Another commit
-     This other commit
-```
-
-## Bisect
-
-```text
-git bisect start HEAD HEAD~6
-git bisect run npm test
-git checkout refs/bisect/bad   # this is where it screwed up
-git bisect reset
-```
-
-## Manual bisection
-
-```text
-git bisect start
-git bisect good   # current version is good
-
-git checkout HEAD~8
-npm test          # see if it's good
-git bisect bad    # current version is bad
-
-git bisect reset  # abort
-```
-
-## Searching
-
-```text
-git log --grep="fixes things"  # search in commit messages
-git log -S"window.alert"       # search in code
-git log -G"foo.*"              # search in code (regex)
-```
-
-## GPG Signing
-
-```text
-git config set user.signingkey <GPG KEY ID>       # Sets GPG key to use for signing
-
-git commit -m "Implement feature Y" --gpg-sign    # Or -S, GPG signs commit
-
-git config set commit.gpgsign true                # Sign commits by default
-git commit -m "Implement feature Y" --no-gpg-sign # Do not sign
-
 ---
-```
 
-## Refs
+### Awesome GitHub Commands Reference Sheet (Quick Reference)
 
-```text
-HEAD^       # 1 commit before head
-HEAD^^      # 2 commits before head
-HEAD~5      # 5 commits before head
-```
+    HEAD^       # 1 commit before head
+    HEAD^^      # 2 commits before head
+    HEAD~5      # 5 commits before head
 
-## Branches
+### Branches
 
-```text
-# create a new branch
-  git checkout -b $branchname
-  git push origin $branchname --set-upstream
+    # create a new branch
+      git checkout -b $branchname
+      git push origin $branchname --set-upstream
 
-# get a remote branch
-  git fetch origin
-  git checkout --track origin/$branchname
+    # get a remote branch
+      git fetch origin
+      git checkout --track origin/$branchname
 
-# delete local remote-tracking branches (lol)
-  git remote prune origin
+    # delete local remote-tracking branches (lol)
+      git remote prune origin
 
-# list merged branches
-  git branch -a --merged
+    # list merged branches
+      git branch -a --merged
 
-# delete remote branch
-  git push origin :$branchname
+    # delete remote branch
+      git push origin :$branchname
 
-# go back to previous branch
-  git checkout -
-```
+    # go back to previous branch
+      git checkout -
 
-## Collaboration
+### Collaboration
 
-```text
-# Rebase your changes on top of the remote master
-  git pull --rebase upstream master
+    # Rebase your changes on top of the remote master
+      git pull --rebase upstream master
 
-# Squash multiple commits into one for a cleaner git log
-# (on the following screen change the word pick to either 'f' or 's')
-  git rebase -i $commit_ref
-```
+    # Squash multiple commits into one for a cleaner git log
+    # (on the following screen change the word pick to either 'f' or 's')
+      git rebase -i $commit_ref
 
-## Submodules
+### Submodules
 
-```text
-# Import .gitmodules
-  git submodule init
+    # Import .gitmodules
+      git submodule init
 
-# Clone missing submodules, and checkout commits
-  git submodule update --init --recursive
+    # Clone missing submodules, and checkout commits
+      git submodule update --init --recursive
 
-# Update remote URLs in .gitmodules
-# (Use when you changed remotes in submodules)
-  git submodule sync
-```
+    # Update remote URLs in .gitmodules
+    # (Use when you changed remotes in submodules)
+      git submodule sync
 
-## Diff
+### Diff
 
-## Diff with stats
+### Diff with stats
 
-```text
-git diff --stat
-app/a.txt    | 2 +-
-app/b.txt    | 8 ++----
-2 files changed, 10 insertions(+), 84 deletions(-)
-```
+    git diff --stat
+    app/a.txt    | 2 +-
+    app/b.txt    | 8 ++----
+    2 files changed, 10 insertions(+), 84 deletions(-)
 
-## Just filenames
+### Just filenames
 
-```text
-git diff --summary
-```
+    git diff --summary
 
-## Log options
+### Log options
 
-```text
---oneline
-  e11e9f9 Commit message here
+    --oneline
+      e11e9f9 Commit message here
 
---decorate
-  shows "(origin/master)"
+    --decorate
+      shows "(origin/master)"
 
---graph
-  shows graph lines
+    --graph
+      shows graph lines
 
---date=relative
-  "2 hours ago"
-```
+    --date=relative
+      "2 hours ago"
 
-## Miscellaneous
+### Misc
 
 ### Cherry pick
 
-```text
-git rebase 76acada^
+    git rebase 76acada^
 
-# get current sha1 (?)
-  git show-ref HEAD -s
+    # get current sha1 (?)
+      git show-ref HEAD -s
 
-# show single commit info
-  git log -1 f5a960b5
+    # show single commit info
+      git log -1 f5a960b5
 
-# Go back up to root directory
-  cd "$(git rev-parse --show-top-level)"
-```
+    # Go back up to root directory
+      cd "$(git rev-parse --show-top-level)"
 
-## Short log
+### Short log
 
-```text
-$ git shortlog
- $ git shortlog HEAD~20..    # last 20 commits
+    $ git shortlog
+     $ git shortlog HEAD~20..    # last 20 commits
 
- James Dean (1):
-     Commit here
-     Commit there
+     James Dean (1):
+         Commit here
+         Commit there
 
- Frank Sinatra (5):
-     Another commit
-     This other commit
-```
+     Frank Sinatra (5):
+         Another commit
+         This other commit
 
-## Bisect
+### Bisect
 
-```text
-git bisect start HEAD HEAD~6
-git bisect run npm test
-git checkout refs/bisect/bad   # this is where it screwed up
-git bisect reset
-```
+    git bisect start HEAD HEAD~6
+    git bisect run npm test
+    git checkout refs/bisect/bad   # this is where it screwed up
+    git bisect reset
 
-## Manual bisection
+### Manual bisection
 
-```text
-git bisect start
-git bisect good   # current version is good
+    git bisect start
+    git bisect good   # current version is good
 
-git checkout HEAD~8
-npm test          # see if it's good
-git bisect bad    # current version is bad
+    git checkout HEAD~8
+    npm test          # see if it's good
+    git bisect bad    # current version is bad
 
-git bisect reset  # abort
-```
+    git bisect reset  # abort
 
-## Searching
+### Searching
 
-```text
-git log --grep="fixes things"  # search in commit messages
-git log -S"window.alert"       # search in code
-git log -G"foo.*"              # search in code (regex)
-```
+    git log --grep="fixes things"  # search in commit messages
+    git log -S"window.alert"       # search in code
+    git log -G"foo.*"              # search in code (regex)
 
-## GPG Signing
+### GPG Signing
 
-```text
-git config set user.signingkey <GPG KEY ID>       # Sets GPG key to use for signing
+    git config set user.signingkey <GPG KEY ID>       # Sets GPG key to use for signing
 
-git commit -m "Implement feature Y" --gpg-sign    # Or -S, GPG signs commit
+    git commit -m "Implement feature Y" --gpg-sign    # Or -S, GPG signs commit
 
-git config set commit.gpgsign true                # Sign commits by default
-git commit -m "Implement feature Y" --no-gpg-sign # Do not sign
-```
+    git config set commit.gpgsign true                # Sign commits by default
+    git commit -m "Implement feature Y" --no-gpg-sign # Do not sign
 
-![](https://cdn-images-1.medium.com/max/800/1*yyaUC-O43Gs1qAVkdHrMdw.png)\#\#\#\# If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+    ---
 
-[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+### Refs
 
-[**bgoonz** **—** **Overview**  
- _Web Developer, Electrical Engineer JavaScript \| CSS \| Bootstrap \| Python \| React \| Node.js \| Express \| Sequelize…_github.com](https://github.com/bgoonz)
+    HEAD^       # 1 commit before head
+    HEAD^^      # 2 commits before head
+    HEAD~5      # 5 commits before head
+
+### Branches
+
+    # create a new branch
+      git checkout -b $branchname
+      git push origin $branchname --set-upstream
+
+    # get a remote branch
+      git fetch origin
+      git checkout --track origin/$branchname
+
+    # delete local remote-tracking branches (lol)
+      git remote prune origin
+
+    # list merged branches
+      git branch -a --merged
+
+    # delete remote branch
+      git push origin :$branchname
+
+    # go back to previous branch
+      git checkout -
+
+### Collaboration
+
+    # Rebase your changes on top of the remote master
+      git pull --rebase upstream master
+
+    # Squash multiple commits into one for a cleaner git log
+    # (on the following screen change the word pick to either 'f' or 's')
+      git rebase -i $commit_ref
+
+### Submodules
+
+    # Import .gitmodules
+      git submodule init
+
+    # Clone missing submodules, and checkout commits
+      git submodule update --init --recursive
+
+    # Update remote URLs in .gitmodules
+    # (Use when you changed remotes in submodules)
+      git submodule sync
+
+### Diff
+
+### Diff with stats
+
+    git diff --stat
+    app/a.txt    | 2 +-
+    app/b.txt    | 8 ++----
+    2 files changed, 10 insertions(+), 84 deletions(-)
+
+### Just filenames
+
+    git diff --summary
+
+### Log options
+
+    --oneline
+      e11e9f9 Commit message here
+
+    --decorate
+      shows "(origin/master)"
+
+    --graph
+      shows graph lines
+
+    --date=relative
+      "2 hours ago"
+
+### Miscellaneous
+
+#### Cherry pick
+
+    git rebase 76acada^
+
+    # get current sha1 (?)
+      git show-ref HEAD -s
+
+    # show single commit info
+      git log -1 f5a960b5
+
+    # Go back up to root directory
+      cd "$(git rev-parse --show-top-level)"
+
+### Short log
+
+    $ git shortlog
+     $ git shortlog HEAD~20..    # last 20 commits
+
+     James Dean (1):
+         Commit here
+         Commit there
+
+     Frank Sinatra (5):
+         Another commit
+         This other commit
+
+### Bisect
+
+    git bisect start HEAD HEAD~6
+    git bisect run npm test
+    git checkout refs/bisect/bad   # this is where it screwed up
+    git bisect reset
+
+### Manual bisection
+
+    git bisect start
+    git bisect good   # current version is good
+
+    git checkout HEAD~8
+    npm test          # see if it's good
+    git bisect bad    # current version is bad
+
+    git bisect reset  # abort
+
+### Searching
+
+    git log --grep="fixes things"  # search in commit messages
+    git log -S"window.alert"       # search in code
+    git log -G"foo.*"              # search in code (regex)
+
+### GPG Signing
+
+    git config set user.signingkey <GPG KEY ID>       # Sets GPG key to use for signing
+
+    git commit -m "Implement feature Y" --gpg-sign    # Or -S, GPG signs commit
+
+    git config set commit.gpgsign true                # Sign commits by default
+    git commit -m "Implement feature Y" --no-gpg-sign # Do not sign
+
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*yyaUC-O43Gs1qAVkdHrMdw.png" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
+
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:
 
-[**a/A-Student-Resources**  
- _Edit description_goofy-euclid-1cd736.netlify.app](https://goofy-euclid-1cd736.netlify.app/)
+<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-By [Bryan Guner](https://medium.com/@bryanguner) on [March 6, 2021](https://medium.com/p/57e8d0292285).
+By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/57e8d0292285).
 
-[Canonical link](https://medium.com/@bryanguner/git-tricks-57e8d0292285)
+<a href="https://medium.com/@bryanguner/git-tricks-57e8d0292285" class="p-canonical">Canonical link</a>
 
 Exported from [Medium](https://medium.com) on May 23, 2021.
-
