@@ -64,7 +64,7 @@
                     },
                     {
                         "label": "extra",
-                        "url": "/docs/extra",
+                        "url": "/docs/ds-algo-overview",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
