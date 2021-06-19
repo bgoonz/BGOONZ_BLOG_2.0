@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>SchedulingsetTimeout-and</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="scheduling-settimeout-and-setinterval">Scheduling: setTimeout and setInterval</h1>
-<p>We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.</p>
-<hr />
-<h3 id="scheduling-settimeout-and-setinterval-1">Scheduling: setTimeout and setInterval</h3>
-<p>We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*EnCk0hh8R6B290EH.gif" class="graf-image" />
-</figure>
-<p>There are two methods for it:</p>
-<ul>
-<li><span id="4106"><code>setTimeout</code> allows us to run a function once after the interval of time.</span></li>
-<li><span id="333d"><code>setInterval</code> allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.</span></li>
-</ul>
-<p>These methods are not a part of JavaScript specification. But most environments have an internal scheduler and provide these methods. In particular, they are supported in all browsers and Node.js.</p>
-<h3 id="settimeout">setTimeout</h3>
-<p>The syntax:</p>
-<pre><code>let timerId = setTimeout(func|code, [delay], [arg1], [arg2], ...)</code></pre>
-<p>Parameters:</p>
-<p><code>func|code</code>: Function or a string of code to execute.<br />
-Usually, that’s a function. For historical reasons, a string of code can be passed, but that’s not recommended.</p>
-<p><code>delay</code>: The delay before running, in milliseconds (1000 ms = 1 second), by default 0.</p>
-<p><code>arg1</code>, <code>arg2</code>: Arguments for the function (not supported in IE9-)</p>
-<p>For instance, this code calls <code>sayHi()</code> after one second:</p>
-<pre><code>function sayHi() {
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>SchedulingsetTimeout-and</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="scheduling-settimeout-and-setinterval">Scheduling: setTimeout and setInterval</h1>
+        <p>We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.</p>
+        <hr />
+        <h3 id="scheduling-settimeout-and-setinterval-1">Scheduling: setTimeout and setInterval</h3>
+        <p>We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*EnCk0hh8R6B290EH.gif" class="graf-image" />
+        </figure>
+        <p>There are two methods for it:</p>
+        <ul>
+            <li>
+                <span id="4106"><code>setTimeout</code> allows us to run a function once after the interval of time.</span>
+            </li>
+            <li>
+                <span id="333d"
+                    ><code>setInterval</code> allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that
+                    interval.</span
+                >
+            </li>
+        </ul>
+        <p>
+            These methods are not a part of JavaScript specification. But most environments have an internal scheduler and provide these methods. In particular,
+            they are supported in all browsers and Node.js.
+        </p>
+        <h3 id="settimeout">setTimeout</h3>
+        <p>The syntax:</p>
+        <pre><code>let timerId = setTimeout(func|code, [delay], [arg1], [arg2], ...)</code></pre>
+        <p>Parameters:</p>
+        <p>
+            <code>func|code</code>: Function or a string of code to execute.<br />
+            Usually, that’s a function. For historical reasons, a string of code can be passed, but that’s not recommended.
+        </p>
+        <p><code>delay</code>: The delay before running, in milliseconds (1000 ms = 1 second), by default 0.</p>
+        <p><code>arg1</code>, <code>arg2</code>: Arguments for the function (not supported in IE9-)</p>
+        <p>For instance, this code calls <code>sayHi()</code> after one second:</p>
+        <pre><code>function sayHi() {
   alert(&#39;Hello&#39;);
 }
 
 *!*
 setTimeout(sayHi, 1000);
 */!*</code></pre>
-<p>With arguments:</p>
-<pre><code>function sayHi(phrase, who) {
+        <p>With arguments:</p>
+        <pre><code>function sayHi(phrase, who) {
   alert( phrase + &#39;, &#39; + who );
 }
 
 *!*
 setTimeout(sayHi, 1000, &quot;Hello&quot;, &quot;John&quot;); // Hello, John
 */!*</code></pre>
-<p>If the first argument is a string, then JavaScript creates a function from it.</p>
-<p>So, this will also work:</p>
-<pre><code>setTimeout(&quot;alert(&#39;Hello&#39;)&quot;, 1000);</code></pre>
-<p>But using strings is not recommended, use arrow functions instead of them, like this:</p>
-<pre><code>setTimeout(() =&gt; alert(&#39;Hello&#39;), 1000);
+        <p>If the first argument is a string, then JavaScript creates a function from it.</p>
+        <p>So, this will also work:</p>
+        <pre><code>setTimeout(&quot;alert(&#39;Hello&#39;)&quot;, 1000);</code></pre>
+        <p>But using strings is not recommended, use arrow functions instead of them, like this:</p>
+        <pre><code>setTimeout(() =&gt; alert(&#39;Hello&#39;), 1000);
 
 Novice developers sometimes make a mistake by adding brackets `()` after the function:
 
@@ -64,35 +86,47 @@ Novice developers sometimes make a mistake by adding brackets `()` after the fun
 setTimeout(sayHi(), 1000);
 ```
 That doesn&#39;t work, because `setTimeout` expects a reference to a function. And here `sayHi()` runs the function, and the *result of its execution* is passed to `setTimeout`. In our case the result of `sayHi()` is `undefined` (the function returns nothing), so nothing is scheduled.</code></pre>
-<h3 id="canceling-with-cleartimeout">Canceling with clearTimeout</h3>
-<p>A call to <code>setTimeout</code> returns a “timer identifier” <code>timerId</code> that we can use to cancel the execution.</p>
-<p>The syntax to cancel:</p>
-<pre><code>let timerId = setTimeout(...);
+        <h3 id="canceling-with-cleartimeout">Canceling with clearTimeout</h3>
+        <p>A call to <code>setTimeout</code> returns a “timer identifier” <code>timerId</code> that we can use to cancel the execution.</p>
+        <p>The syntax to cancel:</p>
+        <pre><code>let timerId = setTimeout(...);
 clearTimeout(timerId);</code></pre>
-<p>In the code below, we schedule the function and then cancel it (changed our mind). As a result, nothing happens:</p>
-<pre><code>let timerId = setTimeout(() =&gt; alert(&quot;never happens&quot;), 1000);
+        <p>In the code below, we schedule the function and then cancel it (changed our mind). As a result, nothing happens:</p>
+        <pre><code>let timerId = setTimeout(() =&gt; alert(&quot;never happens&quot;), 1000);
 alert(timerId); // timer identifier
 
 clearTimeout(timerId);
 alert(timerId); // same identifier (doesn&#39;t become null after canceling)</code></pre>
-<p>As we can see from <code>alert</code> output, in a browser the timer identifier is a number. In other environments, this can be something else. For instance, Node.js returns a timer object with additional methods.</p>
-<p>Again, there is no universal specification for these methods, so that’s fine.</p>
-<p>For browsers, timers are described in the <a href="https://www.w3.org/TR/html5/webappapis.html#timers" class="markup--anchor markup--p-anchor">timers section</a> of HTML5 standard.</p>
-<h3 id="setinterval">setInterval</h3>
-<p>The <code>setInterval</code> method has the same syntax as <code>setTimeout</code>:</p>
-<pre><code>let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</code></pre>
-<p>All arguments have the same meaning. But unlike <code>setTimeout</code> it runs the function not only once, but regularly after the given interval of time.</p>
-<p>To stop further calls, we should call <code>clearInterval(timerId)</code>.</p>
-<p>The following example will show the message every 2 seconds. After 5 seconds, the output is stopped:</p>
-<pre><code>// repeat with the interval of 2 seconds
+        <p>
+            As we can see from <code>alert</code> output, in a browser the timer identifier is a number. In other environments, this can be something else. For
+            instance, Node.js returns a timer object with additional methods.
+        </p>
+        <p>Again, there is no universal specification for these methods, so that’s fine.</p>
+        <p>
+            For browsers, timers are described in the
+            <a href="https://www.w3.org/TR/html5/webappapis.html#timers" class="markup--anchor markup--p-anchor">timers section</a> of HTML5 standard.
+        </p>
+        <h3 id="setinterval">setInterval</h3>
+        <p>The <code>setInterval</code> method has the same syntax as <code>setTimeout</code>:</p>
+        <pre><code>let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</code></pre>
+        <p>
+            All arguments have the same meaning. But unlike <code>setTimeout</code> it runs the function not only once, but regularly after the given interval
+            of time.
+        </p>
+        <p>To stop further calls, we should call <code>clearInterval(timerId)</code>.</p>
+        <p>The following example will show the message every 2 seconds. After 5 seconds, the output is stopped:</p>
+        <pre><code>// repeat with the interval of 2 seconds
 let timerId = setInterval(() =&gt; alert(&#39;tick&#39;), 2000);
 
 // after 5 seconds stop
 setTimeout(() =&gt; { clearInterval(timerId); alert(&#39;stop&#39;); }, 5000);</code></pre>
-<p>```smart header = “Time goes on while <code>alert</code> is shown”</p>
-<p>In most browsers, including Chrome and Firefox, the internal timer continues “ticking” while showing <code>alert/confirm/prompt</code>.</p>
-<p>So if you run the code above and don’t dismiss the <code>alert</code> window for some time, then the next <code>alert</code> will be shown immediately as you do it. The actual interval between alerts will be shorter than 2 seconds.</p>
-<pre><code>##  Nested setTimeout
+        <p>```smart header = “Time goes on while <code>alert</code> is shown”</p>
+        <p>In most browsers, including Chrome and Firefox, the internal timer continues “ticking” while showing <code>alert/confirm/prompt</code>.</p>
+        <p>
+            So if you run the code above and don’t dismiss the <code>alert</code> window for some time, then the next <code>alert</code> will be shown
+            immediately as you do it. The actual interval between alerts will be shorter than 2 seconds.
+        </p>
+        <pre><code>##  Nested setTimeout
 &lt;p class=&quot;mume-header &quot; id=&quot;nested-settimeout&quot;&gt;&lt;/p&gt;
 
 There are two ways of running something regularly.
@@ -110,11 +144,17 @@ let timerId = setTimeout(function tick() {
   timerId = setTimeout(tick, 2000); // (*)
 */!*
 }, 2000);</code></pre>
-<p>The <code>setTimeout</code> above schedules the next call right at the end of the current one <code>(*)</code>.</p>
-<p>The nested <code>setTimeout</code> is a more flexible method than <code>setInterval</code>. This way the next call may be scheduled differently, depending on the results of the current one.</p>
-<p>For instance, we need to write a service that sends a request to the server every 5 seconds asking for data, but in case the server is overloaded, it should increase the interval to 10, 20, 40 seconds…</p>
-<p>Here’s the pseudocode:</p>
-<pre><code>let delay = 5000;
+        <p>The <code>setTimeout</code> above schedules the next call right at the end of the current one <code>(*)</code>.</p>
+        <p>
+            The nested <code>setTimeout</code> is a more flexible method than <code>setInterval</code>. This way the next call may be scheduled differently,
+            depending on the results of the current one.
+        </p>
+        <p>
+            For instance, we need to write a service that sends a request to the server every 5 seconds asking for data, but in case the server is overloaded,
+            it should increase the interval to 10, 20, 40 seconds…
+        </p>
+        <p>Here’s the pseudocode:</p>
+        <pre><code>let delay = 5000;
 
 let timerId = setTimeout(function request() {
   ...send request...
@@ -127,30 +167,42 @@ let timerId = setTimeout(function request() {
   timerId = setTimeout(request, delay);
 
 }, delay);</code></pre>
-<p>And if the functions that we’re scheduling are CPU-hungry, then we can measure the time taken by the execution and plan the next call sooner or later.</p>
-<p><strong>Nested</strong> <code>setTimeout</code> <strong>allows to set the delay between the executions more precisely than</strong> <code>setInterval</code><strong>.</strong></p>
-<p>Let’s compare two code fragments. The first one uses <code>setInterval</code>:</p>
-<pre><code>let i = 1;
+        <p>
+            And if the functions that we’re scheduling are CPU-hungry, then we can measure the time taken by the execution and plan the next call sooner or
+            later.
+        </p>
+        <p>
+            <strong>Nested</strong> <code>setTimeout</code> <strong>allows to set the delay between the executions more precisely than</strong>
+            <code>setInterval</code><strong>.</strong>
+        </p>
+        <p>Let’s compare two code fragments. The first one uses <code>setInterval</code>:</p>
+        <pre><code>let i = 1;
 setInterval(function() {
   func(i++);
 }, 100);</code></pre>
-<p>The second one uses nested <code>setTimeout</code>:</p>
-<pre><code>let i = 1;
+        <p>The second one uses nested <code>setTimeout</code>:</p>
+        <pre><code>let i = 1;
 setTimeout(function run() {
   func(i++);
   setTimeout(run, 100);
 }, 100);</code></pre>
-<p>For <code>setInterval</code> the internal scheduler will run <code>func(i++)</code> every 100ms:</p>
-<p>Did you notice?</p>
-<p><strong>The real delay between</strong> <code>func</code> <strong>calls for</strong> <code>setInterval</code> <strong>is less than in the code!</strong></p>
-<p>That’s normal, because the time taken by <code>func</code>’s execution “consumes” a part of the interval.</p>
-<p>It is possible that <code>func</code>’s execution turns out to be longer than we expected and takes more than 100ms.</p>
-<p>In this case the engine waits for <code>func</code> to complete, then checks the scheduler and if the time is up, runs it again <em>immediately</em>.</p>
-<p>In the edge case, if the function always executes longer than <code>delay</code> ms, then the calls will happen without a pause at all.</p>
-<p>And here is the picture for the nested <code>setTimeout</code>:</p>
-<p><strong>The nested</strong> <code>setTimeout</code> <strong>guarantees the fixed delay (here 100ms).</strong></p>
-<p>That’s because a new call is planned at the end of the previous one.</p>
-<pre><code>When a function is passed in `setInterval/setTimeout`, an internal reference is created to it and saved in the scheduler. It prevents the function from being garbage collected, even if there are no other references to it.
+        <p>For <code>setInterval</code> the internal scheduler will run <code>func(i++)</code> every 100ms:</p>
+        <p>Did you notice?</p>
+        <p>
+            <strong>The real delay between</strong> <code>func</code> <strong>calls for</strong> <code>setInterval</code>
+            <strong>is less than in the code!</strong>
+        </p>
+        <p>That’s normal, because the time taken by <code>func</code>’s execution “consumes” a part of the interval.</p>
+        <p>It is possible that <code>func</code>’s execution turns out to be longer than we expected and takes more than 100ms.</p>
+        <p>
+            In this case the engine waits for <code>func</code> to complete, then checks the scheduler and if the time is up, runs it again
+            <em>immediately</em>.
+        </p>
+        <p>In the edge case, if the function always executes longer than <code>delay</code> ms, then the calls will happen without a pause at all.</p>
+        <p>And here is the picture for the nested <code>setTimeout</code>:</p>
+        <p><strong>The nested</strong> <code>setTimeout</code> <strong>guarantees the fixed delay (here 100ms).</strong></p>
+        <p>That’s because a new call is planned at the end of the previous one.</p>
+        <pre><code>When a function is passed in `setInterval/setTimeout`, an internal reference is created to it and saved in the scheduler. It prevents the function from being garbage collected, even if there are no other references to it.
 
 ```js
 // the function stays in memory until the scheduler calls it
@@ -160,17 +212,23 @@ setTimeout(function() {...}, 100);
 For `setInterval` the function stays in memory until `clearInterval` is called.
 
 There&#39;s a side-effect. A function references the outer lexical environment, so, while it lives, outer variables live too. They may take much more memory than the function itself. So when we don&#39;t need the scheduled function anymore, it&#39;s better to cancel it, even if it&#39;s very small.</code></pre>
-<h3 id="zero-delay-settimeout">Zero delay setTimeout</h3>
-<p>There’s a special use case: <code>setTimeout(func, 0)</code>, or just <code>setTimeout(func)</code>.</p>
-<p>This schedules the execution of <code>func</code> as soon as possible. But the scheduler will invoke it only after the currently executing script is complete.</p>
-<p>So the function is scheduled to run “right after” the current script.</p>
-<p>For instance, this outputs “Hello”, then immediately “World”:</p>
-<pre><code>setTimeout(() =&gt; alert(&quot;World&quot;));
+        <h3 id="zero-delay-settimeout">Zero delay setTimeout</h3>
+        <p>There’s a special use case: <code>setTimeout(func, 0)</code>, or just <code>setTimeout(func)</code>.</p>
+        <p>
+            This schedules the execution of <code>func</code> as soon as possible. But the scheduler will invoke it only after the currently executing script is
+            complete.
+        </p>
+        <p>So the function is scheduled to run “right after” the current script.</p>
+        <p>For instance, this outputs “Hello”, then immediately “World”:</p>
+        <pre><code>setTimeout(() =&gt; alert(&quot;World&quot;));
 
 alert(&quot;Hello&quot;);</code></pre>
-<p>The first line “puts the call into calendar after 0ms”. But the scheduler will only “check the calendar” after the current script is complete, so <code>"Hello"</code> is first, and <code>"World"</code> – after it.</p>
-<p>There are also advanced browser-related use cases of a zero-delay timeout, that we’ll discuss in the chapter info:event-loop.</p>
-<pre><code>In the browser, there&#39;s a limitation of how often nested timers can run. The [HTML5 standard](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers) says: &quot;after five nested timers, the interval is forced to be at least 4 milliseconds.&quot;.
+        <p>
+            The first line “puts the call into calendar after 0ms”. But the scheduler will only “check the calendar” after the current script is complete, so
+            <code>"Hello"</code> is first, and <code>"World"</code> – after it.
+        </p>
+        <p>There are also advanced browser-related use cases of a zero-delay timeout, that we’ll discuss in the chapter info:event-loop.</p>
+        <pre><code>In the browser, there&#39;s a limitation of how often nested timers can run. The [HTML5 standard](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers) says: &quot;after five nested timers, the interval is forced to be at least 4 milliseconds.&quot;.
 
 Let&#39;s demonstrate what it means with the example below. The `setTimeout` call in it re-schedules itself with zero delay. Each call remembers the real time from the previous one in the `times` array. What do the real delays look like? Let&#39;s see:
 
@@ -196,25 +254,57 @@ The similar thing happens if we use `setInterval` instead of `setTimeout`: `setI
 That limitation comes from ancient times and many scripts rely on it, so it exists for historical reasons.
 
 For server-side JavaScript, that limitation does not exist, and there exist other ways to schedule an immediate asynchronous job, like [setImmediate](https://nodejs.org/api/timers.html#timers_setimmediate_callback_args) for Node.js. So this note is browser-specific.</code></pre>
-<h3 id="summary">Summary</h3>
-<ul>
-<li><span id="4074">Methods <code>setTimeout(func, delay, ...args)</code> and <code>setInterval(func, delay, ...args)</code> allow us to run the <code>func</code> once/regularly after <code>delay</code> milliseconds.</span></li>
-<li><span id="6249">To cancel the execution, we should call <code>clearTimeout/clearInterval</code> with the value returned by <code>setTimeout/setInterval</code>.</span></li>
-<li><span id="af18">Nested <code>setTimeout</code> calls are a more flexible alternative to <code>setInterval</code>, allowing us to set the time <em>between</em> executions more precisely.</span></li>
-<li><span id="06e2">Zero delay scheduling with <code>setTimeout(func, 0)</code> (the same as <code>setTimeout(func)</code>) is used to schedule the call “as soon as possible, but after the current script is complete”.</span></li>
-<li><span id="5393">The browser limits the minimal delay for five or more nested calls of <code>setTimeout</code> or for <code>setInterval</code> (after 5th call) to 4ms. That’s for historical reasons.</span></li>
-</ul>
-<p>Please note that all scheduling methods do not <em>guarantee</em> the exact delay.</p>
-<p>For example, the in-browser timer may slow down for a lot of reasons:</p>
-<ul>
-<li><span id="e3b2">The CPU is overloaded.</span></li>
-<li><span id="2aed">The browser tab is in the background mode.</span></li>
-<li><span id="116d">The laptop is on battery.</span></li>
-</ul>
-<p>All that may increase the minimal timer resolution (the minimal delay) to 300ms or even 1000ms depending on the browser and OS-level performance settings.</p>
-<p><em>More content at</em> <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a></p>
-<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/fcb2f40d16f7">May 18, 2021</a>.</p>
-<p><a href="https://medium.com/@bryanguner/scheduling-settimeout-and-setinterval-fcb2f40d16f7" class="p-canonical">Canonical link</a></p>
-<p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
-</body>
+        <h3 id="summary">Summary</h3>
+        <ul>
+            <li>
+                <span id="4074"
+                    >Methods <code>setTimeout(func, delay, ...args)</code> and <code>setInterval(func, delay, ...args)</code> allow us to run the
+                    <code>func</code> once/regularly after <code>delay</code> milliseconds.</span
+                >
+            </li>
+            <li>
+                <span id="6249"
+                    >To cancel the execution, we should call <code>clearTimeout/clearInterval</code> with the value returned by
+                    <code>setTimeout/setInterval</code>.</span
+                >
+            </li>
+            <li>
+                <span id="af18"
+                    >Nested <code>setTimeout</code> calls are a more flexible alternative to <code>setInterval</code>, allowing us to set the time
+                    <em>between</em> executions more precisely.</span
+                >
+            </li>
+            <li>
+                <span id="06e2"
+                    >Zero delay scheduling with <code>setTimeout(func, 0)</code> (the same as <code>setTimeout(func)</code>) is used to schedule the call “as
+                    soon as possible, but after the current script is complete”.</span
+                >
+            </li>
+            <li>
+                <span id="5393"
+                    >The browser limits the minimal delay for five or more nested calls of <code>setTimeout</code> or for <code>setInterval</code> (after 5th
+                    call) to 4ms. That’s for historical reasons.</span
+                >
+            </li>
+        </ul>
+        <p>Please note that all scheduling methods do not <em>guarantee</em> the exact delay.</p>
+        <p>For example, the in-browser timer may slow down for a lot of reasons:</p>
+        <ul>
+            <li><span id="e3b2">The CPU is overloaded.</span></li>
+            <li><span id="2aed">The browser tab is in the background mode.</span></li>
+            <li><span id="116d">The laptop is on battery.</span></li>
+        </ul>
+        <p>
+            All that may increase the minimal timer resolution (the minimal delay) to 300ms or even 1000ms depending on the browser and OS-level performance
+            settings.
+        </p>
+        <p>
+            <em>More content at</em> <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
+        </p>
+        <p>
+            By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/fcb2f40d16f7">May 18, 2021</a>.
+        </p>
+        <p><a href="https://medium.com/@bryanguner/scheduling-settimeout-and-setinterval-fcb2f40d16f7" class="p-canonical">Canonical link</a></p>
+        <p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+    </body>
 </html>

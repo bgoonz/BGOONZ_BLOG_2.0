@@ -1,190 +1,392 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Super-Simple-Intro-To</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="super-simple-intro-to-html">Super Simple Intro To HTML</h1>
-<p>What is HTML, CSS &amp; JS and why do we need all three?</p>
-<hr />
-<h3 id="super-simple-intro-to-html-1">Super Simple Intro To HTML</h3>
-<h4 id="what-is-html-css-js-and-why-do-we-need-all-three">What is HTML, CSS &amp; JS and why do we need all three?</h4>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*KxF-AuqgX7UklUa4.png" class="graf-image" />
-</figure>
-<p>HTML stands for “Hypertext Markup Language”. Basically, HTML is the structure for the website, words, bullet points, data tables, etc. CSS stands for “Cascading Style Sheets” which means it’s the “Style” it’s how to make your website look professional, and look visually appealing. JS is how to make your website actually **work**.</p>
-<p>For example, if you created something like YouTube and one of the options you can watch videos, you used HTML for the title, you used CSS for the color/s, and you have to make it actually work! So when you click on it it will run the video. This is an example of the three programming languages working in unison to form an experience you’re already familiar with if you’re reading this…</p>
-<p><strong>I mean most likely… unless you printed it because you hate trees.</strong></p>
-<p>— — — — — — — — — — -</p>
-<h3 id="what-are-tags-and-attributes">What are Tags and Attributes?</h3>
-<p>Tags and attributes are the basis of HTML.</p>
-<p>They work together but perform different functions — it is worth investing 2 minutes in <strong>differentiating the two</strong>.</p>
-<h4 id="what-are-html-tags">What Are HTML Tags?</h4>
-<p><a href="https://html.com/tags/" class="markup--anchor markup--p-anchor">Tags</a> are used to <strong>mark up the start of an HTML element</strong> and they are usually enclosed in angle brackets. An example of a tag is: <code>&lt;h1&gt;</code>.</p>
-<p>Most tags must be opened <code>&lt;h1&gt;</code> and closed <code>&lt;/h1&gt;</code> in order to function.</p>
-<h4 id="what-are-html-attributes">What are HTML Attributes?</h4>
-<p><a href="https://html.com/attributes/" class="markup--anchor markup--p-anchor">Attributes</a> contain <strong>additional pieces of information</strong>. Attributes take the form of an opening tag and additional info is <strong>placed inside</strong>.</p>
-<p>An example of an attribute is:</p>
-<p><code>&lt;img src="mydog.jpg" alt="A photo of my dog."&gt;</code></p>
-<p>In this instance, the image source (src) and the alt text (alt) are attributes of the <code>&lt;img&gt;</code> tag.</p>
-<h4 id="golden-rules-to-remember">Golden Rules To Remember</h4>
-<ol type="1">
-<li><span id="e12a">The vast majority of tags must be <strong>opened</strong> (<code>&lt;tag&gt;</code>) and <strong>closed</strong> (<code>&lt;/tag&gt;</code>) with the element information such as a title or text resting between the tags.</span></li>
-<li><span id="c99f">When using multiple tags, the tags must be <strong>closed in the order in which they were opened</strong>. For example:</span></li>
-<li><span id="9eb5"><code>&lt;strong&gt;&lt;em&gt;This is really important!&lt;/em&gt;&lt;/strong&gt;</code></span></li>
-</ol>
-<p>Let’s have a look at how CodePen works, firstly, you need to go to their website. After that, you must create an account. After you do that, You will see something like this</p>
-<h3 id="how-to-get-started">How to get started</h3>
-<p>If you’re using Visual Studio Code, congrats! There is Emmet support built into VSCode, so you won’t need to install any extensions. If you’re working in Atom you’ll need to install the Emmet plugin, which can be <a href="https://atom.io/packages/emmet" class="markup--anchor markup--p-anchor">found here</a>.</p>
-<h3 id="basic-syntax">Basic Syntax</h3>
-<p><strong><em>HTML Boilerplate</em></strong></p>
-<p>If you’ve been working in VSCode, you’ve probably seen Emmet syntax highlighting when working in HTML documents. In my opinion, the most convenient Emmet shortcut is <strong><em>html:5</em></strong>. This will create an HTML boilerplate, and fill out metadata tags in the head of your document.</p>
-<pre><code>html:5</code></pre>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*oDrxfgtO2WE9_Z6d.png" class="graf-image" />
-</figure>
-<p>Emmet Abbreviation for different HTML boilerplates.</p>
-<p><strong>When you see the auto complete as pictured above you can hit tab to auto fill the boilerplate html document.</strong></p>
-<p>That one small shortcut autogenerates all this metadata and head and body tags:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*LgiaI-W7QB4mtifR.png" class="graf-image" />
-</figure>
-<h4 id="heres-some-slightly-more-advanced-boilerplate-for-you-to-use-as-a-starting-point-in-your-projects.">Here’s some slightly more advanced boilerplate for you to use as a starting point in your projects.</h4>
-<h3 id="html-language">HTML Language</h3>
-<p><strong>Chapter 1: Formatting text</strong></p>
-<p><strong>Tags in HTML:</strong> Tags are one of the most important parts in an HTML document. (We will get to what HTML document is after we know what tags are). HTML uses some predefined tags which tells the browser about content display property, that is how to display a particular given content. For Example, to create a paragraph, one must use the paragraph tags(&lt;p&gt; &lt;/p&gt;) and to insert an image one must use the img tags(&lt;img /&gt;).</p>
-<p>There are generally two types of tags in HTML:</p>
-<ol type="1">
-<li><span id="9de4"><strong>Paired tags:</strong> These tags come in pairs. That is they have both opening (&lt; &gt;) and closing(&lt;/ &gt;) tags.</span></li>
-<li><span id="4b61"><strong>Singular tags:</strong> These tags do not required to be closed</span></li>
-</ol>
-<blockquote>
-<p>i.e.</p>
-</blockquote>
-<pre><code>&lt;hr&gt;
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>Super-Simple-Intro-To</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="super-simple-intro-to-html">Super Simple Intro To HTML</h1>
+        <p>What is HTML, CSS &amp; JS and why do we need all three?</p>
+        <hr />
+        <h3 id="super-simple-intro-to-html-1">Super Simple Intro To HTML</h3>
+        <h4 id="what-is-html-css-js-and-why-do-we-need-all-three">What is HTML, CSS &amp; JS and why do we need all three?</h4>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*KxF-AuqgX7UklUa4.png" class="graf-image" />
+        </figure>
+        <p>
+            HTML stands for “Hypertext Markup Language”. Basically, HTML is the structure for the website, words, bullet points, data tables, etc. CSS stands
+            for “Cascading Style Sheets” which means it’s the “Style” it’s how to make your website look professional, and look visually appealing. JS is how to
+            make your website actually **work**.
+        </p>
+        <p>
+            For example, if you created something like YouTube and one of the options you can watch videos, you used HTML for the title, you used CSS for the
+            color/s, and you have to make it actually work! So when you click on it it will run the video. This is an example of the three programming languages
+            working in unison to form an experience you’re already familiar with if you’re reading this…
+        </p>
+        <p><strong>I mean most likely… unless you printed it because you hate trees.</strong></p>
+        <p>— — — — — — — — — — -</p>
+        <h3 id="what-are-tags-and-attributes">What are Tags and Attributes?</h3>
+        <p>Tags and attributes are the basis of HTML.</p>
+        <p>They work together but perform different functions — it is worth investing 2 minutes in <strong>differentiating the two</strong>.</p>
+        <h4 id="what-are-html-tags">What Are HTML Tags?</h4>
+        <p>
+            <a href="https://html.com/tags/" class="markup--anchor markup--p-anchor">Tags</a> are used to
+            <strong>mark up the start of an HTML element</strong> and they are usually enclosed in angle brackets. An example of a tag is:
+            <code>&lt;h1&gt;</code>.
+        </p>
+        <p>Most tags must be opened <code>&lt;h1&gt;</code> and closed <code>&lt;/h1&gt;</code> in order to function.</p>
+        <h4 id="what-are-html-attributes">What are HTML Attributes?</h4>
+        <p>
+            <a href="https://html.com/attributes/" class="markup--anchor markup--p-anchor">Attributes</a> contain
+            <strong>additional pieces of information</strong>. Attributes take the form of an opening tag and additional info is <strong>placed inside</strong>.
+        </p>
+        <p>An example of an attribute is:</p>
+        <p><code>&lt;img src="mydog.jpg" alt="A photo of my dog."&gt;</code></p>
+        <p>In this instance, the image source (src) and the alt text (alt) are attributes of the <code>&lt;img&gt;</code> tag.</p>
+        <h4 id="golden-rules-to-remember">Golden Rules To Remember</h4>
+        <ol type="1">
+            <li>
+                <span id="e12a"
+                    >The vast majority of tags must be <strong>opened</strong> (<code>&lt;tag&gt;</code>) and
+                    <strong>closed</strong> (<code>&lt;/tag&gt;</code>) with the element information such as a title or text resting between the tags.</span
+                >
+            </li>
+            <li>
+                <span id="c99f">When using multiple tags, the tags must be <strong>closed in the order in which they were opened</strong>. For example:</span>
+            </li>
+            <li>
+                <span id="9eb5"><code>&lt;strong&gt;&lt;em&gt;This is really important!&lt;/em&gt;&lt;/strong&gt;</code></span>
+            </li>
+        </ol>
+        <p>
+            Let’s have a look at how CodePen works, firstly, you need to go to their website. After that, you must create an account. After you do that, You
+            will see something like this
+        </p>
+        <h3 id="how-to-get-started">How to get started</h3>
+        <p>
+            If you’re using Visual Studio Code, congrats! There is Emmet support built into VSCode, so you won’t need to install any extensions. If you’re
+            working in Atom you’ll need to install the Emmet plugin, which can be
+            <a href="https://atom.io/packages/emmet" class="markup--anchor markup--p-anchor">found here</a>.
+        </p>
+        <h3 id="basic-syntax">Basic Syntax</h3>
+        <p>
+            <strong><em>HTML Boilerplate</em></strong>
+        </p>
+        <p>
+            If you’ve been working in VSCode, you’ve probably seen Emmet syntax highlighting when working in HTML documents. In my opinion, the most convenient
+            Emmet shortcut is <strong><em>html:5</em></strong
+            >. This will create an HTML boilerplate, and fill out metadata tags in the head of your document.
+        </p>
+        <pre><code>html:5</code></pre>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*oDrxfgtO2WE9_Z6d.png" class="graf-image" />
+        </figure>
+        <p>Emmet Abbreviation for different HTML boilerplates.</p>
+        <p><strong>When you see the auto complete as pictured above you can hit tab to auto fill the boilerplate html document.</strong></p>
+        <p>That one small shortcut autogenerates all this metadata and head and body tags:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*LgiaI-W7QB4mtifR.png" class="graf-image" />
+        </figure>
+        <h4 id="heres-some-slightly-more-advanced-boilerplate-for-you-to-use-as-a-starting-point-in-your-projects.">
+            Here’s some slightly more advanced boilerplate for you to use as a starting point in your projects.
+        </h4>
+        <h3 id="html-language">HTML Language</h3>
+        <p><strong>Chapter 1: Formatting text</strong></p>
+        <p>
+            <strong>Tags in HTML:</strong> Tags are one of the most important parts in an HTML document. (We will get to what HTML document is after we know
+            what tags are). HTML uses some predefined tags which tells the browser about content display property, that is how to display a particular given
+            content. For Example, to create a paragraph, one must use the paragraph tags(&lt;p&gt; &lt;/p&gt;) and to insert an image one must use the img
+            tags(&lt;img /&gt;).
+        </p>
+        <p>There are generally two types of tags in HTML:</p>
+        <ol type="1">
+            <li>
+                <span id="9de4"
+                    ><strong>Paired tags:</strong> These tags come in pairs. That is they have both opening (&lt; &gt;) and closing(&lt;/ &gt;) tags.</span
+                >
+            </li>
+            <li>
+                <span id="4b61"><strong>Singular tags:</strong> These tags do not required to be closed</span>
+            </li>
+        </ol>
+        <blockquote>
+            <p>i.e.</p>
+        </blockquote>
+        <pre><code>&lt;hr&gt;
 &lt;p&gt; The tag above me is a horizontal line that doesn&#39;t need a closing tag &lt;/p&gt;</code></pre>
-<p>HTML tags have two main types: <strong>block-level</strong> and <strong>inline tags</strong>.</p>
-<ol type="1">
-<li><span id="bd59">Block-level elements take up the full available space and always start a new line in the document. Headings and paragraphs are a great example of block tags.</span></li>
-<li><span id="2479">Inline elements only take up as much space as they need and don’t start a new line on the page. They usually serve to format the inner contents of block-level elements. Links and emphasized strings are good examples of inline tags.</span></li>
-</ol>
-<h3 id="block-level-tags">Block-Level Tags</h3>
-<p>The three block level tags every HTML document needs to contain are <strong>&lt;html&gt;</strong>, <strong>&lt;head&gt;</strong>, and <strong>&lt;body&gt;</strong>.</p>
-<ol type="1">
-<li><span id="bd5d">The <strong>&lt;html&gt;&lt;/html&gt;</strong> tag is the highest level element that encloses every HTML page.</span></li>
-<li><span id="c015">The <strong>&lt;head&gt;&lt;/head&gt;</strong> tag holds meta information such as the page’s title and charset.</span></li>
-<li><span id="5ca8">Finally, the <strong>&lt;body&gt;&lt;/body&gt;</strong> tag encloses all the content that appears on the page.</span></li>
-</ol>
-<ul>
-<li><span id="7864">Paragraphs are enclosed by <strong><em>&lt;p&gt;&lt;/p&gt;</em></strong>, while blockquotes use the <strong><em>&lt;blockquote&gt;&lt;/blockquote&gt;</em></strong> tag.</span></li>
-<li><span id="82ad">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the <strong><em>&lt;div&gt;&lt;/div&gt;</em></strong> tag. A div element can contain another div tag inside it as well.</span></li>
-<li><span id="39c6">You may also use <strong><em>&lt;ol&gt;&lt;/ol&gt;</em></strong> tags for ordered lists and <strong><em>&lt;ul&gt;&lt;/ul&gt;</em></strong> for unordered ones. Individual list items must be enclosed by the <strong><em>&lt;li&gt;&lt;/li&gt;</em></strong> tag. For example, this is how a basic unordered list looks like in HTML:</span></li>
-</ul>
-<ol type="1">
-<li><span id="e470"><strong>&lt;ul&gt;</strong></span></li>
-<li><span id="b8c5"><strong>&lt;li&gt;</strong>List item 1<strong>&lt;/li&gt;</strong></span></li>
-<li><span id="3c1d"><strong>&lt;li&gt;</strong>List item 2<strong>&lt;/li&gt;</strong></span></li>
-<li><span id="97b4"><strong>&lt;li&gt;</strong>List item 3<strong>&lt;/li&gt;</strong></span></li>
-<li><span id="b59a"><strong>&lt;/ul&gt;</strong></span></li>
-</ol>
-<h3 id="structure-of-an-html-document"><strong>Structure of an HTML Document</strong></h3>
-<p>An HTML Document is mainly divided into two parts:</p>
-<ul>
-<li><span id="0424"><strong>HEAD</strong>: This contains the information about the HTML document. For Example, Title of the page, version of HTML, Meta-Data etc.</span></li>
-</ul>
-<p>HTML TAG Specifies an html document. The HTML element (or HTML root element) represents the root of an HTML document. All other elements must be descendants of this element. Since the element is the first in a document, it is called the root element.</p>
-<p>Although this tag can be implied, or not required, with HTML, it is required to be opened and closed in XHTML.</p>
-<ul>
-<li><span id="83fe">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the <strong><em>&lt;div&gt;&lt;/div&gt;</em></strong> tag. A div element can contain another div tag inside it as well.</span></li>
-<li><span id="9d53">You may also use <strong><em>&lt;ol&gt;&lt;/ol&gt;</em></strong> tags for ordered lists and <strong><em>&lt;ul&gt;&lt;/ul&gt;</em></strong> for unordered ones. Individual list items must be enclosed by the <strong><em>&lt;li&gt;&lt;/li&gt;</em></strong> tag. For example, this is how a basic unordered list looks like in HTML:</span></li>
-</ul>
-<ol type="1">
-<li><span id="4097"><strong>&lt;ul&gt;</strong></span></li>
-<li><span id="0103"><strong>&lt;li&gt;</strong>List item 1<strong>&lt;/li&gt;</strong></span></li>
-<li><span id="1de2"><strong>&lt;li&gt;</strong>List item 2<strong>&lt;/li&gt;</strong></span></li>
-<li><span id="dad0"><strong>&lt;li&gt;</strong>List item 3<strong>&lt;/li&gt;</strong></span></li>
-<li><span id="592f"><strong>&lt;/ul&gt;</strong></span></li>
-</ol>
-<h3 id="inline-tags">Inline Tags</h3>
-<p>Many inline tags are used to format text. For example, a <strong>&lt;strong&gt;&lt;/strong&gt;</strong> tag would render an element in <strong>bold</strong>, whereas <em>&lt;em&gt;&lt;/em&gt;</em> tags would show it in <em>italics</em>.</p>
-<p>Hyperlinks are also inline elements that require <strong><em>&lt;a&gt;&lt;/a&gt;</em></strong> tags and <strong>href</strong> attributes to indicate the link’s destination:</p>
-<ol type="1">
-<li><span id="f67d"><strong>&lt;a</strong> <strong>href=</strong>”https://example.com/"<strong>&gt;</strong>Click me!<strong>&lt;/a&gt;</strong></span></li>
-</ol>
-<p>Images are inline elements too. You can add one using <strong><em>&lt;img&gt;</em></strong> without any closing tag. But you will also need to use the <strong><em>src</em></strong> attribute to specify the image path, for example:</p>
-<ol type="1">
-<li><span id="3924"><strong>&lt;img</strong> <strong>src=</strong>”/images/example.jpg” <strong>alt=</strong>”Example image”<strong>&gt;</strong></span></li>
-</ol>
-<h4 id="body-this-contains-everything-you-want-to-display-on-the-web-page."><strong>BODY</strong>: This contains everything you want to display on the Web Page.</h4>
-<pre><code>&lt;body&gt;
+        <p>HTML tags have two main types: <strong>block-level</strong> and <strong>inline tags</strong>.</p>
+        <ol type="1">
+            <li>
+                <span id="bd59"
+                    >Block-level elements take up the full available space and always start a new line in the document. Headings and paragraphs are a great
+                    example of block tags.</span
+                >
+            </li>
+            <li>
+                <span id="2479"
+                    >Inline elements only take up as much space as they need and don’t start a new line on the page. They usually serve to format the inner
+                    contents of block-level elements. Links and emphasized strings are good examples of inline tags.</span
+                >
+            </li>
+        </ol>
+        <h3 id="block-level-tags">Block-Level Tags</h3>
+        <p>
+            The three block level tags every HTML document needs to contain are <strong>&lt;html&gt;</strong>, <strong>&lt;head&gt;</strong>, and
+            <strong>&lt;body&gt;</strong>.
+        </p>
+        <ol type="1">
+            <li>
+                <span id="bd5d">The <strong>&lt;html&gt;&lt;/html&gt;</strong> tag is the highest level element that encloses every HTML page.</span>
+            </li>
+            <li>
+                <span id="c015">The <strong>&lt;head&gt;&lt;/head&gt;</strong> tag holds meta information such as the page’s title and charset.</span>
+            </li>
+            <li>
+                <span id="5ca8">Finally, the <strong>&lt;body&gt;&lt;/body&gt;</strong> tag encloses all the content that appears on the page.</span>
+            </li>
+        </ol>
+        <ul>
+            <li>
+                <span id="7864"
+                    >Paragraphs are enclosed by <strong><em>&lt;p&gt;&lt;/p&gt;</em></strong
+                    >, while blockquotes use the <strong><em>&lt;blockquote&gt;&lt;/blockquote&gt;</em></strong> tag.</span
+                >
+            </li>
+            <li>
+                <span id="82ad"
+                    >Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements.
+                    We can mark them up using the <strong><em>&lt;div&gt;&lt;/div&gt;</em></strong> tag. A div element can contain another div tag inside it as
+                    well.</span
+                >
+            </li>
+            <li>
+                <span id="39c6"
+                    >You may also use <strong><em>&lt;ol&gt;&lt;/ol&gt;</em></strong> tags for ordered lists and
+                    <strong><em>&lt;ul&gt;&lt;/ul&gt;</em></strong> for unordered ones. Individual list items must be enclosed by the
+                    <strong><em>&lt;li&gt;&lt;/li&gt;</em></strong> tag. For example, this is how a basic unordered list looks like in HTML:</span
+                >
+            </li>
+        </ul>
+        <ol type="1">
+            <li>
+                <span id="e470"><strong>&lt;ul&gt;</strong></span>
+            </li>
+            <li>
+                <span id="b8c5"><strong>&lt;li&gt;</strong>List item 1<strong>&lt;/li&gt;</strong></span>
+            </li>
+            <li>
+                <span id="3c1d"><strong>&lt;li&gt;</strong>List item 2<strong>&lt;/li&gt;</strong></span>
+            </li>
+            <li>
+                <span id="97b4"><strong>&lt;li&gt;</strong>List item 3<strong>&lt;/li&gt;</strong></span>
+            </li>
+            <li>
+                <span id="b59a"><strong>&lt;/ul&gt;</strong></span>
+            </li>
+        </ol>
+        <h3 id="structure-of-an-html-document"><strong>Structure of an HTML Document</strong></h3>
+        <p>An HTML Document is mainly divided into two parts:</p>
+        <ul>
+            <li>
+                <span id="0424"
+                    ><strong>HEAD</strong>: This contains the information about the HTML document. For Example, Title of the page, version of HTML, Meta-Data
+                    etc.</span
+                >
+            </li>
+        </ul>
+        <p>
+            HTML TAG Specifies an html document. The HTML element (or HTML root element) represents the root of an HTML document. All other elements must be
+            descendants of this element. Since the element is the first in a document, it is called the root element.
+        </p>
+        <p>Although this tag can be implied, or not required, with HTML, it is required to be opened and closed in XHTML.</p>
+        <ul>
+            <li>
+                <span id="83fe"
+                    >Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements.
+                    We can mark them up using the <strong><em>&lt;div&gt;&lt;/div&gt;</em></strong> tag. A div element can contain another div tag inside it as
+                    well.</span
+                >
+            </li>
+            <li>
+                <span id="9d53"
+                    >You may also use <strong><em>&lt;ol&gt;&lt;/ol&gt;</em></strong> tags for ordered lists and
+                    <strong><em>&lt;ul&gt;&lt;/ul&gt;</em></strong> for unordered ones. Individual list items must be enclosed by the
+                    <strong><em>&lt;li&gt;&lt;/li&gt;</em></strong> tag. For example, this is how a basic unordered list looks like in HTML:</span
+                >
+            </li>
+        </ul>
+        <ol type="1">
+            <li>
+                <span id="4097"><strong>&lt;ul&gt;</strong></span>
+            </li>
+            <li>
+                <span id="0103"><strong>&lt;li&gt;</strong>List item 1<strong>&lt;/li&gt;</strong></span>
+            </li>
+            <li>
+                <span id="1de2"><strong>&lt;li&gt;</strong>List item 2<strong>&lt;/li&gt;</strong></span>
+            </li>
+            <li>
+                <span id="dad0"><strong>&lt;li&gt;</strong>List item 3<strong>&lt;/li&gt;</strong></span>
+            </li>
+            <li>
+                <span id="592f"><strong>&lt;/ul&gt;</strong></span>
+            </li>
+        </ol>
+        <h3 id="inline-tags">Inline Tags</h3>
+        <p>
+            Many inline tags are used to format text. For example, a <strong>&lt;strong&gt;&lt;/strong&gt;</strong> tag would render an element in
+            <strong>bold</strong>, whereas <em>&lt;em&gt;&lt;/em&gt;</em> tags would show it in <em>italics</em>.
+        </p>
+        <p>
+            Hyperlinks are also inline elements that require <strong><em>&lt;a&gt;&lt;/a&gt;</em></strong> tags and <strong>href</strong> attributes to indicate
+            the link’s destination:
+        </p>
+        <ol type="1">
+            <li>
+                <span id="f67d"
+                    ><strong>&lt;a</strong> <strong>href=</strong>”https://example.com/"<strong>&gt;</strong>Click me!<strong>&lt;/a&gt;</strong></span
+                >
+            </li>
+        </ol>
+        <p>
+            Images are inline elements too. You can add one using <strong><em>&lt;img&gt;</em></strong> without any closing tag. But you will also need to use
+            the <strong><em>src</em></strong> attribute to specify the image path, for example:
+        </p>
+        <ol type="1">
+            <li>
+                <span id="3924"
+                    ><strong>&lt;img</strong> <strong>src=</strong>”/images/example.jpg” <strong>alt=</strong>”Example image”<strong>&gt;</strong></span
+                >
+            </li>
+        </ol>
+        <h4 id="body-this-contains-everything-you-want-to-display-on-the-web-page.">
+            <strong>BODY</strong>: This contains everything you want to display on the Web Page.
+        </h4>
+        <pre><code>&lt;body&gt;
 
 &lt;! — Everything the user sees on the webpage goes here! — ps… this is a comment →
 
 &lt;/body&gt;</code></pre>
-<p>Let us now have a look on the basic structure of HTML. That is the code which is must for every webpage to have:</p>
-<p><strong><em>&lt;!DOCTYPE html&gt;</em></strong></p>
-<h4 id="here-is-some-boilerplate-html-you-can-use-as-a-starting-pointevery-webpage-must-contain-this-code.">Here is some boilerplate html you can use as a starting point:!!Every Webpage must contain this code.!!</h4>
-<hr />
-<h3 id="doctype-html"><strong>&lt;!DOCTYPE html&gt;</strong></h3>
-<hr />
-<p>Below is the complete explanation of each of the tags used in the above piece of HTML code:</p>
-<p><strong>&lt;!DOCTYPE html&gt;:</strong> This tag is used to tells the HTML version. This currently tells that the version is HTML 5.</p>
-<blockquote>
-<p><strong><em>&lt;html&gt;</em>:</strong> This is called HTML root element and used to wrap all the code.</p>
-</blockquote>
-<blockquote>
-<p><strong>&lt;head&gt;:</strong> Head tag contains metadata, title, page CSS etc. All the HTML elements that can be used inside the &lt;head&gt; element are:</p>
-</blockquote>
-<blockquote>
-<p><strong>&lt;body&gt;:</strong> Body tag is used to enclosed all the data which a web page has from texts to links. All of the content that you see rendered in the browser is contained within this element.</p>
-</blockquote>
-<h3 id="bold-text">Bold Text:</h3>
-<p>&lt;b&gt; <strong>this is bold</strong> &lt;/b&gt;</p>
-<p>&lt;strong&gt; ⇐ this is for strong, emergency emotions.</p>
-<p>___________</p>
-<p><strong>HEADING/S:</strong></p>
-<p><em>6 types from largest(h1) to smallest (h6)</em></p>
-<p>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</p>
-<p>___________</p>
-<p><strong>ITALICS:</strong> There are two ways to use it, the first one is the &lt;i&gt; tag and the second one is the &lt;em&gt; tag. They both italicize the text<a href="https://emojipedia.org/person-shrugging/" class="markup--anchor markup--p-anchor">🤷</a></p>
-<p>&lt;i&gt; <em>this is fancy text that’s too good to for us</em>&lt;/i&gt;</p>
-<p>___________</p>
-<p><strong>PARAGRAPHS:</strong> In order to make Paragraphs, just add &lt;p&gt;.</p>
-<p>&lt;p&gt; Hi there my name is Jason. &lt;/p&gt;</p>
-<p>___________</p>
-<p><strong>TITLES: not the same thing as a heading (which renders on the html page) but instead the title element represents the title of the page as shown in the tab of the browser.</strong></p>
-<p>&lt;head&gt;</p>
-<p>As such &lt;title&gt;This is the title&lt;/title&gt; it is always found between &lt;head&gt; tags and not in the body of the page where all the content that gets rendered on the page is contained.</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*CSqPk3mD0fR-oOAb" class="graf-image" />
-</figure>
-<h3 id="heres-a-handy-cheat-sheet">Here’s a handy Cheat Sheet:</h3>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*c9Vyer_N97InJsUB.png" class="graf-image" />
-</figure>
-<p>Below I am going to Include a gist that contains html code that uses pretty much every tag I could think of off the top of my head…</p>
-<p>If it’s not included here I promise you it’s seldom used by most webpages.</p>
-<p>Below that I will embed an image of the webpage that it renders too….</p>
-<p>that super small text at the bottom is actually one giant button:</p>
-<figure>
-<img src="https://cdn-images-1.medium.com/max/2560/1*gdM-6smOEc2ChCI_8_Ql_g.png" class="graf-image" />
-</figure>
-<h3 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:</h3>
-<p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br /> <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br /> <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
-<h3 id="or-checkout-my-personal-resource-site">Or Checkout my personal Resource Site:</h3>
-<p><a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong><br /> <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
-<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/651d695f9bc">March 13, 2021</a>.</p>
-<p><a href="https://medium.com/@bryanguner/super-simple-intro-to-html-651d695f9bc" class="p-canonical">Canonical link</a></p>
-<p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
-</body>
+        <p>Let us now have a look on the basic structure of HTML. That is the code which is must for every webpage to have:</p>
+        <p>
+            <strong><em>&lt;!DOCTYPE html&gt;</em></strong>
+        </p>
+        <h4 id="here-is-some-boilerplate-html-you-can-use-as-a-starting-pointevery-webpage-must-contain-this-code.">
+            Here is some boilerplate html you can use as a starting point:!!Every Webpage must contain this code.!!
+        </h4>
+        <hr />
+        <h3 id="doctype-html"><strong>&lt;!DOCTYPE html&gt;</strong></h3>
+        <hr />
+        <p>Below is the complete explanation of each of the tags used in the above piece of HTML code:</p>
+        <p><strong>&lt;!DOCTYPE html&gt;:</strong> This tag is used to tells the HTML version. This currently tells that the version is HTML 5.</p>
+        <blockquote>
+            <p>
+                <strong><em>&lt;html&gt;</em>:</strong> This is called HTML root element and used to wrap all the code.
+            </p>
+        </blockquote>
+        <blockquote>
+            <p>
+                <strong>&lt;head&gt;:</strong> Head tag contains metadata, title, page CSS etc. All the HTML elements that can be used inside the &lt;head&gt;
+                element are:
+            </p>
+        </blockquote>
+        <blockquote>
+            <p>
+                <strong>&lt;body&gt;:</strong> Body tag is used to enclosed all the data which a web page has from texts to links. All of the content that you
+                see rendered in the browser is contained within this element.
+            </p>
+        </blockquote>
+        <h3 id="bold-text">Bold Text:</h3>
+        <p>&lt;b&gt; <strong>this is bold</strong> &lt;/b&gt;</p>
+        <p>&lt;strong&gt; ⇐ this is for strong, emergency emotions.</p>
+        <p>___________</p>
+        <p><strong>HEADING/S:</strong></p>
+        <p><em>6 types from largest(h1) to smallest (h6)</em></p>
+        <p>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</p>
+        <p>___________</p>
+        <p>
+            <strong>ITALICS:</strong> There are two ways to use it, the first one is the &lt;i&gt; tag and the second one is the &lt;em&gt; tag. They both
+            italicize the text<a href="https://emojipedia.org/person-shrugging/" class="markup--anchor markup--p-anchor">🤷</a>
+        </p>
+        <p>&lt;i&gt; <em>this is fancy text that’s too good to for us</em>&lt;/i&gt;</p>
+        <p>___________</p>
+        <p><strong>PARAGRAPHS:</strong> In order to make Paragraphs, just add &lt;p&gt;.</p>
+        <p>&lt;p&gt; Hi there my name is Jason. &lt;/p&gt;</p>
+        <p>___________</p>
+        <p>
+            <strong
+                >TITLES: not the same thing as a heading (which renders on the html page) but instead the title element represents the title of the page as
+                shown in the tab of the browser.</strong
+            >
+        </p>
+        <p>&lt;head&gt;</p>
+        <p>
+            As such &lt;title&gt;This is the title&lt;/title&gt; it is always found between &lt;head&gt; tags and not in the body of the page where all the
+            content that gets rendered on the page is contained.
+        </p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*CSqPk3mD0fR-oOAb" class="graf-image" />
+        </figure>
+        <h3 id="heres-a-handy-cheat-sheet">Here’s a handy Cheat Sheet:</h3>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*c9Vyer_N97InJsUB.png" class="graf-image" />
+        </figure>
+        <p>Below I am going to Include a gist that contains html code that uses pretty much every tag I could think of off the top of my head…</p>
+        <p>If it’s not included here I promise you it’s seldom used by most webpages.</p>
+        <p>Below that I will embed an image of the webpage that it renders too….</p>
+        <p>that super small text at the bottom is actually one giant button:</p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/2560/1*gdM-6smOEc2ChCI_8_Ql_g.png" class="graf-image" />
+        </figure>
+        <h3 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">
+            If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+        </h3>
+        <p>
+            <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"
+                ><strong>bgoonz’s gists</strong><br />
+                <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em
+                >gist.github.com</a
+            ><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>
+            <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"
+                ><strong>bgoonz — Overview</strong><br />
+                <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a
+            ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <h3 id="or-checkout-my-personal-resource-site">Or Checkout my personal Resource Site:</h3>
+        <p>
+            <a
+                href="https://web-dev-resource-hub.netlify.app/"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://web-dev-resource-hub.netlify.app/"
+                ><strong>Web-Dev-Hub</strong><br />
+                <em>Edit description</em>web-dev-resource-hub.netlify.app</a
+            ><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+        </p>
+        <p>
+            By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+            <a href="https://medium.com/p/651d695f9bc">March 13, 2021</a>.
+        </p>
+        <p><a href="https://medium.com/@bryanguner/super-simple-intro-to-html-651d695f9bc" class="p-canonical">Canonical link</a></p>
+        <p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+    </body>
 </html>

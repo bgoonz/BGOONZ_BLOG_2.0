@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Express-Quick</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="express-quick-sheet">Express Quick Sheet</h1>
-<p>Settings</p>
-<hr />
-<h3 id="express-quick-sheet-1">Express Quick Sheet</h3>
-<h3 id="settings">Settings</h3>
-<pre><code>app.set(&#39;x&#39;, &#39;yyy&#39;)
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>Express-Quick</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="express-quick-sheet">Express Quick Sheet</h1>
+        <p>Settings</p>
+        <hr />
+        <h3 id="express-quick-sheet-1">Express Quick Sheet</h3>
+        <h3 id="settings">Settings</h3>
+        <pre><code>app.set(&#39;x&#39;, &#39;yyy&#39;)
 app.get(&#39;x&#39;) //=&gt; &#39;yyy&#39;
 
 app.enable(&#39;trust proxy&#39;)
 app.disable(&#39;trust proxy&#39;)
 
 app.enabled(&#39;trust proxy&#39;) //=&gt; true</code></pre>
-<h3 id="enviorment">Enviorment</h3>
-<pre><code>app.get(&#39;env&#39;)</code></pre>
-<h3 id="config">Config</h3>
-<pre><code>app.configure(&#39;production&#39;, function() {
+        <h3 id="enviorment">Enviorment</h3>
+        <pre><code>app.get(&#39;env&#39;)</code></pre>
+        <h3 id="config">Config</h3>
+        <pre><code>app.configure(&#39;production&#39;, function() {
   app.set...
 })</code></pre>
-<h3 id="wares">Wares</h3>
-<pre><code>app.use(express.static(__dirname + &#39;/public&#39;))
+        <h3 id="wares">Wares</h3>
+        <pre><code>app.use(express.static(__dirname + &#39;/public&#39;))
 app.use(express.logger())</code></pre>
-<h3 id="helpers">Helpers</h3>
-<pre><code>app.locals({
+        <h3 id="helpers">Helpers</h3>
+        <pre><code>app.locals({
   title: &quot;MyApp&quot;,
 })</code></pre>
-<hr />
-<h3 id="request-response">Request &amp; response</h3>
-<h3 id="request">Request</h3>
-<pre><code>// GET  /user/tj
+        <hr />
+        <h3 id="request-response">Request &amp; response</h3>
+        <h3 id="request">Request</h3>
+        <pre><code>// GET  /user/tj
 req.path         //=&gt; &quot;/user/tj&quot;
 req.url          //=&gt; &quot;/user/tj&quot;
 req.xhr          //=&gt; true|false
@@ -67,8 +77,8 @@ req.headers[&#39;host&#39;]
 req.headers[&#39;user-agent&#39;]
 req.headers[&#39;accept-encoding&#39;]
 req.headers[&#39;accept-language&#39;]</code></pre>
-<h3 id="response">Response</h3>
-<pre><code>res.redirect(&#39;/&#39;)
+        <h3 id="response">Response</h3>
+        <pre><code>res.redirect(&#39;/&#39;)
 res.redirect(301, &#39;/&#39;)
 
 res.set(&#39;Content-Type&#39;, &#39;text/html&#39;)
@@ -77,8 +87,11 @@ res.send(&#39;hi&#39;)
 res.send(200, &#39;hi&#39;)
 
 res.json({ a: 2 })</code></pre>
-<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/8f93762c59ca">March 5, 2021</a>.</p>
-<p><a href="https://medium.com/@bryanguner/express-quick-sheet-8f93762c59ca" class="p-canonical">Canonical link</a></p>
-<p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
-</body>
+        <p>
+            By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+            <a href="https://medium.com/p/8f93762c59ca">March 5, 2021</a>.
+        </p>
+        <p><a href="https://medium.com/@bryanguner/express-quick-sheet-8f93762c59ca" class="p-canonical">Canonical link</a></p>
+        <p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+    </body>
 </html>
