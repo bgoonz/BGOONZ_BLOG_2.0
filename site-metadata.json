@@ -55,7 +55,7 @@
                     },
                     {
                         "label": "Experimental",
-                        "url": "docs/experimental/embed",
+                        "url": "docs/experimental/embed.md",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
