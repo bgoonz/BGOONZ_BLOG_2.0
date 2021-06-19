@@ -2,7 +2,7 @@
 
 title: embed
 weight: 0
-excerpt: resources
+excerpt: embeds
 seo:
     title: ''
     description: ''
