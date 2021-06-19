@@ -144,7 +144,8 @@ models:
         items:
           type: slug
     description: my documentation collection
-    match: '*.md'
+    match:
+      - '*.md'
   docs:
     type: page
     urlPath: /docs/{slug}
@@ -677,3 +678,7 @@ models:
         description: iframe inclusions
         required: true
         label: Iframe
+  embed:
+    type: page
+    label: embed
+    layout: embed
