@@ -18,7 +18,7 @@
                 "has_subnav": false
             },
             {
-                "url": "docs/My-Content/my-websites/",
+                "url": "docs/My-Content/my-websites",
                 "label": "Navigation",
                 "style": "link",
                 "icon_class": "dev",
