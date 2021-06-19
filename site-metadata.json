@@ -64,7 +64,7 @@
                     },
                     {
                         "label": "extra",
-                        "url": "#",
+                        "url": "/docs/extra",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
