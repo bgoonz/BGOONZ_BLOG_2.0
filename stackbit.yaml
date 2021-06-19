@@ -687,4 +687,5 @@ models:
     match: '*.md'
     fields:
       - name: content
-        type: string
+        type: html
+        label: iframe
