@@ -2,99 +2,88 @@
 
 Settings
 
-## Express Quick Sheet
+---
 
-## Settings
+### Express Quick Sheet
 
-```text
-app.set('x', 'yyy')
-app.get('x') //=> 'yyy'
+### Settings
 
-app.enable('trust proxy')
-app.disable('trust proxy')
+    app.set('x', 'yyy')
+    app.get('x') //=> 'yyy'
 
-app.enabled('trust proxy') //=> true
-```
+    app.enable('trust proxy')
+    app.disable('trust proxy')
 
-## Enviorment
+    app.enabled('trust proxy') //=> true
 
-```text
-app.get('env')
-```
+### Enviorment
 
-## Config
+    app.get('env')
 
-```text
-app.configure('production', function() {
-  app.set...
-})
-```
+### Config
 
-## Wares
+    app.configure('production', function() {
+      app.set...
+    })
 
-```text
-app.use(express.static(__dirname + '/public'))
-app.use(express.logger())
-```
+### Wares
 
-## Helpers
+    app.use(express.static(__dirname + '/public'))
+    app.use(express.logger())
 
-```text
-app.locals({
-  title: "MyApp",
-})
-```
+### Helpers
 
-## Request & response
+    app.locals({
+      title: "MyApp",
+    })
 
-## Request
+---
 
-```text
-// GET  /user/tj
-req.path         //=> "/user/tj"
-req.url          //=> "/user/tj"
-req.xhr          //=> true|false
-req.method       //=> "GET"
-req.params
-req.params.name  //=> "tj"
-req.params[0]
+### Request & response
 
-// GET /search?q=tobi+ferret
-req.query.q // => "tobi ferret"
+### Request
 
-req.cookies
+    // GET  /user/tj
+    req.path         //=> "/user/tj"
+    req.url          //=> "/user/tj"
+    req.xhr          //=> true|false
+    req.method       //=> "GET"
+    req.params
+    req.params.name  //=> "tj"
+    req.params[0]
 
-req.accepted
-// [ { value: 'application/json', quality: 1, type: 'application', subtype: 'json' },
-//   { value: 'text/html', quality: 0.5, type: 'text',subtype: 'html' } ]
+    // GET /search?q=tobi+ferret
+    req.query.q // => "tobi ferret"
 
-req.is('html')
-req.is('text/html')
+    req.cookies
 
-req.headers
-req.headers['host']
-req.headers['user-agent']
-req.headers['accept-encoding']
-req.headers['accept-language']
-```
+    req.accepted
+    // [ { value: 'application/json', quality: 1, type: 'application', subtype: 'json' },
+    //   { value: 'text/html', quality: 0.5, type: 'text',subtype: 'html' } ]
 
-## Response
+    req.is('html')
+    req.is('text/html')
 
-```text
-res.redirect('/')
-res.redirect(301, '/')
+    req.headers
+    req.headers['host']
+    req.headers['user-agent']
+    req.headers['accept-encoding']
+    req.headers['accept-language']
 
-res.set('Content-Type', 'text/html')
+### Response
 
-res.send('hi')
-res.send(200, 'hi')
+    res.redirect('/')
+    res.redirect(301, '/')
 
-res.json({ a: 2 })
-```
+    res.set('Content-Type', 'text/html')
 
-By [Bryan Guner](https://medium.com/@bryanguner) on [March 5, 2021](https://medium.com/p/8f93762c59ca).
+    res.send('hi')
+    res.send(200, 'hi')
 
-[Canonical link](https://medium.com/@bryanguner/express-quick-sheet-8f93762c59ca)
+    res.json({ a: 2 })
+
+By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 5, 2021](https://medium.com/p/8f93762c59ca).
+
+<a href="https://medium.com/@bryanguner/express-quick-sheet-8f93762c59ca" class="p-canonical">Canonical link</a>
 
 Exported from [Medium](https://medium.com) on May 23, 2021.
-

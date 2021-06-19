@@ -41,11 +41,11 @@ If you look at `ProductTable` , you’ll see that the table header \(containing 
 
 Now that we’ve identified the components in our mock, let’s arrange them into a hierarchy. Components that appear within another component in the mock should appear as a child in the hierarchy:
 
-* `FilterableProductTable`
-  * `SearchBar`
-  * `ProductTable`
-    * `ProductCategoryRow`
-    * `ProductRow`
+-   `FilterableProductTable`
+    -   `SearchBar`
+    -   `ProductTable`
+        -   `ProductCategoryRow`
+        -   `ProductRow`
 
 ## Step 2: Build A Static Version in React
 
@@ -71,10 +71,10 @@ To build your app correctly, you first need to think of the minimal set of mutab
 
 Think of all of the pieces of data in our example application. We have:
 
-* The original list of products
-* The search text the user has entered
-* The value of the checkbox
-* The filtered list of products
+-   The original list of products
+-   The search text the user has entered
+-   The value of the checkbox
+-   The filtered list of products
 
 Let’s go through each one and figure out which one is state. Ask three questions about each piece of data:
 
@@ -86,27 +86,27 @@ The original list of products is passed in as props, so that’s not state. The 
 
 So finally, our state is:
 
-* The search text the user has entered
-* The value of the checkbox
+-   The search text the user has entered
+-   The value of the checkbox
 
 ## Step 4: Identify Where Your State Should Live
 
 OK, so we’ve identified what the minimal set of app state is. Next, we need to identify which component mutates, or _owns_, this state.
 
-Remember: React is all about one-way data flow down the component hierarchy. It may not be immediately clear which component should own what state. **This is often the most challenging part for newcomers to understand,**  so follow these steps to figure it out:
+Remember: React is all about one-way data flow down the component hierarchy. It may not be immediately clear which component should own what state. **This is often the most challenging part for newcomers to understand, ** so follow these steps to figure it out:
 
 For each piece of state in your application:
 
-* Identify every component that renders something based on that state.
-* Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
-* Either the common owner or another component higher up in the hierarchy should own the state.
-* If you can’t find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
+-   Identify every component that renders something based on that state.
+-   Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
+-   Either the common owner or another component higher up in the hierarchy should own the state.
+-   If you can’t find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
 
 Let’s run through this strategy for our application:
 
-* `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
-* The common owner component is `FilterableProductTable`.
-* It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
+-   `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
+-   The common owner component is `FilterableProductTable`.
+-   It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
 
 Cool, so we’ve decided that our state lives in `FilterableProductTable` . First, add an instance property `this.state = {filterText: '', inStockOnly: false}` to `FilterableProductTable` ’s `constructor` to reflect the initial state of your application. Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as a prop. Finally, use these props to filter the rows in `ProductTable` and set the values of the form fields in `SearchBar` .
 
@@ -125,4 +125,3 @@ Let’s think about what we want to happen. We want to make sure that whenever t
 ## And That’s It
 
 Hopefully, this gives you an idea of how to think about building components and applications with React. While it may be a little more typing than you’re used to, remember that code is read far more than it’s written, and it’s less difficult to read this modular, explicit code. As you start to build large libraries of components, you’ll appreciate this explicitness and modularity, and with code reuse, your lines of code will start to shrink. :\)
-
