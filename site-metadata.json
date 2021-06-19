@@ -55,7 +55,7 @@
                     },
                     {
                         "label": "Experimental",
-                        "url": "docs/experimental/",
+                        "url": "docs/experimental/index",
                         "style": "secondary",
                         "icon_class": "dev",
                         "new_window": true,
