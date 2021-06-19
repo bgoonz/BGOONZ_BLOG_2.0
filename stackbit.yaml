@@ -684,3 +684,7 @@ models:
     layout: embed
     description: embedded assets
     folder: /docs/Experimental
+    match: '*.md'
+    fields:
+      - name: content
+        type: string
