@@ -63,7 +63,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "extra",
+                        "label": "ds-algo",
                         "url": "/docs/ds-algo-overview",
                         "style": "secondary",
                         "icon_class": "dev",
