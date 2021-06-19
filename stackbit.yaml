@@ -683,3 +683,4 @@ models:
     label: embed
     layout: embed
     description: embedded assets
+    folder: /docs/Experimental
