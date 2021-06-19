@@ -253,6 +253,11 @@ sections:
         new_window: true
         no_follow: false
         type: action
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    subtitle: lorem-ipsum
+    actions: []
+    type: section_cta
 seo:
   title: Stackbit Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
