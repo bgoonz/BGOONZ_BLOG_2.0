@@ -1,4 +1,17 @@
 ---
+
+title: embed
+weight: 0
+excerpt: resources
+seo:
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+
+
 content: '<iframe height="900px" width="100%" src="https://replit.com/@bgoonz/live-examples-1?lite=true" scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 <iframe height="900px" width="100%" src="https://replit.com/@bgoonz/DS-ALGO-OFFICIAL?lite=true" scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
