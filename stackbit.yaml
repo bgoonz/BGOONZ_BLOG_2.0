@@ -689,3 +689,4 @@ models:
       - name: content
         type: html
         label: iframe
+        description: embed content
