@@ -28,7 +28,7 @@ content: '<iframe height="900px" width="100%" src="https://replit.com/@bgoonz/li
 
 <iframe height="900" style="width: 90%;" scrolling="no" title="Responsive Design" src="https://codepen.io/bgoonz/embed/RwKJQjR?height=265&amp;theme-id=dark&amp;default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
  '
-template: embed
+
 ---
 ## Lorem ipsum
 
