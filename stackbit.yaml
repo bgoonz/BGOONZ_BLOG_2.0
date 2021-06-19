@@ -682,3 +682,4 @@ models:
     type: page
     label: embed
     layout: embed
+    description: embedded assets
