@@ -226,7 +226,7 @@ sections:
     section_id: blog
     image_alt: blog
     image_position: left
-    content: >-
+    content: |-
       <iframe width="800" height="575"
        src="https://blog-w-comments.vercel.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -238,7 +238,7 @@ sections:
     actions:
       - label: Contact
         url: '#'
-        style: link
+        style: primary
         icon_class: dev
         new_window: false
         no_follow: false
