@@ -200,7 +200,7 @@
                 "has_subnav": false
             },
             {
-                "label": "lorem-ipsum",
+                "label": "Theme Switcher",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
