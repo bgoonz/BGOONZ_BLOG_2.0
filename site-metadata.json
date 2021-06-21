@@ -73,7 +73,7 @@
                     },
                     {
                         "label": "Personal-Blog",
-                        "url": "#",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
