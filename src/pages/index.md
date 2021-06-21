@@ -239,7 +239,7 @@ sections:
       - dolor sit amet
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Contact
     section_id: lorem-ipsum
     actions: []
     type: section_cta
