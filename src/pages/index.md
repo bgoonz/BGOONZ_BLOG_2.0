@@ -223,8 +223,8 @@ sections:
     actions: []
     type: section_content
   - title: Blog
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
+    section_id: blog
+    image_alt: blog
     image_position: left
     content: >-
       ## Lorem ipsum
