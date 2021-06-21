@@ -222,32 +222,6 @@ sections:
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    subtitle: lorem-ipsum
-    col_number: three
-    type: section_docs
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    content: ''
-    actions: []
-    type: section_hero
-  - section_id: cta
-    type: section_cta
-    title: Contact Me!
-    subtitle: Contact me
-    actions:
-      - label: Send Email
-        url: 'mailto:bryan.guner@gmail.com'
-        style: primary
-        new_window: true
-      - label: Contact Form
-        url: 'https://bgoonz-blog-v3-0.netlify.app/contact/'
-        style: primary
-        icon_class: dev
-        new_window: true
-        no_follow: false
-        type: action
 seo:
   title: Stackbit Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
