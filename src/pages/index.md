@@ -239,6 +239,11 @@ sections:
       - dolor sit amet
     actions: []
     type: section_content
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    subtitle: lorem-ipsum
+    actions: []
+    type: section_cta
 seo:
   title: Stackbit Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
