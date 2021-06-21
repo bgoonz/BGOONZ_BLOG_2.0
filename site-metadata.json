@@ -209,7 +209,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Side Bar",
+                        "label": "Side Bar Theme",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
