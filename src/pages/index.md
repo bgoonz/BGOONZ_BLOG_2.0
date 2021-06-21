@@ -228,7 +228,7 @@ sections:
     image_position: left
     content: >-
             <iframe width="800" height="575"
-       src="https://stackblitz.com/edit/sdk-github-project-earatb?devtoolsheight=33\&embed=1\&file=index.ts" title="YouTube video
+       src="https://blog-w-comments.vercel.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
