@@ -74,7 +74,7 @@
                     {
                         "label": "Personal-Blog",
                         "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                        "style": "link",
+                        "style": "icon",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
