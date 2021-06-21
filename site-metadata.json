@@ -70,6 +70,15 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "alt-blogs",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
                     }
                 ],
                 "type": "action_menu"
