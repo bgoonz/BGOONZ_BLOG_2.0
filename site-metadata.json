@@ -72,7 +72,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Personal-Blog",
+                        "label": "alt-blogs",
                         "url": "https://bgoonz-blog-v3-0.netlify.app/",
                         "style": "secondary",
                         "icon_class": "dev",
