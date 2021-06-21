@@ -27,7 +27,7 @@ sections:
       - content: >
           *Python has a built in help function that let’s you see a description
           of the source code without having to navigate to it… “-SickNasty …
-          Autor Unknown”*
+          Autor Unknown”  .*
         actions:
           - label: View Posts
             url: >-
