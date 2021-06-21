@@ -222,6 +222,16 @@ sections:
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    subtitle: lorem-ipsum
+    col_number: three
+    type: section_docs
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    content: ''
+    actions: []
+    type: section_hero
   - section_id: cta
     type: section_cta
     title: Contact Me!
