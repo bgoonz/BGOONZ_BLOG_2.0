@@ -242,7 +242,7 @@ sections:
   - title: Contact
     section_id: lorem-ipsum
     actions:
-      - label: lorem-ipsum
+      - label: Contact
         url: '#'
         style: link
         icon_class: dev
