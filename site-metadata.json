@@ -206,7 +206,7 @@
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
-                "has_subnav": false,
+                "has_subnav": true,
                 "subnav_links": [],
                 "type": "action_menu"
             }
