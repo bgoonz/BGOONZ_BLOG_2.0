@@ -155,7 +155,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Gallery",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
