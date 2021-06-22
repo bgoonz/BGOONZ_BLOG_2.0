@@ -284,9 +284,18 @@
                         "type": "action"
                     },
                     {
-                        "label": "CoverLetter",
+                        "label": "Cover Letter",
                         "url": "https://bgoonz-cv.netlify.app/",
                         "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
