@@ -159,7 +159,7 @@
                 "has_subnav": false,
                 "subnav_links": [
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Goal Setter",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
