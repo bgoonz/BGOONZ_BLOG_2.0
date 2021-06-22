@@ -125,6 +125,7 @@ sections:
 
         actions: []
         type: grid_item
+        image: images/jam.PNG
     type: section_grid
   - section_id: features-two-col
     type: section_grid
