@@ -108,17 +108,21 @@ sections:
       - title: Jamstack
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >+
+          ## Why Jamstack
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+          **The Jamstack architecture has many benefits, whether you’re building
+          a large e-commerce site, SaaS application or personal blog.**
 
 
-          - Lorem ipsum
+          Jamstack is the new standard architecture for the web. Using Git
+          workflows and modern build tools, pre-rendered content is served to a
+          CDN and made dynamic through APIs and serverless functions.
+          Technologies in the stack include JavaScript frameworks, Static Site
+          Generators, Headless CMSs, and CDNs.
 
-          - dolor sit amet
         actions: []
         type: grid_item
     type: section_grid
