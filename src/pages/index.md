@@ -108,21 +108,15 @@ sections:
       - title: Jamstack
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >+
+        content: >
           ## Why Jamstack
 
 
-
-          **The Jamstack architecture has many benefits, whether you’re building
-          a large e-commerce site, SaaS application or personal blog.**
-
-
-          Jamstack is the new standard architecture for the web. Using Git
+          *Jamstack is the new standard architecture for the web. Using Git
           workflows and modern build tools, pre-rendered content is served to a
           CDN and made dynamic through APIs and serverless functions.
           Technologies in the stack include JavaScript frameworks, Static Site
-          Generators, Headless CMSs, and CDNs.
-
+          Generators, Headless CMSs, and CDNs.*
         actions: []
         type: grid_item
         image: images/jamstack.png
