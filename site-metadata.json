@@ -156,7 +156,7 @@
                     },
                     {
                         "label": "Gallery",
-                        "url": "/gal",
+                        "url": "/gallery",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
