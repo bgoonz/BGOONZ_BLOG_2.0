@@ -161,7 +161,7 @@
                     {
                         "label": "Goal Setter",
                         "url": "https://splendid-onion-b0ec3.netlify.app/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
