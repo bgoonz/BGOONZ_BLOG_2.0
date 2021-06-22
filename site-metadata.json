@@ -277,7 +277,7 @@
                     {
                         "label": "Single Page Theme",
                         "url": "#",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -285,8 +285,8 @@
                     },
                     {
                         "label": "CoverLetter",
-                        "url": "#",
-                        "style": "link",
+                        "url": "https://bgoonz-cv.netlify.app/",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
