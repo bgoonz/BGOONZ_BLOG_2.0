@@ -146,7 +146,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "OG-Blog",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
