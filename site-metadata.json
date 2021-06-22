@@ -213,7 +213,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "PotluckPlanner",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
