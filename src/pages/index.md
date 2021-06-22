@@ -90,7 +90,7 @@ sections:
 
           [Full Text Search](https://www.algolia.com/)
 
-          ## &#xA;![](/\_static/app-assets/spectacular-turmeric.png)
+          ## &#xA;
         actions: []
         type: grid_item
         image: images/spectacular-turmeric.png
