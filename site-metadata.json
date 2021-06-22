@@ -83,7 +83,7 @@
                     {
                         "label": "Games",
                         "url": "https://tetris42.netlify.app/",
-                        "style": "primary",
+                        "style": "secondary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
