@@ -105,7 +105,7 @@ sections:
         actions: []
         type: grid_item
         image: images/neural.PNG
-      - title: lorem-ipsum
+      - title: Jamstack
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
