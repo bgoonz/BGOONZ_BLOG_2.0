@@ -160,7 +160,7 @@
                 "subnav_links": [
                     {
                         "label": "Goal Setter",
-                        "url": "#",
+                        "url": "https://splendid-onion-b0ec3.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
