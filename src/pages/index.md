@@ -188,7 +188,7 @@ sections:
     section_id: lorem-ipsum
     actions:
       - label: Contact
-        url: '#'
+        url: bryan.guner@gmail.com
         style: primary
         icon_class: dev
         new_window: false
