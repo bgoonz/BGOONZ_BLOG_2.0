@@ -295,7 +295,7 @@
                     {
                         "label": "Project Centric",
                         "url": "https://curious-zebra-a1329.netlify.app/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
