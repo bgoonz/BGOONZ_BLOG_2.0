@@ -211,7 +211,7 @@
                     {
                         "label": "Side Bar Theme",
                         "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
