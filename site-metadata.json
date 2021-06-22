@@ -147,7 +147,7 @@
                     },
                     {
                         "label": "OG-Blog",
-                        "url": "#",
+                        "url": "https://web-dev-resource-hub.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
