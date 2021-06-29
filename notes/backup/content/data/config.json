@@ -3,9 +3,9 @@
     "path_prefix": "/",
     "palette": "blue",
     "header": {
-        "title": "Libris",
+        "title": "Bgoonz",
         "logo_img": "images/logo.svg",
-        "logo_img_alt": "Libris logo",
+        "logo_img_alt": "Bgoonz logo",
         "has_nav": true,
         "nav_links": [
             {
