@@ -202,14 +202,14 @@ sections:
         type: action
     type: section_cta
 seo:
-  title: Stackbit Web-Dev-HubTheme
+  title:  Web-Dev-HubTheme
   description: The preview of the Web-Dev-Hubtheme
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Stackbit Web-Dev-HubTheme
+      value:  Web-Dev-HubTheme
       keyName: property
     - name: 'og:description'
       value: The preview of the Web-Dev-Hubtheme
@@ -221,7 +221,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Stackbit Web-Dev-HubTheme
+      value:  Web-Dev-HubTheme
     - name: 'twitter:description'
       value: The preview of the Web-Dev-Hubtheme
     - name: 'twitter:image'
