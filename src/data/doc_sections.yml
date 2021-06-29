@@ -1,9 +1,8 @@
 root_docs_path: /docs
 sections:
-- About
+- about
 - faq
 - links
-- My-Content 
 - portfolio
 - quick-reference
 - react
