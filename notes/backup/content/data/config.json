@@ -59,7 +59,7 @@
         ]
     },
     "footer": {
-        "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://bgoonz-blog.netlify.app\"  rel=\"noopener\">now</a>",
+        "content": "&copy; Bryan Guner Jamstack Blog <a href=\"https://bgoonz-blog.netlify.app\"  rel=\"noopener\">now</a>",
         "has_social": true,
         "social_links": [
             {
