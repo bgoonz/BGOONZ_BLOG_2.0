@@ -102,14 +102,14 @@ sections:
             url: /docs/getting-started/installation
             style: primary
 seo:
-    title: Stackbit Libris Theme
+    title: Bryan Guner Blog
     description: The preview of the Libris theme
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value: Stackbit Libris Theme
+          value: Bryan Guner Blog
           keyName: property
         - name: 'og:description'
           value: The preview of the Libris theme
@@ -121,7 +121,7 @@ seo:
         - name: 'twitter:card'
           value: summary_large_image
         - name: 'twitter:title'
-          value: Stackbit Libris Theme
+          value: Bryan Guner Blog
         - name: 'twitter:description'
           value: The preview of the Libris theme
         - name: 'twitter:image'
