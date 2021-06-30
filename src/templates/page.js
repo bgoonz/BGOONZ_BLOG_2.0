@@ -1,6 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
+import AddThis from './hooks/AddThis'
+
 
 import { Layout } from '../components/index';
 import { toStyleObj, withPrefix, htmlToReact } from '../utils';
