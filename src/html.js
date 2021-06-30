@@ -5,8 +5,6 @@ import AddThis from './hooks/AddThis'
 
 const ShareButtons = props => {
   useScript('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946');
-
-
 }
 
 
