@@ -678,7 +678,7 @@ models:
         description: iframe inclusions
         required: true
         label: Iframe
-      - name: ''
+      - name: description
         type: string
   embed:
     type: page
