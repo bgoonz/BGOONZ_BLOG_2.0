@@ -47,6 +47,9 @@ export default class Page extends React.Component {
                         <div className="post-content">{htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
                     </div>
                 </article>
+                <div>
+
+                </div>
             </Layout>
         );
     }
