@@ -1,5 +1,4 @@
 import React from 'react';
-import useScript from 'hooks/useScript';
 
 import { Helmet } from 'react-helmet';
 import _ from 'lodash';
