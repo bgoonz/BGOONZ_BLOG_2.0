@@ -1,11 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import AddThis from './hooks/AddThis'
-
-const ShareButtons = props => {
-  useScript('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946');
-}
 
 
 export default function HTML(props) {
