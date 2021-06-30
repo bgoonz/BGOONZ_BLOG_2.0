@@ -4,7 +4,7 @@ import _ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
-import git
+import github-corner from './'
 export default class Header extends React.Component {
     render() {
         return (
