@@ -678,13 +678,16 @@ models:
         description: iframe inclusions
         required: true
         label: Iframe
+      - name: ''
+        type: string
   embed:
     type: page
     label: embed
     layout: embed
     description: embedded assets
     folder: /docs/Experimental
-    match: '*.md'
+    match:
+      - '*.md'
     fields:
       - name: content
         type: html
