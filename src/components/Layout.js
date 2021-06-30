@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Helmet } from 'react-helmet';
 import _ from 'lodash';
 
@@ -6,7 +7,12 @@ import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
+import AddThis from './../hooks/AddThis';
+export const ShareButtons = props => {
+  useScript('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946');
 
+
+}
 export default class Body extends React.Component {
     render() {
         return (
@@ -51,6 +57,16 @@ export default class Body extends React.Component {
                     </main>
                     <Footer {...this.props} />
                 </div>
+
+ <div >
+            <Helmet>
+                <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+                <script>try{Typekit.load({ async: true })}catch(e){}</script>
+            </Helmet>
+           
+        </div>
+
+              
             </React.Fragment>
         );
     }
