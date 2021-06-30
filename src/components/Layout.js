@@ -58,7 +58,13 @@ export default class Body extends React.Component {
                     <Footer {...this.props} />
                 </div>
 <div>
-
+ <div className="application">
+            <Helmet>
+                <script src="https://use.typekit.net/foobar.js"></script>
+                <script>try{Typekit.load({ async: true });}catch(e){}</script>
+            </Helmet>
+            ...
+        </div>
 
                 </div>
             </React.Fragment>
