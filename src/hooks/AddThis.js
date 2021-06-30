@@ -16,3 +16,14 @@ const useScript = url => {
 };
 
 export default useScript;
+
+/*
+import useScript from 'hooks/useScript';
+
+const MyComponent = props => {
+  useScript('https://use.typekit.net/foobar.js');
+
+  // rest of your component
+}
+
+*/
