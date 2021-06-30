@@ -90,9 +90,7 @@ export default class Header extends React.Component {
           </path>
         </svg>
       </a>
-    );
-  }
-}
+    
                 </div>
             </header>
         );
