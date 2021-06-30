@@ -2,7 +2,7 @@
 title: lorem-ipsum
 sections:
   - title: lorem-ipsum
-    section_id: lorem-ipsum
+    section_id: gallery
     subtitle: Images
     col_number: three
     grid_items:
