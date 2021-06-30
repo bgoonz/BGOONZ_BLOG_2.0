@@ -3,7 +3,7 @@ title: lorem-ipsum
 sections:
   - title: lorem-ipsum
     section_id: lorem-ipsum
-    subtitle: lorem-ipsum
+    subtitle: Images
     col_number: three
     grid_items:
       - title: lorem-ipsum
