@@ -61,7 +61,7 @@ export default class Body extends React.Component {
  <div className="application">
             <Helmet>
                 <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
-                <script>try{Typekit.load({ async: true });}catch(e){}</script>
+                <script>try{Typekit.load({ async: true })}catch(e){}</script>
             </Helmet>
            
         </div>
