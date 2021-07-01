@@ -90,7 +90,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Pages",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
