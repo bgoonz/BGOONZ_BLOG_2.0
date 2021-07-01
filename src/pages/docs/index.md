@@ -23,68 +23,78 @@ template: docs
 weight: 900
 excerpt: docs quick reference
 ---
-[**/blog/**](https://bgoonz-blog.netlify.app/blog/)
 
-*   [**/docs/**](https://bgoonz-blog.netlify.app/docs/)
-
-*   [**/docs/portfolio-web/**](https://bgoonz-blog.netlify.app/docs/portfolio-web/)
-
-*   [**/docs/python/**](https://bgoonz-blog.netlify.app/docs/python/)
-
-*   [**/docs/about/**](https://bgoonz-blog.netlify.app/docs/about/)
-
-*   [**/docs/about/resume/**](https://bgoonz-blog.netlify.app/docs/about/resume/)
-
-*   [**/docs/faq/**](https://bgoonz-blog.netlify.app/docs/faq/)
-
-*   [**/docs/links/**](https://bgoonz-blog.netlify.app/docs/links/)
-
-*   [**/docs/portfolio/dtw-platform/**](https://bgoonz-blog.netlify.app/docs/portfolio/dtw-platform/)
-
-*   [**/docs/quick-reference/Emmet/**](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
-
-*   [**/docs/quick-reference/**](https://bgoonz-blog.netlify.app/docs/quick-reference/)
-
-*   [**/docs/quick-reference/installation/**](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
-
-*   [**/docs/quick-reference/new-repo-instructions/**](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
-
-*   [**/docs/tools/**](https://bgoonz-blog.netlify.app/docs/tools/)
-
-*   [**/docs/tools/plug-ins/**](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
-
-*   [**/**](https://bgoonz-blog.netlify.app/)
-
-*   [**/blog/community/**](https://bgoonz-blog.netlify.app/blog/community/)
-
-*   [**/blog/python/**](https://bgoonz-blog.netlify.app/blog/python/)
-
-*   [**/docs/resources/**](https://bgoonz-blog.netlify.app/docs/resources/)
-
-*   [**/docs/tools/starter-theme/**](https://bgoonz-blog.netlify.app/docs/tools/starter-theme/)
-
-*   [**/notes-template/**](https://bgoonz-blog.netlify.app/notes-template/)
-
-*   [**/style-guide/**](https://bgoonz-blog.netlify.app/style-guide/)
-
-*   [**/blog/my-medium/**](https://bgoonz-blog.netlify.app/blog/my-medium/)
-
-*   [**/docs/about/me/**](https://bgoonz-blog.netlify.app/docs/about/me/)
-
-*   [**/review/**](https://bgoonz-blog.netlify.app/review/)
-
-*   [**/ds-algo-overview/**](https://bgoonz-blog.netlify.app/ds-algo-overview/)
-
-*   [**/docs/react/**](https://bgoonz-blog.netlify.app/docs/react/)
-
-*   [**/blog/data-structures/**](https://bgoonz-blog.netlify.app/blog/data-structures/)
-
-*   [**/docs/tools/Git-Html-Preview/**](https://bgoonz-blog.netlify.app/docs/tools/Git-Html-Preview/)
-
-*   [**/showcase/**](https://bgoonz-blog.netlify.app/showcase/)
-
-*   [**/docs/react/createReactApp/**](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
-
-*   [**/docs/My-Content/my-websites/**](https://bgoonz-blog.netlify.app/docs/My-Content/my-websites/)
 
 ***
+
+*   [/gallery/](https://preview--best-celery-b2d7c.stackbit.dev/gallery/)
+
+*   [/showcase/](https://preview--best-celery-b2d7c.stackbit.dev/showcase/)
+
+*   [/blog/](https://preview--best-celery-b2d7c.stackbit.dev/blog/)
+
+*   [/docs/portfolio-web/](https://preview--best-celery-b2d7c.stackbit.dev/docs/portfolio-web/)
+
+*   [/docs/python/](https://preview--best-celery-b2d7c.stackbit.dev/docs/python/)
+
+*   [/docs/](https://preview--best-celery-b2d7c.stackbit.dev/docs/)
+
+*   [/docs/About/resume/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/resume/)
+
+*   [/docs/about/](https://preview--best-celery-b2d7c.stackbit.dev/docs/about/)
+
+*   [/docs/About/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/)
+
+*   [/docs/links/Social/](https://preview--best-celery-b2d7c.stackbit.dev/docs/links/Social/)
+
+*   [/docs/links/my-websites/](https://preview--best-celery-b2d7c.stackbit.dev/docs/links/my-websites/)
+
+*   [/docs/links/](https://preview--best-celery-b2d7c.stackbit.dev/docs/links/)
+
+*   [/docs/faq/](https://preview--best-celery-b2d7c.stackbit.dev/docs/faq/)
+
+*   [/docs/quick-reference/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/)
+
+*   [/docs/quick-reference/Emmet/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/Emmet/)
+
+*   [/docs/quick-reference/new-repo-instructions/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/new-repo-instructions/)
+
+*   [/docs/quick-reference/installation/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/installation/)
+
+*   [/docs/react/createReactApp/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/createReactApp/)
+
+*   [/docs/tools/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/)
+
+*   [/](https://preview--best-celery-b2d7c.stackbit.dev/)
+
+*   [/blog/community/](https://preview--best-celery-b2d7c.stackbit.dev/blog/community/)
+
+*   [/blog/python/](https://preview--best-celery-b2d7c.stackbit.dev/blog/python/)
+
+*   [/docs/resources/](https://preview--best-celery-b2d7c.stackbit.dev/docs/resources/)
+
+*   [/docs/react/react2/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/react2/)
+
+*   [/docs/tools/default-readme/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/default-readme/)
+
+*   [/docs/tools/plug-ins/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/plug-ins/)
+
+*   [/style-guide/](https://preview--best-celery-b2d7c.stackbit.dev/style-guide/)
+
+*   [/blog/my-medium/](https://preview--best-celery-b2d7c.stackbit.dev/blog/my-medium/)
+
+*   [/docs/tools/notes-template/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/notes-template/)
+
+*   [/review/](https://preview--best-celery-b2d7c.stackbit.dev/review/)
+
+*   [/docs/articles/basic-web-dev/](https://preview--best-celery-b2d7c.stackbit.dev/docs/articles/basic-web-dev/)
+
+*   [/docs/react/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/)
+
+*   [/docs/About/introduction2bg/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/introduction2bg/)
+
+*   [/blog/data-structures/](https://preview--best-celery-b2d7c.stackbit.dev/blog/data-structures/)
+
+*   [/docs/About/me/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/me/)
+
+*   [/docs/tools/Git-Html-Preview/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/Git-Html-Preview/)
