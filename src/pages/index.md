@@ -184,12 +184,6 @@ sections:
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: My Other Projects
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
-    image_position: left
-    actions: []
-    type: section_content
   - title: Contact
     section_id: lorem-ipsum
     actions:
@@ -202,14 +196,14 @@ sections:
         type: action
     type: section_cta
 seo:
-  title:  Web-Dev-Hub
+  title: Web-Dev-Hub
   description: The preview of the Web-Dev-Hub
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value:  Web-Dev-Hub
+      value: Web-Dev-Hub
       keyName: property
     - name: 'og:description'
       value: The preview of the Web-Dev-Hub
@@ -221,7 +215,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value:  Web-Dev-Hub
+      value: Web-Dev-Hub
     - name: 'twitter:description'
       value: The preview of the Web-Dev-Hub
     - name: 'twitter:image'
