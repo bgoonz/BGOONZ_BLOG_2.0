@@ -149,7 +149,14 @@ sections:
        src="https://stackblitz.com/edit/sdk-github-project-earatb?devtoolsheight=33\&embed=1\&file=index.ts" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
+    actions:
+      - label: Go To Content Playground
+        url: /gallery
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+        type: action
     type: section_content
   - title: Code Playground
     section_id: lorem-ipsum
@@ -184,12 +191,6 @@ sections:
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: My Other Projects
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
-    image_position: left
-    actions: []
-    type: section_content
   - title: Contact
     section_id: lorem-ipsum
     actions:
@@ -202,14 +203,14 @@ sections:
         type: action
     type: section_cta
 seo:
-  title:  Web-Dev-Hub
+  title: Web-Dev-Hub
   description: The preview of the Web-Dev-Hub
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value:  Web-Dev-Hub
+      value: Web-Dev-Hub
       keyName: property
     - name: 'og:description'
       value: The preview of the Web-Dev-Hub
@@ -221,7 +222,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value:  Web-Dev-Hub
+      value: Web-Dev-Hub
     - name: 'twitter:description'
       value: The preview of the Web-Dev-Hub
     - name: 'twitter:image'
