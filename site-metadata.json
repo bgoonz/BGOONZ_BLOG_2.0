@@ -15,7 +15,18 @@
                 "label": "Blog",
                 "url": "https://blog-w-comments.vercel.app/",
                 "style": "link",
-                "has_subnav": true
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ]
             },
             {
                 "url": "docs/My-Content/my-websites",
