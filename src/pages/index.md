@@ -152,7 +152,7 @@ sections:
     actions:
       - label: Go To Content Playground
         url: /gallery
-        style: link
+        style: primary
         icon_class: dev
         new_window: false
         no_follow: false
