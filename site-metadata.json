@@ -15,7 +15,18 @@
                 "label": "Blog",
                 "url": "https://blog-w-comments.vercel.app/",
                 "style": "link",
-                "has_subnav": false
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "Blog-Post-Archive",
+                        "url": "https://bgoonz.blogspot.com/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ]
             },
             {
                 "url": "docs/My-Content/my-websites",
