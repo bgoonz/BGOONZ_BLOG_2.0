@@ -15,7 +15,7 @@
                 "label": "Blog",
                 "url": "https://blog-w-comments.vercel.app/",
                 "style": "link",
-                "has_subnav": false
+                "has_subnav": true
             },
             {
                 "url": "docs/My-Content/my-websites",
