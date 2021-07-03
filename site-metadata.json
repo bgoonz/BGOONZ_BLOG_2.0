@@ -19,7 +19,7 @@
                 "subnav_links": [
                     {
                         "label": "Blog-Post-Archive",
-                        "url": "#",
+                        "url": "https://bgoonz.blogspot.com/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
