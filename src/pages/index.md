@@ -151,7 +151,7 @@ sections:
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions:
       - label: Go To Content Playground
-        url: '#'
+        url: /gallery
         style: link
         icon_class: dev
         new_window: false
