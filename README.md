@@ -20,6 +20,47 @@
 
 </div>
 
+### Links:
+
+-   [/showcase/](https://preview--best-celery-b2d7c.stackbit.dev/showcase/)
+-   [/repos/](https://preview--best-celery-b2d7c.stackbit.dev/repos/)
+-   [/blog/](https://preview--best-celery-b2d7c.stackbit.dev/blog/)
+-   [/docs/jupyter-notebooks/](https://preview--best-celery-b2d7c.stackbit.dev/docs/jupyter-notebooks/)
+-   [/docs/portfolio-web/](https://preview--best-celery-b2d7c.stackbit.dev/docs/portfolio-web/)
+-   [/docs/python/](https://preview--best-celery-b2d7c.stackbit.dev/docs/python/)
+-   [/docs/About/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/)
+-   [/docs/About/resume/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/resume/)
+-   [/docs/about/](https://preview--best-celery-b2d7c.stackbit.dev/docs/about/)
+-   [/docs/faq/](https://preview--best-celery-b2d7c.stackbit.dev/docs/faq/)
+-   [/docs/quick-reference/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/)
+-   [/docs/quick-reference/Emmet/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/Emmet/)
+-   [/docs/quick-reference/new-repo-instructions/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/new-repo-instructions/)
+-   [/docs/links/Social/](https://preview--best-celery-b2d7c.stackbit.dev/docs/links/Social/)
+-   [/docs/links/](https://preview--best-celery-b2d7c.stackbit.dev/docs/links/)
+-   [/docs/quick-reference/installation/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/installation/)
+-   [/docs/links/my-websites/](https://preview--best-celery-b2d7c.stackbit.dev/docs/links/my-websites/)
+-   [/docs/](https://preview--best-celery-b2d7c.stackbit.dev/docs/)
+-   [/blog/community/](https://preview--best-celery-b2d7c.stackbit.dev/blog/community/)
+-   [/blog/python/](https://preview--best-celery-b2d7c.stackbit.dev/blog/python/)
+-   [/docs/resources/](https://preview--best-celery-b2d7c.stackbit.dev/docs/resources/)
+-   [/docs/react/createReactApp/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/createReactApp/)
+-   [/docs/tools/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/)
+-   [/style-guide/](https://preview--best-celery-b2d7c.stackbit.dev/style-guide/)
+-   [/blog/my-medium/](https://preview--best-celery-b2d7c.stackbit.dev/blog/my-medium/)
+-   [/docs/tools/default-readme/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/default-readme/)
+-   [/docs/tools/plug-ins/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/plug-ins/)
+-   [/docs/react/react2/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/react2/)
+-   [/docs/tools/notes-template/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/notes-template/)
+-   [/review/](https://preview--best-celery-b2d7c.stackbit.dev/review/)
+-   [/docs/articles/basic-web-dev/](https://preview--best-celery-b2d7c.stackbit.dev/docs/articles/basic-web-dev/)
+-   [/blog/data-structures/](https://preview--best-celery-b2d7c.stackbit.dev/blog/data-structures/)
+-   [/docs/About/me/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/me/)
+-   [/docs/About/introduction2bg/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/introduction2bg/)
+-   [/docs/react/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/)
+-   [/docs/tools/Git-Html-Preview/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/Git-Html-Preview/)
+-   [/gallery/](https://preview--best-celery-b2d7c.stackbit.dev/gallery/)
+
+
 
 ## Dependencies:
 
