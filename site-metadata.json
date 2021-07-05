@@ -341,17 +341,6 @@
                     }
                 ],
                 "type": "action_menu"
-            },
-            {
-                "label": "BLM",
-                "url": "https://optimistic-lewin-8586ae.netlify.app/blm.zip",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": false,
-                "subnav_links": [],
-                "type": "action_menu"
             }
         ],
         "url": "WebDevHub",
