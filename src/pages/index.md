@@ -195,11 +195,28 @@ sections:
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
-    content: >-
+    content: |-
       <iframe width="800" height="575"
        src="https://embedable-content.netlify.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: >-
+      ## Lorem ipsum
+
+
+      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+      - Lorem ipsum
+
+      - dolor sit amet
     actions: []
     type: section_content
   - title: Contact
