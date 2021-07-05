@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>gatsby-starters</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="how-to-install-setup-and-add-new-content-to-a-blog-starter---front-end-dev-with-greg">How to install, setup and add new content to a Blog starter - front-end dev with Greg</h1>
-<blockquote>
-<p>Front-end web development with Greg is an educational project.</p>
-</blockquote>
-<p>You install the starter like any other GatsbyJS <a href="https://www.gatsbyjs.org/docs/gatsby-starters/">starter</a> - with the following GatsbyJS CLI command.</p>
-<pre><code>gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/gatsby-starter-personal-blog.git</code></pre>
-<p>Of course you have to install the <a href="https://www.gatsbyjs.org/docs/">GatsbyJS CLI</a> first, but I assume the PersonalBlog is not the first GatsbyJS starter you are installing so the CLI is already installed on your computer.</p>
-<p>I do not recommend the PersonalBlog as your starting point with GatsbyJS. If you have no experience at all with GatsbyJS please go through the <a href="https://www.gatsbyjs.org/tutorial/">official Tutorials</a> first.</p>
-<p>After GatsbyJS CLI finishes installation you should be able to run <code>gatsby develop</code> command. Run the command from the inside of the newly created directory.</p>
-<pre><code>cd [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG]
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>gatsby-starters</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="how-to-install-setup-and-add-new-content-to-a-blog-starter---front-end-dev-with-greg">
+            How to install, setup and add new content to a Blog starter - front-end dev with Greg
+        </h1>
+        <blockquote>
+            <p>Front-end web development with Greg is an educational project.</p>
+        </blockquote>
+        <p>
+            You install the starter like any other GatsbyJS <a href="https://www.gatsbyjs.org/docs/gatsby-starters/">starter</a> - with the following GatsbyJS
+            CLI command.
+        </p>
+        <pre><code>gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/gatsby-starter-personal-blog.git</code></pre>
+        <p>
+            Of course you have to install the <a href="https://www.gatsbyjs.org/docs/">GatsbyJS CLI</a> first, but I assume the PersonalBlog is not the first
+            GatsbyJS starter you are installing so the CLI is already installed on your computer.
+        </p>
+        <p>
+            I do not recommend the PersonalBlog as your starting point with GatsbyJS. If you have no experience at all with GatsbyJS please go through the
+            <a href="https://www.gatsbyjs.org/tutorial/">official Tutorials</a> first.
+        </p>
+        <p>
+            After GatsbyJS CLI finishes installation you should be able to run <code>gatsby develop</code> command. Run the command from the inside of the newly
+            created directory.
+        </p>
+        <pre><code>cd [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG]
 gatsby develop</code></pre>
-<p>You will see something more or less like this:</p>
-<pre><code>λ gatsby develop
+        <p>You will see something more or less like this:</p>
+        <pre><code>λ gatsby develop
 success delete html and css files from previous builds — 0.277 s
 success open and validate gatsby-config — 0.024 s
 success copy gatsby files — 0.079 s
@@ -48,32 +72,32 @@ info bootstrap finished
 
 You can now view gatsby-starter-personal-blog in the browser.
   http://localhost:8000/</code></pre>
-<p>That means you can see the blog running in your web browser under the <code>http://localhost:8000/</code> address.</p>
-<h2 id="folders-structure">Folders structure</h2>
-<p>This is the starter’s main folders structure.</p>
-<pre><code>root
+        <p>That means you can see the blog running in your web browser under the <code>http://localhost:8000/</code> address.</p>
+        <h2 id="folders-structure">Folders structure</h2>
+        <p>This is the starter’s main folders structure.</p>
+        <pre><code>root
   ├── .cache
   ├── content
   ├── node_modules
   ├── src
   └── static</code></pre>
-<h2 id="content">Content</h2>
-<p>To easily customize all texts of the blog, not only posts, I extracted all content to its own separate folder.</p>
-<p>The folder contains four subfolders.</p>
-<pre><code>root
+        <h2 id="content">Content</h2>
+        <p>To easily customize all texts of the blog, not only posts, I extracted all content to its own separate folder.</p>
+        <p>The folder contains four subfolders.</p>
+        <pre><code>root
   ├── content
   │   ├── meta
   │   ├── pages
   │   ├── parts
   │   └── posts</code></pre>
-<h3 id="meta">Meta</h3>
-<p>There is a <code>config.js</code> file inside the <code>/content/meta/</code> folder.</p>
-<pre><code>root
+        <h3 id="meta">Meta</h3>
+        <p>There is a <code>config.js</code> file inside the <code>/content/meta/</code> folder.</p>
+        <pre><code>root
   ├── content
   │   ├── meta
   │   │   └── config.js</code></pre>
-<p>Content of the <code>config.js</code> file.</p>
-<pre><code>module.exports = {
+        <p>Content of the <code>config.js</code> file.</p>
+        <pre><code>module.exports = {
   siteTitle: &quot;PersonalBlog - a blog starter for GatsbyJS&quot;,
   shortSiteTitle: &quot;PersonalBlog GatsbyJS Starter&quot;,
   siteDescription: &quot;PersonalBlog is a GatsbyJS starter.&quot;,
@@ -100,69 +124,78 @@ You can now view gatsby-starter-personal-blog in the browser.
     { name: &quot;facebook&quot;, url: &quot;http://facebook.com/greglobinski&quot; }
   ]
 };</code></pre>
-<p>Edit values of the object’s properties according to your needs.</p>
-<h3 id="posts">Posts</h3>
-<p>Every blog post has its own folder.</p>
-<pre><code>root
+        <p>Edit values of the object’s properties according to your needs.</p>
+        <h3 id="posts">Posts</h3>
+        <p>Every blog post has its own folder.</p>
+        <pre><code>root
   ├── content
   │   ├── posts
   │   │   ├── 2017-10-01--two-things-are-infinite
   │   │   ├── 2017-10-03--be-who-you-are
   │   │   ├── 2017-10-05--you-only-live-once</code></pre>
-<p>When you change or add new post, remeber to keep up with the post folder name pattern.</p>
-<pre><code>/YYYY-MM-DD--title-of-post/</code></pre>
-<p>There are three obligatory parts:</p>
-<ul>
-<li>a post date prefix <code>YYYY-MM-DD</code>,</li>
-<li>a separator <code>--</code> (two dashes)</li>
-<li>a slug</li>
-</ul>
-<p>Only posts inside properly named folders are displayed on the blog post list.</p>
-<h2 id="pages">Pages</h2>
-<p>The same way as posts, every page has its own folder.</p>
-<pre><code>root
+        <p>When you change or add new post, remeber to keep up with the post folder name pattern.</p>
+        <pre><code>/YYYY-MM-DD--title-of-post/</code></pre>
+        <p>There are three obligatory parts:</p>
+        <ul>
+            <li>a post date prefix <code>YYYY-MM-DD</code>,</li>
+            <li>a separator <code>--</code> (two dashes)</li>
+            <li>a slug</li>
+        </ul>
+        <p>Only posts inside properly named folders are displayed on the blog post list.</p>
+        <h2 id="pages">Pages</h2>
+        <p>The same way as posts, every page has its own folder.</p>
+        <pre><code>root
   ├── content
   │   ├── pages
   │   │   ├── 1--about
   │   │   ├── 2--starters
   │   │   └── success</code></pre>
-<p>When you change or add new page, remember to properly use the page folder name pattern.</p>
-<p>There are three parts.</p>
-<ul>
-<li>a page order number prefix <code>No</code> (one or more digit)</li>
-<li>a separator <code>--</code> (two dashes)</li>
-<li>a slug</li>
-</ul>
-<p>Only pages inside folders with order prefix are displayed in the Info menu.</p>
-<h2 id="parts">Parts</h2>
-<p>Through <code>parts</code> you can edit content of elements which are parts of the blog’s layout, like an author note under a post or a footer.</p>
-<pre><code>root
+        <p>When you change or add new page, remember to properly use the page folder name pattern.</p>
+        <p>There are three parts.</p>
+        <ul>
+            <li>a page order number prefix <code>No</code> (one or more digit)</li>
+            <li>a separator <code>--</code> (two dashes)</li>
+            <li>a slug</li>
+        </ul>
+        <p>Only pages inside folders with order prefix are displayed in the Info menu.</p>
+        <h2 id="parts">Parts</h2>
+        <p>Through <code>parts</code> you can edit content of elements which are parts of the blog’s layout, like an author note under a post or a footer.</p>
+        <pre><code>root
   ├── content
   │   ├── parts
   │   │   ├── author.md
   │   │   ├── footnote.md
   │   │   └── info.md</code></pre>
-<h2 id="environment-variables">Environment variables</h2>
-<p>The starter uses some external services:</p>
-<ul>
-<li>Analytics by <a href="https://www.google.com/analytics/">Google Analytics</a></li>
-<li>Comments by <a href="https://developers.facebook.com/docs/plugins/comments/">Facebook Comments</a></li>
-<li>Search by <a href="https://www.algolia.com/">Algolia</a></li>
-</ul>
-<p>To make them work you have to secure some access data. All services are free or have generous free tiers big enough for a personal blog.</p>
-<p>Create a file in the root folder called <code>.env</code> with content like below.</p>
-<pre><code>GOOGLE_ANALYTICS_ID=...
+        <h2 id="environment-variables">Environment variables</h2>
+        <p>The starter uses some external services:</p>
+        <ul>
+            <li>Analytics by <a href="https://www.google.com/analytics/">Google Analytics</a></li>
+            <li>Comments by <a href="https://developers.facebook.com/docs/plugins/comments/">Facebook Comments</a></li>
+            <li>Search by <a href="https://www.algolia.com/">Algolia</a></li>
+        </ul>
+        <p>To make them work you have to secure some access data. All services are free or have generous free tiers big enough for a personal blog.</p>
+        <p>Create a file in the root folder called <code>.env</code> with content like below.</p>
+        <pre><code>GOOGLE_ANALYTICS_ID=...
 ALGOLIA_APP_ID=...
 ALGOLIA_SEARCH_ONLY_API_KEY=...
 ALGOLIA_ADMIN_API_KEY=...
 ALGOLIA_INDEX_NAME=...
 FB_APP_ID=...</code></pre>
-<p>Change <code>...</code> to real strings. Do not use quote marks. Put data strings after the equal signs. Like in the example below.</p>
-<pre><code>GOOGLE_ANALYTICS_ID=UA-123456789-0</code></pre>
-<p>You do not have to create <code>.env</code> file just after the instalation. The <code>gatsby develop</code> command should work without it. At least it works on my localhost environment. If you get an <code>GraphQL Error</code> using <code>gatsby develop</code> just after the installation, create the <code>.env</code> file with the variables like above, even with empty string as the values.</p>
-<p>For <code>gatsby build</code> you absolutely need a real Algolia access data, without it the <code>gatsby build</code> command will throw an error.</p>
-<p>If you want to delay singing-up to Algolia you can temporarily turn off <code>gatsby-plugin-algolia</code>. Open the <code>gatsby-config.js</code> file in the root folder and comment or remove the <code>gatsby-plugin-algolia</code> setup.</p>
-<pre><code>plugins: [
+        <p>Change <code>...</code> to real strings. Do not use quote marks. Put data strings after the equal signs. Like in the example below.</p>
+        <pre><code>GOOGLE_ANALYTICS_ID=UA-123456789-0</code></pre>
+        <p>
+            You do not have to create <code>.env</code> file just after the instalation. The <code>gatsby develop</code> command should work without it. At
+            least it works on my localhost environment. If you get an <code>GraphQL Error</code> using <code>gatsby develop</code> just after the installation,
+            create the <code>.env</code> file with the variables like above, even with empty string as the values.
+        </p>
+        <p>
+            For <code>gatsby build</code> you absolutely need a real Algolia access data, without it the <code>gatsby build</code> command will throw an error.
+        </p>
+        <p>
+            If you want to delay singing-up to Algolia you can temporarily turn off <code>gatsby-plugin-algolia</code>. Open the
+            <code>gatsby-config.js</code> file in the root folder and comment or remove the <code>gatsby-plugin-algolia</code> setup.
+        </p>
+        <pre><code>plugins: [
 
 
 
@@ -175,8 +208,14 @@ FB_APP_ID=...</code></pre>
 
     {
       resolve: `gatsby-source-filesystem`,</code></pre>
-<p>But hey, it’s not diffucult or long to <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/setup-algolia-account/">setup</a> your Algolia account for the starter.</p>
-<h2 id="summary">Summary</h2>
-<p>That’s all for the first step. Now you should have a running blog with your own data running on your localhost. In the next post we will talk how to change the look of your blog. Stay tuned.</p>
-</body>
+        <p>
+            But hey, it’s not diffucult or long to <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/setup-algolia-account/">setup</a> your Algolia
+            account for the starter.
+        </p>
+        <h2 id="summary">Summary</h2>
+        <p>
+            That’s all for the first step. Now you should have a running blog with your own data running on your localhost. In the next post we will talk how to
+            change the look of your blog. Stay tuned.
+        </p>
+    </body>
 </html>

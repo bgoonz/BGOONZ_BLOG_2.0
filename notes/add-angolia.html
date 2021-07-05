@@ -1,42 +1,112 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>add-angolia</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="setup-algolia-account-for-your-gatsbyjs-blog---front-end-dev-with-greg">Setup Algolia account for your GatsbyJS blog - front-end dev with Greg</h1>
-<blockquote>
-<p>Front-end web development with Greg is an educational project.</p>
-</blockquote>
-<p>As I wrote in the <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/install-blog-starter/">Starter Instalation</a> post the starter needs access data to your <a href="https://www.algolia.com/">Algolia</a> account.</p>
-<p>If you do not have an Algolia account yet you have to <a href="https://www.algolia.com/users/sign_up">sign up</a> now.</p>
-<p>If you already have an account go and open the <a href="https://www.algolia.com/manage/applications">Apps</a> page and click the <strong>NEW APPLICATION</strong> button.</p>
-<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-apps-ff142da8f15e16ca7290d3f6190f9582-22d4e.png"><img src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-apps-ff142da8f15e16ca7290d3f6190f9582-48538.png" alt="Algolia - Apps" /></a></p>
-<p>Set the name of the new app and choose plan for it.</p>
-<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-create-app-550f290e3572463a1916e07985c6ca9b-22d4e.png"><img src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-create-app-550f290e3572463a1916e07985c6ca9b-48538.png" alt="Algolia - create new app" /></a></p>
-<p>Then choose a region.</p>
-<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-new-app-region-7c2b4d2af5ff543af25698935e234f41-dda6a.png"><img src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-new-app-region-7c2b4d2af5ff543af25698935e234f41-48538.png" alt="Algolia - choose a region for the app" /></a></p>
-<p>Your app is ready to use.</p>
-<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-new-app-fbfaffc9202cccd26c1784141b23e1eb-dda6a.png"><img src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-new-app-fbfaffc9202cccd26c1784141b23e1eb-48538.png" alt="Algolia - app dashboard" /></a></p>
-<p>Now it’s time to create an index. Open Indices section. And click the <strong>ADD NEW INDEX</strong> button.</p>
-<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-no-indices-d9d1340155cd4630f3eaf7651b1b584d-dda6a.png"><img src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-no-indices-d9d1340155cd4630f3eaf7651b1b584d-48538.png" alt="Algolia - indices" /></a></p>
-<p>Set a name for the index.</p>
-<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-create-index-eae88d34618f56f9c008aa5edd15d636-22d4e.png"><img src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-create-index-eae88d34618f56f9c008aa5edd15d636-48538.png" alt="Algolia - create index" /></a></p>
-<p>That’s it. You’ve set everything what you need to setup the starter’s searching feature.</p>
-<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-indices-fbe55465f0b18afac23f76b7a33e419c-22d4e.png"><img src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-indices-fbe55465f0b18afac23f76b7a33e419c-48538.png" alt="Algolia - new index" /></a></p>
-<p>The final step. Open <strong>Api Keys</strong> section.</p>
-<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-api-keys-59bdfae8910b0dcaa951470d5ad65f27-dda6a.png"><img src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-api-keys-59bdfae8910b0dcaa951470d5ad65f27-48538.png" alt="Algolia - Api Keys" /></a></p>
-<p>And copy <strong>Application ID</strong>, <strong>Search-Only API Key</strong> and <strong>Admin API Key</strong> and put them together with the <strong>Index’s name</strong> into the <code>.env</code> file described in the <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/install-personal-blog-starter/">Starter Instalation</a> post.</p>
-<p>More info about the searching feature in the following post. Stay tuned. If you have any question use the Comment form below.</p>
-<p><a href="https://dev.greglobinski.com/setup-algolia-account/">Source</a></p>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>add-angolia</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="setup-algolia-account-for-your-gatsbyjs-blog---front-end-dev-with-greg">
+            Setup Algolia account for your GatsbyJS blog - front-end dev with Greg
+        </h1>
+        <blockquote>
+            <p>Front-end web development with Greg is an educational project.</p>
+        </blockquote>
+        <p>
+            As I wrote in the <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/install-blog-starter/">Starter Instalation</a> post the starter needs
+            access data to your <a href="https://www.algolia.com/">Algolia</a> account.
+        </p>
+        <p>If you do not have an Algolia account yet you have to <a href="https://www.algolia.com/users/sign_up">sign up</a> now.</p>
+        <p>
+            If you already have an account go and open the <a href="https://www.algolia.com/manage/applications">Apps</a> page and click the
+            <strong>NEW APPLICATION</strong> button.
+        </p>
+        <p>
+            <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-apps-ff142da8f15e16ca7290d3f6190f9582-22d4e.png"
+                ><img
+                    src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-apps-ff142da8f15e16ca7290d3f6190f9582-48538.png"
+                    alt="Algolia - Apps"
+            /></a>
+        </p>
+        <p>Set the name of the new app and choose plan for it.</p>
+        <p>
+            <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-create-app-550f290e3572463a1916e07985c6ca9b-22d4e.png"
+                ><img
+                    src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-create-app-550f290e3572463a1916e07985c6ca9b-48538.png"
+                    alt="Algolia - create new app"
+            /></a>
+        </p>
+        <p>Then choose a region.</p>
+        <p>
+            <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-new-app-region-7c2b4d2af5ff543af25698935e234f41-dda6a.png"
+                ><img
+                    src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-new-app-region-7c2b4d2af5ff543af25698935e234f41-48538.png"
+                    alt="Algolia - choose a region for the app"
+            /></a>
+        </p>
+        <p>Your app is ready to use.</p>
+        <p>
+            <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-new-app-fbfaffc9202cccd26c1784141b23e1eb-dda6a.png"
+                ><img
+                    src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-new-app-fbfaffc9202cccd26c1784141b23e1eb-48538.png"
+                    alt="Algolia - app dashboard"
+            /></a>
+        </p>
+        <p>Now it’s time to create an index. Open Indices section. And click the <strong>ADD NEW INDEX</strong> button.</p>
+        <p>
+            <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-no-indices-d9d1340155cd4630f3eaf7651b1b584d-dda6a.png"
+                ><img
+                    src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-no-indices-d9d1340155cd4630f3eaf7651b1b584d-48538.png"
+                    alt="Algolia - indices"
+            /></a>
+        </p>
+        <p>Set a name for the index.</p>
+        <p>
+            <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-create-index-eae88d34618f56f9c008aa5edd15d636-22d4e.png"
+                ><img
+                    src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-create-index-eae88d34618f56f9c008aa5edd15d636-48538.png"
+                    alt="Algolia - create index"
+            /></a>
+        </p>
+        <p>That’s it. You’ve set everything what you need to setup the starter’s searching feature.</p>
+        <p>
+            <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-indices-fbe55465f0b18afac23f76b7a33e419c-22d4e.png"
+                ><img
+                    src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-indices-fbe55465f0b18afac23f76b7a33e419c-48538.png"
+                    alt="Algolia - new index"
+            /></a>
+        </p>
+        <p>The final step. Open <strong>Api Keys</strong> section.</p>
+        <p>
+            <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-api-keys-59bdfae8910b0dcaa951470d5ad65f27-dda6a.png"
+                ><img
+                    src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/algolia-api-keys-59bdfae8910b0dcaa951470d5ad65f27-48538.png"
+                    alt="Algolia - Api Keys"
+            /></a>
+        </p>
+        <p>
+            And copy <strong>Application ID</strong>, <strong>Search-Only API Key</strong> and <strong>Admin API Key</strong> and put them together with the
+            <strong>Index’s name</strong> into the <code>.env</code> file described in the
+            <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/install-personal-blog-starter/">Starter Instalation</a> post.
+        </p>
+        <p>More info about the searching feature in the following post. Stay tuned. If you have any question use the Comment form below.</p>
+        <p><a href="https://dev.greglobinski.com/setup-algolia-account/">Source</a></p>
+    </body>
 </html>
