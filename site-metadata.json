@@ -344,7 +344,7 @@
             },
             {
                 "label": "BLM",
-                "url": "https://github.com/bgoonz/random-static-html-page-deploy/blob/master/blm.zip",
+                "url": "https://optimistic-lewin-8586ae.netlify.app/blm.zip",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
