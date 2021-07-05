@@ -193,9 +193,8 @@ sections:
     type: section_content
   - title: lorem-ipsum
     section_id: lorem-ipsum
-    content: |+
-      ## Hi I am paul
-
+    content: |
+      ##
     actions: []
     type: section_hero
   - title: Contact
