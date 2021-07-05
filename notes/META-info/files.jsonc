@@ -1,0 +1,858 @@
+// query MyQuery {
+//   sitePage {
+//     id
+//   }
+//   allFile(sort: {fields: absolutePath}) {
+//     pageInfo {
+//       currentPage
+//       hasNextPage
+//       hasPreviousPage
+//       itemCount
+//       pageCount
+//       perPage
+//       totalCount
+//     }
+//     totalCount
+//     group(field: sourceInstanceName) {
+//       edges {
+//         node {
+//           id
+//         }
+//       }
+//     }
+//     edges {
+//       next {
+//         absolutePath
+//         name
+//         publicURL
+//         base
+//         blocks
+//         dir
+//         extension
+//         modifiedTime(locale: "")
+//         parent {
+//           ... on Directory {
+//             id
+//             name
+//             absolutePath
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// 
+
+
+
+
+{
+  "data": {
+    "sitePage": {
+      "id": "SitePage /"
+    },
+    "allFile": {
+      "pageInfo": {
+        "currentPage": 1,
+        "hasNextPage": false,
+        "hasPreviousPage": false,
+        "itemCount": 44,
+        "pageCount": 1,
+        "perPage": null,
+        "totalCount": 44
+      },
+      "totalCount": 44,
+      "group": [
+        {
+          "edges": [
+            {
+              "node": {
+                "id": "c3603c42-7681-5fa5-805d-9c1dcb43275d"
+              }
+            },
+            {
+              "node": {
+                "id": "a36fac8d-05c5-5626-85b9-ab4c89cfdb86"
+              }
+            },
+            {
+              "node": {
+                "id": "509ff288-c921-503e-94f2-259131d8ebe0"
+              }
+            },
+            {
+              "node": {
+                "id": "33963459-d25e-5897-8f4c-9ba068fa9e2a"
+              }
+            },
+            {
+              "node": {
+                "id": "6d5e35e4-6974-5c60-a835-2eccd84922f6"
+              }
+            },
+            {
+              "node": {
+                "id": "acc9295c-8905-55d0-9096-e349e2a1dfca"
+              }
+            },
+            {
+              "node": {
+                "id": "495d2220-f18e-5977-96a7-689df47a92e5"
+              }
+            },
+            {
+              "node": {
+                "id": "4fe4dd64-28f8-5e73-8313-b440dd6d5ec3"
+              }
+            },
+            {
+              "node": {
+                "id": "046fd99d-16ce-59b9-baea-231a51824574"
+              }
+            },
+            {
+              "node": {
+                "id": "8cd456ba-5700-51c6-9a44-3a65d0b3d839"
+              }
+            },
+            {
+              "node": {
+                "id": "d0c84af9-66d0-5232-8f2a-457021de3a91"
+              }
+            },
+            {
+              "node": {
+                "id": "c1f0b823-d691-5f21-8cb5-96205f74d540"
+              }
+            },
+            {
+              "node": {
+                "id": "c3986ba6-420a-5f53-832a-22c1aecb1c3f"
+              }
+            },
+            {
+              "node": {
+                "id": "23ded35b-96b0-5f36-9e83-d7841e6df34b"
+              }
+            },
+            {
+              "node": {
+                "id": "45e82513-36c7-558b-ad4e-1fbda7a0cf5c"
+              }
+            },
+            {
+              "node": {
+                "id": "b3d9cc52-b516-5b37-b587-4dcb262d6e7c"
+              }
+            },
+            {
+              "node": {
+                "id": "1e909777-2b46-57a2-bd12-17851d88e42c"
+              }
+            },
+            {
+              "node": {
+                "id": "59effa82-6f3e-5072-84ed-790f034b2c95"
+              }
+            },
+            {
+              "node": {
+                "id": "314d5c6d-59b6-562e-8d76-e0d2024216b4"
+              }
+            },
+            {
+              "node": {
+                "id": "bc49ddd9-c707-500d-9cb8-35aee45a03c6"
+              }
+            },
+            {
+              "node": {
+                "id": "9a370eb4-3060-59d4-afc4-eac34505c582"
+              }
+            },
+            {
+              "node": {
+                "id": "c1564e67-8048-52f2-9945-e682595b6ae2"
+              }
+            },
+            {
+              "node": {
+                "id": "6316ca5a-fb6e-5a0b-8866-3c6bdd87dac2"
+              }
+            },
+            {
+              "node": {
+                "id": "dbe2c71d-9453-5136-8dc4-e539b408493c"
+              }
+            },
+            {
+              "node": {
+                "id": "447d0e24-248d-5250-860f-59aa616bf53c"
+              }
+            },
+            {
+              "node": {
+                "id": "92c1da9d-9cee-5b61-8ebc-bf373552b626"
+              }
+            },
+            {
+              "node": {
+                "id": "e85fabce-8c93-53fe-b061-0a39fa53dd9c"
+              }
+            },
+            {
+              "node": {
+                "id": "af593a92-9287-5676-be8c-88a4d1ed4cd6"
+              }
+            },
+            {
+              "node": {
+                "id": "f9184201-0cbf-59bb-8e97-e7884c34d53e"
+              }
+            },
+            {
+              "node": {
+                "id": "8c112aa9-2b53-5b87-badc-86f5291abc2a"
+              }
+            },
+            {
+              "node": {
+                "id": "c02cb875-0f21-5b5b-af23-e0dbf0c7669c"
+              }
+            },
+            {
+              "node": {
+                "id": "d558e8db-6e45-56f3-bbbf-7f24e618ca24"
+              }
+            },
+            {
+              "node": {
+                "id": "45c5390c-1534-5261-b357-92b8760c9029"
+              }
+            },
+            {
+              "node": {
+                "id": "49c08510-761e-560b-9de1-88b57fea0318"
+              }
+            },
+            {
+              "node": {
+                "id": "d87eec98-dc0a-5a26-a711-99d270f8f9b3"
+              }
+            },
+            {
+              "node": {
+                "id": "57637cc4-9cea-5bc2-a0e9-b18f9463f09c"
+              }
+            },
+            {
+              "node": {
+                "id": "a112cb6c-ac46-580c-8b64-47a0d0c8b2c6"
+              }
+            },
+            {
+              "node": {
+                "id": "2d661ec1-d80d-5816-8325-168582503fe1"
+              }
+            },
+            {
+              "node": {
+                "id": "27bb36c1-e2d9-5b85-8aeb-a940b6271417"
+              }
+            },
+            {
+              "node": {
+                "id": "a256416a-1ee8-52de-8305-c4817aa8ace1"
+              }
+            },
+            {
+              "node": {
+                "id": "91c06f6e-2e06-57da-a240-a56ae208cf7f"
+              }
+            },
+            {
+              "node": {
+                "id": "d302cb4f-51f0-570e-aea4-a847209db2b1"
+              }
+            },
+            {
+              "node": {
+                "id": "86889c22-0848-51f1-9b8e-fb51fa9c8595"
+              }
+            },
+            {
+              "node": {
+                "id": "4203513b-4ad0-523a-adab-75fd39aa6bd9"
+              }
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/blog/data-structures.md",
+            "name": "data-structures",
+            "publicURL": "/static/6d90a2efffcb32e12a842114971bdd26/data-structures.md",
+            "base": "data-structures.md",
+            "blocks": 104,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/blog",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/blog/index.md",
+            "name": "index",
+            "publicURL": "/static/48cb27ed26370c8a30461ce27c545d88/index.md",
+            "base": "index.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/blog",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/blog/my-medium.md",
+            "name": "my-medium",
+            "publicURL": "/static/c33219b8defb60ec5f491f57ca56b8b7/my-medium.md",
+            "base": "my-medium.md",
+            "blocks": 48,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/blog",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/blog/python.md",
+            "name": "python",
+            "publicURL": "/static/020abbf1f3f24e7f2d82d542ba2c8244/python.md",
+            "base": "python.md",
+            "blocks": 32,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/blog",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs.md",
+            "name": "docs",
+            "publicURL": "/static/c85ddd8dca2383a5e82196a725569aa9/docs.md",
+            "base": "docs.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/about/index.md",
+            "name": "index",
+            "publicURL": "/static/3b8fa6c58f211d0315ec5da1b4fdafa3/index.md",
+            "base": "index.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/about",
+            "extension": "md",
+            "modifiedTime": "2021-07-04T04:53:53.008Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/about/introduction2bg.md",
+            "name": "introduction2bg",
+            "publicURL": "/static/3f8c225697d52d2aed7ec245531d0646/introduction2bg.md",
+            "base": "introduction2bg.md",
+            "blocks": 112,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/about",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/about/me.md",
+            "name": "me",
+            "publicURL": "/static/4240c0abd9180f8337c3be1d1e9c9d7d/me.md",
+            "base": "me.md",
+            "blocks": 112,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/about",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/about/resume.md",
+            "name": "resume",
+            "publicURL": "/static/ce12f2519229ac969c8e4cf6d069ad9f/resume.md",
+            "base": "resume.md",
+            "blocks": 16,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/about",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/articles/algo.md",
+            "name": "algo",
+            "publicURL": "/static/573a4a5a0671b24d2eadec7aa6b8d64c/algo.md",
+            "base": "algo.md",
+            "blocks": 104,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/articles",
+            "extension": "md",
+            "modifiedTime": "2021-07-03T22:11:32.160Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/articles/basic-web-dev.md",
+            "name": "basic-web-dev",
+            "publicURL": "/static/c84bfb0b291a4e1858f2952be3553929/basic-web-dev.md",
+            "base": "basic-web-dev.md",
+            "blocks": 72,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/articles",
+            "extension": "md",
+            "modifiedTime": "2021-07-03T22:11:32.164Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/experimental/embed.md",
+            "name": "embed",
+            "publicURL": "/static/7cb6b2e2f70fb30e26d74876eeb3acbd/embed.md",
+            "base": "embed.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/experimental",
+            "extension": "md",
+            "modifiedTime": "2021-06-19T19:50:13.594Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/experimental/index.md",
+            "name": "index",
+            "publicURL": "/static/e9d1ac04d7629a9abc73963082370b22/index.md",
+            "base": "index.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/experimental",
+            "extension": "md",
+            "modifiedTime": "2021-06-19T19:50:13.595Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/faq/Contact.md",
+            "name": "Contact",
+            "publicURL": "/static/21b2b8049bc117d88596e11804f995ca/Contact.md",
+            "base": "Contact.md",
+            "blocks": 0,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/faq",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/faq/index.md",
+            "name": "index",
+            "publicURL": "/static/5aed60357edf74a655f01ff5fbf810b9/index.md",
+            "base": "index.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/faq",
+            "extension": "md",
+            "modifiedTime": "2021-06-19T19:50:13.596Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/faq/other-sites.md",
+            "name": "other-sites",
+            "publicURL": "/static/d41d8cd98f00b204e9800998ecf8427e/other-sites.md",
+            "base": "other-sites.md",
+            "blocks": 0,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/faq",
+            "extension": "md",
+            "modifiedTime": "2021-07-03T22:11:32.165Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/index.md",
+            "name": "index",
+            "publicURL": "/static/5433fa09d68595af726854efd7263d62/index.md",
+            "base": "index.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs",
+            "extension": "md",
+            "modifiedTime": "2021-07-03T22:11:32.167Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/jupyter-notebooks.md",
+            "name": "jupyter-notebooks",
+            "publicURL": "/static/1c58d1a6e7e69bb3ad6e205aed4c8462/jupyter-notebooks.md",
+            "base": "jupyter-notebooks.md",
+            "blocks": 0,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs",
+            "extension": "md",
+            "modifiedTime": "2021-07-03T22:11:32.168Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/links/Social.md",
+            "name": "Social",
+            "publicURL": "/static/35d61c6cecdd895232feb968d7db3fd4/Social.md",
+            "base": "Social.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/links",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/links/index.md",
+            "name": "index",
+            "publicURL": "/static/a3ac6fe36338165e299c9f3c5563102b/index.md",
+            "base": "index.md",
+            "blocks": 16,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/links",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/links/my-websites.md",
+            "name": "my-websites",
+            "publicURL": "/static/6b2717381df6ac5fdff286ac8b1d65c4/my-websites.md",
+            "base": "my-websites.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/links",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/portfolio-web.md",
+            "name": "portfolio-web",
+            "publicURL": "/static/08755de43039bd99bd808aa738c216f7/portfolio-web.md",
+            "base": "portfolio-web.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/python.md",
+            "name": "python",
+            "publicURL": "/static/ae0945c10991e7daab429d9d54cebe08/python.md",
+            "base": "python.md",
+            "blocks": 0,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/quick-reference/Emmet.md",
+            "name": "Emmet",
+            "publicURL": "/static/19198d0ca9f3d865aa753423c1b5bc0f/Emmet.md",
+            "base": "Emmet.md",
+            "blocks": 16,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/quick-reference",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/quick-reference/index.md",
+            "name": "index",
+            "publicURL": "/static/1f63680b405fa47272675c1a37fd9e3f/index.md",
+            "base": "index.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/quick-reference",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/quick-reference/installation.md",
+            "name": "installation",
+            "publicURL": "/static/7404aadef11ddc492c67adfe8f65ffc7/installation.md",
+            "base": "installation.md",
+            "blocks": 16,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/quick-reference",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/quick-reference/new-repo-instructions.md",
+            "name": "new-repo-instructions",
+            "publicURL": "/static/62ded6c72c92d6bd3cca2a9e27940c97/new-repo-instructions.md",
+            "base": "new-repo-instructions.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/quick-reference",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/react/createReactApp.md",
+            "name": "createReactApp",
+            "publicURL": "/static/e6f07017da893ab7ca527472fa083950/createReactApp.md",
+            "base": "createReactApp.md",
+            "blocks": 16,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/react",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/react/index.md",
+            "name": "index",
+            "publicURL": "/static/ef1d0cb2b90ebc99c9c7e6703ef84fef/index.md",
+            "base": "index.md",
+            "blocks": 88,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/react",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/react/react2.md",
+            "name": "react2",
+            "publicURL": "/static/21ac2723fef52922440b86f5550a728d/react2.md",
+            "base": "react2.md",
+            "blocks": 32,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/react",
+            "extension": "md",
+            "modifiedTime": "2021-07-03T22:11:32.169Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/resources.md",
+            "name": "resources",
+            "publicURL": "/static/9e1dbcfd2bdd7d41512c7cc974c2ac2a/resources.md",
+            "base": "resources.md",
+            "blocks": 24,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools/Git-Html-Preview.md",
+            "name": "Git-Html-Preview",
+            "publicURL": "/static/155fca8a3a658729a03e7b1b8fd5d167/Git-Html-Preview.md",
+            "base": "Git-Html-Preview.md",
+            "blocks": 120,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools/default-readme.md",
+            "name": "default-readme",
+            "publicURL": "/static/5d91ba637778e6937c6088c55773bdfe/default-readme.md",
+            "base": "default-readme.md",
+            "blocks": 32,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools/index.md",
+            "name": "index",
+            "publicURL": "/static/d2e33e9147416ba4b0ef41ba1ff5cffa/index.md",
+            "base": "index.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools/notes-template.md",
+            "name": "notes-template",
+            "publicURL": "/static/3db03c83c395db0b8b307f17eb502aad/notes-template.md",
+            "base": "notes-template.md",
+            "blocks": 48,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools",
+            "extension": "md",
+            "modifiedTime": "2021-07-03T22:11:32.171Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools/plug-ins.md",
+            "name": "plug-ins",
+            "publicURL": "/static/85c70484611e4b56bbf103ded2d755e2/plug-ins.md",
+            "base": "plug-ins.md",
+            "blocks": 24,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/ds-algo-overview.md",
+            "name": "ds-algo-overview",
+            "publicURL": "/static/573a4a5a0671b24d2eadec7aa6b8d64c/ds-algo-overview.md",
+            "base": "ds-algo-overview.md",
+            "blocks": 104,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages",
+            "extension": "md",
+            "modifiedTime": "2021-06-19T19:50:13.599Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/gallery.md",
+            "name": "gallery",
+            "publicURL": "/static/fe0537a23e9c0570dbfb8b16f00e728d/gallery.md",
+            "base": "gallery.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages",
+            "extension": "md",
+            "modifiedTime": "2021-07-03T22:11:32.172Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/index.md",
+            "name": "index",
+            "publicURL": "/static/8e8b47c4d4344522535a2519bb37894d/index.md",
+            "base": "index.md",
+            "blocks": 24,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages",
+            "extension": "md",
+            "modifiedTime": "2021-07-04T06:33:53.919Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/repos.md",
+            "name": "repos",
+            "publicURL": "/static/550a091a191b1075a0ef8ad7845fc1f4/repos.md",
+            "base": "repos.md",
+            "blocks": 8,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages",
+            "extension": "md",
+            "modifiedTime": "2021-07-03T22:11:32.175Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/review.md",
+            "name": "review",
+            "publicURL": "/static/49e52dc80088ea998a667c57c72ea903/review.md",
+            "base": "review.md",
+            "blocks": 72,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/showcase.md",
+            "name": "showcase",
+            "publicURL": "/static/2a1b3a1d3342b3e38455456305bd34ce/showcase.md",
+            "base": "showcase.md",
+            "blocks": 16,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": {
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/style-guide.md",
+            "name": "style-guide",
+            "publicURL": "/static/e960aefeec6f1ec80bd2961e03ae4a8a/style-guide.md",
+            "base": "style-guide.md",
+            "blocks": 48,
+            "dir": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages",
+            "extension": "md",
+            "modifiedTime": "2021-06-17T05:49:52.000Z",
+            "parent": null
+          }
+        },
+        {
+          "next": null
+        }
+      ]
+    }
+  },
+  "extensions": {}
+}

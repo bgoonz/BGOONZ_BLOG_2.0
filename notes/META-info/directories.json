@@ -1,0 +1,96 @@
+{
+  "data": {
+    "sitePage": {
+      "id": "SitePage /"
+    },
+    "allDirectory": {
+      "edges": [
+        {
+          "node": {
+            "id": "aafccaec-1ea8-51dd-9c89-36a96782acb3",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages",
+            "name": "pages"
+          }
+        },
+        {
+          "node": {
+            "id": "0a971cc5-c96b-56e2-9213-5ab871173ba3",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/blog",
+            "name": "blog"
+          }
+        },
+        {
+          "node": {
+            "id": "ebc68d6d-253e-582a-8f99-220b6b023a1b",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/experiments",
+            "name": "experiments"
+          }
+        },
+        {
+          "node": {
+            "id": "702a46c5-7946-56f6-8e50-5e654cac98be",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs",
+            "name": "docs"
+          }
+        },
+        {
+          "node": {
+            "id": "b4705b15-c297-5cfb-8baa-7eb894a27a95",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/about",
+            "name": "about"
+          }
+        },
+        {
+          "node": {
+            "id": "ab71b47f-d99d-560c-a86c-751cca0b3a66",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/faq",
+            "name": "faq"
+          }
+        },
+        {
+          "node": {
+            "id": "aa0b9018-ea2d-5ae7-b8ce-4a18947c4872",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/tools",
+            "name": "tools"
+          }
+        },
+        {
+          "node": {
+            "id": "854a39e7-72ca-5bb9-9809-45177cb7549d",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/react",
+            "name": "react"
+          }
+        },
+        {
+          "node": {
+            "id": "e6b3d0f0-5d44-5862-817c-f0fee22d3f09",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/experimental",
+            "name": "experimental"
+          }
+        },
+        {
+          "node": {
+            "id": "f99cc52b-dc93-5c7a-8a8f-988763941dd7",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/links",
+            "name": "links"
+          }
+        },
+        {
+          "node": {
+            "id": "f739b681-f480-5edb-a7b2-956147ccd580",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/quick-reference",
+            "name": "quick-reference"
+          }
+        },
+        {
+          "node": {
+            "id": "9fb4ddc9-5b36-5b64-a383-f17b256f2ac5",
+            "absolutePath": "/mnt/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src/pages/docs/articles",
+            "name": "articles"
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {}
+}
