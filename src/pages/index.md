@@ -191,7 +191,7 @@ sections:
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Embeds
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
