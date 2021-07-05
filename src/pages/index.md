@@ -191,12 +191,6 @@ sections:
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    content: |
-      ##
-    actions: []
-    type: section_hero
   - title: Contact
     section_id: lorem-ipsum
     actions:
