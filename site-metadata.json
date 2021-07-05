@@ -344,7 +344,7 @@
             },
             {
                 "label": "BLM",
-                "url": "#",
+                "url": "https://github.com/bgoonz/random-static-html-page-deploy/blob/master/blm.zip",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
