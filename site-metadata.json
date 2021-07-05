@@ -411,7 +411,7 @@
             {
                 "label": "BLM",
                 "url": "https://optimistic-lewin-8586ae.netlify.app/blm.zip",
-                "style": "primary",
+                "style": "secondary",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
