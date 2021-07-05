@@ -278,7 +278,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "WebDev Quizzes",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
