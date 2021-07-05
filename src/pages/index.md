@@ -196,7 +196,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |
-      # Embeds
+      #
     actions: []
     type: section_content
   - title: Contact
