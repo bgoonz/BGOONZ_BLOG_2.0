@@ -347,7 +347,7 @@
         "title": "WebDevHub"
     },
     "footer": {
-        "has_social": false,
+        "has_social": true,
         "social_links": [
             {
                 "label": "Twitter",
