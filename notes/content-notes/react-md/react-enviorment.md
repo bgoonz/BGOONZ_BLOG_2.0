@@ -150,3 +150,4 @@ Let's create a `.babelrc` file to configure babel.
 ```
 
 Last thing. Let's create some npm scripts so that we don't need to remember the commands we need to run our application. Add the following scripts to your `package.json` file in the `scripts` section.
+

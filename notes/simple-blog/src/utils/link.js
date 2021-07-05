@@ -15,5 +15,13 @@ export default function Link({ children, href, ...other }) {
         );
     }
 
+<<<<<<< HEAD
+    return (
+        <a href={href} {...other}>
+            {children}
+        </a>
+    );
+=======
     return <a href={href} {...other}>{children}</a>;
+>>>>>>> 2463ce91b0e33baaa31e9d29eef9c2d52887bdf2
 }

@@ -1,0 +1,1 @@
+chrome-extension://dhhpefjklgkmgeafimnjhojgjamoafof/content-fontface.js

@@ -1,11 +1,8 @@
-
-
-Running List Of Interesting Articles, Tools and Ideas… as I Explore Them
-========================================================================
+# Running List Of Interesting Articles, Tools and Ideas… as I Explore Them
 
 Translation if you read this today (3/21/2021) it will be exceedingly short… because it’s just gonna accumulate entries as I learn of them…
 
-------------------------------------------------------------------------
+---
 
 ### Running List Of Interesting Articles, Tools and Ideas… as I Explore Them
 
@@ -13,7 +10,7 @@ Translation if you read this today (3/21/2021) it will be exceedingly short… b
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*YcyGivGEhdeVNAUk.jpg" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### 1.) Stack Overflow for Teams is now free forever for up to 50 users
 

@@ -1,6 +1,6 @@
 ---
 date: '2019-05-27'
-image: images/space.gif
+image: images/best-zebra.gif
 seo:
   title: Community Round-up
   description: Commodo ante vis placerat interdum massa massa primis
@@ -32,37 +32,26 @@ title: Python Resources
 thumb_image: images/violet-pluto.png
 thumb_image_alt: python logo
 ---
-# Beginners Guide To Python[**Basic Web Development Environment Setup**&#xA;*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1\*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0\*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web**&#xA;*Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)&#xA;&#xA;
+
+# Beginners Guide To Python[**Basic Web Development Environment Setup**&#xA;*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web**&#xA;*Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)&#xA;&#xA;
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
-*   Bram Cohen
+-   Bram Cohen
 
-Article on basic web development setup… it is geared towards web but VSCode is an incredibly versitile editor and this stack really could suit just about anyone working in the field of computer science. 
+Article on basic web development setup… it is geared towards web but VSCode is an incredibly versitile editor and this stack really could suit just about anyone working in the field of computer science.
 
 ### The Repository & Live Site Behind This Article:
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### About Python(Taken From Tutorial Page Of Docs):
 
 [Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:](https://docs.python.org/3/tutorial/appetite.html)
 
-*   the high-level data types allow you to express complex operations in a single statement;
+-   the high-level data types allow you to express complex operations in a single statement;
 
-*   statement grouping is done by indentation instead of beginning and ending brackets;
+-   statement grouping is done by indentation instead of beginning and ending brackets;
 
-*   no variable or argument declarations are necessary.
+-   no variable or argument declarations are necessary.
 
 ### Installing Python:
 
@@ -80,7 +69,7 @@ python --version
 
 1.  Running python --version may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.
 
-2.  If you see the word Python with a set of numbers separated by . characters, some version of Python is installed. 
+2.  If you see the word Python with a set of numbers separated by . characters, some version of Python is installed.
 
 #### i.e.
 
@@ -88,16 +77,13 @@ python --version
 
 **As long as the first number is 3**, you have Python 3 installed.
 
-> Download Page: 
+> Download Page:
 >
 > <https://www.python.org/downloads/release/python-395/>
 
-> Download Link: 
+> Download Link:
 >
 > <https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe>
-
-
-
 
 ### Install Jupyter Notebooks:
 
@@ -127,7 +113,7 @@ Python syntax was made for readability, and easy editing. For example, the pytho
 
 Lets create a [python 3](https://repl.it/languages/python3) repl, and call it *Hello World*. Now you have a blank file called *main.py*. Now let us write our first line of code:
 
-> *Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.*
+> _Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards._
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -145,22 +131,13 @@ Another cool thing that you can generally do with all languages, are comments. I
 
 If you have a huge comment, do **not** comment all the 350 lines, just put ''' before it, and ''' at the end. Technically, this is not a comment but a string, but the computer still ignores it, so we will use it.
 
-
-
-
 ### New: Variables!
 
 Unlike many other languages, there is no var, let, or const to declare a variable in python. You simply go name = 'value'.
 
 Remember, there is a difference between integers and strings. *Remember: String = "".* To convert between these two, you can put an int in a str() function, and a string in a int() function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the float() command.
 
-
-
-
-<https://repl.it/@bgoonz/second-scr?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com>
-
-
-
+<https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com>
 
 Instead of using the , in the print function, you can put a + to combine the variables and string.
 
@@ -168,26 +145,26 @@ Instead of using the , in the print function, you can put a + to combine the
 
 There are many operators in python:
 
-*   \+
+-   \+
 
-*   \-
+-   \-
 
-*   /
+-   /
 
-*   \*
+-   \*
     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
     Now, we can look at a few more complicated ones:
 
-*simpleops.py*
+_simpleops.py_
 
 You should already know everything shown above, as it is similar to other languages. If you continue down, you will see more complicated ones.
 
-*complexop.py*
+_complexop.py_
 
 The ones above are to edit the current value of the variable.
 Sorry to JS users, as there is no i++; or anything.
 
-### *Fun Fact:&#xA;The python language was named after Monty Python.*
+### _Fun Fact:&#xA;The python language was named after Monty Python._
 
 If you really want to know about the others, view [Py Operators](https://www.tutorialspoint.com/python/python_basic_operators.htm)
 
@@ -196,9 +173,9 @@ If you really want to know about the others, view [Py Operators](https://www.tu
 Like the title?
 Anyways, a ' and a " both indicate a string, but **do not combine them!**
 
-*quotes.py*
+_quotes.py_
 
-*slicing.py*
+_slicing.py_
 
 ### String Slicing
 
@@ -209,54 +186,47 @@ The first number stands for how far in you go from the front, and the second sta
 
 Here is a list of functions/methods we will go over:
 
-*   .strip()
+-   .strip()
 
-*   len()
+-   len()
 
-*   .lower()
+-   .lower()
 
-*   .upper()
+-   .upper()
 
-*   .replace()
+-   .replace()
 
-*   .split()
-
-
-
-
-
-
+-   .split()
 
 ### New: Input()
 
 Input is a function that gathers input entered from the user in the command line. It takes one optional parameter, which is the users prompt.
 
-*inp.py*
+_inp.py_
 
 If you wanted to make it smaller, and look neater to the user, you could do…
 
-*inp2.py*
+_inp2.py_
 
 Running:
-*inp.py*
+_inp.py_
 
-*inp2.py*
+_inp2.py_
 
 ### New: Importing Modules
 
 Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write input \<modulename>. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
 
-*module.py*
+_module.py_
 
 Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do \<module>.\<function>. For example:
 
-*module2.py*
+_module2.py_
 
-> *Pro Tip:
+> \*Pro Tip:
 > Do from random import randint to not have to do random.randint(), just randint()
-> To import all functions from a module, you could do from random import **
+> To import all functions from a module, you could do from random import \*\*
 
->
 >
 
 ### New: Loops!
@@ -268,11 +238,11 @@ Loops allow you to repeat code over and over again. This is useful if you want t
 The for loop goes through a list of variables, making a seperate variable equal one of the list every time.
 Let’s say we wanted to create the example above.
 
-*loop.py*
+_loop.py_
 
 This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
 
-*loop2.py*
+_loop2.py_
 
 <https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn>
 
@@ -280,25 +250,25 @@ This will print Hello with a .3 second delay 100 times. This is just one way to
 
 The while loop runs the code while something stays true. You would put while \<expression>. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:
 
-*while.py*
+_while.py_
 
 Or you could do:
 
-*while2.py*
+_while2.py_
 
 ### New: if Statement
 
 The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes **only once**. An if statement is written:
 
-*if.py*
+_if.py_
 
 Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an elif statement:
 
-*elif.py*
+_elif.py_
 
 Now, you may wonder how to run code if none work. Well, there is a simple statement called else:
 
-*else.py*
+_else.py_
 
 ### New: Functions (def)
 
@@ -307,25 +277,19 @@ It is quite tiring to type:
 
 Characters: 389
 
-*nofunc.py*
+_nofunc.py_
 
 Now with functions, you can seriously lower the amount of characters:
 
 Characters: 254
 
-*functions.py*
+_functions.py_
 
 ### Project Based Learning:
 
 The following is a modified version of a tutorial posted By: [InvisibleOne ](https://replit.com/@InvisibleOne)
 
-I would cite the original tutorial it’s self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it. 
-
-
-
-
-
-
+I would cite the original tutorial it’s self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it.
 
 ### 1. Adventure Story
 

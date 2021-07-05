@@ -14,7 +14,7 @@ It is called JSX, and it is a syntax extension to JavaScript. We recommend using
 
 JSX produces React “elements”. We will explore rendering them to the DOM in the [next section](https://reactjs.org/docs/rendering-elements.html). Below, you can find the basics of JSX necessary to get you started.
 
-#### Why JSX? <a id="why-jsx"></a>
+### Why JSX? <a id="why-jsx"></a>
 
 React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
 
@@ -24,7 +24,7 @@ React [doesn’t require](https://reactjs.org/docs/react-without-jsx.html) using
 
 With that out of the way, let’s get started!
 
-#### Embedding Expressions in JSX <a id="embedding-expressions-in-jsx"></a>
+### Embedding Expressions in JSX <a id="embedding-expressions-in-jsx"></a>
 
 In the example below, we declare a variable called `name` and then use it inside JSX by wrapping it in curly braces:
 
@@ -65,7 +65,7 @@ ReactDOM.render(
 
 We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of [automatic semicolon insertion](https://stackoverflow.com/q/2846283).
 
-#### JSX is an Expression Too <a id="jsx-is-an-expression-too"></a>
+### JSX is an Expression Too <a id="jsx-is-an-expression-too"></a>
 
 After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.
 
@@ -78,7 +78,7 @@ function getGreeting(user) {
   return <h1>Hello, Stranger.</h1>;}
 ```
 
-#### Specifying Attributes with JSX <a id="specifying-attributes-with-jsx"></a>
+### Specifying Attributes with JSX <a id="specifying-attributes-with-jsx"></a>
 
 You may use quotes to specify string literals as attributes:
 
@@ -100,7 +100,7 @@ Don’t put quotes around curly braces when embedding a JavaScript expression in
 >
 > For example, `class` becomes [ `className` ](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) in JSX, and `tabindex` becomes [ `tabIndex` ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex).
 
-#### Specifying Children with JSX <a id="specifying-children-with-jsx"></a>
+### Specifying Children with JSX <a id="specifying-children-with-jsx"></a>
 
 If a tag is empty, you may close it immediately with `/>` , like XML:
 
@@ -119,7 +119,7 @@ const element = (
 );
 ```
 
-#### JSX Prevents Injection Attacks <a id="jsx-prevents-injection-attacks"></a>
+### JSX Prevents Injection Attacks <a id="jsx-prevents-injection-attacks"></a>
 
 It is safe to embed user input in JSX:
 
@@ -131,7 +131,7 @@ const element = <h1>{title}</h1>;
 
 By default, React DOM [escapes](https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-on-html) any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that’s not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent [XSS \(cross-site-scripting\)](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
 
-#### JSX Represents Objects <a id="jsx-represents-objects"></a>
+### JSX Represents Objects <a id="jsx-represents-objects"></a>
 
 Babel compiles JSX down to `React.createElement()` calls.
 
@@ -173,3 +173,4 @@ We will explore rendering React elements to the DOM in the [next section](https:
 > **Tip:**
 >
 > We recommend using the [“Babel” language definition](https://babeljs.io/docs/en/next/editors) for your editor of choice so that both ES6 and JSX code is properly highlighted.
+

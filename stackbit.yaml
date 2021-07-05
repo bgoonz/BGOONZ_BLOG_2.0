@@ -123,7 +123,6 @@ models:
             - action
   doc_sections:
     type: data
-    file: doc_sections.yml
     label: Documentation Sections
     fields:
       - type: string
@@ -143,8 +142,10 @@ models:
           The main sections of the documentation. Every item must be the URL
           slug representing the section.
         items:
-          type: string
+          type: slug
     description: my documentation collection
+    match:
+      - '*.md'
   docs:
     type: page
     urlPath: /docs/{slug}
@@ -176,6 +177,10 @@ models:
         models:
           - stackbit_page_meta
         label: Seo
+      - name: embed
+        type: html
+        label: embed-content
+        description: embedded iframe
   advanced:
     type: page
     label: Advanced Page
@@ -673,3 +678,23 @@ models:
         description: iframe inclusions
         required: true
         label: Iframe
+      - name: description
+        type: string
+        label: description
+        description: describes html content
+        default: description
+  embed:
+    type: page
+    label: embed
+    layout: embed
+    description: embedded assets
+    folder: /docs/Experimental
+    match:
+      - '*.md'
+    fields:
+      - name: content
+        type: html
+        label: iframe
+        description: embed content
+        default: ' <iframe height="900px" width="100%" src="https://replit.com/@bgoonz/live-examples-1?lite=true" scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>'
+        required: true

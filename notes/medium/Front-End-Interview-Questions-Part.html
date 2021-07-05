@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>Front-End-Interview-Questions-Part</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="front-end-interview-questions-part-2">Front End Interview Questions Part 2</h1>
+        <p>These will focus more on vocabulary and concepts than the application driven approach in my last post!</p>
+        <hr />
+        <h4 id="codex"><a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a></h4>
+        <h3 id="front-end-interview-questions-part-2-1">Front End Interview Questions Part 2</h3>
+        <h4 id="these-will-focus-more-on-vocabulary-and-concepts-than-the-application-driven-approach-in-my-last-post">
+            These will focus more on vocabulary and concepts than the application-driven approach in my last post!
+        </h4>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/1200/0*D3yQI42gBkYpnLXY.jpg" class="graf-image" />
+        </figure>
+        <h3 id="heres-part-one-for-reference">Here’s part one for reference:</h3>
+        <p>
+            <a
+                href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822"
+                ><strong>The Web Developer’s Technical Interview</strong><br />
+                <em>Questions…. Answers… and links to the missing pieces.</em>bryanguner.medium.com</a
+            ><a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <ul>
+            <li>
+                <span id="0232"><strong>­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?</strong></span>
+            </li>
+        </ul>
+        <p>Semantic HTML is markup that conveys meaning, not appearance, to search engines to make everything easier to identify.</p>
+        <ul>
+            <li>
+                <span id="37b8"><strong>Name two big differences between display: block; and display: inline; .</strong></span>
+            </li>
+        </ul>
+        <p>
+            block starts on a new line and takes up the full width of the content.<br />
+             inline starts on the same line as previous content, in line with other content, and takes up only the space needed for the content.
+        </p>
+        <p>· <strong>What are the 4 areas of the box model?</strong></p>
+        <p>content, padding, border, margin</p>
+        <p>· <strong>While using flexbox, what axis does the following property work on: align-items: center?</strong></p>
+        <p>cross-axis</p>
+        <p>· <strong>Explain why git is valuable to a team of developers.</strong></p>
+        <p>
+            Allows you to dole out tiny pieces of a large project to many developers who can all work towards the same goal on their own chunks, allows roll
+            back if you make a mistake; version control.
+        </p>
+        <p>· <strong>What is the difference between an adaptive website and a fully responsive website?</strong></p>
+        <p>An adaptive website “adapts” to fit a pre-determined set of screen sizes/devices, and a responsive one changes to fit all devices.</p>
+        <p>· <strong>Describe what it means to be mobile first vs desktop first.</strong></p>
+        <p>It means you develop/code the site with mobile in mind first and work your way outward in screen size.</p>
+        <p>· <strong>What does font-size: 62.5% in the html tag do for us when using rem units?</strong></p>
+        <p>This setting makes it so that 1 rem = 10 px for font size, easier to calculate.</p>
+        <p>· <strong>How would you describe preprocessing to someone new to CSS?</strong></p>
+        <p>
+            Preprocessing is basically a bunch of functions and variables you can use to store CSS settings in different ways that make it easier to code CSS.
+        </p>
+        <p>· <strong>What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?</strong></p>
+        <p>
+            Favorite is (parametric) mixins; but I don’t have a lot of trouble with preprocessing. What gives me the most trouble is knowing ahead of time what
+            would be good to go in a mixin for a given site.
+        </p>
+        <p>· <strong>Describe the biggest difference between .forEach &amp; .map.</strong></p>
+        <p>forEach iterates over an array item by item, and map calls a function on each array item, but returns another/additional array, unlike forEach.</p>
+        <p>· <strong>What is the difference between a function and a method?</strong></p>
+        <p>Every function is an object. If a value is a function, it is a method. Methods have to be ‘received’ by something; functions do not.</p>
+        <p>· <strong>What is closure?</strong></p>
+        <p>
+            It is code identified elsewhere that we can use later; gives the ability to put functions together. If a variable isn’t defined, a function looks
+            outward for context.
+        </p>
+        <p>· <strong>Describe the four rules of the ‘this’ keyword.</strong></p>
+        <ol type="1">
+            <li><p>Window/global binding — this is the window/console object. ‘use strict’; to prevent window binding.</p></li>
+            <li>
+                <p>
+                    Implicit binding — when a function is called by a dot, the object preceding the dot is the ‘this’. 80 percent of ‘this’ is from this type of
+                    binding.
+                </p>
+            </li>
+            <li><p>New binding — points to new object created &amp; returned by constructor function</p></li>
+            <li><p>Explicit binding — whenever call, bind, or apply are used.</p></li>
+        </ol>
+        <p>· <strong>Why do we need super() in an extended class?</strong></p>
+        <p>Super ties the parent to the child.</p>
+        <ul>
+            <li>
+                <span id="d57b"><strong>What is the DOM?</strong></span>
+            </li>
+        </ul>
+        <p>Document object model, the ‘window’ or container that holds all the page’s elements</p>
+        <ul>
+            <li>
+                <span id="6172"><strong>What is an event?</strong></span>
+            </li>
+        </ul>
+        <p>
+            An event is something happening on or to the page, like a mouse click, doubleclick, key up/down, pointer out of element/over element, things like
+            this. There are tons of “events” that javascript can detect.
+        </p>
+        <ul>
+            <li>
+                <span id="75c5"><strong>What is an event listener?</strong></span>
+            </li>
+        </ul>
+        <p>Javascript command that ‘listens’ for an event to happen on the page to a given element and then runs a function when that event happens</p>
+        <ul>
+            <li>
+                <span id="157d"><strong>Why would we convert a NodeList into an Array?</strong></span>
+            </li>
+        </ul>
+        <p>A NodeList isn’t a real array, so it won’t have access to array methods such as slice or map.</p>
+        <ul>
+            <li>
+                <span id="6934"><strong>What is a component?</strong></span>
+            </li>
+        </ul>
+        <p>Reusable pieces of code to display info in a consistent repeatable way</p>
+        <p>
+            ·
+            <strong
+                >What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research
+                on the web.</strong
+            >
+        </p>
+        <p>
+            ReactJS is a library used to build large applications. It’s very good at assisting developers in manipulating the DOM element to create rich user
+            experiences. We need a way to off-load the state/data that our apps use, and React helps us do that.
+        </p>
+        <p>
+            · <strong>What does it mean to <em>think</em> in react?</strong>
+        </p>
+        <p>
+            It makes you think about how to organize/build apps a little differently because it’s very scalable and allows you to build huge apps. React’s
+            one-way data flow makes everything modular and fast. You can build apps top-down or bottom-up.
+        </p>
+        <p>· <strong>Describe state.</strong></p>
+        <p>Some data we want to display.</p>
+        <p>· <strong>Describe props.</strong></p>
+        <p>Props are like function arguments in JS and attributes in HTML.</p>
+        <p>· <strong>What are side effects, and how do you sync effects in a React component to state or prop changes?</strong></p>
+        <p>Side effects are anything that affects something outside the executed function’s scope like fetching data from an API, a timer, or logging.</p>
+        <p>· <strong>Explain benefit(s) using client-side routing?</strong></p>
+        <p>Answer: It’s much more efficient than the traditional way, because a lot of data isn’t being transmitted unnecessarily.</p>
+        <p>· <strong>Why would you use class component over function components (removing hooks from the question)?</strong></p>
+        <p>
+            Because some companies still use class components and don’t want to switch their millions of dollars’ worth of code over to all functional hooks,
+            and also there’s currently a lot more troubleshooting content out there for classes that isn’t out there for hooks. Also, functional components are
+            better when you don’t need state, presentational components.
+        </p>
+        <p>· <strong>Name three lifecycle methods and their purposes.</strong></p>
+        <p>componentDidMount = do the stuff inside this ‘function’ after the component mounted</p>
+        <p>componentDidUpdate = do the stuff inside this function after the component updated</p>
+        <p>componentWillUnmount = clean-up in death/unmounting phase</p>
+        <p>· <strong>What is the purpose of a custom hook?</strong></p>
+        <p>allow you to apply non-visual behavior and stateful logic throughout your components by reusing the same hook over and over again</p>
+        <p>· <strong>Why is it important to test our apps?</strong></p>
+        <p>
+            Gets bugs fixed faster, reduces regression risk, makes you consider/work out the edge cases, acts as documentation, acts as safety net when
+            refactoring, makes code more trustworthy
+        </p>
+        <p>· <strong>What problem does the context API help solve?</strong></p>
+        <p>You can store data in a context object instead of prop drilling.</p>
+        <p>
+            ·
+            <strong
+                >In your own words, describe actions, reducers and the store and their role in Redux. What does each piece do? Why is the store known as a
+                ‘single source of truth’ in a redux application?</strong
+            >
+        </p>
+        <p>
+            Everything that changes within your app is represented by a single JS object called the store. The store contains state for our application. When
+            changes are made to our application state, we never write to our store object but rather clone the state object, modify the clone, and replace the
+            original state with the new copy, never mutating the original object. Reducers are the only place we can update our state. Actions tell our reducers
+            “how” to update the state, and perhaps with what data it should be updated, but only a reducer can actually update the state.
+        </p>
+        <p>· <strong>What is the difference between Application state and Component state? When would be a good time to use one over the other?</strong></p>
+        <p>App state is global, component state is local. Use component state when you have component-specific variables.</p>
+        <p>· <strong>Describe redux-thunk, what does it allow us to do? How does it change our action-creators?</strong></p>
+        <p>
+            Redux Thunk is middleware that provides the ability to handle asynchronous operations inside our Action Creators, because reducers are normally
+            synchronous.
+        </p>
+        <p>· <strong>What is your favorite state management system you’ve learned and this sprint? Please explain why!</strong></p>
+        <p>Redux, because I felt it was easier to understand than the context API.</p>
+        <p>· <strong>Explain what a token is used for.</strong></p>
+        <p>
+            Many services out in the wild require the client (our React app, for example) to provide proof that it’s authenticated with them. The server running
+            these services can issue a JWT (JSON Web Token) as the authentication token, in exchange for correct login credentials.
+        </p>
+        <p>· <strong>What steps can you take in your web apps to keep your data secure?</strong></p>
+        <p>
+            As we build our web apps, we will most likely have some “protected” routes — routes that we only want to render if the user has logged in and been
+            authenticated by our server. The way this normally works is we make a login request, sending the server the user’s username and password. The server
+            will check those credentials against what is in the database, and if it can authenticate the user, it will return a token. Once we have this token,
+            we can add two layers of protection to our app. One with protected routes, the other by sending an authentication header with our API calls (as we
+            learned in the above objective).
+        </p>
+        <p>· <strong>Describe how web servers work.</strong></p>
+        <p>
+            The “world wide web” (which we’ll refer to as “the web”) is just a part of the internet — which is itself a network of interconnected computers. The
+            web is just one way to share data over the internet. It consists of a body of information stored on web servers, ready to be shared across the
+            world. The term “web server” can mean two things:
+        </p>
+        <p>· a computer that stores the code for a website</p>
+        <p>· a program that runs on such a computer</p>
+        <p>
+            The physical computer device that we call a web server is connected to the internet, and stores the code for different websites to be shared across
+            the world at all times. When we load the code for our websites, or web apps, on a server like this, we would say that the server is “hosting” our
+            website/app.
+        </p>
+        <p>· <strong>Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.</strong></p>
+        <p>Create, Read, Update, Delete</p>
+        <p>· <strong>Mention two parts of Express that you learned about this week.</strong></p>
+        <p>Routing/router, Middleware, convenience helpers</p>
+        <p>· <strong>Describe Middleware?</strong></p>
+        <p>array of functions that get executed in the order they are introduced into the server code</p>
+        <p>· <strong>Describe a Resource?</strong></p>
+        <p>o everything is a <strong>resource</strong>.</p>
+        <p>o each resource is accessible via a <strong>unique URI</strong>.</p>
+        <p>o resources can have multiple <strong>representations</strong>.</p>
+        <p>o communication is done over a <strong>stateless</strong> protocol (HTTP).</p>
+        <p>o management of resources is done via <strong>HTTP methods</strong>.</p>
+        <p>· <strong>What can the API return to help clients know if a request was successful?</strong></p>
+        <p>200 status code/201 status code</p>
+        <p>· <strong>How can we partition our application into sub-applications?</strong></p>
+        <p>By dividing the code up into multiple files and ‘requiring’ them in the main server file.</p>
+        <p>· <strong>Explain the difference between Relational Databases and SQL.</strong></p>
+        <p>SQL is the language used to access a relational database.</p>
+        <p>· <strong>Why do tables need a primary key?</strong></p>
+        <p>To uniquely identify each record/row.</p>
+        <p>· <strong>What is the name given to a table column that references the primary key on another table.</strong></p>
+        <p>Foreign key</p>
+        <p>
+            · <strong>What do we need in order to have a <em>many to many</em> relationship between two tables.</strong>
+        </p>
+        <p>An <strong>intermediary table</strong> that holds foreign keys that reference the primary key on the related tables.</p>
+        <p>
+            · <strong>What is the purpose of using <em>sessions</em>?</strong>
+        </p>
+        <p>The purpose is to persist data across requests.</p>
+        <p>· <strong>What does bcrypt do to help us store passwords in a secure manner?</strong></p>
+        <p>o password hashing function.</p>
+        <p>o implements salting both manual and automatically.</p>
+        <p>o accumulative hashing rounds.</p>
+        <p>· <strong>What does bcrypt do to slow down attackers?</strong></p>
+        <p>
+            Having an algorithm that hashes the information multiple times (rounds) means an attacker needs to have the hash, know the algorithm used, and how
+            many rounds were used to generate the hash in the first place. So it basically makes it a lot more difficult to get somebody’s password.
+        </p>
+        <p>· <strong>What are the three parts of the JSON Web Token?</strong></p>
+        <p>Header, payload, signature</p>
+        <h3 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">
+            If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+        </h3>
+        <p>
+            <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"
+                ><strong>bgoonz’s gists</strong><br />
+                <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em
+                >gist.github.com</a
+            ><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>
+            <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"
+                ><strong>bgoonz — Overview</strong><br />
+                <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a
+            ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <h3 id="or-checkout-my-personal-resource-site">Or Checkout my personal Resource Site:</h3>
+        <p>
+            <a
+                href="https://web-dev-resource-hub.netlify.app/"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://web-dev-resource-hub.netlify.app/"
+                ><strong>Web-Dev-Resource-Hub</strong><br />
+                <em>Edit description</em>web-dev-resource-hub.netlify.app</a
+            ><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+        </p>
+        <p>
+            By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+            <a href="https://medium.com/p/86ddc0e91443">March 19, 2021</a>.
+        </p>
+        <p><a href="https://medium.com/@bryanguner/front-end-interview-questions-part-2-86ddc0e91443" class="p-canonical">Canonical link</a></p>
+        <p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+    </body>
+</html>

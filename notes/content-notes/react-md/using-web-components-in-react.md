@@ -49,4 +49,5 @@ class XSearch extends HTMLElement {
 customElements.define('x-search', XSearch);
 ```
 
->
+&gt;
+

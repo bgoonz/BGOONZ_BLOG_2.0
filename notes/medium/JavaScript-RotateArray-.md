@@ -1,11 +1,8 @@
-
-
-JavaScript Rotate (Array) ProblemWalkthrough
-============================================
+# JavaScript Rotate (Array) ProblemWalkthrough
 
 Explanation for Rotate Right
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -26,7 +23,7 @@ Explanation for Rotate Right
 
 **HINT:** you can use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" class="markup--anchor markup--p-anchor">Array#slice</a> to create a copy of an array
 
-------------------------------------------------------------------------
+---
 
 > JavaScript gives us four methods to add or remove items from the beginning or end of arrays:
 

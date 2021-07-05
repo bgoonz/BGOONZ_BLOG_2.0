@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>HTTP</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="http-basics">HTTP Basics</h1>
+        <p>“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to…</p>
+        <hr />
+        <h3 id="http-basics-1">HTTP Basics</h3>
+        <blockquote>
+            <p>
+                <em
+                    >“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to
+                    yearn for the vast and endless sea.” — Antoine de Saint-Exupery;</em
+                >
+            </p>
+        </blockquote>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*LUQe60D2FeVzDEi8.png" class="graf-image" />
+        </figure>
+        <ul>
+            <li>
+                <span id="cb9d"><code>HTTP</code> : Hypertext Transfer Protocol.</span>
+            </li>
+            <li>
+                <span id="8248"><code>HT</code> : Hypertext - content with references to other content.</span>
+            </li>
+            <li><span id="1ad1">Term used to refer to content in computing.</span></li>
+            <li><span id="5ad0">What makes the Web a “web”.</span></li>
+            <li><span id="11eb">Most fundamental part of how we interact.</span></li>
+            <li>
+                <span id="41da"><code>Hyperlinks</code> : Links; references between HT resources.</span>
+            </li>
+            <li>
+                <span id="b0a1"><code>TP</code> : Transfer Protocol - set of guidelines surrounding the transmission of data.</span>
+            </li>
+            <li><span id="e43c">Defines the expectations for both ends of the transer.</span></li>
+            <li><span id="ca8a">Defines some ways the transfer might fail.</span></li>
+            <li>
+                <span id="3995">HTTP is a <code>request/response</code> protocol.</span>
+            </li>
+            <li>
+                <span id="dc85">HTTP works between <code>clients</code> &amp; <code>servers</code>.</span>
+            </li>
+            <li>
+                <span id="a965"><code>Clients</code> : User Agent - the data consumer.</span>
+            </li>
+            <li>
+                <span id="2588"><code>Servers</code> : Origin - Data provider &amp; where the application is running.</span>
+            </li>
+        </ul>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*OBVdK39aaS5sjV9B.png" class="graf-image" />
+        </figure>
+        <h3 id="components-of-http-based-systems">
+            <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#components_of_http-based_systems"
+                class="markup--anchor markup--h3-anchor"
+                title="Permalink to Components of HTTP-based systems"
+                >Components of HTTP-based systems</a
+            >
+        </h3>
+        <p>
+            HTTP is a client-server protocol: requests are sent by one entity, the user-agent (or a proxy on behalf of it). Most of the time the user-agent is a
+            Web browser, but it can be anything, for example a robot that crawls the Web to populate and maintain a search engine index.
+        </p>
+        <p>
+            Each individual request is sent to a server, which handles it and provides an answer, called the <em>response</em>. Between the client and the
+            server there are numerous entities, collectively called
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary/Proxy_server" class="markup--anchor markup--p-anchor">proxies</a>, which perform
+            different operations and act as gateways or
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary/Cache" class="markup--anchor markup--p-anchor">caches</a>, for example.
+        </p>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/800/0*WR6l6JwNOvkfrljt.png" class="graf-image" />
+        </figure>
+        <p><strong>Properties of HTTP</strong></p>
+        <ul>
+            <li>
+                <span id="bc5b"
+                    ><code>Reliable Connections</code> : Messages passed between a client &amp; server sacrifice a little speed for the sake of trust.</span
+                >
+            </li>
+            <li>
+                <span id="aec2"><code>TCP</code> is HTTP’s preferred connection type.</span>
+            </li>
+            <li>
+                <span id="9880"><code>Stateless Transfer</code> : HTTP is a stateless protocol - meaning it does not store any kind of information.</span>
+            </li>
+            <li><span id="b204">HTTP supports cookies.</span></li>
+            <li>
+                <span id="5e72"><code>Intermediaries</code> : Servers or devices that pass your request along which come in three types:</span>
+            </li>
+        </ul>
+        <ol type="1">
+            <li>
+                <span id="fb4d"><code>Proxies</code> : Modify your request so it appears to come from a different source.</span>
+            </li>
+            <li>
+                <span id="bd02"><code>Gateways</code> : Pretend to be the resource server you requested.</span>
+            </li>
+            <li>
+                <span id="06a0"><code>Tunnels</code> : Simply passes your request along.</span>
+            </li>
+        </ol>
+        <hr />
+        <h3 id="http-requests">HTTP Requests</h3>
+        <p><strong>Structure of an HTTP Request</strong></p>
+        <pre><code>GET / HTTP/1.1
+Host: appacademy.io
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9</code></pre>
+        <h3 id="example-of-a-request">Example of a request:</h3>
+        <figure>
+            <img src="https://cdn-images-1.medium.com/max/1200/1*tq-BRYuzZ_Dx8s1g5xJKKQ.png" class="graf-image" />
+        </figure>
+        <ul>
+            <li>
+                <span id="bfa1"><strong>Request-line &amp; HTTP verbs</strong></span>
+            </li>
+            <li><span id="0e3d">The first line of an HTTP Request made up of three parts:</span></li>
+        </ul>
+        <ol type="1">
+            <li>
+                <span id="e67b">The <code>Method</code> : Indicated by an HTTP Verb.</span>
+            </li>
+            <li>
+                <span id="f17e">The <code>URI</code> : Uniform Resource Indicator that ID’s our request.</span>
+            </li>
+            <li>
+                <span id="cf4a">THe <code>HTTP</code> <strong>Version</strong> : Version we expect to use.</span>
+            </li>
+        </ol>
+        <ul>
+            <li><span id="6fd5">HTTP Verbs are a simply way of declaring our intention to the server.</span></li>
+            <li>
+                <span id="5435"><code>GET</code> : Used for direct requests.</span>
+            </li>
+            <li>
+                <span id="9059"><code>POST</code>: Used for creating new resources on the server.</span>
+            </li>
+            <li>
+                <span id="456b"><code>PUT</code>: Used to updated a resource on the server.</span>
+            </li>
+            <li>
+                <span id="5c1a"><code>PATCH</code> : Similar to PUT, but do not require the whole resource to perform the update.</span>
+            </li>
+            <li>
+                <span id="3940"><code>DELETE</code> : Used to destroy resources on the server.</span>
+            </li>
+        </ul>
+        <p><strong>Headers</strong></p>
+        <ul>
+            <li>
+                <span id="682b"
+                    >Key-Value pairs that come after the request line — they appear on sep. lines and define metadata needed to process the request.</span
+                >
+            </li>
+            <li><span id="5e4d">Some common headers:</span></li>
+            <li>
+                <span id="2971"><code>Host</code> : Root path for our URI.</span>
+            </li>
+            <li>
+                <span id="21e1"><code>User-Agent</code> : Displays information about which browser the request originated from.</span>
+            </li>
+            <li>
+                <span id="2555"><code>Referer</code> : Defines the URL you’re coming from.</span>
+            </li>
+            <li>
+                <span id="e946"><code>Accept</code> : Indicates what the client will receive.</span>
+            </li>
+            <li>
+                <span id="2011"><code>Content</code><strong>-</strong> : Define Details about the body of the request.</span>
+            </li>
+        </ul>
+        <p><strong>Body</strong></p>
+        <ul>
+            <li>
+                <span id="8af8"
+                    >For when we need to send data that doesn’t fit into the header &amp; is too complex for the URI we can use the <em>body</em>.</span
+                >
+            </li>
+            <li>
+                <span id="9271"><code>URL encoding</code> : Most common way form data is formatted.</span>
+            </li>
+            <li>
+                <span id="852a"><code>name=claire&amp;age=29&amp;iceCream=vanilla</code></span>
+            </li>
+            <li><span id="cb18">We can also format using JSON or XML.</span></li>
+        </ul>
+        <p><strong>Sending an HTTP request from the command line</strong></p>
+        <ul>
+            <li>
+                <span id="7586"><strong>netcat</strong> : (nc) A Utility that comes as part of Unix-line environments such as Ubuntu and macOS.</span>
+            </li>
+            <li><span id="4288">Allows us to open a direct connection with a URL and manually send HTTP requests.</span></li>
+            <li>
+                <span id="07dd"><code>nc -v appacademy.io 80</code></span>
+            </li>
+            <li>
+                <span id="b93e"><code>man nc</code> to open the netcat manual.</span>
+            </li>
+        </ul>
+        <hr />
+        <h3 id="http-responses">HTTP Responses</h3>
+        <p><strong>Structure of a Response</strong></p>
+        <pre><code>HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: _rails-class-site_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJTM5NWM5YTVlNTEyZDFmNTNlN; path=/; secure; HttpOnly
+X-Request-Id: cf5f30dd-99d0-46d7-86d7-6fe57753b20d
+X-Runtime: 0.006894
+Strict-Transport-Security: max-age=31536000
+Vary: Origin
+Via: 1.1 vegur
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Server: cloudflare
+CF-RAY: 51d641d1ca7d2d45-TXL
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+...
+...
+&lt;/html&gt;</code></pre>
+        <p><strong>Status</strong></p>
+        <ul>
+            <li>
+                <span id="f3f8">First line of an HTTP response — gives us a high level overview of the server’s intentions. (<code>status line</code>)</span>
+            </li>
+            <li>
+                <span id="5353"><code>HTTP/1.1 200 OK</code></span>
+            </li>
+            <li>
+                <span id="5882"><code>HTTP status codes</code> : numeric way of representing a server’s response.</span>
+            </li>
+            <li><span id="78bc">Follow the structure: x: xxx — xxx;</span></li>
+        </ul>
+        <h3 id="status-codes-100---199-informational"><code>Status codes 100 - 199: Informational</code></h3>
+        <ul>
+            <li><span id="61b2">Allow the clinet to know that a req. was received, and provides extra info from the server.</span></li>
+        </ul>
+        <h3 id="status-codes-200---299-successful"><code>Status codes 200 - 299: Successful</code></h3>
+        <ul>
+            <li><span id="da7c">Indicate that the request has succeeded and the server is handling it.</span></li>
+            <li><span id="c109">Common Examples: 200 OK (req received and fulfilled) &amp; 201 Created (received and new record was created)</span></li>
+        </ul>
+        <h3 id="status-codes-300---399-redirection"><code>Status codes 300 - 399: Redirection</code></h3>
+        <ul>
+            <li><span id="003b">Let the client know if there has been a change.</span></li>
+            <li>
+                <span id="0ca4"
+                    >Common Examples: 301 Moved Permanently (resource you requested is in a totally new location) &amp; 302 Found (indicates a temporary
+                    move)</span
+                >
+            </li>
+        </ul>
+        <h3 id="status-codes-400---499-client-error"><code>Status codes 400 - 499: Client Error</code></h3>
+        <ul>
+            <li><span id="1f8a">Indicate problem with client’s request.</span></li>
+            <li>
+                <span id="d68d"
+                    >Common Examples: 400 Bad Request (received, but could not understand) &amp; 401 Unauthorized (resource exists but you’re not allowed to see
+                    w/o authentication) &amp; 403 Forbidden (resource exists but you’re not allowed to see it at all ) &amp; 404 Not Found (resource requested
+                    does not exist);</span
+                >
+            </li>
+        </ul>
+        <h3 id="status-codes-500---599-server-error"><code>Status codes 500 - 599: Server Error</code></h3>
+        <ul>
+            <li><span id="93fc">Indicates request was formatted correctly, but the server couldn’t do what you asked due to an internal problem.</span></li>
+            <li>
+                <span id="96cf">Common Examples: 500 Internal Server Error (Server had trouble processing) &amp; 504 Gateway Timeout (Server timeout);</span>
+            </li>
+        </ul>
+        <h3 id="headers-work-just-like-http-requests."><strong>Headers</strong> : Work just like HTTP requests.</h3>
+        <blockquote>
+            <p>Common Examples:</p>
+        </blockquote>
+        <ul>
+            <li>
+                <span id="6859"><code>Location</code> : Used by client for redirection responses.</span>
+            </li>
+            <li>
+                <span id="a497"><code>Content-Type</code> : Let’s client know what format the body is in.</span>
+            </li>
+            <li>
+                <span id="1e08"><code>Expires</code> : When response is no longer valid</span>
+            </li>
+            <li>
+                <span id="f45d"><code>Content-Disposition</code> : Let’s client know how to display the response.</span>
+            </li>
+            <li>
+                <span id="b46e"><code>Set-Cookie</code> : Sends data back to the client to set on the cookie.</span>
+            </li>
+            <li>
+                <span id="1e80"><code>Data</code> : If the request is successful, the body of the response will contain the resource you have requested.</span>
+            </li>
+        </ul>
+        <h3 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">
+            If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+        </h3>
+        <p>
+            <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"
+                ><strong>bgoonz’s gists</strong><br />
+                <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em
+                >gist.github.com</a
+            ><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>
+            <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"
+                ><strong>bgoonz — Overview</strong><br />
+                <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a
+            ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <h3 id="or-checkout-my-personal-resource-site">Or Checkout my personal Resource Site:</h3>
+        <p><strong>Currently under development and very buggy!</strong></p>
+        <p>
+            <a
+                href="https://web-dev-resource-hub.netlify.app/"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://web-dev-resource-hub.netlify.app/"
+                ><strong>Web-Dev-Hub</strong><br />
+                <em>Edit description</em>web-dev-resource-hub.netlify.app</a
+            ><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+        </p>
+        <p>
+            If you want to learn more and get some practice in … download
+            <a href="https://www.postman.com/" class="markup--anchor markup--p-anchor">Postman</a> and start going through some tutorials!
+        </p>
+        <p>Happy Coding!</p>
+        <p>
+            By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+            <a href="https://medium.com/p/8f02a96a834a">March 18, 2021</a>.
+        </p>
+        <p><a href="https://medium.com/@bryanguner/http-basics-8f02a96a834a" class="p-canonical">Canonical link</a></p>
+        <p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+    </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>Deploy-React-App-To-Heroku-Using-Postgres</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="deploy-react-app-to-heroku-using-postgres-express">Deploy React App To Heroku Using Postgres &amp; Express</h1>
+        <p>Heroku is an web application that makes deploying applications easy for a beginner.</p>
+        <hr />
+        <h3 id="deploy-react-app-to-heroku-using-postgres-express-1">Deploy React App To Heroku Using Postgres &amp; Express</h3>
+        <p>Heroku is an web application that makes deploying applications easy for a beginner.</p>
+        <p>
+            Before you begin deploying, make sure to remove any <code>console.log</code> ’s or <code>debugger</code> ’s in any production code. You can search
+            your entire project folder if you are using them anywhere.
+        </p>
+        <p>
+            You will set up Heroku to run on a production, not development, version of your application. When a Node.js application like yours is pushed up to
+            Heroku, it is identified as a Node.js application because of the <code>package.json</code> file. It runs <code>npm install</code> automatically.
+            Then, if there is a <code>heroku-postbuild</code> script in the <code>package.json</code> file, it will run that script. Afterwards, it will
+            automatically run <code>npm start</code> .
+        </p>
+        <p>
+            In the following phases, you will configure your application to work in production, not just in development, and configure the
+            <code>package.json</code> scripts for <code>install</code> , <code>heroku-postbuild</code> and <code>start</code> scripts to install, build your
+            React application, and start the Express production server.
+        </p>
+        <h3 id="phase-1-heroku-connection">Phase 1: Heroku Connection</h3>
+        <p>If you haven’t created a Heroku account yet, create one <a href="https://signup.heroku.com/" class="markup--anchor markup--p-anchor">here</a>.</p>
+        <p>
+            Add a new application in your <a href="https://dashboard.heroku.com/" class="markup--anchor markup--p-anchor">Heroku dashboard</a> named whatever
+            you want. Under the “Resources” tab in your new application, click “Find more add-ons” and add the “Heroku Postgres” add-on with the free Hobby Dev
+            setting.
+        </p>
+        <p>
+            In your terminal, install the
+            <a href="https://devcenter.heroku.com/articles/heroku-command-line" class="markup--anchor markup--p-anchor">Heroku CLI</a>. Afterwards, login to
+            Heroku in your terminal by running the following:
+        </p>
+        <pre><code>heroku login</code></pre>
+        <p>
+            Add Heroku as a remote to your project’s git repository in the following command and replace <code>&lt;name-of-Heroku-app&gt;</code> with the name
+            of the application you created in the <a href="https://dashboard.heroku.com/" class="markup--anchor markup--p-anchor">Heroku dashboard</a>.
+        </p>
+        <pre><code>heroku git:remote -a &lt;name-of-Heroku-app&gt;</code></pre>
+        <p>Next, you will set up your Express + React application to be deployable to Heroku.</p>
+        <h3 id="phase-2-setting-up-your-express-react-application">Phase 2: Setting up your Express + React application</h3>
+        <p>
+            Right now, your React application is on a different localhost port than your Express application. However, since your React application only
+            consists of static files that don’t need to bundled continuously with changes in production, your Express application can serve the React assets in
+            production too. These static files live in the <code>frontend/build</code> folder after running <code>npm run build</code> in the
+            <code>frontend</code> folder.
+        </p>
+        <p>Add the following changes into your <code>backend/routes.index.js</code> file.</p>
+        <p>
+            At the root route, serve the React application’s static <code>index.html</code> file along with <code>XSRF-TOKEN</code> cookie. Then serve up all
+            the React application’s static files using the <code>express.static</code> middleware. Serve the <code>index.html</code> and set the
+            <code>XSRF-TOKEN</code> cookie again on all routes that don’t start in <code>/api</code> . You should already have this set up in
+            <code>backend/routes/index.js</code> which should now look like this:
+        </p>
+        <pre><code>// backend/routes/index.js
+const express = require(&#39;express&#39;);
+const router = express.Router();
+const apiRouter = require(&#39;./api&#39;);
+
+router.use(&#39;/api&#39;, apiRouter);
+
+// Static routes
+// Serve React build files in production
+if (process.env.NODE_ENV === &#39;production&#39;) {
+  const path = require(&#39;path&#39;);
+  // Serve the frontend&#39;s index.html file at the root route
+  router.get(&#39;/&#39;, (req, res) =&gt; {
+    res.cookie(&#39;XSRF-TOKEN&#39;, req.csrfToken());
+    res.sendFile(
+      path.resolve(__dirname, &#39;../../frontend&#39;, &#39;build&#39;, &#39;index.html&#39;)
+    );
+  });
+
+  // Serve the static assets in the frontend&#39;s build folder
+  router.use(express.static(path.resolve(&quot;../frontend/build&quot;)));
+
+  // Serve the frontend&#39;s index.html file at all other routes NOT starting with /api
+  router.get(/^(?!\/?api).*/, (req, res) =&gt; {
+    res.cookie(&#39;XSRF-TOKEN&#39;, req.csrfToken());
+    res.sendFile(
+      path.resolve(__dirname, &#39;../../frontend&#39;, &#39;build&#39;, &#39;index.html&#39;)
+    );
+  });
+}
+
+// Add a XSRF-TOKEN cookie in development
+if (process.env.NODE_ENV !== &#39;production&#39;) {
+  router.get(&#39;/api/csrf/restore&#39;, (req, res) =&gt; {
+    res.cookie(&#39;XSRF-TOKEN&#39;, req.csrfToken());
+    res.status(201).json({});
+  });
+}
+
+module.exports = router;</code></pre>
+        <p>Your Express backend’s <code>package.json</code> should include scripts to run the <code>sequelize</code> CLI commands.</p>
+        <p>The <code>backend/package.json</code> ’s scripts should now look like this:</p>
+        <pre><code>&quot;scripts&quot;: {
+    &quot;sequelize&quot;: &quot;sequelize&quot;,
+    &quot;sequelize-cli&quot;: &quot;sequelize-cli&quot;,
+    &quot;start&quot;: &quot;per-env&quot;,
+    &quot;start:development&quot;: &quot;nodemon -r dotenv/config ./bin/www&quot;,
+    &quot;start:production&quot;: &quot;node ./bin/www&quot;
+  },</code></pre>
+        <p>
+            Initialize a <code>package.json</code> file at the very root of your project directory (outside of both the <code>backend</code> and
+            <code>frontend</code> folders). The scripts defined in this <code>package.json</code> file will be run by Heroku, not the scripts defined in the
+            <code>backend/package.json</code> or the <code>frontend/package.json</code> .
+        </p>
+        <p>
+            When Heroku runs <code>npm install</code> , it should install packages for both the <code>backend</code> and the <code>frontend</code> . Overwrite
+            the <code>install</code> script in the root <code>package.json</code> with:
+        </p>
+        <pre><code>npm --prefix backend install backend &amp;&amp; npm --prefix frontend install frontend</code></pre>
+        <p>This will run <code>npm install</code> in the <code>backend</code> folder then run <code>npm install</code> in the <code>frontend</code> folder.</p>
+        <p>
+            Next, define a <code>heroku-postbuild</code> script that will run the <code>npm run build</code> command in the <code>frontend</code> folder.
+            Remember, Heroku will automatically run this script after running <code>npm install</code> .
+        </p>
+        <p>Define a <code>sequelize</code> script that will run <code>npm run sequelize</code> in the <code>backend</code> folder.</p>
+        <p>Finally, define a <code>start</code> that will run <code>npm start</code> in the `backend folder.</p>
+        <p>The root <code>package.json</code> ’s scripts should look like this:</p>
+        <pre><code>&quot;scripts&quot;: {
+    &quot;heroku-postbuild&quot;: &quot;npm run build --prefix frontend&quot;,
+    &quot;install&quot;: &quot;npm --prefix backend install backend &amp;&amp; npm --prefix frontend install frontend&quot;,
+    &quot;dev:backend&quot;: &quot;npm install --prefix backend start&quot;,
+    &quot;dev:frontend&quot;: &quot;npm install --prefix frontend start&quot;,
+    &quot;sequelize&quot;: &quot;npm run --prefix backend sequelize&quot;,
+    &quot;sequelize-cli&quot;: &quot;npm run --prefix backend sequelize-cli&quot;,
+    &quot;start&quot;: &quot;npm start --prefix backend&quot;
+  },</code></pre>
+        <p>The <code>dev:backend</code> and <code>dev:frontend</code> scripts are optional and will not be used for Heroku.</p>
+        <p>Finally, commit your changes.</p>
+        <h3 id="phase-3-deploy-to-heroku">Phase 3: Deploy to Heroku</h3>
+        <p>
+            Once you’re finished setting this up, navigate to your application’s Heroku dashboard. Under “Settings” there is a section for “Config Vars”. Click
+            the <code>Reveal Config Vars</code> button to see all your production environment variables. You should have a <code>DATABASE_URL</code> environment
+            variable already from the Heroku Postgres add-on.
+        </p>
+        <p>
+            Add environment variables for <code>JWT_EXPIRES_IN</code> and <code>JWT_SECRET</code> and any other environment variables you need for production.
+        </p>
+        <p>
+            You can also set environment variables through the Heroku CLI you installed earlier in your terminal. See the docs for
+            <a href="https://devcenter.heroku.com/articles/config-vars" class="markup--anchor markup--p-anchor">Setting Heroku Config Variables</a>.
+        </p>
+        <p>
+            Push your project to Heroku. Heroku only allows the <code>master</code> branch to be pushed. But, you can alias your branch to be named
+            <code>master</code> when pushing to Heroku. For example, to push a branch called <code>login-branch</code> to <code>master</code> run:
+        </p>
+        <pre><code>git push heroku login-branch:master</code></pre>
+        <p>If you do want to push the <code>master</code> branch, just run:</p>
+        <pre><code>git push heroku master</code></pre>
+        <p>
+            You may want to make two applications on Heroku, the <code>master</code> branch site that should have working code only. And your
+            <code>staging</code> site that you can use to test your work in progress code.
+        </p>
+        <p>Now you need to migrate and seed your production database.</p>
+        <p>
+            Using the Heroku CLI, you can run commands inside of your production application just like in development using the <code>heroku run</code> command.
+        </p>
+        <p>For example to migrate the production database, run:</p>
+        <pre><code>heroku run npm run sequelize db:migrate</code></pre>
+        <p>To seed the production database, run:</p>
+        <pre><code>heroku run npm run sequelize db:seed:all</code></pre>
+        <p>
+            Note: You can interact with your database this way as you’d like, but beware that <code>db:drop</code> cannot be run in the Heroku environment. If
+            you want to drop and create the database, you need to remove and add back the “Heroku Postgres” add-on.
+        </p>
+        <p>Another way to interact with the production application is by opening a bash shell through your terminal by running:</p>
+        <pre><code>heroku bash</code></pre>
+        <p>In the opened shell, you can run things like <code>npm run sequelize db:migrate</code> .</p>
+        <p>Open your deployed site and check to see if you successfully deployed your Express + React application to Heroku!</p>
+        <p>
+            If you see an <code>Application Error</code> or are experiencing different behavior than what you see in your local environment, check the logs by
+            running:
+        </p>
+        <pre><code>heroku logs</code></pre>
+        <p>If you want to open a connection to the logs to continuously output to your terminal, then run:</p>
+        <pre><code>heroku logs --tail</code></pre>
+        <p>The logs may clue you into why you are experiencing errors or different behavior.</p>
+        <h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">
+            If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+        </h4>
+        <p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
+        <p>
+            <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"
+                ><strong>bgoonz — Overview</strong><br />
+                <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a
+            ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>Or Checkout my personal Resource Site:</p>
+        <p>
+            <a
+                href="https://goofy-euclid-1cd736.netlify.app/"
+                class="markup--anchor markup--mixtapeEmbed-anchor"
+                title="https://goofy-euclid-1cd736.netlify.app/"
+                ><strong>a/A-Student-Resources</strong><br />
+                <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a
+            ><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+        </p>
+        <p>
+            By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+            <a href="https://medium.com/p/70b7ea807986">March 5, 2021</a>.
+        </p>
+        <p><a href="https://medium.com/@bryanguner/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986" class="p-canonical">Canonical link</a></p>
+        <p>Exported from <a href="https://medium.com">Medium</a> on May 23, 2021.</p>
+    </body>
+</html>

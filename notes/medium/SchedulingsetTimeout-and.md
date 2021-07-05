@@ -1,11 +1,8 @@
-
-
-Scheduling: setTimeout and setInterval
-======================================
+# Scheduling: setTimeout and setInterval
 
 We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.
 
-------------------------------------------------------------------------
+---
 
 ### Scheduling: setTimeout and setInterval
 
@@ -188,7 +185,7 @@ That’s normal, because the time taken by `func`'s execution "consumes" a part 
 
 It is possible that `func`'s execution turns out to be longer than we expected and takes more than 100ms.
 
-In this case the engine waits for `func` to complete, then checks the scheduler and if the time is up, runs it again *immediately*.
+In this case the engine waits for `func` to complete, then checks the scheduler and if the time is up, runs it again _immediately_.
 
 In the edge case, if the function always executes longer than `delay` ms, then the calls will happen without a pause at all.
 
@@ -256,13 +253,13 @@ There are also advanced browser-related use cases of a zero-delay timeout, that 
 
 ### Summary
 
--   <span id="4074">Methods `setTimeout(func, delay, ...args)` and `setInterval(func, delay, ...args)` allow us to run the `func` once/regularly after `delay` milliseconds.</span>
+-   <span id="4074">Methods `setTimeout(func, delay, ...args)` and `setInterval(func, delay, ...args)` allow us to run the `func` once/regularly after `delay` milliseconds.</span>
 -   <span id="6249">To cancel the execution, we should call `clearTimeout/clearInterval` with the value returned by `setTimeout/setInterval`.</span>
--   <span id="af18">Nested `setTimeout` calls are a more flexible alternative to `setInterval`, allowing us to set the time *between* executions more precisely.</span>
+-   <span id="af18">Nested `setTimeout` calls are a more flexible alternative to `setInterval`, allowing us to set the time _between_ executions more precisely.</span>
 -   <span id="06e2">Zero delay scheduling with `setTimeout(func, 0)` (the same as `setTimeout(func)`) is used to schedule the call "as soon as possible, but after the current script is complete".</span>
 -   <span id="5393">The browser limits the minimal delay for five or more nested calls of `setTimeout` or for `setInterval` (after 5th call) to 4ms. That's for historical reasons.</span>
 
-Please note that all scheduling methods do not *guarantee* the exact delay.
+Please note that all scheduling methods do not _guarantee_ the exact delay.
 
 For example, the in-browser timer may slow down for a lot of reasons:
 
@@ -272,7 +269,7 @@ For example, the in-browser timer may slow down for a lot of reasons:
 
 All that may increase the minimal timer resolution (the minimal delay) to 300ms or even 1000ms depending on the browser and OS-level performance settings.
 
-*More content at* <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
+_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 18, 2021](https://medium.com/p/fcb2f40d16f7).
 

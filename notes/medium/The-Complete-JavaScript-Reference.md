@@ -1,11 +1,8 @@
-
-
-The Complete JavaScript Reference Guide
-=======================================
+# The Complete JavaScript Reference Guide
 
 You will want to bookmark this
 
-------------------------------------------------------------------------
+---
 
 ### The Complete JavaScript Reference Guide
 
@@ -33,11 +30,11 @@ You will want to bookmark this
 
 -   <span id="59a4">Consistent effort &gt; cramming =&gt; for **durable knowledge**</span>
 
-------------------------------------------------------------------------
+---
 
 ### Getting visual feedback in your programs
 
-The first command we’ll learn in JavaScript is `console.log`. This command is used to *print* something onto the screen. As we write our first lines of code, we’ll be using `console.log` frequently as a way to visually see the output of our programs. Let’s write our first program:
+The first command we’ll learn in JavaScript is `console.log`. This command is used to _print_ something onto the screen. As we write our first lines of code, we’ll be using `console.log` frequently as a way to visually see the output of our programs. Let’s write our first program:
 
     console.log("hello world");
     console.log("how are you?");
@@ -49,7 +46,7 @@ Executing the program above would print out the following:
 
 Nothing too ground breaking here, but pay close attention to the exact way we wrote the program. In particular, notice how we lay out the periods, parentheses, and quotation marks. We’ll also terminate lines with semicolons (;).
 
-> *Depending on how you structure your code, sometimes you’ll be able to omit semicolons at the end of lines. For now, you’ll want to include them just as we do.*
+> _Depending on how you structure your code, sometimes you’ll be able to omit semicolons at the end of lines. For now, you’ll want to include them just as we do._
 
 ### Syntax
 
@@ -61,7 +58,7 @@ Additionally, one of the best things about programming is that we can get such i
 
 ### Code comments
 
-Occasionally we’ll want to leave **comments** or notes in our code. Commented lines will be ignored by our computer. This means that we can use comments to write plain english or temporarily avoid execution of some JavaScript lines. The proper *syntax* for writing a comment is to begin the line with double forward slashes (`//`):
+Occasionally we’ll want to leave **comments** or notes in our code. Commented lines will be ignored by our computer. This means that we can use comments to write plain english or temporarily avoid execution of some JavaScript lines. The proper _syntax_ for writing a comment is to begin the line with double forward slashes (`//`):
 
     // let's write another program!!!
     console.log("hello world");
@@ -94,9 +91,9 @@ Operators are the symbols that perform particular operations.
 JS evaluates more complex expressions using the general math order of operations aka PEMDAS.
 
 -   <span id="b6e3">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
--   <span id="9c25">*To force a specific order of operation, use the group operator ( ) around a part of the expression.*</span>
+-   <span id="9c25">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
 
-**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! *(Discrete Math concept, circular problems can be solved with modulo)*
+**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
 
 -   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.   
      console.log(7 % 10) // =&gt; 7;</span>
@@ -105,13 +102,11 @@ JS evaluates more complex expressions using the general math order of operations
 
 The **string** data type is a primitive data type that used to represent textual data.
 
--   <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, *best to choose one and stick with it for consistency*.</span>
+-   <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
 -   <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
-     “That’s a great string”; (valid)  
-       
-     ‘Shakespeare wrote, “To be or not to be”’; (valid)  
-       
-     ‘That’s a bad string’; (invalid)</span>
+     “That’s a great string”; (valid)
+    ‘Shakespeare wrote, “To be or not to be”’; (valid)
+    ‘That’s a bad string’; (invalid)</span>
 -   <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
      \`This is a temp’l’ate literal ${function}\` // use ${} to invoke functions within.</span>
 -   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
@@ -200,7 +195,7 @@ A function is a procedure of code that will run when called. Functions are used 
 -   <span id="366f">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="676f">Includes three things:</span>
 -   <span id="80c2">Name of the function.</span>
--   <span id="f3a4">A list of *parameters* ()</span>
+-   <span id="f3a4">A list of _parameters_ ()</span>
 -   <span id="2b0e">The code to execute {}</span>
 -   <span id="6879">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
 -   <span id="8374">JS evaluates code top down, left to right.</span>
@@ -215,7 +210,7 @@ Greate code reads like English and almost explains itself. Think: Elegant, reada
 
 -   <span id="e94e">**Parameters** : Comma seperated variables specified as part of a function’s declaration.</span>
 -   <span id="6740">**Arguments** : Values passed to the function when it is invoked.</span>
--   <span id="004c">*If the number of arguments passed during a function invocation is different than the number of paramters listed, it will still work.*</span>
+-   <span id="004c">_If the number of arguments passed during a function invocation is different than the number of paramters listed, it will still work._</span>
 -   <span id="7da5">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
 
 ### Including Comments
@@ -696,7 +691,7 @@ Besides HTML elements, JavaScript is also able to take into account the user bro
 -   <span id="ef9a">`clearInterval()` — Clears a timer set with `setInterval()`</span>
 -   <span id="fa72">`clearTimeout()` — Clears a timer set with `setTimeout()`</span>
 -   <span id="7bce">`close()` — Closes the current window</span>
--   <span id="ccbf">`confirm()` — Displays a dialogue box with a message and an *OK* and *Cancel* button</span>
+-   <span id="ccbf">`confirm()` — Displays a dialogue box with a message and an _OK_ and _Cancel_ button</span>
 -   <span id="e6f2">`focus()` — Sets focus to the current window</span>
 -   <span id="5eb7">`moveBy()` — Moves a window relative to its current position</span>
 -   <span id="16b6">`moveTo()` — Moves a window to a specified position</span>
@@ -1083,11 +1078,11 @@ x == 2; y == 4
 
 To collect all unused or remaining values into a single variable when destructuring an array, use three dots `(...) `before the last variable name on the left-hand side
 
-`let [x, ...y] = [1,2,3,4];`
+`let [x, ...y] = [1,2,3,4];`
 
 y == \[2,3,4\]
 
-`let [first, ...rest] = "Hello";`
+`let [first, ...rest] = "Hello";`
 
 first == “H”; rest ==\[“e”,”l”,”l”,”o”\]
 
@@ -1109,7 +1104,7 @@ In JavaScript, the values `null `and `undefined `are the only two values that do
 
 You can also invoke a function using `?.()` instead of `()`.
 
-With the `new ?.()` invocation syntax, if the expression to the left of the `?.` evaluates to `null` or `undefined`, then the entire invocation expression evaluates to `undefined `and no exception is thrown.
+With the `new ?.()` invocation syntax, if the expression to the left of the `?.` evaluates to `null` or `undefined`, then the entire invocation expression evaluates to `undefined `and no exception is thrown.
 
 Write the function invocation using `?.(),` knowing that invocation will only happen if there is actually a value to be invoked
 
@@ -1125,7 +1120,7 @@ Note that expression `x++` is not always the same as `x = x + 1`.The `++` operat
 
 JavaScript objects are compared by reference, not by value. An object is equal to itself, but not to any other object. If two distinct objects have the same number of properties, with the same names and values, they are still not equal. Similarly, two arrays that have the same elements in the same order are not equal to each other.
 
-`NaN `value is never equal to any other value, including itself! To check whether a value `x` is `NaN`, use `x !== `, or the global `isNaN()` function.
+`NaN `value is never equal to any other value, including itself! To check whether a value `x` is `NaN`, use `x !== `, or the global `isNaN()` function.
 
 If both values refer to the same object, array, or function, they are equal. If they refer to different objects, they are not equal, even if both objects have identical properties.
 
@@ -1141,13 +1136,13 @@ Because of security issues, some web servers use the HTTP “Content-Security-Po
 
 The first-defined operator `??` evaluates to its first defined operand: if its left operand is not `null` and not `undefined`, it returns that value.
 
-`a ?? b` is equivalent to `(a !== null && a !== undefined) ? a : b`
+`a ?? b` is equivalent to `(a !== null && a !== undefined) ? a : b`
 
 `??` is a useful alternative to `||.` The problem with this idiomatic use is that zero, the empty string, and false are all `falsy `values that may be perfectly valid in some circumstances. In this code example, if `maxWidth `is zero, that value will be ignored. But if we change the `||` operator to `??`, we end up with an expression where zero is a valid value.
 
 `let max = maxWidth || preferences.maxWidth || 500;`
 
-`let max = maxWidth ?? preferences.maxWidth ?? 500;`
+`let max = maxWidth ?? preferences.maxWidth ?? 500;`
 
 ### delete Operator
 
@@ -1462,19 +1457,19 @@ To check whether an object has a property with a given name. You can do this wit
 
 true
 
-`o.x !== undefined`
+`o.x !== undefined`
 
 `"y" in o`
 
 false
 
-`o.y !== undefined`
+`o.y !== undefined`
 
 `"toString" in o`
 
 true: o inherits a `toString `property
 
-`o.toString !== undefined`
+`o.toString !== undefined`
 
 Advantage of using in: `in` can distinguish between properties that do not exist and properties that exist but have been set to `undefined`.
 
@@ -1558,7 +1553,7 @@ Instead, use one of the following:,
 
 `o = Object.assign({}, defaults, o);`
 
-`o = {...defaults, ...o};`
+`o = {...defaults, ...o};`
 
 ### Serializing Objects
 
@@ -1644,7 +1639,7 @@ You can copy the properties of an existing object into a new object using the �
 
 `let position = { x: 0, y: 0 };`  
  `let dimensions = { width: 100, height: 75 };`  
- `let rect = { ...position, ...dimensions };`  
+ `let rect = { ...position, ...dimensions };`  
  `rect.x + rect.y + rect.width + rect.height`
 
 ### Shorthand Methods
@@ -1745,7 +1740,7 @@ Array literal syntax allows an optional trailing comma, so `[,,]` has a length o
 
 `let a = [1, 2, 3];`
 
-`let b = [0, ...a, 4];`
+`let b = [0, ...a, 4];`
 
 \[0, 1, 2, 3, 4\]
 
@@ -2039,7 +2034,7 @@ l`et a = [1,2,3,4,5];`
 
 `a.reduce((x,y) => x*y, 1)`
 
-`a.reduce((x,y) => (x > y) ? x : y)`
+`a.reduce((x,y) => (x > y) ? x : y)`
 
 15
 
@@ -2055,7 +2050,7 @@ To close the gaps in a sparse array, you can do this:
 
 And to close gaps and remove undefined and null elements, you can use filter, like this:
 
-`a = a.filter(x => x !== undefined && x !== null);`
+`a = a.filter(x => x !== undefined && x !== null);`
 
 Unlike `filter()`, however,` find()` and `findIndex()` stop iterating the first time the predicate finds an element. When that happens, `find()` returns the matching element, and `findIndex()` returns the index of the matching element. If no matching element is found,` find()` returns `undefined` and` findIndex()`returns -1.
 
@@ -2488,7 +2483,7 @@ Arrow functions differ from functions defined in other ways in one critical way:
 
 For function invocation in non-strict mode, the invocation context (the `this` value) is the global object. In strict mode, however, the invocation context is `undefined`.
 
-`const strict = (function() { return !this; }())`
+`const strict = (function() { return !this; }())`
 
 Determine if we’re in strict mode
 
@@ -4043,7 +4038,7 @@ Regular expressions can also have one or more flag characters that affect how th
 
 i = case insensitive
 
-Punctuation characters have special meanings in regular expressions: `^ $ . * + ? = ! : | \ / ( ) [ ] { }. `Other punctuation characters, such as quotation marks and @, do not have special meaning and simply match themselves literally in a regular expression.
+Punctuation characters have special meanings in regular expressions: `^ $ . * + ? = ! : | \ / ( ) [ ] { }. `Other punctuation characters, such as quotation marks and @, do not have special meaning and simply match themselves literally in a regular expression.
 
 If you use the `RegExp()` constructor, keep in mind that any backslashes in your regular expression need to be doubled, since strings also use backslashes as an escape character.
 
@@ -4246,7 +4241,7 @@ In pattern` "/([Jj]ava(?:[Ss]cript)?)\sis\s(fun\w*)/`" `\2` refers to the text m
 
 ### SPECIFYING MATCH POSITION
 
-*regular expression anchors* because they anchor the pattern to a specific position in the search string. The most commonly used anchor elements are ^, which ties the pattern to the beginning of the string, and $, which anchors the pattern to the end of the string.
+_regular expression anchors_ because they anchor the pattern to a specific position in the search string. The most commonly used anchor elements are ^, which ties the pattern to the beginning of the string, and $, which anchors the pattern to the end of the string.
 
 **Example**
 
@@ -5363,7 +5358,7 @@ When we write a chain of `.then()` invocations, we are not registering multiple
 
 There is actually a fourth Promise object involved as which brings up the point of what it means for a Promise to be “resolved.”
 
-fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has `.text(), .json(),` and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.
+fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has `.text(), .json(),` and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.
 
 “task 2” calls the `.json()` method and returns its value. This is the fourth Promise object, and it is the return value of the `callback1()` function.
 
