@@ -140,6 +140,7 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
+        image: images/My Post.png
   - title: Embed Your Repo In My Website
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
