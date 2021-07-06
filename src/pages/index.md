@@ -158,7 +158,7 @@ sections:
         no_follow: false
         type: action
     type: section_content
-  - title: Code Playground
+  - title: Code Playground(s)
     section_id: code-playground
     image_alt: lorem-ipsum
     image_position: left
