@@ -206,7 +206,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Potluck Planner",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
