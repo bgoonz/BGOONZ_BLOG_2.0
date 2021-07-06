@@ -127,8 +127,6 @@ sections:
     col_number: two
     grid_items:
       - title: Resume
-        content: |
-          ![](/images/skillz.PNG)
         actions:
           - label: Learn More
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
