@@ -207,7 +207,7 @@
                     },
                     {
                         "label": "Potluck Planner",
-                        "url": "#",
+                        "url": "https://potluck-landing.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
