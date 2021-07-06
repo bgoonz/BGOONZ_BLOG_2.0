@@ -131,7 +131,7 @@ sections:
           - label: Learn More
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
-          - label: lorem-ipsum
+          - label: Download PDF
             url: '#'
             style: link
             icon_class: dev
