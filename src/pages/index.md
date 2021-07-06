@@ -131,6 +131,13 @@ sections:
           - label: Learn More
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
         image: images/resume.JPG
       - title: Showcase
         content: |
