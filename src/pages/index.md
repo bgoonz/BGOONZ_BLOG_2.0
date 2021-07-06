@@ -180,7 +180,7 @@ sections:
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: Blog
+  - title: Nextjs & SanityCMS Blog W Comments
     section_id: blog
     image_alt: blog
     image_position: left
