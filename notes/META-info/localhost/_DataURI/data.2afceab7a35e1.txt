@@ -1,1 +1,0 @@
-chrome-extension://amaaokahonnfjjemodnpmeenfpnnbkco/content_page2.js
