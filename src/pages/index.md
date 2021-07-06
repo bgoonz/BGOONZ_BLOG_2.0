@@ -133,6 +133,7 @@ sections:
           - label: Learn More
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
+        image: images/resume.JPG
       - title: Showcase
         content: |
           ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
