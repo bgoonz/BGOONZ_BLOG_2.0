@@ -169,7 +169,7 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: Musical Persuits
+  - title: Music
     section_id: guitar
     image_alt: bryan-guner
     image_position: left
