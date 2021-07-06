@@ -1,1 +1,0 @@
-chrome-extension://aiiaandmkmekfhembfoghdnfiiiedhhk/scripts/vendor/require.js
