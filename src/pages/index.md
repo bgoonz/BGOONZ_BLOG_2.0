@@ -139,6 +139,8 @@ sections:
             no_follow: false
             type: action
         image: images/resume.JPG
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
       - title: Showcase
         content: |
           ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
