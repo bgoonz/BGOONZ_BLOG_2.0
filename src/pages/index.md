@@ -127,12 +127,20 @@ sections:
     col_number: two
     grid_items:
       - title: Resume
-        content: |
-          ![](/images/skillz.PNG)
         actions:
           - label: Learn More
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
+          - label: Download PDF
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
+        image: images/resume.JPG
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
       - title: Showcase
         content: |
           ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
@@ -140,7 +148,8 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-  - title: Embadable Content
+        image: images/My Post.png
+  - title: Embed Your Repo In My Website
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
@@ -158,7 +167,7 @@ sections:
         no_follow: false
         type: action
     type: section_content
-  - title: Code Playground
+  - title: Code Playground(s)
     section_id: code-playground
     image_alt: lorem-ipsum
     image_position: left
@@ -169,7 +178,7 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: Musical Persuits
+  - title: Music
     section_id: guitar
     image_alt: bryan-guner
     image_position: left
@@ -180,7 +189,7 @@ sections:
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: Blog
+  - title: Nextjs & SanityCMS Blog W Comments
     section_id: blog
     image_alt: blog
     image_position: left
@@ -191,7 +200,7 @@ sections:
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: Embeds
+  - title: Mini Projects
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
@@ -202,7 +211,7 @@ sections:
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Blog-Archive
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
