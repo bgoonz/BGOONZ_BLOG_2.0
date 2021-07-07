@@ -225,7 +225,7 @@
                     },
                     {
                         "label": "Meditation App",
-                        "url": "#",
+                        "url": "https://meditate42app.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
