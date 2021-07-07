@@ -1,10 +1,8 @@
 const siteMetadata = require('./site-metadata.json');
 
+siteMetadata.siteUrl = `https://bgoonz-blog.netlify.app/`;
 
-siteMetadata.siteUrl=`https://bgoonz-blog.netlify.app/`
-
-
-  plugins: [`gatsby-plugin-sitemap`]
+plugins: [`gatsby-plugin-sitemap`];
 module.exports = {
     pathPrefix: '/',
     siteMetadata: siteMetadata,
