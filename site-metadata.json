@@ -110,7 +110,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "python-notes",
                         "url": "blog/community/",
                         "style": "link",
                         "icon_class": "dev",
