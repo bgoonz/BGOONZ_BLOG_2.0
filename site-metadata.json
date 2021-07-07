@@ -111,7 +111,7 @@
                     },
                     {
                         "label": "lorem-ipsum",
-                        "url": "#",
+                        "url": "blog/community/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
