@@ -471,15 +471,6 @@
                 "type": "action"
             },
             {
-                "label": "Freelance",
-                "url": "https://dribbble.com/bgoonz4242?onboarding=true",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
                 "label": "Github Pages",
                 "url": "https://bgoonz.github.io/BGOONZ_BLOG_2.0/",
                 "style": "primary",
