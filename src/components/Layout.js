@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Helmet } from 'react-helmet';
 import _ from 'lodash';
+import ThemeToggler from 'gatsby-plugin-dark-mode/ThemeToggler';
 
 import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
@@ -58,7 +59,10 @@ export default class Body extends React.Component {
                         <body className={'palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)} />
                     </Helmet>
                     <div id="page" className="site">
-                        <Header {...this.props} />
+                <Header { ...this.props } />
+                  <ThemeToggler>
+                    Dark Mode
+                  </ThemeToggler>
                         <main id="content" className="site-content">
                             {this.props.children}
                         </main>

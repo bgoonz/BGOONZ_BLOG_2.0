@@ -24,6 +24,51 @@
 
 </div>
 
+## Docs Structure:
+```
+.
+├── ./About
+│   ├── ./About/index.md
+│   ├── ./About/introduction2bg.md
+│   ├── ./About/me.md
+│   └── ./About/resume.md
+├── ./articles
+│   ├── ./articles/algo.md
+│   └── ./articles/basic-web-dev.md
+├── ./faq
+│   ├── ./faq/Contact.md
+│   ├── ./faq/index.md
+│   └── ./faq/other-sites.md       
+├── ./index.md
+├── ./jupyter-notebooks.md
+├── ./links
+│   ├── ./links/Social.md
+│   ├── ./links/index.md
+│   └── ./links/my-websites.md
+├── ./portfolio-web.md
+├── ./python.md
+├── ./quick-reference
+│   ├── ./quick-reference/Emmet.md
+│   ├── ./quick-reference/index.md
+│   ├── ./quick-reference/installation.md
+│   └── ./quick-reference/new-repo-instructions.md
+├── ./react
+│   ├── ./react/createReactApp.md
+│   ├── ./react/index.md
+│   └── ./react/react2.md
+├── ./resources.md
+└── ./tools
+    ├── ./tools/Git-Html-Preview.md
+    ├── ./tools/default-readme.md
+    ├── ./tools/index.md
+    ├── ./tools/notes-template.md
+    └── ./tools/plug-ins.md
+
+7 directories, 29 files
+
+
+```
+
 ### Links:
 
 ##### Try it out without cloning the entire repo:
