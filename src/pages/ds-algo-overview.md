@@ -3,14 +3,14 @@ title: ds-algo-overview
 subtitle: The ds-algo-overview provides you with a blueprint of default post and page styles.
 image: images/5.jpg
 seo:
-    title:  ds-algo-overview
+    title: ds-algo-overview
     description: A reference for suggested typographic treatment and styles for your content
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value:  ds-algo-overview
+          value: ds-algo-overview
           keyName: property
         - name: 'og:description'
           value: >-
@@ -24,7 +24,7 @@ seo:
         - name: 'twitter:card'
           value: summary_large_image
         - name: 'twitter:title'
-          value:  ds-algo-overview
+          value: ds-algo-overview
         - name: 'twitter:description'
           value: >-
               A reference for suggested typographic treatment and styles for your
@@ -34,8 +34,6 @@ seo:
           relativeUrl: true
 template: documentation
 ---
-
-
 
 # Fundamental Data Structures In JavaScript
 
