@@ -5,7 +5,7 @@
 .post {
     &.type-docs {
         margin-bottom: 5.625em;
-        max-width: $container;
+        max-width: $container-md;
 
         h1 {
             font-size: 1.875em;
@@ -250,11 +250,9 @@
         }
     }
 
-    .page-nav-inside {
-        display: none;
-
-        &.has-links {
-            display: block;
+    .page-nav-title {
+        &:only-child {
+            display: none;
         }
     }
 }
