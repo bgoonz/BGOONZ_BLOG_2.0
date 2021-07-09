@@ -1,5 +1,5 @@
 ---
-title: Apendix
+title: Article Docs
 weight: 0
 excerpt: resources
 seo:
