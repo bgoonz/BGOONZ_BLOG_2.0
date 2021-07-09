@@ -2,8 +2,8 @@
 title: contact
 sections: []
 seo:
-  title: ''
-  description: ''
+  title: 'contact'
+  description: 'contact me'
   robots: []
   extra: []
   type: stackbit_page_meta
