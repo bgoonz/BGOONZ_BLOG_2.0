@@ -9,7 +9,7 @@
         "label": "Home",
         "url": "/",
         "style": "link",
-        "has_subnav": false
+        "has_subnav": true
       },
       {
         "label": "Blog",
