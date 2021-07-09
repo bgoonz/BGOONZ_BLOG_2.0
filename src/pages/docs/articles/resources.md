@@ -1,5 +1,5 @@
 ---
-title: resources
+title: Apendix
 weight: 0
 excerpt: resources
 seo:
