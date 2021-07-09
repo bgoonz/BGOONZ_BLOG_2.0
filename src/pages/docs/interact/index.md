@@ -1,5 +1,5 @@
 ---
-title: Interactive 
+title: Interactive Examples
 weight: 0
 excerpt: lorem-ipsum
 seo:
