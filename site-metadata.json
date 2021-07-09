@@ -128,7 +128,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Nav",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
