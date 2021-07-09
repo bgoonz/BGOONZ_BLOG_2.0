@@ -19,6 +19,6 @@ template: advanced
   </p>
 
 
-<div align="center">
+</div>
 
 
