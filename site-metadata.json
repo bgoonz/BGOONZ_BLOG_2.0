@@ -322,7 +322,7 @@
                 "has_subnav": false
             },
             {
-                "label": "Theme Switcher",
+                "label": "External Nav",
                 "url": "https://bgoonz-blog-v3-0.netlify.app/",
                 "style": "secondary",
                 "icon_class": "dev",
