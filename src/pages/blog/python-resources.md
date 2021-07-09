@@ -2,14 +2,14 @@
 date: '2019-05-27'
 image: images/best-zebra.gif
 seo:
-    title: Community Round-up
+    title: Python Practice
     description: Commodo ante vis placerat interdum massa massa primis
     extra:
         - name: 'og:type'
           value: article
           keyName: property
         - name: 'og:title'
-          value: Community Round-up
+          value: Python Practice
           keyName: property
         - name: 'og:description'
           value: Commodo ante vis placerat interdum massa massa primis
@@ -21,7 +21,7 @@ seo:
         - name: 'twitter:card'
           value: summary_large_image
         - name: 'twitter:title'
-          value: Community Round-up
+          value: Python Practice
         - name: 'twitter:description'
           value: Commodo ante vis placerat interdum massa massa primis
         - name: 'twitter:image'
@@ -34,6 +34,10 @@ thumb_image_alt: python logo
 ---
 
 # Beginners Guide To Python[**Basic Web Development Environment Setup**&#xA;*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web**&#xA;*Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)&#xA;&#xA;
+
+
+<iframe src="https://py-prac-42.netlify.app/" width="100%" height="1200px"><iframe>
+
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
