@@ -22,7 +22,7 @@ seo:
           value: Docs Home
 template: docs
 weight: 800
-excerpt: docs quick reference
+excerpt: site map nav
 ---
 
 
