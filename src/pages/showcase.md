@@ -141,7 +141,14 @@ sections:
         content: |+
           Made using jQuery and Vanilla JS
 
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
         type: grid_item
         image: images/royal-kangaroo.JPG
 seo:
