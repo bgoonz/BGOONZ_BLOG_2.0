@@ -1,5 +1,5 @@
 ---
-title: Medium Medium Links
+title: Medium 
 excerpt: >-
     We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get
     connected.
