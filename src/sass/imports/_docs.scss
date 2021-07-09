@@ -288,7 +288,7 @@
     .page-nav {
         -ms-flex-negative: 0;
         flex-shrink: 0;
-        margin-bottom: 3.625em;
+        margin-bottom: 5.625em;
 
         .sticky {
             position: -webkit-sticky;
@@ -298,13 +298,13 @@
     }
 
     .docs-nav {
-        padding-right: 0.5em;
+        padding-right: 1.5em;
         width: 12.5em;
     }
 
     #page-nav {
-        padding-left: 0.5em;
-        width: 12.5em;
+        padding-left: 1.5em;
+        width: 9.5em;
     }
 
     #docs-nav-toggle {
