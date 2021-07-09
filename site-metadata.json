@@ -65,15 +65,6 @@
                         "type": "action"
                     },
                     {
-                        "label": "ds-algo",
-                        "url": "docs/articles/ds-algo-overview/",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
                         "label": "alt-blogs",
                         "url": "https://bgoonz-blog-v3-0.netlify.app/",
                         "style": "secondary",
