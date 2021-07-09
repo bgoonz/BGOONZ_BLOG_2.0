@@ -120,7 +120,7 @@
                     },
                     {
                         "label": "Contact!",
-                        "url": "#",
+                        "url": "/docs/faq/contact",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
