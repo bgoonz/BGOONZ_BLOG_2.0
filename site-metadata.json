@@ -25,6 +25,15 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "Top Blog Posts",
+                        "url": "/blog/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
                     }
                 ]
             },
@@ -112,6 +121,24 @@
                     {
                         "label": "python-notes",
                         "url": "blog/community/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Contact!",
+                        "url": "/docs/faq/contact",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Nav",
+                        "url": "docs/docs",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -322,7 +349,7 @@
                 "has_subnav": false
             },
             {
-                "label": "Theme Switcher",
+                "label": "External Nav",
                 "url": "https://bgoonz-blog-v3-0.netlify.app/",
                 "style": "secondary",
                 "icon_class": "dev",
@@ -361,6 +388,15 @@
                         "label": "Project Centric",
                         "url": "https://curious-zebra-a1329.netlify.app/",
                         "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
