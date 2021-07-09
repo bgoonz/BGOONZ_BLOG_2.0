@@ -367,7 +367,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Project Portfolio",
+                        "label": "Project Portfolio Gallery",
                         "url": "https://curious-zebra-a1329.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
