@@ -79,17 +79,17 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 0.5em 0;
+            padding: 2.5em 0;
         }
 
         .post-title {
-            font-size: 1em;
+            font-size: 1.875em;
             margin: 0 0 1.25em;
             padding: 0 1em;
         }
 
         .post-content {
-            padding: 0 0.875em;
+            padding: 0 1.875em;
         }
     }
 }
@@ -299,12 +299,12 @@
 
     .docs-nav {
         padding-right: 1.5em;
-        width: 15.5em;
+        width: 12.5em;
     }
 
     #page-nav {
         padding-left: 1.5em;
-        width: 15.5em;
+        width: 9.5em;
     }
 
     #docs-nav-toggle {
