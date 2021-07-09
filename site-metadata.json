@@ -34,7 +34,15 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    }
+                    },        {
+                        "label": "ds-algo",
+                        "url": "docs/articles/ds-algo-overview/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
                 ]
             },
             {
