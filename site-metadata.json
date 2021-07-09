@@ -48,7 +48,7 @@
                 "subnav_links": [
                     {
                         "label": "Docs",
-                        "url": "/docs/",
+                        "url": "/docs",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
