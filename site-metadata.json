@@ -376,7 +376,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "https://web-dev-hub.com/",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
