@@ -96,7 +96,6 @@ template: docs
 
 <iframe src="https://devtools42.netlify.app/" height="1600px" width="100%" style="zoom:0.75;"></iframe>
 
-
 <br>
 
 <br>

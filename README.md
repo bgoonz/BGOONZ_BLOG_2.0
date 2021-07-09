@@ -7,8 +7,8 @@
 ### [WEBSITE](https://bgoonz-blog.netlify.app/)
 
 ### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
-    
-### [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/)    
+
+### [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/)
 
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
@@ -25,6 +25,7 @@
 </div>
 
 ## Docs Structure:
+
 ```
 .
 ├── ./About
@@ -38,7 +39,7 @@
 ├── ./faq
 │   ├── ./faq/Contact.md
 │   ├── ./faq/index.md
-│   └── ./faq/other-sites.md       
+│   └── ./faq/other-sites.md
 ├── ./index.md
 ├── ./jupyter-notebooks.md
 ├── ./links

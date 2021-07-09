@@ -39,7 +39,6 @@ excerpt: docs quick reference
 -   [Markdown Templates](https://github.com/bgoonz/Markdown-Templates)
 -   [Zumzi Video Conferencing App (mesibo api backend)](https://github.com/bgoonz/zumzi-chat-messenger)
 
-
 # Navigation
 
 -   [/repos/]("https://bgoonz-blog.netlify.app/repos/")
