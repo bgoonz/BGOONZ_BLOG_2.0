@@ -116,6 +116,7 @@ sections:
 
         actions: []
         type: grid_item
+        image: images/potluck-planner.JPG
       - title: Zumzi Video Conferencing
         title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
         image_alt: video chat
