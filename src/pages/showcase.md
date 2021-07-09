@@ -143,7 +143,7 @@ sections:
 
         actions:
           - label: Go To Live Site
-            url: '#'
+            url: 'https://mihirbegmusiclab.netlify.app/'
             style: link
             icon_class: dev
             new_window: false
