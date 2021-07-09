@@ -47,7 +47,7 @@
                 ]
             },
             {
-                "url": "/docs/",
+                "url": "/docs/sitemap",
                 "label": "Navigation",
                 "style": "link",
                 "icon_class": "dev",
