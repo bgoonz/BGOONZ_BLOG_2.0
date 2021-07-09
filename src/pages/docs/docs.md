@@ -1,6 +1,6 @@
 
 ---
-title: Docs
+title: Navigation
 seo:
     title: Web Dev Hub
     description: Docs Home
