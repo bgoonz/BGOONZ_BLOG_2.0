@@ -237,7 +237,7 @@
             },
             {
                 "label": "Tools",
-                "url": "/style-guide",
+                "url": "/notes-template",
                 "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
