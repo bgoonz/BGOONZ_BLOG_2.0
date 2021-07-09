@@ -358,7 +358,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Single Page Theme",
+                        "label": "Blog Backup",
                         "url": "#",
                         "style": "primary",
                         "icon_class": "dev",
