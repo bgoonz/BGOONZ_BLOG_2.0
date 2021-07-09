@@ -47,7 +47,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Navigation",
+                        "label": "Docs",
                         "url": "/docs/nav",
                         "style": "primary",
                         "icon_class": "dev",
