@@ -11,4 +11,3 @@ seo:
 template: docs
 ---
 
-|
