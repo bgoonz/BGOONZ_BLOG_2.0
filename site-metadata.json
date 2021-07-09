@@ -38,7 +38,7 @@
                 ]
             },
             {
-                "url": "/docs/nav",
+                "url": "/docs/navigation",
                 "label": "Navigation",
                 "style": "link",
                 "icon_class": "dev",
