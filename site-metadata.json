@@ -377,7 +377,7 @@
                     },
                     {
                         "label": "https://web-dev-hub.com/",
-                        "url": "#",
+                        "url": "https://web-dev-hub.com/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
