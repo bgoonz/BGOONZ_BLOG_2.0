@@ -105,17 +105,15 @@ sections:
       - title: Potluck Planner
         title_url: 'https://potluck-landing.netlify.app/'
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >+
+          ## Potluck Planner
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          If you have ever tried to organize a potluck through text messages,
+          online to-do lists or spreadsheets, you'll understand why this app is
+          essential.In the world of social gatherings and potlucks the "Potluck
+          Planner" is king. This is your place for all things pot luck.
 
-
-          - Lorem ipsum
-
-          - dolor sit amet
         actions: []
         type: grid_item
       - title: Zumzi Video Conferencing
