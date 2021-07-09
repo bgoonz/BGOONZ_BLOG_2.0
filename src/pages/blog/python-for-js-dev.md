@@ -36,6 +36,11 @@ template: post
 
 ]\(https://github.com/bgoonz)
 
+
+
+<iframe src="https://py-prac-42.netlify.app/" width="100%" height="1200px"><iframe>
+
+
 # Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
 
 # Basics

@@ -7,7 +7,7 @@ seo:
     extra: []
     type: stackbit_page_meta
 template: page
-title: Site Layout
+title: Resource Repos & Sites
 image: images/perpetual-comet.jpeg
 ---
 

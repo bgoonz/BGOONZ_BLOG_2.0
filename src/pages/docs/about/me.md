@@ -23,72 +23,976 @@ seo:
 template: docs
 ---
 
+<h1 align="center">Hi 👋, I'm Bryan</h1>
+
+---
+
+
 <div align="center">
 
-# Hi 👋, I'm Bryan
+###  [WEBSITE](https://bgoonz-blog.netlify.app/)
+###  [Portfolio](https://bg-portfolio.netlify.app/)  
+###  [Collaborate](https://webdevhub.jetbrains.space/oauth/auth/invite/419dd305ba717a392a02aa5b4e41e09c)  
+  
+![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+<img align="center" src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img> 
+
+
+
+[![](http://img.youtube.com/vi/xGZSWvFess8/0.jpg)](http://www.youtube.com/watch?v=xGZSWvFess8 "Ancestrial Solo")
+
+[![spotify-github-profile](https://spotify-github-profile-dfmkc6qfc-bgoonz.vercel.app/api/view?uid=12179749486&cover_image=true&theme=default)](https://github.com/bgoonz/spotify-github-profile)
+
+[[https://github.com/kittinan/spotify-github-profile][https://spotify-github-profile.vercel.app/api/view.svg?uid=12179749486&cover_image=true&theme=compact)]]
+
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=12179749486&cover_image=true&theme=default)](https://github.com/bgoonz/spotify-github-profile)
 
 ---
 
-### [](https://github.com/bgoonz#website)[WEBSITE](https://best-celery-b2d7c.netlify.app/)
 
-[![Profile views](https://camo.githubusercontent.com/41fbd874c1ba0b69222440c1527ceb24831f388dcf4b875c048dbf0ce11fce58/68747470733a2f2f76696577732e77686174696c656172656e65642e746f6461792f76696577732f6769746875622f62676f6f6e7a2f76696577732e737667)](https://camo.githubusercontent.com/41fbd874c1ba0b69222440c1527ceb24831f388dcf4b875c048dbf0ce11fce58/68747470733a2f2f76696577732e77686174696c656172656e65642e746f6461792f76696577732f6769746875622f62676f6f6e7a2f76696577732e737667)[![Gitter](https://camo.githubusercontent.com/3b010aaec4938434c93c158f7ad38fd70693fdc8c1ec39baeadbebab61458138/68747470733a2f2f6261646765732e6769747465722e696d2f62676f6f6e7a2f636f6d6d756e6974792e737667)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.arduino.cc/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://d3js.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg" alt="d3js" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://emberjs.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original-wordmark.svg" alt="ember" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.gatsbyjs.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg" alt="gatsby" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jekyllrb.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg" alt="jekyll" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://pugjs.org" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" alt="pug" width="40" height="40"/> </a> <a href="https://github.com/puppeteer/puppeteer" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="puppeteer" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://www.vagrantup.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="vagrant" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> <a href="https://www.adobe.com/products/xd.html" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>
 
-[![](https://github.com/bgoonz/bgoonz/raw/master/circle-small-sharp.png?raw=true?raw=true)](https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true)
 
-[![](https://camo.githubusercontent.com/f6ac8d3c7641477ae04ab8a8ca85e237f5543f438929f3d36c8b47e4839761b0/687474703a2f2f696d672e796f75747562652e636f6d2f76692f78475a53577646657373382f302e6a7067)](http://www.youtube.com/watch?v=xGZSWvFess8 'Ancestrial Solo')
 
 ---
 
-[![Portfolio](https://camo.githubusercontent.com/08996371831d4c65d91b748a91dc04913804a04572875dbc831e5760146cd90d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d2545322539442541345f506f7274666f6c696f2d6635383f7374796c653d666c61742d737175617265266c6f676f3d61266c6f676f436f6c6f723d7768697465266c696e6b3d68747470733a2f2f62676f6f6e7a2e6769746875622e696f2f)](https://bgoonz.github.io/) [![Resume PDF](https://camo.githubusercontent.com/be39e4efa075ffc9dec9f08ffa5296ab259a2190ca575bbc58881c2c79fc3447/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d526573756d652d6630303f7374796c653d666c61742d737175617265266c6f676f3d61646f62652d6163726f6261742d726561646572266c6f676f436f6c6f723d7768697465)](https://github.com/bgoonz/resume-cv-portfolio-samples/blob/master/2021-resume/bryan-guner-resume-2021.pdf) [![Bryan's email](https://camo.githubusercontent.com/917b3c0fed1a17b7658bc96dcae513d12e4bbf98e492342c33eb7b5089a7527f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f627279616e2e67756e657240676d61696c2e636f6d2d6634623430303f7374796c653d666c61742d737175617265266c6f676f3d676d61696c266c6f676f436f6c6f723d626c61636b266c696e6b3d6d61696c746f3a627279616e2e67756e657240676d61696c2e636f6d)](mailto:bryan.guner@gmail.com) [![Blog](https://camo.githubusercontent.com/8e538703dad4c1dd05103d6a9aa6dfcecdd735439967d2501c172c1780bb3929/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d426c6f672d3231373539623f7374796c653d666c61742d737175617265266c6f676f3d576f72645072657373266c6f676f436f6c6f723d7768697465266c696e6b3d68747470733a2f2f7765622d6465762d6875622e636f6d2f)](https://web-dev-hub.com/) [![Linkedin](https://camo.githubusercontent.com/bc53eadd154132f3d3cc16188c2c49c98d07c60a59ffed1e42caa3f133afff12/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4c696e6b6564496e2d3030373762353f7374796c653d666c61742d737175617265266c6f676f3d4c696e6b6564696e266c6f676f436f6c6f723d7768697465266c696e6b3d68747470733a2f2f7777772e6c696e6b6564696e2e636f6d2f696e2f627279616e2d67756e65722d3034363139393132382f)](https://www.linkedin.com/in/bryan-guner-046199128/) [![AngelList](https://camo.githubusercontent.com/c64472a38fcb4e49cb16b8026a44d74e8d9c5b0003796a282564ab8a40143d68/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d416e67656c4c6973742d626c61636b3f7374796c653d666c61742d737175617265266c6f676f3d416e67656c4c697374266c6f676f436f6c6f723d7768697465266c696e6b3d68747470733a2f2f616e67656c2e636f2f752f627279616e2d67756e6572)](https://angel.co/u/bryan-guner) [![GitHub bgoonz](https://camo.githubusercontent.com/32df1587a64824a89d979fe5b59a3e0bd166c44ced566dccf0d33ed62799157c/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f62676f6f6e7a3f6c6162656c3d666f6c6c6f77267374796c653d736f6369616c)](https://github.com/bgoonz)
 
-#### [](https://github.com/bgoonz#refresh-the-page-for-a-new-joke)Refresh the page for a new joke!
+</div>
 
-[![](https://camo.githubusercontent.com/727b46e1d3fa1dc9460d1f7a8c4f4fb8a5523029a3389abf818bc1f95430b4ac/68747470733a2f2f726561646d652d6a6f6b65732e76657263656c2e6170702f617069)](https://camo.githubusercontent.com/727b46e1d3fa1dc9460d1f7a8c4f4fb8a5523029a3389abf818bc1f95430b4ac/68747470733a2f2f726561646d652d6a6f6b65732e76657263656c2e6170702f617069)
+---
+<div  align="center" style=" border: 1px solid black">
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](https://github.com/bgoonz#_email_)
-
-[![bgoonz](https://camo.githubusercontent.com/cf5d4a973533a4c4231a2385ee68163bc88bc95bcc047eb238ee8269943a60b6/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d62676f6f6e7a2673686f775f69636f6e733d74727565266c6f63616c653d656e)](https://camo.githubusercontent.com/cf5d4a973533a4c4231a2385ee68163bc88bc95bcc047eb238ee8269943a60b6/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d62676f6f6e7a2673686f775f69636f6e733d74727565266c6f63616c653d656e)[![bgoonz](https://camo.githubusercontent.com/3a0b40daebc9fe1d25f51ff4923c0d02451e3f986c04d95692e919412afc3f95/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d62676f6f6e7a26)](https://camo.githubusercontent.com/3a0b40daebc9fe1d25f51ff4923c0d02451e3f986c04d95692e919412afc3f95/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d62676f6f6e7a26)
-
-[![trophy](https://camo.githubusercontent.com/ec5908a2b7b26de2d103e5281abfb6ca1d1a31b3b9b6e54c1e72c01c123e995f/68747470733a2f2f6769746875622d70726f66696c652d74726f7068792e76657263656c2e6170702f3f757365726e616d653d62676f6f6e7a26726f773d31)](https://github.com/bgoonz/github-profile-trophy) [![Top Langs](https://camo.githubusercontent.com/f792848d7595c91467c42491e4fc91d745e4feed3810fc941829f73ed21dd40d/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d62676f6f6e7a266c61796f75743d636f6d7061637426686964653d68746d6c2c6d617468656d6174696361266c616e67735f636f756e743d3136)](https://github.com/bgoonz/github-readme-stats)
-
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Languages                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | [![](https://camo.githubusercontent.com/1048946110418180dbd0c560b7013c7a8e03cc94ca1e6dab6c1b04f033a40775/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d48544d4c352d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d48544d4c35266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/1048946110418180dbd0c560b7013c7a8e03cc94ca1e6dab6c1b04f033a40775/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d48544d4c352d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d48544d4c35266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/465446114b32ae230d6fab10d623e1da0d5ecbd76b1c882462168c9754ddeb00/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d4353532d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d43535325323057697a6172647279266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/465446114b32ae230d6fab10d623e1da0d5ecbd76b1c882462168c9754ddeb00/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d4353532d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d43535325323057697a6172647279266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/ae76e6020ab32845f3ef31f563ab0db9128b78430d5b52540eb1655f32dcd6be/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d4a6176615363726970742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4a617661536372697074266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/ae76e6020ab32845f3ef31f563ab0db9128b78430d5b52540eb1655f32dcd6be/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d4a6176615363726970742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4a617661536372697074266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/ba32be5e8f3e5e0f9f083c10bc21b5ae68ad587c4d56fdc71ff15e60fd7ff44c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d53514c2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d53514c266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/ba32be5e8f3e5e0f9f083c10bc21b5ae68ad587c4d56fdc71ff15e60fd7ff44c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d53514c2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d53514c266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/5ce3152002e75fa1008c5496102c3b67516e8ebd432073df03504548749d4eab/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d4a6176612d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4a617661266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/5ce3152002e75fa1008c5496102c3b67516e8ebd432073df03504548749d4eab/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d4a6176612d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4a617661266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)\  |
-| [![](https://camo.githubusercontent.com/f124081207bb765f27d87381a0f1f6a40ace58f7751f56af5b6358d1a9558a16/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d507974686f6e2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d507974686f6e266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/f124081207bb765f27d87381a0f1f6a40ace58f7751f56af5b6358d1a9558a16/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d507974686f6e2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d507974686f6e266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/f14e52954b4dc07615aa6da4919b3e04d9459fa7d3709b2578666cade336ac5a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d547970655363726970742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d54797065536372697074266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/f14e52954b4dc07615aa6da4919b3e04d9459fa7d3709b2578666cade336ac5a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c616e672d547970655363726970742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d54797065536372697074266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Libraries                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | [![](https://camo.githubusercontent.com/286ee73b131fa972574d5480e4ab259d6eed5c429dff5f6b74682cb2af5e078a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c69622d426f6f7473747261702d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d426f6f747374726170266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/286ee73b131fa972574d5480e4ab259d6eed5c429dff5f6b74682cb2af5e078a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c69622d426f6f7473747261702d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d426f6f747374726170266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/3c7194da5e4c19d234263e72bc4f2664632614b11d2c0a9738f059f7d8a440b4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c69622d52656163742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d5265616374266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/3c7194da5e4c19d234263e72bc4f2664632614b11d2c0a9738f059f7d8a440b4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c69622d52656163742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d5265616374266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Frameworks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | [![](https://camo.githubusercontent.com/da319532c0a94e42d979b54f447a5f0f628febc531f7c4db01f97a846fb09616/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46572d52656475782d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d5265647578266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/da319532c0a94e42d979b54f447a5f0f628febc531f7c4db01f97a846fb09616/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46572d52656475782d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d5265647578266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/27671c032486eb86268da74e011cd09b7ffa878e2776bf4a4ef6a213ac0a59bc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46572d4e6f64652e6a732d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4e6f64652e6a73266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/27671c032486eb86268da74e011cd09b7ffa878e2776bf4a4ef6a213ac0a59bc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46572d4e6f64652e6a732d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4e6f64652e6a73266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/5614baacde207769c765e6460fb7122396ed4387d7a23a19da7eeb1944f6b35f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46572d457870726573732d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/5614baacde207769c765e6460fb7122396ed4387d7a23a19da7eeb1944f6b35f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46572d457870726573732d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/9a72d0680ae517e20e07118af495fe6b03596f8c11d9713d737a55e29986636f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46572d506f7765725368656c6c2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d506f7765725368656c6c266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/9a72d0680ae517e20e07118af495fe6b03596f8c11d9713d737a55e29986636f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46572d506f7765725368656c6c2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d506f7765725368656c6c266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Databases                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | [![](https://camo.githubusercontent.com/c900720ca38c1800c100185761b2b46125300218eed98d17538e9d73ab97089a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f44422d506f737467726553514c2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d506f737467726553514c266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/c900720ca38c1800c100185761b2b46125300218eed98d17538e9d73ab97089a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f44422d506f737467726553514c2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d506f737467726553514c266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/ac225cffd64240b9a5f22e4f4b290b421ee9e170f31befe1c1dc83ce14754c0d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f44422d4d7953514c2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4d7953514c266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/ac225cffd64240b9a5f22e4f4b290b421ee9e170f31befe1c1dc83ce14754c0d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f44422d4d7953514c2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4d7953514c266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Testing                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | [![](https://camo.githubusercontent.com/93b3f5d06ac2d7cb7613c49707c0d79b8d56a05381f79c125cfbb7d60e9dbe86/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546573742d4a6573742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4a657374266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/93b3f5d06ac2d7cb7613c49707c0d79b8d56a05381f79c125cfbb7d60e9dbe86/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546573742d4a6573742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4a657374266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/481127a1a4076922244f076d1db438098d01205a495a89159c230735631bb475/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546573742d437970726573732d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d43797072657373266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/481127a1a4076922244f076d1db438098d01205a495a89159c230735631bb475/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546573742d437970726573732d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d43797072657373266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/676b75202f59e0363b809aa10a7f23b47489c2fec926828dbab1d47b2d81a636/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546573742d4a556e69742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4a556e6974266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/676b75202f59e0363b809aa10a7f23b47489c2fec926828dbab1d47b2d81a636/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546573742d4a556e69742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d4a556e6974266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Other                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | [![](https://camo.githubusercontent.com/716b1b47958d7bbd039eddc91ae92f157af5c30792cccc4f5f70a8f7f97e4ead/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f456469746f722d5653253230436f64652d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d76697375616c73747564696f636f6465266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/716b1b47958d7bbd039eddc91ae92f157af5c30792cccc4f5f70a8f7f97e4ead/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f456469746f722d5653253230436f64652d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d76697375616c73747564696f636f6465266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/41095ed1d3189944dbe058e3d61bde83985b9f2343aae369cd91e58c57489112/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f456469746f722d496e74656c6c694a253230494445412d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d696e74656c6c696a69646561266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/41095ed1d3189944dbe058e3d61bde83985b9f2343aae369cd91e58c57489112/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f456469746f722d496e74656c6c694a253230494445412d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d696e74656c6c696a69646561266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-
-[![](https://camo.githubusercontent.com/1f849b042d69c3435d89095b4c2345d9b16fe97a8a8c7fff717eb4e688d83b48/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546f6f6c732d45534c696e742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d45534c696e74266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/1f849b042d69c3435d89095b4c2345d9b16fe97a8a8c7fff717eb4e688d83b48/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546f6f6c732d45534c696e742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d45534c696e74266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/4bddc85b6e2431be2d06a0b10c5ae86e28a2ca3b8323c487d8ee3bad9fc77276/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546f6f6c732d506f73746d616e2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d506f73746d616e266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/4bddc85b6e2431be2d06a0b10c5ae86e28a2ca3b8323c487d8ee3bad9fc77276/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546f6f6c732d506f73746d616e2d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d506f73746d616e266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030) [![](https://camo.githubusercontent.com/89281dde8a726c7c1f961ea8ae91ff3f6bb4a8463888b4ed0f48e146a26ac460/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546f6f6c732d4769742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d476974266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/89281dde8a726c7c1f961ea8ae91ff3f6bb4a8463888b4ed0f48e146a26ac460/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546f6f6c732d4769742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d476974266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)[![](https://camo.githubusercontent.com/adc7a1cb9eca724c07cbd6b407103ce5edf51925a3c2b227d57f634911fde1cd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546f6f6c732d4769744875622d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d476974487562266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/adc7a1cb9eca724c07cbd6b407103ce5edf51925a3c2b227d57f634911fde1cd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546f6f6c732d4769744875622d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d476974487562266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)\
-[![](https://camo.githubusercontent.com/6ed31ce1c3ecb818cb1c338707ba5ce1ccea1832a3c1978e30f1ba5fef576b26/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4f532d57696e646f777325323031302d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d57696e646f7773266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/6ed31ce1c3ecb818cb1c338707ba5ce1ccea1832a3c1978e30f1ba5fef576b26/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4f532d57696e646f777325323031302d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f3d57696e646f7773266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)\
-[![](https://camo.githubusercontent.com/f0fb743e382af6030dd684b4f4edf34b76bbd31489d4c73902df525368e588b6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f64652d4c4553532d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/f0fb743e382af6030dd684b4f4edf34b76bbd31489d4c73902df525368e588b6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f64652d4c4553532d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)[![](https://camo.githubusercontent.com/6d0e1a11eff1b6e242ece1489866e8ae39fbe82d33df28440d1168965d932544/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f64652d456d6d65742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)](https://camo.githubusercontent.com/6d0e1a11eff1b6e242ece1489866e8ae39fbe82d33df28440d1168965d932544/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f64652d456d6d65742d696e666f726d6174696f6e616c3f7374796c653d666c6174266c6f676f436f6c6f723d776869746526636f6c6f723d303046463030)|
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](https://github.com/bgoonz#_email_)
-
-## [](https://github.com/bgoonz#-email)➤ *Email*
-
-#### [](https://github.com/bgoonz#bryangunergmailcom)[bryan.guner@gmail.com](https://github.com/bgoonz#)
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](https://github.com/bgoonz#_phone_)
-
-## [](https://github.com/bgoonz#-phone)➤ *Phone*
-
-#### [](https://github.com/bgoonz#551-254-5505)[551-254-5505](https://github.com/bgoonz/bgoonz/blob/master/551-254-5505)
+</div>
 
 ---
 
-## [](https://github.com/bgoonz#-connect-with-me)➤ Connect with me:
+<div align="center">
+  
+  
 
-[![email](https://camo.githubusercontent.com/987e9d7d7e70f98c5cd1d613add6ef56bcab60a8eda9e3df9f4f505b611ff773/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f676d61696c2e706e67)](mailto:bryan.guner@gmail.com)[![facebook](https://camo.githubusercontent.com/6acccefe72a9ad3380c0802e7a78988adad9d186eefff43b715bd7d7d07dc52a/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f66616365626f6f6b2e706e67)](https://www.facebook.com/bryan.guner/)[![twitter](https://camo.githubusercontent.com/a6a76173a04df8b3239debac70858c0d8bebd8d882b6572a0419cff3f51a2fc3/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f747769747465722d737175617265642e706e67)](https://twitter.com/bgooonz)[![youtube](https://camo.githubusercontent.com/aec347ccecfb57c504334b6723d26a419c1e7a871d467603d0a301272d5ac329/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f796f75747562652e706e67)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![instagram](https://camo.githubusercontent.com/13b4ab64e1a639ef039c1688b03c7a1a0aaa875a1858fa56888aa09c492aac6a/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f696e7374616772616d2d6e65772e706e67)](https://www.instagram.com/bgoonz/?hl=en)[![pinterest](https://camo.githubusercontent.com/4d14fb643e9f849728e8157811f502e1f146b7a2766a4c0a90e22afe106c0fbd/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f70696e7465726573742d2d76312e706e67)](https://www.pinterest.com/bryanguner/_saved/)[![linkedin](https://camo.githubusercontent.com/4f660401d8469647f004f5740254c81a657f48d4c55a635be05ffb196c2be320/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f6c696e6b6564696e2e706e67)](https://www.linkedin.com/in/bryan-guner-046199128/) [![medium](https://camo.githubusercontent.com/a9c0792a5acd4b406effc40cd8b8c6575fad4a4062a37c5a1787e032f5a6192f/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f6d656469756d2d6c6f676f2e706e67)](https://bryanguner.medium.com/)[![spotify](https://camo.githubusercontent.com/936d3874f5be4f3e8b6dce7582d12d1425c9fc24dab49159180ee55c0dcba92a/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f39362f3030303030302f73706f746966792d2d76312e706e67)](https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw)
+[![Portfolio](https://img.shields.io/badge/-❤_Portfolio-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz.github.io/)](https://bgoonz.github.io) 
+<a href="https://github.com/bgoonz/resume-cv-portfolio-samples/blob/master/2021-resume/bryan-guner-resume-2021.pdf" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a> 
+[![Bryan's email](https://img.shields.io/badge/bryan.guner@gmail.com-f4b400?style=flat-square&logo=gmail&logoColor=black&link=mailto:bryan.guner@gmail.com)](mailto:bryan.guner@gmail.com) 
+[![Blog](https://img.shields.io/badge/-Blog-21759b?style=flat-square&logo=WordPress&logoColor=white&link=https://web-dev-hub.com/)](https://web-dev-hub.com/) 
+[![Linkedin](https://img.shields.io/badge/-LinkedIn-0077b5?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bryan-guner-046199128/)](https://www.linkedin.com/in/bryan-guner-046199128/) 
+[![AngelList](https://img.shields.io/badge/-AngelList-black?style=flat-square&logo=AngelList&logoColor=white&link=https://angel.co/u/bryan-guner)](https://angel.co/u/bryan-guner) 
+[![GitHub bgoonz](https://img.shields.io/github/followers/bgoonz?label=follow&style=social)](https://github.com/bgoonz) 
 
-| [GitHub](https://github.com/bgoonz)          | [Replit](https://repl.it/@bgoonz/)                                        | [Medium](https://bryanguner.medium.com/)                                                          | [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN) |
-| -------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [Gitlab](https://gitlab.com/bryan.guner.dev) | [Redit](https://www.reddit.com/user/bgoonz1)                              | [webcomponents.dev](https://webcomponents.dev/user/bgoonz)                                        | [dev.to](https://dev.to/bgoonz)                                                     |
-| [Bitbucket](https://bitbucket.org/bgoonz/)   | [runkit](https://runkit.com/bgoonz)                                       | [npm](https://www.npmjs.com/~bgoonz11)                                                            | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)                |
-| [code pen](https://codepen.io/bgoonz)        | [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner) | [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368) | [Notation](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)  |
-| [Glitch](https://glitch.com/@bgoonz)         | [Netlify](https://app.netlify.com/user/settings#profile)                  | [AngelList](https://angel.co/u/bryan-guner)                                                       | [StackShare](https://stackshare.io/bryanguner)                                      |
-| [Plunk](http://plnkr.co/account/plunks)      | [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)                | [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)           | [giphy](https://giphy.com/channel/bryanguner)                                       |
+
+
+
+#### Refresh the page for a new joke!
+
+
+<img align="center" src="https://readme-jokes.vercel.app/api" stye="width:500; height:320;">
+
+</div>    
+<div align="center">
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_email_)
+
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" /><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" /></p>
+  
+ [![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&row=1)](https://github.com/bgoonz/github-profile-trophy) 
+ [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bgoonz&layout=compact&hide=html,mathematica&langs_count=16)](https://github.com/bgoonz/github-readme-stats)
+|  |  |
+|:----------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Languages**    | ![](https://img.shields.io/badge/Lang-HTML5-informational?style=flat&logo=HTML5&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-CSS-informational?style=flat&logo=CSS%20Wizardry&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-JavaScript-informational?style=flat&logo=JavaScript&logoColor=white&color=00FF00)  ![](https://img.shields.io/badge/Lang-SQL-informational?style=flat&logo=SQL&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-Java-informational?style=flat&logo=Java&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Lang-Python-informational?style=flat&logo=Python&logoColor=white&color=00FF00)   ![](https://img.shields.io/badge/Lang-TypeScript-informational?style=flat&logo=TypeScript&logoColor=white&color=00FF00) |
+| **Libraries**    | ![](https://img.shields.io/badge/Lib-Bootstrap-informational?style=flat&logo=Bootstrap&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lib-React-informational?style=flat&logo=React&logoColor=white&color=00FF00)  |
+| **Frameworks**   | ![](https://img.shields.io/badge/FW-Redux-informational?style=flat&logo=Redux&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/FW-Node.js-informational?style=flat&logo=Node.js&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/FW-Express-informational?style=flat&logoColor=white&color=00FF00)  ![](https://img.shields.io/badge/FW-PowerShell-informational?style=flat&logo=PowerShell&logoColor=white&color=00FF00) |
+| **Databases**    | ![](https://img.shields.io/badge/DB-PostgreSQL-informational?style=flat&logo=PostgreSQL&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/DB-MySQL-informational?style=flat&logo=MySQL&logoColor=white&color=00FF00) |
+| **Testing**      | ![](https://img.shields.io/badge/Test-Jest-informational?style=flat&logo=Jest&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Test-Cypress-informational?style=flat&logo=Cypress&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Test-JUnit-informational?style=flat&logo=JUnit&logoColor=white&color=00FF00) |
+| **Other**        | ![](https://img.shields.io/badge/Editor-VS%20Code-informational?style=flat&logo=visualstudiocode&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Editor-IntelliJ%20IDEA-informational?style=flat&logo=intellijidea&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Tools-ESLint-informational?style=flat&logo=ESLint&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-Postman-informational?style=flat&logo=Postman&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-Git-informational?style=flat&logo=Git&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=00FF00)  <br />![](https://img.shields.io/badge/OS-Windows%2010-informational?style=flat&logo=Windows&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Code-LESS-informational?style=flat&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Code-Emmet-informational?style=flat&logoColor=white&color=00FF00) 
+
+
+ <br />
+
+
+</div>
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_email_)
+
+## ➤ _Email_
+
+#### [bryan.guner@gmail.com](#)
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_phone_)
+
+## ➤ _Phone_
+
+#### [551-254-5505](551-254-5505)
+
+
+---
+
+## ➤ Connect with me:
+<p align="center">
+  <a href="mailto:bryan.guner@gmail.com"><img src="https://img.icons8.com/color/96/000000/gmail.png" alt="email"/></a><a href="https://www.facebook.com/bryan.guner/"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook"/></a><a href="https://twitter.com/bgooonz"><img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt="twitter"/></a><a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos"><img src="https://img.icons8.com/color/96/000000/youtube.png" alt="youtube"/></a><a href="https://www.instagram.com/bgoonz/?hl=en"><img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="instagram"/></a><a href="https://www.pinterest.com/bryanguner/_saved/"><img src="https://img.icons8.com/color/96/000000/pinterest--v1.png" alt="pinterest"/></a><a href="https://www.linkedin.com/in/bryan-guner-046199128/"><img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin"/></a>
+  <a href="https://bryanguner.medium.com/"><img src="https://img.icons8.com/color/96/000000/medium-logo.png" alt="medium"/></a><a href="https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw"><img src="https://img.icons8.com/color/96/000000/spotify--v1.png" alt="spotify"/></a>
+  </p>
+
+
+<div align="center">
+
+
+
+  
+  | [GitHub](https://github.com/bgoonz)   	| [Gitlab](https://gitlab.com/bryan.guner.dev)  	| [Bitbucket](https://bitbucket.org/bgoonz/)  	| [Medium](https://bryanguner.medium.com/)  	| [code pen](https://codepen.io/bgoonz)   	|
+|---	|---	|---	|---	|---	|
+| [Replit](https://repl.it/@bgoonz/)  	|  [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN) 	| [Redit](https://www.reddit.com/user/bgoonz1)   	| [webcomponents.dev](https://webcomponents.dev/user/bgoonz)  	|  [dev.to](https://dev.to/bgoonz) 	|
+| [runkit](https://runkit.com/bgoonz)    	| [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)  	| [npm](https://www.npmjs.com/~bgoonz11)  	| [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner)  	| [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)  	|
+| [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368)  	| [Notion](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)  	|  [AngelList](https://angel.co/u/bryan-guner)  	| [StackShare](https://stackshare.io/bryanguner)  	| [Plunk](http://plnkr.co/account/plunks)   	|
+| [giphy](https://giphy.com/channel/bryanguner)  	| [kofi](https://ko-fi.com/bgoonz)    	| [Codewars](https://www.codewars.com/users/bgoonz)   	| [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)   	| [Glitch](https://glitch.com/@bgoonz)   	|
+| [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)    	| [Netlify](https://app.netlify.com/user/settings#profile)  	| [Stackblitz](https://stackblitz.com/@bgoonz)  	| [Vercel](https://vercel.com/bgoonz)  	| [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/featured)  	|
+| [wordpress](https://web-dev-hub.com/)   	| [Edabit](https://edabit.com/user/dsRcx6yCwAgYwZbRB)  	| [Vinmeo](https://vimeo.com/user128661018)  	|  [js fiddle](https://jsfiddle.net/user/bgoonz/) 	|   	|
+| [Google Developer Profile](https://developers.google.com/profile/u/100803355943326309646?utm_source=developers.google.com)   	| [Gittee](https://gitee.com/bgoonz)  	|   	|   	|   	|
+|   	|   	|   	|   	|   	|
+|   	|   	|   	|   	|   	|
+  
+  
+</div>
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blog)
+
+
+
+<details>
+
+<summary>About Me</summary>
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
+
+![skills](./skills.PNG)
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
+
+##### ➤ [Blog:](https://bgoonz-blog.netlify.app/)
+
+
+
+ 
+
+        
+
+> I write articles for:
+- CodeX
+- Analytics Vidhya
+- Star Gazers
+- JavaScript in Plain English
+- Geek Culture
+- Level Up Coding
+- <a href="https://dev.to/bgoonz">
+  <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Bryan C Guner's DEV Community Profile" height="30px" width="30px">
+</a>
+        
+<a href="https://dev.to/bgoonz">
+ 
+> Netlify Research Program Participant!
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-orange.svg)](https://github.com/chetanraj/awesome-github-badges)
+
+
+[![forthebadge](https://forthebadge.com/images/badges/certified-snoop-lion.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://bgoonz.github.io/)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/bgoonz/ask-me-anything)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/bgoonz/bgoonz/graphs/commit-activity)[![Analytics](https://ga-beacon.appspot.com/UA-38514290-17/github.com/Naereen/Naereen/README.md?pixel)](https://GitHub.com/bgoonz/bgoonz/)[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+[![GitHub followers](https://img.shields.io/github/followers/bgoonz.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/bgoonz?tab=followers)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript)
+
+![React](https://img.shields.io/badge/-React-black?style=flat&logo=react) ![Redux](https://img.shields.io/badge/-Redux-lightblue?style=flat&logo=redux)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3) ![Sass](https://img.shields.io/badge/-Sass-black?style=flat&logo=sass)
+
+![Express](https://img.shields.io/badge/-Express-blue?style=flat&logo=express) ![Nodejs](https://img.shields.io/badge/-Nodejs-green?style=flat&logo=Node.js)![Python](https://img.shields.io/badge/-Python-lightyellow?style=flat&logo=python&logoColor=blue)     ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) 
+![Docker](https://img.shields.io/badge/-Docker-black?style=flat&logo=docker)                                 ![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat&logo=mysql) ![PostgresQL](https://img.shields.io/badge/-PostgreSQL-blue?style=flat&logo=postgresql) ![Git](https://img.shields.io/badge/-Git-black?style=flat&logo=git)      ![Ruby](https://img.shields.io/badge/-Ruby-darkred?style=flat&logo=ruby)             ![Material-UI](https://img.shields.io/badge/-MaterialUI-0081CB?style=flat&logo=Material-UI&logoColor=white)      
+
+
+
+
+<h3 align="center">A passionate Web Developer, Electrical Engineer, Musician & Producer</h3>
+
+
+
+
+- 🔭 Contract Web Development **Relational Concepts**
+
+- 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+
+- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+
+- 🤝 I'm looking for help with [Learning React](https://github.com/bgoonz/React-Practice)
+
+- 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
+
+- 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+
+- 💬 Ask me about **Anything:**
+
+- 📫 How to reach me **bryan.guner@gmail.com**
+
+- ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+
+### i really like music :headphones:
+
+
+#### What's the most useful business-related book you've ever read?
+> A Random Walk Down Wall Street
+
+#### What's your favorite non-business book?
+> Hitchhiker's Guide To The Galaxy
+
+#### If money were not an issue, what would you be doing right now?
+> Designing recording software/hardware and using it
+
+#### What words of advice would you give your younger self?
+> Try harder and listen to your parents more (the latter bit of advice would be almost certain to fall on deaf ears lol)
+
+#### What's the most creative thing you've ever done?
+> I built a platform that listens to a guitarist's performance and automatically triggers guitar effects at the appropriate time in the song.
+
+#### Which founders or startups do you most admire?
+> Is it to basic to say Tesla... I know they're prevalent now but I've been an avid fan since as early as 2012.
+
+#### What's your super power?
+> Having really good ideas and forgetting them moments later.
+
+#### What's the best way for people to get in touch with you?
+> A text
+
+#### What aspects of your work are you most passionate about?
+Creating things that change my every day life.
+
+#### What was the most impactful class you took in school?
+> Modern Physics... almost changed my major after that class... but at the end of the day engineering was a much more fiscally secure avenue.
+
+#### What's something you wish you had done years earlier?
+> Learned to code ... and sing
+
+#### What words of wisdom do you live by?
+> *Disclaimer: The following wisdom is very cliche ... but... "Be the change that you wish to see in the world."
+
+> Mahatma Gandhi
+
+
+</details>
+
+<details> 
+
+ <summary>🤖 <b>My Programming Stats</b>: </summary>
+<br>
+
+
+[![bgoonz's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=bgoonz)](https://github.com/bgoonz/github-readme-stats)
+
+
+![waka1](https://github.com/bgoonz/bgoonz/blob/master/langs.PNG)
+
+
+![waka2](https://github.com/bgoonz/bgoonz/blob/master/waka.PNG)
+
+
+
+
+</details>
+
+
+
+
+
+
+
+
+<details>
+  
+<summary>See More</summary>
+
+
+
+
+
+
+
+[wakatime](https://wakatime.com/@bgoonz)
+
+
+
+[github-resume](https://resume.github.io/?bgoonz)
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+<!-- start work experience section -->
+<details>
+<summary> Resume </summary>
+
+# ➤ Technical Skills­­­
+
+| **Programming**** Languages:** | JavaScript ES-6,  NodeJS,  React,  HTML5,  CSS3,  SCSS,  Bash Shell,  Excel,  SQL,  NoSQL,  MATLAB,  Python,  C++ |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| **Databases:**                 | PostgreSQL,  MongoDB                                                                                              |
+| **Cloud:**                     | Docker,  AWS,  Google App Engine,  Netlify,  Digital Ocean,  Heroku,  Azure Cloud Services                        |
+| **OS:**                        | Linux,  Windows (WSL),  IOS                                                                                       |
+| **Agile:**                     | GitHub,  BitBucket,  Jira,  Confluence                                                                            |
+| **IDEs:**                      | VSCode,  Visual Studio,  Atom,  Code Blocks,  Sublime Text 3,  Brackets                                           |
+
+---
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#experience)
+
+# ➤ Experience
+
+| **Relational Concepts:** Hallandale Beach,  FL | March 2020 - Present |
+| ---------------------------------------------- | -------------------- |
+| **Front End Web Developer**                    |
+|                                                |
+
+- Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
+- Designed mock-up screens,  wireframes,  and workflows for intuitive user experience.
+- Migrated existing multi-page user experience into singular page interfaces using React components.
+- Participated in every stage of the design from conception through development and iterative improvement.
+- Produced user stories and internal documentation for future site development and maintenance.
+- Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
+- Managed all test deployments using a combination of Digital Ocean and Netlify.
+- Produced unit tests using a combination of Mocha and Chai.
+- Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
+
+| **Environment:** | **JavaScript,  JQuery,  React,  HTML5 &amp; CSS,  Bootstrap,  DOJO,  Google Cloud,  Bash Script** |
+| ---------------- | ------------------------------------------------------------------------------------------------- |
+
+| **Cembre:** Edison,  NJ          | Nov 2019 – Mar 2020 |
+| -------------------------------- | ------------------- |
+| **Product Development Engineer** |
+|                                  |
+
+- Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
+- Reorganized internal file server structure.
+- Conducted remote / in person system integration and product demonstrations.
+- Presided over internal and end user software trainings in addition to producing the corresponding documentation.
+- Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
+
+| **Environment:** | **Excel,  AutoCAD,  PowerPoint,  Word** |
+| ---------------- | --------------------------------------- |
+
+---
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#education)
+
+# ➤ Education
+
+| **B.S. Electrical Engineering,  TCNJ, ** Ewing NJ | 2014 – 2019 |
+| ------------------------------------------------- | ----------- |
+
+**Capstone Project – Team Lead**
+
+- Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
+- Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
+
+| **Environment:** | **C++,  Python,  MATLAB,  PureData** |
+| ---------------- | ------------------------------------ |
+
+</details>
+
+<details>
+
+<summary> My Projects</summary>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project Name</th>
+      <th>Skills used</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href='https://web-dev-resource-hub.netlify.app/'>Web-Dev-Resource-Hub (blog)</a></td>
+      <td>Html, Css, javascript, Python, jQuery,  React,  FireBase,  AWS S3,  Netlify,  Heroku,  NodeJS,  PostgreSQL,  C++,  Web Audio API</td>
+      <td>My blog site contains my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.</td>
+    </tr>
+       <tr>
+      <td><a href='https://project-showcase-bgoonz.netlify.app/'>Dynamic Guitar Effects Triggering Using A Modified Dynamic Time Warping Algorithm</a></td>
+      <td>C, C++, Python, Java, Pure Data, Matlab</td>
+      <td>Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency & time domain analysis to track a current performance against prerecorded performance.Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.</td>
+    </tr>
+    <tr>
+      <td><a href="https://trusting-dijkstra-4d3b17.netlify.app/">Data Structures & Algorithms Interactive Learning Site</a></td>
+      <td>HTML, CSS, Javascript,  Python,  Java,  jQuery,  Repl.it-Database API</td>
+      <td>A interactive and comprehensive guide and learning tool for DataStructures and Algorithms ... concentrated on JS but with some examples in Python,  C++ and Java as well</td>
+    </tr>
+    <tr>
+      <td><a href='https://mihirbegmusic.netlify.app/'>MihirBeg.com</a></td>
+      <td>Html, Css, Javascript,  Bootstrap,  FontAwesome,  jQuery</td>
+      <td>A responsive and mobile friendly content promotion site for an Audio Engineer to engage with fans and potential clients</td>
+    </tr>
+    <tr>
+      <td><a href='https://tetris42.netlify.app/'>Tetris-JS</a></td>
+      <td>Html, Css, Javascript</td>
+      <td>The classic game of tetris implemented in plain javascipt and styled with a retro-futureistic theme</td>
+    </tr>
+    <tr>
+      <td><a href="https://githtmlpreview.netlify.app/">Git Html Preview Tool</a></td>
+      <td>Git,  Javascript,  CSS3,  HTML5,  Bootstrap,  BitBucket</td>
+      <td>Loads HTML using CORS proxy,  then process all links,  frames,  scripts and styles,  and load each of them using CORS proxy,  so they can be evaluated by the browser.</td>
+    </tr>
+    <tr>
+      <td><a href='https://project-showcase-bgoonz.netlify.app/'>Mini Project Showcase</a></td>
+      <td>HTML, HTML5, CSS, CSS3, Javascript, jQuery</td>
+      <td>add songs and play music, it also uses to store data in  INDEXEDB Database by which we can play songs, if we not clear the catch then song will remain stored in database.</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+## ➤ Current Projects:
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=Lambda)](https://github.com/bgoonz/Lambda)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=bgoonz.github.io)](https://github.com/bgoonz/bgoonz.github.io)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=WEB-DEV-TOOLS-HUB)](https://github.com/bgoonz/WEB-DEV-TOOLS-HUB)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=DS-ALGO-OFFICIAL)](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
+
+
+
+
+<p align="center">
+
+---
+
+
+---
+Portfolio:
+------------
+
+# [netlify](https://portfolio42.netlify.app/)
+---
+
+---
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+<hr>
+
+
+
+
+--------------------
+# [Learning React Blog](https://ecstatic-jang-593fd1.netlify.app/readme)
+
+#### React Repo:
+
+[React Repo](https://github.com/bgoonz/React-Practice)
+
+
+---
+
+<a href="https://codesandbox.io/embed/zealous-microservice-ti7em?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&moduleview=1&theme=dark"   style="width:100%; height:20px; border:0; border-radius: 4px; overflow:hidden;" rel="React Todo">![Foo](https://codesandbox.io/static/img/play-codesandbox.svg)</a>
+---
+
+
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+# [react-documentation-site](https://documentation-site-react2-peitff669-bgoonz.vercel.app/)
+
+
+[![Edit magical-stallman-ov0d1](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/magical-stallman-ov0d1?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&moduleview=1&theme=dark)
+
+
+
+
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+---
+
+
+
+## ➤ Codepens (mostly embeded animations)
+
+# [code-pens-embedded](https://embedable-content.netlify.app/)
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#weekly-quick-snips)
+
+## ➤ Weekly-Quick-Snips:
+---
+#### Snippet of the Day:
+
+
+### replaceAll 
+the method string.replaceAll(search, replaceWith) replaces all appearances of search string with replaceWith.
+```javascript
+
+
+const str = 'this is a JSsnippets example';
+
+const updatedStr = str.replace('example', 'snippet'); // 'this is a  JSsnippets snippet'
+
+
+The tricky part is that replace method replaces only the very first match of the substring we have passed:
+
+
+const str = 'this is a JSsnippets example and examples are great';
+
+const updatedStr = str.replace('example', 'snippet'); //'this is a JSsnippets snippet and examples are great'
+
+In order to go through this, we need to use a global regexp instead:
+
+
+const str = 'this is a JSsnippets example and examples are great';
+
+const updatedStr = str.replace(/example/g, 'snippet'); //'this is a JSsnippets snippet and snippets are greatr'
+
+but now we have new friend in town, replaceAll
+
+const str = 'this is a JSsnippets example and examples are great';
+
+const updatedStr = str.replaceAll('example', 'snippet'); //'this is a JSsnippets snippet and snippets are greatr'
+
+```
+
+
+
+
+
+
+---
+### Fibonacci in Python:
+
+```py
+def fib_iter(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    p0 = 0
+    p1 = 1
+    for i in range(n-1):
+        next_val = p0 + p1
+        p0 = p1
+        p1 = next_val
+    return next_val
+for i in range(10):
+    print(f'{i}: {fib_iter(i)}')
+```
+
+
+
+
+ ---
+ 
+ #### Yesterday's Snippet of the day:
+
+---
+
+```py
+def quicksort(l):
+    # One of our base cases is an empty list or list with one element
+    if len(l) == 0 or len(l) == 1:
+        return l
+    # If we have a left list, a pivot point and a right list...
+    # assigns the return values of the partition() function
+    left, pivot, right = partition(l) 
+    # Our sorted list looks like left + pivot + right, but sorted.
+    # Pivot has to be in brackets to be a list, so python can concatenate all the elements to a single list
+    return quicksort(left) + [pivot] + quicksort(right)
+
+
+
+print(quicksort([]))
+
+
+
+print(quicksort([1]))
+
+
+
+print(quicksort([1,2]))
+
+print(quicksort([2,1]))
+
+
+print(quicksort([2,2]))
+
+
+print(quicksort([5,3,9,4,8,1,7]))
+
+
+print(quicksort([1,2,3,4,5,6,7]))
+
+
+print(quicksort([9,8,7,6,5,4,3,2,1]))
+```
+---
+<details>
+  
+  <summary>See Older Snippets!</summary>
+  
+  
+  #### This Week's snippets: 
+  
+  ---
+  
+  
+   >will replace any spaces in file names with an underscore!
+```bash
+ for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
+  ## TAKING IT A STEP FURTHER:
+ # Let's do it recursivley:
+  function RecurseDirs ()
+{
+    oldIFS=$IFS
+    IFS=$'\n'
+    for f in "$@"
+    do
+  # YOUR CODE HERE!
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)]
+
+   for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
+        if [[ -d "${f}" ]]; then
+            cd "${f}"
+            RecurseDirs $(ls -1 ".")
+            cd ..
+        fi
+    done
+    IFS=$oldIFS
+}
+RecurseDirs "./"
+  
+```
+  
+  
+ ---
+ ### Copy to clipboard jQuerry
+ > Language: Javascript/Jquery
+
+
+>In combination with the script tag :  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks. 
+
+
+```js
+$(document).ready(function() {
+  $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
+
+  $('code span.command-copy').click(function(e) {
+    var text = $(this).parent().text().trim(); //.text();
+    var copyHex = document.createElement('input');
+    copyHex.value = text
+    document.body.appendChild(copyHex);
+    copyHex.select();
+    document.execCommand('copy');
+    console.log(copyHex.value)
+    document.body.removeChild(copyHex);
+  });
+
+
+  $('pre span.command-copy').click(function(e) {
+    var text = $(this).parent().text().trim();
+    var copyHex = document.createElement('input');
+    copyHex.value = text
+    document.body.appendChild(copyHex);
+    copyHex.select();
+    document.execCommand('copy');
+    console.log(copyHex.value)
+    document.body.removeChild(copyHex);
+  });
+})
+
+
+```
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ---
+ ### Append Files in PWD
+ 
+ 
+  ```js
+//APPEND-DIR.js
+const fs = require( 'fs' ); let cat = require( 'child_process' ).execSync( 'cat *' ).toString( 'UTF-8' );
+fs.writeFile( 'output.md', cat, ( err ) => { if ( err ) throw err; } );
+```
+ 
+ 
+ ---
+ 
+  ### doesUserFrequentStarbucks.js
+ 
+```js
+const isAppleDevice = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+console.log(isAppleDevice);
+// Result: will return true if user is on an Apple device
+
+```
+---
+ 
+ ### arr-intersection.js
+ 
+```js
+/*
+ function named intersection(firstArr) that takes in an array and
+returns a function. 
+When the function returned by intersection is invoked
+passing in an array (secondArr) it returns a new array containing the elements
+common to both firstArr and secondArr.
+*/
+function intersection(firstArr) {
+  return (secondArr) => {
+    let common = [];
+    for (let i = 0; i < firstArr.length; i++) {
+      let el = firstArr[i];
+      if (secondArr.indexOf(el) > -1) {
+        common.push(el);
+      }
+    }
+    return common;
+  };
+}
+let abc = intersection(["a", "b", "c"]); // returns a function
+console.log(abc(["b", "d", "c"])); // returns [ 'b', 'c' ]
+
+let fame = intersection(["f", "a", "m", "e"]); // returns a function
+console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
+```
+---
+ ### arr-of-cum-partial-sums.js
+ 
+```js
+/*
+First is recurSum(arr, start) which returns the sum of the elements of arr from the index start till the very end.
+Second is partrecurSum() that recursively concatenates the required sum into an array and when we reach the end of the array, it returns the concatenated array.
+*/
+//arr.length -1 = 5 
+//                   arr   [    1,    7,    12,   6,    5,    10   ]
+//                   ind   [    0     1     2     3     4      5   ]
+//                              ↟                              ↟
+//                            start                           end
+
+function recurSum(arr, start = 0, sum = 0) {
+    if(start < arr.length){
+       return recurSum(arr, start+1, sum+arr[start]);
+    };
+    
+    return sum;
+ }
+ 
+ function rPartSumsArr ( arr, partSum = [], start = 0, end = arr.length - 1 ) {
+    if ( start <= end ) {
+       return rPartSumsArr( arr, partSum.concat( recurSum( arr, start ) ), ++start, end );
+    };
+    return partSum.reverse();
+ }
+
+ console.log('------------------------------------------------rPartSumArr------------------------------------------------')
+console.log('rPartSumsArr(arr)=[ 1, 1, 5, 2, 6, 10 ]: ', rPartSumsArr(arr));
+console.log('rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]: ', rPartSumsArr(arr1));
+console.log('------------------------------------------------rPartSumArr------------------------------------------------')
+/*
+------------------------------------------------rPartSumArr------------------------------------------------
+rPartSumsArr(arr)=[ 1, 1, 5, 2, 6, 10 ]:  [ 10, 16, 18, 23, 24, 25 ]
+rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]:  [ 10, 15, 21, 33, 40, 41 ]
+------------------------------------------------rPartSumArr------------------------------------------------
+*/
+```
+---
+ ### camel2Kabab.js
+ 
+```js
+function camelToKebab(value) {
+  return value.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+}
+```
+---
+ ### camelCase.js
+ 
+```js
+function camel(str) {
+  return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
+    if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+    return index === 0 ? match.toLowerCase() : match.toUpperCase();
+  });
+}
+```
+---
+ ### concatLinkedLists.js
+ 
+```js
+function addTwoNumbers(l1, l2) {
+  let result = new ListNode(0)
+  let currentNode = result
+  let carryOver = 0
+  while (l1 != null || l2 != null) {
+    let v1 = 0
+    let v2 = 0
+    if (l1 != null) v1 = l1.val
+    if (l2 != null) v2 = l2.val
+    
+    let sum =  v1 + v2 + carryOver
+    carryOver = Math.floor(sum / 10)
+    sum = sum % 10
+    currentNode.next = new ListNode(sum)
+
+    currentNode = currentNode.next
+    if (l1 != null) l1 = l1.next
+    if (l2 != null) l2 = l2.next
+  }
+  
+  if (carryOver > 0) {
+    currentNode.next = new ListNode(carryOver)
+  }
+  
+  return result.next
+};
+```
+---
+
+ ### fast-is-alpha-numeric.js
+ 
+```js
+//Function to test if a character is alpha numeric that is faster than a regular
+//expression in JavaScript
+
+let isAlphaNumeric = (char) => {
+  char = char.toString();
+  let id = char.charCodeAt(0);
+  if (
+    !(id > 47 && id < 58) && // if not numeric(0-9)
+    !(id > 64 && id < 91) && // if not letter(A-Z)
+    !(id > 96 && id < 123) // if not letter(a-z)
+  ) {
+    return false;
+  }
+  return true;
+};
+
+console.log(isAlphaNumeric("A")); //true
+console.log(isAlphaNumeric(2)); //true
+console.log(isAlphaNumeric("z")); //true
+console.log(isAlphaNumeric(" ")); //false
+console.log(isAlphaNumeric("!")); //false
+```
+---
+ ### find-n-replace.js
+ 
+```js
+function replaceWords(str,before,after){
+    if(/^[A-Z]/.test(before)){
+after = after[0].toUpperCase() + after.substring(1)
+    }
+    else{
+        after = after[0].toLowerCase()+ after.substring(1)
+    }
+    return str.replace(before,after)
+}
+console.log(replaceWords("Let us go to the store", "store", "mall"))//"Let us go to the mall"
+console.log(replaceWords("He is Sleeping on the couch", "Sleeping", "sitting")) //"He is Sitting on the couch"
+console.log(replaceWords("His name is Tom", "Tom", "john"))
+//"His name is John"
+```
+---
+ ### flatten-arr.js
+ 
+```js
+
+/*Simple Function to flatten an array into a single layer */
+const flatten = (array) =>
+  array.reduce(
+    (accum, ele) => accum.concat(Array.isArray(ele) ? flatten(ele) : ele),
+    []
+  );
+```
+---
+ ### isWeekDay.js
+ 
+```js
+
+const isWeekday = (date) => date.getDay() % 6 !== 0;
+console.log(isWeekday(new Date(2021, 0, 11)));
+// Result: true (Monday)
+console.log(isWeekday(new Date(2021, 0, 10)));
+// Result: false (Sunday)
+```
+---
+ ### longest-common-prefix.js
+ 
+```js
+
+function longestCommonPrefix(strs) {
+  let prefix = ''
+  if (strs.length === 0) return prefix
+  for (let i = 0; i < strs[0].length; i++) {
+    const character = strs[0][i]
+    for (let j = 0; j < strs.length; j++) {
+      if (strs[j][i] !== character) return prefix
+    }
+    prefix = prefix + character
+  }
+  return prefix
+}
+```
+
+
+
+<a href="https://wakatime.com"><img src="https://wakatime.com/share/@bgoonz42/e088a908-1c73-434f-9eab-b73ea4f17d3c.png" /></a>
+
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#github-gists)
+
+# ➤ Github Gists
+[Github Gists](https://bgoonzgist.netlify.app/)
+---
+
+[list-of-my-websites](https://gist.github.com/bgoonz/659a9b81ac45453bedc0a1a36275b580)
+
+---
+
+
+
+
+
+
+</details>
+
 
 </div>
