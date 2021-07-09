@@ -1,5 +1,5 @@
 ---
-title: Jupyter Notebooks
+title: Interactive 
 weight: 0
 excerpt: lorem-ipsum
 seo:
