@@ -23,10 +23,7 @@ template: docs
 weight: 900
 excerpt: docs quick reference
 ---
-
----
-
-# Doc Websites & Repos
+## Doc Websites & Repos
 
 -   [Python Practice](https://github.com/bgoonz/PYTHON_PRAC)
 -   [Lambda Bootcamp Website](https://lambda-resources.netlify.app/)
