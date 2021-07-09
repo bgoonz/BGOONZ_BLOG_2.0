@@ -1,5 +1,5 @@
 ---
-date: '2019-05-27'
+date: '2021-06-03'
 image: images/2.jpg
 seo:
     title: python
@@ -28,6 +28,9 @@ seo:
           value: images/2.jpg
           relativeUrl: true
 template: post
+title: Python Resources
+thumb_image: images/violet-pluto.png
+thumb_image_alt: python logo
 ---
 
 # Python Study Guide for a JavaScript Programmer&#xA;

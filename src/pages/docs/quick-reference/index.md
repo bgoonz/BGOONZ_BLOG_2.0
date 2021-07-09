@@ -1,5 +1,5 @@
 ---
-title: Cheat Sheets
+title: Quick Reference & Cheat Sheets
 excerpt: In this section you'll find basic information about Web-Dev-Hub and how to use it.
 seo:
     title: Cheat Sheets
