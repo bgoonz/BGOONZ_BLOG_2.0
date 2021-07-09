@@ -378,7 +378,7 @@
                     {
                         "label": "Wordpress Blog",
                         "url": "https://web-dev-hub.com/",
-                        "style": "link",
+                        "style": "secondary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
