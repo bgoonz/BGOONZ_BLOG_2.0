@@ -1,5 +1,5 @@
 ---
-date: '2019-05-27'
+date: '2021-06-03'
 image: images/best-zebra.gif
 seo:
     title: Python Practice
