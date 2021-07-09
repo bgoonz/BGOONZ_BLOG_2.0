@@ -26,7 +26,7 @@ template: docs
 
 ## Internal Links
 
--   [/repos/]("https://bgoonz-blog.netlify.app/repos/")
+
 -   [/gallery/]("https://bgoonz-blog.netlify.app/gallery/")
 -   [/showcase/]("https://bgoonz-blog.netlify.app/showcase/")
 -   [/blog/]("https://bgoonz-blog.netlify.app/blog/")
