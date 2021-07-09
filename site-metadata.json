@@ -74,15 +74,6 @@
                         "url": "https://bg-portfolio.netlify.app/"
                     },
                     {
-                        "label": "Experimental",
-                        "url": "/experimental/embed",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
                         "label": "ds-algo",
                         "url": "/ds-algo-overview/",
                         "style": "secondary",
