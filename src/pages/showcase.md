@@ -135,7 +135,7 @@ sections:
             type: action
         type: grid_item
         image: images/energetic-sunflower.png
-      - title: lorem-ipsum
+      - title: Web Audio Workstation
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
