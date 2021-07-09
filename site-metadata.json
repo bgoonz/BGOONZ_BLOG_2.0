@@ -376,7 +376,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "https://web-dev-hub.com/",
+                        "label": "Wordpress Blog",
                         "url": "https://web-dev-hub.com/",
                         "style": "link",
                         "icon_class": "dev",
