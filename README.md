@@ -98,7 +98,7 @@
 -   [/docs/resources/](https://preview--best-celery-b2d7c.stackbit.dev/docs/resources/)
 -   [/docs/react/createReactApp/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/createReactApp/)
 -   [/docs/tools/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/)
--   [/style-guide/](https://preview--best-celery-b2d7c.stackbit.dev/style-guide/)
+-   [/notes-template/](https://preview--best-celery-b2d7c.stackbit.dev/notes-template/)
 -   [/blog/my-medium/](https://preview--best-celery-b2d7c.stackbit.dev/blog/my-medium/)
 -   [/docs/tools/default-readme/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/default-readme/)
 -   [/docs/tools/plug-ins/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/plug-ins/)
