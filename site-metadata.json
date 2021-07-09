@@ -75,7 +75,7 @@
                     },
                     {
                         "label": "ds-algo",
-                        "url": "/",
+                        "url": "docs/",
                         "style": "secondary",
                         "icon_class": "dev",
                         "new_window": true,
