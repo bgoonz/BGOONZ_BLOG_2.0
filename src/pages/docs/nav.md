@@ -1,7 +1,7 @@
 ---
 title: Navigation
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Links to the pages o this site
 seo:
   title: ''
   description: ''
