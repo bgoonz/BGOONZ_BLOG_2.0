@@ -21,7 +21,7 @@ seo:
         - name: 'twitter:description'
           value: Docs Home
 template: docs
-weight: 900
+weight: 800
 excerpt: docs quick reference
 ---
 
