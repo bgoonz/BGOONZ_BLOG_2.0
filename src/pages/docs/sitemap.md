@@ -24,7 +24,7 @@ seo:
 template: docs
 ---
 
-# Navigation
+# Internal Links
 
 -   [/repos/]("https://bgoonz-blog.netlify.app/repos/")
 -   [/gallery/]("https://bgoonz-blog.netlify.app/gallery/")
