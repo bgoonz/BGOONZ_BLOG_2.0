@@ -38,7 +38,7 @@
                 ]
             },
             {
-                "url": "\\docs\\articles\\ds-algo-overview.md",
+                "url": "\\docs\\articles\\ds-algo-overview",
                 "label": "Navigation",
                 "style": "link",
                 "icon_class": "dev",
