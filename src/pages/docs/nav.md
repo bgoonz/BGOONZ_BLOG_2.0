@@ -10,11 +10,8 @@ seo:
   type: stackbit_page_meta
 template: docs
 ---
-## Lorem ipsum
 
-
-
-# Navigation
+## Navigation
 
 -   [/repos/]("https://bgoonz-blog.netlify.app/repos/")
 -   [/gallery/]("https://bgoonz-blog.netlify.app/gallery/")
