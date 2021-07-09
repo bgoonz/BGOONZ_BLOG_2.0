@@ -1,13 +1,13 @@
 ---
 title: Interactive Examples
-weight: 0
+weight: 1
 excerpt: feel free to try the examples
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 <iframe width="800" height="575"
