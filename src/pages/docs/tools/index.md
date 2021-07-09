@@ -115,4 +115,4 @@ template: docs
 
 <br>
 
-<iframe src="https://lambda-resources.netlify.app/" height="1600px" width="100%" style="zoom:0.75;"></iframe>
+<iframe src="https://ternary42.netlify.app/" height="1600px" width="100%" style="zoom:0.75;"></iframe>
