@@ -1,6 +1,6 @@
 
 ---
-title: Docs
+title: Navigation
 seo:
     title: Web Dev Hub
     description: Docs Home
@@ -25,39 +25,6 @@ weight: 900
 excerpt: docs quick reference
 ---
 
-
-
-
-
-
-
-
-
----
-title: Navigation
-seo:
-    title: Web Dev Hub
-    description: Navigation Home
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Web Dev Hub
-          keyName: property
-        - name: 'og:description'
-          value: Navigation Home
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Web Dev Hub
-        - name: 'twitter:description'
-          value: Navigation Home
-template: docs
-weight: 900
-excerpt: docs quick reference
----
 
 ---
 
