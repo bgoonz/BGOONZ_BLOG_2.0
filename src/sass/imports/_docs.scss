@@ -79,7 +79,7 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 0.5em 0;
+            padding: .5em 0;
         }
 
         .post-title {
@@ -299,12 +299,12 @@
 
     .docs-nav {
         padding-right: 1.5em;
-        width: 18.5em!important;
+        width: 15.5em;
     }
 
     #page-nav {
         padding-left: 1.5em;
-        width: 7.5em;
+        width: 15.5em;
     }
 
     #docs-nav-toggle {
