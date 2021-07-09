@@ -4,7 +4,7 @@ excerpt: >-
     We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get
     connected.
 seo:
-    title: Medium Links
+    title: Medium 
     description: This is the community page
     extra:
         - name: 'og:type'
