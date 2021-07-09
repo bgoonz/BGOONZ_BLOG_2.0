@@ -38,7 +38,7 @@
                 ]
             },
             {
-                "url": "docs/",
+                "url": "\\docs\\articles\\ds-algo-overview",
                 "label": "Navigation",
                 "style": "link",
                 "icon_class": "dev",
@@ -74,17 +74,8 @@
                         "url": "https://bg-portfolio.netlify.app/"
                     },
                     {
-                        "label": "Experimental",
-                        "url": "/experimental/embed",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
                         "label": "ds-algo",
-                        "url": "/ds-algo-overview/",
+                        "url": "docs/articles/ds-algo-overview/",
                         "style": "secondary",
                         "icon_class": "dev",
                         "new_window": true,
@@ -333,7 +324,7 @@
                     },
                     {
                         "label": "WebDev Quizzes",
-                        "url": "#",
+                        "url": "https://web-dev-interview-prep-quiz-website.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
@@ -358,7 +349,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Side Bar Theme",
+                        "label": "Embeds Blog",
                         "url": "https://friendly-panda-b61ab.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
@@ -367,11 +358,11 @@
                         "type": "action"
                     },
                     {
-                        "label": "Single Page Theme",
-                        "url": "#",
+                        "label": "Blog Backup",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
-                        "new_window": false,
+                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     },

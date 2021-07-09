@@ -4,7 +4,7 @@ sections:
   - section_id: hero
     type: section_hero
     title: Showcase
-    image: images/great-olive.gif
+    image: images/charming-dolphin.gif
     content: |
       Some of my more engaging projects!
   - section_id: showcase
@@ -116,6 +116,7 @@ sections:
 
         actions: []
         type: grid_item
+        image: images/potluck-planner.JPG
       - title: Zumzi Video Conferencing
         title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
         image_alt: video chat
@@ -134,22 +135,29 @@ sections:
             type: action
         type: grid_item
         image: images/energetic-sunflower.png
-      - title: lorem-ipsum
+      - title: Web Audio Workstation
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: |+
+          Made using jQuery and Vanilla JS
 
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
-        actions: []
+        actions:
+          - label: Go To Live Site
+            url: 'https://mihirbegmusiclab.netlify.app/'
+            style: link
+            icon_class: dev
+            new_window: true
+            no_follow: false
+            type: action
+          - label: Github Repo
+            url: 'https://github.com/bgoonz/MihirBegMusicLab'
+            style: link
+            icon_class: dev
+            new_window: true
+            no_follow: false
+            type: action
         type: grid_item
+        image: images/royal-kangaroo.JPG
 seo:
   title: Showcase
   description: This is the showcase page
