@@ -32,7 +32,7 @@ seo:
         - name: 'twitter:image'
           value: images/5.jpg
           relativeUrl: true
-template: documentation
+template: docs
 ---
 
 # Fundamental Data Structures In JavaScript
