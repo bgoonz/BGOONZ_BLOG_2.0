@@ -151,7 +151,7 @@ sections:
           - dolor sit amet
         actions: []
         type: grid_item
-        image: images/daw.JPG
+        image: images/royal-kangaroo.JPG
 seo:
   title: Showcase
   description: This is the showcase page
