@@ -29,4 +29,3 @@ template: advanced
 
 
 
-<iframe src="" ></iframe>
