@@ -142,7 +142,7 @@ sections:
           Made using jQuery and Vanilla JS
 
         actions:
-          - label: lorem-ipsum
+          - label: Live Site
             url: '#'
             style: link
             icon_class: dev
