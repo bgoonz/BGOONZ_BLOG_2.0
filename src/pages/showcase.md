@@ -149,7 +149,7 @@ sections:
             new_window: true
             no_follow: false
             type: action
-          - label: lorem-ipsum
+          - label: Github Repo
             url: '#'
             style: link
             icon_class: dev
