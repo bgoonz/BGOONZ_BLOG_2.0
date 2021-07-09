@@ -153,7 +153,7 @@ sections:
             url: 'https://github.com/bgoonz/MihirBegMusicLab'
             style: link
             icon_class: dev
-            new_window: false
+            new_window: true
             no_follow: false
             type: action
         type: grid_item
