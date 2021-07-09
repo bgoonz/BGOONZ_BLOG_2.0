@@ -29,7 +29,7 @@
                 ]
             },
             {
-                "url": "docs/My-Content/my-websites",
+                "url": "docs/",
                 "label": "Navigation",
                 "style": "link",
                 "icon_class": "dev",
