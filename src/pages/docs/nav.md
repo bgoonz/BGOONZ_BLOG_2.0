@@ -3,8 +3,8 @@ title: Navigation
 weight: 0
 excerpt: Links to the pages o this site
 seo:
-  title: ''
-  description: ''
+  title: 'Navigation'
+  description: 'Links to the pages o this site'
   robots: []
   extra: []
   type: stackbit_page_meta
