@@ -257,13 +257,13 @@
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 841px) {
     .post {
         &.type-docs {
             .post-title,
             .post-content {
-                padding-left: 7%;
-                padding-right: 7%;
+                padding-left: 5%;
+                padding-right: 5%;
             }
         }
     }
