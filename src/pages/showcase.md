@@ -103,7 +103,7 @@ sections:
         type: grid_item
         image: images/21ecc2f26e2641c8e9aae5479481bbe2 (5).png
       - title: Potluck Planner
-        title_url: lorem-ipsum
+        title_url: 'https://potluck-landing.netlify.app/'
         image_alt: lorem-ipsum
         content: >-
           ## Lorem ipsum
