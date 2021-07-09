@@ -1,6 +1,7 @@
 root_docs_path: /docs
 sections:
     - about
+    
     - faq
     - interact
     - links
@@ -8,4 +9,4 @@ sections:
     - react
     - tools
     - experimental
-    - articles
+
