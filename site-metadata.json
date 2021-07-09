@@ -349,7 +349,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Side Bar Theme",
+                        "label": "Embeds Blog",
                         "url": "https://friendly-panda-b61ab.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
