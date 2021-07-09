@@ -112,15 +112,6 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Project Portfolio",
-                        "url": "https://curious-zebra-a1329.netlify.app/",
-                        "style": "link",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
                         "label": "Medium Articles",
                         "url": "https://bryanguner.medium.com/",
                         "style": "link",
