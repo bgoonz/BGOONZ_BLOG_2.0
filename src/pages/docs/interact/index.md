@@ -1,7 +1,7 @@
 ---
-title: Jupyter Notebooks
+title: Interactive Examples
 weight: 0
-excerpt: lorem-ipsum
+excerpt: feel free to try the examples
 seo:
     title: ''
     description: ''
