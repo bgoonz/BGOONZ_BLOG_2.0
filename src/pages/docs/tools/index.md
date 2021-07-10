@@ -54,7 +54,7 @@ template: docs
 
 <br>
 
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="300px" width="20%" style="zoom:0.75; align-self:center;display:auto;">
+<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="300px" width="20%" style="zoom:0.75; align-self:center;display:auto;display: block;border-style:none;">
 </iframe>
 <br>
 
