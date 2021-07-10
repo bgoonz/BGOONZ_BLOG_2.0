@@ -76,7 +76,7 @@ template: docs
 
 <br>
 
-<iframe src="https://lambda-resources.netlify.app/" height="1600px" width="100%" style="zoom:0.75;display: block;border:12px solid gold;"></iframe>
+<iframe src="https://lambda-resources.netlify.app/" height="1600px" width="100%" style="zoom:0.75;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
 
 <br>
 
