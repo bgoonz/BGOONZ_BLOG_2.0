@@ -55,7 +55,7 @@ template: docs
 <br>
 <center>
 <h1> Up to 1TB of cloud Storage for file sharing!</h1>
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.75; align-self:center;display:auto;display: block;border:12px solid gold;">
+<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;">
 </iframe>
 </center>
 <br>
@@ -76,7 +76,7 @@ template: docs
 
 <br>
 
-<iframe src="https://lambda-resources.netlify.app/" height="1600px" width="100%" style="zoom:0.75;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
+<iframe src="https://lambda-resources.netlify.app/" height="1600px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
 
 <br>
 
@@ -96,7 +96,7 @@ template: docs
 
 <br>
 
-<iframe src="https://devtools42.netlify.app/" height="1600px" width="100%" style="zoom:0.75;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
+<iframe src="https://devtools42.netlify.app/" height="1600px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
 
 <br>
 
@@ -116,4 +116,4 @@ template: docs
 
 <br>
 
-<iframe src="https://ternary42.netlify.app/" height="400px" width="100%" style="zoom:0.75;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
+<iframe src="https://ternary42.netlify.app/" height="400px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
