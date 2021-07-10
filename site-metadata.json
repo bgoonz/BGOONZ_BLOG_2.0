@@ -157,7 +157,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "WebResourceRepo",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
