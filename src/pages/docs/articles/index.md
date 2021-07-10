@@ -6834,4 +6834,2996 @@ Other alternatives include:
 
 *   `JSON.parse(JSON.stringify(obj))` can be used to deep-clone a simple object, but it is CPU-intensive and only accepts valid JSON (therefore it strips functions and does not allow circular references).
 *   `Object.assign({}, obj)` is another alternative.
-*   `Object.keys(obj).reduce((acc, key) => (acc[key] = obj[key], acc), {})` i
+*   `Object.keys(obj).reduce((acc, key) => (acc[key] = obj[key], acc), {})` is another more verbose alternative that shows the concept in greater depth.
+
+#### Don’t forget:
+
+*   JavaScript passes objects by reference, meaning that nested objects get their references copied, instead of their values.
+*   The same method can be used to merge two objects.
+
+Additional links
+
+*   [MDN docs for Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+*   [Clone an object in vanilla JS](http://voidcanvas.com/clone-an-object-in-vanilla-js-in-depth/)
+
+### What is a closure? Can you give a useful example of one?
+
+#### Answer
+
+A closure is a function defined inside another function and has access to its lexical scope even when it is executing outside its lexical scope. The closure has access to variables in three scopes:
+
+*   Variables declared in its own scope
+*   Variables declared in the scope of the parent function
+*   Variables declared in the global scope
+
+In JavaScript, all functions are closures because they have access to the outer scope, but most functions don’t utilise the usefulness of closures: the persistence of state. Closures are also sometimes called stateful functions because of this.
+
+In addition, closures are the only way to store private data that can’t be accessed from the outside in JavaScript. They are the key to the UMD (Universal Module Definition) pattern, which is frequently used in libraries that only expose a public API but keep the implementation details private, preventing name collisions with other libraries or the user’s own code.
+
+#### Don’t forget:
+
+*   Closures are useful because they let you associate data with a function that operates on that data.
+*   A closure can substitute an object with only a single method.
+*   Closures can be used to emulate private properties and methods.
+
+Additional links
+
+*   [MDN docs for closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+*   [What is a closure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
+*   [I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+
+### How do you compare two objects in JavaScript?
+
+#### Answer
+
+Even though two different objects can have the same properties with equal values, they are not considered equal when compared using `==` or `===`. This is because they are being compared by their reference (location in memory), unlike primitive values which are compared by value.
+
+In order to test if two objects are equal in structure, a helper function is required. It will iterate through the own properties of each object to test if they have the same values, including nested objects. Optionally, the prototypes of the objects may also be tested for equivalence by passing `true` as the 3rd argument.
+
+Note: this technique does not attempt to test equivalence of data structures other than plain objects, arrays, functions, dates and primitive values.
+
+function isDeepEqual(obj1, obj2, testPrototypes = false) {  
+  if (obj1 === obj2) {  
+    return true  
+  }
+
+  if (typeof obj1 === "function" && typeof obj2 === "function") {  
+    return obj1.toString() === obj2.toString()  
+  }
+
+  if (obj1 instanceof Date && obj2 instanceof Date) {  
+    return obj1.getTime() === obj2.getTime()  
+  }
+
+  if (  
+    Object.prototype.toString.call(obj1) !==  
+      Object.prototype.toString.call(obj2) ||  
+    typeof obj1 !== "object"  
+  ) {  
+    return false  
+  }
+
+  const prototypesAreEqual = testPrototypes  
+    ? isDeepEqual(  
+        Object.getPrototypeOf(obj1),  
+        Object.getPrototypeOf(obj2),  
+        true  
+      )  
+    : true
+
+  const obj1Props = Object.getOwnPropertyNames(obj1)  
+  const obj2Props = Object.getOwnPropertyNames(obj2)
+
+  return (  
+    obj1Props.length === obj2Props.length &&  
+    prototypesAreEqual &&  
+    obj1Props.every(prop => isDeepEqual(obj1\[prop\], obj2\[prop\]))  
+  )  
+}
+
+#### Don’t forget:
+
+*   Primitives like strings and numbers are compared by their value
+*   Objects on the other hand are compared by their reference (location in memory)
+
+Additional links
+
+*   [Object Equality in JavaScript](http://adripofjavascript.com/blog/drips/object-equality-in-javascript.html)
+*   [Deep comparison between two values](https://30secondsofcode.org/object#equals)
+
+### What is context?
+
+#### Answer
+
+Context provides a way to pass data through the component tree without having to pass props down manually at every level. For example, authenticated user, locale preference, UI theme need to be accessed in the application by many components.
+
+const { Provider, Consumer } = React.createContext(defaultValue)
+
+#### Don’t forget:
+
+*   Context provides a way to pass data through a tree of React components, without having to manually pass props.
+*   Context is designed to share data that is considered _global_ for a tree of React components.
+
+Additional links
+
+*   [React docs on Context](https://reactjs.org/docs/context.html)
+
+### What is CORS?
+
+#### Answer
+
+Cross-Origin Resource Sharing or CORS is a mechanism that uses additional HTTP headers to grant a browser permission to access resources from a server at an origin different from the website origin.
+
+An example of a cross-origin request is a web application served from `[http://mydomain.com](http://mydomain.com/)` that uses AJAX to make a request for `[http://yourdomain.com](http://yourdomain.com./)`[.](http://yourdomain.com./)
+
+For security reasons, browsers restrict cross-origin HTTP requests initiated by JavaScript. `XMLHttpRequest` and `fetch` follow the same-origin policy, meaning a web application using those APIs can only request HTTP resources from the same origin the application was accessed, unless the response from the other origin includes the correct CORS headers.
+
+#### Don’t forget:
+
+*   CORS behavior is not an error, it’s a security mechanism to protect users.
+*   CORS is designed to prevent a malicious website that a user may unintentionally visit from making a request to a legitimate website to read their personal data or perform actions against their will.
+
+Additional links
+
+*   [MDN docs for CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+### Describe the layout of the CSS Box Model and briefly describe each component.
+
+#### Answer
+
+`Content`: The inner-most part of the box filled with content, such as text, an image, or video player. It has the dimensions `content-box width` and `content-box height`.
+
+`Padding`: The transparent area surrounding the content. It has dimensions `padding-box width` and `padding-box height`.
+
+`Border`: The area surrounding the padding (if any) and content. It has dimensions `border-box width` and `border-box height`.
+
+_Margin_: The transparent outer-most layer that surrounds the border. It separates the element from other elements in the DOM. It has dimensions `margin-box width` and `margin-box height`.
+
+![](https://cdn-images-1.medium.com/max/800/0*KArkb77G2q_NcEhy.gif)
+
+alt text
+
+#### Don’t forget:
+
+*   This is a very common question asked during front-end interviews and while it may seem easy, it is critical you know it well!
+*   Shows a solid understanding of spacing and the DOM
+
+Additional links
+
+*   [W3School’s CSS Box Model Page](https://www.w3schools.com/Css/css_boxmodel.asp)
+*   [Mozilla’s Intro to the CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+
+### What are the advantages of using CSS preprocessors?
+
+#### Answer
+
+CSS preprocessors add useful functionality that native CSS does not have, and generally make CSS neater and more maintainable by enabling DRY (Don’t Repeat Yourself) principles. Their terse syntax for nested selectors cuts down on repeated code. They provide variables for consistent theming (however, CSS variables have largely replaced this functionality) and additional tools like color functions (`lighten`, `darken`, `transparentize`, etc), mixins, and loops that make CSS more like a real programming language and gives the developer more power to generate complex CSS.
+
+#### Don’t forget:
+
+*   They allow us to write more maintainable and scalable CSS
+*   Some disadvantages of using CSS preprocessors (setup, re-compilation time can be slow etc.)
+
+Additional links
+
+*   [CSS Preprocessors](https://medium.com/@garyfagan/css-preprocessors-6f226fa16f27)
+
+### What is the difference between ‘+’ and ‘~’ sibling selectors?.
+
+#### Answer
+
+The General Sibling Selector `~` selects all elements that are siblings of a specified element.
+
+The following example selects all `<p>` elements that are siblings of `<div>` elements:
+
+    div ~ p {  background-color: blue;}
+
+The Adjacent Sibling Selector `+` selects all elements that are the adjacent siblings of a specified element.
+
+The following example will select all `<p>` elements that are placed immediately after `<div>` elements:
+
+    div + p {  background-color: red;}
+
+#### Don’t forget:
+
+Additional links
+
+*   [W3School’s CSS Combinators Page](https://www.w3schools.com/css/css_combinators.asp)
+*   [Mozilla’s Combinators and groups of selectors page](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)
+
+### Can you describe how CSS specificity works?
+
+#### Answer
+
+Assuming the browser has already determined the set of rules for an element, each rule is assigned a matrix of values, which correspond to the following from highest to lowest specificity:
+
+*   Inline rules (binary — 1 or 0)
+*   Number of id selectors
+*   Number of class, pseudo-class and attribute selectors
+*   Number of tags and pseudo-element selectors
+
+When two selectors are compared, the comparison is made on a per-column basis (e.g. an id selector will always be higher than any amount of class selectors, as ids have higher specificity than classes). In cases of equal specificity between multiple rules, the rules that comes last in the page’s style sheet is deemed more specific and therefore applied to the element.
+
+#### Don’t forget:
+
+*   Specificity matrix: \[inline, id, class/pseudo-class/attribute, tag/pseudo-element\]
+*   In cases of equal specificity, last rule is applied
+
+Additional links
+
+*   [CSS Specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+
+### What is debouncing?
+
+#### Answer
+
+Debouncing is a process to add some delay before executing a function. It is commonly used with DOM event listeners to improve the performance of page. It is a technique which allow us to “group” multiple sequential calls in a single one. A raw DOM event listeners can easily trigger 20+ events per second. A debounced function will only be called once the delay has passed.
+
+const debounce = (func, delay) => {   
+  let debounceTimer;  
+  return function() {   
+    const context = this;  
+    const args = arguments;   
+      clearTimeout(debounceTimer);   
+        debounceTimer = setTimeout(() => func.apply(context, args), delay);  
+  }  
+}
+
+window.addEventListere('scroll', debounce(function() {  
+  // Do stuff, this function will be called after a delay of 1 second  
+}, 1000));
+
+#### Don’t forget:
+
+*   Common use case is to make API call only when user is finished typing while searching.
+
+Additional links
+
+*   [Debouncing explained](https://css-tricks.com/debouncing-throttling-explained-examples/)
+
+### What is the DOM?
+
+#### Answer
+
+The DOM (Document Object Model) is a cross-platform API that treats HTML and XML documents as a tree structure consisting of nodes. These nodes (such as elements and text nodes) are objects that can be programmatically manipulated and any visible changes made to them are reflected live in the document. In a browser, this API is available to JavaScript where DOM nodes can be manipulated to change their styles, contents, placement in the document, or interacted with through event listeners.
+
+#### Don’t forget:
+
+*   The DOM was designed to be independent of any particular programming language, making the structural representation of the document available from a single, consistent API.
+*   The DOM is constructed progressively in the browser as a page loads, which is why scripts are often placed at the bottom of a page, in the `<head>` with a `defer` attribute, or inside a `DOMContentLoaded` event listener. Scripts that manipulate DOM nodes should be run after the DOM has been constructed to avoid errors.
+*   `document.getElementById()` and `document.querySelector()` are common functions for selecting DOM nodes.
+*   Setting the `innerHTML` property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.
+
+Additional links
+
+*   [MDN docs for DOM](https://developer.mozilla.org/en-US/docs/DOM)
+
+### What is the difference between the equality operators `==` and `===`?
+
+#### Answer
+
+Triple equals (`===`) checks for strict equality, which means both the type and value must be the same. Double equals (`==`) on the other hand first performs type coercion so that both operands are of the same type and then applies strict comparison.
+
+#### Don’t forget:
+
+*   Whenever possible, use triple equals to test equality because loose equality `==` can have unintuitive results.
+*   Type coercion means the values are converted into the same type.
+*   Mention of falsy values and their comparison.
+
+Additional links
+
+*   [MDN docs for comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
+
+### What is the difference between an element and a component in React?
+
+#### Answer
+
+An element is a plain JavaScript object that represents a DOM node or component. Elements are pure and never mutated, and are cheap to create.
+
+A component is a function or class. Components can have state and take props as input and return an element tree as output (although they can represent generic containers or wrappers and don’t necessarily have to emit DOM). Components can initiate side effects in lifecycle methods (e.g. AJAX requests, DOM mutations, interfacing with 3rd party libraries) and may be expensive to create.
+
+const Component = () => "Hello"  
+const componentElement = <Component />  
+const domNodeElement = <div />
+
+#### Don’t forget:
+
+*   Elements are immutable, plain objects that describe the DOM nodes or components you want to render.
+*   Components can be either classes or functions, that take props as an input and return an element tree as the output.
+
+Additional links
+
+*   [React docs on Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
+*   [React docs on Components and Props](https://reactjs.org/docs/components-and-props.html)
+
+### What is the difference between `em` and `rem` units?
+
+#### Answer
+
+Both `em` and `rem` units are based on the `font-size` CSS property. The only difference is where they inherit their values from.
+
+*   `em` units inherit their value from the `font-size` of the parent element
+*   `rem` units inherit their value from the `font-size` of the root element (`html`)
+
+In most browsers, the `font-size` of the root element is set to `16px` by default.
+
+#### Don’t forget:
+
+*   Benefits of using `em` and `rem` units
+
+Additional links
+
+*   [CSS units for font-size: px | em | rem](https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97)
+
+### What are error boundaries in React?
+
+#### Answer
+
+Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.
+
+Class components become error boundaries if they define either (or both) of the lifecycle methods `static getDerivedStateFromError()` or `componentDidCatch().`
+
+class ErrorBoundary extends React.Component {  
+  constructor(props) {  
+    super(props)  
+    this.state = { hasError: false }  
+  }
+
+  // Use componentDidCatch to log the error  
+  componentDidCatch(error, info) {  
+    // You can also log the error to an error reporting service  
+    logErrorToMyService(error, info)  
+  }
+
+  // use getDerivedStateFromError to update state  
+  static getDerivedStateFromError(error) {  
+    // Display fallback UI  
+     return { hasError: true };  
+  }
+
+  render() {  
+    if (this.state.hasError) {  
+      // You can render any custom fallback UI  
+      return <h1>Something went wrong.</h1>  
+    }  
+    return this.props.children  
+  }  
+}
+
+#### Don’t forget:
+
+*   Error boundaries only catch errors in the components below them in the tree. An error boundary can’t catch an error within itself.
+
+Additional links
+
+[https://trusting-dijkstra-4d3b17.netlify.app/](https://trusting-dijkstra-4d3b17.netlify.app/)
+
+### What is event delegation and why is it useful? Can you show an example of how to use it?
+
+#### Answer
+
+Event delegation is a technique of delegating events to a single common ancestor. Due to event bubbling, events “bubble” up the DOM tree by executing any handlers progressively on each ancestor element up to the root that may be listening to it.
+
+DOM events provide useful information about the element that initiated the event via `Event.target`. This allows the parent element to handle behavior as though the target element was listening to the event, rather than all children of the parent or the parent itself.
+
+This provides two main benefits:
+
+*   It increases performance and reduces memory consumption by only needing to register a single event listener to handle potentially thousands of elements.
+*   If elements are dynamically added to the parent, there is no need to register new event listeners for them.
+
+Instead of:
+
+document.querySelectorAll("button").forEach(button => {  
+  button.addEventListener("click", handleButtonClick)  
+})
+
+Event delegation involves using a condition to ensure the child target matches our desired element:
+
+document.addEventListener("click", e => {  
+  if (e.target.closest("button")) {  
+    handleButtonClick()  
+  }  
+})
+
+#### Don’t forget:
+
+*   The difference between event bubbling and capturing
+
+Additional links
+
+*   [Event Delegation](https://davidwalsh.name/event-delegate)
+
+### What is event-driven programming?
+
+#### Answer
+
+Event-driven programming is a paradigm that involves building applications that send and receive events. When the program emits events, the program responds by running any callback functions that are registered to that event and context, passing in associated data to the function. With this pattern, events can be emitted into the wild without throwing errors even if no functions are subscribed to it.
+
+A common example of this is the pattern of elements listening to DOM events such as `click` and `mouseenter`, where a callback function is run when the event occurs.
+
+document.addEventListener("click", function(event) {  
+  // This callback function is run when the user  
+  // clicks on the document.  
+})
+
+Without the context of the DOM, the pattern may look like this:
+
+const hub = createEventHub()  
+hub.on("message", function(data) {  
+  console.log(\`${data.username} said ${data.text}\`)  
+})  
+hub.emit("message", {  
+  username: "John",  
+  text: "Hello?"  
+})
+
+With this implementation, `on` is the way to _subscribe_ to an event, while `emit` is the way to _publish_ the event.
+
+#### Don’t forget:
+
+*   Follows a publish-subscribe pattern.
+*   Responds to events that occur by running any callback functions subscribed to the event.
+*   Show how to create a simple pub-sub implementation with JavaScript.
+
+Additional links
+
+*   [MDN docs on Events and Handlers](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Overview_of_Events_and_Handlers)
+*   [Understanding Node.js event-driven architecture](https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d)
+
+### What is the difference between an expression and a statement in JavaScript?
+
+#### Answer
+
+There are two main syntactic categories in JavaScript: expressions and statements. A third one is both together, referred to as an expression statement. They are roughly summarized as:
+
+*   **Expression**: produces a value
+*   **Statement**: performs an action
+*   **Expression statement**: produces a value and performs an action
+
+A general rule of thumb:
+
+> _If you can print it or assign it to a variable, it’s an expression. If you can’t, it’s a statement._
+
+Statements
+
+let x = 0
+
+function declaration() {}
+
+if (true) {  
+}
+
+Statements appear as instructions that do something but don’t produce values.
+
+// Assign \`x\` to the absolute value of \`y\`.  
+var x  
+if (y >= 0) {  
+  x = y  
+} else {  
+  x = -y  
+}
+
+The only expression in the above code is `y >= 0` which produces a value, either `true` or `false`. A value is not produced by other parts of the code.
+
+Expressions
+
+Expressions produce a value. They can be passed around to functions because the interpreter replaces them with the value they resolve to.
+
+5 + 5 // => 10
+
+lastCharacter("input") // => "t"
+
+true === true // => true
+
+Expression statements
+
+There is an equivalent version of the set of statements used before as an expression using the conditional operator:
+
+// Assign \`x\` as the absolute value of \`y\`.  
+var x = y >= 0 ? y : -y
+
+This is both an expression and a statement, because we are declaring a variable `x` (statement) as an evaluation (expression).
+
+#### Don’t forget:
+
+*   Function declarations vs function expressions
+
+Additional links
+
+*   [What is the difference between a statement and an expression?](https://stackoverflow.com/questions/12703214/javascript-difference-between-a-statement-and-an-expression)
+
+### What are truthy and falsy values in JavaScript?
+
+#### Answer
+
+A value is either truthy or falsy depending on how it is evaluated in a Boolean context. Falsy means false-like and truthy means true-like. Essentially, they are values that are coerced to `true` or `false` when performing certain operations.
+
+There are 6 falsy values in JavaScript. They are:
+
+*   `false`
+*   `undefined`
+*   `null`
+*   `""` (empty string)
+*   `NaN`
+*   `0` (both `+0` and `-0`)
+
+Every other value is considered truthy.
+
+A value’s truthiness can be examined by passing it into the `Boolean` function.
+
+Boolean("") // false  
+Boolean(\[\]) // true
+
+There is a shortcut for this using the logical NOT `!` operator. Using `!` once will convert a value to its inverse boolean equivalent (i.e. not false is true), and `!` once more will convert back, thus effectively converting the value to a boolean.
+
+!!"" // false  
+!!\[\] // true
+
+#### Don’t forget:
+
+Additional links
+
+*   [Truthy on MDN](https://developer.mozilla.org/en/docs/Glossary/Truthy)
+*   [Falsy on MDN](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+
+### Generate an array, containing the Fibonacci sequence, up until the nth term.
+
+#### Answer
+
+Initialize an empty array of length `n`. Use `Array.prototype.reduce()` to add values into the array, using the sum of the last two values, except for the first two.
+
+const fibonacci = n =>  
+  \[...Array(n)\].reduce(  
+    (acc, val, i) => acc.concat(i > 1 ? acc\[i - 1\] + acc\[i - 2\] : i),  
+    \[\]  
+  )
+
+#### Don’t forget:
+
+Additional links
+
+*   [Similar problem](https://github.com/Chalarangelo/30-seconds-of-code/blob/master/snippets_archive/fibonacciUntilNum.md)
+
+### Given an array of words, write a method to output matching sets of anagrams.
+
+const words = \['rates', 'rat', 'stare', 'taser', 'tears', 'art', 'tabs', 'tar', 'bats', 'state'\];
+
+#### Answer
+
+const words = \['rates', 'rat', 'stare', 'taser', 'tears', 'art', 'tabs', 'tar', 'bats', 'state'\];
+
+function anagramGroups(wordAry){  
+    const groupedWords = {};
+
+    // iterate over each word in the array  
+    wordAry.map(word => {  
+      // alphabetize the word and a separate variable  
+      alphaWord = word.split('').sort().join('');  
+      // if the alphabetize word is already a key, push the actual word value (this is an anagram)  
+      if(groupedWords\[alphaWord\]) {  
+        return groupedWords\[alphaWord\].push(word);  
+      }  
+      // otherwise add the alphabetize word key and actual word value (may not turn out to be an anagram)  
+      groupedWords\[alphaWord\] = \[word\];   
+    })
+
+    return groupedWords;  
+}
+
+// call the function and store results in a variable called collectedAnagrams  
+const collectedAnagrams = anagramGroups(words);
+
+// iterate over groupedAnagrams, printing out group of values  
+for(const sortedWord in collectedAnagrams) {  
+  if(collectedAnagrams\[sortedWord\].length > 1) {   
+    console.log(collectedAnagrams\[sortedWord\].toString());  
+  }  
+}
+
+#### Don’t forget:
+
+*   Iterate the array
+*   Alphabetize each word
+*   Store alphabetize word as the key value in a groupedWords object with the original word as the value
+*   Compare alphabetize words to object keys and add additional original words when matches are found
+*   Iterate over the return object and output the values, when there is more then one. (single values mean no anagram )
+
+Additional links
+
+*   [Find The Anagrams Gist](https://gist.github.com/tinabme/fe6878f5cff42f60a537262503f9b765)
+*   [isAnagram function implementation](https://www.30secondsofcode.org/snippet/isAnagram)
+
+### Using flexbox, create a 3-column layout where each column takes up a `col-{n} / 12` ratio of the container.
+
+    <div class="row">  <div class="col-2"></div>  <div class="col-7"></div>  <div class="col-3"></div></div>
+
+#### Answer
+
+Set the `.row` parent to `display: flex;` and use the `flex` shorthand property to give the column classes a `flex-grow` value that corresponds to its ratio value.
+
+    .row {  display: flex;}
+
+    .col-2 {  flex: 2;}
+
+    .col-7 {  flex: 7;}
+
+    .col-3 {  flex: 3;}
+
+#### Don’t forget:
+
+Additional links
+
+*   [MDN docs for basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+*   [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+### What does `0.1 + 0.2 === 0.3` evaluate to?
+
+#### Answer
+
+It evaluates to `false` because JavaScript uses the IEEE 754 standard for Math and it makes use of 64-bit floating numbers. This causes precision errors when doing decimal calculations, in short, due to computers working in Base 2 while decimal is Base 10.
+
+0.1 + 0.2 // 0.30000000000000004
+
+A solution to this problem would be to use a function that determines if two numbers are approximately equal by defining an error margin (epsilon) value that the difference between two values should be less than.
+
+const approxEqual = (n1, n2, epsilon = 0.0001) => Math.abs(n1 - n2) < epsilon  
+approxEqual(0.1 + 0.2, 0.3) // true
+
+#### Don’t forget:
+
+*   A simple solution to this problem
+
+Additional links
+
+*   [A simple helper function to check equality](https://github.com/Chalarangelo/30-seconds-of-code#approximatelyequal)
+*   [Fix “0.1 + 0.2 = 0.300000004” in JavaScript](http://blog.blakesimpson.co.uk/read/61-fix-0-1-0-2-0-300000004-in-javascript)
+
+### What is a focus ring? What is the correct solution to handle them?
+
+#### Answer
+
+A focus ring is a visible outline given to focusable elements such as buttons and anchor tags. It varies depending on the vendor, but generally it appears as a blue outline around the element to indicate it is currently focused.
+
+In the past, many people specified `outline: 0;` on the element to remove the focus ring. However, this causes accessibility issues for keyboard users because the focus state may not be clear. When not specified though, it causes an unappealing blue ring to appear around an element.
+
+In recent times, frameworks like Bootstrap have opted to use a more appealing `box-shadow` outline to replace the default focus ring. However, this is still not ideal for mouse users.
+
+The best solution is an upcoming pseudo-selector `:focus-visible` which can be polyfilled today with JavaScript. It will only show a focus ring if the user is using a keyboard and leave it hidden for mouse users. This keeps both aesthetics for mouse use and accessibility for keyboard use.
+
+#### Don’t forget:
+
+Additional links
+
+*   [:focus-visible](https://css-tricks.com/focus-visible-and-backwards-compatibility/)
+
+### What is the difference between the array methods `map()` and `forEach()`?
+
+#### Answer
+
+Both methods iterate through the elements of an array. `map()` maps each element to a new element by invoking the callback function on each element and returning a new array. On the other hand, `forEach()` invokes the callback function for each element but does not return a new array. `forEach()` is generally used when causing a side effect on each iteration, whereas `map()` is a common functional programming technique.
+
+#### Don’t forget:
+
+*   Use `forEach()` if you need to iterate over an array and cause mutations to the elements without needing to return values to generate a new array.
+*   `map()` is the right choice to keep data immutable where each value of the original array is mapped to a new array.
+
+Additional links
+
+*   [MDN docs for forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+*   [MDN docs for map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+*   [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
+
+### What are fragments?
+
+#### Answer
+
+Fragments allow a React component to return multiple elements without a wrapper, by grouping the children without adding extra elements to the DOM. Fragments offer better performance, lower memory usage, a cleaner DOM and can help in dealing with certain CSS mechanisms (e.g. tables, Flexbox and Grid).
+
+render() {  
+  return (  
+    <React.Fragment>  
+      <ChildA />  
+      <ChildB />  
+      <ChildC />  
+    </React.Fragment>  
+  );  
+}
+
+// Short syntax supported by Babel 7  
+render() {  
+  return (  
+    <>  
+      <ChildA />  
+      <ChildB />  
+      <ChildC />  
+    </>  
+  );  
+}
+
+#### Don’t forget:
+
+*   Fragments group multiple elements returned from a component, without adding a DOM element around them.
+
+Additional links
+
+*   [React docs on Fragments](https://reactjs.org/docs/fragments.html)
+
+### What is functional programming?
+
+#### Answer
+
+Functional programming is a paradigm in which programs are built in a declarative manner using pure functions that avoid shared state and mutable data. Functions that always return the same value for the same input and don’t produce side effects are the pillar of functional programming. Many programmers consider this to be the best approach to software development as it reduces bugs and cognitive load.
+
+#### Don’t forget:
+
+*   Cleaner, more concise development experience
+*   Simple function composition
+*   Features of JavaScript that enable functional programming (`.map`, `.reduce` etc.)
+*   JavaScript is multi-paradigm programming language (Object-Oriented Programming and Functional Programming live in harmony)
+
+Additional links
+
+*   [Javascript and Functional Programming: An Introduction](https://hackernoon.com/javascript-and-functional-programming-an-introduction-286aa625e26d)
+*   [Master the JavaScript Interview: What is Functional Programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
+
+### Describe your thoughts on how a single page web app should handle focus when changing routes
+
+#### Answer
+
+Single page applications make use of client-side rendering. This means that ‘[examplesite.com](http://examplesite.com/)’ and ‘[examplesite.com/page2](http://examplesite.com/page2)’ are actually the same HTML web page, but the client app decides what content to drop into that single page at runtime. Your user never actually “leaves” the page, and this causes some accessibility issues in terms of focus.
+
+Unless focus is explicitly managed in the app, a scenario like this may happen:
+
+1.  User visits ‘[examplesite.com](http://examplesite.com/)’
+2.  User clicks a link to go to another route: ‘[examplesite.com/product1](http://examplesite.com/product1)’
+3.  Client app changes the visible content to show the details for this new route (e.g. some info about Product 1)
+4.  Focus is still on the link that was clicked in step 2
+5.  If a user uses the keyboard or screen reader to now try and read the content, the focused starting point is in the middle of the page on an element no longer visible
+
+Many strategies have been proposed in handling this situation, all involving explicitly managing the focus when the new page content is rendered. [Recent research by GatsbyJS](https://www.gatsbyjs.org/blog/2019-07-11-user-testing-accessible-client-routing/) suggests the best approach is:
+
+1.  User visits ‘[examplesite.com](http://examplesite.com/)’
+2.  User clicks a link to go to another route: ‘[examplesite.com/product1](http://examplesite.com/product1)’
+3.  Client app changes the visible content to show the details for this new route (e.g. some info about Product 1)
+4.  Client app manually places focus on the main header at the top of the page (almost always this will be the H1 element)
+
+By doing so, focus is reset to the top of the page, ready for the user to begin exploring the new content. This solution requires inserting the main heading into the start of tabbing order with `tabindex="-1"`.
+
+#### Don’t forget:
+
+*   Focus issues caused by client-side rendering, instead of server-side
+*   Focus should not be left on elements no longer visible on the page
+*   Challenges faced by screen reader users and users utilising keyboard navigation
+*   Careful manual focus management required
+
+Additional links
+
+*   [Handling Focus on Route Change: Up Your A11y](https://www.upyoura11y.com/handling-focus/)
+
+### What are higher-order components?
+
+#### Answer
+
+A higher-order component (HOC) is a function that takes a component as an argument and returns a new component. It is a pattern that is derived from React’s compositional nature. Higher-order components are like **pure components** because they accept any dynamically provided child component, but they won’t modify or copy any behavior from their input components.
+
+const EnhancedComponent = higherOrderComponent(WrappedComponent)
+
+#### Don’t forget:
+
+*   They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.
+
+Additional links
+
+### What will the console log in this example?
+
+var foo = 1  
+var foobar = function() {  
+  console.log(foo)  
+  var foo = 2  
+}  
+foobar()
+
+#### Answer
+
+Due to hoisting, the local variable `foo` is declared before the `console.log` method is called. This means the local variable `foo` is passed as an argument to `console.log()` instead of the global one declared outside of the function. However, since the value is not hoisted with the variable declaration, the output will be `undefined`, not `2`.
+
+#### Don’t forget:
+
+*   Hoisting is JavaScript’s default behavior of moving declarations to the top
+*   Mention of `strict` mode
+
+Additional links
+
+*   [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+
+### How does hoisting work in JavaScript?
+
+#### Answer
+
+Hoisting is a JavaScript mechanism where variable and function declarations are put into memory during the compile phase. This means that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
+
+However, the value is not hoisted with the declaration.
+
+The following snippet:
+
+console.log(hoist)  
+var hoist = "value"
+
+is equivalent to:
+
+var hoist  
+console.log(hoist)  
+hoist = "value"
+
+Therefore logging `hoist` outputs `undefined` to the console, not `"value"`.
+
+Hoisting also allows you to invoke a function declaration before it appears to be declared in a program.
+
+myFunction() // No error; logs "hello"  
+function myFunction() {  
+  console.log("hello")  
+}
+
+But be wary of function expressions that are assigned to a variable:
+
+myFunction() // Error: \`myFunction\` is not a function  
+var myFunction = function() {  
+  console.log("hello")  
+}
+
+#### Don’t forget:
+
+*   Hoisting is JavaScript’s default behavior of moving declarations to the top
+*   Functions declarations are hoisted before variable declarations
+
+Additional links
+
+*   [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+*   [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript)
+
+### Can a web page contain multiple `<header>` elements? What about `<footer>` elements?
+
+#### Answer
+
+Yes to both. The W3 documents state that the tags represent the header(`<header>`) and footer(`<footer>`) areas of their nearest ancestor “section”. So not only can the page `<body>` contain a header and a footer, but so can every `<article>` and `<section>` element.
+
+#### Don’t forget:
+
+*   W3 recommends having as many as you want, but only 1 of each for each “section” of your page, i.e. body, section etc.
+
+Additional links
+
+*   [StackOverflow — Using header or footer tag twice](https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+
+### Discuss the differences between an HTML specification and a browser’s implementation thereof.
+
+#### Answer
+
+HTML specifications such as `HTML5` define a set of rules that a document must adhere to in order to be “valid” according to that specification. In addition, a specification provides instructions on how a browser must interpret and render such a document.
+
+A browser is said to “support” a specification if it handles valid documents according to the rules of the specification. As of yet, no browser supports all aspects of the `HTML5` specification (although all of the major browser support most of it), and as a result, it is necessary for the developer to confirm whether the aspect they are making use of will be supported by all of the browsers on which they hope to display their content. This is why cross-browser support continues to be a headache for developers, despite the improved specificiations.
+
+#### Don’t forget:
+
+*   `HTML5` defines some rules to follow for an invalid `HTML5` document (i.e., one that contains syntactical errors)
+*   However, invalid documents may contain anything, so it’s impossible for the specification to handle all possibilities comprehensively.
+*   Thus, many decisions about how to handle malformed documents are left up to the browser.
+
+Additional links
+
+*   [HTML 5.2 WWW Specifications](https://www.w3.org/TR/html52/)
+
+### What is the difference between HTML and React event handling?
+
+#### Answer
+
+In HTML, the attribute name is in all lowercase and is given a string invoking a function defined somewhere:
+
+    <button onclick="handleClick()"></button>
+
+In React, the attribute name is camelCase and are passed the function reference inside curly braces:
+
+<button onClick={handleClick} />
+
+In HTML, `false` can be returned to prevent default behavior, whereas in React `preventDefault` has to be called explicitly.
+
+    <a href="#" onclick="console.log('The link was clicked.'); return false" />
+
+function handleClick(e) {  
+  e.preventDefault()  
+  console.log("The link was clicked.")  
+}
+
+#### Don’t forget:
+
+*   HTML uses lowercase, React uses camelCase.
+
+Additional links
+
+*   [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
+
+### What are some differences that XHTML has compared to HTML?
+
+#### Answer
+
+Some of the key differences are:
+
+*   An XHTML element must have an XHTML `<DOCTYPE>`
+*   Attributes values must be enclosed in quotes
+*   Attribute minimization is forbidden (e.g. one has to use `checked="checked"` instead of `checked`)
+*   Elements must always be properly nested
+*   Elements must always be closed
+*   Special characters must be escaped
+
+#### Don’t forget:
+
+*   Any element can be self-closed
+*   Tags ands attributes are case-sensitive, usually lowercase
+
+Additional links
+
+*   [W3Schools docs for HTML and XHTML](https://www.w3schools.com/html/html_xhtml.asp)
+
+### Briefly describe the correct usage of the following HTML5 semantic elements: `<header>`, `<article>`,`<section>`, `<footer>`
+
+#### Answer
+
+*   `<header>` is used to contain introductory and navigational information about a section of the page. This can include the section heading, the author’s name, time and date of publication, table of contents, or other navigational information.
+*   `<article>` is meant to house a self-contained composition that can logically be independently recreated outside of the page without losing its meaning. Individual blog posts or news stories are good examples.
+*   `<section>` is a flexible container for holding content that shares a common informational theme or purpose.
+*   `<footer>` is used to hold information that should appear at the end of a section of content and contain additional information about the section. Author’s name, copyright information, and related links are typical examples of such content.
+
+#### Don’t forget:
+
+*   Other semantic elements are `<form>` and `<table>`
+
+Additional links
+
+*   [HTML 5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
+
+### What is HTML5 Web Storage? Explain `localStorage` and `sessionStorage`.
+
+#### Answer
+
+With HTML5, web pages can store data locally within the user’s browser. The data is stored in name/value pairs, and a web page can only access data stored by itself.
+
+**Differences between** `**localStorage**` **and** `**sessionStorage**` **regarding lifetime:**
+
+*   Data stored through `localStorage` is permanent: it does not expire and remains stored on the user’s computer until a web app deletes it or the user asks the browser to delete it.
+*   `sessionStorage` has the same lifetime as the top-level window or browser tab in which the data got stored. When the tab is permanently closed, any data stored through `sessionStorage` is deleted.
+
+**Differences between** `**localStorage**` **and** `**sessionStorage**` **regarding storage scope:** Both forms of storage are scoped to the document origin so that documents with different origins will never share the stored objects.
+
+*   `sessionStorage` is also scoped on a per-window basis. Two browser tabs with documents from the same origin have separate `sessionStorage` data.
+*   Unlike in `localStorage`, the same scripts from the same origin can’t access each other’s `sessionStorage` when opened in different tabs.
+
+#### Don’t forget:
+
+*   Earlier, this was done with cookies.
+*   The storage limit is far larger (at least 5MB) than with cookies and its faster.
+*   The data is never transferred to the server and can only be used if the client specifically asks for it.
+
+Additional links
+
+*   [W3Schools — HTML5 Webstorage](https://www.w3schools.com/html/html5_webstorage.asp)
+
+### What is the reason for wrapping the entire contents of a JavaScript source file in a function that is immediately invoked?
+
+#### Answer
+
+This technique is very common in JavaScript libraries. It creates a closure around the entire contents of the file which creates a private namespace and thereby helps avoid potential name clashes between different JavaScript modules and libraries. The function is immediately invoked so that the namespace (library name) is assigned the return value of the function.
+
+const myLibrary = (function() {  
+  var privateVariable = 2  
+  return {  
+    publicMethod: () => privateVariable  
+  }  
+})()  
+privateVariable // ReferenceError  
+myLibrary.publicMethod() // 2
+
+#### Don’t forget:
+
+*   Used among many popular JavaScript libraries
+*   Creates a private namespace
+
+Additional links
+
+*   [MDN docs for closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+
+### Explain the differences between imperative and declarative programming.
+
+#### Answer
+
+These two types of programming can roughly be summarized as:
+
+*   Imperative: **how** to achieve something
+*   Declarative: **what** should be achieved
+
+A common example of declarative programming is CSS. The developer specifies CSS properties that describe what something should look like rather than how to achieve it. The “how” is abstracted away by the browser.
+
+On the other hand, imperative programming involves the steps required to achieve something. In JavaScript, the differences can be contrasted like so:
+
+Imperative
+
+const numbers = \[1, 2, 3, 4, 5\]  
+const numbersDoubled = \[\]  
+for (let i = 0; i < numbers.length; i++) {  
+  numbersDoubled\[i\] = numbers\[i\] \* 2  
+}
+
+We manually loop over the numbers of the array and assign the new index as the number doubled.
+
+Declarative
+
+const numbers = \[1, 2, 3, 4, 5\]  
+const numbersDoubled = numbers.map(n => n \* 2)
+
+We declare that the new array is mapped to a new one where each value is doubled.
+
+#### Don’t forget:
+
+*   Declarative programming often works with functions and expressions. Imperative programming frequently uses statements and relies on low-level features that cause mutations, while declarative programming has a strong focus on abstraction and purity.
+*   Declarative programming is more terse and easier to process at a glance.
+
+Additional links
+
+*   [Declarative vs Imperative Programming](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2)
+
+### What are inline conditional expressions?
+
+#### Answer
+
+Since a JSX element tree is one large expression, you cannot embed statements inside. Conditional expressions act as a replacement for statements to use inside the tree.
+
+For example, this won’t work:
+
+function App({ messages, isVisible }) {  
+  return (  
+    <div>  
+      if (messages.length > 0) {  
+        <h2>You have {messages.length} unread messages.</h2>  
+      } else {  
+        <h2>You have no unread messages.</h2>  
+      }  
+      if (isVisible) {  
+        <p>I am visible.</p>  
+      }  
+    </div>  
+  )  
+}
+
+Logical AND `&&` and the ternary `? :` operator replace the `if`/`else` statements.
+
+function App({ messages, isVisible }) {  
+  return (  
+    <div>  
+      {messages.length > 0 ? (  
+        <h2>You have {messages.length} unread messages.</h2>  
+      ) : (  
+        <h2>You have no unread messages.</h2>  
+      )}  
+      {isVisible && <p>I am visible.</p>}  
+    </div>  
+  )  
+}
+
+#### Don’t forget:
+
+Additional links
+
+*   [React docs on Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
+
+### What is a key? What are the benefits of using it in lists?
+
+#### Answer
+
+Keys are a special string attribute that helps React identify which items have been changed, added or removed. They are used when rendering array elements to give them a stable identity. Each element’s key must be unique (e.g. IDs from the data or indexes as a last resort).
+
+const todoItems = todos.map(todo => <li key={todo.id}>{todo.text}</li>)
+
+*   Using indexes as keys is not recommended if the order of items may change, as it might negatively impact performance and may cause issues with component state.
+*   If you extract list items as a separate component then apply keys on the list component instead of the `<li>` tag.
+
+#### Don’t forget:
+
+*   Keys give elements in a collection a stable identity and help React identify changes.
+*   You should avoid using indexes as keys if the order of items may change.
+*   You should lift the key up to the component, instead of the `<li>` element, if you extract list items as components.
+
+Additional links
+
+*   [React docs on Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
+
+### What are landmark roles and how can they be useful?
+
+#### Answer
+
+Landmark roles is a way to identify different sections of a page like the main content or a navigation region. The Landmarks helps assistive technology users to navigate a page, allowing them skip over areas of it.
+
+For example,
+
+    <div id="header" role="banner">Header of the Page</div><div id="content" role="main">Main Content Goes Here</div>
+
+#### Don’t forget:
+
+*   Identify sections of a page
+*   Assist users in navigating a page
+
+Additional links
+
+*   [ARIA Landmark Roles](https://www.washington.edu/accessibility/web/landmarks/)
+*   [Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
+
+### What is the difference between lexical scoping and dynamic scoping?
+
+#### Answer
+
+Lexical scoping refers to when the location of a function’s definition determines which variables you have access to. On the other hand, dynamic scoping uses the location of the function’s invocation to determine which variables are available.
+
+#### Don’t forget:
+
+*   Lexical scoping is also known as static scoping.
+*   Lexical scoping in JavaScript allows for the concept of closures.
+*   Most languages use lexical scoping because it tends to promote source code that is more easily understood.
+
+Additional links
+
+*   [Mozilla Docs — Closures & Lexical Scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+
+### What are the lifecycle methods in React?
+
+#### Answer
+
+`getDerivedStateFromProps`: Executed before rendering on the initial mount and all component updates. Used to update the state based on changes in props over time. Has rare use cases, like tracking component animations during the lifecycle. There are only few cases where this makes sense to use over other lifecycle methods. It expects to return an object that will be the the new state, or null to update nothing. This method does not have access to the component instance either.
+
+`componentDidMount`: Executed after first rendering and here all AJAX requests, DOM or state updates, and set up eventListeners should occur.
+
+`shouldComponentUpdate`: Determines if the component will be updated or not. By default, it returns true. If you are sure that the component doesn’t need to render after state or props are updated, you can return a false value. It is a great place to improve performance as it allows you to prevent a rerender if component receives new prop.
+
+`getSnapshotBeforeUpdate`: Invoked right after a component render happens because of an update, before `componentDidUpdate`. Any value returned from this method will be passed to `componentDidUpdate`.
+
+`componentDidUpdate`: Mostly it is used to update the DOM in response to prop or state changes.
+
+`componentWillUnmount`: It will be used to cancel any outgoing network requests, or remove all event listeners associated with the component.
+
+`componentDidCatch`: Used in error boundaries, which are components that implement this method. It allows the component to catch JavaScript errors anywhere in the _child_ component tree (below this component), log errors, and display a UI with error information.
+
+#### Don’t forget:
+
+Additional links
+
+### What are the different phases of the component lifecycle in React?
+
+#### Answer
+
+There are four different phases of component’s lifecycle:
+
+**Initialization**: In this phase, the component prepares setting up the initial state and default props.
+
+**Mounting**: The react component is ready to mount to the DOM. This phase covers the `getDerivedStateFromProps` and `componentDidMount` lifecycle methods.
+
+**Updating**: In this phase, the component gets updated in two ways, sending the new props and updating the state. This phase covers the `getDerivedStateFromProps`, `shouldComponentUpdate`, `getSnapshotBeforeUpdate` and `componentDidUpdate` lifecycle methods.
+
+**Unmounting**: In this last phase, the component is not needed and gets unmounted from the browser DOM. This phase includes the `componentWillUnmount` lifecycle method.
+
+**Error Handling**: In this phase, the component is called whenever there’s an error during rendering, in a lifecycle method, or in the constructor for any child component. This phase includes the `componentDidCatch` lifecycle method.
+
+#### Don’t forget:
+
+Additional links
+
+### What does lifting state up in React mean?
+
+#### Answer
+
+When several components need to share the same data, then it is recommended to lift the shared state up to their closest common ancestor. For example, if two child components share the same data, it is recommended to move the shared state to parent instead of maintaining the local state in both child components.
+
+#### Don’t forget:
+
+Additional links
+
+### Create a function that masks a string of characters with `#` except for the last four (4) characters.
+
+mask("123456789") // "#####6789"
+
+#### Answer
+
+> _There are many ways to solve this problem, this is just one one of them._
+
+Using `String.prototype.slice()` we can grab the last 4 characters of the string by passing `-4` as an argument. Then, using `String.prototype.padStart()`, we can pad the string to the original length with the repeated mask character.
+
+const mask = (str, maskChar = "#") =>  
+  str.slice(-4).padStart(str.length, maskChar)
+
+#### Don’t forget:
+
+*   Short, one-line functional solutions to problems should be preferred provided they are efficient
+
+Additional links
+
+### Can you name the four types of `@media` properties?
+
+#### Answer
+
+*   `all`, which applies to all media type devices
+*   `print`, which only applies to printers
+*   `screen`, which only applies to screens (desktops, tablets, mobile etc.)
+*   `speech`, which only applies to screenreaders
+
+#### Don’t forget:
+
+Additional links
+
+*   [MDN docs for](https://developer.mozilla.org/en-US/docs/Web/CSS/@media) `[@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)` [rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
+*   [MDN docs for using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+### What is memoization?
+
+#### Answer
+
+Memoization is the process of caching the output of function calls so that subsequent calls are faster. Calling the function again with the same input will return the cached output without needing to do the calculation again.
+
+A basic implementation in JavaScript looks like this:
+
+const memoize = fn => {  
+  const cache = new Map()  
+  return value => {  
+    const cachedResult = cache.get(value)  
+    if (cachedResult !== undefined) return cachedResult  
+    const result = fn(value)  
+    cache.set(value, result)  
+    return result  
+  }  
+}
+
+#### Don’t forget:
+
+*   The above technique returns a unary function even if the function can take multiple arguments.
+*   The first function call will be slower than usual because of the overhead created by checking if a cached result exists and setting a result before returning the value.
+*   Memoization increases performance on subsequent function calls but still needs to do work on the first call.
+
+Additional links
+
+*   [Implementing memoization in JavaScript](https://www.sitepoint.com/implementing-memoization-in-javascript/)
+
+### How do you ensure methods have the correct `this` context in React component classes?
+
+#### Answer
+
+In JavaScript classes, the methods are not bound by default. This means that their `this` context can be changed (in the case of an event handler, to the element that is listening to the event) and will not refer to the component instance. To solve this, `Function.prototype.bind()` can be used to enforce the `this` context as the component instance.
+
+constructor(props) {  
+  super(props);  
+  this.handleClick = this.handleClick.bind(this);  
+}
+
+handleClick() {  
+  // Perform some logic  
+}
+
+*   The `bind` approach can be verbose and requires defining a `constructor`, so the new public class fields syntax is generally preferred:
+
+handleClick = () => {  
+  console.log('this is:', this);  
+}
+
+render() {  
+  return (  
+    <button onClick={this.handleClick}>  
+      Click me  
+    </button>  
+  );  
+}
+
+*   You can also use an inline arrow function, because lexical `this` (referring to the component instance) is preserved:
+
+<button onClick={e => this.handleClick(e)}>Click me</button>
+
+Note that extra re-rendering can occur using this technique because a new function reference is created on render, which gets passed down to child components and breaks `shouldComponentUpdate` / `PureComponent` shallow equality checks to prevent unnecessary re-renders. In cases where performance is important, it is preferred to go with `bind` in the constructor, or the public class fields syntax approach, because the function reference remains constant.
+
+#### Don’t forget:
+
+*   You can either bind methods to the component instance context in the constructor, use public class fields syntax, or use inline arrow functions.
+
+Additional links
+
+*   [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
+*   [React docs on Passing Functions to Components](https://reactjs.org/docs/faq-functions.html#how-do-i-bind-a-function-to-a-component-instance)
+
+### What is a MIME type and what is it used for?
+
+#### Answer
+
+`MIME` is an acronym for `Multi-purpose Internet Mail Extensions`. It is used as a standard way of classifying file types over the Internet.
+
+#### Don’t forget:
+
+*   A `MIME type` actually has two parts: a type and a subtype that are separated by a slash (/). For example, the `MIME type` for Microsoft Word files is `application/msword` (i.e., type is application and the subtype is msword).
+
+Additional links
+
+*   [MIME Type — MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+
+### Contrast mutable and immutable values, and mutating vs non-mutating methods.
+
+#### Answer
+
+The two terms can be contrasted as:
+
+*   Mutable: subject to change
+*   Immutable: cannot change
+
+In JavaScript, objects are mutable while primitive values are immutable. This means operations performed on objects can change the original reference in some way, while operations performed on a primitive value cannot change the original value.
+
+All `String.prototype` methods do not have an effect on the original string and return a new string. On the other hand, while some methods of `Array.prototype` do not mutate the original array reference and produce a fresh array, some cause mutations.
+
+const myString = "hello!"  
+myString.replace("!", "") // returns a new string, cannot mutate the original value
+
+const originalArray = \[1, 2, 3\]  
+originalArray.push(4) // mutates originalArray, now \[1, 2, 3, 4\]  
+originalArray.concat(4) // returns a new array, does not mutate the original
+
+#### Don’t forget:
+
+*   List of mutating and non-mutating array methods
+
+Additional links
+
+*   [Mutating vs non-mutating array methods](https://lorenstewart.me/2017/01/22/javascript-array-methods-mutating-vs-non-mutating/)
+
+### What is the only value not equal to itself in JavaScript?
+
+#### Answer
+
+`NaN` (Not-a-Number) is the only value not equal to itself when comparing with any of the comparison operators. `NaN` is often the result of meaningless math computations, so two `NaN` values make no sense to be considered equal.
+
+#### Don’t forget:
+
+*   The difference between `isNaN()` and `Number.isNaN()`
+*   `const isNaN = x => x !== x`
+
+Additional links
+
+*   [MDN docs for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) `[NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)`
+
+### NodeJS often uses a callback pattern where if an error is encountered during execution, this error is passed as the first argument to the callback. What are the advantages of this pattern?
+
+fs.readFile(filePath, function(err, data) {  
+  if (err) {  
+    // handle the error, the return is important here  
+    // so execution stops here  
+    return console.log(err)  
+  }  
+  // use the data object  
+  console.log(data)  
+})
+
+#### Answer
+
+Advantages include:
+
+*   Not needing to process data if there is no need to even reference it
+*   Having a consistent API leads to more adoption
+*   Ability to easily adapt a callback pattern that will lead to more maintainable code
+
+As you can see from below example, the callback is called with null as its first argument if there is no error. However, if there is an error, you create an Error object, which then becomes the callback’s only parameter. The callback function allows a user to easily know whether or not an error occurred.
+
+This practice is also called the _Node.js error convention_, and this kind of callback implementations are called _error-first callbacks_.
+
+var isTrue = function(value, callback) {  
+  if (value === true) {  
+    callback(null, "Value was true.")  
+  } else {  
+    callback(new Error("Value is not true!"))  
+  }  
+}
+
+var callback = function(error, retval) {  
+  if (error) {  
+    console.log(error)  
+    return  
+  }  
+  console.log(retval)  
+}
+
+isTrue(false, callback)  
+isTrue(true, callback)
+
+/\*  
+  { stack: \[Getter/Setter\],  
+    arguments: undefined,  
+    type: undefined,  
+    message: 'Value is not true!' }  
+  Value was true.  
+\*/
+
+#### Don’t forget:
+
+*   This is just a convention. However, you should stick to it.
+
+Additional links
+
+*   [The Node.js Way — Understanding Error-First Callbacks](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
+*   [What are the error conventions?](https://docs.nodejitsu.com/articles/errors/what-are-the-error-conventions)
+
+### What is the event loop in Node.js?
+
+#### Answer
+
+The event loop handles all async callbacks. Callbacks are queued in a loop, while other code runs, and will run one by one when the response for each one has been received.
+
+#### Don’t forget:
+
+*   The event loop allows Node.js to perform non-blocking I/O operations, despite the fact that JavaScript is single-threaded
+
+Additional links
+
+*   [Node.js docs on event loop, timers and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
+
+### What is the difference between `null` and `undefined`?
+
+#### Answer
+
+In JavaScript, two values discretely represent nothing — `undefined` and `null`. The concrete difference between them is that `null` is explicit, while `undefined` is implicit. When a property does not exist or a variable has not been given a value, the value is `undefined`. `null` is set as the value to explicitly indicate “no value”. In essence, `undefined` is used when the nothing is not known, and `null` is used when the nothing is known.
+
+#### Don’t forget:
+
+*   `typeof undefined` evaluates to `"undefined"`.
+*   `typeof null` evaluates `"object"`. However, it is still a primitive value and this is considered an implementation bug in JavaScript.
+*   `undefined == null` evaluates to `true`.
+
+Additional links
+
+*   [MDN docs for null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
+*   [MDN docs for undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+
+### Describe the different ways to create an object. When should certain ways be preferred over others?
+
+#### Answer
+
+Object literal
+
+Often used to store one occurrence of data.
+
+const person = {  
+  name: "John",  
+  age: 50,  
+  birthday() {  
+    this.age++  
+  }  
+}  
+person.birthday() // person.age === 51
+
+Constructor
+
+Often used when you need to create multiple instances of an object, each with their own data that other instances of the class cannot affect. The `new` operator must be used before invoking the constructor or the global object will be mutated.
+
+function Person(name, age) {  
+  this.name = name  
+  this.age = age  
+}  
+Person.prototype.birthday = function() {  
+  this.age++  
+}  
+const person1 = new Person("John", 50)  
+const person2 = new Person("Sally", 20)  
+person1.birthday() // person1.age === 51  
+person2.birthday() // person2.age === 21
+
+Factory function
+
+Creates a new object similar to a constructor, but can store private data using a closure. There is also no need to use `new` before invoking the function or the `this` keyword. Factory functions usually discard the idea of prototypes and keep all properties and methods as own properties of the object.
+
+const createPerson = (name, age) => {  
+  const birthday = () => person.age++  
+  const person = { name, age, birthday }  
+  return person  
+}  
+const person = createPerson("John", 50)  
+person.birthday() // person.age === 51
+
+`Object.create()`
+
+Sets the prototype of the newly created object.
+
+const personProto = {  
+  birthday() {  
+    this.age++  
+  }  
+}  
+const person = Object.create(personProto)  
+person.age = 50  
+person.birthday() // person.age === 51
+
+A second argument can also be supplied to `Object.create()` which acts as a descriptor for the new properties to be defined.
+
+Object.create(personProto, {  
+  age: {  
+    value: 50,  
+    writable: true,  
+    enumerable: true  
+  }  
+})
+
+#### Don’t forget:
+
+*   Prototypes are objects that other objects inherit properties and methods from.
+*   Factory functions offer private properties and methods through a closure but increase memory usage as a tradeoff, while classes do not have private properties or methods but reduce memory impact by reusing a single prototype object.
+
+Additional links
+
+### What is the difference between a parameter and an argument?
+
+#### Answer
+
+Parameters are the variable names of the function definition, while arguments are the values given to a function when it is invoked.
+
+function myFunction(parameter1, parameter2) {  
+  console.log(arguments\[0\]) // "argument1"  
+}  
+myFunction("argument1", "argument2")
+
+#### Don’t forget:
+
+*   `arguments` is an array-like object containing information about the arguments supplied to an invoked function.
+*   `myFunction.length` describes the arity of a function (how many parameters it has, regardless of how many arguments it is supplied).
+
+Additional links
+
+### Does JavaScript pass by value or by reference?
+
+#### Answer
+
+JavaScript always passes by value. However, with objects, the value is a reference to the object.
+
+#### Don’t forget:
+
+*   Difference between pass-by-value and pass-by-reference
+
+Additional links
+
+*   [JavaScript Value vs Reference](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
+
+### How do you pass an argument to an event handler or callback?
+
+#### Answer
+
+You can use an arrow function to wrap around an event handler and pass arguments, which is equivalent to calling `bind`:
+
+<button onClick={() => this.handleClick(id)} />  
+<button onClick={this.handleClick.bind(this, id)} />
+
+#### Don’t forget:
+
+Additional links
+
+*   [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
+
+### Create a function `pipe` that performs left-to-right function composition by returning a function that accepts one argument.
+
+const square = v => v \* v  
+const double = v => v \* 2  
+const addOne = v => v + 1  
+const res = pipe(square, double, addOne)  
+res(3) // 19; addOne(double(square(3)))
+
+#### Answer
+
+Gather all supplied arguments using the rest operator `...` and return a unary function that uses `Array.prototype.reduce()` to run the value through the series of functions before returning the final value.
+
+const pipe = (...fns) => x => fns.reduce((v, fn) => fn(v), x)
+
+#### Don’t forget:
+
+*   Function composition is the process of combining two or more functions to produce a new function.
+
+Additional links
+
+*   [What is function composition?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0)
+
+### What are portals in React?
+
+#### Answer
+
+Portal are the recommended way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
+
+ReactDOM.createPortal(child, container)
+
+The first argument (`child`) is any renderable React child, such as an element, string, or fragment. The second argument (`container`) is a DOM element.
+
+#### Don’t forget:
+
+Additional links
+
+*   [React docs on Portals](https://reactjs.org/docs/portals.html)
+
+### What is the difference between the postfix `i++` and prefix `++i` increment operators?
+
+#### Answer
+
+Both increment the variable value by 1. The difference is what they evaluate to.
+
+The postfix increment operator evaluates to the value _before_ it was incremented.
+
+let i = 0  
+i++ // 0  
+// i === 1
+
+The prefix increment operator evaluates to the value _after_ it was incremented.
+
+let i = 0  
+++i // 1  
+// i === 1
+
+#### Don’t forget:
+
+Additional links
+
+### In which states can a Promise be?
+
+#### Answer
+
+A `Promise` is in one of these states:
+
+*   pending: initial state, neither fulfilled nor rejected.
+*   fulfilled: meaning that the operation completed successfully.
+*   rejected: meaning that the operation failed.
+
+A pending promise can either be fulfilled with a value, or rejected with a reason (error). When either of these options happens, the associated handlers queued up by a promise’s then method are called.
+
+#### Don’t forget:
+
+Additional links
+
+*   [Official Web Docs — Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+### What are Promises?
+
+#### Answer
+
+The `Promise` object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value. An example can be the following snippet, which after 100ms prints out the result string to the standard output. Also, note the catch, which can be used for error handling. `Promise`s are chainable.
+
+new Promise((resolve, reject) => {  
+  setTimeout(() => {  
+    resolve("result")  
+  }, 100)  
+})  
+  .then(console.log)  
+  .catch(console.error)
+
+#### Don’t forget:
+
+*   Take a look into the other questions regarding `Promise`s!
+
+Additional links
+
+*   [Master the JavaScript Interview: What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e772618)
+
+### How to apply prop validation in React?
+
+#### Answer
+
+When the application is running in development mode, React will automatically check for all props that we set on components to make sure they are the correct data type. For incorrect data types, it will generate warning messages in the console for development mode. They are stripped in production mode due to their performance impact. Required props are defined with `isRequired`.
+
+For example, we define `propTypes` for component as below:
+
+import PropTypes from "prop-types"
+
+class User extends React.Component {  
+  static propTypes = {  
+    name: PropTypes.string.isRequired,  
+    age: PropTypes.number.isRequired  
+  }
+
+  render() {  
+    return (  
+      <h1>Welcome, {this.props.name}</h1>  
+      <h2>Age, {this.props.age}  
+    )  
+  }  
+}
+
+#### Don’t forget:
+
+*   We can define custom `propTypes`
+*   Using `propTypes` is not mandatory. However, it is a good practice and can reduce bugs.
+
+Additional links
+
+### How does prototypal inheritance differ from classical inheritance?
+
+#### Answer
+
+In the classical inheritance paradigm, object instances inherit their properties and functions from a class, which acts as a blueprint for the object. Object instances are typically created using a constructor and the `new` keyword.
+
+In the prototypal inheritance paradigm, object instances inherit directly from other objects and are typically created using factory functions or `Object.create()`.
+
+#### Don’t forget:
+
+Additional links
+
+*   [MDN docs for inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+### What is a pure function?
+
+#### Answer
+
+A pure function is a function that satisfies these two conditions:
+
+*   Given the same input, the function returns the same output.
+*   The function doesn’t cause side effects outside of the function’s scope (i.e. mutate data outside the function or data supplied to the function).
+
+Pure functions can mutate local data within the function as long as it satisfies the two conditions above.
+
+Pure
+
+const a = (x, y) => x + y  
+const b = (arr, value) => arr.concat(value)  
+const c = arr => \[...arr\].sort((a, b) => a - b)
+
+Impure
+
+const a = (x, y) => x + y + Math.random()  
+const b = (arr, value) => (arr.push(value), arr)  
+const c = arr => arr.sort((a, b) => a - b)
+
+#### Don’t forget:
+
+*   Pure functions are easier to reason about due to their reliability.
+*   All functions should be pure unless explicitly causing a side effect (i.e. `setInnerHTML`).
+*   If a function does not return a value, it is an indication that it is causing side effects.
+
+Additional links
+
+*   [Pure functions in JavaScript](http://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
+
+### How do you write comments inside a JSX tree in React?
+
+#### Answer
+
+Comments must be wrapped inside curly braces `{}` and use the `/* */` syntax.
+
+const tree = (  
+  <div>  
+    {/\* Comment \*/}  
+    <p>Text</p>  
+  </div>  
+)
+
+### What is recursion and when is it useful?
+
+#### Answer
+
+Recursion is the repeated application of a process. In JavaScript, recursion involves functions that call themselves repeatedly until they reach a base condition. The base condition breaks out of the recursion loop because otherwise the function would call itself indefinitely. Recursion is very useful when working with data structures that contain nesting where the number of levels deep is unknown.
+
+For example, you may have a thread of comments returned from a database that exist in a flat array but need to be nested for display in the UI. Each comment is either a top-level comment (no parent) or is a reply to a parent comment. Comments can be a reply of a reply of a reply… we have no knowledge beforehand the number of levels deep a comment may be. This is where recursion can help.
+
+const nest = (items, id = null, link = "parent\_id") =>  
+  items  
+    .filter(item => item\[link\] === id)  
+    .map(item => ({ ...item, children: nest(items, item.id) }))
+
+const comments = \[  
+  { id: 1, parent\_id: null, text: "First reply to post." },  
+  { id: 2, parent\_id: 1, text: "First reply to comment #1." },  
+  { id: 3, parent\_id: 1, text: "Second reply to comment #1." },  
+  { id: 4, parent\_id: 3, text: "First reply to comment #3." },  
+  { id: 5, parent\_id: 4, text: "First reply to comment #4." },  
+  { id: 6, parent\_id: null, text: "Second reply to post." }  
+\]
+
+nest(comments)  
+/\*  
+\[  
+  { id: 1, parent\_id: null, text: "First reply to post.", children: \[...\] },  
+  { id: 6, parent\_id: null, text: "Second reply to post.", children: \[\] }  
+\]  
+\*/
+
+In the above example, the base condition is met if `filter()` returns an empty array. The chained `map()` won’t invoke the callback function which contains the recursive call, thereby breaking the loop.
+
+#### Don’t forget:
+
+*   Recursion is useful when working with data structures containing an unknown number of nested structures.
+*   Recursion must have a base condition to be met that breaks out of the loop or it will call itself indefinitely.
+
+Additional links
+
+*   [In plain English, what is recursion?](https://softwareengineering.stackexchange.com/questions/25052/in-plain-english-what-is-recursion)
+
+### What is the output of the following code?
+
+const a = \[1, 2, 3\]  
+const b = \[1, 2, 3\]  
+const c = "1,2,3"
+
+console.log(a == c)  
+console.log(a == b)
+
+#### Answer
+
+The first `console.log` outputs `true` because JavaScript’s compiler performs type conversion and therefore it compares to strings by their value. On the other hand, the second `console.log` outputs `false` because Arrays are Objects and Objects are compared by reference.
+
+#### Don’t forget:
+
+*   JavaScript performs automatic type conversion
+*   Objects are compared by reference
+*   Primitives are compared by value
+
+Additional links
+
+*   [JavaScript Value vs Reference](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
+
+### What are refs in React? When should they be used?
+
+#### Answer
+
+Refs provide a way to access DOM nodes or React elements created in the render method. Refs should be used sparringly, but there are some good use cases for refs, such as:
+
+*   Managing focus, text selection, or media playback.
+*   Triggering imperative animations.
+*   Integrating with third-party DOM libraries.
+
+Refs are created using `React.createRef()` method and attached to React elements via the `ref` attribute. In order to use refs throughout the component, assign the `ref` to the instance property within the constructor:
+
+class MyComponent extends React.Component {  
+  constructor(props) {  
+    super(props)  
+    this.myRef = React.createRef()  
+  }
+
+  render() {  
+    return <div ref={this.myRef} />  
+  }  
+}
+
+Refs can also be used in functional components with the help of closures.
+
+#### Don’t forget:
+
+*   Refs are used to return a reference to an element.
+*   Refs shouldn’t be overused.
+*   You can create a ref using `React.createRef()` and attach to elements via the `ref` attribute.
+
+Additional links
+
+*   [React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
+
+### Where and why is the `rel="noopener"` attribute used?
+
+#### Answer
+
+The `rel="noopener"` is an attribute used in `<a>` elements (hyperlinks). It prevents pages from having a `window.opener` property, which would otherwise point to the page from where the link was opened and would allow the page opened from the hyperlink to manipulate the page where the hyperlink is.
+
+#### Don’t forget:
+
+*   `rel="noopener"` is applied to hyperlinks.
+*   `rel="noopener"` prevents opened links from manipulating the source page.
+
+Additional links
+
+*   [Open external anchors using rel=”noopener”](https://developers.google.com/web/tools/lighthouse/audits/noopener)
+*   [About rel=”noopener”](https://mathiasbynens.github.io/rel-noopener/)
+
+### What is REST?
+
+#### Answer
+
+REST (REpresentational State Transfer) is a software design pattern for network architecture. A RESTful web application exposes data in the form of information about its resources.
+
+Generally, this concept is used in web applications to manage state. With most applications, there is a common theme of reading, creating, updating, and destroying data. Data is modularized into separate tables like `posts`, `users`, `comments`, and a RESTful API exposes access to this data with:
+
+*   An identifier for the resource. This is known as the endpoint or URL for the resource.
+*   The operation the server should perform on that resource in the form of an HTTP method or verb. The common HTTP methods are GET, POST, PUT, and DELETE.
+
+Here is an example of the URL and HTTP method with a `posts` resource:
+
+*   Reading: `/posts/` => GET
+*   Creating: `/posts/new` => POST
+*   Updating: `/posts/:id` => PUT
+*   Destroying: `/posts/:id` => DELETE
+
+#### Don’t forget:
+
+*   Alternatives to this pattern like GraphQL
+
+Additional links
+
+*   [What is REST — A Simple Explanation for Beginners, Part 1: Introduction](https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f)
+
+### What does the following function return?
+
+function greet() {  
+  return  
+  {  
+    message: "hello"  
+  }  
+}
+
+#### Answer
+
+Because of JavaScript’s automatic semicolon insertion (ASI), the compiler places a semicolon after `return` keyword and therefore it returns `undefined` without an error being thrown.
+
+#### Don’t forget:
+
+*   Automatic semicolon placement can lead to time-consuming bugs
+
+Additional links
+
+*   [Automatic semicolon insertion in JavaScript](http://2ality.com/2011/05/semicolon-insertion.html)
+
+### Are semicolons required in JavaScript?
+
+#### Answer
+
+Sometimes. Due to JavaScript’s automatic semicolon insertion, the interpreter places semicolons after most statements. This means semicolons can be omitted in most cases.
+
+However, there are some cases where they are required. They are not required at the beginning of a block, but are if they follow a line and:
+
+1.  The line starts with `[`
+
+const previousLine = 3  
+;\[1, 2, previousLine\].map(n => n \* 2)
+
+1.  The line starts with `(`
+
+const previousLine = 3  
+;(function() {  
+  // ...  
+})()
+
+In the above cases, the interpreter does not insert a semicolon after `3`, and therefore it will see the `3` as attempting object property access or being invoked as a function, which will throw errors.
+
+#### Don’t forget:
+
+*   Semicolons are usually optional in JavaScript but have edge cases where they are required.
+*   If you don’t use semicolons, tools like Prettier will insert semicolons for you in the places where they are required on save in a text editor to prevent errors.
+
+Additional links
+
+### What is short-circuit evaluation in JavaScript?
+
+#### Answer
+
+Short-circuit evaluation involves logical operations evaluating from left-to-right and stopping early.
+
+true || false
+
+In the above sample using logical OR, JavaScript won’t look at the second operand `false`, because the expression evaluates to `true` regardless. This is known as short-circuit evaluation.
+
+This also works for logical AND.
+
+false && true
+
+This means you can have an expression that throws an error if evaluated, and it won’t cause issues.
+
+true || nonexistentFunction()  
+false && nonexistentFunction()
+
+This remains true for multiple operations because of left-to-right evaluation.
+
+true || nonexistentFunction() || window.nothing.wouldThrowError  
+true || window.nothing.wouldThrowError  
+true
+
+A common use case for this behavior is setting default values. If the first operand is falsy the second operand will be evaluated.
+
+const options = {}  
+const setting = options.setting || "default"  
+setting // "default"
+
+Another common use case is only evaluating an expression if the first operand is truthy.
+
+// Instead of:  
+addEventListener("click", e => {  
+  if (e.target.closest("button")) {  
+    handleButtonClick(e)  
+  }  
+})
+
+// You can take advantage of short-circuit evaluation:  
+addEventListener(  
+  "click",  
+  e => e.target.closest("button") && handleButtonClick(e)  
+)
+
+In the above case, if `e.target` is not or does not contain an element matching the `"button"` selector, the function will not be called. This is because the first operand will be falsy, causing the second operand to not be evaluated.
+
+#### Don’t forget:
+
+*   Logical operations do not produce a boolean unless the operand(s) evaluate to a boolean.
+
+Additional links
+
+*   [JavaScript: What is short-circuit evaluation?](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)
+
+### What are the advantages of using CSS sprites and how are they utilized?
+
+#### Answer
+
+CSS sprites combine multiple images into one image, limiting the number of HTTP requests a browser has to make, thus improving load times. Even under the new HTTP/2 protocol, this remains true.
+
+Under HTTP/1.1, at most one request is allowed per TCP connection. With HTTP/1.1, modern browsers open multiple parallel connections (between 2 to 8) but it is limited. With HTTP/2, all requests between the browser and the server are multiplexed on a single TCP connection. This means the cost of opening and closing multiple connections is mitigated, resulting in a better usage of the TCP connection and limits the impact of latency between the client and server. It could then become possible to load tens of images in parallel on the same TCP connection.
+
+However, according to [benchmark results](https://blog.octo.com/en/http2-arrives-but-sprite-sets-aint-no-dead/), although HTTP/2 offers 50% improvement over HTTP/1.1, in most cases the sprite set is still faster to load than individual images.
+
+To utilize a spritesheet in CSS, one would use certain properties, such as `background-image`, `background-position` and `background-size` to ultimately alter the `background` of an element.
+
+#### Don’t forget:
+
+*   `background-image`, `background-position` and `background-size` can be used to utilize a spritesheet.
+
+Additional links
+
+*   [CSS Sprites explained by CSS Tricks](https://css-tricks.com/css-sprites/)
+
+### What is a stateful component in React?
+
+#### Answer
+
+A stateful component is a component whose behavior depends on its state. This means that two separate instances of the component if given the same props will not necessarily render the same output, unlike pure function components.
+
+// Stateful class component  
+class App extends Component {  
+  constructor(props) {  
+    super(props)  
+    this.state = { count: 0 }  
+  }  
+  render() {  
+    // ...  
+  }  
+}
+
+// Stateful function component  
+function App() {  
+  const \[count, setCount\] = useState(0)  
+  return // ...  
+}
+
+#### Don’t forget:
+
+*   Stateful components have internal state that they depend on.
+*   Stateful components are class components or function components that use stateful Hooks.
+*   Stateful components have their state initialized in the constructor or with `useState()`.
+
+Additional links
+
+*   [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+
+### What is a stateless component?
+
+#### Answer
+
+A stateless component is a component whose behavior does not depend on its state. Stateless components can be either functional or class components. Stateless functional components are easier to maintain and test since they are guaranteed to produce the same output given the same props. Stateless functional components should be preferred when lifecycle hooks don’t need to be used.
+
+#### Don’t forget:
+
+*   Stateless components are independent of their state.
+*   Stateless components can be either class or functional components.
+*   Stateless functional components avoid the `this` keyword altogether.
+
+Additional links
+
+*   [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+
+### Explain the difference between a static method and an instance method.
+
+#### Answer
+
+Static methods belong to a class and don’t act on instances, while instance methods belong to the class prototype which is inherited by all instances of the class and acts on them.
+
+Array.isArray // static method of Array  
+Array.prototype.push // instance method of Array
+
+In this case, the `Array.isArray` method does not make sense as an instance method of arrays because we already know the value is an array when working with it.
+
+Instance methods could technically work as static methods, but provide terser syntax:
+
+const arr = \[1, 2, 3\]  
+arr.push(4)  
+Array.push(arr, 4)
+
+#### Don’t forget:
+
+*   How to create static and instance methods with ES2015 class syntax
+
+Additional links
+
+*   [Classes on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+### What is the difference between synchronous and asynchronous code in JavaScript?
+
+#### Answer
+
+Synchronous means each operation must wait for the previous one to complete.
+
+Asynchronous means an operation can occur while another operation is still being processed.
+
+In JavaScript, all code is synchronous due to the single-threaded nature of it. However, asynchronous operations not part of the program (such as `XMLHttpRequest` or `setTimeout`) are processed outside of the main thread because they are controlled by native code (browser APIs), but callbacks part of the program will still be executed synchronously.
+
+#### Don’t forget:
+
+*   JavaScript has a concurrency model based on an “event loop”.
+*   Functions like `alert` block the main thread so that no user input is registered until the user closes it.
+
+Additional links
+
+### What is the `this` keyword and how does it work?
+
+#### Answer
+
+The `this` keyword is an object that represents the context of an executing function. Regular functions can have their `this` value changed with the methods `call()`, `apply()` and `bind()`. Arrow functions implicitly bind `this` so that it refers to the context of its lexical environment, regardless of whether or not its context is set explicitly with `call()`.
+
+Here are some common examples of how `this` works:
+
+Object literals
+
+`this` refers to the object itself inside regular functions if the object precedes the invocation of the function.
+
+Properties set as `this` do not refer to the object.
+
+var myObject = {  
+  property: this,  
+  regularFunction: function() {  
+    return this  
+  },  
+  arrowFunction: () => {  
+    return this  
+  },  
+  iife: (function() {  
+    return this  
+  })()  
+}  
+myObject.regularFunction() // myObject  
+myObject\["regularFunction"\]() // my Object
+
+myObject.property // NOT myObject; lexical \`this\`  
+myObject.arrowFunction() // NOT myObject; lexical \`this\`  
+myObject.iife // NOT myObject; lexical \`this\`  
+const regularFunction = myObject.regularFunction  
+regularFunction() // NOT myObject; lexical \`this\`
+
+Event listeners
+
+`this` refers to the element listening to the event.
+
+document.body.addEventListener("click", function() {  
+  console.log(this) // document.body  
+})
+
+Constructors
+
+`this` refers to the newly created object.
+
+class Example {  
+  constructor() {  
+    console.log(this) // myExample  
+  }  
+}  
+const myExample = new Example()
+
+Manual
+
+With `call()` and `apply()`, `this` refers to the object passed as the first argument.
+
+var myFunction = function() {  
+  return this  
+}  
+myFunction.call({ customThis: true }) // { customThis: true }
+
+Unwanted `this`
+
+Because `this` can change depending on the scope, it can have unexpected values when using regular functions.
+
+var obj = {  
+  arr: \[1, 2, 3\],  
+  doubleArr() {  
+    return this.arr.map(function(value) {  
+      // this is now this.arr  
+      return this.double(value)  
+    })  
+  },  
+  double() {  
+    return value \* 2  
+  }  
+}  
+obj.doubleArr() // Uncaught TypeError: this.double is not a function
+
+#### Don’t forget:
+
+*   In non-strict mode, global `this` is the global object (`window` in browsers), while in strict mode global `this` is `undefined`.
+*   `Function.prototype.call` and `Function.prototype.apply` set the `this` context of an executing function as the first argument, with `call` accepting a variadic number of arguments thereafter, and `apply` accepting an array as the second argument which are fed to the function in a variadic manner.
+*   `Function.prototype.bind` returns a new function that enforces the `this` context as the first argument which cannot be changed by other functions.
+*   If a function requires its `this` context to be changed based on how it is called, you must use the `function` keyword. Use arrow functions when you want `this` to be the surrounding (lexical) context.
+
+Additional links
+
+*   `[this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)` [on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+
+### What does the following code evaluate to?
+
+typeof typeof 0
+
+#### Answer
+
+It evaluates to `"string"`.
+
+`typeof 0` evaluates to the string `"number"` and therefore `typeof "number"` evaluates to `"string"`.
+
+#### Don’t forget:
+
+Additional links
+
+*   [MDN docs for typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+
+### What are JavaScript data types?
+
+#### Answer
+
+The latest ECMAScript standard defines seven data types, six of them being primitive: `Boolean`, `Null`, `Undefined`, `Number`, `String`, `Symbol` and one non-primitive data type: `Object`.
+
+#### Don’t forget:
+
+*   Mention of newly added `Symbol` data type
+*   `Array`, `Date` and `function` are all of type `object`
+*   Functions in JavaScript are objects with the capability of being callable
+
+Additional links
+
+*   [MDN docs for data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+*   [Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript)
+
+### What is the purpose of JavaScript UI libraries/frameworks like React, Vue, Angular, Hyperapp, etc?
+
+#### Answer
+
+The main purpose is to avoid manipulating the DOM directly and keep the state of an application in sync with the UI easily. Additionally, they provide the ability to create components that can be reused when they have similar functionality with minor differences, avoiding duplication which would require multiple changes whenever the structure of a component which is reused in multiple places needs to be updated.
+
+When working with DOM manipulation libraries like jQuery, the data of an application is generally kept in the DOM itself, often as class names or `data` attributes. Manipulating the DOM to update the UI involves many extra steps and can introduce subtle bugs over time. Keeping the state separate and letting a framework handle the UI updates when the state changes reduces cognitive load. Saying you want the UI to look a certain way when the state is a certain value is the declarative way of creating an application, instead of the imperative way of manually updating the UI to reflect the new state.
+
+#### Don’t forget:
+
+*   The virtual DOM is a representation of the real DOM tree in the form of plain objects, which allows a library to write code as if the entire document is thrown away and rebuilt on each change, while the real DOM only updates what needs to be changed. Comparing the new virtual DOM against the previous one leads to high efficiency as changing real DOM nodes is costly compared to recalculating the virtual DOM.
+*   JSX is an extension to JavaScript that provides XML-like syntax to create virtual DOM objects which is transformed to function calls by a transpiler. It simplifies control flow (if statements/ternary expressions) compared to tagged template literals.
+
+Additional links
+
+*   [Virtual DOM in Hyperapp](https://github.com/hyperapp/hyperapp#view)
+
+### What does `'use strict'` do and what are some of the key benefits to using it?
+
+#### Answer
+
+Including `'use strict'` at the beginning of your JavaScript source file enables strict mode, which enforces more strict parsing and error handling of JavaScript code. It is considered a good practice and offers a lot of benefits, such as:
+
+*   Easier debugging due to eliminating silent errors.
+*   Disallows variable redefinition.
+*   Prevents accidental global variables.
+*   Oftentimes provides increased performance over identical code that is not running in strict mode.
+*   Simplifies `eval()` and `arguments`.
+*   Helps make JavaScript more secure.
+
+#### Don’t forget:
+
+*   Eliminates `this` coercion, throwing an error when `this` references a value of `null` or `undefined`.
+*   Throws an error on invalid usage of `delete`.
+*   Prohibits some syntax likely to be defined in future versions of ECMAScript
+
+Additional links
+
+*   [MDN docs for strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+
+### What are the differences between `var`, `let`, `const` and no keyword statements?
+
+#### Answer
+
+No keyword
+
+When no keyword exists before a variable assignment, it is either assigning a global variable if one does not exist, or reassigns an already declared variable. In non-strict mode, if the variable has not yet been declared, it will assign the variable as a property of the global object (`window` in browsers). In strict mode, it will throw an error to prevent unwanted global variables from being created.
+
+var
+
+`var` was the default statement to declare a variable until ES2015. It creates a function-scoped variable that can be reassigned and redeclared. However, due to its lack of block scoping, it can cause issues if the variable is being reused in a loop that contains an asynchronous callback because the variable will continue to exist outside of the block scope.
+
+Below, by the time the the `setTimeout` callback executes, the loop has already finished and the `i` variable is `10`, so all ten callbacks reference the same variable available in the function scope.
+
+### Resources:
+
+Resources:  
+[https://gist.github.com/bgoonz/e3f9e82a133b0a8dca00f61d9ddcd62b](https://gist.github.com/bgoonz/e3f9e82a133b0a8dca00f61d9ddcd62b)
+
+### Here’s the code from this article:
+
+for (var i = 0; i < 10; i++) {  
+  setTimeout(() => {  
+    // logs \`10\` ten times  
+    console.log(i)  
+  })  
+}
+
+/\* Solutions with \`var\` \*/  
+for (var i = 0; i < 10; i++) {  
+  // Passed as an argument will use the value as-is in  
+  // that point in time  
+  setTimeout(console.log, 0, i)  
+}
+
+for (var i = 0; i < 10; i++) {  
+  // Create a new function scope that will use the value  
+  // as-is in that point in time  
+  ;(i => {  
+    setTimeout(() => {  
+      console.log(i)  
+    })  
+  })(i)  
+}
+
+let
+
+`let` was introduced in ES2015 and is the new preferred way to declare variables that will be reassigned later. Trying to redeclare a variable again will throw an error. It is block-scoped so that using it in a loop will keep it scoped to the iteration.
+
+for (let i = 0; i < 10; i++) {  
+  setTimeout(() => {  
+    // logs 0, 1, 2, 3, ...  
+    console.log(i)  
+  })  
+}
+
+const
+
+`const` was introduced in ES2015 and is the new preferred default way to declare all variables if they won’t be reassigned later, even for objects that will be mutated (as long as the reference to the object does not change). It is block-scoped and cannot be reassigned.
+
+const myObject = {}  
+myObject.prop = "hello!" // No error  
+myObject = "hello" // Error
+
+#### Don’t forget:
+
+*   All declarations are hoisted to the top of their scope.
+*   However, with `let` and `const` there is a concept called the temporal dead zone (TDZ). While the declarations are still hoisted, there is a period between entering scope and being declared where they cannot be accessed.
+*   Show a common issue with using `var` and how `let` can solve it, as well as a solution that keeps `var`.
+*   `var` should be avoided whenever possible and prefer `const` as the default declaration statement for all variables unless they will be reassigned later, then use `let` if so.
+
+Additional links
+
+*   `[let](https://wesbos.com/let-vs-const/)` [vs](https://wesbos.com/let-vs-const/) `[const](https://wesbos.com/let-vs-const/)`
+
+### What is a virtual DOM and why is it used in libraries/frameworks?
+
+#### Answer
+
+The virtual DOM (VDOM) is a representation of the real DOM in the form of plain JavaScript objects. These objects have properties to describe the real DOM nodes they represent: the node name, its attributes, and child nodes.
+
+    <div class="counter">  <h1>0</h1>  <button>-</button>  <button>+</button></div>
+
+The above markup’s virtual DOM representation might look like this:
+
+{  
+  nodeName: "div",  
+  attributes: { class: "counter" },  
+  children: \[  
+    {  
+      nodeName: "h1",  
+      attributes: {},  
+      children: \[0\]  
+    },  
+    {  
+      nodeName: "button",  
+      attributes: {},  
+      children: \["-"\]  
+    },  
+    {  
+      nodeName: "button",  
+      attributes: {},  
+      children: \["+"\]  
+    }  
+  \]  
+}
+
+The library/framework uses the virtual DOM as a means to improve performance. When the state of an application changes, the real DOM needs to be updated to reflect it. However, changing real DOM nodes is costly compared to recalculating the virtual DOM. The previous virtual DOM can be compared to the new virtual DOM very quickly in comparison.
+
+Once the changes between the old VDOM and new VDOM have been calculated by the diffing engine of the framework, the real DOM can be patched efficiently in the least time possible to match the new state of the application.
+
+#### Don’t forget:
+
+*   Why accessing the DOM can be so costly.
+
+Additional links
+
+*   [The difference between Virtual DOM and DOM](http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/)
+
+### What is WCAG? What are the differences between A, AA, and AAA compliance?
+
+#### Answer
+
+WCAG stands for “Web Content Accessibility Guidelines”. It is a standard describing how to make web content more accessible to people with disabilities They have 12-13 guidelines and for each one, there are testable success criteria, which are at three levels: A, AA, and AAA. The higher the level, the higher the impact on the design of the web content. The higher the level, the web content is essentially more accessible by more users. Depending on where you live/work, there may be regulations requiring websites to meet certain levels of compliance. For instance, in Ontario, Canada, beginning January 1, 2021 all public websites and web content posted after January 1, 2012 must meet AA compliance.
+
+#### Don’t forget:
+
+*   A guideline for making web content more accessible
+*   3 different levels (A, AA, and AAA) of compliance for each guideline
+*   Governments are starting to require web content to meet a certain level of compliance by law
+
+Additional links
+
+*   [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
+*   [How to Meet WCAG](https://www.w3.org/WAI/WCAG21/quickref/)
+
+### What is a cross-site scripting attack (XSS) and how do you prevent it?
+
+#### Answer
+
+XSS refers to client-side code injection where the attacker injects malicious scripts into a legitimate website or web application. This is often achieved when the application does not validate user input and freely injects dynamic HTML content.
+
+For example, a comment system will be at risk if it does not validate or escape user input. If the comment contains unescaped HTML, the comment can inject a `<script>` tag into the website that other users will execute against their knowledge.
+
+*   The malicious script has access to cookies which are often used to store session tokens. If an attacker can obtain a user’s session cookie, they can impersonate the user.
+*   The script can arbitrarily manipulate the DOM of the page the script is executing in, allowing the attacker to insert pieces of content that appear to be a real part of the website.
+*   The script can use AJAX to send HTTP requests with arbitrary content to arbitrary destinations.
+
+#### Don’t forget:
+
+*   On the client, using `textContent` instead of `innerHTML` prevents the browser from running the string through the HTML parser which would execute scripts in it.
+*   On the server, escaping HTML tags will prevent the browser from parsing the user input as actual HTML and therefore won’t execute the script.
+
+Additional links
+
+*   [Cross-Site Scripting Attack (XSS)](https://www.acunetix.com/websitesecurity/cross-site-scripting/)
+
+Resources:
+
+### Resources:
+
+[https://gist.github.com/bgoonz/e3f9e82a133b0a8dca00f61d9ddcd62b](https://gist.github.com/bgoonz/e3f9e82a133b0a8dca00f61d9ddcd62b)
+
+### THE CODE:
+
+[https://gist.github.com/bgoonz/e4b19c1425ffce9744b23a7d337e147e](https://gist.github.com/bgoonz/e4b19c1425ffce9744b23a7d337e147e)
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://trusting-dijkstra-4d3b17.netlify.app/](https://trusting-dijkstra-4d3b17.netlify.app/)[https://trusting-dijkstra-4d3b17.netlify.app/](https://trusting-dijkstra-4d3b17.netlify.app/)
+
+### Or Checkout my personal Resource Site:
+
+[https://trusting-dijkstra-4d3b17.netlify.app/](https://trusting-dijkstra-4d3b17.netlify.app/)
+
+> _“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
+
+![](https://cdn-images-1.medium.com/max/800/0*LUQe60D2FeVzDEi8.png)
+
+*   `**HTTP**` : Hypertext Transfer Protocol.
+*   `**HT**` : Hypertext – content with references to other content.
+*   Term used to refer to content in computing.
+*   What makes the Web a “web”.
+*   Most fundamental part of how we interact.
+*   `**Hyperlinks**` : Links; references between HT resources.
+*   `**TP**` : Transfer Protocol – set of guidelines surrounding the transmission of data.
+*   Defines the expectations for both ends of the transer.
+*   Defines some ways the transfer might fail.
+*   HTTP is a `**request/response**` protocol.
+*   HTTP works between `**clients**` & `**servers**`.
+*   `**Clients**` : User Agent – the data consumer.
+*   `**Servers**` : Origin – Data provider & where the application is running.
+
+![](https://cdn-images-1.medium.com/max/800/0*OBVdK39aaS5sjV9B.png)
+
+### [Components of HTTP-based systems](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#components_of_http-based_systems "Permalink to Components of HTTP-based systems")
+
+HTTP is a client-server protocol: requests are sent by one entity, the user-agent (or a proxy on behalf of it). Most of the time the user-agent is a Web browser, but it can be anything, for example a robot that crawls the Web to populate and maintain a search engine index.
+
+Each individual request is sent to a server, which handles it and provides an answer, called the _response_. Between the client and the server there are numerous entities, collectively called [proxies](https://developer.mozilla.org/en-US/docs/Glossary/Proxy_server), which perform different operations and act as gateways or [caches](https://developer.mozilla.org/en-US/docs/Glossary/Cache), for example.
+
+![](https://cdn-images-1.medium.com/max/800/0*WR6l6JwNOvkfrljt.png)
+
+**Properties of HTTP**
+
+*   `**Reliable Connections**` : Messages passed between a client & server sacrifice a little speed for the sake of trust.
+*   `**TCP**` is HTTP’s preferred connection type.
+*   `**Stateless Transfer**` : HTTP is a stateless protocol – meaning it does not store any kind of information.
+*   HTTP supports cookies.
+*   `**Intermediaries**` : Servers or devices that pass your request along which come in three types:
+
+1.  `**Proxies**` : Modify your request so it appears to come from a different source.
+2.  `**Gateways**` : Pretend to be the resource server you requested.
+3.  `**Tunnels**` : Simply passes your request along.
+
+* * *
+
+### HTTP Requests
+
+**Structure of an HTTP Request**
+
+    GET / HTTP/1.1Host: appacademy.ioConnection: keep-aliveUpgrade-Insecure-Requests: 1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3Accept-Encoding: gzip, deflateAccept-Language: en-US,en;q=0.9
+
+### Example of a request:
+
+![](https://cdn-images-1.medium.com/max/1200/1*tq-BRYuzZ_Dx8s1g5xJKKQ.png)
+
+*   **Request-line & HTTP verbs**
+*   The first line of an HTTP Request made up of three parts:
+
+1.  The `**Method**` : Indicated by an HTTP Verb.
+2.  The `**URI**` : Uniform Resource Indicator that ID’s our request.
+3.  THe `**HTTP**` **Version** : Version we expect to use.
+
+*   HTTP Verbs are a simply way of declaring our intention to the server.
+*   `**GET**` : Used for direct requests.
+*   `**POST**`: Used for creating new resources on the server.
+*   `**PUT**`: Used to updated a resource on the server.
+*   `**PATCH**` : Similar to PUT, but do not require the whole resource to perform the update.
+*   `**DELETE**` : Used to destroy resources on the server.
+
+**Headers**
+
+*   Key-Value pairs that come after the request line — they appear on sep. lines and define metadata needed to process the request.
+*   Some common headers:
+*   `**Host**` : Root path for our URI.
+*   `**User-Agent**` : Displays information about which browser the request originated from.
+*   `**Referer**` : Defines the URL you’re coming from.
+*   `**Accept**` : Indicates what the client will receive.
+*   `**Content**`**–** : Define Details about the body of the request.
+
+**Body**
+
+*   For when we need to send data that doesn’t fit into the header & is too complex for the URI we can use the _body_.
+*   `**URL encoding**` : Most common way form data is formatted.
+*   `name=claire&age=29&iceCream=vanilla`
+*   We can also format using JSON or XML.
+
+**Sending an HTTP request from the command line**
+
+*   **netcat** : (nc) A Utility that comes as part of Unix-line environments such as Ubuntu and macOS.
+*   Allows us to open a direct connection with a URL and manually send HTTP requests.
+*   `nc -v appacademy.io 80`
+*   `man nc` to open the netcat manual.
+
+* * *
+
+### HTTP Responses
+
+**Structure of a Response**
+
+    HTTP/1.1 200 OKContent-Type: text/html; charset=utf-8Transfer-Encoding: chunkedConnection: closeX-Frame-Options: SAMEORIGINX-Xss-Protection: 1; mode=blockX-Content-Type-Options: nosniffCache-Control: max-age=0, private, must-revalidateSet-Cookie: _rails-class-site_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJTM5NWM5YTVlNTEyZDFmNTNlN; path=/; secure; HttpOnlyX-Request-Id: cf5f30dd-99d0-46d7-86d7-6fe57753b20dX-Runtime: 0.006894Strict-Transport-Security: max-age=31536000Vary: OriginVia: 1.1 vegurExpect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"Server: cloudflareCF-RAY: 51d641d1ca7d2d45-TXL
+
+    <!DOCTYPE html><html>......</html>
+
+**Status**
+
+*   First line of an HTTP response — gives us a high level overview of the server’s intentions. (`**status line**`)
+*   `HTTP/1.1 200 OK`
+*   `**HTTP status codes**` : numeric way of representing a server’s response.
+*   Follow the structure: x: xxx — xxx;
+
+### `**Status codes 100 - 199: Informational**`
+
+*   Allow the clinet to know that a req. was received, and provides extra info from the server.
+
+### `**Status codes 200 - 299: Successful**`
+
+*   Indicate that the request has succeeded and the server is handling it.
+*   Common Examples: 200 OK (req received and fulfilled) & 201 Created (received and new record was created)
+
+### `**Status codes 300 - 399: Redirection**`
+
+*   Let the client know if there has been a change.
+*   Common Examples: 301 Moved Permanently (resource you requested is in a totally new location) & 302 Found (indicates a temporary move)
+
+### `**Status codes 400 - 499: Client Error**`
+
+*   Indicate problem with client’s request.
+*   Common Examples: 400 Bad Request (received, but could not understand) & 401 Unauthorized (resource exists but you’re not allowed to see w/o authentication) & 403 Forbidden (resource exists but you’re not allowed to see it at all ) & 404 Not Found (resource requested does not exist);
+
+### `**Status codes 500 - 599: Server Error**`
+
+*   Indicates request was formatted correctly, but the server couldn’t do what you asked due to an internal problem.
+*   Common Examples: 500 Internal Server Error (Server had trouble processing) & 504 Gateway Timeout (Server timeout);
+
+### **Headers** : Work just like HTTP requests.
+
+> Common Examples:
+
+*   `**Location**` : Used by client for redirection responses.
+*   `**Content-Type**` : Let’s client know what format the body is in.
+*   `**Expires**` : When response is no longer valid
+*   `**Content-Disposition**` : Let’s client know how to display the response.
+*   `**Set-Cookie**` : Sends data back to the client to set on the cookie.
+*   `**Data**` : If the request is successful, the body of the response will contain the resource you have requested.
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+### Or Checkout my personal Resource Site:
+
+**Currently under development and very buggy!**
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+If you want to learn more and get some practice in … download [Postman](https://www.postman.com/) and start going through some tutorials!
+
+Happy Coding!
+
+#### My Awesome JavaScript List Part 2
+
+![](https://cdn-images-1.medium.com/max/800/0*9riCKLCPutYxPEtE)
+
+#### Here’s the rest of my stash!
+
+**_…well… not really… here’s the rest of my stash:_**
+
+[https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
+
+* * *
+
+### Web Development frameworks
+
+‌
+
+> · ​[Next.js](https://github.com/vercel/next.js) — Framework for server-rendered or statically-exported React apps.
+
+> · ​[San](https://github.com/baidu/san) — Flexible JavaScript component framework.
+
+> · ​[hapi](https://hapijs.com/) — Rich framework for building applications and services.
+
+> · ​[Koa](https://koajs.com/#introduction) — Smaller, more expressive, and more robust foundation for web applications and APIs.
+
+> · ​[Umi](https://github.com/umijs/umi) — Pluggable enterprise-level react application framework.
+
+> · ​[Vue.js](https://vuejs.org/) — Progressive JavaScript Framework.
+
+> · ​[Mithril](https://mithril.js.org/) — Modern client-side Javascript framework for building Single Page Applications. ([HN](https://news.ycombinator.com/item?id=25800754))
+
+> · ​[Solid](https://github.com/ryansolid/solid) — Declarative, efficient, and flexible JavaScript library for building user interfaces.
+
+> · ​[Neutrino dev](https://github.com/mozilla-neutrino/neutrino-dev)​
+
+> · ​[Alpine.js](https://github.com/alpinejs/alpine) — Rugged, minimal framework for composing JavaScript behavior in your markup. ([Awesome Alpine](https://github.com/alpine-collective/awesome))
+
+> · ​[After.js](https://github.com/jaredpalmer/after.js) — Next.js-like framework for server-rendered React apps built with React Router 4.
+
+> · ​[Torus](https://github.com/thesephist/torus) — Event-driven model-view UI framework for the web, focused on being tiny, efficient, and free of dependencies. ([Web](https://thesephist.github.io/torus/))
+
+> · ​[Hyperapp](https://github.com/jorgebucaran/hyperapp) — Tiny framework for building web interfaces. ([Web](https://hyperapp.dev/)) ([HN](https://news.ycombinator.com/item?id=23688798)) ([Hyperawesome](https://github.com/jorgebucaran/hyperawesome))
+
+> · ​[Hyperapp FX](https://github.com/okwolf/hyperapp-fx) — Effects for use with Hyperapp.
+
+> · ​[Phenomic](https://github.com/phenomic/phenomic) — Modular website compiler (React, Webpack, Reason and whatever you want).
+
+> · ​[Halfmoon](https://github.com/halfmoonui/halfmoon) — Front-end framework with a built-in dark mode and full customizability using CSS variables; great for building dashboards and tools. ([Docs](https://www.gethalfmoon.com/docs/introduction/))
+
+> · ​[Sinuous](https://github.com/luwes/sinuous) — Low-level UI library with a tiny footprint. ([Docs](https://sinuous.dev/docs/getting-started/))
+
+> · ​[Overture](https://github.com/fastmail/overture) — Powerful JS library for building really slick web applications, with performance at, or surpassing, native apps.
+
+> · ​[Lucia](https://github.com/aidenybai/lucia) — Tiny library for tiny web apps. ([Docs](https://lucia.js.org/))
+
+> · ​[Ractive.js](https://github.com/ractivejs/ractive) — Next-generation DOM manipulation.
+
+> · ​[JSX Lite](https://github.com/BuilderIO/jsx-lite) — Write components once, run everywhere. Compiles to Vue, React, Solid, Liquid, and more.
+
+> · ​[Perlite](https://github.com/PaulMaly/perlite) — Hyperactiv + lit-html + extensions. Simple and declarative way to create rich client-side widgets designed with server-side apps in mind.
+
+> · ​[Democrat](https://github.com/etienne-dldc/democrat) — Library that mimic the API of React (Components, hooks, Context…) but instead of producing DOM mutation it produces a state tree.
+
+> · ​[Raj](https://github.com/andrejewski/raj) — Elm Architecture for JavaScript.
+
+> · ​[Reframe](https://github.com/reframejs/reframe) — New kind of web framework.
+
+> · ​[observablehq/stdlib](https://github.com/observablehq/stdlib) — Observable standard library.
+
+> · ​[Choo](https://github.com/choojs/choo) — Sturdy 4kb frontend framework. ([Web](https://www.choo.io/))
+
+> · ​[Typera](https://github.com/akheron/typera) — Type-safe routes for Express and Koa.
+
+> · ​[Frourio](https://github.com/frouriojs/frourio) — Fast and type-safe full stack framework, for TypeScript. ([Web](https://frourio.io/))
+
+> · ​[Svelto](https://github.com/svelto/svelto) — Modular front end framework for modern browsers, with battery included: 100+ widgets and tools.
+
+> · ​[modular](https://github.com/jpmorganchase/modular) — Collection of tools and guidance to enable UI development at scale. ([Tweet](https://twitter.com/threepointone/status/1340620223993540608))
+
+> · ​[Turbo](https://github.com/hotwired/turbo) — Speed of a single-page web application without having to write any JavaScript. ([Web](https://turbo.hotwire.dev/))
+
+> · ​[Fre](https://github.com/yisar/fre) — Tiny Coroutine framework with Fiber.
+
+> · ​[Glimmer](https://glimmerjs.com/) — Fast and light-weight UI components for the web. ([Code](https://github.com/glimmerjs/glimmer.js))
+
+> · ​[Glimmer VM](https://github.com/glimmerjs/glimmer-vm) — Flexible, low-level rendering pipeline for building a “live” DOM from Handlebars templates that can subsequently be updated cheaply when data changes.
+
+> · ​[frint](https://github.com/frintjs/frint) — Modular JavaScript framework for building scalable and reactive applications.
+
+> · ​[Nano Router](https://github.com/sunesimonsen/nano-router) — Framework agnostic minimalistic router with a focus on named routes.
+
+> · ​[tiny-request-router](https://github.com/berstend/tiny-request-router) — Fast, generic and type safe router (match request method and path).
+
+> · ​[Synergy](https://github.com/defx/synergy) — Tiny runtime library for building web user interfaces. ([HN](https://news.ycombinator.com/item?id=25677272))
+
+> · ​[dflex](https://github.com/jalal246/dflex) — JavaScript Project to Manipulate DOM Elements.
+
+> · ​[morphdom](https://github.com/patrick-steele-idem/morphdom) — Fast and lightweight DOM diffing/patching (no virtual DOM needed).
+
+> · ​[Forgo](https://github.com/forgojs/forgo) — Ultra-light UI runtime. Makes it super easy to create modern web apps using JSX (like React).
+
+> · ​[Whats Up](https://github.com/whatsup/whatsup) — Front-end framework based on ideas of streams and fractals.
+
+> · ​[Boost](https://github.com/milesj/boost) — Collection of type-safe cross-platform packages for building robust server-side and client-side systems.
+
+> · ​[Nostalgie](https://github.com/ggoodman/nostalgie) — Opinionated, full-stack, runtime-agnostic framework for building web apps and web pages using react. ([Web](https://nostalgie.dev/))
+
+> · ​[Lumino](https://github.com/jupyterlab/lumino) — Library for building interactive web applications.
+
+* * *
+
+> Animation
+
+> · ​[Anime.js](https://github.com/juliangarnier/anime) — JavaScript animation engine.
+
+> · ​[popmotion](https://github.com/Popmotion/popmotion) — Functional, reactive animation library.
+
+> · ​[impress.js](https://github.com/impress/impress.js) — Presentation framework based on the power of CSS3 transforms and transitions.
+
+> · ​[Pts](https://github.com/williamngan/pts) — Library for visualization and creative-coding.
+
+> · ​[lax.js](https://github.com/alexfoxy/laxxx) — Simple & light weight (<2kb gzipped) vanilla JS plugin to create smooth & beautiful animations when you scroll.
+
+> · ​[Flipping](https://github.com/davidkpiano/flipping) — Library (and collection of adapters) for implementing FLIP transitions.
+
+> · ​[Ola](https://github.com/franciscop/ola) — Smooth animation library for interpolating numbers.
+
+> · ​[react-spring](https://github.com/react-spring/react-spring) — Spring physics based React animation library.
+
+> · ​[FAT](https://github.com/nextapps-de/fat) — Web’s fastest and most lightweight animation tool.
+
+> · ​[React Easy Flip](https://github.com/jlkiri/react-easy-flip) — Lightweight React library for smooth FLIP animations.
+
+> · ​[AOS](https://github.com/michalsnik/aos) — Animate on scroll library.
+
+> · ​[flubber](https://github.com/veltman/flubber) — Tools for smoother shape animations.
+
+* * *
+
+> ‌
+
+> CLI
+
+> ‌
+
+> · ​[qoa](https://github.com/klaussinani/qoa) — Minimal interactive command-line prompts.
+
+* * *
+
+> Test
+
+> ‌
+
+> · ​[Unexpected](https://github.com/unexpectedjs/unexpected) — Extensible BDD assertion toolkit. ([Docs](https://unexpected.js.org/))
+
+> · ​[Fishery](https://github.com/thoughtbot/fishery) — Library for setting up JavaScript objects as test data.
+
+> · ​[pentf](https://github.com/boxine/pentf) — Parallel end-to-end test framework.
+
+> · ​[test-flat](https://github.com/kettanaito/test-flat) — Test framework extension to support resources teardown and cleanup in flat tests.
+
+> · ​[zora](https://github.com/lorenzofox3/zora) — Lightest, yet Fastest JavaScript test runner for nodejs and browsers.
+
+> · ​[Vest](https://github.com/ealush/vest) — Declarative Validation Testing.
+
+* * *
+
+> ‌
+
+> State management
+
+> ‌
+
+> · ​[Mutik](https://github.com/jaredpalmer/mutik) — Tiny (495B) immutable state management library based on Immer.
+
+> · ​[Overmind](https://github.com/cerebral/overmind) — Frictionless state management. ([Docs](https://overmindjs.org/)) ([HN](https://news.ycombinator.com/item?id=24750620))
+
+> · ​[Storeon](https://github.com/ai/storeon) — Tiny event-based Redux-like state manager for React and Preact.
+
+> · ​[Overstated](https://github.com/fabiospampinato/overstated) — React state management library that’s delightful to use, without sacrificing performance or scalability.
+
+> · ​[Effector](https://github.com/effector/effector) — Reactive state manager. ([Awesome](https://github.com/ilyalesik/awesome-effector)) ([Docs](https://effector.now.sh/docs/introduction/installation)) ([effector-storage](https://github.com/yumauri/effector-storage))
+
+> · ​[Akita](https://github.com/datorama/akita) — State Management Tailored-Made for JS Applications.
+
+> · ​[Observable Store](https://github.com/DanWahlin/Observable-Store) — Provides a simple way to manage state in Angular, React, Vue.js and other front-end applications.
+
+> · ​[Cerebral](https://github.com/cerebral/cerebral) — Declarative state and side effects management solution for popular JavaScript frameworks.
+
+> · ​[Hooksy](https://github.com/pie6k/hooksy) — State management solution based on react hooks.
+
+> · ​[React Easy State](https://github.com/RisingStack/react-easy-state) — Simple React state management. Made with ![❤️](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/2764.svg) and ES6 Proxies.
+
+> · ​[wana](https://github.com/alloc/wana) — Easy observable state for React.
+
+> · ​[Recoil](https://github.com/facebookexperimental/Recoil) — Experimental set of utilities for state management with React. ([Web](https://recoiljs.org/)) ([Video](https://www.youtube.com/watch?v=fb3cOMFkEzs)) ([Reddit](https://www.reddit.com/r/reactjs/comments/gjpbjc/facebook_has_open_sourced_an_experimental_state/)) ([Rewriting from scratch](https://bennetthardwick.com/blog/recoil-js-clone-from-scratch-in-100-lines/)) ([Recoilize — Recoil developer tool](https://github.com/open-source-labs/Recoilize))
+
+> · ​[State Designer](https://github.com/steveruizok/state-designer) — JavaScript and TypeScript library for managing the state of a user interface.
+
+> · ​[Fluxible](https://github.com/yahoo/fluxible) — Pluggable container for universal flux applications.
+
+> · ​[Logux State](https://github.com/logux/state) — Tiny state manager with CRDT, cross-tab, and Logux support.
+
+> · ​[Statery](https://github.com/hmans/statery) — Surprise-Free State Management. Designed for React with functional components.
+
+* * *
+
+> ‌
+
+> API bindings
+
+> ‌
+
+> · ​[NodeJS Instagram private API client](https://github.com/dilame/instagram-private-api)​
+
+* * *
+
+> ‌
+
+> DB
+
+> ‌
+
+> · ​[sql.js](https://github.com/sql-js/sql.js) — SQLite compiled to JavaScript. Allows you to create a relational database and query it entirely in the browser. ([Docs](https://sql.js.org/#/)) ([HN](https://news.ycombinator.com/item?id=25008308))
+
+> · ​[SQigiL](https://github.com/twooster/sqigil) — Postgres SQL template string for Javascript.
+
+> · ​[Postgrest JS](https://github.com/supabase/postgrest-js) — Isomorphic JavaScript client for PostgREST.
+
+> · ​[Connect PG Simple](https://github.com/voxpelli/node-connect-pg-simple) — Simple, minimal PostgreSQL session store for Express/Connect.
+
+* * *
+
+> ‌
+
+> React
+
+> This is gonna be a big section….‌
+
+> · ​[state-machines-in-react](https://github.com/tanem/state-machines-in-react) — Small React, xstate and Framer Motion demo.
+
+> UI Components
+
+> Table / Data Grid
+
+> [reactable](https://github.com/glittershark/reactable) — Fast, flexible, and simple data tables in React.
+
+> [ag-grid](https://github.com/ceolter/ag-grid) — Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components.
+
+> [griddle-react](https://github.com/GriddleGriddle/Griddle) — Simple Grid Component written in React.
+
+> [react-data-components](https://github.com/carlosrocha/react-data-components) — React components for sorting, filtering and pagination of data.
+
+> [react-bootstrap-table](https://github.com/AllenFang/react-bootstrap-table) — It’ s a react table for bootstrap.
+
+> [react-data-grid](https://github.com/adazzle/react-data-grid) — Excel-like grid component built with React, with editors, keyboard navigation, copy & paste, and the like.
+
+> [react-pivot](https://github.com/davidguttman/react-pivot) — React-Pivot is a data-grid component with pivot-table-like functionality for data display, filtering, and exploration.
+
+> [autoresponsive-react](https://github.com/xudafeng/autoresponsive-react) — Auto Responsive Layout Library For React.
+
+> [reactabular](https://github.com/reactabular/reactabular) — Spectacular tables for React.
+
+> [fixed-data-table](https://github.com/facebook/fixed-data-table) — A React table component designed to allow presenting thousands of rows of data.
+
+> [sematable](https://github.com/sematext/sematable) — Client side sorting, pagination, and text filter for redux/react based apps.
+
+> Infinite Scroll
+
+> [react-lazyload](https://github.com/jasonslyvia/react-lazyload) — Lazyload your Component, Image or anything matters the performance.
+
+> [react-infinity](https://github.com/nmn/react-infinity) — A UITableView Inspired list and grid display solution with element culling and smooth animations.
+
+> [react-infinite](https://github.com/seatgeek/react-infinite) — A browser-ready efficient scrolling container based on UITableView.
+
+> [react-infinite-grid](https://github.com/ggordan/react-infinite-grid) — A React component which renders a grid of elements.
+
+> [react-list](https://github.com/orgsync/react-list) — A versatile infinite scroll React component.
+
+> [react-virtualized](https://github.com/bvaughn/react-virtualized) — React components for efficiently rendering large lists and tabular data.
+
+> Overlay
+
+> _Display overlay / modal / alert / dialog / lightbox / popup_
+
+> [react-dock](https://github.com/alexkuz/react-dock) — Resizable dockable react component.
+
+> [react-overlays](https://github.com/react-bootstrap/react-overlays) — Utilities for creating robust overlay components.
+
+> [boron](https://github.com/yuanyan/boron) — A collection of dialog animations with React.js.
+
+> [react-modal2](https://github.com/cloudflare/react-modal2) — Simple modal component for React.
+
+> [react-modal](https://github.com/reactjs/react-modal) — Accessible modal dialog component for React.
+
+> [react-skylight](https://github.com/marcio/react-skylight) — A react component for modals and dialogs.
+
+> [rodal](https://github.com/chenjiahan/rodal) — A React modal with animations.
+
+> [react-modal-box](https://github.com/sadiqevani/react-modal-box) — React Modal Box Component.
+
+> [react-aria-modal](https://github.com/davidtheclark/react-aria-modal) — A fully accessible and flexible React modal built according WAI-ARIA Authoring Practices.
+
+> Notification
+
+> _Toaster / snackbar — Notify the user with a modeless temporary little popup_
+
+> [react-notification-system](https://github.com/igorprado/react-notification-system) — A complete and totally customizable component for notifications in React.
+
+> [react-notification](https://github.com/pburtchaell/react-notification) — Snackbar notifications for React.
+
+> [react-s-alert](https://github.com/juliancwirko/react-s-alert) — Alerts / Notifications for React with rich configuration options.
+
+> [react-crouton](https://github.com/xeodou/react-crouton) — A message component for reactjs.
+
+> [reapop](https://github.com/LouisBarranqueiro/reapop) — A React & Redux notifications system.
+
+> Tooltip
+
+> [react-tooltip](https://github.com/wwayne/react-tooltip) — React tooltip component.
+
+> [rc-tooltip](https://github.com/react-component/tooltip) — React Tooltip.
+
+> [react-portal-tooltip](https://github.com/romainberger/react-portal-tooltip) — Awesome React tooltips.
+
+> Menu
+
+> _Menus / sidebars_
+
+> [react-burger-menu](https://github.com/negomi/react-burger-menu) — An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations.
+
+> [react-sidebar](https://github.com/balloob/react-sidebar) — A sidebar component for React.
+
+> [react-motion-menu](https://github.com/bokuweb/react-motion-menu) — Motion menu component powered by React Motion.
+
+> [react-offcanvas](https://github.com/vutran/react-offcanvas) — Off-canvas menus for React.
+
+> [react-tree-menu](https://github.com/MandarinConLaBarba/react-tree-menu) — A stateless tree menu component for React.
+
+> [react-metismenu](https://github.com/alpertuna/react-metismenu) — A ready-to-use menu component for React.
+
+> [react-contextmenu](https://github.com/vkbansal/react-contextmenu) — Context Menu implemented in React.
+
+> [rc-menu](https://github.com/react-component/menu) — React Menu.
+
+> Sticky
+
+> _Fixed headers / scroll-up headers / sticky elements_
+
+> [react-sticky](https://github.com/captivationsoftware/react-sticky) — < Sticky /> component for awesome React apps.
+
+> [react-headroom](https://github.com/KyleAMathews/react-headroom) — Hide your header until you need it.
+
+> [react-listview-sticky-header](https://github.com/cht8687/react-listview-sticky-header) — React listview with sticky section header.
+
+> [react-sticky-state](https://github.com/soenkekluth/react-sticky-state) — React StickyState Component makes native position:sticky statefull and polyfills the missing sticky browser feature.
+
+> [react-stickynode](https://github.com/yahoo/react-stickynode) — A performant and comprehensive React sticky.
+
+> [react-sticky-node](https://github.com/visortelle/react-sticky-node) — Sticky react component.
+
+> Tabs
+
+> [react-tabs](https://github.com/reactjs/react-tabs) — React tabs component.
+
+> [react-simpletabs](https://github.com/pedronauck/react-simpletabs) — Just a simple tabs component built with React.
+
+> [react-tabtab](https://github.com/ctxhou/react-tabtab) — React, tabs.
+
+> Loader
+
+> _Loaders / spinners / progress bars — Let the user know that something is loading_
+
+> [halogen](https://github.com/yuanyan/halogen) — A collection of loading spinners with React.js.
+
+> [react-ladda](https://github.com/jsdir/react-ladda) — React wrapper for Ladda buttons.
+
+> [react-progress-button](https://github.com/mathieudutour/react-progress-button) — Simple react.js component for an inline progress indicator.
+
+> [react-loader](https://github.com/TheCognizantFoundry/react-loader) — React component that displays a spinner via spin.js until your component is loaded.
+
+> [react-spinkit](https://github.com/KyleAMathews/react-spinkit) — A collection of loading indicators animated with CSS for React
