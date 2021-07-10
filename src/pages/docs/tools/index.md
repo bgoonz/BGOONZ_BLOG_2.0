@@ -54,7 +54,7 @@ template: docs
 
 <br>
 <center>
-<h1> Up to 1TB of cloud Storage for file sharing!</h1>
+<h2> Up to 1TB of cloud Storage for file sharing!</h2>
 <iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;">
 </iframe>
 </center>
