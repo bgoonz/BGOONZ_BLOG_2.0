@@ -1,30 +1,30 @@
 ---
 title: Navigation
 seo:
-  title: Web Dev Hub
-  description: Docs Home
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Web Dev Hub
-      keyName: property
-    - name: 'og:description'
-      value: Docs Home
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Web Dev Hub
-    - name: 'twitter:description'
-      value: Docs Home
+    title: Web Dev Hub
+    description: Docs Home
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Web Dev Hub
+          keyName: property
+        - name: 'og:description'
+          value: Docs Home
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Web Dev Hub
+        - name: 'twitter:description'
+          value: Docs Home
 template: docs
 weight: 900
 excerpt: docs quick reference
 ---
 
-***
+---
 
 # Navigation
 
@@ -71,4 +71,3 @@ excerpt: docs quick reference
 -   [/docs/articles/algo/]("https://bgoonz-blog.netlify.app/docs/articles/algo/")
 -   [/docs/faq/contact/]("https://bgoonz-blog.netlify.app/docs/faq/contact/")
 -   [/docs/nav/]("https://bgoonz-blog.netlify.app/docs/nav/")
-
