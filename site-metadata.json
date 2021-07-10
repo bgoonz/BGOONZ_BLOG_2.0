@@ -161,7 +161,7 @@
                         "url": "https://github.com/bgoonz/UsefulResourceRepo2.0",
                         "style": "secondary",
                         "icon_class": "dev",
-                        "new_window": false,
+                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     }
