@@ -123,7 +123,7 @@ template: docs
 
 
 
-<iframe src="https://ternary42.netlify.app/" height="400px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
+<iframe src="https://githtmlpreview.netlify.app/" height="400px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
 
 
 <br>
