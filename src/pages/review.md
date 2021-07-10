@@ -940,5 +940,3 @@ Person.prototype.sayName = function () {
 
 const jane = new Person('Jane');
 ```
-
-

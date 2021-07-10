@@ -106,13 +106,8 @@ template: docs
 
 <br>
 
-
-
 <iframe src="https://ternary42.netlify.app/" height="800px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
 
-
-
-
 <br>
 
 <br>
@@ -120,12 +115,9 @@ template: docs
 <br>
 
 <br>
-
-
 
 <iframe src="https://githtmlpreview.netlify.app/" height="500px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
 
-
 <br>
 
 <br>
@@ -133,12 +125,9 @@ template: docs
 <br>
 
 <br>
-
 
 <iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="1600px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
 
-
-
 <br>
 
 <br>
@@ -146,12 +135,8 @@ template: docs
 <br>
 
 <br>
-
 
 <iframe src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="1600px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
-
-
-
 
 <br>
 

@@ -1,6 +1,6 @@
 .docs-content {
     padding-top: 2.5em;
-    width:50em;
+    width: 50em;
 }
 
 .post {
@@ -81,9 +81,8 @@
             border-radius: $border-radius;
             box-shadow: $box-shadow;
             padding: 0.5em 0;
-            width:1600px;
-            zoom:0.68;
- 
+            width: 1600px;
+            zoom: 0.68;
         }
 
         .post-title {
@@ -94,7 +93,6 @@
 
         .post-content {
             padding: 0 1.875em;
-            
         }
     }
 }
@@ -190,7 +188,7 @@
     font-weight: normal;
     list-style: none;
     margin-top: 0.625rem;
-    padding-left: 1.0rem;
+    padding-left: 1rem;
 }
 
 .docs-menu-item {
@@ -279,8 +277,8 @@
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
-        width:1600px;
-        overflow-x:visible;
+        width: 1600px;
+        overflow-x: visible;
     }
 
     .post.type-docs {
@@ -303,13 +301,12 @@
     }
 
     .docs-nav {
-    
         width: 8.5em;
     }
 
     #page-nav {
-     font-size: 12px;
-   margin:5em;
+        font-size: 12px;
+        margin: 5em;
     }
 
     #docs-nav-toggle {

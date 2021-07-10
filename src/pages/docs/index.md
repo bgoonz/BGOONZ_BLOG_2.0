@@ -23,6 +23,7 @@ template: docs
 weight: 900
 excerpt: docs quick reference
 ---
+
 ## Doc Websites & Repos
 
 -   [Python Practice](https://github.com/bgoonz/PYTHON_PRAC)
@@ -35,8 +36,6 @@ excerpt: docs quick reference
 -   [Useful Snippets](https://github.com/bgoonz/Useful-Snippets-js)
 -   [Markdown Templates](https://github.com/bgoonz/Markdown-Templates)
 -   [Zumzi Video Conferencing App (mesibo api backend)](https://github.com/bgoonz/zumzi-chat-messenger)
-
-
 
 # Core Concepts
 
@@ -77,8 +76,8 @@ If we write an arrow function that spans multiple lines, we must use braces to d
 
 ```js
 const formattedPopulations = cities.map((city) => {
-  const popMM = (city.pop / 1000000).toFixed(2);
-  return popMM + ' million';
+    const popMM = (city.pop / 1000000).toFixed(2);
+    return popMM + ' million';
 });
 console.log(formattedPopulations);
 ```
@@ -88,9 +87,7 @@ Note that we must also explicitly specify a `return` for the function.
 However, if we write a function body that is only a single line \(or single expression\) we can use parentheses to delimit it:
 
 ```js
-const formattedPopulations2 = cities.map((city) => (
-  (city.pop / 1000000).toFixed(2) + ' million'
-));
+const formattedPopulations2 = cities.map((city) => (city.pop / 1000000).toFixed(2) + ' million');
 ```
 
 Notably, we don't use `return` as it's implied.
@@ -98,14 +95,16 @@ Notably, we don't use `return` as it's implied.
 Furthermore, if your function body is terse you can write it like so:
 
 ```js
-const pops = cities.map(city => city.pop);
+const pops = cities.map((city) => city.pop);
 console.log(pops);
 ```
 
 The terseness of arrow functions is one of two reasons that we use them. Compare the one-liner above to this:
 
 ```js
-const popsNoArrow = cities.map(function(city) { return city.pop });
+const popsNoArrow = cities.map(function (city) {
+    return city.pop;
+});
 ```
 
 Of greater benefit, though, is how arrow functions bind the `this` object.
@@ -170,10 +169,10 @@ ES6 formally supports modules using the `import`/`export` syntax.
 Inside any file, you can use `export` to specify a variable the module should expose. Here's an example of a file that exports two functions:
 
 ```js
-export const sayHi = () => (console.log('Hi!'));
-export const sayBye = () => (console.log('Bye!'));
+export const sayHi = () => console.log('Hi!');
+export const sayBye = () => console.log('Bye!');
 
-const saySomething = () => (console.log('Something!'));
+const saySomething = () => console.log('Something!');
 ```
 
 Now, anywhere we wanted to use these functions we could use `import`. We need to specify which functions we want to import. A common way of doing this is using ES6's destructuring assignment syntax to list them out like this:
@@ -192,10 +191,10 @@ Also note that we supply a **relative path** to `from`, indicating that the ES6 
 Instead of inserting an `export` before each variable you'd like to export, you can use this syntax to list off all the exposed variables in one area:
 
 ```js
-const sayHi = () => (console.log('Hi!'));
-const sayBye = () => (console.log('Bye!'));
+const sayHi = () => console.log('Hi!');
+const sayBye = () => console.log('Bye!');
 
-const saySomething = () => (console.log('Something!'));
+const saySomething = () => console.log('Something!');
 
 export { sayHi, sayBye };
 ```
@@ -217,10 +216,10 @@ Greetings.saySomething();
 The other type of export is a default export. A module can only contain one default export:
 
 ```js
-const sayHi = () => (console.log('Hi!'));
-const sayBye = () => (console.log('Bye!'));
+const sayHi = () => console.log('Hi!');
+const sayBye = () => console.log('Bye!');
 
-const saySomething = () => (console.log('Something!'));
+const saySomething = () => console.log('Something!');
 
 const Greetings = { sayHi, sayBye };
 
@@ -241,9 +240,7 @@ It's not uncommon for a module to use a mix of both named exports and default ex
 ```js
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(
-
-);
+ReactDOM.render();
 ```
 
 Or, if you're only going to use the `render()` function, you can import the named `render()` function like this:
@@ -251,21 +248,16 @@ Or, if you're only going to use the `render()` function, you can import the name
 ```js
 import { render } from 'react-dom';
 
-render(
-
-);
+render();
 ```
 
 To achieve this flexibility, the export implementation for `react-dom` looks something like this:
 
 ```js
-export const render = (component, target) => {
-
-};
+export const render = (component, target) => {};
 
 const ReactDOM = {
-  render,
-
+    render
 };
 
 export default ReactDOM;
@@ -327,7 +319,7 @@ console.log(c);
 Notice how this is different than if we wrote:
 
 ```js
-const d = [ a, b, 7, 8, 9 ];
+const d = [a, b, 7, 8, 9];
 console.log(d);
 ```
 
@@ -337,8 +329,8 @@ In ES5, all objects were required to have explicit key and value declarations:
 
 ```js
 const explicit = {
-  getState: getState,
-  dispatch: dispatch,
+    getState: getState,
+    dispatch: dispatch
 };
 ```
 
@@ -346,8 +338,8 @@ In ES6, you can use this terser syntax whenever the property name and variable n
 
 ```js
 const implicit = {
-  getState,
-  dispatch,
+    getState,
+    dispatch
 };
 ```
 
@@ -372,7 +364,7 @@ Can be written as this:
 
 ```js
 function divide(a, b = 1) {
-  return a / b;
+    return a / b;
 }
 ```
 
@@ -407,7 +399,7 @@ var fruit2 = fruits[1];
 In ES6, we can use the destructuring syntax to accomplish the same task like this:
 
 ```js
-const [ veg1, veg2 ] = [ 'asparagus', 'broccoli', 'onion' ];
+const [veg1, veg2] = ['asparagus', 'broccoli', 'onion'];
 console.log(veg1);
 console.log(veg2);
 ```
@@ -420,10 +412,10 @@ We can do something similar for extracting object properties into variables:
 
 ```js
 const smoothie = {
-  fats: [ 'avocado', 'peanut butter', 'greek yogurt' ],
-  liquids: [ 'almond milk' ],
-  greens: [ 'spinach' ],
-  fruits: [ 'blueberry', 'banana' ],
+    fats: ['avocado', 'peanut butter', 'greek yogurt'],
+    liquids: ['almond milk'],
+    greens: ['spinach'],
+    fruits: ['blueberry', 'banana']
 };
 
 const { liquids, fruits } = smoothie;
@@ -438,11 +430,11 @@ We can use these same principles to bind arguments inside a function to properti
 
 ```js
 const containsSpinach = ({ greens }) => {
-  if (greens.find(g => g === 'spinach')) {
-    return true;
-  } else {
-    return false;
-  }
+    if (greens.find((g) => g === 'spinach')) {
+        return true;
+    } else {
+        return false;
+    }
 };
 
 containsSpinach(smoothie);
@@ -452,20 +444,14 @@ We do this often with functional React components:
 
 ```js
 const IngredientList = ({ ingredients, onClick }) => (
-  <ul className='IngredientList'>
-    {
-      ingredients.map(i => (
-        <li
-          key={i.id}
-          onClick={() => onClick(i.id)}
-          className='item'
-        >
-          {i.name}
-        </li>
-      ))
-    }
-  </ul>
-)
+    <ul className="IngredientList">
+        {ingredients.map((i) => (
+            <li key={i.id} onClick={() => onClick(i.id)} className="item">
+                {i.name}
+            </li>
+        ))}
+    </ul>
+);
 ```
 
 Here, we use destructuring to extract the props into variables \(`ingredients` and `onClick`\) that we then use inside the component's function body.
