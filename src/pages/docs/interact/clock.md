@@ -1,5 +1,5 @@
 ---
-title: Interactive Examples
+title: Clock
 weight: 1
 excerpt: feel free to try the examples
 seo:
