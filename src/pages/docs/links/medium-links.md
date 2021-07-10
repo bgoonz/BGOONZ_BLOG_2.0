@@ -11,7 +11,7 @@ seo:
           value: website
           keyName: property
         - name: 'og:title'
-          value: Medium Links
+          value: Mediums
           keyName: property
         - name: 'og:description'
           value: This is the community page
@@ -19,7 +19,7 @@ seo:
         - name: 'twitter:card'
           value: summary
         - name: 'twitter:title'
-          value: Medium Links
+          value: Mediums
         - name: 'twitter:description'
           value: This is the community page
 template: docs
