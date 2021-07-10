@@ -1,17 +1,17 @@
 ---
-title: Medium Medium Links
+title: Medium Mediums
 excerpt: >-
     We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get
     connected.
 seo:
-    title: Medium Links
+    title: Mediums
     description: This is the community page
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value: Medium Links
+          value: Mediums
           keyName: property
         - name: 'og:description'
           value: This is the community page
@@ -19,7 +19,7 @@ seo:
         - name: 'twitter:card'
           value: summary
         - name: 'twitter:title'
-          value: Medium Links
+          value: Mediums
         - name: 'twitter:description'
           value: This is the community page
 template: docs
