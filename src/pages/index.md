@@ -194,17 +194,10 @@ sections:
     image_alt: blog
     image_position: left
     content: |-
-     
-|      <iframe width="800" height="575"
+      <iframe width="800" height="575"
        src="https://blog-w-comments.vercel.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   |       <iframe width="800" height="575"
-        src="https://bgoonz.blogspot.com/" title="YouTube video
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  |
-|---|---|
-
-
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Mini Projects
