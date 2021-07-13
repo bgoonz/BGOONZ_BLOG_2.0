@@ -22682,4 +22682,2913 @@ Open [https://www.enterprisedb.com/downloads/postgres-postgresql-downloads](http
 
 ![](https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png)
 
-Once that installer downloads, run it. You need to go through the normal steps o
+Once that installer downloads, run it. You need to go through the normal steps of installing software.
+
+-   Yes, Windows, let the installer make changes to _my_ device.
+-   Thanks for the welcome. Next.
+-   Yeah, that’s a good place to install it. Next.
+-   I don’t want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.
+
+![](https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png)
+
+-   Also, great looking directory. Thanks. Next.
+
+### Oooh! A password! I’ll enter **\*\*\*\***. I sure won’t forget that because, if I do, I’ll have to uninstall and reinstall PostgreSQL and lose all of my hard work. **Seriously, write down this password or use one you will not forget!!!!!!!!!!!!!!!**
+
+### I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it’s not worth it.
+
+-   Sure. 5432. Good to go. Next.
+-   Not even sure what that means. Default! Next.
+-   Yep. Looks good. Next.
+
+Insert pop culture reference to pass the time
+
+### Installing PostgreSQL Client Tools on Ubuntu
+
+Now, to install the PostgreSQL Client tools for Ubuntu. You need to do this so that the Node.js (and later Python) programs running on your Ubuntu installation can access the PostgreSQL server running on your Windows installation. You need to tell `apt`, the package manager, that you want it to go find the PostgreSQL 12 client tools from PostgreSQL itself rather than the common package repositories. You do that by issuing the following two commands. Copy and paste them one at a time into your shell. (If your Ubuntu shell isn’t running, start one.)
+
+**Pro-tip**: Copy those commands because you’re not going to type them, right? After you copy one of them, you can just right-click on the Ubuntu shell. That should paste them in there for you.
+
+wget --quiet -O - [https://www.postgresql.org/media/keys/ACCC4CF8.asc](https://www.postgresql.org/media/keys/ACCC4CF8.asc) | sudo apt-key add -
+
+If prompted for your password, type it.
+
+echo "deb [http://apt.postgresql.org/pub/repos/apt/](http://apt.postgresql.org/pub/repos/apt/) \`lsb_release -cs\`-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+
+The last line of output of those two commands running should read “OK”. If it does not, try copying and pasting them one at a time.
+
+Now that you’ve registered the PostgreSQL repositories as a source to look for PostgreSQL, you need to update the `apt` registry. You should do this before you install _any_ software on Ubuntu.
+
+sudo apt update
+
+Once that’s finished running, the new entries for PostgreSQL 12 should be in the repository. Now, you can install them with the following command.
+
+sudo apt install postgresql-client-12 postgresql-common
+
+If it asks you if you want to install them, please tell it “Y”.
+
+Test that it installed by typing `psql --version`. You should see it print out information about the version of the installed tools. If it tells you that it can’t find the command, try these instructions over.
+
+### Configuring the client tools
+
+Since you’re going to be accessing the PosgreSQL installation from your Ubuntu installation on your Windows installation, you’re going to have to type that you want to access it over and over, which means extra typing. To prevent you from having to do this, you can customize your shell to always add the extra commands for you.
+
+This assumes you’re still using Bash. If you changed the shell that your Ubuntu installation uses, please follow that shell’s directions for adding an alias to its startup file.
+
+Make sure you’re in your Ubuntu home directory. You can do that by typing `cd` and hitting enter. Use `ls` to find out if you have a `.bashrc` file. Type `ls .bashrc`. If it shows you that one exists, that’s the one you will add the alias to. If it tells you that there is no file named that, then type `ls .profile`. If it shows you that one exists, that’s the one you will add the alias to. If it shows you that it does not exist, then use the file name `.bashrc` in the following section.
+
+Now that you know which profile file to use, type `code «profile file name»` where “profile file name” is the name of the file you determined from the last section. Once Visual Studio Code starts up with your file, at the end of it (or if you’ve already added aliases, in that section), type the following.
+
+alias psql="psql -h localhost"
+
+When you run `psql` from the command line, it will now always add the part about wanting to connect to _localhost_ every time. You would have to type that each time, otherwise.
+
+To make sure that you set that up correctly, type `psql -U postgres postgres`. This tells the `psql` client that you want to connect as the user “postgres” (`-U postgres`) to the database postgres (`postgres` at the end), which is the default database created when PostgreSQL is installed. It will prompt you for a password. Type the password that you used when you installed PostgrSQL, earlier. If the alias works correctly and you type the correct password, then you should see something like the following output.
+
+psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1))  
+Type "help" for help.
+
+postgres=#
+
+Type `\q` and hit Enter to exit the PostgreSQL client tool.
+
+Now, you will add a user for your Ubuntu identity so that you don’t have to specify it all the time. Then, you will create a file that PostgreSQL will use to automatically send your password every time.
+
+Copy and paste the following into your Ubuntu shell. Think of a password that you want to use for your user. **Replace the password in the single quotes in the command with the password that you want.** It _has_ to be a non-empty string. PostgreSQL doesn’t like it when it’s not.
+
+psql -U postgres -c "CREATE USER \`whoami\` WITH PASSWORD 'password' SUPERUSER"
+
+It should prompt you for a password. Type the password that you created when you installed PostgreSQL. Once you type the correct password, you should see “CREATE ROLE”.
+
+Now you will create your PostgreSQL password file. Type the following into your Ubuntu shell to open Visual Studio Code and create a new file.
+
+code ~/.pgpass
+
+In that file, you will add this line, which tells it that on localhost for port 5432 (where PostgreSQL is running), for all databases (\*), **use your Ubuntu user name and the password that you just created for that user with the** `**psql**` **command you just typed.** (If you have forgotten your Ubuntu user name, type `whoami` on the command line.) Your entry in the file should have this format.
+
+localhost:5432:\*:«your Ubuntu user name»:«the password you just used»
+
+Once you have that information in the file, save it, and close Visual Studio Code.
+
+The last step you have to take is change the permission on that file so that it is only readable by your user. PostgreSQL will ignore it if just anyone can read and write to it. This is for _your_ security. Change the file permissions so only you can read and write to it. You did this once upon a time. Here’s the command.
+
+chmod go-rw ~/.pgpass
+
+You can confirm that only you have read/write permission by typing `ls -al ~/.pgpass`. That should return output that looks like this, **with your Ubuntu user name instead of “web-dev-hub”.**
+
+\-rw------- 1 web-dev-hub web-dev-hub 37 Mar 28 21:20 /home/web-dev-hub/.pgpass
+
+Now, try connecting to PostreSQL by typing `psql postgres`. Because you added the alias to your startup script, and because you created your **.pgpass** file, it should now connect without prompting you for any credentials! Type `\q` and press Enter to exit the PostgreSQL command line client.
+
+### Installing Postbird
+
+Head over to the [Postbird releases page on GitHub](https://github.com/Paxa/postbird/releases). Click the installer for Windows which you can recognize because it’s the only file in the list that ends with “.exe”.
+
+![](https://cdn-images-1.medium.com/max/800/0*ZdKurvQ4bHs3vDLT.png)
+
+After that installer downloads, run it. You will get a warning from Windows that this is from an unidentified developer. If you don’t want to install this, find a PostgreSQL GUI client that you do trust and install it or do everything from the command line.
+
+![](https://cdn-images-1.medium.com/max/800/0*EWpFEwM0YUDQCW_i.png)
+
+You should get used to seeing this because many open-source applications aren’t signed with the Microsoft Store for monetary and philosophical reasons.
+
+Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads “More info” and the “Run anyway” button.
+
+![](https://cdn-images-1.medium.com/max/800/0*9pDpx8XsYt2KnMku.png)
+
+When it’s done installing, it will launch itself. Test it out by typing the “postgres” into the “Username” field and the password from your installation in the “Password” field. Click the Connect button. It should properly connect to the running
+
+You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any time.
+
+### Now.. if you still have some gas in the tank… let’s put our new tools to work:
+
+### The node-postgres
+
+The node-postgres is a collection of Node.js modules for interfacing with the PostgreSQL database. It has support for callbacks, promises, async/await, connection pooling, prepared statements, cursors, and streaming results.
+
+In our examples we also use the Ramda library. See Ramda tutorial for more information.
+
+### Setting up node-postgres
+
+First, we install node-postgres.
+
+$ node -v  
+v14.2
+
+$ npm init -y
+
+We initiate a new Node application.
+
+npm i pg
+
+We install node-postgres with `nmp i pg`.
+
+npm i ramda
+
+In addition, we install Ramda for beautiful work with data.
+
+cars.sql
+
+DROP TABLE IF EXISTS cars;
+
+CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT);  
+INSERT INTO cars(name, price) VALUES(‘Audi’, 52642);  
+INSERT INTO cars(name, price) VALUES(‘Mercedes’, 57127);  
+INSERT INTO cars(name, price) VALUES(‘Skoda’, 9000);  
+INSERT INTO cars(name, price) VALUES(‘Volvo’, 29000);  
+INSERT INTO cars(name, price) VALUES(‘Bentley’, 350000);  
+INSERT INTO cars(name, price) VALUES(‘Citroen’, 21000);  
+INSERT INTO cars(name, price) VALUES(‘Hummer’, 41400);  
+INSERT INTO cars(name, price) VALUES(‘Volkswagen’, 21600);
+
+In some of the examples, we use this `cars` table.
+
+### The node-postgres first example
+
+In the first example, we connect to the PostgreSQL database and return a simple SELECT query result.
+
+first.js
+
+const pg = require(‘pg’);  
+const R = require(‘ramda’);  
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;  
+const client = new pg.Client(cs);  
+client.connect();  
+client.query(‘SELECT 1 + 4’).then(res => {
+
+const result = R.head(R.values(R.head(res.rows)))
+
+console.log(result)  
+}).finally(() => client.end());
+
+The example connects to the database and issues a SELECT statement.
+
+const pg = require(‘pg’);  
+const R = require(‘ramda’);
+
+We include the `pg` and `ramda` modules.
+
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;
+
+This is the PostgreSQL connection string. It is used to build a connection to the database.
+
+const client = new pg.Client(cs);  
+client.connect();
+
+A client is created. We connect to the database with `connect()`.
+
+client.query(‘SELECT 1 + 4’).then(res => {
+
+const result = R.head(R.values(R.head(res.rows)));
+
+console.log(result);
+
+}).finally(() => client.end());
+
+We issue a simple SELECT query. We get the result and output it to the console. The `res.rows` is an array of objects; we use Ramda to get the returned scalar value. In the end, we close the connection with `end()`.
+
+node first.js  
+**5**
+
+This is the output.
+
+### The node-postgres column names
+
+In the following example, we get the columns names of a database.
+
+> column_names.js
+
+const pg = require(‘pg’);
+
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;
+
+const client = new pg.Client(cs);
+
+client.connect();
+
+client.query(‘SELECT \* FROM cars’).then(res => {
+
+const fields = res.fields.map(field => field.name);
+
+console.log(fields);
+
+}).catch(err => {  
+console.log(err.stack);  
+}).finally(() => {  
+client.end()  
+});
+
+The column names are retrieved with `res.fields` attribute. We also use the `catch` clause to output potential errors.
+
+node column*names.js  
+‘id’, ‘name’, ‘price’′\_id*′,′_name_′,′_price_′
+
+The output shows three column names of the `cars` table.
+
+### Selecting all rows
+
+In the next example, we select all rows from the database table.
+
+> all_rows.js
+
+const pg = require(‘pg’);  
+const R = require(‘ramda’);
+
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;
+
+const client = new pg.Client(cs);
+
+client.connect();
+
+client.query(‘SELECT \* FROM cars’).then(res => {
+
+const data = res.rows;
+
+console.log('all data');  
+data.forEach(row => {  
+ console.log(\\\`Id: ${row.id} Name: ${row.name} Price: ${row.price}\\\`);  
+})
+
+console.log('Sorted prices:');  
+const prices = R.pluck('price', R.sortBy(R.prop('price'), data));  
+console.log(prices);
+
+}).finally(() => {  
+client.end()  
+});
+
+**TBC…**
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+### EMMET
+
+_The a toolkit for web-developers_
+
+### Introduction
+
+Emmet is a productivity toolkit for web developers that uses expressions to generate HTML snippets.
+
+### Installation
+
+Normally, installation for Emmet should be a straight-forward process from the package-manager, as most of the modern text editors support Emmet.
+
+### Usage
+
+You can use Emmet in two ways:
+
+-   Tab Expand Way: Type your emmet code and press `Tab` key
+-   Interactive Method: Press `alt + ctrl + Enter` and start typing your expressions. This should automatically generate HTML snippets on the fly.
+
+**This cheatsheet will assume that you press** `**Tab**` **after each expressions.**
+
+### HTML
+
+### Generating HTML 5 DOCTYPE
+
+`html:5`  
+Will generate
+
+<!DOCTYPE html>
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <title>Document</title>  
+</head>  
+<body>
+
+</body>  
+</html>
+
+### Child items
+
+Child items are created using `>`
+
+`ul>li>p`
+
+<ul>  
+  <li>  
+    <p></p>  
+  </li>  
+</ul>
+
+### Sibling Items
+
+Sibling items are created using `+`
+
+`html>head+body`
+
+<html>  
+<head></head>  
+<body>
+
+</body>  
+</html>
+
+### Multiplication
+
+Items can be multiplied by `*`
+
+`ul>li*5`
+
+<ul>  
+  <li></li>  
+  <li></li>  
+  <li></li>  
+  <li></li>  
+  <li></li>  
+</ul>
+
+### Grouping
+
+Items can be grouped together using `()`
+
+`table>(tr>th*5)+tr>t*5`
+
+<table>  
+  <tr>  
+    <th></th>  
+    <th></th>  
+    <th></th>  
+    <th></th>  
+    <th></th>  
+  </tr>  
+  <tr>  
+    <t></t>  
+    <t></t>  
+    <t></t>  
+    <t></t>  
+    <t></t>  
+  </tr>  
+</table>
+
+### Class and ID
+
+Class and Id in Emmet can be done using `.` and `#`
+
+`div.heading`
+
+<div class="heading"></div>
+
+`div#heading`
+
+<div id="heading"></div>
+
+ID and Class can also be combined together
+
+`div#heading.center`
+
+<div id="heading" class="center"></div>
+
+### Adding Content inside tags
+
+Contents inside tags can be added using `{}`
+
+`h1{Emmet is awesome}+h2{Every front end developers should use this}+p{This is paragraph}*2`
+
+<h1>Emmet is awesome</h1>  
+<h2>Every front end developers should use this</h2>  
+<p>This is paragraph</p>  
+<p>This is paragraph</p>
+
+### Attributes inside HTML tags
+
+Attributes can be added using `[]`
+
+`a[href=https://?google.com data-toggle=something target=_blank]`
+
+<a href="https://?google.com" data-toggle="something" target="\_blank"></a>
+
+### Numbering
+
+Numbering can be done using `$`  
+You can use this inside tag or contents.
+
+`h${This is so awesome $}*6`
+
+<h1>This is so awesome 1</h1>  
+<h2>This is so awesome 2</h2>  
+<h3>This is so awesome 3</h3>  
+<h4>This is so awesome 4</h4>  
+<h5>This is so awesome 5</h5>  
+<h6>This is so awesome 6</h6>
+
+Use `@-` to reverse the Numbering
+
+`img[src=image$$@-.jpg]*5`
+
+<img src="image05.jpg" alt="">  
+<img src="image04.jpg" alt="">  
+<img src="image03.jpg" alt="">  
+<img src="image02.jpg" alt="">  
+<img src="image01.jpg" alt="">
+
+To start the numbering from specific number, use this way
+
+`img[src=emmet$@100.jpg]*5`
+
+<img src="emmet100.jpg" alt="">  
+<img src="emmet101.jpg" alt="">  
+<img src="emmet102.jpg" alt="">  
+<img src="emmet103.jpg" alt="">  
+<img src="emmet104.jpg" alt="">
+
+### Tips
+
+-   Use `:` to expand known abbreviations
+
+`input:date`
+
+<input type="date" name="" id="">
+
+`form:post`
+
+<form action="" method="post"></form>
+
+`link:css`
+
+<link rel="stylesheet" href="style.css">
+
+-   Building Navbar
+
+`.navbar>ul>li*3>a[href=#]{Item $@-}`
+
+<div class="navbar">  
+  <ul>  
+    <li><a href="#">Item 3</a></li>  
+    <li><a href="#">Item 2</a></li>  
+    <li><a href="#">Item 1</a></li>  
+  </ul>  
+</div>
+
+### CSS
+
+Emmet works surprisingly well with css as well.
+
+-   `f:l`
+
+float: left;
+
+You can also use any options n/r/l
+
+-   `pos:a­`
+
+position: absolute;
+
+Also use any options, pos:a/r/f
+
+-   `d:n/b­/f/­i/ib`
+
+`d:ib`
+
+display: inline-block;
+
+-   You can use `m` for margin and `p` for padding followed by direction
+
+`mr` -> `margin-right`
+
+`pr` -> `padding-right`
+
+-   `@f` will result in
+
+@font-face {  
+ font-family:;  
+ src:url();  
+}
+
+You can also use these shorthands
+
+![](https://cdn-images-1.medium.com/max/800/1*h8hsUrJNyVRLYqBQP63DCA.png)
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+HEAD^ # 1 commit before head  
+HEAD^^ # 2 commits before head  
+HEAD~5 # 5 commits before head
+
+### Branches
+
+\# create a new branch  
+ git checkout -b $branchname  
+ git push origin $branchname --set-upstream
+
+\# get a remote branch  
+ git fetch origin  
+ git checkout --track origin/$branchname
+
+\# delete local remote-tracking branches (lol)  
+ git remote prune origin
+
+\# list merged branches  
+ git branch -a --merged
+
+\# delete remote branch  
+ git push origin :$branchname
+
+\# go back to previous branch  
+ git checkout -
+
+### Collaboration
+
+\# Rebase your changes on top of the remote master  
+ git pull --rebase upstream master
+
+\# Squash multiple commits into one for a cleaner git log  
+\# (on the following screen change the word pick to either 'f' or 's')  
+ git rebase -i $commit_ref
+
+### Submodules
+
+\# Import .gitmodules  
+ git submodule init
+
+\# Clone missing submodules, and checkout commits  
+ git submodule update --init --recursive
+
+\# Update remote URLs in .gitmodules  
+\# (Use when you changed remotes in submodules)  
+ git submodule sync
+
+### Diff
+
+### Diff with stats
+
+git diff --stat  
+app/a.txt | 2 +-  
+app/b.txt | 8 ++----  
+2 files changed, 10 insertions(+), 84 deletions(-)
+
+### Just filenames
+
+git diff --summary
+
+### Log options
+
+\--oneline  
+ e11e9f9 Commit message here
+
+\--decorate  
+ shows "(origin/master)"
+
+\--graph  
+ shows graph lines
+
+\--date=relative  
+ "2 hours ago"
+
+### Misc
+
+### Cherry pick
+
+git rebase 76acada^
+
+\# get current sha1 (?)  
+ git show-ref HEAD -s
+
+\# show single commit info  
+ git log -1 f5a960b5
+
+\# Go back up to root directory  
+ cd "$(git rev-parse --show-top-level)"
+
+### Short log
+
+$ git shortlog  
+ $ git shortlog HEAD~20.. # last 20 commits
+
+James Dean (1):  
+ Commit here  
+ Commit there
+
+Frank Sinatra (5):  
+ Another commit  
+ This other commit
+
+### Bisect
+
+git bisect start HEAD HEAD~6  
+git bisect run npm test  
+git checkout refs/bisect/bad # this is where it screwed up  
+git bisect reset
+
+### Manual bisection
+
+git bisect start  
+git bisect good # current version is good
+
+git checkout HEAD~8  
+npm test # see if it's good  
+git bisect bad # current version is bad
+
+git bisect reset # abort
+
+### Searching
+
+git log --grep="fixes things" # search in commit messages  
+git log -S"window.alert" # search in code  
+git log -G"foo.\*" # search in code (regex)
+
+### GPG Signing
+
+git config set user.signingkey <GPG KEY ID> # Sets GPG key to use for signing
+
+git commit -m "Implement feature Y" --gpg-sign # Or -S, GPG signs commit
+
+git config set commit.gpgsign true # Sign commits by default  
+git commit -m "Implement feature Y" --no-gpg-sign # Do not sign  
+\---
+
+### Refs
+
+HEAD^ # 1 commit before head  
+HEAD^^ # 2 commits before head  
+HEAD~5 # 5 commits before head
+
+### Branches
+
+\# create a new branch  
+ git checkout -b $branchname  
+ git push origin $branchname --set-upstream
+
+\# get a remote branch  
+ git fetch origin  
+ git checkout --track origin/$branchname
+
+\# delete local remote-tracking branches (lol)  
+ git remote prune origin
+
+\# list merged branches  
+ git branch -a --merged
+
+\# delete remote branch  
+ git push origin :$branchname
+
+\# go back to previous branch  
+ git checkout -
+
+### Collaboration
+
+\# Rebase your changes on top of the remote master  
+ git pull --rebase upstream master
+
+\# Squash multiple commits into one for a cleaner git log  
+\# (on the following screen change the word pick to either 'f' or 's')  
+ git rebase -i $commit_ref
+
+### Submodules
+
+\# Import .gitmodules  
+ git submodule init
+
+\# Clone missing submodules, and checkout commits  
+ git submodule update --init --recursive
+
+\# Update remote URLs in .gitmodules  
+\# (Use when you changed remotes in submodules)  
+ git submodule sync
+
+### Diff
+
+### Diff with stats
+
+git diff --stat  
+app/a.txt | 2 +-  
+app/b.txt | 8 ++----  
+2 files changed, 10 insertions(+), 84 deletions(-)
+
+### Just filenames
+
+git diff --summary
+
+### Log options
+
+\--oneline  
+ e11e9f9 Commit message here
+
+\--decorate  
+ shows "(origin/master)"
+
+\--graph  
+ shows graph lines
+
+\--date=relative  
+ "2 hours ago"
+
+### Miscellaneous
+
+#### Cherry pick
+
+git rebase 76acada^
+
+\# get current sha1 (?)  
+ git show-ref HEAD -s
+
+\# show single commit info  
+ git log -1 f5a960b5
+
+\# Go back up to root directory  
+ cd "$(git rev-parse --show-top-level)"
+
+### Short log
+
+$ git shortlog  
+ $ git shortlog HEAD~20.. # last 20 commits
+
+James Dean (1):  
+ Commit here  
+ Commit there
+
+Frank Sinatra (5):  
+ Another commit  
+ This other commit
+
+### Bisect
+
+git bisect start HEAD HEAD~6  
+git bisect run npm test  
+git checkout refs/bisect/bad # this is where it screwed up  
+git bisect reset
+
+### Manual bisection
+
+git bisect start  
+git bisect good # current version is good
+
+git checkout HEAD~8  
+npm test # see if it's good  
+git bisect bad # current version is bad
+
+git bisect reset # abort
+
+### Searching
+
+git log --grep="fixes things" # search in commit messages  
+git log -S"window.alert" # search in code  
+git log -G"foo.\*" # search in code (regex)
+
+### GPG Signing
+
+git config set user.signingkey <GPG KEY ID> # Sets GPG key to use for signing
+
+git commit -m "Implement feature Y" --gpg-sign # Or -S, GPG signs commit
+
+git config set commit.gpgsign true # Sign commits by default  
+git commit -m "Implement feature Y" --no-gpg-sign # Do not sign
+
+![](https://cdn-images-1.medium.com/max/800/1*yyaUC-O43Gs1qAVkdHrMdw.png)
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+![](https://cdn-images-1.medium.com/max/800/1*3V9VOfPk_hrFdbEAd3j-QQ.png)
+
+### Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
+
+### Basics
+
+-   **PEP8** : Python Enhancement Proposals, style-guide for Python.
+-   `print` is the equivalent of `console.log`.
+
+> ‘print() == console.log()’
+
+### `#` is used to make comments in your code.
+
+def foo():  
+ """  
+ The foo function does many amazing things that you  
+ should not question. Just accept that it exists and  
+ use it with caution.  
+ """  
+ secretThing()
+
+> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
+
+---
+
+### Numbers
+
+-   Python has three types of numbers:
+
+1.  **Integer**
+2.  **Positive and Negative Counting Numbers.**
+
+No Decimal Point
+
+> Created by a literal non-decimal point number … **or** … with the `_int()_` constructor.
+
+print(3) # => 3  
+print(int(19)) # => 19  
+print(int()) # => 0
+
+**3\. Complex Numbers**
+
+> Consist of a real part and imaginary part.
+
+#### Boolean is a subtype of integer in Python.![🤷‍♂️](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f937-200d-2642-fe0f.svg)
+
+> If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…
+
+![](https://cdn-images-1.medium.com/max/800/0*eC4EvZcv6hhH88jX.png)
+
+> Than I am sure you will find the means to suspend your disbelief.
+
+print(2.24) # => 2.24  
+print(2.) # => 2.0  
+print(float()) # => 0.0  
+print(27e-5) # => 0.00027
+
+### KEEP IN MIND:
+
+> **The** `**i**` **is switched to a** `**j**` **in programming.**
+
+T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**\*_space_** _when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
+
+print(7j) # => 7j  
+print(5.1+7.7j)) # => 5.1+7.7j  
+print(complex(3, 5)) # => 3+5j  
+print(complex(17)) # => 17+0j  
+print(complex()) # => 0j
+
+-   **Type Casting** : The process of converting one number to another.
+
+\# Using Float  
+print(17) # => 17  
+print(float(17)) # => 17.0
+
+\# Using Int  
+print(17.0) # => 17.0  
+print(int(17.0)) # => 17
+
+\# Using Str  
+print(str(17.0) + ' and ' + str(17)) # => 17.0 and 17
+
+**The arithmetic operators are the same between JS and Python, with two additions:**
+
+-   _“\*\*” : Double asterisk for exponent._
+-   _“//” : Integer Division._
+-   **There are no spaces between math operations in Python.**
+-   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `**Math.floor()**` **in JS.**
+-   **There are no** `**++**` **and** `**--**` **in Python, the only shorthand operators are:**
+
+![](https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png)
+
+---
+
+### Strings
+
+-   Python uses both single and double quotes.
+-   You can escape strings like so `'Jodi asked, "What\'s up, Sam?"'`
+-   Multiline strings use triple quotes.
+
+print('''My instructions are very long so to make them  
+more readable in the code I am putting them on  
+more than one line. I can even include "quotes"  
+of any kind because they won't get confused with  
+the end of the string!''')
+
+**Use the** `**len()**` **function to get the length of a string.**
+
+print(len(“Spaghetti”)) # => 9
+
+### **Python uses** `**zero-based indexing**`
+
+#### Python allows negative indexing (thank god!)
+
+print(“Spaghetti”\[-1\]) # => i
+
+print(“Spaghetti”\[-4\]) # => e
+
+-   Python let’s you use ranges
+
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **_by textbook definition_**_, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)_
+
+print(“Spaghetti”\[1:4\]) # => pag  
+print(“Spaghetti”\[4:-1\]) # => hett  
+print(“Spaghetti”\[4:4\]) # => (empty string)
+
+-   The end range is exclusive just like `slice` in JS.
+
+\# Shortcut to get from the beginning of a string to a certain index.  
+print("Spaghetti"\[:4\]) # => Spag  
+print("Spaghetti"\[:-1\]) # => Spaghett
+
+\# Shortcut to get from a certain index to the end of a string.  
+print("Spaghetti"\[1:\]) # => paghetti  
+print("Spaghetti"\[-4:\]) # => etti
+
+-   The `index` string function is the equiv. of `indexOf()` in JS
+
+print("Spaghetti".index("h")) # => 4  
+print("Spaghetti".index("t")) # => 6
+
+-   The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
+
+print("Spaghetti".count("h")) # => 1  
+print("Spaghetti".count("t")) # => 2  
+print("Spaghetti".count("s")) # => 0  
+print('''We choose to go to the moon in this decade and do the other things,  
+not because they are easy, but because they are hard, because that goal will  
+serve to organize and measure the best of our energies and skills, because that  
+challenge is one that we are willing to accept, one we are unwilling to  
+postpone, and one which we intend to win, and the others, too.  
+'''.count('the ')) # => 4
+
+-   **You can use** `**+**` **to concatenate strings, just like in JS.**
+-   **You can also use “\*” to repeat strings or multiply strings.**
+-   **Use the** `**format()**` **function to use placeholders in a string to input values later on.**
+
+first_name = "Billy"  
+last_name = "Bob"  
+print('Your name is {0} {1}'.format(first_name, last_name)) # => Your name is Billy Bob
+
+-   _Shorthand way to use format function is:  
+    _`print(f'Your name is {first_name} {last_name}')`
+
+#### Some useful string methods.
+
+-   **Note that in JS** `**join**` **is used on an Array, in Python it is used on String.**
+
+![](https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png)
+
+-   There are also many handy testing methods.
+
+![](https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png)
+
+---
+
+### Variables and Expressions
+
+-   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
+-   Duck Typing is the fundamental approach of Python.
+-   Assignment of a value automatically declares a variable.
+
+a = 7  
+b = 'Marbles'  
+print(a) # => 7  
+print(b) # => Marbles
+
+-   **_You can chain variable assignments to give multiple var names the same value._**
+
+#### Use with caution as this is highly unreadable
+
+count = max = min = 0  
+print(count) # => 0  
+print(max) # => 0  
+print(min) # => 0
+
+#### The value and type of a variable can be re-assigned at any time.
+
+a = 17  
+print(a) # => 17  
+a = 'seventeen'  
+print(a) # => seventeen
+
+-   `_NaN_` _does not exist in Python, but you can ‘create’ it like so:_`**_print(float("nan"))_**`
+-   _Python replaces_ `_null_` _with_ `_none_`_._
+-   `**_none_**` **_is an object_** _and can be directly assigned to a variable._
+
+> Using none is a convenient way to check to see why an action may not be operating correctly in your program.
+
+---
+
+### Boolean Data Type
+
+-   One of the biggest benefits of Python is that it reads more like English than JS does.
+
+![](https://cdn-images-1.medium.com/max/800/0*HQpndNhm1Z_xSoHb.png)
+
+\# Logical AND  
+print(True and True) # => True  
+print(True and False) # => False  
+print(False and False) # => False
+
+\# Logical OR  
+print(True or True) # => True  
+print(True or False) # => True  
+print(False or False) # => False
+
+\# Logical NOT  
+print(not True) # => False  
+print(not False and True) # => True  
+print(not True or False) # => False
+
+-   By default, Python considers an object to be true UNLESS it is one of the following:
+-   Constant `None` or `False`
+-   Zero of any numeric type.
+-   Empty Sequence or Collection.
+-   `True` and `False` must be capitalized
+
+---
+
+### Comparison Operators
+
+-   Python uses all the same equality operators as JS.
+-   In Python, equality operators are processed from left to right.
+-   Logical operators are processed in this order:
+
+1.  **NOT**
+2.  **AND**
+3.  **OR**
+
+> Just like in JS, you can use `parentheses` to change the inherent order of operations.
+
+> **Short Circuit** : Stopping a program when a `true` or `false` has been reached.
+
+![](https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png)
+
+---
+
+### Identity vs Equality
+
+print (2 == '2') # => False  
+print (2 is '2') # => False
+
+print ("2" == '2') # => True  
+print ("2" is '2') # => True
+
+\# There is a distinction between the number types.  
+print (2 == 2.0) # => True  
+print (2 is 2.0) # => False
+
+-   In the Python community it is better to use `is` and `is not` over `==` or `!=`
+
+---
+
+### If Statements
+
+if name == 'Monica':  
+ print('Hi, Monica.')
+
+if name == 'Monica':  
+ print('Hi, Monica.')  
+else:  
+ print('Hello, stranger.')
+
+if name == 'Monica':  
+ print('Hi, Monica.')  
+elif age < 12:  
+ print('You are not Monica, kiddo.')  
+elif age > 2000:  
+ print('Unlike you, Monica is not an undead, immortal vampire.')  
+elif age > 100:  
+ print('You are not Monica, grannie.')
+
+> Remember the order of `elif` statements matter.
+
+---
+
+### While Statements
+
+spam = 0  
+while spam < 5:  
+ print('Hello, world.')  
+ spam = spam + 1
+
+-   `Break` statement also exists in Python.
+
+spam = 0  
+while True:  
+ print('Hello, world.')  
+ spam = spam + 1  
+ if spam >= 5:  
+ break
+
+-   As are `continue` statements
+
+spam = 0  
+while True:  
+ print('Hello, world.')  
+ spam = spam + 1  
+ if spam < 5:  
+ continue  
+ break
+
+---
+
+### Try/Except Statements
+
+-   Python equivalent to `try/catch`
+
+a = 321  
+try:  
+ print(len(a))  
+except:  
+ print('Silently handle error here')
+
+    # Optionally include a correction to the issue
+    a = str(a)
+    print(len(a)
+
+a = '321'  
+try:  
+ print(len(a))  
+except:  
+ print('Silently handle error here')
+
+    # Optionally include a correction to the issue
+    a = str(a)
+    print(len(a))
+
+-   You can name an error to give the output more specificity.
+
+a = 100  
+b = 0  
+try:  
+ c = a / b  
+except ZeroDivisionError:  
+ c = None  
+print(c)
+
+-   You can also use the `pass` commmand to by pass a certain error.
+
+a = 100  
+b = 0  
+try:  
+ print(a / b)  
+except ZeroDivisionError:  
+ pass
+
+-   The `pass` method won’t allow you to bypass every single error so you can chain an exception series like so:
+
+a = 100  
+\# b = "5"  
+try:  
+ print(a / b)  
+except ZeroDivisionError:  
+ pass  
+except (TypeError, NameError):  
+ print("ERROR!")
+
+-   You can use an `else` statement to end a chain of `except` statements.
+
+\# tuple of file names  
+files = ('one.txt', 'two.txt', 'three.txt')
+
+\# simple loop  
+for filename in files:  
+ try:
+
+# open the file in read mode
+
+f = open(filename, 'r')  
+ except OSError:
+
+# handle the case where file does not exist or permission is denied
+
+print('cannot open file', filename)  
+ else:
+
+# do stuff with the file object (f)
+
+print(filename, 'opened successfully')  
+ print('found', len(f.readlines()), 'lines')  
+ f.close()
+
+-   `finally` is used at the end to clean up all actions under any circumstance.
+
+def divide(x, y):  
+ try:  
+ result = x / y  
+ except ZeroDivisionError:  
+ print("Cannot divide by zero")  
+ else:  
+ print("Result is", result)  
+ finally:  
+ print("Finally...")
+
+-   Using duck typing to check to see if some value is able to use a certain method.
+
+\# Try a number - nothing will print out  
+a = 321  
+if hasattr(a, '\_\_len\_\_'):  
+ print(len(a))
+
+\# Try a string - the length will print out (4 in this case)  
+b = "5555"  
+if hasattr(b, '\_\_len\_\_'):  
+ print(len(b))
+
+---
+
+### Pass
+
+-   Pass Keyword is required to write the JS equivalent of :
+
+if (true) {  
+}
+
+while (true) {}
+
+if True:  
+ pass
+
+while True:  
+ pass
+
+---
+
+### Functions
+
+-   **Function definition includes:**
+-   **The** `**def**` **keyword**
+-   **The name of the function**
+-   **A list of parameters enclosed in parentheses.**
+-   **A colon at the end of the line.**
+-   **One tab indentation for the code to run.**
+-   **You can use default parameters just like in JS**
+
+def greeting(name, saying="Hello"):  
+ print(saying, name)
+
+greeting("Monica")  
+\# Hello Monica
+
+greeting("Barry", "Hey")  
+\# Hey Barry
+
+#### **Keep in mind, default parameters must always come after regular parameters.**
+
+\# THIS IS BAD CODE AND WILL NOT RUN  
+def increment(delta=1, value):  
+ return delta + value
+
+-   _You can specify arguments by name without destructuring in Python._
+
+def greeting(name, saying="Hello"):  
+ print(saying, name)
+
+\# name has no default value, so just provide the value  
+\# saying has a default value, so use a keyword argument  
+greeting("Monica", saying="Hi")
+
+-   The `lambda` keyword is used to create anonymous functions and are supposed to be `one-liners`.
+
+`toUpper = lambda s: s.upper()`
+
+---
+
+### Notes
+
+#### Formatted Strings
+
+> Remember that in Python join() is called on a string with an array/list passed in as the argument.  
+> Python has a very powerful formatting engine.  
+> format() is also applied directly to strings.
+
+shopping_list = \[‘bread’,’milk’,’eggs’\]  
+print(‘,’.join(shopping_list))
+
+### Comma Thousands Separator
+
+print(‘{:,}’.format(1234567890))  
+‘1,234,567,890’
+
+### Date and Time
+
+d = datetime.datetime(2020, 7, 4, 12, 15, 58)  
+print(‘{:%Y-%m-%d %H:%M:%S}’.format(d))  
+‘2020-07-04 12:15:58’
+
+### Percentage
+
+points = 190  
+total = 220  
+print(‘Correct answers: {:.2%}’.format(points/total))  
+Correct answers: 86.36%
+
+### Data Tables
+
+width=8  
+print(‘ decimal hex binary’)  
+print(‘-’\*27)  
+for num in range(1,16):  
+for base in ‘dXb’:  
+print(‘{0:{width}{base}}’.format(num, base=base, width=width), end=’ ‘)  
+print()  
+Getting Input from the Command Line  
+Python runs synchronously, all programs and processes will stop when listening for a user input.  
+The input function shows a prompt to a user and waits for them to type ‘ENTER’.  
+Scripts vs Programs  
+Programming Script : A set of code that runs in a linear fashion.  
+The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.
+
+**Python can be used to display html, css, and JS.**  
+_It is common to use Python as an API (Application Programming Interface)_
+
+#### Structured Data
+
+#### Sequence : The most basic data structure in Python where the index determines the order.
+
+> List  
+> Tuple  
+> Range  
+> Collections : Unordered data structures, hashable values.
+
+---
+
+#### Dictionaries
+
+Sets
+
+#### Iterable : Generic name for a sequence or collection; any object that can be iterated through.
+
+#### Can be mutable or immutable.
+
+Built In Data Types
+
+---
+
+### Lists are the python equivalent of arrays.
+
+empty_list = \[\]  
+departments = \[‘HR’,’Development’,’Sales’,’Finance’,’IT’,’Customer Support’\]
+
+### You can instantiate
+
+specials = list()
+
+#### Test if a value is in a list.
+
+print(1 in \[1, 2, 3\]) #> True  
+print(4 in \[1, 2, 3\]) #> False  
+\# Tuples : Very similar to lists, but they are immutable
+
+#### Instantiated with parentheses
+
+time_blocks = (‘AM’,’PM’)
+
+#### Sometimes instantiated without
+
+colors = ‘red’,’blue’,’green’  
+numbers = 1, 2, 3
+
+#### Tuple() built in can be used to convert other data into a tuple
+
+tuple(‘abc’) # returns (‘a’, ‘b’, ‘c’)  
+tuple(\[1,2,3\]) # returns (1, 2, 3)  
+\# Think of tuples as constant variables.
+
+#### Ranges : A list of numbers which can’t be changed; often used with for loops.
+
+**Declared using one to three parameters**.
+
+> Start : opt. default 0, first # in sequence.  
+> Stop : required next number past the last number in the sequence.  
+> Step : opt. default 1, difference between each number in the sequence.
+
+range(5) # \[0, 1, 2, 3, 4\]  
+range(1,5) # \[1, 2, 3, 4\]  
+range(0, 25, 5) # \[0, 5, 10, 15, 20\]  
+range(0) # \[ \]  
+for let (i = 0; i < 5; i++)  
+for let (i = 1; i < 5; i++)  
+for let (i = 0; i < 25; i+=5)  
+for let(i = 0; i = 0; i++)  
+\# Keep in mind that stop is not included in the range.
+
+#### Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.
+
+#### Mutable.
+
+a = {‘one’:1, ‘two’:2, ‘three’:3}  
+b = dict(one=1, two=2, three=3)  
+c = dict(\[(‘two’, 2), (‘one’, 1), (‘three’, 3)\])  
+\# a, b, and c are all equal
+
+**_Declared with curly braces of the built in dict()_**
+
+> _Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
+
+**Use the in operator to see if a key exists in a dictionary.**
+
+S**ets : Unordered collection of distinct objects; objects that need to be hashable.**
+
+> _Always be unique, duplicate items are auto dropped from the set._
+
+#### Common Uses:
+
+> Removing Duplicates  
+> Membership Testing  
+> Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.
+
+**Standard Set is mutable, Python has a immutable version called frozenset.  
+Sets created by putting comma seperated values inside braces:**
+
+school_bag = {‘book’,’paper’,’pencil’,’pencil’,’book’,’book’,’book’,’eraser’}  
+print(school_bag)
+
+#### Also can use set constructor to automatically put it into a set.
+
+letters = set(‘abracadabra’)  
+print(letters)  
+#Built-In Functions  
+#Functions using iterables
+
+**filter(function, iterable) : creates new iterable of the same type which includes each item for which the function returns true.**
+
+**map(function, iterable) : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.**
+
+**sorted(iterable, key=None, reverse=False) : creates a new sorted list from the items in the iterable.**
+
+**Output is always a list**
+
+**key: opt function which coverts and item to a value to be compared.**
+
+**reverse: optional boolean.**
+
+**enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
+
+quarters = \[‘First’, ‘Second’, ‘Third’, ‘Fourth’\]  
+print(enumerate(quarters))  
+print(enumerate(quarters, start=1))
+
+#### (0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)
+
+#### (1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)
+
+> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.  
+> Functions that analyze iterable
+
+**len(iterable) : returns the count of the number of items.**
+
+**max(\*args, key=None) : returns the largest of two or more arguments.**
+
+**max(iterable, key=None) : returns the largest item in the iterable.**
+
+_key optional function which converts an item to a value to be compared.  
+min works the same way as max_
+
+**sum(iterable) : used with a list of numbers to generate the total.**
+
+_There is a faster way to concatenate an array of strings into one string, so do not use sum for that._
+
+**any(iterable) : returns True if any items in the iterable are true.**
+
+**all(iterable) : returns True is all items in the iterable are true.**
+
+### Working with dictionaries
+
+**dir(dictionary) : returns the list of keys in the dictionary.  
+Working with sets**
+
+**Union : The pipe | operator or union(\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.**
+
+a = {1, 2, 3}  
+b = {2, 4, 6}  
+print(a | b) # => {1, 2, 3, 4, 6}
+
+#### Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.
+
+a = {1, 2, 3}  
+b = {2, 4, 6}  
+print(a & b) # => {2}  
+Difference : The — operator can be used to produce a new set of only the elements that appear in the first set and NOT the others.
+
+**Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.**
+
+a = {1, 2, 3}  
+b = {2, 4, 6}  
+print(a — b) # => {1, 3}  
+print(b — a) # => {4, 6}  
+print(a ^ b) # => {1, 3, 4, 6}
+
+---
+
+### \*\*For Statements
+
+In python, there is only one for loop.\*\*
+
+Always Includes:
+
+> 1\. The for keyword  
+> 2\. A variable name  
+> 3\. The ‘in’ keyword  
+> 4\. An iterable of some kid  
+> 5\. A colon  
+> 6\. On the next line, an indented block of code called the for clause.
+
+**You can use break and continue statements inside for loops as well.**
+
+**You can use the range function as the iterable for the for loop.**
+
+print(‘My name is’)  
+for i in range(5):  
+print(‘Carlita Cinco (‘ + str(i) + ‘)’)
+
+total = 0  
+for num in range(101):  
+total += num  
+print(total)  
+Looping over a list in Python  
+for c in \[‘a’, ‘b’, ‘c’\]:  
+print(c)
+
+lst = \[0, 1, 2, 3\]  
+for i in lst:  
+print(i)
+
+**_Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list._**
+
+supplies = \[‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’\]  
+for i in range(len(supplies)):  
+print(‘Index ‘ + str(i) + ‘ in supplies is: ‘ + supplies\[i\])
+
+**You can loop and destructure at the same time.**
+
+l = 1, 2\], \[3, 4\], \[5, 6  
+for a, b in l:  
+print(a, ‘, ‘, b)
+
+> Prints 1, 2
+
+> Prints 3, 4
+
+> Prints 5, 6
+
+**You can use values() and keys() to loop over dictionaries.**
+
+spam = {‘color’: ‘red’, ‘age’: 42}  
+for v in spam.values():  
+print(v)
+
+_Prints red_
+
+_Prints 42_
+
+for k in spam.keys():  
+print(k)
+
+_Prints color_
+
+_Prints age_
+
+**For loops can also iterate over both keys and values.**
+
+**Getting tuples**
+
+for i in spam.items():  
+print(i)
+
+_Prints (‘color’, ‘red’)_
+
+_Prints (‘age’, 42)_
+
+_Destructuring to values_
+
+for k, v in spam.items():  
+print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
+
+_Prints Key: age Value: 42_
+
+_Prints Key: color Value: red_
+
+**Looping over string**
+
+for c in “abcdefg”:  
+print(c)
+
+**When you order arguments within a function or function call, the args need to occur in a particular order:**
+
+_formal positional args._
+
+\*args
+
+_keyword args with default values_
+
+\*\*kwargs
+
+def example(arg_1, arg_2, \*args, \*\*kwargs):  
+pass
+
+def example2(arg_1, arg_2, \*args, kw_1=”shark”, kw_2=”blowfish”, \*\*kwargs):  
+pass
+
+---
+
+### **Importing in Python**
+
+**Modules are similar to packages in Node.js**  
+Come in different types:
+
+Built-In,
+
+Third-Party,
+
+Custom.
+
+**All loaded using import statements.**
+
+---
+
+### **Terms**
+
+> module : Python code in a separate file.  
+> package : Path to a directory that contains modules.  
+> [**init.py**](http://init.py/) : Default file for a package.  
+> submodule : Another file in a module’s folder.  
+> function : Function in a module.
+
+**A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
+
+_Try to avoid importing with wildcards in Python._
+
+_Use multiple lines for clarity when importing._
+
+from urllib.request import (  
+HTTPDefaultErrorHandler as ErrorHandler,  
+HTTPRedirectHandler as RedirectHandler,  
+Request,  
+pathname2url,  
+url2pathname,  
+urlopen,  
+)
+
+---
+
+### Watching Out for Python 2
+
+**Python 3 removed <> and only uses !=**
+
+**format() was introduced with P3**
+
+**All strings in P3 are unicode and encoded.  
+md5 was removed.**
+
+**ConfigParser was renamed to configparser  
+sets were killed in favor of set() class.**
+
+#### **print was a statement in P2, but is a function in P3.**
+
+### Topics revisited (in python syntax)
+
+[https://gist.github.com/bgoonz/82154f50603f73826c27377ebaa498b5](https://gist.github.com/bgoonz/82154f50603f73826c27377ebaa498b5)
+
+### Cheat Sheet:
+
+[https://gist.github.com/bgoonz/282774d28326ff83d8b42ae77ab1fee3](https://gist.github.com/bgoonz/282774d28326ff83d8b42ae77ab1fee3)
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+### Python Cheat Sheet:
+
+[https://gist.github.com/bgoonz/999163a278b987fe47fb247fd4d66904](https://gist.github.com/bgoonz/999163a278b987fe47fb247fd4d66904)
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)[https://github.com/bgoonz](https://github.com/bgoonz)
+
+### Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+### Fetch
+
+    fetch('/data.json')  .then(response => response.json())  .then(data => {    console.log(data)  })  .catch(err => ...)
+
+### Response
+
+    fetch('/data.json').then(res => {  res.text()       // response body (=> Promise)  res.json()       // parse via JSON (=> Promise)  res.status       //=> 200  res.statusText   //=> 'OK'  res.redirected   //=> false  res.ok           //=> true  res.url          //=> 'http://site.com/data.json'  res.type         //=> 'basic'                   //   ('cors' 'default' 'error'                   //    'opaque' 'opaqueredirect')
+
+      res.headers.get('Content-Type')})
+
+### Request options
+
+    fetch('/data.json', {  method: 'post',  body: new FormData(form), // post body  body: JSON.stringify(...),
+
+      headers: {    'Accept': 'application/json'  },
+
+      credentials: 'same-origin', // send cookies  credentials: 'include',     // send cookies, even in CORS
+
+    })
+
+### Catching errors
+
+    fetch('/data.json')  .then(checkStatus)
+
+    function checkStatus (res) {  if (res.status >= 200 && res.status < 300) {    return res  } else {    let err = new Error(res.statusText)    err.response = res    throw err  }}
+
+Non-2xx responses are still successful requests. Use another function to turn them to errors.
+
+### Using with node.js
+
+    const fetch = require('isomorphic-fetch')
+
+See: [isomorphic-fetch](https://npmjs.com/package/isomorphic-fetch) _(npmjs.com)_
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+### Settings
+
+    app.set('x', 'yyy')app.get('x') //=> 'yyy'
+
+    app.enable('trust proxy')app.disable('trust proxy')
+
+    app.enabled('trust proxy') //=> true
+
+### Enviorment
+
+    app.get('env')
+
+### Config
+
+    app.configure('production', function() {  app.set...})
+
+### Wares
+
+    app.use(express.static(__dirname + '/public'))app.use(express.logger())
+
+### Helpers
+
+    app.locals({  title: "MyApp",})
+
+---
+
+### Request & response
+
+### Request
+
+    // GET  /user/tjreq.path         //=> "/user/tj"req.url          //=> "/user/tj"req.xhr          //=> true|falsereq.method       //=> "GET"req.paramsreq.params.name  //=> "tj"req.params[0]
+
+    // GET /search?q=tobi+ferretreq.query.q // => "tobi ferret"
+
+    req.cookies
+
+    req.accepted// [ { value: 'application/json', quality: 1, type: 'application', subtype: 'json' },//   { value: 'text/html', quality: 0.5, type: 'text',subtype: 'html' } ]
+
+    req.is('html')req.is('text/html')
+
+    req.headersreq.headers['host']req.headers['user-agent']req.headers['accept-encoding']req.headers['accept-language']
+
+### Response
+
+    res.redirect('/')res.redirect(301, '/')
+
+    res.set('Content-Type', 'text/html')
+
+    res.send('hi')res.send(200, 'hi')
+
+    res.json({ a: 2 })
+
+Heroku is an web application that makes deploying applications easy for a beginner.
+
+[https://gist.github.com/bgoonz/7bf839da876126324957e1f0f0feb578](https://gist.github.com/bgoonz/7bf839da876126324957e1f0f0feb578)
+
+Before you begin deploying, make sure to remove any `console.log`‘s or `debugger`‘s in any production code. You can search your entire project folder if you are using them anywhere.
+
+You will set up Heroku to run on a production, not development, version of your application. When a Node.js application like yours is pushed up to Heroku, it is identified as a Node.js application because of the `package.json` file. It runs `npm install` automatically. Then, if there is a `heroku-postbuild` script in the `package.json` file, it will run that script. Afterwards, it will automatically run `npm start`.
+
+In the following phases, you will configure your application to work in production, not just in development, and configure the `package.json` scripts for `install`, `heroku-postbuild` and `start` scripts to install, build your React application, and start the Express production server.
+
+### Phase 1: Heroku Connection
+
+If you haven’t created a Heroku account yet, create one [here](https://signup.heroku.com/).
+
+Add a new application in your [Heroku dashboard](https://dashboard.heroku.com/) named whatever you want. Under the “Resources” tab in your new application, click “Find more add-ons” and add the “Heroku Postgres” add-on with the free Hobby Dev setting.
+
+In your terminal, install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line). Afterwards, login to Heroku in your terminal by running the following:
+
+    heroku login
+
+Add Heroku as a remote to your project’s git repository in the following command and replace `<name-of-Heroku-app>` with the name of the application you created in the [Heroku dashboard](https://dashboard.heroku.com/).
+
+    heroku git:remote -a <name-of-Heroku-app>
+
+Next, you will set up your Express + React application to be deployable to Heroku.
+
+### Phase 2: Setting up your Express + React application
+
+Right now, your React application is on a different localhost port than your Express application. However, since your React application only consists of static files that don’t need to bundled continuously with changes in production, your Express application can serve the React assets in production too. These static files live in the `frontend/build` folder after running `npm run build` in the `frontend` folder.
+
+Add the following changes into your `backend/routes.index.js` file.
+
+At the root route, serve the React application’s static `index.html` file along with `XSRF-TOKEN` cookie. Then serve up all the React application’s static files using the `express.static` middleware. Serve the `index.html` and set the `XSRF-TOKEN` cookie again on all routes that don’t start in `/api`. You should already have this set up in `backend/routes/index.js` which should now look like this:
+
+    // backend/routes/index.jsconst express = require('express');const router = express.Router();const apiRouter = require('./api');
+
+    router.use('/api', apiRouter);
+
+    // Static routes// Serve React build files in productionif (process.env.NODE_ENV === 'production') {  const path = require('path');  // Serve the frontend's index.html file at the root route  router.get('/', (req, res) => {    res.cookie('XSRF-TOKEN', req.csrfToken());    res.sendFile(      path.resolve(__dirname, '../../frontend', 'build', 'index.html')    );  });
+
+      // Serve the static assets in the frontend's build folder  router.use(express.static(path.resolve("../frontend/build")));
+
+      // Serve the frontend's index.html file at all other routes NOT starting with /api  router.get(/^(?!\/?api).*/, (req, res) => {    res.cookie('XSRF-TOKEN', req.csrfToken());    res.sendFile(      path.resolve(__dirname, '../../frontend', 'build', 'index.html')    );  });}
+
+    // Add a XSRF-TOKEN cookie in developmentif (process.env.NODE_ENV !== 'production') {  router.get('/api/csrf/restore', (req, res) => {    res.cookie('XSRF-TOKEN', req.csrfToken());    res.status(201).json({});  });}
+
+    module.exports = router;
+
+Your Express backend’s `package.json` should include scripts to run the `sequelize` CLI commands.
+
+The `backend/package.json`‘s scripts should now look like this:
+
+    "scripts": {    "sequelize": "sequelize",    "sequelize-cli": "sequelize-cli",    "start": "per-env",    "start:development": "nodemon -r dotenv/config ./bin/www",    "start:production": "node ./bin/www"  },
+
+Initialize a `package.json` file at the very root of your project directory (outside of both the `backend` and `frontend` folders). The scripts defined in this `package.json` file will be run by Heroku, not the scripts defined in the `backend/package.json` or the `frontend/package.json`.
+
+When Heroku runs `npm install`, it should install packages for both the `backend` and the `frontend`. Overwrite the `install` script in the root `package.json` with:
+
+    npm --prefix backend install backend && npm --prefix frontend install frontend
+
+This will run `npm install` in the `backend` folder then run `npm install` in the `frontend` folder.
+
+Next, define a `heroku-postbuild` script that will run the `npm run build` command in the `frontend` folder. Remember, Heroku will automatically run this script after running `npm install`.
+
+Define a `sequelize` script that will run `npm run sequelize` in the `backend` folder.
+
+Finally, define a `start` that will run `npm start` in the \`backend folder.
+
+The root `package.json`‘s scripts should look like this:
+
+    "scripts": {    "heroku-postbuild": "npm run build --prefix frontend",    "install": "npm --prefix backend install backend && npm --prefix frontend install frontend",    "dev:backend": "npm install --prefix backend start",    "dev:frontend": "npm install --prefix frontend start",    "sequelize": "npm run --prefix backend sequelize",    "sequelize-cli": "npm run --prefix backend sequelize-cli",    "start": "npm start --prefix backend"  },
+
+The `dev:backend` and `dev:frontend` scripts are optional and will not be used for Heroku.
+
+Finally, commit your changes.
+
+### Phase 3: Deploy to Heroku
+
+Once you’re finished setting this up, navigate to your application’s Heroku dashboard. Under “Settings” there is a section for “Config Vars”. Click the `Reveal Config Vars` button to see all your production environment variables. You should have a `DATABASE_URL` environment variable already from the Heroku Postgres add-on.
+
+Add environment variables for `JWT_EXPIRES_IN` and `JWT_SECRET` and any other environment variables you need for production.
+
+You can also set environment variables through the Heroku CLI you installed earlier in your terminal. See the docs for [Setting Heroku Config Variables](https://devcenter.heroku.com/articles/config-vars).
+
+Push your project to Heroku. Heroku only allows the `master` branch to be pushed. But, you can alias your branch to be named `master` when pushing to Heroku. For example, to push a branch called `login-branch` to `master` run:
+
+    git push heroku login-branch:master
+
+If you do want to push the `master` branch, just run:
+
+    git push heroku master
+
+You may want to make two applications on Heroku, the `master` branch site that should have working code only. And your `staging` site that you can use to test your work in progress code.
+
+Now you need to migrate and seed your production database.
+
+Using the Heroku CLI, you can run commands inside of your production application just like in development using the `heroku run` command.
+
+For example to migrate the production database, run:
+
+    heroku run npm run sequelize db:migrate
+
+To seed the production database, run:
+
+    heroku run npm run sequelize db:seed:all
+
+Note: You can interact with your database this way as you’d like, but beware that `db:drop` cannot be run in the Heroku environment. If you want to drop and create the database, you need to remove and add back the “Heroku Postgres” add-on.
+
+Another way to interact with the production application is by opening a bash shell through your terminal by running:
+
+    heroku bash
+
+In the opened shell, you can run things like `npm run sequelize db:migrate`.
+
+Open your deployed site and check to see if you successfully deployed your Express + React application to Heroku!
+
+If you see an `Application Error` or are experiencing different behavior than what you see in your local environment, check the logs by running:
+
+    heroku logs
+
+If you want to open a connection to the logs to continuously output to your terminal, then run:
+
+    heroku logs --tail
+
+The logs may clue you into why you are experiencing errors or different behavior.
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+#### [CODEX](http://medium.com/codex)
+
+#### **Each table is made up of rows and columns. If you think of a table as a grid, the column go from left to right across the grid and each entry of data is listed down as a row.**
+
+Each row in a relational is uniquely identified by a primary key. This can be by one or more sets of column values. In most scenarios it is a single column, such as employeeID.
+
+Every relational table has one primary key. Its purpose is to uniquely identify each row in the database. No two rows can have the same primary key value. The practical result of this is that you can select every single row by just knowing its primary key.
+
+SQL Server UNIQUE constraints allow you to ensure that the data stored in a column, or a group of columns, is unique among the rows in a table.
+
+Although both UNIQUE and [PRIMARY KEY](https://www.sqlservertutorial.net/sql-server-basics/sql-server-primary-key/) constraints enforce the uniqueness of data, you should use the UNIQUE constraint instead of PRIMARY KEY constraint when you want to enforce the uniqueness of a column, or a group of columns, that are not the primary key columns.
+
+Different from PRIMARY KEY constraints, UNIQUE constraints allow NULL. Moreover, UNIQUE constraints treat the NULL as a regular value, therefore, it only allows one NULL per column.
+
+![](https://cdn-images-1.medium.com/max/800/1*kgzq5NoL5ejBGvuZ4qLDaQ.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*hr8DccnpiR2Uj5UI3iLsOQ.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*RiWJpwpVMdge3Sqofn3srA.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*GN5aSwENOvntpfk90rHYFg.png)
+
+Create a new [role](https://www.postgresqltutorial.com/postgresql-roles/):
+
+    CREATE ROLE role_name;
+
+Create a new role with a `username` and `password`:
+
+    CREATE ROLE username NOINHERIT LOGIN PASSWORD password;
+
+Change role for the current session to the `new_role`:
+
+    SET ROLE new_role;
+
+Allow `role_1` to set its role as `role_2:`
+
+    GRANT role_2 TO role_1;
+
+### Managing databases
+
+[Create a new database](https://www.postgresqltutorial.com/postgresql-create-database/):
+
+    CREATE DATABASE [IF NOT EXISTS] db_name;
+
+[Delete a database permanently](https://www.postgresqltutorial.com/postgresql-drop-database/):
+
+    DROP DATABASE [IF EXISTS] db_name;
+
+### Managing tables
+
+[Create a new table](https://www.postgresqltutorial.com/postgresql-create-table/) or a [temporary table](https://www.postgresqltutorial.com/postgresql-temporary-table/)
+
+    CREATE [TEMP] TABLE [IF NOT EXISTS] table_name(       pk SERIAL PRIMARY KEY,   c1 type(size) NOT NULL,   c2 type(size) NULL,   ...);
+
+[Add a new column](https://www.postgresqltutorial.com/postgresql-add-column/) to a table:
+
+    ALTER TABLE table_name ADD COLUMN new_column_name TYPE;
+
+[Drop a column](https://www.postgresqltutorial.com/postgresql-drop-column/) in a table:
+
+    ALTER TABLE table_name DROP COLUMN column_name;
+
+[Rename a column](https://www.postgresqltutorial.com/postgresql-rename-column/):
+
+    ALTER TABLE table_name RENAME column_name TO new_column_name;
+
+Set or remove a default value for a column:
+
+    ALTER TABLE table_name ALTER COLUMN [SET DEFAULT value | DROP DEFAULT]
+
+Add a [primary key](https://www.postgresqltutorial.com/postgresql-primary-key/) to a table.
+
+    ALTER TABLE table_name ADD PRIMARY KEY (column,...);
+
+Remove the primary key from a table.
+
+    ALTER TABLE table_nameDROP CONSTRAINT primary_key_constraint_name;
+
+[Rename a table](https://www.postgresqltutorial.com/postgresql-rename-table/).
+
+    ALTER TABLE table_name RENAME TO new_table_name;
+
+[Drop a table](https://www.postgresqltutorial.com/postgresql-drop-table/) and its dependent objects:
+
+    DROP TABLE [IF EXISTS] table_name CASCADE;
+
+### Managing views
+
+[Create a view](https://www.postgresqltutorial.com/managing-postgresql-views/):
+
+    CREATE OR REPLACE view_name ASquery;
+
+[Create a recursive view](https://www.postgresqltutorial.com/postgresql-recursive-view/):
+
+    CREATE RECURSIVE VIEW view_name(column_list) ASSELECT column_list;
+
+[Create a materialized view](https://www.postgresqltutorial.com/postgresql-materialized-views/):
+
+    CREATE MATERIALIZED VIEW view_nameASqueryWITH [NO] DATA;
+
+Refresh a materialized view:
+
+    REFRESH MATERIALIZED VIEW CONCURRENTLY view_name;
+
+Drop a view:
+
+    DROP VIEW [ IF EXISTS ] view_name;
+
+Drop a materialized view:
+
+    DROP MATERIALIZED VIEW view_name;
+
+Rename a view:
+
+    ALTER VIEW view_name RENAME TO new_name;
+
+### Managing indexes
+
+Creating an index with the specified name on a table
+
+    CREATE [UNIQUE] INDEX index_nameON table (column,...)
+
+Removing a specified index from a table
+
+    DROP INDEX index_name;
+
+### Querying data from tables
+
+Query all data from a table:
+
+    SELECT * FROM table_name;
+
+Query data from specified columns of all rows in a table:
+
+    SELECT column_listFROM table;
+
+Query data and select only unique rows:
+
+    SELECT DISTINCT (column)FROM table;
+
+Query data from a table with a filter:
+
+    SELECT *FROM tableWHERE condition;
+
+Assign an [alias](https://www.postgresqltutorial.com/postgresql-alias/) to a column in the result set:
+
+    SELECT column_1 AS new_column_1, ...FROM table;
+
+Query data using the `[LIKE](https://www.postgresqltutorial.com/postgresql-like/)` operator:
+
+    SELECT * FROM table_nameWHERE column LIKE '%value%'
+
+Query data using the `[BETWEEN](https://www.postgresqltutorial.com/postgresql-between/)` operator:
+
+    SELECT * FROM table_nameWHERE column BETWEEN low AND high;
+
+Query data using the `[IN](https://www.postgresqltutorial.com/postgresql-in/)` operator:
+
+    SELECT * FROM table_nameWHERE column IN (value1, value2,...);
+
+Constrain the returned rows with the `[LIMIT](https://www.postgresqltutorial.com/postgresql-limit/)` clause:
+
+    SELECT * FROM table_nameLIMIT limit OFFSET offsetORDER BY column_name;
+
+Query data from multiple using the [inner join](https://www.postgresqltutorial.com/postgresql-inner-join/), [left join](https://www.postgresqltutorial.com/postgresql-left-join/), [full outer join](https://www.postgresqltutorial.com/postgresql-full-outer-join/), [cross join](https://www.postgresqltutorial.com/postgresql-cross-join/) and [natural join](https://www.postgresqltutorial.com/postgresql-natural-join/):
+
+    SELECT *FROM table1INNER JOIN table2 ON conditionsSELECT *FROM table1LEFT JOIN table2 ON conditionsSELECT *FROM table1FULL OUTER JOIN table2 ON conditionsSELECT *FROM table1CROSS JOIN table2;SELECT *FROM table1NATURAL JOIN table2;
+
+Return the number of rows of a table.
+
+    SELECT COUNT (*)FROM table_name;
+
+Sort rows in ascending or descending order:
+
+    SELECT select_listFROM tableORDER BY column ASC [DESC], column2 ASC [DESC],...;
+
+Group rows using `[GROUP BY](https://www.postgresqltutorial.com/postgresql-group-by/)` clause.
+
+    SELECT *FROM tableGROUP BY column_1, column_2, ...;
+
+Filter groups using the `[HAVING](https://www.postgresqltutorial.com/postgresql-having/)` clause.
+
+    SELECT *FROM tableGROUP BY column_1HAVING condition;
+
+### Set operations
+
+Combine the result set of two or more queries with `[UNION](https://www.postgresqltutorial.com/postgresql-union/)` operator:
+
+    SELECT * FROM table1UNIONSELECT * FROM table2;
+
+Minus a result set using `[EXCEPT](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/)` operator:
+
+    SELECT * FROM table1EXCEPTSELECT * FROM table2;
+
+Get intersection of the result sets of two queries:
+
+    SELECT * FROM table1INTERSECTSELECT * FROM table2;
+
+### Modifying data
+
+[Insert a new row into a table](https://www.postgresqltutorial.com/postgresql-insert/):
+
+    INSERT INTO table(column1,column2,...)VALUES(value_1,value_2,...);
+
+Insert multiple rows into a table:
+
+    INSERT INTO table_name(column1,column2,...)VALUES(value_1,value_2,...),      (value_1,value_2,...),      (value_1,value_2,...)...
+
+[Update](https://www.postgresqltutorial.com/postgresql-update/) data for all rows:
+
+    UPDATE table_nameSET column_1 = value_1,    ...;
+
+Update data for a set of rows specified by a condition in the `WHERE` clause.
+
+    UPDATE tableSET column_1 = value_1,    ...WHERE condition;
+
+[Delete all rows](https://www.postgresqltutorial.com/postgresql-delete/) of a table:
+
+    DELETE FROM table_name;
+
+Delete specific rows based on a condition:
+
+    DELETE FROM table_nameWHERE condition;
+
+### Performance
+
+Show the query plan for a query:
+
+    EXPLAIN query;
+
+Show and execute the query plan for a query:
+
+    EXPLAIN ANALYZE query;
+
+Collect statistics:
+
+    ANALYZE table_name;
+
+---
+
+### Postgres & JSON:
+
+### Creating the DB and the Table
+
+    DROP DATABASE IF EXISTS books_db;CREATE DATABASE books_db WITH ENCODING='UTF8' TEMPLATE template0;
+
+    DROP TABLE IF EXISTS books;
+
+    CREATE TABLE books (  id SERIAL PRIMARY KEY,  client VARCHAR NOT NULL,  data JSONb NOT NULL);
+
+### Populating the DB
+
+INSERT INTO books(client, data) values( 'Joe', '{ "title": "Siddhartha", "author": { "first_name": "Herman", "last_name": "Hesse" } }' ); INSERT INTO books(client, data) values('Jenny', '{ "title": "Bryan Guner", "author": { "first_name": "Jack", "last_name": "Kerouac" } }'); INSERT INTO books(client, data) values('Jenny', '{ "title": "100 años de soledad", "author": { "first_name": "Gabo", "last_name": "Marquéz" } }');
+
+Lets see everything inside the table books:
+
+    SELECT * FROM books;
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*GOQQ0qNGak2yIrtQ)
+
+### `->` operator returns values out of JSON columns
+
+Selecting 1 column:
+
+    SELECT client,     data->'title' AS title    FROM books;
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*OIVYOfYcbVh65Mt5)
+
+Selecting 2 columns:
+
+    SELECT client,    data->'title' AS title, data->'author' AS author   FROM books;
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*fEzPkSY8yGexKOk4)
+
+### `->` vs `->>`
+
+The `->` operator returns the original JSON type (which might be an object), whereas `->>` returns text.
+
+### Return NESTED objects
+
+You can use the `->` to return a nested object and thus chain the operators:
+
+    SELECT client,    data->'author'->'last_name' AS author   FROM books;
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*lwy8bR7igaroMXeb)
+
+### Filtering
+
+Select rows based on a value inside your JSON:
+
+    SELECT  client, data->'title' AS title FROM books  WHERE data->'title' = '"Bryan Guner"';
+
+Notice WHERE uses `->` so we must compare to JSON `'"Bryan Guner"'`
+
+Or we could use `->>` and compare to `'Bryan Guner'`
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*poASndLoU71qlXqE)
+
+### Nested filtering
+
+Find rows based on the value of a nested JSON object:
+
+    SELECT  client, data->'title' AS title FROM books  WHERE data->'author'->>'last_name' = 'Kerouac';
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*R1kOhDK19ntdUYkq)
+
+### A real world example
+
+    CREATE TABLE events (  name varchar(200),  visitor_id varchar(200),  properties json,  browser json);
+
+We’re going to store events in this table, like pageviews. Each event has properties, which could be anything (e.g. current page) and also sends information about the browser (like OS, screen resolution, etc). Both of these are completely free form and could change over time (as we think of extra stuff to track).
+
+    INSERT INTO events VALUES (  'pageview', '1',  '{ "page": "/" }',  '{ "name": "Chrome", "os": "Mac", "resolution": { "x": 1440, "y": 900 } }');INSERT INTO events VALUES (  'pageview', '2',  '{ "page": "/" }',  '{ "name": "Firefox", "os": "Windows", "resolution": { "x": 1920, "y": 1200 } }');INSERT INTO events VALUES (  'pageview', '1',  '{ "page": "/account" }',  '{ "name": "Chrome", "os": "Mac", "resolution": { "x": 1440, "y": 900 } }');INSERT INTO events VALUES (  'purchase', '5',  '{ "amount": 10 }',  '{ "name": "Firefox", "os": "Windows", "resolution": { "x": 1024, "y": 768 } }');INSERT INTO events VALUES (  'purchase', '15',  '{ "amount": 200 }',  '{ "name": "Firefox", "os": "Windows", "resolution": { "x": 1280, "y": 800 } }');INSERT INTO events VALUES (  'purchase', '15',  '{ "amount": 500 }',  '{ "name": "Firefox", "os": "Windows", "resolution": { "x": 1280, "y": 800 } }');
+
+Now lets select everything:
+
+    SELECT * FROM events;
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*ZPHfB4FxjSIlAVxL)
+
+### JSON operators + PostgreSQL aggregate functions
+
+Using the JSON operators, combined with traditional PostgreSQL aggregate functions, we can pull out whatever we want. You have the full might of an RDBMS at your disposal.
+
+-   Lets see browser usage:
+-   `SELECT browser->>'name' AS browser, count(browser) FROM events GROUP BY browser->>'name';`
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*4lEv2DgUk33FeUgo)
+
+-   Total revenue per visitor:
+
+`SELECT visitor_id, SUM(CAST(properties->>'amount' AS integer)) AS total FROM events WHERE CAST(properties->>'amount' AS integer) > 0 GROUP BY visitor_id;`
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*HxOS3CgwXBJ6A2FP)
+
+-   Average screen resolution
+-   `SELECT AVG(CAST(browser->'resolution'->>'x' AS integer)) AS width, AVG(CAST(browser->'resolution'->>'y' AS integer)) AS height FROM events;`
+
+Output:
+
+![](https://cdn-images-1.medium.com/max/800/0*iyv4Iv4Rc8M8mwt1)
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)[https://github.com/bgoonz](https://github.com/bgoonz)
+
+### Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+![](https://webdevhubcom.files.wordpress.com/2021/03/fe4be-0yjlsk3t9c2_14in1.png)
+
+**_Curating Complexity: A Guide to Big-O Notation_**
+
+-   Why is looking at runtime not a reliable method of calculating time complexity?
+-   Not all computers are made equal( some may be stronger and therefore boost our runtime speed )
+-   How many background processes ran concurrently with our program that was being tested?
+-   We also need to ask if our code remains performant if we increase the size of the input.
+-   The real question we need to answering is: `How does our performance scale?`.
+
+### big ‘O’ notation
+
+-   Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.
+-   Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:
+-   The function should be defined by the size of the input.
+-   `Smaller` Big O is better (lower time complexity)
+-   Big O is used to describe the worst case scenario.
+-   Big O is simplified to show only its most dominant mathematical term.
+
+### Simplifying Math Terms
+
+-   We can use the following rules to simplify the our Big O functions:
+-   `Simplify Products` : If the function is a product of many terms, we drop the terms that don’t depend on n.
+-   `Simplify Sums` : If the function is a sum of many terms, we drop the non-dominant terms.
+-   `n` : size of the input
+-   `T(f)` : unsimplified math function
+-   `O(f)` : simplified math function.
+
+`Putting it all together`
+
+![](https://webdevhubcom.files.wordpress.com/2021/03/cb689-1tt8uuv1x3nmguw5rvtoz8a.png)
+
+-   First we apply the product rule to drop all constants.
+-   Then we apply the sum rule to select the single most dominant term.
+
+---
+
+### Complexity Classes
+
+Common Complexity Classes
+
+#### There are 7 major classes in Time Complexity
+
+![](https://webdevhubcom.files.wordpress.com/2021/03/c2e27-16zkhmjohkvdbrd8jfudf3a.png)
+
+#### `O(1) Constant`
+
+> **The algorithm takes roughly the same number of steps for any input size.**
+
+[https://gist.github.com/eengineergz/91b823971e8faac788f38ff670efc19d#file-constant-js](https://gist.github.com/eengineergz/91b823971e8faac788f38ff670efc19d#file-constant-js)
+
+#### `O(log(n)) Logarithmic`
+
+> **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm’s will typically display ‘halving’ the size of the input (like binary search!)**
+
+[https://gist.github.com/eengineergz/a1e6dec81f0639818db7f9a8e76b3992](https://gist.github.com/eengineergz/a1e6dec81f0639818db7f9a8e76b3992)
+
+#### `O(n) Linear`
+
+> **Linear algorithm’s will access each item of the input “once”.**
+
+[https://gist.github.com/eengineergz/cc953ba2bd6e1d6f524a6d8b297aad5b](https://gist.github.com/eengineergz/cc953ba2bd6e1d6f524a6d8b297aad5b)
+
+### `O(nlog(n)) Log Linear Time`
+
+> **Combination of linear and logarithmic behavior, we will see features from both classes.**
+
+> Algorithm’s that are log-linear will use **both recursion AND iteration.**
+
+[https://gist.github.com/eengineergz/e9bd6337c17f1623a4da088574ed0d8e](https://gist.github.com/eengineergz/e9bd6337c17f1623a4da088574ed0d8e)
+
+### `O(nc) Polynomial`
+
+> **C is a fixed constant.**
+
+[https://gist.github.com/eengineergz/3e6096e66bac80b962435b7d873cdbe9](https://gist.github.com/eengineergz/3e6096e66bac80b962435b7d873cdbe9)
+
+### `O(c^n) Exponential`
+
+> **C is now the number of recursive calls made in each stack frame.**
+
+> **Algorithm’s with exponential time are VERY SLOW.**
+
+[https://gist.github.com/eengineergz/5dec7e3736d7b5e28a5f1c85b5b50705](https://gist.github.com/eengineergz/5dec7e3736d7b5e28a5f1c85b5b50705)
+
+---
+
+### Memoization
+
+-   Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use recursive strategies to solve.
+-   MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only ‘solve’ each problem once.
+-   Two features that comprise memoization:
+
+1.  FUNCTION MUST BE RECURSIVE.
+2.  Our additional Data Structure is usually an object (we refer to it as our memo… or sometimes cache!)
+
+![](https://webdevhubcom.files.wordpress.com/2021/03/d40c8-14u79jbmju2wke_tyycd_3a.png)
+
+![](https://webdevhubcom.files.wordpress.com/2021/03/07644-1qh42kzgccxmvt6wrtascvw.png)
+
+### Memoizing Factorial
+
+[https://gist.github.com/eengineergz/0f92023740a44e3b41a0defb227ade37#file-memoizing-factorial-js](https://gist.github.com/eengineergz/0f92023740a44e3b41a0defb227ade37#file-memoizing-factorial-js)
+
+Our memo object is _mapping_ out our arguments of factorial to it’s return value.
+
+-   Keep in mind we didn’t improve the speed of our algorithm.
+
+### Memoizing Fibonacci
+
+![](https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb)
+
+-   Our time complexity for Fibonacci goes from O(2^n) to O(n) after applying memoization.
+
+### The Memoization Formula
+
+> _Rules:_
+
+1.  _Write the unoptimized brute force recursion (make sure it works);_
+2.  _Add memo object as an additional argument ._
+3.  _Add a base case condition that returns the stored value if the function’s argument is in the memo._
+4.  _Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key._
+
+#### Things to remember
+
+1.  _When solving DP problems with Memoization, it is helpful to draw out the visual tree first._
+2.  _When you notice duplicate sub-tree’s that means we can memoize._
+
+[https://gist.github.com/eengineergz/c15feb228a51a3543625009c8fd0b6de](https://gist.github.com/eengineergz/c15feb228a51a3543625009c8fd0b6de)
+
+---
+
+### Tabulation
+
+#### Tabulation Strategy
+
+> Use When:
+
+-   **The function is iterative and not recursive.**
+-   _The accompanying DS is usually an array._
+
+[https://gist.github.com/eengineergz/a57bf449f5a8b16eedd1aa9fd71707e2](https://gist.github.com/eengineergz/a57bf449f5a8b16eedd1aa9fd71707e2)
+
+#### Steps for tabulation
+
+-   _Create a table array based off the size of the input._
+-   _Initialize some values in the table to ‘answer’ the trivially small subproblem._
+-   _Iterate through the array and fill in the remaining entries._
+-   _Your final answer is usually the last entry in the table._
+
+---
+
+### Memo and Tab Demo with Fibonacci
+
+> _Normal Recursive Fibonacci_
+
+function fibonacci(n) {  
+ if (n <= 2) return 1;  
+ return fibonacci(n - 1) + fibonacci(n - 2);  
+}
+
+> _Memoization Fibonacci 1_
+
+[https://gist.github.com/eengineergz/504a9120ca40bbb4a246549937c43a12](https://gist.github.com/eengineergz/504a9120ca40bbb4a246549937c43a12)
+
+> _Memoization Fibonacci 2_
+
+[https://gist.github.com/eengineergz/07d315d92b3458a8640cee31bce9c236](https://gist.github.com/eengineergz/07d315d92b3458a8640cee31bce9c236)
+
+> _Tabulated Fibonacci_
+
+[https://gist.github.com/eengineergz/b1b1f7e259193ecdc432350b6199f2d3](https://gist.github.com/eengineergz/b1b1f7e259193ecdc432350b6199f2d3)
+
+### Example of Linear Search
+
+[https://gist.github.com/eengineergz/e98354b287ce2f80da4ab943399eb555](https://gist.github.com/eengineergz/e98354b287ce2f80da4ab943399eb555)
+
+-   _Worst Case Scenario: The term does not even exist in the array._
+-   _Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n)._
+
+---
+
+### Sorting Algorithms
+
+### Bubble Sort
+
+`Time Complexity`: Quadratic O(n^2)
+
+-   The inner for-loop contributes to O(n), however in a worst case scenario the while loop will need to run n times before bringing all n elements to their final resting spot.
+
+`Space Complexity`: O(1)
+
+-   Bubble Sort will always use the same amount of memory regardless of n.
+
+![](https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT)
+
+[https://gist.github.com/eengineergz/e67e56bed7c5a20a54851867ba5efef6](https://gist.github.com/eengineergz/e67e56bed7c5a20a54851867ba5efef6)
+
+-   The first major sorting algorithm one learns in introductory programming courses.
+-   Gives an intro on how to convert unsorted data into sorted data.
+
+> It’s almost never used in production code because:
+
+-   _It’s not efficient_
+-   _It’s not commonly used_
+-   _There is stigma attached to it_
+-   `_Bubbling Up_` _: Term that infers that an item is in motion, moving in some direction, and has some final resting destination._
+-   _Bubble sort, sorts an array of integers by bubbling the largest integer to the top._
+
+[https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053](https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053)[https://gist.github.com/eengineergz/80934783c628c70ac2a5a48119a82d54](https://gist.github.com/eengineergz/80934783c628c70ac2a5a48119a82d54)
+
+-   _Worst Case & Best Case are always the same because it makes nested loops._
+-   _Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)_
+
+### Selection Sort
+
+`Time Complexity`: Quadratic O(n^2)
+
+-   Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested we will get O(n²);
+
+`Space Complexity`: O(1)
+
+-   Selection Sort will always use the same amount of memory regardless of n.
+
+![](https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu)
+
+[https://gist.github.com/eengineergz/4abc0fe0bf01599b0c4104b0ba633402](https://gist.github.com/eengineergz/4abc0fe0bf01599b0c4104b0ba633402)
+
+-   Selection sort organizes the smallest elements to the start of the array.
+
+![](https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY)
+
+> Summary of how Selection Sort should work:
+
+1.  _Set MIN to location 0_
+2.  _Search the minimum element in the list._
+3.  _Swap with value at location Min_
+4.  _Increment Min to point to next element._
+5.  _Repeat until list is sorted._
+
+[https://gist.github.com/eengineergz/61f130c8e0097572ed908fe2629bdee0](https://gist.github.com/eengineergz/61f130c8e0097572ed908fe2629bdee0)
+
+### Insertion Sort
+
+`Time Complexity`: Quadratic O(n^2)
+
+-   Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested we will get O(n²);
+
+`Space Complexity`: O(n)
+
+-   Because we are creating a subArray for each element in the original input, our Space Comlexity becomes linear.
+
+![](https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG)
+
+[https://gist.github.com/eengineergz/a9f4b8596c7546ac92746db659186d8c](https://gist.github.com/eengineergz/a9f4b8596c7546ac92746db659186d8c)
+
+### Merge Sort
+
+`Time Complexity`: Log Linear O(nlog(n))
+
+-   Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); `Space Complexity`: O(n)
+-   We are linear O(n) time because we are creating subArrays.
+
+![](https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD)
+
+![](https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl)
+
+### Example of Merge Sort
+
+[https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48](https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48)[https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64](https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64)
+
+![](https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M)
+
+-   **Merge sort is O(nlog(n)) time.**
+-   _We need a function for merging and a function for sorting._
+
+> Steps:
+
+1.  _If there is only one element in the list, it is already sorted; return the array._
+2.  _Otherwise, divide the list recursively into two halves until it can no longer be divided._
+3.  _Merge the smallest lists into new list in a sorted order._
+
+### Quick Sort
+
+`Time Complexity`: Quadratic O(n^2)
+
+-   Even though the average time complexity O(nLog(n)), the worst case scenario is always quadratic.
+
+`Space Complexity`: O(n)
+
+-   Our space complexity is linear O(n) because of the partition arrays we create.
+-   QS is another Divide and Conquer strategy.
+-   Some key ideas to keep in mind:
+-   It is easy to sort elements of an array relative to a particular target value.
+-   An array of 0 or 1 elements is already trivially sorted.
+
+![](https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T)
+
+![](https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf)
+
+[https://gist.github.com/eengineergz/24bcbc5248a8c4e1671945e9512da57e](https://gist.github.com/eengineergz/24bcbc5248a8c4e1671945e9512da57e)
+
+### Binary Search
+
+`Time Complexity`: Log Time O(log(n))
+
+`Space Complexity`: O(1)
+
+![](https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali)
+
+> _Recursive Solution_
+
+[https://gist.github.com/eengineergz/c82c00a4bcba4b69b7d326d6cad3ac8c](https://gist.github.com/eengineergz/c82c00a4bcba4b69b7d326d6cad3ac8c)
+
+> _Min Max Solution_
+
+[https://gist.github.com/eengineergz/eb8d1e1684db15cc2c8af28e13f38751](https://gist.github.com/eengineergz/eb8d1e1684db15cc2c8af28e13f38751)[https://gist.github.com/eengineergz/bc3f576b9795ccef12a108e36f9f820a](https://gist.github.com/eengineergz/bc3f576b9795ccef12a108e36f9f820a)
+
+-   _Must be conducted on a sorted array._
+-   _Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing._
+-   _Binary Search is part of Divide and Conquer._
+
+### Insertion Sort
+
+-   **Works by building a larger and larger sorted region at the left-most end of the array.**
+
+> Steps:
+
+1.  _If it is the first element, and it is already sorted; return 1._
+2.  _Pick next element._
+3.  _Compare with all elements in the sorted sub list_
+4.  _Shift all the elements in the sorted sub list that is greater than the value to be sorted._
+5.  _Insert the value_
+6.  _Repeat until list is sorted._
+
+[https://gist.github.com/eengineergz/ffead1de0836c4bcc6445780a604f617](https://gist.github.com/eengineergz/ffead1de0836c4bcc6445780a604f617)
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+### Or Checkout my personal Resource Site:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+![](https://webdevhubcom.files.wordpress.com/2021/03/4122c-1vcmj_h9ahs41oc9yx1hzfq.png)
+
+[https://gist.github.com/bgoonz/af844eda5a20b0fdc0b813304401602b](https://gist.github.com/bgoonz/af844eda5a20b0fdc0b813304401602b)
+
+#### Windows Subsystem for Linux (WSL) and Ubuntu
+
+‌
+
+![](https://webdevhubcom.files.wordpress.com/2021/03/d44d1-0aqkp1drnhmnm34zz.jpg)
+
+Test if you have Ubuntu installed by typing “Ubuntu” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads **“Ubuntu 20.04 LTS”** with “App” under it, then you have it installed.
+
+‌
+
+1.  In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”
+2.  Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu
+3.  In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+4.  Restart your computer
+5.  In the application search box in the bottom bar, type “Store” to find the application named “Microsoft Store”
+6.  Click “Microsoft Store”
+7.  Click the “Search” button in the upper-right corner of the window
+8.  Type in “Ubuntu”
+9.  Click “Run Linux on Windows (Get the apps)”
+10. Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu’
+11. Click “Install”
+12. After it downloads, click “Launch”
+13. If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose “Pin to taskbar”
+14. When prompted to “Enter new UNIX username”, type your first name with no spaces
+15. When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)
+16. Confirm your installation by typing the command `whoami ‘as in who-am-i'`followed by Enter at the prompt (it should print your first name)
+17. You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
+18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
+
+### Git
+
+Git comes with Ubuntu, so there’s nothing to install. However, you should configure it using the following instructions.
+
+‌Open an Ubuntu terminal if you don’t have one open already.
+
+1.  You need to configure Git, so type `git config --global user.name "Your Name"` with replacing “Your Name” with your real name.
+2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing “[your@email.com](mailto:your@email.com)” with your real email.
+
+**Note: if you want git to remember your login credentials type:**
+
+$ git config --global credential.helper store
+
+‌
+
+### Google Chrome
+
+Test if you have Chrome installed by typing “Chrome” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads “Chrome” with “App” under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
+
+‌
+
+1.  Open Microsoft Edge, the blue “e” in the task bar, and type in [http://chrome.google.com](http://chrome.google.com/). Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.
+2.  Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.
+
+### Node.js
+
+Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports “Command ‘node’ not found”, then you need to follow these directions.
+
+1.  In the Ubuntu terminal, type `sudo apt update` and press Enter
+2.  In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
+3.  In the Ubuntu terminal, type `curl -o- [https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh](https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh) | bash` and press Enter
+4.  In the Ubuntu terminal, type `. ./.bashrc` and press Enter
+5.  In the Ubuntu terminal, type `nvm install --lts` and press Enter
+6.  Confirm that **node** is installed by typing `node --version` and seeing it print something that is not “Command not found”!
+
+### Unzip
+
+You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.
+
+‌In the Ubuntu terminal type: `sudo apt install unzip` and press Enter
+
+‌Mocha.js
+
+Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you’re good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
+
+‌
+
+### Python 3
+
+Ubuntu does not come with Python 3. Install it using the command `sudo apt install python3`. Test it by typing `python3 --version` and seeing it print a number.
+
+‌
+
+### Note about WSL
+
+‌
+
+As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
+
+‌
+
+### Some other common instillations
+
+\# Installing build essentials  
+sudo apt-get install -y build-essential libssl-dev  
+\# Nodejs and NVM  
+curl -o- [https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh](https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh) | bash  
+source ~/.profile  
+sudo nvm install 7.10.0  
+sudo nvm use 7.10.0  
+node -v  
+#nodemon  
+sudo npm install -g nodemon  
+sudo npm install -g loopback-cli  
+\# Forever to run nodejs scripts forever  
+sudo npm install forever -g  
+\# Git - a version control system  
+sudo apt-get update  
+sudo apt-get install -y git xclip  
+\# Grunt - an automated task runner  
+sudo npm install -g grunt-cli  
+\# Bower - a dependency manager  
+sudo npm install -g bower  
+\# Yeoman - for generators  
+sudo npm install -g yo  
+\# maven  
+sudo apt-get install maven -y  
+\# Gulp - an automated task runner  
+sudo npm install -g gulp-cli  
+\# Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)  
+sudo npm install -g generator-angular-fullstack  
+\# Vim, Curl, Python - Some random useful stuff  
+sudo apt-get install -y vim curl python-software-properties  
+sudo apt-get install -y python-dev, python-pip  
+sudo apt-get install -y libkrb5-dev  
+\# Installing JDK and JRE  
+sudo apt-get install -y default-jre  
+sudo apt-get install -y default-jdk  
+\# Archive Extractors  
+sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller  
+\# FileZilla - a FTP client  
+sudo apt-get install -y filezilla
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+
+Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.
+
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.
+
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum.
+
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.
+
+Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna.
+
+Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum.
+
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.
+
+Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna.
+
+Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+
+It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+
+Don’t worry about sounding professional. Sound like you. There are over 1.5 billion websites out there, but your story is what’s going to separate this one from the rest. If you read the words back and don’t hear your own voice in your head, that’s a good sign you still have more work to do.
+
+Be clear, be confident and don’t overthink it. The beauty of your story is that it’s going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.
+
+Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui.
+
+Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+
+Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.
+
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
+
+It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+
+Don’t worry about sounding professional. Sound like you. There are over 1.5 billion websites out there, but your story is what’s going to separate this one from the rest. If you read the words back and don’t hear your own voice in your head, that’s a good sign you still have more work to do.
+
+Be clear, be confident and don’t overthink it. The beauty of your story is that it’s going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.
+
+Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.
+
+It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+
+Don’t worry about sounding professional. Sound like you. There are over 1.5 billion websites out there, but your story is what’s going to separate this one from the rest. If you read the words back and don’t hear your own voice in your head, that’s a good sign you still have more work to do.
+
+Be clear, be confident and don’t overthink it. The beauty of your story is that it’s going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.
+
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+
+Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Donec sed odio dui.
+
+Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+
+Don’t worry about sounding professional. Sound like you. There are over 1.5 billion websites out there, but your story is what’s going to separate this one from the rest. If you read the words back and don’t hear your own voice in your head, that’s a good sign you still have more work to do.
+
+Be clear, be confident and don’t overthink it. The beauty of your story is that it’s going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.
+
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui.
+
+Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
