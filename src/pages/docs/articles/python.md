@@ -1,5 +1,5 @@
 ---
-title: Python Practice
+title: Python 
 weight: 0
 excerpt: lorem-ipsum
 seo:
