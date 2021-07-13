@@ -11954,4 +11954,2894 @@ These extensions provide slightly different sets of features. While the first on
 
 ### [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
-> _This extension allows matching brackets to be identified w
+> _This extension allows matching brackets to be identified with colours. The user can define which characters to match, and which colours to use._
+
+![](https://cdn-images-1.medium.com/max/800/0*m3nU-5UxgUxX4-eJ.png)
+
+### [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
+
+> _Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX._
+
+### [shell-format](https://github.com/foxundermoon/vs-shell-format)
+
+> _shell script & Dockerfile & dotenv format_
+
+![](https://cdn-images-1.medium.com/max/800/0*TThlkfK1KgQm5AKU.gif)
+
+### [Vscode Google Translate](https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate)
+
+> _Quickly translate selected text right in your code_
+
+![](https://cdn-images-1.medium.com/max/800/0*JF8NuxAFDxXiTn_u.gif)
+
+### Explorer Icons
+
+### [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+![](https://cdn-images-1.medium.com/max/800/0*67ZZ9mhoISPk_lM4.png)
+
+### Uncategorized
+
+### [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview)
+
+> _Browser Preview for VS Code enables you to open a real browser preview inside your editor that you can debug. Browser Preview is powered by Chrome Headless, and works by starting a headless Chrome instance in a new process. This enables a secure way to render web content inside VS Code, and enables interesting features such as in-editor debugging and more!_
+
+> **_FYI:… I HAVE TRIED ENDLESSLEY TO GET THE DEBUGGER TO WORK IN VSCODE BUT IT DOES NOT… I SUSPECT THAT’S WHY IT HAS A 3 STAR RATING FOR AN OTHERWISE PHENOMINAL EXTENSION._**
+
+![](https://cdn-images-1.medium.com/max/800/0*Oilwsi7EKGpCZb46.gif)
+
+### [CodeRoad](https://marketplace.visualstudio.com/items?itemName=CodeRoad.coderoad)
+
+> _Play interactive tutorials in your favorite editor._
+
+![](https://cdn-images-1.medium.com/max/800/0*iV8P93QMmWdYfnrQ.gif)
+
+### [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+
+> _Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, C# Script, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script_
+
+![](https://cdn-images-1.medium.com/max/800/0*hMsM_IEyBklQXchd.gif)
+
+### [Code Time](https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode)
+
+> _Automatic time reports by project and other programming metrics right in VS Code._
+
+![](https://cdn-images-1.medium.com/max/800/0*Uo1BYexJenprpgLa)
+
+### [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+
+> _Highlight web colors in your editor_
+
+![Highlight web colors in your editor screenshot](https://cdn-images-1.medium.com/max/800/1*ZwE7OHKR5opvDCJJOw9KeQ.png)
+
+### [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
+
+> _Syntax highlighting for the VS Code Output Panel and log files_
+
+![](https://cdn-images-1.medium.com/max/800/0*9DpzVZ9cUNp2TMyD.jpg)
+
+### [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)
+
+> _Dash integration in Visual Studio Code_
+
+![Dash integration screenshot](https://cdn-images-1.medium.com/max/800/1*sqGllC-pgXNaEBfB-cxG9Q.png)
+
+### [Edit with Shell Command](https://marketplace.visualstudio.com/items?itemName=ryu1kn.edit-with-shell)
+
+> _Leverage your favourite shell commands to edit text_
+
+![](https://cdn-images-1.medium.com/max/800/0*2wW31HJ1nUCjORZe.gif)
+
+### [Editor Config for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+
+> _Editor Config for VS Code_
+
+### [ftp-sync](https://marketplace.visualstudio.com/items?itemName=lukasz-wronski.ftp-sync)
+
+> _Auto-sync your work to remote FTP server_
+
+![](https://cdn-images-1.medium.com/max/800/0*-viKhwxpeYQdWHRE.gif)
+
+### [Highlight JSX/HTML tags](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
+
+> _Highlights matching tags in the file._
+
+### [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+
+> _A simple extension to make indentation more readable._
+
+![](https://cdn-images-1.medium.com/max/800/0*GK_yEd-50SU3yc_y.png)
+
+### [Password Generator](https://marketplace.visualstudio.com/items?itemName=ftonato.password-generator)
+
+> _Create a secure password using our generator tool. Help prevent a security threat by getting a strong password today._
+
+![](https://cdn-images-1.medium.com/max/800/0*qPJAZk9-NcYgsx7H.gif)
+
+### [PlatformIO](https://marketplace.visualstudio.com/items?itemName=formulahendry.platformio)
+
+> _An open source ecosystem for IoT development: supports 350+ embedded boards, 20+ development platforms, 10+ frameworks. Arduino and ARM mbed compatible._
+
+![](https://cdn-images-1.medium.com/max/800/0*RywVt_vikqB-5urO.gif)
+
+### [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
+
+> _Polaroid for your code ![📸](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f4f8.svg)._
+
+> **_Note: Polacode no longer works as of the most recent update… go for Polacode2020 or CodeSnap…_**
+
+![](https://cdn-images-1.medium.com/max/800/0*Io4fPojDRrDf5CmW.gif)
+
+### [Quokka](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
+
+#### This one is super cool!
+
+> _Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project’s files, inline reporting, code coverage and rich output formatting._
+
+![](https://cdn-images-1.medium.com/max/800/0*Q9kp8EWZHTD0Hfru.gif)
+
+### [Slack](https://marketplace.visualstudio.com/items?itemName=sozercan.slack)
+
+> _Send messages and code snippets, upload files to Slack_
+
+Personally I found this extension to slow down my editor in addition to confliction with other extensions: (I have over 200 as of this writing)….. **yes I have been made fully aware that I have a problem and need to get help**
+
+![](https://cdn-images-1.medium.com/max/800/0*9-xxjXzdPCh_46kZ.gif)
+
+### [Spotify](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify)
+
+_No real advantage over just using Spotify normally… it’s problematic enough in implementation that you won’t save any time using it. Further, it’s a bit tricky to configure … or at least it was the last time I tried syncing it with my spotify account._
+
+> _Provides integration with Spotify Desktop client. Shows the currently playing song in status bar, search lyrics and provides commands for controlling Spotify with buttons and hotkeys._
+
+![](https://cdn-images-1.medium.com/max/800/0*IqsxXiGpZQWbQbfD.gif)
+
+### [SVG](https://marketplace.visualstudio.com/items?itemName=jock.svg)
+
+> _A Powerful SVG Language Support Extension(beta). Almost all the features you need to handle SVG._
+
+![](https://cdn-images-1.medium.com/max/800/0*SC6zCXGaBnM_LkgC.png)
+
+### [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
+
+> _View an SVG in the editor and export it as data URI scheme or PNG._
+
+### [Text Marker (Highlighter)](https://marketplace.visualstudio.com/items?itemName=ryu1kn.text-marker)
+
+> _Highlight multiple text patterns with different colors at the same time. Highlighting a single text pattern can be done with the editor’s search functionality, but it cannot highlight multiple patterns at the same time, and this is where this extension comes handy._
+
+![](https://cdn-images-1.medium.com/max/800/0*YDreVyGNjZmqj_KC.gif)
+
+### [ESDOC MDN](https://marketplace.visualstudio.com/items?itemName=samundrak.esdoc-mdn)
+
+### THIS IS A MUST HAVE
+
+> _Quickly bring up helpful MDN documentation in the editor_
+
+![](https://cdn-images-1.medium.com/max/800/0*xiUfWBsz8x8beY70.gif)
+
+![](https://cdn-images-1.medium.com/max/800/0*mMBU6d1iCkt5VHq2.gif)
+
+### Themes:
+
+In the interest of not making the reader scroll endlessly as I often do… I’ve made a separate post for that here. If you’ve made it this far, I thank you!
+
+[https://5fff5b9a2430bb564bfd451d–stoic-mccarthy-2c335f.netlify.app/#h18](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18)
+
+---
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://5fff5b9a2430bb564bfd451d–stoic-mccarthy-2c335f.netlify.app/#h18](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18)[https://5fff5b9a2430bb564bfd451d–stoic-mccarthy-2c335f.netlify.app/#h18](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18)
+
+### Or Checkout my personal Resource Site:
+
+[https://5fff5b9a2430bb564bfd451d–stoic-mccarthy-2c335f.netlify.app/#h18](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18)
+
+### Product Icon Themes:
+
+### Fluent Icons
+
+A product icon theme for Visual Studio Code
+
+![](https://cdn-images-1.medium.com/max/800/0*wE_xUE1f0GU8GBGo.png)
+
+[Product icons themes](https://code.visualstudio.com/api/extension-guides/product-icon-theme) allow theme authors to customize the icons used in VS Code’s built-in views: all icons except file icons (covered by file icon themes) and icons contributed by extensions. This extension uses [Fluent Icons](https://www.figma.com/community/file/836835755999342788/Microsoft-Fluent-System-Icons).
+
+### Install
+
+1.  Install the icon theme from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
+2.  Open the command palette (`Ctrl/Cmd + Shift + P`) and search for `Preferences: Product Icon Theme`
+3.  Select `Fluent Icons`
+
+### TBC…
+
+---
+
+### [Monokai Oblique by pushqrdx](https://vscodethemes.com/e/pushqrdx.theme-monokai-oblique-vscode)
+
+Monokai inspired theme for [Visual Studio Code](https://vscodethemes.com/e/pushqrdx.theme-monokai-oblique-vscode) and [Visual Studio IDE](https://github.com/pushqrdx/monokai).
+
+![](https://cdn-images-1.medium.com/max/800/0*43PXQoFMOr28C7_B.png)
+
+### [Monokai Pro by monokai (commercial)](https://vscodethemes.com/e/monokai.theme-monokai-pro-vscode)
+
+Beautiful functionality for professional developers, from the author of the original Monokai color scheme.
+
+![](https://cdn-images-1.medium.com/max/800/0*qwLfKRWuJl0hLZ2m.png)
+
+### [Night Owl by Sarah Drasner](https://vscodethemes.com/e/sdras.night-owl)
+
+A VS Code theme for the night owls out there. Works well in the daytime, too, but this theme is fine-tuned for those of us who like to code late into the night. Color choices have taken into consideration what is accessible to people with color blindness and in low-light circumstances. Decisions were also based on meaningful contrast for reading comprehension and for optimal razzle dazzle. ![✨](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/2728.svg)
+
+![](https://cdn-images-1.medium.com/max/800/0*w4jwUZlACQz-ndRu.png)
+
+### [Plastic by Will Stone](https://vscodethemes.com/e/will-stone.plastic)
+
+A simple theme.
+
+![](https://cdn-images-1.medium.com/max/800/0*xr3ul5T1_CAsnyWR.png)
+
+### [Nord by arcticicestudio](https://vscodethemes.com/e/arcticicestudio.nord-visual-studio-code)
+
+An arctic, north-bluish clean and elegant Visual Studio Code theme.
+
+![](https://cdn-images-1.medium.com/max/800/0*yQMVpYfepk53HNxN.png)
+
+### [Rainglow by Dayle Rees](https://vscodethemes.com/e/daylerees.rainglow)
+
+Collection of 320+ beautiful syntax and UI themes.
+
+![](https://cdn-images-1.medium.com/max/800/0*FpJBK3DBT1FUmuLF.png)
+
+### [Relaxed Theme by Michael Kühnel](https://vscodethemes.com/e/mischah.relaxed-theme)
+
+A relaxed theme to take a more relaxed view of things.
+
+![](https://cdn-images-1.medium.com/max/800/0*bdPe8FIrL8F9qFqx.png)
+
+### [Shades of Purple by Ahmad Awais](https://vscodethemes.com/e/ahmadawais.shades-of-purple)
+
+![⚡](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26a1.svg) A professional theme with hand-picked & bold shades of purple ![💜](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f49c.svg) to go along with your VS Code. A custom VS Code theme with style.
+
+![](https://cdn-images-1.medium.com/max/800/0*lyNNDrSPE5fpaMBZ.png)
+
+### [2077 theme by Endormi](https://vscodethemes.com/e/Endormi.2077-theme)
+
+Cyberpunk 2077 inspired theme
+
+![](https://cdn-images-1.medium.com/max/800/0*1VdJDagHs-YTIicE.png)
+
+### [An Old Hope Theme by Dustin Sanders](https://vscodethemes.com/e/dustinsanders.an-old-hope-theme-vscode)
+
+VSCode theme inspired by a galaxy far far away…
+
+![](https://cdn-images-1.medium.com/max/800/0*8JZCxiWSVdupy-HQ.png)
+
+### [Ariake Dark by wart](https://vscodethemes.com/e/wart.ariake-dark)
+
+Dark VSCode theme inspired by Japanese traditional colors and the poetry composed 1000 years ago.
+
+![](https://cdn-images-1.medium.com/max/800/0*Pm8gFuyXa_xNniuP.png)
+
+### [Atom One Dark Theme by Mahmoud Ali](https://vscodethemes.com/e/akamud.vscode-theme-onedark)
+
+One Dark Theme based on Atom.
+
+![](https://cdn-images-1.medium.com/max/800/0*YBzFlHIhCnEXPKsb.png)
+
+### [Atomize by emroussel](https://vscodethemes.com/e/emroussel.atomize-atom-one-dark-theme)
+
+A detailed and accurate Atom One Dark Theme.
+
+![](https://cdn-images-1.medium.com/max/800/0*trGkLz0fLzZMjNX_.png)
+
+### [Ayu by teabyii](https://vscodethemes.com/e/teabyii.ayu)
+
+A simple theme with bright colors and comes in three versions — dark, light and mirage for all day long comfortable work.
+
+![](https://cdn-images-1.medium.com/max/800/0*YL26P4BF0Kz-0ck9.png)
+
+### [Borealis Theme by Alexander Eckert](https://vscodethemes.com/e/eckertalex.borealis)
+
+VS Code theme inspired by the calm colors of the aurora borealis in Alaska.
+
+![](https://cdn-images-1.medium.com/max/800/0*Df5XXUX50azLyP7K.png)
+
+### [Captain Sweetheart by ultradracula](https://vscodethemes.com/e/ultradracula.captain-sweetheart)
+
+Tuff but sweet theme.
+
+![](https://cdn-images-1.medium.com/max/800/0*93oi3wFSt7uH62VR.png)
+
+### [City Lights by Yummygum](https://vscodethemes.com/e/Yummygum.city-lights-theme)
+
+![🏙](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f3d9.svg) Yummygum’s Official City Lights suite
+
+![](https://cdn-images-1.medium.com/max/800/0*LwpZlufyoKuCVjqn.png)
+
+### [Cobalt2 Theme Official by Wes Bos](https://vscodethemes.com/e/wesbos.theme-cobalt2)
+
+![🔥](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f525.svg) Official theme by Wes Bos.
+
+![](https://cdn-images-1.medium.com/max/800/0*8KsnUfTVU-A9Aqcl.png)
+
+### [Dracula Official by Dracula Theme](https://vscodethemes.com/e/dracula-theme.theme-dracula)
+
+Official Dracula Theme. A dark theme for many editors, shells, and more.
+
+![](https://cdn-images-1.medium.com/max/800/0*xGaF3Cs8iHoC5gUr.png)
+
+### [Edge by Bogdan Lazar](https://vscodethemes.com/e/bogdanlazar.edge)
+
+A simple theme with bright colors in three variants — Night Sky, Serene and Ocean for all day long comfortable work.
+
+![](https://cdn-images-1.medium.com/max/800/0*qELxjfUYJNuRISgB.png)
+
+### [Eva Theme by fisheva](https://vscodethemes.com/e/fisheva.eva-theme)
+
+A colorful and semantic coloring code theme.
+
+![](https://cdn-images-1.medium.com/max/800/0*Dzw_28GVEGa10m-9.png)
+
+### [Fairy Floss by nopjmp and sailorhg](https://vscodethemes.com/e/nopjmp.fairyfloss)
+
+A fun, purple-based pastel/candy/daydream fairyfloss theme made by sailorhg.
+
+![](https://cdn-images-1.medium.com/max/800/0*wJkmVL0w1tz4n4_H.png)
+
+### [GitHub Theme by Thomas Pink](https://vscodethemes.com/e/thomaspink.theme-github)
+
+GitHub Theme for Visual Studio Code.
+
+![](https://cdn-images-1.medium.com/max/800/0*H4ZAOtLrAniVho93.png)
+
+### [Jellybeans Theme by Dimitar Nonov](https://vscodethemes.com/e/DimitarNonov.jellybeans-theme)
+
+Jellybeans Theme for Visual Studio Code.
+
+![](https://cdn-images-1.medium.com/max/800/0*oMhZGGsUfm8rqLtJ.png)
+
+### [Material Palenight Theme by whizkydee](https://vscodethemes.com/e/whizkydee.material-palenight-theme)
+
+An elegant and juicy material-like theme for Visual Studio Code.
+
+![](https://cdn-images-1.medium.com/max/800/0*cw3IGUQSFahiPgiH.png)
+
+### [Material Theme by Mattia Astorino](https://vscodethemes.com/e/Equinusocio.vsc-material-theme)
+
+The most epic theme now for Visual Studio Code.
+
+![](https://cdn-images-1.medium.com/max/800/0*2YvsABxfZ4Cv1Y_j.png)
+
+### [Mno by u29dc](https://vscodethemes.com/e/u29dc.mno)
+
+Minimal monochrome theme.
+
+![](https://cdn-images-1.medium.com/max/800/0*_NT4CQBGRRlFQl9q.png)
+
+### [Slime Theme by smlombardi](https://vscodethemes.com/e/smlombardi.slime)
+
+A dark syntax/workbench theme for Visual Studio Code — optimized for SCSS, HTML, JS, TS, Markdown, and PHP files.
+
+![](https://cdn-images-1.medium.com/max/800/0*-ldv4DoOVntnZbBt.png)
+
+### [Niketa Theme by Dejan Toteff](https://vscodethemes.com/e/selfrefactor.niketa-theme)
+
+Collection of 18 light themes separated in 4 groups by background’s brightness.
+
+![](https://cdn-images-1.medium.com/max/800/0*n_iRSy_1IDOgajFu.png)
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+### Or Checkout my personal Resource Site:
+
+> \==> currently under development & very buggy
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+### Object-Oriented Programming
+
+![](https://cdn-images-1.medium.com/max/800/0*56wmllZ_9pRe28TK.jpg)
+
+### Overview:
+
+#### `Encapsulation`
+
+-   The mechanism that puts behavior and data together behind methods that hide the specific implementation of a class.
+
+#### How can a `CommonJS Module import functionality` from another module?
+
+-   Through the use of the require function.
+
+#### How can an ES6 module import functionality from another module?
+
+-   Through the use of the import-from syntax that looks like this:
+-   `import SymbolName from './relative-path.js';`
+
+#### How do `CommonJS Modules` allow other modules to access exported symbols?
+
+-   Through the use of the module.exports property.
+
+#### How do `ES6 Modules export` functionality so other modules can use them?
+
+-   Through the use of the export keyword.
+
+#### `Implementation inheritance`
+
+-   The data and methods defined on a parent class are available on objects created from classes that inherit from those parent classes
+
+#### `Inheritance`
+
+-   The mechanism that passes traits of a parent class to its descendants.
+
+#### `Prototypal inheritance`
+
+-   A method of realizing implementation inheritance through process of finding missing properties on an object by delegating the resolution to a prototype object.
+
+#### `The constructor method`
+
+-   The special method of a class that is called to initialize an object when code uses the new keyword to instantiate an object from that class.
+
+#### `The Dependency Inversion Principle`
+
+-   Functionality that your class depends on should be provided as parameters to methods rather than using new in the class to create a new instance of a dependency.
+
+#### The `extends` keyword
+
+-   The keyword in JavaScript that allows one class to inherit from another.
+
+#### `The Interface Segregation Principle`
+
+-   Method names should be grouped together into granular collections called “interfaces”
+
+#### `The Law Of Demeter`
+
+-   Don’t use more than one dot (not counting the one after “this”).
+-   A method of an object can only invoke the methods (or use the properties) of the following kinds of objects: Methods on the object itself Any of the objects passed in as parameters to the method And object created in the method Any values stored in the instance variables of the object Any values stored in global variables
+
+#### `The Liskov Substitution Principle`
+
+-   You can substitute child class objects for parent class objects and not cause errors.
+
+#### `The Open-Close Principle`
+
+-   A class is open for extension and closed for modification.
+
+#### `The Single-Responsibility Principle`
+
+-   Any one of the following:
+-   A class should do one thing and do it well.
+-   A class should have only one reason to change.
+-   Gather together the things that change for the same reasons. Separate those things that change for different reasons.
+
+---
+
+### Background:
+
+### Constructor Functions
+
+Defining a constructor function _Example of an object using object initialization_
+
+const fellowshipOfTheRing = {  
+ title: "The Fellowship of the Ring",  
+ series: "The Lord of the Rings",  
+ author: "J.R.R. Tolkien",  
+};
+
+-   The above literal is a “Book” object type.
+-   `Object Type` is defined by it’s attributes and behaviors.
+
+> `**Behaviors**` **are represented by methods.**
+
+-   `Constructor Functions` : Handle the creation of an object – it’s a factory for creating objects of a specific type.
+-   There are a few specific things to constructors worth noting:
+-   **_The name of the constructor function is capitalized_**
+-   The Function _does not explicitly return a value_
+-   Within the body, the _this_ keyword references the newly created object
+
+function Book(title, series, author) {  
+ this.title = title;  
+ this.series = series;  
+ this.author = author;  
+}
+
+### Invoking a constructor function
+
+-   We can invoke a constructor function using the `new` keyword.
+
+function Book(title, series, author) {  
+ this.title = title;  
+ this.series = series;  
+ this.author = author;  
+}
+
+const fellowshipOfTheRing = new Book(  
+ "The Fellowship of the Ring",  
+ "The Lord of the Rings",  
+ "J.R.R. Tolkien"  
+);
+
+console.log(fellowshipOfTheRing); // Book { title: 'The Fellowship of the Ring', ... }
+
+### _Four Things will happen when invoking a constructor function_
+
+1.  A new empty object is created {};
+2.  The new obj’s `prototype` is set to the object referenced by the constructors prototype property.
+3.  `This` is bound to the new object.
+4.  The new object is returned after the constructor function has completed.
+
+### Understanding New Object Instances
+
+-   `Instance` : term to describe an objected created from a constructor function.
+-   Every instance created is a unique object and therefore not equal to each other.
+
+### Using the instanceof operator to check an object’s type
+
+console.log(fellowshipOfTheRing instanceof Book); // true
+
+-   By using the `instanceof` operator we can verify that an object was created from a certain object type.
+-   _The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator._
+
+### Invoking a constructor function without the new keyword
+
+-   If we invoke a constructor function without the `new` keyword, we may result in one of two unexpected outcomes:
+
+1.  In non-strict mode, this will be bound to the global object instead.
+2.  In `strict` mode, this will become undefined.
+
+-   You can enable strict mode by typing `"use strict"` at the top of your file.
+
+### Defining Sharable Methods
+
+-   _Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it’s own method definition._
+-   `Prototype` : An object that is delegated to when a reference to an object property or method can’t be resolved.
+-   Every instance created by a constructor function shares the same prototype.
+-   `Object.setPrototypeOf()` and `Object.getPrototypeOf()` are just used to set a prototype of one object to another object; and also the verify a prototype.
+-   `proto` : aka “dunder proto” is a property used to gain easy access to an object’s prototype – it is widely supported by browsers but is considered deprecated.
+
+function Book(title, series, author) {  
+ this.title = title;  
+ this.series = series;  
+ this.author = author;  
+}
+
+// Any method defined on the \`Book.prototype\` property  
+// will be shared across all \`Book\` instances.  
+Book.prototype.getInformation = function () {  
+ return \`${this.title} by ${this.author}\`;  
+};
+
+const fellowshipOfTheRing = new Book(  
+ "The Fellowship of the Ring",  
+ "The Lord of the Rings",  
+ "J.R.R. Tolkien"  
+);
+
+console.log(fellowshipOfTheRing.getInformation());
+
+-   Every method we define on a constructor function’s prototype property will be shared across all instances of that object type.
+
+The Problem with Arrow Functions
+
+-   We cannot use arrow functions when defining methods on a constructor function’s prototype property.
+-   Arrow functions don’t include their own this binding; therefore it will not reference the current instance — always stick with the function () keyword.
+
+---
+
+### Putting the Class in JavaScript Classes
+
+In ES2015, JS gained the `class` keyword – replacing the need to use only constructor functions & prototypes to mimic classes!
+
+-   `class` : keyword that gives developers a formal way to create a class definition to specify an object type’s attributes and behavior; also used to create objects of that specific type.
+
+Defining a ES2015 class
+
+class Book {  
+ constructor(title, series, author) {  
+ this.title = title;  
+ this.series = series;  
+ this.author = author;  
+ }  
+}
+
+-   Class names also begin only with capital letters.
+-   Although not required, class definitions can include a `class constructor function` – these are similar to regular constructors in that:
+-   They don’t explicitly return a value.
+-   The this keyword references the newly created object instance.
+
+### Instantiating an instance of a class
+
+> We can also use the `new`.
+
+### Four things occur when instantiating an instance of a class:
+
+1.  New empty object is created {};
+2.  The new obj’s prototype is set to the class prototype’s property value.
+3.  `This` is bound to the new object.
+4.  After the constructor method has completed, the new obj is returned.
+
+-   **Don’t try to instatiate a class object without the new keyword.**
+
+#### Class Definitions are NOT hoisted
+
+test();
+
+function test() {  
+ console.log("This works!");  
+}
+
+-   In JS you can call a function before it’s declared — this is known as `hoisting`.
+-   Class definitions are **NOT hoisted,** so just get in the habit of declaring them before you use them.
+
+Defining Methods
+
+-   A class can contain two types of methods:
+-   `Instance Method` : Methods that are invoked on an instance of the class – useful for performing an action on a specific instance.
+-   Instance methods are also sometimes referred to as `prototype` methods because they are defined on a shared prototype object.
+-   `Static Method` : Methods that invoked directly on a class, not on an instance.
+-   `Important`: Invoking a static method on an instance will result in a runtime error.
+-   Prepending the `static` keyword at the beginning on the method name will make it static.
+
+class Book {  
+ constructor(title, series, author) {  
+ this.title = title;  
+ this.series = series;  
+ this.author = author;  
+ }
+
+// Notice the use of a rest parameter (...books)  
+ // to capture the passed parameters as an array of values.  
+ static getTitles(...books) {  
+ return books.map((book) => book.title);  
+ }
+
+getInformation() {  
+ return \`${this.title} by ${this.author}\`;  
+ }  
+}
+
+const fellowshipOfTheRing = new Book(  
+ "The Fellowship of the Ring",  
+ "The Lord of the Rings",  
+ "J.R.R. Tolkien"  
+);
+
+const theTwoTowers = new Book(  
+ "The Two Towers",  
+ "The Lord of the Rings",  
+ "J.R.R. Tolkien"  
+);
+
+const bookTitles = Book.getTitles(fellowshipOfTheRing, theTwoTowers);
+
+console.log(bookTitles.join(", ")); // The Fellowship of the Ring, The Two Towers
+
+-   If we go back to an example of how constructor functions also use static methods — we see that static methods are *defined directly on the constructor function* — whereas instance methods need to be defined on the _prototype_ object.
+
+function Book(title, series, author) {  
+ this.title = title;  
+ this.series = series;  
+ this.author = author;  
+}
+
+// Static methods are defined  
+// directly on the constructor function.  
+Book.getTitles = function (...books) {  
+ return books.map((book) => book.title);  
+};
+
+// Instance methods are defined  
+// on the constructor function's \`prototype\` property.  
+Book.prototype.getInformation = function () {  
+ return \`${this.title} by ${this.author}\`;  
+};
+
+const fellowshipOfTheRing = new Book(  
+ "The Fellowship of the Ring",  
+ "The Lord of the Rings",  
+ "J.R.R. Tolkien"  
+);
+
+const theTwoTowers = new Book(  
+ "The Two Towers",  
+ "The Lord of the Rings",  
+ "J.R.R. Tolkien"  
+);
+
+console.log(fellowshipOfTheRing.getInformation()); // The Fellowship of the Ring by J.R.R. Tolkien
+
+console.log(theTwoTowers.getInformation()); // The Two Towers by J.R.R. Tolkien
+
+// Call the static \`Book.getTitles()\` method  
+// to get an array of the book titles.  
+const bookTitles = Book.getTitles(fellowshipOfTheRing, theTwoTowers);
+
+console.log(bookTitles.join(", ")); // The Fellowship of the Ring, The Two Towers
+
+### Comparing Classes to Constructor Functions
+
+> _ES2015 Classes are essentially_ **_syntactic sugar_** _over traditional constructor functions and prototypes._
+
+---
+
+### Javascript Inheritance
+
+-   `Child Class` : Class that is based upon another class and inherits properties and methods from that other class.
+-   `Parent Class` : Class that is being inherited downwards.
+-   `Inheritance` : The process of basing a class upon another class.
+
+class CatalogItem {  
+ constructor(title, series) {  
+ this.title = title;  
+ this.series = series;  
+ }
+
+getInformation() {  
+ if (this.series) {  
+ return \`${this.title} (${this.series})\`;  
+ } else {  
+ return this.title;  
+ }  
+ }  
+}
+
+class Book extends CatalogItem {  
+ constructor(title, series, author) {  
+ super(title, series);  
+ this.author = author;  
+ }  
+}
+
+class Movie extends CatalogItem {  
+ constructor(title, series, director) {  
+ super(title, series);  
+ this.director = director;  
+ }  
+}
+
+const theGrapesOfWrath = new Book(  
+ "The Grapes of Wrath",  
+ null,  
+ "John Steinbeck"  
+);  
+const aNewHope = new Movie(  
+ "Episode 4: A New Hope",  
+ "Star Wars",  
+ "George Lucas"  
+);
+
+console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath  
+console.log(aNewHope.getInformation()); // Episode 4: A New Hope (Star Wars)  
+console.log(Catalogitem instanceof Function); // true  
+console.log(Book instanceof Function); // true
+
+-   A `prototype chain` defines a series of prototype objects that are delegated to one by one, when a property or method can’t be found on an instance object.
+
+console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath
+
+-   When the `getInformation()` method is invoked:
+-   JS looks for get() on the current object.
+-   If it isn’t found, the method call is delegated to the object’s prototype.
+-   It continues up the prototype chain until the method is found.
+
+Overriding a method in a parent class
+
+-   `Method Overriding` : when a child class provides an implementation of a method that’s already defined in a parent class.
+
+class Movie extends CatalogItem {  
+ constructor(title, series, director) {  
+ super(title, series);  
+ this.director = director;  
+ }
+
+getInformation() {  
+ let result = super.getInformation();
+
+    if (this.director) {
+      result += \` \[directed by ${this.director}\]\`;
+    }
+
+    return result;
+
+}  
+}
+
+-   We can simply declare our own method of the same name in our child class to override our parent’s version of `getInformation()`
+
+---
+
+### JavaScript Modules
+
+Introducing Node.js modules
+
+-   In Node.js, each JS file in a project defines a `module`.
+-   Module’s contents are private by default.
+-   `Local Modules` : Modules defined within your project.
+-   `Core Modules` : Native modules contained within Node.js that you can use to perform tasks or to add functionality to your application.
+-   `CommonJS` : A legacy module system.
+-   `ES Modules` : Newer module sysem that will eventually replace CommonJS.
+-   `Entry Point` : JS File that is passed to Node for access to the entire application.
+
+### Syntax for exporting modules:
+
+**module.exports.Book = Book; module.exports.Movie = Movie;**
+
+**module.exports = { Book, Movie, };**
+
+#### Syntax for importing modules:
+
+**const classes = require(“./classes”);**
+
+**const { Book, Movie } = require(“./classes”);**
+
+#### Using Single Item Modules
+
+-   Following the convention of a single exported item per module helps to keep modules focused and less likely to become bloted with too much code.
+
+#### Understanding Module Loading
+
+-   When loading a module, Node will examine the identifier passed to the require() function to determine if our module is local, core, or third-party:
+-   `Local Module`: identifier starts with ./ ../ or /
+-   `Node.js Core`: identifier matches name
+-   `Third-Party`: identifier matches a module in the node modules folder (installed package)
+
+---
+
+### `Encapsulation`
+
+-   Puts the behavior and data together behind methods that hide the specific implementation so that code that uses it doesn’t need to worry about the details of it.
+
+### `Inheritance`
+
+-   `**Implementation Inheritance**` **:** Means that data and methods defined on a parent class are available on objects created from classes that inherit from those parent classes.
+-   `**Prototypal Inheritance**` : Means that JS uses prototype objects to make its `**implementation inheritance**` actually work.
+-   Parent Class === Prototype === Super Class === Base Class
+-   Inheritance === Subtyping
+
+class MyClass {}
+
+// is the same as  
+class MyClass extends Object {}
+
+-   **When you declare a class with no explicit parent class, JS will make it a child of Object.**
+
+class Charity {}
+
+class Business {  
+ toString() {  
+ return "Give us your money.";  
+ }  
+}
+
+class Restaurant extends Business {  
+ toString() {  
+ return "Eat at Joe's!";  
+ }  
+}
+
+class AutoRepairShop extends Business {}
+
+class Retail extends Business {  
+ toString() {  
+ return "Buy some stuff!";  
+ }  
+}
+
+class ClothingStore extends Retail {}
+
+class PhoneStore extends Retail {  
+ toString() {  
+ return "Upgrade your perfectly good phone, now!";  
+ }  
+}
+
+console.log(new PhoneStore().toString()); // 'Upgrade your perfectly good phone, now!'  
+console.log(new ClothingStore().toString()); // 'Buy some stuff!';  
+console.log(new Restaurant().toString()); // 'Eat at Joe\\'s!'  
+console.log(new AutoRepairShop().toString()); // 'Give us your money.'  
+console.log(new Charity().toString()); // \[object object\]
+
+#### The nuts and bolts of prototypal inheritance
+
+![](https://cdn-images-1.medium.com/max/800/0*FCIE6k4O9X8f9CbR)
+
+-   When JavaScript uses a property (or method) from a prototype that it found through prototypal inheritance, then the this property points to the original object on which the first call was made.
+
+class Parent {  
+ constructor() {  
+ this.name = "PARENT";  
+ }  
+ toString() {  
+ return \`My name is ${this.name}\`;  
+ }  
+}
+
+class Child extends Parent {  
+ constructor() {  
+ super();  
+ this.name = "CHILD";  
+ }  
+}
+
+const parent = new Parent();  
+console.log(parent.toString()); // my name is Parent
+
+const child = new Child();  
+console.log(child.toString()); // my name is Child
+
+### Polymorphism
+
+-   The ability to treat an object as if it were an instance of one of its parent classes.
+
+---
+
+### The SOLID Principles Explained
+
+SOLID is an anagram for:
+
+-   `The Single-Responsibility Principle`
+-   `The Open-Close Principle`
+-   `The Liskov Substitution Principle`
+-   `The Interface Segregation Principle`
+-   `The Dependency Inversion Principle`
+
+### `Single-Responsibility Principle`
+
+> _A class should do one thing and do it well_
+
+-   This principle is about limiting the impact of change.
+
+### `The Liskov Substitution Principle:`
+
+_Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T. Then ϕ(y) should be true for objects y of type S where S is a subtype of T._
+
+> _You can substitute child class objects for parent class objects and not cause errors._
+
+`The Other Three`
+
+-   The remaining three principles are important for languages that have `static typing` – which means a variable can have only one kind of thing in it.
+-   `Open-Close Principle`
+-   A class is open for extension and closed for modification.
+-   Creating new functionality can happen in child classes, and not the original class.
+-   `Interface Segregation Principle`
+-   Method names should be grouped together into granular collections called “interfaces”.
+-   `Dependency Inversion Principle`
+-   Functionality that your class depends on should be provided as parameters to methods rather than using new in the class to create a new instance.
+
+### Controlling Coupling with The Law of Demeter
+
+-   `Coupling` : The degree of interdependence between two or more classes.
+-   The fewer the connections between classes, the less chance there is for the _ripple effect_.
+-   Here is the formal definition:
+-   A method of an object can only invoke the methods (or use the properties) of the following kind of objects:
+-   Methods on the object itself.
+-   Any of the objects passed in as parameters to the method.
+-   Any object created in the method.
+-   Any values stores in the instance variables of the object.
+-   Any values stored in global variables.
+-   Law of Demeter is more so of a guideline than a law.
+-   Easiest way to implement it is to _not us more than one dot_
+-   You cannot cheat by separating extra calls onto different lines.
+
+### When to ignore the Law of Demeter
+
+-   When you work with objects that come from code that you didn’t create — you will often have to break the LoD.
+
+document  
+ .getElementById("that-link")  
+ .addEventListener("click", (e) => e.preventDefault());
+
+-   This breaks the law but there is way about it because your code needs to know about both elements and you have to use the API provided by the DOM.
+-   UI’s will break LoD because they are not object-oriented programs.
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+### Or Checkout my personal Resource Site:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+#### [CODEX](http://medium.com/codex)
+
+### Explanation for Rotate Right
+
+![](https://cdn-images-1.medium.com/max/1200/0*3_vbGvHeWOgSTxk7.png)
+
+### Question
+
+Write a function `rotateRight(array, num)` that takes in an array and a number as arguments.
+
+> The function should return a new array where the elements of the array are rotated to the right number times.  
+> The function should not mutate the original array and instead return a new array.
+
+> Define this function using `[_function expression syntax_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)`[.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
+
+**HINT:** you can use [Array#slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) to create a copy of an array
+
+---
+
+> JavaScript gives us four methods to add or remove items from the beginning or end of arrays:
+
+### pop(): Remove an item from the end of an array
+
+    let cats = ['Bob', 'Willy', 'Mini'];
+
+    cats.pop(); // ['Bob', 'Willy']
+
+> pop() returns the removed item.
+
+### push(): Add items to the end of an array
+
+    let cats = ['Bob'];
+
+    cats.push('Willy'); // ['Bob', 'Willy']
+
+    cats.push('Puff', 'George'); // ['Bob', 'Willy', 'Puff', 'George']
+
+> push() returns the new array length.
+
+### shift(): Remove an item from the beginning of an array
+
+    let cats = ['Bob', 'Willy', 'Mini'];
+
+    cats.shift(); // ['Willy', 'Mini']
+
+> shift() returns the removed item.
+
+### unshift(): Add items to the beginning of an array
+
+    let cats = ['Bob'];
+
+    cats.unshift('Willy'); // ['Willy', 'Bob']
+
+    cats.unshift('Puff', 'George'); // ['Puff', 'George', 'Willy', 'Bob']
+
+> unshift() returns the new array length.
+
+**We are being asked for two things:**
+
+1.  To return an array with all the elements shifted over ‘num’ times.
+2.  To `NOT` mutate the original array
+
+**Step 1.**  
+We need to start the function and create a variable to hold a COPY of our input array.
+
+[https://gist.github.com/bgoonz/ca7a48c316345f6f7acd9383e13fb23e](https://gist.github.com/bgoonz/ca7a48c316345f6f7acd9383e13fb23e)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+
+-   We assign array.slice(0) to a variable called result.
+-   Slicing our input array simply creates a sliced copy of the data.
+-   Remember that by excluding a second argument in our slice parameter allows us to slice from the first argument all the way to the end.
+
+**Step 2.**  
+We need to create a for loop to tell our function how many times we want to rotate.
+
+[https://gist.github.com/bgoonz/b2a934289a677f337a72bcd7751a55df](https://gist.github.com/bgoonz/b2a934289a677f337a72bcd7751a55df)
+
+-   By setting our second delimiter to i < num we will ask our loops to run num times.
+-   Running num times is the same as executing the code block within num times.
+
+**Step 3.**  
+We need to put some executable code within our for loop to be run during every cycle.
+
+[https://gist.github.com/bgoonz/44e66960ba5cc0ffe04ea0499f7c3134](https://gist.github.com/bgoonz/44e66960ba5cc0ffe04ea0499f7c3134)
+
+-   Since we are rotating to the right, every change to our result array under the hood will look like this (if we ref. our first test case):
+-   `['a', 'b', 'c', 'd', 'e'];` (how it looks like at the start)
+-   `['e', 'a', 'b', 'c', 'd'];` (after one run of the for loop)
+-   `['d', 'e', 'a', 'b', 'c'];` (after second/last run of the for loop)
+-   To accomplish this we first need to ‘`pop`‘ off or remove our last element.
+-   Two things happen when we use this built-in function.
+-   Our copied array is mutated to lose it’s last ele.
+-   The removed element is stored in the variable we assigned to the function.
+-   Our second step is to add it to the start of our array, to do this we can use `unshift`.
+-   By inputting the variable we are using to hold our removed element into the parameter of unshift we are adding our element to the front of the array.
+
+**Step 4.**
+
+Now that our for loop has ended and our copied array looks just like how the answer looks, we need to output the answer.
+
+[https://gist.github.com/bgoonz/b033f820c35869af0869ce712af68bda](https://gist.github.com/bgoonz/b033f820c35869af0869ce712af68bda)
+
+-   We accomplish this by creating a `return` line AFTER the for loop.
+
+### End Result
+
+[https://gist.github.com/bgoonz/4e2a040cd94006bb887a77a68f4287b9](https://gist.github.com/bgoonz/4e2a040cd94006bb887a77a68f4287b9)
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+
+### Or Checkout my personal Resource Site:
+
+### **\==>currently under development & very buggy**
+
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+
+#### What is HTML, CSS & JS and why do we need all three?
+
+![](https://cdn-images-1.medium.com/max/800/0*KxF-AuqgX7UklUa4.png)
+
+HTML stands for “Hypertext Markup Language”. Basically, HTML is the structure for the website, words, bullet points, data tables, etc. CSS stands for “Cascading Style Sheets” which means it’s the “Style” it’s how to make your website look professional, and look visually appealing. JS is how to make your website actually \*\*work\*\*.
+
+For example, if you created something like YouTube and one of the options you can watch videos, you used HTML for the title, you used CSS for the color/s, and you have to make it actually work! So when you click on it it will run the video. This is an example of the three programming languages working in unison to form an experience you’re already familiar with if you’re reading this…
+
+**I mean most likely… unless you printed it because you hate trees.**
+
+— — — — — — — — — — -
+
+### What are Tags and Attributes?
+
+Tags and attributes are the basis of HTML.
+
+They work together but perform different functions — it is worth investing 2 minutes in **differentiating the two**.
+
+#### What Are HTML Tags?
+
+[Tags](https://html.com/tags/) are used to **mark up the start of an HTML element** and they are usually enclosed in angle brackets. An example of a tag is: `<h1>`.
+
+Most tags must be opened `<h1>` and closed `</h1>` in order to function.
+
+#### What are HTML Attributes?
+
+[Attributes](https://html.com/attributes/) contain **additional pieces of information**. Attributes take the form of an opening tag and additional info is **placed inside**.
+
+An example of an attribute is:
+
+`<img src="mydog.jpg" alt="A photo of my dog.">`
+
+In this instance, the image source (src) and the alt text (alt) are attributes of the `<img>` tag.
+
+#### Golden Rules To Remember
+
+1.  The vast majority of tags must be **opened** (`<tag>`) and **closed** (`</tag>`) with the element information such as a title or text resting between the tags.
+2.  When using multiple tags, the tags must be **closed in the order in which they were opened**. For example:
+3.  `<strong><em>This is really important!</em></strong>`
+
+Let’s have a look at how CodePen works, firstly, you need to go to their website. After that, you must create an account. After you do that, You will see something like this
+
+### How to get started
+
+If you’re using Visual Studio Code, congrats! There is Emmet support built into VSCode, so you won’t need to install any extensions. If you’re working in Atom you’ll need to install the Emmet plugin, which can be [found here](https://atom.io/packages/emmet).
+
+### Basic Syntax
+
+**_HTML Boilerplate_**
+
+If you’ve been working in VSCode, you’ve probably seen Emmet syntax highlighting when working in HTML documents. In my opinion, the most convenient Emmet shortcut is **_html:5_**. This will create an HTML boilerplate, and fill out metadata tags in the head of your document.
+
+**html:5**
+
+![](https://cdn-images-1.medium.com/max/800/0*oDrxfgtO2WE9_Z6d.png)
+
+Emmet Abbreviation for different HTML boilerplates.
+
+**When you see the auto complete as pictured above you can hit tab to auto fill the boilerplate html document.**
+
+That one small shortcut autogenerates all this metadata and head and body tags:
+
+![](https://cdn-images-1.medium.com/max/800/0*LgiaI-W7QB4mtifR.png)
+
+#### Here’s some slightly more advanced boilerplate for you to use as a starting point in your projects.
+
+[https://gist.github.com/bgoonz/b0aae5c4079596820e37c98265f45539](https://gist.github.com/bgoonz/b0aae5c4079596820e37c98265f45539)
+
+### HTML Language
+
+**Chapter 1: Formatting text**
+
+**Tags in HTML:** Tags are one of the most important parts in an HTML document. (We will get to what HTML document is after we know what tags are). HTML uses some predefined tags which tells the browser about content display property, that is how to display a particular given content. For Example, to create a paragraph, one must use the paragraph tags(<p> </p>) and to insert an image one must use the img tags(<img />).
+
+There are generally two types of tags in HTML:
+
+1.  **Paired tags:** These tags come in pairs. That is they have both opening (< >) and closing(</ >) tags.
+2.  **Singular tags:** These tags do not required to be closed
+
+> i.e.
+
+<hr>   
+<p> The tag above me is a horizontal line that doesn't need a closing tag </p>
+
+HTML tags have two main types: **block-level** and **inline tags**.
+
+1.  Block-level elements take up the full available space and always start a new line in the document. Headings and paragraphs are a great example of block tags.
+2.  Inline elements only take up as much space as they need and don’t start a new line on the page. They usually serve to format the inner contents of block-level elements. Links and emphasized strings are good examples of inline tags.
+
+### Block-Level Tags
+
+The three block level tags every HTML document needs to contain are **<html>**, **<head>**, and **<body>**.
+
+1.  The **<html></html>** tag is the highest level element that encloses every HTML page.
+2.  The **<head></head>** tag holds meta information such as the page’s title and charset.
+3.  Finally, the **<body></body>** tag encloses all the content that appears on the page.
+
+-   Paragraphs are enclosed by **_<p></p>_**, while blockquotes use the **_<blockquote></blockquote>_** tag.
+-   Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the **_<div></div>_** tag. A div element can contain another div tag inside it as well.
+-   You may also use **_<ol></ol>_** tags for ordered lists and **_<ul></ul>_** for unordered ones. Individual list items must be enclosed by the **_<li></li>_** tag. For example, this is how a basic unordered list looks like in HTML:
+
+1.  **<ul>**
+2.  **<li>**List item 1**</li>**
+3.  **<li>**List item 2**</li>**
+4.  **<li>**List item 3**</li>**
+5.  **</ul>**
+
+### **Structure of an HTML Document**
+
+An HTML Document is mainly divided into two parts:
+
+-   **HEAD**: This contains the information about the HTML document. For Example, Title of the page, version of HTML, Meta-Data etc.
+
+HTML TAG Specifies an html document. The HTML element (or HTML root element) represents the root of an HTML document. All other elements must be descendants of this element. Since the element is the first in a document, it is called the root element.
+
+Although this tag can be implied, or not required, with HTML, it is required to be opened and closed in XHTML.
+
+-   Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the **_<div></div>_** tag. A div element can contain another div tag inside it as well.
+-   You may also use **_<ol></ol>_** tags for ordered lists and **_<ul></ul>_** for unordered ones. Individual list items must be enclosed by the **_<li></li>_** tag. For example, this is how a basic unordered list looks like in HTML:
+
+1.  **<ul>**
+2.  **<li>**List item 1**</li>**
+3.  **<li>**List item 2**</li>**
+4.  **<li>**List item 3**</li>**
+5.  **</ul>**
+
+### Inline Tags
+
+Many inline tags are used to format text. For example, a **<strong></strong>** tag would render an element in **bold**, whereas _<em></em>_ tags would show it in _italics_.
+
+Hyperlinks are also inline elements that require **_<a></a>_** tags and **href** attributes to indicate the link’s destination:
+
+1.  **<a** **href=**”https://example.com/”**\>**Click me!**</a>**
+
+Images are inline elements too. You can add one using **_<img>_** without any closing tag. But you will also need to use the **_src_** attribute to specify the image path, for example:
+
+1.  **<img** **src=**”/images/example.jpg” **alt=**”Example image”**\>**
+
+#### **BODY**: This contains everything you want to display on the Web Page.
+
+<body>
+
+<! — Everything the user sees on the webpage goes here! — ps… this is a comment →
+
+</body>
+
+Let us now have a look on the basic structure of HTML. That is the code which is must for every webpage to have:
+
+**_<!DOCTYPE html>_**
+
+#### Here is some boilerplate html you can use as a starting point:!!Every Webpage must contain this code.!!
+
+---
+
+### **<!DOCTYPE html>**
+
+---
+
+Below is the complete explanation of each of the tags used in the above piece of HTML code:
+
+**<!DOCTYPE html>:** This tag is used to tells the HTML version. This currently tells that the version is HTML 5.
+
+> **_<html>_:** This is called HTML root element and used to wrap all the code.
+
+> **<head>:** Head tag contains metadata, title, page CSS etc. All the HTML elements that can be used inside the <head> element are:
+
+> **<body>:** Body tag is used to enclosed all the data which a web page has from texts to links. All of the content that you see rendered in the browser is contained within this element.
+
+### Bold Text:
+
+<b> **this is bold** </b>
+
+<strong> ⇐ this is for strong, emergency emotions.
+
+\_\_\_\_\_\_\_\_\_\_\_
+
+**HEADING/S:**
+
+_6 types from largest(h1) to smallest (h6)_
+
+<h1> <h2> <h3> <h4> <h5> <h6>
+
+\_\_\_\_\_\_\_\_\_\_\_
+
+**ITALICS:** There are two ways to use it, the first one is the <i> tag and the second one is the <em> tag. They both italicize the text[![🤷](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f937.svg)](https://emojipedia.org/person-shrugging/)
+
+<i> _this is fancy text that’s too good to for us_</i>
+
+\_\_\_\_\_\_\_\_\_\_\_
+
+**PARAGRAPHS:** In order to make Paragraphs, just add <p>.
+
+<p> Hi there my name is Jason. </p>
+
+\_\_\_\_\_\_\_\_\_\_\_
+
+**TITLES: not the same thing as a heading (which renders on the html page) but instead the title element represents the title of the page as shown in the tab of the browser.**
+
+<head>
+
+As such <title>This is the title</title> it is always found between <head> tags and not in the body of the page where all the content that gets rendered on the page is contained.
+
+![](https://cdn-images-1.medium.com/max/800/0*CSqPk3mD0fR-oOAb)
+
+### Here’s a handy Cheat Sheet:
+
+![](https://cdn-images-1.medium.com/max/800/0*c9Vyer_N97InJsUB.png)
+
+Below I am going to Include a gist that contains html code that uses pretty much every tag I could think of off the top of my head…
+
+If it’s not included here I promise you it’s seldom used by most webpages.
+
+Below that I will embed an image of the webpage that it renders too….
+
+that super small text at the bottom is actually one giant button:
+
+[https://gist.github.com/bgoonz/b13743e00e7684ca220f66635803a7d5](https://gist.github.com/bgoonz/b13743e00e7684ca220f66635803a7d5)
+
+![](https://cdn-images-1.medium.com/max/2560/1*gdM-6smOEc2ChCI_8_Ql_g.png)
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+### Or Checkout my personal Resource Site:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+#### [CODEX](http://medium.com/codex)
+
+**For Front end developers who like myself struggle with making the jump to fullstack.**
+
+You can access and query the data using the findByPk, findOne, and findAll methods.
+
+**Terminology:**
+
+-   [NodeJS](https://nodejs.org/en/) We re going to use this to run JavaScript code on the server. I ve decided to use the latest version of Node, v6.3.0 at the time of writing, so that we ll have access to most of the new features introduced in ES6.
+-   [Express](https://expressjs.com/) As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be building our Todo list application on.
+-   [PostgreSQL](https://www.postgresql.org/docs/9.5/static/index.html) This is a powerful open-source database that we re going to use. I ve attached an article I published on the setup below!
+
+[**PostgreSQL Setup For Windows & WSL/Ubuntu**  
+_If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will_ bryanguner.medium.com](https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089 'https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089')
+
+-   However, if you face issues while installing PostgreSQL, or you don t want to dive into installing it, you can opt for a version of PostgreSQL hosted online. I recommend [ElephantSQL](https://www.elephantsql.com/). I found it s pretty easy to get started with. However, the free version will only give you a 20MB allowance.
+-   [Sequelize](http://docs.sequelizejs.com/en/latest/) In addition, we re going to use Sequelize, which is a database [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) that will interface with the Postgres database for us.
+
+**RDBMS and Database Entities**
+
+**Define what a relational database management system is**
+
+-   RDBMS stands for Relational Database Management System
+-   A software application that you run that your programs can connect to so that they can store, modify, and retrieve data.
+-   An RDBMS can track many databases. We will use PostgreSQL, or postgres , primarily for our RDBMS and it will be able to create individual databases for each of our projects.
+
+**Describe what relational data is**
+
+-   In general, relational data is information that is connected to other pieces of information.
+-   When working with relational databases, we can connect two entries together utilizing foreign keys (explained below).
+-   In a pets database, we could be keeping track of dogs and cats as well as the toys that each of them own. That ownership of a cat to a toy is the relational aspect of relational data. Two pieces of information that can be connected together to show some sort of meaning.
+
+**Define what a database is**
+
+-   The actual location that data is stored.
+-   A database can be made up of many tables that each store specific kinds of information.
+-   We could have a pets database that stores information about many different types of animals. Each animal type could potentially be represented by a different table.
+
+**Define what a database table is**
+
+-   Within a database, a table stores one specific kind of information.
+-   The records (entries) on these tables can be connected to records on other tables through the use of foreign keys
+-   In our pets database, we could have a dogs table, with individual records
+
+**Describe the purpose of a primary key**
+
+-   A primary key is used in the database as a unique identifier for the table.
+-   We often use an id field that simply increments with each entry. The incrementing ensures that each record has a unique identifier, even if their are other fields of the record that are repeated (two people with the same name would still need to have a unique identifier, for example).
+-   With a unique identifier, we can easily connect records within the table to records from other tables.
+
+**Describe the purpose of a foreign key**
+
+-   A foreign key is used as the connector from this record to the primary key of another table s record.
+-   In our pets example, we can imagine two tables to demonstrate: a table to represent cats and a table to represent toys. Each of these tables has a primary key of id that is used as the unique identifier. In order to make a connection between a toy and a cat, we can add another field to the cat table called owner_id , indicating that it is a foreign key for the cat table. By setting a toy s owner_id to the same value as a particular cat s id , we can indicate that the cat is the owner of that toy.
+
+**Describe how to properly name things in PostgreSQL**
+
+-   Names within postgres should generally consist of only lowercase letters, numbers, and underscores.
+-   Tables within a database are plural by convention, so a table for cats would typically be cats and office locations would be office_locations (all lowercase, underscores to replace spaces, plural)
+
+**Connect to an instance of PostgreSQL with the command line tool psql**
+
+-   The psql command by default will try to connect to a database and username that matches your system s username
+-   We connect to a different database by providing an argument to the psql command
+-   psql pets
+-   To connect with a different username we can use the -U flag followed by the username we would like to use. To connect to the pets database as pets_user
+-   psql -U pets_user pets
+-   If there is a password for the user, we can tell psql that we would like a prompt for the password to show up by using the -W flag.
+-   psql -U pets_user -W pets (the order of our flags doesn t matter, as long as any arguments associated with them are together, such as pets_user directly following -U in this example)
+
+**Identify whether a user is a normal user or a superuser by the prompt in the psql shell**
+
+-   You can tell if you are logged in as a superuser or normal user by the prompt in the terminal.
+-   If the prompt shows =>, the user is a normal user
+-   If the prompt show =#, the user is a superuser
+
+**Create a user for the relational database management system**
+
+-   Within psql, we can create a user with the CREATE USER {username} {WITH options} command.
+-   The most common options we ll want to use are WITH PASSWORD ‘mypassword’ to provide a password for the user we are creating, CREATEDB to allow the user to create new databases, or SUPERUSER to create a user with all elevated permissions.
+
+**Create a database in the database management system**
+
+-   We can use the command CREATE DATABASE {database name} {options} inside psql to create a new database.
+-   A popular option we may utilize is WITH OWNER {owner name} to set another user as the owner of the database we are making.
+
+**Configure a database so that only the owner (and superusers) can connect to it**
+
+-   We can GRANT and REVOKE privileges from a database to users or categories of users.
+-   In order to remove connection privileges to a database from the public we can use REVOKE CONNECT ON DATABASE {db_name} FROM PUBLIC;, removing all public connection access.
+-   If we wanted to grant it back, or to a specific user, we could similarly do GRANT CONNECT ON DATABASE {db_name} FROM {specific user, PUBLIC, etc.};
+
+**View a list of databases in an installation of PostgreSQL**
+
+-   To list all databases we can use the \\l or \\list command in psql.
+
+**Create tables in a database**
+
+CREATE TABLE {table name} (  
+{columnA} {typeA},  
+{columnB} {typeB},  
+etc…  
+);
+
+-   The whitespace does not matter. Creating the SQL statements on multiple lines is easier to read, but just like JavaScript, they can be presented differently.
+-   One common issue is that SQL does not like trailing commas, so the last column cannot have a comma after its type in this example.
+
+**View a list of tables in a database**
+
+-   To list all database tables, use the \\dt command.
+
+**Identify and describe the common data types used in PostgreSQL**
+
+-   There are many different data types that we can use in our tables, here are some common examples:
+-   SERIAL: autoincrementing, very useful for IDs
+-   VARCHAR(n): a string with a character limit of n
+-   TEXT: doesn t have character limit, but less performant
+-   BOOLEAN: true/false
+-   SMALLINT: signed two-byte integer (-32768 to 32767)
+-   INTEGER: signed four-byte integer (standard)
+-   BIGINT: signed eight-byte integer (very large numbers)
+-   NUMERIC: or DECIMAL, can store exact decimal values
+-   TIMESTAMP: date and time
+
+**Describe the purpose of the UNIQUE and NOT NULL constraints, and create columns in database tables that have them**
+
+-   In addition to the data type, we can provide flags for constraints to place on our column data.
+-   The UNIQUE flag indicates that the data for the column must not be repeated.
+-   By default we can create entries in our tables that are missing data from columns. When creating a pet, maybe we don t provide an age because we don t know it, for example. If we want to require that the data be present in order to create a new record, we can indicate that column must be NOT NULL.
+-   In the example below, we are requiring our pets to have unique names and for them to be present (both UNIQUE and NOT NULL). We have no such constraints on the age column, allowing repetition of ages or their complete absence.
+
+CREATE TABLE pets (  
+id SERIAL PRIMARY KEY,  
+name VARCHAR(255) UNIQUE NOT NULL,  
+age SMALLINT  
+);
+
+**Create a primary key for a table**
+
+-   When creating a table we can indicate the primary key by passing in the column name to parentheses like so:
+
+CREATE TABLE people (  
+id SERIAL,  
+first_name VARCHAR(50),  
+last_name VARCHAR(50),  
+PRIMARY KEY (id)  
+);
+
+-   We could have also used the PRIMARY KEY flag on the column definition itself:
+
+CREATE TABLE people (  
+id SERIAL PRIMARY KEY,  
+first_name VARCHAR(50),  
+last_name VARCHAR(50)  
+);
+
+**Create foreign key constraints to relate tables**
+
+-   In our table definition, we can use the line FOREIGN KEY (foreign_key_stored_in_this_table) REFERENCE {other table} ({other_tables_key_name}) to connect two tables.
+-   This is probably easier to see in an example:
+
+CREATE TABLE people (  
+id SERIAL PRIMARY KEY,  
+first_name VARCHAR(50),  
+last_name VARCHAR(50)  
+);
+
+CREATE TABLE pets (  
+id SERIAL PRIMARY KEY,  
+name VARCHAR(255),  
+age SMALLINT,  
+person_id INTEGER,  
+FOREIGN KEY (person_id) REFERENCES people (id)  
+);
+
+**SQL is not case sensitive for its keywords but is for its entity names**
+
+-   Exactly as the LO states, CREATE TABLE and create table are interpreted the same way. Using capitalization is a good convention in order to distinguish your keywords.
+-   The entity names that we use ARE case-sensitive, however. So a table named pets is unique from a table named Pets. In general, we prefer to use all lowercase for our entities to avoid any of this confusion.
+
+**SQL**
+
+1\. How to use the SELECT … FROM … statement to select data from a single table
+
+-   Supply the column names in the SELECT clause. If we want all columns, we can also use \*
+-   Supply the table names in the FROM clause
+
+— Selects all columns from the friends table
+
+SELECT  
+\*  
+FROM  
+friends;
+
+— Selects the first_name column from the friends table (remember whitespace is ignored)  
+SELECT name  
+FROM friends;
+
+-   Sometimes we may need to specify what table we are selecting a column from, particulurly if we had joined multiple tables together.
+
+— Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the “puppies” table. We indicate the table name by table.column  
+ — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field headers
+
+SELECT  
+friends.name AS friend_name , puppies.name AS puppy_name  
+FROM  
+friends  
+JOIN  
+puppies ON friends.puppy_id = puppies.id
+
+**How to use the WHERE clause on SELECT, UPDATE, and DELETE statements to narrow the scope of the command**
+
+-   The WHERE clause allows us to select or apply actions to records that match specific criteria instead of to a whole table.
+-   We can use WHERE with a couple of different operators when making our comparison
+-   WHERE {column} = {value} provides an exact comparison
+-   WHERE {column} IN ({value1}, {value2}, {value3}, etc.) matches any provided value in the IN statement. We can make this more complex by having a subquery inside of the parentheses, having our column match any values within the returned results.
+-   WHERE {column} BETWEEN {value1} AND {value2} can check for matches between two values (numeric ranges)
+-   WHERE {column} LIKE {pattern} can check for matches to a string. This is most useful when we use the wildcard %, such as WHERE breed LIKE ‘%Shepherd’, which will match any breed that ends in Shepherd
+-   The NOT operator can also be used for negation in the checks.
+-   Mathematical operators can be used when performing calculations or comparisons within a query as well, such as
+
+SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs > 50; — OR SELECT name, breed, age_yrs FROM puppies WHERE age_yrs \* 10 = 5;
+
+**How to use the JOIN keyword to join two (or more) tables together into a single virtual table**
+
+-   When we want to get information from a related table or do querying based on related table values, we can join the connected table by comparing the foreign key to where it lines up on the other table:
+
+— Here we are joining the puppies table on to the friends table. We are specifying that the comparison we should make is the foreign key puppy_id on the friends table should line up with the primary key id on the puppies table.
+
+SELECT  
+\*  
+FROM  
+friends  
+JOIN  
+puppies ON friends.puppy_id = puppies.id
+
+**How to use the INSERT statement to insert data into a table**
+
+-   When a table is already created we can then insert records into it using the INSERT INTO keywords.
+-   We provide the name of the table that we would like to add records to, followed by the VALUES keyword and each record we are adding. Here s an example:
+
+— We are providing the table name, then multiple records to insert  
+ — The values are listed in the order that they are defined on the table
+
+INSERT INTO table_name  
+VALUES  
+(column1_value, colum2_value, column3_value),  
+(column1_value, colum2_value, column3_value),  
+(column1_value, colum2_value, column3_value);
+
+-   We can also specify columns when we are inserting data. This makes it clear which fields we are providing data for and allows us to provide them out of order, skip null or default values, etc.
+
+— In this example, we want to use the default value for id since it is autoincremented, so we provide DEFAULT for this field
+
+INSERT INTO friends (id, first_name, last_name)  
+VALUES  
+(DEFAULT, ‘Amy’, ‘Pond’);
+
+— Alternatively, we can leave it out completely, since the default value will be used if none is provided
+
+INSERT INTO friends (first_name, last_name)  
+VALUES  
+(‘Rose’, ‘Tyler’),  
+(‘Martha’, ‘Jones’),  
+(‘Donna’, ‘Noble’),  
+(‘River’, ‘Song’);
+
+**How to use an UPDATE statement to update data in a table**
+
+-   The UPDATE keyword can be used to find records and change their values in our database.
+-   We generally follow the pattern of UPDATE {table} SET {column} = {new value} WHERE {match condition};.
+-   Without a condition to narrow our records down, we will update every record in the table, so this is an important thing to double check!
+-   We can update multiple fields as well by specifying each column in parentheses and their associated new values: UPDATE {table} SET ({column1}, {column2}) = ({value1}, {value2}) WHERE {match condition};
+
+— Updates the pet with id of 4 to change their name and breed
+
+UPDATE  
+pets  
+SET  
+(name, breed) = (‘Floofy’, ‘Fluffy Dog Breed’) WHERE id = 4;
+
+**How to use a DELETE statement to remove data from a table**
+
+-   Similar to selecting records, we can delete records from a table by specifying what table we are deleting from and what criteria we would like to match in order to delete.
+-   We follow the general structure DELETE FROM {table} WHERE {condition};
+-   The condition here is also very important! Without a condition, all records match and will be deleted.
+
+— Deletes from the pets table any record that either has a name Floofy, a name Doggo, or an id of 3.
+
+DELETE FROM  
+pets  
+WHERE  
+name IN (‘Floofy’, ‘Doggo’) OR id = 3;
+
+**How to use a seed file to populate data in a database**
+
+-   Seed files are a great way for us to create records that we want to start our database out with.
+-   Instead of having to individually add records to our tables or manually entering them in psql or postbird, we can create a file that has all of these records and then just pass this file to psql to run.
+-   Seed files are also great if we ever need to reset our database. We can clear out any records that we have by dropping all of our tables, then just run our seed files to get it into a predetermined starting point. This is great for our personal projects, testing environments, starting values for new tables we create, etc.
+-   There are two main ways we can use a seed file with psql, the < and the | operators. They perform the same function for us, just in slightly different orders, taking the content of a .sql file and executing in within the psql environment:
+-   psql -d {database} < {sql filepath}
+-   cat {sql filepath} | psql -d {database}
+
+**SQL (continued)**
+
+**How to perform relational database design**
+
+-   Steps to Designing the Database:
+-   Define the entities. What data are are you storing, what are the fields for each entity?
+-   You can think of this in similar ways to OOP (object oriented programming).
+-   If you wanted to model this information using classes, what classes would you make? Those are generally going to be the tables that are created in your database.
+-   The attributes of your classes are generally going to be the fields/columns that we need for each table.
+-   Identify primary keys. Most of the time these will be ids that you can generate as a serial field, incrementing with each addition to the database.
+-   Establish table relationships. Connect related data together with foreign keys. Know how we store these keys in a one-to-one, one-to-many, or many-to-many relationship.
+-   With a one-to-one or one-to-many relationship, we are able to use a foreign key on the table to indicate the other specific record that it is connected to.
+-   With a many-to-many relationship, each record could be connected to multiple records, so we have to create a join table to connect these entities. A record on this join table connects a record from one table to a record from another table.
+
+**How to use transactions to group multiple SQL commands into one succeed or fail operation**
+
+-   We can define an explicit transaction using BEGIN and ending with either COMMIT or ROLLBACK.
+-   If any command inside the block fails, everything will be rolled back. We can also specify that we want to roll back at the end of the block instead of committing. We saw that this can be useful when analyzing operations that would manipulate our database.
+
+BEGIN;  
+UPDATE accounts SET balance = balance — 100.00  
+WHERE name = ‘Alice’;  
+UPDATE branches SET balance = balance — 100.00  
+WHERE name = (SELECT branch_name FROM accounts WHERE name = ‘Alice’);  
+UPDATE accounts SET balance = balance + 100.00  
+WHERE name = ‘Bob’;  
+UPDATE branches SET balance = balance + 100.00  
+WHERE name = (SELECT branch_name FROM accounts WHERE name = ‘Bob’);  
+COMMIT;
+
+BEGIN;  
+EXPLAIN ANALYZE  
+UPDATE cities  
+SET city = ‘New York City’  
+WHERE city = ‘New York’;  
+ROLLBACK;
+
+**How to apply indexes to tables to improve performance**
+
+-   An index can help optimize queries that we have to run regularly. If we are constantly looking up records in a table by a particular field (such as username or phone number), we can add an index in order to speed up this process.
+-   An index maintains a sorted version of the field with a reference to the record that it points to in the table (via primary key). If we want to find a record based on a field that we have an index for, we can look through this index in a more efficient manner than having to scan through the entire table (generally O(log n) since the index is sorted, instead of O(n) for a sequential scan).
+-   To add an index to a field we can use the following syntax:
+
+CREATE INDEX index_name ON table_name (column_name);
+
+-   To drop an index we can do the following:
+
+DROP INDEX index_name
+
+-   Making an index is not always the best approach. Indices allow for faster lookup, but slow down record insertion and the updating of associated fields, since we not only have to add the information to the table, but also manipulate the index.
+-   We generally wouldn t care about adding an index if:
+-   The tables are small
+-   We are updating the table frequently, especially the associated columns
+-   The column has many NULL values
+
+**Explain what the EXPLAIN command is used for:**
+
+-   EXPLAIN gives us information about how a query will run (the query plan)
+-   It gives us an idea of how our database will search for data as well as a qualitative comparitor for how expensive that operation will be. Comparing the cost of two queries will tell us which one is more efficient (lower cost).
+-   We can also use the ANALYZE command with EXPLAIN, which will actually run the specified query. Doing so gives us more detailed information, such as the milliseconds it took our query to execute as well as specifics like the exact number of rows filtered and returned.
+
+1\. Demonstrate how to install and use the node-postgres library and its Pool class to query a PostgreSQL-managed database
+
+-   We can add the node-postgres library to our application with npm install pg. From there we will typically use the Pool class associated with this library. That way we can run many SQL queries with one database connection (as opposed to Client, which closes the connection after a query).
+
+const { Pool } = require(‘pg’);
+
+// If we need to specify a username, password, or database, we can do so when we create a Pool instance, otherwise the default values for logging in to psql are used:
+
+const pool = new Pool({ username: ‘<<username>>’, password: ‘<<password>>’, database: ‘<<database>>’})
+
+-   The query method on the Pool instance will allow us to execute a SQL query on our database. We can pass in a string that represents the query we want to run
+
+const allAirportsSql = \`  
+SELECT id, city_id, faa_id, name  
+FROM airports;  
+\`;
+
+async function selectAllAirports() {  
+const results = await pool.query(allAirportsSql);  
+console.log(results.rows);  
+pool.end(); // invoking end() will close our connection to the database  
+}
+
+selectAllAirports();
+
+-   The return value of this asynchronous function is an object with a rows key that points to an array of objects, each object representing a record with field names as keys.
+
+**Explain how to write prepared statements with placeholders for parameters of the form $1 , $2 , and so on**
+
+-   The prepared statement (SQL string that we wrote) can also be made more dynamic by allowing for parameters to be passed in.
+-   The Pool instance s query function allows us to pass a second argument, an array of parameters to be used in the query string. The location of the parameter substitutions are designated with $1, $2, etc., to signify the first, second, etc., arguments.
+
+const airportsByNameSql = \`  
+SELECT name, faa_id  
+FROM airports  
+WHERE UPPER(name) LIKE UPPER($1)  
+\`;
+
+async function selectAirportsByName(name) {  
+const results = await pool.query(airportsByNameSql, \[ \`%${name}%\` \]);  
+console.log(results.rows);  
+pool.end(); // invoking end() will close our connection to the database  
+}
+
+// Get the airport name from the command line and store it  
+// in the variable “name”. Pass that value to the  
+// selectAirportsByName function.  
+const name = process.argv\[2\];  
+// console.log(name);  
+selectAirportsByName(name);
+
+**ORM**
+
+1\. How to install, configure, and use Sequelize, an ORM for JavaScript
+
+-   To start a new project we use our standard npm initialize statement
+-   npm init -y
+-   Add in the packages we will need (sequelize, sequelize-cli, and pg)
+-   npm install sequelize@⁵.0.0 sequelize-cli@⁵.0.0 pg@⁸.0.0
+-   Initialize sequelize in our project
+-   npx sequelize-cli init
+-   Create a database user with credentials we will use for the project
+-   psql
+-   CREATE USER example_user WITH PASSWORD ‘badpassword’
+-   Here we can also create databases since we are already in postgres
+
+CREATE DATABASE example_app_development WITH OWNER example_user
+
+CREATE DATABASE example_app_test WITH OWNER example_user
+
+CREATE DATABASE example_app_production WITH OWNER example_user
+
+-   If we don t create these databases now, we could also create them after we make our changes to our config file. If we take this approach, we need to make sure our user that we created has the CREATEDB option when we make them, since sequelize will attempt to make the databases with this user. This other approach would look like:
+-   In psql: CREATE USER example_user WITH PASSWORD ‘badpassword’ CREATEDB
+-   In terminal: npx sequelize-cli db:create
+-   Double check that our configuration file matches our username, password, database, dialect, and seederStorage (these will be filled out for you in an assessment scenario):
+
+{  
+“development”: {  
+“username”: “sequelize_recipe_box_app”,  
+“password”: “HfKfK79k”,  
+“database”: “recipe_box_development”,  
+“host”: “127.0.0.1”,  
+“dialect”: “postgres”,  
+“seederStorage”: “sequelize”  
+},  
+“test”: {  
+“username”: “sequelize_recipe_box_app”,  
+“password”: “HfKfK79k”,  
+“database”: “recipe_box_test”,  
+“host”: “127.0.0.1”,  
+“dialect”: “postgres”,  
+“seederStorage”: “sequelize”  
+},  
+“production”: {  
+“username”: “sequelize_recipe_box_app”,  
+“password”: “HfKfK79k”,  
+“database”: “recipe_box_production”,  
+“host”: “127.0.0.1”,  
+“dialect”: “postgres”,  
+“seederStorage”: “sequelize”  
+}  
+}
+
+1\. How to use database migrations to make your database grow with your application in a source-control enabled way
+
+**Migrations**
+
+-   In order to make new database tables and sequelize models that reflect them, we want to generate a migration file and model file using model:generate
+
+npx sequelize-cli model:generate — name Cat — attributes “firstName:string,specialSkill:string”
+
+-   Here we are creating a migration file and a model file for a Cat. We are specifying that we want this table to have fields for firstName and specialSkill. Sequelize will automatically make fields for an id, createdAt, and updatedAt, as well, so we do not need to specify these.
+-   Once our migration file is created, we can go in and edit any details that we need to. Most often we will want to add in database constraints such as allowNull: false, adding a uniqueness constraint with unique: true, adding in character limits to fields such as type: Sequelize.STRING(100), or specifying a foreign key with references to another table references: { model: ‘Categories’ }.
+-   After we make any necessary changes to our migration file, we need to perform the migration, which will run the SQL commands to actually create the table.
+
+npx sequelize-cli db:migrate
+
+-   This command runs any migration files that have not been previously run, in the order that they were created (this is why the timestamp in the file name is important)
+-   If we realize that we made a mistake after migrating, we can undo our previous migration, or all of our migrations. After undoing them, we can make any changes necessary to our migration files (They won t be deleted from the undo, so we don t need to generate anything! Just make the necessary changes to the files that already exist and save the files.). Running the migrations again will make the tables with the updates reflected.
+
+npx sequelize-cli db:migrate:undo
+
+npx sequelize-cli db:migrate:undo:all
+
+**Models Validations and Associations**
+
+-   In addition to the migration files, our model:generate command also created a model file for us. This file is what allows sequelize to transform the results of its SQL queries into useful JavaScript objects for us.
+-   The model is where we can specify a validation that we want to perform before trying to run a SQL query. If the validation fails, we can respond with a message instead of running the query, which can be an expensive operation that we know won t work.
+
+// Before we make changes, sequelize generates the type that this field represents specification:  
+DataTypes.TEXT  
+// We can replace the generated format with an object to specify not only the type, but the validations that we want to implement. The validations can also take in messages the respond with on failure and arguments.  
+specification: {  
+ type: DataTypes.TEXT,  
+ validate: {  
+ notEmpty: {  
+ msg: 'The specification cannot be empty'  
+ },  
+ len: {  
+ args: \[10, 100\]  
+ msg: 'The specifcation must be between 10 and 100 characters'  
+ }  
+ }  
+}
+
+-   Another key part of the model file is setting up our associations. We can use the belongsTo, hasMany, and belongsToMany methods to set up model-level associations. Doing so is what creates the helpful functionality like addOwner that we saw in the pets example, a function that automatically generates the SQL necessary to create a petOwner record and supplies the appropriate petId and ownerId.
+-   In a one-to-many association, we need to have a belongsTo association on the many side, and a hasMany association on the one side:
+-   Instruction.belongsTo(models.Recipe, { foreignKey: ‘recipeId’ });
+-   Recipe.hasMany(models.Instruction, { foreignKey: ‘recipeId’ });
+-   In a many-to-many association, we need to have a belongsToMany on each side of the association. We generally specify a columnMapping object to show the association more clearly:
+
+// In our Owner model
+
+// To connect this Owner to a Pet through the PetOwner
+
+const columnMapping = {
+
+through: ‘PetOwner’,
+
+// joins table
+
+otherKey: ‘petId’,
+
+// key that connects to other table we have a many association with foreignKey: ‘ownerId’
+
+// our foreign key in the joins table
+
+}
+
+Owner.belongsToMany( models.Pet, columnMapping );
+
+// In our Pet model
+
+// To connect this Pet to an Owner through the PetOwner
+
+const columnMapping = { through: ‘PetOwner’,
+
+// joins table
+
+otherKey: ‘ownerId’,
+
+// key that connects to other table we have a many association with
+
+foreignKey: ‘petId’
+
+// our foreign key in the joins table
+
+}
+
+Pet.belongsToMany( models.Owner, columnMapping );
+
+### **How to perform CRUD operations with Sequelize**
+
+-   Seed Files
+-   Seed files can be used to populate our database with starter data.
+-   npx sequelize-cli seed:generate — name add-cats
+-   up indicates what to create when we seed our database, down indicates what to delete if we want to unseed the database.
+-   For our up, we use the queryInterface.bulkInsert() method, which takes in the name of the table to seed and an array of objects representing the records we want to create:
+
+up: (queryInterface, Sequelize) => {  
+ return queryInterface.bulkInsert('<<TableName>>', \[{  
+ field1: value1a,  
+ field2: value2a  
+ }, {  
+ field1: value1b,  
+ field2: value2b  
+ }, {  
+ field1: value1c,  
+ field2: value2c  
+ }\]);  
+}
+
+-   For our down, we use the queryInterface.bulkDelete() method, which takes in the name of the table and an object representing our WHERE clause. Unseeding will delete all records from the specified table that match the WHERE clause.
+
+// If we want to specify what to remove:  
+down: (queryInterface, Sequelize) => {  
+return queryInterface.bulkDelete(‘<<TableName>>’, {  
+field1: \[value1a, value1b, value1c\], //…etc.  
+});  
+};  
+// If we want to remove everything from the table:  
+down: (queryInterface, Sequelize) => {  
+return queryInterface.bulkDelete(‘<<TableName>>’, null, {});  
+};
+
+-   Running npx sequelize-cli db:seed:all will run all of our seeder files.
+-   npx sequelize-cli db:seed:undo:all will undo all of our seeding.
+-   If we omit the :all we can run specific seed files
+-   Inserting with Build and Create
+-   In addition to seed files, which we generally use for starter data, we can create new records in our database by using build and save, or the combined create
+-   Use the .build method of the Cat model to create a new Cat instance in index.js
+
+// Constructs an instance of the JavaScript \`Cat\` class. \*\*Does not  
+// save anything to the database yet\*\*. Attributes are passed in as a  
+// POJO.  
+const newCat = Cat.build({  
+ firstName: 'Markov',  
+ specialSkill: 'sleeping',  
+ age: 5  
+});  
+// This actually creates a new \`Cats\` record in the database. We must  
+// wait for this asynchronous operation to succeed.  
+await newCat.save();  
+// This builds and saves all in one step. If we don't need to perform any operations on the instance before saving it, this can optimize our code.  
+const newerCat = await Cat.create({  
+ firstName: 'Whiskers',  
+ specialSkill: 'sleeping',  
+ age: 2  
+})
+
+**Updating Records**
+
+-   When we have a reference to an instance of a model (i.e. after we have queried for it or created it), we can update values by simply reassigning those fields and using the save method
+
+**Deleting Records**
+
+-   When we have a reference to an instance of a model, we can delete that record by using destroy
+-   const cat = await Cat.findByPk(1); // Remove the Markov record. await cat.destroy();
+-   We can also call destroy on the model itself. By passing in an object that specifies a where clause, we can destroy all records that match that query
+-   await Cat.destroy({ where: { specialSkill: ‘jumping’ } });
+
+**How to query using Sequelize**
+
+**findAll**
+
+const cats = await Cat.findAll();  
+// Log the fetched cats.  
+// The extra arguments to stringify are a replacer and a space respectively  
+// Here we're specifying a space of 2 in order to print more legibly  
+// We don't want a replacer, so we pass null just so that we can pass a 3rd argument  
+console.log(JSON.stringify(cats, null, 2));
+
+**WHERE clause**
+
+-   Passing an object to findAll can add on clauses to our query
+-   The where key takes an object as a value to indicate what we are filtering by
+-   { where: { field: value } } => WHERE field = value
+
+const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.log(JSON.stringify(cats, null, 2));
+
+**OR in the WHERE clause**
+
+-   Using an array for the value tells sequelize we want to match any of these values
+
+{ where: { field: \[value1, value2\] } => WHERE field IN (value1, value2)
+
+const cats = await Cat.findAll({ where: { firstName: \[“Markov”, “Curie”\] } });const cats = await Cat.findAll({  
+ where: {  
+ firstName: "Markov",  
+ age: 4  
+ }  
+});  
+console.log(JSON.stringify(cats, null, 2));
+
+console.log(JSON.stringify(cats, null, 2));
+
+**AND in the WHERE clause**
+
+-   Providing additional key/value pairs to the where object indicates all filters must match
+-   { where: { field1: value1, field2: value2 } } => WHERE field1 = value1 AND field2 = value2
+
+### Sequelize Op operator
+
+-   By requiring Op from the sequelize library we can provide more advanced comparison operators
+-   const { Op } = require(“sequelize”);
+-   Op.ne: Not equal operator
+
+const cats = await Cat.findAll({  
+ where: {  
+ firstName: {  
+ // All cats where the name is not equal to "Markov"  
+ // We use brackets in order to evaluate Op.ne and use the value as the key  
+ \[Op.ne\]: "Markov"  
+ },  
+ },  
+});  
+console.log(JSON.stringify(cats, null, 2));
+
+### Op.and: and operator
+
+const cats = await Cat.findAll({  
+ where: {  
+ // The array that Op.and points to must all be true  
+ // Here, we find cats where the name is not "Markov" and the age is 4  
+ \[Op.and\]: \[{  
+ firstName: {  
+ \[Op.ne\]: "Markov"  
+ }  
+ }, {  
+ age: 4  
+ }, \],  
+ },  
+});  
+console.log(JSON.stringify(cats, null, 2));
+
+### Op.or: or operator
+
+const cats = await Cat.findAll({  
+ where: {  
+ // One condition in the array that Op.or points to must be true  
+ // Here, we find cats where the name is "Markov" or where the age is 4  
+ \[Op.or\]: \[{  
+ firstName: "Markov"  
+ }, {  
+ age: 4  
+ }, \],  
+ },  
+});  
+console.log(JSON.stringify(cats, null, 2));
+
+Op.gt and Op.lt: greater than and less than operators
+
+const cats = await Cat.findAll({ where: { // Find all cats where the age is greater than 4 age: { \[Op.gt\]: 4 }, } }, }); console.log(JSON.stringify(cats, null, 2));
+
+#### Ordering results
+
+-   Just like the where clause, we can pass an order key to specify we want our results ordered
+-   The key order points to an array with the fields that we want to order by
+-   By default, the order is ascending, just like standard SQL. If we want to specify descending, we can instead use a nested array with the field name as the first element and DESC as the second element. (We could also specify ASC as a second element in a nested array, but it is unnecessary as it is default)
+-   const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order: \[\[“age”, “DESC”\], “firstName”\], }); console.log(JSON.stringify(cats, null, 2));
+
+// Get a reference to the cat record that we want to update (here just the cat with primary key of 1)  
+const cat = await Cat.findByPk(1);  
+// Change cat's attributes.  
+cat.firstName = "Curie";  
+cat.specialSkill = "jumping";  
+cat.age = 123;  
+// Save the new name to the database.  
+await cat.save();
+
+-   Limiting results
+-   We can provide a limit key in order to limit our results to a specified number
+
+const cats = await Cat.findAll({  
+ order: \[  
+ \["age", "DESC"\]  
+ \],  
+ // Here we are limiting our results to one record. It will still return an array, just with one object inside. We could have said any number here, the result is always an array.  
+ limit: 1,  
+});  
+console.log(JSON.stringify(cats, null, 2));
+
+### findOne
+
+-   If we only want one record to be returned we can use findOne instead of findAll
+-   If multiple records would have matched our findOne query, it will return the first record
+-   Unlike findAll, findOne will return the object directly instead of an array. If no records matched the query it will return null.
+
+// finds the oldest cat const cat = await Cat.findOne({ order: \[\[“age”, “DESC”\]\], }); console.log(JSON.stringify(cat, null, 2));
+
+-   **Querying with Associations**
+
+We can include associated data by adding an include key to our options object
+
+const pet = Pet.findByPk(1, {  
+ include: \[PetType, Owner\]  
+});  
+console.log(pet.id, pet.name, pet.age, pet.petTypeId, pet.PetType.type, pet.Owners
+
+We can get nested associations by having include point to an object that specifies which model we have an association with, then chaining an association on with another include
+
+**How to perform data validations with Sequelize**
+
+-   See the database migrations section above.
+-   In general, we add in a validate key to each field that we want validations for. This key points to an object that specifies all of the validations we want to make on that field, such as notEmpty, notNull, len, isIn, etc.
+
+specification: {  
+ type: DataTypes.TEXT,  
+ validate: {  
+ notEmpty: {  
+ msg: 'The specification cannot be empty'  
+ },  
+ len: {  
+ args: \[10, 100\]  
+ msg: 'The specifcation must be between 10 and 100 characters'  
+ }  
+ }  
+}
+
+**How to use transactions with Sequelize**
+
+-   We can create a transaction block in order to make sure either all operations are performed or none of them are
+-   We use the .transaction method in order to create our block. The method takes in a callback with an argument to track our transaction id (typically just a simple tx variable).
+-   All of our sequelize operations can be passed a transaction key on their options argument which points to our transaction id. This indicates that this operation is part of the transaction block and should only be executed in the database when the whole block executes without error.
+
+async function main() {  
+ try {  
+ // Do all database access within the transaction.  
+ await sequelize.transaction(async (tx) => {  
+ // Fetch Markov and Curie's accounts.  
+ const markovAccount = await BankAccount.findByPk(  
+ 1, {  
+ transaction: tx  
+ },  
+ );  
+ const curieAccount = await BankAccount.findByPk(  
+ 2, {  
+ transaction: tx  
+ }  
+ );  
+ // No one can mess with Markov or Curie's accounts until the  
+ // transaction completes! The account data has been locked!  
+ // Increment Curie's balance by $5,000.  
+            curieAccount.balance += 5000;  
+            await curieAccount.save({  
+                transaction: tx  
+            });  
+            // Decrement Markov's balance by $5,000.  
+            markovAccount.balance -= 5000;  
+            await markovAccount.save({  
+                transaction: tx  
+            });  
+        });  
+    } catch (err) {  
+        // Report if anything goes wrong.  
+        console.log("Error!");  
+        for (const e of err.errors) {  
+            console.log(  
+                \`${e.instance.clientName}: ${e.message}\`  
+ );  
+ }  
+ }  
+ await sequelize.close();  
+}  
+main();
+
+---
+
+### Sequelize Cheatsheet
+
+#### Command Line
+
+Sequelize provides utilities for generating migrations, models, and seed files. They are exposed through the `sequelize-cli` command.
+
+#### Init Project
+
+$ npx sequelize-cli init
+
+You must create a database user, and update the `config/config.json` file to match your database settings to complete the initialization process.
+
+#### Create Database
+
+npx sequelize-cli db:create
+
+#### Generate a model and its migration
+
+npx sequelize-cli model:generate --name <ModelName> --attributes <column1>:<type>,<column2>:<type>,...
+
+#### Run pending migrations
+
+npx sequelize-cli db:migrate
+
+#### Rollback one migration
+
+npx sequelize-cli db:migrate:undo
+
+#### Rollback all migrations
+
+npx sequelize-cli db:migrate:undo:all
+
+#### Generate a new seed file
+
+npx sequelize-cli seed:generate --name <descriptiveName>
+
+#### Run all pending seeds
+
+npx sequelize-cli db:seed:all
+
+#### Rollback one seed
+
+npx sequelize-cli db:seed:undo
+
+#### Rollback all seeds
+
+npx sequelize-cli db:seed:undo:all
+
+#### Migrations
+
+### Create Table (usually used in the up() method)
+
+// This uses the short form for references  
+return queryInterface.createTable(<TableName>, {  
+ <columnName>: {  
+ type: Sequelize.<type>,  
+ allowNull: <true|false>,  
+ unique: <true|false>,  
+ references: { model: <TableName> }, // This is the plural table name  
+ // that the column references.  
+ }  
+});  
+// This the longer form for references that is less confusing  
+return queryInterface.createTable(<TableName>, {  
+ <columnName>: {  
+ type: Sequelize.<type>,  
+ allowNull: <true|false>,  
+ unique: <true|false>,  
+ references: {  
+ model: {  
+ tableName: <TableName> // This is the plural table name  
+ }  
+ }  
+ }  
+});
+
+### Delete Table (usually used in the down() function)
+
+return queryInterface.dropTable(<TableName>);
+
+### Adding a column
+
+return queryInteface.addColumn(<TableName>, <columnName>: {  
+ type: Sequelize.<type>,  
+ allowNull: <true|false>,  
+ unique: <true|false>,  
+ references: { model: <TableName> }, // This is the plural table name  
+ // that the column references.  
+});
+
+### Removing a column
+
+return queryInterface.removeColumn(<TableName>, <columnName>);
+
+### Model Associations
+
+### One to One between Student and Scholarship
+
+`student.js`
+
+Student.hasOne(models.Scholarship, { foreignKey: 'studentId' });
+
+`scholarship.js`
+
+Scholarship.belongsTo(models.Student, { foreignKey: 'studentId' });
+
+### One to Many between Student and Class
+
+`student.js`
+
+Student.belongsTo(models.Class, { foreignKey: 'classId' });
+
+`class.js`
+
+Class.hasMany(models.Student, { foreignKey: 'classId' });
+
+### Many to Many between Student and Lesson through StudentLessons table
+
+`student.js`
+
+const columnMapping = {  
+ through: 'StudentLesson', // This is the model name referencing the join table.  
+ otherKey: 'lessonId',  
+ foreignKey: 'studentId'  
+}  
+Student.belongsToMany(models.Lesson, columnMapping);
+
+`lesson.js`
+
+const columnMapping = {  
+ through: 'StudentLesson', // This is the model name referencing the join table.  
+ otherKey: 'studentId',  
+ foreignKey: 'lessonId'  
+}  
+Lesson.belongsToMany(models.Student, columnMapping);
+
+### Inserting a new item
+
+// Way 1 - With build and save  
+const pet = Pet.build({  
+ name: "Fido",  
+ petTypeId: 1  
+});  
+await pet.save();  
+// Way 2 - With create  
+const pet = await Pet.create({  
+ name: "Fido",  
+ petTypeId: 1  
+});
+
+### Updating an item
+
+// Find the pet with id = 1  
+const pet = await Pet.findByPk(1);  
+// Way 1  
+pet.name = "Fido, Sr."  
+await pet.save;  
+// Way 2  
+await pet.update({  
+ name: "Fido, Sr."  
+});
+
+### Deleting a single item
+
+// Find the pet with id = 1  
+const pet = await Pet.findByPk(1);  
+// Notice this is an instance method  
+pet.destroy();
+
+### Deleting multiple items
+
+// Notice this is a static class method  
+await Pet.destroy({  
+ where: {  
+ petTypeId: 1 // Destorys all the pets where the petType is 1  
+ }  
+});
+
+### Query Format
+
+### findOne
+
+await <Model>.findOne({  
+ where: {  
+ <column>: {  
+ \[Op.<operator>\]: <value>  
+ }  
+ },  
+});
+
+### findAll
+
+await <Model>.findAll({  
+ where: {  
+ <column>: {  
+ \[Op.<operator>\]: <value>  
+ }  
+ },  
+ include: <include_specifier>,  
+ offset: 10,  
+ limit: 2  
+});
+
+### findByPk
+
+await <Model>.findByPk(<primary_key>, {  
+ include: <include_specifier>  
+});
+
+### Eager loading associations with `include`
+
+Simple include of one related model.
+
+await Pet.findByPk(1, {  
+ include: PetType  
+ })
+
+Include can take an array of models if you need to include more than one.
+
+await Pet.findByPk(1, {  
+ include: \[Pet, Owner\]  
+ })
+
+Include can also take an object with keys `model` and `include`.  
+This is in case you have nested associations.  
+In this case Owner doesn’t have an association with PetType, but  
+Pet does, so we want to include PetType onto the Pet Model.
+
+await Owner.findByPk(1, {  
+ include: {  
+ model: Pet  
+ include: PetType  
+ }  
+ });
+
+### toJSON method
+
+The confusingly named toJSON() method does **not** return a JSON string but instead  
+returns a POJO for the instance.
+
+// pet is an instance of the Pet class  
+const pet = await Pet.findByPk(1);  
+console.log(pet) // prints a giant object with  
+ // tons of properties and methods  
+// petPOJO is now just a plain old Javascript Object  
+const petPOJO = pet.toJSON();  
+console.log(petPOJO); // { name: "Fido", petTypeId: 1 }
+
+### Common Where Operators
+
+const Op = Sequelize.Op  
+\[Op.and\]: \[{a: 5}, {b: 6}\] // (a = 5) AND (b = 6)  
+\[Op.or\]: \[{a: 5}, {a: 6}\] // (a = 5 OR a = 6)  
+\[Op.gt\]: 6, // > 6  
+\[Op.gte\]: 6, // >= 6  
+\[Op.lt\]: 10, // < 10  
+\[Op.lte\]: 10, // <= 10  
+\[Op.ne\]: 20, // != 20  
+\[Op.eq\]: 3, // = 3  
+\[Op.is\]: null // IS NULL  
+\[Op.not\]: true, // IS NOT TRUE  
+\[Op.between\]: \[6, 10\], // BETWEEN 6 AND 10  
+\[Op.notBetween\]: \[11, 15\], // NOT BETWEEN 11 AND 15  
+\[Op.in\]: \[1, 2\], // IN \[1, 2\]  
+\[Op.notIn\]: \[1, 2\], // NOT IN \[1, 2\]  
+\[Op.like\]: '%hat', // LIKE '%hat'  
+\[Op.notLike\]: '%hat' // NOT LIKE '%hat'  
+\[Op.iLike\]: '%hat' // ILIKE '%hat' (case insensitive) (PG only)  
+\[Op.notILike\]: '%hat' // NOT ILIKE '%hat' (PG only)  
+\[Op.startsWith\]: 'hat' // LIKE 'hat%'  
+\[Op.endsWith\]: 'hat' // LIKE '%hat'  
+\[Op.substring\]: 'hat' // LIKE '%hat%'  
+\[Op.regexp\]: '^\[h|a|t\]' // REGEXP/~ '^\[h|a|t\]' (MySQL/PG only)  
+\[Op.notRegexp\]: '^\[h|a|t\]' // NOT REGEXP/!~ '^\[h|a|t\]' (MySQL/PG only)  
+\[Op.iRegexp\]: '^\[h|a|t\]' // ~\* '^\[h|a|t\]' (PG only)  
+\[Op.notIRegexp\]: '^\[h|a|t\]' // !~\* '^\[h|a|t\]' (PG only)  
+\[Op.like\]: { \[Op.any\]: \['cat', 'hat'\]}
+
+![](https://cdn-images-1.medium.com/max/2560/1*IdBeXbBynFmQD7WwTNr7Hw.png)
+
+![](https://cdn-images-1.medium.com/max/2560/1*bgZjuBly2EBDtGiCFaFoFw.png)
+
+### Accessing the Data
+
+You can access and query the data using the `findByPk`, `findOne`, and `findAll` methods. First, make sure you import the models in your JavaScript file. In this case, we are assuming your JavaScript file is in the root of your project and so is the models folder.
+
+const { Recipe, Ingredient, Instruction, MeasurementUnit } = require('./models');
+
+The models folder exports each of the models that you have created. We have these four in our data model, so we will destructure the models to access each table individually. The associations that you have defined in each of your models will allow you to access data of related tables when you query your database using the `include` option.
+
+If you want to find all recipes, for the recipe list, you would use the `findAll` method. You need to await this, so make sure your function is async.
+
+async function findAllRecipes() {
+
+return await Recipe.findAll();
+
+}
+
+If you would like to include all the ingredients so you can create a shopping list for all the recipes, you would use `include`. This is possible because of the association you have defined in your Recipe and Ingredient models.
+
+async function getShoppingList() {
+
+return await Recipe.findAll({ include: \[ Ingredient \] });
+
+}
+
+If you only want to find one where there is chicken in the ingredients list, you would use `findOne` and `findByPk`.
+
+async function findAChickenRecipe() {
+
+const chickenRecipe = await Ingredient.findOne({
+
+where: {
+
+foodStuff: 'chicken'
+
+}
+
+});
+
+return await Recipe.findByPk(chickenRecipe.recipeId);
+
+}
+
+### Data Access to Create/Update/Delete Rows
+
+You have two options when you want to create a row in a table (where you are saving one record into the table). You can either `.build` the row and then `.save` it, or you can `.create` it. Either way it does the same thing. Here are some examples:
+
+Let’s say we have a form that accepts the name of the recipe (for simplicity). When we get the results of the form, we can:
+
+const newRecipe = await Recipe.build({ title: 'Chicken Noodle Soup' });
+
+await newRecipe.save();
+
+This just created our new recipe and added it to our Recipes table. You can do the same thing like this:
+
+await Recipe.create({ title: 'Chicken Noodle Soup' });
+
+If you want to modify an item in your table, you can use `update`. Let’s say we want to change the chicken noodle soup to chicken noodle soup with extra veggies, first we need to get the recipe, then we can update it.
+
+const modRecipe = await Recipe.findOne({ where: { title: 'Chicken Noodle Soup' } });
+
+await modRecipe.update({ title: 'Chicken Noodle Soup with Extra Veggies' });
+
+To delete an item from your table, you will do the same kind of process. Find the recipe you want to delete and `destroy` it, like this:
+
+const deleteThis = await Recipe.findOne({ where: { title: 'Chicken Noodle Soup with Extra Veggies' } });
+
+await deleteThis.destroy();
+
+**NOTE:** If you do not await these, you will receive a promise, so you will need to use `.then` and `.catch` to do more with the items you are accessing and modifying.
+
+### Documentation
+
+For the data types and validations in your models, here are the official docs. The sequelize docs are hard to look at, so these are the specific sections with just the lists:  
+**Sequelize Data Types:** [_https://sequelize.org/v5/manual/data-types.html_](https://sequelize.org/v5/manual/data-types.html)  
+**Validations:** [_https://sequelize.org/v5/manual/models-definition.html#validations_](https://sequelize.org/v5/manual/models-definition.html#validations)  
+When you access the data in your queries, here are the operators available, again because the docs are hard to navigate, this is the specific section with the list of operators.  
+**Operators:** [_https://sequelize.org/v5/manual/querying.html#operators_](https://sequelize.org/v5/manual/querying.html#operators)  
+The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of explaining in my opinion, it just has a title that we have not been using in this course. When they talk about an instance, they mean an item stored in your table.  
+**Create/Update/Destroy:** [_https://sequelize.org/v5/manual/instances.html_](https://sequelize.org/v5/manual/instances.html)
+
+#### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+(Under construction… may be broken at any time)
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+### Resources, Cheat Sheets & Links @Bottom of the Page!
+
+![](https://cdn-images-1.medium.com/max/800/0*68fyM5AI85U_I3vo.jpg)
+
+For More Advanced Readers, or those with very limited free time… here’s an abridged Git Reference.
+
+[https://bryanguner.medium.com/git-tricks-57e8d0292285](https://bryanguner.medium.com/git-tricks-57e8d0292285)
+
+### What’s a distributed version control system?
+
+Git is an example of a distributed version control system (DVCS) commonly used for open source and commercial software development. DVCSs allow full access to every file, branch, and iteration of a project, and allows every user access to a full and self-contained history of all changes. Unlike once popular centralized version control systems, DVCSs like Git don’t need a constant connection to a central repository. Developers can work anywhere and collaborate asynchronously from any time zone.
+
+Without version control, team members are subject to redundant tasks, slower timelines, and multiple copies of a single project. To eliminate unnecessary work, Git and other VCSs give each contributor a unified and consistent view of a project, surfacing work that’s already in progress. Seeing a transparent history of changes, who made them, and how they contribute to the development of a project helps team members stay aligned while working independently.
+
+### Why Git?
+
+According to the latest [Stack Overflow developer survey](https://insights.stackoverflow.com/survey/2017#technology), more than 70 percent of developers use Git, making it the most-used VCS in the world. Git is commonly used for both open source and commercial software development, **with significant benefits** for individuals, teams and businesses.
+
+-   Git lets developers see the entire timeline of their changes, decisions, and progression of any project in one place. From the moment they access the history of a project, the developer has all the context they need to understand it and start contributing.
+-   Developers work in every time zone. With a DVCS like Git, collaboration can happen any time while maintaining source code integrity. Using branches, developers can safely propose changes to production code.
+-   Businesses using Git can break down communication barriers between teams and keep them focused on doing their best work. Plus, Git makes it possible to align experts across a business to collaborate on major projects.
+
+### Table Of Contents:
+
+[_Editing Understanding Git (A Beginners Guide Containing Cheat Sheets & Resources) — Medium_](#editing-understanding-git-a-beginners-guide-containing-cheat-sheets--resources--medium)
+
+> [**_What’s a distributed version control system?_**](#whats-a-distributed-version-controlsystem)
+
+> [_Why Git?_](#why-git)
+
+> [_What’s a repository?_](#whats-a-repository)
+
+> [**_Git Flow_**](#git-flow)
+
+> [_Cloning a repo and changing the remote url_](#cloning-a-repo-and-changing-the-remoteurl)
+
+> [_1\. The first step is to clone the repo!_](#1-the-first-step-is-to-clone-therepo)
+
+> [_2\. Make your own repo_](#2-sweet-you-have-the-cloned-repo-in-your-preferred-directory-now-lets-make-your-own-repo-on-github-create-a-new-repository)_._
+
+> [_3\. Next, copy the .git link that is on the next page._](#3-next-copy-thegit-link-that-is-on-the-next-page-do-not-do-any-other-steps-on-this-pagethat-is-for-when-you-do-not-clone-arepo)
+
+> [_4\. Whenver you clone a repo_](#4-whenver-you-clone-a-repo-it-already-has-agit-directory-with-certain-configurations-set-up-to-be-able-to-push-this-repo-to-your-newly-created-github-repo-we-have-to-change-the-remoteorigin)
+
+> [_5\. Thats its! You can now run_](#5-thats-its-you-can-now-run-git-push-and-it-will-push-to-your-newly-createdrepo) `[_git push_](#5-thats-its-you-can-now-run-git-push-and-it-will-push-to-your-newly-createdrepo)` [_and it will push to your newly created repo._](#5-thats-its-you-can-now-run-git-push-and-it-will-push-to-your-newly-createdrepo)
+
+> [_Basic Git Work Flow._](#basic-git-workflow)
+
+> [**_Cheat Sheet:_**](#cheat-sheet)
+
+> [_My Git Reference Repo:_](#my-git-reference-repo)
+
+> [_Git basics_](#git-basics)
+
+> [_A glance into GIT_](#a-glance-intogit)
+
+> [_Tracking changes in a repository_](#tracking-changes-in-a-repository)
+
+> [_Branches and workflow_](#branches-andworkflow)
+
+> [_Bringing it back together_](#bringing-it-backtogether)
+
+> [_Connect-W-Github_](#connect-w-github)
+
+> [_I ![❤️](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/2764.svg) Open Source_](#i-%EF%B8%8F-opensource)
+
+> [_Merging your code on GitHub_](#merging-your-code-ongithub)
+
+> [_Browsing Your Git Repository_](#browsing-your-git-repository)
+
+> [_Seeing changes in real time_](#seeing-changes-in-realtime)
+
+> [_Diff options_](#diff-options)
+
+> [_Time travel_](#time-travel)
+
+> [_Why checkout?_](#why-checkout)
+
+> [_Git ‘Do-Overs’: Reset & Rebase_](#git-do-overs-reset-rebase)
+
+> [_Resetting the past_](#resetting-thepast)
+
+> [_Soft resets_](#soft-resets)
+
+> [_Risky Business: Mixed resets_](#risky-business-mixedresets)
+
+> [_Red alert! Hard resets_](#red-alert-hardresets)
+
+> [_Rebase: ‘Alt-time travel’_](#rebase-alt-time-travel)
+
+> [_I see you too like to live life Dangerously… tell me about Rebase.._](#i-see-you-too-like-to-live-life-dangerously-tell-me-aboutrebase)
+
+> `[_working-on-the-header_](#working-on-the-header)`
+
+> [_“Golden Rule of Git”_](#golden-rule-ofgit)
+
+> **How 2’s**
+
+> [**_Troubleshooting Git_**](#troubleshooting-git)
+
+> **Further Reading & Resources**
+
+### What’s a repository?
+
+A _repository_, or [Git project](https://git-scm.com/), encompasses the entire collection of files and folders associated with a project, along with each file’s revision history. The file history appears as snapshots in time called _commits_, and the commits exist as a linked-list relationship, and can be organized into multiple lines of development called _branches_. Because Git is a DVCS, repositories are self-contained units and anyone who owns a copy of the repository can access the entire codebase and its history. Using the command line or other ease-of-use interfaces, a git repository also allows for: interaction with the history, cloning, creating branches, committing, merging, comparing changes across versions of code, and more.
+
+Working in repositories keeps development projects organized and protected. Developers are encouraged to fix bugs, or create fresh features, without fear of derailing mainline development efforts. Git facilitates this through the use of topic branches: lightweight pointers to commits in history that can be easily created and deprecated when no longer needed.
+
+### Git Flow
+
+### Cloning a repo and changing the remote url
+
+(These steps are only for when you initially clone a project repo. Not when you clone your partners repo to collaborate together. To do that, you only have to complete step 1!)
+
+### 1\. The first step is to clone the repo!
+
+-   Navigate to the repo you want to clone and hit the big green code button. Copy the link given.
+
+![](https://cdn-images-1.medium.com/max/800/1*63LoanrbOPBIwDC6oFarFA.png)
+
+-   Navigate in your terminal to the directory where you want this repo to live. I’ve chosen downloads
+-   `git clone [HTTPS://LINKTOURL/THATYOUCOPIED](http://https//LINKTOURL/THATYOUCOPIED)`
+
+![](https://cdn-images-1.medium.com/max/800/1*PRiaHOvU-wvpAYQtIqduGQ.png)
+
+### 2\. Sweet, you have the cloned repo in your preferred directory. Now lets make your own repo. On github, create a new repository.
+
+-   Default settings are fine. Hit the big green button `Create Repository`
+
+![](https://cdn-images-1.medium.com/max/800/1*U1qwd0OEBYhcToXYt2i6iA.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*jk3-RTC0rRV_OF931B4Fsg.png)
+
+### 3\. Next,
+
+**_copy the .git link that is on the next page. Do not do any other steps on this page — That is for when you do not clone a repo._**
+
+---
+
+### These are the commands GitHub provides when you create a new Repo:
+
+#### Quick setup — if you’ve done this kind of thing before
+
+Set up in Desktop
+
+or
+
+HTTPSSSH
+
+Get started by [creating a new file](https://github.com/bgoonz/the-meaning-of-life-is-42/new/master) or [uploading an existing file](https://github.com/bgoonz/the-meaning-of-life-is-42/upload). We recommend every repository include a [README](https://github.com/bgoonz/the-meaning-of-life-is-42/new/master?readme=1), [LICENSE](https://github.com/bgoonz/the-meaning-of-life-is-42/new/master?filename=LICENSE.md), and [.gitignore](https://github.com/bgoonz/the-meaning-of-life-is-42/new/master?filename=.gitignore).
+
+### …or create a new repository on the command line
+
+echo "# the-meaning-of-life-is-42" >> README.md  
+git init  
+git add README.md  
+git commit -m "first commit"  
+git branch -M master  
+git remote add origin [https://github.com/bgoonz/the-meaning-of-life-is-42.git](https://github.com/bgoonz/the-meaning-of-life-is-42.git)  
+git push -u origin master
+
+### …or push an existing repository from the command line
+
+git remote add origin [https://github.com/bgoonz/the-meaning-of-life-is-42.git](https://github.com/bgoonz/the-meaning-of-life-is-42.git)  
+git branch -M master  
+git push -u origin master
+
+### …or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+[Import code](https://github.com/bgoonz/the-meaning-of-life-is-42/import)
+
+### 4\. Whenever you clone a repo:
+
+#### It already has a .git directory with certain configurations set up. To be able to push this repo to your newly created GitHub repo we have to change the remote origin.
+
+-   To do that, just run this command: (Make sure you are inside the repo you cloned)
+
+git remote set-url origin [https://LINK/TO/YOUR/GIT/THAT/YOU/COPIED/FROM/PREVIOUS/STEP.git](https://link/TO/YOUR/GIT/THAT/YOU/COPIED/FROM/PREVIOUS/STEP.git)
+
+OR:
+
+![](https://cdn-images-1.medium.com/max/800/1*HTnMuxJ4tCDJ3I49cUrP8w.png)
+
+### 5\. You can now run `git push` and it will push to your newly created repo.
+
+### Basic Git Work Flow.
+
+-   After making changes to a file and you are ready to commit / push to your repo you can run the following commands:
+-   `git add .` – stages modified files to be committed.
+-   `git status` – displays files that have been modified
+-   `git commit -m 'A helpfully commit message'` – commits the changes to your local repo. Get in the habit now of making helpful commit messages
+-   `git push` – pushes your local commits to your GitHub repo!
+-   To pull down changes that your partner pushed to the repo you simply have to run:
+-   `git pull` – this will fetch the most recent updates!
+
+### Cheat Sheet:
+
+[https://gist.github.com/bgoonz/047223711786562db835107417130c28](https://gist.github.com/bgoonz/047223711786562db835107417130c28)
+
+### My Git Reference Repo:
+
+[https://bryanguner.medium.com/git-tricks-57e8d0292285](https://bryanguner.medium.com/git-tricks-57e8d0292285)
+
+### Git basics
+
+Like many disciplines, learning Git is just a matter of learning a new language. You’ll cover a lot of new vocabulary in this lesson! Remember that the vocabulary you’ll learn will allow you to communicate clearly with other developers worldwide, so it’s important to understand the meaning of each term.
+
+It’s also important to note that Git is a complex and powerful tool. As such, its documentation and advanced examples may be tough to understand. As your knowledge grows, you may choose to dive deeper into Git. Today, you’ll focus on the commands you’ll use every day — possibly for the rest of your programming career! Get comfortable with these commands and resist the urge to copy/paste or create keyboard shortcuts as you’re getting started.
+
+### A glance into GIT
+
+Before you look at any practical examples, let’s talk about how Git works behind the scenes.
+
+Here is your first new word in Git-speak: _repository_, often shortened to _repo_. A Git repo comprises all the source code for a particular project. In the “dark ages” example above, the repo is the first directory you created, where work is saved to, and which acts as the source for code shared to others. Without a repo, Git has nothing to act on.
+
+Git manages your project as a series of _commits_. A commit is a collection of changes grouped towards a shared purpose. By tracking these commits, you can see your project on a timeline instead of only as a finished project:
+
+![](https://cdn-images-1.medium.com/max/800/1*Sc7e8RGGxhoCnMFG8KR6og.png)
+
+Notice the notes and seemingly random numbers by each commit? These are referred to as _commit messages_ and _commit hashes_, respectively. Git identifies your commits by their hash, a specially-generated series of letters and numbers. You add commit messages to convey meaning and to help humans track your commits, as those hashes aren’t very friendly to read!
+
+A Git hash is 40 characters long, but you only need the first few characters to identify which hash you’re referring to. By default, Git abbreviates hashes to 7 characters. You’ll follow this convention, too.
+
+Git provides a helpful way for us to “alias” a commit in plain English as well. These aliases are called _refs_, short for “references”. A special one that Git creates for all repositories is `HEAD`, which references the most recent commit. You’ll learn more about creating your own refs when you learn about “branching”.
+
+Git maintains three separate lists of changes: the _working directory_, the _staging area_, and the _commit history_. The working directory includes all of your in-progress changes, the staging area is reserved for changes you’re ready to commit, and the commit history is made up of changes you’ve already committed. You’ll look more at these three lists soon.
+
+Git only cares about changes that are “tracked”. To track a file, you must add it to the commit history. The working directory will always show the changes, even if they aren’t tracked. In the commit history, you’ll only have a history of files that have been formally tracked by your repository.
+
+### Tracking changes in a repository
+
+Now, let’s get practical!
+
+You can create a repository with `git init`. Running this command will initialize a new Git repo in your current directory. It’s important to remember that you only want a repository for your project and not your whole hard drive, so always run this command inside a project folder and not your home folder or desktop. You can create a new repo in an empty folder or within a project directory you’ve already created.
+
+What good is an empty repo? Not much! To add content to your repository, use `git add`. You can pass this command a specific filename, a directory, a “wildcard” to select a series of similarly-named files, or a `.` to add every untracked file in the current directory:
+
+    # This will add only my_app.js to the repo:
+
+    > git add my_app.js
+
+    # This will add all the files within ./objects:
+
+    > git add objects/
+
+    # This will add all the files in the current directory ending in `.js`:
+
+    > git add *.js
+
+    # This will add everything in your current directory:
+
+    > git add .
+
+Adding a file (or files) moves them from Git’s working directory to the staging area. You can see what’s been “staged” and what hasn’t by using `git status`:
+
+![](https://cdn-images-1.medium.com/max/800/1*iiehU7FvC-JK90x6Fr0q6g.png)
+
+In this example, “Changes to be committed” is your staging area and “Changes not staged for commit” is your working directory. Notice that you also have “Untracked files”, Git’s way of reminding us that you may have forgotten to `git add` a file to your repo. Most Git commands will include a bit of help text in the output, so always read the messages carefully before moving forward. Thanks, Git!
+
+Once you’re happy with your files and have staged them, you’ll use `git commit` to push them into the commit history. It’s significantly more work to make changes after a commit, so be sure your files are staged and exactly as you’d like them before running this command. Your default text editor will pop up, and you’ll be asked to enter a commit message for this group of changes.
+
+**Heads Up:** You may find yourself in an unfamiliar place! The default text editor for MacOS (and many variants of Linux) is called _Vim_. Vim is a terminal-based text editor you’ll discuss in the near future. It’s visually bare and may just look like terminal text to you! If this happens, don’t worry — just type `:q` and press your “return” key to exit.
+
+You’ll want to ensure that future commit messages open in a more familiar editor. You can run the following commands in your terminal to ensure that Visual Studio Code is your `git commit` editor from now on:
+
+    > git config --global core.editor "code --wait"
+
+    > git config --global -e
+
+If you experience any issues, you may be missing Visual Studio Code’s command line tools. You can find more details and some troubleshooting tips on Microsoft’s official [VS Code and macOS documentation](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
+
+Once you close your editor, the commit will be added to your repository’s commit history. Use `git log` to see this history at any time. This command will show all the commits in your repository’s history, beginning with the most recent:
+
+![](https://cdn-images-1.medium.com/max/800/1*z4zhzwjkwkfXMxKDDkNE9w.png)
+
+Like many Git commands, `git commit` includes some helpful shorthand. If you need a rather short commit message, you can use the `-m` flag to include the message inline. Here’s an example:
+
+    > git commit -m "Fix typo"
+
+This will commit your changes with the message “Fix typo” and avoid opening your default text editor. Remember the commit messages are how you make your project’s history friendly to humans, so don’t use the `-m` flag as an excuse to write lame commit messages! A commit message should always explain why changes were made in clear, concise language. It is also best practice to use imperative voice in commit messages (i.e. use “Fix typo” instead of “Fixing the typo” or “Typo was fixed”).
+
+### Branches and workflow
+
+![](https://cdn-images-1.medium.com/max/800/0*7RBsBGvfmvj4T4jm.png)
+
+You’ve seen what a project looks like with a linear commit history, but that’s just scratching the surface of Git’s utility. Let’s explore a new realm with _branches_. A branch is a separate timeline in Git, reserved for its own changes. You’ll use branches to make your own changes independently of others. These branches can then be _merged_ back into the main branch at a later time.
+
+Let’s consider a common scenario: a school project. It’s a lot of extra hassle to schedule time together and argue over exactly what should be done next! Instead, group members will often assign tasks amongst themselves, work independently on their tasks, and reunite to bring it all together as a final report. Git branches let us emulate this workflow for code: you can make a copy of what’s been done so far, complete a task on your new branch, and merge that branch back into the shared repository for others to use.
+
+By default, Git repos begin on the `master` branch. To create a new branch, use `git branch <name-of-your-branch>`. This will create a named reference to your current commit and let you add commits without affecting the `master` branch. Here’s what a branch looks like:
+
+![](https://cdn-images-1.medium.com/max/800/1*B67PLKs3Tr6HYLklyH6XnQ.png)
+
+Notice how your refs help to identify branches here: `master` stays to itself and can have changes added to it independently of your new branch (`footer`). `HEAD`, Git’s special ref, follows us around, so you know that in the above diagram you’re working on the `footer` branch.
+
+You can create a new branch or visit an existing branch in your repository. This is especially helpful for returning the `master` branch or for projects you’ve received from teammates. To open an existing branch, use `git checkout <name-of-branch>`.
+
+### Bringing it back together
+
+Once you’re happy with the code in the branch you’ve been working on, you’ll likely want to integrate the code into the `master` branch. You can do this via `git merge`. Merging will bring the changes in from another branch and integrate them into yours. Here’s an example workflow:
+
+    > git branch my-changes
+
+    > git add new-file.js
+
+    > git commit -m "Add new file"
+
+    > git checkout master
+
+    > git merge my-changes
+
+Following these steps will integrate the commit from `my-changes` over to `master`. Boom! Now you have your `new-file.js` on your default branch.
+
+As you can imagine, branching can get _very_ complicated. Your repository’s history may look more like a shrub than a beautiful tree! You’ll discuss advanced merging and other options in an upcoming lesson.
+
+### Connect-W-Github
+
+Git can act as a great history tool and source code backup for your local projects, but it can also help you work with a team! Git is classified as a “DVCS”, or “Distributed Version Control System”. This means it has built-in support for managing code both locally and from a distant source.
+
+You can refer to a repository source that’s not local as a _remote_. Your Git repository can have any number of remotes, but you’ll usually only have one. By default you’ll refer to the primary remote of a repo as the `origin`.
+
+You can add a remote to an existing repository on your computer, or you can retrieve a repository from a remote source. You can refer to this as _cloning_ the repo. Once you have a repository with a remote, you can update your local code from the remote by _pulling_ code down, and you can _push_ up your own code so others have access to it.
+
+### I ![❤️](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/2764.svg) Open Source
+
+While a remote Git server can be run anywhere, there are a few places online that have become industry standards for hosting remote Git repositories. The best-known and most widely-used Git source is a website called [GitHub](https://github.com/). As the name suggests, GitHub is a global hub for Git repositories. It’s free to make a Github account, and you’ll find literally millions of public repositories you can browse.
+
+GitHub takes a lot of work out of managing remote Git repositories. Instead of having to manage your own server, GitHub provides managed hosting and even includes some helpful graphical tools for complicated tasks like deployment, branch merging, and code review.
+
+Let’s look at a typical workflow using Git and GitHub. Imagine it’s your first day on the job. How do you get access to your team’s codebase? By cloning the repository!
+
+    > git clone https://github.com/your-team/your-codebase.git
+
+Using the `git clone` command will create a new folder in your current directory named after the repo you’re cloning (in this case, `your-codebase`). Inside that folder will be a git repository of your very own, containing the repo’s entire commit history.
+
+You’ll likely start on the `master` branch, but remember that this is the default branch and it’s unlikely you want to make changes to it. **_Since you’re working on a team now, it’s important to think of how your changes to the repository might affect others._**
+
+The safest way to make changes is to create a new branch, make your changes there, and then push your branch up to the remote repository for review. You’ll use the `git push` command to do this. Let’s look at an example:
+
+    > git branch add-my-new-file
+
+    > git add my-new-file.js
+
+    > git commit -m "Add new file"
+
+    > git push -u origin add-my-new-file
+
+Notice how you used the `-u` flag with `git push`. This flag, shorthand for `--set-upstream`, lets Git know that you want your local branch to follow a remote branch. You’ve passed the same name in, so you’ll now have two branches in your local re
