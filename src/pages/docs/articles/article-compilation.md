@@ -1,5 +1,5 @@
 ---
-title: ds-algo-overview
+title: Article-Compilation
 subtitle: The ds-algo-overview provides you with a blueprint of default post and page styles.
 image: images/5.jpg
 seo:
