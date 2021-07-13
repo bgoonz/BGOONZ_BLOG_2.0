@@ -170,17 +170,6 @@
                 "url": "https://github.com/bgoonz/Learning-Assets"
             },
             {
-                "label": "lorem-ipsum",
-                "url": "#",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": false,
-                "subnav_links": [],
-                "type": "action_menu"
-            },
-            {
                 "label": "Projects",
                 "url": "#",
                 "style": "link",
