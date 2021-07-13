@@ -14844,4 +14844,7842 @@ The safest way to make changes is to create a new branch, make your changes ther
 
     > git push -u origin add-my-new-file
 
-Notice how you used the `-u` flag with `git push`. This flag, shorthand for `--set-upstream`, lets Git know that you want your local branch to follow a remote branch. You’ve passed the same name in, so you’ll now have two branches in your local re
+Notice how you used the `-u` flag with `git push`. This flag, shorthand for `--set-upstream`, lets Git know that you want your local branch to follow a remote branch. You’ve passed the same name in, so you’ll now have two branches in your local repository: `add-my-new-file`, which is where your changes live after being committed, and `origin/add-my-new-file`, which keeps up with your remote branch and updates it after you use `git push`.
+
+**You only need to use the** `**-u**` **flag the first time you push each new branch – Git will know what to do with a simple** `**git push**` **from then on.**
+
+You now know how to push your changes up, but what about getting the changes your teammates have made? For this, you’ll use `git pull`. Pulling from the remote repo will update all of your local branches with the code from each branch’s remote counterpart.
+
+**Behind the scenes,** Git is running two separate commands: `git fetch` and `git merge`.
+
+![](https://cdn-images-1.medium.com/max/800/0*Y6QQHsNKuayJ_WxQ)
+
+Fetching retrieves the repository code and updates any remote tracking branches in your local repo, and merge does just you’ve already explored: integrates changes into the local branches. Here’s a graphic to explain this a little better:
+
+![](https://cdn-images-1.medium.com/max/800/1*eJVpPtvfIeuYqmql0XkQ8Q.png)
+
+It’s important to remember to use `git pull` often. A dynamic team may commit and push code many times during the day, and it’s easy to fall behind. The more often you `pull`, the more certain you can be that your own code is based on the “latest and greatest”.
+
+### Merging your code on GitHub
+
+If you’re paying close attention, you may have noticed that there’s a missing step in your workflows so far: how do you get your code merged into your default branch? This is done by a process called a _Pull Request_.
+
+A pull request (or “PR”) is a feature specific to GitHub, not a feature of Git. It’s a safety net to prevent bugs, and it’s a critical part of the collaboration workflow. Here’s a high-level of overview of how it works:
+
+You push your code up to GitHub in its own branch.
+
+You open a pull request against a _base branch_.
+
+GitHub creates a comparison page just for your code, detailing the changes you’ve made.
+
+Other members of the team can review your code for errors.
+
+You make changes to your branch based on feedback and push the new commits up.
+
+The PR automatically updates with your changes.
+
+Once everyone is satisfied, a repo maintainer on GitHub can merge your branch.
+
+Huzzah! Your code is in the main branch and ready for everyone else to `git pull`.
+
+You’ll create and manage your pull requests via GitHub’s web portal, instead of the command line. You’ll walk through the process of creating, reviewing, and merging a pull request in an upcoming project.
+
+### Browsing Your Git Repository
+
+Repositories can feel intimidating at first, but it won’t take you long to navigate code like you own the place — because you do! Let’s discuss a few tools native to Git that help us browse our changes over time.
+
+We’ll be covering:
+
+Comparing changes with `git diff`
+
+Browsing through our code “checkpoints” with `git checkout`
+
+### Seeing changes in real time
+
+Git is all about change tracking, so it makes sense that it would include a utility for visualizing a set of changes. We refer to a list of differences between two files (or the same file over time) as a _diff_, and we can use `git diff` to visualize diffs in our repo!
+
+When run with no extra options, `git diff` will return any tracked changes in our working directory since the last commit. **Tracked** is a key word here; `git diff` won’t show us changes to files that haven’t been included in our repo via `git add`. This is helpful for seeing what you’ve changed before committing! Here’s an example of a small change:
+
+![](https://cdn-images-1.medium.com/max/800/1*zRnx1PxLRHNl9fYtBzxxsg.png)
+
+Let’s break down some of the new syntax in this output.
+
+The diff opens with some Git-specific data, including the branch/files we’re checking, and some unique hashes that Git uses to track each diff. You can skip past this to get to the important bits.
+
+`---` & `+++` let us know that there are both additions and subtractions in the file “App.js”. A diff doesn’t have a concept of inline changes – it treats a single change as removing something old and replacing it with something new.
+
+`@@` lets us know that we’re starting a single “chunk” of the diff. A diff could have multiple chunks for a single file (for example: if you made changes far apart, like the header & footer). The numbers in between tell us how many lines we’re seeing and where they start. For example: `@@ +1,3 -1,3 @@` means we’ll see three lines of significant content, including both addition & removal, beginning at line one.
+
+In the code itself, lines that were removed are prefixed with a `-` and lines that were added are prefixed with a `+`. Remember that you won’t see these on the same lines. Even if you only changed a few words, Git will still treat it like the whole line was replaced.
+
+### Diff options
+
+Remember that, by default, `git diff` compares the current working directory to the last commit. You can compare the staging area instead of the working directory with `git diff --staged`. This is another great way to double-check your work before pushing up to a remote branch.
+
+You’re also not limited to your current branch — or even your current commit! You can pass a base & target branch to compare, and you can use some special characters to help you browse faster! Here are a few examples:
+
+    # See differences between the 'feature'
+
+    # branch and the 'master' branch.
+
+    > git diff master feature
+
+    # Compare two different commits
+
+    > git diff 1fc345a 2e3dff
+
+    # Compare a specific file across separate commits
+
+    > git diff 1fc345a 2e3dff my-file.js
+
+### Time travel
+
+`git diff` gives us the opportunity to explore our code’s current state, but what if we wanted to see its state at a different point in time? We can use _checkout_! `git checkout` lets us take control of our `HEAD` to bounce around our timeline as we please.
+
+Remember that `HEAD` is a special Git reference that usually follows the latest commit on our current branch. We can use `git checkout` to point our `HEAD` reference at a different commit, letting us travel to any commit in our repository’s history. By reading the commit message and exploring the code at the time of the commit, we can see not only what changed but also why it changed! This can be great for debugging a problem or understanding how an app evolved.
+
+Let’s look at a diagram to understand what `checkout` does a little better:
+
+![](https://cdn-images-1.medium.com/max/800/1*eqVSR_YD0kYQWHoLLbJs9Q.png)
+
+Notice that we haven’t lost any commits, commit messages, or code changes. Using `git checkout` is entirely non-destructive.
+
+To browse to a different commit, simply pass in a reference or hash for the commit you’d like to explore. `git checkout` also supports a few special characters & reserved references:
+
+    # You can checkout a branch name.
+
+    # You'll be using this particular branch a lot!
+
+    > git checkout master
+
+    # You can also use commit hashes directly
+
+    > git checkout 7d3e2f1
+
+    # Using a hyphen instead of a hash will take
+
+    # you to the last branch you checked out
+
+    > git checkout -
+
+    # You can use "HEAD~N" to move N commits prior
+
+    # to the current HEAD
+
+    > git checkout HEAD~3
+
+Once you’re done browsing the repo’s history, you can use `git checkout <your-branch-name>` to move `HEAD` back to the front of the line (your most recent commit). For example, in our diagram above, we could use `git checkout master` to take our `HEAD` reference back to commit `42ffa1`.
+
+### Why checkout?
+
+Most of Git’s power comes from a simple ability: viewing commits in the past and understanding how they connect. This is why mastering the `git checkout` command is so important: it lets you think more like Git and gives you full freedom of navigation without risking damage to the repo’s contents.
+
+That said, you’ll likely use shortcuts like `git checkout -` far more often than specifically checking out commit hashes. Especially with the advent of user-friendly tools like GitHub, it’s much easier to visualize changes outside the command line. We’ll demonstrate browsing commit histories on GitHub in a future lesson.
+
+### Git ‘Do-Overs’: Reset & Rebase
+
+![](https://cdn-images-1.medium.com/max/800/0*5yBLWI2EMAqgm01n.jpg)
+
+Git is designed to protect you — not only from others, but also from yourself! Of course, there are times where you’d like to exercise your own judgement, even if it may not be the best thing to do. For this, Git provides some helpful tools to change commits and “time travel”.
+
+Before we talk about these, a warning: **The commands in this lesson are destructive!** If used improperly, you could lose work, damage a teammate’s branch, or even rewrite the history of your entire project. You should exercise caution when using these on production code, and don’t hesitate to ask for help if you’re unsure what a command might do.
+
+After this lesson, you should:
+
+Be able to roll back changes to particular commit.
+
+Have an understanding of how rebasing affects your commit history.
+
+Know when to rebase/reset and when **not** to.
+
+### Resetting the past
+
+Remember how our commits form a timeline? We can see the state of our project at any point using `git checkout`. What if we want to travel back in time to a point before we caused a new bug or chose a terrible font? `git reset` is the answer!
+
+> _Resetting_ involves moving our `HEAD` ref back to a different commit.
+
+No matter how we reset, `HEAD` will move with us. Unlike `git checkout`, this will also destroy intermediate commits. We can use some additional flags to determine how our code changes are handled.
+
+### Soft resets
+
+The least-dangerous reset of all is `git reset --soft`.
+
+A soft reset will move our `HEAD` ref to the commit we’ve specified, and will leave any intermediate changes in the staging area.
+
+This means you won’t lose any code, though you will lose commit messages.
+
+A practical example of when a soft reset would be handy is joining some small commits into a larger one. We’ll pretend we’ve been struggling with “their”, “there”, and “they’re” in our app. Here’s our commit history:Those commit messages aren’t great: they’re not very explanatory, and they don’t provide a lot of value in our commit history. We’ll fix them with a soft reset:
+
+    git reset --soft 9c5e2fc
+
+This moves our `HEAD` ref back to our first commit. Looking at our commit log now, we might be worried we’ve lost our changes:
+
+![](https://cdn-images-1.medium.com/max/800/1*slbLxXdNbv3L7UsCHGdCIg.png)
+
+Our changes are still present in the staging area, ready to be re-committed when we’re ready! We can use `git commit` to re-apply those changes to our commit history with a new, more helpful message instead:
+
+![](https://cdn-images-1.medium.com/max/800/1*UleGR-ijDRZw4UqbEbAk0Q.png)
+
+Notice that the new commit has a totally new hash. The old commit messages (and their associated hashes) have been lost, but our code changes are safe and sound!
+
+### Risky Business: Mixed resets
+
+If soft resets are the safest form of `git reset`, mixed resets are the most average! This is exactly why they’re the default: running `git reset` without adding a flag is the same as running `git reset --mixed`.
+
+In a mixed reset, your changes are preserved, but they’re moved from the commit history directly to the working directory. This means you’ll have to use `git add` to choose everything you want in future commits.
+
+Mixed resets are a good option when you want to alter a change in a previous commit. Let’s use a mixed reset with our “their”, “there”, “they’re” example again.
+
+We’ll start with “they’re”:
+
+![](https://cdn-images-1.medium.com/max/800/1*I71W4NpNdNz8NPr7i2tcAQ.png)
+
+Notice again that you don’t lose your code with a mixed reset, but you do lose your commit messages & hashes. The difference between `--soft` and `--mixed` comes down to whether you’ll be keeping the code exactly the same before re-committing it or making changes.
+
+### Hard resets
+
+Hard resets are the most dangerous type of reset in Git. Hard resets adjust your `HEAD` ref and _totally destroy any interim code changes_. Poof. Gone forever.
+
+There are very few good uses for a hard reset, but one is to get yourself out of a tight spot. Let’s say you’ve made a few changes to your repository but you now realize those changes were unnecessary. You’d like to move back in time so that your code looks exactly as it did before any changes were made. `git reset --hard` can take you there.
+
+It’s our last round with “their”, “there”, and “they’re”. We’ve tried it all three ways and decided we don’t need to use that word at all! Let’s walk through a hard reset to get rid of our changes.
+
+We’ll start in the same place we began for our soft reset:
+
+![](https://cdn-images-1.medium.com/max/800/1*PHWuTBoZeQ1L2hgRdXu6fg.png)
+
+It turns out that we’ll be using a video on our homepage and don’t need text at all! Let’s step back in time:
+
+    git reset --hard 9c5e2fc
+
+Our Git log output is much simpler now:
+
+![](https://cdn-images-1.medium.com/max/800/1*1NovgUyM_ed7h5MozcBY-g.png)
+
+It’s empty — no changes in your working directory and no changes in your staging area. This is major difference between a hard reset and a soft/mixed reset: you will lose _all your changes_ back to the commit you’ve reset to.
+
+If your teammate came rushing in to tell you that the boss has changed their mind and wants that homepage text after all, you’re going to be re-doing all that work! Be very confident that the changes you’re losing are unimportant before embarking on a hard reset.
+
+### Rebase: ‘Alt-time travel’
+
+![](https://cdn-images-1.medium.com/max/800/0*C_Y5Tr_o5BAS1l-3.jpeg)
+
+Sometimes we want to change more than a few commits on a linear timeline. What if we want to move multiple commits across branches? `git rebase` is the tool for us!
+
+_Rebasing_ involves changing your current branch’s base branch. We might do this if we accidentally started our branch from the wrong commit or if we’d like to incorporate changes from another branch into our own.
+
+> Isn’t that the same as git merge?
+
+`git merge`?” In almost all cases, you’d be right. Rebasing is a dangerous process that effectively rewrites history.
+
+### I see you too like to live life Dangerously… tell me about Rebase..
+
+Let’s look at a situation where we might be tempted to rebase. We’ve added a couple commits to a feature branch while other team members have been merging their code into the `master` branch. Once we’re ready to merge our own branch, we probably want to follow a tried-and-true procedure:
+
+    > git pull origin master
+
+This will fetch our remote `master` branch and merge its changes into our own feature branch, so it’s safe to pull request or `git push`. However, every time we do that, a merge commit will be created! This can make a big mess of our Git commit history, especially if lots of people are making small changes.
+
+We can use `git rebase` to move our changes silently onto the latest version of `master`. Here’s what the `git log` history of our two example branches looks like:
+
+![](https://cdn-images-1.medium.com/max/800/1*pzCQZEyJD3-NHcNRCTwxiQ.png)
+
+Notice that both branches start at `9c5e2fc`. That’s our common ancestor commit, and is where `git merge` would start stitching these branches together! We’re going to avoid that entirely with a rebase. We’ll run this command while we have `working-on-the-header` checked out:
+
+    git rebase master
+
+**Here’s our new commit history:**
+
+![](https://cdn-images-1.medium.com/max/800/1*1cH8OazC0L0pxZzfCdwXog.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*GswbfYSlQ3q0VeCdv29cww.png)
+
+### `working-on-the-header`
+
+See how we changed the color of our commits after the rebase? Take a close look at the commit history changes as well. Even though our commits have the same content, they have a new hash assigned, meaning they’re entirely new commits! This is what we mean by “rewriting history”: we’ve actually changed how Git refers to these changes now.
+
+### “Golden Rule of Git”
+
+These tools can all feel pretty nifty, but be very wary of using them too much! While they can augment your Git skills from good to great, they can also have catastrophic side effects.
+
+There’s a “Golden Rule of Git” you should know that directly relates to both `git reset` and `git rebase`:
+
+**_Never change the history of a branch that’s shared with others._**
+
+That’s it! It’s simple and to the point. If you’re resetting or rebasing your own code and you make a mistake, your worst case scenario is losing your own changes. However, if you start changing the history of code that others have contributed or are relying on, your accidental loss could affect many others!
+
+### How to check your Git configuration:
+
+The command below returns a list of information about your git configuration including user name and email:
+
+    git config -l
+
+### How to setup your Git username:
+
+With the command below you can configure your user name:
+
+    git config --global user.name "Fabio"
+
+### How to setup your Git user email:
+
+This command lets you setup the user email address you’ll use in your commits.
+
+    git config --global user.email "signups@fabiopacifici.com"
+
+### How to cache your login credentials in Git:
+
+You can store login credentials in the cache so you don’t have to type them in each time. Just use this command:
+
+    git config --global credential.helper cache
+
+### How to initialize a Git repo:
+
+Everything starts from here. The first step is to initialize a new Git repo locally in your project root. You can do so with the command below:
+
+    git init
+
+### How to add a file to the staging area in Git:
+
+The command below will add a file to the staging area. Just replace `filename_here` with the name of the file you want to add to the staging area.
+
+    git add filename_here
+
+### How to add all files in the staging area in Git
+
+If you want to add all files in your project to the staging area, you can use a wildcard `.` and every file will be added for you.
+
+    git add .
+
+### How to add only certain files to the staging area in Git
+
+With the asterisk in the command below, you can add all files starting with ‘fil’ in the staging area.
+
+    git add fil*
+
+### How to check a repository’s status in Git:
+
+This command will show the status of the current repository including staged, unstaged, and untracked files.
+
+    git status
+
+### How to commit changes in the editor in Git:
+
+This command will open a text editor in the terminal where you can write a full commit message.
+
+A commit message is made up of a short summary of changes, an empty line, and a full description of the changes after it.
+
+    git commit
+
+### How to commit changes with a message in Git:
+
+You can add a commit message without opening the editor. This command lets you only specify a short summary for your commit message.
+
+    git commit -m "your commit message here"
+
+### How to commit changes (and skip the staging area) in Git:
+
+You can add and commit tracked files with a single command by using the -a and -m options.
+
+    git commit -a -m"your commit message here"
+
+### How to see your commit history in Git:
+
+This command shows the commit history for the current repository:
+
+    git log
+
+### How to see your commit history including changes in Git:
+
+This command shows the commit’s history including all files and their changes:
+
+    git log -p
+
+### How to see a specific commit in Git:
+
+This command shows a specific commit.
+
+Replace commit-id with the id of the commit that you find in the commit log after the word commit.
+
+    git show commit-id
+
+### How to see log stats in Git:
+
+This command will cause the Git log to show some statistics about the changes in each commit, including line(s) changed and file names.
+
+    git log --stat
+
+### How to see changes made before committing them using “diff” in Git:
+
+You can pass a file as a parameter to only see changes on a specific file.  
+`git diff` shows only unstaged changes by default.
+
+We can call diff with the `--staged` flag to see any staged changes.
+
+    git diffgit diff all_checks.pygit diff --staged
+
+### How to see changes using “git add -p”:
+
+This command opens a prompt and asks if you want to stage changes or not, and includes other options.
+
+    git add -p
+
+### How to remove tracked files from the current working tree in Git:
+
+This command expects a commit message to explain why the file was deleted.
+
+    git rm filename
+
+### How to rename files in Git:
+
+This command stages the changes, then it expects a commit message.
+
+    git mv oldfile newfile
+
+### How to ignore files in Git:
+
+Create a `.gitignore` file and commit it.
+
+### How to revert unstaged changes in Git:
+
+    git checkout filename
+
+### How to revert staged changes in Git:
+
+You can use the -p option flag to specify the changes you want to reset.
+
+    git reset HEAD filenamegit reset HEAD -p
+
+### How to amend the most recent commit in Git:
+
+`git commit --amend` allows you to modify and add changes to the most recent commit.
+
+    git commit --amend
+
+!!Note!!: fixing up a local commit with amend is great and you can push it to a shared repository after you’ve fixed it. But you should avoid amending commits that have already been made public.
+
+### How to rollback the last commit in Git:
+
+`git revert` will create a new commit that is the opposite of everything in the given commit.  
+We can revert the latest commit by using the head alias like this:
+
+    git revert HEAD
+
+### How to rollback an old commit in Git:
+
+You can revert an old commit using its commit id. This opens the editor so you can add a commit message.
+
+    git revert comit_id_here
+
+### How to create a new branch in Git:
+
+By default, you have one branch, the main branch. With this command, you can create a new branch. Git won’t switch to it automatically — you will need to do it manually with the next command.
+
+    git branch branch_name
+
+### How to switch to a newly created branch in Git:
+
+When you want to use a different or a newly created branch you can use this command:
+
+    git checkout branch_name
+
+### How to list branches in Git:
+
+You can view all created branches using the `git branch` command. It will show a list of all branches and mark the current branch with an asterisk and highlight it in green.
+
+    git branch
+
+### How to create a branch in Git and switch to it immediately:
+
+In a single command, you can create and switch to a new branch right away.
+
+    git checkout -b branch_name
+
+### How to delete a branch in Git:
+
+When you are done working with a branch and have merged it, you can delete it using the command below:
+
+    git branch -d branch_name
+
+### How to merge two branches in Git:
+
+To merge the history of the branch you are currently in with the `branch_name`, you will need to use the command below:
+
+    git merge branch_name
+
+### How to show the commit log as a graph in Git:
+
+We can use `--graph` to get the commit log to show as a graph. Also,  
+`--oneline` will limit commit messages to a single line.
+
+    git log --graph --oneline
+
+### How to show the commit log as a graph of all branches in Git:
+
+Does the same as the command above, but for all branches.
+
+    git log --graph --online --all
+
+### How to abort a conflicting merge in Git:
+
+If you want to throw a merge away and start over, you can run the following command:
+
+    git merge --abort
+
+### How to add a remote repository in Git
+
+This command adds a remote repository to your local repository (just replace `[https://repo_here](https://repo_here/)` with your remote repo URL).
+
+    git add remote https://repo_here
+
+### How to see remote URLs in Git:
+
+You can see all remote repositories for your local repository with this command:
+
+    git remote -v
+
+### How to get more info about a remote repo in Git:
+
+Just replace `origin` with the name of the remote obtained by  
+running the git remote -v command.
+
+    git remote show origin
+
+### How to push changes to a remote repo in Git:
+
+When all your work is ready to be saved on a remote repository, you can push all changes using the command below:
+
+    git push
+
+### How to pull changes from a remote repo in Git:
+
+If other team members are working on your repository, you can retrieve the latest changes made to the remote repository with the command below:
+
+    git pull
+
+### How to check remote branches that Git is tracking:
+
+This command shows the name of all remote branches that Git is tracking for the current repository:
+
+    git branch -r
+
+### How to fetch remote repo changes in Git:
+
+This command will download the changes from a remote repo but will not perform a merge on your local branch (as git pull does that instead).
+
+    git fetch
+
+### How to check the current commits log of a remote repo in Git
+
+Commit after commit, Git builds up a log. You can find out the remote repository log by using this command:
+
+    git log origin/main
+
+### How to merge a remote repo with your local repo in Git:
+
+If the remote repository has changes you want to merge with your local, then this command will do that for you:
+
+    git merge origin/main
+
+### How to get the contents of remote branches in Git without automatically merging:
+
+This lets you update the remote without merging any content into the  
+local branches. You can call git merge or git checkout to do the merge.
+
+    git remote update
+
+### How to push a new branch to a remote repo in Git:
+
+If you want to push a branch to a remote repository you can use the command below. Just remember to add -u to create the branch upstream:
+
+    git push -u origin branch_name
+
+### How to remove a remote branch in Git:
+
+If you no longer need a remote branch you can remove it using the command below:
+
+    git push --delete origin branch_name_here
+
+### How to use Git rebase:
+
+You can transfer completed work from one branch to another using `git rebase`.
+
+    git rebase branch_name_here
+
+Git Rebase can get really messy if you don’t do it properly. Before using this command I suggest that you re-read the official documentation [here](https://git-scm.com/book/it/v2/Git-Branching-Rebasing)
+
+### How to run rebase interactively in Git:
+
+You can run git rebase interactively using the -i flag.  
+It will open the editor and present a set of commands you can use.
+
+    git rebase -i master# p, pick = use commit# r, reword = use commit, but edit the commit message# e, edit = use commit, but stop for amending# s, squash = use commit, but meld into previous commit# f, fixup = like "squash", but discard this commit's log message# x, exec = run command (the rest of the line) using shell# d, drop = remove commit
+
+### How to force a push request in Git:
+
+This command will force a push request. This is usually fine for pull request branches because nobody else should have cloned them.  
+But this isn’t something that you want to do with public repos.
+
+    git push -f
+
+---
+
+### Git Alias Overview
+
+It is important to note that there is no direct `git alias` command. Aliases are created through the use of the `[git config](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)` command and the Git configuration files. As with other configuration values, aliases can be created in a local or global scope.
+
+To better understand Git aliases let us create some examples.
+
+    $ git config --global alias.co checkout$ git config --global alias.br branch$ git config --global alias.ci commit$ git config --global alias.st status
+
+The previous code example creates globally stored shortcuts for common git commands. Creating the aliases will not modify the source commands. So `git checkout` will still be available even though we now have the `git co` alias. These aliases were created with the `--global` flag which means they will be stored in Git’s global operating system level configuration file. On linux systems, the global config file is located in the User home directory at `/.gitconfig`.
+
+    [alias]        co = checkout            br = branch            ci = commit            st = status
+
+This demonstrates that the aliases are now equivalent to the source commands.
+
+### Usage
+
+Git aliasing is enabled through the use of `git config`, For command-line option and usage examples please review the `[git config](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)` documentation.
+
+### Examples
+
+### Using aliases to create new Git commands
+
+A common Git pattern is to remove recently added files from the staging area. This is achieved by leveraging options to the `git reset` command. A new alias can be created to encapsulate this behavior and create a new alias-command-keyword which is easy to remember:
+
+    git config --global alias.unstage 'reset HEAD --'
+
+The preceding code example creates a new alias `unstage`. This now enables the invocation of `git unstage. git unstage` which will perform a reset on the staging area. This makes the following two commands equivalent.
+
+    git unstage fileA$ git reset HEAD -- fileA
+
+### My Default Gitignore:
+
+[https://gist.github.com/bgoonz/edf38d971ba96cbbe056d7afd4a5da2e](https://gist.github.com/bgoonz/edf38d971ba96cbbe056d7afd4a5da2e)
+
+---
+
+### Troubleshooting Git
+
+![](https://cdn-images-1.medium.com/max/800/1*cFb6UcCGmIcNU1-woncSTA.png)
+
+### Here are some tips on troubleshooting and resolving issues with Git.
+
+### Broken pipe errors on `git push`
+
+‘Broken pipe’ errors can occur when attempting to push to a remote repository. When pushing you usually see:
+
+    Write failed: Broken pipefatal: The remote end hung up unexpectedly
+
+To fix this issue, here are some possible solutions.
+
+### Increase the POST buffer size in Git
+
+**If you’re using Git over HTTP instead of SSH**, you can try increasing the POST buffer size in Git’s configuration.
+
+Example of an error during a clone: `fatal: pack has bad object at offset XXXXXXXXX: inflate returned -5`
+
+Open a terminal and enter:
+
+    git config http.postBuffer 52428800
+
+The value is specified in bytes, so in the above case the buffer size has been set to 50MB. The default is 1MB.
+
+### Check your SSH configuration
+
+**If pushing over SSH**, first check your SSH configuration as ‘Broken pipe’ errors can sometimes be caused by underlying issues with SSH (such as authentication). Make sure that SSH is correctly configured by following the instructions in the [SSH troubleshooting](https://docs.gitlab.com/ee/ssh/README.html#troubleshooting-ssh-connections) documentation.
+
+If you’re a GitLab administrator and have access to the server, you can also prevent session timeouts by configuring SSH `keep alive` either on the client or on the server.
+
+Configuring both the client and the server is unnecessary.
+
+**To configure SSH on the client side**:
+
+-   On UNIX, edit `~/.ssh/config` (create the file if it doesn’t exist) and add or edit:
+-   `Host your-gitlab-instance-url.com ServerAliveInterval 60 ServerAliveCountMax 5`
+-   On Windows, if you are using PuTTY, go to your session properties, then navigate to “Connection” and under “Sending of null packets to keep session active”, set `Seconds between keepalives (0 to turn off)` to `60`.
+
+**To configure SSH on the server side**, edit `/etc/ssh/sshd_config` and add:
+
+    ClientAliveInterval 60ClientAliveCountMax 5
+
+### Running a `git repack`
+
+**If ‘pack-objects’ type errors are also being displayed**, you can try to run a `git repack` before attempting to push to the remote repository again:
+
+    git repackgit push
+
+### Upgrade your Git client
+
+In case you’re running an older version of Git (< 2.9), consider upgrading to >= 2.9 (see [Broken pipe when pushing to Git repository](https://stackoverflow.com/questions/19120120/broken-pipe-when-pushing-to-git-repository/36971469#36971469)).
+
+### `ssh_exchange_identification` error
+
+Users may experience the following error when attempting to push or pull using Git over SSH:
+
+    Please make sure you have the correct access rightsand the repository exists....ssh_exchange_identification: read: Connection reset by peerfatal: Could not read from remote repository.
+
+or
+
+    ssh_exchange_identification: Connection closed by remote hostfatal: The remote end hung up unexpectedly
+
+This error usually indicates that SSH daemon’s `MaxStartups` value is throttling SSH connections. This setting specifies the maximum number of concurrent, unauthenticated connections to the SSH daemon. This affects users with proper authentication credentials (SSH keys) because every connection is ‘unauthenticated’ in the beginning. The default value is `10`.
+
+Increase `MaxStartups` on the GitLab server by adding or modifying the value in `/etc/ssh/sshd_config`:
+
+    MaxStartups 100:30:200
+
+`100:30:200` means up to 100 SSH sessions are allowed without restriction, after which 30% of connections are dropped until reaching an absolute maximum of 200.
+
+Once configured, restart the SSH daemon for the change to take effect.
+
+    # Debian/Ubuntusudo systemctl restart ssh
+
+    # CentOS/RHELsudo service sshd restart
+
+### Timeout during `git push` / `git pull`
+
+If pulling/pushing from/to your repository ends up taking more than 50 seconds, a timeout is issued. It contains a log of the number of operations performed and their respective timings, like the example below:
+
+    remote: Running checks for branch: masterremote: Scanning for LFS objects... (153ms)remote: Calculating new repository size... (cancelled after 729ms)
+
+This could be used to further investigate what operation is performing poorly and provide GitLab with more information on how to improve the service.
+
+### `git clone` over HTTP fails with `transfer closed with outstanding read data remaining` error
+
+If the buffer size is lower than what is allowed in the request, the action fails with an error similar to the one below:
+
+    error: RPC failed; curl 18 transfer closed with outstanding read data remainingfatal: The remote end hung up unexpectedlyfatal: early EOFfatal: index-pack failed
+
+This can be fixed by increasing the existing `http.postBuffer` value to one greater than the repository size. For example, if `git clone` fails when cloning a 500M repository, you should set `http.postBuffer` to `524288000`. That setting ensures the request only starts buffering after the first 524288000 bytes.
+
+The default value of `http.postBuffer`, 1 MiB, is applied if the setting is not configured.
+
+    git config http.postBuffer 524288000
+
+---
+
+### **Further Reading:**
+
+[https://gist.github.com/bgoonz/140a268bdc42f03bbb4ab47a9cd11263](https://gist.github.com/bgoonz/140a268bdc42f03bbb4ab47a9cd11263)[https://gist.github.com/bgoonz/69bb5ef5e62f9350d2766df123cc6e54](https://gist.github.com/bgoonz/69bb5ef5e62f9350d2766df123cc6e54)
+
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://bryanguner.medium.com/git-tricks-57e8d0292285](https://bryanguner.medium.com/git-tricks-57e8d0292285)[https://bryanguner.medium.com/git-tricks-57e8d0292285](https://bryanguner.medium.com/git-tricks-57e8d0292285)
+
+### Or Checkout my personal Resource Site:
+
+[https://bryanguner.medium.com/git-tricks-57e8d0292285](https://bryanguner.medium.com/git-tricks-57e8d0292285)
+
+![](https://cdn-images-1.medium.com/max/800/0*In5wB-29T0Ud_zs3.jpg)
+
+### How to learn effectively
+
+**Learning**: The acquisition of skills and the ability to apply them in the future.
+
+**What makes an Effective learner?**
+
+-   They are active listeners.
+-   They are engaged with the material.
+-   They are receptive of feedback.
+-   They are open to difficulty.
+
+**Why do active learning techniques feel difficult?**
+
+-   It feels difficult because you are constantly receiving feedback, and so you are constantly adapting and perfecting the material.
+
+**Desirable Difficulty**
+
+-   The skills we wish to obtain is often a difficult one.
+-   We want challenging but possible lessons based on current level of skill.
+
+**Effective learners space their practice**
+
+-   Consistent effort > cramming => for **durable knowledge**
+
+---
+
+### Getting visual feedback in your programs
+
+The first command we’ll learn in JavaScript is `console.log`. This command is used to _print_ something onto the screen. As we write our first lines of code, we’ll be using `console.log` frequently as a way to visually see the output of our programs. Let’s write our first program:
+
+    console.log("hello world");console.log("how are you?");
+
+Executing the program above would print out the following:
+
+    hello worldhow are you?
+
+Nothing too ground breaking here, but pay close attention to the exact way we wrote the program. In particular, notice how we lay out the periods, parentheses, and quotation marks. We’ll also terminate lines with semicolons (;).
+
+> _Depending on how you structure your code, sometimes you’ll be able to omit semicolons at the end of lines. For now, you’ll want to include them just as we do._
+
+### Syntax
+
+We refer to the exact arrangement of the symbols, characters, and keywords as **syntax**. These details matter — your computer will only be able to “understand” proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!
+
+As you write your first lines of code in this new language, you may make many syntax errors. Don’t get frustrated! This is normal — all new programmers go through this phase. Every time we recognize an error in our code, we have an opportunity to reinforce your understanding of correct syntax. Adopt a growth mindset and learn from your mistakes.
+
+Additionally, one of the best things about programming is that we can get such immediate feedback from our creations. There is no penalty for making a mistake when programming. Write some code, run the code, read the errors, fix the errors, rinse and repeat!
+
+### Code comments
+
+Occasionally we’ll want to leave **comments** or notes in our code. Commented lines will be ignored by our computer. This means that we can use comments to write plain english or temporarily avoid execution of some JavaScript lines. The proper _syntax_ for writing a comment is to begin the line with double forward slashes (`//`):
+
+    // let's write another program!!!console.log("hello world");
+
+    // console.log("how are you?");
+
+    console.log("goodbye moon");
+
+The program above would only print:
+
+    hello worldgoodbye moon
+
+Comments are useful when annotating pieces of code to offer an explanation of how the code works. We’ll want to strive to write straightforward code that is self-explanatory when possible, but we can also use comments to add additional clarity. The real art of programming is to write code so elegantly that it is easy to follow.
+
+**The Number Data Type**
+
+The **number** data type in JS is used to represent any numerical values, including integers and decimal numbers.
+
+**Basic Arithmetic Operators**
+
+Operators are the symbols that perform particular operations.
+
+-   **+** (addition)
+-   **–** (subtraction)
+-   **asterisk** (multiplication)
+-   **/** (division)
+-   **%** (modulo)
+
+JS evaluates more complex expressions using the general math order of operations aka PEMDAS.
+
+-   **PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.
+-   _To force a specific order of operation, use the group operator ( ) around a part of the expression._
+
+**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
+
+-   Whenever you have a smaller number % a larger number, the answer will just be the initial small number.   
+     console.log(7 % 10) // => 7;
+
+**The String Data Type**
+
+The **string** data type is a primitive data type that used to represent textual data.
+
+-   can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.
+-   If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
+     “That’s a great string”; (valid)
+
+    ‘Shakespeare wrote, “To be or not to be”’; (valid)
+
+    ‘That’s a bad string’; (invalid)
+
+-   Alt. way to add other quotes within strings is to use template literals.  
+     \`This is a temp’l’ate literal ${function}\` // use ${} to invoke functions within.
+-   **.length** : property that can be appended to data to return the length.
+-   empty strings have a length of zero.
+-   **indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
+     console.log(“bootcamp”\[0\]); // => “b”  
+     console.log(“bootcamp”\[10\]); // => “undefined”  
+     console.log(“boots”\[1 \* 2\]); // => “o”  
+     console.log(“boots”\[“boot”.length-1\]); // => “t”
+-   we can pass expressions through the brackets as well since JS always evaluates expressions first.
+-   The index of the last character of a string is always one less than it’s length.
+-   **indexOf()** : method used to find the first index of a given character within a string.  
+     console.log(“bagel”.indexOf(“b”)); // => 0  
+     console.log(“bagel”.indexOf(“z”)); // => -1
+-   if the character inside the indexOf() search does not exist in the string, the output will be -1.
+-   the indexOf() search will return the first instanced index of the the char in the string.
+-   **concatenate** : word to describe joining strings together into a single string.
+
+**The Boolean Data Type**
+
+The **Boolean** data type is the simplest data type since there are only two values: **true** and **false**.
+
+-   **Logical Operators** (B*oolean Operators*) are used to establish logic in our code.
+-   **!** (not) : reverses a Boolean value.  
+     console.log(!true); // => false  
+     console.log(!!false); // => false
+-   **Logical Order of Operations** : JS will evaluate !, then &&, then ||.
+-   **Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
+     console.log(true || !false) // => stops after it sees “true ||”
+
+**Comparison Operators**
+
+All comparison operators will result in a boolean output.
+
+**The relative comparators**
+
+-   **\>** (greater than)
+-   **<** (less than)
+-   **\>=** (greater than or equal to)
+-   **<=** (less than or equal to)
+-   **\===** (equal to)
+-   **!==** (not equal to)
+
+Fun Fact: “a” < “b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so “a” is less than “b” because it appears earlier!
+
+If there is ever a standstill comparison of two string lexicographically (i.e. app vs apple) the comparison will deem the shorter string lesser.
+
+**Difference between == and ===**
+
+#### \===
+
+Strict Equality, will only return true if the two comparisons are entirely the same.
+
+#### \==
+
+Loose Equality, will return true even if the values are of a different type, due to coercion. (Avoid using this)
+
+**Variables**
+
+Variables are used to store information to be referenced and manipulated in a program.
+
+-   We initialize a variable by using the **let** keyword and a **\=** single equals sign (assignment operator).   
+     let bootcamp = “App Academy”;  
+     console.log(bootcamp); // “App Academy”
+-   JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).
+-   If you do not declare a value for a variable, undefined is automatically set.   
+     let bootcamp;  
+     console.log(bootcamp); // undefined
+-   We can change the value of a previously declared variable (let, not const) by re-assigning it another value.
+-   **let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope
+
+**Assignment Shorthand**
+
+let num = 0;  
+ num += 10; // same as num = num + 10  
+ num -= 2; // same as num = num — 2  
+ num /= 4; // same as num = num / 4  
+ num \*= 7; // same as num = num \* 7
+
+-   In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.
+
+**Functions**
+
+A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as ‘subprograms’)
+
+-   **Function Declaration** : Process when we first initially write our function.
+-   Includes three things:
+-   Name of the function.
+-   A list of _parameters_ ()
+-   The code to execute {}
+-   **Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)
+-   JS evaluates code top down, left to right.
+-   When we execute a declared function later on in our program we refer to this as **invoking** our function.
+-   Every function in JS returns undefined unless otherwise specified.
+-   When we hit a **return** statement in a function we immediately exit the function and return to where we called the function.
+-   When naming functions in JS always use camelCase and name it something appropriate.
+
+Greate code reads like English and almost explains itself. Think: Elegant, readable, and maintainable!
+
+**Parameters and Arguments**
+
+-   **Parameters** : Comma seperated variables specified as part of a function’s declaration.
+-   **Arguments** : Values passed to the function when it is invoked.
+-   _If the number of arguments passed during a function invocation is different than the number of paramters listed, it will still work._
+-   However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.
+
+### Including Comments
+
+Comments are important because they help other people understand what is going on in your code or remind you if you forgot something yourself. Keep in mind that they have to be marked properly so the browser won’t try to execute them.
+
+In JavaScript you have two different options:
+
+-   Single-line comments — To include a comment that is limited to a single line, precede it with `//`
+-   Multi-line comments — In case you want to write longer comments between several lines, wrap it in `/*` and `*/` to avoid it from being executed
+
+### Variables in JavaScript
+
+Variables are stand-in values that you can use to perform operations. You should be familiar with them from math class.
+
+### var, const, let
+
+You have three different possibilities for declaring a variable in JavaScript, each with their own specialties:
+
+-   `var` — The most common variable. It can be reassigned but only accessed within a function. Variables defined with `var` move to the top when the code is executed.
+-   `const` — Can not be reassigned and not accessible before they appear within the code.
+-   `let` — Similar to `const`, the `let` variable can be reassigned but not re-declared.
+
+### Data Types
+
+Variables can contain different types of values and data types. You use `=` to assign them:
+
+-   Numbers — `var age = 23`
+-   Variables — `var x`
+-   Text (strings) — `var a = "init"`
+-   Operations — `var b = 1 + 2 + 3`
+-   True or false statements — `var c = true`
+-   Constant numbers — `const PI = 3.14`
+-   Objects — `var name = {firstName:"John", lastName:"Doe"}`
+
+There are more possibilities. Note that variables are case sensitive. That means `lastname` and `lastName` will be handled as two different variables.
+
+### Objects
+
+Objects are certain kinds of variables. They are variables that can have their own values and methods. The latter are actions that you can perform on objects.
+
+var person = {
+
+firstName:”John”,
+
+lastName:”Doe”,
+
+age:20,
+
+nationality:”German”
+
+};
+
+### The Next Level: Arrays
+
+Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here’s how to create one in JavaScript:
+
+var fruit = \[“Banana”, “Apple”, “Pear”\];
+
+Now you have an array called `fruit` which contains three items that you can use for future operations.
+
+### Array Methods
+
+Once you have created arrays, there are a few things you can do with them:
+
+-   `concat()` — Join several arrays into one
+-   `indexOf()` — Returns the first position at which a given element appears in an array
+-   `join()` — Combine elements of an array into a single string and return the string
+-   `lastIndexOf()` — Gives the last position at which a given element appears in an array
+-   `pop()` — Removes the last element of an array
+-   `push()` — Add a new element at the end
+-   `reverse()` — Sort elements in a descending order
+-   `shift()` — Remove the first element of an array
+-   `slice()` — Pulls a copy of a portion of an array into a new array
+-   `sort()` — Sorts elements alphabetically
+-   `splice()` — Adds elements in a specified way and position
+-   `toString()` — Converts elements to strings
+-   `unshift()` —Adds a new element to the beginning
+-   `valueOf()` — Returns the primitive value of the specified object
+
+### Operators
+
+If you have variables, you can use them to perform different kinds of operations. To do so, you need operators.
+
+### Basic Operators
+
+-   `+` — Addition
+-   `-` — Subtraction
+-   `*` — Multiplication
+-   `/` — Division
+-   `(...)` — Grouping operator, operations within brackets are executed earlier than those outside
+-   `%` — Modulus (remainder )
+-   `++` — Increment numbers
+-   `--` — Decrement numbers
+
+### Comparison Operators
+
+-   `==` — Equal to
+-   `===` — Equal value and equal type
+-   `!=` — Not equal
+-   `!==` — Not equal value or not equal type
+-   `>` — Greater than
+-   `<` — Less than
+-   `>=` — Greater than or equal to
+-   `<=` — Less than or equal to
+-   `?` — Ternary operator
+
+### Logical Operators
+
+-   `&&` — Logical and
+-   `||` — Logical or
+-   `!` — Logical not
+
+### Bitwise Operators
+
+-   `&` — AND statement
+-   `|` — OR statement
+-   `~` — NOT
+-   `^` — XOR
+-   `<<` — Left shift
+-   `>>` — Right shift
+-   `>>>` — Zero fill right shift
+
+### Functions
+
+JavaScript functions are blocks of code that perform a certain task. A basic function looks like this:
+
+function name(parameter1, parameter2, parameter3) {
+
+// what the function does
+
+}
+
+As you can see, it consists of the `function` keyword plus a name. The function’s parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
+
+### Outputting Data
+
+A common application for functions is the output of data. For the output, you have the following options:
+
+-   `alert()` — Output data in an alert box in the browser window
+-   `confirm()` — Opens up a yes/no dialog and returns true/false depending on user click
+-   `console.log()` — Writes information to the browser console, good for debugging purposes
+-   `document.write()` — Write directly to the HTML document
+-   `prompt()` — Creates a dialogue for user input
+
+### Global Functions
+
+Global functions are functions built into every browser capable of running JavaScript.
+
+-   `decodeURI()` — Decodes a [Uniform Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) created by `encodeURI` or similar
+-   `decodeURIComponent()` — Decodes a URI component
+-   `encodeURI()` — Encodes a URI into UTF-8
+-   `encodeURIComponent()` — Same but for URI components
+-   `eval()` — Evaluates JavaScript code represented as a string
+-   `isFinite()` — Determines whether a passed value is a finite number
+-   `isNaN()` — Determines whether a value is NaN or not
+-   `Number()` —- Returns a number converted from its argument
+-   `parseFloat()` — Parses an argument and returns a floating-point number
+-   `parseInt()` — Parses its argument and returns an integer
+
+### JavaScript Loops
+
+Loops are part of most programming languages. They allow you to execute blocks of code desired number of times with different values:
+
+for (before loop; condition **for** loop; execute after loop) {
+
+// what to do during the loop
+
+}
+
+You have several parameters to create loops:
+
+-   `for` — The most common way to create a loop in JavaScript
+-   `while` — Sets up conditions under which a loop executes
+-   `do while` — Similar to the `while` loop but it executes at least once and performs a check at the end to see if the condition is met to execute again
+-   `break` —Used to stop and exit the cycle at certain conditions
+-   `continue` — Skip parts of the cycle if certain conditions are met
+
+### If — Else Statements
+
+These types of statements are easy to understand. Using them, you can set conditions for when your code is executed. If certain conditions apply, something is done, if not — something else is executed.
+
+if (condition) {
+
+// what to do if condition is met
+
+} **else** {
+
+// what to do if condition is not met
+
+}
+
+A similar concept to `if else` is the `switch` statement. However, using the switch you select one of several code blocks to execute.
+
+### Strings
+
+Strings are what JavaScript calls to text that does not perform a function but can appear on the screen.
+
+var person = “John Doe”;
+
+In this case, `John Doe` is the string.
+
+### Escape Characters
+
+In JavaScript, strings are marked with single or double-quotes. If you want to use quotation marks in a string, you need to use special characters:
+
+-   `\'` — Single quote
+-   `\"` — Double quote
+
+Aside from that you also have additional escape characters:
+
+-   `\\` — Backslash
+-   `\b` — Backspace
+-   `\f` — Form feed
+-   `\n` — New line
+-   `\r` — Carriage return
+-   `\t` — Horizontal tabulator
+-   `\v` — Vertical tabulator
+
+### String Methods
+
+There are many different ways to work with strings:
+
+-   `charAt()` — Returns a character at a specified position inside a string
+-   `charCodeAt()` — Gives you the Unicode of a character at that position
+-   `concat()` — Concatenates (joins) two or more strings into one
+-   `fromCharCode()` — Returns a string created from the specified sequence of UTF-16 code units
+-   `indexOf()` — Provides the position of the first occurrence of a specified text within a string
+-   `lastIndexOf()` — Same as `indexOf()` but with the last occurrence, searching backward
+-   `match()` — Retrieves the matches of a string against a search pattern
+-   `replace()` — Find and replace specified text in a string
+-   `search()` — Executes a search for a matching text and returns its position
+-   `slice()` — Extracts a section of a string and returns it as a new string
+-   `split()` — Splits a string object into an array of strings at a specified position
+-   `substr()` — Similar to `slice()` but extracts a substring depending on a specified number of characters
+-   `substring()` — Also similar to `slice()` but can’t accept negative indices
+-   `toLowerCase()` — Convert strings to lower case
+-   `toUpperCase()` — Convert strings to upper case
+-   `valueOf()` — Returns the primitive value (that has no properties or methods) of a string object
+
+### Regular Expression Syntax
+
+Regular expressions are search patterns used to match character combinations in strings. The search pattern can be used for text search and text to replace operations.
+
+### Pattern Modifiers
+
+-   `e` — Evaluate replacement
+-   `i` — Perform case-insensitive matching
+-   `g` — Perform global matching
+-   `m` — Perform multiple line matching
+-   `s` — Treat strings as a single line
+-   `x` — Allow comments and whitespace in the pattern
+-   `U` — Ungreedy pattern
+
+### Brackets
+
+-   `[abc]` — Find any of the characters between the brackets
+-   `[^abc]` — Find any character which is not in the brackets
+-   `[0-9]` — Used to find any digit from 0 to 9
+-   `[A-z]` — Find any character from uppercase A to lowercase z
+-   `(a|b|c)` — Find any of the alternatives separated with `|`
+
+### Metacharacters
+
+-   `.` — Find a single character, except newline or line terminator
+-   `\w` — Word character
+-   `\W` — Non-word character
+-   `\d` — A digit
+-   `\D` — A non-digit character
+-   `\s` — Whitespace character
+-   `\S` — Non-whitespace character
+-   `\b` — Find a match at the beginning/end of a word
+-   `\B` — A match not at the beginning/end of a word
+-   `\0` — NUL character
+-   `\n` — A new line character
+-   `\f` — Form feed character
+-   `\r` — Carriage return character
+-   `\t` — Tab character
+-   `\v` — Vertical tab character
+-   `\xxx` — The character specified by an octal number xxx
+-   `\xdd` — Character specified by a hexadecimal number dd
+-   `\uxxxx` — The Unicode character specified by a hexadecimal number XXXX
+
+### Quantifiers
+
+-   `n+` — Matches any string that contains at least one n
+-   `n*` — Any string that contains zero or more occurrences of n
+-   `n?` — A string that contains zero or one occurrence of n
+-   `n{X}` — String that contains a sequence of X n’s
+-   `n{X,Y}` — Strings that contain a sequence of X to Y n’s
+-   `n{X,}` — Matches any string that contains a sequence of at least X n’s
+-   `n$` — Any string with n at the end of it
+-   `^n` — String with n at the beginning of it
+-   `?=n` — Any string that is followed by a specific string n
+-   `?!n` — String that is not followed by a specific string ni
+
+### Numbers and Math
+
+In JavaScript, you can also work with numbers, constants and perform mathematical functions.
+
+### Number Properties
+
+-   `MAX_VALUE` — The maximum numeric value representable in JavaScript
+-   `MIN_VALUE` — Smallest positive numeric value representable in JavaScript
+-   `NaN` — The “Not-a-Number” value
+-   `NEGATIVE_INFINITY` — The negative Infinity value
+-   `POSITIVE_INFINITY` — Positive Infinity value
+
+### Number Methods
+
+-   `toExponential()` — Returns the string with a rounded number written as exponential notation
+-   `toFixed()` — Returns the string of a number with a specified number of decimals
+-   `toPrecision()` — String of a number written with a specified length
+-   `toString()` — Returns a number as a string
+-   `valueOf()` — Returns a number as a number
+
+### Math Properties
+
+-   `E` — Euler’s number
+-   `LN2` — The natural logarithm of 2
+-   `LN10` — Natural logarithm of 10
+-   `LOG2E` — Base 2 logarithm of E
+-   `LOG10E` — Base 10 logarithm of E
+-   `PI` — The number PI
+-   `SQRT1_2` — Square root of 1/2
+-   `SQRT2` — The square root of 2
+
+### Math Methods
+
+-   `abs(x)` — Returns the absolute (positive) value of x
+-   `acos(x)` — The arccosine of x, in radians
+-   `asin(x)` — Arcsine of x, in radians
+-   `atan(x)` — The arctangent of x as a numeric value
+-   `atan2(y,x)` — Arctangent of the quotient of its arguments
+-   `ceil(x)` — Value of x rounded up to its nearest integer
+-   `cos(x)` — The cosine of x (x is in radians)
+-   `exp(x)` — Value of Ex
+-   `floor(x)` — The value of x rounded down to its nearest integer
+-   `log(x)` — The natural logarithm (base E) of x
+-   `max(x,y,z,...,n)` — Returns the number with the highest value
+-   `min(x,y,z,...,n)` — Same for the number with the lowest value
+-   `pow(x,y)` — X to the power of y
+-   `random()` — Returns a random number between 0 and 1
+-   `round(x)` — The value of x rounded to its nearest integer
+-   `sin(x)` — The sine of x (x is in radians)
+-   `sqrt(x)` — Square root of x
+-   `tan(x)` — The tangent of an angle
+
+### Dealing with Dates in JavaScript
+
+You can also work with and modify dates and time with JavaScript. This is the next chapter in the JavaScript cheat sheet.
+
+### Setting Dates
+
+-   `Date()` — Creates a new date object with the current date and time
+-   `Date(2017, 5, 21, 3, 23, 10, 0)` — Create a custom date object. The numbers represent a year, month, day, hour, minutes, seconds, milliseconds. You can omit anything you want except for a year and month.
+-   `Date("2017-06-23")` — Date declaration as a string
+
+### Pulling Date and Time Values
+
+-   `getDate()` — Get the day of the month as a number (1-31)
+-   `getDay()` — The weekday as a number (0-6)
+-   `getFullYear()` — Year as a four-digit number (yyyy)
+-   `getHours()` — Get the hour (0-23)
+-   `getMilliseconds()` — The millisecond (0-999)
+-   `getMinutes()` — Get the minute (0-59)
+-   `getMonth()` — Month as a number (0-11)
+-   `getSeconds()` — Get the second (0-59)
+-   `getTime()` — Get the milliseconds since January 1, 1970
+-   `getUTCDate()` — The day (date) of the month in the specified date according to universal time (also available for day, month, full year, hours, minutes etc.)
+-   `parse` — Parses a string representation of a date and returns the number of milliseconds since January 1, 1970
+
+### Set Part of a Date
+
+-   `setDate()` — Set the day as a number (1-31)
+-   `setFullYear()` — Sets the year (optionally month and day)
+-   `setHours()` — Set the hour (0-23)
+-   `setMilliseconds()` — Set milliseconds (0-999)
+-   `setMinutes()` — Sets the minutes (0-59)
+-   `setMonth()` — Set the month (0-11)
+-   `setSeconds()` — Sets the seconds (0-59)
+-   `setTime()` — Set the time (milliseconds since January 1, 1970)
+-   `setUTCDate()` — Sets the day of the month for a specified date according to universal time (also available for day, month, full year, hours, minutes etc.)
+
+### DOM Mode
+
+The DOM is the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) of a page. It is the code of the structure of a webpage. JavaScript comes with a lot of different ways to create and manipulate HTML elements (called nodes).
+
+### Node Properties
+
+-   `attributes` — Returns a live collection of all attributes registered to an element
+-   `baseURI` — Provides the absolute base URL of an HTML element
+-   `childNodes` — Gives a collection of an element’s child nodes
+-   `firstChild` — Returns the first child node of an element
+-   `lastChild` — The last child node of an element
+-   `nextSibling` — Gives you the next node at the same node tree level
+-   `nodeName` —Returns the name of a node
+-   `nodeType` — Returns the type of a node
+-   `nodeValue` — Sets or returns the value of a node
+-   `ownerDocument` — The top-level document object for this node
+-   `parentNode` — Returns the parent node of an element
+-   `previousSibling` — Returns the node immediately preceding the current one
+-   `textContent` — Sets or returns the textual content of a node and its descendants
+
+### Node Methods
+
+-   `appendChild()` — Adds a new child node to an element as the last child node
+-   `cloneNode()` — Clones an HTML element
+-   `compareDocumentPosition()` — Compares the document position of two elements
+-   `getFeature()` — Returns an object which implements the APIs of a specified feature
+-   `hasAttributes()` — Returns true if an element has any attributes, otherwise false
+-   `hasChildNodes()` — Returns true if an element has any child nodes, otherwise false
+-   `insertBefore()` — Inserts a new child node before a specified, existing child node
+-   `isDefaultNamespace()` — Returns true if a specified namespaceURI is the default, otherwise false
+-   `isEqualNode()` — Checks if two elements are equal
+-   `isSameNode()` — Checks if two elements are the same node
+-   `isSupported()` — Returns true if a specified feature is supported on the element
+-   `lookupNamespaceURI()` — Returns the namespace URI associated with a given node
+-   `lookupPrefix()` — Returns a DOMString containing the prefix for a given namespace URI if present
+-   `normalize()` — Joins adjacent text nodes and removes empty text nodes in an element
+-   `removeChild()` — Removes a child node from an element
+-   `replaceChild()` — Replaces a child node in an element
+
+### Element Methods
+
+-   `getAttribute()` — Returns the specified attribute value of an element node
+-   `getAttributeNS()` — Returns string value of the attribute with the specified namespace and name
+-   `getAttributeNode()` — Gets the specified attribute node
+-   `getAttributeNodeNS()` — Returns the attribute node for the attribute with the given namespace and name
+-   `getElementsByTagName()` — Provides a collection of all child elements with the specified tag name
+-   `getElementsByTagNameNS()` — Returns a live HTMLCollection of elements with a certain tag name belonging to the given namespace
+-   `hasAttribute()` — Returns true if an element has any attributes, otherwise false
+-   `hasAttributeNS()` — Provides a true/false value indicating whether the current element in a given namespace has the specified attribute
+-   `removeAttribute()` — Removes a specified attribute from an element
+-   `removeAttributeNS()` — Removes the specified attribute from an element within a certain namespace
+-   `removeAttributeNode()` — Takes away a specified attribute node and returns the removed node
+-   `setAttribute()` — Sets or changes the specified attribute to a specified value
+-   `setAttributeNS()` — Adds a new attribute or changes the value of an attribute with the given namespace and name
+-   `setAttributeNode()` — Sets or changes the specified attribute node
+-   `setAttributeNodeNS()` — Adds a new namespaced attribute node to an element
+
+### Working with the User Browser
+
+Besides HTML elements, JavaScript is also able to take into account the user browser and incorporate its properties into the code.
+
+### Window Properties
+
+-   `closed` — Checks whether a window has been closed or not and returns true or false
+-   `defaultStatus` — Sets or returns the default text in the status bar of a window
+-   `document` — Returns the document object for the window
+-   `frames` — Returns all `<iframe>` elements in the current window
+-   `history` — Provides the History object for the window
+-   `innerHeight` — The inner height of a window’s content area
+-   `innerWidth` — The inner width of the content area
+-   `length` — Find out the number of `<iframe>` elements in the window
+-   `location` — Returns the location object for the window
+-   `name` — Sets or returns the name of a window
+-   `navigator` — Returns the Navigator object for the window
+-   `opener` — Returns a reference to the window that created the window
+-   `outerHeight` — The outer height of a window, including toolbars/scrollbars
+-   `outerWidth` — The outer width of a window, including toolbars/scrollbars
+-   `pageXOffset` — Number of pixels the current document has been scrolled horizontally
+-   `pageYOffset` — Number of pixels the document has been scrolled vertically
+-   `parent` — The parent window of the current window
+-   `screen` — Returns the Screen object for the window
+-   `screenLeft` — The horizontal coordinate of the window (relative to the screen)
+-   `screenTop` — The vertical coordinate of the window
+-   `screenX` — Same as `screenLeft` but needed for some browsers
+-   `screenY` — Same as `screenTop` but needed for some browsers
+-   `self` — Returns the current window
+-   `status` — Sets or returns the text in the status bar of a window
+-   `top` — Returns the topmost browser window
+
+### Window Methods
+
+-   `alert()` — Displays an alert box with a message and an OK button
+-   `blur()` — Removes focus from the current window
+-   `clearInterval()` — Clears a timer set with `setInterval()`
+-   `clearTimeout()` — Clears a timer set with `setTimeout()`
+-   `close()` — Closes the current window
+-   `confirm()` — Displays a dialogue box with a message and an _OK_ and _Cancel_ button
+-   `focus()` — Sets focus to the current window
+-   `moveBy()` — Moves a window relative to its current position
+-   `moveTo()` — Moves a window to a specified position
+-   `open()` — Opens a new browser window
+-   `print()` — Prints the content of the current window
+-   `prompt()` — Displays a dialogue box that prompts the visitor for input
+-   `resizeBy()` — Resizes the window by the specified number of pixels
+-   `resizeTo()` — Resizes the window to a specified width and height
+-   `scrollBy()` — Scrolls the document by a specified number of pixels
+-   `scrollTo()` — Scrolls the document to specified coordinates
+-   `setInterval()` — Calls a function or evaluates an expression at specified intervals
+-   `setTimeout()` — Calls a function or evaluates an expression after a specified interval
+-   `stop()` — Stops the window from loading
+
+### Screen Properties
+
+-   `availHeight` — Returns the height of the screen (excluding the Windows Taskbar)
+-   `availWidth` — Returns the width of the screen (excluding the Windows Taskbar)
+-   `colorDepth` — Returns the bit depth of the color palette for displaying images
+-   `height` — The total height of the screen
+-   `pixelDepth` — The color resolution of the screen in bits per pixel
+-   `width` — The total width of the screen
+
+### JavaScript Events
+
+Events are things that can happen to HTML elements and are performed by the user. The programming language can listen for these events and trigger actions in the code. No JavaScript cheat sheet would be complete without them.
+
+### Mouse
+
+-   `onclick` — The event occurs when the user clicks on an element
+-   `oncontextmenu` — User right-clicks on an element to open a context menu
+-   `ondblclick` — The user double-clicks on an element
+-   `onmousedown` — User presses a mouse button over an element
+-   `onmouseenter` — The pointer moves onto an element
+-   `onmouseleave` — Pointer moves out of an element
+-   `onmousemove` — The pointer is moving while it is over an element
+-   `onmouseover` — When the pointer is moved onto an element or one of its children
+-   `onmouseout` — User moves the mouse pointer out of an element or one of its children
+-   `onmouseup` — The user releases a mouse button while over an element
+
+### Keyboard
+
+-   `onkeydown` — When the user is pressing a key down
+-   `onkeypress` — The moment the user starts pressing a key
+-   `onkeyup` — The user releases a key
+
+### Frame
+
+-   `onabort` — The loading of a media is aborted
+-   `onbeforeunload` — Event occurs before the document is about to be unloaded
+-   `onerror` — An error occurs while loading an external file
+-   `onhashchange` — There have been changes to the anchor part of a URL
+-   `onload` — When an object has loaded
+-   `onpagehide` — The user navigates away from a webpage
+-   `onpageshow` — When the user navigates to a webpage
+-   `onresize` — The document view is resized
+-   `onscroll` — An element’s scrollbar is being scrolled
+-   `onunload` — Event occurs when a page has unloaded
+
+### Form
+
+-   `onblur` — When an element loses focus
+-   `onchange` — The content of a form element changes (for `<input>`, `<select>` and `<textarea>`)
+-   `onfocus` — An element gets focus
+-   `onfocusin` — When an element is about to get focus
+-   `onfocusout` — The element is about to lose focus
+-   `oninput` — User input on an element
+-   `oninvalid` — An element is invalid
+-   `onreset` — A form is reset
+-   `onsearch` — The user writes something in a search field (for `<input="search">`)
+-   `onselect` — The user selects some text (for `<input>` and `<textarea>`)
+-   `onsubmit` — A form is submitted
+
+### Drag
+
+-   `ondrag` — An element is dragged
+-   `ondragend` — The user has finished dragging the element
+-   `ondragenter` — The dragged element enters a drop target
+-   `ondragleave` — A dragged element leaves the drop target
+-   `ondragover` — The dragged element is on top of the drop target
+-   `ondragstart` — User starts to drag an element
+-   `ondrop` — Dragged element is dropped on the drop target
+
+### Clipboard
+
+-   `oncopy` — User copies the content of an element
+-   `oncut` — The user cuts an element’s content
+-   `onpaste` — A user pastes the content in an element
+
+### Media
+
+-   `onabort` — Media loading is aborted
+-   `oncanplay` — The browser can start playing media (e.g. a file has buffered enough)
+-   `oncanplaythrough` — The browser can play through media without stopping
+-   `ondurationchange` — The duration of the media changes
+-   `onended` — The media has reached its end
+-   `onerror` — Happens when an error occurs while loading an external file
+-   `onloadeddata` — Media data is loaded
+-   `onloadedmetadata` — Metadata (like dimensions and duration) are loaded
+-   `onloadstart` — The browser starts looking for specified media
+-   `onpause` — Media is paused either by the user or automatically
+-   `onplay` — The media has been started or is no longer paused
+-   `onplaying` — Media is playing after having been paused or stopped for buffering
+-   `onprogress` — The browser is in the process of downloading the media
+-   `onratechange` — The playing speed of the media changes
+-   `onseeked` — User is finished moving/skipping to a new position in the media
+-   `onseeking` — The user starts moving/skipping
+-   `onstalled` — The browser is trying to load the media but it is not available
+-   `onsuspend` — The browser is intentionally not loading media
+-   `ontimeupdate` — The playing position has changed (e.g. because of fast forward)
+-   `onvolumechange` — Media volume has changed (including mute)
+-   `onwaiting` — Media paused but expected to resume (for example, buffering)
+
+### Animation
+
+-   `animationend` — A CSS animation is complete
+-   `animationiteration` — CSS animation is repeated
+-   `animationstart` — CSS animation has started
+
+### Other
+
+-   `transitionend` — Fired when a CSS transition has completed
+-   `onmessage` — A message is received through the event source
+-   `onoffline` — The browser starts to work offline
+-   `ononline` — The browser starts to work online
+-   `onpopstate` — When the window’s history changes
+-   `onshow` — A `<menu>` element is shown as a context menu
+-   `onstorage` — A Web Storage area is updated
+-   `ontoggle` — The user opens or closes the `<details>` element
+-   `onwheel` — Mouse wheel rolls up or down over an element
+-   `ontouchcancel` — Screen-touch is interrupted
+-   `ontouchend` — User’s finger is removed from a touch-screen
+-   `ontouchmove` — A finger is dragged across the screen
+-   `ontouchstart` — A finger is placed on the touch-screen
+
+### Errors
+
+When working with JavaScript, different errors can occur. There are several ways of handling them:
+
+-   `try` — Lets you define a block of code to test for errors
+-   `catch` — Set up a block of code to execute in case of an error
+-   `throw` — Create custom error messages instead of the standard JavaScript errors
+-   `finally` — Lets you execute code, after try and catch, regardless of the result
+
+### Error Name Values
+
+JavaScript also has a built-in error object. It has two properties:
+
+-   `name` — Sets or returns the error name
+-   `message` — Sets or returns an error message in a string from
+
+The error property can return six different values as its name:
+
+-   `EvalError` — An error has occurred in the `eval()` function
+-   `RangeError` — A number is “out of range”
+-   `ReferenceError` — An illegal reference has occurred
+-   `SyntaxError` — A syntax error has occurred
+-   `TypeError` — A type error has occurred
+-   `URIError` — An `encodeURI()` error has occurred
+
+[https://gist.github.com/bgoonz/736fce1327efdde3afc50229f5ce51f6#file-javascript-cheat-sheet-js](https://gist.github.com/bgoonz/736fce1327efdde3afc50229f5ce51f6#file-javascript-cheat-sheet-js)
+
+### Explicit Conversions
+
+The simplest way to perform an explicit type conversion is to use the `Boolean(), Number()`, and `String()` functions.
+
+Any value other than `null` or `undefined` has a `toString()` method.
+
+`n.toString(2);`
+
+binary
+
+`n.toString(8);`
+
+octal
+
+`n.toString(16);`
+
+hex
+
+`let n = 123456.789;`
+
+`n.toFixed(0)`
+
+“123457”
+
+`n.toFixed(5)`
+
+“123456.78900”
+
+`n.toExponential(3)`
+
+“1.235e+5”
+
+`n.toPrecision(7)`
+
+“123456.8”
+
+`n.toPrecision(10)`
+
+“123456.7890”
+
+`parseInt("3 blind mice")`
+
+3
+
+`parseFloat(" 3.14 meters")`
+
+3.14
+
+`parseInt("-12.34")`
+
+\-12
+
+`parseInt("0xFF")`
+
+255
+
+### Types, Values, and Variables
+
+### Links
+
+**Resource**
+
+**URL**
+
+MDN
+
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+Run Snippets
+
+[https://developers.google.com/web/tools/chrome-devtools/javascript/snippets](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)
+
+### Explicit Conversions
+
+The simplest way to perform an explicit type conversion is to use the `Boolean(), Number()`, and `String()` functions.
+
+Any value other than `null` or `undefined` has a `toString()` method.
+
+`n.toString(2);`
+
+binary
+
+`n.toString(8);`
+
+octal
+
+`n.toString(16);`
+
+hex
+
+`let n = 123456.789;`
+
+`n.toFixed(0)`
+
+“123457”
+
+`n.toFixed(5)`
+
+“123456.78900”
+
+`n.toExponential(3)`
+
+“1.235e+5”
+
+`n.toPrecision(7)`
+
+“123456.8”
+
+`n.toPrecision(10)`
+
+“123456.7890”
+
+`parseInt("3 blind mice")`
+
+3
+
+`parseFloat(" 3.14 meters")`
+
+3.14
+
+`parseInt("-12.34")`
+
+\-12
+
+`parseInt("0xFF")`
+
+255
+
+`parseInt("0xff")`
+
+255
+
+`parseInt("-0XFF")`
+
+\-255
+
+`parseInt("0.1")`
+
+0
+
+`parseInt(".1")`
+
+NaN: integers can’t start with “.”
+
+`parseFloat("$72.47")`
+
+NaN: numbers can’t start with “$”
+
+Supply Radix
+
+`parseInt("11", 2)`
+
+3
+
+`parseInt("ff", 16)`
+
+255
+
+`parseInt("077", 8)`
+
+63
+
+### Conversion Idioms
+
+`x + ""`
+
+`String(x)`
+
+`+x`
+
+`Number(x)`
+
+`x-0`
+
+`Number(x)`
+
+`!!x`
+
+`Boolean(x)`
+
+### Destructuring Assignment
+
+`let [x,y] = [1,2];`
+
+let x=1, y=2
+
+`[x,y] = [x + 1,y + 1];`
+
+x = x + 1, y = y + 1
+
+`[x,y] = [y,x];`
+
+Swap the value of the two variables
+
+Destructuring assignment makes it easy to work with functions that return arrays of values:
+
+`let [r,theta] = toPolar(1.0, 1.0);`
+
+function toPolar(x, y) {
+
+return \[Math.sqrt(x\*x+y\*y), Math.atan2(y,x)\];
+
+}
+
+Variable destructuring in loops:
+
+`let o = { x: 1, y: 2 };`
+
+for(const \[name, value\] of Object.entries(o)) {
+
+console.log(name, value); // Prints "x 1" and "y 2"
+
+}
+
+**Note**: The `Object.entries()` method returns an array of a given object’s own enumerable string-keyed property `[key, value]` pairs, in the same order as that provided by a `for...in` loop. (The only important difference is that a `for...in` loop enumerates properties in the prototype chain as well).
+
+The list of variables on the left can include extra commas to skip certain values on the right
+
+`[,x,,y] = [1,2,3,4];`
+
+x == 2; y == 4
+
+**Note**: the last comma does not stand for a value.
+
+To collect all unused or remaining values into a single variable when destructuring an array, use three dots `(...)` before the last variable name on the left-hand side
+
+`let [x, ...y] = [1,2,3,4];`
+
+y == \[2,3,4\]
+
+`let [first, ...rest] = "Hello";`
+
+first == “H”; rest ==\[“e”,”l”,”l”,”o”\]
+
+Destructuring assignment can also be performed when the righthand side is an object value.
+
+`let transparent = {r: 0.0, g: 0.0, b: 0.0, a: 1.0};`
+
+`let {r, g, b} = transparent;`
+
+r == 0.0; g == 0.0; b == 0.0
+
+`const {sin, cos, tan} = Math;`
+
+sin=Math.sin, cos=Math.cos, tan=Math.tan
+
+### Expressions and Operators
+
+In JavaScript, the values `null` and `undefined` are the only two values that do not have properties. In a regular property access expression using . or \[\], you get a `TypeError` if the expression on the left evaluates to `null` or `undefined`. You can use `?.` and `?.[]` syntax to guard against errors of this type.
+
+You can also invoke a function using `?.()` instead of `()`.
+
+With the `new ?.()` invocation syntax, if the expression to the left of the `?.` evaluates to `null` or `undefined`, then the entire invocation expression evaluates to `undefined` and no exception is thrown.
+
+Write the function invocation using `?.(),` knowing that invocation will only happen if there is actually a value to be invoked
+
+function square(x, log) {
+
+log?.(x); // Call the function if there is one
+
+return x \* x;
+
+}
+
+Note that expression `x++` is not always the same as `x = x + 1`.The `++` operator never performs string concatenation: it always converts its operand to a number and increments it. If x is the string “1”, `++x` is the number 2, but `x + 1` is the string “11”.
+
+JavaScript objects are compared by reference, not by value. An object is equal to itself, but not to any other object. If two distinct objects have the same number of properties, with the same names and values, they are still not equal. Similarly, two arrays that have the same elements in the same order are not equal to each other.
+
+`NaN` value is never equal to any other value, including itself! To check whether a value `x` is `NaN`, use `x !==` , or the global `isNaN()` function.
+
+If both values refer to the same object, array, or function, they are equal. If they refer to different objects, they are not equal, even if both objects have identical properties.
+
+### Evaluating Expressions
+
+JavaScript has the ability to interpret strings of JavaScript source code, evaluating them to produce a value.
+
+`eval("3+2")`
+
+Because of security issues, some web servers use the HTTP “Content-Security-Policy” header to disable `eval()` for an entire website.
+
+### First-Defined (??)
+
+The first-defined operator `??` evaluates to its first defined operand: if its left operand is not `null` and not `undefined`, it returns that value.
+
+`a ?? b` is equivalent to `(a !== null && a !== undefined) ? a : b`
+
+`??` is a useful alternative to `||.` The problem with this idiomatic use is that zero, the empty string, and false are all `falsy` values that may be perfectly valid in some circumstances. In this code example, if `maxWidth` is zero, that value will be ignored. But if we change the `||` operator to `??`, we end up with an expression where zero is a valid value.
+
+`let max = maxWidth || preferences.maxWidth || 500;`
+
+`let max = maxWidth ?? preferences.maxWidth ?? 500;`
+
+### delete Operator
+
+Deleting an array element leaves a “hole” in the array and does not change the array’s length. The resulting array is sparse.
+
+### void Operator
+
+Using the `void` operator makes sense only if the operand has side effects.
+
+`let counter = 0;`
+
+`const increment = () => void counter++;`
+
+`increment()`
+
+undefined
+
+`counter`
+
+1
+
+### Statements
+
+Expressions are evaluated to produce a value, but statements are executed to make something happen.
+
+Expressions with side effects, such as assignments and function invocations, can stand alone as statements, and when used this way are known as expression statements.
+
+A similar category of statements are the declaration statements that declare new variables and define new functions.
+
+If a function does not have any side effects, there is no sense in calling it, unless it is part of a larger expression or an assignment statement.
+
+### for/of
+
+The `for/of` loop works with iterable objects. Arrays, strings, sets, and maps are iterable.
+
+Array
+
+let data = \[1, 2, 3, 4, 5, 6, 7, 8, 9\], sum = 0;
+
+for(let element of data) {
+
+sum += element;
+
+}
+
+let text = "Na na na na na na na na";
+
+let wordSet = new Set(text.split(" "));
+
+let unique = \[\];
+
+for(let word of wordSet) {
+
+unique.push(word);
+
+}
+
+String
+
+let frequency = {};
+
+for(let letter of "mississippi") {
+
+if (frequency\[letter\]) {
+
+frequency\[letter\]++;
+
+}
+
+else {
+
+frequency\[letter\] = 1;
+
+}
+
+}
+
+Map
+
+let m = new Map(\[\[1, "one"\]\]);
+
+for(let \[key, value\] of m) {
+
+key // => 1
+
+value // => "one"
+
+}
+
+Objects are not (by default) iterable. Attempting to use `for/of` on a regular object throws a `TypeError` at runtime.
+
+If you want to iterate through the properties of an object, you can use the `for/in` loop.
+
+Note: `for/of` can be used on objects with `Object.entries` property, but it will not pick properties from object’s prototype.
+
+### for/in
+
+`for/in` loop works with any object after the `in`.
+
+for(let p in o) {
+
+console.log(o\[p\]);
+
+}
+
+Note: this will enumerate array indexes, not values.
+
+for(let i in a) console.log(i);
+
+The `for/in` loop does not actually enumerate all properties of an object. It does not enumerate properties whose names are symbols. And of the properties whose names are strings, it only loops over the `enumerable`properties.
+
+### with
+
+The with statement runs a block of code as if the properties of a specified object were variables in scope for that code.
+
+The `with` statement is forbidden in strict mode and should be considered deprecated in non-strict mode: avoid using it whenever possible.
+
+document.forms\[0\].address.value
+
+with(document.forms\[0\]) {
+
+name.value = "";
+
+address.value = "";
+
+email.value = "";
+
+}
+
+### debugger
+
+If a debugger program is available and is running, then an implementation may (but is not required to) perform some kind of debugging action.
+
+In practice, this statement acts like a breakpoint: execution of JavaScript code stops, and you can use the debugger to print variables’ values, examine the call stack, and so on.
+
+Note that it is not enough to have a debugger available: the debugger statement won’t start the debugger for you. If you’re using a web browser and have the developer tools console open, however, this statement will cause a breakpoint.
+
+### use strict
+
+Strict mode is a restricted subset of the language that fixes important language deficiencies and provides stronger error checking and increased security.
+
+The differences between strict mode and non-strict mode are the following:
+
+· The `with` statement is not allowed in strict mode.
+
+· In strict mode, all variables must be declared: a `ReferenceError` is thrown if you assign a value to an identifier that is not a declared variable, function, function parameter, catch clause parameter, or property of the global object.
+
+· In non-strict mode, this implicitly declares a global variable by adding a new property to the global object.
+
+· In strict mode, functions invoked as functions (rather than as methods) have a `this` value of undefined. (In non-strict mode, functions invoked as functions are always passed the global object as their `this` value.)
+
+· A function is invoked with `call()` or `apply()` , the `this` value is exactly the value passed as the first argument to `call()` or `apply()`. (In non-strict mode, `null` and `undefined` values are replaced with the global object and non-object values are converted to objects.)
+
+· In strict mode, assignments to non-writable properties and attempts to create new properties on non-extensible objects throw a `TypeError`. (In non-strict mode, these attempts fail silently.)
+
+· In strict mode, code passed to `eval()` cannot declare variables or define functions in the caller’s scope as it can in non-strict mode. Instead, variable and function definitions live in a new scope created for the `eval()`. This scope is discarded when the `eval()` returns.
+
+· In strict mode, the Arguments object in a function holds a static copy of the values passed to the function. In non-strict mode, the Arguments object has “magical” behavior in which elements of the array and named function parameters both refer to the same value.
+
+· In strict mode, a `SyntaxError` is thrown if the `delete` operator is followed by an unqualified identifier such as a variable, function, or function parameter. (In non-strict mode, such a `delete` expression does nothing and evaluates to false.)
+
+· In strict mode, an attempt to delete a non-configurable property throws a `TypeError`. (In non-strict mode, the attempt fails and the delete expression evaluates to false.)
+
+· In strict mode, it is a syntax error for an object literal to define two or more properties by the same name. (In non-strict mode, no error occurs.)
+
+### Objects
+
+In addition to its name and value, each property has three property attributes:
+
+· The `writable` attribute specifies whether the value of the property can be set.
+
+· The `enumerable` attribute specifies whether the property name is returned by a `for/in` loop.
+
+· The `configurable` attribute specifies whether the property can be deleted and whether its attributes can be altered.
+
+### Prototypes
+
+All objects created by object literals have the same prototype object, `Object.prototype.`
+
+Objects created using the `new` keyword and a constructor invocation use the value of the prototype property of the constructor function as their prototype.
+
+Object created by `new Object()` inherits from `Object.prototype`, just as the object created by `{}` does. Similarly, the object created by `new Array()` uses `Array.prototype` as its prototype, and the object created by `new Date()` uses `Date.prototype` as its prototype.
+
+Almost all objects have a prototype, but only a relatively small number of objects have a `prototype` property. It is these objects with prototype properties that define the prototypes for all the other objects.
+
+Most built-in constructors (and most user-defined constructors) have a prototype that inherits from `Object.prototype`.
+
+`Date.prototype` inherits properties from `Object.prototype`, so a Date object created by `new Date()` inherits properties from both `Date.prototype` and `Object.prototype`. This linked series of prototype objects is known as a prototype chain.
+
+### Creating Objects
+
+Objects can be created with object literals, with the `new` keyword, and with the `Object.create()` function.
+
+Literal
+
+`let empty = {};`
+
+`let point = { x: 0, y: 0 };`
+
+let book = {
+
+"main title": "JavaScript",
+
+"sub-title": "The Definitive Guide",
+
+for: "all audiences",
+
+author: {
+
+firstname: "David", .
+
+surname: "Flanagan"
+
+}
+
+};
+
+`new`
+
+`let o = new Object();`  
+ `let a = new Array();`  
+ `let d = new Date();`  
+ `let r = new Map();`
+
+`Object.create`
+
+`let o3 = Object.create(Object.prototype);`
+
+Use `Object.create` to guard against accidental modifications:
+
+let o = { x: "don't change this value" };
+
+library.function(Object.create(o));
+
+Note: the library function can modify the passed in object, but not the original `o` object
+
+### Access Object Properties with an array (\[\]) notation
+
+let addr = "";
+
+for(let i = 0; i < 4; i++) {
+
+addr += customer\[\`address${i}\`\] + "\\n";
+
+}
+
+### Inheritance
+
+`let o = {};`
+
+`o.x = 1;`
+
+`let p = Object.create(o);`
+
+`p.y = 2;`
+
+`let q = Object.create(p);`
+
+`q.z = 3;`
+
+Property `x` and `y` available on object `q`
+
+`q.x + q.y`
+
+### How to query for property which may be undefined
+
+`surname = book && book.author && book.author.surname;`
+
+`let surname = book?.author?.surname;`
+
+### Deleting properties
+
+The `delete` operator only deletes own properties, not inherited ones. (To delete an inherited property, you must delete it from the prototype object in which it is defined. Doing this affects every object that inherits from that prototype.)
+
+`delete` does not remove properties that have a `configurable` attribute of false.
+
+Certain properties of built-in objects are non-configurable, as are properties of the global object created by variable declaration and function declaration.
+
+`delete Object.prototype`
+
+false: property is non-configurable
+
+`var x = 1;`
+
+`delete globalThis.x`
+
+false: can’t delete `this` property
+
+`function f() {}`
+
+`delete globalThis.f`
+
+false
+
+`globalThis.x = 1;`
+
+`delete globalThis.x`
+
+true
+
+### Testing properties
+
+To check whether an object has a property with a given name. You can do this with the `in` operator, with the `hasOwnProperty()` and `propertyIsEnumerable()` methods, or simply by querying the property
+
+( `!= undefined`).
+
+### in & query
+
+`let o = { x: 1 };`
+
+`"x" in o`
+
+true
+
+`o.x !== undefined`
+
+`"y" in o`
+
+false
+
+`o.y !== undefined`
+
+`"toString" in o`
+
+true: o inherits a `toString` property
+
+`o.toString !== undefined`
+
+Advantage of using in: `in` can distinguish between properties that do not exist and properties that exist but have been set to `undefined`.
+
+### hasOwnProperty
+
+`let o = { x: 1 };`
+
+`o.hasOwnProperty("x")`
+
+true
+
+`o.hasOwnProperty("y")`
+
+false
+
+`o.hasOwnProperty("toString")`
+
+false: toString is an inherited property
+
+The `propertyIsEnumerable()` returns true only if the named property is an own property and its `enumerable` attribute is true.
+
+`let o = { x: 1 };`
+
+`o.propertyIsEnumerable("x")`
+
+true
+
+`o.propertyIsEnumerable("toString")`
+
+false: not an own property
+
+`Object.prototype.propertyIsEnumerable("toString")`
+
+false: not enumerable
+
+### Enumerating properties
+
+To guard against enumerating inherited properties with `for/in`, you can add an explicit check inside the loop body:
+
+for(let p in o) {
+
+if (!o.hasOwnProperty(p)) continue;
+
+}
+
+for(let p in o) {
+
+if (typeof o\[p\] === "function") continue;
+
+}
+
+Functions you can use to get an array of property names
+
+· `Object.keys()` returns an array of the names of the enumerable own properties of an object. It does not include non-enumerable properties, inherited properties, or properties whose name is a Symbol.
+
+· `Object.getOwnPropertyNames()` works like `Object.keys()` but returns an array of the names of nonenumerable own properties as well.
+
+· `Object.getOwnPropertySymbols()` returns own properties whose names are Symbols, whether or not they are enumerable.
+
+· `Reflect.ownKeys()` returns all own property names, both enumerable and non-enumerable, and both string and Symbol.
+
+### Extending Objects
+
+To copy the properties of one object to another object
+
+let target = {x: 1}, source = {y: 2, z: 3};
+
+for(let key of Object.keys(source)) {
+
+target\[key\] = source\[key\];
+
+}
+
+One reason to assign properties from one object into another is when you have an object that defines default values for many properties and you want to copy those default properties into another object if a property by that name does not already exist in that object. Using `Object.assign()` naively will not do what you want:
+
+Object.assign(o, defaults);
+
+overwrites everything in o with defaults
+
+Instead, use one of the following:,
+
+`o = Object.assign({}, defaults, o);`
+
+`o = {...defaults, ...o};`
+
+### Serializing Objects
+
+The functions `JSON.stringify()` and `JSON.parse()` serialize and restore JavaScript objects.
+
+`let o = {x: 1, y: {z: [false, null, ""]}};`
+
+`let s = JSON.stringify(o);`
+
+s == ‘{“x”:1,”y”:{“z”:\[false,null,””\]}}’
+
+`let p = JSON.parse(s);`
+
+p == {x: 1, y: {z: \[false,null, “”\]}}
+
+### Object methods
+
+`toString(), valueOf(), loLocaleString(), toJSON()`
+
+`let s = { x: 1, y: 1 }.toString();`
+
+s == “\[object Object\]”
+
+### Extended Object Literal Syntax
+
+### Shorthand Properties
+
+let x = 1, y = 2;
+
+let o = {
+
+x: x,
+
+y: y
+
+};
+
+←>
+
+`let x = 1, y = 2;`  
+ `let o = { x, y };`
+
+### Computer Property Names
+
+`const PROPERTY_NAME = "p1";`  
+ `function computePropertyName() { return "p" + 2; }`
+
+let o = {};
+
+o\[PROPERTY_NAME\] = 1;
+
+o\[computePropertyName()\] = 2;
+
+←>
+
+let p = {
+
+\[PROPERTY_NAME\]: 1,
+
+\[computePropertyName()\]: 2
+
+};
+
+### Symbols as Property Names
+
+const extension = Symbol("my extension symbol");
+
+let o = {
+
+\[extension\]: {}
+
+};
+
+o\[extension\].x = 0;
+
+Two Symbols created with the same string argument are still different from one another.
+
+The point of Symbols is not security, but to define a safe extension mechanism for JavaScript objects. If you get an object from third-party code that you do not control and need to add some of your own properties to that object but want to be sure that your properties will not conflict with any properties that may already exist on the object, you can safely use Symbols as your property names.
+
+### Spread Operator
+
+You can copy the properties of an existing object into a new object using the “spread operator” … inside an object literal:
+
+`let position = { x: 0, y: 0 };`  
+ `let dimensions = { width: 100, height: 75 };`  
+ `let rect = { ...position, ...dimensions };`  
+ `rect.x + rect.y + rect.width + rect.height`
+
+### Shorthand Methods
+
+let square = {
+
+area: function() {
+
+return this.side \* this.side; },
+
+side: 10
+
+};
+
+←>
+
+let square = {
+
+area() {
+
+return this.side \* this.side; },
+
+side: 10
+
+};
+
+When you write a method using this shorthand syntax, the property name can take any of the forms that are legal in an object literal: in addition to a regular JavaScript identifier like the name area above, you can also use string literals and computed property names, which can include Symbol property names:
+
+const METHOD_NAME = "m";
+
+const symbol = Symbol();
+
+let weirdMethods = {
+
+"method With Spaces"(x) { return x + 1; },
+
+\[METHOD_NAME\](x) { return x + 2; },
+
+\[symbol\](x) { return x + 3; }
+
+};
+
+`weirdMethods["method With Spaces"](1)`
+
+2
+
+`weirdMethods[METHOD_NAME](1)`
+
+3
+
+`weirdMethods[symbol](1)`
+
+4
+
+### Property Getters and Setters
+
+let o = {
+
+dataProp: value,
+
+get accessorProp() { return this.dataProp; },
+
+set accessorProp(value) { this.dataProp = value; }
+
+};
+
+### Arrays
+
+### Creating Arrays
+
+· Array literals
+
+· The … spread operator on an iterable object
+
+· The `Array()` constructor
+
+· The `Array.of()` and `Array.from()` factory methods
+
+### Array literals
+
+`let empty = [];`
+
+`let primes = [2, 3, 5, 7, 11];`
+
+`let misc = [ 1.1, true, "a", ];`
+
+`let b = [[1, {x: 1, y: 2}], [2, {x: 3, y: 4}]];`
+
+If an array literal contains multiple commas in a row, with no value between, the array is sparse
+
+`let count = [1,,3];`
+
+`let undefs = [,,];`
+
+Array literal syntax allows an optional trailing comma, so `[,,]` has a length of 2, not 3.
+
+### The Spread Operator
+
+`let a = [1, 2, 3];`
+
+`let b = [0, ...a, 4];`
+
+\[0, 1, 2, 3, 4\]
+
+create a copy of an array — modifying the copy does not change the original
+
+`let original = [1,2,3];`  
+ `let copy = [...original];`
+
+`let digits = [..."0123456789ABCDEF"];`
+
+\[“0”,”1″,”2″,”3″,”4″,”5″,”6″,”7″,”8″,”9″,”A”,”B”,”C”,”D”,”E”,”F”\]
+
+`let letters = [..."hello world"];`
+
+\[“h”,”e”,”l”,”l””o”,””,”w”,”o””r”,”l”,”d”\]
+
+`[...new Set(letters)]`
+
+\[“h”,”e”,”l”,”o”,””,”w”,”r”,”d”\]
+
+### Array.of()
+
+When the `Array()` constructor function is invoked with one numeric argument, it uses that argument as an array length. But when invoked with more than one numeric argument, it treats those arguments as elements for the array to be created. This means that the `Array()` constructor cannot be used to create an array with a single numeric element.
+
+`Array.of()`
+
+\[\]
+
+`Array.of(10)`
+
+\[10\]
+
+`Array.of(1,2,3)`
+
+\[1, 2, 3\]
+
+### Array.from()
+
+It is also a simple way to make a copy of an array:
+
+`let copy = Array.from(original);`
+
+`Array.from()` is also important because it defines a way to make a true-array copy of an array-like object. Array-like objects are non-array objects that have a numeric length property and have values stored with properties whose names happen to be integers.
+
+`let truearray = Array.from(arraylike);`
+
+`Array.from()` also accepts an optional second argument. If you pass a function as the second argument, then as the new array is being built, each element from the source object will be passed to the function you specify, and the return value of the function will be stored in the array instead of the original value.
+
+### Reading and Writing Array Elements
+
+What is special about arrays is that when you use property names that are non-negative integers , the array automatically maintains the value of the `length` property for you.
+
+JavaScript converts the numeric array index you specify to a string — the index 1 becomes the string “1”, then uses that string as a property name.
+
+It is helpful to clearly distinguish an array index from an object property name. All indexes are property names, but only property names that are integers between 0 and 231 are indexes. All arrays are objects, and you can create properties of any name on them. If you use properties that are array indexes, however, arrays have the special behavior of updating their `length` property as needed.
+
+Note that you can index an array using numbers that are negative or that are not integers. When you do this, the number is converted to a string, and that string is used as the property name. Since the name is not a non-negative integer, it is treated as a regular object property, not an array index.
+
+`a[-1.23] = true;`
+
+This creates a property named “-1.23”
+
+`a["1000"] = 0;`
+
+This the 1001st element of the array
+
+`a[1.000] = 1;`
+
+Array index 1. Same as a\[1\] = 1;
+
+The fact that array indexes are simply a special type of object property name means that JavaScript arrays have no notion of an “out of bounds” error. When you try to query a nonexistent property of any object, you don’t get an error; you simply get `undefined`.
+
+### Sparse Arrays
+
+Sparse arrays can be created with the `Array()` constructor or simply by assigning to an array index larger than the current array length.
+
+`a[1000] = 0;`
+
+Assignment adds one element but sets length to 1001.
+
+you can also make an array sparse with the `delete` operator.
+
+Note that when you omit a value in an array literal (using repeated commas as in `[1,,3]`), the resulting array is sparse, and the omitted elements simply do not exist
+
+### Array Length
+
+if you set the length property to a nonnegative integer `n` smaller than its current value, any array elements whose index is greater than or equal to n are deleted from the array.
+
+`a = [1,2,3,4,5];`
+
+`a.length = 3;`
+
+a is now \[1,2,3\].
+
+`a.length = 0;`
+
+Delete all elements. a is \[\].
+
+`a.length = 5;`
+
+Length is 5, but no elements, like `new Array(5)`
+
+You can also set the length property of an array to a value larger than its current value. Doing this does not actually add any new elements to the array; it simply creates a sparse area at the end of the array.
+
+### Adding and Deleting Array Elements
+
+`let a = [];`
+
+`a[0] = "zero";`
+
+`a[1] = "one";`
+
+add elements to it.
+
+You can also use the `push()` method to add one or more values to the end of an array.
+
+You can use the `unshift()` method to insert a value at the beginning of an array, shifting the existing array elements to higher indexes.
+
+The `pop()` method is the opposite of `push()`: it removes the last element of the array and returns it, reducing the length of an array by 1.
+
+Similarly, the `shift()` method removes and returns the first element of the array, reducing the length by 1 and shifting all elements down to an index one lower than their current index.
+
+You can delete array elements with the delete operator
+
+`let a = [1,2,3];`
+
+`delete a[2];`
+
+a now has no element at index 2
+
+`2 in a`
+
+false
+
+`a.length`
+
+3: delete does not affect array length
+
+### Iterating Arrays
+
+The easiest way to loop through each of the elements of an array (or any iterable object) is with the `for/of`loop
+
+let letters = \[..."Hello world"\];
+
+let string = "";
+
+for(let letter of letters) {
+
+string += letter;
+
+}
+
+It has no special behavior for sparse arrays and simply returns `undefined` for any array elements that do not exist.
+
+If you want to use a `for/of` loop for an array and need to know the index of each array element, use the `entries()` method of the array
+
+let letters = \[..."Hello world"\];
+
+let everyother = "";
+
+for(let \[index, letter\] of letters.entries()) {
+
+if (index % 2 === 0) everyother += letter;
+
+}
+
+Another good way to iterate arrays is with `forEach()`. This is not a new form of the for loop, but an array method that offers a functional approach to array iteration.
+
+let letters = \[..."Hello world"\];
+
+let uppercase = "";
+
+letters.forEach(letter => {
+
+uppercase += letter.toUpperCase();
+
+});
+
+You can also loop through the elements of an array with a `for` loop.
+
+for(let i = 0, len = letters.length; i < len; i++) {
+
+// loop body
+
+}
+
+### Multidimensional Arrays
+
+### Create a multidimensional array
+
+`let table = new Array(10);`
+
+for(let i = 0; i < table.length; i++) {
+
+table\[i\] = new Array(10);
+
+}
+
+for(let row = 0; row < table.length; row++) {
+
+for(let col = 0; col < table\[row\].length; col++) {
+
+table\[row\]\[col\] = row \* col;
+
+}
+
+}
+
+### Array Methods
+
+### Array Iterator Methods
+
+First, all of these methods accept a function as their first argument and invoke that function once for each element (or some elements) of the array. If the array is sparse, the function you pass is not invoked for nonexistent elements. In most cases, the function you supply is invoked with three arguments: the value of the array element, the index of the array element, and the array itself.
+
+FOREACH()
+
+`let data = [1,2,3,4,5], sum = 0;`
+
+data.forEach(value => { sum += value; });
+
+data.forEach(function(v, i, a) {
+
+a\[i\] = v + 1;
+
+});
+
+15
+
+\[2,3,4,5,6\]
+
+MAP()
+
+`let a = [1, 2, 3];`  
+ `a.map(x => x*x)`
+
+\[1, 4, 9\]
+
+FILTER()
+
+`let a = [5, 4, 3, 2, 1];`  
+ `a.filter(x => x < 3)`  
+ `a.filter((x,i) => i % 2 === 0)`
+
+\[2, 1\];
+
+\[5, 3, 1\];
+
+FIND()
+
+FINDINDEX()
+
+`let a = [1,2,3,4,5];`
+
+`a.findIndex(x => x === 3)`
+
+`a.find(x => x % 5 === 0)`
+
+`a.find(x => x % 7 === 0)`
+
+2
+
+5
+
+undefined
+
+EVERY()
+
+SOME()
+
+`let a = [1,2,3,4,5];`
+
+`a.every(x => x < 10)`
+
+`a.some(x => x % 2 === 0)`
+
+`a.some(isNaN)`
+
+true
+
+true
+
+false
+
+REDUCE()
+
+ReduceRight()
+
+l`et a = [1,2,3,4,5];`
+
+`a.reduce((x,y) => x+y, 0)`
+
+`a.reduce((x,y) => x*y, 1)`
+
+`a.reduce((x,y) => (x > y) ? x : y)`
+
+15
+
+120
+
+5
+
+Note that `map()` returns a new array: it does not modify the array it is invoked on. If that array is sparse, your function will not be called for the missing elements, but the returned array will be sparse in the same way as the original array: it will have the same length and the same missing elements.
+
+To close the gaps in a sparse array, you can do this:
+
+`let dense = sparse.filter(() => true);`
+
+And to close gaps and remove undefined and null elements, you can use filter, like this:
+
+`a = a.filter(x => x !== undefined && x !== null);`
+
+Unlike `filter()`, however, `find()` and `findIndex()` stop iterating the first time the predicate finds an element. When that happens, `find()` returns the matching element, and `findIndex()` returns the index of the matching element. If no matching element is found, `find()` returns `undefined` and `findIndex()`returns -1.
+
+When you invoke `reduce()` with no initial value, it uses the first element of the array as the initial value.
+
+`reduceRight()` works just like `reduce()`, except that it processes the array from highest index to lowest (right-to-left), rather than from lowest to highest. You might want to do this if the reduction operation has right-to-left associativity
+
+### Flattening arrays with `flat()` and `flatMap()`
+
+`[1, [2, 3]].flat()`
+
+\[1, 2, 3\]
+
+`[1, [2, [3]]].flat()`
+
+\[1, 2, \[3\]\]
+
+`let a = [1, [2, [3, [4]]]];`
+
+`a.flat(1)`
+
+`a.flat(2)`
+
+`a.flat(3)`
+
+`a.flat(4)`
+
+\[1, 2, \[3, \[4\]\]\]
+
+\[1, 2, 3, \[4\]\]
+
+\[1, 2, 3, 4\]
+
+\[1, 2, 3, 4\]
+
+`let phrases = ["hello world", "the definitive guide"];`  
+ `let words = phrases.flatMap(phrase => phrase.split(" "));`
+
+\[“hello”, “world”, “the”, “definitive”, “guide”\];
+
+Calling `a.flatMap(f)` is the same as (but more efficient than) `a.map(f).flat()`:
+
+### Adding arrays with concat()
+
+`let a = [1,2,3];`
+
+`a.concat(4, 5)`
+
+\[1,2,3,4,5\]
+
+`a.concat([4,5],[6,7])`
+
+\[1,2,3,4,5,6,7\]
+
+### Stacks and Queues with push(), pop(), shift(), and unshift()
+
+The `push()` and `pop()` methods allow you to work with arrays as if they were stacks. The `push()` method appends one or more new elements to the end of an array and returns the new length of the array.
+
+The `unshift()` and `shift()` methods behave much like `push()` and `pop()`, except that they insert and remove elements from the beginning of an array rather than from the end.
+
+You can implement a queue data structure by using `push()` to add elements at the end of an array and `shift()` to remove them from the start of the array. Note differences in `unshift` with single and multiple values.
+
+`let a = [];`
+
+`a.unshift(1)`
+
+\[1\]
+
+`a.unshift(2)`
+
+\[2, 1\]
+
+`a = [];`
+
+`a.unshift(1,2)`
+
+\[1, 2\]
+
+### Subarrays with `slice(), splice(), fill()`, and `copyWithin()`
+
+SLICE()
+
+`let a = [1,2,3,4,5];`
+
+`a.slice(0,3);`
+
+`a.slice(3);`
+
+`a.slice(1,-1);`
+
+`a.slice(-3,-2);`
+
+\[1,2,3\]
+
+\[4,5\]
+
+\[2,3,4\]
+
+\[3\]
+
+SPLICE
+
+`let a = [1,2,3,4,5,6,7,8];`
+
+`a.splice(4)`
+
+`a.splice(1,2)`
+
+`a.splice(1,1)`
+
+`let a = [1,2,3,4,5];`
+
+`a.splice(2,0,"a","b")`
+
+`a.splice(2,2,[1,2],3)`
+
+\[5,6,7,8\]; `a` is now \[1,2,3,4\]
+
+\[2,3\]; a is now \[1,4\]
+
+\[4\]; a is now \[1\]
+
+\[\]; a is now \[1,2,”a”,”b”,3,4,5\]
+
+\[“a”,”b”\]; a is now \[1,2,\[1,2\],3,3,4,5\]
+
+FILL()
+
+`let a = new Array(5);`
+
+`a.fill(0)`
+
+`a.fill(9, 1)`
+
+`a.fill(8, 2, -1)`
+
+\[0,0,0,0,0\]
+
+\[0,9,9,9,9\]
+
+\[0,9,8,8,9\]
+
+COPYWITHIN()
+
+`let a = [1,2,3,4,5];`
+
+`a.copyWithin(1)`
+
+`a.copyWithin(2, 3, 5)`
+
+`a.copyWithin(0, -2)`
+
+\[1,1,2,3,4\]
+
+\[1,1,3,4,4\]
+
+\[4,4,3,4,4\]
+
+`splice()` is a general-purpose method for inserting or removing elements from an array. `splice()` can delete elements from an array, insert new elements into an array, or perform both operations at the same time.
+
+The first argument to `splice()` specifies the array position at which the insertion and/or deletion is to begin. The second argument specifies the number of elements that should be deleted from (spliced out of) the array.
+
+Unlike `concat(), splice()` inserts arrays themselves, not the elements of those arrays.
+
+`copyWithin()` copies a slice of an array to a new position within the array. It modifies the array in place and returns the modified array, but it will not change the length of the array.
+
+### Array Searching and Sorting Methods
+
+INDEXOF()  
+ LASTINDEXOF()
+
+`let a = [0,1,2,1,0];`
+
+`a.indexOf(1)`
+
+`a.lastIndexOf(1)`
+
+`a.indexOf(3)`
+
+1
+
+3
+
+\-1
+
+SORT()
+
+`let a = [33, 4, 1111, 222];`
+
+`a.sort();`
+
+`a.sort((a,b) => a - b);`
+
+Case-insensitive sort
+
+let a = \["ant", "Bug", "cat", "Dog"\];
+
+a.sort(); // a == \["Bug","Dog","ant","cat"\];
+
+a.sort(function(s,t) {
+
+let a = s.toLowerCase();
+
+let b = t.toLowerCase();
+
+if (a < b) return -1;
+
+if (a > b) return 1;
+
+return 0;
+
+});
+
+`[1111, 222, 33, 4];`
+
+`[4, 33, 222, 1111]`
+
+REVERSE()
+
+`let a = [1,2,3];`  
+ `a.reverse();`
+
+\[3,2,1\]
+
+`indexOf()` and `lastIndexOf()` compare their argument to the array elements using the equivalent of the === operator. If your array contains objects instead of primitive values, these methods check to see if two references both refer to exactly the same object. If you want to actually look at the content of an object, try using the `find()` method with your own custom predicate function instead.
+
+`indexOf()` and `lastIndexOf()` take an optional second argument that specifies the array index at which to begin the search. Negative values are allowed for the second argument and are treated as an offset from the end of the array.
+
+`indexOf()` will not detect the NaN value in an array, but `includes()` will
+
+When `sort()` is called with no arguments, it sorts the array elements in alphabetical order. To sort an array into some order other than alphabetical, you must pass a comparison function as an argument to `sort()`.
+
+### Array to String Conversions
+
+The `join()` method converts all the elements of an array to strings and concatenates them, returning the resulting string.
+
+`let a = [1, 2, 3];`
+
+`a.join()`
+
+`a.join(" ")`
+
+`a.join("")`
+
+“1,2,3”
+
+“1 2 3”
+
+“123”
+
+`let b = new Array(10);`
+
+`b.join("-")`
+
+“ — — — — -”
+
+Arrays, like all JavaScript objects, have a `toString()` method. For an array, this method works just like the `join()` method with no arguments:
+
+`[1,2,3].toString()`
+
+“1,2,3”
+
+`["a", "b", "c"].toString()`
+
+“a,b,c”
+
+`[1, [2,"c"]].toString()`
+
+“1,2,c”
+
+### Static Array Functions
+
+`Array.isArray([])`
+
+true
+
+`Array.isArray({})`
+
+false
+
+### Array-Like Objects
+
+It is often perfectly reasonable to treat any object with a numeric `length` property and corresponding non-negative integer properties as a kind of array.
+
+let a = {};
+
+let i = 0;
+
+while(i < 10) {
+
+a\[i\] = i \* i;
+
+i++;
+
+}
+
+a.length = i;
+
+// Now iterate through it as if it were a real array
+
+let total = 0;
+
+for(let j = 0; j < a.length; j++) {
+
+total += a\[j\];
+
+}
+
+Since array-like objects do not inherit from `Array.prototype`, you cannot invoke array methods on them directly. You can invoke them indirectly using the `Function.call` method.
+
+`let a = {"0": "a", "1": "b", "2": "c", length: 3};`
+
+// An array-like object
+
+`Array.prototype.join.call(a, "+")`
+
+“a+b+c”
+
+`Array.prototype.join.call("JavaScript", " ")`
+
+“J a v a S c r i p t”
+
+`Array.prototype.map.call(a, x => x.toUpperCase())`
+
+\[“A”,”B”,”C”\]
+
+`Array.from(a)`
+
+\[“a”,”b”,”c”\]
+
+### Strings as Arrays
+
+`let s = "test";`
+
+`s.charAt(0)`
+
+t
+
+`s[1]`
+
+e
+
+### Functions
+
+In addition to the arguments, each invocation has another value — the invocation context — that is the value of the `this` keyword.
+
+### Function Declarations
+
+function printprops(o) {
+
+for(let p in o) {
+
+console.log(\`${p}: ${o\[p\]}\\n\`);
+
+}
+
+}
+
+Function declaration statements are “hoisted” to the top of the enclosing script, function, or block so that functions defined in this way may be invoked from code that appears before the definition.
+
+### Function Expressions
+
+`const square = function(x) { return x*x; };`
+
+const f = function fact(x) {
+
+if (x <= 1) return 1;
+
+return x \* fact(x-1);
+
+}
+
+Function expressions can include names, which is useful for recursion
+
+`[3,2,1].sort(function(a,b) { return a - b; });`
+
+Function expressions can also be used as arguments to other functions
+
+`let tensquared = (function(x) {return x*x;}(10));`
+
+Function expressions are sometimes defined and immediately invoked
+
+### Arrow Functions
+
+`const sum = (x, y) => { return x + y; };`
+
+`const sum = (x, y) => x + y;`
+
+no need for `return`
+
+`const polynomial = x => x*x + 2*x + 3;`
+
+omit parens with single parameter
+
+`const constantFunc = () => 42;`
+
+usage for no params
+
+If the body of your arrow function is a single return statement but the expression to be returned is an object literal, then you have to put the object literal inside parentheses to avoid syntactic ambiguity between the curly braces of a function body and the curly braces of an object literal
+
+`const f = x => { return { value: x }; };`
+
+good
+
+`const g = x => ({ value: x });`
+
+good
+
+`const h = x => { value: x };`
+
+returns nothing
+
+`const i = x => { v: x, w: x };`
+
+syntax error
+
+Arrow functions differ from functions defined in other ways in one critical way: they inherit the value of the `this` keyword from the environment in which they are defined rather than defining their own invocation context as functions defined in other ways do.
+
+### Nested Functions
+
+function hypotenuse(a, b) {
+
+function square(x) { return x\*x; }
+
+return Math.sqrt(square(a) + square(b));
+
+}
+
+### Invoking Functions
+
+For function invocation in non-strict mode, the invocation context (the `this` value) is the global object. In strict mode, however, the invocation context is `undefined`.
+
+`const strict = (function() { return !this; }())`
+
+Determine if we’re in strict mode
+
+### Constructor Invocation
+
+A constructor invocation creates a new, empty object that inherits from the object specified by the `prototype`property of the constructor.
+
+### Indirect invocation
+
+JavaScript functions are objects, and like all JavaScript objects, they have methods. Two of these methods, `call()` and `apply()`, invoke the function indirectly. Both methods allow you to explicitly specify the `this` value for the invocation, which means you can invoke any function as a method of any object, even if it is not actually a method of that object.
+
+### Function Arguments and Parameters
+
+### Optional Parameters and Defaults
+
+When a function is invoked with fewer arguments than declared parameters, the additional parameters are set to their default value, which is normally `undefined`.
+
+function getPropertyNames(o, a) {
+
+a = a || \[\];
+
+for(let property in o) a.push(property);
+
+return a;
+
+}
+
+function getPropertyNames(o, a = \[\]) {
+
+for(let property in o) a.push(property);
+
+return a;
+
+}
+
+One interesting case is that, for functions with multiple parameters, you can use the value of a previous parameter to define the default value of the parameters that follow it
+
+const rectangle = (width, height = width\*2) => ({width, height});
+
+### Rest Parameters and Variable-Length Argument Lists
+
+Rest parameters enable us to write functions that can be invoked with arbitrarily more arguments than parameters.
+
+function max(first=-Infinity, ...rest) {
+
+let maxValue = first;
+
+for(let n of rest) {
+
+if (n > maxValue) {
+
+maxValue = n;
+
+}
+
+}
+
+return maxValue;
+
+}
+
+max(1, 10, 100, 2, 3, 1000, 4, 5, 6)
+
+1000
+
+within the body of a function, the value of a rest parameter will always be an array. The array may be empty, but a rest parameter will never be `undefined`.
+
+This type of function is called variadic functions, variable arity functions, or vararg functions.
+
+### The Arguments Object
+
+Within the body of any function, the identifier `arguments` refers to the Arguments object for that invocation.
+
+function max(x) {
+
+let maxValue = -Infinity;
+
+for(let i = 0; i < arguments.length; i++) {
+
+if (arguments\[i\] > maxValue)
+
+maxValue = arguments\[i\];
+
+}
+
+return maxValue;
+
+}
+
+max(1, 10, 100, 2, 3, 1000, 4, 5, 6)
+
+1000
+
+you should avoid using it in any new code you write.
+
+### The Spread Operator for Function Calls
+
+let numbers = \[5, 2, 10, -1, 9, 100, 1\];
+
+Math.min(...numbers)
+
+\-1
+
+function timed(f) {
+
+return function(...args) {
+
+console.log(\`Entering function ${f.name}\`);
+
+let startTime = Date.now();
+
+try {
+
+return f(...args);
+
+}
+
+finally {
+
+console.log(\`Exiting ${f.name} after ${Date.now() - startTime}ms\`);
+
+}
+
+};
+
+}
+
+// Compute the sum of the numbers between 1 and n by brute force
+
+function benchmark(n) {
+
+let sum = 0;
+
+for(let i = 1; i <= n; i++) sum += i;
+
+return sum;
+
+}
+
+// Now invoke the timed version of that test function
+
+timed(benchmark)(1000000)
+
+### Destructuring Function Arguments into Parameters
+
+function vectorAdd(v1, v2) {
+
+return \[v1\[0\] + v2\[0\], v1\[1\] + v2\[1\]\];
+
+}
+
+vectorAdd(\[1,2\], \[3,4\])
+
+←>
+
+function vectorAdd(\[x1,y1\], \[x2,y2\]) {
+
+return \[x1 + x2, y1 + y2\];
+
+}
+
+vectorAdd(\[1,2\], \[3,4\])
+
+function vectorMultiply({x, y}, scalar) {
+
+return { x: x\*scalar, y: y\*scalar };
+
+}
+
+vectorMultiply({x: 1, y: 2}, 2)
+
+←>
+
+function vectorMultiply({x,y}, scalar) {
+
+return { x: x\*scalar, y: y\*scalar};
+
+}
+
+vectorMultiply({x: 1, y: 2}, 2)
+
+### Argument Types
+
+Adding code to check the types of arguments
+
+function sum(a) {
+
+let total = 0;
+
+for(let element of a) {
+
+if (typeof element !== "number") {
+
+throw new TypeError("sum(): elements must be numbers");
+
+}
+
+total += element;
+
+}
+
+return total;
+
+}
+
+`sum([1,2,3])`
+
+6
+
+`sum(1, 2, 3);`
+
+`TypeError`: 1 is not iterable
+
+`sum([1,2,"3"]);`
+
+`TypeError`: element 2 is not a number
+
+### Functions as Values
+
+function square(x) { return x \* x; }
+
+`let s = square;`
+
+`square(4)`
+
+16
+
+`s(4)`
+
+16
+
+Functions can also be assigned to object properties rather than variables.
+
+`let o = {square: function(x) { return x*x; }};`
+
+`let y = o.square(16);`
+
+256
+
+Functions don’t even require names at all, as when they’re assigned to array elements:
+
+`let a = [x => x*x, 20];`
+
+`a[0](a[1])`
+
+400
+
+`a[0]` accesses first element of the array, which is “`x => x*x`“, `(a[1])` passes parameter, which is 20.
+
+### Examples of using functions as data
+
+function add(x,y) { return x + y; }
+
+function subtract(x,y) { return x - y; }
+
+function multiply(x,y) { return x \* y; }
+
+function divide(x,y) { return x / y; }
+
+function operate(operator, operand1, operand2) {
+
+return operator(operand1, operand2);
+
+}
+
+`let i = operate(add, operate(add, 2, 3), operate(multiply, 4,5));`
+
+`(2+3) + (4*5):`
+
+or:
+
+const operators = {
+
+add: (x,y) => x+y,
+
+subtract: (x,y) => x-y,
+
+multiply: (x,y) => x\*y,
+
+divide: (x,y) => x/y,
+
+pow: Math.pow
+
+};
+
+function operate2(operation, operand1, operand2) {
+
+if (typeof operators\[operation\] === "function") {
+
+return operators\[operation\](operand1, operand2);
+
+}
+
+else throw "unknown operator";
+
+}
+
+`operate2("add", "hello", operate2("add", " ", "world"))`
+
+// “hello world”
+
+`operate2("pow", 10, 2)`
+
+100
+
+### Defining Your Own Function Properties
+
+When a function needs a “static” variable whose value persists across invocations, it is often convenient to use a property of the function itself.
+
+For example, suppose you want to write a function that returns a unique integer whenever it is invoked. The function must never return the same value twice. In order to manage this, the function needs to keep track of the values it has already returned, and this information must persist across function invocations.
+
+uniqueInteger.counter = 0;
+
+function uniqueInteger() {
+
+return uniqueInteger.counter++;
+
+}
+
+uniqueInteger()
+
+0
+
+uniqueInteger()
+
+1
+
+Compute factorials and cache results as properties of the function itself.
+
+function factorial(n) {
+
+if (Number.isInteger(n) && n > 0) {
+
+if (!(n in factorial)) {
+
+factorial\[n\] = n \* factorial(n-1);
+
+}
+
+return factorial\[n\];
+
+}
+
+else {
+
+return NaN;
+
+}
+
+}
+
+factorial\[1\] = 1;
+
+Initialize the cache to hold this base case.
+
+factorial(6)
+
+720
+
+factorial\[5\]
+
+120; the call above caches this value
+
+### Functions as Namespaces
+
+Variables declared within a function are not visible outside of the function. For this reason, it is sometimes useful to define a function simply to act as a temporary namespace in which you can define variables without cluttering the global namespace.
+
+Variables that would have been global become local to the function. Following code defines only a single global variable: the function name `chunkNamespace`.
+
+function chunkNamespace() {
+
+// Chunk of code goes here
+
+// Any variables defined in the chunk are local to this function
+
+// instead of cluttering up the global namespace.
+
+}
+
+chunkNamespace();
+
+If defining even a single property is too much, you can define and invoke an anonymous function in a single expression — IIEF (immediately invoked function expression)
+
+(function() {
+
+// chunkNamespace() function rewritten as an unnamed expression.
+
+// Chunk of code goes here
+
+}());
+
+### Closures
+
+JavaScript uses lexical scoping. This means that functions are executed using the variable scope that was in effect when they were defined, not the variable scope that is in effect when they are invoked.
+
+In order to implement lexical scoping, the internal state of a JavaScript function object must include not only the code of the function but also a reference to the scope in which the function definition appears.
+
+This combination of a function object and a scope (a set of variable bindings) in which the function’s variables are resolved is called a closure.
+
+Closures become interesting when they are invoked from a different scope than the one they were defined in. This happens most commonly when a nested function object is returned from the function within which it was defined.
+
+let scope = "global scope";
+
+function checkscope() {
+
+let scope = "local scope";
+
+function f() { return scope; }
+
+return f();
+
+}
+
+`checkscope()`
+
+“local scope”
+
+let scope = "global scope";
+
+function checkscope() {
+
+let scope = "local scope";
+
+function f() { return scope; }
+
+return f;
+
+}
+
+`let s = checkscope()();`
+
+“local scope”
+
+Closures capture the local variables of a single function invocation and can use those variables as private state.
+
+let uniqueInteger = (function() {
+
+let counter = 0;
+
+return function() { return counter++; };
+
+}());
+
+`uniqueInteger()`
+
+0
+
+`uniqueInteger()`
+
+1
+
+it is the return value of the function that is being assigned to `uniqueInteger`.
+
+Private variables like counter need not be exclusive to a single closure: it is perfectly possible for two or more nested functions to be defined within the same outer function and share the same scope.
+
+function counter() {
+
+let n = 0;
+
+return {
+
+count: function() { return n++; },
+
+reset: function() { n = 0; }
+
+};
+
+}
+
+`let c = counter(), d = counter();`
+
+`c.count()`
+
+0
+
+`d.count()`
+
+0
+
+`c.reset();`
+
+`c.count()`
+
+0
+
+`d.count()`
+
+1
+
+You can combine this closure technique with property getters and setters
+
+function counter(n) {
+
+return {
+
+get count() { return n++; },
+
+set count(m) {
+
+if (m > n) n = m;
+
+else throw Error("count can only be set to a larger value")
+
+}
+
+};
+
+}
+
+`let c = counter(1000);`
+
+`c.count`
+
+1000
+
+`c.count`
+
+1001
+
+`c.count = 2000;`
+
+`c.count`
+
+2000
+
+`c.count = 2000;`
+
+Error: count can only be set to a larger value
+
+Define a private variable and two nested functions to get and set the value of that variable.
+
+function addPrivateProperty(o, name, predicate) {
+
+let value;
+
+o\[\`get${name}\`\] = function() { return value; };
+
+o\[\`set${name}\`\] = function(v) {
+
+if (predicate && !predicate(v)) {
+
+throw new TypeError(\`set${name}: invalid value ${v}\`);
+
+}
+
+else {
+
+value = v;
+
+}
+
+};
+
+}
+
+`let o = {};`
+
+`addPrivateProperty(o, "Name", x => typeof x === "string");`
+
+`o.setName("Frank");`
+
+`o.getName()`
+
+“Frank”
+
+`o.setName(0);`
+
+TypeError: try to set a value ofthe wrong type
+
+### Function Properties, Methods, and Constructor
+
+Since functions are objects, they can have properties and methods, just like any other object.
+
+### The length Property
+
+The read-only length property of a function specifies the arity of the function — the number of parameters it declares in its parameter list, which is usually the number of arguments that the function expects.
+
+### The name Property
+
+This property is primarily useful when writing debugging or error messages.
+
+### The prototype Property
+
+When a function is used as a constructor, the newly created object inherits properties from the prototype object.
+
+### The call() and apply() Methods
+
+`call()` and `apply()` allow you to indirectly invoke a function as if it were a method of some other object. The first argument to both `call()` and `apply()` is the object on which the function is to be invoked; this argument is the invocation context and becomes the value of the `this` keyword within the body of the function.
+
+To invoke the function `f()` as a method of the object o (passing no arguments),
+
+`f.call(o);`
+
+`f.apply(o);`
+
+To pass two numbers to the function `f()` and invoke it as if it were a method of the object o,
+
+f.call(o, 1, 2);
+
+The `apply()` method is like the `call()` method, except that the arguments to be passed to the function are specified as an array:
+
+f.apply(o, \[1,2\]);
+
+The `trace()` function defined uses the `apply()` method instead of a spread operator, and by doing that, it is able to invoke the wrapped method with the same arguments and the same this value as the wrapper method
+
+function trace(o, m) {
+
+let original = o\[m\];
+
+o\[m\] = function(...args) {
+
+console.log(new Date(), "Entering:", m);
+
+let result = original.apply(this, args);
+
+console.log(new Date(), "Exiting:", m);
+
+return result;
+
+};
+
+}
+
+### The bind() Method
+
+The primary purpose of `bind()` is to bind a function to an object.
+
+`function f(y) { return this.x + y; }`
+
+`let o = { x: 1 };`
+
+`let g = f.bind(o);`
+
+`g(2)`
+
+3
+
+`let p = { x: 10, g };`
+
+`p.g(2)`
+
+3 // g is still bound to o, not p.
+
+The most common use case for calling `bind()` is to make non-arrow functions behave like arrow functions.
+
+Partial application is a common technique in functional programming and is sometimes called `currying`.
+
+`let sum = (x,y) => x + y;`
+
+`let succ = sum.bind(null, 1);`
+
+`succ(2)`
+
+3
+
+### The toString() Method
+
+Most (but not all) implementations of this `toString()` method return the complete source code for the function
+
+### The Function() Constructor
+
+The Function() constructor is best thought of as a globally scoped version of `eval()` that defines new variables and functions in its own private scope. You will probably never need to use this constructor in your code.
+
+### Higher-Order Functions
+
+A higher-order function is a function that operates on functions, taking one or more functions as arguments and returning a new function.
+
+function not(f) {
+
+return function(...args) {
+
+let result = f.apply(this, args);
+
+return !result;
+
+};
+
+}
+
+`const even = x => x % 2 === 0;`
+
+A function to determine if a number is even
+
+`const odd = not(even);`
+
+`[1,1,3,5,5].every(odd)`
+
+true
+
+Returns a new function that maps one array to another
+
+const map = function(a, ...args) { return a.map(...args); };
+
+function mapper(f) {
+
+return a => map(a, f);
+
+}
+
+const increment = x => x + 1;
+
+const incrementAll = mapper(increment);
+
+incrementAll(\[1,2,3\]
+
+\[2,3,4\]
+
+Example that takes two functions, f and g, and returns a new function that computes f(g()):
+
+function compose(f, g) {
+
+return function(...args) {
+
+return f.call(this, g.apply(this, args));
+
+};
+
+}
+
+`const sum = (x,y) => x+y;`
+
+`const square = x => x*x;`
+
+`compose(square, sum)(2,3)`
+
+25
+
+### Memoization
+
+We defined a factorial function that cached its previously computed results. In functional programming, this kind of caching is called memoization.
+
+### Classes
+
+JavaScript’s classes and prototype-based inheritance mechanism are substantially different from the classes and class-based inheritance mechanism of Java.
+
+### Classes and Prototypes
+
+If we define a prototype object and then use `Object.create()` to create objects that inherit from it, we have defined a JavaScript class.
+
+Factory function that returns a new range object:
+
+function range(from, to) {
+
+let r = Object.create(range.methods);
+
+r.from = from;
+
+r.to = to;
+
+return r;
+
+}
+
+range.methods = {
+
+includes(x) { return this.from <= x && x <= this.to; },
+
+\*\[Symbol.iterator\]() {
+
+for(let x = Math.ceil(this.from); x <= this.to; x++)
+
+yield x;
+
+},
+
+toString() { return "(" + this.from + "..." + this.to +")"; }
+
+};
+
+`let r = range(1,3);`
+
+`r.includes(2)`
+
+true
+
+`r.toString()`
+
+“(1…3)”
+
+`[...r]`
+
+\[1, 2, 3\]
+
+### Classes and Constructors
+
+A constructor is a function designed for the initialization of newly created objects.
+
+The critical feature of constructor invocations is that the `prototype` property of the constructor is used as the prototype of the new object.
+
+While almost all objects have a prototype, only a few objects have a `prototype` property. It is function objects that have a `prototype` property.
+
+This means that all objects created with the same constructor function inherit from the same object and are therefore members of the same class.
+
+A Range class using a constructor
+
+function Range(from, to) {
+
+this.from = from;
+
+this.to = to;
+
+}
+
+Range.prototype = {
+
+includes: function(x) { return this.from <= x && x <= this.to; },
+
+\[Symbol.iterator\]: function\*() {
+
+for(let x = Math.ceil(this.from); x <= this.to; x++)
+
+yield x;
+
+},
+
+toString: function() { return "(" + this.from + "..." + this.to + ")"; }
+
+};
+
+`let r = new Range(1,3);`
+
+`r.includes(2)`
+
+true
+
+`r.toString()`
+
+“(1…3)”
+
+`[...r]`
+
+\[1, 2, 3\]
+
+Because the `Range()` constructor is invoked with `new`, it does not have to call `Object.create()` or take any action to create a new object.
+
+In the first example, the prototype was `range.methods`. This was a convenient and descriptive name, but arbitrary. In the second example, the prototype is `Range.prototype`, and this name is mandatory.
+
+An invocation of the `Range()` constructor automatically uses `Range.prototype` as the prototype of the `new Range` object.
+
+### Constructors, Class Identity, and instanceof
+
+Two objects are instances of the same class if and only if they inherit from the same prototype object.
+
+The `instanceof` operator is not checking whether `r` was actually initialized by the Range constructor. Instead, it is checking whether `r` inherits from `Range.prototype`.
+
+function Strange() {}
+
+Strange.prototype = Range.prototype;
+
+new Strange() instanceof Range
+
+true
+
+If you want to test the prototype chain of an object for a specific prototype and do not want to use the constructor function as an intermediary, you can use the `isPrototypeOf()` method
+
+range.methods.isPrototypeOf(r);
+
+### The constructor Property
+
+Every regular JavaScript function automatically has a `prototype` property. The value of this property is an object that has a single, non-enumerable `constructor` property.
+
+The value of the `constructor` property is the function object
+
+let F = function() {};
+
+let p = F.prototype;
+
+let c = p.constructor;
+
+c === F
+
+true
+
+`let o = new F();`
+
+`o.constructor === F`
+
+true
+
+Instances of the Range class, as defined, do not have a constructor property. We can remedy this problem by explicitly adding a constructor to the prototype:
+
+Range.prototype = {
+
+constructor: Range
+
+};
+
+Another common technique that you are likely to see in older JavaScript code is to use the predefined prototype object with its constructor property and add methods to it one at a time with code like this:
+
+Range.prototype.includes = function(x) {
+
+return this.from <= x && x <= this.to;
+
+};
+
+Range.prototype.toString = function() {
+
+return "(" + this.from + "..." + this.to + ")";
+
+};
+
+### Classes with the class Keyword
+
+class Range {
+
+constructor(from, to) {
+
+this.from = from;
+
+this.to = to;
+
+}
+
+includes(x) { return this.from <= x && x <= this.to; }
+
+\*\[Symbol.iterator\]() {
+
+for(let x = Math.ceil(this.from); x <= this.to; x++)
+
+yield x;
+
+}
+
+toString() { return \`(${this.from}...${this.to})\`; }
+
+}
+
+`let r = new Range(1,3);`
+
+`r.includes(2)`
+
+true
+
+`r.toString()`
+
+(1…3)
+
+`[...r]`
+
+\[1, 2, 3\]
+
+Although class bodies are superficially similar to object literals, they are not the same thing. In particular, they do not support the definition of properties with name/value pairs.
+
+If your class does not need to do any initialization, you can omit the constructor keyword and its body, and an empty constructor function will be implicitly created for you.
+
+If you want to define a class that subclasses — or inherits from — another class, you can use the `extends` keyword with the class keyword:
+
+class Span extends Range {
+
+constructor(start, length) {
+
+if (length >= 0) {
+
+super(start, start + length);
+
+}
+
+else {
+
+super(start + length, start);
+
+}
+
+}
+
+}
+
+class declarations have both statement and expression forms
+
+`let Square = class { constructor(x) { this.area = x * x; } };`
+
+`new Square(3).area`
+
+9
+
+### Static methods
+
+You can define a `static` method within a class body by prefixing the method declaration with the `static` keyword. Static methods are defined as properties of the constructor function rather than properties of the prototype object.
+
+static parse(s) {
+
+let matches = s.match(/^\\((\\d+)\\.\\.\\.(\\d+)\\)$/);
+
+if (!matches) {
+
+throw new TypeError(\`Cannot parse Range from "${s}".\`)
+
+}
+
+return new Range(parseInt(matches\[1\]),
+
+parseInt(matches\[2\]));
+
+}
+
+The method defined by this code is `Range.parse()`, not `Range.prototype.parse()`, and you must invoke it through the constructor, not through an instance:
+
+let r = Range.parse('(1...10)');
+
+### Getters, Setters, and other Method Forms
+
+Within a class body, you can define getter and setter methods just as you can in object literals. The only difference is that in class bodies, you don’t put a comma after the getter or setter.
+
+### Public, Private, and Static Fields
+
+The ES6 standard only allows the creation of methods (including getters, setters, and generators) and static methods; it does not include syntax for defining fields.
+
+If you want to define a field on a class instance, you must do that in the constructor function or in one of the methods. And if you want to define a static field for a class, you must do that outside the class body, after the class has been defined.
+
+Standardization is underway, however, for extended class syntax that allows the definition of instance and static fields, in both public and private forms.
+
+class Buffer {
+
+constructor() {
+
+this.size = 0;
+
+this.capacity = 4096;
+
+this.buffer = new Uint8Array(this.capacity);
+
+}
+
+}
+
+←>
+
+class Buffer {
+
+size = 0;
+
+capacity = 4096;
+
+buffer = new Uint8Array(this.capacity);
+
+}
+
+The same proposal that seeks to standardize these instance fields also defines private (with the # prefix) instance fields.
+
+class Buffer {
+
+#size = 0;
+
+get size() { return this.#size; }
+
+}
+
+A related proposal seeks to standardize the use of the `static` keyword for fields.
+
+static integerRangePattern = /^\\((\\d+)\\.\\.\\.(\\d+)\\)$/;
+
+static parse(s) {
+
+let matches = s.match(Range.integerRangePattern);
+
+if (!matches) {
+
+throw new TypeError(\`Cannot parse Range from "${s}".\`)
+
+}
+
+return new Range(parseInt(matches\[1\]), matches\[2\]);
+
+}
+
+### Adding Methods to Existing Classes
+
+We can augment JavaScript classes simply by adding new methods to their prototype objects.
+
+if (!String.prototype.startsWith) {
+
+String.prototype.startsWith = function(s) {
+
+return this.indexOf(s) === 0;
+
+};
+
+}
+
+Number.prototype.times = function(f, context) {
+
+let n = this.valueOf();
+
+for(let i = 0; i < n; i++) f.call(context, i);
+
+};
+
+### Subclasses
+
+### Subclasses and Prototypes
+
+Span subclass of the Range class. This subclass will work just like a Range, but instead of initializing it with a start and an end, we’ll instead specify a start and a distance, or span.
+
+function Span(start, span) {
+
+if (span >= 0) {
+
+this.from = start;
+
+this.to = start + span;
+
+}
+
+else {
+
+this.to = start;
+
+this.from = start + span;
+
+}
+
+}
+
+Ensure that the `Span` prototype inherits from the `Range`
+
+Span.prototype = Object.create(Range.prototype);
+
+We don’t want to inherit `Range.prototype.constructor`, so we define our own constructor property:
+
+Span.prototype.constructor = Span;
+
+`Span` overrides the `toString()` method
+
+`Span.prototype.toString = function() {`  
+ `` return `(${this.from}... +${this.to - this.from})`; ``  
+ `};`
+
+A robust subclassing mechanism needs to allow classes to invoke the methods and constructor of their superclass, but prior to ES6, JavaScript did not have a simple way to do these things.
+
+### Subclasses with extends and super
+
+class EZArray extends Array {
+
+get first() { return this\[0\]; }
+
+get last() { return this\[this.length-1\]; }
+
+}
+
+`let a = new EZArray();`
+
+`a instanceof EZArray`
+
+true
+
+`a instanceof Array`
+
+true
+
+`a.push(1,2,3,4);`
+
+`a.pop()`
+
+4
+
+`a.first`
+
+1
+
+`a.last`
+
+3
+
+`Array.isArray(a)`
+
+true
+
+`EZArray.isArray(a)`
+
+true
+
+`Array.prototype.isPrototypeOf(EZArray.prototype`
+
+true
+
+`Array.isPrototypeOf(EZArray)`
+
+true
+
+Example demonstrates the use of the `super` keyword to invoke the constructor and methods of the superclass
+
+class TypedMap extends Map {
+
+constructor(keyType, valueType, entries) {
+
+if (entries) {
+
+for(let \[k, v\] of entries) {
+
+if (typeof k !== keyType || typeof v !== valueType) {
+
+throw new TypeError(\`Wrong type for entry \[${k}, ${v}\]\`);
+
+}
+
+}
+
+}
+
+super(entries);
+
+this.keyType = keyType;
+
+this.valueType = valueType;
+
+}
+
+set(key, value) {
+
+if (this.keyType && typeof key !== this.keyType) {
+
+throw new TypeError(\`${key} is not of type${this.keyType}\`);
+
+}
+
+if (this.valueType && typeof value !== this.valueType)
+
+{
+
+throw new TypeError(\`${value} is not of type ${this.valueType}\`);
+
+}
+
+return super.set(key, value);
+
+}
+
+}
+
+You may not use the `this` keyword in your constructor until after you have invoked the superclass constructor with `super()`. This enforces a rule that superclasses get to initialize themselves before subclasses do.
+
+Once private fields are supported, we could change these properties to `#keyType` and `#valueType` so that they could not be altered from the outside.
+
+### Class Hierarchies and Abstract Classes
+
+Define abstract classes — classes that do not include a complete implementation — to serve as a common superclass for a group of related subclasses.
+
+### Modules
+
+### Automating Closure-Based Modularity
+
+Imagine a tool that takes a set of files, wraps the content of each of those files within an immediately invoked function expression, keeps track of the return value of each function, and concatenates everything into one big file.
+
+const modules = {};
+
+function require(moduleName) { return modules\[moduleName\]; }
+
+modules\["sets.js"\] = (function() {
+
+const exports = {};
+
+exports.BitSet = class BitSet { ... };
+
+return exports;
+
+}());
+
+modules\["stats.js"\] = (function() {
+
+const exports = {};
+
+const sum = (x, y) => x + y;
+
+const square = x = > x \* x;
+
+exports.mean = function(data) { ... };
+
+exports.stddev = function(data) { ... };
+
+return exports;
+
+}());
+
+writing code like the following to make use of those modules
+
+const stats = require("stats.js");
+
+const BitSet = require("sets.js").BitSet;
+
+// Now write code using those modules
+
+let s = new BitSet(100);
+
+s.insert(10);
+
+s.insert(20);
+
+s.insert(30);
+
+let average = stats.mean(\[...s\]);
+
+### Modules in ES6
+
+ES6 adds import and export keywords to JavaScript and finally supports real modularity as a core language feature.
+
+ES6 modularity is conceptually the same as Node modularity: each file is its own module, and constants, variables, functions, and classes defined within a file are private to that module unless they are explicitly exported.
+
+### ES6 Exports
+
+To export a constant, variable, function, or class from an ES6 module, simply add the keyword export before the declaration
+
+export const PI = Math.PI;
+
+export function degreesToRadians(d) { return d \* PI / 180; }
+
+export class Circle {
+
+constructor(r) { this.r = r; }
+
+area() { return PI \* this.r \* this.r; }
+
+}
+
+or:
+
+export { Circle, degreesToRadians, PI };
+
+It is common to write modules that export only one value (typically a function or class), and in this case, we usually use export `default` instead of `export`
+
+export default class BitSet {
+
+// implementation omitted
+
+}
+
+### ES6 Imports
+
+import BitSet from './bitset.js';
+
+import { mean, stddev } from "./stats.js";
+
+When importing from a module that defines many exports, however, you can easily import everything with an import statement like this:
+
+import \* as stats from "./stats.js";
+
+With the wildcard import shown in the previous example, the importing module would use the imported `mean()` and `stddev()` functions through the stats object, invoking them as `stats.mean()` and `stats.stddev()`.
+
+Note: not finished.
+
+### The JavaScript Standard Library
+
+### The Set Class
+
+Sets are not ordered or indexed, and they do not allow duplicates.
+
+let s = new Set();
+
+let t = new Set(\[1, s\]);
+
+let t = new Set(s);
+
+let unique = new Set("Mississippi");
+
+The argument to the `Set()` constructor need not be an array: any iterable object (including other Set objects) is allowed.
+
+The `add()` method takes a single argument; if you pass an array, it adds the array itself to the set, not the individual array elements. `add()` always returns the set it is invoked on, however, so if you want to add multiple values to a set, you can used chained method calls like.
+
+it is very important to understand that set membership is based on strict equality checks, like the === operator performs.
+
+The most important thing we do with sets is not to add and remove elements from them, but to check to see whether a specified value is a member of the set:
+
+`let oneDigitPrimes = new Set([2,3,5,7]);`
+
+`oneDigitPrimes.has(2)`
+
+The Set class is iterable, which means that you can use a `for/of` loop to enumerate all of the elements of a set:
+
+let sum = 0;
+
+for(let p of oneDigitPrimes) {
+
+sum += p; // and add them up
+
+}
+
+Because Set objects are iterable, you can convert them to arrays and argument lists with the … spread operator
+
+`[...oneDigitPrimes]`
+
+JavaScript Set class always remembers the order that elements were inserted in, and it always uses this order when you iterate a set: the first element inserted will be the first one iterated (assuming you haven’t deleted it first), and the most recently inserted element will be the last one iterated.
+
+Set class also implements a `forEach()` method
+
+let product = 1;
+
+oneDigitPrimes.forEach(n => { product \*= n; });
+
+### The Map Class
+
+let m = new Map();
+
+let n = new Map(\[\["one", 1\],\["two", 2\]\]);
+
+let copy = new Map(n);
+
+let o = { x: 1, y: 2};
+
+let p = new Map(Object.entries(o));
+
+map is a set of keys, each of which has an associated value. This is not quite the same as a set of key/value pairs.
+
+use `has()` to check whether a map includes the specified key; use `delete()` to remove a key (and its associated value) from the map; use `clear()` to remove all key/value pairs from the map; and use the size property to find out how many keys a map contains.
+
+`set()` method of Map can be chained.
+
+Any JavaScript value can be used as a key or a value in a Map. This includes `null, undefined`, and `NaN`, as well as reference types like objects and arrays.
+
+Map compares keys by identity, not by equality.
+
+`let m = new Map();`
+
+`m.set({}, 1);`
+
+`m.set({}, 2);`
+
+Map a different empty object to the number 2.
+
+`m.get({})`
+
+undefined:
+
+`m.set(m, undefined);`
+
+`m.has(m)`
+
+true
+
+`m.get(m)`
+
+undefined
+
+Iterate over map:
+
+`let m = new Map([["x", 1], ["y", 2]]);`
+
+`[...m]`
+
+\[\[“x”, 1\], \[“y”, 2\]\]
+
+`for(let [key, value] of m) {...}`
+
+Map class iterates in insertion order
+
+If you want to iterate just the keys or just the associated values of a map, use the `keys()` and `values()` methods: these return iterable objects that iterate keys and values, in insertion order. (The  
+ `entries()` method returns an iterable object that iterates key/value pairs, but this is exactly the same as iterating the map directly.)
+
+\[...m.keys()\]
+
+\[...m.values()\]
+
+\[...m.entries()\]
+
+Map objects can also be iterated using the `forEach()`
+
+m.forEach((value, key) => {...}
+
+Note that the value parameter comes before the key parameter.
+
+### WeakMap and WeakSet
+
+The `WeakMap` class is a variant (but not an actual subclass) of the Map class that does not prevent its key values from being garbage collected.
+
+`WeakMap` keys must be objects or arrays; primitive values are not subject to garbage collection and cannot be used as keys.
+
+WeakMap implements only the `get(), set(), has(),` and `delete()` methods. In particular, `WeakMap` is not iterable and does not define `keys(), values(),` or `forEach()`. If WeakMap was iterable, then its keys would be reachable and it wouldn’t be weak.
+
+Similarly, WeakMap does not implement the size property because the `size` of a WeakMap could change at any time as objects are garbage collected
+
+### Typed Arrays and Binary Data
+
+They differ from regular arrays in some very important ways
+
+· The elements of a typed array are all numbers. Unlike regular JavaScript numbers, however, typed arrays allow you to specify the type (signed and unsigned integers and IEEE-754 floating point) and size (8 bits to 64 bits) of the numbers to be stored in the array.
+
+· You must specify the length of a typed array when you create it, and that length can never change.
+
+· The elements of a typed array are always initialized to 0 when the array is created.
+
+Int8Array()
+
+Uint8Array()
+
+Uint8ClampedArray()
+
+Int16Array()
+
+Uint32Array()
+
+Uint16Array()
+
+Int32Array()
+
+BigInt64Array()
+
+BigUint64Array()
+
+Float32Array()
+
+let bytes = new Uint8Array(1024);
+
+let matrix = new Float64Array(9);
+
+let sudoku = new Int8Array(81);
+
+Initialize with values
+
+let white = Uint8ClampedArray.of(255, 255, 255, 0);
+
+let ints = Uint32Array.from(white);
+
+one more way to create typed arrays that involves the `ArrayBuffer` type
+
+let buffer = new ArrayBuffer(1024\*1024);
+
+buffer.byteLength
+
+1024\*1024
+
+Typed arrays are not true arrays, but they re-implement most array methods, so you can use them pretty much just like you’d use regular arrays:
+
+`let ints = new Int16Array(10);`
+
+10 short integers
+
+`ints.fill(3).map(x=>x*x).join("")`
+
+“9999999999”
+
+Remember that typed arrays have fixed lengths, so the length property is read-only, and methods that change the length of the array (such as `push(), pop(), unshift(), shift(),` and `splice()`) are not implemented for typed arrays. Methods that alter the contents of an array without changing the length (such as `sort(), reverse()`, and `fill()`) are implemented.
+
+### Determine Endianess and DataView
+
+let littleEndian = new Int8Array(new Int32Array(\[1\]).buffer)
+
+\[0\] === 1;
+
+You can use the `DataView` class, which defines methods for reading and writing values from an `ArrayBuffer` with explicitly specified byte ordering. Refer to book for more examples.
+
+### Pattern Matching with Regular Expressions
+
+RegExp objects may be created with the `RegExp()` constructor, of course, but they are more often created using a special literal syntax.
+
+let pattern = /s$/;
+
+←>
+
+let pattern = new RegExp("s$");
+
+Regular expressions can also have one or more flag characters that affect how they work
+
+let pattern = /s$/i;
+
+i = case insensitive
+
+Punctuation characters have special meanings in regular expressions: `^ $ . * + ? = ! : | \ / ( ) [ ] { }.` Other punctuation characters, such as quotation marks and @, do not have special meaning and simply match themselves literally in a regular expression.
+
+If you use the `RegExp()` constructor, keep in mind that any backslashes in your regular expression need to be doubled, since strings also use backslashes as an escape character.
+
+**Character**
+
+**Matches**
+
+`[...]`
+
+Any one character between the brackets.
+
+`[^...]`
+
+Any one character not between the brackets
+
+`.`
+
+Any character except newline or another Unicode line terminator. Or, if the `RegExp` uses the s flag, then a period matches any character, including line terminators.
+
+`\w`
+
+Any ASCII word character. Equivalent to \[a-zA-Z0-9\_\].
+
+`\W`
+
+Equivalent to \[^a-zA-Z0-9\_\]
+
+`\s`
+
+Any Unicode whitespace character.
+
+`\S`
+
+Any character that is not Unicode whitespace.
+
+`\d`
+
+Equivalent to \[0-9\].
+
+`\D`
+
+Equivalent to \[⁰-9\].
+
+`[\b]`
+
+A literal backspace (special case).
+
+`[\s\d]`
+
+Any one whitespace character or digit
+
+REPETITIONS
+
+**Character**
+
+**Meaning**
+
+`{n,m}`
+
+Match the previous item at least n times but no more than m times
+
+`{n,}`
+
+Match the previous item n or more times.
+
+`{n}`
+
+Match exactly n occurrences of the previous item.
+
+`?`
+
+Equivalent to {0,1}.
+
+`+`
+
+Equivalent to {1,}
+
+\*
+
+Equivalent to {0,}.
+
+**Example**
+
+**Description**
+
+let r = /\\d{2,4}/;
+
+Match between two and four digits
+
+r = /\\w{3}\\d?/;
+
+Match exactly three word characters and an optional digit
+
+r = /\\s+java\\s+/;
+
+Match “java” with one or more spaces before and after
+
+r = /\[^(\]\*/;
+
+Match zero or more characters that are not open parens
+
+If you want to match repetitions of more complicated expressions, you’ll need to define a group with parentheses
+
+Be careful when using the \* and ? repetition characters. Since these characters may match zero instances of whatever precedes them, they are allowed to match nothing.
+
+### NON-GREEDY REPETITION
+
+It is also possible to specify that repetition should be done in a non-greedy way. Simply follow the repetition character or characters with a question mark: `??, +?, *?`, or even {1,5}?.
+
+**String**
+
+**Pattern**
+
+**Match**
+
+"aaa"
+
+/a+/
+
+"aaa"
+
+"aaa"
+
+/a+?/
+
+"a"
+
+Note that using non-greedy repetition may not always produce the results you expect. This is because regular expression pattern matching is done by findingthe first position in the string at which a match is possible. Since a match is possible starting at the first character of the string, shorter matches starting at subsequent characters are never even considered.
+
+### ALTERNATION, GROUPING, AND REFERENCES
+
+**Char**
+
+**Pattern**
+
+**Pattern**
+
+`|`
+
+`/ab|cd|ef/`
+
+“ab” or the string “cd” or the string “ef”.
+
+`/\d{3}|[a-z]{4}/`
+
+either three digits or four lowercase letters.
+
+`/a|ab/`
+
+matches only the first letter “a”
+
+`()`
+
+`/java(script)?/`
+
+matches “java” followed by the optional “script”
+
+`/(ab|cd)+|ef/`
+
+matches “java” followed by the optional “script”
+
+If the left alternative matches, the right alternative is ignored, even if it would have produced a “better” match
+
+Another purpose of parentheses in regular expressions is to define subpatterns within the complete pattern. When a regular expression is successfully matched against a target string, it is possible to extract the portions of the target string that matched any particular parenthesized subpattern. For example, suppose you are looking for one or more lowercase letters followed by one or more digits. You might use the pattern `/[a-z]+\d+/`. But suppose you only really care about the digits at the end of each match. If you put that part of the pattern in parentheses (/\[a-z\]+(\\d+)/), you can extract the digits from any matches you find,
+
+A related use of parenthesized subexpressions is to allow you to refer back to a subexpression later in the same regular expression. This is done by following a \\ character by a digit or digits. The digits refer to the position of the parenthesized subexpression within the regular expression. For example, \\1 refers back to the first subexpression, and \\3 refers to the third.
+
+**Match**
+
+**Pattern**
+
+zero or more characters within single or double quotes. However, it does not  
+ require the opening and closing quotes to match
+
+/\['"\]\[^'"\]\*\['"\]/
+
+To require the quotes to match,use a reference
+
+/(\['"\])\[^'"\]\*\\1/
+
+**Character**
+
+**Meaning**
+
+|
+
+match either the subexpression to the left or the subexpression to the right.
+
+(…)
+
+Grouping: group items into a single unit that can be used with \*, +, ?, |, and so on. Also remember the characters that match this group for use with later references
+
+(?:…)
+
+group items into a single unit, but do not remember the characters that match this group.
+
+Note `(?:...)` syntax:
+
+In pattern `"/([Jj]ava(?:[Ss]cript)?)\sis\s(fun\w*)/`” `\2` refers to the text matched by `(fun\w*)` since `(?:[Ss]cript)?)` in not remembered.
+
+### SPECIFYING MATCH POSITION
+
+_regular expression anchors_ because they anchor the pattern to a specific position in the search string. The most commonly used anchor elements are ^, which ties the pattern to the beginning of the string, and $, which anchors the pattern to the end of the string.
+
+**Example**
+
+**Pattern**
+
+match the word “JavaScript” on a line by itself
+
+`/^JavaScript$/`
+
+To search for “Java” as a word by itself you can try the pattern `/\sJava\s/`, which requires a space before and after the word. But there are two problems with this solution. First, it does not match “Java” at the beginning or the end of a string, but only if it appears with space on either side. Second, when this pattern does find a match, the matched string it returns has leading and trailing spaces, which is not quite what’s needed. So instead of matching actual space characters with \\s, match (or anchor to) word boundaries with \\b. The resulting expression is `/\bJava\b/`.
+
+The element `\B` anchors the match to a location that is not a word boundary. Thus, the pattern `/\B[Ss]cript/` matches “JavaScript” and “postscript”, but not “script” or “Scripting”.
+
+You can also use arbitrary regular expressions as anchor conditions.
+
+If you include an expression within `(?= and )` characters, it is a lookahead assertion, and it specifies that the enclosed characters must match, without actually matching them.
+
+**Example**
+
+**Pattern**
+
+**Matches**
+
+to match the name of a common programming language, but only if it is followed by a colon
+
+`/[Jj]ava([Ss]cript)?(?=\:)/`
+
+matches the word “JavaScript” in “JavaScript: The DefinitiveGuide”
+
+does not match “Java” in “Java in a Nutshell”
+
+If you instead introduce an assertion with `(?!`, it is a negative lookahead assertion.
+
+### FLAGS
+
+Flags are specified after the second / character of a regular expression literal or as a string passed as the second argument to the RegExp() constructor.
+
+**Flag**
+
+**Meaning**
+
+g
+
+“global” — that is,that we intend to use it to find all matches within a string rather than just finding the first [match.it](http://match.it/) does alter the behavior of the String `match()` method and the `RegExp exec()` method in important ways.
+
+i
+
+case-insensitive
+
+m
+
+“multiline” mode
+
+s
+
+useful when working with text that includes newlines.Normally, a “.” in a regular expression matches any character except a line terminator. When the s flag is used, however, “.” will match any character, including line terminators.
+
+u
+
+Unicode.
+
+Setting the u flag on a RegExp also allows you to use the new `\u{...}` escape sequence for Unicode character and also enables the \\p{…} notation for Unicode character classes.
+
+y
+
+“sticky”. should match at the beginning of a string or at the first character following the previous match
+
+### String Methods for Pattern Matching
+
+### SEARCH()
+
+Strings support four methods that use regular expressions.
+
+`"JavaScript".search(/script/ui)`
+
+4
+
+`"Python".search(/script/ui)`
+
+\-1
+
+`search()` does not support global searches; it ignores the `g` flag of its regular expression argument.
+
+REPLACE()
+
+`text.replace(/javascript/gi, "JavaScript");`
+
+No matter how it is capitalized, replace it with the correct capitalization
+
+parenthesized subexpressions of a regular expression are numbered from left to right and that the regular expression remembers the text that each subexpression matches.
+
+to replace quotation marks in a string with other characters:
+
+`let quote = /"([^"]*)"/g;`
+
+`'He said "stop"'.replace(quote, '«$1»')`
+
+‘He said «stop»’
+
+If your RegExp uses named capture groups, then you can refer to the matching text by name rather than by number:
+
+`let quote = /"(?<quotedText>[^"]*)"/g;`
+
+`'He said "stop"'.replace(quote, '«$<quotedText>»')`
+
+‘He said «stop»’
+
+Instead of passing a replacement string as the second argument to replace(), you can also pass a function that will be invoked to compute the replacement value.
+
+Example to convert decimal integers in a string to hexadecimal:
+
+`let s = "15 times 15 is 225";`
+
+`s.replace(/\d+/gu, n => parseInt(n).toString(16))`
+
+“f times f is e1”
+
+### MATCH()
+
+`"7 plus 8 equals 15".match(/\d+/g)`
+
+\[“7”, “8”, “15”\]
+
+If the regular expression does not have the `g` flag set, `match()` does not do a global search; it simply searches for the first match. In this nonglobal case, `match()` still returns an array, but the array elements are completely different.
+
+Thus, if `match()` returns an array a, a\[0\] contains the complete match, a\[1\] contains the substring that matched the first parenthesized expression, and so on.
+
+let url = /(\\w+):\\/\\/(\[\\w.\]+)\\/(\\S\*)/;
+
+let text = "Visit my blog at http://www.example.com/~david";
+
+let match = text.match(url);
+
+let fullurl, protocol, host, path;
+
+if (match !== null) {
+
+fullurl = match\[0\];
+
+[“http://www.example.com/~david](http://www.example.com/~david)“
+
+protocol = match\[1\];
+
+“http”
+
+host = match\[2\];
+
+[“www.example.com](http://www.example.com/)“
+
+path = match\[3\];
+
+“~david”
+
+In this non-global case, the array returned by match() also has some object properties in addition to the numbered array elements.
+
+input property refers to the string on which match() was called
+
+The index property is the position within that string at which the match starts.
+
+if the regular expression contains named capture groups, then the returned array also has a groups property whose value is an object.
+
+`let url = /(?<protocol>\w+):\/\/(?<host>[\w.]+)\/(?<path>\S*)/;`
+
+`let text = "Visit my blog at [http://www.example.com/~david](http://www.example.com/~david)";`
+
+`let match = text.match(url);`
+
+`match[0]`
+
+[“http://www.example.com/~david](http://www.example.com/~david)“
+
+`match.input`
+
+text
+
+`match.index`
+
+17
+
+`match.groups.protocol`
+
+“http”
+
+`match.groups.host`
+
+[“www.example.com](http://www.example.com/)“
+
+`match.groups.path`
+
+“~david”
+
+There are also important but less dramatic differences in behavior when the y flag is set. Refer to book for examples.
+
+### MATCHALL()
+
+Instead of returning an array of matching substrings like `match()` does, however, it returns an iterator that yields the kind of match objects that match() returns when used with a non-global RegExp.
+
+### SPLIT()
+
+`"123,456,789".split(",")`
+
+\[“123”, “456”,”789″\]
+
+`"1, 2, 3,\n4, 5".split(/\s*,\s*/)`
+
+\[“1”, “2”, “3”, “4”,”5″\]
+
+Surprisingly, if you call `split()` with a RegExp delimiter and the regular expression includes capturing groups, then the text that matches the capturing groups will be included in the returned array.
+
+`const htmlTag = /<([^>]+)>/;`
+
+`"Testing<br/>1,2,3".split(htmlTag)`
+
+\[“Testing”, “br/”,”1,2,3″\]
+
+### The RegExp Class
+
+The `RegExp()` constructor is useful when a regular expression is being dynamically created and thus cannot be represented with the regular expression literal syntax.
+
+let zipcode = new RegExp("\\\\d{5}", "g");
+
+`let exactMatch = /JavaScript/;`  
+ `let caseInsensitive = new RegExp(exactMatch, "i");`
+
+### TEST()
+
+Returns true or false by calling `exec()`.
+
+### EXEC()
+
+let pattern = /Java/g;
+
+let text = "JavaScript > Java";
+
+let match;
+
+while((match = pattern.exec(text)) !== null) {
+
+console.log(\`Matched ${match\[0\]} at ${match.index}\`);
+
+console.log(\`Next search begins at ${pattern.lastIndex}\`);
+
+}
+
+### THE LASTINDEX PROPERTY AND REGEXP REUSE
+
+The use of the `lastIndex` property with the g and y flags is a particularly awkward part of this API. When you use these flags, you need to be particularly careful when calling the `match(), exec()`, or `test()` methods because the behavior of these methods depends on `lastIndex`, and the value of `lastIndex` depends on what you have previously done with the RegExp object.
+
+To find the index of all <p> tags within a string of HTML text:
+
+let match, positions = \[\];
+
+while((match = /<p>/g.exec(html)) !== null) {
+
+positions.push(match.index);
+
+}
+
+If the html string contains at least one <p> tag, then it will loop forever. For each iteration of the loop, we’re creating a new RegExp object with `lastIndex` set to 0, so `exec()` always begins at the start of the string, and if there is a match, it will keep matching over and over. The solution, of course, is to define the RegExp once, and save it to a variable so that we’re using the same RegExp object for each iteration of the loop.
+
+On the other hand, sometimes reusing a RegExp object is the wrong thing to do. Suppose, for example, that we want to loop through all of the words in a dictionary to find words that contain pairs of double letters.
+
+let dictionary = \[ "apple", "book", "coffee" \];
+
+let doubleLetterWords = \[\];
+
+let doubleLetter = /(\\w)\\1/g;
+
+for(let word of dictionary) {
+
+if (doubleLetter.test(word)) {
+
+doubleLetterWords.push(word);
+
+}
+
+}
+
+`doubleLetterWords`
+
+\[“apple”, “coffee”\]: “book” is missing!
+
+Because we set the g flag on the RegExp, the `lastIndex` property is changed after successful matches, and the `test()` method (which is based on `exec()`) starts searching for a match at the position specified by `lastIndex`. After matching the “pp” in “apple”, `lastIndex` is 3, and so we start searching the word “book” at position 3 and do not see the “oo” that it contains.
+
+### Dates and Times
+
+let now = new Date();
+
+The current time
+
+let epoch = new Date(0);
+
+Midnight, January 1st, 1970, GMT
+
+let century = new Date(2100,
+
+0,
+
+1,
+
+2, 3, 4, 5);
+
+Year 2100
+
+January
+
+1st
+
+02:03:04.005, local
+
+let century = new Date(Date.UTC(2100, 0, 1));
+
+Midnight in GMT, January 1, 2100
+
+If you print a date (with console.log(century), for example), it will, by default, be printed in your local time zone. If you want to display a date in UTC, you should explicitly convert it to a string with `toUTCString()` or `toISOString()`.
+
+if you pass a string to the Date() constructor, it will attempt to parse that string as a date and time specification
+
+`let century = new Date("2100-01-01T00:00:00Z");`
+
+Once you have a Date object, various get and set methods allow you to query and modify the year, month, day-of-month, hour, minute, second, and millisecond fields of the Date. Each of these methods hastwo forms: one that gets or sets using local time and one that gets or sets using UTC time.
+
+Note that the methods for querying the day-of-month are `getDate()` and `getUTCDate()`. The more natural-sounding functions `getDay()` and `getUTCDay()` return the day-of-week (0 for Sunday through 6 for Saturday). The day-of-week is read-only, so there is not a corresponding `setDay()` method.
+
+### Timestamps
+
+JavaScript represents dates internally as integers that specify the number of milliseconds since (or before) midnight on January 1, 1970, UTC time.
+
+For any Date object, the `getTime()` method returns this internal value, and the `setTime()` method sets it.
+
+d.setTime(d.getTime() + 30000);
+
+add 30 secs
+
+The static Date.now() method returns the current time as a timestamp and is helpful when you want to measure how long your code takes to run
+
+let startTime = Date.now();
+
+reticulateSplines(); // Do some time-consuming operation
+
+let endTime = Date.now();
+
+console.log(\`Spline reticulation took ${endTime -startTime}ms.\`);
+
+adds three months and two weeks to the current date:
+
+`let d = new Date();`  
+ `d.setMonth(d.getMonth() + 3, d.getDate() + 14);`
+
+### Formatting and Parsing Date Strings
+
+let d = new Date(2020, 0, 1, 17, 10, 30);
+
+d.toString()
+
+“Wed Jan 01 2020 17:10:30 GMT-0800 (Pacific Standard Time)”
+
+d.toUTCString()
+
+“Thu, 02 Jan 2020 01:10:30 GMT”
+
+d.toLocaleDateString()
+
+“1/1/2020”: ‘en-US’ locale
+
+d.toLocaleTimeString()
+
+“5:10:30 PM”: ‘en-US’ locale
+
+d.toISOString()
+
+“2020-01-02T01:10:30.000Z”
+
+there is also a static Date.parse() method that takes a string as its argument, attempts to parse it as a date and time, and returns a timestamp representing that date. `Date.parse()` is able to parse the same strings that the `Date()` constructor can and is guaranteed to be able to parse the output of `toISOString(), toUTCString()`, and `toString()`.
+
+### Error Classes
+
+One good reason to use an Error object is that, when you create an Error, it captures the state of the JavaScript stack, and if the exception is uncaught, the stack trace will be displayed with the error message, which will help you debug the issue.
+
+Error objects have two properties: `message` and `name`, and a `toString()` method. Node and all modern browsers also define a `stack` property on Error objects.
+
+Subclasses are `EvalError, RangeError, ReferenceError, SyntaxError, TypeError,` and `URIError`.
+
+You should feel free to define your own Error subclasses that best encapsulate the error conditions of your own program.
+
+class HTTPError extends Error {
+
+constructor(status, statusText, url) {
+
+super(\`${status} ${statusText}: ${url}\`);
+
+this.status = status;
+
+this.statusText = statusText;
+
+this.url = url;
+
+}
+
+get name() { return "HTTPError"; }
+
+}
+
+let error = new HTTPError(404, "Not Found", "http://example.com/");
+
+error.status
+
+404
+
+error.message
+
+“404 Not Found:[http://example.com/](http://example.com/)“
+
+error.name
+
+HTTPError
+
+### JSON Serialization and Parsing
+
+JavaScript supports JSON serialization and deserialization with the two functions `JSON.stringify()` and `JSON.parse().`
+
+let o = {s: "", n: 0, a: \[true, false, null\]};
+
+let s = JSON.stringify(o);
+
+s == ‘{“s”:””,”n”:0,”a”:\[true,false,null\]}’
+
+let copy = JSON.parse(s);
+
+copy == {s: “”, n: 0, a:\[true, false, null\]}
+
+Inefficient way of creating a deep copy of an object
+
+function deepcopy(o) {
+
+return JSON.parse(JSON.stringify(o));
+
+}
+
+Typically, you pass only a single argument to `JSON.stringify()` and `JSON.parse()`. Both functions accept an optional second argument that allows us to extend the JSON format.
+
+`JSON.stringify()` also takes an optional third argument. If you would like your JSONformatted string to be human-readable (if it is being used as a configuration file, for example), then you should pass null as the second argument and pass a number or string as the third argument. If the third argument is a number, then it will use that number of spaces for each indentation level. If the third argument is a string of whitespace (such as ‘\\t’), it will use that string for each level of indent.
+
+### JSON Customizations
+
+If `JSON.stringify()` is asked to serialize a value that is not natively supported by the JSON format, it looks to see if that value has a `toJSON()` method, and if so, it calls that method and then stringifies the return value in place of the original value. Date objects implement `toJSON()`: it returns the same string that `toISOString()` method does.
+
+If you need to re-create Date objects (or modify the parsed object inany other way), you can pass a “reviver” function as the second argument to `JSON.parse()`.
+
+let data = JSON.parse(text, function(key, value) {
+
+if (key\[0\] === "\_") return undefined;
+
+if (typeof value === "string" && /^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\d.\\d\\d\\dZ$/.test(value)) {
+
+return new Date(value);
+
+}
+
+return value;
+
+});
+
+### The Console API
+
+Console functions that print their arguments like console.log() have a little-known feature: if the first argument is a string that includes `%s, %i, %d, %f, %o, %O, or %c`, then this first argument is treated as format string, and the values of subsequent arguments are substituted into the string in place of the two-character % sequences.
+
+### URL API
+
+let url = new URL("https://example.com:8000/path/name?q=term#fragment");
+
+url.href
+
+[“https://example.com:8000/path/name](https://example.com:8000/path/name)?q=term#fragment”
+
+url.origin
+
+[“https://example.com:8000](https://example.com:8000/)“
+
+url.protocol
+
+“https:”
+
+url.host
+
+[“example.com](http://example.com/):8000”
+
+url.hostname
+
+[“example.com](http://example.com/)”
+
+url.port
+
+“8000”
+
+url.pathname
+
+“/path/name”
+
+url.search
+
+“?q=term”
+
+url.hash
+
+“#fragment”
+
+let url = new URL("https://example.com");
+
+url.pathname = "api/search";
+
+Add a path to an API endpoint
+
+url.search = "q=test";
+
+Add a query parameter
+
+url.toString()
+
+[“https://example.com/api/search?q=test](https://example.com/api/search?q=test)“
+
+One of the important features of the URL class is that it correctly adds punctuation and escapes special characters in URLs when that is needed
+
+let url = new URL("https://example.com");
+
+url.pathname = "path with spaces";
+
+url.pathname
+
+“/path%20with%20spaces”
+
+url.search = "q=foo#bar";
+
+url.search
+
+“?q=foo%23bar”
+
+url.href
+
+[“https://example.com/path%20with%20spaces?q=foo%23bar](https://example.com/path%20with%20spaces?q=foo%23bar)“
+
+Often, however, HTTP requests encode the values of multiple form fields or multiple API parameters into the query portion of a URL. In this format, the query portion of the URL is a question mark followed by one or more name/value pairs, which are separated from one another by ampersands.
+
+If you want to encode these kinds of name/value pairs into the query portion of a URL, then the searchParams property will be more useful than the search property.
+
+`let url = new URL("https://example.com/search");`
+
+`url.search`
+
+“”
+
+`url.searchParams.append("q", "term");`
+
+`url.search`
+
+“?q=term”
+
+`url.searchParams.set("q", "x");`
+
+`url.search`
+
+“?q=x”
+
+`url.searchParams.append("opts", "1");`
+
+`url.search`
+
+“?q=x&opts=1”
+
+The value of the searchParams property is a URLSearchParams object.
+
+`let url = new URL("http://example.com");`
+
+`let params = new URLSearchParams();`
+
+`params.append("q", "term");`
+
+`params.append("opts", "exact");`
+
+`params.toString()`
+
+“q=term&opts=exact”
+
+`url.search = params;`
+
+`url.href`
+
+[“http://example.com/](http://example.com/)?q=term&opts=exact”
+
+### Timers
+
+`setTimeout()` and `setInterval()`—that allow programs to ask the browser to invoke a function after a specified amount of time has elapsed or to invoke the function repeatedly at a specified interval.
+
+setTimeout(() => { console.log("Ready..."); }, 1000);
+
+setTimeout(() => { console.log("set..."); }, 2000);
+
+setTimeout(() => { console.log("go!"); }, 3000);
+
+If you want to invoke a function repeatedly, use `setInterval()`
+
+Both `setTimeout()` and `setInterval()` return a value. If you save this value in a variable, you can then use it later to cancel the execution of the function by passing it to `clearTimeout()` or `clearInterval()`.
+
+let clock = setInterval(() => {
+
+console.clear();
+
+console.log(new Date().toLocaleTimeString());
+
+}, 1000);
+
+setTimeout(() => { clearInterval(clock); }, 10000);
+
+After 10 seconds: stop the repeating code above
+
+### Iterators and Generators
+
+The iterator method of an iterable object does not have a conventional name but uses the Symbol, Symbol.iterator as its name. So a simple for/of loop over an iterable object iterable could also be written the hard way, like this:
+
+let iterable = \[99\];
+
+let iterator = iterable\[Symbol.iterator\]();
+
+for(let result = iterator.next(); !result.done; result =iterator.next()) {
+
+console.log(result.value) // result.value == 99
+
+}
+
+When you want to iterate though a “partially used” iterator:
+
+`let list = [1,2,3,4,5];`  
+ `let iter = list[Symbol.iterator]();`
+
+`let head = iter.next().value;`
+
+head == 1
+
+`let tail = [...iter];`
+
+tail == \[2,3,4,5\]
+
+### Implementing Iterable Objects
+
+we will implement the Range class one more time, making it iterable without relying on a generator.
+
+In order to make a class iterable, you must implement a method whose name is the Symbol `Symbol.iterator`
+
+class Range {
+
+constructor (from, to) {
+
+this.from = from;
+
+this.to = to;
+
+}
+
+has(x) { return typeof x === "number" && this.from <= x && x <= this.to; }
+
+toString() { return \`{ x | ${this.from} ≤ x ≤ ${this.to}}\`; }
+
+\[Symbol.iterator\]() {
+
+let next = Math.ceil(this.from);
+
+let last = this.to;
+
+return {
+
+next() {
+
+return (next <= last) ? { value: next++ } : { done: true };
+
+},
+
+\[Symbol.iterator\]() { return this; }
+
+};
+
+}
+
+}
+
+for(let x of new Range(1,10)) console.log(x);
+
+Logs numbers 1 to 10
+
+\[...new Range(-2,2)\]
+
+\[-2, -1, 0,1, 2\]
+
+In addition to making your classes iterable, it can be quite useful to define functions that return iterable values.
+
+Return an iterable object that iterates the result of applying `f()` to each value from the source iterable
+
+function map(iterable, f) {
+
+let iterator = iterable\[Symbol.iterator\]();
+
+return {
+
+\[Symbol.iterator\]() { return this; },
+
+next() {
+
+let v = iterator.next();
+
+if (v.done) {
+
+return v;
+
+}
+
+else {
+
+return { value: f(v.value) };
+
+}
+
+}
+
+};
+
+}
+
+`[...map(new Range(1,4), x => x*x)]`
+
+\[1, 4, 9, 16\]
+
+Return an iterable object that filters the specified iterable, iterating only those elements for which the predicate returns true
+
+function filter(iterable, predicate) {
+
+let iterator = iterable\[Symbol.iterator\]();
+
+return {
+
+\[Symbol.iterator\]() { return this; },
+
+next() {
+
+for(;;) {
+
+let v = iterator.next();
+
+if (v.done || predicate(v.value)) {
+
+return v;
+
+}
+
+}
+
+}
+
+};
+
+}
+
+`[...filter(new Range(1,10), x => x % 2 === 0)]`
+
+\[2,4,6,8,10\]
+
+### Generators
+
+Particularly useful when the values to be iterated are not the elements of a data structure, but the result of a computation.
+
+To create a generator, you must first define a generator function — defined with the keyword `function*` rather than `function`
+
+When you invoke a generator function, it does not actually execute the function body, but instead returns a generator object. This generator object is an iterator.
+
+Calling its `next()` method causes the body of the generator function to run from the start (or whatever its current position is) until it reaches a `yield` statement.
+
+The value of the `yield` statement becomes the value returned by the `next()` call on the iterator.
+
+function\* oneDigitPrimes() {
+
+yield 2;
+
+yield 3;
+
+yield 5;
+
+yield 7;
+
+}
+
+let primes = oneDigitPrimes();
+
+we get a generator
+
+primes.next().value
+
+2
+
+primes.next().value
+
+3
+
+primes.next().value
+
+5
+
+primes.next().value
+
+7
+
+primes.next().done
+
+true
+
+Generators have a `Symbol.iterator` method to make them iterable
+
+`primes[Symbol.iterator]()`
+
+`[...oneDigitPrimes()]`
+
+\[2,3,5,7\]
+
+let sum = 0;
+
+for(let prime of oneDigitPrimes()) sum += prime;
+
+sum
+
+17
+
+Like regular functions, however, we can also define generators in expression form.
+
+const seq = function\*(from,to) {
+
+for(let i = from; i <= to; i++) yield i;
+
+};
+
+\[...seq(3,5)\]
+
+\[3, 4, 5\]
+
+In classes and object literals, we can use shorthand notation to omit the function keyword entirely when we define methods.
+
+let o = {
+
+x: 1, y: 2, z: 3,
+
+\*g() {
+
+for(let key of Object.keys(this)) {
+
+yield key;
+
+}
+
+}
+
+};
+
+`[...o.g()]`
+
+\[“x”, “y”, “z”, “g”\]
+
+Generators often make it particularly easy to define iterable classes.
+
+\*\[Symbol.iterator\]() {
+
+for(let x = Math.ceil(this.from); x <= this.to; x++)
+
+yield x;
+
+}
+
+### Generator Examples
+
+Generators are more interesting if they actually generate the values they yield by doing some kind of computation.
+
+generator function that yields Fibonacci numbers
+
+function\* fibonacciSequence() {
+
+let x = 0, y = 1;
+
+for(;;) {
+
+yield y;
+
+\[x, y\] = \[y, x+y\];
+
+}
+
+}
+
+If this generator is used with the … spread operator, it will loop until memory is exhausted and the program crashes.
+
+Use it in a `for/of` loop, however
+
+function fibonacci(n) {
+
+for(let f of fibonacciSequence()) {
+
+if (n-- <= 0) return f;
+
+}
+
+}
+
+fibonacci(20)
+
+10946
+
+This kind of infinite generator becomes more useful with a `take()` generator like this
+
+function\* take(n, iterable) {
+
+let it = iterable\[Symbol.iterator\]();
+
+while(n-- > 0) {
+
+let next = it.next();
+
+if (next.done) return;
+
+else yield next.value;
+
+}
+
+}
+
+\[...take(5, fibonacciSequence())\]
+
+\[1, 1, 2, 3, 5\]
+
+### Asynchronous Javascript
+
+`Promises`, new in ES6, are objects that represent the not-yet-available result of an asynchronous operation.
+
+The keywords `async` and `await` were introduced in ES2017 and provide new syntax that simplifies asynchronous programming by allowing you to structure your Promise based code as if it was synchronous.
+
+Asynchronous iterators and the `for/await` loop were introduced in ES2018 and allow you to work with streams of asynchronous events using simple loops that appear synchronous.
+
+### Asynchronous Programming with Callbacks
+
+### Timers
+
+`setTimeout(checkForUpdates, 60000);`
+
+let updateIntervalId = setInterval(checkForUpdates, 60000);
+
+function stopCheckingForUpdates() {
+
+clearInterval(updateIntervalId);
+
+}
+
+### Events
+
+Event-driven JavaScript programs register callback functions for specified types of events in specified contexts, and the web browser invokes those functions whenever the specified events occur.
+
+These callback functions are called event handlers or event listeners, and they are registered with `addEventListener()`
+
+Ask the web browser to return an object representing the HTML <button> element that matches this CSS selector:
+
+`let okay = document.querySelector('#confirmUpdateDialogbutton.okay');`
+
+Now register a callback function to be invoked when the user clicks on that button
+
+`okay.addEventListener('click', applyUpdate);`
+
+### Network Events
+
+JavaScript running in the browser can fetch data from a web server with code like this:
+
+function getCurrentVersionNumber(versionCallback) {
+
+let request = new XMLHttpRequest();
+
+request.open("GET", "http://www.example.com/api/version");
+
+request.send();
+
+request.onload = function() {
+
+if (request.status === 200) {
+
+let currentVersion = parseFloat(request.responseText);
+
+versionCallback(null, currentVersion);
+
+}
+
+else {
+
+versionCallback(response.statusText, null);
+
+}
+
+};
+
+request.onerror = request.ontimeout = function(e) {
+
+versionCallback(e.type, null);
+
+};
+
+}
+
+### Promises
+
+Promises, a core language feature designed to simplify asynchronous programming.
+
+A Promise is an object that represents the result of an asynchronous computation. That result may or may not be ready yet, and the Promise API is intentionally vague about this: there is no way to synchronously get the value of a Promise; you can only ask the Promise to call a callback function when the value is ready.
+
+One real problem with callback-based asynchronous programming is that it is common to end up with callbacks inside callbacks inside callbacks, with lines of code so highly indented that it is difficult to read.
+
+Promises allow this kind of nested callback to be re-expressed as a more linear Promise chain that tends to be easier to read and easier to reason about.
+
+Another problem with callbacks is that they can make handling errors difficult. If an asynchronous function (or an asynchronously invoked callback) throws an exception, there is no way for that exception to propagate back to the initiator of the asynchronous operation. This is a fundamental fact about asynchronous programming: it breaks exception handling. Promises help here by standardizing a way to handle errors and providing a way for errors to propagate correctly through a chain of promises.
+
+Note that Promises represent the future results of single asynchronous computations. They cannot be used to represent repeated asynchronous computations, however.
+
+We can’t use Promises to replace `setInterval()` because that function invokes a callback function repeatedly, which is something that Promises are just not designed to do.
+
+### Using Promises
+
+How we would use this Promise returning utility function
+
+getJSON(url).then(jsonData => {
+
+// callback function that will be asynchronously invoked with the parsed JSON value when it becomes available.
+
+});
+
+The Promise object defines a then() instance method. Instead of passing our callback function directly to `getJSON()`, we instead pass it to the then() method. When the HTTP response arrives, the body of that response is parsed as JSON, and the resulting parsed value is passed to the function that we passed to `then()`.
+
+If you call the `then()` method of a Promise object multiple times, each of the functions you specify will be called when the promised computation is complete.
+
+Unlike many event listeners, though, a Promise represents a single computation, and each function registered with then() will be invoked only once.
+
+function displayUserProfile(profile) { ...}
+
+getJSON("/api/user/profile").then(displayUserProfile);
+
+### HANDLING ERRORS WITH PROMISES
+
+Asynchronous operations, particularly those that involve networking, can typically fail in a number of ways, and robust code has to be written to handle the errors that will inevitably occur.
+
+`getJSON("/api/user/profile").then(displayUserProfile, handleProfileError);`
+
+if `getJSON()` runs normally, it passes its result to `displayUserProfile()`. If there is an error (the user is not logged in, the server is down, the user’s internet connection dropped, the request timed out, etc.), then `getJSON()` passes an Error object to `handleProfileError()`.
+
+In practice, it is rare to see two functions passed to then(). There is a better and more idiomatic way of handling errors when working with Promises.
+
+To understand it, first consider what happens if `getJSON()` completes normally but an error occurs in `displayUserProfile()`. That callback function is invoked asynchronously when `getJSON()` returns, so it is also asynchronous and cannot meaningfully throw an exception (because there is no code on the call stack to handle it).
+
+getJSON("/api/user/profile").then(displayUserProfile).catch(handleProfileError);
+
+With this code, a normal result from `getJSON()` is still passed to `displayUserProfile()`, but any error in `getJSON()` or in `displayUserProfile()` (including any exceptions thrown by `displayUserProfile`) get passed to `handleProfileError()`.
+
+### Chaining Promises
+
+One of the most important benefits of Promises is that they provide a natural way to express a sequence of asynchronous operations as a linear chain of `then()` method invocations, without having to nest each operation within the callback of the previous one.
+
+fetch(documentURL)
+
+.then(response => response.json())
+
+.then(document => {return render(document); })
+
+.then(rendered => {cacheInDatabase(rendered); })
+
+.catch(error => handle(error));
+
+has largely been replaced by the newer, Promise-based Fetch API. In its simplest form, this new HTTP API is just the function fetch(). That promise is fulfilled when the HTTP response begins to arrive and the HTTP status and headers are available.
+
+fetch("/api/user/profile")
+
+.then(response => {
+
+if (response.ok && response.headers.get("Content-Type") === "application/json") {
+
+// What can we do here? We don't actually have the response body yet.
+
+}
+
+});
+
+But although the initial Promise is fulfilled, the body of the response may not yet have arrived. So these `text()` and `json()` methods for accessing the body of the response themselves return Promises.
+
+fetch("/api/user/profile")
+
+.then(response => {
+
+return response.json();
+
+})
+
+.then(profile => {
+
+displayUserProfile(profile);
+
+});
+
+There is a second `then()` in the chain, which means that the first invocation of the `then()` method must itself return a Promise. That is not how Promises work, however.
+
+When we write a chain of `.then()` invocations, we are not registering multiple callbacks on a single Promise object. Instead, each invocation of the `then()` method returns a new Promise object. That new Promise object is not fulfilled until the function passed to `then()` is complete.
+
+fetch(theURL) // task 1; returns promise 1
+
+.then(callback1) // task 2; returns promise 2
+
+.then(callback2); // task 3; returns promise 3
+
+### Resolving Promises
+
+There is actually a fourth Promise object involved as which brings up the point of what it means for a Promise to be “resolved.”
+
+fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has `.text(), .json(),` and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.
+
+“task 2” calls the `.json()` method and returns its value. This is the fourth Promise object, and it is the return value of the `callback1()` function.
+
+Let’s consider:
+
+function c1(response) {
+
+let p4 = response.json();
+
+return p4;
+
+}
+
+// callback 1
+
+// returns promise 4
+
+function c2(profile) {
+
+displayUserProfile(profile);
+
+}
+
+// callback 2
+
+let p1 = fetch("/api/user/profile");
+
+promise 1, task 1
+
+let p2 = p1.then(c1);
+
+promise 2, task 2
+
+let p3 = p2.then(c2);
+
+promise 3, task 3
+
+In order for Promise chains to work usefully, the output of task 2 must become the input to task 3. The input to task 3 is the body of the URL that was fetched, parsed as a JSON object. But the return value of callback c1 is not a JSON object, but Promise p4 for that JSON object.
+
+When p1 is fulfilled, c1 is invoked, and task 2 begins. And when p2 is fulfilled, c2 is invoked, and task 3 begins.
+
+And when p2 is fulfilled, c2 is invoked, and task 3 begins. But just because task 2 begins when c1 is invoked,it does not mean that task 2 must end when c1 returns.
+
+Promises are about managing asynchronous tasks, and if task 2 is asynchronous, then that task will not be complete by the time the callback returns.
+
+When you pass a callback c to the `then()` method, `then()` returns a Promise p and arranges to asynchronously invoke c at some later time. The callback performs some computation and returns a value v. When the callback returns, p is resolved with the value v. When a Promise is resolved with a value that is not itself a Promise, it is immediately fulfilled with that value.
+
+So if c returns a non-Promise, that return value becomes the value of p, p is fulfilled and we are done. But if the return value v is itself a Promise, then p is resolved but not yet fulfilled.
+
+At this stage, p cannot settle until the Promise v settles. If v is fulfilled, then p will be fulfilled to the same value. If v is rejected, then p will be rejected for the same reason. This is what the “resolved” state of a Promise means
+
+the Promise has become associated with, or “locked onto,” another Promise. We don’t know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is “resolved” in the sense that its fate now depends entirely on what happens to Promise v.
+
+Let’s bring this back to our URL-fetching example. When c1 returns p4, p2 is resolved. But being resolved is not the same as being fulfilled, so task 3 does not begin yet. When the full body of the HTTP response becomes available, then the .`json()` method can parse it and use that parsed value to fulfill p4. When p4 is fulfilled, p2 is automatically fulfilled as well, with the same parsed JSON value. At this point, the parsed JSON object is passed to c2, and task 3 begins.
+
+### More on Promises and Errors
+
+With synchronous code, if you leave out error-handling code, you’ll at least get an exception and a stack trace that you can use to figure out what is going wrong. With asynchronous code, unhandled exceptions will often go unreported, and errors can occur silently, making them much harder to debug. The good news is that the `.catch()` method makes it easy to handle errors when working with Promises.
+
+THE CATCH AND FINALLY METHODS
+
+The `.catch()` method of a Promise is simply a shorthand way to call `.then()` with null as the first argument and an error-handling callback as the second argument.
+
+Normal exceptions don’t work with asynchronous code. The `.catch()` method of Promises is an alternative that does work for asynchronous code.
+
+fetch("/api/user/profile")
+
+.then(response => {
+
+if (!response.ok) {
+
+return null;
+
+}
+
+let type = response.headers.get("content-type");
+
+if (type !== "application/json") {
+
+throw new TypeError(\`Expected JSON, got ${type}\`);
+
+}
+
+return response.json();
+
+})
+
+.then(profile => {
+
+if (profile) {
+
+displayUserProfile(profile);
+
+}
+
+else {
+
+displayLoggedOutProfilePage();
+
+}
+
+})
+
+.catch(e => {
+
+if (e instanceof NetworkError) {
+
+displayErrorMessage("Check your internet connection.");
+
+}
+
+else if (e instanceof TypeError) {
+
+displayErrorMessage("Something is wrong with our server!");
+
+}
+
+else {
+
+console.error(e);
+
+}
+
+});
+
+p1 is the Promise returned by the `fetch()` call
+
+p2 is the Promise returned by the first `.then()` call
+
+c1 is the callback that we pass to that .`then()` call
+
+p3 is the Promise returned by the second `.then()` call
+
+c2 is the callback we pass to that call
+
+c3 is the callback that we pass to the `.catch()` call
+
+The first thing that could fail is the fetch() request itself. Let’s say p1 was rejected with a NetworkError object.
+
+We didn’t pass an error-handling callback function as the second argument to the `.then()` call, so p2 rejects as well with the same NetworkError object.
+
+Without a handler, though, p2 is rejected, and then p3 is rejected for the same reason.
+
+At this point, the c3 error-handling callback is called, and the NetworkError-specific code within it runs.
+
+There are a couple of things worth noting about this code. First, notice that the error object thrown with a regular, synchronous throw statement ends up being handled asynchronously with a `.catch()` method invocation in a Promise chain. This should make it clear why this shorthand method is preferred over passing a second argument to .`then()`, and also why it is so idiomatic to end Promise chains with a `.catch()` call.
+
+it is also perfectly valid to use `.catch()` elsewhere in a Promise chain. If one of the stages in your Promise chain can fail with an error, and if the error is some kind of recoverable error that should not stop the rest of the chain from running, then you can insert a `.catch()` call in the chain, resulting in code that might look like this:
+
+startAsyncOperation()
+
+.then(doStageTwo)
+
+.catch(recoverFromStageTwoError)
+
+.then(doStageThree)
+
+.then(doStageFour)
+
+.catch(logStageThreeAndFourErrors);
+
+If the callback returns normally, then the `.catch()` callback will be skipped, and the return value of the previous callback will become the input to the next .`then()` callback.
+
+Once an error has been passed to a `.catch()` callback, it stops propagating down the Promise chain. A `.catch()` callback can throw a new error, but if it returns normally, than that return value is used to resolve and/or fulfill the associated Promise, and  
+ the error stops propagating.
+
+Sometimes, in complex network environments, errors can occur more or less at random, and it can be appropriate to handle those errors by simply retrying the asynchronous request.
+
+queryDatabase()
+
+.catch(e => wait(500).then(queryDatabase))
+
+.then(displayTable)
+
+.catch(displayDatabaseError);
+
+### Promises in Parallel
+
+Sometimes,we want to execute a number of asynchronous operations in parallel. The function `Promise.all()` can do this. `Promise.all()` takes an array of Promise objects as its input and returns a Promise.
+
+The returned Promise will be rejected if any of the input Promises are rejected. Otherwise, it will be fulfilled with an array of the fulfillment values of each of the input Promises.
+
+const urls = \[ /\* zero or more URLs here \*/ \];
+
+promises = urls.map(url => fetch(url).then(r => r.text()));
+
+Promise.all(promises)
+
+.then(bodies => { /\* do something with the array of strings \*/ })
+
+.catch(e => console.error(e));
+
+The Promise returned by `Promise.all()` rejects when any of the input Promises is rejected. This happens immediately upon the first rejection and can happen while other input Promises are still pending. In ES2020, `Promise.allSettled()` takes an array of input  
+ Promises and returns a Promise, just like Promise.all() does. But `Promise.allSettled()` never rejects the returned Promise, and it does not fulfill that Promise until all of the input Promises have settled. The Promise resolves to an array of objects, with one object for each input Promise. Each of these returned objects has a status property set to “fulfilled” or “rejected.” If the status is “fulfilled”, then the object will also have a value property that gives the fulfillment value. And if the status is “rejected”, then the object will also have a reason property that gives the error or rejection value of the corresponding Promise.
+
+Promise.allSettled(\[Promise.resolve(1), Promise.reject(2),3\]).then(results => {
+
+results\[0\] // => { status: "fulfilled", value: 1 }
+
+results\[1\] // => { status: "rejected", reason: 2 }
+
+results\[2\] // => { status: "fulfilled", value: 3 }
+
+});
+
+Occasionally, you may want to run a number of Promises at once but may only care about the value of the first one to fulfill. In that case, you can use `Promise.race()` instead of `Promise.all()`. It returns a Promise that is fulfilled or rejected when the first of the Promises in the input array is fulfilled or rejected.
+
+### Making Promises
+
+### Promises in Sequence
+
+### async and await
+
+These new keywords dramatically simplify the use of Promises and allow us to write Promise-based, asynchronous code that looks like synchronous code that blocks while waiting for network responses or other asynchronous events.
+
+Asynchronous code can’t return a value or throw an exception the way that regular synchronous code can. And this is why Promises are designed the way the are. The value of a fulfilled Promise is like the return value of a synchronous function. And the value of a rejected Promise is like a value thrown by a synchronous function.
+
+`async` and `await` take efficient, Promise-based code and hide the Promises so that your asynchronous code can be as easy to read and as easy to reason about as inefficient, blocking, synchronous code.
+
+Given a Promise object p, the expression await p waits until p settles. If p fulfills, then the value of await p is the fulfillment value of p. On the other hand, if p is rejected, then the await p expression throws the rejection value of p.
+
+let response = await fetch("/api/user/profile");
+
+let profile = await response.json();
+
+It is critical to understand right away that the `await` keyword does not cause your program to block and literally do nothing until the specified Promise settles. The code remains asynchronous, and the `await` simply disguises this fact. This means that any code that uses await is itself asynchronous.
+
+### async Functions
+
+Because any code that uses await is asynchronous, there is one critical rule: you can only use the await keyword within functions that have been declared with the `async` keyword.
+
+async function getHighScore() {
+
+let response = await fetch("/api/user/profile");
+
+let profile = await response.json();
+
+return profile.highScore;
+
+}
+
+Declaring a function `async` means that the return value of the function will be a Promise even if no Promise-related code appears in the body of the function.
+
+The `getHighScore()` function is declared `async`, so it returns a Promise. And because it returns a Promise, we can use the `await` keyword with it:
+
+displayHighScore(await getHighScore());
+
+### Awaiting Multiple Promises
+
+Suppose that we’ve written our `getJSON()` function using async:
+
+async function getJSON(url) {
+
+let response = await fetch(url);
+
+let body = await response.json();
+
+return body;
+
+}
+
+And now suppose that we want to fetch two JSON values with this function
+
+let value1 = await getJSON(url1);
+
+let value2 = await getJSON(url2);
+
+The problem with this code is that it is unnecessarily sequential: the fetch of the second URL will not begin until the first fetch is complete. If the second URL does not depend on the value obtained from the firstURL, then we should probably try to fetch the two values at the same time.
+
+let \[value1, value2\] = await Promise.all(\[getJSON(url1), getJSON(url2)\]);
+
+### The for/await Loop
+
+Suppose you have an array of URLs:
+
+const urls = \[url1, url2, url3\];
+
+You can call fetch() on each URL to get an array of Promises:
+
+const promises = urls.map(url => fetch(url));
+
+We could now use `Promise.all()` to wait for all the Promises in the array to be fulfilled. But suppose we want the results of the first fetch as soon as they become available and don’t want to wait for all the URLs to be fetched.
+
+for(const promise of promises) {
+
+response = await promise;
+
+handle(response);
+
+}
+
+←>
+
+for await (const response of promises) {
+
+handle(response);
+
+}
+
+both examples will only work if they are within functions declared async; a `for/await` loop is no different than a regular await expression in that way
+
+#### If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:
+
+[**bgoonz’s** gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or checkout my personal resource site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+#### **Differences between Node.js and browsers**
+
+There are many differences between Node.js and browser environments, but many of them are small and inconsequential in practice. For example, in our _Asynchronous_ lesson, we noted how [Node’s setTimeout](https://nodejs.org/api/timers.html#timers_settimeout_callback_delay_args) has a slightly different return value from [a browser’s setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout). Let’s go over a few notable differences between the two environments.
+
+**Global vs Window**
+
+In the Node.js runtime, the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object) is the object where global variables are stored. In browsers, the [window object](https://developer.mozilla.org/en-US/docs/Web/API/Window) is where global variables are stored. The window also includes properties and methods that deal with drawing things on the screen like images, links, and buttons. Node doesn’t need to draw anything, and so it does not come with such properties. This means that you can’t reference window in Node.
+
+_Most browsers allow you to reference global but it is really the same object as window._
+
+**Document**
+
+Browsers have access to a document object that contains the HTML of a page that will be rendered to the browser window. There is no document in Node.
+
+**Location**
+
+Browsers have access to a location that contains information about the web address being visited in the browser. There is no location in Node, since it is not on the web.
+
+**Require and module.exports**
+
+Node has a predefined require function that we can use to import installed modules like readline. We can also import and export across our own files using require and module.exports. For example, say we had two different files, animals.js and cat.js, that existed in the same directory:
+
+[https://gist.github.com/bgoonz/cae36a07000d5dec8769d0e8cbc431b3](https://gist.github.com/bgoonz/cae36a07000d5dec8769d0e8cbc431b3)
+
+If we execute animals.js in Node, the program would print ‘Sennacy is a great pet!’.
+
+Browsers don’t have a notion of a file system so we cannot use require or module.exports in the same way.
+
+### The fs module
+
+Node comes with an [fs module](https://nodejs.org/api/fs.html) that contains methods that allow us to interact with our computer’s **F**ile **S**ystem through JavaScript. No additional installations are required; to access this module we can simply `require` it. We recommend that you code along with this reading. Let’s begin with a `change-some-files.js` script that imports the module:
+
+// change-some-files.js
+
+const `fs` \= require("fs");
+
+Similar to what we saw in the `readline` lesson, `require` will return to us a object with many properties that will enable us to do file I/O.
+
+**_Did you know?_** _I/O is short for input/output. It’s usage is widespread and all the hip tech companies are using it, like.io._
+
+The `fs` module contains tons of functionality! Chances are that if there is some operation you need to perform regarding files, the `fs` module supports it. The module also offers both synchronous and asynchronous implementations of these methods. We prefer to not block the thread and so we’ll opt for the asynchronous flavors of these methods.
+
+### Creating a new file
+
+To create a file, we can use the `[writeFile](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback)` method. According to the documentation, there are a few ways to use it. The most straight forward way is:
+
+[https://gist.github.com/bgoonz/8898ad673bd2ecee9d93f8ec267cf213](https://gist.github.com/bgoonz/8898ad673bd2ecee9d93f8ec267cf213)
+
+The code a[create-a-nnew-file.js (github.com)](https://gist.github.com/bgoonz/8898ad673bd2ecee9d93f8ec267cf213)bove will create a new file called `foo.txt` in the same directory as our `change-some-file.js` script. It will write the string `'Hello world!'` into that newly created file. The third argument specifies the encoding of the characters. There are different ways to encode characters; [UTF-8](https://en.wikipedia.org/wiki/UTF-8) is the most common and you’ll use this in most scenarios. The fourth argument to `writeFile` is a callback that will be invoked when the write operation is complete. The docs indicate that if there is an error during the operation (such as an invalid encoding argument), an error object will be passed into the callback. This type of error handling is quite common for asynchronous functions. Like we are used to, since `writeFile` is asynchronous, we need to utilize _callback chaining_ if we want to guarantee that commands occur _after_ the write is complete or fails.
+
+_Beware! If the file name specified to_ `_writeFile_` _already exists, it will completely overwrite the contents of that file._
+
+We won’t be using the `foo.txt` file in the rest of this reading.
+
+### Reading existing files
+
+To explore how to read a file, we’ll use VSCode to manually create a `poetry.txt` file within the same directory as our `change-some-file.js` script. Be sure to create this if you are following along.
+
+Our `poetry.txt` file will contain the following lines:
+
+    My code fails
+
+    I do not know why
+
+    My code works
+
+    I do not know why
+
+We can use the `[readFile](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback)` method to read the contents of this file. The method accepts very similar arguments to `writeFile`, except that the callback may be passed an error object and string containing the file contents. In the snippet below, we have replaced our previous `writeFile` code with `readFile`:
+
+[https://gist.github.com/bgoonz/3623344a6292e5210c9a11307a5549e6](https://gist.github.com/bgoonz/3623344a6292e5210c9a11307a5549e6)
+
+> Running the code above would print the following in the terminal:
+
+    THE CONTENTS ARE:
+
+    My code fails
+
+    I do not know why
+
+    My code works
+
+    I do not know why
+
+Success! From here, you can do anything you please with the data read from the file. For example, since `data` is a string, we could split the string on the newline character `\n` to obtain an array of the file’s lines:
+
+[https://gist.github.com/bgoonz/42a46d97654db0e6c6eef77f80b59606](https://gist.github.com/bgoonz/42a46d97654db0e6c6eef77f80b59606)
+
+    THE CONTENTS ARE:
+
+    [ 'My code fails',
+
+    'I do not know why',
+
+    'My code works',
+
+    'I do not know why' ]
+
+    The third line is My code works
+
+### File I/O
+
+_Using the same_ `_poetry.txt_` _file from before:_
+
+    My code fails
+
+    I do not know why
+
+    My code works
+
+    I do not know why
+
+Let’s replace occurrences of the phrase ‘do not’ with the word ‘should’.
+
+We can read the contents of the file as a string, manipulate this string, then write this new string back into the file.
+
+We’ll need to utilize callback chaining in order for this to work since our file I/O is asynchronous:
+
+[https://gist.github.com/bgoonz/8d3ba6828f5ba9a4692d0a938697099f](https://gist.github.com/bgoonz/8d3ba6828f5ba9a4692d0a938697099f)
+
+Executing the script above will edit the `poetry.txt` file to contain:
+
+    My code fails
+
+    I should know why
+
+    My code works
+
+    I should know why
+
+#### Refactor:
+
+[https://gist.github.com/bgoonz/1ad31003fc1b2880201642b48df87e2e](https://gist.github.com/bgoonz/1ad31003fc1b2880201642b48df87e2e)
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+![](https://cdn-images-1.medium.com/max/800/0*oy6szzmI0FdRUiTd.png)
+
+[https://github.com/bgoonz/Markdown-Templates.git](https://github.com/bgoonz/Markdown-Templates.git)
+
+### Basic Syntax Guide
+
+This topic is meant to give you a very basic overview of how Markdown works, showing only some of the most common operations you use most frequently. Keep in mind that you can also use the Edit menus to inject markdown using the toolbar, which serves as a great way to see how Markdown works. However, Markdown’s greatest strength lies in its simplicity and keyboard friendly approach that lets you focus on writing your text and staying on the keyboard.
+
+### What is Markdown
+
+Markdown is very easy to learn and get comfortable with due it’s relatively small set of markup ‘commands’. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
+
+Markdown also allows for raw HTML inside of a markdown document, so if you want to embed something more fancy than what Markdowns syntax can do you can always fall back to HTML. However to keep documents readable that’s generally not recommended.
+
+### Basic Markdown Syntax
+
+The following are a few examples of the most common things you are likely to do with Markdown while building typical documentation.
+
+### Bold and Italic
+
+markdown
+
+    This text **is bold**. This text *is italic*.
+
+This text is bold.  
+This text _is italic_.
+
+### Header Text
+
+markdown
+
+    # Header 1## Header 2### Header 3#### Header 4##### Header 5###### Header 6
+
+### Header 1
+
+### Header 2
+
+### Header 3
+
+#### Header 4
+
+Header 5Header 6
+
+### Line Continuation
+
+By default Markdown adds paragraphs at double line breaks. Single line breaks by themselves are simply wrapped together into a single line. If you want to have soft returns that break a single line, add two spaces at the end of the line.
+
+markdown
+
+    This line has a paragraph break at the end (empty line after).
+
+    Theses two lines should display as a singleline because there's no double space at the end.
+
+    The following line has a soft break at the end (two spaces at end)  This line should be following on the very next line.
+
+This line has a paragraph break at the end (empty line after).
+
+Theses two lines should display as a single line because there’s no double space at the end.
+
+The following line has a soft break at the end (two spaces at end)  
+This line should be following on the very next line.
+
+### Links
+
+markdown
+
+    [Help Builder Web Site](http://helpbuilder.west-wind.com/)
+
+[Help Builder Web Site](http://helpbuilder.west-wind.com/)
+
+If you need additional image tags like targets or title attributes you can also embed HTML directly:
+
+markdown
+
+    Go the Help Builder sitest Wind site: <a href="http://west-wind.com/" target="_blank">Help Builder Site</a>.
+
+### Images
+
+markdown
+
+    ![Help Builder Web Site](https://helpbuilder.west-wind.com/images/HelpBuilder_600.png)
+
+![](https://cdn-images-1.medium.com/max/800/0*ibU0D-Zr0qDT5h3z.png)
+
+### Block Quotes
+
+Block quotes are callouts that are great for adding notes or warnings into documentation.
+
+markdown
+
+    > ###  Headers break on their own> Note that headers don't need line continuation characters as they are block elements and automatically break. Only textlines require the double spaces for single line breaks.
+
+> _Headers break on their own_
+
+> _Note that headers don’t need line continuation characters as they are block elements and automatically break. Only text lines require the double spaces for single line breaks._
+
+### Fontawesome Icons
+
+Help Builder includes a custom syntax for [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) icons in its templates. You can embed a `@ icon-` followed by a font-awesome icon name to automatically embed that icon without full HTML syntax.
+
+markdown
+
+    Gear:  Configuration
+
+Configuration
+
+### HTML Markup
+
+You can also embed plain HTML markup into the page if you like. For example, if you want full control over fontawesome icons you can use this:
+
+markdown
+
+    This text can be **embedded** into Markdown:  <i class="fa fa-refresh fa-spin fa-lg"></i> Refresh Page
+
+This text can be embedded into Markdown:  
+ Refresh Page
+
+### Unordered Lists
+
+markdown
+
+    * Item 1* Item 2* Item 3This text is part of the third item. Use two spaces at end of the the list item to break the line.
+
+    A double line break, breaks out of the list.
+
+-   Item 1
+-   Item 2
+-   Item 3  
+    This text is part of the third item. Use two spaces at end of the the list item to break the line.
+
+A double line break, breaks out of the list.
+
+### Ordered Lists
+
+markdown
+
+    1. **Item 1**  Item 1 is really something2. **Item 2**  Item two is really something else
+
+    If you want lines to break using soft returns use two spaces at the end of a line.
+
+1.  Item 1 Item 1 is really something
+2.  Item 2  
+    Item two is really something else
+
+If you want to lines to break using soft returns use to spaces at the end of a line.
+
+### Inline Code
+
+If you want to embed code in the middle of a paragraph of text to highlight a coding syntax or class/member name you can use inline code syntax:
+
+markdown
+
+    Structured statements like `for x =1 to 10` loop structures can be codified using single back ticks.
+
+Structured statements like `for x =1 to 10` loop structures can be codified using single back ticks.
+
+### Code Blocks with Syntax Highlighting
+
+Markdown supports code blocks syntax in a variety of ways:
+
+markdown
+
+    The following code demonstrates:
+
+        // This is code by way of four leading spaces    // or a leading tab
+
+    More text here
+
+The following code demonstrates:
+
+pgsql
+
+    // This is code by way of four leading spaces// or a leading tab
+
+More text here
+
+### Code Blocks
+
+You can also use triple back ticks plus an optional coding language to support for syntax highlighting (space injected before last \` to avoid markdown parsing):
+
+markdown
+
+    `` `csharp// this code will be syntax highlightedfor(var i=0; i++; i < 10){    Console.WriteLine(i);}`` `
+
+csharp
+
+    // this code will be syntax highlightedfor(var i=0; i++; i < 10){    Console.WriteLine(i);}
+
+Many languages are supported: html, xml, javascript, css, csharp, foxpro, vbnet, sql, python, ruby, php and many more. Use the Code drop down list to get a list of available languages.
+
+You can also leave out the language to get no syntax coloring but the code box:
+
+markdown
+
+    `` `dosrobocopy c:\temp\test d:\temp\test`` `
+
+dos
+
+    robocopy c:\temp\test d:\temp\test
+
+To create a formatted block but without formatting use the `txt` format:
+
+markdown
+
+    `` `txtThis is some text that will not be syntax highlightedbut shows up in a code box.`` `
+
+which gives you:
+
+text
+
+    This is some text that will not be syntax highlightedbut shows up in a code box.
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz/Markdown-Templates.git](https://github.com/bgoonz/Markdown-Templates.git)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz/Markdown-Templates.git](https://github.com/bgoonz/Markdown-Templates.git)
+
+#### [CODEX](http://medium.com/codex)
+
+![](https://cdn-images-1.medium.com/max/800/0*VdDVM2Nzv6oGC5I0.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*D83R_a0SSgMR0hI4jP6Asw.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*vk5n412Bs-dx6UdgyUywdg.png)
+
+### description:
+
+_Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the_ `[_exec()_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/exec.html)` _and_ `[_test()_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/test.html)` _methods of_ `[_RegExp_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp.html)`_, and with the_ `[_match()_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/match.html)`_,_ `[_matchAll()_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/matchAll.html)`_,_ `[_replace()_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replace.html)`_,_ `[_replaceAll()_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replaceAll.html)`_,_ `[_search()_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/search.html)`_, and_ `[_split()_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/split.html)` _methods of_ `[_String_](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String.html)`_. This chapter describes JavaScript regular expressions._
+
+### Creating a regular expression
+
+You construct a regular expression in one of two ways:
+
+1.  **Using a regular expression literal, which consists of a pattern enclosed between slashes, as follows:**
+
+`**let re = /ab+c/;**`
+
+-   Regular expression literals provide compilation of the regular expression when the script is loaded. If the regular expression remains constant, using this can improve performance.
+
+**2\. Or calling the constructor function of the** `[**RegExp**](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp.html)` **object, as follows:**
+
+-   `let re = new RegExp('ab+c');`
+
+> _Using the constructor function provides runtime compilation of the regular expression_. Use the constructor function when you know the regular expression pattern will be changing, or you don’t know the pattern and are getting it from another source, such as user input.
+
+### Writing a regular expression pattern
+
+A regular expression pattern is composed of simple characters, such as `/abc/`, or a combination of simple and special characters, such as `/ab*c/` or `/Chapter (\d+)\.\d*/`.
+
+The last example includes **parentheses, which are used as a memory device**. _The match made with this part of the pattern is remembered for later use._
+
+### Using simple patterns
+
+Simple patterns are constructed of characters for which you want to find a direct match.
+
+For example, the pattern `/abc/` matches character combinations in strings only when the exact sequence `"abc"` occurs (all characters together and in that order).
+
+Such a match would succeed in the strings `"Hi, do you know your abc's?"` and `"The latest airplane designs evolved from slabcraft."`
+
+In both cases the match is with the substring `"abc"`.
+
+There is no match in the string `"Grab crab"` because while it contains the substring `"ab c"`, it does not contain the exact substring `"abc"`.
+
+### Using special characters
+
+When the search for a match requires something more than a direct match, such as finding one or more b’s, or finding white space, you can include special characters in the pattern.
+
+For example, to match _a single_ `_"a"_` _followed by zero or more_ `_"b"_`_s followed by_ `_"c"_`, you’d use the pattern `/ab*c/`:
+
+> the `*` after `"b"` means “0 or more occurrences of the preceding item.” In the string `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
+
+[**Assertions**](https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Assertions.html) **: Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).**
+
+[**Character classes**](https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Character_Classes.html) **: Distinguish different types of characters. For example, distinguishing between letters and digits.**
+
+[**Groups and ranges**](https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Groups_and_Ranges.html) **: Indicate groups and ranges of expression characters.**
+
+[**Quantifiers**](https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Quantifiers.html) **: Indicate numbers of characters or expressions to match.**
+
+[**Unicode property escapes**](https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Unicode_Property_Escapes.html) **: Distinguish based on unicode character properties, for example, upper- and lower-case letters, math symbols, and punctuation.**
+
+If you want to look at all the special characters that can be used in regular expressions in a single table, see the following:
+
+![](https://cdn-images-1.medium.com/max/800/1*Wk5zFr1IHJxacq2a2zi5RQ.png)
+
+### Special characters in regular expressions.
+
+### Escaping
+
+If you need to use any of the special characters literally (actually searching for a `"*"`, for instance), you must escape it by putting a **backslash** in front of it.
+
+For instance, to search for `"a"` followed by `"*"` followed by `"b"`,
+
+> you’d use `/a\*b/` — the backslash “escapes” the `"*"`, making it literal instead of special.
+
+Similarly, if you’re writing a regular expression literal and need to match a slash (“/”), you need to escape that (otherwise, it terminates the pattern)
+
+For instance, to search for the string “/example/” followed by one or more alphabetic characters, you’d use `/\/example\/[a-z]+/i`
+
+**–the backslashes before each slash make them literal.**
+
+To match a literal backslash, you need to escape the backslash.
+
+For instance, to match the string “C:\\” where “C” can be any letter,
+
+you’d use `/[A-Z]:\\/`
+
+— the first backslash escapes the one after it, so the expression searches for a single literal backslash.
+
+If using the `RegExp` constructor with a string literal, **remember that the backslash is an escape in string literals, so to use it in the regular expression, you need to escape it at the string literal level**.
+
+`/a\*b/` and `new RegExp("a\\*b")` create the same expression,
+
+which searches for “a” followed by a literal “\*” followed by “b”.
+
+If escape strings are not already part of your pattern you can add them using `[String.replace](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replace.html)`:
+
+    function escapeRegExp(string) {  return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string}
+
+**The “g” after the regular expression is an option or flag that performs a global search, looking in the whole string and returning all matches.**
+
+### Using parentheses
+
+Parentheses around any part of the regular expression pattern causes that part of the matched substring to be remembered.
+
+Once remembered, the substring can be recalled for other use.
+
+### Using regular expressions in JavaScript
+
+Regular expressions are used with the `**RegExp**` **methods**
+
+`**test()**` **and** `**exec()**`
+
+and with the `**String**` **methods** `**match()**`**,** `**replace()**`**,** `**search()**`**, and** `**split()**`**.**
+
+---
+
+### Method Descriptions
+
+#### `[exec()](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/exec.html)`
+
+Executes a search for a match in a string.
+
+It returns an array of information or `null` on a mismatch.
+
+#### `[test()](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/test.html)`
+
+Tests for a match in a string.
+
+It returns `true` or `false`.
+
+#### `[match()](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/match.html)`
+
+Returns an array containing all of the matches, including capturing groups, or `null` if no match is found.
+
+#### `[matchAll()](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/matchAll.html)`
+
+Returns an iterator containing all of the matches, including capturing groups.
+
+#### `[search()](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/search.html)`
+
+Tests for a match in a string.
+
+It returns the index of the match, or `-1` if the search fails.
+
+#### `[replace()](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replace.html)`
+
+Executes a search for a match in a string, and replaces the matched substring with a replacement substring.
+
+#### `[replaceAll()](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replaceAll.html)`
+
+Executes a search for all matches in a string, and replaces the matched substrings with a replacement substring.
+
+#### `[split()](https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/split.html)`
+
+Uses a regular expression or a fixed string to break a string into an array of substrings.
+
+### Methods that use regular expressions
+
+When you want to know whether a pattern is found in a string, use the `test()` or `search()` methods;
+
+for more information (but slower execution) use the `exec()` or `match()` methods.
+
+If you use `exec()` or `match()` and if the match succeeds, these methods return an array and update properties of the associated regular expression object and also of the predefined regular expression object, `RegExp`.
+
+If the **match fails, the** `**exec()**` **method returns** `**null**` (which coerces to `false`).
+
+In the following example, the script uses the `exec()` method to find a match in a string.
+
+    let myRe = /d(b+)d/g;let myArray = myRe.exec('cdbbdbsbz');
+
+If you do not need to access the properties of the regular expression, an alternative way of creating `myArray` is with this script:
+
+    let myArray = /d(b+)d/g.exec('cdbbdbsbz');     // similar to "cdbbdbsbz".match(/d(b+)d/g); however,    // "cdbbdbsbz".match(/d(b+)d/g) outputs Array [ "dbbd" ], while     // /d(b+)d/g.exec('cdbbdbsbz') outputs Array [ 'dbbd', 'bb', index: 1, input: 'cdbbdbsbz' ].
+
+(See [different behaviors](https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions.md#g-different-behaviors) for further info about the different behaviors.)
+
+If you want to construct the regular expression from a string, yet another alternative is this script:
+
+    let myRe = new RegExp('d(b+)d', 'g');let myArray = myRe.exec('cdbbdbsbz');
+
+With these scripts, the match succeeds and returns the array and updates the properties shown in the following table.
+
+Results of regular expression execution.
+
+You can use a regular expression created with an object initializer without assigning it to a letiable.
+
+If you do, however, every occurrence is a new regular expression.
+
+For this reason, if you use this form without assigning it to a letiable, you cannot subsequently access the properties of that regular expression.
+
+For example, assume you have this script:
+
+    let myRe = /d(b+)d/g;let myArray = myRe.exec('cdbbdbsbz');console.log('The value of lastIndex is ' + myRe.lastIndex);// "The value of lastIndex is 5"
+
+However, if you have this script:
+
+    let myArray = /d(b+)d/g.exec('cdbbdbsbz');console.log('The value of lastIndex is ' + /d(b+)d/g.lastIndex);// "The value of lastIndex is 0"
+
+The occurrences of `/d(b+)d/g` in the two statements are different regular expression objects and hence have different values for their `lastIndex` property.
+
+If you need to access the properties of a regular expression created with an object initializer, you should first assign it to a variable.
+
+### \[Advanced searching with flags\]
+
+Regular expressions have **six optional flags** that allow for functionality like global and case insensitive searching.
+
+These flags can be used separately or together in any order, and are included as part of the regular expression.
+
+Flag Description Corresponding property
+
+---
+
+`g` Global search. `RegExp.prototype.global`
+
+`i` Case-insensitive search. `RegExp.prototype.ignoreCase`
+
+`m` Multi-line search. `RegExp.prototype.multiline`
+
+`s` Allows `.` to match newline characters. `RegExp.prototype.dotAll`
+
+`u` “unicode”; treat a pattern as a sequence of unicode code points. `RegExp.prototype.unicode`
+
+`y` Perform a “sticky” search that matches starting at the current position in the target string. `RegExp.prototype.sticky`
+
+#### Regular expression flags
+
+_To include a flag with the regular expression, use this syntax:_
+
+    let re = /pattern/flags;
+
+or
+
+    let re = new RegExp('pattern', 'flags');
+
+Note that the flags are an integral part of a regular expression. They cannot be added or removed later.
+
+For example, `re = /\w+\s/g` creates a regular expression that looks for one or more characters followed by a space, and it looks for this combination throughout the string.
+
+    let re = /\w+\s/g;let str = 'fee fi fo fum';let myArray = str.match(re);console.log(myArray);// ["fee ", "fi ", "fo "]
+
+You could replace the line:
+
+    let re = /\w+\s/g;
+
+with:
+
+    let re = new RegExp('\\w+\\s', 'g');
+
+and get the same result.
+
+The behavior associated with the `g` flag is different when the `.exec()` method is used.
+
+The roles of “class” and “argument” get reversed:
+
+In the case of `.match()`, the string class (or data type) owns the method and the regular expression is just an argument,
+
+while in the case of `.exec()`, it is the regular expression that owns the method, with the string being the argument.
+
+Contrast this `_str.match(re)_` versus `_re.exec(str)_`.
+
+The `g` flag is used with the `.exec()` method to get iterative progression.
+
+    let xArray; while(xArray = re.exec(str)) console.log(xArray);// produces: // ["fee ", index: 0, input: "fee fi fo fum"]// ["fi ", index: 4, input: "fee fi fo fum"]// ["fo ", index: 7, input: "fee fi fo fum"]
+
+The `m` flag is used to specify that a multiline input string should be treated as multiple lines.
+
+If the `m` flag is used, `^` and `$` match at the start or end of any line within the input string instead of the start or end of the entire string.
+
+### Using special characters to verify input
+
+In the following example, the user is expected to enter a phone number. When the user presses the “Check” button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.
+
+Within non-capturing parentheses `(?:` , the regular expression looks for three numeric characters `\d{3}` OR `|` a left parenthesis `\(` followed by three digits `\d{3}`, followed by a close parenthesis `\)`, (end non-capturing parenthesis `)`), followed by one dash, forward slash, or decimal point and when found, remember the character `([-\/\.])`, followed by three digits `\d{3}`, followed by the remembered match of a dash, forward slash, or decimal point `\1`, followed by four digits `\d{4}`.
+
+The `Change` event activated when the user presses Enter sets the value of `RegExp.input`.
+
+#### HTML
+
+    <p>  Enter your phone number (with area code) and then click "Check".  <br>  The expected format is like ###-###-####.</p><form action="#">  <input id="phone">    <button onclick="testInfo(document.getElementById('phone'));">Check</button></form>
+
+#### JavaScript
+
+let re = /(?:\\d{3}|\\(\\d{3}\\))(\[-\\/\\.\])\\d{3}\\1\\d{4}/;  
+function testInfo(phoneInput) {  
+ let OK = re.exec(phoneInput.value);  
+ if (!OK) {  
+ console.error(phoneInput.value + ' isn\\'t a phone number with area code!');  
+ } else {  
+ console.log('Thanks, your phone number is ' + OK\[0\]);}  
+}
+
+### Cheat Sheet
+
+[https://gist.github.com/bgoonz/c559a8e4d6fd2eb586b2e8452d6e233b](https://gist.github.com/bgoonz/c559a8e4d6fd2eb586b2e8452d6e233b)
+
+![](https://cdn-images-1.medium.com/max/800/1*VmpGy_BYCekOncdyrgSrxw.png)
+
+[https://gist.github.com/bgoonz/03e15da8a9f4dd3c536e9fbbd9f380c7](https://gist.github.com/bgoonz/03e15da8a9f4dd3c536e9fbbd9f380c7)
+
+#### If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:
+
+> [**bgoonz’s** gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Basics of Writing Files in Python  
+The common methods to operate with files are open() to open a file,
+
+seek() to set the file’s current position at the given offset, and
+
+close() to close th
+
+As pointed out in a previous article that deals with reading data from files, file handling belongs to the essential knowledge of every professional Python programmer. This feature is a core part of the Python language, and no extra module needs to be loaded to do it properly.
+
+### Basics of Writing Files in Python
+
+The common methods to operate with files are `open()` to open a file, `seek()` to set the file’s current position at the given offset, and `close()` to close the file afterwards. The `open()` method returns a file handle that represents a [file object](https://docs.python.org/3/glossary.html#term-file-object) to be used to access the file for reading, writing, or appending.
+
+Writing to a file requires a few decisions — the name of the file in which to store data and the access mode of the file. Available are two modes, writing to a new file (and overwriting any existing data) and appending data at the end of a file that already exists. The according abbreviations are “w”, and “a”, and have to be specified before opening a file.
+
+In this article we will explain how to write data to a file line by line, as a list of lines, and appending data at the end of a file.
+
+### Writing a Single Line to a File
+
+This first example is pretty similar to writing to files with the popular programming languages C and C++, as you’ll see in _Listing 1_. The process is pretty straightforward. First, we open the file using the `open()` method for writing, write a single line of text to the file using the `write()` method, and then close the file using the `close()` method. Keep in mind that due to the way we opened the “helloworld.txt” file it will either be created if it does not exist yet, or it will be completely overwritten.
+
+filehandle = open('helloworld.txt', 'w')  
+filehandle.write('Hello, world!\\n')  
+filehandle.close()
+
+_Listing 1_
+
+This entire process can be shortened using the `with` statement. _Listing 2_ shows how to write that. As already said before keep in mind that by opening the “helloworld.txt” file this way will either create if it does not exist yet or completely overwritten, otherwise.
+
+with open('helloworld.txt', 'w') as filehandle:  
+ filehandle.write('Hello, world!\\n')
+
+_Listing 2_
+
+### Writing a List of Lines to a File
+
+In reality a file does not consist only of a single line, but much more data. Therefore, the contents of the file are stored in a list that represents a file buffer. To write the entire file buffer we’ll use the `writelines()` method. _Listing 3_ gives you an example of this.
+
+filehandle = open("helloworld.txt", "w")  
+filebuffer = \["a first line of text", "a second line of text", "a third line"\]  
+filehandle.writelines(filebuffer)  
+filehandle.close()
+
+_Listing 3_
+
+Running the Python program shown in _Listing 3_ and then using the `cat` command we can see that the file “helloworld.txt” has the following content:
+
+$ cat helloworld.txt  
+a first line of text a second line of text a third line
+
+_Listing 4_
+
+This happens because **the** `**writelines()**` **method does not automatically add any line separators when writing the data**. _Listing 5_ shows how to achieve that, writing each line of text on a single line by adding the line separator “\\n”. Using a generator expression each line is substituted by the line plus line separator. Again, you can formulate this using the `with` statement.
+
+with open('helloworld.txt', 'w') as filehandle:  
+ filebuffer = \["a line of text", "another line of text", "a third line"\]  
+ filehandle.writelines("%s\\n" % line for line in filebuffer)
+
+_Listing 5_
+
+Now, the output file “helloworld.txt” has the desired content as shown in _Listing 6_:
+
+$ cat helloworld.txt  
+a first line of text  
+a second line of text  
+a third line
+
+_Listing 6_
+
+Interestingly, there is a way to use output redirection in Python to write data to files. _Listing 7_ shows how to code that for Python 2.x.
+
+filename = "helloworld.txt"
+
+filecontent = \["Hello, world", "a second line", "and a third line"\]
+
+with open(filename, 'w') as filehandle:
+
+    for line in filecontent:
+        print >>filehandle, line
+
+_Listing 7_
+
+For the latest Python releases this does not work in the same way anymore. To do something like this we must use the `**sys**` module. It allows us to access the UNIX standard output channels via `sys.stdout`, `sys.stdin`, and `sys.stderr`.
+
+In our case we preserve the original value of the output channel `sys.stdout`, first (line 8 in the code below), redefine it to the handle of our output file,
+
+next (line 15), print the data as usual (line 18), and finally restore the original value of the output channel `sys.stdout` (line 21). _Listing 8_ contains the example code.
+
+import sys
+
+filename = "helloworld.txt"
+
+original = sys.stdout
+
+filecontent = \["Hello, world", "a second line", "and a third line"\]
+
+with open(filename, 'w') as filehandle:
+
+    sys.stdout = filehandle
+
+    for line in filecontent:
+        print(line)
+
+    sys.stdout = original
+
+_Listing 8_
+
+This is not necessarily best practice, but it does give you other options for writing lines to a file.
+
+### Appending Data to a File
+
+So far, we have stored data in new files or in overwritten data in existing files. But what if we want to append data to the end of an existing file? In this case we would need to open the existing file using a different access mode. We change that to ‘a’ instead of ‘w’.
+
+_Listing 9_ shows how to handle that. And _Listing 10_ does the same thing, but it uses the `with` statement rather.
+
+filehandle = open('helloworld.txt','a')  
+filehandle.write('\\n' + 'Hello, world!\\n')  
+filehandle.close()
+
+_Listing 9_
+
+with open('helloworld.txt', 'a') as filehandle:  
+ filehandle.write('\\n' + 'Hello, world!\\n')
+
+_Listing 10_
+
+Using the same helloworld.txt file from before, running this code will produce the following file contents:
+
+$ cat helloworld.txt  
+Hello, world  
+a second line  
+and a third line
+
+Hello, world!
+
+### Conclusion
+
+Writing plain text data to files, or appending data to existing files, is as easy as reading from files in Python. As soon as a file is closed after writing or appending data, Python triggers a synchronization call. As a result, the updated file is immediately written to disk.
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+### CSS Selectors
+
+-   `**CSS Selector**` : Applies styles to a specific DOM element(s), there are various types:
+-   `**Type Selectors**` : Matches by node name.
+-   `**Class Selectors**` : Matches by class name.
+-   `**ID Selectors**` : Matches by ID name.
+-   `**Universal Selectors**` : Selects all HTML elements on a page.
+-   `**Attribute Selectors**` : Matches elements based on the prescence or value of a given attribute. (i.e. a\[title\] will match all a elements with a title attribute)
+
+/\* Type selector \*/  
+div {  
+ background-color: #000000;  
+}/\* Class selector \*/  
+.active {  
+ color: #ffffff;  
+}/\* ID selector \*/  
+#list-1 {  
+ border: 1px solid gray;  
+}/\* Universal selector \*/  
+\* {  
+ padding: 10px;  
+}/\* Attribute selector \*/  
+a\[title\] {  
+ font-size: 2em;  
+}
+
+**Class Selectors**
+
+-   Used to select all elements of a certain class denoted with a `.[class name]`
+-   You can assign multiple classes to a DOM element by separating them with a space.
+
+**Compound Class Selectors**
+
+-   To get around accidentally selecting elements with multiple classes beyond what we want to grab we can chain dots.
+-   TO use a compound class selector just append the classes together when referencing them in the CSS.
+
+<div class="box yellow"></div>  
+<div class="box orange"></div>  
+<div class="circle orange"></div>
+
+-   i.e. .box.yellow will select only the first element.
+-   KEEP IN MIND that if you do include a space it will make the selector into a _descendant selector_.
+
+h1#heading,  
+h2.subheading {  
+ font-style: italic;  
+}
+
+-   When we want to target all `h1` tags with the id of `heading`.
+
+**CSS Combinators**
+
+-   CSS Combinators are used to combine other selectors into more complex or targeted selectors — they are very powerful!
+-   Be careful not to use too many of them as they will make your CSS far too complex.
+-   `**Descendant Selectors**`
+-   Separated by a space.
+-   Selects all descendants of a parent container.
+-   `**Direct Child Selectors**`
+-   Indicated with a `>`.
+-   Different from descendants because it only affects the direct children of an element.
+-   `.menu > .is-active { background-color: #ffe0b2; }`
+-   `<body> <div class="menu"> <div class="is-active">Belka</div> <div> <div class="is-active">Strelka</div> </div> </div> </body> <div class="is-active"> Laika </div> </body>`
+-   Belka would be the only element selected.
+-   `**Adjacent Sibling Selectors**`
+-   Uses the `+` symbol.
+-   Used for elements that directly follow one another and who both have the same parent.
+-   `h1 + h2 { font-style: italic; } <h1>Big header</h1> <h2>This one is styled because it is directly adjacent to the H1</h2> <h2>This one is NOT styled because there is no H1 right before it</h2>`
+
+**Pseudo-Classes**
+
+-   `**Pseudo-Class**` : Specifies a special state of the seleted element(s) and does not refer to any elements or attributes contained in the DOM.
+-   Format is a `Selector:Pseudo-Class Name` or `A:B`
+-   `a:hover { font-family: "Roboto Condensed", sans-serif; color: #4fc3f7; text-decoration: none; border-bottom: 2px solid #4fc3f7; }`
+-   Some common pseudo-classes that are frequently used are:
+-   `**active**` : ‘push down’, when ele are activated.
+-   `**checked**` : applies to things like radio buttons or checkbox inputs.
+-   `**disabled**` : any disabled element.
+-   `**first-child**` : first element in a group of children/siblings.
+-   `**focus**` : elements that have current focus.
+-   `**hover**` : elements that have cursor hovering over it.
+-   `**invalid**` : any form elements in an invalid state from client-side form validation.
+-   `**last-child**` : last element in a group of children/siblings.
+-   `**not(selector)**` : elements that do not match the provided selector.
+-   `**required**` : form elements that are required.
+-   `**valid**` : form elements in a valid state.
+-   `**visited**` : anchor tags of whih the user has already been to the URL that the href points to.
+
+`**Pseudo-Selectors**`
+
+-   Used to create pseudo-elements as children of the elements to which the property applies.
+-   `::after`
+-   `::before`
+
+<style>  
+  p::before {  
+    background-color: lightblue;  
+    border-right: 4px solid violet;  
+    content: ":-) ";  
+    margin-right: 4px;  
+    padding-left: 4px;  
+  }  
+</style>
+<p>This is the first paragraph</p>  
+<p>This is the second paragraph</p>  
+<p>This is the third paragraph</p>
+
+-   Will add some blue smiley faces before the p tag elements.
+
+**CSS Rules**
+
+-   `**CSS Rule**` : Collection of single or compound selectors, a curly brace, zero or more properties
+-   `**CSS Rule Specificity**` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements – there is an algorithm in CSS that calculates which rule takes precedence.
+-   `**The Four Number Calculation**` : listed in increasing order of importance.
+
+Who has the most IDs? If no one, continue.
+
+Who has the most classes? If no one, continue.
+
+Who has the most tags? If no one, continue.
+
+Last Read in the browser wins.
+
+![](https://cdn-images-1.medium.com/max/800/0*Ub47AaMXuT1m8_T-)
+
+![](https://cdn-images-1.medium.com/max/800/0*t0oXzsLPxpMwNbKo.png)
+
+![](https://cdn-images-1.medium.com/max/800/0*2xr0vyHwf6UN905l)
+
+![](https://cdn-images-1.medium.com/max/800/0*oq83hQ5qvtT6gDd9.png)
+
+<style>  
+  .box {  
+    width: 50px;  
+    height: 50px;  
+    border: 1px solid black;  
+  }  
+  .orange {  
+    background-color: orange;  
+  }  
+  .yellow {  
+    background-color: yellow;  
+    border: 1px solid purple;  
+  }  
+</style>
+<div class="box yellow"></div>  
+<div class="box orange"></div>
+
+-   Coming back to our example where all the CSS Rules have tied, the last step 4 wins out so our element will have a `purple border`.
+
+---
+
+### CSS: Type, Properties, and Imports
+
+**Typography**
+
+-   `**font-family**` : change the font.
+
+![](https://cdn-images-1.medium.com/max/800/0*ssVcT1Bd9Edfo6KF)
+
+![](https://cdn-images-1.medium.com/max/800/0*WmqUyKiumM8RCJQo.png)
+
+-   Remember that not all computers have the same fonts on them.
+-   You can import web fonts via an api by using
+-   `@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');` and pasting it st the top of your CSS file.
+-   And then reference it in your font-family.
+-   `**font-size**` : Changes the size of your font.
+-   Keep in mind the two kind of units CSS uses:
+-   `**Absolute**` : `**Pixels**`, Points, Inches, Centimeters.
+-   `**Relative**` : Em, Rem.
+-   Em: Calulating the size relative to the previous div (bubbles down)
+-   Rem: Calulates relative to the parent element always.
+-   `**font-style**` : Used to set a font to italics.
+-   `**font-weight**` : Used to make a font bold.
+-   `**text-align**` : Used to align your text to the left, center, or right.
+-   `**text-decoration**` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!
+-   `**text-transform**` : Used to set text to all lowercase, uppercase, or capitalize all words.
+
+**Background-Images**
+
+-   You can use the background-image property to set a background image for an element.
+
+---
+
+### CSS: Colors, Borders, and Shadows
+
+**Colors**
+
+-   You can set colors in CSS in three popular ways: by name, by hexadecimal RGB value, and by their decimal RGB value.
+-   rgba() is used to make an rbg value more transparent, the `a` is used to specify the `alpha channel`.
+-   **Color** : Property used to change the color of text.
+-   **Background-Color** : Property to change the backgrounf color of an element.
+
+**Borders**
+
+-   Borders take three values: The width of the border, the style (i.e. solid, dotted, dashed), color of the border.
+
+**Shadows**
+
+-   There are two kinds of shadows in CSS: `**box shadows**` and `**text shadows**`.
+-   Box refers to HTML elements.
+-   Text refers to text.
+-   Shadows take values such as, the horizontal & vertical offsets of the shadow, the blur radius of the shadow, the spread radius, and of course the colors.
+
+---
+
+### The Box Model
+
+**Box Model** : A concept that basically boils down that every DOM element has a box around it.
+
+Imagine a gift, inside is the gift, wrapped in foam all around (padding), and the giftbox outside of it (border) and then a wrapping paper on the giftbox (margin).- For items that are using `block` as it’s display, the browser will follow these rules to layout the element: – The box fills 100% of the available container space. – Every new box takes on a new line/row. – Width and Height properties are respected. – Padding, Margin, and Border will push other elements away from the box. – Certain elements have `block` as their default display, such as: divs, headers, and paragraphs.- For items that are using `inline` as it’s display, the browser will follow these rules to layout the element: – Each box appears in a single line until it fills up the space. – Width and height are **not** respected. – Padding, Margin, and Border are applied but they **do not** push other elements away from the box. – Certain elements have `inline` as their default display, such as: span tags, anchors, and images.
+
+**Standard Box Model vs Border-Box**– As per the standard Box Model, the width and height pertains to the content of the box and excludes any additional padding, borders, and margins.
+
+This bothered many programmers so they created the **border box** to include the calculation of the entire box’s height and width.
+
+**Inline-Block**– Inline-block uses the best features of both `block` and `inline`. – Elements still get laid out left to right. – Layout takes into account specified width and height.
+
+**Padding**– Padding applies padding to every side of a box. It is shorthand for four padding properties in this order: `padding-top`, `padding-right`, `padding-bottom`, `padding-left` (clockwise!)
+
+**Border**– Border applies a border on all sides of an element. It takes three values in this order: `border-width`, `border-style`, `border-color`. – All three properties can be broken down in the four sides clockwise: top, right, bottom, left.
+
+**Margin**– Margin sets margins on every side of an element. It takes four values in this order: `margin-top`, `margin-right`, `margin-bottom`, `margin-left`. – You can use `margin: 0 auto` to center an element.
+
+### Positioning
+
+-   The `position` property allows us to set the position of elements on a page and is an integral part of creatnig a Web page layout.
+-   It accepts five values: `static`, `relative`, `absolute`, `fixed`, `sticky`.
+-   Every property (minus `static`) is used with: `top`, `right`, `bottom`, and `left` to position an element on a page.
+
+**Static Positioning**
+
+-   The default position value of page elements.
+-   Most likely will not use static that much.
+
+**Relative Positioning**
+
+-   Remains in it’s original position in the page flow.
+-   It is positioned _RELATIVE_ to the it’s _ORIGINAL PLACE_ on the page flow.
+-   Creates a **stacking context** : overlapping elements whose order can be set by the z-index property.
+
+#pink-box {  
+ background-color: #ff69b4;  
+ bottom: 0;  
+ left: -20px;  
+ position: relative;  
+ right: 0;  
+ top: 0;  
+}
+
+![](https://cdn-images-1.medium.com/max/800/0*mMCUEQ94L4_zxwNc)
+
+![](https://cdn-images-1.medium.com/max/800/0*TgjpfTmdczESRAfU.png)
+
+**Absolute Positioning**
+
+-   Absolute elements are removed from the normal page flow and other elements around it act like it’s not there. (how we can easily achieve some layering)
+-   Here are some examples to illustration absolute positioning:
+
+.container {  
+ background-color: #2b2d2f;  
+ position: relative;  
+}#pink-box {  
+ position: absolute;  
+ top: 60px;  
+}
+
+![](https://cdn-images-1.medium.com/max/800/0*Mu1E5D10RQaBpzms)
+
+![](https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png)
+
+-   Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it’s top-left corner.
+-   Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.
+
+.container {  
+ background-color: #2b2d2f;  
+ position: relative;  
+}#pink-box {  
+ position: absolute;  
+ top: 60px;  
+}#blue-box {  
+ position: absolute;  
+}
+
+![](https://cdn-images-1.medium.com/max/800/0*phWx-191VVQ5pRF9)
+
+![](https://cdn-images-1.medium.com/max/800/0*o_T8meZgQSu7kxfs.png)
+
+-   As you can see here, since we have also taken the blue box out of the normal page flow by declaring it as absoutely positioned it now overlaps over the pink box.
+
+.container {  
+ background-color: #2b2d2f;  
+ position: relative;  
+}#pink-box {  
+ background-color: #ff69b4;  
+ bottom: 60px;  
+ position: absolute;  
+}
+
+![](https://cdn-images-1.medium.com/max/800/0*HJbtARqC1qmeWTHS)
+
+![](https://cdn-images-1.medium.com/max/800/0*rRNttTlXfnhqERYU.png)
+
+-   Example where the absolute element has it’s bottom property modified.
+
+.container {  
+ background-color: #2b2d2f;  
+}#pink-box {  
+ background-color: #ff69b4;  
+ bottom: 60px;  
+ position: absolute;  
+}
+
+![](https://cdn-images-1.medium.com/max/800/0*e7H6ImFUmcPGMaoa)
+
+![](https://cdn-images-1.medium.com/max/800/0*Al6ILt84EC0bhjnK.png)
+
+-   If we removed the container’s relative position. Our absolute unit would look for the nearest parent which would be the document itself.
+
+**Fixed Positioning**
+
+-   Another positioning that removes it’s element from the page flow, and automatically positions it’s parent as the HTML doc itself.
+-   Fixed also uses top, right, bottom, and left.
+-   Useful for things like nav bars or other features we want to keep visible as the user scrolls.
+
+**Sticky Positioning**
+
+-   Remains in it’s original position in the page flow, and it is positioned relative to it’s closest block-level ancestor and any _scrolling_ ancestors.
+-   Behaves like a relatively positioned element until the point at which you would normally scroll past it’s viewport — then it sticks!
+-   It is positioned with top, right, bottom, and left.
+-   A good example are headers in a scrollable list.
+
+![](https://cdn-images-1.medium.com/max/800/0*BRVlqobKK0IZtnXq)
+
+![](https://cdn-images-1.medium.com/max/800/0*jQQJYWVoQY2eNANS.gif)
+
+---
+
+### Flexible Box Model
+
+-   Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.
+-   Float was used back in the day to display position of elements in a container.
+-   A very inconvenient aspect of float is the need to _clear_ the float.
+-   To ‘clear’ a float we need to set up a ghost div to properly align — this is already sounds so inefficient.
+
+**Using Flexbox**
+
+-   Flexbox automatically resizes a container element to fit the viewport size without needing to use breakpoints.
+
+![](https://cdn-images-1.medium.com/max/800/0*_SXOQpq3yrywWCcL)
+
+![](https://cdn-images-1.medium.com/max/800/0*IBJIWQ7Z_23eERWn.png)
+
+-   Flexbox layout applies styles to the parent element, and it’s children.
+
+.container {  
+ display: flex; /\*sets display to use flex\*/  
+ flex-wrap: wrap; /\*bc flex tries to fit everything into one line, use wrap to have the elements wrap to the next line\*/  
+ flex-direction: row; /\*lets us create either rows or columns\*/  
+}
+
+-   `**flex-flow**` can be used to combine wrap and direction.
+-   `**justify-content**` used to define the alignment of flex items along the main axis.
+-   `**align-items**` used to define the alignment on the Y-axis.
+-   `**align-content**` redistributes extra space on the cross axis.
+-   By default, flex items will appear in the order they are added to the DOM, but we can use the `order` property to change that.
+-   Some other properties we can use on flex items are:
+-   `flex-grow` : dictates amount of avail. space the item should take up.
+-   `flex-shrink` : defines the ability for a flex item to shrink.
+-   `flex-basis` : Default size of an element before the remaining space is distributed.
+-   `flex` : shorthand for grow, shrink and basis.
+-   `align-self` : Overrides default alignment in the container.
+
+---
+
+### Grid Layout
+
+-   CSS Grid is a 2d layout system that let’s use create a grid with columns and rows purely using Vanilla CSS. (flex is one dimensional)
+
+**Bootstrap vs CSS Grid**
+
+-   Bootstrap was a front-end library commonly used to create grid layouts but now CSS grid provides greater flexibility and control.
+-   Grid applies style to a parent container and it’s child elements.
+
+.grid-container {  
+ display: grid;  
+ grid-template-columns: repeat(3, 1fr);  
+ grid-template-rows: auto;  
+ grid-template-areas:  
+ "header header header"  
+ "main . sidebar"  
+ "footer footer footer"; grid-column-gap: 20px;  
+ grid-row-gap: 30px;  
+ justify-items: stretch;  
+ align-items: stretch;  
+ justify-content: stretch;  
+ align-content: stretch;  
+}.item-1 {  
+ grid-area: header;  
+}  
+.item-2 {  
+ grid-area: main;  
+}  
+.item-3 {  
+ grid-area: sidebar;  
+}  
+.item-4 {  
+ grid-area: footer;  
+}
+
+-   Columns and Rows can be defined with: pixels, percentages, auto, named grid lines, using `repeat`, fractions.
+-   `**Grid Template Areas**` gives us a handy way to map out and visualize areas of the grid layout.
+-   Combine areas with templates to define how much space an area should take up.
+-   `**Grid Gaps**` can be used to create ‘gutters’ between grid item.s
+-   The way we have defined our grid with `grid-templates` and `areas` are considered **explicit**.
+-   We can also `**implicitly**` define grids.
+
+.grid-container {  
+ display: grid;  
+ grid-template-columns: 100px 100px 100px 100px;  
+ grid-template-rows: 50px 50px 50px;  
+ grid-auto-columns: 100px;  
+ grid-auto-rows: 50px;  
+}
+
+-   Any grid items that aren’t explicity placed are automatically placed or _re-flowed_
+
+**Spanning Columns & Rows**
+
+-   We can use the following properties to take up a specified num of cols and rows.
+-   `**grid-column-start**`
+-   `**grid-column-end**`
+-   `**grid-row-start**`
+-   `**grid-row-end**`
+-   All four properties can take any of the following values: the line number, span #, span name, auto.
+
+.item-1 {  
+ grid-row-start: row2-start; /\* Item starts at row line named "row2-start" \*/  
+ grid-row-end: 5; /\* Item ends at row line 5 \*/  
+ grid-column-start: 1; /\* Item starts at column line 1 \*/  
+ grid-column-end: three; /\* Item ends at column line named "three" \*/  
+}.item-2 {  
+ grid-row-start: 1; /\* Item starts at row line 1 \*/  
+ grid-row-end: span 2; /\* Item spans two rows and ends at row line 3 \*/  
+ grid-column-start: 3; /\* Item starts at column line 3 \*/  
+ grid-column-end: span col5-start; /\* Item spans and ends at line named "col5-start" \*/  
+}
+
+**Grid Areas**
+
+-   We use the grid areas in conjunction with grid-container property to **define sections of the layout**.
+-   We can then assign named sections to individual element’s css rules.
+
+**Justify & Align Self**
+
+-   Justify items and Align Items can be used to align all grid items at once.
+-   **Justify Self** is used to align self on the row.
+-   It can take four values: start, end, center, stretch.
+-   **Align Self** is used to align self on the column.
+-   It can take four values: start, end, center, stretch.
+
+---
+
+**CSS Hover Effect and Handling**
+
+**Overflow**
+
+`css .btn { background-color: #00bfff; color: #ffffff; border-radius: 10px; padding: 1.5rem; }`
+
+`.btn--active:hover { cursor: pointer; transform: translateY(-0.25rem);`
+
+`/* Moves our button up/down on the Y axis */ }`
+
+The Pseudo Class Selector `**hover**` activates when the cursor goes over the selected element.
+
+**Content Overflow**– You can apply an `overflow` content property to an element if it’s inner contents are spilling over.
+
+There are three members in the overflow family: — `**overflow-x**` : Apply horizontally. – `**overflow-y**` : Apply vertically. – `**overflow**` : Apply both directions.
+
+### Transitions
+
+-   Transitions provide a way to control animation speed when changing CSS properties.
+-   **Implicit Transitions** : Animations that involve transitioning between two states.
+
+**Defining Transitions**
+
+-   `**transition-property**` : specifies the name of the CSS property to apply the transition.
+-   `**transition-duration**` : during of the transition.
+-   `**transition-delay**` : time before the transition should start.
+
+**Examples** :
+
+#delay {  
+ font-size: 14px;  
+ transition-property: font-size;  
+ transition-duration: 4s;  
+ transition-delay: 2s;  
+}#delay:hover {  
+ font-size: 36px;  
+}
+
+![](https://cdn-images-1.medium.com/max/800/0*Z6AbWnbmbFfu-tSM)
+
+![](https://cdn-images-1.medium.com/max/800/0*_6nSuCOR34-6ET7n.gif)
+
+-   After a delay of two seconds, a four second transition begins where the font size goes from 36px to 14px.
+
+.box {  
+ border-style: solid;  
+ border-width: 1px;  
+ display: block;  
+ width: 100px;  
+ height: 100px;  
+ background-color: #0000ff;  
+ transition: width 2s, height 2s, background-color 2s, transform 2s;  
+}.box:hover {  
+ background-color: #ffcccc;  
+ width: 200px;  
+ height: 200px;  
+ transform: rotate(180deg);  
+}
+
+![](https://cdn-images-1.medium.com/max/800/0*PH5_YmVDFVGqWGjO)
+
+![](https://cdn-images-1.medium.com/max/800/0*Ya7xiy0AqJaJ9RPq.gif)
+
+-   When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.
+
+---
+
+### BEM Guidelines
+
+-   BEM was created as a guideline to solve the issue of loose standards around CSS naming conventions.
+-   **BEM** stands for `block`, `element`, `modifier`.
+-   **Block**
+-   A standalone entity that is meaningful on it’s own.
+-   Can be nested and interact with one another.
+-   Holistic entities without DOM rep can be blocks.
+-   May consist latin letters, digits, and dashes.
+-   Any DOM node can be a block if it accepts a class name.
+-   **Element**
+-   Part of a block and has no standalone meaning.
+-   Any element that is semantically tied to a block.
+-   May consist latin letters, digits, and dashes.
+-   Formed by using two underscores after it’s block name.
+-   Any DOM node within a block can be an element.
+-   Element classes should be used independently.
+-   **Modifier**
+-   A flag on blocks or elements. Use them to change appearance, behavior or state.
+-   Extra class name to add onto blocks or elements.
+-   Add mods only to the elements they modify.
+-   Modifier names may consist of Latin letters, digits, dashes and underscores.
+-   Written with two dashes.
+
+**BEM Example**
+
+<form class="form form--theme-xmas form--simple">  
+  <input class="form\_\_input" type="text" />  
+  <input class="form\_\_submit form\_\_submit--disabled" type="submit" />  
+</form>/\* block selector \*/  
+.form {  
+}/\* block modifier selector \*/  
+.form--theme-xmas {  
+}/\* block modifier selector \*/  
+.form--simple {  
+}/\* element selector \*/  
+.form\_\_input {  
+}/\* element selector \*/  
+.form\_\_submit {  
+}/\* element modifier selector \*/  
+.form\_\_submit--disabled {  
+}
+
+[https://gist.github.com/bgoonz/772d898734b648e7a4f3aa47575bc3ef](https://gist.github.com/bgoonz/772d898734b648e7a4f3aa47575bc3ef)
+
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+Or Checkout my personal Resource Site:
+
+[https://github.com/bgoonz](https://github.com/bgoonz)
+
+![](https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J)
+
+If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL ‘allegedly’ …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the **command line tool** `**psql**`**.**
+
+### Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!
+
+**Postgres**, is a [free and open-source](https://en.wikipedia.org/wiki/Free_and_open-source_software 'Free and open-source software') [relational database management system](https://en.wikipedia.org/wiki/Relational_database_management_system 'Relational database management system') (RDBMS)
+
+**PSQL:**
+
+The primary [front-end](https://en.wikipedia.org/wiki/Front_and_back_ends 'Front and back ends') for PostgreSQL is the `**psql**` [command-line program](https://en.wikipedia.org/wiki/Command-line_program 'Command-line program'), which can be used to enter SQL queries directly, or execute them from a file.
+
+In addition, psql provides a number of meta-commands and various shell-like features to facilitate writing scripts and automating a wide variety of tasks; for example tab completion of object names and SQL syntax.
+
+**pgAdmin:**
+
+The pgAdmin package is a free and open-source [graphical user interface](https://en.wikipedia.org/wiki/Graphical_user_interface 'Graphical user interface') (GUI) administration tool for PostgreSQL.
+
+When you read “installation”, that means the actual OS that’s running on your machine. So, you have a Windows installation, Windows 10, that’s running when you boot your computer. Then, when you start the Ubuntu installation, it’s as if there’s a completely separate computer running inside your computer. It’s like having two completely different laptops.
+
+### Other Noteworthy Distinctions:
+
+![](https://cdn-images-1.medium.com/max/800/1*um8fm6FDTYYOXZrLudddpg.png)
+
+### Installing PostgreSQL 12
+
+To install PostgreSQL 12, you need to download the installer from the Internet. PostgreSQL’s commercial company, Enterprise DB, offers installers for PostgreSQL for every major platform.
+
+Open [https://www.enterprisedb.com/downloads/postgres-postgresql-downloads](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Click the link for PostgreSQL 12 for Windows x86-64.
+
+![](https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png)
+
+Once that installer downloads, run it. You need to go through the normal steps o
