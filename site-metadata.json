@@ -113,7 +113,7 @@
                     },
                     {
                         "label": "Resource-Archive-Server",
-                        "url": "https://github.com/bgoonz/Lambda-Resource-Static-Assets/tree/bryan-guner",
+                        "url": "https://resourcerepo2.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
