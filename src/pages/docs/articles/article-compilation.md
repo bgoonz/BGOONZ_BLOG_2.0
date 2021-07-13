@@ -9863,4 +9863,2095 @@ Happy Coding!
 
 > [d3-react-squared](https://github.com/bgrsquared/d3-react-squared) — Lightweight event system for (d3) charts and other components for ReactJS.
 
-> [react-d
+> [react-d3-components](https://github.com/codesuki/react-d3-components) — D3 Components for React.
+
+> [recharts](https://github.com/recharts/recharts) — Redefined chart library built with React and D3.
+
+> [react-chartjs](https://github.com/reactjs/react-chartjs) — Common react charting components using chart.js.
+
+> [react-dazzle](https://github.com/Raathigesh/Dazzle) — Dashboards made easy in React JS.
+
+> [react-vis](https://github.com/uber/react-vis) — Data visualization library based on React and d3.
+
+> [react-sparkline](https://github.com/KyleAMathews/react-sparkline) — React component for rendering simple sparklines.
+
+> [react-sparklines](https://github.com/borisyankov/react-sparklines) — Beautiful and expressive Sparklines React component.
+
+> [rumble-charts](https://github.com/RumbleInc/rumble-js-charts) — React components for building composable and flexible charts.
+
+> [react-micro-bar-chart](https://github.com/KyleAMathews/react-micro-bar-chart) — React component for micro bar-charts rendered with D3.
+
+> [react-timeseries-charts](https://github.com/esnet/react-timeseries-charts) — Declarative timeseries charts.
+
+> [react-google-charts](https://github.com/RakanNimer/react-google-charts) — React-google-charts React component.
+
+> [victory](https://github.com/FormidableLabs/victory) — Data viz for React.
+
+> [react-sigmajs](https://github.com/dunnock/react-sigma) — Lightweight but powerful library for drawing network graphs built on top of SigmaJS.
+
+> [chartify](https://github.com/kirillstepkin/chartify) — React.js plugin for building animated draggable and customizable charts.
+
+> [react-highcharts](https://github.com/kirjs/react-highcharts) — React-highcharts.
+
+> [react-trend](https://github.com/unsplash/react-trend) — Simple, elegant spark lines.
+
+> Tree
+
+> _Display a tree data structure_
+
+> [react-treeview](https://github.com/chenglou/react-treeview) — Easy, light, flexible tree view made with React.
+
+> [react-ui-tree](https://github.com/pqx/react-ui-tree) — React tree component.
+
+> [react-treebeard](https://github.com/alexcurtis/react-treebeard) — React Tree View Component. Data-Driven, Fast, Efficient and Customisable.
+
+> UI Navigation
+
+> _Ways to navigate views_
+
+> [react-scroll](https://github.com/fisshy/react-scroll) — React scroll component.
+
+> [react-swipe-views](https://github.com/damusnet/react-swipe-views) — A React Component for binded Tabs and Swipeable Views.
+
+> Custom Scrollbar
+
+> [react-custom-scrollbars](https://github.com/malte-wessel/react-custom-scrollbars) — React scrollbars component.
+
+> [react-scrollbar](https://github.com/souhe/reactScrollbar) — Scrollbar component for React.
+
+> [react-smooth-scrollbar](https://github.com/idiotWu/react-smooth-scrollbar) — React implementation of smooth-scrollbar.
+
+> [react-gemini-scrollbar](https://github.com/noeldelgado/react-gemini-scrollbar) — React component for custom overlay-scrollbars with native scrolling mechanism.
+
+> [react-custom-scroll](https://github.com/rommguy/react-custom-scroll) — Easily customize the browser scroll bar with native OS scroll behavior.
+
+> Audio / Video
+
+> [react-player](https://github.com/CookPete/react-player) — A react component for playing a variety of URLs, including file paths, YouTube, SoundCloud and Vimeo.
+
+> [react-youtube](https://github.com/troybetz/react-youtube) — React.js powered YouTube player component.
+
+> [react-soundplayer](https://github.com/soundblogs/react-soundplayer) — Create custom SoundCloud players with React.
+
+> [react-video](https://github.com/pedronauck/react-video) — React component to load video from Vimeo or Youtube across any device.
+
+> [react-music](https://github.com/FormidableLabs/react-music) — Make beats with React.
+
+> [react-dailymotion](https://github.com/u-wave/react-dailymotion) — Dailymotion player component for React.
+
+> [video-react](https://github.com/video-react/video-react) — A web video player built for the HTML5 world using React library.
+
+> Map
+
+> [react-gmaps](https://github.com/MicheleBertoli/react-gmaps) — A Google Maps component for React.js.
+
+> [google-map-react](https://github.com/istarkov/google-map-react) — Universal google map react component, allows render react components on the google map.
+
+> [react-googlemaps](https://github.com/pieterv/react-googlemaps) — A declarative React interface to Google Maps.
+
+> [react-leaflet](https://github.com/PaulLeCam/react-leaflet) — React components for Leaflet maps.
+
+> [react-geosuggest](https://github.com/ubilabs/react-geosuggest) — A React autosuggest for the Google Maps Places API.
+
+> [react-map-gl](https://github.com/uber/react-map-gl) — A React wrapper for MapboxGL-js and overlay API.
+
+> [react-mapbox-gl](https://github.com/alex3165/react-mapbox-gl) — A React binding of mapbox-gl-js.
+
+> Time / Date / Age
+
+> _Display time / date / age_
+
+> [react-time](https://github.com/andreypopp/react-time) — Component for React to render relative and/or formatted dates into < time> HTML5 element.
+
+> [react-timeago](https://github.com/nmn/react-timeago) — A simple time-ago component for ReactJs.
+
+> [timeago-react](https://github.com/hustcc/timeago-react) — Simple and efficient react component to format date with `*** time ago` statement. eg: ‘3 hours ago’.
+
+> Photo / Image
+
+> _Display images / photos_
+
+> [react-image-gallery](https://github.com/xiaolin/react-image-gallery) — Responsive image gallery, carousel, image slider react component.
+
+> [react-images](https://github.com/jossmac/react-images) — A simple lightbox component for displaying an array of images.
+
+> [react-photo-gallery](https://github.com/neptunian/react-photo-gallery) — Responsive React Photo Gallery.
+
+> [react-svg-pan-zoom](https://github.com/chrvadala/react-svg-pan-zoom) — A React component that adds pan and zoom features to SVG.
+
+> [react-image-lightbox](https://github.com/fritz-c/react-image-lightbox) — React lightbox component.
+
+> [react-intense](https://github.com/brycedorn/react-intense) — A React component for viewing large images up close.
+
+> Icons
+
+> _Display icons / icon set / emojis_
+
+> [react-icons](https://github.com/gorangajic/react-icons) — Svg react icons of popular icon packs using ES6 imports.
+
+> [react-emoji](https://github.com/banyan/react-emoji) — An emoji mixin for React.
+
+> [react-emoji-react](https://github.com/conorhastings/react-emoji-react) — A clone of slack emoji reactions in react.
+
+> Paginator
+
+> _Display a control element to paginate_
+
+> [react-paginate](https://github.com/AdeleD/react-paginate) — A ReactJS component that creates a pagination.
+
+> Markdown Viewer
+
+> _Display parsed markdow source_
+
+> [react-markdown](https://github.com/rexxars/react-markdown) — Render Markdown as React components.
+
+> Miscellaneous
+
+> [react-timesheet](https://github.com/yuanyan/react-timesheet) — Time Sheet Component for React.
+
+> [react-blur](https://github.com/javierbyte/react-blur) — React component for blurred backgrounds.
+
+> [react-split-pane](https://github.com/tomkp/react-split-pane) — React split-pane component.
+
+> [typography](https://github.com/KyleAMathews/typography.js) — A powerful toolkit for building websites with beautiful typography.
+
+> [react-json-tree](https://github.com/alexkuz/react-json-tree) — React JSON Viewer Component, Extracted from redux-devtools.
+
+> [react-resizable-and-movable](https://github.com/bokuweb/react-resizable-and-movable) — Resizable and movable component for React.
+
+> [react-dnr](https://github.com/yongxu/react-DnR) — Dragable and Resizable window build with React.js.
+
+> [react-resizable-box](https://github.com/bokuweb/react-resizable-box) — Resizable component for React. #reactjs.
+
+> [react-file-reader-input](https://github.com/ngokevin/react-file-reader-input) — React file input component for complete control over styling and abstraction from file reading.
+
+> [react-pagespeed-score](https://github.com/cauealves/react-pagespeed-score) — A React component for display a dial-type chart of PageSpeed Insights.
+
+> [react-autolink](https://github.com/banyan/react-autolink) — An autolink mixin for React.
+
+> [react-svg-buttons](https://github.com/plouc/react-svg-buttons) — Configurable animated SVG buttons for react.
+
+> [react-avatar](https://github.com/Sitebase/react-avatar) — Universal React avatar component makes it possible to generate avatars based on user information.
+
+> [react-joyride](https://github.com/gilbarbara/react-joyride) — Create walkthroughs and guided tours for your ReactJS apps. Now with standalone tooltips!.
+
+> [material-color-hash](https://github.com/BelkaLab/material-color-hash) — Hash strings to Material UI colors.
+
+> [react-facebook](https://github.com/CherryProjects/react-facebook) — Facebook components like a Login button, Like, Share, Comments, Page or Embedded Post.
+
+> Form Components
+
+> _Let the user enter data_
+
+> Date / Time picker
+
+> _Date picker / time picker / datetime picker / date range picker_
+
+> [react-datepicker](https://github.com/Hacker0x01/react-datepicker) — A simple and reusable datepicker component for React.
+
+> [rc-calendar](https://github.com/react-component/calendar) — React Calendar.
+
+> [react-date-range](https://github.com/Adphorus/react-date-range) — A React component for choosing dates and date ranges.
+
+> [react-day-picker](https://github.com/gpbl/react-day-picker) — Flexible date picker for React.
+
+> [react-daterange-picker](https://github.com/onefinestay/react-daterange-picker) — A React based date range picker.
+
+> [react-yearly-calendar](https://github.com/BelkaLab/react-yearly-calendar) — React.js Yearly Calendar Component.
+
+> [react-calendar](https://github.com/freiksenet/react-calendar) — A modular toolkit to build calendar-related things in React.
+
+> [input-moment](https://github.com/wangzuo/input-moment) — React datetime picker powered by momentjs.
+
+> [react-datetime](https://github.com/YouCanBookMe/react-datetime) — A lightweight but complete datetime picker react component.
+
+> [react-bootstrap-datetimepicker](https://github.com/quri/react-bootstrap-datetimepicker) — A react.js datetime picker for bootstrap.
+
+> [react-bootstrap-daterangepicker](https://github.com/skratchdot/react-bootstrap-daterangepicker) — A date/time picker for react (using bootstrap). This is a react port of bootstrap-daterangepicker.
+
+> [react-big-calendar](https://github.com/intljusticemission/react-big-calendar) — Gcal/outlook like calendar component.
+
+> [react-date-select](https://github.com/JedWatson/react-date-select) — A React Date Select / Picker Input Component.
+
+> [react-infinite-calendar](https://github.com/clauderic/react-infinite-calendar) — Infinite scrolling date-picker built with React, with localization, themes, keyboard support, and more.
+
+> [react-dates](https://github.com/airbnb/react-dates) — An easily internationalizable, mobile-friendly datepicker library for the web.
+
+> [react-flatpickr](https://github.com/coderhaoxin/react-flatpickr) — Flatpickr for React.
+
+> Input Types
+
+> _Masked inputs, specialized inputs; email / telephone number / credit card / etc._
+
+> [react-input-mask](https://github.com/sanniassin/react-input-mask) — Yet another react component for input masking.
+
+> [react-maskedinput](https://github.com/insin/react-maskedinput) — Masked < input/> React component.
+
+> [react-text-mask](https://github.com/msafi/text-mask) — Input mask for React, Angular, and vanilla JavaScript. Flexible, robust & tiny.
+
+> [react-credit-cards](https://github.com/amarofashion/react-credit-cards) — Beautiful credit cards for your payment forms.
+
+> Autocomplete
+
+> _Autosuggest / autocomplete / typeahead_
+
+> [react-autosuggest](https://github.com/moroshko/react-autosuggest) — WAI-ARIA compliant React autosuggest component.
+
+> [react-typeahead](https://github.com/fmoo/react-typeahead) — Pure react-based typeahead and typeahead-tokenizer.
+
+> [react-typeahead-component](https://github.com/ezequiel/react-typeahead-component) — Typeahead, written using the React.js library.
+
+> Select
+
+> [react-selectize](https://github.com/furqanZafar/react-selectize) — A Stateless & Flexible Select component for React inspired by Selectize.
+
+> [react-aria-menubutton](https://github.com/davidtheclark/react-aria-menubutton) — A fully accessible, easily themeable, React-powered menu button.
+
+> [react-select](https://github.com/JedWatson/react-select) — A Select control built with and for React JS.
+
+> [react-select-box](https://github.com/instructure-react/react-select-box) — An accessible select box component for React.
+
+> Color Picker
+
+> [react-input-color](https://github.com/wangzuo/react-input-color) — React input color component with hsv color picker.
+
+> [react-color](https://github.com/casesandberg/react-color) — Color Pickers from Sketch, Photoshop, Chrome & more.
+
+> [coloreact](https://github.com/elrumordelaluz/coloreact) — A tiny Color Picker for React.
+
+> Toggle
+
+> [react-toggle](https://github.com/instructure-react/react-toggle) — An elegant, accessible toggle component for React. Also a glorified checkbox.
+
+> [react-ios-switch](https://github.com/clari/react-ios-switch) — React switch component.
+
+> Slider
+
+> [rc-slider](https://github.com/react-component/slider) — React Slider.
+
+> [react-slider](https://github.com/mpowaga/react-slider) — Slider component for React.
+
+> Radio Button
+
+> [react-radio-group](https://github.com/chenglou/react-radio-group) — Better radio buttons.
+
+> Type Select
+
+> _Let the user select something (e.g. a tag) while typing_
+
+> [react-tagsinput](https://github.com/olahol/react-tagsinput) — A simple react component for inputing tags.
+
+> [react-tag-input](https://github.com/prakhar1989/react-tags) — A fantastically simple tagging component for your React projects.
+
+> [react-mentions](https://github.com/effektif/react-mentions) — Mention people in a textarea.
+
+> [react-tokeninput](https://github.com/instructure-react/react-tokeninput) — Tokeninput component for React.
+
+> [react-autocomplete-input](https://github.com/yury-dymov/react-autocomplete-input) — Autocomplete input field for React.
+
+> Autosize Input / Textarea
+
+> [react-input-autosize](https://github.com/JedWatson/react-input-autosize) — Auto-resizing input field for React.
+
+> [react-textarea-autosize](https://github.com/andreypopp/react-textarea-autosize) — < textarea /> component for React which grows with content.
+
+> Star Rating
+
+> [react-star-rating](https://github.com/cameronroe/react-star-rating) — A simple star rating component built with React.
+
+> [react-star-rating-input](https://github.com/ikr/react-star-rating-input) — React.js component for entering 0-5 (or more) stars.
+
+> Drag and Drop
+
+> [react-draggable](https://github.com/mzabriskie/react-draggable) — React draggable component.
+
+> [react-dnd-touch-backend](https://github.com/yahoo/react-dnd-touch-backend) — Touch Backend for react-dnd.
+
+> [react-dropzone](https://github.com/okonet/react-dropzone) — Simple HTML5 drag-drop zone with React.js.
+
+> [react-dnd](https://github.com/gaearon/react-dnd) — Drag and Drop for React.
+
+> [react-sortable-pane](https://github.com/bokuweb/react-sortable-pane) — Sortable and resizable pane component for React.
+
+> [react-dragula](https://github.com/bevacqua/react-dragula) — Drag and drop so simple it hurts.
+
+> [react-droparea](https://github.com/avocode/react-droparea) — Drag and Drop library for React.
+
+> Sortable List
+
+> _Let the user define an order on a list_
+
+> [sortablejs](https://github.com/RubaXa/Sortable) — Sortable — is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports Meteor, AngularJS, React, Polymer, Knockout and any CSS library, e.g. Bootstrap.
+
+> [react-anything-sortable](https://github.com/jasonslyvia/react-anything-sortable) — A ReactJS component that can sort any children with touch support and IE8 compatibility.
+
+> [react-sortable-hoc](https://github.com/clauderic/react-sortable-hoc) — A set of higher-order components to turn any list into an animated, touch-friendly, sortable list.
+
+> [react-sortable](https://github.com/danielstocks/react-sortable) — A sortable list component built with React.
+
+> Rich Text Editor
+
+> [react-quill](https://github.com/zenoamaro/react-quill) — A Quill component for React.
+
+> [react-ace](https://github.com/securingsincity/react-ace) — React Ace Component.
+
+> [react-contenteditable](https://github.com/lovasoa/react-contenteditable) — React component for a div with editable contents.
+
+> [react-codemirror](https://github.com/JedWatson/react-codemirror) — Codemirror Component for React.js.
+
+> [react-medium-editor](https://github.com/wangzuo/react-medium-editor) — React wrapper for medium-editor.
+
+> [draft-js](https://github.com/facebook/draft-js) — A React framework for building text editors.
+
+> [ritzy](https://github.com/ritzyed/ritzy) — Collaborative web-based rich text editor.
+
+> [megadraft](https://github.com/globocom/megadraft) — Rich Text editor built on top of draft.js.
+
+> [react-trumbowyg](https://github.com/RD17/react-trumbowyg) — React wrapper for Trumbowyg.
+
+> [alloyeditor](https://github.com/liferay/alloy-editor) — WYSIWYG editor based on CKEditor with completely rewritten UI.
+
+> [react-draft-wysiwyg](https://github.com/jpuri/react-draft-wysiwyg) — A Wysiwyg editor build on top of ReactJS and DraftJS.
+
+> Markdown Editor
+
+> [react-md-editor](https://github.com/JedWatson/react-md-editor) — React.js Markdown Editor Component.
+
+> [react-markdown-editor](https://github.com/jrm2k6/react-markdown-editor) — A markdown editor using React/Reflux.
+
+> Image Editing
+
+> _Image manipulation_
+
+> [react-avatar-cropper](https://github.com/DropsOfSerenity/react-avatar-cropper) — Aiming to be a complete solution for avatar cropping in react.
+
+> [react-avatar-editor](https://github.com/mosch/react-avatar-editor) — Facebook like, avatar / profile picture component. Resize and crop your uploaded image using a clear user interface.
+
+> [react-image-crop](https://github.com/DominicTobias/react-image-crop) — A responsive image cropping tool for React.
+
+> [react-image-cropper](https://github.com/jerryshew/react-image-cropper) — React image crop.
+
+> Form Component Collections
+
+> [formsy-react-components](https://github.com/twisty/formsy-react-components) — A set of React JS components for use in a formsy-react form. Markup adheres to Bootstrap 3 form structure.
+
+> [formsy-material-ui](https://github.com/mbrookes/formsy-material-ui) — A Formsy compatibility wrapper for Material-UI form components.
+
+> [react-input-enhancements](https://github.com/alexkuz/react-input-enhancements) — Set of enhancements for input control.
+
+> [react-widgets](https://github.com/jquense/react-widgets) — An à la carte set of polished, extensible, and accessible inputs built for React.
+
+> Miscellaneous
+
+> [react-designer](https://github.com/fatiherikli/react-designer) — Easy to configure, lightweight, editable vector graphics in your react components.
+
+> [react-images-uploader](https://github.com/aleksei0807/react-images-uploader) — React.js component for uploading images to the server.
+
+> [react-tabguard](https://github.com/avocode/react-tabguard) — React Tabguard.
+
+---
+
+> MISC
+
+> ‌
+
+> · ​[micro github](https://github.com/mxstbr/micro-github) — Tiny microservice that makes adding authentication with GitHub to your application easy.
+
+> · ​[pico.js](https://github.com/tehnokv/picojs) — Face detection library in200 lines of JavaScript.
+
+> · ​[mdxc](https://github.com/jamesknelson/mdxc) — Use React Components within Markdown.
+
+> · ​[ReLaXeD](https://github.com/RelaxedJS/ReLaXed) — Create PDF documents using web technologies. ([Examples](https://github.com/RelaxedJS/ReLaXed-examples))
+
+> · ​[Dragula](https://github.com/bevacqua/dragula) — Drag and drop so simple it hurts.
+
+> · ​[Hammer.js](https://github.com/hammerjs/hammer.js) — Multi-touch gestures.
+
+> · ​[emittery](https://github.com/sindresorhus/emittery) — Simple and modern async event emitter.
+
+> · ​[Xstate](https://github.com/davidkpiano/xstate) — State machines and statecharts for the modern web. ([State Machines Workshop](https://github.com/ooade/state-machines-workshop))
+
+> · ​[xstate-component-tree](https://github.com/tivac/xstate-component-tree) — Build a tree of UI components based on your state chart.
+
+> · [virtual-scroller](https://github.com/valdrinkoshi/virtual-scroller) — Maps a provided set of JavaScript objects onto DOM nodes, and renders only the DOM nodes that are currently visible, leaving the rest “virtualized”.
+
+> · ​[jSPDF](https://github.com/MrRio/jsPDF) — Client-side JavaScript PDF generation for everyone.
+
+> · ​[ForgJS](https://github.com/oussamahamdaoui/forgJs) — JavaScript lightweight object validator.
+
+> · ​[faker.js](https://github.com/Marak/faker.js) — Generate massive amounts of realistic fake data in Node.js and the browser.
+
+> · ​[arg](https://github.com/vercel/arg) — Simple argument parsing.
+
+> · ​[fbt](https://github.com/facebookincubator/fbt) — JavaScript Internationalization Framework.
+
+> · ​[fuzzysearch](https://github.com/bevacqua/fuzzysearch) — Tiny and blazing-fast fuzzy search in JavaScript.
+
+> · ​[normalizr](https://github.com/paularmstrong/normalizr) — Normalizes nested JSON according to a schema.
+
+> · ​[FBJS](https://github.com/facebook/fbjs) — Collection of utility libraries used by other Facebook JS projects.
+
+> · ​[Uppy](https://github.com/transloadit/uppy) — Next open source file uploader for web browsers. ([Web](https://uppy.io/))
+
+> · ​[ScrollReveal](https://github.com/scrollreveal/scrollreveal) — Animate elements as they scroll into view.
+
+> · ​[Shiny](https://github.com/rikschennink/shiny) — Add shiny reflections to text, backgrounds, and borders on devices that support the DeviceMotion event.
+
+> · ​[Hotkey Behavior](https://github.com/github/hotkey) — Trigger a action on element when keyboard hotkey is pressed.
+
+> · ​[Bili](https://github.com/egoist/bili) — Makes it easier to bundle JavaScript libraries.
+
+> · ​[Memoizee](https://github.com/medikoo/memoizee) — Complete memoize/cache solution for JavaScript.
+
+> · ​[Immer](https://github.com/mweststrate/immer/#async-producers) — Create the next immutable state by mutating the current one.
+
+> · ​[FlexSearch](https://github.com/nextapps-de/flexsearch) — Web’s fastest and most memory-flexible full-text search library with zero dependencies.
+
+> · ​[cofx](https://github.com/neurosnap/cofx) — Node and javascript library that helps developers describe side-effects as data in a declarative, flexible API.
+
+> · ​[Mercury Parser](https://github.com/postlight/mercury-parser) — Extracts the bits that humans care about from any URL you give it.
+
+> · ​[Refract](https://github.com/fanduel-oss/refract) — Harness the power of reactive programming to supercharge your components.
+
+> · ​[MemJS](https://github.com/memcachier/memjs) — Memcache client for node using the binary protocol and SASL authentication.
+
+> · ​[memfs](https://github.com/streamich/memfs) — In-memory filesystem with Node’s API.
+
+> · ​[Accounts](https://github.com/accounts-js/accounts) — Fullstack authentication and accounts-management for GraphQL and REST.
+
+> · ​[Cleave.js](https://github.com/nosir/cleave.js) — Format input text content when you are typing…
+
+> · ​[Unistore](https://github.com/developit/unistore) — Tiny 350b centralized state container with component bindings for Preact & React.
+
+> · ​[Ramda](https://github.com/ramda/ramda) — Practical functional library for JavaScript programmers.
+
+> · ​[fromfrom](https://github.com/tomi/fromfrom) — JS library written in TS to transform sequences of data from format to another.
+
+> · ​[Editor.js](https://github.com/codex-team/editor.js) — Block-styled editor with clean JSON output.
+
+> · ​[ijk](https://github.com/lukejacksonn/ijk) — Transforms arrays into virtual DOM trees.
+
+> · ​[Cleave.js](https://github.com/nosir/cleave.js) — Format input text content when you are typing.
+
+> · ​[Oboe.js](https://github.com/jimhigson/oboe.js) — Streaming approach to JSON. Oboe.js speeds up web applications by providing parsed objects before the response completes.
+
+> · ​[Choices.js](https://github.com/jshjohnson/Choices) — Vanilla JS customisable select box/text input plugin.
+
+> · ​[Shepherd](https://github.com/shipshapecode/shepherd) — Guide your users through a tour of your app.
+
+> · ​[object-cull](https://github.com/Rich-Harris/object-cull) — Create a copy of an object with just the bits you actually need.
+
+> · ​[Sigma](https://github.com/jacomyal/sigma.js) — JavaScript library dedicated to graph drawing.
+
+> · ​[interact.js](https://github.com/taye/interact.js) — JavaScript drag and drop, resizing and multi-touch gestures with inertia and snapping for modern browsers.
+
+> · ​[flru](https://github.com/lukeed/flru) — Tiny (215B) and fast Least Recently Used (LRU) cache.
+
+> · ​[Yup](https://github.com/jquense/yup) — Dead simple Object schema validation.
+
+> · ​[Lerna](https://github.com/lerna/lerna) — Tool for managing JavaScript projects with multiple packages.
+
+> · ​[WikiJs](https://github.com/dijs/wiki) — Wikipedia Interface for Node.js.
+
+> · ​[virtual-audio-graph](https://github.com/benji6/virtual-audio-graph) — Library for declaratively manipulating the Web Audio API.
+
+> · ​[deep-object-diff](https://github.com/mattphillips/deep-object-diff) — Deep diffs two objects, including nested structures of arrays and objects, and returns the difference.
+
+> · ​[Snarkdown](https://github.com/developit/snarkdown) — Snarky 1kb Markdown parser written in JavaScript.
+
+> · ​[Terser](https://github.com/terser-js/terser) — JavaScript parser, mangler, optimizer and beautifier toolkit for ES6+.
+
+> · ​[AppAuthJS](https://github.com/openid/AppAuth-JS) — JavaScript client SDK for communicating with OAuth 2.0 and OpenID Connect providers.
+
+> · ​[expr-eval](https://github.com/silentmatt/expr-eval) — Mathematical expression evaluator in JavaScript.
+
+> · ​[robust-predicates](https://github.com/mourner/robust-predicates) — Fast robust predicates for computational geometry in JavaScript.
+
+> · ​[Sanctuary](https://github.com/sanctuary-js/sanctuary) — JavaScript functional programming library inspired by Haskell and PureScript.
+
+> · ​[modali](https://github.com/upmostly/modali) — Delightful modal dialog component for React, built from the ground up to support React Hooks.
+
+> · ​[Tweakpane](https://github.com/cocopon/tweakpane) — Compact GUI for fine-tuning parameters and monitoring value changes.
+
+> · ​[crocks](https://github.com/evilsoft/crocks) — Collection of well known Algebraic Data Types for your utter enjoyment.
+
+> · ​[Just](https://github.com/angus-c/just) — Library of zero-dependency npm modules that do just do one thing.
+
+> · ​[nanoid](https://github.com/ai/nanoid) — Tiny (139 bytes), secure, URL-friendly, unique string ID generator for JavaScript.
+
+> · ​[debug](https://github.com/visionmedia/debug) — Tiny JavaScript debugging utility modelled after Node.js core’s debugging technique. Works in Node.js and web browsers.
+
+> · ​[roughViz.js](https://github.com/jwilber/roughViz) — Reusable JavaScript library for creating sketchy/hand-drawn styled charts in the browser.
+
+> · ​[Mitt](https://github.com/developit/mitt) — Tiny 200 byte functional event emitter / pubsub.
+
+> · ​[RequireJS](https://github.com/requirejs/requirejs) — File and module loader for JavaScript.
+
+> · ​[Zero](https://github.com/sinclairzx81/zero) — 3D graphics rendering pipeline. Implemented in JavaScript. Run in a terminal.
+
+> · ​[xstate-viz](https://github.com/statecharts/xstate-viz) — Visualize state charts.
+
+> · ​[htmr](https://github.com/pveyes/htmr) — Simple and lightweight (< 2kB) HTML string to React element conversion library.
+
+> · ​[react-jsx-parser](https://github.com/TroyAlford/react-jsx-parser) — React component which can parse JSX and output rendered React Components.
+
+> · ​[Static Land](https://github.com/fantasyland/static-land) — Specification for common algebraic structures in JavaScript based on Fantasy Land.
+
+> · ​[sorted-queue](https://github.com/jviide/sorted-queue) — Sorted queue, based on an array-backed binary heap.
+
+> · ​[polendina](https://github.com/rvagg/polendina) — Non-UI browser testing for JavaScript libraries from the command-line.
+
+> · ​[agadoo](https://github.com/Rich-Harris/agadoo) — Check whether a package is tree-shakeable.
+
+> · ​[Fielder](https://github.com/andyrichardson/fielder) — React form library which adapts to change.
+
+> · ​[lemonad](https://github.com/fogus/lemonad) — Functional programming library for JavaScript. An experiment in elegant JS.
+
+> · ​[Mockttp](https://github.com/httptoolkit/mockttp) — Lets you quickly & reliably test HTTP requests & responses in JavaScript, in both Node and browsers.
+
+> · ​[Flowy](https://github.com/alyssaxuu/flowy) — Minimal javascript library to create flowcharts.
+
+> · ​[d3-dag](https://github.com/erikbrinkman/d3-dag) — Layout algorithms for visualizing directed acyclic graphs.
+
+> · ​[renature](https://github.com/FormidableLabs/renature) — Physics-based animation library for React focused on modeling natural world forces.
+
+> · ​[Morphism](https://github.com/nobrainr/morphism) — Do not repeat anymore your objects transformations.
+
+> · ​[Tonic](https://github.com/optoolco/tonic) — Stable, Minimal, Auditable, Build-Tool-Free, Low Profile Component Framework.
+
+> · ​[Quiet.js](https://github.com/quiet/quiet-js) — Transmit data with sound using Web Audio — Javascript binding for libquiet.
+
+> · ​[Bindery](https://github.com/evnbr/bindery) — Library for designing printable books with HTML and CSS.
+
+> · ​[Wretch](https://github.com/elbywan/wretch) — Tiny wrapper built around fetch with an intuitive syntax.
+
+> · ​[Virt.js](https://github.com/arcanis/virtjs) — Free collection of useful standard devices, that can be used to power various engine that makes use of the exposed interfaces.
+
+> · ​[Path-to-RegExp](https://github.com/pillarjs/path-to-regexp) — Turn a path string such as /user/:name into a regular expression.
+
+> · ​[Bacon.js](https://github.com/baconjs/bacon.js) — Functional reactive programming library for TypeScript and JavaScript.
+
+> · ​[GGEditor](https://github.com/alibaba/GGEditor) — Visual graph editor based on G6 and React.
+
+> · ​[Arbor](https://github.com/samizdatco/arbor) — Graph visualization library using web workers and jQuery. ([Web](http://arborjs.org/))
+
+> · ​[fsm-as-promised](https://github.com/vstirbu/fsm-as-promised) — Finite state machine library using ES6 promises.
+
+> · ​[x-spreadsheet](https://github.com/myliang/x-spreadsheet) — Web-based JavaScript（canvas）spreadsheet.
+
+> · ​[IsoCity](https://github.com/victorqribeiro/isocity) — Isometric city builder in JavaScript.
+
+> · ​[car](https://github.com/pakastin/car) — Simple 2d car physics with JavaScript. ([HN](https://news.ycombinator.com/item?id=21927076))
+
+> · ​[Picomatch](https://github.com/micromatch/picomatch) — Blazing fast and accurate glob matcher written in JavaScript.
+
+> · ​[react-isomorphic-data](https://github.com/jackyef/react-isomorphic-data) — Easily fetch data in your React components, with similar APIs to react-apollo.
+
+> · ​[klona](https://github.com/lukeed/klona) — Tiny (228B) and fast utility to “deep clone” Objects, Arrays, Dates, RegExps, and more.
+
+> · ​[ScrollMagic](https://github.com/janpaepke/ScrollMagic) — JavaScript library for magical scroll interactions.
+
+> · ​[GoJS](https://gojs.net/latest/index.html) — JavaScript and TypeScript library for building interactive diagrams and graphs.
+
+> · ​[Rete](https://github.com/retejs/rete) — JavaScript framework for visual programming and creating node editor. ([HN](https://news.ycombinator.com/item?id=22024201))
+
+> · ​[Pre3d](https://github.com/deanm/pre3d) — JavaScript 3d rendering engine.
+
+> · ​[dancer.js](https://github.com/jsantell/dancer.js) — High-level audio API, designed to make sweet visualizations.
+
+> · ​[model-viewer](https://github.com/GoogleWebComponents/model-viewer) — Easily display interactive 3D models on the web and in AR.
+
+> · ​[Spars](https://github.com/TimvanScherpenzeel/spars) — General toolkit for creating interactive web experiences.
+
+> · ​[NeuroJS](https://github.com/janhuenermann/neurojs) — JavaScript deep learning and reinforcement learning library.
+
+> · ​[Hareactive](https://github.com/funkia/hareactive) — Purely functional reactive programming library.
+
+> · ​[Mirage JS](https://github.com/miragejs/miragejs) — Client-side server to develop, test and prototype your JavaScript app.
+
+> · ​[dfa](https://github.com/foliojs/dfa) — State machine compiler with regular expression style syntax.
+
+> · ​[Jtree](https://github.com/treenotation/jtree) — Tree Notation TypeScript/Javascript library.
+
+> · ​[Hydra](https://github.com/ojack/hydra) — Livecoding networked visuals in the browser.
+
+> · ​[p-queue](https://github.com/sindresorhus/p-queue) — Promise queue with concurrency control.
+
+> · ​[gsheets](https://github.com/interactivethings/gsheets) — Get public Google Sheets as plain JavaScript/JSON.
+
+> · ​[alga-ts](https://github.com/YBogomolov/alga-ts) — Algebraic graphs implementation in TypeScript.
+
+> · ​[Chart.js](https://github.com/chartjs/Chart.js) — Simple HTML5 Charts using the tag. ([Awesome](https://github.com/chartjs/awesome))
+
+> · ​[on-change](https://github.com/sindresorhus/on-change) — Watch an object or array for changes.
+
+> · ​[clean-set](https://github.com/fwilkerson/clean-set) — Deep assignment alternative to the object spread operator and Object.assign.
+
+> · ​[Search Query Syntax Parser](https://github.com/nepsilon/search-query-parser)​
+
+> · ​[Uppload](https://github.com/elninotech/uppload) — Better JavaScript image uploader with 30+ plugins.
+
+> · ​[pino](https://github.com/pinojs/pino) — Super fast, all natural JSON logger.
+
+> · ​[Orbit](https://github.com/orbitjs/orbit) — Composable data framework for ambitious web applications.
+
+> · ​[panzoom](https://github.com/anvaka/panzoom) — Universal pan and zoom library (DOM, SVG, Custom).
+
+> · ​[intl-tel-input](https://github.com/jackocnr/intl-tel-input) — JavaScript plugin for entering and validating international telephone numbers.
+
+> · ​[three.js](https://github.com/mrdoob/three.js) — JavaScript 3D library.
+
+> · ​[shortid](https://github.com/dylang/shortid) — Short id generator. Url-friendly. Non-predictable. Cluster-compatible.
+
+> · ​[styx](https://github.com/mariusschulz/styx) — Derives a control flow graph from a JavaScript AST.
+
+> · ​[Crossfilter](https://github.com/crossfilter/crossfilter) — JavaScript library for exploring large multivariate datasets in the browser.
+
+> · ​[SiriWave](https://github.com/kopiro/siriwave) — Apple Siri wave-form replicated in a JS library.
+
+> · ​[Shades](https://github.com/jamesmcnamara/shades) — Lodash-inspired lens-like library for Javascript.
+
+> · ​[mxGraph](https://github.com/jgraph/mxgraph) — Fully client side JavaScript diagramming library.
+
+> · ​[cacache](https://github.com/npm/cacache) — Node.js library for managing local key and content address caches.
+
+> · ​[enhanced-resolve](https://github.com/webpack/enhanced-resolve) — Offers an async require.resolve function. It’s highly configurable.
+
+> · ​[notevil](https://github.com/mmckegg/notevil) — Evalulate javascript like the built-in javascript eval() method but safely.
+
+> · ​[react-digraph](https://github.com/uber/react-digraph) — Library for creating directed graph editors.
+
+> · ​[bent](https://github.com/mikeal/bent) — Functional JS HTTP client (Node.js & Fetch) w/ async await.
+
+> · ​[CLUI](https://github.com/replit/clui) — Collection of JavaScript libraries for building command-line interfaces with context-aware autocomplete.
+
+> · ​[cosha](https://github.com/robinloeffel/cosha) — Colorful shadows for your images.
+
+> · ​[Rambda](https://github.com/selfrefactor/rambda) — Faster and smaller alternative to Ramda.
+
+> · ​[MathJax](https://github.com/mathjax/MathJax) — Open-source JavaScript display engine for LaTeX, MathML, and AsciiMath notation that works in all modern browsers. ([Web](https://www.mathjax.org/)) ([HN](https://news.ycombinator.com/item?id=24741077))
+
+> · ​[Litepicker](https://github.com/wakirin/Litepicker) — Date range picker — lightweight, no dependencies.
+
+> · ​[core-js](https://github.com/zloirock/core-js) — Modular standard library for JavaScript.
+
+> · ​[timeago.js](https://github.com/hustcc/timeago.js) — Nano library (less than 2 kb) used to format datetime with \*\*\* time ago statement. eg: ‘3 hours ago’.
+
+> · ​[Serialize JavaScript](https://github.com/yahoo/serialize-javascript) — Serialize JavaScript to a superset of JSON that includes regular expressions, dates and functions.
+
+> · ​[Tippy.js](https://github.com/atomiks/tippyjs) — Tooltip, popover, dropdown, and menu library.
+
+> · ​[howler.js](https://github.com/goldfire/howler.js) — JavaScript audio library for the modern web.
+
+> · ​[date-fns](https://github.com/date-fns/date-fns) — Modern JavaScript date utility library.
+
+> · ​[Midi](https://github.com/Tonejs/Midi) — Convert MIDI into Tone.js-friendly JSON.
+
+> · ​[face-api.js](https://github.com/justadudewhohacks/face-api.js) — JavaScript API for face detection and face recognition in the browser and nodejs with tensorflow.js.
+
+> · ​[Spotlight](https://github.com/karlisup/spotlight) — Search widget for your web API.
+
+> · ​[Fuse](https://github.com/krisk/Fuse) — Lightweight fuzzy-search, in JavaScript.
+
+> · ​[Xterm.js](https://github.com/xtermjs/xterm.js) — Terminal for the web.
+
+> · ​[Change Case](https://github.com/blakeembrey/change-case) — Convert strings between camelCase, PascalCase, Capital Case, snake_case and more.
+
+> · ​[ChronoGraph](https://github.com/bryntum/chronograph) — Reactive, graph-based, computation engine.
+
+> · ​[Sprotty](https://github.com/eclipse/sprotty) — Diagramming framework for the web.
+
+> · ​[prerender.js](https://github.com/genderev/prerender.js) — Loads pages quickly on any browser.
+
+> · ​[on-finished](https://github.com/jshttp/on-finished) — Execute a callback when a request closes, finishes, or errors.
+
+> · ​[ColorFns](https://github.com/baianat/color-fns) — Modern JavaScript color utilities library.
+
+> · ​[grapheme-splitter](https://github.com/orling/grapheme-splitter) — JavaScript library that breaks strings into their individual user-perceived characters.
+
+> · ​[Web Animations](https://github.com/web-animations/web-animations-js) — JavaScript implementation of the Web Animations API.
+
+> · ​[p-limit](https://github.com/sindresorhus/p-limit) — Run multiple promise-returning & async functions with limited concurrency.
+
+> · ​[Highcharts JS](https://github.com/highcharts/highcharts) — JavaScript charting library based on SVG.
+
+> · ​[μPlot](https://github.com/leeoniya/uPlot) — Small, fast chart for time series, lines, areas, ohlc & bars.
+
+> · ​[Baobab](https://github.com/Yomguithereal/baobab) — JavaScript & TypeScript persistent and optionally immutable data tree with cursors.
+
+> · ​[emoji-regex](https://github.com/mathiasbynens/emoji-regex) — Regular expression to match all Emoji-only symbols as per the Unicode Standard.
+
+> · ​[MerkleTree.js](https://github.com/miguelmota/merkletreejs) — Construct Merkle Trees and verify proofs in JavaScript.
+
+> · ​[Snabbdom](https://github.com/snabbdom/snabbdom) — Virtual DOM library with focus on simplicity, modularity, powerful features and performance.
+
+> · ​[Thwack](https://github.com/donavon/thwack) — Tiny modern data fetching solution.
+
+> · ​[Regenerate](https://github.com/mathiasbynens/regenerate) — Generate JavaScript-compatible regular expressions based on a given set of Unicode symbols or code points.
+
+> · ​[Crank.js](https://github.com/bikeshaving/crank) — Write JSX-driven components with functions, promises and generators. ([Article](https://crank.js.org/blog/introducing-crank)) ([Reddit](https://www.reddit.com/r/reactjs/comments/g2u135/crankjs_introducting_crank/)) ([HN](https://news.ycombinator.com/item?id=22903967))
+
+> · ​[redaxios](https://github.com/developit/redaxios) — Axios API, as an 800 byte Fetch wrapper.
+
+> · ​[Math.js](https://github.com/josdejong/mathjs) — Extensive math library for JavaScript and Node.js.
+
+> · ​[pixelmatch](https://github.com/mapbox/pixelmatch) — Smallest, simplest and fastest JavaScript pixel-level image comparison library.
+
+> · ​[quilt](https://github.com/Shopify/quilt) — Loosely related set of packages for JavaScript / TypeScript projects at Shopify.
+
+> · ​[jsondiffpatch](https://github.com/benjamine/jsondiffpatch) — Diff & patch JavaScript objects.
+
+> · ​[RVal](https://github.com/mweststrate/rval) — Minimalistic transparent reactive programming library.
+
+> · ​[orbit-controls](https://github.com/Jam3/orbit-controls) — Generic controls for orbiting a target in 3D.
+
+> · ​[estree-walker](https://github.com/Rich-Harris/estree-walker) — Traverse an ESTree-compliant AST.
+
+> · ​[Jitsi Meet API library](https://github.com/jitsi/lib-jitsi-meet) — Can use Jitsi Meet API to create Jitsi Meet video conferences with a custom GUI.
+
+> · ​[isomer](https://github.com/jdan/isomer) — Simple isometric graphics library for HTML5 canvas.
+
+> · ​[Schema to Yup schema](https://github.com/kristianmandrup/schema-to-yup)​
+
+> · ​[Mordred](https://github.com/egoist/mordred) — Source data from anywhere, for Next.js, Nuxt.js, Eleventy and many more.
+
+> · ​[ASScroll](https://github.com/ashthornton-gc/asscroll) — Hybrid smooth scroll setup that combines the performance gains of virtual scroll with the reliability of native scroll.
+
+> · ​[Gallery](https://github.com/bendc/gallery) — Light, responsive, and performant JavaScript gallery.
+
+> · ​[Logux Server](https://github.com/logux/server) — Build own Logux server or make proxy between WebSocket and HTTP backend on any language.
+
+> · ​[@expo/results](https://github.com/expo/results) — Efficient, standards-compliant library for representing results of successful or failed operations.
+
+> · ​[Emojibase](https://github.com/milesj/emojibase) — Collection of lightweight, up-to-date, pre-generated, specification compliant, localized emoji JSON datasets, regex patterns, and more.
+
+> · ​serve-favicon — Node.js middleware for serving a favicon.
+
+> · ​[download](https://github.com/kevva/download) — Download and extract files.
+
+> · ​[color2k](https://github.com/ricokahler/color2k) — Color parsing and manipulation lib served in 2kB or less.
+
+> · ​[Sandstorm](https://sandstorm.io/) — Open source platform for self-hosting web apps. ([Code](https://github.com/sandstorm-io/sandstorm))
+
+> · ​[transformation-matrix](https://github.com/chrvadala/transformation-matrix) — JS isomorphic 2D affine transformations written in ES6 syntax.
+
+> · ​[Muuri](https://github.com/haltu/muuri) — JavaScript layout engine that allows you to build all kinds of layouts and make them responsive, sortable, filterable, draggable and/or animated.
+
+> · ​[Split](https://github.com/nathancahill/split) — Unopinionated utilities for resizeable split views.
+
+> · ​[Parallax Engine](https://github.com/wagerfield/parallax) — Reacts to the orientation of a smart device.
+
+> · ​[fastq](https://github.com/mcollina/fastq) — Fast, in memory work queue.
+
+> · ​[ac-colors](https://github.com/vinaypillai/ac-colors) — Reactive JavaScript color library that can freely convert color formats.
+
+> · ​[sonic-boom](https://github.com/mcollina/sonic-boom) — Extremely fast utf8 only stream implementation.
+
+> · ​[Rough Notation](https://github.com/pshihn/rough-notation) — Small JavaScript library to create and animate annotations on a web page. ([HN](https://news.ycombinator.com/item?id=23339244))
+
+> · ​[SqueakJS](https://github.com/codefrau/SqueakJS) — Squeak VM for the Web and Node.js. ([Web](https://squeak.js.org/))
+
+> · ​[fit-textarea](https://github.com/fregante/fit-textarea) — Automatically expand a to fit its content, in a few bytes.
+
+> · ​[NanoPop](https://github.com/Simonwep/nanopop) — Ultra Tiny, Opinionated Positioning Engine. ([Web](https://simonwep.github.io/nanopop/))
+
+> · ​[Angelfire](https://github.com/rish-16/Angelfire) — Lets you quickly build right-click-enabled context menus and drop-down menus for any element on your webpage.
+
+> · ​[csv-parser](https://github.com/mafintosh/csv-parser) — Streaming csv parser inspired by binary-csv that aims to be faster than everyone else.
+
+> · ​[updeep](https://github.com/substantial/updeep) — Easily update nested frozen objects and arrays in a declarative and immutable manner.
+
+> · ​[Hull.js](https://github.com/AndriiHeonia/hull) — JavaScript library that builds concave hull by set of points.
+
+> · ​[StegCloak](https://github.com/KuroLabs/stegcloak) — Hide secrets with invisible characters in plain text securely using passwords.
+
+> · ​[p-min-delay](https://github.com/sindresorhus/p-min-delay) — Delay a promise a minimum amount of time.
+
+> · ​[match-when](https://github.com/FGRibreau/match-when) — Pattern matching for modern JavaScript.
+
+> · ​[NumJs](https://github.com/nicolaspanel/numjs) — Like NumPy, in JavaScript.
+
+> · ​[spect](https://github.com/spectjs/spect) — Reactive aspect-oriented web-framework.
+
+> · ​[js-cid](https://github.com/multiformats/js-cid) — CID implementation in JavaScript.
+
+> · ​[js-ipld-block](https://github.com/ipld/js-ipld-block) — Implementation of the Block data structure in JavaScript.
+
+> · ​[wildcard-api](https://github.com/reframejs/wildcard-api) — Functions as API.
+
+> · ​[bpmn-js](https://github.com/bpmn-io/bpmn-js) — BPMN 2.0 rendering toolkit and web modeler.
+
+> · ​[fit-curve](https://github.com/soswow/fit-curve) — JavaScript implementation of Philip J. Schneider’s “Algorithm for Automatically Fitting Digitized Curves” from the book “Graphics Gems”.
+
+> · ​[clean-deep](https://github.com/nunofgs/clean-deep) — Remove falsy, empty or nullable values from objects.
+
+> · ​[regular-table](https://github.com/jpmorganchase/regular-table) — Regular library, for async and virtual data models.
+
+> · ​[Stimulus](https://github.com/hotwired/stimulus) — Modest JavaScript framework for the HTML you already have. ([Web](https://stimulus.hotwire.dev/))
+
+> · ​[bigpicture.js](https://github.com/josephernest/bigpicture.js/) — Library that allows infinite panning and infinite zooming in HTML pages. ([Web](https://josephernest.github.io/bigpicture.js/index.html))
+
+> · ​[Tragopan](https://github.com/team-video/tragopan) — Minimal dependency-free pan/zoom library. ([HN](https://news.ycombinator.com/item?id=23579102))
+
+> · ​[Deakins](https://github.com/terkelg/deakins) — Small Canvas 2D Camera.
+
+> · ​[Turbolinks](https://github.com/turbolinks/turbolinks) — Makes navigating your web application faster.
+
+> · ​[CindyJS](https://github.com/CindyJS/CindyJS) — Framework to create interactive (mathematical) content for the web. ([Web](https://cindyjs.org/)) ([HN](https://news.ycombinator.com/item?id=23589296))
+
+> · ​[axios](https://github.com/axios/axios) — Promise based HTTP client for the browser and nodeJS.
+
+> · ​[astray](https://github.com/lukeed/astray) — Walk an AST without being led astray.
+
+> · ​[vnopts](https://github.com/ikatyang/vnopts) — Validate and normalize options.
+
+> · ​[canvas confetti](https://github.com/catdad/canvas-confetti) — On-demand confetti gun. ([Docs](https://www.kirilv.com/canvas-confetti/))
+
+> · ​[Graphlib](https://github.com/dagrejs/graphlib) — JavaScript library that provides data structures for undirected and directed multi-graphs along with algorithms that can be used with them.
+
+> · ​[Dagre](https://github.com/dagrejs/dagre) — JavaScript library that makes it easy to lay out directed graphs on the client-side.
+
+> · ​[ecsy](https://github.com/MozillaReality/ecsy) — Highly experimental Entity Component System framework implemented in javascript, aiming to be lightweight, easy to use and with good performance. ([Docs](https://ecsy.io/docs/#/))
+
+> · ​[Object Visualizer](https://github.com/iendeavor/object-visualizer) — Visualize the JSON object to the DOM. ([HN](https://news.ycombinator.com/item?id=23860568))
+
+> · ​[Reach Schema](https://github.com/open-draft/reach-schema) — Functional schema-driven JavaScript object validation library.
+
+> · ​[@cycle/callbags](https://github.com/cyclejs/callbags) — Set of commonly used stream operators implemented as callbags with Typescript and ES modules.
+
+> · ​[umbrella](https://github.com/thi-ng/umbrella/) — Broadly scoped ecosystem & mono-repository of ~135 TypeScript projects for functional, data driven development.
+
+> · ​[HTM](https://github.com/developit/htm) — JSX-like syntax in plain JavaScript — no transpiler necessary.
+
+> · ​[NativeScript](https://github.com/nativescript/nativescript) — Framework for building native iOS and Android apps using JavaScript and CSS.
+
+> · ​[schema-dts](https://github.com/google/schema-dts) — JSON-LD TypeScript types for Schema.org vocabulary.
+
+> · ​[flatpickr](https://github.com/flatpickr/flatpickr) — JS date time picker.
+
+> · ​[superjson](https://github.com/blitz-js/superjson) — Safely serialize JavaScript expressions to a superset of JSON, which includes Dates, BigInts, and more.
+
+> · ​[lazy-collections](https://github.com/RobinMalfait/lazy-collections) — Collection of fast and lazy operations.
+
+> · ​[Perfect Arrows](https://github.com/steveruizok/perfect-arrows) — Set of functions for drawing perfect arrows between points and shapes.
+
+> · ​[Autocomplete.js](https://github.com/algolia/autocomplete.js) — Fast and full-featured autocomplete library.
+
+> · ​[urlcat](https://github.com/balazsbotond/urlcat) — URL builder library for JavaScript. ([Docs](https://urlcat.dev/))
+
+> · ​[Diagram Maker](https://github.com/awslabs/diagram-maker) — Library to display an interactive editor for any graph-like data. ([Docs](https://awslabs.github.io/diagram-maker/)) ([HN](https://news.ycombinator.com/item?id=24688860))
+
+> · ​[js-coroutines](https://github.com/miketalbot/js-coroutines) — 60fps with JavaScript Coroutines for idle processing and animation.
+
+> · ​[Transducist](https://github.com/dphilipson/transducist) — Ergonomic JavaScript/TypeScript transducers for beginners and experts.
+
+> · ​[decimal.js](https://github.com/MikeMcl/decimal.js) — Arbitrary-precision Decimal type for JavaScript.
+
+> · ​[Constant-Time JavaScript](https://github.com/soatok/constant-time-js) — Constant-time algorithms written in TypeScript.
+
+> · ​[SheetJS](https://github.com/SheetJS/sheetjs) — Spreadsheet Data Toolkit. Read, edit, and export spreadsheets. Works in web browsers and servers. ([Web](https://sheetjs.com/))
+
+> · ​[Z](https://github.com/z-pattern-matching/z) — Pattern Matching for JavaScript. ([Web](https://z-pattern-matching.github.io/))
+
+> · ​[Graphology](https://github.com/graphology/graphology) — Robust & multipurpose Graph object for JavaScript & TypeScript. ([Docs](https://graphology.github.io/))
+
+> · ​[weak-napi](https://github.com/node-ffi-napi/weak-napi) — Make weak references to JavaScript Objects.
+
+> · ​[nestie](https://github.com/lukeed/nestie) — Tiny (211B) and fast utility to expand a flattened object.
+
+> · ​[Mock.js](https://github.com/nuysoft/Mock) — Simulation data generator.
+
+> · ​[Detect features](https://github.com/TimvanScherpenzeel/detect-features) — Detect and report browser and hardware features.
+
+> · ​[JSZip](https://github.com/Stuk/jszip) — Create, read and edit .zip files with JavaScript.
+
+> · ​[Classnames](https://github.com/JedWatson/classnames) — Simple javascript utility for conditionally joining classNames together.
+
+> · ​[cx](https://github.com/joe-bell/cx) — Concatenate your classes (with shortcuts).
+
+> · ​[Defer](https://github.com/borderless/defer) — Tiny, type-safe, JavaScript-native defer implementation.
+
+> · ​[freshie](https://github.com/lukeed/freshie) — Fresh take on building universal applications with support for pluggable frontends and backends.
+
+> · ​[Luckysheet](https://github.com/mengshukeji/Luckysheet) — Online spreadsheet like excel that is powerful, simple to configure, and completely open source. ([Docs](https://mengshukeji.github.io/LuckysheetDocs/guide/))
+
+> · ​[noUiSlider](https://github.com/leongersen/noUiSlider) — Lightweight JavaScript range slider.
+
+> · ​[QRCode.js](https://github.com/davidshimjs/qrcodejs) — Cross-browser QRCode generator for JavaScript. ([Web](https://davidshimjs.github.io/qrcodejs/))
+
+> · ​[HyperScript](https://github.com/hyperhype/hyperscript) — Create HyperText with JavaScript, on client or server.
+
+> · ​[hyperscript-helpers](https://github.com/ohanhi/hyperscript-helpers) — Terse syntax for hyperscript.
+
+> · ​[EnlighterJS](https://github.com/EnlighterJS/EnlighterJS) — Open source syntax highlighter written in pure javascript.
+
+> · ​[eslisp](https://github.com/anko/eslisp) — S-expression syntax for JavaScript, with Lisp-like hygienic macros. Minimal core, maximally customisable.
+
+> · ​[Smoldash](https://github.com/marvinhagemeister/smoldash) — Tiny lodash alternative built for the modern web.
+
+> · ​[TypewriterJS](https://github.com/tameemsafi/typewriterjs) — Simple yet powerful native javascript plugin for a cool typewriter effect.
+
+> · ​[sse.js](https://github.com/mpetazzoni/sse.js) — Flexible Server Side Events source for JavaScript.
+
+> · ​[Arkit](https://github.com/dyatko/arkit) — Visualises JavaScript, TypeScript and Flow codebases as meaningful and committable architecture diagrams. ([Web](https://arkit.pro/))
+
+> · ​[jsii](https://github.com/aws/jsii) — Allows code in any language to naturally interact with JavaScript classes.
+
+> · ​[proxy-memoize](https://github.com/dai-shi/proxy-memoize) — Intuitive magical memoization library with Proxy and WeakMap. ([Tweet](https://twitter.com/dai_shi/status/1321089602623557639))
+
+> · ​[CosmJS](https://github.com/cosmos/cosmjs) — Modular library consisting of multiple packages to power web experiences.
+
+> · ​[Arwes](https://github.com/arwes/arwes) — Futuristic Sci-Fi and Cyberpunk Graphical User Interface Framework for Web Apps. ([Web](https://arwes.dev/))
+
+> · ​[psl (Public Suffix List)](https://github.com/lupomontero/psl) — JavaScript domain name parser based on the Public Suffix List.
+
+> · ​[invariant-packages](https://github.com/apollographql/invariant-packages) — Packages for working with invariant(condition, message) assertions.
+
+> · ​[evt](https://github.com/garronej/evt) — EventEmitter’s typesafe replacement.
+
+> · ​[webscan](https://github.com/samyk/webscan) — Browser-based network scanner & local-IP detection.
+
+> · ​[Pill](https://github.com/rumkin/pill) — Add dynamic content loading to static sites with only 1 KiB of JS.
+
+> · ​[fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal) — Fastest deep equal with ES6 Map, Set and Typed arrays support.
+
+> · ​[preview-card](https://github.com/egoist/preview-card) — Customizable social media preview image.
+
+> · ​[egjs-flicking](https://github.com/naver/egjs-flicking) — Easy-to-use and performant infinite carousel.
+
+> · ​[SSE-Z](https://github.com/contrawork/sse-z) — Slim, easy-to-use wrapper around EventSource.
+
+> · ​[DefinitelyExported](https://github.com/snowpackjs/DefinitelyExported) — Community-defined export maps for popular npm packages.
+
+> · ​[jsdiff](https://github.com/kpdecker/jsdiff) — JavaScript text differencing implementation.
+
+> · ​[HyperFormula](https://github.com/handsontable/hyperformula) — Open source, spreadsheet-like calculation engine.
+
+> · ​[fast-json-stringify](https://github.com/fastify/fast-json-stringify) — Significantly faster than JSON.stringify() for small payloads.
+
+> · ​[isbot](https://github.com/omrilotan/isbot) — JavaScript module that detects bots/crawlers/spiders via the user agent.
+
+> · ​[valtio](https://github.com/pmndrs/valtio) — Makes proxy-state simple.
+
+> · ​[pica](https://github.com/nodeca/pica) — High quality image resize in browser.
+
+> · ​[Planton](https://github.com/gajus/planton) — Database-agnostic task scheduler.
+
+> · ​[mime-types](https://github.com/jshttp/mime-types) — JavaScript content-type utility.
+
+> · ​[match-sorter](https://github.com/kentcdodds/match-sorter) — Simple, expected, and deterministic best-match sorting of an array in JavaScript.
+
+> · ​[Fetch Event Source](https://github.com/Azure/fetch-event-source) — Better API for making Event Source requests, with all the features of fetch().
+
+> · ​[rafz](https://github.com/pmndrs/rafz) — Coordinate requestAnimationFrame calls across your app and/or libraries.
+
+> · ​[p-state](https://github.com/sindresorhus/p-state) — Inspect the state of a promise.
+
+> · ​[v86](https://github.com/copy/v86) — x86 virtualization in JavaScript, running in your browser and NodeJS. ([Web](https://copy.sh/v86/))
+
+> · ​[Notyf](https://github.com/caroso1222/notyf) — Minimalistic, responsive, vanilla JavaScript library to show toast notifications.
+
+> · ​[Moveable](https://github.com/daybrush/moveable) — Draggable, Resizable, Scalable, Rotatable, Warpable, Pinchable, Groupable, Snappable.
+
+> · ​[Execa](https://github.com/sindresorhus/execa) — Process execution for humans.
+
+> · ​[quick-lru](https://github.com/sindresorhus/quick-lru) — Simple “Least Recently Used” (LRU) cache.
+
+> · ​[Deepdash](https://github.com/YuriGor/deepdash) — Tree traversal library written in Underscore/Lodash fashion. ([Docs](https://deepdash.io/))
+
+> · ​[Nano Delay](https://github.com/ai/nanodelay) — Tiny (25 bytes) Promise wrapper around setTimeout.
+
+> · ​[ES Module Lexer](https://github.com/guybedford/es-module-lexer) — Low-overhead lexer dedicated to ES module parsing for fast analysis.
+
+> · ​[keez](https://github.com/kripod/keez) — Frictionless hotkey handling for browsers.
+
+> · ​[Zet](https://github.com/terkelg/zet) — Set() as it should be.
+
+> · ​[Ketting](https://github.com/badgateway/ketting) — Hypermedia client for JavaScript.
+
+> · ​[yocto-queue](https://github.com/sindresorhus/yocto-queue) — Tiny queue data structure.
+
+> · ​[Nano JSX](https://github.com/nanojsx/nano) — Lightweight 1kB JSX library. ([Web](https://nanojsx.github.io/))
+
+> · ​[Effects.js](https://github.com/nythrox/effects.js) — Algebraic effects in javascript with scoped handlers, multishot delimited continuations, stack safety and do notation.
+
+> · ​[flatten-js](https://github.com/alexbol99/flatten-js) — JavaScript library for 2d geometry.
+
+> · ​[is-retry-allowed](https://github.com/sindresorhus/is-retry-allowed) — Check whether a request can be retried based on the error.code.
+
+> · ​[backfill](https://github.com/microsoft/backfill) — JavaScript caching library for reducing build time.
+
+> · ​[S-Libs](https://github.com/simontonsoftware/s-libs) — Collection of libraries for any of JS, RxJS, or Angular.
+
+> · ​[watchpack](https://github.com/webpack/watchpack) — Wrapper library for directory and file watching.
+
+> · ​[async-tag](https://github.com/WebReflection/async-tag) — Resolves template literals tag values before applying a generic tag.
+
+> · ​[serialize-error](https://github.com/sindresorhus/serialize-error) — Serialize/deserialize an error into a plain object.
+
+> · ​[errorstacks](https://github.com/marvinhagemeister/errorstacks) — Tiny library to parse error stack traces.
+
+> · ​[Ape-ECS](https://github.com/fritzy/ape-ecs) — Entity-Component-System library for JavaScript.
+
+> · ​[rrule.js](https://github.com/jakubroztocil/rrule) — JavaScript library for working with recurrence rules for calendar dates as defined in the iCalendar RFC and more. ([Demo](https://jakubroztocil.github.io/rrule/))
+
+> · ​[scroller](https://github.com/rdmurphy/scroller) — Super-tiny library for your scrollytelling needs.
+
+> · ​[Isomorphic DOMPurify](https://github.com/kkomelin/isomorphic-dompurify) — Makes it possible to use DOMPurify on server and client in the same way.
+
+> · ​[navaid](https://github.com/lukeed/navaid) — Navigation aid (aka, router) for the browser in 850 bytes.
+
+> · ​[glob-to-regexp](https://github.com/fitzgen/glob-to-regexp) — Convert a glob to a regular expression.
+
+> · ​[cmap](https://github.com/ionstage/cmap) — Interactive visualization library for concept map.
+
+> · ​[lezer-tree](https://github.com/lezer-parser/lezer-tree) — Incremental GLR parser intended for use in an editor or similar system.
+
+> · ​[matchit](https://github.com/lukeed/matchit) — Quickly parse & match URLs.
+
+> · ​[acorn](https://github.com/acornjs/acorn) — Tiny, fast JavaScript parser, written completely in JavaScript.
+
+> · ​[jsesc](https://github.com/mathiasbynens/jsesc) — Given some data, jsesc returns the shortest possible stringified & ASCII-safe representation of that data.
+
+> · ​[fastjson](https://github.com/qntm/fastjson) — Single-tweet, standards-compliant, high-performance JSON stack.
+
+> · ​[grfn](https://github.com/TomerAberbach/grfn) — Tiny (~400B) utility that executes a dependency graph of async functions as concurrently as possible.
+
+> · ​[Nunjucks](https://github.com/mozilla/nunjucks) — Powerful templating engine with inheritance, asynchronous control, and more. ([Web](https://mozilla.github.io/nunjucks/))
+
+> · ​[Behavior3JS](https://github.com/behavior3/behavior3js) — Structures and algorithms that assist you in the task of creating intelligent agents for your game or application.
+
+> · ​[qs](https://github.com/ljharb/qs) — Querystring parser with nesting support.
+
+> · ​[Exifer](https://github.com/terkelg/exifer) — Small module that read JPEG/TIFF meta-data.
+
+> · ​[jsVideoUrlParser](https://github.com/Zod-/jsVideoUrlParser) — JavaScript parser to extract information like provider, channel, id, start time from YouTube, Vimeo, Dailymotion, Twitch,… urls.
+
+> · ​[TypeDI](https://github.com/typestack/typedi) — Dependency injection tool for TypeScript and JavaScript.
+
+> · ​[ibridge](https://github.com/franleplant/ibridge) — Tiny, promise based, type safe library for easy, bidirectional and secure iframe communication.
+
+> · ​[Monio](https://github.com/getify/monio) — Async-capable IO monad for JS.
+
+> · ​[Total.js](https://www.totaljs.com/) — Excellent and stable server-side Node.js framework, client-side library for creating web applications with more than 230 UI components for free.
+
+> · ​[memoize-one](https://github.com/alexreardon/memoize-one) — Memoization library which only remembers the latest invocation.
+
+> · ​[pjson](https://github.com/tidwall/pjson) — JSON stream parser for Go.
+
+> · ​[InternMap](https://github.com/mbostock/internmap) — Map and Set with automatic key interning.
+
+> · ​[geometry-processing-js](https://github.com/GeometryCollective/geometry-processing-js) — Fast, general-purpose framework for geometry processing on the web.
+
+> · ​[Iterplus](https://github.com/Aplet123/iterplus) — Best of Rust/Haskell/Python iterators in JavaScript.
+
+> · ​[SmolScroll](https://github.com/smolscrolljs/smolscroll) — Tiny, flexible scroll listener with React support.
+
+> · ​[Observable parser](https://github.com/observablehq/parser)​
+
+> · ​[Robot](https://github.com/matthewp/robot) — Functional, immutable Finite State Machine library. ([Docs](https://thisrobot.life/))
+
+> · ​[Enmap](https://github.com/eslachance/enmap) — Enhanced Map structure with additional utility methods.
+
+> · ​[Honeycomb](https://github.com/flauwekeul/honeycomb) — Create hex grids easily, in node or the browser.
+
+> · ​[chunkify](https://github.com/sindresorhus/chunkify) — Split an iterable into evenly sized chunks.
+
+> · ​[wobble](https://github.com/skevy/wobble) — Tiny spring physics micro-library that models a damped harmonic oscillator.
+
+> · ​[tmp-cache](https://github.com/lukeed/tmp-cache) — Least-recently-used cache in 35 lines of code.
+
+> · ​[static-eval](https://github.com/browserify/static-eval) — Evaluate statically-analyzable expressions.
+
+> · ​[Sparse Octree](https://github.com/vanruesc/sparse-octree) — Sparse, pointer-based octree data structure.
+
+> · ​[Signature Pad](https://github.com/szimek/signature_pad) — JavaScript library for drawing smooth signatures.
+
+> · ​[dom-to-image-retina](https://github.com/egoist/dom-to-image-retina) — dom-to-image but generates high-resolution images.
+
+> · ​[loglevel](https://github.com/pimterry/loglevel) — Minimal lightweight logging for JavaScript, adding reliable log level methods to wrap any available console.log methods.
+
+> · ​[Perfect Freehand](https://github.com/steveruizok/perfect-freehand) — Draw perfect freehand lines.
+
+> · ​[Alo](https://github.com/alojs/alo) — Full-fledged state management. ([Docs](http://www.alojs.com/index.html))
+
+> · ​[Form-Data](https://github.com/form-data/form-data) — Library to create readable “multipart/form-data” streams. Can be used to submit forms and file uploads to other web applications.
+
+> · ​[conf](https://github.com/sindresorhus/conf) — Simple config handling for your app or module.
+
+> · ​[gifenc](https://github.com/mattdesl/gifenc) — Fast and lightweight pure-JavaScript GIF encoder.
+
+> · ​[tldts](https://github.com/remusao/tldts) — Blazing Fast URL Parsing.
+
+> · ​[Barba.js](https://github.com/barbajs/barba) — Easy-to-use library that helps you create fluid and smooth transitions between your website’s pages.
+
+> · ​[Shuffle.js](https://github.com/Vestride/Shuffle) — Categorize, sort, and filter a responsive grid of items. ([Web](https://vestride.github.io/Shuffle/))
+
+> · ​[stdlib](https://github.com/stdlib-js/stdlib) — Standard library for JavaScript and Node.js. ([Web](https://stdlib.io/))
+
+> · ​[gensync](https://github.com/loganfsmyth/gensync) — Allows users to use generators in order to write common functions that can be both sync or async.
+
+> · ​[monet.js](https://github.com/monet/monet.js) — Monadic types library for JavaScript.
+
+> · ​[VivaGraph](https://github.com/anvaka/VivaGraphJS) — Graph drawing library for JavaScript.
+
+> · ​[Crochet](https://github.com/qteatime/crochet) — Small engine for story-driven games.
+
+> · ​[diary](https://github.com/maraisr/diary) — Zero-dependency, fast logging library for both Node and Browser.
+
+> · ​[tinydate](https://github.com/lukeed/tinydate) — Tiny reusable date formatter.
+
+> · ​[FingerprintJS](https://github.com/fingerprintjs/fingerprintjs) — Browser fingerprinting library with the highest accuracy and stability.
+
+> · ​[Antiutils](https://github.com/ivan7237d/antiutils) — TypeScript/JavaScript utilities for those who don’t like utilities.
+
+‌
+
+### General:
+
+**· ​**[**NPM**](https://www.npmjs.com/) **— Node package manager registry.**
+
+**· ​**[**Awesome WebAudio**](https://github.com/notthetup/awesome-webaudio)**​**
+
+**· ​**[**Awesome XState**](https://github.com/darrylhebbes/awesome_xstate)**​**
+
+**· ​**[**Moiva.io**](https://moiva.io/) **— Measure and compare JavaScript libraries side by side.**
+
+**· ​**[**Scarf**](https://about.scarf.sh/) **— Installation analytics for your npm package. (**[**Code**](https://github.com/scarf-sh/scarf-js)**)**
+
+If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)[https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
+
+Or checkout my personal resource site:
+
+[https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
+
+#### Everyone’s seen the ‘Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
+
+![](https://cdn-images-1.medium.com/max/800/1*3pwY-HRi2sjgBBJ0eISwqw.png)
+
+> [**https://github.com/topics/awesome**](https://github.com/topics/awesome)
+
+-   [JavaScript. The Core](http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/)
+-   [Modern JavaScript Tutorial](https://javascript.info/) ([HN](https://news.ycombinator.com/item?id=25333350))
+-   [You don’t know JS books](https://github.com/getify/You-Dont-Know-JS)
+-   [JS in 14 minutes](https://jgthms.com/javascript-in-14-minutes/)
+-   [2017 JavaScript Rising Stars](https://risingstars.js.org/2017/en/)
+-   [ES6 features](https://github.com/lukehoban/es6features)
+-   [The Definitive Guide to Object-Oriented JavaScript](https://www.youtube.com/watch?v=PMfcsYzj-9M) — Amazing video to understand JS inheritance & objects.
+-   [JavaScript: The Core](http://j//dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/)
+-   [JavaScript is Good, Actually](https://ashfurrow.com/blog/javascript-is-good-actually/) ([HN](https://news.ycombinator.com/item?id=17079952))
+-   [JavaScript Algorithms](https://github.com/trekhleb/javascript-algorithms) — Algorithms and data structures implemented in JavaScript with explanations and links to further readings.
+-   [EC6 Features](http://es6-features.org/)
+-   [Clean Code concepts adapted for JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
+-   [Ask HN: “Expert Level” JavaScript questions?](https://news.ycombinator.com/item?id=17324538)
+-   [Benefits of prototypal inheritance over classical?](https://stackoverflow.com/questions/2800964/benefits-of-prototypal-inheritance-over-classical/16872315#16872315)
+-   [Pax](https://github.com/nathan/pax) — Fastest JavaScript bundler in the galaxy.
+-   [Philip Roberts: What the heck is the event loop anyway? (2014)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+-   [Jake Archibald: In The Loop (2018)](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
+-   [Yonatan Kra — The Event Loop and your code (2020)](https://www.youtube.com/watch?v=Nqx3rtv_dko)
+-   [BundlePhobia](https://bundlephobia.com/) — Find the cost of adding a npm package to your bundle. ([Code](https://github.com/pastelsky/bundlephobia)) ([Tweet](https://twitter.com/jsunderhood/status/1318204704988561409))
+-   [An Overview of JavaScript Testing in 2018](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3)
+-   [Introduction to ES6 Promises — The Four Functions You Need To Avoid Callback Hell](http://jamesknelson.com/grokking-es6-promises-the-four-functions-you-need-to-avoid-callback-hell/)
+-   [Nice ES6/Promises/React cheat sheets](http://jamesknelson.com/thank-you-for-subscribing/)
+-   [JavaScript Visualizer](https://tylermcginnis.com/javascript-visualizer/) — Tool for visualizing Execution Context, Hoisting, Closures, and Scopes in JavaScript.
+-   [WallabyJS](https://wallabyjs.com/docs/) — Integrated continuous testing tool for JavaScript.
+-   [ES6 features](http://es6-features.org/)
+-   [The State of JavaScript — The State of the Web (2018)](https://www.youtube.com/watch?v=i5R7giitymk)
+-   [A Quick Tour Of ES6 (Or, The Bits You’ll Actually Use)](http://jamesknelson.com/es6-the-bits-youll-actually-use/)
+-   [JavaScript on the Desktop, Fast and Slow (2018)](https://medium.com/@felixrieseberg/javascript-on-the-desktop-fast-and-slow-2b744dfb8b55)
+-   [ES6 for humans](https://github.com/metagrover/ES6-for-humans)
+-   [33 concepts every JavaScript developer should know](https://github.com/leonardomso/33-js-concepts)
+-   [Design Patterns JS](https://github.com/fbeline/Design-Patterns-JS) — All the 23 (GoF) design patterns implemented in JavaScript.
+-   [Standard Library Proposal](https://github.com/tc39/proposal-javascript-standard-library)
+-   [30 seconds of code](https://github.com/30-seconds/30-seconds-of-code) — Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.
+-   [puppet-run](https://github.com/andywer/puppet-run) — Run anything JavaScript in a headless Chrome from your command line.
+-   [Yalc](https://github.com/whitecolor/yalc) — Better workflow than npm | yarn link for package authors.
+-   [ECMAScript proposals](https://github.com/tc39/proposals)
+-   [FromJS](https://github.com/mattzeunert/fromjs) — See where each character on the screen came from in code.
+-   [RunJS](https://projects.lukehaas.me/runjs/) — Scratchpad for your thoughts, a playground for your creativity.
+-   [Pragmatic, balanced FP in JavaScript book](https://github.com/getify/Functional-Light-JS)
+-   [Pack](https://github.com/pikapkg/pack) — Helps you build amazing packages without the hassle.
+-   [Learning JavaScript (2016)](https://mafinto.sh/blog/learning-javascript.html)
+-   [@pika/web](https://github.com/pikapkg/web) — Install npm dependencies that run directly in the browser. No Browserify, Webpack or import maps required.
+-   [Sucrase](https://github.com/alangpierce/sucrase) — Super-fast alternative to Babel for when you can target modern JS runtimes.
+-   [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+-   [JavaScript Developer’s Reading List](https://github.com/twhite96/js-dev-reads) — List of hand-picked books and articles for JavaScript developers.
+-   [Promisees](https://github.com/bevacqua/promisees) — Promise visualization playground for the adventurous.
+-   [promise-fun](https://github.com/sindresorhus/promise-fun) — Promise packages, patterns, chat, and tutorials.
+-   [Perflink](https://github.com/lukejacksonn/perflink) — JavaScript performance benchmarks that you can share via URL.
+-   [Mostly adequate guide to FP (in JavaScript)](https://mostly-adequate.gitbooks.io/mostly-adequate-guide/) ([Code](https://github.com/MostlyAdequate/mostly-adequate-guide)) ([HN](https://news.ycombinator.com/item?id=22654135))
+-   [Volta](https://github.com/volta-cli/volta) — JavaScript Launcher.
+-   [Modern JS Cheat Sheet](https://github.com/mbeaudru/modern-js-cheatsheet)
+-   [Fastpack](https://fastpack.sh/) — Pack JavaScript fast & easy.
+-   [Reference implementation for the JavaScript Binary AST format](https://github.com/binast/binjs-ref)
+-   [Babel Handbook](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/README.md)
+-   [List of (Advanced) JavaScript Questions](https://github.com/lydiahallie/javascript-questions)
+-   [Faster script loading with BinaryAST? (2019)](https://blog.cloudflare.com/binary-ast/)
+-   [recast](https://github.com/benjamn/recast) — JavaScript syntax tree transformer, nondestructive pretty-printer, and automatic source map generator.
+-   [Madge](https://github.com/pahen/madge) — Create graphs from your CommonJS, AMD or ES6 module dependencies.
+-   [npmfs](https://npmfs.com/) — JavaScript Package Inspector.
+-   [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land) — Specification for interoperability of common algebraic structures in JavaScript.
+-   [Meriyah](https://github.com/meriyah/meriyah) — 100% compliant, self-hosted javascript parser with high focus on both performance and stability.
+-   [The cost of JavaScript in 2019](https://news.ycombinator.com/item?id=20317736) ([HN](https://news.ycombinator.com/item?id=20317736))
+-   [Poi](https://github.com/egoist/poi) — Zero-config bundler for JavaScript applications.
+-   [Advanced JavaScript Course](https://tylermcginnis.com/courses/advanced-javascript)
+-   [Jay](https://github.com/nikersify/jay) — Supercharged JavaScript REPL.
+-   [Data Structures and Algorithms in JavaScript](https://github.com/amejiarosario/dsa.js-data-structures-algorithms-javascript)
+-   [JavaScript & Node.js Testing Best Practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
+-   [Just](https://github.com/microsoft/just) — Library that organizes build tasks for your JS projects.
+-   [ECMAScript (JS) specification](https://tc39.es/ecma262/) ([Code](https://github.com/tc39/ecma262)) ([Web version 2](https://read262.netlify.com/))
+-   [André Staltz: Two Fundamental Abstractions — Uphill Conf 2018](https://www.youtube.com/watch?v=fdol03pcvMA)
+-   [JSMonday](http://www.jsmonday.dev/) — Weekly JS inspiration.
+-   [Chevrotain](https://github.com/SAP/chevrotain) — Parser Building Toolkit for JavaScript.
+-   [Comprehensive list of new ES features](https://github.com/daumann/ECMAScript-new-features-list)
+-   [Exploring JS: JavaScript books for programmers](https://exploringjs.com/)
+-   [JavaScript for Impatient Programmers book](https://exploringjs.com/impatient-js/toc.html) ([HN](https://news.ycombinator.com/item?id=23689280))
+-   [Exploring ES2018 and ES2019](https://exploringjs.com/es2018-es2019/toc.html)
+-   [TC39 Meeting Notes](https://tc39.es/tc39-notes/)
+-   [Mesh Spreadsheet](https://github.com/chrispsn/mesh/) — Visualise data and edit JavaScript code using a spreadsheet interface. ([Web](http://mesh-spreadsheet.com/))
+-   [Immutable JavaScript Data Structures with Immer (2019)](https://egghead.io/courses/immutable-javascript-data-structures-with-immer)
+-   [Immutability is Changing — From Immutable.js to Immer (2019)](https://www.youtube.com/watch?v=bFuRvcAEiHg)
+-   [Tenko](https://github.com/pvdz/tenko) — 100% spec compliant ES2020 JavaScript parser written in JS.
+-   [code-red](https://github.com/Rich-Harris/code-red) — Experimental toolkit for writing x-to-JavaScript compilers.
+-   [Reduce in JavaScript (2019)](https://yuanchuan.dev/2019/03/04/the-reduce-function.html)
+-   [Pika](https://www.pika.dev/registry) — New kind of package registry for the modern web.
+-   [Brian Holt: Futurist Code Bases: Integrating JS of the Future Today (2019)](https://www.youtube.com/watch?v=lQOWTXanWwU)
+-   [JS TLDR](https://js-tldr.info/) — Zen mode web-documentation. ([Code](https://github.com/RusinovAnton/js-tldr)) ([Article](https://medium.com/@rusinovantondev/js-tl-dr-zen-mode-web-docs-for-javascript-developers-cf45e0143a09))
+-   [Currying Functions in ES6 (2016)](https://sunjay.dev/2016/08/13/es6-currying)
+-   [Manipulating AST with JavaScript (2019)](https://lihautan.com/manipulating-ast-with-javascript/)
+-   [Is JavaScript Statically or Dynamically Scoped? (2018)](https://www.cs.cornell.edu/~asampson/blog/scope.html)
+-   [Fixed-point combinators in JavaScript: Memoizing recursive functions](http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/)
+-   [runpkg](https://github.com/FormidableLabs/runpkg) — Lets you navigate any JavaScript package on npm thanks to unpkg.com.
+-   [What is this in JavaScript?](https://www.madebymike.com.au/writing/this-in-javascript/)
+-   [Beginner JavaScript course](https://beginnerjavascript.com/)
+-   [ES6 Cheat Sheet](https://github.com/DrkSephy/es6-cheatsheet)
+-   [JavaScript Visualized: Event Loop (2019)](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
+-   [JavaScript Visualized: Scope (Chain) (2019)](https://dev.to/lydiahallie/javascript-visualized-scope-chain-13pd)
+-   [JavaScript Visualized: Hoisting (2019)](https://dev.to/lydiahallie/javascript-visualized-hoisting-478h)
+-   [Fuzzilli](https://github.com/googleprojectzero/fuzzilli) — JavaScript Engine Fuzzer.
+-   [Deep JavaScript: Theory and techniques (2019)](https://exploringjs.com/deep-js/) ([HN](https://news.ycombinator.com/item?id=23552180))
+-   [JavaScript Adaption of Structure and Interpretation of Computer Programs](https://sicp.comp.nus.edu.sg/) ([HN](https://news.ycombinator.com/item?id=21822903)) ([Code](https://github.com/source-academy/sicp))
+-   [State of JS 2019](https://2019.stateofjs.com/) ([HN](https://news.ycombinator.com/item?id=21831747))
+-   [Cancelation without Breaking a Promise (2016)](https://medium.com/hackernoon/considering-cancelation-a96e0f3c2298) — Reflecting on what was so tricky about cancelable Promises, embracing functional purity as a solution.
+-   [ECMAScript Discussion Archives](https://esdiscuss.org/) ([Code](https://github.com/esdiscuss/esdiscuss.org))
+-   [What Is JavaScript Made Of? (2019)](https://overreacted.io/what-is-javascript-made-of/)
+-   [JavaScript Visualized: Prototypal Inheritance (2020)](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co)
+-   [Y: The Most Beautiful Idea in Computer Science explained in JavaScript (2018)](https://lucasfcosta.com/2018/05/20/Y-The-Most-Beautiful-Idea-in-Computer-Science.html)
+-   [2019 JavaScript Rising Stars](https://risingstars.js.org/2019/en/) ([Code](https://github.com/bestofjs/javascript-risingstars))
+-   [Best of JS](https://bestofjs.org/) — Best of JavaScript, HTML and CSS. ([Code](https://github.com/bestofjs/bestofjs-webui)) ([Web Timeline](https://bestofjs.org/timeline)) ([HN](https://news.ycombinator.com/item?id=24142462))
+-   [omggif](https://github.com/deanm/omggif) — JavaScript implementation of a GIF 89a encoder and decoder.
+-   [Sampling bias, FDR, and The State of JS (2020)](https://davidea.st/articles/sampling-bias-fdr-state-of-js)
+-   [JavaScript Visualized: Generators and Iterators (2020)](https://dev.to/lydiahallie/javascript-visualized-generators-and-iterators-e36)
+-   [jsep](https://github.com/soney/jsep) — JavaScript Expression Parser.
+-   [JS Tips & Tidbits](https://github.com/nas5w/javascript-tips-and-tidbits)
+-   [I have been underestimating JS (2020)](https://adlrocha.substack.com/p/adlrocha-i-have-been-underestimating) — Understanding V8 and NodeJS Steams.
+-   [Taming the asynchronous beast with CSP channels in JavaScript (2014)](https://jlongster.com/Taming-the-Asynchronous-Beast-with-CSP-in-JavaScript)
+-   [Debounce vs Throttle: Definitive Visual Guide (2019)](https://redd.one/blog/debounce-vs-throttle)
+-   [GistLink](https://gist.link/) — Code apps or components. See them render as you type. Share your creations via URL.
+-   [source-map-explorer](https://github.com/danvk/source-map-explorer) — Analyze and debug space usage through source maps.
+-   [Diglett](https://github.com/oblador/diglett) — Keep your JS project lean by detecting duplicate dependencies.
+-   [Learn Vanilla JS Roadmap](https://learnvanillajs.com/roadmap/)
+-   [Learn JavaScript](https://learnjavascript.online/) — Easiest way to learn & practice modern JavaScript step by step.
+-   [Mini projects built with HTML5, CSS & JavaScript. No frameworks or libraries](https://github.com/bradtraversy/vanillawebprojects) ([HN](https://news.ycombinator.com/item?id=22231963))
+-   [IxJS](https://github.com/ReactiveX/IxJS) — Interactive Extensions for JavaScript.
+-   [Renovate](https://github.com/renovatebot/renovate) — Universal dependency update tool that fits into your workflows.
+-   [The ECMAScript Ecosystem (2020)](https://dev.to/laurieontech/the-ecmascript-ecosystem-2e13)
+-   [esbuild](https://github.com/evanw/esbuild/) — Extremely fast JavaScript bundler and minifier written in Go. ([HN](https://news.ycombinator.com/item?id=22335707)) ([Architecture](https://github.com/evanw/esbuild/blob/master/docs/architecture.md)) ([serverless-esbuild](https://github.com/floydspace/serverless-esbuild)) ([Awesome](https://github.com/egoist/awesome-esbuild)) ([Web](https://esbuild.github.io/)) ([Esbuild plugins](https://github.com/remorses/esbuild-plugins))
+-   [Community plugins for esbuild](https://github.com/esbuild/community-plugins)
+-   [Why Is Esbuild Fast?](https://esbuild.github.io/faq/#why-is-esbuild-fast) ([HN](https://news.ycombinator.com/item?id=26154509))
+-   [bundless](https://github.com/remorses/bundless) — Dev server and bundler for esbuild. ([Web](https://bundless.vercel.app/))
+-   [esbuild-register](https://github.com/egoist/esbuild-register) — Transpile JSX, TypeScript and esnext features on the fly with esbuild.
+-   [JavaScript: Understanding the Weird Parts course (2015)](https://www.udemy.com/course/understand-javascript/)
+-   [Fastpack](https://github.com/fastpack/fastpack) — Pack JS code into a single bundle fast & easy.
+-   [guijs](https://github.com/Akryum/guijs) — App that helps you manage JS projects with a Graphical User Interface.
+-   [Rome Toolchain](https://github.com/rome/tools) — Linter, compiler, bundler, and more for JavaScript, TypeScript, HTML, Markdown, and CSS. ([Web](https://rome.tools/)) ([HN](https://news.ycombinator.com/item?id=22430682)) ([HN 2](https://news.ycombinator.com/item?id=24094377)) ([HN 3](https://news.ycombinator.com/item?id=24882413))
+-   [Bolt](https://github.com/boltpkg/bolt) — Super-powered JavaScript project management.
+-   [tiny-js](https://github.com/gfwilliams/tiny-js) — Aims to be an extremely simple (~2000 line) JavaScript interpreter.
+-   [JavaScript and TypeScript tooling overview](https://github.com/slikts/tooling)
+-   [Seafox](https://github.com/KFlash/seafox) — Blazing fast 100% spec compliant, self-hosted javascript parser written in Typescript.
+-   [Awesome JavaScript Learning](https://github.com/micromata/awesome-javascript-learning)
+-   [Awesome Promises](https://github.com/wbinnssmith/awesome-promises)
+-   [jscodeshift](https://github.com/facebook/jscodeshift) — Toolkit for running codemods over multiple JavaScript or TypeScript files.
+-   [React Workout: Reducers with Cassidy Williams (2020)](https://www.youtube.com/watch?v=sf4spiPynBE)
+-   [JavaScript: The First 20 Years (2020)](http://www.wirfs-brock.com/allen/posts/866)
+-   [Awesome Storybook](https://github.com/lauthieb/awesome-storybook)
+-   [QuickJS](https://github.com/bellard/quickjs) — Small and embeddable Javascript engine. ([Web](https://bellard.org/quickjs/)) ([HN](https://news.ycombinator.com/item?id=24867103))
+-   [Test262: Official ECMAScript Conformance Test Suite](https://github.com/tc39/test262)
+-   [Hegel](https://github.com/JSMonk/hegel) — Advanced static type checker. ([Web](https://hegel.js.org/)) ([Intro to Hegel](https://blog.logrocket.com/introduction-to-hegel/))
+-   [NectarJS](https://github.com/NectarJS/nectarjs) — JS God mode. No VM. No Bytecode. No Garbage Collector. Full Compiled and Native binaries.
+-   [Eloquent JavaScript book (2018)](https://eloquentjavascript.net/) ([HN](https://news.ycombinator.com/item?id=22990926))
+-   [JS.coach](https://js.coach/) — Manually curated list of packages related to React, Vue, Webpack, Babel and PostCSS. ([Code](https://github.com/jscoach/client))
+-   [How to create a reactive state-based UI component with vanilla JS Proxies (2020)](https://gomakethings.com/how-to-create-a-reactive-state-based-ui-component-with-vanilla-js-proxies/)
+-   [Kite Autocomplete for JavaScript](https://www.kite.com/javascript/) ([Article](https://www.kite.com/blog/product/kite-launches-ai-powered-javascript-completions/))
+-   [Excalidraw: Cool JS Tricks Behind the Scenes — Christopher Chedeau (2020)](https://www.youtube.com/watch?v=fix2-SynPGE)
+-   [Cleaner async JavaScript code without the try/catch mess (2020)](https://davidwells.io/blog/cleaner-async-await-code-without-try-catch)
+-   [Shifty](https://github.com/jeremyckahn/shifty) — Tweening engine for JavaScript. It is a lightweight library meant to be encapsulated by higher level tools.
+-   [jspm](https://github.com/jspm/jspm-cli) — Package management CLI.
+-   [JS Bits](https://github.com/vasanthk/js-bits) — JavaScript concepts explained with code.
+-   [Binary-parser](https://github.com/keichi/binary-parser) — Parser builder for JavaScript that enables you to write efficient binary parsers in a simple and declarative manner.
+-   [estrella](https://github.com/rsms/estrella) — Light-weight runner for the esbuild compiler.
+-   [jsparagus](https://github.com/mozilla-spidermonkey/jsparagus) — JavaScript parser written in Rust.
+-   [Callbag](https://github.com/callbag/callbag) — Standard for JS callbacks that enables lightweight observables and iterables. ([Wiki](https://github.com/callbag/callbag/wiki))
+-   [JavaScript Standard Style](https://standardjs.com/) — JavaScript style guide, linter, and formatter. ([Code](https://github.com/standard/standard))
+-   [Boa](https://github.com/boa-dev/boa) — Experimental Javascript lexer, parser and compiler written in Rust.
+-   [Understanding JavaScript Execution Context like never before (2020)](https://blog.greenroots.info/understanding-javascript-execution-context-like-never-before-ckb8x246k00f56hs1nefzpysq)
+-   [Causes of Memory Leaks in JavaScript and How to Avoid Them (2020)](https://www.ditdot.hr/en/causes-of-memory-leaks-in-javascript-and-how-to-avoid-them) ([Lobsters](https://lobste.rs/s/ar5avz/causes_memory_leaks_javascript_how_avoid))
+-   [UI.dev](https://ui.dev/) — Master the JavaScript Ecosystem.
+-   [Do Not Follow JavaScript Trends (2020)](https://pragmaticpineapple.com/do-not-follow-javascript-trends/) ([Lobsters](https://lobste.rs/s/wb3ma8/do_not_follow_javascript_trends)) ([HN](https://news.ycombinator.com/item?id=23538473))
+-   [Some things that can be avoided in JS for clearer code (2020)](https://twitter.com/buildsghost/status/1274042818219044864)
+-   [JS fundamentals and resources to learn them (2020)](https://twitter.com/Madisonkanna/status/1274424134139666432)
+-   [A little bit of plain JavaScript can do a lot (2020)](https://jvns.ca/blog/2020/06/19/a-little-bit-of-plain-javascript-can-do-a-lot/) ([Lobsters](https://lobste.rs/s/6umqjn/little_bit_plain_javascript_can_do_lot)) ([HN](https://news.ycombinator.com/item?id=23578319))
+-   [Memoization: What, Why, and How (2020)](https://kyleshevlin.com/memoization)
+-   [An Open Source Maintainer’s Guide to Publishing npm Packages (2020)](https://formidable.com/blog/2020/publish-npm-packages/)
+-   [Robust Client-Side JavaScript (2020)](https://molily.de/robust-javascript/) ([HN](https://news.ycombinator.com/item?id=23612184))
+-   [Visualization of npm dependencies](https://npm.anvaka.com/#!/)
+-   [How to Learn JavaScript](https://sivers.org/learn-js) ([HN](https://news.ycombinator.com/item?id=23659531))
+-   [Google Closure Compiler](https://github.com/google/closure-compiler) — Tool for making JavaScript download and run faster.
+-   [JSConf](https://jsconf.com/) — Conferences for the JavaScript Community.
+-   [The history of Promises](https://samsaccone.com/posts/history-of-promises.html)
+-   [Skypack](https://www.skypack.dev/) — New kind of JavaScript delivery network. ([HN](https://news.ycombinator.com/item?id=23825798)) ([Introducing Skypack Discover](https://www.skypack.dev/blog/2020/10/introducing-skypack-discover/)) ([Docs](https://docs.skypack.dev/))
+-   [Openbase](https://openbase.io/) — Help developers choose the right JS package for any task — through user reviews and insights about packages’ popularity, reliability, activity and more. ([HN](https://news.ycombinator.com/item?id=23833441))
+-   [Basho](https://github.com/bashojs/basho) — Shell Automation with Plain JavaScript. ([Docs](https://bashojs.org/))
+-   [What is the JS Event Loop and Call Stack?](https://gist.github.com/jesstelford/9a35d20a2aa044df8bf241e00d7bc2d0)
+-   [Starving the Event Loop with microtasks](https://gist.github.com/jesstelford/bbb30b983bddaa6e5fef2eb867d37678)
+-   [GPU.js](https://gpu.rocks/#/) — GPU accelerated JavaScript. ([HN](https://news.ycombinator.com/item?id=24027487))
+-   [The JavaScript Promise Tutorial (2020)](https://adrianmejia.com/promises-tutorial-concurrency-in-javascript-node/)
+-   [Underrated JS array methods (2020)](https://dev.to/assuncaocharles/underrated-array-methods-2mdj)
+-   [Javascript Generators, Meet XPath (2020)](https://jack.wrenn.fyi/blog/xpath-for-2020/) ([Lobsters](https://lobste.rs/s/5fsljg/javascript_generators_meet_xpath))
+-   [goja](https://github.com/dop251/goja) — ECMAScript 5.1(+) implementation in Go.
+-   [Guide to unit testing in JavaScript](https://github.com/mawrkus/js-unit-testing-guide)
+-   [How I wrote the fastest JavaScript memoization library (2017)](https://community.risingstack.com/the-worlds-fastest-javascript-memoization-library/)
+-   [JavaScript Playgrounds](https://unpkg.com/javascript-playgrounds@%5E1.0.0/public/index.html) — Interactive JavaScript sandbox. ([Code](https://github.com/dabbott/javascript-playgrounds))
+-   [Speakeasy JS](https://speakeasyjs.com/) — Weekly JavaScript meetup.
+-   [Elsa](https://github.com/elsaland/elsa) — Minimal, fast and secure QuickJS wrapper written in Go. ([HN](https://news.ycombinator.com/item?id=24626655))
+-   [quickjs-rs](https://github.com/theduke/quickjs-rs) — Rust wrapper for QuickJS.
+-   [RSLint](https://github.com/RDambrosio016/RSLint) — JavaScript linter written in Rust designed to be as fast as possible, customizable, and easy to use.
+-   [Beginner’s Series to: JavaScript by Microsoft](https://www.youtube.com/playlist?list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2) ([Code](https://github.com/microsoft/beginners-intro-javascript-node))
+-   [Please stop using CDNs for external Javascript libraries (2020)](https://shkspr.mobi/blog/2020/10/please-stop-using-cdns-for-external-javascript-libraries/) ([Lobsters](https://lobste.rs/s/mpznhm/please_stop_using_cdns_for_external)) ([HN](https://news.ycombinator.com/item?id=24745194))
+-   [ESM Hot Module Replacement (ESM-HMR) Spec](https://github.com/pikapkg/esm-hmr)
+-   [esbuild-js](https://github.com/marvinhagemeister/esbuild-js) — es-build implemented in JS.
+-   [Visual Guide to References in JavaScript (2020)](https://daveceddia.com/javascript-references/)
+-   [Modern JavaScript features you may have missed (2019)](https://www.breck-mckye.com/blog/2019/10/modern-javascript-features-you-may-have-missed/)
+-   [RegPack](https://github.com/Siorki/RegPack) — Self-contained packer for size-constrained JS code.
+-   [ElectronJS alternative: SciterJS — HTML/CSS/JS in 4.5 MB executable](https://github.com/c-smile/sciter-js-sdk) ([HN](https://news.ycombinator.com/item?id=24797423))
+-   [ESTree Spec](https://github.com/estree/estree) — Manipulate JavaScript source code.
+-   [Pattern Matching in JavaScript (2020)](https://kyleshevlin.com/pattern-matching)
+-   [How to chain methods in JS in order to write concise and readable code (2020)](https://medium.com/@laflamablanc/method-chaining-and-javascript-7d840d6e3687)
+-   [npmview](https://npmview.now.sh/) — Web application to view npm package files. ([Code](https://github.com/pd4d10/npmview))
+-   [Metadata Reflection API for JS](https://github.com/rbuckton/reflect-metadata)
+-   [SurviveJS](https://survivejs.com/) — Learn JavaScript. From apprentice to master.
+-   [Composing Closures and Callbacks in JavaScript (2020)](https://egghead.io/playlists/composing-closures-and-callbacks-in-javascript-1223)
+-   [CJS Module Lexer](https://github.com/guybedford/cjs-module-lexer) — Fast lexer to extract named exports via analysis from CommonJS modules.
+-   [JavaScript minification (2019)](http://neugierig.org/software/blog/2019/04/js-minifiers.html)
+-   [export-size](https://github.com/antfu/export-size) — Analysis bundle cost for each export of an ESM package.
+-   [ESM](https://github.com/postui/esm.sh) — Fast, global content delivery network ES Modules.
+-   [Benny](https://github.com/caderek/benny) — Dead simple benchmarking framework for JS/TS libs.
+-   [Functional Programming in JS — Composition (Currying, Lodash and Ramda) (2020)](https://11sigma.com/blog/functional-programming-in-js-part-i-composition)
+-   [Understanding Modules, Import and Export in JavaScript (2020)](https://www.taniarascia.com/javascript-modules-import-export/)
+-   [Intent to stop using ‘null’ in my JS code](https://github.com/sindresorhus/meta/issues/7) ([HN](https://news.ycombinator.com/item?id=24956156))
+-   [What Makes JavaScript JavaScript? Prototypal Inheritance (2020)](https://dmitripavlutin.com/javascript-prototypal-inheritance/)
+-   [ni](https://github.com/antfu/ni) — Use the right package manager. Detect whether to use npm/yarn/pnpm.
+-   [Making a modern JS library in 2020](https://pitayan.com/posts/modernest-lib-hello-world/)
+-   [JavaScript Interview Questions & Answers](https://github.com/sudheerj/javascript-interview-questions)
+-   [JS Operator Lookup](https://joshwcomeau.com/operator-lookup/) — Search JavaScript Operators.
+-   [The state of JavaScript at the end of 2020](https://www.ideamotive.co/javascript-business-guide) ([HN](https://news.ycombinator.com/item?id=25046293))
+-   [What the fuck JavaScript](https://github.com/denysdovhan/wtfjs) — List of funny and tricky JavaScript examples.
+-   [1loc](https://1loc.dev/) — JavaScript Utilities in 1 LOC.
+-   [Component Driven User Interfaces](https://www.componentdriven.org/) — Open standard for UI component examples based on JavaScript ES6 modules. ([Code](https://github.com/ComponentDriven/csf))
+-   [JavaScript Modern Interview Code Challenges](https://github.com/sadanandpai/javascript-code-challenges)
+-   [Building a Promise from Scratch (2020)](https://www.youtube.com/watch?v=CVzx-6fu0d8)
+-   ​[Tips and tricks for working with types in JavaScript](https://github.com/voxpelli/types-in-js)​
+-   ​[Astring](https://github.com/davidbonnet/astring) — Tiny and fast JavaScript code generator from an ESTree-compliant AST.
+-   ​[EStimator.dev](https://estimator.dev/) — Calculate the size and performance impact of switching to modern JavaScript syntax. ([Code](https://github.com/GoogleChromeLabs/estimator.dev))
+-   ​[Publish, ship, and install modern JavaScript for faster applications (2020)](https://web.dev/publish-modern-javascript/)​
+-   ​[Universal JavaScript Build and Packaging](https://github.com/mikeal/ipjs)​
+-   ​[Maybe you don’t need Rust and WASM to speed up your JS (2018)](https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html)​
+-   ​[lage](https://github.com/microsoft/lage) — Task runner in JS monorepos. ([Web](https://microsoft.github.io/lage/))
+-   ​[Module Server](https://github.com/google/module-server) — System for efficient serving of CommonJS modules to web browsers.
+-   ​[How JavaScript works: exceptions + best practices for synchronous and asynchronous code (2021)](https://blog.sessionstack.com/how-javascript-works-exceptions-best-practices-for-synchronous-and-asynchronous-environments-39f66b59f012)​
+-   ​[Source Map Visualization](http://evanw.github.io/source-map-visualization/) — Visualization of JavaScript source map data, which is useful for debugging problems with generated source maps. ([Code](https://github.com/evanw/source-map-visualization))
+-   ​[Manypkg](https://github.com/Thinkmill/manypkg) — Linter for package.json files in Yarn, Bolt or pnpm monorepos.
+-   ​[Putout](https://github.com/coderaiser/putout) — Pluggable and configurable code transformer with built-in eslint, babel plugins and jscodeshift codemods support. ([Editor](https://putout.cloudcmd.io/))
+-   ​[Prettier Plugin: Organize Imports](https://github.com/simonhaenisch/prettier-plugin-organize-imports)​
+-   ​[A mostly complete guide to error handling in JavaScript (2020)](https://www.valentinog.com/blog/error/)​
+-   ​[Awesome FP JS](https://github.com/stoeffel/awesome-fp-js)​
+-   ​[Perflink](https://perf.link/) — JS Benchmarks.
+-   ​[Element Worklet (2021)](https://jasonformat.com/element-worklet/)​
+-   [MDN JS Code Examples](https://github.com/mdn/js-examples)​
+-   ​[Understanding Hoisting in JavaScript (2021)](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript)​
+-   ​[JavaScript, the Good Parts Notes](https://github.com/ahmaazouzi/js_good_parts)​
+-   ​[A Model for Reasoning About JavaScript Promises (2017)](http://www.franktip.org/pubs/oopsla2017promises.pdf)​
+-   ​[JavaScript Minification Benchmarks](https://github.com/privatenumber/minification-benchmarks) ([HN](https://news.ycombinator.com/item?id=26048291))
+-   ​[Faster JavaScript Calls (2021)](https://v8.dev/blog/adaptor-frame) ([HN](https://news.ycombinator.com/item?id=26143648))
+-   ​[Streams — The definitive guide (2021)](https://web.dev/streams/)​
+-   ​[Awesome JavaScript](https://github.com/sorrycc/awesome-javascript)​
+
+If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+Or checkout my personal resource Site:
+
+[https://gist.github.com/bgoonz](https://gist.github.com/bgoonz)
+
+#### Every extension or tool you could possibly need
+
+![](https://cdn-images-1.medium.com/max/1200/1*gcp0kkiWQY6qd1Y4qEcqxw.png)
+
+### Here’s a rudimentary static site I made that goes into more detail on the extensions I use…
+
+[https://5fff5b9a2430bb564bfd451d–stoic-mccarthy-2c335f.netlify.app/#h18](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18)
+
+### Here’s the repo it was deployed from:
+
+[https://github.com/bgoonz/vscode-Extension-readmes](https://github.com/bgoonz/vscode-Extension-readmes)
+
+---
+
+### Commands:
+
+> Command Palette
+
+> Access all available commands based on your current context.
+
+> Keyboard Shortcut: **Ctrl+Shift+P**
+
+![](https://cdn-images-1.medium.com/max/800/0*BByhnDoVQdRPdO4F.gif)
+
+### Command palette
+
+`⇧⌘P`Show all commands`⌘P`Show files
+
+### Sidebars
+
+`⌘B`Toggle sidebar`⇧⌘E`Explorer`⇧⌘F`Search`⇧⌘D`Debug`⇧⌘X`Extensions`⇧^G`Git (SCM)
+
+### Search
+
+`⌘F`Find`⌥⌘F`Replace`⇧⌘F`Find in files`⇧⌘H`Replace in files
+
+### Panel
+
+`⌘J`Toggle panel`⇧⌘M`Problems`⇧⌘U`Output`⇧⌘Y`Debug console`` ^`  ``Terminal
+
+### View
+
+`⌘k` `z`Zen mode`⌘k` `u`Close unmodified`⌘k` `w`Close all
+
+### Debug
+
+`F5`Start`⇧F5`Stop`⇧⌘F5`Restart`^F5`Start without debugging`F9`Toggle breakpoint`F10`Step over`F11`Step into`⇧F11`Step out`⇧⌘D`Debug sidebar`⇧⌘Y`Debug panel
+
+![](https://cdn-images-1.medium.com/max/1200/0*llpkl5jsIMhWMucR.png)
+
+---
+
+### Tips-N-Tricks:
+
+Here is a selection of common features for editing code. If the keyboard shortcuts aren’t comfortable for you, consider installing a [keymap extension](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Downloads) for your old editor.
+
+Tip: You can see recommended keymap extensions in the Extensions view with Ctrl+K Ctrl+M which filters the search to `@recommended:keymaps`.
+
+### Multi cursor selection
+
+To add cursors at arbitrary positions, select a position with your mouse and use Alt+Click (Option+click on macOS).
+
+To set cursors above or below the current position use:
+
+Keyboard Shortcut: Ctrl+Alt+Up or Ctrl+Alt+Down
+
+![](https://cdn-images-1.medium.com/max/800/0*Le_oEOiYnEBmFfig.gif)
+
+You can add additional cursors to all occurrences of the current selection with Ctrl+Shift+L.
+
+![](https://cdn-images-1.medium.com/max/800/0*WcrfwIln6NIG3zNW.gif)
+
+> _Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the_ `_editor.multiCursorModifier_` [_setting_](https://code.visualstudio.com/docs/getstarted/settings) _. See_ [_Multi-cursor Modifier_](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier) _for details._
+
+If you do not want to add all occurrences of the current selection, you can use Ctrl+D instead. This only selects the next occurrence after the one you selected so you can add selections one by one.
+
+![](https://cdn-images-1.medium.com/max/800/0*09EveaKtpZEKFEpO.gif)
+
+### Column (box) selection
+
+You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while you drag your mouse. A separate cursor will be added to the end of each selected line.
+
+![](https://cdn-images-1.medium.com/max/800/0*LrsOBXP4MVqr7aes.gif)
+
+You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor/codebasics#_column-box-selection) to trigger column selection.
+
+---
+
+### Extensions:
+
+#### [AutoHotkey Plus](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-autohotkey-plus)
+
+> _Syntax Highlighting, Snippets, Go to Definition, Signature helper and Code formatter_
+
+### [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug)
+
+> _A debugger extension for Bash scripts based on_ `_bashdb_`
+
+![](https://cdn-images-1.medium.com/max/800/0*8j2gGGs0WHcuFIwY.gif)
+
+### [Shellman](https://marketplace.visualstudio.com/items?itemName=Remisa.shellman)
+
+> _Bash script snippets extension_
+
+![](https://cdn-images-1.medium.com/max/800/0*wyimtX27gWygAeOb.gif)
+
+### C++
+
+> [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) — Preview C/C++ extension by [Microsoft](https://www.microsoft.com/), read [official blog post](https://blogs.msdn.microsoft.com/vcblog/2016/03/31/cc-extension-for-visual-studio-code/) for the details
+
+> [Clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd) — Provides C/C++ language IDE features for VS Code using clangd: code completion, compile errors and warnings, go-to-definition and cross references, include management, code formatting, simple refactorings.
+
+> [gnu-global-tags](https://marketplace.visualstudio.com/items?itemName=austin.code-gnu-global) — Provide Intellisense for C/C++ with the help of the GNU Global tool.
+
+> [YouCompleteMe](https://marketplace.visualstudio.com/items?itemName=RichardHe.you-complete-me) — Provides semantic completions for C/C++ (and TypeScript, JavaScript, Objective-C, Golang, Rust) using [YouCompleteMe](http://ycm-core.github.io/YouCompleteMe/).
+
+> [C/C++ Clang Command Adapter](https://github.com/mitaki28/vscode-clang) — Completion and Diagnostic for C/C++/Objective-C using Clang command.
+
+> [CQuery](https://github.com/cquery-project/vscode-cquery) — [C/C++ language server](https://github.com/jacobdufault/cquery) supporting multi-million line code base, powered by libclang. Cross references, completion, diagnostics, semantic highlighting and more.
+
+#### More
+
+-   [Microsoft’s tutorial on using VSCode for remote C/C++ development](https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/)
+
+### C#, ASP .NET and .NET Core
+
+> [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) — C# extension by [Microsoft](https://www.microsoft.com/), read [official documentation](https://code.visualstudio.com/docs/languages/csharp) for the details
+
+> [C# FixFormat](https://marketplace.visualstudio.com/items?itemName=Leopotam.csharpfixformat) — Fix format of usings / indents / braces / empty lines
+
+> [C# Extensions](https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions) — Provides extensions to the IDE that will speed up your development workflow.
+
+> [MSBuild Project Tools](https://marketplace.visualstudio.com/items?itemName=tintoy.msbuild-project-tools)
+
+> [VSCode Solution Explorer](https://marketplace.visualstudio.com/items?itemName=fernandoescolar.vscode-solution-explorer)
+
+> [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
+
+![](https://cdn-images-1.medium.com/max/800/0*ZG5W4_VVBv89zO_g.gif)
+
+---
+
+### CSS
+
+### [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+
+> _Peek or Jump to a CSS definition directly from HTML, just like in Brackets!_
+
+![](https://cdn-images-1.medium.com/max/800/0*MN4pNqxDw4FyRk8g.gif)
+
+-   [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) — Lint CSS/SCSS.
+-   [Autoprefixer](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer) Parse CSS,SCSS, LESS and add vendor prefixes automatically.
+
+![](https://cdn-images-1.medium.com/max/800/0*edXaUlo7z9TRDQnC.gif)
+
+-   [Intellisense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion) — Provides CSS class name completion for the HTML class attribute based on the CSS files in your workspace. Also supports React’s className attribute.
+
+![](https://cdn-images-1.medium.com/max/800/0*AHJJrCMfkLWLHLH4.gif)
+
+### Groovy
+
+-   [VsCode Groovy Lint](https://marketplace.visualstudio.com/items?itemName=NicolasVuillamy.vscode-groovy-lint) — Groovy lint, format, prettify and auto-fix
+
+![](https://cdn-images-1.medium.com/max/800/0*jmi5_-erJj7WOMq7.gif)
+
+### Haskell
+
+-   [haskell-linter](https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter)
+-   [Haskell IDE engine](https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server) — provides [language server](https://github.com/haskell/haskell-ide-engine) for stack and cabal projects.
+-   [autocomplate-shell](https://marketplace.visualstudio.com/items?itemName=truman.autocomplate-shell)
+
+---
+
+### Java
+
+-   [Language Support for Java(TM) by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java)
+-   [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
+-   [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven)
+-   [Lombok](https://marketplace.visualstudio.com/items?itemName=GabrielBB.vscode-lombok)
+
+---
+
+### JavaScript
+
+-   [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
+-   [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) — This extension provides AI-assisted development features including autocomplete and other insights based on understanding your code context.
+
+![](https://cdn-images-1.medium.com/max/800/0*i7CZbSbHqsWqEM4w.gif)
+
+See the difference between these two [here](https://github.com/michaelgmcd/vscode-language-babel/issues/1)
+
+> [tslint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) — TSLint for Visual Studio Code (with `"tslint.jsEnable": true`).
+
+> [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) — Linter for [eslint](https://eslint.org/).
+
+> [XO](https://marketplace.visualstudio.com/items?itemName=samverschueren.linter-xo) — Linter for [XO](https://github.com/xojs/xo).
+
+> [AVA](https://marketplace.visualstudio.com/items?itemName=samverschueren.ava) — Snippets for [AVA](https://github.com/avajs/ava).
+
+> [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) — Linter, Formatter and Pretty printer for [Prettier](https://github.com/prettier/prettier-vscode).
+
+> [Schema.org Snippets](https://marketplace.visualstudio.com/items?itemName=austinleegordon.vscode-schema-dot-org) — Snippets for [Schema.org](https://schema.org/).
+
+> [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) — Spelling Checker for Visual Studio Code.
+
+Framework-specific:
+
+#### [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) — Toolkit for Vue.js
+
+![](https://cdn-images-1.medium.com/max/800/0*F7J_vW0ISbVMTXIZ.png)
+
+---
+
+### [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+
+> _A VS Code extension to debug your JavaScript code in the Chrome browser, or other targets that support the Chrome Debugging Protocol._
+
+### Facebook Flow
+
+-   [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode) — provides all the functionality you would expect — linting, intellisense, type tooltips and click-to-definition
+-   [vscode-flow-ide](https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide) — an alternative Flowtype extension for Visual Studio Code
+
+### TypeScript
+
+-   [tslint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) — TSLint for Visual Studio Code
+-   [TypeScript Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero) — Code outline view of your open TS, sort and organize your imports.
+
+---
+
+### Markdown
+
+### [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+
+> _Linter for_ [_markdownlint_](https://github.com/DavidAnson/markdownlint)_._
+
+### [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+
+> _All-in-one markdown plugin (keyboard shortcuts, table of contents, auto preview, list editing and more)_
+
+![](https://cdn-images-1.medium.com/max/800/0*8oVrYuZ9kLRNSuBs.gif)
+
+### [Markdown Emoji](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)
+
+> _Adds emoji syntax support to VS Code’s built-in Markdown preview_
+
+![](https://cdn-images-1.medium.com/max/800/0*rckUMIIZ9Jh7UE5q.png)
+
+---
+
+### PHP
+
+### IntelliSense
+
+These extensions provide slightly different sets of features. While the first one offers better autocompletion support, the second one seems to have more features overall.
+
+-   [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+-   [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense)
+
+### Laravel
+
+-   [Laravel 5 Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) — Laravel 5 snippets for Visual Studio Code
+-   [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade) — Laravel blade snippets and syntax highlight support
+
+![](https://cdn-images-1.medium.com/max/800/0*f4hMFe1l7NpJTG8v.gif)
+
+-   [Laravel Model Snippets](https://marketplace.visualstudio.com/items?itemName=ahinkle.laravel-model-snippets) — Quickly get models up and running with Laravel Model Snippets.
+
+![](https://cdn-images-1.medium.com/max/800/0*1xydH2CgYGDSMZtB.gif)
+
+-   [Laravel Artisan](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan) — Laravel Artisan commands within Visual Studio Code
+
+![](https://cdn-images-1.medium.com/max/800/0*rzK952c4UgikNNPR.gif)
+
+-   [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) — Support for dotenv file syntax
+
+![](https://cdn-images-1.medium.com/max/800/0*fSAaqpXfBx1Sgztf.png)
+
+---
+
+### Other extensions
+
+-   [Format HTML in PHP](https://marketplace.visualstudio.com/items?itemName=rifi2k.format-html-in-php) — Formatting for the HTML in PHP files. Runs before the save action so you can still have a PHP formatter.
+
+![](https://cdn-images-1.medium.com/max/800/0*6gF0K20iKes7I9ZF.gif)
+
+-   [Composer](https://marketplace.visualstudio.com/items?itemName=ikappas.composer)
+-   [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) — XDebug extension for Visual Studio Code
+-   [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+-   [php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer) — PHP CS Fixer extension for VS Code, php formatter, php code beautify tool
+-   [phpcs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) — PHP CodeSniffer for Visual Studio Code
+-   [phpfmt](https://marketplace.visualstudio.com/items?itemName=kokororin.vscode-phpfmt) — phpfmt for Visual Studio Code
+
+---
+
+### Python
+
+-   [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) — Linting, Debugging (multi threaded, web apps), Intellisense, auto-completion, code formatting, snippets, unit testing, and more.
+
+### TensorFlow
+
+-   [TensorFlow Snippets](https://marketplace.visualstudio.com/items?itemName=vahidk.tensorflow-snippets) — This extension includes a set of useful code snippets for developing TensorFlow models in Visual Studio Code.
+
+![](https://cdn-images-1.medium.com/max/800/0*stmhgQ3sGvJBTvf2.gif)
+
+---
+
+### Rust
+
+-   [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) — Linting, auto-completion, code formatting, snippets and more
+
+---
+
+### Productivity
+
+### [ARM Template Viewer](https://marketplace.visualstudio.com/items?itemName=bencoleman.armview)
+
+> _Displays a graphical preview of Azure Resource Manager (ARM) templates. The view will show all resources with the official Azure icons and also linkage between the resources._
+
+![](https://cdn-images-1.medium.com/max/800/0*p8bvCI9DXF44m4z3.png)
+
+### [Azure Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
+
+> _Browse your database inside the vs code editor_
+
+![](https://cdn-images-1.medium.com/max/800/0*VWvSU6Hbf20Kfc_P.gif)
+
+### [Azure IoT Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit)
+
+> _Everything you need for the Azure IoT development: Interact with Azure IoT Hub, manage devices connected to Azure IoT Hub, and develop with code snippets for Azure IoT Hub_
+
+![](https://cdn-images-1.medium.com/max/800/0*AobtCd80fICrbQPI.png)
+
+### [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+
+> _Mark lines and jump to them_
+
+### [Color Tabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext)
+
+> _An extension for big projects or monorepos that colors your tab/titlebar based on the current package_
+
+![](https://cdn-images-1.medium.com/max/800/0*SEp-hgfDLlubNRyc.gif)
+
+### [Create tests](https://marketplace.visualstudio.com/items?itemName=hardikmodha.create-tests)
+
+> _An extension to quickly generate test files._
+
+![](https://cdn-images-1.medium.com/max/800/0*DLZLYmrBiui0YOBt.gif)
+
+### [Deploy](https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-deploy)
+
+> _Commands for upload or copy files of a workspace to a destination._
+
+![](https://cdn-images-1.medium.com/max/800/0*lLasjzlmWnBwdbAT.gif)
+
+### [Duplicate Action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate)
+
+> _Ability to duplicate files and directories._
+
+### [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+
+> _Show language diagnostics inline (errors/warnings/…)._
+
+![](https://cdn-images-1.medium.com/max/800/0*1tJJkV0p2Ka_W06r.gif)
+
+### [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
+> _Provides Javascript and React/Redux snippets in ES7_
+
+![](https://cdn-images-1.medium.com/max/800/0*W3N0kbgEumWYa-m4.png)
+
+### [Gi](https://marketplace.visualstudio.com/items?itemName=rubbersheep.gi)
+
+> _Generating .gitignore files made easy_
+
+![](https://cdn-images-1.medium.com/max/800/0*sfddghz8B1D362UB.gif)
+
+### [GistPad](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs)
+
+> _Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It’s like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples._
+
+![](https://cdn-images-1.medium.com/max/800/0*1MiBQ0u4Z8TPNaG9.gif)
+
+### [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+
+> _View git log, file or line History_
+
+### [Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager)
+
+> _Automatically indexes your git projects and lets you easily toggle between them_
+
+### [GitLink](https://marketplace.visualstudio.com/items?itemName=qezhu.gitlink)
+
+> _GoTo current file’s online link in browser and Copy the link in clipboard._
+
+![](https://cdn-images-1.medium.com/max/800/0*Acgfn2rmhinuIPjk.gif)
+
+### [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+> _Provides Git CodeLens information (most recent commit, # of authors), on-demand inline blame annotations, status bar blame information, file and blame history explorers, and commands to compare changes with the working tree or previous versions._
+
+![](https://cdn-images-1.medium.com/max/800/0*MZu4GV7SOCW88UQQ.gif)
+
+### [Git Indicators](https://marketplace.visualstudio.com/items?itemName=lamartire.git-indicators)
+
+> _Atom-like git indicators on active panel_
+
+![](https://cdn-images-1.medium.com/max/800/0*vitZrD9ZU0_eWckU.png)
+
+![](https://cdn-images-1.medium.com/max/800/0*0BHxQOLMx09FFuWZ.png)
+
+![](https://cdn-images-1.medium.com/max/800/0*x8F97F4AdSvvtehT.png)
+
+### [GitHub](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github)
+
+> _Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the_ [_README.md_](https://github.com/KnisterPeter/vscode-github/blob/master/README.md) _on how to get started with the setup for this extension._
+
+### [GitHub Pull Request Monitor](https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor)
+
+> _This extension uses the GitHub api to monitor the state of your pull requests and let you know when it’s time to merge or if someone requested changes._
+
+![](https://cdn-images-1.medium.com/max/800/0*TOq5OERkgQNETGPK.png)
+
+### [GitLab Workflow](https://marketplace.visualstudio.com/items?itemName=gitlab.gitlab-workflow)
+
+> _Adds a GitLab sidebar icon to view issues, merge requests and other GitLab resources. You can also view the results of your GitLab CI/CD pipeline and check the syntax of your_ `_.gitlab-ci.yml_`_._
+
+#### [Gradle Tasks](https://marketplace.visualstudio.com/items?itemName=richardwillis.vscode-gradle)
+
+> _Run gradle tasks in VS Code._
+
+![](https://cdn-images-1.medium.com/max/800/0*Vx-3DIT22BJpEnJr.gif)
+
+### [Icon Fonts](https://marketplace.visualstudio.com/items?itemName=idleberg.icon-fonts)
+
+> _Snippets for popular icon fonts such as Font Awesome, Ionicons, Glyphicons, Octicons, Material Design Icons and many more!_
+
+### [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+
+> _This extension will display inline in the editor the size of the imported package. The extension utilizes webpack with babili-webpack-plugin in order to detect the imported size._
+
+### [Jira and Bitbucket](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode)
+
+> _Bringing the power of Jira and Bitbucket to VS Code — With Atlassian for VS Code you can create and view issues, start work on issues, create pull requests, do code reviews, start builds, get build statuses and more!_
+
+![](https://cdn-images-1.medium.com/max/800/0*T6iuH2VnPYj93YqW.gif)
+
+### [JS Parameter Annotations](https://marketplace.visualstudio.com/items?itemName=lannonbr.vscode-js-annotations)
+
+> _Provides annotations on function calls in JS/TS files to provide parameter names to arguments._
+
+![](https://cdn-images-1.medium.com/max/800/0*zHffPsYWln4dxhus.png)
+
+### [Jumpy](https://marketplace.visualstudio.com/items?itemName=wmaurer.vscode-jumpy)
+
+> _Provides fast cursor movement, inspired by Atom’s package of the same name._
+
+![](https://cdn-images-1.medium.com/max/800/0*uPOceUJ4eMjCP_Qt.gif)
+
+### [Kanban](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban)
+
+![](https://cdn-images-1.medium.com/max/800/0*SzUG3UU1fl5ub7bA.gif)
+
+> _Simple Kanban board for use in Visual Studio Code, with time tracking and Markdown support._
+
+### [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+> _Launch a development local Server with live reload feature for static & dynamic pages._
+
+![](https://cdn-images-1.medium.com/max/800/0*Oj5zPrWwMbCBViBi.gif)
+
+### [Multiple clipboards](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip)
+
+> _Override the regular Copy and Cut commands to keep selections in a clipboard ring_
+
+### [ngrok for VSCode](https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode)
+
+> _ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control_ [_ngrok_](https://ngrok.com/) _from the VSCode command palette_
+
+![](https://cdn-images-1.medium.com/max/800/0*IX15MuJrEVBcTd0F.gif)
+
+### [Instant Markdown](https://marketplace.visualstudio.com/items?itemName=dbankier.vscode-instant-markdown)
+
+> _Simply, edit markdown documents in vscode and instantly preview it in your browser as you type._
+
+![](https://cdn-images-1.medium.com/max/800/0*jBw9vP9cAtvv2IcV.gif)
+
+### [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
+
+> _Visual Studio Code plugin that autocompletes npm modules in import statements._
+
+![](https://cdn-images-1.medium.com/max/800/0*iVJamJugt_b7-VsV.gif)
+
+### [Parameter Hints](https://marketplace.visualstudio.com/items?itemName=DominicVonk.parameter-hints)
+
+> _Provides parameter hints on function calls in JS/TS/PHP files._
+
+![](https://cdn-images-1.medium.com/max/800/0*BSj8-Qt7xtVTsl1Z.png)
+
+### [Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)
+
+> _Compare (diff) text selections within a file, across different files, or to the clipboard_
+
+![](https://cdn-images-1.medium.com/max/800/0*KHki85jdv1hZeY3V.gif)
+
+### [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
+
+> _Infer the structure of JSON and paste is as types in many programming languages_
+
+![](https://cdn-images-1.medium.com/max/800/0*K2GCRMGsYjpsK8OX.gif)
+
+### [Path IntelliSense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+
+> _Visual Studio Code plugin that autocompletes filenames_
+
+![](https://cdn-images-1.medium.com/max/800/0*xwxU_1ffZvZ6DeoO.gif)
+
+### [Power Tools](https://marketplace.visualstudio.com/items?itemName=ego-digital.vscode-powertools)
+
+> _Extends Visual Studio Code via things like Node.js based scripts or shell commands, without writing separate extensions_
+
+![](https://cdn-images-1.medium.com/max/800/0*Cb7J6-PYsXsnjqSN.gif)
+
+### [PrintCode](https://marketplace.visualstudio.com/items?itemName=nobuhito.printcode)
+
+> _PrintCode converts the code being edited into an HTML file, displays it by browser and prints it._
+
+![](https://cdn-images-1.medium.com/max/800/0*2spvNSEEHM-ETd_F.gif)
+
+### [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+
+> _Easily switch between projects._
+
+### [Project Dashboard](https://marketplace.visualstudio.com/items?itemName=kruemelkatze.vscode-dashboard)
+
+> _VSCode Project Dashboard is a Visual Studio Code extension that lets you organize your projects in a speed-dial like manner. Pin your frequently visited folders, files, and SSH remotes onto a dashboard to access them quickly._
+
+![](https://cdn-images-1.medium.com/max/800/0*PxOoARROhi1rf63R.gif)
+
+### [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
+
+> _Highlight columns in comma, tab, semicolon and pipe separated files, consistency check and linting with CSVLint, multi-cursor column editing, column trimming and realignment, and SQL-style querying with RBQL._
+
+![](https://cdn-images-1.medium.com/max/800/0*XAb9jlOfGWlEaCEM.png)
+
+### [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+> _Allows users to open any folder in a container, on a remote machine, container or in Windows Subsystem for Linux(WSL) and take advantage of VS Code’s full feature set._
+
+![](https://cdn-images-1.medium.com/max/800/0*b6XEPh9PJzeWDB_z.gif)
+
+### [Remote VSCode](https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode)
+
+> _Allow user to edit files from Remote server in Visual Studio Code directly._
+
+### [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+
+> _Allows you to send HTTP request and view the response in Visual Studio Code directly._
+
+![](https://cdn-images-1.medium.com/max/800/0*zGne78bniDbTXzyf.gif)
+
+### [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+
+> _Synchronize settings, snippets, themes, file icons, launch, key bindings, workspaces and extensions across multiple machines using GitHub Gist_
+
+![](https://cdn-images-1.medium.com/max/800/0*ilH91MRgGnMF6C8c.gif)
+
+### [Text Power Tools](https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools)
+
+> _All-in-one extension for text manipulation: filtering (grep), remove lines, insert number sequences and GUIDs, format content as table, change case, converting numbers and more. Great for finding information in logs and manipulating text._
+
+![](https://cdn-images-1.medium.com/max/800/0*Pfp4noD5OeQRbmsZ.gif)
+
+### [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+
+> _Custom keywords, highlighting, and colors for TODO comments. As well as a sidebar to view all your current tags._
+
+![](https://cdn-images-1.medium.com/max/800/0*6utz502-rPCa0Xcg.gif)
+
+### [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes)
+
+> _Cycle between single, double and backtick quotes_
+
+![](https://cdn-images-1.medium.com/max/800/0*7kZFpggvGAVkvoYa)
+
+### [Typescript Destructure](https://marketplace.visualstudio.com/items?itemName=tusaeff.vscode-typescript-destructure-plugin)
+
+> _TypeScript Language Service Plugin providing a set of source actions for easy objects destructuring_
+
+![](https://cdn-images-1.medium.com/max/800/0*sEi0imXK2Yx69m7H.gif)
+
+### [WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
+
+> _Automatic time tracker and productivity dashboard showing how long you coded in each project, file, branch, and language._
+
+---
+
+### Formatting & Beautification
+
+### [Better Align](https://marketplace.visualstudio.com/items?itemName=wwm.better-align)
+
+> _Align your code by colon(:), assignment(=,+=,-=,\*=,/=) and arrow(=>). It has additional support for comma-first coding style and trailing comment._
+
+> _And it doesn’t require you to select what to be aligned, the extension will figure it out by itself._
+
+![](https://cdn-images-1.medium.com/max/800/0*5maDjvvH57MAks1l.gif)
+
+### [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+
+> _Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text_
+
+![](https://cdn-images-1.medium.com/max/800/0*h6Q6HLQ8jfHLnPlJ.gif)
+
+### [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+
+> _Auto rename paired HTML/XML tags_
+
+![](https://cdn-images-1.medium.com/max/800/0*uRKX2-umhSQzlESv.gif)
+
+### [beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+
+> _Beautify code in place for VS Code_
+
+### [html2pug](https://marketplace.visualstudio.com/items?itemName=dbalas.vscode-html2pug)
+
+> _Transform html to pug inside your Visual Studio Code, forget about using an external page anymore._
+
+### [ECMAScript Quotes Transformer](https://marketplace.visualstudio.com/items?itemName=vilicvane.es-quotes)
+
+> _Transform quotes of ECMAScript string literals_
+
+![](https://cdn-images-1.medium.com/max/800/0*W1Z1fIvOGgPclFMJ.gif)
+
+### [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
+
+> _Paste code with “correct” indentation_
+
+### [Sort Lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
+
+> _Sorts lines of text in specific order_
+
+![](https://cdn-images-1.medium.com/max/800/0*a4wPhA7VjJqkp3lu.gif)
+
+### [Surround](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround)
+
+> _A simple yet powerful extension to add wrapper templates around your code blocks._
+
+![](https://cdn-images-1.medium.com/max/800/0*lyjRgfSrvdmhGFXd.gif)
+
+### [Wrap Selection](https://marketplace.visualstudio.com/items?itemName=konstantin.wrapSelection)
+
+> _Wraps selection or multiple selections with symbol or multiple symbols_
+
+### [Formatting Toggle](https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle)
+
+> _Allows you to toggle your formatter on and off with a simple click_
+
+### [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+
+> _This extension allows matching brackets to be identified w
