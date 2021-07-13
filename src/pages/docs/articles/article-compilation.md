@@ -1,4 +1,3 @@
-
 ---
 title: ds-algo-overview
 subtitle: The ds-algo-overview provides you with a blueprint of default post and page styles.
