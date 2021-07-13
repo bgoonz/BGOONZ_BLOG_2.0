@@ -3,7 +3,7 @@ title: review
 sections: []
 seo:
     title: ''
-    description: ''
+    description: 'Review-Of-Previous-Concepts'
     robots: []
     extra: []
     type: stackbit_page_meta
