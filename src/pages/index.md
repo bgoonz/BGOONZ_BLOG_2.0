@@ -86,10 +86,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |
-      <iframe width="800" height="575"
-        src="https://code-playground.netlify.app/index.html" title="YouTube video
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+      <iframe src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>   
   
 
     actions: []
