@@ -121,7 +121,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Bootcamp Resource Site",
+                        "label": "Bootcamp Resources",
                         "url": "#",
                         "style": "secondary",
                         "icon_class": "dev",
