@@ -81,6 +81,9 @@ template: docs
 <br>
 
 <br>
+<h2> Resource Archive</h2>
+
+<iframe src="https://resourcerepo2.netlify.app/" height="1600px" width="100%" style="zoom:0.69;display: block;border:12px solid gold; align-self:center;display:auto;display: block;"></iframe>
 
 <br>
 
