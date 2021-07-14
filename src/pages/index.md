@@ -90,7 +90,7 @@ sections:
     actions: []
     type: section_content
   - section_id: Music
-    image_alt: lorem-ipsum
+    image_alt: listen to my playlist
     image_position: left
     content: >
       <iframe  style="zoom:0.75;"
