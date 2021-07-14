@@ -1,5 +1,5 @@
 ---
-title: Listen To Music As You Browse
+title: My Playlist
 sections:
   - section_id: hero
     type: section_hero
@@ -85,10 +85,11 @@ sections:
   - section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
-    content: |
-      <iframe  style="zoom:0.75;" src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>   
-  
-
+    content: >
+      <iframe  style="zoom:0.75;"
+      src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
+      width="100%" height="380" frameBorder="0" allowtransparency="true"
+      allow="encrypted-media"></iframe>   
     actions: []
     type: section_content
   - title: Current Interests
