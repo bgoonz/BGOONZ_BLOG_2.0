@@ -1,12 +1,12 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 50em;
+    width: 70em;
 }
 
 .post {
     &.type-docs {
         margin-bottom: 3.625em;
-        max-width: 1800px;
+        max-width: 100%;
 
         h1 {
             font-size: 1.875em;
@@ -92,7 +92,8 @@
         }
 
         .post-content {
-            padding: 0 1.875em;
+            padding: 0.875em;
+           max-width: 100%;
         }
     }
 }
@@ -272,13 +273,13 @@
     }
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1200px) {
     .docs-content {
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
         width: 1600px;
-        overflow-x: visible;
+
     }
 
     .post.type-docs {
