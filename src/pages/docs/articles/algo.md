@@ -1546,12 +1546,4 @@ Graph
         console.log('path from 6 to 1:', graph.pathFromTo(6, 1)); // => 6-4-3-2-1
 ````
 
-≡If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
-[bgoonz's gists · GitHub](https://gist.github.com/bgoonz)
-[**bgoonz — Overview**
-*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com](https://github.com/bgoonz)
-
-Or Checkout my personal Resource Site:
-[**a/A-Student-Resources**
-*Edit description*goofy-euclid-1cd736.netlify.app](https://goofy-euclid-1cd736.netlify.app/)
