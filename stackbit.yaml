@@ -212,6 +212,7 @@ models:
       - name: extra
         type: html
         label: extra
+        description: extra imbedded content
   blog:
     type: page
     urlPath: /blog
