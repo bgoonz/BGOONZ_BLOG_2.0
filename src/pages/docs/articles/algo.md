@@ -38,7 +38,7 @@ template: docs
 # Fundamental Data Structures In JavaScript
 
 
-<iframe width="1000" height="1400" src="https://ds-algo-official.netlify.app/" frameborder="0"></iframe>
+<iframe width="1000px!important" height="1400" src="https://ds-algo-official.netlify.app/" frameborder="0" allowfullscreen style="zoom:0.7;"></iframe>
 
 
 
