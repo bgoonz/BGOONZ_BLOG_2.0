@@ -99,7 +99,7 @@ sections:
       allow="encrypted-media"></iframe>   
     actions: []
     type: section_content
-    title: Music
+    title: Spotify
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
