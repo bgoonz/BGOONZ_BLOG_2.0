@@ -86,7 +86,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |
-      <iframe src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>   
+      <iframe  style="zoom:0.75;" src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>   
   
 
     actions: []
@@ -168,7 +168,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |
-      <iframe width="800" height="575"
+      <iframe  style="zoom:0.75;" width="800" height="575"
        src="https://stackblitz.com/edit/sdk-github-project-earatb?devtoolsheight=33\&embed=1\&file=index.ts" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -186,7 +186,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |-
-      <iframe width="800" height="575"
+      <iframe  style="zoom:0.75;" width="800" height="575"
         src="https://code-playground.netlify.app/index.html" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -197,7 +197,7 @@ sections:
     image_alt: bryan-guner
     image_position: left
     content: >-
-      <iframe width="560" height="415"
+      <iframe  style="zoom:0.75;" width="560" height="415"
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -208,7 +208,7 @@ sections:
     image_alt: blog
     image_position: left
     content: |-
-      <iframe width="800" height="575"
+      <iframe  style="zoom:0.75;" width="800" height="575"
        src="https://blog-w-comments.vercel.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -219,7 +219,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |-
-      <iframe width="800" height="575"
+      <iframe  style="zoom:0.75;" width="800" height="575"
        src="https://embedable-content.netlify.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -230,7 +230,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |-
-      <iframe width="800" height="575"
+      <iframe  style="zoom:0.75;" width="800" height="575"
         src="https://bgoonz.blogspot.com/" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -249,7 +249,7 @@ sections:
     type: section_cta
 seo:
   title: Web-Dev-Hub
-  description: The preview of the Web-Dev-Hub
+  description: Web-Dev-Hub
   extra:
     - name: 'og:type'
       value: website
@@ -258,7 +258,7 @@ seo:
       value: Web-Dev-Hub
       keyName: property
     - name: 'og:description'
-      value: The preview of the Web-Dev-Hub
+      value: Web-Dev-Hub
       keyName: property
     - name: 'og:image'
       value: images/4.jpg
@@ -269,9 +269,10 @@ seo:
     - name: 'twitter:title'
       value: Web-Dev-Hub
     - name: 'twitter:description'
-      value: The preview of the Web-Dev-Hub
+      value: Web-Dev-Hub
     - name: 'twitter:image'
       value: images/4.jpg
       relativeUrl: true
 template: advanced
 ---
+
