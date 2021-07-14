@@ -89,8 +89,8 @@ sections:
     image_position: left
     actions: []
     type: section_content
-  - section_id: lorem-ipsum
-    image_alt: lorem-ipsum
+  - section_id: Music
+    image_alt: listen to my playlist
     image_position: left
     content: >
       <iframe  style="zoom:0.75;"
@@ -99,6 +99,7 @@ sections:
       allow="encrypted-media"></iframe>   
     actions: []
     type: section_content
+    title: Spotify
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
