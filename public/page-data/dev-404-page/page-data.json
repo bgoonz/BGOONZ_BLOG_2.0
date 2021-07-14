@@ -1,1 +1,58 @@
-{"componentChunkName":"component---cache-dev-404-page-js","path":"/dev-404-page/","result":{"data":{"allSitePage":{"nodes":[{"path":"/"},{"path":"/notes-template/"},{"path":"/showcase/"},{"path":"/blog/"},{"path":"/blog/my-medium/"},{"path":"/blog/python-for-js-dev/"},{"path":"/docs/sitemap/"},{"path":"/blog/data-structures/"},{"path":"/blog/python-resources/"},{"path":"/docs/about/me/"},{"path":"/docs/about/resume/"},{"path":"/docs/"},{"path":"/review/"},{"path":"/docs/articles/gallery/"},{"path":"/docs/articles/algo/"},{"path":"/docs/articles/"},{"path":"/docs/articles/basic-web-dev/"},{"path":"/docs/faq/"},{"path":"/docs/faq/contact/"},{"path":"/docs/interact/clock/"},{"path":"/docs/articles/resources/"},{"path":"/docs/interact/"},{"path":"/docs/interact/jupyter-notebooks/"},{"path":"/docs/links/Social/"},{"path":"/docs/articles/ten-jamstack-apis-to-checkout/"},{"path":"/docs/links/my-websites/"},{"path":"/docs/links/medium-links/"},{"path":"/docs/quick-reference/"},{"path":"/docs/quick-reference/Emmet/"},{"path":"/docs/quick-reference/new-repo-instructions/"},{"path":"/docs/quick-reference/installation/"},{"path":"/docs/tools/default-readme/"},{"path":"/docs/tools/notes-template/"},{"path":"/docs/react/createReactApp/"},{"path":"/docs/tools/plug-ins/"},{"path":"/docs/react/react2/"},{"path":"/docs/tools/vscode/"},{"path":"/docs/react/"},{"path":"/docs/articles/article-compilation/"},{"path":"/docs/about/"},{"path":"/docs/quick-reference/docs/"},{"path":"/docs/links/"},{"path":"/docs/articles/python/"},{"path":"/docs/tools/"}]}},"pageContext":{"menus":{}}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---cache-dev-404-page-js",
+    "path": "/dev-404-page/",
+    "result": {
+        "data": {
+            "allSitePage": {
+                "nodes": [
+                    { "path": "/" },
+                    { "path": "/notes-template/" },
+                    { "path": "/showcase/" },
+                    { "path": "/blog/" },
+                    { "path": "/blog/my-medium/" },
+                    { "path": "/blog/python-for-js-dev/" },
+                    { "path": "/docs/sitemap/" },
+                    { "path": "/blog/data-structures/" },
+                    { "path": "/blog/python-resources/" },
+                    { "path": "/docs/about/me/" },
+                    { "path": "/docs/about/resume/" },
+                    { "path": "/docs/" },
+                    { "path": "/review/" },
+                    { "path": "/docs/articles/gallery/" },
+                    { "path": "/docs/articles/algo/" },
+                    { "path": "/docs/articles/" },
+                    { "path": "/docs/articles/basic-web-dev/" },
+                    { "path": "/docs/faq/" },
+                    { "path": "/docs/faq/contact/" },
+                    { "path": "/docs/interact/clock/" },
+                    { "path": "/docs/articles/resources/" },
+                    { "path": "/docs/interact/" },
+                    { "path": "/docs/interact/jupyter-notebooks/" },
+                    { "path": "/docs/links/Social/" },
+                    { "path": "/docs/articles/ten-jamstack-apis-to-checkout/" },
+                    { "path": "/docs/links/my-websites/" },
+                    { "path": "/docs/links/medium-links/" },
+                    { "path": "/docs/quick-reference/" },
+                    { "path": "/docs/quick-reference/Emmet/" },
+                    { "path": "/docs/quick-reference/new-repo-instructions/" },
+                    { "path": "/docs/quick-reference/installation/" },
+                    { "path": "/docs/tools/default-readme/" },
+                    { "path": "/docs/tools/notes-template/" },
+                    { "path": "/docs/react/createReactApp/" },
+                    { "path": "/docs/tools/plug-ins/" },
+                    { "path": "/docs/react/react2/" },
+                    { "path": "/docs/tools/vscode/" },
+                    { "path": "/docs/react/" },
+                    { "path": "/docs/articles/article-compilation/" },
+                    { "path": "/docs/about/" },
+                    { "path": "/docs/quick-reference/docs/" },
+                    { "path": "/docs/links/" },
+                    { "path": "/docs/articles/python/" },
+                    { "path": "/docs/tools/" }
+                ]
+            }
+        },
+        "pageContext": { "menus": {} }
+    },
+    "staticQueryHashes": []
+}

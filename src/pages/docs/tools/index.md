@@ -50,11 +50,11 @@ template: docs
 
 <iframe title="Video Background 1" src="https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 
-  See the Pen <a href="https://codepen.io/bgoonz/pen/BaRLKBd">
-  Video Background 1</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+See the Pen <a href="https://codepen.io/bgoonz/pen/BaRLKBd">
+Video Background 1</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
+on <a href="https://codepen.io">CodePen</a>.
 
+</iframe>
 
 <br>
 <br>
@@ -86,7 +86,6 @@ template: docs
 
 <iframe src="https://resourcerepo2.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
-
 <br>
 
 <br>
@@ -98,7 +97,6 @@ template: docs
 <br>
 
 <iframe src="https://lambda-resources.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
-
 
 <br>
 
@@ -120,7 +118,6 @@ template: docs
 
 <iframe src="https://devtools42.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
-
 <br>
 
 <br>
@@ -129,7 +126,6 @@ template: docs
 
 <br>
 <iframe src="https://ternary42.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
-
 
 <br>
 
@@ -141,7 +137,6 @@ template: docs
 
 <iframe src="https://githtmlpreview.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
-
 <br>
 
 <br>
@@ -152,7 +147,6 @@ template: docs
 
 <iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
-
 <br>
 
 <br>
@@ -162,7 +156,6 @@ template: docs
 <br>
 
 <iframe src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
-
 
 <br>
 

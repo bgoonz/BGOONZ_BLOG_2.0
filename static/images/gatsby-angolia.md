@@ -1,11 +1,10 @@
 # Adding Search with Algolia
 
-> This guide will run you through the process of setting up a custom search experience powered by  Algolia  on a Gatsby site. What is Algolia…
+> This guide will run you through the process of setting up a custom search experience powered by Algolia on a Gatsby site. What is Algolia…
 
 This guide will run you through the process of setting up a custom search experience powered by [Algolia](https://www.algolia.com/) on a Gatsby site.
 
-[](#what-is-algolia)What is Algolia?
-------------------------------------
+## [](#what-is-algolia)What is Algolia?
 
 Algolia is a site search hosting platform and API that provides you with the components you need to build powerful search functionality without setting up your own server.
 
@@ -13,8 +12,7 @@ Algolia will host the search index. You tell it what pages you have, where they 
 
 Algolia provides a free tier that offers a limited number of monthly searches. A paid plan is required for higher volumes.
 
-[](#indexing-and-searching)Indexing and searching
--------------------------------------------------
+## [](#indexing-and-searching)Indexing and searching
 
 There are two stages to providing search functionality: indexing your pages and building a search interface for users to query the index.
 
@@ -24,8 +22,7 @@ To build the user interface for searching, this guide will use [React InstantSea
 
 > Note: If you want to build a search for technical documentation, Algolia provides a product called [DocSearch](https://docsearch.algolia.com/) that simplifies the process further and eliminates the need for manual indexing. This is the preferred approach for documentation sites.
 
-[](#setting-up-the-project)Setting up the project
--------------------------------------------------
+## [](#setting-up-the-project)Setting up the project
 
 This guide will set up a search based on the [Gatsby starter blog](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/starters/gatsbyjs/gatsby-starter-blog/). You can base it on your own project instead, but that might require minor modifications to the code, depending on your page structure and the frameworks you use.
 
@@ -35,8 +32,7 @@ Create a new site using
 
 The starter blog contains the pages you will index in the directory `content/blog`. These are Markdown files that have the [frontmatter field](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files) `title`. It is referenced when configuring the Algolia query. If you call this field something else, the query needs to be modified.
 
-[](#indexing)Indexing
----------------------
+## [](#indexing)Indexing
 
 Now that you have a project set up you can proceed to indexing your pages in Algolia.
 
@@ -52,7 +48,7 @@ If you don’t already have an Algolia account, [create one](https://www.algolia
 
 Then, go to [the ‘API Keys’ section of your Algolia profile](https://www.algolia.com/api-keys). It should look like this screenshot, only with letters and numbers instead of black boxes:
 
- [![The API Keys section of the Algolia profile](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/321ea/algolia-api-keys.png "The API Keys section of the Algolia profile")](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/d26de/algolia-api-keys.png) 
+[![The API Keys section of the Algolia profile](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/321ea/algolia-api-keys.png 'The API Keys section of the Algolia profile')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/d26de/algolia-api-keys.png)
 
 Copy out the Application ID, Search-Only API Key, and Admin API Key from Algolia and create a file called `.env` in the root of your project (`gatsby-algolia-guide` if created as described above). This file contains your [project environment variables](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/how-to/local-development/environment-variables). Replace the placeholders with your copied values:
 
@@ -106,7 +102,7 @@ Check that `graphql resulted in` is followed by the number of pages in your proj
 
 Log in to your Algolia account, go to “Indices” and then select the “Page” index and you should see your indexed page data.
 
- [![Algolia index displaying the indexed page](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/4fbad40aaf341ec977e903213c235827/321ea/algolia-index.png "Algolia index displaying the indexed page")](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/4fbad40aaf341ec977e903213c235827/b8471/algolia-index.png) 
+[![Algolia index displaying the indexed page](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/4fbad40aaf341ec977e903213c235827/321ea/algolia-index.png 'Algolia index displaying the indexed page')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/4fbad40aaf341ec977e903213c235827/b8471/algolia-index.png)
 
 ### [](#troubleshooting)Troubleshooting
 
@@ -114,17 +110,16 @@ If you get the error `GraphQLError: Field "fileAbsolutePath" is not defined by t
 
 Algolia has an upper bound of 10KB for an index entry. If you get the error `AlgoliaSearchError: Record at the position XX objectID=xx-xx-xx-xx-xx is too big size=xxxx bytes` it means you exceeded that limit. Note how the excerpts are pruned to 5000 characters in the query. Make sure you prune long fields and don’t index unnecessary data.
 
-[](#adding-the-user-interface)Adding the user interface
--------------------------------------------------------
+## [](#adding-the-user-interface)Adding the user interface
 
 Now that there is data in the index, it is time to build the user interface for searching. It will display as a magnifying glass icon button that, when clicked, expands into a form field. Search results will appear in a popover below the input field as the user types.
 
 The guide will use the following frameworks:
 
-*   [React InstantSearch](https://community.algolia.com/react-instantsearch), a component library provided by Algolia for easily building search interfaces.
-*   [Algolia Search](https://www.npmjs.com/package/algoliasearch) provides the API client for calling Algolia.
-*   [Styled Components](https://styled-components.com/) for embedding the CSS in the code, integrated using the [Gatsby styled component plugin](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/plugins/gatsby-plugin-styled-components/).
-*   [Styled Icons](https://styled-icons.js.org/) provides the magnifying glass icon for the search bar.
+-   [React InstantSearch](https://community.algolia.com/react-instantsearch), a component library provided by Algolia for easily building search interfaces.
+-   [Algolia Search](https://www.npmjs.com/package/algoliasearch) provides the API client for calling Algolia.
+-   [Styled Components](https://styled-components.com/) for embedding the CSS in the code, integrated using the [Gatsby styled component plugin](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/plugins/gatsby-plugin-styled-components/).
+-   [Styled Icons](https://styled-icons.js.org/) provides the magnifying glass icon for the search bar.
 
 Styled Components can also be replaced by any other CSS solution you prefer.
 
@@ -212,8 +207,7 @@ src/components/search/styled-search-result.js
 
 `Popover` creates a popover floating under the search box. The `show` property determines whether it is visible or not.
 
-[](#usage)Usage
----------------
+## [](#usage)Usage
 
 The search widget is now ready for use. It needs to be placed somewhere in your project’s layout. If you start from Gatsby starter blog, you can use the `layout` component:
 
@@ -223,34 +217,30 @@ If you started from a different project your layout may look different; the high
 
 Note that this is where you define the search indices you wish to search. They are passed as a property to `Search`.
 
-[](#running)Running
--------------------
+## [](#running)Running
 
 Running `gatsby develop` should now give you a working search that looks something like this:
 
- [![Search widget displaying search results](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/c2b0e4bba13a5850a9c9454f9a1b3886/321ea/algolia-final-search.png "Search widget displaying search results")](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/c2b0e4bba13a5850a9c9454f9a1b3886/e6c84/algolia-final-search.png) 
+[![Search widget displaying search results](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/c2b0e4bba13a5850a9c9454f9a1b3886/321ea/algolia-final-search.png 'Search widget displaying search results')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/c2b0e4bba13a5850a9c9454f9a1b3886/e6c84/algolia-final-search.png)
 
 You can also play around with it at [https://janosh.io/blog](https://janosh.io/blog).
 
-[](#deploying-to-netlify)Deploying to Netlify
----------------------------------------------
+## [](#deploying-to-netlify)Deploying to Netlify
 
 If you try to deploy the project to Netlify, the deployment will fail with the error `AlgoliaSearchError: Please provide an application ID`. This is because Netlify does does not have access to the Algolia configuration. Remember, it is kept in the `.env` file which is not checked in.
 
 You therefore need to declare the same environment variables you put in `.env` in Netlify. Go to your Netlify site dashboard under **Settings > Build & deploy > Environment > Environment variables** and enter the keys `GATSBY_ALGOLIA_APP_ID`, `GATSBY_ALGOLIA_SEARCH_KEY` and `ALGOLIA_ADMIN_KEY` with the same values as you used in the `.env` file. After a redeploy, the search should now work!
 
- [![Netlify environment variable configuration](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/3106f00be7f21a1b1749ee8498cdafd8/321ea/algolia-netlify-env.png "Netlify environment variable configuration")](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/3106f00be7f21a1b1749ee8498cdafd8/22284/algolia-netlify-env.png) 
+[![Netlify environment variable configuration](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/3106f00be7f21a1b1749ee8498cdafd8/321ea/algolia-netlify-env.png 'Netlify environment variable configuration')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/3106f00be7f21a1b1749ee8498cdafd8/22284/algolia-netlify-env.png)
 
 The Netlify documentation has more information on [how to configure environment variables in Netlify](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables). Also see the [Environment Variables](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/how-to/local-development/environment-variables) guide for an overview of environment variables in Gatsby.
 
-[](#additional-resources)Additional Resources
----------------------------------------------
+## [](#additional-resources)Additional Resources
 
 If you have any issues or if you want to learn more about using Algolia for search, check out this tutorial from Jason Lengstorf:
 
 [https://youtu.be/VSkXyuXzwlc](https://youtu.be/VSkXyuXzwlc)
 
 You can also find stories of companies using Gatsby + Algolia together [in the Algolia section of the blog](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/blog/tags/algolia).
-
 
 [Source](https://www.gatsbyjs.com/docs/adding-search-with-algolia/)

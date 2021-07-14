@@ -37,10 +37,7 @@ template: docs
 
 # Fundamental Data Structures In JavaScript
 
-
 <iframe  height="1400" src="https://ds-algo-official.netlify.app/" frameborder="0" allowfullscreen style="zoom:0.7;"></iframe>
-
-
 
 Fundamental Data Structures In JavaScript
 
@@ -66,11 +63,9 @@ Here's the repo that the website is built on:
 
 <iframe width="700" height="515" src="https://www.youtube.com/embed/lxja8wBwN0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 -   [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
 
 <iframe width="700" height="515" src="https://www.youtube.com/embed/videoseries?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 -   [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
 
@@ -84,11 +79,9 @@ Here's the repo that the website is built on:
 
 <iframe width="700" height="515" src="https://www.youtube.com/embed/HtSuA80QTyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 -   [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
 
 <iframe width="700" height="515" src="https://www.youtube.com/embed/5_5oE5lgrhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ### Books
 
@@ -1545,5 +1538,3 @@ Graph
         console.log('graph relations (number of edges):', graph.relations()); // => 4
         console.log('path from 6 to 1:', graph.pathFromTo(6, 1)); // => 6-4-3-2-1
 ````
-
-

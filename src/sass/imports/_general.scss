@@ -10,7 +10,7 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    overflow:auto;
+    overflow: auto;
 }
 
 a {
@@ -108,7 +108,7 @@ pre {
     }
 }
 
-:not(pre)>code {
+:not(pre) > code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -168,8 +168,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li>ul,
-li>ol {
+li > ul,
+li > ol {
     margin-bottom: 0;
 }
 
@@ -183,8 +183,6 @@ hr {
         margin-top: 0;
     }
 }
-
-
 
 img {
     height: auto;
