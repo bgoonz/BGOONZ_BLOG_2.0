@@ -11,9 +11,12 @@ seo:
 template: docs
 ---
 
-## Python For JS Devs
+
+## Python For JS Developers:
+
 
 # Python Study Guide for a JavaScript Programmer
+
 
 A guide to commands in Python from what you know in JavaScript
 
