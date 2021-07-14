@@ -213,6 +213,7 @@ models:
         type: html
         label: extra
         description: extra imbedded content
+        default: <p></p>
   blog:
     type: page
     urlPath: /blog
