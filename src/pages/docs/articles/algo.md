@@ -69,8 +69,7 @@ Here's the repo that the website is built on:
 
 -   [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
 
-
-<iframe src="https://www.khanacademy.org/computing/computer-science/algorithms"></iframe>
+<iframe width="714" height="401" src="https://www.youtube.com/embed/CvSOaYi89B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
 
