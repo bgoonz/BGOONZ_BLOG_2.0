@@ -81,15 +81,6 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
-                        "label": "Nav",
-                        "url": "docs/docs",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
                     }
                 ],
                 "type": "action_menu"
