@@ -11,7 +11,7 @@ sections:
         url: 'https://friendly-panda-b61ab.netlify.app/contact/'
         style: primary
         icon_class: linkedin
-        new_window: false
+        new_window: true
         no_follow: false
         type: action
   - section_id: features
