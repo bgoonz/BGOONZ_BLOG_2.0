@@ -90,6 +90,7 @@ sections:
     actions: []
     type: section_content
     image: images/goals.jpg
+    title: Web
   - title: Music
     section_id: guitar
     image_alt: bryan-guner
