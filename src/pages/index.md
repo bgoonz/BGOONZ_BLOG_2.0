@@ -89,6 +89,19 @@ sections:
     image_position: left
     actions: []
     type: section_content
+    image: images/goals.jpg
+    title: Web Audio DAW
+  - title: Music
+    section_id: guitar
+    image_alt: bryan-guner
+    image_position: left
+    content: >-
+      <iframe  style="zoom:0.75;" width="560" height="415"
+      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
+      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
   - section_id: Music
     image_alt: listen to my playlist
     image_position: left
@@ -199,17 +212,6 @@ sections:
         src="https://code-playground.netlify.app/index.html" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
-  - title: Music
-    section_id: guitar
-    image_alt: bryan-guner
-    image_position: left
-    content: >-
-      <iframe  style="zoom:0.75;" width="560" height="415"
-      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
-      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Nextjs & SanityCMS Blog W Comments
