@@ -209,7 +209,7 @@ models:
         models:
           - stackbit_page_meta
         label: Seo
-      - name: ''
+      - name: extra
         type: string
   blog:
     type: page
