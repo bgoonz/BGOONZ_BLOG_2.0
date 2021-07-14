@@ -64,6 +64,9 @@ Here's the repo that the website is built on:
 
 -   [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 -   [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
 
 -   [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
