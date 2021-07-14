@@ -1,7 +1,7 @@
 ---
 title: My Playlist
 sections:
-  - section_id: hero
+  - section_id: Intro
     type: section_hero
     title: 'I am a musician, electrical engineer & web developer'
     image: images/cool annimation.gif
