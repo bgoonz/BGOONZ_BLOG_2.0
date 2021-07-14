@@ -211,6 +211,7 @@ models:
         label: Seo
       - name: extra
         type: html
+        label: extra
   blog:
     type: page
     urlPath: /blog
