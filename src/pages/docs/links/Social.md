@@ -10,13 +10,13 @@ seo:
 template: advanced
 ---
 
+<div align="center">
 
-| [GitHub](https://github.com/bgoonz)          | [Replit](https://repl.it/@bgoonz/)                                        | [Medium](https://bryanguner.medium.com/)                                                          | [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN) |
-| -------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [Gitlab](https://gitlab.com/bryan.guner.dev) | [Redit](https://www.reddit.com/user/bgoonz1)                              | [webcomponents.dev](https://webcomponents.dev/user/bgoonz)                                        | [dev.to](https://dev.to/bgoonz)                                                     |
-| [Bitbucket](https://bitbucket.org/bgoonz/)   | [runkit](https://runkit.com/bgoonz)                                       | [npm](https://www.npmjs.com/~bgoonz11)                                                            | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)                |
-| [code pen](https://codepen.io/bgoonz)        | [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner) | [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368) | [Notation](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)  |
-| [Glitch](https://glitch.com/@bgoonz)         | [Netlify](https://app.netlify.com/user/settings#profile)                  | [AngelList](https://angel.co/u/bryan-guner)                                                       | [StackShare](https://stackshare.io/bryanguner)                                      |
-| [Plunk](http://plnkr.co/account/plunks)      | [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)                | [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)           | [giphy](https://giphy.com/channel/bryanguner)                                       |
+## ➤ Connect with me:
 
-|
+<p align="center">
+  <a href="mailto:bryan.guner@gmail.com"><img src="https://img.icons8.com/color/96/000000/gmail.png" alt="email"/></a><a href="https://www.facebook.com/bryan.guner/"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook"/></a><a href="https://twitter.com/bgooonz"><img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt="twitter"/></a><a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos"><img src="https://img.icons8.com/color/96/000000/youtube.png" alt="youtube"/></a><a href="https://www.instagram.com/bgoonz/?hl=en"><img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="instagram"/></a><a href="https://www.pinterest.com/bryanguner/_saved/"><img src="https://img.icons8.com/color/96/000000/pinterest--v1.png" alt="pinterest"/></a><a href="https://www.linkedin.com/in/bryan-guner-046199128/"><img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin"/></a>
+  <a href="https://bryanguner.medium.com/"><img src="https://img.icons8.com/color/96/000000/medium-logo.png" alt="medium"/></a><a href="https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw"><img src="https://img.icons8.com/color/96/000000/spotify--v1.png" alt="spotify"/></a>
+  </p>
+
+</div>

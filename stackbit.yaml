@@ -209,6 +209,11 @@ models:
         models:
           - stackbit_page_meta
         label: Seo
+      - name: extra
+        type: html
+        label: extra
+        description: extra imbedded content
+        default: <p></p>
   blog:
     type: page
     urlPath: /blog

@@ -10,6 +10,7 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    overflow:auto;
 }
 
 a {
@@ -23,6 +24,15 @@ a {
     &:hover {
         color: $gray-600;
     }
+}
+
+iframe {
+    overflow-y: auto;
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 4px solid gold;
+    height: 1750px;
+    width: 1250px !important;
 }
 
 h1,
@@ -98,7 +108,7 @@ pre {
     }
 }
 
-:not(pre) > code {
+:not(pre)>code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -158,8 +168,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
     margin-bottom: 0;
 }
 
@@ -174,19 +184,14 @@ hr {
     }
 }
 
-embed,
-iframe,
-object,
-video {
-    max-width: 1400px!important;
-}
+
 
 img {
     height: auto;
     max-width: 100%;
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 841px) {
     blockquote {
         font-size: 1.5em;
         line-height: 1.3;

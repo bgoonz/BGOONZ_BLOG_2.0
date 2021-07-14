@@ -108,14 +108,14 @@
             &:not(:only-child) {
                 -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
-                max-width: 50%;
+                max-width: 80%;
             }
         }
     }
 
     .block-body {
         &:not(:only-child) {
-            text-align: left;
+            
 
             .block-buttons {
                 -ms-flex-pack: start;
@@ -133,14 +133,14 @@
 @media only screen and (min-width: 1001px) {
     .block-image {
         &:not(:only-child) {
-            padding-right: 2.5em;
+            padding-right: 0.5em;
         }
     }
 
     .grid-swap {
         .block-image {
             &:not(:only-child) {
-                padding-left: 2.5em;
+                padding-left: 0.5em;
                 padding-right: 0.9375em;
             }
         }
@@ -152,7 +152,7 @@
     .has-gradient {
         border-radius: $border-radius;
         margin-bottom: 1.875em;
-        padding: 2.75em 3vw 1.875em;
+        padding: 3.75em 3vw 1.875em;
     }
 
     .block-header {
@@ -217,6 +217,8 @@
     }
 
     .grid-item {
+        text-align: center;
+
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
