@@ -10,7 +10,7 @@ sections:
       - label: Contact
         url: 'https://friendly-panda-b61ab.netlify.app/contact/'
         style: primary
-        icon_class: dev
+        icon_class: linkedin
         new_window: false
         no_follow: false
         type: action
