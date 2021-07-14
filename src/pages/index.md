@@ -89,7 +89,7 @@ sections:
     image_position: left
     actions: []
     type: section_content
-  - section_id: lorem-ipsum
+  - section_id: Music
     image_alt: lorem-ipsum
     image_position: left
     content: >
