@@ -1,13 +1,17 @@
-var plugins = [{
-      plugin: require('/workspace/BGOONZ_BLOG_2.0/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('/workspace/BGOONZ_BLOG_2.0/node_modules/gatsby-plugin-dark-mode/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('/workspace/BGOONZ_BLOG_2.0/gatsby-ssr'),
-      options: {"plugins":[]},
-    }]
+var plugins = [
+    {
+        plugin: require('/workspace/BGOONZ_BLOG_2.0/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+        options: { plugins: [] }
+    },
+    {
+        plugin: require('/workspace/BGOONZ_BLOG_2.0/node_modules/gatsby-plugin-dark-mode/gatsby-ssr'),
+        options: { plugins: [] }
+    },
+    {
+        plugin: require('/workspace/BGOONZ_BLOG_2.0/gatsby-ssr'),
+        options: { plugins: [] }
+    }
+];
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
@@ -20,33 +24,33 @@ var plugins = [{
 //   },
 // ]
 
-const apis = require(`./api-ssr-docs`)
+const apis = require(`./api-ssr-docs`);
 
 // Run the specified API in any plugins that have implemented it
 module.exports = (api, args, defaultReturn, argTransform) => {
-  if (!apis[api]) {
-    console.log(`This API doesn't exist`, api)
-  }
-
-  // Run each plugin in series.
-  // eslint-disable-next-line no-undef
-  let results = plugins.map(plugin => {
-    if (!plugin.plugin[api]) {
-      return undefined
+    if (!apis[api]) {
+        console.log(`This API doesn't exist`, api);
     }
-    const result = plugin.plugin[api](args, plugin.options)
-    if (result && argTransform) {
-      args = argTransform({ args, result })
+
+    // Run each plugin in series.
+    // eslint-disable-next-line no-undef
+    let results = plugins.map((plugin) => {
+        if (!plugin.plugin[api]) {
+            return undefined;
+        }
+        const result = plugin.plugin[api](args, plugin.options);
+        if (result && argTransform) {
+            args = argTransform({ args, result });
+        }
+        return result;
+    });
+
+    // Filter out undefined results.
+    results = results.filter((result) => typeof result !== `undefined`);
+
+    if (results.length > 0) {
+        return results;
+    } else {
+        return [defaultReturn];
     }
-    return result
-  })
-
-  // Filter out undefined results.
-  results = results.filter(result => typeof result !== `undefined`)
-
-  if (results.length > 0) {
-    return results
-  } else {
-    return [defaultReturn]
-  }
-}
+};
