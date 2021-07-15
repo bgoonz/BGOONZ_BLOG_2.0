@@ -5,8 +5,8 @@ description: 'How to find out where npm installs the packages'
 
 When you install a package using `npm` you can perform 2 types of installation:
 
-* a local install
-* a global install
+-   a local install
+-   a global install
 
 By default, when you type an `npm install` command, like:
 

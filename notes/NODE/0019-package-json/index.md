@@ -25,7 +25,7 @@ This is another package.json:
 
 ```json
 {
-  "name": "test-project"
+    "name": "test-project"
 }
 ```
 
@@ -35,93 +35,93 @@ Here's a much more complex example, which was extracted from a sample Vue.js app
 
 ```json
 {
-  "name": "test-project",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
-  "main": "src/main.js",
-  "private": true,
-  "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
-    "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit",
-    "build": "node build/build.js"
-  },
-  "dependencies": {
-    "vue": "^2.5.2"
-  },
-  "devDependencies": {
-    "autoprefixer": "^7.1.2",
-    "babel-core": "^6.22.1",
-    "babel-eslint": "^8.2.1",
-    "babel-helper-vue-jsx-merge-props": "^2.0.3",
-    "babel-jest": "^21.0.2",
-    "babel-loader": "^7.1.1",
-    "babel-plugin-dynamic-import-node": "^1.2.0",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.22.0",
-    "babel-plugin-transform-vue-jsx": "^3.5.0",
-    "babel-preset-env": "^1.3.2",
-    "babel-preset-stage-2": "^6.22.0",
-    "chalk": "^2.0.1",
-    "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.28.0",
-    "eslint": "^4.15.0",
-    "eslint-config-airbnb-base": "^11.3.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-import-resolver-webpack": "^0.8.3",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-vue": "^4.0.0",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^1.1.4",
-    "friendly-errors-webpack-plugin": "^1.6.1",
-    "html-webpack-plugin": "^2.30.1",
-    "jest": "^22.0.4",
-    "jest-serializer-vue": "^0.3.0",
-    "node-notifier": "^5.1.2",
-    "optimize-css-assets-webpack-plugin": "^3.2.0",
-    "ora": "^1.2.0",
-    "portfinder": "^1.0.13",
-    "postcss-import": "^11.0.0",
-    "postcss-loader": "^2.0.8",
-    "postcss-url": "^7.2.1",
-    "rimraf": "^2.6.0",
-    "semver": "^5.3.0",
-    "shelljs": "^0.7.6",
-    "uglifyjs-webpack-plugin": "^1.1.1",
-    "url-loader": "^0.5.8",
-    "vue-jest": "^1.0.2",
-    "vue-loader": "^13.3.0",
-    "vue-style-loader": "^3.0.1",
-    "vue-template-compiler": "^2.5.2",
-    "webpack": "^3.6.0",
-    "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
-  },
-  "engines": {
-    "node": ">= 6.0.0",
-    "npm": ">= 3.0.0"
-  },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
+    "name": "test-project",
+    "version": "1.0.0",
+    "description": "A Vue.js project",
+    "main": "src/main.js",
+    "private": true,
+    "scripts": {
+        "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+        "start": "npm run dev",
+        "unit": "jest --config test/unit/jest.conf.js --coverage",
+        "test": "npm run unit",
+        "lint": "eslint --ext .js,.vue src test/unit",
+        "build": "node build/build.js"
+    },
+    "dependencies": {
+        "vue": "^2.5.2"
+    },
+    "devDependencies": {
+        "autoprefixer": "^7.1.2",
+        "babel-core": "^6.22.1",
+        "babel-eslint": "^8.2.1",
+        "babel-helper-vue-jsx-merge-props": "^2.0.3",
+        "babel-jest": "^21.0.2",
+        "babel-loader": "^7.1.1",
+        "babel-plugin-dynamic-import-node": "^1.2.0",
+        "babel-plugin-syntax-jsx": "^6.18.0",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+        "babel-plugin-transform-runtime": "^6.22.0",
+        "babel-plugin-transform-vue-jsx": "^3.5.0",
+        "babel-preset-env": "^1.3.2",
+        "babel-preset-stage-2": "^6.22.0",
+        "chalk": "^2.0.1",
+        "copy-webpack-plugin": "^4.0.1",
+        "css-loader": "^0.28.0",
+        "eslint": "^4.15.0",
+        "eslint-config-airbnb-base": "^11.3.0",
+        "eslint-friendly-formatter": "^3.0.0",
+        "eslint-import-resolver-webpack": "^0.8.3",
+        "eslint-loader": "^1.7.1",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-vue": "^4.0.0",
+        "extract-text-webpack-plugin": "^3.0.0",
+        "file-loader": "^1.1.4",
+        "friendly-errors-webpack-plugin": "^1.6.1",
+        "html-webpack-plugin": "^2.30.1",
+        "jest": "^22.0.4",
+        "jest-serializer-vue": "^0.3.0",
+        "node-notifier": "^5.1.2",
+        "optimize-css-assets-webpack-plugin": "^3.2.0",
+        "ora": "^1.2.0",
+        "portfinder": "^1.0.13",
+        "postcss-import": "^11.0.0",
+        "postcss-loader": "^2.0.8",
+        "postcss-url": "^7.2.1",
+        "rimraf": "^2.6.0",
+        "semver": "^5.3.0",
+        "shelljs": "^0.7.6",
+        "uglifyjs-webpack-plugin": "^1.1.1",
+        "url-loader": "^0.5.8",
+        "vue-jest": "^1.0.2",
+        "vue-loader": "^13.3.0",
+        "vue-style-loader": "^3.0.1",
+        "vue-template-compiler": "^2.5.2",
+        "webpack": "^3.6.0",
+        "webpack-bundle-analyzer": "^2.9.0",
+        "webpack-dev-server": "^2.9.1",
+        "webpack-merge": "^4.1.0"
+    },
+    "engines": {
+        "node": ">= 6.0.0",
+        "npm": ">= 3.0.0"
+    },
+    "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
 }
 ```
 
 there are _lots_ of things going on here:
 
-* `version` indicates the current version
-* `name` sets the application/package name
-* `description` is a brief description of the app/package
-* `main` set the entry point for the application
-* `private` if set to `true` prevents the app/package to be accidentally published on `npm`
-* `scripts` defines a set of node scripts you can run
-* `dependencies` sets a list of `npm` packages installed as dependencies
-* `devDependencies` sets a list of `npm` packages installed as development dependencies
-* `engines` sets which versions of Node.js this package/app works on
-* `browserslist` is used to tell which browsers (and their versions) you want to support
+-   `version` indicates the current version
+-   `name` sets the application/package name
+-   `description` is a brief description of the app/package
+-   `main` set the entry point for the application
+-   `private` if set to `true` prevents the app/package to be accidentally published on `npm`
+-   `scripts` defines a set of node scripts you can run
+-   `dependencies` sets a list of `npm` packages installed as dependencies
+-   `devDependencies` sets a list of `npm` packages installed as development dependencies
+-   `engines` sets which versions of Node.js this package/app works on
+-   `browserslist` is used to tell which browsers (and their versions) you want to support
 
 All those properties are used by either `npm` or other tools that we can use.
 
@@ -155,7 +155,7 @@ Example:
 
 ```json
 {
-  "author": "Joe <joe@whatever.com> (https://whatever.com)"
+    "author": "Joe <joe@whatever.com> (https://whatever.com)"
 }
 ```
 
@@ -163,11 +163,11 @@ Can also be used with this format:
 
 ```json
 {
-  "author": {
-    "name": "Joe",
-    "email": "joe@whatever.com",
-    "url": "https://whatever.com"
-  }
+    "author": {
+        "name": "Joe",
+        "email": "joe@whatever.com",
+        "url": "https://whatever.com"
+    }
 }
 ```
 
@@ -179,7 +179,7 @@ Example:
 
 ```json
 {
-  "contributors": ["Joe <joe@whatever.com> (https://whatever.com)"]
+    "contributors": ["Joe <joe@whatever.com> (https://whatever.com)"]
 }
 ```
 
@@ -187,13 +187,13 @@ Can also be used with this format:
 
 ```json
 {
-  "contributors": [
-    {
-      "name": "Joe",
-      "email": "joe@whatever.com",
-      "url": "https://whatever.com"
-    }
-  ]
+    "contributors": [
+        {
+            "name": "Joe",
+            "email": "joe@whatever.com",
+            "url": "https://whatever.com"
+        }
+    ]
 }
 ```
 
@@ -205,7 +205,7 @@ Example:
 
 ```json
 {
-  "bugs": "https://github.com/whatever/package/issues"
+    "bugs": "https://github.com/whatever/package/issues"
 }
 ```
 
@@ -217,7 +217,7 @@ Example:
 
 ```json
 {
-  "homepage": "https://whatever.com/package"
+    "homepage": "https://whatever.com/package"
 }
 ```
 
