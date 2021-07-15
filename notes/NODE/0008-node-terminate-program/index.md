@@ -18,7 +18,7 @@ This means that any callback that's pending, any network request still being sen
 If this is fine for you, you can pass an integer that signals the operating system the exit code:
 
 ```js
-process.exit(1)
+process.exit(1);
 ```
 
 By default the exit code is `0`, which means success. Different exit codes have different meaning, which you might want to use in your own system to have the program communicate to other programs.
@@ -28,7 +28,7 @@ You can read more on exit codes at <https://nodejs.org/api/process.html#process_
 You can also set the `process.exitCode` property:
 
 ```js
-process.exitCode = 1
+process.exitCode = 1;
 ```
 
 and when the program will later end, Node.js will return that exit code.
@@ -38,14 +38,14 @@ A program will gracefully exit when all the processing is done.
 Many times with Node.js we start servers, like this HTTP server:
 
 ```js
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hi!')
-})
+    res.send('Hi!');
+});
 
-app.listen(3000, () => console.log('Server ready'))
+app.listen(3000, () => console.log('Server ready'));
 ```
 
 This program is never going to end. If you call `process.exit()`, any currently pending or running request is going to be aborted. This is _not nice_.
@@ -55,21 +55,21 @@ In this case you need to send the command a SIGTERM signal, and handle that with
 > Note: `process` does not require a "require", it's automatically available.
 
 ```js
-const express = require('express')
+const express = require('express');
 
-const app = express()
+const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hi!')
-})
+    res.send('Hi!');
+});
 
-const server = app.listen(3000, () => console.log('Server ready'))
+const server = app.listen(3000, () => console.log('Server ready'));
 
 process.on('SIGTERM', () => {
-  server.close(() => {
-    console.log('Process terminated')
-  })
-})
+    server.close(() => {
+        console.log('Process terminated');
+    });
+});
 ```
 
 > What are signals? Signals are a POSIX intercommunication system: a notification sent to a process in order to notify it of an event that occurred.
@@ -81,7 +81,7 @@ process.on('SIGTERM', () => {
 You can send this signal from inside the program, in another function:
 
 ```js
-process.kill(process.pid, 'SIGTERM')
+process.kill(process.pid, 'SIGTERM');
 ```
 
 Or from another Node.js running program, or any other app running in your system that knows the PID of the process you want to terminate.

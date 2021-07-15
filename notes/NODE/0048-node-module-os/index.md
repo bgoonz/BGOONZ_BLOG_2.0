@@ -6,7 +6,7 @@ description: 'The os module of Node.js provides useful functions to interact wit
 This module provides many functions that you can use to retrieve information from the underlying operating system and the computer the program runs on, and interact with it.
 
 ```js
-const os = require('os')
+const os = require('os');
 ```
 
 There are a few useful properties that tell us some key things related to handling files:
@@ -33,29 +33,29 @@ Example:
 
 ```js
 [
-  {
-    model: 'Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz',
-    speed: 2400,
-    times: {
-      user: 281685380,
-      nice: 0,
-      sys: 187986530,
-      idle: 685833750,
-      irq: 0
+    {
+        model: 'Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz',
+        speed: 2400,
+        times: {
+            user: 281685380,
+            nice: 0,
+            sys: 187986530,
+            idle: 685833750,
+            irq: 0
+        }
+    },
+    {
+        model: 'Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz',
+        speed: 2400,
+        times: {
+            user: 282348700,
+            nice: 0,
+            sys: 161800480,
+            idle: 703509470,
+            irq: 0
+        }
     }
-  },
-  {
-    model: 'Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz',
-    speed: 2400,
-    times: {
-      user: 282348700,
-      nice: 0,
-      sys: 161800480,
-      idle: 703509470,
-      irq: 0
-    }
-  }
-]
+];
 ```
 
 ## `os.endianness()`
@@ -73,7 +73,7 @@ Return the path to the home directory of the current user.
 Example:
 
 ```js
-'/Users/joe'
+'/Users/joe';
 ```
 
 ## `os.hostname()`
@@ -89,7 +89,7 @@ It only returns a meaningful value on Linux and macOS.
 Example:
 
 ```js
-[3.68798828125, 4.00244140625, 11.1181640625]
+[3.68798828125, 4.00244140625, 11.1181640625];
 ```
 
 ## `os.networkInterfaces()`
@@ -142,12 +142,12 @@ Example:
 
 Return the platform that Node.js was compiled for:
 
-* `darwin`
-* `freebsd`
-* `linux`
-* `openbsd`
-* `win32`
-* ...more
+-   `darwin`
+-   `freebsd`
+-   `linux`
+-   `openbsd`
+-   `win32`
+-   ...more
 
 ## `os.release()`
 
@@ -165,9 +165,9 @@ Returns the number of bytes that represent the total memory available in the sys
 
 Identifies the operating system:
 
-* `Linux`
-* `Darwin` on macOS
-* `Windows_NT` on Windows
+-   `Linux`
+-   `Darwin` on macOS
+-   `Windows_NT` on Windows
 
 ## `os.uptime()`
 

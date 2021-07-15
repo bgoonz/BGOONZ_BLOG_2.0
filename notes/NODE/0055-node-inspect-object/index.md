@@ -57,7 +57,7 @@ How can you print the whole object?
 The best way to do so, while preserving the pretty print, is to use
 
 ```js
-console.log(JSON.stringify(obj, null, 2))
+console.log(JSON.stringify(obj, null, 2));
 ```
 
 where `2` is the number of spaces to use for indentation.
@@ -65,8 +65,8 @@ where `2` is the number of spaces to use for indentation.
 Another option is to use
 
 ```js
-require('util').inspect.defaultOptions.depth = null
-console.log(obj)
+require('util').inspect.defaultOptions.depth = null;
+console.log(obj);
 ```
 
 but the problem is that the nested objects after level 2 are now flattened, and this might be a problem with complex objects.

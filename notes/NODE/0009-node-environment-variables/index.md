@@ -10,7 +10,7 @@ Here is an example that accesses the NODE_ENV environment variable, which is set
 > Note: `process` does not require a "require", it's automatically available.
 
 ```js
-process.env.NODE_ENV // "development"
+process.env.NODE_ENV; // "development"
 ```
 
 Setting it to "production" before the script runs will tell Node.js that this is a production environment.

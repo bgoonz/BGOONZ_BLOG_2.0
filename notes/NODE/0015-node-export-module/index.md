@@ -10,7 +10,7 @@ A Node.js file can import functionality exposed by other Node.js files.
 When you want to import something you use
 
 ```js
-const library = require('./library')
+const library = require('./library');
 ```
 
 to import the functionality exposed in the `library.js` file that resides in the current file folder.
@@ -29,48 +29,48 @@ The first is to assign an object to `module.exports`, which is an object provide
 
 ```js
 const car = {
-  brand: 'Ford',
-  model: 'Fiesta'
-}
+    brand: 'Ford',
+    model: 'Fiesta'
+};
 
-module.exports = car
+module.exports = car;
 
 //..in the other file
 
-const car = require('./car')
+const car = require('./car');
 ```
 
 The second way is to add the exported object as a property of `exports`. This way allows you to export multiple objects, functions or data:
 
 ```js
 const car = {
-  brand: 'Ford',
-  model: 'Fiesta'
-}
+    brand: 'Ford',
+    model: 'Fiesta'
+};
 
-exports.car = car
+exports.car = car;
 ```
 
 or directly
 
 ```js
 exports.car = {
-  brand: 'Ford',
-  model: 'Fiesta'
-}
+    brand: 'Ford',
+    model: 'Fiesta'
+};
 ```
 
 And in the other file, you'll use it by referencing a property of your import:
 
 ```js
-const items = require('./items')
-items.car
+const items = require('./items');
+items.car;
 ```
 
 or
 
 ```js
-const car = require('./items').car
+const car = require('./items').car;
 ```
 
 What's the difference between `module.exports` and `exports`?

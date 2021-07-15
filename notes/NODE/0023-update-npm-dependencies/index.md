@@ -13,9 +13,9 @@ When you `npm install cowsay`, this entry is added to the `package.json` file:
 
 ```json
 {
-  "dependencies": {
-    "cowsay": "^1.3.1"
-  }
+    "dependencies": {
+        "cowsay": "^1.3.1"
+    }
 }
 ```
 
@@ -23,21 +23,21 @@ and this is an extract of `package-lock.json`, where we removed the nested depen
 
 ```json
 {
-  "requires": true,
-  "lockfileVersion": 1,
-  "dependencies": {
-    "cowsay": {
-      "version": "1.3.1",
-      "resolved": "https://registry.npmjs.org/cowsay/-/cowsay-1.3.1.tgz",
-      "integrity": "sha512-3PVFe6FePVtPj1HTeLin9v8WyLl+VmM1l1H/5P+BTTDkMAjufp+0F9eLjzRnOHzVAYeIYFF5po5NjRrgefnRMQ==",
-      "requires": {
-        "get-stdin": "^5.0.1",
-        "optimist": "~0.6.1",
-        "string-width": "~2.1.1",
-        "strip-eof": "^1.0.0"
-      }
+    "requires": true,
+    "lockfileVersion": 1,
+    "dependencies": {
+        "cowsay": {
+            "version": "1.3.1",
+            "resolved": "https://registry.npmjs.org/cowsay/-/cowsay-1.3.1.tgz",
+            "integrity": "sha512-3PVFe6FePVtPj1HTeLin9v8WyLl+VmM1l1H/5P+BTTDkMAjufp+0F9eLjzRnOHzVAYeIYFF5po5NjRrgefnRMQ==",
+            "requires": {
+                "get-stdin": "^5.0.1",
+                "optimist": "~0.6.1",
+                "string-width": "~2.1.1",
+                "strip-eof": "^1.0.0"
+            }
+        }
     }
-  }
 }
 ```
 

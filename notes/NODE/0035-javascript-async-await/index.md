@@ -27,18 +27,18 @@ An async function returns a promise, like in this example:
 
 ```js
 const doSomethingAsync = () => {
-  return new Promise(resolve => {
-    setTimeout(() => resolve('I did something'), 3000)
-  })
-}
+    return new Promise((resolve) => {
+        setTimeout(() => resolve('I did something'), 3000);
+    });
+};
 ```
 
 When you want to **call** this function you prepend `await`, and **the calling code will stop until the promise is resolved or rejected**. One caveat: the client function must be defined as `async`. Here's an example:
 
 ```js
 const doSomething = async () => {
-  console.log(await doSomethingAsync())
-}
+    console.log(await doSomethingAsync());
+};
 ```
 
 ## A quick example
@@ -86,20 +86,20 @@ This is why this code is valid:
 
 ```js
 const aFunction = async () => {
-  return 'test'
-}
+    return 'test';
+};
 
-aFunction().then(alert) // This will alert 'test'
+aFunction().then(alert); // This will alert 'test'
 ```
 
 and it's the same as:
 
 ```js
 const aFunction = () => {
-  return Promise.resolve('test')
-}
+    return Promise.resolve('test');
+};
 
-aFunction().then(alert) // This will alert 'test'
+aFunction().then(alert); // This will alert 'test'
 ```
 
 ## The code is much simpler to read
@@ -112,29 +112,29 @@ For example here's how you would get a JSON resource, and parse it, using promis
 
 ```js
 const getFirstUserData = () => {
-  return fetch('/users.json') // get users list
-    .then(response => response.json()) // parse JSON
-    .then(users => users[0]) // pick first user
-    .then(user => fetch(`/users/${user.name}`)) // get user data
-    .then(userResponse => userResponse.json()) // parse JSON
-}
+    return fetch('/users.json') // get users list
+        .then((response) => response.json()) // parse JSON
+        .then((users) => users[0]) // pick first user
+        .then((user) => fetch(`/users/${user.name}`)) // get user data
+        .then((userResponse) => userResponse.json()); // parse JSON
+};
 
-getFirstUserData()
+getFirstUserData();
 ```
 
 And here is the same functionality provided using await/async:
 
 ```js
 const getFirstUserData = async () => {
-  const response = await fetch('/users.json') // get users list
-  const users = await response.json() // parse JSON
-  const user = users[0] // pick first user
-  const userResponse = await fetch(`/users/${user.name}`) // get user data
-  const userData = await userResponse.json() // parse JSON
-  return userData
-}
+    const response = await fetch('/users.json'); // get users list
+    const users = await response.json(); // parse JSON
+    const user = users[0]; // pick first user
+    const userResponse = await fetch(`/users/${user.name}`); // get user data
+    const userData = await userResponse.json(); // parse JSON
+    return userData;
+};
 
-getFirstUserData()
+getFirstUserData();
 ```
 
 ## Multiple async functions in series

@@ -39,14 +39,14 @@ You can iterate over all the arguments (including the node path and the file pat
 
 ```js
 process.argv.forEach((val, index) => {
-  console.log(`${index}: ${val}`)
-})
+    console.log(`${index}: ${val}`);
+});
 ```
 
 You can get only the additional arguments by creating a new array that excludes the first 2 params:
 
 ```js
-const args = process.argv.slice(2)
+const args = process.argv.slice(2);
 ```
 
 If you have one argument without an index name, like this:
@@ -58,8 +58,8 @@ node app.js joe
 you can access it using
 
 ```js
-const args = process.argv.slice(2)
-args[0]
+const args = process.argv.slice(2);
+args[0];
 ```
 
 In this case:
@@ -72,8 +72,8 @@ node app.js name=joe
 parse it. The best way to do so is by using the [`minimist`](https://www.npmjs.com/package/minimist) library, which helps dealing with arguments:
 
 ```js
-const args = require('minimist')(process.argv.slice(2))
-args['name'] //joe
+const args = require('minimist')(process.argv.slice(2));
+args['name']; //joe
 ```
 
 This time you need to use double dashes before each argument name:

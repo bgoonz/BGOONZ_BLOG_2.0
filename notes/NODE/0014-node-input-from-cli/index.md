@@ -9,14 +9,14 @@ Node.js since version 7 provides the [`readline` module](https://nodejs.org/api/
 
 ```js
 const readline = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-})
+    input: process.stdin,
+    output: process.stdout
+});
 
-readline.question(`What's your name?`, name => {
-  console.log(`Hi ${name}!`)
-  readline.close()
-})
+readline.question(`What's your name?`, (name) => {
+    console.log(`Hi ${name}!`);
+    readline.close();
+});
 ```
 
 This piece of code asks the username, and once the text is entered and the user presses enter, we send a greeting.
@@ -36,19 +36,19 @@ A more complete and abstract solution is provided by the [Inquirer.js package](h
 You can install it using `npm install inquirer`, and then you can replicate the above code like this:
 
 ```js
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
 
 var questions = [
-  {
-    type: 'input',
-    name: 'name',
-    message: "What's your name?"
-  }
-]
+    {
+        type: 'input',
+        name: 'name',
+        message: "What's your name?"
+    }
+];
 
-inquirer.prompt(questions).then(answers => {
-  console.log(`Hi ${answers['name']}!`)
-})
+inquirer.prompt(questions).then((answers) => {
+    console.log(`Hi ${answers['name']}!`);
+});
 ```
 
 Inquirer.js lets you do many things like asking multiple choices, having radio buttons, confirmations, and more.
