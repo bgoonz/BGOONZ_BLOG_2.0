@@ -13,7 +13,7 @@
 //     const siteTitle = data.site.siteMetadata.title
 //     const post = data.markdownRemark;
 //     let postImg = post.frontmatter.image ? post.frontmatter.image.childImageSharp.fluid : null
-//     const tags = post.frontmatter.tags 
+//     const tags = post.frontmatter.tags
 //     let techIconPaths = []
 //     tags.forEach(tag => {
 //         let regex = new RegExp(tag, "g")
@@ -38,7 +38,7 @@
 //                                 checked={darkMode}
 //                                 onChange={() => setDarkMode(prevMode => !prevMode)}
 //                                 id="checkbox"
-//                                 className="checkbox" 
+//                                 className="checkbox"
 //                                 type="checkbox"
 //                             />
 //                             <label htmlFor="checkbox">
@@ -57,17 +57,17 @@
 //                                     <div key={i} className="article-main-icons-icon">
 //                                         <img src={icon} alt={icon}/>
 //                                     </div>
-//                                 ) 
+//                                 )
 //                             }) : ""
 //                         }
 //                     </div>
 //                     <hr/>
-//                     {postImg && 
+//                     {postImg &&
 //                         <Img fluid={postImg} />
 //                     }
 //                     <div className="article-main-body" dangerouslySetInnerHTML={{__html: post.html}} />
 //                     <div className="article-main-tags">
-//                         {post.frontmatter.tags && 
+//                         {post.frontmatter.tags &&
 //                             post.frontmatter.tags.map((tag, i) => {
 //                             return (<PostTag key={i} tag={tag} />)
 //                         })}
@@ -107,10 +107,10 @@
 //         }
 //       }
 //     markdownRemark(fields: { slug: { eq: $slug } }) {
-//         html 
+//         html
 //         frontmatter {
-//             title 
-//             date(formatString: "MMMM DD, YYYY") 
+//             title
+//             date(formatString: "MMMM DD, YYYY")
 //             tags
 //             image {
 //             childImageSharp {
@@ -118,7 +118,7 @@
 //                 ...GatsbyImageSharpFluid
 //               }
 //             }
-//           } 
+//           }
 //         }
 //     }
 // }
