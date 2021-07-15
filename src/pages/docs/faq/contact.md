@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Contact!
 sections: []
 seo:
     title: ''
@@ -13,4 +13,5 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://friendly-panda-b61ab.netlify.app/contact/" height="900px" width="100%"></iframe>
+<iframe src="https://bgoonz-blog-v3-0.netlify.app/contact/" height="900px" width="100%" style="zoom:0.75;">
+</iframe>
