@@ -1,0 +1,2129 @@
+{
+    "expireTime": 9007200881002491000,
+    "key": "transformer-remark-markdown-html-ast-390163a87e0d71b5eb1359e5c9131855--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "h1",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Emmet Cheat Sheet",
+                        "position": { "start": { "line": 2, "column": 3, "offset": 3 }, "end": { "line": 2, "column": 20, "offset": 20 } }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 20, "offset": 20 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "EMMET",
+                        "position": { "start": { "line": 4, "column": 1, "offset": 22 }, "end": { "line": 4, "column": 6, "offset": 27 } }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 22 }, "end": { "line": 4, "column": 6, "offset": 27 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "hr",
+                "properties": {},
+                "children": [],
+                "position": { "start": { "line": 6, "column": 1, "offset": 29 }, "end": { "line": 6, "column": 4, "offset": 32 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Emmet Cheat Sheet",
+                        "position": { "start": { "line": 8, "column": 5, "offset": 38 }, "end": { "line": 8, "column": 22, "offset": 55 } }
+                    }
+                ],
+                "position": { "start": { "line": 8, "column": 1, "offset": 34 }, "end": { "line": 8, "column": 22, "offset": 55 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "EMMET",
+                        "position": { "start": { "line": 10, "column": 5, "offset": 61 }, "end": { "line": 10, "column": 10, "offset": 66 } }
+                    }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 57 }, "end": { "line": 10, "column": 10, "offset": 66 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "em",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "The a toolkit for web-developers",
+                                "position": { "start": { "line": 12, "column": 2, "offset": 69 }, "end": { "line": 12, "column": 34, "offset": 101 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 12, "column": 1, "offset": 68 }, "end": { "line": 12, "column": 35, "offset": 102 } }
+                    }
+                ],
+                "position": { "start": { "line": 12, "column": 1, "offset": 68 }, "end": { "line": 12, "column": 35, "offset": 102 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Introduction",
+                        "position": { "start": { "line": 14, "column": 5, "offset": 108 }, "end": { "line": 14, "column": 17, "offset": 120 } }
+                    }
+                ],
+                "position": { "start": { "line": 14, "column": 1, "offset": 104 }, "end": { "line": 14, "column": 17, "offset": 120 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Emmet is a productivity toolkit for web developers that uses expressions to generate HTML snippets.",
+                        "position": { "start": { "line": 16, "column": 1, "offset": 122 }, "end": { "line": 16, "column": 100, "offset": 221 } }
+                    }
+                ],
+                "position": { "start": { "line": 16, "column": 1, "offset": 122 }, "end": { "line": 16, "column": 100, "offset": 221 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Installation",
+                        "position": { "start": { "line": 18, "column": 5, "offset": 227 }, "end": { "line": 18, "column": 17, "offset": 239 } }
+                    }
+                ],
+                "position": { "start": { "line": 18, "column": 1, "offset": 223 }, "end": { "line": 18, "column": 17, "offset": 239 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Normally, installation for Emmet should be a straight-forward process from the package-manager, as most of the modern text editors support Emmet.",
+                        "position": { "start": { "line": 20, "column": 1, "offset": 241 }, "end": { "line": 20, "column": 146, "offset": 386 } }
+                    }
+                ],
+                "position": { "start": { "line": 20, "column": 1, "offset": 241 }, "end": { "line": 20, "column": 146, "offset": 386 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Usage",
+                        "position": { "start": { "line": 22, "column": 5, "offset": 392 }, "end": { "line": 22, "column": 10, "offset": 397 } }
+                    }
+                ],
+                "position": { "start": { "line": 22, "column": 1, "offset": 388 }, "end": { "line": 22, "column": 10, "offset": 397 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can use Emmet in two ways:",
+                        "position": { "start": { "line": 24, "column": 1, "offset": 399 }, "end": { "line": 24, "column": 31, "offset": 429 } }
+                    }
+                ],
+                "position": { "start": { "line": 24, "column": 1, "offset": 399 }, "end": { "line": 24, "column": 31, "offset": 429 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "raw",
+                                "value": "<span id=\"856f\">",
+                                "position": { "start": { "line": 26, "column": 5, "offset": 435 }, "end": { "line": 26, "column": 21, "offset": 451 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "Tab Expand Way: Type your emmet code and press ",
+                                "position": { "start": { "line": 26, "column": 21, "offset": 451 }, "end": { "line": 26, "column": 68, "offset": 498 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "Tab" }],
+                                "position": { "start": { "line": 26, "column": 68, "offset": 498 }, "end": { "line": 26, "column": 73, "offset": 503 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " key",
+                                "position": { "start": { "line": 26, "column": 73, "offset": 503 }, "end": { "line": 26, "column": 77, "offset": 507 } }
+                            },
+                            {
+                                "type": "raw",
+                                "value": "</span>",
+                                "position": { "start": { "line": 26, "column": 77, "offset": 507 }, "end": { "line": 26, "column": 84, "offset": 514 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 26, "column": 1, "offset": 431 }, "end": { "line": 26, "column": 84, "offset": 514 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "raw",
+                                "value": "<span id=\"9aea\">",
+                                "position": { "start": { "line": 27, "column": 5, "offset": 519 }, "end": { "line": 27, "column": 21, "offset": 535 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "Interactive Method: Press ",
+                                "position": { "start": { "line": 27, "column": 21, "offset": 535 }, "end": { "line": 27, "column": 47, "offset": 561 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "alt + ctrl + Enter" }],
+                                "position": { "start": { "line": 27, "column": 47, "offset": 561 }, "end": { "line": 27, "column": 67, "offset": 581 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " and start typing your expressions. This should automatically generate HTML snippets on the fly.",
+                                "position": { "start": { "line": 27, "column": 67, "offset": 581 }, "end": { "line": 27, "column": 163, "offset": 677 } }
+                            },
+                            {
+                                "type": "raw",
+                                "value": "</span>",
+                                "position": { "start": { "line": 27, "column": 163, "offset": 677 }, "end": { "line": 27, "column": 170, "offset": 684 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 27, "column": 1, "offset": 515 }, "end": { "line": 27, "column": 170, "offset": 684 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 26, "column": 1, "offset": 431 }, "end": { "line": 27, "column": 170, "offset": 684 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "This cheatsheet will assume that you press",
+                                "position": { "start": { "line": 29, "column": 3, "offset": 688 }, "end": { "line": 29, "column": 45, "offset": 730 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 29, "column": 1, "offset": 686 }, "end": { "line": 29, "column": 47, "offset": 732 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "Tab" }],
+                        "position": { "start": { "line": 29, "column": 47, "offset": 732 }, "end": { "line": 29, "column": 52, "offset": 737 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "after each expressions.",
+                                "position": { "start": { "line": 29, "column": 54, "offset": 739 }, "end": { "line": 29, "column": 77, "offset": 762 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 29, "column": 52, "offset": 737 }, "end": { "line": 29, "column": 79, "offset": 764 } }
+                    }
+                ],
+                "position": { "start": { "line": 29, "column": 1, "offset": 686 }, "end": { "line": 29, "column": 79, "offset": 764 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "HTML",
+                        "position": { "start": { "line": 31, "column": 5, "offset": 770 }, "end": { "line": 31, "column": 9, "offset": 774 } }
+                    }
+                ],
+                "position": { "start": { "line": 31, "column": 1, "offset": 766 }, "end": { "line": 31, "column": 9, "offset": 774 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Generating HTML 5 DOCTYPE",
+                        "position": { "start": { "line": 33, "column": 5, "offset": 780 }, "end": { "line": 33, "column": 30, "offset": 805 } }
+                    }
+                ],
+                "position": { "start": { "line": 33, "column": 1, "offset": 776 }, "end": { "line": 33, "column": 30, "offset": 805 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "html:5" }],
+                        "position": { "start": { "line": 35, "column": 1, "offset": 807 }, "end": { "line": 35, "column": 9, "offset": 815 } }
+                    }
+                ],
+                "position": { "start": { "line": 35, "column": 1, "offset": 807 }, "end": { "line": 35, "column": 9, "offset": 815 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Will generate",
+                        "position": { "start": { "line": 37, "column": 1, "offset": 817 }, "end": { "line": 37, "column": 14, "offset": 830 } }
+                    }
+                ],
+                "position": { "start": { "line": 37, "column": 1, "offset": 817 }, "end": { "line": 37, "column": 14, "offset": 830 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <title>Document</title>\n</head>\n<body>\n\n</body>\n</html>\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 39, "column": 1, "offset": 832 }, "end": { "line": 50, "column": 12, "offset": 1127 } }
+                    }
+                ],
+                "position": { "start": { "line": 39, "column": 1, "offset": 832 }, "end": { "line": 50, "column": 12, "offset": 1127 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Child items",
+                        "position": { "start": { "line": 52, "column": 5, "offset": 1133 }, "end": { "line": 52, "column": 16, "offset": 1144 } }
+                    }
+                ],
+                "position": { "start": { "line": 52, "column": 1, "offset": 1129 }, "end": { "line": 52, "column": 16, "offset": 1144 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Child items are created using ",
+                        "position": { "start": { "line": 54, "column": 1, "offset": 1146 }, "end": { "line": 54, "column": 31, "offset": 1176 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": ">" }],
+                        "position": { "start": { "line": 54, "column": 31, "offset": 1176 }, "end": { "line": 54, "column": 34, "offset": 1179 } }
+                    }
+                ],
+                "position": { "start": { "line": 54, "column": 1, "offset": 1146 }, "end": { "line": 54, "column": 34, "offset": 1179 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "ul>li>p" }],
+                        "position": { "start": { "line": 56, "column": 1, "offset": 1181 }, "end": { "line": 56, "column": 10, "offset": 1190 } }
+                    }
+                ],
+                "position": { "start": { "line": 56, "column": 1, "offset": 1181 }, "end": { "line": 56, "column": 10, "offset": 1190 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<ul>\n  <li>\n    <p></p>\n  </li>\n</ul>\n" }],
+                        "position": { "start": { "line": 58, "column": 1, "offset": 1192 }, "end": { "line": 62, "column": 10, "offset": 1249 } }
+                    }
+                ],
+                "position": { "start": { "line": 58, "column": 1, "offset": 1192 }, "end": { "line": 62, "column": 10, "offset": 1249 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Sibling Items",
+                        "position": { "start": { "line": 64, "column": 5, "offset": 1255 }, "end": { "line": 64, "column": 18, "offset": 1268 } }
+                    }
+                ],
+                "position": { "start": { "line": 64, "column": 1, "offset": 1251 }, "end": { "line": 64, "column": 18, "offset": 1268 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Sibling items are created using ",
+                        "position": { "start": { "line": 66, "column": 1, "offset": 1270 }, "end": { "line": 66, "column": 33, "offset": 1302 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "+" }],
+                        "position": { "start": { "line": 66, "column": 33, "offset": 1302 }, "end": { "line": 66, "column": 36, "offset": 1305 } }
+                    }
+                ],
+                "position": { "start": { "line": 66, "column": 1, "offset": 1270 }, "end": { "line": 66, "column": 36, "offset": 1305 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "html>head+body" }],
+                        "position": { "start": { "line": 68, "column": 1, "offset": 1307 }, "end": { "line": 68, "column": 17, "offset": 1323 } }
+                    }
+                ],
+                "position": { "start": { "line": 68, "column": 1, "offset": 1307 }, "end": { "line": 68, "column": 17, "offset": 1323 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<html>\n<head></head>\n<body>\n\n</body>\n</html>\n" }],
+                        "position": { "start": { "line": 70, "column": 1, "offset": 1325 }, "end": { "line": 75, "column": 12, "offset": 1389 } }
+                    }
+                ],
+                "position": { "start": { "line": 70, "column": 1, "offset": 1325 }, "end": { "line": 75, "column": 12, "offset": 1389 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Multiplication",
+                        "position": { "start": { "line": 77, "column": 5, "offset": 1395 }, "end": { "line": 77, "column": 19, "offset": 1409 } }
+                    }
+                ],
+                "position": { "start": { "line": 77, "column": 1, "offset": 1391 }, "end": { "line": 77, "column": 19, "offset": 1409 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Items can be multiplied by ",
+                        "position": { "start": { "line": 79, "column": 1, "offset": 1411 }, "end": { "line": 79, "column": 28, "offset": 1438 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "*" }],
+                        "position": { "start": { "line": 79, "column": 28, "offset": 1438 }, "end": { "line": 79, "column": 31, "offset": 1441 } }
+                    }
+                ],
+                "position": { "start": { "line": 79, "column": 1, "offset": 1411 }, "end": { "line": 79, "column": 31, "offset": 1441 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "ul>li*5" }],
+                        "position": { "start": { "line": 81, "column": 1, "offset": 1443 }, "end": { "line": 81, "column": 10, "offset": 1452 } }
+                    }
+                ],
+                "position": { "start": { "line": 81, "column": 1, "offset": 1443 }, "end": { "line": 81, "column": 10, "offset": 1452 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<ul>\n  <li></li>\n  <li></li>\n  <li></li>\n  <li></li>\n  <li></li>\n</ul>\n" }],
+                        "position": { "start": { "line": 83, "column": 1, "offset": 1454 }, "end": { "line": 89, "column": 10, "offset": 1552 } }
+                    }
+                ],
+                "position": { "start": { "line": 83, "column": 1, "offset": 1454 }, "end": { "line": 89, "column": 10, "offset": 1552 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Grouping",
+                        "position": { "start": { "line": 91, "column": 5, "offset": 1558 }, "end": { "line": 91, "column": 13, "offset": 1566 } }
+                    }
+                ],
+                "position": { "start": { "line": 91, "column": 1, "offset": 1554 }, "end": { "line": 91, "column": 13, "offset": 1566 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Items can be grouped together using ",
+                        "position": { "start": { "line": 93, "column": 1, "offset": 1568 }, "end": { "line": 93, "column": 37, "offset": 1604 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "()" }],
+                        "position": { "start": { "line": 93, "column": 37, "offset": 1604 }, "end": { "line": 93, "column": 41, "offset": 1608 } }
+                    }
+                ],
+                "position": { "start": { "line": 93, "column": 1, "offset": 1568 }, "end": { "line": 93, "column": 41, "offset": 1608 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "table>(tr>th*5)+tr>t*5" }],
+                        "position": { "start": { "line": 95, "column": 1, "offset": 1610 }, "end": { "line": 95, "column": 25, "offset": 1634 } }
+                    }
+                ],
+                "position": { "start": { "line": 95, "column": 1, "offset": 1610 }, "end": { "line": 95, "column": 25, "offset": 1634 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "<table>\n  <tr>\n    <th></th>\n    <th></th>\n    <th></th>\n    <th></th>\n    <th></th>\n  </tr>\n  <tr>\n    <t></t>\n    <t></t>\n    <t></t>\n    <t></t>\n    <t></t>\n  </tr>\n</table>\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 97, "column": 1, "offset": 1636 }, "end": { "line": 112, "column": 13, "offset": 1876 } }
+                    }
+                ],
+                "position": { "start": { "line": 97, "column": 1, "offset": 1636 }, "end": { "line": 112, "column": 13, "offset": 1876 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Class and ID",
+                        "position": { "start": { "line": 114, "column": 5, "offset": 1882 }, "end": { "line": 114, "column": 17, "offset": 1894 } }
+                    }
+                ],
+                "position": { "start": { "line": 114, "column": 1, "offset": 1878 }, "end": { "line": 114, "column": 17, "offset": 1894 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Class and Id in Emmet can be done using  ",
+                        "position": { "start": { "line": 116, "column": 1, "offset": 1896 }, "end": { "line": 116, "column": 42, "offset": 1937 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "." }],
+                        "position": { "start": { "line": 116, "column": 42, "offset": 1937 }, "end": { "line": 116, "column": 45, "offset": 1940 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " and ",
+                        "position": { "start": { "line": 116, "column": 45, "offset": 1940 }, "end": { "line": 116, "column": 50, "offset": 1945 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "#" }],
+                        "position": { "start": { "line": 116, "column": 50, "offset": 1945 }, "end": { "line": 116, "column": 53, "offset": 1948 } }
+                    }
+                ],
+                "position": { "start": { "line": 116, "column": 1, "offset": 1896 }, "end": { "line": 116, "column": 53, "offset": 1948 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "div.heading" }],
+                        "position": { "start": { "line": 118, "column": 1, "offset": 1950 }, "end": { "line": 118, "column": 14, "offset": 1963 } }
+                    }
+                ],
+                "position": { "start": { "line": 118, "column": 1, "offset": 1950 }, "end": { "line": 118, "column": 14, "offset": 1963 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<div class=\"heading\"></div>\n" }],
+                        "position": { "start": { "line": 120, "column": 1, "offset": 1965 }, "end": { "line": 120, "column": 32, "offset": 1996 } }
+                    }
+                ],
+                "position": { "start": { "line": 120, "column": 1, "offset": 1965 }, "end": { "line": 120, "column": 32, "offset": 1996 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "div#heading" }],
+                        "position": { "start": { "line": 122, "column": 1, "offset": 1998 }, "end": { "line": 122, "column": 14, "offset": 2011 } }
+                    }
+                ],
+                "position": { "start": { "line": 122, "column": 1, "offset": 1998 }, "end": { "line": 122, "column": 14, "offset": 2011 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<div id=\"heading\"></div>\n" }],
+                        "position": { "start": { "line": 124, "column": 1, "offset": 2013 }, "end": { "line": 124, "column": 29, "offset": 2041 } }
+                    }
+                ],
+                "position": { "start": { "line": 124, "column": 1, "offset": 2013 }, "end": { "line": 124, "column": 29, "offset": 2041 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "ID and Class can also be combined together",
+                        "position": { "start": { "line": 126, "column": 1, "offset": 2043 }, "end": { "line": 126, "column": 43, "offset": 2085 } }
+                    }
+                ],
+                "position": { "start": { "line": 126, "column": 1, "offset": 2043 }, "end": { "line": 126, "column": 43, "offset": 2085 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "div#heading.center" }],
+                        "position": { "start": { "line": 128, "column": 1, "offset": 2087 }, "end": { "line": 128, "column": 21, "offset": 2107 } }
+                    }
+                ],
+                "position": { "start": { "line": 128, "column": 1, "offset": 2087 }, "end": { "line": 128, "column": 21, "offset": 2107 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<div id=\"heading\" class=\"center\"></div>\n" }],
+                        "position": { "start": { "line": 130, "column": 1, "offset": 2109 }, "end": { "line": 130, "column": 44, "offset": 2152 } }
+                    }
+                ],
+                "position": { "start": { "line": 130, "column": 1, "offset": 2109 }, "end": { "line": 130, "column": 44, "offset": 2152 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Adding Content inside tags",
+                        "position": { "start": { "line": 132, "column": 5, "offset": 2158 }, "end": { "line": 132, "column": 31, "offset": 2184 } }
+                    }
+                ],
+                "position": { "start": { "line": 132, "column": 1, "offset": 2154 }, "end": { "line": 132, "column": 31, "offset": 2184 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Contents inside tags can be added using ",
+                        "position": { "start": { "line": 134, "column": 1, "offset": 2186 }, "end": { "line": 134, "column": 41, "offset": 2226 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "{}" }],
+                        "position": { "start": { "line": 134, "column": 41, "offset": 2226 }, "end": { "line": 134, "column": 45, "offset": 2230 } }
+                    }
+                ],
+                "position": { "start": { "line": 134, "column": 1, "offset": 2186 }, "end": { "line": 134, "column": 45, "offset": 2230 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "h1{Emmet is awesome}+h2{Every front end developers should use this}+p{This is paragraph}*2" }],
+                        "position": { "start": { "line": 136, "column": 1, "offset": 2232 }, "end": { "line": 136, "column": 93, "offset": 2324 } }
+                    }
+                ],
+                "position": { "start": { "line": 136, "column": 1, "offset": 2232 }, "end": { "line": 136, "column": 93, "offset": 2324 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "<h1>Emmet is awesome</h1>\n<h2>Every front end developers should use this</h2>\n<p>This is paragraph</p>\n<p>This is paragraph</p>\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 138, "column": 1, "offset": 2326 }, "end": { "line": 141, "column": 29, "offset": 2469 } }
+                    }
+                ],
+                "position": { "start": { "line": 138, "column": 1, "offset": 2326 }, "end": { "line": 141, "column": 29, "offset": 2469 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Attributes inside HTML tags",
+                        "position": { "start": { "line": 143, "column": 5, "offset": 2475 }, "end": { "line": 143, "column": 32, "offset": 2502 } }
+                    }
+                ],
+                "position": { "start": { "line": 143, "column": 1, "offset": 2471 }, "end": { "line": 143, "column": 32, "offset": 2502 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Attributes can be added using ",
+                        "position": { "start": { "line": 145, "column": 1, "offset": 2504 }, "end": { "line": 145, "column": 31, "offset": 2534 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "[]" }],
+                        "position": { "start": { "line": 145, "column": 31, "offset": 2534 }, "end": { "line": 145, "column": 35, "offset": 2538 } }
+                    }
+                ],
+                "position": { "start": { "line": 145, "column": 1, "offset": 2504 }, "end": { "line": 145, "column": 35, "offset": 2538 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "a[href=https://?google.com data-toggle=something target=_blank]" }],
+                        "position": { "start": { "line": 147, "column": 1, "offset": 2540 }, "end": { "line": 147, "column": 66, "offset": 2605 } }
+                    }
+                ],
+                "position": { "start": { "line": 147, "column": 1, "offset": 2540 }, "end": { "line": 147, "column": 66, "offset": 2605 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<a href=\"https://?google.com\" data-toggle=\"something\" target=\"_blank\"></a>\n" }],
+                        "position": { "start": { "line": 149, "column": 1, "offset": 2607 }, "end": { "line": 149, "column": 79, "offset": 2685 } }
+                    }
+                ],
+                "position": { "start": { "line": 149, "column": 1, "offset": 2607 }, "end": { "line": 149, "column": 79, "offset": 2685 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Numbering",
+                        "position": { "start": { "line": 151, "column": 5, "offset": 2691 }, "end": { "line": 151, "column": 14, "offset": 2700 } }
+                    }
+                ],
+                "position": { "start": { "line": 151, "column": 1, "offset": 2687 }, "end": { "line": 151, "column": 14, "offset": 2700 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Numbering can be done using ",
+                        "position": { "start": { "line": 153, "column": 1, "offset": 2702 }, "end": { "line": 153, "column": 29, "offset": 2730 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "$" }],
+                        "position": { "start": { "line": 153, "column": 29, "offset": 2730 }, "end": { "line": 153, "column": 32, "offset": 2733 } }
+                    }
+                ],
+                "position": { "start": { "line": 153, "column": 1, "offset": 2702 }, "end": { "line": 153, "column": 32, "offset": 2733 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can use this inside tag or contents.",
+                        "position": { "start": { "line": 155, "column": 1, "offset": 2735 }, "end": { "line": 155, "column": 41, "offset": 2775 } }
+                    }
+                ],
+                "position": { "start": { "line": 155, "column": 1, "offset": 2735 }, "end": { "line": 155, "column": 41, "offset": 2775 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "h${This is so awesome $}*6" }],
+                        "position": { "start": { "line": 157, "column": 1, "offset": 2777 }, "end": { "line": 157, "column": 29, "offset": 2805 } }
+                    }
+                ],
+                "position": { "start": { "line": 157, "column": 1, "offset": 2777 }, "end": { "line": 157, "column": 29, "offset": 2805 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "<h1>This is so awesome 1</h1>\n<h2>This is so awesome 2</h2>\n<h3>This is so awesome 3</h3>\n<h4>This is so awesome 4</h4>\n<h5>This is so awesome 5</h5>\n<h6>This is so awesome 6</h6>\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 159, "column": 1, "offset": 2807 }, "end": { "line": 164, "column": 34, "offset": 3010 } }
+                    }
+                ],
+                "position": { "start": { "line": 159, "column": 1, "offset": 2807 }, "end": { "line": 164, "column": 34, "offset": 3010 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Use ",
+                        "position": { "start": { "line": 166, "column": 1, "offset": 3012 }, "end": { "line": 166, "column": 5, "offset": 3016 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "@-" }],
+                        "position": { "start": { "line": 166, "column": 5, "offset": 3016 }, "end": { "line": 166, "column": 9, "offset": 3020 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " to reverse the Numbering",
+                        "position": { "start": { "line": 166, "column": 9, "offset": 3020 }, "end": { "line": 166, "column": 34, "offset": 3045 } }
+                    }
+                ],
+                "position": { "start": { "line": 166, "column": 1, "offset": 3012 }, "end": { "line": 166, "column": 34, "offset": 3045 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "img[src=image$$@-.jpg]*5" }],
+                        "position": { "start": { "line": 168, "column": 1, "offset": 3047 }, "end": { "line": 168, "column": 27, "offset": 3073 } }
+                    }
+                ],
+                "position": { "start": { "line": 168, "column": 1, "offset": 3047 }, "end": { "line": 168, "column": 27, "offset": 3073 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "<img src=\"image05.jpg\" alt=\"\">\n<img src=\"image04.jpg\" alt=\"\">\n<img src=\"image03.jpg\" alt=\"\">\n<img src=\"image02.jpg\" alt=\"\">\n<img src=\"image01.jpg\" alt=\"\">\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 170, "column": 1, "offset": 3075 }, "end": { "line": 174, "column": 35, "offset": 3249 } }
+                    }
+                ],
+                "position": { "start": { "line": 170, "column": 1, "offset": 3075 }, "end": { "line": 174, "column": 35, "offset": 3249 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "To start the numbering from specific number, use this way",
+                        "position": { "start": { "line": 176, "column": 1, "offset": 3251 }, "end": { "line": 176, "column": 58, "offset": 3308 } }
+                    }
+                ],
+                "position": { "start": { "line": 176, "column": 1, "offset": 3251 }, "end": { "line": 176, "column": 58, "offset": 3308 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "img[src=emmet$@100.jpg]*5" }],
+                        "position": { "start": { "line": 178, "column": 1, "offset": 3310 }, "end": { "line": 178, "column": 28, "offset": 3337 } }
+                    }
+                ],
+                "position": { "start": { "line": 178, "column": 1, "offset": 3310 }, "end": { "line": 178, "column": 28, "offset": 3337 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "<img src=\"emmet100.jpg\" alt=\"\">\n<img src=\"emmet101.jpg\" alt=\"\">\n<img src=\"emmet102.jpg\" alt=\"\">\n<img src=\"emmet103.jpg\" alt=\"\">\n<img src=\"emmet104.jpg\" alt=\"\">\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 180, "column": 1, "offset": 3339 }, "end": { "line": 184, "column": 36, "offset": 3518 } }
+                    }
+                ],
+                "position": { "start": { "line": 180, "column": 1, "offset": 3339 }, "end": { "line": 184, "column": 36, "offset": 3518 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Tips",
+                        "position": { "start": { "line": 186, "column": 5, "offset": 3524 }, "end": { "line": 186, "column": 9, "offset": 3528 } }
+                    }
+                ],
+                "position": { "start": { "line": 186, "column": 1, "offset": 3520 }, "end": { "line": 186, "column": 9, "offset": 3528 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "raw",
+                                "value": "<span id=\"b708\">",
+                                "position": { "start": { "line": 188, "column": 5, "offset": 3534 }, "end": { "line": 188, "column": 21, "offset": 3550 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "Use ",
+                                "position": { "start": { "line": 188, "column": 21, "offset": 3550 }, "end": { "line": 188, "column": 25, "offset": 3554 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": ":" }],
+                                "position": { "start": { "line": 188, "column": 25, "offset": 3554 }, "end": { "line": 188, "column": 28, "offset": 3557 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " to expand known abbreviations",
+                                "position": { "start": { "line": 188, "column": 28, "offset": 3557 }, "end": { "line": 188, "column": 58, "offset": 3587 } }
+                            },
+                            {
+                                "type": "raw",
+                                "value": "</span>",
+                                "position": { "start": { "line": 188, "column": 58, "offset": 3587 }, "end": { "line": 188, "column": 65, "offset": 3594 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 188, "column": 1, "offset": 3530 }, "end": { "line": 188, "column": 65, "offset": 3594 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 188, "column": 1, "offset": 3530 }, "end": { "line": 188, "column": 65, "offset": 3594 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "input:date" }],
+                        "position": { "start": { "line": 190, "column": 1, "offset": 3596 }, "end": { "line": 190, "column": 13, "offset": 3608 } }
+                    }
+                ],
+                "position": { "start": { "line": 190, "column": 1, "offset": 3596 }, "end": { "line": 190, "column": 13, "offset": 3608 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<input type=\"date\" name=\"\" id=\"\">\n" }],
+                        "position": { "start": { "line": 192, "column": 1, "offset": 3610 }, "end": { "line": 192, "column": 38, "offset": 3647 } }
+                    }
+                ],
+                "position": { "start": { "line": 192, "column": 1, "offset": 3610 }, "end": { "line": 192, "column": 38, "offset": 3647 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "form:post" }],
+                        "position": { "start": { "line": 194, "column": 1, "offset": 3649 }, "end": { "line": 194, "column": 12, "offset": 3660 } }
+                    }
+                ],
+                "position": { "start": { "line": 194, "column": 1, "offset": 3649 }, "end": { "line": 194, "column": 12, "offset": 3660 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<form action=\"\" method=\"post\"></form>\n" }],
+                        "position": { "start": { "line": 196, "column": 1, "offset": 3662 }, "end": { "line": 196, "column": 42, "offset": 3703 } }
+                    }
+                ],
+                "position": { "start": { "line": 196, "column": 1, "offset": 3662 }, "end": { "line": 196, "column": 42, "offset": 3703 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "link:css" }],
+                        "position": { "start": { "line": 198, "column": 1, "offset": 3705 }, "end": { "line": 198, "column": 11, "offset": 3715 } }
+                    }
+                ],
+                "position": { "start": { "line": 198, "column": 1, "offset": 3705 }, "end": { "line": 198, "column": 11, "offset": 3715 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "<link rel=\"stylesheet\" href=\"style.css\">\n" }],
+                        "position": { "start": { "line": 200, "column": 1, "offset": 3717 }, "end": { "line": 200, "column": 45, "offset": 3761 } }
+                    }
+                ],
+                "position": { "start": { "line": 200, "column": 1, "offset": 3717 }, "end": { "line": 200, "column": 45, "offset": 3761 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "raw",
+                                "value": "<span id=\"d43e\">",
+                                "position": { "start": { "line": 202, "column": 5, "offset": 3767 }, "end": { "line": 202, "column": 21, "offset": 3783 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "Building Navbar",
+                                "position": { "start": { "line": 202, "column": 21, "offset": 3783 }, "end": { "line": 202, "column": 36, "offset": 3798 } }
+                            },
+                            {
+                                "type": "raw",
+                                "value": "</span>",
+                                "position": { "start": { "line": 202, "column": 36, "offset": 3798 }, "end": { "line": 202, "column": 43, "offset": 3805 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 202, "column": 1, "offset": 3763 }, "end": { "line": 202, "column": 43, "offset": 3805 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 202, "column": 1, "offset": 3763 }, "end": { "line": 202, "column": 43, "offset": 3805 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": ".navbar>ul>li*3>a[href=#]{Item $@-}" }],
+                        "position": { "start": { "line": 204, "column": 1, "offset": 3807 }, "end": { "line": 204, "column": 38, "offset": 3844 } }
+                    }
+                ],
+                "position": { "start": { "line": 204, "column": 1, "offset": 3807 }, "end": { "line": 204, "column": 38, "offset": 3844 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "<div class=\"navbar\">\n  <ul>\n    <li><a href=\"#\">Item 3</a></li>\n    <li><a href=\"#\">Item 2</a></li>\n    <li><a href=\"#\">Item 1</a></li>\n  </ul>\n</div>\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 206, "column": 1, "offset": 3846 }, "end": { "line": 212, "column": 11, "offset": 4024 } }
+                    }
+                ],
+                "position": { "start": { "line": 206, "column": 1, "offset": 3846 }, "end": { "line": 212, "column": 11, "offset": 4024 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h3",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "CSS",
+                        "position": { "start": { "line": 214, "column": 5, "offset": 4030 }, "end": { "line": 214, "column": 8, "offset": 4033 } }
+                    }
+                ],
+                "position": { "start": { "line": 214, "column": 1, "offset": 4026 }, "end": { "line": 214, "column": 8, "offset": 4033 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Emmet works surprisingly well with css as well.",
+                        "position": { "start": { "line": 216, "column": 1, "offset": 4035 }, "end": { "line": 216, "column": 48, "offset": 4082 } }
+                    }
+                ],
+                "position": { "start": { "line": 216, "column": 1, "offset": 4035 }, "end": { "line": 216, "column": 48, "offset": 4082 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "raw",
+                                "value": "<span id=\"68eb\">",
+                                "position": { "start": { "line": 218, "column": 5, "offset": 4088 }, "end": { "line": 218, "column": 21, "offset": 4104 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "f:l" }],
+                                "position": { "start": { "line": 218, "column": 21, "offset": 4104 }, "end": { "line": 218, "column": 26, "offset": 4109 } }
+                            },
+                            {
+                                "type": "raw",
+                                "value": "</span>",
+                                "position": { "start": { "line": 218, "column": 26, "offset": 4109 }, "end": { "line": 218, "column": 33, "offset": 4116 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 218, "column": 1, "offset": 4084 }, "end": { "line": 218, "column": 33, "offset": 4116 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 218, "column": 1, "offset": 4084 }, "end": { "line": 218, "column": 33, "offset": 4116 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<!-- -->",
+                "position": { "start": { "line": 220, "column": 1, "offset": 4118 }, "end": { "line": 220, "column": 9, "offset": 4126 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "float: left;\n" }],
+                        "position": { "start": { "line": 222, "column": 1, "offset": 4128 }, "end": { "line": 222, "column": 17, "offset": 4144 } }
+                    }
+                ],
+                "position": { "start": { "line": 222, "column": 1, "offset": 4128 }, "end": { "line": 222, "column": 17, "offset": 4144 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can also use any options n/r/l",
+                        "position": { "start": { "line": 224, "column": 1, "offset": 4146 }, "end": { "line": 224, "column": 35, "offset": 4180 } }
+                    }
+                ],
+                "position": { "start": { "line": 224, "column": 1, "offset": 4146 }, "end": { "line": 224, "column": 35, "offset": 4180 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "raw",
+                                "value": "<span id=\"d9cc\">",
+                                "position": { "start": { "line": 226, "column": 5, "offset": 4186 }, "end": { "line": 226, "column": 21, "offset": 4202 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "pos:a­" }],
+                                "position": { "start": { "line": 226, "column": 21, "offset": 4202 }, "end": { "line": 226, "column": 29, "offset": 4210 } }
+                            },
+                            {
+                                "type": "raw",
+                                "value": "</span>",
+                                "position": { "start": { "line": 226, "column": 29, "offset": 4210 }, "end": { "line": 226, "column": 36, "offset": 4217 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 226, "column": 1, "offset": 4182 }, "end": { "line": 226, "column": 36, "offset": 4217 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 226, "column": 1, "offset": 4182 }, "end": { "line": 226, "column": 36, "offset": 4217 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<!-- -->",
+                "position": { "start": { "line": 228, "column": 1, "offset": 4219 }, "end": { "line": 228, "column": 9, "offset": 4227 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "position: absolute;\n" }],
+                        "position": { "start": { "line": 230, "column": 1, "offset": 4229 }, "end": { "line": 230, "column": 24, "offset": 4252 } }
+                    }
+                ],
+                "position": { "start": { "line": 230, "column": 1, "offset": 4229 }, "end": { "line": 230, "column": 24, "offset": 4252 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Also use any options, pos:a/r/f",
+                        "position": { "start": { "line": 232, "column": 1, "offset": 4254 }, "end": { "line": 232, "column": 32, "offset": 4285 } }
+                    }
+                ],
+                "position": { "start": { "line": 232, "column": 1, "offset": 4254 }, "end": { "line": 232, "column": 32, "offset": 4285 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "raw",
+                                "value": "<span id=\"5b67\">",
+                                "position": { "start": { "line": 234, "column": 5, "offset": 4291 }, "end": { "line": 234, "column": 21, "offset": 4307 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "d:n/b­/f/­i/ib" }],
+                                "position": { "start": { "line": 234, "column": 21, "offset": 4307 }, "end": { "line": 234, "column": 37, "offset": 4323 } }
+                            },
+                            {
+                                "type": "raw",
+                                "value": "</span>",
+                                "position": { "start": { "line": 234, "column": 37, "offset": 4323 }, "end": { "line": 234, "column": 44, "offset": 4330 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 234, "column": 1, "offset": 4287 }, "end": { "line": 234, "column": 44, "offset": 4330 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 234, "column": 1, "offset": 4287 }, "end": { "line": 234, "column": 44, "offset": 4330 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "d:ib" }],
+                        "position": { "start": { "line": 236, "column": 1, "offset": 4332 }, "end": { "line": 236, "column": 7, "offset": 4338 } }
+                    }
+                ],
+                "position": { "start": { "line": 236, "column": 1, "offset": 4332 }, "end": { "line": 236, "column": 7, "offset": 4338 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "display: inline-block;\n" }],
+                        "position": { "start": { "line": 238, "column": 1, "offset": 4340 }, "end": { "line": 238, "column": 27, "offset": 4366 } }
+                    }
+                ],
+                "position": { "start": { "line": 238, "column": 1, "offset": 4340 }, "end": { "line": 238, "column": 27, "offset": 4366 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "raw",
+                                "value": "<span id=\"26f6\">",
+                                "position": { "start": { "line": 240, "column": 5, "offset": 4372 }, "end": { "line": 240, "column": 21, "offset": 4388 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "You can use ",
+                                "position": { "start": { "line": 240, "column": 21, "offset": 4388 }, "end": { "line": 240, "column": 33, "offset": 4400 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "m" }],
+                                "position": { "start": { "line": 240, "column": 33, "offset": 4400 }, "end": { "line": 240, "column": 36, "offset": 4403 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " for margin and ",
+                                "position": { "start": { "line": 240, "column": 36, "offset": 4403 }, "end": { "line": 240, "column": 52, "offset": 4419 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "p" }],
+                                "position": { "start": { "line": 240, "column": 52, "offset": 4419 }, "end": { "line": 240, "column": 55, "offset": 4422 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " for padding followed by direction",
+                                "position": { "start": { "line": 240, "column": 55, "offset": 4422 }, "end": { "line": 240, "column": 89, "offset": 4456 } }
+                            },
+                            {
+                                "type": "raw",
+                                "value": "</span>",
+                                "position": { "start": { "line": 240, "column": 89, "offset": 4456 }, "end": { "line": 240, "column": 96, "offset": 4463 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 240, "column": 1, "offset": 4368 }, "end": { "line": 240, "column": 96, "offset": 4463 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 240, "column": 1, "offset": 4368 }, "end": { "line": 240, "column": 96, "offset": 4463 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "mr" }],
+                        "position": { "start": { "line": 242, "column": 1, "offset": 4465 }, "end": { "line": 242, "column": 5, "offset": 4469 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " -",
+                        "position": { "start": { "line": 242, "column": 5, "offset": 4469 }, "end": { "line": 242, "column": 7, "offset": 4471 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ">",
+                        "position": { "start": { "line": 242, "column": 7, "offset": 4471 }, "end": { "line": 242, "column": 11, "offset": 4475 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 242, "column": 11, "offset": 4475 }, "end": { "line": 242, "column": 12, "offset": 4476 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "margin-right" }],
+                        "position": { "start": { "line": 242, "column": 12, "offset": 4476 }, "end": { "line": 242, "column": 26, "offset": 4490 } }
+                    }
+                ],
+                "position": { "start": { "line": 242, "column": 1, "offset": 4465 }, "end": { "line": 242, "column": 26, "offset": 4490 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "pr" }],
+                        "position": { "start": { "line": 244, "column": 1, "offset": 4492 }, "end": { "line": 244, "column": 5, "offset": 4496 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " -",
+                        "position": { "start": { "line": 244, "column": 5, "offset": 4496 }, "end": { "line": 244, "column": 7, "offset": 4498 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ">",
+                        "position": { "start": { "line": 244, "column": 7, "offset": 4498 }, "end": { "line": 244, "column": 11, "offset": 4502 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 244, "column": 11, "offset": 4502 }, "end": { "line": 244, "column": 12, "offset": 4503 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "padding-right" }],
+                        "position": { "start": { "line": 244, "column": 12, "offset": 4503 }, "end": { "line": 244, "column": 27, "offset": 4518 } }
+                    }
+                ],
+                "position": { "start": { "line": 244, "column": 1, "offset": 4492 }, "end": { "line": 244, "column": 27, "offset": 4518 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "raw",
+                                "value": "<span id=\"01cc\">",
+                                "position": { "start": { "line": 246, "column": 5, "offset": 4524 }, "end": { "line": 246, "column": 21, "offset": 4540 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "@f" }],
+                                "position": { "start": { "line": 246, "column": 21, "offset": 4540 }, "end": { "line": 246, "column": 25, "offset": 4544 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " will result in",
+                                "position": { "start": { "line": 246, "column": 25, "offset": 4544 }, "end": { "line": 246, "column": 40, "offset": 4559 } }
+                            },
+                            {
+                                "type": "raw",
+                                "value": "</span>",
+                                "position": { "start": { "line": 246, "column": 40, "offset": 4559 }, "end": { "line": 246, "column": 47, "offset": 4566 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 246, "column": 1, "offset": 4520 }, "end": { "line": 246, "column": 47, "offset": 4566 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 246, "column": 1, "offset": 4520 }, "end": { "line": 246, "column": 47, "offset": 4566 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<!-- -->",
+                "position": { "start": { "line": 248, "column": 1, "offset": 4568 }, "end": { "line": 248, "column": 9, "offset": 4576 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "@font-face {\n  font-family:;\n  src:url();\n}\n" }],
+                        "position": { "start": { "line": 250, "column": 1, "offset": 4578 }, "end": { "line": 253, "column": 6, "offset": 4637 } }
+                    }
+                ],
+                "position": { "start": { "line": 250, "column": 1, "offset": 4578 }, "end": { "line": 253, "column": 6, "offset": 4637 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can also use these shorthands",
+                        "position": { "start": { "line": 255, "column": 1, "offset": 4639 }, "end": { "line": 255, "column": 34, "offset": 4672 } }
+                    }
+                ],
+                "position": { "start": { "line": 255, "column": 1, "offset": 4639 }, "end": { "line": 255, "column": 34, "offset": 4672 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<figure><img src=\"https://cdn-images-1.medium.com/max/800/1*h8hsUrJNyVRLYqBQP63DCA.png\" class=\"graf-image\" /></figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:",
+                "position": { "start": { "line": 257, "column": 1, "offset": 4674 }, "end": { "line": 257, "column": 223, "offset": 4896 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://gist.github.com/bgoonz\" class=\"markup--anchor markup--p-anchor\">",
+                        "position": { "start": { "line": 259, "column": 1, "offset": 4898 }, "end": { "line": 259, "column": 82, "offset": 4979 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "bgoonz’s gists · GitHub",
+                        "position": { "start": { "line": 259, "column": 82, "offset": 4979 }, "end": { "line": 259, "column": 105, "offset": 5002 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 259, "column": 105, "offset": 5002 }, "end": { "line": 259, "column": 109, "offset": 5006 } }
+                    }
+                ],
+                "position": { "start": { "line": 259, "column": 1, "offset": 4898 }, "end": { "line": 259, "column": 109, "offset": 5006 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://github.com/bgoonz\" class=\"markup--anchor markup--mixtapeEmbed-anchor\" title=\"https://github.com/bgoonz\">",
+                        "position": { "start": { "line": 261, "column": 1, "offset": 5008 }, "end": { "line": 261, "column": 122, "offset": 5129 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<strong>",
+                        "position": { "start": { "line": 261, "column": 122, "offset": 5129 }, "end": { "line": 261, "column": 130, "offset": 5137 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "bgoonz — Overview",
+                        "position": { "start": { "line": 261, "column": 130, "offset": 5137 }, "end": { "line": 261, "column": 147, "offset": 5154 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</strong>",
+                        "position": { "start": { "line": 261, "column": 147, "offset": 5154 }, "end": { "line": 261, "column": 156, "offset": 5163 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<br />",
+                        "position": { "start": { "line": 261, "column": 156, "offset": 5163 }, "end": { "line": 261, "column": 162, "offset": 5169 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "\n",
+                        "position": { "start": { "line": 261, "column": 162, "offset": 5169 }, "end": { "line": 262, "column": 1, "offset": 5170 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<em>",
+                        "position": { "start": { "line": 262, "column": 1, "offset": 5170 }, "end": { "line": 262, "column": 5, "offset": 5174 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…",
+                        "position": { "start": { "line": 262, "column": 5, "offset": 5174 }, "end": { "line": 262, "column": 118, "offset": 5287 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</em>",
+                        "position": { "start": { "line": 262, "column": 118, "offset": 5287 }, "end": { "line": 262, "column": 123, "offset": 5292 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "github.com",
+                        "position": { "start": { "line": 262, "column": 123, "offset": 5292 }, "end": { "line": 262, "column": 133, "offset": 5302 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 262, "column": 133, "offset": 5302 }, "end": { "line": 262, "column": 137, "offset": 5306 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://github.com/bgoonz\" class=\"js-mixtapeImage mixtapeImage u-ignoreBlock\">",
+                        "position": { "start": { "line": 262, "column": 137, "offset": 5306 }, "end": { "line": 262, "column": 224, "offset": 5393 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 262, "column": 224, "offset": 5393 }, "end": { "line": 262, "column": 228, "offset": 5397 } }
+                    }
+                ],
+                "position": { "start": { "line": 261, "column": 1, "offset": 5008 }, "end": { "line": 262, "column": 228, "offset": 5397 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Or Checkout my personal Resource Site:",
+                        "position": { "start": { "line": 264, "column": 1, "offset": 5399 }, "end": { "line": 264, "column": 39, "offset": 5437 } }
+                    }
+                ],
+                "position": { "start": { "line": 264, "column": 1, "offset": 5399 }, "end": { "line": 264, "column": 39, "offset": 5437 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://goofy-euclid-1cd736.netlify.app/\" class=\"markup--anchor markup--mixtapeEmbed-anchor\" title=\"https://goofy-euclid-1cd736.netlify.app/\">",
+                        "position": { "start": { "line": 266, "column": 1, "offset": 5439 }, "end": { "line": 266, "column": 152, "offset": 5590 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<strong>",
+                        "position": { "start": { "line": 266, "column": 152, "offset": 5590 }, "end": { "line": 266, "column": 160, "offset": 5598 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "a/A-Student-Resources",
+                        "position": { "start": { "line": 266, "column": 160, "offset": 5598 }, "end": { "line": 266, "column": 181, "offset": 5619 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</strong>",
+                        "position": { "start": { "line": 266, "column": 181, "offset": 5619 }, "end": { "line": 266, "column": 190, "offset": 5628 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<br />",
+                        "position": { "start": { "line": 266, "column": 190, "offset": 5628 }, "end": { "line": 266, "column": 196, "offset": 5634 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "\n",
+                        "position": { "start": { "line": 266, "column": 196, "offset": 5634 }, "end": { "line": 267, "column": 1, "offset": 5635 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<em>",
+                        "position": { "start": { "line": 267, "column": 1, "offset": 5635 }, "end": { "line": 267, "column": 5, "offset": 5639 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "Edit description",
+                        "position": { "start": { "line": 267, "column": 5, "offset": 5639 }, "end": { "line": 267, "column": 21, "offset": 5655 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</em>",
+                        "position": { "start": { "line": 267, "column": 21, "offset": 5655 }, "end": { "line": 267, "column": 26, "offset": 5660 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "goofy-euclid-1cd736.netlify.app",
+                        "position": { "start": { "line": 267, "column": 26, "offset": 5660 }, "end": { "line": 267, "column": 57, "offset": 5691 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 267, "column": 57, "offset": 5691 }, "end": { "line": 267, "column": 61, "offset": 5695 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://goofy-euclid-1cd736.netlify.app/\" class=\"js-mixtapeImage mixtapeImage u-ignoreBlock\">",
+                        "position": { "start": { "line": 267, "column": 61, "offset": 5695 }, "end": { "line": 267, "column": 163, "offset": 5797 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 267, "column": 163, "offset": 5797 }, "end": { "line": 267, "column": 167, "offset": 5801 } }
+                    }
+                ],
+                "position": { "start": { "line": 266, "column": 1, "offset": 5439 }, "end": { "line": 267, "column": 167, "offset": 5801 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "By ",
+                        "position": { "start": { "line": 269, "column": 1, "offset": 5803 }, "end": { "line": 269, "column": 4, "offset": 5806 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://medium.com/@bryanguner\" class=\"p-author h-card\">",
+                        "position": { "start": { "line": 269, "column": 4, "offset": 5806 }, "end": { "line": 269, "column": 69, "offset": 5871 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "Bryan Guner",
+                        "position": { "start": { "line": 269, "column": 69, "offset": 5871 }, "end": { "line": 269, "column": 80, "offset": 5882 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 269, "column": 80, "offset": 5882 }, "end": { "line": 269, "column": 84, "offset": 5886 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " on ",
+                        "position": { "start": { "line": 269, "column": 84, "offset": 5886 }, "end": { "line": 269, "column": 88, "offset": 5890 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://medium.com/p/24758e628d37" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "March 6, 2021",
+                                "position": { "start": { "line": 269, "column": 89, "offset": 5891 }, "end": { "line": 269, "column": 102, "offset": 5904 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 269, "column": 88, "offset": 5890 }, "end": { "line": 269, "column": 138, "offset": 5940 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 269, "column": 138, "offset": 5940 }, "end": { "line": 269, "column": 139, "offset": 5941 } }
+                    }
+                ],
+                "position": { "start": { "line": 269, "column": 1, "offset": 5803 }, "end": { "line": 269, "column": 139, "offset": 5941 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://medium.com/@bryanguner/emmet-cheat-sheet-24758e628d37\" class=\"p-canonical\">",
+                        "position": { "start": { "line": 271, "column": 1, "offset": 5943 }, "end": { "line": 271, "column": 93, "offset": 6035 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "Canonical link",
+                        "position": { "start": { "line": 271, "column": 93, "offset": 6035 }, "end": { "line": 271, "column": 107, "offset": 6049 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 271, "column": 107, "offset": 6049 }, "end": { "line": 271, "column": 111, "offset": 6053 } }
+                    }
+                ],
+                "position": { "start": { "line": 271, "column": 1, "offset": 5943 }, "end": { "line": 271, "column": 111, "offset": 6053 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Exported from ",
+                        "position": { "start": { "line": 273, "column": 1, "offset": 6055 }, "end": { "line": 273, "column": 15, "offset": 6069 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://medium.com" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Medium",
+                                "position": { "start": { "line": 273, "column": 16, "offset": 6070 }, "end": { "line": 273, "column": 22, "offset": 6076 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 273, "column": 15, "offset": 6069 }, "end": { "line": 273, "column": 43, "offset": 6097 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " on May 23, 2021.",
+                        "position": { "start": { "line": 273, "column": 43, "offset": 6097 }, "end": { "line": 273, "column": 60, "offset": 6114 } }
+                    }
+                ],
+                "position": { "start": { "line": 273, "column": 1, "offset": 6055 }, "end": { "line": 273, "column": 60, "offset": 6114 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 274, "column": 1, "offset": 6115 } }
+    }
+}
