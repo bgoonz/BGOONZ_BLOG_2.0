@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 exports.__esModule = true;
 exports.debugLog = debugLog;
@@ -6,5 +6,5 @@ exports.debugLog = debugLog;
 const styles = [`background: rebeccapurple`, `border-radius: 0.5em`, `color: white`, `font-weight: bold`, `padding: 2px 0.5em`].join(`;`);
 
 function debugLog(...args) {
-    console.debug(`%cgatsby`, styles, ...args);
+  console.debug(`%cgatsby`, styles, ...args);
 }
