@@ -1,0 +1,355 @@
+{
+    "expireTime": 9007200881003040000,
+    "key": "transformer-remark-markdown-ast-8b930d3474bc4a23b9c312f5f780fd37--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "html",
+                "value": "<br>\n<br>\n<br>\n<br>",
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 5, "column": 5, "offset": 20 }, "indent": [1, 1, 1] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 7, "column": 1, "offset": 22 }, "end": { "line": 7, "column": 5, "offset": 26 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 9, "column": 1, "offset": 28 }, "end": { "line": 9, "column": 5, "offset": 32 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<iframe title=\"Video Background 1\" src=\"https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark\" height=\"800px\" width=\"1600px\" scrolling=\"no\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">",
+                "position": { "start": { "line": 11, "column": 1, "offset": 34 }, "end": { "line": 11, "column": 247, "offset": 280 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "  See the Pen ",
+                        "position": { "start": { "line": 13, "column": 1, "offset": 282 }, "end": { "line": 13, "column": 15, "offset": 296 }, "indent": [] }
+                    },
+                    {
+                        "type": "html",
+                        "value": "<a href=\"https://codepen.io/bgoonz/pen/BaRLKBd\">",
+                        "position": { "start": { "line": 13, "column": 15, "offset": 296 }, "end": { "line": 13, "column": 63, "offset": 344 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": "\n  Video Background 1",
+                        "position": { "start": { "line": 13, "column": 63, "offset": 344 }, "end": { "line": 14, "column": 21, "offset": 365 }, "indent": [1] }
+                    },
+                    {
+                        "type": "html",
+                        "value": "</a>",
+                        "position": { "start": { "line": 14, "column": 21, "offset": 365 }, "end": { "line": 14, "column": 25, "offset": 369 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " by Bryan C Guner (",
+                        "position": { "start": { "line": 14, "column": 25, "offset": 369 }, "end": { "line": 14, "column": 44, "offset": 388 }, "indent": [] }
+                    },
+                    {
+                        "type": "html",
+                        "value": "<a href=\"https://codepen.io/bgoonz\">",
+                        "position": { "start": { "line": 14, "column": 44, "offset": 388 }, "end": { "line": 14, "column": 80, "offset": 424 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": "@bgoonz",
+                        "position": { "start": { "line": 14, "column": 80, "offset": 424 }, "end": { "line": 14, "column": 87, "offset": 431 }, "indent": [] }
+                    },
+                    {
+                        "type": "html",
+                        "value": "</a>",
+                        "position": { "start": { "line": 14, "column": 87, "offset": 431 }, "end": { "line": 14, "column": 91, "offset": 435 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ")\n  on ",
+                        "position": { "start": { "line": 14, "column": 91, "offset": 435 }, "end": { "line": 15, "column": 6, "offset": 442 }, "indent": [1] }
+                    },
+                    {
+                        "type": "html",
+                        "value": "<a href=\"https://codepen.io\">",
+                        "position": { "start": { "line": 15, "column": 6, "offset": 442 }, "end": { "line": 15, "column": 35, "offset": 471 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": "CodePen",
+                        "position": { "start": { "line": 15, "column": 35, "offset": 471 }, "end": { "line": 15, "column": 42, "offset": 478 }, "indent": [] }
+                    },
+                    {
+                        "type": "html",
+                        "value": "</a>",
+                        "position": { "start": { "line": 15, "column": 42, "offset": 478 }, "end": { "line": 15, "column": 46, "offset": 482 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 15, "column": 46, "offset": 482 }, "end": { "line": 15, "column": 47, "offset": 483 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 13, "column": 1, "offset": 282 }, "end": { "line": 15, "column": 47, "offset": 483 }, "indent": [1, 1] }
+            },
+            {
+                "type": "html",
+                "value": "</iframe>",
+                "position": { "start": { "line": 16, "column": 1, "offset": 484 }, "end": { "line": 16, "column": 10, "offset": 493 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>\n<br>\n<br>\n<br>",
+                "position": { "start": { "line": 19, "column": 1, "offset": 496 }, "end": { "line": 22, "column": 5, "offset": 515 }, "indent": [1, 1, 1] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 24, "column": 1, "offset": 517 }, "end": { "line": 24, "column": 5, "offset": 521 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 26, "column": 1, "offset": 523 }, "end": { "line": 26, "column": 5, "offset": 527 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 28, "column": 1, "offset": 529 }, "end": { "line": 28, "column": 5, "offset": 533 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 30, "column": 1, "offset": 535 }, "end": { "line": 30, "column": 5, "offset": 539 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>\n<center>\n<h2> Up to 1TB of cloud Storage for file sharing!</h2>\n<iframe src=\"https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E\" height=\"275px\" width=\"17%\" style=\"zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;\">\n</iframe>\n</center>\n<br>",
+                "position": {
+                    "start": { "line": 32, "column": 1, "offset": 541 },
+                    "end": { "line": 38, "column": 5, "offset": 874 },
+                    "indent": [1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 40, "column": 1, "offset": 876 }, "end": { "line": 40, "column": 5, "offset": 880 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 42, "column": 1, "offset": 882 }, "end": { "line": 42, "column": 5, "offset": 886 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>\n<h2> Resource Archive</h2>",
+                "position": { "start": { "line": 44, "column": 1, "offset": 888 }, "end": { "line": 45, "column": 27, "offset": 919 }, "indent": [1] }
+            },
+            {
+                "type": "html",
+                "value": "<iframe src=\"https://resourcerepo2.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"no\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\"></iframe>",
+                "position": { "start": { "line": 47, "column": 1, "offset": 921 }, "end": { "line": 47, "column": 184, "offset": 1104 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 50, "column": 1, "offset": 1107 }, "end": { "line": 50, "column": 5, "offset": 1111 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 52, "column": 1, "offset": 1113 }, "end": { "line": 52, "column": 5, "offset": 1117 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 54, "column": 1, "offset": 1119 }, "end": { "line": 54, "column": 5, "offset": 1123 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 56, "column": 1, "offset": 1125 }, "end": { "line": 56, "column": 5, "offset": 1129 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 58, "column": 1, "offset": 1131 }, "end": { "line": 58, "column": 5, "offset": 1135 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<iframe src=\"https://lambda-resources.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"no\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\"></iframe>",
+                "position": { "start": { "line": 60, "column": 1, "offset": 1137 }, "end": { "line": 60, "column": 187, "offset": 1323 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 63, "column": 1, "offset": 1326 }, "end": { "line": 63, "column": 5, "offset": 1330 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 65, "column": 1, "offset": 1332 }, "end": { "line": 65, "column": 5, "offset": 1336 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 67, "column": 1, "offset": 1338 }, "end": { "line": 67, "column": 5, "offset": 1342 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 69, "column": 1, "offset": 1344 }, "end": { "line": 69, "column": 5, "offset": 1348 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 71, "column": 1, "offset": 1350 }, "end": { "line": 71, "column": 5, "offset": 1354 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 73, "column": 1, "offset": 1356 }, "end": { "line": 73, "column": 5, "offset": 1360 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 75, "column": 1, "offset": 1362 }, "end": { "line": 75, "column": 5, "offset": 1366 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 77, "column": 1, "offset": 1368 }, "end": { "line": 77, "column": 5, "offset": 1372 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 79, "column": 1, "offset": 1374 }, "end": { "line": 79, "column": 5, "offset": 1378 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<iframe src=\"https://devtools42.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"no\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\"></iframe>",
+                "position": { "start": { "line": 81, "column": 1, "offset": 1380 }, "end": { "line": 81, "column": 181, "offset": 1560 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 84, "column": 1, "offset": 1563 }, "end": { "line": 84, "column": 5, "offset": 1567 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 86, "column": 1, "offset": 1569 }, "end": { "line": 86, "column": 5, "offset": 1573 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 88, "column": 1, "offset": 1575 }, "end": { "line": 88, "column": 5, "offset": 1579 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>\n<iframe src=\"https://ternary42.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"no\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\"></iframe>",
+                "position": { "start": { "line": 90, "column": 1, "offset": 1581 }, "end": { "line": 91, "column": 180, "offset": 1765 }, "indent": [1] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 94, "column": 1, "offset": 1768 }, "end": { "line": 94, "column": 5, "offset": 1772 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 96, "column": 1, "offset": 1774 }, "end": { "line": 96, "column": 5, "offset": 1778 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 98, "column": 1, "offset": 1780 }, "end": { "line": 98, "column": 5, "offset": 1784 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 100, "column": 1, "offset": 1786 }, "end": { "line": 100, "column": 5, "offset": 1790 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<iframe src=\"https://githtmlpreview.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"no\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\"></iframe>",
+                "position": { "start": { "line": 102, "column": 1, "offset": 1792 }, "end": { "line": 102, "column": 185, "offset": 1976 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 105, "column": 1, "offset": 1979 }, "end": { "line": 105, "column": 5, "offset": 1983 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 107, "column": 1, "offset": 1985 }, "end": { "line": 107, "column": 5, "offset": 1989 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 109, "column": 1, "offset": 1991 }, "end": { "line": 109, "column": 5, "offset": 1995 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 111, "column": 1, "offset": 1997 }, "end": { "line": 111, "column": 5, "offset": 2001 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<iframe src=\"https://determined-dijkstra-ee7390.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"no\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\"></iframe>",
+                "position": { "start": { "line": 113, "column": 1, "offset": 2003 }, "end": { "line": 113, "column": 197, "offset": 2199 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 116, "column": 1, "offset": 2202 }, "end": { "line": 116, "column": 5, "offset": 2206 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 118, "column": 1, "offset": 2208 }, "end": { "line": 118, "column": 5, "offset": 2212 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 120, "column": 1, "offset": 2214 }, "end": { "line": 120, "column": 5, "offset": 2218 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 122, "column": 1, "offset": 2220 }, "end": { "line": 122, "column": 5, "offset": 2224 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<iframe src=\"https://web-dev-interview-prep-quiz-website.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"no\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\"></iframe>",
+                "position": { "start": { "line": 124, "column": 1, "offset": 2226 }, "end": { "line": 124, "column": 206, "offset": 2431 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 127, "column": 1, "offset": 2434 }, "end": { "line": 127, "column": 5, "offset": 2438 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 129, "column": 1, "offset": 2440 }, "end": { "line": 129, "column": 5, "offset": 2444 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 131, "column": 1, "offset": 2446 }, "end": { "line": 131, "column": 5, "offset": 2450 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<br>",
+                "position": { "start": { "line": 133, "column": 1, "offset": 2452 }, "end": { "line": 133, "column": 5, "offset": 2456 }, "indent": [] }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 134, "column": 1, "offset": 2457 } }
+    }
+}

@@ -51,6 +51,7 @@ template: docs
 </div>
 
 <div align="center">
+  
 
 
 [![About](https://img.shields.io/badge/-❤_About-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz.github.io/)](https://bgoonz.github.io)
@@ -131,6 +132,7 @@ template: docs
 -   <a href="https://dev.to/bgoonz">
       <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Bryan C Guner's DEV Community Profile" height="30px" width="30px">
     </a>
+
 
 <a href="https://dev.to/bgoonz">
  

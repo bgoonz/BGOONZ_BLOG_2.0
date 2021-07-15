@@ -1,0 +1,1155 @@
+{
+    "expireTime": 9007200881002490000,
+    "key": "transformer-remark-markdown-ast-fe31d9b5b36231d7b01addcf3aafbec7--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "heading",
+                "depth": 1,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Extending JAMstack: 10 APIs and Tools to check out in 2020",
+                        "position": { "start": { "line": 5, "column": 3, "offset": 6 }, "end": { "line": 5, "column": 61, "offset": 64 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 5, "column": 1, "offset": 4 }, "end": { "line": 5, "column": 61, "offset": 64 }, "indent": [] }
+            },
+            {
+                "type": "blockquote",
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "The ongoing conversation about JAMstack has moved from being just a stack for creating static sites to a stack for developing dynamic web applications. Let’s take a look at an extensive list of APIs and tools you can leverage.",
+                                "position": {
+                                    "start": { "line": 7, "column": 3, "offset": 68 },
+                                    "end": { "line": 7, "column": 229, "offset": 294 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 7, "column": 3, "offset": 68 }, "end": { "line": 7, "column": 229, "offset": 294 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 7, "column": 1, "offset": 66 }, "end": { "line": 7, "column": 229, "offset": 294 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The ongoing conversation about JAMstack has moved from being just a stack for creating static sites to a stack for developing dynamic web applications. Let’s take a look at an extensive list of APIs and tools you can leverage.",
+                        "position": { "start": { "line": 9, "column": 1, "offset": 296 }, "end": { "line": 9, "column": 227, "offset": 522 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 9, "column": 1, "offset": 296 }, "end": { "line": 9, "column": 227, "offset": 522 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The JAMstack ecosystem has evolved over the past few years. It’s been getting more popular as people have moved on from the mistaken notion that only static sites can be rendered using this architecture. We see developers and companies adopting it and creating fast and dynamic web applications with helpful services and APIs while maintaining the benefits of the JAMstack, which prioritizes performance, scalability and developer experience.",
+                        "position": { "start": { "line": 11, "column": 1, "offset": 524 }, "end": { "line": 11, "column": 443, "offset": 966 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 11, "column": 1, "offset": 524 }, "end": { "line": 11, "column": 443, "offset": 966 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The \"A\" in the JAMstack",
+                        "position": { "start": { "line": 13, "column": 1, "offset": 968 }, "end": { "line": 13, "column": 24, "offset": 991 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 13, "column": 1, "offset": 968 }, "end": { "line": 14, "column": 24, "offset": 1015 }, "indent": [1] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The ",
+                        "position": { "start": { "line": 16, "column": 1, "offset": 1017 }, "end": { "line": 16, "column": 5, "offset": 1021 }, "indent": [] }
+                    },
+                    {
+                        "type": "strong",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "A",
+                                "position": {
+                                    "start": { "line": 16, "column": 7, "offset": 1023 },
+                                    "end": { "line": 16, "column": 8, "offset": 1024 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 16, "column": 5, "offset": 1021 }, "end": { "line": 16, "column": 10, "offset": 1026 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " in ",
+                        "position": { "start": { "line": 16, "column": 10, "offset": 1026 }, "end": { "line": 16, "column": 14, "offset": 1030 }, "indent": [] }
+                    },
+                    {
+                        "type": "strong",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "JAMstack",
+                                "position": {
+                                    "start": { "line": 16, "column": 16, "offset": 1032 },
+                                    "end": { "line": 16, "column": 24, "offset": 1040 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 16, "column": 14, "offset": 1030 }, "end": { "line": 16, "column": 26, "offset": 1042 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " stands for APIs. We no longer need to worry about dealing with traditional back-end - server-side operations can now be abstracted into reusable APIs and accessed over HTTPS with JavaScript. These can be third-party services or your custom function written as ",
+                        "position": {
+                            "start": { "line": 16, "column": 26, "offset": 1042 },
+                            "end": { "line": 16, "column": 287, "offset": 1303 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://en.wikipedia.org/wiki/Function_as_a_service",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Functions as a Service",
+                                "position": {
+                                    "start": { "line": 16, "column": 288, "offset": 1304 },
+                                    "end": { "line": 16, "column": 310, "offset": 1326 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 16, "column": 287, "offset": 1303 },
+                            "end": { "line": 16, "column": 364, "offset": 1380 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " (serverless functions). Let’s explore a list of useful APIs and related tools that can make your JAMstack projects dynamic.",
+                        "position": {
+                            "start": { "line": 16, "column": 364, "offset": 1380 },
+                            "end": { "line": 16, "column": 488, "offset": 1504 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 16, "column": 1, "offset": 1017 }, "end": { "line": 16, "column": 488, "offset": 1504 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "10 APIs to check out in 2020",
+                        "position": { "start": { "line": 18, "column": 1, "offset": 1506 }, "end": { "line": 18, "column": 29, "offset": 1534 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 18, "column": 1, "offset": 1506 }, "end": { "line": 19, "column": 29, "offset": 1563 }, "indent": [1] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "1",
+                        "position": { "start": { "line": 21, "column": 5, "offset": 1569 }, "end": { "line": 21, "column": 6, "offset": 1570 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 21, "column": 6, "offset": 1570 }, "end": { "line": 21, "column": 8, "offset": 1572 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 21, "column": 8, "offset": 1572 }, "end": { "line": 21, "column": 9, "offset": 1573 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://www.algolia.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Algolia",
+                                "position": {
+                                    "start": { "line": 21, "column": 10, "offset": 1574 },
+                                    "end": { "line": 21, "column": 17, "offset": 1581 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 21, "column": 9, "offset": 1573 }, "end": { "line": 21, "column": 44, "offset": 1608 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 21, "column": 1, "offset": 1565 }, "end": { "line": 21, "column": 44, "offset": 1608 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Have you ever thought of adding search functionality to your website before you start wondering what the best way to implement this feature is. Great news! ",
+                        "position": { "start": { "line": 23, "column": 1, "offset": 1610 }, "end": { "line": 23, "column": 157, "offset": 1766 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://www.algolia.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Algolia",
+                                "position": {
+                                    "start": { "line": 23, "column": 158, "offset": 1767 },
+                                    "end": { "line": 23, "column": 165, "offset": 1774 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 23, "column": 157, "offset": 1766 },
+                            "end": { "line": 23, "column": 192, "offset": 1801 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is a platform for all things related to the search and discovery experience. It is a hosted search engine capable of delivering real-time results from the first keystroke. Algolia’s API lets you quickly develop tailored, fast search and discovery experiences within your website.",
+                        "position": {
+                            "start": { "line": 23, "column": 192, "offset": 1801 },
+                            "end": { "line": 23, "column": 472, "offset": 2081 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 23, "column": 1, "offset": 1610 }, "end": { "line": 23, "column": 472, "offset": 2081 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919674-algoliasm.png",
+                        "alt": "Algolia",
+                        "position": { "start": { "line": 25, "column": 1, "offset": 2083 }, "end": { "line": 25, "column": 96, "offset": 2178 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 25, "column": 1, "offset": 2083 }, "end": { "line": 25, "column": 96, "offset": 2178 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "2",
+                        "position": { "start": { "line": 27, "column": 5, "offset": 2184 }, "end": { "line": 27, "column": 6, "offset": 2185 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 27, "column": 6, "offset": 2185 }, "end": { "line": 27, "column": 8, "offset": 2187 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 27, "column": 8, "offset": 2187 }, "end": { "line": 27, "column": 9, "offset": 2188 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://aws.amazon.com/amplify/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "AWS Amplify",
+                                "position": {
+                                    "start": { "line": 27, "column": 10, "offset": 2189 },
+                                    "end": { "line": 27, "column": 21, "offset": 2200 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 27, "column": 9, "offset": 2188 }, "end": { "line": 27, "column": 55, "offset": 2234 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 27, "column": 1, "offset": 2180 }, "end": { "line": 27, "column": 55, "offset": 2234 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://aws.amazon.com/amplify/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "AWS Amplify",
+                                "position": {
+                                    "start": { "line": 29, "column": 2, "offset": 2237 },
+                                    "end": { "line": 29, "column": 13, "offset": 2248 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 29, "column": 1, "offset": 2236 }, "end": { "line": 29, "column": 47, "offset": 2282 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is a development platform that includes features like a data store that syncs data between your site and the cloud, authentication, machine learning, analytics and more. It provides a declarative and easy-to-use interface across different categories of cloud operations. AWS Amplify goes well with any JavaScript based front-end workflow and React Native for mobile developers. The default implementation works with Amazon Web Services (AWS), but AWS Amplify is designed to be open and pluggable for any custom back-end or service.",
+                        "position": {
+                            "start": { "line": 29, "column": 47, "offset": 2282 },
+                            "end": { "line": 29, "column": 579, "offset": 2814 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 29, "column": 1, "offset": 2236 }, "end": { "line": 29, "column": 579, "offset": 2814 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919707-amplifysm.png",
+                        "alt": "Amplify",
+                        "position": { "start": { "line": 31, "column": 1, "offset": 2816 }, "end": { "line": 31, "column": 96, "offset": 2911 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 31, "column": 1, "offset": 2816 }, "end": { "line": 31, "column": 96, "offset": 2911 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "3",
+                        "position": { "start": { "line": 33, "column": 5, "offset": 2917 }, "end": { "line": 33, "column": 6, "offset": 2918 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 33, "column": 6, "offset": 2918 }, "end": { "line": 33, "column": 8, "offset": 2920 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 33, "column": 8, "offset": 2920 }, "end": { "line": 33, "column": 9, "offset": 2921 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://cloudinary.com/",
+                        "children": [
+                            {
+                                "type": "strong",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Cloudinary",
+                                        "position": {
+                                            "start": { "line": 33, "column": 12, "offset": 2924 },
+                                            "end": { "line": 33, "column": 22, "offset": 2934 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 33, "column": 10, "offset": 2922 },
+                                    "end": { "line": 33, "column": 24, "offset": 2936 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 33, "column": 9, "offset": 2921 }, "end": { "line": 33, "column": 50, "offset": 2962 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 33, "column": 1, "offset": 2913 }, "end": { "line": 33, "column": 50, "offset": 2962 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Cloudinary is an end-to-end image management solution for your website and mobile apps. Cloudinary covers everything from image uploads, storage, manipulations, optimizations to delivery. You can easily upload images to the cloud and automatically perform smart image manipulations without installing any complex software. All your images are then delivered through a CDN and optimized and using industry best practices.",
+                        "position": { "start": { "line": 35, "column": 1, "offset": 2964 }, "end": { "line": 35, "column": 421, "offset": 3384 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 35, "column": 1, "offset": 2964 }, "end": { "line": 35, "column": 421, "offset": 3384 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919715-cloudinarysm.png",
+                        "alt": "Cloudinary",
+                        "position": { "start": { "line": 37, "column": 1, "offset": 3386 }, "end": { "line": 37, "column": 102, "offset": 3487 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 37, "column": 1, "offset": 3386 }, "end": { "line": 37, "column": 102, "offset": 3487 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "4",
+                        "position": { "start": { "line": 39, "column": 5, "offset": 3493 }, "end": { "line": 39, "column": 6, "offset": 3494 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 39, "column": 6, "offset": 3494 }, "end": { "line": 39, "column": 8, "offset": 3496 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 39, "column": 8, "offset": 3496 }, "end": { "line": 39, "column": 9, "offset": 3497 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://disqus.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Disqus",
+                                "position": {
+                                    "start": { "line": 39, "column": 10, "offset": 3498 },
+                                    "end": { "line": 39, "column": 16, "offset": 3504 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 39, "column": 9, "offset": 3497 }, "end": { "line": 39, "column": 38, "offset": 3526 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 39, "column": 1, "offset": 3489 }, "end": { "line": 39, "column": 38, "offset": 3526 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Interactions on the web are very important and creating a platform to engage with users and to communicate is a no-brainer. ",
+                        "position": { "start": { "line": 41, "column": 1, "offset": 3528 }, "end": { "line": 41, "column": 125, "offset": 3652 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://disqus.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Disqus",
+                                "position": {
+                                    "start": { "line": 41, "column": 126, "offset": 3653 },
+                                    "end": { "line": 41, "column": 132, "offset": 3659 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 41, "column": 125, "offset": 3652 },
+                            "end": { "line": 41, "column": 154, "offset": 3681 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is one of the platforms you should take a look at if you are looking to add comments functionality to your website or blog. ",
+                        "position": {
+                            "start": { "line": 41, "column": 154, "offset": 3681 },
+                            "end": { "line": 41, "column": 279, "offset": 3806 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://disqus.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Disqus",
+                                "position": {
+                                    "start": { "line": 41, "column": 280, "offset": 3807 },
+                                    "end": { "line": 41, "column": 286, "offset": 3813 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 41, "column": 279, "offset": 3806 },
+                            "end": { "line": 41, "column": 308, "offset": 3835 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is a comment hosting service for web sites and online communities that uses a networked platform complete with social network integration, advanced administration, and moderation options. While Disqus is often embedded, it also has an ",
+                        "position": {
+                            "start": { "line": 41, "column": 308, "offset": 3835 },
+                            "end": { "line": 41, "column": 544, "offset": 4071 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://disqus.com/api/docs/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "extensive API",
+                                "position": {
+                                    "start": { "line": 41, "column": 545, "offset": 4072 },
+                                    "end": { "line": 41, "column": 558, "offset": 4085 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 41, "column": 544, "offset": 4071 },
+                            "end": { "line": 41, "column": 589, "offset": 4116 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": {
+                            "start": { "line": 41, "column": 589, "offset": 4116 },
+                            "end": { "line": 41, "column": 590, "offset": 4117 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 41, "column": 1, "offset": 3528 }, "end": { "line": 41, "column": 590, "offset": 4117 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919718-disqussm.png",
+                        "alt": "Disqus",
+                        "position": { "start": { "line": 43, "column": 1, "offset": 4119 }, "end": { "line": 43, "column": 94, "offset": 4212 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 43, "column": 1, "offset": 4119 }, "end": { "line": 43, "column": 94, "offset": 4212 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "5",
+                        "position": { "start": { "line": 45, "column": 5, "offset": 4218 }, "end": { "line": 45, "column": 6, "offset": 4219 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 45, "column": 6, "offset": 4219 }, "end": { "line": 45, "column": 8, "offset": 4221 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 45, "column": 8, "offset": 4221 }, "end": { "line": 45, "column": 9, "offset": 4222 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://fauna.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "FaunaDB",
+                                "position": {
+                                    "start": { "line": 45, "column": 10, "offset": 4223 },
+                                    "end": { "line": 45, "column": 17, "offset": 4230 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 45, "column": 9, "offset": 4222 }, "end": { "line": 45, "column": 38, "offset": 4251 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 45, "column": 1, "offset": 4214 }, "end": { "line": 45, "column": 38, "offset": 4251 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "FaunaDB is a globally-distributed, serverless, cloud database management system for modern applications and highly recommended for use with JAMstack sites. It enables you to instantly create a full-featured data back-end for applications, taking away the need to worry about managing a traditional database. It offers a great development experience in part by supporting both the Fauna Query Language but also native GraphQL.",
+                        "position": { "start": { "line": 47, "column": 1, "offset": 4253 }, "end": { "line": 47, "column": 426, "offset": 4678 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 47, "column": 1, "offset": 4253 }, "end": { "line": 47, "column": 426, "offset": 4678 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919722-faunasm.png",
+                        "alt": "FaunaDB",
+                        "position": { "start": { "line": 49, "column": 1, "offset": 4680 }, "end": { "line": 49, "column": 94, "offset": 4773 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 49, "column": 1, "offset": 4680 }, "end": { "line": 49, "column": 94, "offset": 4773 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "6",
+                        "position": { "start": { "line": 51, "column": 5, "offset": 4779 }, "end": { "line": 51, "column": 6, "offset": 4780 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 51, "column": 6, "offset": 4780 }, "end": { "line": 51, "column": 8, "offset": 4782 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 51, "column": 8, "offset": 4782 }, "end": { "line": 51, "column": 9, "offset": 4783 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://www.netlify.com/products/forms/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Netlify Forms",
+                                "position": {
+                                    "start": { "line": 51, "column": 10, "offset": 4784 },
+                                    "end": { "line": 51, "column": 23, "offset": 4797 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 51, "column": 9, "offset": 4783 }, "end": { "line": 51, "column": 65, "offset": 4839 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 51, "column": 1, "offset": 4775 }, "end": { "line": 51, "column": 65, "offset": 4839 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Netlify Forms is a great service for integrating forms into your JAMstack site. There is no JavaScript required, Netlify’s build bots make it work by parsing your HTML files directly at deploy time. This means that there's no need for you to make an API call or include extra JavaScript on your site. You only need to pass a ",
+                        "position": { "start": { "line": 53, "column": 1, "offset": 4841 }, "end": { "line": 53, "column": 326, "offset": 5166 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "netlify",
+                        "position": {
+                            "start": { "line": 53, "column": 326, "offset": 5166 },
+                            "end": { "line": 53, "column": 335, "offset": 5175 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " attribute or ",
+                        "position": {
+                            "start": { "line": 53, "column": 335, "offset": 5175 },
+                            "end": { "line": 53, "column": 349, "offset": 5189 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "data-netlify=\"true\"",
+                        "position": {
+                            "start": { "line": 53, "column": 349, "offset": 5189 },
+                            "end": { "line": 53, "column": 370, "offset": 5210 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " for JavaScript rendered forms to your ",
+                        "position": {
+                            "start": { "line": 53, "column": 370, "offset": 5210 },
+                            "end": { "line": 53, "column": 409, "offset": 5249 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "<form>",
+                        "position": {
+                            "start": { "line": 53, "column": 409, "offset": 5249 },
+                            "end": { "line": 53, "column": 417, "offset": 5257 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " tag. Note that your site needs to be deployed to Netlify for this to work as you will be receiving all form submissions via your Netlify dashboard.",
+                        "position": {
+                            "start": { "line": 53, "column": 417, "offset": 5257 },
+                            "end": { "line": 53, "column": 565, "offset": 5405 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 53, "column": 1, "offset": 4841 }, "end": { "line": 53, "column": 565, "offset": 5405 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919725-netlifyformssm.png",
+                        "alt": "Netlify Forms",
+                        "position": { "start": { "line": 55, "column": 1, "offset": 5407 }, "end": { "line": 55, "column": 107, "offset": 5513 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 55, "column": 1, "offset": 5407 }, "end": { "line": 55, "column": 107, "offset": 5513 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "7",
+                        "position": { "start": { "line": 57, "column": 5, "offset": 5519 }, "end": { "line": 57, "column": 6, "offset": 5520 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 57, "column": 6, "offset": 5520 }, "end": { "line": 57, "column": 8, "offset": 5522 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 57, "column": 8, "offset": 5522 }, "end": { "line": 57, "column": 9, "offset": 5523 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://auth0.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Auth0",
+                                "position": {
+                                    "start": { "line": 57, "column": 10, "offset": 5524 },
+                                    "end": { "line": 57, "column": 15, "offset": 5529 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 57, "column": 9, "offset": 5523 }, "end": { "line": 57, "column": 36, "offset": 5550 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 57, "column": 1, "offset": 5515 }, "end": { "line": 57, "column": 36, "offset": 5550 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Auth0 is an authentication and authorization as a service platform. They give developers and companies the building blocks they need to secure their applications without having to become security experts. You can connect your JAMstack application to Auth0 and set the identity providers you want to use (i.e. how you want your users to log in) and based on your app's technology, choose one of the SDKs or call the API, and hook it up to your app.",
+                        "position": { "start": { "line": 59, "column": 1, "offset": 5552 }, "end": { "line": 59, "column": 448, "offset": 5999 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 59, "column": 1, "offset": 5552 }, "end": { "line": 59, "column": 448, "offset": 5999 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919712-auth0sm.png",
+                        "alt": "Auth0",
+                        "position": { "start": { "line": 61, "column": 1, "offset": 6001 }, "end": { "line": 61, "column": 92, "offset": 6092 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 61, "column": 1, "offset": 6001 }, "end": { "line": 61, "column": 92, "offset": 6092 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "8",
+                        "position": { "start": { "line": 63, "column": 5, "offset": 6098 }, "end": { "line": 63, "column": 6, "offset": 6099 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 63, "column": 6, "offset": 6099 }, "end": { "line": 63, "column": 8, "offset": 6101 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 63, "column": 8, "offset": 6101 }, "end": { "line": 63, "column": 9, "offset": 6102 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://snipcart.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Snipcart",
+                                "position": {
+                                    "start": { "line": 63, "column": 10, "offset": 6103 },
+                                    "end": { "line": 63, "column": 18, "offset": 6111 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 63, "column": 9, "offset": 6102 }, "end": { "line": 63, "column": 42, "offset": 6135 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 63, "column": 1, "offset": 6094 }, "end": { "line": 63, "column": 42, "offset": 6135 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Snipcart is a simple shopping cart solution that allows you to turn any website into a fully customizable e-commerce platform. A basic Snipcart integration will take developers minutes. You only need to use HTML markup to add a full shopping cart platform to an existing site. Snipcart allows payment processing, shipping estimates, and order management without making your customers leave your website.",
+                        "position": { "start": { "line": 65, "column": 1, "offset": 6137 }, "end": { "line": 65, "column": 404, "offset": 6540 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 65, "column": 1, "offset": 6137 }, "end": { "line": 65, "column": 404, "offset": 6540 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919729-snipcartsm.png",
+                        "alt": "Snipcart",
+                        "position": { "start": { "line": 67, "column": 1, "offset": 6542 }, "end": { "line": 67, "column": 98, "offset": 6639 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 67, "column": 1, "offset": 6542 }, "end": { "line": 67, "column": 98, "offset": 6639 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "9",
+                        "position": { "start": { "line": 69, "column": 5, "offset": 6645 }, "end": { "line": 69, "column": 6, "offset": 6646 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 69, "column": 6, "offset": 6646 }, "end": { "line": 69, "column": 8, "offset": 6648 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 69, "column": 8, "offset": 6648 }, "end": { "line": 69, "column": 9, "offset": 6649 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://stripe.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Stripe",
+                                "position": {
+                                    "start": { "line": 69, "column": 10, "offset": 6650 },
+                                    "end": { "line": 69, "column": 16, "offset": 6656 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 69, "column": 9, "offset": 6649 }, "end": { "line": 69, "column": 38, "offset": 6678 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 69, "column": 1, "offset": 6641 }, "end": { "line": 69, "column": 38, "offset": 6678 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Thinking of implementing online payments to your JAMstack application? With ",
+                        "position": { "start": { "line": 71, "column": 1, "offset": 6680 }, "end": { "line": 71, "column": 77, "offset": 6756 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://stripe.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Stripe",
+                                "position": {
+                                    "start": { "line": 71, "column": 78, "offset": 6757 },
+                                    "end": { "line": 71, "column": 84, "offset": 6763 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 71, "column": 77, "offset": 6756 },
+                            "end": { "line": 71, "column": 106, "offset": 6785 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " you can integrate a service for accepting payments and managing your business online, all on the client-side. The integration with Stripe checkout API lets you collect payments with just a few lines of code in your JAMstack app.",
+                        "position": {
+                            "start": { "line": 71, "column": 106, "offset": 6785 },
+                            "end": { "line": 71, "column": 335, "offset": 7014 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 71, "column": 1, "offset": 6680 }, "end": { "line": 71, "column": 335, "offset": 7014 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919732-stripesm.png",
+                        "alt": "Stripe",
+                        "position": { "start": { "line": 73, "column": 1, "offset": 7016 }, "end": { "line": 73, "column": 94, "offset": 7109 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 73, "column": 1, "offset": 7016 }, "end": { "line": 73, "column": 94, "offset": 7109 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "10",
+                        "position": { "start": { "line": 75, "column": 5, "offset": 7115 }, "end": { "line": 75, "column": 7, "offset": 7117 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 75, "column": 7, "offset": 7117 }, "end": { "line": 75, "column": 9, "offset": 7119 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 75, "column": 9, "offset": 7119 }, "end": { "line": 75, "column": 10, "offset": 7120 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://www.netlify.com/products/functions/",
+                        "children": [
+                            {
+                                "type": "strong",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Netlify Functions",
+                                        "position": {
+                                            "start": { "line": 75, "column": 13, "offset": 7123 },
+                                            "end": { "line": 75, "column": 30, "offset": 7140 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 75, "column": 11, "offset": 7121 },
+                                    "end": { "line": 75, "column": 32, "offset": 7142 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 75, "column": 10, "offset": 7120 }, "end": { "line": 75, "column": 78, "offset": 7188 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 75, "column": 1, "offset": 7111 }, "end": { "line": 75, "column": 78, "offset": 7188 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Netlify Functions let you deploy Lambda functions without an AWS account and with the function management handled directly within Netlify. The functions are version-controlled, built, and deployed along with the rest of your Netlify site, and it will automatically handle service discovery through the built-in API gateway.",
+                        "position": { "start": { "line": 77, "column": 1, "offset": 7190 }, "end": { "line": 77, "column": 324, "offset": 7513 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 77, "column": 1, "offset": 7190 }, "end": { "line": 77, "column": 324, "offset": 7513 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "image",
+                        "title": null,
+                        "url": "chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/1578919727-netlifyfunctionssm.png",
+                        "alt": "Netlify Functions",
+                        "position": { "start": { "line": 79, "column": 1, "offset": 7515 }, "end": { "line": 79, "column": 115, "offset": 7629 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 79, "column": 1, "offset": 7515 }, "end": { "line": 79, "column": 115, "offset": 7629 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Where to Go From Here",
+                        "position": { "start": { "line": 81, "column": 1, "offset": 7631 }, "end": { "line": 81, "column": 22, "offset": 7652 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 81, "column": 1, "offset": 7631 }, "end": { "line": 82, "column": 22, "offset": 7674 }, "indent": [1] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The JAMstack provides a great advantage to both the end-users and developers coupled with a fast and scalable approach. The services here are a part of a myriad list of services available to use in the JAMstack ecosystem. Check out the ",
+                        "position": { "start": { "line": 84, "column": 1, "offset": 7676 }, "end": { "line": 84, "column": 237, "offset": 7912 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://www.thenewdynamic.org/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "New Dynamic directory of tools and services",
+                                "position": {
+                                    "start": { "line": 84, "column": 238, "offset": 7913 },
+                                    "end": { "line": 84, "column": 281, "offset": 7956 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 84, "column": 237, "offset": 7912 },
+                            "end": { "line": 84, "column": 314, "offset": 7989 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " and the ",
+                        "position": {
+                            "start": { "line": 84, "column": 314, "offset": 7989 },
+                            "end": { "line": 84, "column": 323, "offset": 7998 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://github.com/agarrharr/awesome-static-website-services",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "awesome static website services repository",
+                                "position": {
+                                    "start": { "line": 84, "column": 324, "offset": 7999 },
+                                    "end": { "line": 84, "column": 366, "offset": 8041 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 84, "column": 323, "offset": 7998 },
+                            "end": { "line": 84, "column": 429, "offset": 8104 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " for a comprehensive list of other services to explore.",
+                        "position": {
+                            "start": { "line": 84, "column": 429, "offset": 8104 },
+                            "end": { "line": 84, "column": 484, "offset": 8159 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 84, "column": 1, "offset": 7676 }, "end": { "line": 84, "column": 484, "offset": 8159 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://www.stackbit.com/blog/extending-jamstack-2020/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Source",
+                                "position": {
+                                    "start": { "line": 87, "column": 2, "offset": 8163 },
+                                    "end": { "line": 87, "column": 8, "offset": 8169 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 87, "column": 1, "offset": 8162 }, "end": { "line": 87, "column": 65, "offset": 8226 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 87, "column": 1, "offset": 8162 }, "end": { "line": 87, "column": 65, "offset": 8226 }, "indent": [] }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 87, "column": 65, "offset": 8226 } }
+    }
+}

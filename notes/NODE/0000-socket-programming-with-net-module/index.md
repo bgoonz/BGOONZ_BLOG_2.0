@@ -1,8 +1,8 @@
--   **Start Date:** 2019-07-11
--   **PR:**
--   **Issue:** [#126](https://github.com/nodejs/nodejs.dev/issues/126)
--   **Keywords:** net core tcp socket networking
--   **Summary:** A guide to using the core Node.js module `net` for TCP socket programming
+* **Start Date:** 2019-07-11
+* **PR:**
+* **Issue:** [#126](https://github.com/nodejs/nodejs.dev/issues/126)
+* **Keywords:** net core tcp socket networking
+* **Summary:** A guide to using the core Node.js module `net` for TCP socket programming
 
 # Computer Networking & Socket Programming
 
@@ -21,41 +21,40 @@ The key part of the `net` module is the `net.Socket` class. A socket instance in
 Lets look at the simplest example of a TCP server, an echo server. An _echo server_ is one which returns the same message sent to it.
 
 ```js
-const net = require('net');
+const net = require('net')
 
 // Create a TCP server using the `net.createServer()` method
 // The callback method is an event listener for the 'connection' event
 // This method is passed a single parameter, the client socket connection
-const server = net.createServer((client) => {
-    console.log('Client connected!');
+const server = net.createServer(client => {
 
-    // The client is a stream, set the data encoding to utf8
-    client.setEncoding('utf8');
+  console.log('Client connected!')
 
-    // Manual implementation of an echo server:
-    client.on('data', (data) => {
-        // data is a UTF-8 string
-        console.log(data); // log the message from the client to the server
-        client.write(data); // write the same message back to the client
-    });
+  // The client is a stream, set the data encoding to utf8
+  client.setEncoding('utf8')
 
-    // Automatic implementation of an echo server:
-    // client is a stream, use the Stream.pipe prototype method to connect it's
-    // read stream to it's write stream
-    // client.pipe(client)
-});
+  // Manual implementation of an echo server:
+  client.on('data', data => { // data is a UTF-8 string
+    console.log(data) // log the message from the client to the server
+    client.write(data) // write the same message back to the client
+  })
+
+  // Automatic implementation of an echo server:
+  // client is a stream, use the Stream.pipe prototype method to connect it's
+  // read stream to it's write stream
+  // client.pipe(client)
+})
 
 // Start the server on localhost:8124
 // The `http` module, inherits this method for its own http.Server.listen
 server.listen(8124, 'localhost', () => {
-    console.log('Waiting for connection...');
-});
+  console.log('Waiting for connection...')
+})
 ```
 
 With this server running, connect to it using your system's command-line TCP interface. The two most common are telnet and netcat. If you're unsure which, try both! If neither work, search on Google for "telnet alternative for \<your OS\>".
 
 In another terminal connect to the running TCP server:
-
 ```bash
 telnet localhost 8124
 # or
@@ -72,49 +71,51 @@ Before starting, open two terminals and startup the Node.js repl (you can also u
 
 ```js
 // In the first repl, create and start a server
-const net = require('net');
+const net = require('net')
 
-const server = net.createServer((client) => {
-    console.log('Client connected'); // log the client has connected to the server
+const server = net.createServer(client => {
 
-    client.setEncoding('utf8'); // set the data encoding
+  console.log('Client connected') // log the client has connected to the server
 
-    client.write('Hello from the server!\n'); // say hello to the new connection
+  client.setEncoding('utf8') // set the data encoding
 
-    client.on('data', (data) => {
-        client.write(data.toUpperCase()); // echo the client message in ALL CAPS
-    });
+  client.write('Hello from the server!\n') // say hello to the new connection
 
-    client.on('end', () => {
-        console.log('Client disconnected'); // log the client has disconnected to the server
-    });
-});
+  client.on('data', data => {
+    client.write(data.toUpperCase()) // echo the client message in ALL CAPS
+  })
+
+  client.on('end', () => {
+    console.log('Client disconnected') // log the client has disconnected to the server
+  })
+})
 
 server.listen(8124, 'localhost', () => {
-    console.log('Waiting for connection...');
-});
+  console.log('Waiting for connection...')
+})
 ```
 
 ```js
 // In the second repl, create and connect a client
-const net = require('net');
+const net = require('net')
 
 const client = net.createConnection(8124, 'localhost', () => {
-    console.log('Connected to Server!'); // log the server connection to the client
 
-    client.write('Hello from the client!\n'); // say hello to the server
-});
+  console.log('Connected to Server!') // log the server connection to the client
 
-client.setEncoding('utf8'); // set the encoding
+  client.write('Hello from the client!\n') // say hello to the server
+})
 
-client.on('data', (data) => {
-    console.log(data); // log messages from the server to the client
-    client.end(); // end the connection after
-});
+client.setEncoding('utf8') // set the encoding
+
+client.on('data', data => {
+  console.log(data) // log messages from the server to the client
+  client.end() // end the connection after
+})
 
 client.on('end', () => {
-    console.log('Disconnected from server'); // log the server disconnection to the client
-});
+  console.log('Disconnected from server') // log the server disconnection to the client
+})
 ```
 
 The second example introduces an additional event listener `'end'`. This is very useful for determining when a socket connection is terminated. In the client code, the call to `client.end()` is the programatic way of ending a socket connection.
@@ -126,13 +127,12 @@ Fantastic work! With these two examples you should have what you need to get sta
 For more capabilities of the `net` module read the Node.js [net documentation](https://nodejs.org/api/net.html).
 
 To learn more, try completing the following challenges:
-
--   Using `readline` or `stream` modules, create an interactive client connection script
-    -   this can build on the second example provided in this guide
--   Create a group-chat TCP server
-    -   hint: you can hold multiple client connections in an array
-    -   use multiple arrays for a multi-channel chat server
-    -   for an extra challenge try to implement a basic user-store for authentication of user accounts
--   Create a mini CRUD database server using an idiomatic chat-command interface
-    -   The chat-command interface could use keywords such as `create`, `read`, `update`, and `delete` so the client can send instructions to the server
-    -   Data can be persisted between sessions using `fs` to read and write data to files
+* Using `readline` or `stream` modules, create an interactive client connection script
+  * this can build on the second example provided in this guide
+* Create a group-chat TCP server
+  * hint: you can hold multiple client connections in an array
+  * use multiple arrays for a multi-channel chat server
+  * for an extra challenge try to implement a basic user-store for authentication of user accounts
+* Create a mini CRUD database server using an idiomatic chat-command interface
+  * The chat-command interface could use keywords such as `create`, `read`, `update`, and `delete` so the client can send instructions to the server
+  * Data can be persisted between sessions using `fs` to read and write data to files
