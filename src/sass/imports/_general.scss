@@ -10,6 +10,7 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    overflow: auto;
 }
 
 a {
@@ -23,6 +24,15 @@ a {
     &:hover {
         color: $gray-600;
     }
+}
+
+iframe {
+    overflow-y: auto;
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 4px solid gold;
+    height: 1750px;
+    width: 1250px !important;
 }
 
 h1,
@@ -172,13 +182,6 @@ hr {
     &:first-child {
         margin-top: 0;
     }
-}
-
-embed,
-iframe,
-object,
-video {
-    max-width: 100%;
 }
 
 img {
