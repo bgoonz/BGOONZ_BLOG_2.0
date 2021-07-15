@@ -1,5 +1,5 @@
 ---
-title: Algorithms & Data Structures
+title: Algorithms 
 subtitle: The Algorithms & Data Structures provides you with a blueprint of default post and page styles.
 image: images/5.jpg
 seo:
