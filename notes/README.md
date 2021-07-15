@@ -21,6 +21,6 @@ If you submit a pull request to implement a significant change to the documentat
 
 RFCs that are candidates for inclusion on the Node.js website will enter a "final comment period" lasting 7 days. The beginning of this period will be signaled with a comment and tag on the RFC's pull request. The RFC can be modified based upon feedback from the community. Significant modifications may trigger a new final comment period. At the close of this review period, the RFC may be:
 
--   accepted at the close of its final comment period. A working group member will merge the RFC's associated pull request, at which point the RFC will become 'active', or;
+* accepted at the close of its final comment period. A working group member will merge the RFC's associated pull request, at which point the RFC will become 'active', or;
 
--   rejected by the Website Redesign working group after public discussion has settled and comments have been made summarizing the rationale for rejection. A member of the working group should then close the RFC's associated pull request.
+* rejected by the Website Redesign working group after public discussion has settled and comments have been made summarizing the rationale for rejection. A member of the working group should then close the RFC's associated pull request.
