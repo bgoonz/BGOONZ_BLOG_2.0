@@ -30,9 +30,9 @@ iframe {
     overflow-y: auto;
     overflow-x: auto;
     border-radius: 12px;
-    border: 4px solid gold;
-    height: 1450px;
-    width: 1250px !important;
+    border: 2px solid gold;
+    height: 1200px;
+    width: 1150px !important;
 }
 
 h1,
@@ -94,7 +94,7 @@ pre {
     color: $gray-100;
     font-size: 0.875em;
     line-height: 1.5;
-    margin: 2.14286em 0;
+    margin: 1.14286em 0;
     overflow: auto;
     padding: 1.5em;
     text-align: left;
@@ -174,19 +174,19 @@ li > ol {
 }
 
 hr {
-    background-color: $gray-300;
+    background-color: $gray-200;
     border: 0;
-    height: 1px;
-    margin: 1.875em 0;
+    height: 2px;
+    margin: 1.0em 0;
 
     &:first-child {
-        margin-top: 0;
+        margin-top: 1.5em;
     }
 }
 
 img {
     height: auto;
-    max-width: 100%;
+
 }
 
 @media only screen and (min-width: 841px) {
