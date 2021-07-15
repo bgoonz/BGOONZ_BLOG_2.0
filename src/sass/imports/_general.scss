@@ -174,19 +174,19 @@ li > ol {
 }
 
 hr {
-    background-color: $gray-200;
+    background-color: $gray-300;
     border: 0;
-    height: 2px;
-    margin: 1.0em 0;
+    height: 1px;
+    margin: 1.875em 0;
 
     &:first-child {
-        margin-top: 1.5em;
+        margin-top: 0;
     }
 }
 
 img {
     height: auto;
-
+    max-width: 100%;
 }
 
 @media only screen and (min-width: 841px) {
