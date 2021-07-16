@@ -131,7 +131,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-<iframe src="https://ternary42.netlify.app/" height="800px" width="600px!important" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe class="block-content" src="https://ternary42.netlify.app/" height="800px" width="600px!important" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -143,7 +143,7 @@ on <a href="https://codepen.io">CodePen</a>.
 
 <br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe class="block-content" src="https://githtmlpreview.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -155,7 +155,7 @@ on <a href="https://codepen.io">CodePen</a>.
 
 <br>
 
-<iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe class="block-content" src="https://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -167,7 +167,7 @@ on <a href="https://codepen.io">CodePen</a>.
 
 <br>
 
-<iframe src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe class="block-content" src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -181,17 +181,17 @@ on <a href="https://codepen.io">CodePen</a>.
 
 <br>
 
-<iframe src="https://fourm-builder-gui.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe class="block-content" src="https://fourm-builder-gui.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
-class="
-<br>
 
 <br>
 
 <br>
-<iframe src="https://ds-algo-official.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+
+<br>
+<iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
