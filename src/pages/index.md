@@ -87,7 +87,14 @@ sections:
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
-    actions: []
+    actions:
+      - label: lorem-ipsum
+        url: '#'
+        style: link
+        icon_class: dev
+        new_window: false
+        no_follow: false
+        type: action
     type: section_content
     image: images/goals.jpg
     title: Web Audio DAW
@@ -252,7 +259,10 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: >
-     <iframe class="inner" src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%230069c4&amp;ctz=America%2FNew_York&amp;src=Nm41cnZxa2xjOW5jZmxpdTAwMXFlNHJtNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E" style="border:solid 1px #777" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+      <iframe class="inner"
+      src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%230069c4&amp;ctz=America%2FNew_York&amp;src=Nm41cnZxa2xjOW5jZmxpdTAwMXFlNHJtNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E"
+      style="border:solid 1px #777" width="400" height="300" frameborder="0"
+      scrolling="no"></iframe>
     actions: []
     type: section_content
   - title: Contact
