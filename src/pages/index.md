@@ -142,8 +142,8 @@ sections:
         type: grid_item
         image: images/neural.PNG
       - title: Jamstack
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: jamstack
+        image_alt: jamstack
         content: >
           ## Why Jamstack
 
