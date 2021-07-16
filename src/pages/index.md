@@ -282,7 +282,10 @@ seo:
       value: Web-Dev-Hub
       keyName: property
     - name: 'og:description'
-      value: Web-Dev-Hub
+      value: >-
+        my resource sharing and blog site ... centered mostly on web development
+        and just a bit of audio production / generally nerdy things I find
+        interesting.
       keyName: property
     - name: 'og:image'
       value: images/code.png
