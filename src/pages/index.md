@@ -198,7 +198,7 @@ sections:
     image_position: left
     content: |
       <iframe  style="zoom:0.75;" width="800" height="575"
-       src="https://5500-blush-salmon-u9s8p2nv.ws-us11.gitpod.io/" title="YouTube video
+       src="https://iframeshowcase.netlify.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions:
