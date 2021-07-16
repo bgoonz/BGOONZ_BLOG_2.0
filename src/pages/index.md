@@ -247,6 +247,17 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
+  - title: Web Dev Calendar
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: >
+      <iframe
+      src="https://calendar.google.com/calendar/embed?height=675&amp;wkst=2&amp;bgcolor=%230e5bae&amp;ctz=America%2FNew_York&amp;src=Nm41cnZxa2xjOW5jZmxpdTAwMXFlNHJtNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E&amp;mode=MONTH&amp;showTabs=1&amp;showCalendars=1&amp;showTz=1&amp;showTitle=1"
+      style="border:solid 1px #777" width="900" height="675" frameborder="0"
+      scrolling="no"></iframe>
+    actions: []
+    type: section_content
   - title: Contact
     section_id: lorem-ipsum
     actions:
@@ -258,14 +269,6 @@ sections:
         no_follow: false
         type: action
     type: section_cta
-  - title: Web Dev Calendar
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
-    image_position: left
-    content: |
-      <iframe src="https://calendar.google.com/calendar/embed?height=675&amp;wkst=2&amp;bgcolor=%230e5bae&amp;ctz=America%2FNew_York&amp;src=Nm41cnZxa2xjOW5jZmxpdTAwMXFlNHJtNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E&amp;mode=MONTH&amp;showTabs=1&amp;showCalendars=1&amp;showTz=1&amp;showTitle=1" style="border:solid 1px #777" width="900" height="675" frameborder="0" scrolling="no"></iframe>
-    actions: []
-    type: section_content
 seo:
   title: Web-Dev-Hub
   description: Web-Dev-Hub
