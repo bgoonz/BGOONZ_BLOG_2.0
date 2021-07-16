@@ -165,7 +165,7 @@
     align-items: center;
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 741px) {
     .grid-col-2 {
         .grid-item {
             -ms-flex: 0 0 50%;
@@ -175,7 +175,7 @@
     }
 }
 
-@media only screen and (min-width: 761px) {
+@media only screen and (min-width: 861px) {
     .grid-col-3 {
         .grid-item {
             -ms-flex: 0 0 33.333%;
