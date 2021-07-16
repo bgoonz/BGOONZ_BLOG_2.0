@@ -178,4 +178,6 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-<iframe src="https://ds-algo-official.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+<iframe src="https://ds-algo-official.netlify.app/" height="800px" width="1600px" scrolling="no" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
