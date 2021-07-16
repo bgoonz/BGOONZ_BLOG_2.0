@@ -92,7 +92,7 @@ sections:
         url: 'https://mihirbegmusiclab.netlify.app/'
         style: primary
         icon_class: dev
-        new_window: false
+        new_window: true
         no_follow: false
         type: action
     type: section_content
