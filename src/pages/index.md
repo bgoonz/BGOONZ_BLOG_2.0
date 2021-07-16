@@ -131,8 +131,8 @@ sections:
         type: grid_item
         image: images/spectacular-turmeric.png
       - title: Convolutional Neural Networks
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: neural networks
+        image_alt: neural networks
         content: >+
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
