@@ -56,7 +56,7 @@ sections:
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/panoramic-owl.png
       - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
-        image_alt: lorem-ipsum
+        image_alt: img of dtw
         content: >
           As I learn to build web applications in React I will blog about it in
           this series in an attempt to capture the questions that a complete
