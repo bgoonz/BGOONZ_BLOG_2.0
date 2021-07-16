@@ -1,5 +1,5 @@
 ---
-title: My Playlist
+title: Web-Dev-Hub
 sections:
   - section_id: Intro
     type: section_hero
