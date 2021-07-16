@@ -252,7 +252,10 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: >
-      <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%230069c4&amp;ctz=America%2FNew_York&amp;src=Nm41cnZxa2xjOW5jZmxpdTAwMXFlNHJtNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E" style="border:solid 1px #777" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+      <iframe
+      src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%230069c4&amp;ctz=America%2FNew_York&amp;src=Nm41cnZxa2xjOW5jZmxpdTAwMXFlNHJtNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E"
+      style="border:solid 1px #777" width="600" height="400" frameborder="0"
+      scrolling="no"></iframe>
     actions: []
     type: section_content
   - title: Contact
@@ -268,7 +271,9 @@ sections:
     type: section_cta
 seo:
   title: Web-Dev-Hub
-  description: Web-Dev-Hub
+  description: >-
+    my resource sharing and blog site ... centered mostly on web development and
+    just a bit of audio production / generally nerdy things I find interesting.
   extra:
     - name: 'og:type'
       value: website
