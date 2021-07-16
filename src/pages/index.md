@@ -89,7 +89,7 @@ sections:
     image_position: left
     actions:
       - label: Go To Web Audio Daw
-        url: '#'
+        url: 'https://mihirbegmusiclab.netlify.app/'
         style: link
         icon_class: dev
         new_window: false
