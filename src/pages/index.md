@@ -56,7 +56,7 @@ sections:
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/panoramic-owl.png
       - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
-        image_alt: lorem-ipsum
+        image_alt: img of dtw
         content: >
           As I learn to build web applications in React I will blog about it in
           this series in an attempt to capture the questions that a complete
@@ -67,7 +67,7 @@ sections:
         title: Beginner Guide React
         image: images/successful-panda.gif
       - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
-        image_alt: lorem-ipsum
+        image_alt: img of react
         content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
         actions: []
         type: grid_item
@@ -85,7 +85,7 @@ sections:
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
   - section_id: Web Audio DAW
-    image_alt: lorem-ipsum
+    image_alt: medium
     image_position: left
     actions: []
     type: section_content
@@ -119,8 +119,8 @@ sections:
     col_number: three
     grid_items:
       - title: Angolia
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: angolia
+        image_alt: angolia
         content: |
           ## Full Text Search
 
@@ -131,8 +131,8 @@ sections:
         type: grid_item
         image: images/spectacular-turmeric.png
       - title: Convolutional Neural Networks
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: neural networks
+        image_alt: neural networks
         content: >+
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
@@ -142,8 +142,8 @@ sections:
         type: grid_item
         image: images/neural.PNG
       - title: Jamstack
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: jamstack
+        image_alt: jamstack
         content: >
           ## Why Jamstack
 
@@ -185,7 +185,7 @@ sections:
             url: /showcase
             style: link
         image: images/My Post.png
-  - title: Embed Your Repo In My Website
+  - title: Mini Projects
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
