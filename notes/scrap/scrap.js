@@ -1,5 +1,5 @@
-const fs = require( 'fs' );
-const path = require( 'path' );
+const fs = require('fs');
+const path = require('path');
 
 const { resolve } = require('path'),
     { readdir } = require('fs').promises;

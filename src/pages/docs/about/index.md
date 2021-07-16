@@ -4,24 +4,24 @@ excerpt: >-
     Web-Dev-Hubis a Unibit theme created for project documentations. You can use
     it for your project.
 seo:
-    title: Portfolio
-    description: This is the Portfolio page
+    title: About
+    description: This is the About page
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value: Portfolio
+          value: About
           keyName: property
         - name: 'og:description'
-          value: This is the Portfolio page
+          value: This is the About page
           keyName: property
         - name: 'twitter:card'
           value: summary
         - name: 'twitter:title'
-          value: Portfolio
+          value: About
         - name: 'twitter:description'
-          value: This is the Portfolio page
+          value: This is the About page
 template: docs
 ---
 
@@ -37,7 +37,7 @@ template: docs
 
 <div align="center">
 
-### [WEBSITE](https://bgoonz-blog.netlify.app/) ⇄ [Portfolio](https://bg-portfolio.netlify.app/) ⇄ [Collaborate](https://webdevhub.jetbrains.space/oauth/auth/invite/419dd305ba717a392a02aa5b4e41e09c)
+### [WEBSITE](https://bgoonz-blog.netlify.app/) ⇄ [About](https://bg-About.netlify.app/) ⇄ [Collaborate](https://webdevhub.jetbrains.space/oauth/auth/invite/419dd305ba717a392a02aa5b4e41e09c)
 
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
@@ -51,11 +51,10 @@ template: docs
 </div>
 
 <div align="center">
-  
 
 
-[![Portfolio](https://img.shields.io/badge/-❤_Portfolio-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz.github.io/)](https://bgoonz.github.io)
-<a href="https://github.com/bgoonz/resume-cv-portfolio-samples/blob/master/2021-resume/bryan-guner-resume-2021.pdf" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a>
+[![About](https://img.shields.io/badge/-❤_About-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz.github.io/)](https://bgoonz.github.io)
+<a href="https://github.com/bgoonz/resume-cv-About-samples/blob/master/2021-resume/bryan-guner-resume-2021.pdf" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a>
 [![Bryan's email](https://img.shields.io/badge/bryan.guner@gmail.com-f4b400?style=flat-square&logo=gmail&logoColor=black&link=mailto:bryan.guner@gmail.com)](mailto:bryan.guner@gmail.com)
 [![Blog](https://img.shields.io/badge/-Blog-21759b?style=flat-square&logo=WordPress&logoColor=white&link=https://web-dev-hub.com/)](https://web-dev-hub.com/)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-0077b5?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bryan-guner-046199128/)](https://www.linkedin.com/in/bryan-guner-046199128/)
@@ -132,7 +131,6 @@ template: docs
 -   <a href="https://dev.to/bgoonz">
       <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Bryan C Guner's DEV Community Profile" height="30px" width="30px">
     </a>
-
 
 <a href="https://dev.to/bgoonz">
  
@@ -393,9 +391,9 @@ Creating things that change my every day life.
 
 ---
 
-## Portfolio:
+## About:
 
-# [netlify](https://portfolio42.netlify.app/)
+# [netlify](https://About42.netlify.app/)
 
 ---
 
