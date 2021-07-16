@@ -85,7 +85,7 @@ sections:
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
   - section_id: Web Audio DAW
-    image_alt: lorem-ipsum
+    image_alt: medium
     image_position: left
     actions: []
     type: section_content
