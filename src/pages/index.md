@@ -88,7 +88,7 @@ sections:
     image_alt: medium
     image_position: left
     actions:
-      - label: lorem-ipsum
+      - label: Go To Web Audio Daw
         url: '#'
         style: link
         icon_class: dev
