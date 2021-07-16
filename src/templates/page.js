@@ -43,4 +43,3 @@ export default class Page extends React.Component {
         );
     }
 }
-SAVE TO CACHER
