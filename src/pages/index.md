@@ -1,5 +1,5 @@
 ---
-title: Web-Dev-Hub
+title: Web Dev Hub Home
 sections:
   - section_id: Intro
     type: section_hero
