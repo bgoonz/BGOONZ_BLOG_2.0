@@ -226,7 +226,7 @@ sections:
     image_alt: blog
     image_position: left
     content: |-
-      <iframe class="inner"  style="zoom:0.75;" width="800" height="575"
+      <iframe class="block-content"  style="zoom:0.75;" width="800" height="575"
        src="https://blog-w-comments.vercel.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -248,7 +248,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |-
-      <iframe class="inner" style="zoom:0.75;" width="800" height="575"
+      <iframe class="block-content" style="zoom:0.75;" width="800" height="575"
         src="https://bgoonz.blogspot.com/" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -259,7 +259,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: >
-      <iframe class="inner"
+      <iframe class="block-content"
       src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%230069c4&amp;ctz=America%2FNew_York&amp;src=Nm41cnZxa2xjOW5jZmxpdTAwMXFlNHJtNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E"
       style="border:solid 1px #777" width="400" height="300" frameborder="0"
       scrolling="no"></iframe>
