@@ -185,7 +185,7 @@ sections:
             url: /showcase
             style: link
         image: images/My Post.png
-  - title: Embed Your Repo In My Website
+  - title: Mini Projects
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
