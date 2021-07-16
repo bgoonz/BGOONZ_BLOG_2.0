@@ -119,8 +119,8 @@ sections:
     col_number: three
     grid_items:
       - title: Angolia
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: angolia
+        image_alt: angolia
         content: |
           ## Full Text Search
 
