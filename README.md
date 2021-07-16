@@ -20,7 +20,10 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
 
-![blog](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog.png?raw=true)
+[![CodeScene general](https://codescene.io/images/analyzed-by-codescene-badge.svg)](https://codescene.io/projects/12335)
+
+
+![blog](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/blog2.png?raw=true)
 
 </div>
 
