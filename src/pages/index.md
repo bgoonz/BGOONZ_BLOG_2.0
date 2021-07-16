@@ -285,7 +285,7 @@ seo:
       value: Web-Dev-Hub
       keyName: property
     - name: 'og:image'
-      value: images/4.jpg
+      value: images/code.png
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
