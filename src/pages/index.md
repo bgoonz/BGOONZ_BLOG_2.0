@@ -232,17 +232,6 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: Nextjs & SanityCMS Blog W Comments
-    section_id: blog
-    image_alt: blog
-    image_position: left
-    content: |-
-      <iframe class="block-content"  style="zoom:0.75;" width="800" height="575"
-       src="https://blog-w-comments.vercel.app/" title="YouTube video
-       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
   - title: Mini Projects
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
@@ -263,6 +252,17 @@ sections:
         src="https://bgoonz.blogspot.com/" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Nextjs & SanityCMS Blog W Comments
+    section_id: blog
+    image_alt: blog
+    image_position: left
+    content: |-
+      <iframe class="block-content"  style="zoom:0.75;" width="800" height="575"
+       src="https://blog-w-comments.vercel.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Contact
