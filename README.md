@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Bryan</h1>
+# BRYAN GUNER BLOG & DOCUMENTATION SITE
 
 ---
 
@@ -9,17 +9,12 @@
 ### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
 
 ### [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/)
-    
-    
-### [Gatsby Cloud Deploy](https://bgoonzblog20master.gatsbyjs.io/)    
+
+### [Gatsby Cloud Deploy](https://bgoonzblog20master.gatsbyjs.io/)
 
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-    
-
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
-
 
 [![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)
 

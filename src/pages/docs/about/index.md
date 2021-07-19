@@ -52,7 +52,6 @@ template: docs
 
 <div align="center">
 
-
 [![About](https://img.shields.io/badge/-❤_About-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz.github.io/)](https://bgoonz.github.io)
 <a href="https://github.com/bgoonz/resume-cv-About-samples/blob/master/2021-resume/bryan-guner-resume-2021.pdf" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a>
 [![Bryan's email](https://img.shields.io/badge/bryan.guner@gmail.com-f4b400?style=flat-square&logo=gmail&logoColor=black&link=mailto:bryan.guner@gmail.com)](mailto:bryan.guner@gmail.com)
