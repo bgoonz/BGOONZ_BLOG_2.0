@@ -118,7 +118,14 @@ sections:
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
+    actions:
+      - label: lorem-ipsum
+        url: '#'
+        style: link
+        icon_class: dev
+        new_window: false
+        no_follow: false
+        type: action
     type: section_content
   - section_id: Music
     image_alt: listen to my playlist
