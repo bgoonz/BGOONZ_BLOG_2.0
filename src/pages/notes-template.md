@@ -37,10 +37,6 @@ seo:
 template: page
 ---
 
-
-
-
-
 <br>
 <br>
 <br>

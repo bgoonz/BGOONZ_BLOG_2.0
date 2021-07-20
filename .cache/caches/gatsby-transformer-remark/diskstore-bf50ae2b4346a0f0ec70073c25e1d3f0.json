@@ -1,1 +1,460 @@
-{"expireTime":9007200881505738000,"key":"transformer-remark-markdown-html-ast-16f0597e749d84d236b3c6de934ed468--","val":{"type":"root","children":[{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What's the most useful business-related book you've ever read?","position":{"start":{"line":2,"column":6,"offset":6},"end":{"line":2,"column":68,"offset":68}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":68,"offset":68}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A Random Walk Down Wall Street","position":{"start":{"line":4,"column":3,"offset":72},"end":{"line":4,"column":33,"offset":102}}}],"position":{"start":{"line":4,"column":3,"offset":72},"end":{"line":4,"column":33,"offset":102}}},{"type":"text","value":"\n"}],"position":{"start":{"line":4,"column":1,"offset":70},"end":{"line":4,"column":33,"offset":102}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What's your favorite non-business book?","position":{"start":{"line":6,"column":6,"offset":109},"end":{"line":6,"column":45,"offset":148}}}],"position":{"start":{"line":6,"column":1,"offset":104},"end":{"line":6,"column":45,"offset":148}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Hitchhiker's Guide To The Galaxy","position":{"start":{"line":8,"column":3,"offset":152},"end":{"line":8,"column":35,"offset":184}}}],"position":{"start":{"line":8,"column":3,"offset":152},"end":{"line":8,"column":35,"offset":184}}},{"type":"text","value":"\n"}],"position":{"start":{"line":8,"column":1,"offset":150},"end":{"line":8,"column":35,"offset":184}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"If money were not an issue, what would you be doing right now?","position":{"start":{"line":10,"column":6,"offset":191},"end":{"line":10,"column":68,"offset":253}}}],"position":{"start":{"line":10,"column":1,"offset":186},"end":{"line":10,"column":68,"offset":253}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Designing recording software/hardware and using it","position":{"start":{"line":12,"column":3,"offset":257},"end":{"line":12,"column":53,"offset":307}}}],"position":{"start":{"line":12,"column":3,"offset":257},"end":{"line":12,"column":53,"offset":307}}},{"type":"text","value":"\n"}],"position":{"start":{"line":12,"column":1,"offset":255},"end":{"line":12,"column":53,"offset":307}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What words of advice would you give your younger self?","position":{"start":{"line":14,"column":6,"offset":314},"end":{"line":14,"column":60,"offset":368}}}],"position":{"start":{"line":14,"column":1,"offset":309},"end":{"line":14,"column":60,"offset":368}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Try harder and listen to your parents more (the latter bit of advice would be almost certain to fall on deaf ears lol)","position":{"start":{"line":16,"column":3,"offset":372},"end":{"line":16,"column":121,"offset":490}}}],"position":{"start":{"line":16,"column":3,"offset":372},"end":{"line":16,"column":121,"offset":490}}},{"type":"text","value":"\n"}],"position":{"start":{"line":16,"column":1,"offset":370},"end":{"line":16,"column":121,"offset":490}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What's the most creative thing you've ever done?","position":{"start":{"line":18,"column":6,"offset":497},"end":{"line":18,"column":54,"offset":545}}}],"position":{"start":{"line":18,"column":1,"offset":492},"end":{"line":18,"column":54,"offset":545}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"I built a platform that listens to a guitarist's performance and automatically triggers guitar effects at the appropriate time in the song.","position":{"start":{"line":20,"column":3,"offset":549},"end":{"line":20,"column":142,"offset":688}}}],"position":{"start":{"line":20,"column":3,"offset":549},"end":{"line":20,"column":142,"offset":688}}},{"type":"text","value":"\n"}],"position":{"start":{"line":20,"column":1,"offset":547},"end":{"line":20,"column":142,"offset":688}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"Which founders or startups do you most admire?","position":{"start":{"line":22,"column":6,"offset":695},"end":{"line":22,"column":52,"offset":741}}}],"position":{"start":{"line":22,"column":1,"offset":690},"end":{"line":22,"column":52,"offset":741}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Is it to basic to say Tesla... I know they're prevalent now but I've been an avid fan since as early as 2012.","position":{"start":{"line":24,"column":3,"offset":745},"end":{"line":24,"column":112,"offset":854}}}],"position":{"start":{"line":24,"column":3,"offset":745},"end":{"line":24,"column":112,"offset":854}}},{"type":"text","value":"\n"}],"position":{"start":{"line":24,"column":1,"offset":743},"end":{"line":24,"column":112,"offset":854}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What's your super power?","position":{"start":{"line":26,"column":6,"offset":861},"end":{"line":26,"column":30,"offset":885}}}],"position":{"start":{"line":26,"column":1,"offset":856},"end":{"line":26,"column":30,"offset":885}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Having really good ideas and forgetting them moments later.","position":{"start":{"line":28,"column":3,"offset":889},"end":{"line":28,"column":62,"offset":948}}}],"position":{"start":{"line":28,"column":3,"offset":889},"end":{"line":28,"column":62,"offset":948}}},{"type":"text","value":"\n"}],"position":{"start":{"line":28,"column":1,"offset":887},"end":{"line":28,"column":62,"offset":948}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What's the best way for people to get in touch with you?","position":{"start":{"line":30,"column":6,"offset":955},"end":{"line":30,"column":62,"offset":1011}}}],"position":{"start":{"line":30,"column":1,"offset":950},"end":{"line":30,"column":62,"offset":1011}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A text","position":{"start":{"line":32,"column":3,"offset":1015},"end":{"line":32,"column":9,"offset":1021}}}],"position":{"start":{"line":32,"column":3,"offset":1015},"end":{"line":32,"column":9,"offset":1021}}},{"type":"text","value":"\n"}],"position":{"start":{"line":32,"column":1,"offset":1013},"end":{"line":32,"column":9,"offset":1021}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What aspects of your work are you most passionate about?","position":{"start":{"line":34,"column":6,"offset":1028},"end":{"line":34,"column":62,"offset":1084}}}],"position":{"start":{"line":34,"column":1,"offset":1023},"end":{"line":34,"column":62,"offset":1084}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Creating things that change my every day life.","position":{"start":{"line":36,"column":1,"offset":1086},"end":{"line":36,"column":47,"offset":1132}}}],"position":{"start":{"line":36,"column":1,"offset":1086},"end":{"line":36,"column":47,"offset":1132}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What was the most impactful class you took in school?","position":{"start":{"line":38,"column":6,"offset":1139},"end":{"line":38,"column":59,"offset":1192}}}],"position":{"start":{"line":38,"column":1,"offset":1134},"end":{"line":38,"column":59,"offset":1192}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Modern Physics... almost changed my major after that class... but at the end of the day engineering was a much more fiscally secure avenue.","position":{"start":{"line":40,"column":3,"offset":1196},"end":{"line":40,"column":142,"offset":1335}}}],"position":{"start":{"line":40,"column":3,"offset":1196},"end":{"line":40,"column":142,"offset":1335}}},{"type":"text","value":"\n"}],"position":{"start":{"line":40,"column":1,"offset":1194},"end":{"line":40,"column":142,"offset":1335}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What's something you wish you had done years earlier?","position":{"start":{"line":42,"column":6,"offset":1342},"end":{"line":42,"column":59,"offset":1395}}}],"position":{"start":{"line":42,"column":1,"offset":1337},"end":{"line":42,"column":59,"offset":1395}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Learned to code ... and sing","position":{"start":{"line":44,"column":3,"offset":1399},"end":{"line":44,"column":31,"offset":1427}}}],"position":{"start":{"line":44,"column":3,"offset":1399},"end":{"line":44,"column":31,"offset":1427}}},{"type":"text","value":"\n"}],"position":{"start":{"line":44,"column":1,"offset":1397},"end":{"line":44,"column":31,"offset":1427}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h4","properties":{},"children":[{"type":"text","value":"What words of wisdom do you live by?","position":{"start":{"line":46,"column":6,"offset":1434},"end":{"line":46,"column":42,"offset":1470}}}],"position":{"start":{"line":46,"column":1,"offset":1429},"end":{"line":46,"column":42,"offset":1470}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"*","position":{"start":{"line":48,"column":3,"offset":1474},"end":{"line":48,"column":5,"offset":1476}}},{"type":"text","value":"Disclaimer: The following wisdom is very cliche ... but... \"Be the change that you wish to see in the world.\"","position":{"start":{"line":48,"column":5,"offset":1476},"end":{"line":48,"column":114,"offset":1585}}}],"position":{"start":{"line":48,"column":3,"offset":1474},"end":{"line":48,"column":114,"offset":1585}}},{"type":"text","value":"\n"}],"position":{"start":{"line":48,"column":1,"offset":1472},"end":{"line":48,"column":114,"offset":1585}}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":49,"column":1,"offset":1586}}}}
+{
+    "expireTime": 9007200881511493000,
+    "key": "transformer-remark-markdown-html-ast-16f0597e749d84d236b3c6de934ed468--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What's the most useful business-related book you've ever read?",
+                        "position": { "start": { "line": 2, "column": 6, "offset": 6 }, "end": { "line": 2, "column": 68, "offset": 68 } }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 68, "offset": 68 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "A Random Walk Down Wall Street",
+                                "position": { "start": { "line": 4, "column": 3, "offset": 72 }, "end": { "line": 4, "column": 33, "offset": 102 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 4, "column": 3, "offset": 72 }, "end": { "line": 4, "column": 33, "offset": 102 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 70 }, "end": { "line": 4, "column": 33, "offset": 102 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What's your favorite non-business book?",
+                        "position": { "start": { "line": 6, "column": 6, "offset": 109 }, "end": { "line": 6, "column": 45, "offset": 148 } }
+                    }
+                ],
+                "position": { "start": { "line": 6, "column": 1, "offset": 104 }, "end": { "line": 6, "column": 45, "offset": 148 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Hitchhiker's Guide To The Galaxy",
+                                "position": { "start": { "line": 8, "column": 3, "offset": 152 }, "end": { "line": 8, "column": 35, "offset": 184 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 8, "column": 3, "offset": 152 }, "end": { "line": 8, "column": 35, "offset": 184 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 8, "column": 1, "offset": 150 }, "end": { "line": 8, "column": 35, "offset": 184 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "If money were not an issue, what would you be doing right now?",
+                        "position": { "start": { "line": 10, "column": 6, "offset": 191 }, "end": { "line": 10, "column": 68, "offset": 253 } }
+                    }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 186 }, "end": { "line": 10, "column": 68, "offset": 253 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Designing recording software/hardware and using it",
+                                "position": { "start": { "line": 12, "column": 3, "offset": 257 }, "end": { "line": 12, "column": 53, "offset": 307 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 12, "column": 3, "offset": 257 }, "end": { "line": 12, "column": 53, "offset": 307 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 12, "column": 1, "offset": 255 }, "end": { "line": 12, "column": 53, "offset": 307 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What words of advice would you give your younger self?",
+                        "position": { "start": { "line": 14, "column": 6, "offset": 314 }, "end": { "line": 14, "column": 60, "offset": 368 } }
+                    }
+                ],
+                "position": { "start": { "line": 14, "column": 1, "offset": 309 }, "end": { "line": 14, "column": 60, "offset": 368 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Try harder and listen to your parents more (the latter bit of advice would be almost certain to fall on deaf ears lol)",
+                                "position": { "start": { "line": 16, "column": 3, "offset": 372 }, "end": { "line": 16, "column": 121, "offset": 490 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 16, "column": 3, "offset": 372 }, "end": { "line": 16, "column": 121, "offset": 490 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 16, "column": 1, "offset": 370 }, "end": { "line": 16, "column": 121, "offset": 490 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What's the most creative thing you've ever done?",
+                        "position": { "start": { "line": 18, "column": 6, "offset": 497 }, "end": { "line": 18, "column": 54, "offset": 545 } }
+                    }
+                ],
+                "position": { "start": { "line": 18, "column": 1, "offset": 492 }, "end": { "line": 18, "column": 54, "offset": 545 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "I built a platform that listens to a guitarist's performance and automatically triggers guitar effects at the appropriate time in the song.",
+                                "position": { "start": { "line": 20, "column": 3, "offset": 549 }, "end": { "line": 20, "column": 142, "offset": 688 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 20, "column": 3, "offset": 549 }, "end": { "line": 20, "column": 142, "offset": 688 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 20, "column": 1, "offset": 547 }, "end": { "line": 20, "column": 142, "offset": 688 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Which founders or startups do you most admire?",
+                        "position": { "start": { "line": 22, "column": 6, "offset": 695 }, "end": { "line": 22, "column": 52, "offset": 741 } }
+                    }
+                ],
+                "position": { "start": { "line": 22, "column": 1, "offset": 690 }, "end": { "line": 22, "column": 52, "offset": 741 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Is it to basic to say Tesla... I know they're prevalent now but I've been an avid fan since as early as 2012.",
+                                "position": { "start": { "line": 24, "column": 3, "offset": 745 }, "end": { "line": 24, "column": 112, "offset": 854 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 24, "column": 3, "offset": 745 }, "end": { "line": 24, "column": 112, "offset": 854 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 24, "column": 1, "offset": 743 }, "end": { "line": 24, "column": 112, "offset": 854 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What's your super power?",
+                        "position": { "start": { "line": 26, "column": 6, "offset": 861 }, "end": { "line": 26, "column": 30, "offset": 885 } }
+                    }
+                ],
+                "position": { "start": { "line": 26, "column": 1, "offset": 856 }, "end": { "line": 26, "column": 30, "offset": 885 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Having really good ideas and forgetting them moments later.",
+                                "position": { "start": { "line": 28, "column": 3, "offset": 889 }, "end": { "line": 28, "column": 62, "offset": 948 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 28, "column": 3, "offset": 889 }, "end": { "line": 28, "column": 62, "offset": 948 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 28, "column": 1, "offset": 887 }, "end": { "line": 28, "column": 62, "offset": 948 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What's the best way for people to get in touch with you?",
+                        "position": { "start": { "line": 30, "column": 6, "offset": 955 }, "end": { "line": 30, "column": 62, "offset": 1011 } }
+                    }
+                ],
+                "position": { "start": { "line": 30, "column": 1, "offset": 950 }, "end": { "line": 30, "column": 62, "offset": 1011 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "A text",
+                                "position": { "start": { "line": 32, "column": 3, "offset": 1015 }, "end": { "line": 32, "column": 9, "offset": 1021 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 32, "column": 3, "offset": 1015 }, "end": { "line": 32, "column": 9, "offset": 1021 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 32, "column": 1, "offset": 1013 }, "end": { "line": 32, "column": 9, "offset": 1021 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What aspects of your work are you most passionate about?",
+                        "position": { "start": { "line": 34, "column": 6, "offset": 1028 }, "end": { "line": 34, "column": 62, "offset": 1084 } }
+                    }
+                ],
+                "position": { "start": { "line": 34, "column": 1, "offset": 1023 }, "end": { "line": 34, "column": 62, "offset": 1084 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Creating things that change my every day life.",
+                        "position": { "start": { "line": 36, "column": 1, "offset": 1086 }, "end": { "line": 36, "column": 47, "offset": 1132 } }
+                    }
+                ],
+                "position": { "start": { "line": 36, "column": 1, "offset": 1086 }, "end": { "line": 36, "column": 47, "offset": 1132 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What was the most impactful class you took in school?",
+                        "position": { "start": { "line": 38, "column": 6, "offset": 1139 }, "end": { "line": 38, "column": 59, "offset": 1192 } }
+                    }
+                ],
+                "position": { "start": { "line": 38, "column": 1, "offset": 1134 }, "end": { "line": 38, "column": 59, "offset": 1192 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Modern Physics... almost changed my major after that class... but at the end of the day engineering was a much more fiscally secure avenue.",
+                                "position": { "start": { "line": 40, "column": 3, "offset": 1196 }, "end": { "line": 40, "column": 142, "offset": 1335 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 40, "column": 3, "offset": 1196 }, "end": { "line": 40, "column": 142, "offset": 1335 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 40, "column": 1, "offset": 1194 }, "end": { "line": 40, "column": 142, "offset": 1335 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What's something you wish you had done years earlier?",
+                        "position": { "start": { "line": 42, "column": 6, "offset": 1342 }, "end": { "line": 42, "column": 59, "offset": 1395 } }
+                    }
+                ],
+                "position": { "start": { "line": 42, "column": 1, "offset": 1337 }, "end": { "line": 42, "column": 59, "offset": 1395 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Learned to code ... and sing",
+                                "position": { "start": { "line": 44, "column": 3, "offset": 1399 }, "end": { "line": 44, "column": 31, "offset": 1427 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 44, "column": 3, "offset": 1399 }, "end": { "line": 44, "column": 31, "offset": 1427 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 44, "column": 1, "offset": 1397 }, "end": { "line": 44, "column": 31, "offset": 1427 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h4",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What words of wisdom do you live by?",
+                        "position": { "start": { "line": 46, "column": 6, "offset": 1434 }, "end": { "line": 46, "column": 42, "offset": 1470 } }
+                    }
+                ],
+                "position": { "start": { "line": 46, "column": 1, "offset": 1429 }, "end": { "line": 46, "column": 42, "offset": 1470 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "*",
+                                "position": { "start": { "line": 48, "column": 3, "offset": 1474 }, "end": { "line": 48, "column": 5, "offset": 1476 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "Disclaimer: The following wisdom is very cliche ... but... \"Be the change that you wish to see in the world.\"",
+                                "position": { "start": { "line": 48, "column": 5, "offset": 1476 }, "end": { "line": 48, "column": 114, "offset": 1585 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 48, "column": 3, "offset": 1474 }, "end": { "line": 48, "column": 114, "offset": 1585 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 48, "column": 1, "offset": 1472 }, "end": { "line": 48, "column": 114, "offset": 1585 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 49, "column": 1, "offset": 1586 } }
+    }
+}
