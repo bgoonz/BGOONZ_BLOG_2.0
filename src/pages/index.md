@@ -1,12 +1,19 @@
 ---
-title: Bryan Guner Web Dev Resource Hub
+title: Web Dev Hub Home
 sections:
-  - section_id: hero
+  - section_id: Intro
     type: section_hero
-    title: I am a musician/electrical engineer turned web developer
+    title: 'I am a musician, electrical engineer & web developer'
     image: images/cool annimation.gif
-    content: "###### **A passionate frontend developer from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
-    actions: []
+    content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
+    actions:
+      - label: Contact
+        url: 'https://friendly-panda-b61ab.netlify.app/contact/'
+        style: secondary
+        icon_class: linkedin
+        new_window: true
+        no_follow: false
+        type: action
   - section_id: features
     type: section_grid
     col_number: three
@@ -15,7 +22,7 @@ sections:
           Memoization, Tabulation, and Sorting Algorithms by Example
 
           Why is looking at runtime not a reliable method of calculating time
-          complexity? 
+          complexity?
         actions:
           - label: Get Started
             url: /docs
@@ -43,13 +50,13 @@ sections:
           maybe... just maybe, hold myself accountable to them.
         actions:
           - label: Learn More
-            url: /style-guide
+            url: /notes-template
             style: link
         title: Guitar Effects Triggering w DTW
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/panoramic-owl.png
       - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
-        image_alt: lorem-ipsum
+        image_alt: img of dtw
         content: >
           As I learn to build web applications in React I will blog about it in
           this series in an attempt to capture the questions that a complete
@@ -60,7 +67,7 @@ sections:
         title: Beginner Guide React
         image: images/successful-panda.gif
       - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
-        image_alt: lorem-ipsum
+        image_alt: img of react
         content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
         actions: []
         type: grid_item
@@ -77,14 +84,68 @@ sections:
         image: images/curious-mustard.png
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
+  - title: Web Dev Calendar
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: >
+      <iframe class="block-content"
+      src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%230069c4&amp;ctz=America%2FNew_York&amp;src=Nm41cnZxa2xjOW5jZmxpdTAwMXFlNHJtNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E"
+      style="border:solid 1px #777" width="400" height="300" frameborder="0"
+      scrolling="no"></iframe>
+    actions: []
+    type: section_content
+  - section_id: Web Audio DAW
+    image_alt: medium
+    image_position: left
+    actions:
+      - label: Go To Web Audio Daw
+        url: 'https://mihirbegmusiclab.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+    image: images/goals.jpg
+    title: Web Audio DAW
+  - title: Music
+    section_id: guitar
+    image_alt: bryan-guner
+    image_position: left
+    content: >-
+      <iframe  style="zoom:0.75;" width="560" height="415"
+      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
+      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions:
+      - label: Youtube
+        url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
+        style: link
+        icon_class: youtube
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+  - section_id: Music
+    image_alt: listen to my playlist
+    image_position: left
+    content: >
+      <iframe  style="zoom:0.75;"
+      src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
+      width="100%" height="380" frameBorder="0" allowtransparency="true"
+      allow="encrypted-media"></iframe>
+    actions: []
+    type: section_content
+    title: Spotify
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
     col_number: three
     grid_items:
       - title: Angolia
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: angolia
+        image_alt: angolia
         content: |
           ## Full Text Search
 
@@ -95,8 +156,8 @@ sections:
         type: grid_item
         image: images/spectacular-turmeric.png
       - title: Convolutional Neural Networks
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: neural networks
+        image_alt: neural networks
         content: >+
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
@@ -106,8 +167,8 @@ sections:
         type: grid_item
         image: images/neural.PNG
       - title: Jamstack
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: jamstack
+        image_alt: jamstack
         content: >
           ## Why Jamstack
 
@@ -127,12 +188,20 @@ sections:
     col_number: two
     grid_items:
       - title: Resume
-        content: |
-          ![](/images/skillz.PNG)
         actions:
           - label: Learn More
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
+          - label: Download PDF
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
+        image: images/resume.JPG
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
       - title: Showcase
         content: |
           ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
@@ -140,77 +209,67 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-  - title: Embadable Content
-    section_id: lorem-ipsum
+        image: images/My Post.png
+  - title: Mini Projects
+    section_id: Mini Projects
     image_alt: lorem-ipsum
     image_position: left
     content: |
-      <iframe width="800" height="575"
-       src="https://stackblitz.com/edit/sdk-github-project-earatb?devtoolsheight=33\&embed=1\&file=index.ts" title="YouTube video
+      <iframe  style="zoom:0.75;" width="800" height="575"
+       src="https://iframeshowcase.netlify.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions:
-      - label: Go To Content Playground
-        url: /gallery
+      - label: Go To Mini Projects Page
+        url: 'https://iframeshowcase.netlify.app/'
         style: primary
         icon_class: dev
-        new_window: false
+        new_window: true
         no_follow: false
         type: action
     type: section_content
-  - title: Code Playground
+  - title: Code Playground(s)
     section_id: code-playground
     image_alt: lorem-ipsum
     image_position: left
     content: |-
-      <iframe width="800" height="575"
+      <iframe  class="inner" style="zoom:0.75;" width="800" height="575"
         src="https://code-playground.netlify.app/index.html" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: Musical Persuits
-    section_id: guitar
-    image_alt: bryan-guner
-    image_position: left
-    content: >-
-      <iframe width="560" height="415"
-      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
-      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
-  - title: Blog
-    section_id: blog
-    image_alt: blog
-    image_position: left
-    content: |-
-      <iframe width="800" height="575"
-       src="https://blog-w-comments.vercel.app/" title="YouTube video
-       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
-  - title: Embeds
+  - title: Mini Projects
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
     content: |-
-      <iframe width="800" height="575"
+      <iframe  class="inner" style="zoom:0.75;" width="800" height="575"
        src="https://embedable-content.netlify.app/" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Blog-Archive
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
     content: |-
-      <iframe width="800" height="575"
+      <iframe class="block-content" style="zoom:0.75;" width="800" height="575"
         src="https://bgoonz.blogspot.com/" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Nextjs & SanityCMS Blog W Comments
+    section_id: blog
+    image_alt: blog
+    image_position: left
+    content: |-
+      <iframe class="block-content"  style="zoom:0.75;" width="800" height="575"
+       src="https://blog-w-comments.vercel.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Contact
@@ -226,7 +285,9 @@ sections:
     type: section_cta
 seo:
   title: Web-Dev-Hub
-  description: The preview of the Web-Dev-Hub
+  description: >-
+    my resource sharing and blog site ... centered mostly on web development and
+    just a bit of audio production / generally nerdy things I find interesting.
   extra:
     - name: 'og:type'
       value: website
@@ -235,10 +296,13 @@ seo:
       value: Web-Dev-Hub
       keyName: property
     - name: 'og:description'
-      value: The preview of the Web-Dev-Hub
+      value: >-
+        my resource sharing and blog site ... centered mostly on web development
+        and just a bit of audio production / generally nerdy things I find
+        interesting.
       keyName: property
     - name: 'og:image'
-      value: images/4.jpg
+      value: images/code.png
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -246,7 +310,7 @@ seo:
     - name: 'twitter:title'
       value: Web-Dev-Hub
     - name: 'twitter:description'
-      value: The preview of the Web-Dev-Hub
+      value: Web-Dev-Hub
     - name: 'twitter:image'
       value: images/4.jpg
       relativeUrl: true

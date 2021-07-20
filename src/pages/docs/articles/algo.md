@@ -1,16 +1,16 @@
 ---
-title: ds-algo-overview
-subtitle: The ds-algo-overview provides you with a blueprint of default post and page styles.
+title: Algorithms & Data Structures
+subtitle: The Algorithms & Data Structures provides you with a blueprint of default post and page styles.
 image: images/5.jpg
 seo:
-    title:  ds-algo-overview
+    title: Algorithms & Data Structures
     description: A reference for suggested typographic treatment and styles for your content
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value:  ds-algo-overview
+          value: Algorithms & Data Structures
           keyName: property
         - name: 'og:description'
           value: >-
@@ -24,7 +24,7 @@ seo:
         - name: 'twitter:card'
           value: summary_large_image
         - name: 'twitter:title'
-          value:  ds-algo-overview
+          value: Algorithms & Data Structures
         - name: 'twitter:description'
           value: >-
               A reference for suggested typographic treatment and styles for your
@@ -32,12 +32,12 @@ seo:
         - name: 'twitter:image'
           value: images/5.jpg
           relativeUrl: true
-template: documentation
+template: docs
 ---
 
-
-
 # Fundamental Data Structures In JavaScript
+
+<iframe  height="1400" src="https://ds-algo-official.netlify.app/" frameborder="0" allowfullscreen style="zoom:0.7;"></iframe>
 
 Fundamental Data Structures In JavaScript
 
@@ -57,17 +57,31 @@ Here's the repo that the website is built on:
 
 -   [Abdul Bari: YouTubeChannel for Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=2&t=0s)
 
+<iframe width="700" height="515" src="https://www.youtube.com/embed/0IAPZzGSbME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 -   [Data Structures and algorithms](https://www.youtube.com/watch?v=lxja8wBwN0k&list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s)
+
+<iframe width="700" height="515" src="https://www.youtube.com/embed/lxja8wBwN0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
 
+<iframe width="700" height="515" src="https://www.youtube.com/embed/videoseries?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 -   [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
+
+<iframe width="714" height="401" src="https://www.youtube.com/embed/CvSOaYi89B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
 
+<iframe width="700" height="515" src="https://www.youtube.com/embed/videoseries?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 -   [MIT 6.006: Intro to Algorithms(2011)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
+<iframe width="700" height="515" src="https://www.youtube.com/embed/HtSuA80QTyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 -   [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
+
+<iframe width="700" height="515" src="https://www.youtube.com/embed/5_5oE5lgrhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Books
 
@@ -1524,13 +1538,3 @@ Graph
         console.log('graph relations (number of edges):', graph.relations()); // => 4
         console.log('path from 6 to 1:', graph.pathFromTo(6, 1)); // => 6-4-3-2-1
 ````
-
-≡If you found this guide helpful feel free to checkout my github/gists where I host similar content:
-
-[bgoonz's gists · GitHub](https://gist.github.com/bgoonz)
-[**bgoonz — Overview**
-*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com](https://github.com/bgoonz)
-
-Or Checkout my personal Resource Site:
-[**a/A-Student-Resources**
-*Edit description*goofy-euclid-1cd736.netlify.app](https://goofy-euclid-1cd736.netlify.app/)

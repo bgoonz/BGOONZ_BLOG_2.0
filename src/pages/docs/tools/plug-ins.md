@@ -2,26 +2,27 @@
 title: Plug-ins
 weight: 2
 seo:
-  title: Gatsby Plugins For This Sites Content Model
-  description: This is the Gatsby Plugins For This Sites Content Model page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Gatsby Plugins For This Sites Content Model
-      keyName: property
-    - name: 'og:description'
-      value: This is the Gatsby Plugins For This Sites Content Model page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Gatsby Plugins For This Sites Content Model
-    - name: 'twitter:description'
-      value: This is the Gatsby Plugins For This Sites Content Model page
+    title: Gatsby Plugins For This Sites Content Model
+    description: This is the Gatsby Plugins For This Sites Content Model page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Gatsby Plugins For This Sites Content Model
+          keyName: property
+        - name: 'og:description'
+          value: This is the Gatsby Plugins For This Sites Content Model page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Gatsby Plugins For This Sites Content Model
+        - name: 'twitter:description'
+          value: This is the Gatsby Plugins For This Sites Content Model page
 template: docs
 ---
+
 <div class="note">
   <strong>Note:</strong> These are the gatsby plugins that power the file system of this website! <strong>See more in the Docs</strong> section.
 </div>
@@ -339,7 +340,6 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
         return _.reduce(results, (data, res) => _.merge(data, res), {});
     });
 }
-
 ```
 
 ```javascript
