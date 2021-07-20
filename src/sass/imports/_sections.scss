@@ -50,7 +50,7 @@
 
 .block-buttons {
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: left;
 
     a {
         margin: 0 0.375em 0.75em;
@@ -81,8 +81,8 @@
 // Content section
 .block-text {
     .grid-item {
-        max-width: $container-sm;
-        text-align: center;
+        max-width: $container-40px;
+        text-align: left;
     }
 
     .block-title {
@@ -188,10 +188,10 @@
         }
 
         .block-buttons {
-            -ms-flex: 0 0 33.333%;
-            flex: 0 0 33.333%;
+            -ms-flex: 0 0 36.333%;
+            flex: 0 0 36.333%;
             margin-top: 0;
-            max-width: 33.333%;
+            max-width: 36.333%;
         }
     }
 }
@@ -215,7 +215,7 @@
     }
 
     .grid-item {
-        text-align: center;
+        text-align: left;
 
         display: -ms-flexbox;
         display: flex;
