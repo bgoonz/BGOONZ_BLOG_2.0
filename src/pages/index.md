@@ -214,7 +214,7 @@ sections:
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions:
       - label: Go To Mini Projects Page
-        url: /gallery
+        url: 'https://iframeshowcase.netlify.app/'
         style: primary
         icon_class: dev
         new_window: false
