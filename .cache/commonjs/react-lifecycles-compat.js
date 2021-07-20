@@ -1,3 +1,3 @@
-'use strict';
+"use strict";
 
-exports.polyfill = (Component) => Component;
+exports.polyfill = Component => Component;
