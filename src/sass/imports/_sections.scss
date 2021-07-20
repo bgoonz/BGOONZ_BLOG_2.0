@@ -81,8 +81,8 @@
 // Content section
 .block-text {
     .grid-item {
-        max-width: $container-sm;
-        text-align: center;
+        max-width: $container-40px;
+        text-align: left;
     }
 
     .block-title {
@@ -215,7 +215,7 @@
     }
 
     .grid-item {
-        text-align: center;
+        text-align: left;
 
         display: -ms-flexbox;
         display: flex;
