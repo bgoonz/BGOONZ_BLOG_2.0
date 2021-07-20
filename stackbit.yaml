@@ -123,29 +123,7 @@ models:
             - action
   doc_sections:
     type: data
-    label: Documentation Sections
-    fields:
-      - type: string
-        name: root_docs_path
-        label: Root Documentation URL Path
-        description: >-
-          The URL path under which the documentation pages will be generated.
-          For example, value "/" will place all documentation pages at the site
-          root, while value "/docs" will place all documentation pages under the
-          "/docs" path.
-        default: /docs
-        required: true
-      - type: list
-        name: sections
-        label: Sections
-        description: >-
-          The main sections of the documentation. Every item must be the URL
-          slug representing the section.
-        items:
-          type: slug
-    description: my documentation collection
-    match:
-      - '*.md'
+    label: data
   docs:
     type: page
     urlPath: /docs/{slug}
@@ -703,6 +681,3 @@ models:
         description: embed content
         default: ' <iframe height="900px" width="100%" src="https://replit.com/@bgoonz/live-examples-1?lite=true" scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>'
         required: true
-  data:
-    type: data
-    label: data
