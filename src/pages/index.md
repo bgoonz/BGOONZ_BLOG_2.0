@@ -119,7 +119,7 @@ sections:
       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions:
-      - label: lorem-ipsum
+      - label: Youtube
         url: '#'
         style: link
         icon_class: dev
