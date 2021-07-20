@@ -143,8 +143,11 @@ models:
           slug representing the section.
         items:
           type: slug
+      - name: ''
+        type: string
     description: my documentation collection
     folder: /src/data
+    match: '*.yml'
   docs:
     type: page
     urlPath: /docs/{slug}
