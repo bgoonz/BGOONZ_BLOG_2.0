@@ -1,5 +1,5 @@
 ---
-title: 
+title: ExpressJS
 subtitle: lorem-ipsum
 seo:
     title: ''
