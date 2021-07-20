@@ -10,9 +10,7 @@ export default class SectionGrid extends React.Component {
         return (
             <section
                 id={_.get(section, 'section_id', null)}
-                className={classNames('block', 'block-grid', 'outer', {
-                    'has-header': _.get(section, 'title', null) || _.get(section, 'subtitle', null)
-                })}
+                className={classNames('block', 'block-grid', 'outer', { 'has-header': _.get(section, 'title', null) || _.get(section, 'subtitle', null) })}
             >
                 <div className="inner">
                     {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (

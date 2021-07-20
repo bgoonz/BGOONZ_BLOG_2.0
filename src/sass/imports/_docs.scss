@@ -1,8 +1,13 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 70em;
+    width: 80em;
 }
-
+iframe {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin: auto;
+}
 .post {
     &.type-docs {
         margin-bottom: 3.625em;
@@ -80,8 +85,7 @@
             border-radius: $border-radius;
             box-shadow: $box-shadow;
             padding: 0.5em 0;
-            width: 1600px;
-            zoom: 0.68;
+            width: 70em;
         }
 
         .post-title {
@@ -259,7 +263,7 @@
     }
 }
 
-@media only screen and (min-width: 941px) {
+@media only screen and (min-width: 741px) {
     .post {
         &.type-docs {
             .post-title,
@@ -271,7 +275,7 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
     .docs-content {
         display: -ms-flexbox;
         display: flex;
