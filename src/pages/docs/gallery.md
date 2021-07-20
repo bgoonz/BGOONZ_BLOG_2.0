@@ -8,7 +8,7 @@ seo:
   robots: []
   extra: []
   type: stackbit_page_meta
-template: docs
+template: page
 ---
 ## Lorem ipsum
 
