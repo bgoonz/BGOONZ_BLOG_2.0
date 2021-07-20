@@ -681,8 +681,3 @@ models:
             - type: boolean
               name: relativeUrl
               label: Relative Url
-  '':
-    type: page
-    label: sanity
-    layout: sanity
-    hideContent: false
