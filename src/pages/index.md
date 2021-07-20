@@ -120,7 +120,7 @@ sections:
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions:
       - label: Youtube
-        url: '#'
+        url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
         style: link
         icon_class: dev
         new_window: false
