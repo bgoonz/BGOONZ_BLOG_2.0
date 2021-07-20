@@ -18,6 +18,7 @@ sections:
       - dolor sit amet
     actions: []
     type: section_content
+    image: images/express.gif
 seo:
   title: ''
   description: ''
