@@ -35,10 +35,6 @@ seo:
 template: docs
 ---
 
-
-
-
-
 # Web Development Resources Site
 
 > webdevhub

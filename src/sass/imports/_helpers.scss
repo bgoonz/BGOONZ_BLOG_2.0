@@ -26,17 +26,11 @@
 }
 
 // Responsive video wrappers
-.block-content,
-.post-content {
-    iframe[src*='vimeo.com'],
-    iframe[src*='youtube.com'] {
-        display: block;
-        margin-bottom: 1.875em;
-        margin-top: 1.875em;
+.js-reframe {
+    margin: 1.875em 0;
 
-        &:first-child {
-            margin-top: 0;
-        }
+    &:first-child {
+        margin-top: 0;
     }
 }
 
@@ -50,12 +44,6 @@
 
     &:first-child {
         margin-top: 0;
-    }
-
-    p {
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
 }
 

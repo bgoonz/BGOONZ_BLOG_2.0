@@ -15,10 +15,7 @@ export default class Submenu extends React.Component {
                     return (
                         <li
                             key={action_idx}
-                            className={classNames('menu-item', {
-                                current: page_url === action_url,
-                                'menu-button': _.get(action, 'style', null) !== 'link'
-                            })}
+                            className={classNames('menu-item', { current: page_url === action_url, 'menu-button': _.get(action, 'style', null) !== 'link' })}
                         >
                             <ActionLink {...this.props} action={action} />
                         </li>

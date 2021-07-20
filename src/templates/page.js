@@ -1,8 +1,6 @@
 import React from 'react';
-import { useEffect } from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
-import AddThis from './../hooks/AddThis';
 
 import { Layout } from '../components/index';
 import { toStyleObj, withPrefix, htmlToReact } from '../utils';
@@ -16,10 +14,6 @@ export const query = graphql`
         }
     }
 `;
-
-export const ShareButtons = (props) => {
-    useScript('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946');
-};
 
 export default class Page extends React.Component {
     render() {
@@ -44,7 +38,6 @@ export default class Page extends React.Component {
                         <div className="post-content">{htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
                     </div>
                 </article>
-                <div></div>
             </Layout>
         );
     }

@@ -1,12 +1,11 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 50em;
+    width: 80em;
 }
 
 .post {
     &.type-docs {
         margin-bottom: 3.625em;
-        max-width: 1800px;
 
         h1 {
             font-size: 1.875em;
@@ -81,8 +80,7 @@
             border-radius: $border-radius;
             box-shadow: $box-shadow;
             padding: 0.5em 0;
-            width: 1600px;
-            zoom: 0.68;
+            width: 70em;
         }
 
         .post-title {
@@ -92,7 +90,7 @@
         }
 
         .post-content {
-            padding: 0 1.875em;
+            padding: 0.875em;
         }
     }
 }
@@ -260,7 +258,7 @@
     }
 }
 
-@media only screen and (min-width: 941px) {
+@media only screen and (min-width: 741px) {
     .post {
         &.type-docs {
             .post-title,
@@ -272,13 +270,12 @@
     }
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1000px) {
     .docs-content {
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
         width: 1600px;
-        overflow-x: visible;
     }
 
     .post.type-docs {
