@@ -123,7 +123,7 @@ sections:
         url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
         style: link
         icon_class: youtube
-        new_window: false
+        new_window: true
         no_follow: false
         type: action
     type: section_content
