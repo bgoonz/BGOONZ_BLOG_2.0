@@ -1,7 +1,7 @@
 ---
 title: Node API's w Express
 sections:
-  - title: lorem-ipsum
+  - title: Express Js
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
