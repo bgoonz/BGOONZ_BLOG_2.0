@@ -1,7 +1,7 @@
 ---
 title: Node API's w Express
 sections:
-  - title: Express Js
+  - title: Routing w ExpressJS
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
