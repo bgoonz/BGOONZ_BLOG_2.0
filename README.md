@@ -28,7 +28,7 @@
     
 [![buddy pipeline](https://app.buddy.works/bgoonz/bgoonz-blog-2-0/pipelines/pipeline/339019/badge.svg?token=f85af45aa60c9f35fad5e7b710f1199825a097655855e9fb36026c129d563b01 "buddy pipeline")](https://app.buddy.works/bgoonz/bgoonz-blog-2-0/pipelines/pipeline/339019)    
     
-![blog](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/blog2.png?raw=true)    
+![blog](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/7-13-2021-backuo/blog2.png?raw=true)    
     
 </div>
 
