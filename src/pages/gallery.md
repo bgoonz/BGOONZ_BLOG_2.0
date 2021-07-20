@@ -1,6 +1,6 @@
 ---
 title: ExpressJS
-subtitle: lorem-ipsum
+subtitle: 
 seo:
     title: ''
     description: ''
