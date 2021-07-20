@@ -52,33 +52,6 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
-                        "label": "ds-algo",
-                        "url": "docs/articles/nodevsbrowser/",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "ds-algo",
-                        "url": "docs/articles/reading-files/",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "ds-algo",
-                        "url": "docs/articles/writing-files/",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
                     }
                 ]
             },
