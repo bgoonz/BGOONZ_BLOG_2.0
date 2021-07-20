@@ -122,7 +122,7 @@ sections:
       - label: Youtube
         url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
         style: link
-        icon_class: dev
+        icon_class: youtube
         new_window: false
         no_follow: false
         type: action
