@@ -213,7 +213,7 @@ sections:
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions:
-      - label: Go To Content Playground
+      - label: Go To Mini Projects Page
         url: /gallery
         style: primary
         icon_class: dev
