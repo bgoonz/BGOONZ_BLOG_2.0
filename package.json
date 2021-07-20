@@ -21,7 +21,7 @@
         "gatsby-plugin-google-tagmanager": "^3.7.1",
         "gatsby-plugin-react-helmet": "3.3.3",
         "gatsby-plugin-sass": "2.8.0",
-        "gatsby-plugin-sitemap": "^4.3.1",
+        "gatsby-plugin-sitemap": "^4.5.0",
         "gatsby-plugin-typescript": "2.4.4",
         "gatsby-source-contentful": "^5.7.1",
         "gatsby-source-filesystem": "2.3.10",
