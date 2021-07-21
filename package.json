@@ -30,7 +30,7 @@
         "gatsby-plugin-typescript": "2.4.4",
         "gatsby-source-contentful": "^5.10.0",
         "gatsby-source-filesystem": "2.3.10",
-        "gatsby-transformer-remark": "2.8.14",
+        "gatsby-transformer-remark": "^4.7.0",
         "instantsearch.css": "^7.4.5",
         "js-yaml": "3.14.1",
         "lodash": "4.17.21",
@@ -39,7 +39,7 @@
         "moment-strftime": "0.5.0",
         "netlify-cms-app": "^2.15.28",
         "netlify-lambda": "^1.6.3",
-        "node-sass": "4.14.0",
+        "node-sass": "^6.0.1",
         "node-sass-utils": "1.1.2",
         "prettier": "^2.3.2",
         "react": "16.5.1",
@@ -47,8 +47,9 @@
         "react-helmet": "5.2.1",
         "react-html-parser": "2.0.2",
         "react-player": "^2.9.0",
+        "react-refresh": "^0.10.0",
         "react-script-tag": "1.1.2",
-        "rehype-react": "3.0.2",
+        "rehype-react": "^6.2.1",
         "sprintf-js": "1.1.2"
     },
     "devDependencies": {
