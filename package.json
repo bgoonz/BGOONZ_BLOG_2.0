@@ -37,6 +37,7 @@
         "marked": "0.6.1",
         "moment": "2.23.0",
         "moment-strftime": "0.5.0",
+        "netlify-cms-app": "^2.15.28",
         "netlify-lambda": "^1.6.3",
         "node-sass": "^6.0.1",
         "node-sass-utils": "1.1.2",
