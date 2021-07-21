@@ -10,7 +10,6 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    overflow: auto;
 }
 
 a {
@@ -24,15 +23,6 @@ a {
     &:hover {
         color: $gray-600;
     }
-}
-
-iframe {
-    overflow-y: auto;
-    overflow-x: auto;
-    border-radius: 12px;
-    border: 2px solid gold;
-    height: 1200px;
-    width: 1150px !important;
 }
 
 h1,
@@ -94,7 +84,7 @@ pre {
     color: $gray-100;
     font-size: 0.875em;
     line-height: 1.5;
-    margin: 1.14286em 0;
+    margin: 2.14286em 0;
     overflow: auto;
     padding: 1.5em;
     text-align: left;
@@ -184,12 +174,19 @@ hr {
     }
 }
 
+embed,
+iframe,
+object,
+video {
+    max-width: 100%;
+}
+
 img {
     height: auto;
     max-width: 100%;
 }
 
-@media only screen and (min-width: 841px) {
+@media only screen and (min-width: 641px) {
     blockquote {
         font-size: 1.5em;
         line-height: 1.3;
