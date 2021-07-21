@@ -1,0 +1,5 @@
+backend:
+  name: github
+  repo: bgoonz/BGOONZ_BLOG_2.0 # Path to your GitHub repository
+  # optional, defaults to master
+  # branch: main
