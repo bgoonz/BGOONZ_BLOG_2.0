@@ -3,6 +3,8 @@
     "description": "webdevhub",
     "version": "0.0.1",
     "license": "MIT",
+    "author": "Bryan Guner",
+    "repository": "git@github.com:bgoonz/BGOONZ_BLOG_2.0.git",
     "scripts": {
         "develop": "gatsby develop",
         "start": "npm run develop",
@@ -11,6 +13,8 @@
         "pretty": "prettier --write \"./**/*.{jsx,html,css}\""
     },
     "dependencies": {
+        "axios": "^0.21.1",
+        "netlify-lambda": "^1.6.3",
         "@stackbit/gatsby-plugin-menus": "0.0.4",
         "babel-runtime": "6.26.0",
         "chokidar": "3.4.0",

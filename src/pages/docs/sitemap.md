@@ -23,6 +23,7 @@ seo:
           value: Navigation Home
 template: docs
 ---
+
 # <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;">Sitemap:</span>
 
 ---
