@@ -13,9 +13,9 @@
         "pretty": "prettier --write \"./**/*.{jsx,html,css}\""
     },
     "dependencies": {
-        "axios": "^0.21.1",
-        "netlify-lambda": "^1.6.3",
         "@stackbit/gatsby-plugin-menus": "0.0.4",
+        "algoliasearch": "^4.10.3",
+        "axios": "^0.21.1",
         "babel-runtime": "6.26.0",
         "chokidar": "3.4.0",
         "classnames": "2.2.6",
@@ -35,6 +35,7 @@
         "marked": "0.6.1",
         "moment": "2.23.0",
         "moment-strftime": "0.5.0",
+        "netlify-lambda": "^1.6.3",
         "node-sass": "4.14.0",
         "node-sass-utils": "1.1.2",
         "prettier": "^2.3.2",
