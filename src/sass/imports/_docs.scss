@@ -1,6 +1,6 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 80em;
+    width: 70em;
 }
 
 .post {
@@ -80,7 +80,8 @@
             border-radius: $border-radius;
             box-shadow: $box-shadow;
             padding: 0.5em 0;
-            width: 70em;
+            width: 1600px;
+            zoom: 0.68;
         }
 
         .post-title {
@@ -258,7 +259,7 @@
     }
 }
 
-@media only screen and (min-width: 741px) {
+@media only screen and (min-width: 941px) {
     .post {
         &.type-docs {
             .post-title,
@@ -270,7 +271,7 @@
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
     .docs-content {
         display: -ms-flexbox;
         display: flex;
