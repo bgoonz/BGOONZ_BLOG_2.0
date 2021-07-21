@@ -1,4 +1,3 @@
-
 ---
 title: Platform Docs
 excerpt: A list of my Platform Docs!
@@ -34,9 +33,6 @@ template: post
 thumb_image: images/enthusiastic-tiger.png
 ---
 
-
-
-
 # Add to Your Site | Netlify CMS
 
 > Open source content management for your Git workflow
@@ -45,24 +41,23 @@ You can adapt Netlify CMS to a wide variety of projects. It works with any conte
 
 This tutorial guides you through the steps for adding Netlify CMS to a site that's built with a common [static site generator](https://www.staticgen.com/), like Jekyll, Hugo, Hexo, or Gatsby. Alternatively, you can [start from a template](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/start-with-a-template) or dive right into [configuration options](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/configuration-options).
 
-[](#app-file-structure)App File Structure
------------------------------------------
+## [](#app-file-structure)App File Structure
 
 A static `admin` folder contains all Netlify CMS files, stored at the root of your published site. Where you store this folder in the source files depends on your static site generator. Here's the static file location for a few of the most popular static site generators:
 
-| These generators | store static files in |
-| --- | --- |
-| Jekyll, GitBook | `/` (project root) |
-| Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper | `/static` |
-| Next | `/public` |
-| Hexo, Middleman, Jigsaw | `/source` |
-| Spike | `/views` |
-| Wyam | `/input` |
-| Pelican | `/content` |
-| VuePress | `/.vuepress/public` |
-| Elmstatic | `/_site` |
-| 11ty | `/_site` |
-| preact-cli | `/src/static` |
+| These generators                           | store static files in |
+| ------------------------------------------ | --------------------- |
+| Jekyll, GitBook                            | `/` (project root)    |
+| Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper | `/static`             |
+| Next                                       | `/public`             |
+| Hexo, Middleman, Jigsaw                    | `/source`             |
+| Spike                                      | `/views`              |
+| Wyam                                       | `/input`              |
+| Pelican                                    | `/content`            |
+| VuePress                                   | `/.vuepress/public`   |
+| Elmstatic                                  | `/_site`              |
+| 11ty                                       | `/_site`              |
+| preact-cli                                 | `/src/static`         |
 
 If your generator isn't listed here, you can check its documentation, or as a shortcut, look in your project for a `css` or `images` folder. The contents of folders like that are usually processed as static files, so it's likely you can store your `admin` folder next to those. (When you've found the location, feel free to add it to these docs by [filing a pull request](https://github.com/netlify/netlify-cms/blob/master/CONTRIBUTING.md#pull-requests)!)
 
@@ -82,7 +77,7 @@ The first file, `admin/index.html`, is the entry point for the Netlify CMS admin
       <title>Content Manager</title>
     </head>
     <body>
-      
+
       <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     </body>
     </html>
@@ -100,13 +95,12 @@ You can also use Netlify CMS as an npm module. Wherever you import Netlify CMS, 
 Then import it (assuming your project has tooling for imports):
 
     import CMS from 'netlify-cms-app'
-    
+
     CMS.init()
-    
+
     CMS.registerPreviewTemplate('my-template', MyTemplate)
 
-[](#configuration)Configuration
--------------------------------
+## [](#configuration)Configuration
 
 Configuration is different for every site, so we'll break it down into parts. Add all the code snippets in this section to your `admin/config.yml` file.
 
@@ -118,7 +112,7 @@ For GitHub and GitLab repositories, you can start your Netlify CMS `config.yml` 
 
     backend:
       name: git-gateway
-      branch: master 
+      branch: master
 
 _(For Bitbucket repositories, use the [Bitbucket backend](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/bitbucket-backend) instructions instead.)_
 
@@ -130,23 +124,20 @@ The configuration above specifies your backend protocol and your publication bra
 
 By default, saving a post in the CMS interface pushes a commit directly to the publication branch specified in `backend`. However, you also have the option to enable the [Editorial Workflow](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/configuration-options/#publish-mode), which adds an interface for drafting, reviewing, and approving posts. To do this, add the following line to your Netlify CMS `config.yml`:
 
-    
     publish_mode: editorial_workflow
 
 ### [](#media-and-public-folders)Media and Public Folders
 
 Netlify CMS allows users to upload images directly within the editor. For this to work, the CMS needs to know where to save them. If you already have an `images` folder in your project, you could use its path, possibly creating an `uploads` sub-folder, for example:
 
-    
-    media_folder: "images/uploads" 
+    media_folder: "images/uploads"
 
 If you're creating a new folder for uploaded media, you'll need to know where your static site generator expects static files. You can refer to the paths outlined above in [App File Structure](#app-file-structure), and put your media folder in the same location where you put the `admin` folder.
 
 Note that the`media_folder` file path is relative to the project root, so the example above would work for Jekyll, GitBook, or any other generator that stores static files at the project root. However, it would not work for Hugo, Hexo, Middleman or others that store static files in a subfolder. Here's an example that could work for a Hugo site:
 
-    
-    media_folder: "static/images/uploads" 
-    public_folder: "/images/uploads" 
+    media_folder: "static/images/uploads"
+    public_folder: "/images/uploads"
 
 The configuration above adds a new setting, `public_folder`. While `media_folder` specifies where uploaded files are saved in the repo, `public_folder` indicates where they are found in the published site. Image `src` attributes use this path, which is relative to the file where it's called. For this reason, we usually start the path at the site root, using the opening `/`.
 
@@ -165,18 +156,18 @@ Let's say your site has a blog, with the posts stored in `_posts/blog`, and file
     thumbnail: "/images/prince.jpg"
     rating: 5
     ---
-    
+
     This is the post body, where I write about our last chance to party before the Y2K bug destroys us all.
 
 Given this example, our `collections` settings would look like this in your NetlifyCMS `config.yml` file:
 
     collections:
-      - name: "blog" 
-        label: "Blog" 
-        folder: "_posts/blog" 
-        create: true 
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
-        fields: 
+      - name: "blog"
+        label: "Blog"
+        folder: "_posts/blog"
+        create: true
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+        fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -206,8 +197,7 @@ The entries for any collection can be filtered based on the value of a single fi
         fields:
           - {label: "Language", name: "language"}
 
-[](#authentication)Authentication
----------------------------------
+## [](#authentication)Authentication
 
 Now that you have your Netlify CMS files in place and configured, all that's left is to enable authentication. We're using the [Netlify](https://www.netlify.com/) platform here because it's one of the quickest ways to get started, but you can learn about other authentication options in the [Backends](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/backends-overview) doc.
 
@@ -248,8 +238,7 @@ When a user logs in with the Netlify Identity widget, an access token directs to
 
 Note: This example script requires modern JavaScript and does not work on IE11. For legacy browser support, use function expressions (`function () {}`) in place of the arrow functions (`() => {}`), or use a transpiler such as [Babel](https://babeljs.io/).
 
-[](#accessing-the-cms)Accessing the CMS
----------------------------------------
+## [](#accessing-the-cms)Accessing the CMS
 
 Your site CMS is now fully configured and ready for login!
 
@@ -261,6 +250,4 @@ If you left your site registration open, or for return visits after confirming a
 
 Happy posting!
 
-
 [Source](https://www.netlifycms.org/docs/add-to-your-site/)
-

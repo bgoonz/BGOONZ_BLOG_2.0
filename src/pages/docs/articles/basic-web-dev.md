@@ -1,5 +1,5 @@
 ---
-title: review
+title: Web Dev Review
 sections: []
 seo:
     title: ''

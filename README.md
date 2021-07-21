@@ -4,81 +4,87 @@
 
 <div align="center">
 
-### [WEBSITE](https://bgoonz-blog.netlify.app/)
+![codehealth](./static/images/codehealth.JPG)
 
-### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
+##### [WEBSITE](https://bgoonz-blog.netlify.app/) ~~~ [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/) ~~~ [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/) ~~~ [Gatsby Cloud Deploy](https://bgoonzblog20master.gatsbyjs.io/)
 
-### [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/)
+![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)[![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)[![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
 
-### [Gatsby Cloud Deploy](https://bgoonzblog20master.gatsbyjs.io/)
+![blog](./static/images/blog-img.png)
 
-![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
-
-[![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)
-
-[![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
-
-    
-
-  
-    
-    
-    
-[![buddy pipeline](https://app.buddy.works/bgoonz/bgoonz-blog-2-0/pipelines/pipeline/339019/badge.svg?token=f85af45aa60c9f35fad5e7b710f1199825a097655855e9fb36026c129d563b01 "buddy pipeline")](https://app.buddy.works/bgoonz/bgoonz-blog-2-0/pipelines/pipeline/339019)    
-    
-![blog](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/7-13-2021-backuo/blog2.png?raw=true)    
-    
 </div>
 
 ## Docs Structure:
 
 ```
 .
-├── ./About
-│   ├── ./About/index.md
-│   ├── ./About/introduction2bg.md
-│   ├── ./About/me.md
-│   └── ./About/resume.md
-├── ./articles
-│   ├── ./articles/algo.md
-│   └── ./articles/basic-web-dev.md
-├── ./faq
-│   ├── ./faq/Contact.md
-│   ├── ./faq/index.md
-│   └── ./faq/other-sites.md
-├── ./index.md
-├── ./jupyter-notebooks.md
-├── ./links
-│   ├── ./links/Social.md
-│   ├── ./links/index.md
-│   └── ./links/my-websites.md
-├── ./portfolio-web.md
-├── ./python.md
-├── ./quick-reference
-│   ├── ./quick-reference/Emmet.md
-│   ├── ./quick-reference/index.md
-│   ├── ./quick-reference/installation.md
-│   └── ./quick-reference/new-repo-instructions.md
-├── ./react
-│   ├── ./react/createReactApp.md
-│   ├── ./react/index.md
-│   └── ./react/react2.md
-├── ./resources.md
-└── ./tools
-    ├── ./tools/Git-Html-Preview.md
-    ├── ./tools/default-readme.md
-    ├── ./tools/index.md
-    ├── ./tools/notes-template.md
-    └── ./tools/plug-ins.md
+├── blog
+│   ├── data-structures.md
+│   ├── index.md
+│   ├── my-medium.md
+│   ├── platform-docs.md
+│   ├── python-for-js-dev.md
+│   └── python-resources.md
+├── docs
+│   ├── about
+│   │   ├── index.md
+│   │   ├── me.md
+│   │   ├── node
+│   │   │   ├── install.md
+│   │   │   ├── intro.md
+│   │   │   ├── nodejs.md
+│   │   │   ├── nodevsbrowser.md
+│   │   │   ├── reading-files.md
+│   │   │   └── writing-files.md
+│   │   └── resume.md
+│   ├── articles
+│   │   ├── algo.md
+│   │   ├── article-compilation.md
+│   │   ├── basic-web-dev.md
+│   │   ├── gallery.md
+│   │   ├── index.md
+│   │   ├── install.md
+│   │   ├── intro.md
+│   │   ├── python.md
+│   │   ├── reading-files.md
+│   │   ├── resources.md
+│   │   ├── ten-jamstack-apis-to-checkout.md
+│   │   └── writing-files.md
+│   ├── faq
+│   │   ├── contact.md
+│   │   └── index.md
+│   ├── index.md
+│   ├── interact
+│   │   ├── clock.md
+│   │   ├── index.md
+│   │   └── jupyter-notebooks.md
+│   ├── links
+│   │   ├── Social.md
+│   │   ├── index.md
+│   │   ├── medium-links.md
+│   │   └── my-websites.md
+│   ├── quick-reference
+│   │   ├── Emmet.md
+│   │   ├── docs.md
+│   │   ├── index.md
+│   │   ├── installation.md
+│   │   └── new-repo-instructions.md
+│   ├── react
+│   │   ├── createReactApp.md
+│   │   ├── index.md
+│   │   └── react2.md
+│   ├── sitemap.md
+│   └── tools
+│       ├── default-readme.md
+│       ├── index.md
+│       ├── notes-template.md
+│       ├── plug-ins.md
+│       └── vscode.md
+├── index.md
+├── notes-template.md
+└── showcase.md
 
-7 directories, 29 files
-
-
-
-
-
+11 directories, 54 files
 
 
 ```
@@ -89,43 +95,43 @@
 
 ##### [stackblitz demo hosted on firebase](https://exploring-firebase-4c023.firebaseapp.com/)
 
--   [/showcase/](https://preview--best-celery-b2d7c.stackbit.dev/showcase/)
--   [/repos/](https://preview--best-celery-b2d7c.stackbit.dev/repos/)
--   [/blog/](https://preview--best-celery-b2d7c.stackbit.dev/blog/)
--   [/docs/jupyter-notebooks/](https://preview--best-celery-b2d7c.stackbit.dev/docs/jupyter-notebooks/)
--   [/docs/portfolio-web/](https://preview--best-celery-b2d7c.stackbit.dev/docs/portfolio-web/)
--   [/docs/python/](https://preview--best-celery-b2d7c.stackbit.dev/docs/python/)
--   [/docs/About/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/)
--   [/docs/About/resume/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/resume/)
--   [/docs/about/](https://preview--best-celery-b2d7c.stackbit.dev/docs/about/)
--   [/docs/faq/](https://preview--best-celery-b2d7c.stackbit.dev/docs/faq/)
--   [/docs/quick-reference/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/)
--   [/docs/quick-reference/Emmet/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/Emmet/)
--   [/docs/quick-reference/new-repo-instructions/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/new-repo-instructions/)
--   [/docs/links/Social/](https://preview--best-celery-b2d7c.stackbit.dev/docs/links/Social/)
--   [/docs/links/](https://preview--best-celery-b2d7c.stackbit.dev/docs/links/)
--   [/docs/quick-reference/installation/](https://preview--best-celery-b2d7c.stackbit.dev/docs/quick-reference/installation/)
--   [/docs/links/my-websites/](https://preview--best-celery-b2d7c.stackbit.dev/docs/links/my-websites/)
--   [/docs/](https://preview--best-celery-b2d7c.stackbit.dev/docs/)
--   [/blog/community/](https://preview--best-celery-b2d7c.stackbit.dev/blog/community/)
--   [/blog/python/](https://preview--best-celery-b2d7c.stackbit.dev/blog/python/)
--   [/docs/resources/](https://preview--best-celery-b2d7c.stackbit.dev/docs/resources/)
--   [/docs/react/createReactApp/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/createReactApp/)
--   [/docs/tools/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/)
--   [/notes-template/](https://preview--best-celery-b2d7c.stackbit.dev/notes-template/)
--   [/blog/my-medium/](https://preview--best-celery-b2d7c.stackbit.dev/blog/my-medium/)
--   [/docs/tools/default-readme/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/default-readme/)
--   [/docs/tools/plug-ins/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/plug-ins/)
--   [/docs/react/react2/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/react2/)
--   [/docs/tools/notes-template/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/notes-template/)
--   [/review/](https://preview--best-celery-b2d7c.stackbit.dev/review/)
--   [/docs/articles/basic-web-dev/](https://preview--best-celery-b2d7c.stackbit.dev/docs/articles/basic-web-dev/)
--   [/blog/data-structures/](https://preview--best-celery-b2d7c.stackbit.dev/blog/data-structures/)
--   [/docs/About/me/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/me/)
--   [/docs/About/introduction2bg/](https://preview--best-celery-b2d7c.stackbit.dev/docs/About/introduction2bg/)
--   [/docs/react/](https://preview--best-celery-b2d7c.stackbit.dev/docs/react/)
--   [/docs/tools/Git-Html-Preview/](https://preview--best-celery-b2d7c.stackbit.dev/docs/tools/Git-Html-Preview/)
--   [/gallery/](https://preview--best-celery-b2d7c.stackbit.dev/gallery/)
+-   [/showcase/](https://bgoonz-blog.netlify.app/showcase/)
+-   [/repos/](https://bgoonz-blog.netlify.app/repos/)
+-   [/blog/](https://bgoonz-blog.netlify.app/blog/)
+-   [/docs/jupyter-notebooks/](https://bgoonz-blog.netlify.app/docs/jupyter-notebooks/)
+-   [/docs/portfolio-web/](https://bgoonz-blog.netlify.app/docs/portfolio-web/)
+-   [/docs/python/](https://bgoonz-blog.netlify.app/docs/python/)
+-   [/docs/About/](https://bgoonz-blog.netlify.app/docs/About/)
+-   [/docs/About/resume/](https://bgoonz-blog.netlify.app/docs/About/resume/)
+-   [/docs/about/](https://bgoonz-blog.netlify.app/docs/about/)
+-   [/docs/faq/](https://bgoonz-blog.netlify.app/docs/faq/)
+-   [/docs/quick-reference/](https://bgoonz-blog.netlify.app/docs/quick-reference/)
+-   [/docs/quick-reference/Emmet/](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
+-   [/docs/quick-reference/new-repo-instructions/](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+-   [/docs/links/Social/](https://bgoonz-blog.netlify.app/docs/links/Social/)
+-   [/docs/links/](https://bgoonz-blog.netlify.app/docs/links/)
+-   [/docs/quick-reference/installation/](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
+-   [/docs/links/my-websites/](https://bgoonz-blog.netlify.app/docs/links/my-websites/)
+-   [/docs/](https://bgoonz-blog.netlify.app/docs/)
+-   [/blog/community/](https://bgoonz-blog.netlify.app/blog/community/)
+-   [/blog/python/](https://bgoonz-blog.netlify.app/blog/python/)
+-   [/docs/resources/](https://bgoonz-blog.netlify.app/docs/resources/)
+-   [/docs/react/createReactApp/](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
+-   [/docs/tools/](https://bgoonz-blog.netlify.app/docs/tools/)
+-   [/notes-template/](https://bgoonz-blog.netlify.app/notes-template/)
+-   [/blog/my-medium/](https://bgoonz-blog.netlify.app/blog/my-medium/)
+-   [/docs/tools/default-readme/](https://bgoonz-blog.netlify.app/docs/tools/default-readme/)
+-   [/docs/tools/plug-ins/](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
+-   [/docs/react/react2/](https://bgoonz-blog.netlify.app/docs/react/react2/)
+-   [/docs/tools/notes-template/](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
+-   [/review/](https://bgoonz-blog.netlify.app/review/)
+-   [/docs/articles/basic-web-dev/](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+-   [/blog/data-structures/](https://bgoonz-blog.netlify.app/blog/data-structures/)
+-   [/docs/About/me/](https://bgoonz-blog.netlify.app/docs/About/me/)
+-   [/docs/About/introduction2bg/](https://bgoonz-blog.netlify.app/docs/About/introduction2bg/)
+-   [/docs/react/](https://bgoonz-blog.netlify.app/docs/react/)
+-   [/docs/tools/Git-Html-Preview/](https://bgoonz-blog.netlify.app/docs/tools/Git-Html-Preview/)
+-   [/gallery/](https://bgoonz-blog.netlify.app/gallery/)
 
 ## Dependencies:
 
