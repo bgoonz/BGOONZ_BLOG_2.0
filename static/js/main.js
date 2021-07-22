@@ -9,14 +9,16 @@ import algoliasearch from 'algoliasearch/lite';
 
 const client = algoliasearch('BAGY237H21', '5f5a2d1bb109c79803ca95250ca3496c');
 const index = client.initIndex('blog2');
-index.saveObjects(objects, {
-    autoGenerateObjectIDIfNotExist: true,
-    headers: {
-      'X-Forwarded-For': '94.228.178.246'
-    }
-  }).then(({ objectIDs }) => {
-    console.log(objectIDs);
-  });
+index
+    .saveObjects(objects, {
+        autoGenerateObjectIDIfNotExist: true,
+        headers: {
+            'X-Forwarded-For': '94.228.178.246'
+        }
+    })
+    .then(({ objectIDs }) => {
+        console.log(objectIDs);
+    });
 
 window.onGatsbyInitialClientRender = function () {
     /**
