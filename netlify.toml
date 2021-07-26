@@ -1,13 +1,3 @@
 [build]
-  build = "yarn install"
-  functions = "lambda" #  netlify-lambda reads this
-  publish = "public"
-  command = "npm run build"
-[[plugins]]
-package = "@algolia/netlify-plugin-crawler"
-  [plugins.inputs]
-  branches = ['master', 'preview']
-  disabled = false
-  pathPrefix = "/"
-  customDomain = "https://bgoonz-blog.netlify.app/"
-  renderJavaScript = true
+publish = "public"
+command = "npm run build"

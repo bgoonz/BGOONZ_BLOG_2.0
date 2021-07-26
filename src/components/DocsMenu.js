@@ -19,7 +19,11 @@ export default class DocsMenu extends React.Component {
                     </button>
                     <div className="docs-nav-menu">
                         <ul id="docs-menu" className="docs-menu">
-                            <li className={classNames('docs-menu-item', { current: _.get(page, 'url', null) === _.get(root_page, 'url', null) })}>
+                            <li
+                                className={classNames('docs-menu-item', {
+                                    current: _.get(page, 'url', null) === _.get(root_page, 'url', null)
+                                })}
+                            >
                                 <Link to={withPrefix(_.get(root_page, 'url', null))}>{_.get(root_page, 'frontmatter.title', null)}</Link>
                             </li>
                             {_.map(_.get(site, 'data.doc_sections.sections', null), (section, section_idx) => {

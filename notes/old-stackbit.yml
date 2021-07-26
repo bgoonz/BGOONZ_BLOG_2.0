@@ -9,9 +9,9 @@ dataDir: src/data
 pagesDir: src/pages
 pageLayoutKey: template
 logicFields:
-  - doc_sections.root_docs_path
-  - doc_sections.sections
-  - docs.weight
+    - doc_sections.root_docs_path
+    - doc_sections.sections
+    - docs.weight
 models:
     config:
         type: config

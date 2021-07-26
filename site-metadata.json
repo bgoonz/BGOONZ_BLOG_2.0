@@ -187,7 +187,6 @@
                 "no_follow": false,
                 "has_subnav": true,
                 "subnav_links": [
-  
                     {
                         "label": "Potluck Planner",
                         "url": "https://potluck-landing.netlify.app/",
