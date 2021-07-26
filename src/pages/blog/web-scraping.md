@@ -1,6 +1,6 @@
 ---
 title: Web Scraping With Node
-subtitle: lorem-ipsum
+subtitle: 
 date: '2021-07-26'
 thumb_image_alt: lorem-ipsum
 excerpt: There are a lot of use cases for web scraping: you might want to collect prices from various e-commerce sites for a price comparison site. 
