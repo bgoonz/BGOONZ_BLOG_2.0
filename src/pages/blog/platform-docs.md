@@ -1,34 +1,34 @@
 ---
-title: Platform Docs
+title: My Medium Articles
 excerpt: A list of my Platform Docs!
 date: '2021-05-23'
 image: images/medium.png
 seo:
-    title: Platform Docs
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-    extra:
-        - name: 'og:type'
-          value: article
-          keyName: property
-        - name: 'og:title'
-          value: Platform Docs
-          keyName: property
-        - name: 'og:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-          keyName: property
-        - name: 'og:image'
-          value: images/medium.png
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:card'
-          value: summary_large_image
-        - name: 'twitter:title'
-          value: Platform Docs
-        - name: 'twitter:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-        - name: 'twitter:image'
-          value: images/medium.png
-          relativeUrl: true
+  title: Platform Docs
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  extra:
+    - name: 'og:type'
+      value: article
+      keyName: property
+    - name: 'og:title'
+      value: Platform Docs
+      keyName: property
+    - name: 'og:description'
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      keyName: property
+    - name: 'og:image'
+      value: images/medium.png
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Platform Docs
+    - name: 'twitter:description'
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    - name: 'twitter:image'
+      value: images/medium.png
+      relativeUrl: true
 template: post
 thumb_image: images/enthusiastic-tiger.png
 ---
