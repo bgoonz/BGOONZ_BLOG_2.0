@@ -29,7 +29,7 @@ seo:
       relativeUrl: true
 template: post
 title: Python Resources
-thumb_image: images/cool-spider.jpg
+thumb_image: images/superb-amaranth.png
 thumb_image_alt: python logo
 ---
 
