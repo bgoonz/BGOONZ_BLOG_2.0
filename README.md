@@ -5,8 +5,8 @@
 <div align="center">
 
 ![codehealth](./static/images/codehealth.JPG)
-    
-![user activity](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/useractivity.JPG?raw=true)    
+
+![user activity](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/useractivity.JPG?raw=true)
 
 ##### [WEBSITE](https://bgoonz-blog.netlify.app/) ~~~ [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/) ~~~ [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/) ~~~ [Gatsby Cloud Deploy](https://bgoonzblog20master.gatsbyjs.io/)
 
