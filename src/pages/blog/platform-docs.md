@@ -1,5 +1,5 @@
 ---
-title: My Medium Articles
+title: My Medium ArticlesNetlify CMS Intro
 excerpt: A list of my Platform Docs!
 date: '2021-05-23'
 image: images/medium.png
