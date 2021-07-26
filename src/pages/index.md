@@ -50,7 +50,7 @@ sections:
                 maybe... just maybe, hold myself accountable to them.
             actions:
                 - label: Learn More
-                  url: /notes-template
+                  url: /docs/tools
                   style: link
             title: Guitar Effects Triggering w DTW
             title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
