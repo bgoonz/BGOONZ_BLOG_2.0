@@ -71,7 +71,8 @@
                         "no_follow": false,
                         "type": "action"
                     }
-                ]
+                ],
+                "new_window": true
             },
             {
                 "url": "/docs/sitemap",
