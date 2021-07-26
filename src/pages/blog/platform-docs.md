@@ -30,7 +30,7 @@ seo:
       value: images/medium.png
       relativeUrl: true
 template: post
-thumb_image: images/polite-europa.png
+thumb_image: images/friendly-basil.png
 ---
 
 # Add to Your Site | Netlify CMS
