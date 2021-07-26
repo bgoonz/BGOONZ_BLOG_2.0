@@ -8,7 +8,7 @@
   padding-top: 1.25em;
 
   a {
-    color: inherit;
+    color:black;
 
     &:hover,
     &:focus {
@@ -66,9 +66,11 @@
     flex: 0 0 auto;
     margin-left: auto;
 
+
     a {
       margin-left: 30px;
       margin-right: 0;
+      color:white;
     }
   }
 }
