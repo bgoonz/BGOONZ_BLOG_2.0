@@ -12,7 +12,7 @@ seo:
   type: stackbit_page_meta
 template: post
 ---
-## Lorem ipsum
+## Blog With Comments NextJS
 
 <iframe class="block-content"  style="zoom:0.75;" width="800" height="575"
            src="https://blog-w-comments.vercel.app/" title="YouTube video
