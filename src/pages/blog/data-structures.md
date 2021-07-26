@@ -11,7 +11,7 @@ seo:
   extra: []
   type: stackbit_page_meta
 template: post
-image: images/dtw.jpg
+image: images/ds.PNG
 thumb_image: images/remarkable-strawberry.jpg
 ---
 
