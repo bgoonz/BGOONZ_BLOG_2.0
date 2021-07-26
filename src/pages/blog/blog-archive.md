@@ -1,9 +1,9 @@
 ---
-title: lorem-ipsum
-subtitle: lorem-ipsum
+title: Blog Archive
+subtitle: Blog Archive
 date: '2021-07-26'
-thumb_image_alt: lorem-ipsum
-excerpt: lorem-ipsum
+thumb_image_alt: Blog Archive
+excerpt: Blog Archive
 seo:
   title: ''
   description: ''
