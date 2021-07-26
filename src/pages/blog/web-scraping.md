@@ -5,7 +5,7 @@ date: '2021-07-26'
 thumb_image_alt: lorem-ipsum
 excerpt: There are a lot of use cases for web scraping: you might want to collect prices from various e-commerce sites for a price comparison site. 
 seo: There are a lot of use cases for web scraping: you might want to collect prices from various e-commerce sites for a price comparison site. Or perhaps you need flight times and hotel/AirBNB listings for a travel site. Maybe you want to collect emails from various directories for sales leads, or use data from the internet to train machine learning/AI models. Or you could even be wanting to build a search engine like Google!
-  title: ''
+  title: 'Web Scraping With Node.js'
   description: ''
   robots: []
   extra: []
