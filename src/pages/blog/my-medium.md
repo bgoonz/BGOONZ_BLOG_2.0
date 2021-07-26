@@ -1,5 +1,5 @@
 ---
-title: 
+title: My Medium Articles
 date: '2021-05-23'
 image: images/medium.png
 seo:
