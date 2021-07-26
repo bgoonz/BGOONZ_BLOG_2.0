@@ -1,8 +1,8 @@
 ---
 title: Blog
 subtitle: Exclusive Blog Content
-image: images/curious-europa.gif
-has_more_link: false
+image: images/webscraping.png
+has_more_link: true
 more_link_text: Read more
 seo:
   title: Blog
