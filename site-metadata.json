@@ -187,15 +187,7 @@
                 "no_follow": false,
                 "has_subnav": true,
                 "subnav_links": [
-                    {
-                        "label": "Goal Setter",
-                        "url": "https://splendid-onion-b0ec3.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
+  
                     {
                         "label": "Potluck Planner",
                         "url": "https://potluck-landing.netlify.app/",
@@ -428,12 +420,12 @@
                 "url": "https://www.instagram.com/bgoonz/?hl=en",
                 "style": "icon",
                 "icon_class": "instagram",
-                "new_window": false,
+                "new_window": true,
                 "no_follow": false,
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "dev.to",
                 "url": "https://dev.to/bgoonz",
                 "style": "icon",
                 "icon_class": "dev",
@@ -457,7 +449,7 @@
                 "url": "https://optimistic-lewin-8586ae.netlify.app/blm.zip",
                 "style": "primary",
                 "icon_class": "dev",
-                "new_window": false,
+                "new_window": true,
                 "no_follow": false,
                 "type": "action"
             },
@@ -466,7 +458,7 @@
                 "url": "#",
                 "style": "primary",
                 "icon_class": "dev",
-                "new_window": false,
+                "new_window": true,
                 "no_follow": false,
                 "type": "action"
             },
@@ -475,7 +467,7 @@
                 "url": "https://github.com/bgoonz/PYTHON_PRAC",
                 "style": "primary",
                 "icon_class": "dev",
-                "new_window": false,
+                "new_window": true,
                 "no_follow": false,
                 "type": "action"
             }
