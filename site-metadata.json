@@ -14,7 +14,7 @@
             {
                 "label": "Blog",
                 "url": "/blog/",
-                "style": "link",
+                "style": "secondary",
                 "has_subnav": true,
                 "subnav_links": [
                     {
@@ -63,15 +63,16 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
-                        "url": "#",
+                        "label": "Blog w Comments",
+                        "url": "/blogWcomments/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
                     }
-                ]
+                ],
+                "new_window": true
             },
             {
                 "url": "/docs/sitemap",
