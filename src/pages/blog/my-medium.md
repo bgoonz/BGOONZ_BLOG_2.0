@@ -1,7 +1,7 @@
 ---
 title: My Medium Articles
 date: '2021-05-23'
-image: images/medium.png
+image: 
 seo:
   title: Medium Articles
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
