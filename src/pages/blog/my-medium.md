@@ -29,7 +29,7 @@ seo:
       value: images/medium.png
       relativeUrl: true
 template: post
-thumb_image: images/green-spruce.png
+thumb_image: images/curious-kangaroo.gif
 ---
 
 # A list of all of my articles to link to future posts
