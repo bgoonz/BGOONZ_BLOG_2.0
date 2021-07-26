@@ -1,12 +1,12 @@
-backend:
-    name: github
-    branch: master
-    repo: bgoonz/BGOONZ_BLOG_2.0
-    open_authoring: true
-media_folder: static/uploads
-public_folder: /static/uploads
-publish_mode: editorial_workflow
-collections:
+# backend:
+#     name: github
+#     branch: master
+#     repo: bgoonz/BGOONZ_BLOG_2.0
+#     open_authoring: true
+# media_folder: static/uploads
+# public_folder: /static/uploads
+# publish_mode: editorial_workflow
+# collections:
     # - name: config
     #   label: Global Site Config
     #   files:
