@@ -1,11 +1,4 @@
-// For the default version
-import algoliasearch from 'algoliasearch';
 
-// For the search only version
-import algoliasearch from 'algoliasearch/lite';
-
-const client = algoliasearch('BAGY237H21', '5f5a2d1bb109c79803ca95250ca3496c');
-const index = client.initIndex('blog2');
 index
     .saveObjects(objects, {
         autoGenerateObjectIDIfNotExist: true,
