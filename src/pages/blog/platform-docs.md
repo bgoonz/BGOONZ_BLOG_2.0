@@ -30,7 +30,7 @@ seo:
       value: images/medium.png
       relativeUrl: true
 template: post
-thumb_image: images/enthusiastic-tiger.png
+thumb_image: images/gif-4mb.gif
 ---
 
 # Add to Your Site | Netlify CMS
