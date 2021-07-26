@@ -28,7 +28,7 @@
                     },
                     {
                         "label": "Top Blog Posts",
-                        "url": "/blog/",
+                        "url": "https://blog-w-comments.vercel.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
