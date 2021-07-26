@@ -84,7 +84,17 @@ sections:
             image: images/curious-mustard.png
             title_url: >-
                 https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
-
+    - title: Web Dev Calendar
+      section_id: lorem-ipsum
+      image_alt: lorem-ipsum
+      image_position: left
+      content: >
+          <iframe class="block-content"
+          src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%230069c4&amp;ctz=America%2FNew_York&amp;src=Nm41cnZxa2xjOW5jZmxpdTAwMXFlNHJtNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E"
+          style="border:solid 1px #777" width="400" height="300" frameborder="0"
+          scrolling="no"></iframe>
+      actions: []
+      type: section_content
     - section_id: Web Audio DAW
       image_alt: medium
       image_position: left

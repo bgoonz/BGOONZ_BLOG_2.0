@@ -3,11 +3,11 @@ title: review
 sections: []
 seo:
     title: ''
-    description: 'Review-Of-Previous-Concepts'
+    description: ''
     robots: []
     extra: []
     type: stackbit_page_meta
-template: docs
+template: advanced
 ---
 
 ---
