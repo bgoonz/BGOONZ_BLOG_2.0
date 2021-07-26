@@ -11,6 +11,7 @@ seo:
   extra: []
   type: stackbit_page_meta
 template: post
+thumb_image: images/web-development.gif
 ---
 ## Lorem ipsum
 
