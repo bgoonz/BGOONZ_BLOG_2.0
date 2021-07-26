@@ -64,7 +64,7 @@
                     },
                     {
                         "label": "Blog w Comments",
-                        "url": "#",
+                        "url": "/blogWcomments/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
