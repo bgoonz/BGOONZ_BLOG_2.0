@@ -1,5 +1,5 @@
 ---
-title: Netlify CMS Intro
+title: 
 date: '2021-05-23'
 image: images/medium.png
 seo:
