@@ -63,7 +63,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Blog w Comments",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
