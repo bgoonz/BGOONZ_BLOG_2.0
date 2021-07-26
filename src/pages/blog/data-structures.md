@@ -12,7 +12,7 @@ seo:
   type: stackbit_page_meta
 template: post
 image: images/dtw.jpg
-thumb_image: images/enthusiastic-oregano.png
+thumb_image: images/remarkable-strawberry.jpg
 ---
 
 ## Data Structures & Algorithms
