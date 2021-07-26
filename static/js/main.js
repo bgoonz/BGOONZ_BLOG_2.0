@@ -1,4 +1,3 @@
-
 // For the default version
 import algoliasearch from 'algoliasearch';
 
@@ -17,7 +16,6 @@ index
     .then(({ objectIDs }) => {
         console.log(objectIDs);
     });
-
 
 window.onGatsbyInitialClientRender = function () {
     /**

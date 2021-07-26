@@ -49,10 +49,22 @@ exports.onCreateNode = ({ node, getNode, actions }, options) => {
         }
 
         createNodeField({ node, name: 'url', value: url });
-        createNodeField({ node, name: 'absolutePath', value: fileNode.absolutePath });
-        createNodeField({ node, name: 'relativePath', value: fileNode.relativePath });
+        createNodeField({
+            node,
+            name: 'absolutePath',
+            value: fileNode.absolutePath
+        });
+        createNodeField({
+            node,
+            name: 'relativePath',
+            value: fileNode.relativePath
+        });
         createNodeField({ node, name: 'absoluteDir', value: fileNode.dir });
-        createNodeField({ node, name: 'relativeDir', value: fileNode.relativeDirectory });
+        createNodeField({
+            node,
+            name: 'relativeDir',
+            value: fileNode.relativeDirectory
+        });
         createNodeField({ node, name: 'base', value: fileNode.base });
         createNodeField({ node, name: 'ext', value: fileNode.ext });
         createNodeField({ node, name: 'name', value: fileNode.name });

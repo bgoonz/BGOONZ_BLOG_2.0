@@ -8,7 +8,6 @@ module.exports = {
     siteMetadata: siteMetadata,
     plugins: [
         `gatsby-plugin-react-helmet`,
-        'gatsby-plugin-dark-mode',
         `gatsby-source-data`,
         `gatsby-transformer-remark`,
         {
