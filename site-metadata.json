@@ -13,7 +13,7 @@
             },
             {
                 "label": "Blog",
-                "url": "/",
+                "url": "/blog",
                 "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
