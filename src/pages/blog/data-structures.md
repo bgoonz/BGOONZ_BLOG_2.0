@@ -5,14 +5,14 @@ date: '2021-06-03'
 thumb_image_alt: lorem-ipsum
 excerpt: A guide to computational complexity
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: post
 image: images/dtw.jpg
-thumb_image: images/green-spruce.png
+thumb_image: images/enthusiastic-oregano.png
 ---
 
 ## Data Structures & Algorithms
