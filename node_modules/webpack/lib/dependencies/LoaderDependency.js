@@ -2,9 +2,7 @@
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
 */
-
 "use strict";
-
 const ModuleDependency = require("./ModuleDependency");
 
 class LoaderDependency extends ModuleDependency {
@@ -16,10 +14,6 @@ class LoaderDependency extends ModuleDependency {
 	}
 
 	get type() {
-		return "loader";
-	}
-
-	get category() {
 		return "loader";
 	}
 }

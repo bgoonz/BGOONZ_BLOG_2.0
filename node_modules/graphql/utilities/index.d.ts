@@ -1,7 +1,11 @@
+// The GraphQL query recommended for a full schema introspection.
 export {
-  // Produce the GraphQL query recommended for a full schema introspection.
-  // Accepts optional IntrospectionOptions.
   getIntrospectionQuery,
+  // @deprecated, use getIntrospectionQuery() - will be removed in v15
+  introspectionQuery,
+} from './introspectionQuery';
+
+export {
   IntrospectionOptions,
   IntrospectionQuery,
   IntrospectionSchema,
@@ -24,7 +28,7 @@ export {
   IntrospectionInputValue,
   IntrospectionEnumValue,
   IntrospectionDirective,
-} from './getIntrospectionQuery';
+} from './introspectionQuery';
 
 // Gets the target Operation from a Document
 export { getOperationAST } from './getOperationAST';
@@ -42,16 +46,14 @@ export { buildClientSchema } from './buildClientSchema';
 export {
   buildASTSchema,
   buildSchema,
+  // @deprecated: Get the description from a schema AST node and supports legacy
+  // syntax for specifying descriptions - will be removed in v16
+  getDescription,
   BuildSchemaOptions,
 } from './buildASTSchema';
 
 // Extends an existing GraphQLSchema from a parsed GraphQL Schema language AST.
-export {
-  extendSchema,
-  // @deprecated: Get the description from a schema AST node and supports legacy
-  // syntax for specifying descriptions - will be removed in v16
-  getDescription,
-} from './extendSchema';
+export { extendSchema } from './extendSchema';
 
 // Sort a GraphQLSchema.
 export { lexicographicSortSchema } from './lexicographicSortSchema';
@@ -61,7 +63,7 @@ export {
   printSchema,
   printType,
   printIntrospectionSchema,
-} from './printSchema';
+} from './schemaPrinter';
 
 // Create a GraphQLType from a GraphQL language AST.
 export { typeFromAST } from './typeFromAST';
@@ -77,10 +79,19 @@ export { astFromValue } from './astFromValue';
 
 // A helper to use within recursive-descent visitors which need to be aware of
 // the GraphQL type system.
-export { TypeInfo, visitWithTypeInfo } from './TypeInfo';
+export { TypeInfo } from './TypeInfo';
 
 // Coerces a JavaScript value to a GraphQL type, or produces errors.
 export { coerceInputValue } from './coerceInputValue';
+
+// Coerces a JavaScript value to a GraphQL type, or produces errors.
+export { coerceValue } from './coerceValue';
+
+// @deprecated use coerceValue - will be removed in v15
+export { isValidJSValue } from './isValidJSValue';
+
+// @deprecated use validation - will be removed in v15
+export { isValidLiteralValue } from './isValidLiteralValue';
 
 // Concatenates multiple AST together.
 export { concatAST } from './concatAST';
@@ -112,8 +123,5 @@ export {
   DangerousChange,
 } from './findBreakingChanges';
 
-// Wrapper type that contains DocumentNode and types that can be deduced from it.
-export { TypedQueryDocumentNode } from './typedQueryDocumentNode';
-
-// @deprecated: Report all deprecated usage within a GraphQL document.
+// Report all deprecated usage within a GraphQL document.
 export { findDeprecatedUsages } from './findDeprecatedUsages';

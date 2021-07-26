@@ -1,5 +1,6 @@
 import { Source } from './source';
-import { TypeNode, ValueNode, DocumentNode } from './ast';
+import { Lexer } from './lexer';
+import { NamedTypeNode, TypeNode, ValueNode, DocumentNode } from './ast';
 
 /**
  * Configuration options to control parser behavior

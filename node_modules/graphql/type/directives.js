@@ -6,35 +6,31 @@ Object.defineProperty(exports, "__esModule", {
 exports.isDirective = isDirective;
 exports.assertDirective = assertDirective;
 exports.isSpecifiedDirective = isSpecifiedDirective;
-exports.specifiedDirectives = exports.GraphQLSpecifiedByDirective = exports.GraphQLDeprecatedDirective = exports.DEFAULT_DEPRECATION_REASON = exports.GraphQLSkipDirective = exports.GraphQLIncludeDirective = exports.GraphQLDirective = void 0;
+exports.specifiedDirectives = exports.GraphQLDeprecatedDirective = exports.DEFAULT_DEPRECATION_REASON = exports.GraphQLSkipDirective = exports.GraphQLIncludeDirective = exports.GraphQLDirective = void 0;
 
-var _objectEntries = _interopRequireDefault(require("../polyfills/objectEntries.js"));
+var _objectEntries = _interopRequireDefault(require("../polyfills/objectEntries"));
 
-var _symbols = require("../polyfills/symbols.js");
+var _inspect = _interopRequireDefault(require("../jsutils/inspect"));
 
-var _inspect = _interopRequireDefault(require("../jsutils/inspect.js"));
+var _toObjMap = _interopRequireDefault(require("../jsutils/toObjMap"));
 
-var _toObjMap = _interopRequireDefault(require("../jsutils/toObjMap.js"));
+var _devAssert = _interopRequireDefault(require("../jsutils/devAssert"));
 
-var _devAssert = _interopRequireDefault(require("../jsutils/devAssert.js"));
+var _instanceOf = _interopRequireDefault(require("../jsutils/instanceOf"));
 
-var _instanceOf = _interopRequireDefault(require("../jsutils/instanceOf.js"));
+var _defineToJSON = _interopRequireDefault(require("../jsutils/defineToJSON"));
 
-var _isObjectLike = _interopRequireDefault(require("../jsutils/isObjectLike.js"));
+var _isObjectLike = _interopRequireDefault(require("../jsutils/isObjectLike"));
 
-var _defineInspect = _interopRequireDefault(require("../jsutils/defineInspect.js"));
+var _defineToStringTag = _interopRequireDefault(require("../jsutils/defineToStringTag"));
 
-var _directiveLocation = require("../language/directiveLocation.js");
+var _directiveLocation = require("../language/directiveLocation");
 
-var _scalars = require("./scalars.js");
+var _scalars = require("./scalars");
 
-var _definition = require("./definition.js");
+var _definition = require("./definition");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 // eslint-disable-next-line no-redeclare
 function isDirective(directive) {
@@ -54,36 +50,39 @@ function assertDirective(directive) {
  */
 
 
-var GraphQLDirective = /*#__PURE__*/function () {
+var GraphQLDirective =
+/*#__PURE__*/
+function () {
   function GraphQLDirective(config) {
-    var _config$isRepeatable, _config$args;
-
     this.name = config.name;
     this.description = config.description;
     this.locations = config.locations;
-    this.isRepeatable = (_config$isRepeatable = config.isRepeatable) !== null && _config$isRepeatable !== void 0 ? _config$isRepeatable : false;
+    this.isRepeatable = config.isRepeatable != null && config.isRepeatable;
     this.extensions = config.extensions && (0, _toObjMap.default)(config.extensions);
     this.astNode = config.astNode;
     config.name || (0, _devAssert.default)(0, 'Directive must be named.');
     Array.isArray(config.locations) || (0, _devAssert.default)(0, "@".concat(config.name, " locations must be an Array."));
-    var args = (_config$args = config.args) !== null && _config$args !== void 0 ? _config$args : {};
+    var args = config.args || {};
     (0, _isObjectLike.default)(args) && !Array.isArray(args) || (0, _devAssert.default)(0, "@".concat(config.name, " args must be an object with argument names as keys."));
     this.args = (0, _objectEntries.default)(args).map(function (_ref) {
       var argName = _ref[0],
-          argConfig = _ref[1];
+          arg = _ref[1];
       return {
         name: argName,
-        description: argConfig.description,
-        type: argConfig.type,
-        defaultValue: argConfig.defaultValue,
-        deprecationReason: argConfig.deprecationReason,
-        extensions: argConfig.extensions && (0, _toObjMap.default)(argConfig.extensions),
-        astNode: argConfig.astNode
+        description: arg.description === undefined ? null : arg.description,
+        type: arg.type,
+        defaultValue: arg.defaultValue,
+        extensions: arg.extensions && (0, _toObjMap.default)(arg.extensions),
+        astNode: arg.astNode
       };
     });
   }
 
   var _proto = GraphQLDirective.prototype;
+
+  _proto.toString = function toString() {
+    return '@' + this.name;
+  };
 
   _proto.toConfig = function toConfig() {
     return {
@@ -97,28 +96,13 @@ var GraphQLDirective = /*#__PURE__*/function () {
     };
   };
 
-  _proto.toString = function toString() {
-    return '@' + this.name;
-  };
-
-  _proto.toJSON = function toJSON() {
-    return this.toString();
-  } // $FlowFixMe[unsupported-syntax] Flow doesn't support computed properties yet
-  ;
-
-  _createClass(GraphQLDirective, [{
-    key: _symbols.SYMBOL_TO_STRING_TAG,
-    get: function get() {
-      return 'GraphQLDirective';
-    }
-  }]);
-
   return GraphQLDirective;
-}(); // Print a simplified form when appearing in `inspect` and `util.inspect`.
+}(); // Conditionally apply `[Symbol.toStringTag]` if `Symbol`s are supported
 
 
 exports.GraphQLDirective = GraphQLDirective;
-(0, _defineInspect.default)(GraphQLDirective);
+(0, _defineToStringTag.default)(GraphQLDirective);
+(0, _defineToJSON.default)(GraphQLDirective);
 
 /**
  * Used to conditionally include fields or fragments.
@@ -129,7 +113,7 @@ var GraphQLIncludeDirective = new GraphQLDirective({
   locations: [_directiveLocation.DirectiveLocation.FIELD, _directiveLocation.DirectiveLocation.FRAGMENT_SPREAD, _directiveLocation.DirectiveLocation.INLINE_FRAGMENT],
   args: {
     if: {
-      type: new _definition.GraphQLNonNull(_scalars.GraphQLBoolean),
+      type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLBoolean),
       description: 'Included when true.'
     }
   }
@@ -145,7 +129,7 @@ var GraphQLSkipDirective = new GraphQLDirective({
   locations: [_directiveLocation.DirectiveLocation.FIELD, _directiveLocation.DirectiveLocation.FRAGMENT_SPREAD, _directiveLocation.DirectiveLocation.INLINE_FRAGMENT],
   args: {
     if: {
-      type: new _definition.GraphQLNonNull(_scalars.GraphQLBoolean),
+      type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLBoolean),
       description: 'Skipped when true.'
     }
   }
@@ -164,28 +148,12 @@ exports.DEFAULT_DEPRECATION_REASON = DEFAULT_DEPRECATION_REASON;
 var GraphQLDeprecatedDirective = new GraphQLDirective({
   name: 'deprecated',
   description: 'Marks an element of a GraphQL schema as no longer supported.',
-  locations: [_directiveLocation.DirectiveLocation.FIELD_DEFINITION, _directiveLocation.DirectiveLocation.ARGUMENT_DEFINITION, _directiveLocation.DirectiveLocation.INPUT_FIELD_DEFINITION, _directiveLocation.DirectiveLocation.ENUM_VALUE],
+  locations: [_directiveLocation.DirectiveLocation.FIELD_DEFINITION, _directiveLocation.DirectiveLocation.ENUM_VALUE],
   args: {
     reason: {
       type: _scalars.GraphQLString,
-      description: 'Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted using the Markdown syntax, as specified by [CommonMark](https://commonmark.org/).',
+      description: 'Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted using the Markdown syntax (as specified by [CommonMark](https://commonmark.org/).',
       defaultValue: DEFAULT_DEPRECATION_REASON
-    }
-  }
-});
-/**
- * Used to provide a URL for specifying the behaviour of custom scalar definitions.
- */
-
-exports.GraphQLDeprecatedDirective = GraphQLDeprecatedDirective;
-var GraphQLSpecifiedByDirective = new GraphQLDirective({
-  name: 'specifiedBy',
-  description: 'Exposes a URL that specifies the behaviour of this scalar.',
-  locations: [_directiveLocation.DirectiveLocation.SCALAR],
-  args: {
-    url: {
-      type: new _definition.GraphQLNonNull(_scalars.GraphQLString),
-      description: 'The URL that specifies the behaviour of this scalar.'
     }
   }
 });
@@ -193,12 +161,12 @@ var GraphQLSpecifiedByDirective = new GraphQLDirective({
  * The full list of specified directives.
  */
 
-exports.GraphQLSpecifiedByDirective = GraphQLSpecifiedByDirective;
-var specifiedDirectives = Object.freeze([GraphQLIncludeDirective, GraphQLSkipDirective, GraphQLDeprecatedDirective, GraphQLSpecifiedByDirective]);
+exports.GraphQLDeprecatedDirective = GraphQLDeprecatedDirective;
+var specifiedDirectives = Object.freeze([GraphQLIncludeDirective, GraphQLSkipDirective, GraphQLDeprecatedDirective]);
 exports.specifiedDirectives = specifiedDirectives;
 
 function isSpecifiedDirective(directive) {
-  return specifiedDirectives.some(function (_ref2) {
+  return isDirective(directive) && specifiedDirectives.some(function (_ref2) {
     var name = _ref2.name;
     return name === directive.name;
   });

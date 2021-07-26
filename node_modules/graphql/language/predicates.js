@@ -13,7 +13,7 @@ exports.isTypeDefinitionNode = isTypeDefinitionNode;
 exports.isTypeSystemExtensionNode = isTypeSystemExtensionNode;
 exports.isTypeExtensionNode = isTypeExtensionNode;
 
-var _kinds = require("./kinds.js");
+var _kinds = require("./kinds");
 
 function isDefinitionNode(node) {
   return isExecutableDefinitionNode(node) || isTypeSystemDefinitionNode(node) || isTypeSystemExtensionNode(node);

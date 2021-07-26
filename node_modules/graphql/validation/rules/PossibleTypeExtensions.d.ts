@@ -1,8 +1,21 @@
+import { ASTVisitor } from '../../language/visitor';
+import { SDLValidationContext } from '../ValidationContext';
+
+export function extendingUnknownTypeMessage(
+  typeName: string,
+  suggestedTypes: ReadonlyArray<string>,
+): string;
+
+export function extendingDifferentTypeKindMessage(
+  typeName: string,
+  kind: string,
+): string;
+
 /**
- * @deprecated and will be removed in v16
- * Please use either:
- *   import { PossibleTypeExtensionsRule } from 'graphql'
- * or
- *   import { PossibleTypeExtensionsRule } from 'graphql/validation'
+ * Possible type extension
+ *
+ * A type extension is only valid if the type is defined and has the same kind.
  */
-export { PossibleTypeExtensionsRule as PossibleTypeExtensions } from './PossibleTypeExtensionsRule';
+export function PossibleTypeExtensions(
+  context: SDLValidationContext,
+): ASTVisitor;

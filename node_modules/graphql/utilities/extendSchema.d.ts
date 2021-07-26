@@ -1,11 +1,5 @@
-import { Maybe } from '../jsutils/Maybe';
-
-import { Location, DocumentNode, StringValueNode } from '../language/ast';
-import {
-  GraphQLSchemaValidationOptions,
-  GraphQLSchema,
-  GraphQLSchemaNormalizedConfig,
-} from '../type/schema';
+import { DocumentNode } from '../language/ast';
+import { GraphQLSchemaValidationOptions, GraphQLSchema } from '../type/schema';
 
 interface Options extends GraphQLSchemaValidationOptions {
   /**
@@ -49,27 +43,3 @@ export function extendSchema(
   documentAST: DocumentNode,
   options?: Options,
 ): GraphQLSchema;
-
-/**
- * @internal
- */
-export function extendSchemaImpl(
-  schemaConfig: GraphQLSchemaNormalizedConfig,
-  documentAST: DocumentNode,
-  options?: Options,
-): GraphQLSchemaNormalizedConfig;
-
-/**
- * Given an ast node, returns its string description.
- * @deprecated: provided to ease adoption and will be removed in v16.
- *
- * Accepts options as a second argument:
- *
- *    - commentDescriptions:
- *        Provide true to use preceding comments as the description.
- *
- */
-export function getDescription(
-  node: { readonly description?: StringValueNode; readonly loc?: Location },
-  options?: Maybe<{ commentDescriptions?: boolean }>,
-): string | undefined;

@@ -1,17 +1,20 @@
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 
-import { Kind } from "../language/kinds.mjs";
-import { visit } from "../language/visitor.mjs";
-import { TypeInfo, visitWithTypeInfo } from "../utilities/TypeInfo.mjs";
+import { Kind } from '../language/kinds';
+import { visit, visitWithTypeInfo } from '../language/visitor';
+import { TypeInfo } from '../utilities/TypeInfo';
 
 /**
  * An instance of this class is passed as the "this" context to all validators,
  * allowing access to commonly useful contextual information from within a
  * validation rule.
  */
-export var ASTValidationContext = /*#__PURE__*/function () {
+export var ASTValidationContext =
+/*#__PURE__*/
+function () {
   function ASTValidationContext(ast, onError) {
     this._ast = ast;
+    this._errors = [];
     this._fragments = undefined;
     this._fragmentSpreads = new Map();
     this._recursivelyReferencedFragments = new Map();
@@ -21,7 +24,16 @@ export var ASTValidationContext = /*#__PURE__*/function () {
   var _proto = ASTValidationContext.prototype;
 
   _proto.reportError = function reportError(error) {
-    this._onError(error);
+    this._errors.push(error);
+
+    if (this._onError) {
+      this._onError(error);
+    }
+  } // @deprecated: use onError callback instead - will be removed in v15.
+  ;
+
+  _proto.getErrors = function getErrors() {
+    return this._errors;
   };
 
   _proto.getDocument = function getDocument() {
@@ -106,7 +118,9 @@ export var ASTValidationContext = /*#__PURE__*/function () {
 
   return ASTValidationContext;
 }();
-export var SDLValidationContext = /*#__PURE__*/function (_ASTValidationContext) {
+export var SDLValidationContext =
+/*#__PURE__*/
+function (_ASTValidationContext) {
   _inheritsLoose(SDLValidationContext, _ASTValidationContext);
 
   function SDLValidationContext(ast, schema, onError) {
@@ -125,7 +139,9 @@ export var SDLValidationContext = /*#__PURE__*/function (_ASTValidationContext) 
 
   return SDLValidationContext;
 }(ASTValidationContext);
-export var ValidationContext = /*#__PURE__*/function (_ASTValidationContext2) {
+export var ValidationContext =
+/*#__PURE__*/
+function (_ASTValidationContext2) {
   _inheritsLoose(ValidationContext, _ASTValidationContext2);
 
   function ValidationContext(schema, ast, typeInfo, onError) {
@@ -214,10 +230,6 @@ export var ValidationContext = /*#__PURE__*/function (_ASTValidationContext2) {
 
   _proto3.getArgument = function getArgument() {
     return this._typeInfo.getArgument();
-  };
-
-  _proto3.getEnumValue = function getEnumValue() {
-    return this._typeInfo.getEnumValue();
   };
 
   return ValidationContext;

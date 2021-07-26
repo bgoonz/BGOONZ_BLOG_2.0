@@ -6,9 +6,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.assertValidName = assertValidName;
 exports.isValidNameError = isValidNameError;
 
-var _devAssert = _interopRequireDefault(require("../jsutils/devAssert.js"));
+var _devAssert = _interopRequireDefault(require("../jsutils/devAssert"));
 
-var _GraphQLError = require("../error/GraphQLError.js");
+var _GraphQLError = require("../error/GraphQLError");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31,14 +31,14 @@ function assertValidName(name) {
  */
 
 
-function isValidNameError(name) {
-  typeof name === 'string' || (0, _devAssert.default)(0, 'Expected name to be a string.');
+function isValidNameError(name, node) {
+  typeof name === 'string' || (0, _devAssert.default)(0, 'Expected string');
 
   if (name.length > 1 && name[0] === '_' && name[1] === '_') {
-    return new _GraphQLError.GraphQLError("Name \"".concat(name, "\" must not begin with \"__\", which is reserved by GraphQL introspection."));
+    return new _GraphQLError.GraphQLError("Name \"".concat(name, "\" must not begin with \"__\", which is reserved by GraphQL introspection."), node);
   }
 
   if (!NAME_RX.test(name)) {
-    return new _GraphQLError.GraphQLError("Names must match /^[_a-zA-Z][_a-zA-Z0-9]*$/ but \"".concat(name, "\" does not."));
+    return new _GraphQLError.GraphQLError("Names must match /^[_a-zA-Z][_a-zA-Z0-9]*$/ but \"".concat(name, "\" does not."), node);
   }
 }

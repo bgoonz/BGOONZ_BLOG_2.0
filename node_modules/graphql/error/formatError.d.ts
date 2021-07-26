@@ -1,5 +1,4 @@
 import { SourceLocation } from '../language/location';
-
 import { GraphQLError } from './GraphQLError';
 
 /**

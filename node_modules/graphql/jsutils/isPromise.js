@@ -11,5 +11,5 @@ exports.default = isPromise;
  */
 // eslint-disable-next-line no-redeclare
 function isPromise(value) {
-  return typeof (value === null || value === void 0 ? void 0 : value.then) === 'function';
+  return Boolean(value && typeof value.then === 'function');
 }

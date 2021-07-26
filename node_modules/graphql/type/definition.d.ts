@@ -1,11 +1,6 @@
-// FIXME
-/* eslint-disable import/no-cycle */
-
-import { Maybe } from '../jsutils/Maybe';
-
+import Maybe from '../tsutils/Maybe';
 import { PromiseOrValue } from '../jsutils/PromiseOrValue';
 import { Path } from '../jsutils/Path';
-
 import {
   ScalarTypeDefinitionNode,
   ObjectTypeDefinitionNode,
@@ -27,7 +22,6 @@ import {
   EnumTypeExtensionNode,
   InputObjectTypeExtensionNode,
 } from '../language/ast';
-
 import { GraphQLSchema } from './schema';
 
 /**
@@ -173,9 +167,9 @@ export function assertAbstractType(type: any): GraphQLAbstractType;
  */
 interface GraphQLList<T extends GraphQLType> {
   readonly ofType: T;
-  toString: () => string;
-  toJSON: () => string;
-  inspect: () => string;
+  toString(): string;
+  toJSON(): string;
+  inspect(): string;
 }
 
 interface _GraphQLList<T extends GraphQLType> {
@@ -183,7 +177,6 @@ interface _GraphQLList<T extends GraphQLType> {
   new (type: T): GraphQLList<T>;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
 export const GraphQLList: _GraphQLList<GraphQLType>;
 
 /**
@@ -208,9 +201,9 @@ export const GraphQLList: _GraphQLList<GraphQLType>;
  */
 interface GraphQLNonNull<T extends GraphQLNullableType> {
   readonly ofType: T;
-  toString: () => string;
-  toJSON: () => string;
-  inspect: () => string;
+  toString(): string;
+  toJSON(): string;
+  inspect(): string;
 }
 
 interface _GraphQLNonNull<T extends GraphQLNullableType> {
@@ -218,7 +211,6 @@ interface _GraphQLNonNull<T extends GraphQLNullableType> {
   new (type: T): GraphQLNonNull<T>;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
 export const GraphQLNonNull: _GraphQLNonNull<GraphQLNullableType>;
 
 export type GraphQLWrappingType = GraphQLList<any> | GraphQLNonNull<any>;
@@ -243,11 +235,9 @@ export function isNullableType(type: any): type is GraphQLNullableType;
 
 export function assertNullableType(type: any): GraphQLNullableType;
 
-export function getNullableType(type: undefined): undefined;
+export function getNullableType(type: void): undefined;
 export function getNullableType<T extends GraphQLNullableType>(type: T): T;
 export function getNullableType<T extends GraphQLNullableType>(
-  // FIXME Disabled because of https://github.com/yaacovCR/graphql-tools-fork/issues/40#issuecomment-586671219
-  // eslint-disable-next-line @typescript-eslint/unified-signatures
   type: GraphQLNonNull<T>,
 ): T;
 
@@ -266,7 +256,7 @@ export function isNamedType(type: any): type is GraphQLNamedType;
 
 export function assertNamedType(type: any): GraphQLNamedType;
 
-export function getNamedType(type: undefined): undefined;
+export function getNamedType(type: void): undefined;
 export function getNamedType(type: GraphQLType): GraphQLNamedType;
 
 /**
@@ -274,19 +264,6 @@ export function getNamedType(type: GraphQLType): GraphQLNamedType;
  * otherwise immutable type definitions.
  */
 export type Thunk<T> = (() => T) | T;
-
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- */
-export interface GraphQLScalarTypeExtensions {
-  [attributeName: string]: any;
-}
 
 /**
  * Scalar Type Definition
@@ -308,22 +285,19 @@ export interface GraphQLScalarTypeExtensions {
 export class GraphQLScalarType {
   name: string;
   description: Maybe<string>;
-  specifiedByUrl: Maybe<string>;
   serialize: GraphQLScalarSerializer<any>;
   parseValue: GraphQLScalarValueParser<any>;
   parseLiteral: GraphQLScalarLiteralParser<any>;
-  extensions: Maybe<Readonly<GraphQLScalarTypeExtensions>>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode: Maybe<ScalarTypeDefinitionNode>;
   extensionASTNodes: Maybe<ReadonlyArray<ScalarTypeExtensionNode>>;
-
-  constructor(config: Readonly<GraphQLScalarTypeConfig<any, any>>);
+  constructor(config: GraphQLScalarTypeConfig<any, any>);
 
   toConfig(): GraphQLScalarTypeConfig<any, any> & {
-    specifiedByUrl: Maybe<string>;
     serialize: GraphQLScalarSerializer<any>;
     parseValue: GraphQLScalarValueParser<any>;
     parseLiteral: GraphQLScalarLiteralParser<any>;
-    extensions: Maybe<Readonly<GraphQLScalarTypeExtensions>>;
+    extensions: Maybe<Readonly<Record<string, any>>>;
     extensionASTNodes: ReadonlyArray<ScalarTypeExtensionNode>;
   };
 
@@ -346,32 +320,15 @@ export type GraphQLScalarLiteralParser<TInternal> = (
 export interface GraphQLScalarTypeConfig<TInternal, TExternal> {
   name: string;
   description?: Maybe<string>;
-  specifiedByUrl?: Maybe<string>;
   // Serializes an internal value to include in a response.
-  serialize?: GraphQLScalarSerializer<TExternal>;
+  serialize: GraphQLScalarSerializer<TExternal>;
   // Parses an externally provided value to use as an input.
   parseValue?: GraphQLScalarValueParser<TInternal>;
   // Parses an externally provided literal value to use as an input.
   parseLiteral?: GraphQLScalarLiteralParser<TInternal>;
-  extensions?: Maybe<Readonly<GraphQLScalarTypeExtensions>>;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<ScalarTypeDefinitionNode>;
   extensionASTNodes?: Maybe<ReadonlyArray<ScalarTypeExtensionNode>>;
-}
-
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- *
- * We've provided these template arguments because this is an open type and
- * you may find them useful.
- */
-export interface GraphQLObjectTypeExtensions<_TSource = any, _TContext = any> {
-  [attributeName: string]: any;
 }
 
 /**
@@ -411,23 +368,25 @@ export interface GraphQLObjectTypeExtensions<_TSource = any, _TContext = any> {
  *     });
  *
  */
-export class GraphQLObjectType<TSource = any, TContext = any> {
+export class GraphQLObjectType<
+  TSource = any,
+  TContext = any,
+  TArgs = { [key: string]: any }
+> {
   name: string;
   description: Maybe<string>;
   isTypeOf: Maybe<GraphQLIsTypeOfFn<TSource, TContext>>;
-  extensions: Maybe<Readonly<GraphQLObjectTypeExtensions<TSource, TContext>>>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode: Maybe<ObjectTypeDefinitionNode>;
   extensionASTNodes: Maybe<ReadonlyArray<ObjectTypeExtensionNode>>;
 
-  constructor(config: Readonly<GraphQLObjectTypeConfig<TSource, TContext>>);
-
-  getFields(): GraphQLFieldMap<any, TContext>;
-  getInterfaces(): Array<GraphQLInterfaceType>;
+  constructor(config: GraphQLObjectTypeConfig<TSource, TContext, TArgs>);
+  getFields(): GraphQLFieldMap<any, TContext, TArgs>;
+  getInterfaces(): GraphQLInterfaceType[];
 
   toConfig(): GraphQLObjectTypeConfig<any, any> & {
-    interfaces: Array<GraphQLInterfaceType>;
+    interfaces: GraphQLInterfaceType[];
     fields: GraphQLFieldConfigMap<any, any>;
-    extensions: Maybe<Readonly<GraphQLObjectTypeExtensions<TSource, TContext>>>;
     extensionASTNodes: ReadonlyArray<ObjectTypeExtensionNode>;
   };
 
@@ -440,23 +399,35 @@ export function argsToArgsConfig(
   args: ReadonlyArray<GraphQLArgument>,
 ): GraphQLFieldConfigArgumentMap;
 
-export interface GraphQLObjectTypeConfig<TSource, TContext> {
+// TS_SPECIFIC: TArgs
+export interface GraphQLObjectTypeConfig<
+  TSource,
+  TContext,
+  TArgs = { [key: string]: any }
+> {
   name: string;
   description?: Maybe<string>;
-  interfaces?: Thunk<Maybe<Array<GraphQLInterfaceType>>>;
-  fields: Thunk<GraphQLFieldConfigMap<TSource, TContext>>;
+  interfaces?: Thunk<Maybe<GraphQLInterfaceType[]>>;
+  fields: Thunk<GraphQLFieldConfigMap<TSource, TContext, TArgs>>;
   isTypeOf?: Maybe<GraphQLIsTypeOfFn<TSource, TContext>>;
-  extensions?: Maybe<Readonly<GraphQLObjectTypeExtensions<TSource, TContext>>>;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<ObjectTypeDefinitionNode>;
   extensionASTNodes?: Maybe<ReadonlyArray<ObjectTypeExtensionNode>>;
 }
 
-export type GraphQLTypeResolver<TSource, TContext> = (
+// TS_SPECIFIC: TArgs
+export type GraphQLTypeResolver<
+  TSource,
+  TContext,
+  TArgs = { [key: string]: any }
+> = (
   value: TSource,
   context: TContext,
   info: GraphQLResolveInfo,
   abstractType: GraphQLAbstractType,
-) => PromiseOrValue<Maybe<GraphQLObjectType<TSource, TContext> | string>>;
+) => PromiseOrValue<
+  Maybe<GraphQLObjectType<TSource, TContext, TArgs> | string>
+>;
 
 export type GraphQLIsTypeOfFn<TSource, TContext> = (
   source: TSource,
@@ -488,26 +459,6 @@ export interface GraphQLResolveInfo {
   readonly variableValues: { [variableName: string]: any };
 }
 
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- *
- * We've provided these template arguments because this is an open type and
- * you may find them useful.
- */
-export interface GraphQLFieldExtensions<
-  _TSource,
-  _TContext,
-  _TArgs = { [argName: string]: any }
-> {
-  [attributeName: string]: any;
-}
-
 export interface GraphQLFieldConfig<
   TSource,
   TContext,
@@ -519,41 +470,30 @@ export interface GraphQLFieldConfig<
   resolve?: GraphQLFieldResolver<TSource, TContext, TArgs>;
   subscribe?: GraphQLFieldResolver<TSource, TContext, TArgs>;
   deprecationReason?: Maybe<string>;
-  extensions?: Maybe<
-    Readonly<GraphQLFieldExtensions<TSource, TContext, TArgs>>
-  >;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<FieldDefinitionNode>;
 }
 
-export interface GraphQLFieldConfigArgumentMap {
+export type GraphQLFieldConfigArgumentMap = {
   [key: string]: GraphQLArgumentConfig;
-}
-
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- */
-export interface GraphQLArgumentExtensions {
-  [attributeName: string]: any;
-}
+};
 
 export interface GraphQLArgumentConfig {
   description?: Maybe<string>;
   type: GraphQLInputType;
   defaultValue?: any;
-  deprecationReason?: Maybe<string>;
-  extensions?: Maybe<Readonly<GraphQLArgumentExtensions>>;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<InputValueDefinitionNode>;
 }
 
-export interface GraphQLFieldConfigMap<TSource, TContext> {
-  [key: string]: GraphQLFieldConfig<TSource, TContext>;
-}
+// TS_SPECIFIC: TArgs
+export type GraphQLFieldConfigMap<
+  TSource,
+  TContext,
+  TArgs = { [key: string]: any }
+> = {
+  [key: string]: GraphQLFieldConfig<TSource, TContext, TArgs>;
+};
 
 export interface GraphQLField<
   TSource,
@@ -563,15 +503,13 @@ export interface GraphQLField<
   name: string;
   description: Maybe<string>;
   type: GraphQLOutputType;
-  args: Array<GraphQLArgument>;
+  args: GraphQLArgument[];
   resolve?: GraphQLFieldResolver<TSource, TContext, TArgs>;
   subscribe?: GraphQLFieldResolver<TSource, TContext, TArgs>;
-  deprecationReason: Maybe<string>;
-  extensions: Maybe<Readonly<GraphQLFieldExtensions<TSource, TContext, TArgs>>>;
+  isDeprecated?: boolean;
+  deprecationReason?: Maybe<string>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<FieldDefinitionNode>;
-
-  // @deprecated and will be removed in v16
-  isDeprecated: boolean;
 }
 
 export interface GraphQLArgument {
@@ -579,29 +517,20 @@ export interface GraphQLArgument {
   description: Maybe<string>;
   type: GraphQLInputType;
   defaultValue: any;
-  deprecationReason: Maybe<string>;
-  extensions: Maybe<Readonly<GraphQLArgumentExtensions>>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode: Maybe<InputValueDefinitionNode>;
 }
 
 export function isRequiredArgument(arg: GraphQLArgument): boolean;
 
-export interface GraphQLFieldMap<TSource, TContext> {
-  [key: string]: GraphQLField<TSource, TContext>;
-}
-
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- */
-export interface GraphQLInterfaceTypeExtensions {
-  [attributeName: string]: any;
-}
+// TS_SPECIFIC: TArgs
+export type GraphQLFieldMap<
+  TSource,
+  TContext,
+  TArgs = { [key: string]: any }
+> = {
+  [key: string]: GraphQLField<TSource, TContext, TArgs>;
+};
 
 /**
  * Interface Type Definition
@@ -625,18 +554,17 @@ export class GraphQLInterfaceType {
   name: string;
   description: Maybe<string>;
   resolveType: Maybe<GraphQLTypeResolver<any, any>>;
-  extensions: Maybe<Readonly<GraphQLInterfaceTypeExtensions>>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<InterfaceTypeDefinitionNode>;
   extensionASTNodes: Maybe<ReadonlyArray<InterfaceTypeExtensionNode>>;
 
-  constructor(config: Readonly<GraphQLInterfaceTypeConfig<any, any>>);
+  constructor(config: GraphQLInterfaceTypeConfig<any, any>);
+
   getFields(): GraphQLFieldMap<any, any>;
-  getInterfaces(): Array<GraphQLInterfaceType>;
 
   toConfig(): GraphQLInterfaceTypeConfig<any, any> & {
-    interfaces: Array<GraphQLInterfaceType>;
     fields: GraphQLFieldConfigMap<any, any>;
-    extensions: Maybe<Readonly<GraphQLInterfaceTypeExtensions>>;
+    extensions: Maybe<Readonly<Record<string, any>>>;
     extensionASTNodes: ReadonlyArray<InterfaceTypeExtensionNode>;
   };
 
@@ -645,33 +573,24 @@ export class GraphQLInterfaceType {
   inspect(): string;
 }
 
-export interface GraphQLInterfaceTypeConfig<TSource, TContext> {
+// TS_SPECIFIC: TArgs
+export interface GraphQLInterfaceTypeConfig<
+  TSource,
+  TContext,
+  TArgs = { [key: string]: any }
+> {
   name: string;
   description?: Maybe<string>;
-  interfaces?: Thunk<Maybe<Array<GraphQLInterfaceType>>>;
-  fields: Thunk<GraphQLFieldConfigMap<TSource, TContext>>;
+  fields: Thunk<GraphQLFieldConfigMap<TSource, TContext, TArgs>>;
   /**
    * Optionally provide a custom type resolver function. If one is not provided,
    * the default implementation will call `isTypeOf` on each implementing
    * Object type.
    */
-  resolveType?: Maybe<GraphQLTypeResolver<TSource, TContext>>;
-  extensions?: Maybe<Readonly<GraphQLInterfaceTypeExtensions>>;
+  resolveType?: Maybe<GraphQLTypeResolver<TSource, TContext, TArgs>>;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<InterfaceTypeDefinitionNode>;
   extensionASTNodes?: Maybe<ReadonlyArray<InterfaceTypeExtensionNode>>;
-}
-
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- */
-export interface GraphQLUnionTypeExtensions {
-  [attributeName: string]: any;
 }
 
 /**
@@ -701,16 +620,16 @@ export class GraphQLUnionType {
   name: string;
   description: Maybe<string>;
   resolveType: Maybe<GraphQLTypeResolver<any, any>>;
-  extensions: Maybe<Readonly<GraphQLUnionTypeExtensions>>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode: Maybe<UnionTypeDefinitionNode>;
   extensionASTNodes: Maybe<ReadonlyArray<UnionTypeExtensionNode>>;
 
-  constructor(config: Readonly<GraphQLUnionTypeConfig<any, any>>);
-  getTypes(): Array<GraphQLObjectType>;
+  constructor(config: GraphQLUnionTypeConfig<any, any>);
+
+  getTypes(): GraphQLObjectType[];
 
   toConfig(): GraphQLUnionTypeConfig<any, any> & {
-    types: Array<GraphQLObjectType>;
-    extensions: Maybe<Readonly<GraphQLUnionTypeExtensions>>;
+    types: GraphQLObjectType[];
     extensionASTNodes: ReadonlyArray<UnionTypeExtensionNode>;
   };
 
@@ -722,29 +641,16 @@ export class GraphQLUnionType {
 export interface GraphQLUnionTypeConfig<TSource, TContext> {
   name: string;
   description?: Maybe<string>;
-  types: Thunk<Array<GraphQLObjectType>>;
+  types: Thunk<GraphQLObjectType[]>;
   /**
    * Optionally provide a custom type resolver function. If one is not provided,
    * the default implementation will call `isTypeOf` on each implementing
    * Object type.
    */
   resolveType?: Maybe<GraphQLTypeResolver<TSource, TContext>>;
-  extensions?: Maybe<Readonly<GraphQLUnionTypeExtensions>>;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<UnionTypeDefinitionNode>;
   extensionASTNodes?: Maybe<ReadonlyArray<UnionTypeExtensionNode>>;
-}
-
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- */
-export interface GraphQLEnumTypeExtensions {
-  [attributeName: string]: any;
 }
 
 /**
@@ -771,12 +677,12 @@ export interface GraphQLEnumTypeExtensions {
 export class GraphQLEnumType {
   name: string;
   description: Maybe<string>;
-  extensions: Maybe<Readonly<GraphQLEnumTypeExtensions>>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode: Maybe<EnumTypeDefinitionNode>;
   extensionASTNodes: Maybe<ReadonlyArray<EnumTypeExtensionNode>>;
 
-  constructor(config: Readonly<GraphQLEnumTypeConfig>);
-  getValues(): Array<GraphQLEnumValue>;
+  constructor(config: GraphQLEnumTypeConfig);
+  getValues(): GraphQLEnumValue[];
   getValue(name: string): Maybe<GraphQLEnumValue>;
   serialize(value: any): Maybe<string>;
   parseValue(value: any): Maybe<any>;
@@ -786,7 +692,6 @@ export class GraphQLEnumType {
   ): Maybe<any>;
 
   toConfig(): GraphQLEnumTypeConfig & {
-    extensions: Maybe<Readonly<GraphQLEnumTypeExtensions>>;
     extensionASTNodes: ReadonlyArray<EnumTypeExtensionNode>;
   };
 
@@ -799,33 +704,20 @@ export interface GraphQLEnumTypeConfig {
   name: string;
   description?: Maybe<string>;
   values: GraphQLEnumValueConfigMap;
-  extensions?: Maybe<Readonly<GraphQLEnumTypeExtensions>>;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<EnumTypeDefinitionNode>;
   extensionASTNodes?: Maybe<ReadonlyArray<EnumTypeExtensionNode>>;
 }
 
-export interface GraphQLEnumValueConfigMap {
+export type GraphQLEnumValueConfigMap = {
   [key: string]: GraphQLEnumValueConfig;
-}
-
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- */
-export interface GraphQLEnumValueExtensions {
-  [attributeName: string]: any;
-}
+};
 
 export interface GraphQLEnumValueConfig {
   description?: Maybe<string>;
   value?: any;
   deprecationReason?: Maybe<string>;
-  extensions?: Maybe<Readonly<GraphQLEnumValueExtensions>>;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<EnumValueDefinitionNode>;
 }
 
@@ -833,25 +725,10 @@ export interface GraphQLEnumValue {
   name: string;
   description: Maybe<string>;
   value: any;
+  isDeprecated?: boolean;
   deprecationReason: Maybe<string>;
-  extensions: Maybe<Readonly<GraphQLEnumValueExtensions>>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<EnumValueDefinitionNode>;
-
-  // @deprecated and will be removed in v16
-  isDeprecated: boolean;
-}
-
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- */
-export interface GraphQLInputObjectTypeExtensions {
-  [attributeName: string]: any;
 }
 
 /**
@@ -877,16 +754,15 @@ export interface GraphQLInputObjectTypeExtensions {
 export class GraphQLInputObjectType {
   name: string;
   description: Maybe<string>;
-  extensions: Maybe<Readonly<GraphQLInputObjectTypeExtensions>>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode: Maybe<InputObjectTypeDefinitionNode>;
   extensionASTNodes: Maybe<ReadonlyArray<InputObjectTypeExtensionNode>>;
-
-  constructor(config: Readonly<GraphQLInputObjectTypeConfig>);
+  constructor(config: GraphQLInputObjectTypeConfig);
   getFields(): GraphQLInputFieldMap;
 
   toConfig(): GraphQLInputObjectTypeConfig & {
     fields: GraphQLInputFieldConfigMap;
-    extensions: Maybe<Readonly<GraphQLInputObjectTypeExtensions>>;
+    extensions: Maybe<Readonly<Record<string, any>>>;
     extensionASTNodes: ReadonlyArray<InputObjectTypeExtensionNode>;
   };
 
@@ -899,49 +775,32 @@ export interface GraphQLInputObjectTypeConfig {
   name: string;
   description?: Maybe<string>;
   fields: Thunk<GraphQLInputFieldConfigMap>;
-  extensions?: Maybe<Readonly<GraphQLInputObjectTypeExtensions>>;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<InputObjectTypeDefinitionNode>;
   extensionASTNodes?: Maybe<ReadonlyArray<InputObjectTypeExtensionNode>>;
-}
-
-/**
- * Custom extensions
- *
- * @remarks
- * Use a unique identifier name for your extension, for example the name of
- * your library or project. Do not use a shortened identifier as this increases
- * the risk of conflicts. We recommend you add at most one extension field,
- * an object which can contain all the values you need.
- */
-export interface GraphQLInputFieldExtensions {
-  [attributeName: string]: any;
 }
 
 export interface GraphQLInputFieldConfig {
   description?: Maybe<string>;
   type: GraphQLInputType;
   defaultValue?: any;
-  deprecationReason?: Maybe<string>;
-  extensions?: Maybe<Readonly<GraphQLInputFieldExtensions>>;
+  extensions?: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<InputValueDefinitionNode>;
 }
 
-export interface GraphQLInputFieldConfigMap {
+export type GraphQLInputFieldConfigMap = {
   [key: string]: GraphQLInputFieldConfig;
-}
+};
 
 export interface GraphQLInputField {
   name: string;
   description?: Maybe<string>;
   type: GraphQLInputType;
   defaultValue?: any;
-  deprecationReason: Maybe<string>;
-  extensions: Maybe<Readonly<GraphQLInputFieldExtensions>>;
+  extensions: Maybe<Readonly<Record<string, any>>>;
   astNode?: Maybe<InputValueDefinitionNode>;
 }
 
 export function isRequiredInputField(field: GraphQLInputField): boolean;
 
-export interface GraphQLInputFieldMap {
-  [key: string]: GraphQLInputField;
-}
+export type GraphQLInputFieldMap = { [key: string]: GraphQLInputField };

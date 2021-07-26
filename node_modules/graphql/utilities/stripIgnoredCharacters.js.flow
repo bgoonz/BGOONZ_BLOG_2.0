@@ -1,7 +1,10 @@
 // @flow strict
-import { Source, isSource } from '../language/source';
+
+import inspect from '../jsutils/inspect';
+
+import { Source } from '../language/source';
 import { TokenKind } from '../language/tokenKind';
-import { Lexer, isPunctuatorTokenKind } from '../language/lexer';
+import { createLexer, isPunctuatorToken } from '../language/lexer';
 import {
   dedentBlockStringValue,
   getBlockStringIndentation,
@@ -60,10 +63,15 @@ import {
  * """Type description""" type Foo{"""Field description""" bar:String}
  */
 export function stripIgnoredCharacters(source: string | Source): string {
-  const sourceObj = isSource(source) ? source : new Source(source);
+  const sourceObj = typeof source === 'string' ? new Source(source) : source;
+  if (!(sourceObj instanceof Source)) {
+    throw new TypeError(
+      `Must provide string or Source. Received: ${inspect(sourceObj)}`,
+    );
+  }
 
   const body = sourceObj.body;
-  const lexer = new Lexer(sourceObj);
+  const lexer = createLexer(sourceObj);
   let strippedBody = '';
 
   let wasLastAddedTokenNonPunctuator = false;
@@ -76,7 +84,7 @@ export function stripIgnoredCharacters(source: string | Source): string {
      * Also prevent case of non-punctuator token following by spread resulting
      * in invalid token (e.g. `1...` is invalid Float token).
      */
-    const isNonPunctuator = !isPunctuatorTokenKind(currentToken.kind);
+    const isNonPunctuator = !isPunctuatorToken(currentToken);
     if (wasLastAddedTokenNonPunctuator) {
       if (isNonPunctuator || currentToken.kind === TokenKind.SPREAD) {
         strippedBody += ' ';
@@ -96,12 +104,13 @@ export function stripIgnoredCharacters(source: string | Source): string {
   return strippedBody;
 }
 
-function dedentBlockString(blockStr: string): string {
+function dedentBlockString(blockStr) {
   // skip leading and trailing triple quotations
   const rawStr = blockStr.slice(3, -3);
   let body = dedentBlockStringValue(rawStr);
 
-  if (getBlockStringIndentation(body) > 0) {
+  const lines = body.split(/\r\n|[\n\r]/g);
+  if (getBlockStringIndentation(lines) > 0) {
     body = '\n' + body;
   }
 

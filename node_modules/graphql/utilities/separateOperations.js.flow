@@ -1,13 +1,12 @@
 // @flow strict
-import type { ObjMap } from '../jsutils/ObjMap';
 
-import type {
-  DocumentNode,
-  OperationDefinitionNode,
-  SelectionSetNode,
-} from '../language/ast';
-import { Kind } from '../language/kinds';
+import { type ObjMap } from '../jsutils/ObjMap';
+
 import { visit } from '../language/visitor';
+import {
+  type DocumentNode,
+  type OperationDefinitionNode,
+} from '../language/ast';
 
 /**
  * separateOperations accepts a single AST document which may contain many
@@ -18,80 +17,81 @@ import { visit } from '../language/visitor';
 export function separateOperations(
   documentAST: DocumentNode,
 ): ObjMap<DocumentNode> {
-  const operations: Array<OperationDefinitionNode> = [];
+  const operations = [];
+  const fragments = Object.create(null);
+  const positions = new Map();
   const depGraph: DepGraph = Object.create(null);
+  let fromName;
+  let idx = 0;
 
   // Populate metadata and build a dependency graph.
-  for (const definitionNode of documentAST.definitions) {
-    switch (definitionNode.kind) {
-      case Kind.OPERATION_DEFINITION:
-        operations.push(definitionNode);
-        break;
-      case Kind.FRAGMENT_DEFINITION:
-        depGraph[definitionNode.name.value] = collectDependencies(
-          definitionNode.selectionSet,
-        );
-        break;
-    }
-  }
+  visit(documentAST, {
+    OperationDefinition(node) {
+      fromName = opName(node);
+      operations.push(node);
+      positions.set(node, idx++);
+    },
+    FragmentDefinition(node) {
+      fromName = node.name.value;
+      fragments[fromName] = node;
+      positions.set(node, idx++);
+    },
+    FragmentSpread(node) {
+      const toName = node.name.value;
+      (depGraph[fromName] || (depGraph[fromName] = Object.create(null)))[
+        toName
+      ] = true;
+    },
+  });
 
   // For each operation, produce a new synthesized AST which includes only what
   // is necessary for completing that operation.
   const separatedDocumentASTs = Object.create(null);
   for (const operation of operations) {
-    const dependencies = new Set();
-
-    for (const fragmentName of collectDependencies(operation.selectionSet)) {
-      collectTransitiveDependencies(dependencies, depGraph, fragmentName);
-    }
-
-    // Provides the empty string for anonymous operations.
-    const operationName = operation.name ? operation.name.value : '';
+    const operationName = opName(operation);
+    const dependencies = Object.create(null);
+    collectTransitiveDependencies(dependencies, depGraph, operationName);
 
     // The list of definition nodes to be included for this operation, sorted
     // to retain the same order as the original document.
+    const definitions = [operation];
+    for (const name of Object.keys(dependencies)) {
+      definitions.push(fragments[name]);
+    }
+    definitions.sort(
+      (n1, n2) => (positions.get(n1) || 0) - (positions.get(n2) || 0),
+    );
+
     separatedDocumentASTs[operationName] = {
-      kind: Kind.DOCUMENT,
-      definitions: documentAST.definitions.filter(
-        (node) =>
-          node === operation ||
-          (node.kind === Kind.FRAGMENT_DEFINITION &&
-            dependencies.has(node.name.value)),
-      ),
+      kind: 'Document',
+      definitions,
     };
   }
 
   return separatedDocumentASTs;
 }
 
-type DepGraph = ObjMap<Array<string>>;
+type DepGraph = ObjMap<ObjMap<boolean>>;
+
+// Provides the empty string for anonymous operations.
+function opName(operation: OperationDefinitionNode): string {
+  return operation.name ? operation.name.value : '';
+}
 
 // From a dependency graph, collects a list of transitive dependencies by
 // recursing through a dependency graph.
 function collectTransitiveDependencies(
-  collected: Set<string>,
+  collected: ObjMap<boolean>,
   depGraph: DepGraph,
   fromName: string,
 ): void {
-  if (!collected.has(fromName)) {
-    collected.add(fromName);
-
-    const immediateDeps = depGraph[fromName];
-    if (immediateDeps !== undefined) {
-      for (const toName of immediateDeps) {
+  const immediateDeps = depGraph[fromName];
+  if (immediateDeps) {
+    for (const toName of Object.keys(immediateDeps)) {
+      if (!collected[toName]) {
+        collected[toName] = true;
         collectTransitiveDependencies(collected, depGraph, toName);
       }
     }
   }
-}
-
-function collectDependencies(selectionSet: SelectionSetNode): Array<string> {
-  const dependencies = [];
-
-  visit(selectionSet, {
-    FragmentSpread(node) {
-      dependencies.push(node.name.value);
-    },
-  });
-  return dependencies;
 }

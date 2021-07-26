@@ -1,34 +1,28 @@
 // @flow strict
+
 import find from '../polyfills/find';
+import flatMap from '../polyfills/flatMap';
 import objectValues from '../polyfills/objectValues';
+import objectEntries from '../polyfills/objectEntries';
 
 import inspect from '../jsutils/inspect';
 
 import { GraphQLError } from '../error/GraphQLError';
-import { locatedError } from '../error/locatedError';
 
-import type {
-  ASTNode,
-  NamedTypeNode,
-  DirectiveNode,
-  OperationTypeNode,
-} from '../language/ast';
+import { type ASTNode, type NamedTypeNode } from '../language/ast';
 
 import { isValidNameError } from '../utilities/assertValidName';
 import { isEqualType, isTypeSubTypeOf } from '../utilities/typeComparators';
 
-import type { GraphQLSchema } from './schema';
-import type {
-  GraphQLObjectType,
-  GraphQLInterfaceType,
-  GraphQLUnionType,
-  GraphQLEnumType,
-  GraphQLInputObjectType,
-} from './definition';
-import { assertSchema } from './schema';
+import { isDirective } from './directives';
 import { isIntrospectionType } from './introspection';
-import { isDirective, GraphQLDeprecatedDirective } from './directives';
+import { type GraphQLSchema, assertSchema } from './schema';
 import {
+  type GraphQLObjectType,
+  type GraphQLInterfaceType,
+  type GraphQLUnionType,
+  type GraphQLEnumType,
+  type GraphQLInputObjectType,
   isObjectType,
   isInterfaceType,
   isUnionType,
@@ -39,7 +33,6 @@ import {
   isInputType,
   isOutputType,
   isRequiredArgument,
-  isRequiredInputField,
 } from './definition';
 
 /**
@@ -80,7 +73,7 @@ export function validateSchema(
 export function assertValidSchema(schema: GraphQLSchema): void {
   const errors = validateSchema(schema);
   if (errors.length !== 0) {
-    throw new Error(errors.map((error) => error.message).join('\n\n'));
+    throw new Error(errors.map(error => error.message).join('\n\n'));
   }
 }
 
@@ -110,7 +103,7 @@ class SchemaValidationContext {
   }
 }
 
-function validateRootTypes(context: SchemaValidationContext): void {
+function validateRootTypes(context) {
   const schema = context.schema;
   const queryType = schema.getQueryType();
   if (!queryType) {
@@ -120,7 +113,7 @@ function validateRootTypes(context: SchemaValidationContext): void {
       `Query root type must be Object type, it cannot be ${inspect(
         queryType,
       )}.`,
-      getOperationTypeNode(schema, 'query') ?? queryType.astNode,
+      getOperationTypeNode(schema, queryType, 'query'),
     );
   }
 
@@ -129,7 +122,7 @@ function validateRootTypes(context: SchemaValidationContext): void {
     context.reportError(
       'Mutation root type must be Object type if provided, it cannot be ' +
         `${inspect(mutationType)}.`,
-      getOperationTypeNode(schema, 'mutation') ?? mutationType.astNode,
+      getOperationTypeNode(schema, mutationType, 'mutation'),
     );
   }
 
@@ -138,22 +131,24 @@ function validateRootTypes(context: SchemaValidationContext): void {
     context.reportError(
       'Subscription root type must be Object type if provided, it cannot be ' +
         `${inspect(subscriptionType)}.`,
-      getOperationTypeNode(schema, 'subscription') ?? subscriptionType.astNode,
+      getOperationTypeNode(schema, subscriptionType, 'subscription'),
     );
   }
 }
 
 function getOperationTypeNode(
   schema: GraphQLSchema,
-  operation: OperationTypeNode,
+  type: GraphQLObjectType,
+  operation: string,
 ): ?ASTNode {
-  const operationNodes = getAllSubNodes(schema, (node) => node.operationTypes);
+  const operationNodes = getAllSubNodes(schema, node => node.operationTypes);
   for (const node of operationNodes) {
     if (node.operation === operation) {
       return node.type;
     }
   }
-  return undefined;
+
+  return type.astNode;
 }
 
 function validateDirectives(context: SchemaValidationContext): void {
@@ -162,7 +157,7 @@ function validateDirectives(context: SchemaValidationContext): void {
     if (!isDirective(directive)) {
       context.reportError(
         `Expected directive but got: ${inspect(directive)}.`,
-        directive?.astNode,
+        directive && directive.astNode,
       );
       continue;
     }
@@ -173,27 +168,32 @@ function validateDirectives(context: SchemaValidationContext): void {
     // TODO: Ensure proper locations.
 
     // Ensure the arguments are valid.
+    const argNames = Object.create(null);
     for (const arg of directive.args) {
+      const argName = arg.name;
+
       // Ensure they are named correctly.
       validateName(context, arg);
+
+      // Ensure they are unique per directive.
+      if (argNames[argName]) {
+        context.reportError(
+          `Argument @${directive.name}(${argName}:) can only be defined once.`,
+          directive.astNode &&
+            directive.args
+              .filter(({ name }) => name === argName)
+              .map(({ astNode }) => astNode),
+        );
+        continue;
+      }
+      argNames[argName] = true;
 
       // Ensure the type is an input type.
       if (!isInputType(arg.type)) {
         context.reportError(
-          `The type of @${directive.name}(${arg.name}:) must be Input Type ` +
+          `The type of @${directive.name}(${argName}:) must be Input Type ` +
             `but got: ${inspect(arg.type)}.`,
           arg.astNode,
-        );
-      }
-
-      if (isRequiredArgument(arg) && arg.deprecationReason != null) {
-        context.reportError(
-          `Required argument @${directive.name}(${arg.name}:) cannot be deprecated.`,
-          [
-            getDeprecatedDirectiveNode(arg.astNode),
-            // istanbul ignore next (TODO need to write coverage tests)
-            arg.astNode?.type,
-          ],
         );
       }
     }
@@ -204,10 +204,15 @@ function validateName(
   context: SchemaValidationContext,
   node: { +name: string, +astNode: ?ASTNode, ... },
 ): void {
+  // If a schema explicitly allows some legacy name which is no longer valid,
+  // allow it to be assumed valid.
+  if (context.schema.__allowedLegacyNames.indexOf(node.name) !== -1) {
+    return;
+  }
   // Ensure names are valid, however introspection types opt out.
-  const error = isValidNameError(node.name);
+  const error = isValidNameError(node.name, node.astNode || undefined);
   if (error) {
-    context.addError(locatedError(error, node.astNode));
+    context.addError(error);
   }
 }
 
@@ -221,7 +226,7 @@ function validateTypes(context: SchemaValidationContext): void {
     if (!isNamedType(type)) {
       context.reportError(
         `Expected GraphQL named type but got: ${inspect(type)}.`,
-        type.astNode,
+        type && type.astNode,
       );
       continue;
     }
@@ -236,13 +241,10 @@ function validateTypes(context: SchemaValidationContext): void {
       validateFields(context, type);
 
       // Ensure objects implement the interfaces they claim to.
-      validateInterfaces(context, type);
+      validateObjectInterfaces(context, type);
     } else if (isInterfaceType(type)) {
       // Ensure fields are valid.
       validateFields(context, type);
-
-      // Ensure interfaces implement the interfaces they claim to.
-      validateInterfaces(context, type);
     } else if (isUnionType(type)) {
       // Ensure Unions include valid member types.
       validateUnionMembers(context, type);
@@ -282,111 +284,99 @@ function validateFields(
       context.reportError(
         `The type of ${type.name}.${field.name} must be Output Type ` +
           `but got: ${inspect(field.type)}.`,
-        field.astNode?.type,
+        field.astNode && field.astNode.type,
       );
     }
 
     // Ensure the arguments are valid
+    const argNames = Object.create(null);
     for (const arg of field.args) {
       const argName = arg.name;
 
       // Ensure they are named correctly.
       validateName(context, arg);
 
+      // Ensure they are unique per field.
+      if (argNames[argName]) {
+        context.reportError(
+          `Field argument ${type.name}.${field.name}(${argName}:) can only be defined once.`,
+          field.args
+            .filter(({ name }) => name === argName)
+            .map(({ astNode }) => astNode),
+        );
+      }
+      argNames[argName] = true;
+
       // Ensure the type is an input type
       if (!isInputType(arg.type)) {
         context.reportError(
           `The type of ${type.name}.${field.name}(${argName}:) must be Input ` +
             `Type but got: ${inspect(arg.type)}.`,
-          arg.astNode?.type,
-        );
-      }
-
-      if (isRequiredArgument(arg) && arg.deprecationReason != null) {
-        context.reportError(
-          `Required argument ${type.name}.${field.name}(${argName}:) cannot be deprecated.`,
-          [
-            getDeprecatedDirectiveNode(arg.astNode),
-            // istanbul ignore next (TODO need to write coverage tests)
-            arg.astNode?.type,
-          ],
+          arg.astNode && arg.astNode.type,
         );
       }
     }
   }
 }
 
-function validateInterfaces(
+function validateObjectInterfaces(
   context: SchemaValidationContext,
-  type: GraphQLObjectType | GraphQLInterfaceType,
+  object: GraphQLObjectType,
 ): void {
-  const ifaceTypeNames = Object.create(null);
-  for (const iface of type.getInterfaces()) {
+  const implementedTypeNames = Object.create(null);
+  for (const iface of object.getInterfaces()) {
     if (!isInterfaceType(iface)) {
       context.reportError(
-        `Type ${inspect(type)} must only implement Interface types, ` +
+        `Type ${inspect(object)} must only implement Interface types, ` +
           `it cannot implement ${inspect(iface)}.`,
-        getAllImplementsInterfaceNodes(type, iface),
+        getAllImplementsInterfaceNodes(object, iface),
       );
       continue;
     }
 
-    if (type === iface) {
+    if (implementedTypeNames[iface.name]) {
       context.reportError(
-        `Type ${type.name} cannot implement itself because it would create a circular reference.`,
-        getAllImplementsInterfaceNodes(type, iface),
+        `Type ${object.name} can only implement ${iface.name} once.`,
+        getAllImplementsInterfaceNodes(object, iface),
       );
       continue;
     }
-
-    if (ifaceTypeNames[iface.name]) {
-      context.reportError(
-        `Type ${type.name} can only implement ${iface.name} once.`,
-        getAllImplementsInterfaceNodes(type, iface),
-      );
-      continue;
-    }
-
-    ifaceTypeNames[iface.name] = true;
-
-    validateTypeImplementsAncestors(context, type, iface);
-    validateTypeImplementsInterface(context, type, iface);
+    implementedTypeNames[iface.name] = true;
+    validateObjectImplementsInterface(context, object, iface);
   }
 }
 
-function validateTypeImplementsInterface(
+function validateObjectImplementsInterface(
   context: SchemaValidationContext,
-  type: GraphQLObjectType | GraphQLInterfaceType,
+  object: GraphQLObjectType,
   iface: GraphQLInterfaceType,
 ): void {
-  const typeFieldMap = type.getFields();
+  const objectFieldMap = object.getFields();
+  const ifaceFieldMap = iface.getFields();
 
   // Assert each interface field is implemented.
-  for (const ifaceField of objectValues(iface.getFields())) {
-    const fieldName = ifaceField.name;
-    const typeField = typeFieldMap[fieldName];
+  for (const [fieldName, ifaceField] of objectEntries(ifaceFieldMap)) {
+    const objectField = objectFieldMap[fieldName];
 
-    // Assert interface field exists on type.
-    if (!typeField) {
+    // Assert interface field exists on object.
+    if (!objectField) {
       context.reportError(
-        `Interface field ${iface.name}.${fieldName} expected but ${type.name} does not provide it.`,
-        [ifaceField.astNode, ...getAllNodes(type)],
+        `Interface field ${iface.name}.${fieldName} expected but ${object.name} does not provide it.`,
+        [ifaceField.astNode, ...getAllNodes(object)],
       );
       continue;
     }
 
-    // Assert interface field type is satisfied by type field type, by being
+    // Assert interface field type is satisfied by object field type, by being
     // a valid subtype. (covariant)
-    if (!isTypeSubTypeOf(context.schema, typeField.type, ifaceField.type)) {
+    if (!isTypeSubTypeOf(context.schema, objectField.type, ifaceField.type)) {
       context.reportError(
         `Interface field ${iface.name}.${fieldName} expects type ` +
-          `${inspect(ifaceField.type)} but ${type.name}.${fieldName} ` +
-          `is type ${inspect(typeField.type)}.`,
+          `${inspect(ifaceField.type)} but ${object.name}.${fieldName} ` +
+          `is type ${inspect(objectField.type)}.`,
         [
-          // istanbul ignore next (TODO need to write coverage tests)
-          ifaceField.astNode?.type,
-          // istanbul ignore next (TODO need to write coverage tests)
-          typeField.astNode?.type,
+          ifaceField.astNode && ifaceField.astNode.type,
+          objectField.astNode && objectField.astNode.type,
         ],
       );
     }
@@ -394,13 +384,13 @@ function validateTypeImplementsInterface(
     // Assert each interface field arg is implemented.
     for (const ifaceArg of ifaceField.args) {
       const argName = ifaceArg.name;
-      const typeArg = find(typeField.args, (arg) => arg.name === argName);
+      const objectArg = find(objectField.args, arg => arg.name === argName);
 
       // Assert interface field arg exists on object field.
-      if (!typeArg) {
+      if (!objectArg) {
         context.reportError(
-          `Interface field argument ${iface.name}.${fieldName}(${argName}:) expected but ${type.name}.${fieldName} does not provide it.`,
-          [ifaceArg.astNode, typeField.astNode],
+          `Interface field argument ${iface.name}.${fieldName}(${argName}:) expected but ${object.name}.${fieldName} does not provide it.`,
+          [ifaceArg.astNode, objectField.astNode],
         );
         continue;
       }
@@ -408,17 +398,15 @@ function validateTypeImplementsInterface(
       // Assert interface field arg type matches object field arg type.
       // (invariant)
       // TODO: change to contravariant?
-      if (!isEqualType(ifaceArg.type, typeArg.type)) {
+      if (!isEqualType(ifaceArg.type, objectArg.type)) {
         context.reportError(
           `Interface field argument ${iface.name}.${fieldName}(${argName}:) ` +
             `expects type ${inspect(ifaceArg.type)} but ` +
-            `${type.name}.${fieldName}(${argName}:) is type ` +
-            `${inspect(typeArg.type)}.`,
+            `${object.name}.${fieldName}(${argName}:) is type ` +
+            `${inspect(objectArg.type)}.`,
           [
-            // istanbul ignore next (TODO need to write coverage tests)
-            ifaceArg.astNode?.type,
-            // istanbul ignore next (TODO need to write coverage tests)
-            typeArg.astNode?.type,
+            ifaceArg.astNode && ifaceArg.astNode.type,
+            objectArg.astNode && objectArg.astNode.type,
           ],
         );
       }
@@ -427,36 +415,15 @@ function validateTypeImplementsInterface(
     }
 
     // Assert additional arguments must not be required.
-    for (const typeArg of typeField.args) {
-      const argName = typeArg.name;
-      const ifaceArg = find(ifaceField.args, (arg) => arg.name === argName);
-      if (!ifaceArg && isRequiredArgument(typeArg)) {
+    for (const objectArg of objectField.args) {
+      const argName = objectArg.name;
+      const ifaceArg = find(ifaceField.args, arg => arg.name === argName);
+      if (!ifaceArg && isRequiredArgument(objectArg)) {
         context.reportError(
-          `Object field ${type.name}.${fieldName} includes required argument ${argName} that is missing from the Interface field ${iface.name}.${fieldName}.`,
-          [typeArg.astNode, ifaceField.astNode],
+          `Object field ${object.name}.${fieldName} includes required argument ${argName} that is missing from the Interface field ${iface.name}.${fieldName}.`,
+          [objectArg.astNode, ifaceField.astNode],
         );
       }
-    }
-  }
-}
-
-function validateTypeImplementsAncestors(
-  context: SchemaValidationContext,
-  type: GraphQLObjectType | GraphQLInterfaceType,
-  iface: GraphQLInterfaceType,
-): void {
-  const ifaceInterfaces = type.getInterfaces();
-  for (const transitive of iface.getInterfaces()) {
-    if (ifaceInterfaces.indexOf(transitive) === -1) {
-      context.reportError(
-        transitive === type
-          ? `Type ${type.name} cannot implement ${iface.name} because it would create a circular reference.`
-          : `Type ${type.name} must implement ${transitive.name} because it is implemented by ${iface.name}.`,
-        [
-          ...getAllImplementsInterfaceNodes(iface, transitive),
-          ...getAllImplementsInterfaceNodes(type, iface),
-        ],
-      );
     }
   }
 }
@@ -544,18 +511,7 @@ function validateInputFields(
       context.reportError(
         `The type of ${inputObj.name}.${field.name} must be Input Type ` +
           `but got: ${inspect(field.type)}.`,
-        field.astNode?.type,
-      );
-    }
-
-    if (isRequiredInputField(field) && field.deprecationReason != null) {
-      context.reportError(
-        `Required input field ${inputObj.name}.${field.name} cannot be deprecated.`,
-        [
-          getDeprecatedDirectiveNode(field.astNode),
-          // istanbul ignore next (TODO need to write coverage tests)
-          field.astNode?.type,
-        ],
+        field.astNode && field.astNode.type,
       );
     }
   }
@@ -563,7 +519,7 @@ function validateInputFields(
 
 function createInputObjectCircularRefsValidator(
   context: SchemaValidationContext,
-): (GraphQLInputObjectType) => void {
+) {
   // Modified copy of algorithm from 'src/validation/rules/NoFragmentCycles.js'.
   // Tracks already visited types to maintain O(N) and to ensure that cycles
   // are not redundantly reported.
@@ -580,7 +536,7 @@ function createInputObjectCircularRefsValidator(
   // This does a straight-forward DFS to find cycles.
   // It does not terminate when a cycle was found but continues to explore
   // the graph to find all possible cycles.
-  function detectCycleRecursive(inputObj: GraphQLInputObjectType): void {
+  function detectCycleRecursive(inputObj: GraphQLInputObjectType) {
     if (visitedTypes[inputObj.name]) {
       return;
     }
@@ -599,10 +555,10 @@ function createInputObjectCircularRefsValidator(
           detectCycleRecursive(fieldType);
         } else {
           const cyclePath = fieldPath.slice(cycleIndex);
-          const pathStr = cyclePath.map((fieldObj) => fieldObj.name).join('.');
+          const pathStr = cyclePath.map(fieldObj => fieldObj.name).join('.');
           context.reportError(
             `Cannot reference Input Object "${fieldType.name}" within itself through a series of non-null fields: "${pathStr}".`,
-            cyclePath.map((fieldObj) => fieldObj.astNode),
+            cyclePath.map(fieldObj => fieldObj.astNode),
           );
         }
         fieldPath.pop();
@@ -627,27 +583,22 @@ function getAllNodes<T: ASTNode, K: ASTNode>(
     ? extensionASTNodes
       ? [astNode].concat(extensionASTNodes)
       : [astNode]
-    : extensionASTNodes ?? [];
+    : extensionASTNodes || [];
 }
 
 function getAllSubNodes<T: ASTNode, K: ASTNode, L: ASTNode>(
   object: SDLDefinedObject<T, K>,
   getter: (T | K) => ?(L | $ReadOnlyArray<L>),
 ): $ReadOnlyArray<L> {
-  let subNodes = [];
-  for (const node of getAllNodes(object)) {
-    // istanbul ignore next (See: 'https://github.com/graphql/graphql-js/issues/2203')
-    subNodes = subNodes.concat(getter(node) ?? []);
-  }
-  return subNodes;
+  return flatMap(getAllNodes(object), item => getter(item) || []);
 }
 
 function getAllImplementsInterfaceNodes(
-  type: GraphQLObjectType | GraphQLInterfaceType,
+  type: GraphQLObjectType,
   iface: GraphQLInterfaceType,
 ): $ReadOnlyArray<NamedTypeNode> {
-  return getAllSubNodes(type, (typeNode) => typeNode.interfaces).filter(
-    (ifaceNode) => ifaceNode.name.value === iface.name,
+  return getAllSubNodes(type, typeNode => typeNode.interfaces).filter(
+    ifaceNode => ifaceNode.name.value === iface.name,
   );
 }
 
@@ -655,16 +606,7 @@ function getUnionMemberTypeNodes(
   union: GraphQLUnionType,
   typeName: string,
 ): ?$ReadOnlyArray<NamedTypeNode> {
-  return getAllSubNodes(union, (unionNode) => unionNode.types).filter(
-    (typeNode) => typeNode.name.value === typeName,
-  );
-}
-
-function getDeprecatedDirectiveNode(
-  definitionNode: ?{ +directives?: $ReadOnlyArray<DirectiveNode>, ... },
-): ?DirectiveNode {
-  // istanbul ignore next (See: 'https://github.com/graphql/graphql-js/issues/2203')
-  return definitionNode?.directives?.find(
-    (node) => node.name.value === GraphQLDeprecatedDirective.name,
+  return getAllSubNodes(union, unionNode => unionNode.types).filter(
+    typeNode => typeNode.name.value === typeName,
   );
 }

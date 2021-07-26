@@ -5,17 +5,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.valueFromAST = valueFromAST;
 
-var _objectValues3 = _interopRequireDefault(require("../polyfills/objectValues.js"));
+var _objectValues3 = _interopRequireDefault(require("../polyfills/objectValues"));
 
-var _keyMap = _interopRequireDefault(require("../jsutils/keyMap.js"));
+var _keyMap = _interopRequireDefault(require("../jsutils/keyMap"));
 
-var _inspect = _interopRequireDefault(require("../jsutils/inspect.js"));
+var _inspect = _interopRequireDefault(require("../jsutils/inspect"));
 
-var _invariant = _interopRequireDefault(require("../jsutils/invariant.js"));
+var _invariant = _interopRequireDefault(require("../jsutils/invariant"));
 
-var _kinds = require("../language/kinds.js");
+var _isInvalid = _interopRequireDefault(require("../jsutils/isInvalid"));
 
-var _definition = require("../type/definition.js");
+var _kinds = require("../language/kinds");
+
+var _definition = require("../type/definition");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -46,10 +48,23 @@ function valueFromAST(valueNode, type, variables) {
     return;
   }
 
+  if ((0, _definition.isNonNullType)(type)) {
+    if (valueNode.kind === _kinds.Kind.NULL) {
+      return; // Invalid: intentionally return no value.
+    }
+
+    return valueFromAST(valueNode, type.ofType, variables);
+  }
+
+  if (valueNode.kind === _kinds.Kind.NULL) {
+    // This is explicitly returning the value null.
+    return null;
+  }
+
   if (valueNode.kind === _kinds.Kind.VARIABLE) {
     var variableName = valueNode.name.value;
 
-    if (variables == null || variables[variableName] === undefined) {
+    if (!variables || (0, _isInvalid.default)(variables[variableName])) {
       // No valid return value.
       return;
     }
@@ -64,19 +79,6 @@ function valueFromAST(valueNode, type, variables) {
 
 
     return variableValue;
-  }
-
-  if ((0, _definition.isNonNullType)(type)) {
-    if (valueNode.kind === _kinds.Kind.NULL) {
-      return; // Invalid: intentionally return no value.
-    }
-
-    return valueFromAST(valueNode, type.ofType, variables);
-  }
-
-  if (valueNode.kind === _kinds.Kind.NULL) {
-    // This is explicitly returning the value null.
-    return null;
   }
 
   if ((0, _definition.isListType)(type)) {
@@ -99,7 +101,7 @@ function valueFromAST(valueNode, type, variables) {
         } else {
           var itemValue = valueFromAST(itemNode, itemType, variables);
 
-          if (itemValue === undefined) {
+          if ((0, _isInvalid.default)(itemValue)) {
             return; // Invalid: intentionally return no value.
           }
 
@@ -112,7 +114,7 @@ function valueFromAST(valueNode, type, variables) {
 
     var coercedValue = valueFromAST(valueNode, itemType, variables);
 
-    if (coercedValue === undefined) {
+    if ((0, _isInvalid.default)(coercedValue)) {
       return; // Invalid: intentionally return no value.
     }
 
@@ -145,7 +147,7 @@ function valueFromAST(valueNode, type, variables) {
 
       var fieldValue = valueFromAST(fieldNode.value, field.type, variables);
 
-      if (fieldValue === undefined) {
+      if ((0, _isInvalid.default)(fieldValue)) {
         return; // Invalid: intentionally return no value.
       }
 
@@ -153,11 +155,25 @@ function valueFromAST(valueNode, type, variables) {
     }
 
     return coercedObj;
-  } // istanbul ignore else (See: 'https://github.com/graphql/graphql-js/issues/2618')
+  }
 
+  if ((0, _definition.isEnumType)(type)) {
+    if (valueNode.kind !== _kinds.Kind.ENUM) {
+      return; // Invalid: intentionally return no value.
+    }
 
-  if ((0, _definition.isLeafType)(type)) {
-    // Scalars and Enums fulfill parsing a literal value via parseLiteral().
+    var enumValue = type.getValue(valueNode.value);
+
+    if (!enumValue) {
+      return; // Invalid: intentionally return no value.
+    }
+
+    return enumValue.value;
+  }
+
+  /* istanbul ignore else */
+  if ((0, _definition.isScalarType)(type)) {
+    // Scalars fulfill parsing a literal value via parseLiteral().
     // Invalid values represent a failure to parse correctly, in which case
     // no value is returned.
     var result;
@@ -168,19 +184,20 @@ function valueFromAST(valueNode, type, variables) {
       return; // Invalid: intentionally return no value.
     }
 
-    if (result === undefined) {
+    if ((0, _isInvalid.default)(result)) {
       return; // Invalid: intentionally return no value.
     }
 
     return result;
-  } // istanbul ignore next (Not reachable. All possible input types have been considered)
+  } // Not reachable. All possible input types have been considered.
 
 
-  false || (0, _invariant.default)(0, 'Unexpected input type: ' + (0, _inspect.default)(type));
+  /* istanbul ignore next */
+  (0, _invariant.default)(false, 'Unexpected input type: ' + (0, _inspect.default)(type));
 } // Returns true if the provided valueNode is a variable which is not defined
 // in the set of variables.
 
 
 function isMissingVariable(valueNode, variables) {
-  return valueNode.kind === _kinds.Kind.VARIABLE && (variables == null || variables[valueNode.name.value] === undefined);
+  return valueNode.kind === _kinds.Kind.VARIABLE && (!variables || (0, _isInvalid.default)(variables[valueNode.name.value]));
 }

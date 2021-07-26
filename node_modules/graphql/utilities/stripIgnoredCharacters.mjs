@@ -1,7 +1,8 @@
-import { Source, isSource } from "../language/source.mjs";
-import { TokenKind } from "../language/tokenKind.mjs";
-import { Lexer, isPunctuatorTokenKind } from "../language/lexer.mjs";
-import { dedentBlockStringValue, getBlockStringIndentation } from "../language/blockString.mjs";
+import inspect from '../jsutils/inspect';
+import { Source } from '../language/source';
+import { TokenKind } from '../language/tokenKind';
+import { createLexer, isPunctuatorToken } from '../language/lexer';
+import { dedentBlockStringValue, getBlockStringIndentation } from '../language/blockString';
 /**
  * Strips characters that are not significant to the validity or execution
  * of a GraphQL document:
@@ -56,9 +57,14 @@ import { dedentBlockStringValue, getBlockStringIndentation } from "../language/b
  */
 
 export function stripIgnoredCharacters(source) {
-  var sourceObj = isSource(source) ? source : new Source(source);
+  var sourceObj = typeof source === 'string' ? new Source(source) : source;
+
+  if (!(sourceObj instanceof Source)) {
+    throw new TypeError("Must provide string or Source. Received: ".concat(inspect(sourceObj)));
+  }
+
   var body = sourceObj.body;
-  var lexer = new Lexer(sourceObj);
+  var lexer = createLexer(sourceObj);
   var strippedBody = '';
   var wasLastAddedTokenNonPunctuator = false;
 
@@ -71,7 +77,7 @@ export function stripIgnoredCharacters(source) {
      * in invalid token (e.g. `1...` is invalid Float token).
      */
 
-    var isNonPunctuator = !isPunctuatorTokenKind(currentToken.kind);
+    var isNonPunctuator = !isPunctuatorToken(currentToken);
 
     if (wasLastAddedTokenNonPunctuator) {
       if (isNonPunctuator || currentToken.kind === TokenKind.SPREAD) {
@@ -97,8 +103,9 @@ function dedentBlockString(blockStr) {
   // skip leading and trailing triple quotations
   var rawStr = blockStr.slice(3, -3);
   var body = dedentBlockStringValue(rawStr);
+  var lines = body.split(/\r\n|[\n\r]/g);
 
-  if (getBlockStringIndentation(body) > 0) {
+  if (getBlockStringIndentation(lines) > 0) {
     body = '\n' + body;
   }
 

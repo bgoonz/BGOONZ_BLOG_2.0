@@ -5,13 +5,17 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.stripIgnoredCharacters = stripIgnoredCharacters;
 
-var _source = require("../language/source.js");
+var _inspect = _interopRequireDefault(require("../jsutils/inspect"));
 
-var _tokenKind = require("../language/tokenKind.js");
+var _source = require("../language/source");
 
-var _lexer = require("../language/lexer.js");
+var _tokenKind = require("../language/tokenKind");
 
-var _blockString = require("../language/blockString.js");
+var _lexer = require("../language/lexer");
+
+var _blockString = require("../language/blockString");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * Strips characters that are not significant to the validity or execution
@@ -66,9 +70,14 @@ var _blockString = require("../language/blockString.js");
  * """Type description""" type Foo{"""Field description""" bar:String}
  */
 function stripIgnoredCharacters(source) {
-  var sourceObj = (0, _source.isSource)(source) ? source : new _source.Source(source);
+  var sourceObj = typeof source === 'string' ? new _source.Source(source) : source;
+
+  if (!(sourceObj instanceof _source.Source)) {
+    throw new TypeError("Must provide string or Source. Received: ".concat((0, _inspect.default)(sourceObj)));
+  }
+
   var body = sourceObj.body;
-  var lexer = new _lexer.Lexer(sourceObj);
+  var lexer = (0, _lexer.createLexer)(sourceObj);
   var strippedBody = '';
   var wasLastAddedTokenNonPunctuator = false;
 
@@ -81,7 +90,7 @@ function stripIgnoredCharacters(source) {
      * in invalid token (e.g. `1...` is invalid Float token).
      */
 
-    var isNonPunctuator = !(0, _lexer.isPunctuatorTokenKind)(currentToken.kind);
+    var isNonPunctuator = !(0, _lexer.isPunctuatorToken)(currentToken);
 
     if (wasLastAddedTokenNonPunctuator) {
       if (isNonPunctuator || currentToken.kind === _tokenKind.TokenKind.SPREAD) {
@@ -107,8 +116,9 @@ function dedentBlockString(blockStr) {
   // skip leading and trailing triple quotations
   var rawStr = blockStr.slice(3, -3);
   var body = (0, _blockString.dedentBlockStringValue)(rawStr);
+  var lines = body.split(/\r\n|[\n\r]/g);
 
-  if ((0, _blockString.getBlockStringIndentation)(body) > 0) {
+  if ((0, _blockString.getBlockStringIndentation)(lines) > 0) {
     body = '\n' + body;
   }
 

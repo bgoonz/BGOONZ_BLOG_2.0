@@ -1,7 +1,8 @@
-import inspect from "../jsutils/inspect.mjs";
-import invariant from "../jsutils/invariant.mjs";
-import keyValMap from "../jsutils/keyValMap.mjs";
-import { Kind } from "../language/kinds.mjs";
+import inspect from '../jsutils/inspect';
+import invariant from '../jsutils/invariant';
+import keyValMap from '../jsutils/keyValMap';
+import isInvalid from '../jsutils/isInvalid';
+import { Kind } from '../language/kinds';
 
 /**
  * Produces a JavaScript value given a GraphQL Value AST.
@@ -48,9 +49,13 @@ export function valueFromASTUntyped(valueNode, variables) {
       });
 
     case Kind.VARIABLE:
-      return variables === null || variables === void 0 ? void 0 : variables[valueNode.name.value];
-  } // istanbul ignore next (Not reachable. All possible value nodes have been considered)
+      {
+        var variableName = valueNode.name.value;
+        return variables && !isInvalid(variables[variableName]) ? variables[variableName] : undefined;
+      }
+  } // Not reachable. All possible value nodes have been considered.
 
 
-  false || invariant(0, 'Unexpected value node: ' + inspect(valueNode));
+  /* istanbul ignore next */
+  invariant(false, 'Unexpected value node: ' + inspect(valueNode));
 }

@@ -1,11 +1,10 @@
 /**
  * Given a Path and a key, return a new Path containing the new key.
  */
-export function addPath(prev, key, typename) {
+export function addPath(prev, key) {
   return {
     prev: prev,
-    key: key,
-    typename: typename
+    key: key
   };
 }
 /**

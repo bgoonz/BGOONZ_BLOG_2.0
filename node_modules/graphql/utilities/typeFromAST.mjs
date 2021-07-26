@@ -1,7 +1,7 @@
-import inspect from "../jsutils/inspect.mjs";
-import invariant from "../jsutils/invariant.mjs";
-import { Kind } from "../language/kinds.mjs";
-import { GraphQLList, GraphQLNonNull } from "../type/definition.mjs";
+import inspect from '../jsutils/inspect';
+import invariant from '../jsutils/invariant';
+import { Kind } from '../language/kinds';
+import { GraphQLList, GraphQLNonNull } from '../type/definition';
 /**
  * Given a Schema and an AST node describing a type, return a GraphQLType
  * definition which applies to that type. For example, if provided the parsed
@@ -18,19 +18,20 @@ export function typeFromAST(schema, typeNode) {
 
   if (typeNode.kind === Kind.LIST_TYPE) {
     innerType = typeFromAST(schema, typeNode.type);
-    return innerType && new GraphQLList(innerType);
+    return innerType && GraphQLList(innerType);
   }
 
   if (typeNode.kind === Kind.NON_NULL_TYPE) {
     innerType = typeFromAST(schema, typeNode.type);
-    return innerType && new GraphQLNonNull(innerType);
-  } // istanbul ignore else (See: 'https://github.com/graphql/graphql-js/issues/2618')
+    return innerType && GraphQLNonNull(innerType);
+  }
 
-
+  /* istanbul ignore else */
   if (typeNode.kind === Kind.NAMED_TYPE) {
     return schema.getType(typeNode.name.value);
-  } // istanbul ignore next (Not reachable. All possible type nodes have been considered)
+  } // Not reachable. All possible type nodes have been considered.
 
 
-  false || invariant(0, 'Unexpected type node: ' + inspect(typeNode));
+  /* istanbul ignore next */
+  invariant(false, 'Unexpected type node: ' + inspect(typeNode));
 }

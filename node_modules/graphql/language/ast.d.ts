@@ -5,7 +5,7 @@ import { TokenKindEnum } from './tokenKind';
  * Contains a range of UTF-8 character offsets and token references that
  * identify the region of the source from which the AST derived.
  */
-export class Location {
+export interface Location {
   /**
    * The character offset at which this Node begins.
    */
@@ -30,17 +30,13 @@ export class Location {
    * The Source document the AST represents.
    */
   readonly source: Source;
-
-  constructor(startToken: Token, endToken: Token, source: Source);
-
-  toJSON(): { start: number; end: number };
 }
 
 /**
  * Represents a range of characters represented by a lexical token
  * within a Source.
  */
-export class Token {
+export interface Token {
   /**
    * The kind of Token.
    */
@@ -78,29 +74,7 @@ export class Token {
    */
   readonly prev: Token | null;
   readonly next: Token | null;
-
-  constructor(
-    kind: TokenKindEnum,
-    start: number,
-    end: number,
-    line: number,
-    column: number,
-    prev: Token | null,
-    value?: string,
-  );
-
-  toJSON(): {
-    kind: TokenKindEnum;
-    value: string | undefined;
-    line: number;
-    column: number;
-  };
 }
-
-/**
- * @internal
- */
-export function isNode(maybeNode: any): maybeNode is ASTNode;
 
 /**
  * The list of all possible AST node types.
@@ -414,7 +388,6 @@ export type TypeSystemDefinitionNode =
 export interface SchemaDefinitionNode {
   readonly kind: 'SchemaDefinition';
   readonly loc?: Location;
-  readonly description?: StringValueNode;
   readonly directives?: ReadonlyArray<DirectiveNode>;
   readonly operationTypes: ReadonlyArray<OperationTypeDefinitionNode>;
 }
@@ -479,7 +452,6 @@ export interface InterfaceTypeDefinitionNode {
   readonly loc?: Location;
   readonly description?: StringValueNode;
   readonly name: NameNode;
-  readonly interfaces?: ReadonlyArray<NamedTypeNode>;
   readonly directives?: ReadonlyArray<DirectiveNode>;
   readonly fields?: ReadonlyArray<FieldDefinitionNode>;
 }
@@ -535,12 +507,12 @@ export interface DirectiveDefinitionNode {
 
 export type TypeSystemExtensionNode = SchemaExtensionNode | TypeExtensionNode;
 
-export interface SchemaExtensionNode {
+export type SchemaExtensionNode = {
   readonly kind: 'SchemaExtension';
   readonly loc?: Location;
   readonly directives?: ReadonlyArray<DirectiveNode>;
   readonly operationTypes?: ReadonlyArray<OperationTypeDefinitionNode>;
-}
+};
 
 // Type Extensions
 
@@ -572,7 +544,6 @@ export interface InterfaceTypeExtensionNode {
   readonly kind: 'InterfaceTypeExtension';
   readonly loc?: Location;
   readonly name: NameNode;
-  readonly interfaces?: ReadonlyArray<NamedTypeNode>;
   readonly directives?: ReadonlyArray<DirectiveNode>;
   readonly fields?: ReadonlyArray<FieldDefinitionNode>;
 }
