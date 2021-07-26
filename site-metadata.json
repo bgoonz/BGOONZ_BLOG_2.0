@@ -122,7 +122,7 @@
                     },
                     {
                         "label": "Resource-Archive-Server",
-                        "url": "https://resourcerepo2.netlify.app/  https://github.com/bgoonz/Learning-Assets",
+                        "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
