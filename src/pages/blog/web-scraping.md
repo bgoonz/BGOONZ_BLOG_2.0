@@ -14,7 +14,7 @@ template: post
 thumb_image: images/web-development.gif
 image: images/api-c99e353f761d318322c853c03ebcf21b.gif
 ---
-## Lorem ipsum
+## 
 
 #  Web Scraping with Node.js
 
