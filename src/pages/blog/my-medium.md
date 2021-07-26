@@ -1,6 +1,5 @@
 ---
 title: Netlify CMS Intro
-excerpt: A list of my medium articles!
 date: '2021-05-23'
 image: images/medium.png
 seo:
