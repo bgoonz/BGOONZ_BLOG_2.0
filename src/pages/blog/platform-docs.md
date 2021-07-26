@@ -1,7 +1,7 @@
 ---
 title: Netlify CMS Intro
 date: '2021-05-23'
-image: images/medium.png
+image: images/curious-europa.gif
 seo:
   title: Platform Docs
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
@@ -16,7 +16,7 @@ seo:
       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
       keyName: property
     - name: 'og:image'
-      value: images/medium.png
+      value: images/curious-europa.gif
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -26,7 +26,7 @@ seo:
     - name: 'twitter:description'
       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     - name: 'twitter:image'
-      value: images/medium.png
+      value: images/curious-europa.gif
       relativeUrl: true
 template: post
 thumb_image: images/friendly-basil.png
