@@ -16,7 +16,7 @@ image: images/api-c99e353f761d318322c853c03ebcf21b.gif
 ---
 ## Lorem ipsum
 
-# The Ultimate Guide to Web Scraping with Node.js
+#  Web Scraping with Node.js
 
 > So what’s web scraping anyway? It involves automating away the laborious task of collecting information from websites. There are a lot of use cases for web scraping: you might want to collect prices from various e-commerce sites for a price comparison site. Or perhaps you need flight times and
 
