@@ -14,7 +14,7 @@
             {
                 "label": "Blog",
                 "url": "/blog/",
-                "style": "link",
+                "style": "secondary",
                 "has_subnav": true,
                 "subnav_links": [
                     {
