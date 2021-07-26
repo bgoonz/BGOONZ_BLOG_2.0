@@ -30,7 +30,7 @@ seo:
       value: images/medium.png
       relativeUrl: true
 template: post
-thumb_image: images/gif-4mb.gif
+thumb_image: images/fierce-aspen.png
 ---
 
 # Add to Your Site | Netlify CMS
