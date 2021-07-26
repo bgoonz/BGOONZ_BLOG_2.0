@@ -172,9 +172,3 @@ And there’s the list! At this point you should feel comfortable writing your f
 
 * * *
 
-* * *
-
-Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
-
-
-[Source](https://www.freecodecamp.org/news/the-ultimate-guide-to-web-scraping-with-node-js-daa2027dcd3/)
