@@ -229,7 +229,7 @@
             },
             {
                 "label": "Tools",
-                "url": "/docs/tools",
+                "url": "/docs/",
                 "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
