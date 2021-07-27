@@ -4,6 +4,7 @@
 
 <div align="center">
 
+![loading](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/loading.gif)    
 
 ### [WEBSITE](https://bgoonz-blog.netlify.app/)
 
