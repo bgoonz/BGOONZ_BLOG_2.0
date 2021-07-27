@@ -144,8 +144,9 @@ models:
         items:
           type: slug
     description: my documentation collection
-    match: '*.yml'
-    folder: /src/data/
+    match:
+      - '*.yml'
+    folder: /src/data/doc_sections
   docs:
     type: page
     urlPath: /docs/{slug}
@@ -668,24 +669,6 @@ models:
             - type: boolean
               name: relativeUrl
               label: Relative Url
-  htmlpage:
-    type: data
-    label: htmlpage
-    description: html content
-    folder: html
-    match:
-      - '*.html'
-    fields:
-      - name: iframe
-        type: url
-        description: iframe inclusions
-        required: true
-        label: Iframe
-      - name: description
-        type: string
-        label: description
-        description: describes html content
-        default: description
   docsections:
     type: object
     label: docsections
