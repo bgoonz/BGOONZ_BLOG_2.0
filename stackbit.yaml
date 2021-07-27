@@ -144,9 +144,8 @@ models:
         items:
           type: slug
     description: my documentation collection
-    match:
-      - '*.yml'
-    folder: /src/data/doc_sections
+    singleInstance: true
+    file: ''
   docs:
     type: page
     urlPath: /docs/{slug}
