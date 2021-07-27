@@ -10,6 +10,7 @@ seo:
   extra: []
   type: stackbit_page_meta
 template: post
+thumb_image: images/react.jpg
 ---
 ## Blog With Comments NextJS
 
