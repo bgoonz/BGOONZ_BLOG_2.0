@@ -4,14 +4,15 @@ subtitle: lorem-ipsum
 date: '2021-07-26'
 thumb_image_alt: Learn More
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: post
 thumb_image: images/react.jpg
 ---
+
 ## TS For JS Developers:
 
 <iframe loading="lazy" class="block-content"  style="zoom:0.75;" width="500" height="575"

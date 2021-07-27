@@ -10,8 +10,9 @@
         "serve": "gatsby serve",
         "pretty": "prettier --write \"./**/*.{jsx,html,css}\""
     },
-     "engines" :
-         { "node" : ">=0.14" } ,
+    "engines": {
+        "node": ">=0.14"
+    },
     "dependencies": {
         "@stackbit/gatsby-plugin-menus": "0.0.4",
         "babel-runtime": "6.26.0",
