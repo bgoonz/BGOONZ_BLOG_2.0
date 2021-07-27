@@ -30,7 +30,7 @@ These kinds of databases are relational because a *relation* is a mathematical
 
 ### **Tables**
 
-![WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%20841c03ac9d3b4c928f379f49371e60bd/Untitled.png](WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%20841c03ac9d3b4c928f379f49371e60bd/Untitled.png)
+!WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%20841c03ac9d3b4c928f379f49371e60bd/Untitled.png](WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%20841c03ac9d3b4c928f379f49371e60bd/Untitled.png)
 
 **Below are some basic facts about tables:**
 
