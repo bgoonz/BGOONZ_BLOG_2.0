@@ -145,6 +145,7 @@ models:
           type: slug
     description: my documentation collection
     match: '*.yml'
+    folder: /src/data/
   docs:
     type: page
     urlPath: /docs/{slug}
