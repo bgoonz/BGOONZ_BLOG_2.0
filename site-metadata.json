@@ -454,7 +454,7 @@
             {
                 "label": "reddit",
                 "url": "https://www.reddit.com/user/SignalCountry5613",
-                "style": "link",
+                "style": "icon",
                 "icon_class": "reddit",
                 "new_window": false,
                 "no_follow": false,
