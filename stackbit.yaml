@@ -686,3 +686,6 @@ models:
         label: description
         description: describes html content
         default: description
+  docsections:
+    type: object
+    label: docsections
