@@ -12,7 +12,9 @@ seo:
 template: post
 thumb_image: images/react.jpg
 ---
-## Blog With Comments NextJS
+## TS For JS Developers:
+
+
 
 <iframe class="block-content"  style="zoom:0.75;" width="800" height="575"
            src="https://blog-w-comments.vercel.app/" title="YouTube video
