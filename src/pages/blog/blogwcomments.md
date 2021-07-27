@@ -2,7 +2,7 @@
 title: Typescript For Js Developers
 subtitle: lorem-ipsum
 date: '2021-07-26'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt: Learn More
 seo:
   title: ''
   description: ''
