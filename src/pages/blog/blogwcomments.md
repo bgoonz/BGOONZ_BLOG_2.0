@@ -14,9 +14,7 @@ thumb_image: images/react.jpg
 ---
 ## TS For JS Developers:
 
-
-
-<iframe class="block-content"  style="zoom:0.75;" width="800" height="575"
+<iframe loading="lazy" class="block-content"  style="zoom:0.75;" width="600" height="575"
            src="https://blog-w-comments.vercel.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
