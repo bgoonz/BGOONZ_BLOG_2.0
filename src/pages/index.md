@@ -50,7 +50,7 @@ sections:
                 maybe... just maybe, hold myself accountable to them.
             actions:
                 - label: Learn More
-                  url: /notes-template
+                  url: /docs/tools
                   style: link
             title: Guitar Effects Triggering w DTW
             title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
@@ -235,7 +235,7 @@ sections:
       image_position: left
       content: |-
           <iframe  class="inner" style="zoom:0.75;" width="800" height="575"
-           src="https://embedable-content.netlify.app/" title="YouTube video
+           src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       actions: []
