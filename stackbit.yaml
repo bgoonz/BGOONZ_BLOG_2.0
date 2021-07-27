@@ -144,7 +144,7 @@ models:
         items:
           type: slug
     description: my documentation collection
-    match: '*.yaml'
+    match: '*.yml'
   docs:
     type: page
     urlPath: /docs/{slug}
