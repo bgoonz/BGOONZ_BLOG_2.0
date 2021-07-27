@@ -1,7 +1,7 @@
 ---
 title: Introduction to npm
 weight: 0
-excerpt: lorem-ipsum
+excerpt: is the standard package manager for Node.js
 seo:
   title: ''
   description: ''
