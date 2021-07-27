@@ -7,7 +7,7 @@ seo:
     robots: []
     extra: []
     type: stackbit_page_meta
-template: advanced
+template: post
 ---
 
 <div align="center">
