@@ -1,8 +1,8 @@
 ---
-title: Web Scraping With Node
+title: Webscraping w nodejs
 subtitle: 
 date: '2021-07-26'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt:  Webscraping w nodejs
 excerpt: There are a lot of use cases for web scraping
   title: 'Web Scraping With Node.js'
   description: ''
