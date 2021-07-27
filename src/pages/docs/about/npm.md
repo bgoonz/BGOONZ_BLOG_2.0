@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Introduction to npm
 weight: 0
 excerpt: lorem-ipsum
 seo:
