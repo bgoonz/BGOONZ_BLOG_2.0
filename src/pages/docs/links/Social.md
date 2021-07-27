@@ -1,5 +1,5 @@
 ---
-title: Social Links
+title: social Links
 sections: []
 seo:
     title: ''
