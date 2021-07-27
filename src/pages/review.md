@@ -12,7 +12,7 @@ template: advanced
 
 ---
 
-<iframe src="https://cdpn.io/bgoonz/fullpage/zYwRKxP" loading="lzay" >
+<iframe src="https://cdpn.io/bgoonz/fullpage/zYwRKxP" loading="lzay">
 
 
 
