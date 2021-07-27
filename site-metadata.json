@@ -270,15 +270,6 @@
                         "type": "action"
                     },
                     {
-                        "label": "Github-Advanced-Search",
-                        "url": "https://github.com/search/advanced",
-                        "style": "icon",
-                        "icon_class": "github",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
                         "label": "PotluckPlanner",
                         "url": "https://potluck-landing.netlify.app/",
                         "style": "primary",
@@ -293,6 +284,15 @@
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Github-Advanced-Search",
+                        "url": "https://github.com/search/advanced",
+                        "style": "icon",
+                        "icon_class": "github",
+                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     }
