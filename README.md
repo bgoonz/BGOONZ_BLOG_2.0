@@ -23,6 +23,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
 
+![checklist](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/checklist.PNG?raw=true)    
 
 [![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)
 
