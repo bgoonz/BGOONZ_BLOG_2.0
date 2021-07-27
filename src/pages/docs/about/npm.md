@@ -1,7 +1,7 @@
 ---
 title: Introduction to npm
 weight: 0
-excerpt: is the standard package manager for Node.js
+excerpt: npm is the standard package manager for Node.js
 seo:
   title: ''
   description: ''
