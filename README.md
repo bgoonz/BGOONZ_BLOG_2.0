@@ -262,5 +262,5 @@ These dependencies are defined in **BGOONZ_BLOG_2.0**’s manifest files, such a
 ![testing2](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-webpagetest-org-result-210727-AiDc19-c38ddbe8beac9afc98e69b3afe074178-1-breakdown-2021-07-27-11_04_25%20(1).png)
     
     
+![vitals](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-webpagetest-org-vitals-php-2021-07-27-11_29_39.png)    
     
-![testing3](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-webpagetest-org-result-210727-AiDc19-c38ddbe8beac9afc98e69b3afe074178-1-breakdown-2021-07-27-11_04_25.png)    
