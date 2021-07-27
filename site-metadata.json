@@ -216,7 +216,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "AudioLab",
+                        "label": "WebAudioLab",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
