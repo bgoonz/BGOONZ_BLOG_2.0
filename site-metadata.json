@@ -216,7 +216,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "MihirBegMusicLab",
+                        "label": "AudioLab",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
