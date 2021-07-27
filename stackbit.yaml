@@ -145,7 +145,7 @@ models:
           type: slug
     description: my documentation collection
     singleInstance: true
-    file: ''
+    file: /data/doc_sections
   docs:
     type: page
     urlPath: /docs/{slug}
