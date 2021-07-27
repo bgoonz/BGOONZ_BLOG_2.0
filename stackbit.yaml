@@ -145,6 +145,7 @@ models:
           type: slug
     description: my documentation collection
     singleInstance: true
+    file: /src/data/doc_sections.yml
   docs:
     type: page
     urlPath: /docs/{slug}
