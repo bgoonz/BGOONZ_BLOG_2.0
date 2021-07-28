@@ -3,13 +3,14 @@ title: Introduction to npm
 weight: 0
 excerpt: npm is the standard package manager for nodejs
 seo:
-    title: 'npm'
-    description: 'npm is the standard package manager for nodejs'
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: 'npm'
+  description: 'npm is the standard package manager for nodejs'
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
+
 
 ## Introduction to npm
 

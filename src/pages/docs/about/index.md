@@ -430,7 +430,7 @@ Creating things that change my every day life.
 
 ## ➤ Codepens (mostly embeded animations)
 
-# [code-pens-embedded](https://random-list-of-embedable-content.vercel.app/)
+# [code-pens-embedded](https://embedable-content.netlify.app/)
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#weekly-quick-snips)
 
