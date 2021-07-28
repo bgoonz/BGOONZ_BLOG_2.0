@@ -1,6 +1,6 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 98%;
+    width: 95%;
 }
 .post-content {
     width:1400px;
@@ -81,9 +81,9 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 0.5em 0;
-            width: 1600px;
-            zoom: 0.78;
+            padding:0.3em;
+            width: 70vw;
+ 
         }
 
         .post-title {
@@ -93,7 +93,9 @@
         }
 
         .post-content {
-            padding: 0.875em;
+            padding: 0.975em;
+            word-wrap: break-word;
+
         }
     }
 }
@@ -111,7 +113,7 @@
     .docs-section-item {
         -ms-flex: 1 1 240px;
         flex: 1 1 240px;
-        // margin: 0 0.3125em 0.9375em;
+         margin: 0 0.3125em 0.9375em;
     }
 
     .docs-item-link {
@@ -142,7 +144,7 @@
         margin: 0;
         padding-right: 15px;
         text-align: left;
-        width: 90%;
+   
     }
 
     .docs-submenu-toggle {
@@ -158,7 +160,7 @@
     font-weight: bold;
     line-height: 1.5;
     list-style: none;
-    margin: 0.3em;
+    margin: 0.5em;
     padding: 0;
 
     & > .docs-menu-item > a {
@@ -217,6 +219,7 @@
 
 #page-nav {
     display: none;
+  text-overflow: wrap;
 
     .page-nav-title {
         font-size: 1em;
@@ -266,8 +269,8 @@
         &.type-docs {
             .post-title,
             .post-content {
-                padding-left: 2%;
-                padding-right: 2%;
+                padding-left: 7%;
+                padding-right: 7%;
             }
         }
     }
@@ -289,7 +292,6 @@ align-content: center;
     .docs-nav,
     .page-nav {
         -ms-flex-negative: 0;
-        flex-shrink: 0;
         margin-bottom: 5.625em;
 
         .sticky {
@@ -305,7 +307,7 @@ align-content: center;
 
     #page-nav {
         font-size: 12px;
-        margin: 5em;
+        margin: 3em;
     }
 
     #docs-nav-toggle {
