@@ -14,8 +14,6 @@
         "node": ">=0.14"
     },
     "dependencies": {
-        "@mdx-js/mdx": "^1.6.22",
-        "@mdx-js/react": "^1.6.22",
         "@stackbit/gatsby-plugin-menus": "0.0.4",
         "babel-runtime": "6.26.0",
         "chokidar": "3.4.0",
@@ -24,7 +22,6 @@
         "gatsby": "2.32.8",
         "gatsby-plugin-dark-mode": "^1.1.2",
         "gatsby-plugin-google-tagmanager": "^3.7.1",
-        "gatsby-plugin-mdx": "^2.10.1",
         "gatsby-plugin-react-helmet": "3.3.3",
         "gatsby-plugin-sass": "2.8.0",
         "gatsby-plugin-sitemap": "^4.3.1",
@@ -34,7 +31,8 @@
         "gatsby-transformer-remark": "2.8.14",
         "js-yaml": "3.14.1",
         "lodash": "4.17.21",
-              "moment": "2.23.0",
+        "marked": "^0.6.1",
+        "moment": "2.23.0",
         "moment-strftime": "0.5.0",
         "node-sass": "4.14.0",
         "node-sass-utils": "1.1.2",

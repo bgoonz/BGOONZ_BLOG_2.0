@@ -104,7 +104,7 @@ sections:
       image_alt: bryan-guner
       image_position: left
       content: >-
-          <iframe  style="zoom:0.75;" width="560" height="415"
+          <iframe  class="block block-grid outer"   style="zoom:0.75;" width="560" height="415"
           src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
           player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -121,7 +121,7 @@ sections:
       image_alt: listen to my playlist
       image_position: left
       content: >
-          <iframe  style="zoom:0.75;"
+          <iframe  class="block block-grid outer"   style="zoom:0.75;"
           src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
           width="100%" height="380" frameBorder="0" allowtransparency="true"
           allow="encrypted-media"></iframe>
@@ -205,7 +205,7 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |
-          <iframe  style="zoom:0.75;" width="800" height="575"
+          <iframe  class="block block-grid outer"   style="zoom:0.75;" width="800" height="575"
            src="https://iframeshowcase.netlify.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -223,7 +223,7 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |-
-          <iframe  class="inner" style="zoom:0.75;" width="800" height="575"
+          <iframe  class="block block-grid outer"   class="inner" style="zoom:0.75;" width="800" height="575"
             src="https://code-playground.netlify.app/index.html" title="YouTube video
             player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -234,7 +234,7 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |-
-          <iframe  class="inner" style="zoom:0.75;" width="800" height="575"
+          <iframe  class="block block-grid outer"   class="inner" style="zoom:0.75;" width="800" height="575"
            src="https://embedable-content.netlify.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -245,7 +245,7 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |-
-          <iframe class="block-content" style="zoom:0.75;" width="800" height="575"
+          <iframe  class="block block-grid outer"  class="block-content" style="zoom:0.75;" width="800" height="575"
             src="https://bgoonz.blogspot.com/" title="YouTube video
             player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -256,7 +256,7 @@ sections:
       image_alt: blog
       image_position: left
       content: |-
-          <iframe class="block-content"  style="zoom:0.75;" width="800" height="575"
+          <iframe  class="block block-grid outer"  class="block-content"  style="zoom:0.75;" width="800" height="575"
            src="https://blog-w-comments.vercel.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -266,7 +266,7 @@ sections:
       section_id: lorem-ipsum
       actions:
           - label: Contact
-            url: 'mailto:bryan.guner@gmail.com'
+            url: '/docs/faq/contact'
             style: primary
             icon_class: dev
             new_window: false

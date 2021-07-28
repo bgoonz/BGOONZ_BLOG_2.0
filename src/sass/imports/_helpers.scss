@@ -3,7 +3,7 @@
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
   height: 1px;
-  overflow: hidden;
+  overflow:auto;
   position: absolute !important;
   width: 1px;
   word-wrap: normal !important;
@@ -109,7 +109,7 @@
 // Background image
 .bg-img {
   -webkit-animation: fadeIn20 .75s ease-in-out;
-  animation: fadeIn20 .75s ease-in-out;
+  animation: fadeIn20 .55s ease-in-out;
   background-position: center;
   background-size: cover;
   bottom: 0;
@@ -175,12 +175,12 @@
 
 @media only screen and (max-width: 600px) {
   .grid {
-    margin-left: -$container-padding / 2;
-    margin-right: -$container-padding / 2;
+    margin-left: -$container-padding / 3;
+    margin-right: -$container-padding /3;
   }
 
   .grid-item {
-    padding-left: $container-padding / 2;
-    padding-right: $container-padding / 2;
+    padding-left: $container-padding / 3;
+    padding-right: $container-padding /3;
   }
 }

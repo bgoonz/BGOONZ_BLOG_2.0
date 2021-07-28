@@ -1,8 +1,10 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 70em;
+    width: 98%;
 }
-
+.post-content {
+    width:1400px;
+}
 .post {
     &.type-docs {
         margin-bottom: 3.625em;
@@ -81,7 +83,7 @@
             box-shadow: $box-shadow;
             padding: 0.5em 0;
             width: 1600px;
-            zoom: 0.68;
+            zoom: 0.78;
         }
 
         .post-title {
@@ -259,13 +261,13 @@
     }
 }
 
-@media only screen and (min-width: 941px) {
+@media only screen and (min-width: 1200px) {
     .post {
         &.type-docs {
             .post-title,
             .post-content {
-                padding-left: 7%;
-                padding-right: 7%;
+                padding-left: 2%;
+                padding-right: 2%;
             }
         }
     }
@@ -276,13 +278,12 @@
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
-        width: 1600px;
+        width: 1400px;
     }
 
     .post.type-docs {
         -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-        overflow: hidden;
+align-content: center;
     }
 
     .docs-nav,
