@@ -12,10 +12,6 @@ template: advanced
 
 ---
 
-<iframe src="https://cdpn.io/bgoonz/fullpage/zYwRKxP" loading="lzay">
-
-
-
 ## description: Review
 
 # Review-Of-Previous-Concepts

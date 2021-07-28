@@ -1,14 +1,5 @@
-
-
-const queries = require('./src/utils/algolia');
-require('dotenv').config();
-
-
-
-
-
-
-
+node_modules/ 
+.cache/
 
 
 
