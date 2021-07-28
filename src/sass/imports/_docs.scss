@@ -1,11 +1,11 @@
 .docs-content {
     padding-top: 2.5em;
+    width: 70em;
 }
 
 .post {
     &.type-docs {
-        margin-bottom: 5.625em;
-        max-width: $container-md;
+        margin-bottom: 3.625em;
 
         h1 {
             font-size: 1.875em;
@@ -79,7 +79,9 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 2.5em 0;
+            padding: 0.5em 0;
+            width: 1600px;
+            zoom: 0.68;
         }
 
         .post-title {
@@ -89,7 +91,7 @@
         }
 
         .post-content {
-            padding: 0 1.875em;
+            padding: 0.875em;
         }
     }
 }
@@ -107,7 +109,7 @@
     .docs-section-item {
         -ms-flex: 1 1 240px;
         flex: 1 1 240px;
-        margin: 0 0.3125em 0.9375em;
+        // margin: 0 0.3125em 0.9375em;
     }
 
     .docs-item-link {
@@ -136,9 +138,9 @@
         color: $gray-700;
         font-size: 1.125em;
         margin: 0;
-        padding-right: 30px;
+        padding-right: 15px;
         text-align: left;
-        width: 100%;
+        width: 90%;
     }
 
     .docs-submenu-toggle {
@@ -154,7 +156,7 @@
     font-weight: bold;
     line-height: 1.5;
     list-style: none;
-    margin: 0;
+    margin: 0.3em;
     padding: 0;
 
     & > .docs-menu-item > a {
@@ -185,7 +187,7 @@
     font-weight: normal;
     list-style: none;
     margin-top: 0.625rem;
-    padding-left: 1.25rem;
+    padding-left: 1rem;
 }
 
 .docs-menu-item {
@@ -250,16 +252,14 @@
         }
     }
 
-    .page-nav-inside {
-        display: none;
-
-        &.has-links {
-            display: block;
+    .page-nav-title {
+        &:only-child {
+            display: none;
         }
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 941px) {
     .post {
         &.type-docs {
             .post-title,
@@ -271,11 +271,12 @@
     }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1200px) {
     .docs-content {
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
+        width: 1600px;
     }
 
     .post.type-docs {
@@ -298,13 +299,12 @@
     }
 
     .docs-nav {
-        padding-right: 1.5em;
-        width: 12.5em;
+        width: 8.5em;
     }
 
     #page-nav {
-        padding-left: 1.5em;
-        width: 9.5em;
+        font-size: 12px;
+        margin: 5em;
     }
 
     #docs-nav-toggle {
