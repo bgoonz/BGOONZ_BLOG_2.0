@@ -2,31 +2,31 @@
 date: '2021-06-03'
 image: images/best-zebra.gif
 seo:
-    title: Python Practice
-    description: Commodo ante vis placerat interdum massa massa primis
-    extra:
-        - name: 'og:type'
-          value: article
-          keyName: property
-        - name: 'og:title'
-          value: Python Practice
-          keyName: property
-        - name: 'og:description'
-          value: Commodo ante vis placerat interdum massa massa primis
-          keyName: property
-        - name: 'og:image'
-          value: images/2.jpg
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:card'
-          value: summary_large_image
-        - name: 'twitter:title'
-          value: Python Practice
-        - name: 'twitter:description'
-          value: Commodo ante vis placerat interdum massa massa primis
-        - name: 'twitter:image'
-          value: images/2.jpg
-          relativeUrl: true
+  title: Python Practice
+  description: Commodo ante vis placerat interdum massa massa primis
+  extra:
+    - name: 'og:type'
+      value: article
+      keyName: property
+    - name: 'og:title'
+      value: Python Practice
+      keyName: property
+    - name: 'og:description'
+      value: Commodo ante vis placerat interdum massa massa primis
+      keyName: property
+    - name: 'og:image'
+      value: images/2.jpg
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Python Practice
+    - name: 'twitter:description'
+      value: Commodo ante vis placerat interdum massa massa primis
+    - name: 'twitter:image'
+      value: images/2.jpg
+      relativeUrl: true
 template: post
 title: Python Resources
 thumb_image: images/superb-amaranth.png
