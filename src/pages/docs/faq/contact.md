@@ -18,4 +18,4 @@ template: docs
 
 ### Calendar:
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=America%2FNew_York" style="border-width:0" width="1200" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=America%2FNew_York" style="border-width:0" width="1200" height="600" frameborder="0" scrolling="yes"></iframe>

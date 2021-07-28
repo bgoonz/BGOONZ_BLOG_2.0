@@ -266,7 +266,7 @@ sections:
       section_id: lorem-ipsum
       actions:
           - label: Contact
-            url: 'mailto:bryan.guner@gmail.com'
+            url: '/docs/faq/contact'
             style: primary
             icon_class: dev
             new_window: false
