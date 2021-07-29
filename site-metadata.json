@@ -190,7 +190,7 @@
             },
             {
                 "label": "Audio",
-                "url": "#",
+                "url": "/docs/audio",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
