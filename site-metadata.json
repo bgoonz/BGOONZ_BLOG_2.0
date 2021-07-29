@@ -159,7 +159,7 @@
                     },
                     {
                         "label": "Gallery",
-                        "url": "/gallery",
+                        "url": "/docs/gallery",
                         "style": "secondary",
                         "icon_class": "dev",
                         "new_window": false,
