@@ -2,7 +2,7 @@
 subtitle: Here are some of my github repositories to pay around with!
 seo:
     title: ''
-    description: 'resources repository Here are some of my github repositories to pay around with'
+    description: ''
     robots: []
     extra: []
     type: stackbit_page_meta

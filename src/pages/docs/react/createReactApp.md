@@ -3,7 +3,7 @@ title: npx-create-react-app
 weight: 1
 seo:
     title: npx-create-react-app
-    description: This is the npx-create-react-app page Babel can translate between different versions of javascript so that your code can run on browsers that are limited to ES5 compatibility... included by default with every new react project
+    description: This is the npx-create-react-app page
     extra:
         - name: 'og:type'
           value: website
