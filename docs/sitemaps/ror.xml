@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://bgoonz-blog.netlify.app/</title>
+  <link>https://bgoonz-blog.netlify.app/</link>
+
+<item>
+     <link>https://bgoonz-blog.netlify.app/</link>
+     <title></title>
+     <description>my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/</link>
+     <title></title>
+     <description>This is the blog page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/platform-docs/</link>
+     <title></title>
+     <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/sitemap/</link>
+     <title></title>
+     <description>Navigation Home</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/</link>
+     <title></title>
+     <description>Docs Home</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/showcase/</link>
+     <title></title>
+     <description>This is the showcase page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/faq/contact/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/</link>
+     <title></title>
+     <description>This is the tools page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/blogwcomments/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/blog-archive/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/web-scraping/</link>
+     <title></title>
+     <description>There are a lot of use cases for web scraping</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/data-structures/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/python-for-js-dev/</link>
+     <title></title>
+     <description>Commodo ante vis placerat interdum massa massa primis</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/python-resources/</link>
+     <title></title>
+     <description>Commodo ante vis placerat interdum massa massa primis</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/my-medium/</link>
+     <title></title>
+     <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/</link>
+     <title></title>
+     <description>This is the About page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/npm/</link>
+     <title></title>
+     <description>npm is the standard package manager for nodejs</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/resume/</link>
+     <title></title>
+     <description>This is the Resume page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/me/</link>
+     <title></title>
+     <description>This is the About Me page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/node/nodejs/</link>
+     <title></title>
+     <description>This is the Javascript and Node page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/node/intro/</link>
+     <title></title>
+     <description>This is the Intro To Node page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/node/install/</link>
+     <title></title>
+     <description>This is the Install page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/node/reading-files/</link>
+     <title></title>
+     <description>This is the Reading files page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/node/nodevsbrowser/</link>
+     <title></title>
+     <description>This is the Node vs Browser page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/node/writing-files/</link>
+     <title></title>
+     <description>This is the Writing Files page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/resources/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/ten-jamstack-apis-to-checkout/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/python/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/</link>
+     <title></title>
+     <description>Review-Of-Previous-Concepts</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/algo/</link>
+     <title></title>
+     <description>A reference for suggested typographic treatment and styles for your content</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/install/</link>
+     <title></title>
+     <description>This is the Install page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/reading-files/</link>
+     <title></title>
+     <description>This is the Reading files page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/writing-files/</link>
+     <title></title>
+     <description>This is the Writing Files page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/intro/</link>
+     <title></title>
+     <description>This is the Intro To Node page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/article-compilation/</link>
+     <title>This is the title</title>
+     <description>A reference for suggested typographic treatment and styles for your content</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/faq/</link>
+     <title></title>
+     <description>This is the faqpage</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/clock/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/links/</link>
+     <title></title>
+     <description>This is the community page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/links/my-websites/</link>
+     <title></title>
+     <description>This is the My Sites page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/links/social/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/links/medium-links/</link>
+     <title></title>
+     <description>This is the community page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/</link>
+     <title></title>
+     <description>This is the Cheat Sheets page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/installation/</link>
+     <title></title>
+     <description>This is the installation page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/</link>
+     <title></title>
+     <description>This is the new-repo-git page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/docs/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/emmet/</link>
+     <title></title>
+     <description>This is the Emmet Cheat Sheet page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/react/</link>
+     <title></title>
+     <description>This is the React page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/react/react2/</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/react/createreactapp/</link>
+     <title></title>
+     <description>This is the npx-create-react-app page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/plug-ins/</link>
+     <title></title>
+     <description>This is the Gatsby Plugins For This Sites Content Model page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/vscode/</link>
+     <title></title>
+     <description>This is the vscode page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/notes-template/</link>
+     <title></title>
+     <description>A reference for suggested typographic treatment and styles for your content</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/notes-template/</link>
+     <title></title>
+     <description>A reference for suggested typographic treatment and styles for your content</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
