@@ -11,7 +11,7 @@ export default class DocsMenu extends React.Component {
         let root_docs_path = _.get(site, 'data.doc_sections.root_docs_path', null);
         let root_page = getPage(this.props.pageContext.pages, root_docs_path);
         return (
-            <nav id="docs-nav" className="docs-nav" >
+            <nav id="docs-nav" className="docs-nav">
                 <div id="docs-nav-inside" className="docs-nav-inside sticky">
                     <button id="docs-nav-toggle" className="docs-nav-toggle">
                         Navigate Docs

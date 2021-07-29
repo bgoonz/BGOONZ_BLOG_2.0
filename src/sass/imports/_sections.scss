@@ -2,7 +2,7 @@
     padding-top: 3.75em;
 
     &:not(.block-hero) {
-        background: $gray-100;
+        background: white;
     }
 
     &:last-child {
@@ -19,6 +19,7 @@
 }
 
 .block-title {
+    align-self: center;
     margin: 0;
 }
 
@@ -108,7 +109,7 @@
             &:not(:only-child) {
                 -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
-                max-width: 80%;
+                max-width: 90%;
             }
         }
     }
