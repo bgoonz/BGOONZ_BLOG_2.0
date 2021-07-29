@@ -6,26 +6,26 @@ import ActionLink from './ActionLink';
 import Submenu from './Submenu';
 // import Github-corner from './experimental/Github-corner';
 
-const fetchJsFromCDN = (src, externals = []) => {
-    new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.setAttribute('src', src)
-      script.setAttribute('crossorigin', crossorigin)
-      script.addEventListener('load', () => {
-        resolve(externals.map(key => {
-          const ext = window[key]
-          typeof ext === 'undefined' && console.warn(`No external named '${key}' in window`)
-          return ext
-        }))
-      })
-      script.addEventListener('error', reject)
-      document.body.appendChild(script)
-    })
-  }
+// const fetchJsFromCDN = (src, externals = []) => {
+//     new Promise((resolve, reject) => {
+//       const script = document.createElement('script')
+//       script.setAttribute('src', src)
+//       script.setAttribute('crossorigin', crossorigin)
+//       script.addEventListener('load', () => {
+//         resolve(externals.map(key => {
+//           const ext = window[key]
+//           typeof ext === 'undefined' && console.warn(`No external named '${key}' in window`)
+//           return ext
+//         }))
+//       })
+//       script.addEventListener('error', reject)
+//       document.body.appendChild(script)
+//     })
+//   }
   
-  fetchJsFromCDN(`https://cse.google.com/cse.js?cx=b9b42c05e18ccf4ab`, ['eruda']).then(([eruda]) => {
-      return eruda.init();
-  })
+//   fetchJsFromCDN(`https://cse.google.com/cse.js?cx=b9b42c05e18ccf4ab`, ['eruda']).then(([eruda]) => {
+//       return eruda.init();
+//   })
 export default class Header extends React.Component {
     render() {
         return (
@@ -50,7 +50,8 @@ export default class Header extends React.Component {
                                 </p>
                             )}
                         </div>
-                         <div className="gcse-search" />
+                        <script async src="https://cse.google.com/cse.js?cx=b9b42c05e18ccf4ab"></script>
+<div class="gcse-search"></div>
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
