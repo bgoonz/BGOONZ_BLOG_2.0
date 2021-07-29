@@ -25,7 +25,7 @@ excerpt: docs quick reference
 ---
 
 
-# Go To Sitemap: [Go Now -->]()
+# Go To Sitemap: [Go Now -->](https://bgoonz-blog.netlify.app/docs/sitemap/)
 
 
 ## Doc Websites & Repos
