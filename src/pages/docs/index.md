@@ -2,8 +2,9 @@
 title: Docs
 seo:
   title: Web Dev Hub
-  description: |
-    Docs Home
+  description: >
+    Docs Home Doc Websites & Repos Preferconst gand let over Arrow functions
+    Modules Objectassignl) Template literals The spread operator 
   extra:
     - name: 'og:type'
       value: website
