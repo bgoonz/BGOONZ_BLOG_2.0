@@ -4,7 +4,7 @@ weight: 0
 excerpt: lorem-ipsum
 seo:
   title: ''
-  description: 'Connect 4 Chess Would You Rather Rock Paper Scissors '
+  description: 'Connect 4 Chess Would You Rather Rock Paper Scissors'
   robots: []
   extra: []
   type: stackbit_page_meta
