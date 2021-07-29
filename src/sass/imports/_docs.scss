@@ -3,7 +3,7 @@
     width: 95%;
 }
 .post-content {
-    width:1400px;
+    width: 85%;
 }
 .post {
     &.type-docs {
@@ -40,7 +40,7 @@
             text-align: center;
             text-decoration: none;
             -webkit-transition: opacity 0.2s;
-            transition: opacity 0.2s;
+            transition: opacity 0.4s;
             width: 1em;
 
             &:before {
@@ -81,9 +81,8 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding:0.3em;
+            padding: 0.3em;
             width: 70vw;
- 
         }
 
         .post-title {
@@ -93,9 +92,8 @@
         }
 
         .post-content {
-            padding: 0.975em;
+            padding: 0.775em;
             word-wrap: break-word;
-
         }
     }
 }
@@ -113,7 +111,7 @@
     .docs-section-item {
         -ms-flex: 1 1 240px;
         flex: 1 1 240px;
-         margin: 0 0.3125em 0.9375em;
+        margin: 0 0.3125em 0.9375em;
     }
 
     .docs-item-link {
@@ -144,7 +142,6 @@
         margin: 0;
         padding-right: 15px;
         text-align: left;
-   
     }
 
     .docs-submenu-toggle {
@@ -218,8 +215,7 @@
 }
 
 #page-nav {
-    display: none;
-  text-overflow: wrap;
+    text-overflow: wrap;
 
     .page-nav-title {
         font-size: 1em;
@@ -269,7 +265,7 @@
         &.type-docs {
             .post-title,
             .post-content {
-                padding-left: 7%;
+                padding-left: 8%;
                 padding-right: 7%;
             }
         }
@@ -281,12 +277,12 @@
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
-        width: 1400px;
+        width: 100%;
     }
 
     .post.type-docs {
         -ms-flex: 1 1 auto;
-align-content: center;
+        align-content: center;
     }
 
     .docs-nav,
@@ -307,7 +303,7 @@ align-content: center;
 
     #page-nav {
         font-size: 12px;
-        margin: 3em;
+        margin: 4em;
     }
 
     #docs-nav-toggle {
@@ -329,7 +325,7 @@ align-content: center;
         box-shadow: $box-shadow;
         box-sizing: border-box;
         margin-bottom: 5%;
-        padding: 0.75em 1em;
+        padding: 1em 1em;
     }
 
     .docs-nav-menu {

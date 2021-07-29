@@ -5,6 +5,8 @@ import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
 // import Github-corner from './experimental/Github-corner';
+
+
 export default class Header extends React.Component {
     render() {
         return (
@@ -22,13 +24,14 @@ export default class Header extends React.Component {
                                     </Link>
                                 </p>
                             ) : (
-                                <p className="site-title">
+                                <p className="site-title"> WebDevHub
                                     <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
                                         {_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}
                                     </Link>
                                 </p>
                             )}
                         </div>
+                         <div className="gcse-search" />
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">

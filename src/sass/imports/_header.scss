@@ -1,6 +1,6 @@
 .site-header {
-    background:black;
-    background-image:url('https://i.imgur.com/L4BIbgl.mp4');
+    background: black;
+    background-image: url('https://i.imgur.com/L4BIbgl.mp4');
     padding-bottom: 0.2em;
     padding-top: 0.2em;
 }
@@ -106,8 +106,9 @@
             padding-top: 0.5em;
 
             &.button:not(.button-icon) {
-                padding-left: 1.25em;
-                padding-right: 1.25em;
+                padding-left: 0.55em;
+                padding-right: 0.35em;
+                word-break: wrap;
             }
         }
 
@@ -119,7 +120,7 @@
                 background: 0;
                 border-color: currentColor;
                 border-style: solid;
-                border-width: 1px 1px 0 0;
+                border-width: 3px 1px 0 0;
                 box-sizing: border-box;
                 content: '';
                 height: 6px;
@@ -135,7 +136,7 @@
                 padding-right: 2.25em;
 
                 &:after {
-                    right: 1.25em;
+                    right: 2.25em;
                 }
             }
         }
@@ -146,19 +147,19 @@
 
         &.has-children:hover > .submenu {
             opacity: 1;
-            -webkit-transition: margin 0.3s, opacity 0.2s;
-            transition: margin 0.3s, opacity 0.2s;
+            -webkit-transition: margin 0.3s, opacity 0.3s;
+            transition: margin 0.3s, opacity 0.3s;
             visibility: visible;
         }
     }
 
     .submenu {
-        background: #fff;
+        background: rgba(255, 255, 255, 0.581);
         border: 1px solid $gray-300;
-        border-radius: $border-radius-sm;
+        border-radius: 3px solid gold;
         box-shadow: $box-shadow;
         left: 0;
-        min-width: 180px;
+        min-width: 350px;
         opacity: 0;
         padding: 0.5em 0;
         position: absolute;
@@ -173,7 +174,7 @@
         .menu-item {
             display: block;
             margin: 0;
-            padding: 0 1em;
+            padding: 0 1.2em;
         }
 
         a {
@@ -182,7 +183,7 @@
             }
 
             &.button:not(.button-icon) {
-                margin: 0.5em 0;
+                margin: 0.8em 0;
             }
         }
     }
@@ -323,8 +324,8 @@
         }
 
         .submenu-toggle {
-            color: $gray-500;
-            height: 2.8125em;
+            color: white;
+            height: 3em;
             position: absolute;
             right: 0;
             top: 0;
@@ -345,11 +346,6 @@
     }
 
     .menu-button {
-        & > .button:not(.button-icon) {
-            margin-bottom: 1.25em;
-            margin-top: 1.25em;
-        }
-
         & + .menu-button {
             & > .button:not(.button-icon) {
                 margin-top: 0;
