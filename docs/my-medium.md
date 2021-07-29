@@ -1,42 +1,11 @@
----
-title: My Medium Articles
-date: '2021-05-23'
-image: images/medium.png
-seo:
-    title: Medium Articles
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-    extra:
-        - name: 'og:type'
-          value: article
-          keyName: property
-        - name: 'og:title'
-          value: Medium Articles
-          keyName: property
-        - name: 'og:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-          keyName: property
-        - name: 'og:image'
-          value: images/medium.png
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:card'
-          value: summary_large_image
-        - name: 'twitter:title'
-          value: Medium Articles
-        - name: 'twitter:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-        - name: 'twitter:image'
-          value: images/medium.png
-          relativeUrl: true
-template: post
-thumb_image: images/curious-kangaroo.gif
----
+2021-05-23
 
-# A list of all of my articles to link to future posts
+A list of all of my articles to link to future posts
+====================================================
 
 You should probably skip this one… seriously it’s just for internal use!
 
----
+------------------------------------------------------------------------
 
 ### A list of all of my articles to link to future posts
 
@@ -103,7 +72,7 @@ You should probably skip this one… seriously it’s just for internal use!
 <em>My Awesome JavaScript List Part 2</em>javascript.plainenglish.io</a><a href="https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s"><strong>bgoonz/Cumulative-Resource-List</strong><br />
-<em>List of useful cheatsheets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a…</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>List of useful cheatsheets Inspired by <span class="citation" data-cites="sindresorhus">@sindresorhus</span> awesome and improved by these amazing contributors . If you see a…</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f"><strong>My Favorite VSCode <em>Themes</em></strong><br />
 Themeslevelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

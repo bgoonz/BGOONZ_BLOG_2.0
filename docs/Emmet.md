@@ -1,39 +1,15 @@
----
-title: Emmet Cheat Sheet
-excerpt: In this section you'll find basic information about Web-Dev-Huband how to use it.
-seo:
-    title: Emmet Cheat Sheet
-    description: This is the Emmet Cheat Sheet page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Emmet Cheat Sheet
-          keyName: property
-        - name: 'og:description'
-          value: This is the Emmet Cheat Sheet page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Emmet Cheat Sheet
-        - name: 'twitter:description'
-          value: This is the Emmet Cheat Sheet page
-template: docs
----
-
-# Emmet Cheat Sheet
+Emmet Cheat Sheet
+=================
 
 EMMET
 
----
+------------------------------------------------------------------------
 
 ### Emmet Cheat Sheet
 
 ### EMMET
 
-_The a toolkit for web-developers_
+*The a toolkit for web-developers*
 
 ### Introduction
 

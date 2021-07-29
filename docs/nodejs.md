@@ -1,31 +1,4 @@
----
-title: Javascript and Node
-excerpt: >-
-    Web-Dev-Hubis a Unibit theme created for project documentations. You can use
-    it for your project.
-seo:
-    title: Javascript and Node
-    description: This is the Javascript and Node page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Javascript and Node
-          keyName: property
-        - name: 'og:description'
-          value: This is the Javascript and Node page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Javascript and Node
-        - name: 'twitter:description'
-          value: This is the Javascript and Node page
-template: docs
----
-
-As a beginner, it's hard to get to a point where you are confident enough in your programming abilities.
+As a beginner, it’s hard to get to a point where you are confident enough in your programming abilities.
 
 While learning to code, you might also be confused at where does JavaScript end, and where Node.js begins, and vice versa.
 

@@ -1,33 +1,10 @@
----
-title: Installation
-weight: 1
-seo:
-    title: Installation
-    description: This is the installation page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Installation
-          keyName: property
-        - name: 'og:description'
-          value: This is the installation page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Installation
-        - name: 'twitter:description'
-          value: This is the installation page
-template: docs
----
-
-# Basic Web Development Environment Setup
+Basic Web Development Environment Setup
+=======================================
 
 > Windows Subsystem for Linux (WSL) and Ubuntu
 
-## Windows Subsystem for Linux (WSL) and Ubuntu
+Windows Subsystem for Linux (WSL) and Ubuntu
+--------------------------------------------
 
 [![Bryan Guner](https://miro.medium.com/fit/c/96/96/1*ao1cHo7EQ4faDV8YNJwh_Q.png)](https://bryanguner.medium.com/?source=post_page-----9f36c3f15afe--------------------------------)
 
@@ -64,12 +41,12 @@ Git comes with Ubuntu, so there’s nothing to install. However, you should conf
 
 ‌Open an Ubuntu terminal if you don’t have one open already.
 
-1.  You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
-2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing "[your@email.com](mailto:your@email.com)" with your real email.
+1.  You need to configure Git, so type `git config --global user.name "Your Name"` with replacing “Your Name” with your real name.
+2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing “<your@email.com>” with your real email.
 
 **Note: if you want git to remember your login credentials type:**
 
-$ git config --global credential.helper store
+$ git config –global credential.helper store
 
 ‌
 
@@ -80,14 +57,14 @@ Test if you have Chrome installed by typing “Chrome” in the search box in th
 1.  Open Microsoft Edge, the blue “e” in the task bar, and type in [http://chrome.google.com](http://chrome.google.com/). Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.
 2.  Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.
 
-Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
+Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports “Command ‘node’ not found”, then you need to follow these directions.
 
 1.  In the Ubuntu terminal, type `sudo apt update` and press Enter
 2.  In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
 3.  In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
 4.  In the Ubuntu terminal, type `. ./.bashrc` and press Enter
 5.  In the Ubuntu terminal, type `nvm install --lts` and press Enter
-6.  Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
+6.  Confirm that **node** is installed by typing `node --version` and seeing it print something that is not “Command not found”!
 
 You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.
 
@@ -95,7 +72,7 @@ You will often have to download a zip file and unzip it. It is easier to do this
 
 ‌Mocha.js
 
-Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you're good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
+Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you’re good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
 
 ‌
 
@@ -112,12 +89,12 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
 \# Installing build essentials  
 sudo apt-get install -y build-essential libssl-dev  
 \# Nodejs and NVM  
-curl -o- [https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh](https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh) | bash  
+curl -o- <https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh> | bash  
 source ~/.profile  
 sudo nvm install 7.10.0  
 sudo nvm use 7.10.0  
 node -v  
-#nodemon  
+\#nodemon  
 sudo npm install -g nodemon  
 sudo npm install -g loopback-cli  
 \# Forever to run nodejs scripts forever  
@@ -149,7 +126,8 @@ sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar
 \# FileZilla - a FTP client  
 sudo apt-get install -y filezilla
 
-## If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+---------------------------------------------------------------------------------------------------
 
 [bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
 

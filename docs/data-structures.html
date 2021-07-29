@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2021-06-03" />
+  <title>Data Structures</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Data Structures</h1>
+<p class="subtitle">lorem-ipsum</p>
+<p class="date">2021-06-03</p>
+</header>
+<h2 id="data-structures-algorithms">Data Structures &amp; Algorithms</h2>
+<p><a href="https://github.com/bgoonz/Data-Structures-Algos-Codebase">DS Algo Codebase</a></p>
+<p><a href="#115-distinct-subsequenceshttpsleetcodecomproblemsdistinct-subsequencesdescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="distinct-subsequences">➤ <a href="https://leetcode.com/problems/distinct-subsequences/description/">115. Distinct Subsequences</a></h2>
+<h3 id="problem">Problem:</h3>
+<p>Given a string <strong>S</strong> and a string <strong>T</strong>, count the number of distinct subsequences of <strong>S</strong> which equals <strong>T</strong>.</p>
+<p>A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, <code>"ACE"</code> is a subsequence of <code>"ABCDE"</code> while <code>"AEC"</code> is not).</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: S = &quot;rabbbit&quot;, T = &quot;rabbit&quot;
+Output: 3
+Explanation:
+
+As shown below, there are 3 ways you can generate &quot;rabbit&quot; from S.
+(The caret symbol ^ means the chosen letters)
+
+rabbbit
+^^^^ ^^
+rabbbit
+^^ ^^^^
+rabbbit
+^^^ ^^^</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: S = &quot;babgbag&quot;, T = &quot;bag&quot;
+Output: 5
+Explanation:
+
+As shown below, there are 5 ways you can generate &quot;bag&quot; from S.
+(The caret symbol ^ means the chosen letters)
+
+babgbag
+^^ ^
+babgbag
+^^    ^
+babgbag
+^    ^^
+babgbag
+  ^  ^^
+babgbag
+    ^^^</code></pre>
+<h3 id="solution">Solution:</h3>
+<p>Define <code>f(i, j)</code> to be the number of ways that generate <code>T[0...j)</code> from <code>S[0...i)</code>.</p>
+<p>For <code>f(i, j)</code> you can always skip <code>S[i-1]</code>, but can only take it when <code>S[i-1] === T[j-1]</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="at">f</span>(<span class="dv">0</span><span class="op">,</span> j) <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> j <span class="op">&gt;</span> <span class="dv">0</span> <span class="co">// nothing to delete</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="at">f</span>(i<span class="op">,</span> <span class="dv">0</span>) <span class="op">=</span> <span class="dv">1</span> <span class="co">// delete all</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="at">f</span>(i<span class="op">,</span> j) <span class="op">=</span> <span class="at">f</span>(i<span class="dv">-1</span><span class="op">,</span> j) <span class="op">+</span> (S[i<span class="dv">-1</span>] <span class="op">===</span> T[j<span class="dv">-1</span>] <span class="op">?</span> <span class="at">f</span>(i<span class="dv">-1</span><span class="op">,</span> j<span class="dv">-1</span>) : <span class="dv">0</span>)</a></code></pre></div>
+<p>Dynamic array can be used.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> s</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> t</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="kw">let</span> numDistinct <span class="op">=</span> <span class="kw">function</span> (s<span class="op">,</span> t) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="kw">const</span> lens <span class="op">=</span> <span class="va">s</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="kw">const</span> lent <span class="op">=</span> <span class="va">t</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-9" title="9">    <span class="kw">const</span> dp <span class="op">=</span> <span class="kw">new</span> <span class="at">Array</span>(lent <span class="op">+</span> <span class="dv">1</span>).<span class="at">fill</span>(<span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-10" title="10">    dp[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;=</span> lens<span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-12" title="12">        <span class="cf">for</span> (<span class="kw">let</span> j <span class="op">=</span> lent<span class="op">;</span> j <span class="op">&gt;=</span> <span class="dv">1</span><span class="op">;</span> j<span class="op">--</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-13" title="13">            <span class="cf">if</span> (s[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">===</span> t[j <span class="op">-</span> <span class="dv">1</span>]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-14" title="14">                dp[j] <span class="op">+=</span> dp[j <span class="op">-</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-15" title="15">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-16" title="16">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-17" title="17">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-18" title="18">    <span class="cf">return</span> dp[lent]<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-19" title="19"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Medium Related Topics: “Tree”: https://leetcode.com/tag/tree “Depth-first Search”: https://leetcode.com/tag/depth-first-search Similar Questions: “Populating Next Right Pointers in Each Node II”: https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii “Binary Tree Right Side View”: https://leetcode.com/problems/binary-tree-right-side-view</p>
+<hr />
+<p><a href="#116-populating-next-right-pointers-in-each-nodehttpsleetcodecomproblemspopulating-next-right-pointers-in-each-nodedescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="populating-next-right-pointers-in-each-node">➤ <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/">116. Populating Next Right Pointers in Each Node</a></h2>
+<h3 id="problem-1">Problem:</h3>
+<p>Given a binary tree</p>
+<pre><code>struct TreeLinkNode {
+  TreeLinkNode *left;
+  TreeLinkNode *right;
+  TreeLinkNode *next;
+}
+</code></pre>
+<p>Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to <code>NULL</code>.</p>
+<p>Initially, all next pointers are set to <code>NULL</code>.</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>You may only use constant extra space.</li>
+<li>Recursive approach is fine, implicit stack space does not count as extra space for this problem.</li>
+<li>You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>Given the following perfect binary tree,</p>
+<pre><code>     1
+   /  \
+  2    3
+ / \  / \
+4  5  6  7
+</code></pre>
+<p>After calling your function, the tree should look like:</p>
+<pre><code>     1 -&gt; NULL
+   /  \
+  2 -&gt; 3 -&gt; NULL
+ / \  / \
+4-&gt;5-&gt;6-&gt;7 -&gt; NULL
+</code></pre>
+<h3 id="solution-1">Solution:</h3>
+<h4 id="one">ONE</h4>
+<p>Recursive.</p>
+<p>For every <code>node</code>:</p>
+<ul>
+<li>Left child: points to <code>node.right</code>.</li>
+<li>Right child: points to <code>node.next.left</code> if <code>node.next</code> exists.</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="co"> * Definition for binary tree with next pointer.</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="co"> * function TreeLinkNode(val) {</span></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="co"> *     this.val = val;</span></a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="co"> *     this.left = this.right = this.next = null;</span></a>
+<a class="sourceLine" id="cb8-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb8-8" title="8"></a>
+<a class="sourceLine" id="cb8-9" title="9"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb8-10" title="10"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeLinkNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb8-11" title="11"><span class="co"> * </span><span class="an">@return</span><span class="co"> {void} Do not return anything, modify tree in-place instead.</span></a>
+<a class="sourceLine" id="cb8-12" title="12"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb8-13" title="13"><span class="kw">let</span> connect <span class="op">=</span> <span class="kw">function</span> (root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-14" title="14">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-15" title="15">        <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-16" title="16">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-17" title="17">    <span class="cf">if</span> (<span class="va">root</span>.<span class="at">left</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-18" title="18">        <span class="va">root</span>.<span class="va">left</span>.<span class="at">next</span> <span class="op">=</span> <span class="va">root</span>.<span class="at">right</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-19" title="19">        <span class="at">connect</span>(<span class="va">root</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-20" title="20">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-21" title="21">    <span class="cf">if</span> (<span class="va">root</span>.<span class="at">right</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-22" title="22">        <span class="cf">if</span> (<span class="va">root</span>.<span class="at">next</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-23" title="23">            <span class="va">root</span>.<span class="va">right</span>.<span class="at">next</span> <span class="op">=</span> <span class="va">root</span>.<span class="va">next</span>.<span class="at">left</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-24" title="24">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-25" title="25">        <span class="at">connect</span>(<span class="va">root</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-26" title="26">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-27" title="27"><span class="op">};</span></a></code></pre></div>
+<h4 id="two">TWO</h4>
+<p>Level order traversal.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="co"> * Definition for binary tree with next pointer.</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="co"> * function TreeLinkNode(val) {</span></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="co"> *     this.val = val;</span></a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="co"> *     this.left = this.right = this.next = null;</span></a>
+<a class="sourceLine" id="cb9-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb9-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb9-8" title="8"></a>
+<a class="sourceLine" id="cb9-9" title="9"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb9-10" title="10"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeLinkNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb9-11" title="11"><span class="co"> * </span><span class="an">@return</span><span class="co"> {void} Do not return anything, modify tree in-place instead.</span></a>
+<a class="sourceLine" id="cb9-12" title="12"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb9-13" title="13"><span class="kw">let</span> connect <span class="op">=</span> <span class="kw">function</span> (root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-14" title="14">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-15" title="15">        <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb9-16" title="16">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb9-17" title="17"></a>
+<a class="sourceLine" id="cb9-18" title="18">    <span class="kw">const</span> queue <span class="op">=</span> [<span class="kw">NaN</span><span class="op">,</span> root]<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-19" title="19">    <span class="cf">while</span> (<span class="va">queue</span>.<span class="at">length</span> <span class="op">&gt;</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-20" title="20">        <span class="kw">const</span> node <span class="op">=</span> <span class="va">queue</span>.<span class="at">shift</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-21" title="21">        <span class="cf">if</span> (node <span class="op">!==</span> node) <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-22" title="22">            <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">queue</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-23" title="23">                queue[i].<span class="at">next</span> <span class="op">=</span> queue[i <span class="op">+</span> <span class="dv">1</span>] <span class="op">||</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb9-24" title="24">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb9-25" title="25">            <span class="va">queue</span>.<span class="at">push</span>(<span class="kw">NaN</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-26" title="26">        <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-27" title="27">            <span class="cf">if</span> (<span class="va">node</span>.<span class="at">left</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-28" title="28">                <span class="va">queue</span>.<span class="at">push</span>(<span class="va">node</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-29" title="29">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb9-30" title="30">            <span class="cf">if</span> (<span class="va">node</span>.<span class="at">right</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-31" title="31">                <span class="va">queue</span>.<span class="at">push</span>(<span class="va">node</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-32" title="32">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb9-33" title="33">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb9-34" title="34">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb9-35" title="35"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Medium Related Topics: “Tree”: https://leetcode.com/tag/tree “Depth-first Search”: https://leetcode.com/tag/depth-first-search Similar Questions: “Populating Next Right Pointers in Each Node”: https://leetcode.com/problems/populating-next-right-pointers-in-each-node</p>
+<hr />
+<p><a href="#117-populating-next-right-pointers-in-each-node-iihttpsleetcodecomproblemspopulating-next-right-pointers-in-each-node-iidescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="populating-next-right-pointers-in-each-node-ii">➤ <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/">117. Populating Next Right Pointers in Each Node II</a></h2>
+<h3 id="problem-2">Problem:</h3>
+<p>Given a binary tree</p>
+<pre><code>struct TreeLinkNode {
+  TreeLinkNode *left;
+  TreeLinkNode *right;
+  TreeLinkNode *next;
+}
+</code></pre>
+<p>Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to <code>NULL</code>.</p>
+<p>Initially, all next pointers are set to <code>NULL</code>.</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>You may only use constant extra space.</li>
+<li>Recursive approach is fine, implicit stack space does not count as extra space for this problem.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>Given the following binary tree,</p>
+<pre><code>     1
+   /  \
+  2    3
+ / \    \
+4   5    7
+</code></pre>
+<p>After calling your function, the tree should look like:</p>
+<pre><code>     1 -&gt; NULL
+   /  \
+  2 -&gt; 3 -&gt; NULL
+ / \    \
+4-&gt; 5 -&gt; 7 -&gt; NULL
+</code></pre>
+<h3 id="solution-2">Solution:</h3>
+<h4 id="one-1">ONE</h4>
+<p>Recursive. See <a href="./116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md">116. Populating Next Right Pointers in Each Node</a>.</p>
+<p>The tree may not be perfect now. So keep finding <code>next</code> until there is a node with children, or <code>null</code>.</p>
+<p>This also means post-order traversal is required.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="co"> * Definition for binary tree with next pointer.</span></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="co"> * function TreeLinkNode(val) {</span></a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="co"> *     this.val = val;</span></a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="co"> *     this.left = this.right = this.next = null;</span></a>
+<a class="sourceLine" id="cb13-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb13-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb13-8" title="8"></a>
+<a class="sourceLine" id="cb13-9" title="9"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb13-10" title="10"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeLinkNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb13-11" title="11"><span class="co"> * </span><span class="an">@return</span><span class="co"> {void} Do not return anything, modify tree in-place instead.</span></a>
+<a class="sourceLine" id="cb13-12" title="12"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb13-13" title="13"><span class="kw">let</span> connect <span class="op">=</span> <span class="kw">function</span> (root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-14" title="14">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-15" title="15">        <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-16" title="16">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-17" title="17">    <span class="kw">let</span> next <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-18" title="18">    <span class="cf">for</span> (<span class="kw">let</span> node <span class="op">=</span> <span class="va">root</span>.<span class="at">next</span><span class="op">;</span> node <span class="op">!==</span> <span class="kw">null</span><span class="op">;</span> node <span class="op">=</span> <span class="va">node</span>.<span class="at">next</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-19" title="19">        <span class="cf">if</span> (<span class="va">node</span>.<span class="at">left</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-20" title="20">            next <span class="op">=</span> <span class="va">node</span>.<span class="at">left</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-21" title="21">            <span class="cf">break</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-22" title="22">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-23" title="23">        <span class="cf">if</span> (<span class="va">node</span>.<span class="at">right</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-24" title="24">            next <span class="op">=</span> <span class="va">node</span>.<span class="at">right</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-25" title="25">            <span class="cf">break</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-26" title="26">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-27" title="27">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-28" title="28">    <span class="cf">if</span> (<span class="va">root</span>.<span class="at">right</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-29" title="29">        <span class="va">root</span>.<span class="va">right</span>.<span class="at">next</span> <span class="op">=</span> next<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-30" title="30">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-31" title="31">    <span class="cf">if</span> (<span class="va">root</span>.<span class="at">left</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-32" title="32">        <span class="va">root</span>.<span class="va">left</span>.<span class="at">next</span> <span class="op">=</span> <span class="va">root</span>.<span class="at">right</span> <span class="op">||</span> next<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-33" title="33">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-34" title="34">    <span class="at">connect</span>(<span class="va">root</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-35" title="35">    <span class="at">connect</span>(<span class="va">root</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-36" title="36"><span class="op">};</span></a></code></pre></div>
+<h4 id="two-1">TWO</h4>
+<p>Level order traversal. Exact same as <a href="./116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md">116. Populating Next Right Pointers in Each Node</a>.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="co"> * Definition for binary tree with next pointer.</span></a>
+<a class="sourceLine" id="cb14-3" title="3"><span class="co"> * function TreeLinkNode(val) {</span></a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="co"> *     this.val = val;</span></a>
+<a class="sourceLine" id="cb14-5" title="5"><span class="co"> *     this.left = this.right = this.next = null;</span></a>
+<a class="sourceLine" id="cb14-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb14-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb14-8" title="8"></a>
+<a class="sourceLine" id="cb14-9" title="9"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb14-10" title="10"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeLinkNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb14-11" title="11"><span class="co"> * </span><span class="an">@return</span><span class="co"> {void} Do not return anything, modify tree in-place instead.</span></a>
+<a class="sourceLine" id="cb14-12" title="12"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb14-13" title="13"><span class="kw">let</span> connect <span class="op">=</span> <span class="kw">function</span> (root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-14" title="14">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-15" title="15">        <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb14-16" title="16">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb14-17" title="17"></a>
+<a class="sourceLine" id="cb14-18" title="18">    <span class="kw">const</span> queue <span class="op">=</span> [<span class="kw">NaN</span><span class="op">,</span> root]<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-19" title="19">    <span class="cf">while</span> (<span class="va">queue</span>.<span class="at">length</span> <span class="op">&gt;</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-20" title="20">        <span class="kw">const</span> node <span class="op">=</span> <span class="va">queue</span>.<span class="at">shift</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-21" title="21">        <span class="cf">if</span> (node <span class="op">!==</span> node) <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-22" title="22">            <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">queue</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-23" title="23">                queue[i].<span class="at">next</span> <span class="op">=</span> queue[i <span class="op">+</span> <span class="dv">1</span>] <span class="op">||</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb14-24" title="24">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb14-25" title="25">            <span class="va">queue</span>.<span class="at">push</span>(<span class="kw">NaN</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-26" title="26">        <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-27" title="27">            <span class="cf">if</span> (<span class="va">node</span>.<span class="at">left</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-28" title="28">                <span class="va">queue</span>.<span class="at">push</span>(<span class="va">node</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-29" title="29">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb14-30" title="30">            <span class="cf">if</span> (<span class="va">node</span>.<span class="at">right</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-31" title="31">                <span class="va">queue</span>.<span class="at">push</span>(<span class="va">node</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-32" title="32">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb14-33" title="33">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb14-34" title="34">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb14-35" title="35"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Easy Related Topics: “Array”: https://leetcode.com/tag/array Similar Questions: “Pascal’s Triangle II”: https://leetcode.com/problems/pascals-triangle-ii</p>
+<hr />
+<p><a href="#118-pascals-trianglehttpsleetcodecomproblemspascals-triangledescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="pascals-triangle">➤ <a href="https://leetcode.com/problems/pascals-triangle/description/">118. Pascal’s Triangle</a></h2>
+<h3 id="problem-3">Problem:</h3>
+<p>Given a non-negative integer <em>numRows</em>, generate the first <em>numRows</em> of Pascal’s triangle.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif" alt="PascalTriangleAnimated2.gif" /><figcaption>PascalTriangleAnimated2.gif</figcaption>
+</figure>
+<p>In Pascal’s triangle, each number is the sum of the two numbers directly above it.</p>
+<p><strong>Example:</strong></p>
+<pre><code>Input: 5
+Output:
+[
+     [1],
+    [1,1],
+   [1,2,1],
+  [1,3,3,1],
+ [1,4,6,4,1]
+]
+</code></pre>
+<h3 id="solution-3">Solution:</h3>
+<p>Dynamic Programming 101.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb16-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number}</span><span class="co"> numRows</span></a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number[][]}</span></a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb16-5" title="5"><span class="kw">let</span> generate <span class="op">=</span> <span class="kw">function</span> (numRows) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-6" title="6">    <span class="cf">if</span> (numRows <span class="op">&lt;=</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-7" title="7">        <span class="cf">return</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-8" title="8">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-9" title="9"></a>
+<a class="sourceLine" id="cb16-10" title="10">    <span class="kw">const</span> result <span class="op">=</span> [[<span class="dv">1</span>]]<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-11" title="11">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> numRows<span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-12" title="12">        <span class="kw">const</span> lastRow <span class="op">=</span> result[i <span class="op">-</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-13" title="13">        <span class="kw">const</span> row <span class="op">=</span> [<span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-14" title="14">        <span class="cf">for</span> (<span class="kw">let</span> j <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> j <span class="op">&lt;</span> i<span class="op">;</span> j<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-15" title="15">            row[j] <span class="op">=</span> lastRow[j] <span class="op">+</span> lastRow[j <span class="op">-</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-16" title="16">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-17" title="17">        <span class="va">row</span>.<span class="at">push</span>(<span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-18" title="18">        <span class="va">result</span>.<span class="at">push</span>(row)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-19" title="19">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-20" title="20"></a>
+<a class="sourceLine" id="cb16-21" title="21">    <span class="cf">return</span> result<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-22" title="22"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Easy Related Topics: “Array”: https://leetcode.com/tag/array Similar Questions: “Pascal’s Triangle”: https://leetcode.com/problems/pascals-triangle</p>
+<hr />
+<p><a href="#119-pascals-triangle-iihttpsleetcodecomproblemspascals-triangle-iidescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="pascals-triangle-ii">➤ <a href="https://leetcode.com/problems/pascals-triangle-ii/description/">119. Pascal’s Triangle II</a></h2>
+<h3 id="problem-4">Problem:</h3>
+<p>Given a non-negative index <em>k</em> where <em>k</em> ≤ 33, return the <em>k</em>th index row of the Pascal’s triangle.</p>
+<p>Note that the row index starts from 0.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif" alt="PascalTriangleAnimated2.gif" /><figcaption>PascalTriangleAnimated2.gif</figcaption>
+</figure>
+<p>In Pascal’s triangle, each number is the sum of the two numbers directly above it.</p>
+<p><strong>Example:</strong></p>
+<pre><code>Input: 3
+Output: [1,3,3,1]
+</code></pre>
+<p><strong>Follow up:</strong></p>
+<p>Could you optimize your algorithm to use only <em>O</em>(<em>k</em>) extra space?</p>
+<h3 id="solution-4">Solution:</h3>
+<p>Dynamic Programming 101 with dynamic array.</p>
+<p>State <code>(i, j)</code> depends on <code>(i-1, j)</code> and <code>(i-1, j-1)</code>. So to access <code>(i-1, j-1)</code> iteration must be from right to left.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb18-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number}</span><span class="co"> rowIndex</span></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number[]}</span></a>
+<a class="sourceLine" id="cb18-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb18-5" title="5"><span class="kw">let</span> getRow <span class="op">=</span> <span class="kw">function</span> (rowIndex) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-6" title="6">    <span class="cf">if</span> (rowIndex <span class="op">&lt;</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-7" title="7">        <span class="cf">return</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-8" title="8">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-9" title="9"></a>
+<a class="sourceLine" id="cb18-10" title="10">    <span class="kw">const</span> row <span class="op">=</span> [<span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-11" title="11">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;=</span> rowIndex<span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-12" title="12">        <span class="cf">for</span> (<span class="kw">let</span> j <span class="op">=</span> i <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> j <span class="op">&gt;</span> <span class="dv">0</span><span class="op">;</span> j<span class="op">--</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-13" title="13">            row[j] <span class="op">+=</span> row[j <span class="op">-</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-14" title="14">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-15" title="15">        <span class="va">row</span>.<span class="at">push</span>(<span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-16" title="16">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-17" title="17"></a>
+<a class="sourceLine" id="cb18-18" title="18">    <span class="cf">return</span> row<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-19" title="19"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Medium Related Topics: “Array”: https://leetcode.com/tag/array “Dynamic Programming”: https://leetcode.com/tag/dynamic-programming</p>
+<hr />
+<p><a href="#120-trianglehttpsleetcodecomproblemstriangledescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="triangle">➤ <a href="https://leetcode.com/problems/triangle/description/">120. Triangle</a></h2>
+<h3 id="problem-5">Problem:</h3>
+<p>Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.</p>
+<p>For example, given the following triangle</p>
+<pre><code>[
+     [2],
+    [3,4],
+   [6,5,7],
+  [4,1,8,3]
+]
+</code></pre>
+<p>The minimum path sum from top to bottom is <code>11</code> (i.e., <strong>2</strong> + <strong>3</strong> + <strong>5</strong> + <strong>1</strong> = 11).</p>
+<p><strong>Note:</strong></p>
+<p>Bonus point if you are able to do this using only <em>O</em>(<em>n</em>) extra space, where <em>n</em> is the total number of rows in the triangle.</p>
+<h3 id="solution-5">Solution:</h3>
+<p>Define <code>f(i, j)</code> to be the minimum path sum from <code>triangle[0][0]</code> to <code>triangle[i][j]</code>.</p>
+<pre><code>f(i, 0) = f(i-1, j) + triangle[i][0]
+f(i, j) = min( f(i-1, j-1), f(i-1, j) ) + triangle[i][j], 0 &lt; j &lt; i
+f(i, i) = f(i-1, i-1) + triangle[i][i], i &gt; 0</code></pre>
+<p>Dynamic array can be used.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb21-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[][]} triangle</span></a>
+<a class="sourceLine" id="cb21-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb21-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb21-5" title="5"><span class="kw">let</span> minimumTotal <span class="op">=</span> <span class="kw">function</span> (triangle) <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-6" title="6">    <span class="cf">if</span> (<span class="va">triangle</span>.<span class="at">length</span> <span class="op">&lt;=</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-7" title="7">        <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb21-8" title="8">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb21-9" title="9"></a>
+<a class="sourceLine" id="cb21-10" title="10">    <span class="kw">const</span> dp <span class="op">=</span> [triangle[<span class="dv">0</span>][<span class="dv">0</span>]]<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-11" title="11">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">triangle</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-12" title="12">        dp[i] <span class="op">=</span> dp[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">+</span> triangle[i][i]<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-13" title="13">        <span class="cf">for</span> (<span class="kw">let</span> j <span class="op">=</span> i <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> j <span class="op">&gt;=</span> <span class="dv">1</span><span class="op">;</span> j<span class="op">--</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-14" title="14">            dp[j] <span class="op">=</span> <span class="va">Math</span>.<span class="at">min</span>(dp[j]<span class="op">,</span> dp[j <span class="op">-</span> <span class="dv">1</span>]) <span class="op">+</span> triangle[i][j]<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-15" title="15">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb21-16" title="16">        dp[<span class="dv">0</span>] <span class="op">+=</span> triangle[i][<span class="dv">0</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-17" title="17">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb21-18" title="18">    <span class="cf">return</span> <span class="va">Math</span>.<span class="at">min</span>(...<span class="at">dp</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-19" title="19"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Easy Related Topics: “Array”: https://leetcode.com/tag/array “Dynamic Programming”: https://leetcode.com/tag/dynamic-programming Similar Questions: “Maximum Subarray”: https://leetcode.com/problems/maximum-subarray “Best Time to Buy and Sell Stock II”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii “Best Time to Buy and Sell Stock III”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii “Best Time to Buy and Sell Stock IV”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv “Best Time to Buy and Sell Stock with Cooldown”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown</p>
+<hr />
+<p><a href="#121-best-time-to-buy-and-sell-stockhttpsleetcodecomproblemsbest-time-to-buy-and-sell-stockdescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="best-time-to-buy-and-sell-stock">➤ <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/">121. Best Time to Buy and Sell Stock</a></h2>
+<h3 id="problem-6">Problem:</h3>
+<p>Say you have an array for which the <em>i</em>th element is the price of a given stock on day <em>i</em>.</p>
+<p>If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.</p>
+<p>Note that you cannot sell a stock before you buy one.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+             Not 7-1 = 6, as selling price needs to be larger than buying price.
+</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transaction is done, i.e. max profit = 0.
+</code></pre>
+<h3 id="solution-6">Solution:</h3>
+<p>Only care about positive profits. Take the frist item as base and scan to the right. If we encounter an item <code>j</code> whose price <code>price[j]</code> is lower than the base (which means if we sell now the profit would be negative), we sell <code>j-1</code> instead and make <code>j</code> the new base.</p>
+<p>Because <code>price[j]</code> is lower that the base, using <code>j</code> as new base is guaranteed to gain more profit comparing to the old one.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} prices</span></a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb24-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb24-5" title="5"><span class="kw">let</span> maxProfit <span class="op">=</span> <span class="kw">function</span> (prices) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-6" title="6">    <span class="kw">let</span> max <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-7" title="7">    <span class="kw">let</span> base <span class="op">=</span> prices[<span class="dv">0</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-8" title="8">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">prices</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-9" title="9">        <span class="kw">const</span> profit <span class="op">=</span> prices[i] <span class="op">-</span> base<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-10" title="10">        <span class="cf">if</span> (profit <span class="op">&gt;</span> max) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-11" title="11">            max <span class="op">=</span> profit<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-12" title="12">        <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (profit <span class="op">&lt;</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-13" title="13">            base <span class="op">=</span> prices[i]<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-14" title="14">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-15" title="15">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-16" title="16">    <span class="cf">return</span> max<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-17" title="17"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Easy Related Topics: “Array”: https://leetcode.com/tag/array “Greedy”: https://leetcode.com/tag/greedy Similar Questions: “Best Time to Buy and Sell Stock”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock “Best Time to Buy and Sell Stock III”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii “Best Time to Buy and Sell Stock IV”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv “Best Time to Buy and Sell Stock with Cooldown”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown “Best Time to Buy and Sell Stock with Transaction Fee”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee</p>
+<hr />
+<p><a href="#122-best-time-to-buy-and-sell-stock-iihttpsleetcodecomproblemsbest-time-to-buy-and-sell-stock-iidescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="best-time-to-buy-and-sell-stock-ii">➤ <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/">122. Best Time to Buy and Sell Stock II</a></h2>
+<h3 id="problem-7">Problem:</h3>
+<p>Say you have an array for which the <em>i</em>th element is the price of a given stock on day <em>i</em>.</p>
+<p>Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).</p>
+<p><strong>Note:</strong> You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: [7,1,5,3,6,4]
+Output: 7
+Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
+             Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
+</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: [1,2,3,4,5]
+Output: 4
+Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
+             Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are
+             engaging multiple transactions at the same time. You must sell before buying again.
+</code></pre>
+<p><strong>Example 3:</strong></p>
+<pre><code>Input: [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transaction is done, i.e. max profit = 0.</code></pre>
+<h3 id="solution-7">Solution:</h3>
+<p>Sell immediately after the price drops. Or in other perspective, it is the sum of all the incremental pairs (buy in then immediately sell out).</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb28-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} prices</span></a>
+<a class="sourceLine" id="cb28-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb28-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb28-5" title="5"><span class="kw">let</span> maxProfit <span class="op">=</span> <span class="kw">function</span> (prices) <span class="op">{</span></a>
+<a class="sourceLine" id="cb28-6" title="6">    <span class="kw">let</span> max <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb28-7" title="7">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">prices</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb28-8" title="8">        <span class="cf">if</span> (prices[i] <span class="op">&gt;</span> prices[i <span class="op">-</span> <span class="dv">1</span>]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb28-9" title="9">            max <span class="op">+=</span> prices[i] <span class="op">-</span> prices[i <span class="op">-</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb28-10" title="10">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb28-11" title="11">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb28-12" title="12">    <span class="cf">return</span> max<span class="op">;</span></a>
+<a class="sourceLine" id="cb28-13" title="13"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Hard Related Topics: “Array”: https://leetcode.com/tag/array “Dynamic Programming”: https://leetcode.com/tag/dynamic-programming Similar Questions: “Best Time to Buy and Sell Stock”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock “Best Time to Buy and Sell Stock II”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii “Best Time to Buy and Sell Stock IV”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv “Maximum Sum of 3 Non-Overlapping Subarrays”: https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays</p>
+<hr />
+<p><a href="#123-best-time-to-buy-and-sell-stock-iiihttpsleetcodecomproblemsbest-time-to-buy-and-sell-stock-iiidescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="best-time-to-buy-and-sell-stock-iii">➤ <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/">123. Best Time to Buy and Sell Stock III</a></h2>
+<h3 id="problem-8">Problem:</h3>
+<p>Say you have an array for which the <em>i</em>th element is the price of a given stock on day <em>i</em>.</p>
+<p>Design an algorithm to find the maximum profit. You may complete at most <em>two</em> transactions.</p>
+<p><strong>Note:</strong>You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: [3,3,5,0,0,3,1,4]
+Output: 6
+Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+             Then buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: [1,2,3,4,5]
+Output: 4
+Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
+             Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are
+             engaging multiple transactions at the same time. You must sell before buying again.
+</code></pre>
+<p><strong>Example 3:</strong></p>
+<pre><code>Input: [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transaction is done, i.e. max profit = 0.</code></pre>
+<h3 id="solution-8">Solution:</h3>
+<p>Multiple transactions may not be engaged in at the same time. That means if we view the days that involed in the same transaction as a group, there won’t be any intersection. We may complete at most <em>two</em> transactions, so divide the days into two groups, <code>[0...k]</code> and <code>[k...n-1]</code>. Notice <code>k</code> exists in both groups because technically we can sell out then immediately buy in at the same day.</p>
+<p>Define <code>p1(i)</code> to be the max profit of day <code>[0...i]</code>. This is just like the problem of <a href="./121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md">121. Best Time to Buy and Sell Stock</a>.</p>
+<pre><code>p1(0) = 0
+p1(i) = max( p1(i-1), prices[i] - min(prices[0], ..., prices[i-1]) ), 0 &lt; i &lt;= n-1</code></pre>
+<p>Define <code>p2(i)</code> to be the max profit of day <code>[i...n-1]</code>. This is the mirror of <code>p1</code>.</p>
+<pre><code>p2(n-1) = 0
+p2(i) = max( p2(i+1), max(prices[i], ..., prices[n-1]) - prices[i] ), n-1 &gt; i &gt;= 0</code></pre>
+<p>Define <code>f(k)</code> to be <code>p1(k) + p2(k)</code>. We need to get <code>max( f(0), ..., f(n-1) )</code>.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb34-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb34-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} prices</span></a>
+<a class="sourceLine" id="cb34-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb34-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb34-5" title="5"><span class="kw">let</span> maxProfit <span class="op">=</span> <span class="kw">function</span> (prices) <span class="op">{</span></a>
+<a class="sourceLine" id="cb34-6" title="6">    <span class="kw">const</span> len <span class="op">=</span> <span class="va">prices</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb34-7" title="7">    <span class="cf">if</span> (len <span class="op">&lt;=</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb34-8" title="8">        <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb34-9" title="9">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb34-10" title="10"></a>
+<a class="sourceLine" id="cb34-11" title="11">    <span class="kw">const</span> dp <span class="op">=</span> [<span class="dv">0</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb34-12" title="12"></a>
+<a class="sourceLine" id="cb34-13" title="13">    <span class="kw">let</span> min <span class="op">=</span> prices[<span class="dv">0</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb34-14" title="14">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> len<span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb34-15" title="15">        dp[i] <span class="op">=</span> <span class="va">Math</span>.<span class="at">max</span>(dp[i <span class="op">-</span> <span class="dv">1</span>]<span class="op">,</span> prices[i] <span class="op">-</span> min)<span class="op">;</span></a>
+<a class="sourceLine" id="cb34-16" title="16">        min <span class="op">=</span> <span class="va">Math</span>.<span class="at">min</span>(prices[i]<span class="op">,</span> min)<span class="op">;</span></a>
+<a class="sourceLine" id="cb34-17" title="17">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb34-18" title="18"></a>
+<a class="sourceLine" id="cb34-19" title="19">    <span class="kw">let</span> p2 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb34-20" title="20">    <span class="kw">let</span> max <span class="op">=</span> prices[len <span class="op">-</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb34-21" title="21">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> len <span class="op">-</span> <span class="dv">2</span><span class="op">;</span> i <span class="op">&gt;=</span> <span class="dv">0</span><span class="op">;</span> i<span class="op">--</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb34-22" title="22">        max <span class="op">=</span> <span class="va">Math</span>.<span class="at">max</span>(prices[i]<span class="op">,</span> max)<span class="op">;</span></a>
+<a class="sourceLine" id="cb34-23" title="23">        p2 <span class="op">=</span> <span class="va">Math</span>.<span class="at">max</span>(p2<span class="op">,</span> max <span class="op">-</span> prices[i])<span class="op">;</span></a>
+<a class="sourceLine" id="cb34-24" title="24">        dp[i] <span class="op">+=</span> p2<span class="op">;</span></a>
+<a class="sourceLine" id="cb34-25" title="25">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb34-26" title="26"></a>
+<a class="sourceLine" id="cb34-27" title="27">    <span class="cf">return</span> <span class="va">Math</span>.<span class="at">max</span>(...<span class="at">dp</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb34-28" title="28"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Hard Related Topics: “Tree”: https://leetcode.com/tag/tree “Depth-first Search”: https://leetcode.com/tag/depth-first-search Similar Questions: “Path Sum”: https://leetcode.com/problems/path-sum “Sum Root to Leaf Numbers”: https://leetcode.com/problems/sum-root-to-leaf-numbers “Path Sum IV”: https://leetcode.com/problems/path-sum-iv “Longest Univalue Path”: https://leetcode.com/problems/longest-univalue-path</p>
+<hr />
+<p><a href="#124-binary-tree-maximum-path-sumhttpsleetcodecomproblemsbinary-tree-maximum-path-sumdescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="binary-tree-maximum-path-sum">➤ <a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/description/">124. Binary Tree Maximum Path Sum</a></h2>
+<h3 id="problem-9">Problem:</h3>
+<p>Given a <strong>non-empty</strong> binary tree, find the maximum path sum.</p>
+<p>For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain <strong>at least one node</strong> and does not need to go through the root.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: [1,2,3]
+
+       1
+      / \
+     2   3
+
+Output: 6
+</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: [-10,9,20,null,null,15,7]
+
+   -10
+   / \
+  9  20
+    /  \
+   15   7
+
+Output: 42
+</code></pre>
+<h3 id="solution-9">Solution:</h3>
+<p>For every <code>node</code>, there are six possible ways to get the max path sum:</p>
+<ul>
+<li>With <code>node.val</code>
+<ol type="1">
+<li><code>node.val</code> plus the max sum of a path that ends with <code>node.left</code>.</li>
+<li><code>node.val</code> plus the max sum of a path that starts with <code>node.right</code>.</li>
+<li><code>node.val</code> plus the max sum of both paths.</li>
+<li>Just <code>node.val</code> (the max sum of both paths are negative).</li>
+</ol></li>
+<li>Without<code>node.val</code> (disconnected)
+<ol type="1">
+<li>The max-sum path is somewhere under the <code>node.left</code> subtree.</li>
+<li>The max-sum path is somewhere under the <code>node.right</code> subtree.</li>
+</ol></li>
+</ul>
+<p>There are two ways to implement this.</p>
+<h4 id="one-2">ONE</h4>
+<p>Define a function that returns two values. The max sum of a path that may or may not end with <code>root</code> node, and the max sum of the path that ends with <code>root</code> node.</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb37-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb37-2" title="2"><span class="co"> * Definition for a binary tree node.</span></a>
+<a class="sourceLine" id="cb37-3" title="3"><span class="co"> * function TreeNode(val) {</span></a>
+<a class="sourceLine" id="cb37-4" title="4"><span class="co"> *     this.val = val;</span></a>
+<a class="sourceLine" id="cb37-5" title="5"><span class="co"> *     this.left = this.right = null;</span></a>
+<a class="sourceLine" id="cb37-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb37-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb37-8" title="8"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb37-9" title="9"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb37-10" title="10"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb37-11" title="11"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb37-12" title="12"><span class="kw">let</span> maxPathSum <span class="op">=</span> <span class="kw">function</span> (root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb37-13" title="13">    <span class="cf">return</span> <span class="va">Math</span>.<span class="at">max</span>(...<span class="at">_maxPathSum</span>(root))<span class="op">;</span></a>
+<a class="sourceLine" id="cb37-14" title="14"><span class="op">};</span></a>
+<a class="sourceLine" id="cb37-15" title="15"></a>
+<a class="sourceLine" id="cb37-16" title="16"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb37-17" title="17"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb37-18" title="18"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number[]}</span></a>
+<a class="sourceLine" id="cb37-19" title="19"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb37-20" title="20"><span class="kw">function</span> <span class="at">_maxPathSum</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb37-21" title="21">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb37-22" title="22">        <span class="cf">return</span> [<span class="op">-</span><span class="kw">Infinity</span><span class="op">,</span> <span class="op">-</span><span class="kw">Infinity</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb37-23" title="23">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb37-24" title="24"></a>
+<a class="sourceLine" id="cb37-25" title="25">    <span class="kw">const</span> left <span class="op">=</span> <span class="at">_maxPathSum</span>(<span class="va">root</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb37-26" title="26">    <span class="kw">const</span> right <span class="op">=</span> <span class="at">_maxPathSum</span>(<span class="va">root</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb37-27" title="27">    <span class="cf">return</span> [<span class="va">Math</span>.<span class="at">max</span>(left[<span class="dv">0</span>]<span class="op">,</span> right[<span class="dv">0</span>]<span class="op">,</span> <span class="va">root</span>.<span class="at">val</span> <span class="op">+</span> <span class="va">Math</span>.<span class="at">max</span>(<span class="dv">0</span><span class="op">,</span> left[<span class="dv">1</span>]<span class="op">,</span> right[<span class="dv">1</span>]<span class="op">,</span> left[<span class="dv">1</span>] <span class="op">+</span> right[<span class="dv">1</span>]))<span class="op">,</span> <span class="va">Math</span>.<span class="at">max</span>(left[<span class="dv">1</span>]<span class="op">,</span> right[<span class="dv">1</span>]<span class="op">,</span> <span class="dv">0</span>) <span class="op">+</span> <span class="va">root</span>.<span class="at">val</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb37-28" title="28"><span class="op">}</span></a></code></pre></div>
+<h4 id="two-2">TWO</h4>
+<p>Just return the later (max sum of a path that ends with <code>root</code>). Maintain a global variable to store the disconnected max sum.</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb38-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb38-2" title="2"><span class="co"> * Definition for a binary tree node.</span></a>
+<a class="sourceLine" id="cb38-3" title="3"><span class="co"> * function TreeNode(val) {</span></a>
+<a class="sourceLine" id="cb38-4" title="4"><span class="co"> *     this.val = val;</span></a>
+<a class="sourceLine" id="cb38-5" title="5"><span class="co"> *     this.left = this.right = null;</span></a>
+<a class="sourceLine" id="cb38-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb38-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb38-8" title="8"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb38-9" title="9"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb38-10" title="10"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb38-11" title="11"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb38-12" title="12"><span class="kw">let</span> maxPathSum <span class="op">=</span> <span class="kw">function</span> (root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb38-13" title="13">    <span class="kw">const</span> global <span class="op">=</span> <span class="op">{</span> <span class="dt">max</span><span class="op">:</span> <span class="op">-</span><span class="kw">Infinity</span> <span class="op">};</span></a>
+<a class="sourceLine" id="cb38-14" title="14">    <span class="at">_maxPathSum</span>(root<span class="op">,</span> global)<span class="op">;</span></a>
+<a class="sourceLine" id="cb38-15" title="15">    <span class="cf">return</span> <span class="va">global</span>.<span class="at">max</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb38-16" title="16"><span class="op">};</span></a>
+<a class="sourceLine" id="cb38-17" title="17"></a>
+<a class="sourceLine" id="cb38-18" title="18"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb38-19" title="19"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb38-20" title="20"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{object}</span><span class="co"> global</span></a>
+<a class="sourceLine" id="cb38-21" title="21"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number}</span><span class="co"> global.max</span></a>
+<a class="sourceLine" id="cb38-22" title="22"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number[]}</span></a>
+<a class="sourceLine" id="cb38-23" title="23"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb38-24" title="24"><span class="kw">function</span> <span class="at">_maxPathSum</span>(root<span class="op">,</span> global) <span class="op">{</span></a>
+<a class="sourceLine" id="cb38-25" title="25">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb38-26" title="26">        <span class="cf">return</span> <span class="op">-</span><span class="kw">Infinity</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb38-27" title="27">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb38-28" title="28"></a>
+<a class="sourceLine" id="cb38-29" title="29">    <span class="kw">const</span> left <span class="op">=</span> <span class="at">_maxPathSum</span>(<span class="va">root</span>.<span class="at">left</span><span class="op">,</span> global)<span class="op">;</span></a>
+<a class="sourceLine" id="cb38-30" title="30">    <span class="kw">const</span> right <span class="op">=</span> <span class="at">_maxPathSum</span>(<span class="va">root</span>.<span class="at">right</span><span class="op">,</span> global)<span class="op">;</span></a>
+<a class="sourceLine" id="cb38-31" title="31">    <span class="kw">const</span> localMax <span class="op">=</span> <span class="va">Math</span>.<span class="at">max</span>(left<span class="op">,</span> right<span class="op">,</span> <span class="dv">0</span>) <span class="op">+</span> <span class="va">root</span>.<span class="at">val</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb38-32" title="32">    <span class="va">global</span>.<span class="at">max</span> <span class="op">=</span> <span class="va">Math</span>.<span class="at">max</span>(<span class="va">global</span>.<span class="at">max</span><span class="op">,</span> localMax<span class="op">,</span> <span class="va">root</span>.<span class="at">val</span> <span class="op">+</span> left <span class="op">+</span> right)<span class="op">;</span></a>
+<a class="sourceLine" id="cb38-33" title="33">    <span class="cf">return</span> localMax<span class="op">;</span></a>
+<a class="sourceLine" id="cb38-34" title="34"><span class="op">}</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Easy Related Topics: “Two Pointers”: https://leetcode.com/tag/two-pointers “String”: https://leetcode.com/tag/string Similar Questions: “Palindrome Linked List”: https://leetcode.com/problems/palindrome-linked-list “Valid Palindrome II”: https://leetcode.com/problems/valid-palindrome-ii</p>
+<hr />
+<p><a href="#125-valid-palindromehttpsleetcodecomproblemsvalid-palindromedescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="valid-palindrome">➤ <a href="https://leetcode.com/problems/valid-palindrome/description/">125. Valid Palindrome</a></h2>
+<h3 id="problem-10">Problem:</h3>
+<p>Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.</p>
+<p><strong>Note:</strong> For the purpose of this problem, we define empty string as valid palindrome.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: &quot;A man, a plan, a canal: Panama&quot;
+Output: true
+</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: &quot;race a car&quot;
+Output: false
+</code></pre>
+<h3 id="solution-10">Solution:</h3>
+<h4 id="one-3">ONE</h4>
+<div class="sourceCode" id="cb41"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb41-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb41-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> s</span></a>
+<a class="sourceLine" id="cb41-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {boolean}</span></a>
+<a class="sourceLine" id="cb41-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb41-5" title="5"><span class="kw">let</span> isPalindrome <span class="op">=</span> <span class="kw">function</span> (s) <span class="op">{</span></a>
+<a class="sourceLine" id="cb41-6" title="6">    <span class="kw">const</span> clean <span class="op">=</span> <span class="va">s</span>.<span class="at">toLowerCase</span>().<span class="at">split</span>(<span class="ss">/</span><span class="sc">[^a-z0-9]*</span><span class="ss">/</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb41-7" title="7">    <span class="cf">return</span> <span class="va">clean</span>.<span class="at">join</span>(<span class="st">&#39;&#39;</span>) <span class="op">===</span> <span class="va">clean</span>.<span class="at">reverse</span>().<span class="at">join</span>(<span class="st">&#39;&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb41-8" title="8"><span class="op">};</span></a></code></pre></div>
+<h4 id="two-3">TWO</h4>
+<p>Remove non-alphanumeric characters then compare.</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb42-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb42-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> s</span></a>
+<a class="sourceLine" id="cb42-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {boolean}</span></a>
+<a class="sourceLine" id="cb42-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb42-5" title="5"><span class="kw">let</span> isPalindrome <span class="op">=</span> <span class="kw">function</span> (s) <span class="op">{</span></a>
+<a class="sourceLine" id="cb42-6" title="6">    <span class="kw">const</span> clean <span class="op">=</span> <span class="va">s</span>.<span class="at">replace</span>(<span class="ss">/</span><span class="sc">[^a-zA-Z0-9]</span><span class="ss">/g</span><span class="op">,</span> <span class="st">&#39;&#39;</span>).<span class="at">toLowerCase</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb42-7" title="7">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> j <span class="op">=</span> <span class="va">clean</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> j<span class="op">;</span> i<span class="op">++,</span> j<span class="op">--</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb42-8" title="8">        <span class="cf">if</span> (clean[i] <span class="op">!==</span> clean[j]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb42-9" title="9">            <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb42-10" title="10">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb42-11" title="11">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb42-12" title="12">    <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb42-13" title="13"><span class="op">};</span></a></code></pre></div>
+<h4 id="three">THREE</h4>
+<p>Compare the char codes.</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb43-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb43-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> s</span></a>
+<a class="sourceLine" id="cb43-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {boolean}</span></a>
+<a class="sourceLine" id="cb43-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb43-5" title="5"><span class="kw">let</span> isPalindrome <span class="op">=</span> <span class="kw">function</span> (s) <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-6" title="6">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> j <span class="op">=</span> <span class="va">s</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> j<span class="op">;</span> i<span class="op">++,</span> j<span class="op">--</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-7" title="7">        <span class="kw">let</span> left <span class="op">=</span> <span class="va">s</span>.<span class="at">charCodeAt</span>(i)<span class="op">;</span></a>
+<a class="sourceLine" id="cb43-8" title="8">        <span class="cf">while</span> (i <span class="op">&lt;</span> j <span class="op">&amp;&amp;</span> (left <span class="op">&lt;</span> <span class="dv">48</span> <span class="op">||</span> (left <span class="op">&gt;</span> <span class="dv">57</span> <span class="op">&amp;&amp;</span> left <span class="op">&lt;</span> <span class="dv">65</span>) <span class="op">||</span> (left <span class="op">&gt;</span> <span class="dv">90</span> <span class="op">&amp;&amp;</span> left <span class="op">&lt;</span> <span class="dv">97</span>) <span class="op">||</span> left <span class="op">&gt;</span> <span class="dv">122</span>)) <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-9" title="9">            left <span class="op">=</span> <span class="va">s</span>.<span class="at">charCodeAt</span>(<span class="op">++</span>i)<span class="op">;</span></a>
+<a class="sourceLine" id="cb43-10" title="10">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb43-11" title="11">        <span class="cf">if</span> (i <span class="op">&gt;=</span> j) <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-12" title="12">            <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb43-13" title="13">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb43-14" title="14">        <span class="cf">if</span> (left <span class="op">&gt;=</span> <span class="dv">65</span> <span class="op">&amp;&amp;</span> left <span class="op">&lt;=</span> <span class="dv">90</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-15" title="15">            left <span class="op">+=</span> <span class="dv">32</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb43-16" title="16">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb43-17" title="17"></a>
+<a class="sourceLine" id="cb43-18" title="18">        <span class="kw">let</span> right <span class="op">=</span> <span class="va">s</span>.<span class="at">charCodeAt</span>(j)<span class="op">;</span></a>
+<a class="sourceLine" id="cb43-19" title="19">        <span class="cf">while</span> (i <span class="op">&lt;</span> j <span class="op">&amp;&amp;</span> (right <span class="op">&lt;</span> <span class="dv">48</span> <span class="op">||</span> (right <span class="op">&gt;</span> <span class="dv">57</span> <span class="op">&amp;&amp;</span> right <span class="op">&lt;</span> <span class="dv">65</span>) <span class="op">||</span> (right <span class="op">&gt;</span> <span class="dv">90</span> <span class="op">&amp;&amp;</span> right <span class="op">&lt;</span> <span class="dv">97</span>) <span class="op">||</span> right <span class="op">&gt;</span> <span class="dv">122</span>)) <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-20" title="20">            right <span class="op">=</span> <span class="va">s</span>.<span class="at">charCodeAt</span>(<span class="op">--</span>j)<span class="op">;</span></a>
+<a class="sourceLine" id="cb43-21" title="21">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb43-22" title="22">        <span class="cf">if</span> (i <span class="op">&gt;=</span> j) <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-23" title="23">            <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb43-24" title="24">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb43-25" title="25">        <span class="cf">if</span> (right <span class="op">&gt;=</span> <span class="dv">65</span> <span class="op">&amp;&amp;</span> right <span class="op">&lt;=</span> <span class="dv">90</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-26" title="26">            right <span class="op">+=</span> <span class="dv">32</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb43-27" title="27">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb43-28" title="28"></a>
+<a class="sourceLine" id="cb43-29" title="29">        <span class="cf">if</span> (left <span class="op">!==</span> right) <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-30" title="30">            <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb43-31" title="31">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb43-32" title="32">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb43-33" title="33"></a>
+<a class="sourceLine" id="cb43-34" title="34">    <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb43-35" title="35"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Hard Related Topics: “Array”: https://leetcode.com/tag/array “String”: https://leetcode.com/tag/string “Backtracking”: https://leetcode.com/tag/backtracking “Breadth-first Search”: https://leetcode.com/tag/breadth-first-search Similar Questions: “Word Ladder”: https://leetcode.com/problems/word-ladder</p>
+<hr />
+<p><a href="#126-word-ladder-iihttpsleetcodecomproblemsword-ladder-iidescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="word-ladder-ii">➤ <a href="https://leetcode.com/problems/word-ladder-ii/description/">126. Word Ladder II</a></h2>
+<h3 id="problem-11">Problem:</h3>
+<p>Given two words (<em>beginWord</em> and <em>endWord</em>), and a dictionary’s word list, find all shortest transformation sequence(s) from <em>beginWord</em> to <em>endWord</em>, such that:</p>
+<ol type="1">
+<li>Only one letter can be changed at a time</li>
+<li>Each transformed word must exist in the word list. Note that <em>beginWord</em> is <em>not</em> a transformed word.</li>
+</ol>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Return an empty list if there is no such transformation sequence.</li>
+<li>All words have the same length.</li>
+<li>All words contain only lowercase alphabetic characters.</li>
+<li>You may assume no duplicates in the word list.</li>
+<li>You may assume <em>beginWord</em> and <em>endWord</em> are non-empty and are not the same.</li>
+</ul>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input:
+beginWord = &quot;hit&quot;,
+endWord = &quot;cog&quot;,
+wordList = [&quot;hot&quot;,&quot;dot&quot;,&quot;dog&quot;,&quot;lot&quot;,&quot;log&quot;,&quot;cog&quot;]
+
+Output:
+[
+  [&quot;hit&quot;,&quot;hot&quot;,&quot;dot&quot;,&quot;dog&quot;,&quot;cog&quot;],
+  [&quot;hit&quot;,&quot;hot&quot;,&quot;lot&quot;,&quot;log&quot;,&quot;cog&quot;]
+]
+</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input:
+beginWord = &quot;hit&quot;
+endWord = &quot;cog&quot;
+wordList = [&quot;hot&quot;,&quot;dot&quot;,&quot;dog&quot;,&quot;lot&quot;,&quot;log&quot;]
+
+Output: []
+
+Explanation: The endWord &quot;cog&quot; is not in wordList, therefore no possible transformation.
+</code></pre>
+<h3 id="solution-11">Solution:</h3>
+<p>This is just like <a href="./127.%20Word%20Ladder">127. Word Ladder</a>.</p>
+<p>The constrain still works, but instead of deleting the words right away, collect them and delete them all when a level ends, so that we can reuse the words (matching different parents in the same level).</p>
+<p>The items in the queue are not just words now. Parent nodes are also kept so that we can backtrack the path from the end.</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb46-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb46-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> beginWord</span></a>
+<a class="sourceLine" id="cb46-3" title="3"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> endWord</span></a>
+<a class="sourceLine" id="cb46-4" title="4"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string</span><span class="co">[]} wordList</span></a>
+<a class="sourceLine" id="cb46-5" title="5"><span class="co"> * </span><span class="an">@return</span><span class="co"> {string[][]}</span></a>
+<a class="sourceLine" id="cb46-6" title="6"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb46-7" title="7"><span class="kw">function</span> <span class="at">findLadders</span>(beginWord<span class="op">,</span> endWord<span class="op">,</span> wordList) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-8" title="8">    wordList <span class="op">=</span> <span class="kw">new</span> <span class="at">Set</span>(wordList)<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-9" title="9">    <span class="cf">if</span> (<span class="op">!</span><span class="va">wordList</span>.<span class="at">has</span>(endWord)) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-10" title="10">        <span class="cf">return</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-11" title="11">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-12" title="12"></a>
+<a class="sourceLine" id="cb46-13" title="13">    <span class="kw">const</span> ALPHABET <span class="op">=</span> <span class="st">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-14" title="14"></a>
+<a class="sourceLine" id="cb46-15" title="15">    <span class="kw">const</span> result <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-16" title="16">    <span class="kw">let</span> isEndWordFound <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-17" title="17">    <span class="kw">const</span> levelWords <span class="op">=</span> <span class="kw">new</span> <span class="at">Set</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-18" title="18">    <span class="kw">const</span> queue <span class="op">=</span> [[beginWord<span class="op">,</span> <span class="kw">null</span>]<span class="op">,</span> <span class="kw">null</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-19" title="19">    <span class="cf">while</span> (<span class="va">queue</span>.<span class="at">length</span> <span class="op">&gt;</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-20" title="20">        <span class="kw">const</span> node <span class="op">=</span> <span class="va">queue</span>.<span class="at">shift</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-21" title="21"></a>
+<a class="sourceLine" id="cb46-22" title="22">        <span class="cf">if</span> (node <span class="op">===</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-23" title="23">            <span class="cf">if</span> (isEndWordFound) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-24" title="24">                <span class="cf">break</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-25" title="25">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-26" title="26">            <span class="va">levelWords</span>.<span class="at">forEach</span>((word) <span class="kw">=&gt;</span> <span class="va">wordList</span>.<span class="at">delete</span>(word))<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-27" title="27">            <span class="va">levelWords</span>.<span class="at">clear</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-28" title="28">            <span class="va">queue</span>.<span class="at">push</span>(<span class="kw">null</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-29" title="29">            <span class="cf">continue</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-30" title="30">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-31" title="31"></a>
+<a class="sourceLine" id="cb46-32" title="32">        <span class="kw">const</span> word <span class="op">=</span> node[<span class="dv">0</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-33" title="33"></a>
+<a class="sourceLine" id="cb46-34" title="34">        <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="va">word</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&gt;=</span> <span class="dv">0</span><span class="op">;</span> i<span class="op">--</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-35" title="35">            <span class="kw">const</span> head <span class="op">=</span> <span class="va">word</span>.<span class="at">slice</span>(<span class="dv">0</span><span class="op">,</span> i)<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-36" title="36">            <span class="kw">const</span> tail <span class="op">=</span> <span class="va">word</span>.<span class="at">slice</span>(i <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-37" title="37"></a>
+<a class="sourceLine" id="cb46-38" title="38">            <span class="cf">for</span> (<span class="kw">let</span> c <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> c <span class="op">&lt;</span> <span class="dv">26</span><span class="op">;</span> c<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-39" title="39">                <span class="cf">if</span> (ALPHABET[c] <span class="op">!==</span> word[i]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-40" title="40">                    <span class="kw">const</span> w <span class="op">=</span> head <span class="op">+</span> ALPHABET[c] <span class="op">+</span> tail<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-41" title="41">                    <span class="cf">if</span> (w <span class="op">===</span> endWord) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-42" title="42">                        <span class="kw">const</span> path <span class="op">=</span> [endWord]<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-43" title="43">                        <span class="cf">for</span> (<span class="kw">let</span> n <span class="op">=</span> node<span class="op">;</span> n <span class="op">!==</span> <span class="kw">null</span><span class="op">;</span> n <span class="op">=</span> n[<span class="dv">1</span>]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-44" title="44">                            <span class="va">path</span>.<span class="at">unshift</span>(n[<span class="dv">0</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-45" title="45">                        <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-46" title="46">                        <span class="va">result</span>.<span class="at">push</span>(path)<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-47" title="47">                        isEndWordFound <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-48" title="48">                    <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-49" title="49">                    <span class="cf">if</span> (<span class="va">wordList</span>.<span class="at">has</span>(w)) <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-50" title="50">                        <span class="va">levelWords</span>.<span class="at">add</span>(w)<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-51" title="51">                        <span class="va">queue</span>.<span class="at">push</span>([w<span class="op">,</span> node])<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-52" title="52">                    <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-53" title="53">                <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-54" title="54">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-55" title="55">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-56" title="56">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb46-57" title="57"></a>
+<a class="sourceLine" id="cb46-58" title="58">    <span class="cf">return</span> result<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-59" title="59"><span class="op">}</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Medium Related Topics: “Breadth-first Search”: https://leetcode.com/tag/breadth-first-search Similar Questions: “Word Ladder II”: https://leetcode.com/problems/word-ladder-ii “Minimum Genetic Mutation”: https://leetcode.com/problems/minimum-genetic-mutation</p>
+<hr />
+<p><a href="#127-word-ladderhttpsleetcodecomproblemsword-ladderdescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="word-ladder">➤ <a href="https://leetcode.com/problems/word-ladder/description/">127. Word Ladder</a></h2>
+<h3 id="problem-12">Problem:</h3>
+<p>Given two words (<em>beginWord</em> and <em>endWord</em>), and a dictionary’s word list, find the length of shortest transformation sequence from <em>beginWord</em> to <em>endWord</em>, such that:</p>
+<ol type="1">
+<li>Only one letter can be changed at a time.</li>
+<li>Each transformed word must exist in the word list. Note that <em>beginWord</em> is <em>not</em> a transformed word.</li>
+</ol>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Return 0 if there is no such transformation sequence.</li>
+<li>All words have the same length.</li>
+<li>All words contain only lowercase alphabetic characters.</li>
+<li>You may assume no duplicates in the word list.</li>
+<li>You may assume <em>beginWord</em> and <em>endWord</em> are non-empty and are not the same.</li>
+</ul>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input:
+beginWord = &quot;hit&quot;,
+endWord = &quot;cog&quot;,
+wordList = [&quot;hot&quot;,&quot;dot&quot;,&quot;dog&quot;,&quot;lot&quot;,&quot;log&quot;,&quot;cog&quot;]
+
+Output: 5
+
+Explanation: As one shortest transformation is &quot;hit&quot; -&gt; &quot;hot&quot; -&gt; &quot;dot&quot; -&gt; &quot;dog&quot; -&gt; &quot;cog&quot;,
+return its length 5.
+</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input:
+beginWord = &quot;hit&quot;
+endWord = &quot;cog&quot;
+wordList = [&quot;hot&quot;,&quot;dot&quot;,&quot;dog&quot;,&quot;lot&quot;,&quot;log&quot;]
+
+Output: 0
+
+Explanation: The endWord &quot;cog&quot; is not in wordList, therefore no possible transformation.
+</code></pre>
+<h3 id="solution-12">Solution:</h3>
+<p>Think of it as building a tree, with <code>begineWord</code> as root and <code>endWord</code> as leaves.</p>
+<p>The best way control the depth (length of the shortest transformations) while building the tree is level-order traversal (BFS).</p>
+<p>We do not actually build the tree because it is expensive (astronomical if the list is huge). In fact, we only need one shortest path. So just like Dijkstra’s algorithm, we say that the first time (level <code>i</code>) we encounter a word that turns out to be in a shortest path, then level <code>i</code> is the lowest level this word could ever get. We can safely remove it from the <code>wordList</code>.</p>
+<p>To find all the next words, instead of filtering the <code>wordList</code>, enumerate all 25 possible words and check if in <code>wordList</code>.</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb49-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb49-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> beginWord</span></a>
+<a class="sourceLine" id="cb49-3" title="3"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> endWord</span></a>
+<a class="sourceLine" id="cb49-4" title="4"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string</span><span class="co">[]} wordList</span></a>
+<a class="sourceLine" id="cb49-5" title="5"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb49-6" title="6"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb49-7" title="7"><span class="kw">let</span> ladderLength <span class="op">=</span> <span class="kw">function</span> (beginWord<span class="op">,</span> endWord<span class="op">,</span> wordList) <span class="op">{</span></a>
+<a class="sourceLine" id="cb49-8" title="8">    wordList <span class="op">=</span> <span class="kw">new</span> <span class="at">Set</span>(wordList)<span class="op">;</span></a>
+<a class="sourceLine" id="cb49-9" title="9">    <span class="cf">if</span> (<span class="op">!</span><span class="va">wordList</span>.<span class="at">has</span>(endWord)) <span class="op">{</span></a>
+<a class="sourceLine" id="cb49-10" title="10">        <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb49-11" title="11">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb49-12" title="12"></a>
+<a class="sourceLine" id="cb49-13" title="13">    <span class="kw">const</span> ALPHABET <span class="op">=</span> <span class="st">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb49-14" title="14"></a>
+<a class="sourceLine" id="cb49-15" title="15">    <span class="kw">let</span> level <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb49-16" title="16">    <span class="kw">const</span> queue <span class="op">=</span> [beginWord<span class="op">,</span> <span class="kw">null</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb49-17" title="17">    <span class="cf">while</span> (<span class="va">queue</span>.<span class="at">length</span> <span class="op">&gt;</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb49-18" title="18">        <span class="kw">const</span> word <span class="op">=</span> <span class="va">queue</span>.<span class="at">shift</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb49-19" title="19"></a>
+<a class="sourceLine" id="cb49-20" title="20">        <span class="cf">if</span> (word <span class="op">===</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb49-21" title="21">            level<span class="op">++;</span></a>
+<a class="sourceLine" id="cb49-22" title="22">            <span class="va">queue</span>.<span class="at">push</span>(<span class="kw">null</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb49-23" title="23">            <span class="cf">continue</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb49-24" title="24">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb49-25" title="25"></a>
+<a class="sourceLine" id="cb49-26" title="26">        <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="va">word</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&gt;=</span> <span class="dv">0</span><span class="op">;</span> i<span class="op">--</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb49-27" title="27">            <span class="kw">const</span> head <span class="op">=</span> <span class="va">word</span>.<span class="at">slice</span>(<span class="dv">0</span><span class="op">,</span> i)<span class="op">;</span></a>
+<a class="sourceLine" id="cb49-28" title="28">            <span class="kw">const</span> tail <span class="op">=</span> <span class="va">word</span>.<span class="at">slice</span>(i <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb49-29" title="29"></a>
+<a class="sourceLine" id="cb49-30" title="30">            <span class="cf">for</span> (<span class="kw">let</span> c <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> c <span class="op">&lt;</span> <span class="dv">26</span><span class="op">;</span> c<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb49-31" title="31">                <span class="cf">if</span> (ALPHABET[c] <span class="op">!==</span> word[i]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb49-32" title="32">                    <span class="kw">const</span> word <span class="op">=</span> head <span class="op">+</span> ALPHABET[c] <span class="op">+</span> tail<span class="op">;</span></a>
+<a class="sourceLine" id="cb49-33" title="33">                    <span class="cf">if</span> (word <span class="op">===</span> endWord) <span class="op">{</span></a>
+<a class="sourceLine" id="cb49-34" title="34">                        <span class="cf">return</span> level <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb49-35" title="35">                    <span class="op">}</span></a>
+<a class="sourceLine" id="cb49-36" title="36">                    <span class="cf">if</span> (<span class="va">wordList</span>.<span class="at">delete</span>(word)) <span class="op">{</span></a>
+<a class="sourceLine" id="cb49-37" title="37">                        <span class="va">queue</span>.<span class="at">push</span>(word)<span class="op">;</span></a>
+<a class="sourceLine" id="cb49-38" title="38">                    <span class="op">}</span></a>
+<a class="sourceLine" id="cb49-39" title="39">                <span class="op">}</span></a>
+<a class="sourceLine" id="cb49-40" title="40">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb49-41" title="41">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb49-42" title="42">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb49-43" title="43"></a>
+<a class="sourceLine" id="cb49-44" title="44">    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb49-45" title="45"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Hard Related Topics: “Array”: https://leetcode.com/tag/array “Union Find”: https://leetcode.com/tag/union-find Similar Questions: “Binary Tree Longest Consecutive Sequence”: https://leetcode.com/problems/binary-tree-longest-consecutive-sequence</p>
+<hr />
+<p><a href="#128-longest-consecutive-sequencehttpsleetcodecomproblemslongest-consecutive-sequencedescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="longest-consecutive-sequence">➤ <a href="https://leetcode.com/problems/longest-consecutive-sequence/description/">128. Longest Consecutive Sequence</a></h2>
+<h3 id="problem-13">Problem:</h3>
+<p>Given an unsorted array of integers, find the length of the longest consecutive elements sequence.</p>
+<p>Your algorithm should run in O(<em>n</em>) complexity.</p>
+<p><strong>Example:</strong></p>
+<pre><code>Input: [100, 4, 200, 1, 3, 2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+</code></pre>
+<h3 id="solution-13">Solution:</h3>
+<p>Build a Set from the list. Pick a number, find all it’s adjacent numbers that are also in the Set. Count them and remove them all from the Set. Repeat until the Set is empty. Time complexity O(n + n) = O(n).</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb51-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb51-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} nums</span></a>
+<a class="sourceLine" id="cb51-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb51-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb51-5" title="5"><span class="kw">let</span> longestConsecutive <span class="op">=</span> <span class="kw">function</span> (nums) <span class="op">{</span></a>
+<a class="sourceLine" id="cb51-6" title="6">    <span class="kw">const</span> numSet <span class="op">=</span> <span class="kw">new</span> <span class="at">Set</span>(nums)<span class="op">;</span></a>
+<a class="sourceLine" id="cb51-7" title="7">    <span class="kw">let</span> maxCount <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb51-8" title="8">    <span class="cf">while</span> (<span class="va">numSet</span>.<span class="at">size</span> <span class="op">&gt;</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb51-9" title="9">        <span class="kw">const</span> num <span class="op">=</span> <span class="va">numSet</span>.<span class="at">values</span>().<span class="at">next</span>().<span class="at">value</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb51-10" title="10">        <span class="va">numSet</span>.<span class="at">delete</span>(num)<span class="op">;</span></a>
+<a class="sourceLine" id="cb51-11" title="11">        <span class="kw">let</span> count <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb51-12" title="12">        <span class="cf">for</span> (<span class="kw">let</span> n <span class="op">=</span> num <span class="op">+</span> <span class="dv">1</span><span class="op">;</span> <span class="va">numSet</span>.<span class="at">delete</span>(n)<span class="op">;</span> n<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb51-13" title="13">            count<span class="op">++;</span></a>
+<a class="sourceLine" id="cb51-14" title="14">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb51-15" title="15">        <span class="cf">for</span> (<span class="kw">let</span> n <span class="op">=</span> num <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> <span class="va">numSet</span>.<span class="at">delete</span>(n)<span class="op">;</span> n<span class="op">--</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb51-16" title="16">            count<span class="op">++;</span></a>
+<a class="sourceLine" id="cb51-17" title="17">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb51-18" title="18">        <span class="cf">if</span> (count <span class="op">&gt;</span> maxCount) <span class="op">{</span></a>
+<a class="sourceLine" id="cb51-19" title="19">            maxCount <span class="op">=</span> count<span class="op">;</span></a>
+<a class="sourceLine" id="cb51-20" title="20">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb51-21" title="21">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb51-22" title="22">    <span class="cf">return</span> maxCount<span class="op">;</span></a>
+<a class="sourceLine" id="cb51-23" title="23"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Medium Related Topics: “Tree”: https://leetcode.com/tag/tree “Depth-first Search”: https://leetcode.com/tag/depth-first-search Similar Questions: “Path Sum”: https://leetcode.com/problems/path-sum “Binary Tree Maximum Path Sum”: https://leetcode.com/problems/binary-tree-maximum-path-sum</p>
+<hr />
+<p><a href="#129-sum-root-to-leaf-numbershttpsleetcodecomproblemssum-root-to-leaf-numbersdescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="sum-root-to-leaf-numbers">➤ <a href="https://leetcode.com/problems/sum-root-to-leaf-numbers/description/">129. Sum Root to Leaf Numbers</a></h2>
+<h3 id="problem-14">Problem:</h3>
+<p>Given a binary tree containing digits from <code>0-9</code> only, each root-to-leaf path could represent a number.</p>
+<p>An example is the root-to-leaf path <code>1-&gt;2-&gt;3</code> which represents the number <code>123</code>.</p>
+<p>Find the total sum of all root-to-leaf numbers.</p>
+<p><strong>Note:</strong> A leaf is a node with no children.</p>
+<p><strong>Example:</strong></p>
+<pre><code>Input: [1,2,3]
+    1
+   / \
+  2   3
+Output: 25
+Explanation:
+The root-to-leaf path 1-&gt;2 represents the number 12.
+The root-to-leaf path 1-&gt;3 represents the number 13.
+Therefore, sum = 12 + 13 = 25.</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: [4,9,0,5,1]
+    4
+   / \
+  9   0
+ / \
+5   1
+Output: 1026
+Explanation:
+The root-to-leaf path 4-&gt;9-&gt;5 represents the number 495.
+The root-to-leaf path 4-&gt;9-&gt;1 represents the number 491.
+The root-to-leaf path 4-&gt;0 represents the number 40.
+Therefore, sum = 495 + 491 + 40 = 1026.</code></pre>
+<h3 id="solution-14">Solution:</h3>
+<p>To write a clean solution for this promblem, use <code>0</code> as indicator of leaf node. If all the children get <code>0</code>, it is a leaf node, return the sum of current level.</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb54-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb54-2" title="2"><span class="co"> * Definition for a binary tree node.</span></a>
+<a class="sourceLine" id="cb54-3" title="3"><span class="co"> * function TreeNode(val) {</span></a>
+<a class="sourceLine" id="cb54-4" title="4"><span class="co"> *     this.val = val;</span></a>
+<a class="sourceLine" id="cb54-5" title="5"><span class="co"> *     this.left = this.right = null;</span></a>
+<a class="sourceLine" id="cb54-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb54-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb54-8" title="8"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb54-9" title="9"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb54-10" title="10"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb54-11" title="11"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb54-12" title="12"><span class="kw">let</span> sumNumbers <span class="op">=</span> <span class="kw">function</span> (root<span class="op">,</span> sum <span class="op">=</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb54-13" title="13">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb54-14" title="14">        <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb54-15" title="15">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb54-16" title="16">    sum <span class="op">=</span> sum <span class="op">*</span> <span class="dv">10</span> <span class="op">+</span> <span class="va">root</span>.<span class="at">val</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb54-17" title="17">    <span class="cf">return</span> <span class="at">sumNumbers</span>(<span class="va">root</span>.<span class="at">left</span><span class="op">,</span> sum) <span class="op">+</span> <span class="at">sumNumbers</span>(<span class="va">root</span>.<span class="at">right</span><span class="op">,</span> sum) <span class="op">||</span> sum<span class="op">;</span></a>
+<a class="sourceLine" id="cb54-18" title="18"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Medium Related Topics: “Depth-first Search”: https://leetcode.com/tag/depth-first-search “Breadth-first Search”: https://leetcode.com/tag/breadth-first-search “Union Find”: https://leetcode.com/tag/union-find Similar Questions: “Number of Islands”: https://leetcode.com/problems/number-of-islands “Walls and Gates”: https://leetcode.com/problems/walls-and-gates</p>
+<hr />
+<p><a href="#130-surrounded-regionshttpsleetcodecomproblemssurrounded-regionsdescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="surrounded-regions">➤ <a href="https://leetcode.com/problems/surrounded-regions/description/">130. Surrounded Regions</a></h2>
+<h3 id="problem-15">Problem:</h3>
+<p>Given a 2D board containing <code>'X'</code> and <code>'O'</code> (<strong>the letter O</strong>), capture all regions surrounded by <code>'X'</code>.</p>
+<p>A region is captured by flipping all <code>'O'</code>s into <code>'X'</code>s in that surrounded region.</p>
+<p><strong>Example:</strong></p>
+<pre><code>X X X X
+X O O X
+X X O X
+X O X X
+</code></pre>
+<p>After running your function, the board should be:</p>
+<pre><code>X X X X
+X X X X
+X X X X
+X O X X
+</code></pre>
+<p><strong>Explanation:</strong></p>
+<p>Surrounded regions shouldn’t be on the border, which means that any <code>'O'</code> on the border of the board are not flipped to <code>'X'</code>. Any <code>'O'</code> that is not on the border and it is not connected to an <code>'O'</code> on the border will be flipped to <code>'X'</code>. Two cells are connected if they are adjacent cells connected horizontally or vertically.</p>
+<h3 id="solution-15">Solution:</h3>
+<p>Find all the <code>O</code>s that are connected to the <code>O</code>s on the border, change them to <code>#</code>. Then scan the board, change <code>O</code> to <code>X</code> and <code>#</code> back to <code>O</code>.</p>
+<p>The process of finding the connected <code>O</code>s is just like tree traversal. <code>O</code>s on the border are the same level. Their children are the second level. And so on.</p>
+<p>So both BFS and DFS are good. I prefer BFS when pruning is not needed in favor of its readability.</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb57-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb57-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{character</span><span class="co">[][]} board</span></a>
+<a class="sourceLine" id="cb57-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {void} Do not return anything, modify board in-place instead.</span></a>
+<a class="sourceLine" id="cb57-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb57-5" title="5"><span class="kw">let</span> solve <span class="op">=</span> <span class="kw">function</span> (board) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-6" title="6">    <span class="kw">const</span> height <span class="op">=</span> <span class="va">board</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-7" title="7">    <span class="cf">if</span> (height <span class="op">&lt;=</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-8" title="8">        <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-9" title="9">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-10" title="10">    <span class="kw">const</span> width <span class="op">=</span> board[<span class="dv">0</span>].<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-11" title="11">    <span class="cf">if</span> (width <span class="op">&lt;=</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-12" title="12">        <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-13" title="13">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-14" title="14"></a>
+<a class="sourceLine" id="cb57-15" title="15">    <span class="kw">const</span> rowend <span class="op">=</span> height <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-16" title="16">    <span class="kw">const</span> colend <span class="op">=</span> width <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-17" title="17"></a>
+<a class="sourceLine" id="cb57-18" title="18">    <span class="kw">const</span> queue <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-19" title="19"></a>
+<a class="sourceLine" id="cb57-20" title="20">    <span class="cf">for</span> (<span class="kw">let</span> row <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> row <span class="op">&lt;</span> height<span class="op">;</span> row<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-21" title="21">        <span class="cf">if</span> (board[row][<span class="dv">0</span>] <span class="op">===</span> <span class="st">&#39;O&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-22" title="22">            board[row][<span class="dv">0</span>] <span class="op">=</span> <span class="st">&#39;#&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-23" title="23">            <span class="va">queue</span>.<span class="at">push</span>(row<span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-24" title="24">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-25" title="25">        <span class="cf">if</span> (board[row][colend] <span class="op">===</span> <span class="st">&#39;O&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-26" title="26">            board[row][colend] <span class="op">=</span> <span class="st">&#39;#&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-27" title="27">            <span class="va">queue</span>.<span class="at">push</span>(row<span class="op">,</span> colend)<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-28" title="28">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-29" title="29">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-30" title="30"></a>
+<a class="sourceLine" id="cb57-31" title="31">    <span class="cf">for</span> (<span class="kw">let</span> col <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> col <span class="op">&lt;</span> width<span class="op">;</span> col<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-32" title="32">        <span class="cf">if</span> (board[<span class="dv">0</span>][col] <span class="op">===</span> <span class="st">&#39;O&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-33" title="33">            board[<span class="dv">0</span>][col] <span class="op">=</span> <span class="st">&#39;#&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-34" title="34">            <span class="va">queue</span>.<span class="at">push</span>(<span class="dv">0</span><span class="op">,</span> col)<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-35" title="35">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-36" title="36">        <span class="cf">if</span> (board[rowend][col] <span class="op">===</span> <span class="st">&#39;O&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-37" title="37">            board[rowend][col] <span class="op">=</span> <span class="st">&#39;#&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-38" title="38">            <span class="va">queue</span>.<span class="at">push</span>(rowend<span class="op">,</span> col)<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-39" title="39">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-40" title="40">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-41" title="41"></a>
+<a class="sourceLine" id="cb57-42" title="42">    <span class="cf">while</span> (<span class="va">queue</span>.<span class="at">length</span> <span class="op">&gt;</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-43" title="43">        <span class="kw">const</span> row <span class="op">=</span> <span class="va">queue</span>.<span class="at">shift</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-44" title="44">        <span class="kw">const</span> col <span class="op">=</span> <span class="va">queue</span>.<span class="at">shift</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-45" title="45">        <span class="cf">if</span> (row <span class="op">&lt;</span> rowend <span class="op">&amp;&amp;</span> board[row <span class="op">+</span> <span class="dv">1</span>][col] <span class="op">===</span> <span class="st">&#39;O&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-46" title="46">            board[row <span class="op">+</span> <span class="dv">1</span>][col] <span class="op">=</span> <span class="st">&#39;#&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-47" title="47">            <span class="va">queue</span>.<span class="at">push</span>(row <span class="op">+</span> <span class="dv">1</span><span class="op">,</span> col)<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-48" title="48">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-49" title="49">        <span class="cf">if</span> (row <span class="op">&gt;</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> board[row <span class="op">-</span> <span class="dv">1</span>][col] <span class="op">===</span> <span class="st">&#39;O&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-50" title="50">            board[row <span class="op">-</span> <span class="dv">1</span>][col] <span class="op">=</span> <span class="st">&#39;#&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-51" title="51">            <span class="va">queue</span>.<span class="at">push</span>(row <span class="op">-</span> <span class="dv">1</span><span class="op">,</span> col)<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-52" title="52">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-53" title="53">        <span class="cf">if</span> (board[row][col <span class="op">+</span> <span class="dv">1</span>] <span class="op">===</span> <span class="st">&#39;O&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-54" title="54">            board[row][col <span class="op">+</span> <span class="dv">1</span>] <span class="op">=</span> <span class="st">&#39;#&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-55" title="55">            <span class="va">queue</span>.<span class="at">push</span>(row<span class="op">,</span> col <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-56" title="56">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-57" title="57">        <span class="cf">if</span> (board[row][col <span class="op">-</span> <span class="dv">1</span>] <span class="op">===</span> <span class="st">&#39;O&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-58" title="58">            board[row][col <span class="op">-</span> <span class="dv">1</span>] <span class="op">=</span> <span class="st">&#39;#&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-59" title="59">            <span class="va">queue</span>.<span class="at">push</span>(row<span class="op">,</span> col <span class="op">-</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb57-60" title="60">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-61" title="61">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-62" title="62"></a>
+<a class="sourceLine" id="cb57-63" title="63">    <span class="cf">for</span> (<span class="kw">let</span> row <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> row <span class="op">&lt;</span> height<span class="op">;</span> row<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-64" title="64">        <span class="cf">for</span> (<span class="kw">let</span> col <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> col <span class="op">&lt;</span> width<span class="op">;</span> col<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-65" title="65">            <span class="cf">if</span> (board[row][col] <span class="op">===</span> <span class="st">&#39;#&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-66" title="66">                board[row][col] <span class="op">=</span> <span class="st">&#39;O&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-67" title="67">            <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (board[row][col] <span class="op">===</span> <span class="st">&#39;O&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb57-68" title="68">                board[row][col] <span class="op">=</span> <span class="st">&#39;X&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb57-69" title="69">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-70" title="70">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-71" title="71">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb57-72" title="72"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Difficulty: Medium Related Topics: “Depth-first Search”: https://leetcode.com/tag/depth-first-search “Breadth-first Search”: https://leetcode.com/tag/breadth-first-search “Graph”: https://leetcode.com/tag/graph Similar Questions: “Copy List with Random Pointer”: https://leetcode.com/problems/copy-list-with-random-pointer</p>
+<hr />
+<p><a href="#133-clone-graphhttpsleetcodecomproblemsclone-graphdescription"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h2 id="clone-graph">➤ <a href="https://leetcode.com/problems/clone-graph/description/">133. Clone Graph</a></h2>
+<h3 id="problem-16">Problem:</h3>
+<p>Given the head of a graph, return a deep copy (clone) of the graph. Each node in the graph contains a <code>label</code> (<code>int</code>) and a list (<code>List[UndirectedGraphNode]</code>) of its <code>neighbors</code>. There is an edge between the given node and each of the nodes in its neighbors.</p>
+<p>OJ’s undirected graph serialization (so you can understand error output):</p>
+<p>Nodes are labeled uniquely.</p>
+<p>We use <code>#</code> as a separator for each node, and <code>,</code> as a separator for node label and each neighbor of the node.</p>
+<p>As an example, consider the serialized graph <code>{0,1,2#1,2#2,2}</code>.</p>
+<p>The graph has a total of three nodes, and therefore contains three parts as separated by <code>#</code>.</p>
+<ol type="1">
+<li>First node is labeled as <code>0</code>. Connect node <code>0</code> to both nodes <code>1</code> and <code>2</code>.</li>
+<li>Second node is labeled as <code>1</code>. Connect node <code>1</code> to node <code>2</code>.</li>
+<li>Third node is labeled as <code>2</code>. Connect node <code>2</code> to node <code>2</code> (itself), thus forming a self-cycle.</li>
+</ol>
+<p>Visually, the graph looks like the following:</p>
+<pre><code>       1
+      / \
+     /   \
+    0 --- 2
+         / \
+         \_/
+</code></pre>
+<p><strong>Note</strong>: The information about the tree serialization is only meant so that you can understand error output if you get a wrong answer. You don’t need to understand the serialization to solve the problem.</p>
+<h3 id="solution-16">Solution:</h3>
+<p>DFS. Cache the visited node before entering the next recursion.</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb59-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb59-2" title="2"><span class="co"> * Definition for undirected graph.</span></a>
+<a class="sourceLine" id="cb59-3" title="3"><span class="co"> * function UndirectedGraphNode(label) {</span></a>
+<a class="sourceLine" id="cb59-4" title="4"><span class="co"> *     this.label = label;</span></a>
+<a class="sourceLine" id="cb59-5" title="5"><span class="co"> *     this.neighbors = [];   // Array of UndirectedGraphNode</span></a>
+<a class="sourceLine" id="cb59-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb59-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb59-8" title="8"></a>
+<a class="sourceLine" id="cb59-9" title="9"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb59-10" title="10"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{UndirectedGraphNode}</span><span class="co"> graph</span></a>
+<a class="sourceLine" id="cb59-11" title="11"><span class="co"> * </span><span class="an">@return</span><span class="co"> {UndirectedGraphNode}</span></a>
+<a class="sourceLine" id="cb59-12" title="12"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb59-13" title="13"><span class="kw">let</span> cloneGraph <span class="op">=</span> <span class="kw">function</span> (graph) <span class="op">{</span></a>
+<a class="sourceLine" id="cb59-14" title="14">    <span class="kw">const</span> cache <span class="op">=</span> <span class="op">{};</span></a>
+<a class="sourceLine" id="cb59-15" title="15">    <span class="cf">return</span> <span class="at">_clone</span>(graph)<span class="op">;</span></a>
+<a class="sourceLine" id="cb59-16" title="16"></a>
+<a class="sourceLine" id="cb59-17" title="17">    <span class="kw">function</span> <span class="at">_clone</span>(graph) <span class="op">{</span></a>
+<a class="sourceLine" id="cb59-18" title="18">        <span class="cf">if</span> (<span class="op">!</span>graph) <span class="op">{</span></a>
+<a class="sourceLine" id="cb59-19" title="19">            <span class="cf">return</span> graph<span class="op">;</span></a>
+<a class="sourceLine" id="cb59-20" title="20">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb59-21" title="21">        <span class="kw">const</span> label <span class="op">=</span> <span class="va">graph</span>.<span class="at">label</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb59-22" title="22">        <span class="cf">if</span> (<span class="op">!</span>cache[label]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb59-23" title="23">            cache[label] <span class="op">=</span> <span class="kw">new</span> <span class="at">UndirectedGraphNode</span>(label)<span class="op">;</span></a>
+<a class="sourceLine" id="cb59-24" title="24">            cache[label].<span class="at">neighbors</span> <span class="op">=</span> <span class="va">graph</span>.<span class="va">neighbors</span>.<span class="at">map</span>(_clone)<span class="op">;</span></a>
+<a class="sourceLine" id="cb59-25" title="25">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb59-26" title="26">        <span class="cf">return</span> cache[label]<span class="op">;</span></a>
+<a class="sourceLine" id="cb59-27" title="27">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb59-28" title="28"><span class="op">};</span></a></code></pre></div>
+<figure>
+<embed src="https://github.com/everthis/leetcode-js/blob/master/images/binary-tree-upside-down.webp" title="binary-tree-upside-down" /><figcaption>alt text</figcaption>
+</figure>
+<div class="sourceCode" id="cb60"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb60-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb60-2" title="2"><span class="co"> * Definition for a binary tree node.</span></a>
+<a class="sourceLine" id="cb60-3" title="3"><span class="co"> * function TreeNode(val) {</span></a>
+<a class="sourceLine" id="cb60-4" title="4"><span class="co"> *     this.val = val;</span></a>
+<a class="sourceLine" id="cb60-5" title="5"><span class="co"> *     this.left = this.right = null;</span></a>
+<a class="sourceLine" id="cb60-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb60-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb60-8" title="8"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb60-9" title="9"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{TreeNode}</span><span class="co"> root</span></a>
+<a class="sourceLine" id="cb60-10" title="10"><span class="co"> * </span><span class="an">@return</span><span class="co"> {TreeNode}</span></a>
+<a class="sourceLine" id="cb60-11" title="11"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb60-12" title="12"><span class="kw">const</span> upsideDownBinaryTree <span class="op">=</span> <span class="kw">function</span> (root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb60-13" title="13">    <span class="kw">let</span> curr <span class="op">=</span> root<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-14" title="14">    <span class="kw">let</span> next <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb60-15" title="15">    <span class="kw">let</span> temp <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb60-16" title="16">    <span class="kw">let</span> prev <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb60-17" title="17">    <span class="cf">while</span> (curr <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb60-18" title="18">        next <span class="op">=</span> <span class="va">curr</span>.<span class="at">left</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb60-19" title="19">        <span class="va">curr</span>.<span class="at">left</span> <span class="op">=</span> temp<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-20" title="20">        temp <span class="op">=</span> <span class="va">curr</span>.<span class="at">right</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb60-21" title="21">        <span class="va">curr</span>.<span class="at">right</span> <span class="op">=</span> prev<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-22" title="22">        prev <span class="op">=</span> curr<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-23" title="23">        curr <span class="op">=</span> next<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-24" title="24">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb60-25" title="25">    <span class="cf">return</span> prev<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-26" title="26"><span class="op">};</span></a>
+<a class="sourceLine" id="cb60-27" title="27"></a>
+<a class="sourceLine" id="cb60-28" title="28"><span class="co">// another</span></a>
+<a class="sourceLine" id="cb60-29" title="29"></a>
+<a class="sourceLine" id="cb60-30" title="30"><span class="kw">const</span> upsideDownBinaryTree <span class="op">=</span> <span class="kw">function</span> (root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb60-31" title="31">    <span class="cf">if</span> (root <span class="op">==</span> <span class="kw">null</span> <span class="op">||</span> <span class="va">root</span>.<span class="at">left</span> <span class="op">==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb60-32" title="32">        <span class="cf">return</span> root<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-33" title="33">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb60-34" title="34">    <span class="kw">const</span> newRoot <span class="op">=</span> <span class="at">upsideDownBinaryTree</span>(<span class="va">root</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-35" title="35">    <span class="va">root</span>.<span class="va">left</span>.<span class="at">left</span> <span class="op">=</span> <span class="va">root</span>.<span class="at">right</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb60-36" title="36">    <span class="va">root</span>.<span class="va">left</span>.<span class="at">right</span> <span class="op">=</span> root<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-37" title="37">    <span class="va">root</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb60-38" title="38">    <span class="va">root</span>.<span class="at">right</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb60-39" title="39">    <span class="cf">return</span> newRoot<span class="op">;</span></a>
+<a class="sourceLine" id="cb60-40" title="40"><span class="op">};</span></a></code></pre></div>
+<figure>
+<img src="https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png" title="maximum-sum-circular-subarray" alt="alt text" /><figcaption>alt text</figcaption>
+</figure>
+<div class="sourceCode" id="cb61"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb61-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb61-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} A</span></a>
+<a class="sourceLine" id="cb61-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb61-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb61-5" title="5"><span class="kw">const</span> maxSubarraySumCircular <span class="op">=</span> <span class="kw">function</span> (A) <span class="op">{</span></a>
+<a class="sourceLine" id="cb61-6" title="6">    <span class="kw">let</span> minSum <span class="op">=</span> <span class="kw">Infinity</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb61-7" title="7">        sum <span class="op">=</span> <span class="dv">0</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb61-8" title="8">        maxSum <span class="op">=</span> <span class="op">-</span><span class="kw">Infinity</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb61-9" title="9">        curMax <span class="op">=</span> <span class="dv">0</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb61-10" title="10">        curMin <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb61-11" title="11">    <span class="cf">for</span> (<span class="kw">let</span> a <span class="kw">of</span> A) <span class="op">{</span></a>
+<a class="sourceLine" id="cb61-12" title="12">        sum <span class="op">+=</span> a<span class="op">;</span></a>
+<a class="sourceLine" id="cb61-13" title="13">        curMax <span class="op">=</span> <span class="va">Math</span>.<span class="at">max</span>(curMax <span class="op">+</span> a<span class="op">,</span> a)<span class="op">;</span></a>
+<a class="sourceLine" id="cb61-14" title="14">        maxSum <span class="op">=</span> <span class="va">Math</span>.<span class="at">max</span>(maxSum<span class="op">,</span> curMax)<span class="op">;</span></a>
+<a class="sourceLine" id="cb61-15" title="15">        curMin <span class="op">=</span> <span class="va">Math</span>.<span class="at">min</span>(curMin <span class="op">+</span> a<span class="op">,</span> a)<span class="op">;</span></a>
+<a class="sourceLine" id="cb61-16" title="16">        minSum <span class="op">=</span> <span class="va">Math</span>.<span class="at">min</span>(minSum<span class="op">,</span> curMin)<span class="op">;</span></a>
+<a class="sourceLine" id="cb61-17" title="17">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb61-18" title="18">    <span class="cf">return</span> maxSum <span class="op">&gt;</span> <span class="dv">0</span> <span class="op">?</span> <span class="va">Math</span>.<span class="at">max</span>(maxSum<span class="op">,</span> sum <span class="op">-</span> minSum) : maxSum<span class="op">;</span></a>
+<a class="sourceLine" id="cb61-19" title="19"><span class="op">};</span></a></code></pre></div>
+<p><a href="#balanced-binary-tree---leetcode"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+<h1 id="balanced-binary-tree---leetcode">➤ Balanced Binary Tree - LeetCode</h1>
+<blockquote>
+<p>Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.</p>
+</blockquote>
+<p>Given a binary tree, determine if it is height-balanced.</p>
+<p>For this problem, a height-balanced binary tree is defined as:</p>
+<blockquote>
+<p>a binary tree in which the left and right subtrees of <em>every</em> node differ in height by no more than 1.</p>
+</blockquote>
+<p><strong>Example 1:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg" /></p>
+<p><strong>Input:</strong> root = [3,9,20,null,null,15,7] <strong>Output:</strong> true</p>
+<p><strong>Example 2:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg" /></p>
+<p><strong>Input:</strong> root = [1,2,2,3,3,null,null,4,4] <strong>Output:</strong> false</p>
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> root = [] <strong>Output:</strong> true</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of nodes in the tree is in the range <code>[0, 5000]</code>.</li>
+<li><code>-104 &lt;= Node.val &lt;= 104</code></li>
+</ul>
+<p><a href="https://leetcode.com/problems/balanced-binary-tree/">Source</a># Convert Sorted Array to Binary Search Tree</p>
+<blockquote>
+<p>Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.</p>
+</blockquote>
+<p>Given an array where elements are sorted in ascending order, convert it to a height balanced BST.</p>
+<p>For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of <em>every</em> node never differ by more than 1.</p>
+<p><strong>Example:</strong></p>
+<p>Given the sorted array: [-10,-3,0,5,9],</p>
+<p>One possible answer is: [0,-3,9,-10,null,5], which represents the following height balanced BST:</p>
+<pre><code>  0
+ / \\</code></pre>
+<p>-3 9 / / -10 5</p>
+<p><a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/">Source</a># Delete Node in a BST</p>
+<blockquote>
+<p>Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.</p>
+</blockquote>
+<p>Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.</p>
+<p>Basically, the deletion can be divided into two stages:</p>
+<ol type="1">
+<li>Search for a node to remove.</li>
+<li>If the node is found, delete the node.</li>
+</ol>
+<p><strong>Follow up:</strong> Can you solve it with time complexity <code>O(height of tree)</code>?</p>
+<p><strong>Example 1:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg" /></p>
+<p><strong>Input:</strong> root = [5,3,6,2,4,null,7], key = 3 <strong>Output:</strong> [5,4,6,2,null,null,7] <strong>Explanation:</strong> Given key to delete is 3. So we find the node with value 3 and delete it. One valid answer is [5,4,6,2,null,null,7], shown in the above BST. Please notice that another valid answer is [5,2,6,null,4,null,7] and it’s also accepted. <img src="https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg" /></p>
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> root = [5,3,6,2,4,null,7], key = 0 <strong>Output:</strong> [5,3,6,2,4,null,7] <strong>Explanation:</strong> The tree does not contain a node with value = 0.</p>
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> root = [], key = 0 <strong>Output:</strong> []</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of nodes in the tree is in the range <code>[0, 104]</code>.</li>
+<li><code>-105 &lt;= Node.val &lt;= 105</code></li>
+<li>Each node has a <strong>unique</strong> value.</li>
+<li><code>root</code> is a valid binary search tree.</li>
+<li><code>-105 &lt;= key &lt;= 105</code></li>
+</ul>
+<p><a href="https://leetcode.com/problems/delete-node-in-a-bst/">Source</a><img src="https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg" title="meeting-room-ii" alt="alt text" /> <img src="https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg" title="meeting-room-ii" alt="alt text" /></p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb63-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb63-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[][]} intervals</span></a>
+<a class="sourceLine" id="cb63-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb63-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb63-5" title="5"><span class="kw">const</span> minMeetingRooms <span class="op">=</span> <span class="kw">function</span> (intervals) <span class="op">{</span></a>
+<a class="sourceLine" id="cb63-6" title="6">    <span class="kw">const</span> len <span class="op">=</span> <span class="va">intervals</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb63-7" title="7">    <span class="kw">const</span> starts <span class="op">=</span> <span class="kw">new</span> <span class="at">Array</span>(len)<span class="op">;</span></a>
+<a class="sourceLine" id="cb63-8" title="8">    <span class="kw">const</span> ends <span class="op">=</span> <span class="kw">new</span> <span class="at">Array</span>(len)<span class="op">;</span></a>
+<a class="sourceLine" id="cb63-9" title="9">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> len<span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb63-10" title="10">        starts[i] <span class="op">=</span> intervals[i][<span class="dv">0</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb63-11" title="11">        ends[i] <span class="op">=</span> intervals[i][<span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb63-12" title="12">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb63-13" title="13">    <span class="va">starts</span>.<span class="at">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a <span class="op">-</span> b)<span class="op">;</span></a>
+<a class="sourceLine" id="cb63-14" title="14">    <span class="va">ends</span>.<span class="at">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a <span class="op">-</span> b)<span class="op">;</span></a>
+<a class="sourceLine" id="cb63-15" title="15">    <span class="kw">let</span> rooms <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb63-16" title="16">    <span class="kw">let</span> endsIdx <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb63-17" title="17">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> len<span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb63-18" title="18">        <span class="cf">if</span> (starts[i] <span class="op">&lt;</span> ends[endsIdx]) rooms<span class="op">++;</span></a>
+<a class="sourceLine" id="cb63-19" title="19">        <span class="cf">else</span> endsIdx<span class="op">++;</span></a>
+<a class="sourceLine" id="cb63-20" title="20">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb63-21" title="21">    <span class="cf">return</span> rooms<span class="op">;</span></a>
+<a class="sourceLine" id="cb63-22" title="22"><span class="op">};</span></a></code></pre></div>
+<p><a href="#-"><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="—————————————————–" /></a></p>
+</body>
+</html>

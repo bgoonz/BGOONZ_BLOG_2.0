@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>github-backend</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="github-netlify-cms-open-source-content-management-system">GitHub | Netlify CMS | Open-Source Content Management System</h1>
+<blockquote>
+<p>Open source content management for your Git workflow</p>
+</blockquote>
+<p>For repositories stored on GitHub, the <code>github</code> backend allows CMS users to log in directly with their GitHub account. Note that all users must have push access to your content repository for this to work.</p>
+<p>Because Github <a href="https://github.com/netlify/netlify-cms/issues/663#issuecomment-335023723">requires a server</a> for authentication, Netlify facilitates basic GitHub authentication.</p>
+<p>To enable basic GitHub authentication:</p>
+<ol type="1">
+<li>Follow the authentication provider setup steps in the <a href="https://www.netlify.com/docs/authentication-providers/#using-an-authentication-provider">Netlify docs</a>.</li>
+<li><p>Add the following lines to your Netlify CMS <code>config.yml</code> file:</p>
+<p>backend: name: github repo: owner-name/repo-name</p></li>
+</ol>
+<h2 id="specifying-a-status-for-deploy-previews"><a href="#specifying-a-status-for-deploy-previews"></a>Specifying a status for deploy previews</h2>
+<p>The GitHub backend supports <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/deploy-preview-links">deploy preview links</a>. Netlify CMS checks the <code>context</code> of a commit’s <a href="https://help.github.com/articles/about-status-checks/">statuses</a> and infers one that seems to represent a deploy preview. If you need to customize this behavior, you can specify which context to look for using <code>preview_context</code>:</p>
+<pre><code>backend:
+  name: github
+  repo: my/repo
+  preview_context: my-provider/deployment</code></pre>
+<p>The above configuration would look for the status who’s <code>"context"</code> is <code>"my-provider/deployment"</code>.</p>
+<p><a href="https://www.netlifycms.org/docs/github-backend/">Source</a></p>
+</body>
+</html>

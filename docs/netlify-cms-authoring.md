@@ -1,8 +1,9 @@
-# Netlify CMS Open Authoring
+Netlify CMS Open Authoring
+==========================
 
-> I like the term "Git-backed CMS." That term works for an emerging style of CMS that looks and behaves much like any other CMS, with a fascinating twist:
+> I like the term “Git-backed CMS.” That term works for an emerging style of CMS that looks and behaves much like any other CMS, with a fascinating twist:
 
-I like the term “Git-backed CMS.” That term works for an emerging style of CMS that looks and behaves much like any other CMS, with a fascinating twist: it doesn’t actually store any data for you. These CMSs are connected to a Git repo where the data lives in flat files (e.g. Markdown). You teach the CMS where those files are and how they are structured. Then, as you use the CMS to create, edit, and delete things, **those changes happen as commits** (or pull/merge requests) are made against that repo. So cool.
+I like the term “Git-backed CMS.” That term works for an emerging style of CMS that looks and behaves much like any other CMS, with a fascinating twist: it doesn’t actually store any data for you. These CMSs are connected to a Git repo where the data lives in flat files (e.g. Markdown). You teach the CMS where those files are and how they are structured. Then, as you use the CMS to create, edit, and delete things, **those changes happen as commits** (or pull/merge requests) are made against that repo. So cool.
 
 For example, [CloudCannon](https://docs.cloudcannon.com/files/source-syncing/github/) can do it specifically for hosted Jekyll sites.
 

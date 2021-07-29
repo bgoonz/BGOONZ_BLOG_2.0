@@ -1,38 +1,28 @@
-# Add to Your Site | Netlify CMS
+Add to Your Site | Netlify CMS
+==============================
 
 > Open source content management for your Git workflow
 
 You can adapt Netlify CMS to a wide variety of projects. It works with any content written in markdown, JSON, YAML, or TOML files, stored in a repo on [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), or [Bitbucket](https://bitbucket.org/). You can also create your own custom backend.
 
-This tutorial guides you through the steps for adding Netlify CMS to a site that's built with a common [static site generator](https://www.staticgen.com/), like Jekyll, Hugo, Hexo, or Gatsby. Alternatively, you can [start from a template](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/start-with-a-template) or dive right into [configuration options](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/configuration-options).
+This tutorial guides you through the steps for adding Netlify CMS to a site that’s built with a common [static site generator](https://www.staticgen.com/), like Jekyll, Hugo, Hexo, or Gatsby. Alternatively, you can [start from a template](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/start-with-a-template) or dive right into [configuration options](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/configuration-options).
 
-## [](#app-file-structure)App File Structure
+[](#app-file-structure)App File Structure
+-----------------------------------------
 
-A static `admin` folder contains all Netlify CMS files, stored at the root of your published site. Where you store this folder in the source files depends on your static site generator. Here's the static file location for a few of the most popular static site generators:
+A static `admin` folder contains all Netlify CMS files, stored at the root of your published site. Where you store this folder in the source files depends on your static site generator. Here’s the static file location for a few of the most popular static site generators:
 
-| These generators                           | store static files in |
-| ------------------------------------------ | --------------------- |
-| Jekyll, GitBook                            | `/` (project root)    |
-| Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper | `/static`             |
-| Next                                       | `/public`             |
-| Hexo, Middleman, Jigsaw                    | `/source`             |
-| Spike                                      | `/views`              |
-| Wyam                                       | `/input`              |
-| Pelican                                    | `/content`            |
-| VuePress                                   | `/.vuepress/public`   |
-| Elmstatic                                  | `/_site`              |
-| 11ty                                       | `/_site`              |
-| preact-cli                                 | `/src/static`         |
+<table><thead><tr class="header"><th>These generators</th><th>store static files in</th></tr></thead><tbody><tr class="odd"><td>Jekyll, GitBook</td><td><code>/</code> (project root)</td></tr><tr class="even"><td>Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper</td><td><code>/static</code></td></tr><tr class="odd"><td>Next</td><td><code>/public</code></td></tr><tr class="even"><td>Hexo, Middleman, Jigsaw</td><td><code>/source</code></td></tr><tr class="odd"><td>Spike</td><td><code>/views</code></td></tr><tr class="even"><td>Wyam</td><td><code>/input</code></td></tr><tr class="odd"><td>Pelican</td><td><code>/content</code></td></tr><tr class="even"><td>VuePress</td><td><code>/.vuepress/public</code></td></tr><tr class="odd"><td>Elmstatic</td><td><code>/_site</code></td></tr><tr class="even"><td>11ty</td><td><code>/_site</code></td></tr><tr class="odd"><td>preact-cli</td><td><code>/src/static</code></td></tr></tbody></table>
 
-If your generator isn't listed here, you can check its documentation, or as a shortcut, look in your project for a `css` or `images` folder. The contents of folders like that are usually processed as static files, so it's likely you can store your `admin` folder next to those. (When you've found the location, feel free to add it to these docs by [filing a pull request](https://github.com/netlify/netlify-cms/blob/master/CONTRIBUTING.md#pull-requests)!)
+If your generator isn’t listed here, you can check its documentation, or as a shortcut, look in your project for a `css` or `images` folder. The contents of folders like that are usually processed as static files, so it’s likely you can store your `admin` folder next to those. (When you’ve found the location, feel free to add it to these docs by [filing a pull request](https://github.com/netlify/netlify-cms/blob/master/CONTRIBUTING.md#pull-requests)!)
 
-Inside the `admin` folder, you'll create two files:
+Inside the `admin` folder, you’ll create two files:
 
     admin
      ├ index.html
      └ config.yml
 
-The first file, `admin/index.html`, is the entry point for the Netlify CMS admin interface. This means that users navigate to `yoursite.com/admin/` to access it. On the code side, it's a basic HTML starter page that loads the Netlify CMS JavaScript file. In this example, we pull the file from a public CDN:
+The first file, `admin/index.html`, is the entry point for the Netlify CMS admin interface. This means that users navigate to `yoursite.com/admin/` to access it. On the code side, it’s a basic HTML starter page that loads the Netlify CMS JavaScript file. In this example, we pull the file from a public CDN:
 
     <!doctype html>
     <html>
@@ -65,13 +55,14 @@ Then import it (assuming your project has tooling for imports):
 
     CMS.registerPreviewTemplate('my-template', MyTemplate)
 
-## [](#configuration)Configuration
+[](#configuration)Configuration
+-------------------------------
 
-Configuration is different for every site, so we'll break it down into parts. Add all the code snippets in this section to your `admin/config.yml` file.
+Configuration is different for every site, so we’ll break it down into parts. Add all the code snippets in this section to your `admin/config.yml` file.
 
 ### [](#backend)Backend
 
-We're using [Netlify](https://www.netlify.com/) for our hosting and authentication in this tutorial, so backend configuration is fairly straightforward.
+We’re using [Netlify](https://www.netlify.com/) for our hosting and authentication in this tutorial, so backend configuration is fairly straightforward.
 
 For GitHub and GitLab repositories, you can start your Netlify CMS `config.yml` file with these lines:
 
@@ -79,9 +70,9 @@ For GitHub and GitLab repositories, you can start your Netlify CMS `config.yml` 
       name: git-gateway
       branch: master
 
-_(For Bitbucket repositories, use the [Bitbucket backend](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/bitbucket-backend) instructions instead.)_
+*(For Bitbucket repositories, use the [Bitbucket backend](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/bitbucket-backend) instructions instead.)*
 
-The configuration above specifies your backend protocol and your publication branch. Git Gateway is an open source API that acts as a proxy between authenticated users of your site and your site repo. (We'll get to the details of that in the [Authentication section](#authentication) below.) If you leave out the `branch` declaration, it defaults to `master`.
+The configuration above specifies your backend protocol and your publication branch. Git Gateway is an open source API that acts as a proxy between authenticated users of your site and your site repo. (We’ll get to the details of that in the [Authentication section](#authentication) below.) If you leave out the `branch` declaration, it defaults to `master`.
 
 ### [](#editorial-workflow)Editorial Workflow
 
@@ -97,22 +88,22 @@ Netlify CMS allows users to upload images directly within the editor. For this t
 
     media_folder: "images/uploads"
 
-If you're creating a new folder for uploaded media, you'll need to know where your static site generator expects static files. You can refer to the paths outlined above in [App File Structure](#app-file-structure), and put your media folder in the same location where you put the `admin` folder.
+If you’re creating a new folder for uploaded media, you’ll need to know where your static site generator expects static files. You can refer to the paths outlined above in [App File Structure](#app-file-structure), and put your media folder in the same location where you put the `admin` folder.
 
-Note that the`media_folder` file path is relative to the project root, so the example above would work for Jekyll, GitBook, or any other generator that stores static files at the project root. However, it would not work for Hugo, Hexo, Middleman or others that store static files in a subfolder. Here's an example that could work for a Hugo site:
+Note that the`media_folder` file path is relative to the project root, so the example above would work for Jekyll, GitBook, or any other generator that stores static files at the project root. However, it would not work for Hugo, Hexo, Middleman or others that store static files in a subfolder. Here’s an example that could work for a Hugo site:
 
     media_folder: "static/images/uploads"
     public_folder: "/images/uploads"
 
-The configuration above adds a new setting, `public_folder`. While `media_folder` specifies where uploaded files are saved in the repo, `public_folder` indicates where they are found in the published site. Image `src` attributes use this path, which is relative to the file where it's called. For this reason, we usually start the path at the site root, using the opening `/`.
+The configuration above adds a new setting, `public_folder`. While `media_folder` specifies where uploaded files are saved in the repo, `public_folder` indicates where they are found in the published site. Image `src` attributes use this path, which is relative to the file where it’s called. For this reason, we usually start the path at the site root, using the opening `/`.
 
-_If `public_folder` is not set, Netlify CMS defaults to the same value as `media_folder`, adding an opening `/` if one is not included._
+*If `public_folder` is not set, Netlify CMS defaults to the same value as `media_folder`, adding an opening `/` if one is not included.*
 
 ### [](#collections)Collections
 
 Collections define the structure for the different content types on your static site. Since every site is different, the `collections` settings differ greatly from one site to the next.
 
-Let's say your site has a blog, with the posts stored in `_posts/blog`, and files saved in a date-title format, like `1999-12-31-lets-party.md`. Each post begins with settings in yaml-formatted front matter, like so:
+Let’s say your site has a blog, with the posts stored in `_posts/blog`, and files saved in a date-title format, like `1999-12-31-lets-party.md`. Each post begins with settings in yaml-formatted front matter, like so:
 
     ---
     layout: blog
@@ -140,9 +131,9 @@ Given this example, our `collections` settings would look like this in your Netl
           - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
           - {label: "Body", name: "body", widget: "markdown"}
 
-Let's break that down:
+Let’s break that down:
 
-<table><tbody><tr><td><code>name</code></td><td>Post type identifier, used in routes. Must be unique.</td></tr><tr><td><code>label</code></td><td>What the admin UI calls the post type.</td></tr><tr><td><code>folder</code></td><td>Where files of this type are stored, relative to the repo root.</td></tr><tr><td><code>create</code></td><td>Set to <code>true</code> to allow users to create new files in this collection.</td></tr><tr><td><code>slug</code></td><td>Template for filenames. <code>{{year}}</code>, <code>{{month}}</code>, and <code>{{day}}</code> pulls from the post's <code>date</code> field or save date. <code>{{slug}}</code> is a url-safe version of the post's <code>title</code>. Default is simply <code>{{slug}}</code>.</td></tr><tr><td><code>fields</code></td><td>Fields listed here are shown as fields in the content editor, then saved as front matter at the beginning of the document (except for <code>body</code>, which follows the front matter). Each field contains the following properties:<ul><li><code>label</code>: Field label in the editor UI.</li><li><code>name</code>: Field name in the document front matter.</li><li><code>widget</code>: Determines UI style and value data type (details below).</li><li><code>default</code> (optional): Sets a default value for the field.</li></ul></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><code>name</code></td><td>Post type identifier, used in routes. Must be unique.</td></tr><tr class="even"><td><code>label</code></td><td>What the admin UI calls the post type.</td></tr><tr class="odd"><td><code>folder</code></td><td>Where files of this type are stored, relative to the repo root.</td></tr><tr class="even"><td><code>create</code></td><td>Set to <code>true</code> to allow users to create new files in this collection.</td></tr><tr class="odd"><td><code>slug</code></td><td>Template for filenames. <code>{{year}}</code>, <code>{{month}}</code>, and <code>{{day}}</code> pulls from the post’s <code>date</code> field or save date. <code>{{slug}}</code> is a url-safe version of the post’s <code>title</code>. Default is simply <code>{{slug}}</code>.</td></tr><tr class="even"><td><code>fields</code></td><td>Fields listed here are shown as fields in the content editor, then saved as front matter at the beginning of the document (except for <code>body</code>, which follows the front matter). Each field contains the following properties:<ul><li><code>label</code>: Field label in the editor UI.</li><li><code>name</code>: Field name in the document front matter.</li><li><code>widget</code>: Determines UI style and value data type (details below).</li><li><code>default</code> (optional): Sets a default value for the field.</li></ul></td></tr></tbody></table>
 
 As described above, the `widget` property specifies a built-in or custom UI widget for a given field. When a content editor enters a value into a widget, that value is saved in the document front matter as the value for the `name` specified for that field. A full listing of available widgets can be found in the [Widgets doc](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/widgets).
 
@@ -162,9 +153,10 @@ The entries for any collection can be filtered based on the value of a single fi
         fields:
           - {label: "Language", name: "language"}
 
-## [](#authentication)Authentication
+[](#authentication)Authentication
+---------------------------------
 
-Now that you have your Netlify CMS files in place and configured, all that's left is to enable authentication. We're using the [Netlify](https://www.netlify.com/) platform here because it's one of the quickest ways to get started, but you can learn about other authentication options in the [Backends](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/backends-overview) doc.
+Now that you have your Netlify CMS files in place and configured, all that’s left is to enable authentication. We’re using the [Netlify](https://www.netlify.com/) platform here because it’s one of the quickest ways to get started, but you can learn about other authentication options in the [Backends](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/backends-overview) doc.
 
 ### [](#setup-on-netlify)Setup on Netlify
 
@@ -172,12 +164,12 @@ Netlify offers a built-in authentication service called Identity. In order to us
 
 ### [](#enable-identity-and-git-gateway)Enable Identity and Git Gateway
 
-Netlify's Identity and Git Gateway services allow you to manage CMS admin users for your site without requiring them to have an account with your Git host or commit access on your repo. From your site dashboard on Netlify:
+Netlify’s Identity and Git Gateway services allow you to manage CMS admin users for your site without requiring them to have an account with your Git host or commit access on your repo. From your site dashboard on Netlify:
 
-1.  Go to **Settings > Identity**, and select **Enable Identity service**.
-2.  Under **Registration preferences**, select **Open** or **Invite only**. In most cases, you want only invited users to access your CMS, but if you're just experimenting, you can leave it open for convenience.
-3.  If you'd like to allow one-click login with services like Google and GitHub, check the boxes next to the services you'd like to use, under **External providers**.
-4.  Scroll down to **Services > Git Gateway**, and click **Enable Git Gateway**. This authenticates with your Git host and generates an API access token. In this case, we're leaving the **Roles** field blank, which means any logged in user may access the CMS. For information on changing this, check the [Netlify Identity documentation](https://www.netlify.com/docs/identity/).
+1.  Go to **Settings &gt; Identity**, and select **Enable Identity service**.
+2.  Under **Registration preferences**, select **Open** or **Invite only**. In most cases, you want only invited users to access your CMS, but if you’re just experimenting, you can leave it open for convenience.
+3.  If you’d like to allow one-click login with services like Google and GitHub, check the boxes next to the services you’d like to use, under **External providers**.
+4.  Scroll down to **Services &gt; Git Gateway**, and click **Enable Git Gateway**. This authenticates with your Git host and generates an API access token. In this case, we’re leaving the **Roles** field blank, which means any logged in user may access the CMS. For information on changing this, check the [Netlify Identity documentation](https://www.netlify.com/docs/identity/).
 
 ### [](#add-the-netlify-identity-widget)Add the Netlify Identity Widget
 
@@ -185,9 +177,9 @@ With the backend set to handle authentication, now you need a frontend interface
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-Add this to the `<head>` of your CMS index page at `/admin/index.html`, as well as the `<head>` of your site's main index page. Depending on how your site generator is set up, this may mean you need to add it to the default template, or to a "partial" or "include" template. If you can find where the site stylesheet is linked, that's probably the right place. Alternatively, you can include the script in your site using Netlify's [Script Injection](https://www.netlify.com/docs/inject-analytics-snippets/) feature.
+Add this to the `<head>` of your CMS index page at `/admin/index.html`, as well as the `<head>` of your site’s main index page. Depending on how your site generator is set up, this may mean you need to add it to the default template, or to a “partial” or “include” template. If you can find where the site stylesheet is linked, that’s probably the right place. Alternatively, you can include the script in your site using Netlify’s [Script Injection](https://www.netlify.com/docs/inject-analytics-snippets/) feature.
 
-When a user logs in with the Netlify Identity widget, an access token directs to the site homepage. In order to complete the login and get back to the CMS, redirect the user back to the `/admin/` path. To do this, add the following script before the closing `body` tag of your site's main index page:
+When a user logs in with the Netlify Identity widget, an access token directs to the site homepage. In order to complete the login and get back to the CMS, redirect the user back to the `/admin/` path. To do this, add the following script before the closing `body` tag of your site’s main index page:
 
     <script>
       if (window.netlifyIdentity) {
@@ -203,15 +195,16 @@ When a user logs in with the Netlify Identity widget, an access token directs to
 
 Note: This example script requires modern JavaScript and does not work on IE11. For legacy browser support, use function expressions (`function () {}`) in place of the arrow functions (`() => {}`), or use a transpiler such as [Babel](https://babeljs.io/).
 
-## [](#accessing-the-cms)Accessing the CMS
+[](#accessing-the-cms)Accessing the CMS
+---------------------------------------
 
 Your site CMS is now fully configured and ready for login!
 
-If you set your registration preference to "Invite only," invite yourself (and anyone else you choose) as a site user. To do this, select the **Identity** tab from your site dashboard, and then select the **Invite users** button. Invited users receive an email invitation with a confirmation link. Clicking the link will take you to your site with a login prompt.
+If you set your registration preference to “Invite only,” invite yourself (and anyone else you choose) as a site user. To do this, select the **Identity** tab from your site dashboard, and then select the **Invite users** button. Invited users receive an email invitation with a confirmation link. Clicking the link will take you to your site with a login prompt.
 
-If you left your site registration open, or for return visits after confirming an email invitation, access your site's CMS at `yoursite.com/admin/`.
+If you left your site registration open, or for return visits after confirming an email invitation, access your site’s CMS at `yoursite.com/admin/`.
 
-**Note:** No matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it always fetches and commits files in your hosted repository (for example, on GitHub), on the branch you configured in your Netlify CMS config.yml file. This means that content fetched in the admin UI matches the content in the repository, which may be different from your locally running site. It also means that content saved using the admin UI saves directly to the hosted repository, even if you're running the UI locally or in staging.
+**Note:** No matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it always fetches and commits files in your hosted repository (for example, on GitHub), on the branch you configured in your Netlify CMS config.yml file. This means that content fetched in the admin UI matches the content in the repository, which may be different from your locally running site. It also means that content saved using the admin UI saves directly to the hosted repository, even if you’re running the UI locally or in staging.
 
 Happy posting!
 

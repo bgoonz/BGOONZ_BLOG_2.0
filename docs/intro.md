@@ -1,30 +1,3 @@
----
-title: Intro To Node
-excerpt: >-
-    Web-Dev-Hubis a Unibit theme created for project documentations. You can use
-    it for your project.
-seo:
-    title: Intro To Node
-    description: This is the Intro To Node page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Intro To Node
-          keyName: property
-        - name: 'og:description'
-          value: This is the Intro To Node page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Intro To Node
-        - name: 'twitter:description'
-          value: This is the Intro To Node page
-template: docs
----
-
 Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
 
 Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
@@ -37,41 +10,17 @@ This allows Node.js to handle thousands of concurrent connections with a single 
 
 Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side code in addition to the client-side code without the need to learn a completely different language.
 
-In Node.js the new ECMAScript standards can be used without problems, as you don't have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.
+In Node.js the new ECMAScript standards can be used without problems, as you don’t have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.
 
-## A Vast Number of Libraries
+A Vast Number of Libraries
+--------------------------
 
 npm with its simple structure helped the ecosystem of Node.js proliferate, and now the npm registry hosts over 1,000,000 open source packages you can freely use.
 
-## An Example Node.js Application
+An Example Node.js Application
+------------------------------
 
 The most common example Hello World of Node.js is a web server:
-
-<iframe
-  title="Hello world web server"
-  src="https://glitch.com/embed/#!/embed/nodejs-dev-0001-01?path=server.js&previewSize=30&attributionHidden=true&sidebarCollapsed=true"
-  alt="nodejs-dev-0001-01 on Glitch"
-  style="height: 400px; width: 100%; border: 0;">
-</iframe>
-
-<!--```js
-const http = require('http')
-
-const hostname = '127.0.0.1'
-const port = 3000
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200
-  res.setHeader('Content-Type', 'text/plain')
-  res.end('Hello World\n')
-})
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
-})
-```
-
-To run this snippet, save it as a `server.js` file and run `node server.js` in your terminal.-->
 
 This code first includes the Node.js [`http` module](https://nodejs.org/api/http.html).
 
@@ -91,25 +40,20 @@ The second is used to return data to the caller.
 
 In this case with:
 
-```js
-res.statusCode = 200;
-```
+    res.statusCode = 200;
 
 we set the statusCode property to 200, to indicate a successful response.
 
 We set the Content-Type header:
 
-```js
-res.setHeader('Content-Type', 'text/plain');
-```
+    res.setHeader('Content-Type', 'text/plain');
 
 and we close the response, adding the content as an argument to `end()`:
 
-```js
-res.end('Hello World\n');
-```
+    res.end('Hello World\n');
 
-## Node.js Frameworks and Tools
+Node.js Frameworks and Tools
+----------------------------
 
 Node.js is a low-level platform. In order to make things easy and exciting for developers, thousands of libraries were built upon Node.js by the community.
 
@@ -129,4 +73,4 @@ Many of those established over time as popular options. Here is a non-comprehens
 -   [**Nx**](https://nx.dev/): A toolkit for full-stack monorepo development using NestJS, Express, [React](https://reactjs.org/), [Angular](https://angular.io), and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
 -   [**Sapper**](https://sapper.svelte.dev/): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
 -   [**Socket.io**](https://socket.io/): A real-time communication engine to build network applications.
--   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
+-   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world’s largest companies to accelerate content delivery while building beautiful digital experiences.
