@@ -479,15 +479,6 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-            },
-            {
-                "label": "Python",
-                "url": "https://github.com/bgoonz/PYTHON_PRAC",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
             }
         ],
         "content": "@bgoonz on almost every platform"
