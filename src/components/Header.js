@@ -22,7 +22,7 @@ import Submenu from './Submenu';
 //       document.body.appendChild(script)
 //     })
 //   }
-  
+
 //   fetchJsFromCDN(`https://cse.google.com/cse.js?cx=b9b42c05e18ccf4ab`, ['eruda']).then(([eruda]) => {
 //       return eruda.init();
 //   })
@@ -43,15 +43,16 @@ export default class Header extends React.Component {
                                     </Link>
                                 </p>
                             ) : (
-                                <p className="site-title"> WebDevHub
+                                <p className="site-title">
+                                    {' '}
+                                    WebDevHub
                                     <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
                                         {_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}
                                     </Link>
                                 </p>
                             )}
                         </div>
-                        <script async src="https://cse.google.com/cse.js?cx=b9b42c05e18ccf4ab"></script>
-<div class="gcse-search"></div>
+                        <div class="gcse-search"></div>
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
