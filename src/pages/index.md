@@ -272,7 +272,7 @@ sections:
             no_follow: false
             type: action
       type: section_cta
-seo: react javascript git blog portfolio reactjs headless static gatsby python3 jamstack ssg bryan guner
+seo: react, javascript, git, blog, portfolio, reactjs, headless, static, gatsby, python3, jamstack, ssg, bryan guner
     title: Web-Dev-Hub
     description: >-
         my resource sharing and blog site ... centered mostly on web development and
