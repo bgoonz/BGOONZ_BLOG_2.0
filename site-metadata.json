@@ -481,15 +481,6 @@
                 "type": "action"
             },
             {
-                "label": "Html Previewer",
-                "url": "#",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
                 "label": "Python",
                 "url": "https://github.com/bgoonz/PYTHON_PRAC",
                 "style": "primary",
