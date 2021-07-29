@@ -276,7 +276,7 @@ seo:
     title: Web-Dev-Hub
     description: >-
         my resource sharing and blog site ... centered mostly on web development and
-        just a bit of audio production / generally nerdy things I find interesting.
+        just a bit of audio production / generally nerdy things I find interesting. 
     extra:
         - name: 'og:type'
           value: website
