@@ -1,5 +1,14 @@
-node_modules/ 
-.cache/
+
+
+const queries = require('./src/utils/algolia');
+require('dotenv').config();
+
+
+
+
+
+
+
 
 
 
@@ -70,6 +79,8 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+# dotenv environment variables file
+.env
 
 # gatsby files
 # .cache/
@@ -88,4 +99,3 @@ yarn-error.log
 node_modules/
 
 
-node_modules
