@@ -201,7 +201,7 @@ sections:
             image: images/My Post.png
     - title: Mini Projects
       section_id: Mini Projects
-      image_alt: lorem-ipsum
+      image_alt: mini projects
       image_position: left
       content: |
           <iframe class="block-content" width="100%     width="800" height="575"
@@ -219,7 +219,7 @@ sections:
       type: section_content
     - title: Code Playground(s)
       section_id: code-playground
-      image_alt: lorem-ipsum
+      image_alt: code playground
       image_position: left
       content: |-
           <iframe class="block-content" width="100%   width="800" height="575"
@@ -229,8 +229,8 @@ sections:
       actions: []
       type: section_content
     - title: Mini Projects
-      section_id: lorem-ipsum
-      image_alt: lorem-ipsum
+      section_id: mini-projects
+      image_alt: mini-projects
       image_position: left
       content: |-
           <iframe class="block-content" width="100%   width="800" height="575"
@@ -240,8 +240,8 @@ sections:
       actions: []
       type: section_content
     - title: Blog-Archive
-      section_id: lorem-ipsum
-      image_alt: lorem-ipsum
+      section_id: blog-archive
+      image_alt: blog-archive
       image_position: left
       content: |-
           <iframe class="block-content" width="100%  width="800" height="575"
@@ -262,7 +262,7 @@ sections:
       actions: []
       type: section_content
     - title: Contact
-      section_id: lorem-ipsum
+      section_id: contact
       actions:
           - label: Contact
             url: '/docs/faq/contact'
