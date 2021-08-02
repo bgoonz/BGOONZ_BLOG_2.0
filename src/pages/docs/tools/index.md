@@ -43,7 +43,16 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 
+<br>
+<iframe  class="block-content" src="https://euangoddard.github.io/clipboard2markdown/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        
+        
+<br>
 <br>
 
 <br>
@@ -207,7 +216,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
         
         
-        <iframe height="800" style="width: 100%;" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+ <iframe height="800" style="width: 100%;" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/ExZvGoZ">
   Simple Typing Carousel </a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
