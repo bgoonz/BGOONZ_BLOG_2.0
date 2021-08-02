@@ -4,7 +4,13 @@ import _ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
-
+ algoliasearchNetlify({
+        appId: "BAGY237H21",
+        apiKey: "5f5a2d1bb109c79803ca95250ca3496c",
+        siteId: "835ad7b5-37ce-4a32-824d-f3b0d3eab8e5",
+        branch: "master",
+        selector: "div#search",
+      });
 export default class Header extends React.Component {
     render() {
         return (
