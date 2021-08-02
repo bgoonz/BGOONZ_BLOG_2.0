@@ -52,7 +52,7 @@ export default class Header extends React.Component {
                                 </p>
                             )}
                         </div>
-                     <div class="gcse-search"></div>
+                        <div class="gcse-searchbox-only"></div>
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">

@@ -4,8 +4,6 @@
 
 Secure your site by learning how to explicitly mark your cross-site cookies.
 
-[![Rowan Merewood](https://web-dev.imgix.net/image/admin/TASwqsVceW68MrM7bjt8.jpg?auto=format&fit=crop&h=64&w=64)](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/authors/rowan_m/)
-
 Cookies are one of the methods available for adding persistent state to web sites. Over the years their capabilities have grown and evolved, but left the platform with some problematic legacy issues. To address this, browsers (including Chrome, Firefox, and Edge) are changing their behavior to enforce more privacy-preserving defaults.
 
 Each cookie is a `key=value` pair along with a number of attributes that control when and where that cookie is used. You've probably already used these attributes to set things like expiration dates or indicating the cookie should only be sent over HTTPS. Servers set cookies by sending the aptly-named `Set-Cookie` header in their response. For all the detail you can dive into [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1), but for now here's a quick refresher.
@@ -40,8 +38,7 @@ JavaScript can access cookies using `document.cookie`.
 
 If you try this on a selection of popular sites you will notice that most of them set significantly more than just three cookies. In most cases, those cookies are sent on every single request to that domain, which has a number of implications. Upload bandwidth is often more restricted than download for your users, so that overhead on all outbound requests is adding a delay on your time to first byte. Be conservative in the number and size of cookies you set. Make use of the `Max-Age` attribute to help ensure that cookies don't hang around longer than needed.
 
-What are first-party and third-party cookies? [#](#what-are-first-party-and-third-party-cookies)
-------------------------------------------------------------------------------------------------
+## What are first-party and third-party cookies? [#](#what-are-first-party-and-third-party-cookies)
 
 If you go back to that same selection of sites you were looking at before, you probably noticed that there were cookies present for a variety of domains, not just the one you were currently visiting. Cookies that match the domain of the current site, i.e. what's displayed in the browser's address bar, are referred to as **first-party** cookies. Similarly, cookies from domains other than the current site are referred to as **third-party** cookies. This isn't an absolute label but is relative to the user's context; the same cookie can be either first-party or third-party depending on which site the user is on at the time.
 
@@ -61,8 +58,7 @@ One of the cultural properties of the web is that it's tended to be open by defa
 
 Users are also becoming more aware of how cookies can be used to track their activity across multiple sites. However until now there hasn't been a way to explicitly state your intent with the cookie. Your `promo_shown` cookie should only be sent in a first-party context, whereas a session cookie for a widget meant to be embedded on other sites is intentionally there for providing the signed-in state in a third-party context.
 
-Explicitly state cookie usage with the `SameSite` attribute [#](#explicitly-state-cookie-usage-with-the-samesite-attribute)
----------------------------------------------------------------------------------------------------------------------------
+## Explicitly state cookie usage with the `SameSite` attribute [#](#explicitly-state-cookie-usage-with-the-samesite-attribute)
 
 The introduction of the `SameSite` attribute (defined in [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site-00)) allows you to declare if your cookie should be restricted to a first-party or same-site context. It's helpful to understand exactly what 'site' means here. The site is the combination of the domain suffix and the part of the domain just before it. For example, the `www.web.dev` domain is part of the `web.dev` site.
 
@@ -106,13 +102,12 @@ Explicitly mark the context of a cookie as `None`, `Lax`, or `Strict`.
 
 If you provide a service that other sites consume such as widgets, embedded content, affiliate programs, advertising, or sign-in across multiple sites then you should use `None` to ensure your intent is clear.
 
-Changes to the default behavior without SameSite [#](#changes-to-the-default-behavior-without-samesite)
--------------------------------------------------------------------------------------------------------
+## Changes to the default behavior without SameSite [#](#changes-to-the-default-behavior-without-samesite)
 
 While the `SameSite` attribute is widely supported, it has unfortunately not been widely adopted by developers. The open default of sending cookies everywhere means all use cases work but leaves the user vulnerable to CSRF and unintentional information leakage. To encourage developers to state their intent and provide users with a safer experience, the IETF proposal, [Incrementally Better Cookies](https://tools.ietf.org/html/draft-west-cookie-incrementalism-00) lays out two key changes:
 
-*   Cookies without a `SameSite` attribute will be treated as `SameSite=Lax`.
-*   Cookies with `SameSite=None` must also specify `Secure`, meaning they require a secure context.
+-   Cookies without a `SameSite` attribute will be treated as `SameSite=Lax`.
+-   Cookies with `SameSite=None` must also specify `Secure`, meaning they require a secure context.
 
 Chrome implements this default behavior as of version 84. [Firefox](https://groups.google.com/d/msg/mozilla.dev.platform/nx2uP0CzA9k/BNVPWDHsAQAJ) has them available to test as of Firefox 69 and will make them default behaviors in the future. To test these behaviors in Firefox, open [`about:config`](http://kb.mozillazine.org/About:config) and set `network.cookie.sameSite.laxByDefault`. [Edge](https://groups.google.com/a/chromium.org/d/msg/blink-dev/AknSSyQTGYs/8lMmI5DwEAAJ) also plans to change its default behaviors.
 
@@ -164,8 +159,7 @@ Both of these changes are backwards-compatible with browsers that have correctly
 
 A number of older versions of browsers including Chrome, Safari, and UC browser are incompatible with the new `None` attribute and may ignore or restrict the cookie. This behavior is fixed in current versions, but you should check your traffic to determine what proportion of your users are affected. You can see the [list of known incompatible clients on the Chromium site](https://www.chromium.org/updates/same-site/incompatible-clients).
 
-`SameSite` cookie recipes [#](#samesite-cookie-recipes)
--------------------------------------------------------
+## `SameSite` cookie recipes [#](#samesite-cookie-recipes)
 
 For further detail on exactly how to update your cookies to successfully handle these changes to `SameSite=None` and the difference in browser behavior, head to the follow up article, [SameSite cookie recipes](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/samesite-cookie-recipes).
 
@@ -176,6 +170,5 @@ _Cookie hero image by [Pille-Riin Priske](https://unsplash.com/photos/UiP3uF5JRW
 Last updated: May 28, 2020 [Improve article](https://github.com/GoogleChrome/web.dev/blob/master/src/site/content/en/blog/samesite-cookies-explained/index.md)
 
 Thank you for the feedback!
-
 
 [Source](https://web.dev/samesite-cookies-explained/?utm_source=devtools)
