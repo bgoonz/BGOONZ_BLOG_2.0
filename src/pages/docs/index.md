@@ -2,9 +2,7 @@
 title: Docs
 seo:
     title: Web Dev Hub
-    description: >
-        Docs Home Doc Websites & Repos Preferconst gand let over Arrow functions
-        Modules Objectassignl) Template literals The spread operator
+    description: Docs Home
     extra:
         - name: 'og:type'
           value: website
@@ -26,7 +24,9 @@ weight: 900
 excerpt: docs quick reference
 ---
 
-# Go To Sitemap: [Go Now -->](https://bgoonz-blog.netlify.app/docs/sitemap/)
+
+# Go To Sitemap: [Go Now -->]()
+
 
 ## Doc Websites & Repos
 

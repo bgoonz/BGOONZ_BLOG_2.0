@@ -5,7 +5,7 @@ sections:
       type: section_hero
       title: 'I am a musician, electrical engineer & web developer'
       image: images/cool annimation.gif
-      content: " ##### [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys) **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
+      content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
       actions:
           - label: Contact
             url: 'https://friendly-panda-b61ab.netlify.app/contact/'
@@ -201,7 +201,7 @@ sections:
             image: images/My Post.png
     - title: Mini Projects
       section_id: Mini Projects
-      image_alt: mini projects
+      image_alt: lorem-ipsum
       image_position: left
       content: |
           <iframe class="block-content" width="100%     width="800" height="575"
@@ -219,7 +219,7 @@ sections:
       type: section_content
     - title: Code Playground(s)
       section_id: code-playground
-      image_alt: code playground
+      image_alt: lorem-ipsum
       image_position: left
       content: |-
           <iframe class="block-content" width="100%   width="800" height="575"
@@ -229,19 +229,19 @@ sections:
       actions: []
       type: section_content
     - title: Mini Projects
-      section_id: mini-projects
-      image_alt: mini-projects
+      section_id: lorem-ipsum
+      image_alt: lorem-ipsum
       image_position: left
       content: |-
           <iframe class="block-content" width="100%   width="800" height="575"
-           src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
+           src="https://embedable-content.netlify.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       actions: []
       type: section_content
     - title: Blog-Archive
-      section_id: blog-archive
-      image_alt: blog-archive
+      section_id: lorem-ipsum
+      image_alt: lorem-ipsum
       image_position: left
       content: |-
           <iframe class="block-content" width="100%  width="800" height="575"
@@ -262,7 +262,7 @@ sections:
       actions: []
       type: section_content
     - title: Contact
-      section_id: contact
+      section_id: lorem-ipsum
       actions:
           - label: Contact
             url: '/docs/faq/contact'
