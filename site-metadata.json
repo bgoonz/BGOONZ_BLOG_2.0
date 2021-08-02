@@ -324,7 +324,7 @@
                 "subnav_links": [
                     {
                         "label": "Embeds Blog",
-                        "url": "https://friendly-panda-b61ab.netlify.app/",
+                        "url": "https://sidebar-blog.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
