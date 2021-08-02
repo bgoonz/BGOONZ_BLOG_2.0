@@ -11,16 +11,12 @@ seo:
 template: docs
 ---
 
-
 -   [Data Structures Interactive](https://ds-algo-official.netlify.app/)
 
 <iframe src="https://ds-algo-official.netlify.app/" height="900px" width="100%">
 </iframe>
 
-- [Games](https://bgoonz-games.netlify.app/)
+-   [Games](https://bgoonz-games.netlify.app/)
 
 <iframe src="https://bgoonz-games.netlify.app/" height="900px" width="100%">
 </iframe>
-
-
-                                          

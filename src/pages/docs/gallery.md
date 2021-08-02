@@ -3,16 +3,15 @@ title: my gists
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: 'Gist Archive'
-  description: 'A collection of my github gists'
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: 'Gist Archive'
+    description: 'A collection of my github gists'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
+
 ## Gist Archive
-
-
 
 <h2>Gist Archive</h2>
 
@@ -21,6 +20,3 @@ template: docs
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
-
-
-
