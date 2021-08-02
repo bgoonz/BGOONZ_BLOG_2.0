@@ -4,7 +4,6 @@
 
 Secure your site by learning how to explicitly mark your cross-site cookies.
 
-[![Rowan Merewood](https://web-dev.imgix.net/image/admin/TASwqsVceW68MrM7bjt8.jpg?auto=format&fit=crop&h=64&w=64)](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/authors/rowan_m/)
 
 Cookies are one of the methods available for adding persistent state to web sites. Over the years their capabilities have grown and evolved, but left the platform with some problematic legacy issues. To address this, browsers (including Chrome, Firefox, and Edge) are changing their behavior to enforce more privacy-preserving defaults.
 
