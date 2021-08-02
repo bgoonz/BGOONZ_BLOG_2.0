@@ -190,7 +190,7 @@
             },
             {
                 "label": "Projects",
-                "url": "#",
+                "url": "/showcase",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": true,
