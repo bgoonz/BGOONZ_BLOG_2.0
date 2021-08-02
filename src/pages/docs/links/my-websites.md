@@ -26,12 +26,7 @@ template: docs
 weight: 1
 ---
 
-
-
 <iframe src="https://random-static-html-deploys.netlify.app/my-websites/" height="1600px" width="100%" style="zoom:0.75;align-self:center;"></iframe>
-
-
-
 
 1.  [ WEB DEV RESOURCE HUB ](https://web-dev-resource-hub.netlify.app)
 
