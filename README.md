@@ -1,24 +1,29 @@
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
+
 ---
+
 
 <div align="center">
     
-## Load time in milliseconds
-    
-![loading](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/loading.gif)
 
 ### [WEBSITE](https://bgoonz-blog.netlify.app/)
+    
 
 ### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
+    
 
 ### [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/)
+    
 
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+    
+
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
 
-![checklist](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/checklist.PNG?raw=true)
+![checklist](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/checklist.PNG?raw=true)    
 
 [![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)
 
@@ -247,15 +252,3 @@ These dependencies are defined in **BGOONZ_BLOG_2.0**’s manifest files, such a
 -   [understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------)
 
 -   [complete-javascript-reference-guide-64306cd6b0db](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------)- [
-
-</div>
-
----
-
----
-
-![testing](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/performance.png)
-
-![testing2](<https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-webpagetest-org-result-210727-AiDc19-c38ddbe8beac9afc98e69b3afe074178-1-breakdown-2021-07-27-11_04_25%20(1).png>)
-
-![vitals](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-webpagetest-org-vitals-php-2021-07-27-11_29_39.png)
