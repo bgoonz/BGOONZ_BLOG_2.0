@@ -2,7 +2,7 @@ const escapeStringRegexp = require("escape-string-regexp")
 const pagePath = `content`
 const indexName = `Pages`
 const pageQuery = `{
-  pages: allMarkdownRemark(
+  pages: (
     filter: {
       fileAbsolutePath: { regex: "/${escapeStringRegexp(pagePath)}/" },
     }
