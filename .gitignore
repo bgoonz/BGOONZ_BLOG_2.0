@@ -1,6 +1,15 @@
-node_modules/ 
-.cache/
-public/
+
+
+const queries = require('./src/utils/algolia');
+require('dotenv').config();
+
+
+
+
+
+
+
+
 
 
 
@@ -90,4 +99,3 @@ yarn-error.log
 node_modules/
 
 
-node_modules

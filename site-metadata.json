@@ -229,7 +229,7 @@
             },
             {
                 "label": "Tools",
-                "url": "/docs/tools",
+                "url": "/notes-template",
                 "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
@@ -452,11 +452,11 @@
                 "type": "action"
             },
             {
-                "label": "reddit",
-                "url": "https://www.reddit.com/user/SignalCountry5613",
-                "style": "icon",
-                "icon_class": "reddit",
-                "new_window": true,
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
                 "no_follow": false,
                 "type": "action"
             }
