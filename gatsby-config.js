@@ -1,5 +1,5 @@
-const siteMetadata = require('./site-metadata.json')
-
+const siteMetadata = require('./site-metadata.json');
+require('dotenv').config();
 module.exports = {
     pathPrefix: '/',
     siteMetadata: siteMetadata,
@@ -26,7 +26,13 @@ module.exports = {
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {
                 sourceUrlPath: `fields.url`,
-                pageContextProperty: `menus`,
+                pageContextProperty: `menus`
+            },
+            resolve: `gatsby-plugin-algolia`,
+            options: {
+                appId: process.env.GATSBY_ALGOLIA_APP_ID,
+                apiKey: process.env.ALGOLIA_ADMIN_KEY,
+                queries: require('./src/utils/algolia-queries')
             }
         }
     ]
