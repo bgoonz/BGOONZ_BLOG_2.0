@@ -1,13 +1,16 @@
 const siteMetadata = require('./site-metadata.json');
-require('dotenv').config();
+
+siteMetadata.siteUrl = `https://bgoonz-blog.netlify.app/`;
+
+plugins: [`gatsby-plugin-sitemap`];
 module.exports = {
     pathPrefix: '/',
     siteMetadata: siteMetadata,
     plugins: [
         `gatsby-plugin-react-helmet`,
+        'gatsby-plugin-dark-mode',
         `gatsby-source-data`,
         `gatsby-transformer-remark`,
-        'gatsby-plugin-algolia',
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -28,12 +31,6 @@ module.exports = {
             options: {
                 sourceUrlPath: `fields.url`,
                 pageContextProperty: `menus`
-            },
-            resolve: `gatsby-plugin-algolia`,
-            options: {
-                appId: process.env.GATSBY_ALGOLIA_APP_ID,
-                apiKey: process.env.ALGOLIA_ADMIN_KEY,
-                queries: require('./src/utils/algolia-queries')
             }
         }
     ]
