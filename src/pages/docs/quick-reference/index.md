@@ -24,3 +24,8 @@ template: docs
 ---
 
 <iframe src="https://inspiring-jennings-d14689.netlify.app/" height="1600px" width="100%" style="zoom:0.75;align-self:center;"></iframe>
+
+
+
+
+<iframe src="https://sidebar-blog.netlify.app/" height="1600px" width="100%" style="zoom:0.75;align-self:center;"></iframe>
