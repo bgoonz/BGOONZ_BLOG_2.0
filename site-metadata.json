@@ -159,7 +159,7 @@
                     },
                     {
                         "label": "Gallery",
-                        "url": "/docs/gallery",
+                        "url": "/gallery",
                         "style": "secondary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -187,17 +187,6 @@
                 ],
                 "type": "action_menu",
                 "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
-            },
-            {
-                "label": "Audio",
-                "url": "/docs/audio",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": false,
-                "subnav_links": [],
-                "type": "action_menu"
             },
             {
                 "label": "Projects",
@@ -485,6 +474,24 @@
             {
                 "label": "BLM",
                 "url": "https://optimistic-lewin-8586ae.netlify.app/blm.zip",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": true,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "Html Previewer",
+                "url": "#",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": true,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "Python",
+                "url": "https://github.com/bgoonz/PYTHON_PRAC",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
