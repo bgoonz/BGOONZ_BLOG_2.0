@@ -11,6 +11,7 @@ seo:
   extra: []
   type: stackbit_page_meta
 template: post
+thumb_image: images/express.png
 ---
 
 ## Blog With Comments NextJS
