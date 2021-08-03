@@ -64,6 +64,7 @@ export default class Docs extends React.Component {
                             </div>
                         </nav>
                     </div>
+                           <div id="search" className="inner"></div>
                 </div>
             </Layout>
         );
