@@ -4,7 +4,6 @@
 
 <div align="center">
 
-
 ### [WEBSITE](https://bgoonz-blog.netlify.app/)
 
 ### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
