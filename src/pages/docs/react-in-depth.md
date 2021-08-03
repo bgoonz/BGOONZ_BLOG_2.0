@@ -10,7 +10,7 @@ seo:
   type: stackbit_page_meta
 template: docs
 ---
-## React In Depth
+# React In Depth
 
 # Random Things to Remember
 
@@ -806,10 +806,6 @@ Providing default values for props
 
 *   We can even remove it from our index.js now and an error will not be thrown.
 
-
-
-
-
 # Handling Events![](https://miro.medium.com/max/1400/0\*c24XQBvqBBg0Eztz)![](https://miro.medium.com/max/1400/0\*N7KFfhOZZ7UrY8s4)![](https://miro.medium.com/max/60/0\*ywV6dO4a4QcGJxK5?q=20)![](https://miro.medium.com/max/630/0\*ywV6dO4a4QcGJxK5)![](https://miro.medium.com/max/60/0\*Nd73GjTY1PVQtjtQ?q=20)![](https://miro.medium.com/max/630/0\*Nd73GjTY1PVQtjtQ)&#xA;&#xA;
 
 *   To add an event listener to an element, just define a method to handle the event and associate that method with the element event you are listening for. Example
@@ -1180,12 +1176,6 @@ Subscribing to the store
 
 Reviewing a simple example
 
-
-
-
-
-
-
 # Reducers&#xA;&#xA;&#xA;
 
 *   Reducer function receives the current state and action, updates the state appropriately based on the action.type and returns the following state.
@@ -1448,12 +1438,6 @@ In this article, you learned how to:
 
 *   Update a browser’s URL programmatically by using React Router’s history prop.
 
-
-
-
-
-
-
 # React Router Nested Routes![](https://miro.medium.com/max/60/0\*233dNJ6vfgAmEVCD?q=20)![](https://miro.medium.com/max/576/0\*233dNJ6vfgAmEVCD)![](https://miro.medium.com/max/60/0\*TKBUkpbL5aSm5PTQ?q=20)![](https://miro.medium.com/max/630/0\*TKBUkpbL5aSm5PTQ)&#xA;&#xA;
 
 Now you know how to create front-end routes and add navigation with React Router. When initializing Express projects, you declare static routes. Static routes are routes that are declared when an application is initialized. When using React Router in your application’s initialization, you can declare dynamic routes. React Router introduces dynamic routing, where your routes are created as your application is rendering. This allows you to create nested routes within components!
@@ -1604,7 +1588,7 @@ Environment variables can be used in code like this:
 
 You can also reference environment variables in your index.html like this:
 
-> *Important: Environment variables are embedded into your HTML, CSS, and JavaScript bundles during the build process. Because of this, it’s *very important* to not store any secrets, like API keys, in your environment variables as anyone can view your bundled code in the browser by inspecting your files.*
+> *Important: Environment variables are embedded into your HTML, CSS, and JavaScript bundles during the build process. Because of this, it’s very important to not store any secrets, like API keys, in your environment variables as anyone can view your bundled code in the browser by inspecting your files.*
 
 # Configuring the supported browsers
 
