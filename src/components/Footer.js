@@ -9,6 +9,7 @@ export default class Footer extends React.Component {
         return (
             <footer id="colophon" className="site-footer outer">
                 <div className="inner">
+                <div id="search"></div>
                     <div className="site-footer-inside">
                         <p className="site-info">
                             {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
