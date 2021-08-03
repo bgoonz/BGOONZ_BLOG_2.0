@@ -10,7 +10,7 @@ seo:
 template: advanced
 ---
 
-
+<div id="search"></div>
 
 ## description: Review
 
