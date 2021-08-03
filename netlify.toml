@@ -1,6 +1,7 @@
 [build]
 publish = "public"
 command = "npm run build"
+pagesDir: pages
 [functions]
   # Directory with serverless functions, including background functions,
   # to deploy. This is relative to the base directory if one has been set, 
