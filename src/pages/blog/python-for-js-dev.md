@@ -2,31 +2,31 @@
 date: '2021-06-03'
 image: images/python.png
 seo:
-  title: python
-  description: Commodo ante vis placerat interdum massa massa primis
-  extra:
-    - name: 'og:type'
-      value: article
-      keyName: property
-    - name: 'og:title'
-      value: python
-      keyName: property
-    - name: 'og:description'
-      value: Commodo ante vis placerat interdum massa massa primis
-      keyName: property
-    - name: 'og:image'
-      value: images/python.png
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:card'
-      value: summary_large_image
-    - name: 'twitter:title'
-      value: python
-    - name: 'twitter:description'
-      value: Commodo ante vis placerat interdum massa massa primis
-    - name: 'twitter:image'
-      value: images/python.png
-      relativeUrl: true
+    title: python
+    description: Commodo ante vis placerat interdum massa massa primis
+    extra:
+        - name: 'og:type'
+          value: article
+          keyName: property
+        - name: 'og:title'
+          value: python
+          keyName: property
+        - name: 'og:description'
+          value: Commodo ante vis placerat interdum massa massa primis
+          keyName: property
+        - name: 'og:image'
+          value: images/python.png
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: summary_large_image
+        - name: 'twitter:title'
+          value: python
+        - name: 'twitter:description'
+          value: Commodo ante vis placerat interdum massa massa primis
+        - name: 'twitter:image'
+          value: images/python.png
+          relativeUrl: true
 template: post
 title: Python Resources
 thumb_image: images/superb-triceratops.jpg
