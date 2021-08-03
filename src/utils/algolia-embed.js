@@ -8,4 +8,3 @@
     branch: 'master',
     selector: 'div#search',
   });
-</script>
