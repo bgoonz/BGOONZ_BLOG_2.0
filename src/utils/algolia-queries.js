@@ -1,40 +1,58 @@
-const escapeStringRegexp = require('escape-string-regexp');
-const pagePath = `docs`;
-const indexName = `Pages`;
 const pageQuery = `{
   pages: allMarkdownRemark(
     filter: {
-      fileAbsolutePath: { regex: "/${escapeStringRegexp(pagePath)}/" },
+      fileAbsolutePath: { regex: "/pages/" },
+      frontmatter: {purpose: {eq: "page"}}
     }
   ) {
     edges {
       node {
-        id
+        objectID: id
         frontmatter {
           title
-        }
-        fields {
           slug
         }
         excerpt(pruneLength: 5000)
       }
     }
   }
-}`;
-function pageToAlgoliaRecord({ node: { id, frontmatter, fields, ...rest } }) {
-    return {
-        objectID: id,
-        ...frontmatter,
-        ...fields,
-        ...rest
-    };
-}
-const queries = [
-    {
-        query: pageQuery,
-        transformer: ({ data }) => data.pages.edges.map(pageToAlgoliaRecord),
-        indexName,
-        settings: { attributesToSnippet: [`excerpt:20`] }
+}`
+const postQuery = `{
+  docs: allMarkdownRemark(
+    filter: { fileAbsolutePath: { regex: "/docs/" } }
+  ) {
+    edges {
+      node {
+        objectID: id
+        frontmatter {
+          title
+          slug
+          date(formatString: "MMM D, YYYY")
+          tags
+        }
+        excerpt(pruneLength: 5000)
+      }
     }
-];
-module.exports = queries;
+  }
+}`
+const flatten = arr =>
+  arr.map(({ node: { frontmatter, ...rest } }) => ({
+    ...frontmatter,
+    ...rest,
+  }))
+const settings = { attributesToSnippet: [`excerpt:20`] }
+const queries = [
+  {
+    query: pageQuery,
+    transformer: ({ data }) => flatten(data.pages.edges),
+    indexName: `Pages`,
+    settings,
+  },
+  {
+    query: postQuery,
+    transformer: ({ data }) => flatten(data.docs.edges),
+    indexName: `docs`,
+    settings,
+  },
+]
+module.exports = queries

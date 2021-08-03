@@ -1,4 +1,6 @@
-const siteMetadata = require('./site-metadata.json');
+const siteMetadata = require( './site-metadata.json' );
+const queries = require('./src/utils/algolia');
+
 require('dotenv').config({
     path: `.env`
 });
@@ -70,7 +72,7 @@ module.exports = {
         {
             // in real life this would be:
             resolve: 'gatsby-plugin-algolia',
-            // resolve: require.resolve('../'),
+    
             options: {
                 appId: process.env.ALGOLIA_APPID,
                 apiKey: process.env.ALGOLIA_APIKEY,
