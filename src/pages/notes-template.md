@@ -39,159 +39,233 @@ seo:
       relativeUrl: true
 template: page
 ---
+\---
+title: Tools
+excerpt: >-
+    See some interesting tools developed by the Web-Dev-Hubcommunity to help automate
+    parts of your workflow.
+seo:
+    title: Tools
+    description: This is the tools page
+    extra:
+        \- name: 'og:type'
 
-<br>
-<br>
-<br>
+          value: website
+          keyName: property
 
-<br>
+        \- name: 'og:title'
 
-<br>
+          value: Tools
 
-<iframe title="Video Background 1" src="https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+          keyName: property
 
-See the Pen <a href="https://codepen.io/bgoonz/pen/BaRLKBd">
-Video Background 1</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
-on <a href="https://codepen.io">CodePen</a>.
+        \- name: 'og:description'
 
-</iframe>
+          value: This is the tools page
 
-<br>
-<br>
-<br>
-<br>
+          keyName: property
 
-<br>
+        \- name: 'twitter:card'
 
-<br>
+          value: summary
 
-<br>
+        \- name: 'twitter:title'
 
-<br>
+          value: Tools
 
-<br>
-<center>
-<h2> Up to 1TB of cloud Storage for file sharing!</h2>
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;">
-</iframe>
-</center>
-<br>
+        \- name: 'twitter:description'
 
-<br>
+          value: This is the tools page
 
-<br>
+template: docs
+\---
 
-<br>
-<h2> Resource Archive</h2>
+\<br>
+\<br>
+\<br>
+\<br>
+\<h1> Spotify Superimposed Over Video \</h1>
+\<iframe title="Video Background 1" src="https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult\&theme-id=dark" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 
-<iframe src="https://resourcerepo2.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+See the Pen \<a href="https://codepen.io/bgoonz/pen/BaRLKBd">
+Video Background 1\</a> by Bryan C Guner (\<a href="https://codepen.io/bgoonz">@bgoonz\</a>)
+on \<a href="https://codepen.io">CodePen\</a>.
+
+\</iframe>
+
+\<br>
+\<br>
+\<br>
+\<h1>   Speech Recognition api \</h1>
+\<br>
+\<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<iframe class="inner" src="https://lambda-resources.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
+\<br>
+\<br>
+\<br>
+\<br>
+\<br>
+\<h1>   Paste To Markdown \</h1>
+\<br>
+\<iframe  class="block-content" src="https://euangoddard.github.io/clipboard2markdown/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
+        
+        
+        
+\<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
+\<h1>  Cloud Storage \</h1>
+\<br>
 
-<br>
+\<h2> Up to 1TB of cloud Storage for file sharing!\</h2>
+\<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241\&resid=D21009FDD967A241%21538729\&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;">
+\</iframe>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
+\<h1>     Resource Archive           \</h1>
+\<br>
 
-<br>
 
-<iframe src="https://devtools42.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+\<iframe src="https://resourcerepo2.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
-<iframe src="https://ternary42.netlify.app/" height="800px" width="600px!important" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+\<br>
+\<h1>   Lambda Student Site \</h1>
+\<br>
+
+\<iframe class="inner" src="https://lambda-resources.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+\<br>
+
+\<br>
+
+\<br>
+
+\<br>
+\<h1> Text Tools     \</h1>
+\<br>
+
+\<iframe src="https://devtools42.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
-
-<br>
-
-<iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+\<br>
+\<h1> Ternary Converter   \</h1>
+\<br>
+\<iframe src="https://ternary42.netlify.app/" height="800px" width="600px!important" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
+\<h1>  Github HTML Render from link \</h1>
+\<br>
 
-<br>
-
-<iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+\<iframe src="https://githtmlpreview.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
+\<h1> Data Structures\</h1>
+\<br>
 
-<br>
-
-<br>
-
-<iframe  src="https://fourm-builder-gui.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+\<iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
 
-<br>
+\<br>
 
-<br>
+\<br>
 
-<br>
+\<br>
+\<h1>  Interview     \</h1>
+\<br>
 
-<br>
-<iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+\<iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
+
+\<br>
+
+\<br>
+
+\<br>
+
+\<br>
+\<h1> Form Builder GUI \</h1>
+\<br>
+
+\<iframe  src="https://fourm-builder-gui.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
+
+\<br>
+
+\<br>
+
+\<br>
+\<h1>                \</h1>
+\<br>
+\<iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\</iframe>
+        
+        
+        
+\<br>
+
+\<br>
+
+\<br>
+\<h1>                \</h1>
+\<br>
+        
+        
+ \<iframe height="800" style="width: 100%;" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen \<a href="https://codepen.io/bgoonz/pen/ExZvGoZ">
+  Simple Typing Carousel \</a> by Bryan C Guner (\<a href="https://codepen.io/bgoonz">@bgoonz\</a>)
+  on \<a href="https://codepen.io">CodePen\</a>.
+\</iframe>
+
