@@ -9,7 +9,7 @@ const pageQuery = `{
         objectID: id
         frontmatter {
           title
-          slug
+     
         }
         excerpt(pruneLength: 5000)
       }
@@ -25,7 +25,7 @@ const postQuery = `{
         objectID: id
         frontmatter {
           title
-          slug
+     
           tags
         }
         excerpt(pruneLength: 5000)
