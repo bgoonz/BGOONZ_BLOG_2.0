@@ -144,8 +144,6 @@ models:
               items:
                   type: slug
         description: my documentation collection
-        match:
-            - '*.md'
     docs:
         type: page
         urlPath: /docs/{slug}
@@ -219,9 +217,7 @@ models:
         urlPath: /blog
         label: Blog
         layout: blog
-        file: blog/index.md
         hideContent: true
-        singleInstance: true
         fields:
             - type: string
               name: title
@@ -670,36 +666,7 @@ models:
                       - type: boolean
                         name: relativeUrl
                         label: Relative Url
-    htmlpage:
-        type: data
-        label: htmlpage
-        description: html content
-        folder: html
-        match:
-            - '*.html'
-        fields:
-            - name: iframe
-              type: url
-              description: iframe inclusions
-              required: true
-              label: Iframe
-            - name: description
-              type: string
-              label: description
-              description: describes html content
-              default: description
-    embed:
-        type: page
-        label: embed
-        layout: embed
-        description: embedded assets
-        folder: /docs/Experimental
-        match:
-            - '*.md'
-        fields:
-            - name: content
-              type: html
-              label: iframe
-              description: embed content
-              default: ' <iframe height="900px" width="100%" src="https://replit.com/@bgoonz/live-examples-1?lite=true" scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>'
-              required: true
+    docsections:
+        type: object
+        label: docsections
+
