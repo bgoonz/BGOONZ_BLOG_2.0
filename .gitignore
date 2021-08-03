@@ -1,11 +1,5 @@
 
 
-const queries = require('./src/utils/algolia');
-require('dotenv').config();
-
-
-
-
 
 
 
@@ -80,7 +74,7 @@ typings/
 *.tgz
 
 # dotenv environment variables file
-.env
+
 
 # gatsby files
 # .cache/
