@@ -13,8 +13,8 @@
             },
             {
                 "label": "Blog",
-                "url": "/blog/",
-                "style": "secondary",
+                "url": "https://blog-w-comments.vercel.app/",
+                "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
                     {
@@ -28,7 +28,7 @@
                     },
                     {
                         "label": "Top Blog Posts",
-                        "url": "https://blog-w-comments.vercel.app/",
+                        "url": "/blog/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -61,18 +61,8 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
-                        "label": "Blog w Comments",
-                        "url": "/blogWcomments/",
-                        "style": "link",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
                     }
-                ],
-                "new_window": true
+                ]
             },
             {
                 "url": "/docs/sitemap",
@@ -132,7 +122,7 @@
                     },
                     {
                         "label": "Resource-Archive-Server",
-                        "url": "https://github.com/bgoonz/Learning-Assets",
+                        "url": "https://resourcerepo2.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
@@ -186,7 +176,7 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
+                "url": "https://github.com/bgoonz/Learning-Assets"
             },
             {
                 "label": "Projects",
@@ -270,6 +260,15 @@
                         "type": "action"
                     },
                     {
+                        "label": "Github-Advanced-Search",
+                        "url": "https://github.com/search/advanced",
+                        "style": "icon",
+                        "icon_class": "github",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "PotluckPlanner",
                         "url": "https://potluck-landing.netlify.app/",
                         "style": "primary",
@@ -284,15 +283,6 @@
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Github-Advanced-Search",
-                        "url": "https://github.com/search/advanced",
-                        "style": "icon",
-                        "icon_class": "github",
-                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     }
@@ -441,15 +431,6 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-            },
-            {
-                "label": "lorem-ipsum",
-                "url": "#",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
             }
         ],
         "links": [
@@ -494,5 +475,5 @@
     },
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app/",
-    "favicon": "images/webdevhublogo2.PNG"
+    "favicon": "images/favicon.ico"
 }
