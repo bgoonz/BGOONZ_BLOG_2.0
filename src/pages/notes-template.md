@@ -8,8 +8,7 @@ seo:
   title: Theme Notes Template
   description: >-
     This is a collection of tools that I have created to expedite my personal
-    process of web development. They Include Text Tools, Resources archives, And
-    Ternary Converters
+    process of web development.
   extra:
     - name: 'og:type'
       value: website
