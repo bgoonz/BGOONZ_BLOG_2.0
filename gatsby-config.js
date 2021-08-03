@@ -5,16 +5,7 @@ require('dotenv').config({
     path: `.env`
 });
 
-const queries = [
-    {
-        query,
-        transformer: ({ data }) => data.allSitePage.edges.map(({ node }) => node), // optional
-        // indexName: 'pages', // optional
-        settings: {
-            attributesToSnippet: ['path:5', 'internal']
-        }
-    }
-];
+
 siteMetadata.siteUrl = `https://bgoonz-blog.netlify.app/`;
 siteMetadata.title = 'bgoonzblog2.0';
 plugins: [`gatsby-plugin-sitemap`];
