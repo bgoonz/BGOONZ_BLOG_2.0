@@ -43,8 +43,29 @@ template: docs
 <br>
 <br>
 <br>
-<br>
+<h1> Spotify Superimposed Over Video </h1>
+<iframe title="Video Background 1" src="https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 
+See the Pen <a href="https://codepen.io/bgoonz/pen/BaRLKBd">
+Video Background 1</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
+on <a href="https://codepen.io">CodePen</a>.
+
+</iframe>
+
+<br>
+<br>
+<br>
+<h1>   Speach Recognition api </h1>
+<br>
+<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>   Paste To Markdown </h1>
 <br>
 <iframe  class="block-content" src="https://euangoddard.github.io/clipboard2markdown/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -57,41 +78,26 @@ template: docs
 
 <br>
 
-<iframe title="Video Background 1" src="https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-
-See the Pen <a href="https://codepen.io/bgoonz/pen/BaRLKBd">
-Video Background 1</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
-on <a href="https://codepen.io">CodePen</a>.
-
-</iframe>
-
-<br>
-<br>
-<br>
 <br>
 
 <br>
 
 <br>
-
+<h1>  Cloud Storage </h1>
 <br>
 
-<br>
-
-<br>
-<center>
 <h2> Up to 1TB of cloud Storage for file sharing!</h2>
 <iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;">
 </iframe>
-</center>
-<br>
 
 <br>
 
 <br>
 
 <br>
-<h2> Resource Archive</h2>
+<h1>     Resource Archive           </h1>
+<br>
+
 
 <iframe src="https://resourcerepo2.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -104,7 +110,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-
+<h1>   Lambda Student Site </h1>
 <br>
 
 <iframe class="inner" src="https://lambda-resources.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
@@ -126,7 +132,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-
+<h1> Text Tools     </h1>
 <br>
 
 <iframe src="https://devtools42.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
@@ -138,7 +144,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-
+<h1> Ternary Converter   </h1>
 <br>
 <iframe src="https://ternary42.netlify.app/" height="800px" width="600px!important" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -149,7 +155,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-
+<h1>  Github HTML Render from link </h1>
 <br>
 
 <iframe src="https://githtmlpreview.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
@@ -161,7 +167,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-
+<h1> Data Structures</h1>
 <br>
 
 <iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
@@ -173,7 +179,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-
+<h1>  Interview     </h1>
 <br>
 
 <iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
@@ -187,7 +193,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-
+<h1> Form Builder GUI </h1>
 <br>
 
 <iframe  src="https://fourm-builder-gui.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
@@ -199,7 +205,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-
+<h1>                </h1>
 <br>
 <iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -212,7 +218,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 
 <br>
-
+<h1>                </h1>
 <br>
         
         
