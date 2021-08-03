@@ -12,11 +12,23 @@ template: docs
 ---
 ## React In Depth
 
+# Random Things to Remember
+
+![](https://miro.medium.com/max/60/0\*LHVHf7SPZ1t0UVAj?q=20)
 
 
 
 
-# Random Things to Remember![](https://miro.medium.com/max/60/0\*LHVHf7SPZ1t0UVAj?q=20)![](https://miro.medium.com/max/630/0\*LHVHf7SPZ1t0UVAj)![](https://miro.medium.com/max/60/0\*wR-lbD4zf45-IHoQ?q=20)![](https://miro.medium.com/max/630/0\*wR-lbD4zf45-IHoQ)![](https://miro.medium.com/max/60/0\*7EZESKf0XPbncXAY?q=20)![](https://miro.medium.com/max/630/0\*7EZESKf0XPbncXAY)&#xA;&#xA;
+
+
+
+![](https://miro.medium.com/max/630/0\*LHVHf7SPZ1t0UVAj)
+
+
+
+![](https://miro.medium.com/max/60/0\*wR-lbD4zf45-IHoQ?q=20)![](https://miro.medium.com/max/630/0\*wR-lbD4zf45-IHoQ)![](https://miro.medium.com/max/60/0\*7EZESKf0XPbncXAY?q=20)![](https://miro.medium.com/max/630/0\*7EZESKf0XPbncXAY)
+
+
 
 *   Using () implictly returns components.
 
@@ -275,8 +287,6 @@ The Diffing Algorithm
 *   Important to remember that reconciliation algorithm is an *implementation detail*.
 
 *   Re-rendering only to apply the differences following the rules stated in the previous sections.
-
-
 
 # Typechecking With PropTypes![](https://miro.medium.com/max/60/0\*8ls0PmtREELbf5Wm?q=20)![](https://miro.medium.com/max/630/0\*8ls0PmtREELbf5Wm)&#xA;&#xA;&#xA;
 
