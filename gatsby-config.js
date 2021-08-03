@@ -34,8 +34,7 @@ const queries = [
   },
 ]
 siteMetadata.siteUrl = `https://bgoonz-blog.netlify.app/`;
- siteMetadata: {
-    title: 'Gatsby Default Starter',
+ siteMetadata.title=""
   }
 plugins: [`gatsby-plugin-sitemap`];
 module.exports = {
