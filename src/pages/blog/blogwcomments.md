@@ -2,7 +2,7 @@
 title: ExpressJS Apis
 subtitle: lorem-ipsum
 date: '2021-07-26'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt: node and express js
 excerpt: lorem-ipsum
 seo:
   title: ''
