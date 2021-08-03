@@ -27,7 +27,7 @@ weight: 900
 excerpt: docs quick reference
 ---
 
-# Go To Sitemap: [Go Now -->]()
+# Go To Sitemap: [Go Now -->](./sitemap.md)
 
 ## Doc Websites & Repos
 
