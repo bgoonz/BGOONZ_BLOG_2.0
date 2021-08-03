@@ -39,7 +39,6 @@ const queries = [ {
 }, ]
 siteMetadata.siteUrl = `https://bgoonz-blog.netlify.app/`;
 siteMetadata.title = "bgoonzblog2.0"
-}
 plugins: [ `gatsby-plugin-sitemap` ];
 module.exports = {
     pathPrefix: '/',
