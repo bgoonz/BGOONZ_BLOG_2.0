@@ -2,8 +2,7 @@ const pageQuery = `{
   docs: allMarkdownRemark(
     filter: {
       fileAbsolutePath: { regex: "/docs/" },
-      frontmatter: {purpose: {eq: "page"}}
-    }
+        }
   ) {
     edges {
       node {
