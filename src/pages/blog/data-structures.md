@@ -12,7 +12,7 @@ seo:
   type: stackbit_page_meta
 template: post
 image: images/ds.PNG
-thumb_image: images/festive-zebra.png
+thumb_image: images/polite-sage.jpg
 ---
 
 ## Data Structures & Algorithms
