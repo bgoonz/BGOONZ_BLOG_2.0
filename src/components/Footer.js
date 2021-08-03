@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
-import 
+import algolia-embed from
 export default class Footer extends React.Component {
     render() {
         return (
