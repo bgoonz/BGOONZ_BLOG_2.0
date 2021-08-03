@@ -2,7 +2,7 @@
 title: Docs
 seo:
   title: Web Dev Hub
-  description: 'Application, Back-end, '
+  description: 'Application, Back-end, Bootstrap, '
   extra:
     - name: 'og:type'
       value: website
