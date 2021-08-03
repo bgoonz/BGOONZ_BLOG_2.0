@@ -8,7 +8,7 @@ sections:
       content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
       actions:
           - label: Contact
-            url: 'https://friendly-panda-b61ab.netlify.app/contact/'
+            url: 'https://sidebar-blog.netlify.app/contact/'
             style: secondary
             icon_class: linkedin
             new_window: true
@@ -104,8 +104,7 @@ sections:
       image_alt: bryan-guner
       image_position: left
       content: >-
-          <iframe  style="zoom:0.75;" width="560" height="415"
-          src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
+          <iframe class="block-content" width="100% src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
           player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       actions:
@@ -121,7 +120,7 @@ sections:
       image_alt: listen to my playlist
       image_position: left
       content: >
-          <iframe  style="zoom:0.75;"
+          <iframe class="block-content" width="100%    
           src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
           width="100%" height="380" frameBorder="0" allowtransparency="true"
           allow="encrypted-media"></iframe>
@@ -205,7 +204,7 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |
-          <iframe  style="zoom:0.75;" width="800" height="575"
+          <iframe class="block-content" width="100%     width="800" height="575"
            src="https://iframeshowcase.netlify.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -223,7 +222,7 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |-
-          <iframe  class="inner" style="zoom:0.75;" width="800" height="575"
+          <iframe class="block-content" width="100%   width="800" height="575"
             src="https://code-playground.netlify.app/index.html" title="YouTube video
             player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -234,8 +233,8 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |-
-          <iframe  class="inner" style="zoom:0.75;" width="800" height="575"
-           src="https://embedable-content.netlify.app/" title="YouTube video
+          <iframe class="block-content" width="100%   width="800" height="575"
+           src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       actions: []
@@ -245,7 +244,7 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |-
-          <iframe class="block-content" style="zoom:0.75;" width="800" height="575"
+          <iframe class="block-content" width="100%  width="800" height="575"
             src="https://bgoonz.blogspot.com/" title="YouTube video
             player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -256,7 +255,7 @@ sections:
       image_alt: blog
       image_position: left
       content: |-
-          <iframe class="block-content"  style="zoom:0.75;" width="800" height="575"
+          <iframe class="block-content" width="100%  width="800" height="575"
            src="https://blog-w-comments.vercel.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -266,7 +265,7 @@ sections:
       section_id: lorem-ipsum
       actions:
           - label: Contact
-            url: 'mailto:bryan.guner@gmail.com'
+            url: '/docs/faq/contact'
             style: primary
             icon_class: dev
             new_window: false
