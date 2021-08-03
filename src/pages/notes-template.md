@@ -6,7 +6,10 @@ subtitle: >-
 image: images/back.jpeg
 seo:
   title: Theme Notes Template
-  description: A reference for suggested typographic treatment and styles for your content
+  description: >-
+    This is a collection of tools that I have created to expedite my personal
+    process of web development. They Include Text Tools, Resources archives, And
+    Ternary Converters
   extra:
     - name: 'og:type'
       value: website
