@@ -204,6 +204,7 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |
+      <div id="search"></div>
           <iframe class="block-content" width="100%     width="800" height="575"
            src="https://iframeshowcase.netlify.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
