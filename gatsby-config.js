@@ -14,8 +14,7 @@ const query = `{
         component
         path
         componentChunkName
-        jsonName
-        internal {
+          internal {
           type
           contentDigest
           owner
