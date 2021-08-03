@@ -1,10 +1,8 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 95%;
+    width: 70em;
 }
-.post-content {
-    width: 85%;
-}
+
 .post {
     &.type-docs {
         margin-bottom: 3.625em;
@@ -40,7 +38,7 @@
             text-align: center;
             text-decoration: none;
             -webkit-transition: opacity 0.2s;
-            transition: opacity 0.4s;
+            transition: opacity 0.2s;
             width: 1em;
 
             &:before {
@@ -81,8 +79,9 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 0.3em;
-            width: 70vw;
+            padding: 0.5em 0;
+            width: 1600px;
+            zoom: 0.68;
         }
 
         .post-title {
@@ -92,8 +91,7 @@
         }
 
         .post-content {
-            padding: 0.775em;
-            word-wrap: break-word;
+            padding: 0.875em;
         }
     }
 }
@@ -111,7 +109,7 @@
     .docs-section-item {
         -ms-flex: 1 1 240px;
         flex: 1 1 240px;
-        margin: 0 0.3125em 0.9375em;
+        // margin: 0 0.3125em 0.9375em;
     }
 
     .docs-item-link {
@@ -142,6 +140,7 @@
         margin: 0;
         padding-right: 15px;
         text-align: left;
+        width: 90%;
     }
 
     .docs-submenu-toggle {
@@ -157,7 +156,7 @@
     font-weight: bold;
     line-height: 1.5;
     list-style: none;
-    margin: 0.5em;
+    margin: 0.3em;
     padding: 0;
 
     & > .docs-menu-item > a {
@@ -215,7 +214,7 @@
 }
 
 #page-nav {
-    text-overflow: wrap;
+    display: none;
 
     .page-nav-title {
         font-size: 1em;
@@ -260,12 +259,12 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 941px) {
     .post {
         &.type-docs {
             .post-title,
             .post-content {
-                padding-left: 8%;
+                padding-left: 7%;
                 padding-right: 7%;
             }
         }
@@ -277,17 +276,19 @@
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
-        width: 100%;
+        width: 1600px;
     }
 
     .post.type-docs {
         -ms-flex: 1 1 auto;
-        align-content: center;
+        flex: 1 1 auto;
+        overflow: hidden;
     }
 
     .docs-nav,
     .page-nav {
         -ms-flex-negative: 0;
+        flex-shrink: 0;
         margin-bottom: 5.625em;
 
         .sticky {
@@ -303,7 +304,7 @@
 
     #page-nav {
         font-size: 12px;
-        margin: 4em;
+        margin: 5em;
     }
 
     #docs-nav-toggle {
@@ -325,7 +326,7 @@
         box-shadow: $box-shadow;
         box-sizing: border-box;
         margin-bottom: 5%;
-        padding: 1em 1em;
+        padding: 0.75em 1em;
     }
 
     .docs-nav-menu {
