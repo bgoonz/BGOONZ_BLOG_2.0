@@ -1,4 +1,5 @@
 const siteMetadata = require('./site-metadata.json');
+require('dotenv').config({ path: `.env` })
 
 siteMetadata.siteUrl = `https://bgoonz-blog.netlify.app/`;
 
