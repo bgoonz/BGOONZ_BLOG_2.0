@@ -183,5 +183,8 @@ seo:
     - name: 'twitter:image'
       value: images/5.jpg
       relativeUrl: true
+  description: >-
+    Git HTML PREVIEW, Guitar Effects, Data Structures, Redux, Podcast Blog,
+    Contact Form, Potluck Planner, Video Conferencing, Web Audio Workstation
 template: advanced
 ---
