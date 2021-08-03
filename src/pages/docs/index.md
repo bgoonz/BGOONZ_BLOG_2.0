@@ -4,7 +4,7 @@ seo:
   title: Web Dev Hub
   description: >-
     Application, Back-end, Bootstrap, Browser, Caching, Code, CSS, Content
-    Management System (CMS) 
+    Management System (CMS) , Cookies, 
   extra:
     - name: 'og:type'
       value: website
