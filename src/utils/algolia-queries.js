@@ -1,5 +1,5 @@
 const escapeStringRegexp = require('escape-string-regexp');
-const pagePath = `content`;
+const pagePath = `docs`;
 const indexName = `Pages`;
 const pageQuery = `{
   pages: allMarkdownRemark(
