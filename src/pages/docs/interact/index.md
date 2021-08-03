@@ -3,20 +3,15 @@ title: Interactive Examples
 weight: 1
 excerpt: feel free to try the examples
 seo:
-    title: 'Interactive Examples'
-    description: 'here is content the user can interact with'
+    title: ''
+    description: ''
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
 
--   [Data Structures Interactive](https://ds-algo-official.netlify.app/)
-
-<iframe src="https://ds-algo-official.netlify.app/" height="900px" width="100%">
-</iframe>
-
--   [Games](https://bgoonz-games.netlify.app/)
-
-<iframe src="https://bgoonz-games.netlify.app/" height="900px" width="100%">
-</iframe>
+<iframe width="800" height="575"
+           src="https://embedable-content.netlify.app/" title="YouTube video
+           player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
