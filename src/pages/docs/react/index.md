@@ -24,21 +24,25 @@ seo:
       value: This is the React page
 template: docs
 ---
-## ![](images/good-avocado.png)
+##
 
-
-
-### For more resources visit: 
+### For more resources visit:
 
 [bgoonz/React_Notes_V3A JavaScript library for building user interfaces React makes it painless to create interactive UIs. Design simple…github.com](https://github.com/bgoonz/React_Notes_V3)
 
 [Use this appendix to get any prerequisite concepts and terminology under your belt:](https://gist.github.com/bgoonz/e07d9e7917ae9e98807358d1e7cc4a67)
 
-
-
-
-
 Here I will walk through a demo…. skip down below for more fundamental examples and resources…
+
+
+
+
+
+
+
+
+
+
 
 ## React Demo <a id="b2b8"></a>
 
@@ -152,7 +156,7 @@ class Welcome extends React.Component {
 }
 ```
 
-**The only method you** ***must*** **define in a `React.Component` subclass is called** [``](https://reactjs.org/docs/react-component.html#render)**.**
+**The only method you** ***must*** **define in a `React.Component` subclass is called** [\`\`](https://reactjs.org/docs/react-component.html#render)**.**
 
 ## `render()` <a id="2c45"></a>
 
@@ -172,7 +176,7 @@ If you need to interact with the browser, perform your work in `componentDidMoun
 
 > *Note*
 >
-> ``* will not be invoked if* [``](https://reactjs.org/docs/react-component.html#shouldcomponentupdate) *returns false.*
+> `* will not be invoked if* [`]\(https://reactjs.org/docs/react-component.html#shouldcomponentupdate) *returns false.*
 
 The export statement at the bottom of the file also stays, completely unchanged. Our class component will thus look like this:
 
@@ -243,7 +247,7 @@ export default ClassComponentWithState;
 
 ### Point being, the constructor function and the call to the `super` function are *not* associated with React, they are associated with all JavaScript classes. <a id="7791"></a>
 
-*   Then there is the ``** property inside the constructor function that is set as an empty object**.
+*   Then there is the \`\`\*\* property inside the constructor function that is set as an empty object\*\*.
 *   We're adding a property called `state` to our class and setting it to an empty object.
 
 ### State objects in React are always just plain old objects. <a id="2e40"></a>
@@ -573,7 +577,7 @@ A single isolated component isn’t going to do us much good.
 
 > The beauty of React lies in the fact that it allows us to compose modular components together.
 >
-> Let’s start off with the component we just saw, but let’s change its name to `` .
+> Let’s start off with the component we just saw, but let’s change its name to \`\` .
 
 ```jsx
 import React, { Component } from 'react';
@@ -706,7 +710,7 @@ The overall structure of React applications can be represented as a hierarchical
 ## Declarative programming <a id="994b"></a>
 
 In the same way that you use HTML to *declare* what the user interface should\
-look like, React provides the same mechanism in its `` method or the higher-level language known as JSX.![](https://miro.medium.com/max/60/0\*MW-A5Dp_v1T0BB1s.png?q=20)![](https://miro.medium.com/max/1338/0\*MW-A5Dp_v1T0BB1s.png)React… like HTML is Declarative
+look like, React provides the same mechanism in its \`\` method or the higher-level language known as JSX.![](https://miro.medium.com/max/60/0\*MW-A5Dp_v1T0BB1s.png?q=20)![](https://miro.medium.com/max/1338/0\*MW-A5Dp_v1T0BB1s.png)React… like HTML is Declarative
 
 [Declarative programming](https://en.wikipedia.org/wiki/Declarative_programming) is often defined as any style of programming that is not [imperative](https://en.wikipedia.org/wiki/Imperative_programming).
 
@@ -924,5 +928,4 @@ React allows you to interface with other libraries and frameworks. This example 
 
 React-Tutorial-1:[react-tutorial-1A React repl by bgoonzreplit.com](https://replit.com/@bgoonz/react-tutorial-1)
 
-React Boilerplate:[React.js + Babel + Webpack BoilerplateCreated by @eankeen | The ultimate trifecta - React, Babel, and Webpack - complete with hot module reloading and a…replit.com\
-](https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js)
+React Boilerplate:[React.js + Babel + Webpack BoilerplateCreated by @eankeen | The ultimate trifecta - React, Babel, and Webpack - complete with hot module reloading and a…replit.com](https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js)
