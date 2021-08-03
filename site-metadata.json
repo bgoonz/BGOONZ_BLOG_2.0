@@ -13,8 +13,8 @@
             },
             {
                 "label": "Blog",
-                "url": "https://blog-w-comments.vercel.app/",
-                "style": "link",
+                "url": "/blog/",
+                "style": "secondary",
                 "has_subnav": true,
                 "subnav_links": [
                     {
@@ -28,7 +28,7 @@
                     },
                     {
                         "label": "Top Blog Posts",
-                        "url": "/blog/",
+                        "url": "https://blog-w-comments.vercel.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -61,8 +61,18 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "Blog w Comments",
+                        "url": "/blogWcomments/",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
                     }
-                ]
+                ],
+                "new_window": true
             },
             {
                 "url": "/docs/sitemap",
@@ -122,7 +132,7 @@
                     },
                     {
                         "label": "Resource-Archive-Server",
-                        "url": "https://resourcerepo2.netlify.app/",
+                        "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
@@ -149,7 +159,7 @@
                     },
                     {
                         "label": "Gallery",
-                        "url": "/gallery",
+                        "url": "/docs/gallery",
                         "style": "secondary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -176,14 +186,14 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "https://github.com/bgoonz/Learning-Assets"
+                "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
             },
             {
                 "label": "Projects",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
-                "new_window": false,
+                "new_window": true,
                 "no_follow": false,
                 "has_subnav": true,
                 "subnav_links": [
@@ -204,13 +214,22 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "WebAudioLab",
+                        "url": "https://panoramic-eggplant-452e4.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
                     }
                 ],
                 "type": "action_menu"
             },
             {
                 "label": "Tools",
-                "url": "/notes-template",
+                "url": "/docs/tools",
                 "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
@@ -260,15 +279,6 @@
                         "type": "action"
                     },
                     {
-                        "label": "Github-Advanced-Search",
-                        "url": "https://github.com/search/advanced",
-                        "style": "icon",
-                        "icon_class": "github",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
                         "label": "PotluckPlanner",
                         "url": "https://potluck-landing.netlify.app/",
                         "style": "primary",
@@ -283,6 +293,15 @@
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Github-Advanced-Search",
+                        "url": "https://github.com/search/advanced",
+                        "style": "icon",
+                        "icon_class": "github",
+                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     }
@@ -431,6 +450,15 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
+            },
+            {
+                "label": "reddit",
+                "url": "https://www.reddit.com/user/SignalCountry5613",
+                "style": "icon",
+                "icon_class": "reddit",
+                "new_window": true,
+                "no_follow": false,
+                "type": "action"
             }
         ],
         "links": [
@@ -451,29 +479,11 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-            },
-            {
-                "label": "Html Previewer",
-                "url": "#",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "Python",
-                "url": "https://github.com/bgoonz/PYTHON_PRAC",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
             }
         ],
         "content": "@bgoonz on almost every platform"
     },
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app/",
-    "favicon": "images/favicon.ico"
+    "favicon": "images/webdevhublogo2.PNG"
 }
