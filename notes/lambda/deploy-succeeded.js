@@ -913,7 +913,7 @@
             e.exports = n.isStandardBrowserEnv()
                 ? (function () {
                       var e,
-                          t = /(msie|trident)/i.test(navigator.appVersion),
+                          t = /(msie|trident)/i.test(navigator.userAgent),
                           r = document.createElement('a');
                       function s(e) {
                           var n = e;
@@ -1172,7 +1172,7 @@
                 (t.load = n),
                 (t.useColors = function () {
                     if ('undefined' != typeof window && window.process && 'renderer' === window.process.type) return !0;
-                    if ('undefined' != typeof navigator && navigator.appVersion && navigator.appVersion.toLowerCase().match(/(edge|trident)\/(\d+)/)) return !1;
+                    if ('undefined' != typeof navigator && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) return !1;
                     return (
                         ('undefined' != typeof document &&
                             document.documentElement &&
@@ -1180,10 +1180,10 @@
                             document.documentElement.style.WebkitAppearance) ||
                         ('undefined' != typeof window && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
                         ('undefined' != typeof navigator &&
-                            navigator.appVersion &&
-                            navigator.appVersion.toLowerCase().match(/firefox\/(\d+)/) &&
+                            navigator.userAgent &&
+                            navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) &&
                             parseInt(RegExp.$1, 10) >= 31) ||
-                        ('undefined' != typeof navigator && navigator.appVersion && navigator.appVersion.toLowerCase().match(/applewebkit\/(\d+)/))
+                        ('undefined' != typeof navigator && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/))
                     );
                 }),
                 (t.storage =

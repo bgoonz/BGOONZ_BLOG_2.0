@@ -27,14 +27,12 @@ a {
 }
 
 iframe {
-    overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
     border-radius: 12px;
     border: 2px solid gold;
-    height: 1600px !important;
-    width: 95%;
-    resize: both;
-    overflow: scroll;
+    height: 1200px;
+    width: 1150px !important;
 }
 
 h1,
@@ -220,11 +218,4 @@ img {
     h6 {
         font-size: 1.125em;
     }
-}
-
-
-
-.gcse-search{
-    width:30%;
-height:50%;
 }

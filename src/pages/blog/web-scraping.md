@@ -3,39 +3,40 @@ title: Webscraping w nodejs
 date: '2021-07-26'
 image: images/web-development.gif
 seo:
-    title: webscraping
-    description: 'There are a lot of use cases for web scraping'
-    extra:
-        - name: 'og:type'
-          value: article
-          keyName: property
-        - name: 'og:title'
-          value: Platform Docs
-          keyName: property
-        - name: 'og:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-          keyName: property
-        - name: 'og:image'
-          value: images/curious-europa.gif
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:card'
-          value: summary_large_image
-        - name: 'twitter:title'
-          value: Platform Docs
-        - name: 'twitter:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-        - name: 'twitter:image'
-          value: images/web-development.gif
-          relativeUrl: true
+  title: webscraping
+  description: 'There are a lot of use cases for web scraping'
+  extra:
+    - name: 'og:type'
+      value: article
+      keyName: property
+    - name: 'og:title'
+      value: Platform Docs
+      keyName: property
+    - name: 'og:description'
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      keyName: property
+    - name: 'og:image'
+      value: images/curious-europa.gif
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Platform Docs
+    - name: 'twitter:description'
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    - name: 'twitter:image'
+      value: images/web-development.gif
+      relativeUrl: true
 template: post
+
 ---
 
-# Web Scraping with Node.js
+#  Web Scraping with Node.js
 
 > So what’s web scraping anyway? It involves automating away the laborious task of collecting information from websites. There are a lot of use cases for web scraping: you might want to collect prices from various e-commerce sites for a price comparison site. Or perhaps you need flight times and
 
-![The Ultimate Guide to Web Scraping with Node.js](https://cdn-media-1.freecodecamp.org/images/1*KkVKtysvgh2hIVRI1Irk-Q.jpeg)
+ ![The Ultimate Guide to Web Scraping with Node.js](https://cdn-media-1.freecodecamp.org/images/1*KkVKtysvgh2hIVRI1Irk-Q.jpeg) 
 
 So what’s web scraping anyway? It involves automating away the laborious task of collecting information from websites.
 
@@ -43,8 +44,8 @@ There are a lot of use cases for web scraping: you might want to collect prices 
 
 Getting started with web scraping is easy, and the process can be broken down into two main parts:
 
--   acquiring the data using an HTML request library or a headless browser,
--   and parsing the data to get the exact information you want.
+*   acquiring the data using an HTML request library or a headless browser,
+*   and parsing the data to get the exact information you want.
 
 This guide will walk you through the process with the popular Node.js [request-promise](https://github.com/request/request-promise) module, [CheerioJS](https://github.com/cheeriojs/cheerio), and [Puppeteer](https://github.com/GoogleChrome/puppeteer). Working through the examples in this guide, you will learn all the tips and tricks you need to become a pro at gathering any data you need with Node.js!
 
@@ -178,11 +179,12 @@ Output:
 
 And there’s the list! At this point you should feel comfortable writing your first web scraper to gather data from any website. Here are a few additional resources that you may find helpful during your web scraping journey:
 
--   [List of web scraping proxy services](https://www.scraperapi.com/blog/the-10-best-rotating-proxy-services-for-web-scraping)
--   [List of handy web scraping tools](https://www.scraperapi.com/blog/the-10-best-web-scraping-tools)
--   [List of web scraping tips](https://www.scraperapi.com/blog/5-tips-for-web-scraping)
--   [Comparison of web scraping proxies](https://www.scraperapi.com/blog/free-shared-dedicated-datacenter-residential-rotating-proxies-for-web-scraping)
--   [Cheerio Documentation](https://github.com/cheeriojs/cheerio)
--   [Puppeteer Documentation](https://github.com/GoogleChrome/puppeteer)
+*   [List of web scraping proxy services](https://www.scraperapi.com/blog/the-10-best-rotating-proxy-services-for-web-scraping)
+*   [List of handy web scraping tools](https://www.scraperapi.com/blog/the-10-best-web-scraping-tools)
+*   [List of web scraping tips](https://www.scraperapi.com/blog/5-tips-for-web-scraping)
+*   [Comparison of web scraping proxies](https://www.scraperapi.com/blog/free-shared-dedicated-datacenter-residential-rotating-proxies-for-web-scraping)
+*   [Cheerio Documentation](https://github.com/cheeriojs/cheerio)
+*   [Puppeteer Documentation](https://github.com/GoogleChrome/puppeteer)
 
----
+* * *
+
