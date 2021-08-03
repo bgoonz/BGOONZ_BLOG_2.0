@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/@reach/router/index.js"), require("/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/lodash.js"), require("/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("/workspace/BGOONZ_BLOG_2.0/node_modules/@reach/router/index.js"), require("/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/lodash.js"), require("/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/@reach/router/index.js", "/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/lodash.js", "/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/merge.js", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["/workspace/BGOONZ_BLOG_2.0/node_modules/@reach/router/index.js", "/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/lodash.js", "/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/merge.js", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/@reach/router/index.js"), require("/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/lodash.js"), require("/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("/workspace/BGOONZ_BLOG_2.0/node_modules/@reach/router/index.js"), require("/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/lodash.js"), require("/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/@reach/router/index.js"], root["/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/lodash.js"], root["/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["/workspace/BGOONZ_BLOG_2.0/node_modules/@reach/router/index.js"], root["/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/lodash.js"], root["/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_lodash__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -105,6 +105,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
+  options: {
+    "plugins": []
+  }
+}, {
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-dark-mode/gatsby-ssr */ "./node_modules/gatsby-plugin-dark-mode/gatsby-ssr.js"),
   options: {
     "plugins": []
   }
@@ -2544,6 +2549,63 @@ function parsePath(path) {
     hash: hash === "#" ? "" : hash
   };
 }
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-dark-mode/gatsby-ssr.js":
+/*!************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-dark-mode/gatsby-ssr.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const React = __webpack_require__(/*! react */ "react");
+
+exports.onRenderBody = function ({
+  setPreBodyComponents
+}) {
+  setPreBodyComponents([React.createElement('script', {
+    key: 'gatsby-plugin-dark-mode',
+    dangerouslySetInnerHTML: {
+      __html: `
+void function() {
+  window.__onThemeChange = function() {}
+
+  var preferredTheme
+  try {
+    preferredTheme = localStorage.getItem('theme')
+  } catch (err) { }
+
+  function setTheme(newTheme) {
+    if (preferredTheme && document.body.classList.contains(preferredTheme)) {
+      document.body.classList.replace(preferredTheme, newTheme)
+    } else {
+      document.body.classList.add(newTheme)
+    }
+
+    window.__theme = newTheme
+    preferredTheme = newTheme
+    window.__onThemeChange(newTheme)
+  }
+
+  window.__setPreferredTheme = function(newTheme) {
+    setTheme(newTheme)
+    try {
+      localStorage.setItem('theme', newTheme)
+    } catch (err) {}
+  }
+
+  var darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  darkQuery.addListener(function(e) {
+    window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+  })
+
+  setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
+}()
+    `
+    }
+  })]);
+};
 
 /***/ }),
 
@@ -30594,9 +30656,9 @@ function withPrefix(url) {
 /***/ }),
 
 /***/ "@reach/router":
-/*!*****************************************************************************************!*\
-  !*** external "/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/@reach/router/index.js" ***!
-  \*****************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** external "/workspace/BGOONZ_BLOG_2.0/node_modules/@reach/router/index.js" ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -30605,9 +30667,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ }),
 
 /***/ "lodash":
-/*!***********************************************************************************!*\
-  !*** external "/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/lodash.js" ***!
-  \***********************************************************************************/
+/*!***************************************************************************!*\
+  !*** external "/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/lodash.js" ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -30616,9 +30678,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash__;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!**********************************************************************************!*\
-  !*** external "/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/node_modules/lodash/merge.js" ***!
-  \**********************************************************************************/
+/*!**************************************************************************!*\
+  !*** external "/workspace/BGOONZ_BLOG_2.0/node_modules/lodash/merge.js" ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
