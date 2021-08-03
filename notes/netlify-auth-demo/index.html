@@ -4,6 +4,12 @@
         <title>Netlify + GitHub Authentication Example</title>
     </head>
     <body>
+      <input type="button" style="position: absolute;top: 10px;right: 10px;width:80px;color:rgb(147, 13, 13);font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
+      <?php
+        $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+        echo "<a href='$url'></a>"; 
+      ?>
+
         <h1>Netlify + GitHub Authentication Example</h1>
         <p>
             Listed are very basic demos for using Netlify's authentication provider service to send a signed request to GitHub's OAuth server and receive an
