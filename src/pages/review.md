@@ -2,7 +2,7 @@
 title: review
 sections: []
 seo:
-    title: ''
+    title: 'review'
     description: ''
     robots: []
     extra: []
