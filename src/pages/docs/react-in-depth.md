@@ -16,19 +16,9 @@ template: docs
 
 ![](https://miro.medium.com/max/60/0\*LHVHf7SPZ1t0UVAj?q=20)
 
-
-
-
-
-
-
 ![](https://miro.medium.com/max/630/0\*LHVHf7SPZ1t0UVAj)
 
-
-
 ![](https://miro.medium.com/max/60/0\*wR-lbD4zf45-IHoQ?q=20)![](https://miro.medium.com/max/630/0\*wR-lbD4zf45-IHoQ)![](https://miro.medium.com/max/60/0\*7EZESKf0XPbncXAY?q=20)![](https://miro.medium.com/max/630/0\*7EZESKf0XPbncXAY)
-
-
 
 *   Using () implictly returns components.
 
@@ -631,3 +621,191 @@ React Version
 <!---->
 
 *   While we will never actually be creating full apps with just React.createElement => it is the enginer that is running under the hood!
+
+
+
+
+
+# Introduction to JSX![](https://miro.medium.com/max/60/0\*NNxuFMF-sOL8Wvdl?q=20)![](https://miro.medium.com/max/630/0\*NNxuFMF-sOL8Wvdl)&#xA;&#xA;
+
+*   JSX : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API. How to use JSX
+
+*   We will use babel to convert version of modern JS into an older version of JS. React Create Element
+
+JSX Version
+
+*   Keep in mind that self closing tags in React must have a forward slash to close it.
+
+<!---->
+
+*   Properties and Data
+
+<!---->
+
+*   Comments in JSX have the following syntax:
+
+<!---->
+
+*   Property Names:
+
+*   checked : Attribute of input components such as checkbox or radio, use it to set whether the component is checked or not.
+
+*   className : Used to specify a CSS class.
+
+*   dangerouslySetInnerHTML : React's equivalent of innerHTML because it is risky to cross-site scripting attacks.
+
+*   htmlFor : Because for is protected keyword, React elements use this instead.
+
+*   onChange : Event fired whenever a form field is changed.
+
+*   style : Accepts a JS object with camelCase properties rather than a CSS string.
+
+*   value : Supported by Input, Select, and TextArea components; use it to set the value of the component.
+
+*   Note: React uses camel-case!!! The JSX semicolon gotcha
+
+create Element equivalent
+
+*   We wrap what want to return in parenthesis so JS doesn’t auto add semi-colons after every line and run the code incorrectly.
+
+*   Just remember if you decided to use the return keyword in a function to ‘return some JSX’, then make sure you wrap the JSX in parenthesis.
+
+npx create-react-app my-app
+
+*   Single line used to initiate a React application.
+
+*   React has a great toolchain where you can see changes live as you’re editing your application.
+
+*   React errors will be rendered directly onto the browser window.
+
+*   A downside is that it installs a lot of bloat files.
+
+*   Examples of React create Element and JSX equivalent
+
+More Complex JSX Example
+
+# Notes
+
+# Using Custom CRA Templates
+
+Using a Custom Template npx create-react-app my-app --template @appacademy/simple
+
+*   Keep in mind that using create-react-app automatically initializes a git repository for you!
+
+*   App Academy custom template for creating a react app.
+
+*   If using the default react create project you can delete the following files:
+
+*   favicon.ico
+
+*   robots.txt
+
+*   logo192.png
+
+*   logo512.png
+
+*   manifest.json
+
+*   You can also simplify the html file into:
+
+Simplifying the src folder
+
+*   Remove: App.css App.test.js logo.svg serviceWorker.js setupTests.js
+
+*   Update the Following Files:
+
+# React Class Components
+
+Class Components
+
+*   You can write React components using ES2015 Classes: Function Component
+
+ES2015 Version
+
+*   We can access props within a class component by using this.props
+
+*   Keep in mind Class Components are used just like function components.
+
+Setting and accessing props
+
+*   If we define a constructor method in our Class Component, we have to define the super method with props passed through it.
+
+*   Side Note: Before React used ES2015 Classes, it used React.createclass function, if you ever need to use this antiquated method make sure you install a module called create-react-class Stateful components
+
+*   One of the major reasons why you would choose to use a Class Component over a Function Component is to add and manage local or internal state to your component.
+
+*   Second of the major reasons is to be able to use a Class Component’s lifecycle methods. What is state?
+
+*   Props are data that are provided by the consumer or caller of the component.
+
+*   Not meant to be changed by a component.
+
+*   State is data that is internal to the component.
+
+*   Intended to be updated or mutated. When to use state
+
+*   *Only Use State when it is absolutely necessary*
+
+*   If the data never changes, or if it’s needed through an entire application use props instead.
+
+*   State is more often used when creating components that retrieve data from APIs or render forms.
+
+*   The general rule of thumb: If a component doesn’t need to use state or lifecyle methods, it should be prioritized as a function component.
+
+*   Functional:Stateless || Class:Stateful Initializing state
+
+*   Use a class constructor method to initialize this.state object. // Application Entry Point
+
+// Class Component: RandomQuote
+
+Updating State
+
+*   Let’s say we want to update our state with a new quote.
+
+*   We can set up event listeners in React similarly to how we did them before.
+
+*   \<button type=”button” onClick={this.changeQuote}> Change Quote \</button>
+
+*   onClick is the event listener.
+
+*   {this.changeQuote} is the event handler method.
+
+*   Our Class Component File should now look like this with the new additions:
+
+Don’t modify state directly
+
+*   It is important to never modify your state directly!
+
+*   ALWAYS use this.setState method to update state.
+
+*   This is because when you only use this.state to re-assign, no re-rendering will occur => leaving our component out of sync. Properly updating state from the previous state
+
+*   In our current example, the way we have changeQuote set up leaves us with occasionally producing the same index twice in a row.
+
+*   One solution is to design a loop but keep in mind that state updates are handled asynchronously in React (your current value is not guaranteed to be the latest)
+
+*   A safe method is to pass an anonymous method to this.setState (instead of an object literal) Previous
+
+Passing w/ Anon Method
+
+Providing default values for props
+
+*   In our current example, we pass in a static array of predefined quotes in our constructor.
+
+*   The way it is set up right now leaves our list of quotes unchanged after initialization.
+
+*   We can make quotes more dynamic by replacing our static array with a props argument passed into super.
+
+*   constructor(props) { super(props); }
+
+*   We can now move our quotes array to our application entry point and pass it in as a prop. // Application Entry Point
+
+<!---->
+
+*   One thing to note about this workaround is that the caller of the component *must* set the quotes prop or the component will throw an error => so use defaultProps!
+
+<!---->
+
+*   A good safety net in case the consumer/caller doesn’t provide a value for the quotes array.
+
+*   We can even remove it from our index.js now and an error will not be thrown.
