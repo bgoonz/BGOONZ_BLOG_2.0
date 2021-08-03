@@ -83,7 +83,7 @@ export default class Header extends React.Component {
                         )}
                     </div>
                 </div>
-                <
+                <div id="search"
                 <div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
