@@ -66,6 +66,18 @@ module.exports = {
                 sourceUrlPath: `fields.url`,
                 pageContextProperty: `menus`
             }
-        }
+        },
+           {
+      // in real life this would be:
+      resolve: 'gatsby-plugin-algolia',
+      // resolve: require.resolve('../'),
+      options: {
+        appId: process.env.ALGOLIA_APPID,
+        apiKey: process.env.ALGOLIA_APIKEY,
+        indexName: process.env.ALGOLIA_INDEXNAME, // for all queries
+        queries,
+        chunkSize: 10000, // default: 1000
+        enablePartialUpdates: true, // default: false
+        matchFields: ['matchFields'],
     ]
 };
