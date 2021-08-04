@@ -3,7 +3,7 @@ title: Notes Template
 weight: 2
 seo:
     title: Gatsby Plugins For This Sites Content Model
-    description: This is the Gatsby Plugins For This Sites Content Model page
+    description: This is my markdown notes tempate
     extra:
         - name: 'og:type'
           value: website
