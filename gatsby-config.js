@@ -1,10 +1,9 @@
-const siteMetadata = require( './site-metadata.json' );
+const siteMetadata = require('./site-metadata.json');
 const queries = require('./src/utils/algolia');
 
 require('dotenv').config({
     path: `.env`
 });
-
 
 siteMetadata.siteUrl = `https://bgoonz-blog.netlify.app/`;
 siteMetadata.title = 'bgoonzblog2.0';
@@ -42,7 +41,7 @@ module.exports = {
         {
             // in real life this would be:
             resolve: 'gatsby-plugin-algolia',
-    
+
             options: {
                 appId: process.env.ALGOLIA_APPID,
                 apiKey: process.env.ALGOLIA_APIKEY,

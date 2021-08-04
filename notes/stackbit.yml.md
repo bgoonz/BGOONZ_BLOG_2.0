@@ -1,5 +1,4 @@
-stackbit.yaml
-=============
+# stackbit.yaml
 
 The `stackbit.yaml` file lets you define the directory structure, the content schema, and other aspects of your site needed to make it work with Stackbit. `stackbit.yaml` should be placed in the root of your repository.
 
@@ -7,8 +6,7 @@ There are two use cases for `stackbit.yaml`. The first use case serves Stackbit
 
 Both Stackbit Site Builder and Stackbit Studio can work without `stackbit.yaml`. They will try to infer the missing data from project files. However, to support advanced capabilities and prevent misconfigurations, we recommend providing this file.
 
-[](https://www.stackbit.com/docs/reference/stackbit-yaml/#stackbit_studio)Stackbit Studio
------------------------------------------------------------------------------------------
+## [](https://www.stackbit.com/docs/reference/stackbit-yaml/#stackbit_studio)Stackbit Studio
 
 Stackbit Studio runs your static site generator and shows your site's live preview, enabling you and your collaborators to edit your site with an on-page editing experience and publish it.
 
@@ -18,8 +16,7 @@ Stackbit Studio synchronizes site content in a bi-directional manner. When you m
 
 Depending on your headless-CMS, Stackbit Studio will work in one of the two modes - "[API-based CMS mode](https://www.stackbit.com/docs/conceptual-guides/api-based-cms)" or "[File-based CMS mode](https://www.stackbit.com/docs/conceptual-guides/file-based-cms)".
 
-[](https://www.stackbit.com/docs/reference/stackbit-yaml/#generating_stackbit_yaml)Generating stackbit.yaml
------------------------------------------------------------------------------------------------------------
+## [](https://www.stackbit.com/docs/reference/stackbit-yaml/#generating_stackbit_yaml)Generating stackbit.yaml
 
 In order to get started quickly, you can use Stackbit CLI `init` command to automatically generate `stackbit.yaml`. Although the generated file might not describe your project exactly, it might save you a lot of time defining your content model.
 
@@ -43,8 +40,7 @@ Copy
 
 Click [here](https://www.stackbit.com/docs/reference/stackbit-cli) to learn more about Stackbit CLI.
 
-[](https://www.stackbit.com/docs/reference/stackbit-yaml/#validating_stackbit_yaml)Validating stackbit.yaml
------------------------------------------------------------------------------------------------------------
+## [](https://www.stackbit.com/docs/reference/stackbit-yaml/#validating_stackbit_yaml)Validating stackbit.yaml
 
 To validate `stackbit.yaml` install Stackbit CLI:
 
@@ -68,8 +64,7 @@ The `validate` command will validate the structure of your `stackbit.yaml` a
 
 Click [here](https://www.stackbit.com/docs/reference/stackbit-cli) to learn more about Stackbit CLI.
 
-[](https://www.stackbit.com/docs/reference/stackbit-yaml/#configuring_stackbit_yaml)Configuring stackbit.yaml
--------------------------------------------------------------------------------------------------------------
+## [](https://www.stackbit.com/docs/reference/stackbit-yaml/#configuring_stackbit_yaml)Configuring stackbit.yaml
 
 The configuration of `stackbit.yaml` might differ depending on the configuration of your site and the headless-CMS your site use.
 
@@ -88,6 +83,7 @@ You can create and edit your Stackbit Content Model using the [Content Model sc
     This section describes the base properties of stackbit.yaml and when to use them
 
     ](https://www.stackbit.com/docs/reference/stackbit-yaml/properties/)
+
 -   [
 
     Import
@@ -95,6 +91,7 @@ You can create and edit your Stackbit Content Model using the [Content Model sc
     Importing initial theme content into the CMS
 
     ](https://www.stackbit.com/docs/reference/stackbit-yaml/import/)
+
 -   [
 
     Assets
@@ -102,6 +99,7 @@ You can create and edit your Stackbit Content Model using the [Content Model sc
     Assets define how files, such as images, are stored and handled in a project
 
     ](https://www.stackbit.com/docs/reference/stackbit-yaml/assets/)
+
 -   [
 
     Logic Fields
@@ -109,6 +107,7 @@ You can create and edit your Stackbit Content Model using the [Content Model sc
     List of fields used in static site generation logic.
 
     ](https://www.stackbit.com/docs/reference/stackbit-yaml/logic-fields/)
+
 -   [
 
     Models
@@ -116,6 +115,7 @@ You can create and edit your Stackbit Content Model using the [Content Model sc
     Models define the structure of site content
 
     ](https://www.stackbit.com/docs/reference/stackbit-yaml/models/)
+
 -   [
 
     Page models
@@ -123,6 +123,7 @@ You can create and edit your Stackbit Content Model using the [Content Model sc
     Page models define the structure of site pages
 
     ](https://www.stackbit.com/docs/reference/stackbit-yaml/page-models/)
+
 -   [
 
     Data models
@@ -130,6 +131,7 @@ You can create and edit your Stackbit Content Model using the [Content Model sc
     Data models define the structure of site data files such as JSON, TOML, or YAML
 
     ](https://www.stackbit.com/docs/reference/stackbit-yaml/data-models/)
+
 -   [
 
     Object models
@@ -137,6 +139,7 @@ You can create and edit your Stackbit Content Model using the [Content Model sc
     Object models define the structure of data nested inside page or data models
 
     ](https://www.stackbit.com/docs/reference/stackbit-yaml/object-models/)
+
 -   [
 
     Model Fields
@@ -144,6 +147,7 @@ You can create and edit your Stackbit Content Model using the [Content Model sc
     Model fields define the fields that make up a particular model
 
     ](https://www.stackbit.com/docs/reference/stackbit-yaml/fields/)
+
 -   [
 
     Examples
