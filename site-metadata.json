@@ -210,7 +210,7 @@
             },
             {
                 "label": "Tools",
-                "url": "/notes-template",
+                "url": "/docs/tools",
                 "style": "link",
                 "has_subnav": true,
                 "subnav_links": [
