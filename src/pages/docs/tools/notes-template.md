@@ -1,37 +1,25 @@
 ---
 title: Notes Template
-subtitle: The Notes Template provides you with a blueprint of default post and page styles.
-image: images/5.jpg
+weight: 2
 seo:
-    title: Theme Notes Template
-    description: A reference for suggested typographic treatment and styles for your content
+    title: Gatsby Plugins For This Sites Content Model
+    description: This is my markdown notes tempate
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value: Theme Notes Template
+          value: Gatsby Plugins For This Sites Content Model
           keyName: property
         - name: 'og:description'
-          value: >-
-              A reference for suggested typographic treatment and styles for your
-              content
+          value: This is the Gatsby Plugins For This Sites Content Model page
           keyName: property
-        - name: 'og:image'
-          value: images/5.jpg
-          keyName: property
-          relativeUrl: true
         - name: 'twitter:card'
-          value: summary_large_image
+          value: summary
         - name: 'twitter:title'
-          value: Theme Notes Template
+          value: Gatsby Plugins For This Sites Content Model
         - name: 'twitter:description'
-          value: >-
-              A reference for suggested typographic treatment and styles for your
-              content
-        - name: 'twitter:image'
-          value: images/5.jpg
-          relativeUrl: true
+          value: This is the Gatsby Plugins For This Sites Content Model page
 template: docs
 ---
 
