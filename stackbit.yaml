@@ -4,15 +4,15 @@ cmsName: contentful
 nodeVersion: 14
 publishDir: public
 models:
-  notes:
-    type: page
-    label: notes
-    description: less structured content
-    folder: /posts
-    match: '*.md'
-    fields:
-      - name: html
-        type: html
-        label: html
-        description: embed
-        default: <div></div>
+    notes:
+        type: page
+        label: notes
+        description: less structured content
+        folder: /posts
+        match: '*.md'
+        fields:
+            - name: html
+              type: html
+              label: html
+              description: embed
+              default: <div></div>

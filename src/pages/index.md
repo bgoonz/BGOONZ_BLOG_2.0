@@ -318,28 +318,26 @@ seo:
           relativeUrl: true
 template: advanced
 ---
+
 ---
+
 title: Web Dev Hub Home
-sections:
-    - section_id: Intro
-      type: section_hero
-      title: 'I am a musician, electrical engineer & web developer'
-      image: images/cool annimation.gif
-      content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
-      actions:
-          - label: Contact
-            url: 'https://sidebar-blog.netlify.app/contact/'
-            style: secondary
-            icon_class: linkedin
-            new_window: true
-            no_follow: false
-            type: action
-    - section_id: features
-      type: section_grid
-      col_number: three
-      grid_items:
-          - content: >
-                Memoization, Tabulation, and Sorting Algorithms by Example
+sections: - section_id: Intro
+type: section_hero
+title: 'I am a musician, electrical engineer & web developer'
+image: images/cool annimation.gif
+content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
+actions: - label: Contact
+url: 'https://sidebar-blog.netlify.app/contact/'
+style: secondary
+icon_class: linkedin
+new_window: true
+no_follow: false
+type: action - section_id: features
+type: section_grid
+col_number: three
+grid_items: - content: >
+Memoization, Tabulation, and Sorting Algorithms by Example
 
                 Why is looking at runtime not a reliable method of calculating time
                 complexity?
@@ -440,7 +438,7 @@ sections:
       image_alt: listen to my playlist
       image_position: left
       content: >
-          <iframe class="block-content" width="100%    
+          <iframe class="block-content" width="100%
           src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
           width="100%" height="380" frameBorder="0" allowtransparency="true"
           allow="encrypted-media"></iframe>
@@ -592,36 +590,30 @@ sections:
             no_follow: false
             type: action
       type: section_cta
+
 seo:
-    title: Web-Dev-Hub
-    description: >-
-        my resource sharing and blog site ... centered mostly on web development and
-        just a bit of audio production / generally nerdy things I find interesting.
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Web-Dev-Hub
-          keyName: property
-        - name: 'og:description'
-          value: >-
-              my resource sharing and blog site ... centered mostly on web development
-              and just a bit of audio production / generally nerdy things I find
-              interesting.
-          keyName: property
-        - name: 'og:image'
-          value: images/code.png
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:card'
-          value: summary_large_image
-        - name: 'twitter:title'
-          value: Web-Dev-Hub
-        - name: 'twitter:description'
-          value: Web-Dev-Hub
-        - name: 'twitter:image'
-          value: images/4.jpg
-          relativeUrl: true
+title: Web-Dev-Hub
+description: >-
+my resource sharing and blog site ... centered mostly on web development and
+just a bit of audio production / generally nerdy things I find interesting.
+extra: - name: 'og:type'
+value: website
+keyName: property - name: 'og:title'
+value: Web-Dev-Hub
+keyName: property - name: 'og:description'
+value: >-
+my resource sharing and blog site ... centered mostly on web development
+and just a bit of audio production / generally nerdy things I find
+interesting.
+keyName: property - name: 'og:image'
+value: images/code.png
+keyName: property
+relativeUrl: true - name: 'twitter:card'
+value: summary_large_image - name: 'twitter:title'
+value: Web-Dev-Hub - name: 'twitter:description'
+value: Web-Dev-Hub - name: 'twitter:image'
+value: images/4.jpg
+relativeUrl: true
 template: advanced
+
 ---
