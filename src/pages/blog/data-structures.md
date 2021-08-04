@@ -5,11 +5,11 @@ date: '2021-06-03'
 thumb_image_alt: lorem-ipsum
 excerpt: A guide to computational complexity
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: post
 image: images/ds.PNG
 thumb_image: images/polite-sage.jpg
