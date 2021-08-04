@@ -5,3 +5,7 @@ ssgName: gatsby
 cmsName: contentful
 nodeVersion: '0'
 publishDir: public
+models:
+  notes:
+    type: page
+    label: notes
