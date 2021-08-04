@@ -670,4 +670,3 @@ models:
     docsections:
         type: object
         label: docsections
-

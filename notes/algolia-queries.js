@@ -9,7 +9,7 @@
 //         objectID: id
 //         frontmatter {
 //           title
-//      
+//
 //         }
 //         excerpt(pruneLength: 5000)
 //       }
@@ -25,7 +25,7 @@
 //         objectID: id
 //         frontmatter {
 //           title
-//      
+//
 //           date(formatString: "MMM D, YYYY")
 //           tags
 //         }
