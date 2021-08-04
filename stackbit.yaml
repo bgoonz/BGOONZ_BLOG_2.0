@@ -9,3 +9,10 @@ models:
   notes:
     type: page
     label: notes
+    description: less structured content
+    folder: /posts
+    match: '*.md'
+    fields:
+      - name: html
+        type: html
+        label: html
