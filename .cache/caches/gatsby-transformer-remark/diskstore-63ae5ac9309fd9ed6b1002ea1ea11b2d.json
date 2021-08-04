@@ -1,1 +1,419 @@
-{"expireTime":9007200882786895000,"key":"transformer-remark-markdown-html-ast-34389e81258688daddf5093685b60b02--","val":{"type":"root","children":[{"type":"raw","value":"<br>\n<br>\n<br>\n<br>\n<h1> Spotify Superimposed Over Video </h1>\n<iframe title=\"Video Background 1\" src=\"https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">","position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":7,"column":248,"offset":311}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"See the Pen ","position":{"start":{"line":9,"column":1,"offset":313},"end":{"line":9,"column":13,"offset":325}}},{"type":"raw","value":"<a href=\"https://codepen.io/bgoonz/pen/BaRLKBd\">","position":{"start":{"line":9,"column":13,"offset":325},"end":{"line":9,"column":61,"offset":373}}},{"type":"text","value":"\nVideo Background 1","position":{"start":{"line":9,"column":61,"offset":373},"end":{"line":10,"column":19,"offset":392}}},{"type":"raw","value":"</a>","position":{"start":{"line":10,"column":19,"offset":392},"end":{"line":10,"column":23,"offset":396}}},{"type":"text","value":" by Bryan C Guner (","position":{"start":{"line":10,"column":23,"offset":396},"end":{"line":10,"column":42,"offset":415}}},{"type":"raw","value":"<a href=\"https://codepen.io/bgoonz\">","position":{"start":{"line":10,"column":42,"offset":415},"end":{"line":10,"column":78,"offset":451}}},{"type":"text","value":"@bgoonz","position":{"start":{"line":10,"column":78,"offset":451},"end":{"line":10,"column":85,"offset":458}}},{"type":"raw","value":"</a>","position":{"start":{"line":10,"column":85,"offset":458},"end":{"line":10,"column":89,"offset":462}}},{"type":"text","value":")\non ","position":{"start":{"line":10,"column":89,"offset":462},"end":{"line":11,"column":4,"offset":467}}},{"type":"raw","value":"<a href=\"https://codepen.io\">","position":{"start":{"line":11,"column":4,"offset":467},"end":{"line":11,"column":33,"offset":496}}},{"type":"text","value":"CodePen","position":{"start":{"line":11,"column":33,"offset":496},"end":{"line":11,"column":40,"offset":503}}},{"type":"raw","value":"</a>","position":{"start":{"line":11,"column":40,"offset":503},"end":{"line":11,"column":44,"offset":507}}},{"type":"text","value":".","position":{"start":{"line":11,"column":44,"offset":507},"end":{"line":11,"column":45,"offset":508}}}],"position":{"start":{"line":9,"column":1,"offset":313},"end":{"line":11,"column":45,"offset":508}}},{"type":"text","value":"\n"},{"type":"raw","value":"</iframe>","position":{"start":{"line":13,"column":1,"offset":510},"end":{"line":13,"column":10,"offset":519}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<br>\n<br>\n<h1>   Speach Recognition api </h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://random-static-html-deploys.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n<br>\n<br>\n<br>\n<br>\n<br>\n<h1>   Paste To Markdown </h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://euangoddard.github.io/clipboard2markdown/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n        \n        \n        \n<br>\n<br>","position":{"start":{"line":15,"column":1,"offset":521},"end":{"line":37,"column":5,"offset":1466}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":39,"column":1,"offset":1468},"end":{"line":39,"column":5,"offset":1472}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":41,"column":1,"offset":1474},"end":{"line":41,"column":5,"offset":1478}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":43,"column":1,"offset":1480},"end":{"line":43,"column":5,"offset":1484}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1>  Cloud Storage </h1>\n<br>","position":{"start":{"line":45,"column":1,"offset":1486},"end":{"line":47,"column":5,"offset":1521}}},{"type":"text","value":"\n"},{"type":"raw","value":"<h2> Up to 1TB of cloud Storage for file sharing!</h2>\n<iframe src=\"https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E\" height=\"275px\" width=\"17%\" style=\"zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;\">\n</iframe>","position":{"start":{"line":49,"column":1,"offset":1523},"end":{"line":51,"column":10,"offset":1827}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":53,"column":1,"offset":1829},"end":{"line":53,"column":5,"offset":1833}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":55,"column":1,"offset":1835},"end":{"line":55,"column":5,"offset":1839}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1>     Resource Archive           </h1>\n<br>","position":{"start":{"line":57,"column":1,"offset":1841},"end":{"line":59,"column":5,"offset":1892}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe src=\"https://resourcerepo2.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>","position":{"start":{"line":61,"column":1,"offset":1894},"end":{"line":63,"column":82,"offset":2252}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":65,"column":1,"offset":2254},"end":{"line":65,"column":5,"offset":2258}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":67,"column":1,"offset":2260},"end":{"line":67,"column":5,"offset":2264}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":69,"column":1,"offset":2266},"end":{"line":69,"column":5,"offset":2270}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1>   Lambda Student Site </h1>\n<br>","position":{"start":{"line":71,"column":1,"offset":2272},"end":{"line":73,"column":5,"offset":2314}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe class=\"inner\" src=\"https://lambda-resources.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>","position":{"start":{"line":75,"column":1,"offset":2316},"end":{"line":77,"column":82,"offset":2691}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":79,"column":1,"offset":2693},"end":{"line":79,"column":5,"offset":2697}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":81,"column":1,"offset":2699},"end":{"line":81,"column":5,"offset":2703}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":83,"column":1,"offset":2705},"end":{"line":83,"column":5,"offset":2709}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":85,"column":1,"offset":2711},"end":{"line":85,"column":5,"offset":2715}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":87,"column":1,"offset":2717},"end":{"line":87,"column":5,"offset":2721}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":89,"column":1,"offset":2723},"end":{"line":89,"column":5,"offset":2727}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":91,"column":1,"offset":2729},"end":{"line":91,"column":5,"offset":2733}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1> Text Tools     </h1>\n<br>","position":{"start":{"line":93,"column":1,"offset":2735},"end":{"line":95,"column":5,"offset":2770}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe src=\"https://devtools42.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>","position":{"start":{"line":97,"column":1,"offset":2772},"end":{"line":99,"column":82,"offset":3127}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":101,"column":1,"offset":3129},"end":{"line":101,"column":5,"offset":3133}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":103,"column":1,"offset":3135},"end":{"line":103,"column":5,"offset":3139}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1> Ternary Converter   </h1>\n<br>\n<iframe src=\"https://ternary42.netlify.app/\" height=\"800px\" width=\"600px!important\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>","position":{"start":{"line":105,"column":1,"offset":3141},"end":{"line":110,"column":82,"offset":3545}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":112,"column":1,"offset":3547},"end":{"line":112,"column":5,"offset":3551}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":114,"column":1,"offset":3553},"end":{"line":114,"column":5,"offset":3557}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1>  Github HTML Render from link </h1>\n<br>","position":{"start":{"line":116,"column":1,"offset":3559},"end":{"line":118,"column":5,"offset":3609}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe src=\"https://githtmlpreview.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>","position":{"start":{"line":120,"column":1,"offset":3611},"end":{"line":122,"column":82,"offset":3970}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":124,"column":1,"offset":3972},"end":{"line":124,"column":5,"offset":3976}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":126,"column":1,"offset":3978},"end":{"line":126,"column":5,"offset":3982}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1> Data Structures</h1>\n<br>","position":{"start":{"line":128,"column":1,"offset":3984},"end":{"line":130,"column":5,"offset":4019}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe src=\"https://determined-dijkstra-ee7390.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>","position":{"start":{"line":132,"column":1,"offset":4021},"end":{"line":134,"column":82,"offset":4392}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":136,"column":1,"offset":4394},"end":{"line":136,"column":5,"offset":4398}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":138,"column":1,"offset":4400},"end":{"line":138,"column":5,"offset":4404}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1>  Interview     </h1>\n<br>","position":{"start":{"line":140,"column":1,"offset":4406},"end":{"line":142,"column":5,"offset":4441}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe  src=\"https://web-dev-interview-prep-quiz-website.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>","position":{"start":{"line":144,"column":1,"offset":4443},"end":{"line":146,"column":82,"offset":4824}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":148,"column":1,"offset":4826},"end":{"line":148,"column":5,"offset":4830}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":150,"column":1,"offset":4832},"end":{"line":150,"column":5,"offset":4836}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":152,"column":1,"offset":4838},"end":{"line":152,"column":5,"offset":4842}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1> Form Builder GUI </h1>\n<br>","position":{"start":{"line":154,"column":1,"offset":4844},"end":{"line":156,"column":5,"offset":4881}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe  src=\"https://fourm-builder-gui.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>","position":{"start":{"line":158,"column":1,"offset":4883},"end":{"line":160,"column":82,"offset":5246}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1> Border Builder </h1>\n<br>","position":{"start":{"line":162,"column":1,"offset":5248},"end":{"line":164,"column":5,"offset":5283}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe  src=\"https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>","position":{"start":{"line":166,"column":1,"offset":5285},"end":{"line":168,"column":82,"offset":5675}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":170,"column":1,"offset":5677},"end":{"line":170,"column":5,"offset":5681}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":172,"column":1,"offset":5683},"end":{"line":172,"column":5,"offset":5687}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":174,"column":1,"offset":5689},"end":{"line":174,"column":5,"offset":5693}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":176,"column":1,"offset":5695},"end":{"line":176,"column":5,"offset":5699}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1>                </h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://ds-algo-official.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n        \n        \n        \n<br>","position":{"start":{"line":178,"column":1,"offset":5701},"end":{"line":187,"column":5,"offset":6153}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":189,"column":1,"offset":6155},"end":{"line":189,"column":5,"offset":6159}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>\n<h1>                </h1>\n<br>\n        \n        \n <iframe height=\"800\" style=\"width: 100%;\" scrolling=\"yes\" title=\"Simple Typing Carousel \" src=\"https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n  See the Pen <a href=\"https://codepen.io/bgoonz/pen/ExZvGoZ\">\n  Simple Typing Carousel </a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.\n</iframe>","position":{"start":{"line":191,"column":1,"offset":6161},"end":{"line":200,"column":10,"offset":6675}}},{"type":"text","value":"\n"},{"type":"raw","value":"<br>","position":{"start":{"line":202,"column":1,"offset":6677},"end":{"line":202,"column":5,"offset":6681}}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":203,"column":1,"offset":6682}}}}
+{
+    "expireTime": 9007200882786895000,
+    "key": "transformer-remark-markdown-html-ast-34389e81258688daddf5093685b60b02--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "raw",
+                "value": "<br>\n<br>\n<br>\n<br>\n<h1> Spotify Superimposed Over Video </h1>\n<iframe title=\"Video Background 1\" src=\"https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">",
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 7, "column": 248, "offset": 311 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "See the Pen ",
+                        "position": { "start": { "line": 9, "column": 1, "offset": 313 }, "end": { "line": 9, "column": 13, "offset": 325 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://codepen.io/bgoonz/pen/BaRLKBd\">",
+                        "position": { "start": { "line": 9, "column": 13, "offset": 325 }, "end": { "line": 9, "column": 61, "offset": 373 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "\nVideo Background 1",
+                        "position": { "start": { "line": 9, "column": 61, "offset": 373 }, "end": { "line": 10, "column": 19, "offset": 392 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 10, "column": 19, "offset": 392 }, "end": { "line": 10, "column": 23, "offset": 396 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " by Bryan C Guner (",
+                        "position": { "start": { "line": 10, "column": 23, "offset": 396 }, "end": { "line": 10, "column": 42, "offset": 415 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://codepen.io/bgoonz\">",
+                        "position": { "start": { "line": 10, "column": 42, "offset": 415 }, "end": { "line": 10, "column": 78, "offset": 451 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "@bgoonz",
+                        "position": { "start": { "line": 10, "column": 78, "offset": 451 }, "end": { "line": 10, "column": 85, "offset": 458 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 10, "column": 85, "offset": 458 }, "end": { "line": 10, "column": 89, "offset": 462 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ")\non ",
+                        "position": { "start": { "line": 10, "column": 89, "offset": 462 }, "end": { "line": 11, "column": 4, "offset": 467 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "<a href=\"https://codepen.io\">",
+                        "position": { "start": { "line": 11, "column": 4, "offset": 467 }, "end": { "line": 11, "column": 33, "offset": 496 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "CodePen",
+                        "position": { "start": { "line": 11, "column": 33, "offset": 496 }, "end": { "line": 11, "column": 40, "offset": 503 } }
+                    },
+                    {
+                        "type": "raw",
+                        "value": "</a>",
+                        "position": { "start": { "line": 11, "column": 40, "offset": 503 }, "end": { "line": 11, "column": 44, "offset": 507 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 11, "column": 44, "offset": 507 }, "end": { "line": 11, "column": 45, "offset": 508 } }
+                    }
+                ],
+                "position": { "start": { "line": 9, "column": 1, "offset": 313 }, "end": { "line": 11, "column": 45, "offset": 508 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "</iframe>",
+                "position": { "start": { "line": 13, "column": 1, "offset": 510 }, "end": { "line": 13, "column": 10, "offset": 519 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<br>\n<br>\n<h1>   Speach Recognition api </h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://random-static-html-deploys.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n<br>\n<br>\n<br>\n<br>\n<br>\n<h1>   Paste To Markdown </h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://euangoddard.github.io/clipboard2markdown/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n        \n        \n        \n<br>\n<br>",
+                "position": { "start": { "line": 15, "column": 1, "offset": 521 }, "end": { "line": 37, "column": 5, "offset": 1466 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 39, "column": 1, "offset": 1468 }, "end": { "line": 39, "column": 5, "offset": 1472 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 41, "column": 1, "offset": 1474 }, "end": { "line": 41, "column": 5, "offset": 1478 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 43, "column": 1, "offset": 1480 }, "end": { "line": 43, "column": 5, "offset": 1484 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>  Cloud Storage </h1>\n<br>",
+                "position": { "start": { "line": 45, "column": 1, "offset": 1486 }, "end": { "line": 47, "column": 5, "offset": 1521 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<h2> Up to 1TB of cloud Storage for file sharing!</h2>\n<iframe src=\"https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E\" height=\"275px\" width=\"17%\" style=\"zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;\">\n</iframe>",
+                "position": { "start": { "line": 49, "column": 1, "offset": 1523 }, "end": { "line": 51, "column": 10, "offset": 1827 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 53, "column": 1, "offset": 1829 }, "end": { "line": 53, "column": 5, "offset": 1833 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 55, "column": 1, "offset": 1835 }, "end": { "line": 55, "column": 5, "offset": 1839 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>     Resource Archive           </h1>\n<br>",
+                "position": { "start": { "line": 57, "column": 1, "offset": 1841 }, "end": { "line": 59, "column": 5, "offset": 1892 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe src=\"https://resourcerepo2.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 61, "column": 1, "offset": 1894 }, "end": { "line": 63, "column": 82, "offset": 2252 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 65, "column": 1, "offset": 2254 }, "end": { "line": 65, "column": 5, "offset": 2258 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 67, "column": 1, "offset": 2260 }, "end": { "line": 67, "column": 5, "offset": 2264 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 69, "column": 1, "offset": 2266 }, "end": { "line": 69, "column": 5, "offset": 2270 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>   Lambda Student Site </h1>\n<br>",
+                "position": { "start": { "line": 71, "column": 1, "offset": 2272 }, "end": { "line": 73, "column": 5, "offset": 2314 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe class=\"inner\" src=\"https://lambda-resources.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 75, "column": 1, "offset": 2316 }, "end": { "line": 77, "column": 82, "offset": 2691 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 79, "column": 1, "offset": 2693 }, "end": { "line": 79, "column": 5, "offset": 2697 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 81, "column": 1, "offset": 2699 }, "end": { "line": 81, "column": 5, "offset": 2703 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 83, "column": 1, "offset": 2705 }, "end": { "line": 83, "column": 5, "offset": 2709 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 85, "column": 1, "offset": 2711 }, "end": { "line": 85, "column": 5, "offset": 2715 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 87, "column": 1, "offset": 2717 }, "end": { "line": 87, "column": 5, "offset": 2721 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 89, "column": 1, "offset": 2723 }, "end": { "line": 89, "column": 5, "offset": 2727 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 91, "column": 1, "offset": 2729 }, "end": { "line": 91, "column": 5, "offset": 2733 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Text Tools     </h1>\n<br>",
+                "position": { "start": { "line": 93, "column": 1, "offset": 2735 }, "end": { "line": 95, "column": 5, "offset": 2770 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe src=\"https://devtools42.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 97, "column": 1, "offset": 2772 }, "end": { "line": 99, "column": 82, "offset": 3127 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 101, "column": 1, "offset": 3129 }, "end": { "line": 101, "column": 5, "offset": 3133 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 103, "column": 1, "offset": 3135 }, "end": { "line": 103, "column": 5, "offset": 3139 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Ternary Converter   </h1>\n<br>\n<iframe src=\"https://ternary42.netlify.app/\" height=\"800px\" width=\"600px!important\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 105, "column": 1, "offset": 3141 }, "end": { "line": 110, "column": 82, "offset": 3545 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 112, "column": 1, "offset": 3547 }, "end": { "line": 112, "column": 5, "offset": 3551 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 114, "column": 1, "offset": 3553 }, "end": { "line": 114, "column": 5, "offset": 3557 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>  Github HTML Render from link </h1>\n<br>",
+                "position": { "start": { "line": 116, "column": 1, "offset": 3559 }, "end": { "line": 118, "column": 5, "offset": 3609 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe src=\"https://githtmlpreview.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 120, "column": 1, "offset": 3611 }, "end": { "line": 122, "column": 82, "offset": 3970 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 124, "column": 1, "offset": 3972 }, "end": { "line": 124, "column": 5, "offset": 3976 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 126, "column": 1, "offset": 3978 }, "end": { "line": 126, "column": 5, "offset": 3982 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Data Structures</h1>\n<br>",
+                "position": { "start": { "line": 128, "column": 1, "offset": 3984 }, "end": { "line": 130, "column": 5, "offset": 4019 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe src=\"https://determined-dijkstra-ee7390.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 132, "column": 1, "offset": 4021 }, "end": { "line": 134, "column": 82, "offset": 4392 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 136, "column": 1, "offset": 4394 }, "end": { "line": 136, "column": 5, "offset": 4398 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 138, "column": 1, "offset": 4400 }, "end": { "line": 138, "column": 5, "offset": 4404 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>  Interview     </h1>\n<br>",
+                "position": { "start": { "line": 140, "column": 1, "offset": 4406 }, "end": { "line": 142, "column": 5, "offset": 4441 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe  src=\"https://web-dev-interview-prep-quiz-website.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 144, "column": 1, "offset": 4443 }, "end": { "line": 146, "column": 82, "offset": 4824 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 148, "column": 1, "offset": 4826 }, "end": { "line": 148, "column": 5, "offset": 4830 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 150, "column": 1, "offset": 4832 }, "end": { "line": 150, "column": 5, "offset": 4836 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 152, "column": 1, "offset": 4838 }, "end": { "line": 152, "column": 5, "offset": 4842 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Form Builder GUI </h1>\n<br>",
+                "position": { "start": { "line": 154, "column": 1, "offset": 4844 }, "end": { "line": 156, "column": 5, "offset": 4881 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe  src=\"https://fourm-builder-gui.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 158, "column": 1, "offset": 4883 }, "end": { "line": 160, "column": 82, "offset": 5246 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Border Builder </h1>\n<br>",
+                "position": { "start": { "line": 162, "column": 1, "offset": 5248 }, "end": { "line": 164, "column": 5, "offset": 5283 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe  src=\"https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 166, "column": 1, "offset": 5285 }, "end": { "line": 168, "column": 82, "offset": 5675 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 170, "column": 1, "offset": 5677 }, "end": { "line": 170, "column": 5, "offset": 5681 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 172, "column": 1, "offset": 5683 }, "end": { "line": 172, "column": 5, "offset": 5687 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 174, "column": 1, "offset": 5689 }, "end": { "line": 174, "column": 5, "offset": 5693 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 176, "column": 1, "offset": 5695 }, "end": { "line": 176, "column": 5, "offset": 5699 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>                </h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://ds-algo-official.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n        \n        \n        \n<br>",
+                "position": { "start": { "line": 178, "column": 1, "offset": 5701 }, "end": { "line": 187, "column": 5, "offset": 6153 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 189, "column": 1, "offset": 6155 }, "end": { "line": 189, "column": 5, "offset": 6159 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>                </h1>\n<br>\n        \n        \n <iframe height=\"800\" style=\"width: 100%;\" scrolling=\"yes\" title=\"Simple Typing Carousel \" src=\"https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n  See the Pen <a href=\"https://codepen.io/bgoonz/pen/ExZvGoZ\">\n  Simple Typing Carousel </a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.\n</iframe>",
+                "position": { "start": { "line": 191, "column": 1, "offset": 6161 }, "end": { "line": 200, "column": 10, "offset": 6675 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 202, "column": 1, "offset": 6677 }, "end": { "line": 202, "column": 5, "offset": 6681 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 203, "column": 1, "offset": 6682 } }
+    }
+}
