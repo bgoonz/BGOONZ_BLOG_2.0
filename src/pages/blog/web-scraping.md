@@ -4,7 +4,7 @@ date: '2021-07-26'
 image: images/web-development.gif
 seo:
     title: webscraping
-    description: 'There are a lot of use cases for web scraping'
+    description: There are a lot of use cases for web scraping
     extra:
         - name: 'og:type'
           value: article
@@ -29,6 +29,7 @@ seo:
           value: images/web-development.gif
           relativeUrl: true
 template: post
+thumb_image: images/blue-plankton.png
 ---
 
 # Web Scraping with Node.js

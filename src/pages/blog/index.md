@@ -6,7 +6,15 @@ has_more_link: true
 more_link_text: Read more
 seo:
     title: Blog
-    description: This is the blog page
+    description: >-
+        Creating software isn’t that easy. There is a ton of things to consider. The
+        more you actually create, the more you’ll learn.
+
+
+        And since there are many developers out there who share their experience,
+        it’s a hard game to follow all of them. Because of this, we collected the
+        following blogs and present you a list of 11 web development blogs worth
+        reading.
     extra:
         - name: 'og:type'
           value: website

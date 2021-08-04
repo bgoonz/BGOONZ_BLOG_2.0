@@ -175,11 +175,13 @@
             display: block;
             margin: 0;
             padding: 0 1.2em;
+            color: white;
         }
 
         a {
             &:not(.button-icon) {
                 display: block;
+                color: white;
             }
 
             &.button:not(.button-icon) {
@@ -221,6 +223,7 @@
         box-sizing: border-box;
         height: 100vh;
         margin: 0;
+        color: white;
         max-width: 360px;
         -webkit-overflow-scrolling: touch;
         position: absolute;
@@ -271,6 +274,7 @@
     }
 
     .menu {
+        color: white;
         padding: calc(3vw + 2.8125em) $container-padding 3em;
     }
 

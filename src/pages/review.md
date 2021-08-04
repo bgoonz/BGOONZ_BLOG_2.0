@@ -2,7 +2,7 @@
 title: review
 sections: []
 seo:
-    title: ''
+    title: 'review'
     description: ''
     robots: []
     extra: []
@@ -10,7 +10,7 @@ seo:
 template: advanced
 ---
 
----
+<div id="search"></div>
 
 ## description: Review
 

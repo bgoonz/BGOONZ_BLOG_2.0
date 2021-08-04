@@ -29,7 +29,7 @@ seo:
           value: images/curious-europa.gif
           relativeUrl: true
 template: post
-thumb_image: images/friendly-basil.png
+thumb_image: images/redu-squarex.jpg
 ---
 
 # Add to Your Site | Netlify CMS

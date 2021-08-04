@@ -1,0 +1,3550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style data-href="/styles.642d6ab1f20872553050.css" id="gatsby-global-css">
+            html {
+                line-height: 1.15;
+                -webkit-text-size-adjust: 100%;
+            }
+            body {
+                margin: 0;
+            }
+            main {
+                display: block;
+            }
+            hr {
+                box-sizing: content-box;
+                height: 0;
+                overflow: visible;
+            }
+            a {
+                background-color: transparent;
+            }
+            a:focus {
+                outline: thin dotted;
+            }
+            a:active,
+            a:hover {
+                outline: 0;
+            }
+            abbr[title] {
+                border-bottom: none;
+                text-decoration: underline;
+                -webkit-text-decoration: underline dotted;
+                text-decoration: underline dotted;
+            }
+            b,
+            strong {
+                font-weight: 700;
+            }
+            .font-fira-sans b,
+            .font-fira-sans strong {
+                font-weight: 600;
+            }
+            code,
+            kbd,
+            pre,
+            samp {
+                font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+                font-size: 1em;
+            }
+            small {
+                font-size: 80%;
+            }
+            sub,
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+            sub {
+                bottom: -0.25em;
+            }
+            sup {
+                top: -0.5em;
+            }
+            img {
+                border-style: none;
+                vertical-align: middle;
+            }
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                font-family: inherit;
+                font-size: 100%;
+                line-height: 1.15;
+                margin: 0;
+            }
+            button,
+            input {
+                overflow: visible;
+            }
+            button,
+            select {
+                text-transform: none;
+            }
+            [type='button'],
+            [type='reset'],
+            [type='submit'],
+            button {
+                -webkit-appearance: button;
+            }
+            [type='button']::-moz-focus-inner,
+            [type='reset']::-moz-focus-inner,
+            [type='submit']::-moz-focus-inner,
+            button::-moz-focus-inner {
+                border-style: none;
+                padding: 0;
+            }
+            [type='button']:-moz-focusring,
+            [type='reset']:-moz-focusring,
+            [type='submit']:-moz-focusring,
+            button:-moz-focusring {
+                outline: 1px dotted ButtonText;
+            }
+            fieldset {
+                padding: 0.35em 0.75em 0.625em;
+            }
+            legend {
+                box-sizing: border-box;
+                color: inherit;
+                display: table;
+                max-width: 100%;
+                padding: 0;
+                white-space: normal;
+            }
+            progress {
+                vertical-align: baseline;
+            }
+            textarea {
+                overflow: auto;
+            }
+            [type='checkbox'],
+            [type='radio'] {
+                box-sizing: border-box;
+                padding: 0;
+            }
+            [type='number']::-webkit-inner-spin-button,
+            [type='number']::-webkit-outer-spin-button {
+                height: auto;
+            }
+            [type='search'] {
+                -webkit-appearance: textfield;
+                outline-offset: -2px;
+            }
+            [type='search']::-webkit-search-decoration {
+                -webkit-appearance: none;
+            }
+            ::-webkit-file-upload-button {
+                -webkit-appearance: button;
+                font: inherit;
+            }
+            details {
+                display: block;
+            }
+            summary {
+                display: list-item;
+            }
+            [hidden],
+            template {
+                display: none;
+            }
+            html {
+                font-family: Lato, Helvetica, Arial, sans-serif;
+                font-size: 100%;
+            }
+            body {
+                background: #f8f8fa;
+                color: #424b5f;
+                line-height: 1.625;
+                text-rendering: optimizeLegibility;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                overflow: auto;
+            }
+            a {
+                color: #00c6ff;
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 0.125em;
+                transition: color 0.3s ease;
+            }
+            a:hover {
+                color: #424b5f;
+            }
+            iframe {
+                overflow-y: scroll;
+                overflow-x: scroll;
+                border-radius: 12px;
+                border: 2px solid gold;
+                height: 1600px !important;
+                width: 95%;
+                resize: both;
+                overflow: scroll;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: #283040;
+                font-weight: 700;
+                line-height: 1.2;
+                margin: 1.5em 0 0.5em;
+                text-rendering: optimizeLegibility;
+            }
+            h1:first-child,
+            h2:first-child,
+            h3:first-child,
+            h4:first-child,
+            h5:first-child,
+            h6:first-child {
+                margin-top: 0;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.75em;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+            h4 {
+                font-size: 1.25em;
+            }
+            h5 {
+                font-size: 1.125em;
+            }
+            h6 {
+                font-size: 1em;
+            }
+            p {
+                margin: 0 0 1em;
+            }
+            ins,
+            mark {
+                background: #fff7e6;
+                color: #283040;
+                padding: 0.15em;
+                text-decoration: none;
+            }
+            pre {
+                background: #283040;
+                border-radius: 3px;
+                color: #f8f8fa;
+                font-size: 0.875em;
+                line-height: 1.5;
+                margin: 1.14286em 0;
+                overflow: auto;
+                padding: 1.5em;
+                text-align: left;
+                white-space: pre;
+                word-spacing: normal;
+                word-break: normal;
+                word-wrap: normal;
+            }
+            pre:first-child {
+                margin-top: 0;
+            }
+            :not(pre) > code {
+                background: #ecedf2;
+                border-radius: 3px;
+                color: #424b5f;
+                font-size: 0.875rem;
+                padding: 0.15em;
+                white-space: normal;
+            }
+            blockquote {
+                border-left: 5px solid #00c6ff;
+                font-size: 1.25em;
+                line-height: 1.4;
+                margin: 1.25em 0;
+                padding: 0 0 0 1em;
+            }
+            blockquote:first-child {
+                margin-top: 0;
+            }
+            blockquote p {
+                margin-bottom: 0.5em;
+            }
+            blockquote cite,
+            blockquote small {
+                color: #67758d;
+                display: block;
+                font-size: 0.75em;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-top: 0.5em;
+            }
+            dl {
+                margin: 0;
+            }
+            dt {
+                font-weight: 700;
+            }
+            dd,
+            ol,
+            ul {
+                margin: 0 0 1em;
+            }
+            ul {
+                list-style: disc;
+                padding: 0 0 0 1.125em;
+            }
+            ol {
+                list-style: decimal;
+                padding: 0 0 0 1.5em;
+            }
+            li > ol,
+            li > ul {
+                margin-bottom: 0;
+            }
+            hr {
+                background-color: #dde0e7;
+                border: 0;
+                height: 1px;
+                margin: 1.875em 0;
+            }
+            hr:first-child {
+                margin-top: 0;
+            }
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+            @media only screen and (min-width: 841px) {
+                blockquote {
+                    font-size: 1.5em;
+                    line-height: 1.3;
+                }
+                h1 {
+                    font-size: 2.5em;
+                }
+                h2 {
+                    font-size: 2.125em;
+                }
+                h3 {
+                    font-size: 1.875em;
+                }
+                h4 {
+                    font-size: 1.5em;
+                }
+                h5 {
+                    font-size: 1.25em;
+                }
+                h6 {
+                    font-size: 1.125em;
+                }
+            }
+            .gcse-search {
+                width: 30%;
+                height: 50%;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                line-height: 1.5;
+                margin: 0;
+                max-width: 100%;
+                width: 100%;
+            }
+            caption,
+            table {
+                text-align: left;
+            }
+            caption {
+                color: #67758d;
+                font-size: 0.875em;
+                font-style: normal;
+                margin-bottom: 1em;
+            }
+            td,
+            th {
+                border-bottom: 1px solid #dde0e7;
+                padding: 0.5em 5px;
+            }
+            th {
+                color: #283040;
+                font-weight: 700;
+            }
+            :not(.responsive-table) > table {
+                display: block;
+                margin: 1.875em 0;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            :not(.responsive-table) > table:first-child {
+                margin-top: 0;
+            }
+            :not(.responsive-table) > table tbody,
+            :not(.responsive-table) > table thead,
+            :not(.responsive-table) > table tr {
+                width: 100%;
+            }
+            :not(.responsive-table) > table td {
+                min-width: 10em;
+            }
+            .responsive-table {
+                display: block;
+                margin: 1.875em 0;
+                overflow-x: auto;
+                width: 100%;
+            }
+            .responsive-table:first-child {
+                margin-top: 0;
+            }
+            label {
+                color: #283040;
+                font-weight: 700;
+                line-height: 1.5;
+                margin-bottom: 0.25em;
+            }
+            input[type='checkbox'] + label,
+            input[type='radio'] + label {
+                font-weight: 400;
+                cursor: pointer;
+                padding-left: 0.25em;
+                padding-right: 1em;
+            }
+            input[type='email'],
+            input[type='number'],
+            input[type='password'],
+            input[type='search'],
+            input[type='tel'],
+            input[type='text'],
+            input[type='url'],
+            select,
+            textarea {
+                background: #fff;
+                border: 1px solid #dde0e7;
+                border-radius: 3px;
+                box-shadow: none;
+                box-sizing: border-box;
+                color: #283040;
+                display: block;
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 1.5;
+                max-width: 100%;
+                padding: 0.5em;
+                width: 100%;
+            }
+            input[type='email']:focus,
+            input[type='number']:focus,
+            input[type='password']:focus,
+            input[type='search']:focus,
+            input[type='tel']:focus,
+            input[type='text']:focus,
+            input[type='url']:focus,
+            select:focus,
+            textarea:focus {
+                outline: 0;
+            }
+            ::-webkit-input-placeholder {
+                color: #9aa4b9;
+                opacity: 1;
+            }
+            :-ms-input-placeholder {
+                color: #9aa4b9;
+                opacity: 1;
+            }
+            ::placeholder {
+                color: #9aa4b9;
+                opacity: 1;
+            }
+            .form-row {
+                margin-bottom: 1em;
+            }
+            .form-submit {
+                margin-top: 1.66667em;
+            }
+            .button {
+                align-items: center;
+                background: #00c6ff;
+                border: 0;
+                border-radius: 1.75em;
+                box-shadow: none;
+                box-sizing: border-box;
+                color: #fff;
+                cursor: pointer;
+                display: inline-flex;
+                font-size: 0.875em;
+                font-weight: 700;
+                justify-content: center;
+                letter-spacing: 0.035em;
+                line-height: 1.2;
+                opacity: 1;
+                padding: 0.9em 2.14285em;
+                text-decoration: none;
+                transition: 0.3s ease;
+                vertical-align: middle;
+            }
+            .button:active,
+            .button:focus,
+            .button:hover {
+                color: #fff;
+                opacity: 0.8;
+                outline: 0;
+            }
+            .button-secondary {
+                background: 0 !important;
+                box-shadow: inset 0 0 0 2px currentColor;
+                color: #00c6ff;
+            }
+            .button-secondary:active,
+            .button-secondary:focus,
+            .button-secondary:hover {
+                box-shadow: inset 0 0 0 3px currentColor;
+                color: #00c6ff;
+                opacity: 1;
+            }
+            .button-icon {
+                background: 0 !important;
+                border: 0;
+                color: inherit;
+                font-size: 1em;
+                font-weight: 400;
+                letter-spacing: normal;
+                padding: 0.25em;
+            }
+            .button-icon:active,
+            .button-icon:focus,
+            .button-icon:hover {
+                color: #00c6ff;
+                opacity: 1;
+            }
+            #menu-close,
+            #menu-open,
+            .docs-nav .docs-nav-toggle,
+            .docs-nav .docs-submenu-toggle,
+            .submenu-toggle {
+                background: 0;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                color: inherit;
+                cursor: pointer;
+                display: block;
+                font-size: inherit;
+                height: 30px;
+                padding: 0;
+                position: relative;
+                width: 30px;
+            }
+            #menu-close:active,
+            #menu-close:focus,
+            #menu-close:hover,
+            #menu-open:active,
+            #menu-open:focus,
+            #menu-open:hover,
+            .docs-nav .docs-nav-toggle:active,
+            .docs-nav .docs-nav-toggle:focus,
+            .docs-nav .docs-nav-toggle:hover,
+            .docs-nav .docs-submenu-toggle:active,
+            .docs-nav .docs-submenu-toggle:focus,
+            .docs-nav .docs-submenu-toggle:hover,
+            .submenu-toggle:active,
+            .submenu-toggle:focus,
+            .submenu-toggle:hover {
+                outline: 0;
+            }
+            .icon {
+                color: inherit;
+                fill: currentColor;
+                flex-shrink: 0;
+                height: 1em;
+                line-height: 1;
+                width: 1em;
+            }
+            .icon-close,
+            .icon-menu {
+                background: currentColor;
+                border-radius: 1px;
+                color: inherit;
+                height: 2px;
+                left: 50%;
+                margin-top: -1px;
+                margin-left: -12px;
+                position: absolute;
+                top: 50%;
+                width: 24px;
+            }
+            .icon-close:after,
+            .icon-close:before,
+            .icon-menu:after,
+            .icon-menu:before {
+                background: currentColor;
+                border-radius: 1px;
+                content: '';
+                height: 100%;
+                left: 0;
+                position: absolute;
+                width: 100%;
+            }
+            .icon-menu:before {
+                top: -6px;
+            }
+            .icon-menu:after {
+                bottom: -6px;
+            }
+            .icon-close {
+                background: 0;
+                margin-left: -14px;
+                width: 28px;
+            }
+            .icon-close:before {
+                top: 0;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            .icon-close:after {
+                top: 0;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+            .icon-angle-right {
+                background: 0;
+                border-color: currentcolor;
+                border-style: solid;
+                border-width: 1px 1px 0 0;
+                box-sizing: border-box;
+                height: 8px;
+                left: 50%;
+                margin-left: -4px;
+                margin-top: -4px;
+                position: absolute;
+                top: 50%;
+                width: 8px;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            .docs-nav-toggle .icon-angle-right {
+                height: 12px;
+                left: auto;
+                margin-left: 0;
+                margin-right: 9px;
+                margin-top: -6px;
+                right: 0;
+                width: 12px;
+            }
+            .docs-section-item .icon-angle-right {
+                left: auto;
+                margin-left: 0;
+                margin-right: 15px;
+                right: 0;
+            }
+            .screen-reader-text {
+                clip: rect(1px, 1px, 1px, 1px);
+                -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                height: 1px;
+                overflow: auto;
+                position: absolute;
+                width: 1px;
+                word-wrap: normal;
+            }
+            .line-left {
+                position: relative;
+            }
+            .line-left:after {
+                background: #00c6ff;
+                display: block;
+                content: '';
+                height: 100%;
+                left: -1px;
+                position: absolute;
+                top: 0;
+                width: 5px;
+            }
+            .js-reframe {
+                margin: 1.875em 0;
+            }
+            .js-reframe:first-child {
+                margin-top: 0;
+            }
+            .important,
+            .note {
+                border-radius: 5px;
+                color: #283040;
+                margin: 1.875em 0;
+                padding: 1em 1.125em;
+            }
+            .important:first-child,
+            .note:first-child {
+                margin-top: 0;
+            }
+            .note {
+                background: #fff7e6;
+                border-left: 5px solid #fcb41d;
+            }
+            .important {
+                background: #ffe9e6;
+                border-left: 5px solid #fc381d;
+            }
+            .has-gradient {
+                background: #00c6ff;
+                background: linear-gradient(90deg, #0072ff, #00c6ff);
+                color: #fff;
+                position: relative;
+            }
+            .has-gradient a:not(.button),
+            .has-gradient h1,
+            .has-gradient h2,
+            .has-gradient h3,
+            .has-gradient h4,
+            .has-gradient h5,
+            .has-gradient h6 {
+                color: inherit;
+            }
+            .has-gradient a:not(.button):hover {
+                opacity: 0.8;
+            }
+            .has-gradient .button:not(.button-secondary) {
+                background-color: #fff;
+                color: #00c6ff;
+            }
+            .has-gradient .button:not(.button-secondary):active,
+            .has-gradient .button:not(.button-secondary):focus,
+            .has-gradient .button:not(.button-secondary):hover {
+                opacity: 0.85;
+            }
+            .has-gradient .button-secondary {
+                color: #fff;
+            }
+            .has-gradient .inner-sm {
+                position: relative;
+            }
+            .bg-img {
+                -webkit-animation: fadeIn20 0.75s ease-in-out;
+                animation: fadeIn20 0.55s ease-in-out;
+                background-position: 50%;
+                background-size: cover;
+                bottom: 0;
+                left: 0;
+                opacity: 0.2;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .grid {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -0.9375em;
+                margin-right: -0.9375em;
+            }
+            .grid-item {
+                box-sizing: border-box;
+                padding-left: 0.9375em;
+                padding-right: 0.9375em;
+                position: relative;
+                width: 100%;
+            }
+            .grid-center {
+                justify-content: center;
+            }
+            .grid-swap {
+                flex-direction: row-reverse;
+            }
+            .grid-middle {
+                align-items: center;
+            }
+            @media only screen and (min-width: 641px) {
+                .grid-col-2 .grid-item {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+            @media only screen and (min-width: 761px) {
+                .grid-col-3 .grid-item {
+                    flex: 0 0 33.333%;
+                    max-width: 33.333%;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                .grid {
+                    margin-left: -1vw;
+                    margin-right: -1vw;
+                }
+                .grid-item {
+                    padding-left: 1vw;
+                    padding-right: 1vw;
+                }
+            }
+            @-webkit-keyframes fadeIn20 {
+                0% {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 0.2;
+                }
+            }
+            @keyframes fadeIn20 {
+                0% {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 0.2;
+                }
+            }
+            .site {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                position: relative;
+            }
+            .site-content {
+                box-sizing: border-box;
+                flex-grow: 1;
+                width: 100%;
+            }
+            .outer {
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+            .inner,
+            .inner-md,
+            .inner-sm {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 95%;
+            }
+            .site-header {
+                background: #000;
+                background-image: url(https://i.imgur.com/L4BIbgl.mp4);
+                padding-bottom: 0.2em;
+                padding-top: 0.2em;
+            }
+            .site-header-inside {
+                align-items: center;
+                display: flex;
+            }
+            .site-branding {
+                flex: 0 1 auto;
+            }
+            .site-title {
+                color: #283040;
+                font-size: 1.5em;
+                font-weight: 700;
+                line-height: 1.2;
+                margin: 0;
+            }
+            .site-logo {
+                margin: 0;
+            }
+            .site-logo img {
+                max-height: 36px;
+            }
+            .menu,
+            .submenu {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .menu-item {
+                position: relative;
+            }
+            .menu-item.current {
+                color: #00c6ff;
+            }
+            .menu-item a:not(.button) {
+                display: inline-block;
+                font-size: 0.9375em;
+                line-height: 1.5;
+            }
+            #masthead a:not(.button) {
+                color: inherit;
+                display: inline-block;
+                text-decoration: none;
+            }
+            #masthead a:not(.button):hover {
+                color: #00c6ff;
+            }
+            #masthead .site-branding a:hover {
+                color: inherit;
+            }
+            @media only screen and (min-width: 801px) {
+                #menu-close,
+                #menu-open {
+                    display: none;
+                }
+                .site-navigation {
+                    margin-left: auto;
+                }
+                .menu {
+                    align-items: center;
+                    display: flex;
+                }
+                .menu-item {
+                    display: inline-block;
+                    margin: 0 0 0 1.25em;
+                    padding-bottom: 0.1875em;
+                    padding-top: 0.1875em;
+                }
+                .menu-item a {
+                    padding-bottom: 0.5em;
+                    padding-top: 0.5em;
+                }
+                .menu-item a.button:not(.button-icon) {
+                    padding-left: 0.55em;
+                    padding-right: 0.35em;
+                    word-break: wrap;
+                }
+                .menu-item.has-children > a {
+                    padding-right: 15px;
+                    position: relative;
+                }
+                .menu-item.has-children > a:after {
+                    background: 0;
+                    border-color: currentcolor;
+                    border-style: solid;
+                    border-width: 3px 1px 0 0;
+                    box-sizing: border-box;
+                    content: '';
+                    height: 6px;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    width: 6px;
+                    -webkit-transform: translateY(-50%) rotate(135deg);
+                    transform: translateY(-50%) rotate(135deg);
+                }
+                .menu-item.has-children > a.button:not(.button-icon) {
+                    padding-right: 2.25em;
+                }
+                .menu-item.has-children > a.button:not(.button-icon):after {
+                    right: 2.25em;
+                }
+                .menu-item .submenu-toggle {
+                    display: none;
+                }
+                .menu-item.has-children:hover > .submenu {
+                    opacity: 1;
+                    transition: margin 0.3s, opacity 0.3s;
+                    visibility: visible;
+                }
+                .submenu {
+                    background: hsla(0, 0%, 100%, 0.581);
+                    border: 1px solid #dde0e7;
+                    border-radius: 3px solid gold;
+                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+                    left: 0;
+                    min-width: 350px;
+                    opacity: 0;
+                    padding: 0.5em 0;
+                    position: absolute;
+                    text-align: left;
+                    top: 100%;
+                    transition: opacity 0.2s, visibility 0s 0.2s;
+                    visibility: hidden;
+                    width: 100%;
+                    z-index: 99;
+                }
+                .submenu .menu-item {
+                    margin: 0;
+                    padding: 0 1.2em;
+                }
+                .submenu .menu-item,
+                .submenu a:not(.button-icon) {
+                    display: block;
+                    color: #fff;
+                }
+                .submenu a.button:not(.button-icon) {
+                    margin: 0.8em 0;
+                }
+            }
+            @media only screen and (max-width: 800px) {
+                .site {
+                    overflow: hidden;
+                    position: relative;
+                }
+                .site-branding {
+                    margin-right: 0.625em;
+                }
+                .site-header:after {
+                    background: rgba(66, 75, 95, 0.6);
+                    content: '';
+                    left: 0;
+                    opacity: 0;
+                    transition: opacity 0.15s ease-in-out, visibility 0s ease-in-out 0.15s;
+                    z-index: 998;
+                }
+                .site-header:after,
+                .site-navigation {
+                    height: 100vh;
+                    position: absolute;
+                    top: 0;
+                    visibility: hidden;
+                    width: 100%;
+                }
+                .site-navigation {
+                    background: #fff;
+                    box-sizing: border-box;
+                    margin: 0;
+                    color: #fff;
+                    max-width: 360px;
+                    -webkit-overflow-scrolling: touch;
+                    right: -100%;
+                    transition: right 0.3s ease-in-out, visibility 0s ease-in-out 0.3s;
+                    z-index: 999;
+                }
+                .site-nav-inside {
+                    height: 100%;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    position: relative;
+                }
+                .menu--opened .site {
+                    height: 100%;
+                    left: 0;
+                    overflow: hidden;
+                    position: fixed;
+                    top: 0;
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    width: 100%;
+                    z-index: 997;
+                }
+                .menu--opened .site-navigation {
+                    right: 0;
+                    transition: right 0.3s ease-in-out;
+                    visibility: visible;
+                }
+                .menu--opened .site-header:after {
+                    opacity: 1;
+                    transition-delay: 0s;
+                    visibility: visible;
+                }
+                .menu {
+                    color: #fff;
+                    padding: calc(3vw + 2.8125em) 3vw 3em;
+                }
+                .submenu {
+                    border-top: 1px solid #dde0e7;
+                    display: none;
+                    padding-left: 1em;
+                }
+                .menu-item {
+                    display: block;
+                    margin: 0;
+                }
+                .menu-item:not(.menu-button) {
+                    border-bottom: 1px solid #dde0e7;
+                }
+                .menu-item:not(.menu-button):first-child {
+                    border-top: 1px solid #dde0e7;
+                }
+                .menu-item a.button-icon,
+                .menu-item a:not(.button) {
+                    padding: 0.75em 0;
+                }
+                .menu-item a:not(.button) {
+                    display: block;
+                }
+                .menu-item a.button:not(.button-icon) {
+                    width: 100%;
+                }
+                .menu-item.has-children > a {
+                    margin-right: 2em;
+                }
+                .menu-item .menu-item:first-child {
+                    border-top: 0;
+                }
+                .menu-item .menu-item:last-child {
+                    border-bottom: 0;
+                }
+                .menu-item .submenu-toggle {
+                    color: #fff;
+                    height: 3em;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                .menu-item.active .submenu-toggle .icon-angle-right {
+                    -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                }
+                .menu-item.active .submenu {
+                    display: block;
+                }
+                .menu-button + .menu-button > .button:not(.button-icon) {
+                    margin-top: 0;
+                }
+                #menu-open {
+                    margin-left: auto;
+                }
+                #menu-close {
+                    display: block;
+                    position: absolute;
+                    right: 3vw;
+                    top: 3vw;
+                }
+            }
+            .post {
+                margin-bottom: 2.5em;
+            }
+            .post-feed:last-child,
+            .post-full:last-child {
+                margin-bottom: 5em;
+            }
+            .has-gradient.page-header,
+            .has-gradient.post-header {
+                padding-bottom: 9.5em;
+                padding-top: 3.75em;
+                text-align: center;
+            }
+            .has-gradient .page-title,
+            .has-gradient .post-title {
+                color: inherit;
+                font-size: 2.25em;
+                margin: 0;
+            }
+            .page-subtitle,
+            .post-subtitle {
+                font-size: 1.125em;
+                line-height: 1.5;
+                margin: 0.5em 0 0;
+                position: relative;
+            }
+            .post-title a {
+                color: inherit !important;
+                text-decoration: none;
+            }
+            .post-thumbnail {
+                border: 0;
+                border-radius: 5px 5px 0 0;
+                display: block;
+                margin: 0;
+            }
+            .post-thumbnail img {
+                border-radius: 5px 5px 0 0;
+                width: 100%;
+            }
+            .post-feed,
+            .post-full .post-content {
+                margin-top: -5em;
+                position: relative;
+            }
+            .post-feed .post,
+            .post-full .post-content {
+                background: #fff;
+                border: 1px solid #dde0e7;
+                border-radius: 5px;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+            }
+            .post-full .post-content {
+                padding: 1.5em;
+            }
+            .post-full .post-meta {
+                margin: 0 0 0.5em;
+            }
+            .post-feed .post {
+                padding: 0 0 2.5em;
+            }
+            .post-feed .post-meta {
+                color: #67758d;
+                font-size: 0.875em;
+                margin: 0 0 0.5em;
+                padding-left: 1.71428em;
+                padding-right: 1.71428em;
+            }
+            .post-feed .post-header {
+                margin: 0 0 1.25em;
+                padding-top: 1.875em;
+            }
+            .post-feed .post-title {
+                font-size: 1.5em;
+                margin: 0;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            .post-feed .post-excerpt {
+                margin-bottom: 1.25em;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+            }
+            .post-feed .read-more {
+                margin: 0;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+            }
+            .post-feed .read-more-link {
+                font-weight: 700;
+                text-decoration: none;
+            }
+            .post-feed .read-more-link:after {
+                font-size: 1.125em;
+                content: '\2192';
+                line-height: 1.5;
+                margin-left: 5px;
+            }
+            .post-feed .read-more-link:hover {
+                color: #424b5f;
+            }
+            @media only screen and (min-width: 641px) {
+                .has-gradient .page-title,
+                .has-gradient .post-title {
+                    font-size: 3em;
+                }
+                .page-subtitle,
+                .post-subtitle {
+                    font-size: 1.25em;
+                }
+                .post-full .post-meta {
+                    font-size: 1.125em;
+                }
+                .post-feed .post-excerpt,
+                .post-feed .post-meta,
+                .post-feed .post-title,
+                .post-feed .read-more,
+                .post-full .post-content {
+                    padding-left: 7%;
+                    padding-right: 7%;
+                }
+            }
+            @media only screen and (max-width: 1000px) {
+                .post {
+                    margin-bottom: 4vw;
+                }
+            }
+            .docs-content {
+                padding-top: 2.5em;
+                width: 95%;
+            }
+            .post-content {
+                width: 85%;
+            }
+            .post.type-docs {
+                margin-bottom: 3.625em;
+            }
+            .post.type-docs h1 {
+                font-size: 1.875em;
+            }
+            .post.type-docs h2 {
+                font-size: 1.5em;
+            }
+            .post.type-docs h3 {
+                font-size: 1.25em;
+            }
+            .post.type-docs h4 {
+                font-size: 1.125em;
+            }
+            .post.type-docs h5,
+            .post.type-docs h6 {
+                font-size: 1em;
+            }
+            .post.type-docs .hash-link {
+                float: left;
+                font-size: 1.25rem;
+                height: 1em;
+                line-height: 1;
+                margin-left: -1.1em;
+                opacity: 0;
+                text-align: center;
+                text-decoration: none;
+                transition: opacity 0.4s;
+                width: 1em;
+            }
+            .post.type-docs .hash-link:before {
+                content: '#';
+                display: inline-block;
+            }
+            .post.type-docs .hash-link:focus,
+            .post.type-docs .hash-link:hover {
+                color: #00c6ff;
+            }
+            .post.type-docs h2 .hash-link {
+                margin-top: 0.22em;
+            }
+            .post.type-docs h3 .hash-link {
+                margin-top: 0.1em;
+            }
+            .post.type-docs h2:focus .hash-link,
+            .post.type-docs h2:hover .hash-link,
+            .post.type-docs h3:focus .hash-link,
+            .post.type-docs h3:hover .hash-link {
+                opacity: 1;
+            }
+            .post.type-docs .post-inside {
+                background: #fff;
+                border: 1px solid #dde0e7;
+                border-radius: 5px;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+                padding: 0.3em;
+                width: 70vw;
+            }
+            .post.type-docs .post-title {
+                font-size: 1.875em;
+                margin: 0 0 1.25em;
+                padding: 0 1em;
+            }
+            .post.type-docs .post-content {
+                padding: 0.775em;
+                word-wrap: break-word;
+            }
+            #docs-section-items {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                margin-left: -0.3125em;
+                margin-right: -0.3125em;
+                padding: 0;
+            }
+            #docs-section-items .docs-section-item {
+                flex: 1 1 240px;
+                margin: 0 0.3125em 0.9375em;
+            }
+            #docs-section-items .docs-item-link {
+                border: 1px solid #dde0e7;
+                border-radius: 3px;
+                color: #283040;
+                display: block;
+                font-weight: 700;
+                padding: 0.9375em;
+                position: relative;
+                text-decoration: none;
+                transition: border-color 0.3s ease, color 0.3s ease;
+            }
+            #docs-section-items .docs-item-link:hover {
+                border-color: #00c6ff;
+                color: #00c6ff;
+            }
+            .docs-nav {
+                margin-bottom: 1.875em;
+            }
+            .docs-nav .docs-nav-toggle {
+                color: #283040;
+                font-size: 1.125em;
+                margin: 0;
+                padding-right: 15px;
+                text-align: left;
+            }
+            .docs-nav .docs-submenu-toggle {
+                color: #67758d;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            #docs-menu {
+                color: #283040;
+                font-weight: 700;
+                line-height: 1.5;
+                list-style: none;
+                margin: 0.5em;
+                padding: 0;
+            }
+            #docs-menu > .docs-menu-item > a {
+                padding: 0.1875em 0;
+            }
+            #docs-menu a {
+                color: inherit;
+                display: block;
+                text-decoration: none;
+            }
+            #docs-menu .current,
+            #docs-menu .current-parent,
+            #docs-menu a:hover {
+                color: #00c6ff;
+            }
+            .docs-submenu {
+                border-left: 1px solid #dde0e7;
+                color: #424b5f;
+                display: none;
+                font-size: 0.9375em;
+                font-weight: 400;
+                list-style: none;
+                margin-top: 0.625rem;
+                padding-left: 1rem;
+            }
+            .docs-menu-item {
+                color: inherit;
+                margin-bottom: 0.625rem;
+            }
+            .docs-menu-item.has-children {
+                padding-right: 30px;
+                position: relative;
+            }
+            .docs-menu-item.has-children.active .docs-submenu {
+                display: block;
+            }
+            .docs-menu-item.has-children.active > .docs-submenu-toggle .icon-angle-right {
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+            #page-nav {
+                text-overflow: wrap;
+            }
+            #page-nav .page-nav-title {
+                font-size: 1em;
+                margin: 0 0 0.625em;
+            }
+            #page-nav ul {
+                font-size: 0.875rem;
+                line-height: 1.5;
+                list-style: none;
+                padding: 0;
+            }
+            #page-nav ul ul {
+                border-left: 1px solid #dde0e7;
+                margin-top: 0.625rem;
+                padding-left: 1.25rem;
+            }
+            #page-nav li {
+                margin-bottom: 0.625rem;
+            }
+            #page-nav li.active > a {
+                color: #00c6ff;
+            }
+            #page-nav a {
+                color: #424b5f;
+                display: block;
+                text-decoration: none;
+            }
+            #page-nav a:hover {
+                color: #00c6ff;
+            }
+            #page-nav .page-nav-title:only-child {
+                display: none;
+            }
+            @media only screen and (min-width: 1200px) {
+                .post.type-docs .post-content,
+                .post.type-docs .post-title {
+                    padding-left: 8%;
+                    padding-right: 7%;
+                }
+            }
+            @media only screen and (min-width: 1200px) {
+                .docs-content {
+                    display: flex;
+                    padding-top: 3.75em;
+                    width: 100%;
+                }
+                .post.type-docs {
+                    -ms-flex: 1 1 auto;
+                    align-content: center;
+                }
+                .docs-nav,
+                .page-nav {
+                    -ms-flex-negative: 0;
+                    margin-bottom: 5.625em;
+                }
+                .docs-nav .sticky,
+                .page-nav .sticky {
+                    position: sticky;
+                    top: 1.875em;
+                }
+                .docs-nav {
+                    width: 8.5em;
+                }
+                #page-nav {
+                    font-size: 12px;
+                    margin: 4em;
+                }
+                #docs-nav-toggle {
+                    display: none;
+                }
+            }
+            @media only screen and (min-width: 1091px) {
+                #page-nav {
+                    display: block;
+                }
+            }
+            @media only screen and (max-width: 800px) {
+                .docs-nav {
+                    background: #fff;
+                    border: 1px solid #dde0e7;
+                    border-radius: 5px;
+                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+                    box-sizing: border-box;
+                    margin-bottom: 5%;
+                    padding: 1em;
+                }
+                .docs-nav-menu {
+                    display: none;
+                }
+                .docs-menu--opened .docs-nav-menu {
+                    display: block;
+                }
+                .docs-menu--opened .docs-nav-toggle .icon-angle-right {
+                    -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                }
+                #docs-menu {
+                    border-top: 1px solid #dde0e7;
+                    margin-top: 1.25em;
+                    padding-top: 1.25em;
+                }
+            }
+            .block {
+                padding-top: 3.75em;
+            }
+            .block:not(.block-hero) {
+                background: #fff;
+            }
+            .block:last-child {
+                padding-bottom: 3.75em;
+            }
+            .block-header,
+            .block-image {
+                margin-bottom: 1.5em;
+            }
+            .block-title {
+                align-self: center;
+                margin: 0;
+            }
+            .block-subtitle {
+                color: #67758d;
+                line-height: 1.5;
+                margin-bottom: 0;
+            }
+            .block-subtitle:not(:first-child) {
+                margin-top: 0.5em;
+            }
+            .block-buttons,
+            .grid-item-buttons {
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 0.9375em;
+            }
+            .block-buttons a,
+            .grid-item-buttons a {
+                font-weight: 700;
+                text-decoration: none;
+            }
+            .block-buttons {
+                justify-content: center;
+            }
+            .block-buttons a {
+                margin: 0 0.375em 0.75em;
+            }
+            .grid-item-buttons a {
+                margin: 0 0.75em 0.75em 0;
+            }
+            .has-gradient .block-subtitle {
+                color: inherit;
+            }
+            .block-hero .block-buttons:not(:first-child),
+            .block-text .block-buttons:not(:first-child) {
+                margin-top: 1.875em;
+            }
+            .block-text .grid-item {
+                max-width: 680px;
+                text-align: center;
+            }
+            .block-text .block-title {
+                font-size: 1.875em;
+            }
+            @media only screen and (min-width: 641px) {
+                .block-text .block-content {
+                    font-size: 1.125em;
+                }
+                .block-text .block-title {
+                    font-size: 2.125em;
+                }
+            }
+            @media only screen and (min-width: 801px) {
+                .block-text .grid-item:not(:only-child) {
+                    flex: 0 0 50%;
+                    max-width: 90%;
+                }
+                .block-body:not(:only-child) .block-buttons {
+                    justify-content: flex-start;
+                }
+                .block-body:not(:only-child) .block-buttons a {
+                    margin-left: 0;
+                    margin-right: 0.75em;
+                }
+            }
+            @media only screen and (min-width: 1001px) {
+                .block-image:not(:only-child) {
+                    padding-right: 0.5em;
+                }
+                .grid-swap .block-image:not(:only-child) {
+                    padding-left: 0.5em;
+                    padding-right: 0.9375em;
+                }
+            }
+            .block-cta .has-gradient {
+                border-radius: 5px;
+                margin-bottom: 1.875em;
+                padding: 3.75em 3vw 1.875em;
+            }
+            .block-cta .block-header {
+                max-width: 680px;
+                text-align: center;
+            }
+            .block-cta .block-title {
+                font-size: 1.875em;
+            }
+            .block-cta .block-subtitle {
+                font-size: 1.125em;
+            }
+            @media only screen and (min-width: 641px) {
+                .block-title {
+                    font-size: 2.125em;
+                }
+            }
+            @media only screen and (min-width: 801px) {
+                .block-cta .has-gradient {
+                    padding-left: 7%;
+                    padding-right: 7%;
+                }
+                .block-cta .block-header {
+                    flex: 0 0 66.666%;
+                    max-width: 66.666%;
+                    text-align: left;
+                }
+                .block-cta .block-buttons {
+                    flex: 0 0 50%;
+                    margin-top: 0;
+                    max-width: 50%;
+                }
+            }
+            .block-hero + .block-grid:not(.has-header) {
+                background: 0;
+                padding-top: 0;
+            }
+            .block-grid .block-header {
+                margin-bottom: 2em;
+                text-align: center;
+            }
+            .block-grid .block-title {
+                font-size: 1.875em;
+            }
+            .block-grid .grid-item {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.875em;
+            }
+            .grid-item-inside {
+                background: #fff;
+                border: 1px solid #dde0e7;
+                border-radius: 3px;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+                box-sizing: border-box;
+                flex-grow: 1;
+                padding-bottom: 0.75em;
+            }
+            .grid-item-image {
+                display: block;
+                width: 100%;
+            }
+            .grid-item-image,
+            .grid-item-image img {
+                border-radius: 3px 3px 0 0;
+            }
+            .grid-item-title {
+                font-size: 1.5em;
+                margin: 1em 0 0.5em;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            .grid-item-title:first-child {
+                margin-top: 1.25em;
+            }
+            .grid-item-title a {
+                color: inherit !important;
+                text-decoration: none;
+            }
+            .grid-item-buttons,
+            .grid-item-content {
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+            }
+            .grid-item-content {
+                margin-bottom: 1.25em;
+            }
+            .grid-item-buttons a:not(.button):after {
+                font-size: 1.125em;
+                content: '\2192';
+                line-height: 1.5;
+                margin-left: 5px;
+            }
+            @media only screen and (max-width: 1000px) {
+                .block-grid .grid-item {
+                    margin-bottom: 4vw;
+                }
+            }
+            .block-hero {
+                padding-bottom: 7.5em;
+                position: relative;
+                text-align: center;
+            }
+            .block-hero .block-header {
+                margin-bottom: 0.75em;
+            }
+            .block-hero .block-title {
+                font-size: 2.25em;
+            }
+            .block-hero .block-content {
+                font-size: 1.125em;
+                line-height: 1.5;
+            }
+            .block-hero + .block {
+                margin-top: -5em;
+                position: relative;
+            }
+            @media only screen and (min-width: 641px) {
+                .block-hero .block-title {
+                    font-size: 3em;
+                }
+                .block-hero .block-content {
+                    font-size: 1.25em;
+                }
+                .block-hero .block-buttons a {
+                    font-size: 1em;
+                }
+            }
+            .site-footer {
+                background-color: #fff;
+                padding-bottom: 1.5em;
+                padding-top: 1.5em;
+            }
+            #colophon a:not(.button) {
+                color: inherit;
+            }
+            #colophon a:not(.button):focus,
+            #colophon a:not(.button):hover {
+                color: #00c6ff;
+            }
+            .site-info,
+            .social-links {
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: 0.675em;
+                line-height: 1.2;
+            }
+            .site-info .button:not(.button-icon),
+            .social-links .button:not(.button-icon) {
+                font-size: inherit;
+                line-height: 1.2;
+                padding: 0.3em 1em;
+            }
+            .site-info {
+                margin: 0.25em 0 0;
+                text-align: center;
+            }
+            .site-info .copyright,
+            .site-info > a {
+                margin: 0 4px 0.2em 0;
+            }
+            .social-links {
+                margin-top: 0.5375em;
+            }
+            .social-links a {
+                margin: 0 50px 0.2em;
+            }
+            .social-links .icon {
+                font-size: 20px;
+            }
+            @media only screen and (min-width: 641px) {
+                .site-footer-inside {
+                    align-items: flex-start;
+                    display: flex;
+                }
+                .site-info {
+                    text-align: left;
+                }
+                .site-info,
+                .social-links {
+                    justify-content: flex-start;
+                }
+                .social-links {
+                    flex: 0 0 auto;
+                    flex-wrap: nowrap;
+                    margin-left: auto;
+                    margin-top: 0;
+                }
+                .social-links a {
+                    margin-left: 20px;
+                    margin-right: 0;
+                }
+            }
+            .palette-green a:not(.button) {
+                color: #20c86e;
+            }
+            .palette-green a:not(.button):hover {
+                color: #424b5f;
+            }
+            .palette-green blockquote {
+                border-color: #20c86e;
+            }
+            .palette-green .button,
+            .palette-green .line-left:after {
+                background: #20c86e;
+            }
+            .palette-green .has-gradient {
+                background: #20c86e;
+                background: linear-gradient(90deg, #1ba65b, #20c86e);
+            }
+            .palette-green #colophon a:not(.button):hover,
+            .palette-green #docs-menu .current,
+            .palette-green #docs-menu .current-parent,
+            .palette-green #docs-menu a:hover,
+            .palette-green #masthead a:not(.button):hover,
+            .palette-green #page-nav a:hover,
+            .palette-green #page-nav li.active > a,
+            .palette-green .button-icon:active,
+            .palette-green .button-icon:focus,
+            .palette-green .button-icon:hover,
+            .palette-green .button-secondary,
+            .palette-green .has-gradient .button:not(.button-secondary),
+            .palette-green .menu-item.current,
+            .palette-green .post.type-docs .hash-link:focus,
+            .palette-green .post.type-docs .hash-link:hover {
+                color: #20c86e;
+            }
+            .palette-green #docs-section-items .docs-item-link:hover {
+                border-color: #20c86e;
+                color: #20c86e;
+            }
+            .palette-navy a:not(.button) {
+                color: #004e92;
+            }
+            .palette-navy a:not(.button):hover {
+                color: #424b5f;
+            }
+            .palette-navy blockquote {
+                border-color: #004e92;
+            }
+            .palette-navy .button,
+            .palette-navy .line-left:after {
+                background: #004e92;
+            }
+            .palette-navy .has-gradient {
+                background: #004e92;
+                background: linear-gradient(90deg, #000428, #004e92);
+            }
+            .palette-navy #colophon a:not(.button):hover,
+            .palette-navy #docs-menu .current,
+            .palette-navy #docs-menu .current-parent,
+            .palette-navy #docs-menu a:hover,
+            .palette-navy #masthead a:not(.button):hover,
+            .palette-navy #page-nav a:hover,
+            .palette-navy #page-nav li.active > a,
+            .palette-navy .button-icon:active,
+            .palette-navy .button-icon:focus,
+            .palette-navy .button-icon:hover,
+            .palette-navy .button-secondary,
+            .palette-navy .has-gradient .button:not(.button-secondary),
+            .palette-navy .menu-item.current,
+            .palette-navy .post.type-docs .hash-link:focus,
+            .palette-navy .post.type-docs .hash-link:hover {
+                color: #004e92;
+            }
+            .palette-navy #docs-section-items .docs-item-link:hover {
+                border-color: #004e92;
+                color: #004e92;
+            }
+            .palette-violet a:not(.button) {
+                color: #8e2de2;
+            }
+            .palette-violet a:not(.button):hover {
+                color: #424b5f;
+            }
+            .palette-violet blockquote {
+                border-color: #8e2de2;
+            }
+            .palette-violet .button,
+            .palette-violet .line-left:after {
+                background: #8e2de2;
+            }
+            .palette-violet .has-gradient {
+                background: #8e2de2;
+                background: linear-gradient(90deg, #4a00e0, #8e2de2);
+            }
+            .palette-violet #colophon a:not(.button):hover,
+            .palette-violet #docs-menu .current,
+            .palette-violet #docs-menu .current-parent,
+            .palette-violet #docs-menu a:hover,
+            .palette-violet #masthead a:not(.button):hover,
+            .palette-violet #page-nav a:hover,
+            .palette-violet #page-nav li.active > a,
+            .palette-violet .button-icon:active,
+            .palette-violet .button-icon:focus,
+            .palette-violet .button-icon:hover,
+            .palette-violet .button-secondary,
+            .palette-violet .has-gradient .button:not(.button-secondary),
+            .palette-violet .menu-item.current,
+            .palette-violet .post.type-docs .hash-link:focus,
+            .palette-violet .post.type-docs .hash-link:hover {
+                color: #8e2de2;
+            }
+            .palette-violet #docs-section-items .docs-item-link:hover {
+                border-color: #8e2de2;
+                color: #8e2de2;
+            }
+        </style>
+        <meta name="generator" content="Gatsby 2.32.8" />
+        <title data-react-helmet="true">Python For JS Devs | webdevhub</title>
+        <link data-react-helmet="true" rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            data-react-helmet="true"
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link data-react-helmet="true" rel="icon" href="/images/favicon.ico" />
+        <meta data-react-helmet="true" charset="utf-8" />
+        <meta data-react-helmet="true" name="viewport" content="width=device-width, initialScale=1.0" />
+        <meta data-react-helmet="true" name="description" content="" />
+        <meta data-react-helmet="true" name="robots" content="" />
+        <link as="script" rel="preload" href="/webpack-runtime-48ba8ab5f614702dcefd.js" />
+        <link as="script" rel="preload" href="/framework-ee588a66ec21b993116b.js" />
+        <link as="script" rel="preload" href="/app-3c57265fe85c14101a0f.js" />
+        <link as="script" rel="preload" href="/styles-7d4153d260c0197f0043.js" />
+        <link as="script" rel="preload" href="/29107295-4796dbfd2443d7c4719f.js" />
+        <link as="script" rel="preload" href="/commons-6c0f9d5475e211c891a1.js" />
+        <link as="script" rel="preload" href="/component---src-templates-docs-js-bf431cbe6f6b991ffc34.js" />
+        <link as="fetch" rel="preload" href="/page-data/docs/articles/python/page-data.json" crossorigin="anonymous" />
+        <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous" />
+    </head>
+    <body class="palette-navy">
+        <script>
+            void (function () {
+                window.__onThemeChange = function () {};
+
+                var preferredTheme;
+                try {
+                    preferredTheme = localStorage.getItem('theme');
+                } catch (err) {}
+
+                function setTheme(newTheme) {
+                    if (preferredTheme && document.body.classList.contains(preferredTheme)) {
+                        document.body.classList.replace(preferredTheme, newTheme);
+                    } else {
+                        document.body.classList.add(newTheme);
+                    }
+
+                    window.__theme = newTheme;
+                    preferredTheme = newTheme;
+                    window.__onThemeChange(newTheme);
+                }
+
+                window.__setPreferredTheme = function (newTheme) {
+                    setTheme(newTheme);
+                    try {
+                        localStorage.setItem('theme', newTheme);
+                    } catch (err) {}
+                };
+
+                var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                darkQuery.addListener(function (e) {
+                    window.__setPreferredTheme(e.matches ? 'dark' : 'light');
+                });
+
+                setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+            })();
+        </script>
+        <noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript>
+        <div id="___gatsby">
+            <div style="outline: none" tabindex="-1" id="gatsby-focus-wrapper">
+                <div id="page" class="site">
+                    <header id="masthead" class="site-header outer">
+                        <div class="inner">
+                            <div class="site-header-inside">
+                                <div class="site-branding">
+                                    <p class="site-logo">
+                                        <a href="/"><img src="/images/logo-circle.png" alt="webdevhub logo" /></a>
+                                    </p>
+                                </div>
+                                <div id="search" class="inner"></div>
+                                <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+                                    <div class="site-nav-inside">
+                                        <button id="menu-close" class="menu-toggle">
+                                            <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
+                                        </button>
+                                        <ul class="menu">
+                                            <li class="menu-item"><a href="/">Home</a></li>
+                                            <li class="menu-item has-children">
+                                                <a href="https://blog-w-comments.vercel.app/">Blog</a
+                                                ><button class="submenu-toggle">
+                                                    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+                                                </button>
+                                                <ul class="submenu">
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://bgoonz.blogspot.com/" target="_blank" rel="noopener " class="button"
+                                                            >Blog-Post-Archive</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button"><a class="button" href="/blog/">Top Blog Posts</a></li>
+                                                    <li class="menu-item menu-button">
+                                                        <a
+                                                            target="_blank"
+                                                            rel="noopener "
+                                                            class="button button-secondary"
+                                                            href="/docs/articles/ds-algo-overview/"
+                                                            >ds-algo</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a target="_blank" rel="noopener " class="button button-secondary" href="/blog/platform-docs/"
+                                                            >platform docs</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a target="_blank" rel="noopener " class="button button-secondary" href="/docs/articles/nodejs/"
+                                                            >nodejs</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item has-children">
+                                                <a href="/docs/sitemap">Navigation</a
+                                                ><button class="submenu-toggle">
+                                                    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+                                                </button>
+                                                <ul class="submenu">
+                                                    <li class="menu-item menu-button"><a class="button" href="/docs">Docs</a></li>
+                                                    <li class="menu-item menu-button"><a class="button" href="/showcase">Showcase</a></li>
+                                                    <li class="menu-item menu-button"><a class="button" href="/docs/faq/contact">Contact!</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item has-children">
+                                                <a href="https://github.com/bgoonz/Learning-Assets" target="_blank" rel="noopener ">Archive</a
+                                                ><button class="submenu-toggle">
+                                                    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+                                                </button>
+                                                <ul class="submenu">
+                                                    <li class="menu-item"><a href="https://bryanguner.medium.com/">Medium Articles</a></li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://resourcerepo2.netlify.app/" target="_blank" rel="noopener " class="button"
+                                                            >Resource-Archive-Server</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button"><a href="#" class="button button-secondary">Bootcamp Resources</a></li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://web-dev-resource-hub.netlify.app/" target="_blank" rel="noopener " class="button"
+                                                            >OG-Blog</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button"><a class="button button-secondary" href="/gallery">Gallery</a></li>
+                                                    <li class="menu-item menu-button"><a class="button" href="/docs">Top Repos</a></li>
+                                                    <li class="menu-item menu-button">
+                                                        <a
+                                                            href="https://github.com/bgoonz/UsefulResourceRepo2.0"
+                                                            target="_blank"
+                                                            rel="noopener "
+                                                            class="button button-secondary"
+                                                            >WebResourceRepo</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item has-children">
+                                                <a href="#">Projects</a
+                                                ><button class="submenu-toggle">
+                                                    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+                                                </button>
+                                                <ul class="submenu">
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://potluck-landing.netlify.app/" target="_blank" rel="noopener " class="button"
+                                                            >Potluck Planner</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://meditate42app.netlify.app/" target="_blank" rel="noopener " class="button"
+                                                            >Meditation App</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item has-children">
+                                                <a href="/notes-template">Tools</a
+                                                ><button class="submenu-toggle">
+                                                    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+                                                </button>
+                                                <ul class="submenu">
+                                                    <li class="menu-item">
+                                                        <a href="https://githtmlpreview.netlify.app/" target="_blank" rel="noopener ">Github HTML Previewer</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="https://devtools42.netlify.app/" target="_blank" rel="noopener ">Text Tools</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="https://ternary42.netlify.app/" target="_blank" rel="noopener ">Ternary 2 If Else</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="https://determined-dijkstra-ee7390.netlify.app/" target="_blank" rel="noopener "
+                                                            >Job Search Resources</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="https://github.com/bgoonz/web-dev-setup-checker" target="_blank" rel="noopener "
+                                                            >Setup Checker</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://github.com/search/advanced" target="_blank" rel="noopener " class="button button-icon"
+                                                            ><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                                                ></path></svg
+                                                            ><span class="screen-reader-text">Github-Advanced-Search</span></a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://potluck-landing.netlify.app/" target="_blank" rel="noopener " class="button"
+                                                            >PotluckPlanner</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="https://web-dev-interview-prep-quiz-website.netlify.app/">WebDev Quizzes</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-button"><a href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" class="button">GitHub</a></li>
+                                            <li class="menu-item has-children menu-button">
+                                                <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button button-secondary">External Nav</a
+                                                ><button class="submenu-toggle">
+                                                    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+                                                </button>
+                                                <ul class="submenu">
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button button-secondary">alt-blogs</a>
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://bgoonz-games.netlify.app/" class="button button-secondary">Games</a>
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://bgoonz-blog-v3-0.netlify.app/" target="_blank" rel="noopener " class="button"
+                                                            >Blog Backup</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://curious-zebra-a1329.netlify.app/" class="button">Project Centric</a>
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://web-dev-hub.com/" target="_blank" rel="noopener " class="button button-secondary"
+                                                            >Wordpress Blog</a
+                                                        >
+                                                    </li>
+                                                    <li class="menu-item menu-button">
+                                                        <a href="https://curious-zebra-a1329.netlify.app/" class="button button-secondary"
+                                                            >Project Portfolio Gallery</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <button id="menu-open" class="menu-toggle">
+                                    <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="search" class="inner"></div>
+                        <div>
+                            <a class="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github"
+                                ><svg
+                                    aria-hidden="true"
+                                    width="80"
+                                    height="80"
+                                    viewBox="0 0 250 250"
+                                    style="
+                                        z-index: 100000;
+                                        fill: #194ccdaf;
+                                        color: #fff;
+                                        position: fixed;
+                                        top: 20px;
+                                        border: 0;
+                                        left: 20px;
+                                        transform: scale(-1.5, 1.5);
+                                    "
+                                >
+                                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                                    <path
+                                        class="octo-arm"
+                                        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                                        fill="currentColor"
+                                        style="transform-origin: 130px 106px"
+                                    ></path>
+                                    <path
+                                        class="octo-body"
+                                        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                                        fill="currentColor"
+                                    ></path></svg
+                            ></a>
+                        </div>
+                    </header>
+                    <main id="content" class="site-content">
+                        <div class="inner outer">
+                            <div class="docs-content">
+                                <nav id="docs-nav" class="docs-nav">
+                                    <div id="docs-nav-inside" class="docs-nav-inside sticky">
+                                        <button id="docs-nav-toggle" class="docs-nav-toggle">
+                                            Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="docs-nav-menu">
+                                            <ul id="docs-menu" class="docs-menu">
+                                                <li class="docs-menu-item"><a href="/docs/">Docs</a></li>
+                                                <li class="docs-menu-item has-children">
+                                                    <a href="/docs/about/">About</a
+                                                    ><button class="docs-submenu-toggle">
+                                                        <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+                                                    </button>
+                                                    <ul class="docs-submenu">
+                                                        <li class="docs-menu-item"><a href="/docs/about/npm/">Introduction to npm</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/about/resume/">Resume</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/about/me/">About Me</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/about/node/nodevsbrowser/">Node vs Browser</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/about/node/reading-files/">Reading Files</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/about/node/writing-files/">Writing Files</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/about/node/nodejs/">Javascript and Node</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/about/node/install/">Install</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/about/node/intro/">Intro To Node</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="docs-menu-item has-children active">
+                                                    <a href="/docs/articles/">Article Docs</a
+                                                    ><button class="docs-submenu-toggle">
+                                                        <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+                                                    </button>
+                                                    <ul class="docs-submenu">
+                                                        <li class="docs-menu-item">
+                                                            <a href="/docs/articles/ten-jamstack-apis-to-checkout/">Jamstack Api&#x27;s</a>
+                                                        </li>
+                                                        <li class="docs-menu-item current">
+                                                            <a aria-current="page" class="" href="/docs/articles/python/">Python For JS Devs</a>
+                                                        </li>
+                                                        <li class="docs-menu-item"><a href="/docs/articles/resources/">Apendix</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/articles/intro/">Intro To Node</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/articles/gallery/">Node API&#x27;s w Express</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/articles/algo/">Algorithms &amp; Data Structures</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/articles/reading-files/">Reading Files</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/articles/basic-web-dev/">Web Dev Review</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/articles/install/">Install</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/articles/writing-files/">Writing Files</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/articles/article-compilation/">Article-Compilation</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="docs-menu-item has-children">
+                                                    <a href="/docs/faq/">FAQ</a
+                                                    ><button class="docs-submenu-toggle">
+                                                        <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+                                                    </button>
+                                                    <ul class="docs-submenu">
+                                                        <li class="docs-menu-item"><a href="/docs/faq/contact/">Contact!</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="docs-menu-item has-children">
+                                                    <a href="/docs/interact/">Interactive Examples</a
+                                                    ><button class="docs-submenu-toggle">
+                                                        <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+                                                    </button>
+                                                    <ul class="docs-submenu">
+                                                        <li class="docs-menu-item"><a href="/docs/interact/jupyter-notebooks/">Jupyter Notebooks</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/interact/clock/">Clock</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="docs-menu-item has-children">
+                                                    <a href="/docs/links/">Medium</a
+                                                    ><button class="docs-submenu-toggle">
+                                                        <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+                                                    </button>
+                                                    <ul class="docs-submenu">
+                                                        <li class="docs-menu-item"><a href="/docs/links/my-websites/">My Sites</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/links/medium-links/">Medium</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/links/social/">social Links</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="docs-menu-item has-children">
+                                                    <a href="/docs/quick-reference/">Quick Reference</a
+                                                    ><button class="docs-submenu-toggle">
+                                                        <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+                                                    </button>
+                                                    <ul class="docs-submenu">
+                                                        <li class="docs-menu-item"><a href="/docs/quick-reference/installation/">Installation</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/quick-reference/new-repo-instructions/">new-repo-git</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/quick-reference/docs/">Useful Repos</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/quick-reference/Emmet/">Emmet Cheat Sheet</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="docs-menu-item has-children">
+                                                    <a href="/docs/react/">React</a
+                                                    ><button class="docs-submenu-toggle">
+                                                        <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+                                                    </button>
+                                                    <ul class="docs-submenu">
+                                                        <li class="docs-menu-item"><a href="/docs/react/react2/">Intro To React</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/react/createReactApp/">npx-create-react-app</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="docs-menu-item has-children">
+                                                    <a href="/docs/tools/">Tools</a
+                                                    ><button class="docs-submenu-toggle">
+                                                        <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+                                                    </button>
+                                                    <ul class="docs-submenu">
+                                                        <li class="docs-menu-item"><a href="/docs/tools/plug-ins/">Plug-ins</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/tools/vscode/">vscode</a></li>
+                                                        <li class="docs-menu-item"><a href="/docs/tools/notes-template/">Notes Template</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <article class="post type-docs">
+                                    <div class="post-inside">
+                                        <header class="post-header"><h1 class="post-title line-left">Python For JS Devs</h1></header>
+                                        <div class="post-content">
+                                            <h2>Python For JS Developers:</h2>
+                                            <h1>Python Study Guide for a JavaScript Programmer</h1>
+                                            <p>A guide to commands in Python from what you know in JavaScript</p>
+                                            <hr />
+                                            <h3>Python Study Guide for a JavaScript Programmer</h3>
+                                            <figure>
+                                                <img src="https://cdn-images-1.medium.com/max/800/1*3V9VOfPk_hrFdbEAd3j-QQ.png" class="graf-image" />
+                                            </figure>
+                                            ### Applications of Tutorial &amp; Cheat Sheet Respectivley (At Bottom Of Tutorial):
+                                            <h3>Basics</h3>
+                                            <ul>
+                                                <li>
+                                                    <span id="f893"><strong>PEP8</strong> : Python Enhancement Proposals, style-guide for Python.</span>
+                                                </li>
+                                                <li>
+                                                    <span id="c0bf"><code>print</code> is the equivalent of <code>console.log</code>.</span>
+                                                </li>
+                                            </ul>
+                                            <blockquote><p>‘print() == console.log()’</p></blockquote>
+                                            <h3><code>#</code> is used to make comments in your code.</h3>
+                                            <pre><code>def foo():
+    &quot;&quot;&quot;
+    The foo function does many amazing things that you
+    should not question. Just accept that it exists and
+    use it with caution.
+    &quot;&quot;&quot;
+    secretThing()
+</code></pre>
+                                            <blockquote>
+                                                <p>
+                                                    <em
+                                                        >Python has a built in help function that let’s you see a description of the source code without having
+                                                        to navigate to it… “-SickNasty … Autor Unknown”</em
+                                                    >
+                                                </p>
+                                            </blockquote>
+                                            <hr />
+                                            <h3>Numbers</h3>
+                                            <ul>
+                                                <li><span id="4060">Python has three types of numbers:</span></li>
+                                                <li>
+                                                    <span id="8aef"><strong>Integer</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="723f"><strong>Positive and Negative Counting Numbers.</strong></span>
+                                                </li>
+                                            </ul>
+                                            <p>No Decimal Point</p>
+                                            <blockquote>
+                                                <p>
+                                                    Created by a literal non-decimal point number … <strong>or</strong> … with the
+                                                    <code>int()</code> constructor.
+                                                </p>
+                                            </blockquote>
+                                            <pre><code>print(3) # =&gt; 3
+print(int(19)) # =&gt; 19
+print(int()) # =&gt; 0
+</code></pre>
+                                            <p><strong>3. Complex Numbers</strong></p>
+                                            <blockquote><p>Consist of a real part and imaginary part.</p></blockquote>
+                                            <h4>Boolean is a subtype of integer in Python.🤷‍♂️</h4>
+                                            <blockquote>
+                                                <p>If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…</p>
+                                            </blockquote>
+                                            <figure><img src="https://cdn-images-1.medium.com/max/800/0*eC4EvZcv6hhH88jX.png" class="graf-image" /></figure>
+                                            Than I am sure you will find the means to suspend your disbelief.
+                                            <pre><code>print(2.24) # =&gt; 2.24
+print(2.) # =&gt; 2.0
+print(float()) # =&gt; 0.0
+print(27e-5) # =&gt; 0.00027
+</code></pre>
+                                            <h3>KEEP IN MIND:</h3>
+                                            <blockquote>
+                                                <p>
+                                                    <strong>The</strong> <code>i</code> <strong>is switched to a</strong> <code>j</code>
+                                                    <strong>in programming.</strong>
+                                                </p>
+                                            </blockquote>
+                                            <p>
+                                                <span class="graf-dropCap">T</span>*his is because the letter i is common place as the de facto index for any
+                                                and all enumerable entities so it just makes sense not to compete for name-*<strong><em>space</em></strong>
+                                                <em
+                                                    >when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies
+                                                    to Leonhard Euler.</em
+                                                >
+                                            </p>
+                                            <pre><code>print(7j) # =&gt; 7j
+print(5.1+7.7j)) # =&gt; 5.1+7.7j
+print(complex(3, 5)) # =&gt; 3+5j
+print(complex(17)) # =&gt; 17+0j
+print(complex()) # =&gt; 0j
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="2579"><strong>Type Casting</strong> : The process of converting one number to another.</span>
+                                                </li>
+                                            </ul>
+                                            <pre><code># Using Float
+print(17)               # =&gt; 17
+print(float(17))        # =&gt; 17.0
+
+# Using Int
+print(17.0)             # =&gt; 17.0
+print(int(17.0))        # =&gt; 17
+
+# Using Str
+print(str(17.0) + &#x27; and &#x27; + str(17))        # =&gt; 17.0 and 17
+</code></pre>
+                                            <p><strong>The arithmetic operators are the same between JS and Python, with two additions:</strong></p>
+                                            <ul>
+                                                <li>
+                                                    <span id="8cf4"><em>“**” : Double asterisk for exponent.</em></span>
+                                                </li>
+                                                <li>
+                                                    <span id="03b4"><em>“//” : Integer Division.</em></span>
+                                                </li>
+                                                <li>
+                                                    <span id="2ce5"><strong>There are no spaces between math operations in Python.</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="1686"
+                                                        ><strong
+                                                            >Integer Division gives the other part of the number from Module; it is a way to do round down
+                                                            numbers replacing</strong
+                                                        >
+                                                        <code>Math.floor()</code> <strong>in JS.</strong></span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <span id="a6a3"
+                                                        ><strong>There are no</strong> <code>++</code> <strong>and</strong> <code>--</code>
+                                                        <strong>in Python, the only shorthand operators are:</strong></span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <figure><img src="https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png" class="graf-image" /></figure>
+                                            <hr />
+                                            <h3>Strings</h3>
+                                            <ul>
+                                                <li><span id="e98c">Python uses both single and double quotes.</span></li>
+                                                <li>
+                                                    <span id="225e"
+                                                        >You can escape strings like so
+                                                        <code>&#x27;Jodi asked, &quot;What\&#x27;s up, Sam?&quot;&#x27;</code></span
+                                                    >
+                                                </li>
+                                                <li><span id="9f74">Multiline strings use triple quotes.</span></li>
+                                            </ul>
+                                            <pre><code>print(&#x27;&#x27;&#x27;My instructions are very long so to make them
+more readable in the code I am putting them on
+more than one line. I can even include &quot;quotes&quot;
+of any kind because they won&#x27;t get confused with
+the end of the string!&#x27;&#x27;&#x27;)
+</code></pre>
+                                            <p><strong>Use the</strong> <code>len()</code> <strong>function to get the length of a string.</strong></p>
+                                            <pre><code>print(len(“Spaghetti”)) # =&gt; 9
+</code></pre>
+                                            <h3><strong>Python uses</strong> <code>zero-based indexing</code></h3>
+                                            <h4>Python allows negative indexing (thank god!)</h4>
+                                            <pre><code>print(“Spaghetti”[-1]) # =&gt; i
+
+print(“Spaghetti”[-4]) # =&gt; e
+</code></pre>
+                                            <ul>
+                                                <li><span id="7567">Python let’s you use ranges</span></li>
+                                            </ul>
+                                            <p>
+                                                You can think of this as roughly equivalent to the slice method called on a JavaScript object or string…
+                                                <em
+                                                    >(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are
+                                                    actually called. As a immutable privative type</em
+                                                >
+                                                <strong>*by textbook definition**</strong>, a string literal could not hope to invoke most of it’s methods
+                                                without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
+                                            </p>
+                                            <pre><code>print(“Spaghetti”[1:4]) # =&gt; pag
+print(“Spaghetti”[4:-1]) # =&gt; hett
+print(“Spaghetti”[4:4]) # =&gt; (empty string)
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="1366">The end range is exclusive just like <code>slice</code> in JS.</span>
+                                                </li>
+                                            </ul>
+                                            <pre><code># Shortcut to get from the beginning of a string to a certain index.
+print(&quot;Spaghetti&quot;[:4])  # =&gt; Spag
+print(&quot;Spaghetti&quot;[:-1])    # =&gt; Spaghett
+
+# Shortcut to get from a certain index to the end of a string.
+print(&quot;Spaghetti&quot;[1:])  # =&gt; paghetti
+print(&quot;Spaghetti&quot;[-4:])    # =&gt; etti
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="c786">The <code>index</code> string function is the equiv. of <code>indexOf()</code> in JS</span>
+                                                </li>
+                                            </ul>
+                                            <pre><code>print(&quot;Spaghetti&quot;.index(&quot;h&quot;))    # =&gt; 4
+print(&quot;Spaghetti&quot;.index(&quot;t&quot;))    # =&gt; 6
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="fbb6"
+                                                        >The <code>count</code> function finds out how many times a substring appears in a string… pretty nifty
+                                                        for a hard coded feature of the language.</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <pre><code>print(&quot;Spaghetti&quot;.count(&quot;h&quot;))    # =&gt; 1
+print(&quot;Spaghetti&quot;.count(&quot;t&quot;))    # =&gt; 2
+print(&quot;Spaghetti&quot;.count(&quot;s&quot;))    # =&gt; 0
+print(&#x27;&#x27;&#x27;We choose to go to the moon in this decade and do the other things,
+not because they are easy, but because they are hard, because that goal will
+serve to organize and measure the best of our energies and skills, because that
+challenge is one that we are willing to accept, one we are unwilling to
+postpone, and one which we intend to win, and the others, too.
+&#x27;&#x27;&#x27;.count(&#x27;the &#x27;))                # =&gt; 4
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="7816"
+                                                        ><strong>You can use</strong> <code>+</code>
+                                                        <strong>to concatenate strings, just like in JS.</strong></span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <span id="ed0a"><strong>You can also use “*” to repeat strings or multiply strings.</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="f95c"
+                                                        ><strong>Use the</strong> <code>format()</code>
+                                                        <strong>function to use placeholders in a string to input values later on.</strong></span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <pre><code>first_name = &quot;Billy&quot;
+last_name = &quot;Bob&quot;
+print(&#x27;Your name is {0} {1}&#x27;.format(first_name, last_name))  # =&gt; Your name is Billy Bob
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="445b"
+                                                        ><em
+                                                            >Shorthand way to use format function is:<br />
+                                                            _`print(f&#x27;Your name is {first</em
+                                                        >name} {last_name}&#x27;)`</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <h4>Some useful string methods.</h4>
+                                            <ul>
+                                                <li>
+                                                    <span id="118c"
+                                                        ><strong>Note that in JS</strong> <code>join</code>
+                                                        <strong>is used on an Array, in Python it is used on String.</strong></span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <figure><img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" /></figure>
+                                            - <span id="e95e">There are also many handy testing methods.</span>
+                                            <figure><img src="https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png" class="graf-image" /></figure>
+                                            <hr />
+                                            <h3>Variables and Expressions</h3>
+                                            <ul>
+                                                <li>
+                                                    <span id="a255"
+                                                        ><strong>Duck-Typing</strong> : Programming Style which avoids checking an object’s type to figure out
+                                                        what it can do.</span
+                                                    >
+                                                </li>
+                                                <li><span id="6e70">Duck Typing is the fundamental approach of Python.</span></li>
+                                                <li><span id="5666">Assignment of a value automatically declares a variable.</span></li>
+                                            </ul>
+                                            <pre><code>a = 7
+b = &#x27;Marbles&#x27;
+print(a)         # =&gt; 7
+print(b)         # =&gt; Marbles
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="f6cf"
+                                                        ><strong
+                                                            ><em>You can chain variable assignments to give multiple var names the same value.</em></strong
+                                                        ></span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <h4>Use with caution as this is highly unreadable</h4>
+                                            <pre><code>count = max = min = 0
+print(count)           # =&gt; 0
+print(max)             # =&gt; 0
+print(min)             # =&gt; 0
+</code></pre>
+                                            <h4>The value and type of a variable can be re-assigned at any time.</h4>
+                                            <pre><code>a = 17
+print(a)         # =&gt; 17
+a = &#x27;seventeen&#x27;
+print(a)         # =&gt; seventeen
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="4605"
+                                                        ><code>NaN</code> _does not exist in Python, but you can &#x27;create&#x27; it like so:<br />
+                                                        _<code>print(float(&quot;nan&quot;))</code></span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <span id="d150"><em>Python replaces</em> <code>null</code> <em>with</em> <code>none</code><em>.</em></span>
+                                                </li>
+                                                <li>
+                                                    <span id="6fa7"
+                                                        ><code>none</code> <strong><em>is an object</em></strong>
+                                                        <em>and can be directly assigned to a variable.</em></span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <blockquote>
+                                                <p>
+                                                    Using none is a convenient way to check to see why an action may not be operating correctly in your program.
+                                                </p>
+                                            </blockquote>
+                                            <hr />
+                                            <h3>Boolean Data Type</h3>
+                                            <ul>
+                                                <li>
+                                                    <span id="b843"
+                                                        >One of the biggest benefits of Python is that it reads more like English than JS does.</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <figure><img src="https://cdn-images-1.medium.com/max/800/0*HQpndNhm1Z_xSoHb.png" class="graf-image" /></figure>
+                                            # Logical AND print(True and True) # =&gt; True print(True and False) # =&gt; False print(False and False) # =&gt;
+                                            False
+                                            <pre><code># Logical OR
+print(True or True)     # =&gt; True
+print(True or False)    # =&gt; True
+print(False or False)   # =&gt; False
+
+# Logical NOT
+print(not True)             # =&gt; False
+print(not False and True)   # =&gt; True
+print(not True or False)    # =&gt; False
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="18cc">By default, Python considers an object to be true UNLESS it is one of the following:</span>
+                                                </li>
+                                                <li>
+                                                    <span id="6e0a">Constant <code>None</code> or <code>False</code></span>
+                                                </li>
+                                                <li><span id="9552">Zero of any numeric type.</span></li>
+                                                <li><span id="e7ce">Empty Sequence or Collection.</span></li>
+                                                <li>
+                                                    <span id="11d6"><code>True</code> and <code>False</code> must be capitalized</span>
+                                                </li>
+                                            </ul>
+                                            <hr />
+                                            <h3>Comparison Operators</h3>
+                                            <ul>
+                                                <li><span id="a4fa">Python uses all the same equality operators as JS.</span></li>
+                                                <li><span id="7f98">In Python, equality operators are processed from left to right.</span></li>
+                                                <li><span id="fb68">Logical operators are processed in this order:</span></li>
+                                                <li>
+                                                    <span id="bf08"><strong>NOT</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="4888"><strong>AND</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="2c55"><strong>OR</strong></span>
+                                                </li>
+                                            </ul>
+                                            <blockquote>
+                                                <p>Just like in JS, you can use <code>parentheses</code> to change the inherent order of operations.</p>
+                                            </blockquote>
+                                            <blockquote>
+                                                <p>
+                                                    <strong>Short Circuit</strong> : Stopping a program when a <code>true</code> or <code>false</code> has been
+                                                    reached.
+                                                </p>
+                                            </blockquote>
+                                            <figure><img src="https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png" class="graf-image" /></figure>
+                                            <hr />
+                                            <h3>Identity vs Equality</h3>
+                                            <pre><code>print (2 == &#x27;2&#x27;)    # =&gt; False
+print (2 is &#x27;2&#x27;)    # =&gt; False
+
+print (&quot;2&quot; == &#x27;2&#x27;)    # =&gt; True
+print (&quot;2&quot; is &#x27;2&#x27;)    # =&gt; True
+
+# There is a distinction between the number types.
+print (2 == 2.0)    # =&gt; True
+print (2 is 2.0)    # =&gt; False
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="c5a5"
+                                                        >In the Python community it is better to use <code>is</code> and <code>is not</code> over
+                                                        <code>==</code> or <code>!=</code></span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <hr />
+                                            <h3>If Statements</h3>
+                                            <pre><code>if name == &#x27;Monica&#x27;:
+    print(&#x27;Hi, Monica.&#x27;)
+
+if name == &#x27;Monica&#x27;:
+    print(&#x27;Hi, Monica.&#x27;)
+else:
+    print(&#x27;Hello, stranger.&#x27;)
+
+if name == &#x27;Monica&#x27;:
+    print(&#x27;Hi, Monica.&#x27;)
+elif age &lt; 12:
+    print(&#x27;You are not Monica, kiddo.&#x27;)
+elif age &gt; 2000:
+   print(&#x27;Unlike you, Monica is not an undead, immortal vampire.&#x27;)
+elif age &gt; 100:
+   print(&#x27;You are not Monica, grannie.&#x27;)
+</code></pre>
+                                            <blockquote>
+                                                <p>Remember the order of <code>elif</code> statements matter.</p>
+                                            </blockquote>
+                                            <hr />
+                                            <h3>While Statements</h3>
+                                            <pre><code>spam = 0
+while spam &lt; 5:
+  print(&#x27;Hello, world.&#x27;)
+  spam = spam + 1
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="c7f3"><code>Break</code> statement also exists in Python.</span>
+                                                </li>
+                                            </ul>
+                                            <pre><code>spam = 0
+while True:
+  print(&#x27;Hello, world.&#x27;)
+  spam = spam + 1
+  if spam &gt;= 5:
+    break
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="7a99">As are <code>continue</code> statements</span>
+                                                </li>
+                                            </ul>
+                                            <pre><code>spam = 0
+while True:
+  print(&#x27;Hello, world.&#x27;)
+  spam = spam + 1
+  if spam &lt; 5:
+    continue
+  break
+</code></pre>
+                                            <hr />
+                                            <h3>Try/Except Statements</h3>
+                                            <ul>
+                                                <li>
+                                                    <span id="72ec">Python equivalent to <code>try/catch</code></span>
+                                                </li>
+                                            </ul>
+                                            <pre><code>a = 321
+try:
+    print(len(a))
+except:
+    print(&#x27;Silently handle error here&#x27;)
+
+    # Optionally include a correction to the issue
+    a = str(a)
+    print(len(a)
+
+a = &#x27;321&#x27;
+try:
+    print(len(a))
+except:
+    print(&#x27;Silently handle error here&#x27;)
+
+    # Optionally include a correction to the issue
+    a = str(a)
+    print(len(a))
+</code></pre>
+                                            <ul>
+                                                <li><span id="dcd1">You can name an error to give the output more specificity.</span></li>
+                                            </ul>
+                                            <pre><code>a = 100
+b = 0
+try:
+    c = a / b
+except ZeroDivisionError:
+    c = None
+print(c)
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="4027">You can also use the <code>pass</code> commmand to by pass a certain error.</span>
+                                                </li>
+                                            </ul>
+                                            <pre><code>a = 100
+b = 0
+try:
+    print(a / b)
+except ZeroDivisionError:
+    pass
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="030b"
+                                                        >The <code>pass</code> method won&#x27;t allow you to bypass every single error so you can chain an
+                                                        exception series like so:</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <pre><code>a = 100
+# b = &quot;5&quot;
+try:
+    print(a / b)
+except ZeroDivisionError:
+    pass
+except (TypeError, NameError):
+    print(&quot;ERROR!&quot;)
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="bf45"
+                                                        >You can use an <code>else</code> statement to end a chain of <code>except</code> statements.</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <pre><code># tuple of file names
+files = (&#x27;one.txt&#x27;, &#x27;two.txt&#x27;, &#x27;three.txt&#x27;)
+
+# simple loop
+for filename in files:
+    try:
+        # open the file in read mode
+        f = open(filename, &#x27;r&#x27;)
+    except OSError:
+        # handle the case where file does not exist or permission is denied
+        print(&#x27;cannot open file&#x27;, filename)
+    else:
+        # do stuff with the file object (f)
+        print(filename, &#x27;opened successfully&#x27;)
+        print(&#x27;found&#x27;, len(f.readlines()), &#x27;lines&#x27;)
+        f.close()
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="0e91"
+                                                        ><code>finally</code> is used at the end to clean up all actions under any circumstance.</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <pre><code>def divide(x, y):
+    try:
+        result = x / y
+    except ZeroDivisionError:
+        print(&quot;Cannot divide by zero&quot;)
+    else:
+        print(&quot;Result is&quot;, result)
+    finally:
+        print(&quot;Finally...&quot;)
+</code></pre>
+                                            <ul>
+                                                <li><span id="84ee">Using duck typing to check to see if some value is able to use a certain method.</span></li>
+                                            </ul>
+                                            <pre><code># Try a number - nothing will print out
+a = 321
+if hasattr(a, &#x27;__len__&#x27;):
+    print(len(a))
+
+# Try a string - the length will print out (4 in this case)
+b = &quot;5555&quot;
+if hasattr(b, &#x27;__len__&#x27;):
+    print(len(b))
+</code></pre>
+                                            <hr />
+                                            <h3>Pass</h3>
+                                            <ul>
+                                                <li><span id="2b80">Pass Keyword is required to write the JS equivalent of :</span></li>
+                                            </ul>
+                                            <pre><code>if (true) {
+}
+
+while (true) {}
+
+if True:
+  pass
+
+while True:
+  pass
+</code></pre>
+                                            <hr />
+                                            <h3>Functions</h3>
+                                            <ul>
+                                                <li>
+                                                    <span id="7091"><strong>Function definition includes:</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="1f11"><strong>The</strong> <code>def</code> <strong>keyword</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="ec14"><strong>The name of the function</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="7733"><strong>A list of parameters enclosed in parentheses.</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="1516"><strong>A colon at the end of the line.</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="b2dd"><strong>One tab indentation for the code to run.</strong></span>
+                                                </li>
+                                                <li>
+                                                    <span id="bcef"><strong>You can use default parameters just like in JS</strong></span>
+                                                </li>
+                                            </ul>
+                                            <pre><code>def greeting(name, saying=&quot;Hello&quot;):
+    print(saying, name)
+
+greeting(&quot;Monica&quot;)
+# Hello Monica
+
+greeting(&quot;Barry&quot;, &quot;Hey&quot;)
+# Hey Barry
+</code></pre>
+                                            <h4><strong>Keep in mind, default parameters must always come after regular parameters.</strong></h4>
+                                            <pre><code># THIS IS BAD CODE AND WILL NOT RUN
+def increment(delta=1, value):
+    return delta + value
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="c1aa"><em>You can specify arguments by name without destructuring in Python.</em></span>
+                                                </li>
+                                            </ul>
+                                            <pre><code>def greeting(name, saying=&quot;Hello&quot;):
+    print(saying, name)
+
+# name has no default value, so just provide the value
+# saying has a default value, so use a keyword argument
+greeting(&quot;Monica&quot;, saying=&quot;Hi&quot;)
+</code></pre>
+                                            <ul>
+                                                <li>
+                                                    <span id="54ac"
+                                                        >The <code>lambda</code> keyword is used to create anonymous functions and are supposed to be
+                                                        <code>one-liners</code>.</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <p><code>toUpper = lambda s: s.upper()</code></p>
+                                            <hr />
+                                            <h3>Notes</h3>
+                                            <h4>Formatted Strings</h4>
+                                            <blockquote>
+                                                <p>
+                                                    Remember that in Python join() is called on a string with an array/list passed in as the argument.<br />
+                                                    Python has a very powerful formatting engine.<br />
+                                                    format() is also applied directly to strings.
+                                                </p>
+                                            </blockquote>
+                                            <pre><code>shopping_list = [‘bread’,’milk’,’eggs’]
+print(‘,’.join(shopping_list))
+</code></pre>
+                                            <h3>Comma Thousands Separator</h3>
+                                            <pre><code>print(‘{:,}’.format(1234567890))
+‘1,234,567,890’
+</code></pre>
+                                            <h3>Date and Time</h3>
+                                            <pre><code>d = datetime.datetime(2020, 7, 4, 12, 15, 58)
+print(‘{:%Y-%m-%d %H:%M:%S}’.format(d))
+‘2020–07–04 12:15:58’
+</code></pre>
+                                            <h3>Percentage</h3>
+                                            <pre><code>points = 190
+total = 220
+print(‘Correct answers: {:.2%}’.format(points/total))
+Correct answers: 86.36%
+</code></pre>
+                                            <h3>Data Tables</h3>
+                                            <pre><code>width=8
+print(‘ decimal hex binary’)
+print(‘-’*27)
+for num in range(1,16):
+for base in ‘dXb’:
+print(‘{0:{width}{base}}’.format(num, base=base, width=width), end=’ ‘)
+print()
+Getting Input from the Command Line
+Python runs synchronously, all programs and processes will stop when listening for a user input.
+The input function shows a prompt to a user and waits for them to type ‘ENTER’.
+Scripts vs Programs
+Programming Script : A set of code that runs in a linear fashion.
+The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.
+</code></pre>
+                                            <p>
+                                                <strong>Python can be used to display html, css, and JS.</strong><br /><em
+                                                    >It is common to use Python as an API (Application Programming Interface)</em
+                                                >
+                                            </p>
+                                            <h4>Structured Data</h4>
+                                            <h4>Sequence : The most basic data structure in Python where the index determines the order.</h4>
+                                            <blockquote>
+                                                <p>
+                                                    List<br />
+                                                    Tuple<br />
+                                                    Range<br />
+                                                    Collections : Unordered data structures, hashable values.
+                                                </p>
+                                            </blockquote>
+                                            <hr />
+                                            <h4>Dictionaries Sets</h4>
+                                            <h4>Iterable : Generic name for a sequence or collection; any object that can be iterated through.</h4>
+                                            <h4>Can be mutable or immutable. Built In Data Types</h4>
+                                            <hr />
+                                            <h3>Lists are the python equivalent of arrays.</h3>
+                                            <pre><code>empty_list = []
+departments = [‘HR’,’Development’,’Sales’,’Finance’,’IT’,’Customer Support’]
+</code></pre>
+                                            <h3>You can instantiate</h3>
+                                            <pre><code>specials = list()
+</code></pre>
+                                            <h4>Test if a value is in a list.</h4>
+                                            <pre><code>print(1 in [1, 2, 3]) #&gt; True
+print(4 in [1, 2, 3]) #&gt; False
+# Tuples : Very similar to lists, but they are immutable
+</code></pre>
+                                            <h4>Instantiated with parentheses</h4>
+                                            <pre><code>time_blocks = (‘AM’,’PM’)
+</code></pre>
+                                            <h4>Sometimes instantiated without</h4>
+                                            <pre><code>colors = ‘red’,’blue’,’green’
+numbers = 1, 2, 3
+</code></pre>
+                                            <h4>Tuple() built in can be used to convert other data into a tuple</h4>
+                                            <pre><code>tuple(‘abc’) # returns (‘a’, ‘b’, ‘c’)
+tuple([1,2,3]) # returns (1, 2, 3)
+# Think of tuples as constant variables.
+</code></pre>
+                                            <h4>Ranges : A list of numbers which can’t be changed; often used with for loops.</h4>
+                                            <p><strong>Declared using one to three parameters</strong>.</p>
+                                            <blockquote>
+                                                <p>
+                                                    Start : opt. default 0, first # in sequence.<br />
+                                                    Stop : required next number past the last number in the sequence.<br />
+                                                    Step : opt. default 1, difference between each number in the sequence.
+                                                </p>
+                                            </blockquote>
+                                            <pre><code>range(5) # [0, 1, 2, 3, 4]
+range(1,5) # [1, 2, 3, 4]
+range(0, 25, 5) # [0, 5, 10, 15, 20]
+range(0) # [ ]
+for let (i = 0; i &lt; 5; i++)
+for let (i = 1; i &lt; 5; i++)
+for let (i = 0; i &lt; 25; i+=5)
+for let(i = 0; i = 0; i++)
+# Keep in mind that stop is not included in the range.
+</code></pre>
+                                            <h4>
+                                                Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the
+                                                dictionary.
+                                            </h4>
+                                            <h4>Mutable.</h4>
+                                            <pre><code>a = {‘one’:1, ‘two’:2, ‘three’:3}
+b = dict(one=1, two=2, three=3)
+c = dict([(‘two’, 2), (‘one’, 1), (‘three’, 3)])
+# a, b, and c are all equal
+</code></pre>
+                                            <p>
+                                                <strong><em>Declared with curly braces of the built in dict()</em></strong>
+                                            </p>
+                                            <blockquote>
+                                                <p>
+                                                    <em
+                                                        >Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values
+                                                        are the same the dictionaries are considered equal.</em
+                                                    >
+                                                </p>
+                                            </blockquote>
+                                            <p><strong>Use the in operator to see if a key exists in a dictionary.</strong></p>
+                                            <p>
+                                                <span class="graf-dropCap">S</span
+                                                ><strong>ets : Unordered collection of distinct objects; objects that need to be hashable.</strong>
+                                            </p>
+                                            <blockquote>
+                                                <p><em>Always be unique, duplicate items are auto dropped from the set.</em></p>
+                                            </blockquote>
+                                            <h4>Common Uses:</h4>
+                                            <blockquote>
+                                                <p>
+                                                    Removing Duplicates<br />
+                                                    Membership Testing<br />
+                                                    Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.
+                                                </p>
+                                            </blockquote>
+                                            <p>
+                                                <strong
+                                                    >Standard Set is mutable, Python has a immutable version called frozenset.<br />
+                                                    Sets created by putting comma seperated values inside braces:</strong
+                                                >
+                                            </p>
+                                            <pre><code>school_bag = {‘book’,’paper’,’pencil’,’pencil’,’book’,’book’,’book’,’eraser’}
+print(school_bag)
+</code></pre>
+                                            <h4>Also can use set constructor to automatically put it into a set.</h4>
+                                            <pre><code>letters = set(‘abracadabra’)
+print(letters)
+#Built-In Functions
+#Functions using iterables
+</code></pre>
+                                            <p>
+                                                <strong
+                                                    >filter(function, iterable) : creates new iterable of the same type which includes each item for which the
+                                                    function returns true.</strong
+                                                >
+                                            </p>
+                                            <p>
+                                                <strong
+                                                    >map(function, iterable) : creates new iterable of the same type which includes the result of calling the
+                                                    function on every item of the iterable.</strong
+                                                >
+                                            </p>
+                                            <p>
+                                                <strong
+                                                    >sorted(iterable, key=None, reverse=False) : creates a new sorted list from the items in the
+                                                    iterable.</strong
+                                                >
+                                            </p>
+                                            <p><strong>Output is always a list</strong></p>
+                                            <p><strong>key: opt function which coverts and item to a value to be compared.</strong></p>
+                                            <p><strong>reverse: optional boolean.</strong></p>
+                                            <p><strong>enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples</strong></p>
+                                            <pre><code>quarters = [‘First’, ‘Second’, ‘Third’, ‘Fourth’]
+print(enumerate(quarters))
+print(enumerate(quarters, start=1))
+</code></pre>
+                                            <h4>(0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)</h4>
+                                            <h4>(1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)</h4>
+                                            <blockquote>
+                                                <p>
+                                                    zip(*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided
+                                                    iterable.<br />
+                                                    Functions that analyze iterable
+                                                </p>
+                                            </blockquote>
+                                            <p><strong>len(iterable) : returns the count of the number of items.</strong></p>
+                                            <p><strong>max(*args, key=None) : returns the largest of two or more arguments.</strong></p>
+                                            <p><strong>max(iterable, key=None) : returns the largest item in the iterable.</strong></p>
+                                            <p>
+                                                <em
+                                                    >key optional function which converts an item to a value to be compared.<br />
+                                                    min works the same way as max</em
+                                                >
+                                            </p>
+                                            <p><strong>sum(iterable) : used with a list of numbers to generate the total.</strong></p>
+                                            <p>
+                                                <em>There is a faster way to concatenate an array of strings into one string, so do not use sum for that.</em>
+                                            </p>
+                                            <p><strong>any(iterable) : returns True if any items in the iterable are true.</strong></p>
+                                            <p><strong>all(iterable) : returns True is all items in the iterable are true.</strong></p>
+                                            <h3>Working with dictionaries</h3>
+                                            <p>
+                                                <strong
+                                                    >dir(dictionary) : returns the list of keys in the dictionary.<br />
+                                                    Working with sets</strong
+                                                >
+                                            </p>
+                                            <p>
+                                                <strong
+                                                    >Union : The pipe | operator or union(*sets) function can be used to produce a new set which is a
+                                                    combination of all elements in the provided set.</strong
+                                                >
+                                            </p>
+                                            <pre><code>a = {1, 2, 3}
+b = {2, 4, 6}
+print(a | b) # =&gt; {1, 2, 3, 4, 6}
+</code></pre>
+                                            <h4>
+                                                Intersection : The &amp; operator ca be used to produce a new set of only the elements that appear in all sets.
+                                            </h4>
+                                            <pre><code>a = {1, 2, 3}
+b = {2, 4, 6}
+print(a &amp; b) # =&gt; {2}
+Difference : The — operator can be used to produce a new set of only the elements that appear in the first set and NOT the others.
+</code></pre>
+                                            <p>
+                                                <strong
+                                                    >Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in
+                                                    exactly one set and not in both.</strong
+                                                >
+                                            </p>
+                                            <pre><code>a = {1, 2, 3}
+b = {2, 4, 6}
+print(a — b) # =&gt; {1, 3}
+print(b — a) # =&gt; {4, 6}
+print(a ^ b) # =&gt; {1, 3, 4, 6}
+</code></pre>
+                                            <hr />
+                                            <h3><strong>For Statements In python, there is only one for loop.</strong></h3>
+                                            <p>Always Includes:</p>
+                                            <blockquote>
+                                                <ol>
+                                                    <li>The for keyword</li>
+                                                    <li>A variable name</li>
+                                                    <li>The ‘in’ keyword</li>
+                                                    <li>An iterable of some kid</li>
+                                                    <li>A colon</li>
+                                                    <li>On the next line, an indented block of code called the for clause.</li>
+                                                </ol>
+                                            </blockquote>
+                                            <p><strong>You can use break and continue statements inside for loops as well.</strong></p>
+                                            <p><strong>You can use the range function as the iterable for the for loop.</strong></p>
+                                            <pre><code>print(‘My name is’)
+for i in range(5):
+print(‘Carlita Cinco (‘ + str(i) + ‘)’)
+
+total = 0
+for num in range(101):
+total += num
+print(total)
+Looping over a list in Python
+for c in [‘a’, ‘b’, ‘c’]:
+print(c)
+
+lst = [0, 1, 2, 3]
+for i in lst:
+print(i)
+</code></pre>
+                                            <p>
+                                                <strong
+                                                    ><em
+                                                        >Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices
+                                                        of the list.</em
+                                                    ></strong
+                                                >
+                                            </p>
+                                            <pre><code>supplies = [‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’]
+for i in range(len(supplies)):
+print(‘Index ‘ + str(i) + ‘ in supplies is: ‘ + supplies[i])
+</code></pre>
+                                            <p><strong>You can loop and destructure at the same time.</strong></p>
+                                            <pre><code>l = 1, 2], [3, 4], [5, 6
+for a, b in l:
+print(a, ‘, ‘, b)
+</code></pre>
+                                            <blockquote><p>Prints 1, 2</p></blockquote>
+                                            <blockquote><p>Prints 3, 4</p></blockquote>
+                                            <blockquote><p>Prints 5, 6</p></blockquote>
+                                            <p><strong>You can use values() and keys() to loop over dictionaries.</strong></p>
+                                            <pre><code>spam = {‘color’: ‘red’, ‘age’: 42}
+for v in spam.values():
+print(v)
+</code></pre>
+                                            <p><em>Prints red</em></p>
+                                            <p><em>Prints 42</em></p>
+                                            <pre><code>for k in spam.keys():
+print(k)
+</code></pre>
+                                            <p><em>Prints color</em></p>
+                                            <p><em>Prints age</em></p>
+                                            <p><strong>For loops can also iterate over both keys and values.</strong></p>
+                                            <p><strong>Getting tuples</strong></p>
+                                            <pre><code>for i in spam.items():
+print(i)
+</code></pre>
+                                            <p><em>Prints (‘color’, ‘red’)</em></p>
+                                            <p><em>Prints (‘age’, 42)</em></p>
+                                            <p><em>Destructuring to values</em></p>
+                                            <pre><code>for k, v in spam.items():
+print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
+</code></pre>
+                                            <p><em>Prints Key: age Value: 42</em></p>
+                                            <p><em>Prints Key: color Value: red</em></p>
+                                            <p><strong>Looping over string</strong></p>
+                                            <pre><code>for c in “abcdefg”:
+print(c)
+</code></pre>
+                                            <p>
+                                                <strong
+                                                    >When you order arguments within a function or function call, the args need to occur in a particular
+                                                    order:</strong
+                                                >
+                                            </p>
+                                            <p><em>formal positional args.</em></p>
+                                            <p>*args</p>
+                                            <p><em>keyword args with default values</em></p>
+                                            <p>**kwargs</p>
+                                            <pre><code>def example(arg_1, arg_2, *args, **kwargs):
+pass
+
+def example2(arg_1, arg_2, *args, kw_1=”shark”, kw_2=”blowfish”, **kwargs):
+pass
+</code></pre>
+                                            <hr />
+                                            <h3><strong>Importing in Python</strong></h3>
+                                            <p>
+                                                <strong>Modules are similar to packages in Node.js</strong><br />
+                                                Come in different types:
+                                            </p>
+                                            <p>Built-In,</p>
+                                            <p>Third-Party,</p>
+                                            <p>Custom.</p>
+                                            <p><strong>All loaded using import statements.</strong></p>
+                                            <hr />
+                                            <h3><strong>Terms</strong></h3>
+                                            <blockquote>
+                                                <p>
+                                                    module : Python code in a separate file.<br />
+                                                    package : Path to a directory that contains modules.<br /><a
+                                                        href="http://init.py"
+                                                        class="markup--anchor markup--blockquote-anchor"
+                                                        ><strong>init.py</strong></a
+                                                    > : Default file for a package.<br />
+                                                    submodule : Another file in a module’s folder.<br />
+                                                    function : Function in a module.
+                                                </p>
+                                            </blockquote>
+                                            <p>
+                                                <strong
+                                                    >A module can be any file but it is usually created by placing a special file init.py into a folder.
+                                                    pic</strong
+                                                >
+                                            </p>
+                                            <p><em>Try to avoid importing with wildcards in Python.</em></p>
+                                            <p><em>Use multiple lines for clarity when importing.</em></p>
+                                            <pre><code>from urllib.request import (
+HTTPDefaultErrorHandler as ErrorHandler,
+HTTPRedirectHandler as RedirectHandler,
+Request,
+pathname2url,
+url2pathname,
+urlopen,
+)
+</code></pre>
+                                            <hr />
+                                            <h3>Watching Out for Python 2</h3>
+                                            <p><strong>Python 3 removed &lt;&gt; and only uses !=</strong></p>
+                                            <p><strong>format() was introduced with P3</strong></p>
+                                            <p>
+                                                <strong
+                                                    >All strings in P3 are unicode and encoded.<br />
+                                                    md5 was removed.</strong
+                                                >
+                                            </p>
+                                            <p>
+                                                <strong
+                                                    >ConfigParser was renamed to configparser<br />
+                                                    sets were killed in favor of set() class.</strong
+                                                >
+                                            </p>
+                                            <h4><strong>print was a statement in P2, but is a function in P3.</strong></h4>
+                                            <h3>Topics revisited (in python syntax)</h3>
+                                            <h3>Cheat Sheet:</h3>
+                                            <h4>If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h4>
+                                            <p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
+                                            <p>
+                                                <a
+                                                    href="https://github.com/bgoonz"
+                                                    class="markup--anchor markup--mixtapeEmbed-anchor"
+                                                    title="https://github.com/bgoonz"
+                                                    ><strong>bgoonz — Overview</strong><br /><em
+                                                        >Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express |
+                                                        Sequelize…</em
+                                                    >github.com</a
+                                                ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+                                            </p>
+                                            <p>Or Checkout my personal Resource Site:</p>
+                                            <p>
+                                                <a
+                                                    href="https://goofy-euclid-1cd736.netlify.app/"
+                                                    class="markup--anchor markup--mixtapeEmbed-anchor"
+                                                    title="https://goofy-euclid-1cd736.netlify.app/"
+                                                    ><strong>a/A-Student-Resources</strong><br /><em>Edit description</em>goofy-euclid-1cd736.netlify.app</a
+                                                ><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+                                            </p>
+                                            <h3>Python Cheat Sheet:</h3>
+                                            <h3>If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:</h3>
+                                            <p>
+                                                <a
+                                                    href="https://gist.github.com/bgoonz"
+                                                    class="markup--anchor markup--mixtapeEmbed-anchor"
+                                                    title="https://gist.github.com/bgoonz"
+                                                    ><strong>bgoonz’s gists</strong><br /><em
+                                                        >Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS |
+                                                        Bootstrap | Python |…</em
+                                                    >gist.github.com</a
+                                                ><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+                                            </p>
+                                            <p>
+                                                <a
+                                                    href="https://github.com/bgoonz"
+                                                    class="markup--anchor markup--mixtapeEmbed-anchor"
+                                                    title="https://github.com/bgoonz"
+                                                    ><strong>bgoonz — Overview</strong><br /><em
+                                                        >Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express |
+                                                        Sequelize…</em
+                                                    >github.com</a
+                                                ><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+                                            </p>
+                                            <h3>Or Checkout my personal Resource Site:</h3>
+                                            <h3>Discover More:</h3>
+                                            <p>
+                                                <a
+                                                    href="https://bgoonz-blog.netlify.app/"
+                                                    class="markup--anchor markup--mixtapeEmbed-anchor"
+                                                    title="https://bgoonz-blog.netlify.app/"
+                                                    ><strong>Web-Dev-Hub</strong><br /><em
+                                                        >Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable
+                                                        method of…</em
+                                                    >bgoonz-blog.netlify.app</a
+                                                ><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+                                            </p>
+                                            <p>
+                                                By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+                                                <a href="https://medium.com/p/5cfdf3d2bdfb">March 6, 2021</a>.
+                                            </p>
+                                            <p>
+                                                <a
+                                                    href="https://medium.com/@bryanguner/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"
+                                                    class="p-canonical"
+                                                    >Canonical link</a
+                                                >
+                                            </p>
+                                            <p>Exported from <a href="https://medium.com">Medium</a> on July 13, 2021.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <nav id="page-nav" class="page-nav">
+                                    <div id="page-nav-inside" class="page-nav-inside sticky">
+                                        <h2 class="page-nav-title">Jump to Section</h2>
+                                        <div id="page-nav-link-container"></div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div id="search" class="inner"></div>
+                        </div>
+                    </main>
+                    <footer id="colophon" class="site-footer outer">
+                        <div class="inner">
+                            <div id="search"></div>
+                            <div class="site-footer-inside">
+                                <p class="site-info">
+                                    <span class="copyright">@bgoonz on almost every platform</span
+                                    ><a href="https://bryanguner.medium.com/" target="_blank" rel="noopener " class="button">Medium</a
+                                    ><a href="https://optimistic-lewin-8586ae.netlify.app/blm.zip" target="_blank" rel="noopener " class="button">BLM</a
+                                    ><a href="#" target="_blank" rel="noopener " class="button">Html Previewer</a
+                                    ><a href="https://github.com/bgoonz/PYTHON_PRAC" target="_blank" rel="noopener " class="button">Python</a>
+                                </p>
+                                <div id="search"></div>
+                                <div class="social-links">
+                                    <a href="https://twitter.com/bgooonz" target="_blank" rel="noopener " class="button button-icon"
+                                        ><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"
+                                            ></path></svg
+                                        ><span class="screen-reader-text">Twitter</span></a
+                                    ><a href="https://www.linkedin.com/in/bryan-guner-046199128/" target="_blank" rel="noopener " class="button button-icon"
+                                        ><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                            ></path></svg
+                                        ><span class="screen-reader-text">LinkedIn</span></a
+                                    ><a href="https://github.com/bgoonz" target="_blank" rel="noopener " class="button button-icon"
+                                        ><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                            ></path></svg
+                                        ><span class="screen-reader-text">GitHub</span></a
+                                    ><a
+                                        href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA"
+                                        target="_blank"
+                                        rel="noopener "
+                                        class="button button-icon"
+                                        ><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"
+                                            ></path></svg
+                                        ><span class="screen-reader-text">Youtube</span></a
+                                    ><a href="https://www.instagram.com/bgoonz/?hl=en" target="_blank" rel="noopener " class="button button-icon"
+                                        ><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 001.384 2.126A5.868 5.868 0 004.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 002.126-1.384 5.86 5.86 0 001.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 00-1.384-2.126A5.847 5.847 0 0019.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 01-.899 1.382 3.744 3.744 0 01-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 01-1.379-.899 3.644 3.644 0 01-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"
+                                            ></path></svg
+                                        ><span class="screen-reader-text">Instagram</span></a
+                                    ><a href="https://dev.to/bgoonz" target="_blank" rel="noopener " class="button button-icon"
+                                        ><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z"
+                                            ></path></svg
+                                        ><span class="screen-reader-text">dev.to</span></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div
+                id="gatsby-announcer"
+                style="
+                    position: absolute;
+                    top: 0;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);
+                    white-space: nowrap;
+                    border: 0;
+                "
+                aria-live="assertive"
+                aria-atomic="true"
+            ></div>
+        </div>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/page-load.js"></script>
+        <script src="/js/page-unload.js"></script>
+        <script id="gatsby-script-loader">
+            /*<![CDATA[*/ window.pagePath = '/docs/articles/python/'; /*]]>*/
+        </script>
+        <script id="gatsby-chunk-mapping">
+            /*<![CDATA[*/ window.___chunkMapping = {
+                polyfill: ['/polyfill-c5f50f2ad13861331c8a.js'],
+                app: ['/app-3c57265fe85c14101a0f.js'],
+                'component---src-templates-advanced-js': ['/component---src-templates-advanced-js-c66268766ef5c957450f.js'],
+                'component---src-templates-blog-js': ['/component---src-templates-blog-js-36eb4fae1add87ca6010.js'],
+                'component---src-templates-docs-js': ['/component---src-templates-docs-js-bf431cbe6f6b991ffc34.js'],
+                'component---src-templates-page-js': ['/component---src-templates-page-js-3811de6d35c8d5e9d800.js'],
+                'component---src-templates-post-js': ['/component---src-templates-post-js-d6ee8a7502d16baf00c6.js']
+            }; /*]]>*/
+        </script>
+        <script src="/polyfill-c5f50f2ad13861331c8a.js" nomodule=""></script>
+        <script src="/component---src-templates-docs-js-bf431cbe6f6b991ffc34.js" async=""></script>
+        <script src="/commons-6c0f9d5475e211c891a1.js" async=""></script>
+        <script src="/29107295-4796dbfd2443d7c4719f.js" async=""></script>
+        <script src="/styles-7d4153d260c0197f0043.js" async=""></script>
+        <script src="/app-3c57265fe85c14101a0f.js" async=""></script>
+        <script src="/framework-ee588a66ec21b993116b.js" async=""></script>
+        <script src="/webpack-runtime-48ba8ab5f614702dcefd.js" async=""></script>
+        <div id="search"></div>
+    </body>
+</html>
