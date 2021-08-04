@@ -13,7 +13,7 @@ export default function HTML(props) {
                 </noscript>
                 <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
                 {props.postBodyComponents}
-                <div id="search"></div>
+                
             </body>
         </html>
     );
