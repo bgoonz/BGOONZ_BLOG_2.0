@@ -3,6 +3,8 @@
     "description": "webdevhub",
     "version": "0.0.1",
     "license": "MIT",
+    "repository":"https://github.com/bgoonz/BGOONZ_BLOG_2.0.git",
+    "author":"Bryan Guner",
     "scripts": {
         "develop": "gatsby develop",
         "start": "npm run develop",
