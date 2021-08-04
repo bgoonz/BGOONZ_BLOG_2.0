@@ -327,3 +327,167 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+
+
+
+
+---
+---
+
+
+
+# Codebase:
+
+
+```
+
+bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
+.
+├── ./components
+│   ├── ./components/ActionLink.js    
+│   ├── ./components/CtaButtons.js    
+│   ├── ./components/DocsMenu.js      
+│   ├── ./components/DocsSubmenu.js   
+│   ├── ./components/Footer.js        
+│   ├── ./components/Header.js        
+│   ├── ./components/Icon.js
+│   ├── ./components/Layout.js        
+│   ├── ./components/SectionContent.js
+│   ├── ./components/SectionCta.js    
+│   ├── ./components/SectionDocs.js   
+│   ├── ./components/SectionGrid.js   
+│   ├── ./components/SectionHero.js   
+│   ├── ./components/Submenu.js
+│   ├── ./components/global.css
+│   └── ./components/index.js
+├── ./data
+│   └── ./data/doc_sections.yml
+├── ./hooks
+│   └── ./hooks/useScript.js
+├── ./html.js
+├── ./pages
+│   ├── ./pages/blog
+│   │   ├── ./pages/blog/blog-archive.md
+│   │   ├── ./pages/blog/blogwcomments.md
+│   │   ├── ./pages/blog/data-structures.md
+│   │   ├── ./pages/blog/index.md
+│   │   ├── ./pages/blog/my-medium.md
+│   │   ├── ./pages/blog/platform-docs.md
+│   │   ├── ./pages/blog/python-for-js-dev.md
+│   │   ├── ./pages/blog/python-resources.md
+│   │   └── ./pages/blog/web-scraping.md
+│   ├── ./pages/docs
+│   │   ├── ./pages/docs/about
+│   │   │   ├── ./pages/docs/about/index.md
+│   │   │   ├── ./pages/docs/about/me.md
+│   │   │   ├── ./pages/docs/about/node
+│   │   │   │   ├── ./pages/docs/about/node/install.md
+│   │   │   │   ├── ./pages/docs/about/node/intro.md
+│   │   │   │   ├── ./pages/docs/about/node/nodejs.md
+│   │   │   │   ├── ./pages/docs/about/node/nodevsbrowser.md
+│   │   │   │   ├── ./pages/docs/about/node/reading-files.md
+│   │   │   │   └── ./pages/docs/about/node/writing-files.md
+│   │   │   ├── ./pages/docs/about/npm.md
+│   │   │   └── ./pages/docs/about/resume.md
+│   │   ├── ./pages/docs/articles
+│   │   │   ├── ./pages/docs/articles/algo.md
+│   │   │   ├── ./pages/docs/articles/article-compilation.md
+│   │   │   ├── ./pages/docs/articles/basic-web-dev.md
+│   │   │   ├── ./pages/docs/articles/gallery.md
+│   │   │   ├── ./pages/docs/articles/index.md
+│   │   │   ├── ./pages/docs/articles/install.md
+│   │   │   ├── ./pages/docs/articles/intro.md
+│   │   │   ├── ./pages/docs/articles/python.md
+│   │   │   ├── ./pages/docs/articles/reading-files.md
+│   │   │   ├── ./pages/docs/articles/resources.md
+│   │   │   ├── ./pages/docs/articles/ten-jamstack-apis-to-checkout.md
+│   │   │   └── ./pages/docs/articles/writing-files.md
+│   │   ├── ./pages/docs/docs
+│   │   │   └── ./pages/docs/docs/tools
+│   │   │       └── ./pages/docs/docs/tools/file-types.md
+│   │   ├── ./pages/docs/faq
+│   │   │   ├── ./pages/docs/faq/contact.md
+│   │   │   └── ./pages/docs/faq/index.md
+│   │   ├── ./pages/docs/gallery.md
+│   │   ├── ./pages/docs/index.md
+│   │   ├── ./pages/docs/interact
+│   │   │   ├── ./pages/docs/interact/clock.md
+│   │   │   ├── ./pages/docs/interact/index.md
+│   │   │   └── ./pages/docs/interact/jupyter-notebooks.md
+│   │   ├── ./pages/docs/links
+│   │   │   ├── ./pages/docs/links/index.md
+│   │   │   ├── ./pages/docs/links/medium-links.md
+│   │   │   ├── ./pages/docs/links/my-websites.md
+│   │   │   └── ./pages/docs/links/social.md
+│   │   ├── ./pages/docs/quick-reference
+│   │   │   ├── ./pages/docs/quick-reference/Emmet.md
+│   │   │   ├── ./pages/docs/quick-reference/docs.md
+│   │   │   ├── ./pages/docs/quick-reference/index.md
+│   │   │   ├── ./pages/docs/quick-reference/installation.md
+│   │   │   └── ./pages/docs/quick-reference/new-repo-instructions.md
+│   │   ├── ./pages/docs/react
+│   │   │   ├── ./pages/docs/react/createReactApp.md
+│   │   │   ├── ./pages/docs/react/index.md
+│   │   │   └── ./pages/docs/react/react2.md
+│   │   ├── ./pages/docs/react-in-depth.md
+│   │   ├── ./pages/docs/sitemap.md
+│   │   └── ./pages/docs/tools
+│   │       ├── ./pages/docs/tools/index.md
+│   │       ├── ./pages/docs/tools/notes-template.md
+│   │       ├── ./pages/docs/tools/plug-ins.md
+│   │       └── ./pages/docs/tools/vscode.md
+│   ├── ./pages/index.md
+│   ├── ./pages/notes-template.md
+│   ├── ./pages/review.md
+│   └── ./pages/showcase.md
+├── ./sass
+│   ├── ./sass/imports
+│   │   ├── ./sass/imports/_animations.scss
+│   │   ├── ./sass/imports/_buttons.scss
+│   │   ├── ./sass/imports/_docs.scss
+│   │   ├── ./sass/imports/_footer.scss
+│   │   ├── ./sass/imports/_forms.scss
+│   │   ├── ./sass/imports/_functions.scss
+│   │   ├── ./sass/imports/_general.scss
+│   │   ├── ./sass/imports/_header.scss
+│   │   ├── ./sass/imports/_helpers.scss
+│   │   ├── ./sass/imports/_icons.scss
+│   │   ├── ./sass/imports/_palettes.scss
+│   │   ├── ./sass/imports/_posts.scss
+│   │   ├── ./sass/imports/_prism.scss
+│   │   ├── ./sass/imports/_reset.scss
+│   │   ├── ./sass/imports/_sections.scss
+│   │   ├── ./sass/imports/_structure.scss
+│   │   ├── ./sass/imports/_tables.scss
+│   │   └── ./sass/imports/_variables.scss
+│   └── ./sass/main.scss
+├── ./templates
+│   ├── ./templates/advanced.js
+│   ├── ./templates/blog.js
+│   ├── ./templates/docs.js
+│   ├── ./templates/page.js
+│   └── ./templates/post.js
+└── ./utils
+    ├── ./utils/attribute.js
+    ├── ./utils/classNames.js
+    ├── ./utils/cycler.js
+    ├── ./utils/getData.js
+    ├── ./utils/getPage.js
+    ├── ./utils/getPageByFilePath.js
+    ├── ./utils/getPages.js
+    ├── ./utils/htmlToReact.js
+    ├── ./utils/index.js
+    ├── ./utils/link.js
+    ├── ./utils/markdownify.js
+    ├── ./utils/pathJoin.js
+    ├── ./utils/toStyleObj.js
+    ├── ./utils/toUrl.js
+    └── ./utils/withPrefix.js
+
+21 directories, 119 files
+bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
+
+
+
+```
