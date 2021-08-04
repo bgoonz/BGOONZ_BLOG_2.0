@@ -3,31 +3,31 @@ title: Webscraping w nodejs
 date: '2021-07-26'
 image: images/web-development.gif
 seo:
-    title: webscraping
-    description: There are a lot of use cases for web scraping
-    extra:
-        - name: 'og:type'
-          value: article
-          keyName: property
-        - name: 'og:title'
-          value: Platform Docs
-          keyName: property
-        - name: 'og:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-          keyName: property
-        - name: 'og:image'
-          value: images/curious-europa.gif
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:card'
-          value: summary_large_image
-        - name: 'twitter:title'
-          value: Platform Docs
-        - name: 'twitter:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-        - name: 'twitter:image'
-          value: images/web-development.gif
-          relativeUrl: true
+  title: webscraping
+  description: There are a lot of use cases for web scraping
+  extra:
+    - name: 'og:type'
+      value: article
+      keyName: property
+    - name: 'og:title'
+      value: Platform Docs
+      keyName: property
+    - name: 'og:description'
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      keyName: property
+    - name: 'og:image'
+      value: images/curious-europa.gif
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Platform Docs
+    - name: 'twitter:description'
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    - name: 'twitter:image'
+      value: images/web-development.gif
+      relativeUrl: true
 template: post
 thumb_image: images/blue-plankton.png
 ---
