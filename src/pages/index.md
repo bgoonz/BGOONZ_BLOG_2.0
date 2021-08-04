@@ -204,7 +204,11 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |
-        
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Excel To Markdown Table" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bgoonz/pen/JjNaPpL">
+  Excel To Markdown Table</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
         <iframe class="block-content" width="100%     width="800" height="575"
            src="https://iframeshowcase.netlify.app/" title="YouTube video
            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
