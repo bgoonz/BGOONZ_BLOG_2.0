@@ -42,15 +42,6 @@ template: docs
 <br>
 <br>
 <br>
-<br>
-<h1> Spotify Superimposed Over Video </h1>
-<iframe title="Video Background 1" src="https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-
-See the Pen <a href="https://codepen.io/bgoonz/pen/BaRLKBd">
-Video Background 1</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
-on <a href="https://codepen.io">CodePen</a>.
-
-</iframe>
 
 <br>
 <br>

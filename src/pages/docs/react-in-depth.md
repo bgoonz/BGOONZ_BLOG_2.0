@@ -1855,7 +1855,7 @@ Let’s experiment with this feature so that you can see how the Create React Ap
 
 Add an .env file to the root of your Create React App project. Define an environment variable named REACT_APP_TITLE:
 
-Remember that environment variables need to be prefixed with REACT_APP_ for Create React App to process them. After defining your environment variable, you can refer to it within JSX using an expression and process.env:
+Remember that environment variables need to be prefixed with REACT*APP* for Create React App to process them. After defining your environment variable, you can refer to it within JSX using an expression and process.env:
 
 Environment variables can also be referred to in regular JavaScript code:
 
