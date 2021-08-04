@@ -1,1 +1,1370 @@
-{"expireTime":9007200882761075000,"key":"transformer-remark-markdown-html-ast-43c9e9cff19e0536dced15a79a6152f3--","val":{"type":"root","children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!","position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":130,"offset":130}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":130,"offset":130}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.","position":{"start":{"line":4,"column":1,"offset":132},"end":{"line":4,"column":133,"offset":264}}}],"position":{"start":{"line":4,"column":1,"offset":132},"end":{"line":4,"column":133,"offset":264}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A Node.js app is run in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.","position":{"start":{"line":6,"column":1,"offset":266},"end":{"line":6,"column":351,"offset":616}}}],"position":{"start":{"line":6,"column":1,"offset":266},"end":{"line":6,"column":351,"offset":616}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back.","position":{"start":{"line":8,"column":1,"offset":618},"end":{"line":8,"column":239,"offset":856}}}],"position":{"start":{"line":8,"column":1,"offset":618},"end":{"line":8,"column":239,"offset":856}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread concurrency, which could be a significant source of bugs.","position":{"start":{"line":10,"column":1,"offset":858},"end":{"line":10,"column":195,"offset":1052}}}],"position":{"start":{"line":10,"column":1,"offset":858},"end":{"line":10,"column":195,"offset":1052}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side code in addition to the client-side code without the need to learn a completely different language.","position":{"start":{"line":12,"column":1,"offset":1054},"end":{"line":12,"column":247,"offset":1300}}}],"position":{"start":{"line":12,"column":1,"offset":1054},"end":{"line":12,"column":247,"offset":1300}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"In Node.js the new ECMAScript standards can be used without problems, as you don't have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.","position":{"start":{"line":14,"column":1,"offset":1302},"end":{"line":14,"column":323,"offset":1624}}}],"position":{"start":{"line":14,"column":1,"offset":1302},"end":{"line":14,"column":323,"offset":1624}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"A Vast Number of Libraries","position":{"start":{"line":16,"column":4,"offset":1629},"end":{"line":16,"column":30,"offset":1655}}}],"position":{"start":{"line":16,"column":1,"offset":1626},"end":{"line":16,"column":30,"offset":1655}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"npm with its simple structure helped the ecosystem of Node.js proliferate, and now the npm registry hosts over 1,000,000 open source packages you can freely use.","position":{"start":{"line":18,"column":1,"offset":1657},"end":{"line":18,"column":162,"offset":1818}}}],"position":{"start":{"line":18,"column":1,"offset":1657},"end":{"line":18,"column":162,"offset":1818}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"An Example Node.js Application","position":{"start":{"line":20,"column":4,"offset":1823},"end":{"line":20,"column":34,"offset":1853}}}],"position":{"start":{"line":20,"column":1,"offset":1820},"end":{"line":20,"column":34,"offset":1853}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The most common example Hello World of Node.js is a web server:","position":{"start":{"line":22,"column":1,"offset":1855},"end":{"line":22,"column":64,"offset":1918}}}],"position":{"start":{"line":22,"column":1,"offset":1855},"end":{"line":22,"column":64,"offset":1918}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe\n  title=\"Hello world web server\"\n  src=\"https://glitch.com/embed/#!/embed/nodejs-dev-0001-01?path=server.js&previewSize=30&attributionHidden=true&sidebarCollapsed=true\"\n  alt=\"nodejs-dev-0001-01 on Glitch\"\n  style=\"height: 400px; width: 100%; border: 0;\">\n</iframe>","position":{"start":{"line":24,"column":1,"offset":1920},"end":{"line":29,"column":10,"offset":2193}}},{"type":"text","value":"\n"},{"type":"raw","value":"<!--```js\nconst http = require('http')\n\nconst hostname = '127.0.0.1'\nconst port = 3000\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200\n  res.setHeader('Content-Type', 'text/plain')\n  res.end('Hello World\\n')\n})\n\nserver.listen(port, hostname, () => {\n  console.log(`Server running at http://${hostname}:${port}/`)\n})\n```\n\nTo run this snippet, save it as a `server.js` file and run `node server.js` in your terminal.-->","position":{"start":{"line":31,"column":1,"offset":2195},"end":{"line":48,"column":97,"offset":2637}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This code first includes the Node.js ","position":{"start":{"line":50,"column":1,"offset":2639},"end":{"line":50,"column":38,"offset":2676}}},{"type":"element","tagName":"a","properties":{"href":"https://nodejs.org/api/http.html"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"http"}],"position":{"start":{"line":50,"column":39,"offset":2677},"end":{"line":50,"column":45,"offset":2683}}},{"type":"text","value":" module","position":{"start":{"line":50,"column":45,"offset":2683},"end":{"line":50,"column":52,"offset":2690}}}],"position":{"start":{"line":50,"column":38,"offset":2676},"end":{"line":50,"column":87,"offset":2725}}},{"type":"text","value":".","position":{"start":{"line":50,"column":87,"offset":2725},"end":{"line":50,"column":88,"offset":2726}}}],"position":{"start":{"line":50,"column":1,"offset":2639},"end":{"line":50,"column":88,"offset":2726}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Node.js has a fantastic ","position":{"start":{"line":52,"column":1,"offset":2728},"end":{"line":52,"column":25,"offset":2752}}},{"type":"element","tagName":"a","properties":{"href":"https://nodejs.org/api/"},"children":[{"type":"text","value":"standard library","position":{"start":{"line":52,"column":26,"offset":2753},"end":{"line":52,"column":42,"offset":2769}}}],"position":{"start":{"line":52,"column":25,"offset":2752},"end":{"line":52,"column":68,"offset":2795}}},{"type":"text","value":", including first-class support for networking.","position":{"start":{"line":52,"column":68,"offset":2795},"end":{"line":52,"column":115,"offset":2842}}}],"position":{"start":{"line":52,"column":1,"offset":2728},"end":{"line":52,"column":115,"offset":2842}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The ","position":{"start":{"line":54,"column":1,"offset":2844},"end":{"line":54,"column":5,"offset":2848}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"createServer()"}],"position":{"start":{"line":54,"column":5,"offset":2848},"end":{"line":54,"column":21,"offset":2864}}},{"type":"text","value":" method of ","position":{"start":{"line":54,"column":21,"offset":2864},"end":{"line":54,"column":32,"offset":2875}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"http"}],"position":{"start":{"line":54,"column":32,"offset":2875},"end":{"line":54,"column":38,"offset":2881}}},{"type":"text","value":" creates a new HTTP server and returns it.","position":{"start":{"line":54,"column":38,"offset":2881},"end":{"line":54,"column":80,"offset":2923}}}],"position":{"start":{"line":54,"column":1,"offset":2844},"end":{"line":54,"column":80,"offset":2923}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The server is set to listen on the specified port and host name. When the server is ready, the callback function is called, in this case informing us that the server is running.","position":{"start":{"line":56,"column":1,"offset":2925},"end":{"line":56,"column":178,"offset":3102}}}],"position":{"start":{"line":56,"column":1,"offset":2925},"end":{"line":56,"column":178,"offset":3102}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Whenever a new request is received, the ","position":{"start":{"line":58,"column":1,"offset":3104},"end":{"line":58,"column":41,"offset":3144}}},{"type":"element","tagName":"a","properties":{"href":"https://nodejs.org/api/http.html#http_event_request"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"request"}],"position":{"start":{"line":58,"column":42,"offset":3145},"end":{"line":58,"column":51,"offset":3154}}},{"type":"text","value":" event","position":{"start":{"line":58,"column":51,"offset":3154},"end":{"line":58,"column":57,"offset":3160}}}],"position":{"start":{"line":58,"column":41,"offset":3144},"end":{"line":58,"column":111,"offset":3214}}},{"type":"text","value":" is called, providing two objects: a request (an ","position":{"start":{"line":58,"column":111,"offset":3214},"end":{"line":58,"column":160,"offset":3263}}},{"type":"element","tagName":"a","properties":{"href":"https://nodejs.org/api/http.html#http_class_http_incomingmessage"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"http.IncomingMessage"}],"position":{"start":{"line":58,"column":161,"offset":3264},"end":{"line":58,"column":183,"offset":3286}}}],"position":{"start":{"line":58,"column":160,"offset":3263},"end":{"line":58,"column":250,"offset":3353}}},{"type":"text","value":" object) and a response (an ","position":{"start":{"line":58,"column":250,"offset":3353},"end":{"line":58,"column":278,"offset":3381}}},{"type":"element","tagName":"a","properties":{"href":"https://nodejs.org/api/http.html#http_class_http_serverresponse"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"http.ServerResponse"}],"position":{"start":{"line":58,"column":279,"offset":3382},"end":{"line":58,"column":300,"offset":3403}}}],"position":{"start":{"line":58,"column":278,"offset":3381},"end":{"line":58,"column":366,"offset":3469}}},{"type":"text","value":" object).","position":{"start":{"line":58,"column":366,"offset":3469},"end":{"line":58,"column":375,"offset":3478}}}],"position":{"start":{"line":58,"column":1,"offset":3104},"end":{"line":58,"column":375,"offset":3478}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Those 2 objects are essential to handle the HTTP call.","position":{"start":{"line":60,"column":1,"offset":3480},"end":{"line":60,"column":55,"offset":3534}}}],"position":{"start":{"line":60,"column":1,"offset":3480},"end":{"line":60,"column":55,"offset":3534}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The first provides the request details. In this simple example, this is not used, but you could access the request headers and request data.","position":{"start":{"line":62,"column":1,"offset":3536},"end":{"line":62,"column":141,"offset":3676}}}],"position":{"start":{"line":62,"column":1,"offset":3536},"end":{"line":62,"column":141,"offset":3676}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The second is used to return data to the caller.","position":{"start":{"line":64,"column":1,"offset":3678},"end":{"line":64,"column":49,"offset":3726}}}],"position":{"start":{"line":64,"column":1,"offset":3678},"end":{"line":64,"column":49,"offset":3726}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"In this case with:","position":{"start":{"line":66,"column":1,"offset":3728},"end":{"line":66,"column":19,"offset":3746}}}],"position":{"start":{"line":66,"column":1,"offset":3728},"end":{"line":66,"column":19,"offset":3746}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-js"]},"children":[{"type":"text","value":"res.statusCode = 200;\n"}],"position":{"start":{"line":68,"column":1,"offset":3748},"end":{"line":70,"column":4,"offset":3779}}}],"position":{"start":{"line":68,"column":1,"offset":3748},"end":{"line":70,"column":4,"offset":3779}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"we set the statusCode property to 200, to indicate a successful response.","position":{"start":{"line":72,"column":1,"offset":3781},"end":{"line":72,"column":74,"offset":3854}}}],"position":{"start":{"line":72,"column":1,"offset":3781},"end":{"line":72,"column":74,"offset":3854}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"We set the Content-Type header:","position":{"start":{"line":74,"column":1,"offset":3856},"end":{"line":74,"column":32,"offset":3887}}}],"position":{"start":{"line":74,"column":1,"offset":3856},"end":{"line":74,"column":32,"offset":3887}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-js"]},"children":[{"type":"text","value":"res.setHeader('Content-Type', 'text/plain');\n"}],"position":{"start":{"line":76,"column":1,"offset":3889},"end":{"line":78,"column":4,"offset":3943}}}],"position":{"start":{"line":76,"column":1,"offset":3889},"end":{"line":78,"column":4,"offset":3943}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"and we close the response, adding the content as an argument to ","position":{"start":{"line":80,"column":1,"offset":3945},"end":{"line":80,"column":65,"offset":4009}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"end()"}],"position":{"start":{"line":80,"column":65,"offset":4009},"end":{"line":80,"column":72,"offset":4016}}},{"type":"text","value":":","position":{"start":{"line":80,"column":72,"offset":4016},"end":{"line":80,"column":73,"offset":4017}}}],"position":{"start":{"line":80,"column":1,"offset":3945},"end":{"line":80,"column":73,"offset":4017}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-js"]},"children":[{"type":"text","value":"res.end('Hello World\\n');\n"}],"position":{"start":{"line":82,"column":1,"offset":4019},"end":{"line":84,"column":4,"offset":4054}}}],"position":{"start":{"line":82,"column":1,"offset":4019},"end":{"line":84,"column":4,"offset":4054}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"Node.js Frameworks and Tools","position":{"start":{"line":86,"column":4,"offset":4059},"end":{"line":86,"column":32,"offset":4087}}}],"position":{"start":{"line":86,"column":1,"offset":4056},"end":{"line":86,"column":32,"offset":4087}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Node.js is a low-level platform. In order to make things easy and exciting for developers, thousands of libraries were built upon Node.js by the community.","position":{"start":{"line":88,"column":1,"offset":4089},"end":{"line":88,"column":156,"offset":4244}}}],"position":{"start":{"line":88,"column":1,"offset":4089},"end":{"line":88,"column":156,"offset":4244}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Many of those established over time as popular options. Here is a non-comprehensive list of the ones worth learning:","position":{"start":{"line":90,"column":1,"offset":4246},"end":{"line":90,"column":117,"offset":4362}}}],"position":{"start":{"line":90,"column":1,"offset":4246},"end":{"line":90,"column":117,"offset":4362}}},{"type":"text","value":"\n"},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://adonisjs.com/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"AdonisJs","position":{"start":{"line":92,"column":8,"offset":4371},"end":{"line":92,"column":16,"offset":4379}}}],"position":{"start":{"line":92,"column":6,"offset":4369},"end":{"line":92,"column":18,"offset":4381}}}],"position":{"start":{"line":92,"column":5,"offset":4368},"end":{"line":92,"column":42,"offset":4405}}},{"type":"text","value":": A full-stack framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.","position":{"start":{"line":92,"column":42,"offset":4405},"end":{"line":92,"column":186,"offset":4549}}}],"position":{"start":{"line":92,"column":1,"offset":4364},"end":{"line":92,"column":186,"offset":4549}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://expressjs.com/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Express","position":{"start":{"line":93,"column":8,"offset":4557},"end":{"line":93,"column":15,"offset":4564}}}],"position":{"start":{"line":93,"column":6,"offset":4555},"end":{"line":93,"column":17,"offset":4566}}}],"position":{"start":{"line":93,"column":5,"offset":4554},"end":{"line":93,"column":42,"offset":4591}}},{"type":"text","value":": It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.","position":{"start":{"line":93,"column":42,"offset":4591},"end":{"line":93,"column":225,"offset":4774}}}],"position":{"start":{"line":93,"column":1,"offset":4550},"end":{"line":93,"column":225,"offset":4774}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://fastify.io/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Fastify","position":{"start":{"line":94,"column":8,"offset":4782},"end":{"line":94,"column":15,"offset":4789}}}],"position":{"start":{"line":94,"column":6,"offset":4780},"end":{"line":94,"column":17,"offset":4791}}}],"position":{"start":{"line":94,"column":5,"offset":4779},"end":{"line":94,"column":39,"offset":4813}}},{"type":"text","value":": A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js web frameworks.","position":{"start":{"line":94,"column":39,"offset":4813},"end":{"line":94,"column":228,"offset":5002}}}],"position":{"start":{"line":94,"column":1,"offset":4775},"end":{"line":94,"column":228,"offset":5002}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://www.gatsbyjs.com/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Gatsby","position":{"start":{"line":95,"column":8,"offset":5010},"end":{"line":95,"column":14,"offset":5016}}}],"position":{"start":{"line":95,"column":6,"offset":5008},"end":{"line":95,"column":16,"offset":5018}}}],"position":{"start":{"line":95,"column":5,"offset":5007},"end":{"line":95,"column":44,"offset":5046}}},{"type":"text","value":": A ","position":{"start":{"line":95,"column":44,"offset":5046},"end":{"line":95,"column":48,"offset":5050}}},{"type":"element","tagName":"a","properties":{"href":"https://reactjs.org/"},"children":[{"type":"text","value":"React","position":{"start":{"line":95,"column":49,"offset":5051},"end":{"line":95,"column":54,"offset":5056}}}],"position":{"start":{"line":95,"column":48,"offset":5050},"end":{"line":95,"column":77,"offset":5079}}},{"type":"text","value":"-based, ","position":{"start":{"line":95,"column":77,"offset":5079},"end":{"line":95,"column":85,"offset":5087}}},{"type":"element","tagName":"a","properties":{"href":"https://graphql.org/"},"children":[{"type":"text","value":"GraphQL","position":{"start":{"line":95,"column":86,"offset":5088},"end":{"line":95,"column":93,"offset":5095}}}],"position":{"start":{"line":95,"column":85,"offset":5087},"end":{"line":95,"column":116,"offset":5118}}},{"type":"text","value":" powered, static site generator with a very rich ecosystem of plugins and starters.","position":{"start":{"line":95,"column":116,"offset":5118},"end":{"line":95,"column":199,"offset":5201}}}],"position":{"start":{"line":95,"column":1,"offset":5003},"end":{"line":95,"column":199,"offset":5201}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://hapijs.com"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"hapi","position":{"start":{"line":96,"column":8,"offset":5209},"end":{"line":96,"column":12,"offset":5213}}}],"position":{"start":{"line":96,"column":6,"offset":5207},"end":{"line":96,"column":14,"offset":5215}}}],"position":{"start":{"line":96,"column":5,"offset":5206},"end":{"line":96,"column":35,"offset":5236}}},{"type":"text","value":": A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.","position":{"start":{"line":96,"column":35,"offset":5236},"end":{"line":96,"column":213,"offset":5414}}}],"position":{"start":{"line":96,"column":1,"offset":5202},"end":{"line":96,"column":213,"offset":5414}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"http://koajs.com/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"koa","position":{"start":{"line":97,"column":8,"offset":5422},"end":{"line":97,"column":11,"offset":5425}}}],"position":{"start":{"line":97,"column":6,"offset":5420},"end":{"line":97,"column":13,"offset":5427}}}],"position":{"start":{"line":97,"column":5,"offset":5419},"end":{"line":97,"column":33,"offset":5447}}},{"type":"text","value":": It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatible changes without disrupting the existing community.","position":{"start":{"line":97,"column":33,"offset":5447},"end":{"line":97,"column":266,"offset":5680}}}],"position":{"start":{"line":97,"column":1,"offset":5415},"end":{"line":97,"column":266,"offset":5680}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://loopback.io/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Loopback.io","position":{"start":{"line":98,"column":8,"offset":5688},"end":{"line":98,"column":19,"offset":5699}}}],"position":{"start":{"line":98,"column":6,"offset":5686},"end":{"line":98,"column":21,"offset":5701}}}],"position":{"start":{"line":98,"column":5,"offset":5685},"end":{"line":98,"column":44,"offset":5724}}},{"type":"text","value":": Makes it easy to build modern applications that require complex integrations.","position":{"start":{"line":98,"column":44,"offset":5724},"end":{"line":98,"column":123,"offset":5803}}}],"position":{"start":{"line":98,"column":1,"offset":5681},"end":{"line":98,"column":123,"offset":5803}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://meteor.com"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Meteor","position":{"start":{"line":99,"column":8,"offset":5811},"end":{"line":99,"column":14,"offset":5817}}}],"position":{"start":{"line":99,"column":6,"offset":5809},"end":{"line":99,"column":16,"offset":5819}}}],"position":{"start":{"line":99,"column":5,"offset":5808},"end":{"line":99,"column":37,"offset":5840}}},{"type":"text","value":": An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs ","position":{"start":{"line":99,"column":37,"offset":5840},"end":{"line":99,"column":289,"offset":6092}}},{"type":"element","tagName":"a","properties":{"href":"https://reactjs.org/"},"children":[{"type":"text","value":"React","position":{"start":{"line":99,"column":290,"offset":6093},"end":{"line":99,"column":295,"offset":6098}}}],"position":{"start":{"line":99,"column":289,"offset":6092},"end":{"line":99,"column":318,"offset":6121}}},{"type":"text","value":", ","position":{"start":{"line":99,"column":318,"offset":6121},"end":{"line":99,"column":320,"offset":6123}}},{"type":"element","tagName":"a","properties":{"href":"https://vuejs.org/"},"children":[{"type":"text","value":"Vue","position":{"start":{"line":99,"column":321,"offset":6124},"end":{"line":99,"column":324,"offset":6127}}}],"position":{"start":{"line":99,"column":320,"offset":6123},"end":{"line":99,"column":345,"offset":6148}}},{"type":"text","value":", and ","position":{"start":{"line":99,"column":345,"offset":6148},"end":{"line":99,"column":351,"offset":6154}}},{"type":"element","tagName":"a","properties":{"href":"https://angular.io"},"children":[{"type":"text","value":"Angular","position":{"start":{"line":99,"column":352,"offset":6155},"end":{"line":99,"column":359,"offset":6162}}}],"position":{"start":{"line":99,"column":351,"offset":6154},"end":{"line":99,"column":380,"offset":6183}}},{"type":"text","value":". Can be used to create mobile apps as well.","position":{"start":{"line":99,"column":380,"offset":6183},"end":{"line":99,"column":424,"offset":6227}}}],"position":{"start":{"line":99,"column":1,"offset":5804},"end":{"line":99,"column":424,"offset":6227}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://github.com/zeit/micro"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Micro","position":{"start":{"line":100,"column":8,"offset":6235},"end":{"line":100,"column":13,"offset":6240}}}],"position":{"start":{"line":100,"column":6,"offset":6233},"end":{"line":100,"column":15,"offset":6242}}}],"position":{"start":{"line":100,"column":5,"offset":6232},"end":{"line":100,"column":47,"offset":6274}}},{"type":"text","value":": It provides a very lightweight server to create asynchronous HTTP microservices.","position":{"start":{"line":100,"column":47,"offset":6274},"end":{"line":100,"column":129,"offset":6356}}}],"position":{"start":{"line":100,"column":1,"offset":6228},"end":{"line":100,"column":129,"offset":6356}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://nestjs.com/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"NestJS","position":{"start":{"line":101,"column":8,"offset":6364},"end":{"line":101,"column":14,"offset":6370}}}],"position":{"start":{"line":101,"column":6,"offset":6362},"end":{"line":101,"column":16,"offset":6372}}}],"position":{"start":{"line":101,"column":5,"offset":6361},"end":{"line":101,"column":38,"offset":6394}}},{"type":"text","value":": A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.","position":{"start":{"line":101,"column":38,"offset":6394},"end":{"line":101,"column":177,"offset":6533}}}],"position":{"start":{"line":101,"column":1,"offset":6357},"end":{"line":101,"column":177,"offset":6533}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://nextjs.org/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Next.js","position":{"start":{"line":102,"column":8,"offset":6541},"end":{"line":102,"column":15,"offset":6548}}}],"position":{"start":{"line":102,"column":6,"offset":6539},"end":{"line":102,"column":17,"offset":6550}}}],"position":{"start":{"line":102,"column":5,"offset":6538},"end":{"line":102,"column":39,"offset":6572}}},{"type":"text","value":": ","position":{"start":{"line":102,"column":39,"offset":6572},"end":{"line":102,"column":41,"offset":6574}}},{"type":"element","tagName":"a","properties":{"href":"https://reactjs.org"},"children":[{"type":"text","value":"React","position":{"start":{"line":102,"column":42,"offset":6575},"end":{"line":102,"column":47,"offset":6580}}}],"position":{"start":{"line":102,"column":41,"offset":6574},"end":{"line":102,"column":69,"offset":6602}}},{"type":"text","value":" framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.","position":{"start":{"line":102,"column":69,"offset":6602},"end":{"line":102,"column":271,"offset":6804}}}],"position":{"start":{"line":102,"column":1,"offset":6534},"end":{"line":102,"column":271,"offset":6804}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://nx.dev/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Nx","position":{"start":{"line":103,"column":8,"offset":6812},"end":{"line":103,"column":10,"offset":6814}}}],"position":{"start":{"line":103,"column":6,"offset":6810},"end":{"line":103,"column":12,"offset":6816}}}],"position":{"start":{"line":103,"column":5,"offset":6809},"end":{"line":103,"column":30,"offset":6834}}},{"type":"text","value":": A toolkit for full-stack monorepo development using NestJS, Express, ","position":{"start":{"line":103,"column":30,"offset":6834},"end":{"line":103,"column":101,"offset":6905}}},{"type":"element","tagName":"a","properties":{"href":"https://reactjs.org/"},"children":[{"type":"text","value":"React","position":{"start":{"line":103,"column":102,"offset":6906},"end":{"line":103,"column":107,"offset":6911}}}],"position":{"start":{"line":103,"column":101,"offset":6905},"end":{"line":103,"column":130,"offset":6934}}},{"type":"text","value":", ","position":{"start":{"line":103,"column":130,"offset":6934},"end":{"line":103,"column":132,"offset":6936}}},{"type":"element","tagName":"a","properties":{"href":"https://angular.io"},"children":[{"type":"text","value":"Angular","position":{"start":{"line":103,"column":133,"offset":6937},"end":{"line":103,"column":140,"offset":6944}}}],"position":{"start":{"line":103,"column":132,"offset":6936},"end":{"line":103,"column":161,"offset":6965}}},{"type":"text","value":", and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!","position":{"start":{"line":103,"column":161,"offset":6965},"end":{"line":103,"column":297,"offset":7101}}}],"position":{"start":{"line":103,"column":1,"offset":6805},"end":{"line":103,"column":297,"offset":7101}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://sapper.svelte.dev/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Sapper","position":{"start":{"line":104,"column":8,"offset":7109},"end":{"line":104,"column":14,"offset":7115}}}],"position":{"start":{"line":104,"column":6,"offset":7107},"end":{"line":104,"column":16,"offset":7117}}}],"position":{"start":{"line":104,"column":5,"offset":7106},"end":{"line":104,"column":45,"offset":7146}}},{"type":"text","value":": Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!","position":{"start":{"line":104,"column":45,"offset":7146},"end":{"line":104,"column":212,"offset":7313}}}],"position":{"start":{"line":104,"column":1,"offset":7102},"end":{"line":104,"column":212,"offset":7313}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://socket.io/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Socket.io","position":{"start":{"line":105,"column":8,"offset":7321},"end":{"line":105,"column":17,"offset":7330}}}],"position":{"start":{"line":105,"column":6,"offset":7319},"end":{"line":105,"column":19,"offset":7332}}}],"position":{"start":{"line":105,"column":5,"offset":7318},"end":{"line":105,"column":40,"offset":7353}}},{"type":"text","value":": A real-time communication engine to build network applications.","position":{"start":{"line":105,"column":40,"offset":7353},"end":{"line":105,"column":105,"offset":7418}}}],"position":{"start":{"line":105,"column":1,"offset":7314},"end":{"line":105,"column":105,"offset":7418}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://strapi.io/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Strapi","position":{"start":{"line":106,"column":8,"offset":7426},"end":{"line":106,"column":14,"offset":7432}}}],"position":{"start":{"line":106,"column":6,"offset":7424},"end":{"line":106,"column":16,"offset":7434}}}],"position":{"start":{"line":106,"column":5,"offset":7423},"end":{"line":106,"column":37,"offset":7455}}},{"type":"text","value":": Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.","position":{"start":{"line":106,"column":37,"offset":7455},"end":{"line":106,"column":432,"offset":7850}}}],"position":{"start":{"line":106,"column":1,"offset":7419},"end":{"line":106,"column":432,"offset":7850}}},{"type":"text","value":"\n"}],"position":{"start":{"line":92,"column":1,"offset":4364},"end":{"line":106,"column":432,"offset":7850}}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":107,"column":1,"offset":7851}}}}
+{
+    "expireTime": 9007200882761075000,
+    "key": "transformer-remark-markdown-html-ast-43c9e9cff19e0536dced15a79a6152f3--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!",
+                        "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 130, "offset": 130 } }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 130, "offset": 130 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.",
+                        "position": { "start": { "line": 4, "column": 1, "offset": 132 }, "end": { "line": 4, "column": 133, "offset": 264 } }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 132 }, "end": { "line": 4, "column": 133, "offset": 264 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "A Node.js app is run in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.",
+                        "position": { "start": { "line": 6, "column": 1, "offset": 266 }, "end": { "line": 6, "column": 351, "offset": 616 } }
+                    }
+                ],
+                "position": { "start": { "line": 6, "column": 1, "offset": 266 }, "end": { "line": 6, "column": 351, "offset": 616 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back.",
+                        "position": { "start": { "line": 8, "column": 1, "offset": 618 }, "end": { "line": 8, "column": 239, "offset": 856 } }
+                    }
+                ],
+                "position": { "start": { "line": 8, "column": 1, "offset": 618 }, "end": { "line": 8, "column": 239, "offset": 856 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread concurrency, which could be a significant source of bugs.",
+                        "position": { "start": { "line": 10, "column": 1, "offset": 858 }, "end": { "line": 10, "column": 195, "offset": 1052 } }
+                    }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 858 }, "end": { "line": 10, "column": 195, "offset": 1052 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side code in addition to the client-side code without the need to learn a completely different language.",
+                        "position": { "start": { "line": 12, "column": 1, "offset": 1054 }, "end": { "line": 12, "column": 247, "offset": 1300 } }
+                    }
+                ],
+                "position": { "start": { "line": 12, "column": 1, "offset": 1054 }, "end": { "line": 12, "column": 247, "offset": 1300 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In Node.js the new ECMAScript standards can be used without problems, as you don't have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.",
+                        "position": { "start": { "line": 14, "column": 1, "offset": 1302 }, "end": { "line": 14, "column": 323, "offset": 1624 } }
+                    }
+                ],
+                "position": { "start": { "line": 14, "column": 1, "offset": 1302 }, "end": { "line": 14, "column": 323, "offset": 1624 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "A Vast Number of Libraries",
+                        "position": { "start": { "line": 16, "column": 4, "offset": 1629 }, "end": { "line": 16, "column": 30, "offset": 1655 } }
+                    }
+                ],
+                "position": { "start": { "line": 16, "column": 1, "offset": 1626 }, "end": { "line": 16, "column": 30, "offset": 1655 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "npm with its simple structure helped the ecosystem of Node.js proliferate, and now the npm registry hosts over 1,000,000 open source packages you can freely use.",
+                        "position": { "start": { "line": 18, "column": 1, "offset": 1657 }, "end": { "line": 18, "column": 162, "offset": 1818 } }
+                    }
+                ],
+                "position": { "start": { "line": 18, "column": 1, "offset": 1657 }, "end": { "line": 18, "column": 162, "offset": 1818 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "An Example Node.js Application",
+                        "position": { "start": { "line": 20, "column": 4, "offset": 1823 }, "end": { "line": 20, "column": 34, "offset": 1853 } }
+                    }
+                ],
+                "position": { "start": { "line": 20, "column": 1, "offset": 1820 }, "end": { "line": 20, "column": 34, "offset": 1853 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The most common example Hello World of Node.js is a web server:",
+                        "position": { "start": { "line": 22, "column": 1, "offset": 1855 }, "end": { "line": 22, "column": 64, "offset": 1918 } }
+                    }
+                ],
+                "position": { "start": { "line": 22, "column": 1, "offset": 1855 }, "end": { "line": 22, "column": 64, "offset": 1918 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe\n  title=\"Hello world web server\"\n  src=\"https://glitch.com/embed/#!/embed/nodejs-dev-0001-01?path=server.js&previewSize=30&attributionHidden=true&sidebarCollapsed=true\"\n  alt=\"nodejs-dev-0001-01 on Glitch\"\n  style=\"height: 400px; width: 100%; border: 0;\">\n</iframe>",
+                "position": { "start": { "line": 24, "column": 1, "offset": 1920 }, "end": { "line": 29, "column": 10, "offset": 2193 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<!--```js\nconst http = require('http')\n\nconst hostname = '127.0.0.1'\nconst port = 3000\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200\n  res.setHeader('Content-Type', 'text/plain')\n  res.end('Hello World\\n')\n})\n\nserver.listen(port, hostname, () => {\n  console.log(`Server running at http://${hostname}:${port}/`)\n})\n```\n\nTo run this snippet, save it as a `server.js` file and run `node server.js` in your terminal.-->",
+                "position": { "start": { "line": 31, "column": 1, "offset": 2195 }, "end": { "line": 48, "column": 97, "offset": 2637 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "This code first includes the Node.js ",
+                        "position": { "start": { "line": 50, "column": 1, "offset": 2639 }, "end": { "line": 50, "column": 38, "offset": 2676 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://nodejs.org/api/http.html" },
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "http" }],
+                                "position": { "start": { "line": 50, "column": 39, "offset": 2677 }, "end": { "line": 50, "column": 45, "offset": 2683 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " module",
+                                "position": { "start": { "line": 50, "column": 45, "offset": 2683 }, "end": { "line": 50, "column": 52, "offset": 2690 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 50, "column": 38, "offset": 2676 }, "end": { "line": 50, "column": 87, "offset": 2725 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 50, "column": 87, "offset": 2725 }, "end": { "line": 50, "column": 88, "offset": 2726 } }
+                    }
+                ],
+                "position": { "start": { "line": 50, "column": 1, "offset": 2639 }, "end": { "line": 50, "column": 88, "offset": 2726 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Node.js has a fantastic ",
+                        "position": { "start": { "line": 52, "column": 1, "offset": 2728 }, "end": { "line": 52, "column": 25, "offset": 2752 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://nodejs.org/api/" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "standard library",
+                                "position": { "start": { "line": 52, "column": 26, "offset": 2753 }, "end": { "line": 52, "column": 42, "offset": 2769 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 52, "column": 25, "offset": 2752 }, "end": { "line": 52, "column": 68, "offset": 2795 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", including first-class support for networking.",
+                        "position": { "start": { "line": 52, "column": 68, "offset": 2795 }, "end": { "line": 52, "column": 115, "offset": 2842 } }
+                    }
+                ],
+                "position": { "start": { "line": 52, "column": 1, "offset": 2728 }, "end": { "line": 52, "column": 115, "offset": 2842 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The ",
+                        "position": { "start": { "line": 54, "column": 1, "offset": 2844 }, "end": { "line": 54, "column": 5, "offset": 2848 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "createServer()" }],
+                        "position": { "start": { "line": 54, "column": 5, "offset": 2848 }, "end": { "line": 54, "column": 21, "offset": 2864 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " method of ",
+                        "position": { "start": { "line": 54, "column": 21, "offset": 2864 }, "end": { "line": 54, "column": 32, "offset": 2875 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "http" }],
+                        "position": { "start": { "line": 54, "column": 32, "offset": 2875 }, "end": { "line": 54, "column": 38, "offset": 2881 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " creates a new HTTP server and returns it.",
+                        "position": { "start": { "line": 54, "column": 38, "offset": 2881 }, "end": { "line": 54, "column": 80, "offset": 2923 } }
+                    }
+                ],
+                "position": { "start": { "line": 54, "column": 1, "offset": 2844 }, "end": { "line": 54, "column": 80, "offset": 2923 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The server is set to listen on the specified port and host name. When the server is ready, the callback function is called, in this case informing us that the server is running.",
+                        "position": { "start": { "line": 56, "column": 1, "offset": 2925 }, "end": { "line": 56, "column": 178, "offset": 3102 } }
+                    }
+                ],
+                "position": { "start": { "line": 56, "column": 1, "offset": 2925 }, "end": { "line": 56, "column": 178, "offset": 3102 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Whenever a new request is received, the ",
+                        "position": { "start": { "line": 58, "column": 1, "offset": 3104 }, "end": { "line": 58, "column": 41, "offset": 3144 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://nodejs.org/api/http.html#http_event_request" },
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "request" }],
+                                "position": { "start": { "line": 58, "column": 42, "offset": 3145 }, "end": { "line": 58, "column": 51, "offset": 3154 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " event",
+                                "position": { "start": { "line": 58, "column": 51, "offset": 3154 }, "end": { "line": 58, "column": 57, "offset": 3160 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 58, "column": 41, "offset": 3144 }, "end": { "line": 58, "column": 111, "offset": 3214 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is called, providing two objects: a request (an ",
+                        "position": { "start": { "line": 58, "column": 111, "offset": 3214 }, "end": { "line": 58, "column": 160, "offset": 3263 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://nodejs.org/api/http.html#http_class_http_incomingmessage" },
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "http.IncomingMessage" }],
+                                "position": { "start": { "line": 58, "column": 161, "offset": 3264 }, "end": { "line": 58, "column": 183, "offset": 3286 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 58, "column": 160, "offset": 3263 }, "end": { "line": 58, "column": 250, "offset": 3353 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " object) and a response (an ",
+                        "position": { "start": { "line": 58, "column": 250, "offset": 3353 }, "end": { "line": 58, "column": 278, "offset": 3381 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://nodejs.org/api/http.html#http_class_http_serverresponse" },
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "http.ServerResponse" }],
+                                "position": { "start": { "line": 58, "column": 279, "offset": 3382 }, "end": { "line": 58, "column": 300, "offset": 3403 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 58, "column": 278, "offset": 3381 }, "end": { "line": 58, "column": 366, "offset": 3469 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " object).",
+                        "position": { "start": { "line": 58, "column": 366, "offset": 3469 }, "end": { "line": 58, "column": 375, "offset": 3478 } }
+                    }
+                ],
+                "position": { "start": { "line": 58, "column": 1, "offset": 3104 }, "end": { "line": 58, "column": 375, "offset": 3478 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Those 2 objects are essential to handle the HTTP call.",
+                        "position": { "start": { "line": 60, "column": 1, "offset": 3480 }, "end": { "line": 60, "column": 55, "offset": 3534 } }
+                    }
+                ],
+                "position": { "start": { "line": 60, "column": 1, "offset": 3480 }, "end": { "line": 60, "column": 55, "offset": 3534 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The first provides the request details. In this simple example, this is not used, but you could access the request headers and request data.",
+                        "position": { "start": { "line": 62, "column": 1, "offset": 3536 }, "end": { "line": 62, "column": 141, "offset": 3676 } }
+                    }
+                ],
+                "position": { "start": { "line": 62, "column": 1, "offset": 3536 }, "end": { "line": 62, "column": 141, "offset": 3676 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The second is used to return data to the caller.",
+                        "position": { "start": { "line": 64, "column": 1, "offset": 3678 }, "end": { "line": 64, "column": 49, "offset": 3726 } }
+                    }
+                ],
+                "position": { "start": { "line": 64, "column": 1, "offset": 3678 }, "end": { "line": 64, "column": 49, "offset": 3726 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In this case with:",
+                        "position": { "start": { "line": 66, "column": 1, "offset": 3728 }, "end": { "line": 66, "column": 19, "offset": 3746 } }
+                    }
+                ],
+                "position": { "start": { "line": 66, "column": 1, "offset": 3728 }, "end": { "line": 66, "column": 19, "offset": 3746 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-js"] },
+                        "children": [{ "type": "text", "value": "res.statusCode = 200;\n" }],
+                        "position": { "start": { "line": 68, "column": 1, "offset": 3748 }, "end": { "line": 70, "column": 4, "offset": 3779 } }
+                    }
+                ],
+                "position": { "start": { "line": 68, "column": 1, "offset": 3748 }, "end": { "line": 70, "column": 4, "offset": 3779 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "we set the statusCode property to 200, to indicate a successful response.",
+                        "position": { "start": { "line": 72, "column": 1, "offset": 3781 }, "end": { "line": 72, "column": 74, "offset": 3854 } }
+                    }
+                ],
+                "position": { "start": { "line": 72, "column": 1, "offset": 3781 }, "end": { "line": 72, "column": 74, "offset": 3854 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "We set the Content-Type header:",
+                        "position": { "start": { "line": 74, "column": 1, "offset": 3856 }, "end": { "line": 74, "column": 32, "offset": 3887 } }
+                    }
+                ],
+                "position": { "start": { "line": 74, "column": 1, "offset": 3856 }, "end": { "line": 74, "column": 32, "offset": 3887 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-js"] },
+                        "children": [{ "type": "text", "value": "res.setHeader('Content-Type', 'text/plain');\n" }],
+                        "position": { "start": { "line": 76, "column": 1, "offset": 3889 }, "end": { "line": 78, "column": 4, "offset": 3943 } }
+                    }
+                ],
+                "position": { "start": { "line": 76, "column": 1, "offset": 3889 }, "end": { "line": 78, "column": 4, "offset": 3943 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "and we close the response, adding the content as an argument to ",
+                        "position": { "start": { "line": 80, "column": 1, "offset": 3945 }, "end": { "line": 80, "column": 65, "offset": 4009 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "end()" }],
+                        "position": { "start": { "line": 80, "column": 65, "offset": 4009 }, "end": { "line": 80, "column": 72, "offset": 4016 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ":",
+                        "position": { "start": { "line": 80, "column": 72, "offset": 4016 }, "end": { "line": 80, "column": 73, "offset": 4017 } }
+                    }
+                ],
+                "position": { "start": { "line": 80, "column": 1, "offset": 3945 }, "end": { "line": 80, "column": 73, "offset": 4017 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-js"] },
+                        "children": [{ "type": "text", "value": "res.end('Hello World\\n');\n" }],
+                        "position": { "start": { "line": 82, "column": 1, "offset": 4019 }, "end": { "line": 84, "column": 4, "offset": 4054 } }
+                    }
+                ],
+                "position": { "start": { "line": 82, "column": 1, "offset": 4019 }, "end": { "line": 84, "column": 4, "offset": 4054 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Node.js Frameworks and Tools",
+                        "position": { "start": { "line": 86, "column": 4, "offset": 4059 }, "end": { "line": 86, "column": 32, "offset": 4087 } }
+                    }
+                ],
+                "position": { "start": { "line": 86, "column": 1, "offset": 4056 }, "end": { "line": 86, "column": 32, "offset": 4087 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Node.js is a low-level platform. In order to make things easy and exciting for developers, thousands of libraries were built upon Node.js by the community.",
+                        "position": { "start": { "line": 88, "column": 1, "offset": 4089 }, "end": { "line": 88, "column": 156, "offset": 4244 } }
+                    }
+                ],
+                "position": { "start": { "line": 88, "column": 1, "offset": 4089 }, "end": { "line": 88, "column": 156, "offset": 4244 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Many of those established over time as popular options. Here is a non-comprehensive list of the ones worth learning:",
+                        "position": { "start": { "line": 90, "column": 1, "offset": 4246 }, "end": { "line": 90, "column": 117, "offset": 4362 } }
+                    }
+                ],
+                "position": { "start": { "line": 90, "column": 1, "offset": 4246 }, "end": { "line": 90, "column": 117, "offset": 4362 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://adonisjs.com/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "AdonisJs",
+                                                "position": {
+                                                    "start": { "line": 92, "column": 8, "offset": 4371 },
+                                                    "end": { "line": 92, "column": 16, "offset": 4379 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 92, "column": 6, "offset": 4369 },
+                                            "end": { "line": 92, "column": 18, "offset": 4381 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 92, "column": 5, "offset": 4368 }, "end": { "line": 92, "column": 42, "offset": 4405 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": A full-stack framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.",
+                                "position": { "start": { "line": 92, "column": 42, "offset": 4405 }, "end": { "line": 92, "column": 186, "offset": 4549 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 92, "column": 1, "offset": 4364 }, "end": { "line": 92, "column": 186, "offset": 4549 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://expressjs.com/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Express",
+                                                "position": {
+                                                    "start": { "line": 93, "column": 8, "offset": 4557 },
+                                                    "end": { "line": 93, "column": 15, "offset": 4564 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 93, "column": 6, "offset": 4555 },
+                                            "end": { "line": 93, "column": 17, "offset": 4566 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 93, "column": 5, "offset": 4554 }, "end": { "line": 93, "column": 42, "offset": 4591 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.",
+                                "position": { "start": { "line": 93, "column": 42, "offset": 4591 }, "end": { "line": 93, "column": 225, "offset": 4774 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 93, "column": 1, "offset": 4550 }, "end": { "line": 93, "column": 225, "offset": 4774 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://fastify.io/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Fastify",
+                                                "position": {
+                                                    "start": { "line": 94, "column": 8, "offset": 4782 },
+                                                    "end": { "line": 94, "column": 15, "offset": 4789 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 94, "column": 6, "offset": 4780 },
+                                            "end": { "line": 94, "column": 17, "offset": 4791 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 94, "column": 5, "offset": 4779 }, "end": { "line": 94, "column": 39, "offset": 4813 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js web frameworks.",
+                                "position": { "start": { "line": 94, "column": 39, "offset": 4813 }, "end": { "line": 94, "column": 228, "offset": 5002 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 94, "column": 1, "offset": 4775 }, "end": { "line": 94, "column": 228, "offset": 5002 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://www.gatsbyjs.com/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Gatsby",
+                                                "position": {
+                                                    "start": { "line": 95, "column": 8, "offset": 5010 },
+                                                    "end": { "line": 95, "column": 14, "offset": 5016 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 95, "column": 6, "offset": 5008 },
+                                            "end": { "line": 95, "column": 16, "offset": 5018 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 95, "column": 5, "offset": 5007 }, "end": { "line": 95, "column": 44, "offset": 5046 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": A ",
+                                "position": { "start": { "line": 95, "column": 44, "offset": 5046 }, "end": { "line": 95, "column": 48, "offset": 5050 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://reactjs.org/" },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "React",
+                                        "position": {
+                                            "start": { "line": 95, "column": 49, "offset": 5051 },
+                                            "end": { "line": 95, "column": 54, "offset": 5056 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 95, "column": 48, "offset": 5050 }, "end": { "line": 95, "column": 77, "offset": 5079 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "-based, ",
+                                "position": { "start": { "line": 95, "column": 77, "offset": 5079 }, "end": { "line": 95, "column": 85, "offset": 5087 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://graphql.org/" },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "GraphQL",
+                                        "position": {
+                                            "start": { "line": 95, "column": 86, "offset": 5088 },
+                                            "end": { "line": 95, "column": 93, "offset": 5095 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 95, "column": 85, "offset": 5087 }, "end": { "line": 95, "column": 116, "offset": 5118 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " powered, static site generator with a very rich ecosystem of plugins and starters.",
+                                "position": { "start": { "line": 95, "column": 116, "offset": 5118 }, "end": { "line": 95, "column": 199, "offset": 5201 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 95, "column": 1, "offset": 5003 }, "end": { "line": 95, "column": 199, "offset": 5201 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://hapijs.com" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "hapi",
+                                                "position": {
+                                                    "start": { "line": 96, "column": 8, "offset": 5209 },
+                                                    "end": { "line": 96, "column": 12, "offset": 5213 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 96, "column": 6, "offset": 5207 },
+                                            "end": { "line": 96, "column": 14, "offset": 5215 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 96, "column": 5, "offset": 5206 }, "end": { "line": 96, "column": 35, "offset": 5236 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.",
+                                "position": { "start": { "line": 96, "column": 35, "offset": 5236 }, "end": { "line": 96, "column": 213, "offset": 5414 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 96, "column": 1, "offset": 5202 }, "end": { "line": 96, "column": 213, "offset": 5414 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "http://koajs.com/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "koa",
+                                                "position": {
+                                                    "start": { "line": 97, "column": 8, "offset": 5422 },
+                                                    "end": { "line": 97, "column": 11, "offset": 5425 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 97, "column": 6, "offset": 5420 },
+                                            "end": { "line": 97, "column": 13, "offset": 5427 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 97, "column": 5, "offset": 5419 }, "end": { "line": 97, "column": 33, "offset": 5447 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatible changes without disrupting the existing community.",
+                                "position": { "start": { "line": 97, "column": 33, "offset": 5447 }, "end": { "line": 97, "column": 266, "offset": 5680 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 97, "column": 1, "offset": 5415 }, "end": { "line": 97, "column": 266, "offset": 5680 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://loopback.io/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Loopback.io",
+                                                "position": {
+                                                    "start": { "line": 98, "column": 8, "offset": 5688 },
+                                                    "end": { "line": 98, "column": 19, "offset": 5699 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 98, "column": 6, "offset": 5686 },
+                                            "end": { "line": 98, "column": 21, "offset": 5701 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 98, "column": 5, "offset": 5685 }, "end": { "line": 98, "column": 44, "offset": 5724 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": Makes it easy to build modern applications that require complex integrations.",
+                                "position": { "start": { "line": 98, "column": 44, "offset": 5724 }, "end": { "line": 98, "column": 123, "offset": 5803 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 98, "column": 1, "offset": 5681 }, "end": { "line": 98, "column": 123, "offset": 5803 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://meteor.com" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Meteor",
+                                                "position": {
+                                                    "start": { "line": 99, "column": 8, "offset": 5811 },
+                                                    "end": { "line": 99, "column": 14, "offset": 5817 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 99, "column": 6, "offset": 5809 },
+                                            "end": { "line": 99, "column": 16, "offset": 5819 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 99, "column": 5, "offset": 5808 }, "end": { "line": 99, "column": 37, "offset": 5840 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs ",
+                                "position": { "start": { "line": 99, "column": 37, "offset": 5840 }, "end": { "line": 99, "column": 289, "offset": 6092 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://reactjs.org/" },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "React",
+                                        "position": {
+                                            "start": { "line": 99, "column": 290, "offset": 6093 },
+                                            "end": { "line": 99, "column": 295, "offset": 6098 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 99, "column": 289, "offset": 6092 }, "end": { "line": 99, "column": 318, "offset": 6121 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ", ",
+                                "position": { "start": { "line": 99, "column": 318, "offset": 6121 }, "end": { "line": 99, "column": 320, "offset": 6123 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://vuejs.org/" },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Vue",
+                                        "position": {
+                                            "start": { "line": 99, "column": 321, "offset": 6124 },
+                                            "end": { "line": 99, "column": 324, "offset": 6127 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 99, "column": 320, "offset": 6123 }, "end": { "line": 99, "column": 345, "offset": 6148 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ", and ",
+                                "position": { "start": { "line": 99, "column": 345, "offset": 6148 }, "end": { "line": 99, "column": 351, "offset": 6154 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://angular.io" },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Angular",
+                                        "position": {
+                                            "start": { "line": 99, "column": 352, "offset": 6155 },
+                                            "end": { "line": 99, "column": 359, "offset": 6162 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 99, "column": 351, "offset": 6154 }, "end": { "line": 99, "column": 380, "offset": 6183 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ". Can be used to create mobile apps as well.",
+                                "position": { "start": { "line": 99, "column": 380, "offset": 6183 }, "end": { "line": 99, "column": 424, "offset": 6227 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 99, "column": 1, "offset": 5804 }, "end": { "line": 99, "column": 424, "offset": 6227 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://github.com/zeit/micro" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Micro",
+                                                "position": {
+                                                    "start": { "line": 100, "column": 8, "offset": 6235 },
+                                                    "end": { "line": 100, "column": 13, "offset": 6240 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 100, "column": 6, "offset": 6233 },
+                                            "end": { "line": 100, "column": 15, "offset": 6242 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 100, "column": 5, "offset": 6232 }, "end": { "line": 100, "column": 47, "offset": 6274 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": It provides a very lightweight server to create asynchronous HTTP microservices.",
+                                "position": { "start": { "line": 100, "column": 47, "offset": 6274 }, "end": { "line": 100, "column": 129, "offset": 6356 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 100, "column": 1, "offset": 6228 }, "end": { "line": 100, "column": 129, "offset": 6356 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://nestjs.com/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "NestJS",
+                                                "position": {
+                                                    "start": { "line": 101, "column": 8, "offset": 6364 },
+                                                    "end": { "line": 101, "column": 14, "offset": 6370 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 101, "column": 6, "offset": 6362 },
+                                            "end": { "line": 101, "column": 16, "offset": 6372 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 101, "column": 5, "offset": 6361 }, "end": { "line": 101, "column": 38, "offset": 6394 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.",
+                                "position": { "start": { "line": 101, "column": 38, "offset": 6394 }, "end": { "line": 101, "column": 177, "offset": 6533 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 101, "column": 1, "offset": 6357 }, "end": { "line": 101, "column": 177, "offset": 6533 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://nextjs.org/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Next.js",
+                                                "position": {
+                                                    "start": { "line": 102, "column": 8, "offset": 6541 },
+                                                    "end": { "line": 102, "column": 15, "offset": 6548 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 102, "column": 6, "offset": 6539 },
+                                            "end": { "line": 102, "column": 17, "offset": 6550 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 102, "column": 5, "offset": 6538 }, "end": { "line": 102, "column": 39, "offset": 6572 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": ",
+                                "position": { "start": { "line": 102, "column": 39, "offset": 6572 }, "end": { "line": 102, "column": 41, "offset": 6574 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://reactjs.org" },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "React",
+                                        "position": {
+                                            "start": { "line": 102, "column": 42, "offset": 6575 },
+                                            "end": { "line": 102, "column": 47, "offset": 6580 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 102, "column": 41, "offset": 6574 }, "end": { "line": 102, "column": 69, "offset": 6602 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.",
+                                "position": { "start": { "line": 102, "column": 69, "offset": 6602 }, "end": { "line": 102, "column": 271, "offset": 6804 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 102, "column": 1, "offset": 6534 }, "end": { "line": 102, "column": 271, "offset": 6804 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://nx.dev/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Nx",
+                                                "position": {
+                                                    "start": { "line": 103, "column": 8, "offset": 6812 },
+                                                    "end": { "line": 103, "column": 10, "offset": 6814 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 103, "column": 6, "offset": 6810 },
+                                            "end": { "line": 103, "column": 12, "offset": 6816 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 103, "column": 5, "offset": 6809 }, "end": { "line": 103, "column": 30, "offset": 6834 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": A toolkit for full-stack monorepo development using NestJS, Express, ",
+                                "position": { "start": { "line": 103, "column": 30, "offset": 6834 }, "end": { "line": 103, "column": 101, "offset": 6905 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://reactjs.org/" },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "React",
+                                        "position": {
+                                            "start": { "line": 103, "column": 102, "offset": 6906 },
+                                            "end": { "line": 103, "column": 107, "offset": 6911 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 103, "column": 101, "offset": 6905 }, "end": { "line": 103, "column": 130, "offset": 6934 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ", ",
+                                "position": { "start": { "line": 103, "column": 130, "offset": 6934 }, "end": { "line": 103, "column": 132, "offset": 6936 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://angular.io" },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Angular",
+                                        "position": {
+                                            "start": { "line": 103, "column": 133, "offset": 6937 },
+                                            "end": { "line": 103, "column": 140, "offset": 6944 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 103, "column": 132, "offset": 6936 }, "end": { "line": 103, "column": 161, "offset": 6965 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ", and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!",
+                                "position": { "start": { "line": 103, "column": 161, "offset": 6965 }, "end": { "line": 103, "column": 297, "offset": 7101 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 103, "column": 1, "offset": 6805 }, "end": { "line": 103, "column": 297, "offset": 7101 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://sapper.svelte.dev/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Sapper",
+                                                "position": {
+                                                    "start": { "line": 104, "column": 8, "offset": 7109 },
+                                                    "end": { "line": 104, "column": 14, "offset": 7115 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 104, "column": 6, "offset": 7107 },
+                                            "end": { "line": 104, "column": 16, "offset": 7117 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 104, "column": 5, "offset": 7106 }, "end": { "line": 104, "column": 45, "offset": 7146 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!",
+                                "position": { "start": { "line": 104, "column": 45, "offset": 7146 }, "end": { "line": 104, "column": 212, "offset": 7313 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 104, "column": 1, "offset": 7102 }, "end": { "line": 104, "column": 212, "offset": 7313 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://socket.io/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Socket.io",
+                                                "position": {
+                                                    "start": { "line": 105, "column": 8, "offset": 7321 },
+                                                    "end": { "line": 105, "column": 17, "offset": 7330 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 105, "column": 6, "offset": 7319 },
+                                            "end": { "line": 105, "column": 19, "offset": 7332 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 105, "column": 5, "offset": 7318 }, "end": { "line": 105, "column": 40, "offset": 7353 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": A real-time communication engine to build network applications.",
+                                "position": { "start": { "line": 105, "column": 40, "offset": 7353 }, "end": { "line": 105, "column": 105, "offset": 7418 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 105, "column": 1, "offset": 7314 }, "end": { "line": 105, "column": 105, "offset": 7418 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://strapi.io/" },
+                                "children": [
+                                    {
+                                        "type": "element",
+                                        "tagName": "strong",
+                                        "properties": {},
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Strapi",
+                                                "position": {
+                                                    "start": { "line": 106, "column": 8, "offset": 7426 },
+                                                    "end": { "line": 106, "column": 14, "offset": 7432 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 106, "column": 6, "offset": 7424 },
+                                            "end": { "line": 106, "column": 16, "offset": 7434 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 106, "column": 5, "offset": 7423 }, "end": { "line": 106, "column": 37, "offset": 7455 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.",
+                                "position": { "start": { "line": 106, "column": 37, "offset": 7455 }, "end": { "line": 106, "column": 432, "offset": 7850 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 106, "column": 1, "offset": 7419 }, "end": { "line": 106, "column": 432, "offset": 7850 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 92, "column": 1, "offset": 4364 }, "end": { "line": 106, "column": 432, "offset": 7850 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 107, "column": 1, "offset": 7851 } }
+    }
+}

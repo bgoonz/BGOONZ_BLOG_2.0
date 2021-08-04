@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
         return (
             <footer id="colophon" className="site-footer outer">
                 <div className="inner">
-                <div id="search"></div>
+                
                     <div className="site-footer-inside">
                         <p className="site-info">
                             {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
@@ -19,7 +19,7 @@ export default class Footer extends React.Component {
                                 <ActionLink key={action_idx} {...this.props} action={action} />
                             ))}
                         </p>
-                     <div id="search"></div>
+                     
                         {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_social', null) && (
                             <div className="social-links">
                                 {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.social_links', null), (action, action_idx) => (
