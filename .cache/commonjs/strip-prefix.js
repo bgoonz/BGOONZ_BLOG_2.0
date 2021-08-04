@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 exports.__esModule = true;
 exports.default = stripPrefix;
@@ -8,17 +8,17 @@ exports.default = stripPrefix;
  * isn't found.
  */
 function stripPrefix(str, prefix = ``) {
-  if (!prefix) {
+    if (!prefix) {
+        return str;
+    }
+
+    if (str === prefix) {
+        return `/`;
+    }
+
+    if (str.startsWith(`${prefix}/`)) {
+        return str.slice(prefix.length);
+    }
+
     return str;
-  }
-
-  if (str === prefix) {
-    return `/`;
-  }
-
-  if (str.startsWith(`${prefix}/`)) {
-    return str.slice(prefix.length);
-  }
-
-  return str;
 }

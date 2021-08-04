@@ -1,1 +1,5 @@
-{"expireTime":9007200882761074000,"key":"transformer-remark-markdown-html-f37413b8dfa6acc76300bc4f1b7e6b8e--","val":"<ul>\n<li><a href=\"https://mybinder.org/v2/gh/bgoonz/Jupyter-Notebooks/439b0b3a1cae4bf7181996f1057221942c0c449f?filepath=00-Guide-to-Web-Scraping.ipynb\">Open Binder Jupyter Notebook</a></li>\n</ul>\n<iframe src=\"https://mybinder.org/v2/gh/bgoonz/Jupyter-Notebooks/439b0b3a1cae4bf7181996f1057221942c0c449f\" height=\"900px\" width=\"100%\">\n</iframe>"}
+{
+    "expireTime": 9007200882761074000,
+    "key": "transformer-remark-markdown-html-f37413b8dfa6acc76300bc4f1b7e6b8e--",
+    "val": "<ul>\n<li><a href=\"https://mybinder.org/v2/gh/bgoonz/Jupyter-Notebooks/439b0b3a1cae4bf7181996f1057221942c0c449f?filepath=00-Guide-to-Web-Scraping.ipynb\">Open Binder Jupyter Notebook</a></li>\n</ul>\n<iframe src=\"https://mybinder.org/v2/gh/bgoonz/Jupyter-Notebooks/439b0b3a1cae4bf7181996f1057221942c0c449f\" height=\"900px\" width=\"100%\">\n</iframe>"
+}
