@@ -454,7 +454,7 @@
             },
             {
                 "label": "Html Previewer",
-                "url": "#",
+                "url": "",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
