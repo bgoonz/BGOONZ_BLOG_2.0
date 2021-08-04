@@ -3,31 +3,31 @@ title: Netlify CMS Intro
 date: '2021-05-23'
 image: images/curious-europa.gif
 seo:
-  title: Platform Docs
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-  extra:
-    - name: 'og:type'
-      value: article
-      keyName: property
-    - name: 'og:title'
-      value: Platform Docs
-      keyName: property
-    - name: 'og:description'
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-      keyName: property
-    - name: 'og:image'
-      value: images/curious-europa.gif
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:card'
-      value: summary_large_image
-    - name: 'twitter:title'
-      value: Platform Docs
-    - name: 'twitter:description'
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-    - name: 'twitter:image'
-      value: images/curious-europa.gif
-      relativeUrl: true
+    title: Platform Docs
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    extra:
+        - name: 'og:type'
+          value: article
+          keyName: property
+        - name: 'og:title'
+          value: Platform Docs
+          keyName: property
+        - name: 'og:description'
+          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+          keyName: property
+        - name: 'og:image'
+          value: images/curious-europa.gif
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: summary_large_image
+        - name: 'twitter:title'
+          value: Platform Docs
+        - name: 'twitter:description'
+          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        - name: 'twitter:image'
+          value: images/curious-europa.gif
+          relativeUrl: true
 template: post
 thumb_image: images/redu-squarex.jpg
 ---
