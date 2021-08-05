@@ -319,12 +319,6 @@
                 ]
             },
             {
-                "label": "GitHub",
-                "url": "https://github.com/bgoonz/BGOONZ_BLOG_2.0",
-                "style": "primary",
-                "has_subnav": false
-            },
-            {
                 "label": "External Nav",
                 "url": "https://bgoonz-blog-v3-0.netlify.app/",
                 "style": "secondary",
@@ -407,6 +401,12 @@
                     }
                 ],
                 "type": "action_menu"
+            },
+            {
+                "label": "GitHub",
+                "url": "https://github.com/bgoonz/BGOONZ_BLOG_2.0",
+                "style": "primary",
+                "has_subnav": false
             }
         ],
         "title": "WebDevHub"
