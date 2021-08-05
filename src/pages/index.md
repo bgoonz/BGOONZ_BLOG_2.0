@@ -277,7 +277,7 @@ sections:
     image_alt: site search
     image_position: right
     content: |-
-      <iframe class="block-content" width="100%  width="800" height="575"
+      <iframe class="block-content" width="100%  width="800" height="575" style="width:800px; height:400px!important;"
        src="https://random-static-html-deploys.netlify.app/blog-search.html" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
