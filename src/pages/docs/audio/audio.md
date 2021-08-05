@@ -3,7 +3,7 @@ title: Audio
 weight: 0
 excerpt: My automated guitar effects triggering project using a dymanic time warping algorithm
 seo:
-    title: ''
+    title: 'DTW'
     description: ''
     robots: []
     extra: []
