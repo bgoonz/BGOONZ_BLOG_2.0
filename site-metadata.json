@@ -325,7 +325,7 @@
             {
                 "label": "Tools",
                 "url": "/docs/tools",
-                "style": "link",
+                "style": "primary",
                 "has_subnav": true,
                 "subnav_links": [
                     {
