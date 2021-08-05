@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Site README
 weight: 0
 excerpt: lorem-ipsum
 seo:
