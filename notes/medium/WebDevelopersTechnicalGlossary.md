@@ -1,9 +1,8 @@
-Web Developer’s Technical Glossary
-==================================
+# Web Developer’s Technical Glossary
 
 This will be a running list as I make updates!
 
-------------------------------------------------------------------------
+---
 
 ### Web Developer’s Technical Appendix
 
@@ -220,7 +219,7 @@ designed to make things easier to read. The syntax makes the language “sweeter
 to use as things can be expressed more clearly or concisely. Something can be  
 considered “syntactic sugar” if it could be removed from the language without  
 removing any functionality on what the language can do. For example ternary  
-operators in Javascript: `x ? a : b` doesn't require the ternary operator syntax  
+operators in Javascript: `x ? a : b` doesn't require the ternary operator syntax  
 it could also be expressed with an `if/else` statement:
 
     if(x)

@@ -1,9 +1,8 @@
-Long List Of Invaluable NodeJS Resources
-========================================
+# Long List Of Invaluable NodeJS Resources
 
 Disclaimer: I know that I did not create this list all on my own… I can’t recall or track down the original list if you are the initial…
 
-------------------------------------------------------------------------
+---
 
 ### Long List Of Invaluable NodeJS Resources
 
@@ -181,7 +180,7 @@ Disclaimer: I know that I did not create this list all on my own… I can’t re
 ### Stream
 
 -   <span id="5251"><a href="https://youtu.be/dEFdt_6fW-0" class="markup--anchor markup--li-anchor" title="https://youtu.be/dEFdt_6fW-0">Stream into the Future — Matteo Collina, NearForm</a></span>
--   <span id="621e"><a href="https://twitter.com/djgrant_/status/1296395202056327172" class="markup--anchor markup--li-anchor" title="https://twitter.com/djgrant_/status/1296395202056327172">https://twitter.com/djgrant_/status/1296395202056327172</a></span>
+-   <span id="621e"><a href="https://twitter.com/djgrant_/status/1296395202056327172" class="markup--anchor markup--li-anchor" title="https://twitter.com/djgrant_/status/1296395202056327172">https://twitter.com/djgrant\_/status/1296395202056327172</a></span>
 -   <span id="fbf9"><a href="https://github.com/lrlna/sketchin/blob/master/guides/node-streams.md" class="markup--anchor markup--li-anchor" title="https://github.com/lrlna/sketchin/blob/master/guides/node-streams.md">https://github.com/lrlna/sketchin/blob/master/guides/node-streams.md</a></span>
 -   <span id="ae29"><a href="https://developer.mongodb.com/how-to/capturing-hacker-news-mentions-nodejs-mongodb" class="markup--anchor markup--li-anchor" title="https://developer.mongodb.com/how-to/capturing-hacker-news-mentions-nodejs-mongodb">https://developer.mongodb.com/how-to/capturing-hacker-news-mentions-nodejs-mongodb</a></span>
 -   <span id="80f3"><a href="https://2ality.com/2019/11/nodejs-streams-async-iteration.html" class="markup--anchor markup--li-anchor" title="https://2ality.com/2019/11/nodejs-streams-async-iteration.html">https://2ality.com/2019/11/nodejs-streams-async-iteration.html</a></span>
@@ -225,7 +224,7 @@ Disclaimer: I know that I did not create this list all on my own… I can’t re
 -   <span id="4b7a"><a href="https://github.com/justjavac/awesome-node-utils" class="markup--anchor markup--li-anchor" title="https://github.com/justjavac/awesome-node-utils">https://github.com/justjavac/awesome-node-utils</a></span>
 -   <span id="b8a4"><a href="https://github.com/bcoe/awesome-cross-platform-nodejs" class="markup--anchor markup--li-anchor" title="https://github.com/bcoe/awesome-cross-platform-nodejs">https://github.com/bcoe/awesome-cross-platform-nodejs</a> + <a href="https://github.com/ehmicky/cross-platform-node-guide" class="markup--anchor markup--li-anchor" title="https://github.com/ehmicky/cross-platform-node-guide">https://github.com/ehmicky/cross-platform-node-guide</a></span>
 -   <span id="ae89">Zero-dependency HTTP responders: <a href="https://twitter.com/juliangruber/status/1222120717367611392" class="markup--anchor markup--li-anchor" title="https://twitter.com/juliangruber/status/1222120717367611392">tweet</a> + <a href="https://github.com/juliangruber/http-responders" class="markup--anchor markup--li-anchor" title="https://github.com/juliangruber/http-responders">repo</a></span>
--   <span id="7cca"><a href="https://twitter.com/sseraphini/status/1232667049949880320" class="markup--anchor markup--li-anchor" title="https://twitter.com/sseraphini/status/1232667049949880320">Prefer cwd instead of __dirname when configuring your Webpack.</a></span>
+-   <span id="7cca"><a href="https://twitter.com/sseraphini/status/1232667049949880320" class="markup--anchor markup--li-anchor" title="https://twitter.com/sseraphini/status/1232667049949880320">Prefer cwd instead of \_\_dirname when configuring your Webpack.</a></span>
 -   <span id="ad3c"><a href="https://github.com/codemanki/cloudscraper" class="markup--anchor markup--li-anchor" title="https://github.com/codemanki/cloudscraper">Node.js library to bypass cloudflare’s anti-ddos page.</a></span>
 -   <span id="e14b"><a href="https://github.com/Link-/starred_search" class="markup--anchor markup--li-anchor" title="https://github.com/Link-/starred_search">Search your starred repositories on GitHub for a keyword.</a></span>
 -   <span id="3fa1"><a href="https://maximorlov.com/pm2-to-docker-automatic-restarts" class="markup--anchor markup--li-anchor" title="https://maximorlov.com/pm2-to-docker-automatic-restarts">https://maximorlov.com/pm2-to-docker-automatic-restarts</a></span>
@@ -358,7 +357,7 @@ Disclaimer: I know that I did not create this list all on my own… I can’t re
 ### Serverless
 
 -   <span id="16e9"><a href="https://youtu.be/KlO5Ksk7baQ" class="markup--anchor markup--li-anchor" title="https://youtu.be/KlO5Ksk7baQ">Building and deploying modern websites and apps — GitHub Universe 2019</a></span>
--   <span id="0d65">\[Would someone be willing to teach me how @netlify or @zeithq’s deploy preview feature works?\](<a href="https://twitter.com/TejasKumar_/status/1208378475771506688" class="markup--anchor markup--li-anchor" title="https://twitter.com/TejasKumar_/status/1208378475771506688">https://twitter.com/TejasKumar_/status/1208378475771506688</a>)</span>
+-   <span id="0d65">\[Would someone be willing to teach me how @netlify or @zeithq’s deploy preview feature works?\](<a href="https://twitter.com/TejasKumar_/status/1208378475771506688" class="markup--anchor markup--li-anchor" title="https://twitter.com/TejasKumar_/status/1208378475771506688">https://twitter.com/TejasKumar\_/status/1208378475771506688</a>)</span>
 -   <span id="9594"><a href="https://www.freecodecamp.org/news/complete-back-end-system-with-serverless" class="markup--anchor markup--li-anchor" title="https://www.freecodecamp.org/news/complete-back-end-system-with-serverless">https://www.freecodecamp.org/news/complete-back-end-system-with-serverless</a></span>
 -   <span id="8d2d"><a href="https://twitter.com/rwieruch/status/1212773598492004352" class="markup--anchor markup--li-anchor" title="https://twitter.com/rwieruch/status/1212773598492004352">Firebase Hosting in 6 steps.</a></span>
 -   <span id="9d8e"><a href="https://maxkostinevich.com/blog/serverless-geolocation" class="markup--anchor markup--li-anchor" title="https://maxkostinevich.com/blog/serverless-geolocation">How to make simple Geolocation service using Cloudflare Workers.</a></span>

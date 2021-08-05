@@ -1,9 +1,8 @@
-Fundamental Concepts In React That Will Probably Come Up On An Interview
-========================================================================
+# Fundamental Concepts In React That Will Probably Come Up On An Interview
 
 Incomplete Article
 
-------------------------------------------------------------------------
+---
 
 ### Fundamental Concepts In React That Will Probably Come Up On An Interview
 
@@ -19,7 +18,7 @@ Incomplete Article
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*iVSdRNTWikevU4dG.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### **Describe how JSX transforms into React.createElement calls:**
 
@@ -27,7 +26,7 @@ Incomplete Article
 
 #### ↠ReactDOM.render is a simple function which accepts 2 arguments: what to render and where to render it:
 
-------------------------------------------------------------------------
+---
 
 ### Describe how JSX transforms into React.createElement calls:
 
@@ -35,9 +34,9 @@ Incomplete Article
 
 > ↠You can put the JSX directly into your .js files, however you must run the JSX through a pre-compiler like <a href="https://babeljs.io/" class="markup--anchor markup--blockquote-anchor">Babel</a> in order for the browser to understand it.
 
-------------------------------------------------------------------------
+---
 
-> ***Here we initialize a Clock component using JSX instead of React.createElement .***
+> **_Here we initialize a Clock component using JSX instead of React.createElement ._**
 
 > Using <a href="https://babeljs.io/" class="markup--anchor markup--pullquote-anchor">Babel</a> this code is compiled to a series of recursively nested createElement calls:
 

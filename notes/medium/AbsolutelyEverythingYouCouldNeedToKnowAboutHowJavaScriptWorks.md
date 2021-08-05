@@ -1,9 +1,8 @@
-Absolutely Everything You Could Need To Know About How JavaScript Works.
-========================================================================
+# Absolutely Everything You Could Need To Know About How JavaScript Works.
 
 Seriously… this list is utterly exhaustive it covers more core concepts than I can hold the names of in working memory on a very good day.
 
-------------------------------------------------------------------------
+---
 
 ### Absolutely Everything You Could Need To Know About How JavaScript Works.
 
@@ -65,11 +64,11 @@ JS evaluates more complex expressions using the general math order of
 operations aka PEMDAS.
 
 -   <span id="4923">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
--   <span id="e245">*To force a specific order of operation, use the group operator ( ) around a part of the expression.*</span>
+-   <span id="e245">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
 
 **Modulo** : Very useful operation to check divisibility of numbers,  
 check for even & odd, whether a number is prime, and much more!  
-*(Discrete Math concept, circular problems can be solved with modulo)*
+_(Discrete Math concept, circular problems can be solved with modulo)_
 
 -   <span id="9608">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.</span>
 -   <span id="3b00">`console.log(7 % 10); // => 7;`</span>
@@ -79,7 +78,7 @@ check for even & odd, whether a number is prime, and much more!
 The **string** data type is a primitive data type that used to represent  
 textual data.
 
--   <span id="792d">can be wrapped by either **single** or **double** quotation marks, *best to choose one and stick with it for consistency*.</span>
+-   <span id="792d">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
 -   <span id="4f91">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.</span>
 
 <!-- -->
@@ -90,7 +89,7 @@ textual data.
 
 -   <span id="a54b">Alt. way to add other quotes within strings is to use template literals.</span>
 
-### `This is a template literal`
+### `This is a template literal`
 
 `${function} // use ${} to invoke functions within.`
 
@@ -191,7 +190,7 @@ over and over. (Think of them as ‘subprograms’)
 -   <span id="01bb">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="963b">Includes three things:</span>
 -   <span id="32df">Name of the function.</span>
--   <span id="7930">A list of *parameters* ()</span>
+-   <span id="7930">A list of _parameters_ ()</span>
 -   <span id="145e">The code to execute {}</span>
 -   <span id="37c0">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
 -   <span id="f3cc">JS evaluates code top down, left to right.</span>
@@ -204,10 +203,10 @@ over and over. (Think of them as ‘subprograms’)
 
 -   <span id="38d3">**Parameters** : Comma separated variables specified as part of a function’s declaration.</span>
 -   <span id="ecef">**Arguments** : Values passed to the function when it is invoked.</span>
--   <span id="a836">*If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work.*</span>
+-   <span id="a836">_If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work._</span>
 -   <span id="a53a">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/2560/1*2FC8D_rbP4cT3jukydhtkg.png" class="graf-image" /></figure>
 
@@ -271,7 +270,7 @@ Here’s a live code editor where you can mess with any of the examples…
 
 ### Dependent on data
 
-> *Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity.*
+> _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
 -   <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
 -   <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
@@ -966,7 +965,7 @@ The find() method returns a value of the first element in the array that satisfi
 <a href="https://dev.to/_hridaysharma/understanding-classes-es5-and-prototypal-inheritance-in-javascript-n8d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dev.to/_hridaysharma/understanding-classes-es5-and-prototypal-inheritance-in-javascript-n8d"><strong>Understanding Classes (ES5) and Prototypal Inheritance in JavaScript</strong><br />
 <em>In a nutshell the above snippet creates a Person class that can have multiple instances. By convention functional…</em>dev.to</a><a href="https://dev.to/_hridaysharma/understanding-classes-es5-and-prototypal-inheritance-in-javascript-n8d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://dev.to/varundey/prototype-proto-and-prototypal-inheritance-in-javascript-2inl" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dev.to/varundey/prototype-proto-and-prototypal-inheritance-in-javascript-2inl"><strong>prototype, __proto__ and Prototypal inheritance in JavaScript</strong><br />
+<a href="https://dev.to/varundey/prototype-proto-and-prototypal-inheritance-in-javascript-2inl" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dev.to/varundey/prototype-proto-and-prototypal-inheritance-in-javascript-2inl"><strong>prototype, **proto** and Prototypal inheritance in JavaScript</strong><br />
 <em>This post was originally published on my website If you have spent some time with JavaScript, chances are that you have…</em>dev.to</a><a href="https://dev.to/varundey/prototype-proto-and-prototypal-inheritance-in-javascript-2inl" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://javascript.info/prototype-inheritance" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.info/prototype-inheritance"><strong>Prototypal inheritance</strong><br />
@@ -1044,7 +1043,7 @@ Inheritancecodeburst.io</a><a href="https://codeburst.io/master-javascript-proto
 <a href="https://medium.com/@joomiguelcunha/learn-map-filter-and-reduce-in-javascript-ea59009593c4" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@joomiguelcunha/learn-map-filter-and-reduce-in-javascript-ea59009593c4"><strong>Learn map, filter and reduce in Javascript</strong><br />
 <em>The perfect toolset for your venture in Functional Programming</em>medium.com</a><a href="https://medium.com/@joomiguelcunha/learn-map-filter-and-reduce-in-javascript-ea59009593c4" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://danmartensen.svbtle.com/javascripts-map-reduce-and-filter" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://danmartensen.svbtle.com/javascripts-map-reduce-and-filter"><strong>JavaScript's Map, Reduce, and Filter * Dan Martensen</strong><br />
+<a href="https://danmartensen.svbtle.com/javascripts-map-reduce-and-filter" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://danmartensen.svbtle.com/javascripts-map-reduce-and-filter"><strong>JavaScript's Map, Reduce, and Filter \* Dan Martensen</strong><br />
 <em>As engineers we build and manipulate arrays holding numbers, strings, booleans and objects almost everyday. We use them…</em>danmartensen.svbtle.com</a><a href="https://danmartensen.svbtle.com/javascripts-map-reduce-and-filter" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209"><strong>How to Use Map, Filter, and Reduce in JavaScript</strong><br />

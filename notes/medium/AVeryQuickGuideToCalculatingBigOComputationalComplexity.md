@@ -1,9 +1,8 @@
-A Very Quick Guide To Calculating Big O Computational Complexity
-================================================================
+# A Very Quick Guide To Calculating Big O Computational Complexity
 
 Big O: big picture, broad strokes, not details
 
-------------------------------------------------------------------------
+---
 
 ### A Very Quick Guide To Calculating Big O Computational Complexity
 
@@ -36,8 +35,9 @@ no loops or exit & return = O(1)
 -   <span id="f168">inherently carries large footprint</span>
 -   <span id="5510">every time function called, you add call to stack</span>
 
-**iterative**: use loops instead of recursion (preferred)  
-- favor readability over performance
+**iterative**: use loops instead of recursion (preferred)
+
+-   favor readability over performance
 
 `O(n log(n))` & `O(log(n))`: dividing/halving
 

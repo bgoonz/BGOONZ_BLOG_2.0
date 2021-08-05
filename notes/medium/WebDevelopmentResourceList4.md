@@ -1,9 +1,8 @@
-Web Development Resource List \#4
-=================================
+# Web Development Resource List \#4
 
 Update:
 
-------------------------------------------------------------------------
+---
 
 ### Web Development Resource List \#4
 
@@ -97,7 +96,7 @@ Update:
 -   <span id="88d9"><a href="https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177" class="markup--anchor markup--li-anchor">Tuts Plus — The http protocol every web developer must know</a></span>
 -   <span id="4b56">Find a local Web Development related <a href="https://www.meetup.com/" class="markup--anchor markup--li-anchor">Meetup!</a> Don’t worry, it’s not as scary as you might think, and is one of the best ways to start learning</span>
 
-------------------------------------------------------------------------
+---
 
 ### How to Learn
 
@@ -106,7 +105,7 @@ Update:
 -   <span id="0473">Repetition, Repetition, Repetition — <a href="https://www.reddit.com/r/learnprogramming/comments/5pyx5t/a_beginners_trick_i_learned_way_too_late_in_the/" class="markup--anchor markup--li-anchor">Reddit Discussion on study techniques</a></span>
 -   <span id="5599">What technologies to learn and strategies to learn them — <a href="https://codetheweb.blog/2017/10/04/how-to-learn-web-development/" class="markup--anchor markup--li-anchor">How to learn web development</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### What is the Single most useful CS Bookmark you have?
 
@@ -120,7 +119,7 @@ Update:
 -   <span id="6838"><a href="https://github.com/sindresorhus/awesome" class="markup--anchor markup--li-anchor">Awesome List of Everything Programming</a></span>
 -   <span id="53f6"><a href="http://haseebq.com/how-to-break-into-tech-job-hunting-and-interviews/" class="markup--anchor markup--li-anchor">How to Break Into the Tech Industry — a Guide to Job Hunting and Tech Interviews</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Programs and Classes
 
@@ -147,7 +146,7 @@ Update:
 
 -   <span id="7588"><a href="https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940" class="markup--anchor markup--li-anchor">A Step by Step Guide to Making Your First GitHub Contribution</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn HTML
 
@@ -161,7 +160,7 @@ Update:
 -   <span id="ef32"><a href="https://www.tutorialspoint.com/html5/html5_tutorial.pdf" class="markup--anchor markup--li-anchor">HTML5 Tutorial PDF DOWNLOAD — tutorialspoint</a></span>
 -   <span id="fc0a"><a href="https://codetheweb.blog/learn/html/" class="markup--anchor markup--li-anchor">Learn HTML series — Code The Web</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn CSS
 
@@ -174,7 +173,7 @@ Update:
 -   <span id="aafd"><a href="https://www.sololearn.com/Course/CSS/" class="markup--anchor markup--li-anchor">Css Fundamentals — SoloLearn</a></span>
 -   <span id="650b"><a href="https://websitesetup.org/css3-cheat-sheet/" class="markup--anchor markup--li-anchor">CSS Cheat Sheet</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn JavaScript
 
@@ -225,7 +224,7 @@ Update:
 -   <span id="98bd"><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/" class="markup--anchor markup--li-anchor">Learning js Design patterns</a> — Reusable solutions to commonly occurring problems</span>
 -   <span id="f5be"><a href="http://requirejs.org/docs/api.html" class="markup--anchor markup--li-anchor">Asynchronous Module Definition</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn React JS
 
@@ -253,7 +252,7 @@ Update:
 -   <span id="9d92"><a href="https://medium.com/@paramsingh_66174/angularjs-vs-reactjs-e651a194dfcb#.bbx4qapwu" class="markup--anchor markup--li-anchor">Angular JS vs React JS (Medium)</a></span>
 -   <span id="a139"><a href="https://codeburst.io/react-native-nine-animation-screencast-tutorials-9d031e8bb86f" class="markup--anchor markup--li-anchor">React Native: Nine Animation Screencast Tutorials</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Full Stack Tutorials
 
@@ -280,7 +279,7 @@ Update:
 -   <span id="388e"><a href="https://react.rocks/tag/FullStack?show=40" class="markup--anchor markup--li-anchor">90 Full Stack React Examples (some with tuts)</a></span>
 -   <span id="68e2"><a href="https://www.jackkinsella.ie/books/confessions_of_an_unintentional_cto" class="markup--anchor markup--li-anchor">Confessions of an Unintentional CTO — lessons in growing a web app</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn Node JS
 
@@ -305,7 +304,7 @@ Update:
 -   <span id="6f48">Optimization Techniques</span>
 -   <span id="e2ab"><a href="https://community.risingstack.com/redis-node-js-introduction-to-caching/" class="markup--anchor markup--li-anchor">Make your node server faster by caching responses with redis</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn Python
 
@@ -313,7 +312,7 @@ Update:
 -   <span id="6798"><a href="https://www.udacity.com/course/programming-foundations-with-python--ud036" class="markup--anchor markup--li-anchor">Programming Foundations with Python — Udacity</a></span>
 -   <span id="3a68"><a href="https://www.udacity.com/course/designing-restful-apis--ud388" class="markup--anchor markup--li-anchor">Designing RESTful APIs — Udacity</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn APIs
 
@@ -326,7 +325,7 @@ Update:
 -   <span id="cbcc"><a href="https://developers.google.com/maps/documentation/distance-matrix/start" class="markup--anchor markup--li-anchor">Distance Calculator Web Services API</a></span>
 -   <span id="a77f"><a href="https://www.udacity.com/course/designing-restful-apis--ud388" class="markup--anchor markup--li-anchor">Build and Secure a Backend API Server</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn Databases
 
@@ -339,7 +338,7 @@ Update:
 -   <span id="3a0f"><a href="https://try.redis.io/" class="markup--anchor markup--li-anchor">Try Redis</a></span>
 -   <span id="fdf3"><a href="https://www.tutorialspoint.com/redis/" class="markup--anchor markup--li-anchor">Redis Tutorial</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn Authentication
 
@@ -349,7 +348,7 @@ Update:
 -   <span id="8304"><a href="https://aaronparecki.com/oauth-2-simplified/#web-server-apps" class="markup--anchor markup--li-anchor">OAuth 2</a></span>
 -   <span id="1ba0"><a href="https://medium.com/javascript-scene/passwordless-authentication-with-react-and-auth0-c4cb003c7cde#.l1joiokr2" class="markup--anchor markup--li-anchor">Passwordless Authentication with React and Auth0</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Learn Git
 
@@ -362,7 +361,7 @@ Update:
 -   <span id="04fe"><a href="https://medium.freecodecamp.com/git-cheat-sheet-and-best-practices-c6ce5321f52" class="markup--anchor markup--li-anchor">Here are all the Git commands I used last week and what they do (Medium)</a></span>
 -   <span id="5e70">Why to Use GIT <a href="https://www.linkedin.com/pulse/i-have-side-code-projects-show-you-ezekiel-buchheit" class="markup--anchor markup--li-anchor">No, I have no side projects to show you</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Games and Challenge Websites
 
@@ -383,7 +382,7 @@ Update:
 -   <span id="eaf1"><a href="https://projecteuler.net/" class="markup--anchor markup--li-anchor">Project Euler (math focus)</a></span>
 -   <span id="3ee7"><a href="http://exercism.io/" class="markup--anchor markup--li-anchor">Exercism</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Free Programming Books
 
@@ -391,7 +390,7 @@ Update:
 -   <span id="4fbf"><a href="https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md" class="markup--anchor markup--li-anchor">GitHub — Thousands of free programming Books on every topic</a></span>
 -   <span id="b1d1"><a href="https://www.reddit.com/r/learnprogramming/comments/51zz5g/what_non_technical_books_can_i_bring_with_me/" class="markup--anchor markup--li-anchor">Non-Technical Books to make you a better Programmer (Reddit)</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Open Source Contribution Opportunities
 
@@ -405,7 +404,7 @@ Update:
 -   <span id="4139"><a href="https://hacktoberfest.digitalocean.com/" class="markup--anchor markup--li-anchor">Hacktoberfest</a> — Open source activity held every October. Easy to participate, and you get a free t-shirt!</span>
 -   <span id="9d60"><a href="https://www.reddit.com/r/learnprogramming/comments/4pgb44/im_afraid_if_i_say_anything_on_github_people_will/" class="markup--anchor markup--li-anchor">I’m afraid if I say anything on GitHub people will laugh at me and I will die.</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Am I Ready to be a Developer?
 
@@ -424,7 +423,7 @@ Update:
 -   <span id="d252"><a href="https://www.reddit.com/r/AskReddit/comments/4f1tgy/computer_programmers_of_reddit_what_is_your_best/" class="markup--anchor markup--li-anchor">Computer programmers of Reddit, what is your best advice to someone who is currently learning how to code?</a></span>
 -   <span id="e634"><a href="https://www.reddit.com/r/learnprogramming/comments/4y7e3d/i_began_teaching_myself_to_code_a_year_ago_i_got/" class="markup--anchor markup--li-anchor">I began teaching myself to code a year ago. I got hired at my first job 4 months ago. Here is a breakdown of somethings I was not ready for (FYI job is remote ruby/rails dev)</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Software Developer Success Stories
 
@@ -435,7 +434,7 @@ Update:
 -   <span id="ee66"><a href="https://www.reddit.com/r/learnprogramming/comments/34r807/im_32_years_old_and_just_started_my_first/" class="markup--anchor markup--li-anchor">I’m 32 years old, and just started my first full-time job as a developer. One year ago my programming knowledge was basically nil. Everything I learned, I found via /r/learnprogramming, so just wanted to share my experience.</a></span>
 -   <span id="6d18"><a href="https://www.reddit.com/r/learnprogramming/comments/5elrb5/from_zero_to_software_developer/" class="markup--anchor markup--li-anchor">From zero to software developer — Not really a success story, but a lot of redditors share how they learned. Great for beginners with no path</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Get The Job
 
@@ -484,7 +483,7 @@ Resume, Portfolio, LinkedIn, Interview Prep, and Salary Information
 -   <span id="c785"><a href="https://medium.freecodecamp.com/ten-rules-for-negotiating-a-job-offer-ee17cccbdab6#.g8u1wnyw8" class="markup--anchor markup--li-anchor">10 Rules for negotiating a job offer (Medium)</a></span>
 -   <span id="9e11"><a href="https://medium.freecodecamp.com/how-not-to-bomb-your-offer-negotiation-c46bb9bc7dea#.vdfc82rl7" class="markup--anchor markup--li-anchor">How not to bomb your offer negotiation (Medium)</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Aux Links
 

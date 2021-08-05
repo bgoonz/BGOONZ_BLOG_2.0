@@ -1,9 +1,8 @@
-Writing Files Using Python
-==========================
+# Writing Files Using Python
 
 Basics of Writing Files in Python The common methods to operate with files are open() to open a file,
 
-------------------------------------------------------------------------
+---
 
 ### Writing Files Using Python
 
@@ -26,74 +25,74 @@ In this article we will explain how to write data to a file line by line, as a l
 
 ### Writing a Single Line to a File
 
-This first example is pretty similar to writing to files with the popular programming languages C and C++, as you’ll see in *Listing 1*. The process is pretty straightforward. First, we open the file using the `open()` method for writing, write a single line of text to the file using the `write()` method, and then close the file using the `close()` method. Keep in mind that due to the way we opened the "helloworld.txt" file it will either be created if it does not exist yet, or it will be completely overwritten.
+This first example is pretty similar to writing to files with the popular programming languages C and C++, as you’ll see in _Listing 1_. The process is pretty straightforward. First, we open the file using the `open()` method for writing, write a single line of text to the file using the `write()` method, and then close the file using the `close()` method. Keep in mind that due to the way we opened the "helloworld.txt" file it will either be created if it does not exist yet, or it will be completely overwritten.
 
     filehandle = open('helloworld.txt', 'w')
     filehandle.write('Hello, world!\n')
     filehandle.close()
 
-*Listing 1*
+_Listing 1_
 
-This entire process can be shortened using the `with` statement. *Listing 2* shows how to write that. As already said before keep in mind that by opening the "helloworld.txt" file this way will either create if it does not exist yet or completely overwritten, otherwise.
+This entire process can be shortened using the `with` statement. _Listing 2_ shows how to write that. As already said before keep in mind that by opening the "helloworld.txt" file this way will either create if it does not exist yet or completely overwritten, otherwise.
 
     with open('helloworld.txt', 'w') as filehandle:
         filehandle.write('Hello, world!\n')
 
-*Listing 2*
+_Listing 2_
 
 ### Writing a List of Lines to a File
 
-In reality a file does not consist only of a single line, but much more data. Therefore, the contents of the file are stored in a list that represents a file buffer. To write the entire file buffer we’ll use the `writelines()` method. *Listing 3* gives you an example of this.
+In reality a file does not consist only of a single line, but much more data. Therefore, the contents of the file are stored in a list that represents a file buffer. To write the entire file buffer we’ll use the `writelines()` method. _Listing 3_ gives you an example of this.
 
     filehandle = open("helloworld.txt", "w")
     filebuffer = ["a first line of text", "a second line of text", "a third line"]
     filehandle.writelines(filebuffer)
     filehandle.close()
 
-*Listing 3*
+_Listing 3_
 
-Running the Python program shown in *Listing 3* and then using the `cat` command we can see that the file "helloworld.txt" has the following content:
+Running the Python program shown in _Listing 3_ and then using the `cat` command we can see that the file "helloworld.txt" has the following content:
 
     $ cat helloworld.txt
     a first line of text a second line of text a third line
 
-*Listing 4*
+_Listing 4_
 
-This happens because **the** `writelines()` **method does not automatically add any line separators when writing the data**. *Listing 5* shows how to achieve that, writing each line of text on a single line by adding the line separator "\\n". Using a generator expression each line is substituted by the line plus line separator. Again, you can formulate this using the `with` statement.
+This happens because **the** `writelines()` **method does not automatically add any line separators when writing the data**. _Listing 5_ shows how to achieve that, writing each line of text on a single line by adding the line separator "\\n". Using a generator expression each line is substituted by the line plus line separator. Again, you can formulate this using the `with` statement.
 
     with open('helloworld.txt', 'w') as filehandle:
         filebuffer = ["a line of text", "another line of text", "a third line"]
         filehandle.writelines("%s\n" % line for line in filebuffer)
 
-*Listing 5*
+_Listing 5_
 
-Now, the output file “helloworld.txt” has the desired content as shown in *Listing 6*:
+Now, the output file “helloworld.txt” has the desired content as shown in _Listing 6_:
 
     $ cat helloworld.txt
     a first line of text
     a second line of text
     a third line
 
-*Listing 6*
+_Listing 6_
 
-Interestingly, there is a way to use output redirection in Python to write data to files. *Listing 7* shows how to code that for Python 2.x.
+Interestingly, there is a way to use output redirection in Python to write data to files. _Listing 7_ shows how to code that for Python 2.x.
 
     filename = "helloworld.txt"
 
     filecontent = ["Hello, world", "a second line", "and a third line"]
 
     with open(filename, 'w') as filehandle:
-        
+
         for line in filecontent:
             print >>filehandle, line
 
-*Listing 7*
+_Listing 7_
 
 For the latest Python releases this does not work in the same way anymore. To do something like this we must use the `sys` module. It allows us to access the UNIX standard output channels via `sys.stdout`, `sys.stdin`, and `sys.stderr`.
 
 In our case we preserve the original value of the output channel `sys.stdout`, first (line 8 in the code below), redefine it to the handle of our output file,
 
-next (line 15), print the data as usual (line 18), and finally restore the original value of the output channel `sys.stdout` (line 21). *Listing 8* contains the example code.
+next (line 15), print the data as usual (line 18), and finally restore the original value of the output channel `sys.stdout` (line 21). _Listing 8_ contains the example code.
 
     import sys
 
@@ -104,16 +103,16 @@ next (line 15), print the data as usual (line 18), and finally restore the origi
     filecontent = ["Hello, world", "a second line", "and a third line"]
 
     with open(filename, 'w') as filehandle:
-        
+
         sys.stdout = filehandle
-         
+
         for line in filecontent:
             print(line)
-         
-        
+
+
         sys.stdout = original
 
-*Listing 8*
+_Listing 8_
 
 This is not necessarily best practice, but it does give you other options for writing lines to a file.
 
@@ -121,18 +120,18 @@ This is not necessarily best practice, but it does give you other options for wr
 
 So far, we have stored data in new files or in overwritten data in existing files. But what if we want to append data to the end of an existing file? In this case we would need to open the existing file using a different access mode. We change that to ‘a’ instead of ‘w’.
 
-*Listing 9* shows how to handle that. And *Listing 10* does the same thing, but it uses the `with` statement rather.
+_Listing 9_ shows how to handle that. And _Listing 10_ does the same thing, but it uses the `with` statement rather.
 
     filehandle = open('helloworld.txt','a')
     filehandle.write('\n' + 'Hello, world!\n')
     filehandle.close()
 
-*Listing 9*
+_Listing 9_
 
     with open('helloworld.txt', 'a') as filehandle:
         filehandle.write('\n' + 'Hello, world!\n')
 
-*Listing 10*
+_Listing 10_
 
 Using the same helloworld.txt file from before, running this code will produce the following file contents:
 

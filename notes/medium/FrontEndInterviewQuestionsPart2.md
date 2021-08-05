@@ -1,9 +1,8 @@
-Front End Interview Questions Part 2
-====================================
+# Front End Interview Questions Part 2
 
 These will focus more on vocabulary and concepts than the application driven approach in my last post!
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -109,7 +108,7 @@ Reusable pieces of code to display info in a consistent repeatable way
 
 ReactJS is a library used to build large applications. It’s very good at assisting developers in manipulating the DOM element to create rich user experiences. We need a way to off-load the state/data that our apps use, and React helps us do that.
 
-· **What does it mean to *think* in react?**
+· **What does it mean to _think_ in react?**
 
 It makes you think about how to organize/build apps a little differently because it’s very scalable and allows you to build huge apps. React’s one-way data flow makes everything modular and fast. You can build apps top-down or bottom-up.
 
@@ -231,11 +230,11 @@ To uniquely identify each record/row.
 
 Foreign key
 
-· **What do we need in order to have a *many to many* relationship between two tables.**
+· **What do we need in order to have a _many to many_ relationship between two tables.**
 
 An **intermediary table** that holds foreign keys that reference the primary key on the related tables.
 
-· **What is the purpose of using *sessions*?**
+· **What is the purpose of using _sessions_?**
 
 The purpose is to persist data across requests.
 

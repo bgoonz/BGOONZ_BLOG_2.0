@@ -1,9 +1,8 @@
-Web Developer Resource List Part 2
-==================================
+# Web Developer Resource List Part 2
 
 Because I compile these things compulsively anyway…
 
-------------------------------------------------------------------------
+---
 
 ### Web Developer Resource List Part 2
 

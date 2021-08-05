@@ -1,15 +1,14 @@
-Emmet Cheat Sheet
-=================
+# Emmet Cheat Sheet
 
 EMMET
 
-------------------------------------------------------------------------
+---
 
 ### Emmet Cheat Sheet
 
 ### EMMET
 
-*The a toolkit for web-developers*
+_The a toolkit for web-developers_
 
 ### Introduction
 

@@ -1,9 +1,8 @@
-What is Memoization?
-====================
+# What is Memoization?
 
 And why this programming paradigm shouldn’t make you cringe.
 
-------------------------------------------------------------------------
+---
 
 ### What is Memoization?
 
@@ -67,7 +66,7 @@ value. That is, the keys will be arguments and their values will be the
 corresponding results returned. By using the memo, you are able to avoid  
 duplicate recursive calls!
 
-By the time your first call to `factorial(6) `returns, you will not have just the argument `6` stored in the memo. Rather, y**ou will have *all* arguments 2 to 6 stored in the memo.**
+By the time your first call to `factorial(6) `returns, you will not have just the argument `6` stored in the memo. Rather, y**ou will have _all_ arguments 2 to 6 stored in the memo.**
 
 Perhaps you’re not convinced because:
 
@@ -77,7 +76,7 @@ Perhaps you’re not convinced because:
 
 ### Memoizing the Fibonacci generator
 
-Here’s a *naive* implementation of a function that calculates the Fibonacci  
+Here’s a _naive_ implementation of a function that calculates the Fibonacci  
 number for a given input.
 
     function fib(n) {
@@ -128,7 +127,7 @@ rules you can use to memoize a slow algorithm:
 
 Here’s the solution to the aforementioned coin problem:
 
-*More content at* <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
+_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
 
 ### Discover More:
 

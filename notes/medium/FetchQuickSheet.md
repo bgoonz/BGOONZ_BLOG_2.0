@@ -1,9 +1,8 @@
-Fetch Quick Sheet
-=================
+# Fetch Quick Sheet
 
 Fetch
 
-------------------------------------------------------------------------
+---
 
 ### Fetch Quick Sheet
 
@@ -71,7 +70,7 @@ Non-2xx responses are still successful requests. Use another function to turn th
 
     const fetch = require('isomorphic-fetch')
 
-See: <a href="https://npmjs.com/package/isomorphic-fetch" class="markup--anchor markup--p-anchor">isomorphic-fetch</a> *(npmjs.com)*
+See: <a href="https://npmjs.com/package/isomorphic-fetch" class="markup--anchor markup--p-anchor">isomorphic-fetch</a> _(npmjs.com)_
 
 #### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 

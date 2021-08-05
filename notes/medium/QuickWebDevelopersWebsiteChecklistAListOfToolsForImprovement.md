@@ -1,9 +1,8 @@
-Quick Web Developers Website Checklist & A List Of Tools For Improvement
-========================================================================
+# Quick Web Developers Website Checklist & A List Of Tools For Improvement
 
 A set of questions you should use before handing off your application to the client.
 
-------------------------------------------------------------------------
+---
 
 ### Quick Web Developers Website Checklist & A List Of Tools For Improvement
 
@@ -18,19 +17,19 @@ A set of questions you should use before handing off your application to the cli
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*Qh8BZUzF7nRISPrwDTz05Q.png" class="graf-image" /></figure>### Remainder of tool list is below this checklist:
 
-------------------------------------------------------------------------
+---
 
 ### Usefulness & Relevance:
 
-> *Does the content meet user needs, goals, and interests?*
+> _Does the content meet user needs, goals, and interests?_
 
-> *Does the content meet business goals?*
+> _Does the content meet business goals?_
 
-> *For how long will the content be useful? When should it expire? Has its usefulness already expired?*
+> _For how long will the content be useful? When should it expire? Has its usefulness already expired?_
 
-> *Is the content timely and relevant?*
+> _Is the content timely and relevant?_
 
-------------------------------------------------------------------------
+---
 
 ### Clarity & Accuracy:
 
@@ -44,7 +43,7 @@ A set of questions you should use before handing off your application to the cli
 
 > **Do images, video, and audio meet technical standards, so they are clear?**
 
-------------------------------------------------------------------------
+---
 
 ### Influence & Engagement:
 
@@ -54,7 +53,7 @@ A set of questions you should use before handing off your application to the cli
 
 > Does the content use too many or too few techniques for the context?
 
-------------------------------------------------------------------------
+---
 
 ### Completeness:
 
@@ -74,7 +73,7 @@ A set of questions you should use before handing off your application to the cli
 
 > Does the content read, look, or sound as though it’s professionally crafted?
 
-------------------------------------------------------------------------
+---
 
 ### Usability & Findability:
 
@@ -88,7 +87,7 @@ A set of questions you should use before handing off your application to the cli
 
 > Can customers find the content when searching using relevant keywords?
 
-------------------------------------------------------------------------
+---
 
 ### SEO Advice From Google:
 
@@ -160,7 +159,7 @@ A set of questions you should use before handing off your application to the cli
 
 If your site violates one or more of these guidelines, then Google may take <a href="https://support.google.com/webmasters/answer/9044175" class="markup--anchor markup--p-anchor">manual action</a> against it. Once you have remedied the problem, you can <a href="https://support.google.com/webmasters/answer/35843" class="markup--anchor markup--p-anchor">submit your site for reconsideration</a>.
 
-------------------------------------------------------------------------
+---
 
 ### Website Launch Checklist:
 
@@ -171,10 +170,10 @@ It’s all too easy to miss (or break) something during the many back-and-forths
 To start, be sure to check your:
 
 -   <span id="1b13">Spacing: Is spacing consistent across the site (i.e., did you stick to that 8px grid, or let a rogue 18px in there)? Do all elements have enough breathing room?</span>
--   <span id="589b">Colors: Have you stuck to a consistent, harmonious color palette? Are all instances of the brand blue *actually* the brand blue?</span>
+-   <span id="589b">Colors: Have you stuck to a consistent, harmonious color palette? Are all instances of the brand blue _actually_ the brand blue?</span>
 -   <span id="dcfc">Shadows: If you used drop shadows, is the light source consistent for each and every one? Did you use the same blur, opacity, and spread values?</span>
 -   <span id="021b">Typography: Is your font stack logical and consistent (i.e., is there a reason that element is set in a sans)? Are your heading sizes consistent? Have you used proper (not faux) italics and bolding? Do all text links look right? Is all text both legible and readable?</span>
--   <span id="fbb2">Imagery: Do any images look blurry, pixelated, or otherwise funky? Are any images broken or crazily heavy in terms of file size? Do all *non-decorative* images have alt tags?</span>
+-   <span id="fbb2">Imagery: Do any images look blurry, pixelated, or otherwise funky? Are any images broken or crazily heavy in terms of file size? Do all _non-decorative_ images have alt tags?</span>
 -   <span id="4760">Logo: It’s (usually) just another image, but it’s so important it warrants its own step. Is it the latest version? Is it crisp (not blurry or pixelated)?</span>
 
 Once you’ve made these initial visual checks, you’ll want to ensure that your site’s appearance is consistent and functional on any screen.
@@ -196,7 +195,7 @@ The elements that tend to vary most across browsers, and therefore are most impo
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*zXLmWvXkMI5Wv2LF.jpeg" class="graf-image" /></figure>Make sure your site looks and performs beautifully on any device.
 
-There have never been more web-capable devices around, and with that comes a staggering array of screen sizes. Done right, your site *should* perform well on any screen size, but be sure to double check. (You are a perfectionist after all, right?)
+There have never been more web-capable devices around, and with that comes a staggering array of screen sizes. Done right, your site _should_ perform well on any screen size, but be sure to double check. (You are a perfectionist after all, right?)
 
 This is also where mobile navigation is crucial. Be sure to test out the user’s ability to navigate around the website on a touchscreen device, and make sure nothing gets lost in device transition.
 
@@ -214,15 +213,15 @@ In Webflow, we automatically scale, compress, and optimize images for every devi
 
 ### Website functionality testing
 
-Design and functionality go hand in hand, but I like to isolate the two to make sure the website both *looks* the way it was designed to and that it *performs* as intended.
+Design and functionality go hand in hand, but I like to isolate the two to make sure the website both _looks_ the way it was designed to and that it _performs_ as intended.
 
 ### Integration testing
 
-This one is super important, and can range from a quick task to a giant one, depending on how many integrations you have. Typically, I’ll create a list of integrations *as I add them* so I don’t forget later on.
+This one is super important, and can range from a quick task to a giant one, depending on how many integrations you have. Typically, I’ll create a list of integrations _as I add them_ so I don’t forget later on.
 
 Some common integrations to test might be:
 
--   <span id="54e1">Web forms (check that the forms work *and* that submitted information goes to the right place)</span>
+-   <span id="54e1">Web forms (check that the forms work _and_ that submitted information goes to the right place)</span>
 -   <span id="5ad2">Autoresponders</span>
 -   <span id="1079">Marketing emails (MailChimp, Constant Contact, HubSpot, drip campaigns, etc.)</span>
 -   <span id="10e0">RSS feeds</span>
@@ -247,7 +246,7 @@ Rather than doing all this manually, I’d suggest trying a link crawler like th
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*HxnVQM9RoqyuTlLP.jpeg" class="graf-image" /></figure>Give the king its due.
 
-Content is king, and the testing process should be fit for one. Typically this involves making sure that all content has been updated and approved. I can’t tell you how many websites I’ve found that *still* have a l*orem ipsum* paragraph somewhere.
+Content is king, and the testing process should be fit for one. Typically this involves making sure that all content has been updated and approved. I can’t tell you how many websites I’ve found that _still_ have a l*orem ipsum* paragraph somewhere.
 
 Now, if you practice <a href="https://webflow.com/blog/content-first-design" class="markup--anchor markup--p-anchor">content-first design</a>, you should have final content already in place, so you can focus on more fine-toothed-comb review, like proofing for spelling and grammatical errors.
 
@@ -318,7 +317,7 @@ The title and description follow the same rules as their SEO counterparts, but i
 
 This is hugely beneficial because it lets you determine what the messaging (and image) will be when others share your website, helping you keep control of your brand.
 
-------------------------------------------------------------------------
+---
 
 ### Tool List:
 
@@ -400,7 +399,7 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*66ncH3hioTVPIr2l" class="graf-image" /></figure><a href="https://1stwebdesigner.com/" class="markup--anchor markup--p-anchor">1st Web DesignerFollow this web design blog to find out what’s new in freelance, marketing, UX etc. categories. <em>1stwebdesigner.com</em></a>
 
-------------------------------------------------------------------------
+---
 
 <a href="http://toptal.com/developers" class="markup--anchor markup--mixtapeEmbed-anchor" title="http://toptal.com/developers"><strong>Hire Freelance Developers from the Top 3% - Toptal®</strong><br />
 <em>Toptal is a marketplace for top developers, engineers, programmers, coders, architects, and consultants. Top companies…</em>toptal.com</a><a href="http://toptal.com/developers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -486,7 +485,7 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 <a href="https://redbot.org/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://redbot.org/"><strong>REDbot</strong><br />
 <em>Lint for your HTTP resources</em>redbot.org</a><a href="https://redbot.org/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://pageweight.imgix.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://pageweight.imgix.com/"><strong>imgix Page Weight Tool * Learn how to improve your site or app's speed.</strong><br />
+<a href="https://pageweight.imgix.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://pageweight.imgix.com/"><strong>imgix Page Weight Tool \* Learn how to improve your site or app's speed.</strong><br />
 <em>imgix Page Weight Tool measures the resources on your site and then recommends how to improve your site's load time.</em>pageweight.imgix.com</a><a href="https://pageweight.imgix.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://tinypng.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://tinypng.com/"><strong>TinyPNG - Compress PNG images while preserving transparency</strong><br />

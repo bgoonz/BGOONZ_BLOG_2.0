@@ -1,9 +1,8 @@
-Basic Web Development Environment Setup
-=======================================
+# Basic Web Development Environment Setup
 
 Windows Subsystem for Linux (WSL) and Ubuntu
 
-------------------------------------------------------------------------
+---
 
 ### Basic Web Development Environment Setup
 
@@ -65,7 +64,7 @@ Test if you have Node.js installed by opening an Ubuntu terminal and typing `nod
 1.  <span id="9098">In the Ubuntu terminal, type `sudo apt update` and press Enter</span>
 2.  <span id="806b">In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter</span>
 3.  <span id="5f3a">In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter</span>
-4.  <span id="2abd">In the Ubuntu terminal, type `. ./.bashrc` and press Enter</span>
+4.  <span id="2abd">In the Ubuntu terminal, type `. ./.bashrc` and press Enter</span>
 5.  <span id="3c16">In the Ubuntu terminal, type `nvm install --lts` and press Enter</span>
 6.  <span id="d567">Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!</span>
 

@@ -1,9 +1,8 @@
-PostgreSQL In 43 Commands Or Less
-=================================
+# PostgreSQL In 43 Commands Or Less
 
 In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session consists of the following cooperating processes (programs):
 
-------------------------------------------------------------------------
+---
 
 ### PostgreSQL In 43 Commands Or Less
 
@@ -55,7 +54,7 @@ SQL is used with Relational Database Management Systems, or RDBMS. These are dat
 <a href="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31"><strong>Postgresql Cheat Sheet</strong><br />
 <em>PostgreSQL commands</em>medium.com</a><a href="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### Inserting Data into a Database
 
@@ -105,7 +104,7 @@ The <a href="https://careerkarma.com/blog/sql-update/" class="markup--anchor mar
 
 The <a href="https://careerkarma.com/blog/sql-delete-row/" class="markup--anchor markup--p-anchor">DELETE</a> statement removes one or more rows from a table. By default, this command deletes all the records in a table. The DELETE statement is usually used with a WHERE statement so that only particular records are deleted.
 
-*The SQL ALTER TABLE statement adds, changes, or removes a column in a table. This statement lets you modify a table after it has been created, even if the table stores records.*
+_The SQL ALTER TABLE statement adds, changes, or removes a column in a table. This statement lets you modify a table after it has been created, even if the table stores records._
 
 You may decide that you need to make a change to an SQL table. For instance, you may want to rename a column or add a new column to the table. These changes are all possible with the SQL ALTER TABLE command.
 
@@ -119,13 +118,13 @@ The ALTER TABLE command allows you to change an existing table by:
 -   <span id="c667">Changing a data type.</span>
 -   <span id="64bf">Renaming a column.</span>
 
-*There is no SQL ADD COLUMN statement. To add a column to an SQL table, you must use the ALTER TABLE ADD syntax. ALTER TABLE lets you add, delete, or modify columns in a table.*
+_There is no SQL ADD COLUMN statement. To add a column to an SQL table, you must use the ALTER TABLE ADD syntax. ALTER TABLE lets you add, delete, or modify columns in a table._
 
-After you have created a table in *SQL*, you may realize that you forgot to add in a specific column that you need. For example, say you may have created a database to store a list of suppliers. Maybe you forgot to include a field to store the category of goods the supplier offers.
+After you have created a table in _SQL_, you may realize that you forgot to add in a specific column that you need. For example, say you may have created a database to store a list of suppliers. Maybe you forgot to include a field to store the category of goods the supplier offers.
 
-In these situations, you can use the *SQL ALTER TABLE* statement to amend an existing table. This statement allows you to add a column, change a column, or delete a column.
+In these situations, you can use the _SQL ALTER TABLE_ statement to amend an existing table. This statement allows you to add a column, change a column, or delete a column.
 
-Below is an *SQL* command that will create an employee database that stores three columns. This database stores name of an employee, their title, and the branch for which they work.
+Below is an _SQL_ command that will create an employee database that stores three columns. This database stores name of an employee, their title, and the branch for which they work.
 
     CREATE TABLE employees (
       name VARCHAR(50) NOT NULL,
@@ -133,7 +132,7 @@ Below is an *SQL* command that will create an employee database that stores thre
        branch VARCHAR(25) NOT NULL
     );
 
-But what if we’ve forgotten to add a column? Say we need to add a column that states whether an employee is on probation. That’s where the *ALTER TABLE* statement comes in.
+But what if we’ve forgotten to add a column? Say we need to add a column that states whether an employee is on probation. That’s where the _ALTER TABLE_ statement comes in.
 
 ### SQL Add Column
 
@@ -208,13 +207,13 @@ If you query both a column and an aggregate function in the same SELECT statemen
 
 ### SQL Subquery
 
-*An SQL subquery is a query inside another query. It is used in the WHERE or HAVING clause of an SQL statement. Subqueries let you specify the results of one query as an argument in another query.*
+_An SQL subquery is a query inside another query. It is used in the WHERE or HAVING clause of an SQL statement. Subqueries let you specify the results of one query as an argument in another query._
 
-When you’re writing an *SQL* query, you may want to specify a parameter based on the result of another query. For example, say you have a list of customers. You may want to get a list of customers who have placed orders worth a value over a certain amount. Order and customer information is stored within a different table.
+When you’re writing an _SQL_ query, you may want to specify a parameter based on the result of another query. For example, say you have a list of customers. You may want to get a list of customers who have placed orders worth a value over a certain amount. Order and customer information is stored within a different table.
 
-That’s where the *SQL subquery* operation comes in. *Subqueries*, also known as nested queries, are *SELECT* queries within the *WHERE* clause of another *SQL* query. The main *SQL* query then uses the result of the subquery.
+That’s where the _SQL subquery_ operation comes in. _Subqueries_, also known as nested queries, are _SELECT_ queries within the _WHERE_ clause of another _SQL_ query. The main _SQL_ query then uses the result of the subquery.
 
-------------------------------------------------------------------------
+---
 
 ### SQL query examples
 
@@ -247,7 +246,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-insert.html" class="markup--
 The <a href="https://www.postgresql.org/docs/12/sql-select.html" class="markup--anchor markup--p-anchor">SELECT command</a> (when used without the optional WHERE condition) is used to fetch all data from a database table:
 
     postgres=# select * from dummy_table;
-            name |  address   | age 
+            name |  address   | age
             ---------+--------------+ -----
             XYZ   | location-A |  25
             ABC   | location-B |  35
@@ -262,7 +261,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-select.html" class="markup--
     postgres=# update dummy_table set age=50 where name='PQR';
             UPDATE 1
             postgres=# select * from dummy_table;
-            name |  address   | age 
+            name |  address   | age
             --------+--------------+-------
             XYZ  | location-A |  25
             ABC  | location-B |  35
@@ -275,7 +274,7 @@ Next, we’ll use the UPDATE command to change the name and age of a person whos
     postgres=# update dummy_table set name='GHI',age=54 where address='location-D';
     UPDATE 1
     postgres=# select * from dummy_table;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+-----
      XYZ  | location-A |  25
      ABC  | location-B |  35
@@ -285,14 +284,14 @@ Next, we’ll use the UPDATE command to change the name and age of a person whos
 
     postgres=#
 
-If we want to modify all the values in the address and age columns in dummy\_table, then we do not need to use the WHERE clause. The UPDATE query would look like this:
+If we want to modify all the values in the address and age columns in dummy_table, then we do not need to use the WHERE clause. The UPDATE query would look like this:
 
     postgres=# update dummy_table set age=54,address='location-X';
     UPDATE 4
 
 
     postgres=# select * from dummy_table ;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+--------
      XYZ  | location-X |  54
      ABC  | location-X |  54
@@ -305,7 +304,7 @@ If we want to modify all the values in the address and age columns in dummy\_tab
 A RETURNING clause returns the updated rows. This is optional in UPDATE:
 
     postgres=# update dummy_table set age=30 where name='XYZ' returning age as age_no;
-     age_no 
+     age_no
     ---------
           30
     (1 row)
@@ -331,7 +330,7 @@ In PostgreSQL, with the help of <a href="https://www.postgresql.org/docs/12/func
 ### Less than or equal to query:
 
     postgres=# select * from dummy_table where age <=50;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+-----
      XYZ  | location-A |  25
      ABC  | location-B |  35
@@ -342,7 +341,7 @@ In PostgreSQL, with the help of <a href="https://www.postgresql.org/docs/12/func
 ### Greater than or equal to query:
 
     postgres=# select * from dummy_table where age>=50;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+-----
      PQR  | location-D |  50
     (1 row)
@@ -350,7 +349,7 @@ In PostgreSQL, with the help of <a href="https://www.postgresql.org/docs/12/func
 ### Not equal to query:
 
     postgres=# select * from dummy_table where age<>50;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+-----
      XYZ  | location-A |  25
      ABC  | location-B |  35
@@ -360,7 +359,7 @@ In PostgreSQL, with the help of <a href="https://www.postgresql.org/docs/12/func
 ### Equal to query:
 
     postgres=# select * from dummy_table where age=50;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+-----
      PQR  | location-D |  50
     (1 row)
@@ -372,7 +371,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-select.html#SQL-DISTINCT" cl
 ### SELECT query without DISTINCT clause
 
     postgres=# select age from dummy_table order by 1;
-     age 
+     age
     -----
        1
        1
@@ -384,7 +383,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-select.html#SQL-DISTINCT" cl
 ### SELECT query with DISTINCT clause
 
     postgres=# select distinct age from dummy_table order by 1;
-     age 
+     age
     -----
        1
        2
@@ -422,14 +421,14 @@ Using the syntax in the example below, we can create a table using a SELECT stat
     postgres=# select 'My name  is X' as col1 , 10 as col2, 'Address is -XYZ location' as col3  into new_table;
     SELECT 1
     postgres=# select * from new_table ;
-         col1      | col2 |           col3           
+         col1      | col2 |           col3
     ---------------+------+--------------------------
      My name  is X |   10 | Address is -XYZ location
     (1 row)
 
 ### 12. Query timeout in PostgreSQL
 
-We can command a query to timeout after a certain period with the help of <a href="https://www.enterprisedb.com/postgres-tutorials/how-tune-postgresql-guc-parameters" class="markup--anchor markup--p-anchor">GUC parameters</a> (short for grand unified configuration) like statement\_timeout, which aborts any statement that takes more than the specified number of milliseconds:
+We can command a query to timeout after a certain period with the help of <a href="https://www.enterprisedb.com/postgres-tutorials/how-tune-postgresql-guc-parameters" class="markup--anchor markup--p-anchor">GUC parameters</a> (short for grand unified configuration) like statement_timeout, which aborts any statement that takes more than the specified number of milliseconds:
 
     postgresql=# set statement_timeout=10;
     SET
@@ -451,7 +450,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-createsequence.html" class="
     postgres=# insert into tab values (nextval('seq'));
     INSERT 0 1
     postgres=# select * from tab;
-     n 
+     n
     ---
      1
      1
@@ -464,7 +463,7 @@ PostgreSQL doesn’t directly support BLOBs (binary large objects), but we can w
 
 Let's assume you have an image (in png format) downloaded in the /home/edb/ folder:
 
-    [edb@localhost]$ ls /home/edb/mypic.png 
+    [edb@localhost]$ ls /home/edb/mypic.png
     /home/edb/mypic.png
 
 We want to store this image in the PostgreSQL database.
@@ -476,14 +475,14 @@ Go to the bin folder of your PostgreSQL installation and connect to the psql ter
     postgres=# insert into testing values (1,lo_import('/home/edb/mypic.png'));
     INSERT 0 1
 
-The lo\_import() function loads the named file into pg\_largeobject and returns an OID (object identifier) value that will refer to the large object. Selecting the testing table will show just the OID and not the bits that have made up this photo.
+The lo_import() function loads the named file into pg_largeobject and returns an OID (object identifier) value that will refer to the large object. Selecting the testing table will show just the OID and not the bits that have made up this photo.
 
 ### 15. ILIKE query in PostgreSQL
 
 The ILIKE operator is a <a href="https://www.postgresql.org/docs/12/functions-matching.html" class="markup--anchor markup--p-anchor">matching function</a> similar to the LIKE operator, but with the advantage that it matches valus case-insensitively.
 
     postgres=# select * from ted;
-      n  
+      n
     -----
      TAR
      TaR
@@ -494,7 +493,7 @@ The ILIKE operator is a <a href="https://www.postgresql.org/docs/12/functions-ma
 ### Using ILIKE in a WHERE condition
 
     postgres=# select * from ted where n ilike 'TAR%';
-      n  
+      n
     -----
      TAR
      TaR
@@ -506,14 +505,14 @@ The ILIKE operator is a <a href="https://www.postgresql.org/docs/12/functions-ma
 
 <a href="https://www.enterprisedb.com/postgres-tutorials/how-run-hierarchical-queries-oracle-and-postgresql" class="markup--anchor markup--p-anchor">Hierarchical queries</a> are ones where the results have a structured or parent-child relationship and are displayed in a tree structure. To see how hierarchical queries work, create a dummy table:
 
-    create table test_table(  
-      emp_no                int,  
-      ename                 char(5),  
-      job                       char(9),  
+    create table test_table(
+      emp_no                int,
+      ename                 char(5),
+      job                       char(9),
       manager_no        int
     );
 
-Insert data into ‘test\_table’:
+Insert data into ‘test_table’:
 
     insert into test_table values(10,'A1','CEO',null);
     insert into test_table values(11, 'B1', 'VP', 10);
@@ -534,39 +533,39 @@ The <a href="https://www.postgresql.org/docs/9.1/functions-string.html" class="m
 ### Basic SELECT query
 
     postgres=# select name,age from dummy_table;
-     name | age 
+     name | age
     ------+-----
      XYZ  |  25
      ABC  |  35
      DEF  |  40
      PQR  |  54
-     PQR  |    
+     PQR  |
     (5 rows)
 
 ### Query with length function for column name and age
 
     postgres=# select length(name),length(age) from dummy_table;
-     length | length 
+     length | length
     --------+--------
           3 |      2
           3 |      2
           3 |      2
           3 |      2
-          3 |       
+          3 |
     (5 rows)
 
 ### 18. When a query has no destination for result data in PostgreSQL
 
 Say that while selecting a given function, we receive the error message below:
 
-    postgresql=# create or replace function f(n int) 
-    returns int 
-    as 
-    $$ 
-    begin 
+    postgresql=# create or replace function f(n int)
+    returns int
+    as
+    $$
+    begin
     select now();
     return 1;
-     end; 
+     end;
     $$ language 'plpgsql';
     CREATE FUNCTION
     postgres=# select f(9);
@@ -577,40 +576,40 @@ To avoid such errors, we can either use PERFORM or declare a variable and use it
 
 ### Using PERFORM
 
-    postgres=# create or replace function f(n int) 
-    returns int 
-    as 
-    $$ 
-    begin 
+    postgres=# create or replace function f(n int)
+    returns int
+    as
+    $$
+    begin
     perform
-    now(); 
-     return 1; 
-     end; 
+    now();
+     return 1;
+     end;
     $$ language 'plpgsql';
     CREATE FUNCTION
     postgresql=# select f(9);
-     f 
+     f
     ---
      1
     (1 row)
 
 ### Declaring a variable and using it in a SELECT INTO statement
 
-    postgres=# create or replace function f(n int) 
-    returns int 
-    as 
-    $$ 
-    declare 
+    postgres=# create or replace function f(n int)
+    returns int
+    as
+    $$
+    declare
     a date;
-    begin 
+    begin
     select now() into a;
-    raise notice ‘%s’,a; 
-    return 1; 
-    end; 
+    raise notice ‘%s’,a;
+    return 1;
+    end;
     $$ language 'plpgsql';
     CREATE FUNCTION
-     
-     
+
+
     postgresql=# select f(9);
               NOTICE: 24-SEP-20 13:15:46.23388s
                  f
@@ -626,7 +625,7 @@ With the help of the <a href="https://www.postgresql.org/docs/12/sql-copy.html" 
 
     postgres=#  copy dummy_table to '/tmp/abc.txt';
     COPY 5
-      
+
     postgres=# \! cat /tmp/abc.txt
     XYZ  location-A  25
     ABC   location-B  35
@@ -663,7 +662,7 @@ With the help of the <a href="https://www.postgresql.org/docs/12/sql-copy.html" 
 The following query can be used to show all the databases created:
 
     postgres=# select oid,datname from pg_database;
-      oid     |  datname  
+      oid     |  datname
     -----------+-----------
      13743 | postgres
          1     | template1
@@ -682,7 +681,7 @@ We can check the time needed for a query to execute by enabling \\timing at the 
 The SELECT query will now show the execution time:
 
     postgres=# select * from dummy_table;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+--------
      XYZ  | location-A | 25
      ABC  | location-B | 35
@@ -690,7 +689,7 @@ The SELECT query will now show the execution time:
      PQR  | location-D | 50
      CXC  | 1               | 50
     (5 rows)
-     
+
     Time: 0.440 ms
     postgres=#
 
@@ -712,13 +711,13 @@ Dynamic SQL queries are not cached in memory.
 The <a href="https://www.postgresql.org/docs/8.2/functions-aggregate.html" class="markup--anchor markup--p-anchor">COUNT query</a> returns the number of rows in a table. If we use (\*) this will include null values; otherwise null values will be excluded.
 
     postgres=# select count(*) from dummy_table;
-     count 
+     count
     -------
          5
     (1 row)
-     
+
     postgres=# select count(avg) from dummy_table;
-     count 
+     count
     -------
          4
     (1 row)
@@ -728,7 +727,7 @@ The <a href="https://www.postgresql.org/docs/8.2/functions-aggregate.html" class
 The <a href="https://www.postgresql.org/docs/12/queries-limit.html" class="markup--anchor markup--p-anchor">LIMIT clause</a> is used to limit the data amount returned by the SELECT statement. The query below will display only 1 row:
 
     postgres=# select * from dummy_table  limit 1;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+-----
      XYZ  | location-A |  25
     (1 row)
@@ -736,7 +735,7 @@ The <a href="https://www.postgresql.org/docs/12/queries-limit.html" class="marku
 <a href="https://www.postgresql.org/docs/12/queries-limit.html" class="markup--anchor markup--p-anchor">OFFSET</a> is used when we want to skip a particular number of rows:
 
     postgres=# select * from dummy_table  offset 4;
-     name | address | age 
+     name | address | age
     ------+---------+-----
      cxc  | 1       |  50
     (1 row)
@@ -745,7 +744,7 @@ The <a href="https://www.postgresql.org/docs/12/queries-limit.html" class="marku
 
 We can use <a href="https://www.postgresql.org/docs/9.1/plpgsql-control-structures.html" class="markup--anchor markup--p-anchor">conditional statements</a> like IF ... ELSE in an anonymous block. The example below checks if the values of variables abc and xyz are matching and prints the result— i.e., 150:
 
-    postgres=# Do 
+    postgres=# Do
                  $$
                  Declare
                   abc int;
@@ -753,11 +752,11 @@ We can use <a href="https://www.postgresql.org/docs/9.1/plpgsql-control-structur
                   begin
                   abc:=100;
                   xyz:=abc;
-                  if abc=xyz then 
-                   xyz=150;  
+                  if abc=xyz then
+                   xyz=150;
                   raise notice '%',xyz;
                  else
-                 end if;               
+                 end if;
                  end;
                    $$
     ;
@@ -791,11 +790,11 @@ We can use UPDATE with a JOIN and WHERE clause when we want to update the values
     postgres=# update Y set n1=X.n1 from X  where X.n=Y.n;
     UPDATE 2
     postgres=# select * from Y;
-     n |     n1     
+     n |     n1
     ---+------------
-     5 | axyz      
-     1 | abc       
-     2 | xyz       
+     5 | axyz
+     1 | abc
+     2 | xyz
     (3 rows)
 
     postgres=#
@@ -805,10 +804,10 @@ We can use UPDATE with a JOIN and WHERE clause when we want to update the values
 The <a href="https://www.postgresql.org/docs/current/tutorial-join.html" class="markup--anchor markup--p-anchor">INNER JOIN</a> command will find rows from two (or more) tables where the specified columns data in the tables match:
 
     postgres=# select *  from x inner join  y on  x.n1 = y.n1;
-     n |     n1     | n |     n1     
+     n |     n1     | n |     n1
     ---+------------+---+------------
-     1 | abc        | 1 | abc       
-     2 | xyz        | 2 | xyz       
+     1 | abc        | 1 | abc
+     2 | xyz        | 2 | xyz
     (2 rows)
 
     postgres=#
@@ -823,7 +822,7 @@ The <a href="https://www.postgresql.org/docs/12/functions-conditional.html" clas
                   ELSE 'other'
            END
         FROM  dummy_table;
-     age | case  
+     age | case
     -----+-------
       25 | one
       35 | other
@@ -867,7 +866,7 @@ The recursive query below will give all the reports in a certain order:
     SELECT *
     FROM emp_testnew;
 
-     id | ename | emanager 
+     id | ename | emanager
     ----+-------+----------
       2 | xyz   |        1
       3 | def   |        2
@@ -879,14 +878,14 @@ The recursive query below will give all the reports in a certain order:
 
 ### 30. PostgreSQL log queries
 
-Using the <a href="https://www.postgresql.org/docs/12/pgstatstatements.html" class="markup--anchor markup--p-anchor">pg_stat_statements module</a>, we can track execution statistics for all SQL statements. To do this, we need to create an extension and add in shared\_preload\_libraries inside the postgresql.conf file:
+Using the <a href="https://www.postgresql.org/docs/12/pgstatstatements.html" class="markup--anchor markup--p-anchor">pg_stat_statements module</a>, we can track execution statistics for all SQL statements. To do this, we need to create an extension and add in shared_preload_libraries inside the postgresql.conf file:
 
     postgres=# create extension pg_stat_statements;
     CREATE EXTENSION
 
 
     postgres=# show shared_preload_libraries ;
-                               shared_preload_libraries                           
+                               shared_preload_libraries
     -------------------------------------------------
      $libdir/pg_stat_statements
     (1 row)
@@ -902,10 +901,10 @@ We can also configure PostgreSQL to generate log output by enabling these parame
     log_directory = 'log'
     log_filename = ‘postgresql-%Y-%m-%d_%H%M%S.log'
     log_destination = ‘stderr’
-    Log file will be created under the pg_log directory which resides under the data folder. 
+    Log file will be created under the pg_log directory which resides under the data folder.
 
     [centos@tushar-ldap-docker bin]$ ls  data/log
-    postgresql-2020-09-17_150932.log  postgresql-2020-09-19_000000.log  
+    postgresql-2020-09-17_150932.log  postgresql-2020-09-19_000000.log
     [centos@tushar-ldap-docker bin]$
 
 Queries will be recorded in these files.
@@ -919,7 +918,7 @@ We can declare a variable in PostgreSQL at the psql prompt:
 ### Using a variable in a WHERE condition
 
     postgres=# select * from dummy_table where age=:cond;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+-----
      PQR  | location-D |  50
     (1 row)
@@ -928,7 +927,7 @@ OR
 
     postgres=# \set cond 50
     postgres=# select :cond+100 ;
-     ?column? 
+     ?column?
     ----------
           150
     (1 row)
@@ -938,19 +937,19 @@ OR
 PostgreSQL offers <a href="https://www.postgresql.org/docs/12/functions-datetime.html" class="markup--anchor markup--p-anchor">functions for date and time</a> that can be used in queries.
 
     postgres=# select now();
-                   now                
+                   now
     ----------------------------------
      22-SEP-20 03:08:42.636385 +05:30
     (1 row)
 
     postgres=# select current_date;
-     current_date 
+     current_date
     --------------
      22-SEP-20
     (1 row)
 
     postgres=# select current_time;
-         current_time      
+         current_time
     -----------------------
      03:08:53.648466+05:30
     (1 row)
@@ -967,7 +966,7 @@ We can also perform a date range query to find rows with values between two time
     postgres=# insert into datetable values (3,'12-01-2000');
     INSERT 0 1
     postgres=# select * from datetable where n1 between '12-01-1980' and '12-01-2000';
-     n |         n1         
+     n |         n1
     ---+--------------------
      1 | 12-JAN-80 00:00:00
      3 | 12-JAN-00 00:00:00
@@ -990,7 +989,7 @@ When a PL/pgSQL function is declared to return a SETOF some data type, the retur
 
 
     postgres=# select * from get(9);
-     get 
+     get
     -----
       25
       35
@@ -1017,7 +1016,7 @@ When a PL/pgSQL function is declared to return a SETOF some data type, the retur
     postgres=# analyze ty;
     ANALYZE
     postgres=# explain  select * from ty where n<=1;
-                                 QUERY PLAN                              
+                                 QUERY PLAN
     ---------------------------------------------------------------------
      Gather  (cost=1000.00..4536.88 rows=30 width=4)
        Workers Planned: 1
@@ -1049,7 +1048,7 @@ These operators are used to match conditions in SQL statements—e.g., in WHERE 
 In the following SQL query, there are two records with the value 50:
 
     postgres=# select age from dummy_table;
-     age 
+     age
     -----
       25
       35
@@ -1061,7 +1060,7 @@ In the following SQL query, there are two records with the value 50:
 We can use the following SELECT … HAVING query to find the duplicate rows:
 
     postgres=#  select age, count(age) from dummy_table group by age having count(age)>1;
-     age | count 
+     age | count
     -----+-------
       50 |     2
     (1 row)
@@ -1112,10 +1111,10 @@ To create a pivot table you need to install the <a href="https://www.postgresql.
        where attri = ''a2'' or attri = ''a3''
        order by 1,2')
     AS newtb(row_name varchar(10), category_1 varchar(10), category_2 varchar(10), category_3 varchar(10));
-     row_name | category_1 | category_2 | category_3 
+     row_name | category_1 | category_2 | category_3
     ----------+------------+------------+--------------------------
-       t1       |              v2        |            v3    | 
-       t2       |             v6         |             v7   | 
+       t1       |              v2        |            v3    |
+       t2       |             v6         |             v7   |
     (2 rows)
 
 ### 39. SELF JOIN query in PostgreSQL
@@ -1124,8 +1123,8 @@ When we join a table against itself, this is called a SELF JOIN. This can be don
 
     postgres=# create table emp1(emp_id int, firstname char(10), lastname char(10) , manager_id int);
     CREATE TABLE
-    postgres=# 
-    postgres=# 
+    postgres=#
+    postgres=#
     postgres=# insert into emp1 values(1,'ABC','XYZ',NULL);
     INSERT 0 1
     postgres=# insert into emp1 values(2,'TYU','BGV',1);
@@ -1141,13 +1140,13 @@ When we join a table against itself, this is called a SELF JOIN. This can be don
 
 
     postgres=# select a.firstname,b.lastname from emp1 a inner join emp1 b on a.emp_id=b.manager_id order by 1 ;
-     firstname  |  lastname  
+     firstname  |  lastname
     ------------+------------
-     ABC        | ZZV       
-     ABC        | BGV       
-     TEU        | QZV       
-     TYU        | WZV       
-     TYU        | AZV       
+     ABC        | ZZV
+     ABC        | BGV
+     TEU        | QZV
+     TYU        | WZV
+     TYU        | AZV
     (5 rows)
 
     postgres=#
@@ -1161,7 +1160,7 @@ With the help of <a href="https://www.postgresql.org/docs/12/queries-with.html" 
      name varchar(10) NOT NULL,
      parent_id integer );
     CREATE TABLE
-     
+
     postgres=# insert into recu_pc values (1, 'Grandmother', NULL);
     INSERT 0 1
     postgres=# insert into recu_pc values (2, 'mother', 1);
@@ -1169,16 +1168,16 @@ With the help of <a href="https://www.postgresql.org/docs/12/queries-with.html" 
     postgres=# insert into recu_pc values (3, 'daughter', 2);
     INSERT 0 1
 
-     
+
     postgres=# WITH RECURSIVE rec_q (id) as
-    (          
+    (
       SELECT recu_pc.id, recu_pc.name from recu_pc where name='mother'
       UNION ALL
       SELECT recu_pc.id, recu_pc.name from rec_q, recu_pc where recu_pc.parent_id = rec_q.id
       )
     SELECT *
     FROM rec_q;
-     id |   name   
+     id |   name
     ----+----------
       2 | mother
       3 | daughter
@@ -1188,14 +1187,14 @@ With the help of <a href="https://www.postgresql.org/docs/12/queries-with.html" 
 
 Using an <a href="https://www.postgresql.org/docs/12/sql-do.html" class="markup--anchor markup--p-anchor">anonymous block</a>, we can define a variable that can be passed to in a query:
 
-    postgres=# do 
+    postgres=# do
     $$
-    declare 
+    declare
     a int;
-    begin 
-    select age into a from dummy_table  
+    begin
+    select age into a from dummy_table
     where name ='XYZ';
-    raise notice '%',a; 
+    raise notice '%',a;
     end;
     $$;
     NOTICE:  25
@@ -1207,12 +1206,12 @@ A prepared statement is used to optimize performance. When the <a href="https://
 
 Prepared statements can accept parameters.
 
-    postgres=# prepare test(int) as 
+    postgres=# prepare test(int) as
     select * from dummy_table where age=$1;
     PREPARE
-     
+
     postgres=# execute test(50);
-     name |  address   | age 
+     name |  address   | age
     ------+------------+---------
      PQR  | location-D |  50
      CXC | 1                |  50
@@ -1223,19 +1222,19 @@ Prepared statements can accept parameters.
 To Identify or select rows that have NULL values, the <a href="https://www.postgresql.org/docs/12/functions-comparison.html" class="markup--anchor markup--p-anchor">IS NULL</a> condition can be used in the WHERE clause.
 
     postgres=# select * from dummy_table;
-     name |  address   | age 
+     name |  address   | age
     ------+------------+-----
      XYZ  | location-A |  25
      ABC  | location-B |  35
      DEF  | location-C |  40
      PQR  | location-D |  54
-     PQR  | location-D |    
+     PQR  | location-D |
     (5 rows)
 
 Identifying null values in ‘age’ column:
 
     postgres=# select name from dummy_table where age is null;
-     name 
+     name
     ------
      PQR
     (1 row)

@@ -1,9 +1,8 @@
-Life Saving Bash Scripts Part 2
-===============================
+# Life Saving Bash Scripts Part 2
 
 I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the…
 
-------------------------------------------------------------------------
+---
 
 ### Life Saving Bash Scripts Part 2
 
@@ -11,14 +10,14 @@ I am not saying they’re in any way special compared with other bash scripts…
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*aWKygEnTVdHuulB4.gif" class="graf-image" /></figure>Below the following 20 commands I will include <a href="https://gist.github.com/bgoonz/2d2314216d337a69b31bcb5a8880ade7" class="markup--anchor markup--pullquote-anchor">the gist files</a> so you can download these commands all at once as well as see them syntax highlighted but I decided to include them as plain code blocks for the ease with which they can be copied and pasted as well as detected by the web crawlers of various search engines (it could be the case that it has no affect on seo… but that’s a chance I don’t have to take).
 
-------------------------------------------------------------------------
+---
 
 ### Discover More:
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### Part 2 of this series is the infinitely more comprehensive part 1 of the series:
 
@@ -104,7 +103,7 @@ Recursively find suid executables
 
     find / \( -perm -4000 -o -perm -2000 \) -type f -exec ls -la {} \;
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 1.) Sanitize Directory:
 

@@ -1,13 +1,12 @@
-What Are Bash Aliases And Why Should You Be Using Them!
-=======================================================
+# What Are Bash Aliases And Why Should You Be Using Them!
 
 A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for users to customize their…
 
-------------------------------------------------------------------------
+---
 
 ### What Are Bash Aliases And Why Should You Be Using Them!
 
-A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for users to customize their experience in a <a href="https://opensource.com/article/19/7/what-posix-richard-stallman-explains" class="markup--anchor markup--p-anchor">POSIX</a> terminal. They are often defined in **$HOME/.bashrc** or **$HOME/bash\_aliases** (which must be loaded by **$HOME/.bashrc**).
+A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for users to customize their experience in a <a href="https://opensource.com/article/19/7/what-posix-richard-stallman-explains" class="markup--anchor markup--p-anchor">POSIX</a> terminal. They are often defined in **$HOME/.bashrc** or **$HOME/bash_aliases** (which must be loaded by **$HOME/.bashrc**).
 
 Most distributions add at least some popular aliases in the default **.bashrc** file of any new user account. These are simple ones to demonstrate the syntax of a Bash alias:
 
@@ -26,7 +25,7 @@ Those aliases are great to have, but they just scratch the surface of what’s p
 
 ### Set up first
 
-Before beginning, create a file called **~/.bash\_aliases**:
+Before beginning, create a file called **~/.bash_aliases**:
 
     $ touch ~/.bash_aliases
 
@@ -36,7 +35,7 @@ Then, make sure that this code appears in your **~/.bashrc** file:
         source $HOME/.bash_aliases
     fi
 
-If you want to try any of the aliases in this article for yourself, enter them into your **.bash\_aliases** file, and then load them into your Bash session with the **source ~/.bashrc** command.
+If you want to try any of the aliases in this article for yourself, enter them into your **.bash_aliases** file, and then load them into your Bash session with the **source ~/.bashrc** command.
 
 -   <span id="75f5"><a href="https://opensource.com/article/19/7/bash-aliases" class="markup--anchor markup--li-anchor">source</a></span>
 

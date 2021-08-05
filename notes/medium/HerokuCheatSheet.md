@@ -1,9 +1,8 @@
-Heroku Cheat Sheet
-==================
+# Heroku Cheat Sheet
 
 a cheatsheet for using heroku-cli
 
-------------------------------------------------------------------------
+---
 
 ### Heroku Cheat Sheet
 
@@ -49,7 +48,7 @@ a cheatsheet for using heroku-cli
 
     heroku addons:add pgbackups:auto-month
 
-See: <a href="https://devcenter.heroku.com/articles/heroku-postgresql" class="markup--anchor markup--p-anchor" title="https://devcenter.heroku.com/articles/heroku-postgresql">Heroku PostgreSQL</a> *(*<a href="http://devcenter.heroku.com" class="markup--anchor markup--p-anchor" title="http://devcenter.heroku.com"><em>devcenter.heroku.com</em></a>*)*
+See: <a href="https://devcenter.heroku.com/articles/heroku-postgresql" class="markup--anchor markup--p-anchor" title="https://devcenter.heroku.com/articles/heroku-postgresql">Heroku PostgreSQL</a> _(_<a href="http://devcenter.heroku.com" class="markup--anchor markup--p-anchor" title="http://devcenter.heroku.com"><em>devcenter.heroku.com</em></a>_)_
 
 ### `config` - Environment var configuration
 
@@ -115,7 +114,7 @@ See: <a href="https://devcenter.heroku.com/articles/heroku-postgresql" class="ma
     heroku domains:clear
     heroku domains:remove example.com
 
-See: <a href="https://devcenter.heroku.com/articles/custom-domains" class="markup--anchor markup--p-anchor" title="https://devcenter.heroku.com/articles/custom-domains">Custom domains</a> *(*<a href="http://devcenter.heroku.com" class="markup--anchor markup--p-anchor" title="http://devcenter.heroku.com"><em>devcenter.heroku.com</em></a>*)*
+See: <a href="https://devcenter.heroku.com/articles/custom-domains" class="markup--anchor markup--p-anchor" title="https://devcenter.heroku.com/articles/custom-domains">Custom domains</a> _(_<a href="http://devcenter.heroku.com" class="markup--anchor markup--p-anchor" title="http://devcenter.heroku.com"><em>devcenter.heroku.com</em></a>_)_
 
 ### Wildcard domains
 

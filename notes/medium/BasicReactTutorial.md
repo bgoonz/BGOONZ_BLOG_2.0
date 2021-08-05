@@ -1,15 +1,14 @@
-Basic React Tutorial
-====================
+# Basic React Tutorial
 
 Random Things to Remember
 
-------------------------------------------------------------------------
+---
 
 ### Basic React Tutorial
 
 #### Random Things to Remember
 
-#### Using `()` implicitly returns components.Role of `index.js` is to *render* your application.The reference to `root` comes from a div in the body of your public html file.State of a component is simply a regular JS Object.Class Components require `render()` method to return JSX.Functional Components directly return JSX.`Class` is `className` in React.When parsing for an integer just chain `Number.parseInt("123")`
+#### Using `()` implicitly returns components.Role of `index.js` is to _render_ your application.The reference to `root` comes from a div in the body of your public html file.State of a component is simply a regular JS Object.Class Components require `render()` method to return JSX.Functional Components directly return JSX.`Class` is `className` in React.When parsing for an integer just chain `Number.parseInt("123")`
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*16IltJu5wXjzgXyU.gif" class="graf-image" /></figure>-   <span id="3b86">**Use ternary operator if you want to make a conditional inside a fragment.**</span>
 

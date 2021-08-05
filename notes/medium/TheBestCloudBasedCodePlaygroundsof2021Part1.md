@@ -1,9 +1,8 @@
-The Best Cloud-Based Code Playgrounds of 2021 (Part 1)
-======================================================
+# The Best Cloud-Based Code Playgrounds of 2021 (Part 1)
 
 A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with client-side code and…
 
-------------------------------------------------------------------------
+---
 
 ### The Best Cloud-Based Code Playgrounds of 2021 (Part 1)
 
@@ -11,27 +10,27 @@ A plethora of front-end code playgrounds have appeared over the years. They offe
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*oUZy2IkIQGDbkSVQRGCvKQ.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Typical features of these online playgrounds include:
 
--   <span id="3386">***color-coded HTML, CSS and JavaScript editors***</span>
--   <span id="152b">***a preview window — many update on the fly without a refresh***</span>
--   <span id="c746">***HTML pre-processors such as HAML***</span>
--   <span id="bf6f">***LESS, SASS and Stylus CSS pre-processing***</span>
--   <span id="8093">***inclusion of popular JavaScript libraries***</span>
--   <span id="b6d5">***developer consoles and code validation tools***</span>
--   <span id="98e5">***sharing via a short URL***</span>
--   <span id="e7c5">***embedding demonstrations in other pages***</span>
--   <span id="2e11">***code forking***</span>
--   <span id="efa6">***zero cost (or payment for premium services only)***</span>
--   <span id="782a">***showing off your coding skills to the world!***</span>
+-   <span id="3386">**_color-coded HTML, CSS and JavaScript editors_**</span>
+-   <span id="152b">**_a preview window — many update on the fly without a refresh_**</span>
+-   <span id="c746">**_HTML pre-processors such as HAML_**</span>
+-   <span id="bf6f">**_LESS, SASS and Stylus CSS pre-processing_**</span>
+-   <span id="8093">**_inclusion of popular JavaScript libraries_**</span>
+-   <span id="b6d5">**_developer consoles and code validation tools_**</span>
+-   <span id="98e5">**_sharing via a short URL_**</span>
+-   <span id="e7c5">**_embedding demonstrations in other pages_**</span>
+-   <span id="2e11">**_code forking_**</span>
+-   <span id="efa6">**_zero cost (or payment for premium services only)_**</span>
+-   <span id="782a">**_showing off your coding skills to the world!_**</span>
 
-------------------------------------------------------------------------
+---
 
 #### The following list is in no particular order and which playground you use is a matter of application and personal taste, they each have their own specialities.
 
-------------------------------------------------------------------------
+---
 
 ### 1.) REPL.IT
 
@@ -41,7 +40,7 @@ A plethora of front-end code playgrounds have appeared over the years. They offe
 
 In your browser. Repl.it runs fully in your browser, so you can get started coding in seconds. No more ZIPs, PKGs, DMGs and WTFs.
 
-> Any OS, any device***(I’m looking at you chromebook coders)***. You can use Repl.it on macOS, Windows, Linux, or any other OS .
+> Any OS, any device**_(I’m looking at you chromebook coders)_**. You can use Repl.it on macOS, Windows, Linux, or any other OS .
 
 ### ⚫Clone, commit and push to any GitHub repo.
 
@@ -61,11 +60,11 @@ Repl from Repo. Get started with any Github repo, right from your browser. Commi
 
 ### Here’s another one that contains the Repl.it Docs:
 
-------------------------------------------------------------------------
+---
 
 ### JS-Fiddle
 
-> <a href="https://jsfiddle.net/" class="markup--anchor markup--blockquote-anchor"><strong><em>jsFiddle</em></strong></a> ***is a cloud-based JavaScript code playground that allows web developers to tweak their code and see the results of this tweaking in real time. The editor supports not only JavaScript and its variants but also HTML and CSS code, and it further supports popular JavaScript frameworks, such as jQuery, AngularJS, ReactiveJS and D3. The ad-supported site is also completely free to use.***
+> <a href="https://jsfiddle.net/" class="markup--anchor markup--blockquote-anchor"><strong><em>jsFiddle</em></strong></a> **_is a cloud-based JavaScript code playground that allows web developers to tweak their code and see the results of this tweaking in real time. The editor supports not only JavaScript and its variants but also HTML and CSS code, and it further supports popular JavaScript frameworks, such as jQuery, AngularJS, ReactiveJS and D3. The ad-supported site is also completely free to use._**
 
 ### ⚫Entering and running code
 
@@ -82,7 +81,7 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 -   <span id="f034">**Save** / **Update** will do what you think, it’ll save a new fiddle or update an existing one (and add a version number to it)</span>
 -   <span id="f634">**Fork** will split out an existing fiddle into a new one, starting with version 0</span>
 
-------------------------------------------------------------------------
+---
 
 ### StackBlitz
 
@@ -91,7 +90,7 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 -   <span id="9cf4">**Installs packages ≥5x faster than Yarn & NPM 🔥**</span>
 -   <span id="d50f">**Reduces the size of** `node_modules` **up to two orders of magnitude 😮**</span>
 -   <span id="288c">**Has multiple layers of redundancy for production grade reliability** 💪</span>
--   <span id="ba5d">**Works *entirely* within your web browser, enabling lightning fast dev environments ⚡️**</span>
+-   <span id="ba5d">**Works _entirely_ within your web browser, enabling lightning fast dev environments ⚡️**</span>
 
 > Dependencies still slip into the install process as dev & sub-dependencies and are downloaded & extracted all the same, resulting in the infamous black hole known as `node_modules`:
 
@@ -105,13 +104,13 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 ### Embed Options
 
-> ***&lt;iframe src=”https://stackblitz.com/edit/angular?embed=1"&gt;&lt;/iframe&gt;***
+> **_&lt;iframe src=”https://stackblitz.com/edit/angular?embed=1"&gt;&lt;/iframe&gt;_**
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*6QF4ywBOMVFtS_MukRkLKw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*5ekSGpNwJ28hI9Aog8V4DQ.png" class="graf-image" /></figure>🡩 **Alternatively, you can also use StackBlitz’s** <a href="https://developer.stackblitz.com/docs/platform/embedding#open-and-embed-stackblitz-projects" class="markup--anchor markup--blockquote-anchor"><strong>Javascript SDK methods</strong></a> **for easily embedding StackBlitz projects on the page & avoid all the hassles of creating/configuring iframes.**
 
-<span class="graf-dropCap">H</span>**ere’s a sample project of mine, it’s a medium clone… *(So Metta)*… feel free to write a post… or don’t …but either way … as you can see… Stack Blitz enables you to write serious web applications in a fraction of the time it would take with a conventional setup.**
+<span class="graf-dropCap">H</span>**ere’s a sample project of mine, it’s a medium clone… _(So Metta)_… feel free to write a post… or don’t …but either way … as you can see… Stack Blitz enables you to write serious web applications in a fraction of the time it would take with a conventional setup.**
 
-------------------------------------------------------------------------
+---
 
 ### Glitch
 
@@ -156,7 +155,7 @@ An existing project will be identified by Glitch as a **static** site if it does
 
 #### Click ‘view app’ below to see how it renders
 
-------------------------------------------------------------------------
+---
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 

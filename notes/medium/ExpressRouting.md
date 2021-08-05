@@ -1,19 +1,16 @@
-Express-Routing
-===============
+# Express-Routing
 
 Note: To read this in a rendered view, open your VS Code Command Palate (using Control+Shift+P on Windows, Command+Shift+P on macOS)
 
-------------------------------------------------------------------------
+---
 
 ### Express-Routing
 
 #### **Note:** To read this in a rendered view, open your VS Code Command Palate (using Control+Shift+P on Windows, Command+Shift+P on macOS) 
 
-  
+####
 
-####   
-
-Create an Express application. 
+Create an Express application.
 
 -   <span id="216c">Has a page that shows a list of people</span>
 -   <span id="fc00">Has a page that allows you to add a person</span>
@@ -24,8 +21,8 @@ In the **images** directory, you will find
 -   <span id="b45d">A screenshot of the person listing page</span>
 -   <span id="39bc">A screenshot of the person creation form</span>
 
-The screenshots show you what is expected from a *structure* standpoint. They  
-are meant to be guides. The tests will *not* make any assertions about the  
+The screenshots show you what is expected from a _structure_ standpoint. They  
+are meant to be guides. The tests will _not_ make any assertions about the  
 styling of your pages, merely the structure of the pages and the data presented  
 on them.
 
@@ -50,13 +47,13 @@ and runnable from `npm run dev`.
 
 ### Running the tests
 
-This is “black-box testing”. The tests will *only* use your Express application.  
+This is “black-box testing”. The tests will _only_ use your Express application.  
 It will not make connections to the database or directly test your route  
 handlers. They will merely make HTTP requests of your Express app and analyze  
 the responses.
 
 To ease your development, tests will run against your **development** database  
-and *not* the test database.
+and _not_ the test database.
 
 **You** will be responsible for creating, migrating, and seeding the data in  
 your development database.
@@ -90,7 +87,7 @@ Please use port 8081 for your Express.js server.
 
 Create a database user with `CREATEDB` priveleges:
 
--   <span id="96a3">The login username that you must use is “express\_practice\_app”</span>
+-   <span id="96a3">The login username that you must use is “express_practice_app”</span>
 -   <span id="6e88">The login password that you must use is “EzB5Dxo2dabnQBF8”</span>
 
 Initialize Sequelize in your assessment and use the following configuration in  
@@ -191,7 +188,7 @@ have
 
 In the form, you should have these inputs with the provided name:
 
-Field HTML nameField typeConstraintsDefault valuesfirstNamesingle-line textrequiredlastNamesingle-line textrequiredagenumberbiographymulti-line texthairColorIddropdownrequiredOne of the pre-defined hair colors\_csrfhiddenThe value provided by the CSURF middleware
+Field HTML nameField typeConstraintsDefault valuesfirstNamesingle-line textrequiredlastNamesingle-line textrequiredagenumberbiographymulti-line texthairColorIddropdownrequiredOne of the pre-defined hair colors_csrfhiddenThe value provided by the CSURF middleware
 
 You should also have a submit button.
 

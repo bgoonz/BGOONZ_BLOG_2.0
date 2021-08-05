@@ -1,9 +1,8 @@
-Graph Data Structure Interview Questions At A Glance
-====================================================
+# Graph Data Structure Interview Questions At A Glance
 
 Because they’re just about the most important data structure there is.
 
-------------------------------------------------------------------------
+---
 
 ### Graph Data Structure Interview Questions At A Glance
 
@@ -329,10 +328,10 @@ dives down the graph as far as it can before backtracking and exploring another 
 1.  <span id="b45a">Take graph as parameter.</span>
 2.  <span id="a012">Marks all vertices as unvisited.</span>
 3.  <span id="1bd5">Sets vertex parent as null.</span>
-4.  <span id="0f24">Passes each unvisited vertex into DFS\_visit().</span>
+4.  <span id="0f24">Passes each unvisited vertex into DFS_visit().</span>
 5.  <span id="9011">Mark current vertex as gray.</span>
 6.  <span id="8df7">Loops through its unvisited neighbors.</span>
-7.  <span id="927d">Sets parent and makes recursive call to DFS\_visit().</span>
+7.  <span id="927d">Sets parent and makes recursive call to DFS_visit().</span>
 8.  <span id="6d4c">Marks vertex as black.</span>
 9.  <span id="e753">Repeat until done.</span>
 
@@ -431,7 +430,7 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 -   <span id="416f">Directed Graph — Edges only go one direction</span>
 
-### *Undirected* Graph
+### _Undirected_ Graph
 
 -   <span id="6030">Undirected Graph — Edges don’t have a direction. All graphs are assumed to be undirected unless otherwise stated</span>
 
