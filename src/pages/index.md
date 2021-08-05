@@ -278,7 +278,7 @@ sections:
     image_position: right
     content: |-
       <iframe class="block-content" width="100%  width="800" height="575"
-       src="https://codepen.io/bgoonz/pen/LYyBwEp" title="YouTube video
+       src="https://random-static-html-deploys.netlify.app/blog-search.html" title="YouTube video
        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
