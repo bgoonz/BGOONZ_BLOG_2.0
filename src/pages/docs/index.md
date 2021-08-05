@@ -44,7 +44,7 @@ excerpt: docs quick reference
 <h1>  Docs</h1>
 <br>
 
-<iframe class="inner" src="https://lambda-resources.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe class="inner" src="https://docs42.netlify.app/#C:/MY-WEB-DEV/__NEW_GIT/DOCS/docs-collection" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
