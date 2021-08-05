@@ -275,7 +275,7 @@ sections:
   - title: Site Search
     section_id: Search
     image_alt: site search
-    image_position: left
+    image_position: right
     content: >-
       ## Lorem ipsum
 
