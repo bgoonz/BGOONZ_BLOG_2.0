@@ -2,24 +2,23 @@
 title: Audio
 weight: 0
 excerpt: >-
-    My automated guitar effects triggering project using a dymanic time warping
-    algorithm
+  My automated guitar effects triggering project using a dymanic time warping
+  algorithm
 seo:
-    title: DTW
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: DTW
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
-
 # Dynamic Time Warping Triggered Guitar Effects Project:
 
 ### DTW Algorithm:
 
 <iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634692&amp;authkey=AHfsGpj1Un3UNuE&amp;em=2&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
----
+***
 
 ### Project:
 
