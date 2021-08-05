@@ -1,7 +1,7 @@
 ---
 title: Audio
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Guitar Effects Triggering W Dynamic Time Warping Algorithm
 seo:
   title: ''
   description: ''
