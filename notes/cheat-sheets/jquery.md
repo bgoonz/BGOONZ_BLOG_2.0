@@ -2,8 +2,8 @@
 category: tool
 tool: jquery
 contributors:
-  - ["Sawyer Charles", "https://github.com/xssc"]
-  - ["Devansh Patil", "https://github.com/subtra3t"]
+    - ['Sawyer Charles', 'https://github.com/xssc']
+    - ['Devansh Patil', 'https://github.com/subtra3t']
 filename: jquery.js
 ---
 
@@ -132,4 +132,4 @@ $('p').each(function() {
 
 ## Further Reading
 
-- [Codecademy - jQuery](https://www.codecademy.com/learn/learn-jquery) A good introduction to jQuery in a "learn by doing it" format.
+-   [Codecademy - jQuery](https://www.codecademy.com/learn/learn-jquery) A good introduction to jQuery in a "learn by doing it" format.

@@ -8,11 +8,11 @@ How to create sites which respond to the needs and capabilities of the device th
 
 [![Rachel Andrew](https://web-dev.imgix.net/image/admin/dUAN2DEXHRT6G6iPrIby.jpg?auto=format&fit=crop&h=64&w=64)](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/authors/rachelandrew/)
 
-*   [Set the viewport](#viewport)
-*   [Size content to the viewport](#size-content)
-*   [Use CSS media queries for responsiveness](#media-queries)
-*   [How to choose breakpoints](#breakpoints)
-*   [View media query breakpoints in Chrome DevTools](#devtools)
+-   [Set the viewport](#viewport)
+-   [Size content to the viewport](#size-content)
+-   [Use CSS media queries for responsiveness](#media-queries)
+-   [How to choose breakpoints](#breakpoints)
+-   [View media query breakpoints in Chrome DevTools](#devtools)
 
 The use of mobile devices to surf the web continues to grow at an astronomical pace, and these devices are often constrained by display size and require a different approach to how content is laid out on the screen.
 
@@ -20,8 +20,7 @@ Responsive web design, originally defined by [Ethan Marcotte in A List Apart](ht
 
 A multitude of different screen sizes exist across phones, "phablets," tablets, desktops, game consoles, TVs, and even wearables. Screen sizes are always changing, so it's important that your site can adapt to any screen size, today or in the future. In addition, devices have different features with which we interact with them. For example some of your visitors will be using a touchscreen. Modern responsive design considers all of these things to optimize the experience for everyone.
 
-Set the viewport [#](#viewport)
--------------------------------
+## Set the viewport [#](#viewport)
 
 Pages optimized for a variety of devices must include a meta viewport tag in the head of the document. A meta viewport tag gives the browser instructions on how to control the page's dimensions and scaling.
 
@@ -49,14 +48,13 @@ The [Does not have a `<meta name="viewport">` tag with `width` or `initial-scale
 
 In addition to setting an `initial-scale`, you can also set the following attributes on the viewport:
 
-*   `minimum-scale`
-*   `maximum-scale`
-*   `user-scalable`
+-   `minimum-scale`
+-   `maximum-scale`
+-   `user-scalable`
 
 When set, these can disable the user's ability to zoom the viewport, potentially causing accessibility issues. Therefore we would not recommend using these attributes.
 
-Size content to the viewport [#](#size-content)
------------------------------------------------
+## Size content to the viewport [#](#size-content)
 
 On both desktop and mobile devices, users are used to scrolling websites vertically but not horizontally; forcing the user to scroll horizontally or to zoom out in order to see the whole page results in a poor user experience.
 
@@ -134,10 +132,10 @@ For responsive web design, we are typically querying the _features_ of the devic
 
 Media queries enable us to create a responsive experience where specific styles are applied to small screens, large screens, and anywhere in between. The feature we are detecting here is therefore screen size, and we can test for the following things.
 
-*   `width` (`min-width`, `max-width`)
-*   `height` (`min-height`, `max-height`)
-*   `orientation`
-*   `aspect-ratio`
+-   `width` (`min-width`, `max-width`)
+-   `height` (`min-height`, `max-height`)
+-   `orientation`
+-   `aspect-ratio`
 
 All of these features have excellent browser support, for more details including browser support information see [width](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/width), [height](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/height), [orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation), and [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/aspect-ratio) on MDN.
 
@@ -147,10 +145,10 @@ The specification did include tests for `device-width` and `device-height`. Thes
 
 Given the range of devices available, we cannot make the assumption that every large device is a regular desktop or laptop computer, or that people are only using a touchscreen on a small device. With some newer additions to the media queries specification we can test for features such as the type of pointer used to interact with the device and whether the user can hover over elements.
 
-*   `hover`
-*   `pointer`
-*   `any-hover`
-*   `any-pointer`
+-   `hover`
+-   `pointer`
+-   `any-hover`
+-   `any-pointer`
 
 Try viewing this demo on different devices, such as a regular desktop computer and a phone or tablet.
 
@@ -160,8 +158,7 @@ These newer features have good support in all modern browsers. Find out more on 
 
 The features `any-hover` and `any-pointer` test if the user has the capability to hover, or use that type of pointer even if it is not the primary way they are interacting with their device. Be very careful when using these. Forcing a user to switch to a mouse when they are using their touchscreen is not very friendly! However, `any-hover` and `any-pointer` may be useful if it is important to work out what kind of device a user has. For example, a laptop with a touchscreen and trackpad should match coarse and fine pointers, in addition to the ability to hover.
 
-How to choose breakpoints [#](#breakpoints)
--------------------------------------------
+## How to choose breakpoints [#](#breakpoints)
 
 Don't define breakpoints based on device classes. Defining breakpoints based on specific devices, products, brand names, or operating systems that are in use today can result in a maintenance nightmare. Instead, the content itself should determine how the layout adjusts to its container.
 
@@ -240,6 +237,5 @@ Click on one of the bars to view your page while that media query is active. Rig
 Last updated: May 14, 2020 [Improve article](https://github.com/GoogleChrome/web.dev/blob/master/src/site/content/en/blog/responsive-web-design-basics/index.md)
 
 Thank you for the feedback!
-
 
 [Source](https://web.dev/responsive-web-design-basics/)

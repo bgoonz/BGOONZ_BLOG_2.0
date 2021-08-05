@@ -2,8 +2,8 @@
 language: docker
 filename: docker.bat
 contributors:
-  - ["Ruslan López", "http://javapro.org/"]
-  - ["Michael Chen", "https://github.com/ML-Chen"]
+    - ['Ruslan López', 'http://javapro.org/']
+    - ['Michael Chen', 'https://github.com/ML-Chen']
 ---
 
 ```bat

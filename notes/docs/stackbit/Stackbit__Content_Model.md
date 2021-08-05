@@ -6,11 +6,11 @@ For example, assume your site's blog posts are stored in markdown files with thr
 
 The content model of the blog post would describe the names and types of blog post fields:
 
-![Post Content Model](https://www.stackbit.com/docs/static/9ee29401e77f1734a4aa3ff5a6aaa6a9/fb933/content-model-post.png "Post Content Model")
+![Post Content Model](https://www.stackbit.com/docs/static/9ee29401e77f1734a4aa3ff5a6aaa6a9/fb933/content-model-post.png 'Post Content Model')
 
 By knowing your site's content model, Stackbit can provide an "on-page" editing experience **without any additional changes to your site's code**.
 
-![Post Preview and Editing using Content Model](https://www.stackbit.com/docs/static/d2761704c855589f9e6da23c18a3d55a/8c557/content-model-post-preview-editor.png "Post Preview and Editing using Content Model")
+![Post Preview and Editing using Content Model](https://www.stackbit.com/docs/static/d2761704c855589f9e6da23c18a3d55a/8c557/content-model-post-preview-editor.png 'Post Preview and Editing using Content Model')
 
 Of course, the names and the types of post fields are the bare minimum your content model should have. Depending on the CMS you use, you can also specify the field labels, descriptions, validation rules, and other aspects of your content model.
 

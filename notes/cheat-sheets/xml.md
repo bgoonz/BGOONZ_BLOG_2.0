@@ -2,9 +2,9 @@
 language: xml
 filename: learnxml.xml
 contributors:
-  - ["João Farias", "https://github.com/JoaoGFarias"]
-  - ["Rachel Stiyer", "https://github.com/rstiyer"]
-  - ["Deepanshu Utkarsh", "https://github.com/duci9y"]
+    - ['João Farias', 'https://github.com/JoaoGFarias']
+    - ['Rachel Stiyer', 'https://github.com/rstiyer']
+    - ['Deepanshu Utkarsh', 'https://github.com/duci9y']
 ---
 
 XML is a markup language designed to store and transport data. It is supposed to be both human readable and machine readable.
@@ -161,11 +161,11 @@ Support for DTDs is ubiquitous because they are so old. Unfortunately, modern XM
 
 ## Resources
 
-- [Validate your XML](http://www.xmlvalidation.com)
+-   [Validate your XML](http://www.xmlvalidation.com)
 
 ## Further Reading
 
-- [XML Schema Definitions Tutorial](http://www.w3schools.com/schema/)
-- [DTD Tutorial](http://www.w3schools.com/xml/xml_dtd_intro.asp)
-- [XML Tutorial](http://www.w3schools.com/xml/default.asp)
-- [Using XPath queries to parse XML](http://www.w3schools.com/xml/xml_xpath.asp)
+-   [XML Schema Definitions Tutorial](http://www.w3schools.com/schema/)
+-   [DTD Tutorial](http://www.w3schools.com/xml/xml_dtd_intro.asp)
+-   [XML Tutorial](http://www.w3schools.com/xml/default.asp)
+-   [Using XPath queries to parse XML](http://www.w3schools.com/xml/xml_xpath.asp)
