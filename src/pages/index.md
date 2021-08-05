@@ -276,17 +276,11 @@ sections:
     section_id: Search
     image_alt: site search
     image_position: right
-    content: >-
-      ## Lorem ipsum
-
-
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-      - Lorem ipsum
-
-      - dolor sit amet
+    content: |-
+      <iframe class="block-content" width="100%  width="800" height="575"
+       src="https://blog-w-comments.vercel.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
     image: images/thoughtful-zucchini.gif
