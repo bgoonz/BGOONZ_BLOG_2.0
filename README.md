@@ -328,36 +328,30 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-
-
-
-
----
 ---
 
-
+---
 
 # Codebase:
-
 
 ```
 
 bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 .
 ├── ./components
-│   ├── ./components/ActionLink.js    
-│   ├── ./components/CtaButtons.js    
-│   ├── ./components/DocsMenu.js      
-│   ├── ./components/DocsSubmenu.js   
-│   ├── ./components/Footer.js        
-│   ├── ./components/Header.js        
+│   ├── ./components/ActionLink.js
+│   ├── ./components/CtaButtons.js
+│   ├── ./components/DocsMenu.js
+│   ├── ./components/DocsSubmenu.js
+│   ├── ./components/Footer.js
+│   ├── ./components/Header.js
 │   ├── ./components/Icon.js
-│   ├── ./components/Layout.js        
+│   ├── ./components/Layout.js
 │   ├── ./components/SectionContent.js
-│   ├── ./components/SectionCta.js    
-│   ├── ./components/SectionDocs.js   
-│   ├── ./components/SectionGrid.js   
-│   ├── ./components/SectionHero.js   
+│   ├── ./components/SectionCta.js
+│   ├── ./components/SectionDocs.js
+│   ├── ./components/SectionGrid.js
+│   ├── ./components/SectionHero.js
 │   ├── ./components/Submenu.js
 │   ├── ./components/global.css
 │   └── ./components/index.js
@@ -500,7 +494,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
   <summary><h1>Click to see React Components (src folder)!</h1></summary>
   
   
-  
+
 
 <details>
   <summary>ActionLink!</summary>
@@ -514,42 +508,41 @@ import { Link, withPrefix, classNames } from '../utils';
 import Icon from './Icon';
 
 export default class ActionLink extends React.Component {
-    render() {
-        let action = _.get(this.props, 'action', null);
-        return (
-            <Link
-                to={withPrefix(_.get(action, 'url', null))}
-                {...(_.get(action, 'new_window', null) ? { target: '_blank' } : null)}
-                {...(_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)
-                    ? {
-                          rel: (_.get(action, 'new_window', null) ? 'noopener ' : '') + (_.get(action, 'no_follow', null) ? 'nofollow' : '')
-                      }
-                    : null)}
-                className={classNames({
-                    button: _.get(action, 'style', null) !== 'link',
-                    'button-secondary': _.get(action, 'style', null) === 'secondary',
-                    'button-icon': _.get(action, 'style', null) === 'icon'
-                })}
-            >
-                {_.get(action, 'style', null) === 'icon' && _.get(action, 'icon_class', null) ? (
-                    <React.Fragment>
-                        <Icon {...this.props} icon={_.get(action, 'icon_class', null)} />
-                        <span className="screen-reader-text">{_.get(action, 'label', null)}</span>
-                    </React.Fragment>
-                ) : (
-                    _.get(action, 'label', null)
-                )}
-            </Link>
-        );
-    }
+render() {
+let action = _.get(this.props, 'action', null);
+return (
+<Link
+to={withPrefix(_.get(action, 'url', null))}
+{...(_.get(action, 'new_window', null) ? { target: '\_blank' } : null)}
+{...(_.get(action, 'new*window', null) || *.get(action, 'no*follow', null)
+? {
+rel: (*.get(action, 'new*window', null) ? 'noopener ' : '') + (*.get(action, 'no*follow', null) ? 'nofollow' : '')
+}
+: null)}
+className={classNames({
+button: *.get(action, 'style', null) !== 'link',
+'button-secondary': _.get(action, 'style', null) === 'secondary',
+'button-icon': _.get(action, 'style', null) === 'icon'
+})} >
+{_.get(action, 'style', null) === 'icon' && _.get(action, 'icon*class', null) ? (
+<React.Fragment>
+<Icon {...this.props} icon={*.get(action, 'icon*class', null)} />
+<span className="screen-reader-text">{*.get(action, 'label', null)}</span>
+</React.Fragment>
+) : (
+\_.get(action, 'label', null)
+)}
+</Link>
+);
+}
 }
 
-```
+````
 ---
 
 <details>
   <summary>CtaButtons!</summary>
-  
+
   ## CtaButtons
 
 ---
@@ -583,7 +576,8 @@ export default class CtaButtons extends React.Component {
     }
 }
 
-```
+````
+
 ---
 
 <details>
@@ -592,6 +586,7 @@ export default class CtaButtons extends React.Component {
   ## DocsMenu
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -660,8 +655,8 @@ export default class DocsMenu extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -670,6 +665,7 @@ export default class DocsMenu extends React.Component {
   ## DocsSubmenu
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -696,8 +692,8 @@ export default class DocsSubmenu extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -706,6 +702,7 @@ export default class DocsSubmenu extends React.Component {
   ## Footer
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -741,8 +738,8 @@ export default class Footer extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -751,6 +748,7 @@ export default class Footer extends React.Component {
   ##  Header
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -874,8 +872,8 @@ export default class Header extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -884,6 +882,7 @@ export default class Header extends React.Component {
   ## Icon
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -920,8 +919,8 @@ export default class Icon extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -930,6 +929,7 @@ export default class Icon extends React.Component {
   ## Body
 
 ---
+
 ```js
 import React from 'react';
 
@@ -989,8 +989,8 @@ export default class Body extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -999,6 +999,7 @@ export default class Body extends React.Component {
   ## SectionContent
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -1041,8 +1042,8 @@ export default class SectionContent extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -1051,6 +1052,7 @@ export default class SectionContent extends React.Component {
   ## SectionCta
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -1084,8 +1086,8 @@ export default class SectionCta extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -1094,6 +1096,7 @@ export default class SectionCta extends React.Component {
   ## SectionDocs
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -1154,8 +1157,8 @@ export default class SectionDocs extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -1164,6 +1167,7 @@ export default class SectionDocs extends React.Component {
   ## SectionGrid
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -1232,8 +1236,8 @@ export default class SectionGrid extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -1242,6 +1246,7 @@ export default class SectionGrid extends React.Component {
   ## SectionHero
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -1274,8 +1279,8 @@ export default class SectionHero extends React.Component {
         );
     }
 }
-
 ```
+
 ---
 
 <details>
@@ -1284,6 +1289,7 @@ export default class SectionHero extends React.Component {
   ## Submenu
 
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -1316,6 +1322,7 @@ export default class Submenu extends React.Component {
     }
 }
 ```
+
 ---
 
 <details>
@@ -1324,8 +1331,8 @@ export default class Submenu extends React.Component {
   ## Index.js
 
 ---
-```js
 
+```js
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
 import DocsMenu from './DocsMenu';
@@ -1375,7 +1382,6 @@ export default {
     Layout
 };
 ```
-
 
 </details>
 
