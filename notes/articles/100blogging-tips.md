@@ -2,7 +2,7 @@
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2020/09/casey-botticello-photo.jpg)
 
-Disclosure: Some of the links below are affiliate links, meaning, at no additional cost to you, I will earn a commission if you click through and make a purchase. For more information, read our full affiliate disclosure statement [here](https://bloggingguide.com/affiliate-disclosure-policy/).  
+Disclosure: Some of the links below are affiliate links, meaning, at no additional cost to you, I will earn a commission if you click through and make a purchase. For more information, read our full affiliate disclosure statement [here](https://bloggingguide.com/affiliate-disclosure-policy/).
 
 Starting and building a successful blog can be a rewarding experience. And to some extent, every bloggers journey is unique, making it hard to give one-size-fits-all blogging tips to new bloggers.
 
@@ -12,7 +12,7 @@ However, there are some fundamental blogging tips that are useful to the vast ma
 
 This article contains 100+ blogging tips for new bloggers. These tips were derived from my 10+ years experience as a blogger, content creator, and digital marketer. These tips and tricks are also based on my research covering other top bloggers.
 
-## 1\. Write Consistently  
+## 1\. Write Consistently
 
 There is no substitute for hard work and consistency. No hacks. No shortcuts. If you want to grow your blog, you need to write and publish on a regular basis.
 
@@ -26,7 +26,7 @@ If you’re not disciplined, then it’s easy to slip and this is how most blogs
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/3-1.bak.png)
 
-## 2\. Build Your Email List  
+## 2\. Build Your Email List
 
 There are a variety of ways to do this, but the most effective I have found is to ask your readers to sign-up for your mailing list from the very start of your blog. Having an email subscriber list is, without a doubt, the fastest way to grow your readership and your bottom line.
 
@@ -40,7 +40,7 @@ Whether you are trying to drive traffic to a new article or promote a your own p
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/439.png)
 
-## 3\. Don’t Strive for Perfection  
+## 3\. Don’t Strive for Perfection
 
 When writing a blog, I recommend not obsessing over perfection. It’s completely OK to make mistakes as long as you fix them.
 
@@ -52,7 +52,7 @@ My advice for new bloggers is just write and develop your own voice / style. Oft
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/person-adding-stars-isometric.png)
 
-## 4\. Establish a Social Media Presence  
+## 4\. Establish a Social Media Presence
 
 As a blogger, your social media presence is non-negotiable.
 
@@ -66,7 +66,7 @@ Your attendance on social media is compulsory, but if you’ve been delaying the
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/325-converted.png)
 
-## 5\. Leverage Social Proof  
+## 5\. Leverage Social Proof
 
 The best way to motivate your prospects to do something is to claim what other customers in similar situations have done. In other words, try to draw similarities among your prospective clients and existing customers with the help of social proof elements.
 
@@ -79,7 +79,7 @@ How can you leverage social proof to boost your blog?
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/mega-phone-with-people-coming-out.png)
 
-## 6\. Write for Scanners  
+## 6\. Write for Scanners
 
 73% of visitors skim rather than read the blog post thoroughly. So, it’s important that you make your blog posts scannable.
 
@@ -87,7 +87,7 @@ This means using bold [**headings and subheadings**](https://bloggingguide.com/h
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2152-converted.png)
 
-## 7\. Invest in Good Web Design  
+## 7\. Invest in Good Web Design
 
 One of the most important blogging tips and tricks for beginners, is to spend time on the user experience for your readers.
 
@@ -107,7 +107,7 @@ Pay attention to these areas:
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/4140-converted.png)
 
-## 8\. Monitor Post Length  
+## 8\. Monitor Post Length
 
 You’ve probably heard people saying things like “attention spans are shorter than ever” and that “people only want bite-sized information”. But this doesn’t mean your blog posts should be short.
 
@@ -123,7 +123,7 @@ In general, I would suggest that you make sure that most of your blog posts are 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2760903.png)
 
-## 9\. Create Evergreen Content  
+## 9\. Create Evergreen Content
 
 [**Evergreen content**](https://web.archive.org/web/20210406063143/https://medium.com/digital-marketing-lab/what-is-evergreen-content-and-why-is-it-important-43ab14c74406) is content that is perpetually relevant to readers. Due to its timeless subject matter and its appeal to a large and recurring audience, evergreen content has no real expiration date and retains its value long-term.
 
@@ -137,7 +137,7 @@ There are three main benefits to writing evergreen content:
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/traffic-chart.png)
 
-## 10\. Use Infographics  
+## 10\. Use Infographics
 
 A blog is an essential tool for any brand. It’s the place you build your thought leadership, offer value to customers and potential customers, and cultivate your audience’s trust in your brand.
 
@@ -147,7 +147,7 @@ The Nielsen Norman Group reports that audiences will only read 20% of a text wit
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2229418.png)
 
-## 11\. Use Custom Blog Images  
+## 11\. Use Custom Blog Images
 
 I see a lot of writers using the same top images from Unsplash for their articles. This is OK — but regular readers notice this. Try to find less commonly used images. This can be hard when you write a lot, but in my experience it is worth the time. Google’s search engine also rewards you for this if the images are completely original.
 
@@ -155,7 +155,7 @@ If you are willing to look beyond free images, and you are writing a lot of arti
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/17887821-converted.png)
 
-## 12\. Automate Your Marketing  
+## 12\. Automate Your Marketing
 
 Marketing automation is a powerful solution that allows growing businesses to scale by streamlining, automating, and monitoring your marketing tasks. What used to be an elite platform is becoming more commonplace, which means marketers need to make sure they’re moving from automation to engagement marketing to stay competitive.
 
@@ -163,7 +163,7 @@ One of the best methods for promoting blog posts automatically, that I have used
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2680-converted.png)
 
-## 13\. Establish a Niche  
+## 13\. Establish a Niche
 
 Statista estimates that the number of bloggers in the U.S will reach 31.7 million by 2020. And that’s only the U.S!
 
@@ -181,7 +181,7 @@ Later, once your blog has gained some traction, you can branch out and cover bro
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/pie-chart-blue-and-yellow.png)
 
-## 14\. Be Mindful of Search Intent  
+## 14\. Be Mindful of Search Intent
 
 Google aims to provide its users with the most relevant results for their queries. That means: if you want to rank high in Google and get passive, organic traffic, you need to be the most relevant result for the query.
 
@@ -193,7 +193,7 @@ Thankfully, since Google works to show the most relevant results, you can use th
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2530897.png)
 
-## 15\. Create Content Worth Referencing  
+## 15\. Create Content Worth Referencing
 
 Telling you to create great content isn’t actionable. But making sure your content is “worth remarking about” is a more straightforward concept to work with.
 
@@ -208,7 +208,7 @@ If the answer is a resounding yes, then great! If not, get back to the lab and r
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/516916-pimvba-467.png)
 
-## 16\. Optimize on-Page SEO  
+## 16\. Optimize on-Page SEO
 
 On-page SEO is only a single component of SEO, but don’t let that notion devalue it. Unlike off-site SEO, you have complete control of on-page ranking factors. When all the pieces fit together, you should see positive results across the board.
 
@@ -216,7 +216,7 @@ E.A.T. stands for expertise, authoritativeness, and trustworthiness, and it’s 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2341-converted.png)
 
-## 17\. Write Guest Blog Posts  
+## 17\. Write Guest Blog Posts
 
 Guest blogging is one of the fastest ways to gain a following.
 
@@ -228,13 +228,13 @@ It’s important to get creative when reaching out so that you stand out from th
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/social-media-hashtag-icon-isometric.png)
 
-## 18\. Update Older Content  
+## 18\. Update Older Content
 
 This is something that I do on regular basis: go through your older posts, add relevant links (linking to newer content), update your photos, add an email subscription form, Pinterest-friendly image containing text, add keywords, check for mistakes, add content upgrades. Updating some of that older content can be a nice way to drive some traffic to your blog.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/time-clock-isometric.png)
 
-## 19\. Write Custom Meta Descriptions for Posts  
+## 19\. Write Custom Meta Descriptions for Posts
 
 A meta description (sometimes called a meta description attribute or tag) is an HTML element that describes and summarizes the contents of your page for the benefit of users and search engines. While meta data isn’t as important for SEO rankings as it used to be, the meta description still plays a significant role in on-page SEO.
 
@@ -242,7 +242,7 @@ Google uses click-through-rate (CTR) as a way of working out whether you’re a 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/76-converted.png)
 
-## 20\. Spend Time Researching Posts  
+## 20\. Spend Time Researching Posts
 
 Before you start writing, make sure to do research for your post. This is especially important if you’re not super familiar with the topic you’re writing about.
 
@@ -250,7 +250,7 @@ To do research, you can search Google and read other articles on the subject you
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/3d-pie-chart-isometric.png)
 
-## 21\. Write in Doubt, Press Publish  
+## 21\. Write in Doubt, Press Publish
 
 It is very difficult to determine which blog post will succeed all expectations, and which post will just perform only “very well.”
 
@@ -258,17 +258,17 @@ When in doubt, press publish. Even if your content is not perfect, this opens it
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/mobile-design-ux-isometric.png)
 
-## 22\. **Install Google Analytics & Track Traffic**  
+## 22\. **Install Google Analytics & Track Traffic**
 
-Once you start a blog, you’ll want to get more traffic and email subscribers. And to help you achieve that, you need to know what’s working and what isn’t. 
+Once you start a blog, you’ll want to get more traffic and email subscribers. And to help you achieve that, you need to know what’s working and what isn’t.
 
-Google Analytics allows you to get detailed information about your visitors, such as how many have visited your site, how long they stayed, and what pages they viewed, so that you can make smarter decisions. 
+Google Analytics allows you to get detailed information about your visitors, such as how many have visited your site, how long they stayed, and what pages they viewed, so that you can make smarter decisions.
 
 Google Analytics is my go-to web analytics tool. I use it, and have used it, on all of my blogs. It gives you insight into the traffic on your site including your audience, how people get to your site and how people interact with your site such as what pages are the most popular landing pages and what pages are the most popular exit pages. With this information you can make meaningful and informed decisions about your target audience, what channels to spend the most time on, and even what pages are your trouble pages and need to be fixed.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/chart-bar-graph-3d.png)
 
-## 23\. **Create an Editorial Content Calendar**  
+## 23\. **Create an Editorial Content Calendar**
 
 An [**editorial calendar**](https://medium.com/digital-marketing-lab/how-to-create-an-editorial-calendar-for-your-blog-595507778fd), also called a publishing schedule, helps in the planning and publication of different types of content. As it relates to blogging, an editorial calendar makes it possible to co-ordinate the entire content creation and publishing process over a period of time. It can be used for some or all of the following:
 
@@ -282,27 +282,27 @@ An [**editorial calendar**](https://medium.com/digital-marketing-lab/how-to-crea
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/1375-converted.png)
 
-## 24\. **Manage Your Sales Funnel**  
+## 24\. **Manage Your Sales Funnel**
 
-A sales funnel consists of different stages that measure how close a lead is to buying something. 
+A sales funnel consists of different stages that measure how close a lead is to buying something.
 
 The most common sales funnel model has four stages:
 
 Stages of the Sales Funnel
 
-**Awareness** — This is when a prospective lead first learns about your brand. They may have seen a post on social media, an ad, a mention in another blog, and so on. 
+**Awareness** — This is when a prospective lead first learns about your brand. They may have seen a post on social media, an ad, a mention in another blog, and so on.
 
-**Interest** — The interest stage is when a lead starts to do research and consider if you’re worth their time. They’re not ready for your sales pitch yet, but they sure will find educational content incredibly helpful. 
+**Interest** — The interest stage is when a lead starts to do research and consider if you’re worth their time. They’re not ready for your sales pitch yet, but they sure will find educational content incredibly helpful.
 
-**Decision** — By the decision stage, leads are just about ready to make a purchase. They’ll be looking at your product pages, looking for alternatives, and search for free trials they can use — if any. 
+**Decision** — By the decision stage, leads are just about ready to make a purchase. They’ll be looking at your product pages, looking for alternatives, and search for free trials they can use — if any.
 
-**Action** — From a marketing perspective, the action stage in a sales funnel is the finish line. This is where the lead finally turns into a paying customer, making them ripe for remarketing opportunities in the future. 
+**Action** — From a marketing perspective, the action stage in a sales funnel is the finish line. This is where the lead finally turns into a paying customer, making them ripe for remarketing opportunities in the future.
 
 Once you understand how the sales funnel works, it should be easier to segment your email marketing leads and determine what type of blog content you need to produce more of.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/540-converted.png)
 
-## 25\. **Outbound Links**  
+## 25\. **Outbound Links**
 
 If internal links redirect to other pages within your site, outbound links point users and crawlers to entirely different sites.
 
@@ -318,11 +318,11 @@ And yes — outbound links do have an impact on SEO in more ways than one:
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/blog-post-1.png)
 
-## 26\. **Write Compelling Headlines**  
+## 26\. **Write Compelling Headlines**
 
 Your headline or title of your blog post is often the first thing readers notice. So, it has to be good enough to grab their attention and make them want to read the article.
 
-Check out our step-by-step guide on how to write effective blog post titles. 
+Check out our step-by-step guide on how to write effective blog post titles.
 
 You can also use a free tool like IsItWP’s Headline Analyzer Tool to help you create clickable blog post titles.
 
@@ -330,7 +330,7 @@ This tool will score your title and give you tips on how to improve it.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2020/08/untitled-design56.png)
 
-## 27\. **Add Social Sharing Buttons to Posts**  
+## 27\. **Add Social Sharing Buttons to Posts**
 
 Adding social sharing buttons to your blog and blog posts is a great way to drive traffic to your blog.
 
@@ -346,7 +346,7 @@ To find your ideal positioning and the number of social media sharing buttons yo
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2857729.png)
 
-## 28\. **Conversational Writing Tone**  
+## 28\. **Conversational Writing Tone**
 
 Writing for online readers means delivering value in an easy-to-absorb format.
 
@@ -364,7 +364,7 @@ Providing examples is another way to bring life to your writing, offering real-w
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/3.png)
 
-## 29\. **Add Social Sharing Buttons to Posts**  
+## 29\. **Add Social Sharing Buttons to Posts**
 
 [**Canva**](https://www.partner.canva.com/c/2401089/651740/10068?adtype=video&trafsrc=affiliate&adcampaign=desert_canva_pro_en) is one of the single most useful tools for bloggers, digital marketers, and content creators. In addition to making stunning graphic designs simple enough for anyone to create, Canva’s free tier makes it a no-brainer to try out.
 
@@ -372,23 +372,23 @@ Of all the digital tools and software that I personally use, Canva is by far the
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/92.bak.png)
 
-## 30\. **Curate Your Content for Your Audience**  
+## 30\. **Curate Your Content for Your Audience**
 
 Not everything you send to your users should be about you.
 
-Don’t forget that most email subscribers signed up because they were promised valuable information. Whether or not that information came from your website isn’t their concern. 
+Don’t forget that most email subscribers signed up because they were promised valuable information. Whether or not that information came from your website isn’t their concern.
 
-That’s why, if you’re out of ideas for your email, you should try curating content from other sources. 
+That’s why, if you’re out of ideas for your email, you should try curating content from other sources.
 
-For example, if you’re a technology blogger, you can send your subscribers updates about the latest tech trends or newly released gadgets. Naturally, you should also share your opinions and insights to prove that you know your stuff. 
+For example, if you’re a technology blogger, you can send your subscribers updates about the latest tech trends or newly released gadgets. Naturally, you should also share your opinions and insights to prove that you know your stuff.
 
-There’s no secret formula when creating emails that contain curated content. Just write a simple email in plain text with links to the content you want to share. 
+There’s no secret formula when creating emails that contain curated content. Just write a simple email in plain text with links to the content you want to share.
 
 In exchange for the free, useful information you provide, your audience will reward you with their trust and loyalty. They should also be more eager to check your next email if they know they’re getting valuable knowledge.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/mobile-search-icon-isometric.png)
 
-## 31\. **Add a Clear Call-To-Action (CTA)**  
+## 31\. **Add a Clear Call-To-Action (CTA)**
 
 A call-to-action (CTA) tells the reader what they should do next after reading your post.
 
@@ -403,7 +403,7 @@ Choose 1 or 2 CTAs to add to the end of your post. If you add too many, it can b
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/cta-isometric-1.png)
 
-## 32\. **Keep a List of Blog Post Ideas**  
+## 32\. **Keep a List of Blog Post Ideas**
 
 I have a file with at least 100 ideas for blog posts in it. And it’s because I make a point of writing down any ideas that I have, even if they are just a very rough outline.
 
@@ -411,41 +411,41 @@ You never know when you’ll be hit by a brilliant idea for a post, so keep a fi
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/check-list-isometric.png)
 
-## 33\. **Utilize a Backlink Checker**  
+## 33\. **Utilize a Backlink Checker**
 
-Finding websites that accept guest contributions for link building isn’t exactly difficult. 
+Finding websites that accept guest contributions for link building isn’t exactly difficult.
 
-At most, you’re looking at an hour or two done on research — plus two minutes crafting an outreach email. 
+At most, you’re looking at an hour or two done on research — plus two minutes crafting an outreach email.
 
-But what if I tell you that you can turn two hours of research into a couple of minutes with a backlink checker? 
+But what if I tell you that you can turn two hours of research into a couple of minutes with a backlink checker?
 
 SEMrush, for instance, can provide quick insights on any website’s backlink profile. Simply load up their “Backlink Analytics” tool and enter your competitor’s domain or page URL and click ‘Check it.’
 
-After entering their domain and loading the results, switch to the “Referring Domains” tab. That’s where you can view the list of domains that link to your competitor’s sites. 
+After entering their domain and loading the results, switch to the “Referring Domains” tab. That’s where you can view the list of domains that link to your competitor’s sites.
 
-Just remember to use the “Authority Score” filter to see the most relevant referring domains first. 
+Just remember to use the “Authority Score” filter to see the most relevant referring domains first.
 
 With a list of potential backlink sources in hand, you’re now ready to launch your email outreach campaign.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/9708-converted.png)
 
-## 34\. **Join Relevant Social Media Groups in Your Niche**  
+## 34\. **Join Relevant Social Media Groups in Your Niche**
 
-Promoting content on social media is guaranteed to give your blog some exposure. 
+Promoting content on social media is guaranteed to give your blog some exposure.
 
-What it doesn’t guarantee, however, is exposure to users who are actually interested in what your brand has to offer. 
+What it doesn’t guarantee, however, is exposure to users who are actually interested in what your brand has to offer.
 
-With that in mind, joining groups in your blog’s niche should be part of your social media goals. This will ensure that your brand will reach the right crowd. 
+With that in mind, joining groups in your blog’s niche should be part of your social media goals. This will ensure that your brand will reach the right crowd.
 
 The only obstacle here is finding groups that allow members to post self-promotional content.
 
-Some groups that allow them may have a list of conditions you should abide by to maintain your membership. Your best bet is to check the group’s description as soon as you gain entry. 
+Some groups that allow them may have a list of conditions you should abide by to maintain your membership. Your best bet is to check the group’s description as soon as you gain entry.
 
 Other than sharing your content, do your part and be an active member of the community. This means answering questions, reacting to other people’s posts, and giving praise or criticism where it’s due.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/people-looking-at-pink-globes.png)
 
-## 35\. **Compress Your Images**  
+## 35\. **Compress Your Images**
 
 You work hard at creating stellar content and you spend countless hours promoting your blog and networking with other bloggers, so the last thing you want is for potential visitors to abandon your website before it even loads!
 
@@ -459,7 +459,7 @@ Unnecessarily large images also take up space on your hosting account. While som
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/3704195.png)
 
-## 36\. **Use WordPress Plugins**  
+## 36\. **Use WordPress Plugins**
 
 There are tens of thousands of plugins available to WordPress users. So many, in fact, that it’s difficult to know which ones really make a difference and which are overhyped. Plenty offer useful niche solutions, but few are truly must-have WordPress plugins for all sites.
 
@@ -470,31 +470,31 @@ There are tens of thousands of plugins available to WordPress users. So many, in
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/two-people-talking-at-desk-isometric.png)
 
-## 37\. **Use Plain, Natural Sounding Emails When Doing Outreach**  
+## 37\. **Use Plain, Natural Sounding Emails When Doing Outreach**
 
-Finding potential influencers and referring domains is meaningless if you don’t have an outreach plan. 
+Finding potential influencers and referring domains is meaningless if you don’t have an outreach plan.
 
-For sites that accept guest posts, sometimes you only need to fill up a form and wait for their response. But for most prospective influencers and referring domains, you’ll need to contact them via email. 
+For sites that accept guest posts, sometimes you only need to fill up a form and wait for their response. But for most prospective influencers and referring domains, you’ll need to contact them via email.
 
-If you recently got your hands on an email marketing platform with well-designed templates, do yourself a favor — ignore them. 
+If you recently got your hands on an email marketing platform with well-designed templates, do yourself a favor — ignore them.
 
-Instead, craft personalized, plain text emails. 
+Instead, craft personalized, plain text emails.
 
 It may seem counterintuitive, especially if you want to make your brand look more legit. However, there are several reasons — and evidence — as to why plain text emails are better:
 
--   **HTML emails reduce open rates** — Split tests conducted by HubSpot show that emails with fancy HTML elements have lower open rates than plain text emails. The more HTML elements are present, the lower the open rate gets. 
+-   **HTML emails reduce open rates** — Split tests conducted by HubSpot show that emails with fancy HTML elements have lower open rates than plain text emails. The more HTML elements are present, the lower the open rate gets.
 
--   **HTML emails get lower click-throughs** — Let’s face it, HTML emails often look more salesy and promotional than plain text emails. If you want subscribers to believe your message and take action, your email must feel genuine and personal. 
+-   **HTML emails get lower click-throughs** — Let’s face it, HTML emails often look more salesy and promotional than plain text emails. If you want subscribers to believe your message and take action, your email must feel genuine and personal.
 
 -   **Plain text emails are more suited for mobile** — Statistics show that 66 percent of emails are now being opened on mobile devices. Since most email templates are designed with computers in mind, they could inadvertently worsen the reading experience of mobile users.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/1.png)
 
-## 38\. **Multiple Websites**  
+## 38\. **Multiple Websites**
 
-It’s true that blogs require your utmost dedication and focus in order to prosper. 
+It’s true that blogs require your utmost dedication and focus in order to prosper.
 
-But once your main money blog becomes self-sustaining, you should be open to the idea of diversifying your investments. 
+But once your main money blog becomes self-sustaining, you should be open to the idea of diversifying your investments.
 
 Believe it or not, a lot of successful bloggers who made millions have more than one website generating passive income. Their most profitable blog also isn’t always their first.
 
@@ -504,7 +504,7 @@ You can get the help you need from freelancing marketplaces like [**Fiverr**](ht
 
 ![medium publication, medium blogging, medium pub, top medium publications, medium newsletter, medium blog, best publications on medium, best blogs on medium, new medium publications, medium publication, medium blogging publication](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/1052-converted.png)
 
-## 39\. **Remove All Distractions**  
+## 39\. **Remove All Distractions**
 
 Put your phone on vibrate and in the next room, close all applications that you don’t need and put your word processor in full screen. Set a timer for 35 — 40 minutes and start writing. Once the time is done, take a break, drink some water, set the timer again and get cracking.
 
@@ -512,7 +512,7 @@ When you are doing a task for the first time, every little distraction can stop 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/431-converted.png)
 
-## 40\. **Focus on Quality Over Quantity**  
+## 40\. **Focus on Quality Over Quantity**
 
 This one will be hard to do. It’s easy to fall for the quick wins. But blogging is an investment, not a get rich quick scheme. So you need to focus on quality, not quantity.
 
@@ -522,7 +522,7 @@ Typically, at least 80% of traffic will come from just 20% of posts on your blog
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2795182.png)
 
-## 41\. **Use Number Psychology in Headlines**  
+## 41\. **Use Number Psychology in Headlines**
 
 Number psychology isn’t an exact science, and neither is great headline writing. But, strategically implementing what you’ve just learned _will_ make your headlines more compelling.
 
@@ -560,7 +560,7 @@ Small numbers can suggest relative simplicity or insignificance. Conversely, lar
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2240296.png)
 
-## 42\. **Be Specific**  
+## 42\. **Be Specific**
 
 Focus on providing relevant information to the readers in a simple way. If you are specific with your post in giving readers what they want to read, it’ll keep them interested in reading it.
 
@@ -570,7 +570,7 @@ So, make sure that you’re giving the readers only the information on a specifi
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2020/10/Untitled-design112.bak.png)
 
-## 43\. **Build an Online Community**  
+## 43\. **Build an Online Community**
 
 As I’ve experimented with building my own online community, [**PeerBoard**](https://medium.com/community-platforms/peerboard-review-afb8de73ac88) emerged as the obvious tool to build my own community with.
 
@@ -584,7 +584,7 @@ In an ever-crowded internet, private online communities are increasingly the bes
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/10322-converted.png)
 
-## 44\. **Incorporate Story Telling in Your Posts**  
+## 44\. **Incorporate Story Telling in Your Posts**
 
 GrooveHQ ran a test. The goal was to determine if blog posts with stories were more successful than those without. They found that blog posts with a story intro had almost 300% more people read the entire article. Average time on the page also increased five times the usual number.
 
@@ -592,17 +592,17 @@ A good opening story carries your reader through the entire blog post. They are 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/66.bak.png)
 
-## 45\. **Set Realistic Blogging Goals**  
+## 45\. **Set Realistic Blogging Goals**
 
 A lot of people start blogging for fun, so they don’t need to set goals. But, if you want to make money from your blog or turn it into a full-time business, you should set goals.
 
 Setting goals will help keep you on track and make it easier for you to monitor your progress. Start off small with your goals and as you meet them, you can set bigger goals.
 
-You can set goals for how many pageviews you want to get, how many subscribers you want, or how much money you want to earn. 
+You can set goals for how many pageviews you want to get, how many subscribers you want, or how much money you want to earn.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/Add-a-heading108.bak.png)
 
-## 46\. **Start Blogging Now**  
+## 46\. **Start Blogging Now**
 
 I started writing on Medium in 2018. When I saw all the well written and established content from 2013, I remember thinking that it seemed impossible that I would develop any sort of following or gain the exposure necessary to have an impact on someone’s life.
 
@@ -612,7 +612,7 @@ The best time to start writing is yesterday!
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/1052-converted.png)
 
-## 47\. **Connect with Other Bloggers**  
+## 47\. **Connect with Other Bloggers**
 
 By becoming friends with other bloggers, you can learn from them and improve your own blog.
 
@@ -622,7 +622,7 @@ Reach out to other bloggers on social media and start up a conversation!
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/62.bak.png)
 
-## 48\. **Outsource Aspects of Blogging That You Hate**  
+## 48\. **Outsource Aspects of Blogging That You Hate**
 
 Outsourcing allows you to put those smaller things in someone else’s hands, so they are off your plate.
 
@@ -630,7 +630,7 @@ Outsourcing blog tasks, specifically, can help any business. Growing your blog i
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/67.bak.png)
 
-## 49\. **Understand Your Readers’ Wants & Needs**  
+## 49\. **Understand Your Readers’ Wants & Needs**
 
 One major factor that separates advanced bloggers from others is their ability to understand their readers. Instead of choosing what they want to write about, advanced bloggers cater to the information needs and wants of their readers. After all, these are the people their blog was created for, right?
 
@@ -650,7 +650,7 @@ Then use the answers you receive to craft your [**content marketing**](https://m
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/58.bak.png)
 
-## 50\. **Optimize Blog for Mobile Devices**  
+## 50\. **Optimize Blog for Mobile Devices**
 
 Mobile isn’t just the way of the future. It’s the way of the now.
 
@@ -670,7 +670,7 @@ How can you optimize your blog for mobile devices?
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/668-converted.png)
 
-## 51\. **Invest in the Right Blogging Tools**  
+## 51\. **Invest in the Right Blogging Tools**
 
 Blogging Guide offers free custom tools and provides recommendations of useful premium tools to improve your writing, automate your blog, and increase your earnings.
 
@@ -680,7 +680,7 @@ These three tools (by themselves) can save you hundreds of hours, allowing you t
 
 ![blogging guide, blogging guide tools, blogging tool, medium blogging tool, writing tool](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2020/08/untitled-design48.png)
 
-## 52\. **Optimize Your Homepage’s Above the Fold Section**  
+## 52\. **Optimize Your Homepage’s Above the Fold Section**
 
 The homepage would be the most visited page on your blog. It’s the most important one.
 
@@ -694,25 +694,25 @@ So, ensure your above the fold is meaningful and attractive enough to catch visi
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/73.bak.png)
 
-## 53\. **Spread Your Blog Content Through Q&A Websites**  
+## 53\. **Spread Your Blog Content Through Q&A Websites**
 
-For the non-SEO-savvy, the “dofollow” attribute tells search engines like Google that a backlink should pass on “link juice.” This is a term used to describe the SEO value of backlinks passed from site to site. 
+For the non-SEO-savvy, the “dofollow” attribute tells search engines like Google that a backlink should pass on “link juice.” This is a term used to describe the SEO value of backlinks passed from site to site.
 
-“Nofollow” links, on the other hand, basically tells search engines that the specific link shouldn’t pass link juice. 
+“Nofollow” links, on the other hand, basically tells search engines that the specific link shouldn’t pass link juice.
 
-In other words, only a dofollow link can directly affect the rankings and perceived authority of the link’s receiving end. 
+In other words, only a dofollow link can directly affect the rankings and perceived authority of the link’s receiving end.
 
-So, does that mean that all “nofollow” links are useless? 
+So, does that mean that all “nofollow” links are useless?
 
-Nope — especially if they can get quality traffic to your site. 
+Nope — especially if they can get quality traffic to your site.
 
-Popular Q&A websites like Quora, for example, can flood your blog with targeted traffic if you play your cards right. 
+Popular Q&A websites like Quora, for example, can flood your blog with targeted traffic if you play your cards right.
 
 The links you can build may have the “nofollow” attribute. However, your brand will still be exposed to Quora’s massive user base, nonetheless.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/7049.png)
 
-## 54\. **Build a “Content Web”**  
+## 54\. **Build a “Content Web”**
 
 One of the biggest challenges in trying to create an online brand is connecting your content from disparate platforms and source.
 
@@ -730,7 +730,7 @@ The key difference is that a content web aims to draw in people who are interest
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/4886675.png)
 
-## 55\. **Create Skyscraper Articles**  
+## 55\. **Create Skyscraper Articles**
 
 Google’s algorithm places a lot of value on high-quality backlinks because they show that your work is valuable to others and deserves to live higher on the search results. However, getting good backlinks can be very difficult because they have to be earned. Your work needs to be noticed, first of all, and then needs to be so good that it is cited by others in their pieces.
 
@@ -744,7 +744,7 @@ It’s a simple process, but difficult to pull off successfully. But if you do, 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2104-converted.png)
 
-## 56\. **Build Backlinks**  
+## 56\. **Build Backlinks**
 
 Link building is the practice of having links – or backlinks – from third-party websites and resources pointing back to yours as a way to improve your ranking in search results. As the dominant search engine, Google’s algorithm pays attention to websites that have links connected to other web resources, and not just their own links. Moreover, one commonly referenced study done by _Backlinko_ found that the highest ranking pages generally had more links than content with lower search engine results pages (SERPs) rankings.
 
@@ -758,7 +758,7 @@ With that said, getting results from link building takes careful planning. It is
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/124-converted.png)
 
-## 57\. **Comment on Other Blogs**  
+## 57\. **Comment on Other Blogs**
 
 Writing responses to other blogs can be a great way to boost your followers. And this makes a lot of sense. If someone actually takes the time to read your article thoroughly (not skimming) and actually writes a response, they are taking time out of their day (time they could potentially be writing themselves) to help start a conversation around your article.
 
@@ -766,7 +766,7 @@ Most writers take note of people who write insightful responses to stories. And 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/2.png)
 
-## 58\. **Monitor Your Webpage Loading Speed**  
+## 58\. **Monitor Your Webpage Loading Speed**
 
 Nobody likes slow websites. Search engines like Google give an SEO advantage to faster websites. As a blogger, you need to optimize your website for speed and faster page loads.
 
@@ -778,7 +778,7 @@ You can also combine that with DNS based firewalls like Sucuri or Cloudflare. Th
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/86-1.png)
 
-## 59\. **Explore Different Methods for Monetizing Your Blog**  
+## 59\. **Explore Different Methods for Monetizing Your Blog**
 
 The easiest way for new blogs to start making money is by displaying ads using Google AdSense. While Google AdSense is great, you need to diversify your income stream. We have seen bloggers losing all their income when AdSense blocked their accounts for a policy violation.
 
@@ -788,7 +788,7 @@ Another way to boost your ad revenues is to monitor who’s advertising on your 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/content-funnel-marketing-concept.png)
 
-## 60\. **Understand Your Audience**  
+## 60\. **Understand Your Audience**
 
 The success of your content depends on how well you understand your audience.
 
@@ -802,21 +802,21 @@ First, determine who your target readers are. Then research them. What blogs do 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/30738-converted.png)
 
-## 61\. **Remove All Distractions**  
+## 61\. **Remove All Distractions**
 
-Distractions can turn even the best bloggers into the laziest writers. 
+Distractions can turn even the best bloggers into the laziest writers.
 
-The worst part is, distractions are everywhere. 
+The worst part is, distractions are everywhere.
 
-They can come from your smartphone, your surroundings, and even your work computer. 
+They can come from your smartphone, your surroundings, and even your work computer.
 
-The good news is, blocking out distractions at home doesn’t need to involve complicated steps. 
+The good news is, blocking out distractions at home doesn’t need to involve complicated steps.
 
 Designating an official, private work area in your home is a step in the right direction. If you’re bombarded by noise that breaks your flow of thought, use headphones and fire up noise generators like Noisli.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/mobile-design-ux-isometric.png)
 
-## 62\. **Choose an Email Marketing System**  
+## 62\. **Choose an Email Marketing System**
 
 The first step to building an email list is to choose an email marketing service.
 
@@ -826,25 +826,25 @@ Mailchimp is an all-in-one marketing platform that helps you manage and talk to 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/189.bak.png)
 
-## 63\. **Add Alt Text to Images**  
+## 63\. **Add Alt Text to Images**
 
 Also called “alt tags” and “alt descriptions,” alt text is the written copy that appears in place of an image on a webpage if the image fails to load on a user’s screen. This text helps screen-reading tools describe images to visually impaired readers and allows search engines to better crawl and rank your website. One of the most important things image alt text can do for you is turn your images into hyperlinked search results — giving your website yet another way to receive organic visitors.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/social-media-hashtag-isometric.png)
 
-## 64\. **Repurpose Content**  
+## 64\. **Repurpose Content**
 
 You can also repurpose older content as a time-saving way to get new visitors to your blog.
 
 For example, you can create an infographic based on one of your most popular posts. Share the new infographic online and you can bring in new traffic.
 
-Repurposing content is a great way to stretch your existing content further. 
+Repurposing content is a great way to stretch your existing content further.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/Add-a-heading94.bak.png)
 
-## 65\. **Pick The Best Blog Hosting Service**  
+## 65\. **Pick The Best Blog Hosting Service**
 
-WordPress.org is free to use to build your blog. But, to make your blog live on the internet, you need a blog hosting service. 
+WordPress.org is free to use to build your blog. But, to make your blog live on the internet, you need a blog hosting service.
 
 We recommend using Bluehost. It’s the most user-friendly and reliable web hosting service on the market. It’s also officially recommended by WordPress and comes with 1-click WordPress installation, so you can set up your WordPress blog super quickly.
 
@@ -852,13 +852,13 @@ Plus, Blogging Guide readers get a special Bluehost deal of 60% off of web hosti
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/cloud-mobile-isometric-icon.png)
 
-## 66\. **Make Sure Your Name is Clearly Visible**  
+## 66\. **Make Sure Your Name is Clearly Visible**
 
 When visiting a new blog, one of the first things people want to know, is who is the person behind it. I love addressing readers and other bloggers by their first name when commenting on other blogs or answering comments, so make sure that your name is clearly visible somewhere on your homepage.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2020/10/Untitled-design112.bak.png)
 
-## 67\. **Create a Lead Magnet**  
+## 67\. **Create a Lead Magnet**
 
 Most websites offer no incentive to encourage people to join their email list.
 
@@ -876,7 +876,7 @@ The type of lead magnet you choose and how you position it will have a significa
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/social-media-lead-magnet.png)
 
-## 68\. **Decide on Your Brand**  
+## 68\. **Decide on Your Brand**
 
 Before you start designing your blog, decide what you want your brand to be.
 
@@ -886,7 +886,7 @@ Deciding on your brand will help you choose the right blog design, colors, font,
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/brand-icon-isometric.png)
 
-## 69\. **Focus on Operating One Site at a Time**  
+## 69\. **Focus on Operating One Site at a Time**
 
 A lot of bloggers have more than one site. Heck, I do! At one time, I had probably 5 or 6 that I was trying to update regularly.
 
@@ -898,23 +898,23 @@ You always want to control your own site, and you want to get that site performi
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/85-1.bak.png)
 
-## 70\. **Incorporate Statistics**  
+## 70\. **Incorporate Statistics**
 
 Have you tried creating data-driven posts yet?
 
-It doesn’t matter if you did your own study or compiled facts from other sources. If your blog post contains statistics, you have a good chance of being linked to by content writers. 
+It doesn’t matter if you did your own study or compiled facts from other sources. If your blog post contains statistics, you have a good chance of being linked to by content writers.
 
 Remember, citing statistics from valid sources maximizes the impact of your content’s message. It informs readers that you know your stuff — worthy of their time and trust.
 
-This is something that I do whenever the opportunity presents itself. 
+This is something that I do whenever the opportunity presents itself.
 
-To look for statistics you can use in your content, use Google and add the word “statistics” with quotation marks. 
+To look for statistics you can use in your content, use Google and add the word “statistics” with quotation marks.
 
 Also, set Google’s search filter to grab results no older than a year. This makes sure you won’t be supplied with outdated information when writing content.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/33330-converted-1.png)
 
-## 71\. **Encourage Conversation**  
+## 71\. **Encourage Conversation**
 
 There are two ways you can encourage comments on your blog. The first is through writing posts which invite readers to have a conversation with you. You can add questions like:
 
@@ -937,7 +937,7 @@ The other way is to install a good blog commenting system. A good system:
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/48-1.bak.png)
 
-## 72\. **Create More Longform Content**  
+## 72\. **Create More Longform Content**
 
 When I first started blogging in 2005, short articles of 300 to 500 words where the norm. These, for long-term traffic generation, don’t cut it so much anymore. Google looks for — and rewards, long-form content. So create more of that.
 
@@ -949,7 +949,7 @@ Make sure you post only to high-quality, relevant sites. One outstanding post on
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/3173493.png)
 
-## 73\. **Be Personal**  
+## 73\. **Be Personal**
 
 Remember, information is not the same thing is insight. The web is full of information. Your readers can get information anywhere. What they can’t get is all of the insight your experience brings to the table. They haven’t been where you’ve been, walked where you’ve walked, seen what you’ve seen, or done what you’ve done. In order to have a successful blog you must trust in your own voice, as well as the experiences you’ve gathered as you’ve immersed yourself in a topic.
 
@@ -961,7 +961,7 @@ Otherwise, the writer will end up generating flat content. It may be useful, it 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/44.bak.png)
 
-## 74\. **Add Visuals**  
+## 74\. **Add Visuals**
 
 Finding relevant images and adding them to your post make your blog looks attractive and eye-catchy.
 
@@ -975,7 +975,7 @@ The reader can easily get an idea about your content by just seeing the pictures
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/48.bak.png)
 
-## 75\. **Choose a Blog Post Format Before Writing**  
+## 75\. **Choose a Blog Post Format Before Writing**
 
 Instead of relying on a cut-and-paste blog post template that might come off as cookie-cutter to readers, we recommend simply picking a blog post format before you start writing a post.
 
@@ -991,7 +991,7 @@ Question-based posts, which respond to or pose a question with Who, What, When, 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/staircase-choices-isometric.png)
 
-## 76\. **Optimize for Search Engines**  
+## 76\. **Optimize for Search Engines**
 
 There’s more to SEO for blogs than brainstorming a phrase or two that you think might possibly be a keyword. The effort you put into learning and implementing SEO goes a long way toward bringing a steady flow of traffic to your site. In fact, according to a survey by GrowthBadger:
 
@@ -1022,7 +1022,7 @@ Putting these advanced tips into action will give you a whole new way to engage 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2020/08/Untitled-design59.bak.png)
 
-## 77\. **Write What You Would Like to Read**  
+## 77\. **Write What You Would Like to Read**
 
 One of the simplest, yet most effective methods of creating high value content, is to focus on writing the type of content that you would like to read.
 
@@ -1030,27 +1030,27 @@ For example, if you are searching for the answer to a question in Google, and yo
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2020/08/Untitled-design56.bak.png)
 
-## 78\. **Maintain Honesty with Your Audience**  
+## 78\. **Maintain Honesty with Your Audience**
 
 Let me tell you something a lot of bloggers overlook.
 
-As soon as they start generating traffic, they become too focused on monetization that they become reckless with their credibility. 
+As soon as they start generating traffic, they become too focused on monetization that they become reckless with their credibility.
 
-This becomes a problem if they begin to engage in practices that can damage their reputation in the long run. A classic example is a blogger who blatantly writes biased, positive reviews of affiliate products for the sake of sales. 
+This becomes a problem if they begin to engage in practices that can damage their reputation in the long run. A classic example is a blogger who blatantly writes biased, positive reviews of affiliate products for the sake of sales.
 
-If you do it on a small scale, you can probably get away with it. But as readers begin to notice your tactics, their trust and your whole brand’s reputation will collapse. 
+If you do it on a small scale, you can probably get away with it. But as readers begin to notice your tactics, their trust and your whole brand’s reputation will collapse.
 
 With these things in mind, I earnestly want you to remember the following tips:
 
 -   When writing product reviews, use the product yourself. That’s the only way to provide authentic and believable opinions that will lead to sales.
--   Don’t make up a fake backstory for your brand. You, as a blogger, will be more relatable to your audience if you share real scenarios and experiences. 
--   Don’t be afraid to write negative reviews. If a potential affiliate product didn’t click, find a similar product from another partner and offer it as an alternative. 
+-   Don’t make up a fake backstory for your brand. You, as a blogger, will be more relatable to your audience if you share real scenarios and experiences.
+-   Don’t be afraid to write negative reviews. If a potential affiliate product didn’t click, find a similar product from another partner and offer it as an alternative.
 
 Whenever I write reviews, I make sure to be truthful and include a few cons. I do it even if I’m completely happy with the product after using it myself.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/mobile-reviews-stars.png)
 
-## 79\. **Share on Multiple Platforms**  
+## 79\. **Share on Multiple Platforms**
 
 Don’t stick to only 1 social media platform—be active on multiple platforms.
 
@@ -1060,25 +1060,25 @@ Being active on multiple different platforms will help you reach a wider audienc
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/isometric-calendar.png)
 
-## 80\. **Don’t Overthink Your Article Introduction**  
+## 80\. **Don’t Overthink Your Article Introduction**
 
-The introduction is one of the most important parts of an article. Its job is to capture attention, set their expectations straight, and compel your audience to read from start to finish. 
+The introduction is one of the most important parts of an article. Its job is to capture attention, set their expectations straight, and compel your audience to read from start to finish.
 
-Sadly, some bloggers tend to overthink their introduction and put their productivity to a grinding halt. I remember being a victim of this as well — wasting several minutes typing, revising, and deleting the introduction. 
+Sadly, some bloggers tend to overthink their introduction and put their productivity to a grinding halt. I remember being a victim of this as well — wasting several minutes typing, revising, and deleting the introduction.
 
 When in doubt, just skip writing the introduction and jump straight into the main body. Trust me, you’ll have an easier time writing it if you have a concrete idea of what your content’s about.
 
 If you still don’t know what to write, maybe these tips can help get the ball rolling:
 
--   **Tell a simple story** — Try to recall your thought process when you first came up with the content’s topic. You could be experiencing a problem, reading another blog, walking in the park, and so on. 
+-   **Tell a simple story** — Try to recall your thought process when you first came up with the content’s topic. You could be experiencing a problem, reading another blog, walking in the park, and so on.
 
--   **Ask a question** — Starting off with a question is a great way to have readers put on their thinking caps. It can be aligned with the problems they’re having or the goal they want to achieve. 
+-   **Ask a question** — Starting off with a question is a great way to have readers put on their thinking caps. It can be aligned with the problems they’re having or the goal they want to achieve.
 
 -   **Just get to the point** — After asking a question or telling a story, my preferred strategy is to dive right in with the right phrases. Some examples are “without further ado,” “let’s get started,” and “let’s jump into it.”
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/untitled-design27.png)
 
-## 81\. **Promote Your Blog on Your Own Website**  
+## 81\. **Promote Your Blog on Your Own Website**
 
 There are four main places you should focus your efforts for internal promotion:
 
@@ -1097,21 +1097,21 @@ Finally, use blog content at the end of the content download process. Your reade
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/87-1.bak.png)
 
-## 82\. **Read Content Aloud While Proofreading**  
+## 82\. **Read Content Aloud While Proofreading**
 
-Even if a sentence is grammatically correct, it may still sound a little off when read by native English speakers. 
+Even if a sentence is grammatically correct, it may still sound a little off when read by native English speakers.
 
 Relying on automated grammar checkers won’t help you avoid this — unless it has a “read aloud” feature.
 
-Reading your draft aloud is one of the most important lessons I learned in my 10 years of blogging. It helps me ensure that the words smoothly flow out of the reader’s mouth and mind. 
+Reading your draft aloud is one of the most important lessons I learned in my 10 years of blogging. It helps me ensure that the words smoothly flow out of the reader’s mouth and mind.
 
 If reading English words isn’t your strongest suit, you can count on text-to-speech tools like NaturalReader. This will also enable you to spot grammar and spelling errors without gluing your eyes to your computer’s screen.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/Untitled-design131.bak.png)
 
-## 83\. **Add a Clickable Table of Contents**  
+## 83\. **Add a Clickable Table of Contents**
 
-With a clickable table of contents, readers can conveniently skip ahead to whatever section captures their interest. They no longer need to scan paragraphs upon paragraphs of text to find what they’re looking for. 
+With a clickable table of contents, readers can conveniently skip ahead to whatever section captures their interest. They no longer need to scan paragraphs upon paragraphs of text to find what they’re looking for.
 
 To create a table of contents for your blog post, you can use a WordPress plugin called Table of Contents Plus. It automatically scoops up elements on your content with the “heading” attribute and generates a list with clickable links.
 
@@ -1121,7 +1121,7 @@ Deciding on your brand will help you choose the right blog design, colors, font,
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/sim018_banners_09-converted.png)
 
-## 84\. **Pay Attention to Internal Linking**  
+## 84\. **Pay Attention to Internal Linking**
 
 Internal linking matters. Try to interlink all the pages on your website through a “related articles” section at the bottom of your post.
 
@@ -1131,27 +1131,27 @@ These tips will help you get legitimately ranked in Google, which will help you 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/205_ymlnigrhdgegchjvy2vzc2luzybpc29tzxryawmgzgfyaze-converted.png)
 
-## 85\. **Engage with People on Social Media**  
+## 85\. **Engage with People on Social Media**
 
-Being interactive on social media helps you become more approachable and reliable for customers. They will be more happy with your services and more keen on giving you a chance. 
+Being interactive on social media helps you become more approachable and reliable for customers. They will be more happy with your services and more keen on giving you a chance.
 
 Further, this will help in reaching out to more people because people tend to generally share such experiences with their friends on social media. You can give witty replies to some comments or be active on social media stories such as Instagram where people can see what goes on in the office and how it works so it will be a small insight glimpse and hence more engaging.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/loud-speaker-sending-message-isometric.png)
 
-## 86\. **Offer Actionable Tips**  
+## 86\. **Offer Actionable Tips**
 
-A competitor’s post can always be upgraded by adding more step-by-step information. 
+A competitor’s post can always be upgraded by adding more step-by-step information.
 
-In most niches, the majority of blog posts contain general guidelines and tips that lack actionable steps. 
+In most niches, the majority of blog posts contain general guidelines and tips that lack actionable steps.
 
-This is more prominent with run-of-the-mill listicles that plenty of bloggers publish often. 
+This is more prominent with run-of-the-mill listicles that plenty of bloggers publish often.
 
 By providing more fleshed-out, easy-to-follow instructions, your content will be substantially more valuable than your competitor’s. It doesn’t even matter if the original idea was theirs.
 
-![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/Data_analysis_PNG.bak.png "Data_analysis_PNG.bak")
+![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/Data_analysis_PNG.bak.png 'Data_analysis_PNG.bak')
 
-## 87\. **Repurpose Content into YouTube Videos**  
+## 87\. **Repurpose Content into YouTube Videos**
 
 If you’re a new blogger, it may be hard to imagine yourself speaking in front of a camera on YouTube.
 
@@ -1161,37 +1161,37 @@ In the blogging world, an established YouTube channel can help  establish an au
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/3767-converted.png)
 
-## 88\. **Connect with Influencers**  
+## 88\. **Connect with Influencers**
 
 There’s one more way to use a social media listening tool to build your blogging brand.
 
-You can also use it to discover and connect with influencers who may be interested in your brand. 
+You can also use it to discover and connect with influencers who may be interested in your brand.
 
-Keep in mind that a far-reaching social media presence requires a lot of time, money, and effort. But with the help of influencers, you can bypass all those requirements and instantly boost your content’s reach. 
+Keep in mind that a far-reaching social media presence requires a lot of time, money, and effort. But with the help of influencers, you can bypass all those requirements and instantly boost your content’s reach.
 
-There are a lot of ways to discover relevant influencers that can promote a blog in your niche. The most reliable approach, however, is to use social media listening to your advantage. 
+There are a lot of ways to discover relevant influencers that can promote a blog in your niche. The most reliable approach, however, is to use social media listening to your advantage.
 
 Another tool you may be interested in would be BuzzSumo — a content research tool. It includes influencer marketing features that help you find, connect, and build valuable relationships with influencers in your niche.
 
-Also, its core content research feature is pretty great for finding potential topic ideas for your blog. 
+Also, its core content research feature is pretty great for finding potential topic ideas for your blog.
 
 BuzzSumo makes it easy to find content ideas that are highly shareable and engaging. Important metrics such as Twitter shares, backlink count, and Facebook engagement are immediately displayed on the results page.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/4.png)
 
-## 89\. **Add a “Pin It” Button to Your Blog Images**  
+## 89\. **Add a “Pin It” Button to Your Blog Images**
 
-Another advantage of a robust social media plugin like Social Snap is the support for a wide range of networks. 
+Another advantage of a robust social media plugin like Social Snap is the support for a wide range of networks.
 
 Social Snap, for example, supports over 30 social media networks and online apps. This includes Pinterest, which is an image-based social media network.
 
-With Social Snap’s “Pin It” button, readers can conveniently share your image on Pinterest without leaving your site. It can be an infographic, food close-up shots, or any high-quality image worth spreading. 
+With Social Snap’s “Pin It” button, readers can conveniently share your image on Pinterest without leaving your site. It can be an infographic, food close-up shots, or any high-quality image worth spreading.
 
 If you’re not ready to pay for Social Snap, you can settle for a free WordPress plugin instead. My recommendation would be a highly-rated plugin like jQuery Pin It Button for Images.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/63-1.bak.png)
 
-## 90\. **Share Old Posts**  
+## 90\. **Share Old Posts**
 
 Your blog posts are displayed in a reverse chronological order (newer posts appear first). This means your older posts are buried down and are not easily discoverable.
 
@@ -1201,17 +1201,17 @@ To do this, you need to use the Revive Old Posts plugin, which allows you to aut
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/copy-of-copy-of-icons1-1.png)
 
-## 91\. **Create Branded Email Addresses**  
+## 91\. **Create Branded Email Addresses**
 
 If you’re serious about your blog, then it’s important to have a professional branded email address. This goes a long way in negotiating deals with an advertiser because they think you’re a legit operation.
 
 Here is how to easily get a professional branded email address for free.
 
-Plus it also helps with email deliverability when sending email newsletters. 
+Plus it also helps with email deliverability when sending email newsletters.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/34.png)
 
-## 92\. **Backup Your Site**  
+## 92\. **Backup Your Site**
 
 Often users don’t think about backups until it’s too late. In the early days, I chose a cheap web hosting provider that wasn’t very well-known, and they had hardware failure. I lost my entire website because I didn’t have a backup.
 
@@ -1223,7 +1223,7 @@ There are plenty of reliable WordPress backup plugins that allow you to schedule
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/cloud-backup-saving-isometric.png)
 
-## 93\. **Add Opt-In Forms to Blog Posts**  
+## 93\. **Add Opt-In Forms to Blog Posts**
 
 Strategically placing your signup form on the landing page can maximize the conversion.
 
@@ -1243,7 +1243,7 @@ You can have multiple opt-in forms on the landing page.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/aset7-converted.png)
 
-## 94\. **Ensure Your Content Is Engaging**  
+## 94\. **Ensure Your Content Is Engaging**
 
 Just like this article that you’re reading right now.
 
@@ -1261,21 +1261,21 @@ This would help your SEO (increase session duration, decrease bounce rate). And,
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/1099-converted.png)
 
-## 95\. **Traffic vs. Audience**  
+## 95\. **Traffic vs. Audience**
 
-To succeed as a blogger, you should know the difference between building traffic and building an audience. 
+To succeed as a blogger, you should know the difference between building traffic and building an audience.
 
-The difference is simple, but it definitely changes everything. 
+The difference is simple, but it definitely changes everything.
 
-You see, traffic comes and goes. Your audience, on the other hand, will come, respond, and come back to see more of your content. 
+You see, traffic comes and goes. Your audience, on the other hand, will come, respond, and come back to see more of your content.
 
-To build an audience, a dependable strategy is to provide members a sense of exclusivity. 
+To build an audience, a dependable strategy is to provide members a sense of exclusivity.
 
 Offering gated content, which I already discussed earlier, is one way to accomplish this. An easier approach, however, is to create a private Facebook group.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/mobile-design-ux-isometric.png)
 
-## 96\. **Key Word Research**  
+## 96\. **Key Word Research**
 
 Keyword research is the process of understanding the language your target customers use when searching for your products, services, and content. It then involves analyzing, comparing, and prioritizing the best keyword opportunities for your website.
 
@@ -1292,7 +1292,7 @@ Finding the right answers to these questions will help you pick your battles wis
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/04/isometric-file-folder-with-key.png)
 
-## 97\. **Identify Your Competitors**  
+## 97\. **Identify Your Competitors**
 
 Your competitors are your biggest source of learning.
 
@@ -1310,7 +1310,7 @@ Once you know about your competitors and what they are up to, do the same thing 
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/purple-and-orange-speaker-and-people.png)
 
-## 98\. **Separate Research and Writing Phase**  
+## 98\. **Separate Research and Writing Phase**
 
 Another useful tip for bloggers is to divide your research phase from your writing phase.
 
@@ -1322,7 +1322,7 @@ Then focus on writing.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/03/2151295.png)
 
-## 99\. **Don’t Wait to Learn Everything**  
+## 99\. **Don’t Wait to Learn Everything**
 
 Because you will never get there where you will know everything about running a blog successfully. This is called analysis paralysis.
 
@@ -1332,7 +1332,7 @@ Blogging is a long-term endeavor. It’s an ongoing process.
 
 ![](https://mk0bloggingguidylrvx.kinstacdn.com/wp-content/uploads/2021/02/76.png)
 
-## 100\. **Never Give Up / Keep Shipping!**  
+## 100\. **Never Give Up / Keep Shipping!**
 
 The late Steve Jobs once said, “Great artists ship.”
 
