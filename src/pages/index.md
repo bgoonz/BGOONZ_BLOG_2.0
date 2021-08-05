@@ -111,32 +111,103 @@ sections:
           - label: Youtube
             url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
             style: link
-            icon_class: youtube
-            new_window: true
-            no_follow: false
-            type: action
-      type: section_content
-    - section_id: Music
-      image_alt: listen to my playlist
-      image_position: left
-      content: >
-          <iframe class="block-content" width="100%    
-          src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
-          width="100%" height="380" frameBorder="0" allowtransparency="true"
-          allow="encrypted-media"></iframe>
-      actions: []
-      type: section_content
-      title: Spotify
-    - title: Current Interests
-      section_id: interests
-      subtitle: From github repositories to existential questions.
-      col_number: three
-      grid_items:
-          - title: Angolia
-            title_url: angolia
-            image_alt: angolia
-            content: |
-                ## Full Text Search
+        title: Guitar Effects Triggering w DTW
+        title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
+        image: images/panoramic-owl.png
+      - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
+        image_alt: img of dtw
+        content: >
+          As I learn to build web applications in React I will blog about it in
+          this series in an attempt to capture the questions that a complete
+          beginner might encounter that a more seasoned developer would take for
+          granted!
+        actions: []
+        type: grid_item
+        title: Beginner Guide React
+        image: images/successful-panda.gif
+      - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
+        image_alt: img of react
+        content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
+        actions: []
+        type: grid_item
+        image: images/pleasant-birch.png
+        title: Scope & Closure
+      - image_alt: Every idea needs a medium
+        content: >
+          PostgreSQL Cheat Sheet, Everything You Need to Get Started With VSCode
+          + Extensions & Resources, Super Simple Intro To HTML,  Understanding
+          Git... etc....
+        actions: []
+        type: grid_item
+        title: My Medium Blog
+        image: images/curious-mustard.png
+        title_url: >-
+          https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
+  - title: Site Search
+    section_id: Search
+    image_alt: site search
+    image_position: right
+    content: |-
+      <iframe class="block-content" width="100%  width="800" height="575"
+       src="https://codepen.io/bgoonz/pen/LYyBwEp" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+    image: images/thoughtful-zucchini.gif
+  - section_id: Web Audio DAW
+    image_alt: medium
+    image_position: left
+    actions:
+      - label: Go To Web Audio Daw
+        url: 'https://mihirbegmusiclab.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+    image: images/goals.jpg
+    title: Web Audio DAW
+  - title: Music
+    section_id: guitar
+    image_alt: bryan-guner
+    image_position: left
+    content: >-
+      <iframe class="block-content" width="100%
+      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
+      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions:
+      - label: Youtube
+        url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
+        style: link
+        icon_class: youtube
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+  - section_id: Music
+    image_alt: listen to my playlist
+    image_position: left
+    content: >
+      <iframe class="block-content" width="100%    
+      src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
+      width="100%" height="380" frameBorder="0" allowtransparency="true"
+      allow="encrypted-media"></iframe>
+    actions: []
+    type: section_content
+    title: Spotify
+  - title: Current Interests
+    section_id: interests
+    subtitle: From github repositories to existential questions.
+    col_number: three
+    grid_items:
+      - title: Angolia
+        title_url: angolia
+        image_alt: angolia
+        content: |
+          ## Full Text Search
 
                 [Full Text Search](https://www.algolia.com/)
 
@@ -271,19 +342,90 @@ sections:
             new_window: false
             no_follow: false
             type: action
-      type: section_cta
-    - title: Site Search
-      section_id: Search
-      image_alt: site search
-      image_position: right
-      content: |-
-          <iframe class="block-content" width="100%  width="800" height="575"
-           src="https://codepen.io/bgoonz/pen/LYyBwEp" title="YouTube video
-           player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      actions: []
-      type: section_content
-      image: images/thoughtful-zucchini.gif
+        image: images/resume.JPG
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
+      - title: Showcase
+        content: |
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
+        actions:
+          - label: Learn More
+            url: /showcase
+            style: link
+        image: images/My Post.png
+  - title: Mini Projects
+    section_id: Mini Projects
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |
+      <iframe class="block-content" width="100%     width="800" height="575"
+       src="https://iframeshowcase.netlify.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions:
+      - label: Go To Mini Projects Page
+        url: 'https://iframeshowcase.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+  - title: Code Playground(s)
+    section_id: code-playground
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%   width="800" height="575"
+        src="https://code-playground.netlify.app/index.html" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Mini Projects
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%   width="800" height="575"
+       src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Blog-Archive
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%  width="800" height="575"
+        src="https://bgoonz.blogspot.com/" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Nextjs & SanityCMS Blog W Comments
+    section_id: blog
+    image_alt: blog
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%  width="800" height="575"
+       src="https://blog-w-comments.vercel.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Contact
+    section_id: lorem-ipsum
+    actions:
+      - label: Contact
+        url: /docs/faq/contact
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+        type: action
+    type: section_cta
 seo:
     title: Web-Dev-Hub
     description: >-
