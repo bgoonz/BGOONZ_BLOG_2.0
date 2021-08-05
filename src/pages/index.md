@@ -84,6 +84,18 @@ sections:
         image: images/curious-mustard.png
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
+  - title: Site Search
+    section_id: Search
+    image_alt: site search
+    image_position: right
+    content: |-
+      <iframe class="block-content"style=" height:400px!important;"
+       src="https://random-static-html-deploys.netlify.app/blog-search.html" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+    image: images/thoughtful-zucchini.gif
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
@@ -272,18 +284,6 @@ sections:
         no_follow: false
         type: action
     type: section_cta
-  - title: Site Search
-    section_id: Search
-    image_alt: site search
-    image_position: right
-    content: |-
-      <iframe class="block-content"style=" height:400px!important;"
-       src="https://random-static-html-deploys.netlify.app/blog-search.html" title="YouTube video
-       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
-    image: images/thoughtful-zucchini.gif
 seo:
   title: Web-Dev-Hub
   description: >-
