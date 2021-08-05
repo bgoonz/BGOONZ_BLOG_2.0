@@ -41,7 +41,7 @@ excerpt: docs quick reference
 <br>
 
 <br>
-<h1>   Lambda Student Site </h1>
+<h1>  Docs</h1>
 <br>
 
 <iframe class="inner" src="https://lambda-resources.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
