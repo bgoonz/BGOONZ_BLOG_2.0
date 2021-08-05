@@ -189,17 +189,6 @@
                 "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
             },
             {
-                "label": "lorem-ipsum",
-                "url": "#",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": false,
-                "subnav_links": [],
-                "type": "action_menu"
-            },
-            {
                 "label": "Audio",
                 "url": "/docs/audio",
                 "style": "link",
