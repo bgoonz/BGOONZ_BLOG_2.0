@@ -3,8 +3,8 @@
     "description": "webdevhub",
     "version": "0.0.1",
     "license": "MIT",
-    "repository":"https://github.com/bgoonz/BGOONZ_BLOG_2.0.git",
-    "author":"Bryan Guner",
+    "repository": "https://github.com/bgoonz/BGOONZ_BLOG_2.0.git",
+    "author": "Bryan Guner",
     "scripts": {
         "develop": "gatsby develop",
         "start": "npm run develop",
@@ -22,6 +22,7 @@
         "babel-runtime": "6.26.0",
         "chokidar": "3.4.0",
         "classnames": "2.2.6",
+        "documentation": "^13.2.5",
         "fs-extra": "7.0.1",
         "gatsby": "2.32.8",
         "gatsby-plugin-algolia": "^0.22.0",
