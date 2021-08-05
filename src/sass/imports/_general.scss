@@ -10,7 +10,8 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    overflow: hidden;
+    overflow: auto;
+    overflow-x:hidden;
 }
 
 a {
