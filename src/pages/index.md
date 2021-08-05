@@ -88,8 +88,12 @@ sections:
     section_id: Search
     image_alt: site search
     image_position: right
-    content: |-
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    content: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
+      title="YouTube video player" frameborder="0" allow="accelerometer;
+      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
     actions: []
     type: section_content
     image: images/thoughtful-zucchini.gif
@@ -284,8 +288,9 @@ sections:
 seo:
   title: Web-Dev-Hub
   description: >-
-    my resource sharing and blog site ... centered mostly on web development and
-    just a bit of audio production / generally nerdy things I find interesting.
+    bigO, Python, Javascript, Audio, Processing, Learning, Blog, React,
+    PostgreSQL, Scope, Closure, Web Development, Embed, API, Website, Design,
+    Music, Search
   extra:
     - name: 'og:type'
       value: website
