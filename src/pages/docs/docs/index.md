@@ -1,7 +1,7 @@
 ---
 title: WebDevDocs
 weight: 0
-excerpt: lorem-ipsum
+excerpt: A place where I keep official documentation.
 seo:
   title: ''
   description: ''
