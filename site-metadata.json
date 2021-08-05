@@ -8,7 +8,7 @@
             {
                 "label": "Home",
                 "url": "/",
-                "style": "link",
+                "style": "primary",
                 "has_subnav": true
             },
             {
