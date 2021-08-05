@@ -8,8 +8,47 @@
             {
                 "label": "Home",
                 "url": "/",
-                "style": "link",
+                "style": "primary",
                 "has_subnav": true
+            },
+            {
+                "url": "/docs/sitemap",
+                "label": "Navigation",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "Docs",
+                        "url": "/docs",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Showcase",
+                        "url": "/showcase",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Contact!",
+                        "url": "/docs/faq/contact",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
+                "type": "action_menu"
             },
             {
                 "label": "Blog",
@@ -73,45 +112,6 @@
                     }
                 ],
                 "new_window": true
-            },
-            {
-                "url": "/docs/sitemap",
-                "label": "Navigation",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": true,
-                "subnav_links": [
-                    {
-                        "label": "Docs",
-                        "url": "/docs",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Showcase",
-                        "url": "/showcase",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Contact!",
-                        "url": "/docs/faq/contact",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    }
-                ],
-                "type": "action_menu"
             },
             {
                 "label": "Archive",
@@ -201,7 +201,7 @@
             },
             {
                 "label": "Projects",
-                "url": "#",
+                "url": "https://curious-zebra-a1329.netlify.app/",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": true,
@@ -232,6 +232,90 @@
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
+                "type": "action_menu"
+            },
+            {
+                "label": "External Nav",
+                "url": "https://bgoonz-blog-v3-0.netlify.app/",
+                "style": "secondary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "Embeds Blog",
+                        "url": "https://friendly-panda-b61ab.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "alt-blogs",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Games",
+                        "url": "https://bgoonz-games.netlify.app/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Blog Backup",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Cover Letter",
+                        "url": "https://bgoonz-cv.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Project Centric",
+                        "url": "https://curious-zebra-a1329.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Wordpress Blog",
+                        "url": "https://web-dev-hub.com/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Project Portfolio Gallery",
+                        "url": "https://curious-zebra-a1329.netlify.app/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": false,
                         "no_follow": false,
                         "type": "action"
                     }
@@ -323,90 +407,6 @@
                 "url": "https://github.com/bgoonz/BGOONZ_BLOG_2.0",
                 "style": "primary",
                 "has_subnav": false
-            },
-            {
-                "label": "External Nav",
-                "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                "style": "secondary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": true,
-                "subnav_links": [
-                    {
-                        "label": "Embeds Blog",
-                        "url": "https://friendly-panda-b61ab.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "alt-blogs",
-                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Games",
-                        "url": "https://bgoonz-games.netlify.app/",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Blog Backup",
-                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Cover Letter",
-                        "url": "https://bgoonz-cv.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Project Centric",
-                        "url": "https://curious-zebra-a1329.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Wordpress Blog",
-                        "url": "https://web-dev-hub.com/",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Project Portfolio Gallery",
-                        "url": "https://curious-zebra-a1329.netlify.app/",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    }
-                ],
-                "type": "action_menu"
             }
         ],
         "title": "WebDevHub"
