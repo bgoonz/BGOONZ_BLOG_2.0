@@ -3,7 +3,7 @@ title: WebDevDocs
 weight: 0
 excerpt: A place where I keep official documentation.
 seo:
-  title: ''
+  title: 'webdevdocs'
   description: ''
   robots: []
   extra: []
