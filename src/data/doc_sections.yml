@@ -2,6 +2,7 @@ root_docs_path: /docs
 sections:
     - about
     - articles
+    - docs
     - faq
     - interact
     - links
