@@ -12,6 +12,45 @@
                 "has_subnav": true
             },
             {
+                "url": "/docs/sitemap",
+                "label": "Navigation",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "Docs",
+                        "url": "/docs",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Showcase",
+                        "url": "/showcase",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Contact!",
+                        "url": "/docs/faq/contact",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
+                "type": "action_menu"
+            },
+            {
                 "label": "Blog",
                 "url": "/blog/",
                 "style": "primary",
@@ -73,45 +112,6 @@
                     }
                 ],
                 "new_window": true
-            },
-            {
-                "url": "/docs/sitemap",
-                "label": "Navigation",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": true,
-                "subnav_links": [
-                    {
-                        "label": "Docs",
-                        "url": "/docs",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Showcase",
-                        "url": "/showcase",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Contact!",
-                        "url": "/docs/faq/contact",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    }
-                ],
-                "type": "action_menu"
             },
             {
                 "label": "Archive",
