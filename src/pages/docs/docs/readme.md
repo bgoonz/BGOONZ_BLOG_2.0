@@ -1,3 +1,18 @@
+---
+title: Site README
+weight: 0
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
+template: docs
+---
+
+
+
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
 ---

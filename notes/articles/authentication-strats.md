@@ -4,25 +4,25 @@
 
 <!-- toc -->
 
-- [authentication-strategies.js](#authentication-strategiesjs)
-  - [Official Authentication Strategies](#official-authentication-strategies)
-    - [Personal Access Token authentication](#personal-access-token-authentication)
-    - [GitHub App or installation authentication](#github-app-or-installation-authentication)
-    - [OAuth app authentication](#oauth-app-authentication)
-    - [OAuth user authentication](#oauth-user-authentication)
-    - [OAuth user client authentication](#oauth-user-client-authentication)
-    - [Device authentication](#device-authentication)
-    - [GitHub Action authentication](#github-action-authentication)
-  - [Other Strategies](#other-strategies)
-    - [unauthenticated](#unauthenticated)
-    - [callback](#callback)
-    - [.netrc](#netrc)
-  - [How authentication strategies work](#how-authentication-strategies-work)
-    - [`authenticationStrategy(strategyOptions)`](#authenticationstrategystrategyoptions)
-    - [`auth` interface](#auth-interface)
-    - [The `authOptions.factory` pattern](#the-authoptionsfactory-pattern)
-  - [Create your own Octokit authentication strategy module](#create-your-own-octokit-authentication-strategy-module)
-  - [License](#license)
+-   [authentication-strategies.js](#authentication-strategiesjs)
+    -   [Official Authentication Strategies](#official-authentication-strategies)
+        -   [Personal Access Token authentication](#personal-access-token-authentication)
+        -   [GitHub App or installation authentication](#github-app-or-installation-authentication)
+        -   [OAuth app authentication](#oauth-app-authentication)
+        -   [OAuth user authentication](#oauth-user-authentication)
+        -   [OAuth user client authentication](#oauth-user-client-authentication)
+        -   [Device authentication](#device-authentication)
+        -   [GitHub Action authentication](#github-action-authentication)
+    -   [Other Strategies](#other-strategies)
+        -   [unauthenticated](#unauthenticated)
+        -   [callback](#callback)
+        -   [.netrc](#netrc)
+    -   [How authentication strategies work](#how-authentication-strategies-work)
+        -   [`authenticationStrategy(strategyOptions)`](#authenticationstrategystrategyoptions)
+        -   [`auth` interface](#auth-interface)
+        -   [The `authOptions.factory` pattern](#the-authoptionsfactory-pattern)
+    -   [Create your own Octokit authentication strategy module](#create-your-own-octokit-authentication-strategy-module)
+    -   [License](#license)
 
 <!-- tocstop -->
 
@@ -37,7 +37,7 @@ The simplest authentication strategy requires a user to create a personal access
 `@octokit/auth-token` is the default authentication strategy built into [`@octokit/core`](https://github.com/octokit/core.js/#authentication)
 
 ```js
-const auth = createTokenAuth("1234567890abcdef1234567890abcdef12345678");
+const auth = createTokenAuth('1234567890abcdef1234567890abcdef12345678');
 const { token } = await auth();
 ```
 
@@ -65,11 +65,11 @@ An OAuth app has two different means of authentication.
 
 There are differences between [OAuth Apps](https://docs.github.com/en/developers/apps/building-oauth-apps) and the OAuth features from [GitHub Apps](https://docs.github.com/en/developers/apps/building-github-apps):
 
-- OAuth apps support scopes. Different scopes can be set each time a user-access token is created. They cannot be limited globally for the OAuth app.
-- GitHub apps have permissions. The are set when the app is registered. The app cannot access any repository until it is installed by a user. The installation inherits the app's permissions at the time of the installation. Permission changes need to be approved by the user.
-- OAuth apps create OAuth user access tokens which have work the same on all repositories
-- GitHub apps create OAuth user-to-server access tokens which inher both the app's user permissions as well as each installation's repository and user/organization permissions.
-- GitHub apps can enable expiration for its user-to-server access tokens. OAuth apps do not have such a feature.
+-   OAuth apps support scopes. Different scopes can be set each time a user-access token is created. They cannot be limited globally for the OAuth app.
+-   GitHub apps have permissions. The are set when the app is registered. The app cannot access any repository until it is installed by a user. The installation inherits the app's permissions at the time of the installation. Permission changes need to be approved by the user.
+-   OAuth apps create OAuth user access tokens which have work the same on all repositories
+-   GitHub apps create OAuth user-to-server access tokens which inher both the app's user permissions as well as each installation's repository and user/organization permissions.
+-   GitHub apps can enable expiration for its user-to-server access tokens. OAuth apps do not have such a feature.
 
 ### OAuth user authentication
 
@@ -128,7 +128,7 @@ Example
 
 ```js
 // expects a personal access token to be set as `login` in the `~/.netrc` file for `api.github.com`
-const { createNetrcAuth } = require("octokit-netrc-auth");
+const { createNetrcAuth } = require('octokit-netrc-auth');
 const auth = createNetrcAuth();
 const { token } = await auth();
 ```
@@ -149,8 +149,8 @@ It can be used with an `Octokit` constructor by setting the `authStrategy` and `
 
 ```js
 const octokit = new Octokit({
-  authStrategy: authenticationStrategy,
-  auth: strategyOptions,
+    authStrategy: authenticationStrategy,
+    auth: strategyOptions
 });
 
 const authentication = await octokit.auth(authOptions);
@@ -190,13 +190,13 @@ This internal state would get lost if a separate `octokit` instance would be cre
 
 ```js
 const appOctokit = new Octokit({
-  authStrategy: createAppAuth,
-  auth: { appId, privateKey },
+    authStrategy: createAppAuth,
+    auth: { appId, privateKey }
 });
 
 const installationOctokit = new Octokit({
-  authStrategy: createAppAuth,
-  auth: { appId, privateKey, installationId },
+    authStrategy: createAppAuth,
+    auth: { appId, privateKey, installationId }
 });
 ```
 
@@ -204,15 +204,14 @@ Instead, `installationOctokit` can be created from `appOctokit.auth`, and both c
 
 ```js
 const appOctokit = new Octokit({
-  authStrategy: createAppAuth,
-  auth: { appId, privateKey },
+    authStrategy: createAppAuth,
+    auth: { appId, privateKey }
 });
 
 const installationOctokit = appOctokit.auth({
-  type: "installation",
-  installationId,
-  factory: ({ octokitOptions, ...auth }) =>
-    new Octokit({ ...octokitOptions, auth }),
+    type: 'installation',
+    installationId,
+    factory: ({ octokitOptions, ...auth }) => new Octokit({ ...octokitOptions, auth })
 });
 ```
 

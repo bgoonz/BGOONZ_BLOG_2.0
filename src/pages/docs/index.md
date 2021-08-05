@@ -29,6 +29,28 @@ excerpt: docs quick reference
 
 # Go To Sitemap: [Go Now -->](./docs/sitemap/)
 
+---
+
+# Actual Docs:
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+<h1>  Docs</h1>
+<br>
+
+<iframe class="inner" src="https://docs42.netlify.app/#C:/MY-WEB-DEV/__NEW_GIT/DOCS/docs-collection" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+---
+
 ## Doc Websites & Repos
 
 -   [Python Practice](https://github.com/bgoonz/PYTHON_PRAC)
