@@ -1,8 +1,8 @@
 ---
 language: markdown
 contributors:
-  - ["Dan Turkel", "http://danturkel.com/"]
-  - ["Jacob Ward", "http://github.com/JacobCWard/"]
+    - ['Dan Turkel', 'http://danturkel.com/']
+    - ['Jacob Ward', 'http://github.com/JacobCWard/']
 filename: markdown.md
 ---
 
@@ -14,16 +14,16 @@ Markdown also varies in implementation from one parser to a next. This
 guide will attempt to clarify when features are universal or when they are
 specific to a certain parser.
 
-- [HTML Elements](#html-elements)
-- [Headings](#headings)
-- [Simple Text Styles](#simple-text-styles)
-- [Paragraphs](#paragraphs)
-- [Lists](#lists)
-- [Code blocks](#code-blocks)
-- [Horizontal rule](#horizontal-rule)
-- [Links](#links)
-- [Images](#images)
-- [Miscellany](#miscellany)
+-   [HTML Elements](#html-elements)
+-   [Headings](#headings)
+-   [Simple Text Styles](#simple-text-styles)
+-   [Paragraphs](#paragraphs)
+-   [Lists](#lists)
+-   [Code blocks](#code-blocks)
+-   [Horizontal rule](#horizontal-rule)
+-   [Links](#links)
+-   [Images](#images)
+-   [Miscellany](#miscellany)
 
 ## HTML Elements
 
@@ -127,21 +127,21 @@ Block quotes are easy and done with the > character.
 Unordered lists can be made using asterisks, pluses, or hyphens.
 
 ```md
-- Item
-- Item
-- Another item
+-   Item
+-   Item
+-   Another item
 
 or
 
-- Item
-- Item
-- One more item
+-   Item
+-   Item
+-   One more item
 
 or
 
-- Item
-- Item
-- One last item
+-   Item
+-   Item
+-   One last item
 ```
 
 Ordered lists are done with a number followed by a period.
@@ -169,8 +169,8 @@ You can also use sublists
 1. Item one
 2. Item two
 3. Item three
-   - Sub-item
-   - Sub-item
+    - Sub-item
+    - Sub-item
 4. Item four
 ```
 
@@ -179,10 +179,10 @@ There are even task lists. This creates HTML checkboxes.
 ```md
 Boxes below without the 'x' are unchecked HTML checkboxes.
 
-- [ ] First task to complete.
-- [ ] Second task that needs done
-      This checkbox below will be a checked HTML checkbox.
-- [x] This task has been completed
+-   [ ] First task to complete.
+-   [ ] Second task that needs done
+        This checkbox below will be a checked HTML checkbox.
+-   [x] This task has been completed
 ```
 
 ## Code blocks
@@ -248,7 +248,7 @@ the text to display in hard brackets [] followed by the url in parentheses ()
 You can also add a link title using quotes inside the parentheses.
 
 ```md
-[Click me!](http://test.com/ "Link to Test.com")
+[Click me!](http://test.com/ 'Link to Test.com')
 ```
 
 Relative paths work too.
@@ -282,7 +282,7 @@ But it's not that commonly used.
 Images are done the same way as links but with an exclamation point in front!
 
 ```md
-![This is the alt-attribute for my image](http://imgur.com/myimage.jpg "An optional title")
+![This is the alt-attribute for my image](http://imgur.com/myimage.jpg 'An optional title')
 ```
 
 And reference style works as expected.

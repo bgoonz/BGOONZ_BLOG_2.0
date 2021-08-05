@@ -2,13 +2,13 @@
 category: tool
 tool: git
 contributors:
-  - ["Jake Prather", "http://github.com/JakeHP"]
-  - ["Leo Rudberg", "http://github.com/LOZORD"]
-  - ["Betsy Lorton", "http://github.com/schbetsy"]
-  - ["Bruno Volcov", "http://github.com/volcov"]
-  - ["Andrew Taylor", "http://github.com/andrewjt71"]
-  - ["Jason Stathopulos", "http://github.com/SpiritBreaker226"]
-  - ["Milo Gilad", "http://github.com/Myl0g"]
+    - ['Jake Prather', 'http://github.com/JakeHP']
+    - ['Leo Rudberg', 'http://github.com/LOZORD']
+    - ['Betsy Lorton', 'http://github.com/schbetsy']
+    - ['Bruno Volcov', 'http://github.com/volcov']
+    - ['Andrew Taylor', 'http://github.com/andrewjt71']
+    - ['Jason Stathopulos', 'http://github.com/SpiritBreaker226']
+    - ['Milo Gilad', 'http://github.com/Myl0g']
 filename: LearnGit.txt
 ---
 
@@ -26,24 +26,24 @@ Version control is a system that records changes to a file(s), over time.
 
 ### Centralized Versioning vs. Distributed Versioning
 
-- Centralized version control focuses on synchronizing, tracking, and backing
-  up files.
-- Distributed version control focuses on sharing changes. Every change has a
-  unique id.
-- Distributed systems have no defined structure. You could easily have a SVN
-  style, centralized system, with git.
+-   Centralized version control focuses on synchronizing, tracking, and backing
+    up files.
+-   Distributed version control focuses on sharing changes. Every change has a
+    unique id.
+-   Distributed systems have no defined structure. You could easily have a SVN
+    style, centralized system, with git.
 
 [Additional Information](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
 
 ### Why Use Git?
 
-- Can work offline.
-- Collaborating with others is easy!
-- Branching is easy!
-- Branching is fast!
-- Merging is easy!
-- Git is fast.
-- Git is flexible.
+-   Can work offline.
+-   Collaborating with others is easy!
+-   Branching is easy!
+-   Branching is fast!
+-   Merging is easy!
+-   Git is fast.
+-   Git is flexible.
 
 ## Git Architecture
 
@@ -98,15 +98,15 @@ of heads.
 
 ### Stages of Git
 
-- Modified - Changes have been made to a file but file has not been committed
-  to Git Database yet
-- Staged - Marks a modified file to go into your next commit snapshot
-- Committed - Files have been committed to the Git Database
+-   Modified - Changes have been made to a file but file has not been committed
+    to Git Database yet
+-   Staged - Marks a modified file to go into your next commit snapshot
+-   Committed - Files have been committed to the Git Database
 
 ### Conceptual Resources
 
-- [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
-- [Git For Designers](http://hoth.entp.com/output/git_for_designers.html)
+-   [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
+-   [Git For Designers](http://hoth.entp.com/output/git_for_designers.html)
 
 ## Commands
 
@@ -584,28 +584,28 @@ $ git rm /pather/to/the/file/HelloWorld.c
 
 ## Further Information
 
-- [tryGit - A fun interactive way to learn Git.](http://try.github.io/levels/1/challenges/1)
+-   [tryGit - A fun interactive way to learn Git.](http://try.github.io/levels/1/challenges/1)
 
-- [Learn Git Branching - the most visual and interactive way to learn Git on the web](http://learngitbranching.js.org/)
+-   [Learn Git Branching - the most visual and interactive way to learn Git on the web](http://learngitbranching.js.org/)
 
-- [Udemy Git Tutorial: A Comprehensive Guide](https://blog.udemy.com/git-tutorial-a-comprehensive-guide/)
+-   [Udemy Git Tutorial: A Comprehensive Guide](https://blog.udemy.com/git-tutorial-a-comprehensive-guide/)
 
-- [Git Immersion - A Guided tour that walks through the fundamentals of git](http://gitimmersion.com/)
+-   [Git Immersion - A Guided tour that walks through the fundamentals of git](http://gitimmersion.com/)
 
-- [git-scm - Video Tutorials](http://git-scm.com/videos)
+-   [git-scm - Video Tutorials](http://git-scm.com/videos)
 
-- [git-scm - Documentation](http://git-scm.com/docs)
+-   [git-scm - Documentation](http://git-scm.com/docs)
 
-- [Atlassian Git - Tutorials & Workflows](https://www.atlassian.com/git/)
+-   [Atlassian Git - Tutorials & Workflows](https://www.atlassian.com/git/)
 
-- [SalesForce Cheat Sheet](http://res.cloudinary.com/hy4kyit2a/image/upload/SF_git_cheatsheet.pdf)
+-   [SalesForce Cheat Sheet](http://res.cloudinary.com/hy4kyit2a/image/upload/SF_git_cheatsheet.pdf)
 
-- [GitGuys](http://www.gitguys.com/)
+-   [GitGuys](http://www.gitguys.com/)
 
-- [Git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
+-   [Git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
 
-- [Pro Git](http://www.git-scm.com/book/en/v2)
+-   [Pro Git](http://www.git-scm.com/book/en/v2)
 
-- [An introduction to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+-   [An introduction to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
-- [The New Boston tutorial to Git covering basic commands and workflow](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)
+-   [The New Boston tutorial to Git covering basic commands and workflow](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)

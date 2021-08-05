@@ -1,7 +1,7 @@
 ---
 language: Visual Basic
 contributors:
-  - ["Brian Martin", "http://brianmartin.biz"]
+    - ['Brian Martin', 'http://brianmartin.biz']
 filename: learnvisualbasic.vb
 ---
 

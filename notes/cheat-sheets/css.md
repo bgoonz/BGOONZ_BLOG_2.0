@@ -1,13 +1,13 @@
 ---
 language: css
 contributors:
-  - ["Mohammad Valipour", "https://github.com/mvalipour"]
-  - ["Marco Scannadinari", "https://github.com/marcoms"]
-  - ["Geoffrey Liu", "https://github.com/g-liu"]
-  - ["Connor Shea", "https://github.com/connorshea"]
-  - ["Deepanshu Utkarsh", "https://github.com/duci9y"]
-  - ["Brett Taylor", "https://github.com/glutnix"]
-  - ["Tyler Mumford", "https://tylermumford.com"]
+    - ['Mohammad Valipour', 'https://github.com/mvalipour']
+    - ['Marco Scannadinari', 'https://github.com/marcoms']
+    - ['Geoffrey Liu', 'https://github.com/g-liu']
+    - ['Connor Shea', 'https://github.com/connorshea']
+    - ['Deepanshu Utkarsh', 'https://github.com/duci9y']
+    - ['Brett Taylor', 'https://github.com/glutnix']
+    - ['Tyler Mumford', 'https://tylermumford.com']
 filename: learncss.css
 ---
 
@@ -38,7 +38,7 @@ The main focus of this article is on the syntax and some general tips.
 
 /* the selector is used to target an element on a page. */
 selector {
-  property: value; /* more properties...*/
+    property: value; /* more properties...*/
 }
 
 /*
@@ -65,38 +65,38 @@ div {
 
 /* or using the fact that it has an attribute! */
 [attr] {
-  font-size: smaller;
+    font-size: smaller;
 }
 
 /* or that the attribute has a specific value */
-[attr="value"] {
-  font-size: smaller;
+[attr='value'] {
+    font-size: smaller;
 }
 
 /* starts with a value (CSS 3) */
-[attr^="val"] {
-  font-size: smaller;
+[attr^='val'] {
+    font-size: smaller;
 }
 
 /* or ends with a value (CSS 3) */
-[attr$="ue"] {
-  font-size: smaller;
+[attr$='ue'] {
+    font-size: smaller;
 }
 
 /* or contains a value in a space-separated list */
-[otherAttr~="foo"] {
+[otherAttr~='foo'] {
 }
-[otherAttr~="bar"] {
+[otherAttr~='bar'] {
 }
 
 /* or contains a value in a dash-separated list, e.g., "-" (U+002D) */
-[otherAttr|="en"] {
-  font-size: smaller;
+[otherAttr|='en'] {
+    font-size: smaller;
 }
 
 /* You can combine different selectors to create a more focused selector. Don't
    put spaces between them. */
-div.some-class[attr$="ue"] {
+div.some-class[attr$='ue'] {
 }
 
 /* You can select an element which is a child of another element */
@@ -180,51 +180,51 @@ selector2 {
    #################### */
 
 selector {
-  /* Units of length can be absolute or relative. */
+    /* Units of length can be absolute or relative. */
 
-  /* Relative units */
-  width: 50%; /* percentage of parent element width */
-  font-size: 2em; /* multiples of element's original font-size */
-  font-size: 2rem; /* or the root element's font-size */
-  font-size: 2vw; /* multiples of 1% of the viewport's width (CSS 3) */
-  font-size: 2vh; /* or its height */
-  font-size: 2vmin; /* whichever of a vh or a vw is smaller */
-  font-size: 2vmax; /* or greater */
+    /* Relative units */
+    width: 50%; /* percentage of parent element width */
+    font-size: 2em; /* multiples of element's original font-size */
+    font-size: 2rem; /* or the root element's font-size */
+    font-size: 2vw; /* multiples of 1% of the viewport's width (CSS 3) */
+    font-size: 2vh; /* or its height */
+    font-size: 2vmin; /* whichever of a vh or a vw is smaller */
+    font-size: 2vmax; /* or greater */
 
-  /* Absolute units */
-  width: 200px; /* pixels */
-  font-size: 20pt; /* points */
-  width: 5cm; /* centimeters */
-  min-width: 50mm; /* millimeters */
-  max-width: 5in; /* inches */
+    /* Absolute units */
+    width: 200px; /* pixels */
+    font-size: 20pt; /* points */
+    width: 5cm; /* centimeters */
+    min-width: 50mm; /* millimeters */
+    max-width: 5in; /* inches */
 
-  /* Colors */
-  color: #f6e; /* short hex format */
-  color: #ff66ee; /* long hex format */
-  color: tomato; /* a named color */
-  color: rgb(255, 255, 255); /* as rgb values */
-  color: rgb(10%, 20%, 50%); /* as rgb percentages */
-  color: rgba(255, 0, 0, 0.3); /* as rgba values (CSS 3) Note: 0 <= a <= 1 */
-  color: transparent; /* equivalent to setting the alpha to 0 */
-  color: hsl(0, 100%, 50%); /* as hsl percentages (CSS 3) */
-  color: hsla(0, 100%, 50%, 0.3); /* as hsl percentages with alpha */
+    /* Colors */
+    color: #f6e; /* short hex format */
+    color: #ff66ee; /* long hex format */
+    color: tomato; /* a named color */
+    color: rgb(255, 255, 255); /* as rgb values */
+    color: rgb(10%, 20%, 50%); /* as rgb percentages */
+    color: rgba(255, 0, 0, 0.3); /* as rgba values (CSS 3) Note: 0 <= a <= 1 */
+    color: transparent; /* equivalent to setting the alpha to 0 */
+    color: hsl(0, 100%, 50%); /* as hsl percentages (CSS 3) */
+    color: hsla(0, 100%, 50%, 0.3); /* as hsl percentages with alpha */
 
-  /* Borders */
-  border-width: 5px;
-  border-style: solid;
-  border-color: red; /* similar to how background-color is set */
-  border: 5px solid red; /* this is a short hand approach for the same */
-  border-radius: 20px; /* this is a CSS3 property */
+    /* Borders */
+    border-width: 5px;
+    border-style: solid;
+    border-color: red; /* similar to how background-color is set */
+    border: 5px solid red; /* this is a short hand approach for the same */
+    border-radius: 20px; /* this is a CSS3 property */
 
-  /* Images as backgrounds of elements */
-  background-image: url(/img-path/img.jpg); /* quotes inside url() optional */
+    /* Images as backgrounds of elements */
+    background-image: url(/img-path/img.jpg); /* quotes inside url() optional */
 
-  /* Fonts */
-  font-family: Arial;
-  /* if the font family name has a space, it must be quoted */
-  font-family: "Courier New";
-  /* if the first one is not found, the browser uses the next, and so on */
-  font-family: "Courier New", Trebuchet, Arial, sans-serif;
+    /* Fonts */
+    font-family: Arial;
+    /* if the font family name has a space, it must be quoted */
+    font-family: 'Courier New';
+    /* if the first one is not found, the browser uses the next, and so on */
+    font-family: 'Courier New', Trebuchet, Arial, sans-serif;
 }
 ```
 
@@ -239,9 +239,9 @@ Save a CSS stylesheet with the extension `.css`.
 
 <!-- You can also include some CSS inline in your markup. -->
 <style>
-  a {
-    color: purple;
-  }
+    a {
+        color: purple;
+    }
 </style>
 
 <!-- Or directly set CSS properties on the element. -->
@@ -280,7 +280,7 @@ p {
 
 /* E */
 p {
-  property: value !important;
+    property: value !important;
 }
 ```
 
@@ -293,16 +293,16 @@ and the following markup:
 The precedence of style is as follows. Remember, the precedence is for each
 **property**, not for the entire block.
 
-- `E` has the highest precedence because of the keyword `!important`. It is
-  recommended that you avoid its usage.
-- `F` is next, because it is an inline style.
-- `A` is next, because it is more "specific" than anything else. It has 3
-  specifiers: The name of the element `p`, its class `class1`, an attribute
-  `attr='value'`.
-- `C` is next, even though it has the same specificity as `B`.
-  This is because it appears after `B`.
-- `B` is next.
-- `D` is the last one.
+-   `E` has the highest precedence because of the keyword `!important`. It is
+    recommended that you avoid its usage.
+-   `F` is next, because it is an inline style.
+-   `A` is next, because it is more "specific" than anything else. It has 3
+    specifiers: The name of the element `p`, its class `class1`, an attribute
+    `attr='value'`.
+-   `C` is next, even though it has the same specificity as `B`.
+    This is because it appears after `B`.
+-   `B` is next.
+-   `D` is the last one.
 
 ## Media Queries
 
@@ -311,25 +311,25 @@ CSS Media Queries are a feature in CSS 3 which allows you to specify when certai
 ```css
 /* A rule that will be used on all devices */
 h1 {
-  font-size: 2em;
-  color: white;
-  background-color: black;
+    font-size: 2em;
+    color: white;
+    background-color: black;
 }
 
 /* change the h1 to use less ink on a printer */
 @media print {
-  h1 {
-    color: black;
-    background-color: white;
-  }
+    h1 {
+        color: black;
+        background-color: white;
+    }
 }
 
 /* make the font bigger when shown on a screen at least 480px wide */
 @media screen and (min-width: 480px) {
-  h1 {
-    font-size: 3em;
-    font-weight: normal;
-  }
+    h1 {
+        font-size: 3em;
+        font-weight: normal;
+    }
 }
 ```
 
@@ -342,7 +342,7 @@ Many smartphones and tablets will attempt to render the page as if it were on a 
 
 ```html
 <head>
-  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
 </head>
 ```
 
@@ -354,17 +354,17 @@ a new feature.
 
 ## Resources
 
-- [CanIUse](http://caniuse.com) (Detailed compatibility info)
-- [Dabblet](http://dabblet.com/) (CSS playground)
-- [Mozilla Developer Network's CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS) (Tutorials and reference)
-- [Codrops' CSS Reference](http://tympanus.net/codrops/css_reference/) (Reference)
-- [DevTips' CSS Basics](https://www.youtube.com/playlist?list=PLqGj3iMvMa4IOmy04kDxh_hqODMqoeeCy) (Tutorials)
+-   [CanIUse](http://caniuse.com) (Detailed compatibility info)
+-   [Dabblet](http://dabblet.com/) (CSS playground)
+-   [Mozilla Developer Network's CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS) (Tutorials and reference)
+-   [Codrops' CSS Reference](http://tympanus.net/codrops/css_reference/) (Reference)
+-   [DevTips' CSS Basics](https://www.youtube.com/playlist?list=PLqGj3iMvMa4IOmy04kDxh_hqODMqoeeCy) (Tutorials)
 
 ## Further Reading
 
-- [Understanding Style Precedence in CSS: Specificity, Inheritance, and the Cascade](http://www.vanseodesign.com/css/css-specificity-inheritance-cascaade/)
-- [Selecting elements using attributes](https://css-tricks.com/almanac/selectors/a/attribute/)
-- [QuirksMode CSS](http://www.quirksmode.org/css/)
-- [Z-Index - The stacking context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context)
-- [SASS](http://sass-lang.com/) and [LESS](http://lesscss.org/) for CSS pre-processing
-- [CSS-Tricks](https://css-tricks.com)
+-   [Understanding Style Precedence in CSS: Specificity, Inheritance, and the Cascade](http://www.vanseodesign.com/css/css-specificity-inheritance-cascaade/)
+-   [Selecting elements using attributes](https://css-tricks.com/almanac/selectors/a/attribute/)
+-   [QuirksMode CSS](http://www.quirksmode.org/css/)
+-   [Z-Index - The stacking context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context)
+-   [SASS](http://sass-lang.com/) and [LESS](http://lesscss.org/) for CSS pre-processing
+-   [CSS-Tricks](https://css-tricks.com)
