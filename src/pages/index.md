@@ -289,6 +289,7 @@ sections:
       - dolor sit amet
     actions: []
     type: section_content
+    image: images/thoughtful-zucchini.gif
 seo:
   title: Web-Dev-Hub
   description: >-
