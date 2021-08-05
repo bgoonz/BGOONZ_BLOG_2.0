@@ -273,7 +273,7 @@ sections:
         type: action
     type: section_cta
   - title: Site Search
-    section_id: lorem-ipsum
+    section_id: Search
     image_alt: lorem-ipsum
     image_position: left
     content: >-
