@@ -33,7 +33,6 @@ excerpt: docs quick reference
 
 # Actual Docs:
 
-
 <br>
 
 <br>
@@ -50,11 +49,7 @@ excerpt: docs quick reference
 
 <br>
 
-
-
 ---
-
-
 
 ## Doc Websites & Repos
 
