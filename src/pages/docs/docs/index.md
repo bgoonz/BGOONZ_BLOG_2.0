@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: WebDevDocs
 weight: 0
 excerpt: lorem-ipsum
 seo:
