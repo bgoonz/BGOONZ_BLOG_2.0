@@ -111,9 +111,9 @@ sections:
           - label: Youtube
             url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
             style: link
-        title: Guitar Effects Triggering w DTW
-        title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-        image: images/panoramic-owl.png
+       title: Guitar Effects Triggering w DTW
+       title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
+       image: images/panoramic-owl.png
       - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
         image_alt: img of dtw
         content: >
