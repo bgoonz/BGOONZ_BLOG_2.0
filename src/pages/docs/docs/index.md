@@ -17,8 +17,8 @@ template: docs
 ![](images/curious-eggplant.jpg)
 
 
-<iframe src="https://docs42.netlify.app/"></iframe>
-<h1>Paste excel to HTML</h1>
+
+<h1>Official Docs</h1>
 <br>
 <iframe  class="block-content" src="https://docs42.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
