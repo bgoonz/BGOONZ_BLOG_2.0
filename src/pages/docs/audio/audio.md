@@ -1,7 +1,7 @@
 ---
 title: Audio
 weight: 0
-excerpt: lorem-ipsum
+excerpt: My automated guitar effects triggering project using a dymanic time warping algorithm
 seo:
     title: ''
     description: ''
