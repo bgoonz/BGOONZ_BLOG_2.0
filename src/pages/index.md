@@ -20,7 +20,6 @@ sections:
       grid_items:
           - content: >
                 Memoization, Tabulation, and Sorting Algorithms by Example
-
                 Why is looking at runtime not a reliable method of calculating time
                 complexity?
             actions:
@@ -103,8 +102,7 @@ sections:
       image_alt: bryan-guner
       image_position: left
       content: >-
-          <iframe class="block-content" width="100%
-          src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
+          <iframe class="block-content" width="100%          src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
           player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       actions:
