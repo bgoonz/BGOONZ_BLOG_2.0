@@ -201,7 +201,7 @@
             },
             {
                 "label": "Projects",
-                "url": "#",
+                "url": "https://curious-zebra-a1329.netlify.app/",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": true,
