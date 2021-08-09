@@ -461,15 +461,6 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-            },
-            {
-                "label": "reddit",
-                "url": "https://www.reddit.com/user/SignalCountry5613",
-                "style": "icon",
-                "icon_class": "reddit",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
             }
         ],
         "links": [
