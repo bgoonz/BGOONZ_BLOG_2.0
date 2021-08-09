@@ -6,4 +6,4 @@ export default function markdownify(markdown) {
         return null;
     }
     return htmlToReact(marked(markdown));
-};
+}
