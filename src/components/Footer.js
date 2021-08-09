@@ -9,10 +9,11 @@ export default class Footer extends React.Component {
         return (
             <footer id="colophon" className="site-footer outer">
                 <div>
-                    <br />
-                 
-                    <br />
                     <center>
+                        <br />
+
+                        <br />
+
                         <h1>Free Find Search Engine</h1>
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
@@ -20,7 +21,7 @@ export default class Footer extends React.Component {
                                     <td style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }}>
                                         <center>
                                             <table
-                                                width="90%"
+                                                width="95%"
                                                 cellPadding={0}
                                                 cellSpacing={0}
                                                 border={0}
@@ -84,11 +85,10 @@ export default class Footer extends React.Component {
                                 </tr>
                             </tbody>
                         </table>
+
+                        <script async src="https://cse.google.com/cse.js?cx=b9b42c05e18ccf4ab"></script>
+                        <div class="gcse-search"></div>
                     </center>
-                </div>
-                <div>
-                    <script async src="https://cse.google.com/cse.js?cx=b9b42c05e18ccf4ab"></script>
-                    <div class="gcse-search"></div>
                 </div>
                 <div className="inner">
                     <div className="site-footer-inside">
