@@ -1,31 +1,27 @@
 ---
 title: Writing Files
 excerpt: >-
-  Web-Dev-Hubis a Unibit theme created for project documentations. You can use
-  it for your project.
+    Web-Dev-Hubis a Unibit theme created for project documentations. You can use
+    it for your project.
 seo:
-  title: Writing Files
-  description: >
-    Append to a file
-
-    A handy method to append content to the end of a file is fs.appendFile()
-    (and its fs.appendFileSync() counterpart):
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Writing Files
-      keyName: property
-    - name: 'og:description'
-      value: This is the Writing Files page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Writing Files
-    - name: 'twitter:description'
-      value: This is the Writing Files page
+    title: Writing Files
+    description: This is the Writing Files page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Writing Files
+          keyName: property
+        - name: 'og:description'
+          value: This is the Writing Files page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Writing Files
+        - name: 'twitter:description'
+          value: This is the Writing Files page
 template: docs
 ---
 
