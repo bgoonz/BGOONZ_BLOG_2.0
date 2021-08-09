@@ -4,8 +4,12 @@
 
 ![Cover image for Full Stack Developer's Roadmap 🗺](https://res.cloudinary.com/practicaldev/image/fetch/s--yZ-A1RXK--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/s7cj5qsge61za29lvn4s.jpg)
 
+<<<<<<< HEAD
 Discussion (110)
 ----------------
+=======
+## Discussion (110)
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 Collapse Expand
 
@@ -27,6 +31,7 @@ Collapse Expand
 
 I'm a Midwest-based Software Engineer.
 
+<<<<<<< HEAD
 *   Location
     
     Minneapolis, MN
@@ -43,6 +48,23 @@ I'm a Midwest-based Software Engineer.
     
     Aug 9, 2019
     
+=======
+-   Location
+
+    Minneapolis, MN
+
+-   education
+
+    AAS
+
+-   work
+
+    Software Engineer at Barings LLC
+
+-   Joined
+
+    Aug 9, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 15 '20](https://dev.to/natescode/comment/16ofi)
 
@@ -56,6 +78,7 @@ Collapse Expand
 
 I work in ReactJS, ASP.NET Core, Node.JS, React JS, Wordpress
 
+<<<<<<< HEAD
 *   Location
     
     Beed, Maharashtra
@@ -72,6 +95,23 @@ I work in ReactJS, ASP.NET Core, Node.JS, React JS, Wordpress
     
     Aug 22, 2019
     
+=======
+-   Location
+
+    Beed, Maharashtra
+
+-   education
+
+    M. E. in Software Engineering
+
+-   work
+
+    Full Stack Web Developer at Ambika Recharge Solution Pvt. Ltd.
+
+-   Joined
+
+    Aug 22, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20 • Edited on Oct 1](https://dev.to/iamrohitsawai/comment/15gii)
 
@@ -85,6 +125,7 @@ Collapse Expand
 
 A code is like love ❤, it is created with clear intentions at the beginning 😍, but it can get complicated 😵
 
+<<<<<<< HEAD
 *   Email
     
 *   Location
@@ -99,6 +140,20 @@ A code is like love ❤, it is created with clear intentions at the beginning �
     
     Aug 3, 2020
     
+=======
+-   Email
+-   Location
+
+    Jammu & Kashmir, India
+
+-   work
+
+    System Engineer at TCS
+
+-   Joined
+
+    Aug 3, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 15 '20](https://dev.to/sumit/comment/16o5f)
 
@@ -118,6 +173,7 @@ Collapse Expand
 
 Frontend developer at Saama technologies
 
+<<<<<<< HEAD
 *   Location
     
     Trichy
@@ -134,6 +190,23 @@ Frontend developer at Saama technologies
     
     Jun 29, 2020
     
+=======
+-   Location
+
+    Trichy
+
+-   education
+
+    B.E Computer science
+
+-   work
+
+    Front-end developer at Saama technologies
+
+-   Joined
+
+    Jun 29, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/aashiqincode/comment/15glj)
 
@@ -147,6 +220,7 @@ Collapse Expand
 
 Just trying to write cleaner code each day | My story - https://youtu.be/Zr73KfbiSu0
 
+<<<<<<< HEAD
 *   Location
     
     Cleveland, Ohio
@@ -159,6 +233,19 @@ Just trying to write cleaner code each day | My story - https://youtu.be/Zr73Kfb
     
     Feb 20, 2020
     
+=======
+-   Location
+
+    Cleveland, Ohio
+
+-   education
+
+    Bachelor in Corporate Finance, Self Taught Dev
+
+-   Joined
+
+    Feb 20, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/zachgoll/comment/17213)
 
@@ -172,6 +259,7 @@ Collapse Expand
 
 Full Stack Developer - System Architect - Agile Developer
 
+<<<<<<< HEAD
 *   Email
     
 *   Location
@@ -182,6 +270,16 @@ Full Stack Developer - System Architect - Agile Developer
     
     Sep 4, 2017
     
+=======
+-   Email
+-   Location
+
+    India
+
+-   Joined
+
+    Sep 4, 2017
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/ankitmpatel/comment/15gff)
 
@@ -195,6 +293,7 @@ Collapse Expand
 
 trying to learn more
 
+<<<<<<< HEAD
 *   Location
     
     EveryWhere
@@ -203,6 +302,15 @@ trying to learn more
     
     Jun 2, 2020
     
+=======
+-   Location
+
+    EveryWhere
+
+-   Joined
+
+    Jun 2, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 9 '20](https://dev.to/hyperx837/comment/16i22)
 
@@ -216,6 +324,7 @@ Collapse Expand
 
 After a long military career, I decided on a new path, something more productive. So three years ago I bought my first laptop. Since then I have I have built countless websites and several apps.
 
+<<<<<<< HEAD
 *   Location
     
     United Kingdom
@@ -232,6 +341,23 @@ After a long military career, I decided on a new path, something more productive
     
     Jun 9, 2018
     
+=======
+-   Location
+
+    United Kingdom
+
+-   education
+
+    Easthampstead Park Comprehensive
+
+-   work
+
+    Freelance at Self Employed
+
+-   Joined
+
+    Jun 9, 2018
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Sep 30 '20](https://dev.to/ajax27/comment/15g11)
 
@@ -249,6 +375,7 @@ Collapse Expand
 
 Writing code for 30+ years and still enjoy it...
 
+<<<<<<< HEAD
 *   Location
     
     Krakow, Poland
@@ -261,6 +388,19 @@ Writing code for 30+ years and still enjoy it...
     
     Mar 14, 2019
     
+=======
+-   Location
+
+    Krakow, Poland
+
+-   work
+
+    Senior Software Architect
+
+-   Joined
+
+    Mar 14, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 12 '20](https://dev.to/siy/comment/16l0l)
 
@@ -296,6 +436,7 @@ Collapse Expand
 
 Polyglot programmer now focusing on Elixir/Phoenix FP
 
+<<<<<<< HEAD
 *   Location
     
     Plant City, FL
@@ -308,6 +449,19 @@ Polyglot programmer now focusing on Elixir/Phoenix FP
     
     Mar 17, 2019
     
+=======
+-   Location
+
+    Plant City, FL
+
+-   work
+
+    Fullstack developer
+
+-   Joined
+
+    Mar 17, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/alamba78/comment/15i0l)
 
@@ -321,6 +475,7 @@ Collapse Expand
 
 I'm a Midwest-based Software Engineer.
 
+<<<<<<< HEAD
 *   Location
     
     Minneapolis, MN
@@ -337,6 +492,23 @@ I'm a Midwest-based Software Engineer.
     
     Aug 9, 2019
     
+=======
+-   Location
+
+    Minneapolis, MN
+
+-   education
+
+    AAS
+
+-   work
+
+    Software Engineer at Barings LLC
+
+-   Joined
+
+    Aug 9, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 15 '20](https://dev.to/natescode/comment/16ofb)
 
@@ -354,6 +526,7 @@ The article is about fullstack roadmap. A person new to programming would only g
 
 I'm a Midwest-based Software Engineer.
 
+<<<<<<< HEAD
 *   Location
     
     Minneapolis, MN
@@ -370,6 +543,23 @@ I'm a Midwest-based Software Engineer.
     
     Aug 9, 2019
     
+=======
+-   Location
+
+    Minneapolis, MN
+
+-   education
+
+    AAS
+
+-   work
+
+    Software Engineer at Barings LLC
+
+-   Joined
+
+    Aug 9, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 16 '20](https://dev.to/natescode/comment/16p0g)
 
@@ -382,6 +572,7 @@ To each their own. But if you have all the skills listed you’ll never get a fu
 
 Polyglot programmer now focusing on Elixir/Phoenix FP
 
+<<<<<<< HEAD
 *   Location
     
     Plant City, FL
@@ -394,6 +585,19 @@ Polyglot programmer now focusing on Elixir/Phoenix FP
     
     Mar 17, 2019
     
+=======
+-   Location
+
+    Plant City, FL
+
+-   work
+
+    Fullstack developer
+
+-   Joined
+
+    Mar 17, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 16 '20](https://dev.to/alamba78/comment/16p59)
 
@@ -405,6 +609,7 @@ You seem to be looking for an argument. I never said don't learn JS. It's the or
 
 I'm a Midwest-based Software Engineer.
 
+<<<<<<< HEAD
 *   Location
     
     Minneapolis, MN
@@ -421,6 +626,23 @@ I'm a Midwest-based Software Engineer.
     
     Aug 9, 2019
     
+=======
+-   Location
+
+    Minneapolis, MN
+
+-   education
+
+    AAS
+
+-   work
+
+    Software Engineer at Barings LLC
+
+-   Joined
+
+    Aug 9, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 16 '20](https://dev.to/natescode/comment/16p5a)
 
@@ -440,6 +662,7 @@ Also, JavaScript is a very nice language to start with because you can very quic
 
 I'm a Midwest-based Software Engineer.
 
+<<<<<<< HEAD
 *   Location
     
     Minneapolis, MN
@@ -456,6 +679,23 @@ I'm a Midwest-based Software Engineer.
     
     Aug 9, 2019
     
+=======
+-   Location
+
+    Minneapolis, MN
+
+-   education
+
+    AAS
+
+-   work
+
+    Software Engineer at Barings LLC
+
+-   Joined
+
+    Aug 9, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/natescode/comment/1720e)
 
@@ -473,6 +713,7 @@ Collapse Expand
 
 I'm a full time child protection social worker, aiming to make the transition into development! Wrote my first 'Hello World' in April 2020 and currently learning to be a MEVN stack developer
 
+<<<<<<< HEAD
 *   Email
     
 *   Location
@@ -483,6 +724,16 @@ I'm a full time child protection social worker, aiming to make the transition in
     
     May 27, 2020
     
+=======
+-   Email
+-   Location
+
+    Ireland
+
+-   Joined
+
+    May 27, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 2 '20](https://dev.to/cjcon90/comment/15ij9)
 
@@ -496,6 +747,7 @@ Collapse Expand
 
 Husband and Dad 👨‍👩‍👧‍👦 DevOps Engineer 🛠️🤖🤘🏼 Geek 🕹️and Hobbyist coder 👨🏻‍💻🔰 Always longing for the Internet of the 90s 💾 I 💜 Python 🐍, learning JS/Node. 🤞
 
+<<<<<<< HEAD
 *   Location
     
     DMV, US
@@ -508,14 +760,31 @@ Husband and Dad 👨‍👩‍👧‍👦 DevOps Engineer 🛠️🤖🤘🏼 Ge
     
     Aug 8, 2018
     
+=======
+-   Location
+
+    DMV, US
+
+-   work
+
+    DevOps Engineer
+
+-   Joined
+
+    Aug 8, 2018
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Sep 30 '20](https://dev.to/jep/comment/15fl1)
 
 Excellent list. For the benefit of other folks who may be working in a company that uses different technologies for different groups, I recommend adding some information about Subversion (SVN) under **Version Control**. I was so used to git, but hadn't ever used SVN and it took some time to get out of the Git mindset.
 
+<<<<<<< HEAD
 There are two posts on DEV that may be of use :  
 
   
+=======
+There are two posts on DEV that may be of use :
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 Collapse Expand
 
@@ -535,6 +804,7 @@ Collapse Expand
 
 23-year-old student from Germany who fell in love with coding and the tech industry after pivoting from a traditional career in banking.Currently pursuing a Bachelor's in CompSci.
 
+<<<<<<< HEAD
 *   Location
     
     Bamberg, Germany
@@ -551,6 +821,23 @@ Collapse Expand
     
     Jul 18, 2019
     
+=======
+-   Location
+
+    Bamberg, Germany
+
+-   education
+
+    Studying "Software Systems Science (BSc)" in Bamberg, Germany
+
+-   work
+
+    Computer Science Student
+
+-   Joined
+
+    Jul 18, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 10 '20 • Edited on Oct 10](https://dev.to/lbeul/comment/16jp0)
 
@@ -564,6 +851,7 @@ Collapse Expand
 
 Ship it when it's ready.
 
+<<<<<<< HEAD
 *   Location
     
     Breizh
@@ -576,6 +864,19 @@ Ship it when it's ready.
     
     Sep 10, 2020
     
+=======
+-   Location
+
+    Breizh
+
+-   work
+
+    Day Dreamer
+
+-   Joined
+
+    Sep 10, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/allestri/comment/15h0g)
 
@@ -586,6 +887,7 @@ Collapse Expand
 
 [![dabjazz profile image](https://res.cloudinary.com/practicaldev/image/fetch/s--knAn1RTf--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/452946/2d9eca41-973e-4a65-b4f4-24a55bc2c5bf.jpeg)](https://dev.to/dabjazz)
 
+<<<<<<< HEAD
 [Yash\_Jaiswal](https://dev.to/dabjazz)
 
 I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently learning flutter & starting cloud computing.
@@ -602,6 +904,23 @@ I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently lear
     
     Aug 15, 2020
     
+=======
+[Yash_Jaiswal](https://dev.to/dabjazz)
+
+I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently learning flutter & starting cloud computing.
+
+-   Location
+
+    India
+
+-   work
+
+    Student at Still un-employed but will start working as a freelancer.
+
+-   Joined
+
+    Aug 15, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 7 '20](https://dev.to/dabjazz/comment/16ge6)
 
@@ -642,6 +961,7 @@ Collapse Expand
 
 I am a Full stack .NET Developer, I like to work with C#, Asp.Net Core, SQL, Mongo DB, Azure, JavaScript... Always eager to learn new technologies. I am here to share, ask & eventually learn.
 
+<<<<<<< HEAD
 *   Location
     
     India
@@ -658,6 +978,23 @@ I am a Full stack .NET Developer, I like to work with C#, Asp.Net Core, SQL, Mon
     
     Dec 23, 2019
     
+=======
+-   Location
+
+    India
+
+-   education
+
+    MSC SE
+
+-   work
+
+    Software Engineer
+
+-   Joined
+
+    Dec 23, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20 • Edited on Oct 27](https://dev.to/shaijut/comment/15hd1)
 
@@ -671,6 +1008,7 @@ Collapse Expand
 
 I dig into web tech, document my learning journey in plain English and blog about it!
 
+<<<<<<< HEAD
 *   Email
     
 *   Location
@@ -685,6 +1023,20 @@ I dig into web tech, document my learning journey in plain English and blog abou
     
     Aug 22, 2018
     
+=======
+-   Email
+-   Location
+
+    Malta
+
+-   work
+
+    I am mentoring beginner web developers and running a tech newsletter at https://tutorialhell.substack.com/subscribe
+
+-   Joined
+
+    Aug 22, 2018
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 9 '20](https://dev.to/sandorturanszky/comment/16i5d)
 
@@ -700,6 +1052,7 @@ Collapse Expand
 
 [Andrew Baisden](https://dev.to/andrewbaisden)
 
+<<<<<<< HEAD
 👨🏿‍💻 Software Developer @CGI\_Global 🖼 Content Creator. Sharing the mindset and content so you work hard to grow stronger than your past self ☯️
 
 *   Location
@@ -718,6 +1071,25 @@ Collapse Expand
     
     Feb 11, 2020
     
+=======
+👨🏿‍💻 Software Developer @CGI_Global 🖼 Content Creator. Sharing the mindset and content so you work hard to grow stronger than your past self ☯️
+
+-   Location
+
+    London, UK
+
+-   education
+
+    Bachelor Degree Computer Science
+
+-   work
+
+    Full-Stack Developer at Freelance
+
+-   Joined
+
+    Feb 11, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 4 '20](https://dev.to/andrewbaisden/comment/15nlh)
 
@@ -731,6 +1103,7 @@ Collapse Expand
 
 Programmer • Developer • learner Although A computer science engineer working with DevOps tools and looking forward to Share and Gain knowledgeable stuff. Experience Level: 6+ years
 
+<<<<<<< HEAD
 *   Location
     
     Jabalpur, India
@@ -751,6 +1124,27 @@ Programmer • Developer • learner Although A computer science engineer workin
 • [Oct 15 '20 • Edited on Oct 15](https://dev.to/ptprashanttripathi/comment/16ome)
 
 Hi, I'm a newbie I have learned  
+=======
+-   Location
+
+    Jabalpur, India
+
+-   education
+
+    B.E. in CSE
+
+-   work
+
+    System Engineer at TATA consultancy services
+
+-   Joined
+
+    Jul 13, 2020
+
+• [Oct 15 '20 • Edited on Oct 15](https://dev.to/ptprashanttripathi/comment/16ome)
+
+Hi, I'm a newbie I have learned
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
     {
       "web-development":{
@@ -762,7 +1156,10 @@ Hi, I'm a newbie I have learned
       },
       "additional":["git","markdown"]
       }
+<<<<<<< HEAD
     
+=======
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 Enter fullscreen mode Exit fullscreen mode
 
@@ -773,6 +1170,7 @@ Collapse Expand
 
 [![dabjazz profile image](https://res.cloudinary.com/practicaldev/image/fetch/s--knAn1RTf--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/452946/2d9eca41-973e-4a65-b4f4-24a55bc2c5bf.jpeg)](https://dev.to/dabjazz)
 
+<<<<<<< HEAD
 [Yash\_Jaiswal](https://dev.to/dabjazz)
 
 I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently learning flutter & starting cloud computing.
@@ -789,6 +1187,23 @@ I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently lear
     
     Aug 15, 2020
     
+=======
+[Yash_Jaiswal](https://dev.to/dabjazz)
+
+I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently learning flutter & starting cloud computing.
+
+-   Location
+
+    India
+
+-   work
+
+    Student at Still un-employed but will start working as a freelancer.
+
+-   Joined
+
+    Aug 15, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 3 '20](https://dev.to/dabjazz/comment/15kd0)
 
@@ -810,6 +1225,7 @@ Collapse Expand
 
 I'm a Midwest-based Software Engineer.
 
+<<<<<<< HEAD
 *   Location
     
     Minneapolis, MN
@@ -826,6 +1242,23 @@ I'm a Midwest-based Software Engineer.
     
     Aug 9, 2019
     
+=======
+-   Location
+
+    Minneapolis, MN
+
+-   education
+
+    AAS
+
+-   work
+
+    Software Engineer at Barings LLC
+
+-   Joined
+
+    Aug 9, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 15 '20](https://dev.to/natescode/comment/16ofe)
 
@@ -839,6 +1272,7 @@ Collapse Expand
 
 Software developer who loves philosophy and animals.
 
+<<<<<<< HEAD
 *   Location
     
     Serbia
@@ -855,6 +1289,23 @@ Software developer who loves philosophy and animals.
     
     Sep 12, 2018
     
+=======
+-   Location
+
+    Serbia
+
+-   education
+
+    Electrical engineer of multimedia
+
+-   work
+
+    Software developer at Inviggo
+
+-   Joined
+
+    Sep 12, 2018
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [May 16](https://dev.to/stojakovic99/comment/1egfk)
 
@@ -886,12 +1337,19 @@ Collapse Expand
 
 I will learning too harder and never give up....
 
+<<<<<<< HEAD
 *   Email
     
 *   Joined
     
     Sep 17, 2020
     
+=======
+-   Email
+-   Joined
+
+    Sep 17, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 10 '20](https://dev.to/devdev606/comment/16jp3)
 
@@ -909,6 +1367,7 @@ Collapse Expand
 
 I build things for fun.
 
+<<<<<<< HEAD
 *   Location
     
     Vienna, Austria
@@ -925,6 +1384,23 @@ I build things for fun.
     
     Jun 23, 2021
     
+=======
+-   Location
+
+    Vienna, Austria
+
+-   education
+
+    M.Sc, M.Eng, Computer Science, Business Informatics
+
+-   work
+
+    Software Engineer at Freelance
+
+-   Joined
+
+    Jun 23, 2021
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Jun 27](https://dev.to/amboulouma/comment/1fmdl)
 
@@ -936,6 +1412,7 @@ Collapse Expand
 
 Software Engineer, then father, then CTO, then father again, then cofounder, then CEO, then MBA, then success, then crash, then freelance and then CMO at @scaledynamics
 
+<<<<<<< HEAD
 *   Location
     
     France
@@ -956,6 +1433,27 @@ Software Engineer, then father, then CTO, then father again, then cofounder, the
 • [Oct 3 '20 • Edited on Oct 3](https://dev.to/domis66/comment/15jep)
 
 Awesome list! And so realize today it's way harder to become a fullstack developer it used to be.... You might want to consider some platforms helping you down that road, just like ScaleDynamics  
+=======
+-   Location
+
+    France
+
+-   education
+
+    IT Engineer Master degree, executive MBA
+
+-   work
+
+    CMO at ScaleDynamics
+
+-   Joined
+
+    Feb 25, 2019
+
+• [Oct 3 '20 • Edited on Oct 3](https://dev.to/domis66/comment/15jep)
+
+Awesome list! And so realize today it's way harder to become a fullstack developer it used to be.... You might want to consider some platforms helping you down that road, just like ScaleDynamics
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 It turns a simple JS modules into a hosted back end and a client wrapper). Work smarter, not harder ;)
 
@@ -963,6 +1461,7 @@ Collapse Expand
 
 [![swathipai13 profile image](https://res.cloudinary.com/practicaldev/image/fetch/s--YCAK1ISl--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/379821/cd2de714-9385-411f-954f-392d9259b509.jpg)](https://dev.to/swathipai13)
 
+<<<<<<< HEAD
 [miss\_multitasker](https://dev.to/swathipai13)
 
 I am a beginner at Javascript for desktop applications, open source enthusiast and evangelist!
@@ -979,6 +1478,23 @@ I am a beginner at Javascript for desktop applications, open source enthusiast a
     
     May 5, 2020
     
+=======
+[miss_multitasker](https://dev.to/swathipai13)
+
+I am a beginner at Javascript for desktop applications, open source enthusiast and evangelist!
+
+-   Location
+
+    India
+
+-   work
+
+    Engineer at Self employed
+
+-   Joined
+
+    May 5, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Dec 20 '20](https://dev.to/swathipai13/comment/19d66)
 
@@ -1000,6 +1516,7 @@ Collapse Expand
 
 Hype-Driven Developer
 
+<<<<<<< HEAD
 *   Email
     
 *   Location
@@ -1014,6 +1531,20 @@ Hype-Driven Developer
     
     May 28, 2020
     
+=======
+-   Email
+-   Location
+
+    Istanbul
+
+-   work
+
+    Full-Stack
+
+-   Joined
+
+    May 28, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/farukbigez/comment/15i0i)
 
@@ -1037,6 +1568,7 @@ Collapse Expand
 
 Actually the pug from Dune (1984)
 
+<<<<<<< HEAD
 *   Location
     
     Portland, Oregon
@@ -1049,6 +1581,19 @@ Actually the pug from Dune (1984)
     
     Apr 30, 2019
     
+=======
+-   Location
+
+    Portland, Oregon
+
+-   work
+
+    Developer Advocate at New Relic
+
+-   Joined
+
+    Apr 30, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 9 '20](https://dev.to/nocnica/comment/16ipk)
 
@@ -1062,6 +1607,7 @@ Collapse Expand
 
 Hey, I'm an undergrad majoring in Electronics with minor in CS. I do WebDev projects these days in JavaScript (occasionally Django).
 
+<<<<<<< HEAD
 *   Location
     
     India
@@ -1074,6 +1620,19 @@ Hey, I'm an undergrad majoring in Electronics with minor in CS. I do WebDev proj
     
     Oct 1, 2020
     
+=======
+-   Location
+
+    India
+
+-   education
+
+    Electronics with Minor CS, IIT Guwahati
+
+-   Joined
+
+    Oct 1, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 10 '20](https://dev.to/iaryan/comment/16j9a)
 
@@ -1087,6 +1646,7 @@ Collapse Expand
 
 just doing stuff
 
+<<<<<<< HEAD
 *   Location
     
     Chicago
@@ -1099,6 +1659,19 @@ just doing stuff
     
     Oct 10, 2020
     
+=======
+-   Location
+
+    Chicago
+
+-   work
+
+    Game Developer
+
+-   Joined
+
+    Oct 10, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 11 '20](https://dev.to/rahulh123/comment/16kdc)
 
@@ -1112,6 +1685,7 @@ Collapse Expand
 
 Hello! John here 27 7 and have been active in my web developer career for 6 years and enjoy most bits :)
 
+<<<<<<< HEAD
 *   Location
     
     Columbus, Ohio
@@ -1128,6 +1702,23 @@ Hello! John here 27 7 and have been active in my web developer career for 6 year
     
     May 2, 2020
     
+=======
+-   Location
+
+    Columbus, Ohio
+
+-   education
+
+    Bachelors in Multimedia Design and Development
+
+-   work
+
+    Application developer at Nationwide Insurance
+
+-   Joined
+
+    May 2, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 6 '20](https://dev.to/fluxthedev/comment/168m4)
 
@@ -1141,6 +1732,7 @@ Collapse Expand
 
 I'm a Midwest-based Software Engineer.
 
+<<<<<<< HEAD
 *   Location
     
     Minneapolis, MN
@@ -1157,6 +1749,23 @@ I'm a Midwest-based Software Engineer.
     
     Aug 9, 2019
     
+=======
+-   Location
+
+    Minneapolis, MN
+
+-   education
+
+    AAS
+
+-   work
+
+    Software Engineer at Barings LLC
+
+-   Joined
+
+    Aug 9, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/natescode/comment/1720n)
 
@@ -1170,6 +1779,7 @@ Collapse Expand
 
 Hello! John here 27 7 and have been active in my web developer career for 6 years and enjoy most bits :)
 
+<<<<<<< HEAD
 *   Location
     
     Columbus, Ohio
@@ -1186,6 +1796,23 @@ Hello! John here 27 7 and have been active in my web developer career for 6 year
     
     May 2, 2020
     
+=======
+-   Location
+
+    Columbus, Ohio
+
+-   education
+
+    Bachelors in Multimedia Design and Development
+
+-   work
+
+    Application developer at Nationwide Insurance
+
+-   Joined
+
+    May 2, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/fluxthedev/comment/17226)
 
@@ -1197,6 +1824,7 @@ Actually when I worked for nationwide, alot of teams were using go for a Middlew
 
 I'm a Midwest-based Software Engineer.
 
+<<<<<<< HEAD
 *   Location
     
     Minneapolis, MN
@@ -1213,6 +1841,23 @@ I'm a Midwest-based Software Engineer.
     
     Aug 9, 2019
     
+=======
+-   Location
+
+    Minneapolis, MN
+
+-   education
+
+    AAS
+
+-   work
+
+    Software Engineer at Barings LLC
+
+-   Joined
+
+    Aug 9, 2019
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/natescode/comment/1722a)
 
@@ -1224,6 +1869,7 @@ Cool! I’d love to do Go professionally.
 
 Hello! John here 27 7 and have been active in my web developer career for 6 years and enjoy most bits :)
 
+<<<<<<< HEAD
 *   Location
     
     Columbus, Ohio
@@ -1240,6 +1886,23 @@ Hello! John here 27 7 and have been active in my web developer career for 6 year
     
     May 2, 2020
     
+=======
+-   Location
+
+    Columbus, Ohio
+
+-   education
+
+    Bachelors in Multimedia Design and Development
+
+-   work
+
+    Application developer at Nationwide Insurance
+
+-   Joined
+
+    May 2, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 22 '20](https://dev.to/fluxthedev/comment/17549)
 
@@ -1253,6 +1916,7 @@ Collapse Expand
 
 An experienced software developer with a strong background in developing award-winning web and mobile applications for diverse clients with 4+ years of industry experience.
 
+<<<<<<< HEAD
 *   Email
     
 *   Location
@@ -1267,6 +1931,20 @@ An experienced software developer with a strong background in developing award-w
     
     Jan 20, 2018
     
+=======
+-   Email
+-   Location
+
+    Ibadan, Nigeria
+
+-   work
+
+    Chief Technology Officer at Epower.ng
+
+-   Joined
+
+    Jan 20, 2018
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 21 '20](https://dev.to/devhammed/comment/1736f)
 
@@ -1284,6 +1962,7 @@ Collapse Expand
 
 Developer. Artist. Human.
 
+<<<<<<< HEAD
 *   Location
     
     India
@@ -1296,6 +1975,19 @@ Developer. Artist. Human.
     
     Feb 1, 2020
     
+=======
+-   Location
+
+    India
+
+-   work
+
+    Software Engineer
+
+-   Joined
+
+    Feb 1, 2020
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 12 '20](https://dev.to/z00md/comment/16len)
 
@@ -1313,6 +2005,7 @@ Collapse Expand
 
 I am passionate to learn new Technologies
 
+<<<<<<< HEAD
 *   Email
     
 *   Location
@@ -1331,10 +2024,32 @@ I am passionate to learn new Technologies
     
     Feb 11, 2021
     
+=======
+-   Email
+-   Location
+
+    Pakistan
+
+-   education
+
+    Masters in Information Technology
+
+-   work
+
+    Lab Engineer at RIUF
+
+-   Joined
+
+    Feb 11, 2021
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Feb 12](https://dev.to/tayyabtariq242/comment/1bcf7)
 
 great
 
+<<<<<<< HEAD
 
 [Source](https://dev.to/ender_minyard/full-stack-developer-s-roadmap-2k12)
+=======
+[Source](https://dev.to/ender_minyard/full-stack-developer-s-roadmap-2k12)
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4

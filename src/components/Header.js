@@ -9,6 +9,8 @@ export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
+                
+                    <br />
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">
@@ -87,17 +89,17 @@ export default class Header extends React.Component {
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"
-                            width={80}
-                            height={80}
+                            width={40}
+                            height={40}
                             viewBox="0 0 250 250"
                             style={{
                                 zIndex: 100000,
-                                fill: '#194ccdaf',
+                                fill: 'black',
                                 color: '#fff',
                                 position: 'fixed',
-                                top: '20px',
+                                top: '0px',
                                 border: 0,
-                                left: '20px',
+                                left: '0px',
                                 transform: 'scale(-1.5, 1.5)'
                             }}
                         >

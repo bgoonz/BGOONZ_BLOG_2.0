@@ -7600,7 +7600,7 @@ Additional links
 
 #### Answer
 
-Single page applications make use of client-side rendering. This means that ‘[examplesite.com](http://examplesite.com/)’ and ‘[examplesite.com/page2](http://examplesite.com/page2)’ are actually the same HTML web page, but the client app decides what content to drop into that single page at runtime. Your user never actually “leaves” the page, and this causes some accessibility issues in terms of focus.
+Single page applications make use of client-side rendering. This means that ‘[examplesite.com](http://examplesite.com/)’ and ‘[examplesite.com/more-tools](http://examplesite.com/more-tools)’ are actually the same HTML web page, but the client app decides what content to drop into that single page at runtime. Your user never actually “leaves” the page, and this causes some accessibility issues in terms of focus.
 
 Unless focus is explicitly managed in the app, a scenario like this may happen:
 
