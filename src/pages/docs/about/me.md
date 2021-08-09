@@ -3,7 +3,9 @@ title: About Me
 weight: 2
 seo:
     title: About Me
-    description: This is the About Me page
+    description: >-
+        This is an about me page that contains a powerpoint portfolio of my work as
+        an electrical engineer!
     extra:
         - name: 'og:type'
           value: website

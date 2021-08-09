@@ -3,8 +3,12 @@ title: Introduction to npm
 weight: 0
 excerpt: npm is the standard package manager for nodejs
 seo:
-    title: 'npm'
-    description: 'npm is the standard package manager for nodejs'
+    title: npm
+    description: >
+        npm is the standard package manager for Node.js.
+
+        In January 2017 over 350000 packages were reported being listed in the npm
+        registry.
     robots: []
     extra: []
     type: stackbit_page_meta

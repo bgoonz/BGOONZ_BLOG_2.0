@@ -4,17 +4,17 @@
  */
 
 export default function stripPrefix(str, prefix = ``) {
-    if (!prefix) {
-        return str;
-    }
+  if (!prefix) {
+    return str
+  }
 
-    if (str === prefix) {
-        return `/`;
-    }
+  if (str === prefix) {
+    return `/`
+  }
 
-    if (str.startsWith(`${prefix}/`)) {
-        return str.slice(prefix.length);
-    }
+  if (str.startsWith(`${prefix}/`)) {
+    return str.slice(prefix.length)
+  }
 
-    return str;
+  return str
 }

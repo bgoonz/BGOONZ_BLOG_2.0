@@ -5,7 +5,7 @@ sections:
       type: section_hero
       title: 'I am a musician, electrical engineer & web developer'
       image: images/cool annimation.gif
-      content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
+      content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)"
       actions:
           - label: Contact
             url: 'https://sidebar-blog.netlify.app/contact/'
@@ -84,7 +84,19 @@ sections:
             image: images/curious-mustard.png
             title_url: >-
                 https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
-
+    - title: Site Search
+      section_id: Search
+      image_alt: site search
+      image_position: right
+      content: >-
+          <iframe width="560" height="315"
+          src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      actions: []
+      type: section_content
+      image: images/thoughtful-zucchini.gif
     - section_id: Web Audio DAW
       image_alt: medium
       image_position: left
@@ -104,7 +116,8 @@ sections:
       image_alt: bryan-guner
       image_position: left
       content: >-
-          <iframe class="block-content" width="100% src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
+          <iframe class="block-content" width="100%
+          src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
           player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       actions:
@@ -199,6 +212,17 @@ sections:
                   url: /showcase
                   style: link
             image: images/My Post.png
+    - title: Code Playground(s)
+      section_id: code-playground
+      image_alt: lorem-ipsum
+      image_position: left
+      content: |-
+          <iframe class="block-content" width="100%   width="800" height="575"
+            src="https://code-playground.netlify.app/index.html" title="YouTube video
+            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      actions: []
+      type: section_content
     - title: Mini Projects
       section_id: Mini Projects
       image_alt: lorem-ipsum
@@ -216,17 +240,6 @@ sections:
             new_window: true
             no_follow: false
             type: action
-      type: section_content
-    - title: Code Playground(s)
-      section_id: code-playground
-      image_alt: lorem-ipsum
-      image_position: left
-      content: |-
-          <iframe class="block-content" width="100%   width="800" height="575"
-            src="https://code-playground.netlify.app/index.html" title="YouTube video
-            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      actions: []
       type: section_content
     - title: Mini Projects
       section_id: lorem-ipsum
@@ -265,7 +278,7 @@ sections:
       section_id: lorem-ipsum
       actions:
           - label: Contact
-            url: '/docs/faq/contact'
+            url: /docs/faq/contact
             style: primary
             icon_class: dev
             new_window: false
@@ -275,8 +288,9 @@ sections:
 seo:
     title: Web-Dev-Hub
     description: >-
-        my resource sharing and blog site ... centered mostly on web development and
-        just a bit of audio production / generally nerdy things I find interesting.
+        bigO, Python, Javascript, Audio, Processing, Learning, Blog, React,
+        PostgreSQL, Scope, Closure, Web Development, Embed, API, Website, Design,
+        Music, Search
     extra:
         - name: 'og:type'
           value: website
