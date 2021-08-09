@@ -11,7 +11,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     overflow: auto;
-    overflow-x: hidden;
 }
 
 a {
@@ -32,7 +31,7 @@ iframe {
     overflow-x: scroll;
     border-radius: 12px;
     border: 2px solid gold;
-    height: 1600px !important;
+    height: 1500px !important;
     width: 95%;
     resize: both;
     overflow: scroll;

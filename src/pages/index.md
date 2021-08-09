@@ -1,25 +1,25 @@
 ---
 title: Web Dev Hub Home
 sections:
-  - section_id: Intro
-    type: section_hero
-    title: 'I am a musician, electrical engineer & web developer'
-    image: images/cool annimation.gif
-    content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)"
-    actions:
-      - label: Contact
-        url: 'https://sidebar-blog.netlify.app/contact/'
-        style: secondary
-        icon_class: linkedin
-        new_window: true
-        no_follow: false
-        type: action
-  - section_id: features
-    type: section_grid
-    col_number: three
-    grid_items:
-      - content: >
-          Memoization, Tabulation, and Sorting Algorithms by Example
+    - section_id: Intro
+      type: section_hero
+      title: 'I am a musician, electrical engineer & web developer'
+      image: images/cool annimation.gif
+      content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
+      actions:
+          - label: Contact
+            url: 'https://sidebar-blog.netlify.app/contact/'
+            style: secondary
+            icon_class: linkedin
+            new_window: true
+            no_follow: false
+            type: action
+    - section_id: features
+      type: section_grid
+      col_number: three
+      grid_items:
+          - content: >
+                Memoization, Tabulation, and Sorting Algorithms by Example
 
                 Why is looking at runtime not a reliable method of calculating time
                 complexity?
@@ -84,18 +84,6 @@ sections:
             image: images/curious-mustard.png
             title_url: >-
                 https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
-    - title: Site Search
-      section_id: Search
-      image_alt: site search
-      image_position: right
-      content: |-
-          <iframe class="block-content"style=" height:400px!important;"
-           src="https://random-static-html-deploys.netlify.app/blog-search.html" title="YouTube video
-           player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      actions: []
-      type: section_content
-      image: images/thoughtful-zucchini.gif
     - section_id: Web Audio DAW
       image_alt: medium
       image_position: left
@@ -159,12 +147,9 @@ sections:
     section_id: Search
     image_alt: site search
     image_position: right
-    content: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
-      title="YouTube video player" frameborder="0" allow="accelerometer;
-      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+    content: |-
+    <iframe height="300" style="width: 100%;" scrolling="no" title="searchblog2.0" src="https://codepen.io/bgoonz/embed/LYyBwEp?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+    
     actions: []
     type: section_content
     image: images/thoughtful-zucchini.gif
@@ -355,38 +340,120 @@ sections:
             new_window: false
             no_follow: false
             type: action
-      type: section_cta
+        image: images/resume.JPG
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
+      - title: Showcase
+        content: |
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
+        actions:
+          - label: Learn More
+            url: /showcase
+            style: link
+        image: images/My Post.png
+  - title: Mini Projects
+    section_id: Mini Projects
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |
+      <iframe class="block-content" width="100%     width="800" height="575"
+       src="https://iframeshowcase.netlify.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions:
+      - label: Go To Mini Projects Page
+        url: 'https://iframeshowcase.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+  - title: Code Playground(s)
+    section_id: code-playground
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%   width="800" height="575"
+        src="https://code-playground.netlify.app/index.html" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Mini Projects
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%   width="800" height="575"
+       src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Blog-Archive
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%  width="800" height="575"
+        src="https://bgoonz.blogspot.com/" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Nextjs & SanityCMS Blog W Comments
+    section_id: blog
+    image_alt: blog
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%  width="800" height="575"
+       src="https://blog-w-comments.vercel.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Contact
+    section_id: lorem-ipsum
+    actions:
+      - label: Contact
+        url: /docs/faq/contact
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+        type: action
+    type: section_cta
 seo:
-  title: Web-Dev-Hub
-  description: >-
-    bigO, Python, Javascript, Audio, Processing, Learning, Blog, React,
-    PostgreSQL, Scope, Closure, Web Development, Embed, API, Website, Design,
-    Music, Search
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Web-Dev-Hub
-      keyName: property
-    - name: 'og:description'
-      value: >-
-        my resource sharing and blog site ... centered mostly on web development
-        and just a bit of audio production / generally nerdy things I find
-        interesting.
-      keyName: property
-    - name: 'og:image'
-      value: images/code.png
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:card'
-      value: summary_large_image
-    - name: 'twitter:title'
-      value: Web-Dev-Hub
-    - name: 'twitter:description'
-      value: Web-Dev-Hub
-    - name: 'twitter:image'
-      value: images/4.jpg
-      relativeUrl: true
+    title: Web-Dev-Hub
+    description: >-
+        my resource sharing and blog site ... centered mostly on web development and
+        just a bit of audio production / generally nerdy things I find interesting.
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Web-Dev-Hub
+          keyName: property
+        - name: 'og:description'
+          value: >-
+              my resource sharing and blog site ... centered mostly on web development
+              and just a bit of audio production / generally nerdy things I find
+              interesting.
+          keyName: property
+        - name: 'og:image'
+          value: images/code.png
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: summary_large_image
+        - name: 'twitter:title'
+          value: Web-Dev-Hub
+        - name: 'twitter:description'
+          value: Web-Dev-Hub
+        - name: 'twitter:image'
+          value: images/4.jpg
+          relativeUrl: true
 template: advanced
 ---
