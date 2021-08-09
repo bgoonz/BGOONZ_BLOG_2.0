@@ -1,27 +1,27 @@
 ---
 title: Where To Get Support
 excerpt: >-
-  We'd love it if you participate in the Libris community. Find out how to get
-  connected.
+    We'd love it if you participate in the Libris community. Find out how to get
+    connected.
 seo:
-  title: Where To Get Support
-  description: This is the community page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Where To Get Support
-      keyName: property
-    - name: 'og:description'
-      value: This is the community page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Where To Get Support
-    - name: 'twitter:description'
-      value: This is the community page
+    title: Where To Get Support
+    description: This is the community page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Where To Get Support
+          keyName: property
+        - name: 'og:description'
+          value: This is the community page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Where To Get Support
+        - name: 'twitter:description'
+          value: This is the community page
 template: docs
 ---
 
@@ -34,7 +34,7 @@ template: docs
 
 ## Stack Overflow
 
-Suspendisse hendrerit maximus metus in placerat. In ligula magna, efficitur sed ultrices non, iaculis ut ligula. Sed finibus efficitur cursus. Proin quis molestie purus. Vestibulum ut magna eget tortor tempor egestas eget eu orci. Integer porta cursus rutrum. Quisque porta suscipit sem, et tincidunt felis malesuada vel. 
+Suspendisse hendrerit maximus metus in placerat. In ligula magna, efficitur sed ultrices non, iaculis ut ligula. Sed finibus efficitur cursus. Proin quis molestie purus. Vestibulum ut magna eget tortor tempor egestas eget eu orci. Integer porta cursus rutrum. Quisque porta suscipit sem, et tincidunt felis malesuada vel.
 
 ## Popular Discussion Forums
 
