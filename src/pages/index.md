@@ -271,7 +271,90 @@ sections:
             new_window: false
             no_follow: false
             type: action
-      type: section_cta
+        image: images/resume.JPG
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
+      - title: Showcase
+        content: |
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
+        actions:
+          - label: Learn More
+            url: /showcase
+            style: link
+        image: images/My Post.png
+  - title: Code Playground(s)
+    section_id: code-playground
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%   width="800" height="575"
+        src="https://code-playground.netlify.app/index.html" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Mini Projects
+    section_id: Mini Projects
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |
+      <iframe class="block-content" width="100%     width="800" height="575"
+       src="https://iframeshowcase.netlify.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions:
+      - label: Go To Mini Projects Page
+        url: 'https://iframeshowcase.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+  - title: Mini Projects
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%   width="800" height="575"
+       src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Blog-Archive
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%  width="800" height="575"
+        src="https://bgoonz.blogspot.com/" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Nextjs & SanityCMS Blog W Comments
+    section_id: blog
+    image_alt: blog
+    image_position: left
+    content: |-
+      <iframe class="block-content" width="100%  width="800" height="575"
+       src="https://blog-w-comments.vercel.app/" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Contact
+    section_id: lorem-ipsum
+    actions:
+      - label: Contact
+        url: /docs/faq/contact
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+        type: action
+    type: section_cta
 seo:
     title: Web-Dev-Hub
     description: >-
