@@ -1,1 +1,60 @@
-{"expireTime":9007200883262119000,"key":"transformer-remark-markdown-ast-434045a7ded1291e32659d5a935c3c29--","val":{"type":"root","children":[{"type":"heading","depth":1,"children":[{"type":"text","value":"Dynamic Time Warping Triggered Guitar Effects Project:","position":{"start":{"line":2,"column":3,"offset":3},"end":{"line":2,"column":57,"offset":57}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":57,"offset":57}}},{"type":"heading","depth":3,"children":[{"type":"text","value":"DTW Algorithm:","position":{"start":{"line":4,"column":5,"offset":63},"end":{"line":4,"column":19,"offset":77}}}],"position":{"start":{"line":4,"column":1,"offset":59},"end":{"line":4,"column":19,"offset":77}}},{"type":"html","value":"<iframe src=\"https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634692&amp;authkey=AHfsGpj1Un3UNuE&amp;em=2&amp;wdAr=1.7777777777777777\" width=\"962px\" height=\"565px\" frameborder=\"0\">This is an embedded <a target=\"_blank\" href=\"https://office.com\">Microsoft Office</a> presentation, powered by <a target=\"_blank\" href=\"https://office.com/webapps\">Office</a>.</iframe>","position":{"start":{"line":6,"column":1,"offset":79},"end":{"line":6,"column":398,"offset":476}}},{"type":"thematicBreak","position":{"start":{"line":8,"column":1,"offset":478},"end":{"line":8,"column":4,"offset":481}}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Project:","position":{"start":{"line":10,"column":5,"offset":487},"end":{"line":10,"column":13,"offset":495}}}],"position":{"start":{"line":10,"column":1,"offset":483},"end":{"line":10,"column":13,"offset":495}}},{"type":"html","value":"<iframe src=\"https://onedrive.live.com/embed?resid=D21009FDD967A241%21608188&amp;authkey=%21AL1vMFzOuqvFbUY&amp;em=2&amp;wdAr=1.7777777777777777\" width=\"962px\" height=\"565px\" frameborder=\"0\">This is an embedded <a target=\"_blank\" href=\"https://office.com\">Microsoft Office</a> presentation, powered by <a target=\"_blank\" href=\"https://office.com/webapps\">Office</a>.</iframe>","position":{"start":{"line":12,"column":1,"offset":497},"end":{"line":12,"column":376,"offset":872}}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":13,"column":1,"offset":873}}}}
+{
+    "expireTime": 9007200883262653000,
+    "key": "transformer-remark-markdown-ast-434045a7ded1291e32659d5a935c3c29--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "heading",
+                "depth": 1,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Dynamic Time Warping Triggered Guitar Effects Project:",
+                        "position": { "start": { "line": 2, "column": 3, "offset": 3 }, "end": { "line": 2, "column": 57, "offset": 57 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 57, "offset": 57 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "DTW Algorithm:",
+                        "position": { "start": { "line": 4, "column": 5, "offset": 63 }, "end": { "line": 4, "column": 19, "offset": 77 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 59 }, "end": { "line": 4, "column": 19, "offset": 77 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<iframe src=\"https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634692&amp;authkey=AHfsGpj1Un3UNuE&amp;em=2&amp;wdAr=1.7777777777777777\" width=\"962px\" height=\"565px\" frameborder=\"0\">This is an embedded <a target=\"_blank\" href=\"https://office.com\">Microsoft Office</a> presentation, powered by <a target=\"_blank\" href=\"https://office.com/webapps\">Office</a>.</iframe>",
+                "position": { "start": { "line": 6, "column": 1, "offset": 79 }, "end": { "line": 6, "column": 398, "offset": 476 }, "indent": [] }
+            },
+            {
+                "type": "thematicBreak",
+                "position": { "start": { "line": 8, "column": 1, "offset": 478 }, "end": { "line": 8, "column": 4, "offset": 481 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Project:",
+                        "position": { "start": { "line": 10, "column": 5, "offset": 487 }, "end": { "line": 10, "column": 13, "offset": 495 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 483 }, "end": { "line": 10, "column": 13, "offset": 495 }, "indent": [] }
+            },
+            {
+                "type": "html",
+                "value": "<iframe src=\"https://onedrive.live.com/embed?resid=D21009FDD967A241%21608188&amp;authkey=%21AL1vMFzOuqvFbUY&amp;em=2&amp;wdAr=1.7777777777777777\" width=\"962px\" height=\"565px\" frameborder=\"0\">This is an embedded <a target=\"_blank\" href=\"https://office.com\">Microsoft Office</a> presentation, powered by <a target=\"_blank\" href=\"https://office.com/webapps\">Office</a>.</iframe>",
+                "position": { "start": { "line": 12, "column": 1, "offset": 497 }, "end": { "line": 12, "column": 376, "offset": 872 }, "indent": [] }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 13, "column": 1, "offset": 873 } }
+    }
+}

@@ -1,1 +1,434 @@
-{"expireTime":9007200883262136000,"key":"transformer-remark-markdown-html-ast-9779431613489693b14a79bd48654bb2--","val":{"type":"root","children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The easiest way to write to files in Node.js is to use the ","position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":60,"offset":60}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"fs.writeFile()"}],"position":{"start":{"line":2,"column":60,"offset":60},"end":{"line":2,"column":76,"offset":76}}},{"type":"text","value":" API.","position":{"start":{"line":2,"column":76,"offset":76},"end":{"line":2,"column":81,"offset":81}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":81,"offset":81}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Example:","position":{"start":{"line":4,"column":1,"offset":83},"end":{"line":4,"column":9,"offset":91}}}],"position":{"start":{"line":4,"column":1,"offset":83},"end":{"line":4,"column":9,"offset":91}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-js"]},"children":[{"type":"text","value":"const fs = require('fs');\n\nconst content = 'Some content!';\n\nfs.writeFile('/Users/joe/test.txt', content, (err) => {\n    if (err) {\n        console.error(err);\n        return;\n    }\n    //file written successfully\n});\n"}],"position":{"start":{"line":6,"column":1,"offset":93},"end":{"line":18,"column":4,"offset":320}}}],"position":{"start":{"line":6,"column":1,"offset":93},"end":{"line":18,"column":4,"offset":320}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Alternatively, you can use the synchronous version ","position":{"start":{"line":20,"column":1,"offset":322},"end":{"line":20,"column":52,"offset":373}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"fs.writeFileSync()"}],"position":{"start":{"line":20,"column":52,"offset":373},"end":{"line":20,"column":72,"offset":393}}},{"type":"text","value":":","position":{"start":{"line":20,"column":72,"offset":393},"end":{"line":20,"column":73,"offset":394}}}],"position":{"start":{"line":20,"column":1,"offset":322},"end":{"line":20,"column":73,"offset":394}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-js"]},"children":[{"type":"text","value":"const fs = require('fs');\n\nconst content = 'Some content!';\n\ntry {\n    const data = fs.writeFileSync('/Users/joe/test.txt', content);\n    //file written successfully\n} catch (err) {\n    console.error(err);\n}\n"}],"position":{"start":{"line":22,"column":1,"offset":396},"end":{"line":33,"column":4,"offset":613}}}],"position":{"start":{"line":22,"column":1,"offset":396},"end":{"line":33,"column":4,"offset":613}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"By default, this API will ","position":{"start":{"line":35,"column":1,"offset":615},"end":{"line":35,"column":27,"offset":641}}},{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"replace the contents of the file","position":{"start":{"line":35,"column":29,"offset":643},"end":{"line":35,"column":61,"offset":675}}}],"position":{"start":{"line":35,"column":27,"offset":641},"end":{"line":35,"column":63,"offset":677}}},{"type":"text","value":" if it does already exist.","position":{"start":{"line":35,"column":63,"offset":677},"end":{"line":35,"column":89,"offset":703}}}],"position":{"start":{"line":35,"column":1,"offset":615},"end":{"line":35,"column":89,"offset":703}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"You can modify the default by specifying a flag:","position":{"start":{"line":37,"column":1,"offset":705},"end":{"line":37,"column":49,"offset":753}}}],"position":{"start":{"line":37,"column":1,"offset":705},"end":{"line":37,"column":49,"offset":753}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-js"]},"children":[{"type":"text","value":"fs.writeFile('/Users/joe/test.txt', content, { flag: 'a+' }, (err) => {});\n"}],"position":{"start":{"line":39,"column":1,"offset":755},"end":{"line":41,"column":4,"offset":839}}}],"position":{"start":{"line":39,"column":1,"offset":755},"end":{"line":41,"column":4,"offset":839}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The flags you'll likely use are","position":{"start":{"line":43,"column":1,"offset":841},"end":{"line":43,"column":32,"offset":872}}}],"position":{"start":{"line":43,"column":1,"offset":841},"end":{"line":43,"column":32,"offset":872}}},{"type":"text","value":"\n"},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"r+"}],"position":{"start":{"line":45,"column":5,"offset":878},"end":{"line":45,"column":9,"offset":882}}},{"type":"text","value":" open the file for reading and writing","position":{"start":{"line":45,"column":9,"offset":882},"end":{"line":45,"column":47,"offset":920}}}],"position":{"start":{"line":45,"column":1,"offset":874},"end":{"line":45,"column":47,"offset":920}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"w+"}],"position":{"start":{"line":46,"column":5,"offset":925},"end":{"line":46,"column":9,"offset":929}}},{"type":"text","value":" open the file for reading and writing, positioning the stream at the beginning of the file. The file is created if not existing","position":{"start":{"line":46,"column":9,"offset":929},"end":{"line":46,"column":137,"offset":1057}}}],"position":{"start":{"line":46,"column":1,"offset":921},"end":{"line":46,"column":137,"offset":1057}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"a"}],"position":{"start":{"line":47,"column":5,"offset":1062},"end":{"line":47,"column":8,"offset":1065}}},{"type":"text","value":" open the file for writing, positioning the stream at the end of the file. The file is created if not existing","position":{"start":{"line":47,"column":8,"offset":1065},"end":{"line":47,"column":118,"offset":1175}}}],"position":{"start":{"line":47,"column":1,"offset":1058},"end":{"line":47,"column":118,"offset":1175}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"a+"}],"position":{"start":{"line":48,"column":5,"offset":1180},"end":{"line":48,"column":9,"offset":1184}}},{"type":"text","value":" open the file for reading and writing, positioning the stream at the end of the file. The file is created if not existing","position":{"start":{"line":48,"column":9,"offset":1184},"end":{"line":48,"column":131,"offset":1306}}}],"position":{"start":{"line":48,"column":1,"offset":1176},"end":{"line":48,"column":131,"offset":1306}}},{"type":"text","value":"\n"}],"position":{"start":{"line":45,"column":1,"offset":874},"end":{"line":48,"column":131,"offset":1306}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"(you can find more flags at ","position":{"start":{"line":50,"column":1,"offset":1308},"end":{"line":50,"column":29,"offset":1336}}},{"type":"element","tagName":"a","properties":{"href":"https://nodejs.org/api/fs.html#fs_file_system_flags"},"children":[{"type":"text","value":"https://nodejs.org/api/fs.html#fs_file_system_flags","position":{"start":{"line":50,"column":30,"offset":1337},"end":{"line":50,"column":81,"offset":1388}}}],"position":{"start":{"line":50,"column":29,"offset":1336},"end":{"line":50,"column":82,"offset":1389}}},{"type":"text","value":")","position":{"start":{"line":50,"column":82,"offset":1389},"end":{"line":50,"column":83,"offset":1390}}}],"position":{"start":{"line":50,"column":1,"offset":1308},"end":{"line":50,"column":83,"offset":1390}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"Append to a file","position":{"start":{"line":52,"column":4,"offset":1395},"end":{"line":52,"column":20,"offset":1411}}}],"position":{"start":{"line":52,"column":1,"offset":1392},"end":{"line":52,"column":20,"offset":1411}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A handy method to append content to the end of a file is ","position":{"start":{"line":54,"column":1,"offset":1413},"end":{"line":54,"column":58,"offset":1470}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"fs.appendFile()"}],"position":{"start":{"line":54,"column":58,"offset":1470},"end":{"line":54,"column":75,"offset":1487}}},{"type":"text","value":" (and its ","position":{"start":{"line":54,"column":75,"offset":1487},"end":{"line":54,"column":85,"offset":1497}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"fs.appendFileSync()"}],"position":{"start":{"line":54,"column":85,"offset":1497},"end":{"line":54,"column":106,"offset":1518}}},{"type":"text","value":" counterpart):","position":{"start":{"line":54,"column":106,"offset":1518},"end":{"line":54,"column":120,"offset":1532}}}],"position":{"start":{"line":54,"column":1,"offset":1413},"end":{"line":54,"column":120,"offset":1532}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-js"]},"children":[{"type":"text","value":"const content = 'Some content!';\n\nfs.appendFile('file.log', content, (err) => {\n    if (err) {\n        console.error(err);\n        return;\n    }\n    //done!\n});\n"}],"position":{"start":{"line":56,"column":1,"offset":1534},"end":{"line":66,"column":4,"offset":1704}}}],"position":{"start":{"line":56,"column":1,"offset":1534},"end":{"line":66,"column":4,"offset":1704}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"Using streams","position":{"start":{"line":68,"column":4,"offset":1709},"end":{"line":68,"column":17,"offset":1722}}}],"position":{"start":{"line":68,"column":1,"offset":1706},"end":{"line":68,"column":17,"offset":1722}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"All those methods write the full content to the file before returning the control back to your program (in the async version, this means executing the callback)","position":{"start":{"line":70,"column":1,"offset":1724},"end":{"line":70,"column":161,"offset":1884}}}],"position":{"start":{"line":70,"column":1,"offset":1724},"end":{"line":70,"column":161,"offset":1884}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"In this case, a better option is to write the file content using streams.","position":{"start":{"line":72,"column":1,"offset":1886},"end":{"line":72,"column":74,"offset":1959}}}],"position":{"start":{"line":72,"column":1,"offset":1886},"end":{"line":72,"column":74,"offset":1959}}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":73,"column":1,"offset":1960}}}}
+{
+    "expireTime": 9007200883262654000,
+    "key": "transformer-remark-markdown-html-ast-9779431613489693b14a79bd48654bb2--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The easiest way to write to files in Node.js is to use the ",
+                        "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 60, "offset": 60 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "fs.writeFile()" }],
+                        "position": { "start": { "line": 2, "column": 60, "offset": 60 }, "end": { "line": 2, "column": 76, "offset": 76 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " API.",
+                        "position": { "start": { "line": 2, "column": 76, "offset": 76 }, "end": { "line": 2, "column": 81, "offset": 81 } }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 81, "offset": 81 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Example:",
+                        "position": { "start": { "line": 4, "column": 1, "offset": 83 }, "end": { "line": 4, "column": 9, "offset": 91 } }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 83 }, "end": { "line": 4, "column": 9, "offset": 91 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-js"] },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "const fs = require('fs');\n\nconst content = 'Some content!';\n\nfs.writeFile('/Users/joe/test.txt', content, (err) => {\n    if (err) {\n        console.error(err);\n        return;\n    }\n    //file written successfully\n});\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 6, "column": 1, "offset": 93 }, "end": { "line": 18, "column": 4, "offset": 320 } }
+                    }
+                ],
+                "position": { "start": { "line": 6, "column": 1, "offset": 93 }, "end": { "line": 18, "column": 4, "offset": 320 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Alternatively, you can use the synchronous version ",
+                        "position": { "start": { "line": 20, "column": 1, "offset": 322 }, "end": { "line": 20, "column": 52, "offset": 373 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "fs.writeFileSync()" }],
+                        "position": { "start": { "line": 20, "column": 52, "offset": 373 }, "end": { "line": 20, "column": 72, "offset": 393 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ":",
+                        "position": { "start": { "line": 20, "column": 72, "offset": 393 }, "end": { "line": 20, "column": 73, "offset": 394 } }
+                    }
+                ],
+                "position": { "start": { "line": 20, "column": 1, "offset": 322 }, "end": { "line": 20, "column": 73, "offset": 394 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-js"] },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "const fs = require('fs');\n\nconst content = 'Some content!';\n\ntry {\n    const data = fs.writeFileSync('/Users/joe/test.txt', content);\n    //file written successfully\n} catch (err) {\n    console.error(err);\n}\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 22, "column": 1, "offset": 396 }, "end": { "line": 33, "column": 4, "offset": 613 } }
+                    }
+                ],
+                "position": { "start": { "line": 22, "column": 1, "offset": 396 }, "end": { "line": 33, "column": 4, "offset": 613 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "By default, this API will ",
+                        "position": { "start": { "line": 35, "column": 1, "offset": 615 }, "end": { "line": 35, "column": 27, "offset": 641 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "replace the contents of the file",
+                                "position": { "start": { "line": 35, "column": 29, "offset": 643 }, "end": { "line": 35, "column": 61, "offset": 675 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 35, "column": 27, "offset": 641 }, "end": { "line": 35, "column": 63, "offset": 677 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " if it does already exist.",
+                        "position": { "start": { "line": 35, "column": 63, "offset": 677 }, "end": { "line": 35, "column": 89, "offset": 703 } }
+                    }
+                ],
+                "position": { "start": { "line": 35, "column": 1, "offset": 615 }, "end": { "line": 35, "column": 89, "offset": 703 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can modify the default by specifying a flag:",
+                        "position": { "start": { "line": 37, "column": 1, "offset": 705 }, "end": { "line": 37, "column": 49, "offset": 753 } }
+                    }
+                ],
+                "position": { "start": { "line": 37, "column": 1, "offset": 705 }, "end": { "line": 37, "column": 49, "offset": 753 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-js"] },
+                        "children": [{ "type": "text", "value": "fs.writeFile('/Users/joe/test.txt', content, { flag: 'a+' }, (err) => {});\n" }],
+                        "position": { "start": { "line": 39, "column": 1, "offset": 755 }, "end": { "line": 41, "column": 4, "offset": 839 } }
+                    }
+                ],
+                "position": { "start": { "line": 39, "column": 1, "offset": 755 }, "end": { "line": 41, "column": 4, "offset": 839 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The flags you'll likely use are",
+                        "position": { "start": { "line": 43, "column": 1, "offset": 841 }, "end": { "line": 43, "column": 32, "offset": 872 } }
+                    }
+                ],
+                "position": { "start": { "line": 43, "column": 1, "offset": 841 }, "end": { "line": 43, "column": 32, "offset": 872 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "r+" }],
+                                "position": { "start": { "line": 45, "column": 5, "offset": 878 }, "end": { "line": 45, "column": 9, "offset": 882 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " open the file for reading and writing",
+                                "position": { "start": { "line": 45, "column": 9, "offset": 882 }, "end": { "line": 45, "column": 47, "offset": 920 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 45, "column": 1, "offset": 874 }, "end": { "line": 45, "column": 47, "offset": 920 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "w+" }],
+                                "position": { "start": { "line": 46, "column": 5, "offset": 925 }, "end": { "line": 46, "column": 9, "offset": 929 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " open the file for reading and writing, positioning the stream at the beginning of the file. The file is created if not existing",
+                                "position": { "start": { "line": 46, "column": 9, "offset": 929 }, "end": { "line": 46, "column": 137, "offset": 1057 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 46, "column": 1, "offset": 921 }, "end": { "line": 46, "column": 137, "offset": 1057 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "a" }],
+                                "position": { "start": { "line": 47, "column": 5, "offset": 1062 }, "end": { "line": 47, "column": 8, "offset": 1065 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " open the file for writing, positioning the stream at the end of the file. The file is created if not existing",
+                                "position": { "start": { "line": 47, "column": 8, "offset": 1065 }, "end": { "line": 47, "column": 118, "offset": 1175 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 47, "column": 1, "offset": 1058 }, "end": { "line": 47, "column": 118, "offset": 1175 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "a+" }],
+                                "position": { "start": { "line": 48, "column": 5, "offset": 1180 }, "end": { "line": 48, "column": 9, "offset": 1184 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " open the file for reading and writing, positioning the stream at the end of the file. The file is created if not existing",
+                                "position": { "start": { "line": 48, "column": 9, "offset": 1184 }, "end": { "line": 48, "column": 131, "offset": 1306 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 48, "column": 1, "offset": 1176 }, "end": { "line": 48, "column": 131, "offset": 1306 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 45, "column": 1, "offset": 874 }, "end": { "line": 48, "column": 131, "offset": 1306 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "(you can find more flags at ",
+                        "position": { "start": { "line": 50, "column": 1, "offset": 1308 }, "end": { "line": 50, "column": 29, "offset": 1336 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://nodejs.org/api/fs.html#fs_file_system_flags" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "https://nodejs.org/api/fs.html#fs_file_system_flags",
+                                "position": { "start": { "line": 50, "column": 30, "offset": 1337 }, "end": { "line": 50, "column": 81, "offset": 1388 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 50, "column": 29, "offset": 1336 }, "end": { "line": 50, "column": 82, "offset": 1389 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ")",
+                        "position": { "start": { "line": 50, "column": 82, "offset": 1389 }, "end": { "line": 50, "column": 83, "offset": 1390 } }
+                    }
+                ],
+                "position": { "start": { "line": 50, "column": 1, "offset": 1308 }, "end": { "line": 50, "column": 83, "offset": 1390 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Append to a file",
+                        "position": { "start": { "line": 52, "column": 4, "offset": 1395 }, "end": { "line": 52, "column": 20, "offset": 1411 } }
+                    }
+                ],
+                "position": { "start": { "line": 52, "column": 1, "offset": 1392 }, "end": { "line": 52, "column": 20, "offset": 1411 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "A handy method to append content to the end of a file is ",
+                        "position": { "start": { "line": 54, "column": 1, "offset": 1413 }, "end": { "line": 54, "column": 58, "offset": 1470 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "fs.appendFile()" }],
+                        "position": { "start": { "line": 54, "column": 58, "offset": 1470 }, "end": { "line": 54, "column": 75, "offset": 1487 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " (and its ",
+                        "position": { "start": { "line": 54, "column": 75, "offset": 1487 }, "end": { "line": 54, "column": 85, "offset": 1497 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "fs.appendFileSync()" }],
+                        "position": { "start": { "line": 54, "column": 85, "offset": 1497 }, "end": { "line": 54, "column": 106, "offset": 1518 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " counterpart):",
+                        "position": { "start": { "line": 54, "column": 106, "offset": 1518 }, "end": { "line": 54, "column": 120, "offset": 1532 } }
+                    }
+                ],
+                "position": { "start": { "line": 54, "column": 1, "offset": 1413 }, "end": { "line": 54, "column": 120, "offset": 1532 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-js"] },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "const content = 'Some content!';\n\nfs.appendFile('file.log', content, (err) => {\n    if (err) {\n        console.error(err);\n        return;\n    }\n    //done!\n});\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 56, "column": 1, "offset": 1534 }, "end": { "line": 66, "column": 4, "offset": 1704 } }
+                    }
+                ],
+                "position": { "start": { "line": 56, "column": 1, "offset": 1534 }, "end": { "line": 66, "column": 4, "offset": 1704 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Using streams",
+                        "position": { "start": { "line": 68, "column": 4, "offset": 1709 }, "end": { "line": 68, "column": 17, "offset": 1722 } }
+                    }
+                ],
+                "position": { "start": { "line": 68, "column": 1, "offset": 1706 }, "end": { "line": 68, "column": 17, "offset": 1722 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "All those methods write the full content to the file before returning the control back to your program (in the async version, this means executing the callback)",
+                        "position": { "start": { "line": 70, "column": 1, "offset": 1724 }, "end": { "line": 70, "column": 161, "offset": 1884 } }
+                    }
+                ],
+                "position": { "start": { "line": 70, "column": 1, "offset": 1724 }, "end": { "line": 70, "column": 161, "offset": 1884 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In this case, a better option is to write the file content using streams.",
+                        "position": { "start": { "line": 72, "column": 1, "offset": 1886 }, "end": { "line": 72, "column": 74, "offset": 1959 } }
+                    }
+                ],
+                "position": { "start": { "line": 72, "column": 1, "offset": 1886 }, "end": { "line": 72, "column": 74, "offset": 1959 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 73, "column": 1, "offset": 1960 } }
+    }
+}
