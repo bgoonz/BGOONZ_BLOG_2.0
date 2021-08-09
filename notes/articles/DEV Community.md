@@ -358,7 +358,7 @@ Stage and then `commit` your change, before you `checkout` _master_ again. Here 
 Now it's time to `merge` the new branch into _master_.  
 When you try that, you'll see the following output
 
-` Auto-merging Bob.txt CONFLICT (content): Merge conflict in Bob.txt Automatic merge failed; fix conflicts and then commit the result. `
+`Auto-merging Bob.txt CONFLICT (content): Merge conflict in Bob.txt Automatic merge failed; fix conflicts and then commit the result.`
 
 The same line has changed on both of the branches, and git can't handle this on it's own.
 
@@ -386,7 +386,7 @@ To resolve the conflict by hand, you'll just need to make sure that you end up w
 
 So go ahead and change the file to something like this:
 
-` Hi! I'm Bobby. I've been here for a while now. [...] `
+`Hi! I'm Bobby. I've been here for a while now. [...]`
 
 From here what we're doing is exactly what we'd do for any changes.  
 We _stage_ them when we `add Bob.txt`, and then we `commit`.
@@ -424,7 +424,7 @@ When we `git rebase master`, we re-base our `add_patrick` branch on the current 
 
 The output of that command gives us a nice hint at what is happening in it:
 
-` First, rewinding head to replay your work on top of it... Applying: Add Patrick `
+`First, rewinding head to replay your work on top of it... Applying: Add Patrick`
 
 As we remember _HEAD_ is the pointer to the current commit we're at in our _Dev Environment_.
 
@@ -504,7 +504,7 @@ Note that at this point, changes aren't integrated into the local branches and t
 
 If you run `git status` now, you'll see another great example of git commands telling you exactly what is going on:
 
-` git status On branch fetching_changes_sample Your branch is behind 'origin/fetching_changes_sample' by 1 commit, and can be fast-forwarded. (use "git pull" to update your local branch) `
+`git status On branch fetching_changes_sample Your branch is behind 'origin/fetching_changes_sample' by 1 commit, and can be fast-forwarded. (use "git pull" to update your local branch)`
 
 ### [](#pulling-changes)_Pulling_ Changes
 
@@ -521,7 +521,7 @@ Lets also change `Alice.txt` in our _Working Directory_ now!
 
 If you now try to do a `git pull` you'll see the following error:
 
-` git pull Updating df3ad1d..418e6f0 error: Your local changes to the following files would be overwritten by merge: Alice.txt Please commit your changes or stash them before you merge. Aborting `
+`git pull Updating df3ad1d..418e6f0 error: Your local changes to the following files would be overwritten by merge: Alice.txt Please commit your changes or stash them before you merge. Aborting`
 
 You can not `pull` in any changes, while there are modifications to files in the _Working Directory_ that are also changed by the commits you're `pull`ing in.
 
@@ -562,7 +562,7 @@ Don't forget to run `git fetch` to see the remote change without `pull`ing it in
 
 If you now run `git status` you will see, that both branches have one commit on them that differs from the other.
 
-` git status On branch fetching_changes_sample Your branch and 'origin/fetching_changes_sample' have diverged, and have 1 and 1 different commits each, respectively. (use "git pull" to merge the remote branch into yours) `
+`git status On branch fetching_changes_sample Your branch and 'origin/fetching_changes_sample' have diverged, and have 1 and 1 different commits each, respectively. (use "git pull" to merge the remote branch into yours)`
 
 In addition we've changed the same file in both of those commits, to introduce a `merge` conflict we'll have to resolve.
 
@@ -707,7 +707,7 @@ If we now have a look at the branch's history with `git log` (or for just a quic
 
 For me it looks like this:
 
-` git log --oneline 0b22064 (HEAD -> interactiveRebase) Add more text to Alice 062ef13 Add Bob.txt 9e06fca Add text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text `
+`git log --oneline 0b22064 (HEAD -> interactiveRebase) Add more text to Alice 062ef13 Add Bob.txt 9e06fca Add text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text`
 
 There's two things we'd like to fix about this, which for the sake of learning different things, will be a bit different than in the previous section on `amend`:
 
@@ -843,7 +843,7 @@ That's it! You've rewritten history again. This time a lot more substantially th
 
 If you look at the `git log` again, you'll see that there's two new commits in place of the three that we had previously. But by now you're used to what `rebase` does to commits and have expected that.
 
-` git log --oneline 105177b (HEAD -> interactiveRebase) Add Bob ed78fa1 Add a lot very important text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text `
+`git log --oneline 105177b (HEAD -> interactiveRebase) Add Bob ed78fa1 Add a lot very important text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text`
 
 ### [](#public-history-why-you-shouldnt-rewrite-it-and-how-to-still-do-it-safely)Public History, why you shouldn't rewrite it, and how to still do it safely
 
@@ -920,7 +920,7 @@ Lets have a look at the `reflog` of the things we've done on that branch by - yo
 
 You'll probably see a lot of output, but the first few lines on the top should be similar to this:
 
-` git reflog 105177b (HEAD -> interactiveRebase) HEAD@{0}: rebase -i (finish): returning to refs/heads/interactiveRebase 105177b (HEAD -> interactiveRebase) HEAD@{1}: rebase -i (reword): Add Bob ed78fa1 HEAD@{2}: rebase -i (squash): Add a lot very important text to Alice 9e06fca HEAD@{3}: rebase -i (start): checkout HEAD~3 0b22064 HEAD@{4}: commit: Add more text to Alice 062ef13 HEAD@{5}: commit: Add Bob.txt 9e06fca HEAD@{6}: commit: Add text to Alice df3ad1d (origin/master, origin/HEAD, master) HEAD@{7}: checkout: moving from master to interactiveRebase `
+`git reflog 105177b (HEAD -> interactiveRebase) HEAD@{0}: rebase -i (finish): returning to refs/heads/interactiveRebase 105177b (HEAD -> interactiveRebase) HEAD@{1}: rebase -i (reword): Add Bob ed78fa1 HEAD@{2}: rebase -i (squash): Add a lot very important text to Alice 9e06fca HEAD@{3}: rebase -i (start): checkout HEAD~3 0b22064 HEAD@{4}: commit: Add more text to Alice 062ef13 HEAD@{5}: commit: Add Bob.txt 9e06fca HEAD@{6}: commit: Add text to Alice df3ad1d (origin/master, origin/HEAD, master) HEAD@{7}: checkout: moving from master to interactiveRebase`
 
 There it is. Every single thing we've done, from switching to the branch to doing the `rebase`.
 
