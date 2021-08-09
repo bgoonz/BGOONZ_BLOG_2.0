@@ -1,14 +1,15 @@
 language: node_js
 
 os:
-    - linux
-    - osx
+  - linux
+  - osx
 
 node_js:
-    - 'node'
-    - 'lts/*'
-    - '7'
-    - '8'
+  - "node"
+  - "lts/*"
+  - "7"
+  - "8"
 
 script:
-    - npm install
+  - npm install
+

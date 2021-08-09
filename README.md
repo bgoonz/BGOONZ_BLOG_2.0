@@ -493,6 +493,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 <details>
   <summary><h1>Click to see React Components (src folder)!</h1></summary>
   
+  
 
 
 <details>
@@ -508,9 +509,8 @@ import Icon from './Icon';
 
 export default class ActionLink extends React.Component {
 render() {
-let action = \_.get(this.props, 'action', null);
+let action = _.get(this.props, 'action', null);
 return (
-
 <Link
 to={withPrefix(_.get(action, 'url', null))}
 {...(_.get(action, 'new_window', null) ? { target: '\_blank' } : null)}
