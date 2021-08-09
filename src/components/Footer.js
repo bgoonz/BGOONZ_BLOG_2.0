@@ -12,9 +12,7 @@ export default class Footer extends React.Component {
                     <br />
                     <br />
                     <br />
-                    <br />
-                    <br />
-                    <br />
+
                     <br />
                     <br />
                     <br />
