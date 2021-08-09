@@ -2,7 +2,11 @@
 
 > Some people, when confronted with a problem, think ‘I know, I’ll use regular expressions.’ Now they have two problems.
 
+<<<<<<< HEAD
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html "previous chapter") [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html "cover") [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html "next chapter")
+=======
 [◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 > [](#p_MWUwIAb0uO)Some people, when confronted with a problem, think ‘I know, I’ll use regular expressions.’ Now they have two problems.
 
@@ -16,7 +20,12 @@
 
 [](#p_cxbejyPUGl)Regular expressions are both terribly awkward and extremely useful. Their syntax is cryptic, and the programming interface JavaScript provides for them is clumsy. But they are a powerful tool for inspecting and processing strings. Properly understanding regular expressions will make you a more effective programmer.
 
+<<<<<<< HEAD
+[](#h_5w4yGFJRYl)Creating a regular expression
+----------------------------------------------
+=======
 ## [](#h_5w4yGFJRYl)Creating a regular expression
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_u/9SKAI2Yi)A regular expression is a type of object. It can be either constructed with the `RegExp` constructor or written as a literal value by enclosing a pattern in forward slash (`/`) characters.
 
@@ -33,7 +42,12 @@ let re2 \= /abc/;
 
 [](#c_uRzUiBSrul)let eighteenPlus \= /eighteen\\+/;
 
+<<<<<<< HEAD
+[](#h_vPyyYjMEtz)Testing for matches
+------------------------------------
+=======
 ## [](#h_vPyyYjMEtz)Testing for matches
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_SHaMWlzFzk)Regular expression objects have a number of methods. The simplest one is `test`. If you pass it a string, it will return a Boolean telling you whether the string contains a match of the pattern in the expression.
 
@@ -43,7 +57,12 @@ console.log(/abc/.test("abxde"));
 
 [](#p_YGcbMDV493)A regular expression consisting of only nonspecial characters simply represents that sequence of characters. If _abc_ occurs anywhere in the string we are testing against (not just at the start), `test` will return `true`.
 
+<<<<<<< HEAD
+[](#h_8EFR0DU1xd)Sets of characters
+-----------------------------------
+=======
 ## [](#h_8EFR0DU1xd)Sets of characters
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_ZyB7HeLr75)Finding out whether a string contains _abc_ could just as well be done with a call to `indexOf`. Regular expressions allow us to express more complicated patterns.
 
@@ -79,7 +98,12 @@ console.log(notBinary.test("1100100010100110"));
 
 console.log(notBinary.test("1100100010200110"));
 
+<<<<<<< HEAD
+[](#h_iFI1qvUwY9)Repeating parts of a pattern
+---------------------------------------------
+=======
 ## [](#h_iFI1qvUwY9)Repeating parts of a pattern
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_crYiu/oAUM)We now know how to match a single digit. What if we want to match a whole number—a sequence of one or more digits?
 
@@ -111,7 +135,12 @@ console.log(dateTime.test("1-30-2003 8:45"));
 
 [](#p_RjqN6VMQIa)You can also specify open-ended ranges when using braces by omitting the number after the comma. So, `{5,}` means five or more times.
 
+<<<<<<< HEAD
+[](#h_uICSDspz1I)Grouping subexpressions
+----------------------------------------
+=======
 ## [](#h_uICSDspz1I)Grouping subexpressions
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_pKTOYUDGIr)To use an operator like `*` or `+` on more than one element at a time, you have to use parentheses. A part of a regular expression that is enclosed in parentheses counts as a single element as far as the operators following it are concerned.
 
@@ -122,7 +151,12 @@ console.log(cartoonCrying.test("Boohoooohoohooo"));
 
 [](#p_c4RlIM4/HI)The `i` at the end of the expression in the example makes this regular expression case insensitive, allowing it to match the uppercase _B_ in the input string, even though the pattern is itself all lowercase.
 
+<<<<<<< HEAD
+[](#h_CV5XL/TADP)Matches and groups
+-----------------------------------
+=======
 ## [](#h_CV5XL/TADP)Matches and groups
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_K3KRDzatsp)The `test` method is the absolute simplest way to match a regular expression. It tells you only whether it matched and nothing else. Regular expressions also have an `exec` (execute) method that will return `null` if no match was found and return an object with information about the match otherwise.
 
@@ -152,7 +186,12 @@ console.log(/(\\d)+/.exec("123"));
 
 [](#p_DzNUSBaBZb)But first we’ll take a brief detour, in which we discuss the built-in way to represent date and time values in JavaScript.
 
+<<<<<<< HEAD
+[](#h_8U7L7LCU27)The Date class
+-------------------------------
+=======
 ## [](#h_8U7L7LCU27)The Date class
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_2NeTRvucQq)JavaScript has a standard class for representing dates—or, rather, points in time. It is called `Date`. If you simply create a date object using `new`, you get the current date and time.
 
@@ -181,15 +220,26 @@ console.log(new Date(1387407600000));
 [](#p_/RCtQyD3w/)Putting parentheses around the parts of the expression that we are interested in, we can now create a date object from a string.
 
 [](#c_xW0xfMnpiZ)function getDate(string) {
+<<<<<<< HEAD
+  let \[\_, month, day, year\] \=
+    /(\\d{1,2})-(\\d{1,2})-(\\d{4})/.exec(string);
+  return new Date(year, month \- 1, day);
+=======
 let \[\_, month, day, year\] \=
 /(\\d{1,2})-(\\d{1,2})-(\\d{4})/.exec(string);
 return new Date(year, month \- 1, day);
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 }
 console.log(getDate("1-30-2003"));
 
 [](#p_YUOJEGEtSI)The `_` (underscore) binding is ignored and used only to skip the full match element in the array returned by `exec`.
 
+<<<<<<< HEAD
+[](#h_26ixny78VY)Word and string boundaries
+-------------------------------------------
+=======
 ## [](#h_26ixny78VY)Word and string boundaries
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_xdYJVr9vlf)Unfortunately, `getDate` will also happily extract the nonsensical date 00-1-3000 from the string `"100-1-30000"`. A match may happen anywhere in the string, so in this case, it’ll just start at the second character and end at the second-to-last character.
 
@@ -203,7 +253,12 @@ console.log(/\\bcat\\b/.test("concatenate"));
 
 [](#p_btxd6luedx)Note that a boundary marker doesn’t match an actual character. It just enforces that the regular expression matches only when a certain condition holds at the place where it appears in the pattern.
 
+<<<<<<< HEAD
+[](#h_In3b+t6uOO)Choice patterns
+--------------------------------
+=======
 ## [](#h_In3b+t6uOO)Choice patterns
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_G5RTt0AFku)Say we want to know whether a piece of text contains not only a number but a number followed by one of the words _pig_, _cow_, or _chicken_, or any of their plural forms.
 
@@ -216,7 +271,12 @@ console.log(animalCount.test("15 pigchickens"));
 
 [](#p_bPWKulKcxf)Parentheses can be used to limit the part of the pattern that the pipe operator applies to, and you can put multiple such operators next to each other to express a choice between more than two alternatives.
 
+<<<<<<< HEAD
+[](#h_AzxCBCKdvY)The mechanics of matching
+------------------------------------------
+=======
 ## [](#h_AzxCBCKdvY)The mechanics of matching
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_SXQOi9ZwwH)Conceptually, when you use `exec` or `test`, the regular expression engine looks for a match in your string by trying to match the expression first from the start of the string, then from the second character, and so on, until it finds a match or reaches the end of the string. It’ll either return the first match that can be found or fail to find any match at all.
 
@@ -228,6 +288,23 @@ console.log(animalCount.test("15 pigchickens"));
 
 [](#p_MB99a8uIlE)So if we try to match `"the 3 pigs"` from position 4, our progress through the flow chart would look like this:
 
+<<<<<<< HEAD
+*   [](#p_bgxoerTVW4)At position 4, there is a word boundary, so we can move past the first box.
+    
+*   [](#p_YCV1/H+Rbe)Still at position 4, we find a digit, so we can also move past the second box.
+    
+*   [](#p_fQdWHxKgCF)At position 5, one path loops back to before the second (digit) box, while the other moves forward through the box that holds a single space character. There is a space here, not a digit, so we must take the second path.
+    
+*   [](#p_KItk5iNp9m)We are now at position 6 (the start of _pigs_) and at the three-way branch in the diagram. We don’t see _cow_ or _chicken_ here, but we do see _pig_, so we take that branch.
+    
+*   [](#p_SowlGZC6lM)At position 9, after the three-way branch, one path skips the _s_ box and goes straight to the final word boundary, while the other path matches an _s_. There is an _s_ character here, not a word boundary, so we go through the _s_ box.
+    
+*   [](#p_oJRMcnDoAt)We’re at position 10 (the end of the string) and can match only a word boundary. The end of a string counts as a word boundary, so we go through the last box and have successfully matched this string.
+    
+
+[](#h_NFMtGK0tD3)Backtracking
+-----------------------------
+=======
 -   [](#p_bgxoerTVW4)At position 4, there is a word boundary, so we can move past the first box.
 -   [](#p_YCV1/H+Rbe)Still at position 4, we find a digit, so we can also move past the second box.
 -   [](#p_fQdWHxKgCF)At position 5, one path loops back to before the second (digit) box, while the other moves forward through the box that holds a single space character. There is a space here, not a digit, so we must take the second path.
@@ -236,6 +313,7 @@ console.log(animalCount.test("15 pigchickens"));
 -   [](#p_oJRMcnDoAt)We’re at position 10 (the end of the string) and can match only a word boundary. The end of a string counts as a word boundary, so we go through the last box and have successfully matched this string.
 
 ## [](#h_NFMtGK0tD3)Backtracking
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_tCd15MFAty)The regular expression `/\b([01]+b|[\da-f]+h|\d+)\b/` matches either a binary number followed by a _b_, a hexadecimal number (that is, base 16, with the letters _a_ to _f_ standing for the digits 10 to 15) followed by an _h_, or a regular decimal number with no suffix character. This is the corresponding diagram:
 
@@ -255,7 +333,12 @@ console.log(animalCount.test("15 pigchickens"));
 
 [](#p_5cI0Ma3Wy8)If that tries to match some long series of zeros and ones with no trailing _b_ character, the matcher first goes through the inner loop until it runs out of digits. Then it notices there is no _b_, so it backtracks one position, goes through the outer loop once, and gives up again, trying to backtrack out of the inner loop once more. It will continue to try every possible route through these two loops. This means the amount of work _doubles_ with each additional character. For even just a few dozen characters, the resulting match will take practically forever.
 
+<<<<<<< HEAD
+[](#h_k0YuTOu54D)The replace method
+-----------------------------------
+=======
 ## [](#h_k0YuTOu54D)The replace method
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_HMQv5qrs78)String values have a `replace` method that can be used to replace part of the string with another string.
 
@@ -272,8 +355,13 @@ console.log("Borobudur".replace(/\[ou\]/g, "a"));
 [](#p_/5YU/Qo2Np)The real power of using regular expressions with `replace` comes from the fact that we can refer to matched groups in the replacement string. For example, say we have a big string containing the names of people, one name per line, in the format `Lastname, Firstname`. If we want to swap these names and remove the comma to get a `Firstname Lastname` format, we can use the following code:
 
 [](#c_5P5aZAbVLL)console.log(
+<<<<<<< HEAD
+  "Liskov, Barbara\\nMcCarthy, John\\nWadler, Philip"
+    .replace(/(\\w+), (\\w+)/g, "$2 $1"));
+=======
 "Liskov, Barbara\\nMcCarthy, John\\nWadler, Philip"
 .replace(/(\\w+), (\\w+)/g, "$2 $1"));
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_sEudLRqyzC)The `$1` and `$2` in the replacement string refer to the parenthesized groups in the pattern. `$1` is replaced by the text that matched against the first group, `$2` by the second, and so on, up to `$9`. The whole match can be referred to with `$&`.
 
@@ -283,12 +371,25 @@ console.log("Borobudur".replace(/\[ou\]/g, "a"));
 
 [](#c_fwgl3+oeyX)let s \= "the cia and fbi";
 console.log(s.replace(/\\b(fbi|cia)\\b/g,
+<<<<<<< HEAD
+            str \=> str.toUpperCase()));
+=======
 str \=> str.toUpperCase()));
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_EXxvdgdiP1)Here’s a more interesting one:
 
 [](#c_Zo/y2Vv93l)let stock \= "1 lemon, 2 cabbages, and 101 eggs";
 function minusOne(match, amount, unit) {
+<<<<<<< HEAD
+  amount \= Number(amount) \- 1;
+  if (amount \== 1) { 
+    unit \= unit.slice(0, unit.length \- 1);
+  } else if (amount \== 0) {
+    amount \= "no";
+  }
+  return amount + " " + unit;
+=======
 amount \= Number(amount) \- 1;
 if (amount \== 1) {
 unit \= unit.slice(0, unit.length \- 1);
@@ -296,6 +397,7 @@ unit \= unit.slice(0, unit.length \- 1);
 amount \= "no";
 }
 return amount + " " + unit;
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 }
 console.log(stock.replace(/(\\d+) (\\w+)/g, minusOne));
 
@@ -303,12 +405,21 @@ console.log(stock.replace(/(\\d+) (\\w+)/g, minusOne));
 
 [](#p_H94SX/MJX8)The `(\d+)` group ends up as the `amount` argument to the function, and the `(\w+)` group gets bound to `unit`. The function converts `amount` to a number—which always works since it matched `\d+`—and makes some adjustments in case there is only one or zero left.
 
+<<<<<<< HEAD
+[](#h_kiECehz+i+)Greed
+----------------------
+=======
 ## [](#h_kiECehz+i+)Greed
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_VccKwuX/1m)It is possible to use `replace` to write a function that removes all comments from a piece of JavaScript code. Here is a first attempt:
 
 [](#c_u0oKSJTOA2)function stripComments(code) {
+<<<<<<< HEAD
+  return code.replace(/\\/\\/.\*|\\/\\\*\[^\]\*\\\*\\//g, "");
+=======
 return code.replace(/\\/\\/.\*|\\/\\\*\[^\]\*\\\*\\//g, "");
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 }
 console.log(stripComments("1 + /\* 2 \*/3"));
 
@@ -327,13 +438,22 @@ console.log(stripComments("1 /\* a \*/+/\* b \*/ 1"));
 [](#p_0L47KZXZKa)And that is exactly what we want in this case. By having the star match the smallest stretch of characters that brings us to a `*/`, we consume one block comment and nothing more.
 
 [](#c_MCNF7GxfR1)function stripComments(code) {
+<<<<<<< HEAD
+  return code.replace(/\\/\\/.\*|\\/\\\*\[^\]\*?\\\*\\//g, "");
+=======
 return code.replace(/\\/\\/.\*|\\/\\\*\[^\]\*?\\\*\\//g, "");
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 }
 console.log(stripComments("1 /\* a \*/+/\* b \*/ 1"));
 
 [](#p_o+3JCFC4Dr)A lot of bugs in regular expression programs can be traced to unintentionally using a greedy operator where a nongreedy one would work better. When using a repetition operator, consider the nongreedy variant first.
 
+<<<<<<< HEAD
+[](#h_Rhu25fogrG)Dynamically creating RegExp objects
+----------------------------------------------------
+=======
 ## [](#h_Rhu25fogrG)Dynamically creating RegExp objects
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_34PsyHYX4x)There are cases where you might not know the exact pattern you need to match against when you are writing your code. Say you want to look for the user’s name in a piece of text and enclose it in underscore characters to make it stand out. Since you will know the name only once the program is actually running, you can’t use the slash-based notation.
 
@@ -356,6 +476,23 @@ let escaped \= name.replace(/\[\\\\\[.+\*?(){|^$\]/g, "\\\\$&");
 let regexp \= new RegExp("\\\\b" + escaped + "\\\\b", "gi");
 console.log(text.replace(regexp, "\_$&\_"));
 
+<<<<<<< HEAD
+[](#h_Txg7z4j/ei)The search method
+----------------------------------
+
+[](#p_3QlEdRm5L2)The `indexOf` method on strings cannot be called with a regular expression. But there is another method, `search`, that does expect a regular expression. Like `indexOf`, it returns the first index on which the expression was found, or -1 when it wasn’t found.
+
+[](#c_diUfxE6ifs)console.log("  word".search(/\\S/));
+
+console.log("    ".search(/\\S/));
+
+[](#p_tqlyvUKoi5)Unfortunately, there is no way to indicate that the match should start at a given offset (like we can with the second argument to `indexOf`), which would often be useful.
+
+[](#h_duFTd2hqd0)The lastIndex property
+---------------------------------------
+
+[](#p_MvO8+re1D+)The `exec` method similarly does not provide a convenient way to start searching from a given position in the string. But it does provide an _in_convenient way.
+=======
 ## [](#h_Txg7z4j/ei)The search method
 
 [](#p_3QlEdRm5L2)The `indexOf` method on strings cannot be called with a regular expression. But there is another method, `search`, that does expect a regular expression. Like `indexOf`, it returns the first index on which the expression was found, or -1 when it wasn’t found.
@@ -369,6 +506,7 @@ console.log(" ".search(/\\S/));
 ## [](#h_duFTd2hqd0)The lastIndex property
 
 [](#p_MvO8+re1D+)The `exec` method similarly does not provide a convenient way to start searching from a given position in the string. But it does provide an \_in_convenient way.
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_F+JgzwxLtK)Regular expression objects have properties. One such property is `source`, which contains the string that expression was created from. Another property is `lastIndex`, which controls, in some limited circumstances, where the next match will start.
 
@@ -412,12 +550,21 @@ console.log(digit.exec("and now: 1"));
 let number \= /\\b\\d+\\b/g;
 let match;
 while (match \= number.exec(input)) {
+<<<<<<< HEAD
+  console.log("Found", match\[0\], "at", match.index);
+=======
 console.log("Found", match\[0\], "at", match.index);
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 }
 
 [](#p_ZdCI2+edqA)This makes use of the fact that the value of an assignment expression (`=`) is the assigned value. So by using `match = number.exec(input)` as the condition in the `while` statement, we perform the match at the start of each iteration, save its result in a binding, and stop looping when no more matches are found.
 
+<<<<<<< HEAD
+[](#h_RGsf6ah1EY)Parsing an INI file
+------------------------------------
+=======
 ## [](#h_RGsf6ah1EY)Parsing an INI file
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_JbrLORqV9r)To conclude the chapter, we’ll look at a problem that calls for regular expressions. Imagine we are writing a program to automatically collect information about our enemies from the Internet. (We will not actually write that program here, just the part that reads the configuration file. Sorry.) The configuration file looks like this:
 
@@ -438,16 +585,43 @@ outputdir=/home/marijn/enemies/davaeorn
 
 [](#p_OgIQS1TJxB)The exact rules for this format (which is a widely used format, usually called an _INI_ file) are as follows:
 
+<<<<<<< HEAD
+*   [](#p_jIewfc/40B)Blank lines and lines starting with semicolons are ignored.
+    
+*   [](#p_O/dGCr+aR5)Lines wrapped in `[` and `]` start a new section.
+    
+*   [](#p_l2Yjl1fUVB)Lines containing an alphanumeric identifier followed by an `=` character add a setting to the current section.
+    
+*   [](#p_bCaQwCXJCi)Anything else is invalid.
+    
+=======
 -   [](#p_jIewfc/40B)Blank lines and lines starting with semicolons are ignored.
 -   [](#p_O/dGCr+aR5)Lines wrapped in `[` and `]` start a new section.
 -   [](#p_l2Yjl1fUVB)Lines containing an alphanumeric identifier followed by an `=` character add a setting to the current section.
 -   [](#p_bCaQwCXJCi)Anything else is invalid.
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_clbD+OAS4y)Our task is to convert a string like this into an object whose properties hold strings for settings written before the first section header and subobjects for sections, with those subobjects holding the section’s settings.
 
 [](#p_8U3vMRn7g4)Since the format has to be processed line by line, splitting up the file into separate lines is a good start. We saw the `split` method in [Chapter 4](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/04_data.html#split). Some operating systems, however, use not just a newline character to separate lines but a carriage return character followed by a newline (`"\r\n"`). Given that the `split` method also allows a regular expression as its argument, we can use a regular expression like `/\r?\n/` to split in a way that allows both `"\n"` and `"\r\n"` between lines.
 
 [](#c_neI86/XXg2)function parseINI(string) {
+<<<<<<< HEAD
+  
+  let result \= {};
+  let section \= result;
+  string.split(/\\r?\\n/).forEach(line \=> {
+    let match;
+    if (match \= line.match(/^(\\w+)=(.\*)$/)) {
+      section\[match\[1\]\] \= match\[2\];
+    } else if (match \= line.match(/^\\\[(.\*)\\\]$/)) {
+      section \= result\[match\[1\]\] \= {};
+    } else if (!/^\\s\*(;.\*)?$/.test(line)) {
+      throw new Error("Line '" + line + "' is not valid.");
+    }
+  });
+  return result;
+=======
 
 let result \= {};
 let section \= result;
@@ -462,6 +636,7 @@ throw new Error("Line '" + line + "' is not valid.");
 }
 });
 return result;
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 }
 
 console.log(parseINI(\`
@@ -479,7 +654,12 @@ city=Tessaloniki\`));
 
 [](#p_mwlBKfUu5D)If a line is not a section header or a property, the function checks whether it is a comment or an empty line using the expression `/^\s*(;.*)?$/`. Do you see how it works? The part between the parentheses will match comments, and the `?` makes sure it also matches lines containing only whitespace. When a line doesn’t match any of the expected forms, the function throws an exception.
 
+<<<<<<< HEAD
+[](#h_+y54//b0l+)International characters
+-----------------------------------------
+=======
 ## [](#h_+y54//b0l+)International characters
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_2zJ37rLrbl)Because of JavaScript’s initial simplistic implementation and the fact that this simplistic approach was later set in stone as standard behavior, JavaScript’s regular expressions are rather dumb about characters that do not appear in the English language. For example, as far as JavaScript’s regular expressions are concerned, a “word character” is only one of the 26 characters in the Latin alphabet (uppercase or lowercase), decimal digits, and, for some reason, the underscore character. Things like _é_ or _β_, which most definitely are word characters, will not match `\w` (and _will_ match uppercase `\W`, the nonword category).
 
@@ -509,7 +689,12 @@ console.log(/\\p{Alphabetic}/u.test("!"));
 
 [](#p_5NxQGhRrMq)Unicode defines a number of useful properties, though finding the one that you need may not always be trivial. You can use the `\p{Property=Value}` notation to match any character that has the given value for that property. If the property name is left off, as in `\p{Name}`, the name is assumed to be either a binary property such as `Alphabetic` or a category such as `Number`.
 
+<<<<<<< HEAD
+[](#h_ErccPg/l98)Summary
+------------------------
+=======
 ## [](#h_ErccPg/l98)Summary
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_/hQX04GtpS)Regular expressions are objects that represent patterns in strings. They use their own language to express these patterns.
 
@@ -523,7 +708,12 @@ console.log(/\\p{Alphabetic}/u.test("!"));
 
 [](#p_mvLGdyUb97)Regular expressions are a sharp tool with an awkward handle. They simplify some tasks tremendously but can quickly become unmanageable when applied to complex problems. Part of knowing how to use them is resisting the urge to try to shoehorn things that they cannot cleanly express into them.
 
+<<<<<<< HEAD
+[](#h_TcUD2vzyMe)Exercises
+--------------------------
+=======
 ## [](#h_TcUD2vzyMe)Exercises
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_meNfX2B/+s)It is almost unavoidable that, in the course of working on these exercises, you will get confused and frustrated by some regular expression’s inexplicable behavior. Sometimes it helps to enter your expression into an online tool like [_https://debuggex.com_](https://www.debuggex.com/) to see whether its visualization corresponds to what you intended and to experiment with the way it responds to various input strings.
 
@@ -534,18 +724,72 @@ console.log(/\\p{Alphabetic}/u.test("!"));
 [](#p_VGCqgCur6C)For each of the following items, write a regular expression to test whether any of the given substrings occur in a string. The regular expression should match only strings containing one of the substrings described. Do not worry about word boundaries unless explicitly mentioned. When your expression works, see whether you can make it any smaller.
 
 1.  [](#p_togdFO+/b9)_car_ and _cat_
+<<<<<<< HEAD
+    
+2.  [](#p_2Q37Tsr9DS)_pop_ and _prop_
+    
+3.  [](#p_2Ah4dFikw1)_ferret_, _ferry_, and _ferrari_
+    
+4.  [](#p_ttiBCcePDl)Any word ending in _ious_
+    
+5.  [](#p_XnqTy5SopM)A whitespace character followed by a period, comma, colon, or semicolon
+    
+6.  [](#p_Ku7hE3qqDn)A word longer than six letters
+    
+7.  [](#p_mFDWQqRtWe)A word without the letter _e_ (or _E_)
+    
+=======
 2.  [](#p_2Q37Tsr9DS)_pop_ and _prop_
 3.  [](#p_2Ah4dFikw1)_ferret_, _ferry_, and _ferrari_
 4.  [](#p_ttiBCcePDl)Any word ending in _ious_
 5.  [](#p_XnqTy5SopM)A whitespace character followed by a period, comma, colon, or semicolon
 6.  [](#p_Ku7hE3qqDn)A word longer than six letters
 7.  [](#p_mFDWQqRtWe)A word without the letter _e_ (or _E_)
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_Tzjl1Axr+h)Refer to the table in the [chapter summary](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/09_regexp.html#summary_regexp) for help. Test each solution with a few test strings.
 
 [](#c_bnGKrYkiZ9)
 
 verify(/.../,
+<<<<<<< HEAD
+       \["my car", "bad cats"\],
+       \["camper", "high art"\]);
+
+verify(/.../,
+       \["pop culture", "mad props"\],
+       \["plop", "prrrop"\]);
+
+verify(/.../,
+       \["ferret", "ferry", "ferrari"\],
+       \["ferrum", "transfer A"\]);
+
+verify(/.../,
+       \["how delicious", "spacious room"\],
+       \["ruinous", "consciousness"\]);
+
+verify(/.../,
+       \["bad punctuation ."\],
+       \["escape the period"\]);
+
+verify(/.../,
+       \["Siebentausenddreihundertzweiundzwanzig"\],
+       \["no", "three small words"\]);
+
+verify(/.../,
+       \["red platypus", "wobbling nest"\],
+       \["earth bed", "learning ape", "BEET"\]);
+
+function verify(regexp, yes, no) {
+  
+  if (regexp.source \== "...") return;
+  for (let str of yes) if (!regexp.test(str)) {
+    console.log(\`Failure to match '${str}'\`);
+  }
+  for (let str of no) if (regexp.test(str)) {
+    console.log(\`Unexpected match for '${str}'\`);
+  }
+=======
 \["my car", "bad cats"\],
 \["camper", "high art"\]);
 
@@ -582,6 +826,7 @@ console.log(\`Failure to match '${str}'\`);
   for (let str of no) if (regexp.test(str)) {
     console.log(\`Unexpected match for '${str}'\`);
 }
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 }
 
 ### [](#i_dTiEW14oG0)Quoting style
@@ -606,16 +851,26 @@ console.log(text.replace(/A/g, "B"));
 let number \= /^...$/;
 
 for (let str of \["1", "-1", "+15", "1.55", ".5", "5.",
+<<<<<<< HEAD
+                 "1.3e2", "1E-4", "1e+12"\]) {
+  if (!number.test(str)) {
+    console.log(\`Failed to match '${str}'\`);
+=======
 "1.3e2", "1E-4", "1e+12"\]) {
 if (!number.test(str)) {
 console.log(\`Failed to match '${str}'\`);
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
   }
 }
 for (let str of \["1a", "+-1", "1.2.3", "1+1", "1e4.5",
                  ".5.", "1f5", "."\]) {
   if (number.test(str)) {
     console.log(\`Incorrectly accepted '${str}'\`);
+<<<<<<< HEAD
+  }
+=======
 }
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 }
 
 [](#p_sWIFtGBNR7)First, do not forget the backslash in front of the period.
@@ -626,6 +881,13 @@ for (let str of \["1a", "+-1", "1.2.3", "1+1", "1e4.5",
 
 [](#p_WHNmLsGl4C)Finally, to make the _e_ case insensitive, either add an `i` option to the regular expression or use `[eE]`.
 
+<<<<<<< HEAD
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html "previous chapter") [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html "cover") [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html "next chapter")
+
+
+[Source](https://eloquentjavascript.net/09_regexp.html)
+=======
 [◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
 
 [Source](https://eloquentjavascript.net/09_regexp.html)
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
