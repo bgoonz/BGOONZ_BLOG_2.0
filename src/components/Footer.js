@@ -8,17 +8,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
-                <div className="inner">
-                    <div className="site-footer-inside">
-                        <p className="site-info">
-                            {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
-                                <span className="copyright">{htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}</span>
-                            )}
-                            {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
-                                <ActionLink key={action_idx} {...this.props} action={action} />
-                            ))}
-                        </p>
-                        <div>
+                                    <div>
                             <br />
                             <br />
                             <br />
@@ -45,13 +35,13 @@ export default class Footer extends React.Component {
                                                         <tbody>
                                                             <tr>
                                                                 <td style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }} align="left">
-                                                                    <a href="https://search.freefind.com/siteindex.html?si=14588965">index</a>
+                                                                    <a target="_blank"  href="https://search.freefind.com/siteindex.html?si=14588965" >index</a>
                                                                 </td>
                                                                 <td style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }} align="center">
-                                                                    <a href="https://search.freefind.com/find.html?si=14588965&m=0&p=0">sitemap</a>
+                                                                    <a target="_blank"  href="https://search.freefind.com/find.html?si=14588965&m=0&p=0">sitemap</a>
                                                                 </td>
                                                                 <td style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }} align="right">
-                                                                    <a href="https://search.freefind.com/find.html?si=14588965&pid=a">advanced</a>
+                                                                    <a target="_blank" href="https://search.freefind.com/find.html?si=14588965&pid=a">advanced</a>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -94,16 +84,19 @@ export default class Footer extends React.Component {
                                         </tr>
                                     </tbody>
                                 </table>
-                                <link
-                                    rel="stylesheet"
-                                    href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"
-                                />
-                                <h1>Algolia Instant Search Client</h1>
-                                <div id="search" />
-                                <h1>Google Search</h1>
-                            </center>
-                            <div className="gcse-search" />
+                        </center>
                         </div>
+                <div className="inner">
+                    <div className="site-footer-inside">
+                        <p className="site-info">
+                            {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
+                                <span className="copyright">{htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}</span>
+                            )}
+                            {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
+                                <ActionLink key={action_idx} {...this.props} action={action} />
+                            ))}
+                        </p>
+    
                         {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_social', null) && (
                             <div className="social-links">
                                 {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.social_links', null), (action, action_idx) => (
