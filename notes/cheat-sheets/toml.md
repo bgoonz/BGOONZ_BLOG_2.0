@@ -2,7 +2,7 @@
 language: toml
 filename: learntoml.toml
 contributors:
-  - ["Alois de Gouvello", "https://github.com/aloisdg"]
+    - ['Alois de Gouvello', 'https://github.com/aloisdg']
 ---
 
 TOML stands for Tom's Obvious, Minimal Language. It is a data serialisation language designed to be a minimal configuration file format that's easy to read due to obvious semantics.
@@ -229,19 +229,19 @@ The equivalent in JSON would be:
 
 ```json
 {
-  "products": [
-    {
-      "name": "array of table",
-      "sku": 7385594937,
-      "emptyTableAreAllowed": true
-    },
-    {},
-    {
-      "name": "Nail",
-      "sku": 284758393,
-      "color": "gray"
-    }
-  ]
+    "products": [
+        {
+            "name": "array of table",
+            "sku": 7385594937,
+            "emptyTableAreAllowed": true
+        },
+        {},
+        {
+            "name": "Nail",
+            "sku": 284758393,
+            "color": "gray"
+        }
+    ]
 }
 ```
 
@@ -277,23 +277,23 @@ The equivalent in JSON would be:
 
 ```json
 {
-  "fruit": [
-    {
-      "name": "apple",
-      "geometry": { "shape": "round", "note": "..." },
-      "color": [
-        { "name": "red", "note": "..." },
-        { "name": "green", "note": "..." }
-      ]
-    },
-    {
-      "name": "banana",
-      "color": [{ "name": "yellow", "note": "..." }]
-    }
-  ]
+    "fruit": [
+        {
+            "name": "apple",
+            "geometry": { "shape": "round", "note": "..." },
+            "color": [
+                { "name": "red", "note": "..." },
+                { "name": "green", "note": "..." }
+            ]
+        },
+        {
+            "name": "banana",
+            "color": [{ "name": "yellow", "note": "..." }]
+        }
+    ]
 }
 ```
 
 ### More Resources
 
-- [TOML official repository](https://github.com/toml-lang/toml)
+-   [TOML official repository](https://github.com/toml-lang/toml)

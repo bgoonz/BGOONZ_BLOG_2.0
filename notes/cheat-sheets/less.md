@@ -2,7 +2,7 @@
 language: less
 filename: learnless.less
 contributors:
-  - ["Saravanan Ganesh", "http://srrvnn.me"]
+    - ['Saravanan Ganesh', 'http://srrvnn.me']
 ---
 
 Less is a CSS pre-processor, that adds features such as variables, nesting, mixins and more.
@@ -21,23 +21,23 @@ Less (and other preprocessors, such as [Sass](http://sass-lang.com/)) help devel
 
 @primary-color: #a3a4ff;
 @secondary-color: #51527f;
-@body-font: "Roboto", sans-serif;
+@body-font: 'Roboto', sans-serif;
 
 /* You can use the variables throughout your stylesheet.
    Now if you want to change a color, you only have to make the change once.*/
 
 body {
-  background-color: @primary-color;
-  color: @secondary-color;
-  font-family: @body-font;
+    background-color: @primary-color;
+    color: @secondary-color;
+    font-family: @body-font;
 }
 
 /* This would compile to: */
 
 body {
-  background-color: #a3a4ff;
-  color: #51527f;
-  font-family: "Roboto", sans-serif;
+    background-color: #a3a4ff;
+    color: #51527f;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* This is much more maintainable than having to change the color
@@ -50,62 +50,62 @@ body {
    element, you might want to reuse that easily.*/
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 /* You can use the mixin by simply adding the selector as a style */
 
 div {
-  .center;
-  background-color: @primary-color;
+    .center;
+    background-color: @primary-color;
 }
 
 /* Which would compile to: */
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 div {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  background-color: #a3a4ff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #a3a4ff;
 }
 
 /* You can omit the mixin code from being compiled by adding parenthesis
    after the selector */
 
 .center() {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 div {
-  .center;
-  background-color: @primary-color;
+    .center;
+    background-color: @primary-color;
 }
 
 /* Which would compile to: */
 div {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  background-color: #a3a4ff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #a3a4ff;
 }
 
 /* Nesting
@@ -114,12 +114,12 @@ div {
 /* Less allows you to nest selectors within selectors */
 
 ul {
-  list-style-type: none;
-  margin-top: 2em;
+    list-style-type: none;
+    margin-top: 2em;
 
-  li {
-    background-color: #f00;
-  }
+    li {
+        background-color: #f00;
+    }
 }
 
 /* '&' will be replaced by the parent selector. */
@@ -129,39 +129,39 @@ ul {
    For example: */
 
 ul {
-  list-style-type: none;
-  margin-top: 2em;
+    list-style-type: none;
+    margin-top: 2em;
 
-  li {
-    background-color: red;
+    li {
+        background-color: red;
 
-    &:hover {
-      background-color: blue;
+        &:hover {
+            background-color: blue;
+        }
+
+        a {
+            color: white;
+        }
     }
-
-    a {
-      color: white;
-    }
-  }
 }
 
 /* Compiles to: */
 
 ul {
-  list-style-type: none;
-  margin-top: 2em;
+    list-style-type: none;
+    margin-top: 2em;
 }
 
 ul li {
-  background-color: red;
+    background-color: red;
 }
 
 ul li:hover {
-  background-color: blue;
+    background-color: blue;
 }
 
 ul li a {
-  color: white;
+    color: white;
 }
 
 /* Functions
@@ -174,29 +174,29 @@ ul li a {
    required arguments. */
 
 body {
-  width: round(10.25px);
+    width: round(10.25px);
 }
 
 .header {
-  background-color: lighten(#000, 0.5);
+    background-color: lighten(#000, 0.5);
 }
 
 .footer {
-  background-color: fadeout(#000, 0.25);
+    background-color: fadeout(#000, 0.25);
 }
 
 /* Compiles to: */
 
 body {
-  width: 10px;
+    width: 10px;
 }
 
 .header {
-  background-color: #010101;
+    background-color: #010101;
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* You may also define your own functions. Functions are very similar to
@@ -209,18 +209,18 @@ body {
 /* This function calculates the average of two numbers: */
 
 .average(@x, @y) {
-  @average-result: ((@x + @y) / 2);
+    @average-result: ((@x + @y) / 2);
 }
 
 div {
-  .average(16px, 50px); // "call" the mixin
-  padding: @average-result; // use its "return" value
+    .average(16px, 50px); // "call" the mixin
+    padding: @average-result; // use its "return" value
 }
 
 /* Compiles to: */
 
 div {
-  padding: 33px;
+    padding: 33px;
 }
 
 /*Extend (Inheritance)
@@ -229,21 +229,21 @@ div {
 /*Extend is a way to share the properties of one selector with another. */
 
 .display {
-  height: 50px;
+    height: 50px;
 }
 
 .display-success {
-  &:extend(.display);
-  border-color: #22df56;
+    &:extend(.display);
+    border-color: #22df56;
 }
 
 /* Compiles to: */
 .display,
 .display-success {
-  height: 50px;
+    height: 50px;
 }
 .display-success {
-  border-color: #22df56;
+    border-color: #22df56;
 }
 
 /* Extending a CSS statement is preferable to creating a mixin
@@ -267,8 +267,8 @@ html,
 body,
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Less offers @import which can be used to import partials into a file.
@@ -276,11 +276,11 @@ ol {
    another HTTP request to fetch the imported file. Less takes the
    imported file and combines it with the compiled code. */
 
-@import "reset";
+@import 'reset';
 
 body {
-  font-size: 16px;
-  font-family: Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    font-family: Helvetica, Arial, Sans-serif;
 }
 
 /* Compiles to: */
@@ -289,13 +289,13 @@ html,
 body,
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-size: 16px;
-  font-family: Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    font-family: Helvetica, Arial, Sans-serif;
 }
 
 /* Math Operations
@@ -315,37 +315,37 @@ body {
 @gutter: 100% - (@main-size + @sidebar-size);
 
 body {
-  width: 100%;
+    width: 100%;
 }
 
 .main-content {
-  width: @main-size;
+    width: @main-size;
 }
 
 .sidebar {
-  width: @sidebar-size;
+    width: @sidebar-size;
 }
 
 .gutter {
-  width: @gutter;
+    width: @gutter;
 }
 
 /* Compiles to: */
 
 body {
-  width: 100%;
+    width: 100%;
 }
 
 .main-content {
-  width: 62.5%;
+    width: 62.5%;
 }
 
 .sidebar {
-  width: 31.25%;
+    width: 31.25%;
 }
 
 .gutter {
-  width: 6.25%;
+    width: 6.25%;
 }
 ```
 
@@ -353,8 +353,8 @@ body {
 
 If you want to play with Less in your browser, check out:
 
-- [Codepen](http://codepen.io/)
-- [LESS2CSS](http://lesscss.org/less-preview/)
+-   [Codepen](http://codepen.io/)
+-   [LESS2CSS](http://lesscss.org/less-preview/)
 
 ## Compatibility
 
@@ -364,5 +364,5 @@ Less can be used in any project as long as you have a program to compile it into
 
 ## Further reading
 
-- [Official Documentation](http://lesscss.org/features/)
-- [Less CSS - Beginner's Guide](http://www.hongkiat.com/blog/less-basic/)
+-   [Official Documentation](http://lesscss.org/features/)
+-   [Less CSS - Beginner's Guide](http://www.hongkiat.com/blog/less-basic/)

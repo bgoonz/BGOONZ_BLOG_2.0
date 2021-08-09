@@ -2,8 +2,7 @@
 
 > Medium is a wonderful platform to use to blog. Medium helps many people reach your posts. Many of you maintain an account on Medium while…
 
-Front end
----------
+## Front end
 
 [![Sabesan Sathananthan](https://miro.medium.com/fit/c/96/96/1*dwqu7TGEPXw30P9Z9YNgfA.jpeg)](https://sabesan96.medium.com/?source=post_page-----54a1b49cbe16--------------------------------)
 
@@ -21,11 +20,11 @@ Now we are going to embed the Twitter feed on our blog page. To achieve this, vi
 
 PixelPoint is a company that consists of a team of freelance software developers working together to create apps. They create some applications for public use. To embed Medium widget on your blog page first visit [medium-widget.pixelpoint.io](https://medium-widget.pixelpoint.io/). When you click the link, a new window opens, and you’re dispensed with a single box. That box asks you for the URL of the profile. Enter your medium profile link in that box. Your profile link like _https://medium.com/@yourusername_. Copy the previous link and replace “yourusername” with your actual user name. Now hit the generate button. Then configure it the way you want the Medium widget to be viewed at a glance. It will request you to select a series of settings.
 
-*   The number of posts that you want to be displayed in your widget feed can be chosen from 1 to 10.
-*   The number of columns that you want in your feed can be selected. If you want a vertical embedded feed similar to the Facebook or Twitter timeline to choose one. Choose two or more If you want something a little more grid-like.
-*   The size of the post’s preview image to be on display; You can select a large image, a small image, or no image at all.
-*   The aspect ratio of the cover photo; You can select the original ratio for the image, landscape orientation, or a square.
-*   The elements of Medium to display. You can toggle on or off the description, the author credit, the number of claps, the number of fans you have, and the publication date.
+-   The number of posts that you want to be displayed in your widget feed can be chosen from 1 to 10.
+-   The number of columns that you want in your feed can be selected. If you want a vertical embedded feed similar to the Facebook or Twitter timeline to choose one. Choose two or more If you want something a little more grid-like.
+-   The size of the post’s preview image to be on display; You can select a large image, a small image, or no image at all.
+-   The aspect ratio of the cover photo; You can select the original ratio for the image, landscape orientation, or a square.
+-   The elements of Medium to display. You can toggle on or off the description, the author credit, the number of claps, the number of fans you have, and the publication date.
 
 ![](https://miro.medium.com/max/60/0*_bQIkW4YrPnbE1wU.jpg?q=20)
 
@@ -78,10 +77,10 @@ var data = {rss: "https://medium.com/feed/@username"}
 $.get(https://api.rss2json.com/v1/api.json?rss\_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40username, data, funciton(response){  
 //Checking Response Status  
 if (response.status == 'ok') {  
-   //Define a variable  
-   var output = '';  
-   //Response  
-  }  
+ //Define a variable  
+ var output = '';  
+ //Response  
+ }  
 });
 
 ![](https://miro.medium.com/max/60/1*u5CkVArsZE2DY-7E-FS9ow.png?q=20)
@@ -94,13 +93,13 @@ var data = {rss: "https://medium.com/feed/@username"}
 $.get(https://api.rss2json.com/v1/api.json?rss\_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40username, data, funciton(response){  
 //Checking Response Status  
 if (response.status == 'ok') {  
-   //Define a variable  
-   var output = '';  
-   //Response  
-   $.each(response.items, function (k, item) {  
-      //Code to be Iterated  
-      return k < 10;  
-   });  
+ //Define a variable  
+ var output = '';  
+ //Response  
+ $.each(response.items, function (k, item) {  
+ //Code to be Iterated  
+ return k < 10;  
+ });  
  }  
 });
 
@@ -121,6 +120,5 @@ I’ve also defined the div with **_JsonContent_** because I am going to feed my
 Here I showcased four methods to embed Medium to your blog. If you use these methods you won’t spend money to embed medium. But there are some methods to embed medium if you follow those methods you will have to spend money. such methods are [embed.ly](https://embed.ly/code), [SociableKIT](https://www.sociablekit.com/demos/medium-publication-feed). However, when you follow these methods you will be unable to show your related medium posts section in your blog. Unfortunately, you can’t see it in action on the demo page because I am implementing night mode for my website and keep following me for more updates.
 
 ![](https://miro.medium.com/max/1400/1*bn2TIHgZc61m_-DjOkOtKA.jpeg)
-
 
 [Source](https://medium.datadriveninvestor.com/embed-medium-as-a-blog-on-your-site-54a1b49cbe16)

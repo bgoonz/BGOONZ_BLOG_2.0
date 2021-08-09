@@ -16,11 +16,12 @@ The lines in this paragraph are all centered between the paragraph's margins, th
 Sometimes it is not the text that needs to be centered, but the block as a whole. Or, phrased differently: we want the left and right margin to be equal. The way to do that is to set the margins to 'auto'. This is normally used with a block of fixed width, because if the block itself is flexible, it will simply take up all the available width. Here is an example:
 
 P.blocktext {
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em
+margin-left: auto;
+margin-right: auto;
+width: 8em
 }
 ...
+
 <P class="blocktext">This rather...
 
 This rather narrow block of text is centered. Note that the lines inside the block are not centered (they are left-aligned), unlike in the earlier example.
@@ -28,9 +29,9 @@ This rather narrow block of text is centered. Note that the lines inside the blo
 This is also the way to center an image: make it into block of its own and apply the margin properties to it. For example:
 
 IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
+display: block;
+margin-left: auto;
+margin-right: auto }
 ...
 <IMG class="displayed" src="..." alt="...">
 
@@ -38,15 +39,16 @@ The following image is centered: ![some random image](https://www.w3.org/Style/W
 
 ## Centering vertically
 
-CSS level 2 doesn't have a property for centering things vertically. There will probably be one in CSS level 3 (see [below](https://www.w3.org/Style/Examples/007/center.en.html#vertical3 "Centering vertically in level 3")). But even in CSS2 you can center blocks vertically, by combining a few properties. The trick is to specify that the outer block is to be formatted as a table cell, because the contents of a table cell _can_ be centered vertically.
+CSS level 2 doesn't have a property for centering things vertically. There will probably be one in CSS level 3 (see [below](https://www.w3.org/Style/Examples/007/center.en.html#vertical3 'Centering vertically in level 3')). But even in CSS2 you can center blocks vertically, by combining a few properties. The trick is to specify that the outer block is to be formatted as a table cell, because the contents of a table cell _can_ be centered vertically.
 
 The example below centers a paragraph inside a block that has a certain given height. A [separate example](https://www.w3.org/Style/Examples/007/center-example) shows a paragraph that is centered vertically in the browser window, because it is inside a block that is absolutely positioned and as tall as the window.
 
 DIV.container {
-    min-height: 10em;
-    display: table-cell;
-    vertical-align: middle }
+min-height: 10em;
+display: table-cell;
+vertical-align: middle }
 ...
+
 <DIV class="container">
   <P>This small paragraph...
 </DIV>
@@ -68,13 +70,13 @@ For a document that looks like this:
 the style sheet looks like this:
 
 div.container3 {
-   height: 10em;
-   **position: relative** }              /\* 1 \*/
+height: 10em;
+**position: relative** } /\* 1 \*/
 div.container3 p {
-   margin: 0;
-   **position: absolute;**               /\* 2 \*/
-   **top: 50%;**                         /\* 3 \*/
-   **transform: translate(0, -50%)** }   /\* 4 \*/
+margin: 0;
+**position: absolute;** /\* 2 \*/
+**top: 50%;** /\* 3 \*/
+**transform: translate(0, -50%)** } /\* 4 \*/
 
 The essential rules are:
 
@@ -90,11 +92,11 @@ This paragraph is vertically centered.
 the style sheet looks like this:
 
 div.container5 {
-  height: 10em;
-  **display: flex;**
-  **align-items: center** }
+height: 10em;
+**display: flex;**
+**align-items: center** }
 div.container5 p {
-  margin: 0 }
+margin: 0 }
 
 ## Centering vertically and horizontally in CSS level 3
 
@@ -111,16 +113,16 @@ The yellow background is there to show that the paragraph is indeed only as wide
 The style sheet is similar to the previous example with respect to the vertical centering. But we now move the element halfway across the container as well, with 'left: 50%', and at the same time move it leftwards by half its own width in the 'translate' transformation:
 
 div.container4 {
-    height: 10em;
-    position: relative }
+height: 10em;
+position: relative }
 div.container4 p {
-    margin: 0;
-    background: yellow;
-    position: absolute;
-    top: 50%;
-    **left: 50%;**
-    **margin-right: -50%;**
-    transform: translate(**\-50%,** -50%) }
+margin: 0;
+background: yellow;
+position: absolute;
+top: 50%;
+**left: 50%;**
+**margin-right: -50%;**
+transform: translate(**\-50%,** -50%) }
 
 The next example below explains why the 'margin-right: -50%' is needed.
 
@@ -129,12 +131,12 @@ When the CSS formatter supports 'flex', it's even easier:
 with this style sheet:
 
 div.container6 {
-  height: 10em;
-  display: flex;
-  align-items: center;
-  **justify-content: center** }
+height: 10em;
+display: flex;
+align-items: center;
+**justify-content: center** }
 div.container6 p {
-  margin: 0 }
+margin: 0 }
 
 i.e., the only addition is the 'justify-content: center'. Just like 'align-items' determines the vertical alignment of the container's contents, 'justify-content' determines the horizontal alignment. (It's actually a bit more complex, as their names suggest, but in a simple case that's how it works.) A side-effect of 'flex' is that the child element, the P in this case, is automatically made as small as possible.
 

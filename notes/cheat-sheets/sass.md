@@ -2,10 +2,10 @@
 language: sass
 filename: learnsass.scss
 contributors:
-  - ["Laura Kyle", "https://github.com/LauraNK"]
-  - ["Sean Corrales", "https://github.com/droidenator"]
-  - ["Kyle Mendes", "https://github.com/pink401k"]
-  - ["Keith Miyake", "https://github.com/kaymmm"]
+    - ['Laura Kyle', 'https://github.com/LauraNK']
+    - ['Sean Corrales', 'https://github.com/droidenator']
+    - ['Kyle Mendes', 'https://github.com/pink401k']
+    - ['Keith Miyake', 'https://github.com/kaymmm']
 ---
 
 Sass is a CSS extension language that adds features such as variables, nesting, mixins and more.
@@ -29,22 +29,22 @@ Use the '$' symbol to create a variable. */
 
 $primary-color: #a3a4ff;
 $secondary-color: #51527f;
-$body-font: "Roboto", sans-serif;
+$body-font: 'Roboto', sans-serif;
 
 /* You can use the variables throughout your stylesheet.
 Now if you want to change a color, you only have to make the change once. */
 
 body {
-  background-color: $primary-color;
-  color: $secondary-color;
-  font-family: $body-font;
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: $body-font;
 }
 
 /* This would compile to: */
 body {
-  background-color: #a3a4ff;
-  color: #51527f;
-  font-family: "Roboto", sans-serif;
+    background-color: #a3a4ff;
+    color: #51527f;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* This is much more maintainable than having to change the color
@@ -61,17 +61,17 @@ each time it appears throughout your stylesheet. */
 $debug: true !default;
 
 @mixin debugmode {
-  @if $debug {
-    @debug "Debug mode enabled";
+    @if $debug {
+        @debug 'Debug mode enabled';
 
-    display: inline-block;
-  } @else {
-    display: none;
-  }
+        display: inline-block;
+    } @else {
+        display: none;
+    }
 }
 
 .info {
-  @include debugmode;
+    @include debugmode;
 }
 
 /* If $debug is set to true, .info is displayed; if it's set to false then
@@ -81,7 +81,7 @@ Note: @debug will output debugging information to the command line.
 Useful for checking variables while debugging your SCSS. */
 
 .info {
-  display: inline-block;
+    display: inline-block;
 }
 
 /* @for is a control loop that iterates through a range of values.
@@ -90,42 +90,42 @@ There are two forms, "through" and "to". The former includes the last value,
 the latter stops at the last value. */
 
 @for $c from 1 to 4 {
-  div:nth-of-type(#{$c}) {
-    left: ($c - 1) * 900 / 3;
-  }
+    div:nth-of-type(#{$c}) {
+        left: ($c - 1) * 900 / 3;
+    }
 }
 
 @for $c from 1 through 3 {
-  .myclass-#{$c} {
-    color: rgb($c * 255 / 3, $c * 255 / 3, $c * 255 / 3);
-  }
+    .myclass-#{$c} {
+        color: rgb($c * 255 / 3, $c * 255 / 3, $c * 255 / 3);
+    }
 }
 
 /* Will compile to: */
 
 div:nth-of-type(1) {
-  left: 0;
+    left: 0;
 }
 
 div:nth-of-type(2) {
-  left: 300;
+    left: 300;
 }
 
 div:nth-of-type(3) {
-  left: 600;
+    left: 600;
 }
 
 .myclass-1 {
-  color: #555555;
+    color: #555555;
 }
 
 .myclass-2 {
-  color: #aaaaaa;
+    color: #aaaaaa;
 }
 
 .myclass-3 {
-  color: white;
-  // SASS automatically converts #FFFFFF to white
+    color: white;
+    // SASS automatically converts #FFFFFF to white
 }
 
 /* @while is very straightforward: */
@@ -134,34 +134,34 @@ $columns: 4;
 $column-width: 80px;
 
 @while $columns > 0 {
-  .col-#{$columns} {
-    width: $column-width;
-    left: $column-width * ($columns - 1);
-  }
+    .col-#{$columns} {
+        width: $column-width;
+        left: $column-width * ($columns - 1);
+    }
 
-  $columns: $columns - 1;
+    $columns: $columns - 1;
 }
 
 /* Will output the following CSS: */
 
 .col-4 {
-  width: 80px;
-  left: 240px;
+    width: 80px;
+    left: 240px;
 }
 
 .col-3 {
-  width: 80px;
-  left: 160px;
+    width: 80px;
+    left: 160px;
 }
 
 .col-2 {
-  width: 80px;
-  left: 80px;
+    width: 80px;
+    left: 80px;
 }
 
 .col-1 {
-  width: 80px;
-  left: 0px;
+    width: 80px;
+    left: 0px;
 }
 
 /* @each functions like @for, except using a list instead of ordinal values
@@ -171,29 +171,29 @@ delimiters. */
 $social-links: facebook twitter linkedin reddit;
 
 .social-links {
-  @each $sm in $social-links {
-    .icon-#{$sm} {
-      background-image: url("images/#{$sm}.png");
+    @each $sm in $social-links {
+        .icon-#{$sm} {
+            background-image: url('images/#{$sm}.png');
+        }
     }
-  }
 }
 
 /* Which will output: */
 
 .social-links .icon-facebook {
-  background-image: url("images/facebook.png");
+    background-image: url('images/facebook.png');
 }
 
 .social-links .icon-twitter {
-  background-image: url("images/twitter.png");
+    background-image: url('images/twitter.png');
 }
 
 .social-links .icon-linkedin {
-  background-image: url("images/linkedin.png");
+    background-image: url('images/linkedin.png');
 }
 
 .social-links .icon-reddit {
-  background-image: url("images/reddit.png");
+    background-image: url('images/reddit.png');
 }
 
 /* Mixins
@@ -205,56 +205,56 @@ element, you might want to store that code in a mixin.
 Use the '@mixin' directive, plus a name for your mixin. */
 
 @mixin center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 /* You can use the mixin with '@include' and the mixin name. */
 
 div {
-  @include center;
-  background-color: $primary-color;
+    @include center;
+    background-color: $primary-color;
 }
 
 /* Which would compile to: */
 div {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  background-color: #a3a4ff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #a3a4ff;
 }
 
 /* You can use mixins to create a shorthand property. */
 
 @mixin size($width, $height) {
-  width: $width;
-  height: $height;
+    width: $width;
+    height: $height;
 }
 
 /* Which you can invoke by passing width and height arguments. */
 
 .rectangle {
-  @include size(100px, 60px);
+    @include size(100px, 60px);
 }
 
 .square {
-  @include size(40px, 40px);
+    @include size(40px, 40px);
 }
 
 /* Compiles to: */
 .rectangle {
-  width: 100px;
-  height: 60px;
+    width: 100px;
+    height: 60px;
 }
 
 .square {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 /* Functions
@@ -266,21 +266,21 @@ div {
 /* Functions can be invoked by using their name and passing in the
    required arguments */
 body {
-  width: round(10.25px);
+    width: round(10.25px);
 }
 
 .footer {
-  background-color: fade_out(#000000, 0.25);
+    background-color: fade_out(#000000, 0.25);
 }
 
 /* Compiles to: */
 
 body {
-  width: 10px;
+    width: 10px;
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* You may also define your own functions. Functions are very similar to
@@ -294,27 +294,27 @@ body {
    and return the percentage */
 
 @function calculate-percentage($target-size, $parent-size) {
-  @return $target-size / $parent-size * 100%;
+    @return $target-size / $parent-size * 100%;
 }
 
 $main-content: calculate-percentage(600px, 960px);
 
 .main-content {
-  width: $main-content;
+    width: $main-content;
 }
 
 .sidebar {
-  width: calculate-percentage(300px, 960px);
+    width: calculate-percentage(300px, 960px);
 }
 
 /* Compiles to: */
 
 .main-content {
-  width: 62.5%;
+    width: 62.5%;
 }
 
 .sidebar {
-  width: 31.25%;
+    width: 31.25%;
 }
 
 /* Extend (Inheritance)
@@ -323,25 +323,25 @@ $main-content: calculate-percentage(600px, 960px);
 /* Extend is a way to share the properties of one selector with another. */
 
 .display {
-  @include size(5em, 5em);
-  border: 5px solid $secondary-color;
+    @include size(5em, 5em);
+    border: 5px solid $secondary-color;
 }
 
 .display-success {
-  @extend .display;
-  border-color: #22df56;
+    @extend .display;
+    border-color: #22df56;
 }
 
 /* Compiles to: */
 .display,
 .display-success {
-  width: 5em;
-  height: 5em;
-  border: 5px solid #51527f;
+    width: 5em;
+    height: 5em;
+    border: 5px solid #51527f;
 }
 
 .display-success {
-  border-color: #22df56;
+    border-color: #22df56;
 }
 
 /* Extending a CSS statement is preferable to creating a mixin
@@ -357,12 +357,12 @@ $main-content: calculate-percentage(600px, 960px);
 /* Sass allows you to nest selectors within selectors */
 
 ul {
-  list-style-type: none;
-  margin-top: 2em;
+    list-style-type: none;
+    margin-top: 2em;
 
-  li {
-    background-color: #ff0000;
-  }
+    li {
+        background-color: #ff0000;
+    }
 }
 
 /* '&' will be replaced by the parent selector. */
@@ -372,39 +372,39 @@ Best practices recommend going no more than 3 levels deep when nesting.
 For example: */
 
 ul {
-  list-style-type: none;
-  margin-top: 2em;
+    list-style-type: none;
+    margin-top: 2em;
 
-  li {
-    background-color: red;
+    li {
+        background-color: red;
 
-    &:hover {
-      background-color: blue;
+        &:hover {
+            background-color: blue;
+        }
+
+        a {
+            color: white;
+        }
     }
-
-    a {
-      color: white;
-    }
-  }
 }
 
 /* Compiles to: */
 
 ul {
-  list-style-type: none;
-  margin-top: 2em;
+    list-style-type: none;
+    margin-top: 2em;
 }
 
 ul li {
-  background-color: red;
+    background-color: red;
 }
 
 ul li:hover {
-  background-color: blue;
+    background-color: blue;
 }
 
 ul li a {
-  color: white;
+    color: white;
 }
 
 /* Partials and Imports
@@ -420,8 +420,8 @@ html,
 body,
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Sass offers @import which can be used to import partials into a file.
@@ -429,11 +429,11 @@ ol {
    another HTTP request to fetch the imported file. Sass takes the
    imported file and combines it with the compiled code. */
 
-@import "reset";
+@import 'reset';
 
 body {
-  font-size: 16px;
-  font-family: Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    font-family: Helvetica, Arial, Sans-serif;
 }
 
 /* Compiles to: */
@@ -442,13 +442,13 @@ html,
 body,
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-size: 16px;
-  font-family: Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    font-family: Helvetica, Arial, Sans-serif;
 }
 
 /* Placeholder Selectors
@@ -460,28 +460,28 @@ body {
    of '.' or '#'. Placeholders will not appear in the compiled CSS. */
 
 %content-window {
-  font-size: 14px;
-  padding: 10px;
-  color: #000;
-  border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+    border-radius: 4px;
 }
 
 .message-window {
-  @extend %content-window;
-  background-color: #0000ff;
+    @extend %content-window;
+    background-color: #0000ff;
 }
 
 /* Compiles to: */
 
 .message-window {
-  font-size: 14px;
-  padding: 10px;
-  color: #000;
-  border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+    border-radius: 4px;
 }
 
 .message-window {
-  background-color: #0000ff;
+    background-color: #0000ff;
 }
 
 /* Math Operations
@@ -501,37 +501,37 @@ $sidebar-size: $sidebar-content / $content-area * 100%;
 $gutter: 100% - ($main-size + $sidebar-size);
 
 body {
-  width: 100%;
+    width: 100%;
 }
 
 .main-content {
-  width: $main-size;
+    width: $main-size;
 }
 
 .sidebar {
-  width: $sidebar-size;
+    width: $sidebar-size;
 }
 
 .gutter {
-  width: $gutter;
+    width: $gutter;
 }
 
 /* Compiles to: */
 
 body {
-  width: 100%;
+    width: 100%;
 }
 
 .main-content {
-  width: 62.5%;
+    width: 62.5%;
 }
 
 .sidebar {
-  width: 31.25%;
+    width: 31.25%;
 }
 
 .gutter {
-  width: 6.25%;
+    width: 6.25%;
 }
 ```
 
@@ -553,5 +553,5 @@ Sass can be used in any project as long as you have a program to compile it into
 
 ## Further reading
 
-- [Official Documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
-- [The Sass Way](http://thesassway.com/) provides tutorials (beginner-advanced) and articles.
+-   [Official Documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
+-   [The Sass Way](http://thesassway.com/) provides tutorials (beginner-advanced) and articles.

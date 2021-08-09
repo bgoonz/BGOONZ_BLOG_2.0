@@ -1,17 +1,17 @@
 ---
 language: java
 contributors:
-  - ["Jake Prather", "https://github.com/JakeHP"]
-  - ["Jakukyo Friel", "https://weakish.github.io"]
-  - ["Madison Dickson", "https://github.com/mix3d"]
-  - ["Simon Morgan", "https://sjm.io/"]
-  - ["Zachary Ferguson", "https://github.com/zfergus2"]
-  - ["Cameron Schermerhorn", "https://github.com/cschermerhorn"]
-  - ["Rachel Stiyer", "https://github.com/rstiyer"]
-  - ["Michael Dähnert", "https://github.com/JaXt0r"]
-  - ["Rob Rose", "https://github.com/RobRoseKnows"]
-  - ["Sean Nam", "https://github.com/seannam"]
-  - ["Shawn M. Hanes", "https://github.com/smhanes15"]
+    - ['Jake Prather', 'https://github.com/JakeHP']
+    - ['Jakukyo Friel', 'https://weakish.github.io']
+    - ['Madison Dickson', 'https://github.com/mix3d']
+    - ['Simon Morgan', 'https://sjm.io/']
+    - ['Zachary Ferguson', 'https://github.com/zfergus2']
+    - ['Cameron Schermerhorn', 'https://github.com/cschermerhorn']
+    - ['Rachel Stiyer', 'https://github.com/rstiyer']
+    - ['Michael Dähnert', 'https://github.com/JaXt0r']
+    - ['Rob Rose', 'https://github.com/RobRoseKnows']
+    - ['Sean Nam', 'https://github.com/seannam']
+    - ['Shawn M. Hanes', 'https://github.com/smhanes15']
 filename: LearnJava.java
 ---
 
@@ -969,44 +969,44 @@ The links provided here below are just to get an understanding of the topic, fee
 
 **Official Oracle Guides**:
 
-- [Java Tutorial Trail from Sun / Oracle](https://docs.oracle.com/javase/tutorial/index.html)
+-   [Java Tutorial Trail from Sun / Oracle](https://docs.oracle.com/javase/tutorial/index.html)
 
-- [Java Access level modifiers](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
+-   [Java Access level modifiers](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
 
-- [Object-Oriented Programming Concepts](https://docs.oracle.com/javase/tutorial/java/concepts/index.html):
+-   [Object-Oriented Programming Concepts](https://docs.oracle.com/javase/tutorial/java/concepts/index.html):
 
-  - [Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
-  - [Polymorphism](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
-  - [Abstraction](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+    -   [Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
+    -   [Polymorphism](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
+    -   [Abstraction](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
 
-- [Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
+-   [Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
 
-- [Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
+-   [Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 
-- [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+-   [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
 
-- [Java Code Conventions](https://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
+-   [Java Code Conventions](https://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
 
-- New features in Java 8:
-  - [Lambda expressions (functional programming)](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
-  - [Date and time API (java.time package)](http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html)
+-   New features in Java 8:
+    -   [Lambda expressions (functional programming)](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
+    -   [Date and time API (java.time package)](http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html)
 
 **Online Practice and Tutorials**
 
-- [Learneroo.com - Learn Java](http://www.learneroo.com)
+-   [Learneroo.com - Learn Java](http://www.learneroo.com)
 
-- [Codingbat.com](http://codingbat.com/java)
+-   [Codingbat.com](http://codingbat.com/java)
 
-- [Codewars - Java Katas](https://www.codewars.com/?language=java)
+-   [Codewars - Java Katas](https://www.codewars.com/?language=java)
 
-- [University of Helsinki - Object-Oriented programming with Java](http://moocfi.github.io/courses/2013/programming-part-1/)
+-   [University of Helsinki - Object-Oriented programming with Java](http://moocfi.github.io/courses/2013/programming-part-1/)
 
 **Books**:
 
-- [Head First Java](http://www.headfirstlabs.com/books/hfjava/)
+-   [Head First Java](http://www.headfirstlabs.com/books/hfjava/)
 
-- [Thinking in Java](http://www.mindview.net/Books/TIJ/)
+-   [Thinking in Java](http://www.mindview.net/Books/TIJ/)
 
-- [Objects First with Java](https://www.amazon.com/Objects-First-Java-Practical-Introduction/dp/0132492660)
+-   [Objects First with Java](https://www.amazon.com/Objects-First-Java-Practical-Introduction/dp/0132492660)
 
-- [Java The Complete Reference](https://www.amazon.com/gp/product/0071606300)
+-   [Java The Complete Reference](https://www.amazon.com/gp/product/0071606300)

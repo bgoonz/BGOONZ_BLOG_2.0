@@ -2,10 +2,10 @@
 language: html
 filename: learnhtml.txt
 contributors:
-  - ["Christophe THOMAS", "https://github.com/WinChris"]
+    - ['Christophe THOMAS', 'https://github.com/WinChris']
 translators:
-  - ["Robert Steed", "https://github.com/robochat"]
-  - ["Dimitri Kokkonis", "https://github.com/kokkonisd"]
+    - ['Robert Steed', 'https://github.com/robochat']
+    - ['Dimitri Kokkonis', 'https://github.com/kokkonisd']
 ---
 
 HTML stands for HyperText Markup Language.
@@ -43,22 +43,20 @@ useful tips.
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Site</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <a href="http://codepen.io/anon/pen/xwjLbZ">
-      Come look at what this shows
-    </a>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-    <ul>
-      <li>This is an item in a non-enumerated list (bullet list)</li>
-      <li>This is another item</li>
-      <li>And this is the last item on the list</li>
-    </ul>
-  </body>
+    <head>
+        <title>My Site</title>
+    </head>
+    <body>
+        <h1>Hello, world!</h1>
+        <a href="http://codepen.io/anon/pen/xwjLbZ"> Come look at what this shows </a>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <ul>
+            <li>This is an item in a non-enumerated list (bullet list)</li>
+            <li>This is another item</li>
+            <li>And this is the last item on the list</li>
+        </ul>
+    </body>
 </html>
 
 <!--
@@ -68,7 +66,7 @@ useful tips.
 
 <!-- After this, it starts by opening an <html> tag. -->
 <html>
-  <!-- that will be closed at the end of the file with </html>. -->
+    <!-- that will be closed at the end of the file with </html>. -->
 </html>
 
 <!-- Nothing should appear after this final tag. -->
@@ -82,11 +80,11 @@ useful tips.
 -->
 
 <head>
-  <!--
+    <!--
 		The tag <title> indicates to the browser the title to show in browser
 		window's title bar and tab name.
 	-->
-  <title>My Site</title>
+    <title>My Site</title>
 </head>
 
 <!-- After the <head> section, we find the tag - <body> -->
@@ -94,30 +92,30 @@ useful tips.
 <!-- We must fill the body with the content to be displayed. -->
 
 <body>
-  <!-- The h1 tag creates a title. -->
-  <h1>Hello, world!</h1>
-  <!--
+    <!-- The h1 tag creates a title. -->
+    <h1>Hello, world!</h1>
+    <!--
 		There are also subtitles to <h1> from the most important (h2) to the most
 		precise (h6).
 	-->
 
-  <!-- a hyperlink to the url given by the attribute href="" -->
-  <a href="http://codepen.io/anon/pen/xwjLbZ"> Come look at what this shows </a>
+    <!-- a hyperlink to the url given by the attribute href="" -->
+    <a href="http://codepen.io/anon/pen/xwjLbZ"> Come look at what this shows </a>
 
-  <!-- The tag <p> lets us include text in the html page. -->
-  <p>This is a paragraph.</p>
-  <p>This is another paragraph.</p>
+    <!-- The tag <p> lets us include text in the html page. -->
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
 
-  <!-- The tag <ul> creates a bullet list. -->
-  <!--
+    <!-- The tag <ul> creates a bullet list. -->
+    <!--
 		To have a numbered list instead we would use <ol> giving 1. for the first
 		element, 2. for the second, etc.
 	-->
-  <ul>
-    <li>This is an item in a non-enumerated list (bullet list)</li>
-    <li>This is another item</li>
-    <li>And this is the last item on the list</li>
-  </ul>
+    <ul>
+        <li>This is an item in a non-enumerated list (bullet list)</li>
+        <li>This is another item</li>
+        <li>And this is the last item on the list</li>
+    </ul>
 </body>
 
 <!-- And that's it, creating an HTML file can be simple. -->
@@ -135,23 +133,23 @@ useful tips.
 
 <!-- We open a <table> element. -->
 <table>
-  <!-- <tr> allows us to create a row. -->
-  <tr>
-    <!-- <th> allows us to give a title to a table column. -->
-    <th>First Header</th>
-    <th>Second Header</th>
-  </tr>
+    <!-- <tr> allows us to create a row. -->
+    <tr>
+        <!-- <th> allows us to give a title to a table column. -->
+        <th>First Header</th>
+        <th>Second Header</th>
+    </tr>
 
-  <tr>
-    <!-- <td> allows us to create a table cell. -->
-    <td>first row, first column</td>
-    <td>first row, second column</td>
-  </tr>
+    <tr>
+        <!-- <td> allows us to create a table cell. -->
+        <td>first row, first column</td>
+        <td>first row, second column</td>
+    </tr>
 
-  <tr>
-    <td>second row, first column</td>
-    <td>second row, second column</td>
-  </tr>
+    <tr>
+        <td>second row, first column</td>
+        <td>second row, second column</td>
+    </tr>
 </table>
 ```
 
@@ -163,6 +161,6 @@ HTML is written in files ending with `.html` or `.htm`. The mime type is
 
 ## To Learn More
 
-- [wikipedia](https://en.wikipedia.org/wiki/HTML)
-- [HTML tutorial](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [W3School](http://www.w3schools.com/html/html_intro.asp)
+-   [wikipedia](https://en.wikipedia.org/wiki/HTML)
+-   [HTML tutorial](https://developer.mozilla.org/en-US/docs/Web/HTML)
+-   [W3School](http://www.w3schools.com/html/html_intro.asp)
