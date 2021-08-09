@@ -431,6 +431,7 @@ var _default = (pagePath, callback) => {
                 headComponents.unshift(
                     /*#__PURE__*/ React.createElement('style', {
                         'data-href': `${__PATH_PREFIX__}/${style.name}`,
+                        id: `gatsby-global-css`,
                         dangerouslySetInnerHTML: {
                             __html: fs.readFileSync(join(process.cwd(), `public`, style.name), `utf-8`)
                         }

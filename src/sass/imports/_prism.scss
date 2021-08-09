@@ -125,6 +125,9 @@ div.code-toolbar > .toolbar button {
     line-height: normal;
     overflow: visible;
     padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 div.code-toolbar > .toolbar a,

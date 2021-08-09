@@ -5,11 +5,7 @@ excerpt: >-
     it for your project.
 seo:
     title: Writing Files
-    description: >
-        Append to a file
-
-        A handy method to append content to the end of a file is fs.appendFile()
-        (and its fs.appendFileSync() counterpart):
+    description: This is the Writing Files page
     extra:
         - name: 'og:type'
           value: website

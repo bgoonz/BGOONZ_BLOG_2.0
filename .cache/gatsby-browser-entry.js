@@ -51,7 +51,7 @@ useStaticQuery(graphql\`${query}\`);
 `);
     }
 
-    if (context?.[query]?.data) {
+    if (context[query]?.data) {
         return context[query].data;
     } else {
         throw new Error(
@@ -78,11 +78,6 @@ function graphql() {
     );
 }
 
-function unstable_collectionGraphql() {
-    // TODO: Strip this out of the component and throw error if it gets called
-    return null;
-}
-
 export {
     Link,
     withAssetPrefix,
@@ -98,7 +93,5 @@ export {
     StaticQuery,
     PageRenderer,
     useStaticQuery,
-    prefetchPathname,
-    // Experimental API
-    unstable_collectionGraphql
+    prefetchPathname
 };

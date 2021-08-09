@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
   Why commonjs and not ES imports/exports?
@@ -21,9 +21,7 @@
    a) unnecesairly slow down compilation for all other files (if we just apply it everywhere)
    b) or complicate babel-loader configuration with overwrite specifically for this file
 */
-const {
-  createContext
-} = require(`react`);
+const { createContext } = require(`react`);
 
 module.exports = createContext;
 module.exports.default = createContext;

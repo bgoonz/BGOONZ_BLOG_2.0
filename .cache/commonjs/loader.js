@@ -201,7 +201,11 @@ class BaseLoader {
         const pagePath = (0, _findPath.findPath)(rawPath);
 
         if (this.pageDataDb.has(pagePath)) {
-            return Promise.resolve(this.pageDataDb.get(pagePath));
+            const pageData = this.pageDataDb.get(pagePath);
+
+            if (process.env.BUILD_STAGE !== `develop` || !pageData.stale) {
+                return Promise.resolve(pageData);
+            }
         }
 
         return this.fetchPageDataJson({
@@ -221,7 +225,10 @@ class BaseLoader {
 
         if (this.pageDb.has(pagePath)) {
             const page = this.pageDb.get(pagePath);
-            return Promise.resolve(page.payload);
+
+            if (process.env.BUILD_STAGE !== `develop` || !page.payload.stale) {
+                return Promise.resolve(page.payload);
+            }
         }
 
         if (this.inFlightDb.has(pagePath)) {
@@ -373,7 +380,15 @@ class BaseLoader {
     }
 
     doPrefetch(pagePath) {
-        throw new Error(`doPrefetch not implemented`);
+        const pageDataUrl = createPageDataUrl(pagePath);
+        return (0, _prefetch.default)(pageDataUrl, {
+            crossOrigin: `anonymous`,
+            as: `fetch`
+        }).then(() =>
+            // This was just prefetched, so will return a response from
+            // the cache instead of making another request to the server
+            this.loadPageDataJson(pagePath)
+        );
     }
 
     hovering(rawPath) {
@@ -444,26 +459,16 @@ class ProdLoader extends BaseLoader {
     }
 
     doPrefetch(pagePath) {
-        const pageDataUrl = createPageDataUrl(pagePath);
-        return (0, _prefetch.default)(pageDataUrl, {
-            crossOrigin: `anonymous`,
-            as: `fetch`
-        })
-            .then(() =>
-                // This was just prefetched, so will return a response from
-                // the cache instead of making another request to the server
-                this.loadPageDataJson(pagePath)
-            )
-            .then((result) => {
-                if (result.status !== PageResourceStatus.Success) {
-                    return Promise.resolve();
-                }
+        return super.doPrefetch(pagePath).then((result) => {
+            if (result.status !== PageResourceStatus.Success) {
+                return Promise.resolve();
+            }
 
-                const pageData = result.payload;
-                const chunkName = pageData.componentChunkName;
-                const componentUrls = createComponentUrls(chunkName);
-                return Promise.all(componentUrls.map(_prefetch.default)).then(() => pageData);
-            });
+            const pageData = result.payload;
+            const chunkName = pageData.componentChunkName;
+            const componentUrls = createComponentUrls(chunkName);
+            return Promise.all(componentUrls.map(_prefetch.default)).then(() => pageData);
+        });
     }
 
     loadPageDataJson(rawPath) {
@@ -526,5 +531,9 @@ var _default = publicLoader;
 exports.default = _default;
 
 function getStaticQueryResults() {
-    return instance.staticQueryDb;
+    if (instance) {
+        return instance.staticQueryDb;
+    } else {
+        return {};
+    }
 }
