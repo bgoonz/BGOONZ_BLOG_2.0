@@ -3,15 +3,13 @@ title: Site README
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
-
-
 
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
@@ -507,8 +505,6 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 <details>
   <summary><h1>Click to see React Components (src folder)!</h1></summary>
-  
-  
 
 
 <details>
@@ -524,8 +520,9 @@ import Icon from './Icon';
 
 export default class ActionLink extends React.Component {
 render() {
-let action = _.get(this.props, 'action', null);
+let action = \_.get(this.props, 'action', null);
 return (
+
 <Link
 to={withPrefix(_.get(action, 'url', null))}
 {...(_.get(action, 'new_window', null) ? { target: '\_blank' } : null)}

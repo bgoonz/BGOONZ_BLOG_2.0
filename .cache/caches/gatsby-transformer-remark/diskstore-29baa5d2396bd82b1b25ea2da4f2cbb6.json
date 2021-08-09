@@ -1,1 +1,744 @@
-{"expireTime":9007200882940885000,"key":"transformer-remark-markdown-ast-2d72cc4f7390ede576616bb3b7ef3fa9--","val":{"type":"root","children":[{"type":"heading","depth":2,"children":[{"type":"text","value":"Introduction to npm","position":{"start":{"line":2,"column":4,"offset":4},"end":{"line":2,"column":23,"offset":23},"indent":[]}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":23,"offset":23},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"npm","position":{"start":{"line":4,"column":1,"offset":25},"end":{"line":4,"column":6,"offset":30},"indent":[]}},{"type":"text","value":" is the standard package manager for Node.js.","position":{"start":{"line":4,"column":6,"offset":30},"end":{"line":4,"column":51,"offset":75},"indent":[]}}],"position":{"start":{"line":4,"column":1,"offset":25},"end":{"line":4,"column":51,"offset":75},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"In January 2017 over 350000 packages were reported being listed in the npm registry, making it the biggest single language code repository on Earth, and you can be sure there is a package for (almost!) everything.","position":{"start":{"line":6,"column":1,"offset":77},"end":{"line":6,"column":214,"offset":290},"indent":[]}}],"position":{"start":{"line":6,"column":1,"offset":77},"end":{"line":6,"column":214,"offset":290},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"It started as a way to download and manage dependencies of Node.js packages, but it has since become a tool used also in frontend JavaScript.","position":{"start":{"line":8,"column":1,"offset":292},"end":{"line":8,"column":142,"offset":433},"indent":[]}}],"position":{"start":{"line":8,"column":1,"offset":292},"end":{"line":8,"column":142,"offset":433},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"There are many things that ","position":{"start":{"line":10,"column":1,"offset":435},"end":{"line":10,"column":28,"offset":462},"indent":[]}},{"type":"inlineCode","value":"npm","position":{"start":{"line":10,"column":28,"offset":462},"end":{"line":10,"column":33,"offset":467},"indent":[]}},{"type":"text","value":" does.","position":{"start":{"line":10,"column":33,"offset":467},"end":{"line":10,"column":39,"offset":473},"indent":[]}}],"position":{"start":{"line":10,"column":1,"offset":435},"end":{"line":10,"column":39,"offset":473},"indent":[]}},{"type":"blockquote","children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://yarnpkg.com/en/","children":[{"type":"strong","children":[{"type":"text","value":"Yarn","position":{"start":{"line":12,"column":6,"offset":480},"end":{"line":12,"column":10,"offset":484},"indent":[]}}],"position":{"start":{"line":12,"column":4,"offset":478},"end":{"line":12,"column":12,"offset":486},"indent":[]}}],"position":{"start":{"line":12,"column":3,"offset":477},"end":{"line":12,"column":38,"offset":512},"indent":[]}},{"type":"text","value":" is an alternative to npm. Make sure you check it out as well.","position":{"start":{"line":12,"column":38,"offset":512},"end":{"line":12,"column":100,"offset":574},"indent":[]}}],"position":{"start":{"line":12,"column":3,"offset":477},"end":{"line":12,"column":100,"offset":574},"indent":[]}}],"position":{"start":{"line":12,"column":1,"offset":475},"end":{"line":12,"column":100,"offset":574},"indent":[]}},{"type":"heading","depth":2,"children":[{"type":"text","value":"Downloads","position":{"start":{"line":14,"column":4,"offset":579},"end":{"line":14,"column":13,"offset":588},"indent":[]}}],"position":{"start":{"line":14,"column":1,"offset":576},"end":{"line":14,"column":13,"offset":588},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"npm","position":{"start":{"line":16,"column":1,"offset":590},"end":{"line":16,"column":6,"offset":595},"indent":[]}},{"type":"text","value":" manages downloads of dependencies of your project.","position":{"start":{"line":16,"column":6,"offset":595},"end":{"line":16,"column":57,"offset":646},"indent":[]}}],"position":{"start":{"line":16,"column":1,"offset":590},"end":{"line":16,"column":57,"offset":646},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Installing all dependencies","position":{"start":{"line":18,"column":5,"offset":652},"end":{"line":18,"column":32,"offset":679},"indent":[]}}],"position":{"start":{"line":18,"column":1,"offset":648},"end":{"line":18,"column":32,"offset":679},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"If a project has a ","position":{"start":{"line":20,"column":1,"offset":681},"end":{"line":20,"column":20,"offset":700},"indent":[]}},{"type":"inlineCode","value":"package.json","position":{"start":{"line":20,"column":20,"offset":700},"end":{"line":20,"column":34,"offset":714},"indent":[]}},{"type":"text","value":" file, by running","position":{"start":{"line":20,"column":34,"offset":714},"end":{"line":20,"column":51,"offset":731},"indent":[]}}],"position":{"start":{"line":20,"column":1,"offset":681},"end":{"line":20,"column":51,"offset":731},"indent":[]}},{"type":"code","lang":"bash","meta":null,"value":"npm install","position":{"start":{"line":22,"column":1,"offset":733},"end":{"line":24,"column":4,"offset":756},"indent":[1,1]}},{"type":"paragraph","children":[{"type":"text","value":"it will install everything the project needs, in the ","position":{"start":{"line":26,"column":1,"offset":758},"end":{"line":26,"column":54,"offset":811},"indent":[]}},{"type":"inlineCode","value":"node_modules","position":{"start":{"line":26,"column":54,"offset":811},"end":{"line":26,"column":68,"offset":825},"indent":[]}},{"type":"text","value":" folder, creating it if it's not existing already.","position":{"start":{"line":26,"column":68,"offset":825},"end":{"line":26,"column":118,"offset":875},"indent":[]}}],"position":{"start":{"line":26,"column":1,"offset":758},"end":{"line":26,"column":118,"offset":875},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Installing a single package","position":{"start":{"line":28,"column":5,"offset":881},"end":{"line":28,"column":32,"offset":908},"indent":[]}}],"position":{"start":{"line":28,"column":1,"offset":877},"end":{"line":28,"column":32,"offset":908},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"You can also install a specific package by running","position":{"start":{"line":30,"column":1,"offset":910},"end":{"line":30,"column":51,"offset":960},"indent":[]}}],"position":{"start":{"line":30,"column":1,"offset":910},"end":{"line":30,"column":51,"offset":960},"indent":[]}},{"type":"code","lang":"bash","meta":null,"value":"npm install <package-name>","position":{"start":{"line":32,"column":1,"offset":962},"end":{"line":34,"column":4,"offset":1000},"indent":[1,1]}},{"type":"paragraph","children":[{"type":"text","value":"Often you'll see more flags added to this command:","position":{"start":{"line":36,"column":1,"offset":1002},"end":{"line":36,"column":51,"offset":1052},"indent":[]}}],"position":{"start":{"line":36,"column":1,"offset":1002},"end":{"line":36,"column":51,"offset":1052},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"--save","position":{"start":{"line":38,"column":5,"offset":1058},"end":{"line":38,"column":13,"offset":1066},"indent":[]}},{"type":"text","value":" installs and adds the entry to the ","position":{"start":{"line":38,"column":13,"offset":1066},"end":{"line":38,"column":49,"offset":1102},"indent":[]}},{"type":"inlineCode","value":"package.json","position":{"start":{"line":38,"column":49,"offset":1102},"end":{"line":38,"column":63,"offset":1116},"indent":[]}},{"type":"text","value":" file ","position":{"start":{"line":38,"column":63,"offset":1116},"end":{"line":38,"column":69,"offset":1122},"indent":[]}},{"type":"emphasis","children":[{"type":"text","value":"dependencies","position":{"start":{"line":38,"column":70,"offset":1123},"end":{"line":38,"column":82,"offset":1135},"indent":[]}}],"position":{"start":{"line":38,"column":69,"offset":1122},"end":{"line":38,"column":83,"offset":1136},"indent":[]}}],"position":{"start":{"line":38,"column":5,"offset":1058},"end":{"line":38,"column":83,"offset":1136},"indent":[]}}],"position":{"start":{"line":38,"column":1,"offset":1054},"end":{"line":38,"column":83,"offset":1136},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"--save-dev","position":{"start":{"line":39,"column":5,"offset":1141},"end":{"line":39,"column":17,"offset":1153},"indent":[]}},{"type":"text","value":" installs and adds the entry to the ","position":{"start":{"line":39,"column":17,"offset":1153},"end":{"line":39,"column":53,"offset":1189},"indent":[]}},{"type":"inlineCode","value":"package.json","position":{"start":{"line":39,"column":53,"offset":1189},"end":{"line":39,"column":67,"offset":1203},"indent":[]}},{"type":"text","value":" file ","position":{"start":{"line":39,"column":67,"offset":1203},"end":{"line":39,"column":73,"offset":1209},"indent":[]}},{"type":"emphasis","children":[{"type":"text","value":"devDependencies","position":{"start":{"line":39,"column":74,"offset":1210},"end":{"line":39,"column":89,"offset":1225},"indent":[]}}],"position":{"start":{"line":39,"column":73,"offset":1209},"end":{"line":39,"column":90,"offset":1226},"indent":[]}}],"position":{"start":{"line":39,"column":5,"offset":1141},"end":{"line":39,"column":90,"offset":1226},"indent":[]}}],"position":{"start":{"line":39,"column":1,"offset":1137},"end":{"line":39,"column":90,"offset":1226},"indent":[]}}],"position":{"start":{"line":38,"column":1,"offset":1054},"end":{"line":39,"column":90,"offset":1226},"indent":[1]}},{"type":"paragraph","children":[{"type":"text","value":"The difference is mainly that devDependencies are usually development tools, like a testing library, while ","position":{"start":{"line":41,"column":1,"offset":1228},"end":{"line":41,"column":108,"offset":1335},"indent":[]}},{"type":"inlineCode","value":"dependencies","position":{"start":{"line":41,"column":108,"offset":1335},"end":{"line":41,"column":122,"offset":1349},"indent":[]}},{"type":"text","value":" are bundled with the app in production.","position":{"start":{"line":41,"column":122,"offset":1349},"end":{"line":41,"column":162,"offset":1389},"indent":[]}}],"position":{"start":{"line":41,"column":1,"offset":1228},"end":{"line":41,"column":162,"offset":1389},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Updating packages","position":{"start":{"line":43,"column":5,"offset":1395},"end":{"line":43,"column":22,"offset":1412},"indent":[]}}],"position":{"start":{"line":43,"column":1,"offset":1391},"end":{"line":43,"column":22,"offset":1412},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Updating is also made easy, by running","position":{"start":{"line":45,"column":1,"offset":1414},"end":{"line":45,"column":39,"offset":1452},"indent":[]}}],"position":{"start":{"line":45,"column":1,"offset":1414},"end":{"line":45,"column":39,"offset":1452},"indent":[]}},{"type":"code","lang":"console","meta":null,"value":"npm update","position":{"start":{"line":47,"column":1,"offset":1454},"end":{"line":49,"column":4,"offset":1479},"indent":[1,1]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"npm","position":{"start":{"line":51,"column":1,"offset":1481},"end":{"line":51,"column":6,"offset":1486},"indent":[]}},{"type":"text","value":" will check all packages for a newer version that satisfies your versioning constraints.","position":{"start":{"line":51,"column":6,"offset":1486},"end":{"line":51,"column":94,"offset":1574},"indent":[]}}],"position":{"start":{"line":51,"column":1,"offset":1481},"end":{"line":51,"column":94,"offset":1574},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"You can specify a single package to update as well:","position":{"start":{"line":53,"column":1,"offset":1576},"end":{"line":53,"column":52,"offset":1627},"indent":[]}}],"position":{"start":{"line":53,"column":1,"offset":1576},"end":{"line":53,"column":52,"offset":1627},"indent":[]}},{"type":"code","lang":"console","meta":null,"value":"npm update <package-name>","position":{"start":{"line":55,"column":1,"offset":1629},"end":{"line":57,"column":4,"offset":1669},"indent":[1,1]}},{"type":"heading","depth":2,"children":[{"type":"text","value":"Versioning","position":{"start":{"line":59,"column":4,"offset":1674},"end":{"line":59,"column":14,"offset":1684},"indent":[]}}],"position":{"start":{"line":59,"column":1,"offset":1671},"end":{"line":59,"column":14,"offset":1684},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"In addition to plain downloads, ","position":{"start":{"line":61,"column":1,"offset":1686},"end":{"line":61,"column":33,"offset":1718},"indent":[]}},{"type":"inlineCode","value":"npm","position":{"start":{"line":61,"column":33,"offset":1718},"end":{"line":61,"column":38,"offset":1723},"indent":[]}},{"type":"text","value":" also manages ","position":{"start":{"line":61,"column":38,"offset":1723},"end":{"line":61,"column":52,"offset":1737},"indent":[]}},{"type":"strong","children":[{"type":"text","value":"versioning","position":{"start":{"line":61,"column":54,"offset":1739},"end":{"line":61,"column":64,"offset":1749},"indent":[]}}],"position":{"start":{"line":61,"column":52,"offset":1737},"end":{"line":61,"column":66,"offset":1751},"indent":[]}},{"type":"text","value":", so you can specify any specific version of a package, or require a version higher or lower than what you need.","position":{"start":{"line":61,"column":66,"offset":1751},"end":{"line":61,"column":178,"offset":1863},"indent":[]}}],"position":{"start":{"line":61,"column":1,"offset":1686},"end":{"line":61,"column":178,"offset":1863},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Many times you'll find that a library is only compatible with a major release of another library.","position":{"start":{"line":63,"column":1,"offset":1865},"end":{"line":63,"column":98,"offset":1962},"indent":[]}}],"position":{"start":{"line":63,"column":1,"offset":1865},"end":{"line":63,"column":98,"offset":1962},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Or a bug in the latest release of a lib, still unfixed, is causing an issue.","position":{"start":{"line":65,"column":1,"offset":1964},"end":{"line":65,"column":77,"offset":2040},"indent":[]}}],"position":{"start":{"line":65,"column":1,"offset":1964},"end":{"line":65,"column":77,"offset":2040},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Specifying an explicit version of a library also helps to keep everyone on the same exact version of a package, so that the whole team runs the same version until the ","position":{"start":{"line":67,"column":1,"offset":2042},"end":{"line":67,"column":168,"offset":2209},"indent":[]}},{"type":"inlineCode","value":"package.json","position":{"start":{"line":67,"column":168,"offset":2209},"end":{"line":67,"column":182,"offset":2223},"indent":[]}},{"type":"text","value":" file is updated.","position":{"start":{"line":67,"column":182,"offset":2223},"end":{"line":67,"column":199,"offset":2240},"indent":[]}}],"position":{"start":{"line":67,"column":1,"offset":2042},"end":{"line":67,"column":199,"offset":2240},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"In all those cases, versioning helps a lot, and ","position":{"start":{"line":69,"column":1,"offset":2242},"end":{"line":69,"column":49,"offset":2290},"indent":[]}},{"type":"inlineCode","value":"npm","position":{"start":{"line":69,"column":49,"offset":2290},"end":{"line":69,"column":54,"offset":2295},"indent":[]}},{"type":"text","value":" follows the semantic versioning (semver) standard.","position":{"start":{"line":69,"column":54,"offset":2295},"end":{"line":69,"column":105,"offset":2346},"indent":[]}}],"position":{"start":{"line":69,"column":1,"offset":2242},"end":{"line":69,"column":105,"offset":2346},"indent":[]}},{"type":"heading","depth":2,"children":[{"type":"text","value":"Running Tasks","position":{"start":{"line":71,"column":4,"offset":2351},"end":{"line":71,"column":17,"offset":2364},"indent":[]}}],"position":{"start":{"line":71,"column":1,"offset":2348},"end":{"line":71,"column":17,"offset":2364},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"The package.json file supports a format for specifying command line tasks that can be run by using","position":{"start":{"line":73,"column":1,"offset":2366},"end":{"line":73,"column":99,"offset":2464},"indent":[]}}],"position":{"start":{"line":73,"column":1,"offset":2366},"end":{"line":73,"column":99,"offset":2464},"indent":[]}},{"type":"code","lang":"console","meta":null,"value":"npm run <task-name>","position":{"start":{"line":75,"column":1,"offset":2466},"end":{"line":77,"column":4,"offset":2500},"indent":[1,1]}},{"type":"paragraph","children":[{"type":"text","value":"For example:","position":{"start":{"line":79,"column":1,"offset":2502},"end":{"line":79,"column":13,"offset":2514},"indent":[]}}],"position":{"start":{"line":79,"column":1,"offset":2502},"end":{"line":79,"column":13,"offset":2514},"indent":[]}},{"type":"code","lang":"json","meta":null,"value":"{\n    \"scripts\": {\n        \"start-dev\": \"node lib/server-development\",\n        \"start\": \"node lib/server-production\"\n    }\n}","position":{"start":{"line":81,"column":1,"offset":2516},"end":{"line":88,"column":4,"offset":2652},"indent":[1,1,1,1,1,1,1]}},{"type":"paragraph","children":[{"type":"text","value":"It's very common to use this feature to run Webpack:","position":{"start":{"line":90,"column":1,"offset":2654},"end":{"line":90,"column":53,"offset":2706},"indent":[]}}],"position":{"start":{"line":90,"column":1,"offset":2654},"end":{"line":90,"column":53,"offset":2706},"indent":[]}},{"type":"code","lang":"json","meta":null,"value":"{\n    \"scripts\": {\n        \"watch\": \"webpack --watch --progress --colors --config webpack.conf.js\",\n        \"dev\": \"webpack --progress --colors --config webpack.conf.js\",\n        \"prod\": \"NODE_ENV=production webpack -p --config webpack.conf.js\"\n    }\n}","position":{"start":{"line":92,"column":1,"offset":2708},"end":{"line":100,"column":4,"offset":2972},"indent":[1,1,1,1,1,1,1,1]}},{"type":"paragraph","children":[{"type":"text","value":"So instead of typing those long commands, which are easy to forget or mistype, you can run","position":{"start":{"line":102,"column":1,"offset":2974},"end":{"line":102,"column":91,"offset":3064},"indent":[]}}],"position":{"start":{"line":102,"column":1,"offset":2974},"end":{"line":102,"column":91,"offset":3064},"indent":[]}},{"type":"code","lang":"console","meta":null,"value":"$ npm run watch\n$ npm run dev\n$ npm run prod","position":{"start":{"line":104,"column":1,"offset":3066},"end":{"line":108,"column":4,"offset":3125},"indent":[1,1,1,1]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":109,"column":1,"offset":3126}}}}
+{
+    "expireTime": 9007200882940885000,
+    "key": "transformer-remark-markdown-ast-2d72cc4f7390ede576616bb3b7ef3fa9--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Introduction to npm",
+                        "position": { "start": { "line": 2, "column": 4, "offset": 4 }, "end": { "line": 2, "column": 23, "offset": 23 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 23, "offset": 23 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "inlineCode",
+                        "value": "npm",
+                        "position": { "start": { "line": 4, "column": 1, "offset": 25 }, "end": { "line": 4, "column": 6, "offset": 30 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is the standard package manager for Node.js.",
+                        "position": { "start": { "line": 4, "column": 6, "offset": 30 }, "end": { "line": 4, "column": 51, "offset": 75 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 25 }, "end": { "line": 4, "column": 51, "offset": 75 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In January 2017 over 350000 packages were reported being listed in the npm registry, making it the biggest single language code repository on Earth, and you can be sure there is a package for (almost!) everything.",
+                        "position": { "start": { "line": 6, "column": 1, "offset": 77 }, "end": { "line": 6, "column": 214, "offset": 290 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 6, "column": 1, "offset": 77 }, "end": { "line": 6, "column": 214, "offset": 290 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "It started as a way to download and manage dependencies of Node.js packages, but it has since become a tool used also in frontend JavaScript.",
+                        "position": { "start": { "line": 8, "column": 1, "offset": 292 }, "end": { "line": 8, "column": 142, "offset": 433 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 8, "column": 1, "offset": 292 }, "end": { "line": 8, "column": 142, "offset": 433 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "There are many things that ",
+                        "position": { "start": { "line": 10, "column": 1, "offset": 435 }, "end": { "line": 10, "column": 28, "offset": 462 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "npm",
+                        "position": { "start": { "line": 10, "column": 28, "offset": 462 }, "end": { "line": 10, "column": 33, "offset": 467 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " does.",
+                        "position": { "start": { "line": 10, "column": 33, "offset": 467 }, "end": { "line": 10, "column": 39, "offset": 473 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 435 }, "end": { "line": 10, "column": 39, "offset": 473 }, "indent": [] }
+            },
+            {
+                "type": "blockquote",
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "children": [
+                            {
+                                "type": "link",
+                                "title": null,
+                                "url": "https://yarnpkg.com/en/",
+                                "children": [
+                                    {
+                                        "type": "strong",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Yarn",
+                                                "position": {
+                                                    "start": { "line": 12, "column": 6, "offset": 480 },
+                                                    "end": { "line": 12, "column": 10, "offset": 484 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 12, "column": 4, "offset": 478 },
+                                            "end": { "line": 12, "column": 12, "offset": 486 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 12, "column": 3, "offset": 477 },
+                                    "end": { "line": 12, "column": 38, "offset": 512 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "value": " is an alternative to npm. Make sure you check it out as well.",
+                                "position": {
+                                    "start": { "line": 12, "column": 38, "offset": 512 },
+                                    "end": { "line": 12, "column": 100, "offset": 574 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 12, "column": 3, "offset": 477 }, "end": { "line": 12, "column": 100, "offset": 574 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 12, "column": 1, "offset": 475 }, "end": { "line": 12, "column": 100, "offset": 574 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Downloads",
+                        "position": { "start": { "line": 14, "column": 4, "offset": 579 }, "end": { "line": 14, "column": 13, "offset": 588 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 14, "column": 1, "offset": 576 }, "end": { "line": 14, "column": 13, "offset": 588 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "inlineCode",
+                        "value": "npm",
+                        "position": { "start": { "line": 16, "column": 1, "offset": 590 }, "end": { "line": 16, "column": 6, "offset": 595 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " manages downloads of dependencies of your project.",
+                        "position": { "start": { "line": 16, "column": 6, "offset": 595 }, "end": { "line": 16, "column": 57, "offset": 646 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 16, "column": 1, "offset": 590 }, "end": { "line": 16, "column": 57, "offset": 646 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Installing all dependencies",
+                        "position": { "start": { "line": 18, "column": 5, "offset": 652 }, "end": { "line": 18, "column": 32, "offset": 679 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 18, "column": 1, "offset": 648 }, "end": { "line": 18, "column": 32, "offset": 679 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "If a project has a ",
+                        "position": { "start": { "line": 20, "column": 1, "offset": 681 }, "end": { "line": 20, "column": 20, "offset": 700 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "package.json",
+                        "position": { "start": { "line": 20, "column": 20, "offset": 700 }, "end": { "line": 20, "column": 34, "offset": 714 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " file, by running",
+                        "position": { "start": { "line": 20, "column": 34, "offset": 714 }, "end": { "line": 20, "column": 51, "offset": 731 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 20, "column": 1, "offset": 681 }, "end": { "line": 20, "column": 51, "offset": 731 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": "bash",
+                "meta": null,
+                "value": "npm install",
+                "position": { "start": { "line": 22, "column": 1, "offset": 733 }, "end": { "line": 24, "column": 4, "offset": 756 }, "indent": [1, 1] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "it will install everything the project needs, in the ",
+                        "position": { "start": { "line": 26, "column": 1, "offset": 758 }, "end": { "line": 26, "column": 54, "offset": 811 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "node_modules",
+                        "position": { "start": { "line": 26, "column": 54, "offset": 811 }, "end": { "line": 26, "column": 68, "offset": 825 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " folder, creating it if it's not existing already.",
+                        "position": { "start": { "line": 26, "column": 68, "offset": 825 }, "end": { "line": 26, "column": 118, "offset": 875 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 26, "column": 1, "offset": 758 }, "end": { "line": 26, "column": 118, "offset": 875 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Installing a single package",
+                        "position": { "start": { "line": 28, "column": 5, "offset": 881 }, "end": { "line": 28, "column": 32, "offset": 908 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 28, "column": 1, "offset": 877 }, "end": { "line": 28, "column": 32, "offset": 908 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can also install a specific package by running",
+                        "position": { "start": { "line": 30, "column": 1, "offset": 910 }, "end": { "line": 30, "column": 51, "offset": 960 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 30, "column": 1, "offset": 910 }, "end": { "line": 30, "column": 51, "offset": 960 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": "bash",
+                "meta": null,
+                "value": "npm install <package-name>",
+                "position": { "start": { "line": 32, "column": 1, "offset": 962 }, "end": { "line": 34, "column": 4, "offset": 1000 }, "indent": [1, 1] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Often you'll see more flags added to this command:",
+                        "position": { "start": { "line": 36, "column": 1, "offset": 1002 }, "end": { "line": 36, "column": 51, "offset": 1052 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 36, "column": 1, "offset": 1002 }, "end": { "line": 36, "column": 51, "offset": 1052 }, "indent": [] }
+            },
+            {
+                "type": "list",
+                "ordered": false,
+                "start": null,
+                "spread": false,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "--save",
+                                        "position": {
+                                            "start": { "line": 38, "column": 5, "offset": 1058 },
+                                            "end": { "line": 38, "column": 13, "offset": 1066 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " installs and adds the entry to the ",
+                                        "position": {
+                                            "start": { "line": 38, "column": 13, "offset": 1066 },
+                                            "end": { "line": 38, "column": 49, "offset": 1102 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "package.json",
+                                        "position": {
+                                            "start": { "line": 38, "column": 49, "offset": 1102 },
+                                            "end": { "line": 38, "column": 63, "offset": 1116 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " file ",
+                                        "position": {
+                                            "start": { "line": 38, "column": 63, "offset": 1116 },
+                                            "end": { "line": 38, "column": 69, "offset": 1122 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "emphasis",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "dependencies",
+                                                "position": {
+                                                    "start": { "line": 38, "column": 70, "offset": 1123 },
+                                                    "end": { "line": 38, "column": 82, "offset": 1135 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 38, "column": 69, "offset": 1122 },
+                                            "end": { "line": 38, "column": 83, "offset": 1136 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 38, "column": 5, "offset": 1058 },
+                                    "end": { "line": 38, "column": 83, "offset": 1136 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 38, "column": 1, "offset": 1054 }, "end": { "line": 38, "column": 83, "offset": 1136 }, "indent": [] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "--save-dev",
+                                        "position": {
+                                            "start": { "line": 39, "column": 5, "offset": 1141 },
+                                            "end": { "line": 39, "column": 17, "offset": 1153 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " installs and adds the entry to the ",
+                                        "position": {
+                                            "start": { "line": 39, "column": 17, "offset": 1153 },
+                                            "end": { "line": 39, "column": 53, "offset": 1189 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "package.json",
+                                        "position": {
+                                            "start": { "line": 39, "column": 53, "offset": 1189 },
+                                            "end": { "line": 39, "column": 67, "offset": 1203 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " file ",
+                                        "position": {
+                                            "start": { "line": 39, "column": 67, "offset": 1203 },
+                                            "end": { "line": 39, "column": 73, "offset": 1209 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "emphasis",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "devDependencies",
+                                                "position": {
+                                                    "start": { "line": 39, "column": 74, "offset": 1210 },
+                                                    "end": { "line": 39, "column": 89, "offset": 1225 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 39, "column": 73, "offset": 1209 },
+                                            "end": { "line": 39, "column": 90, "offset": 1226 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 39, "column": 5, "offset": 1141 },
+                                    "end": { "line": 39, "column": 90, "offset": 1226 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 39, "column": 1, "offset": 1137 }, "end": { "line": 39, "column": 90, "offset": 1226 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 38, "column": 1, "offset": 1054 }, "end": { "line": 39, "column": 90, "offset": 1226 }, "indent": [1] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The difference is mainly that devDependencies are usually development tools, like a testing library, while ",
+                        "position": { "start": { "line": 41, "column": 1, "offset": 1228 }, "end": { "line": 41, "column": 108, "offset": 1335 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "dependencies",
+                        "position": {
+                            "start": { "line": 41, "column": 108, "offset": 1335 },
+                            "end": { "line": 41, "column": 122, "offset": 1349 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " are bundled with the app in production.",
+                        "position": {
+                            "start": { "line": 41, "column": 122, "offset": 1349 },
+                            "end": { "line": 41, "column": 162, "offset": 1389 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 41, "column": 1, "offset": 1228 }, "end": { "line": 41, "column": 162, "offset": 1389 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Updating packages",
+                        "position": { "start": { "line": 43, "column": 5, "offset": 1395 }, "end": { "line": 43, "column": 22, "offset": 1412 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 43, "column": 1, "offset": 1391 }, "end": { "line": 43, "column": 22, "offset": 1412 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Updating is also made easy, by running",
+                        "position": { "start": { "line": 45, "column": 1, "offset": 1414 }, "end": { "line": 45, "column": 39, "offset": 1452 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 45, "column": 1, "offset": 1414 }, "end": { "line": 45, "column": 39, "offset": 1452 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": "console",
+                "meta": null,
+                "value": "npm update",
+                "position": { "start": { "line": 47, "column": 1, "offset": 1454 }, "end": { "line": 49, "column": 4, "offset": 1479 }, "indent": [1, 1] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "inlineCode",
+                        "value": "npm",
+                        "position": { "start": { "line": 51, "column": 1, "offset": 1481 }, "end": { "line": 51, "column": 6, "offset": 1486 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " will check all packages for a newer version that satisfies your versioning constraints.",
+                        "position": { "start": { "line": 51, "column": 6, "offset": 1486 }, "end": { "line": 51, "column": 94, "offset": 1574 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 51, "column": 1, "offset": 1481 }, "end": { "line": 51, "column": 94, "offset": 1574 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can specify a single package to update as well:",
+                        "position": { "start": { "line": 53, "column": 1, "offset": 1576 }, "end": { "line": 53, "column": 52, "offset": 1627 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 53, "column": 1, "offset": 1576 }, "end": { "line": 53, "column": 52, "offset": 1627 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": "console",
+                "meta": null,
+                "value": "npm update <package-name>",
+                "position": { "start": { "line": 55, "column": 1, "offset": 1629 }, "end": { "line": 57, "column": 4, "offset": 1669 }, "indent": [1, 1] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Versioning",
+                        "position": { "start": { "line": 59, "column": 4, "offset": 1674 }, "end": { "line": 59, "column": 14, "offset": 1684 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 59, "column": 1, "offset": 1671 }, "end": { "line": 59, "column": 14, "offset": 1684 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In addition to plain downloads, ",
+                        "position": { "start": { "line": 61, "column": 1, "offset": 1686 }, "end": { "line": 61, "column": 33, "offset": 1718 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "npm",
+                        "position": { "start": { "line": 61, "column": 33, "offset": 1718 }, "end": { "line": 61, "column": 38, "offset": 1723 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " also manages ",
+                        "position": { "start": { "line": 61, "column": 38, "offset": 1723 }, "end": { "line": 61, "column": 52, "offset": 1737 }, "indent": [] }
+                    },
+                    {
+                        "type": "strong",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "versioning",
+                                "position": {
+                                    "start": { "line": 61, "column": 54, "offset": 1739 },
+                                    "end": { "line": 61, "column": 64, "offset": 1749 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 61, "column": 52, "offset": 1737 }, "end": { "line": 61, "column": 66, "offset": 1751 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", so you can specify any specific version of a package, or require a version higher or lower than what you need.",
+                        "position": {
+                            "start": { "line": 61, "column": 66, "offset": 1751 },
+                            "end": { "line": 61, "column": 178, "offset": 1863 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 61, "column": 1, "offset": 1686 }, "end": { "line": 61, "column": 178, "offset": 1863 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Many times you'll find that a library is only compatible with a major release of another library.",
+                        "position": { "start": { "line": 63, "column": 1, "offset": 1865 }, "end": { "line": 63, "column": 98, "offset": 1962 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 63, "column": 1, "offset": 1865 }, "end": { "line": 63, "column": 98, "offset": 1962 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Or a bug in the latest release of a lib, still unfixed, is causing an issue.",
+                        "position": { "start": { "line": 65, "column": 1, "offset": 1964 }, "end": { "line": 65, "column": 77, "offset": 2040 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 65, "column": 1, "offset": 1964 }, "end": { "line": 65, "column": 77, "offset": 2040 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Specifying an explicit version of a library also helps to keep everyone on the same exact version of a package, so that the whole team runs the same version until the ",
+                        "position": { "start": { "line": 67, "column": 1, "offset": 2042 }, "end": { "line": 67, "column": 168, "offset": 2209 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "package.json",
+                        "position": {
+                            "start": { "line": 67, "column": 168, "offset": 2209 },
+                            "end": { "line": 67, "column": 182, "offset": 2223 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " file is updated.",
+                        "position": {
+                            "start": { "line": 67, "column": 182, "offset": 2223 },
+                            "end": { "line": 67, "column": 199, "offset": 2240 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 67, "column": 1, "offset": 2042 }, "end": { "line": 67, "column": 199, "offset": 2240 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In all those cases, versioning helps a lot, and ",
+                        "position": { "start": { "line": 69, "column": 1, "offset": 2242 }, "end": { "line": 69, "column": 49, "offset": 2290 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "npm",
+                        "position": { "start": { "line": 69, "column": 49, "offset": 2290 }, "end": { "line": 69, "column": 54, "offset": 2295 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " follows the semantic versioning (semver) standard.",
+                        "position": {
+                            "start": { "line": 69, "column": 54, "offset": 2295 },
+                            "end": { "line": 69, "column": 105, "offset": 2346 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 69, "column": 1, "offset": 2242 }, "end": { "line": 69, "column": 105, "offset": 2346 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Running Tasks",
+                        "position": { "start": { "line": 71, "column": 4, "offset": 2351 }, "end": { "line": 71, "column": 17, "offset": 2364 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 71, "column": 1, "offset": 2348 }, "end": { "line": 71, "column": 17, "offset": 2364 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The package.json file supports a format for specifying command line tasks that can be run by using",
+                        "position": { "start": { "line": 73, "column": 1, "offset": 2366 }, "end": { "line": 73, "column": 99, "offset": 2464 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 73, "column": 1, "offset": 2366 }, "end": { "line": 73, "column": 99, "offset": 2464 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": "console",
+                "meta": null,
+                "value": "npm run <task-name>",
+                "position": { "start": { "line": 75, "column": 1, "offset": 2466 }, "end": { "line": 77, "column": 4, "offset": 2500 }, "indent": [1, 1] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "For example:",
+                        "position": { "start": { "line": 79, "column": 1, "offset": 2502 }, "end": { "line": 79, "column": 13, "offset": 2514 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 79, "column": 1, "offset": 2502 }, "end": { "line": 79, "column": 13, "offset": 2514 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": "json",
+                "meta": null,
+                "value": "{\n    \"scripts\": {\n        \"start-dev\": \"node lib/server-development\",\n        \"start\": \"node lib/server-production\"\n    }\n}",
+                "position": {
+                    "start": { "line": 81, "column": 1, "offset": 2516 },
+                    "end": { "line": 88, "column": 4, "offset": 2652 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "It's very common to use this feature to run Webpack:",
+                        "position": { "start": { "line": 90, "column": 1, "offset": 2654 }, "end": { "line": 90, "column": 53, "offset": 2706 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 90, "column": 1, "offset": 2654 }, "end": { "line": 90, "column": 53, "offset": 2706 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": "json",
+                "meta": null,
+                "value": "{\n    \"scripts\": {\n        \"watch\": \"webpack --watch --progress --colors --config webpack.conf.js\",\n        \"dev\": \"webpack --progress --colors --config webpack.conf.js\",\n        \"prod\": \"NODE_ENV=production webpack -p --config webpack.conf.js\"\n    }\n}",
+                "position": {
+                    "start": { "line": 92, "column": 1, "offset": 2708 },
+                    "end": { "line": 100, "column": 4, "offset": 2972 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "So instead of typing those long commands, which are easy to forget or mistype, you can run",
+                        "position": {
+                            "start": { "line": 102, "column": 1, "offset": 2974 },
+                            "end": { "line": 102, "column": 91, "offset": 3064 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 102, "column": 1, "offset": 2974 }, "end": { "line": 102, "column": 91, "offset": 3064 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": "console",
+                "meta": null,
+                "value": "$ npm run watch\n$ npm run dev\n$ npm run prod",
+                "position": {
+                    "start": { "line": 104, "column": 1, "offset": 3066 },
+                    "end": { "line": 108, "column": 4, "offset": 3125 },
+                    "indent": [1, 1, 1, 1]
+                }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 109, "column": 1, "offset": 3126 } }
+    }
+}
