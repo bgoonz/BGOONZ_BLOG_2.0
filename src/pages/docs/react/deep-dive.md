@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Deep Dive Into React
 weight: 0
 excerpt: lorem-ipsum
 seo:
