@@ -43,7 +43,6 @@ template: docs
 <br>
 <br>
 
-
 <br>
 <h1>   Paste To Markdown </h1>
 <br>
