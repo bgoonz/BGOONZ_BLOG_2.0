@@ -506,7 +506,6 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 <details>
   <summary><h1>Click to see React Components (src folder)!</h1></summary>
 
-
 <details>
   <summary>ActionLink!</summary>
   
