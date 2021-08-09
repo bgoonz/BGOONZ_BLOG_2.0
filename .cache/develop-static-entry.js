@@ -1,116 +1,127 @@
-import React from 'react';
-import { renderToStaticMarkup } from 'react-dom/server';
-import { merge } from 'lodash';
-import apiRunner from './api-runner-ssr';
+/* global BROWSER_ESM_ONLY */
+import React from "react"
+import { renderToStaticMarkup } from "react-dom/server"
+import { merge } from "lodash"
+import { apiRunner } from "./api-runner-ssr"
 // import testRequireError from "./test-require-error"
 // For some extremely mysterious reason, webpack adds the above module *after*
 // this module so that when this code runs, testRequireError is undefined.
 // So in the meantime, we'll just inline it.
 const testRequireError = (moduleName, err) => {
-    const regex = new RegExp(`Error: Cannot find module\\s.${moduleName}`);
-    const firstLine = err.toString().split(`\n`)[0];
-    return regex.test(firstLine);
-};
-
-let Html;
-try {
-    Html = require(`../src/html`);
-} catch (err) {
-    if (testRequireError(`../src/html`, err)) {
-        Html = require(`./default-html`);
-    } else {
-        console.log(`There was an error requiring "src/html.js"\n\n`, err, `\n\n`);
-        process.exit();
-    }
+  const regex = new RegExp(`Error: Cannot find module\\s.${moduleName}`)
+  const firstLine = err.toString().split(`\n`)[0]
+  return regex.test(firstLine)
 }
 
-Html = Html && Html.__esModule ? Html.default : Html;
+let Html
+try {
+  Html = require(`../src/html`)
+} catch (err) {
+  if (testRequireError(`../src/html`, err)) {
+    Html = require(`./default-html`)
+  } else {
+    console.log(`There was an error requiring "src/html.js"\n\n`, err, `\n\n`)
+    process.exit()
+  }
+}
 
-export default (pagePath, callback) => {
-    let headComponents = [<meta key="environment" name="note" content="environment=development" />];
-    let htmlAttributes = {};
-    let bodyAttributes = {};
-    let preBodyComponents = [];
-    let postBodyComponents = [];
-    let bodyProps = {};
-    let htmlStr;
+Html = Html && Html.__esModule ? Html.default : Html
 
-    const setHeadComponents = (components) => {
-        headComponents = headComponents.concat(components);
-    };
+export default ({ pagePath }) => {
+  let headComponents = [
+    <meta key="environment" name="note" content="environment=development" />,
+  ]
+  let htmlAttributes = {}
+  let bodyAttributes = {}
+  let preBodyComponents = []
+  let postBodyComponents = []
+  let bodyProps = {}
+  let htmlStr
 
-    const setHtmlAttributes = (attributes) => {
-        htmlAttributes = merge(htmlAttributes, attributes);
-    };
+  const setHeadComponents = components => {
+    headComponents = headComponents.concat(components)
+  }
 
-    const setBodyAttributes = (attributes) => {
-        bodyAttributes = merge(bodyAttributes, attributes);
-    };
+  const setHtmlAttributes = attributes => {
+    htmlAttributes = merge(htmlAttributes, attributes)
+  }
 
-    const setPreBodyComponents = (components) => {
-        preBodyComponents = preBodyComponents.concat(components);
-    };
+  const setBodyAttributes = attributes => {
+    bodyAttributes = merge(bodyAttributes, attributes)
+  }
 
-    const setPostBodyComponents = (components) => {
-        postBodyComponents = postBodyComponents.concat(components);
-    };
+  const setPreBodyComponents = components => {
+    preBodyComponents = preBodyComponents.concat(components)
+  }
 
-    const setBodyProps = (props) => {
-        bodyProps = merge({}, bodyProps, props);
-    };
+  const setPostBodyComponents = components => {
+    postBodyComponents = postBodyComponents.concat(components)
+  }
 
-    const getHeadComponents = () => headComponents;
+  const setBodyProps = props => {
+    bodyProps = merge({}, bodyProps, props)
+  }
 
-    const replaceHeadComponents = (components) => {
-        headComponents = components;
-    };
+  const getHeadComponents = () => headComponents
 
-    const getPreBodyComponents = () => preBodyComponents;
+  const replaceHeadComponents = components => {
+    headComponents = components
+  }
 
-    const replacePreBodyComponents = (components) => {
-        preBodyComponents = components;
-    };
+  const getPreBodyComponents = () => preBodyComponents
 
-    const getPostBodyComponents = () => postBodyComponents;
+  const replacePreBodyComponents = components => {
+    preBodyComponents = components
+  }
 
-    const replacePostBodyComponents = (components) => {
-        postBodyComponents = components;
-    };
+  const getPostBodyComponents = () => postBodyComponents
 
-    apiRunner(`onRenderBody`, {
-        setHeadComponents,
-        setHtmlAttributes,
-        setBodyAttributes,
-        setPreBodyComponents,
-        setPostBodyComponents,
-        setBodyProps,
-        pathname: pagePath
-    });
+  const replacePostBodyComponents = components => {
+    postBodyComponents = components
+  }
 
-    apiRunner(`onPreRenderHTML`, {
-        getHeadComponents,
-        replaceHeadComponents,
-        getPreBodyComponents,
-        replacePreBodyComponents,
-        getPostBodyComponents,
-        replacePostBodyComponents,
-        pathname: pagePath
-    });
+  apiRunner(`onRenderBody`, {
+    setHeadComponents,
+    setHtmlAttributes,
+    setBodyAttributes,
+    setPreBodyComponents,
+    setPostBodyComponents,
+    setBodyProps,
+    pathname: pagePath,
+  })
 
-    const htmlElement = React.createElement(Html, {
-        ...bodyProps,
-        body: ``,
-        headComponents: headComponents.concat([<script key={`io`} src="/socket.io/socket.io.js" />]),
-        htmlAttributes,
-        bodyAttributes,
-        preBodyComponents,
-        postBodyComponents: postBodyComponents.concat([
-            <script key={`polyfill`} src="/polyfill.js" noModule={true} />,
-            <script key={`commons`} src="/commons.js" />
-        ])
-    });
-    htmlStr = renderToStaticMarkup(htmlElement);
-    htmlStr = `<!DOCTYPE html>${htmlStr}`;
+  apiRunner(`onPreRenderHTML`, {
+    getHeadComponents,
+    replaceHeadComponents,
+    getPreBodyComponents,
+    replacePreBodyComponents,
+    getPostBodyComponents,
+    replacePostBodyComponents,
+    pathname: pagePath,
+  })
 
-    callback(null, htmlStr);
-};
+  const htmlElement = React.createElement(Html, {
+    ...bodyProps,
+    body: ``,
+    headComponents: headComponents.concat([
+      <script key={`io`} src="/socket.io/socket.io.js" />,
+      <link key="styles" rel="stylesheet" href="/commons.css" />,
+    ]),
+    htmlAttributes,
+    bodyAttributes,
+    preBodyComponents,
+    postBodyComponents: postBodyComponents.concat(
+      [
+        !BROWSER_ESM_ONLY && (
+          <script key={`polyfill`} src="/polyfill.js" noModule={true} />
+        ),
+        <script key={`framework`} src="/framework.js" />,
+        <script key={`commons`} src="/commons.js" />,
+      ].filter(Boolean)
+    ),
+  })
+  htmlStr = renderToStaticMarkup(htmlElement)
+  htmlStr = `<!DOCTYPE html>${htmlStr}`
+
+  return htmlStr
+}

@@ -1,73 +1,36 @@
-const overlayPackage =
-    process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? require(`react-error-overlay`) : require(`@pmmmwh/react-refresh-webpack-plugin/overlay`);
-
-const ErrorOverlay = {
-    showCompileError: process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? overlayPackage.reportBuildError : overlayPackage.showCompileError,
-    clearCompileError: process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? overlayPackage.dismissBuildError : overlayPackage.clearCompileError
-};
-
-if (process.env.GATSBY_HOT_LOADER !== `fast-refresh`) {
-    // Report runtime errors
-    overlayPackage.startReportingRuntimeErrors({
-        onError: () => {},
-        filename: `/commons.js`
-    });
-    overlayPackage.setEditorHandler((errorLocation) =>
-        window.fetch(
-            `/__open-stack-frame-in-editor?fileName=` +
-                window.encodeURIComponent(errorLocation.fileName) +
-                `&lineNumber=` +
-                window.encodeURIComponent(errorLocation.lineNumber || 1)
-        )
-    );
-}
-
-const errorMap = {};
-
-function flat(arr) {
-    return Array.prototype.flat ? arr.flat() : [].concat(...arr);
-}
+const errorMap = {}
 
 const handleErrorOverlay = () => {
-    const errors = Object.values(errorMap);
-    let errorStringsToDisplay = [];
-    if (errors.length > 0) {
-        errorStringsToDisplay = flat(errors)
-            .map((error) => {
-                if (typeof error === `string`) {
-                    return error;
-                } else if (typeof error === `object`) {
-                    const errorStrBuilder = [error.text];
+  const errors = Object.values(errorMap)
+  let errorsToDisplay = []
+  if (errors.length > 0) {
+    errorsToDisplay = errors.flatMap(e => e).filter(Boolean)
+  }
 
-                    if (error.filePath) {
-                        errorStrBuilder.push(`File: ${error.filePath}`);
-                    }
+  if (errorsToDisplay.length > 0) {
+    window._gatsbyEvents.push([
+      `FAST_REFRESH`,
+      {
+        action: `SHOW_GRAPHQL_ERRORS`,
+        payload: errorsToDisplay,
+      },
+    ])
+  } else {
+    window._gatsbyEvents.push([
+      `FAST_REFRESH`,
+      { action: `CLEAR_GRAPHQL_ERRORS` },
+    ])
+  }
+}
 
-                    return errorStrBuilder.join(`\n\n`);
-                }
-
-                return null;
-            })
-            .filter(Boolean);
-    }
-
-    if (errorStringsToDisplay.length > 0) {
-        ErrorOverlay.showCompileError(errorStringsToDisplay.join(`\n\n`));
-    } else {
-        ErrorOverlay.clearCompileError();
-    }
-};
-
-export const clearError = (errorID) => {
-    delete errorMap[errorID];
-    handleErrorOverlay();
-};
+export const clearError = errorID => {
+  delete errorMap[errorID]
+  handleErrorOverlay()
+}
 
 export const reportError = (errorID, error) => {
-    if (error) {
-        errorMap[errorID] = error;
-    }
-    handleErrorOverlay();
-};
-
-export { errorMap };
+  if (error) {
+    errorMap[errorID] = error
+  }
+  handleErrorOverlay()
+}
