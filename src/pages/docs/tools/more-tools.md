@@ -19,10 +19,6 @@ template: docs
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-
-
-
-
 <br>
 <h1>     Resource Archive           </h1>
 <br>

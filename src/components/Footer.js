@@ -54,7 +54,7 @@ export default class Footer extends React.Component {
                                             </table>
                                         </center>
                                         <form
-                                            style={{ margin: '0px', marginTop: '4px' }}
+                                            style={{ margin: '0px', marginTop: '2px' }}
                                             action="https://search.freefind.com/find.html"
                                             method="get"
                                             acceptCharset="utf-8"
@@ -91,6 +91,10 @@ export default class Footer extends React.Component {
                             </tbody>
                         </table>
                     </center>
+                </div>
+                <div>
+                <script async src="https://cse.google.com/cse.js?cx=b9b42c05e18ccf4ab"></script>
+<div class="gcse-search"></div>
                 </div>
                 <div className="inner">
                     <div className="site-footer-inside">
