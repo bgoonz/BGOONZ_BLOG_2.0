@@ -13,7 +13,37 @@ Then this is meant for you!
 Let's get started!
 
 <<<<<<< HEAD
+* * *
 
+> Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html).
+> 
+> While I find many git tutorials on the internet to be too focused on what to do instead of how things work, the most invaluable resource for both (and source for this tutorial!) are the [git Book](https://git-scm.com/book/en/v2) and [Reference page](https://git-scm.com/docs).
+> 
+> So if you're still interested when you're done here, go check those out! I do hope the somewhat different concept of this tutorial will aid you in understanding all the other git features detailed there.
+
+* * *
+
+*   [Overview](#overview)
+*   [Getting a _Remote Repository_](#getting-a-_remote-repository_)
+    *   [Adding new things](#adding-new-things)
+*   [Making changes](#making-changes)
+*   [Branching](#branching)
+*   [Merging](#merging)
+    *   [Fast-Forward merging](#fast-forward-merging)
+    *   [Merging divergent branches](#merging-divergent-branches)
+    *   [Resolving conflicts](#resolving-conflicts)
+*   [Rebasing](#rebasing)
+    *   [Resolving conflicts](#resolving-conflicts-1)
+*   [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
+*   [Cherry-picking](#cherry-picking)
+*   [Rewriting history](#rewriting-history)
+*   [Reading history](#reading-history)
+
+* * *
+
+[](#overview)Overview
+---------------------
+=======
 ---
 
 > Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html).
@@ -43,38 +73,7 @@ Let's get started!
 ---
 
 ## [](#overview)Overview
-
-## =======
-
-> Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html).
->
-> While I find many git tutorials on the internet to be too focused on what to do instead of how things work, the most invaluable resource for both (and source for this tutorial!) are the [git Book](https://git-scm.com/book/en/v2) and [Reference page](https://git-scm.com/docs).
->
-> So if you're still interested when you're done here, go check those out! I do hope the somewhat different concept of this tutorial will aid you in understanding all the other git features detailed there.
-
----
-
--   [Overview](#overview)
--   [Getting a _Remote Repository_](#getting-a-_remote-repository_)
-    -   [Adding new things](#adding-new-things)
--   [Making changes](#making-changes)
--   [Branching](#branching)
--   [Merging](#merging)
-    -   [Fast-Forward merging](#fast-forward-merging)
-    -   [Merging divergent branches](#merging-divergent-branches)
-    -   [Resolving conflicts](#resolving-conflicts)
--   [Rebasing](#rebasing)
-    -   [Resolving conflicts](#resolving-conflicts-1)
--   [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
--   [Cherry-picking](#cherry-picking)
--   [Rewriting history](#rewriting-history)
--   [Reading history](#reading-history)
-
----
-
-## [](#overview)Overview
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 In the picture below you see four boxes. One of them stands alone, while the other three are grouped together in what I'll call your _Development Environment_.
 
@@ -90,17 +89,15 @@ Just go to your home folder, or where ever you like to put your projects. You do
 
 <<<<<<< HEAD
 [](#getting-a-remote-repository)Getting a _Remote Repository_
-
----
+-------------------------------------------------------------
 
 Now we want to grab a _Remote Repository_ and put what's in it onto your machine.
 
-I'd suggest we use this one ([https://github.com/UnseenWizzard/git_training.git](https://github.com/UnseenWizzard/git_training.git) if you're not already reading this on github).
+I'd suggest we use this one ([https://github.com/UnseenWizzard/git\_training.git](https://github.com/UnseenWizzard/git_training.git) if you're not already reading this on github).
 
 > To do that I can use `git clone https://github.com/UnseenWizzard/git_training.git`
->
-> =======
-
+> 
+=======
 ## [](#getting-a-remote-repository)Getting a _Remote Repository_
 
 Now we want to grab a _Remote Repository_ and put what's in it onto your machine.
@@ -109,8 +106,8 @@ I'd suggest we use this one ([https://github.com/UnseenWizzard/git_training.git]
 
 > To do that I can use `git clone https://github.com/UnseenWizzard/git_training.git`
 >
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > But as following this tutorial will need you to get the changes you make in your _Dev Environment_ back to the _Remote Repository_, and github doesn't just allow anyone to do that to anyone's repo, you'll best create a _fork_ of it right now. There's a button to do that on the top right of this page.
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+> But as following this tutorial will need you to get the changes you make in your _Dev Environment_ back to the _Remote Repository_, and github doesn't just allow anyone to do that to anyone's repo, you'll best create a _fork_ of it right now. There's a button to do that on the top right of this page.
 
 Now that you have a copy of my _Remote Repository_ of your own, it's time to get that onto your machine.
 
@@ -125,14 +122,10 @@ What `git clone` also does, is create a new folder wherever you called it. There
 
 <<<<<<< HEAD
 [](#adding-new-things)Adding new things
-
----
-
+---------------------------------------
 =======
-
 ## [](#adding-new-things)Adding new things
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 Someone already put a file into the _Remote Repository_. It's `Alice.txt`, and kind of lonely there. Let's create a new file and call it `Bob.txt`.
 
@@ -166,14 +159,10 @@ Once you run `git push` the changes will be sent to the _Remote Repository_. In 
 
 <<<<<<< HEAD
 [](#making-changes)Making changes
-
----
-
+---------------------------------
 =======
-
 ## [](#making-changes)Making changes
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 So far we've only added a new file. Obviously the more interesting part of version control is changing files.
 
@@ -188,8 +177,7 @@ In that state the changes are only in your _Working Directory_.
 If you want to see what has changed in your _Working Directory_ you can run `git diff`, and right now see this:  
 =======
 If you want to see what has changed in your _Working Directory_ you can run `git diff`, and right now see this:
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
     diff --git a/Bob.txt b/Bob.txt
     index e69de29..3ed0e1b 100644
@@ -197,12 +185,10 @@ If you want to see what has changed in your _Working Directory_ you can run `git
     +++ b/Bob.txt
     @@ -0,0 +1 @@
     +Hi!! I'm Bob. I'm new here.
-
 <<<<<<< HEAD
-
+    
 =======
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 Go ahead and `git add Bob.txt` like you've done before. As we know, this moves your changes to the _Staging Area_.
 
@@ -218,8 +204,7 @@ If we now run `git status` we'll see that there's two changes, the one we alread
 We can have a look at the `git diff` between the _Working Directory_ and what we've already moved to the _Staging Area_, to show what has changed since we last felt ready to _stage_ our changes for a _commit_.  
 =======
 We can have a look at the `git diff` between the _Working Directory_ and what we've already moved to the _Staging Area_, to show what has changed since we last felt ready to _stage_ our changes for a _commit_.
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
     diff --git a/Bob.txt b/Bob.txt
     index 8eb57c4..3ed0e1b 100644
@@ -228,12 +213,10 @@ We can have a look at the `git diff` between the _Working Directory_ and what we
     @@ -1 +1 @@
     -Hi!! I'm Bob. I'm new here.
     +Hi! I'm Bob. I'm new here.
-
 <<<<<<< HEAD
-
+    
 =======
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 As the change is what we wanted, let's `git add Bob.txt` to stage the current state of the file.
 
@@ -251,14 +234,44 @@ If we have a look at the `git log` we'll not only see a list of all the commits 
 Right now the `git log` looks something like this:  
 =======
 Right now the `git log` looks something like this:
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
     commit 87a4ad48d55e5280aa608cd79e8bce5e13f318dc (HEAD -> master)
     Author: {YOU} <{YOUR EMAIL}>
     Date:   Sun Jan 27 14:02:48 2019 +0100
-
 <<<<<<< HEAD
+    
+        Add text to Bob
+    
+    commit 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e (origin/master, origin/HEAD)
+    Author: {YOU} <{YOUR EMAIL}>
+    Date:   Sun Jan 27 13:35:41 2019 +0100
+    
+        Add Bob
+    
+    commit 71a6a9b299b21e68f9b0c61247379432a0b6007c 
+    Author: UnseenWizzard <nicola.riedmann@live.de>
+    Date:   Fri Jan 25 20:06:57 2019 +0100
+    
+        Add Alice
+    
+    commit ddb869a0c154f6798f0caae567074aecdfa58c46
+    Author: Nico Riedmann <UnseenWizzard@users.noreply.github.com>
+    Date:   Fri Jan 25 19:25:23 2019 +0100
+    
+        Add Tutorial Text
+    
+          Changes to the tutorial are all squashed into this commit on master, to keep the log free of clutter that distracts from the tutorial
+    
+          See the tutorial_wip branch for the actual commit history
+    
+
+In there we see a few interesting things:
+
+*   The first two commits are made by me.
+*   Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
+*   The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
+=======
 
         Add text to Bob
 
@@ -288,38 +301,8 @@ In there we see a few interesting things:
 
 -   The first two commits are made by me.
 -   Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
--   # The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
-
-            Add text to Bob
-
-        commit 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e (origin/master, origin/HEAD)
-        Author: {YOU} <{YOUR EMAIL}>
-        Date:   Sun Jan 27 13:35:41 2019 +0100
-
-            Add Bob
-
-        commit 71a6a9b299b21e68f9b0c61247379432a0b6007c
-        Author: UnseenWizzard <nicola.riedmann@live.de>
-        Date:   Fri Jan 25 20:06:57 2019 +0100
-
-            Add Alice
-
-        commit ddb869a0c154f6798f0caae567074aecdfa58c46
-        Author: Nico Riedmann <UnseenWizzard@users.noreply.github.com>
-        Date:   Fri Jan 25 19:25:23 2019 +0100
-
-            Add Tutorial Text
-
-              Changes to the tutorial are all squashed into this commit on master, to keep the log free of clutter that distracts from the tutorial
-
-              See the tutorial_wip branch for the actual commit history
-
-In there we see a few interesting things:
-
--   The first two commits are made by me.
--   Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
 -   The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 > Note that the actual commit hashes will be different for you. If you want to know how exactly git arrives at those revision IDs have a look at [this interesting article](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html) .
 
@@ -335,14 +318,10 @@ Now that we're sure we made the change we wanted, go ahead and `git push`.
 
 <<<<<<< HEAD
 [](#branching)Branching
-
----
-
+-----------------------
 =======
-
 ## [](#branching)Branching
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 Another thing that makes git great, is the fact that working with branches is really easy and integral part of how you work with git.
 
@@ -383,12 +362,12 @@ If that sounds complicated the diagrams below will hopefully help to clear thing
 To switch to our new branch you will have to use `git checkout change_alice`. What this does is simply to move the _HEAD_ to the branch you specify.
 
 > As you'll usually want switch to a branch right after creating it, there is the convenient `-b` option available for the `checkout` command, which allows you to just directly `checkout` a _new_ branch, so you don't have to create it beforehand.
-> <<<<<<< HEAD
+<<<<<<< HEAD
+> 
+=======
 >
-> =======
->
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > So to create and switch to our `change_alice` branch, we could also just have called `git checkout -b change_alice`.
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+> So to create and switch to our `change_alice` branch, we could also just have called `git checkout -b change_alice`.
 
 [![State after after switching branch](https://res.cloudinary.com/practicaldev/image/fetch/s--9Kp5zCqP--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/UnseenWizzard/git_training/master/img/checkout_branch.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--9Kp5zCqP--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/UnseenWizzard/git_training/master/img/checkout_branch.png)
 
@@ -398,13 +377,13 @@ Now you can `add` and `commit` the change to `Alice.txt` just like we did on the
 There's just one thing you can't do yet. Try to `git push` your changes to the _Remote Repository_.
 
 <<<<<<< HEAD
-You'll see the following error and - as git is always ready to help - a suggestion how to resolve the issue:
+You'll see the following error and - as git is always ready to help - a suggestion how to resolve the issue:  
 
     fatal: The current branch change_alice has no upstream branch.
     To push the current branch and set the remote as upstream, use
-
-        git push --set-upstream origin change_alice
-
+    
+        git push --set-upstream origin change_alice 
+    
 =======
 You'll see the following error and - as git is always ready to help - a suggestion how to resolve the issue:
 
@@ -412,19 +391,17 @@ You'll see the following error and - as git is always ready to help - a suggesti
     To push the current branch and set the remote as upstream, use
 
         git push --set-upstream origin change_alice
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 But we don't just want to blindly do that. We're here to understand what's actually going on. So what are _upstream branches_ and _remotes_?
 
 Remember when we `cloned` the _Remote Repository_ a while ago? At that point it didn't only contain this tutorial and `Alice.txt` but actually two branches.
 
 <<<<<<< HEAD
-The _master_ we just went ahead and started working on, and one I called "tutorial_wip" on which I commit all the changes I make to this tutorial.
+The _master_ we just went ahead and started working on, and one I called "tutorial\_wip" on which I commit all the changes I make to this tutorial.
 =======
 The _master_ we just went ahead and started working on, and one I called "tutorial_wip" on which I commit all the changes I make to this tutorial.
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 When we copied the things in the _Remote Repository_ into your _Dev Environment_ a few extra steps happened under the hood.
 
@@ -452,14 +429,10 @@ We'll get to how you can get other people's changes into your _Dev Environment_ 
 
 <<<<<<< HEAD
 [](#merging)Merging
-
----
-
+-------------------
 =======
-
 ## [](#merging)Merging
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 As you and everyone else will generally be working on branches, we need to talk about how to get changes from one branch into the other by _merging_ them.
 
@@ -476,11 +449,10 @@ As we've already `checked out` master, we can now `git merge change_alice`.
 As there are no other _conflicting_ changes to `Alice.txt`, and we've changed nothing on _master_, this will go through without a hitch in what is called a _fast forward_ merge.
 
 <<<<<<< HEAD
-In the diagrams below, you can see that this just means that the _master_ pointer can simply be advanced to where the _change_alice_ one already is.
+In the diagrams below, you can see that this just means that the _master_ pointer can simply be advanced to where the _change\_alice_ one already is.
 =======
 In the diagrams below, you can see that this just means that the _master_ pointer can simply be advanced to where the _change_alice_ one already is.
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 The first diagram shows the state before our `merge`, _master_ is still at the commit it was, and on the other branch we've made one more commit.
 
@@ -528,11 +500,14 @@ Now it's time to `merge` the new branch into _master_.
 When you try that, you'll see the following output
 
 <<<<<<< HEAD
-` Auto-merging Bob.txt CONFLICT (content): Merge conflict in Bob.txt Automatic merge failed; fix conflicts and then commit the result. `
+`  
+Auto-merging Bob.txt  
+CONFLICT (content): Merge conflict in Bob.txt  
+Automatic merge failed; fix conflicts and then commit the result.  
+`
 =======
 `Auto-merging Bob.txt CONFLICT (content): Merge conflict in Bob.txt Automatic merge failed; fix conflicts and then commit the result.`
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 The same line has changed on both of the branches, and git can't handle this on it's own.
 
@@ -549,19 +524,17 @@ If you open `Bob.txt` you'll see something similar to this (I've truncated whate
 Hi! I'm Bob. I've been here for a while now.  
 =======  
 <<<<<<< HEAD
-Hi! I'm Bobby. I'm new here.
-
-> > > > > > > bobby_branch  
-> > > > > > > [... whatever you've put on line 2]
-
-# `
-
+Hi! I'm Bobby. I'm new here.  
+>>>>>>> bobby_branch  
+[... whatever you've put on line 2]  
+`
+=======
 Hi! I'm Bobby. I'm new here.
 
 > > > > > > > bobby_branch  
 > > > > > > > [... whatever you've put on line 2]  
 > > > > > > > `
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 On top you see what has changed in `Bob.txt` on the current HEAD, below you see what has changed in the branch we're merging in.
 
@@ -570,11 +543,13 @@ To resolve the conflict by hand, you'll just need to make sure that you end up w
 So go ahead and change the file to something like this:
 
 <<<<<<< HEAD
-` Hi! I'm Bobby. I've been here for a while now. [...] `
+`  
+Hi! I'm Bobby. I've been here for a while now.  
+[...]  
+`
 =======
 `Hi! I'm Bobby. I've been here for a while now. [...]`
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 From here what we're doing is exactly what we'd do for any changes.  
 We _stage_ them when we `add Bob.txt`, and then we `commit`.
@@ -585,14 +560,10 @@ Should you ever realize in the middle of resolving conflicts that you actually d
 
 <<<<<<< HEAD
 [](#rebasing)Rebasing
-
----
-
+---------------------
 =======
-
 ## [](#rebasing)Rebasing
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 Git has another clean way to integrate changes between two branches, which is called `rebase`.
 
@@ -622,11 +593,13 @@ When we `git rebase master`, we re-base our `add_patrick` branch on the current 
 The output of that command gives us a nice hint at what is happening in it:
 
 <<<<<<< HEAD
-` First, rewinding head to replay your work on top of it... Applying: Add Patrick `
+`  
+First, rewinding head to replay your work on top of it...  
+Applying: Add Patrick  
+`
 =======
 `First, rewinding head to replay your work on top of it... Applying: Add Patrick`
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 As we remember _HEAD_ is the pointer to the current commit we're at in our _Dev Environment_.
 
@@ -668,14 +641,10 @@ As when merging, you can always stop and drop everything you've done so far when
 
 <<<<<<< HEAD
 [](#updating-the-dev-environment-with-remote-changes)Updating the _Dev Environment_ with remote changes
-
----
-
+-------------------------------------------------------------------------------------------------------
 =======
-
 ## [](#updating-the-dev-environment-with-remote-changes)Updating the _Dev Environment_ with remote changes
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 So far we've only learned how to make and share changes.
 
@@ -716,11 +685,15 @@ Note that at this point, changes aren't integrated into the local branches and t
 If you run `git status` now, you'll see another great example of git commands telling you exactly what is going on:
 
 <<<<<<< HEAD
-` git status On branch fetching_changes_sample Your branch is behind 'origin/fetching_changes_sample' by 1 commit, and can be fast-forwarded. (use "git pull" to update your local branch) `
+`  
+git status  
+On branch fetching_changes_sample  
+Your branch is behind 'origin/fetching_changes_sample' by 1 commit, and can be fast-forwarded.  
+(use "git pull" to update your local branch)  
+`
 =======
 `git status On branch fetching_changes_sample Your branch is behind 'origin/fetching_changes_sample' by 1 commit, and can be fast-forwarded. (use "git pull" to update your local branch)`
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 ### [](#pulling-changes)_Pulling_ Changes
 
@@ -738,11 +711,17 @@ Lets also change `Alice.txt` in our _Working Directory_ now!
 If you now try to do a `git pull` you'll see the following error:
 
 <<<<<<< HEAD
-` git pull Updating df3ad1d..418e6f0 error: Your local changes to the following files would be overwritten by merge: Alice.txt Please commit your changes or stash them before you merge. Aborting `
+`  
+git pull  
+Updating df3ad1d..418e6f0  
+error: Your local changes to the following files would be overwritten by merge:  
+Alice.txt  
+Please commit your changes or stash them before you merge.  
+Aborting  
+`
 =======
 `git pull Updating df3ad1d..418e6f0 error: Your local changes to the following files would be overwritten by merge: Alice.txt Please commit your changes or stash them before you merge. Aborting`
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 You can not `pull` in any changes, while there are modifications to files in the _Working Directory_ that are also changed by the commits you're `pull`ing in.
 
@@ -784,11 +763,16 @@ Don't forget to run `git fetch` to see the remote change without `pull`ing it in
 If you now run `git status` you will see, that both branches have one commit on them that differs from the other.
 
 <<<<<<< HEAD
-` git status On branch fetching_changes_sample Your branch and 'origin/fetching_changes_sample' have diverged, and have 1 and 1 different commits each, respectively. (use "git pull" to merge the remote branch into yours) `
+`  
+git status  
+On branch fetching_changes_sample  
+Your branch and 'origin/fetching_changes_sample' have diverged,  
+and have 1 and 1 different commits each, respectively.  
+(use "git pull" to merge the remote branch into yours)  
+`
 =======
 `git status On branch fetching_changes_sample Your branch and 'origin/fetching_changes_sample' have diverged, and have 1 and 1 different commits each, respectively. (use "git pull" to merge the remote branch into yours)`
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 In addition we've changed the same file in both of those commits, to introduce a `merge` conflict we'll have to resolve.
 
@@ -814,17 +798,15 @@ Of course like with a normal `rebase` (or `merge`) you'll have to resolve the co
 
 <<<<<<< HEAD
 [](#cherrypicking)Cherry-picking
-
----
+--------------------------------
 
 > Congratulations! You've made it to the more advanced features!
->
+> 
 > By now you understand how to use all the typical git commands and more importantly how they work.
->
+> 
 > This will hopefully make the following concepts much simpler to understand than if I just told you what commands to type in.
->
-> =======
-
+> 
+=======
 ## [](#cherrypicking)Cherry-picking
 
 > Congratulations! You've made it to the more advanced features!
@@ -833,8 +815,8 @@ Of course like with a normal `rebase` (or `merge`) you'll have to resolve the co
 >
 > This will hopefully make the following concepts much simpler to understand than if I just told you what commands to type in.
 >
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > So let's head right in an learn how to `cherry-pick` commits!
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+> So let's head right in an learn how to `cherry-pick` commits!
 
 From earlier sections you still remember roughly what a `commit` is made off, right?
 
@@ -860,12 +842,12 @@ The figure below visualizes what happens when we run `git cherry-pick 63fc421`
 As you can see, a new commit with the changes we wanted shows up on branch.
 
 > At this point note that like with any other kind of getting changes onto a branch that we've seen before, any conflicts that arise during a `cherry-pick` will have to be _resolved_ by us, before the command can go through.
-> <<<<<<< HEAD
+<<<<<<< HEAD
+> 
+=======
 >
-> =======
->
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > Also like all other commands you can either `--continue` a `cherry-pick` when you've resolved conflicts, or decide to `--abort` the command entirely.
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+> Also like all other commands you can either `--continue` a `cherry-pick` when you've resolved conflicts, or decide to `--abort` the command entirely.
 
 The figure below visualizes `cherry-pick`ing a range of commits instead of a single one. You can simply do that by calling the command in the form `git cherry-pick <from>..<to>` or in our example below as `git cherry-pick 0cfc1d2..41fbfa7`.
 
@@ -873,14 +855,10 @@ The figure below visualizes `cherry-pick`ing a range of commits instead of a sin
 
 <<<<<<< HEAD
 [](#rewriting-history)Rewriting history
-
----
-
+---------------------------------------
 =======
-
 ## [](#rewriting-history)Rewriting history
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 > I'm repeating myself now, but you still remember [`rebase`](#rebasing) well enough right? Else quickly jump back to that section, before continuing here, as we'll use what we already know when learning about how change history!
 
@@ -901,13 +879,12 @@ Then `git commit` using a message like "This is history" and you're done.
 Wait, did I say we're done? No, you'll clearly see that we've made some mistakes here:
 
 <<<<<<< HEAD
-
--   We forgot to add the changes to `Bob.txt`
--   # We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
-
 *   We forgot to add the changes to `Bob.txt`
 *   We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+=======
+-   We forgot to add the changes to `Bob.txt`
+-   We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 ### [](#amending-the-last-commit)Amending the last Commit
 
@@ -967,19 +944,27 @@ If we now have a look at the branch's history with `git log` (or for just a quic
 For me it looks like this:
 
 <<<<<<< HEAD
-` git log --oneline 0b22064 (HEAD -> interactiveRebase) Add more text to Alice 062ef13 Add Bob.txt 9e06fca Add text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text `
+`  
+git log --oneline  
+0b22064 (HEAD -> interactiveRebase) Add more text to Alice  
+062ef13 Add Bob.txt  
+9e06fca Add text to Alice  
+df3ad1d (origin/master, origin/HEAD, master) Add Alice  
+800a947 Add Tutorial Text  
+`
 
 There's two things we'd like to fix about this, which for the sake of learning different things, will be a bit different than in the previous section on `amend`:
 
--   Put both changes to `Alice.txt` in a single commit
--   # Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
-    `git log --oneline 0b22064 (HEAD -> interactiveRebase) Add more text to Alice 062ef13 Add Bob.txt 9e06fca Add text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text`
+*   Put both changes to `Alice.txt` in a single commit
+*   Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
+=======
+`git log --oneline 0b22064 (HEAD -> interactiveRebase) Add more text to Alice 062ef13 Add Bob.txt 9e06fca Add text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text`
 
 There's two things we'd like to fix about this, which for the sake of learning different things, will be a bit different than in the previous section on `amend`:
 
 -   Put both changes to `Alice.txt` in a single commit
 -   Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 To change the three new commits, we'll want to rebase onto the commit just before them. That commit for me is `df3ad1d`, but we can also reference it as the third commit from the current _HEAD_ as `HEAD~3`
 
@@ -991,44 +976,25 @@ What you'll see is your editor of choice showing something like this:
 pick 9e06fca Add text to Alice  
 pick 062ef13 Add Bob.txt  
 <<<<<<< HEAD
-pick 0b22064 Add more text to Alice
-
-# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
-
-#
-
-# Commands:
-
-# p, pick = use commit
-
-# r, reword = use commit, but edit the commit message
-
-# e, edit = use commit, but stop for amending
-
-# s, squash = use commit, but meld into previous commit
-
-# f, fixup = like "squash", but discard this commit's log message
-
-# x, exec = run command (the rest of the line) using shell
-
-# d, drop = remove commit
-
-#
-
-# These lines can be re-ordered; they are executed from top to bottom.
-
-#
-
-# If you remove a line here THAT COMMIT WILL BE LOST.
-
-#
-
-# However, if you remove everything, the rebase will be aborted.
-
-#
-
-# Note that empty commits are commented out
-
+pick 0b22064 Add more text to Alice  
+# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)  
+#  
+# Commands:  
+# p, pick = use commit  
+# r, reword = use commit, but edit the commit message  
+# e, edit = use commit, but stop for amending  
+# s, squash = use commit, but meld into previous commit  
+# f, fixup = like "squash", but discard this commit's log message  
+# x, exec = run command (the rest of the line) using shell  
+# d, drop = remove commit  
+#  
+# These lines can be re-ordered; they are executed from top to bottom.  
+#  
+# If you remove a line here THAT COMMIT WILL BE LOST.  
+#  
+# However, if you remove everything, the rebase will be aborted.  
+#  
+# Note that empty commits are commented out  
 =======
 pick 0b22064 Add more text to Alice
 
@@ -1068,8 +1034,8 @@ pick 0b22064 Add more text to Alice
 
 # Note that empty commits are commented out
 
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > `
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+`
 
 Note as always how `git` explains everything you can do right there when you call the command.
 
@@ -1087,18 +1053,16 @@ I'll start off with the easy change and make it so we get to change the commit m
 pick 9e06fca Add text to Alice  
 reword 062ef13 Add Bob.txt  
 <<<<<<< HEAD
-pick 0b22064 Add more text to Alice
-
-# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
-
+pick 0b22064 Add more text to Alice  
+# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)  
 =======
 pick 0b22064 Add more text to Alice
 
 # Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
 
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > [...]  
-> > > > > > > `
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+[...]  
+`
 
 Now to getting the two changes of `Alice.txt` into one commit.
 
@@ -1108,35 +1072,31 @@ Obviously what we want to do is to `squash` the later of the two into the first 
 pick 9e06fca Add text to Alice  
 reword 062ef13 Add Bob.txt  
 <<<<<<< HEAD
-squash 0b22064 Add more text to Alice
-
-# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
-
+squash 0b22064 Add more text to Alice  
+# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)  
 =======
 squash 0b22064 Add more text to Alice
 
 # Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
 
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > [...]  
-> > > > > > > `
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+[...]  
+`
 
 Are we done? Will that do what we want?
 
 It wont right? As the comments in the file tell us:
 
 <<<<<<< HEAD
-`
-
-# s, squash = use commit, but meld into previous commit
-
+`  
+# s, squash = use commit, but meld into previous commit  
 =======
 `
 
 # s, squash = use commit, but meld into previous commit
 
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > `
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+`
 
 So what we've done so far, will merge the changes of the second Alice commit, with the Bob commit. That's not what we want.
 
@@ -1150,30 +1110,28 @@ Thankfully you're in your favorite text editor, so go ahead and move the second 
 pick 9e06fca Add text to Alice  
 squash 0b22064 Add more text to Alice  
 <<<<<<< HEAD
-reword 062ef13 Add Bob.txt
-
-# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
-
+reword 062ef13 Add Bob.txt  
+# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)  
 =======
 reword 062ef13 Add Bob.txt
 
 # Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
 
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > [...]  
-> > > > > > > `
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+[...]  
+`
 
 That should do the trick, so close the editor to tell `git` to start executing the commands.
 
 What happens next is just like a normal `rebase`: starting with the commit you've referenced when starting it, each of the commits you have listed will be applied one after the other.
 
 > Right now it won't happen, but when you re-order actual code changes, it may happen, that you run into conflicts during the `rebase`. After all you've possibly mixed up changes that were building on each other.
-> <<<<<<< HEAD
+<<<<<<< HEAD
+> 
+=======
 >
-> =======
->
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
-> > > > > > > Just [resolve](#resolving-conflicts) them, as you would usually.
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+> Just [resolve](#resolving-conflicts) them, as you would usually.
 
 After applying the first commit, the editor will open and allow you to put a new message for the commit combining the changes to `Alice.txt`. I've thrown away the text of both commits and put "Add a lot of very important text to Alice".
 
@@ -1184,11 +1142,16 @@ That's it! You've rewritten history again. This time a lot more substantially th
 If you look at the `git log` again, you'll see that there's two new commits in place of the three that we had previously. But by now you're used to what `rebase` does to commits and have expected that.
 
 <<<<<<< HEAD
-` git log --oneline 105177b (HEAD -> interactiveRebase) Add Bob ed78fa1 Add a lot very important text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text `
+`  
+git log --oneline  
+105177b (HEAD -> interactiveRebase) Add Bob  
+ed78fa1 Add a lot very important text to Alice  
+df3ad1d (origin/master, origin/HEAD, master) Add Alice  
+800a947 Add Tutorial Text  
+`
 =======
 `git log --oneline 105177b (HEAD -> interactiveRebase) Add Bob ed78fa1 Add a lot very important text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text`
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 ### [](#public-history-why-you-shouldnt-rewrite-it-and-how-to-still-do-it-safely)Public History, why you shouldn't rewrite it, and how to still do it safely
 
@@ -1243,14 +1206,10 @@ _Don't rewrite public history unless you're really sure about what you're doing.
 
 <<<<<<< HEAD
 [](#reading-history)Reading history
-
----
-
+-----------------------------------
 =======
-
 ## [](#reading-history)Reading history
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 Knowing about the differences between the areas in your _Dev Environment_ - especially the _Local Repository_ - and how commits and the history work, doing a `rebase` should not be scary to you.
 
@@ -1275,11 +1234,20 @@ Lets have a look at the `reflog` of the things we've done on that branch by - yo
 You'll probably see a lot of output, but the first few lines on the top should be similar to this:
 
 <<<<<<< HEAD
-` git reflog 105177b (HEAD -> interactiveRebase) HEAD@{0}: rebase -i (finish): returning to refs/heads/interactiveRebase 105177b (HEAD -> interactiveRebase) HEAD@{1}: rebase -i (reword): Add Bob ed78fa1 HEAD@{2}: rebase -i (squash): Add a lot very important text to Alice 9e06fca HEAD@{3}: rebase -i (start): checkout HEAD~3 0b22064 HEAD@{4}: commit: Add more text to Alice 062ef13 HEAD@{5}: commit: Add Bob.txt 9e06fca HEAD@{6}: commit: Add text to Alice df3ad1d (origin/master, origin/HEAD, master) HEAD@{7}: checkout: moving from master to interactiveRebase `
+`  
+git reflog  
+105177b (HEAD -> interactiveRebase) HEAD@{0}: rebase -i (finish): returning to refs/heads/interactiveRebase  
+105177b (HEAD -> interactiveRebase) HEAD@{1}: rebase -i (reword): Add Bob  
+ed78fa1 HEAD@{2}: rebase -i (squash): Add a lot very important text to Alice  
+9e06fca HEAD@{3}: rebase -i (start): checkout HEAD~3  
+0b22064 HEAD@{4}: commit: Add more text to Alice  
+062ef13 HEAD@{5}: commit: Add Bob.txt  
+9e06fca HEAD@{6}: commit: Add text to Alice  
+df3ad1d (origin/master, origin/HEAD, master) HEAD@{7}: checkout: moving from master to interactiveRebase  
+`
 =======
 `git reflog 105177b (HEAD -> interactiveRebase) HEAD@{0}: rebase -i (finish): returning to refs/heads/interactiveRebase 105177b (HEAD -> interactiveRebase) HEAD@{1}: rebase -i (reword): Add Bob ed78fa1 HEAD@{2}: rebase -i (squash): Add a lot very important text to Alice 9e06fca HEAD@{3}: rebase -i (start): checkout HEAD~3 0b22064 HEAD@{4}: commit: Add more text to Alice 062ef13 HEAD@{5}: commit: Add Bob.txt 9e06fca HEAD@{6}: commit: Add text to Alice df3ad1d (origin/master, origin/HEAD, master) HEAD@{7}: checkout: moving from master to interactiveRebase`
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 There it is. Every single thing we've done, from switching to the branch to doing the `rebase`.
 
@@ -1305,8 +1273,7 @@ But by now you know how to do either of that, so I'll let you try that on your o
 
 <<<<<<< HEAD
 
-# [Source](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
-
 [Source](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
-
-> > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+=======
+[Source](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
+>>>>>>> bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
