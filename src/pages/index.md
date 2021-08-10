@@ -96,7 +96,6 @@ sections:
       allowfullscreen></iframe>
     actions: []
     type: section_content
-    image: images/thoughtful-zucchini.gif
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
