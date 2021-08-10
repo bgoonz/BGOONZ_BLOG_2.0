@@ -3,24 +3,26 @@ title: Navigation
 weight: 900
 excerpt: Navigation quick reference
 seo:
-    title: Web Dev Hub
-    description: Navigation Home
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Web Dev Hub
-          keyName: property
-        - name: 'og:description'
-          value: Navigation Home
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Web Dev Hub
-        - name: 'twitter:description'
-          value: Navigation Home
+  title: Web Dev Hub
+  description: >-
+    This website contains docs, blogs, a personal portfolio spread out across
+    multiple pages as well as interactive animations and tools.
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: Web Dev Hub
+      keyName: property
+    - name: 'og:description'
+      value: Navigation Home
+      keyName: property
+    - name: 'twitter:card'
+      value: summary
+    - name: 'twitter:title'
+      value: Web Dev Hub
+    - name: 'twitter:description'
+      value: Navigation Home
 template: docs
 ---
 
