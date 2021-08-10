@@ -99,3 +99,5 @@ Netlify Functions let you deploy Lambda functions without an AWS account and wit
 ## Where to Go From Here
 
 The JAMstack provides a great advantage to both the end-users and developers coupled with a fast and scalable approach. The services here are a part of a myriad list of services available to use in the JAMstack ecosystem. Check out the [New Dynamic directory of tools and services](https://www.thenewdynamic.org/) and the [awesome static website services repository](https://github.com/agarrharr/awesome-static-website-services) for a comprehensive list of other services to explore.
+
+[Source](https://www.stackbit.com/blog/extending-jamstack-2020/)
