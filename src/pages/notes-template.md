@@ -1,41 +1,25 @@
 ---
 title: Tools
-excerpt: >-
-    See some interesting tools developed by the Web-Dev-Hubcommunity to help automate
-    parts of your workflow.
+weight: 2
 seo:
-    title: Tools
-    description: This is the tools page
+    title: Gatsby Plugins For This Sites Content Model
+    description: This is my markdown notes tempate
     extra:
         - name: 'og:type'
-
           value: website
           keyName: property
-
         - name: 'og:title'
-
-          value: Tools
-
+          value: Gatsby Plugins For This Sites Content Model
           keyName: property
-
         - name: 'og:description'
-
-          value: This is the tools page
-
+          value: This is the Gatsby Plugins For This Sites Content Model page
           keyName: property
-
         - name: 'twitter:card'
-
           value: summary
-
         - name: 'twitter:title'
-
-          value: Tools
-
+          value: Gatsby Plugins For This Sites Content Model
         - name: 'twitter:description'
-
-          value: This is the tools page
-
+          value: This is the Gatsby Plugins For This Sites Content Model page
 template: docs
 ---
 
@@ -43,6 +27,18 @@ template: docs
 <br>
 <br>
 
+<br>
+<br>
+<br>
+<h1>   Speach Recognition api </h1>
+<br>
+<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<br>
+<br>
+<br>
 <br>
 <h1>   Paste To Markdown </h1>
 <br>
@@ -82,6 +78,38 @@ template: docs
 <br>
 
 <br>
+<h1>     Resource Archive           </h1>
+<br>
+
+<iframe src="https://resourcerepo2.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+<h1>   Lambda Student Site </h1>
+<br>
+
+<iframe class="inner" src="https://lambda-resources.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 <br>
 
@@ -115,6 +143,32 @@ template: docs
 <iframe src="https://githtmlpreview.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<br>
+<h1> Data Structures</h1>
+<br>
+
+<iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<br>
+<h1>  Interview     </h1>
+<br>
+
+<iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 <br>
 
