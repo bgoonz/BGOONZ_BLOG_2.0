@@ -41,10 +41,10 @@ API is the acronym for Application Programming Interface. It defines interaction
 
 #### Don’t use JAMstack when:
 
-- <span id="2b9a">You don’t generally do anything that consumes enough volume of static assets to cause your application to struggle with performance at least sometimes.</span>
-- <span id="d002">Your development team is used to different tech, and the cost of migration is higher than the reward.</span>
-- <span id="fc18">You are dealing with tons of real-time/user data, (i.e. audio or video processing in real time)</span>
-- <span id="c4bd">In most cases, it does not make sense to migrate a legacy project that is functioning just fine with no signs of depreciation on the horizon.</span>
+-   <span id="2b9a">You don’t generally do anything that consumes enough volume of static assets to cause your application to struggle with performance at least sometimes.</span>
+-   <span id="d002">Your development team is used to different tech, and the cost of migration is higher than the reward.</span>
+-   <span id="fc18">You are dealing with tons of real-time/user data, (i.e. audio or video processing in real time)</span>
+-   <span id="c4bd">In most cases, it does not make sense to migrate a legacy project that is functioning just fine with no signs of depreciation on the horizon.</span>
 
 ### What is Jamstack?
 
@@ -120,24 +120,24 @@ Simple and effective method of writing HTML, it’s ideal for super simple pages
 
 Most JAMstack sites are powered by a static site generator. There’s no enforcement on which SSG you decide to use.
 
-- <span id="4571"><a href="https://www.gatsbyjs.org/" class="markup--anchor markup--li-anchor" title="Gatsby">Gatsby</a></span>
-- <span id="ebc1"><a href="https://nextjs.org/" class="markup--anchor markup--li-anchor" title="Next.js">Next.js</a></span>
-- <span id="c6ae"><a href="https://gohugo.io/" class="markup--anchor markup--li-anchor" title="Hugo">Hugo</a></span>
+-   <span id="4571"><a href="https://www.gatsbyjs.org/" class="markup--anchor markup--li-anchor" title="Gatsby">Gatsby</a></span>
+-   <span id="ebc1"><a href="https://nextjs.org/" class="markup--anchor markup--li-anchor" title="Next.js">Next.js</a></span>
+-   <span id="c6ae"><a href="https://gohugo.io/" class="markup--anchor markup--li-anchor" title="Hugo">Hugo</a></span>
 
 #### Frontend Framework
 
 Most frameworks don’t output static HTML files, however it is possible to do that but it requires more tooling experience and maintenance.
 
-- <span id="949a"><a href="http://reactjs.org/" class="markup--anchor markup--li-anchor" title="React">React</a></span>
-- <span id="42ed"><a href="https://preactjs.com/" class="markup--anchor markup--li-anchor" title="Preact">Preact</a></span>
+-   <span id="949a"><a href="http://reactjs.org/" class="markup--anchor markup--li-anchor" title="React">React</a></span>
+-   <span id="42ed"><a href="https://preactjs.com/" class="markup--anchor markup--li-anchor" title="Preact">Preact</a></span>
 
 ### DEPLOYMENT
 
 Your built site needs to be hosted somewhere. There are great services that provides this for free and with ease.
 
-- <span id="d14d"><a href="https://netlify.com/" class="markup--anchor markup--li-anchor" title="Netlify">Netlify</a></span>
-- <span id="8b6e"><a href="https://vercel.com/" class="markup--anchor markup--li-anchor" title="Vercel">Vercel</a></span>
-- <span id="de9c"><a href="https://pages.github.com/" class="markup--anchor markup--li-anchor" title="Github Pages">Github Pages</a></span>
+-   <span id="d14d"><a href="https://netlify.com/" class="markup--anchor markup--li-anchor" title="Netlify">Netlify</a></span>
+-   <span id="8b6e"><a href="https://vercel.com/" class="markup--anchor markup--li-anchor" title="Vercel">Vercel</a></span>
+-   <span id="de9c"><a href="https://pages.github.com/" class="markup--anchor markup--li-anchor" title="Github Pages">Github Pages</a></span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*ScYd6pUibdFOSaiSuJsaTA.png" class="graf-image" /></figure>### DYNAMIC PARTS
 
@@ -171,24 +171,24 @@ Rely on third party services to integrate a search functionality
 
 JAMstack sites can also be controlled via a Content Management System, these are typically known as Headless CMS. Once a change in the CMS is made, a new build of your site will be triggered and then deployed as static assets.
 
-- <span id="33e7"><a href="https://www.netlifycms.org/" class="markup--anchor markup--li-anchor" title="Netlify CMS">Netlify CMS</a></span>
-- <span id="9240"><a href="http://contentful.com/" class="markup--anchor markup--li-anchor" title="Contentful">Contentful</a></span>
-- <span id="913c"><a href="https://developer.wordpress.org/rest-api/" class="markup--anchor markup--li-anchor" title="Headless WordPress">Headless WordPress</a></span>
-- <span id="7256"><a href="https://docs.ghost.org/api/content/" class="markup--anchor markup--li-anchor" title="Ghost">Ghost</a></span>
-- <span id="a9c0"><a href="https://strapi.io/" class="markup--anchor markup--li-anchor" title="Strapi">Strapi</a></span>
-- <span id="00ae"><a href="https://forestry.io/" class="markup--anchor markup--li-anchor" title="Forestry">Forestry</a></span>
-- <span id="e94d"><a href="https://www.sanity.io/" class="markup--anchor markup--li-anchor" title="Sanity">Sanity.io</a></span>
-- <span id="8956"><a href="https://www.kontent.ai/" class="markup--anchor markup--li-anchor" title="Kontent">Kontent</a></span>
-- <span id="ad3e"><a href="http://graphcms.com/" class="markup--anchor markup--li-anchor" title="GraphCMS">GraphCMS</a></span>
-- <span id="a03c"><a href="https://www.takeshape.io/" class="markup--anchor markup--li-anchor" title="TakeShape">TakeShape</a></span>
+-   <span id="33e7"><a href="https://www.netlifycms.org/" class="markup--anchor markup--li-anchor" title="Netlify CMS">Netlify CMS</a></span>
+-   <span id="9240"><a href="http://contentful.com/" class="markup--anchor markup--li-anchor" title="Contentful">Contentful</a></span>
+-   <span id="913c"><a href="https://developer.wordpress.org/rest-api/" class="markup--anchor markup--li-anchor" title="Headless WordPress">Headless WordPress</a></span>
+-   <span id="7256"><a href="https://docs.ghost.org/api/content/" class="markup--anchor markup--li-anchor" title="Ghost">Ghost</a></span>
+-   <span id="a9c0"><a href="https://strapi.io/" class="markup--anchor markup--li-anchor" title="Strapi">Strapi</a></span>
+-   <span id="00ae"><a href="https://forestry.io/" class="markup--anchor markup--li-anchor" title="Forestry">Forestry</a></span>
+-   <span id="e94d"><a href="https://www.sanity.io/" class="markup--anchor markup--li-anchor" title="Sanity">Sanity.io</a></span>
+-   <span id="8956"><a href="https://www.kontent.ai/" class="markup--anchor markup--li-anchor" title="Kontent">Kontent</a></span>
+-   <span id="ad3e"><a href="http://graphcms.com/" class="markup--anchor markup--li-anchor" title="GraphCMS">GraphCMS</a></span>
+-   <span id="a03c"><a href="https://www.takeshape.io/" class="markup--anchor markup--li-anchor" title="TakeShape">TakeShape</a></span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*ScYd6pUibdFOSaiSuJsaTA.png" class="graf-image" /></figure>### Best Practice:
 
-- <span id="1be8">**Using CDNs for hosting.** Using content delivery networks improves performance and scalability.</span>
-- <span id="e935">**Atomic deploys.** Deploying lots of static files can be time-consuming. But with atomic deploys, you can forget about downtimes. Your app is always available to users, even when a new deployment is being executed. Besides, with each deploy being a full snapshot of your website, it guarantees global consistency.</span>
-- <span id="e5c0">**Instant cache invalidation.** CDNs store sites in their local caches. Thus, when you change something on your website, your CDN invalidates the affected files and replaces them with the new ones. However, the process can take hours. To avoid this, it’s recommended to choose CDNs with instant cache validation.</span>
-- <span id="d1f9">**Version control systems**. A version control system, such as <a href="https://git-scm.com/" class="markup--anchor markup--li-anchor">Git</a>, is a cloud for your code. It hosts your source code, keeps track of all changes, and streamlines collaboration. If a mistake is made, developers can easily compare the current code from its previous versions and identify the cause.</span>
-- <span id="e265">**Automated builds.** In terms of web development, build is a process of converting files and other assets into a final software product ready for deployment. Automating this process eliminates the risk of variation and defects. Besides, whenever a new build is required, your CDN is notified using webhooks.</span>
+-   <span id="1be8">**Using CDNs for hosting.** Using content delivery networks improves performance and scalability.</span>
+-   <span id="e935">**Atomic deploys.** Deploying lots of static files can be time-consuming. But with atomic deploys, you can forget about downtimes. Your app is always available to users, even when a new deployment is being executed. Besides, with each deploy being a full snapshot of your website, it guarantees global consistency.</span>
+-   <span id="e5c0">**Instant cache invalidation.** CDNs store sites in their local caches. Thus, when you change something on your website, your CDN invalidates the affected files and replaces them with the new ones. However, the process can take hours. To avoid this, it’s recommended to choose CDNs with instant cache validation.</span>
+-   <span id="d1f9">**Version control systems**. A version control system, such as <a href="https://git-scm.com/" class="markup--anchor markup--li-anchor">Git</a>, is a cloud for your code. It hosts your source code, keeps track of all changes, and streamlines collaboration. If a mistake is made, developers can easily compare the current code from its previous versions and identify the cause.</span>
+-   <span id="e265">**Automated builds.** In terms of web development, build is a process of converting files and other assets into a final software product ready for deployment. Automating this process eliminates the risk of variation and defects. Besides, whenever a new build is required, your CDN is notified using webhooks.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*ScYd6pUibdFOSaiSuJsaTA.png" class="graf-image" /></figure>### Resources
 
@@ -198,35 +198,35 @@ Here’s a list of hand-picked JAMstack resources ranging from learning material
 
 #### Services
 
-- <span id="5f73"><a href="https://github.com/agarrharr/awesome-static-website-services" class="markup--anchor markup--li-anchor">Awesome Static Website Services</a></span>
-- <span id="f4a6"><a href="https://headlesscms.org/" class="markup--anchor markup--li-anchor">A List of Content Management Systems for JAMstack Sites</a></span>
-- <span id="5f45"><a href="https://www.staticgen.com/" class="markup--anchor markup--li-anchor">A List of Static Site Generators for JAMstack Sites</a></span>
-- <span id="5fbb"><a href="https://jamstackthemes.dev/" class="markup--anchor markup--li-anchor">A List of Themes and Starters for JAMstack Sites</a></span>
-- <span id="372a"><a href="https://www.thenewdynamic.org/tool/" class="markup--anchor markup--li-anchor">A curated collection of tools and services</a></span>
+-   <span id="5f73"><a href="https://github.com/agarrharr/awesome-static-website-services" class="markup--anchor markup--li-anchor">Awesome Static Website Services</a></span>
+-   <span id="f4a6"><a href="https://headlesscms.org/" class="markup--anchor markup--li-anchor">A List of Content Management Systems for JAMstack Sites</a></span>
+-   <span id="5f45"><a href="https://www.staticgen.com/" class="markup--anchor markup--li-anchor">A List of Static Site Generators for JAMstack Sites</a></span>
+-   <span id="5fbb"><a href="https://jamstackthemes.dev/" class="markup--anchor markup--li-anchor">A List of Themes and Starters for JAMstack Sites</a></span>
+-   <span id="372a"><a href="https://www.thenewdynamic.org/tool/" class="markup--anchor markup--li-anchor">A curated collection of tools and services</a></span>
 
 #### Articles
 
-- <span id="e6fa"><a href="https://snipcart.com/blog/jamstack" class="markup--anchor markup--li-anchor">New to JAMstack? Everything You Need to Know to Get Started</a></span>
-- <span id="ccc5"><a href="https://www.quora.com/What-is-the-concept-behind-JAMstack" class="markup--anchor markup--li-anchor">What is the concept behind JAMstack</a></span>
-- <span id="d712"><a href="https://bejamas.io/blog/jamstack-modern-web-development/" class="markup--anchor markup--li-anchor">JAMstack modern web development</a></span>
-- <span id="ac37"><a href="https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/" class="markup--anchor markup--li-anchor">Smashing Magazine just got 10x faster</a></span>
-- <span id="a351"><a href="https://blog.ghost.org/jamstack/" class="markup--anchor markup--li-anchor">Ghost on the JAMstack</a></span>
-- <span id="8a42"><a href="https://medium.com/netlify/jamstack-with-gatsby-netlify-and-netlify-cms-a300735e2c5d" class="markup--anchor markup--li-anchor">JAMstack with Gatsby, Netlify and Netlify CMS</a></span>
+-   <span id="e6fa"><a href="https://snipcart.com/blog/jamstack" class="markup--anchor markup--li-anchor">New to JAMstack? Everything You Need to Know to Get Started</a></span>
+-   <span id="ccc5"><a href="https://www.quora.com/What-is-the-concept-behind-JAMstack" class="markup--anchor markup--li-anchor">What is the concept behind JAMstack</a></span>
+-   <span id="d712"><a href="https://bejamas.io/blog/jamstack-modern-web-development/" class="markup--anchor markup--li-anchor">JAMstack modern web development</a></span>
+-   <span id="ac37"><a href="https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/" class="markup--anchor markup--li-anchor">Smashing Magazine just got 10x faster</a></span>
+-   <span id="a351"><a href="https://blog.ghost.org/jamstack/" class="markup--anchor markup--li-anchor">Ghost on the JAMstack</a></span>
+-   <span id="8a42"><a href="https://medium.com/netlify/jamstack-with-gatsby-netlify-and-netlify-cms-a300735e2c5d" class="markup--anchor markup--li-anchor">JAMstack with Gatsby, Netlify and Netlify CMS</a></span>
 
 ### Videos
 
 ### resources and links:
 
-- <span id="a6ca"><a href="https://julesforrest.com/moving-to-gatsby/" class="markup--anchor markup--li-anchor">Moving to Gatsby</a> _by_ <a href="https://twitter.com/julesforrest" class="markup--anchor markup--li-anchor"><em>Jules Forrest</em></a></span>
-- <span id="b8bf"><a href="https://www.gatsbyjs.org/blog/2017-11-08-migrate-from-jekyll-to-gatsby/" class="markup--anchor markup--li-anchor">Migrate from Jekyll to Gatsby</a> _by_ <a href="https://twitter.com/@singuerinc" class="markup--anchor markup--li-anchor"><em>Nahuel Scotti</em></a></span>
-- <span id="7623"><a href="https://jamstack.org/" class="markup--anchor markup--li-anchor">JAMstack website</a></span>
-- <span id="e3a9"><a href="https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/" class="markup--anchor markup--li-anchor">Smashing Magazine just got 10x faster</a></span>
-- <span id="9324"><a href="https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e" class="markup--anchor markup--li-anchor">Image Optimization Made Easy with Gatsby.js</a> _by_ <a href="https://medium.com/@kyle.robert.gill?source=post_header_lockup" class="markup--anchor markup--li-anchor"><em>Kyle Gill</em></a></span>
-- <span id="b4c7">Page loading bar with <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-nprogress//" class="markup--anchor markup--li-anchor"><em>gatsy-plugin-nprogress</em></a></span>
-- <span id="5d04">Support for SASS/SCSS with <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-sass/" class="markup--anchor markup--li-anchor"><em>gatsby-plugin-sass</em></a></span>
-- <span id="dd5d">Default Netlify CMS implementation with <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms/" class="markup--anchor markup--li-anchor"><em>gatsby-plugin-netlify-cms</em></a></span>
-- <span id="6106">React Google Analytics module with <a href="https://github.com/react-ga/react-ga" class="markup--anchor markup--li-anchor"><em>react-ga</em></a></span>
-- <span id="5d11">Code images by <a href="https://carbon.now.sh/" class="markup--anchor markup--li-anchor">Carbon</a></span>
+-   <span id="a6ca"><a href="https://julesforrest.com/moving-to-gatsby/" class="markup--anchor markup--li-anchor">Moving to Gatsby</a> _by_ <a href="https://twitter.com/julesforrest" class="markup--anchor markup--li-anchor"><em>Jules Forrest</em></a></span>
+-   <span id="b8bf"><a href="https://www.gatsbyjs.org/blog/2017-11-08-migrate-from-jekyll-to-gatsby/" class="markup--anchor markup--li-anchor">Migrate from Jekyll to Gatsby</a> _by_ <a href="https://twitter.com/@singuerinc" class="markup--anchor markup--li-anchor"><em>Nahuel Scotti</em></a></span>
+-   <span id="7623"><a href="https://jamstack.org/" class="markup--anchor markup--li-anchor">JAMstack website</a></span>
+-   <span id="e3a9"><a href="https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/" class="markup--anchor markup--li-anchor">Smashing Magazine just got 10x faster</a></span>
+-   <span id="9324"><a href="https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e" class="markup--anchor markup--li-anchor">Image Optimization Made Easy with Gatsby.js</a> _by_ <a href="https://medium.com/@kyle.robert.gill?source=post_header_lockup" class="markup--anchor markup--li-anchor"><em>Kyle Gill</em></a></span>
+-   <span id="b4c7">Page loading bar with <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-nprogress//" class="markup--anchor markup--li-anchor"><em>gatsy-plugin-nprogress</em></a></span>
+-   <span id="5d04">Support for SASS/SCSS with <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-sass/" class="markup--anchor markup--li-anchor"><em>gatsby-plugin-sass</em></a></span>
+-   <span id="dd5d">Default Netlify CMS implementation with <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms/" class="markup--anchor markup--li-anchor"><em>gatsby-plugin-netlify-cms</em></a></span>
+-   <span id="6106">React Google Analytics module with <a href="https://github.com/react-ga/react-ga" class="markup--anchor markup--li-anchor"><em>react-ga</em></a></span>
+-   <span id="5d11">Code images by <a href="https://carbon.now.sh/" class="markup--anchor markup--li-anchor">Carbon</a></span>
 
 ### Even More Resources:
 

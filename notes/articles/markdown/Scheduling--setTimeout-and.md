@@ -10,8 +10,8 @@ We may decide to execute a function not right now, but at a later time. That’s
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*EnCk0hh8R6B290EH.gif" class="graf-image" /></figure>There are two methods for it:
 
-- <span id="4106">`setTimeout` allows us to run a function once after the interval of time.</span>
-- <span id="333d">`setInterval` allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.</span>
+-   <span id="4106">`setTimeout` allows us to run a function once after the interval of time.</span>
+-   <span id="333d">`setInterval` allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.</span>
 
 These methods are not a part of JavaScript specification. But most environments have an internal scheduler and provide these methods. In particular, they are supported in all browsers and Node.js.
 
@@ -253,19 +253,19 @@ There are also advanced browser-related use cases of a zero-delay timeout, that 
 
 ### Summary
 
-- <span id="4074">Methods `setTimeout(func, delay, ...args)` and `setInterval(func, delay, ...args)` allow us to run the `func` once/regularly after `delay` milliseconds.</span>
-- <span id="6249">To cancel the execution, we should call `clearTimeout/clearInterval` with the value returned by `setTimeout/setInterval`.</span>
-- <span id="af18">Nested `setTimeout` calls are a more flexible alternative to `setInterval`, allowing us to set the time _between_ executions more precisely.</span>
-- <span id="06e2">Zero delay scheduling with `setTimeout(func, 0)` (the same as `setTimeout(func)`) is used to schedule the call "as soon as possible, but after the current script is complete".</span>
-- <span id="5393">The browser limits the minimal delay for five or more nested calls of `setTimeout` or for `setInterval` (after 5th call) to 4ms. That's for historical reasons.</span>
+-   <span id="4074">Methods `setTimeout(func, delay, ...args)` and `setInterval(func, delay, ...args)` allow us to run the `func` once/regularly after `delay` milliseconds.</span>
+-   <span id="6249">To cancel the execution, we should call `clearTimeout/clearInterval` with the value returned by `setTimeout/setInterval`.</span>
+-   <span id="af18">Nested `setTimeout` calls are a more flexible alternative to `setInterval`, allowing us to set the time _between_ executions more precisely.</span>
+-   <span id="06e2">Zero delay scheduling with `setTimeout(func, 0)` (the same as `setTimeout(func)`) is used to schedule the call "as soon as possible, but after the current script is complete".</span>
+-   <span id="5393">The browser limits the minimal delay for five or more nested calls of `setTimeout` or for `setInterval` (after 5th call) to 4ms. That's for historical reasons.</span>
 
 Please note that all scheduling methods do not _guarantee_ the exact delay.
 
 For example, the in-browser timer may slow down for a lot of reasons:
 
-- <span id="e3b2">The CPU is overloaded.</span>
-- <span id="2aed">The browser tab is in the background mode.</span>
-- <span id="116d">The laptop is on battery.</span>
+-   <span id="e3b2">The CPU is overloaded.</span>
+-   <span id="2aed">The browser tab is in the background mode.</span>
+-   <span id="116d">The laptop is on battery.</span>
 
 All that may increase the minimal timer resolution (the minimal delay) to 300ms or even 1000ms depending on the browser and OS-level performance settings.
 

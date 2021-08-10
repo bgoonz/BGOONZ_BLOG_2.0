@@ -146,10 +146,10 @@ This text can be embedded into Markdown:
 
     A double line break, breaks out of the list.
 
-- <span id="7904">Item 1</span>
-- <span id="1cf1">Item 2</span>
-- <span id="ded6">Item 3  
-  This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
+-   <span id="7904">Item 1</span>
+-   <span id="1cf1">Item 2</span>
+-   <span id="ded6">Item 3  
+    This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
 
 A double line break, breaks out of the list.
 

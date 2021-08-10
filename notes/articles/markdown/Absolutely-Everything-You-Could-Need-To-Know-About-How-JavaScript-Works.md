@@ -57,32 +57,32 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 The **number** data type in JS is used to represent any numerical  
 values, including integers and decimal numbers. **Basic Arithmetic Operators** are the symbols that perform particular operations.
 
-- <span id="205d">**+** (addition)</span>
-- <span id="1df4">**-** (subtraction)</span>
-- <span id="f17b">**asterisk** (multiplication)</span>
-- <span id="ed52">**/** (division)</span>
-- <span id="d3a6">**%** (modulo)</span>
+-   <span id="205d">**+** (addition)</span>
+-   <span id="1df4">**-** (subtraction)</span>
+-   <span id="f17b">**asterisk** (multiplication)</span>
+-   <span id="ed52">**/** (division)</span>
+-   <span id="d3a6">**%** (modulo)</span>
 
 JS evaluates more complex expressions using the general math order of  
 operations aka PEMDAS.
 
-- <span id="4923">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
-- <span id="e245">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
+-   <span id="4923">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
+-   <span id="e245">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
 
 **Modulo** : Very useful operation to check divisibility of numbers,  
 check for even & odd, whether a number is prime, and much more!  
 _(Discrete Math concept, circular problems can be solved with modulo)_
 
-- <span id="9608">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.</span>
-- <span id="3b00">`console.log(7 % 10); // => 7;`</span>
+-   <span id="9608">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.</span>
+-   <span id="3b00">`console.log(7 % 10); // => 7;`</span>
 
 ### The String Data Type
 
 The **string** data type is a primitive data type that used to represent  
 textual data.
 
-- <span id="792d">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
-- <span id="4f91">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.</span>
+-   <span id="792d">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
+-   <span id="4f91">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.</span>
 
 <!-- -->
 
@@ -90,7 +90,7 @@ textual data.
     'Shakespeare wrote, "To be or not to be"'; (valid)
     'That's a bad string'; (invalid)
 
-- <span id="a54b">Alt. way to add other quotes within strings is to use template literals.</span>
+-   <span id="a54b">Alt. way to add other quotes within strings is to use template literals.</span>
 
 ### `This is a template literal`
 
@@ -107,25 +107,25 @@ textual data.
     console.log("boots"[1 * 2]); // => "o"
     console.log("boots"["boot".length - 1]); // => "t"
 
-- <span id="bcc3">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
-- <span id="f60b">The index of the last character of a string is always one less than it’s length.</span>
-- <span id="5329">**indexOf()** : method used to find the first index of a given character within a string.</span>
-- <span id="6813">`console.log("bagel".indexOf("b")); // => 0 console.log("bagel".indexOf("z")); // => -1`</span>
-- <span id="262e">**if the character inside the indexOf() search does not exist in the string, the output will be -1.**</span>
-- <span id="0646">the indexOf() search will return the first instanced index of the the char in the string.</span>
-- <span id="15e0">**concatenate** : word to describe joining strings together into a single string.</span>
+-   <span id="bcc3">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
+-   <span id="f60b">The index of the last character of a string is always one less than it’s length.</span>
+-   <span id="5329">**indexOf()** : method used to find the first index of a given character within a string.</span>
+-   <span id="6813">`console.log("bagel".indexOf("b")); // => 0 console.log("bagel".indexOf("z")); // => -1`</span>
+-   <span id="262e">**if the character inside the indexOf() search does not exist in the string, the output will be -1.**</span>
+-   <span id="0646">the indexOf() search will return the first instanced index of the the char in the string.</span>
+-   <span id="15e0">**concatenate** : word to describe joining strings together into a single string.</span>
 
 ### The Boolean Data Type
 
 The **Boolean** data type is the simplest data type since there are only  
 two values: **true** and **false**.
 
-- <span id="62d6">**Logical Operators** (Boolean Operators) are used to establish logic in our code.</span>
-- <span id="bae2">**!** (not) : reverses a Boolean value.</span>
+-   <span id="62d6">**Logical Operators** (Boolean Operators) are used to establish logic in our code.</span>
+-   <span id="bae2">**!** (not) : reverses a Boolean value.</span>
 
 `console.log(!true); // => false console.log(!!false); // => false`
 
-- <span id="71d9">**&&** (and) **Truth Table**</span>
+-   <span id="71d9">**&&** (and) **Truth Table**</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Y4qzqSB0C-9AmtXf.png" class="graf-image" /></figure>-   <span id="c706">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
 -   <span id="1e21">**De Morgan’s Law** : Common mistake in Boolean logic is incorrectly distributing ! across parentheses.</span>
@@ -138,12 +138,12 @@ All comparison operators will result in a Boolean output.
 
 **The relative comparators**
 
-- <span id="0d1c">**&gt;** (greater than)</span>
-- <span id="77dd">**&lt;** (less than)</span>
-- <span id="2041">**&gt;=** (greater than or equal to)</span>
-- <span id="55fd">**&lt;=** (less than or equal to)</span>
-- <span id="1b7c">**===** (equal to)</span>
-- <span id="09a6">**!==** (not equal to)</span>
+-   <span id="0d1c">**&gt;** (greater than)</span>
+-   <span id="77dd">**&lt;** (less than)</span>
+-   <span id="2041">**&gt;=** (greater than or equal to)</span>
+-   <span id="55fd">**&lt;=** (less than or equal to)</span>
+-   <span id="1b7c">**===** (equal to)</span>
+-   <span id="09a6">**!==** (not equal to)</span>
 
 > Fun Fact: “a” &lt; “b” is considered valid JS Code because string  
 > comparisons are compared lexicographically (meaning dictionary order),  
@@ -155,34 +155,34 @@ All comparison operators will result in a Boolean output.
 
 **Difference between == and ===**
 
-- <span id="3fec">**===** : Strict Equality, will only return true if the two comparisons are entirely the same.</span>
-- <span id="224d">**==** : Loose Equality, will return true even if the values are of a different type, due to coercion. (Avoid using this)</span>
+-   <span id="3fec">**===** : Strict Equality, will only return true if the two comparisons are entirely the same.</span>
+-   <span id="224d">**==** : Loose Equality, will return true even if the values are of a different type, due to coercion. (Avoid using this)</span>
 
 ### Variables
 
 Variables are used to store information to be referenced and manipulated  
 in a program.
 
-- <span id="e084">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).</span>
-- <span id="92ec">`let bootcamp = "Lambda"; console.log(bootcamp); // "Lambda"`</span>
-- <span id="f5af">JS variable names can contain any alphanumeric characters,  
-  underscores, or dollar signs (cannot being with a number).</span>
-- <span id="5288">If you do not declare a value for a variable, undefined is  
-  automatically set.</span>
-- <span id="5f49">`let bootcamp; console.log(bootcamp); // undefined`</span>
-- <span id="ea4b">We can change the value of a previously declared variable (let, not  
-  const) by re-assigning it another value.</span>
-- <span id="ef75">**let** is the updated version of **var**; there are some  
-  differences in terms of hoisting and global/block scope — will be  
-  covered later in the course (common interview question!)</span>
+-   <span id="e084">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).</span>
+-   <span id="92ec">`let bootcamp = "Lambda"; console.log(bootcamp); // "Lambda"`</span>
+-   <span id="f5af">JS variable names can contain any alphanumeric characters,  
+    underscores, or dollar signs (cannot being with a number).</span>
+-   <span id="5288">If you do not declare a value for a variable, undefined is  
+    automatically set.</span>
+-   <span id="5f49">`let bootcamp; console.log(bootcamp); // undefined`</span>
+-   <span id="ea4b">We can change the value of a previously declared variable (let, not  
+    const) by re-assigning it another value.</span>
+-   <span id="ef75">**let** is the updated version of **var**; there are some  
+    differences in terms of hoisting and global/block scope — will be  
+    covered later in the course (common interview question!)</span>
 
 **Assignment Shorthand**
 
     let num = 0;num += 10; // same as num = num + 10num -= 2; // same as num = num - 2num /= 4; // same as num = num / 4num *= 7; // same as num = num * 7
 
-- <span id="7ff5">In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.</span>
-- <span id="2798">**declaration** : process of simply introducing a variable name.</span>
-- <span id="ad51">**initialization** : process of both declaring and assigning a variable on the same line.</span>
+-   <span id="7ff5">In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.</span>
+-   <span id="2798">**declaration** : process of simply introducing a variable name.</span>
+-   <span id="ad51">**initialization** : process of both declaring and assigning a variable on the same line.</span>
 
 ### Functions
 
@@ -190,24 +190,24 @@ A function is a procedure of code that will run when called. Functions
 are used so that we do not have to rewrite code to do the same thing  
 over and over. (Think of them as ‘subprograms’)
 
-- <span id="01bb">**Function Declaration** : Process when we first initially write our function.</span>
-- <span id="963b">Includes three things:</span>
-- <span id="32df">Name of the function.</span>
-- <span id="7930">A list of _parameters_ ()</span>
-- <span id="145e">The code to execute {}</span>
-- <span id="37c0">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
-- <span id="f3cc">JS evaluates code top down, left to right.</span>
-- <span id="cf9c">When we execute a declared function later on in our program we refer to this as **invoking** our function.</span>
-- <span id="4374">Every function in JS returns undefined unless otherwise specified.</span>
-- <span id="3bb7">When we hit a **return** statement in a function we immediately exit the function and return to where we called the function.</span>
-- <span id="0ce8">When naming functions in JS always use camelCase and name it something appropriate. &gt; Great code reads like English and almost explains itself. Think: Elegant, readable, and maintainable!</span>
+-   <span id="01bb">**Function Declaration** : Process when we first initially write our function.</span>
+-   <span id="963b">Includes three things:</span>
+-   <span id="32df">Name of the function.</span>
+-   <span id="7930">A list of _parameters_ ()</span>
+-   <span id="145e">The code to execute {}</span>
+-   <span id="37c0">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
+-   <span id="f3cc">JS evaluates code top down, left to right.</span>
+-   <span id="cf9c">When we execute a declared function later on in our program we refer to this as **invoking** our function.</span>
+-   <span id="4374">Every function in JS returns undefined unless otherwise specified.</span>
+-   <span id="3bb7">When we hit a **return** statement in a function we immediately exit the function and return to where we called the function.</span>
+-   <span id="0ce8">When naming functions in JS always use camelCase and name it something appropriate. &gt; Great code reads like English and almost explains itself. Think: Elegant, readable, and maintainable!</span>
 
 ### Parameters and Arguments
 
-- <span id="38d3">**Parameters** : Comma separated variables specified as part of a function’s declaration.</span>
-- <span id="ecef">**Arguments** : Values passed to the function when it is invoked.</span>
-- <span id="a836">_If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work._</span>
-- <span id="a53a">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
+-   <span id="38d3">**Parameters** : Comma separated variables specified as part of a function’s declaration.</span>
+-   <span id="ecef">**Arguments** : Values passed to the function when it is invoked.</span>
+-   <span id="a836">_If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work._</span>
+-   <span id="a53a">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
 
 ---
 
@@ -256,28 +256,28 @@ Here’s a live code editor where you can mess with any of the examples…
 
 #### Coding practice
 
-- <span id="824c"><a href="https://leetcode.com/" class="markup--anchor markup--li-anchor">LeetCode</a></span>
-- <span id="a528"><a href="https://www.interviewbit.com/" class="markup--anchor markup--li-anchor">InterviewBit</a></span>
-- <span id="fa41"><a href="https://codility.com/" class="markup--anchor markup--li-anchor">Codility</a></span>
-- <span id="6c61"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">HackerRank</a></span>
-- <span id="dff6"><a href="https://projecteuler.net/" class="markup--anchor markup--li-anchor">Project Euler</a></span>
-- <span id="b2dd"><a href="https://spoj.com/" class="markup--anchor markup--li-anchor">Spoj</a></span>
-- <span id="c8e8"><a href="https://code.google.com/codejam/contests.html" class="markup--anchor markup--li-anchor">Google Code Jam practice problems</a></span>
-- <span id="e8bb"><a href="https://www.hackerearth.com/" class="markup--anchor markup--li-anchor">HackerEarth</a></span>
-- <span id="e803"><a href="https://www.topcoder.com/" class="markup--anchor markup--li-anchor">Top Coder</a></span>
-- <span id="294e"><a href="https://www.codechef.com/" class="markup--anchor markup--li-anchor">CodeChef</a></span>
-- <span id="9c05"><a href="https://www.codewars.com/" class="markup--anchor markup--li-anchor">Codewars</a></span>
-- <span id="356e"><a href="https://codesignal.com/" class="markup--anchor markup--li-anchor">CodeSignal</a></span>
-- <span id="2d20"><a href="http://codekata.com/" class="markup--anchor markup--li-anchor">CodeKata</a></span>
-- <span id="d3bf"><a href="https://www.firecode.io/" class="markup--anchor markup--li-anchor">Firecode</a></span>
+-   <span id="824c"><a href="https://leetcode.com/" class="markup--anchor markup--li-anchor">LeetCode</a></span>
+-   <span id="a528"><a href="https://www.interviewbit.com/" class="markup--anchor markup--li-anchor">InterviewBit</a></span>
+-   <span id="fa41"><a href="https://codility.com/" class="markup--anchor markup--li-anchor">Codility</a></span>
+-   <span id="6c61"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">HackerRank</a></span>
+-   <span id="dff6"><a href="https://projecteuler.net/" class="markup--anchor markup--li-anchor">Project Euler</a></span>
+-   <span id="b2dd"><a href="https://spoj.com/" class="markup--anchor markup--li-anchor">Spoj</a></span>
+-   <span id="c8e8"><a href="https://code.google.com/codejam/contests.html" class="markup--anchor markup--li-anchor">Google Code Jam practice problems</a></span>
+-   <span id="e8bb"><a href="https://www.hackerearth.com/" class="markup--anchor markup--li-anchor">HackerEarth</a></span>
+-   <span id="e803"><a href="https://www.topcoder.com/" class="markup--anchor markup--li-anchor">Top Coder</a></span>
+-   <span id="294e"><a href="https://www.codechef.com/" class="markup--anchor markup--li-anchor">CodeChef</a></span>
+-   <span id="9c05"><a href="https://www.codewars.com/" class="markup--anchor markup--li-anchor">Codewars</a></span>
+-   <span id="356e"><a href="https://codesignal.com/" class="markup--anchor markup--li-anchor">CodeSignal</a></span>
+-   <span id="2d20"><a href="http://codekata.com/" class="markup--anchor markup--li-anchor">CodeKata</a></span>
+-   <span id="d3bf"><a href="https://www.firecode.io/" class="markup--anchor markup--li-anchor">Firecode</a></span>
 
 ### Dependent on data
 
 > _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
-- <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
-- <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
-- <span id="881c">**The average-case complexity: when the data looks average**</span>
+-   <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
+-   <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
+-   <span id="881c">**The average-case complexity: when the data looks average**</span>
 
 ### Big O notation
 
@@ -310,8 +310,8 @@ Arrays are among the oldest and most important data structures and are used by e
 
 Here’s the paradox faced by the creator of JavaScript:
 
-- <span id="95d1">There are many things one would want to do with a primitive like a string or a number. It would be great to access them using methods.</span>
-- <span id="10fe">Primitives must be as fast and lightweight as possible.</span>
+-   <span id="95d1">There are many things one would want to do with a primitive like a string or a number. It would be great to access them using methods.</span>
+-   <span id="10fe">Primitives must be as fast and lightweight as possible.</span>
 
 The solution looks a little bit awkward, but here it is:
 

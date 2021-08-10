@@ -8,9 +8,6 @@
 
 ### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
 
-
-
-
 ## [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
 
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
