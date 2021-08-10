@@ -1,4 +1,6 @@
-module.exports = [{
-      plugin: require('../gatsby-browser.js'),
-      options: {"plugins":[]},
-    }]
+module.exports = [
+    {
+        plugin: require('../gatsby-browser.js'),
+        options: { plugins: [] }
+    }
+];
