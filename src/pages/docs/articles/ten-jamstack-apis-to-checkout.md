@@ -14,6 +14,10 @@ seo:
       value: images/incredible-saturn.png
       keyName: property
       relativeUrl: true
+    - name: 'og:title'
+      value: Jamstack APIs
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
