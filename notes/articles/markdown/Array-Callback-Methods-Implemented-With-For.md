@@ -10,11 +10,11 @@ How to implement array callback methods in JavaScript
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW" class="graf-image" /></figure>#### Functions are called “First Class Objects” in JavaScript because:
 
-- <span id="1df8">A function is an instance of the Object type</span>
-- <span id="6e67">A function can have properties and has a link back to its constructor method</span>
-- <span id="c7cf">You can store the function in a variable</span>
-- <span id="b709">You can pass the function as a parameter to another function</span>
-- <span id="2c3c">You can return the function from a function</span>
+-   <span id="1df8">A function is an instance of the Object type</span>
+-   <span id="6e67">A function can have properties and has a link back to its constructor method</span>
+-   <span id="c7cf">You can store the function in a variable</span>
+-   <span id="b709">You can pass the function as a parameter to another function</span>
+-   <span id="2c3c">You can return the function from a function</span>
 
 What do you think will be printed in the following:
 

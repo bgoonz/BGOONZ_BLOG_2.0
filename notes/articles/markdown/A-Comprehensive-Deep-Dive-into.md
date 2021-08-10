@@ -13,46 +13,46 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ### Random Things to Remember
 
-- <span id="1e39">Using `()` implictly returns components.</span>
-- <span id="a547">Role of `index.js` is to _render_ your application.</span>
-- <span id="c38f">The reference to `root` comes from a div in the body of your public HTML file.</span>
-- <span id="a364">State of a component is simply a regular JS Object.</span>
-- <span id="d64b">Class Components require `render()` method to return JSX.</span>
-- <span id="fa3d">Functional Components directly return JSX.</span>
-- <span id="4928">`Class` is `className` in React.</span>
-- <span id="e51a">When parsing for an integer just chain `Number.parseInt("123")`</span>
-- <span id="2924">Use ternary operator if you want to make a conditional inside a fragment.</span>
+-   <span id="1e39">Using `()` implictly returns components.</span>
+-   <span id="a547">Role of `index.js` is to _render_ your application.</span>
+-   <span id="c38f">The reference to `root` comes from a div in the body of your public HTML file.</span>
+-   <span id="a364">State of a component is simply a regular JS Object.</span>
+-   <span id="d64b">Class Components require `render()` method to return JSX.</span>
+-   <span id="fa3d">Functional Components directly return JSX.</span>
+-   <span id="4928">`Class` is `className` in React.</span>
+-   <span id="e51a">When parsing for an integer just chain `Number.parseInt("123")`</span>
+-   <span id="2924">Use ternary operator if you want to make a conditional inside a fragment.</span>
 
 <!-- -->
 
     { x === y ? <div>Naisu</div> : <div>Not Naisu</div>; }
 
-- <span id="ccda">Purpose of `React.Fragment` is to allow you to create groups of children without adding an extra dom element.</span>
+-   <span id="ccda">Purpose of `React.Fragment` is to allow you to create groups of children without adding an extra dom element.</span>
 
 ---
 
 ### Front-End History
 
-- <span id="904c">React makes it easier for you to make front-end elements. A front-end timeline</span>
-- <span id="646a">Some noteworthy front end libraries that have been used in the past few years:</span>
-- <span id="febf">2005: Script.aculo.us</span>
-- <span id="d5ae">2005: Dojo</span>
-- <span id="0657">2006: YUI</span>
-- <span id="c1f9">2010: Knockout</span>
-- <span id="e742">2011: AngularJS</span>
-- <span id="ed7b">2012: Elm</span>
-- <span id="06e4">2013: React (Considered the standard front-end library)</span>
-- <span id="4ff0">React manages the creation and updating of DOM nodes in your Web page.</span>
-- <span id="53cd">All it does is dynamically render stuff into your DOM.</span>
-- <span id="c393">What it doesn’t do:</span>
-- <span id="3088">Ajax</span>
-- <span id="54ee">Services</span>
-- <span id="5e4a">Local Storage</span>
-- <span id="a437">Provide a CSS framework</span>
-- <span id="06e5">React is unopinionated</span>
-- <span id="721c">Just contains a few rules for developers to follow, and it just works.</span>
-- <span id="e2c0">JSX : Javascript Extension is a language invented to help write React Applications (looks like a mixture of JS and HTML)</span>
-- <span id="916b">Here is an overview of the difference between rendering out vanilla JS to create elements, and JSX:</span>
+-   <span id="904c">React makes it easier for you to make front-end elements. A front-end timeline</span>
+-   <span id="646a">Some noteworthy front end libraries that have been used in the past few years:</span>
+-   <span id="febf">2005: Script.aculo.us</span>
+-   <span id="d5ae">2005: Dojo</span>
+-   <span id="0657">2006: YUI</span>
+-   <span id="c1f9">2010: Knockout</span>
+-   <span id="e742">2011: AngularJS</span>
+-   <span id="ed7b">2012: Elm</span>
+-   <span id="06e4">2013: React (Considered the standard front-end library)</span>
+-   <span id="4ff0">React manages the creation and updating of DOM nodes in your Web page.</span>
+-   <span id="53cd">All it does is dynamically render stuff into your DOM.</span>
+-   <span id="c393">What it doesn’t do:</span>
+-   <span id="3088">Ajax</span>
+-   <span id="54ee">Services</span>
+-   <span id="5e4a">Local Storage</span>
+-   <span id="a437">Provide a CSS framework</span>
+-   <span id="06e5">React is unopinionated</span>
+-   <span id="721c">Just contains a few rules for developers to follow, and it just works.</span>
+-   <span id="e2c0">JSX : Javascript Extension is a language invented to help write React Applications (looks like a mixture of JS and HTML)</span>
+-   <span id="916b">Here is an overview of the difference between rendering out vanilla JS to create elements, and JSX:</span>
 
 <!-- -->
 
@@ -87,10 +87,10 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
         ReactDOM.render(<PeopleList props={props} />, peopleListElement);
       });
 
-- <span id="7ea4">This may seem like a lot of code but when you end up building many components, it becomes nice to put each of those functions/classes into their own files to organize your code. Using tools with React</span>
-- <span id="e220">`React DevTools` : New tool in your browser to see ow React is working in the browser</span>
-- <span id="9051">`create-react-app` : Extensible command-line tool to help generate standard React applications.</span>
-- <span id="af96">`Webpack` : In between tool for dealing with the extra build step involved.</span>
+-   <span id="7ea4">This may seem like a lot of code but when you end up building many components, it becomes nice to put each of those functions/classes into their own files to organize your code. Using tools with React</span>
+-   <span id="e220">`React DevTools` : New tool in your browser to see ow React is working in the browser</span>
+-   <span id="9051">`create-react-app` : Extensible command-line tool to help generate standard React applications.</span>
+-   <span id="af96">`Webpack` : In between tool for dealing with the extra build step involved.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LHVHf7SPZ1t0UVAj" class="graf-image" /></figure>-   <span id="e0ad">HMR : (Hot Module Replacement) When you make changes to your source code the changes are delivered in real-time.</span>
 -   <span id="923a">React Developers created something called `Flux Architecture` to moderate how their web page consumes and modifies data received from back-end API's.</span>
@@ -104,26 +104,26 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 There are many benefits to using React over just Vanilla JavaScript.
 
-- <span id="8107">`Modularity`</span>
-- <span id="15ac">To avoid the mess of many event listeners and template strings, React gives you the benefit of a lot of modularity.</span>
-- <span id="c1c5">`Easy to start`</span>
-- <span id="90ce">No specials tools are needed to use Basic React.</span>
-- <span id="9ec9">You can start working directly with `createElement` method in React.</span>
-- <span id="dd3c">`Declarative Programming`</span>
-- <span id="d3e6">React is declarative in nature, utilizing either it’s built-in createElement method or the higher-level language known as JSX.</span>
-- <span id="ba8b">`Reusability`</span>
-- <span id="a3c2">Create elements that can be re-used over and over. One-flow of data</span>
-- <span id="27d2">React apps are built as a combination of parent and child components.</span>
-- <span id="6da8">Parents can have one or more child components, all children have parents.</span>
-- <span id="26d8">Data is never passed from child to the parent.</span>
-- <span id="86be">`Virtual DOM` : React provides a Virtual DOM that acts as an agent between the real DOM and the developer to help debug, maintain, and provide general use.</span>
-- <span id="6747">Due to this usage, React handles web pages much more intelligently; making it one of the speediest Front End Libraries available.</span>
+-   <span id="8107">`Modularity`</span>
+-   <span id="15ac">To avoid the mess of many event listeners and template strings, React gives you the benefit of a lot of modularity.</span>
+-   <span id="c1c5">`Easy to start`</span>
+-   <span id="90ce">No specials tools are needed to use Basic React.</span>
+-   <span id="9ec9">You can start working directly with `createElement` method in React.</span>
+-   <span id="dd3c">`Declarative Programming`</span>
+-   <span id="d3e6">React is declarative in nature, utilizing either it’s built-in createElement method or the higher-level language known as JSX.</span>
+-   <span id="ba8b">`Reusability`</span>
+-   <span id="a3c2">Create elements that can be re-used over and over. One-flow of data</span>
+-   <span id="27d2">React apps are built as a combination of parent and child components.</span>
+-   <span id="6da8">Parents can have one or more child components, all children have parents.</span>
+-   <span id="26d8">Data is never passed from child to the parent.</span>
+-   <span id="86be">`Virtual DOM` : React provides a Virtual DOM that acts as an agent between the real DOM and the developer to help debug, maintain, and provide general use.</span>
+-   <span id="6747">Due to this usage, React handles web pages much more intelligently; making it one of the speediest Front End Libraries available.</span>
 
 ### ES6 Refresher
 
 Exporting one item per file
 
-- <span id="5538">Use `export default` statement in ES6 to export an item. ES6</span>
+-   <span id="5538">Use `export default` statement in ES6 to export an item. ES6</span>
 
 <!-- -->
 
@@ -148,7 +148,7 @@ CommonJS (Equivalent)
 
 Exporting multiple items per file
 
-- <span id="9a6e">Use just thw `export` keyword (without default) to export multiple items per file. ES6 (Better to export them individually like this, rather than bunching them all into an object)</span>
+-   <span id="9a6e">Use just thw `export` keyword (without default) to export multiple items per file. ES6 (Better to export them individually like this, rather than bunching them all into an object)</span>
 
 <!-- -->
 
@@ -207,7 +207,7 @@ CommonJS
 
 Unnamed default imports
 
-- <span id="75e2">You can name unnamed items exported with export default any name when you import them.</span>
+-   <span id="75e2">You can name unnamed items exported with export default any name when you import them.</span>
 
 <!-- -->
 
@@ -219,7 +219,7 @@ Unnamed default imports
     import Money from "wallet.js";
     const wallet = new Money();
 
-- <span id="5042">Just remember if you use `export` instead of `export default` then your import is already named and cannot be renamed.</span>
+-   <span id="5042">Just remember if you use `export` instead of `export default` then your import is already named and cannot be renamed.</span>
 
 <!-- -->
 
@@ -233,8 +233,8 @@ Unnamed default imports
 
 Aliasing imports
 
-- <span id="3535">Use as asterisk to import an entire module’s contents.</span>
-- <span id="3f1c">Keep in mind you must use an `as` keyword to refer to it later.</span>
+-   <span id="3535">Use as asterisk to import an entire module’s contents.</span>
+-   <span id="3f1c">Keep in mind you must use an `as` keyword to refer to it later.</span>
 
 <!-- -->
 
@@ -250,7 +250,7 @@ Aliasing imports
     Greetings.sayHello(); // Hello!
     Greetings.sayHi(); // Hi!
 
-- <span id="bfbc">You can also name identically named functions or items from different files.</span>
+-   <span id="bfbc">You can also name identically named functions or items from different files.</span>
 
 <!-- -->
 
@@ -261,8 +261,8 @@ Aliasing imports
 
 Browser support for ES6 Modules
 
-- <span id="69b4">ES6 Modules can only be used when a JS file is specified as a module. `<script type="module" src="./wallet.js"></script>`</span>
-- <span id="4f5c">You can get browser support for ES6 modules by adding module into your script tag.</span>
+-   <span id="69b4">ES6 Modules can only be used when a JS file is specified as a module. `<script type="module" src="./wallet.js"></script>`</span>
+-   <span id="4f5c">You can get browser support for ES6 modules by adding module into your script tag.</span>
 
 ---
 
@@ -270,11 +270,11 @@ Browser support for ES6 Modules
 
 ### JSX In Depth
 
-- <span id="2a0d">Remember that JSX is just syntactic sugar for the built in `React.createElement(component, props, ...children)`</span>
-- <span id="1532">React Library must always be in scope from your JSX code.</span>
-- <span id="72b2">Use Dot Notation for JSX Type</span>
-- <span id="0cbc">User-Defined Components Must Be Capitalized `<Foo />` vs `<div>`</span>
-- <span id="553a">Cannot use a general expression as the React element type. (`Incorrect`)</span>
+-   <span id="2a0d">Remember that JSX is just syntactic sugar for the built in `React.createElement(component, props, ...children)`</span>
+-   <span id="1532">React Library must always be in scope from your JSX code.</span>
+-   <span id="72b2">Use Dot Notation for JSX Type</span>
+-   <span id="0cbc">User-Defined Components Must Be Capitalized `<Foo />` vs `<div>`</span>
+-   <span id="553a">Cannot use a general expression as the React element type. (`Incorrect`)</span>
 
 <!-- -->
 
@@ -293,26 +293,26 @@ Browser support for ES6 Modules
 
 Props in JSX
 
-- <span id="e549">Several ways to specify props in JSX.</span>
-- <span id="257d">`Javascript Expressions as Props`</span>
+-   <span id="e549">Several ways to specify props in JSX.</span>
+-   <span id="257d">`Javascript Expressions as Props`</span>
 
 <!-- -->
 
     <MyComponent foo={1 + 2 + 3 + 4} />
 
-- <span id="57f8">`String Literals`</span>
+-   <span id="57f8">`String Literals`</span>
 
 <!-- -->
 
     <MyComponent message="hello world" /> <MyComponent message={'hello world'} /> <MyComponent message="&lt;3" /> <MyComponent message={'❤'} />
 
-- <span id="48df">`Props Default to “True”`</span>
+-   <span id="48df">`Props Default to “True”`</span>
 
 <!-- -->
 
     <MyTextBox autocomplete /> <MyTextBox autocomplete={true} />
 
-- <span id="2072">`Spread Attributes`</span>
+-   <span id="2072">`Spread Attributes`</span>
 
 <!-- -->
 
@@ -320,7 +320,7 @@ Props in JSX
 
 Children in JSX
 
-- <span id="2238">`props.children` : The content between opening and closing tag. JavaScript Expressions as Children</span>
+-   <span id="2238">`props.children` : The content between opening and closing tag. JavaScript Expressions as Children</span>
 
 <!-- -->
 
@@ -340,7 +340,7 @@ Children in JSX
 
 Functions as Children
 
-- <span id="bf0a">`props.children` works like any other prop, meaning it can pass any sort of data.</span>
+-   <span id="bf0a">`props.children` works like any other prop, meaning it can pass any sort of data.</span>
 
 <!-- -->
 
@@ -362,9 +362,9 @@ Functions as Children
 
 Booleans, Null, and Undefined Are Ignored
 
-- <span id="7017">`false`, `null`, `undefined`, and `true` are all valid children.</span>
-- <span id="5af2">They will not render.</span>
-- <span id="10dc">You can use these to conditionally render items.</span>
+-   <span id="7017">`false`, `null`, `undefined`, and `true` are all valid children.</span>
+-   <span id="5af2">They will not render.</span>
+-   <span id="10dc">You can use these to conditionally render items.</span>
 
 <!-- -->
 
@@ -373,7 +373,7 @@ Booleans, Null, and Undefined Are Ignored
       <Content />
     </div>
 
-- <span id="fa28">In this example, the component will only render if `showHeader` evals to True.</span>
+-   <span id="fa28">In this example, the component will only render if `showHeader` evals to True.</span>
 
 <!-- -->
 
@@ -390,8 +390,8 @@ Booleans, Null, and Undefined Are Ignored
       }
     </div>
 
-- <span id="3701">Note that certain falsy values such as zero will still be rendered by React, you can work around this by ensuring situations like the above eval. into a boolean.</span>
-- <span id="9586">In the times you want booleans to be rendered out, simply convert it into a string first.</span>
+-   <span id="3701">Note that certain falsy values such as zero will still be rendered by React, you can work around this by ensuring situations like the above eval. into a boolean.</span>
+-   <span id="9586">In the times you want booleans to be rendered out, simply convert it into a string first.</span>
 
 <!-- -->
 
@@ -401,11 +401,11 @@ Booleans, Null, and Undefined Are Ignored
 
 The Diffing Algorithm
 
-- <span id="76c4">`Diffing` : When the state of a component changes React creates a new virtual DOM tree.</span>
-- <span id="9a73">Elements of Different Types</span>
-- <span id="d680">Every time the root elements have different types, React tears down the old tree and builds the new tree from scratch.</span>
-- <span id="84a6">DOM Elements Of the Same Type</span>
-- <span id="4b94">When comparing two DOM elements of the same type, React keeps the same underlying DOM node and only updates the changes attributes.</span>
+-   <span id="76c4">`Diffing` : When the state of a component changes React creates a new virtual DOM tree.</span>
+-   <span id="9a73">Elements of Different Types</span>
+-   <span id="d680">Every time the root elements have different types, React tears down the old tree and builds the new tree from scratch.</span>
+-   <span id="84a6">DOM Elements Of the Same Type</span>
+-   <span id="4b94">When comparing two DOM elements of the same type, React keeps the same underlying DOM node and only updates the changes attributes.</span>
 
 <!-- -->
 
@@ -413,23 +413,23 @@ The Diffing Algorithm
 
     <div style={{ color: “red”, fontWeight: “bold” }} /> <div style={{color: ‘green’, fontWeight: ‘bold’}} />
 
-- <span id="0a0c">Component Elements Of The Same Type</span>
-- <span id="cf3a">When components update, instances will remain the same, so that state maintains across renders.</span>
-- <span id="b8ab">React will only update the props, to match the new element.</span>
-- <span id="82f3">Recursing On Children</span>
-- <span id="4a59">React will iterate both lists of children and generate a mutation whenever there’s a difference.</span>
-- <span id="74a8">This is why we use `keys`.</span>
-- <span id="381c">Makes it easier for React to match children in the original tree with children in the subsequent tree.</span>
-- <span id="f1f5">Tradeoffs</span>
-- <span id="e98a">Important to remember that reconciliation algorithm is an _implementation detail_.</span>
-- <span id="7f57">Re-rendering only to apply the differences following the rules stated in the previous sections.</span>
+-   <span id="0a0c">Component Elements Of The Same Type</span>
+-   <span id="cf3a">When components update, instances will remain the same, so that state maintains across renders.</span>
+-   <span id="b8ab">React will only update the props, to match the new element.</span>
+-   <span id="82f3">Recursing On Children</span>
+-   <span id="4a59">React will iterate both lists of children and generate a mutation whenever there’s a difference.</span>
+-   <span id="74a8">This is why we use `keys`.</span>
+-   <span id="381c">Makes it easier for React to match children in the original tree with children in the subsequent tree.</span>
+-   <span id="f1f5">Tradeoffs</span>
+-   <span id="e98a">Important to remember that reconciliation algorithm is an _implementation detail_.</span>
+-   <span id="7f57">Re-rendering only to apply the differences following the rules stated in the previous sections.</span>
 
 ### Typechecking With PropTypes
 
-- <span id="0bc0">As your application grows, you can use React’s `typechecking` to catch bugs.</span>
-- <span id="638c">`propTypes` is a special property to run typechecking.</span>
-- <span id="e725">exports range of built in validators to ensure your received data is valid.</span>
-- <span id="f590">propTypes is only checked in development mode.</span>
+-   <span id="0bc0">As your application grows, you can use React’s `typechecking` to catch bugs.</span>
+-   <span id="638c">`propTypes` is a special property to run typechecking.</span>
+-   <span id="e725">exports range of built in validators to ensure your received data is valid.</span>
+-   <span id="f590">propTypes is only checked in development mode.</span>
 
 <!-- -->
 
@@ -445,7 +445,7 @@ The Diffing Algorithm
 
 Requiring Single Child
 
-- <span id="e2db">Use `PropTypes.element` to specify only a single child can be passed to a component as children.</span>
+-   <span id="e2db">Use `PropTypes.element` to specify only a single child can be passed to a component as children.</span>
 
 <!-- -->
 
@@ -463,7 +463,7 @@ Requiring Single Child
 
 Default Prop Values
 
-- <span id="7d3d">Use `defaultProps` to assign default values for props.</span>
+-   <span id="7d3d">Use `defaultProps` to assign default values for props.</span>
 
 <!-- -->
 
@@ -495,23 +495,23 @@ Default Prop Values
 
 ### React Router Introduction
 
-- <span id="48a7">`React Router` is the answer for rendering different components for different pages.</span>
-- <span id="78b3">A front-end library that allows you to control which components to display using the browser location.</span>
-- <span id="aa2a">`Client-side Routing` Getting started with routing</span>
-- <span id="0940">Install React Router with:</span>
-- <span id="742a">npm install — save react-router-dom@⁵.1.2</span>
-- <span id="f07f">Import `Browser Router` from package.</span>
-- <span id="9e4e">import { BrowserRouter } from “react-router-dom”;</span>
-- <span id="cb01">`BrowserRouter` is the primary component of the router that wraps your route hierarchy.</span>
-- <span id="adfa">Wrap it around components.</span>
-- <span id="0276">Creates a `React Context` that passes routing information down to all its descendant components.</span>
-- <span id="dd45">You can also use `HashRouter`, where it would generate a hash before the endpoint. Creating frontend routes</span>
-- <span id="37c2">React Router helps your app render specific components based on the URL.</span>
-- <span id="54c4">The most common component is `<Route>`</span>
-- <span id="500a">Wrapped around another component, causing the comp. to only render if the a certain URL is matched.</span>
-- <span id="5a94">`Props` : path, component, exact, and \[render\]</span>
-- <span id="9f06">Browser Router can only have a single child component.</span>
-- <span id="6305">The Browser Router wraps all routes within a parent div element.</span>
+-   <span id="48a7">`React Router` is the answer for rendering different components for different pages.</span>
+-   <span id="78b3">A front-end library that allows you to control which components to display using the browser location.</span>
+-   <span id="aa2a">`Client-side Routing` Getting started with routing</span>
+-   <span id="0940">Install React Router with:</span>
+-   <span id="742a">npm install — save react-router-dom@⁵.1.2</span>
+-   <span id="f07f">Import `Browser Router` from package.</span>
+-   <span id="9e4e">import { BrowserRouter } from “react-router-dom”;</span>
+-   <span id="cb01">`BrowserRouter` is the primary component of the router that wraps your route hierarchy.</span>
+-   <span id="adfa">Wrap it around components.</span>
+-   <span id="0276">Creates a `React Context` that passes routing information down to all its descendant components.</span>
+-   <span id="dd45">You can also use `HashRouter`, where it would generate a hash before the endpoint. Creating frontend routes</span>
+-   <span id="37c2">React Router helps your app render specific components based on the URL.</span>
+-   <span id="54c4">The most common component is `<Route>`</span>
+-   <span id="500a">Wrapped around another component, causing the comp. to only render if the a certain URL is matched.</span>
+-   <span id="5a94">`Props` : path, component, exact, and \[render\]</span>
+-   <span id="9f06">Browser Router can only have a single child component.</span>
+-   <span id="6305">The Browser Router wraps all routes within a parent div element.</span>
 
 <!-- -->
 
@@ -532,25 +532,25 @@ Default Prop Values
       );
     };
 
-- <span id="c057">component</span>
-- <span id="2dcc">Indicates component to render.</span>
-- <span id="740c">path</span>
-- <span id="3030">Indicates path to render a specific component.</span>
-- <span id="0741">exact</span>
-- <span id="52cb">Tells route to not pattern match and only render a certain route exclusively to it’s associated component.</span>
-- <span id="cb93">render</span>
-- <span id="c702">Optional prop that takes in a function to be called.</span>
-- <span id="594b">Causes extra work for React.</span>
-- <span id="5320">Preferred for inline rendering of simple functional components.</span>
-- <span id="0d3e">Difference between `component` and `render` is that component returns new JSX that be re-mounted, but render returns the JSX that will be mounted only once.</span>
-- <span id="4a08">// This inline rendering will work, but is unnecessarily slow. &lt;Route path=”/hello” component={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt; // This is the preferred way for inline rendering. &lt;Route path=”/hello” render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;</span>
-- <span id="a2d3">Also useful if you need to pass in specific props to a component.</span>
-- <span id="e09f">// \`users\` to be passed as a prop: const users = { 1: { name: “Andrew” }, 2: { name: “Raymond” }, }; &lt;Route path=”/users” render={() =&gt; &lt;Users users={users} /&gt;} /&gt;;</span>
+-   <span id="c057">component</span>
+-   <span id="2dcc">Indicates component to render.</span>
+-   <span id="740c">path</span>
+-   <span id="3030">Indicates path to render a specific component.</span>
+-   <span id="0741">exact</span>
+-   <span id="52cb">Tells route to not pattern match and only render a certain route exclusively to it’s associated component.</span>
+-   <span id="cb93">render</span>
+-   <span id="c702">Optional prop that takes in a function to be called.</span>
+-   <span id="594b">Causes extra work for React.</span>
+-   <span id="5320">Preferred for inline rendering of simple functional components.</span>
+-   <span id="0d3e">Difference between `component` and `render` is that component returns new JSX that be re-mounted, but render returns the JSX that will be mounted only once.</span>
+-   <span id="4a08">// This inline rendering will work, but is unnecessarily slow. &lt;Route path=”/hello” component={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt; // This is the preferred way for inline rendering. &lt;Route path=”/hello” render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;</span>
+-   <span id="a2d3">Also useful if you need to pass in specific props to a component.</span>
+-   <span id="e09f">// \`users\` to be passed as a prop: const users = { 1: { name: “Andrew” }, 2: { name: “Raymond” }, }; &lt;Route path=”/users” render={() =&gt; &lt;Users users={users} /&gt;} /&gt;;</span>
 
 Route path params
 
-- <span id="3d09">Your component’s props can hold information about URL’s parameters.</span>
-- <span id="52f3">Will match segments starting at `:` to the next `/`, `?`, `#`.</span>
+-   <span id="3d09">Your component’s props can hold information about URL’s parameters.</span>
+-   <span id="52f3">Will match segments starting at `:` to the next `/`, `?`, `#`.</span>
 
 <!-- -->
 
@@ -559,13 +559,13 @@ Route path params
       render={(props) => <Profile users={users} {...props} />}
     />
 
-- <span id="f2b4">`{...props}` spreads out the router's props.</span>
-- <span id="1edb">`props.match.params` is used to access the match prop's parameters.</span>
-- <span id="b6a9">Useful keys on the `match` object:</span>
-- <span id="290f">`isExact` : boolean that tells you whether or not the URL exactly matches the path.</span>
-- <span id="27ea">`url` : the currentURL</span>
-- <span id="b979">`path` : Route path it matched against (w/o wildcards)</span>
-- <span id="6c59">`params` : Matches for the individual wildcard segments.</span>
+-   <span id="f2b4">`{...props}` spreads out the router's props.</span>
+-   <span id="1edb">`props.match.params` is used to access the match prop's parameters.</span>
+-   <span id="b6a9">Useful keys on the `match` object:</span>
+-   <span id="290f">`isExact` : boolean that tells you whether or not the URL exactly matches the path.</span>
+-   <span id="27ea">`url` : the currentURL</span>
+-   <span id="b979">`path` : Route path it matched against (w/o wildcards)</span>
+-   <span id="6c59">`params` : Matches for the individual wildcard segments.</span>
 
 ---
 
@@ -573,29 +573,29 @@ Route path params
 
 React Router Navigation
 
-- <span id="a548">`Link`, `NavLink`, `Redirect`, `history` props of React Router are used to help your user navigate routes. Adding links for navigation</span>
-- <span id="643f">Issues on-click navigation event to a route defined in app.</span>
-- <span id="949d">Usage renders an anchor tag with a correctly set `href` attribute.</span>
+-   <span id="a548">`Link`, `NavLink`, `Redirect`, `history` props of React Router are used to help your user navigate routes. Adding links for navigation</span>
+-   <span id="643f">Issues on-click navigation event to a route defined in app.</span>
+-   <span id="949d">Usage renders an anchor tag with a correctly set `href` attribute.</span>
 
 <!-- -->
 
     import { BrowserRouter, Route, Link } from "react-router-dom";
 
-- <span id="b5a5">`Link` takes two properties: `to` and `onClick`.</span>
-- <span id="995b">`to` : route location that points to an absolute path.</span>
-- <span id="978c">`onClick` : clickHandler.</span>
-- <span id="b8c0">`NavLink` works just like `Link` but has a bit of extra functionality.</span>
-- <span id="6334">Adds extra styling, when the path it links to matches the current path.</span>
-- <span id="07b8">As it’s name suggests, it is used to Nav Bars.</span>
-- <span id="8a33">Takes three props:</span>
-- <span id="e501">`activeClassName` : allows you to set a CSS class name for styling. (default set to 'active')</span>
-- <span id="81da">`activeStyle` : style object that is applied inline when it's `to` prop. matches the current URL.</span>
-- <span id="8c71">`exact` prop is a boolean that defaults to false; you can set it to true to apply requirement of an exact URL match.</span>
-- <span id="755b">exact can also be used as a flag instead of a reg. property value.</span>
-- <span id="dd12">benefit of adding this is so that you don’t trigger other matches. Switching between routes</span>
-- <span id="4fb6">`<Switch>` : Component allows you to only render one route even if several match the current URL.</span>
-- <span id="7be7">You may nest as many routes as you wish but only the first match of the current URL will be rendered.</span>
-- <span id="3f8a">Very useful if we want a default component to render if none of our routes match.</span>
+-   <span id="b5a5">`Link` takes two properties: `to` and `onClick`.</span>
+-   <span id="995b">`to` : route location that points to an absolute path.</span>
+-   <span id="978c">`onClick` : clickHandler.</span>
+-   <span id="b8c0">`NavLink` works just like `Link` but has a bit of extra functionality.</span>
+-   <span id="6334">Adds extra styling, when the path it links to matches the current path.</span>
+-   <span id="07b8">As it’s name suggests, it is used to Nav Bars.</span>
+-   <span id="8a33">Takes three props:</span>
+-   <span id="e501">`activeClassName` : allows you to set a CSS class name for styling. (default set to 'active')</span>
+-   <span id="81da">`activeStyle` : style object that is applied inline when it's `to` prop. matches the current URL.</span>
+-   <span id="8c71">`exact` prop is a boolean that defaults to false; you can set it to true to apply requirement of an exact URL match.</span>
+-   <span id="755b">exact can also be used as a flag instead of a reg. property value.</span>
+-   <span id="dd12">benefit of adding this is so that you don’t trigger other matches. Switching between routes</span>
+-   <span id="4fb6">`<Switch>` : Component allows you to only render one route even if several match the current URL.</span>
+-   <span id="7be7">You may nest as many routes as you wish but only the first match of the current URL will be rendered.</span>
+-   <span id="3f8a">Very useful if we want a default component to render if none of our routes match.</span>
 
 <!-- -->
 
@@ -605,9 +605,9 @@ React Router Navigation
       <Route component={DefaultComponent} />
     </Switch>
 
-- <span id="b901">`DefaultComponent` will only render if none of the other URLs match up.</span>
-- <span id="21a3">`<Redirect>` : Helps redirect users.</span>
-- <span id="ee88">Only takes a single prop: `to`.</span>
+-   <span id="b901">`DefaultComponent` will only render if none of the other URLs match up.</span>
+-   <span id="21a3">`<Redirect>` : Helps redirect users.</span>
+-   <span id="ee88">Only takes a single prop: `to`.</span>
 
 <!-- -->
 
@@ -619,10 +619,10 @@ React Router Navigation
 
 History
 
-- <span id="6456">`History` allows you to update the URL programmatically.</span>
-- <span id="bac6">Contains two useful methods:</span>
-- <span id="9b00">`push` : Adds a new URL to the end of the history stack.</span>
-- <span id="d539">`replace` : Replaces the current URL on the history stack, so the back button won't take you to it.</span>
+-   <span id="6456">`History` allows you to update the URL programmatically.</span>
+-   <span id="bac6">Contains two useful methods:</span>
+-   <span id="9b00">`push` : Adds a new URL to the end of the history stack.</span>
+-   <span id="d539">`replace` : Replaces the current URL on the history stack, so the back button won't take you to it.</span>
 
 <!-- -->
 
@@ -637,7 +637,7 @@ History
 
 Why nested routes?
 
-- <span id="6403">Create routes that tunnel into main components vs getting rendered on the main page as it’s own thing. What are nested routes?</span>
+-   <span id="6403">Create routes that tunnel into main components vs getting rendered on the main page as it’s own thing. What are nested routes?</span>
 
 <!-- -->
 
@@ -674,25 +674,25 @@ Alt. version using `props.match`
       );
     };
 
-- <span id="03fb">As you can see above, our end URL isn’t even defined until we apply those flexible values in.</span>
+-   <span id="03fb">As you can see above, our end URL isn’t even defined until we apply those flexible values in.</span>
 
 ---
 
 ### React Builds
 
-- <span id="0fae">`Build` : Process of converting code into something that can actually execute or run on the target platform.</span>
-- <span id="6fdb">In regards to React, the minimum a build should do is convert JSX to something that browsers can understand. Reviewing common terminology</span>
-- <span id="779d">`Linting` : Process of using a tool to analyze your code to catch common errors, bugs, inconsistencies etc...</span>
-- <span id="f1e5">`Transpilation` : Process of converting source code, like JS, from one version to another.</span>
-- <span id="9f9f">`Minification` : Process of removing all unnecessary characters in your code.</span>
-- <span id="57df">`Bundling` : Process of combining multiple code files into a single file.</span>
-- <span id="d052">`Tree Shaking` : Process of removing unused or dead code from your application before it's bundled. Configuration or code?</span>
-- <span id="ce13">`Configuration` allows developers to create build tasks by declaring either JSON, XML, or YAML without explicitly writing every step in the process.</span>
-- <span id="16a6">`Coding` or `Scripting` simply requires code. Babel and webpack (yes, that's intentionally a lowercase 'w')</span>
-- <span id="4363">`Babel` : Code Transpiler that allows you to use all of the latest features and syntax wihtout worrying about what browsers support what.</span>
-- <span id="804b">`webpack` : Allows developers to use JS modules w/o requiring users to use a browser that natively supports ES modules.</span>
-- <span id="77f2">Create React App uses webpack and Babel under the hood to build applications. The Create React App build process</span>
-- <span id="222f">What happens when you run `npm start`:</span>
+-   <span id="0fae">`Build` : Process of converting code into something that can actually execute or run on the target platform.</span>
+-   <span id="6fdb">In regards to React, the minimum a build should do is convert JSX to something that browsers can understand. Reviewing common terminology</span>
+-   <span id="779d">`Linting` : Process of using a tool to analyze your code to catch common errors, bugs, inconsistencies etc...</span>
+-   <span id="f1e5">`Transpilation` : Process of converting source code, like JS, from one version to another.</span>
+-   <span id="9f9f">`Minification` : Process of removing all unnecessary characters in your code.</span>
+-   <span id="57df">`Bundling` : Process of combining multiple code files into a single file.</span>
+-   <span id="d052">`Tree Shaking` : Process of removing unused or dead code from your application before it's bundled. Configuration or code?</span>
+-   <span id="ce13">`Configuration` allows developers to create build tasks by declaring either JSON, XML, or YAML without explicitly writing every step in the process.</span>
+-   <span id="16a6">`Coding` or `Scripting` simply requires code. Babel and webpack (yes, that's intentionally a lowercase 'w')</span>
+-   <span id="4363">`Babel` : Code Transpiler that allows you to use all of the latest features and syntax wihtout worrying about what browsers support what.</span>
+-   <span id="804b">`webpack` : Allows developers to use JS modules w/o requiring users to use a browser that natively supports ES modules.</span>
+-   <span id="77f2">Create React App uses webpack and Babel under the hood to build applications. The Create React App build process</span>
+-   <span id="222f">What happens when you run `npm start`:</span>
 
 1.  <span id="d245">.env variables are loaded.</span>
 2.  <span id="6209">list of browsers to support are checked.</span>
@@ -703,8 +703,8 @@ Alt. version using `props.match`
 7.  <span id="68ad">`index.html` is loaded into browser</span>
 8.  <span id="e670">file watcher is started to watch for changes. Ejecting</span>
 
-- <span id="428b">There is a script in Create React App called `eject` that allows you to 'eject' your application and expose all the hidden stuff. Preparing to deploy a React application for production</span>
-- <span id="eb79">Defining Env Variables</span>
+-   <span id="428b">There is a script in Create React App called `eject` that allows you to 'eject' your application and expose all the hidden stuff. Preparing to deploy a React application for production</span>
+-   <span id="eb79">Defining Env Variables</span>
 
 <!-- -->
 
@@ -732,9 +732,9 @@ Configuring the supported browsers
       }
     }
 
-- <span id="8a03">If you specify older browsers it will affect how your code get’s transpiled. Creating a production build</span>
-- <span id="fee3">Run `npm run build` to create a production build.</span>
-- <span id="bdaf">Bundles React in production mode and optimizes the build for the best performance.</span>
+-   <span id="8a03">If you specify older browsers it will affect how your code get’s transpiled. Creating a production build</span>
+-   <span id="fee3">Run `npm run build` to create a production build.</span>
+-   <span id="bdaf">Bundles React in production mode and optimizes the build for the best performance.</span>
 
 ---
 
@@ -742,9 +742,9 @@ Configuring the supported browsers
 
 ### Introduction to React
 
-- <span id="7224">Simply a nice library that turns data into DOM.</span>
-- <span id="a9de">`Tree Diffing` : Fast comparison and patching of data by comparing the current virtual DOM and new virtual DOM - updating only the pieces that change.</span>
-- <span id="1bbc">`It's just a tree with some fancy diffing`</span>
+-   <span id="7224">Simply a nice library that turns data into DOM.</span>
+-   <span id="a9de">`Tree Diffing` : Fast comparison and patching of data by comparing the current virtual DOM and new virtual DOM - updating only the pieces that change.</span>
+-   <span id="1bbc">`It's just a tree with some fancy diffing`</span>
 
 ---
 
@@ -752,16 +752,16 @@ Configuring the supported browsers
 
 From JavaScript To DOM
 
-- <span id="cae8">The `React.createElement` function has the following form:</span>
+-   <span id="cae8">The `React.createElement` function has the following form:</span>
 
 <!-- -->
 
     React.createElement(type, [props], [...children]);
 
-- <span id="1688">`Type` : Type of element to create, i.e. a string for an HTML element or a reference to a function or class that is a React component.</span>
-- <span id="3249">`Props` : Object that contains data to render the element.</span>
-- <span id="56ab">`Children` : Children of the elemet, as many as you want. Creating elements</span>
-- <span id="ee64">Our rendering goal:</span>
+-   <span id="1688">`Type` : Type of element to create, i.e. a string for an HTML element or a reference to a function or class that is a React component.</span>
+-   <span id="3249">`Props` : Object that contains data to render the element.</span>
+-   <span id="56ab">`Children` : Children of the elemet, as many as you want. Creating elements</span>
+-   <span id="ee64">Our rendering goal:</span>
 
 <!-- -->
 
@@ -774,17 +774,17 @@ From JavaScript To DOM
       </li>
     </ul>
 
-- <span id="eb8b">There are five tags to create:</span>
-- <span id="ea28">One `ul`</span>
-- <span id="a4ba">Two `li`</span>
-- <span id="de01">Two `a`</span>
-- <span id="90b5">There are certain attributes we want to appear in the DOM for these tags as well:</span>
-- <span id="dab5">Each `li` has a `class` (or `className` in React)</span>
-- <span id="e88e">Both `a` ele's have `href` attributes</span>
-- <span id="fd8c">Also keep in mind the parent child relationships happening between the tags.</span>
-- <span id="9893">`ul` is the parent of both `li`</span>
-- <span id="eafa">Each `li` has an `a` element as a child</span>
-- <span id="84cc">Each `a` has a `text content` child</span>
+-   <span id="eb8b">There are five tags to create:</span>
+-   <span id="ea28">One `ul`</span>
+-   <span id="a4ba">Two `li`</span>
+-   <span id="de01">Two `a`</span>
+-   <span id="90b5">There are certain attributes we want to appear in the DOM for these tags as well:</span>
+-   <span id="dab5">Each `li` has a `class` (or `className` in React)</span>
+-   <span id="e88e">Both `a` ele's have `href` attributes</span>
+-   <span id="fd8c">Also keep in mind the parent child relationships happening between the tags.</span>
+-   <span id="9893">`ul` is the parent of both `li`</span>
+-   <span id="eafa">Each `li` has an `a` element as a child</span>
+-   <span id="84cc">Each `a` has a `text content` child</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*8ls0PmtREELbf5Wm" class="graf-image" /></figure>React.createElement(
       "ul",
@@ -803,7 +803,7 @@ From JavaScript To DOM
 
 Converting to virtual DOM
 
-- <span id="e7d4">After you set up your `React.createElement`, you use `React.render` to take the value returned from cE and a DOM node to insert into the conversion of the real DOM.</span>
+-   <span id="e7d4">After you set up your `React.createElement`, you use `React.render` to take the value returned from cE and a DOM node to insert into the conversion of the real DOM.</span>
 
 <!-- -->
 
@@ -827,10 +827,10 @@ Converting to virtual DOM
     // Give React the element tree and the target
     ReactDOM.render(navList, mainElement);
 
-- <span id="2cbc">JS Code =&gt; Virtual DOM =&gt; Real Dom Updates</span>
-- <span id="25d5">If you call React.render a second or multiple times it just checks the existing Virtual DOM and it knows which smaller areas to change. Thinking in Components</span>
-- <span id="fe61">Components are pieces of reusable front-end pieces.</span>
-- <span id="bffa">Components should be Single Responsibility Principle compliant.</span>
+-   <span id="2cbc">JS Code =&gt; Virtual DOM =&gt; Real Dom Updates</span>
+-   <span id="25d5">If you call React.render a second or multiple times it just checks the existing Virtual DOM and it knows which smaller areas to change. Thinking in Components</span>
+-   <span id="fe61">Components are pieces of reusable front-end pieces.</span>
+-   <span id="bffa">Components should be Single Responsibility Principle compliant.</span>
 
 ---
 
@@ -838,7 +838,7 @@ Converting to virtual DOM
 
 `React.createElement Demo`
 
-- <span id="a288">Can import non-local dependencies with `import 'package-link'`</span>
+-   <span id="a288">Can import non-local dependencies with `import 'package-link'`</span>
 
 <!-- -->
 
@@ -848,7 +848,7 @@ Converting to virtual DOM
     // Give React the element tree and the target
     ReactDOM.render(app, target);
 
-- <span id="0693">Remember when importing modules from other files you have to denote the file type in the import statement. HTML Original</span>
+-   <span id="0693">Remember when importing modules from other files you have to denote the file type in the import statement. HTML Original</span>
 
 <!-- -->
 
@@ -877,10 +877,10 @@ React Version
         React.createElement("div", { className: "clue__amount" }, "$800")
       );
 
-- <span id="f587">Because `class` is a reserved keyword in JS, in React we can use `className` to assign a class to an element.</span>
-- <span id="4d51">Remember the data that goes into createElement: element type, data to pass into the element, and then children.</span>
-- <span id="8199">`props` : Properties;</span>
-- <span id="6b53">To handle certain values that are initially undefined, we can use `defaultProps`.</span>
+-   <span id="f587">Because `class` is a reserved keyword in JS, in React we can use `className` to assign a class to an element.</span>
+-   <span id="4d51">Remember the data that goes into createElement: element type, data to pass into the element, and then children.</span>
+-   <span id="8199">`props` : Properties;</span>
+-   <span id="6b53">To handle certain values that are initially undefined, we can use `defaultProps`.</span>
 
 <!-- -->
 
@@ -888,10 +888,10 @@ React Version
       category: {},
     };
 
-- <span id="4abe">You can change in the devTools Network tab the internet speed to check for values that may be undefined to hangle with defaultProps.</span>
-- <span id="79e3">If we fetch multiple pieces of data, we can render many things by using `map`.</span>
-- <span id="06f2">You need to assign a unique key to each of the clues.</span>
-- <span id="c12e">We need to keep track of them individually so that React can easily refer to a specific one if there is an issue. `clue => { key:clue.id, ...clue }`</span>
+-   <span id="4abe">You can change in the devTools Network tab the internet speed to check for values that may be undefined to hangle with defaultProps.</span>
+-   <span id="79e3">If we fetch multiple pieces of data, we can render many things by using `map`.</span>
+-   <span id="06f2">You need to assign a unique key to each of the clues.</span>
+-   <span id="c12e">We need to keep track of them individually so that React can easily refer to a specific one if there is an issue. `clue => { key:clue.id, ...clue }`</span>
 
 <!-- -->
 
@@ -905,22 +905,22 @@ React Version
       );
     export default App;
 
-- <span id="1dd5">Note: JSX is preferred over React.createElement;</span>
+-   <span id="1dd5">Note: JSX is preferred over React.createElement;</span>
 
 ---
 
 ### Notes from Hello Programmer Exercise
 
-- <span id="1fb8">When you import modules from websites they must have CORs activated.</span>
-- <span id="1ef6">These import statements, import `global variables`.</span>
-- <span id="6613">When we want to move our code into production we need to change the imports into the production minified versions.</span>
+-   <span id="1fb8">When you import modules from websites they must have CORs activated.</span>
+-   <span id="1ef6">These import statements, import `global variables`.</span>
+-   <span id="6613">When we want to move our code into production we need to change the imports into the production minified versions.</span>
 
 <!-- -->
 
     import "https://unpkg.com/react@16/umd/react.production.min.js";
     import "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js";
 
-- <span id="0046">While we will never actually be creating full apps with just React.createElement =&gt; it is the enginer that is running under the hood!</span>
+-   <span id="0046">While we will never actually be creating full apps with just React.createElement =&gt; it is the enginer that is running under the hood!</span>
 
 <!-- -->
 
@@ -963,8 +963,8 @@ React Version
 
 ### Introduction to JSX
 
-- <span id="a5ee">`JSX` : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API. How to use JSX</span>
-- <span id="24bf">We will use `babel` to convert version of modern JS into an older version of JS. React Create Element</span>
+-   <span id="a5ee">`JSX` : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API. How to use JSX</span>
+-   <span id="24bf">We will use `babel` to convert version of modern JS into an older version of JS. React Create Element</span>
 
 <!-- -->
 
@@ -987,7 +987,7 @@ JSX Version
       </React.Fragment>
     );
 
-- <span id="b00d">Keep in mind that self closing tags in React must have a `forward slash` to close it.</span>
+-   <span id="b00d">Keep in mind that self closing tags in React must have a `forward slash` to close it.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*NNxuFMF-sOL8Wvdl" class="graf-image" /></figure>-   <span id="346d">Properties and Data</span>
 
@@ -1003,7 +1003,7 @@ JSX Version
     // if you want the text search uppercase..
     <a href={props.searchUrl}>{props.searchText.toUpperCase()}</a>;
 
-- <span id="467c">Comments in JSX have the following syntax:</span>
+-   <span id="467c">Comments in JSX have the following syntax:</span>
 
 <!-- -->
 
@@ -1012,15 +1012,15 @@ JSX Version
       {/* This is a comment in JSX */}
     </div>
 
-- <span id="8cb8">`Property Names`:</span>
-- <span id="837b">`checked` : Attribute of input components such as checkbox or radio, use it to set whether the component is checked or not.</span>
-- <span id="aec0">`className` : Used to specify a CSS class.</span>
-- <span id="2f92">`dangerouslySetInnerHTML` : React's equivalent of innerHTML because it is risky to cross-site scripting attacks.</span>
-- <span id="3eab">`htmlFor` : Because `for` is protected keyword, React elements use this instead.</span>
-- <span id="9194">`onChange` : Event fired whenever a form field is changed.</span>
-- <span id="014a">`style` : Accepts a JS object with camelCase properties rather than a CSS string.</span>
-- <span id="76d8">`value` : Supported by Input, Select, and TextArea components; use it to set the value of the component.</span>
-- <span id="22c2">Note: React uses camel-case!!! The JSX semicolon gotcha</span>
+-   <span id="8cb8">`Property Names`:</span>
+-   <span id="837b">`checked` : Attribute of input components such as checkbox or radio, use it to set whether the component is checked or not.</span>
+-   <span id="aec0">`className` : Used to specify a CSS class.</span>
+-   <span id="2f92">`dangerouslySetInnerHTML` : React's equivalent of innerHTML because it is risky to cross-site scripting attacks.</span>
+-   <span id="3eab">`htmlFor` : Because `for` is protected keyword, React elements use this instead.</span>
+-   <span id="9194">`onChange` : Event fired whenever a form field is changed.</span>
+-   <span id="014a">`style` : Accepts a JS object with camelCase properties rather than a CSS string.</span>
+-   <span id="76d8">`value` : Supported by Input, Select, and TextArea components; use it to set the value of the component.</span>
+-   <span id="22c2">Note: React uses camel-case!!! The JSX semicolon gotcha</span>
 
 <!-- -->
 
@@ -1047,18 +1047,18 @@ create Element equivalent
       );
     }
 
-- <span id="dbc1">We wrap what want to return in parenthesis so JS doesn’t auto add semi-colons after every line and run the code incorrectly.</span>
-- <span id="62c0">Just remember if you decided to use the return keyword in a function to ‘return some JSX’, then make sure you wrap the JSX in parenthesis.</span>
+-   <span id="dbc1">We wrap what want to return in parenthesis so JS doesn’t auto add semi-colons after every line and run the code incorrectly.</span>
+-   <span id="62c0">Just remember if you decided to use the return keyword in a function to ‘return some JSX’, then make sure you wrap the JSX in parenthesis.</span>
 
 ---
 
 `npx create-react-app my-app`
 
-- <span id="8ad9">Single line used to initiate a React application.</span>
-- <span id="3cb1">React has a great toolchain where you can see changes live as you’re editing your application.</span>
-- <span id="c1d0">React errors will be rendered directly onto the browser window.</span>
-- <span id="1365">A downside is that it installs a lot of bloat files.</span>
-- <span id="aaed">Examples of React create Element and JSX equivalent</span>
+-   <span id="8ad9">Single line used to initiate a React application.</span>
+-   <span id="3cb1">React has a great toolchain where you can see changes live as you’re editing your application.</span>
+-   <span id="c1d0">React errors will be rendered directly onto the browser window.</span>
+-   <span id="1365">A downside is that it installs a lot of bloat files.</span>
+-   <span id="aaed">Examples of React create Element and JSX equivalent</span>
 
 <!-- -->
 
@@ -1106,15 +1106,15 @@ More Complex JSX Example
 
 Using a Custom Template `npx create-react-app my-app --template @appacademy/simple`
 
-- <span id="9607">Keep in mind that using `create-react-app` automatically initializes a git repository for you!</span>
-- <span id="f0fe">App Academy custom template for creating a react app.</span>
-- <span id="1b4e">If using the default react create project you can delete the following files:</span>
-- <span id="ef1c">favicon.ico</span>
-- <span id="627b">robots.txt</span>
-- <span id="3b34">logo192.png</span>
-- <span id="9b50">logo512.png</span>
-- <span id="8101">manifest.json</span>
-- <span id="77db">You can also simplify the `html` file into:</span>
+-   <span id="9607">Keep in mind that using `create-react-app` automatically initializes a git repository for you!</span>
+-   <span id="f0fe">App Academy custom template for creating a react app.</span>
+-   <span id="1b4e">If using the default react create project you can delete the following files:</span>
+-   <span id="ef1c">favicon.ico</span>
+-   <span id="627b">robots.txt</span>
+-   <span id="3b34">logo192.png</span>
+-   <span id="9b50">logo512.png</span>
+-   <span id="8101">manifest.json</span>
+-   <span id="77db">You can also simplify the `html` file into:</span>
 
 <!-- -->
 
@@ -1131,8 +1131,8 @@ Using a Custom Template `npx create-react-app my-app --template @appacademy/simp
 
 Simplifying the src folder
 
-- <span id="ac69">Remove: App.css App.test.js logo.svg serviceWorker.js setupTests.js</span>
-- <span id="064f">Update the Following Files:</span>
+-   <span id="ac69">Remove: App.css App.test.js logo.svg serviceWorker.js setupTests.js</span>
+-   <span id="064f">Update the Following Files:</span>
 
 <!-- -->
 
@@ -1162,7 +1162,7 @@ Simplifying the src folder
 
 Class Components
 
-- <span id="b5e6">You can write React components using ES2015 Classes: Function Component</span>
+-   <span id="b5e6">You can write React components using ES2015 Classes: Function Component</span>
 
 <!-- -->
 
@@ -1184,8 +1184,8 @@ ES2015 Version
     }
     export default Message;
 
-- <span id="ae33">We can access props within a `class component` by using `this.props`</span>
-- <span id="0b60">Keep in mind Class Components are used just like function components.</span>
+-   <span id="ae33">We can access props within a `class component` by using `this.props`</span>
+-   <span id="0b60">Keep in mind Class Components are used just like function components.</span>
 
 <!-- -->
 
@@ -1212,20 +1212,20 @@ Setting and accessing props
       }
     }
 
-- <span id="cd5a">If we define a constructor method in our Class Component, we have to define the `super` method with `props` passed through it.</span>
-- <span id="8bf7">Side Note: Before React used ES2015 Classes, it used `React.createclass` function, if you ever need to use this antiquated method make sure you install a module called `create-react-class` Stateful components</span>
-- <span id="4b12">One of the major reasons why you would choose to use a Class Component over a Function Component is to add and manage local or internal state to your component.</span>
-- <span id="8e82">Second of the major reasons is to be able to use a Class Component’s lifecycle methods. What is state?</span>
-- <span id="7fab">Props are data that are provided by the consumer or caller of the component.</span>
-- <span id="98f4">Not meant to be changed by a component.</span>
-- <span id="c6a9">State is data that is `internal` to the component.</span>
-- <span id="3e89">Intended to be updated or mutated. When to use state</span>
-- <span id="c03f">_Only Use State when it is absolutely necessary_</span>
-- <span id="204b">If the data never changes, or if it’s needed through an entire application use props instead.</span>
-- <span id="0b53">State is more often used when creating components that retrieve data from APIs or render forms.</span>
-- <span id="1b6b">The general rule of thumb: If a component doesn’t need to use state or lifecyle methods, it should be prioritized as a `function component`.</span>
-- <span id="d708">Functional:Stateless || Class:Stateful Initializing state</span>
-- <span id="e5d5">Use a class constructor method to initialize `this.state` object. // Application Entry Point</span>
+-   <span id="cd5a">If we define a constructor method in our Class Component, we have to define the `super` method with `props` passed through it.</span>
+-   <span id="8bf7">Side Note: Before React used ES2015 Classes, it used `React.createclass` function, if you ever need to use this antiquated method make sure you install a module called `create-react-class` Stateful components</span>
+-   <span id="4b12">One of the major reasons why you would choose to use a Class Component over a Function Component is to add and manage local or internal state to your component.</span>
+-   <span id="8e82">Second of the major reasons is to be able to use a Class Component’s lifecycle methods. What is state?</span>
+-   <span id="7fab">Props are data that are provided by the consumer or caller of the component.</span>
+-   <span id="98f4">Not meant to be changed by a component.</span>
+-   <span id="c6a9">State is data that is `internal` to the component.</span>
+-   <span id="3e89">Intended to be updated or mutated. When to use state</span>
+-   <span id="c03f">_Only Use State when it is absolutely necessary_</span>
+-   <span id="204b">If the data never changes, or if it’s needed through an entire application use props instead.</span>
+-   <span id="0b53">State is more often used when creating components that retrieve data from APIs or render forms.</span>
+-   <span id="1b6b">The general rule of thumb: If a component doesn’t need to use state or lifecyle methods, it should be prioritized as a `function component`.</span>
+-   <span id="d708">Functional:Stateless || Class:Stateful Initializing state</span>
+-   <span id="e5d5">Use a class constructor method to initialize `this.state` object. // Application Entry Point</span>
 
 <!-- -->
 
@@ -1274,12 +1274,12 @@ Setting and accessing props
 
 Updating State
 
-- <span id="3fdc">Let’s say we want to update our state with a new quote.</span>
-- <span id="eddc">We can set up event listeners in React similarly to how we did them before.</span>
-- <span id="106c">&lt;button type=”button” onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;</span>
-- <span id="a77a">`onClick` is the event listener.</span>
-- <span id="f406">`{this.changeQuote}` is the event handler method.</span>
-- <span id="7dca">Our Class Component File should now look like this with the new additions:</span>
+-   <span id="3fdc">Let’s say we want to update our state with a new quote.</span>
+-   <span id="eddc">We can set up event listeners in React similarly to how we did them before.</span>
+-   <span id="106c">&lt;button type=”button” onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;</span>
+-   <span id="a77a">`onClick` is the event listener.</span>
+-   <span id="f406">`{this.changeQuote}` is the event handler method.</span>
+-   <span id="7dca">Our Class Component File should now look like this with the new additions:</span>
 
 <!-- -->
 
@@ -1326,12 +1326,12 @@ Updating State
 
 Don’t modify state directly
 
-- <span id="ca27">It is important to `never` modify your state directly!</span>
-- <span id="780d">ALWAYS use `this.setState` method to update state.</span>
-- <span id="1581">This is because when you only use this.state to re-assign, no re-rendering will occur =&gt; leaving our component out of sync. Properly updating state from the previous state</span>
-- <span id="dc5a">In our current example, the way we have `changeQuote` set up leaves us with occasionally producing the same index twice in a row.</span>
-- <span id="0bff">One solution is to design a loop but keep in mind that state updates are handled asynchronously in React (your current value is not guaranteed to be the latest)</span>
-- <span id="39f9">A safe method is to pass an anonymous method to `this.setState` (instead of an object literal) Previous</span>
+-   <span id="ca27">It is important to `never` modify your state directly!</span>
+-   <span id="780d">ALWAYS use `this.setState` method to update state.</span>
+-   <span id="1581">This is because when you only use this.state to re-assign, no re-rendering will occur =&gt; leaving our component out of sync. Properly updating state from the previous state</span>
+-   <span id="dc5a">In our current example, the way we have `changeQuote` set up leaves us with occasionally producing the same index twice in a row.</span>
+-   <span id="0bff">One solution is to design a loop but keep in mind that state updates are handled asynchronously in React (your current value is not guaranteed to be the latest)</span>
+-   <span id="39f9">A safe method is to pass an anonymous method to `this.setState` (instead of an object literal) Previous</span>
 
 <!-- -->
 
@@ -1359,11 +1359,11 @@ Passing w/ Anon Method
 
 Providing default values for props
 
-- <span id="7e8c">In our current example, we pass in a static array of predefined quotes in our constructor.</span>
-- <span id="3e8f">The way it is set up right now leaves our list of quotes unchanged after initialization.</span>
-- <span id="add0">We can make quotes more dynamic by replacing our static array with a `props` argument passed into `super`.</span>
-- <span id="53d6">constructor(props) { super(props); }</span>
-- <span id="918a">We can now move our quotes array to our application entry point and pass it in as a prop. // Application Entry Point</span>
+-   <span id="7e8c">In our current example, we pass in a static array of predefined quotes in our constructor.</span>
+-   <span id="3e8f">The way it is set up right now leaves our list of quotes unchanged after initialization.</span>
+-   <span id="add0">We can make quotes more dynamic by replacing our static array with a `props` argument passed into `super`.</span>
+-   <span id="53d6">constructor(props) { super(props); }</span>
+-   <span id="918a">We can now move our quotes array to our application entry point and pass it in as a prop. // Application Entry Point</span>
 
 <!-- -->
 
@@ -1387,7 +1387,7 @@ Providing default values for props
       document.getElementById('root');
     )
 
-- <span id="a0bb">One thing to note about this workaround is that the caller of the component _must_ set the quotes prop or the component will throw an error =&gt; so use `defaultProps`!</span>
+-   <span id="a0bb">One thing to note about this workaround is that the caller of the component _must_ set the quotes prop or the component will throw an error =&gt; so use `defaultProps`!</span>
 
 <!-- -->
 
@@ -1403,14 +1403,14 @@ Providing default values for props
       ],
     };
 
-- <span id="c575">A good safety net in case the consumer/caller doesn’t provide a value for the quotes array.</span>
-- <span id="3be6">We can even remove it from our index.js now and an error will not be thrown.</span>
+-   <span id="c575">A good safety net in case the consumer/caller doesn’t provide a value for the quotes array.</span>
+-   <span id="3be6">We can even remove it from our index.js now and an error will not be thrown.</span>
 
 ---
 
 ### Handling Events
 
-- <span id="a82e">To add an event listener to an element, just define a method to handle the event and associate that method with the element event you are listening for. Example</span>
+-   <span id="a82e">To add an event listener to an element, just define a method to handle the event and associate that method with the element event you are listening for. Example</span>
 
 <!-- -->
 
@@ -1428,10 +1428,10 @@ Providing default values for props
       }
     }
 
-- <span id="a852">Note that when refering the handler method in onClick we’re not invoking showAlert simply just passing a reference. Preventing default behavior</span>
-- <span id="5cb0">HTML Elements in the browser often have a lot of default behavior.</span>
-- <span id="df4d">I.E. Clicking on an `<a>` element navigates so a resource denoted by `<href>` property.</span>
-- <span id="952c">Here is an example of where using `e.preventDefault()` could come in handy.</span>
+-   <span id="a852">Note that when refering the handler method in onClick we’re not invoking showAlert simply just passing a reference. Preventing default behavior</span>
+-   <span id="5cb0">HTML Elements in the browser often have a lot of default behavior.</span>
+-   <span id="df4d">I.E. Clicking on an `<a>` element navigates so a resource denoted by `<href>` property.</span>
+-   <span id="952c">Here is an example of where using `e.preventDefault()` could come in handy.</span>
 
 <!-- -->
 
@@ -1449,9 +1449,9 @@ Providing default values for props
         )}
     }
 
-- <span id="b149">The button contained within the form will end up refreshing the page before `this.submitForm` method can be completed.</span>
-- <span id="a034">We can stick an `e.preventDefault()` into the actual method to get around this problem.</span>
-- <span id="004a">`e` : Parameter that references a `Synthetic Event` object type. Using `this` in event handlers</span>
+-   <span id="b149">The button contained within the form will end up refreshing the page before `this.submitForm` method can be completed.</span>
+-   <span id="a034">We can stick an `e.preventDefault()` into the actual method to get around this problem.</span>
+-   <span id="004a">`e` : Parameter that references a `Synthetic Event` object type. Using `this` in event handlers</span>
 
 <!-- -->
 
@@ -1472,8 +1472,8 @@ Providing default values for props
     }
     export default AlertButton;
 
-- <span id="3c8f">When we console log `this` we see the AlertButton object.</span>
-- <span id="42a0">If we were to write the showAlert method with a regular class method like:</span>
+-   <span id="3c8f">When we console log `this` we see the AlertButton object.</span>
+-   <span id="42a0">If we were to write the showAlert method with a regular class method like:</span>
 
 <!-- -->
 
@@ -1481,8 +1481,8 @@ Providing default values for props
       console.log(this);
     }
 
-- <span id="c081">We would get `undefined` =&gt; remember that fat arrow binds to the current context! Reviewing class methods and the `this` keyword</span>
-- <span id="e98e">Let’s refresh on binding.</span>
+-   <span id="c081">We would get `undefined` =&gt; remember that fat arrow binds to the current context! Reviewing class methods and the `this` keyword</span>
+-   <span id="e98e">Let’s refresh on binding.</span>
 
 <!-- -->
 
@@ -1499,12 +1499,12 @@ Providing default values for props
     const displayAgain = Ming.displayName;
     displayAgain(); // => Result in a Type Error: Cannot read property 'name' of undefined.
 
-- <span id="fb85">The first time we use our `displayMethod` call, it is called directly on the instance of the boyfriend class, which is why `Momato Riruru` was printed out.</span>
-- <span id="3a9b">The second time it was called, the ref of the method is stored as a variable and method is called on that variable instead of the instance; resulting in a type error (it has lost it’s context)</span>
-- <span id="0a2c">Remember we can use the `bind` method to rebind context!</span>
-- <span id="d6d9">We can refactor to get the second call working like this:</span>
-- <span id="7ead">const displayAgain = Ming.displayName.bind(Ming); displayAgain(); // =&gt; Now Momato Riruru will be printed out.</span>
-- <span id="a8b0">To continue using function declarations vs fat arrow we can assign context in a constructor within a class component.</span>
+-   <span id="fb85">The first time we use our `displayMethod` call, it is called directly on the instance of the boyfriend class, which is why `Momato Riruru` was printed out.</span>
+-   <span id="3a9b">The second time it was called, the ref of the method is stored as a variable and method is called on that variable instead of the instance; resulting in a type error (it has lost it’s context)</span>
+-   <span id="0a2c">Remember we can use the `bind` method to rebind context!</span>
+-   <span id="d6d9">We can refactor to get the second call working like this:</span>
+-   <span id="7ead">const displayAgain = Ming.displayName.bind(Ming); displayAgain(); // =&gt; Now Momato Riruru will be printed out.</span>
+-   <span id="a8b0">To continue using function declarations vs fat arrow we can assign context in a constructor within a class component.</span>
 
 <!-- -->
 
@@ -1527,16 +1527,16 @@ Providing default values for props
     }
     export default AlertButton;
 
-- <span id="a4e6">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
-- <span id="801d">It’s good to pick one approach and use it consistently, either:</span>
+-   <span id="a4e6">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
+-   <span id="801d">It’s good to pick one approach and use it consistently, either:</span>
 
 1.  <span id="2e3e">Class Properties & Arrow Functions</span>
 2.  <span id="cc27">Bind Method & This Keyword The `SyntheticEvent` object</span>
 
-- <span id="f177">Synthetic Event Objects: Cross Browser wrappeds around the browser’s native event.</span>
-- <span id="418f">Includes the use of stopPropagation() and preventDefault();</span>
-- <span id="b94f">Attributes of the Synthetic Event Object:Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type</span>
-- <span id="7484">`nativeEvent` : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)</span>
+-   <span id="f177">Synthetic Event Objects: Cross Browser wrappeds around the browser’s native event.</span>
+-   <span id="418f">Includes the use of stopPropagation() and preventDefault();</span>
+-   <span id="b94f">Attributes of the Synthetic Event Object:Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type</span>
+-   <span id="7484">`nativeEvent` : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)</span>
 
 ---
 
@@ -1544,15 +1544,15 @@ Providing default values for props
 
 _Exercise being done in a separate file_ Random Notes
 
-- <span id="45ec">`onChange` : detects when a value of an input element changes.</span>
-- <span id="9ca4">Assigning `onChange` to our input fields makes our component's state update in real time during user input.</span>
-- <span id="eb83">Dont forget to add `preventDefault` onto form submissions to deal with the default behavior of the browser refreshing the page!</span>
-- <span id="c413">`submittedOn: new Date(),` Can be added to a form, most likely will persist into a DB.</span>
-- <span id="b97f">Controlled Components</span>
-- <span id="ac48">We use the `onChange` event handlers on form fields to keep our component's state as the `"one source of truth"`</span>
-- <span id="4685">Adding an `onChange` event handler to every single input can massively bloat your code.</span>
-- <span id="448c">Try assiging it to it’s own method to apply everywhere.</span>
-- <span id="f229">`textarea` is handled differently in react: it takes in a value property to handle what the inner text will be.</span>
+-   <span id="45ec">`onChange` : detects when a value of an input element changes.</span>
+-   <span id="9ca4">Assigning `onChange` to our input fields makes our component's state update in real time during user input.</span>
+-   <span id="eb83">Dont forget to add `preventDefault` onto form submissions to deal with the default behavior of the browser refreshing the page!</span>
+-   <span id="c413">`submittedOn: new Date(),` Can be added to a form, most likely will persist into a DB.</span>
+-   <span id="b97f">Controlled Components</span>
+-   <span id="ac48">We use the `onChange` event handlers on form fields to keep our component's state as the `"one source of truth"`</span>
+-   <span id="4685">Adding an `onChange` event handler to every single input can massively bloat your code.</span>
+-   <span id="448c">Try assiging it to it’s own method to apply everywhere.</span>
+-   <span id="f229">`textarea` is handled differently in react: it takes in a value property to handle what the inner text will be.</span>
 
 <!-- -->
 
@@ -1694,7 +1694,7 @@ _Exercise being done in a separate file_ Random Notes
     };
     export default ContactUs;
 
-- <span id="a2da">We can use validation libraries like `validate` to make our validation functions more complex.</span>
+-   <span id="a2da">We can use validation libraries like `validate` to make our validation functions more complex.</span>
 
 <!-- -->
 
@@ -1714,9 +1714,9 @@ _Exercise being done in a separate file_ Random Notes
 
 Note About Client-side vs server-side validation
 
-- <span id="5808">Server-side validation is not optional.</span>
-- <span id="3bb8">Tech-savvy users can manipulate client-side validations.</span>
-- <span id="311f">Sometimes the ‘best approach’ is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
+-   <span id="5808">Server-side validation is not optional.</span>
+-   <span id="3bb8">Tech-savvy users can manipulate client-side validations.</span>
+-   <span id="311f">Sometimes the ‘best approach’ is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
 
 ---
 
@@ -1728,40 +1728,40 @@ Note About Client-side vs server-side validation
 2.  <span id="7e94">Updating</span>
 3.  <span id="2cd3">Unloading (Unmounting) The lifecycle of a React component</span>
 
-- <span id="7740">Each `Class Component` has several `lifecycle methods` that you can add to run code at specific times.</span>
-- <span id="e7d0">`componentDidMount` : Method called after your component has been added to the component tree.</span>
-- <span id="6d92">`componentDidUpdate` : Method called after your component has been updated.</span>
-- <span id="9ee2">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
-- <span id="7bd8">`Mounting`</span>
+-   <span id="7740">Each `Class Component` has several `lifecycle methods` that you can add to run code at specific times.</span>
+-   <span id="e7d0">`componentDidMount` : Method called after your component has been added to the component tree.</span>
+-   <span id="6d92">`componentDidUpdate` : Method called after your component has been updated.</span>
+-   <span id="9ee2">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
+-   <span id="7bd8">`Mounting`</span>
 
 1.  <span id="6f9e">`constructor` method is called</span>
 2.  <span id="e9c7">`render` method is called</span>
 3.  <span id="eef3">React updates the `DOM`</span>
 4.  <span id="19bb">`componentDidMount` is called</span>
 
-- <span id="85f1">`Updating`</span>
-- <span id="94f5">When component receives new `props`</span>
+-   <span id="85f1">`Updating`</span>
+-   <span id="94f5">When component receives new `props`</span>
 
 1.  <span id="e635">`render` method is called</span>
 2.  <span id="70f9">React updates the `DOM`</span>
 3.  <span id="9507">`componentDidUpdate` is called</span>
 
-- <span id="b00a">When `setState` is called</span>
+-   <span id="b00a">When `setState` is called</span>
 
 1.  <span id="6864">`render` method is called</span>
 2.  <span id="e13b">React updates the `DOM`</span>
 3.  <span id="c459">`componentDidUpdate` is called</span>
 
-- <span id="bfdd">`Unmounting`</span>
-- <span id="10c1">The moment before a class component is removed from the component tree:</span>
-- <span id="c214">`componentDidMount` will be called. Avoiding the legacy lifecycle methods</span>
-- <span id="d438">Occasionally you will encounter some deprecated lifecycle methods:</span>
-- <span id="1f6b">UNSAFE_componentWillMount</span>
-- <span id="48ac">UNSAFE_componentWillReceiveProps</span>
-- <span id="df27">UNSAFE_componentWillUpdate</span>
-- <span id="af07">Just know they will be removed soon from React’s API, peace. Using the class component lifecycle methods _Exercise done in sep. directory_</span>
-- <span id="344c">Assorted Notes:</span>
-- <span id="d6b1">Common Use for `componentDidMount` lifecycle method is for fetching data from an API.</span>
+-   <span id="bfdd">`Unmounting`</span>
+-   <span id="10c1">The moment before a class component is removed from the component tree:</span>
+-   <span id="c214">`componentDidMount` will be called. Avoiding the legacy lifecycle methods</span>
+-   <span id="d438">Occasionally you will encounter some deprecated lifecycle methods:</span>
+-   <span id="1f6b">UNSAFE_componentWillMount</span>
+-   <span id="48ac">UNSAFE_componentWillReceiveProps</span>
+-   <span id="df27">UNSAFE_componentWillUpdate</span>
+-   <span id="af07">Just know they will be removed soon from React’s API, peace. Using the class component lifecycle methods _Exercise done in sep. directory_</span>
+-   <span id="344c">Assorted Notes:</span>
+-   <span id="d6b1">Common Use for `componentDidMount` lifecycle method is for fetching data from an API.</span>
 
 ---
 
@@ -1771,8 +1771,8 @@ Note About Client-side vs server-side validation
 
 ### React Context
 
-- <span id="e968">You can use `React Context` to pass data through a component tree without having to manually thread props.</span>
-- <span id="89d9">Convenient way to share & update `global data`. Creating a Context</span>
+-   <span id="e968">You can use `React Context` to pass data through a component tree without having to manually thread props.</span>
+-   <span id="89d9">Convenient way to share & update `global data`. Creating a Context</span>
 
 <!-- -->
 
@@ -1781,10 +1781,10 @@ Note About Client-side vs server-side validation
     const PupContext = createContext();
     export default PupContext;
 
-- <span id="a8bf">We use `React.createContext` to create context.</span>
-- <span id="98b9">Keep in mind if you invoke this method with aruguments, those arguments will be set as default context. Adding a Provider to the App component</span>
-- <span id="a919">In order to pass context over to child components we need to wrap them in a provider component.</span>
-- <span id="9afc">The provider component takes in a value property that points to the information that needs to be passed to the children.</span>
+-   <span id="a8bf">We use `React.createContext` to create context.</span>
+-   <span id="98b9">Keep in mind if you invoke this method with aruguments, those arguments will be set as default context. Adding a Provider to the App component</span>
+-   <span id="a919">In order to pass context over to child components we need to wrap them in a provider component.</span>
+-   <span id="9afc">The provider component takes in a value property that points to the information that needs to be passed to the children.</span>
 
 <!-- -->
 
@@ -1798,8 +1798,8 @@ Setting up a Consumer
       {(value) => <Component value={value} />}
     </MyContext.Consumer>
 
-- <span id="2693">Keep in mind that `Context.Consumer` expects a function as a child.</span>
-- <span id="19fc">The function has a value prop passed in from `Context.Provider`</span>
+-   <span id="2693">Keep in mind that `Context.Consumer` expects a function as a child.</span>
+-   <span id="19fc">The function has a value prop passed in from `Context.Provider`</span>
 
 ---
 
@@ -1807,14 +1807,14 @@ Setting up a Consumer
 
 ### Redux Explained
 
-- <span id="eab4">JS Framework for managing the frontend state of a web application.</span>
-- <span id="3c8b">Gives us ability to store information in an organized manner in a web app and quickly retrieve that information from anywhere in the app.</span>
-- <span id="695d">`Redux`</span>
-- <span id="00d5">Client Side Data Management</span>
-- <span id="dd41">Controls “Frontend State”</span>
-- <span id="d828">NOT Your Database</span>
-- <span id="855a">NOT Component State</span>
-- <span id="4c1a">Just used for managing Data</span>
+-   <span id="eab4">JS Framework for managing the frontend state of a web application.</span>
+-   <span id="3c8b">Gives us ability to store information in an organized manner in a web app and quickly retrieve that information from anywhere in the app.</span>
+-   <span id="695d">`Redux`</span>
+-   <span id="00d5">Client Side Data Management</span>
+-   <span id="dd41">Controls “Frontend State”</span>
+-   <span id="d828">NOT Your Database</span>
+-   <span id="855a">NOT Component State</span>
+-   <span id="4c1a">Just used for managing Data</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*N7KFfhOZZ7UrY8s4" class="graf-image" /></figure>-   <span id="04c0">Visual of how an app without React manages it’s data.</span>
 -   <span id="bae2">A lot of prop threading happening.</span>
@@ -1834,41 +1834,41 @@ Setting up a Consumer
 2.  <span id="d178">`State is Read Only` : State is immutable, modified by dispatching actions.</span>
 3.  <span id="51c5">`Changes are Made with Pure Functions` : Reducers that receive the actions and return updated state are pure functions of the old state and action. When is it appropriate to use Redux?</span>
 
-- <span id="117f">When doing a project with simpler global state requirements, it may be better to choose React’s Context API over Redux.</span>
-- <span id="5d3d">Redux offers more flexibility and support for middleware along with richer developer tools. Vocabulary</span>
-- <span id="1ceb">`State`</span>
-- <span id="49e7">_Redux is a State Manager_</span>
-- <span id="5018">State is all the information stored by that program at a particular point in time.</span>
-- <span id="8fdb">Redux’s main job is to store the state and make it directly available to your entire app.</span>
-- <span id="8bbd">`Store`</span>
-- <span id="f027">_Redux stores state in a single store_.</span>
-- <span id="c97e">Redux store is a single JS object with a couple of methods (not a class!)</span>
-- <span id="199d">Methods include: `getState`, `dispatch(action)`, and `subscribe(listener)`</span>
-- <span id="8bcf">`Actions`</span>
-- <span id="2049">_Redux store is updated by dispatching actions_</span>
-- <span id="cbac">Action is just a POJO that includes a mandatory `type` property.</span>
-- <span id="f2d5">Contain info to update the store.</span>
-- <span id="1bd9">We dispatch actions in response to User actions or AJAX requests.</span>
-- <span id="1b78">`Pure Functions`</span>
-- <span id="c436">_Redux Reducers are Pure Functions_</span>
-- <span id="e204">Functions are pure when their behavior depends only on it’s arguments as has no side effects.</span>
-- <span id="450b">Simply takes in an argument and outputs a value.</span>
-- <span id="e146">`Reducer`</span>
-- <span id="9721">_Redux handles actions using reducers_</span>
-- <span id="c312">A function that is called each time an action is dispatched.</span>
-- <span id="84d8">Takes in an `action` and `current state`</span>
-- <span id="90a3">Required to be pure functions so their behavior is predictable.</span>
-- <span id="5c36">`Middleware`</span>
-- <span id="6b22">_Customize response to dispatch actions by using Middleware_</span>
-- <span id="9287">Middleware is an optional component of Redus that allows custom responses to dispatched actions.</span>
-- <span id="f953">Most common use is to dispatch async requests to a server.</span>
-- <span id="773e">`Time Traveling Dev Tools`</span>
-- <span id="d703">_Redux can time travel wow_</span>
-- <span id="7187">Time travel refers to Redux’s ability to revert to a previous state because reducers are all pure functions.</span>
-- <span id="ada3">`Thunks`</span>
-- <span id="ee0f">_Convenient format for taking async actions in Redux_</span>
-- <span id="586e">General concept in CS referring to a function who’s primary purpose is to call another function.</span>
-- <span id="6f45">Most commonly used to make async API requests.</span>
+-   <span id="117f">When doing a project with simpler global state requirements, it may be better to choose React’s Context API over Redux.</span>
+-   <span id="5d3d">Redux offers more flexibility and support for middleware along with richer developer tools. Vocabulary</span>
+-   <span id="1ceb">`State`</span>
+-   <span id="49e7">_Redux is a State Manager_</span>
+-   <span id="5018">State is all the information stored by that program at a particular point in time.</span>
+-   <span id="8fdb">Redux’s main job is to store the state and make it directly available to your entire app.</span>
+-   <span id="8bbd">`Store`</span>
+-   <span id="f027">_Redux stores state in a single store_.</span>
+-   <span id="c97e">Redux store is a single JS object with a couple of methods (not a class!)</span>
+-   <span id="199d">Methods include: `getState`, `dispatch(action)`, and `subscribe(listener)`</span>
+-   <span id="8bcf">`Actions`</span>
+-   <span id="2049">_Redux store is updated by dispatching actions_</span>
+-   <span id="cbac">Action is just a POJO that includes a mandatory `type` property.</span>
+-   <span id="f2d5">Contain info to update the store.</span>
+-   <span id="1bd9">We dispatch actions in response to User actions or AJAX requests.</span>
+-   <span id="1b78">`Pure Functions`</span>
+-   <span id="c436">_Redux Reducers are Pure Functions_</span>
+-   <span id="e204">Functions are pure when their behavior depends only on it’s arguments as has no side effects.</span>
+-   <span id="450b">Simply takes in an argument and outputs a value.</span>
+-   <span id="e146">`Reducer`</span>
+-   <span id="9721">_Redux handles actions using reducers_</span>
+-   <span id="c312">A function that is called each time an action is dispatched.</span>
+-   <span id="84d8">Takes in an `action` and `current state`</span>
+-   <span id="90a3">Required to be pure functions so their behavior is predictable.</span>
+-   <span id="5c36">`Middleware`</span>
+-   <span id="6b22">_Customize response to dispatch actions by using Middleware_</span>
+-   <span id="9287">Middleware is an optional component of Redus that allows custom responses to dispatched actions.</span>
+-   <span id="f953">Most common use is to dispatch async requests to a server.</span>
+-   <span id="773e">`Time Traveling Dev Tools`</span>
+-   <span id="d703">_Redux can time travel wow_</span>
+-   <span id="7187">Time travel refers to Redux’s ability to revert to a previous state because reducers are all pure functions.</span>
+-   <span id="ada3">`Thunks`</span>
+-   <span id="ee0f">_Convenient format for taking async actions in Redux_</span>
+-   <span id="586e">General concept in CS referring to a function who’s primary purpose is to call another function.</span>
+-   <span id="6f45">Most commonly used to make async API requests.</span>
 
 ---
 
@@ -1876,13 +1876,13 @@ Setting up a Consumer
 
 What is Flux?
 
-- <span id="06d1">Front-end application architecutre.</span>
-- <span id="8311">A pattern in which to structure an application.</span>
-- <span id="05e6">Unidirectional Data Flow — offers more predictability.</span>
-- <span id="751c">`Actions` : Begins the data flow of data, simple object that contains a type; type indicates the type of change to be performed.</span>
-- <span id="e8e7">`Dispatcher` : Mechanism for distributing actions to the store.</span>
-- <span id="af4f">`Store` : The entire state of the application, responsible for updating the state of your app.</span>
-- <span id="d7ff">`View` : Unit of code that's responsible for rendering the user interface. Used to re-render the application when actions and changes occur.</span>
+-   <span id="06d1">Front-end application architecutre.</span>
+-   <span id="8311">A pattern in which to structure an application.</span>
+-   <span id="05e6">Unidirectional Data Flow — offers more predictability.</span>
+-   <span id="751c">`Actions` : Begins the data flow of data, simple object that contains a type; type indicates the type of change to be performed.</span>
+-   <span id="e8e7">`Dispatcher` : Mechanism for distributing actions to the store.</span>
+-   <span id="af4f">`Store` : The entire state of the application, responsible for updating the state of your app.</span>
+-   <span id="d7ff">`View` : Unit of code that's responsible for rendering the user interface. Used to re-render the application when actions and changes occur.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ywV6dO4a4QcGJxK5" class="graf-image" /></figure>-   <span id="af94">Redux</span>
 
@@ -1896,11 +1896,11 @@ What is Flux?
 
 ### Store
 
-- <span id="cd1e">Simply an object that holds the application state wrapped in an API.</span>
-- <span id="f57c">`Three methods`:</span>
-- <span id="354c">`getState()` : Returns the store's current state.</span>
-- <span id="537c">`dispatch(action)` : Passes an action into the store's reducer to tell it what info to update.</span>
-- <span id="4539">`subscribe(callback)` : Registers a callback to be triggered whenever the store updates. Updating the Store</span>
+-   <span id="cd1e">Simply an object that holds the application state wrapped in an API.</span>
+-   <span id="f57c">`Three methods`:</span>
+-   <span id="354c">`getState()` : Returns the store's current state.</span>
+-   <span id="537c">`dispatch(action)` : Passes an action into the store's reducer to tell it what info to update.</span>
+-   <span id="4539">`subscribe(callback)` : Registers a callback to be triggered whenever the store updates. Updating the Store</span>
 
 <!-- -->
 
@@ -1926,8 +1926,8 @@ What is Flux?
 
 Subscribing to the store
 
-- <span id="1a02">Whenever a store process a dispatch(), it triggers all its subscribers.</span>
-- <span id="e667">`Subscribers` : callbacks that can be added to the store via subscribe().</span>
+-   <span id="1a02">Whenever a store process a dispatch(), it triggers all its subscribers.</span>
+-   <span id="e667">`Subscribers` : callbacks that can be added to the store via subscribe().</span>
 
 <!-- -->
 
@@ -1983,8 +1983,8 @@ Reviewing a simple example
 
 ### Reducers
 
-- <span id="98f3">Reducer function receives the current `state` and `action`, updates the state appropriately based on the `action.type` and returns the following state.</span>
-- <span id="4cee">You can bundles different action types and ensuing logic by using a switch/case statement.</span>
+-   <span id="98f3">Reducer function receives the current `state` and `action`, updates the state appropriately based on the `action.type` and returns the following state.</span>
+-   <span id="4cee">You can bundles different action types and ensuing logic by using a switch/case statement.</span>
 
 <!-- -->
 
@@ -2019,8 +2019,8 @@ Reviewing how Array\#slice works
     // ['apple', 'apple', 'banana', 'watermelon']
     const newFruits = [...fruits.slice(0, index), ...fruits.slice(index + 1)];
 
-- <span id="f322">Approach that can be used to remove an element without mutating the original array. Avoiding state mutations</span>
-- <span id="f862">Your reducer must always return a new object if the state changes. GOOD</span>
+-   <span id="f322">Approach that can be used to remove an element without mutating the original array. Avoiding state mutations</span>
+-   <span id="f862">Your reducer must always return a new object if the state changes. GOOD</span>
 
 <!-- -->
 
@@ -2051,7 +2051,7 @@ BAD
 
 ### Actions
 
-- <span id="64b4">Actions are the only way to trigger changes to the store’s state. Using action creators</span>
+-   <span id="64b4">Actions are the only way to trigger changes to the store’s state. Using action creators</span>
 
 <!-- -->
 
@@ -2062,8 +2062,8 @@ BAD
     store.dispatch(addOrange);
     console.log(store.getState()); // [ 'orange' ]
 
-- <span id="c39d">fruit is the `payload key` and orange is the `state data`</span>
-- <span id="43e2">`Action Creators` : Functions created from extrapolating the creation of an action object.</span>
+-   <span id="c39d">fruit is the `payload key` and orange is the `state data`</span>
+-   <span id="43e2">`Action Creators` : Functions created from extrapolating the creation of an action object.</span>
 
 <!-- -->
 
@@ -2072,8 +2072,8 @@ BAD
       fruit,
     });
 
-- <span id="11fd">Use parenthesis for implicit return value.</span>
-- <span id="eea8">We can now add whatever fruit we’d like.</span>
+-   <span id="11fd">Use parenthesis for implicit return value.</span>
+-   <span id="eea8">We can now add whatever fruit we’d like.</span>
 
 <!-- -->
 
@@ -2104,13 +2104,13 @@ Preventing typos in action type string literals
       type: SELL_OUT,
     });
 
-- <span id="ae86">Using constant variables helps reduce simple typos in a reducer’s case clauses.</span>
+-   <span id="ae86">Using constant variables helps reduce simple typos in a reducer’s case clauses.</span>
 
 ---
 
 ### Debugging Arrow Functions
 
-- <span id="43c6">It is important to learn how to use debugger statements with arrow functions to effectively debug Redux cycle. Understanding the limitations of implicit return values</span>
+-   <span id="43c6">It is important to learn how to use debugger statements with arrow functions to effectively debug Redux cycle. Understanding the limitations of implicit return values</span>
 
 <!-- -->
 
@@ -2128,7 +2128,7 @@ Preventing typos in action type string literals
       };
     };
 
-- <span id="2806">You must use explicit return statement arrow function to use a debugger.</span>
+-   <span id="2806">You must use explicit return statement arrow function to use a debugger.</span>
 
 ---
 
@@ -2149,10 +2149,10 @@ In the default React setup, you lose the ability to create routes in the same ma
 
 When you finish this article, you should be able to use the following from the `react-router-dom` library:
 
-- <span id="e5d3">`<BrowserRouter>` to provide your application access to the `react-router-dom` library; and</span>
-- <span id="e1cd">`<Route>` to connect specific URL paths to specific components you want rendered; and</span>
-- <span id="bf15">`<Switch>` to wrap several `Route` elements, rendering only one even if several match the current URL; and</span>
-- <span id="0318">React Router’s `match` prop to access route path parameters.</span>
+-   <span id="e5d3">`<BrowserRouter>` to provide your application access to the `react-router-dom` library; and</span>
+-   <span id="e1cd">`<Route>` to connect specific URL paths to specific components you want rendered; and</span>
+-   <span id="bf15">`<Switch>` to wrap several `Route` elements, rendering only one even if several match the current URL; and</span>
+-   <span id="0318">React Router’s `match` prop to access route path parameters.</span>
 
 ### Getting started with routing
 
@@ -2369,10 +2369,10 @@ Now that you’ve seen your React Router’s `match` prop in action, let's go ov
 
 This is an object that contains important information about how the current URL matches the route path. Here are some of the more useful keys on the `match` object:
 
-- <span id="1d2c">`isExact`: a boolean that tells you whether or not the URL exactly matches the path</span>
-- <span id="b558">`url`: the current URL</span>
-- <span id="ab28">`path`: the route path it matched against (without wildcards filled in)</span>
-- <span id="be5b">`params`: the matches for the individual wildcard segments, nested under their names</span>
+-   <span id="1d2c">`isExact`: a boolean that tells you whether or not the URL exactly matches the path</span>
+-   <span id="b558">`url`: the current URL</span>
+-   <span id="ab28">`path`: the route path it matched against (without wildcards filled in)</span>
+-   <span id="be5b">`params`: the matches for the individual wildcard segments, nested under their names</span>
 
 When you use React Router, the browser `location` and `history` are a part of the state of your app. You can store information about which component should be displayed, which user profile you are currently viewing, or any other piece of state, in the browser location. You can then access that information from anywhere your Router props are passed to in your app.
 
@@ -2405,11 +2405,11 @@ Now that you’ve learned about parameters and route props, let’s revisit your
 
 In this article, you learned how to:
 
-- <span id="92fc">Use components from the React Router library; and</span>
-- <span id="19b5">Create routes to render specific components; and</span>
-- <span id="fc9d">Manage the order of rendered routes; and</span>
-- <span id="3281">Use the `exact` flag to ensure that a specific path renders a specific component; and</span>
-- <span id="3949">Use the React Router `match` prop to access Router params.</span>
+-   <span id="92fc">Use components from the React Router library; and</span>
+-   <span id="19b5">Create routes to render specific components; and</span>
+-   <span id="fc9d">Manage the order of rendered routes; and</span>
+-   <span id="3281">Use the `exact` flag to ensure that a specific path renders a specific component; and</span>
+-   <span id="3949">Use the React Router `match` prop to access Router params.</span>
 
 ---
 
@@ -2419,9 +2419,9 @@ Now that you know how to create front-end routes with React Router, you’ll nee
 
 In this article, you’ll be working off of the demo project you built in the React Router Intro reading. When you finish this article, you should be able to use the following components from the `react-router-dom` library:
 
-- <span id="76bc">`<Link>` or `<NavLink>` to create links with absolute paths to routes in your application (like "/users/1"); and,</span>
-- <span id="cdc2">`<Redirect>` to redirect a user to another path (i.e. a login page when the user is not logged in); and</span>
-- <span id="d8a7">React Router’s `history` prop to update a browser's URL programmatically.</span>
+-   <span id="76bc">`<Link>` or `<NavLink>` to create links with absolute paths to routes in your application (like "/users/1"); and,</span>
+-   <span id="cdc2">`<Redirect>` to redirect a user to another path (i.e. a login page when the user is not logged in); and</span>
+-   <span id="d8a7">React Router’s `history` prop to update a browser's URL programmatically.</span>
 
 ### Adding links for navigation
 
@@ -2605,16 +2605,16 @@ You know how to redirect users with a `<Redirect>` component, but what if you ne
 
 This prop lets you update the URL programmatically. For example, suppose you want to push a new URL when the user clicks a button. It has two useful methods:
 
-- <span id="31f3">`push` - This adds a new URL to the end of the history stack. That means that clicking the back button will take the browser to the previous URL. Note that pushing the same URL multiple times in a row will have no effect; the URL will still only show up on the stack once. In development mode, pushing the same URL twice in a row will generate a console warning. This warning is disabled in production mode.</span>
-- <span id="90c1">`replace` - This replaces the current URL on the history stack, so the back button won't take you to it. For example:</span>
+-   <span id="31f3">`push` - This adds a new URL to the end of the history stack. That means that clicking the back button will take the browser to the previous URL. Note that pushing the same URL multiple times in a row will have no effect; the URL will still only show up on the stack once. In development mode, pushing the same URL twice in a row will generate a console warning. This warning is disabled in production mode.</span>
+-   <span id="90c1">`replace` - This replaces the current URL on the history stack, so the back button won't take you to it. For example:</span>
 
 ### What you learned
 
 In this article, you learned how to:
 
-- <span id="169b">Create navigation links for your route paths; and</span>
-- <span id="d108">Redirect users through using the `<Redirect>` component; and</span>
-- <span id="d090">Update a browser’s URL programmatically by using React Router’s `history` prop.</span>
+-   <span id="169b">Create navigation links for your route paths; and</span>
+-   <span id="d108">Redirect users through using the `<Redirect>` component; and</span>
+-   <span id="d090">Update a browser’s URL programmatically by using React Router’s `history` prop.</span>
 
 ---
 
@@ -2624,9 +2624,9 @@ Now you know how to create front-end routes and add navigation with React Router
 
 In this article, let’s dive into <a href="https://reacttraining.com/react-router/core/guides/philosophy/nested-routes" class="markup--anchor markup--p-anchor">nested routes</a>! When you finish the article, you should:
 
-- <span id="38ee">Describe what nested routes are; and</span>
-- <span id="0559">Be able to use React Router to create and navigate nested routes; and</span>
-- <span id="ce4a">Know how to use the React Router `match` prop to generate links and routes.</span>
+-   <span id="38ee">Describe what nested routes are; and</span>
+-   <span id="0559">Be able to use React Router to create and navigate nested routes; and</span>
+-   <span id="ce4a">Know how to use the React Router `match` prop to generate links and routes.</span>
 
 ### Why nested routes?
 
@@ -2694,9 +2694,9 @@ In tomorrow’s project, you’ll build a rainbow of routes as well as define ne
 
 In this article, you learned:
 
-- <span id="2378">What nested routes are; and</span>
-- <span id="e072">About creating and navigating nested routes with React Router; and</span>
-- <span id="c8b8">How to use the React Router props to generate nested links and routes.</span>
+-   <span id="2378">What nested routes are; and</span>
+-   <span id="e072">About creating and navigating nested routes with React Router; and</span>
+-   <span id="c8b8">How to use the React Router props to generate nested links and routes.</span>
 
 ---
 
@@ -2708,9 +2708,9 @@ With React applications, that means (at a minimum) converting JSX to something t
 
 When you finish this article, you should be able to:
 
-- <span id="2448">Describe what front-end builds are and why they’re needed;</span>
-- <span id="efab">Describe at a high level what happens in a Create React App when you run `npm start`; and</span>
-- <span id="502f">Prepare to deploy a React application into a production environment.</span>
+-   <span id="2448">Describe what front-end builds are and why they’re needed;</span>
+-   <span id="efab">Describe at a high level what happens in a Create React App when you run `npm start`; and</span>
+-   <span id="502f">Prepare to deploy a React application into a production environment.</span>
 
 ### Understanding front-end builds
 
@@ -2766,14 +2766,14 @@ Running an application created by Create React App using `npm start` can feel ma
 
 At a high level, here’s what happens when you run `npm start`:
 
-- <span id="2808">Environment variables are loaded (more about this in a bit);</span>
-- <span id="f272">The list of browsers to support are checked (more about this too in a bit);</span>
-- <span id="71b2">The configured HTTP port is checked to ensure that it’s available;</span>
-- <span id="f826">The application compiler is configured and created;</span>
-- <span id="c605">`webpack-dev-server` is started;</span>
-- <span id="a696">`webpack-dev-server` compiles your application;</span>
-- <span id="c66e">The `index.html` file is loaded into the browser; and</span>
-- <span id="6add">A file watcher is started to watch your files, waiting for changes.</span>
+-   <span id="2808">Environment variables are loaded (more about this in a bit);</span>
+-   <span id="f272">The list of browsers to support are checked (more about this too in a bit);</span>
+-   <span id="71b2">The configured HTTP port is checked to ensure that it’s available;</span>
+-   <span id="f826">The application compiler is configured and created;</span>
+-   <span id="c605">`webpack-dev-server` is started;</span>
+-   <span id="a696">`webpack-dev-server` compiles your application;</span>
+-   <span id="c66e">The `index.html` file is loaded into the browser; and</span>
+-   <span id="6add">A file watcher is started to watch your files, waiting for changes.</span>
 
 ### Ejecting
 
@@ -2853,9 +2853,9 @@ Now your application is ready to be deployed!
 
 In this article, you learned how to:
 
-- <span id="1ff3">Describe what front-end builds are and why they’re needed;</span>
-- <span id="1fc3">Describe at a high level what happens in a Create React App when you run `npm start`; and</span>
-- <span id="6adc">Prepare to deploy a React application into a production environment.</span>
+-   <span id="1ff3">Describe what front-end builds are and why they’re needed;</span>
+-   <span id="1fc3">Describe at a high level what happens in a Create React App when you run `npm start`; and</span>
+-   <span id="6adc">Prepare to deploy a React application into a production environment.</span>
 
 ---
 
@@ -2865,26 +2865,26 @@ Now that you’ve had an introduction to React Router, feel free to explore the 
 
 ### Setting up React Router
 
-- <span id="bfa4"><a href="https://reacttraining.com/react-router/web/guides/quick-start" class="markup--anchor markup--li-anchor">React Router Quick Start</a></span>
-- <span id="b0cb"><a href="https://reacttraining.com/react-router/web/api/HashRouter" class="markup--anchor markup--li-anchor">HashRouter</a></span>
-- <span id="f48b"><a href="https://reacttraining.com/react-router/web/api/BrowserRouter" class="markup--anchor markup--li-anchor">BrowserRouter</a></span>
+-   <span id="bfa4"><a href="https://reacttraining.com/react-router/web/guides/quick-start" class="markup--anchor markup--li-anchor">React Router Quick Start</a></span>
+-   <span id="b0cb"><a href="https://reacttraining.com/react-router/web/api/HashRouter" class="markup--anchor markup--li-anchor">HashRouter</a></span>
+-   <span id="f48b"><a href="https://reacttraining.com/react-router/web/api/BrowserRouter" class="markup--anchor markup--li-anchor">BrowserRouter</a></span>
 
 ### Routes and Links
 
-- <span id="72bd"><a href="https://reacttraining.com/react-router/web/api/Route" class="markup--anchor markup--li-anchor">Route</a></span>
-- <span id="e256"><a href="https://reacttraining.com/react-router/web/api/Link" class="markup--anchor markup--li-anchor">Link</a></span>
-- <span id="1d9d"><a href="https://reacttraining.com/react-router/web/api/NavLink" class="markup--anchor markup--li-anchor">NavLink</a></span>
+-   <span id="72bd"><a href="https://reacttraining.com/react-router/web/api/Route" class="markup--anchor markup--li-anchor">Route</a></span>
+-   <span id="e256"><a href="https://reacttraining.com/react-router/web/api/Link" class="markup--anchor markup--li-anchor">Link</a></span>
+-   <span id="1d9d"><a href="https://reacttraining.com/react-router/web/api/NavLink" class="markup--anchor markup--li-anchor">NavLink</a></span>
 
 ### Switch and Redirect
 
-- <span id="5240"><a href="https://reacttraining.com/react-router/web/api/Switch" class="markup--anchor markup--li-anchor">Switch</a></span>
-- <span id="b405"><a href="https://reacttraining.com/react-router/web/api/Redirect" class="markup--anchor markup--li-anchor">Redirect</a></span>
+-   <span id="5240"><a href="https://reacttraining.com/react-router/web/api/Switch" class="markup--anchor markup--li-anchor">Switch</a></span>
+-   <span id="b405"><a href="https://reacttraining.com/react-router/web/api/Redirect" class="markup--anchor markup--li-anchor">Redirect</a></span>
 
 ### React Router Params (ownProps)
 
-- <span id="e0d6"><a href="https://reacttraining.com/react-router/web/api/history" class="markup--anchor markup--li-anchor">props.history</a></span>
-- <span id="5f4a"><a href="https://reacttraining.com/react-router/web/api/location" class="markup--anchor markup--li-anchor">props.location</a></span>
-- <span id="bd15"><a href="https://reacttraining.com/react-router/web/api/match" class="markup--anchor markup--li-anchor">props.match</a></span>
+-   <span id="e0d6"><a href="https://reacttraining.com/react-router/web/api/history" class="markup--anchor markup--li-anchor">props.history</a></span>
+-   <span id="5f4a"><a href="https://reacttraining.com/react-router/web/api/location" class="markup--anchor markup--li-anchor">props.location</a></span>
+-   <span id="bd15"><a href="https://reacttraining.com/react-router/web/api/match" class="markup--anchor markup--li-anchor">props.match</a></span>
 
 ---
 
@@ -3024,13 +3024,13 @@ Within your `Rainbow` component, you'll be rendering `<NavLink>` and `<Route>` c
 
 Create files for the following components in your `./src/components` directory:
 
-- <span id="1c8e">`Red`</span>
-- <span id="a8dd">`Blue`</span>
-- <span id="6ca3">`Green`</span>
-- <span id="8e44">`Indigo`</span>
-- <span id="f8f2">`Orange`</span>
-- <span id="0f47">`Violet`</span>
-- <span id="8a89">`Yellow`</span>
+-   <span id="1c8e">`Red`</span>
+-   <span id="a8dd">`Blue`</span>
+-   <span id="6ca3">`Green`</span>
+-   <span id="8e44">`Indigo`</span>
+-   <span id="f8f2">`Orange`</span>
+-   <span id="0f47">`Violet`</span>
+-   <span id="8a89">`Yellow`</span>
 
 Your `Red` and `Blue` components will look something like this:
 
@@ -3141,8 +3141,8 @@ Begin by using the <a href="https://github.com/facebook/create-react-app" class=
 
 Update the `App` component:
 
-- <span id="9186">Wrap the `<h1>` element with a `<div>` element; and</span>
-- <span id="5e97">Change the `<h1>` element content to something like "Exploring React Builds".</span>
+-   <span id="9186">Wrap the `<h1>` element with a `<div>` element; and</span>
+-   <span id="5e97">Change the `<h1>` element content to something like "Exploring React Builds".</span>
 
 <!-- -->
 
@@ -3182,10 +3182,10 @@ You can also leverage <a href="https://github.com/css-modules/css-modules" class
 
 Add a new `css-modules` folder to the `src` folder. Within that folder, add the following files:
 
-- <span id="2912">`HeadingA.js`</span>
-- <span id="3aa3">`HeadingA.module.css`</span>
-- <span id="2ea3">`HeadingB.js`</span>
-- <span id="ca2b">`HeadingB.module.css`</span>
+-   <span id="2912">`HeadingA.js`</span>
+-   <span id="3aa3">`HeadingA.module.css`</span>
+-   <span id="2ea3">`HeadingB.js`</span>
+-   <span id="ca2b">`HeadingB.module.css`</span>
 
 Then update the contents of each file to the following:
 
@@ -3611,9 +3611,9 @@ Then update the `App` component to this code:
 
 Be sure to run and test your application to ensure that the defined routes work as expected:
 
-- <span id="151a">`/` - Should display the `HeadingA` and `HeadingB` components;</span>
-- <span id="1e2b">`/image` - Should display the `Image` component; and</span>
-- <span id="7f3a">`/class-component` - Should display the `ClassComponent` component.</span>
+-   <span id="151a">`/` - Should display the `HeadingA` and `HeadingB` components;</span>
+-   <span id="1e2b">`/image` - Should display the `Image` component; and</span>
+-   <span id="7f3a">`/class-component` - Should display the `ClassComponent` component.</span>
 
 ### Creating a production build
 
@@ -3676,8 +3676,8 @@ App a file named `app.js` with the following contents:
 
 This simple Express application will:
 
-- <span id="31ba">Attempt to match incoming requests to static files located in the `public` folder; and</span>
-- <span id="16e6">If a matching static file isn’t found, then the `./public/index.html` file will be served for all other requests.</span>
+-   <span id="31ba">Attempt to match incoming requests to static files located in the `public` folder; and</span>
+-   <span id="16e6">If a matching static file isn’t found, then the `./public/index.html` file will be served for all other requests.</span>
 
 Now add a folder named `public` to the root of your Express project. Copy the files from the `build` folder in your Create React App project to the `public` folder in the Express application project. Then run your application using the command `node app.js`.
 
@@ -3685,8 +3685,8 @@ Open a browser and browse to the URL `http://localhost:9000/`. You should see yo
 
 Also, because you configured Express to serve the `./public/index.html` file for any request that doesn't match a static file, you can "deep link" to any of your React application's routes:
 
-- <span id="58e7"><a href="http://localhost:9000/image" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a></span>
-- <span id="3fa9"><a href="http://localhost:9000/class-component" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a></span>
+-   <span id="58e7"><a href="http://localhost:9000/image" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a></span>
+-   <span id="3fa9"><a href="http://localhost:9000/class-component" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a></span>
 
 _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a>
 

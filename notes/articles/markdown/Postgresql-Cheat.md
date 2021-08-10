@@ -438,8 +438,8 @@ Output:
 
 Using the JSON operators, combined with traditional PostgreSQL aggregate functions, we can pull out whatever we want. You have the full might of an RDBMS at your disposal.
 
-- <span id="4ffd">Lets see browser usage:</span>
-- <span id="261c">`SELECT browser->>'name' AS browser, count(browser) FROM events GROUP BY browser->>'name';`</span>
+-   <span id="4ffd">Lets see browser usage:</span>
+-   <span id="261c">`SELECT browser->>'name' AS browser, count(browser) FROM events GROUP BY browser->>'name';`</span>
 
 Output:
 

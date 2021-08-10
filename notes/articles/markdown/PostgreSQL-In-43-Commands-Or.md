@@ -24,12 +24,12 @@ SQL is short for Structured Query Language. Originally, it used to be called SEQ
 
 SQL is a powerful language where we can perform a wide range of operations:
 
-- <span id="7f0b">execute queries</span>
-- <span id="d14a">fetch data</span>
-- <span id="5389">insert, update, and delete records in a database (DML operations)</span>
-- <span id="f62e">create new objects in a database (DDL operations)</span>
-- <span id="d790">set permissions on tables, procedures, functions, and views</span>
-- <span id="ebab">and much, much more...</span>
+-   <span id="7f0b">execute queries</span>
+-   <span id="d14a">fetch data</span>
+-   <span id="5389">insert, update, and delete records in a database (DML operations)</span>
+-   <span id="f62e">create new objects in a database (DDL operations)</span>
+-   <span id="d790">set permissions on tables, procedures, functions, and views</span>
+-   <span id="ebab">and much, much more...</span>
 
 Data is absolutely everywhere. When you visited this web page, you generated data. When you took a note of your to-dos for the day in your reminders, you generated data.
 
@@ -115,11 +115,11 @@ You may decide that you need to make a change to an SQL table. For instance, you
 
 The ALTER TABLE command allows you to change an existing table by:
 
-- <span id="c60b">Adding a column.</span>
-- <span id="c841">Adding a constraint.</span>
-- <span id="028a">Removing a column.</span>
-- <span id="c667">Changing a data type.</span>
-- <span id="64bf">Renaming a column.</span>
+-   <span id="c60b">Adding a column.</span>
+-   <span id="c841">Adding a constraint.</span>
+-   <span id="028a">Removing a column.</span>
+-   <span id="c667">Changing a data type.</span>
+-   <span id="64bf">Renaming a column.</span>
 
 _There is no SQL ADD COLUMN statement. To add a column to an SQL table, you must use the ALTER TABLE ADD syntax. ALTER TABLE lets you add, delete, or modify columns in a table._
 
@@ -196,11 +196,11 @@ SQL aggregate functions collate information about what is in a database. For ins
 
 Here is a list of the aggregate functions in SQL you can use:
 
-- <span id="27b8">COUNT</span>
-- <span id="2ac2">SUM</span>
-- <span id="9579">AVG</span>
-- <span id="e4fa">MIN</span>
-- <span id="ffb1">MAX</span>
+-   <span id="27b8">COUNT</span>
+-   <span id="2ac2">SUM</span>
+-   <span id="9579">AVG</span>
+-   <span id="e4fa">MIN</span>
+-   <span id="ffb1">MAX</span>
 
 Let’s walk through each of these individually. We’re going to be referring to a database of employees throughout this tutorial.
 
@@ -641,18 +641,18 @@ With the help of the <a href="https://www.postgresql.org/docs/12/sql-copy.html" 
     postgres=# copy dummy_table from '/tmp/abc.txt';
     COPY 5
 
-- <span id="8e52">With the help of common table expressions (CTE):</span>
+-   <span id="8e52">With the help of common table expressions (CTE):</span>
 
 <!-- -->
 
     postgres=#WITH RECURSIVE cte AS (                                                                                                                                                          SELECT emp_no, ename, manager_no, 1 AS level                                                                                                                                             FROM   test_table                                                                                                                                                                      where manager_no is null                                                                                                                                                            UNION  ALL                                                                                                                                                                               SELECT e.emp_no, e.ename, e.manager_no, c.level + 1                                                                                                                                      FROM   cte c                                                                                                                                                                             JOIN   test_table e ON e.manager_no = c.emp_no                                                                                  )                                                                                                                                                                                     SELECT *                                                                                                                                                                                 FROM   cte;  emp_no | ename | manager_no | level  -----------+----------+------------------+-------      10    | A1        |                        |     1      11    | B1        |          10          |     2      12    | B2        |          10          |     2      13    | B3        |          10          |     2      14    | C1        |         13           |     3      17    | E1        |          11          |      3      18    | E2        |          11           |     3      15    | C2        |          13           |     3      16    | D1        |          15           |     4 (9 rows)  postgres=#
 
-- <span id="b6ad">Using the tablefunc extension:</span>
+-   <span id="b6ad">Using the tablefunc extension:</span>
 
 1.  <span id="c6e2">The <a href="https://www.postgresql.org/docs/8.3/tablefunc.html" class="markup--anchor markup--li-anchor">tablefunc extension</a> is a contrib module that resides in the contrib/ folder in PostgreSQL sources.</span>
 2.  <span id="2847">First, create the tablefunc extension:</span>
 
-- <span id="3505">`postgres=# CREATE EXTENSION tablefunc; CREATE EXTENSION postgres=#`</span>
+-   <span id="3505">`postgres=# CREATE EXTENSION tablefunc; CREATE EXTENSION postgres=#`</span>
 
 1.  <span id="b334">Then, use tablefunc’s connectby function to display results hierarchically:</span>
 
