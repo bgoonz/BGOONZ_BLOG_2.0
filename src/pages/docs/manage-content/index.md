@@ -31,7 +31,7 @@ template: docs
 
  |   |   |   |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|---|---|---|
-| [https://github.com/bgoonz/03-fetch-data](https://github.com/bgoonz/03-fetch-data)  |   |   |   |   |   |   |   |   |   |
+| [https://github.com/bgoonz/03-fetch-data](https://github.com/bgoonz/03-fetch-data)  |  [https://github.com/bgoonz/a-whole-bunch-o-gatsby-templates](https://github.com/bgoonz/a-whole-bunch-o-gatsby-templates) |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |
