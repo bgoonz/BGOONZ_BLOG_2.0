@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
 
                         <br />
 
-                        <h1>Free Find Search Engine</h1>
+                        <h1 style="color:transparent;">Free Find Search Engine</h1>
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
                                 <tr>
