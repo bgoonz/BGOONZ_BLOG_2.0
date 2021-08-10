@@ -31,7 +31,7 @@ template: docs
 
  |   |   |   |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|---|---|---|
-| [https://github.com/bgoonz/03-fetch-data](https://github.com/bgoonz/03-fetch-data)  |  [https://github.com/bgoonz/a-whole-bunch-o-gatsby-templates](https://github.com/bgoonz/a-whole-bunch-o-gatsby-templates) |  [https://github.com/bgoonz/activity-box](https://github.com/bgoonz/activity-box) |  [https://github.com/bgoonz/All-Undergrad-Archive](https://github.com/bgoonz/All-Undergrad-Archive) |   | [https://github.com/bgoonz/alternate-blog-theme](https://github.com/bgoonz/alternate-blog-theme)  |   |   |   |   |
+| [https://github.com/bgoonz/03-fetch-data](https://github.com/bgoonz/03-fetch-data)  |  [https://github.com/bgoonz/a-whole-bunch-o-gatsby-templates](https://github.com/bgoonz/a-whole-bunch-o-gatsby-templates) |  [https://github.com/bgoonz/activity-box](https://github.com/bgoonz/activity-box) |  [https://github.com/bgoonz/All-Undergrad-Archive](https://github.com/bgoonz/All-Undergrad-Archive) |   | [https://github.com/bgoonz/alternate-blog-theme](https://github.com/bgoonz/alternate-blog-theme)  | [https://github.com/bgoonz/anki-cards](https://github.com/bgoonz/anki-cards)  |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |
