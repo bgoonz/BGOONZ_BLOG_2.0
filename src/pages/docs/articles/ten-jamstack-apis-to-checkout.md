@@ -9,7 +9,11 @@ seo:
     for creating static sites to a stack for developing dynamic web
     applications. 
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/incredible-saturn.png
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
