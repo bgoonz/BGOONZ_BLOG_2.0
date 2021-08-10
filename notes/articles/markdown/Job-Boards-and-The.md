@@ -87,50 +87,50 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 
 #### General Boards
 
-- <span id="a076"><a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a></span>
-- <span id="c522"><a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a></span>
-- <span id="8235"><a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a></span>
-- <span id="ae9e"><a href="https://www.theladders.com/jobs/search-jobs" class="markup--anchor markup--li-anchor">The Ladders</a></span>
-- <span id="aceb"><a href="http://www.crunchboard.com/jobs" class="markup--anchor markup--li-anchor">CrunchBoard</a></span>
-- <span id="7e5f"><a href="https://uncubed.com/" class="markup--anchor markup--li-anchor">Uncubed</a></span>
-- <span id="8678"><a href="https://technical.ly/jobs/" class="markup--anchor markup--li-anchor">Technical.ly</a></span>
-- <span id="c7fe"><a href="https://www.dice.com/" class="markup--anchor markup--li-anchor">Dice</a></span>
-- <span id="23f7"><a href="https://www.techcareers.com/" class="markup--anchor markup--li-anchor">Tech Careers</a></span>
-- <span id="20cf"><a href="http://jobs.mashable.com/jobs/search/results" class="markup--anchor markup--li-anchor">Mashable</a></span>
+-   <span id="a076"><a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a></span>
+-   <span id="c522"><a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a></span>
+-   <span id="8235"><a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a></span>
+-   <span id="ae9e"><a href="https://www.theladders.com/jobs/search-jobs" class="markup--anchor markup--li-anchor">The Ladders</a></span>
+-   <span id="aceb"><a href="http://www.crunchboard.com/jobs" class="markup--anchor markup--li-anchor">CrunchBoard</a></span>
+-   <span id="7e5f"><a href="https://uncubed.com/" class="markup--anchor markup--li-anchor">Uncubed</a></span>
+-   <span id="8678"><a href="https://technical.ly/jobs/" class="markup--anchor markup--li-anchor">Technical.ly</a></span>
+-   <span id="c7fe"><a href="https://www.dice.com/" class="markup--anchor markup--li-anchor">Dice</a></span>
+-   <span id="23f7"><a href="https://www.techcareers.com/" class="markup--anchor markup--li-anchor">Tech Careers</a></span>
+-   <span id="20cf"><a href="http://jobs.mashable.com/jobs/search/results" class="markup--anchor markup--li-anchor">Mashable</a></span>
 
 #### Remote or Relocation Boards:
 
-- <span id="1e47"><a href="https://weworkremotely.com/" class="markup--anchor markup--li-anchor">We Work Remotely</a></span>
-- <span id="37d2"><a href="https://relocate.me/" class="markup--anchor markup--li-anchor">Relocate</a><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">‍</a></span>
-- <span id="aad7"><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">Work From Home Jobs</a></span>
-- <span id="d1fc"><a href="https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing" class="markup--anchor markup--li-anchor">Remote Boards &amp; Companies Spreadsheet</a></span>
-- <span id="5267"><a href="https://careervault.io/" class="markup--anchor markup--li-anchor">Career Vault</a></span>
+-   <span id="1e47"><a href="https://weworkremotely.com/" class="markup--anchor markup--li-anchor">We Work Remotely</a></span>
+-   <span id="37d2"><a href="https://relocate.me/" class="markup--anchor markup--li-anchor">Relocate</a><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">‍</a></span>
+-   <span id="aad7"><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">Work From Home Jobs</a></span>
+-   <span id="d1fc"><a href="https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing" class="markup--anchor markup--li-anchor">Remote Boards &amp; Companies Spreadsheet</a></span>
+-   <span id="5267"><a href="https://careervault.io/" class="markup--anchor markup--li-anchor">Career Vault</a></span>
 
 #### DS Boards:
 
-- <span id="a50a"><a href="https://www.bigdatajobs.com/" class="markup--anchor markup--li-anchor">BigDataJobs</a></span>
-- <span id="e7ce"><a href="https://icrunchdata.com/data-science-jobs/" class="markup--anchor markup--li-anchor">Icrunchdata</a></span>
-- <span id="d66f"><a href="https://www.analyticsjobs.co.uk/" class="markup--anchor markup--li-anchor">Analyticsjobs.co.uk</a></span>
+-   <span id="a50a"><a href="https://www.bigdatajobs.com/" class="markup--anchor markup--li-anchor">BigDataJobs</a></span>
+-   <span id="e7ce"><a href="https://icrunchdata.com/data-science-jobs/" class="markup--anchor markup--li-anchor">Icrunchdata</a></span>
+-   <span id="d66f"><a href="https://www.analyticsjobs.co.uk/" class="markup--anchor markup--li-anchor">Analyticsjobs.co.uk</a></span>
 
 #### Design Boards
 
-- <span id="0a09"><a href="https://www.behance.net/joblist" class="markup--anchor markup--li-anchor">Behance</a></span>
-- <span id="0174"><a href="https://www.uxjobsboard.com/" class="markup--anchor markup--li-anchor">UX Jobs Board</a></span>
-- <span id="ef44"><a href="https://www.krop.com/creative-jobs/ux-ui-designer/" class="markup--anchor markup--li-anchor">Krop</a></span>
+-   <span id="0a09"><a href="https://www.behance.net/joblist" class="markup--anchor markup--li-anchor">Behance</a></span>
+-   <span id="0174"><a href="https://www.uxjobsboard.com/" class="markup--anchor markup--li-anchor">UX Jobs Board</a></span>
+-   <span id="ef44"><a href="https://www.krop.com/creative-jobs/ux-ui-designer/" class="markup--anchor markup--li-anchor">Krop</a></span>
 
 #### Software Development
 
-- <span id="4702"><a href="https://www.honeypot.io/pages/for_employers" class="markup--anchor markup--li-anchor">Honeypot.io</a></span>
-- <span id="d025"><a href="https://jobs.github.com/" class="markup--anchor markup--li-anchor">GitHub</a></span>
-- <span id="ed46"><a href="https://blabladev.eu/" class="markup--anchor markup--li-anchor">BlablaDev</a></span>
-- <span id="c23f"><a href="http://jobs.smashingmagazine.com/" class="markup--anchor markup--li-anchor">Smashing <strong>Magazine</strong></a></span>
-- <span id="61fd"><a href="http://jobs.arstechnica.com/" class="markup--anchor markup--li-anchor">arstechnica</a></span>
-- <span id="c526"><a href="http://jobs.37signals.com/" class="markup--anchor markup--li-anchor">obs.37signals</a></span>
-- <span id="1ec6"><a href="http://news.ycombinator.com/submitted?id=whoishiring" class="markup--anchor markup--li-anchor">ycombinator</a></span>
-- <span id="fa87"><a href="http://jobs.slashdot.org/jobboard.php" class="markup--anchor markup--li-anchor">jobs.slashdot.org</a></span>
-- <span id="3dfc"><a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a></span>
-- <span id="319e"><a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a></span>
-- <span id="428a"><a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a></span>
+-   <span id="4702"><a href="https://www.honeypot.io/pages/for_employers" class="markup--anchor markup--li-anchor">Honeypot.io</a></span>
+-   <span id="d025"><a href="https://jobs.github.com/" class="markup--anchor markup--li-anchor">GitHub</a></span>
+-   <span id="ed46"><a href="https://blabladev.eu/" class="markup--anchor markup--li-anchor">BlablaDev</a></span>
+-   <span id="c23f"><a href="http://jobs.smashingmagazine.com/" class="markup--anchor markup--li-anchor">Smashing <strong>Magazine</strong></a></span>
+-   <span id="61fd"><a href="http://jobs.arstechnica.com/" class="markup--anchor markup--li-anchor">arstechnica</a></span>
+-   <span id="c526"><a href="http://jobs.37signals.com/" class="markup--anchor markup--li-anchor">obs.37signals</a></span>
+-   <span id="1ec6"><a href="http://news.ycombinator.com/submitted?id=whoishiring" class="markup--anchor markup--li-anchor">ycombinator</a></span>
+-   <span id="fa87"><a href="http://jobs.slashdot.org/jobboard.php" class="markup--anchor markup--li-anchor">jobs.slashdot.org</a></span>
+-   <span id="3dfc"><a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a></span>
+-   <span id="319e"><a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a></span>
+-   <span id="428a"><a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a></span>
 
 **I am intentionally not linking glassdoor because they have irritated me for the last time by insisting I provide a job review every time I want to access their content… (To the makers of glassdoor… HOW MANY TIMES A MONTH DO YOU THINK I CHANGE JOBS!!!!) I don’t have 15 minutes to make up a job experience every time I want to read a review.**
 
@@ -181,16 +181,16 @@ Here’s A Linkedin Checklist I will be using before I return to the job hunt!
 
 #### Experience Section
 
-- <span id="a517">\[ \] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space</span>
-- <span id="eca7">\[ \] I **have** written 2–4 power statements for each experience listed (okay to copy and paste from resume)</span>
-- <span id="d298">\[ \] My power statements for each experience <a href="https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/" class="markup--anchor markup--li-anchor">are bulleted</a>, not in paragraph form.</span>
-- <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
-- <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>
-- <span id="9a26">\[ \] I **did** describe past projects in past tense and current projects in present tense</span>
-- <span id="0f5a">\[ \] I **did not** use pronouns such as: “I,” “we,” “they, “you,” “me,” “us”</span>
-- <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
-- <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
-- <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
+-   <span id="a517">\[ \] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space</span>
+-   <span id="eca7">\[ \] I **have** written 2–4 power statements for each experience listed (okay to copy and paste from resume)</span>
+-   <span id="d298">\[ \] My power statements for each experience <a href="https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/" class="markup--anchor markup--li-anchor">are bulleted</a>, not in paragraph form.</span>
+-   <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
+-   <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>
+-   <span id="9a26">\[ \] I **did** describe past projects in past tense and current projects in present tense</span>
+-   <span id="0f5a">\[ \] I **did not** use pronouns such as: “I,” “we,” “they, “you,” “me,” “us”</span>
+-   <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
+-   <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
+-   <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
 
 ### Do’s:
 
@@ -243,7 +243,7 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 **_5. Freelancer websites_**. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you’re not looking for traditional full-time employment or remote work.
 
-- <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
+-   <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 

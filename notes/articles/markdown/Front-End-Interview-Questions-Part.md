@@ -17,11 +17,11 @@ These will focus more on vocabulary and concepts than the application driven app
 <a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer’s Technical Interview</strong><br />
 <em>Questions….Answers… and links to the missing pieces.</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-- <span id="0232">**­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**</span>
+-   <span id="0232">**­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**</span>
 
 Semantic HTML is markup that conveys meaning, not appearance, to search engines to make everything easier to identify.
 
-- <span id="37b8">**Name two big differences between display: block; and display: inline;.**</span>
+-   <span id="37b8">**Name two big differences between display: block; and display: inline;.**</span>
 
 block starts on a new line and takes up the full width of the content.  
  inline starts on the same line as previous content, in line with other content, and takes up only the space needed for the content.
@@ -84,23 +84,23 @@ It is code identified elsewhere that we can use later; gives the ability to put 
 
 Super ties the parent to the child.
 
-- <span id="d57b">**What is the DOM?**</span>
+-   <span id="d57b">**What is the DOM?**</span>
 
 Document object model, the ‘window’ or container that holds all the page’s elements
 
-- <span id="6172">**What is an event?**</span>
+-   <span id="6172">**What is an event?**</span>
 
 An event is something happening on or to the page, like a mouse click, doubleclick, key up/down, pointer out of element/over element, things like this. There are tons of “events” that javascript can detect.
 
-- <span id="75c5">**What is an event listener?**</span>
+-   <span id="75c5">**What is an event listener?**</span>
 
 Javascript command that ‘listens’ for an event to happen on the page to a given element and then runs a function when that event happens
 
-- <span id="157d">**Why would we convert a NodeList into an Array?**</span>
+-   <span id="157d">**Why would we convert a NodeList into an Array?**</span>
 
 A NodeList isn’t a real array, so it won’t have access to array methods such as slice or map.
 
-- <span id="6934">**What is a component?**</span>
+-   <span id="6934">**What is a component?**</span>
 
 Reusable pieces of code to display info in a consistent repeatable way
 

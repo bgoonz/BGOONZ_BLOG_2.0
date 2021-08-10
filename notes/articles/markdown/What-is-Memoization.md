@@ -27,9 +27,9 @@ This approach is near synonymous with another computer science term you may have
 
 There are two features that comprise memoization:
 
-- <span id="0b0b">The function is recursive.</span>
-- <span id="65a0">The additional data structure used is typically an object (we refer to this as  
-  the memo).</span>
+-   <span id="0b0b">The function is recursive.</span>
+-   <span id="65a0">The additional data structure used is typically an object (we refer to this as  
+    the memo).</span>
 
 This is a trade-off between the time it takes to run an algorithm (without  
 memoization) and the memory used to run the algorithm (with memoization).
@@ -70,9 +70,9 @@ By the time your first call to `factorial(6) `returns, you will not have just th
 
 Perhaps you’re not convinced because:
 
-- <span id="9fd5">You didn’t improve the speed of the algorithm by an order of Big-O (it is  
-  still O(n)).</span>
-- <span id="3867">The code uses some global variable, so it’s kind of ugly.</span>
+-   <span id="9fd5">You didn’t improve the speed of the algorithm by an order of Big-O (it is  
+    still O(n)).</span>
+-   <span id="3867">The code uses some global variable, so it’s kind of ugly.</span>
 
 ### Memoizing the Fibonacci generator
 

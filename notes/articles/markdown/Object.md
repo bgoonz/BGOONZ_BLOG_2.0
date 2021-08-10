@@ -91,12 +91,12 @@ A **method** is essentially a function that _belongs to_ an object.
 That means that every _method is a function_, but **not** every function  
 is a method.
 
-- <span id="cb33">`myFunc` is a function</span>
-- <span id="2c47">`myObject.myFunc` is a _method_ of the object `myObject`</span>
-- <span id="14fe">`myObject["myFunc"]` is a _method_ of the object `myObject`  
-  A method is just a key-value pair where the **key is the function name and the  
-  value is the function definition**! Let's use what we learned earlier to teach  
-  our dog some new tricks:</span>
+-   <span id="cb33">`myFunc` is a function</span>
+-   <span id="2c47">`myObject.myFunc` is a _method_ of the object `myObject`</span>
+-   <span id="14fe">`myObject["myFunc"]` is a _method_ of the object `myObject`  
+    A method is just a key-value pair where the **key is the function name and the  
+    value is the function definition**! Let's use what we learned earlier to teach  
+    our dog some new tricks:</span>
 
 <!-- -->
 

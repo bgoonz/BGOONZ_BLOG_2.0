@@ -18,13 +18,6 @@ seo:
       value: Jamstack APIs
       keyName: property
       relativeUrl: false
-    - name: 'og:description'
-      value: >-
-        The ongoing conversation about JAMstack has moved from being just a
-        stack for creating static sites to a stack for developing dynamic web
-        applications. 
-      keyName: property
-      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---

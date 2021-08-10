@@ -32,11 +32,11 @@ Plain Old JS Object Lesson Concepts
             [a]: "letter b"
         }
 
-- <span id="e4fc">Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object</span>
-- <span id="0baa">can also use `(key in object)` syntax interchangeably (returns a boolean)</span>
-- <span id="ad4c">Utilize Object.keys and Object.values in a function</span>
-- <span id="b548">`Object.keys(obj)` returns an array of all the keys in `obj`</span>
-- <span id="f39b">`Object.values(obj)` returns an array of the values in `obj`</span>
+-   <span id="e4fc">Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object</span>
+-   <span id="0baa">can also use `(key in object)` syntax interchangeably (returns a boolean)</span>
+-   <span id="ad4c">Utilize Object.keys and Object.values in a function</span>
+-   <span id="b548">`Object.keys(obj)` returns an array of all the keys in `obj`</span>
+-   <span id="f39b">`Object.values(obj)` returns an array of the values in `obj`</span>
 
 #### Iterate through an object using a `for in` loop
 
@@ -49,8 +49,8 @@ Plain Old JS Object Lesson Concepts
 
 #### Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
 
-- <span id="58a5">`...rest` syntax will store all additional arguments in an array</span>
-- <span id="5f8b">array will be empty if there are no additional arguments</span>
+-   <span id="58a5">`...rest` syntax will store all additional arguments in an array</span>
+-   <span id="5f8b">array will be empty if there are no additional arguments</span>
 
 <!-- -->
 
@@ -69,7 +69,7 @@ Plain Old JS Object Lesson Concepts
       // without spread syntax, this would give you a nested array
       let withoutRest = [arr1, "d", "e"] // [["a", "b", "c"], "d", "e"]
 
-- <span id="118b">Destructure an array to reference specific elements</span>
+-   <span id="118b">Destructure an array to reference specific elements</span>
 
 <!-- -->
 
@@ -133,13 +133,13 @@ Plain Old JS Object Lesson Concepts
 
 ### Callbacks Lesson Concepts
 
-- <span id="a16e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
-- <span id="0d89">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
-- <span id="e458">supports same basic operations as other types (strings, bools, numbers)</span>
-- <span id="6af2">higher-order functions take functions as arguments or return functions as values</span>
-- <span id="adbe">Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed</span>
-- <span id="e93b">what is this referring to?</span>
-- <span id="c73f">Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.</span>
+-   <span id="a16e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
+-   <span id="0d89">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
+-   <span id="e458">supports same basic operations as other types (strings, bools, numbers)</span>
+-   <span id="6af2">higher-order functions take functions as arguments or return functions as values</span>
+-   <span id="adbe">Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed</span>
+-   <span id="e93b">what is this referring to?</span>
+-   <span id="c73f">Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.</span>
 
 <!-- -->
 
@@ -216,32 +216,32 @@ Plain Old JS Object Lesson Concepts
 
 ### Scope Lesson Concepts
 
-- <span id="685f">Identify the difference between `const`, `let`, and `var` declarations</span>
-- <span id="7308">`const` - cannot reassign variable, scoped to block</span>
-- <span id="e07f">`let` - can reassign variable, scoped to block</span>
-- <span id="670d">`var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!</span>
-- <span id="b254">a variable will always evaluate to the value it contains regardless of how it was declared</span>
-- <span id="aace">Explain the difference between `const`, `let`, and `var` declarations</span>
-- <span id="5d79">`var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted"</span>
-- <span id="a54b">so it will exist in memory as “undefined” which is bad and unpredictable</span>
-- <span id="2dc2">`var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!</span>
-- <span id="1f74">`const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object</span>
-- <span id="2c20">block-scoped variables allow new variables with the same name in new scopes</span>
-- <span id="c3d4">block-scoped still performs hoisting of all variables within the block, but it doesn’t initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared</span>
-- <span id="f797">if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD</span>
-- <span id="2212">if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run</span>
-- <span id="86d1">Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining</span>
-- <span id="25dc">scope of a program means the set of variables that are available for use within the program</span>
-- <span id="bcaf">global scope is represented by the `window` object in the browser and the `global` object in Node.js</span>
-- <span id="7bc3">global variables are available everywhere, and so increase the risk of name collisions</span>
-- <span id="5172">local scope is the set of variables available for use within the function</span>
-- <span id="ed33">when we enter a function, we enter a new scope</span>
-- <span id="c21b">includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)</span>
-- <span id="51ad">for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped</span>
-- <span id="09f1">inner scope does not have access to variables in the outer scope</span>
-- <span id="587e">scope chaining — if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found</span>
-- <span id="6ea5">so an inner scope can access outer scope variables</span>
-- <span id="5188">but an outer scope can never access inner scope variables</span>
+-   <span id="685f">Identify the difference between `const`, `let`, and `var` declarations</span>
+-   <span id="7308">`const` - cannot reassign variable, scoped to block</span>
+-   <span id="e07f">`let` - can reassign variable, scoped to block</span>
+-   <span id="670d">`var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!</span>
+-   <span id="b254">a variable will always evaluate to the value it contains regardless of how it was declared</span>
+-   <span id="aace">Explain the difference between `const`, `let`, and `var` declarations</span>
+-   <span id="5d79">`var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted"</span>
+-   <span id="a54b">so it will exist in memory as “undefined” which is bad and unpredictable</span>
+-   <span id="2dc2">`var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!</span>
+-   <span id="1f74">`const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object</span>
+-   <span id="2c20">block-scoped variables allow new variables with the same name in new scopes</span>
+-   <span id="c3d4">block-scoped still performs hoisting of all variables within the block, but it doesn’t initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared</span>
+-   <span id="f797">if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD</span>
+-   <span id="2212">if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run</span>
+-   <span id="86d1">Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining</span>
+-   <span id="25dc">scope of a program means the set of variables that are available for use within the program</span>
+-   <span id="bcaf">global scope is represented by the `window` object in the browser and the `global` object in Node.js</span>
+-   <span id="7bc3">global variables are available everywhere, and so increase the risk of name collisions</span>
+-   <span id="5172">local scope is the set of variables available for use within the function</span>
+-   <span id="ed33">when we enter a function, we enter a new scope</span>
+-   <span id="c21b">includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)</span>
+-   <span id="51ad">for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped</span>
+-   <span id="09f1">inner scope does not have access to variables in the outer scope</span>
+-   <span id="587e">scope chaining — if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found</span>
+-   <span id="6ea5">so an inner scope can access outer scope variables</span>
+-   <span id="5188">but an outer scope can never access inner scope variables</span>
 
 #### Define an arrow function
 
@@ -261,10 +261,10 @@ Plain Old JS Object Lesson Concepts
 
 #### Given an arrow function, deduce the value of `this` without executing the code
 
-- <span id="0ee6">arrow functions are automatically bound to the context they were declared in.</span>
-- <span id="9fb2">unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).</span>
-- <span id="683a">if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.</span>
-- <span id="e9e1">so you can’t use an arrow function to define a method directly</span>
+-   <span id="0ee6">arrow functions are automatically bound to the context they were declared in.</span>
+-   <span id="9fb2">unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).</span>
+-   <span id="683a">if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.</span>
+-   <span id="e9e1">so you can’t use an arrow function to define a method directly</span>
 
 <!-- -->
 
@@ -398,14 +398,14 @@ Plain Old JS Object Lesson Concepts
 
 #### Define a method that references `this` on an object literal
 
-- <span id="ae61">when we use `this` in a method it refers to the object that the method is invoked on</span>
-- <span id="29a2">it will let you access other pieces of information from within that object, or even other methods</span>
-- <span id="c41d">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
-- <span id="c99d">context is set every time we invoke a function</span>
-- <span id="fa43">function style invocation sets the context to the global object no matter what</span>
-- <span id="8cc1">being inside an object does not make the context that object! you still have to use method-style invocation</span>
-- <span id="f578">Utilize the built in `Function#bind` on a callback to maintain the context of this</span>
-- <span id="26ba">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
+-   <span id="ae61">when we use `this` in a method it refers to the object that the method is invoked on</span>
+-   <span id="29a2">it will let you access other pieces of information from within that object, or even other methods</span>
+-   <span id="c41d">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
+-   <span id="c99d">context is set every time we invoke a function</span>
+-   <span id="fa43">function style invocation sets the context to the global object no matter what</span>
+-   <span id="8cc1">being inside an object does not make the context that object! you still have to use method-style invocation</span>
+-   <span id="f578">Utilize the built in `Function#bind` on a callback to maintain the context of this</span>
+-   <span id="26ba">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
 
 <!-- -->
 
@@ -461,9 +461,9 @@ Plain Old JS Object Lesson Concepts
 
 ### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
-- <span id="b960">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
-- <span id="1880">you could also overwrite values or assign values to exist in a space where they should not exist</span>
-- <span id="c9f0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
+-   <span id="b960">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
+-   <span id="1880">you could also overwrite values or assign values to exist in a space where they should not exist</span>
+-   <span id="c9f0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
 <!-- -->
 
@@ -522,10 +522,10 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
     // instead of changing the dog we changed the global name!!!
     console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
-- <span id="48ab">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</span>
-- <span id="857d">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
-- <span id="e09e">you could also overwrite values or assign values to exist in a space where they should not exist</span>
-- <span id="b6e0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
+-   <span id="48ab">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</span>
+-   <span id="857d">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
+-   <span id="e09e">you could also overwrite values or assign values to exist in a space where they should not exist</span>
+-   <span id="b6e0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
 > we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 
@@ -535,14 +535,14 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
 Javascript considers most data types to be ‘primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered ‘reference’ data types, and are passed by reference.
 
-- <span id="6f83">Boolean — Primitive</span>
-- <span id="6556">Null — Primitive</span>
-- <span id="0048">Undefined — Primitive</span>
-- <span id="8dec">Number — Primitive</span>
-- <span id="684c">String — Primitive</span>
-- <span id="41c1">Array — Reference</span>
-- <span id="9371">Object — Reference</span>
-- <span id="64c8">Function — Reference</span>
+-   <span id="6f83">Boolean — Primitive</span>
+-   <span id="6556">Null — Primitive</span>
+-   <span id="0048">Undefined — Primitive</span>
+-   <span id="8dec">Number — Primitive</span>
+-   <span id="684c">String — Primitive</span>
+-   <span id="41c1">Array — Reference</span>
+-   <span id="9371">Object — Reference</span>
+-   <span id="64c8">Function — Reference</span>
 
 #### 2. Identify when to use . vs \[\] when accessing values of an object
 
@@ -711,25 +711,25 @@ Javascript considers most data types to be ‘primitive’, these data types are
 
     var a = "a";
 
-- <span id="2dba">`var` is the historical keyword used for variable declaration.</span>
-- <span id="50d3">`var` declares variables in function scope, or global scope if not inside a function.</span>
-- <span id="4bc8">We consider `var` to be deprecated and it is never used in this course.</span>
+-   <span id="2dba">`var` is the historical keyword used for variable declaration.</span>
+-   <span id="50d3">`var` declares variables in function scope, or global scope if not inside a function.</span>
+-   <span id="4bc8">We consider `var` to be deprecated and it is never used in this course.</span>
 
 <!-- -->
 
     let b = "b";
 
-- <span id="8bab">`let` is the keyword we use most often for variable declaration.</span>
-- <span id="0642">`let` declares variables in block scope.</span>
-- <span id="bf7b">variables declared with `let` are re-assignable.</span>
+-   <span id="8bab">`let` is the keyword we use most often for variable declaration.</span>
+-   <span id="0642">`let` declares variables in block scope.</span>
+-   <span id="bf7b">variables declared with `let` are re-assignable.</span>
 
 <!-- -->
 
     const c = "c";
 
-- <span id="e199">`const` is a specialized form of `let` that can only be used to **initialize** a variable.</span>
-- <span id="4522">Except when it is declared, you cannot assign to a `const` variable.</span>
-- <span id="4e5a">`const` scopes variables the same way that `let` does.</span>
+-   <span id="e199">`const` is a specialized form of `let` that can only be used to **initialize** a variable.</span>
+-   <span id="4522">Except when it is declared, you cannot assign to a `const` variable.</span>
+-   <span id="4e5a">`const` scopes variables the same way that `let` does.</span>
 
 #### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 

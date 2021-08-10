@@ -20,28 +20,28 @@ trees are a type of graph
 
 Components required to make a graph:
 
-- <span id="ca43">**nodes or vertices**: represent objects in a dataset (cities, animals, web pages)</span>
-- <span id="a2ee">**edges**: connections between vertices; can be bidirectional</span>
-- <span id="fc4a">**weight**: cost to travel across an edge; optional (aka cost)</span>
+-   <span id="ca43">**nodes or vertices**: represent objects in a dataset (cities, animals, web pages)</span>
+-   <span id="a2ee">**edges**: connections between vertices; can be bidirectional</span>
+-   <span id="fc4a">**weight**: cost to travel across an edge; optional (aka cost)</span>
 
 Useful for:
 
-- <span id="769d">maps</span>
-- <span id="19f3">networks of activity</span>
-- <span id="93d9">anything you can represent as a network</span>
-- <span id="45a1">multi-way relational data</span>
+-   <span id="769d">maps</span>
+-   <span id="19f3">networks of activity</span>
+-   <span id="93d9">anything you can represent as a network</span>
+-   <span id="45a1">multi-way relational data</span>
 
 Types of Graphs:
 
-- <span id="f259">**directed**: can only move in one direction along edges; which direction indicated by arrows</span>
-- <span id="1bfb">**undirected**: allows movement in both directions along edges; bidirectional</span>
-- <span id="e813">**cyclic**: weighted; edges allow you to revisit at least 1 vertex; example weather</span>
-- <span id="52d4">**acyclical**: vertices can only be visited once; example recipe</span>
+-   <span id="f259">**directed**: can only move in one direction along edges; which direction indicated by arrows</span>
+-   <span id="1bfb">**undirected**: allows movement in both directions along edges; bidirectional</span>
+-   <span id="e813">**cyclic**: weighted; edges allow you to revisit at least 1 vertex; example weather</span>
+-   <span id="52d4">**acyclical**: vertices can only be visited once; example recipe</span>
 
 Two common ways to represent graphs in code:
 
-- <span id="4380">**adjacency lists**: graph stores list of vertices; for each vertex, it stores list of connected vertices</span>
-- <span id="dedc">**adjacency matrices**: two-dimensional array of lists with built-in edge weights; denotes no relationship</span>
+-   <span id="4380">**adjacency lists**: graph stores list of vertices; for each vertex, it stores list of connected vertices</span>
+-   <span id="dedc">**adjacency matrices**: two-dimensional array of lists with built-in edge weights; denotes no relationship</span>
 
 Both have strengths and weaknesses.
 
@@ -117,8 +117,8 @@ For the following:
 
 #### Space Complexity
 
-- <span id="f8f8">**Adjacency Matrix**: O(V ^ 2)</span>
-- <span id="1946">**Adjacency List**: O(V + E)</span>
+-   <span id="f8f8">**Adjacency Matrix**: O(V ^ 2)</span>
+-   <span id="1946">**Adjacency List**: O(V + E)</span>
 
 Consider a sparse graph with 100 vertices and only one edge. An adjacency list would have to store all 100 vertices but only needs to keep track of that single edge. The adjacency matrix would need to store 100x100=10,000 possible connections, even though all but one would be 0.
 
@@ -128,8 +128,8 @@ Takeaway: Adjacency lists are more space efficient for **sparse** graphs while a
 
 #### Add Vertex
 
-- <span id="6257">**Adjacency Matrix**: O(V)</span>
-- <span id="6a8f">**Adjacency List**: O(1)</span>
+-   <span id="6257">**Adjacency Matrix**: O(V)</span>
+-   <span id="6a8f">**Adjacency List**: O(1)</span>
 
 Adding a vertex is extremely simple in an adjacency list:
 
@@ -149,8 +149,8 @@ Takeaway: Adding vertices is very efficient in adjacency lists but very ineffici
 
 #### Remove Vertex
 
-- <span id="8226">**Adjacency Matrix**: O(V ^ 2)</span>
-- <span id="85fd">**Adjacency List**: O(V)</span>
+-   <span id="8226">**Adjacency Matrix**: O(V ^ 2)</span>
+-   <span id="85fd">**Adjacency List**: O(V)</span>
 
 Removing vertices is pretty inefficient in both representations. In an adjacency matrix, we need to remove the removed vertex’s row, then remove that column from each other row. Removing an element from a list requires moving everything after that element over by one slot which takes an average of V/2 operations. Since we need to do that for every single row in our matrix, that results in a V² time complexity. On top of that, we need to reduce the index of each vertex after our removed index by 1 as well which doesn’t add to our quadratic time complexity, but does add extra operations.
 
@@ -160,8 +160,8 @@ Takeaway: Removing vertices is inefficient in both adjacency matrices and lists 
 
 #### Add Edge
 
-- <span id="dbbe">**Adjacency Matrix**: O(1)</span>
-- <span id="3968">**Adjacency List**: O(1)</span>
+-   <span id="dbbe">**Adjacency Matrix**: O(1)</span>
+-   <span id="3968">**Adjacency List**: O(1)</span>
 
 Adding an edge in an adjacency matrix is quite simple:
 
@@ -177,8 +177,8 @@ Takeaway: Adding edges to both adjacency lists and matrices is very efficient.
 
 #### Remove Edge
 
-- <span id="b417">**Adjacency Matrix**: O(1)</span>
-- <span id="d794">**Adjacency List**: O(1)</span>
+-   <span id="b417">**Adjacency Matrix**: O(1)</span>
+-   <span id="d794">**Adjacency List**: O(1)</span>
 
 Removing an edge from an adjacency matrix is quite simple:
 
@@ -194,8 +194,8 @@ Takeaway: Removing edges from both adjacency lists and matrices is very efficien
 
 #### Find Edge
 
-- <span id="dc68">**Adjacency Matrix**: O(1)</span>
-- <span id="2b87">**Adjacency List**: O(1)</span>
+-   <span id="dc68">**Adjacency Matrix**: O(1)</span>
+-   <span id="2b87">**Adjacency List**: O(1)</span>
 
 Finding an edge in an adjacency matrix is quite simple:
 
@@ -211,8 +211,8 @@ Takeaway: Finding edges from both adjacency lists and matrices is very efficient
 
 #### Get All Edges from Vertex
 
-- <span id="798e">**Adjacency Matrix**: O(V)</span>
-- <span id="fa79">**Adjacency List**: O(1)</span>
+-   <span id="798e">**Adjacency Matrix**: O(V)</span>
+-   <span id="fa79">**Adjacency List**: O(1)</span>
 
 Say you want to know all the edges originating from a particular vertex. With an adjacency list, this is as simple as returning the value from the vertex dictionary:
 
@@ -236,15 +236,15 @@ Can use breadth-first search when searching a graph; explores graph outward in r
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*WOvrysI4fX6ePqN-.gif" class="graf-image" /></figure>### Applications of BFS
 
-- <span id="149a">pathfinding, routing</span>
-- <span id="9ab5">web crawlers</span>
-- <span id="31af">find neighbor nodes in P2P network</span>
-- <span id="13aa">finding people/connections away on social network</span>
-- <span id="4f5f">find neighboring locations on graph</span>
-- <span id="d1b5">broadcasting on a network</span>
-- <span id="4061">cycle detection in a graph</span>
-- <span id="0f7f">finding connected components</span>
-- <span id="a86f">solving several theoretical graph problems</span>
+-   <span id="149a">pathfinding, routing</span>
+-   <span id="9ab5">web crawlers</span>
+-   <span id="31af">find neighbor nodes in P2P network</span>
+-   <span id="13aa">finding people/connections away on social network</span>
+-   <span id="4f5f">find neighboring locations on graph</span>
+-   <span id="d1b5">broadcasting on a network</span>
+-   <span id="4061">cycle detection in a graph</span>
+-   <span id="0f7f">finding connected components</span>
+-   <span id="a86f">solving several theoretical graph problems</span>
 
 ### Coloring BFS
 
@@ -292,12 +292,12 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*DZVdn1kWaiJXQ_zc.gif" class="graf-image" /></figure>### Applications of DFS
 
-- <span id="044e">preferred method for exploring a graph if we want to ensure we visit every node in graph</span>
-- <span id="b086">finding minimum spanning trees of weighted graphs</span>
-- <span id="c419">pathfinding</span>
-- <span id="281e">detecting cycles in graphs</span>
-- <span id="6739">solving and generating mazes</span>
-- <span id="20b5">topological sorting, useful for scheduling sequences of dependent jobs</span>
+-   <span id="044e">preferred method for exploring a graph if we want to ensure we visit every node in graph</span>
+-   <span id="b086">finding minimum spanning trees of weighted graphs</span>
+-   <span id="c419">pathfinding</span>
+-   <span id="281e">detecting cycles in graphs</span>
+-   <span id="6739">solving and generating mazes</span>
+-   <span id="20b5">topological sorting, useful for scheduling sequences of dependent jobs</span>
 
 ### DFS Pseudocode
 
@@ -341,21 +341,21 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 ### Uses
 
-- <span id="0c54">typically very large graphs, networks</span>
-- <span id="1bdc">social networks</span>
-- <span id="66be">networks (which devices can reach one another)</span>
-- <span id="210c">epidemics (how spread, who started, where next)</span>
+-   <span id="0c54">typically very large graphs, networks</span>
+-   <span id="1bdc">social networks</span>
+-   <span id="66be">networks (which devices can reach one another)</span>
+-   <span id="210c">epidemics (how spread, who started, where next)</span>
 
 **key to finding connected components**: searching algorithms, breadth-first search
 
 ### How to find connected componnents
 
-- <span id="4bd0">for each node in graph:</span>
-- <span id="6e20">has it been explored</span>
-- <span id="40be">if no, do BFS</span>
-- <span id="96f4">all nodes reached are connected</span>
-- <span id="e152">if yes, already in connected component</span>
-- <span id="3f15">go to next node</span>
+-   <span id="4bd0">for each node in graph:</span>
+-   <span id="6e20">has it been explored</span>
+-   <span id="40be">if no, do BFS</span>
+-   <span id="96f4">all nodes reached are connected</span>
+-   <span id="e152">if yes, already in connected component</span>
+-   <span id="3f15">go to next node</span>
 
 **strongly connected components**: any node in this group can get to any other node
 
@@ -393,10 +393,10 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/0*oOYEgDBV2yhim9SC" class="graf-image" /></figure>
 
-- <span id="9d7a">A graph is any collection of nodes and edges.</span>
-- <span id="7a3a">A graph is a less restrictive class of collections of nodes than structures like a tree.</span>
-- <span id="8d05">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
-- <span id="6fac">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
+-   <span id="9d7a">A graph is any collection of nodes and edges.</span>
+-   <span id="7a3a">A graph is a less restrictive class of collections of nodes than structures like a tree.</span>
+-   <span id="8d05">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
+-   <span id="6fac">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*nN2X6TCy0JSh4mfL.gif" alt="Cycles in a graph" class="graf-image" /><figcaption>Cycles in a graph</figcaption></figure>-   <span id="783b">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
 
@@ -411,28 +411,28 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*u8Nu829gPtxU6J0siwljJA.png" class="graf-image" /></figure>### Dense Graph
 
-- <span id="7b24">Dense Graph — A graph with lots of edges.</span>
-- <span id="5682">“Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as “many edges”? This is a little bit too subjective, right? ? I agree with you, so let’s quantify it a little bit:</span>
-- <span id="0e05">Let’s find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example below, six nodes), that means that each node can have up to |v| connections (in the example below, six connections).</span>
-- <span id="59d8">Why? Because each node could potentially connect with all other nodes and with itself (see “loop” below). Therefore, the maximum number of edges that the graph can have is |V|\\\*|V| , which is the total number of nodes multiplied by the maximum number of connections that each node can have.”</span>
-- <span id="146f">When the number of edges in the graph is close to the maximum number of edges, the graph is dense.</span>
+-   <span id="7b24">Dense Graph — A graph with lots of edges.</span>
+-   <span id="5682">“Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as “many edges”? This is a little bit too subjective, right? ? I agree with you, so let’s quantify it a little bit:</span>
+-   <span id="0e05">Let’s find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example below, six nodes), that means that each node can have up to |v| connections (in the example below, six connections).</span>
+-   <span id="59d8">Why? Because each node could potentially connect with all other nodes and with itself (see “loop” below). Therefore, the maximum number of edges that the graph can have is |V|\\\*|V| , which is the total number of nodes multiplied by the maximum number of connections that each node can have.”</span>
+-   <span id="146f">When the number of edges in the graph is close to the maximum number of edges, the graph is dense.</span>
 
 ### Sparse Graph
 
-- <span id="5e53">Sparse Graph — Few edges</span>
-- <span id="37f5">When the number of edges in the graph is significantly fewer than the maximum number of edges, the graph is sparse.</span>
+-   <span id="5e53">Sparse Graph — Few edges</span>
+-   <span id="37f5">When the number of edges in the graph is significantly fewer than the maximum number of edges, the graph is sparse.</span>
 
 ### Weighted Graph
 
-- <span id="755c">Weighted Graph — Edges have a cost or a weight to traversal</span>
+-   <span id="755c">Weighted Graph — Edges have a cost or a weight to traversal</span>
 
 ### Directed Graph
 
-- <span id="416f">Directed Graph — Edges only go one direction</span>
+-   <span id="416f">Directed Graph — Edges only go one direction</span>
 
 ### _Undirected_ Graph
 
-- <span id="6030">Undirected Graph — Edges don’t have a direction. All graphs are assumed to be undirected unless otherwise stated</span>
+-   <span id="6030">Undirected Graph — Edges don’t have a direction. All graphs are assumed to be undirected unless otherwise stated</span>
 
 ### Node Class
 
@@ -442,9 +442,9 @@ Uses a class to define the neighbors as properties of each node.
 
 The row index will correspond to the source of an edge and the column index will correspond to the edges destination.
 
-- <span id="ab18">When the edges have a direction, `matrix[i][j]` may not be the same as `matrix[j][i]`</span>
-- <span id="3499">It is common to say that a node is adjacent to itself so `matrix[x][x]` is true for any node</span>
-- <span id="9883">Will be O(n²) space complexity</span>
+-   <span id="ab18">When the edges have a direction, `matrix[i][j]` may not be the same as `matrix[j][i]`</span>
+-   <span id="3499">It is common to say that a node is adjacent to itself so `matrix[x][x]` is true for any node</span>
+-   <span id="9883">Will be O(n²) space complexity</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*2bAUSiq_ej3XTSUMryjJUA.png" class="graf-image" /></figure>### Adjacency List
 

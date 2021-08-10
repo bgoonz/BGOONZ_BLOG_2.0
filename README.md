@@ -4,70 +4,22 @@
 
 <div align="center">
 
-### [WEBSITE](https://bgoonz-blog.netlify.app/)
-
-### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
 
 
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=BGOONZ_BLOG_2.0) ...  [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=BGOONZ_BLOG_2.0)   
+
+### [WEBSITE](https://bgoonz-blog.netlify.app/) ...  [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/) ...  [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
 
 
-## [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
-
-![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
-
-[![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
+![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) ... [![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
 
 </div>
 
-## Docs Structure:
-
-```
-.
-├── ./About
-│   ├── ./About/index.md
-│   ├── ./About/introduction2bg.md
-│   ├── ./About/me.md
-│   └── ./About/resume.md
-├── ./articles
-│   ├── ./articles/algo.md
-│   └── ./articles/basic-web-dev.md
-├── ./faq
-│   ├── ./faq/Contact.md
-│   ├── ./faq/index.md
-│   └── ./faq/other-sites.md
-├── ./index.md
-├── ./jupyter-notebooks.md
-├── ./links
-│   ├── ./links/Social.md
-│   ├── ./links/index.md
-│   └── ./links/my-websites.md
-├── ./portfolio-web.md
-├── ./python.md
-├── ./quick-reference
-│   ├── ./quick-reference/Emmet.md
-│   ├── ./quick-reference/index.md
-│   ├── ./quick-reference/installation.md
-│   └── ./quick-reference/new-repo-instructions.md
-├── ./react
-│   ├── ./react/createReactApp.md
-│   ├── ./react/index.md
-│   └── ./react/react2.md
-├── ./resources.md
-└── ./tools
-    ├── ./tools/Git-Html-Preview.md
-    ├── ./tools/default-readme.md
-    ├── ./tools/index.md
-    ├── ./tools/notes-template.md
-    └── ./tools/plug-ins.md
-
-7 directories, 29 files
 
 
-```
-
-### Links:
+## Links:
 
 ##### Try it out without cloning the entire repo:
 
@@ -116,68 +68,6 @@
 # bgoonz/BGOONZ_BLOG_2.0
 
 > The new home of my blog/resource sharing website. Contribute to bgoonz/BGOONZ_BLOG_2.0 development by creating an account on GitHub.
-
--   Watch
-
-    ### Notifications
-
-    <button>
-
-    <input name="authenticity\_token"> <input name="repository\_id"> <button name="do" value="included"> <button name="do" value="subscribed"> <button name="do" value="ignore">
-
-    <button>
-
-    [1](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/watchers)
-
--   Fork
-
-    If this dialog fails to load, you can visit [the fork page](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/fork) directly.
-
-    [1](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/members)
-
-## Dependency graph
-
-These dependencies are defined in **BGOONZ_BLOG_2.0**’s manifest files, such as [package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#package.json 'package.json'), […/backup/package-lock.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage-lock.json 'notes/backup/package-lock.json'), and […/backup/package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage.json 'notes/backup/package.json').
-
-<button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-builder-binary-assignment-operator-visitor
-
-`7.12.13`
-
-<button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-create-regexp-features-plugin
-
-`7.12.16`
-
-<button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-explode-assignable-expression
-
-`7.12.13`
-
-<button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-member-expression-to-functions
-
-`7.12.16`
-
-<button> <button>
-
-<button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-builder-binary-assignment-operator-visitor
-
-`7.12.13`
-
-<button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-create-regexp-features-plugin
-
-`7.12.16`
-
-<button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-explode-assignable-expression
-
-`7.12.13`
-
-<button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-member-expression-to-functions
-
-`7.12.16`
-
-<button> <button>
-
-[Source](https://github.com/bgoonz/BGOONZ_BLOG_2.0/network/dependencies)
-
-<div  align="center" style=" border: 1px solid black">
 
 ## Blog
 
@@ -324,12 +214,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 -   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 -   **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
@@ -1389,3 +1273,50 @@ export default {
 </details>
 
 ---
+
+
+
+
+
+## Docs Structure:
+
+```
+.
+├── ./About
+│   ├── ./About/index.md
+│   ├── ./About/introduction2bg.md
+│   ├── ./About/me.md
+│   └── ./About/resume.md
+├── ./articles
+│   ├── ./articles/algo.md
+│   └── ./articles/basic-web-dev.md
+├── ./faq
+│   ├── ./faq/Contact.md
+│   ├── ./faq/index.md
+│   └── ./faq/other-sites.md
+├── ./index.md
+├── ./jupyter-notebooks.md
+├── ./links
+│   ├── ./links/Social.md
+│   ├── ./links/index.md
+│   └── ./links/my-websites.md
+├── ./portfolio-web.md
+├── ./python.md
+├── ./quick-reference
+│   ├── ./quick-reference/Emmet.md
+│   ├── ./quick-reference/index.md
+│   ├── ./quick-reference/installation.md
+│   └── ./quick-reference/new-repo-instructions.md
+├── ./react
+│   ├── ./react/createReactApp.md
+│   ├── ./react/index.md
+│   └── ./react/react2.md
+├── ./resources.md
+└── ./tools
+    ├── ./tools/Git-Html-Preview.md
+    ├── ./tools/default-readme.md
+    ├── ./tools/index.md
+    ├── ./tools/notes-template.md
+    └── ./tools/plug-ins.md
+
+7 directories, 29 files
