@@ -4,7 +4,7 @@ command = "npm run build"
 [[plugins]]
   package = 'netlify-plugin-search-index'
   [plugins.inputs]
-    generatedFunctionName = 'null'
+    generatedFunctionName = 'mySearchIndex'
     publishDirJSONFileName = 'mySearchIndex' # you can use / to nest in a directory
 
 
