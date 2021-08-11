@@ -4,7 +4,9 @@ weight: 900
 excerpt: Navigation quick reference
 seo:
     title: Web Dev Hub
-    description: Navigation Home
+    description: >-
+        This website contains docs, blogs, a personal portfolio spread out across
+        multiple pages as well as interactive animations and tools.
     extra:
         - name: 'og:type'
           value: website
