@@ -26,7 +26,7 @@ template: docs
 <br>
 <br>
 <br>
-
+`gist:[bgoonz/]<gist_id>#<gist_file>`
 <br>
 <br>
 <br>

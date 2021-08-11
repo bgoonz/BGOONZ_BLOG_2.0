@@ -10,9 +10,7 @@ export default class Footer extends React.Component {
             <footer id="colophon" className="site-footer outer">
                 <div>
                     <center>
-                        <br />
-
-                        <br />
+ 
 
                         <h1>Free Find Search Engine</h1>
                         <table cellPadding={0} cellSpacing={0} border={0}>
@@ -78,8 +76,8 @@ export default class Footer extends React.Component {
                                             search engine
                                         </a>
                                         <a style={{ textDecoration: 'none', color: 'transparent' }} href="https://www.freefind.com" rel="nofollow">
-                                            by
-                                            <span style={{ color: 'transparent' }}>freefind</span>
+                     
+                                            <span style={{ color: 'transparent' }}></span>
                                         </a>
                                     </td>
                                 </tr>

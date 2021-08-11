@@ -93,3 +93,5 @@ yarn-error.log
 node_modules/
 
 
+*.cache
+*public
