@@ -48,7 +48,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Python",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
