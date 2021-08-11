@@ -32,7 +32,7 @@ module.exports = {
                     // Optional:
           
                     // the github handler whose gists are to be accessed
-                    username: "<string>",
+                    username: "bgoonz",
           
                     // a flag indicating whether the github default gist css should be included or not
                     // default: true
@@ -41,7 +41,7 @@ module.exports = {
           
                     // a flag indicating whether the github default gist css should be included or not
                     // default: true
-                    gistDefaultCssInclude: true || false,
+                    gistDefaultCssInclude: true ,
           
                     // a flag indicating whether the github default gist css should be preloaded or not
                     // use this if you want to load the default css asynchronously.
