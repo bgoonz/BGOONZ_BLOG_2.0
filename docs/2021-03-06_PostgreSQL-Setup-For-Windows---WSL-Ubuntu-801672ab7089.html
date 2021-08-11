@@ -18,7 +18,21 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><style></style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"
+            integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <style></style>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css"
+            integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
     <body>
         <article class="h-entry">
             <header>
@@ -232,12 +246,14 @@
                                 <code class="markup--code markup--p-code">apt</code> registry. You should do this before you install
                                 <em class="markup--em markup--p-em">any</em> software on Ubuntu.
                             </p>
-                            <pre  class="language-javascript" name="8b20" id="8b20" class="graf graf--pre graf-after--p">sudo apt update</pre>
+                            <pre class="language-javascript" name="8b20" id="8b20" class="graf graf--pre graf-after--p">sudo apt update</pre>
                             <p name="1070" id="1070" class="graf graf--p graf-after--pre">
                                 Once that’s finished running, the new entries for PostgreSQL 12 should be in the repository. Now, you can install them with the
                                 following command.
                             </p>
-                            <pre  class="language-javascript" name="7a9e" id="7a9e" class="graf graf--pre graf-after--p">sudo apt install postgresql-client-12 postgresql-common</pre>
+                            <pre class="language-javascript" name="7a9e" id="7a9e" class="graf graf--pre graf-after--p">
+sudo apt install postgresql-client-12 postgresql-common</pre
+                            >
                             <p name="6006" id="6006" class="graf graf--p graf-after--pre">If it asks you if you want to install them, please tell it “Y”.</p>
                             <p name="aeab" id="aeab" class="graf graf--p graf-after--p">
                                 Test that it installed by typing <code class="markup--code markup--p-code">psql --version</code>. You should see it print out
@@ -274,7 +290,9 @@
                                 file you determined from the last section. Once Visual Studio Code starts up with your file, at the end of it (or if you&#39;ve
                                 already added aliases, in that section), type the following.
                             </p>
-                            <pre  class="language-javascript" name="e808" id="e808" class="graf graf--pre graf-after--p">alias psql=&quot;psql -h localhost&quot;</pre>
+                            <pre class="language-javascript" name="e808" id="e808" class="graf graf--pre graf-after--p">
+alias psql=&quot;psql -h localhost&quot;</pre
+                            >
                             <p name="55b4" id="55b4" class="graf graf--p graf-after--pre">
                                 When you run <code class="markup--code markup--p-code">psql</code> from the command line, it will now always add the part about
                                 wanting to connect to <em class="markup--em markup--p-em">localhost</em> every time. You would have to type that each time,
@@ -296,7 +314,7 @@
                                 id="36ba"
                                 class="graf graf--pre graf-after--p"
                             >psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1))<br>Type &quot;help&quot; for help.</pre>
-                            <pre  class="language-javascript" name="12f0" id="12f0" class="graf graf--pre graf-after--pre">postgres=#</pre>
+                            <pre class="language-javascript" name="12f0" id="12f0" class="graf graf--pre graf-after--pre">postgres=#</pre>
                             <p name="1b19" id="1b19" class="graf graf--p graf-after--pre">
                                 Type <code class="markup--code markup--p-code">\q</code> and hit Enter to exit the PostgreSQL client tool.
                             </p>
@@ -311,7 +329,7 @@
                                 >
                                 It <em class="markup--em markup--p-em">has</em> to be a non-empty string. PostgreSQL doesn’t like it when it’s not.
                             </p>
-                            <pre  class="language-javascript" name="b07c" id="b07c" class="graf graf--pre graf-after--p">
+                            <pre class="language-javascript" name="b07c" id="b07c" class="graf graf--pre graf-after--p">
 psql -U postgres -c &quot;CREATE USER `whoami` WITH PASSWORD &#39;password&#39; SUPERUSER&quot;</pre
                             >
                             <p name="30d6" id="30d6" class="graf graf--p graf-after--pre">
@@ -322,7 +340,7 @@ psql -U postgres -c &quot;CREATE USER `whoami` WITH PASSWORD &#39;password&#39; 
                                 Now you will create your PostgreSQL password file. Type the following into your Ubuntu shell to open Visual Studio Code and
                                 create a new file.
                             </p>
-                            <pre  class="language-javascript" name="3707" id="3707" class="graf graf--pre graf-after--p">code ~/.pgpass</pre>
+                            <pre class="language-javascript" name="3707" id="3707" class="graf graf--pre graf-after--p">code ~/.pgpass</pre>
                             <p name="1a92" id="1a92" class="graf graf--p graf-after--pre">
                                 In that file, you will add this line, which tells it that on localhost for port 5432 (where PostgreSQL is running), for all
                                 databases (*),
@@ -333,7 +351,7 @@ psql -U postgres -c &quot;CREATE USER `whoami` WITH PASSWORD &#39;password&#39; 
                                 type <code class="markup--code markup--p-code">whoami</code> on the command line.) Your entry in the file should have this
                                 format.
                             </p>
-                            <pre  class="language-javascript" name="76ca" id="76ca" class="graf graf--pre graf-after--p">
+                            <pre class="language-javascript" name="76ca" id="76ca" class="graf graf--pre graf-after--p">
 localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                             >
                             <p name="0dd0" id="0dd0" class="graf graf--p graf-after--pre">
@@ -344,13 +362,13 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                 ignore it if just anyone can read and write to it. This is for <em class="markup--em markup--p-em">your</em> security. Change
                                 the file permissions so only you can read and write to it. You did this once upon a time. Here’s the command.
                             </p>
-                            <pre  class="language-javascript" name="5e66" id="5e66" class="graf graf--pre graf-after--p">chmod go-rw ~/.pgpass</pre>
+                            <pre class="language-javascript" name="5e66" id="5e66" class="graf graf--pre graf-after--p">chmod go-rw ~/.pgpass</pre>
                             <p name="1f6a" id="1f6a" class="graf graf--p graf-after--pre">
                                 You can confirm that only you have read/write permission by typing
                                 <code class="markup--code markup--p-code">ls -al ~/.pgpass</code>. That should return output that looks like this,
                                 <strong class="markup--strong markup--p-strong">with your Ubuntu user name instead of &quot;web-dev-hub&quot;.</strong>
                             </p>
-                            <pre  class="language-javascript" name="5419" id="5419" class="graf graf--pre graf-after--p">
+                            <pre class="language-javascript" name="5419" id="5419" class="graf graf--pre graf-after--p">
 -rw------- 1 web-dev-hub web-dev-hub 37 Mar 28 21:20 /home/web-dev-hub/.pgpass</pre
                             >
                             <p name="a9f8" id="a9f8" class="graf graf--p graf-after--pre">
@@ -463,28 +481,53 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                 id="7928"
                                 class="graf graf--pre graf-after--p"
                             >const pg = require(‘pg’);<br>const R = require(‘ramda’);<br>const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;<br>const client = new pg.Client(cs);<br>client.connect();<br>client.query(‘SELECT 1 + 4’).then(res =&gt; {</pre>
-                            <pre  class="language-javascript" name="d808" id="d808" class="graf graf--pre graf-after--pre">const result = R.head(R.values(R.head(res.rows)))</pre>
-                            <pre  class="language-javascript" name="048d" id="048d" class="graf graf--pre graf-after--pre">console.log(result)<br>}).finally(() =&gt; client.end());</pre>
+                            <pre class="language-javascript" name="d808" id="d808" class="graf graf--pre graf-after--pre">
+const result = R.head(R.values(R.head(res.rows)))</pre
+                            >
+                            <pre
+                                class="language-javascript"
+                                name="048d"
+                                id="048d"
+                                class="graf graf--pre graf-after--pre"
+                            >console.log(result)<br>}).finally(() =&gt; client.end());</pre>
                             <p name="d94e" id="d94e" class="graf graf--p graf-after--pre">
                                 The example connects to the database and issues a SELECT statement.
                             </p>
-                            <pre  class="language-javascript" name="4b98" id="4b98" class="graf graf--pre graf-after--p">const pg = require(‘pg’);<br>const R = require(‘ramda’);</pre>
+                            <pre
+                                class="language-javascript"
+                                name="4b98"
+                                id="4b98"
+                                class="graf graf--pre graf-after--p"
+                            >const pg = require(‘pg’);<br>const R = require(‘ramda’);</pre>
                             <p name="013a" id="013a" class="graf graf--p graf-after--pre">
                                 We include the <code class="markup--code markup--p-code">pg</code> and
                                 <code class="markup--code markup--p-code">ramda</code> modules.
                             </p>
-                            <pre  class="language-javascript" name="9141" id="9141" class="graf graf--pre graf-after--p">const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre>
+                            <pre class="language-javascript" name="9141" id="9141" class="graf graf--pre graf-after--p">
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre
+                            >
                             <p name="a1ca" id="a1ca" class="graf graf--p graf-after--pre">
                                 This is the PostgreSQL connection string. It is used to build a connection to the database.
                             </p>
-                            <pre  class="language-javascript" name="ed54" id="ed54" class="graf graf--pre graf-after--p">const client = new pg.Client(cs);<br>client.connect();</pre>
+                            <pre
+                                class="language-javascript"
+                                name="ed54"
+                                id="ed54"
+                                class="graf graf--pre graf-after--p"
+                            >const client = new pg.Client(cs);<br>client.connect();</pre>
                             <p name="39b7" id="39b7" class="graf graf--p graf-after--pre">
                                 A client is created. We connect to the database with <code class="markup--code markup--p-code">connect()</code>.
                             </p>
-                            <pre  class="language-javascript" name="852f" id="852f" class="graf graf--pre graf-after--p">client.query(‘SELECT 1 + 4’).then(res =&gt; {</pre>
-                            <pre  class="language-javascript" name="fe88" id="fe88" class="graf graf--pre graf-after--pre">const result = R.head(R.values(R.head(res.rows)));</pre>
-                            <pre  class="language-javascript" name="67d8" id="67d8" class="graf graf--pre graf-after--pre">console.log(result);</pre>
-                            <pre  class="language-javascript" name="8d6d" id="8d6d" class="graf graf--pre graf-after--pre">}).finally(() =&gt; client.end());</pre>
+                            <pre class="language-javascript" name="852f" id="852f" class="graf graf--pre graf-after--p">
+client.query(‘SELECT 1 + 4’).then(res =&gt; {</pre
+                            >
+                            <pre class="language-javascript" name="fe88" id="fe88" class="graf graf--pre graf-after--pre">
+const result = R.head(R.values(R.head(res.rows)));</pre
+                            >
+                            <pre class="language-javascript" name="67d8" id="67d8" class="graf graf--pre graf-after--pre">console.log(result);</pre>
+                            <pre class="language-javascript" name="8d6d" id="8d6d" class="graf graf--pre graf-after--pre">
+}).finally(() =&gt; client.end());</pre
+                            >
                             <p name="8637" id="8637" class="graf graf--p graf-after--pre">
                                 We issue a simple SELECT query. We get the result and output it to the console. The
                                 <code class="markup--code markup--p-code">res.rows</code> is an array of objects; we use Ramda to get the returned scalar value.
@@ -499,13 +542,21 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                             <h3 name="831a" id="831a" class="graf graf--h3 graf-after--p">The node-postgres column names</h3>
                             <p name="0487" id="0487" class="graf graf--p graf-after--h3">In the following example, we get the columns names of a database.</p>
                             <blockquote name="3796" id="3796" class="graf graf--blockquote graf-after--p">column_names.js</blockquote>
-                            <pre  class="language-javascript" name="c321" id="c321" class="graf graf--pre graf-after--blockquote">const pg = require(‘pg’);</pre>
-                            <pre  class="language-javascript" name="eef8" id="eef8" class="graf graf--pre graf-after--pre">const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre>
-                            <pre  class="language-javascript" name="6ba3" id="6ba3" class="graf graf--pre graf-after--pre">const client = new pg.Client(cs);</pre>
-                            <pre  class="language-javascript" name="aff5" id="aff5" class="graf graf--pre graf-after--pre">client.connect();</pre>
-                            <pre  class="language-javascript" name="e567" id="e567" class="graf graf--pre graf-after--pre">client.query(‘SELECT * FROM cars’).then(res =&gt; {</pre>
-                            <pre  class="language-javascript" name="51b0" id="51b0" class="graf graf--pre graf-after--pre">const fields = res.fields.map(field =&gt; field.name);</pre>
-                            <pre  class="language-javascript" name="ce9a" id="ce9a" class="graf graf--pre graf-after--pre">console.log(fields);</pre>
+                            <pre class="language-javascript" name="c321" id="c321" class="graf graf--pre graf-after--blockquote">const pg = require(‘pg’);</pre>
+                            <pre class="language-javascript" name="eef8" id="eef8" class="graf graf--pre graf-after--pre">
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre
+                            >
+                            <pre class="language-javascript" name="6ba3" id="6ba3" class="graf graf--pre graf-after--pre">
+const client = new pg.Client(cs);</pre
+                            >
+                            <pre class="language-javascript" name="aff5" id="aff5" class="graf graf--pre graf-after--pre">client.connect();</pre>
+                            <pre class="language-javascript" name="e567" id="e567" class="graf graf--pre graf-after--pre">
+client.query(‘SELECT * FROM cars’).then(res =&gt; {</pre
+                            >
+                            <pre class="language-javascript" name="51b0" id="51b0" class="graf graf--pre graf-after--pre">
+const fields = res.fields.map(field =&gt; field.name);</pre
+                            >
+                            <pre class="language-javascript" name="ce9a" id="ce9a" class="graf graf--pre graf-after--pre">console.log(fields);</pre>
                             <pre
                                 name="258a"
                                 id="258a"
@@ -531,11 +582,17 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                 id="218a"
                                 class="graf graf--pre graf-after--blockquote"
                             >const pg = require(‘pg’);<br>const R = require(‘ramda’);</pre>
-                            <pre  class="language-javascript" name="dc07" id="dc07" class="graf graf--pre graf-after--pre">const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre>
-                            <pre  class="language-javascript" name="ffc0" id="ffc0" class="graf graf--pre graf-after--pre">const client = new pg.Client(cs);</pre>
-                            <pre  class="language-javascript" name="44cd" id="44cd" class="graf graf--pre graf-after--pre">client.connect();</pre>
-                            <pre  class="language-javascript" name="5bd0" id="5bd0" class="graf graf--pre graf-after--pre">client.query(‘SELECT * FROM cars’).then(res =&gt; {</pre>
-                            <pre  class="language-javascript" name="a38c" id="a38c" class="graf graf--pre graf-after--pre">const data = res.rows;</pre>
+                            <pre class="language-javascript" name="dc07" id="dc07" class="graf graf--pre graf-after--pre">
+const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre
+                            >
+                            <pre class="language-javascript" name="ffc0" id="ffc0" class="graf graf--pre graf-after--pre">
+const client = new pg.Client(cs);</pre
+                            >
+                            <pre class="language-javascript" name="44cd" id="44cd" class="graf graf--pre graf-after--pre">client.connect();</pre>
+                            <pre class="language-javascript" name="5bd0" id="5bd0" class="graf graf--pre graf-after--pre">
+client.query(‘SELECT * FROM cars’).then(res =&gt; {</pre
+                            >
+                            <pre class="language-javascript" name="a38c" id="a38c" class="graf graf--pre graf-after--pre">const data = res.rows;</pre>
                             <pre
                                 name="c5ba"
                                 id="c5ba"
@@ -546,7 +603,12 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                 id="9378"
                                 class="graf graf--pre graf-after--pre"
                             >console.log(&#39;Sorted prices:&#39;);<br>const prices = R.pluck(&#39;price&#39;, R.sortBy(R.prop(&#39;price&#39;), data));<br>console.log(prices);</pre>
-                            <pre  class="language-javascript" name="0534" id="0534" class="graf graf--pre graf-after--pre">}).finally(() =&gt; {<br>client.end()<br>});</pre>
+                            <pre
+                                class="language-javascript"
+                                name="0534"
+                                id="0534"
+                                class="graf graf--pre graf-after--pre"
+                            >}).finally(() =&gt; {<br>client.end()<br>});</pre>
                             <p name="807e" id="807e" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">TBC…</strong></p>
                             <h4 name="f53f" id="f53f" class="graf graf--h4 graf-after--p">
                                 If you found this guide helpful feel free to checkout my github/gists where I host similar content:

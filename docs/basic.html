@@ -210,7 +210,21 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><style></style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"
+            integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <style></style>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css"
+            integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
     <body>
         <header id="title-block-header">
             <h1 class="title">Web Dev Review</h1>
@@ -786,7 +800,7 @@
                 <ul>
                     <li>when we call bind on a function, we get an exotic function back—so the context will always be the same for that new function</li>
                 </ul>
-                <pre  class="language-javascript" class="text"><code>let cat = {
+                <pre class="language-javascript" class="text"><code>let cat = {
 purr: function () {
 console.log(&quot;meow&quot;);
 },
@@ -847,7 +861,7 @@ boundCat(); // prints &quot;meow&quot;</code></pre>
                     if you call a function as a callback, it will set <code>this</code> to be the outer function itself, even if the function you were calling
                     is a method that was called on a particular object
                 </p>
-                <pre  class="language-javascript" class="text"><code>let cat = {
+                <pre class="language-javascript" class="text"><code>let cat = {
 purr: function () {
 console.log(&quot;meow&quot;);
 },
