@@ -28,8 +28,7 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Showcase",
                         "url": "/showcase",
                         "style": "primary",
@@ -37,8 +36,7 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Contact!",
                         "url": "/docs/faq/contact",
                         "style": "primary",
@@ -91,8 +89,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "nodejs",
                         "url": "docs/articles/nodejs/",
                         "style": "secondary",
@@ -100,8 +97,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Blog w Comments",
                         "url": "/blogWcomments/",
                         "style": "link",
@@ -156,8 +152,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Gallery",
                         "url": "/docs/gallery",
                         "style": "secondary",
@@ -165,8 +160,7 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Top Repos",
                         "url": "/docs",
                         "style": "primary",
@@ -174,8 +168,7 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "WebResourceRepo",
                         "url": "https://github.com/bgoonz/UsefulResourceRepo2.0",
                         "style": "secondary",
@@ -187,8 +180,7 @@
                 ],
                 "type": "action_menu",
                 "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
-            },
-            {
+            }, {
                 "label": "Audio",
                 "url": "/docs/audio/audio",
                 "style": "primary",
@@ -198,8 +190,9 @@
                 "has_subnav": true,
                 "subnav_links": [],
                 "type": "action_menu"
-            },
-            {
+            }, {
+
+
                 "label": "Projects",
                 "url": "https://curious-zebra-a1329.netlify.app/",
                 "style": "primary",
@@ -216,8 +209,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Meditation App",
                         "url": "https://meditate42app.netlify.app/",
                         "style": "primary",
@@ -225,8 +217,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "WebAudioLab",
                         "url": "https://panoramic-eggplant-452e4.netlify.app/",
                         "style": "primary",
@@ -237,8 +228,7 @@
                     }
                 ],
                 "type": "action_menu"
-            },
-            {
+            }, {
                 "label": "External Nav",
                 "url": "https://bgoonz-blog-v3-0.netlify.app/",
                 "style": "primary",
@@ -282,8 +272,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Cover Letter",
                         "url": "https://bgoonz-cv.netlify.app/",
                         "style": "primary",
@@ -291,8 +280,7 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Project Centric",
                         "url": "https://curious-zebra-a1329.netlify.app/",
                         "style": "primary",
@@ -300,8 +288,7 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Wordpress Blog",
                         "url": "https://web-dev-hub.com/",
                         "style": "secondary",
@@ -309,8 +296,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Project Portfolio Gallery",
                         "url": "https://curious-zebra-a1329.netlify.app/",
                         "style": "secondary",
@@ -321,8 +307,7 @@
                     }
                 ],
                 "type": "action_menu"
-            },
-            {
+            }, {
                 "label": "Tools",
                 "url": "/docs/tools",
                 "style": "primary",
@@ -363,8 +348,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Setup Checker",
                         "url": "https://github.com/bgoonz/web-dev-setup-checker",
                         "style": "link",
@@ -372,8 +356,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "PotluckPlanner",
                         "url": "https://potluck-landing.netlify.app/",
                         "style": "primary",
@@ -381,8 +364,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "WebDev Quizzes",
                         "url": "https://web-dev-interview-prep-quiz-website.netlify.app/",
                         "style": "link",
@@ -390,8 +372,7 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
+                    }, {
                         "label": "Github-Advanced-Search",
                         "url": "https://github.com/search/advanced",
                         "style": "icon",
@@ -437,8 +418,7 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-            },
-            {
+            }, {
                 "label": "Instagram",
                 "url": "https://www.instagram.com/bgoonz/?hl=en",
                 "style": "icon",
@@ -446,8 +426,7 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-            },
-            {
+            }, {
                 "label": "dev.to",
                 "url": "https://dev.to/bgoonz",
                 "style": "icon",
@@ -466,8 +445,7 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-            },
-            {
+            }, {
                 "label": "BLM",
                 "url": "https://optimistic-lewin-8586ae.netlify.app/blm.zip",
                 "style": "primary",
