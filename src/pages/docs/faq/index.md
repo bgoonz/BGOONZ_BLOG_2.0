@@ -5,7 +5,9 @@ excerpt: >-
     theme. If you have questions, don’t hesitate to ask us directly.
 seo:
     title: FAQ
-    description: This is the faqpage
+    description: |-
+        FAQ What's your favorite non-business book?
+        Hitchhiker's Guide To The Galaxy
     extra:
         - name: 'og:type'
           value: website
