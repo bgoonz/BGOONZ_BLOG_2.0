@@ -1,9 +1,8 @@
-Array Callback Methods Implemented With For Loops
-=================================================
+# Array Callback Methods Implemented With For Loops
 
 How to implement array callback methods in JavaScript
 
-------------------------------------------------------------------------
+---
 
 ### Array Callback Methods Implemented With For Loops
 
@@ -68,7 +67,7 @@ What do you think will be printed in the following:
     console.log(greaterValue(3, negate, addOne));
     console.log(greaterValue(-2, negate, addOne));
 
-*Note: we do not invoke* `negate` *or* `addOne` *(by using* `()` *to call them), we are passing the function itself.*
+_Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them), we are passing the function itself._
 
 #### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map.
 
@@ -198,7 +197,7 @@ References:
 <a href="https://javascript.info/callbacks" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.info/callbacks"><strong>Introduction: callbacks</strong><br />
 <em>To demonstrate the use of callbacks, promises and other abstract concepts, we'll be using some browser methods…</em>javascript.info</a><a href="https://javascript.info/callbacks" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-*More content at* <a href="http://plainenglish.io" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a>
+_More content at_ <a href="http://plainenglish.io" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 27, 2021](https://medium.com/p/d08875df6777).
 

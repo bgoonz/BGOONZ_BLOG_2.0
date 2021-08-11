@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>angolia.md</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<p>Search is a common site requirement. Let’s look at how to populate a search index on Algolia and implement search on a Jamstack site built with Gatsby.</p>
-<p>Search is an important part of almost any site. Once you have a lot of content, it becomes an especially critical tool for helping your users find what they need. But search is also totally dynamic, so it must be impossible or, at the very least, really difficult to do on a Jamstack site, right?</p>
-<figure>
-<img src="https://www.stackbit.com/images/1593607475-nope.jpg" alt="nope" /><figcaption>nope</figcaption>
-</figure>
-<p>In this post, we’re going to explore adding search to a site built with Gatsby. We’ll use a service called <a href="https://www.algolia.com/">Algolia</a> for the search API. This is a commercial offering, but it has a generous free tier. The example site was built with Stackbit, though there’s nothing in the code that we’ll discuss that is Stackbit specific (for reference, you can see the full project code at <a href="https://github.com/remotesynth/good-celery" class="uri">https://github.com/remotesynth/good-celery</a>). Ok, enough intro…let’s get coding.</p>
-<h2 id="setting-up-algolia">Setting Up Algolia</h2>
-<p>First things first, you’ll need to set up your account on Algolia and set up a project. You can skip the steps about setting up indices as we’ll take care of that via code. However, be sure to grab all your API keys from the Algolia dashboard as we’ll need them later.</p>
-<p>Algolia provides two projects that we’ll make use of:</p>
-<ul>
-<li><a href="https://github.com/algolia/gatsby-plugin-algolia">Gatsby Plugin Algolia</a> will help us create our indices and make sure they are kept in sync with our content.</li>
-<li><a href="https://github.com/algolia/react-instantsearch">React InstantSearch</a> provides a pre-built set of tools for interacting with Algolia’s search API for a “search as you type” UI. This project also encompasses the <code>react-instantsearch-dom</code> UI tools we’ll also use.</li>
-</ul>
-<p>Let’s start by installing these on our Gatsby project.</p>
-<h3 id="configuring-algolia-in-our-gatsby-project">Configuring Algolia in Our Gatsby Project</h3>
-<p>Next we need to edit our <code>gatsby-config.js</code> file, first by adding these two lines prior to the <code>module.exports</code> block.</p>
-<p>Neither of these files exist yet, but we’ll create them in a moment. Staying in <code>gatsby-config.js</code>, within the <code>module.exports</code> block and within the <code>plugins</code> array, add the following details:</p>
-<pre><code>{
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>angolia.md</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Search is a common site requirement. Let’s look at how to populate a search index on Algolia and implement search on a Jamstack site built with
+            Gatsby.
+        </p>
+        <p>
+            Search is an important part of almost any site. Once you have a lot of content, it becomes an especially critical tool for helping your users find
+            what they need. But search is also totally dynamic, so it must be impossible or, at the very least, really difficult to do on a Jamstack site,
+            right?
+        </p>
+        <figure>
+            <img src="https://www.stackbit.com/images/1593607475-nope.jpg" alt="nope" />
+            <figcaption>nope</figcaption>
+        </figure>
+        <p>
+            In this post, we’re going to explore adding search to a site built with Gatsby. We’ll use a service called
+            <a href="https://www.algolia.com/">Algolia</a> for the search API. This is a commercial offering, but it has a generous free tier. The example site
+            was built with Stackbit, though there’s nothing in the code that we’ll discuss that is Stackbit specific (for reference, you can see the full
+            project code at <a href="https://github.com/remotesynth/good-celery" class="uri">https://github.com/remotesynth/good-celery</a>). Ok, enough
+            intro…let’s get coding.
+        </p>
+        <h2 id="setting-up-algolia">Setting Up Algolia</h2>
+        <p>
+            First things first, you’ll need to set up your account on Algolia and set up a project. You can skip the steps about setting up indices as we’ll
+            take care of that via code. However, be sure to grab all your API keys from the Algolia dashboard as we’ll need them later.
+        </p>
+        <p>Algolia provides two projects that we’ll make use of:</p>
+        <ul>
+            <li>
+                <a href="https://github.com/algolia/gatsby-plugin-algolia">Gatsby Plugin Algolia</a> will help us create our indices and make sure they are kept
+                in sync with our content.
+            </li>
+            <li>
+                <a href="https://github.com/algolia/react-instantsearch">React InstantSearch</a> provides a pre-built set of tools for interacting with
+                Algolia’s search API for a “search as you type” UI. This project also encompasses the <code>react-instantsearch-dom</code> UI tools we’ll also
+                use.
+            </li>
+        </ul>
+        <p>Let’s start by installing these on our Gatsby project.</p>
+        <h3 id="configuring-algolia-in-our-gatsby-project">Configuring Algolia in Our Gatsby Project</h3>
+        <p>Next we need to edit our <code>gatsby-config.js</code> file, first by adding these two lines prior to the <code>module.exports</code> block.</p>
+        <p>
+            Neither of these files exist yet, but we’ll create them in a moment. Staying in <code>gatsby-config.js</code>, within the
+            <code>module.exports</code> block and within the <code>plugins</code> array, add the following details:
+        </p>
+        <pre><code>{
   resolve: `gatsby-plugin-algolia`,
   options: {
     appId: process.env.GATSBY_ALGOLIA_APP_ID,
@@ -39,51 +76,126 @@
     chunkSize: 10000,
   },
 }</code></pre>
-<p>Finally, create (or open) a <code>.env</code> file and add the API key details from Algolia to the file as follow (replacing the values on the right of the equal signs with the appropriate keys from Algolia)</p>
-<pre><code>GATSBY_ALGOLIA_APP_ID=MY_ALGOLIA_APP_ID
+        <p>
+            Finally, create (or open) a <code>.env</code> file and add the API key details from Algolia to the file as follow (replacing the values on the right
+            of the equal signs with the appropriate keys from Algolia)
+        </p>
+        <pre><code>GATSBY_ALGOLIA_APP_ID=MY_ALGOLIA_APP_ID
 GATSBY_ALGOLIA_SEARCH_KEY=MY_ALGOLIA_SEARCH_KEY
 GATSBY_ALGOLIA_ADMIN_KEY=MY_ALGOLIA_ADMIN_KEY</code></pre>
-<p>Please ensure that this <code>.env</code> file is added to your <code>.gitignore</code> so that you do not accidentally check in your private keys.</p>
-<h3 id="adding-slugs-to-posts">Adding Slugs to Posts</h3>
-<p>In some cases, as in my site generated by Stackbit, pages do not have a <code>slug</code> field in the frontmatter. Having slugs available in the search made it much easier to output the results. Rather than manually add slugs to all of my content, Gatsby provides instructions on how to <a href="https://www.gatsbyjs.org/docs/creating-slugs-for-pages/">create slugs for pages</a> automatically.</p>
-<p>This depends on <code>gatsby-source-filesystem</code>, so you’ll need to install that first. Then, add the following code to <code>gatsby-node.js</code>:</p>
-<p>Now when we query Gastby for our pages, we’ll be able to get the slug and provide that to our Algolia search index.</p>
-<h3 id="populating-our-indices">Populating Our Indices</h3>
-<p>Let’s create the queries that will populate our indices on Algolia. It’s important to note that your query depends on the data you have in your content and how you store your content. The best way to create and test your GraphQL queries to be sure you will populate your indices correctly is to use GraphiQL, which is running locally whenever you run <code>gatsby develop</code> generally at <code>http://localhost:8000/___graphql</code>.</p>
-<p>In my case, my Stackbit site has both pages and posts that have differing frontmatter properties. For this example, we’ll be creating a blog search so I created an index that is specific to the blog calles <code>Posts</code>. Feel free to customize your query to create indices for whatever content you wish to make searchable.</p>
-<p>Place the query in a <code>/src/utils/algolia.js</code> file like the one below (recall that we referenced this file in our <code>gatsby-config.js</code> file above). Note that the excerpts for the content are truncated to prevent going over the character limit for individual Algolia records.</p>
-<p>With the queries in place, our indices on Algolia will update whenever we build our Gatsby site. To do this, run <code>gatsby build</code> from the command line to run a production build of the site. We should see an indication that our indices have been populated from the console output.</p>
-<figure>
-<img src="https://www.stackbit.com/images/1593607471-indices-populated-sm.png" alt="console showing indices have been populated" /><figcaption>console showing indices have been populated</figcaption>
-</figure>
-<p>We can now see the results when going into Algolia and browsing Indices.</p>
-<figure>
-<img src="https://www.stackbit.com/images/1593607436-algolia-indices-sm.png" alt="indices populated on Algolia dashboard" /><figcaption>indices populated on Algolia dashboard</figcaption>
-</figure>
-<h2 id="creating-the-search-ui">Creating the Search UI</h2>
-<p>Now that our search indices are populated, let’s display some results. To do this, we’re going to use <a href="https://github.com/algolia/react-instantsearch">React InstantSearch</a>, which offers a search-as-you-type experience. It pretty much works out of the box using the <a href="https://www.algolia.com/doc/guides/building-search-ui/installation/react/">code they provide</a>.</p>
-<p>Let’s look at the most basic implementation in action. Start by creating a new template as <code>/src/templates/search.js</code>. This template will just wrap the example code taken almost directly from the InstantSearch page and place it in the site’s UI so that we can try it out.</p>
-<p>We initialize the search client with the secrets that are in the <code>.env</code> file we created earlier. Within the layout elements, we include the <code>InstantSearch</code> element tied to our <code>Posts</code> index in Algolia. The <code>SearchBox</code> outputs a search input UI and <code>hits</code> outputs the results. Next, just create a search page that will utilize this layout at <code>/src/pages/blog/search.md</code>.</p>
-<p>From the console run <code>gatsby develop</code> and then navigate to the page, which is typically available at <code>http://localhost:8000/blog/search/</code>. Here’s what you should see:</p>
-<p><img src="https://www.stackbit.com/images/gatsby-basic-instant-search.png" /></p>
-<p>Looks great! We’re done!</p>
-<figure>
-<img src="https://www.stackbit.com/images/1593607483-shipit.jpg" alt="ship it squirrel" /><figcaption>ship it squirrel</figcaption>
-</figure>
-<h3 id="customizing-the-output">Customizing the Output</h3>
-<p>So, ok, our boss has suggested that perhaps we’re not quite done yet. She doesn’t think the search results are very attractive and, worse yet, they don’t even lead anywhere. She has a point.</p>
-<p>What if, instead of a separate search page, we actually integrated the search into our existing blog page, allowing a user to filter the results based upon their search? Let’s do that and, in doing so, learn how to customize the output of the InstantSearch <code>Hits</code> component.</p>
-<p>Create a new component as <code>src/components/search.js</code> using the source below. Don’t worry, I’ll explain what we’re doing in a moment.</p>
-<p>As you can see, the actual component output UI is almost identical to the prior search page, with just a <code>SearchBox</code> and <code>Hits</code>. However, prior to that, we are overriding the default output behavior of <code>Hits</code>. If the results return any records, we loop through them, outputting cards identical to the existing blog list on <code>src/templates/blog.js</code>, using the <code>hit</code> (i.e. search result) values to populate the output. If there are no results, we just display some text informing the user.</p>
-<p>Now let’s add it to our blog. Keep in mind that the output of the search results are identical to the regular blog list output and we are using the search without <a href="https://www.algolia.com/doc/guides/building-search-ui/going-further/conditional-display/react/#handling-the-empty-query">conditionally handling an empty query</a> - this means it will always display posts even if the user has not searched yet. Thus, we can actually replace the regular page output with the search results as in the updated source for <code>src/templates/blog.js</code> below:</p>
-<p>The result works as shown below.</p>
-<p><img src="https://www.stackbit.com/images/gatsby-finished-search.png" /></p>
-<h2 id="where-to-go-from-here">Where to Go From Here</h2>
-<p>There’s one more step that I should mention. We need to ensure that the environment variables we created are available when we deploy. On Netlify, all we need to do is go to Settings &gt; Build &amp; Deploy &gt; Environment and add the necessary variables defined in our <code>.env</code> file to our deployment settings.</p>
-<figure>
-<img src="https://www.stackbit.com/images/1593607459-env-variables-sm.png" alt="Netlify environment variables" /><figcaption>Netlify environment variables</figcaption>
-</figure>
-<p>We’re all set!</p>
-<p>Obviously, this is just one way to implement the search. The <a href="https://www.gatsbyjs.org/docs/adding-search-with-algolia/">Gatsby documentation</a> offers a similar but probably more flexible implementation. The <a href="https://www.algolia.com/doc/api-reference/widgets/instantsearch/react/">InstantSearch</a> documentation also offers a ton of API and customization details with code samples to help you make the tools fit the needs of your specific site. In the end, implementing a search seems like a complicated task, but, thankfully, the tools and libraries available to us do a lot of the heavy lifting, making our jobs much easier.</p>
-</body>
+        <p>
+            Please ensure that this <code>.env</code> file is added to your <code>.gitignore</code> so that you do not accidentally check in your private keys.
+        </p>
+        <h3 id="adding-slugs-to-posts">Adding Slugs to Posts</h3>
+        <p>
+            In some cases, as in my site generated by Stackbit, pages do not have a <code>slug</code> field in the frontmatter. Having slugs available in the
+            search made it much easier to output the results. Rather than manually add slugs to all of my content, Gatsby provides instructions on how to
+            <a href="https://www.gatsbyjs.org/docs/creating-slugs-for-pages/">create slugs for pages</a> automatically.
+        </p>
+        <p>
+            This depends on <code>gatsby-source-filesystem</code>, so you’ll need to install that first. Then, add the following code to
+            <code>gatsby-node.js</code>:
+        </p>
+        <p>Now when we query Gastby for our pages, we’ll be able to get the slug and provide that to our Algolia search index.</p>
+        <h3 id="populating-our-indices">Populating Our Indices</h3>
+        <p>
+            Let’s create the queries that will populate our indices on Algolia. It’s important to note that your query depends on the data you have in your
+            content and how you store your content. The best way to create and test your GraphQL queries to be sure you will populate your indices correctly is
+            to use GraphiQL, which is running locally whenever you run <code>gatsby develop</code> generally at <code>http://localhost:8000/___graphql</code>.
+        </p>
+        <p>
+            In my case, my Stackbit site has both pages and posts that have differing frontmatter properties. For this example, we’ll be creating a blog search
+            so I created an index that is specific to the blog calles <code>Posts</code>. Feel free to customize your query to create indices for whatever
+            content you wish to make searchable.
+        </p>
+        <p>
+            Place the query in a <code>/src/utils/algolia.js</code> file like the one below (recall that we referenced this file in our
+            <code>gatsby-config.js</code> file above). Note that the excerpts for the content are truncated to prevent going over the character limit for
+            individual Algolia records.
+        </p>
+        <p>
+            With the queries in place, our indices on Algolia will update whenever we build our Gatsby site. To do this, run <code>gatsby build</code> from the
+            command line to run a production build of the site. We should see an indication that our indices have been populated from the console output.
+        </p>
+        <figure>
+            <img src="https://www.stackbit.com/images/1593607471-indices-populated-sm.png" alt="console showing indices have been populated" />
+            <figcaption>console showing indices have been populated</figcaption>
+        </figure>
+        <p>We can now see the results when going into Algolia and browsing Indices.</p>
+        <figure>
+            <img src="https://www.stackbit.com/images/1593607436-algolia-indices-sm.png" alt="indices populated on Algolia dashboard" />
+            <figcaption>indices populated on Algolia dashboard</figcaption>
+        </figure>
+        <h2 id="creating-the-search-ui">Creating the Search UI</h2>
+        <p>
+            Now that our search indices are populated, let’s display some results. To do this, we’re going to use
+            <a href="https://github.com/algolia/react-instantsearch">React InstantSearch</a>, which offers a search-as-you-type experience. It pretty much works
+            out of the box using the <a href="https://www.algolia.com/doc/guides/building-search-ui/installation/react/">code they provide</a>.
+        </p>
+        <p>
+            Let’s look at the most basic implementation in action. Start by creating a new template as <code>/src/templates/search.js</code>. This template will
+            just wrap the example code taken almost directly from the InstantSearch page and place it in the site’s UI so that we can try it out.
+        </p>
+        <p>
+            We initialize the search client with the secrets that are in the <code>.env</code> file we created earlier. Within the layout elements, we include
+            the <code>InstantSearch</code> element tied to our <code>Posts</code> index in Algolia. The <code>SearchBox</code> outputs a search input UI and
+            <code>hits</code> outputs the results. Next, just create a search page that will utilize this layout at <code>/src/pages/blog/search.md</code>.
+        </p>
+        <p>
+            From the console run <code>gatsby develop</code> and then navigate to the page, which is typically available at
+            <code>http://localhost:8000/blog/search/</code>. Here’s what you should see:
+        </p>
+        <p><img src="https://www.stackbit.com/images/gatsby-basic-instant-search.png" /></p>
+        <p>Looks great! We’re done!</p>
+        <figure>
+            <img src="https://www.stackbit.com/images/1593607483-shipit.jpg" alt="ship it squirrel" />
+            <figcaption>ship it squirrel</figcaption>
+        </figure>
+        <h3 id="customizing-the-output">Customizing the Output</h3>
+        <p>
+            So, ok, our boss has suggested that perhaps we’re not quite done yet. She doesn’t think the search results are very attractive and, worse yet, they
+            don’t even lead anywhere. She has a point.
+        </p>
+        <p>
+            What if, instead of a separate search page, we actually integrated the search into our existing blog page, allowing a user to filter the results
+            based upon their search? Let’s do that and, in doing so, learn how to customize the output of the InstantSearch <code>Hits</code> component.
+        </p>
+        <p>Create a new component as <code>src/components/search.js</code> using the source below. Don’t worry, I’ll explain what we’re doing in a moment.</p>
+        <p>
+            As you can see, the actual component output UI is almost identical to the prior search page, with just a <code>SearchBox</code> and
+            <code>Hits</code>. However, prior to that, we are overriding the default output behavior of <code>Hits</code>. If the results return any records, we
+            loop through them, outputting cards identical to the existing blog list on <code>src/templates/blog.js</code>, using the
+            <code>hit</code> (i.e. search result) values to populate the output. If there are no results, we just display some text informing the user.
+        </p>
+        <p>
+            Now let’s add it to our blog. Keep in mind that the output of the search results are identical to the regular blog list output and we are using the
+            search without
+            <a href="https://www.algolia.com/doc/guides/building-search-ui/going-further/conditional-display/react/#handling-the-empty-query"
+                >conditionally handling an empty query</a
+            >
+            - this means it will always display posts even if the user has not searched yet. Thus, we can actually replace the regular page output with the
+            search results as in the updated source for <code>src/templates/blog.js</code> below:
+        </p>
+        <p>The result works as shown below.</p>
+        <p><img src="https://www.stackbit.com/images/gatsby-finished-search.png" /></p>
+        <h2 id="where-to-go-from-here">Where to Go From Here</h2>
+        <p>
+            There’s one more step that I should mention. We need to ensure that the environment variables we created are available when we deploy. On Netlify,
+            all we need to do is go to Settings &gt; Build &amp; Deploy &gt; Environment and add the necessary variables defined in our <code>.env</code> file
+            to our deployment settings.
+        </p>
+        <figure>
+            <img src="https://www.stackbit.com/images/1593607459-env-variables-sm.png" alt="Netlify environment variables" />
+            <figcaption>Netlify environment variables</figcaption>
+        </figure>
+        <p>We’re all set!</p>
+        <p>
+            Obviously, this is just one way to implement the search. The
+            <a href="https://www.gatsbyjs.org/docs/adding-search-with-algolia/">Gatsby documentation</a> offers a similar but probably more flexible
+            implementation. The <a href="https://www.algolia.com/doc/api-reference/widgets/instantsearch/react/">InstantSearch</a> documentation also offers a
+            ton of API and customization details with code samples to help you make the tools fit the needs of your specific site. In the end, implementing a
+            search seems like a complicated task, but, thankfully, the tools and libraries available to us do a lot of the heavy lifting, making our jobs much
+            easier.
+        </p>
+    </body>
 </html>

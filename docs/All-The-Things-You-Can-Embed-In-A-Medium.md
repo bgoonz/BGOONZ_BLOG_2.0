@@ -1,9 +1,8 @@
-All The Things You Can Embed In A Medium Article
-================================================
+# All The Things You Can Embed In A Medium Article
 
 I have this innate desire to make everything available all in one place and it’s usually an unnecessary waste of time… but here I will…
 
-------------------------------------------------------------------------
+---
 
 ### All The Things You Can Embed In A Medium Article
 
