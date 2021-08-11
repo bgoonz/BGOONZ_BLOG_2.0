@@ -1,9 +1,8 @@
-A list of all of my articles to link to future posts
-====================================================
+# A list of all of my articles to link to future posts
 
 You should probably skip this one… seriously it’s just for internal use!
 
-------------------------------------------------------------------------
+---
 
 ### All Of My Medium Stories
 

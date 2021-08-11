@@ -1,9 +1,8 @@
-A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
-===========================================================================================
+# A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
 
 Curating Complexity: A Guide to Big-O Notation
 
-------------------------------------------------------------------------
+---
 
 ### A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
 
@@ -41,7 +40,7 @@ Curating Complexity: A Guide to Big-O Notation
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png" class="graf-image" /></figure>-   <span id="d18b">First we apply the product rule to drop all constants.</span>
 -   <span id="4335">Then we apply the sum rule to select the single most dominant term.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Complexity Classes
 
@@ -61,7 +60,7 @@ Common Complexity Classes
 
 > **Linear algorithm’s will access each item of the input “once”.**
 
-### `O(nlog(n)) Log Linear Time`
+### `O(nlog(n)) Log Linear Time`
 
 > **Combination of linear and logarithmic behavior, we will see features from both classes.**
 
@@ -77,7 +76,7 @@ Common Complexity Classes
 
 > **Algorithm’s with exponential time are VERY SLOW.**
 
-------------------------------------------------------------------------
+---
 
 ### Memoization
 
@@ -90,7 +89,7 @@ Common Complexity Classes
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png" class="graf-image" /></figure>### Memoizing Factorial
 
-Our memo object is *mapping* out our arguments of factorial to it’s return value.
+Our memo object is _mapping_ out our arguments of factorial to it’s return value.
 
 -   <span id="854a">Keep in mind we didn’t improve the speed of our algorithm.</span>
 
@@ -100,19 +99,19 @@ Our memo object is *mapping* out our arguments of factorial to it’s return val
 
 ### The Memoization Formula
 
-> *Rules:*
+> _Rules:_
 
-1.  <span id="b3f0">*Write the unoptimized brute force recursion (make sure it works);*</span>
-2.  <span id="b36e">*Add memo object as an additional argument .*</span>
-3.  <span id="f81f">*Add a base case condition that returns the stored value if the function’s argument is in the memo.*</span>
-4.  <span id="1b0f">*Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key.*</span>
+1.  <span id="b3f0">_Write the unoptimized brute force recursion (make sure it works);_</span>
+2.  <span id="b36e">_Add memo object as an additional argument ._</span>
+3.  <span id="f81f">_Add a base case condition that returns the stored value if the function’s argument is in the memo._</span>
+4.  <span id="1b0f">_Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key._</span>
 
 #### Things to remember
 
-1.  <span id="bc4a">*When solving DP problems with Memoization, it is helpful to draw out the visual tree first.*</span>
-2.  <span id="7bb1">*When you notice duplicate sub-tree’s that means we can memoize.*</span>
+1.  <span id="bc4a">_When solving DP problems with Memoization, it is helpful to draw out the visual tree first._</span>
+2.  <span id="7bb1">_When you notice duplicate sub-tree’s that means we can memoize._</span>
 
-------------------------------------------------------------------------
+---
 
 ### Tabulation
 
@@ -121,38 +120,38 @@ Our memo object is *mapping* out our arguments of factorial to it’s return val
 > Use When:
 
 -   <span id="f5b0">**The function is iterative and not recursive.**</span>
--   <span id="015c">*The accompanying DS is usually an array.*</span>
+-   <span id="015c">_The accompanying DS is usually an array._</span>
 
 #### Steps for tabulation
 
--   <span id="8918">*Create a table array based off the size of the input.*</span>
--   <span id="b4e7">*Initialize some values in the table to ‘answer’ the trivially small subproblem.*</span>
--   <span id="072e">*Iterate through the array and fill in the remaining entries.*</span>
--   <span id="192e">*Your final answer is usually the last entry in the table.*</span>
+-   <span id="8918">_Create a table array based off the size of the input._</span>
+-   <span id="b4e7">_Initialize some values in the table to ‘answer’ the trivially small subproblem._</span>
+-   <span id="072e">_Iterate through the array and fill in the remaining entries._</span>
+-   <span id="192e">_Your final answer is usually the last entry in the table._</span>
 
-------------------------------------------------------------------------
+---
 
 ### Memo and Tab Demo with Fibonacci
 
-> *Normal Recursive Fibonacci*
+> _Normal Recursive Fibonacci_
 
     function fibonacci(n) {
       if (n <= 2) return 1;
       return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
-> *Memoization Fibonacci 1*
+> _Memoization Fibonacci 1_
 
-> *Memoization Fibonacci 2*
+> _Memoization Fibonacci 2_
 
-> *Tabulated Fibonacci*
+> _Tabulated Fibonacci_
 
 ### Example of Linear Search
 
--   <span id="84b2">*Worst Case Scenario: The term does not even exist in the array.*</span>
--   <span id="30dc">*Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n).*</span>
+-   <span id="84b2">_Worst Case Scenario: The term does not even exist in the array._</span>
+-   <span id="30dc">_Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n)._</span>
 
-------------------------------------------------------------------------
+---
 
 ### Sorting Algorithms
 
@@ -171,16 +170,16 @@ Our memo object is *mapping* out our arguments of factorial to it’s return val
 
 > It’s almost never used in production code because:
 
--   <span id="3cb1">*It’s not efficient*</span>
--   <span id="4eac">*It’s not commonly used*</span>
--   <span id="d730">*There is stigma attached to it*</span>
--   <span id="8da7">`Bubbling Up`* : Term that infers that an item is in motion, moving in some direction, and has some final resting destination.*</span>
--   <span id="8447">*Bubble sort, sorts an array of integers by bubbling the largest integer to the top.*</span>
+-   <span id="3cb1">_It’s not efficient_</span>
+-   <span id="4eac">_It’s not commonly used_</span>
+-   <span id="d730">_There is stigma attached to it_</span>
+-   <span id="8da7">`Bubbling Up`_ : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._</span>
+-   <span id="8447">_Bubble sort, sorts an array of integers by bubbling the largest integer to the top._</span>
 
 <!-- -->
 
--   <span id="dcd2">*Worst Case & Best Case are always the same because it makes nested loops.*</span>
--   <span id="9a6a">*Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)*</span>
+-   <span id="dcd2">_Worst Case & Best Case are always the same because it makes nested loops._</span>
+-   <span id="9a6a">_Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)_</span>
 
 ### Selection Sort
 
@@ -196,11 +195,11 @@ Our memo object is *mapping* out our arguments of factorial to it’s return val
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY" class="graf-image" /></figure>Summary of how Selection Sort should work:
 
-1.  <span id="2277">*Set MIN to location 0*</span>
-2.  <span id="c76c">*Search the minimum element in the list.*</span>
-3.  <span id="79d3">*Swap with value at location Min*</span>
-4.  <span id="4ede">*Increment Min to point to next element.*</span>
-5.  <span id="a649">*Repeat until list is sorted.*</span>
+1.  <span id="2277">_Set MIN to location 0_</span>
+2.  <span id="c76c">_Search the minimum element in the list._</span>
+3.  <span id="79d3">_Swap with value at location Min_</span>
+4.  <span id="4ede">_Increment Min to point to next element._</span>
+5.  <span id="a649">_Repeat until list is sorted._</span>
 
 ### Insertion Sort
 
@@ -226,9 +225,9 @@ Our memo object is *mapping* out our arguments of factorial to it’s return val
 
 > Steps:
 
-1.  <span id="213f">*If there is only one element in the list, it is already sorted; return the array.*</span>
-2.  <span id="6214">*Otherwise, divide the list recursively into two halves until it can no longer be divided.*</span>
-3.  <span id="3cc8">*Merge the smallest lists into new list in a sorted order.*</span>
+1.  <span id="213f">_If there is only one element in the list, it is already sorted; return the array._</span>
+2.  <span id="6214">_Otherwise, divide the list recursively into two halves until it can no longer be divided._</span>
+3.  <span id="3cc8">_Merge the smallest lists into new list in a sorted order._</span>
 
 ### Quick Sort
 
@@ -252,11 +251,11 @@ Our memo object is *mapping* out our arguments of factorial to it’s return val
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali" class="graf-image" /></figure>*Recursive Solution*
 
-> *Min Max Solution*
+> _Min Max Solution_
 
--   <span id="6fb1">*Must be conducted on a sorted array.*</span>
--   <span id="383b">*Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing.*</span>
--   <span id="c940">*Binary Search is part of Divide and Conquer.*</span>
+-   <span id="6fb1">_Must be conducted on a sorted array._</span>
+-   <span id="383b">_Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing._</span>
+-   <span id="c940">_Binary Search is part of Divide and Conquer._</span>
 
 ### Insertion Sort
 
@@ -264,12 +263,12 @@ Our memo object is *mapping* out our arguments of factorial to it’s return val
 
 > Steps:
 
-1.  <span id="8c1f">*If it is the first element, and it is already sorted; return 1.*</span>
-2.  <span id="1451">*Pick next element.*</span>
-3.  <span id="0f8b">*Compare with all elements in the sorted sub list*</span>
-4.  <span id="4d78">*Shift all the elements in the sorted sub list that is greater than the value to be sorted.*</span>
-5.  <span id="9131">*Insert the value*</span>
-6.  <span id="6c8a">*Repeat until list is sorted.*</span>
+1.  <span id="8c1f">_If it is the first element, and it is already sorted; return 1._</span>
+2.  <span id="1451">_Pick next element._</span>
+3.  <span id="0f8b">_Compare with all elements in the sorted sub list_</span>
+4.  <span id="4d78">_Shift all the elements in the sorted sub list that is greater than the value to be sorted._</span>
+5.  <span id="9131">_Insert the value_</span>
+6.  <span id="6c8a">_Repeat until list is sorted._</span>
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 

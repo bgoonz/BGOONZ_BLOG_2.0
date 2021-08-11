@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</title>
+    </head>
+    <body>
+        <article class="h-entry">
+            <header>
+                <h1 class="p-name">PostgreSQL Setup For Windows &amp; WSL/Ubuntu</h1>
+            </header>
+            <section data-field="subtitle" class="p-summary">
+                If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install psql in your…
+            </section>
+            <section data-field="body" class="e-content">
+                <section name="6719" class="section section--body section--first section--last">
+                    <div class="section-divider"><hr class="section-divider" /></div>
+                    <div class="section-content">
+                        <div class="section-inner sectionLayout--insetColumn">
+                            <h3 name="b38c" id="b38c" class="graf graf--h3 graf--leading graf--title">PostgreSQL Setup For Windows &amp; WSL/Ubuntu</h3>
+                            <figure name="8433" id="8433" class="graf graf--figure graf--layoutOutsetLeft graf-after--h3">
+                                <img
+                                    class="graf-image"
+                                    data-image-id="0*mhTM08D1J612VW7J"
+                                    data-width="221"
+                                    data-height="166"
+                                    src="https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J"
+                                />
+                            </figure>
+                            <p name="0047" id="0047" class="graf graf--p graf-after--figure">
+                                If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install
+                                <code class="markup--code markup--p-code">psql</code> in your Ubuntu installation. Then you will also install Postbird, a
+                                cross-platform graphical user interface that makes working with SQL and PostgreSQL ‘allegedly’ …(personally I prefer to just use
+                                the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the
+                                <strong class="markup--strong markup--p-strong">command line tool </strong
+                                ><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">psql</strong></code
+                                ><strong class="markup--strong markup--p-strong">.</strong>
+                            </p>
+                            <h3 name="d62d" id="d62d" class="graf graf--h3 graf-after--p">
+                                Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!
+                            </h3>
+                            <p name="a16a" id="a16a" class="graf graf--p graf-after--h3">
+                                <strong class="markup--strong markup--p-strong">Postgres</strong>, is a
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Free_and_open-source_software"
+                                    data-href="https://en.wikipedia.org/wiki/Free_and_open-source_software"
+                                    class="markup--anchor markup--p-anchor"
+                                    title="Free and open-source software"
+                                    rel="noopener"
+                                    target="_blank"
+                                    >free and open-source</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Relational_database_management_system"
+                                    data-href="https://en.wikipedia.org/wiki/Relational_database_management_system"
+                                    class="markup--anchor markup--p-anchor"
+                                    title="Relational database management system"
+                                    rel="noopener"
+                                    target="_blank"
+                                    >relational database management system</a
+                                >
+                                (RDBMS)
+                            </p>
+                            <p name="4cdc" id="4cdc" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">PSQL:</strong></p>
+                            <p name="a535" id="a535" class="graf graf--p graf-after--p">
+                                The primary
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Front_and_back_ends"
+                                    data-href="https://en.wikipedia.org/wiki/Front_and_back_ends"
+                                    class="markup--anchor markup--p-anchor"
+                                    title="Front and back ends"
+                                    rel="noopener"
+                                    target="_blank"
+                                    >front-end</a
+                                >
+                                for PostgreSQL is the
+                                <code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">psql</strong></code>
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Command-line_program"
+                                    data-href="https://en.wikipedia.org/wiki/Command-line_program"
+                                    class="markup--anchor markup--p-anchor"
+                                    title="Command-line program"
+                                    rel="noopener"
+                                    target="_blank"
+                                    >command-line program</a
+                                >, which can be used to enter SQL queries directly, or execute them from a file.
+                            </p>
+                            <p name="ad1e" id="ad1e" class="graf graf--p graf-after--p">
+                                In addition, psql provides a number of meta-commands and various shell-like features to facilitate writing scripts and
+                                automating a wide variety of tasks; for example tab completion of object names and SQL syntax.
+                            </p>
+                            <p name="3793" id="3793" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">pgAdmin:</strong></p>
+                            <p name="630c" id="630c" class="graf graf--p graf-after--p">
+                                The pgAdmin package is a free and open-source
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Graphical_user_interface"
+                                    data-href="https://en.wikipedia.org/wiki/Graphical_user_interface"
+                                    class="markup--anchor markup--p-anchor"
+                                    title="Graphical user interface"
+                                    rel="noopener"
+                                    target="_blank"
+                                    >graphical user interface</a
+                                >
+                                (GUI) administration tool for PostgreSQL.
+                            </p>
+                            <p name="c9f8" id="c9f8" class="graf graf--p graf-after--p">
+                                When you read “installation”, that means the actual OS that’s running on your machine. So, you have a Windows installation,
+                                Windows 10, that’s running when you boot your computer. Then, when you start the Ubuntu installation, it’s as if there’s a
+                                completely separate computer running inside your computer. It’s like having two completely different laptops.
+                            </p>
+                            <h3 name="8a2f" id="8a2f" class="graf graf--h3 graf-after--p">Other Noteworthy Distinctions:</h3>
+                            <figure name="1a5e" id="1a5e" class="graf graf--figure graf-after--h3">
+                                <img
+                                    class="graf-image"
+                                    data-image-id="1*um8fm6FDTYYOXZrLudddpg.png"
+                                    data-width="787"
+                                    data-height="682"
+                                    data-is-featured="true"
+                                    src="https://cdn-images-1.medium.com/max/800/1*um8fm6FDTYYOXZrLudddpg.png"
+                                />
+                            </figure>
+                            <h3 name="e44b" id="e44b" class="graf graf--h3 graf-after--figure">Installing PostgreSQL 12</h3>
+                            <p name="922a" id="922a" class="graf graf--p graf-after--h3">
+                                To install PostgreSQL 12, you need to download the installer from the Internet. PostgreSQL’s commercial company, Enterprise DB,
+                                offers installers for PostgreSQL for every major platform.
+                            </p>
+                            <p name="7276" id="7276" class="graf graf--p graf-after--p">
+                                Open
+                                <a
+                                    href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads"
+                                    data-href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads"
+                                    class="markup--anchor markup--p-anchor"
+                                    rel="noopener"
+                                    target="_blank"
+                                    >https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a
+                                >. Click the link for PostgreSQL 12 for Windows x86–64.
+                            </p>
+                            <figure name="91f1" id="91f1" class="graf graf--figure graf-after--p">
+                                <img
+                                    class="graf-image"
+                                    data-image-id="0*wi4EbaVo-mamG_tH.png"
+                                    data-width="1386"
+                                    data-height="793"
+                                    src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png"
+                                />
+                            </figure>
+                            <p name="d52e" id="d52e" class="graf graf--p graf-after--figure">
+                                Once that installer downloads, run it. You need to go through the normal steps of installing software.
+                            </p>
+                            <ul class="postList">
+                                <li name="a223" id="a223" class="graf graf--li graf-after--p">
+                                    Yes, Windows, let the installer make changes to <em class="markup--em markup--li-em">my</em> device.
+                                </li>
+                                <li name="d4d0" id="d4d0" class="graf graf--li graf-after--li">Thanks for the welcome. Next.</li>
+                                <li name="1283" id="1283" class="graf graf--li graf-after--li">Yeah, that’s a good place to install it. Next.</li>
+                                <li name="79cc" id="79cc" class="graf graf--li graf-after--li">
+                                    I don’t want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.
+                                </li>
+                            </ul>
+                            <figure name="ee8d" id="ee8d" class="graf graf--figure graf-after--li">
+                                <img
+                                    class="graf-image"
+                                    data-image-id="0*PSDmTsaD37MgFJ-A.png"
+                                    data-width="552"
+                                    data-height="432"
+                                    src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png"
+                                />
+                            </figure>
+                            <ul class="postList">
+                                <li name="e09d" id="e09d" class="graf graf--li graf-after--figure">Also, great looking directory. Thanks. Next.</li>
+                            </ul>
+                            <h3 name="ffcd" id="ffcd" class="graf graf--h3 graf-after--li">
+                                Oooh! A password! I’ll enter <strong class="markup--strong markup--h3-strong">****</strong>. I sure won’t forget that because,
+                                if I do, I’ll have to uninstall and reinstall PostgreSQL and lose all of my hard work.
+                                <strong class="markup--strong markup--h3-strong"
+                                    >Seriously, write down this password or use one you will not forget!!!!!!!!!!!!!!!</strong
+                                >
+                            </h3>
+                            <h3 name="17ae" id="17ae" class="graf graf--h3 graf-after--h3">
+                                I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it’s not worth it.
+                            </h3>
+                            <ul class="postList">
+                                <li name="25b7" id="25b7" class="graf graf--li graf-after--h3">Sure. 5432. Good to go. Next.</li>
+                                <li name="28be" id="28be" class="graf graf--li graf-after--li">Not even sure what that means. Default! Next.</li>
+                                <li name="b378" id="b378" class="graf graf--li graf-after--li">Yep. Looks good. Next.</li>
+                            </ul>
+                            <p name="2bc2" id="2bc2" class="graf graf--p graf-after--li">Insert pop culture reference to pass the time</p>
+                            <h3 name="9523" id="9523" class="graf graf--h3 graf-after--p">Installing PostgreSQL Client Tools on Ubuntu</h3>
+                            <p name="e3b4" id="e3b4" class="graf graf--p graf-after--h3">
+                                Now, to install the PostgreSQL Client tools for Ubuntu. You need to do this so that the Node.js (and later Python) programs
+                                running on your Ubuntu installation can access the PostgreSQL server running on your Windows installation. You need to tell
+                                <code class="markup--code markup--p-code">apt</code>, the package manager, that you want it to go find the PostgreSQL 12 client
+                                tools from PostgreSQL itself rather than the common package repositories. You do that by issuing the following two commands.
+                                Copy and paste them one at a time into your shell. (If your Ubuntu shell isn&#39;t running, start one.)
+                            </p>
+                            <p name="cb99" id="cb99" class="graf graf--p graf-after--p">
+                                <strong class="markup--strong markup--p-strong">Pro-tip</strong>: Copy those commands because you’re not going to type them,
+                                right? After you copy one of them, you can just right-click on the Ubuntu shell. That should paste them in there for you.
+                            </p>
+                            <pre
+                                name="300c"
+                                id="300c"
+                                class="graf graf--pre graf-after--p"
+                            >wget --quiet -O - <a href="https://www.postgresql.org/media/keys/ACCC4CF8.asc" data-href="https://www.postgresql.org/media/keys/ACCC4CF8.asc" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">https://www.postgresql.org/media/keys/ACCC4CF8.asc</a> | sudo apt-key add -</pre>
+                            <p name="5515" id="5515" class="graf graf--p graf-after--pre">If prompted for your password, type it.</p>
+                            <pre
+                                name="32ea"
+                                id="32ea"
+                                class="graf graf--pre graf-after--p"
+                            >echo &quot;deb <a href="http://apt.postgresql.org/pub/repos/apt/" data-href="http://apt.postgresql.org/pub/repos/apt/" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">http://apt.postgresql.org/pub/repos/apt/</a> `lsb_release -cs`-pgdg main&quot; | sudo tee  /etc/apt/sources.list.d/pgdg.list</pre>
+                            <p name="70b1" id="70b1" class="graf graf--p graf-after--pre">
+                                The last line of output of those two commands running should read “OK”. If it does not, try copying and pasting them one at a
+                                time.
+                            </p>
+                            <p name="2875" id="2875" class="graf graf--p graf-after--p">
+                                Now that you’ve registered the PostgreSQL repositories as a source to look for PostgreSQL, you need to update the
+                                <code class="markup--code markup--p-code">apt</code> registry. You should do this before you install
+                                <em class="markup--em markup--p-em">any</em> software on Ubuntu.
+                            </p>
+                            <pre name="8b20" id="8b20" class="graf graf--pre graf-after--p">sudo apt update</pre>
+                            <p name="1070" id="1070" class="graf graf--p graf-after--pre">
+                                Once that’s finished running, the new entries for PostgreSQL 12 should be in the repository. Now, you can install them with the
+                                following command.
+                            </p>
+                            <pre name="7a9e" id="7a9e" class="graf graf--pre graf-after--p">sudo apt install postgresql-client-12 postgresql-common</pre>
+                            <p name="6006" id="6006" class="graf graf--p graf-after--pre">If it asks you if you want to install them, please tell it “Y”.</p>
+                            <p name="aeab" id="aeab" class="graf graf--p graf-after--p">
+                                Test that it installed by typing <code class="markup--code markup--p-code">psql --version</code>. You should see it print out
+                                information about the version of the installed tools. If it tells you that it can&#39;t find the command, try these instructions
+                                over.
+                            </p>
+                            <h3 name="aace" id="aace" class="graf graf--h3 graf-after--p">Configuring the client tools</h3>
+                            <p name="1ade" id="1ade" class="graf graf--p graf-after--h3">
+                                Since you’re going to be accessing the PosgreSQL installation from your Ubuntu installation on your Windows installation, you’re
+                                going to have to type that you want to access it over and over, which means extra typing. To prevent you from having to do this,
+                                you can customize your shell to always add the extra commands for you.
+                            </p>
+                            <p name="b92b" id="b92b" class="graf graf--p graf-after--p">
+                                This assumes you’re still using Bash. If you changed the shell that your Ubuntu installation uses, please follow that shell’s
+                                directions for adding an alias to its startup file.
+                            </p>
+                            <p name="91e2" id="91e2" class="graf graf--p graf-after--p">
+                                Make sure you’re in your Ubuntu home directory. You can do that by typing
+                                <code class="markup--code markup--p-code">cd</code> and hitting enter. Use
+                                <code class="markup--code markup--p-code">ls</code> to find out if you have a <code class="markup--code markup--p-code"
+                                    >.bashrc</code
+                                >
+                                file. Type <code class="markup--code markup--p-code">ls .bashrc</code>. If it shows you that one exists, that&#39;s the one you
+                                will add the alias to. If it tells you that there is no file named that, then type
+                                <code class="markup--code markup--p-code">ls .profile</code>. If it shows you that one exists, that&#39;s the one you will add
+                                the alias to. If it shows you that it does not exist, then use the file name <code class="markup--code markup--p-code"
+                                    >.bashrc</code
+                                >
+                                in the following section.
+                            </p>
+                            <p name="8c06" id="8c06" class="graf graf--p graf-after--p">
+                                Now that you know which profile file to use, type
+                                <code class="markup--code markup--p-code">code «profile file name»</code> where &quot;profile file name&quot; is the name of the
+                                file you determined from the last section. Once Visual Studio Code starts up with your file, at the end of it (or if you&#39;ve
+                                already added aliases, in that section), type the following.
+                            </p>
+                            <pre name="e808" id="e808" class="graf graf--pre graf-after--p">alias psql=&quot;psql -h localhost&quot;</pre>
+                            <p name="55b4" id="55b4" class="graf graf--p graf-after--pre">
+                                When you run <code class="markup--code markup--p-code">psql</code> from the command line, it will now always add the part about
+                                wanting to connect to <em class="markup--em markup--p-em">localhost</em> every time. You would have to type that each time,
+                                otherwise.
+                            </p>
+                            <p name="6b42" id="6b42" class="graf graf--p graf-after--p">
+                                To make sure that you set that up correctly, type <code class="markup--code markup--p-code">psql -U postgres postgres</code>.
+                                This tells the <code class="markup--code markup--p-code">psql</code> client that you want to connect as the user
+                                &quot;postgres&quot; (<code class="markup--code markup--p-code">-U postgres</code>) to the database postgres (<code
+                                    class="markup--code markup--p-code"
+                                    >postgres</code
+                                >
+                                at the end), which is the default database created when PostgreSQL is installed. It will prompt you for a password. Type the
+                                password that you used when you installed PostgrSQL, earlier. If the alias works correctly and you type the correct password,
+                                then you should see something like the following output.
+                            </p>
+                            <pre
+                                name="36ba"
+                                id="36ba"
+                                class="graf graf--pre graf-after--p"
+                            >psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1))<br>Type &quot;help&quot; for help.</pre>
+                            <pre name="12f0" id="12f0" class="graf graf--pre graf-after--pre">postgres=#</pre>
+                            <p name="1b19" id="1b19" class="graf graf--p graf-after--pre">
+                                Type <code class="markup--code markup--p-code">\q</code> and hit Enter to exit the PostgreSQL client tool.
+                            </p>
+                            <p name="401d" id="401d" class="graf graf--p graf-after--p">
+                                Now, you will add a user for your Ubuntu identity so that you don’t have to specify it all the time. Then, you will create a
+                                file that PostgreSQL will use to automatically send your password every time.
+                            </p>
+                            <p name="b789" id="b789" class="graf graf--p graf-after--p">
+                                Copy and paste the following into your Ubuntu shell. Think of a password that you want to use for your user.
+                                <strong class="markup--strong markup--p-strong"
+                                    >Replace the password in the single quotes in the command with the password that you want.</strong
+                                >
+                                It <em class="markup--em markup--p-em">has</em> to be a non-empty string. PostgreSQL doesn’t like it when it’s not.
+                            </p>
+                            <pre name="b07c" id="b07c" class="graf graf--pre graf-after--p">
+psql -U postgres -c &quot;CREATE USER `whoami` WITH PASSWORD &#39;password&#39; SUPERUSER&quot;</pre
+                            >
+                            <p name="30d6" id="30d6" class="graf graf--p graf-after--pre">
+                                It should prompt you for a password. Type the password that you created when you installed PostgreSQL. Once you type the correct
+                                password, you should see “CREATE ROLE”.
+                            </p>
+                            <p name="cb4f" id="cb4f" class="graf graf--p graf-after--p">
+                                Now you will create your PostgreSQL password file. Type the following into your Ubuntu shell to open Visual Studio Code and
+                                create a new file.
+                            </p>
+                            <pre name="3707" id="3707" class="graf graf--pre graf-after--p">code ~/.pgpass</pre>
+                            <p name="1a92" id="1a92" class="graf graf--p graf-after--pre">
+                                In that file, you will add this line, which tells it that on localhost for port 5432 (where PostgreSQL is running), for all
+                                databases (*),
+                                <strong class="markup--strong markup--p-strong"
+                                    >use your Ubuntu user name and the password that you just created for that user with the </strong
+                                ><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">psql</strong></code
+                                ><strong class="markup--strong markup--p-strong"> command you just typed.</strong> (If you have forgotten your Ubuntu user name,
+                                type <code class="markup--code markup--p-code">whoami</code> on the command line.) Your entry in the file should have this
+                                format.
+                            </p>
+                            <pre name="76ca" id="76ca" class="graf graf--pre graf-after--p">
+localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
+                            >
+                            <p name="0dd0" id="0dd0" class="graf graf--p graf-after--pre">
+                                Once you have that information in the file, save it, and close Visual Studio Code.
+                            </p>
+                            <p name="b661" id="b661" class="graf graf--p graf-after--p">
+                                The last step you have to take is change the permission on that file so that it is only readable by your user. PostgreSQL will
+                                ignore it if just anyone can read and write to it. This is for <em class="markup--em markup--p-em">your</em> security. Change
+                                the file permissions so only you can read and write to it. You did this once upon a time. Here’s the command.
+                            </p>
+                            <pre name="5e66" id="5e66" class="graf graf--pre graf-after--p">chmod go-rw ~/.pgpass</pre>
+                            <p name="1f6a" id="1f6a" class="graf graf--p graf-after--pre">
+                                You can confirm that only you have read/write permission by typing
+                                <code class="markup--code markup--p-code">ls -al ~/.pgpass</code>. That should return output that looks like this,
+                                <strong class="markup--strong markup--p-strong">with your Ubuntu user name instead of &quot;web-dev-hub&quot;.</strong>
+                            </p>
+                            <pre name="5419" id="5419" class="graf graf--pre graf-after--p">
+-rw------- 1 web-dev-hub web-dev-hub 37 Mar 28 21:20 /home/web-dev-hub/.pgpass</pre
+                            >
+                            <p name="a9f8" id="a9f8" class="graf graf--p graf-after--pre">
+                                Now, try connecting to PostreSQL by typing <code class="markup--code markup--p-code">psql postgres</code>. Because you added the
+                                alias to your startup script, and because you created your <strong class="markup--strong markup--p-strong">.pgpass</strong>
+                                file, it should now connect without prompting you for any credentials! Type
+                                <code class="markup--code markup--p-code">\q</code> and press Enter to exit the PostgreSQL command line client.
+                            </p>
+                            <h3 name="bb3a" id="bb3a" class="graf graf--h3 graf-after--p">Installing Postbird</h3>
+                            <p name="9366" id="9366" class="graf graf--p graf-after--h3">
+                                Head over to the
+                                <a
+                                    href="https://github.com/Paxa/postbird/releases"
+                                    data-href="https://github.com/Paxa/postbird/releases"
+                                    class="markup--anchor markup--p-anchor"
+                                    rel="noopener"
+                                    target="_blank"
+                                    >Postbird releases page on GitHub</a
+                                >. Click the installer for Windows which you can recognize because it’s the only file in the list that ends with “.exe”.
+                            </p>
+                            <figure name="9688" id="9688" class="graf graf--figure graf-after--p">
+                                <img
+                                    class="graf-image"
+                                    data-image-id="0*ZdKurvQ4bHs3vDLT.png"
+                                    data-width="1386"
+                                    data-height="793"
+                                    src="https://cdn-images-1.medium.com/max/800/0*ZdKurvQ4bHs3vDLT.png"
+                                />
+                            </figure>
+                            <p name="f1dc" id="f1dc" class="graf graf--p graf-after--figure">
+                                After that installer downloads, run it. You will get a warning from Windows that this is from an unidentified developer. If you
+                                don’t want to install this, find a PostgreSQL GUI client that you do trust and install it or do everything from the command
+                                line.
+                            </p>
+                            <figure name="407a" id="407a" class="graf graf--figure graf-after--p">
+                                <img
+                                    class="graf-image"
+                                    data-image-id="0*EWpFEwM0YUDQCW_i.png"
+                                    data-width="534"
+                                    data-height="500"
+                                    src="https://cdn-images-1.medium.com/max/800/0*EWpFEwM0YUDQCW_i.png"
+                                />
+                            </figure>
+                            <p name="8698" id="8698" class="graf graf--p graf-after--figure">
+                                You should get used to seeing this because many open-source applications aren’t signed with the Microsoft Store for monetary and
+                                philosophical reasons.
+                            </p>
+                            <p name="de94" id="de94" class="graf graf--p graf-after--p">
+                                Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads “More
+                                info” and the “Run anyway” button.
+                            </p>
+                            <figure name="a64c" id="a64c" class="graf graf--figure graf-after--p">
+                                <img
+                                    class="graf-image"
+                                    data-image-id="0*9pDpx8XsYt2KnMku.png"
+                                    data-width="534"
+                                    data-height="500"
+                                    src="https://cdn-images-1.medium.com/max/800/0*9pDpx8XsYt2KnMku.png"
+                                />
+                            </figure>
+                            <p name="acd8" id="acd8" class="graf graf--p graf-after--figure">
+                                When it’s done installing, it will launch itself. Test it out by typing the “postgres” into the “Username” field and the
+                                password from your installation in the “Password” field. Click the Connect button. It should properly connect to the running
+                            </p>
+                            <p name="4506" id="4506" class="graf graf--p graf-after--p">
+                                You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any
+                                time.
+                            </p>
+                            <h3 name="6ca1" id="6ca1" class="graf graf--h3 graf-after--p">
+                                Now.. if you still have some gas in the tank… let’s put our new tools to work:
+                            </h3>
+                            <h3 name="9301" id="9301" class="graf graf--h3 graf-after--h3">The node-postgres</h3>
+                            <p name="aca9" id="aca9" class="graf graf--p graf-after--h3">
+                                The node-postgres is a collection of Node.js modules for interfacing with the PostgreSQL database. It has support for callbacks,
+                                promises, async/await, connection pooling, prepared statements, cursors, and streaming results.
+                            </p>
+                            <p name="2956" id="2956" class="graf graf--p graf-after--p">
+                                In our examples we also use the Ramda library. See Ramda tutorial for more information.
+                            </p>
+                            <h3 name="5948" id="5948" class="graf graf--h3 graf-after--p">Setting up node-postgres</h3>
+                            <p name="1e61" id="1e61" class="graf graf--p graf-after--h3">First, we install node-postgres.</p>
+                            <p name="6703" id="6703" class="graf graf--p graf-after--p">$ node -v<br />v14.2</p>
+                            <p name="32f3" id="32f3" class="graf graf--p graf-after--p">$ npm init -y</p>
+                            <p name="b768" id="b768" class="graf graf--p graf-after--p">We initiate a new Node application.</p>
+                            <p name="be45" id="be45" class="graf graf--p graf-after--p">npm i pg</p>
+                            <p name="78b0" id="78b0" class="graf graf--p graf-after--p">
+                                We install node-postgres with <code class="markup--code markup--p-code">nmp i pg</code>.
+                            </p>
+                            <p name="4c2f" id="4c2f" class="graf graf--p graf-after--p">npm i ramda</p>
+                            <p name="6a5f" id="6a5f" class="graf graf--p graf-after--p">In addition, we install Ramda for beautiful work with data.</p>
+                            <p name="cea8" id="cea8" class="graf graf--p graf-after--p">cars.sql</p>
+                            <p name="0f28" id="0f28" class="graf graf--p graf-after--p">DROP TABLE IF EXISTS cars;</p>
+                            <p name="92e8" id="92e8" class="graf graf--p graf-after--p">
+                                CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT);<br />INSERT INTO cars(name, price) VALUES(‘Audi’,
+                                52642);<br />INSERT INTO cars(name, price) VALUES(‘Mercedes’, 57127);<br />INSERT INTO cars(name, price) VALUES(‘Skoda’,
+                                9000);<br />INSERT INTO cars(name, price) VALUES(‘Volvo’, 29000);<br />INSERT INTO cars(name, price) VALUES(‘Bentley’,
+                                350000);<br />INSERT INTO cars(name, price) VALUES(‘Citroen’, 21000);<br />INSERT INTO cars(name, price) VALUES(‘Hummer’,
+                                41400);<br />INSERT INTO cars(name, price) VALUES(‘Volkswagen’, 21600);
+                            </p>
+                            <p name="abb9" id="abb9" class="graf graf--p graf-after--p">
+                                In some of the examples, we use this <code class="markup--code markup--p-code">cars</code> table.
+                            </p>
+                            <h3 name="e064" id="e064" class="graf graf--h3 graf-after--p">The node-postgres first example</h3>
+                            <p name="efd6" id="efd6" class="graf graf--p graf-after--h3">
+                                In the first example, we connect to the PostgreSQL database and return a simple SELECT query result.
+                            </p>
+                            <p name="a4ab" id="a4ab" class="graf graf--p graf-after--p">first.js</p>
+                            <pre
+                                name="7928"
+                                id="7928"
+                                class="graf graf--pre graf-after--p"
+                            >const pg = require(‘pg’);<br>const R = require(‘ramda’);<br>const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;<br>const client = new pg.Client(cs);<br>client.connect();<br>client.query(‘SELECT 1 + 4’).then(res =&gt; {</pre>
+                            <pre name="d808" id="d808" class="graf graf--pre graf-after--pre">const result = R.head(R.values(R.head(res.rows)))</pre>
+                            <pre name="048d" id="048d" class="graf graf--pre graf-after--pre">console.log(result)<br>}).finally(() =&gt; client.end());</pre>
+                            <p name="d94e" id="d94e" class="graf graf--p graf-after--pre">
+                                The example connects to the database and issues a SELECT statement.
+                            </p>
+                            <pre name="4b98" id="4b98" class="graf graf--pre graf-after--p">const pg = require(‘pg’);<br>const R = require(‘ramda’);</pre>
+                            <p name="013a" id="013a" class="graf graf--p graf-after--pre">
+                                We include the <code class="markup--code markup--p-code">pg</code> and
+                                <code class="markup--code markup--p-code">ramda</code> modules.
+                            </p>
+                            <pre name="9141" id="9141" class="graf graf--pre graf-after--p">const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre>
+                            <p name="a1ca" id="a1ca" class="graf graf--p graf-after--pre">
+                                This is the PostgreSQL connection string. It is used to build a connection to the database.
+                            </p>
+                            <pre name="ed54" id="ed54" class="graf graf--pre graf-after--p">const client = new pg.Client(cs);<br>client.connect();</pre>
+                            <p name="39b7" id="39b7" class="graf graf--p graf-after--pre">
+                                A client is created. We connect to the database with <code class="markup--code markup--p-code">connect()</code>.
+                            </p>
+                            <pre name="852f" id="852f" class="graf graf--pre graf-after--p">client.query(‘SELECT 1 + 4’).then(res =&gt; {</pre>
+                            <pre name="fe88" id="fe88" class="graf graf--pre graf-after--pre">const result = R.head(R.values(R.head(res.rows)));</pre>
+                            <pre name="67d8" id="67d8" class="graf graf--pre graf-after--pre">console.log(result);</pre>
+                            <pre name="8d6d" id="8d6d" class="graf graf--pre graf-after--pre">}).finally(() =&gt; client.end());</pre>
+                            <p name="8637" id="8637" class="graf graf--p graf-after--pre">
+                                We issue a simple SELECT query. We get the result and output it to the console. The
+                                <code class="markup--code markup--p-code">res.rows</code> is an array of objects; we use Ramda to get the returned scalar value.
+                                In the end, we close the connection with <code class="markup--code markup--p-code">end()</code>.
+                            </p>
+                            <pre
+                                name="ddba"
+                                id="ddba"
+                                class="graf graf--pre graf-after--p"
+                            >node first.js<br><strong class="markup--strong markup--pre-strong">5</strong></pre>
+                            <p name="4e27" id="4e27" class="graf graf--p graf-after--pre">This is the output.</p>
+                            <h3 name="831a" id="831a" class="graf graf--h3 graf-after--p">The node-postgres column names</h3>
+                            <p name="0487" id="0487" class="graf graf--p graf-after--h3">In the following example, we get the columns names of a database.</p>
+                            <blockquote name="3796" id="3796" class="graf graf--blockquote graf-after--p">column_names.js</blockquote>
+                            <pre name="c321" id="c321" class="graf graf--pre graf-after--blockquote">const pg = require(‘pg’);</pre>
+                            <pre name="eef8" id="eef8" class="graf graf--pre graf-after--pre">const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre>
+                            <pre name="6ba3" id="6ba3" class="graf graf--pre graf-after--pre">const client = new pg.Client(cs);</pre>
+                            <pre name="aff5" id="aff5" class="graf graf--pre graf-after--pre">client.connect();</pre>
+                            <pre name="e567" id="e567" class="graf graf--pre graf-after--pre">client.query(‘SELECT * FROM cars’).then(res =&gt; {</pre>
+                            <pre name="51b0" id="51b0" class="graf graf--pre graf-after--pre">const fields = res.fields.map(field =&gt; field.name);</pre>
+                            <pre name="ce9a" id="ce9a" class="graf graf--pre graf-after--pre">console.log(fields);</pre>
+                            <pre
+                                name="258a"
+                                id="258a"
+                                class="graf graf--pre graf-after--pre"
+                            >}).catch(err =&gt; {<br>console.log(err.stack);<br>}).finally(() =&gt; {<br>client.end()<br>});</pre>
+                            <p name="76c5" id="76c5" class="graf graf--p graf-after--pre">
+                                The column names are retrieved with <code class="markup--code markup--p-code">res.fields</code> attribute. We also use the
+                                <code class="markup--code markup--p-code">catch</code> clause to output potential errors.
+                            </p>
+                            <pre
+                                name="f16d"
+                                id="f16d"
+                                class="graf graf--pre graf-after--p"
+                            >node column_names.js<br>‘id’, ‘name’, ‘price’′<em class="markup--em markup--pre-em">id</em>′,′<em class="markup--em markup--pre-em">name</em>′,′<em class="markup--em markup--pre-em">price</em>′</pre>
+                            <p name="bd66" id="bd66" class="graf graf--p graf-after--pre">
+                                The output shows three column names of the <code class="markup--code markup--p-code">cars</code> table.
+                            </p>
+                            <h3 name="1234" id="1234" class="graf graf--h3 graf-after--p">Selecting all rows</h3>
+                            <p name="58e7" id="58e7" class="graf graf--p graf-after--h3">In the next example, we select all rows from the database table.</p>
+                            <blockquote name="a03a" id="a03a" class="graf graf--blockquote graf-after--p">all_rows.js</blockquote>
+                            <pre
+                                name="218a"
+                                id="218a"
+                                class="graf graf--pre graf-after--blockquote"
+                            >const pg = require(‘pg’);<br>const R = require(‘ramda’);</pre>
+                            <pre name="dc07" id="dc07" class="graf graf--pre graf-after--pre">const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre>
+                            <pre name="ffc0" id="ffc0" class="graf graf--pre graf-after--pre">const client = new pg.Client(cs);</pre>
+                            <pre name="44cd" id="44cd" class="graf graf--pre graf-after--pre">client.connect();</pre>
+                            <pre name="5bd0" id="5bd0" class="graf graf--pre graf-after--pre">client.query(‘SELECT * FROM cars’).then(res =&gt; {</pre>
+                            <pre name="a38c" id="a38c" class="graf graf--pre graf-after--pre">const data = res.rows;</pre>
+                            <pre
+                                name="c5ba"
+                                id="c5ba"
+                                class="graf graf--pre graf-after--pre"
+                            >console.log(&#39;all data&#39;);<br>data.forEach(row =&gt; {<br>    console.log(\`Id: ${row.id} Name: ${row.name} Price: ${row.price}\`);<br>})</pre>
+                            <pre
+                                name="9378"
+                                id="9378"
+                                class="graf graf--pre graf-after--pre"
+                            >console.log(&#39;Sorted prices:&#39;);<br>const prices = R.pluck(&#39;price&#39;, R.sortBy(R.prop(&#39;price&#39;), data));<br>console.log(prices);</pre>
+                            <pre name="0534" id="0534" class="graf graf--pre graf-after--pre">}).finally(() =&gt; {<br>client.end()<br>});</pre>
+                            <p name="807e" id="807e" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">TBC…</strong></p>
+                            <h4 name="f53f" id="f53f" class="graf graf--h4 graf-after--p">
+                                If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+                            </h4>
+                            <p name="1c2f" id="1c2f" class="graf graf--p graf-after--h4">
+                                <a
+                                    href="https://gist.github.com/bgoonz"
+                                    data-href="https://gist.github.com/bgoonz"
+                                    class="markup--anchor markup--p-anchor"
+                                    rel="noopener"
+                                    target="_blank"
+                                    >bgoonz’s gists · GitHub</a
+                                >
+                            </p>
+                            <div name="3585" id="3585" class="graf graf--mixtapeEmbed graf-after--p">
+                                <a
+                                    href="https://github.com/bgoonz"
+                                    data-href="https://github.com/bgoonz"
+                                    class="markup--anchor markup--mixtapeEmbed-anchor"
+                                    title="https://github.com/bgoonz"
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong><br /><em
+                                        class="markup--em markup--mixtapeEmbed-em"
+                                        >Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em
+                                    >github.com</a
+                                ><a
+                                    href="https://github.com/bgoonz"
+                                    class="js-mixtapeImage mixtapeImage u-ignoreBlock"
+                                    data-media-id="6ee74d5200d495ddc7ddad0c92bd6dce"
+                                    data-thumbnail-img-id="0*Udg3rbeFyslZ9dyl"
+                                    style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*Udg3rbeFyslZ9dyl)"
+                                ></a>
+                            </div>
+                            <p name="cb1a" id="cb1a" class="graf graf--p graf-after--mixtapeEmbed">Or Checkout my personal Resource Site:</p>
+                            <div name="a287" id="a287" class="graf graf--mixtapeEmbed graf-after--p graf--trailing">
+                                <a
+                                    href="https://bgoonz-blog.netlify.app/"
+                                    data-href="https://bgoonz-blog.netlify.app/"
+                                    class="markup--anchor markup--mixtapeEmbed-anchor"
+                                    title="https://bgoonz-blog.netlify.app/"
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Stackbit Web-Dev-HubTheme</strong><br /><em
+                                        class="markup--em markup--mixtapeEmbed-em"
+                                        >Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em
+                                    >bgoonz-blog.netlify.app</a
+                                ><a
+                                    href="https://bgoonz-blog.netlify.app/"
+                                    class="js-mixtapeImage mixtapeImage u-ignoreBlock"
+                                    data-media-id="a2f1abe4ed6a87b0b90d28e55f930d20"
+                                    data-thumbnail-img-id="0*yHs_xDis1qQ8JjWg"
+                                    style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*yHs_xDis1qQ8JjWg)"
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <footer>
+                <p>
+                    By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
+                    <a href="https://medium.com/p/801672ab7089"><time class="dt-published" datetime="2021-03-06T04:34:45.420Z">March 6, 2021</time></a
+                    >.
+                </p>
+                <p><a href="https://medium.com/@bryanguner/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="p-canonical">Canonical link</a></p>
+                <p>Exported from <a href="https://medium.com">Medium</a> on August 10, 2021.</p>
+            </footer>
+        </article>
+    </body>
+</html>
