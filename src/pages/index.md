@@ -97,7 +97,6 @@ sections:
           title="search" frameborder="0" allow="accelerometer;
           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
-     
       actions: []
       type: section_content
     - section_id: Web Audio DAW
