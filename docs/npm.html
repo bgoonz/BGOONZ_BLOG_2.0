@@ -210,7 +210,21 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><style></style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"
+            integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <style></style>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css"
+            integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
     <body>
         <header id="title-block-header">
             <h1 class="title">Introduction to npm</h1>
@@ -256,10 +270,10 @@
         </p>
         <h3 id="updating-packages">Updating packages</h3>
         <p>Updating is also made easy, by running</p>
-        <pre  class="language-javascript" class="console"><code>npm update</code></pre>
+        <pre class="language-javascript" class="console"><code>npm update</code></pre>
         <p><code>npm</code> will check all packages for a newer version that satisfies your versioning constraints.</p>
         <p>You can specify a single package to update as well:</p>
-        <pre  class="language-javascript" class="console"><code>npm update &lt;package-name&gt;</code></pre>
+        <pre class="language-javascript" class="console"><code>npm update &lt;package-name&gt;</code></pre>
         <h2 id="versioning">Versioning</h2>
         <p>
             In addition to plain downloads, <code>npm</code> also manages <strong>versioning</strong>, so you can specify any specific version of a package, or
@@ -274,10 +288,13 @@
         <p>In all those cases, versioning helps a lot, and <code>npm</code> follows the semantic versioning (semver) standard.</p>
         <h2 id="running-tasks">Running Tasks</h2>
         <p>The package.json file supports a format for specifying command line tasks that can be run by using</p>
-        <pre  class="language-javascript" class="console"><code>npm run &lt;task-name&gt;</code></pre>
+        <pre class="language-javascript" class="console"><code>npm run &lt;task-name&gt;</code></pre>
         <p>For example:</p>
         <div class="sourceCode" id="cb6">
-            <pre  class="language-javascript" class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb6-1" title="1"><span class="fu">{</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode json"
+            ><code class="sourceCode json"><a class="sourceLine" id="cb6-1" title="1"><span class="fu">{</span></a>
 <a class="sourceLine" id="cb6-2" title="2">    <span class="dt">&quot;scripts&quot;</span><span class="fu">:</span> <span class="fu">{</span></a>
 <a class="sourceLine" id="cb6-3" title="3">        <span class="dt">&quot;start-dev&quot;</span><span class="fu">:</span> <span class="st">&quot;node lib/server-development&quot;</span><span class="fu">,</span></a>
 <a class="sourceLine" id="cb6-4" title="4">        <span class="dt">&quot;start&quot;</span><span class="fu">:</span> <span class="st">&quot;node lib/server-production&quot;</span></a>
@@ -286,7 +303,10 @@
         </div>
         <p>It’s very common to use this feature to run Webpack:</p>
         <div class="sourceCode" id="cb7">
-            <pre  class="language-javascript" class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb7-1" title="1"><span class="fu">{</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode json"
+            ><code class="sourceCode json"><a class="sourceLine" id="cb7-1" title="1"><span class="fu">{</span></a>
 <a class="sourceLine" id="cb7-2" title="2">    <span class="dt">&quot;scripts&quot;</span><span class="fu">:</span> <span class="fu">{</span></a>
 <a class="sourceLine" id="cb7-3" title="3">        <span class="dt">&quot;watch&quot;</span><span class="fu">:</span> <span class="st">&quot;webpack --watch --progress --colors --config webpack.conf.js&quot;</span><span class="fu">,</span></a>
 <a class="sourceLine" id="cb7-4" title="4">        <span class="dt">&quot;dev&quot;</span><span class="fu">:</span> <span class="st">&quot;webpack --progress --colors --config webpack.conf.js&quot;</span><span class="fu">,</span></a>
@@ -295,7 +315,7 @@
 <a class="sourceLine" id="cb7-7" title="7"><span class="fu">}</span></a></code></pre>
         </div>
         <p>So instead of typing those long commands, which are easy to forget or mistype, you can run</p>
-        <pre  class="language-javascript" class="console"><code>$ npm run watch
+        <pre class="language-javascript" class="console"><code>$ npm run watch
 $ npm run dev
 $ npm run prod</code></pre>
     </body>

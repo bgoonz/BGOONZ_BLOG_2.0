@@ -211,7 +211,21 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><style></style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"
+            integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <style></style>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css"
+            integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
     <body>
         <header id="title-block-header">
             <h1 class="title">Data Structures</h1>
@@ -280,7 +294,10 @@ babgbag
         </div>
         <p>Dynamic array can be used.</p>
         <div class="sourceCode" id="cb4">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb4-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> s</span></a>
 <a class="sourceLine" id="cb4-3" title="3"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> t</span></a>
 <a class="sourceLine" id="cb4-4" title="4"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
@@ -358,7 +375,10 @@ babgbag
             <li>Right child: points to <code>node.next.left</code> if <code>node.next</code> exists.</li>
         </ul>
         <div class="sourceCode" id="cb8">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb8-2" title="2"><span class="co"> * Definition for binary tree with next pointer.</span></a>
 <a class="sourceLine" id="cb8-3" title="3"><span class="co"> * function TreeLinkNode(val) {</span></a>
 <a class="sourceLine" id="cb8-4" title="4"><span class="co"> *     this.val = val;</span></a>
@@ -389,7 +409,10 @@ babgbag
         <h4 id="two">TWO</h4>
         <p>Level order traversal.</p>
         <div class="sourceCode" id="cb9">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb9-2" title="2"><span class="co"> * Definition for binary tree with next pointer.</span></a>
 <a class="sourceLine" id="cb9-3" title="3"><span class="co"> * function TreeLinkNode(val) {</span></a>
 <a class="sourceLine" id="cb9-4" title="4"><span class="co"> *     this.val = val;</span></a>
@@ -480,7 +503,10 @@ babgbag
         <p>The tree may not be perfect now. So keep finding <code>next</code> until there is a node with children, or <code>null</code>.</p>
         <p>This also means post-order traversal is required.</p>
         <div class="sourceCode" id="cb13">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb13-2" title="2"><span class="co"> * Definition for binary tree with next pointer.</span></a>
 <a class="sourceLine" id="cb13-3" title="3"><span class="co"> * function TreeLinkNode(val) {</span></a>
 <a class="sourceLine" id="cb13-4" title="4"><span class="co"> *     this.val = val;</span></a>
@@ -523,7 +549,10 @@ babgbag
             <a href="./116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md">116. Populating Next Right Pointers in Each Node</a>.
         </p>
         <div class="sourceCode" id="cb14">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb14-2" title="2"><span class="co"> * Definition for binary tree with next pointer.</span></a>
 <a class="sourceLine" id="cb14-3" title="3"><span class="co"> * function TreeLinkNode(val) {</span></a>
 <a class="sourceLine" id="cb14-4" title="4"><span class="co"> *     this.val = val;</span></a>
@@ -592,7 +621,10 @@ Output:
         <h3 id="solution-3">Solution:</h3>
         <p>Dynamic Programming 101.</p>
         <div class="sourceCode" id="cb16">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb16-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb16-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb16-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number}</span><span class="co"> numRows</span></a>
 <a class="sourceLine" id="cb16-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number[][]}</span></a>
 <a class="sourceLine" id="cb16-4" title="4"><span class="co"> */</span></a>
@@ -648,7 +680,10 @@ Output: [1,3,3,1]
             right to left.
         </p>
         <div class="sourceCode" id="cb18">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb18-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number}</span><span class="co"> rowIndex</span></a>
 <a class="sourceLine" id="cb18-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number[]}</span></a>
 <a class="sourceLine" id="cb18-4" title="4"><span class="co"> */</span></a>
@@ -702,7 +737,10 @@ f(i, j) = min( f(i-1, j-1), f(i-1, j) ) + triangle[i][j], 0 &lt; j &lt; i
 f(i, i) = f(i-1, i-1) + triangle[i][i], i &gt; 0</code></pre>
         <p>Dynamic array can be used.</p>
         <div class="sourceCode" id="cb21">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb21-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[][]} triangle</span></a>
 <a class="sourceLine" id="cb21-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
 <a class="sourceLine" id="cb21-4" title="4"><span class="co"> */</span></a>
@@ -768,7 +806,10 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
             Because <code>price[j]</code> is lower that the base, using <code>j</code> as new base is guaranteed to gain more profit comparing to the old one.
         </p>
         <div class="sourceCode" id="cb24">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb24-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} prices</span></a>
 <a class="sourceLine" id="cb24-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
 <a class="sourceLine" id="cb24-4" title="4"><span class="co"> */</span></a>
@@ -831,7 +872,10 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.</code></
         <h3 id="solution-7">Solution:</h3>
         <p>Sell immediately after the price drops. Or in other perspective, it is the sum of all the incremental pairs (buy in then immediately sell out).</p>
         <div class="sourceCode" id="cb28">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb28-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb28-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb28-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} prices</span></a>
 <a class="sourceLine" id="cb28-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
 <a class="sourceLine" id="cb28-4" title="4"><span class="co"> */</span></a>
@@ -899,7 +943,10 @@ p1(i) = max( p1(i-1), prices[i] - min(prices[0], ..., prices[i-1]) ), 0 &lt; i &
 p2(i) = max( p2(i+1), max(prices[i], ..., prices[n-1]) - prices[i] ), n-1 &gt; i &gt;= 0</code></pre>
         <p>Define <code>f(k)</code> to be <code>p1(k) + p2(k)</code>. We need to get <code>max( f(0), ..., f(n-1) )</code>.</p>
         <div class="sourceCode" id="cb34">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb34-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb34-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb34-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} prices</span></a>
 <a class="sourceLine" id="cb34-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
 <a class="sourceLine" id="cb34-4" title="4"><span class="co"> */</span></a>
@@ -996,7 +1043,10 @@ Output: 42
             that ends with <code>root</code> node.
         </p>
         <div class="sourceCode" id="cb37">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb37-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb37-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb37-2" title="2"><span class="co"> * Definition for a binary tree node.</span></a>
 <a class="sourceLine" id="cb37-3" title="3"><span class="co"> * function TreeNode(val) {</span></a>
 <a class="sourceLine" id="cb37-4" title="4"><span class="co"> *     this.val = val;</span></a>
@@ -1028,7 +1078,10 @@ Output: 42
         <h4 id="two-2">TWO</h4>
         <p>Just return the later (max sum of a path that ends with <code>root</code>). Maintain a global variable to store the disconnected max sum.</p>
         <div class="sourceCode" id="cb38">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb38-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb38-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb38-2" title="2"><span class="co"> * Definition for a binary tree node.</span></a>
 <a class="sourceLine" id="cb38-3" title="3"><span class="co"> * function TreeNode(val) {</span></a>
 <a class="sourceLine" id="cb38-4" title="4"><span class="co"> *     this.val = val;</span></a>
@@ -1090,7 +1143,10 @@ Output: false
         <h3 id="solution-10">Solution:</h3>
         <h4 id="one-3">ONE</h4>
         <div class="sourceCode" id="cb41">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb41-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb41-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb41-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> s</span></a>
 <a class="sourceLine" id="cb41-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {boolean}</span></a>
 <a class="sourceLine" id="cb41-4" title="4"><span class="co"> */</span></a>
@@ -1102,7 +1158,10 @@ Output: false
         <h4 id="two-3">TWO</h4>
         <p>Remove non-alphanumeric characters then compare.</p>
         <div class="sourceCode" id="cb42">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb42-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb42-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb42-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> s</span></a>
 <a class="sourceLine" id="cb42-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {boolean}</span></a>
 <a class="sourceLine" id="cb42-4" title="4"><span class="co"> */</span></a>
@@ -1119,7 +1178,10 @@ Output: false
         <h4 id="three">THREE</h4>
         <p>Compare the char codes.</p>
         <div class="sourceCode" id="cb43">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb43-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb43-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb43-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> s</span></a>
 <a class="sourceLine" id="cb43-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {boolean}</span></a>
 <a class="sourceLine" id="cb43-4" title="4"><span class="co"> */</span></a>
@@ -1215,7 +1277,10 @@ Explanation: The endWord &quot;cog&quot; is not in wordList, therefore no possib
         </p>
         <p>The items in the queue are not just words now. Parent nodes are also kept so that we can backtrack the path from the end.</p>
         <div class="sourceCode" id="cb46">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb46-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb46-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb46-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> beginWord</span></a>
 <a class="sourceLine" id="cb46-3" title="3"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> endWord</span></a>
 <a class="sourceLine" id="cb46-4" title="4"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string</span><span class="co">[]} wordList</span></a>
@@ -1337,7 +1402,10 @@ Explanation: The endWord &quot;cog&quot; is not in wordList, therefore no possib
             To find all the next words, instead of filtering the <code>wordList</code>, enumerate all 25 possible words and check if in <code>wordList</code>.
         </p>
         <div class="sourceCode" id="cb49">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb49-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb49-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb49-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> beginWord</span></a>
 <a class="sourceLine" id="cb49-3" title="3"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> endWord</span></a>
 <a class="sourceLine" id="cb49-4" title="4"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string</span><span class="co">[]} wordList</span></a>
@@ -1411,7 +1479,10 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
             Repeat until the Set is empty. Time complexity O(n + n) = O(n).
         </p>
         <div class="sourceCode" id="cb51">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb51-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb51-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb51-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} nums</span></a>
 <a class="sourceLine" id="cb51-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
 <a class="sourceLine" id="cb51-4" title="4"><span class="co"> */</span></a>
@@ -1482,7 +1553,10 @@ Therefore, sum = 495 + 491 + 40 = 1026.</code></pre>
             node, return the sum of current level.
         </p>
         <div class="sourceCode" id="cb54">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb54-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb54-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb54-2" title="2"><span class="co"> * Definition for a binary tree node.</span></a>
 <a class="sourceLine" id="cb54-3" title="3"><span class="co"> * function TreeNode(val) {</span></a>
 <a class="sourceLine" id="cb54-4" title="4"><span class="co"> *     this.val = val;</span></a>
@@ -1549,7 +1623,10 @@ X O X X
         </p>
         <p>So both BFS and DFS are good. I prefer BFS when pruning is not needed in favor of its readability.</p>
         <div class="sourceCode" id="cb57">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb57-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb57-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb57-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{character</span><span class="co">[][]} board</span></a>
 <a class="sourceLine" id="cb57-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {void} Do not return anything, modify board in-place instead.</span></a>
 <a class="sourceLine" id="cb57-4" title="4"><span class="co"> */</span></a>
@@ -1666,7 +1743,10 @@ X O X X
         <h3 id="solution-16">Solution:</h3>
         <p>DFS. Cache the visited node before entering the next recursion.</p>
         <div class="sourceCode" id="cb59">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb59-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb59-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb59-2" title="2"><span class="co"> * Definition for undirected graph.</span></a>
 <a class="sourceLine" id="cb59-3" title="3"><span class="co"> * function UndirectedGraphNode(label) {</span></a>
 <a class="sourceLine" id="cb59-4" title="4"><span class="co"> *     this.label = label;</span></a>
@@ -1700,7 +1780,10 @@ X O X X
             <figcaption>alt text</figcaption>
         </figure>
         <div class="sourceCode" id="cb60">
-            <pre  class="language-javascript" class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb60-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode js"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb60-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb60-2" title="2"><span class="co"> * Definition for a binary tree node.</span></a>
 <a class="sourceLine" id="cb60-3" title="3"><span class="co"> * function TreeNode(val) {</span></a>
 <a class="sourceLine" id="cb60-4" title="4"><span class="co"> *     this.val = val;</span></a>
@@ -1750,7 +1833,10 @@ X O X X
             <figcaption>alt text</figcaption>
         </figure>
         <div class="sourceCode" id="cb61">
-            <pre  class="language-javascript" class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb61-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode js"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb61-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb61-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} A</span></a>
 <a class="sourceLine" id="cb61-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
 <a class="sourceLine" id="cb61-4" title="4"><span class="co"> */</span></a>
@@ -1854,7 +1940,10 @@ X O X X
             <img src="https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg" title="meeting-room-ii" alt="alt text" />
         </p>
         <div class="sourceCode" id="cb63">
-            <pre  class="language-javascript" class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb63-1" title="1"><span class="co">/**</span></a>
+            <pre
+                class="language-javascript"
+                class="sourceCode javascript"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb63-1" title="1"><span class="co">/**</span></a>
 <a class="sourceLine" id="cb63-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[][]} intervals</span></a>
 <a class="sourceLine" id="cb63-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
 <a class="sourceLine" id="cb63-4" title="4"><span class="co"> */</span></a>

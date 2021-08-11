@@ -147,8 +147,8 @@ For every `node`:
 
     -   Definition for binary tree with next pointer.
     -   function TreeLinkNode(val) {
-    -         this.val = val;
-    -         this.left = this.right = this.next = null;
+    -           this.val = val;
+    -           this.left = this.right = this.next = null;
     -   }
         \*/
 
