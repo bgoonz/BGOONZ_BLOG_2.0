@@ -51,7 +51,7 @@
         "node-sass-utils": "^1.1.2",
         "react": "17.0.0",
         "react-dom": "^16.13.1",
-        "react-helmet": "5.2.1",
+        "react-helmet": "^5.2.1",
         "react-html-parser": "2.0.2",
         "react-instantsearch": "^6.12.0",
         "react-instantsearch-dom": "^6.12.0",
