@@ -1,6 +1,3 @@
-
-    export function isLoadingIndicatorEnabled() {
-    return `Cypress` in window
-          ? false
-          : true
-  }
+export function isLoadingIndicatorEnabled() {
+    return `Cypress` in window ? false : true;
+}
