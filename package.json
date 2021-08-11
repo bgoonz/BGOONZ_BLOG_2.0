@@ -2,7 +2,7 @@
   "name": "stackbit-libris-theme",
   "description": "Stackbit Libris Theme",
   "version": "0.0.1",
-   "license": "MIT",
+  "license": "MIT",
   "repository": "https://github.com/bgoonz/BGOONZ_BLOG_2.0.git",
   "author": "Bryan Guner",
   "scripts": {
