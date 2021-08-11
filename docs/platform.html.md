@@ -28,7 +28,7 @@ The first file, `admin/index.html`, is the entry point for the Netlify CMS admin
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Content Manager</title>
-    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"><link rel="stylesheet" href="./medium.css"></head>
     <body>
 
       <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>

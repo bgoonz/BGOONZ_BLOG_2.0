@@ -290,7 +290,7 @@ The following output from my bash shell corresponds to the directory:
     echo '      -o-border-radius: 10px;'
     echo '    }'
     echo '  </style>'
-      echo '</head>'
+      echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"><link rel="stylesheet" href="./medium.css"></head>'
       echo '<body>'
       echo ""
       # continue with the HTML stuff

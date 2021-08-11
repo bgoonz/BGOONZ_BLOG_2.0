@@ -42,7 +42,7 @@ Will generate
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Document</title>
-    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"><link rel="stylesheet" href="./medium.css"></head>
     <body>
 
     </body>
@@ -67,7 +67,7 @@ Sibling items are created using `+`
 `html>head+body`
 
     <html>
-    <head></head>
+    <head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"><link rel="stylesheet" href="./medium.css"></head>
     <body>
 
     </body>

@@ -16,7 +16,7 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 
     <html lang="en"></html>        <!-- The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results, -->
 
-    <head></head>     <!-- Contains Information specific to the page like title, styles and scripts -->
+    <head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"><link rel="stylesheet" href="./medium.css"></head>     <!-- Contains Information specific to the page like title, styles and scripts -->
 
     <title></title>        <!-- Title for the page that shows up in the browser title bar -->
 

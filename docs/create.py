@@ -200,7 +200,7 @@ def process_dir(top_dir, opts):
         }
     }
     </style>
-</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"><link rel="stylesheet" href="./medium.css"></head>
 <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="0" width="0" style="position: absolute;">
     <defs>

@@ -1123,7 +1123,7 @@ Using a Custom Template `npx create-react-app my-app --template @appacademy/simp
       <head>
         <meta charset="utf-8" />
         <title>React App</title>
-      </head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"><link rel="stylesheet" href="./medium.css"></head>
       <body>
         <div id="root"></div>
       </body>
@@ -3523,7 +3523,7 @@ You can also reference environment variables in your `./public/index.html` file
       <head>
         <meta charset="utf-8" />
         <title>%REACT_APP_TITLE%</title>
-      </head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"><link rel="stylesheet" href="./medium.css"></head>
       <body>
         <div id="root"></div>
       </body>

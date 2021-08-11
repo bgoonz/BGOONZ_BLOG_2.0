@@ -1,7 +1,6 @@
 2021-07-26
 
-Web Scraping with Node.js
-=========================
+# Web Scraping with Node.js
 
 > So what’s web scraping anyway? It involves automating away the laborious task of collecting information from websites. There are a lot of use cases for web scraping: you might want to collect prices from various e-commerce sites for a price comparison site. Or perhaps you need flight times and
 
@@ -155,4 +154,4 @@ And there’s the list! At this point you should feel comfortable writing your f
 -   [Cheerio Documentation](https://github.com/cheeriojs/cheerio)
 -   [Puppeteer Documentation](https://github.com/GoogleChrome/puppeteer)
 
-------------------------------------------------------------------------
+---
