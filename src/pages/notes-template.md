@@ -26,7 +26,7 @@ template: docs
 <br>
 <br>
 <br>
-
+`gist:bgoonz/ce54fdb1e5621b5966e146026995b974#syntax.text`
 <br>
 <br>
 <br>
