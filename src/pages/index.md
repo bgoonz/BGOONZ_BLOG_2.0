@@ -89,9 +89,12 @@ sections:
       image_alt: site search
       image_position: right
       content: >-
-          <iframe width="560" height="315"
+      <iframe width="560" height="315"
           src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
           title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>"
+          title="search" frameborder="0" allow="accelerometer;
           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       actions: []
