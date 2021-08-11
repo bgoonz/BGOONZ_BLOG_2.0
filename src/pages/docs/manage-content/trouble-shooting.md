@@ -10,9 +10,11 @@ seo:
   type: stackbit_page_meta
 template: docs
 ---
-## Lorem ipsum
+# 1.) 502 Bad Gateway
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Solution:
 
-- Lorem ipsum
-- dolor sit amet
+added
+
+```
+```
