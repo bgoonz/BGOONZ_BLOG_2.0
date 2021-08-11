@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = promiseReduce;
 
-var _isPromise = _interopRequireDefault(require("./isPromise.js"));
+var _isPromise = _interopRequireDefault(require("./isPromise"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

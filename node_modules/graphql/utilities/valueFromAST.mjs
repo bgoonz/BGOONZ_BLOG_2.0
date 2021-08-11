@@ -1,9 +1,10 @@
-import objectValues from "../polyfills/objectValues.mjs";
-import keyMap from "../jsutils/keyMap.mjs";
-import inspect from "../jsutils/inspect.mjs";
-import invariant from "../jsutils/invariant.mjs";
-import { Kind } from "../language/kinds.mjs";
-import { isLeafType, isInputObjectType, isListType, isNonNullType } from "../type/definition.mjs";
+import objectValues from '../polyfills/objectValues';
+import keyMap from '../jsutils/keyMap';
+import inspect from '../jsutils/inspect';
+import invariant from '../jsutils/invariant';
+import isInvalid from '../jsutils/isInvalid';
+import { Kind } from '../language/kinds';
+import { isScalarType, isEnumType, isInputObjectType, isListType, isNonNullType } from '../type/definition';
 /**
  * Produces a JavaScript value given a GraphQL Value AST.
  *
@@ -32,10 +33,23 @@ export function valueFromAST(valueNode, type, variables) {
     return;
   }
 
+  if (isNonNullType(type)) {
+    if (valueNode.kind === Kind.NULL) {
+      return; // Invalid: intentionally return no value.
+    }
+
+    return valueFromAST(valueNode, type.ofType, variables);
+  }
+
+  if (valueNode.kind === Kind.NULL) {
+    // This is explicitly returning the value null.
+    return null;
+  }
+
   if (valueNode.kind === Kind.VARIABLE) {
     var variableName = valueNode.name.value;
 
-    if (variables == null || variables[variableName] === undefined) {
+    if (!variables || isInvalid(variables[variableName])) {
       // No valid return value.
       return;
     }
@@ -50,19 +64,6 @@ export function valueFromAST(valueNode, type, variables) {
 
 
     return variableValue;
-  }
-
-  if (isNonNullType(type)) {
-    if (valueNode.kind === Kind.NULL) {
-      return; // Invalid: intentionally return no value.
-    }
-
-    return valueFromAST(valueNode, type.ofType, variables);
-  }
-
-  if (valueNode.kind === Kind.NULL) {
-    // This is explicitly returning the value null.
-    return null;
   }
 
   if (isListType(type)) {
@@ -85,7 +86,7 @@ export function valueFromAST(valueNode, type, variables) {
         } else {
           var itemValue = valueFromAST(itemNode, itemType, variables);
 
-          if (itemValue === undefined) {
+          if (isInvalid(itemValue)) {
             return; // Invalid: intentionally return no value.
           }
 
@@ -98,7 +99,7 @@ export function valueFromAST(valueNode, type, variables) {
 
     var coercedValue = valueFromAST(valueNode, itemType, variables);
 
-    if (coercedValue === undefined) {
+    if (isInvalid(coercedValue)) {
       return; // Invalid: intentionally return no value.
     }
 
@@ -131,7 +132,7 @@ export function valueFromAST(valueNode, type, variables) {
 
       var fieldValue = valueFromAST(fieldNode.value, field.type, variables);
 
-      if (fieldValue === undefined) {
+      if (isInvalid(fieldValue)) {
         return; // Invalid: intentionally return no value.
       }
 
@@ -139,11 +140,25 @@ export function valueFromAST(valueNode, type, variables) {
     }
 
     return coercedObj;
-  } // istanbul ignore else (See: 'https://github.com/graphql/graphql-js/issues/2618')
+  }
 
+  if (isEnumType(type)) {
+    if (valueNode.kind !== Kind.ENUM) {
+      return; // Invalid: intentionally return no value.
+    }
 
-  if (isLeafType(type)) {
-    // Scalars and Enums fulfill parsing a literal value via parseLiteral().
+    var enumValue = type.getValue(valueNode.value);
+
+    if (!enumValue) {
+      return; // Invalid: intentionally return no value.
+    }
+
+    return enumValue.value;
+  }
+
+  /* istanbul ignore else */
+  if (isScalarType(type)) {
+    // Scalars fulfill parsing a literal value via parseLiteral().
     // Invalid values represent a failure to parse correctly, in which case
     // no value is returned.
     var result;
@@ -154,18 +169,19 @@ export function valueFromAST(valueNode, type, variables) {
       return; // Invalid: intentionally return no value.
     }
 
-    if (result === undefined) {
+    if (isInvalid(result)) {
       return; // Invalid: intentionally return no value.
     }
 
     return result;
-  } // istanbul ignore next (Not reachable. All possible input types have been considered)
+  } // Not reachable. All possible input types have been considered.
 
 
-  false || invariant(0, 'Unexpected input type: ' + inspect(type));
+  /* istanbul ignore next */
+  invariant(false, 'Unexpected input type: ' + inspect(type));
 } // Returns true if the provided valueNode is a variable which is not defined
 // in the set of variables.
 
 function isMissingVariable(valueNode, variables) {
-  return valueNode.kind === Kind.VARIABLE && (variables == null || variables[valueNode.name.value] === undefined);
+  return valueNode.kind === Kind.VARIABLE && (!variables || isInvalid(variables[valueNode.name.value]));
 }

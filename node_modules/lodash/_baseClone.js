@@ -18,8 +18,7 @@ var Stack = require('./_Stack'),
     isMap = require('./isMap'),
     isObject = require('./isObject'),
     isSet = require('./isSet'),
-    keys = require('./keys'),
-    keysIn = require('./keysIn');
+    keys = require('./keys');
 
 /** Used to compose bitmasks for cloning. */
 var CLONE_DEEP_FLAG = 1,
@@ -141,10 +140,16 @@ function baseClone(value, bitmask, customizer, key, object, stack) {
     value.forEach(function(subValue) {
       result.add(baseClone(subValue, bitmask, customizer, subValue, value, stack));
     });
-  } else if (isMap(value)) {
+
+    return result;
+  }
+
+  if (isMap(value)) {
     value.forEach(function(subValue, key) {
       result.set(key, baseClone(subValue, bitmask, customizer, key, value, stack));
     });
+
+    return result;
   }
 
   var keysFunc = isFull

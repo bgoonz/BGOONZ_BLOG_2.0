@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getOperationRootType = getOperationRootType;
 
-var _GraphQLError = require("../error/GraphQLError.js");
+var _GraphQLError = require("../error/GraphQLError");
 
 /**
  * Extracts the root type of the operation from the schema.

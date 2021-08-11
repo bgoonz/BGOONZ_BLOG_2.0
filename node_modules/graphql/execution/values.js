@@ -7,27 +7,27 @@ exports.getVariableValues = getVariableValues;
 exports.getArgumentValues = getArgumentValues;
 exports.getDirectiveValues = getDirectiveValues;
 
-var _find = _interopRequireDefault(require("../polyfills/find.js"));
+var _find = _interopRequireDefault(require("../polyfills/find"));
 
-var _keyMap = _interopRequireDefault(require("../jsutils/keyMap.js"));
+var _keyMap = _interopRequireDefault(require("../jsutils/keyMap"));
 
-var _inspect = _interopRequireDefault(require("../jsutils/inspect.js"));
+var _inspect = _interopRequireDefault(require("../jsutils/inspect"));
 
-var _printPathArray = _interopRequireDefault(require("../jsutils/printPathArray.js"));
+var _printPathArray = _interopRequireDefault(require("../jsutils/printPathArray"));
 
-var _GraphQLError = require("../error/GraphQLError.js");
+var _GraphQLError = require("../error/GraphQLError");
 
-var _kinds = require("../language/kinds.js");
+var _kinds = require("../language/kinds");
 
-var _printer = require("../language/printer.js");
+var _printer = require("../language/printer");
 
-var _definition = require("../type/definition.js");
+var _definition = require("../type/definition");
 
-var _typeFromAST = require("../utilities/typeFromAST.js");
+var _typeFromAST = require("../utilities/typeFromAST");
 
-var _valueFromAST = require("../utilities/valueFromAST.js");
+var _valueFromAST = require("../utilities/valueFromAST");
 
-var _coerceInputValue = require("../utilities/coerceInputValue.js");
+var _coerceInputValue = require("../utilities/coerceInputValue");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39,12 +39,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * Note: The returned value is a plain Object with a prototype, since it is
  * exposed to user code. Care should be taken to not pull values from the
  * Object prototype.
- *
- * @internal
  */
 function getVariableValues(schema, varDefNodes, inputs, options) {
+  var maxErrors = options && options.maxErrors;
   var errors = [];
-  var maxErrors = options === null || options === void 0 ? void 0 : options.maxErrors;
 
   try {
     var coerced = coerceVariableValues(schema, varDefNodes, inputs, function (error) {
@@ -132,18 +130,12 @@ function coerceVariableValues(schema, varDefNodes, inputs, onError) {
  * Note: The returned value is a plain Object with a prototype, since it is
  * exposed to user code. Care should be taken to not pull values from the
  * Object prototype.
- *
- * @internal
  */
 
 
 function getArgumentValues(def, node, variableValues) {
-  var _node$arguments;
-
-  var coercedValues = {}; // istanbul ignore next (See: 'https://github.com/graphql/graphql-js/issues/2203')
-
-  var argumentNodes = (_node$arguments = node.arguments) !== null && _node$arguments !== void 0 ? _node$arguments : [];
-  var argNodeMap = (0, _keyMap.default)(argumentNodes, function (arg) {
+  var coercedValues = {};
+  var argNodeMap = (0, _keyMap.default)(node.arguments || [], function (arg) {
     return arg.name.value;
   });
 
@@ -189,7 +181,7 @@ function getArgumentValues(def, node, variableValues) {
     var coercedValue = (0, _valueFromAST.valueFromAST)(valueNode, argType, variableValues);
 
     if (coercedValue === undefined) {
-      // Note: ValuesOfCorrectTypeRule validation should catch this before
+      // Note: ValuesOfCorrectType validation should catch this before
       // execution. This is a runtime check to ensure execution does not
       // continue with an invalid argument value.
       throw new _GraphQLError.GraphQLError("Argument \"".concat(name, "\" has invalid value ").concat((0, _printer.print)(valueNode), "."), valueNode);

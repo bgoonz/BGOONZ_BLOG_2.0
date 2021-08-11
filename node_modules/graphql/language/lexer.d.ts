@@ -1,6 +1,6 @@
+import { syntaxError } from '../error';
 import { Token } from './ast';
 import { Source } from './source';
-import { TokenKindEnum } from './tokenKind';
 
 /**
  * Given a Source object, this returns a Lexer for that source.
@@ -10,8 +10,17 @@ import { TokenKindEnum } from './tokenKind';
  * EOF, after which the lexer will repeatedly return the same EOF token
  * whenever called.
  */
-export class Lexer {
+export function createLexer<TOptions>(
+  source: Source,
+  options: TOptions,
+): Lexer<TOptions>;
+
+/**
+ * The return type of createLexer.
+ */
+export interface Lexer<TOptions> {
   source: Source;
+  options: TOptions;
 
   /**
    * The previously focused non-ignored token.
@@ -33,8 +42,6 @@ export class Lexer {
    */
   lineStart: number;
 
-  constructor(source: Source);
-
   /**
    * Advances the token stream to the next non-ignored token.
    */
@@ -42,7 +49,7 @@ export class Lexer {
 
   /**
    * Looks ahead and returns the next non-ignored token, but does not change
-   * the state of Lexer.
+   * the Lexer's state.
    */
   lookahead(): Token;
 }
@@ -51,8 +58,3 @@ export class Lexer {
  * @internal
  */
 export function isPunctuatorToken(token: Token): boolean;
-
-/**
- * @internal
- */
-export function isPunctuatorTokenKind(kind: TokenKindEnum): boolean;

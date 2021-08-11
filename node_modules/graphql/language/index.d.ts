@@ -5,12 +5,13 @@ export { printLocation, printSourceLocation } from './printLocation';
 
 export { Kind, KindEnum } from './kinds';
 export { TokenKind, TokenKindEnum } from './tokenKind';
-export { Lexer } from './lexer';
+export { createLexer, Lexer } from './lexer';
 export { parse, parseValue, parseType, ParseOptions } from './parser';
 export { print } from './printer';
 export {
   visit,
   visitInParallel,
+  visitWithTypeInfo,
   getVisitFn,
   BREAK,
   ASTVisitor,

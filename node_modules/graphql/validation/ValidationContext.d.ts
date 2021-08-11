@@ -1,5 +1,4 @@
-import { Maybe } from '../jsutils/Maybe';
-
+import Maybe from '../tsutils/Maybe';
 import { GraphQLError } from '../error/GraphQLError';
 import { ASTVisitor } from '../language/visitor';
 import {
@@ -18,16 +17,15 @@ import {
   GraphQLCompositeType,
   GraphQLField,
   GraphQLArgument,
-  GraphQLEnumValue,
 } from '../type/definition';
 import { TypeInfo } from '../utilities/TypeInfo';
 
 type NodeWithSelectionSet = OperationDefinitionNode | FragmentDefinitionNode;
-interface VariableUsage {
+type VariableUsage = {
   readonly node: VariableNode;
   readonly type: Maybe<GraphQLInputType>;
   readonly defaultValue: Maybe<any>;
-}
+};
 
 /**
  * An instance of this class is passed as the "this" context to all validators,
@@ -35,9 +33,11 @@ interface VariableUsage {
  * validation rule.
  */
 export class ASTValidationContext {
-  constructor(ast: DocumentNode, onError: (err: GraphQLError) => void);
+  constructor(ast: DocumentNode);
 
   reportError(error: GraphQLError): undefined;
+
+  getErrors(): ReadonlyArray<GraphQLError>;
 
   getDocument(): DocumentNode;
 
@@ -54,7 +54,7 @@ export class SDLValidationContext extends ASTValidationContext {
   constructor(
     ast: DocumentNode,
     schema: Maybe<GraphQLSchema>,
-    onError: (err: GraphQLError) => void,
+    onError?: (err: GraphQLError) => void,
   );
 
   getSchema(): Maybe<GraphQLSchema>;
@@ -67,7 +67,7 @@ export class ValidationContext extends ASTValidationContext {
     schema: GraphQLSchema,
     ast: DocumentNode,
     typeInfo: TypeInfo,
-    onError: (err: GraphQLError) => void,
+    onError?: (err: GraphQLError) => void,
   );
 
   getSchema(): GraphQLSchema;
@@ -91,8 +91,6 @@ export class ValidationContext extends ASTValidationContext {
   getDirective(): Maybe<GraphQLDirective>;
 
   getArgument(): Maybe<GraphQLArgument>;
-
-  getEnumValue(): Maybe<GraphQLEnumValue>;
 }
 
 export type ValidationRule = (context: ValidationContext) => ASTVisitor;

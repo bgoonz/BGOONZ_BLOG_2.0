@@ -1,18 +1,15 @@
+import flatMap from '../polyfills/flatMap';
+
 /**
  * Provided a collection of ASTs, presumably each from different files,
  * concatenate the ASTs together into batched AST, useful for validating many
  * GraphQL source files which together represent one conceptual application.
  */
-export function concatAST(documents) {
-  var definitions = [];
-
-  for (var _i2 = 0; _i2 < documents.length; _i2++) {
-    var doc = documents[_i2];
-    definitions = definitions.concat(doc.definitions);
-  }
-
+export function concatAST(asts) {
   return {
     kind: 'Document',
-    definitions: definitions
+    definitions: flatMap(asts, function (ast) {
+      return ast.definitions;
+    })
   };
 }

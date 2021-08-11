@@ -1,7 +1,9 @@
-import { Maybe } from '../jsutils/Maybe';
-
+import Maybe from '../tsutils/Maybe';
 import { DocumentNode } from '../language/ast';
-import { ExecutionResult } from '../execution/execute';
+import {
+  ExecutionResult,
+  ExecutionResultDataDefault,
+} from '../execution/execute';
 import { GraphQLSchema } from '../type/schema';
 import { GraphQLFieldResolver } from '../type/definition';
 
@@ -36,11 +38,13 @@ export interface SubscriptionArgs {
  *
  * Accepts either an object with named arguments, or individual arguments.
  */
-export function subscribe(
+export function subscribe<TData = ExecutionResultDataDefault>(
   args: SubscriptionArgs,
-): Promise<AsyncIterableIterator<ExecutionResult> | ExecutionResult>;
+): Promise<
+  AsyncIterableIterator<ExecutionResult<TData>> | ExecutionResult<TData>
+>;
 
-export function subscribe(
+export function subscribe<TData = ExecutionResultDataDefault>(
   schema: GraphQLSchema,
   document: DocumentNode,
   rootValue?: any,
@@ -49,7 +53,9 @@ export function subscribe(
   operationName?: Maybe<string>,
   fieldResolver?: Maybe<GraphQLFieldResolver<any, any>>,
   subscribeFieldResolver?: Maybe<GraphQLFieldResolver<any, any>>,
-): Promise<AsyncIterableIterator<ExecutionResult> | ExecutionResult>;
+): Promise<
+  AsyncIterableIterator<ExecutionResult<TData>> | ExecutionResult<TData>
+>;
 
 /**
  * Implements the "CreateSourceEventStream" algorithm described in the
@@ -69,7 +75,7 @@ export function subscribe(
  * or otherwise separating these two steps. For more on this, see the
  * "Supporting Subscriptions at Scale" information in the GraphQL specification.
  */
-export function createSourceEventStream(
+export function createSourceEventStream<TData = ExecutionResultDataDefault>(
   schema: GraphQLSchema,
   document: DocumentNode,
   rootValue?: any,
@@ -77,4 +83,4 @@ export function createSourceEventStream(
   variableValues?: { [key: string]: any },
   operationName?: Maybe<string>,
   fieldResolver?: Maybe<GraphQLFieldResolver<any, any>>,
-): Promise<AsyncIterable<any> | ExecutionResult>;
+): Promise<AsyncIterable<any> | ExecutionResult<TData>>;

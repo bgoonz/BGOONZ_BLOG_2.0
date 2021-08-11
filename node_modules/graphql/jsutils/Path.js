@@ -9,11 +9,10 @@ exports.pathToArray = pathToArray;
 /**
  * Given a Path and a key, return a new Path containing the new key.
  */
-function addPath(prev, key, typename) {
+function addPath(prev, key) {
   return {
     prev: prev,
-    key: key,
-    typename: typename
+    key: key
   };
 }
 /**

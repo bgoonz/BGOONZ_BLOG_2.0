@@ -1,5 +1,4 @@
-import { Maybe } from '../jsutils/Maybe';
-
+import Maybe from '../tsutils/Maybe';
 import { ValueNode } from '../language/ast';
 import { GraphQLInputType } from '../type/definition';
 

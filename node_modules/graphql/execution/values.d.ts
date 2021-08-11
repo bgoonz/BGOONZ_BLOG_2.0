@@ -1,5 +1,4 @@
-import { Maybe } from '../jsutils/Maybe';
-
+import Maybe from '../tsutils/Maybe';
 import { GraphQLError } from '../error/GraphQLError';
 import {
   FieldNode,
@@ -9,7 +8,11 @@ import {
 
 import { GraphQLDirective } from '../type/directives';
 import { GraphQLSchema } from '../type/schema';
-import { GraphQLField } from '../type/definition';
+import {
+  GraphQLInputType,
+  GraphQLField,
+  GraphQLArgument,
+} from '../type/definition';
 
 type CoercedVariableValues =
   | { errors: ReadonlyArray<GraphQLError>; coerced?: never }
@@ -26,7 +29,7 @@ type CoercedVariableValues =
  */
 export function getVariableValues(
   schema: GraphQLSchema,
-  varDefNodes: ReadonlyArray<VariableDefinitionNode>,
+  varDefNodes: VariableDefinitionNode[],
   inputs: { [key: string]: any },
   options?: { maxErrors?: number },
 ): CoercedVariableValues;

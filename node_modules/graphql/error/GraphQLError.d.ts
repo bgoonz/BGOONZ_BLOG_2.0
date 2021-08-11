@@ -1,8 +1,8 @@
-import { Maybe } from '../jsutils/Maybe';
+import Maybe from '../tsutils/Maybe';
 
 import { ASTNode } from '../language/ast';
 import { Source } from '../language/source';
-import { SourceLocation } from '../language/location';
+import { SourceLocation, getLocation } from '../language/location';
 
 /**
  * A GraphQLError describes an Error found during the parse, validate, or
@@ -13,7 +13,7 @@ import { SourceLocation } from '../language/location';
 export class GraphQLError extends Error {
   constructor(
     message: string,
-    nodes?: Maybe<ReadonlyArray<ASTNode> | ASTNode>,
+    nodes?: ReadonlyArray<ASTNode> | ASTNode | undefined,
     source?: Maybe<Source>,
     positions?: Maybe<ReadonlyArray<number>>,
     path?: Maybe<ReadonlyArray<string | number>>,

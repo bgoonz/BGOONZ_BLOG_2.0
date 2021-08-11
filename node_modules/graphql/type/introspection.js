@@ -6,21 +6,21 @@ Object.defineProperty(exports, "__esModule", {
 exports.isIntrospectionType = isIntrospectionType;
 exports.introspectionTypes = exports.TypeNameMetaFieldDef = exports.TypeMetaFieldDef = exports.SchemaMetaFieldDef = exports.__TypeKind = exports.TypeKind = exports.__EnumValue = exports.__InputValue = exports.__Field = exports.__Type = exports.__DirectiveLocation = exports.__Directive = exports.__Schema = void 0;
 
-var _objectValues = _interopRequireDefault(require("../polyfills/objectValues.js"));
+var _objectValues = _interopRequireDefault(require("../polyfills/objectValues"));
 
-var _inspect = _interopRequireDefault(require("../jsutils/inspect.js"));
+var _inspect = _interopRequireDefault(require("../jsutils/inspect"));
 
-var _invariant = _interopRequireDefault(require("../jsutils/invariant.js"));
+var _invariant = _interopRequireDefault(require("../jsutils/invariant"));
 
-var _printer = require("../language/printer.js");
+var _printer = require("../language/printer");
 
-var _directiveLocation = require("../language/directiveLocation.js");
+var _directiveLocation = require("../language/directiveLocation");
 
-var _astFromValue = require("../utilities/astFromValue.js");
+var _astFromValue = require("../utilities/astFromValue");
 
-var _scalars = require("./scalars.js");
+var _scalars = require("./scalars");
 
-var _definition = require("./definition.js");
+var _definition = require("./definition");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29,22 +29,16 @@ var __Schema = new _definition.GraphQLObjectType({
   description: 'A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.',
   fields: function fields() {
     return {
-      description: {
-        type: _scalars.GraphQLString,
-        resolve: function resolve(schema) {
-          return schema.description;
-        }
-      },
       types: {
         description: 'A list of all types supported by this server.',
-        type: new _definition.GraphQLNonNull(new _definition.GraphQLList(new _definition.GraphQLNonNull(__Type))),
+        type: (0, _definition.GraphQLNonNull)((0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__Type))),
         resolve: function resolve(schema) {
           return (0, _objectValues.default)(schema.getTypeMap());
         }
       },
       queryType: {
         description: 'The type that query operations will be rooted at.',
-        type: new _definition.GraphQLNonNull(__Type),
+        type: (0, _definition.GraphQLNonNull)(__Type),
         resolve: function resolve(schema) {
           return schema.getQueryType();
         }
@@ -65,7 +59,7 @@ var __Schema = new _definition.GraphQLObjectType({
       },
       directives: {
         description: 'A list of all directives supported by this server.',
-        type: new _definition.GraphQLNonNull(new _definition.GraphQLList(new _definition.GraphQLNonNull(__Directive))),
+        type: (0, _definition.GraphQLNonNull)((0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__Directive))),
         resolve: function resolve(schema) {
           return schema.getDirectives();
         }
@@ -82,31 +76,25 @@ var __Directive = new _definition.GraphQLObjectType({
   fields: function fields() {
     return {
       name: {
-        type: new _definition.GraphQLNonNull(_scalars.GraphQLString),
-        resolve: function resolve(directive) {
-          return directive.name;
+        type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLString),
+        resolve: function resolve(obj) {
+          return obj.name;
         }
       },
       description: {
         type: _scalars.GraphQLString,
-        resolve: function resolve(directive) {
-          return directive.description;
-        }
-      },
-      isRepeatable: {
-        type: new _definition.GraphQLNonNull(_scalars.GraphQLBoolean),
-        resolve: function resolve(directive) {
-          return directive.isRepeatable;
+        resolve: function resolve(obj) {
+          return obj.description;
         }
       },
       locations: {
-        type: new _definition.GraphQLNonNull(new _definition.GraphQLList(new _definition.GraphQLNonNull(__DirectiveLocation))),
-        resolve: function resolve(directive) {
-          return directive.locations;
+        type: (0, _definition.GraphQLNonNull)((0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__DirectiveLocation))),
+        resolve: function resolve(obj) {
+          return obj.locations;
         }
       },
       args: {
-        type: new _definition.GraphQLNonNull(new _definition.GraphQLList(new _definition.GraphQLNonNull(__InputValue))),
+        type: (0, _definition.GraphQLNonNull)((0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__InputValue))),
         resolve: function resolve(directive) {
           return directive.args;
         }
@@ -204,69 +192,49 @@ exports.__DirectiveLocation = __DirectiveLocation;
 
 var __Type = new _definition.GraphQLObjectType({
   name: '__Type',
-  description: 'The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.\n\nDepending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name, description and optional `specifiedByUrl`, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.',
+  description: 'The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.\n\nDepending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.',
   fields: function fields() {
     return {
       kind: {
-        type: new _definition.GraphQLNonNull(__TypeKind),
+        type: (0, _definition.GraphQLNonNull)(__TypeKind),
         resolve: function resolve(type) {
           if ((0, _definition.isScalarType)(type)) {
             return TypeKind.SCALAR;
-          }
-
-          if ((0, _definition.isObjectType)(type)) {
+          } else if ((0, _definition.isObjectType)(type)) {
             return TypeKind.OBJECT;
-          }
-
-          if ((0, _definition.isInterfaceType)(type)) {
+          } else if ((0, _definition.isInterfaceType)(type)) {
             return TypeKind.INTERFACE;
-          }
-
-          if ((0, _definition.isUnionType)(type)) {
+          } else if ((0, _definition.isUnionType)(type)) {
             return TypeKind.UNION;
-          }
-
-          if ((0, _definition.isEnumType)(type)) {
+          } else if ((0, _definition.isEnumType)(type)) {
             return TypeKind.ENUM;
-          }
-
-          if ((0, _definition.isInputObjectType)(type)) {
+          } else if ((0, _definition.isInputObjectType)(type)) {
             return TypeKind.INPUT_OBJECT;
-          }
-
-          if ((0, _definition.isListType)(type)) {
+          } else if ((0, _definition.isListType)(type)) {
             return TypeKind.LIST;
-          } // istanbul ignore else (See: 'https://github.com/graphql/graphql-js/issues/2618')
-
-
-          if ((0, _definition.isNonNullType)(type)) {
+          } else if ((0, _definition.isNonNullType)(type)) {
             return TypeKind.NON_NULL;
-          } // istanbul ignore next (Not reachable. All possible types have been considered)
+          } // Not reachable. All possible types have been considered.
 
 
-          false || (0, _invariant.default)(0, "Unexpected type: \"".concat((0, _inspect.default)(type), "\"."));
+          /* istanbul ignore next */
+          (0, _invariant.default)(false, "Unexpected type: \"".concat((0, _inspect.default)(type), "\"."));
         }
       },
       name: {
         type: _scalars.GraphQLString,
-        resolve: function resolve(type) {
-          return type.name !== undefined ? type.name : undefined;
+        resolve: function resolve(obj) {
+          return obj.name !== undefined ? obj.name : undefined;
         }
       },
       description: {
         type: _scalars.GraphQLString,
-        resolve: function resolve(type) {
-          return type.description !== undefined ? type.description : undefined;
-        }
-      },
-      specifiedByUrl: {
-        type: _scalars.GraphQLString,
         resolve: function resolve(obj) {
-          return obj.specifiedByUrl !== undefined ? obj.specifiedByUrl : undefined;
+          return obj.description !== undefined ? obj.description : undefined;
         }
       },
       fields: {
-        type: new _definition.GraphQLList(new _definition.GraphQLNonNull(__Field)),
+        type: (0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__Field)),
         args: {
           includeDeprecated: {
             type: _scalars.GraphQLBoolean,
@@ -278,23 +246,30 @@ var __Type = new _definition.GraphQLObjectType({
 
           if ((0, _definition.isObjectType)(type) || (0, _definition.isInterfaceType)(type)) {
             var fields = (0, _objectValues.default)(type.getFields());
-            return includeDeprecated ? fields : fields.filter(function (field) {
-              return field.deprecationReason == null;
-            });
+
+            if (!includeDeprecated) {
+              fields = fields.filter(function (field) {
+                return !field.deprecationReason;
+              });
+            }
+
+            return fields;
           }
+
+          return null;
         }
       },
       interfaces: {
-        type: new _definition.GraphQLList(new _definition.GraphQLNonNull(__Type)),
+        type: (0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__Type)),
         resolve: function resolve(type) {
-          if ((0, _definition.isObjectType)(type) || (0, _definition.isInterfaceType)(type)) {
+          if ((0, _definition.isObjectType)(type)) {
             return type.getInterfaces();
           }
         }
       },
       possibleTypes: {
-        type: new _definition.GraphQLList(new _definition.GraphQLNonNull(__Type)),
-        resolve: function resolve(type, _args, _context, _ref2) {
+        type: (0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__Type)),
+        resolve: function resolve(type, args, context, _ref2) {
           var schema = _ref2.schema;
 
           if ((0, _definition.isAbstractType)(type)) {
@@ -303,7 +278,7 @@ var __Type = new _definition.GraphQLObjectType({
         }
       },
       enumValues: {
-        type: new _definition.GraphQLList(new _definition.GraphQLNonNull(__EnumValue)),
+        type: (0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__EnumValue)),
         args: {
           includeDeprecated: {
             type: _scalars.GraphQLBoolean,
@@ -315,35 +290,29 @@ var __Type = new _definition.GraphQLObjectType({
 
           if ((0, _definition.isEnumType)(type)) {
             var values = type.getValues();
-            return includeDeprecated ? values : values.filter(function (field) {
-              return field.deprecationReason == null;
-            });
+
+            if (!includeDeprecated) {
+              values = values.filter(function (value) {
+                return !value.deprecationReason;
+              });
+            }
+
+            return values;
           }
         }
       },
       inputFields: {
-        type: new _definition.GraphQLList(new _definition.GraphQLNonNull(__InputValue)),
-        args: {
-          includeDeprecated: {
-            type: _scalars.GraphQLBoolean,
-            defaultValue: false
-          }
-        },
-        resolve: function resolve(type, _ref4) {
-          var includeDeprecated = _ref4.includeDeprecated;
-
+        type: (0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__InputValue)),
+        resolve: function resolve(type) {
           if ((0, _definition.isInputObjectType)(type)) {
-            var values = (0, _objectValues.default)(type.getFields());
-            return includeDeprecated ? values : values.filter(function (field) {
-              return field.deprecationReason == null;
-            });
+            return (0, _objectValues.default)(type.getFields());
           }
         }
       },
       ofType: {
         type: __Type,
-        resolve: function resolve(type) {
-          return type.ofType !== undefined ? type.ofType : undefined;
+        resolve: function resolve(obj) {
+          return obj.ofType !== undefined ? obj.ofType : undefined;
         }
       }
     };
@@ -358,48 +327,39 @@ var __Field = new _definition.GraphQLObjectType({
   fields: function fields() {
     return {
       name: {
-        type: new _definition.GraphQLNonNull(_scalars.GraphQLString),
-        resolve: function resolve(field) {
-          return field.name;
+        type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLString),
+        resolve: function resolve(obj) {
+          return obj.name;
         }
       },
       description: {
         type: _scalars.GraphQLString,
-        resolve: function resolve(field) {
-          return field.description;
+        resolve: function resolve(obj) {
+          return obj.description;
         }
       },
       args: {
-        type: new _definition.GraphQLNonNull(new _definition.GraphQLList(new _definition.GraphQLNonNull(__InputValue))),
-        args: {
-          includeDeprecated: {
-            type: _scalars.GraphQLBoolean,
-            defaultValue: false
-          }
-        },
-        resolve: function resolve(field, _ref5) {
-          var includeDeprecated = _ref5.includeDeprecated;
-          return includeDeprecated ? field.args : field.args.filter(function (arg) {
-            return arg.deprecationReason == null;
-          });
+        type: (0, _definition.GraphQLNonNull)((0, _definition.GraphQLList)((0, _definition.GraphQLNonNull)(__InputValue))),
+        resolve: function resolve(field) {
+          return field.args;
         }
       },
       type: {
-        type: new _definition.GraphQLNonNull(__Type),
-        resolve: function resolve(field) {
-          return field.type;
+        type: (0, _definition.GraphQLNonNull)(__Type),
+        resolve: function resolve(obj) {
+          return obj.type;
         }
       },
       isDeprecated: {
-        type: new _definition.GraphQLNonNull(_scalars.GraphQLBoolean),
-        resolve: function resolve(field) {
-          return field.deprecationReason != null;
+        type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLBoolean),
+        resolve: function resolve(obj) {
+          return obj.isDeprecated;
         }
       },
       deprecationReason: {
         type: _scalars.GraphQLString,
-        resolve: function resolve(field) {
-          return field.deprecationReason;
+        resolve: function resolve(obj) {
+          return obj.deprecationReason;
         }
       }
     };
@@ -414,43 +374,29 @@ var __InputValue = new _definition.GraphQLObjectType({
   fields: function fields() {
     return {
       name: {
-        type: new _definition.GraphQLNonNull(_scalars.GraphQLString),
-        resolve: function resolve(inputValue) {
-          return inputValue.name;
+        type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLString),
+        resolve: function resolve(obj) {
+          return obj.name;
         }
       },
       description: {
         type: _scalars.GraphQLString,
-        resolve: function resolve(inputValue) {
-          return inputValue.description;
+        resolve: function resolve(obj) {
+          return obj.description;
         }
       },
       type: {
-        type: new _definition.GraphQLNonNull(__Type),
-        resolve: function resolve(inputValue) {
-          return inputValue.type;
+        type: (0, _definition.GraphQLNonNull)(__Type),
+        resolve: function resolve(obj) {
+          return obj.type;
         }
       },
       defaultValue: {
         type: _scalars.GraphQLString,
         description: 'A GraphQL-formatted string representing the default value for this input value.',
-        resolve: function resolve(inputValue) {
-          var type = inputValue.type,
-              defaultValue = inputValue.defaultValue;
-          var valueAST = (0, _astFromValue.astFromValue)(defaultValue, type);
+        resolve: function resolve(inputVal) {
+          var valueAST = (0, _astFromValue.astFromValue)(inputVal.defaultValue, inputVal.type);
           return valueAST ? (0, _printer.print)(valueAST) : null;
-        }
-      },
-      isDeprecated: {
-        type: new _definition.GraphQLNonNull(_scalars.GraphQLBoolean),
-        resolve: function resolve(field) {
-          return field.deprecationReason != null;
-        }
-      },
-      deprecationReason: {
-        type: _scalars.GraphQLString,
-        resolve: function resolve(obj) {
-          return obj.deprecationReason;
         }
       }
     };
@@ -465,27 +411,27 @@ var __EnumValue = new _definition.GraphQLObjectType({
   fields: function fields() {
     return {
       name: {
-        type: new _definition.GraphQLNonNull(_scalars.GraphQLString),
-        resolve: function resolve(enumValue) {
-          return enumValue.name;
+        type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLString),
+        resolve: function resolve(obj) {
+          return obj.name;
         }
       },
       description: {
         type: _scalars.GraphQLString,
-        resolve: function resolve(enumValue) {
-          return enumValue.description;
+        resolve: function resolve(obj) {
+          return obj.description;
         }
       },
       isDeprecated: {
-        type: new _definition.GraphQLNonNull(_scalars.GraphQLBoolean),
-        resolve: function resolve(enumValue) {
-          return enumValue.deprecationReason != null;
+        type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLBoolean),
+        resolve: function resolve(obj) {
+          return obj.isDeprecated;
         }
       },
       deprecationReason: {
         type: _scalars.GraphQLString,
-        resolve: function resolve(enumValue) {
-          return enumValue.deprecationReason;
+        resolve: function resolve(obj) {
+          return obj.deprecationReason;
         }
       }
     };
@@ -519,7 +465,7 @@ var __TypeKind = new _definition.GraphQLEnumType({
     },
     INTERFACE: {
       value: TypeKind.INTERFACE,
-      description: 'Indicates this type is an interface. `fields`, `interfaces`, and `possibleTypes` are valid fields.'
+      description: 'Indicates this type is an interface. `fields` and `possibleTypes` are valid fields.'
     },
     UNION: {
       value: TypeKind.UNION,
@@ -552,14 +498,13 @@ var __TypeKind = new _definition.GraphQLEnumType({
 exports.__TypeKind = __TypeKind;
 var SchemaMetaFieldDef = {
   name: '__schema',
-  type: new _definition.GraphQLNonNull(__Schema),
+  type: (0, _definition.GraphQLNonNull)(__Schema),
   description: 'Access the current type schema of this server.',
   args: [],
-  resolve: function resolve(_source, _args, _context, _ref6) {
-    var schema = _ref6.schema;
+  resolve: function resolve(source, args, context, _ref4) {
+    var schema = _ref4.schema;
     return schema;
   },
-  isDeprecated: false,
   deprecationReason: undefined,
   extensions: undefined,
   astNode: undefined
@@ -572,18 +517,16 @@ var TypeMetaFieldDef = {
   args: [{
     name: 'name',
     description: undefined,
-    type: new _definition.GraphQLNonNull(_scalars.GraphQLString),
+    type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLString),
     defaultValue: undefined,
-    deprecationReason: undefined,
     extensions: undefined,
     astNode: undefined
   }],
-  resolve: function resolve(_source, _ref7, _context, _ref8) {
-    var name = _ref7.name;
-    var schema = _ref8.schema;
+  resolve: function resolve(source, _ref5, context, _ref6) {
+    var name = _ref5.name;
+    var schema = _ref6.schema;
     return schema.getType(name);
   },
-  isDeprecated: false,
   deprecationReason: undefined,
   extensions: undefined,
   astNode: undefined
@@ -591,14 +534,13 @@ var TypeMetaFieldDef = {
 exports.TypeMetaFieldDef = TypeMetaFieldDef;
 var TypeNameMetaFieldDef = {
   name: '__typename',
-  type: new _definition.GraphQLNonNull(_scalars.GraphQLString),
+  type: (0, _definition.GraphQLNonNull)(_scalars.GraphQLString),
   description: 'The name of the current Object type at runtime.',
   args: [],
-  resolve: function resolve(_source, _args, _context, _ref9) {
-    var parentType = _ref9.parentType;
+  resolve: function resolve(source, args, context, _ref7) {
+    var parentType = _ref7.parentType;
     return parentType.name;
   },
-  isDeprecated: false,
   deprecationReason: undefined,
   extensions: undefined,
   astNode: undefined
@@ -608,8 +550,8 @@ var introspectionTypes = Object.freeze([__Schema, __Directive, __DirectiveLocati
 exports.introspectionTypes = introspectionTypes;
 
 function isIntrospectionType(type) {
-  return introspectionTypes.some(function (_ref10) {
-    var name = _ref10.name;
+  return (0, _definition.isNamedType)(type) && introspectionTypes.some(function (_ref8) {
+    var name = _ref8.name;
     return type.name === name;
   });
 }

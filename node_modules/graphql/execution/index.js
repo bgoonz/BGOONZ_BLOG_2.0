@@ -15,12 +15,6 @@ Object.defineProperty(exports, "execute", {
     return _execute.execute;
   }
 });
-Object.defineProperty(exports, "executeSync", {
-  enumerable: true,
-  get: function get() {
-    return _execute.executeSync;
-  }
-});
 Object.defineProperty(exports, "defaultFieldResolver", {
   enumerable: true,
   get: function get() {
@@ -40,8 +34,8 @@ Object.defineProperty(exports, "getDirectiveValues", {
   }
 });
 
-var _Path = require("../jsutils/Path.js");
+var _Path = require("../jsutils/Path");
 
-var _execute = require("./execute.js");
+var _execute = require("./execute");
 
-var _values = require("./values.js");
+var _values = require("./values");

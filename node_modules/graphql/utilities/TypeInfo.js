@@ -3,22 +3,17 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.visitWithTypeInfo = visitWithTypeInfo;
 exports.TypeInfo = void 0;
 
-var _find = _interopRequireDefault(require("../polyfills/find.js"));
+var _find = _interopRequireDefault(require("../polyfills/find"));
 
-var _kinds = require("../language/kinds.js");
+var _kinds = require("../language/kinds");
 
-var _ast = require("../language/ast.js");
+var _definition = require("../type/definition");
 
-var _visitor = require("../language/visitor.js");
+var _introspection = require("../type/introspection");
 
-var _definition = require("../type/definition.js");
-
-var _introspection = require("../type/introspection.js");
-
-var _typeFromAST = require("./typeFromAST.js");
+var _typeFromAST = require("./typeFromAST");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27,9 +22,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * of the current field and type definitions at any point in a GraphQL document
  * AST during a recursive descent by calling `enter(node)` and `leave(node)`.
  */
-var TypeInfo = /*#__PURE__*/function () {
+var TypeInfo =
+/*#__PURE__*/
+function () {
   function TypeInfo(schema, // NOTE: this experimental optional second parameter is only needed in order
-  // to support non-spec-compliant code bases. You should never need to use it.
+  // to support non-spec-compliant codebases. You should never need to use it.
   // It may disappear in the future.
   getFieldDefFn, // Initial type may be provided in rare cases to facilitate traversals
   // beginning somewhere other than documents.
@@ -43,7 +40,7 @@ var TypeInfo = /*#__PURE__*/function () {
     this._directive = null;
     this._argument = null;
     this._enumValue = null;
-    this._getFieldDef = getFieldDefFn !== null && getFieldDefFn !== void 0 ? getFieldDefFn : getFieldDef;
+    this._getFieldDef = getFieldDefFn || getFieldDef;
 
     if (initialType) {
       if ((0, _definition.isInputType)(initialType)) {
@@ -155,18 +152,12 @@ var TypeInfo = /*#__PURE__*/function () {
         {
           var type;
 
-          switch (node.operation) {
-            case 'query':
-              type = schema.getQueryType();
-              break;
-
-            case 'mutation':
-              type = schema.getMutationType();
-              break;
-
-            case 'subscription':
-              type = schema.getSubscriptionType();
-              break;
+          if (node.operation === 'query') {
+            type = schema.getQueryType();
+          } else if (node.operation === 'mutation') {
+            type = schema.getMutationType();
+          } else if (node.operation === 'subscription') {
+            type = schema.getSubscriptionType();
           }
 
           this._typeStack.push((0, _definition.isObjectType)(type) ? type : undefined);
@@ -196,11 +187,9 @@ var TypeInfo = /*#__PURE__*/function () {
 
       case _kinds.Kind.ARGUMENT:
         {
-          var _this$getDirective;
-
           var argDef;
           var argType;
-          var fieldOrDirective = (_this$getDirective = this.getDirective()) !== null && _this$getDirective !== void 0 ? _this$getDirective : this.getFieldDef();
+          var fieldOrDirective = this.getDirective() || this.getFieldDef();
 
           if (fieldOrDirective) {
             argDef = (0, _find.default)(fieldOrDirective.args, function (arg) {
@@ -351,47 +340,4 @@ function getFieldDef(schema, parentType, fieldNode) {
   if ((0, _definition.isObjectType)(parentType) || (0, _definition.isInterfaceType)(parentType)) {
     return parentType.getFields()[name];
   }
-}
-/**
- * Creates a new visitor instance which maintains a provided TypeInfo instance
- * along with visiting visitor.
- */
-
-
-function visitWithTypeInfo(typeInfo, visitor) {
-  return {
-    enter: function enter(node) {
-      typeInfo.enter(node);
-      var fn = (0, _visitor.getVisitFn)(visitor, node.kind,
-      /* isLeaving */
-      false);
-
-      if (fn) {
-        var result = fn.apply(visitor, arguments);
-
-        if (result !== undefined) {
-          typeInfo.leave(node);
-
-          if ((0, _ast.isNode)(result)) {
-            typeInfo.enter(result);
-          }
-        }
-
-        return result;
-      }
-    },
-    leave: function leave(node) {
-      var fn = (0, _visitor.getVisitFn)(visitor, node.kind,
-      /* isLeaving */
-      true);
-      var result;
-
-      if (fn) {
-        result = fn.apply(visitor, arguments);
-      }
-
-      typeInfo.leave(node);
-      return result;
-    }
-  };
 }

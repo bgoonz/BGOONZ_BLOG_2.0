@@ -1,5 +1,5 @@
 // @flow strict
-/* eslint-disable flowtype/no-weak-types */
+
 import nodejsCustomInspectSymbol from './nodejsCustomInspectSymbol';
 
 const MAX_ARRAY_LENGTH = 10;
@@ -12,7 +12,7 @@ export default function inspect(value: mixed): string {
   return formatValue(value, []);
 }
 
-function formatValue(value: mixed, seenValues: Array<mixed>): string {
+function formatValue(value, seenValues) {
   switch (typeof value) {
     case 'string':
       return JSON.stringify(value);
@@ -28,10 +28,7 @@ function formatValue(value: mixed, seenValues: Array<mixed>): string {
   }
 }
 
-function formatObjectValue(
-  value: Object,
-  previouslySeenValues: Array<mixed>,
-): string {
+function formatObjectValue(value, previouslySeenValues) {
   if (previouslySeenValues.indexOf(value) !== -1) {
     return '[Circular]';
   }
@@ -40,6 +37,7 @@ function formatObjectValue(
   const customInspectFn = getCustomFn(value);
 
   if (customInspectFn !== undefined) {
+    // $FlowFixMe(>=0.90.0)
     const customValue = customInspectFn.call(value);
 
     // check for infinite recursion
@@ -55,7 +53,7 @@ function formatObjectValue(
   return formatObject(value, seenValues);
 }
 
-function formatObject(object: Object, seenValues: Array<mixed>): string {
+function formatObject(object, seenValues) {
   const keys = Object.keys(object);
   if (keys.length === 0) {
     return '{}';
@@ -65,7 +63,7 @@ function formatObject(object: Object, seenValues: Array<mixed>): string {
     return '[' + getObjectTag(object) + ']';
   }
 
-  const properties = keys.map((key) => {
+  const properties = keys.map(key => {
     const value = formatValue(object[key], seenValues);
     return key + ': ' + value;
   });
@@ -73,7 +71,7 @@ function formatObject(object: Object, seenValues: Array<mixed>): string {
   return '{ ' + properties.join(', ') + ' }';
 }
 
-function formatArray(array: Array<mixed>, seenValues: Array<mixed>): string {
+function formatArray(array, seenValues) {
   if (array.length === 0) {
     return '[]';
   }
@@ -99,7 +97,7 @@ function formatArray(array: Array<mixed>, seenValues: Array<mixed>): string {
   return '[' + items.join(', ') + ']';
 }
 
-function getCustomFn(object: Object) {
+function getCustomFn(object) {
   const customInspectFn = object[String(nodejsCustomInspectSymbol)];
 
   if (typeof customInspectFn === 'function') {
@@ -111,7 +109,7 @@ function getCustomFn(object: Object) {
   }
 }
 
-function getObjectTag(object: Object): string {
+function getObjectTag(object) {
   const tag = Object.prototype.toString
     .call(object)
     .replace(/^\[object /, '')
