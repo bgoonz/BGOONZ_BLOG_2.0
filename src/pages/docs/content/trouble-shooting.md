@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Trouble Shooting
 weight: 0
 excerpt: lorem-ipsum
 seo:
