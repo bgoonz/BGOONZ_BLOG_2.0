@@ -1,7 +1,7 @@
 ---
 title: Trouble Shooting
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Here I will save details of problems I have been troubleshooting.
 seo:
     title: ''
     description: ''
