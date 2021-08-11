@@ -7,7 +7,8 @@ more_link_text: Read more
 seo:
     title: Blog
     description: >-
-   These are blog posts... not nescisarily different from the docs section except these pieces are more subject to my own opinions.
+     These are blog posts... not nescisarily different from the docs section except these pieces are more subject to my own opinions.
+  
    
     extra:
         - name: 'og:type'
