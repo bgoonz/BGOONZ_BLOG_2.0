@@ -1,7 +1,7 @@
 ---
 title: Projects
 weight: 0
-excerpt: lorem-ipsum
+excerpt: These are some of my active projects.
 seo:
     title: ''
     description: ''
