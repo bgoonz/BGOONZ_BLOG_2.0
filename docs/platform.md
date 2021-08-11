@@ -1,5 +1,4 @@
-Add to Your Site | Netlify CMS
-==============================
+# Add to Your Site | Netlify CMS
 
 > Open source content management for your Git workflow
 
@@ -7,8 +6,7 @@ You can adapt Netlify CMS to a wide variety of projects. It works with any conte
 
 This tutorial guides you through the steps for adding Netlify CMS to a site that’s built with a common [static site generator](https://www.staticgen.com/), like Jekyll, Hugo, Hexo, or Gatsby. Alternatively, you can [start from a template](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/start-with-a-template) or dive right into [configuration options](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/configuration-options).
 
-[](#app-file-structure)App File Structure
------------------------------------------
+## [](#app-file-structure)App File Structure
 
 A static `admin` folder contains all Netlify CMS files, stored at the root of your published site. Where you store this folder in the source files depends on your static site generator. Here’s the static file location for a few of the most popular static site generators:
 
@@ -55,8 +53,7 @@ Then import it (assuming your project has tooling for imports):
 
     CMS.registerPreviewTemplate('my-template', MyTemplate)
 
-[](#configuration)Configuration
--------------------------------
+## [](#configuration)Configuration
 
 Configuration is different for every site, so we’ll break it down into parts. Add all the code snippets in this section to your `admin/config.yml` file.
 
@@ -70,7 +67,7 @@ For GitHub and GitLab repositories, you can start your Netlify CMS `config.yml` 
       name: git-gateway
       branch: master
 
-*(For Bitbucket repositories, use the [Bitbucket backend](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/bitbucket-backend) instructions instead.)*
+_(For Bitbucket repositories, use the [Bitbucket backend](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/bitbucket-backend) instructions instead.)_
 
 The configuration above specifies your backend protocol and your publication branch. Git Gateway is an open source API that acts as a proxy between authenticated users of your site and your site repo. (We’ll get to the details of that in the [Authentication section](#authentication) below.) If you leave out the `branch` declaration, it defaults to `master`.
 
@@ -97,7 +94,7 @@ Note that the`media_folder` file path is relative to the project root, so the ex
 
 The configuration above adds a new setting, `public_folder`. While `media_folder` specifies where uploaded files are saved in the repo, `public_folder` indicates where they are found in the published site. Image `src` attributes use this path, which is relative to the file where it’s called. For this reason, we usually start the path at the site root, using the opening `/`.
 
-*If `public_folder` is not set, Netlify CMS defaults to the same value as `media_folder`, adding an opening `/` if one is not included.*
+_If `public_folder` is not set, Netlify CMS defaults to the same value as `media_folder`, adding an opening `/` if one is not included._
 
 ### [](#collections)Collections
 
@@ -153,8 +150,7 @@ The entries for any collection can be filtered based on the value of a single fi
         fields:
           - {label: "Language", name: "language"}
 
-[](#authentication)Authentication
----------------------------------
+## [](#authentication)Authentication
 
 Now that you have your Netlify CMS files in place and configured, all that’s left is to enable authentication. We’re using the [Netlify](https://www.netlify.com/) platform here because it’s one of the quickest ways to get started, but you can learn about other authentication options in the [Backends](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/backends-overview) doc.
 
@@ -195,8 +191,7 @@ When a user logs in with the Netlify Identity widget, an access token directs to
 
 Note: This example script requires modern JavaScript and does not work on IE11. For legacy browser support, use function expressions (`function () {}`) in place of the arrow functions (`() => {}`), or use a transpiler such as [Babel](https://babeljs.io/).
 
-[](#accessing-the-cms)Accessing the CMS
----------------------------------------
+## [](#accessing-the-cms)Accessing the CMS
 
 Your site CMS is now fully configured and ready for login!
 

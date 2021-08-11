@@ -1,9 +1,8 @@
-Breaking Down Scope, Context, And Closure In JavaScript In Simple Terms.
-========================================================================
+# Breaking Down Scope, Context, And Closure In JavaScript In Simple Terms.
 
 “JavaScript’s global scope is like a public toilet. You can’t avoid going in there, but try to limit your contact with surfaces when you…
 
-------------------------------------------------------------------------
+---
 
 ### Breaking Down Scope, Context, And Closure In JavaScript In Simple Terms.
 
@@ -58,18 +57,18 @@ Quiz yourself with this website I made:
 <a href="https://en.wikipedia.org/wiki/Spaced_repetition" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://en.wikipedia.org/wiki/Spaced_repetition"><strong>Spaced repetition — Wikipedia</strong><br />
 <em>Spaced repetition is an evidence-based learning technique that is usually performed with flashcards. Newly introduced…</em>en.wikipedia.org</a><a href="https://en.wikipedia.org/wiki/Spaced_repetition" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### CodePen For You To Practice With:
 
 Open it in another tab… it will only display the html file that existed when I pasted it into this article… for access to the JavaScript file and the most up to date html page you need to Open the sandbox… feel free to create a fork of it if you like!
 
-------------------------------------------------------------------------
+---
 
 ### SCOPE:
 
 -   <span id="8522">The `scope` of a program in JS is the set of variables that are available for use within the program.</span>
--   <span id="dc76">Scope in JavaScript defines which variables and functions you have access to, depending on where you are (a *physical position*) within your code.</span>
+-   <span id="dc76">Scope in JavaScript defines which variables and functions you have access to, depending on where you are (a _physical position_) within your code.</span>
 -   <span id="1243">The current context of execution. The context in which <a href="https://developer.mozilla.org/en-US/docs/Glossary/Value" class="markup--anchor markup--li-anchor">values</a> and **expressions** are “visible” or can be referenced. If a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Variable" class="markup--anchor markup--li-anchor"><strong>variable</strong></a> or other expression is not “in the current scope,” then it is unavailable for use. Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*RaM-5KbhUOZ_HoP5j-kNWQ.png" class="graf-image" /></figure>-   <span id="def6">A <a href="https://developer.mozilla.org/en-US/docs/Glossary/Function" class="markup--anchor markup--li-anchor"><strong>function</strong></a> serves as a **closure** in <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" class="markup--anchor markup--li-anchor">JavaScript</a>, and thus creates a scope, so that (for example) a variable defined exclusively within the function cannot be accessed from outside the function or within other functions:<a href="https://developer.mozilla.org/en-US/docs/Glossary/Scope" class="markup--anchor markup--li-anchor">https://developer.mozilla.org/en-US/docs/Glossary/Scope</a></span>
@@ -85,11 +84,11 @@ Open it in another tab… it will only display the html file that existed when I
 Lexical scope is the ability of the inner function to access the outer scope in which it is defined.
 
 -   <span id="62b5">`Lexing Time` : When you run a piece of JS code that is parsed before it is run.</span>
--   <span id="9320">*Lexical environment* is a place where variables and functions live during the program execution.</span>
+-   <span id="9320">_Lexical environment_ is a place where variables and functions live during the program execution.</span>
 
 ### Different Variables in JavaScript
 
--   <span id="25bd">*A variable always evaluates to the value it contains no matter how you declare it.*</span>
+-   <span id="25bd">_A variable always evaluates to the value it contains no matter how you declare it._</span>
 
 **The different ways to declare variables**
 
@@ -101,7 +100,7 @@ Lexical scope is the ability of the inner function to access the outer scope in 
 
 `Hoisting` is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Tb-9wd4RBvBCwIR2.jpeg" alt="I am afraid … sometimes… one simply does… at least analogous-ley" class="graf-image" /><figcaption>I am afraid … sometimes… one simply does… at least analogous-ley</figcaption></figure>### !!!Only function declarations are hoisted in JavaScript, function expressions are not hoisted!!!
 
@@ -109,29 +108,29 @@ Lexical scope is the ability of the inner function to access the outer scope in 
 
 ### !!! Only variables declared with var are hoisted!!!!
 
-------------------------------------------------------------------------
+---
 
 ### Slightly modified excerpt from:
 
 #### <a href="https://ui.dev/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/" class="markup--anchor markup--h4-anchor">source</a> : https://ui.dev/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/
 
-The first *Execution Context* ( a word that we don’t have to worry about the exact meaning of yet) that gets created when the JavaScript engine runs your code is called the “Global Execution Context”.
+The first _Execution Context_ ( a word that we don’t have to worry about the exact meaning of yet) that gets created when the JavaScript engine runs your code is called the “Global Execution Context”.
 
 Initially this Execution Context will consist of two things —
 
 -   <span id="ba1b">**a global object**</span>
 
-> ***and***
+> **_and_**
 
--   <span id="bdfe">***a* variable called** `this`.</span>
+-   <span id="bdfe">**_a_ variable called** `this`.</span>
 
 > By default the`this` keyword will act as a reference to global object which will be `window` if you’re running JavaScript in the browser or `global` if you’re running it in a Node environment.
 
 ### REMEMBER:
 
-> Node: `this` references a global object called ***window*** (like the window that comprises the content of a tab in chrome)
+> Node: `this` references a global object called **_window_** (like the window that comprises the content of a tab in chrome)
 
-> Browsers:`this` references a global object called ***global***
+> Browsers:`this` references a global object called **_global_**
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*NMGRtcYlwffqSUSH.png" class="graf-image" /></figure>Above we can see that even without any code, the Global Execution Context will still consist of two things — `window` and `this`. This is the Global Execution Context in its most basic form.
 
@@ -139,27 +138,27 @@ Let’s step things up and see what happens when we start actually adding code t
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*P8DG5hIKJO7thsnz.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*J9juq03-KlcKReSF.png" class="graf-image" /></figure>The key take away is that each Execution Context has two separate phases, a `Creation` phase and an `Execution` phase and each phase has its own unique responsibilities.
 
-------------------------------------------------------------------------
+---
 
 ### Exaction Context:
 
 #### Execution Context ≠(NOT EQUAL)≠≠≠Scope
 
-1.  <span id="0fcc">The **global execution context** is created ***before*** any code is executed.</span>
-2.  <span id="de32">Whenever a function is *executed* invoked (this means the function is told to run… i.e. after the doSomething function has been declared … calling ‘doSomething()’, a **new execution context** gets created.</span>
+1.  <span id="0fcc">The **global execution context** is created **_before_** any code is executed.</span>
+2.  <span id="de32">Whenever a function is _executed_ invoked (this means the function is told to run… i.e. after the doSomething function has been declared … calling ‘doSomething()’, a **new execution context** gets created.</span>
 3.  <span id="20c3">**Every** execution context provides `this` keyword, which points to an **object** to which the current code that’s being executed belongs.</span>
 
 For more info read about <a href="https://medium.com/@Rahulx1/understanding-event-loop-call-stack-event-job-queue-in-javascript-63dcd2c71ecd" class="markup--anchor markup--p-anchor">Event Queue and Call Stack</a>
 
-------------------------------------------------------------------------
+---
 
 #### More formal definition from: <a href="https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6" class="markup--anchor markup--h4-anchor">Misa Ogura’s article on the subject</a>
 
-In JavaScript, **execution context** is an abstract concept that holds *information about the environment* within which the current code is being executed.
+In JavaScript, **execution context** is an abstract concept that holds _information about the environment_ within which the current code is being executed.
 
-**Remember**: the JavaScript engine creates the global execution context before it starts to execute any code. From that point on, a new execution context gets created *every time* a function is executed, as the engine parses through your code. In fact, the global execution context is nothing special. It’s just like any other execution context, except that it gets created by default.
+**Remember**: the JavaScript engine creates the global execution context before it starts to execute any code. From that point on, a new execution context gets created _every time_ a function is executed, as the engine parses through your code. In fact, the global execution context is nothing special. It’s just like any other execution context, except that it gets created by default.
 
-------------------------------------------------------------------------
+---
 
 In the Global `Creation` phase, the JavaScript engine will
 
@@ -188,9 +187,9 @@ Any function declarations (`getUser`) are placed entirely into memory.
 
 Then once we enter the `Execution` phase, the JavaScript engine starts executing the code line by line and assigns the real values to the variables already living in memory.
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### **Function-Scoped Variables**
 
@@ -318,7 +317,7 @@ When JavaScript engine finds a `var` variable declaration during the compile pha
 
 <a href="https://codeburst.io/js-demystified-03-scope-f841ecad5c23" class="markup--anchor markup--p-anchor">https://codeburst.io/js-demystified-03-scope-f841ecad5c23</a> is a really great article… skip down to Hoisting and Scope to pursue this topic further!
 
-------------------------------------------------------------------------
+---
 
 ### **Block-Scoped Variables**
 
@@ -508,11 +507,11 @@ As you can see the arrow function is shorter and easier to read.
 
 **Single Expression Arrow Functions**
 
--   <span id="635b">Arrow functions, *unlike* normal functions, carry over context, binding `this` lexically.</span>
+-   <span id="635b">Arrow functions, _unlike_ normal functions, carry over context, binding `this` lexically.</span>
 -   <span id="b4db">Value of `this` inside an arrow function is not dependent on how it is invoked.</span>
--   <span id="4b3f">Because arrow functions already have a *bound context*, you can’t reassign `this`.</span>
+-   <span id="4b3f">Because arrow functions already have a _bound context_, you can’t reassign `this`.</span>
 
-------------------------------------------------------------------------
+---
 
 #### Phewh… that’s a lot… let’s go over some of that again!
 
@@ -525,7 +524,7 @@ Variables declared with `let` and `const` can have block scope. They can only be
 Consider the next code that emphasizes `let` block scope:
 
     let x = 1;
-    { 
+    {
       let x = 2;
     }
     console.log(x); //1
@@ -533,12 +532,12 @@ Consider the next code that emphasizes `let` block scope:
 In contrast, the `var` declaration has no block scope:
 
     var x = 1;
-    { 
+    {
       var x = 2;
     }
     console.log(x); //2
 
-------------------------------------------------------------------------
+---
 
 ### Closures Spaced Repetition
 
@@ -576,11 +575,11 @@ This works! we only instantiate counter when `createAdder()` is called, but it's
 
 > Definition*: (According to MDN) A closure is the combination of a function and the lexical environment within which that function was declared.*
 
-------------------------------------------------------------------------
+---
 
 ### Global Scope Spaced Repetition:
 
-Scope in JavaScript works like it does in most languages. If something is defined at the root level, that’s global scope — we can *access (and modify)* that variable from anywhere. If it’s a function we defined, we can *call* it from anywhere.
+Scope in JavaScript works like it does in most languages. If something is defined at the root level, that’s global scope — we can _access (and modify)_ that variable from anywhere. If it’s a function we defined, we can _call_ it from anywhere.
 
 ### The Problem with Global Scope
 
@@ -588,11 +587,11 @@ So it seems we should declare all of our variables at the global scope.
 
 > Why could this be a problem?
 
-It seems reasonable to want `counter` to *only* be accessed/modified through our `addOne()` function, but if our variable is defined within the global scope, it's simply not so.
+It seems reasonable to want `counter` to _only_ be accessed/modified through our `addOne()` function, but if our variable is defined within the global scope, it's simply not so.
 
 This may not seem like a major concern — we can just make sure we don’t access it directly.
 
-We need some form of encapsulation — i.e. the data our function relies on is *completely* contained within the logic of that function
+We need some form of encapsulation — i.e. the data our function relies on is _completely_ contained within the logic of that function
 
 ### Inner Scope
 
@@ -602,17 +601,17 @@ OK, this seems to work as expected, however
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*hCP3tX_zDtTQLRQT.png" class="graf-image" /></figure>Every function creates it’s own local scope.
 
-Compared to it’s context (i.e. *where* our function is defined), we call this the inner scope
+Compared to it’s context (i.e. _where_ our function is defined), we call this the inner scope
 
 Our function can access/modify anything outside of it’s scope, so the body of our function, `{ counter++; }`, has an effect that persists in the outside scope.
 
 > What about the other way around…Can global scope modify inner scope?
 
-Because `counter` is *defined* within our function's scope, it doesn't exist within the global scope, so referencing it there doesn't make sense.
+Because `counter` is _defined_ within our function's scope, it doesn't exist within the global scope, so referencing it there doesn't make sense.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*K-GktN0XO2Gw6BPK.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Context vs. Scope
 
@@ -648,7 +647,7 @@ The difference between `let` and `const` is that a `const` declaration is, as th
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*5RWAkuw8fkbTV6MRabyfhQ.png" class="graf-image" /></figure>### AND
 
-A *lexical environment* is an abstraction that holds **identifier-variable mapping**. I**dentifier** refers to the name of variables/functions, and **the variable** is the reference to actual object \[including function object\] or primitive value.
+A _lexical environment_ is an abstraction that holds **identifier-variable mapping**. I**dentifier** refers to the name of variables/functions, and **the variable** is the reference to actual object \[including function object\] or primitive value.
 
 This is similar to an object with a method on it…
 
@@ -670,7 +669,7 @@ The same principle applies when invoking a function with the `new` operator to c
 
 When invoked in this manner, the value of `this` within the scope of the function will be set to the newly created instance:
 
-When called as an unbound function, `this` will default to the global context or window object in the browser. However, if the function is executed in *strict mode*, the context will default to undefined.
+When called as an unbound function, `this` will default to the global context or window object in the browser. However, if the function is executed in _strict mode_, the context will default to undefined.
 
 ### Execution Context Spaced Repetition:
 
@@ -680,13 +679,13 @@ This is where confusion often sets in, the term **“execution context” is act
 
 It is an unfortunate naming convention, however it is the terminology as defined by the ECMAScript specification, so we’re kind of stuck with it.
 
-Each time a new execution context is created it is appended to the top of the *execution stack (call stack).*
+Each time a new execution context is created it is appended to the top of the _execution stack (call stack)._
 
 The browser will always execute the current execution context that is atop the execution stack. Once completed, it will be removed from the top of the stack and control will return to the execution context below.
 
-An execution context can be divided into a creation and execution phase. In the creation phase, the interpreter will first create a *variable object* that is composed of all the variables, function declarations, and arguments defined inside the execution context.
+An execution context can be divided into a creation and execution phase. In the creation phase, the interpreter will first create a _variable object_ that is composed of all the variables, function declarations, and arguments defined inside the execution context.
 
-From there the *scope chain* is initialized next, and the value of `this` is determined last. Then in the execution phase, code is interpreted and executed.
+From there the _scope chain_ is initialized next, and the value of `this` is determined last. Then in the execution phase, code is interpreted and executed.
 
 -   <span id="af9a"><a href="https://javascript.info/closure" class="markup--anchor markup--li-anchor">source</a></span>
 

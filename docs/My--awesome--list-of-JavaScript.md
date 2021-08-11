@@ -1,9 +1,8 @@
-My ‘awesome’ list of JavaScript resources
-=========================================
+# My ‘awesome’ list of JavaScript resources
 
 Everyone’s seen the ‘Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
 
-------------------------------------------------------------------------
+---
 
 ### My ‘awesome’ list of JavaScript resources
 

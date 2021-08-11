@@ -1,9 +1,8 @@
-Bash Commands That Save Me Time and Frustration
-===============================================
+# Bash Commands That Save Me Time and Frustration
 
 Here’s a list of bash commands that stand between me and insanity.
 
-------------------------------------------------------------------------
+---
 
 ### Bash Commands That Save Me Time and Frustration
 
@@ -26,7 +25,7 @@ Here’s a list of bash commands that stand between me and insanity.
 
 ### Getting Started (Advanced Users Skip Section):
 
-------------------------------------------------------------------------
+---
 
 #### ✔ Check the Current Directory ➡ `pwd`:
 
@@ -63,7 +62,7 @@ Changed my directory to the cli-practice directory. And the rest of the tutorial
 
 #### ✔ Parent Directory ➡ `..`:
 
-We have seen `cd` command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol `..` after `cd` command, like `cd ..`
+We have seen `cd` command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol `..` after `cd` command, like `cd ..`
 
 #### ✔ Create Files ➡ `touch`:
 
@@ -71,7 +70,7 @@ We can create an empty file by typing `touch file_name`. It's going to create a 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*xu1wtv7gJ2NMvP60.gif" class="graf-image" /></figure>I created a hello.txt file in my current working directory. Again you can use `ls` command to see the file is created or not.
 
-Now open your hello.txt file in your text editor and write *Hello Everyone!* into your hello.txt file and save it.
+Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
 
 #### ✔ Display the Content of a File ➡ `cat`:
 
@@ -113,7 +112,7 @@ To do this, we use the `cp` command.
 
 -   <span id="9bfc">You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.</span>
 
-*The* `-r` *option for "recursive" means that it will copy all of the files including the files inside of subfolders.*
+_The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif" class="graf-image" /></figure>Here I copied all of the files from the folder to folder-copy.
 
@@ -137,7 +136,7 @@ Clear command is used to clear the terminal screen.
 
 The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
-------------------------------------------------------------------------
+---
 
 ### MY COMMANDS:
 
@@ -145,19 +144,19 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
 **here is a** <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip" class="markup--anchor markup--p-anchor"><strong>folde</strong></a>**r containing the before and after… I had to change folder names slightly due to a limit on the length of file-paths in a github repo.**
 
-    find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;    
+    find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
     find . -name "*.zip" -type f -print -delete
 
-------------------------------------------------------------------------
+---
 
 ### 2.) Install node modules recursively:
 
-    npm i -g recursive-install  
+    npm i -g recursive-install
 
     npm-recursive-install
 
-------------------------------------------------------------------------
+---
 
 ### 3.) Clean up unnecessary files/folders in git repo:
 
@@ -168,9 +167,9 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
     # -------------------------------------------------------
 
-    # This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files. 
+    # This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files.
 
-    find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} + 
+    find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
     # -------------------------------------------------------
 
@@ -234,7 +233,7 @@ The following output from my bash shell corresponds to the directory:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</figcaption></figure>find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
-------------------------------------------------------------------------
+---
 
 ### 4.) Generate index.html file that links to all other files in working directory:
 
@@ -324,7 +323,7 @@ The following output from my bash shell corresponds to the directory:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*AOYbWvUGN9yJ4ceNzAGGsw.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
 
@@ -334,7 +333,7 @@ The following output from my bash shell corresponds to the directory:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*8evVPO_z-_TATzkcDTp15Q.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### 6.)Recursively remove lines of text containing the string badFolder from files in the working directory.
 
@@ -386,7 +385,7 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Thursday, April 22, 2021 by Teon Brooks
 
-***I modified the command slightly to apply only to files called ‘result.md’:***
+**_I modified the command slightly to apply only to files called ‘result.md’:_**
 
 > The result is :
 
@@ -423,7 +422,7 @@ The following output from my bash shell corresponds to the directory:
 <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text"><strong>bgoonz/bash-commands-walkthrough</strong><br />
 <em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### 7.) Execute command recursively:
 
@@ -431,7 +430,7 @@ The following output from my bash shell corresponds to the directory:
 
 > **I am essentially removing the recursive action of the find command…**
 
-**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the *find/pandoc* line once in every subfolder of the working directory… is working properly!**
+**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the _find/pandoc_ line once in every subfolder of the working directory… is working properly!**
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png" class="graf-image" /></figure>**Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.**
 
@@ -447,7 +446,7 @@ The following output from my bash shell corresponds to the directory:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*jqrjNeBuRmTrDt3vmQ50LQ.png" class="graf-image" /></figure>
 
-*If you want to run any bash script recursively all you have to do is substitue out line \#9 with the command you want to run once in every sub-folder.*
+_If you want to run any bash script recursively all you have to do is substitue out line \#9 with the command you want to run once in every sub-folder._
 
     function RecurseDirs ()
     {
@@ -475,7 +474,7 @@ The following output from my bash shell corresponds to the directory:
     }
     RecurseDirs "./"
 
-------------------------------------------------------------------------
+---
 
 ### TBC….
 
@@ -485,13 +484,13 @@ The following output from my bash shell corresponds to the directory:
 
     sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 
-------------------------------------------------------------------------
+---
 
-### 10. Recursively Delete node\_modules folders
+### 10. Recursively Delete node_modules folders
 
     find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
 
-------------------------------------------------------------------------
+---
 
 ### 11. Sanatize file and folder names to remove illegal characters and reserved words.
 
@@ -518,13 +517,13 @@ The following output from my bash shell corresponds to the directory:
 
     sanitize_dir '/path/to/somewhere'
 
-------------------------------------------------------------------------
+---
 
 ### 12. Start postgresql in terminal
 
     sudo -u postgres psql
 
-------------------------------------------------------------------------
+---
 
 ### 13. Add closing body and script tags to each html file in working directory.
 
@@ -535,7 +534,7 @@ The following output from my bash shell corresponds to the directory:
     </form>
       </body></html>" | tee -a *.html
 
-------------------------------------------------------------------------
+---
 
 ### 14. Batch Download Videos
 
@@ -555,7 +554,7 @@ The following output from my bash shell corresponds to the directory:
           num=$(($num+1))
     done
 
-------------------------------------------------------------------------
+---
 
 ### 15. Change File Extension from ‘.txt’ to .doc for all files in working directory.
 
@@ -567,13 +566,13 @@ The following output from my bash shell corresponds to the directory:
 
     find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 
-------------------------------------------------------------------------
+---
 
 ### 17. Copy folder structure including only files of a specific extension into an ouput Folder
 
     find . -name '*.md' | cpio -pdm './../outputFolder'
 
-------------------------------------------------------------------------
+---
 
 ### Discover More:
 
@@ -585,7 +584,7 @@ The following output from my bash shell corresponds to the directory:
 <a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Medium</strong><br />
 <em>Continued!!!medium.com</em></a><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
 

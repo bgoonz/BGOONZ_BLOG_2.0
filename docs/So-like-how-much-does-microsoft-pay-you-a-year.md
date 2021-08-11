@@ -1,7 +1,6 @@
-So like how much does microsoft pay you a year?
-===============================================
+# So like how much does microsoft pay you a year?
 
-------------------------------------------------------------------------
+---
 
 So like how much does microsoft pay you a year?
 

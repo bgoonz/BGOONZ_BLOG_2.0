@@ -1,5 +1,4 @@
-Netlify CMS Open Authoring
-==========================
+# Netlify CMS Open Authoring
 
 > I like the term “Git-backed CMS.” That term works for an emerging style of CMS that looks and behaves much like any other CMS, with a fascinating twist:
 

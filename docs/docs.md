@@ -1,7 +1,6 @@
 Here are some of my github repositories to pay around with!
 
-My Top Repos / Websites:
-========================
+# My Top Repos / Websites:
 
 -   [Python Practice](https://github.com/bgoonz/PYTHON_PRAC)
 -   [Lambda Bootcamp Website](https://lambda-resources.netlify.app/)

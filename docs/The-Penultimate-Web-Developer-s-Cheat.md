@@ -1,9 +1,8 @@
-The Penultimate Web Developer’s Cheat Sheet
-===========================================
+# The Penultimate Web Developer’s Cheat Sheet
 
 I am literally just going to combine a fair number of my Cheat Sheets in no particular order.
 
-------------------------------------------------------------------------
+---
 
 ### The Penultimate Web Developer’s Cheat Sheet
 
@@ -301,11 +300,11 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Bootstrap:
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
@@ -313,7 +312,7 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 
 > Continued:
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
@@ -579,13 +578,13 @@ Python has two primitive loop commands:
 -   <span id="4c78">Functions by default return `None`</span>
 -   <span id="b047">We can return any datatype.</span>
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
 ### JavaScript:
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 

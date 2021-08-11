@@ -1,5 +1,4 @@
-Introduction to npm
--------------------
+## Introduction to npm
 
 `npm` is the standard package manager for Node.js.
 
@@ -11,8 +10,7 @@ There are many things that `npm` does.
 
 > [**Yarn**](https://yarnpkg.com/en/) is an alternative to npm. Make sure you check it out as well.
 
-Downloads
----------
+## Downloads
 
 `npm` manages downloads of dependencies of your project.
 
@@ -32,8 +30,8 @@ You can also install a specific package by running
 
 Often you’ll see more flags added to this command:
 
--   `--save` installs and adds the entry to the `package.json` file *dependencies*
--   `--save-dev` installs and adds the entry to the `package.json` file *devDependencies*
+-   `--save` installs and adds the entry to the `package.json` file _dependencies_
+-   `--save-dev` installs and adds the entry to the `package.json` file _devDependencies_
 
 The difference is mainly that devDependencies are usually development tools, like a testing library, while `dependencies` are bundled with the app in production.
 
@@ -49,8 +47,7 @@ You can specify a single package to update as well:
 
     npm update <package-name>
 
-Versioning
-----------
+## Versioning
 
 In addition to plain downloads, `npm` also manages **versioning**, so you can specify any specific version of a package, or require a version higher or lower than what you need.
 
@@ -62,8 +59,7 @@ Specifying an explicit version of a library also helps to keep everyone on the s
 
 In all those cases, versioning helps a lot, and `npm` follows the semantic versioning (semver) standard.
 
-Running Tasks
--------------
+## Running Tasks
 
 The package.json file supports a format for specifying command line tasks that can be run by using
 

@@ -1,9 +1,8 @@
-Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build…
-===============================================================================================
+# Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build…
 
 For Front end developers who like myself struggle with making the jump to fullstack.
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -60,22 +59,22 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 **Describe the purpose of a foreign key**
 
 -   <span id="cf54">A foreign key is used as the connector from this record to the primary key of another table s record.</span>
--   <span id="f397">In our pets example, we can imagine two tables to demonstrate: a table to represent cats and a table to represent toys. Each of these tables has a primary key of id that is used as the unique identifier. In order to make a connection between a toy and a cat, we can add another field to the cat table called owner\_id , indicating that it is a foreign key for the cat table. By setting a toy s owner\_id to the same value as a particular cat s id , we can indicate that the cat is the owner of that toy.</span>
+-   <span id="f397">In our pets example, we can imagine two tables to demonstrate: a table to represent cats and a table to represent toys. Each of these tables has a primary key of id that is used as the unique identifier. In order to make a connection between a toy and a cat, we can add another field to the cat table called owner_id , indicating that it is a foreign key for the cat table. By setting a toy s owner_id to the same value as a particular cat s id , we can indicate that the cat is the owner of that toy.</span>
 
 **Describe how to properly name things in PostgreSQL**
 
 -   <span id="d6e6">Names within postgres should generally consist of only lowercase letters, numbers, and underscores.</span>
--   <span id="0fb3">Tables within a database are plural by convention, so a table for cats would typically be cats and office locations would be office\_locations (all lowercase, underscores to replace spaces, plural)</span>
+-   <span id="0fb3">Tables within a database are plural by convention, so a table for cats would typically be cats and office locations would be office_locations (all lowercase, underscores to replace spaces, plural)</span>
 
 **Connect to an instance of PostgreSQL with the command line tool psql**
 
 -   <span id="1b7f">The psql command by default will try to connect to a database and username that matches your system s username</span>
 -   <span id="1454">We connect to a different database by providing an argument to the psql command</span>
 -   <span id="3439">psql pets</span>
--   <span id="fb37">To connect with a different username we can use the -U flag followed by the username we would like to use. To connect to the pets database as pets\_user</span>
--   <span id="d357">psql -U pets\_user pets</span>
+-   <span id="fb37">To connect with a different username we can use the -U flag followed by the username we would like to use. To connect to the pets database as pets_user</span>
+-   <span id="d357">psql -U pets_user pets</span>
 -   <span id="e139">If there is a password for the user, we can tell psql that we would like a prompt for the password to show up by using the -W flag.</span>
--   <span id="8709">psql -U pets\_user -W pets (the order of our flags doesn t matter, as long as any arguments associated with them are together, such as pets\_user directly following -U in this example)</span>
+-   <span id="8709">psql -U pets_user -W pets (the order of our flags doesn t matter, as long as any arguments associated with them are together, such as pets_user directly following -U in this example)</span>
 
 **Identify whether a user is a normal user or a superuser by the prompt in the psql shell**
 
@@ -96,8 +95,8 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 **Configure a database so that only the owner (and superusers) can connect to it**
 
 -   <span id="1a73">We can GRANT and REVOKE privileges from a database to users or categories of users.</span>
--   <span id="8795">In order to remove connection privileges to a database from the public we can use REVOKE CONNECT ON DATABASE {db\_name} FROM PUBLIC;, removing all public connection access.</span>
--   <span id="ee98">If we wanted to grant it back, or to a specific user, we could similarly do GRANT CONNECT ON DATABASE {db\_name} FROM {specific user, PUBLIC, etc.};</span>
+-   <span id="8795">In order to remove connection privileges to a database from the public we can use REVOKE CONNECT ON DATABASE {db_name} FROM PUBLIC;, removing all public connection access.</span>
+-   <span id="ee98">If we wanted to grant it back, or to a specific user, we could similarly do GRANT CONNECT ON DATABASE {db_name} FROM {specific user, PUBLIC, etc.};</span>
 
 **View a list of databases in an installation of PostgreSQL**
 
@@ -171,7 +170,7 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 
 **Create foreign key constraints to relate tables**
 
--   <span id="e576">In our table definition, we can use the line FOREIGN KEY (foreign\_key\_stored\_in\_this\_table) REFERENCE {other table} ({other\_tables\_key\_name}) to connect two tables.</span>
+-   <span id="e576">In our table definition, we can use the line FOREIGN KEY (foreign_key_stored_in_this_table) REFERENCE {other table} ({other_tables_key_name}) to connect two tables.</span>
 -   <span id="4c08">This is probably easier to see in an example:</span>
 
 <!-- -->
@@ -209,14 +208,14 @@ You can access and query the data using the findByPk, findOne, and findAll metho
     FROM
     friends;
 
-— Selects the first\_name column from the friends table (remember whitespace is ignored)  
+— Selects the first_name column from the friends table (remember whitespace is ignored)  
 SELECT name  
 FROM friends;
 
 -   <span id="ef22">Sometimes we may need to specify what table we are selecting a column from, particulurly if we had joined multiple tables together.</span>
 
 — Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the “puppies” table. We indicate the table name by table.column  
- — We are also aliasing these fields with the AS keyword so that our returned results have friend\_name and puppy\_name as field headers
+ — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field headers
 
     SELECT
     friends.name AS friend_name , puppies.name AS puppy_name
@@ -244,7 +243,7 @@ FROM friends;
 
 -   <span id="a391">When we want to get information from a related table or do querying based on related table values, we can join the connected table by comparing the foreign key to where it lines up on the other table:</span>
 
-— Here we are joining the puppies table on to the friends table. We are specifying that the comparison we should make is the foreign key puppy\_id on the friends table should line up with the primary key id on the puppies table.
+— Here we are joining the puppies table on to the friends table. We are specifying that the comparison we should make is the foreign key puppy_id on the friends table should line up with the primary key id on the puppies table.
 
     SELECT
     *
@@ -456,7 +455,7 @@ pool.end(); // invoking end() will close our connection to the database
 -   <span id="8052">npx sequelize-cli init</span>
 -   <span id="d03e">Create a database user with credentials we will use for the project</span>
 -   <span id="bbc8">psql</span>
--   <span id="caca">CREATE USER example\_user WITH PASSWORD ‘badpassword’</span>
+-   <span id="caca">CREATE USER example_user WITH PASSWORD ‘badpassword’</span>
 -   <span id="72ab">Here we can also create databases since we are already in postgres</span>
 
 <!-- -->
@@ -468,7 +467,7 @@ pool.end(); // invoking end() will close our connection to the database
     CREATE DATABASE example_app_production WITH OWNER example_user
 
 -   <span id="ae27">If we don t create these databases now, we could also create them after we make our changes to our config file. If we take this approach, we need to make sure our user that we created has the CREATEDB option when we make them, since sequelize will attempt to make the databases with this user. This other approach would look like:</span>
--   <span id="f6a3">In psql: CREATE USER example\_user WITH PASSWORD ‘badpassword’ CREATEDB</span>
+-   <span id="f6a3">In psql: CREATE USER example_user WITH PASSWORD ‘badpassword’ CREATEDB</span>
 -   <span id="45ac">In terminal: npx sequelize-cli db:create</span>
 -   <span id="cff2">Double check that our configuration file matches our username, password, database, dialect, and seederStorage (these will be filled out for you in an assessment scenario):</span>
 
@@ -740,7 +739,7 @@ pool.end(); // invoking end() will close our connection to the database
 
     const cats = await Cat.findAll({
         where: {
-            // The array that Op.and points to must all be true 
+            // The array that Op.and points to must all be true
             // Here, we find cats where the name is not "Markov" and the age is 4
             [Op.and]: [{
                 firstName: {
@@ -757,7 +756,7 @@ pool.end(); // invoking end() will close our connection to the database
 
     const cats = await Cat.findAll({
         where: {
-            // One condition in the array that Op.or points to must be true 
+            // One condition in the array that Op.or points to must be true
             // Here, we find cats where the name is "Markov" or where the age is 4
             [Op.or]: [{
                 firstName: "Markov"
@@ -799,7 +798,7 @@ const cats = await Cat.findAll({ where: { // Find all cats where the age is grea
         order: [
             ["age", "DESC"]
         ],
-        // Here we are limiting our results to one record. It will still return an array, just with one object inside. We could have said any number here, the result is always an array. 
+        // Here we are limiting our results to one record. It will still return an array, just with one object inside. We could have said any number here, the result is always an array.
         limit: 1,
     });
     console.log(JSON.stringify(cats, null, 2));
@@ -894,7 +893,7 @@ We can get nested associations by having include point to an object that specifi
     }
     main();
 
-------------------------------------------------------------------------
+---
 
 ### Sequelize Cheatsheet
 

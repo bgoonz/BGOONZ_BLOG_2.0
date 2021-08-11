@@ -1,10 +1,8 @@
-------------------------------------------------------------------------
+---
 
-description: takes soooo much time!
------------------------------------
+## description: takes soooo much time!
 
-Generating React Project
-========================
+# Generating React Project
 
 takes soooo much time!
 

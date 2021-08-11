@@ -2,15 +2,13 @@ lorem-ipsum
 
 2021-06-03
 
-Data Structures & Algorithms
-----------------------------
+## Data Structures & Algorithms
 
 [DS Algo Codebase](https://github.com/bgoonz/Data-Structures-Algos-Codebase)
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#115-distinct-subsequenceshttpsleetcodecomproblemsdistinct-subsequencesdescription)
 
-➤ [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/)
-------------------------------------------------------------------------------------------------
+## ➤ [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/)
 
 ### Problem:
 
@@ -86,16 +84,15 @@ Dynamic array can be used.
         return dp[lent];
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Medium Related Topics: “Tree”: https://leetcode.com/tag/tree “Depth-first Search”: https://leetcode.com/tag/depth-first-search Similar Questions: “Populating Next Right Pointers in Each Node II”: https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii “Binary Tree Right Side View”: https://leetcode.com/problems/binary-tree-right-side-view
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#116-populating-next-right-pointers-in-each-nodehttpsleetcodecomproblemspopulating-next-right-pointers-in-each-nodedescription)
 
-➤ [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/)
---------------------------------------------------------------------------------------------------------------------------------------------
+## ➤ [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/)
 
 ### Problem:
 
@@ -146,33 +143,35 @@ For every `node`:
 -   Left child: points to `node.right`.
 -   Right child: points to `node.next.left` if `node.next` exists.
 
-    /**
-     * Definition for binary tree with next pointer.
-     * function TreeLinkNode(val) {
-     *     this.val = val;
-     *     this.left = this.right = this.next = null;
-     * }
-     */
+    /\*\*
 
-    /**
-     * @param {TreeLinkNode} root
-     * @return {void} Do not return anything, modify tree in-place instead.
-     */
-    let connect = function (root) {
+    -   Definition for binary tree with next pointer.
+    -   function TreeLinkNode(val) {
+    -       this.val = val;
+    -       this.left = this.right = this.next = null;
+    -   }
+        \*/
+
+    /\*\*
+
+    -   @param {TreeLinkNode} root
+    -   @return {void} Do not return anything, modify tree in-place instead.
+        \*/
+        let connect = function (root) {
         if (!root) {
-            return;
+        return;
         }
         if (root.left !== null) {
-            root.left.next = root.right;
-            connect(root.left);
+        root.left.next = root.right;
+        connect(root.left);
         }
         if (root.right !== null) {
-            if (root.next !== null) {
-                root.right.next = root.next.left;
-            }
-            connect(root.right);
+        if (root.next !== null) {
+        root.right.next = root.next.left;
         }
-    };
+        connect(root.right);
+        }
+        };
 
 #### TWO
 
@@ -214,16 +213,15 @@ Level order traversal.
         }
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Medium Related Topics: “Tree”: https://leetcode.com/tag/tree “Depth-first Search”: https://leetcode.com/tag/depth-first-search Similar Questions: “Populating Next Right Pointers in Each Node”: https://leetcode.com/problems/populating-next-right-pointers-in-each-node
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#117-populating-next-right-pointers-in-each-node-iihttpsleetcodecomproblemspopulating-next-right-pointers-in-each-node-iidescription)
 
-➤ [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/)
---------------------------------------------------------------------------------------------------------------------------------------------------
+## ➤ [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/)
 
 ### Problem:
 
@@ -349,20 +347,19 @@ Level order traversal. Exact same as [116. Populating Next Right Pointers in Eac
         }
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Easy Related Topics: “Array”: https://leetcode.com/tag/array Similar Questions: “Pascal’s Triangle II”: https://leetcode.com/problems/pascals-triangle-ii
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#118-pascals-trianglehttpsleetcodecomproblemspascals-triangledescription)
 
-➤ [118. Pascal’s Triangle](https://leetcode.com/problems/pascals-triangle/description/)
----------------------------------------------------------------------------------------
+## ➤ [118. Pascal’s Triangle](https://leetcode.com/problems/pascals-triangle/description/)
 
 ### Problem:
 
-Given a non-negative integer *numRows*, generate the first *numRows* of Pascal’s triangle.
+Given a non-negative integer _numRows_, generate the first _numRows_ of Pascal’s triangle.
 
 ![PascalTriangleAnimated2.gif](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
 
@@ -407,20 +404,19 @@ Dynamic Programming 101.
         return result;
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Easy Related Topics: “Array”: https://leetcode.com/tag/array Similar Questions: “Pascal’s Triangle”: https://leetcode.com/problems/pascals-triangle
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#119-pascals-triangle-iihttpsleetcodecomproblemspascals-triangle-iidescription)
 
-➤ [119. Pascal’s Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/)
----------------------------------------------------------------------------------------------
+## ➤ [119. Pascal’s Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/)
 
 ### Problem:
 
-Given a non-negative index *k* where *k* ≤ 33, return the *k*th index row of the Pascal’s triangle.
+Given a non-negative index _k_ where _k_ ≤ 33, return the *k*th index row of the Pascal’s triangle.
 
 Note that the row index starts from 0.
 
@@ -435,7 +431,7 @@ In Pascal’s triangle, each number is the sum of the two numbers directly above
 
 **Follow up:**
 
-Could you optimize your algorithm to use only *O*(*k*) extra space?
+Could you optimize your algorithm to use only _O_(_k_) extra space?
 
 ### Solution:
 
@@ -463,16 +459,15 @@ State `(i, j)` depends on `(i-1, j)` and `(i-1, j-1)`. So to access `(i-1, j-1)`
         return row;
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Medium Related Topics: “Array”: https://leetcode.com/tag/array “Dynamic Programming”: https://leetcode.com/tag/dynamic-programming
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#120-trianglehttpsleetcodecomproblemstriangledescription)
 
-➤ [120. Triangle](https://leetcode.com/problems/triangle/description/)
-----------------------------------------------------------------------
+## ➤ [120. Triangle](https://leetcode.com/problems/triangle/description/)
 
 ### Problem:
 
@@ -491,7 +486,7 @@ The minimum path sum from top to bottom is `11` (i.e., **2** + **3** + **5** + *
 
 **Note:**
 
-Bonus point if you are able to do this using only *O*(*n*) extra space, where *n* is the total number of rows in the triangle.
+Bonus point if you are able to do this using only _O_(_n_) extra space, where _n_ is the total number of rows in the triangle.
 
 ### Solution:
 
@@ -523,20 +518,19 @@ Dynamic array can be used.
         return Math.min(...dp);
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Easy Related Topics: “Array”: https://leetcode.com/tag/array “Dynamic Programming”: https://leetcode.com/tag/dynamic-programming Similar Questions: “Maximum Subarray”: https://leetcode.com/problems/maximum-subarray “Best Time to Buy and Sell Stock II”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii “Best Time to Buy and Sell Stock III”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii “Best Time to Buy and Sell Stock IV”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv “Best Time to Buy and Sell Stock with Cooldown”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#121-best-time-to-buy-and-sell-stockhttpsleetcodecomproblemsbest-time-to-buy-and-sell-stockdescription)
 
-➤ [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
---------------------------------------------------------------------------------------------------------------------
+## ➤ [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 
 ### Problem:
 
-Say you have an array for which the *i*th element is the price of a given stock on day *i*.
+Say you have an array for which the *i*th element is the price of a given stock on day _i_.
 
 If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.
 
@@ -579,20 +573,19 @@ Because `price[j]` is lower that the base, using `j` as new base is guaranteed t
         return max;
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Easy Related Topics: “Array”: https://leetcode.com/tag/array “Greedy”: https://leetcode.com/tag/greedy Similar Questions: “Best Time to Buy and Sell Stock”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock “Best Time to Buy and Sell Stock III”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii “Best Time to Buy and Sell Stock IV”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv “Best Time to Buy and Sell Stock with Cooldown”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown “Best Time to Buy and Sell Stock with Transaction Fee”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#122-best-time-to-buy-and-sell-stock-iihttpsleetcodecomproblemsbest-time-to-buy-and-sell-stock-iidescription)
 
-➤ [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
---------------------------------------------------------------------------------------------------------------------------
+## ➤ [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
 
 ### Problem:
 
-Say you have an array for which the *i*th element is the price of a given stock on day *i*.
+Say you have an array for which the *i*th element is the price of a given stock on day _i_.
 
 Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
 
@@ -637,22 +630,21 @@ Sell immediately after the price drops. Or in other perspective, it is the sum o
         return max;
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Hard Related Topics: “Array”: https://leetcode.com/tag/array “Dynamic Programming”: https://leetcode.com/tag/dynamic-programming Similar Questions: “Best Time to Buy and Sell Stock”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock “Best Time to Buy and Sell Stock II”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii “Best Time to Buy and Sell Stock IV”: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv “Maximum Sum of 3 Non-Overlapping Subarrays”: https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#123-best-time-to-buy-and-sell-stock-iiihttpsleetcodecomproblemsbest-time-to-buy-and-sell-stock-iiidescription)
 
-➤ [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
-----------------------------------------------------------------------------------------------------------------------------
+## ➤ [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
 
 ### Problem:
 
-Say you have an array for which the *i*th element is the price of a given stock on day *i*.
+Say you have an array for which the *i*th element is the price of a given stock on day _i_.
 
-Design an algorithm to find the maximum profit. You may complete at most *two* transactions.
+Design an algorithm to find the maximum profit. You may complete at most _two_ transactions.
 
 **Note:**You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
 
@@ -679,7 +671,7 @@ Design an algorithm to find the maximum profit. You may complete at most *two* t
 
 ### Solution:
 
-Multiple transactions may not be engaged in at the same time. That means if we view the days that involed in the same transaction as a group, there won’t be any intersection. We may complete at most *two* transactions, so divide the days into two groups, `[0...k]` and `[k...n-1]`. Notice `k` exists in both groups because technically we can sell out then immediately buy in at the same day.
+Multiple transactions may not be engaged in at the same time. That means if we view the days that involed in the same transaction as a group, there won’t be any intersection. We may complete at most _two_ transactions, so divide the days into two groups, `[0...k]` and `[k...n-1]`. Notice `k` exists in both groups because technically we can sell out then immediately buy in at the same day.
 
 Define `p1(i)` to be the max profit of day `[0...i]`. This is just like the problem of [121. Best Time to Buy and Sell Stock](./121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md).
 
@@ -722,16 +714,15 @@ Define `f(k)` to be `p1(k) + p2(k)`. We need to get `max( f(0), ..., f(n-1) )`.
         return Math.max(...dp);
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Hard Related Topics: “Tree”: https://leetcode.com/tag/tree “Depth-first Search”: https://leetcode.com/tag/depth-first-search Similar Questions: “Path Sum”: https://leetcode.com/problems/path-sum “Sum Root to Leaf Numbers”: https://leetcode.com/problems/sum-root-to-leaf-numbers “Path Sum IV”: https://leetcode.com/problems/path-sum-iv “Longest Univalue Path”: https://leetcode.com/problems/longest-univalue-path
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#124-binary-tree-maximum-path-sumhttpsleetcodecomproblemsbinary-tree-maximum-path-sumdescription)
 
-➤ [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
---------------------------------------------------------------------------------------------------------------
+## ➤ [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
 
 ### Problem:
 
@@ -848,16 +839,15 @@ Just return the later (max sum of a path that ends with `root`). Maintain a glob
         return localMax;
     }
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Easy Related Topics: “Two Pointers”: https://leetcode.com/tag/two-pointers “String”: https://leetcode.com/tag/string Similar Questions: “Palindrome Linked List”: https://leetcode.com/problems/palindrome-linked-list “Valid Palindrome II”: https://leetcode.com/problems/valid-palindrome-ii
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#125-valid-palindromehttpsleetcodecomproblemsvalid-palindromedescription)
 
-➤ [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)
---------------------------------------------------------------------------------------
+## ➤ [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)
 
 ### Problem:
 
@@ -946,23 +936,22 @@ Compare the char codes.
         return true;
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Hard Related Topics: “Array”: https://leetcode.com/tag/array “String”: https://leetcode.com/tag/string “Backtracking”: https://leetcode.com/tag/backtracking “Breadth-first Search”: https://leetcode.com/tag/breadth-first-search Similar Questions: “Word Ladder”: https://leetcode.com/problems/word-ladder
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#126-word-ladder-iihttpsleetcodecomproblemsword-ladder-iidescription)
 
-➤ [126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/)
-----------------------------------------------------------------------------------
+## ➤ [126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/)
 
 ### Problem:
 
-Given two words (*beginWord* and *endWord*), and a dictionary’s word list, find all shortest transformation sequence(s) from *beginWord* to *endWord*, such that:
+Given two words (_beginWord_ and _endWord_), and a dictionary’s word list, find all shortest transformation sequence(s) from _beginWord_ to _endWord_, such that:
 
 1.  Only one letter can be changed at a time
-2.  Each transformed word must exist in the word list. Note that *beginWord* is *not* a transformed word.
+2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
 
 **Note:**
 
@@ -970,7 +959,7 @@ Given two words (*beginWord* and *endWord*), and a dictionary’s word list, fin
 -   All words have the same length.
 -   All words contain only lowercase alphabetic characters.
 -   You may assume no duplicates in the word list.
--   You may assume *beginWord* and *endWord* are non-empty and are not the same.
+-   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1064,23 +1053,22 @@ The items in the queue are not just words now. Parent nodes are also kept so tha
         return result;
     }
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Medium Related Topics: “Breadth-first Search”: https://leetcode.com/tag/breadth-first-search Similar Questions: “Word Ladder II”: https://leetcode.com/problems/word-ladder-ii “Minimum Genetic Mutation”: https://leetcode.com/problems/minimum-genetic-mutation
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#127-word-ladderhttpsleetcodecomproblemsword-ladderdescription)
 
-➤ [127. Word Ladder](https://leetcode.com/problems/word-ladder/description/)
-----------------------------------------------------------------------------
+## ➤ [127. Word Ladder](https://leetcode.com/problems/word-ladder/description/)
 
 ### Problem:
 
-Given two words (*beginWord* and *endWord*), and a dictionary’s word list, find the length of shortest transformation sequence from *beginWord* to *endWord*, such that:
+Given two words (_beginWord_ and _endWord_), and a dictionary’s word list, find the length of shortest transformation sequence from _beginWord_ to _endWord_, such that:
 
 1.  Only one letter can be changed at a time.
-2.  Each transformed word must exist in the word list. Note that *beginWord* is *not* a transformed word.
+2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
 
 **Note:**
 
@@ -1088,7 +1076,7 @@ Given two words (*beginWord* and *endWord*), and a dictionary’s word list, fin
 -   All words have the same length.
 -   All words contain only lowercase alphabetic characters.
 -   You may assume no duplicates in the word list.
--   You may assume *beginWord* and *endWord* are non-empty and are not the same.
+-   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1169,22 +1157,21 @@ To find all the next words, instead of filtering the `wordList`, enumerate all 2
         return 0;
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Hard Related Topics: “Array”: https://leetcode.com/tag/array “Union Find”: https://leetcode.com/tag/union-find Similar Questions: “Binary Tree Longest Consecutive Sequence”: https://leetcode.com/problems/binary-tree-longest-consecutive-sequence
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#128-longest-consecutive-sequencehttpsleetcodecomproblemslongest-consecutive-sequencedescription)
 
-➤ [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
---------------------------------------------------------------------------------------------------------------
+## ➤ [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
 
 ### Problem:
 
 Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 
-Your algorithm should run in O(*n*) complexity.
+Your algorithm should run in O(_n_) complexity.
 
 **Example:**
 
@@ -1220,16 +1207,15 @@ Build a Set from the list. Pick a number, find all it’s adjacent numbers that 
         return maxCount;
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Medium Related Topics: “Tree”: https://leetcode.com/tag/tree “Depth-first Search”: https://leetcode.com/tag/depth-first-search Similar Questions: “Path Sum”: https://leetcode.com/problems/path-sum “Binary Tree Maximum Path Sum”: https://leetcode.com/problems/binary-tree-maximum-path-sum
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#129-sum-root-to-leaf-numbershttpsleetcodecomproblemssum-root-to-leaf-numbersdescription)
 
-➤ [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/)
-------------------------------------------------------------------------------------------------------
+## ➤ [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/)
 
 ### Problem:
 
@@ -1291,16 +1277,15 @@ To write a clean solution for this promblem, use `0` as indicator of leaf node. 
         return sumNumbers(root.left, sum) + sumNumbers(root.right, sum) || sum;
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Medium Related Topics: “Depth-first Search”: https://leetcode.com/tag/depth-first-search “Breadth-first Search”: https://leetcode.com/tag/breadth-first-search “Union Find”: https://leetcode.com/tag/union-find Similar Questions: “Number of Islands”: https://leetcode.com/problems/number-of-islands “Walls and Gates”: https://leetcode.com/problems/walls-and-gates
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#130-surrounded-regionshttpsleetcodecomproblemssurrounded-regionsdescription)
 
-➤ [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/)
-------------------------------------------------------------------------------------------
+## ➤ [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/)
 
 ### Problem:
 
@@ -1407,16 +1392,15 @@ So both BFS and DFS are good. I prefer BFS when pruning is not needed in favor o
         }
     };
 
-------------------------------------------------------------------------
+---
 
 Difficulty: Medium Related Topics: “Depth-first Search”: https://leetcode.com/tag/depth-first-search “Breadth-first Search”: https://leetcode.com/tag/breadth-first-search “Graph”: https://leetcode.com/tag/graph Similar Questions: “Copy List with Random Pointer”: https://leetcode.com/problems/copy-list-with-random-pointer
 
-------------------------------------------------------------------------
+---
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#133-clone-graphhttpsleetcodecomproblemsclone-graphdescription)
 
-➤ [133. Clone Graph](https://leetcode.com/problems/clone-graph/description/)
-----------------------------------------------------------------------------
+## ➤ [133. Clone Graph](https://leetcode.com/problems/clone-graph/description/)
 
 ### Problem:
 
@@ -1523,7 +1507,7 @@ alt text
         return newRoot;
     };
 
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png "maximum-sum-circular-subarray")
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png 'maximum-sum-circular-subarray')
 
     /**
      * @param {number[]} A
@@ -1547,8 +1531,7 @@ alt text
 
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#balanced-binary-tree---leetcode)
 
-➤ Balanced Binary Tree - LeetCode
-=================================
+# ➤ Balanced Binary Tree - LeetCode
 
 > Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.
 
@@ -1556,7 +1539,7 @@ Given a binary tree, determine if it is height-balanced.
 
 For this problem, a height-balanced binary tree is defined as:
 
-> a binary tree in which the left and right subtrees of *every* node differ in height by no more than 1.
+> a binary tree in which the left and right subtrees of _every_ node differ in height by no more than 1.
 
 **Example 1:**
 
@@ -1585,7 +1568,7 @@ For this problem, a height-balanced binary tree is defined as:
 
 Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
 
-For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of *every* node never differ by more than 1.
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of _every_ node never differ by more than 1.
 
 **Example:**
 
@@ -1633,7 +1616,7 @@ Basically, the deletion can be divided into two stages:
 -   `root` is a valid binary search tree.
 -   `-105 <= key <= 105`
 
-[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg "meeting-room-ii") ![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg "meeting-room-ii")
+[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg 'meeting-room-ii') ![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg 'meeting-room-ii')
 
     /**
      * @param {number[][]} intervals

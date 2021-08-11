@@ -1,17 +1,14 @@
 2021-06-03
 
-Python Study Guide for a JavaScript Programmer
-==============================================
+# Python Study Guide for a JavaScript Programmer
 
 ![](https://miro.medium.com/max/1970/1*3V9VOfPk_hrFdbEAd3j-QQ.png)![](https://miro.medium.com/max/52/0*eC4EvZcv6hhH88jX.png?q=20)![](https://miro.medium.com/max/647/0*eC4EvZcv6hhH88jX.png)![](https://miro.medium.com/max/60/0*Ez_1PZ93N4FfvkRr.png?q=20)![](https://miro.medium.com/max/608/0*Ez_1PZ93N4FfvkRr.png)![](https://miro.medium.com/max/60/0*eE3E5H0AoqkhqK1z.png?q=20)![](https://miro.medium.com/max/1648/0*eE3E5H0AoqkhqK1z.png)![](https://miro.medium.com/max/60/0*Q0CMqFd4PozLDFPB.png?q=20)![](https://miro.medium.com/max/1638/0*Q0CMqFd4PozLDFPB.png)![](https://miro.medium.com/max/3216/0*HQpndNhm1Z_xSoHb.png)![](https://miro.medium.com/max/60/0*qHzGRLTOMTf30miT.png?q=20)![](https://miro.medium.com/max/1614/0*qHzGRLTOMTf30miT.png)\[
 
 \](https://github.com/bgoonz)
 
-Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
-============================================================================
+# Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
 
-Basics
-======
+# Basics
 
 -   **PEP8** : Python Enhancement Proposals, style-guide for Python.
 
@@ -19,13 +16,11 @@ Basics
 
 > ‘print() == console.log()’
 
-\# is used to make comments in your code.
-=========================================
+# \# is used to make comments in your code.
 
-> *Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”*
+> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
 
-Numbers
-=======
+# Numbers
 
 -   Python has three types of numbers:
 
@@ -41,27 +36,25 @@ No Decimal Point
 
 > Consist of a real part and imaginary part.
 
-Boolean is a subtype of integer in Python.🤷‍♂️
-----------------------------------------------
+## Boolean is a subtype of integer in Python.🤷‍♂️
 
 > If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…
 
 > Than I am sure you will find the means to suspend your disbelief.
 
-KEEP IN MIND:
-=============
+# KEEP IN MIND:
 
 > **The i is switched to a j in programming.**
 
-T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \**when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
+T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \*_when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
 -   **Type Casting** : The process of converting one number to another.
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   *“\*\*” : Double asterisk for exponent.*
+-   _“\*\*” : Double asterisk for exponent._
 
--   *“//” : Integer Division.*
+-   _“//” : Integer Division._
 
 -   **There are no spaces between math operations in Python.**
 
@@ -69,8 +62,7 @@ T\*his is because the letter i is common place as the de facto index for any and
 
 -   **There are no ++ and – in Python, the only shorthand operators are:**
 
-Strings
-=======
+# Strings
 
 -   Python uses both single and double quotes.
 
@@ -80,11 +72,9 @@ Strings
 
 **Use the len() function to get the length of a string.**
 
-**Python uses zero-based indexing**
-===================================
+# **Python uses zero-based indexing**
 
-Python allows negative indexing (thank god!)
---------------------------------------------
+## Python allows negative indexing (thank god!)
 
 -   Python let’s you use ranges
 
@@ -110,10 +100,9 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 <!-- -->
 
--   \*Shorthand way to use format function is: \*print(f’Your name is {first\_name} {last\_name}’)
+-   \*Shorthand way to use format function is: \*print(f’Your name is {first_name} {last_name}’)
 
-Some useful string methods.
----------------------------
+## Some useful string methods.
 
 -   **Note that in JS join is used on an Array, in Python it is used on String.**
 
@@ -121,8 +110,7 @@ Some useful string methods.
 
 -   There are also many handy testing methods.
 
-Variables and Expressions
-=========================
+# Variables and Expressions
 
 -   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
 
@@ -132,24 +120,21 @@ Variables and Expressions
 
 <!-- -->
 
--   ***You can chain variable assignments to give multiple var names the same value.***
+-   **_You can chain variable assignments to give multiple var names the same value._**
 
-Use with caution as this is highly unreadable
----------------------------------------------
+## Use with caution as this is highly unreadable
 
-The value and type of a variable can be re-assigned at any time.
-----------------------------------------------------------------
+## The value and type of a variable can be re-assigned at any time.
 
 -   \*NaN does not exist in Python, but you can ‘create’ it like so: **print(float(“nan”))\***
 
--   *Python replaces null with none.*
+-   _Python replaces null with none._
 
 -   **\*none is an object** and can be directly assigned to a variable.\*
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
-Boolean Data Type
-=================
+# Boolean Data Type
 
 -   One of the biggest benefits of Python is that it reads more like English than JS does.
 
@@ -165,8 +150,7 @@ Boolean Data Type
 
 -   True and False must be capitalized
 
-Comparison Operators
-====================
+# Comparison Operators
 
 -   Python uses all the same equality operators as JS.
 
@@ -184,18 +168,15 @@ Comparison Operators
 >
 > **Short Circuit** : Stopping a program when a true or false has been reached.
 
-Identity vs Equality
-====================
+# Identity vs Equality
 
 -   In the Python community it is better to use is and is not over == or !=
 
-If Statements
-=============
+# If Statements
 
 > Remember the order of elif statements matter.
 
-While Statements
-================
+# While Statements
 
 -   Break statement also exists in Python.
 
@@ -203,8 +184,7 @@ While Statements
 
 -   As are continue statements
 
-Try/Except Statements
-=====================
+# Try/Except Statements
 
 -   Python equivalent to try/catch
 
@@ -232,13 +212,11 @@ Try/Except Statements
 
 -   Using duck typing to check to see if some value is able to use a certain method.
 
-Pass
-====
+# Pass
 
 -   Pass Keyword is required to write the JS equivalent of :
 
-Functions
-=========
+# Functions
 
 -   **Function definition includes:**
 
@@ -254,10 +232,9 @@ Functions
 
 -   **You can use default parameters just like in JS**
 
-**Keep in mind, default parameters must always come after regular parameters.**
--------------------------------------------------------------------------------
+## **Keep in mind, default parameters must always come after regular parameters.**
 
--   *You can specify arguments by name without destructuring in Python.*
+-   _You can specify arguments by name without destructuring in Python._
 
 <!-- -->
 
@@ -265,95 +242,73 @@ Functions
 
 toUpper = lambda s: s.upper()
 
-Notes
-=====
+# Notes
 
-Formatted Strings
------------------
+## Formatted Strings
 
 > Remember that in Python join() is called on a string with an array/list passed in as the argument. Python has a very powerful formatting engine. format() is also applied directly to strings.
 
-Comma Thousands Separator
-=========================
+# Comma Thousands Separator
 
-Date and Time
-=============
+# Date and Time
 
-Percentage
-==========
+# Percentage
 
-Data Tables
-===========
+# Data Tables
 
-**Python can be used to display html, css, and JS.** *It is common to use Python as an API (Application Programming Interface)*
+**Python can be used to display html, css, and JS.** _It is common to use Python as an API (Application Programming Interface)_
 
-Structured Data
----------------
+## Structured Data
 
-Sequence : The most basic data structure in Python where the index determines the order.
-----------------------------------------------------------------------------------------
+## Sequence : The most basic data structure in Python where the index determines the order.
 
 > List Tuple Range Collections : Unordered data structures, hashable values.
 
-Dictionaries Sets
------------------
+## Dictionaries Sets
 
-Iterable : Generic name for a sequence or collection; any object that can be iterated through.
-----------------------------------------------------------------------------------------------
+## Iterable : Generic name for a sequence or collection; any object that can be iterated through.
 
-Can be mutable or immutable. Built In Data Types
-------------------------------------------------
+## Can be mutable or immutable. Built In Data Types
 
-Lists are the python equivalent of arrays.
-==========================================
+# Lists are the python equivalent of arrays.
 
-You can instantiate
-===================
+# You can instantiate
 
-Test if a value is in a list.
------------------------------
+## Test if a value is in a list.
 
-Instantiated with parentheses
------------------------------
+## Instantiated with parentheses
 
-Sometimes instantiated without
-------------------------------
+## Sometimes instantiated without
 
-Tuple() built in can be used to convert other data into a tuple
----------------------------------------------------------------
+## Tuple() built in can be used to convert other data into a tuple
 
-Ranges : A list of numbers which can’t be changed; often used with for loops.
------------------------------------------------------------------------------
+## Ranges : A list of numbers which can’t be changed; often used with for loops.
 
 **Declared using one to three parameters**.
 
 > Start : opt. default 0, first \# in sequence. Stop : required next number past the last number in the sequence. Step : opt. default 1, difference between each number in the sequence.
 
-Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.
-----------------------------------------------------------------------------------------------------------------------
+## Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.
 
-Mutable.
---------
+## Mutable.
 
-***Declared with curly braces of the built in dict()***
+**_Declared with curly braces of the built in dict()_**
 
-> *Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.*
+> _Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
 
 **Use the in operator to see if a key exists in a dictionary.**
 
 S**ets : Unordered collection of distinct objects; objects that need to be hashable.**
 
-> *Always be unique, duplicate items are auto dropped from the set.*
+> _Always be unique, duplicate items are auto dropped from the set._
 
-Common Uses:
-------------
+## Common Uses:
 
 > Removing Duplicates Membership Testing Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.
 
 **Standard Set is mutable, Python has a immutable version called frozenset. Sets created by putting comma seperated values inside braces:**
 
-Also can use set constructor to automatically put it into a set.
-----------------------------------------------------------------
+## Also can use set constructor to automatically put it into a set.
 
 **filter(function, iterable) : creates new iterable of the same type which includes each item for which the function returns true.**
 
@@ -369,11 +324,9 @@ Also can use set constructor to automatically put it into a set.
 
 **enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
 
-(0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)
---------------------------------------------------------
+## (0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)
 
-(1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)
---------------------------------------------------------
+## (1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)
 
 > zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable. Functions that analyze iterable
 
@@ -383,30 +336,27 @@ Also can use set constructor to automatically put it into a set.
 
 **max(iterable, key=None) : returns the largest item in the iterable.**
 
-*key optional function which converts an item to a value to be compared. min works the same way as max*
+_key optional function which converts an item to a value to be compared. min works the same way as max_
 
 **sum(iterable) : used with a list of numbers to generate the total.**
 
-*There is a faster way to concatenate an array of strings into one string, so do not use sum for that.*
+_There is a faster way to concatenate an array of strings into one string, so do not use sum for that._
 
 **any(iterable) : returns True if any items in the iterable are true.**
 
 **all(iterable) : returns True is all items in the iterable are true.**
 
-Working with dictionaries
-=========================
+# Working with dictionaries
 
 **dir(dictionary) : returns the list of keys in the dictionary. Working with sets**
 
 **Union : The pipe | operator or union(\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.**
 
-Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.
------------------------------------------------------------------------------------------------------------
+## Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.
 
 **Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.**
 
-**For Statements In python, there is only one for loop.**
-=========================================================
+# **For Statements In python, there is only one for loop.**
 
 Always Includes:
 
@@ -416,7 +366,7 @@ Always Includes:
 
 **You can use the range function as the iterable for the for loop.**
 
-***Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.***
+**_Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list._**
 
 **You can loop and destructure at the same time.**
 
@@ -428,42 +378,41 @@ Always Includes:
 
 **You can use values() and keys() to loop over dictionaries.**
 
-*Prints red*
+_Prints red_
 
-*Prints 42*
+_Prints 42_
 
-*Prints color*
+_Prints color_
 
-*Prints age*
+_Prints age_
 
 **For loops can also iterate over both keys and values.**
 
 **Getting tuples**
 
-*Prints (‘color’, ‘red’)*
+_Prints (‘color’, ‘red’)_
 
-*Prints (‘age’, 42)*
+_Prints (‘age’, 42)_
 
-*Destructuring to values*
+_Destructuring to values_
 
-*Prints Key: age Value: 42*
+_Prints Key: age Value: 42_
 
-*Prints Key: color Value: red*
+_Prints Key: color Value: red_
 
 **Looping over string**
 
 **When you order arguments within a function or function call, the args need to occur in a particular order:**
 
-*formal positional args.*
+_formal positional args._
 
 \*args
 
-*keyword args with default values*
+_keyword args with default values_
 
 \*\*kwargs
 
-**Importing in Python**
-=======================
+# **Importing in Python**
 
 **Modules are similar to packages in Node.js** Come in different types:
 
@@ -475,19 +424,17 @@ Custom.
 
 **All loaded using import statements.**
 
-**Terms**
-=========
+# **Terms**
 
 > module : Python code in a separate file. package : Path to a directory that contains modules. [**init.py**](http://init.py/) : Default file for a package. submodule : Another file in a module’s folder. function : Function in a module.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
 
-*Try to avoid importing with wildcards in Python.*
+_Try to avoid importing with wildcards in Python._
 
-*Use multiple lines for clarity when importing.*
+_Use multiple lines for clarity when importing._
 
-Watching Out for Python 2
-=========================
+# Watching Out for Python 2
 
 **Python 3 removed &lt;&gt; and only uses !=**
 
@@ -497,24 +444,18 @@ Watching Out for Python 2
 
 **ConfigParser was renamed to configparser sets were killed in favor of set() class.**
 
-**print was a statement in P2, but is a function in P3.**
----------------------------------------------------------
+## **print was a statement in P2, but is a function in P3.**
 
-Topics revisited (in python syntax)
-===================================
+# Topics revisited (in python syntax)
 
-Cheat Sheet:
-============
+# Cheat Sheet:
 
-If you found this guide helpful feel free to checkout my github/gists where I host similar content:
----------------------------------------------------------------------------------------------------
+## If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 [bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
 
 Or Checkout my personal Resource Site:
 
-Python Cheat Sheet:
-===================
+# Python Cheat Sheet:
 
-If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
-===================================================================================================
+# If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:

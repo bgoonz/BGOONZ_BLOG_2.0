@@ -1,10 +1,8 @@
-Basic Web Development Environment Setup
-=======================================
+# Basic Web Development Environment Setup
 
 > Windows Subsystem for Linux (WSL) and Ubuntu
 
-Windows Subsystem for Linux (WSL) and Ubuntu
---------------------------------------------
+## Windows Subsystem for Linux (WSL) and Ubuntu
 
 [![Bryan Guner](https://miro.medium.com/fit/c/96/96/1*ao1cHo7EQ4faDV8YNJwh_Q.png)](https://bryanguner.medium.com/?source=post_page-----9f36c3f15afe--------------------------------)
 
@@ -126,8 +124,7 @@ sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar
 \# FileZilla - a FTP client  
 sudo apt-get install -y filezilla
 
-If you found this guide helpful feel free to checkout my github/gists where I host similar content:
----------------------------------------------------------------------------------------------------
+## If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 [bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
 

@@ -1,9 +1,8 @@
-Data Structures In Python
-=========================
+# Data Structures In Python
 
 The idea behind big O notation
 
-------------------------------------------------------------------------
+---
 
 ### Data Structures In Python
 
@@ -15,20 +14,20 @@ With big O notation we express the runtime in terms of
 
 ### how quickly it grows relative to the input, as the input gets arbitrarily large\_.
 
-1.  <span id="4b38">**how quickly the runtime grows** — It’s hard to pin down the *exact runtime* of an algorithm.</span>
+1.  <span id="4b38">**how quickly the runtime grows** — It’s hard to pin down the _exact runtime_ of an algorithm.</span>
 
 -   <span id="6a4e">It depends on the speed of the processor,</span>
 -   <span id="21a0">what else the computer is running, etc.</span>
 
-So instead of talking about the runtime directly, we use big O notation to talk about *how quickly the runtime grows*.
+So instead of talking about the runtime directly, we use big O notation to talk about _how quickly the runtime grows_.
 
 1.  <span id="f7ef">**relative to the input** — If we were measuring our runtime directly,</span>
 
-we could express our speed in seconds. Since we’re measuring *how quickly our runtime grows*, we need to express our speed in terms of…something else. With Big O notation, we use the size of the input, which we call “n.” So we can say things like the runtime grows “on the order of the size of the input” () or “on the order of the square of the size of the input” (). 3. **as the input gets arbitrarily large** — 
+we could express our speed in seconds. Since we’re measuring _how quickly our runtime grows_, we need to express our speed in terms of…something else. With Big O notation, we use the size of the input, which we call “n.” So we can say things like the runtime grows “on the order of the size of the input” () or “on the order of the square of the size of the input” (). 3. **as the input gets arbitrarily large** —
 
 Our algorithm may have steps that seem expensive when n is small but are eclipsed eventually by other steps as n gets huge. For big O analysis, we care most about the stuff that grows fastest as the input grows, because everything else is quickly eclipsed as n gets very large. (If you know what an asymptote is, you might see why “big O analysis” is sometimes called “asymptotic analysis.”)hy “big O analysis” is sometimes called “asymptotic analysis.”)
 
-###  
+###
 
 #### Data Structures Reference
 
@@ -39,8 +38,6 @@ Stores things in order. Has quick lookups by index.
 ### Linked List
 
 Also stores things in order. Faster insertions and deletions than arrays, but slower lookups (you have to “walk down” the whole list).
-
-  
 
 ### Queue
 
@@ -94,77 +91,77 @@ Since node 3 has edges to nodes 1 and 2, graph\[3\]\[1\] and graph\[3\]\[2\] hav
 
 a = LinkedListNode(5) b = LinkedListNode(1) c = LinkedListNode(9) a.next = b b.next = c
 
-------------------------------------------------------------------------
+---
 
 ### Arrays
 
-Ok, so we know how to store individual numbers. Let’s talk about storing *several numbers*.
+Ok, so we know how to store individual numbers. Let’s talk about storing _several numbers_.
 
-That’s right, things are starting to *heat up*.
+That’s right, things are starting to _heat up_.
 
 Suppose we wanted to keep a count of how many bottles of kombucha we drink every day.
 
-Let’s store each day’s kombucha count in an 8-bit, fixed-width, unsigned integer. That should be plenty — we’re not likely to get through more than 256 (2⁸) bottles in a *single day*, right?
+Let’s store each day’s kombucha count in an 8-bit, fixed-width, unsigned integer. That should be plenty — we’re not likely to get through more than 256 (2⁸) bottles in a _single day_, right?
 
 And let’s store the kombucha counts right next to each other in RAM, starting at memory address 0:
 
-Bam. That’s an **array**. RAM is *basically* an array already.
+Bam. That’s an **array**. RAM is _basically_ an array already.
 
-Just like with RAM, the elements of an array are numbered. We call that number the **index** of the array element (plural: indices). In *this* example, each array element’s index is the same as its address in RAM.
+Just like with RAM, the elements of an array are numbered. We call that number the **index** of the array element (plural: indices). In _this_ example, each array element’s index is the same as its address in RAM.
 
 But that’s not usually true. Suppose another program like Spotify had already stored some information at memory address 2:
 
 We’d have to start our array below it, for example at memory address 3. So index 0 in our array would be at memory address 3, and index 1 would be at memory address 4, etc.:
 
-Suppose we wanted to get the kombucha count at index 4 in our array. How do we figure out what *address in memory* to go to? Simple math:
+Suppose we wanted to get the kombucha count at index 4 in our array. How do we figure out what _address in memory_ to go to? Simple math:
 
 Take the array’s starting address (3), add the index we’re looking for (4), and that’s the address of the item we’re looking for. 3 + 4 = 7. In general, for getting the nth item in our array:
 
 \\text{address of nth item in array} = \\text{address of array start} + n
 
-This works out nicely because the size of the addressed memory slots and the size of each kombucha count are *both* 1 byte. So a slot in our array corresponds to a slot in RAM.
+This works out nicely because the size of the addressed memory slots and the size of each kombucha count are _both_ 1 byte. So a slot in our array corresponds to a slot in RAM.
 
-But that’s not always the case. In fact, it’s *usually not* the case. We *usually* use *64-bit* integers.
+But that’s not always the case. In fact, it’s _usually not_ the case. We _usually_ use _64-bit_ integers.
 
-So how do we build an array of *64-bit* (8 byte) integers on top of our *8-bit* (1 byte) memory slots?
+So how do we build an array of _64-bit_ (8 byte) integers on top of our _8-bit_ (1 byte) memory slots?
 
-We simply give each array index *8* address slots instead of 1:
+We simply give each array index _8_ address slots instead of 1:
 
 So we can still use simple math to grab the start of the nth item in our array — just gotta throw in some multiplication:
 
 \\text{address of nth item in array} = \\text{address of array start} + (n \* \\text{size of each item in bytes})
 
-Don’t worry — adding this multiplication doesn’t really slow us down. Remember: addition, subtraction, multiplication, and division of fixed-width integers takes time. So *all* the math we’re using here to get the address of the nth item in the array takes time.
+Don’t worry — adding this multiplication doesn’t really slow us down. Remember: addition, subtraction, multiplication, and division of fixed-width integers takes time. So _all_ the math we’re using here to get the address of the nth item in the array takes time.
 
-And remember how we said the memory controller has a *direct connection* to each slot in RAM? That means we can read the stuff at any given memory address in time.
+And remember how we said the memory controller has a _direct connection_ to each slot in RAM? That means we can read the stuff at any given memory address in time.
 
 **Together, this means looking up the contents of a given array index is time.** This fast lookup capability is the most important property of arrays.
 
-But the formula we used to get the address of the nth item in our array only works *if*:
+But the formula we used to get the address of the nth item in our array only works _if_:
 
-1.  <span id="13a2">**Each item in the array is the *same size*** (takes up the same</span>
+1.  <span id="13a2">**Each item in the array is the _same size_** (takes up the same</span>
 
 number of bytes).
 
-1.  <span id="b7c3">**The array is *uninterrupted* (contiguous) in memory**. There can’t</span>
+1.  <span id="b7c3">**The array is _uninterrupted_ (contiguous) in memory**. There can’t</span>
 
 be any gaps in the array…like to “skip over” a memory slot Spotify was already using.
 
-These things make our formula for finding the nth item *work* because they make our array *predictable*. We can *predict* exactly where in memory the nth element of our array will be.
+These things make our formula for finding the nth item _work_ because they make our array _predictable_. We can _predict_ exactly where in memory the nth element of our array will be.
 
-But they also constrain what kinds of things we can put in an array. Every item has to be the same size. And if our array is going to store a *lot* of stuff, we’ll need a *bunch* of uninterrupted free space in RAM. Which gets hard when most of our RAM is already occupied by other programs (like Spotify).
+But they also constrain what kinds of things we can put in an array. Every item has to be the same size. And if our array is going to store a _lot_ of stuff, we’ll need a _bunch_ of uninterrupted free space in RAM. Which gets hard when most of our RAM is already occupied by other programs (like Spotify).
 
 That’s the tradeoff. Arrays have fast lookups ( time), but each item in the array needs to be the same size, and you need a big block of uninterrupted free memory to store the array.
 
-###  
+###
 
 #### Pointers
 
 Remember how we said every item in an array had to be the same size? Let’s dig into that a little more.
 
-Suppose we wanted to store a bunch of ideas for baby names. Because we’ve got some *really* cute ones.
+Suppose we wanted to store a bunch of ideas for baby names. Because we’ve got some _really_ cute ones.
 
-Each name is a string. Which is really an array. And now we want to store *those arrays* in an array. *Whoa*.
+Each name is a string. Which is really an array. And now we want to store _those arrays_ in an array. _Whoa_.
 
 Now, what if our baby names have different lengths? That’d violate our rule that all the items in an array need to be the same size!
 
@@ -172,13 +169,13 @@ We could put our baby names in arbitrarily large arrays (say, 13 characters each
 
 “Wigglesworth” is a cute baby name, right?
 
-But look at all that wasted space after “Bill”. And what if we wanted to store a string that was *more* than 13 characters? We’d be out of luck.
+But look at all that wasted space after “Bill”. And what if we wanted to store a string that was _more_ than 13 characters? We’d be out of luck.
 
-There’s a better way. Instead of storing the strings right inside our array, let’s just put the strings wherever we can fit them in memory. Then we’ll have each element in our array hold the *address in memory* of its corresponding string. Each address is an integer, so really our outer array is just an array of integers. We can call each of these integers a **pointer**, since it points to another spot in memory.
+There’s a better way. Instead of storing the strings right inside our array, let’s just put the strings wherever we can fit them in memory. Then we’ll have each element in our array hold the _address in memory_ of its corresponding string. Each address is an integer, so really our outer array is just an array of integers. We can call each of these integers a **pointer**, since it points to another spot in memory.
 
 The pointers are marked with a \* at the beginning.
 
-Pretty clever, right? This fixes *both* the disadvantages of arrays:
+Pretty clever, right? This fixes _both_ the disadvantages of arrays:
 
 1.  <span id="5925">The items don’t have to be the same length — each string can be as</span>
 
@@ -190,35 +187,35 @@ strings next to each other — we can place each of them separately, whereve
 
 We fixed it! No more tradeoffs. Right?
 
-Nope. Now we have a *new* tradeoff:
+Nope. Now we have a _new_ tradeoff:
 
-Remember how the memory controller sends the contents of *nearby* memory addresses to the processor with each read? And the processor caches them? So reading sequential addresses in RAM is *faster* because we can get most of those reads right from the cache?
+Remember how the memory controller sends the contents of _nearby_ memory addresses to the processor with each read? And the processor caches them? So reading sequential addresses in RAM is _faster_ because we can get most of those reads right from the cache?
 
 Our original array was very **cache-friendly**, because everything was sequential. So reading from the 0th index, then the 1st index, then the 2nd, etc. got an extra speedup from the processor cache.
 
-**But the pointers in this array make it *not* cache-friendly**, because the baby names are scattered randomly around RAM. So reading from the 0th index, then the 1st index, etc. doesn’t get that extra speedup from the cache.
+**But the pointers in this array make it _not_ cache-friendly**, because the baby names are scattered randomly around RAM. So reading from the 0th index, then the 1st index, etc. doesn’t get that extra speedup from the cache.
 
-That’s the tradeoff. This pointer-based array requires less uninterrupted memory and can accommodate elements that aren’t all the same size, *but* it’s *slower* because it’s not cache-friendly.
+That’s the tradeoff. This pointer-based array requires less uninterrupted memory and can accommodate elements that aren’t all the same size, _but_ it’s _slower_ because it’s not cache-friendly.
 
-This slowdown isn’t reflected in the big O time cost. Lookups in this pointer-based array are *still* time.
+This slowdown isn’t reflected in the big O time cost. Lookups in this pointer-based array are _still_ time.
 
-###  
+###
 
 ### Linked lists
 
-Our word processor is definitely going to need fast appends — appending to the document is like the *main thing* you do with a word processor.
+Our word processor is definitely going to need fast appends — appending to the document is like the _main thing_ you do with a word processor.
 
-Can we build a data structure that can store a string, has fast appends, *and* doesn’t require you to say how long the string will be ahead of time?
+Can we build a data structure that can store a string, has fast appends, _and_ doesn’t require you to say how long the string will be ahead of time?
 
-Let’s focus first on not having to know the length of our string ahead of time. Remember how we used *pointers* to get around length issues with our array of baby names?
+Let’s focus first on not having to know the length of our string ahead of time. Remember how we used _pointers_ to get around length issues with our array of baby names?
 
 What if we pushed that idea even further?
 
-**What if each *character* in our string were a *two-index array* with:**
+**What if each _character_ in our string were a _two-index array_ with:**
 
 1.  <span id="c2e9">the character itself </span>
 
-2. a pointer to the next character
+2.  a pointer to the next character
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*pNqDJJPz8tOruH51VDXJkA.png" class="graf-image" /></figure>We would call each of these two-item arrays a **node** and we’d call this series of nodes a **linked list**.
 
@@ -226,15 +223,13 @@ What if we pushed that idea even further?
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*Thlwxph-5BmpYLmHjmQm9w.png" class="graf-image" /></figure>
 
-  
-
-Notice how we’re free to store our nodes wherever we can find two open slots in memory. They don’t have to be next to each other. They don’t even have to be *in order*:
+Notice how we’re free to store our nodes wherever we can find two open slots in memory. They don’t have to be next to each other. They don’t even have to be _in order_:
 
 “But that’s not cache-friendly,” you may be thinking. Good point! We’ll get to that.
 
 The first node of a linked list is called the **head**, and the last node is usually called the **tail**.
 
-Confusingly, some people prefer to use “tail” to refer to *everything after the head* of a linked list. In an interview it’s fine to use either definition. Briefly say which definition you’re using, just to be clear.
+Confusingly, some people prefer to use “tail” to refer to _everything after the head_ of a linked list. In an interview it’s fine to use either definition. Briefly say which definition you’re using, just to be clear.
 
 It’s important to have a pointer variable referencing the head of the list — otherwise we’d be unable to find our way back to the start of the list!
 
@@ -252,19 +247,19 @@ And tweak some pointers:
 
 ​2. Point the last letter’s next to the letter we’re appending (“S”).
 
-​3. Update the tail pointer to point to our *new* last letter, “S”.
+​3. Update the tail pointer to point to our _new_ last letter, “S”.
 
 That’s time.
 
 Why is it time? Because the runtime doesn’t get bigger if the string gets bigger. No matter how many characters are in our string, we still just have to tweak a couple pointers for any append.
 
-Now, what if instead of a linked list, our string had been a *dynamic array*? We might not have any room at the end, forcing us to do one of those doubling operations to make space:
+Now, what if instead of a linked list, our string had been a _dynamic array_? We might not have any room at the end, forcing us to do one of those doubling operations to make space:
 
-So with a dynamic array, our append would have a *worst-case* time cost of .
+So with a dynamic array, our append would have a _worst-case_ time cost of .
 
 **Linked lists have worst-case -time appends, which is better than the worst-case time of dynamic arrays.**
 
-That *worst-case* part is important. The *average case* runtime for appends to linked lists and dynamic arrays is the same: .
+That _worst-case_ part is important. The _average case_ runtime for appends to linked lists and dynamic arrays is the same: .
 
 Now, what if we wanted to *pre*pend something to our string? Let’s say we wanted to put a “B” at the beginning.
 
@@ -276,53 +271,51 @@ And tweak some pointers:
 
 Bam. time again.
 
-But if our string were a *dynamic array*…
+But if our string were a _dynamic array_…
 
 And we wanted to add in that “B”:
 
-Eep. We have to *make room* for the “B”!
+Eep. We have to _make room_ for the “B”!
 
-We have to move *each character* one space down:
+We have to move _each character_ one space down:
 
-*Now* we can drop the “B” in there:
+_Now_ we can drop the “B” in there:
 
 What’s our time cost here?
 
-It’s all in the step where we made room for the first letter. We had to move *all n* characters in our string. One at a time. That’s time.
+It’s all in the step where we made room for the first letter. We had to move _all n_ characters in our string. One at a time. That’s time.
 
 **So linked lists have faster *pre*pends ( time) than dynamic arrays ( time).**
 
-No “worst case” caveat this time — prepends for dynamic arrays are *always* time. And prepends for linked lists are *always* time.
+No “worst case” caveat this time — prepends for dynamic arrays are _always_ time. And prepends for linked lists are _always_ time.
 
 These quick appends and prepends for linked lists come from the fact that linked list nodes can go anywhere in memory. They don’t have to sit right next to each other the way items in an array do.
 
-So if linked lists are so great, why do we usually store strings in an array? **Because** <a href="http://127.0.0.1:5500/DS_ALGO/DS-ALGO-OFFICIAL/CONTENT/Resources/My-Data-Structures-Notes/Data-Structures-Concepts.html#constant-time-array-lookups" class="markup--anchor markup--p-anchor"><strong>arrays have -time lookups</strong></a>**.** And those constant-time lookups *come from* the fact that all the array elements are lined up next to each other in memory.
+So if linked lists are so great, why do we usually store strings in an array? **Because** <a href="http://127.0.0.1:5500/DS_ALGO/DS-ALGO-OFFICIAL/CONTENT/Resources/My-Data-Structures-Notes/Data-Structures-Concepts.html#constant-time-array-lookups" class="markup--anchor markup--p-anchor"><strong>arrays have -time lookups</strong></a>**.** And those constant-time lookups _come from_ the fact that all the array elements are lined up next to each other in memory.
 
 Lookups with a linked list are more of a process, because we have no way of knowing where the ith node is in memory. So we have to walk through the linked list node by node, counting as we go, until we hit the ith item.
 
-def get\_ith\_item\_in\_linked\_list(head, i): if i &lt; 0: raise ValueError(“i can’t be negative: %d” % i) current\_node = head current\_position = 0 while current\_node: if current\_position == i: \# Found it! return current\_node \# Move on to the next node current\_node = current\_node.next current\_position += 1 raise ValueError(‘List has fewer than i + 1 (%d) nodes’ % (i + 1))
+def get_ith_item_in_linked_list(head, i): if i &lt; 0: raise ValueError(“i can’t be negative: %d” % i) current_node = head current_position = 0 while current_node: if current_position == i: \# Found it! return current_node \# Move on to the next node current_node = current_node.next current_position += 1 raise ValueError(‘List has fewer than i + 1 (%d) nodes’ % (i + 1))
 
 That’s i + 1 steps down our linked list to get to the ith node (we made our function zero-based to match indices in arrays). **So linked lists have -time lookups.** Much slower than the -time lookups for arrays and dynamic arrays.
 
-Not only that — **walking down a linked list is *not* cache-friendly.** Because the next node could be *anywhere* in memory, we don’t get any benefit from the processor cache. This means lookups in a linked list are even slower.
+Not only that — **walking down a linked list is _not_ cache-friendly.** Because the next node could be _anywhere_ in memory, we don’t get any benefit from the processor cache. This means lookups in a linked list are even slower.
 
-So the tradeoff with linked lists is they have faster prepends and faster appends than dynamic arrays, *but* they have slower lookups.
+So the tradeoff with linked lists is they have faster prepends and faster appends than dynamic arrays, _but_ they have slower lookups.
 
-###  
+###
 
-------------------------------------------------------------------------
+---
 
 ###  Doubly Linked Lists
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*-7V4JTr5aQ4LrsClVr-xuw.png" class="graf-image" /></figure>  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*-7V4JTr5aQ4LrsClVr-xuw.png" class="graf-image" /></figure>
 
 In a basic linked list, each item stores a single pointer to the next element.
 
-In a **doubly linked list**, items have pointers to the next *and the previous* nodes.
+In a **doubly linked list**, items have pointers to the next _and the previous_ nodes.
 
-Doubly linked lists allow us to traverse our list *backwards*. In a *singly* linked list, if you just had a pointer to a node in the *middle* of a list, there would be *no way* to know what nodes came before it. Not a problem in a doubly linked list.
-
-  
+Doubly linked lists allow us to traverse our list _backwards_. In a _singly_ linked list, if you just had a pointer to a node in the _middle_ of a list, there would be _no way_ to know what nodes came before it. Not a problem in a doubly linked list.
 
 ### Not cache-friendly
 
@@ -332,7 +325,7 @@ Most computers have <a href="https://www.interviewcake.com/article/data-structur
 
 So iterating through a linked list is usually quite a bit slower than iterating through the items in an array, even though they’re both theoretically time.
 
-###  
+###
 
 #### Hash tables
 
@@ -342,37 +335,37 @@ For example, suppose we wanted to count how many times each ASCII character appe
 
 We can use arrays in a clever way here. Remember — characters are just numbers. In ASCII (a common character encoding) ‘A’ is 65, ‘B’ is 66, etc.
 
-So we can use the character(‘s number value) as the *index* in our array, and store the *count* for that character *at that index* in the array:
+So we can use the character(‘s number value) as the _index_ in our array, and store the _count_ for that character _at that index_ in the array:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*MLTDan4kVmZI6C86UrEYVA.png" class="graf-image" /></figure>  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*MLTDan4kVmZI6C86UrEYVA.png" class="graf-image" /></figure>
 
 With this array, we can look up (and edit) the count for any character in constant time. Because we can access any index in our array in constant time.
 
-Something interesting is happening here — this array isn’t just a list of values. This array is storing *two* things: characters and counts. The characters are *implied* by the indices.
+Something interesting is happening here — this array isn’t just a list of values. This array is storing _two_ things: characters and counts. The characters are _implied_ by the indices.
 
-**So we can think of an array as a *table* with *two columns*…except you don’t really get to pick the values in one column (the indices) — they’re always 0, 1, 2, 3, etc.**
+**So we can think of an array as a _table_ with _two columns_…except you don’t really get to pick the values in one column (the indices) — they’re always 0, 1, 2, 3, etc.**
 
-But what if we wanted to put *any* value in that column and still get quick lookups?
+But what if we wanted to put _any_ value in that column and still get quick lookups?
 
-Suppose we wanted to count the number of times each *word* appears in Romeo and Juliet. Can we adapt our array?
+Suppose we wanted to count the number of times each _word_ appears in Romeo and Juliet. Can we adapt our array?
 
-Translating a *character* into an array index was easy. But we’ll have to do something more clever to translate a *word* (a string) into an array index…
+Translating a _character_ into an array index was easy. But we’ll have to do something more clever to translate a _word_ (a string) into an array index…
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*hfr8DtpZy_jk8cEs5Mu97g.png" class="graf-image" /></figure>  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*hfr8DtpZy_jk8cEs5Mu97g.png" class="graf-image" /></figure>
 
 Here’s one way we could do it:
 
 Grab the number value for each character and add those up.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*eeNtdxkd24nJHWnQvXcBGQ.png" class="graf-image" /></figure>  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*eeNtdxkd24nJHWnQvXcBGQ.png" class="graf-image" /></figure>
 
-The result is 429. But what if we only have *30* slots in our array? We’ll use a common trick for forcing a number into a specific range: the modulus operator (%). Modding our sum by 30 ensures we get a whole number that’s less than 30 (and at least 0):
+The result is 429. But what if we only have _30_ slots in our array? We’ll use a common trick for forcing a number into a specific range: the modulus operator (%). Modding our sum by 30 ensures we get a whole number that’s less than 30 (and at least 0):
 
 429 \\: \\% \\: 30 = 9
 
 Bam. That’ll get us from a word (or any string) to an array index.
 
-This data structure is called a **hash table** or **hash map**. In our hash table, the *counts* are the **values** and the *words* (“lies,” etc.) are the **keys** (analogous to the *indices* in an array). The process we used to translate a key into an array index is called a **hashing function**.
+This data structure is called a **hash table** or **hash map**. In our hash table, the _counts_ are the **values** and the _words_ (“lies,” etc.) are the **keys** (analogous to the _indices_ in an array). The process we used to translate a key into an array index is called a **hashing function**.
 
 !\[A blank array except for a 20, labeled as the value, stored at index
 
@@ -384,15 +377,11 @@ The hashing functions used in modern systems get pretty complicated — the 
 
 Note that our quick lookups are only in one direction — we can quickly get the value for a given key, but the only way to get the key for a given value is to walk through all the values and keys.
 
-  
-
 Same thing with arrays — we can quickly look up the value at a given index, but the only way to figure out the index for a given value is to walk through the whole array.
 
 One problem — what if two keys hash to the same index in our array? Look at “lies” and “foes”:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*hGd8tFErxDF13NiMUmo2cA.png" class="graf-image" /></figure>  
-
-  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*hGd8tFErxDF13NiMUmo2cA.png" class="graf-image" /></figure>
 
 They both sum up to 429! So of course they’ll have the same answer when we mod by 30:
 
@@ -400,17 +389,17 @@ They both sum up to 429! So of course they’ll have the same answer when we mod
 
 So our hashing function gives us the same answer for “lies” and “foes.” This is called a **hash collision**. There are a few different strategies for dealing with them.
 
-Here’s a common one: instead of storing the actual values in our array, let’s have each array slot hold a *pointer* to a *linked list* holding the counts for all the words that hash to that index:
+Here’s a common one: instead of storing the actual values in our array, let’s have each array slot hold a _pointer_ to a _linked list_ holding the counts for all the words that hash to that index:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*yxfOGRLcCxCULyKwmkY-mA.png" class="graf-image" /></figure>  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*yxfOGRLcCxCULyKwmkY-mA.png" class="graf-image" /></figure>
 
-One problem — how do we know which count is for “lies” and which is for “foes”? To fix this, we’ll store the *word* as well as the count in each linked list node:
+One problem — how do we know which count is for “lies” and which is for “foes”? To fix this, we’ll store the _word_ as well as the count in each linked list node:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*qzIReSNqaYI9Dgtidf6zFw.png" class="graf-image" /></figure>“But wait!” you may be thinking, “Now lookups in our hash table take time in the worst case, since we have to walk down a linked list.” That’s true! You could even say that in the worst case *every* key creates a hash collision, so our whole hash table *degrades to a linked list*.
 
-In industry though, we usually wave our hands and say **collisions are rare enough that on *average* lookups in a hash table are time**. And there are fancy algorithms that keep the number of collisions low and keep the lengths of our linked lists nice and short.
+In industry though, we usually wave our hands and say **collisions are rare enough that on _average_ lookups in a hash table are time**. And there are fancy algorithms that keep the number of collisions low and keep the lengths of our linked lists nice and short.
 
-But that’s sort of the tradeoff with hash tables. You get fast lookups by key…except *some* lookups could be slow. And of course, you only get those fast lookups in one direction — looking up the *key* for a given *value* still takes time. 
+But that’s sort of the tradeoff with hash tables. You get fast lookups by key…except _some_ lookups could be slow. And of course, you only get those fast lookups in one direction — looking up the _key_ for a given _value_ still takes time.
 
 ### Breadth-First Search (BFS) and Breadth-First Traversal
 
@@ -420,15 +409,15 @@ Breadth-first search is like throwing a stone in the center of a pond. The nodes
 
 Here’s a how a BFS would traverse this tree, starting with the root:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*rfDuWJ751EkuKsOnpQgf5w.png" class="graf-image" /></figure>  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*rfDuWJ751EkuKsOnpQgf5w.png" class="graf-image" /></figure>
 
 We’d visit all the immediate children (all the nodes that’re one step away from our starting node):
 
-Then we’d move on to all *those* nodes’ children (all the nodes that’re *two steps* away from our starting node):
+Then we’d move on to all _those_ nodes’ children (all the nodes that’re _two steps_ away from our starting node):
 
 And so on:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*f4-3MJeN358hr4WFKlJ_wg.png" class="graf-image" /></figure>  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*f4-3MJeN358hr4WFKlJ_wg.png" class="graf-image" /></figure>
 
 Until we reach the end.
 
@@ -442,19 +431,17 @@ any other reachable node. A depth-first search will not necessarily find the sho
 
 Disadvantages
 
--   <span id="e7ef">A BFS on a binary tree *generally* requires more memory than a DFS.</span>
-
-  
+-   <span id="e7ef">A BFS on a binary tree _generally_ requires more memory than a DFS.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*a3CyhFdhi_7CsOf5iwLwZw.png" class="graf-image" /></figure>### Binary Search Tree
 
-A **binary tree** is a **tree** where &lt;==(***every node has two or fewer children***)==&gt;. The children are usually called ***left*** and ***right***.
+A **binary tree** is a **tree** where &lt;==(**_every node has two or fewer children_**)==&gt;. The children are usually called **_left_** and **_right_**.
 
 class BinaryTreeNode(object):
 
 This lets us build a structure like this:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*xCMjvShUIAYY7OSewzzXpQ.png" class="graf-image" /></figure>  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*xCMjvShUIAYY7OSewzzXpQ.png" class="graf-image" /></figure>
 
 That particular example is special because every level of the tree is completely full. There are no “gaps.” We call this kind of tree “**perfect**.”
 
@@ -462,13 +449,13 @@ Binary trees have a few interesting properties when they’re perfect:
 
 **Property 1: the number of total nodes on each “level” doubles as we move down the tree.**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*A-4qyUowaBB9grMEhkwCcw.png" class="graf-image" /></figure>  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*A-4qyUowaBB9grMEhkwCcw.png" class="graf-image" /></figure>
 
-**Property 2: the number of nodes on the last level is equal to the sum of the number of nodes on all other levels (plus 1).** In other words, about *half* of our nodes are on the last level.
+**Property 2: the number of nodes on the last level is equal to the sum of the number of nodes on all other levels (plus 1).** In other words, about _half_ of our nodes are on the last level.
 
-&lt;==(***Let’s call the number of nodes n,***)==&gt;
+&lt;==(**_Let’s call the number of nodes n,_**)==&gt;
 
-&lt;==(***and the height of the tree h.*** )==&gt;
+&lt;==(**_and the height of the tree h._** )==&gt;
 
 **h can also be thought of as the “number of levels.”**
 
@@ -482,7 +469,7 @@ If we zero-index the levels, the number of nodes on the xth level is exactly 2^x
 2.  <span id="f3e6">Level 1: 2¹ nodes,</span>
 3.  <span id="bd51">Level 2: 2² nodes,</span>
 4.  <span id="8d32">Level 3: 2³ nodes,</span>
-5.  <span id="4217">*etc*</span>
+5.  <span id="4217">_etc_</span>
 
 So our total number of nodes is:
 
@@ -504,11 +491,7 @@ But we can simplify.
 
 -   <span id="dc7f">We know the number of nodes on the last level is 2^{h-1},</span>
 
-  
-
 So:
-
-  
 
 **n = 2^{h-1} \* 2–1 n = 2^{h-1} \* 2¹ — 1 n = 2^{h-1+1}- 1 n = 2^{h} — 1**
 
@@ -540,47 +523,29 @@ Graph =====
 
 Let’s put those bits to use. Let’s store some stuff. Starting with numbers.
 
-The number system we usually use (the one you probably learned in elementary school) is called **base 10**, because each digit has *ten* possible values (1, 2, 3, 4, 5, 6, 7, 8, 9, and 0).
+The number system we usually use (the one you probably learned in elementary school) is called **base 10**, because each digit has _ten_ possible values (1, 2, 3, 4, 5, 6, 7, 8, 9, and 0).
 
-But computers don’t have digits with ten possible values. They have *bits* with *two* possible values. So they use **base 2** numbers.
+But computers don’t have digits with ten possible values. They have _bits_ with _two_ possible values. So they use **base 2** numbers.
 
 Base 10 is also called **decimal**. Base 2 is also called **binary**.
 
 <figure><img src="https://cdn-images-1.medium.com/max/2560/1*b3LwD1x5v48TlzHXgoaDtg.png" class="graf-image" /></figure>
 
-  
-
 -   <span id="c9ce">10⁰=1 \* 10¹=10 \* 10²=100 \* 10³=1000 \* etc.</span>
 
-**The places in *binary* (base 2) are sequential powers of *2*:**
+**The places in _binary_ (base 2) are sequential powers of _2_:**
 
 -   <span id="3622">2⁰=1 \* 2¹=2 \* 2²=4 \* 2³=8 \* etc.</span>
 
-So let’s take that same “101” but this time let’s read it as a *binary* number:
+So let’s take that same “101” but this time let’s read it as a _binary_ number:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*qfOiEoP3-9P_vTt9hlSWLQ.png" class="graf-image" /></figure>Reading this from right to left: we have a 1 in the ones place, a 0 in the twos place, and a 1 in the fours place. So our total is 4 + 0 + 1 which is 5.
 
-  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*GtnQucEpPbc_B92TXo0gWg.png" class="graf-image" /></figure>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*GtnQucEpPbc_B92TXo0gWg.png" class="graf-image" /></figure>  
+---
 
-  
-
-  
-
-  
-
-  
-
-------------------------------------------------------------------------
-
-  
-
-------------------------------------------------------------------------
-
-  
-
-  
+---
 
 ### Variables and Expressions
 
@@ -622,7 +587,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 -   <span id="989e">  
     </span>
 
-------------------------------------------------------------------------
+---
 
 ### Boolean Data Type
 
@@ -647,7 +612,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 -   <span id="8bbf">  
     </span>
 
-------------------------------------------------------------------------
+---
 
 ### Comparison Operators
 
@@ -677,7 +642,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 -   <span id="49da">  
     </span>
 
-------------------------------------------------------------------------
+---
 
 ### Identity vs Equality
 
@@ -685,7 +650,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
 -   <span id="48e4">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
 
-------------------------------------------------------------------------
+---
 
 ### If Statements
 
@@ -697,7 +662,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
 -   <span id="dce9">Remember the order of `elif` statements matter.</span>
 
-------------------------------------------------------------------------
+---
 
 ### While Statements
 
@@ -715,7 +680,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     spam = 0 while True:  print('Hello, world.')  spam = spam + 1  if spam < 5:  continue  break
 
-------------------------------------------------------------------------
+---
 
 ### Try/Except Statements
 
@@ -763,7 +728,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     # Try a number - nothing will print out a = 321 if hasattr(a, '__len__'):  print(len(a))  # Try a string - the length will print out (4 in this case) b = "5555" if hasattr(b, '__len__'):  print(len(b))
 
-------------------------------------------------------------------------
+---
 
 ### Pass
 
@@ -775,7 +740,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     if True:  pass  while True:  pass
 
-------------------------------------------------------------------------
+---
 
 ### Functions
 
@@ -814,8 +779,6 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
 `toUpper = lambda s: s.upper()`
 
-  
-
 ### Formatted Strings
 
 -   <span id="76a9">Remember that in Python `join()` is called on a string with an array/list passed in as the argument.</span>
@@ -831,14 +794,14 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     # Comma Thousands Separator  print('{:,}'.format(1234567890))  '1,234,567,890'  # Date and Time d = datetime.datetime(2020, 7, 4, 12, 15, 58) print('{:%Y-%m-%d %H:%M:%S}'.format(d)) '2020-07-04 12:15:58'  # Percentage points = 190 total = 220 print('Correct answers: {:.2%}'.format(points/total)) Correct answers: 86.36%  # Data Tables width=8 print(' decimal hex binary') print('-'*27) for num in range(1,16):  for base in 'dXb':  print('{0:{width}{base}}'.format(num, base=base, width=width), end=' ')  print()
 
-------------------------------------------------------------------------
+---
 
 ### Getting Input from the Command Line
 
 -   <span id="72ae">Python runs synchronously, all programs and processes will stop when listening for a user input.</span>
 -   <span id="0edb">The `input` function shows a prompt to a user and waits for them to type ‘ENTER’.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Scripts vs Programs
 
@@ -851,7 +814,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 -   <span id="4954">  
     </span>
 
-------------------------------------------------------------------------
+---
 
 ### Structured Data
 
@@ -875,7 +838,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 -   <span id="c3a2">  
     </span>
 
-------------------------------------------------------------------------
+---
 
 ### Built In Data Types
 
@@ -924,9 +887,9 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     a = {'one':1, 'two':2, 'three':3} b = dict(one=1, two=2, three=3) c = dict([('two', 2), ('one', 1), ('three', 3)])
 
-> *a, b, and c are all equal*
+> _a, b, and c are all equal_
 
->   
+>
 
 -   <span id="0d61">Declared with curly braces of the built in `dict()`</span>
 -   <span id="813c">  
@@ -958,7 +921,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     school_bag = {'book','paper','pencil','pencil','book','book','book','eraser'} print(school_bag)  # Also can use set constructor to automatically put it into a set. letters = set('abracadabra') print(letters)
 
-------------------------------------------------------------------------
+---
 
 ### Built-In Functions
 
@@ -1047,7 +1010,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     a = {1, 2, 3} b = {2, 4, 6} print(a - b) # => {1, 3} print(b - a) # => {4, 6} print(a ^ b) # => {1, 3, 4, 6}
 
-------------------------------------------------------------------------
+---
 
 ### For Statements
 
@@ -1112,7 +1075,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     for c in "abcdefg":  print(c)
 
-------------------------------------------------------------------------
+---
 
 ### More On Functions
 
@@ -1158,7 +1121,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     def example(arg_1, arg_2, *args, **kwargs):  pass  def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blowfish", **kwargs):  pass
 
-------------------------------------------------------------------------
+---
 
 ### Importing in Python
 
@@ -1191,7 +1154,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     from urllib.request import (  HTTPDefaultErrorHandler as ErrorHandler,  HTTPRedirectHandler as RedirectHandler,  Request,  pathname2url,  url2pathname,  urlopen, )
 
-------------------------------------------------------------------------
+---
 
 ### Watching Out for Python 2
 
@@ -1206,8 +1169,6 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 -   <span id="6aa5">  
     </span>
 -   <span id="3bb8">`print` was a statement in P2, but is a function in P3.</span>
-
-  
 
 ### Classes In Python
 
@@ -1254,13 +1215,13 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     class AngryBird:  def __init__(self):  self.x = 0  self.y = 0   def move_up_by(self, delta):  self.y += delta   bird = AngryBird() print(bird) print(bird.y) bird.move_up_by(5) print(bird.y)
 
--   <span id="2c79">*Use one leading underscore only for non-public methods and instance variables*</span>
+-   <span id="2c79">_Use one leading underscore only for non-public methods and instance variables_</span>
 
 <!-- -->
 
     class AngryBird:  def __init__(self, x=0, y=0):  """  Construct a new AngryBird by setting its position to (0, 0).  """  self._x = x  self._y = y   def move_up_by(self, delta):  self._y += delta   def get_x(self):  return self._x   def get_y(self):  return self._y
 
--   <span id="f01b">*All instance variables should be considered non-public*</span>
+-   <span id="f01b">_All instance variables should be considered non-public_</span>
 -   <span id="20e3">  
     </span>
 -   <span id="f56d">\***\*slots\*\*** : Dunder class variable used to reserve memory for the instance variables that you know will you will use.</span>
@@ -1277,7 +1238,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     class AngryBird:  __slots__ = ['_x', '_y']   def __init__(self, x=0, y=0):  """  Construct a new AngryBird by setting its position to (0, 0).  """  self._x = x  self._y = y   def move_up_by(self, delta):  self._y += delta   def get_x(self):  return self._x   def get_y(self):  return self._y   def __repr__(self):  return f"<AngryBird ({self._x}, {self._y})>"
 
-------------------------------------------------------------------------
+---
 
 ### Properties for Classes
 
@@ -1303,7 +1264,7 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 
     class AngryBird:  def __init__(self, x=0, y=0):  """  Construct a new AngryBird by setting its position to (0, 0).  """  self._x = x  self._y = y   def move_up_by(self, delta):  self._y += delta   @property  def x(self):  return self._x   @x.setter  def x(self, value):  if value < 0:  value = 0  self._x = value   @property  def y(self):  return self._y   @y.setter  def y(self, value):  if value < 0:  value = 0  self._y = value
 
-------------------------------------------------------------------------
+---
 
 ### List Comprehensions
 
@@ -1334,8 +1295,6 @@ So let’s take that same “101” but this time let’s read it as a *binary* 
 **When to not use list comprehensions** — List comprehensions may make your code run more slowly or use more memory. — You can use nest lists to create matrices.
 
     matrix = [[i for i in range(5)] for _ in range(6)]  print(matrix) # Prints # [ # [0, 1, 2, 3, 4], # [0, 1, 2, 3, 4], # [0, 1, 2, 3, 4], # [0, 1, 2, 3, 4], # [0, 1, 2, 3, 4], # [0, 1, 2, 3, 4] # ]
-
-  
 
 [View original.](https://medium.com/p/f4f47fbf6ee)
 

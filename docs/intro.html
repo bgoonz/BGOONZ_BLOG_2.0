@@ -1,98 +1,244 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Intro To Node</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<header id="title-block-header">
-<h1 class="title">Intro To Node</h1>
-</header>
-<p>Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!</p>
-<p>Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.</p>
-<p>A Node.js app is run in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.</p>
-<p>When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back.</p>
-<p>This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread concurrency, which could be a significant source of bugs.</p>
-<p>Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side code in addition to the client-side code without the need to learn a completely different language.</p>
-<p>In Node.js the new ECMAScript standards can be used without problems, as you don’t have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.</p>
-<h2 id="a-vast-number-of-libraries">A Vast Number of Libraries</h2>
-<p>npm with its simple structure helped the ecosystem of Node.js proliferate, and now the npm registry hosts over 1,000,000 open source packages you can freely use.</p>
-<h2 id="an-example-node.js-application">An Example Node.js Application</h2>
-<p>The most common example Hello World of Node.js is a web server:</p>
-<iframe title="Hello world web server" src="https://glitch.com/embed/#!/embed/nodejs-dev-0001-01?path=server.js&amp;previewSize=30&amp;attributionHidden=true&amp;sidebarCollapsed=true" alt="nodejs-dev-0001-01 on Glitch" style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<!--```js
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>Intro To Node</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+        <style type="text/css">
+            a.sourceLine {
+                display: inline-block;
+                line-height: 1.25;
+            }
+            a.sourceLine {
+                pointer-events: none;
+                color: inherit;
+                text-decoration: inherit;
+            }
+            a.sourceLine:empty {
+                height: 1.2em;
+            }
+            .sourceCode {
+                overflow: visible;
+            }
+            code.sourceCode {
+                white-space: pre;
+                position: relative;
+            }
+            div.sourceCode {
+                margin: 1em 0;
+            }
+            pre.sourceCode {
+                margin: 0;
+            }
+            @media screen {
+                div.sourceCode {
+                    overflow: auto;
+                }
+            }
+            @media print {
+                code.sourceCode {
+                    white-space: pre-wrap;
+                }
+                a.sourceLine {
+                    text-indent: -1em;
+                    padding-left: 1em;
+                }
+            }
+            pre.numberSource a.sourceLine {
+                position: relative;
+                left: -4em;
+            }
+            pre.numberSource a.sourceLine::before {
+                content: attr(title);
+                position: relative;
+                left: -1em;
+                text-align: right;
+                vertical-align: baseline;
+                border: none;
+                pointer-events: all;
+                display: inline-block;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                padding: 0 4px;
+                width: 4em;
+                color: #aaaaaa;
+            }
+            pre.numberSource {
+                margin-left: 3em;
+                border-left: 1px solid #aaaaaa;
+                padding-left: 4px;
+            }
+            div.sourceCode {
+            }
+            @media screen {
+                a.sourceLine::before {
+                    text-decoration: underline;
+                }
+            }
+            code span.al {
+                color: #ff0000;
+                font-weight: bold;
+            } /* Alert */
+            code span.an {
+                color: #60a0b0;
+                font-weight: bold;
+                font-style: italic;
+            } /* Annotation */
+            code span.at {
+                color: #7d9029;
+            } /* Attribute */
+            code span.bn {
+                color: #40a070;
+            } /* BaseN */
+            code span.bu {
+            } /* BuiltIn */
+            code span.cf {
+                color: #007020;
+                font-weight: bold;
+            } /* ControlFlow */
+            code span.ch {
+                color: #4070a0;
+            } /* Char */
+            code span.cn {
+                color: #880000;
+            } /* Constant */
+            code span.co {
+                color: #60a0b0;
+                font-style: italic;
+            } /* Comment */
+            code span.cv {
+                color: #60a0b0;
+                font-weight: bold;
+                font-style: italic;
+            } /* CommentVar */
+            code span.do {
+                color: #ba2121;
+                font-style: italic;
+            } /* Documentation */
+            code span.dt {
+                color: #902000;
+            } /* DataType */
+            code span.dv {
+                color: #40a070;
+            } /* DecVal */
+            code span.er {
+                color: #ff0000;
+                font-weight: bold;
+            } /* Error */
+            code span.ex {
+            } /* Extension */
+            code span.fl {
+                color: #40a070;
+            } /* Float */
+            code span.fu {
+                color: #06287e;
+            } /* Function */
+            code span.im {
+            } /* Import */
+            code span.in {
+                color: #60a0b0;
+                font-weight: bold;
+                font-style: italic;
+            } /* Information */
+            code span.kw {
+                color: #007020;
+                font-weight: bold;
+            } /* Keyword */
+            code span.op {
+                color: #666666;
+            } /* Operator */
+            code span.ot {
+                color: #007020;
+            } /* Other */
+            code span.pp {
+                color: #bc7a00;
+            } /* Preprocessor */
+            code span.sc {
+                color: #4070a0;
+            } /* SpecialChar */
+            code span.ss {
+                color: #bb6688;
+            } /* SpecialString */
+            code span.st {
+                color: #4070a0;
+            } /* String */
+            code span.va {
+                color: #19177c;
+            } /* Variable */
+            code span.vs {
+                color: #4070a0;
+            } /* VerbatimString */
+            code span.wa {
+                color: #60a0b0;
+                font-weight: bold;
+                font-style: italic;
+            } /* Warning */
+        </style>
+    </head>
+    <body>
+        <header id="title-block-header">
+            <h1 class="title">Intro To Node</h1>
+        </header>
+        <p>Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!</p>
+        <p>Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.</p>
+        <p>
+            A Node.js app is run in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in
+            its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making
+            blocking behavior the exception rather than the norm.
+        </p>
+        <p>
+            When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and
+            wasting CPU cycles waiting, Node.js will resume the operations when the response comes back.
+        </p>
+        <p>
+            This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread
+            concurrency, which could be a significant source of bugs.
+        </p>
+        <p>
+            Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side
+            code in addition to the client-side code without the need to learn a completely different language.
+        </p>
+        <p>
+            In Node.js the new ECMAScript standards can be used without problems, as you don’t have to wait for all your users to update their browsers - you
+            are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by
+            running Node.js with flags.
+        </p>
+        <h2 id="a-vast-number-of-libraries">A Vast Number of Libraries</h2>
+        <p>
+            npm with its simple structure helped the ecosystem of Node.js proliferate, and now the npm registry hosts over 1,000,000 open source packages you
+            can freely use.
+        </p>
+        <h2 id="an-example-node.js-application">An Example Node.js Application</h2>
+        <p>The most common example Hello World of Node.js is a web server:</p>
+        <iframe
+            title="Hello world web server"
+            src="https://glitch.com/embed/#!/embed/nodejs-dev-0001-01?path=server.js&amp;previewSize=30&amp;attributionHidden=true&amp;sidebarCollapsed=true"
+            alt="nodejs-dev-0001-01 on Glitch"
+            style="height: 400px; width: 100%; border: 0"
+        >
+        </iframe>
+        <!--```js
 const http = require('http')
 
 const hostname = '127.0.0.1'
@@ -110,40 +256,125 @@ server.listen(port, hostname, () => {
 ```
 
 To run this snippet, save it as a `server.js` file and run `node server.js` in your terminal.-->
-<p>This code first includes the Node.js <a href="https://nodejs.org/api/http.html"><code>http</code> module</a>.</p>
-<p>Node.js has a fantastic <a href="https://nodejs.org/api/">standard library</a>, including first-class support for networking.</p>
-<p>The <code>createServer()</code> method of <code>http</code> creates a new HTTP server and returns it.</p>
-<p>The server is set to listen on the specified port and host name. When the server is ready, the callback function is called, in this case informing us that the server is running.</p>
-<p>Whenever a new request is received, the <a href="https://nodejs.org/api/http.html#http_event_request"><code>request</code> event</a> is called, providing two objects: a request (an <a href="https://nodejs.org/api/http.html#http_class_http_incomingmessage"><code>http.IncomingMessage</code></a> object) and a response (an <a href="https://nodejs.org/api/http.html#http_class_http_serverresponse"><code>http.ServerResponse</code></a> object).</p>
-<p>Those 2 objects are essential to handle the HTTP call.</p>
-<p>The first provides the request details. In this simple example, this is not used, but you could access the request headers and request data.</p>
-<p>The second is used to return data to the caller.</p>
-<p>In this case with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="va">res</span>.<span class="at">statusCode</span> <span class="op">=</span> <span class="dv">200</span><span class="op">;</span></a></code></pre></div>
-<p>we set the statusCode property to 200, to indicate a successful response.</p>
-<p>We set the Content-Type header:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="va">res</span>.<span class="at">setHeader</span>(<span class="st">&#39;Content-Type&#39;</span><span class="op">,</span> <span class="st">&#39;text/plain&#39;</span>)<span class="op">;</span></a></code></pre></div>
-<p>and we close the response, adding the content as an argument to <code>end()</code>:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="va">res</span>.<span class="at">end</span>(<span class="st">&#39;Hello World</span><span class="sc">\n</span><span class="st">&#39;</span>)<span class="op">;</span></a></code></pre></div>
-<h2 id="node.js-frameworks-and-tools">Node.js Frameworks and Tools</h2>
-<p>Node.js is a low-level platform. In order to make things easy and exciting for developers, thousands of libraries were built upon Node.js by the community.</p>
-<p>Many of those established over time as popular options. Here is a non-comprehensive list of the ones worth learning:</p>
-<ul>
-<li><a href="https://adonisjs.com/"><strong>AdonisJs</strong></a>: A full-stack framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.</li>
-<li><a href="https://expressjs.com/"><strong>Express</strong></a>: It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.</li>
-<li><a href="https://fastify.io/"><strong>Fastify</strong></a>: A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js web frameworks.</li>
-<li><a href="https://www.gatsbyjs.com/"><strong>Gatsby</strong></a>: A <a href="https://reactjs.org/">React</a>-based, <a href="https://graphql.org/">GraphQL</a> powered, static site generator with a very rich ecosystem of plugins and starters.</li>
-<li><a href="https://hapijs.com"><strong>hapi</strong></a>: A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.</li>
-<li><a href="http://koajs.com/"><strong>koa</strong></a>: It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatible changes without disrupting the existing community.</li>
-<li><a href="https://loopback.io/"><strong>Loopback.io</strong></a>: Makes it easy to build modern applications that require complex integrations.</li>
-<li><a href="https://meteor.com"><strong>Meteor</strong></a>: An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs <a href="https://reactjs.org/">React</a>, <a href="https://vuejs.org/">Vue</a>, and <a href="https://angular.io">Angular</a>. Can be used to create mobile apps as well.</li>
-<li><a href="https://github.com/zeit/micro"><strong>Micro</strong></a>: It provides a very lightweight server to create asynchronous HTTP microservices.</li>
-<li><a href="https://nestjs.com/"><strong>NestJS</strong></a>: A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.</li>
-<li><a href="https://nextjs.org/"><strong>Next.js</strong></a>: <a href="https://reactjs.org">React</a> framework that gives you the best developer experience with all the features you need for production: hybrid static &amp; server rendering, TypeScript support, smart bundling, route pre-fetching, and more.</li>
-<li><a href="https://nx.dev/"><strong>Nx</strong></a>: A toolkit for full-stack monorepo development using NestJS, Express, <a href="https://reactjs.org/">React</a>, <a href="https://angular.io">Angular</a>, and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!</li>
-<li><a href="https://sapper.svelte.dev/"><strong>Sapper</strong></a>: Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!</li>
-<li><a href="https://socket.io/"><strong>Socket.io</strong></a>: A real-time communication engine to build network applications.</li>
-<li><a href="https://strapi.io/"><strong>Strapi</strong></a>: Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world’s largest companies to accelerate content delivery while building beautiful digital experiences.</li>
-</ul>
-</body>
+        <p>
+            This code first includes the Node.js <a href="https://nodejs.org/api/http.html"><code>http</code> module</a>.
+        </p>
+        <p>Node.js has a fantastic <a href="https://nodejs.org/api/">standard library</a>, including first-class support for networking.</p>
+        <p>The <code>createServer()</code> method of <code>http</code> creates a new HTTP server and returns it.</p>
+        <p>
+            The server is set to listen on the specified port and host name. When the server is ready, the callback function is called, in this case informing
+            us that the server is running.
+        </p>
+        <p>
+            Whenever a new request is received, the <a href="https://nodejs.org/api/http.html#http_event_request"><code>request</code> event</a> is called,
+            providing two objects: a request (an
+            <a href="https://nodejs.org/api/http.html#http_class_http_incomingmessage"><code>http.IncomingMessage</code></a> object) and a response (an
+            <a href="https://nodejs.org/api/http.html#http_class_http_serverresponse"><code>http.ServerResponse</code></a> object).
+        </p>
+        <p>Those 2 objects are essential to handle the HTTP call.</p>
+        <p>The first provides the request details. In this simple example, this is not used, but you could access the request headers and request data.</p>
+        <p>The second is used to return data to the caller.</p>
+        <p>In this case with:</p>
+        <div class="sourceCode" id="cb1">
+            <pre
+                class="sourceCode js"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="va">res</span>.<span class="at">statusCode</span> <span class="op">=</span> <span class="dv">200</span><span class="op">;</span></a></code></pre>
+        </div>
+        <p>we set the statusCode property to 200, to indicate a successful response.</p>
+        <p>We set the Content-Type header:</p>
+        <div class="sourceCode" id="cb2">
+            <pre
+                class="sourceCode js"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="va">res</span>.<span class="at">setHeader</span>(<span class="st">&#39;Content-Type&#39;</span><span class="op">,</span> <span class="st">&#39;text/plain&#39;</span>)<span class="op">;</span></a></code></pre>
+        </div>
+        <p>and we close the response, adding the content as an argument to <code>end()</code>:</p>
+        <div class="sourceCode" id="cb3">
+            <pre
+                class="sourceCode js"
+            ><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="va">res</span>.<span class="at">end</span>(<span class="st">&#39;Hello World</span><span class="sc">\n</span><span class="st">&#39;</span>)<span class="op">;</span></a></code></pre>
+        </div>
+        <h2 id="node.js-frameworks-and-tools">Node.js Frameworks and Tools</h2>
+        <p>
+            Node.js is a low-level platform. In order to make things easy and exciting for developers, thousands of libraries were built upon Node.js by the
+            community.
+        </p>
+        <p>Many of those established over time as popular options. Here is a non-comprehensive list of the ones worth learning:</p>
+        <ul>
+            <li>
+                <a href="https://adonisjs.com/"><strong>AdonisJs</strong></a
+                >: A full-stack framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web
+                frameworks.
+            </li>
+            <li>
+                <a href="https://expressjs.com/"><strong>Express</strong></a
+                >: It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core
+                features of a server, is key to its success.
+            </li>
+            <li>
+                <a href="https://fastify.io/"><strong>Fastify</strong></a
+                >: A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify
+                is one of the fastest Node.js web frameworks.
+            </li>
+            <li>
+                <a href="https://www.gatsbyjs.com/"><strong>Gatsby</strong></a
+                >: A <a href="https://reactjs.org/">React</a>-based, <a href="https://graphql.org/">GraphQL</a> powered, static site generator with a very rich
+                ecosystem of plugins and starters.
+            </li>
+            <li>
+                <a href="https://hapijs.com"><strong>hapi</strong></a
+                >: A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of
+                spending time building infrastructure.
+            </li>
+            <li>
+                <a href="http://koajs.com/"><strong>koa</strong></a
+                >: It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born
+                out of the need to create incompatible changes without disrupting the existing community.
+            </li>
+            <li>
+                <a href="https://loopback.io/"><strong>Loopback.io</strong></a
+                >: Makes it easy to build modern applications that require complex integrations.
+            </li>
+            <li>
+                <a href="https://meteor.com"><strong>Meteor</strong></a
+                >: An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the
+                client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs
+                <a href="https://reactjs.org/">React</a>, <a href="https://vuejs.org/">Vue</a>, and <a href="https://angular.io">Angular</a>. Can be used to
+                create mobile apps as well.
+            </li>
+            <li>
+                <a href="https://github.com/zeit/micro"><strong>Micro</strong></a
+                >: It provides a very lightweight server to create asynchronous HTTP microservices.
+            </li>
+            <li>
+                <a href="https://nestjs.com/"><strong>NestJS</strong></a
+                >: A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.
+            </li>
+            <li>
+                <a href="https://nextjs.org/"><strong>Next.js</strong></a
+                >: <a href="https://reactjs.org">React</a> framework that gives you the best developer experience with all the features you need for production:
+                hybrid static &amp; server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
+            </li>
+            <li>
+                <a href="https://nx.dev/"><strong>Nx</strong></a
+                >: A toolkit for full-stack monorepo development using NestJS, Express, <a href="https://reactjs.org/">React</a>,
+                <a href="https://angular.io">Angular</a>, and more! Nx helps scale your development from one team building one application to many teams
+                collaborating on multiple applications!
+            </li>
+            <li>
+                <a href="https://sapper.svelte.dev/"><strong>Sapper</strong></a
+                >: Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based
+                routing. Offers SSR and more!
+            </li>
+            <li>
+                <a href="https://socket.io/"><strong>Socket.io</strong></a
+                >: A real-time communication engine to build network applications.
+            </li>
+            <li>
+                <a href="https://strapi.io/"><strong>Strapi</strong></a
+                >: Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also
+                allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi
+                enables the world’s largest companies to accelerate content delivery while building beautiful digital experiences.
+            </li>
+        </ul>
+    </body>
 </html>

@@ -1,9 +1,8 @@
-The ExpressJS Way To Write APIs
-===============================
+# The ExpressJS Way To Write APIs
 
 This article will cover the basics of express from the perspective of a beginner without concerning its self with the underlying mechanisms…
 
-------------------------------------------------------------------------
+---
 
 ### The ExpressJS Way To Write APIs
 
@@ -45,7 +44,7 @@ Some of the disadvantages of using Node.js for writing server-side code are:
 To write a simple web server with `Node.js`:
 
 1.  <span id="b4ff">Use Node’s `HTTP` module to abstract away complex network-related operations.</span>
-2.  <span id="9e58">Write the single ***request handler*** function to handle all requests to the server.</span>
+2.  <span id="9e58">Write the single **_request handler_** function to handle all requests to the server.</span>
 
 The request handler is a function that takes the `request` coming from the client and produces the `response`. The function takes two arguments: 1) an object representing the `request` and 2) an object representing the `response`.
 
@@ -76,9 +75,9 @@ Next, add the following code to the `index.js` file:
         console.log(`Server running at <http://$>{hostname}:${port}/`);
     });
 
-Now navigate to the folder in a terminal/console window and type: `node index.js` to execute your file. A message that reads "*Server running at* <a href="http://127.0.0.1:3000" class="markup--anchor markup--p-anchor"><em>http://127.0.0.1:3000</em></a>" should be displayed, and the server is now waiting for connections.
+Now navigate to the folder in a terminal/console window and type: `node index.js` to execute your file. A message that reads "_Server running at_ <a href="http://127.0.0.1:3000" class="markup--anchor markup--p-anchor"><em>http://127.0.0.1:3000</em></a>" should be displayed, and the server is now waiting for connections.
 
-Open a browser and visit: `http://localhost:3000`. `localhost` and the IP address `127.0.0.1` point to the same thing: your local computer. The browser should show the message: "*Hello World from Node*". There you have it, your first web server, built from scratch using nothing but `Node.js`.
+Open a browser and visit: `http://localhost:3000`. `localhost` and the IP address `127.0.0.1` point to the same thing: your local computer. The browser should show the message: "_Hello World from Node_". There you have it, your first web server, built from scratch using nothing but `Node.js`.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nGyJHK1Q_sSB6fjbBbF3xA.png" class="graf-image" /></figure>
 
@@ -93,7 +92,7 @@ Ultimately, Express is **just a Node.js module** like any other module.
 What can we do with Express? So many things! For example:
 
 -   <span id="0317">Build web applications.</span>
--   <span id="6ae8">Serve *Single Page Applications* (SPAs).</span>
+-   <span id="6ae8">Serve _Single Page Applications_ (SPAs).</span>
 -   <span id="308c">Build RESTful web services that work with JSON.</span>
 -   <span id="7a9e">Serve static content, like HTML files, images, audio files, PDFs, and more.</span>
 -   <span id="823e">Power real-time applications using technologies like **Web Sockets** or **WebRTC**.</span>
@@ -124,7 +123,7 @@ Middleware functions can get the request and response objects, operate on them, 
 
 Express’s middleware stack is an array of functions.
 
-Middleware *can* change the request or response, but it doesn’t have to.
+Middleware _can_ change the request or response, but it doesn’t have to.
 
 ### Routing
 
@@ -225,7 +224,7 @@ Now we’re ready to test our API!
 
 In the terminal, still at the root of our project:
 
--   <span id="04b6">Type: `npm run server` to run our API. The message *"Api running on port 8000"* should appear on the terminal.</span>
+-   <span id="04b6">Type: `npm run server` to run our API. The message _"Api running on port 8000"_ should appear on the terminal.</span>
 -   <span id="440e">Open a web browser and navigate to “<a href="http://localhost:8000" class="markup--anchor markup--li-anchor">http://localhost:8000</a>".</span>
 
 There we have it, our first API!
@@ -254,9 +253,9 @@ Let’s try returning JSON instead of just a simple string.
 
 Please follow the steps outlined on the overview, but, to save time, copy and paste the content of `index.js` instead of typing it. Then run your API through a browser to make sure it works.
 
-Now follow along as we code a new *endpoint* that returns an array of movie characters in JSON format.
+Now follow along as we code a new _endpoint_ that returns an array of movie characters in JSON format.
 
-The first step is to define a new *route handler* to respond to `GET` requests at the `/hobbits` endpoint.
+The first step is to define a new _route handler_ to respond to `GET` requests at the `/hobbits` endpoint.
 
     server.get('/hobbits', (req, res) => {
       // route handler code here
@@ -625,7 +624,7 @@ For more on the fundamentals of error handling, see:
 
 #### What not to do
 
-One thing you should *not* do is to listen for the `uncaughtException` event, emitted when an exception bubbles all the way back to the event loop. Adding an event listener for `uncaughtException` will change the default behavior of the process that is encountering an exception; the process will continue to run despite the exception. This might sound like a good way of preventing your app from crashing, but continuing to run the app after an uncaught exception is a dangerous practice and is not recommended, because the state of the process becomes unreliable and unpredictable.
+One thing you should _not_ do is to listen for the `uncaughtException` event, emitted when an exception bubbles all the way back to the event loop. Adding an event listener for `uncaughtException` will change the default behavior of the process that is encountering an exception; the process will continue to run despite the exception. This might sound like a good way of preventing your app from crashing, but continuing to run the app after an uncaught exception is a dangerous practice and is not recommended, because the state of the process becomes unreliable and unpredictable.
 
 Additionally, using `uncaughtException` is officially recognized as <a href="https://nodejs.org/api/process.html#process_event_uncaughtexception" class="markup--anchor markup--p-anchor" title="https://nodejs.org/api/process.html#process_event_uncaughtexception">crude</a>. So listening for `uncaughtException` is just a bad idea. This is why we recommend things like multiple processes and supervisors: crashing and restarting is often the most reliable way to recover from an error.
 
@@ -699,11 +698,11 @@ Here are some things you can do in your system environment to improve your app�
 -   <span id="4d4a"><a href="#use-a-load-balancer" class="markup--anchor markup--li-anchor" title="#use-a-load-balancer">Use a load balancer</a></span>
 -   <span id="121c"><a href="#use-a-reverse-proxy" class="markup--anchor markup--li-anchor" title="#use-a-reverse-proxy">Use a reverse proxy</a></span>
 
-### Set NODE\_ENV to “production”
+### Set NODE_ENV to “production”
 
-The NODE\_ENV environment variable specifies the environment in which an application is running (usually, development or production). One of the simplest things you can do to improve performance is to set NODE\_ENV to “production.”
+The NODE_ENV environment variable specifies the environment in which an application is running (usually, development or production). One of the simplest things you can do to improve performance is to set NODE_ENV to “production.”
 
-Setting NODE\_ENV to “production” makes Express:
+Setting NODE_ENV to “production” makes Express:
 
 -   <span id="3499">Cache view templates.</span>
 -   <span id="83b7">Cache CSS files generated from CSS extensions.</span>
@@ -711,9 +710,9 @@ Setting NODE\_ENV to “production” makes Express:
 
 <a href="http://apmblog.dynatrace.com/2015/07/22/the-drastic-effects-of-omitting-node_env-in-your-express-js-applications/" class="markup--anchor markup--p-anchor" title="http://apmblog.dynatrace.com/2015/07/22/the-drastic-effects-of-omitting-node_env-in-your-express-js-applications/">Tests indicate</a> that just doing this can improve app performance by a factor of three!
 
-If you need to write environment-specific code, you can check the value of NODE\_ENV with `process.env.NODE_ENV`. Be aware that checking the value of any environment variable incurs a performance penalty, and so should be done sparingly.
+If you need to write environment-specific code, you can check the value of NODE_ENV with `process.env.NODE_ENV`. Be aware that checking the value of any environment variable incurs a performance penalty, and so should be done sparingly.
 
-In development, you typically set environment variables in your interactive shell, for example by using `export` or your `.bash_profile` file. But in general you shouldn’t do that on a production server; instead, use your OS’s init system (systemd or Upstart). The next section provides more details about using your init system in general, but setting NODE\_ENV is so important for performance (and easy to do), that it’s highlighted here.
+In development, you typically set environment variables in your interactive shell, for example by using `export` or your `.bash_profile` file. But in general you shouldn’t do that on a production server; instead, use your OS’s init system (systemd or Upstart). The next section provides more details about using your init system in general, but setting NODE_ENV is so important for performance (and easy to do), that it’s highlighted here.
 
 With Upstart, use the `env` keyword in your job file. For example:
 
@@ -781,7 +780,7 @@ No matter how optimized an app is, a single instance can handle only a limited a
 
 A load balancer is usually a reverse proxy that orchestrates traffic to and from multiple application instances and servers. You can easily set up a load balancer for your app by using <a href="http://nginx.org/en/docs/http/load_balancing.html" class="markup--anchor markup--p-anchor" title="http://nginx.org/en/docs/http/load_balancing.html">Nginx</a> or <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts" class="markup--anchor markup--p-anchor" title="https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts">HAProxy</a>.
 
-With load balancing, you might have to ensure that requests that are associated with a particular session ID connect to the process that originated them. This is known as *session affinity*, or *sticky sessions*, and may be addressed by the suggestion above to use a data store such as Redis for session data (depending on your application). For a discussion, see <a href="http://socket.io/docs/using-multiple-nodes/" class="markup--anchor markup--p-anchor" title="http://socket.io/docs/using-multiple-nodes/">Using multiple nodes</a>.
+With load balancing, you might have to ensure that requests that are associated with a particular session ID connect to the process that originated them. This is known as _session affinity_, or _sticky sessions_, and may be addressed by the suggestion above to use a data store such as Redis for session data (depending on your application). For a discussion, see <a href="http://socket.io/docs/using-multiple-nodes/" class="markup--anchor markup--p-anchor" title="http://socket.io/docs/using-multiple-nodes/">Using multiple nodes</a>.
 
 ### Use a reverse proxy
 

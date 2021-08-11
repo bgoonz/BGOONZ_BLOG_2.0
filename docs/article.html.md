@@ -1,7 +1,6 @@
 The ds-algo-overview provides you with a blueprint of default post and page styles.
 
-Web Development Resources Site
-==============================
+# Web Development Resources Site
 
 > webdevhub
 
@@ -500,11 +499,11 @@ Please use the following to insert a page break.
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/b6c22-0xiwcipeujuw-ghyc.gif)
 
-------------------------------------------------------------------------
+---
 
 NEXT
 
-------------------------------------------------------------------------
+---
 
 ### Ruby for Visual Studio Code
 
@@ -684,11 +683,11 @@ Request features and report bugs using [GitHub](https://github.com/stackbreak/co
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/8f2d5-0ummqshaddas51l_x.gif)
 
-------------------------------------------------------------------------
+---
 
 NEXT
 
-------------------------------------------------------------------------
+---
 
 ### Auto Import — ES6, TS, JSX, TSX (VSCode Extension)
 
@@ -696,7 +695,7 @@ Automatically finds, parses and provides code actions and code completion for al
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/e32dc-0qlapcdgufwrpwneh.gif)
 
-------------------------------------------------------------------------
+---
 
 ### PostgreSQL for Visual Studio Code
 
@@ -719,7 +718,7 @@ Install link: <https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vs
 
 You are now connected to your Postgres database. You can confirm this via the Status Bar (the ribbon at the bottom of the VS Code window). It will show your connected hostname, database, and user.
 
-1.  You can type a query like ‘SELECT \* FROM pg\_stat\_activity’;
+1.  You can type a query like ‘SELECT \* FROM pg_stat_activity’;
 2.  Right-click, select ‘Execute Query’ and the results will show in a new window.
 
 You can save the query results to JSON, csv or Excel.
@@ -734,7 +733,7 @@ Support for this extension is provided on our [GitHub Issue Tracker](https://git
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/0b82b-0hmzlbjpk1aqwh_cf.gif)
 
-------------------------------------------------------------------------
+---
 
 ### JS JSX Snippets
 
@@ -781,11 +780,11 @@ TriggerContent`ptaPropTypes.array,ptarPropTypes.array.isRequired,ptoPropTypes.ob
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/fec80-0feudrdiwsq5fn9zc.gif)
 
-------------------------------------------------------------------------
+---
 
 NEXT
 
-------------------------------------------------------------------------
+---
 
 ### Indent-Rainbow
 
@@ -795,7 +794,7 @@ If you like this plugin, please consider a small donation:
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/912b7-0oyuoktkyg5xyl8ku.gif)
 
-------------------------------------------------------------------------
+---
 
 This extension colorizes the indentation in front of your text alternating four different colors on each step. Some may find it helpful in writing code for Nim or Python.
 
@@ -818,7 +817,7 @@ Although you can just use it as it is there is the possibility to configure some
       // The delay in ms until the editor gets updated.
       "indentRainbow.updateDelay": 100 // 10 makes it super fast but may cost more resources
 
-*Notice: Defining both* `_includedLanguages_` *and* `_excludedLanguages_` *does not make much sense. Use one of both!*
+_Notice: Defining both_ `_includedLanguages_` _and_ `_excludedLanguages_` _does not make much sense. Use one of both!_
 
 You can configure your own colors by adding and tampering with the following code:
 
@@ -838,7 +837,7 @@ You can configure your own colors by adding and tampering with the following cod
       // To be disabled this coloring set this to an empty string.
       "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)"
 
-> *Notice:* `_errorColor_` *was renamed from* `_error_color_` *in earlier versions.*
+> _Notice:_ `_errorColor_` _was renamed from_ `_error_color_` _in earlier versions._
 
 Skip error highlighting for RegEx patterns. For example, you may want to turn off the indent errors for JSDoc’s valid additional space (disabled by default), or comment lines beginning with `//`
 
@@ -868,11 +867,11 @@ Running `npm run compile` makes the compiler recompile on file change.
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/d9758-0hge_ezptazcccgux.gif)
 
-------------------------------------------------------------------------
+---
 
 NEXT
 
-------------------------------------------------------------------------
+---
 
 ### Path Intellisense
 
@@ -883,7 +882,7 @@ Visual Studio Code plugin that autocompletes filenames.
 ![](https://webdevhubcom.files.wordpress.com/2021/04/ec634-0pcurf5a3ltjthek2.png)
 
 Eliminate context switching and costly distractions. Create and merge PRs and perform code reviews from inside your IDE while using jump-to-definition, your favorite keybindings, and other IDE tools.  
-[Learn more](https://sponsorlink.codestream.com/?utm_source=vscmarket&utm_campaign=pathintel&utm_medium=banner "Try CodeStream")
+[Learn more](https://sponsorlink.codestream.com/?utm_source=vscmarket&utm_campaign=pathintel&utm_medium=banner 'Try CodeStream')
 
 ### Installation
 
@@ -975,7 +974,7 @@ Use ${workspaceFolder} when the path should be relative to the current root of t
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/e275d-0ehx7lejfahj37qh-.gif)
 
-------------------------------------------------------------------------
+---
 
 ### turbo-js
 
@@ -1938,7 +1937,7 @@ Snippets are optimized to be short and easy to remember. Shortest are the ones y
 
     console.dir(${0})
 
-------------------------------------------------------------------------
+---
 
 ### React snippets
 
@@ -1969,7 +1968,7 @@ TriggerContent`ptaPropTypes.array,ptarPropTypes.array.isRequired,ptbPropTypes.bo
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/c389e-08xivi5tevdat7lmo.gif)
 
-------------------------------------------------------------------------
+---
 
 ### C/C++ for Visual Studio Code
 
@@ -2026,11 +2025,11 @@ This extension collects usage data and sends it to Microsoft to help improve our
 
 ![](https://webdevhubcom.files.wordpress.com/2021/04/3100b-0kt-50guahwymrk3d.gif)
 
-------------------------------------------------------------------------
+---
 
 NEXT
 
-------------------------------------------------------------------------
+---
 
 ### Visual Studio IntelliCode
 
@@ -2084,7 +2083,7 @@ I hope these notes help shed some light and save some time… (this is the most 
 
 ### Chapter 1 — Good Parts
 
-> *Most programming languages contain good parts and bad parts. I discovered that I could be a better programmer by using only the good parts and avoiding the bad parts. After all, how can you build something good out of bad parts?*
+> _Most programming languages contain good parts and bad parts. I discovered that I could be a better programmer by using only the good parts and avoiding the bad parts. After all, how can you build something good out of bad parts?_
 
 The best parts of Javascript include:
 
@@ -2093,9 +2092,9 @@ The best parts of Javascript include:
 -   dynamic objects
 -   object literal notation (where you can create an object already with a list of key/value pairs inside curly braces)
 
-The worst parts include global variables — there is a common *global object* namespace where they’re all lumped together and they’re essential to the language.
+The worst parts include global variables — there is a common _global object_ namespace where they’re all lumped together and they’re essential to the language.
 
-Javascript has a *class free* object makeup, relying instead on objects inheriting properties directly from other objects — this is prototypal inheritance.
+Javascript has a _class free_ object makeup, relying instead on objects inheriting properties directly from other objects — this is prototypal inheritance.
 
 ### Chapter 2 — Grammar
 
@@ -2104,7 +2103,7 @@ Always use // for comments, even multi-line ones to avoid having to escape `/*` 
 ### Numbers
 
 -   There is a single, 64-bit floating point number type.
--   `NaN` (Not-a-Number) is not equal to any value (including itself) and is essentially an illegal number value, but *typeOf(NaN)===number is true*
+-   `NaN` (Not-a-Number) is not equal to any value (including itself) and is essentially an illegal number value, but _typeOf(NaN)===number is true_
 -   Use `isNaN(number)` to check for NaNs
 
 Number methods are discussed in [Chapter 8](https://github.com/Lambda-April/Unsorted-Notes/blob/main).
@@ -2128,19 +2127,19 @@ String methods are discussed in [Chapter 8](https://github.com/Lambda-April/Unso
 
 ### Statements
 
--   *Inside* a function, the var statement creates variables local to that function
--   *switch, while, for* and *do* statements can have an optional label which can be used with `break` and `continue` to provide more precise [control over exactly which statement to break or continue](http://www.tutorialspoint.com/cgi-bin/practice.cgi?file=javascript_19). Format: `labelname: statement` and then `continue labelname;`
--   ES2015 presents two new keywords for declaring variables, *let* and *const*. Whereas the *var* keyword is function scoped (the variables are local to the function), *let* and *const* are both block scoped, which means they are local to any statement with {}.
--   *falsy* values:
+-   _Inside_ a function, the var statement creates variables local to that function
+-   _switch, while, for_ and _do_ statements can have an optional label which can be used with `break` and `continue` to provide more precise [control over exactly which statement to break or continue](http://www.tutorialspoint.com/cgi-bin/practice.cgi?file=javascript_19). Format: `labelname: statement` and then `continue labelname;`
+-   ES2015 presents two new keywords for declaring variables, _let_ and _const_. Whereas the _var_ keyword is function scoped (the variables are local to the function), _let_ and _const_ are both block scoped, which means they are local to any statement with {}.
+-   _falsy_ values:
 -   false
 -   null
 -   undefined
 -   Empty string ‘ ‘
 -   The number 0
 -   The number NaN
--   All other values are *truthy* including all objects & the string ‘false’
+-   All other values are _truthy_ including all objects & the string ‘false’
 -   If no matches are found in `case` statements, the optional default statement is executed, otherwise the matching case statement is carried out
--   When using a *for in* loop, usually a good idea to use `hasOwnProperty(variable)` to make sure the property belongs to the object you want and is not instead an inherited property from the prototype chain:
+-   When using a _for in_ loop, usually a good idea to use `hasOwnProperty(variable)` to make sure the property belongs to the object you want and is not instead an inherited property from the prototype chain:
 
 for (myvariable in object) {  
 if (object.hasOwnProperty(myvariable)) {  
@@ -2148,21 +2147,21 @@ if (object.hasOwnProperty(myvariable)) {
 }  
 }
 
--   A *do while* statement is always executed at least once as the while condition is only checked after the first iteration of the loop
--   `catch` clause in a *try* statement must create a new variable that will catch the exception object
+-   A _do while_ statement is always executed at least once as the while condition is only checked after the first iteration of the loop
+-   `catch` clause in a _try_ statement must create a new variable that will catch the exception object
 -   Scope of `throw` statement is the `try` block it’s in, or the `try` of the function it’s in
 -   If there is no `return` statement, `return===undefined`
--   `break` exits the statement and `continue` forces a new iteration of the loop, both with the optional *label* mentioned above
+-   `break` exits the statement and `continue` forces a new iteration of the loop, both with the optional _label_ mentioned above
 
 ### Expressions
 
--   For `expression ? expression2 : expression3`, if expression is *truthy*, execute expresion2; if it’s *falsy*, execute expression3
--   *Invocation* is `(expression1, expression2, etc)`
--   *refinement* is either `.name` or `[expression]` as used in an array
+-   For `expression ? expression2 : expression3`, if expression is _truthy_, execute expresion2; if it’s _falsy_, execute expression3
+-   _Invocation_ is `(expression1, expression2, etc)`
+-   _refinement_ is either `.name` or `[expression]` as used in an array
 
 ### Literals
 
--   *Names* or *strings* used for specifying new objects ([object literals](https://github.com/Lambda-April/Unsorted-Notes/blob/main)) or arrays ([array literals](https://github.com/Lambda-April/Unsorted-Notes/blob/main))
+-   _Names_ or _strings_ used for specifying new objects ([object literals](https://github.com/Lambda-April/Unsorted-Notes/blob/main)) or arrays ([array literals](https://github.com/Lambda-April/Unsorted-Notes/blob/main))
 -   Properties of the object are expressions and must be known at compile time
 
 ### Functions
@@ -2174,21 +2173,21 @@ if (object.hasOwnProperty(myvariable)) {
 
 Javascript simple types:
 
--   numbers *(has object-like methods but they are immutable)*
--   strings *(has object-like methods but they are immutable)*
--   booleans *(has object-like methods but they are immutable)*
+-   numbers _(has object-like methods but they are immutable)_
+-   strings _(has object-like methods but they are immutable)_
+-   booleans _(has object-like methods but they are immutable)_
 -   null
 -   undefined
 
-All other values are *objects* including arrays and functions.
+All other values are _objects_ including arrays and functions.
 
-Objects are class free, can contain other objects and can inherit properties from their prototypes (which can *reduce object initialisation time and memory consumption*).
+Objects are class free, can contain other objects and can inherit properties from their prototypes (which can _reduce object initialisation time and memory consumption_).
 
 ### Object Literals
 
--   An object literal is *zero or more comma-separated name/value pairs surrounded by curly braces* {}
+-   An object literal is _zero or more comma-separated name/value pairs surrounded by curly braces_ {}
 
-var empty\_object = {};
+var empty_object = {};
 
 var today = {  
 day: “Wednesday”,  
@@ -2205,7 +2204,7 @@ year: 2014,
 ### Retrieval
 
 -   Can be done with either dot notation `today.weather.morning` or with square brackets `today['month']`
--   Or operand (||) can be used to fill in default values for nonexistent data to prevent and *undefined* error: `var weath = today.weather.evening || "unknown"`
+-   Or operand (||) can be used to fill in default values for nonexistent data to prevent and _undefined_ error: `var weath = today.weather.evening || "unknown"`
 
 ### Update
 
@@ -2218,14 +2217,14 @@ year: 2014,
 ### Prototype
 
 -   Every object has a prototype object from which it inherits properties
--   *Object.prototype* comes standard with Javascript and is almost like a ‘root parent’
+-   _Object.prototype_ comes standard with Javascript and is almost like a ‘root parent’
 
 ![](https://cdn-images-1.medium.com/max/800/0*1MKtZt0a5gREie59)
 
 -   The `Object.create` method is now available in ES5 (but the method is in the book if required for older versions)
 -   If an object does not have a property you ask it for, it will keep looking up the prototype chain until it finds it
--   If the property *does note exist* anywhere in the chain, it will return *undefined*
--   A new property is *immediately visible* to all of the objects below it in the chain once created
+-   If the property _does note exist_ anywhere in the chain, it will return _undefined_
+-   A new property is _immediately visible_ to all of the objects below it in the chain once created
 
 More details in [Chapter 6](https://github.com/Lambda-April/Unsorted-Notes/blob/main)
 
@@ -2233,7 +2232,7 @@ More details in [Chapter 6](https://github.com/Lambda-April/Unsorted-Notes/blob/
 
 -   Determining what properties an object has
 -   Using `typeof` includes all properties in the prototype chain including functions
--   To avoid inherited properties, use `hasOwnProperty(type);` which returns *true* if that property exists only in that object itself (not the chain)
+-   To avoid inherited properties, use `hasOwnProperty(type);` which returns _true_ if that property exists only in that object itself (not the chain)
 
 today.hasOwnProperty(‘number’) //will return true today.hasOwnProperty(‘constructor’) //will return false
 
@@ -2247,7 +2246,7 @@ for (i = 0; i &lt; properties.length; i++) {
 document.writeIn(properties\[i\] + ‘:’ + today\[properties\[i\]\]);  
 }
 
--   This ensures you get the properties you want (i.e. not up the prototype chain) and in the order you want, as opposed to a *for in* loop which achieves neither of these
+-   This ensures you get the properties you want (i.e. not up the prototype chain) and in the order you want, as opposed to a _for in_ loop which achieves neither of these
 
 ### Delete
 
@@ -2256,7 +2255,7 @@ document.writeIn(properties\[i\] + ‘:’ + today\[properties\[i\]\]);
 
 ### Global Abatement
 
--   One way to mitigate the risks of global variables is to *create a single global variable* which then contains your whole application
+-   One way to mitigate the risks of global variables is to _create a single global variable_ which then contains your whole application
 
 let MYAPP = {}
 
@@ -2278,18 +2277,18 @@ year: 2014,
 
 ### Chapter 4 — Functions
 
-> *The best thing about JavaScript is its implementation of functions.*
+> _The best thing about JavaScript is its implementation of functions._
 
 ### Function Objects
 
--   Functions are objects linked to *function.prototype* (which is linked to *Object.prototype*).
+-   Functions are objects linked to _function.prototype_ (which is linked to _Object.prototype_).
 -   As well as usual object behaviour, they can be invoked.
 
 ### Function Literal
 
 -   A function literal has 4 parts:
 -   The (reserved) word `function` itself
--   An *optional* name (un-named functions are considered *anonymous* functions)
+-   An _optional_ name (un-named functions are considered _anonymous_ functions)
 -   Comma-seperated parameters of the function, in parentheses — `(parameters)`
 -   Set of statements in curly brackets to be carried out when the function is invoked — `{statements}`
 
@@ -2306,27 +2305,27 @@ statements;
 -   If arguments &gt; number of arguments expected, the extra values will be ignored
 -   If arguments &lt; number of arguments expected, the function will assume undefined in place of the missing arguments
 -   No error is thrown
--   Note: The difference between an *argument* and a *parameter* is that a parameter is usually what is used in the function literal, when you’re setting up the function (almost like the placeholder for the actual values that the function will use when it is active) and an argument is usually the value passed to a function at the time it is invoked
+-   Note: The difference between an _argument_ and a _parameter_ is that a parameter is usually what is used in the function literal, when you’re setting up the function (almost like the placeholder for the actual values that the function will use when it is active) and an argument is usually the value passed to a function at the time it is invoked
 -   Parameters `this` and `arguments` are also passed to the function when it is invoked, but their value depends on how the function is invoked
 
 #### Method Invocation Pattern
 
--   When a function is stored as the property of the object (invoked with a dot . expression) it is called on and is called a *method*
+-   When a function is stored as the property of the object (invoked with a dot . expression) it is called on and is called a _method_
 
 myObject.incrementFunction();
 
 -   The method is bound to the object and therefore can use `this` to retrieve or update values from the object
 -   These methods are highly reusable
--   Because their *object context* comes from `this` they are considered *public methods*
+-   Because their _object context_ comes from `this` they are considered _public methods_
 
 #### Function Invocation Pattern
 
--   When a function is *not* the property of an object, it is invoked as a *function*
+-   When a function is _not_ the property of an object, it is invoked as a _function_
 
 var sum = add(3, 4);
 
--   These functions are bound to the global object (*a “mistake in the design of the language” according to Douglas Crockford)* and consequently so is `this`[even in inner functions](https://github.com/Lambda-April/Unsorted-Notes/blob/main)
--   Invoking `this` within an inner function will therefore refer to its *own* `this` and not the one in global scope
+-   These functions are bound to the global object (_a “mistake in the design of the language” according to Douglas Crockford)_ and consequently so is `this`[even in inner functions](https://github.com/Lambda-April/Unsorted-Notes/blob/main)
+-   Invoking `this` within an inner function will therefore refer to its _own_ `this` and not the one in global scope
 
 Workaround: Artificially create a new `this`:
 
@@ -2355,19 +2354,19 @@ var Quo = function (string){
 this.status = string;  
 }
 
-//Now create a get\_status method for Quo - this will be a public method  
-Quo.prototype.get\_status = function () {  
+//Now create a get_status method for Quo - this will be a public method  
+Quo.prototype.get_status = function () {  
 return this.status;  
 }
 
 //create a new instance of Quo using the prefix NEW  
 var myQuo = new Quo(“happy”);
 
-//because of the use of the new prefix, myQuo is an instance of Quo which means it can access the public method get\_status from it’s prototype  
-document.writeIn(myQuo.get\_status()); //returns ‘happy’
+//because of the use of the new prefix, myQuo is an instance of Quo which means it can access the public method get_status from it’s prototype  
+document.writeIn(myQuo.get_status()); //returns ‘happy’
 
 -   This style of constructor pattern is not recommended, there will be better examples in [Chapter 5](https://github.com/Lambda-April/Unsorted-Notes/blob/main) — this is noted again in [Appendix B](https://github.com/Lambda-April/Unsorted-Notes/blob/main)
--   The first letter of a constructor function (in this case Quo) must *always* be capitalized
+-   The first letter of a constructor function (in this case Quo) must _always_ be capitalized
 
 #### Apply Invocation Pattern
 
@@ -2409,10 +2408,10 @@ message: ‘The add function requires numbers’;
 return a + b;  
 }
 
--   When you write a function to use *add()*, you include a `try` block where the exception object from the `throw` statement in *add()* will pass control to a single catch clause for all exceptions
+-   When you write a function to use _add()_, you include a `try` block where the exception object from the `throw` statement in _add()_ will pass control to a single catch clause for all exceptions
 
 //When you use the function later on, add a try block with a catch clause to catch the exception object  
-var try\_it = function () {  
+var try_it = function () {  
 try{  
 add(“seven”); //will throw an exception as it is not a number  
 }  
@@ -2421,13 +2420,13 @@ document.writeIn(e.name + ‘:’ + e.message);
 }  
 }
 
-try\_it(); //you could rewrite this function so the argument is passed in here where it is invoked
+try_it(); //you could rewrite this function so the argument is passed in here where it is invoked
 
 ### Augmenting Types
 
 -   Adding a method to the prototype of an object `Object.prototype` (or function, array, string, number, regular expression or boolean), you make it available to all the instances of that object so you don’t have to use the `prototype` property again
--   By augmenting the *basic types* (essentially the root prototypes), we can improve Javascript overall
--   For example, adding a method named *trim* to remove spaces from the end of strings, available to all String instances in your code:
+-   By augmenting the _basic types_ (essentially the root prototypes), we can improve Javascript overall
+-   For example, adding a method named _trim_ to remove spaces from the end of strings, available to all String instances in your code:
 
 String.method (‘trim’, function () { return this.replace(/ˆ\\s+|\\s+$/g, ‘’); //uses regular expression });
 
@@ -2442,11 +2441,11 @@ return this;
 }  
 };
 
--   Remember that *for in* statements don’t work well with prototypes
+-   Remember that _for in_ statements don’t work well with prototypes
 
 ### Recursion
 
--   Used when a task can be divided into simple sub-problems and a function can *call itself repeatedly* to solve them
+-   Used when a task can be divided into simple sub-problems and a function can _call itself repeatedly_ to solve them
 -   Takes the format:
 
 var variable = function functionName (parameters){  
@@ -2457,31 +2456,31 @@ functionName(arguments);
 
 functionName (initialArguments); //initial call to the function
 
--   Javascript does not have *tail recursion optimization* and therefore does not optimize recursive functions — this also means they sometimes fail if they “recurse very deeply”; On a side note, *tail call optimization* is now supported in [ECMA-262](https://www.ecma-international.org/ecma-262/7.0/index.html#sec-tail-position-calls)
+-   Javascript does not have _tail recursion optimization_ and therefore does not optimize recursive functions — this also means they sometimes fail if they “recurse very deeply”; On a side note, _tail call optimization_ is now supported in [ECMA-262](https://www.ecma-international.org/ecma-262/7.0/index.html#sec-tail-position-calls)
 
 ### Scope
 
--   A *block* is a set of statements contained in curly brackets {}
+-   A _block_ is a set of statements contained in curly brackets {}
 -   Javascript does not have block scope but does have function scope
--   All variables declared *anywhere* within a function are available everywhere in that function — i.e. and inner function will have access to the variables of the outer function in which it is defined
--   A variable can be *overwritten* with a new value in an inner function and that new value’s scope will be just the body of the inner function — as soon as you’re back out to the outer function, the value of that variable will revert to what it was before the inner function began its execution
+-   All variables declared _anywhere_ within a function are available everywhere in that function — i.e. and inner function will have access to the variables of the outer function in which it is defined
+-   A variable can be _overwritten_ with a new value in an inner function and that new value’s scope will be just the body of the inner function — as soon as you’re back out to the outer function, the value of that variable will revert to what it was before the inner function began its execution
 -   All variable should be declared at the top of the function body
 
 ### Closure
 
 -   Inner functions have access to the actual parameters of the outer functions (not copies)
 -   If an object is created as a result of a function and assigned to myObject, myObject continues to share access to the variables in the functions that created it (actual variables, not copies)
--   It has access to *the context in which it was created* — this is *closure*
--   This includes later on, even if *the outer function has completed its execution and returned*, when the inner function is called, it will still have access to all the variables it had access to at the time it was defined (i.e. the variables that were *in context* when the inner function was defined)
+-   It has access to *the context in which it was created* — this is _closure_
+-   This includes later on, even if _the outer function has completed its execution and returned_, when the inner function is called, it will still have access to all the variables it had access to at the time it was defined (i.e. the variables that were _in context_ when the inner function was defined)
 
 ### Callbacks
 
--   A *callback function* is a function passed to another function as a parameter and executed in this other function
--   When making a request to a server, use an *asynchronous request* as asynchronous functions return immediately, therefore freeing up the client
+-   A _callback function_ is a function passed to another function as a parameter and executed in this other function
+-   When making a request to a server, use an _asynchronous request_ as asynchronous functions return immediately, therefore freeing up the client
 -   In this example, we pass the callback function to the asynchronous request as a parameter so the callback function will only be called when a response is available
 
-request = prepare\_the\_request();  
-send\_request\_asynchronously(request, function(response){  
+request = prepare_the_request();  
+send_request_asynchronously(request, function(response){  
 //function being passed in as a parameter  
 display(response);  
 }  
@@ -2491,13 +2490,13 @@ display(response);
 
 -   A module is a function or object whose contents can be used, but its state and implementation are hidden
 -   It is essentially using function scope and closures keep the variables and functions contained within as private as well as binding them to a non-global object — whilst still being accessible
--   Using the *module pattern* is widely used and good practice as it promotes information hiding (avoiding naming conflicts, etc) and encapsulation
+-   Using the _module pattern_ is widely used and good practice as it promotes information hiding (avoiding naming conflicts, etc) and encapsulation
 -   This is a [good article on how to use the module pattern](http://css-tricks.com/how-do-you-structure-javascript-the-module-pattern-edition/) with examples
 -   It can also be used to produce secure objects (see [durable objects](https://github.com/Lambda-April/Unsorted-Notes/blob/main) below)
 -   Methods contained in the object do not make use of `this` or `that` so it becomes impossible to change them from outside of the object except in ways explicitly permitted by the methods (like passing them a parameter)
--   The methods can be *replaced* but the secrets of how these methods function (like how they generate a number for example) can’t be revealed because they are not tied to a global object
+-   The methods can be _replaced_ but the secrets of how these methods function (like how they generate a number for example) can’t be revealed because they are not tied to a global object
 
-var Serial\_maker = function() {  
+var Serial_maker = function() {  
 //all variables defined in this object are now fixed and hidden from anything outside this function  
 //see page 42 of book for full example  
 };  
@@ -2508,14 +2507,14 @@ var Serial\_maker = function() {
 ### Cascade
 
 -   Some methods return nothing, albeit `undefined`
--   If we alter these methods to return `this` instead of `undefined`, they return the object which can then be passed to the next method, e.g `getElement(myBox).move(350,150)` gets the element and then passes is to the *move* function for the next action
--   This enables *cascades*, where you call many methods on the same object in sequence because the object is passed from one method to the next (usually separated by `.` as above)
+-   If we alter these methods to return `this` instead of `undefined`, they return the object which can then be passed to the next method, e.g `getElement(myBox).move(350,150)` gets the element and then passes is to the _move_ function for the next action
+-   This enables _cascades_, where you call many methods on the same object in sequence because the object is passed from one method to the next (usually separated by `.` as above)
 -   Cascades also stop you from trying to do too much in one method and makes your code more descriptive
 
 ### Curry
 
--   A `curry` method allows you to *partially evaluate* an existing function
--   An example is below where the function *expects two arguments*, but it is first invoked with only one (in this case using `curry` as in `add.curry(10);`) and then later passed the second argument
+-   A `curry` method allows you to _partially evaluate_ an existing function
+-   An example is below where the function _expects two arguments_, but it is first invoked with only one (in this case using `curry` as in `add.curry(10);`) and then later passed the second argument
 -   It can also be explained as transforming a function that takes multiple arguments (`add(a,b)`) into a chain of functions that take a single argument each (`addA = add(A); addA(B);` where the two functions are now `add()` & `addA()`)
 
 //set up a simple function that we will customise with curry  
@@ -2539,10 +2538,10 @@ return that.apply(null, args.concat(slice.apply(arguments)));
 
 ### Memoization
 
--   Storing the results of previous operations in objects (such as arrays) allows them to be reused without having to keep recalculating the value — this optimization is called *memoization*
--   Adding an object to store the results *memoizes the function*
+-   Storing the results of previous operations in objects (such as arrays) allows them to be reused without having to keep recalculating the value — this optimization is called _memoization_
+-   Adding an object to store the results _memoizes the function_
 -   Particularly useful when a function is recursive and uses the results of its previous iteration in the current iteration
--   A *memoizer* function can be created to help memoize future functions:
+-   A _memoizer_ function can be created to help memoize future functions:
 
 var meoizer = function(memo, fundamental) {  
 var shell = function(n) {  
@@ -2558,11 +2557,11 @@ return shell;
 
 ### Chapter 5 — Inheritance
 
-> *Javascript is a prototypal language, which means that objects inherit directly from other objects*
+> _Javascript is a prototypal language, which means that objects inherit directly from other objects_
 
 Main benefit of inheritance is code reuse — you only have to specify differences.
 
-Javascript can *mimic* classical inheritance but has a much richer set of code reuse patterns
+Javascript can _mimic_ classical inheritance but has a much richer set of code reuse patterns
 
 -   This chapter looks at the more straightforward patterns but it is always best to keep it simple
 
@@ -2575,7 +2574,7 @@ Javascript can *mimic* classical inheritance but has a much richer set of code r
 
 ### Object Specifiers
 
-Rather than: `var myObject = maker (f, l, m, c, s)` which has too many parameters to remember in the right order, use an *object specifier*:
+Rather than: `var myObject = maker (f, l, m, c, s)` which has too many parameters to remember in the right order, use an _object specifier_:
 
 var myObject = maker ({ //note curly braces  
 first: f,  
@@ -2593,12 +2592,12 @@ Also useful to pass object specifiers to JSON ([see Appendix E notes](https://gi
 
 -   Zero classes, one object inherits from another
 -   Create an object literal of a useful object and then make an instance of it using the format `var myObject = Object.create(originalObjectName)`
--   When you then customise the new object (adding properties or methods through the dot notation for example), this is *differential inheritance*, where you specify the differences from the original object
+-   When you then customise the new object (adding properties or methods through the dot notation for example), this is _differential inheritance_, where you specify the differences from the original object
 
 ### Functional
 
 -   All properties of an object are visible (Javascript has no classes so there is no such thing as a ‘private variable’ which can only be seen within a class as per other languages)
--   When you use a *function* to create your original object and the same with the object instances, you’re essentially utilising Javascript functional scope to create private properties and methods
+-   When you use a _function_ to create your original object and the same with the object instances, you’re essentially utilising Javascript functional scope to create private properties and methods
 -   The below is an example of how you would create an original object, the `name` and `saying` properties are now completely private and only accessible to the `get_name` and `says` method
 
 var mammal = function (spec) {  
@@ -2630,7 +2629,7 @@ var that = mammal(spec); //here the object ‘container of secrets’ is set up 
 }
 
 -   Requires less effort and gives better encapsulation and information hiding than the pseudoclassical pattern, as well as access to super methods (see page 54 of book for super method example)
--   An object created using the functional pattern *and* making no use of `this` or `that` is a *durable object* and cannot be compromised by attackers
+-   An object created using the functional pattern _and_ making no use of `this` or `that` is a _durable object_ and cannot be compromised by attackers
 -   Briefly also discussed in [Module](https://github.com/Lambda-April/Unsorted-Notes/blob/main) section above
 -   If you do want something to have access to the object’s private properties and methods, you pass it the `that` bundle (i.e. your ‘container of secrets’)
 
@@ -2643,7 +2642,7 @@ var that = mammal(spec); //here the object ‘container of secrets’ is set up 
 
 Javascript only has array-like objects which are slower than ‘real’ arrays.
 
-Retrieval and updating of properties works the same as with an object *except with integer property names*.
+Retrieval and updating of properties works the same as with an object _except with integer property names_.
 
 Arrays have their own literal format and their own set of methods ([Chapter 8 — Methods](https://github.com/Lambda-April/Unsorted-Notes/blob/main)).
 
@@ -2664,7 +2663,7 @@ Arrays have their own literal format and their own set of methods ([Chapter 8 
 
 -   Elements can be deleted from the array object using `delete` but this leaves a hole in the array
 -   Use `array.splice(keyInArray, howManyElementsToDelete)` which changes the keys for the remaining values in the array so there is no hole left
--   May be *slow*
+-   May be _slow_
 
 ### Enumeration
 
@@ -2673,13 +2672,13 @@ Arrays have their own literal format and their own set of methods ([Chapter 8 
 
 ### Confusion
 
-> *The rule is simple: when the property names \[keys\] are small sequential integers, you should use an array. Otherwise, use an object.*
+> _The rule is simple: when the property names \[keys\] are small sequential integers, you should use an array. Otherwise, use an object._
 
--   Arrays are most useful when property names are integers *but* they can also accept strings as property names
+-   Arrays are most useful when property names are integers _but_ they can also accept strings as property names
 -   Javascript doesn’t have a good way of telling an object from an array as `typeof array === object`
 -   To accurately detect arrays, have to define our own function:
 
-var is\_array = function(value) {  
+var is_array = function(value) {  
 return Object.prototype.toString.apply(value) === ‘\[object Array\]’;  
 //apply(value) binds \`value\` to \`this\` & returns true if \`this\` is an array }
 
@@ -2694,7 +2693,7 @@ Array.method(‘reduce’, function(parameters) {
 });
 
 -   Remember, every array inherits and can use the methods you add to `Array.prototype`
--   You can also add methods *directly to an array* because they are objects
+-   You can also add methods _directly to an array_ because they are objects
 -   `myArray.total = function () { //statements to execute; }` adds a ‘total’ function to the array `myArray`
 -   DO NOT USE: `Object.create()` will create an object – lacking the `length` property – not an array.
 
@@ -2704,13 +2703,13 @@ Array.method(‘reduce’, function(parameters) {
 -   Accessing a missing element will give you `undefined`
 -   If you have an algorithm that relies on the array not being empty and not having `undefined` values, you can write a function that will prep your array to have a certain number of defined values, essentially initializing it with certain values in place
 -   An `Array.dim` function is outlined on page 63 which will allow `var myArray = Array.dim(10,0)` to make an array with 10 zeroes starting from the first position in the array(0)
--   Javascript only has one dimensional arrays but *can* have array of arrays
+-   Javascript only has one dimensional arrays but _can_ have array of arrays
 -   Two dimensional arrays (matrices) will have to be set up by the programmer
 -   page 63 gives a method for this and for explicitly setting cell values so as not to have an empty matrix
 
 ### Chapter 7 — Regular Expressions
 
-> *A* regular expression *is the specification of the syntax of a simple language*
+> _A_ regular expression _is the specification of the syntax of a simple language_
 
 Used with `regexp.exec`, `regexp.test`, `string.match`, `string.replace`, `string.search` and `string.split` to interact with string (more in [Chapter 8 – Methods](https://github.com/Lambda-April/Unsorted-Notes/blob/main))
 
@@ -2725,56 +2724,56 @@ Breaking it down one portion ([factor](https://github.com/Lambda-April/Unsorted-
 -   Note that the string starts and ends with a slash `/`
 -   `ˆ` indicates the beginning of a string
 -   `(?:([A-Za-z]+):)?`
--   `(?:...)` indicates a [*noncapturing group*](https://github.com/Lambda-April/Unsorted-Notes/blob/main), where the ‘…’ is replaced by the group that you wish to match, but not save to anywhere
+-   `(?:...)` indicates a [_noncapturing group_](https://github.com/Lambda-April/Unsorted-Notes/blob/main), where the ‘…’ is replaced by the group that you wish to match, but not save to anywhere
 -   Suffix `?` indicates the group is optional, so it could or could not exist in the string – it could even exist more than once
--   `()` around the *(\[A-Za-z\]+)* indicates a [*capturing group*](https://github.com/Lambda-April/Unsorted-Notes/blob/main) which is therefore captured and placed in the `result` array
+-   `()` around the _(\[A-Za-z\]+)_ indicates a [_capturing group_](https://github.com/Lambda-April/Unsorted-Notes/blob/main) which is therefore captured and placed in the `result` array
 -   They groups are placed in the array in order, so the first will appear in `result[1]`
 -   Noncapturing groups are preferred to capturing groups because capturing groups have a performance penalty (on account of saving to the result array)
--   You can also have capturing groups *within* noncapturing groups such as `[(?:Bob says: (\w+))](http://www.rexegg.com/regex-disambiguation.html)`
+-   You can also have capturing groups _within_ noncapturing groups such as `[(?:Bob says: (\w+))](http://www.rexegg.com/regex-disambiguation.html)`
 -   `[...]` indicates a character class
 -   `A-Za-z` is a character class containing all 26 letters of the alphabet in both upper and lower case
--   Suffix `+` means character class will be matched *one or more times*
+-   Suffix `+` means character class will be matched _one or more times_
 -   Suffix `:` is matched literally (so the letters will be followed by a colon in this case)
 -   `(\/{0,3})`
--   `\/` The backslash `\` *escapes* the forward slash `/` (which traditionally symbolises the end of the regular expression literal) and together they indicate that the forward slash `/` should be matched
+-   `\/` The backslash `\` _escapes_ the forward slash `/` (which traditionally symbolises the end of the regular expression literal) and together they indicate that the forward slash `/` should be matched
 -   Suffix `{0,3}` means the slash `/` will be matched between 0 and 3 times
 -   `([0-9.\-A-Za-z]+)`
 -   String made up of one or more (note the `+` at the end denoting possible multiple occurrences) digits, letters (upper or lower case), full stops (.) or hyphens (-)
--   Note that the hyphen was escaped with a backslash `\-` as hyphens usually denote a *range* but in this case is a hyphen within the expression
+-   Note that the hyphen was escaped with a backslash `\-` as hyphens usually denote a _range_ but in this case is a hyphen within the expression
 -   `(?::(\d+))?`
--   `\d` represents a *digit character* so this will be a sequence of *one or more* digit characters (as per the `+`)
+-   `\d` represents a _digit character_ so this will be a sequence of _one or more_ digit characters (as per the `+`)
 -   The digit characters will be immediately preceded by a colon `:`
--   `(\d+)` will be the fourth capturing group in this expression, it is also *optional* (`?`) and inside a non-capturing group `(?:...)`
+-   `(\d+)` will be the fourth capturing group in this expression, it is also _optional_ (`?`) and inside a non-capturing group `(?:...)`
 -   `(?:\/([ˆ?#]*))?`
 -   Another optional group (`?`), beginning with a literal slash `/` (escaped by the backslash)
--   The `ˆ` at the beginning of character class `[ˆ?#]` means it includes *all* characters *except* ? and \#
+-   The `ˆ` at the beginning of character class `[ˆ?#]` means it includes _all_ characters *except* ? and \#
 -   This actually leaves the regexp open to attack because too many characters are included in the character class
--   The `*` indicates the character class will appear *zero or more* times
+-   The `*` indicates the character class will appear _zero or more_ times
 -   `(?:\?([ˆ#]*))?`
 -   We’ve seen everything here before: An optional capturing group starting with a literal `?` (escaped by the backslash) with zero or more characters that are not \#
 -   `(?:#(.*))?`
 -   Final optional group beginning with a `#`
--   `.` matches any character *except a line ending character*
+-   `.` matches any character _except a line ending character_
 -   `$` represents the end of a string
--   Note: `ˆ` and `$` are important because they anchor the regexp and checks whether the string matched against it contains *only* what is in the regexp
--   If `ˆ` and `$` weren’t present, it would check that the string *contained* the regexp but wouldn’t necessarily be only made up of this
--   Using only `ˆ` checks the string *starts* with the regexp
--   Using only `$` checks the string *ends* with the regexp
+-   Note: `ˆ` and `$` are important because they anchor the regexp and checks whether the string matched against it contains _only_ what is in the regexp
+-   If `ˆ` and `$` weren’t present, it would check that the string _contained_ the regexp but wouldn’t necessarily be only made up of this
+-   Using only `ˆ` checks the string _starts_ with the regexp
+-   Using only `$` checks the string _ends_ with the regexp
 
 > Another example `/ˆ-?\d+(?:\.\d*)?(?:e[+\-]?\d+)?$/i;`
 
 Most of this we have seen before but here are the new bits:
 
--   The `i` at the end means *ignore case* when matching letters
+-   The `i` at the end means _ignore case_ when matching letters
 -   `-?` means the minus sign is optional
--   `(?:\.\d*)` matches a decimal point followed by *zero or more* digits (123.6834.4442284 *does not match*)
--   Note this expression only uses *noncapturing* groups
+-   `(?:\.\d*)` matches a decimal point followed by _zero or more_ digits (123.6834.4442284 _does not match_)
+-   Note this expression only uses _noncapturing_ groups
 
 ### Construction
 
 3 flags exist in regular expressions: `i` means insensitive – ignore the character case, `g` means global – to match multiple items and `m` means multiline – where ˆ and $ can match line-ending characters
 
-Two ways to build a regular expression: 1. *Regular Expression literals* as per the examples above start and end with a slash `/`
+Two ways to build a regular expression: 1. _Regular Expression literals_ as per the examples above start and end with a slash `/`
 
 -   Here the flags are appended after the final slash, for example `/i`
 -   Be careful: `RegExp` objects made by regular expression literals share a single instance
@@ -2787,7 +2786,7 @@ Two ways to build a regular expression: 1. *Regular Expression literals* as per 
 
 //example creating a regular expression object that matches a JavaScript string
 
-var my\_regexp = new RegExp("‘(?:\\\\\\\\.|\[ˆ\\\\\\\\\\\\’\])\*‘", ’g’);
+var my_regexp = new RegExp("‘(?:\\\\\\\\.|\[ˆ\\\\\\\\\\\\’\])\*‘", ’g’);
 
 ### Elements
 
@@ -2795,69 +2794,69 @@ var my\_regexp = new RegExp("‘(?:\\\\\\\\.|\[ˆ\\\\\\\\\\\\’\])\*‘", ’g�
 
 `|` provides a match if any of the sequences provided match.
 
-In `"into".match(/in|int/);`, the *in* will be a match so it doesn’t even look at the *int*.
+In `"into".match(/in|int/);`, the _in_ will be a match so it doesn’t even look at the _int_.
 
 #### Regexp Sequence
 
-A *regexp sequence* is made up of one or more regexp [factors](https://github.com/Lambda-April/Unsorted-Notes/blob/main). If there are no quantifiers after the factor (like `?`, `*` or `+`), the factor will be matched one time.
+A _regexp sequence_ is made up of one or more regexp [factors](https://github.com/Lambda-April/Unsorted-Notes/blob/main). If there are no quantifiers after the factor (like `?`, `*` or `+`), the factor will be matched one time.
 
 #### Regexp Factor
 
-> *A* regexp factor *can be a character, a parenthesized group, a character class, or an escape sequence.*
+> _A_ regexp factor _can be a character, a parenthesized group, a character class, or an escape sequence._
 
 It’s essentially a portion of the full `RegExp`, like what we broke down the regexp above into.
 
--   The following special characters must all be *escaped* with a backslash `\` to be taken literally, or they will take on an alternative meaning: / \[ \] ( ) { } ? + \* | . ˆ$
+-   The following special characters must all be _escaped_ with a backslash `\` to be taken literally, or they will take on an alternative meaning: / \[ \] ( ) { } ? + \* | . ˆ$
 -   The `\` prefix does not make letters or digits literal
 -   When unescaped:
 -   `.` matches any character except line-ending
 -   `ˆ` matches the beginning of the text when `lastIndex` property is zero, or matches line-ending character when the `m` flag is present
--   Having `ˆ` inside a [character class](https://github.com/Lambda-April/Unsorted-Notes/blob/main) means NOT, so \[ˆ0-9\] means *does not* match a digit
+-   Having `ˆ` inside a [character class](https://github.com/Lambda-April/Unsorted-Notes/blob/main) means NOT, so \[ˆ0-9\] means _does not_ match a digit
 -   `$` matches the beginning of the text or a line-ending character when the `m` flag is present
 
 #### Regexp Escape
 
 As well as escaping special characters in regexp factors, the backslash has additional uses:
 
--   As in strings, `\f` is the formfeed character, `\n` is new line, `\r` is carriage return, `\t` is tab and `\u` specifies Unicode as a 16-bit hex. But `\b` is *not* a backspace character
+-   As in strings, `\f` is the formfeed character, `\n` is new line, `\r` is carriage return, `\t` is tab and `\u` specifies Unicode as a 16-bit hex. But `\b` is _not_ a backspace character
 -   `\d` === \[0-9\] and `\D` is the opposite, NOT (ˆ) a digit, \[ˆ0-9\]
 -   `\s` matches is a partial set of Unicode whitespace characters and `\S` is the opposite
 -   `\w` === \[0-9A-Za-z\] and `\W` === \[ˆ0-9A-Za-z\] but useless for any real world language (because of accents on letters, etc)
 -   `\1` refers to the text captured in group 1 so it is matched again later on in the regexp
 -   `\2` refers to group 2, `\3` to group 3 and so on
 
-\*`\b` is a *bad part*. It was supposed to be a word-boundary anchor but is useless for multilingual applications
+\*`\b` is a _bad part_. It was supposed to be a word-boundary anchor but is useless for multilingual applications
 
 #### Regexp Group
 
 Four kinds of groups:
 
 -   Capturing: `(...)` where each group is captured into the `result` array – the first capturing group in the regexp goes into `result[1]`, the second into `result[2]` and so on
--   Noncapturing `(?:...)` where the text is matched, but not captured and saved anywhere, making is *slightly faster* than a capturing group (has no bearing on numbering of capturing groups)
--   *Positive lookahead*, a bad part: `(?=...)` acts like a noncapturing group except after the match is made, it goes back to where text started
--   *Negative lookahead*, a bad part: `(?!...)` is like a positive lookahead but only matches if there is no match with what is in it
+-   Noncapturing `(?:...)` where the text is matched, but not captured and saved anywhere, making is _slightly faster_ than a capturing group (has no bearing on numbering of capturing groups)
+-   _Positive lookahead_, a bad part: `(?=...)` acts like a noncapturing group except after the match is made, it goes back to where text started
+-   _Negative lookahead_, a bad part: `(?!...)` is like a positive lookahead but only matches if there is no match with what is in it
 
 #### Regexp Class
 
 -   Conveniently and easily specifies one of a set of characters using square brackets `[]`, for example vowels: `[aeiou]`
 -   Can shorten specification of all 32 ASCII special characters to \[!-/:-@\[-\`{-˜\] (note that the \` in this piece of code is a back-tick)
--   Also allows `ˆ` as the first character after the opening `[` to mean *NOT* the characters in the character set
+-   Also allows `ˆ` as the first character after the opening `[` to mean _NOT_ the characters in the character set
 
 #### Regexp Class Escape
 
-There are *specific* characters that must be escaped in a character class: — / \[ \] ˆ
+There are _specific_ characters that must be escaped in a character class: — / \[ \] ˆ
 
 #### Regexp Quantifier
 
-A *quantifier* at the end of a factor indicates how many times the factor should be matched
+A _quantifier_ at the end of a factor indicates how many times the factor should be matched
 
--   A number in curly braces means the factor should match that many times, so `/o{3}` matches *ooo*
--   Two comma-seperated numbers in curly braces provide the *range* of times a factor should match, so `{3,5}` indicates it will match 3, 4 or 5 times
--   *Zero or one* times (same thing as saying something is optional) can be `?` or `{0,1}`
--   *Zero or more* times can be `*` or `{0,}`
--   *One or more* times can be `+` or `{1,}`
+-   A number in curly braces means the factor should match that many times, so `/o{3}` matches _ooo_
+-   Two comma-seperated numbers in curly braces provide the _range_ of times a factor should match, so `{3,5}` indicates it will match 3, 4 or 5 times
+-   _Zero or one_ times (same thing as saying something is optional) can be `?` or `{0,1}`
+-   _Zero or more_ times can be `*` or `{0,}`
+-   _One or more_ times can be `+` or `{1,}`
 
-Prefer to use ‘zero or more’ or ‘one or more’ matching over the ‘zero or one’ matching — i.e. prefer *greedy* matching over *lazy* matching
+Prefer to use ‘zero or more’ or ‘one or more’ matching over the ‘zero or one’ matching — i.e. prefer _greedy_ matching over _lazy_ matching
 
 ### Chapter 8 — Methods
 
@@ -2873,33 +2872,33 @@ Creates a string of all the array’s elements, separated by the `separator`. Us
 
 #### array.pop()
 
-Removes *last element* of array. Returns `undefined` for empty arrays.
+Removes _last element_ of array. Returns `undefined` for empty arrays.
 
 #### array.push(item…)
 
-Modifies the *array*, appending `items` onto the end. Returns the new `length` of the array.
+Modifies the _array_, appending `items` onto the end. Returns the new `length` of the array.
 
 #### array.reverse()
 
-*Modifies* the array by reversing the order of the elements.
+_Modifies_ the array by reversing the order of the elements.
 
 #### array.shift()
 
-Removes the *first* element of the array (does not leave a hole in the array — same effect as using the `.splice(a,b)` method) and returns that first element.
+Removes the _first_ element of the array (does not leave a hole in the array — same effect as using the `.splice(a,b)` method) and returns that first element.
 
 #### array.slice(start, end)
 
 Different to `splice`.
 
-‘slice’ creates a new array, copying from the `start` element and stopping at the element *before* the `end` value given. If no `end` is given, default is `array.length`.
+‘slice’ creates a new array, copying from the `start` element and stopping at the element _before_ the `end` value given. If no `end` is given, default is `array.length`.
 
 Negative values for `start` and `end` will have `array.length` added to them and if `start`&gt;`end`, it will return an empty array.
 
 #### array.sort(comparefn)
 
-JavaScript has a `sort()` method which was created only to compare strings and therefore sorts numbers incorrectly (it will sort them as 1, 15, 2, 23, 54 for example). Therefore, we have to write a comparison function which returns *0* if the two elements you are comparing are equal, a *positive number* if the first element should come first and a *negative number* if the second element should come first. Then pass this comparison function to `sort()` as a parameter to allow it to sort array elements *intelligently*.
+JavaScript has a `sort()` method which was created only to compare strings and therefore sorts numbers incorrectly (it will sort them as 1, 15, 2, 23, 54 for example). Therefore, we have to write a comparison function which returns _0_ if the two elements you are comparing are equal, a _positive number_ if the first element should come first and a _negative number_ if the second element should come first. Then pass this comparison function to `sort()` as a parameter to allow it to sort array elements _intelligently_.
 
-Page 80-82 in the book takes you through various iterations of the comparison functions — for numbers, simple strings, objects and objects with multiple keys (for example if you want to sort objects by first *and* last names). These should be taken from the book when required.
+Page 80-82 in the book takes you through various iterations of the comparison functions — for numbers, simple strings, objects and objects with multiple keys (for example if you want to sort objects by first _and_ last names). These should be taken from the book when required.
 
 #### array.splice(start, deleteCount, item…)
 
@@ -2917,69 +2916,69 @@ Works like `push` but adds items to the front of the array instead of the end. R
 
 #### function.apply(thisArg, \[argArray\])
 
-The `apply` method invokes a function, passing in the object that will be bound to `this` and *optional* array of arguments.
+The `apply` method invokes a function, passing in the object that will be bound to `this` and _optional_ array of arguments.
 
 ### Number
 
 #### number.toExponentional(fractionDigits)
 
-Converts *number* to a string in exponential form (e.g. 3.14e+0). `fractionDigits` (from 0 to 20) gives the number of decimal places.
+Converts _number_ to a string in exponential form (e.g. 3.14e+0). `fractionDigits` (from 0 to 20) gives the number of decimal places.
 
 #### number.toFixed(fractionDigits)
 
-Converts *number* to a string in decimal form (e.g. 3.1415927). `fractionDigits` (from 0 to 20) gives the number of decimal places.
+Converts _number_ to a string in decimal form (e.g. 3.1415927). `fractionDigits` (from 0 to 20) gives the number of decimal places.
 
 #### number.toPrecision(precision)
 
-Converts *number* to a string in decimal form (e.g. 3.1415927). The difference from `toFixed` is that `precision` (from 0 to 21) gives the number of total digits.
+Converts _number_ to a string in decimal form (e.g. 3.1415927). The difference from `toFixed` is that `precision` (from 0 to 21) gives the number of total digits.
 
 #### number.toString(radix)
 
-Converts *number* to a string. `radix` is an *optional* parameter between 2 and 36 and gives the *base*. The default radix is 10.
+Converts _number_ to a string. `radix` is an _optional_ parameter between 2 and 36 and gives the _base_. The default radix is 10.
 
 ### Object
 
 #### object.hasOwnProperty(name)
 
-Does not look at the property chain. Returns true if the *object* contains the property `name`.
+Does not look at the property chain. Returns true if the _object_ contains the property `name`.
 
 ### RegExp
 
 #### regexp.exec(string)
 
-Most powerful (and *slowest*) regexp method.
+Most powerful (and _slowest_) regexp method.
 
-Checks the `string` against the *regexp* (starting at position 0) and returns an array containing the matches. The *regexp* is set up with various capturing groups and these determine the elements that go in the array:
+Checks the `string` against the _regexp_ (starting at position 0) and returns an array containing the matches. The _regexp_ is set up with various capturing groups and these determine the elements that go in the array:
 
--   the 0 element of the array will contain the part of `string` that matched the *regexp*
--   element 1 of the array will contain the text captured by the first capturing group in *regexp*
--   element 2 of the array will contain the text captured by the second capturing group in *regexp* and so on
+-   the 0 element of the array will contain the part of `string` that matched the _regexp_
+-   element 1 of the array will contain the text captured by the first capturing group in _regexp_
+-   element 2 of the array will contain the text captured by the second capturing group in _regexp_ and so on
 -   if the match fails, it returns `null`
 
-If the *regexp* contains a `g` flag (e.g. `var regexp = /[ˆ<>]+|<(\/?)([A-Za-z]+)([ˆ<>]*)>/g;`), there is a lot more to look out for:
+If the _regexp_ contains a `g` flag (e.g. `var regexp = /[ˆ<>]+|<(\/?)([A-Za-z]+)([ˆ<>]*)>/g;`), there is a lot more to look out for:
 
 -   Searching begins at `regexp.lastIndex` (initially zero)
--   If a match is found, `lastIndex` becomes the position of the *first character of the match*
+-   If a match is found, `lastIndex` becomes the position of the _first character of the match_
 -   If no match is found, `lastIndex` is reset to zero
--   If searching for multiple occurrences of a pattern by calling `exec` in a loop, ensure you *reset* `_lastIndex_` when exiting the loop and remember `ˆ` only matches *when* `_lastIndex_` *is equal to zero*
+-   If searching for multiple occurrences of a pattern by calling `exec` in a loop, ensure you _reset_ `_lastIndex_` when exiting the loop and remember `ˆ` only matches _when_ `_lastIndex_` _is equal to zero_
 
 Example on page 87 of the book is worth reading to improve understanding.
 
 #### regexp.test(string)
 
-Simplest (and *fastest*) regexp method.
+Simplest (and _fastest_) regexp method.
 
-If *regexp* matches the `string` it returns *true*. Otherwise it returns *false*. Do not use the `g` flag with this method.
+If _regexp_ matches the `string` it returns _true_. Otherwise it returns _false_. Do not use the `g` flag with this method.
 
 ### String
 
 #### string.charAt(pos)
 
-Returns character at position `pos` in the string *starting from 0*. If `pos` is less than zero or bigger than the string itself it return an empty string.
+Returns character at position `pos` in the string _starting from 0_. If `pos` is less than zero or bigger than the string itself it return an empty string.
 
 #### string.charCodeAt(pos)
 
-Same as `charAt` except it returns the integer that represents the *code point value of the character at position* `_pos_`. Returns `NaN` if *string*.length &lt; `pos` &lt; 0.
+Same as `charAt` except it returns the integer that represents the _code point value of the character at position_ `_pos_`. Returns `NaN` if _string_.length &lt; `pos` &lt; 0.
 
 #### string.concat(string…)
 
@@ -2987,7 +2986,7 @@ Creates new string concatenating various strings. `+` tends to be used instead o
 
 #### string.indexOf(searchString, position)
 
-Searches for `searchString` within *string* starting at position `position` (an optional parameter). If `position` is not provided, search starts at the beginning of the *string*. Returns the integer *position of the first matched character* or *-1* if no match is found.
+Searches for `searchString` within _string_ starting at position `position` (an optional parameter). If `position` is not provided, search starts at the beginning of the _string_. Returns the integer _position of the first matched character_ or _-1_ if no match is found.
 
 #### string.lastIndexOf(searchString, position)
 
@@ -2995,12 +2994,12 @@ Same as `indexOf` but searches from the end of the string instead of the beginni
 
 #### string.localeCompare(that)
 
-Compares *string* to `that` parameter and returns:
+Compares _string_ to `that` parameter and returns:
 
--   0 if *string* === `that`
--   -1 if *string* &lt; `that`
+-   0 if _string_ === `that`
+-   -1 if _string_ &lt; `that`
 
-*NB. ‘a’ &lt; ‘A’, comparison is not just in length.*
+_NB. ‘a’ &lt; ‘A’, comparison is not just in length._
 
 #### string.match(regexp)
 
@@ -3010,18 +3009,18 @@ If there is a `g` flag in teh `regexp`, it produces an array of the matches but 
 
 #### string.replace(searchValue, replaceValue)
 
-Searches for the `searchValue` in *string* and replaces it with the `replaceValue`.
+Searches for the `searchValue` in _string_ and replaces it with the `replaceValue`.
 
 If `searchValue` is a:
 
--   string, only its *first occurrence* will be replaced with the `replaceValue`
--   regexp with a g flag, *all occurrences* will be replaced with the `replaceValue`; otherwise, only the *first occurrence* will be replaced
+-   string, only its _first occurrence_ will be replaced with the `replaceValue`
+-   regexp with a g flag, _all occurrences_ will be replaced with the `replaceValue`; otherwise, only the _first occurrence_ will be replaced
 
 If `replaceValue` is a:
 
 -   string, a `$` value has a special meaning when used in the `replaceValue` that conveys what to replace – see table on page 90 for possible variations on `$`
--   function, it is called for each match and the *string result of the function* is used as the replacement text
--   string result of the first call will replace capture group 1 of the *string* and so on
+-   function, it is called for each match and the _string result of the function_ is used as the replacement text
+-   string result of the first call will replace capture group 1 of the _string_ and so on
 
 #### string.search(regexp)
 
@@ -3029,19 +3028,19 @@ Similar to `.indexOf(string)` but takes a `regexp` instead of a `string`, retur
 
 #### string.slice(start, end)
 
-Creates a new string by copying the characters from the `start` position to the character before the `end` position in *string*.
+Creates a new string by copying the characters from the `start` position to the character before the `end` position in _string_.
 
-The `end` parameter is *optional* and defaults to *string*.length. If either parameter is negative, *string*.length is added to it.
+The `end` parameter is _optional_ and defaults to _string_.length. If either parameter is negative, _string_.length is added to it.
 
 #### string.split(separator, limit)
 
-Creates an array of strings by splitting apart *string* at the points where the `separator` appears (e.g. if the separator is ‘.’, ab.cd’ becomes \[‘ab’, ‘cd’\]).
+Creates an array of strings by splitting apart _string_ at the points where the `separator` appears (e.g. if the separator is ‘.’, ab.cd’ becomes \[‘ab’, ‘cd’\]).
 
--   If separator is an *empty string*, an array of single characters is produced.
--   `limit` is *optional* and determines how many pieces are to be split off from the original *string*.
+-   If separator is an _empty string_, an array of single characters is produced.
+-   `limit` is _optional_ and determines how many pieces are to be split off from the original _string_.
 -   The `separator` can be a `regexp` but
 -   text from capturing groups within the regexp will be included in the split — e.g. in `var e = text.split(/\s*(,)\s*/);` the commas (,) will each be included as a separate element in the resulting array
--   some systems *ignore empty strings* when the `separator` is a `regexp`
+-   some systems _ignore empty strings_ when the `separator` is a `regexp`
 
 #### string.substring(start, end)
 
@@ -3049,11 +3048,11 @@ No reason to use, use `slice` instead.
 
 #### string.toLocaleLowerCase()
 
-Produces a new string converted to lower case, *using the rules for the particular locale* (geography).
+Produces a new string converted to lower case, _using the rules for the particular locale_ (geography).
 
 #### string.toLocaleUpperCase()
 
-Produces a new string converted to upper case, *using the rules for the particular locale* (geography).
+Produces a new string converted to upper case, _using the rules for the particular locale_ (geography).
 
 #### string.toLowerCase()
 
@@ -3065,13 +3064,13 @@ Produces a new string converted to upper case.
 
 #### String.fromCharCode(char…)
 
-Produces a new string from a series of numbers. `var a = String.fromCharCode(67, 97, 116); //a === 'Cat'` *NB. You’re calling the prototype here, not replacing ‘String’ with your own variable.*
+Produces a new string from a series of numbers. `var a = String.fromCharCode(67, 97, 116); //a === 'Cat'` _NB. You’re calling the prototype here, not replacing ‘String’ with your own variable._
 
 ### Chapter 9 — Style
 
-#### *JavaScripts’s loose typing and excessive error tolerance provide little compile-time assurance of our programs’ quality, so to compensate, we should code with strict discipline.*
+#### _JavaScripts’s loose typing and excessive error tolerance provide little compile-time assurance of our programs’ quality, so to compensate, we should code with strict discipline._
 
-> We should avoid the *bad parts* of JavaScript, but also the useful parts that can be occasionally dangerous
+> We should avoid the _bad parts_ of JavaScript, but also the useful parts that can be occasionally dangerous
 
 > the likelihood a program will work \[as intended\] is significantly enhanced by our ability to read it
 
@@ -3083,11 +3082,11 @@ Produces a new string from a series of numbers. `var a = String.fromCharCode(67,
 
 > If you have to break a statement into 2 or more lines, indent the 2nd line onwards (an extra four spaces)
 
-> *Always* use blocks (curly braces {}) with structured statements like `_if_` and `_while_` to avoid confusion on what the statement is actually doing
+> _Always_ use blocks (curly braces {}) with structured statements like `_if_` and `_while_` to avoid confusion on what the statement is actually doing
 
 > Put the opening brace `_{_` on the same (first) line as the statement to avoid JavaScript’s [semicolon insertion](https://github.com/Lambda-April/Unsorted-Notes/blob/main) issues – i.e `_if (a) { ..._`
 
-> Use line comments `_//comment_` and not block commenting (unless you’re *commenting out* code)
+> Use line comments `_//comment_` and not block commenting (unless you’re _commenting out_ code)
 
 > Declare all your variables at the beginning of the function, due to JavaScript’s functional scope
 
@@ -3097,9 +3096,9 @@ Produces a new string from a series of numbers. `var a = String.fromCharCode(67,
 
 Each feature you add to something has a lot of different costs (documentation costs, specification, design, testing and development costs) and these are often not properly accounted for.
 
-> *Features that offer value to a minority of users impose a cost on all users*
+> _Features that offer value to a minority of users impose a cost on all users_
 
-> *We cope with the complexity of feature-driven design by finding and sticking with the good parts. For example, microwaves do a ton of different things, but most people just use one setting, the timer and the clock. So why not design with just the good parts?*
+> _We cope with the complexity of feature-driven design by finding and sticking with the good parts. For example, microwaves do a ton of different things, but most people just use one setting, the timer and the clock. So why not design with just the good parts?_
 
 ### Appendix A — the Awful Parts
 
@@ -3113,11 +3112,11 @@ Defined in three ways:
 
 -   Using a `var` statement outside of any function; `var foo = value`;
 -   By adding a property to the global object (container of all global variables), such as `window` in browsers; `window.foo = value;`
--   Using a variable without declaring it with `var`, which makes it an *implied global*; `foo = value`
+-   Using a variable without declaring it with `var`, which makes it an _implied global_; `foo = value`
 
 ### Scope
 
-Although JavaScript has block *syntax* (i.e. is written in blocks) like a lot of other programming languages, it has functional scope and *not* block scope.
+Although JavaScript has block _syntax_ (i.e. is written in blocks) like a lot of other programming languages, it has functional scope and _not_ block scope.
 
 Variables should all be declared at the top of the function and not littered throughout the block.
 
@@ -3141,7 +3140,7 @@ status:true
 
 Most JavaScript reserved words are not used in the language but cannot be used to name variables or parameters.
 
-If used as the key in object literals, they *must* be quoted. For example `object - {'case' : value};` or `object['final'] = value;` as *case* and *final* are both reserved words.
+If used as the key in object literals, they _must_ be quoted. For example `object - {'case' : value};` or `object['final'] = value;` as _case_ and _final_ are both reserved words.
 
 ### Unicode
 
@@ -3155,16 +3154,16 @@ Watch out for:
 -   incorrect reporting on typeof regular expressions, with some implementations returning ‘object’ and some returning ‘function’
 -   arrays are objects in JavaScript so `typeof array` will return ‘object’
 
-All `object`s are *truthy* and `null` is *falsy*, so you can use the following to tell them apart:
+All `object`s are _truthy_ and `null` is _falsy_, so you can use the following to tell them apart:
 
-if (my\_value && typeof my\_value === ‘object’) {  
+if (my_value && typeof my_value === ‘object’) {  
 //then my value is definitely an object or an array because not only is its ‘typeof’ an object but it’s also truthy (first statement)  
 }
 
 ### NaN
 
--   `typeof NaN === 'number'` even though it stands for *not-a-number*
--   If you have a chain of formulas that together produce a `NaN` then at least *one* of them will have generated `NaN`
+-   `typeof NaN === 'number'` even though it stands for _not-a-number_
+-   If you have a chain of formulas that together produce a `NaN` then at least _one_ of them will have generated `NaN`
 -   Surprisingly `NaN !=== NaN`
 -   `isNaN(value)` can be used to distinguish numbers from NaN
 
@@ -3176,29 +3175,29 @@ return typeof value === ‘number’ && isFinite(value); //isFinite() rejects Na
 
 ### Phony Arrays
 
-JavaScript doesn’t have real arrays, it has *array-like objects*.
+JavaScript doesn’t have real arrays, it has _array-like objects_.
 
 -   Good: No need to give them dimensions and don’t generate out-of-bounds errors
 -   Bad: Slower than ‘real’ arrays
 
 To test if value is an array:
 
-if (my\_value && typeof my\_value === ‘object’ && typeof my\_value.length === ‘number’ &&  
-!(my\_value.propertyIsEnumerable(‘length’))) {  
-//my\_value is definitely an array!  
+if (my_value && typeof my_value === ‘object’ && typeof my_value.length === ‘number’ &&  
+!(my_value.propertyIsEnumerable(‘length’))) {  
+//my_value is definitely an array!  
 }
 
 The `arguments` array isn’t an array, just an object with a length property.
 
 ### Falsy Values
 
-`0`, `NaN`, `''`, `false`, `null` and `undefined` are all *falsy* values, but they are not interchangeable. When testing for a missing member of an object for example, you need to use `undefined` and not `null`.
+`0`, `NaN`, `''`, `false`, `null` and `undefined` are all _falsy_ values, but they are not interchangeable. When testing for a missing member of an object for example, you need to use `undefined` and not `null`.
 
 `undefined` and `NaN` are actually global variables instead of constants but don’t change their values.
 
 ### Object
 
-JavaScript objects inherit members from the prototype chain so they are *never truly empty*.
+JavaScript objects inherit members from the prototype chain so they are _never truly empty_.
 
 To test for membership without prototype chain involvement, use the `hasOwnProperty` method or limit your results (for example, to specific types like number so you know you’re not dragging in object members from up the prototype for example if that’s what’s causing the problem).
 
@@ -3210,32 +3209,32 @@ Avoid these altogether
 -   `with` statement: Intended to provide a shortcut to properties of an object but results vary every time it is run
 -   `eval`: Adds unnecessary complication and compromises the security of the application
 -   Giving string arguments to `setTimeout` and `setInterval` should also be avoided as this makes them act like `eval`
--   `continue` statement: Forces a loop into its next iteration but the code is usually much improved when re-written *without* `continue`
--   `switch` fall through: In a `switch` statement, each `case` falls through to the next `case` unless you explicitly disrupt the flow, but using these *intentional* fall throughs makes the *unintentional* ones that are causing errors basically impossible to find
+-   `continue` statement: Forces a loop into its next iteration but the code is usually much improved when re-written _without_ `continue`
+-   `switch` fall through: In a `switch` statement, each `case` falls through to the next `case` unless you explicitly disrupt the flow, but using these _intentional_ fall throughs makes the _unintentional_ ones that are causing errors basically impossible to find
 -   This is one of those parts of JavaScript that appears useful but you’re better off avoiding because it’s occasionally very dangerous
--   Block-less statements: *Always* use curly braces `{}` to block in statements so as to avoid misinterpretation and aid error finding
+-   Block-less statements: _Always_ use curly braces `{}` to block in statements so as to avoid misinterpretation and aid error finding
 -   Bitwise operators: Shouldn’t really be doing this kind of manipulations because they are quite slow in JavaScript, therefore there shouldn’t be a need to use `&`, `|`, `ˆ`, `˜`, `>>`, `>>>` or `<<`
 -   This doesn’t mean you can’t use `&&` for example
 -   `++` and `--`: This one seems debatable to me; Douglas Crockford finds it makes his coding style much more cryptic and difficult to read (the book uses `+=1` and `-=1` instead)
 
 The function statement vs the function expression: To use JavaScript well, important to understand that functions are values.
 
--   A function *statement* is shorthand for a var statement with a function value, so `function foo() {}` (a function statement) means pretty much the same as `var foo = function foo(){};` (a function expression)
--   Logically, to write the language well you should define a function before using it, but in JavaScript, function statements (using just `function foo(){}`) are *hoisted* to the top of the scope in which they are defined – this encourages sloppy programming and should be avoided
+-   A function _statement_ is shorthand for a var statement with a function value, so `function foo() {}` (a function statement) means pretty much the same as `var foo = function foo(){};` (a function expression)
+-   Logically, to write the language well you should define a function before using it, but in JavaScript, function statements (using just `function foo(){}`) are _hoisted_ to the top of the scope in which they are defined – this encourages sloppy programming and should be avoided
 -   function statements also don’t function consistently in `if` statements
--   if you need to start a function expression with the word *function*, wrap it in parentheses (), or JavaScript assumes it’s a function *statement*
+-   if you need to start a function expression with the word _function_, wrap it in parentheses (), or JavaScript assumes it’s a function _statement_
 
 Typed wrappers: Don’t use `new Boolean` or `new String` or `new Number`, it’s completely unnecessary. Also avoid `new Object` and `new Array` and use `{}` and `[]` instead.
 
 `new` operator: Functions that are intended to be used with `new` (conventionally starting with a capital letter) should be avoided (don’t define them) as they can cause all kinds of issues and complex bugs which are difficult to catch.
 
-void: In JavaScript, this actually *takes* a value and *returns* `undefined`, which is hugely confusing and not helpful. Don’t use it.
+void: In JavaScript, this actually _takes_ a value and _returns_ `undefined`, which is hugely confusing and not helpful. Don’t use it.
 
 ### Appendix C — JSLint
 
 JSLint is a code quality tool for JavaScript which checks your syntax.
 
-Having read through this appendix (you can read more about [JSLint here](http://www.jslint.com/)), I tend more towards [*JSHint*](http://jshint.com/about/), a *fork* of JSLint. It allows programmers to customise for themselves which the good parts and bad parts are and define their own subset, although naturally there are a number of pre-defined options. [This is a really fantastic article on using JSHint](https://github.com/nelsonic/learn-jshint); it’s simple and aimed at having you using JSHint in a few minutes as well as providing various sources for pre-defined subsets.
+Having read through this appendix (you can read more about [JSLint here](http://www.jslint.com/)), I tend more towards [_JSHint_](http://jshint.com/about/), a _fork_ of JSLint. It allows programmers to customise for themselves which the good parts and bad parts are and define their own subset, although naturally there are a number of pre-defined options. [This is a really fantastic article on using JSHint](https://github.com/nelsonic/learn-jshint); it’s simple and aimed at having you using JSHint in a few minutes as well as providing various sources for pre-defined subsets.
 
 #### Further resources:
 
@@ -3269,17 +3268,17 @@ Having read through this appendix (you can read more about [JSLint here](http://
 
 -   Consistent effort &gt; cramming =&gt; for **durable knowledge**
 
-------------------------------------------------------------------------
+---
 
 #### Here’s a REPL to practice with:
 
 <span class="citation" data-cites="bgoonz/lambda-prep#README.html">\[https://replit.com/@bgoonz/lambda-prep\#README.html\]</span>(https://replit.com/<span class="citation" data-cites="bgoonz/lambda-prep#README.html">@bgoonz/lambda-prep\#README.html</span>)
 
-------------------------------------------------------------------------
+---
 
 <span class="citation" data-cites="bgoonz/lambda-prep#README.html">\[https://replit.com/@bgoonz/lambda-prep\#README.html\]</span>(https://replit.com/<span class="citation" data-cites="bgoonz/lambda-prep#README.html">@bgoonz/lambda-prep\#README.html</span>)
 
-------------------------------------------------------------------------
+---
 
 ### Hello World
 
@@ -3288,9 +3287,9 @@ Having read through this appendix (you can read more about [JSLint here](http://
 -   **//** : notation for creating a code comment in JS.
 -   **code comment** : useful for annotating pieces of code to explain how something works, ignored by computer.
 
-> ***“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra***
+> **_“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra_**
 
-------------------------------------------------------------------------
+---
 
 ### The Number Data Type
 
@@ -3309,20 +3308,20 @@ Operators are the symbols that perform particular operations.
 JS evaluates more complex expressions using the general math order of operations aka PEMDAS.
 
 -   **PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.
--   *To force a specific order of operation, use the group operator ( ) around a part of the expression.*
+-   _To force a specific order of operation, use the group operator ( ) around a part of the expression._
 
-**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! *(Discrete Math concept, circular problems can be solved with modulo)*
+**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
 
 -   Whenever you have a smaller number % a larger number, the answer will just be the initial small number.
 -   `console.log(7 % 10); // => 7;`
 
-------------------------------------------------------------------------
+---
 
 ### The String Data Type
 
 The **string** data type is a primitive data type that used to represent textual data.
 
--   can be wrapped by either **single** or **double** quotation marks, *best to choose one and stick with it for consistency*.
+-   can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.
 -   If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.
 -   `"That's a great string"; (valid)`
 -   `'Shakespeare wrote, "To be or not to be"'; (valid)`
@@ -3349,7 +3348,7 @@ The **string** data type is a primitive data type that used to represent textual
 -   the indexOf() search will return the first instanced index of the the char in the string.
 -   **concatenate** : word to describe joining strings together into a single string.
 
-------------------------------------------------------------------------
+---
 
 ### The Boolean Data Type
 
@@ -3369,7 +3368,7 @@ The **boolean** data type is the simplest data type since there are only two val
 -   **Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.
 -   `console.log(true || !false); // => stops after it sees "true ||"`
 
-------------------------------------------------------------------------
+---
 
 ### Comparison Operators
 
@@ -3384,16 +3383,16 @@ All comparison operators will result in a boolean output.
 -   **===** (equal to)
 -   **!==** (not equal to)
 
-> *Fun Fact: “a” &lt; “b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so “a” is less than “b” because it appears earlier!*
+> _Fun Fact: “a” &lt; “b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so “a” is less than “b” because it appears earlier!_
 
-> *If there is ever a standstill comparison of two string lexicographically (i.e. app vs apple) the comparison will deem the shorter string lesser.*
+> _If there is ever a standstill comparison of two string lexicographically (i.e. app vs apple) the comparison will deem the shorter string lesser._
 
 **Difference between == and ===**
 
 -   **===** : Strict Equality, will only return true if the two comparisons are entirely the same.
 -   **==** : Loose Equality, will return true even if the values are of a different type, due to coercion. (Avoid using this)
 
-------------------------------------------------------------------------
+---
 
 ### Variables
 
@@ -3419,7 +3418,7 @@ Variables are used to store information to be referenced and manipulated in a pr
 -   **declaration** : process of simply introducing a variable name.
 -   **initialization** : process of both declaring and assigning a variable on the same line.
 
-------------------------------------------------------------------------
+---
 
 ### Functions
 
@@ -3428,7 +3427,7 @@ A function is a procedure of code that will run when called. Functions are used 
 -   **Function Declaration** : Process when we first initially write our function.
 -   Includes three things:
 -   Name of the function.
--   A list of *parameters* ()
+-   A list of _parameters_ ()
 -   The code to execute {}
 -   **Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)
 -   JS evaluates code top down, left to right.
@@ -3437,20 +3436,20 @@ A function is a procedure of code that will run when called. Functions are used 
 -   When we hit a **return** statement in a function we immediately exit the function and return to where we called the function.
 -   When naming functions in JS always use camelCase and name it something appropriate. &gt; Greate code reads like English and almost explains itself. Think: Elegant, readable, and maintainable!
 
-------------------------------------------------------------------------
+---
 
 ### Parameters and Arguments
 
 -   **Parameters** : Comma seperated variables specified as part of a function’s declaration.
 -   **Arguments** : Values passed to the function when it is invoked.
--   *If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work.*
+-   _If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work._
 -   However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.
 
 #### Further resources:
 
 <span class="citation" data-cites="bgoonz/lambda-prep#README.html">\[https://replit.com/@bgoonz/lambda-prep\#README.html\]</span>(https://replit.com/<span class="citation" data-cites="bgoonz/lambda-prep#README.html">@bgoonz/lambda-prep\#README.html</span>)<span class="citation" data-cites="bgoonz/lambda-prep#README.html">\[https://replit.com/@bgoonz/lambda-prep\#README.html\]</span>(https://replit.com/<span class="citation" data-cites="bgoonz/lambda-prep#README.html">@bgoonz/lambda-prep\#README.html</span>)<span class="citation" data-cites="bgoonz/lambda-prep#README.html">\[https://replit.com/@bgoonz/lambda-prep\#README.html\]</span>(https://replit.com/<span class="citation" data-cites="bgoonz/lambda-prep#README.html">@bgoonz/lambda-prep\#README.html</span>)<span class="citation" data-cites="bgoonz/lambda-prep#README.html">\[https://replit.com/@bgoonz/lambda-prep\#README.html\]</span>(https://replit.com/<span class="citation" data-cites="bgoonz/lambda-prep#README.html">@bgoonz/lambda-prep\#README.html</span>)
 
-*More content at **[plainenglish.io](https://plainenglish.io/)***
+\*More content at **[plainenglish.io](https://plainenglish.io/)\***
 
 A all encompassing list of tools and resources for web developers
 
@@ -3721,7 +3720,7 @@ A all encompassing list of tools and resources for web developers
 
 [Fish shell](https://fishshell.com/): The user-friendly command line shell
 
--   [My fish\_config](https://github.com/mrmartineau/fish)
+-   [My fish_config](https://github.com/mrmartineau/fish)
 -   [awesome-fish](https://github.com/jorgebucaran/awesome-fish): A curated list of packages, prompts, and resources for the amazing fish shell
 -   [Starship](https://starship.rs/): Cross-Shell Prompt
 -   [tide](https://github.com/IlanCosman/tide): ![🌊](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f30a.svg) A modern prompt manager for the Fish shell
@@ -3808,7 +3807,7 @@ A all encompassing list of tools and resources for web developers
 
 ### HTML
 
--   [github.com/joshbuchea/HEAD](https://github.com/joshbuchea/HEAD): the definitive resource for everything that *could* go in the head of your document
+-   [github.com/joshbuchea/HEAD](https://github.com/joshbuchea/HEAD): the definitive resource for everything that _could_ go in the head of your document
 -   [MetaTags.io](https://metatags.io/): Preview, Edit and Generate
 -   [HEY META](https://www.heymeta.com/): Website Meta Tag Check
 -   [Rich Link Preview](https://richpreview.com/)
@@ -3978,21 +3977,21 @@ Here’s a live code editor where you can mess with any of the examples…
 
 #### Guides
 
-### ***space***
+### **_space_**
 
-> *The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can’t have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around.*
+> _The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can’t have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around._
 
-### *time*
+### _time_
 
-> *The time complexity for a data structure is in general more diverse than its space complexity.*
+> _The time complexity for a data structure is in general more diverse than its space complexity._
 
-### *Several operations*
+### _Several operations_
 
-> *In contrary to algorithms, when you look at the time complexity for data structures you need to express it for several operations that you can do with data structures. It can be adding elements, deleting elements, accessing an element or even searching for an element.*
+> _In contrary to algorithms, when you look at the time complexity for data structures you need to express it for several operations that you can do with data structures. It can be adding elements, deleting elements, accessing an element or even searching for an element._
 
-### *Dependent on data*
+### _Dependent on data_
 
-> *Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity.*
+> _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
 -   **The best-case complexity: when the data looks the best**
 -   **The worst-case complexity: when the data looks the worst**
@@ -4012,9 +4011,9 @@ An Array data structure, or simply an Array, is a data structure consisting of a
 
 Arrays are among the oldest and most important data structures and are used by every program. They are also used to implement many other data structures.
 
-*Complexity*  
-*Average*  
-*Access Search Insertion Deletion*
+_Complexity_  
+_Average_  
+_Access Search Insertion Deletion_
 
 O(1) O(n) O(1) O(n)
 
@@ -4024,9 +4023,9 @@ indexvalue0 … this is the first value, stored at zero position
 
 1.  The index of an array **runs in sequence**
 
-2. This could be useful for storing data that are required to be ordered, such as rankings or queues
+2.  This could be useful for storing data that are required to be ordered, such as rankings or queues
 
-3. In JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
+3.  In JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
 
 ### 2. Objects
 
@@ -4046,9 +4045,9 @@ The main difference is that object’s “index” need not be numbers and is no
 
 ![](https://cdn-images-1.medium.com/max/800/0*3GJiRoLyEoZ_aIlO)
 
-### *Definition*
+### _Definition_
 
-> *A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia*
+> _A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia_
 
 Hash Tables are considered the more efficient data structure for lookup and for this reason, they are widely used.
 
@@ -4058,7 +4057,7 @@ Access Search Insertion Deletion
 
 -   O(1) O(1) O(1)
 
-> *The code*
+> _The code_
 
 Note, here I am storing another object for every hash in my Hash Table.
 
@@ -4072,9 +4071,9 @@ Sets are pretty much what it sounds like. It’s the same intuition as Set in Ma
 
 ![](https://cdn-images-1.medium.com/max/800/0*gOE33ANZP2ujbjIG)
 
-### *Definition*
+### _Definition_
 
-> *A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia*
+> _A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia_
 
 The Set data structure is usually used to test whether elements belong to set of values. Rather then only containing elements, Sets are more used to perform operations on multiple values at once with methods such as union, intersect, etc…
 
@@ -4084,15 +4083,15 @@ Access Search Insertion Deletion
 
 -   O(n) O(n) O(n)
 
-> *The code*
+> _The code_
 
 ### The Singly Linked List
 
 ![](https://webdevhubcom.files.wordpress.com/2021/03/5081e-0fls64rv-xq19avca.gif)
 
-### *Definition*
+### _Definition_
 
-> *A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence.*
+> _A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence._
 
 Linked Lists are among the simplest and most common data structures because it allows for efficient insertion or removal of elements from any position in the sequence.
 
@@ -4101,15 +4100,15 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> *The code*
+> _The code_
 
 ### The Doubly Linked List
 
 ![](https://webdevhubcom.files.wordpress.com/2021/03/6878a-0tqxir-l_itig3wp-.gif)
 
-### *Definition*
+### _Definition_
 
-> *A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia*
+> _A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia_
 
 Having two node links allow traversal in either direction but adding or removing a node in a doubly linked list requires changing more links than the same operations on a Singly Linked List.
 
@@ -4118,15 +4117,15 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> *The code*
+> _The code_
 
 ### The Stack
 
 ![](https://webdevhubcom.files.wordpress.com/2021/03/c2742-0qsjyw-lvfo22ecle.gif)
 
-### *Definition*
+### _Definition_
 
-> *A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia*
+> _A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia_
 
 A Stack often has a third method peek which allows to check the last pushed element without popping it.
 
@@ -4135,15 +4134,15 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> *The code*
+> _The code_
 
 ### The Queue
 
 ![](https://webdevhubcom.files.wordpress.com/2021/03/cea0c-0yvfux5tkp7-v0p7v.gif)
 
-### *Definition*
+### _Definition_
 
-> *A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed.*
+> _A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed._
 
 As for the Stack data structure, a peek operation is often added to the Queue data structure. It returns the value of the front element without dequeuing it.
 
@@ -4152,15 +4151,15 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(n)
 
-> *The code*
+> _The code_
 
 ### The Tree
 
 ![](https://cdn-images-1.medium.com/max/800/0*yUiQ-NaPKeLQnN7n)
 
-### *Definition*
+### _Definition_
 
-> *A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the “children”), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia*
+> _A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the “children”), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia_
 
 Complexity  
 Average  
@@ -4170,15 +4169,15 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 ![](https://webdevhubcom.files.wordpress.com/2021/03/085ca-1dcdqib6xqbjcrfrz12bwqa.png)
 
-> *The code*
+> _The code_
 
 ### The Graph
 
 ![](https://webdevhubcom.files.wordpress.com/2021/03/f40d4-0q31ml1kjfwlizw3l.gif)
 
-### *Definition*
+### _Definition_
 
-> *A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references.*
+> _A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references._
 
 -   A graph is **any** collection of nodes and edges.
 -   Much more relaxed in structure than a tree.
@@ -4202,7 +4201,7 @@ Adjacency matrix: Data are stored in a two-dimensional matrix, in which the rows
 
 Graph
 
-> *The code*
+> _The code_
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
@@ -4219,7 +4218,7 @@ Graph
 
 ![](https://cdn-images-1.medium.com/max/800/0*hsbombFMlu6yICjz.gif)
 
-------------------------------------------------------------------------
+---
 
 ### Bracket Pair Colorizer 2
 
@@ -4228,7 +4227,7 @@ Graph
 
 ![](https://cdn-images-1.medium.com/max/800/0*MT-BCptwnKGYk1Pk.png)
 
-------------------------------------------------------------------------
+---
 
 ### Babel Javascript
 
@@ -4237,7 +4236,7 @@ Graph
 
 ![](https://cdn-images-1.medium.com/max/800/0*b5t9hd_8soPq26pq.png)
 
-------------------------------------------------------------------------
+---
 
 ### Code Runner
 
@@ -4294,7 +4293,7 @@ Graph
 
 -   To run custom command, then use shortcut `Ctrl+Alt+K`, or press `F1` and then select/type `Run Custom Command`
 
-------------------------------------------------------------------------
+---
 
 ### Color Highlight
 
@@ -4310,7 +4309,7 @@ Graph
 
 ![](https://cdn-images-1.medium.com/max/800/0*eAKBnl6yXJgXZXvZ.gif)
 
-------------------------------------------------------------------------
+---
 
 ### GitLens
 
@@ -4319,37 +4318,37 @@ Graph
 
 Here are just some of the **features** that GitLens provides,
 
--   effortless [**revision navigation**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#revision-navigation- "Jump to Revision Navigation") (backwards and forwards) through the history of a file
--   an unobtrusive [**current line blame**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#current-line-blame- "Jump to Current Line Blame") annotation at the end of the line showing the commit and author who last modified the line, with more detailed blame information accessible on [**hover**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#hovers- "Jump to Hovers")
--   [**authorship code lens**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#git-code-lens- "Jump to Git Code Lens") showing the most recent commit and number of authors at the top of files and/or on code blocks
--   a [**status bar blame**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#status-bar-blame- "Jump to Status Bar Blame") annotation showing the commit and author who last modified the current line
+-   effortless [**revision navigation**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#revision-navigation- 'Jump to Revision Navigation') (backwards and forwards) through the history of a file
+-   an unobtrusive [**current line blame**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#current-line-blame- 'Jump to Current Line Blame') annotation at the end of the line showing the commit and author who last modified the line, with more detailed blame information accessible on [**hover**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#hovers- 'Jump to Hovers')
+-   [**authorship code lens**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#git-code-lens- 'Jump to Git Code Lens') showing the most recent commit and number of authors at the top of files and/or on code blocks
+-   a [**status bar blame**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#status-bar-blame- 'Jump to Status Bar Blame') annotation showing the commit and author who last modified the current line
 -   on-demand **file annotations** in the editor gutter, including
--   [**blame**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-blame- "Jump to Gutter Blame") — shows the commit and author who last modified each line of a file
--   [**changes**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-changes- "Jump to Gutter Changes") — highlights any local (unpublished) changes or lines changed by the most recent commit
--   [**heatmap**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-heatmap- "Jump to Gutter Heatmap") — shows how recently lines were changed, relative to all the other changes in the file and to now (hot vs. cold)
+-   [**blame**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-blame- 'Jump to Gutter Blame') — shows the commit and author who last modified each line of a file
+-   [**changes**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-changes- 'Jump to Gutter Changes') — highlights any local (unpublished) changes or lines changed by the most recent commit
+-   [**heatmap**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-heatmap- 'Jump to Gutter Heatmap') — shows how recently lines were changed, relative to all the other changes in the file and to now (hot vs. cold)
 -   many rich **Side Bar views**
--   a [***Commits* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#commits-view- "Jump to the Commits view") to visualize, explore, and manage Git commits
--   a [***Repositories* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#repositories-view- "Jump to the Repositories view") to visualize, explore, and manage Git repositories
--   a [***File History* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#file-history-view- "Jump to the File History view") to visualize, navigate, and explore the revision history of the current file or just the selected lines of the current file
--   a [***Line History* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#line-history-view- "Jump to the Line History view") to visualize, navigate, and explore the revision history of the selected lines of the current file
--   a [***Branches* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#branches-view- "Jump to the Branches view") to visualize, explore, and manage Git branches
--   a [***Remotes* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#remotes-view- "Jump to the Remotes view") to visualize, explore, and manage Git remotes and remote branches
--   a [***Stashes* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#stashes-view- "Jump to the Stashes view") to visualize, explore, and manage Git stashes
--   a [***Tags* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#tags-view- "Jump to the Tags view") to visualize, explore, and manage Git tags
--   a [***Contributors* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#contributors-view- "Jump to the Contributors view") to visualize, navigate, and explore contributors
--   a [***Search & Compare* view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#search--compare-view- "Jump to the Search & Compare view") to search and explore commit histories by message, author, files, id, etc, or visualize comparisons between branches, tags, commits, and more
--   a [**Git Command Palette**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#git-command-palette- "Jump to the Git Command Palette") to provide guided (step-by-step) access to many common Git commands, as well as quick access to
--   [commits](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-commit-access- "Jump to Quick Commit Access") — history and search
--   [stashes](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-stash-access- "Jump to Quick Stash Access")
--   [status](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-status-access- "Jump to Quick Status Access") — current branch and working tree status
--   a user-friendly [**interactive rebase editor**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#interactive-rebase-editor- "Jump to the Interactive Rebase Editor") to easily configure an interactive rebase session
--   [**terminal links**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#terminal-links- "Jump to Terminal Links") — `ctrl+click` on autolinks in the integrated terminal to quickly jump to more details for commits, branches, tags, and more
--   rich [**remote provider integrations**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#remote-provider-integrations- "Jump to Remote Provider Integrations") — GitHub, GitLab, Bitbucket, Azure DevOps
+-   a [**_Commits_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#commits-view- 'Jump to the Commits view') to visualize, explore, and manage Git commits
+-   a [**_Repositories_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#repositories-view- 'Jump to the Repositories view') to visualize, explore, and manage Git repositories
+-   a [**_File History_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#file-history-view- 'Jump to the File History view') to visualize, navigate, and explore the revision history of the current file or just the selected lines of the current file
+-   a [**_Line History_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#line-history-view- 'Jump to the Line History view') to visualize, navigate, and explore the revision history of the selected lines of the current file
+-   a [**_Branches_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#branches-view- 'Jump to the Branches view') to visualize, explore, and manage Git branches
+-   a [**_Remotes_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#remotes-view- 'Jump to the Remotes view') to visualize, explore, and manage Git remotes and remote branches
+-   a [**_Stashes_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#stashes-view- 'Jump to the Stashes view') to visualize, explore, and manage Git stashes
+-   a [**_Tags_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#tags-view- 'Jump to the Tags view') to visualize, explore, and manage Git tags
+-   a [**_Contributors_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#contributors-view- 'Jump to the Contributors view') to visualize, navigate, and explore contributors
+-   a [**_Search & Compare_ view**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#search--compare-view- 'Jump to the Search & Compare view') to search and explore commit histories by message, author, files, id, etc, or visualize comparisons between branches, tags, commits, and more
+-   a [**Git Command Palette**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#git-command-palette- 'Jump to the Git Command Palette') to provide guided (step-by-step) access to many common Git commands, as well as quick access to
+-   [commits](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-commit-access- 'Jump to Quick Commit Access') — history and search
+-   [stashes](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-stash-access- 'Jump to Quick Stash Access')
+-   [status](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-status-access- 'Jump to Quick Status Access') — current branch and working tree status
+-   a user-friendly [**interactive rebase editor**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#interactive-rebase-editor- 'Jump to the Interactive Rebase Editor') to easily configure an interactive rebase session
+-   [**terminal links**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#terminal-links- 'Jump to Terminal Links') — `ctrl+click` on autolinks in the integrated terminal to quickly jump to more details for commits, branches, tags, and more
+-   rich [**remote provider integrations**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#remote-provider-integrations- 'Jump to Remote Provider Integrations') — GitHub, GitLab, Bitbucket, Azure DevOps
 -   issue and pull request auto-linking
 -   rich hover information provided for linked issues and pull requests (GitHub only)
 -   associates pull requests with branches and commits (GitHub only)
--   many [**powerful commands**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#powerful-commands- "Jump to Powerful Commands") for navigating and comparing revisions, and more
--   user-defined [**modes**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#modes- "Jump to Modes") for quickly toggling between sets of settings
+-   many [**powerful commands**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#powerful-commands- 'Jump to Powerful Commands') for navigating and comparing revisions, and more
+-   user-defined [**modes**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#modes- 'Jump to Modes') for quickly toggling between sets of settings
 -   and so much more ![😁](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f601.svg)
 
 ### Features
@@ -4358,7 +4357,7 @@ Here are just some of the **features** that GitLens provides,
 
 ![](https://cdn-images-1.medium.com/max/800/0*ZznZkr2qdB6qT2sX.gif)
 
-------------------------------------------------------------------------
+---
 
 ### Markdown All in One
 
@@ -4384,7 +4383,7 @@ See full key binding list in the [keyboard shortcuts](https://marketplace.visual
 -   Run command “**Create Table of Contents**” to insert a new table of contents.
 -   The TOC is **automatically updated** on file save by default. To disable, please change the `toc.updateOnSave` option.
 -   The **indentation type (tab or spaces)** of TOC can be configured per file. Find the setting in the right bottom corner of VS Code’s status bar.
--   ***Note***: Be sure to also check the `list.indentationSize` option.
+-   **_Note_**: Be sure to also check the `list.indentationSize` option.
 -   To make TOC **compatible with GitHub or GitLab**, set option `slugifyMode` accordingly
 -   Three ways to **control which headings are present** in the TOC:
 -   Click to expand
@@ -4392,7 +4391,7 @@ See full key binding list in the [keyboard shortcuts](https://marketplace.visual
 
 ![](https://cdn-images-1.medium.com/max/800/0*wqtYh9oFLU1GbfLE.gif)
 
--   *In case you are seeing* ***unexpected TOC recognition***\_, you can add a\_ `_<!-- no toc -->_` *comment above the list*.
+-   _In case you are seeing_ **_unexpected TOC recognition_**\_, you can add a\_ `_<!-- no toc -->_` _comment above the list_.
 
 ### List editing
 
@@ -4402,7 +4401,7 @@ See full key binding list in the [keyboard shortcuts](https://marketplace.visual
 
 ![](https://cdn-images-1.medium.com/max/800/0*eoAN8X-cP9iM6l3Y.gif)
 
-***Note***: By default, this extension tries to determine indentation size for different lists according to [CommonMark Spec](https://spec.commonmark.org/0.29/#list-items). If you prefer to use a fixed tab size, please change the `list.indentationSize` setting.
+**_Note_**: By default, this extension tries to determine indentation size for different lists according to [CommonMark Spec](https://spec.commonmark.org/0.29/#list-items). If you prefer to use a fixed tab size, please change the `list.indentationSize` setting.
 
 ### Print Markdown to HTML
 
@@ -4418,7 +4417,7 @@ See full key binding list in the [keyboard shortcuts](https://marketplace.visual
 
 ![](https://cdn-images-1.medium.com/max/800/0*6yKsV2SWwPFdGHZT.gif)
 
--   ***Note***: The key binding is Ctrl + Shift + I on Linux. See [Visual Studio Code Key Bindings](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference).
+-   **_Note_**: The key binding is Ctrl + Shift + I on Linux. See [Visual Studio Code Key Bindings](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference).
 -   Task lists
 
 ### Math
@@ -4439,7 +4438,7 @@ Tip: also support the option `completion.root`
 
 ![](https://cdn-images-1.medium.com/max/800/0*ZYCqFh0MHuE153Ed.png)
 
-------------------------------------------------------------------------
+---
 
 ### Mocah Test Explorer
 
@@ -4460,7 +4459,7 @@ Tip: also support the option `completion.root`
 
     {   "npm-intellisense.importES6": false,    "npm-intellisense.importQuotes": "'",   "npm-intellisense.importLinebreak": ";\r\n",    "npm-intellisense.importDeclarationType": "const",}
 
-------------------------------------------------------------------------
+---
 
 ### NPM Intellisense
 
@@ -4487,7 +4486,7 @@ Npm intellisense scans only dependencies by default. Set scanDevDependencies to 
 
     {   "npm-intellisense.scanDevDependencies": true,}
 
-------------------------------------------------------------------------
+---
 
 ### Path Intellisense
 
@@ -4535,145 +4534,145 @@ Quokka.js is a developer productivity tool for rapid JavaScript / TypeScript pro
 
 [View at Medium.com](https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822)[View at Medium.com](https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822)
 
-------------------------------------------------------------------------
+---
 
 ### ![👋🏻](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f44b-1f3fb.svg) Behavioral & Cultural Interview Questions
 
-> *Software engineer interviewers ask behavioral/cultural questions to evaluate interviewee’s soft skills, and also to decide whether the candidate is a cultural fit. Make sure you’ve prepared great answers to these interview questions.*
+> _Software engineer interviewers ask behavioral/cultural questions to evaluate interviewee’s soft skills, and also to decide whether the candidate is a cultural fit. Make sure you’ve prepared great answers to these interview questions._
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Tell me about yourself
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Tell me about yourself
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)====&gt;***“Tell me about yourself” is one of the most common and important interview questions. However, it can be daunting, as it’s one you need to get right. After all, not only is it your first impression on the interviewer, but you also need to be simultaneously professional and authentic when answering it.
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)====&gt;_**“Tell me about yourself” is one of the most common and important interview questions. However, it can be daunting, as it’s one you need to get right. After all, not only is it your first impression on the interviewer, but you also need to be simultaneously professional and authentic when answering it.
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***So how can you give a good answer without oversharing? To help you structure your answer, we’ll give you a rough guideline: start with a short introduction, talk about the present, recount the past, and mention your future goals.
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**So how can you give a good answer without oversharing? To help you structure your answer, we’ll give you a rough guideline: start with a short introduction, talk about the present, recount the past, and mention your future goals.
 
 ![](https://cdn-images-1.medium.com/max/800/0*E6ldmJAPG95McXVB)
 
-------------------------------------------------------------------------
+---
 
 ### What are some side projects you’re currently working on?
 
-*Current Experience*
+_Current Experience_
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***\_Outline the role you’re currently in, your responsibilities, and your achievements (without reciting your resume)\_
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**\_Outline the role you’re currently in, your responsibilities, and your achievements (without reciting your resume)\_
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***\_Highlight what you’re most passionate about (i.e. working with PMs to perfect product specs, discussing with colleagues about different tech stacks, helping others excel in their jobs and career)\_
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**\_Highlight what you’re most passionate about (i.e. working with PMs to perfect product specs, discussing with colleagues about different tech stacks, helping others excel in their jobs and career)\_
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***\_Recount one or two job-related projects and/or situations that map onto the job you’re applying to (i.e. collaborating with designers, working with legacy code, implementing best-practices, introducing new tech stacks, mentoring your colleagues)\_
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**\_Recount one or two job-related projects and/or situations that map onto the job you’re applying to (i.e. collaborating with designers, working with legacy code, implementing best-practices, introducing new tech stacks, mentoring your colleagues)\_
 
 ### Past Experience
 
 > **Now it’s time to highlight your skills a little:**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Selectively highlight one high-impact (preferably quantifiable) project you were involved with for each job
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Selectively highlight one high-impact (preferably quantifiable) project you were involved with for each job
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Highlight the hard and soft skills you learned from your past working experiences
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Highlight the hard and soft skills you learned from your past working experiences
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Emphasize the initiatives you took to improve the company’s work flow (i.e. propose new flow to streamline sprints) or your own skillsets (i.e. engaging in hackathon with colleagues or friends)
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Emphasize the initiatives you took to improve the company’s work flow (i.e. propose new flow to streamline sprints) or your own skillsets (i.e. engaging in hackathon with colleagues or friends)
 
 ### Future Expectations
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Convey what you hope to achieve and learn from the new job
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Convey what you hope to achieve and learn from the new job
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Detail products, projects, features, or initiatives you can imagine yourself help kick off and lead in the company
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Detail products, projects, features, or initiatives you can imagine yourself help kick off and lead in the company
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Tell me what a productive day at work looks like to you
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Tell me what a productive day at work looks like to you
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***This question may not appear in every interview, but when they do, it’s important for you to highlight your organizational and prioritization skills. When hiring managers ask this question, they want to know:
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**This question may not appear in every interview, but when they do, it’s important for you to highlight your organizational and prioritization skills. When hiring managers ask this question, they want to know:
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Whether you’re a proactive communicator and a good planner of your time
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Whether you’re a proactive communicator and a good planner of your time
 
 ### How you strike a balance between multiple ongoing projects
 
-D***escribe one or two instances where you had several projects running simultaneously and how you managed to prioritize different tasks, make progress, meet milestones, and work on iterations based on feedback.***
+D**_escribe one or two instances where you had several projects running simultaneously and how you managed to prioritize different tasks, make progress, meet milestones, and work on iterations based on feedback._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***How you deliver quality work with limited time
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**How you deliver quality work with limited time
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***When there’s limited time and multiple projects going on, you may not be able to give 100% to the projects at hand. Let the interviewers know:
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**When there’s limited time and multiple projects going on, you may not be able to give 100% to the projects at hand. Let the interviewers know:
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***How you decide which tasks should be prioritized
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**How you decide which tasks should be prioritized
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***How you negotiate deadlines and milestones with stakeholders
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**How you negotiate deadlines and milestones with stakeholders
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***How you ensure all projects will be delivered with acceptable quality
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**How you ensure all projects will be delivered with acceptable quality
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***At what milestones you believe it’s ok to deliver something “less than perfect”
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**At what milestones you believe it’s ok to deliver something “less than perfect”
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***How you decide when to go back and improve the “minimum viable projects” delivered earlier in the project’s timeline
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**How you decide when to go back and improve the “minimum viable projects” delivered earlier in the project’s timeline
 
 ### Professional Skills
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Will you excel in this job? Are you passionate about this job? It’s time to show how. For the first question, highlight some of your professional abilities:
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Will you excel in this job? Are you passionate about this job? It’s time to show how. For the first question, highlight some of your professional abilities:
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Industry experience
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Industry experience
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Technical skills
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Technical skills
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Soft skills
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Soft skills
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Key accomplishments
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Key accomplishments
 
 #### For the second question, showcase your excitement for the job. Hiring managers want to see your excitement for these reasons:
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)1&gt;***Excitement will fuel your performance
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)1&gt;_**Excitement will fuel your performance
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)2&gt;***Passion will confirm that you’re interested in this job
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)2&gt;_**Passion will confirm that you’re interested in this job
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Eagerness will help you get through challenges at work
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Eagerness will help you get through challenges at work
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Company culture and shared values
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Company culture and shared values
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Do you know the company’s culture and will you be a good fit? Here are some culture-related points you could cover in your answer:
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Do you know the company’s culture and will you be a good fit? Here are some culture-related points you could cover in your answer:
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***You’re attracted to the company’s general reputation
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**You’re attracted to the company’s general reputation
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***You’re inspired by a specific leader in the company
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**You’re inspired by a specific leader in the company
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***You’re passionate about the company’s products and services
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**You’re passionate about the company’s products and services
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***You’re onboard with the company’s initiatives (community engagement, public endorsements, etc.)
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**You’re onboard with the company’s initiatives (community engagement, public endorsements, etc.)
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***You admire the company’s culture. Here are some specific examples:
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**You admire the company’s culture. Here are some specific examples:
 
-------------------------------------------------------------------------
+---
 
 ### Commitment to the company
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Are you passionate about the company and will you stay committed to this company? If the interviewer already asked you “Where do you see yourself in 5 years?” then you don’t have to stress too much about showing your long-term commitment when answering this question. However, if you haven’t had the opportunity to show your commitment to the company, the most organic way to show your commitment is to talk about your long term plans in the company. Here are some things you can talk about:***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Are you passionate about the company and will you stay committed to this company? If the interviewer already asked you “Where do you see yourself in 5 years?” then you don’t have to stress too much about showing your long-term commitment when answering this question. However, if you haven’t had the opportunity to show your commitment to the company, the most organic way to show your commitment is to talk about your long term plans in the company. Here are some things you can talk about:_**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Projects you want to start
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Projects you want to start
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Potential directions you think the company can go in
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Potential directions you think the company can go in
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***The different products/teams you want to contribute to
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**The different products/teams you want to contribute to
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Processes you’d like to participate in improving
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Processes you’d like to participate in improving
 
 ### Why should we hire you?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Ultimately, every single question interviewers ask you is related to this overarching question: “Why should we hire you?” Interviewers want to know, as confidently as possible, that you will be a good hire. Therefore, your answer should confirm that you’ll be a good hire.
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Ultimately, every single question interviewers ask you is related to this overarching question: “Why should we hire you?” Interviewers want to know, as confidently as possible, that you will be a good hire. Therefore, your answer should confirm that you’ll be a good hire.
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Unlike the more specific questions we’ve outlined above, this question is a generic question that requires a concise but powerful answer. Think about this as your elevator pitch — you should be able to sell yourself to the interview within a matter of minutes.
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Unlike the more specific questions we’ve outlined above, this question is a generic question that requires a concise but powerful answer. Think about this as your elevator pitch — you should be able to sell yourself to the interview within a matter of minutes.
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***To come up with your elevator pitch, you’ll need to do some planning and consolidation.
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**To come up with your elevator pitch, you’ll need to do some planning and consolidation.
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Here are some guiding questions for you to kickoff your brainstorming sessions:
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Here are some guiding questions for you to kickoff your brainstorming sessions:
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***What are the most important qualifications for this position from the company’s perspective?
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**What are the most important qualifications for this position from the company’s perspective?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***What are my strong suits and how do they set me apart from others?
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**What are my strong suits and how do they set me apart from others?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***What are my most monumental accomplishments?
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**What are my most monumental accomplishments?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Why are you the best person for this job?
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Why are you the best person for this job?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Consolidate and practice your pitch
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Consolidate and practice your pitch
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Combine your answers in prose form to make sure each point flows to the next smoothly
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Combine your answers in prose form to make sure each point flows to the next smoothly
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Check to make sure your answer sets you apart from other candidates
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Check to make sure your answer sets you apart from other candidates
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)!!!!!!!***Practice, practice, and practice, but DO NOT TRY TO MEMORIZE YOUR PITCH!!!!!!!!!
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)!!!!!!!_**Practice, practice, and practice, but DO NOT TRY TO MEMORIZE YOUR PITCH!!!!!!!!!
 
 ### ![📝](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f4dd.svg) Interview Etiquette & Other Tips
 
@@ -4707,25 +4706,25 @@ Professional growth opportunities
 
 ### Closing questions and next steps
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Is there anything unclear or concerning about my background that I can help clarify?
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Is there anything unclear or concerning about my background that I can help clarify?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***What are the next steps in the interview process?
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**What are the next steps in the interview process?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Is there anything else I can provide you with that would be helpful?
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Is there anything else I can provide you with that would be helpful?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***How to answer salary expectations?
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**How to answer salary expectations?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***“What are you salary expectations?” can be a daunting question. If talking about money wasn’t uncomfortable enough already, most job seekers worry that proposing the “wrong number” would cost them the job — or land them a job offer with a disappointing salary. Not great.
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**“What are you salary expectations?” can be a daunting question. If talking about money wasn’t uncomfortable enough already, most job seekers worry that proposing the “wrong number” would cost them the job — or land them a job offer with a disappointing salary. Not great.
 
-------------------------------------------------------------------------
+---
 
 ### Follow up ?????
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Depending on how many rounds of interviews you’ve gone through, you may feel differently about how close you are to getting the job. The closer you get to the end of the hiring process, the more likely it is for you to start feeling anxious due to higher expectations. As a result, you may be eager to follow up with the hiring manager regarding your interview results. With that said, there’s a fine line between showing your eager attitude and coming off as desperate.
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Depending on how many rounds of interviews you’ve gone through, you may feel differently about how close you are to getting the job. The closer you get to the end of the hiring process, the more likely it is for you to start feeling anxious due to higher expectations. As a result, you may be eager to follow up with the hiring manager regarding your interview results. With that said, there’s a fine line between showing your eager attitude and coming off as desperate.
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Before we get to the types of follow up emails you should send out, make sure to ask the hiring manager about when you can expect to hear back from them about next steps. This information will help you decide when it’s appropriate to follow up down the line.
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Before we get to the types of follow up emails you should send out, make sure to ask the hiring manager about when you can expect to hear back from them about next steps. This information will help you decide when it’s appropriate to follow up down the line.
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***There are four types of follow up emails you should send at different times after the interview: Thank you email, checking-in email, second follow up email, final follow up email.
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**There are four types of follow up emails you should send at different times after the interview: Thank you email, checking-in email, second follow up email, final follow up email.
 
 #### Thank you email
 
@@ -4743,11 +4742,11 @@ Professional growth opportunities
 
 ![](https://cdn-images-1.medium.com/max/800/0*tZNLWVUGmj2tJK3j.jpg)
 
-------------------------------------------------------------------------
+---
 
-### ***Technical interview :***
+### **_Technical interview :_**
 
-#### ⮕***questions examine a candidate’s thought processes and assess what approaches they adopt to solve problems. The most common end-to-end software development questions are listed below.***
+#### ⮕**_questions examine a candidate’s thought processes and assess what approaches they adopt to solve problems. The most common end-to-end software development questions are listed below._**
 
 ### Here’s the repo that I use to practice my technical chops for interviews:
 
@@ -4755,95 +4754,95 @@ Professional growth opportunities
 
 ### 1. Development
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Describe the process you used for a recent project, from requirements to delivery. Does your team prefer using Agile or Waterfall? Any pros and cons?***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Describe the process you used for a recent project, from requirements to delivery. Does your team prefer using Agile or Waterfall? Any pros and cons?_**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) In answering this question, you need to show your planning, process, and communication/collaboration skills. Think in advance about a suitable project where your contributions cover all these bases.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) In answering this question, you need to show your planning, process, and communication/collaboration skills. Think in advance about a suitable project where your contributions cover all these bases._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)If you can, it’s best to choose to describe an Agile project you worked on, as organizations whether they use a Waterfall or Agile methodology, are keen to work with developers experienced in Agile.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)If you can, it’s best to choose to describe an Agile project you worked on, as organizations whether they use a Waterfall or Agile methodology, are keen to work with developers experienced in Agile._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Ideally, share a project in which you worked with a bigger team.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Ideally, share a project in which you worked with a bigger team._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Outline the components of the project and what role you played.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Outline the components of the project and what role you played._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Highlight any interactions with other teams and the process for handover and collaboration.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Highlight any interactions with other teams and the process for handover and collaboration._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Highlight any interactions with other teams and the process for handover and collaboration.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Highlight any interactions with other teams and the process for handover and collaboration._**
 
 ### 2. Based on your experience in this project, specify your favorite and least favorite part of this type of collaboration.
 
-R***emember to keep positive because the interviewers are always looking for constructive answers.***
+R**_emember to keep positive because the interviewers are always looking for constructive answers._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)You can specify cutting edge collaboration tools and techniques and/or methodologies that you already know the company employs in their own workflows.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)You can specify cutting edge collaboration tools and techniques and/or methodologies that you already know the company employs in their own workflows._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)For the least favorite parts, don’t just list the downsides and failures, but also mention what you’ve learned from it and how you would improve.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)For the least favorite parts, don’t just list the downsides and failures, but also mention what you’ve learned from it and how you would improve._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Ensure that you come across humbled from the failures, not exasperated and that you know better than everyone else — even if you truly feel this way! Explain how you tried to positively encourage your team to correct the course rather than staying silent and going with a consensus majority.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Ensure that you come across humbled from the failures, not exasperated and that you know better than everyone else — even if you truly feel this way! Explain how you tried to positively encourage your team to correct the course rather than staying silent and going with a consensus majority._**
 
-### ***3. Based on the project, what programming languages / tools / services did you use? And why did you choose them?***
+### **_3. Based on the project, what programming languages / tools / services did you use? And why did you choose them?_**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Questions like this are designed to allow you to showcase your way of thinking. The interviewer is looking to hear your ability to make choices based on rational decisions — so make sure that you show that you can do this!***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Questions like this are designed to allow you to showcase your way of thinking. The interviewer is looking to hear your ability to make choices based on rational decisions — so make sure that you show that you can do this!_**
 
-> ***To begin with, give an example of a project in which you had the most ownership or you had the greatest sense of achievement/efficiency/effectiveness from the toolchain used.***
+> **_To begin with, give an example of a project in which you had the most ownership or you had the greatest sense of achievement/efficiency/effectiveness from the toolchain used._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Next, describe the goal of the project, and briefly go through your responsibilities when it came to the toolchain decision-making process. Within Agile work practices, it’s usually a team effort to decide the best programming languages/tools/services are the best fit for the project, within customer requirements. Outline the consultation process you went through with both the customer and your team to arrive at the best solutions.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg) Next, describe the goal of the project, and briefly go through your responsibilities when it came to the toolchain decision-making process. Within Agile work practices, it’s usually a team effort to decide the best programming languages/tools/services are the best fit for the project, within customer requirements. Outline the consultation process you went through with both the customer and your team to arrive at the best solutions._**
 
 ### 4. Describe the biggest toolchain-related challenge you encountered in the project:
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Outline the situation, the goal you expected, and the reason why there was a challenge.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Outline the situation, the goal you expected, and the reason why there was a challenge._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Share the toolchain you used when you encountered the problem, then other technologies and tools you applied to help solve it, if applicable. Ensure to note whether there was a full tool pivot or you managed to build onto an existing library (or something similar) to achieve the end goal.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Share the toolchain you used when you encountered the problem, then other technologies and tools you applied to help solve it, if applicable. Ensure to note whether there was a full tool pivot or you managed to build onto an existing library (or something similar) to achieve the end goal._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Remember: the most important thing is not what you ultimately used, but how many options you referred to during the process, and which metrics you adopted to decide which tech to go for. Remember to share the pros and cons of your decision, and if, looking back now, whether you would do it differently.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Remember: the most important thing is not what you ultimately used, but how many options you referred to during the process, and which metrics you adopted to decide which tech to go for. Remember to share the pros and cons of your decision, and if, looking back now, whether you would do it differently._**
 
 ### 5. How would you design this system for scale?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)First of all, the interviewer would like to know the traffic level we’re expecting: 1,000, 100,000, or 10 million users per second? Think about the data expectations for each system user, database connections (blocking/nonblocking actions), downtime specifics, and cloud considerations (if any).***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)First of all, the interviewer would like to know the traffic level we’re expecting: 1,000, 100,000, or 10 million users per second? Think about the data expectations for each system user, database connections (blocking/nonblocking actions), downtime specifics, and cloud considerations (if any)._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)List the potential problems that might occur when trying to scale. Different traffic levels may have different problems, so make sure you think this through, and decide the priorities of the problems that you should solve. Many codebases are not built for scale, so note code changes that might need to occur, rather than just infrastructure expectations.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)List the potential problems that might occur when trying to scale. Different traffic levels may have different problems, so make sure you think this through, and decide the priorities of the problems that you should solve. Many codebases are not built for scale, so note code changes that might need to occur, rather than just infrastructure expectations._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Different traffic levels may have different system architectures. List the options you think best fit your scenario and explain why you choose them. Many apps utilize a stripped-back product (which can be achieved through system architecture) when high traffic levels affect systems, rather than crashing the product completely or users experiencing unacceptable wait times.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Different traffic levels may have different system architectures. List the options you think best fit your scenario and explain why you choose them. Many apps utilize a stripped-back product (which can be achieved through system architecture) when high traffic levels affect systems, rather than crashing the product completely or users experiencing unacceptable wait times._**
 
 ### 6. Testing: What is your process to test a code when developing a software or application? How do you decide the scope of your test case?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)First, do your groundwork to ensure that you thoroughly understand the different testing types. Do you know your unit testing from your regression testing from your user acceptance testing? If you need to brush up, check out this great resource.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)First, do your groundwork to ensure that you thoroughly understand the different testing types. Do you know your unit testing from your regression testing from your user acceptance testing? If you need to brush up, check out this great resource._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Once you’ve got that on lock, it’s time to share a project that you’ve tested thoroughly before.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Once you’ve got that on lock, it’s time to share a project that you’ve tested thoroughly before._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Remember to separate the project into different sections. Each section should apply the testing type that fits its characteristics. Describe the goals of different testing types, and also introduce the library/service you used for the test. (For bonus points: explain the pros and cons of the library/service and whether it was your decision to choose that particular suite.)***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Remember to separate the project into different sections. Each section should apply the testing type that fits its characteristics. Describe the goals of different testing types, and also introduce the library/service you used for the test. (For bonus points: explain the pros and cons of the library/service and whether it was your decision to choose that particular suite.)_**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)It makes sense at this point to include documentation (and particularly inline documentation) you use that helps clarify functions/issues so that testing goes smoothly.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)It makes sense at this point to include documentation (and particularly inline documentation) you use that helps clarify functions/issues so that testing goes smoothly._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)You may also mention a project you were involved in where testing was not well conducted and how you would — or did — go about fixing the issues.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)You may also mention a project you were involved in where testing was not well conducted and how you would — or did — go about fixing the issues._**
 
 ### Monitoring
 
 ### 7. What kind of tools / services do you use for logging? What kind of data will you log? And what’s the next step when you get the log?
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Time for some details! When answering this question, give an example of a project that you’ve monitored before.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Time for some details! When answering this question, give an example of a project that you’ve monitored before._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Explain what information you logged and what questions it answered.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Explain what information you logged and what questions it answered._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Please do not just describe the data format but also give the reason why you decided to extract this data.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Please do not just describe the data format but also give the reason why you decided to extract this data._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Describe the reporting process and any associated tools used.***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Describe the reporting process and any associated tools used._**
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Some questions to think about to help you structure your answer, and nail your response:***
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Some questions to think about to help you structure your answer, and nail your response:_**
 
-------------------------------------------------------------------------
+---
 
 ### What to avoid
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Complaining about having to handle the problem
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Complaining about having to handle the problem
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Showing how annoyed you were at the problem
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Showing how annoyed you were at the problem
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Pointing fingers at others for the problem
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Pointing fingers at others for the problem
 
-> ***![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)***Talking ill of your bosses or coworkers
+> **_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)_**Talking ill of your bosses or coworkers
 
 > **\_![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)\_Keep in mind that your interviewer is not only trying to get a glimpse of your past, but to gain an understanding of how you might react to challenges should they hire you. Therefore, when you’re choosing your scenario, try to pick one that may be applicable in your new work setting as well.**
 
-------------------------------------------------------------------------
+---
 
 ### NOW; Here’s some for you guys to answer in the comments!
 
@@ -4859,7 +4858,7 @@ R***emember to keep positive because the interviewers are always looking for con
 
 #### 13. What information would the data be transformed into? Was it for development, business, or customer decision-making?
 
-------------------------------------------------------------------------
+---
 
 <https://gist.github.com/bgoonz/15a638abb3b4026abc8e5ca05f8d90f1>
 
@@ -4875,11 +4874,11 @@ R***emember to keep positive because the interviewers are always looking for con
 
 ![](https://cdn-images-1.medium.com/max/800/0*YcyGivGEhdeVNAUk.jpg)
 
-------------------------------------------------------------------------
+---
 
 ### 1.) Stack Overflow for Teams is now free forever for up to 50 users
 
-[***https://stackoverflow.blog/2021/03/17/stack-overflow-for-teams-is-now-free-forever-for-up-to-50-users/***](https://stackoverflow.blog/2021/03/17/stack-overflow-for-teams-is-now-free-forever-for-up-to-50-users/)
+[**_https://stackoverflow.blog/2021/03/17/stack-overflow-for-teams-is-now-free-forever-for-up-to-50-users/_**](https://stackoverflow.blog/2021/03/17/stack-overflow-for-teams-is-now-free-forever-for-up-to-50-users/)
 
 ### 2.) <https://webflow.com/>
 
@@ -4891,27 +4890,27 @@ R***emember to keep positive because the interviewers are always looking for con
 
 ![](https://cdn-images-1.medium.com/max/800/1*oUZy2IkIQGDbkSVQRGCvKQ.png)
 
-------------------------------------------------------------------------
+---
 
 ### Typical features of these online playgrounds include:
 
--   ***color-coded HTML, CSS and JavaScript editors***
--   ***a preview window — many update on the fly without a refresh***
--   ***HTML pre-processors such as HAML***
--   ***LESS, SASS and Stylus CSS pre-processing***
--   ***inclusion of popular JavaScript libraries***
--   ***developer consoles and code validation tools***
--   ***sharing via a short URL***
--   ***embedding demonstrations in other pages***
--   ***code forking***
--   ***zero cost (or payment for premium services only)***
--   ***showing off your coding skills to the world!***
+-   **_color-coded HTML, CSS and JavaScript editors_**
+-   **_a preview window — many update on the fly without a refresh_**
+-   **_HTML pre-processors such as HAML_**
+-   **_LESS, SASS and Stylus CSS pre-processing_**
+-   **_inclusion of popular JavaScript libraries_**
+-   **_developer consoles and code validation tools_**
+-   **_sharing via a short URL_**
+-   **_embedding demonstrations in other pages_**
+-   **_code forking_**
+-   **_zero cost (or payment for premium services only)_**
+-   **_showing off your coding skills to the world!_**
 
-------------------------------------------------------------------------
+---
 
 #### The following list is in no particular order and which playground you use is a matter of application and personal taste, they each have their own specialities.
 
-------------------------------------------------------------------------
+---
 
 ### 1.) REPL.IT
 
@@ -4921,7 +4920,7 @@ R***emember to keep positive because the interviewers are always looking for con
 
 In your browser. Repl.it runs fully in your browser, so you can get started coding in seconds. No more ZIPs, PKGs, DMGs and WTFs.
 
-> Any OS, any device***(I’m looking at you chromebook coders)***. You can use Repl.it on macOS, Windows, Linux, or any other OS .
+> Any OS, any device**_(I’m looking at you chromebook coders)_**. You can use Repl.it on macOS, Windows, Linux, or any other OS .
 
 ### ![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Clone, commit and push to any GitHub repo.
 
@@ -4945,11 +4944,11 @@ Repl from Repo. Get started with any Github repo, right from your browser. Commi
 
 <span class="citation" data-cites="bgoonz/replit-docs-1#curriculum/introHTMLCSS.md">\[https://replit.com/@bgoonz/replit-docs-1\#curriculum/introHTMLCSS.md\]</span>(https://replit.com/<span class="citation" data-cites="bgoonz/replit-docs-1#curriculum/introHTMLCSS.md">@bgoonz/replit-docs-1\#curriculum/introHTMLCSS.md</span>)
 
-------------------------------------------------------------------------
+---
 
 ### JS-Fiddle
 
-> [***jsFiddle***](https://jsfiddle.net/) ***is a cloud-based JavaScript code playground that allows web developers to tweak their code and see the results of this tweaking in real time. The editor supports not only JavaScript and its variants but also HTML and CSS code, and it further supports popular JavaScript frameworks, such as jQuery, AngularJS, ReactiveJS and D3. The ad-supported site is also completely free to use.***
+> [**_jsFiddle_**](https://jsfiddle.net/) **_is a cloud-based JavaScript code playground that allows web developers to tweak their code and see the results of this tweaking in real time. The editor supports not only JavaScript and its variants but also HTML and CSS code, and it further supports popular JavaScript frameworks, such as jQuery, AngularJS, ReactiveJS and D3. The ad-supported site is also completely free to use._**
 
 ### ![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)Entering and running code
 
@@ -4968,7 +4967,7 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 <https://jsfiddle.net/bgoonz/L6082jrs/2/>
 
-------------------------------------------------------------------------
+---
 
 ### StackBlitz
 
@@ -4988,7 +4987,7 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 ![](https://cdn-images-1.medium.com/max/800/0*PjhrjtInF1dPudtO.png)
 
-> [***On StackBlitz.com***](https://stackblitz.com/)**, you can create new projects and get the embed code from the ‘Share’ dropdown link in the top navigation like so:**
+> [**_On StackBlitz.com_**](https://stackblitz.com/)**, you can create new projects and get the embed code from the ‘Share’ dropdown link in the top navigation like so:**
 
 ### Embed Options
 
@@ -4998,13 +4997,13 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 > 🡩 **Alternatively, you can also use StackBlitz’s** [**Javascript SDK methods**](https://developer.stackblitz.com/docs/platform/embedding#open-and-embed-stackblitz-projects) **for easily embedding StackBlitz projects on the page & avoid all the hassles of creating/configuring iframes.**
 
-H**ere’s a sample project of mine, it’s a medium clone… *(So Metta)*… feel free to write a post… or don’t …but either way … as you can see… Stack Blitz enables you to write serious web applications in a fraction of the time it would take with a conventional setup.**
+H**ere’s a sample project of mine, it’s a medium clone… _(So Metta)_… feel free to write a post… or don’t …but either way … as you can see… Stack Blitz enables you to write serious web applications in a fraction of the time it would take with a conventional setup.**
 
-------------------------------------------------------------------------
+---
 
 ### Glitch
 
-### ![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)[***Glitch***](https://glitch.com/) **provides two project templates that you can use to start creating your app:**
+### ![⦾](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26ab.svg)[**_Glitch_**](https://glitch.com/) **provides two project templates that you can use to start creating your app:**
 
 1.  **Classic Website**
 2.  **Node.js**
@@ -5053,7 +5052,7 @@ If you are looking to build a full-stack JavaScript application, choose the **No
 
 <https://glitch.com/edit/#!/yielding-auspicious-periwinkle?path=README.md%3A1%3A0>
 
-------------------------------------------------------------------------
+---
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
@@ -5164,7 +5163,7 @@ Reusable pieces of code to display info in a consistent repeatable way
 
 ReactJS is a library used to build large applications. It’s very good at assisting developers in manipulating the DOM element to create rich user experiences. We need a way to off-load the state/data that our apps use, and React helps us do that.
 
-· **What does it mean to *think* in react?**
+· **What does it mean to _think_ in react?**
 
 It makes you think about how to organize/build apps a little differently because it’s very scalable and allows you to build huge apps. React’s one-way data flow makes everything modular and fast. You can build apps top-down or bottom-up.
 
@@ -5286,11 +5285,11 @@ To uniquely identify each record/row.
 
 Foreign key
 
-· **What do we need in order to have a *many to many* relationship between two tables.**
+· **What do we need in order to have a _many to many_ relationship between two tables.**
 
 An **intermediary table** that holds foreign keys that reference the primary key on the related tables.
 
-· **What is the purpose of using *sessions*?**
+· **What is the purpose of using _sessions_?**
 
 The purpose is to persist data across requests.
 
@@ -5767,7 +5766,7 @@ Metrics:
 
 #### Questions….Answers… and links to the missing pieces.
 
-> ***Resources first… the actual article is below!***
+> **_Resources first… the actual article is below!_**
 
 ![](https://cdn-images-1.medium.com/max/800/1*-fWJcnbTfusuDCBTI58avg.png)
 
@@ -5806,19 +5805,19 @@ The following are the Asymptotic rates of growth from best to worst:
 -   constant growth — `O(1)` Runtime is constant and does not grow with `n`
 -   logarithmic growth — `O(log n)` Runtime grows logarithmically in proportion to `n`
 -   linear growth — `O(n)` Runtime grows directly in proportion to `n`
--   superlinear growth — `O(n log n)` Runtime grows in proportion *and* logarithmically to `n`
+-   superlinear growth — `O(n log n)` Runtime grows in proportion _and_ logarithmically to `n`
 -   polynomial growth — `O(n^c)` Runtime grows quicker than previous all based on `n`
 -   exponential growth — `O(c^n)` Runtime grows even faster than polynomial growth based on `n`
 -   factorial growth — `O(n!)` Runtime grows the fastest and becomes quickly unusable for even  
     small values of `n`
 
-[(source: Soumyadeep Debnath, *Analysis of Algorithms | Big-O analysis*)](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
+[(source: Soumyadeep Debnath, _Analysis of Algorithms | Big-O analysis_)](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
 
 Visualized below; the x-axis representing input size and the y-axis representing complexity:
 
 ![](https://cdn-images-1.medium.com/max/800/0*EhERM_cwojSYpuh9.png)
 
-[(source: Wikipedia, *Computational Complexity of Mathematical Operations*)](https://en.wikipedia.org/wiki/Computational_complexity_of_mathematical_operations)
+[(source: Wikipedia, _Computational Complexity of Mathematical Operations_)](https://en.wikipedia.org/wiki/Computational_complexity_of_mathematical_operations)
 
 #### Big-O notation
 
@@ -5835,7 +5834,7 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 #### What you need to know
 
 -   Big-O and Big-Theta are the most common and helpful notations
--   Big-O does *not* mean Worst Case Scenario, Big-Theta does *not* mean average case, and Big-Omega does *not* mean Best Case Scenario. They only connote the algorithm’s performance for a particular scenario, and all three can be used for any scenario.
+-   Big-O does _not_ mean Worst Case Scenario, Big-Theta does _not_ mean average case, and Big-Omega does _not_ mean Best Case Scenario. They only connote the algorithm’s performance for a particular scenario, and all three can be used for any scenario.
 -   Worst Case means given an unideal input, Average Case means given a typical input, Best case means a ideal input. Ex. Worst case means given an input the algorithm performs particularly bad, or best case an already sorted array for a sorting algorithm.
 -   Best Case and Big Omega are generally not helpful since Best Cases are rare in the real world and lower bound might be very different than an upper bound.
 -   Big-O isn’t everything. On paper merge sort is faster than quick sort, but in practice quick sort is superior.
@@ -5872,7 +5871,7 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 
 -   Stores data with **nodes** that point to other nodes.
 -   Nodes, at its most basic it has one datum and one reference (another node).
--   A linked list *chains* nodes together by pointing one node’s reference towards another node.
+-   A linked list _chains_ nodes together by pointing one node’s reference towards another node.
 
 #### What you need to know
 
@@ -6108,7 +6107,7 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ![](https://cdn-images-1.medium.com/max/800/0*SZSRoth1yRyxD4Z3.gif)
 
-[(source: Wikipedia, *Insertion Sort*)](https://en.wikipedia.org/wiki/Selection_sort)
+[(source: Wikipedia, _Insertion Sort_)](https://en.wikipedia.org/wiki/Selection_sort)
 
 ### Insertion Sort
 
@@ -6139,7 +6138,7 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ![](https://cdn-images-1.medium.com/max/800/0*Qh5uC4IwcxaZLNhy.gif)
 
-[(source: Wikipedia, *Insertion Sort*)](https://en.wikipedia.org/wiki/Insertion_sort)
+[(source: Wikipedia, _Insertion Sort_)](https://en.wikipedia.org/wiki/Insertion_sort)
 
 ### Merge Sort
 
@@ -6169,7 +6168,7 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ![](https://cdn-images-1.medium.com/max/800/0*cnUTrzYJ3eu9juJP.png)
 
-[(source: Wikipedia, *Merge Sort*)](https://en.wikipedia.org/wiki/Merge_sort)
+[(source: Wikipedia, _Merge Sort_)](https://en.wikipedia.org/wiki/Merge_sort)
 
 ### Quicksort
 
@@ -6200,7 +6199,7 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ![](https://cdn-images-1.medium.com/max/800/0*t5olHZSO0e1iVQH5.gif)
 
-[(source: Wikipedia, *Quicksort*)](https://en.wikipedia.org/wiki/Quicksort)
+[(source: Wikipedia, _Quicksort_)](https://en.wikipedia.org/wiki/Quicksort)
 
 #### Merge Sort Vs. Quicksort
 
@@ -6346,9 +6345,9 @@ async function foo() {
 
 #### Answer
 
-An `async` function is a function that allows you to pause the function’s execution while it waits for (`await`s) a promise to resolve. It’s an abstraction on top of the Promise API that makes asynchronous operations *look* like they’re synchronous.
+An `async` function is a function that allows you to pause the function’s execution while it waits for (`await`s) a promise to resolve. It’s an abstraction on top of the Promise API that makes asynchronous operations _look_ like they’re synchronous.
 
-`async` functions automatically return a Promise object. Whatever you `return` from the `async` function will be the promise’s *resolution*. If instead you `throw` from the body of an `async` function, that will be how your async function *rejects* the promise it returns.
+`async` functions automatically return a Promise object. Whatever you `return` from the `async` function will be the promise’s _resolution_. If instead you `throw` from the body of an `async` function, that will be how your async function _rejects_ the promise it returns.
 
 Most importantly, `async` functions are able to use the `await` keyword in their function body, which **pauses the function** until the operation after the `await` completes, and allows it to return that operation’s result to a variable synchronously.
 
@@ -6731,10 +6730,10 @@ return
 }
 
 function App() {  
-return (  
-  
-Hello World  
-  
+return (
+
+Hello World
+
 )  
 }
 
@@ -6774,7 +6773,7 @@ const { class: className } =
 this.props // All good, but  
 cumbersome!
 
-However, `class` *can* be used as a prop without problems, as seen in other libraries like Preact. React currently allows you to use `class`, but will throw a warning and convert it to `className` under the hood. There is currently an open thread (as of January 2019) discussing changing `className` to `class` to reduce confusion.
+However, `class` _can_ be used as a prop without problems, as seen in other libraries like Preact. React currently allows you to use `class`, but will throw a warning and convert it to `className` under the hood. There is currently an open thread (as of January 2019) discussing changing `className` to `class` to reduce confusion.
 
 #### Don’t forget:
 
@@ -6903,7 +6902,7 @@ const { Provider, Consumer } = React.createContext(defaultValue)
 #### Don’t forget:
 
 -   Context provides a way to pass data through a tree of React components, without having to manually pass props.
--   Context is designed to share data that is considered *global* for a tree of React components.
+-   Context is designed to share data that is considered _global_ for a tree of React components.
 
 Additional links
 
@@ -6938,7 +6937,7 @@ Additional links
 
 `Border`: The area surrounding the padding (if any) and content. It has dimensions `border-box width` and `border-box height`.
 
-*Margin*: The transparent outer-most layer that surrounds the border. It separates the element from other elements in the DOM. It has dimensions `margin-box width` and `margin-box height`.
+_Margin_: The transparent outer-most layer that surrounds the border. It separates the element from other elements in the DOM. It has dimensions `margin-box width` and `margin-box height`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*KArkb77G2q_NcEhy.gif)
 
@@ -7147,8 +7146,7 @@ if (this.state.hasError) {
 // You can render any custom fallback UI  
 return
 
-Something went wrong.
-=====================
+# Something went wrong.
 
 }  
 return this.props.children  
@@ -7222,7 +7220,7 @@ username: “John”,
 text: “Hello?”  
 })
 
-With this implementation, `on` is the way to *subscribe* to an event, while `emit` is the way to *publish* the event.
+With this implementation, `on` is the way to _subscribe_ to an event, while `emit` is the way to _publish_ the event.
 
 #### Don’t forget:
 
@@ -7247,7 +7245,7 @@ There are two main syntactic categories in JavaScript: expressions and statement
 
 A general rule of thumb:
 
-> *If you can print it or assign it to a variable, it’s an expression. If you can’t, it’s a statement.*
+> _If you can print it or assign it to a variable, it’s an expression. If you can’t, it’s a statement._
 
 Statements
 
@@ -7487,10 +7485,8 @@ Fragments allow a React component to return multiple elements without a wrapper,
 
 render() {  
 return (  
-&lt;React.Fragment&gt;  
-  
-  
-  
+&lt;React.Fragment&gt;
+
 &lt;/React.Fragment&gt;  
 );  
 }
@@ -7498,10 +7494,8 @@ return (
 // Short syntax supported by Babel 7  
 render() {  
 return (  
-&lt;&gt;  
-  
-  
-  
+&lt;&gt;
+
 &lt;/&gt;  
 );  
 }
@@ -7845,22 +7839,20 @@ For example, this won’t work:
 function App({ messages, isVisible }) {  
 return (
 
-if (messages.length &gt; 0) {  
+if (messages.length &gt; 0) {
 
-You have {messages.length} unread messages.
--------------------------------------------
+## You have {messages.length} unread messages.
 
-} else {  
+} else {
 
-You have no unread messages.
-----------------------------
+## You have no unread messages.
 
 }  
-if (isVisible) {  
+if (isVisible) {
 
 I am visible.
 
-}  
+}
 
 )  
 }
@@ -7870,22 +7862,20 @@ Logical AND `&&` and the ternary `? :` operator replace the `if`/`else` stateme
 function App({ messages, isVisible }) {  
 return (
 
-{messages.length &gt; 0 ? (  
+{messages.length &gt; 0 ? (
 
-You have {messages.length} unread messages.
--------------------------------------------
+## You have {messages.length} unread messages.
 
-) : (  
+) : (
 
-You have no unread messages.
-----------------------------
+## You have no unread messages.
 
 )}  
 {isVisible &&
 
 I am visible.
 
-}  
+}
 
 )  
 }
@@ -7973,7 +7963,7 @@ Additional links
 
 `componentWillUnmount`: It will be used to cancel any outgoing network requests, or remove all event listeners associated with the component.
 
-`componentDidCatch`: Used in error boundaries, which are components that implement this method. It allows the component to catch JavaScript errors anywhere in the *child* component tree (below this component), log errors, and display a UI with error information.
+`componentDidCatch`: Used in error boundaries, which are components that implement this method. It allows the component to catch JavaScript errors anywhere in the _child_ component tree (below this component), log errors, and display a UI with error information.
 
 #### Don’t forget:
 
@@ -8015,7 +8005,7 @@ mask(“123456789”) // “\#\#\#\#\#6789”
 
 #### Answer
 
-> *There are many ways to solve this problem, this is just one one of them.*
+> _There are many ways to solve this problem, this is just one one of them._
 
 Using `String.prototype.slice()` we can grab the last 4 characters of the string by passing `-4` as an argument. Then, using `String.prototype.padStart()`, we can pad the string to the original length with the repeated mask character.
 
@@ -8095,10 +8085,9 @@ console.log(‘this is:’, this);
 }
 
 render() {  
-return (  
+return (
 
-  
-Click me  
+Click me
 
 );  
 }
@@ -8197,7 +8186,7 @@ Advantages include:
 
 As you can see from below example, the callback is called with null as its first argument if there is no error. However, if there is an error, you create an Error object, which then becomes the callback’s only parameter. The callback function allows a user to easily know whether or not an error occurred.
 
-This practice is also called the *Node.js error convention*, and this kind of callback implementations are called *error-first callbacks*.
+This practice is also called the _Node.js error convention_, and this kind of callback implementations are called _error-first callbacks_.
 
 var isTrue = function(value, callback) {  
 if (value === true) {  
@@ -8432,13 +8421,13 @@ Additional links
 
 Both increment the variable value by 1. The difference is what they evaluate to.
 
-The postfix increment operator evaluates to the value *before* it was incremented.
+The postfix increment operator evaluates to the value _before_ it was incremented.
 
 let i = 0  
 i++ // 0  
 // i === 1
 
-The prefix increment operator evaluates to the value *after* it was incremented.
+The prefix increment operator evaluates to the value _after_ it was incremented.
 
 let i = 0  
 ++i // 1  
@@ -8507,8 +8496,7 @@ age: PropTypes.number.isRequired
 render() {  
 return (
 
-Welcome, {this.props.name}
-==========================
+# Welcome, {this.props.name}
 
 Age, {this.props.age}  
 )  
@@ -8577,8 +8565,8 @@ Comments must be wrapped inside curly braces `{}` and use the `/* */` syntax.
 
 const tree = (
 
-    {/\* Comment \*/}  
-    <p>Text</p>  
+    {/\* Comment \*/}
+    <p>Text</p>
 
 )
 
@@ -8590,25 +8578,25 @@ Recursion is the repeated application of a process. In JavaScript, recursion inv
 
 For example, you may have a thread of comments returned from a database that exist in a flat array but need to be nested for display in the UI. Each comment is either a top-level comment (no parent) or is a reply to a parent comment. Comments can be a reply of a reply of a reply… we have no knowledge beforehand the number of levels deep a comment may be. This is where recursion can help.
 
-const nest = (items, id = null, link = “parent\_id”) =&gt;  
+const nest = (items, id = null, link = “parent_id”) =&gt;  
 items  
 .filter(item =&gt; item\[link\] === id)  
 .map(item =&gt; ({ …item, children: nest(items, item.id) }))
 
 const comments = \[  
-{ id: 1, parent\_id: null, text: “First reply to post.” },  
-{ id: 2, parent\_id: 1, text: “First reply to comment \#1.” },  
-{ id: 3, parent\_id: 1, text: “Second reply to comment \#1.” },  
-{ id: 4, parent\_id: 3, text: “First reply to comment \#3.” },  
-{ id: 5, parent\_id: 4, text: “First reply to comment \#4.” },  
-{ id: 6, parent\_id: null, text: “Second reply to post.” }  
+{ id: 1, parent_id: null, text: “First reply to post.” },  
+{ id: 2, parent_id: 1, text: “First reply to comment \#1.” },  
+{ id: 3, parent_id: 1, text: “Second reply to comment \#1.” },  
+{ id: 4, parent_id: 3, text: “First reply to comment \#3.” },  
+{ id: 5, parent_id: 4, text: “First reply to comment \#4.” },  
+{ id: 6, parent_id: null, text: “Second reply to post.” }  
 \]
 
 nest(comments)  
 /\*  
 \[  
-{ id: 1, parent\_id: null, text: “First reply to post.”, children: \[…\] },  
-{ id: 6, parent\_id: null, text: “Second reply to post.”, children: \[\] }  
+{ id: 1, parent_id: null, text: “First reply to post.”, children: \[…\] },  
+{ id: 6, parent_id: null, text: “Second reply to post.”, children: \[\] }  
 \]  
 \*/
 
@@ -9281,7 +9269,7 @@ Resources:
 
 <https://trusting-dijkstra-4d3b17.netlify.app/>
 
-> *“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;*
+> _“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
 
 ![](https://cdn-images-1.medium.com/max/800/0*LUQe60D2FeVzDEi8.png)
 
@@ -9301,11 +9289,11 @@ Resources:
 
 ![](https://cdn-images-1.medium.com/max/800/0*OBVdK39aaS5sjV9B.png)
 
-### [Components of HTTP-based systems](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#components_of_http-based_systems "Permalink to Components of HTTP-based systems")
+### [Components of HTTP-based systems](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#components_of_http-based_systems 'Permalink to Components of HTTP-based systems')
 
 HTTP is a client-server protocol: requests are sent by one entity, the user-agent (or a proxy on behalf of it). Most of the time the user-agent is a Web browser, but it can be anything, for example a robot that crawls the Web to populate and maintain a search engine index.
 
-Each individual request is sent to a server, which handles it and provides an answer, called the *response*. Between the client and the server there are numerous entities, collectively called [proxies](https://developer.mozilla.org/en-US/docs/Glossary/Proxy_server), which perform different operations and act as gateways or [caches](https://developer.mozilla.org/en-US/docs/Glossary/Cache), for example.
+Each individual request is sent to a server, which handles it and provides an answer, called the _response_. Between the client and the server there are numerous entities, collectively called [proxies](https://developer.mozilla.org/en-US/docs/Glossary/Proxy_server), which perform different operations and act as gateways or [caches](https://developer.mozilla.org/en-US/docs/Glossary/Cache), for example.
 
 ![](https://cdn-images-1.medium.com/max/800/0*WR6l6JwNOvkfrljt.png)
 
@@ -9321,7 +9309,7 @@ Each individual request is sent to a server, which handles it and provides an an
 2.  `**Gateways**` : Pretend to be the resource server you requested.
 3.  `**Tunnels**` : Simply passes your request along.
 
-------------------------------------------------------------------------
+---
 
 ### HTTP Requests
 
@@ -9359,7 +9347,7 @@ Each individual request is sent to a server, which handles it and provides an an
 
 **Body**
 
--   For when we need to send data that doesn’t fit into the header & is too complex for the URI we can use the *body*.
+-   For when we need to send data that doesn’t fit into the header & is too complex for the URI we can use the _body_.
 -   `**URL encoding**` : Most common way form data is formatted.
 -   `name=claire&age=29&iceCream=vanilla`
 -   We can also format using JSON or XML.
@@ -9371,7 +9359,7 @@ Each individual request is sent to a server, which handles it and provides an an
 -   `nc -v appacademy.io 80`
 -   `man nc` to open the netcat manual.
 
-------------------------------------------------------------------------
+---
 
 ### HTTP Responses
 
@@ -9443,11 +9431,11 @@ Happy Coding!
 
 #### Here’s the rest of my stash!
 
-***…well… not really… here’s the rest of my stash:***
+**_…well… not really… here’s the rest of my stash:_**
 
 <https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s>
 
-------------------------------------------------------------------------
+---
 
 ### Web Development frameworks
 
@@ -9545,7 +9533,7 @@ Happy Coding!
 
 > · ​[Lumino](https://github.com/jupyterlab/lumino) — Library for building interactive web applications.
 
-------------------------------------------------------------------------
+---
 
 > Animation
 
@@ -9573,7 +9561,7 @@ Happy Coding!
 
 > · ​[flubber](https://github.com/veltman/flubber) — Tools for smoother shape animations.
 
-------------------------------------------------------------------------
+---
 
 > ‌
 
@@ -9583,7 +9571,7 @@ Happy Coding!
 
 > · ​[qoa](https://github.com/klaussinani/qoa) — Minimal interactive command-line prompts.
 
-------------------------------------------------------------------------
+---
 
 > Test
 
@@ -9601,7 +9589,7 @@ Happy Coding!
 
 > · ​[Vest](https://github.com/ealush/vest) — Declarative Validation Testing.
 
-------------------------------------------------------------------------
+---
 
 > ‌
 
@@ -9641,7 +9629,7 @@ Happy Coding!
 
 > · ​[Statery](https://github.com/hmans/statery) — Surprise-Free State Management. Designed for React with functional components.
 
-------------------------------------------------------------------------
+---
 
 > ‌
 
@@ -9651,7 +9639,7 @@ Happy Coding!
 
 > · ​[NodeJS Instagram private API client](https://github.com/dilame/instagram-private-api)​
 
-------------------------------------------------------------------------
+---
 
 > ‌
 
@@ -9667,7 +9655,7 @@ Happy Coding!
 
 > · ​[Connect PG Simple](https://github.com/voxpelli/node-connect-pg-simple) — Simple, minimal PostgreSQL session store for Express/Connect.
 
-------------------------------------------------------------------------
+---
 
 > ‌
 
@@ -9719,7 +9707,7 @@ Happy Coding!
 
 > Overlay
 
-> *Display overlay / modal / alert / dialog / lightbox / popup*
+> _Display overlay / modal / alert / dialog / lightbox / popup_
 
 > [react-dock](https://github.com/alexkuz/react-dock) — Resizable dockable react component.
 
@@ -9741,7 +9729,7 @@ Happy Coding!
 
 > Notification
 
-> *Toaster / snackbar — Notify the user with a modeless temporary little popup*
+> _Toaster / snackbar — Notify the user with a modeless temporary little popup_
 
 > [react-notification-system](https://github.com/igorprado/react-notification-system) — A complete and totally customizable component for notifications in React.
 
@@ -9763,7 +9751,7 @@ Happy Coding!
 
 > Menu
 
-> *Menus / sidebars*
+> _Menus / sidebars_
 
 > [react-burger-menu](https://github.com/negomi/react-burger-menu) — An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations.
 
@@ -9783,7 +9771,7 @@ Happy Coding!
 
 > Sticky
 
-> *Fixed headers / scroll-up headers / sticky elements*
+> _Fixed headers / scroll-up headers / sticky elements_
 
 > [react-sticky](https://github.com/captivationsoftware/react-sticky) — &lt; Sticky /&gt; component for awesome React apps.
 
@@ -9807,7 +9795,7 @@ Happy Coding!
 
 > Loader
 
-> *Loaders / spinners / progress bars — Let the user know that something is loading*
+> _Loaders / spinners / progress bars — Let the user know that something is loading_
 
 > [halogen](https://github.com/yuanyan/halogen) — A collection of loading spinners with React.js.
 
@@ -9845,7 +9833,7 @@ Happy Coding!
 
 > Chart
 
-> *Display data in charts / graphs / diagrams*
+> _Display data in charts / graphs / diagrams_
 
 > [react-chartist](https://github.com/fraserxu/react-chartist) — React component for Chartist.js.
 
@@ -9885,7 +9873,7 @@ Happy Coding!
 
 > Tree
 
-> *Display a tree data structure*
+> _Display a tree data structure_
 
 > [react-treeview](https://github.com/chenglou/react-treeview) — Easy, light, flexible tree view made with React.
 
@@ -9895,7 +9883,7 @@ Happy Coding!
 
 > UI Navigation
 
-> *Ways to navigate views*
+> _Ways to navigate views_
 
 > [react-scroll](https://github.com/fisshy/react-scroll) — React scroll component.
 
@@ -9947,7 +9935,7 @@ Happy Coding!
 
 > Time / Date / Age
 
-> *Display time / date / age*
+> _Display time / date / age_
 
 > [react-time](https://github.com/andreypopp/react-time) — Component for React to render relative and/or formatted dates into &lt; time&gt; HTML5 element.
 
@@ -9957,7 +9945,7 @@ Happy Coding!
 
 > Photo / Image
 
-> *Display images / photos*
+> _Display images / photos_
 
 > [react-image-gallery](https://github.com/xiaolin/react-image-gallery) — Responsive image gallery, carousel, image slider react component.
 
@@ -9973,7 +9961,7 @@ Happy Coding!
 
 > Icons
 
-> *Display icons / icon set / emojis*
+> _Display icons / icon set / emojis_
 
 > [react-icons](https://github.com/gorangajic/react-icons) — Svg react icons of popular icon packs using ES6 imports.
 
@@ -9983,13 +9971,13 @@ Happy Coding!
 
 > Paginator
 
-> *Display a control element to paginate*
+> _Display a control element to paginate_
 
 > [react-paginate](https://github.com/AdeleD/react-paginate) — A ReactJS component that creates a pagination.
 
 > Markdown Viewer
 
-> *Display parsed markdow source*
+> _Display parsed markdow source_
 
 > [react-markdown](https://github.com/rexxars/react-markdown) — Render Markdown as React components.
 
@@ -10029,11 +10017,11 @@ Happy Coding!
 
 > Form Components
 
-> *Let the user enter data*
+> _Let the user enter data_
 
 > Date / Time picker
 
-> *Date picker / time picker / datetime picker / date range picker*
+> _Date picker / time picker / datetime picker / date range picker_
 
 > [react-datepicker](https://github.com/Hacker0x01/react-datepicker) — A simple and reusable datepicker component for React.
 
@@ -10069,7 +10057,7 @@ Happy Coding!
 
 > Input Types
 
-> *Masked inputs, specialized inputs; email / telephone number / credit card / etc.*
+> _Masked inputs, specialized inputs; email / telephone number / credit card / etc._
 
 > [react-input-mask](https://github.com/sanniassin/react-input-mask) — Yet another react component for input masking.
 
@@ -10081,7 +10069,7 @@ Happy Coding!
 
 > Autocomplete
 
-> *Autosuggest / autocomplete / typeahead*
+> _Autosuggest / autocomplete / typeahead_
 
 > [react-autosuggest](https://github.com/moroshko/react-autosuggest) — WAI-ARIA compliant React autosuggest component.
 
@@ -10125,7 +10113,7 @@ Happy Coding!
 
 > Type Select
 
-> *Let the user select something (e.g. a tag) while typing*
+> _Let the user select something (e.g. a tag) while typing_
 
 > [react-tagsinput](https://github.com/olahol/react-tagsinput) — A simple react component for inputing tags.
 
@@ -10167,7 +10155,7 @@ Happy Coding!
 
 > Sortable List
 
-> *Let the user define an order on a list*
+> _Let the user define an order on a list_
 
 > [sortablejs](https://github.com/RubaXa/Sortable) — Sortable — is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports Meteor, AngularJS, React, Polymer, Knockout and any CSS library, e.g. Bootstrap.
 
@@ -10209,7 +10197,7 @@ Happy Coding!
 
 > Image Editing
 
-> *Image manipulation*
+> _Image manipulation_
 
 > [react-avatar-cropper](https://github.com/DropsOfSerenity/react-avatar-cropper) — Aiming to be a complete solution for avatar cropping in react.
 
@@ -10237,7 +10225,7 @@ Happy Coding!
 
 > [react-tabguard](https://github.com/avocode/react-tabguard) — React Tabguard.
 
-------------------------------------------------------------------------
+---
 
 > MISC
 
@@ -10543,7 +10531,7 @@ Happy Coding!
 
 > · ​[Xterm.js](https://github.com/xtermjs/xterm.js) — Terminal for the web.
 
-> · ​[Change Case](https://github.com/blakeembrey/change-case) — Convert strings between camelCase, PascalCase, Capital Case, snake\_case and more.
+> · ​[Change Case](https://github.com/blakeembrey/change-case) — Convert strings between camelCase, PascalCase, Capital Case, snake_case and more.
 
 > · ​[ChronoGraph](https://github.com/bryntum/chronograph) — Reactive, graph-based, computation engine.
 
@@ -11296,7 +11284,7 @@ Or checkout my personal resource Site:
 
 <https://github.com/bgoonz/vscode-Extension-readmes>
 
-------------------------------------------------------------------------
+---
 
 ### Commands:
 
@@ -11334,7 +11322,7 @@ Or checkout my personal resource Site:
 
 ![](https://cdn-images-1.medium.com/max/1200/0*llpkl5jsIMhWMucR.png)
 
-------------------------------------------------------------------------
+---
 
 ### Tips-N-Tricks:
 
@@ -11356,7 +11344,7 @@ You can add additional cursors to all occurrences of the current selection with 
 
 ![](https://cdn-images-1.medium.com/max/800/0*WcrfwIln6NIG3zNW.gif)
 
-> *Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the* `_editor.multiCursorModifier_` [*setting*](https://code.visualstudio.com/docs/getstarted/settings) *. See* [*Multi-cursor Modifier*](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier) *for details.*
+> _Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the_ `_editor.multiCursorModifier_` [_setting_](https://code.visualstudio.com/docs/getstarted/settings) _. See_ [_Multi-cursor Modifier_](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier) _for details._
 
 If you do not want to add all occurrences of the current selection, you can use Ctrl+D instead. This only selects the next occurrence after the one you selected so you can add selections one by one.
 
@@ -11370,23 +11358,23 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor/codebasics#_column-box-selection) to trigger column selection.
 
-------------------------------------------------------------------------
+---
 
 ### Extensions:
 
 #### [AutoHotkey Plus](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-autohotkey-plus)
 
-> *Syntax Highlighting, Snippets, Go to Definition, Signature helper and Code formatter*
+> _Syntax Highlighting, Snippets, Go to Definition, Signature helper and Code formatter_
 
 ### [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug)
 
-> *A debugger extension for Bash scripts based on* `_bashdb_`
+> _A debugger extension for Bash scripts based on_ `_bashdb_`
 
 ![](https://cdn-images-1.medium.com/max/800/0*8j2gGGs0WHcuFIwY.gif)
 
 ### [Shellman](https://marketplace.visualstudio.com/items?itemName=Remisa.shellman)
 
-> *Bash script snippets extension*
+> _Bash script snippets extension_
 
 ![](https://cdn-images-1.medium.com/max/800/0*wyimtX27gWygAeOb.gif)
 
@@ -11424,13 +11412,13 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor/
 
 ![](https://cdn-images-1.medium.com/max/800/0*ZG5W4_VVBv89zO_g.gif)
 
-------------------------------------------------------------------------
+---
 
 ### CSS
 
 ### [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
 
-> *Peek or Jump to a CSS definition directly from HTML, just like in Brackets!*
+> _Peek or Jump to a CSS definition directly from HTML, just like in Brackets!_
 
 ![](https://cdn-images-1.medium.com/max/800/0*MN4pNqxDw4FyRk8g.gif)
 
@@ -11455,7 +11443,7 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor/
 -   [Haskell IDE engine](https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server) — provides [language server](https://github.com/haskell/haskell-ide-engine) for stack and cabal projects.
 -   [autocomplate-shell](https://marketplace.visualstudio.com/items?itemName=truman.autocomplate-shell)
 
-------------------------------------------------------------------------
+---
 
 ### Java
 
@@ -11464,7 +11452,7 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor/
 -   [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven)
 -   [Lombok](https://marketplace.visualstudio.com/items?itemName=GabrielBB.vscode-lombok)
 
-------------------------------------------------------------------------
+---
 
 ### JavaScript
 
@@ -11495,11 +11483,11 @@ Framework-specific:
 
 ![](https://cdn-images-1.medium.com/max/800/0*F7J_vW0ISbVMTXIZ.png)
 
-------------------------------------------------------------------------
+---
 
 ### [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
-> *A VS Code extension to debug your JavaScript code in the Chrome browser, or other targets that support the Chrome Debugging Protocol.*
+> _A VS Code extension to debug your JavaScript code in the Chrome browser, or other targets that support the Chrome Debugging Protocol._
 
 ### Facebook Flow
 
@@ -11511,27 +11499,27 @@ Framework-specific:
 -   [tslint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) — TSLint for Visual Studio Code
 -   [TypeScript Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero) — Code outline view of your open TS, sort and organize your imports.
 
-------------------------------------------------------------------------
+---
 
 ### Markdown
 
 ### [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-> *Linter for* [*markdownlint*](https://github.com/DavidAnson/markdownlint)*.*
+> _Linter for_ [_markdownlint_](https://github.com/DavidAnson/markdownlint)_._
 
 ### [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 
-> *All-in-one markdown plugin (keyboard shortcuts, table of contents, auto preview, list editing and more)*
+> _All-in-one markdown plugin (keyboard shortcuts, table of contents, auto preview, list editing and more)_
 
 ![](https://cdn-images-1.medium.com/max/800/0*8oVrYuZ9kLRNSuBs.gif)
 
 ### [Markdown Emoji](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)
 
-> *Adds emoji syntax support to VS Code’s built-in Markdown preview*
+> _Adds emoji syntax support to VS Code’s built-in Markdown preview_
 
 ![](https://cdn-images-1.medium.com/max/800/0*rckUMIIZ9Jh7UE5q.png)
 
-------------------------------------------------------------------------
+---
 
 ### PHP
 
@@ -11561,7 +11549,7 @@ These extensions provide slightly different sets of features. While the first on
 
 ![](https://cdn-images-1.medium.com/max/800/0*fSAaqpXfBx1Sgztf.png)
 
-------------------------------------------------------------------------
+---
 
 ### Other extensions
 
@@ -11576,7 +11564,7 @@ These extensions provide slightly different sets of features. While the first on
 -   [phpcs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) — PHP CodeSniffer for Visual Studio Code
 -   [phpfmt](https://marketplace.visualstudio.com/items?itemName=kokororin.vscode-phpfmt) — phpfmt for Visual Studio Code
 
-------------------------------------------------------------------------
+---
 
 ### Python
 
@@ -11588,107 +11576,107 @@ These extensions provide slightly different sets of features. While the first on
 
 ![](https://cdn-images-1.medium.com/max/800/0*stmhgQ3sGvJBTvf2.gif)
 
-------------------------------------------------------------------------
+---
 
 ### Rust
 
 -   [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) — Linting, auto-completion, code formatting, snippets and more
 
-------------------------------------------------------------------------
+---
 
 ### Productivity
 
 ### [ARM Template Viewer](https://marketplace.visualstudio.com/items?itemName=bencoleman.armview)
 
-> *Displays a graphical preview of Azure Resource Manager (ARM) templates. The view will show all resources with the official Azure icons and also linkage between the resources.*
+> _Displays a graphical preview of Azure Resource Manager (ARM) templates. The view will show all resources with the official Azure icons and also linkage between the resources._
 
 ![](https://cdn-images-1.medium.com/max/800/0*p8bvCI9DXF44m4z3.png)
 
 ### [Azure Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
 
-> *Browse your database inside the vs code editor*
+> _Browse your database inside the vs code editor_
 
 ![](https://cdn-images-1.medium.com/max/800/0*VWvSU6Hbf20Kfc_P.gif)
 
 ### [Azure IoT Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit)
 
-> *Everything you need for the Azure IoT development: Interact with Azure IoT Hub, manage devices connected to Azure IoT Hub, and develop with code snippets for Azure IoT Hub*
+> _Everything you need for the Azure IoT development: Interact with Azure IoT Hub, manage devices connected to Azure IoT Hub, and develop with code snippets for Azure IoT Hub_
 
 ![](https://cdn-images-1.medium.com/max/800/0*AobtCd80fICrbQPI.png)
 
 ### [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 
-> *Mark lines and jump to them*
+> _Mark lines and jump to them_
 
 ### [Color Tabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext)
 
-> *An extension for big projects or monorepos that colors your tab/titlebar based on the current package*
+> _An extension for big projects or monorepos that colors your tab/titlebar based on the current package_
 
 ![](https://cdn-images-1.medium.com/max/800/0*SEp-hgfDLlubNRyc.gif)
 
 ### [Create tests](https://marketplace.visualstudio.com/items?itemName=hardikmodha.create-tests)
 
-> *An extension to quickly generate test files.*
+> _An extension to quickly generate test files._
 
 ![](https://cdn-images-1.medium.com/max/800/0*DLZLYmrBiui0YOBt.gif)
 
 ### [Deploy](https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-deploy)
 
-> *Commands for upload or copy files of a workspace to a destination.*
+> _Commands for upload or copy files of a workspace to a destination._
 
 ![](https://cdn-images-1.medium.com/max/800/0*lLasjzlmWnBwdbAT.gif)
 
 ### [Duplicate Action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate)
 
-> *Ability to duplicate files and directories.*
+> _Ability to duplicate files and directories._
 
 ### [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
 
-> *Show language diagnostics inline (errors/warnings/…).*
+> _Show language diagnostics inline (errors/warnings/…)._
 
 ![](https://cdn-images-1.medium.com/max/800/0*1tJJkV0p2Ka_W06r.gif)
 
 ### [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
-> *Provides Javascript and React/Redux snippets in ES7*
+> _Provides Javascript and React/Redux snippets in ES7_
 
 ![](https://cdn-images-1.medium.com/max/800/0*W3N0kbgEumWYa-m4.png)
 
 ### [Gi](https://marketplace.visualstudio.com/items?itemName=rubbersheep.gi)
 
-> *Generating .gitignore files made easy*
+> _Generating .gitignore files made easy_
 
 ![](https://cdn-images-1.medium.com/max/800/0*sfddghz8B1D362UB.gif)
 
 ### [GistPad](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs)
 
-> *Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It’s like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples.*
+> _Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It’s like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples._
 
 ![](https://cdn-images-1.medium.com/max/800/0*1MiBQ0u4Z8TPNaG9.gif)
 
 ### [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
-> *View git log, file or line History*
+> _View git log, file or line History_
 
 ### [Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager)
 
-> *Automatically indexes your git projects and lets you easily toggle between them*
+> _Automatically indexes your git projects and lets you easily toggle between them_
 
 ### [GitLink](https://marketplace.visualstudio.com/items?itemName=qezhu.gitlink)
 
-> *GoTo current file’s online link in browser and Copy the link in clipboard.*
+> _GoTo current file’s online link in browser and Copy the link in clipboard._
 
 ![](https://cdn-images-1.medium.com/max/800/0*Acgfn2rmhinuIPjk.gif)
 
 ### [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
-> *Provides Git CodeLens information (most recent commit, \# of authors), on-demand inline blame annotations, status bar blame information, file and blame history explorers, and commands to compare changes with the working tree or previous versions.*
+> _Provides Git CodeLens information (most recent commit, \# of authors), on-demand inline blame annotations, status bar blame information, file and blame history explorers, and commands to compare changes with the working tree or previous versions._
 
 ![](https://cdn-images-1.medium.com/max/800/0*MZu4GV7SOCW88UQQ.gif)
 
 ### [Git Indicators](https://marketplace.visualstudio.com/items?itemName=lamartire.git-indicators)
 
-> *Atom-like git indicators on active panel*
+> _Atom-like git indicators on active panel_
 
 ![](https://cdn-images-1.medium.com/max/800/0*vitZrD9ZU0_eWckU.png)
 
@@ -11698,47 +11686,47 @@ These extensions provide slightly different sets of features. While the first on
 
 ### [GitHub](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github)
 
-> *Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the* [*README.md*](https://github.com/KnisterPeter/vscode-github/blob/master/README.md) *on how to get started with the setup for this extension.*
+> _Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the_ [_README.md_](https://github.com/KnisterPeter/vscode-github/blob/master/README.md) _on how to get started with the setup for this extension._
 
 ### [GitHub Pull Request Monitor](https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor)
 
-> *This extension uses the GitHub api to monitor the state of your pull requests and let you know when it’s time to merge or if someone requested changes.*
+> _This extension uses the GitHub api to monitor the state of your pull requests and let you know when it’s time to merge or if someone requested changes._
 
 ![](https://cdn-images-1.medium.com/max/800/0*TOq5OERkgQNETGPK.png)
 
 ### [GitLab Workflow](https://marketplace.visualstudio.com/items?itemName=gitlab.gitlab-workflow)
 
-> *Adds a GitLab sidebar icon to view issues, merge requests and other GitLab resources. You can also view the results of your GitLab CI/CD pipeline and check the syntax of your* `_.gitlab-ci.yml_`*.*
+> _Adds a GitLab sidebar icon to view issues, merge requests and other GitLab resources. You can also view the results of your GitLab CI/CD pipeline and check the syntax of your_ `_.gitlab-ci.yml_`_._
 
 #### [Gradle Tasks](https://marketplace.visualstudio.com/items?itemName=richardwillis.vscode-gradle)
 
-> *Run gradle tasks in VS Code.*
+> _Run gradle tasks in VS Code._
 
 ![](https://cdn-images-1.medium.com/max/800/0*Vx-3DIT22BJpEnJr.gif)
 
 ### [Icon Fonts](https://marketplace.visualstudio.com/items?itemName=idleberg.icon-fonts)
 
-> *Snippets for popular icon fonts such as Font Awesome, Ionicons, Glyphicons, Octicons, Material Design Icons and many more!*
+> _Snippets for popular icon fonts such as Font Awesome, Ionicons, Glyphicons, Octicons, Material Design Icons and many more!_
 
 ### [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 
-> *This extension will display inline in the editor the size of the imported package. The extension utilizes webpack with babili-webpack-plugin in order to detect the imported size.*
+> _This extension will display inline in the editor the size of the imported package. The extension utilizes webpack with babili-webpack-plugin in order to detect the imported size._
 
 ### [Jira and Bitbucket](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode)
 
-> *Bringing the power of Jira and Bitbucket to VS Code — With Atlassian for VS Code you can create and view issues, start work on issues, create pull requests, do code reviews, start builds, get build statuses and more!*
+> _Bringing the power of Jira and Bitbucket to VS Code — With Atlassian for VS Code you can create and view issues, start work on issues, create pull requests, do code reviews, start builds, get build statuses and more!_
 
 ![](https://cdn-images-1.medium.com/max/800/0*T6iuH2VnPYj93YqW.gif)
 
 ### [JS Parameter Annotations](https://marketplace.visualstudio.com/items?itemName=lannonbr.vscode-js-annotations)
 
-> *Provides annotations on function calls in JS/TS files to provide parameter names to arguments.*
+> _Provides annotations on function calls in JS/TS files to provide parameter names to arguments._
 
 ![](https://cdn-images-1.medium.com/max/800/0*zHffPsYWln4dxhus.png)
 
 ### [Jumpy](https://marketplace.visualstudio.com/items?itemName=wmaurer.vscode-jumpy)
 
-> *Provides fast cursor movement, inspired by Atom’s package of the same name.*
+> _Provides fast cursor movement, inspired by Atom’s package of the same name._
 
 ![](https://cdn-images-1.medium.com/max/800/0*uPOceUJ4eMjCP_Qt.gif)
 
@@ -11746,219 +11734,219 @@ These extensions provide slightly different sets of features. While the first on
 
 ![](https://cdn-images-1.medium.com/max/800/0*SzUG3UU1fl5ub7bA.gif)
 
-> *Simple Kanban board for use in Visual Studio Code, with time tracking and Markdown support.*
+> _Simple Kanban board for use in Visual Studio Code, with time tracking and Markdown support._
 
 ### [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-> *Launch a development local Server with live reload feature for static & dynamic pages.*
+> _Launch a development local Server with live reload feature for static & dynamic pages._
 
 ![](https://cdn-images-1.medium.com/max/800/0*Oj5zPrWwMbCBViBi.gif)
 
 ### [Multiple clipboards](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip)
 
-> *Override the regular Copy and Cut commands to keep selections in a clipboard ring*
+> _Override the regular Copy and Cut commands to keep selections in a clipboard ring_
 
 ### [ngrok for VSCode](https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode)
 
-> *ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control* [*ngrok*](https://ngrok.com/) *from the VSCode command palette*
+> _ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control_ [_ngrok_](https://ngrok.com/) _from the VSCode command palette_
 
 ![](https://cdn-images-1.medium.com/max/800/0*IX15MuJrEVBcTd0F.gif)
 
 ### [Instant Markdown](https://marketplace.visualstudio.com/items?itemName=dbankier.vscode-instant-markdown)
 
-> *Simply, edit markdown documents in vscode and instantly preview it in your browser as you type.*
+> _Simply, edit markdown documents in vscode and instantly preview it in your browser as you type._
 
 ![](https://cdn-images-1.medium.com/max/800/0*jBw9vP9cAtvv2IcV.gif)
 
 ### [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 
-> *Visual Studio Code plugin that autocompletes npm modules in import statements.*
+> _Visual Studio Code plugin that autocompletes npm modules in import statements._
 
 ![](https://cdn-images-1.medium.com/max/800/0*iVJamJugt_b7-VsV.gif)
 
 ### [Parameter Hints](https://marketplace.visualstudio.com/items?itemName=DominicVonk.parameter-hints)
 
-> *Provides parameter hints on function calls in JS/TS/PHP files.*
+> _Provides parameter hints on function calls in JS/TS/PHP files._
 
 ![](https://cdn-images-1.medium.com/max/800/0*BSj8-Qt7xtVTsl1Z.png)
 
 ### [Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)
 
-> *Compare (diff) text selections within a file, across different files, or to the clipboard*
+> _Compare (diff) text selections within a file, across different files, or to the clipboard_
 
 ![](https://cdn-images-1.medium.com/max/800/0*KHki85jdv1hZeY3V.gif)
 
 ### [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
 
-> *Infer the structure of JSON and paste is as types in many programming languages*
+> _Infer the structure of JSON and paste is as types in many programming languages_
 
 ![](https://cdn-images-1.medium.com/max/800/0*K2GCRMGsYjpsK8OX.gif)
 
 ### [Path IntelliSense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
-> *Visual Studio Code plugin that autocompletes filenames*
+> _Visual Studio Code plugin that autocompletes filenames_
 
 ![](https://cdn-images-1.medium.com/max/800/0*xwxU_1ffZvZ6DeoO.gif)
 
 ### [Power Tools](https://marketplace.visualstudio.com/items?itemName=ego-digital.vscode-powertools)
 
-> *Extends Visual Studio Code via things like Node.js based scripts or shell commands, without writing separate extensions*
+> _Extends Visual Studio Code via things like Node.js based scripts or shell commands, without writing separate extensions_
 
 ![](https://cdn-images-1.medium.com/max/800/0*Cb7J6-PYsXsnjqSN.gif)
 
 ### [PrintCode](https://marketplace.visualstudio.com/items?itemName=nobuhito.printcode)
 
-> *PrintCode converts the code being edited into an HTML file, displays it by browser and prints it.*
+> _PrintCode converts the code being edited into an HTML file, displays it by browser and prints it._
 
 ![](https://cdn-images-1.medium.com/max/800/0*2spvNSEEHM-ETd_F.gif)
 
 ### [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 
-> *Easily switch between projects.*
+> _Easily switch between projects._
 
 ### [Project Dashboard](https://marketplace.visualstudio.com/items?itemName=kruemelkatze.vscode-dashboard)
 
-> *VSCode Project Dashboard is a Visual Studio Code extension that lets you organize your projects in a speed-dial like manner. Pin your frequently visited folders, files, and SSH remotes onto a dashboard to access them quickly.*
+> _VSCode Project Dashboard is a Visual Studio Code extension that lets you organize your projects in a speed-dial like manner. Pin your frequently visited folders, files, and SSH remotes onto a dashboard to access them quickly._
 
 ![](https://cdn-images-1.medium.com/max/800/0*PxOoARROhi1rf63R.gif)
 
 ### [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 
-> *Highlight columns in comma, tab, semicolon and pipe separated files, consistency check and linting with CSVLint, multi-cursor column editing, column trimming and realignment, and SQL-style querying with RBQL.*
+> _Highlight columns in comma, tab, semicolon and pipe separated files, consistency check and linting with CSVLint, multi-cursor column editing, column trimming and realignment, and SQL-style querying with RBQL._
 
 ![](https://cdn-images-1.medium.com/max/800/0*XAb9jlOfGWlEaCEM.png)
 
 ### [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
-> *Allows users to open any folder in a container, on a remote machine, container or in Windows Subsystem for Linux(WSL) and take advantage of VS Code’s full feature set.*
+> _Allows users to open any folder in a container, on a remote machine, container or in Windows Subsystem for Linux(WSL) and take advantage of VS Code’s full feature set._
 
 ![](https://cdn-images-1.medium.com/max/800/0*b6XEPh9PJzeWDB_z.gif)
 
 ### [Remote VSCode](https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode)
 
-> *Allow user to edit files from Remote server in Visual Studio Code directly.*
+> _Allow user to edit files from Remote server in Visual Studio Code directly._
 
 ### [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
-> *Allows you to send HTTP request and view the response in Visual Studio Code directly.*
+> _Allows you to send HTTP request and view the response in Visual Studio Code directly._
 
 ![](https://cdn-images-1.medium.com/max/800/0*zGne78bniDbTXzyf.gif)
 
 ### [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
-> *Synchronize settings, snippets, themes, file icons, launch, key bindings, workspaces and extensions across multiple machines using GitHub Gist*
+> _Synchronize settings, snippets, themes, file icons, launch, key bindings, workspaces and extensions across multiple machines using GitHub Gist_
 
 ![](https://cdn-images-1.medium.com/max/800/0*ilH91MRgGnMF6C8c.gif)
 
 ### [Text Power Tools](https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools)
 
-> *All-in-one extension for text manipulation: filtering (grep), remove lines, insert number sequences and GUIDs, format content as table, change case, converting numbers and more. Great for finding information in logs and manipulating text.*
+> _All-in-one extension for text manipulation: filtering (grep), remove lines, insert number sequences and GUIDs, format content as table, change case, converting numbers and more. Great for finding information in logs and manipulating text._
 
 ![](https://cdn-images-1.medium.com/max/800/0*Pfp4noD5OeQRbmsZ.gif)
 
 ### [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
-> *Custom keywords, highlighting, and colors for TODO comments. As well as a sidebar to view all your current tags.*
+> _Custom keywords, highlighting, and colors for TODO comments. As well as a sidebar to view all your current tags._
 
 ![](https://cdn-images-1.medium.com/max/800/0*6utz502-rPCa0Xcg.gif)
 
 ### [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes)
 
-> *Cycle between single, double and backtick quotes*
+> _Cycle between single, double and backtick quotes_
 
 ![](https://cdn-images-1.medium.com/max/800/0*7kZFpggvGAVkvoYa)
 
 ### [Typescript Destructure](https://marketplace.visualstudio.com/items?itemName=tusaeff.vscode-typescript-destructure-plugin)
 
-> *TypeScript Language Service Plugin providing a set of source actions for easy objects destructuring*
+> _TypeScript Language Service Plugin providing a set of source actions for easy objects destructuring_
 
 ![](https://cdn-images-1.medium.com/max/800/0*sEi0imXK2Yx69m7H.gif)
 
 ### [WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
 
-> *Automatic time tracker and productivity dashboard showing how long you coded in each project, file, branch, and language.*
+> _Automatic time tracker and productivity dashboard showing how long you coded in each project, file, branch, and language._
 
-------------------------------------------------------------------------
+---
 
 ### Formatting & Beautification
 
 ### [Better Align](https://marketplace.visualstudio.com/items?itemName=wwm.better-align)
 
-> *Align your code by colon(:), assignment(=,+=,-=,\*=,/=) and arrow(=&gt;). It has additional support for comma-first coding style and trailing comment.*
+> _Align your code by colon(:), assignment(=,+=,-=,\*=,/=) and arrow(=&gt;). It has additional support for comma-first coding style and trailing comment._
 
-> *And it doesn’t require you to select what to be aligned, the extension will figure it out by itself.*
+> _And it doesn’t require you to select what to be aligned, the extension will figure it out by itself._
 
 ![](https://cdn-images-1.medium.com/max/800/0*5maDjvvH57MAks1l.gif)
 
 ### [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
-> *Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text*
+> _Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text_
 
 ![](https://cdn-images-1.medium.com/max/800/0*h6Q6HLQ8jfHLnPlJ.gif)
 
 ### [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
-> *Auto rename paired HTML/XML tags*
+> _Auto rename paired HTML/XML tags_
 
 ![](https://cdn-images-1.medium.com/max/800/0*uRKX2-umhSQzlESv.gif)
 
 ### [beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
-> *Beautify code in place for VS Code*
+> _Beautify code in place for VS Code_
 
 ### [html2pug](https://marketplace.visualstudio.com/items?itemName=dbalas.vscode-html2pug)
 
-> *Transform html to pug inside your Visual Studio Code, forget about using an external page anymore.*
+> _Transform html to pug inside your Visual Studio Code, forget about using an external page anymore._
 
 ### [ECMAScript Quotes Transformer](https://marketplace.visualstudio.com/items?itemName=vilicvane.es-quotes)
 
-> *Transform quotes of ECMAScript string literals*
+> _Transform quotes of ECMAScript string literals_
 
 ![](https://cdn-images-1.medium.com/max/800/0*W1Z1fIvOGgPclFMJ.gif)
 
 ### [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
-> *Paste code with “correct” indentation*
+> _Paste code with “correct” indentation_
 
 ### [Sort Lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
 
-> *Sorts lines of text in specific order*
+> _Sorts lines of text in specific order_
 
 ![](https://cdn-images-1.medium.com/max/800/0*a4wPhA7VjJqkp3lu.gif)
 
 ### [Surround](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround)
 
-> *A simple yet powerful extension to add wrapper templates around your code blocks.*
+> _A simple yet powerful extension to add wrapper templates around your code blocks._
 
 ![](https://cdn-images-1.medium.com/max/800/0*lyjRgfSrvdmhGFXd.gif)
 
 ### [Wrap Selection](https://marketplace.visualstudio.com/items?itemName=konstantin.wrapSelection)
 
-> *Wraps selection or multiple selections with symbol or multiple symbols*
+> _Wraps selection or multiple selections with symbol or multiple symbols_
 
 ### [Formatting Toggle](https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle)
 
-> *Allows you to toggle your formatter on and off with a simple click*
+> _Allows you to toggle your formatter on and off with a simple click_
 
 ### [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
-> *This extension allows matching brackets to be identified with colours. The user can define which characters to match, and which colours to use.*
+> _This extension allows matching brackets to be identified with colours. The user can define which characters to match, and which colours to use._
 
 ![](https://cdn-images-1.medium.com/max/800/0*m3nU-5UxgUxX4-eJ.png)
 
 ### [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 
-> *Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.*
+> _Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX._
 
 ### [shell-format](https://github.com/foxundermoon/vs-shell-format)
 
-> *shell script & Dockerfile & dotenv format*
+> _shell script & Dockerfile & dotenv format_
 
 ![](https://cdn-images-1.medium.com/max/800/0*TThlkfK1KgQm5AKU.gif)
 
 ### [Vscode Google Translate](https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate)
 
-> *Quickly translate selected text right in your code*
+> _Quickly translate selected text right in your code_
 
 ![](https://cdn-images-1.medium.com/max/800/0*JF8NuxAFDxXiTn_u.gif)
 
@@ -11972,91 +11960,91 @@ These extensions provide slightly different sets of features. While the first on
 
 ### [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview)
 
-> *Browser Preview for VS Code enables you to open a real browser preview inside your editor that you can debug. Browser Preview is powered by Chrome Headless, and works by starting a headless Chrome instance in a new process. This enables a secure way to render web content inside VS Code, and enables interesting features such as in-editor debugging and more!*
+> _Browser Preview for VS Code enables you to open a real browser preview inside your editor that you can debug. Browser Preview is powered by Chrome Headless, and works by starting a headless Chrome instance in a new process. This enables a secure way to render web content inside VS Code, and enables interesting features such as in-editor debugging and more!_
 
-> ***FYI:… I HAVE TRIED ENDLESSLEY TO GET THE DEBUGGER TO WORK IN VSCODE BUT IT DOES NOT… I SUSPECT THAT’S WHY IT HAS A 3 STAR RATING FOR AN OTHERWISE PHENOMINAL EXTENSION.***
+> **_FYI:… I HAVE TRIED ENDLESSLEY TO GET THE DEBUGGER TO WORK IN VSCODE BUT IT DOES NOT… I SUSPECT THAT’S WHY IT HAS A 3 STAR RATING FOR AN OTHERWISE PHENOMINAL EXTENSION._**
 
 ![](https://cdn-images-1.medium.com/max/800/0*Oilwsi7EKGpCZb46.gif)
 
 ### [CodeRoad](https://marketplace.visualstudio.com/items?itemName=CodeRoad.coderoad)
 
-> *Play interactive tutorials in your favorite editor.*
+> _Play interactive tutorials in your favorite editor._
 
 ![](https://cdn-images-1.medium.com/max/800/0*iV8P93QMmWdYfnrQ.gif)
 
 ### [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
-> *Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F\# Script, C\# Script, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script*
+> _Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F\# Script, C\# Script, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script_
 
 ![](https://cdn-images-1.medium.com/max/800/0*hMsM_IEyBklQXchd.gif)
 
 ### [Code Time](https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode)
 
-> *Automatic time reports by project and other programming metrics right in VS Code.*
+> _Automatic time reports by project and other programming metrics right in VS Code._
 
 ![](https://cdn-images-1.medium.com/max/800/0*Uo1BYexJenprpgLa)
 
 ### [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 
-> *Highlight web colors in your editor*
+> _Highlight web colors in your editor_
 
 ![Highlight web colors in your editor screenshot](https://cdn-images-1.medium.com/max/800/1*ZwE7OHKR5opvDCJJOw9KeQ.png)
 
 ### [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
 
-> *Syntax highlighting for the VS Code Output Panel and log files*
+> _Syntax highlighting for the VS Code Output Panel and log files_
 
 ![](https://cdn-images-1.medium.com/max/800/0*9DpzVZ9cUNp2TMyD.jpg)
 
 ### [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)
 
-> *Dash integration in Visual Studio Code*
+> _Dash integration in Visual Studio Code_
 
 ![Dash integration screenshot](https://cdn-images-1.medium.com/max/800/1*sqGllC-pgXNaEBfB-cxG9Q.png)
 
 ### [Edit with Shell Command](https://marketplace.visualstudio.com/items?itemName=ryu1kn.edit-with-shell)
 
-> *Leverage your favourite shell commands to edit text*
+> _Leverage your favourite shell commands to edit text_
 
 ![](https://cdn-images-1.medium.com/max/800/0*2wW31HJ1nUCjORZe.gif)
 
 ### [Editor Config for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
-> *Editor Config for VS Code*
+> _Editor Config for VS Code_
 
 ### [ftp-sync](https://marketplace.visualstudio.com/items?itemName=lukasz-wronski.ftp-sync)
 
-> *Auto-sync your work to remote FTP server*
+> _Auto-sync your work to remote FTP server_
 
 ![](https://cdn-images-1.medium.com/max/800/0*-viKhwxpeYQdWHRE.gif)
 
 ### [Highlight JSX/HTML tags](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
 
-> *Highlights matching tags in the file.*
+> _Highlights matching tags in the file._
 
 ### [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 
-> *A simple extension to make indentation more readable.*
+> _A simple extension to make indentation more readable._
 
 ![](https://cdn-images-1.medium.com/max/800/0*GK_yEd-50SU3yc_y.png)
 
 ### [Password Generator](https://marketplace.visualstudio.com/items?itemName=ftonato.password-generator)
 
-> *Create a secure password using our generator tool. Help prevent a security threat by getting a strong password today.*
+> _Create a secure password using our generator tool. Help prevent a security threat by getting a strong password today._
 
 ![](https://cdn-images-1.medium.com/max/800/0*qPJAZk9-NcYgsx7H.gif)
 
 ### [PlatformIO](https://marketplace.visualstudio.com/items?itemName=formulahendry.platformio)
 
-> *An open source ecosystem for IoT development: supports 350+ embedded boards, 20+ development platforms, 10+ frameworks. Arduino and ARM mbed compatible.*
+> _An open source ecosystem for IoT development: supports 350+ embedded boards, 20+ development platforms, 10+ frameworks. Arduino and ARM mbed compatible._
 
 ![](https://cdn-images-1.medium.com/max/800/0*RywVt_vikqB-5urO.gif)
 
 ### [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 
-> *Polaroid for your code ![📸](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f4f8.svg).*
+> _Polaroid for your code ![📸](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f4f8.svg)._
 
-> ***Note: Polacode no longer works as of the most recent update… go for Polacode2020 or CodeSnap…***
+> **_Note: Polacode no longer works as of the most recent update… go for Polacode2020 or CodeSnap…_**
 
 ![](https://cdn-images-1.medium.com/max/800/0*Io4fPojDRrDf5CmW.gif)
 
@@ -12064,13 +12052,13 @@ These extensions provide slightly different sets of features. While the first on
 
 #### This one is super cool!
 
-> *Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project’s files, inline reporting, code coverage and rich output formatting.*
+> _Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project’s files, inline reporting, code coverage and rich output formatting._
 
 ![](https://cdn-images-1.medium.com/max/800/0*Q9kp8EWZHTD0Hfru.gif)
 
 ### [Slack](https://marketplace.visualstudio.com/items?itemName=sozercan.slack)
 
-> *Send messages and code snippets, upload files to Slack*
+> _Send messages and code snippets, upload files to Slack_
 
 Personally I found this extension to slow down my editor in addition to confliction with other extensions: (I have over 200 as of this writing)….. **yes I have been made fully aware that I have a problem and need to get help**
 
@@ -12078,25 +12066,25 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 ### [Spotify](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify)
 
-*No real advantage over just using Spotify normally… it’s problematic enough in implementation that you won’t save any time using it. Further, it’s a bit tricky to configure … or at least it was the last time I tried syncing it with my spotify account.*
+_No real advantage over just using Spotify normally… it’s problematic enough in implementation that you won’t save any time using it. Further, it’s a bit tricky to configure … or at least it was the last time I tried syncing it with my spotify account._
 
-> *Provides integration with Spotify Desktop client. Shows the currently playing song in status bar, search lyrics and provides commands for controlling Spotify with buttons and hotkeys.*
+> _Provides integration with Spotify Desktop client. Shows the currently playing song in status bar, search lyrics and provides commands for controlling Spotify with buttons and hotkeys._
 
 ![](https://cdn-images-1.medium.com/max/800/0*IqsxXiGpZQWbQbfD.gif)
 
 ### [SVG](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
-> *A Powerful SVG Language Support Extension(beta). Almost all the features you need to handle SVG.*
+> _A Powerful SVG Language Support Extension(beta). Almost all the features you need to handle SVG._
 
 ![](https://cdn-images-1.medium.com/max/800/0*SC6zCXGaBnM_LkgC.png)
 
 ### [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
 
-> *View an SVG in the editor and export it as data URI scheme or PNG.*
+> _View an SVG in the editor and export it as data URI scheme or PNG._
 
 ### [Text Marker (Highlighter)](https://marketplace.visualstudio.com/items?itemName=ryu1kn.text-marker)
 
-> *Highlight multiple text patterns with different colors at the same time. Highlighting a single text pattern can be done with the editor’s search functionality, but it cannot highlight multiple patterns at the same time, and this is where this extension comes handy.*
+> _Highlight multiple text patterns with different colors at the same time. Highlighting a single text pattern can be done with the editor’s search functionality, but it cannot highlight multiple patterns at the same time, and this is where this extension comes handy._
 
 ![](https://cdn-images-1.medium.com/max/800/0*YDreVyGNjZmqj_KC.gif)
 
@@ -12104,7 +12092,7 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 ### THIS IS A MUST HAVE
 
-> *Quickly bring up helpful MDN documentation in the editor*
+> _Quickly bring up helpful MDN documentation in the editor_
 
 ![](https://cdn-images-1.medium.com/max/800/0*xiUfWBsz8x8beY70.gif)
 
@@ -12116,7 +12104,7 @@ In the interest of not making the reader scroll endlessly as I often do… I’v
 
 [https://5fff5b9a2430bb564bfd451d–stoic-mccarthy-2c335f.netlify.app/\#h18](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18)
 
-------------------------------------------------------------------------
+---
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
@@ -12144,7 +12132,7 @@ A product icon theme for Visual Studio Code
 
 ### TBC…
 
-------------------------------------------------------------------------
+---
 
 ### [Monokai Oblique by pushqrdx](https://vscodethemes.com/e/pushqrdx.theme-monokai-oblique-vscode)
 
@@ -12405,13 +12393,13 @@ Collection of 18 light themes separated in 4 groups by background’s brightness
 -   A class should have only one reason to change.
 -   Gather together the things that change for the same reasons. Separate those things that change for different reasons.
 
-------------------------------------------------------------------------
+---
 
 ### Background:
 
 ### Constructor Functions
 
-Defining a constructor function *Example of an object using object initialization*
+Defining a constructor function _Example of an object using object initialization_
 
 const fellowshipOfTheRing = {  
 title: “The Fellowship of the Ring”,  
@@ -12426,9 +12414,9 @@ author: “J.R.R. Tolkien”,
 
 -   `Constructor Functions` : Handle the creation of an object – it’s a factory for creating objects of a specific type.
 -   There are a few specific things to constructors worth noting:
--   ***The name of the constructor function is capitalized***
--   The Function *does not explicitly return a value*
--   Within the body, the *this* keyword references the newly created object
+-   **_The name of the constructor function is capitalized_**
+-   The Function _does not explicitly return a value_
+-   Within the body, the _this_ keyword references the newly created object
 
 function Book(title, series, author) {  
 this.title = title;  
@@ -12454,7 +12442,7 @@ const fellowshipOfTheRing = new Book(
 
 console.log(fellowshipOfTheRing); // Book { title: ‘The Fellowship of the Ring’, … }
 
-### *Four Things will happen when invoking a constructor function*
+### _Four Things will happen when invoking a constructor function_
 
 1.  A new empty object is created {};
 2.  The new obj’s `prototype` is set to the object referenced by the constructors prototype property.
@@ -12471,7 +12459,7 @@ console.log(fellowshipOfTheRing); // Book { title: ‘The Fellowship of the Ring
 console.log(fellowshipOfTheRing instanceof Book); // true
 
 -   By using the `instanceof` operator we can verify that an object was created from a certain object type.
--   *The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator.*
+-   _The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator._
 
 ### Invoking a constructor function without the new keyword
 
@@ -12484,7 +12472,7 @@ console.log(fellowshipOfTheRing instanceof Book); // true
 
 ### Defining Sharable Methods
 
--   *Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it’s own method definition.*
+-   _Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it’s own method definition._
 -   `Prototype` : An object that is delegated to when a reference to an object property or method can’t be resolved.
 -   Every instance created by a constructor function shares the same prototype.
 -   `Object.setPrototypeOf()` and `Object.getPrototypeOf()` are just used to set a prototype of one object to another object; and also the verify a prototype.
@@ -12517,7 +12505,7 @@ The Problem with Arrow Functions
 -   We cannot use arrow functions when defining methods on a constructor function’s prototype property.
 -   Arrow functions don’t include their own this binding; therefore it will not reference the current instance — always stick with the function () keyword.
 
-------------------------------------------------------------------------
+---
 
 ### Putting the Class in JavaScript Classes
 
@@ -12607,7 +12595,7 @@ const bookTitles = Book.getTitles(fellowshipOfTheRing, theTwoTowers);
 
 console.log(bookTitles.join(“,”)); // The Fellowship of the Ring, The Two Towers
 
--   If we go back to an example of how constructor functions also use static methods — we see that static methods are *defined directly on the constructor function* — whereas instance methods need to be defined on the *prototype* object.
+-   If we go back to an example of how constructor functions also use static methods — we see that static methods are *defined directly on the constructor function* — whereas instance methods need to be defined on the _prototype_ object.
 
 function Book(title, series, author) {  
 this.title = title;  
@@ -12651,9 +12639,9 @@ console.log(bookTitles.join(“,”)); // The Fellowship of the Ring, The Two To
 
 ### Comparing Classes to Constructor Functions
 
-> *ES2015 Classes are essentially* ***syntactic sugar*** *over traditional constructor functions and prototypes.*
+> _ES2015 Classes are essentially_ **_syntactic sugar_** _over traditional constructor functions and prototypes._
 
-------------------------------------------------------------------------
+---
 
 ### Javascript Inheritance
 
@@ -12669,7 +12657,7 @@ this.series = series;
 
 getInformation() {  
 if (this.series) {  
-return \`<span class="math inline">*this*.*title*(</span>{this.series})\`;  
+return \`<span class="math inline">_this_._title_(</span>{this.series})\`;  
 } else {  
 return this.title;  
 }  
@@ -12739,7 +12727,7 @@ let result = super.getInformation();
 
 -   We can simply declare our own method of the same name in our child class to override our parent’s version of `getInformation()`
 
-------------------------------------------------------------------------
+---
 
 ### JavaScript Modules
 
@@ -12776,7 +12764,7 @@ Introducing Node.js modules
 -   `Node.js Core`: identifier matches name
 -   `Third-Party`: identifier matches a module in the node modules folder (installed package)
 
-------------------------------------------------------------------------
+---
 
 ### `Encapsulation`
 
@@ -12864,7 +12852,7 @@ console.log(child.toString()); // my name is Child
 
 -   The ability to treat an object as if it were an instance of one of its parent classes.
 
-------------------------------------------------------------------------
+---
 
 ### The SOLID Principles Explained
 
@@ -12878,15 +12866,15 @@ SOLID is an anagram for:
 
 ### `Single-Responsibility Principle`
 
-> *A class should do one thing and do it well*
+> _A class should do one thing and do it well_
 
 -   This principle is about limiting the impact of change.
 
 ### `The Liskov Substitution Principle:`
 
-*Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T. Then ϕ(y) should be true for objects y of type S where S is a subtype of T.*
+_Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T. Then ϕ(y) should be true for objects y of type S where S is a subtype of T._
 
-> *You can substitute child class objects for parent class objects and not cause errors.*
+> _You can substitute child class objects for parent class objects and not cause errors._
 
 `The Other Three`
 
@@ -12902,7 +12890,7 @@ SOLID is an anagram for:
 ### Controlling Coupling with The Law of Demeter
 
 -   `Coupling` : The degree of interdependence between two or more classes.
--   The fewer the connections between classes, the less chance there is for the *ripple effect*.
+-   The fewer the connections between classes, the less chance there is for the _ripple effect_.
 -   Here is the formal definition:
 -   A method of an object can only invoke the methods (or use the properties) of the following kind of objects:
 -   Methods on the object itself.
@@ -12911,7 +12899,7 @@ SOLID is an anagram for:
 -   Any values stores in the instance variables of the object.
 -   Any values stored in global variables.
 -   Law of Demeter is more so of a guideline than a law.
--   Easiest way to implement it is to *not us more than one dot*
+-   Easiest way to implement it is to _not us more than one dot_
 -   You cannot cheat by separating extra calls onto different lines.
 
 ### When to ignore the Law of Demeter
@@ -12950,7 +12938,7 @@ Write a function `rotateRight(array, num)` that takes in an array and a number a
 
 **HINT:** you can use [Array\#slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) to create a copy of an array
 
-------------------------------------------------------------------------
+---
 
 > JavaScript gives us four methods to add or remove items from the beginning or end of arrays:
 
@@ -13098,9 +13086,9 @@ If you’re using Visual Studio Code, congrats! There is Emmet support built int
 
 ### Basic Syntax
 
-***HTML Boilerplate***
+**_HTML Boilerplate_**
 
-If you’ve been working in VSCode, you’ve probably seen Emmet syntax highlighting when working in HTML documents. In my opinion, the most convenient Emmet shortcut is ***html:5***. This will create an HTML boilerplate, and fill out metadata tags in the head of your document.
+If you’ve been working in VSCode, you’ve probably seen Emmet syntax highlighting when working in HTML documents. In my opinion, the most convenient Emmet shortcut is **_html:5_**. This will create an HTML boilerplate, and fill out metadata tags in the head of your document.
 
 **html:5**
 
@@ -13133,7 +13121,7 @@ There are generally two types of tags in HTML:
 
 > i.e.
 
-------------------------------------------------------------------------
+---
 
 The tag above me is a horizontal line that doesn’t need a closing tag
 
@@ -13159,21 +13147,24 @@ The three block level tags every HTML document needs to contain are \*\*
 
 -   Paragraphs are enclosed by \*\*\_
 
-    ***, while blockquotes use the***
+    **_, while blockquotes use the_**
 
     \_\*\* tag.
 
 -   Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the \*\*\_
 
     \_\*\* tag. A div element can contain another div tag inside it as well.
+
 -   You may also use \*\*\_
 
     \_\*\* tags for ordered lists and \*\*\_
 
     \_\*\* for unordered ones. Individual list items must be enclosed by the \*\*\_
--   
+
+-
 
 1.  \*\*
+
     -   \*\*
     -   **List item 1**
     -   \*\*
@@ -13197,14 +13188,17 @@ Although this tag can be implied, or not required, with HTML, it is required to 
 -   Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the \*\*\_
 
     \_\*\* tag. A div element can contain another div tag inside it as well.
+
 -   You may also use \*\*\_
 
     \_\*\* tags for ordered lists and \*\*\_
 
     \_\*\* for unordered ones. Individual list items must be enclosed by the \*\*\_
--   
+
+-
 
 1.  \*\*
+
     -   \*\*
     -   **List item 1**
     -   \*\*
@@ -13217,13 +13211,13 @@ Although this tag can be implied, or not required, with HTML, it is required to 
 
 ### Inline Tags
 
-Many inline tags are used to format text. For example, a **** tag would render an element in **bold**, whereas ** tags would show it in *italics*.
+Many inline tags are used to format text. For example, a \***\* tag would render an element in **bold**, whereas ** tags would show it in _italics_.
 
-Hyperlinks are also inline elements that require ****** tags and **href** attributes to indicate the link’s destination:
+Hyperlinks are also inline elements that require **\*\*** tags and **href** attributes to indicate the link’s destination:
 
 1.  **&lt;a** **href=**”https://example.com/”**&gt;**Click me!
 
-Images are inline elements too. You can add one using **** without any closing tag. But you will also need to use the ***src*** attribute to specify the image path, for example:
+Images are inline elements too. You can add one using \***_ without any closing tag. But you will also need to use the _**src\*\*\* attribute to specify the image path, for example:
 
 1.  **&lt;img** **src=**”/images/example.jpg” **alt=**”Example image”**&gt;**
 
@@ -13233,15 +13227,15 @@ Images are inline elements too. You can add one using **** without any closing t
 
 Let us now have a look on the basic structure of HTML. That is the code which is must for every webpage to have:
 
-***&lt;!DOCTYPE html&gt;***
+**_&lt;!DOCTYPE html&gt;_**
 
 #### Here is some boilerplate html you can use as a starting point:!!Every Webpage must contain this code.!!
 
-------------------------------------------------------------------------
+---
 
 ### **&lt;!DOCTYPE html&gt;**
 
-------------------------------------------------------------------------
+---
 
 Below is the complete explanation of each of the tags used in the above piece of HTML code:
 
@@ -13257,7 +13251,7 @@ Below is the complete explanation of each of the tags used in the above piece of
 > >
 > > ### Bold Text:
 > >
-> > ****this is bold****
+> > \***\*this is bold\*\***
 > >
 > > ⇐ this is for strong, emergency emotions.
 > >
@@ -13265,15 +13259,15 @@ Below is the complete explanation of each of the tags used in the above piece of
 > >
 > > **HEADING/S:**
 > >
-> > *6 types from largest(h1) to smallest (h6)*
+> > _6 types from largest(h1) to smallest (h6)_
 > >
-> > ### 
+> > ###
 > >
-> > #### 
+> > ####
 > >
-> > ##### 
+> > #####
 > >
-> > ###### 
+> > ######
 > >
 > > \_\_\_\_\_\_\_\_\_\_\_
 > >
@@ -13299,7 +13293,7 @@ Below is the complete explanation of each of the tags used in the above piece of
 > >
 > > `ul>li>p`
 > >
-> > -   
+> > -
 > >
 > > ### Sibling Items
 > >
@@ -13313,19 +13307,13 @@ Below is the complete explanation of each of the tags used in the above piece of
 > >
 > > `ul>li*5`
 > >
-> > -   -   -   -   -   
+> > ---
 > >
 > > ### Grouping
 > >
 > > Items can be grouped together using `()`
 > >
 > > `table>(tr>th*5)+tr>t*5`
-
-  
-  
-  
-  
-  
 
 ### Class and ID
 
@@ -13345,11 +13333,9 @@ Contents inside tags can be added using `{}`
 
 `h1{Emmet is awesome}+h2{Every front end developers should use this}+p{This is paragraph}*2`
 
-Emmet is awesome
-================
+# Emmet is awesome
 
-Every front end developers should use this
-------------------------------------------
+## Every front end developers should use this
 
 This is paragraph
 
@@ -13370,11 +13356,9 @@ You can use this inside tag or contents.
 
 `h${This is so awesome $}*6`
 
-This is so awesome 1
-====================
+# This is so awesome 1
 
-This is so awesome 2
---------------------
+## This is so awesome 2
 
 ### This is so awesome 3
 
@@ -13504,7 +13488,7 @@ git pull –rebase upstream master
 
 \# Squash multiple commits into one for a cleaner git log  
 \# (on the following screen change the word pick to either ‘f’ or ‘s’)  
-git rebase -i $commit\_ref
+git rebase -i $commit_ref
 
 ### Submodules
 
@@ -13642,7 +13626,7 @@ git pull –rebase upstream master
 
 \# Squash multiple commits into one for a cleaner git log  
 \# (on the following screen change the word pick to either ‘f’ or ‘s’)  
-git rebase -i $commit\_ref
+git rebase -i $commit_ref
 
 ### Submodules
 
@@ -13777,9 +13761,9 @@ use it with caution.
 """  
 secretThing()
 
-> *Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”*
+> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
 
-------------------------------------------------------------------------
+---
 
 ### Numbers
 
@@ -13817,7 +13801,7 @@ print(27e-5) \# =&gt; 0.00027
 
 > **The** `**i**` **is switched to a** `**j**` **in programming.**
 
-T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**\**space*** *when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
+T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**\*_space_** _when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
 print(7j) \# =&gt; 7j  
 print(5.1+7.7j)) \# =&gt; 5.1+7.7j  
@@ -13840,15 +13824,15 @@ print(str(17.0) + ’ and ’ + str(17)) \# =&gt; 17.0 and 17
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   *“\*\*” : Double asterisk for exponent.*
--   *“//” : Integer Division.*
+-   _“\*\*” : Double asterisk for exponent._
+-   _“//” : Integer Division._
 -   **There are no spaces between math operations in Python.**
 -   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `**Math.floor()**` **in JS.**
 -   **There are no** `**++**` **and** `**--**` **in Python, the only shorthand operators are:**
 
 ![](https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png)
 
-------------------------------------------------------------------------
+---
 
 ### Strings
 
@@ -13876,7 +13860,7 @@ print(“Spaghetti”\[-4\]) \# =&gt; e
 
 -   Python let’s you use ranges
 
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type* ***by textbook definition***\_, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\_
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **_by textbook definition_**\_, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\_
 
 print(“Spaghetti”\[1:4\]) \# =&gt; pag  
 print(“Spaghetti”\[4:-1\]) \# =&gt; hett  
@@ -13913,12 +13897,12 @@ postpone, and one which we intend to win, and the others, too.
 -   **You can also use “\*” to repeat strings or multiply strings.**
 -   **Use the** `**format()**` **function to use placeholders in a string to input values later on.**
 
-first\_name = “Billy”  
-last\_name = “Bob”  
-print(‘Your name is {0} {1}’.format(first\_name, last\_name)) \# =&gt; Your name is Billy Bob
+first_name = “Billy”  
+last_name = “Bob”  
+print(‘Your name is {0} {1}’.format(first_name, last_name)) \# =&gt; Your name is Billy Bob
 
--   *Shorthand way to use format function is:  
-    *`print(f'Your name is {first_name} {last_name}')`
+-   _Shorthand way to use format function is:  
+    _`print(f'Your name is {first_name} {last_name}')`
 
 #### Some useful string methods.
 
@@ -13930,7 +13914,7 @@ print(‘Your name is {0} {1}’.format(first\_name, last\_name)) \# =&gt; Your 
 
 ![](https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png)
 
-------------------------------------------------------------------------
+---
 
 ### Variables and Expressions
 
@@ -13943,7 +13927,7 @@ b = ‘Marbles’
 print(a) \# =&gt; 7  
 print(b) \# =&gt; Marbles
 
--   ***You can chain variable assignments to give multiple var names the same value.***
+-   **_You can chain variable assignments to give multiple var names the same value._**
 
 #### Use with caution as this is highly unreadable
 
@@ -13959,13 +13943,13 @@ print(a) \# =&gt; 17
 a = ‘seventeen’  
 print(a) \# =&gt; seventeen
 
--   `_NaN_` *does not exist in Python, but you can ‘create’ it like so:*`**_print(float("nan"))_**`
--   *Python replaces* `_null_` *with* `_none_`*.*
--   `**_none_**` ***is an object*** *and can be directly assigned to a variable.*
+-   `_NaN_` _does not exist in Python, but you can ‘create’ it like so:_`**_print(float("nan"))_**`
+-   _Python replaces_ `_null_` _with_ `_none_`_._
+-   `**_none_**` **_is an object_** _and can be directly assigned to a variable._
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
-------------------------------------------------------------------------
+---
 
 ### Boolean Data Type
 
@@ -13994,7 +13978,7 @@ print(not True or False) \# =&gt; False
 -   Empty Sequence or Collection.
 -   `True` and `False` must be capitalized
 
-------------------------------------------------------------------------
+---
 
 ### Comparison Operators
 
@@ -14012,7 +13996,7 @@ print(not True or False) \# =&gt; False
 
 ![](https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png)
 
-------------------------------------------------------------------------
+---
 
 ### Identity vs Equality
 
@@ -14028,7 +14012,7 @@ print (2 is 2.0) \# =&gt; False
 
 -   In the Python community it is better to use `is` and `is not` over `==` or `!=`
 
-------------------------------------------------------------------------
+---
 
 ### If Statements
 
@@ -14051,7 +14035,7 @@ print(‘You are not Monica, grannie.’)
 
 > Remember the order of `elif` statements matter.
 
-------------------------------------------------------------------------
+---
 
 ### While Statements
 
@@ -14079,7 +14063,7 @@ if spam &lt; 5:
 continue  
 break
 
-------------------------------------------------------------------------
+---
 
 ### Try/Except Statements
 
@@ -14091,8 +14075,7 @@ print(len(a))
 except:  
 print(‘Silently handle error here’)
 
-Optionally include a correction to the issue
-============================================
+# Optionally include a correction to the issue
 
 a = str(a) print(len(a)
 
@@ -14102,8 +14085,7 @@ print(len(a))
 except:  
 print(‘Silently handle error here’)
 
-Optionally include a correction to the issue
-============================================
+# Optionally include a correction to the issue
 
 a = str(a) print(len(a))
 
@@ -14146,20 +14128,17 @@ files = (‘one.txt’, ‘two.txt’, ‘three.txt’)
 for filename in files:  
 try:
 
-open the file in read mode
-==========================
+# open the file in read mode
 
 f = open(filename, ‘r’)  
 except OSError:
 
-handle the case where file does not exist or permission is denied
-=================================================================
+# handle the case where file does not exist or permission is denied
 
 print(‘cannot open file’, filename)  
 else:
 
-do stuff with the file object (f)
-=================================
+# do stuff with the file object (f)
 
 print(filename, ‘opened successfully’)  
 print(‘found’, len(f.readlines()), ‘lines’)  
@@ -14189,7 +14168,7 @@ b = “5555”
 if hasattr(b, ‘\_\_len\_\_’):  
 print(len(b))
 
-------------------------------------------------------------------------
+---
 
 ### Pass
 
@@ -14206,7 +14185,7 @@ pass
 while True:  
 pass
 
-------------------------------------------------------------------------
+---
 
 ### Functions
 
@@ -14233,7 +14212,7 @@ greeting(“Barry”, “Hey”)
 def increment(delta=1, value):  
 return delta + value
 
--   *You can specify arguments by name without destructuring in Python.*
+-   _You can specify arguments by name without destructuring in Python._
 
 def greeting(name, saying=“Hello”):  
 print(saying, name)
@@ -14246,7 +14225,7 @@ greeting(“Monica”, saying=“Hi”)
 
 `toUpper = lambda s: s.upper()`
 
-------------------------------------------------------------------------
+---
 
 ### Notes
 
@@ -14256,8 +14235,8 @@ greeting(“Monica”, saying=“Hi”)
 > Python has a very powerful formatting engine.  
 > format() is also applied directly to strings.
 
-shopping\_list = \[‘bread’,’milk’,’eggs’\]  
-print(‘,’.join(shopping\_list))
+shopping_list = \[‘bread’,’milk’,’eggs’\]  
+print(‘,’.join(shopping_list))
 
 ### Comma Thousands Separator
 
@@ -14294,7 +14273,7 @@ Programming Script : A set of code that runs in a linear fashion.
 The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.
 
 **Python can be used to display html, css, and JS.**  
-*It is common to use Python as an API (Application Programming Interface)*
+_It is common to use Python as an API (Application Programming Interface)_
 
 #### Structured Data
 
@@ -14305,7 +14284,7 @@ The largest difference between scripts and programs is the level of complexity a
 > Range  
 > Collections : Unordered data structures, hashable values.
 
-------------------------------------------------------------------------
+---
 
 #### Dictionaries
 
@@ -14317,11 +14296,11 @@ Sets
 
 Built In Data Types
 
-------------------------------------------------------------------------
+---
 
 ### Lists are the python equivalent of arrays.
 
-empty\_list = \[\]  
+empty_list = \[\]  
 departments = \[‘HR’,’Development’,’Sales’,’Finance’,’IT’,’Customer Support’\]
 
 ### You can instantiate
@@ -14336,7 +14315,7 @@ print(4 in \[1, 2, 3\]) \#&gt; False
 
 #### Instantiated with parentheses
 
-time\_blocks = (‘AM’,’PM’)
+time_blocks = (‘AM’,’PM’)
 
 #### Sometimes instantiated without
 
@@ -14376,15 +14355,15 @@ b = dict(one=1, two=2, three=3)
 c = dict(\[(‘two’, 2), (‘one’, 1), (‘three’, 3)\])  
 \# a, b, and c are all equal
 
-***Declared with curly braces of the built in dict()***
+**_Declared with curly braces of the built in dict()_**
 
-> *Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.*
+> _Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
 
 **Use the in operator to see if a key exists in a dictionary.**
 
 S**ets : Unordered collection of distinct objects; objects that need to be hashable.**
 
-> *Always be unique, duplicate items are auto dropped from the set.*
+> _Always be unique, duplicate items are auto dropped from the set._
 
 #### Common Uses:
 
@@ -14395,8 +14374,8 @@ S**ets : Unordered collection of distinct objects; objects that need to be hash
 **Standard Set is mutable, Python has a immutable version called frozenset.  
 Sets created by putting comma seperated values inside braces:**
 
-school\_bag = {‘book’,’paper’,’pencil’,’pencil’,’book’,’book’,’book’,’eraser’}  
-print(school\_bag)
+school_bag = {‘book’,’paper’,’pencil’,’pencil’,’book’,’book’,’book’,’eraser’}  
+print(school_bag)
 
 #### Also can use set constructor to automatically put it into a set.
 
@@ -14436,12 +14415,12 @@ print(enumerate(quarters, start=1))
 
 **max(iterable, key=None) : returns the largest item in the iterable.**
 
-*key optional function which converts an item to a value to be compared.  
-min works the same way as max*
+_key optional function which converts an item to a value to be compared.  
+min works the same way as max_
 
 **sum(iterable) : used with a list of numbers to generate the total.**
 
-*There is a faster way to concatenate an array of strings into one string, so do not use sum for that.*
+_There is a faster way to concatenate an array of strings into one string, so do not use sum for that._
 
 **any(iterable) : returns True if any items in the iterable are true.**
 
@@ -14473,7 +14452,7 @@ print(a — b) \# =&gt; {1, 3}
 print(b — a) \# =&gt; {4, 6}  
 print(a ^ b) \# =&gt; {1, 3, 4, 6}
 
-------------------------------------------------------------------------
+---
 
 ### \*\*For Statements
 
@@ -14481,11 +14460,11 @@ In python, there is only one for loop.\*\*
 
 Always Includes:
 
-> 1. The for keyword  
-> 2. A variable name  
-> 3. The ‘in’ keyword  
-> 4. An iterable of some kid  
-> 5. A colon  
+> 1. The for keyword
+> 2. A variable name
+> 3. The ‘in’ keyword
+> 4. An iterable of some kid
+> 5. A colon
 > 6. On the next line, an indented block of code called the for clause.
 
 **You can use break and continue statements inside for loops as well.**
@@ -14508,7 +14487,7 @@ lst = \[0, 1, 2, 3\]
 for i in lst:  
 print(i)
 
-***Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.***
+**_Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list._**
 
 supplies = \[‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’\]  
 for i in range(len(supplies)):  
@@ -14532,16 +14511,16 @@ spam = {‘color’: ‘red’, ‘age’: 42}
 for v in spam.values():  
 print(v)
 
-*Prints red*
+_Prints red_
 
-*Prints 42*
+_Prints 42_
 
 for k in spam.keys():  
 print(k)
 
-*Prints color*
+_Prints color_
 
-*Prints age*
+_Prints age_
 
 **For loops can also iterate over both keys and values.**
 
@@ -14550,18 +14529,18 @@ print(k)
 for i in spam.items():  
 print(i)
 
-*Prints (‘color’, ‘red’)*
+_Prints (‘color’, ‘red’)_
 
-*Prints (‘age’, 42)*
+_Prints (‘age’, 42)_
 
-*Destructuring to values*
+_Destructuring to values_
 
 for k, v in spam.items():  
 print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
 
-*Prints Key: age Value: 42*
+_Prints Key: age Value: 42_
 
-*Prints Key: color Value: red*
+_Prints Key: color Value: red_
 
 **Looping over string**
 
@@ -14570,21 +14549,21 @@ print(c)
 
 **When you order arguments within a function or function call, the args need to occur in a particular order:**
 
-*formal positional args.*
+_formal positional args._
 
 \*args
 
-*keyword args with default values*
+_keyword args with default values_
 
 \*\*kwargs
 
-def example(arg\_1, arg\_2, \*args, \*\*kwargs):  
+def example(arg_1, arg_2, \*args, \*\*kwargs):  
 pass
 
-def example2(arg\_1, arg\_2, \*args, kw\_1=”shark”, kw\_2=”blowfish”, \*\*kwargs):  
+def example2(arg_1, arg_2, \*args, kw_1=”shark”, kw_2=”blowfish”, \*\*kwargs):  
 pass
 
-------------------------------------------------------------------------
+---
 
 ### **Importing in Python**
 
@@ -14599,7 +14578,7 @@ Custom.
 
 **All loaded using import statements.**
 
-------------------------------------------------------------------------
+---
 
 ### **Terms**
 
@@ -14611,9 +14590,9 @@ Custom.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
 
-*Try to avoid importing with wildcards in Python.*
+_Try to avoid importing with wildcards in Python._
 
-*Use multiple lines for clarity when importing.*
+_Use multiple lines for clarity when importing._
 
 from urllib.request import (  
 HTTPDefaultErrorHandler as ErrorHandler,  
@@ -14624,7 +14603,7 @@ url2pathname,
 urlopen,  
 )
 
-------------------------------------------------------------------------
+---
 
 ### Watching Out for Python 2
 
@@ -14702,7 +14681,7 @@ Non-2xx responses are still successful requests. Use another function to turn th
 
 const fetch = require(‘isomorphic-fetch’)
 
-See: [isomorphic-fetch](https://npmjs.com/package/isomorphic-fetch) *(npmjs.com)*
+See: [isomorphic-fetch](https://npmjs.com/package/isomorphic-fetch) _(npmjs.com)_
 
 #### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
@@ -14738,7 +14717,7 @@ app.use(express.static(\_\_dirname + ‘/public’))app.use(express.logger())
 
 app.locals({ title: “MyApp”,})
 
-------------------------------------------------------------------------
+---
 
 ### Request & response
 
@@ -14804,13 +14783,13 @@ At the root route, serve the React application’s static `index.html` file alon
 
 router.use(‘/api’, apiRouter);
 
-// Static routes// Serve React build files in productionif (process.env.NODE\_ENV === ‘production’) { const path = require(‘path’); // Serve the frontend’s index.html file at the root route router.get(‘/’, (req, res) =&gt; { res.cookie(‘XSRF-TOKEN’, req.csrfToken()); res.sendFile( path.resolve(\_\_dirname, ‘../../frontend’, ‘build’, ‘index.html’) ); });
+// Static routes// Serve React build files in productionif (process.env.NODE_ENV === ‘production’) { const path = require(‘path’); // Serve the frontend’s index.html file at the root route router.get(‘/’, (req, res) =&gt; { res.cookie(‘XSRF-TOKEN’, req.csrfToken()); res.sendFile( path.resolve(\_\_dirname, ‘../../frontend’, ‘build’, ‘index.html’) ); });
 
 // Serve the static assets in the frontend’s build folder router.use(express.static(path.resolve(“../frontend/build”)));
 
 // Serve the frontend’s index.html file at all other routes NOT starting with /api router.get(/^(?!/?api).\*/, (req, res) =&gt; { res.cookie(‘XSRF-TOKEN’, req.csrfToken()); res.sendFile( path.resolve(\_\_dirname, ‘../../frontend’, ‘build’, ‘index.html’) ); });}
 
-// Add a XSRF-TOKEN cookie in developmentif (process.env.NODE\_ENV !== ‘production’) { router.get(‘/api/csrf/restore’, (req, res) =&gt; { res.cookie(‘XSRF-TOKEN’, req.csrfToken()); res.status(201).json({}); });}
+// Add a XSRF-TOKEN cookie in developmentif (process.env.NODE_ENV !== ‘production’) { router.get(‘/api/csrf/restore’, (req, res) =&gt; { res.cookie(‘XSRF-TOKEN’, req.csrfToken()); res.status(201).json({}); });}
 
 module.exports = router;
 
@@ -14926,7 +14905,7 @@ Different from PRIMARY KEY constraints, UNIQUE constraints allow NULL. Moreover,
 
 Create a new [role](https://www.postgresqltutorial.com/postgresql-roles/):
 
-CREATE ROLE role\_name;
+CREATE ROLE role_name;
 
 Create a new role with a `username` and `password`:
 
@@ -14934,109 +14913,109 @@ CREATE ROLE username NOINHERIT LOGIN PASSWORD password;
 
 Change role for the current session to the `new_role`:
 
-SET ROLE new\_role;
+SET ROLE new_role;
 
 Allow `role_1` to set its role as `role_2:`
 
-GRANT role\_2 TO role\_1;
+GRANT role_2 TO role_1;
 
 ### Managing databases
 
 [Create a new database](https://www.postgresqltutorial.com/postgresql-create-database/):
 
-CREATE DATABASE \[IF NOT EXISTS\] db\_name;
+CREATE DATABASE \[IF NOT EXISTS\] db_name;
 
 [Delete a database permanently](https://www.postgresqltutorial.com/postgresql-drop-database/):
 
-DROP DATABASE \[IF EXISTS\] db\_name;
+DROP DATABASE \[IF EXISTS\] db_name;
 
 ### Managing tables
 
 [Create a new table](https://www.postgresqltutorial.com/postgresql-create-table/) or a [temporary table](https://www.postgresqltutorial.com/postgresql-temporary-table/)
 
-CREATE \[TEMP\] TABLE \[IF NOT EXISTS\] table\_name( pk SERIAL PRIMARY KEY, c1 type(size) NOT NULL, c2 type(size) NULL, …);
+CREATE \[TEMP\] TABLE \[IF NOT EXISTS\] table_name( pk SERIAL PRIMARY KEY, c1 type(size) NOT NULL, c2 type(size) NULL, …);
 
 [Add a new column](https://www.postgresqltutorial.com/postgresql-add-column/) to a table:
 
-ALTER TABLE table\_name ADD COLUMN new\_column\_name TYPE;
+ALTER TABLE table_name ADD COLUMN new_column_name TYPE;
 
 [Drop a column](https://www.postgresqltutorial.com/postgresql-drop-column/) in a table:
 
-ALTER TABLE table\_name DROP COLUMN column\_name;
+ALTER TABLE table_name DROP COLUMN column_name;
 
 [Rename a column](https://www.postgresqltutorial.com/postgresql-rename-column/):
 
-ALTER TABLE table\_name RENAME column\_name TO new\_column\_name;
+ALTER TABLE table_name RENAME column_name TO new_column_name;
 
 Set or remove a default value for a column:
 
-ALTER TABLE table\_name ALTER COLUMN \[SET DEFAULT value | DROP DEFAULT\]
+ALTER TABLE table_name ALTER COLUMN \[SET DEFAULT value | DROP DEFAULT\]
 
 Add a [primary key](https://www.postgresqltutorial.com/postgresql-primary-key/) to a table.
 
-ALTER TABLE table\_name ADD PRIMARY KEY (column,…);
+ALTER TABLE table_name ADD PRIMARY KEY (column,…);
 
 Remove the primary key from a table.
 
-ALTER TABLE table\_nameDROP CONSTRAINT primary\_key\_constraint\_name;
+ALTER TABLE table_nameDROP CONSTRAINT primary_key_constraint_name;
 
 [Rename a table](https://www.postgresqltutorial.com/postgresql-rename-table/).
 
-ALTER TABLE table\_name RENAME TO new\_table\_name;
+ALTER TABLE table_name RENAME TO new_table_name;
 
 [Drop a table](https://www.postgresqltutorial.com/postgresql-drop-table/) and its dependent objects:
 
-DROP TABLE \[IF EXISTS\] table\_name CASCADE;
+DROP TABLE \[IF EXISTS\] table_name CASCADE;
 
 ### Managing views
 
 [Create a view](https://www.postgresqltutorial.com/managing-postgresql-views/):
 
-CREATE OR REPLACE view\_name ASquery;
+CREATE OR REPLACE view_name ASquery;
 
 [Create a recursive view](https://www.postgresqltutorial.com/postgresql-recursive-view/):
 
-CREATE RECURSIVE VIEW view\_name(column\_list) ASSELECT column\_list;
+CREATE RECURSIVE VIEW view_name(column_list) ASSELECT column_list;
 
 [Create a materialized view](https://www.postgresqltutorial.com/postgresql-materialized-views/):
 
-CREATE MATERIALIZED VIEW view\_nameASqueryWITH \[NO\] DATA;
+CREATE MATERIALIZED VIEW view_nameASqueryWITH \[NO\] DATA;
 
 Refresh a materialized view:
 
-REFRESH MATERIALIZED VIEW CONCURRENTLY view\_name;
+REFRESH MATERIALIZED VIEW CONCURRENTLY view_name;
 
 Drop a view:
 
-DROP VIEW \[ IF EXISTS \] view\_name;
+DROP VIEW \[ IF EXISTS \] view_name;
 
 Drop a materialized view:
 
-DROP MATERIALIZED VIEW view\_name;
+DROP MATERIALIZED VIEW view_name;
 
 Rename a view:
 
-ALTER VIEW view\_name RENAME TO new\_name;
+ALTER VIEW view_name RENAME TO new_name;
 
 ### Managing indexes
 
 Creating an index with the specified name on a table
 
-CREATE \[UNIQUE\] INDEX index\_nameON table (column,…)
+CREATE \[UNIQUE\] INDEX index_nameON table (column,…)
 
 Removing a specified index from a table
 
-DROP INDEX index\_name;
+DROP INDEX index_name;
 
 ### Querying data from tables
 
 Query all data from a table:
 
-SELECT \* FROM table\_name;
+SELECT \* FROM table_name;
 
 Query data from specified columns of all rows in a table:
 
-SELECT column\_listFROM table;
+SELECT column_listFROM table;
 
 Query data and select only unique rows:
 
@@ -15048,43 +15027,43 @@ SELECT \*FROM tableWHERE condition;
 
 Assign an [alias](https://www.postgresqltutorial.com/postgresql-alias/) to a column in the result set:
 
-SELECT column\_1 AS new\_column\_1, …FROM table;
+SELECT column_1 AS new_column_1, …FROM table;
 
 Query data using the `[LIKE](https://www.postgresqltutorial.com/postgresql-like/)` operator:
 
-SELECT \* FROM table\_nameWHERE column LIKE ‘%value%’
+SELECT \* FROM table_nameWHERE column LIKE ‘%value%’
 
 Query data using the `[BETWEEN](https://www.postgresqltutorial.com/postgresql-between/)` operator:
 
-SELECT \* FROM table\_nameWHERE column BETWEEN low AND high;
+SELECT \* FROM table_nameWHERE column BETWEEN low AND high;
 
 Query data using the `[IN](https://www.postgresqltutorial.com/postgresql-in/)` operator:
 
-SELECT \* FROM table\_nameWHERE column IN (value1, value2,…);
+SELECT \* FROM table_nameWHERE column IN (value1, value2,…);
 
 Constrain the returned rows with the `[LIMIT](https://www.postgresqltutorial.com/postgresql-limit/)` clause:
 
-SELECT \* FROM table\_nameLIMIT limit OFFSET offsetORDER BY column\_name;
+SELECT \* FROM table_nameLIMIT limit OFFSET offsetORDER BY column_name;
 
 Query data from multiple using the [inner join](https://www.postgresqltutorial.com/postgresql-inner-join/), [left join](https://www.postgresqltutorial.com/postgresql-left-join/), [full outer join](https://www.postgresqltutorial.com/postgresql-full-outer-join/), [cross join](https://www.postgresqltutorial.com/postgresql-cross-join/) and [natural join](https://www.postgresqltutorial.com/postgresql-natural-join/):
 
-SELECT *FROM table1INNER JOIN table2 ON conditionsSELECT* FROM table1LEFT JOIN table2 ON conditionsSELECT *FROM table1FULL OUTER JOIN table2 ON conditionsSELECT* FROM table1CROSS JOIN table2;SELECT \*FROM table1NATURAL JOIN table2;
+SELECT _FROM table1INNER JOIN table2 ON conditionsSELECT_ FROM table1LEFT JOIN table2 ON conditionsSELECT _FROM table1FULL OUTER JOIN table2 ON conditionsSELECT_ FROM table1CROSS JOIN table2;SELECT \*FROM table1NATURAL JOIN table2;
 
 Return the number of rows of a table.
 
-SELECT COUNT (\*)FROM table\_name;
+SELECT COUNT (\*)FROM table_name;
 
 Sort rows in ascending or descending order:
 
-SELECT select\_listFROM tableORDER BY column ASC \[DESC\], column2 ASC \[DESC\],…;
+SELECT select_listFROM tableORDER BY column ASC \[DESC\], column2 ASC \[DESC\],…;
 
 Group rows using `[GROUP BY](https://www.postgresqltutorial.com/postgresql-group-by/)` clause.
 
-SELECT \*FROM tableGROUP BY column\_1, column\_2, …;
+SELECT \*FROM tableGROUP BY column_1, column_2, …;
 
 Filter groups using the `[HAVING](https://www.postgresqltutorial.com/postgresql-having/)` clause.
 
-SELECT \*FROM tableGROUP BY column\_1HAVING condition;
+SELECT \*FROM tableGROUP BY column_1HAVING condition;
 
 ### Set operations
 
@@ -15104,27 +15083,27 @@ SELECT \* FROM table1INTERSECTSELECT \* FROM table2;
 
 [Insert a new row into a table](https://www.postgresqltutorial.com/postgresql-insert/):
 
-INSERT INTO table(column1,column2,…)VALUES(value\_1,value\_2,…);
+INSERT INTO table(column1,column2,…)VALUES(value_1,value_2,…);
 
 Insert multiple rows into a table:
 
-INSERT INTO table\_name(column1,column2,…)VALUES(value\_1,value\_2,…), (value\_1,value\_2,…), (value\_1,value\_2,…)…
+INSERT INTO table_name(column1,column2,…)VALUES(value_1,value_2,…), (value_1,value_2,…), (value_1,value_2,…)…
 
 [Update](https://www.postgresqltutorial.com/postgresql-update/) data for all rows:
 
-UPDATE table\_nameSET column\_1 = value\_1, …;
+UPDATE table_nameSET column_1 = value_1, …;
 
 Update data for a set of rows specified by a condition in the `WHERE` clause.
 
-UPDATE tableSET column\_1 = value\_1, …WHERE condition;
+UPDATE tableSET column_1 = value_1, …WHERE condition;
 
 [Delete all rows](https://www.postgresqltutorial.com/postgresql-delete/) of a table:
 
-DELETE FROM table\_name;
+DELETE FROM table_name;
 
 Delete specific rows based on a condition:
 
-DELETE FROM table\_nameWHERE condition;
+DELETE FROM table_nameWHERE condition;
 
 ### Performance
 
@@ -15138,15 +15117,15 @@ EXPLAIN ANALYZE query;
 
 Collect statistics:
 
-ANALYZE table\_name;
+ANALYZE table_name;
 
-------------------------------------------------------------------------
+---
 
 ### Postgres & JSON:
 
 ### Creating the DB and the Table
 
-DROP DATABASE IF EXISTS books\_db;CREATE DATABASE books\_db WITH ENCODING=‘UTF8’ TEMPLATE template0;
+DROP DATABASE IF EXISTS books_db;CREATE DATABASE books_db WITH ENCODING=‘UTF8’ TEMPLATE template0;
 
 DROP TABLE IF EXISTS books;
 
@@ -15154,7 +15133,7 @@ CREATE TABLE books ( id SERIAL PRIMARY KEY, client VARCHAR NOT NULL, data JSONb 
 
 ### Populating the DB
 
-INSERT INTO books(client, data) values( ‘Joe’, ‘{ “title”: “Siddhartha”, “author”: { “first\_name”: “Herman”, “last\_name”: “Hesse” } }’ ); INSERT INTO books(client, data) values(‘Jenny’, ‘{ “title”: “Bryan Guner”, “author”: { “first\_name”: “Jack”, “last\_name”: “Kerouac” } }’); INSERT INTO books(client, data) values(‘Jenny’, ‘{ “title”: “100 años de soledad”, “author”: { “first\_name”: “Gabo”, “last\_name”: “Marquéz” } }’);
+INSERT INTO books(client, data) values( ‘Joe’, ‘{ “title”: “Siddhartha”, “author”: { “first_name”: “Herman”, “last_name”: “Hesse” } }’ ); INSERT INTO books(client, data) values(‘Jenny’, ‘{ “title”: “Bryan Guner”, “author”: { “first_name”: “Jack”, “last_name”: “Kerouac” } }’); INSERT INTO books(client, data) values(‘Jenny’, ‘{ “title”: “100 años de soledad”, “author”: { “first_name”: “Gabo”, “last_name”: “Marquéz” } }’);
 
 Lets see everything inside the table books:
 
@@ -15190,7 +15169,7 @@ The `->` operator returns the original JSON type (which might be an object), whe
 
 You can use the `->` to return a nested object and thus chain the operators:
 
-SELECT client, data-&gt;‘author’-&gt;‘last\_name’ AS author FROM books;
+SELECT client, data-&gt;‘author’-&gt;‘last_name’ AS author FROM books;
 
 Output:
 
@@ -15214,7 +15193,7 @@ Output:
 
 Find rows based on the value of a nested JSON object:
 
-SELECT client, data-&gt;‘title’ AS title FROM books WHERE data-&gt;‘author’-&gt;&gt;‘last\_name’ = ‘Kerouac’;
+SELECT client, data-&gt;‘title’ AS title FROM books WHERE data-&gt;‘author’-&gt;&gt;‘last_name’ = ‘Kerouac’;
 
 Output:
 
@@ -15222,7 +15201,7 @@ Output:
 
 ### A real world example
 
-CREATE TABLE events ( name varchar(200), visitor\_id varchar(200), properties json, browser json);
+CREATE TABLE events ( name varchar(200), visitor_id varchar(200), properties json, browser json);
 
 We’re going to store events in this table, like pageviews. Each event has properties, which could be anything (e.g. current page) and also sends information about the browser (like OS, screen resolution, etc). Both of these are completely free form and could change over time (as we think of extra stuff to track).
 
@@ -15282,7 +15261,7 @@ Or Checkout my personal Resource Site:
 
 ![](https://webdevhubcom.files.wordpress.com/2021/03/fe4be-0yjlsk3t9c2_14in1.png)
 
-***Curating Complexity: A Guide to Big-O Notation***
+**_Curating Complexity: A Guide to Big-O Notation_**
 
 -   Why is looking at runtime not a reliable method of calculating time complexity?
 -   Not all computers are made equal( some may be stronger and therefore boost our runtime speed )
@@ -15315,7 +15294,7 @@ Or Checkout my personal Resource Site:
 -   First we apply the product rule to drop all constants.
 -   Then we apply the sum rule to select the single most dominant term.
 
-------------------------------------------------------------------------
+---
 
 ### Complexity Classes
 
@@ -15365,7 +15344,7 @@ Common Complexity Classes
 
 <https://gist.github.com/eengineergz/5dec7e3736d7b5e28a5f1c85b5b50705>
 
-------------------------------------------------------------------------
+---
 
 ### Memoization
 
@@ -15384,7 +15363,7 @@ Common Complexity Classes
 
 <https://gist.github.com/eengineergz/0f92023740a44e3b41a0defb227ade37#file-memoizing-factorial-js>
 
-Our memo object is *mapping* out our arguments of factorial to it’s return value.
+Our memo object is _mapping_ out our arguments of factorial to it’s return value.
 
 -   Keep in mind we didn’t improve the speed of our algorithm.
 
@@ -15396,21 +15375,21 @@ Our memo object is *mapping* out our arguments of factorial to it’s return val
 
 ### The Memoization Formula
 
-> *Rules:*
+> _Rules:_
 
-1.  *Write the unoptimized brute force recursion (make sure it works);*
-2.  *Add memo object as an additional argument .*
-3.  *Add a base case condition that returns the stored value if the function’s argument is in the memo.*
-4.  *Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key.*
+1.  _Write the unoptimized brute force recursion (make sure it works);_
+2.  _Add memo object as an additional argument ._
+3.  _Add a base case condition that returns the stored value if the function’s argument is in the memo._
+4.  _Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key._
 
 #### Things to remember
 
-1.  *When solving DP problems with Memoization, it is helpful to draw out the visual tree first.*
-2.  *When you notice duplicate sub-tree’s that means we can memoize.*
+1.  _When solving DP problems with Memoization, it is helpful to draw out the visual tree first._
+2.  _When you notice duplicate sub-tree’s that means we can memoize._
 
 <https://gist.github.com/eengineergz/c15feb228a51a3543625009c8fd0b6de>
 
-------------------------------------------------------------------------
+---
 
 ### Tabulation
 
@@ -15419,37 +15398,37 @@ Our memo object is *mapping* out our arguments of factorial to it’s return val
 > Use When:
 
 -   **The function is iterative and not recursive.**
--   *The accompanying DS is usually an array.*
+-   _The accompanying DS is usually an array._
 
 <https://gist.github.com/eengineergz/a57bf449f5a8b16eedd1aa9fd71707e2>
 
 #### Steps for tabulation
 
--   *Create a table array based off the size of the input.*
--   *Initialize some values in the table to ‘answer’ the trivially small subproblem.*
--   *Iterate through the array and fill in the remaining entries.*
--   *Your final answer is usually the last entry in the table.*
+-   _Create a table array based off the size of the input._
+-   _Initialize some values in the table to ‘answer’ the trivially small subproblem._
+-   _Iterate through the array and fill in the remaining entries._
+-   _Your final answer is usually the last entry in the table._
 
-------------------------------------------------------------------------
+---
 
 ### Memo and Tab Demo with Fibonacci
 
-> *Normal Recursive Fibonacci*
+> _Normal Recursive Fibonacci_
 
 function fibonacci(n) {  
 if (n &lt;= 2) return 1;  
 return fibonacci(n - 1) + fibonacci(n - 2);  
 }
 
-> *Memoization Fibonacci 1*
+> _Memoization Fibonacci 1_
 
 <https://gist.github.com/eengineergz/504a9120ca40bbb4a246549937c43a12>
 
-> *Memoization Fibonacci 2*
+> _Memoization Fibonacci 2_
 
 <https://gist.github.com/eengineergz/07d315d92b3458a8640cee31bce9c236>
 
-> *Tabulated Fibonacci*
+> _Tabulated Fibonacci_
 
 <https://gist.github.com/eengineergz/b1b1f7e259193ecdc432350b6199f2d3>
 
@@ -15457,10 +15436,10 @@ return fibonacci(n - 1) + fibonacci(n - 2);
 
 <https://gist.github.com/eengineergz/e98354b287ce2f80da4ab943399eb555>
 
--   *Worst Case Scenario: The term does not even exist in the array.*
--   *Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n).*
+-   _Worst Case Scenario: The term does not even exist in the array._
+-   _Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n)._
 
-------------------------------------------------------------------------
+---
 
 ### Sorting Algorithms
 
@@ -15483,16 +15462,16 @@ return fibonacci(n - 1) + fibonacci(n - 2);
 
 > It’s almost never used in production code because:
 
--   *It’s not efficient*
--   *It’s not commonly used*
--   *There is stigma attached to it*
--   `_Bubbling Up_` *: Term that infers that an item is in motion, moving in some direction, and has some final resting destination.*
--   *Bubble sort, sorts an array of integers by bubbling the largest integer to the top.*
+-   _It’s not efficient_
+-   _It’s not commonly used_
+-   _There is stigma attached to it_
+-   `_Bubbling Up_` _: Term that infers that an item is in motion, moving in some direction, and has some final resting destination._
+-   _Bubble sort, sorts an array of integers by bubbling the largest integer to the top._
 
 <https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053><https://gist.github.com/eengineergz/80934783c628c70ac2a5a48119a82d54>
 
--   *Worst Case & Best Case are always the same because it makes nested loops.*
--   *Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)*
+-   _Worst Case & Best Case are always the same because it makes nested loops._
+-   _Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)_
 
 ### Selection Sort
 
@@ -15514,11 +15493,11 @@ return fibonacci(n - 1) + fibonacci(n - 2);
 
 > Summary of how Selection Sort should work:
 
-1.  *Set MIN to location 0*
-2.  *Search the minimum element in the list.*
-3.  *Swap with value at location Min*
-4.  *Increment Min to point to next element.*
-5.  *Repeat until list is sorted.*
+1.  _Set MIN to location 0_
+2.  _Search the minimum element in the list._
+3.  _Swap with value at location Min_
+4.  _Increment Min to point to next element._
+5.  _Repeat until list is sorted._
 
 <https://gist.github.com/eengineergz/61f130c8e0097572ed908fe2629bdee0>
 
@@ -15554,13 +15533,13 @@ return fibonacci(n - 1) + fibonacci(n - 2);
 ![](https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M)
 
 -   **Merge sort is O(nlog(n)) time.**
--   *We need a function for merging and a function for sorting.*
+-   _We need a function for merging and a function for sorting._
 
 > Steps:
 
-1.  *If there is only one element in the list, it is already sorted; return the array.*
-2.  *Otherwise, divide the list recursively into two halves until it can no longer be divided.*
-3.  *Merge the smallest lists into new list in a sorted order.*
+1.  _If there is only one element in the list, it is already sorted; return the array._
+2.  _Otherwise, divide the list recursively into two halves until it can no longer be divided._
+3.  _Merge the smallest lists into new list in a sorted order._
 
 ### Quick Sort
 
@@ -15590,17 +15569,17 @@ return fibonacci(n - 1) + fibonacci(n - 2);
 
 ![](https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali)
 
-> *Recursive Solution*
+> _Recursive Solution_
 
 <https://gist.github.com/eengineergz/c82c00a4bcba4b69b7d326d6cad3ac8c>
 
-> *Min Max Solution*
+> _Min Max Solution_
 
 <https://gist.github.com/eengineergz/eb8d1e1684db15cc2c8af28e13f38751><https://gist.github.com/eengineergz/bc3f576b9795ccef12a108e36f9f820a>
 
--   *Must be conducted on a sorted array.*
--   *Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing.*
--   *Binary Search is part of Divide and Conquer.*
+-   _Must be conducted on a sorted array._
+-   _Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing._
+-   _Binary Search is part of Divide and Conquer._
 
 ### Insertion Sort
 
@@ -15608,12 +15587,12 @@ return fibonacci(n - 1) + fibonacci(n - 2);
 
 > Steps:
 
-1.  *If it is the first element, and it is already sorted; return 1.*
-2.  *Pick next element.*
-3.  *Compare with all elements in the sorted sub list*
-4.  *Shift all the elements in the sorted sub list that is greater than the value to be sorted.*
-5.  *Insert the value*
-6.  *Repeat until list is sorted.*
+1.  _If it is the first element, and it is already sorted; return 1._
+2.  _Pick next element._
+3.  _Compare with all elements in the sorted sub list_
+4.  _Shift all the elements in the sorted sub list that is greater than the value to be sorted._
+5.  _Insert the value_
+6.  _Repeat until list is sorted._
 
 <https://gist.github.com/eengineergz/ffead1de0836c4bcc6445780a604f617>
 

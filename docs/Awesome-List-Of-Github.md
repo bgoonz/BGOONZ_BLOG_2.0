@@ -1,9 +1,8 @@
-Awesome List Of Github Repositories
-===================================
+# Awesome List Of Github Repositories
 
 Platforms
 
-------------------------------------------------------------------------
+---
 
 ### Awesome List Of Github Repositories
 

@@ -1,9 +1,8 @@
-Object Oriented Programming in JavaScript
-=========================================
+# Object Oriented Programming in JavaScript
 
 Object-Oriented Programming
 
-------------------------------------------------------------------------
+---
 
 ### Object Oriented Programming in JavaScript
 
@@ -60,7 +59,7 @@ Object-Oriented Programming
 
 -   <span id="6af3">Method names should be grouped together into granular collections called “interfaces”</span>
 
-#### `The Law Of Demeter`
+#### `The Law Of Demeter`
 
 -   <span id="e90d">Don’t use more than one dot (not counting the one after “this”).</span>
 -   <span id="6cbd">A method of an object can only invoke the methods (or use the properties) of the following kinds of objects: Methods on the object itself Any of the objects passed in as parameters to the method And object created in the method Any values stored in the instance variables of the object Any values stored in global variables</span>
@@ -80,13 +79,13 @@ Object-Oriented Programming
 -   <span id="2d3f">A class should have only one reason to change.</span>
 -   <span id="e277">Gather together the things that change for the same reasons. Separate those things that change for different reasons.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Background:
 
 ### Constructor Functions
 
-Defining a constructor function *Example of an object using object initialization*
+Defining a constructor function _Example of an object using object initialization_
 
     const fellowshipOfTheRing = {
       title: "The Fellowship of the Ring",
@@ -101,9 +100,9 @@ Defining a constructor function *Example of an object using object initializatio
 
 -   <span id="ccb5">`Constructor Functions` : Handle the creation of an object - it's a factory for creating objects of a specific type.</span>
 -   <span id="bdc9">There are a few specific things to constructors worth noting:</span>
--   <span id="6549">***The name of the constructor function is capitalized***</span>
--   <span id="8e61">The Function *does not explicitly return a value*</span>
--   <span id="8d48">Within the body, the *this* keyword references the newly created object</span>
+-   <span id="6549">**_The name of the constructor function is capitalized_**</span>
+-   <span id="8e61">The Function _does not explicitly return a value_</span>
+-   <span id="8d48">Within the body, the _this_ keyword references the newly created object</span>
 
 <!-- -->
 
@@ -133,7 +132,7 @@ Defining a constructor function *Example of an object using object initializatio
 
     console.log(fellowshipOfTheRing); // Book { title: 'The Fellowship of the Ring', ... }
 
-### *Four Things will happen when invoking a constructor function*
+### _Four Things will happen when invoking a constructor function_
 
 1.  <span id="b127">A new empty object is created {};</span>
 2.  <span id="3c79">The new obj’s `prototype` is set to the object referenced by the constructors prototype property.</span>
@@ -150,7 +149,7 @@ Defining a constructor function *Example of an object using object initializatio
     console.log(fellowshipOfTheRing instanceof Book); // true
 
 -   <span id="f5e2">By using the `instanceof` operator we can verify that an object was created from a certain object type.</span>
--   <span id="9d20">*The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator.*</span>
+-   <span id="9d20">_The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator._</span>
 
 ### Invoking a constructor function without the new keyword
 
@@ -163,7 +162,7 @@ Defining a constructor function *Example of an object using object initializatio
 
 ### Defining Sharable Methods
 
--   <span id="0f4e">*Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it’s own method definition.*</span>
+-   <span id="0f4e">_Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it’s own method definition._</span>
 -   <span id="a9e8">`Prototype` : An object that is delegated to when a reference to an object property or method can't be resolved.</span>
 -   <span id="ddc6">Every instance created by a constructor function shares the same prototype.</span>
 -   <span id="ddba">`Object.setPrototypeOf()` and `Object.getPrototypeOf()` are just used to set a prototype of one object to another object; and also the verify a prototype.</span>
@@ -198,7 +197,7 @@ The Problem with Arrow Functions
 -   <span id="6cb0">We cannot use arrow functions when defining methods on a constructor function’s prototype property.</span>
 -   <span id="4f33">Arrow functions don’t include their own this binding; therefore it will not reference the current instance — always stick with the function () keyword.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Putting the Class in JavaScript Classes
 
@@ -290,7 +289,7 @@ Defining Methods
 
     console.log(bookTitles.join(", ")); // The Fellowship of the Ring, The Two Towers
 
--   <span id="133d">If we go back to an example of how constructor functions also use static methods — we see that static methods are *defined directly on the constructor function* — whereas instance methods need to be defined on the *prototype* object.</span>
+-   <span id="133d">If we go back to an example of how constructor functions also use static methods — we see that static methods are *defined directly on the constructor function* — whereas instance methods need to be defined on the _prototype_ object.</span>
 
 <!-- -->
 
@@ -336,9 +335,9 @@ Defining Methods
 
 ### Comparing Classes to Constructor Functions
 
-> *ES2015 Classes are essentially* ***syntactic sugar*** *over traditional constructor functions and prototypes.*
+> _ES2015 Classes are essentially_ **_syntactic sugar_** _over traditional constructor functions and prototypes._
 
-------------------------------------------------------------------------
+---
 
 ### Javascript Inheritance
 
@@ -429,7 +428,7 @@ Overriding a method in a parent class
 
 -   <span id="68fd">We can simply declare our own method of the same name in our child class to override our parent’s version of `getInformation()`</span>
 
-------------------------------------------------------------------------
+---
 
 ### JavaScript Modules
 
@@ -466,7 +465,7 @@ Introducing Node.js modules
 -   <span id="7f81">`Node.js Core`: identifier matches name</span>
 -   <span id="ecfe">`Third-Party`: identifier matches a module in the node modules folder (installed package)</span>
 
-------------------------------------------------------------------------
+---
 
 ### `Encapsulation`
 
@@ -558,7 +557,7 @@ Introducing Node.js modules
 
 -   <span id="4da7">The ability to treat an object as if it were an instance of one of its parent classes.</span>
 
-------------------------------------------------------------------------
+---
 
 ### The SOLID Principles Explained
 
@@ -572,15 +571,15 @@ SOLID is an anagram for:
 
 ### `Single-Responsibility Principle`
 
-> *A class should do one thing and do it well*
+> _A class should do one thing and do it well_
 
 -   <span id="46f7">This principle is about limiting the impact of change.</span>
 
 ### `The Liskov Substitution Principle:`
 
-*Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T. Then ϕ(y) should be true for objects y of type S where S is a subtype of T.*
+_Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T. Then ϕ(y) should be true for objects y of type S where S is a subtype of T._
 
-> *You can substitute child class objects for parent class objects and not cause errors.*
+> _You can substitute child class objects for parent class objects and not cause errors._
 
 `The Other Three`
 
@@ -596,7 +595,7 @@ SOLID is an anagram for:
 ### Controlling Coupling with The Law of Demeter
 
 -   <span id="2e83">`Coupling` : The degree of interdependence between two or more classes.</span>
--   <span id="d484">The fewer the connections between classes, the less chance there is for the *ripple effect*.</span>
+-   <span id="d484">The fewer the connections between classes, the less chance there is for the _ripple effect_.</span>
 -   <span id="dc31">Here is the formal definition:</span>
 -   <span id="61b4">A method of an object can only invoke the methods (or use the properties) of the following kind of objects:</span>
 -   <span id="5733">Methods on the object itself.</span>
@@ -605,7 +604,7 @@ SOLID is an anagram for:
 -   <span id="d8ce">Any values stores in the instance variables of the object.</span>
 -   <span id="ce51">Any values stored in global variables.</span>
 -   <span id="0aba">Law of Demeter is more so of a guideline than a law.</span>
--   <span id="0d36">Easiest way to implement it is to *not us more than one dot*</span>
+-   <span id="0d36">Easiest way to implement it is to _not us more than one dot_</span>
 -   <span id="76ea">You cannot cheat by separating extra calls onto different lines.</span>
 
 ### When to ignore the Law of Demeter

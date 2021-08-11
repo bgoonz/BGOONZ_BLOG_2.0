@@ -1,9 +1,8 @@
-Front End Behavioral Interview
-==============================
+# Front End Behavioral Interview
 
 Web Developer Job Interview Questions
 
-------------------------------------------------------------------------
+---
 
 ### Front End Behavioral Interview
 

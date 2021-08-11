@@ -1,9 +1,8 @@
-Understanding Git (A Beginners Guide Containing Cheat Sheets & Resources)
-=========================================================================
+# Understanding Git (A Beginners Guide Containing Cheat Sheets & Resources)
 
 Basic Git Work Flow.
 
-------------------------------------------------------------------------
+---
 
 ### Understanding Git (A Beginners Guide Containing Cheat Sheets & Resources)
 
@@ -44,7 +43,7 @@ According to the latest <a href="https://insights.stackoverflow.com/survey/2017#
 
 > <a href="#1-the-first-step-is-to-clone-therepo" class="markup--anchor markup--blockquote-anchor"><em>1. The first step is to clone the repo!</em></a>
 
-> <a href="#2-sweet-you-have-the-cloned-repo-in-your-preferred-directory-now-lets-make-your-own-repo-on-github-create-a-new-repository" class="markup--anchor markup--blockquote-anchor"><em>2. Make your own repo</em></a>*.*
+> <a href="#2-sweet-you-have-the-cloned-repo-in-your-preferred-directory-now-lets-make-your-own-repo-on-github-create-a-new-repository" class="markup--anchor markup--blockquote-anchor"><em>2. Make your own repo</em></a>_._
 
 > <a href="#3-next-copy-thegit-link-that-is-on-the-next-page-do-not-do-any-other-steps-on-this-pagethat-is-for-when-you-do-not-clone-arepo" class="markup--anchor markup--blockquote-anchor"><em>3. Next, copy the .git link that is on the next page.</em></a>
 
@@ -110,7 +109,7 @@ According to the latest <a href="https://insights.stackoverflow.com/survey/2017#
 
 ### What’s a repository?
 
-A *repository*, or <a href="https://git-scm.com/" class="markup--anchor markup--p-anchor">Git project</a>, encompasses the entire collection of files and folders associated with a project, along with each file’s revision history. The file history appears as snapshots in time called *commits*, and the commits exist as a linked-list relationship, and can be organized into multiple lines of development called *branches*. Because Git is a DVCS, repositories are self-contained units and anyone who owns a copy of the repository can access the entire codebase and its history. Using the command line or other ease-of-use interfaces, a git repository also allows for: interaction with the history, cloning, creating branches, committing, merging, comparing changes across versions of code, and more.
+A _repository_, or <a href="https://git-scm.com/" class="markup--anchor markup--p-anchor">Git project</a>, encompasses the entire collection of files and folders associated with a project, along with each file’s revision history. The file history appears as snapshots in time called _commits_, and the commits exist as a linked-list relationship, and can be organized into multiple lines of development called _branches_. Because Git is a DVCS, repositories are self-contained units and anyone who owns a copy of the repository can access the entire codebase and its history. Using the command line or other ease-of-use interfaces, a git repository also allows for: interaction with the history, cloning, creating branches, committing, merging, comparing changes across versions of code, and more.
 
 Working in repositories keeps development projects organized and protected. Developers are encouraged to fix bugs, or create fresh features, without fear of derailing mainline development efforts. Git facilitates this through the use of topic branches: lightweight pointers to commits in history that can be easily created and deprecated when no longer needed.
 
@@ -133,9 +132,9 @@ Working in repositories keeps development projects organized and protected. Deve
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*U1qwd0OEBYhcToXYt2i6iA.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*jk3-RTC0rRV_OF931B4Fsg.png" class="graf-image" /></figure>### 3. Next,
 
-***copy the .git link that is on the next page. Do not do any other steps on this page — That is for when you do not clone a repo.***
+**_copy the .git link that is on the next page. Do not do any other steps on this page — That is for when you do not clone a repo._**
 
-------------------------------------------------------------------------
+---
 
 ### These are the commands GitHub provides when you create a new Repo:
 
@@ -188,7 +187,7 @@ OR:
 ### Basic Git Work Flow.
 
 -   <span id="23ce">After making changes to a file and you are ready to commit / push to your repo you can run the following commands:</span>
--   <span id="9934">`git add .` - stages modified files to be committed.</span>
+-   <span id="9934">`git add .` - stages modified files to be committed.</span>
 -   <span id="6ce0">`git status` - displays files that have been modified</span>
 -   <span id="ce65">`git commit -m 'A helpfully commit message'` - commits the changes to your local repo. Get in the habit now of making helpful commit messages</span>
 -   <span id="70ec">`git push` - pushes your local commits to your GitHub repo!</span>
@@ -212,17 +211,17 @@ It’s also important to note that Git is a complex and powerful tool. As such, 
 
 Before you look at any practical examples, let’s talk about how Git works behind the scenes.
 
-Here is your first new word in Git-speak: *repository*, often shortened to *repo*. A Git repo comprises all the source code for a particular project. In the “dark ages” example above, the repo is the first directory you created, where work is saved to, and which acts as the source for code shared to others. Without a repo, Git has nothing to act on.
+Here is your first new word in Git-speak: _repository_, often shortened to _repo_. A Git repo comprises all the source code for a particular project. In the “dark ages” example above, the repo is the first directory you created, where work is saved to, and which acts as the source for code shared to others. Without a repo, Git has nothing to act on.
 
-Git manages your project as a series of *commits*. A commit is a collection of changes grouped towards a shared purpose. By tracking these commits, you can see your project on a timeline instead of only as a finished project:
+Git manages your project as a series of _commits_. A commit is a collection of changes grouped towards a shared purpose. By tracking these commits, you can see your project on a timeline instead of only as a finished project:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*Sc7e8RGGxhoCnMFG8KR6og.png" class="graf-image" /></figure>Notice the notes and seemingly random numbers by each commit? These are referred to as *commit messages* and *commit hashes*, respectively. Git identifies your commits by their hash, a specially-generated series of letters and numbers. You add commit messages to convey meaning and to help humans track your commits, as those hashes aren’t very friendly to read!
 
 A Git hash is 40 characters long, but you only need the first few characters to identify which hash you’re referring to. By default, Git abbreviates hashes to 7 characters. You’ll follow this convention, too.
 
-Git provides a helpful way for us to “alias” a commit in plain English as well. These aliases are called *refs*, short for “references”. A special one that Git creates for all repositories is `HEAD`, which references the most recent commit. You'll learn more about creating your own refs when you learn about "branching".
+Git provides a helpful way for us to “alias” a commit in plain English as well. These aliases are called _refs_, short for “references”. A special one that Git creates for all repositories is `HEAD`, which references the most recent commit. You'll learn more about creating your own refs when you learn about "branching".
 
-Git maintains three separate lists of changes: the *working directory*, the *staging area*, and the *commit history*. The working directory includes all of your in-progress changes, the staging area is reserved for changes you’re ready to commit, and the commit history is made up of changes you’ve already committed. You’ll look more at these three lists soon.
+Git maintains three separate lists of changes: the _working directory_, the _staging area_, and the _commit history_. The working directory includes all of your in-progress changes, the staging area is reserved for changes you’re ready to commit, and the commit history is made up of changes you’ve already committed. You’ll look more at these three lists soon.
 
 Git only cares about changes that are “tracked”. To track a file, you must add it to the commit history. The working directory will always show the changes, even if they aren’t tracked. In the commit history, you’ll only have a history of files that have been formally tracked by your repository.
 
@@ -256,7 +255,7 @@ Adding a file (or files) moves them from Git’s working directory to the stagin
 
 Once you’re happy with your files and have staged them, you’ll use `git commit` to push them into the commit history. It's significantly more work to make changes after a commit, so be sure your files are staged and exactly as you'd like them before running this command. Your default text editor will pop up, and you'll be asked to enter a commit message for this group of changes.
 
-**Heads Up:** You may find yourself in an unfamiliar place! The default text editor for MacOS (and many variants of Linux) is called *Vim*. Vim is a terminal-based text editor you’ll discuss in the near future. It’s visually bare and may just look like terminal text to you! If this happens, don’t worry — just type `:q` and press your "return" key to exit.
+**Heads Up:** You may find yourself in an unfamiliar place! The default text editor for MacOS (and many variants of Linux) is called _Vim_. Vim is a terminal-based text editor you’ll discuss in the near future. It’s visually bare and may just look like terminal text to you! If this happens, don’t worry — just type `:q` and press your "return" key to exit.
 
 You’ll want to ensure that future commit messages open in a more familiar editor. You can run the following commands in your terminal to ensure that Visual Studio Code is your `git commit` editor from now on:
 
@@ -302,15 +301,15 @@ Once you’re happy with the code in the branch you’ve been working on, you’
 
 Following these steps will integrate the commit from `my-changes` over to `master`. Boom! Now you have your `new-file.js` on your default branch.
 
-As you can imagine, branching can get *very* complicated. Your repository’s history may look more like a shrub than a beautiful tree! You’ll discuss advanced merging and other options in an upcoming lesson.
+As you can imagine, branching can get _very_ complicated. Your repository’s history may look more like a shrub than a beautiful tree! You’ll discuss advanced merging and other options in an upcoming lesson.
 
 ### Connect-W-Github
 
 Git can act as a great history tool and source code backup for your local projects, but it can also help you work with a team! Git is classified as a “DVCS”, or “Distributed Version Control System”. This means it has built-in support for managing code both locally and from a distant source.
 
-You can refer to a repository source that’s not local as a *remote*. Your Git repository can have any number of remotes, but you’ll usually only have one. By default you’ll refer to the primary remote of a repo as the `origin`.
+You can refer to a repository source that’s not local as a _remote_. Your Git repository can have any number of remotes, but you’ll usually only have one. By default you’ll refer to the primary remote of a repo as the `origin`.
 
-You can add a remote to an existing repository on your computer, or you can retrieve a repository from a remote source. You can refer to this as *cloning* the repo. Once you have a repository with a remote, you can update your local code from the remote by *pulling* code down, and you can *push* up your own code so others have access to it.
+You can add a remote to an existing repository on your computer, or you can retrieve a repository from a remote source. You can refer to this as _cloning_ the repo. Once you have a repository with a remote, you can update your local code from the remote by _pulling_ code down, and you can _push_ up your own code so others have access to it.
 
 ### I ❤️ Open Source
 
@@ -324,7 +323,7 @@ Let’s look at a typical workflow using Git and GitHub. Imagine it’s your fir
 
 Using the `git clone` command will create a new folder in your current directory named after the repo you're cloning (in this case, `your-codebase`). Inside that folder will be a git repository of your very own, containing the repo's entire commit history.
 
-You’ll likely start on the `master` branch, but remember that this is the default branch and it's unlikely you want to make changes to it. ***Since you're working on a team now, it's important to think of how your changes to the repository might affect others.***
+You’ll likely start on the `master` branch, but remember that this is the default branch and it's unlikely you want to make changes to it. **_Since you're working on a team now, it's important to think of how your changes to the repository might affect others._**
 
 The safest way to make changes is to create a new branch, make your changes there, and then push your branch up to the remote repository for review. You'll use the `git push` command to do this. Let's look at an example:
 
@@ -350,13 +349,13 @@ You now know how to push your changes up, but what about getting the changes you
 
 ### Merging your code on GitHub
 
-If you’re paying close attention, you may have noticed that there’s a missing step in your workflows so far: how do you get your code merged into your default branch? This is done by a process called a *Pull Request*.
+If you’re paying close attention, you may have noticed that there’s a missing step in your workflows so far: how do you get your code merged into your default branch? This is done by a process called a _Pull Request_.
 
 A pull request (or “PR”) is a feature specific to GitHub, not a feature of Git. It’s a safety net to prevent bugs, and it’s a critical part of the collaboration workflow. Here’s a high-level of overview of how it works:
 
 You push your code up to GitHub in its own branch.
 
-You open a pull request against a *base branch*.
+You open a pull request against a _base branch_.
 
 GitHub creates a comparison page just for your code, detailing the changes you’ve made.
 
@@ -384,7 +383,7 @@ Browsing through our code “checkpoints” with `git checkout`
 
 ### Seeing changes in real time
 
-Git is all about change tracking, so it makes sense that it would include a utility for visualizing a set of changes. We refer to a list of differences between two files (or the same file over time) as a *diff*, and we can use `git diff` to visualize diffs in our repo!
+Git is all about change tracking, so it makes sense that it would include a utility for visualizing a set of changes. We refer to a list of differences between two files (or the same file over time) as a _diff_, and we can use `git diff` to visualize diffs in our repo!
 
 When run with no extra options, `git diff` will return any tracked changes in our working directory since the last commit. **Tracked** is a key word here; `git diff` won't show us changes to files that haven't been included in our repo via `git add`. This is helpful for seeing what you've changed before committing! Here's an example of a small change:
 
@@ -420,7 +419,7 @@ You’re also not limited to your current branch — or even your current co
 
 ### Time travel
 
-`git diff` gives us the opportunity to explore our code's current state, but what if we wanted to see its state at a different point in time? We can use *checkout*! `git checkout` lets us take control of our `HEAD` to bounce around our timeline as we please.
+`git diff` gives us the opportunity to explore our code's current state, but what if we wanted to see its state at a different point in time? We can use _checkout_! `git checkout` lets us take control of our `HEAD` to bounce around our timeline as we please.
 
 Remember that `HEAD` is a special Git reference that usually follows the latest commit on our current branch. We can use `git checkout` to point our `HEAD` reference at a different commit, letting us travel to any commit in our repository's history. By reading the commit message and exploring the code at the time of the commit, we can see not only what changed but also why it changed! This can be great for debugging a problem or understanding how an app evolved.
 
@@ -478,7 +477,7 @@ Know when to rebase/reset and when **not** to.
 
 Remember how our commits form a timeline? We can see the state of our project at any point using `git checkout`. What if we want to travel back in time to a point before we caused a new bug or chose a terrible font? `git reset` is the answer!
 
-> *Resetting* involves moving our `HEAD` ref back to a different commit.
+> _Resetting_ involves moving our `HEAD` ref back to a different commit.
 
 No matter how we reset, `HEAD` will move with us. Unlike `git checkout`, this will also destroy intermediate commits. We can use some additional flags to determine how our code changes are handled.
 
@@ -514,7 +513,7 @@ We’ll start with “they’re”:
 
 ### Hard resets
 
-Hard resets are the most dangerous type of reset in Git. Hard resets adjust your `HEAD` ref and *totally destroy any interim code changes*. Poof. Gone forever.
+Hard resets are the most dangerous type of reset in Git. Hard resets adjust your `HEAD` ref and _totally destroy any interim code changes_. Poof. Gone forever.
 
 There are very few good uses for a hard reset, but one is to get yourself out of a tight spot. Let’s say you’ve made a few changes to your repository but you now realize those changes were unnecessary. You’d like to move back in time so that your code looks exactly as it did before any changes were made. `git reset --hard` can take you there.
 
@@ -536,7 +535,7 @@ If your teammate came rushing in to tell you that the boss has changed their min
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*C_Y5Tr_o5BAS1l-3.jpeg" class="graf-image" /></figure>Sometimes we want to change more than a few commits on a linear timeline. What if we want to move multiple commits across branches? `git rebase` is the tool for us!
 
-*Rebasing* involves changing your current branch’s base branch. We might do this if we accidentally started our branch from the wrong commit or if we’d like to incorporate changes from another branch into our own.
+_Rebasing_ involves changing your current branch’s base branch. We might do this if we accidentally started our branch from the wrong commit or if we’d like to incorporate changes from another branch into our own.
 
 > Isn’t that the same as git merge?
 
@@ -568,7 +567,7 @@ These tools can all feel pretty nifty, but be very wary of using them too much! 
 
 There’s a “Golden Rule of Git” you should know that directly relates to both `git reset` and `git rebase`:
 
-***Never change the history of a branch that’s shared with others.***
+**_Never change the history of a branch that’s shared with others._**
 
 That’s it! It’s simple and to the point. If you’re resetting or rebasing your own code and you make a mistake, your worst case scenario is losing your own changes. However, if you start changing the history of code that others have contributed or are relying on, your accidental loss could affect many others!
 
@@ -895,7 +894,7 @@ But this isn’t something that you want to do with public repos.
 
     git push -f
 
-------------------------------------------------------------------------
+---
 
 ### Git Alias Overview
 
@@ -937,13 +936,13 @@ The preceding code example creates a new alias `unstage`. This now enables the i
 
 ### My Default Gitignore:
 
-------------------------------------------------------------------------
+---
 
 ### Troubleshooting Git
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*cFb6UcCGmIcNU1-woncSTA.png" class="graf-image" /></figure>### Here are some tips on troubleshooting and resolving issues with Git.
 
-### Broken pipe errors on `git push`
+### Broken pipe errors on `git push`
 
 ‘Broken pipe’ errors can occur when attempting to push to a remote repository. When pushing you usually see:
 
@@ -983,7 +982,7 @@ Configuring both the client and the server is unnecessary.
     ClientAliveInterval 60
     ClientAliveCountMax 5
 
-### Running a `git repack`
+### Running a `git repack`
 
 **If ‘pack-objects’ type errors are also being displayed**, you can try to run a `git repack` before attempting to push to the remote repository again:
 
@@ -1025,7 +1024,7 @@ Once configured, restart the SSH daemon for the change to take effect.
     # CentOS/RHEL
     sudo service sshd restart
 
-### Timeout during `git push` / `git pull`
+### Timeout during `git push` / `git pull`
 
 If pulling/pushing from/to your repository ends up taking more than 50 seconds, a timeout is issued. It contains a log of the number of operations performed and their respective timings, like the example below:
 
@@ -1050,7 +1049,7 @@ The default value of `http.postBuffer`, 1 MiB, is applied if the setting is not 
 
     git config http.postBuffer 524288000
 
-------------------------------------------------------------------------
+---
 
 ### **Further Reading:**
 

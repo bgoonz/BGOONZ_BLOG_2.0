@@ -1,9 +1,8 @@
-LocalStorage VS SessionStorage
-==============================
+# LocalStorage VS SessionStorage
 
 Web storage objects localStorage and sessionStorage allow to save key/value pairs in the browser.
 
-------------------------------------------------------------------------
+---
 
 ### LocalStorage VS SessionStorage
 

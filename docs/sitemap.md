@@ -1,17 +1,16 @@
-<span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;">Sitemap:</span>
-================================================================================================
+# <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;">Sitemap:</span>
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [HOME](https://bgoonz-blog.netlify.app/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [showcase](https://bgoonz-blog.netlify.app/showcase/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [blog](https://bgoonz-blog.netlify.app/blog/)
 
@@ -23,15 +22,15 @@
 
 ### - \[✅\] [blog/python-resources](https://bgoonz-blog.netlify.app/blog/python-resources/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [docs](https://bgoonz-blog.netlify.app/docs/)
 
 ### - \[✅\] [docs/sitemap](https://bgoonz-blog.netlify.app/docs/sitemap/)
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [docs/about](https://bgoonz-blog.netlify.app/docs/about/)
 
@@ -51,7 +50,7 @@
 
 ### - \[✅\] [docs/about/resume](https://bgoonz-blog.netlify.app/docs/about/resume/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [docs/articles](https://bgoonz-blog.netlify.app/docs/articles/)
 
@@ -77,13 +76,13 @@
 
 ### - \[✅\] [docs/articles/writing-files](https://bgoonz-blog.netlify.app/docs/articles/writing-files/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [docs/faq](https://bgoonz-blog.netlify.app/docs/faq/)
 
 ### - \[✅\] [docs/faq/contact](https://bgoonz-blog.netlify.app/docs/faq/contact/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [docs/interact](https://bgoonz-blog.netlify.app/docs/interact/)
 
@@ -91,7 +90,7 @@
 
 ### - \[✅\] [docs/interact/jupyter-notebooks](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [docs/links/Social](https://bgoonz-blog.netlify.app/docs/links/Social/)
 
@@ -101,7 +100,7 @@
 
 ### - \[✅\] [docs/links/my-websites](https://bgoonz-blog.netlify.app/docs/links/my-websites/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [docs/quick-reference/Emmet](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
 
@@ -113,7 +112,7 @@
 
 ### - \[✅\] [docs/quick-reference/new-repo-instructions](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [docs/react](https://bgoonz-blog.netlify.app/docs/react/)
 
@@ -121,7 +120,7 @@
 
 ### - \[✅\] [docs/react/react2](https://bgoonz-blog.netlify.app/docs/react/react2/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [docs/tools](https://bgoonz-blog.netlify.app/docs/tools/)
 
@@ -133,6 +132,6 @@
 
 ### - \[✅\] [docs/tools/vscode](https://bgoonz-blog.netlify.app/docs/tools/vscode/)
 
-------------------------------------------------------------------------
+---
 
 ### - \[✅\] [notes-template](https://bgoonz-blog.netlify.app/notes-template/)

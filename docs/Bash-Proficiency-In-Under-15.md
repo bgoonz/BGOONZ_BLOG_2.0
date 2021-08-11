@@ -1,15 +1,14 @@
-Bash Proficiency In Under 15 Minutes
-====================================
+# Bash Proficiency In Under 15 Minutes
 
 Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user commands, which are…
 
-------------------------------------------------------------------------
+---
 
 ### Bash Proficiency In Under 15 Minutes
 
 #### Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user commands, which are either directly entered by the user, or which can be read from a file called the shell script or shell program. Shell scripts are interpreted, not compiled. The shell reads commands from the script line per line and searches for those commands on the system while a compiler converts a program into machine readable form, an executable file — which may then be used in a shell script.
 
-------------------------------------------------------------------------
+---
 
 ### LIFE SAVING PROTIP:
 
@@ -17,7 +16,7 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
     #!/bin/bash -x
 
-------------------------------------------------------------------------
+---
 
 > I will go deeper into the explanations behind some of these examples at the bottom of this article.
 
@@ -32,7 +31,7 @@ Cheat sheet and in-depth explanations located below main article contents… The
 <a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb"><strong>What Are Bash Aliases And Why Should You Be Using Them!</strong><br />
 <em>A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for…</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/0*7qlctJzV2Jv3F0cr.gif" class="graf-image" /></figure>### What is Bash?
 
@@ -330,33 +329,33 @@ Redirection
     # append stdout to a file
     echo "hi" >> ls.txt
 
-------------------------------------------------------------------------
+---
 
 ### Update(Utility Commands):
 
-***Find files that have been modified on your system in the past 60 minutes***
+**_Find files that have been modified on your system in the past 60 minutes_**
 
     find / -mmin 60 -type f
 
-***Find all files larger than 20M***
+**_Find all files larger than 20M_**
 
     find / -type f -size +20M
 
-***Find duplicate files (based on MD5 hash)***
+**_Find duplicate files (based on MD5 hash)_**
 
     find -type f -exec md5sum '{}' ';' | sort | uniq --all-repeated=separate -w 33
 
-***Change permission only for files***
+**_Change permission only for files_**
 
     cd /var/www/site && find . -type f -exec chmod 766 {} \;
     cd /var/www/site && find . -type f -exec chmod 664 {} +
 
-***Change permission only for directories***
+**_Change permission only for directories_**
 
     cd /var/www/site && find . -type d -exec chmod g+x {} \;
     cd /var/www/site && find . -type d -exec chmod g+rwx {} +
 
-***Find files and directories for specific user/group***
+**_Find files and directories for specific user/group_**
 
     # User:
     find . -user <username> -print
@@ -366,7 +365,7 @@ Redirection
     find /opt -group <group>
     find /etc -type f -group <group> -iname "*.conf"
 
-***Find files and directories for all without specific user/group***
+**_Find files and directories for all without specific user/group_**
 
     # User:
     find . \! -user <username> -print
@@ -374,7 +373,7 @@ Redirection
     # Group:
     find . \! -group <group>
 
-***Looking for files/directories that only have certain permission***
+**_Looking for files/directories that only have certain permission_**
 
     # User
     find . -user <username> -perm -u+rw # -rw-r--r--
@@ -383,35 +382,35 @@ Redirection
     # Group:
     find /home -type d -group <group> -perm 755 # -rwxr-xr-x
 
-***Delete older files than 60 days***
+**_Delete older files than 60 days_**
 
     find . -type f -mtime +60 -delete
 
-***Recursively remove all empty sub-directories from a directory***
+**_Recursively remove all empty sub-directories from a directory_**
 
     find . -depth  -type d  -empty -exec rmdir {} \;
 
-***How to find all hard links to a file***
+**_How to find all hard links to a file_**
 
     find </path/to/dir> -xdev -samefile filename
 
-***Recursively find the latest modified files***
+**_Recursively find the latest modified files_**
 
     find . -type f -exec stat --format '%Y :%y %n' "{}" \; | sort -nr | cut -d: -f2- | head
 
-***Recursively find/replace of a string with sed***
+**_Recursively find/replace of a string with sed_**
 
     find . -not -path '*/\.git*' -type f -print0 | xargs -0 sed -i 's/foo/bar/g'
 
-***Recursively find/replace of a string in directories and file names***
+**_Recursively find/replace of a string in directories and file names_**
 
     find . -depth -name '*test*' -execdir bash -c 'mv -v "$1" "${1//foo/bar}"' _ {} \;
 
-***Recursively find suid executables***
+**_Recursively find suid executables_**
 
     find / \( -perm -4000 -o -perm -2000 \) -type f -exec ls -la {} \;
 
-------------------------------------------------------------------------
+---
 
 ### Additional learning resources
 
@@ -420,7 +419,7 @@ Redirection
 -   <span id="40a7"><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html" class="markup--anchor markup--li-anchor">TLDP bash programming intro, basic</a></span>
 -   <span id="6515"><a href="http://www.tldp.org/LDP/abs/html/" class="markup--anchor markup--li-anchor">TLDP bash programming intro, advanced</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Here’s My Github & Website … feel free to reach out!
 
@@ -460,7 +459,7 @@ You have no need to declare a variable, just assigning a value to its reference 
 
 ### Hello World! using variables
 
-    #!/bin/bash          
+    #!/bin/bash
                 STR="Hello World!"
                 echo $STR
 
@@ -468,7 +467,7 @@ Line 2 creates a variable called STR and assigns the string “Hello World!” t
 
 ### A very simple backup script (little bit better)
 
-    #!/bin/bash          
+    #!/bin/bash
                OF=/var/my-backup-$(date +%Y%m%d).tgz
                tar -cZf $OF /home/me/
 
@@ -478,16 +477,16 @@ Line 2 creates a variable called STR and assigns the string “Hello World!” t
 
 **examples**:
 
-*echo ls*
+_echo ls_
 
-*echo $(ls)*
+_echo $(ls)_
 
 ### Local variables
 
-Local variables can be created by using the keyword *local*.
+Local variables can be created by using the keyword _local_.
 
     #!/bin/bash
-                    HELLO=Hello 
+                    HELLO=Hello
                     function hello {
                             local HELLO=World
                             echo $HELLO
@@ -503,7 +502,7 @@ Local variables can be created by using the keyword *local*.
                    echo expression evaluated as true
                 fi
 
-*The code to be executed if the expression within braces is true can be found after the ‘then’ word and before ‘fi’ which indicates the end of the conditionally executed code.*
+_The code to be executed if the expression within braces is true can be found after the ‘then’ word and before ‘fi’ which indicates the end of the conditionally executed code._
 
 ### Basic conditional example if .. then … else
 
@@ -527,12 +526,12 @@ Local variables can be created by using the keyword *local*.
 
 ### Loops
 
--   <span id="15f6">***for***</span>
--   <span id="4000">***while***</span>
+-   <span id="15f6">**_for_**</span>
+-   <span id="4000">**_while_**</span>
 
 > (there’s another loop called until but I don’t use it so you can look it up if you’d like)
 
-> ***The until loop is almost equal to the while loop, except that the code is executed while the*** <a href="https://www.cs.fsu.edu/~myers/c++/notes/control1.html" class="markup--anchor markup--blockquote-anchor"><strong><em>control expression</em></strong></a> ***evaluates to false.***
+> **_The until loop is almost equal to the while loop, except that the code is executed while the_** <a href="https://www.cs.fsu.edu/~myers/c++/notes/control1.html" class="markup--anchor markup--blockquote-anchor"><strong><em>control expression</em></strong></a> **_evaluates to false._**
 
 The **for** loop is a little bit different from other programming languages. Basically, it let’s you iterate over a series of ‘words’ within a string.
 
@@ -555,24 +554,24 @@ The **while** executes a piece of code if the control expression is true, and on
 
 ### While
 
-    #!/bin/bash 
+    #!/bin/bash
              COUNTER=0
              while [  $COUNTER -lt 10 ]; do
                  echo The counter is $COUNTER
-                 let COUNTER=COUNTER+1 
+                 let COUNTER=COUNTER+1
              done
 
 ### Functions
 
 As in almost any programming language, you can use functions to group pieces of code in a more logical way or practice the divine art of recursion.
 
-Declaring a function is just a matter of writing function my\_func { my\_code }.
+Declaring a function is just a matter of writing function my_func { my_code }.
 
 Calling a function is just like calling another program, you just write its name.
 
 ### Functions ex.)
 
-    #!/bin/bash 
+    #!/bin/bash
                function quit {
                    exit
                }
@@ -591,13 +590,13 @@ Calling a function is just like calling another program, you just write its name
 
 ### Functions with parameters
 
-    #!/bin/bash 
+    #!/bin/bash
                     function quit {
                        exit
-                    }  
+                    }
                     function e {
-                        echo $1 
-                    }  
+                        echo $1
+                    }
                     e Hello
                     e World
                     quit
@@ -605,7 +604,7 @@ Calling a function is just like calling another program, you just write its name
 
 ### Backup Directory Script:
 
-    #!/bin/bash          
+    #!/bin/bash
                 SRCD="/home/"
                 TGTD="/var/backups/"
                 OF=home-$(date +%Y%m%d).tgz
@@ -747,7 +746,7 @@ CodeDescription`${FOO%suffix}`Remove suffix`${FOO#prefix}`Remove prefix------`${
 
 ### Substrings
 
-ExpressionDescription`${FOO:0:3}`Substring *(position, length)*`${FOO:(-3):3}`Substring from the right
+ExpressionDescription`${FOO:0:3}`Substring _(position, length)_`${FOO:(-3):3}`Substring from the right
 
 ### Length
 
@@ -863,11 +862,11 @@ See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_an
 
 Note that `[[` is actually a command/program that returns either `0` (true) or `1` (false). Any program that obeys the same logic (like all base utils, such as `grep(1)` or `ping(1)`) can be used as condition, see examples.
 
-ConditionDescription`[[ -z STRING ]]`Empty string`[[ -n STRING ]]`Not empty string`[[ STRING == STRING ]]`Equal`[[ STRING != STRING ]]`Not Equal------`[[ NUM -eq NUM ]]`Equal`[[ NUM -ne NUM ]]`Not equal`[[ NUM -lt NUM ]]`Less than`[[ NUM -le NUM ]]`Less than or equal`[[ NUM -gt NUM ]]`Greater than`[[ NUM -ge NUM ]]`Greater than or equal------`[[ STRING =~ STRING ]]`Regexp------`(( NUM < NUM ))`Numeric conditions
+ConditionDescription`[[ -z STRING ]]`Empty string`[[ -n STRING ]]`Not empty string`[[ STRING == STRING ]]`Equal`[[ STRING != STRING ]]`Not Equal------`[[ NUM -eq NUM ]]`Equal`[[ NUM -ne NUM ]]`Not equal`[[ NUM -lt NUM ]]`Less than`[[ NUM -le NUM ]]`Less than or equal`[[ NUM -gt NUM ]]`Greater than`[[ NUM -ge NUM ]]`Greater than or equal------`[[ STRING =~ STRING ]]`Regexp------`(( NUM < NUM ))`Numeric conditions
 
 #### More conditions
 
-ConditionDescription`[[ -o noclobber ]]`If OPTIONNAME is enabled------`[[ ! EXPR ]]`Not`[[ X && Y ]]`And\`\[\[ X
+ConditionDescription`[[ -o noclobber ]]`If OPTIONNAME is enabled------`[[ ! EXPR ]]`Not`[[ X && Y ]]`And\`\[\[ X
 
 ### File conditions
 
@@ -1151,11 +1150,11 @@ See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_an
 
 {: .-one-column}
 
--   <span id="4581"><a href="http://wiki.bash-hackers.org/" class="markup--anchor markup--li-anchor">Bash-hackers wiki</a> *(bash-hackers.org)*</span>
--   <span id="b6a2"><a href="http://wiki.bash-hackers.org/syntax/shellvars" class="markup--anchor markup--li-anchor">Shell vars</a> *(bash-hackers.org)*</span>
--   <span id="a5d4"><a href="https://learnxinyminutes.com/docs/bash/" class="markup--anchor markup--li-anchor">Learn bash in y minutes</a> *(learnxinyminutes.com)*</span>
--   <span id="007b"><a href="http://mywiki.wooledge.org/BashGuide" class="markup--anchor markup--li-anchor">Bash Guide</a> *(mywiki.wooledge.org)*</span>
--   <span id="f2db"><a href="https://www.shellcheck.net/" class="markup--anchor markup--li-anchor">ShellCheck</a> *(shellcheck.net)*</span>
+-   <span id="4581"><a href="http://wiki.bash-hackers.org/" class="markup--anchor markup--li-anchor">Bash-hackers wiki</a> _(bash-hackers.org)_</span>
+-   <span id="b6a2"><a href="http://wiki.bash-hackers.org/syntax/shellvars" class="markup--anchor markup--li-anchor">Shell vars</a> _(bash-hackers.org)_</span>
+-   <span id="a5d4"><a href="https://learnxinyminutes.com/docs/bash/" class="markup--anchor markup--li-anchor">Learn bash in y minutes</a> _(learnxinyminutes.com)_</span>
+-   <span id="007b"><a href="http://mywiki.wooledge.org/BashGuide" class="markup--anchor markup--li-anchor">Bash Guide</a> _(mywiki.wooledge.org)_</span>
+-   <span id="f2db"><a href="https://www.shellcheck.net/" class="markup--anchor markup--li-anchor">ShellCheck</a> _(shellcheck.net)_</span>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 9, 2021](https://medium.com/p/3ec9d4e2e65).
 

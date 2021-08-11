@@ -1,74 +1,98 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>npm.md</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h2 id="introduction-to-npm">Introduction to npm</h2>
-<p><code>npm</code> is the standard package manager for Node.js.</p>
-<p>In January 2017 over 350000 packages were reported being listed in the npm registry, making it the biggest single language code repository on Earth, and you can be sure there is a package for (almost!) everything.</p>
-<p>It started as a way to download and manage dependencies of Node.js packages, but it has since become a tool used also in frontend JavaScript.</p>
-<p>There are many things that <code>npm</code> does.</p>
-<blockquote>
-<p><a href="https://yarnpkg.com/en/"><strong>Yarn</strong></a> is an alternative to npm. Make sure you check it out as well.</p>
-</blockquote>
-<h2 id="downloads">Downloads</h2>
-<p><code>npm</code> manages downloads of dependencies of your project.</p>
-<h3 id="installing-all-dependencies">Installing all dependencies</h3>
-<p>If a project has a <code>package.json</code> file, by running</p>
-<pre><code>npm install</code></pre>
-<p>it will install everything the project needs, in the <code>node_modules</code> folder, creating it if it’s not existing already.</p>
-<h3 id="installing-a-single-package">Installing a single package</h3>
-<p>You can also install a specific package by running</p>
-<pre><code>npm install &lt;package-name&gt;</code></pre>
-<p>Often you’ll see more flags added to this command:</p>
-<ul>
-<li><code>--save</code> installs and adds the entry to the <code>package.json</code> file <em>dependencies</em></li>
-<li><code>--save-dev</code> installs and adds the entry to the <code>package.json</code> file <em>devDependencies</em></li>
-</ul>
-<p>The difference is mainly that devDependencies are usually development tools, like a testing library, while <code>dependencies</code> are bundled with the app in production.</p>
-<h3 id="updating-packages">Updating packages</h3>
-<p>Updating is also made easy, by running</p>
-<pre><code>npm update</code></pre>
-<p><code>npm</code> will check all packages for a newer version that satisfies your versioning constraints.</p>
-<p>You can specify a single package to update as well:</p>
-<pre><code>npm update &lt;package-name&gt;</code></pre>
-<h2 id="versioning">Versioning</h2>
-<p>In addition to plain downloads, <code>npm</code> also manages <strong>versioning</strong>, so you can specify any specific version of a package, or require a version higher or lower than what you need.</p>
-<p>Many times you’ll find that a library is only compatible with a major release of another library.</p>
-<p>Or a bug in the latest release of a lib, still unfixed, is causing an issue.</p>
-<p>Specifying an explicit version of a library also helps to keep everyone on the same exact version of a package, so that the whole team runs the same version until the <code>package.json</code> file is updated.</p>
-<p>In all those cases, versioning helps a lot, and <code>npm</code> follows the semantic versioning (semver) standard.</p>
-<h2 id="running-tasks">Running Tasks</h2>
-<p>The package.json file supports a format for specifying command line tasks that can be run by using</p>
-<pre><code>npm run &lt;task-name&gt;</code></pre>
-<p>For example:</p>
-<pre><code>{
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>npm.md</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="introduction-to-npm">Introduction to npm</h2>
+        <p><code>npm</code> is the standard package manager for Node.js.</p>
+        <p>
+            In January 2017 over 350000 packages were reported being listed in the npm registry, making it the biggest single language code repository on Earth,
+            and you can be sure there is a package for (almost!) everything.
+        </p>
+        <p>It started as a way to download and manage dependencies of Node.js packages, but it has since become a tool used also in frontend JavaScript.</p>
+        <p>There are many things that <code>npm</code> does.</p>
+        <blockquote>
+            <p>
+                <a href="https://yarnpkg.com/en/"><strong>Yarn</strong></a> is an alternative to npm. Make sure you check it out as well.
+            </p>
+        </blockquote>
+        <h2 id="downloads">Downloads</h2>
+        <p><code>npm</code> manages downloads of dependencies of your project.</p>
+        <h3 id="installing-all-dependencies">Installing all dependencies</h3>
+        <p>If a project has a <code>package.json</code> file, by running</p>
+        <pre><code>npm install</code></pre>
+        <p>it will install everything the project needs, in the <code>node_modules</code> folder, creating it if it’s not existing already.</p>
+        <h3 id="installing-a-single-package">Installing a single package</h3>
+        <p>You can also install a specific package by running</p>
+        <pre><code>npm install &lt;package-name&gt;</code></pre>
+        <p>Often you’ll see more flags added to this command:</p>
+        <ul>
+            <li><code>--save</code> installs and adds the entry to the <code>package.json</code> file <em>dependencies</em></li>
+            <li><code>--save-dev</code> installs and adds the entry to the <code>package.json</code> file <em>devDependencies</em></li>
+        </ul>
+        <p>
+            The difference is mainly that devDependencies are usually development tools, like a testing library, while <code>dependencies</code> are bundled
+            with the app in production.
+        </p>
+        <h3 id="updating-packages">Updating packages</h3>
+        <p>Updating is also made easy, by running</p>
+        <pre><code>npm update</code></pre>
+        <p><code>npm</code> will check all packages for a newer version that satisfies your versioning constraints.</p>
+        <p>You can specify a single package to update as well:</p>
+        <pre><code>npm update &lt;package-name&gt;</code></pre>
+        <h2 id="versioning">Versioning</h2>
+        <p>
+            In addition to plain downloads, <code>npm</code> also manages <strong>versioning</strong>, so you can specify any specific version of a package, or
+            require a version higher or lower than what you need.
+        </p>
+        <p>Many times you’ll find that a library is only compatible with a major release of another library.</p>
+        <p>Or a bug in the latest release of a lib, still unfixed, is causing an issue.</p>
+        <p>
+            Specifying an explicit version of a library also helps to keep everyone on the same exact version of a package, so that the whole team runs the same
+            version until the <code>package.json</code> file is updated.
+        </p>
+        <p>In all those cases, versioning helps a lot, and <code>npm</code> follows the semantic versioning (semver) standard.</p>
+        <h2 id="running-tasks">Running Tasks</h2>
+        <p>The package.json file supports a format for specifying command line tasks that can be run by using</p>
+        <pre><code>npm run &lt;task-name&gt;</code></pre>
+        <p>For example:</p>
+        <pre><code>{
     &quot;scripts&quot;: {
         &quot;start-dev&quot;: &quot;node lib/server-development&quot;,
         &quot;start&quot;: &quot;node lib/server-production&quot;
     }
 }</code></pre>
-<p>It’s very common to use this feature to run Webpack:</p>
-<pre><code>{
+        <p>It’s very common to use this feature to run Webpack:</p>
+        <pre><code>{
     &quot;scripts&quot;: {
         &quot;watch&quot;: &quot;webpack --watch --progress --colors --config webpack.conf.js&quot;,
         &quot;dev&quot;: &quot;webpack --progress --colors --config webpack.conf.js&quot;,
         &quot;prod&quot;: &quot;NODE_ENV=production webpack -p --config webpack.conf.js&quot;
     }
 }</code></pre>
-<p>So instead of typing those long commands, which are easy to forget or mistype, you can run</p>
-<pre><code>$ npm run watch
+        <p>So instead of typing those long commands, which are easy to forget or mistype, you can run</p>
+        <pre><code>$ npm run watch
 $ npm run dev
 $ npm run prod</code></pre>
-</body>
+    </body>
 </html>

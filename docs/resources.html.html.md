@@ -1,12 +1,10 @@
-index
-=====
+# index
 
 This appendix is a non-exhaustive list of new syntactic features and methods that were added to JavaScript in ES6. These features are the most commonly used and most helpful.
 
 While this appendix doesn’t cover ES6 classes, we go over the basics while learning about components in the book. In addition, this appendix doesn’t include descriptions of some larger new features like promises and generators. If you’d like more info on those or on any topic below, we encourage you to reference the [Mozilla Developer Network’s website](https://developer.mozilla.org/) (MDN).
 
-Prefer `const` and `let` over `var`
------------------------------------
+## Prefer `const` and `let` over `var`
 
 If you’ve worked with ES5 JavaScript before, you’re likely used to seeing variables declared with `var`:
 
@@ -18,10 +16,9 @@ Use `const` in cases where a variable is never re-assigned. Using `const` makes 
 
 If the variable will be re-assigned, use `let`.
 
-We encourage the use of `const` and `let` instead of `var`. In addition to the restriction introduced by `const`, both `const` and `let` are *block scoped* as opposed to *function scoped*. This scoping can help avoid unexpected bugs.
+We encourage the use of `const` and `let` instead of `var`. In addition to the restriction introduced by `const`, both `const` and `let` are _block scoped_ as opposed to _function scoped_. This scoping can help avoid unexpected bugs.
 
-Arrow functions
----------------
+## Arrow functions
 
 There are three ways to write arrow function bodies. For the examples below, let’s say we have an array of city objects:
 
@@ -90,7 +87,7 @@ The traditional JavaScript function declaration syntax (`function () {}`) will b
 
     jukebox.printSongs();
 
-The method `printSongs()` iterates over `this.songs` with `forEach()`. In this context, `this` is bound to the object (`jukebox`) as expected. However, the anonymous function passed to `forEach()` binds its internal `this` to the global object. As such, `this.printSong(song)` calls the function declared at the top of the example, *not* the method on `jukebox`.
+The method `printSongs()` iterates over `this.songs` with `forEach()`. In this context, `this` is bound to the object (`jukebox`) as expected. However, the anonymous function passed to `forEach()` binds its internal `this` to the global object. As such, `this.printSong(song)` calls the function declared at the top of the example, _not_ the method on `jukebox`.
 
 JavaScript developers have traditionally used workarounds for this behavior, but arrow functions solve the problem by **capturing the `this` value of the enclosing context**. Using an arrow function for `printSongs()` has the expected result:
 
@@ -106,8 +103,7 @@ JavaScript developers have traditionally used workarounds for this behavior, but
 
 For this reason, throughout the book we use arrow functions for all anonymous functions.
 
-Modules
--------
+## Modules
 
 ES6 formally supports modules using the `import`/`export` syntax.
 
@@ -127,7 +123,7 @@ Now, anywhere we wanted to use these functions we could use `import`. We need to
     sayHi();
     sayBye();
 
-Importantly, the function that was *not* exported (`saySomething`) is unavailable outside of the module.
+Importantly, the function that was _not_ exported (`saySomething`) is unavailable outside of the module.
 
 Also note that we supply a **relative path** to `from`, indicating that the ES6 module is a local file as opposed to an npm package.
 
@@ -203,12 +199,11 @@ If you want to play around with the module syntax, check out the folder `code/we
 
 For more reading on ES6 modules, see this article from Mozilla: “[ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)”.
 
-`Object.assign()`
------------------
+## `Object.assign()`
 
 We use `Object.assign()` often throughout the book. We use it in areas where we want to create a modified version of an existing object.
 
-`Object.assign()` accepts any number of objects as arguments. When the function receives two arguments, it *copies* the properties of the second object onto the first, like so:
+`Object.assign()` accepts any number of objects as arguments. When the function receives two arguments, it _copies_ the properties of the second object onto the first, like so:
 
     onst coffee = { };
     const noCream = { cream: false };
@@ -221,8 +216,7 @@ It is idiomatic to pass in three arguments to `Object.assign()`. The first argum
 
 `Object.assign()` is a handy method for working with “immutable” JavaScript objects.
 
-Template literals
------------------
+## Template literals
 
 In ES5 JavaScript, you’d interpolate variables into strings like this:
 
@@ -232,10 +226,9 @@ With ES6 template literals, we can create the same string like this:
 
     const greeting = `Hello, ${user}! It is ${degF} degrees outside.`;
 
-The spread operator (`...`)
----------------------------
+## The spread operator (`...`)
 
-In arrays, the ellipsis `...` operator will *expand* the array that follows into the parent array. The spread operator enables us to succinctly construct new arrays as a composite of existing arrays.
+In arrays, the ellipsis `...` operator will _expand_ the array that follows into the parent array. The spread operator enables us to succinctly construct new arrays as a composite of existing arrays.
 
 Here is an example:
 
@@ -250,8 +243,7 @@ Notice how this is different than if we wrote:
     const d = [ a, b, 7, 8, 9 ];
     console.log(d);
 
-Enhanced object literals
-------------------------
+## Enhanced object literals
 
 In ES5, all objects were required to have explicit key and value declarations:
 
@@ -269,8 +261,7 @@ In ES6, you can use this terser syntax whenever the property name and variable n
 
 Lots of open source libraries use this syntax, so it’s good to be familiar with it. But whether you use it in your own code is a matter of stylistic preference.
 
-Default arguments
------------------
+## Default arguments
 
 With ES6, you can specify a default value for an argument in the case that it is `undefined` when the function is called.
 
@@ -301,8 +292,7 @@ Whenever the argument `b` in the example above is `undefined`, the default argum
 
     divide(14, null);
 
-Destructuring assignments
--------------------------
+## Destructuring assignments
 
 ### For arrays
 

@@ -1,12 +1,10 @@
-➤ Technical Skills­­­
-=====================
+# ➤ Technical Skills­­­
 
 <table style="width:99%;"><colgroup><col style="width: 25%" /><col style="width: 74%" /></colgroup><thead><tr class="header"><th><strong>Programming**</strong> Languages:**</th><th>JavaScript ES-6, NodeJS, React, HTML5, CSS3, SCSS, Bash Shell, Excel, SQL, NoSQL, MATLAB, Python, C++</th></tr></thead><tbody><tr class="odd"><td><strong>Databases:</strong></td><td>PostgreSQL, MongoDB</td></tr><tr class="even"><td><strong>Cloud:</strong></td><td>Docker, AWS, Google App Engine, Netlify, Digital Ocean, Heroku, Azure Cloud Services</td></tr><tr class="odd"><td><strong>OS:</strong></td><td>Linux, Windows (WSL), IOS</td></tr><tr class="even"><td><strong>Agile:</strong></td><td>GitHub, BitBucket, Jira, Confluence</td></tr><tr class="odd"><td><strong>IDEs:</strong></td><td>VSCode, Visual Studio, Atom, Code Blocks, Sublime Text 3, Brackets</td></tr></tbody></table>
 
-------------------------------------------------------------------------
+---
 
-➤ Experience
-============
+# ➤ Experience
 
 <table><thead><tr class="header"><th><strong>Relational Concepts:</strong> Hallandale Beach, FL</th><th>March 2020 - Present</th></tr></thead><tbody><tr class="odd"><td><strong>Front End Web Developer</strong></td><td></td></tr><tr class="even"><td></td><td></td></tr></tbody></table>
 
@@ -32,10 +30,9 @@
 
 <table><thead><tr class="header"><th><strong>Environment:</strong></th><th><strong>Excel, AutoCAD, PowerPoint, Word</strong></th></tr></thead><tbody></tbody></table>
 
-------------------------------------------------------------------------
+---
 
-➤ Education
-===========
+# ➤ Education
 
 <table><thead><tr class="header"><th><strong>B.S. Electrical Engineering, TCNJ,</strong> Ewing NJ</th><th>2014 – 2019</th></tr></thead><tbody></tbody></table>
 

@@ -1,5 +1,4 @@
-➤ Connect with me:
-------------------
+## ➤ Connect with me:
 
 [![email](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![facebook](https://img.icons8.com/color/96/000000/facebook.png)](https://www.facebook.com/bryan.guner/)[![twitter](https://img.icons8.com/color/96/000000/twitter-squared.png)](https://twitter.com/bgooonz)[![youtube](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![instagram](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![pinterest](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/) [![medium](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)[![spotify](https://img.icons8.com/color/96/000000/spotify--v1.png)](https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw)
 

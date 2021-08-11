@@ -12,13 +12,11 @@ Node.js has a unique advantage because millions of frontend developers that writ
 
 In Node.js the new ECMAScript standards can be used without problems, as you don’t have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.
 
-A Vast Number of Libraries
---------------------------
+## A Vast Number of Libraries
 
 npm with its simple structure helped the ecosystem of Node.js proliferate, and now the npm registry hosts over 1,000,000 open source packages you can freely use.
 
-An Example Node.js Application
-------------------------------
+## An Example Node.js Application
 
 The most common example Hello World of Node.js is a web server:
 
@@ -52,8 +50,7 @@ and we close the response, adding the content as an argument to `end()`:
 
     res.end('Hello World\n');
 
-Node.js Frameworks and Tools
-----------------------------
+## Node.js Frameworks and Tools
 
 Node.js is a low-level platform. In order to make things easy and exciting for developers, thousands of libraries were built upon Node.js by the community.
 

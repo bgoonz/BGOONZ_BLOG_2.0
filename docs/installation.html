@@ -1,128 +1,194 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Installation</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<header id="title-block-header">
-<h1 class="title">Installation</h1>
-</header>
-<h1 id="basic-web-development-environment-setup">Basic Web Development Environment Setup</h1>
-<blockquote>
-<p>Windows Subsystem for Linux (WSL) and Ubuntu</p>
-</blockquote>
-<h2 id="windows-subsystem-for-linux-wsl-and-ubuntu">Windows Subsystem for Linux (WSL) and Ubuntu</h2>
-<p><a href="https://bryanguner.medium.com/?source=post_page-----9f36c3f15afe--------------------------------"><img src="https://miro.medium.com/fit/c/96/96/1*ao1cHo7EQ4faDV8YNJwh_Q.png" alt="Bryan Guner" /></a></p>
-<p>‌</p>
-<p><img src="https://miro.medium.com/max/60/0*aqKP1drNHmNm34zz.jpg?q=20" /></p>
-<p><img src="https://miro.medium.com/max/1600/0*aqKP1drNHmNm34zz.jpg" /></p>
-<p>Test if you have Ubuntu installed by typing “Ubuntu” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads <strong>“Ubuntu 20.04 LTS”</strong> with “App” under it, then you have it installed.</p>
-<p>‌</p>
-<ol type="1">
-<li>In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”</li>
-<li>Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu</li>
-<li>In the blue PowerShell window, type the following: <code>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</code></li>
-<li>Restart your computer</li>
-<li>In the application search box in the bottom bar, type “Store” to find the application named “Microsoft Store”</li>
-<li>Click “Microsoft Store”</li>
-<li>Click the “Search” button in the upper-right corner of the window</li>
-<li>Type in “Ubuntu”</li>
-<li>Click “Run Linux on Windows (Get the apps)”</li>
-<li>Click the orange tile labeled <strong>“Ubuntu”</strong> Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu’</li>
-<li>Click “Install”</li>
-<li>After it downloads, click “Launch”</li>
-<li>If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose “Pin to taskbar”</li>
-<li>When prompted to “Enter new UNIX username”, type your first name with no spaces</li>
-<li>When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)</li>
-<li>Confirm your installation by typing the command <code>whoami ‘as in who-am-i'</code>followed by Enter at the prompt (it should print your first name)</li>
-<li>You need to update your packages, so type <code>sudo apt update</code> (if prompted for your password, enter it)</li>
-<li>You need to upgrade your packages, so type <code>sudo apt upgrade</code> (if prompted for your password, enter it)</li>
-</ol>
-<p>Git comes with Ubuntu, so there’s nothing to install. However, you should configure it using the following instructions.</p>
-<p>‌Open an Ubuntu terminal if you don’t have one open already.</p>
-<ol type="1">
-<li>You need to configure Git, so type <code>git config --global user.name "Your Name"</code> with replacing “Your Name” with your real name.</li>
-<li>You need to configure Git, so type <code>git config --global user.email your@email.com</code> with replacing “<a href="mailto:your@email.com">your@email.com</a>” with your real email.</li>
-</ol>
-<p><strong>Note: if you want git to remember your login credentials type:</strong></p>
-<p>$ git config –global credential.helper store</p>
-<p>‌</p>
-<p>Test if you have Chrome installed by typing “Chrome” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads “Chrome” with “App” under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.</p>
-<p>‌</p>
-<ol type="1">
-<li>Open Microsoft Edge, the blue “e” in the task bar, and type in <a href="http://chrome.google.com/">http://chrome.google.com</a>. Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.</li>
-<li>Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.</li>
-</ol>
-<p>Test if you have Node.js installed by opening an Ubuntu terminal and typing <code>node --version</code>. If it reports “Command ‘node’ not found”, then you need to follow these directions.</p>
-<ol type="1">
-<li>In the Ubuntu terminal, type <code>sudo apt update</code> and press Enter</li>
-<li>In the Ubuntu terminal, type <code>sudo apt install build-essential</code> and press Enter</li>
-<li>In the Ubuntu terminal, type <code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</code> and press Enter</li>
-<li>In the Ubuntu terminal, type <code>. ./.bashrc</code> and press Enter</li>
-<li>In the Ubuntu terminal, type <code>nvm install --lts</code> and press Enter</li>
-<li>Confirm that <strong>node</strong> is installed by typing <code>node --version</code> and seeing it print something that is not “Command not found”!</li>
-</ol>
-<p>You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.</p>
-<p>‌In the Ubuntu terminal type: <code>sudo apt install unzip</code> and press Enter</p>
-<p>‌Mocha.js</p>
-<p>Test if you have Mocha.js installed by opening an Ubuntu terminal and typing <code>which mocha</code>. If it prints a path, then you’re good. Otherwise, if it prints nothing, install Mocha.js by typing <code>npm install -g mocha</code>.</p>
-<p>‌</p>
-<p>Ubuntu does not come with Python 3. Install it using the command <code>sudo apt install python3</code>. Test it by typing <code>python3 --version</code> and seeing it print a number.</p>
-<p>‌</p>
-<p>‌</p>
-<p>As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you <strong>close</strong> Visual Studio Code before running those commands in the Ubuntu terminal.</p>
-<p>‌</p>
-<p># Installing build essentials<br />
-sudo apt-get install -y build-essential libssl-dev<br />
-# Nodejs and NVM<br />
-curl -o- <a href="https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh">https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh</a> | bash<br />
-source ~/.profile<br />
-sudo nvm install 7.10.0<br />
-sudo nvm use 7.10.0<br />
-node -v<br />
-#nodemon<br />
-sudo npm install -g nodemon<br />
-sudo npm install -g loopback-cli<br />
-# Forever to run nodejs scripts forever<br />
-sudo npm install forever -g<br />
-# Git - a version control system<br />
-sudo apt-get update<br />
-sudo apt-get install -y git xclip<br />
-# Grunt - an automated task runner<br />
-sudo npm install -g grunt-cli<br />
-# Bower - a dependency manager<br />
-sudo npm install -g bower<br />
-# Yeoman - for generators<br />
-sudo npm install -g yo<br />
-# maven<br />
-sudo apt-get install maven -y<br />
-# Gulp - an automated task runner<br />
-sudo npm install -g gulp-cli<br />
-# Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)<br />
-sudo npm install -g generator-angular-fullstack<br />
-# Vim, Curl, Python - Some random useful stuff<br />
-sudo apt-get install -y vim curl python-software-properties<br />
-sudo apt-get install -y python-dev, python-pip<br />
-sudo apt-get install -y libkrb5-dev<br />
-# Installing JDK and JRE<br />
-sudo apt-get install -y default-jre<br />
-sudo apt-get install -y default-jdk<br />
-# Archive Extractors<br />
-sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller<br />
-# FileZilla - a FTP client<br />
-sudo apt-get install -y filezilla</p>
-<h2 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h2>
-<p><a href="https://gist.github.com/bgoonz">bgoonz’s gists · GitHub</a></p>
-<p>Or Checkout my personal Resource Site:</p>
-<p><a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe">Source</a></p>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>Installation</title>
+        <style type="text/css">
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            span.underline {
+                text-decoration: underline;
+            }
+            div.column {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="title-block-header">
+            <h1 class="title">Installation</h1>
+        </header>
+        <h1 id="basic-web-development-environment-setup">Basic Web Development Environment Setup</h1>
+        <blockquote>
+            <p>Windows Subsystem for Linux (WSL) and Ubuntu</p>
+        </blockquote>
+        <h2 id="windows-subsystem-for-linux-wsl-and-ubuntu">Windows Subsystem for Linux (WSL) and Ubuntu</h2>
+        <p>
+            <a href="https://bryanguner.medium.com/?source=post_page-----9f36c3f15afe--------------------------------"
+                ><img src="https://miro.medium.com/fit/c/96/96/1*ao1cHo7EQ4faDV8YNJwh_Q.png" alt="Bryan Guner"
+            /></a>
+        </p>
+        <p>‌</p>
+        <p><img src="https://miro.medium.com/max/60/0*aqKP1drNHmNm34zz.jpg?q=20" /></p>
+        <p><img src="https://miro.medium.com/max/1600/0*aqKP1drNHmNm34zz.jpg" /></p>
+        <p>
+            Test if you have Ubuntu installed by typing “Ubuntu” in the search box in the bottom app bar that reads “Type here to search”. If you see a search
+            result that reads <strong>“Ubuntu 20.04 LTS”</strong> with “App” under it, then you have it installed.
+        </p>
+        <p>‌</p>
+        <ol type="1">
+            <li>In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”</li>
+            <li>Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu</li>
+            <li>
+                In the blue PowerShell window, type the following:
+                <code>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</code>
+            </li>
+            <li>Restart your computer</li>
+            <li>In the application search box in the bottom bar, type “Store” to find the application named “Microsoft Store”</li>
+            <li>Click “Microsoft Store”</li>
+            <li>Click the “Search” button in the upper-right corner of the window</li>
+            <li>Type in “Ubuntu”</li>
+            <li>Click “Run Linux on Windows (Get the apps)”</li>
+            <li>
+                Click the orange tile labeled <strong>“Ubuntu”</strong> Note that there are 3 versions in the Microsoft Store… you want the one just entitled
+                ‘Ubuntu’
+            </li>
+            <li>Click “Install”</li>
+            <li>After it downloads, click “Launch”</li>
+            <li>
+                If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose “Pin to
+                taskbar”
+            </li>
+            <li>When prompted to “Enter new UNIX username”, type your first name with no spaces</li>
+            <li>When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)</li>
+            <li>
+                Confirm your installation by typing the command <code>whoami ‘as in who-am-i'</code>followed by Enter at the prompt (it should print your first
+                name)
+            </li>
+            <li>You need to update your packages, so type <code>sudo apt update</code> (if prompted for your password, enter it)</li>
+            <li>You need to upgrade your packages, so type <code>sudo apt upgrade</code> (if prompted for your password, enter it)</li>
+        </ol>
+        <p>Git comes with Ubuntu, so there’s nothing to install. However, you should configure it using the following instructions.</p>
+        <p>‌Open an Ubuntu terminal if you don’t have one open already.</p>
+        <ol type="1">
+            <li>You need to configure Git, so type <code>git config --global user.name "Your Name"</code> with replacing “Your Name” with your real name.</li>
+            <li>
+                You need to configure Git, so type <code>git config --global user.email your@email.com</code> with replacing “<a href="mailto:your@email.com"
+                    >your@email.com</a
+                >” with your real email.
+            </li>
+        </ol>
+        <p><strong>Note: if you want git to remember your login credentials type:</strong></p>
+        <p>$ git config –global credential.helper store</p>
+        <p>‌</p>
+        <p>
+            Test if you have Chrome installed by typing “Chrome” in the search box in the bottom app bar that reads “Type here to search”. If you see a search
+            result that reads “Chrome” with “App” under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
+        </p>
+        <p>‌</p>
+        <ol type="1">
+            <li>
+                Open Microsoft Edge, the blue “e” in the task bar, and type in <a href="http://chrome.google.com/">http://chrome.google.com</a>. Click the
+                “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do
+                with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set
+                it as the default browser.
+            </li>
+            <li>Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.</li>
+        </ol>
+        <p>
+            Test if you have Node.js installed by opening an Ubuntu terminal and typing <code>node --version</code>. If it reports “Command ‘node’ not found”,
+            then you need to follow these directions.
+        </p>
+        <ol type="1">
+            <li>In the Ubuntu terminal, type <code>sudo apt update</code> and press Enter</li>
+            <li>In the Ubuntu terminal, type <code>sudo apt install build-essential</code> and press Enter</li>
+            <li>In the Ubuntu terminal, type <code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</code> and press Enter</li>
+            <li>In the Ubuntu terminal, type <code>. ./.bashrc</code> and press Enter</li>
+            <li>In the Ubuntu terminal, type <code>nvm install --lts</code> and press Enter</li>
+            <li>
+                Confirm that <strong>node</strong> is installed by typing <code>node --version</code> and seeing it print something that is not “Command not
+                found”!
+            </li>
+        </ol>
+        <p>
+            You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.
+        </p>
+        <p>‌In the Ubuntu terminal type: <code>sudo apt install unzip</code> and press Enter</p>
+        <p>‌Mocha.js</p>
+        <p>
+            Test if you have Mocha.js installed by opening an Ubuntu terminal and typing <code>which mocha</code>. If it prints a path, then you’re good.
+            Otherwise, if it prints nothing, install Mocha.js by typing <code>npm install -g mocha</code>.
+        </p>
+        <p>‌</p>
+        <p>
+            Ubuntu does not come with Python 3. Install it using the command <code>sudo apt install python3</code>. Test it by typing
+            <code>python3 --version</code> and seeing it print a number.
+        </p>
+        <p>‌</p>
+        <p>‌</p>
+        <p>
+            As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux
+            commands which manipulate files, make sure you <strong>close</strong> Visual Studio Code before running those commands in the Ubuntu terminal.
+        </p>
+        <p>‌</p>
+        <p>
+            # Installing build essentials<br />
+            sudo apt-get install -y build-essential libssl-dev<br />
+            # Nodejs and NVM<br />
+            curl -o-
+            <a href="https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh"
+                >https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh</a
+            >
+            | bash<br />
+            source ~/.profile<br />
+            sudo nvm install 7.10.0<br />
+            sudo nvm use 7.10.0<br />
+            node -v<br />
+            #nodemon<br />
+            sudo npm install -g nodemon<br />
+            sudo npm install -g loopback-cli<br />
+            # Forever to run nodejs scripts forever<br />
+            sudo npm install forever -g<br />
+            # Git - a version control system<br />
+            sudo apt-get update<br />
+            sudo apt-get install -y git xclip<br />
+            # Grunt - an automated task runner<br />
+            sudo npm install -g grunt-cli<br />
+            # Bower - a dependency manager<br />
+            sudo npm install -g bower<br />
+            # Yeoman - for generators<br />
+            sudo npm install -g yo<br />
+            # maven<br />
+            sudo apt-get install maven -y<br />
+            # Gulp - an automated task runner<br />
+            sudo npm install -g gulp-cli<br />
+            # Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)<br />
+            sudo npm install -g generator-angular-fullstack<br />
+            # Vim, Curl, Python - Some random useful stuff<br />
+            sudo apt-get install -y vim curl python-software-properties<br />
+            sudo apt-get install -y python-dev, python-pip<br />
+            sudo apt-get install -y libkrb5-dev<br />
+            # Installing JDK and JRE<br />
+            sudo apt-get install -y default-jre<br />
+            sudo apt-get install -y default-jdk<br />
+            # Archive Extractors<br />
+            sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller<br />
+            # FileZilla - a FTP client<br />
+            sudo apt-get install -y filezilla
+        </p>
+        <h2 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">
+            If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+        </h2>
+        <p><a href="https://gist.github.com/bgoonz">bgoonz’s gists · GitHub</a></p>
+        <p>Or Checkout my personal Resource Site:</p>
+        <p><a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe">Source</a></p>
+    </body>
 </html>

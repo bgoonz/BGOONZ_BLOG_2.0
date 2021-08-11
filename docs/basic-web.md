@@ -1,10 +1,8 @@
-------------------------------------------------------------------------
+---
 
-description: Review
--------------------
+## description: Review
 
-Review-Of-Previous-Concepts
-===========================
+# Review-Of-Previous-Concepts
 
 ### Review of Concepts
 
@@ -70,7 +68,7 @@ Review-Of-Previous-Concepts
                 });
             };
 
-### 
+###
 
 -   Use `...spread` syntax for Object literals and Array literals
 
@@ -277,7 +275,7 @@ Review-Of-Previous-Concepts
 
         },
 
-### 
+###
 
 boundToGlobal: () =&gt; { return this.name; // this function, no matter how you call it, will be called // on the global object, and it cannot be rebound // this is because it was defined using arrow syntax },
 
@@ -414,9 +412,9 @@ boundToGlobal: () =&gt; { return this.name; // this function, no matter how you 
 
     \`\`
 
-### 
+###
 
-### 
+###
 
        - `bind` can also work with arguments, so you can have a version of a function with particular arguments and a particular context. the first arg will be the context aka the `this` you want it to use. the next arguments will be the functions arguments that you are binding
           - if you just want to bind it to those arguments in particular, you can use `null` as the first argument, so the context won't be bound, just the arguments
@@ -462,7 +460,7 @@ boundToGlobal: () =&gt; { return this.name; // this function, no matter how you 
 
 we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 
-### 
+###
 
 let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is not a function
 
@@ -672,7 +670,7 @@ Javascript considers most data types to be ‘primitive’, these data types are
 
     console.log(charCount('aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds'));
 
-### 
+###
 
 ### Review of Concepts
 
@@ -684,7 +682,7 @@ Javascript considers most data types to be ‘primitive’, these data types are
 
 -   `var` is the historical keyword used for variable declaration.
 -   `var` declares variables in function scope, or global scope if not inside a function.
--   We consider `var` to be *deprecated* and it is never used in this course.
+-   We consider `var` to be _deprecated_ and it is never used in this course.
 
     let b = ‘b’;
 
@@ -785,7 +783,7 @@ Identically, we could write
 
     fDAdder([1, 2, 4, 6]);
 
-If we use a *function declaration* style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node.JS and `Window` in your browser).
+If we use a _function declaration_ style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node.JS and `Window` in your browser).
 
     const adder = (arr) => {
         console.log(this);
@@ -793,7 +791,7 @@ If we use a *function declaration* style function, the `this` variable is set to
     };
     adder([1, 2, 4, 6]);
 
-In this example, we use a *fat arrow* style function. Note that when we declare a funciton like this `this` becomes
+In this example, we use a _fat arrow_ style function. Note that when we declare a funciton like this `this` becomes
 
 #### 7. Define a method that references this on an object literal
 

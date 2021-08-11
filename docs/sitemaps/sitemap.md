@@ -104,7 +104,7 @@ bgoonz-blog.netlify.app HTML Site Map
             <!-- -->
 
             -   article-compilation/ <span class="lcount">1 pages</span>
-            -   [This is the title](https://bgoonz-blog.netlify.app/docs/articles/article-compilation/ "This is the title")
+            -   [This is the title](https://bgoonz-blog.netlify.app/docs/articles/article-compilation/ 'This is the title')
 
             <!-- -->
 

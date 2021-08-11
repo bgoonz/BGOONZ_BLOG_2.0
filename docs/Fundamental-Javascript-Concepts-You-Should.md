@@ -1,9 +1,8 @@
-Fundamental Javascript Concepts You Should Understand
-=====================================================
+# Fundamental Javascript Concepts You Should Understand
 
 Plain Old JS Object Lesson Concepts
 
-------------------------------------------------------------------------
+---
 
 ### Fundamental Javascript Concepts You Should Understand
 
@@ -33,7 +32,7 @@ Plain Old JS Object Lesson Concepts
             [a]: "letter b"
         }
 
--   <span id="e4fc">Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object</span>
+-   <span id="e4fc">Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object</span>
 -   <span id="0baa">can also use `(key in object)` syntax interchangeably (returns a boolean)</span>
 -   <span id="ad4c">Utilize Object.keys and Object.values in a function</span>
 -   <span id="b548">`Object.keys(obj)` returns an array of all the keys in `obj`</span>
@@ -860,7 +859,7 @@ In this example, we use a fat arrow style function. Note that when we declare a 
 #### 9. Given a code snippet, identify what `this` refers to
 
     function Person(name) {
-        // this.name = name; 
+        // this.name = name;
         // let that = this;
 
         setTimeout(function() {

@@ -1,9 +1,8 @@
-Express APIs Part 2:
-====================
+# Express APIs Part 2:
 
 Overview
 
-------------------------------------------------------------------------
+---
 
 ### Express APIs Part 2:
 
@@ -31,8 +30,6 @@ Overview
 
     // after the route has been fully configured, we then export it so it can be required where needed
     module.exports = router; // standard convention dictates that this is the last line on the file
-
-  
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Objective 1 — explain the role of a foreign key
 
@@ -76,12 +73,12 @@ There are different types of joins; some are listed below:
 -   <span id="6716">non-equality joins.</span>
 -   <span id="b7f0">self joins.</span>
 
-Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a *departments* table has an *id* field, and an employee table has a *department\_id* field, and the values that exist in the *id* column of the *departments* table live in the *department\_id* field of the employee table, we can use those fields to join both tables like so:
+Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department_id_ field of the employee table, we can use those fields to join both tables like so:
 
     select * from employees
     join departments on employees.department_id = departments.id
 
-This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments *table, then that record will NOT be returned. In a similar fashion, any records from the* departments *table that don't have an employee associated with them will also be omitted from the results. Basically, if the* id\* does not show as the value of department\_id for an employee, it won't be able to join.
+This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department_id for an employee, it won't be able to join.
 
 We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:
 
@@ -224,9 +221,9 @@ Output:
 
 **Key points to remember:**
 
-*Click on the following to get the slides presentation -*
+_Click on the following to get the slides presentation -_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*lP_nQo6VtVu_68nx.png" class="graf-image" /></figure>###  
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*lP_nQo6VtVu_68nx.png" class="graf-image" /></figure>###
 
 **Practice SQL Exercises**
 
@@ -347,21 +344,7 @@ Once all methods are written as desired, we can export them like so:
 
 There should no be `knex` code in the endpoints themselves.
 
-  
-
-  
-
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>  
-
-  
-
-  
-
-  
-
-  
-
-  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### A database is a collection of data organized for easy retrieval and manipulation.
 
@@ -377,7 +360,7 @@ A familiar example of non-persistent data would be JavaScript objects and arrays
 
 In relational databases, **the data is stored in tabular format grouped into rows and columns** (similar to spreadsheets). A collection of rows is called a table. Each row represents a single record in the table and is made up of one or more columns.
 
-These kinds of databases are relational because a *relation* is a mathematical idea equivalent to a table. So relational databases are databases that store their data in tables.
+These kinds of databases are relational because a _relation_ is a mathematical idea equivalent to a table. So relational databases are databases that store their data in tables.
 
 ### Tables
 
@@ -415,7 +398,7 @@ When learning SQL, it is helpful to understand that each command is designed for
 
 As a developer, you’ll need to get familiar with DDL and become proficient using DML and DQL. This lesson will cover only DML and DQL commands.
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>The four SQL operations covered in this section will allow a user to **query**, **insert**, and **modify** a database table.
 
@@ -466,7 +449,7 @@ The basic syntax for a `DELETE` statement is:
 
     delete from <table name> where <condition>;
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Filtering results using WHERE clause
 
@@ -520,7 +503,7 @@ Some SQL engines also support using field abbreviations when sorting.
 
     select name, salary, department from employees order by 3, 2 desc;
 
-In this case, the results are sorted by the department in ascending order first and then by salary in descending order. The numbers refer to the fields’ position in the *selection* portion of the query, so `1` would be *name*, `2` would be *salary*, and so on.
+In this case, the results are sorted by the department in ascending order first and then by salary in descending order. The numbers refer to the fields’ position in the _selection_ portion of the query, so `1` would be _name_, `2` would be _salary_, and so on.
 
 Note that the `WHERE` clause should come after the `FROM` clause. The `ORDER BY` clause always goes last.
 
@@ -571,7 +554,7 @@ When removing a record or set of records, we need only identify which record(s) 
 
 Once again, the `WHERE` clause is not required, but leaving it off would remove every record in the table, so it's essential.
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>Raw SQL is a critical baseline skill. However, Node developers generally use an **Object Relational Mapper (ORM)** or **query builder** to write database commands in a backend codebase. Both **ORMs** and **query builders** are JavaScript libraries that allow us to interface with the database using a JavaScript version of the SQL language.
 
@@ -587,7 +570,7 @@ We could use a query builder to write the same logic in JavaScript:
 
 We will use a **query builder** called <a href="https://knexjs.org/" class="markup--anchor markup--p-anchor">knex.js (Links to an external site.)</a>.
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Knex Setup
 
@@ -696,19 +679,13 @@ In Knex, the equivalent of `DELETE FROM users WHERE age=33;` is:
 
 Once again, the `where` must come before the `del`. This method will resolve to a count of records removed.
 
-------------------------------------------------------------------------
+---
 
-###  
+###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>###  
-
-  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>###
 
 ### Here’s a small project you can practice with.
-
-  
-
-  
 
 SQLlite Studio is an application that allows us to create, open, view, and modify SQLite databases. To fully understand what SQLite Studio is and how it works, we must also understand the concept of the Database Management Systems (DBMS).
 
@@ -728,7 +705,7 @@ In other words, you can expect `SELECT`, `UPDATE`, `INSERT`, `WHERE` , and the 
 
 SQLite allows us to store databases as single files. SQLite projects have a `.db3` extension. That is the database.
 
-SQLite is *not a database* (like relational, graph, or document are databases) but rather *a database management system*.
+SQLite is _not a database_ (like relational, graph, or document are databases) but rather _a database management system_.
 
 ### Opening an existing database in SQLite Studio
 
@@ -738,7 +715,7 @@ Once installed, we can use SQLite Studio to open any `.db3` file from a previou
 
 For a more detailed look at SQLite Studio, follow along in the video above.
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>A **database schema** is the shape of our database. It defines what tables we’ll have, which columns should exist within the tables and any restrictions on each column.
 
@@ -746,7 +723,7 @@ A well-designed database schema keeps the data well organized and can help ensur
 
 Note that while schema design is usually left to Database Administrators (DBAs), understanding schema helps when designing APIs and database logic. And in a smaller team, this step may fall on the developer.
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>For a look at schema design in SQLite Studio, follow along in the video above.
 
@@ -789,11 +766,9 @@ Beyond datatypes, we may add additional **constraints** on each field. Some exam
 
 As with data types, any data that does not satisfy the schema constraints will be rejected from the database.
 
-###  
+###
 
-###  
-
-  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Multi-Table Design
 
@@ -805,7 +780,7 @@ When a schema needs to be updated, a developer must feel confident that the chan
 
 A `database migration` describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Knex Cli
 
@@ -948,7 +923,7 @@ When a schema needs to be updated, a developer must feel confident that the chan
 
 A `database migration` describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Knex Cli
 
@@ -1137,15 +1112,15 @@ Run the seed files by typing:
 
 You can now use SQLite Studio to confirm that the accounts table has two entries.
 
-------------------------------------------------------------------------
+---
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### SQL & PostgreSQL
 
 **Foreign keys** are a type of table field used for creating links between tables. Like **primary keys**, they are most often integers that identify (rather than store) data. However, whereas a primary key is used to id rows in a table, foreign keys are used to connect a record in one table to a record in a second table.
 
-###  
+###
 
 Consider the following `farms` and `ranchers` tables.
 
@@ -1173,12 +1148,12 @@ There are different types of joins; some are listed below:
 -   <span id="eb21">non-equality joins.</span>
 -   <span id="fc6a">self joins.</span>
 
-Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a *departments* table has an *id* field, and an employee table has a *department\_id* field, and the values that exist in the *id* column of the *departments* table live in the *department\_id* field of the employee table, we can use those fields to join both tables like so:
+Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department_id_ field of the employee table, we can use those fields to join both tables like so:
 
     select * from employees
     join departments on employees.department_id = departments.id
 
-This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments *table, then that record will NOT be returned. In a similar fashion, any records from the* departments *table that don't have an employee associated with them will also be omitted from the results. Basically, if the* id\* does not show as the value of department\_id for an employee, it won't be able to join.
+This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department_id for an employee, it won't be able to join.
 
 We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:
 
@@ -1373,17 +1348,17 @@ Once all methods are written as desired, we can export them like so:
 
 There should no be `knex` code in the endpoints themselves.
 
-------------------------------------------------------------------------
+---
 
-###  
+###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>###  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>###
 
 `Normalization` is the process of designing or refactoring database tables for maximum consistency and minimum redundancy.
 
-With objects, we’re used to *denormalized* data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.
+With objects, we’re used to _denormalized_ data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.
 
-###  
+###
 
 **Data normalization** is a deep topic in database design. To begin thinking about it, we’ll explore a few basic guidelines and some data examples that violate these rules.
 
@@ -1425,13 +1400,13 @@ Similarly, if Beech Ranch shut down, there would be three (if not more) records 
 
 Thus a denormalized table opens the door for contradictory, confusing, and unusable data.
 
-###  
+###
 
 What issues does the following table have?
 
 <a href="https://www.notion.so/2793e8f6b70a47f48f9208779366e69e" class="markup--anchor markup--p-anchor">Untitled</a>
 
-###  
+###
 
 There are three types of relationships:
 
@@ -1443,7 +1418,7 @@ There are three types of relationships:
 
 Determining how data is related can provide a set of guidelines for table representation and guides the use of foreign keys to connect said tables.
 
-###  
+###
 
 ### One to One Relationships
 
@@ -1465,7 +1440,7 @@ Notes about one-to-one relationships:
 
 -   <span id="198d">The foreign key should always have a `unique` constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.</span>
 -   <span id="25c6">The foreign key can be in either table. For example, we may have had a `projection_id` in the `farms` table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.</span>
--   <span id="960d">You can represent one-to-one data in a single table *without* creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.</span>
+-   <span id="960d">You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.</span>
 
 ### One to Many Relationships
 
@@ -1485,7 +1460,7 @@ Manage this type of relationship by adding a foreign key on the “many” table
 
 <a href="https://www.notion.so/c95f3d418db94ab4b4532eeba0e4f918" class="markup--anchor markup--p-anchor">Untitled</a>
 
-In a many-to-many relationship, the foreign key (in this case `farm_id`) should *not* be unique.
+In a many-to-many relationship, the foreign key (in this case `farm_id`) should _not_ be unique.
 
 ### Many to Many Relationships
 
@@ -1506,13 +1481,13 @@ To model this relationship, we need to introduce an **intermediary table** that 
 
 While each foreign key on the intermediary table is not unique, the combinations of keys should be unique.
 
-###  
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>The Knex query builder library also allows us to create multi-table schemas include foreign keys. However, there are a few extra things to keep in mind when designing a multi-table schema, such as using the correct order when creating tables, dropping tables, seeding data, and removing data.
 
 We have to consider the way that `delete` and `updates` through our API will impact related data.
 
-###  
+###
 
 ### Foreign Key Setup
 
@@ -1558,9 +1533,9 @@ Let’s look at how we might track our `farms` and `ranchers` using Knex. In our
         })
     };
 
-Note that the foreign key can only be created *after* the reference table.
+Note that the foreign key can only be created _after_ the reference table.
 
-In the down function, the opposite is true. We always want to drop a table with a foreign key *before* dropping the table it references.
+In the down function, the opposite is true. We always want to drop a table with a foreign key _before_ dropping the table it references.
 
     exports.down = function(knex, Promise) {
       // drop in the opposite order
@@ -1596,7 +1571,7 @@ Order is also a concern when seeding. We want to create seeds in the **same** or
 
 In our example, make sure to write the `01-farms` seed file and then the `02-ranchers` seed file.
 
-However, we run into a problem with truncating our seeds, because we want to truncate `02-ranchers` *before* `01-farms`. A library called `knex-cleaner` provides an easy solution for us.
+However, we run into a problem with truncating our seeds, because we want to truncate `02-ranchers` _before_ `01-farms`. A library called `knex-cleaner` provides an easy solution for us.
 
 Run `knex seed:make 00-cleanup` and `npm install knex-cleaner`. Inside the cleanup seed, use the following code.
 
@@ -1629,21 +1604,13 @@ If we want that to override this default, we can delete or update with **cascade
         .onDelete('CASCADE')
     })
 
-  
-
-  
-
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>  
-
-  
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>
 
 <a href="https://expressjs.com/en/starter/basic-routing.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/starter/basic-routing.html"><strong>Express basic routing</strong><br />
 <em>Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI…</em>expressjs.com</a><a href="https://expressjs.com/en/starter/basic-routing.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://expressjs.com/en/guide/writing-middleware.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/guide/writing-middleware.html"><strong>Writing middleware for use in Express apps</strong><br />
 <em>Middleware functions are functions that have access to the request object ( req), the response object ( res), and the…</em>expressjs.com</a><a href="https://expressjs.com/en/guide/writing-middleware.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
-  
 
 [View original.](https://medium.com/p/d9edbf68cf9a)
 

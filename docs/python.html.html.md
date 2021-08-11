@@ -1,7 +1,6 @@
 2021-06-03
 
-Beginners Guide To Python[**Basic Web Development Environment Setup** *Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web** *Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)
-========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+# Beginners Guide To Python[**Basic Web Development Environment Setup** *Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web** *Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
@@ -59,7 +58,7 @@ python –version
 
 If you use pip, you can install it with:
 
-If installing using pip install –user, you must add the user-level bin directory to your PATH environment variable in order to launch jupyter lab. If you are using a Unix derivative (FreeBSD, GNU / Linux, OS X), you can achieve this by using export PATH=“<span class="math inline">*HOME*/.*local*/*bin*:</span>PATH” command.
+If installing using pip install –user, you must add the user-level bin directory to your PATH environment variable in order to launch jupyter lab. If you are using a Unix derivative (FreeBSD, GNU / Linux, OS X), you can achieve this by using export PATH=“<span class="math inline">_HOME_/._local_/_bin_:</span>PATH” command.
 
 ### pipenv
 
@@ -81,7 +80,7 @@ Python syntax was made for readability, and easy editing. For example, the pytho
 
 Lets create a [python 3](https://repl.it/languages/python3) repl, and call it *Hello World*. Now you have a blank file called *main.py*. Now let us write our first line of code:
 
-> *Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.*
+> _Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards._
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -121,15 +120,15 @@ There are many operators in python:
 
 -   \* These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton. Now, we can look at a few more complicated ones:
 
-*simpleops.py*
+_simpleops.py_
 
 You should already know everything shown above, as it is similar to other languages. If you continue down, you will see more complicated ones.
 
-*complexop.py*
+_complexop.py_
 
 The ones above are to edit the current value of the variable. Sorry to JS users, as there is no i++; or anything.
 
-### *Fun Fact: The python language was named after Monty Python.*
+### _Fun Fact: The python language was named after Monty Python._
 
 If you really want to know about the others, view [Py Operators](https://www.tutorialspoint.com/python/python_basic_operators.htm)
 
@@ -137,9 +136,9 @@ If you really want to know about the others, view [Py Operators](https://www.tu
 
 Like the title? Anyways, a ’ and a " both indicate a string, but **do not combine them!**
 
-*quotes.py*
+_quotes.py_
 
-*slicing.py*
+_slicing.py_
 
 ### String Slicing
 
@@ -165,25 +164,25 @@ Here is a list of functions/methods we will go over:
 
 Input is a function that gathers input entered from the user in the command line. It takes one optional parameter, which is the users prompt.
 
-*inp.py*
+_inp.py_
 
 If you wanted to make it smaller, and look neater to the user, you could do…
 
-*inp2.py*
+_inp2.py_
 
-Running: *inp.py*
+Running: _inp.py_
 
-*inp2.py*
+_inp2.py_
 
 ### New: Importing Modules
 
 Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write input &lt;modulename&gt;. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
 
-*module.py*
+_module.py_
 
 Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do &lt;module&gt;.&lt;function&gt;. For example:
 
-*module2.py*
+_module2.py_
 
 > \*Pro Tip: Do from random import randint to not have to do random.randint(), just randint() To import all functions from a module, you could do from random import \*\*
 
@@ -195,11 +194,11 @@ Loops allow you to repeat code over and over again. This is useful if you want t
 
 The for loop goes through a list of variables, making a seperate variable equal one of the list every time. Let’s say we wanted to create the example above.
 
-*loop.py*
+_loop.py_
 
 This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
 
-*loop2.py*
+_loop2.py_
 
 <a href="https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn" class="uri">https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn</a>
 
@@ -207,25 +206,25 @@ This will print Hello with a .3 second delay 100 times. This is just one way to
 
 The while loop runs the code while something stays true. You would put while &lt;expression&gt;. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:
 
-*while.py*
+_while.py_
 
 Or you could do:
 
-*while2.py*
+_while2.py_
 
 ### New: if Statement
 
 The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes **only once**. An if statement is written:
 
-*if.py*
+_if.py_
 
 Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an elif statement:
 
-*elif.py*
+_elif.py_
 
 Now, you may wonder how to run code if none work. Well, there is a simple statement called else:
 
-*else.py*
+_else.py_
 
 ### New: Functions (def)
 
@@ -233,13 +232,13 @@ So far, you have only seen how to use functions other people have made. Let use 
 
 Characters: 389
 
-*nofunc.py*
+_nofunc.py_
 
 Now with functions, you can seriously lower the amount of characters:
 
 Characters: 254
 
-*functions.py*
+_functions.py_
 
 ### Project Based Learning:
 

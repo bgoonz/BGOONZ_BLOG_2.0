@@ -1,9 +1,8 @@
-10 Essential React Interview Questions For Aspiring Frontend Developers
-=======================================================================
+# 10 Essential React Interview Questions For Aspiring Frontend Developers
 
 Comprehensive React Cheatsheet included at the bottom of this article!
 
-------------------------------------------------------------------------
+---
 
 ### 10 Essential React Interview Questions For Aspiring Frontend Developers
 
@@ -31,7 +30,7 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*t3UQh848ndt4rgr_fDToaw.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*39weCjnVdDf0Kuzj" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>### Beginning of the Article:
 
@@ -66,9 +65,9 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 React uses a **Virtual DOM**, which is essentially a tree of JavaScript objects representing the actual browser DOM. The advantage of using this for the developers is that they don’t manipulate the DOM directly as developers do with jQuery when they write React apps. Instead, they would tell React how they want the DOM to make changes to the state object and allow React to make the necessary updates to the browser DOM. This helps create a comprehensive development model for developers as they don’t need to track all DOM changes. They can modify the state object, and React would use its algorithms to understand what part of UI changed compared to the previous DOM. Using this information updates the actual browser DOM. Virtual DOM provides an excellent API for creating UI and minimizes the update count to be made on the browser DOM.
 
-However, it is **not faster** than the actual DOM. You just read that it needs to pull extra strings to figure out what part of UI needs to be updated before actually performing those updates. Hence, Virtual DOM is beneficial for many things, but it ***isn’t faster than DOM.***
+However, it is **not faster** than the actual DOM. You just read that it needs to pull extra strings to figure out what part of UI needs to be updated before actually performing those updates. Hence, Virtual DOM is beneficial for many things, but it **_isn’t faster than DOM._**
 
-------------------------------------------------------------------------
+---
 
 ### **1. Explain how React uses a tree data structure called the virtual DOM to model the DOM**
 
@@ -90,7 +89,7 @@ However, it is **not faster** than the actual DOM. You just read that it needs t
 
 ### **5. Use the** `ReactDOM.render` **method to have React render your virtual DOM nodes under an actual DOM node**
 
-------------------------------------------------------------------------
+---
 
 ### **6. Attach an event listener to an actual DOM node using a virtual node**
 
@@ -243,7 +242,7 @@ a. Import the react-router-dom package:
 1.  <span id="46f3">Above you import your BrowserRouter with which you can wrap your entire route hierarchy. This makes routing information from React Router available to all its descendent components.</span>
 2.  <span id="f675">Then in the component of your choosing, usually top tier such as App.js, you can create your routes using the Route and Switch Components</span>
 
-------------------------------------------------------------------------
+---
 
 ### Discover More:
 
@@ -252,7 +251,7 @@ a. Import the react-router-dom package:
 
 ### REACT CHEAT SHEET:
 
-*More content at* <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
+_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 11, 2021](https://medium.com/p/cbaafb31765d).
 
