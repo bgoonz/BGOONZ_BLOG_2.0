@@ -42,7 +42,7 @@ Git comes with Ubuntu, so there’s nothing to install. However, you should conf
 ‌Open an Ubuntu terminal if you don’t have one open already.
 
 1.  You need to configure Git, so type `git config --global user.name "Your Name"` with replacing “Your Name” with your real name.
-2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing “<your@email.com>” with your real email.
+2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing “<a href="mailto:your@email.com" class="email">your@email.com</a>” with your real email.
 
 **Note: if you want git to remember your login credentials type:**
 
@@ -89,7 +89,7 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
 \# Installing build essentials  
 sudo apt-get install -y build-essential libssl-dev  
 \# Nodejs and NVM  
-curl -o- <https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh> | bash  
+curl -o- <a href="https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh" class="uri">https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh</a> | bash  
 source ~/.profile  
 sudo nvm install 7.10.0  
 sudo nvm use 7.10.0  

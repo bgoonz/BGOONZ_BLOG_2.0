@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Fetch Quick Sheet</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Fetch Quick Sheet</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Fetch
+</section>
+<section data-field="body" class="e-content">
+<section name="590e" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="2ddb" id="2ddb" class="graf graf--h3 graf--leading graf--title">Fetch Quick Sheet</h3><h3 name="ae4f" id="ae4f" class="graf graf--h3 graf-after--h3">Fetch</h3><pre name="c99e" id="c99e" class="graf graf--pre graf-after--h3"><code class="markup--code markup--pre-code">fetch(&#39;/data.json&#39;)<br>  .then(response =&gt; response.json())<br>  .then(data =&gt; {<br>    console.log(data)<br>  })<br>  .catch(err =&gt; ...)</code></pre><h3 name="86c8" id="86c8" class="graf graf--h3 graf-after--pre">Response</h3><pre name="5772" id="5772" class="graf graf--pre graf-after--h3"><code class="markup--code markup--pre-code">fetch(&#39;/data.json&#39;)<br>.then(res =&gt; {<br>  res.text()       // response body (=&gt; Promise)<br>  res.json()       // parse via JSON (=&gt; Promise)<br>  res.status       //=&gt; 200<br>  res.statusText   //=&gt; &#39;OK&#39;<br>  res.redirected   //=&gt; false<br>  res.ok           //=&gt; true<br>  res.url          //=&gt; &#39;http://site.com/data.json&#39;<br>  res.type         //=&gt; &#39;basic&#39;<br>                   //   (&#39;cors&#39; &#39;default&#39; &#39;error&#39;<br>                   //    &#39;opaque&#39; &#39;opaqueredirect&#39;)</code></pre><pre name="b9f9" id="b9f9" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">  res.headers.get(&#39;Content-Type&#39;)<br>})</code></pre><h3 name="1cfc" id="1cfc" class="graf graf--h3 graf-after--pre">Request options</h3><pre name="b9f8" id="b9f8" class="graf graf--pre graf-after--h3"><code class="markup--code markup--pre-code">fetch(&#39;/data.json&#39;, {<br>  method: &#39;post&#39;,<br>  body: new FormData(form), // post body<br>  body: JSON.stringify(...),</code></pre><pre name="3541" id="3541" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">  headers: {<br>    &#39;Accept&#39;: &#39;application/json&#39;<br>  },</code></pre><pre name="8338" id="8338" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">  credentials: &#39;same-origin&#39;, // send cookies<br>  credentials: &#39;include&#39;,     // send cookies, even in CORS</code></pre><pre name="d367" id="d367" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">})</code></pre><h3 name="af73" id="af73" class="graf graf--h3 graf-after--pre">Catching errors</h3><pre name="96db" id="96db" class="graf graf--pre graf-after--h3"><code class="markup--code markup--pre-code">fetch(&#39;/data.json&#39;)<br>  .then(checkStatus)</code></pre><pre name="97bf" id="97bf" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">function checkStatus (res) {<br>  if (res.status &gt;= 200 &amp;&amp; res.status &lt; 300) {<br>    return res<br>  } else {<br>    let err = new Error(res.statusText)<br>    err.response = res<br>    throw err<br>  }<br>}</code></pre><p name="fb5a" id="fb5a" class="graf graf--p graf-after--pre">Non-2xx responses are still successful requests. Use another function to turn them to errors.</p><h3 name="1371" id="1371" class="graf graf--h3 graf-after--p">Using with node.js</h3><pre name="a0f3" id="a0f3" class="graf graf--pre graf-after--h3"><code class="markup--code markup--pre-code">const fetch = require(&#39;isomorphic-fetch&#39;)</code></pre><p name="ba34" id="ba34" class="graf graf--p graf-after--pre">See: <a href="https://npmjs.com/package/isomorphic-fetch" data-href="https://npmjs.com/package/isomorphic-fetch" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">isomorphic-fetch</a> <em class="markup--em markup--p-em">(npmjs.com)</em></p><h4 name="a6a5" id="a6a5" class="graf graf--h4 graf-after--p">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h4><p name="1c2f" id="1c2f" class="graf graf--p graf-after--h4"><a href="https://gist.github.com/bgoonz" data-href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">bgoonz’s gists · GitHub</a></p><div name="3585" id="3585" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://github.com/bgoonz" data-href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong><br><em class="markup--em markup--mixtapeEmbed-em">Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="6ee74d5200d495ddc7ddad0c92bd6dce" data-thumbnail-img-id="0*Udg3rbeFyslZ9dyl" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*Udg3rbeFyslZ9dyl);"></a></div><p name="cb1a" id="cb1a" class="graf graf--p graf-after--mixtapeEmbed">Or Checkout my personal Resource Site:</p><div name="4bce" id="4bce" class="graf graf--mixtapeEmbed graf-after--p graf--trailing"><a href="https://goofy-euclid-1cd736.netlify.app/" data-href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong class="markup--strong markup--mixtapeEmbed-strong">a/A-Student-Resources</strong><br><em class="markup--em markup--mixtapeEmbed-em">Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="260adefce95974b3b8f27566d0434b9c" data-thumbnail-img-id="0*kHvsYWw7LFYl0PB_" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*kHvsYWw7LFYl0PB_);"></a></div></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/8872650742b4"><time class="dt-published" datetime="2021-03-05T23:29:24.980Z">March 5, 2021</time></a>.</p><p><a href="https://medium.com/@bryanguner/fetch-quick-sheet-8872650742b4" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 10, 2021.</p></footer></article></body></html>

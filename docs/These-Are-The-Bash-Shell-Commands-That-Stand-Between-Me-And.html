@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>These Are The Bash Shell Commands That Stand Between Me And Insanity</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">These Are The Bash Shell Commands That Stand Between Me And Insanity</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I will not profess to be a bash shell wizard… but I have managed to scour some pretty helpful little scripts from Stack Overflow and modify…
+</section>
+<section data-field="body" class="e-content">
+<section name="d468" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="111b" id="111b" class="graf graf--h3 graf--leading graf--title">These Are The Bash Shell Commands That Stand Between Me And Insanity</h3><h4 name="a737" id="a737" class="graf graf--h4 graf-after--h3 graf--subtitle">I will not profess to be a bash shell wizard… but I have managed to scour some pretty helpful little scripts from Stack Overflow and modify them to suit my needs.</h4><figure name="7b4e" id="7b4e" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="0*R_oz3NR6AD6EIp5d" data-width="4128" data-height="3096" data-unsplash-photo-id="6RTn6HZD-RI" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*R_oz3NR6AD6EIp5d"><figcaption class="imageCaption">Photo by <a href="https://unsplash.com/@amfiloxia_68?utm_source=medium&amp;utm_medium=referral" data-href="https://unsplash.com/@amfiloxia_68?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor" rel="photo-creator noopener" target="_blank">George Girnas</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" data-href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor" rel="photo-source noopener" target="_blank">Unsplash</a></figcaption></figure><p name="4631" id="4631" class="graf graf--p graf-after--figure">All of these commands are for Ubuntu/WSL … some may work in other scenarios but I can’t guarantee it.</p><blockquote name="7f7b" id="7f7b" class="graf graf--blockquote graf-after--p"><em class="markup--em markup--blockquote-em">As of this writing I have about 120 more bash snippets I regularly use… I am not writing the whole article right now but I wanted to get it started so I feel obligated to finish it!</em></blockquote><h3 name="8e30" id="8e30" class="graf graf--h3 graf-after--blockquote">Recursive Unzip followed by recursive delete zip:</h3><figure name="47ba" id="47ba" class="graf graf--figure graf--iframe graf-after--h3"><script src="https://gist.github.com/bgoonz/98acfda244a42721b988ee0fc231fc23.js"></script></figure><h3 name="0cd4" id="0cd4" class="graf graf--h3 graf-after--figure">Remove spaces from file and folder names</h3><figure name="20ac" id="20ac" class="graf graf--figure graf--iframe graf-after--h3"><script src="https://gist.github.com/bgoonz/4e68e06946326032d47d88af8de7f8f3.js"></script></figure><h3 name="5532" id="5532" class="graf graf--h3 graf-after--figure">Find and replace in string/folder names</h3><pre name="b40a" id="b40a" class="graf graf--pre graf-after--h3">find . -type f -exec rename ‘s/string1/string2/g’ {} +</pre><h3 name="c466" id="c466" class="graf graf--h3 graf-after--pre">Remove numbers from file names</h3><pre name="9721" id="9721" class="graf graf--pre graf-after--h3">find $dir -type f | sed ‘s|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \”&amp;\” \”\1\2\”|’ | sh</pre><h3 name="dbe0" id="dbe0" class="graf graf--h3 graf-after--pre">Delete files within size range ( for when GitHub cries about file size):</h3><pre name="1c7c" id="1c7c" class="graf graf--pre graf-after--h3">find . -size +386b -a -size -390b -exec rm -f {} \;</pre><h3 name="a850" id="a850" class="graf graf--h3 graf-after--pre">Create symbolic link to working directory</h3><pre name="0467" id="0467" class="graf graf--pre graf-after--h3">ln -s “$(pwd)” ~/mylink</pre><h3 name="8486" id="8486" class="graf graf--h3 graf-after--pre"><strong class="markup--strong markup--h3-strong">Remove any traces of a git repository:</strong></h3><pre name="b841" id="b841" class="graf graf--pre graf-after--h3">find . \( -name “.git” -o -name “.gitignore” -o -name “.gitmodules” -o -name “.gitattributes” \) -exec rm -rf — {} +</pre><h3 name="9be7" id="9be7" class="graf graf--h3 graf-after--pre">Replace spaces in filenames with underscores</h3><pre name="92b5" id="92b5" class="graf graf--pre graf-after--h3">for file in *; do mv “$file” `echo $file | tr ‘ ‘ ‘_’` ; done</pre><h3 name="0569" id="0569" class="graf graf--h3 graf-after--pre">Remove Empty Files and Folders:</h3><pre name="cf5a" id="cf5a" class="graf graf--pre graf-after--h3">find . -empty -type f -print -delete<br>find . -empty -type d -print -delete </pre><p name="415c" id="415c" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">or</em></strong></p><pre name="1588" id="1588" class="graf graf--pre graf-after--p">find . -depth -exec rmdir {} \;</pre><h3 name="482b" id="482b" class="graf graf--h3 graf-after--pre">Autogenerate a navigable HTML directory for all the files in the current working directory you exicute the script in:</h3><figure name="a165" id="a165" class="graf graf--figure graf--iframe graf-after--h3"><script src="https://gist.github.com/bgoonz/98b8877463f42074109cbcfb62951295.js"></script></figure><h3 name="f3bc" id="f3bc" class="graf graf--h3 graf-after--figure">For more content… go to :</h3><figure name="0936" id="0936" class="graf graf--figure graf--iframe graf-after--h3"><script src="https://gist.github.com/bgoonz/98b8877463f42074109cbcfb62951295.js"></script></figure><div name="110d" id="110d" class="graf graf--mixtapeEmbed graf-after--figure graf--trailing"><a href="https://github.com/bgoonz" data-href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz - Overview</strong><br><em class="markup--em markup--mixtapeEmbed-em">Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="6ee74d5200d495ddc7ddad0c92bd6dce" data-thumbnail-img-id="0*5ToACOL-IB9NaPWp" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*5ToACOL-IB9NaPWp);"></a></div></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/984865ba5d1b"><time class="dt-published" datetime="2021-05-15T11:40:53.699Z">May 15, 2021</time></a>.</p><p><a href="https://medium.com/@bryanguner/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 10, 2021.</p></footer></article></body></html>

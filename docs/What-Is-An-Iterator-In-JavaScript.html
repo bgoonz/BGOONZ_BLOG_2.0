@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>What Is An Iterator In JavaScript?</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">What Is An Iterator In JavaScript?</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+In JavaScript an iterator is an object which defines a sequence and potentially a return value upon its termination.
+</section>
+<section data-field="body" class="e-content">
+<section name="d2d7" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="2df5" id="2df5" class="graf graf--h3 graf--leading graf--title">What Is An Iterator In JavaScript?</h3><h4 name="7d2c" id="7d2c" class="graf graf--h4 graf-after--h3 graf--subtitle">In JavaScript an <strong class="markup--strong markup--h4-strong">iterator</strong> is an object which defines a sequence and potentially a return value upon its termination.</h4><p name="aedc" id="aedc" class="graf graf--p graf--empty graf-after--h4"><br></p><figure name="4a7a" id="4a7a" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*3-Pds8MFCSFYwxkY.png" data-width="1168" data-height="390" src="https://cdn-images-1.medium.com/max/800/0*3-Pds8MFCSFYwxkY.png"></figure><p name="6720" id="6720" class="graf graf--p graf-after--figure">Specifically, an iterator is any object which implements the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterator_protocol" data-href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterator_protocol" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Iterator protocol</a> by having a <code class="markup--code markup--p-code">next()</code> method that returns an object with two properties:</p><p name="7694" id="7694" class="graf graf--p graf-after--p"><code class="markup--code markup--p-code">value</code>The next value in the iteration sequence.<code class="markup--code markup--p-code">done</code>This is <code class="markup--code markup--p-code">true</code> if the last value in the sequence has already been consumed. If <code class="markup--code markup--p-code">value</code> is present alongside <code class="markup--code markup--p-code">done</code>, it is the iterator&#39;s return value.</p><p name="173c" id="173c" class="graf graf--p graf-after--p">Once created, an iterator object can be iterated explicitly by repeatedly calling <code class="markup--code markup--p-code">next()</code>. Iterating over an iterator is said to consume the iterator, because it is generally only possible to do once. After a terminating value has been yielded additional calls to <code class="markup--code markup--p-code">next()</code> should continue to return <code class="markup--code markup--p-code">{done: true}</code>.</p><p name="30d7" id="30d7" class="graf graf--p graf--empty graf-after--p"><br></p><figure name="08df" id="08df" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*b-h4LdKMIx8tueUm.gif" data-width="880" data-height="495" src="https://cdn-images-1.medium.com/max/800/0*b-h4LdKMIx8tueUm.gif"><figcaption class="imageCaption">But then what’s the value of the <code class="markup--code markup--figure-code">[Symbol.iterator]</code> on the values that aren&#39;t iterable?</figcaption></figure><p name="d6be" id="d6be" class="graf graf--p graf--empty graf-after--figure"><br></p><figure name="fcfe" id="fcfe" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*AVzEb9anFkVjX0A_.gif" data-width="880" data-height="495" src="https://cdn-images-1.medium.com/max/800/0*AVzEb9anFkVjX0A_.gif"><figcaption class="imageCaption"><code class="markup--code markup--figure-code">[Symbol.iterator]</code> has to return an iterator, containing a <code class="markup--code markup--figure-code">next</code> method which returns an object just like we saw before: <code class="markup--code markup--figure-code">{ value: &#39;...&#39;, done: false/true }</code>.</figcaption></figure><figure name="3d22" id="3d22" class="graf graf--figure graf--layoutOutsetLeft graf-after--figure"><img class="graf-image" data-image-id="1*0tvLo7-NPwgF3oGaLlgZ4g.png" data-width="736" data-height="548" src="https://cdn-images-1.medium.com/max/600/1*0tvLo7-NPwgF3oGaLlgZ4g.png"></figure><h3 name="9208" id="9208" class="graf graf--h3 graf-after--figure"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generator_functions" data-href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generator_functions" class="markup--anchor markup--h3-anchor" title="Permalink to Generator functions" rel="noopener" target="_blank">Generator functions</a></h3><p name="3e57" id="3e57" class="graf graf--p graf-after--h3">While custom iterators are a useful tool, their creation requires careful programming due to the need to explicitly maintain their internal state. <strong class="markup--strong markup--p-strong">Generator functions</strong> provide a powerful alternative: they allow you to define an iterative algorithm by writing a single function whose execution is not continuous. Generator functions are written using the <code class="markup--code markup--p-code"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" data-href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">function*</a></code> syntax.</p><p name="3649" id="3649" class="graf graf--p graf-after--p">When called, generator functions do not initially execute their code. Instead, they return a special type of iterator, called a <strong class="markup--strong markup--p-strong">Generator</strong>. When a value is consumed by calling the generator’s <code class="markup--code markup--p-code">next</code> method, the Generator function executes until it encounters the <code class="markup--code markup--p-code">yield</code> keyword.</p><p name="a3e7" id="a3e7" class="graf graf--p graf-after--p">The function can be called as many times as desired, and returns a new Generator each time. Each Generator may only be iterated once.</p><p name="2db4" id="2db4" class="graf graf--p graf--empty graf-after--p"><br></p><p name="441e" id="441e" class="graf graf--p graf--empty graf-after--p"><br></p><p name="953e" id="953e" class="graf graf--p graf--empty graf-after--p"><br></p><p name="a305" id="a305" class="graf graf--p graf--empty graf-after--p"><br></p><p name="7627" id="7627" class="graf graf--p graf--empty graf-after--p"><br></p><figure name="e478" id="e478" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/bgoonz/36dac1bc395284e4881ea921b31cef90.js"></script></figure><p name="4a6e" id="4a6e" class="graf graf--p graf--empty graf-after--figure"><br></p><p name="31b5" id="31b5" class="graf graf--p graf--empty graf-after--p"><br></p><p name="087b" id="087b" class="graf graf--p graf--empty graf-after--p"><br></p><p name="dcff" id="dcff" class="graf graf--p graf--empty graf-after--p"><br></p><p name="8266" id="8266" class="graf graf--p graf--empty graf-after--p"><br></p><p name="2daf" id="2daf" class="graf graf--p graf--empty graf-after--p"><br></p><p name="9c77" id="9c77" class="graf graf--p graf--empty graf-after--p"><br></p><p name="ea43" id="ea43" class="graf graf--p graf--empty graf-after--p"><br></p><p name="6c27" id="6c27" class="graf graf--p graf--empty graf-after--p"><br></p><p name="ac9e" id="ac9e" class="graf graf--p graf--empty graf-after--p"><br></p><p name="d917" id="d917" class="graf graf--p graf--empty graf-after--p"><br></p><p name="e700" id="e700" class="graf graf--p graf--empty graf-after--p"><br></p><div name="d345" id="d345" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators" data-href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators"><strong class="markup--strong markup--mixtapeEmbed-strong">Iterators and generators - JavaScript | MDN</strong><br><em class="markup--em markup--mixtapeEmbed-em">Iterators and Generators bring the concept of iteration directly into the core language and provide a mechanism for…</em>developer.mozilla.org</a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="4db5dbc1e7588cf61efea8c5ba9a8723" data-thumbnail-img-id="0*FUKMDOARQ6xO8z43" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*FUKMDOARQ6xO8z43);"></a></div><p name="fc69" id="fc69" class="graf graf--p graf--empty graf-after--mixtapeEmbed graf--trailing"><br></p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/9c2e0f09ac6e">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 10, 2021.</p></footer></article></body></html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Fundamental Concepts In React That Will Probably Come Up On An Interview</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Fundamental Concepts In React That Will Probably Come Up On An Interview</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Incomplete Article
+</section>
+<section data-field="body" class="e-content">
+<section name="4100" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="0a87" id="0a87" class="graf graf--h3 graf--leading graf--title">Fundamental Concepts In React That Will Probably Come Up On An Interview</h3><h4 name="57a5" id="57a5" class="graf graf--h4 graf-after--h3 graf--subtitle">Incomplete Article</h4><div name="4ac5" id="4ac5" class="graf graf--mixtapeEmbed graf-after--h4"><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" data-href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong class="markup--strong markup--mixtapeEmbed-strong">A list of all of my articles to link to future posts</strong><br><em class="markup--em markup--mixtapeEmbed-em">You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock" data-media-id="b0e65722872b5407711fed22574106a2"></a></div><p name="b401" id="b401" class="graf graf--p graf-after--mixtapeEmbed"><strong class="markup--strong markup--p-strong">Explain how React uses a tree data structure called the “virtual DOM” to model the DOM</strong></p><blockquote name="d12c" id="d12c" class="graf graf--blockquote graf-after--p">↠The Virtual DOM is an in-memory tree representation of the browser’s Document Object Model. React’s philosophy is to interact with the Virtual DOM instead of the regular DOM for developer ease and performance.</blockquote><blockquote name="777d" id="777d" class="graf graf--blockquote graf-after--blockquote">↠By abstracting the key concepts from the DOM, React is able to expose additional tooling and functionality increasing developer ease.</blockquote><blockquote name="50e7" id="50e7" class="graf graf--blockquote graf-after--blockquote">↠By trading off the additional memory requirements of the Virtual DOM, React is able to optimize for efficient subtree comparisons, resulting in fewer, simpler updates to the less efficient DOM. The result of these tradeoffs is improved performance.</blockquote><figure name="4b79" id="4b79" class="graf graf--figure graf-after--blockquote graf--trailing"><img class="graf-image" data-image-id="0*iVSdRNTWikevU4dG.png" data-width="800" data-height="414" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*iVSdRNTWikevU4dG.png"></figure></div></div></section><section name="f84e" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a68b" id="a68b" class="graf graf--h3 graf--leading"><strong class="markup--strong markup--h3-strong">Describe how JSX transforms into React.createElement calls:</strong></h3><h4 name="b9ba" id="b9ba" class="graf graf--h4 graf-after--h3">↠JSX is a special format to let you construct virtual DOM nodes using familiar HTML-like syntax. You can put the JSX directly into your .js files, however you must run the JSX through a pre-compiler like <a href="https://babeljs.io/" data-href="https://babeljs.io/" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">Babel</a> in order for the browser to understand it.</h4><h4 name="a6b4" id="a6b4" class="graf graf--h4 graf-after--h4">↠ReactDOM.render is a simple function which accepts 2 arguments: what to render and where to render it:</h4><figure name="8627" id="8627" class="graf graf--figure graf--iframe graf-after--h4 graf--trailing"><script src="https://gist.github.com/bgoonz/6ab974104e5c377e7cb8706708490f12.js"></script></figure></div></div></section><section name="962d" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c654" id="c654" class="graf graf--h3 graf--leading">Describe how JSX transforms into React.createElement calls:</h3><blockquote name="bab9" id="bab9" class="graf graf--blockquote graf-after--h3">↠JSX is a special format to let you construct virtual DOM nodes using familiar HTML-like syntax.</blockquote><blockquote name="07cf" id="07cf" class="graf graf--blockquote graf-after--blockquote graf--trailing">↠You can put the JSX directly into your .js files, however you must run the JSX through a pre-compiler like <a href="https://babeljs.io/" data-href="https://babeljs.io/" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">Babel</a> in order for the browser to understand it.</blockquote></div></div></section><section name="131a" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><blockquote name="653a" id="653a" class="graf graf--pullquote graf--leading"><strong class="markup--strong markup--pullquote-strong"><em class="markup--em markup--pullquote-em">Here we initialize a Clock component using JSX instead of React.createElement .</em></strong></blockquote><figure name="6a2a" id="6a2a" class="graf graf--figure graf--iframe graf-after--pullquote"><script src="https://gist.github.com/bgoonz/9867e3992ef44f054cd8d310b49c1fe3.js"></script></figure><blockquote name="ec17" id="ec17" class="graf graf--pullquote graf-after--figure">Using <a href="https://babeljs.io/" data-href="https://babeljs.io/" class="markup--anchor markup--pullquote-anchor" rel="noopener" target="_blank">Babel </a>this code is compiled to a series of recursively nested createElement calls:</blockquote><h3 name="5f45" id="5f45" class="graf graf--h3 graf-after--pullquote graf--trailing">TBC…</h3></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/5495b6421287"><time class="dt-published" datetime="2021-06-29T22:27:35.184Z">June 29, 2021</time></a>.</p><p><a href="https://medium.com/@bryanguner/fundamental-concepts-in-react-that-will-probably-come-up-on-an-interview-5495b6421287" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 10, 2021.</p></footer></article></body></html>

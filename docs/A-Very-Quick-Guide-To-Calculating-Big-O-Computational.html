@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>A Very Quick Guide To Calculating Big O Computational Complexity</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">A Very Quick Guide To Calculating Big O Computational Complexity</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Big O: big picture, broad strokes, not details
+</section>
+<section data-field="body" class="e-content">
+<section name="7368" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="98cd" id="98cd" class="graf graf--h3 graf--leading graf--title">A Very Quick Guide To Calculating Big O Computational Complexity</h3><p name="5141" id="5141" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Big O</strong>: big picture, broad strokes, not details</p><p name="875b" id="875b" class="graf graf--p graf-after--p">For a more complete guide… checkout :</p><div name="b0bf" id="b0bf" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" data-href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522"><strong class="markup--strong markup--mixtapeEmbed-strong">A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example</strong><br><em class="markup--em markup--mixtapeEmbed-em">Curating Complexity: A Guide to Big-O Notation</em>medium.com</a><a href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="51e80b3a41a48e0e3180224f6e586cb1" data-thumbnail-img-id="0*yjlSk3T9c2_14in1.png" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*yjlSk3T9c2_14in1.png);"></a></div><figure name="4a61" id="4a61" class="graf graf--figure graf-after--mixtapeEmbed"><img class="graf-image" data-image-id="0*lte81mEvgEPYXodB.png" data-width="1000" data-height="704" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*lte81mEvgEPYXodB.png"></figure><ul class="postList"><li name="28b6" id="28b6" class="graf graf--li graf-after--figure">way we analyze how efficient algorithms are without getting too mired in details</li><li name="4141" id="4141" class="graf graf--li graf-after--li">can model how much time any function will take given <code class="markup--code markup--li-code">n</code> inputs</li><li name="9479" id="9479" class="graf graf--li graf-after--li">interested in order of magnitude of number of the exact figure</li><li name="8fe1" id="8fe1" class="graf graf--li graf-after--li">O absorbs all fluff and n = biggest term</li><li name="a9c8" id="a9c8" class="graf graf--li graf-after--li">Big O of <code class="markup--code markup--li-code">3x^2 +x + 1</code> = <code class="markup--code markup--li-code">O(n^2)</code></li></ul><h3 name="33eb" id="33eb" class="graf graf--h3 graf-after--li">Time Complexity</h3><p name="b180" id="b180" class="graf graf--p graf-after--h3">no loops or exit &amp; return = O(1)</p><p name="2796" id="2796" class="graf graf--p graf-after--p">0 nested loops = <code class="markup--code markup--p-code">O(n)</code><br>1 nested loops = <code class="markup--code markup--p-code">O(n^2)</code><br>2 nested loops = <code class="markup--code markup--p-code">O(n^3)</code><br>3 nested loops = <code class="markup--code markup--p-code">O(n^4)</code></p><p name="b8c5" id="b8c5" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">recursive</strong>: as you add more terms, increase in time as you add input diminishes<br><strong class="markup--strong markup--p-strong">recursion</strong>: when you define something in terms of itself, a function that calls itself</p><ul class="postList"><li name="f455" id="f455" class="graf graf--li graf-after--p">used because of ability to maintain state at diffferent levels of recursion</li><li name="f168" id="f168" class="graf graf--li graf-after--li">inherently carries large footprint</li><li name="5510" id="5510" class="graf graf--li graf-after--li">every time function called, you add call to stack</li></ul><p name="96bb" id="96bb" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">iterative</strong>: use loops instead of recursion (preferred)<br>- favor readability over performance</p><p name="ddf2" id="ddf2" class="graf graf--p graf-after--p"><code class="markup--code markup--p-code">O(n log(n))</code> &amp; <code class="markup--code markup--p-code">O(log(n))</code>: dividing/halving</p><ul class="postList"><li name="4f7e" id="4f7e" class="graf graf--li graf-after--p">if code employs recursion/divide-and-conquer strategy</li><li name="d1cc" id="d1cc" class="graf graf--li graf-after--li">what power do i need to power my base to get n</li></ul><h3 name="7103" id="7103" class="graf graf--h3 graf-after--li">Time Definitions</h3><ul class="postList"><li name="9aad" id="9aad" class="graf graf--li graf-after--h3"><strong class="markup--strong markup--li-strong">constant</strong>: does not scale with input, will take same amount of time</li><li name="3a19" id="3a19" class="graf graf--li graf-after--li">for any input size n, constant time performs same number of operations every time</li><li name="bf51" id="bf51" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">logarithmic</strong>: increases number of operations it performs as logarithmic function of input size n</li><li name="93d5" id="93d5" class="graf graf--li graf-after--li">function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn’t increase very much</li><li name="a2cf" id="a2cf" class="graf graf--li graf-after--li">halving</li><li name="46c0" id="46c0" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">linear</strong>: increases number of operations it performs as linear function of input size n</li><li name="5f16" id="5f16" class="graf graf--li graf-after--li">number of additional operations needed to perform grows in direct proportion to increase in input size n</li><li name="ab93" id="ab93" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">log-linear</strong>: increases number of operations it performs as log-linear function of input size n</li><li name="0459" id="0459" class="graf graf--li graf-after--li">looking over every element and doing work on each one</li><li name="bd8a" id="bd8a" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">quadratic</strong>: increases number of operations it performs as quadratic function of input size n</li><li name="dc41" id="dc41" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">exponential</strong>: increases number of operations it performs as exponential function of input size n</li><li name="71fc" id="71fc" class="graf graf--li graf-after--li">number of nested loops increases as function of n</li><li name="8253" id="8253" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">polynomial</strong>: as size of input increases, runtime/space used will grow at a faster rate</li><li name="8827" id="8827" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">factorial</strong>: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs</li><li name="040c" id="040c" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">rate of growth</strong>: how fast a function grows with input size</li></ul><figure name="f65d" id="f65d" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*5t2u8n1uKhioIzZIXX2zbg.png" data-width="338" data-height="286" src="https://cdn-images-1.medium.com/max/800/1*5t2u8n1uKhioIzZIXX2zbg.png"></figure><h3 name="ca53" id="ca53" class="graf graf--h3 graf-after--figure">Space Complexity</h3><ul class="postList"><li name="403b" id="403b" class="graf graf--li graf-after--h3">How does the space usage scale/change as input gets very large?</li><li name="5f20" id="5f20" class="graf graf--li graf-after--li">What auxiliary space does your algorithm use or is it in place (constant)?</li><li name="b207" id="b207" class="graf graf--li graf-after--li">Runtime stack space counts as part of space complexity unless told otherwise.</li></ul><h3 name="3033" id="3033" class="graf graf--h3 graf-after--li">Sorting Algorithms</h3><figure name="7cf9" id="7cf9" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*HhXmG2cNdg8y4ZCCQGTyuQ.png" data-width="626" data-height="451" src="https://cdn-images-1.medium.com/max/800/1*HhXmG2cNdg8y4ZCCQGTyuQ.png"></figure><figure name="298c" id="298c" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*ULeXxVCDkF73GwhsxyM_2g.png" data-width="747" data-height="575" src="https://cdn-images-1.medium.com/max/800/1*ULeXxVCDkF73GwhsxyM_2g.png"></figure><h3 name="70ea" id="70ea" class="graf graf--h3 graf-after--figure">Data Structures</h3></div><div class="section-inner sectionLayout--outsetColumn"><figure name="fb6c" id="fb6c" class="graf graf--figure graf--layoutOutsetCenter graf-after--h3"><img class="graf-image" data-image-id="1*hkZWlUgFyOSaLD5Uskv0tQ.png" data-width="1284" data-height="475" src="https://cdn-images-1.medium.com/max/1200/1*hkZWlUgFyOSaLD5Uskv0tQ.png"></figure></div><div class="section-inner sectionLayout--fullWidth"><figure name="49f9" id="49f9" class="graf graf--figure graf--layoutFillWidth graf-after--figure"><img class="graf-image" data-image-id="1*COjzunj0-FsMJ0d7v7Z-6g.png" data-width="1239" data-height="645" src="https://cdn-images-1.medium.com/max/2560/1*COjzunj0-FsMJ0d7v7Z-6g.png"></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="06ad" id="06ad" class="graf graf--p graf-after--figure">For similar content check out my GitHub:</p><div name="985e" id="985e" class="graf graf--mixtapeEmbed graf-after--p graf--trailing"><a href="https://github.com/bgoonz" data-href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz - Overview</strong><br><em class="markup--em markup--mixtapeEmbed-em">Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="6ee74d5200d495ddc7ddad0c92bd6dce" data-thumbnail-img-id="0*5XVYsBXYPEKaAc6c" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*5XVYsBXYPEKaAc6c);"></a></div></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/eb1557e85fa3"><time class="dt-published" datetime="2021-05-19T04:21:41.190Z">May 19, 2021</time></a>.</p><p><a href="https://medium.com/@bryanguner/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 10, 2021.</p></footer></article></body></html>

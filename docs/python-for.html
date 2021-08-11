@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2021-06-03" />
+  <title>Python Resources</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Python Resources</h1>
+<p class="date">2021-06-03</p>
+</header>
+<h1 id="python-study-guide-for-a-javascript-programmer">Python Study Guide for a JavaScript Programmer
+</h1>
+<p><img src="https://miro.medium.com/max/1970/1*3V9VOfPk_hrFdbEAd3j-QQ.png" /><img src="https://miro.medium.com/max/52/0*eC4EvZcv6hhH88jX.png?q=20" /><img src="https://miro.medium.com/max/647/0*eC4EvZcv6hhH88jX.png" /><img src="https://miro.medium.com/max/60/0*Ez_1PZ93N4FfvkRr.png?q=20" /><img src="https://miro.medium.com/max/608/0*Ez_1PZ93N4FfvkRr.png" /><img src="https://miro.medium.com/max/60/0*eE3E5H0AoqkhqK1z.png?q=20" /><img src="https://miro.medium.com/max/1648/0*eE3E5H0AoqkhqK1z.png" /><img src="https://miro.medium.com/max/60/0*Q0CMqFd4PozLDFPB.png?q=20" /><img src="https://miro.medium.com/max/1638/0*Q0CMqFd4PozLDFPB.png" /><img src="https://miro.medium.com/max/3216/0*HQpndNhm1Z_xSoHb.png" /><img src="https://miro.medium.com/max/60/0*qHzGRLTOMTf30miT.png?q=20" /><img src="https://miro.medium.com/max/1614/0*qHzGRLTOMTf30miT.png" />[</p>
+<p>](https://github.com/bgoonz)</p>
+<iframe src="https://py-prac-42.netlify.app/" width="100%" height="1200px">
+<iframe>
+<h1 id="applications-of-tutorial-cheat-sheet-respectivley-at-bottom-of-tutorial">Applications of Tutorial &amp; Cheat Sheet Respectivley (At Bottom Of Tutorial):</h1>
+<h1 id="basics">Basics</h1>
+<ul>
+<li><p><strong>PEP8</strong> : Python Enhancement Proposals, style-guide for Python.</p></li>
+<li><p>print is the equivalent of console.log.</p></li>
+</ul>
+<blockquote>
+<p>‘print() == console.log()’</p>
+</blockquote>
+<h1 id="is-used-to-make-comments-in-your-code."># is used to make comments in your code.</h1>
+<blockquote>
+<p><em>Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”</em></p>
+</blockquote>
+<h1 id="numbers">Numbers</h1>
+<ul>
+<li>Python has three types of numbers:</li>
+</ul>
+<ol type="1">
+<li><p><strong>Integer</strong></p></li>
+<li><p><strong>Positive and Negative Counting Numbers.</strong></p></li>
+</ol>
+<p>No Decimal Point</p>
+<blockquote>
+<p>Created by a literal non-decimal point number … <strong>or</strong> … with the <em>int()</em> constructor.</p>
+</blockquote>
+<p><strong>3. Complex Numbers</strong></p>
+<blockquote>
+<p>Consist of a real part and imaginary part.</p>
+</blockquote>
+<h2 id="boolean-is-a-subtype-of-integer-in-python.️">Boolean is a subtype of integer in Python.🤷‍♂️</h2>
+<blockquote>
+<p>If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…</p>
+</blockquote>
+<blockquote>
+<p>Than I am sure you will find the means to suspend your disbelief.</p>
+</blockquote>
+<h1 id="keep-in-mind">KEEP IN MIND:</h1>
+<blockquote>
+<p><strong>The i is switched to a j in programming.</strong></p>
+</blockquote>
+<p>T*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space *<em>when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.</em></p>
+<ul>
+<li><strong>Type Casting</strong> : The process of converting one number to another.</li>
+</ul>
+<p><strong>The arithmetic operators are the same between JS and Python, with two additions:</strong></p>
+<ul>
+<li><p><em>“**” : Double asterisk for exponent.</em></p></li>
+<li><p><em>“//” : Integer Division.</em></p></li>
+<li><p><strong>There are no spaces between math operations in Python.</strong></p></li>
+<li><p><strong>Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.</strong></p></li>
+<li><p><strong>There are no ++ and – in Python, the only shorthand operators are:</strong></p></li>
+</ul>
+<h1 id="strings">Strings</h1>
+<ul>
+<li><p>Python uses both single and double quotes.</p></li>
+<li><p>You can escape strings like so ‘Jodi asked, "What\’s up, Sam?"’</p></li>
+<li><p>Multiline strings use triple quotes.</p></li>
+</ul>
+<p><strong>Use the len() function to get the length of a string.</strong></p>
+<h1 id="python-uses-zero-based-indexing"><strong>Python uses zero-based indexing</strong></h1>
+<h2 id="python-allows-negative-indexing-thank-god">Python allows negative indexing (thank god!)</h2>
+<ul>
+<li>Python let’s you use ranges</li>
+</ul>
+<p>You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… <em>(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type <strong>by textbook definition</strong>, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)</em></p>
+<ul>
+<li>The end range is exclusive just like slice in JS.</li>
+</ul>
+<!---->
+<ul>
+<li>The index string function is the equiv. of indexOf() in JS</li>
+</ul>
+<!---->
+<ul>
+<li>The count function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.</li>
+</ul>
+<!---->
+<ul>
+<li><p><strong>You can use + to concatenate strings, just like in JS.</strong></p></li>
+<li><p><strong>You can also use “*” to repeat strings or multiply strings.</strong></p></li>
+<li><p><strong>Use the format() function to use placeholders in a string to input values later on.</strong></p></li>
+</ul>
+<!---->
+<ul>
+<li>*Shorthand way to use format function is: *print(f’Your name is {first_name} {last_name}’)</li>
+</ul>
+<h2 id="some-useful-string-methods.">Some useful string methods.</h2>
+<ul>
+<li><strong>Note that in JS join is used on an Array, in Python it is used on String.</strong></li>
+</ul>
+<!---->
+<ul>
+<li>There are also many handy testing methods.</li>
+</ul>
+<h1 id="variables-and-expressions">Variables and Expressions</h1>
+<ul>
+<li><p><strong>Duck-Typing</strong> : Programming Style which avoids checking an object’s type to figure out what it can do.</p></li>
+<li><p>Duck Typing is the fundamental approach of Python.</p></li>
+<li><p>Assignment of a value automatically declares a variable.</p></li>
+</ul>
+<!---->
+<ul>
+<li><strong><em>You can chain variable assignments to give multiple var names the same value.</em></strong></li>
+</ul>
+<h2 id="use-with-caution-as-this-is-highly-unreadable">Use with caution as this is highly unreadable</h2>
+<h2 id="the-value-and-type-of-a-variable-can-be-re-assigned-at-any-time.">The value and type of a variable can be re-assigned at any time.</h2>
+<ul>
+<li><p>*NaN does not exist in Python, but you can ‘create’ it like so: <strong>print(float(“nan”))*</strong></p></li>
+<li><p><em>Python replaces null with none.</em></p></li>
+<li><p><strong>*none is an object</strong> and can be directly assigned to a variable.*</p></li>
+</ul>
+<blockquote>
+<p>Using none is a convenient way to check to see why an action may not be operating correctly in your program.</p>
+</blockquote>
+<h1 id="boolean-data-type">Boolean Data Type</h1>
+<ul>
+<li>One of the biggest benefits of Python is that it reads more like English than JS does.</li>
+</ul>
+<!---->
+<ul>
+<li><p>By default, Python considers an object to be true UNLESS it is one of the following:</p></li>
+<li><p>Constant None or False</p></li>
+<li><p>Zero of any numeric type.</p></li>
+<li><p>Empty Sequence or Collection.</p></li>
+<li><p>True and False must be capitalized</p></li>
+</ul>
+<h1 id="comparison-operators">Comparison Operators</h1>
+<ul>
+<li><p>Python uses all the same equality operators as JS.</p></li>
+<li><p>In Python, equality operators are processed from left to right.</p></li>
+<li><p>Logical operators are processed in this order:</p></li>
+</ul>
+<ol type="1">
+<li><p><strong>NOT</strong></p></li>
+<li><p><strong>AND</strong></p></li>
+<li><p><strong>OR</strong></p></li>
+</ol>
+<blockquote>
+<p>Just like in JS, you can use parentheses to change the inherent order of operations.</p>
+<p><strong>Short Circuit</strong> : Stopping a program when a true or false has been reached.</p>
+</blockquote>
+<h1 id="identity-vs-equality">Identity vs Equality</h1>
+<ul>
+<li>In the Python community it is better to use is and is not over == or !=</li>
+</ul>
+<h1 id="if-statements">If Statements</h1>
+<blockquote>
+<p>Remember the order of elif statements matter.</p>
+</blockquote>
+<h1 id="while-statements">While Statements</h1>
+<ul>
+<li>Break statement also exists in Python.</li>
+</ul>
+<!---->
+<ul>
+<li>As are continue statements</li>
+</ul>
+<h1 id="tryexcept-statements">Try/Except Statements</h1>
+<ul>
+<li>Python equivalent to try/catch</li>
+</ul>
+<!---->
+<ul>
+<li>You can name an error to give the output more specificity.</li>
+</ul>
+<!---->
+<ul>
+<li>You can also use the pass commmand to by pass a certain error.</li>
+</ul>
+<!---->
+<ul>
+<li>The pass method won’t allow you to bypass every single error so you can chain an exception series like so:</li>
+</ul>
+<!---->
+<ul>
+<li>You can use an else statement to end a chain of except statements.</li>
+</ul>
+<!---->
+<ul>
+<li>finally is used at the end to clean up all actions under any circumstance.</li>
+</ul>
+<!---->
+<ul>
+<li>Using duck typing to check to see if some value is able to use a certain method.</li>
+</ul>
+<h1 id="pass">Pass</h1>
+<ul>
+<li>Pass Keyword is required to write the JS equivalent of :</li>
+</ul>
+<h1 id="functions">Functions</h1>
+<ul>
+<li><p><strong>Function definition includes:</strong></p></li>
+<li><p><strong>The def keyword</strong></p></li>
+<li><p><strong>The name of the function</strong></p></li>
+<li><p><strong>A list of parameters enclosed in parentheses.</strong></p></li>
+<li><p><strong>A colon at the end of the line.</strong></p></li>
+<li><p><strong>One tab indentation for the code to run.</strong></p></li>
+<li><p><strong>You can use default parameters just like in JS</strong></p></li>
+</ul>
+<h2 id="keep-in-mind-default-parameters-must-always-come-after-regular-parameters."><strong>Keep in mind, default parameters must always come after regular parameters.</strong></h2>
+<ul>
+<li><em>You can specify arguments by name without destructuring in Python.</em></li>
+</ul>
+<!---->
+<ul>
+<li>The lambda keyword is used to create anonymous functions and are supposed to be one-liners.</li>
+</ul>
+<p>toUpper = lambda s: s.upper()</p>
+<h1 id="notes">Notes</h1>
+<h2 id="formatted-strings">Formatted Strings</h2>
+<blockquote>
+<p>Remember that in Python join() is called on a string with an array/list passed in as the argument. Python has a very powerful formatting engine. format() is also applied directly to strings.</p>
+</blockquote>
+<h1 id="comma-thousands-separator">Comma Thousands Separator</h1>
+<h1 id="date-and-time">Date and Time</h1>
+<h1 id="percentage">Percentage</h1>
+<h1 id="data-tables">Data Tables</h1>
+<p><strong>Python can be used to display html, css, and JS.</strong> <em>It is common to use Python as an API (Application Programming Interface)</em></p>
+<h2 id="structured-data">Structured Data</h2>
+<h2 id="sequence-the-most-basic-data-structure-in-python-where-the-index-determines-the-order.">Sequence : The most basic data structure in Python where the index determines the order.</h2>
+<blockquote>
+<p>List Tuple Range Collections : Unordered data structures, hashable values.</p>
+</blockquote>
+<h2 id="dictionaries-sets">Dictionaries
+Sets</h2>
+<h2 id="iterable-generic-name-for-a-sequence-or-collection-any-object-that-can-be-iterated-through.">Iterable : Generic name for a sequence or collection; any object that can be iterated through.</h2>
+<h2 id="can-be-mutable-or-immutable.-built-in-data-types">Can be mutable or immutable.
+Built In Data Types</h2>
+<h1 id="lists-are-the-python-equivalent-of-arrays.">Lists are the python equivalent of arrays.</h1>
+<h1 id="you-can-instantiate">You can instantiate</h1>
+<h2 id="test-if-a-value-is-in-a-list.">Test if a value is in a list.</h2>
+<h2 id="instantiated-with-parentheses">Instantiated with parentheses</h2>
+<h2 id="sometimes-instantiated-without">Sometimes instantiated without</h2>
+<h2 id="tuple-built-in-can-be-used-to-convert-other-data-into-a-tuple">Tuple() built in can be used to convert other data into a tuple</h2>
+<h2 id="ranges-a-list-of-numbers-which-cant-be-changed-often-used-with-for-loops.">Ranges : A list of numbers which can’t be changed; often used with for loops.</h2>
+<p><strong>Declared using one to three parameters</strong>.</p>
+<blockquote>
+<p>Start : opt. default 0, first # in sequence. Stop : required next number past the last number in the sequence. Step : opt. default 1, difference between each number in the sequence.</p>
+</blockquote>
+<h2 id="dictionaries-mappable-collection-where-a-hashable-value-is-used-as-a-key-to-ref.-an-object-stored-in-the-dictionary.">Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.</h2>
+<h2 id="mutable.">Mutable.</h2>
+<p><strong><em>Declared with curly braces of the built in dict()</em></strong></p>
+<blockquote>
+<p><em>Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.</em></p>
+</blockquote>
+<p><strong>Use the in operator to see if a key exists in a dictionary.</strong></p>
+<p>S<strong>ets : Unordered collection of distinct objects; objects that need to be hashable.</strong></p>
+<blockquote>
+<p><em>Always be unique, duplicate items are auto dropped from the set.</em></p>
+</blockquote>
+<h2 id="common-uses">Common Uses:</h2>
+<blockquote>
+<p>Removing Duplicates Membership Testing Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.</p>
+</blockquote>
+<p><strong>Standard Set is mutable, Python has a immutable version called frozenset. Sets created by putting comma seperated values inside braces:</strong></p>
+<h2 id="also-can-use-set-constructor-to-automatically-put-it-into-a-set.">Also can use set constructor to automatically put it into a set.</h2>
+<p><strong>filter(function, iterable) : creates new iterable of the same type which includes each item for which the function returns true.</strong></p>
+<p><strong>map(function, iterable) : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.</strong></p>
+<p><strong>sorted(iterable, key=None, reverse=False) : creates a new sorted list from the items in the iterable.</strong></p>
+<p><strong>Output is always a list</strong></p>
+<p><strong>key: opt function which coverts and item to a value to be compared.</strong></p>
+<p><strong>reverse: optional boolean.</strong></p>
+<p><strong>enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples</strong></p>
+<h2 id="first-1-second-2-third-3-fourth">(0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)</h2>
+<h2 id="first-2-second-3-third-4-fourth">(1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)</h2>
+<blockquote>
+<p>zip(*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable. Functions that analyze iterable</p>
+</blockquote>
+<p><strong>len(iterable) : returns the count of the number of items.</strong></p>
+<p><strong>max(*args, key=None) : returns the largest of two or more arguments.</strong></p>
+<p><strong>max(iterable, key=None) : returns the largest item in the iterable.</strong></p>
+<p><em>key optional function which converts an item to a value to be compared. min works the same way as max</em></p>
+<p><strong>sum(iterable) : used with a list of numbers to generate the total.</strong></p>
+<p><em>There is a faster way to concatenate an array of strings into one string, so do not use sum for that.</em></p>
+<p><strong>any(iterable) : returns True if any items in the iterable are true.</strong></p>
+<p><strong>all(iterable) : returns True is all items in the iterable are true.</strong></p>
+<h1 id="working-with-dictionaries">Working with dictionaries</h1>
+<p><strong>dir(dictionary) : returns the list of keys in the dictionary. Working with sets</strong></p>
+<p><strong>Union : The pipe | operator or union(*sets) function can be used to produce a new set which is a combination of all elements in the provided set.</strong></p>
+<h2 id="intersection-the-operator-ca-be-used-to-produce-a-new-set-of-only-the-elements-that-appear-in-all-sets.">Intersection : The &amp; operator ca be used to produce a new set of only the elements that appear in all sets.</h2>
+<p><strong>Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.</strong></p>
+<h1 id="for-statements-in-python-there-is-only-one-for-loop."><strong>For Statements
+In python, there is only one for loop.</strong></h1>
+<p>Always Includes:</p>
+<blockquote>
+<p>1. The for keyword 2. A variable name 3. The ‘in’ keyword 4. An iterable of some kid 5. A colon 6. On the next line, an indented block of code called the for clause.</p>
+</blockquote>
+<p><strong>You can use break and continue statements inside for loops as well.</strong></p>
+<p><strong>You can use the range function as the iterable for the for loop.</strong></p>
+<p><strong><em>Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.</em></strong></p>
+<p><strong>You can loop and destructure at the same time.</strong></p>
+<blockquote>
+<p>Prints 1, 2</p>
+<p>Prints 3, 4</p>
+<p>Prints 5, 6</p>
+</blockquote>
+<p><strong>You can use values() and keys() to loop over dictionaries.</strong></p>
+<p><em>Prints red</em></p>
+<p><em>Prints 42</em></p>
+<p><em>Prints color</em></p>
+<p><em>Prints age</em></p>
+<p><strong>For loops can also iterate over both keys and values.</strong></p>
+<p><strong>Getting tuples</strong></p>
+<p><em>Prints (‘color’, ‘red’)</em></p>
+<p><em>Prints (‘age’, 42)</em></p>
+<p><em>Destructuring to values</em></p>
+<p><em>Prints Key: age Value: 42</em></p>
+<p><em>Prints Key: color Value: red</em></p>
+<p><strong>Looping over string</strong></p>
+<p><strong>When you order arguments within a function or function call, the args need to occur in a particular order:</strong></p>
+<p><em>formal positional args.</em></p>
+<p>*args</p>
+<p><em>keyword args with default values</em></p>
+<p>**kwargs</p>
+<h1 id="importing-in-python"><strong>Importing in Python</strong></h1>
+<p><strong>Modules are similar to packages in Node.js</strong> Come in different types:</p>
+<p>Built-In,</p>
+<p>Third-Party,</p>
+<p>Custom.</p>
+<p><strong>All loaded using import statements.</strong></p>
+<h1 id="terms"><strong>Terms</strong></h1>
+<blockquote>
+<p>module : Python code in a separate file. package : Path to a directory that contains modules. <a href="http://init.py/"><strong>init.py</strong></a> : Default file for a package. submodule : Another file in a module’s folder. function : Function in a module.</p>
+</blockquote>
+<p><strong>A module can be any file but it is usually created by placing a special file init.py into a folder. pic</strong></p>
+<p><em>Try to avoid importing with wildcards in Python.</em></p>
+<p><em>Use multiple lines for clarity when importing.</em></p>
+<h1 id="watching-out-for-python-2">Watching Out for Python 2</h1>
+<p><strong>Python 3 removed &lt;&gt; and only uses !=</strong></p>
+<p><strong>format() was introduced with P3</strong></p>
+<p><strong>All strings in P3 are unicode and encoded. md5 was removed.</strong></p>
+<p><strong>ConfigParser was renamed to configparser sets were killed in favor of set() class.</strong></p>
+<h2 id="print-was-a-statement-in-p2-but-is-a-function-in-p3."><strong>print was a statement in P2, but is a function in P3.</strong></h2>
+<h1 id="topics-revisited-in-python-syntax">Topics revisited (in python syntax)</h1>
+<h1 id="cheat-sheet">Cheat Sheet:</h1>
+<h2 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h2>
+<p><a href="https://gist.github.com/bgoonz">bgoonz’s gists · GitHub</a></p>
+<p>Or Checkout my personal Resource Site:</p>
+<h1 id="python-cheat-sheet">Python Cheat Sheet:</h1>
+<h1 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content-1">If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:</h1>
+</body>
+</html>

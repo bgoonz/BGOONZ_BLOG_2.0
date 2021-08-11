@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Basic React Tutorial</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Basic React Tutorial</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Random Things to Remember
+</section>
+<section data-field="body" class="e-content">
+<section name="2fcb" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="bb0a" id="bb0a" class="graf graf--h3 graf--leading graf--title">Basic React Tutorial</h3><h4 name="cef0" id="cef0" class="graf graf--h4 graf-after--h3 graf--subtitle">Random Things to Remember</h4><div name="fac3" id="fac3" class="graf graf--mixtapeEmbed graf-after--h4"><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" data-href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong class="markup--strong markup--mixtapeEmbed-strong">A list of all of my articles to link to future posts</strong><br><em class="markup--em markup--mixtapeEmbed-em">You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock" data-media-id="b0e65722872b5407711fed22574106a2"></a></div><h4 name="8aac" id="8aac" class="graf graf--h4 graf-after--mixtapeEmbed">Using <code class="markup--code markup--h4-code">()</code> implicitly returns components.Role of <code class="markup--code markup--h4-code">index.js</code> is to <em class="markup--em markup--h4-em">render</em> your application.The reference to <code class="markup--code markup--h4-code">root</code> comes from a div in the body of your public html file.State of a component is simply a regular JS Object.Class Components require <code class="markup--code markup--h4-code">render()</code> method to return JSX.Functional Components directly return JSX.<code class="markup--code markup--h4-code">Class</code> is <code class="markup--code markup--h4-code">className</code> in React.When parsing for an integer just chain <code class="markup--code markup--h4-code">Number.parseInt(&quot;123&quot;)</code></h4><figure name="5f1b" id="5f1b" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="0*16IltJu5wXjzgXyU.gif" data-width="808" data-height="239" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*16IltJu5wXjzgXyU.gif"></figure><ul class="postList"><li name="3b86" id="3b86" class="graf graf--li graf-after--figure"><strong class="markup--strong markup--li-strong">Use ternary operator if you want to make a conditional inside a fragment.</strong></li></ul><pre name="209c" id="209c" class="graf graf--pre graf-after--li">{ x === y ? &lt;div&gt;Naisu&lt;/div&gt; : &lt;div&gt;Not Naisu&lt;/div&gt;; }</pre><pre name="5e84" id="5e84" class="graf graf--pre graf-after--pre">Purpose of <code class="markup--code markup--pre-code">React.Fragment</code> is to allow you to create groups of children without adding an extra dom element.</pre><ul class="postList"><li name="5cbe" id="5cbe" class="graf graf--li graf-after--pre"><strong class="markup--strong markup--li-strong">React</strong> manages the creation and updating of DOM nodes in your Web page.</li><li name="d253" id="d253" class="graf graf--li graf-after--li">All it does is dynamically render stuff into your DOM.</li><li name="093c" id="093c" class="graf graf--li graf-after--li">What it doesn’t do:</li><li name="bd7d" id="bd7d" class="graf graf--li graf-after--li">Ajax</li><li name="7f06" id="7f06" class="graf graf--li graf-after--li">Services</li><li name="b1b9" id="b1b9" class="graf graf--li graf-after--li">Local Storage</li><li name="47a9" id="47a9" class="graf graf--li graf-after--li">Provide a CSS framework</li><li name="57d1" id="57d1" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">React</strong> is unopinionated</li><li name="b277" id="b277" class="graf graf--li graf-after--li">Just contains a few rules for developers to follow, and it just works.</li><li name="dafd" id="dafd" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">JSX</strong> : Javascript Extension is a language invented to help write React Applications (looks like a mixture of JS and HTML)</li><li name="fc46" id="fc46" class="graf graf--li graf-after--li">Here is an overview of the difference between rendering out vanilla JS to create elements, and JSX:</li></ul><figure name="5a3c" id="5a3c" class="graf graf--figure graf--iframe graf-after--li"><script src="https://gist.github.com/bgoonz/478dec2300f6fafed7816f4615b80fdc.js"></script></figure><ul class="postList"><li name="eec2" id="eec2" class="graf graf--li graf-after--figure">This may seem like a lot of code but when you end up building many components, it becomes nice to put each of those functions/classes into their own files to organize your code.<br><strong class="markup--strong markup--li-strong">Using tools with React</strong></li><li name="6c32" id="6c32" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">React DevTools</strong></code> : New tool in your browser to see ow React is working in the browser</li><li name="3f86" id="3f86" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">create-react-app</strong></code> : Extensible command-line tool to help generate standard React applications.</li><li name="da3c" id="da3c" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">Webpack</strong></code> : In between tool for dealing with the extra build step involved.</li></ul><figure name="c879" id="c879" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="0*4O0NPGEa-1NcDOIA.png" data-width="989" data-height="386" src="https://cdn-images-1.medium.com/max/800/0*4O0NPGEa-1NcDOIA.png"></figure><ul class="postList"><li name="9d53" id="9d53" class="graf graf--li graf-after--figure"><strong class="markup--strong markup--li-strong">HMR</strong> : (Hot Module Replacement) When you make changes to your source code the changes are delivered in real-time.</li><li name="8d5b" id="8d5b" class="graf graf--li graf-after--li">React Developers created something called <code class="markup--code markup--li-code">Flux Architecture</code> to moderate how their web page consumes and modifies data received from back-end API&#39;s.</li></ul><figure name="8195" id="8195" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="0*hXODC_ZsM-egMFI4.png" data-width="1944" data-height="970" src="https://cdn-images-1.medium.com/max/800/0*hXODC_ZsM-egMFI4.png"></figure><ul class="postList"><li name="97a3" id="97a3" class="graf graf--li graf-after--figure"><strong class="markup--strong markup--li-strong">Choosing React</strong></li><li name="1589" id="1589" class="graf graf--li graf-after--li">Basically, React is super important to learn and master.</li></ul><h3 name="c653" id="c653" class="graf graf--h3 graf-after--li">React Concepts and Features</h3><p name="a416" id="a416" class="graf graf--p graf-after--h3">There are many benefits to using React over just Vanilla JS.</p><ul class="postList"><li name="6bac" id="6bac" class="graf graf--li graf-after--p"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">Modularity</strong></code></li><li name="3fc9" id="3fc9" class="graf graf--li graf-after--li">To avoid the mess of many event listeners and template strings, React gives you the benefit of a lot of modularity.</li><li name="20d5" id="20d5" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">Easy to start</strong></code></li><li name="8e3e" id="8e3e" class="graf graf--li graf-after--li">No specials tools are needed to use Basic React.</li><li name="f1a2" id="f1a2" class="graf graf--li graf-after--li">You can start working directly with <code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">createElement</strong></code> method in React.</li><li name="2a43" id="2a43" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">Declarative Programming</strong></code></li><li name="c587" id="c587" class="graf graf--li graf-after--li">React is declarative in nature, utilizing either it’s build in createElement method or the higher-level language known as JSX.</li><li name="866d" id="866d" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">Reusability</strong></code></li><li name="eff3" id="eff3" class="graf graf--li graf-after--li">Create elements that can be re-used over and over.<br><strong class="markup--strong markup--li-strong">One-flow of data</strong></li><li name="5c6e" id="5c6e" class="graf graf--li graf-after--li">React apps are built as a combination of parent and child components.</li><li name="5a30" id="5a30" class="graf graf--li graf-after--li">Parents can have one or more child components, all children have parents.</li><li name="d6c8" id="d6c8" class="graf graf--li graf-after--li">Data is never passed from child to the parent.</li><li name="dc54" id="dc54" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">Virtual DOM</strong></code> : React provides a Virtual DOM that acts as an agent between the real DOM and the developer to help debug, maintain, and provide general use.</li><li name="90bf" id="90bf" class="graf graf--li graf-after--li">Due to this usage, React handles web pages much more intelligently; making it one of the speediest Front End Libraries available.</li></ul><figure name="a666" id="a666" class="graf graf--figure graf--iframe graf-after--li graf--trailing"><script src="https://gist.github.com/bgoonz/5ad0eef44542b659c7aa891191407f6b.js"></script></figure></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/647ba595e607"><time class="dt-published" datetime="2021-07-01T05:41:40.999Z">July 1, 2021</time></a>.</p><p><a href="https://medium.com/@bryanguner/react-tutorial-from-basics-647ba595e607" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 10, 2021.</p></footer></article></body></html>

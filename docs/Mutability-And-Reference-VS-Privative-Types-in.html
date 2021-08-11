@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Mutability And Reference VS Privative Types in JavaScript</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Mutability And Reference VS Privative Types in JavaScript</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Mutability &amp;&amp; Primitive &amp;&amp; Reference Examples
+</section>
+<section data-field="body" class="e-content">
+<section name="1722" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="1180" id="1180" class="graf graf--h3 graf--leading graf--title">Mutability And Reference VS Privative Types in JavaScript</h3><h3 name="d07b" id="d07b" class="graf graf--h3 graf-after--h3">Mutability &amp;&amp; Primitive &amp;&amp; Reference Examples</h3><figure name="cc02" id="cc02" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*J3mKJ-lWgfS3qi5E.png" data-width="1174" data-height="672" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*J3mKJ-lWgfS3qi5E.png"></figure><p name="a993" id="a993" class="graf graf--p graf-after--figure"><a href="https://doesitmutate.xyz/" data-href="https://doesitmutate.xyz/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Mutability</em></strong></a></p><p name="8152" id="8152" class="graf graf--p graf-after--p">In JavaScript, <code class="markup--code markup--p-code">String</code> values are immutable, which means that they cannot be altered once created.</p><p name="441e" id="441e" class="graf graf--p graf-after--p">For example, the following code:</p><pre name="0a4e" id="0a4e" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">var myStr = &quot;Bob&quot;;<br>myStr[0] = &quot;J&quot;;</code></pre><p name="4649" id="4649" class="graf graf--p graf-after--pre">cannot change the value of <code class="markup--code markup--p-code">myStr</code> to <code class="markup--code markup--p-code">Job</code>, because the contents of <code class="markup--code markup--p-code">myStr</code> cannot be altered. Note that this does <em class="markup--em markup--p-em">not</em> mean that <code class="markup--code markup--p-code">myStr</code> cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change <code class="markup--code markup--p-code">myStr</code> would be to assign it with a new string, like this:</p><pre name="0d91" id="0d91" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">var myStr = &quot;Bob&quot;;<br>myStr = &quot;Job&quot;;</code></pre><h3 name="4e96" id="4e96" class="graf graf--h3 graf-after--pre">Objects are passed by reference, are mutable, and can be modified by our functions:</h3><pre name="a5c2" id="a5c2" class="graf graf--pre graf-after--h3"><code class="markup--code markup--pre-code">function rotateLeft(arr, num) {<br>    for (let i = 0; i &lt; num; i++) {<br>        let el = arr.pop();<br>        arr.unshift(el);<br>    }<br>}<br>let myArr = [1, 2, 3, 4, 5, ];<br>rotateLeft(myArr, 2);<br>console.log(myArr);</code></pre><p name="cf67" id="cf67" class="graf graf--p graf-after--pre">Strings are passed by value, are immutable, and a new array is constructed and returned, because it cannot be changed in place.</p><pre name="ab96" id="ab96" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">function rotateString(str, num) {<br>    return str.slice(num) + str.slice(0, num);<br>}</code></pre><pre name="1af4" id="1af4" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">let str = &quot;foobar&quot;;<br>let ret = rotateString(str, 3);<br>console.log(str);<br>console.log(ret);</code></pre><h3 name="53e8" id="53e8" class="graf graf--h3 graf-after--pre">Dereferencing</h3><h4 name="cef2" id="cef2" class="graf graf--h4 graf-after--h3">Arrays</h4><p name="9a00" id="9a00" class="graf graf--p graf-after--h4">To dereference an array, use <code class="markup--code markup--p-code">let [var1, var2]</code> syntax.</p><pre name="ac9a" id="ac9a" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">let arr = [&#39;one&#39;, &#39;two&#39;, &#39;three&#39;];</code></pre><pre name="e672" id="e672" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">let [first] = arr;<br>console.log(first);</code></pre><h4 name="0c48" id="0c48" class="graf graf--h4 graf-after--pre">Objects</h4><p name="5749" id="5749" class="graf graf--p graf-after--h4">To dereference attributes from an object, use <code class="markup--code markup--p-code">let {}</code> syntax.</p><figure name="b096" id="b096" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/bgoonz/c28f9b42a73b79d534dfa8afefb55e7d.js"></script></figure><figure name="a0f5" id="a0f5" class="graf graf--figure graf--iframe graf-after--figure"><script src="https://gist.github.com/bgoonz/61c3fb8daa8dc24c3383b8b31ef503c0.js"></script></figure><h3 name="bd13" id="bd13" class="graf graf--h3 graf-after--figure">Primitive Data Types in Depth</h3></div><div class="section-inner sectionLayout--fullWidth"><figure name="b1c9" id="b1c9" class="graf graf--figure graf--layoutFillWidth graf-after--h3"><img class="graf-image" data-image-id="1*mRr-4QeqbjcMUTtQQNOlEw.png" data-width="1921" data-height="3313" src="https://cdn-images-1.medium.com/max/2560/1*mRr-4QeqbjcMUTtQQNOlEw.png"></figure></div><div class="section-inner sectionLayout--insetColumn"><h3 name="203f" id="203f" class="graf graf--h3 graf-after--figure">Check Out My New Blog:</h3><div name="9f01" id="9f01" class="graf graf--mixtapeEmbed graf-after--h3 graf--trailing"><a href="https://best-celery-b2d7c.netlify.app/" data-href="https://best-celery-b2d7c.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://best-celery-b2d7c.netlify.app/"><strong class="markup--strong markup--mixtapeEmbed-strong">Web-Dev-Hub</strong><br><em class="markup--em markup--mixtapeEmbed-em">Bryan </em>best-celery-b2d7c.netlify.app</a><a href="https://best-celery-b2d7c.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="bd673859c8b5712a866f715624951ade" data-thumbnail-img-id="0*2O4C9snYXOWmFhqF" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*2O4C9snYXOWmFhqF);"></a></div></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/5294422db4b0"><time class="dt-published" datetime="2021-05-27T15:33:05.490Z">May 27, 2021</time></a>.</p><p><a href="https://medium.com/@bryanguner/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 10, 2021.</p></footer></article></body></html>

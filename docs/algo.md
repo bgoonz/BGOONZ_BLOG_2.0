@@ -335,8 +335,8 @@ indexvalue0 … this is the first value, stored at zero position
         console.log(unsortedArray.sort());
         // Results: ["Alphabet", "Computer", "Computer Science", "Products", "Zoo" ]
 
-2. Objects
-----------
+4.  Objects
+    -------
 
 Think of objects as a logical grouping of a bunch of properties.
 
@@ -583,96 +583,11 @@ Complexity Average Access Search Insertion Deletion
 
 -   O(n) O(n) O(n) &gt; *The code*
 
-    function Set() {
-        this.values = [];
-        this.numberOfValues = 0;
-    }
+    function Set() { this.values = \[\]; this.numberOfValues = 0; }
 
-    Set.prototype.add = function (value) {
-        if (!~this.values.indexOf(value)) {
-            this.values.push(value);
-            this.numberOfValues++;
-        }
-    };
-    Set.prototype.remove = function (value) {
-        let index = this.values.indexOf(value);
-        if (~index) {
-            this.values.splice(index, 1);
-            this.numberOfValues--;
-        }
-    };
-    Set.prototype.contains = function (value) {
-        return this.values.indexOf(value) !== -1;
-    };
-    Set.prototype.union = function (set) {
-        let newSet = new Set();
-        set.values.forEach(function (value) {
-            newSet.add(value);
-        });
-        this.values.forEach(function (value) {
-            newSet.add(value);
-        });
-        return newSet;
-    };
-    Set.prototype.intersect = function (set) {
-        let newSet = new Set();
-        this.values.forEach(function (value) {
-            if (set.contains(value)) {
-                newSet.add(value);
-            }
-        });
-        return newSet;
-    };
-    Set.prototype.difference = function (set) {
-        let newSet = new Set();
-        this.values.forEach(function (value) {
-            if (!set.contains(value)) {
-                newSet.add(value);
-            }
-        });
-        return newSet;
-    };
-    Set.prototype.isSubset = function (set) {
-        return set.values.every(function (value) {
-            return this.contains(value);
-        }, this);
-    };
-    Set.prototype.length = function () {
-        return this.numberOfValues;
-    };
-    Set.prototype.print = function () {
-        console.log(this.values.join(' '));
-    };
+    Set.prototype.add = function (value) { if (!~this.values.indexOf(value)) { this.values.push(value); this.numberOfValues++; } }; Set.prototype.remove = function (value) { let index = this.values.indexOf(value); if (~index) { this.values.splice(index, 1); this.numberOfValues–; } }; Set.prototype.contains = function (value) { return this.values.indexOf(value) !== -1; }; Set.prototype.union = function (set) { let newSet = new Set(); set.values.forEach(function (value) { newSet.add(value); }); this.values.forEach(function (value) { newSet.add(value); }); return newSet; }; Set.prototype.intersect = function (set) { let newSet = new Set(); this.values.forEach(function (value) { if (set.contains(value)) { newSet.add(value); } }); return newSet; }; Set.prototype.difference = function (set) { let newSet = new Set(); this.values.forEach(function (value) { if (!set.contains(value)) { newSet.add(value); } }); return newSet; }; Set.prototype.isSubset = function (set) { return set.values.every(function (value) { return this.contains(value); }, this); }; Set.prototype.length = function () { return this.numberOfValues; }; Set.prototype.print = function () { console.log(this.values.join(’ ’)); };
 
-    let set = new Set();
-    set.add(1);
-    set.add(2);
-    set.add(3);
-    set.add(4);
-    set.print(); // => 1 2 3 4
-    set.remove(3);
-    set.print(); // => 1 2 4
-    console.log('contains 4 is true:', set.contains(4)); // => true
-    console.log('contains 3 is false:', set.contains(3)); // => false
-    console.log('---');
-    let set1 = new Set();
-    set1.add(1);
-    set1.add(2);
-    let set2 = new Set();
-    set2.add(2);
-    set2.add(3);
-    let set3 = set2.union(set1);
-    set3.print(); // => 1 2 3
-    let set4 = set2.intersect(set1);
-    set4.print(); // => 2
-    let set5 = set.difference(set3); // 1 2 4 diff 1 2 3
-    set5.print(); // => 4
-    let set6 = set3.difference(set); // 1 2 3 diff 1 2 4
-    set6.print(); // => 3
-    console.log('set1 subset of set is true:', set.isSubset(set1)); // => true
-    console.log('set2 subset of set is false:', set.isSubset(set2)); // => false
-    console.log('set1 length gives 2:', set1.length()); // => 2
-    console.log('set3 length gives 3:', set3.length()); // => 3
+    let set = new Set(); set.add(1); set.add(2); set.add(3); set.add(4); set.print(); // =&gt; 1 2 3 4 set.remove(3); set.print(); // =&gt; 1 2 4 console.log(‘contains 4 is true:’, set.contains(4)); // =&gt; true console.log(‘contains 3 is false:’, set.contains(3)); // =&gt; false console.log(‘—’); let set1 = new Set(); set1.add(1); set1.add(2); let set2 = new Set(); set2.add(2); set2.add(3); let set3 = set2.union(set1); set3.print(); // =&gt; 1 2 3 let set4 = set2.intersect(set1); set4.print(); // =&gt; 2 let set5 = set.difference(set3); // 1 2 4 diff 1 2 3 set5.print(); // =&gt; 4 let set6 = set3.difference(set); // 1 2 3 diff 1 2 4 set6.print(); // =&gt; 3 console.log(‘set1 subset of set is true:’, set.isSubset(set1)); // =&gt; true console.log(‘set2 subset of set is false:’, set.isSubset(set2)); // =&gt; false console.log(‘set1 length gives 2:’, set1.length()); // =&gt; 2 console.log(‘set3 length gives 3:’, set3.length()); // =&gt; 3
 
 The Singly Linked List
 ----------------------

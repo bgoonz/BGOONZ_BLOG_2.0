@@ -4,7 +4,7 @@ Search is an important part of almost any site. Once you have a lot of content, 
 
 ![nope](https://www.stackbit.com/images/1593607475-nope.jpg)
 
-In this post, we’re going to explore adding search to a site built with Gatsby. We’ll use a service called [Algolia](https://www.algolia.com/) for the search API. This is a commercial offering, but it has a generous free tier. The example site was built with Stackbit, though there’s nothing in the code that we’ll discuss that is Stackbit specific (for reference, you can see the full project code at <https://github.com/remotesynth/good-celery>). Ok, enough intro…let’s get coding.
+In this post, we’re going to explore adding search to a site built with Gatsby. We’ll use a service called [Algolia](https://www.algolia.com/) for the search API. This is a commercial offering, but it has a generous free tier. The example site was built with Stackbit, though there’s nothing in the code that we’ll discuss that is Stackbit specific (for reference, you can see the full project code at <a href="https://github.com/remotesynth/good-celery" class="uri">https://github.com/remotesynth/good-celery</a>). Ok, enough intro…let’s get coding.
 
 Setting Up Algolia
 ------------------
