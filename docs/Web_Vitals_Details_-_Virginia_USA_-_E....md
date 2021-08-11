@@ -3,9 +3,9 @@
 -   [Home](/)
 -   [Test History](/testlog/1/)
 -   [API](https://product.webpagetest.org/api)
--   [Forums](https://forums.webpagetest.org/ "Forums (opens in a new tab)")
--   [Docs](https://docs.webpagetest.org/ "Docs (opens in a new tab)")
--   [Blog](https://blog.webpagetest.org/ "Blog (opens in a new tab)")
+-   [Forums](https://forums.webpagetest.org/ 'Forums (opens in a new tab)')
+-   [Docs](https://docs.webpagetest.org/ 'Docs (opens in a new tab)')
+-   [Blog](https://blog.webpagetest.org/ 'Blog (opens in a new tab)')
 -   [About](/about)
 
 <!-- -->
@@ -15,51 +15,44 @@
 
 -   [](/performance_optimization.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1#first_byte_time)
 
-    A
-    -
+    ## A
 
     First Byte Time
 
 -   [](/performance_optimization.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1#keep_alive_enabled)
 
-    A
-    -
+    ## A
 
     Keep-alive Enabled
 
 -   [](/performance_optimization.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1#compress_text)
 
-    A
-    -
+    ## A
 
     Compress Transfer
 
 -   [](/performance_optimization.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1#compress_images)
 
-    A
-    -
+    ## A
 
     Compress Images
 
 -   [](/performance_optimization.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1#cache_static_content)
 
-    D
-    -
+    ## D
 
     Cache static content
 
 -   [](/performance_optimization.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1#use_of_cdn)
 
-    ✓
-    -
+    ## ✓
 
     Effective use of CDN
 
-Web page performance test result for <a href="https://bgoonz-blog.netlify.app/" class="url cufon-dincond_black" title="https://bgoonz-blog.netlify.app/">https://bgoonz-blog.netlify.app/</a>
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Web page performance test result for <a href="https://bgoonz-blog.netlify.app/" class="url cufon-dincond_black" title="https://bgoonz-blog.netlify.app/">https://bgoonz-blog.netlify.app/</a>
 
 **From:** Virginia USA - EC2 - **Chrome** - **Cable**  
-<span class="jsdate" date="1627397740">07/27/21 14:55:40</span>  
+<span class="jsdate" date="1627397740">07/27/21 14:55:40</span>
 
 -   [Summary](/result/210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178/)
 -   [Details](/result/210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178/1/details/)
@@ -69,8 +62,8 @@ Web page performance test result for <a href="https://bgoonz-blog.netlify.app/" 
 -   [Domains](/result/210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178/1/domains/)
 -   [Processing](/breakdownTimeline.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1)
 -   [Screenshot](/result/210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178/1/screen_shot/)
--   [Image Analysis![](/images/icon-external.svg)](http://webspeedtest.cloudinary.com/results/210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178 "Cloudinary Image Analysis (external) - Opens in a new window.")
--   [Request Map![](/images/icon-external.svg)](https://requestmap.herokuapp.com/render/210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178/ "Request Map (external) - Opens in a new window.")
+-   [Image Analysis![](/images/icon-external.svg)](http://webspeedtest.cloudinary.com/results/210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178 'Cloudinary Image Analysis (external) - Opens in a new window.')
+-   [Request Map![](/images/icon-external.svg)](https://requestmap.herokuapp.com/render/210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178/ 'Request Map (external) - Opens in a new window.')
 
 Google [Web Vitals ![](/images/icon-external.svg)](https://web.dev/vitals/) Diagnostic Information
 
@@ -92,8 +85,7 @@ Total Blocking Time
 
 17958 ms
 
-Largest Contentful Paint (103908 ms)
-------------------------------------
+## Largest Contentful Paint (103908 ms)
 
 <span class="small">[View as Filmstrip](/video/compare.php?tests=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178-r:1-c:0&highlightLCP=1) - [View Video](/video/view.php?tests=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178-r:1-c:0) - [About Largest Contentful Paint (LCP) ![](/images/icon-external.svg)](https://web.dev/lcp/)</span>
 
@@ -160,8 +152,7 @@ LCP: 103908 ms
     -   **background-image**: url("https://bgoonz-blog.netlify.app/images/cool%20annimation.gif")
 -   **type**: image
 
-Cumulative Layout Shift (0.095)
--------------------------------
+## Cumulative Layout Shift (0.095)
 
 <span class="small">[View as Filmstrip](/video/compare.php?tests=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178-r:1-c:0&highlightCLS=1) - [View Video](/video/view.php?tests=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178-r:1-c:0) - [About Cumulative Layout Shift (CLS) ![](/images/icon-external.svg)](https://web.dev/cls/)</span>
 
@@ -181,16 +172,13 @@ Hover over any image to see the previous frame and the effect of the layout shif
 
 -   <figure><embed src="/thumbnail.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&amp;fit=400&amp;file=video_1/ms_009000.jpg" class="thumbnail autohide" width="400" height="203" /><figcaption>8790 ms (0.00013)</figcaption></figure>
 
-Total Blocking Time (17958 ms)
-------------------------------
+## Total Blocking Time (17958 ms)
 
 <span class="small">[About Total Blocking Time (TBT) ![](/images/icon-external.svg)](https://web.dev/tbt/)</span>
 
-[<embed src="/waterfall.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&amp;run=1&amp;cached=&amp;step=1&amp;dots=0&amp;bw=0&amp;max=114.588753&amp;requests=1,133,137,154,176,180,197,209,213,230,501,767,872,972,973,975" class="waterfall-image" />](/chrome/timeline.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1 "View in Chrome Dev Tools Performance Panel")
+[<embed src="/waterfall.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&amp;run=1&amp;cached=&amp;step=1&amp;dots=0&amp;bw=0&amp;max=114.588753&amp;requests=1,133,137,154,176,180,197,209,213,230,501,767,872,972,973,975" class="waterfall-image" />](/chrome/timeline.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1 'View in Chrome Dev Tools Performance Panel')
 
-  
-
-[View in Chrome Dev Tools Performance Panel ![](/images/icon-external.svg)](/chrome/timeline.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1 "View in Chrome Dev Tools Performance Panel")
+[View in Chrome Dev Tools Performance Panel ![](/images/icon-external.svg)](/chrome/timeline.php?test=210727_AiDc19_c38ddbe8beac9afc98e69b3afe074178&run=1 'View in Chrome Dev Tools Performance Panel')
 
 <table><caption> Main Thread Blocking Time by Script Origin </caption><thead><tr class="header"><th>Script Origin</th><th>Blocking Time (ms)</th></tr></thead><tbody><tr class="odd"><td>replit.com</td><td>5204</td></tr><tr class="even"><td>sp.repl.it</td><td>532</td></tr></tbody></table>
 

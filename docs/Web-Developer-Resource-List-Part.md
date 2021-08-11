@@ -1,9 +1,8 @@
-Web Developer Resource List Part 4
-==================================
+# Web Developer Resource List Part 4
 
 A all encompassing list of tools and resources for web developers
 
-------------------------------------------------------------------------
+---
 
 ### Web Developer Resource List Part 4
 
@@ -434,7 +433,7 @@ A all encompassing list of tools and resources for web developers
 
 ### HTML
 
--   <span id="b1f9"><a href="https://github.com/joshbuchea/HEAD" class="markup--anchor markup--li-anchor">github.com/joshbuchea/HEAD</a>: the definitive resource for everything that *could* go in the head of your document</span>
+-   <span id="b1f9"><a href="https://github.com/joshbuchea/HEAD" class="markup--anchor markup--li-anchor">github.com/joshbuchea/HEAD</a>: the definitive resource for everything that _could_ go in the head of your document</span>
 -   <span id="f905"><a href="https://metatags.io/" class="markup--anchor markup--li-anchor">MetaTags.io</a>: Preview, Edit and Generate</span>
 -   <span id="b80c"><a href="https://www.heymeta.com/" class="markup--anchor markup--li-anchor">HEY META</a>: Website Meta Tag Check</span>
 -   <span id="126e"><a href="https://richpreview.com/" class="markup--anchor markup--li-anchor">Rich Link Preview</a></span>

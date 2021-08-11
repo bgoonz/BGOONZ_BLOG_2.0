@@ -1,9 +1,8 @@
-Web Dev Resources
-=================
+# Web Dev Resources
 
 Web Development
 
-------------------------------------------------------------------------
+---
 
 ### Web Dev Resources
 
@@ -98,7 +97,7 @@ Here’s a repo where I hoard resource lists!
 <a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong><br />
 <em>Inspired by Awesome Lists. Contribute to bgoonz/Cumulative-Resource-List development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 #### If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:
 
