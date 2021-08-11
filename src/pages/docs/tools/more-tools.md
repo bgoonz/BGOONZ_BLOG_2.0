@@ -1,7 +1,7 @@
 ---
 title: 'Tools Page 2:'
 weight: 0
-excerpt: lorem-ipsum
+excerpt: more tools that I have created or collaborated on.
 seo:
     title: ''
     description: ''
