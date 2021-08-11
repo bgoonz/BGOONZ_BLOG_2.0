@@ -64,8 +64,8 @@ There are four flavors of Linked List you should be familiar with when walking i
 
 For instance:
 
-- <span id="a0e8">Any type of Linked List can be implemented Circularly (e.g. A Circular Doubly Linked List).</span>
-- <span id="c0ff">A Doubly Linked List is actually just a special case of a Multiply Linked List.</span>
+-   <span id="a0e8">Any type of Linked List can be implemented Circularly (e.g. A Circular Doubly Linked List).</span>
+-   <span id="c0ff">A Doubly Linked List is actually just a special case of a Multiply Linked List.</span>
 
 You are most likely to encounter Singly and Doubly Linked Lists in your upcoming job search, so we are going to focus exclusively on those two moving forward. However, in more senior level interviews, it is very valuable to have some familiarity with the other types of Linked Lists. Though you may not actually code them out, _you will win extra points by illustrating your ability to weigh the tradeoffs of your technical decisions_ by discussing how your choice of Linked List type may affect the efficiency of the solutions you propose.
 
@@ -238,22 +238,22 @@ Additionally, Stacks and Queues serve as the essential underlying data structure
 
 #### Stacks
 
-- <span id="f63a">The Call Stack is a Stack data structure, and is used to manage the order of function invocations in your code.</span>
-- <span id="6b24">Browser History is often implemented using a Stack, with one great example being the browser history object in the very popular React Router module.</span>
-- <span id="098f">Undo/Redo functionality in just about any application. For example:</span>
-- <span id="f15d">When you’re coding in your text editor, each of the actions you take on your keyboard are recorded by `push`ing that event to a Stack.</span>
-- <span id="e303">When you hit \[cmd + z\] to undo your most recent action, that event is `pop`ed off the Stack, because the last event that occured should be the first one to be undone (LIFO).</span>
-- <span id="9248">When you hit \[cmd + y\] to redo your most recent action, that event is `push`ed back onto the Stack.</span>
+-   <span id="f63a">The Call Stack is a Stack data structure, and is used to manage the order of function invocations in your code.</span>
+-   <span id="6b24">Browser History is often implemented using a Stack, with one great example being the browser history object in the very popular React Router module.</span>
+-   <span id="098f">Undo/Redo functionality in just about any application. For example:</span>
+-   <span id="f15d">When you’re coding in your text editor, each of the actions you take on your keyboard are recorded by `push`ing that event to a Stack.</span>
+-   <span id="e303">When you hit \[cmd + z\] to undo your most recent action, that event is `pop`ed off the Stack, because the last event that occured should be the first one to be undone (LIFO).</span>
+-   <span id="9248">When you hit \[cmd + y\] to redo your most recent action, that event is `push`ed back onto the Stack.</span>
 
 #### Queues
 
-- <span id="7c8d">Printers use a Queue to manage incoming jobs to ensure that documents are printed in the order they are received.</span>
-- <span id="89e7">Chat rooms, online video games, and customer service phone lines use a Queue to ensure that patrons are served in the order they arrive.</span>
-- <span id="c02a">In the case of a Chat Room, to be admitted to a size-limited room.</span>
-- <span id="353e">In the case of an Online Multi-Player Game, players wait in a lobby until there is enough space and it is their turn to be admitted to a game.</span>
-- <span id="6a8e">In the case of a Customer Service Phone Line…you get the point.</span>
-- <span id="0ad5">As a more advanced use case, Queues are often used as components or services in the system design of a service-oriented architecture. A very popular and easy to use example of this is Amazon’s Simple Queue Service (SQS), which is a part of their Amazon Web Services (AWS) offering.</span>
-- <span id="48e7">You would add this service to your system between two other services, one that is sending information for processing, and one that is receiving information to be processed, when the volume of incoming requests is high and the integrity of the order with which those requests are processed must be maintained.</span>
+-   <span id="7c8d">Printers use a Queue to manage incoming jobs to ensure that documents are printed in the order they are received.</span>
+-   <span id="89e7">Chat rooms, online video games, and customer service phone lines use a Queue to ensure that patrons are served in the order they arrive.</span>
+-   <span id="c02a">In the case of a Chat Room, to be admitted to a size-limited room.</span>
+-   <span id="353e">In the case of an Online Multi-Player Game, players wait in a lobby until there is enough space and it is their turn to be admitted to a game.</span>
+-   <span id="6a8e">In the case of a Customer Service Phone Line…you get the point.</span>
+-   <span id="0ad5">As a more advanced use case, Queues are often used as components or services in the system design of a service-oriented architecture. A very popular and easy to use example of this is Amazon’s Simple Queue Service (SQS), which is a part of their Amazon Web Services (AWS) offering.</span>
+-   <span id="48e7">You would add this service to your system between two other services, one that is sending information for processing, and one that is receiving information to be processed, when the volume of incoming requests is high and the integrity of the order with which those requests are processed must be maintained.</span>
 
 **If you found this guide helpful feel free to checkout my other articles:**
 

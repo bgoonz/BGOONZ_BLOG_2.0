@@ -1,7 +1,7 @@
 ---
 title: Blog
 subtitle: Exclusive Blog Content
-image: images/webscraping.png
+image: images/maroon-onion.gif
 has_more_link: true
 more_link_text: Read more
 seo:

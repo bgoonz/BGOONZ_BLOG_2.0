@@ -93,69 +93,69 @@ A set of questions you should use before handing off your application to the cli
 
 ### Help Google find your pages
 
-- <span id="6fe9">Ensure that all pages on the site can be reached by a link from another findable page. The referring link should include either text or, for images, an alt attribute, that is relevant to the target page. Crawlable links are `<a>` <a href="https://developers.google.com/search/docs/advanced/guidelines/links-crawlable" class="markup--anchor markup--li-anchor">tags with an href attribute</a>.</span>
-- <span id="f878">Provide a <a href="http://sitemaps.org/" class="markup--anchor markup--li-anchor">sitemap file</a> with links that point to the important pages on your site. Also provide a page with a human-readable list of links to these pages (sometimes called a site index or site map page).</span>
-- <span id="2ee0">Limit the number of links on a page to a reasonable number (a few thousand at most).</span>
-- <span id="9235">Make sure that your web server correctly supports the `If-Modified-Since` HTTP header. This feature directs your web server to tell Google if your content has changed since we last crawled your site. Supporting this feature saves you bandwidth and overhead.</span>
-- <span id="a839">Use the robots.txt file on your web server to manage your crawling budget by preventing crawling of infinite spaces such as search result pages. Keep your robots.txt file up to date. <a href="https://developers.google.com/search/docs/advanced/robots/robots-faq" class="markup--anchor markup--li-anchor">Learn how to manage crawling with the robots.txt file</a>. Test the coverage and syntax of your robots.txt file using the <a href="https://www.google.com/webmasters/tools/robots-testing-tool" class="markup--anchor markup--li-anchor">robots.txt Tester</a>.</span>
+-   <span id="6fe9">Ensure that all pages on the site can be reached by a link from another findable page. The referring link should include either text or, for images, an alt attribute, that is relevant to the target page. Crawlable links are `<a>` <a href="https://developers.google.com/search/docs/advanced/guidelines/links-crawlable" class="markup--anchor markup--li-anchor">tags with an href attribute</a>.</span>
+-   <span id="f878">Provide a <a href="http://sitemaps.org/" class="markup--anchor markup--li-anchor">sitemap file</a> with links that point to the important pages on your site. Also provide a page with a human-readable list of links to these pages (sometimes called a site index or site map page).</span>
+-   <span id="2ee0">Limit the number of links on a page to a reasonable number (a few thousand at most).</span>
+-   <span id="9235">Make sure that your web server correctly supports the `If-Modified-Since` HTTP header. This feature directs your web server to tell Google if your content has changed since we last crawled your site. Supporting this feature saves you bandwidth and overhead.</span>
+-   <span id="a839">Use the robots.txt file on your web server to manage your crawling budget by preventing crawling of infinite spaces such as search result pages. Keep your robots.txt file up to date. <a href="https://developers.google.com/search/docs/advanced/robots/robots-faq" class="markup--anchor markup--li-anchor">Learn how to manage crawling with the robots.txt file</a>. Test the coverage and syntax of your robots.txt file using the <a href="https://www.google.com/webmasters/tools/robots-testing-tool" class="markup--anchor markup--li-anchor">robots.txt Tester</a>.</span>
 
 **Ways to help Google find your site:**
 
-- <span id="417a"><a href="https://developers.google.com/search/docs/advanced/crawling/ask-google-to-recrawl" class="markup--anchor markup--li-anchor">Ask Google to crawl your pages</a>.</span>
-- <span id="2ba7">Make sure that any sites that should know about your pages are aware your site is online.</span>
+-   <span id="417a"><a href="https://developers.google.com/search/docs/advanced/crawling/ask-google-to-recrawl" class="markup--anchor markup--li-anchor">Ask Google to crawl your pages</a>.</span>
+-   <span id="2ba7">Make sure that any sites that should know about your pages are aware your site is online.</span>
 
 ### Help Google understand your pages
 
-- <span id="6069">Create a useful, information-rich site, and write pages that clearly and accurately describe your content.</span>
-- <span id="16eb">Think about the words users would type to find your pages, and make sure that your site actually includes those words within it.</span>
-- <span id="5f2b">Ensure that your `<title>` elements and `alt` attributes are descriptive, specific, and accurate.</span>
-- <span id="86c8">Design your site to have a clear conceptual page hierarchy.</span>
-- <span id="aed5">Follow our recommended best practices for <a href="https://developers.google.com/search/docs/advanced/guidelines/google-images" class="markup--anchor markup--li-anchor">images</a>, <a href="https://developers.google.com/search/docs/advanced/guidelines/video" class="markup--anchor markup--li-anchor">video</a>, and <a href="https://developers.google.com/search/docs/guides/intro-structured-data" class="markup--anchor markup--li-anchor">structured data</a>.</span>
-- <span id="67f4">When using a content management system (for example, Wix or WordPress), make sure that it creates pages and links that search engines can crawl.</span>
-- <span id="5fcd">To help Google fully understand your site’s contents, allow all site assets that would significantly affect page rendering to be crawled: for example, CSS and JavaScript files that affect the understanding of the pages. The Google indexing system renders a web page as the user would see it, including images, CSS, and JavaScript files. To see which page assets that Googlebot cannot crawl use the <a href="https://support.google.com/webmasters/answer/9012289" class="markup--anchor markup--li-anchor">URL Inspection tool</a>; to debug directives in your robots.txt file, use the <a href="https://support.google.com/webmasters/answer/6062598" class="markup--anchor markup--li-anchor">robots.txt Tester</a> tool.</span>
-- <span id="b8ef">Allow search bots to crawl your site without session IDs or URL parameters that track their path through the site. These techniques are useful for tracking individual user behavior, but the access pattern of bots is entirely different. Using these techniques may result in incomplete indexing of your site, as bots may not be able to eliminate URLs that look different but actually point to the same page.</span>
-- <span id="e5c6">Make your site’s important content visible by default. Google is able to crawl HTML content hidden inside navigational elements such as tabs or expanding sections, however we consider this content less accessible to users, and believe that you should make your most important information visible in the default page view.</span>
-- <span id="58bf">Make a reasonable effort to ensure that advertisement links on your pages do not affect search engine rankings. For example, use <a href="https://developers.google.com/search/docs/advanced/robots/intro" class="markup--anchor markup--li-anchor">robots.txt</a>, `rel="nofollow"`, or `rel="sponsored"` to prevent advertisement links from being followed by a crawler.</span>
+-   <span id="6069">Create a useful, information-rich site, and write pages that clearly and accurately describe your content.</span>
+-   <span id="16eb">Think about the words users would type to find your pages, and make sure that your site actually includes those words within it.</span>
+-   <span id="5f2b">Ensure that your `<title>` elements and `alt` attributes are descriptive, specific, and accurate.</span>
+-   <span id="86c8">Design your site to have a clear conceptual page hierarchy.</span>
+-   <span id="aed5">Follow our recommended best practices for <a href="https://developers.google.com/search/docs/advanced/guidelines/google-images" class="markup--anchor markup--li-anchor">images</a>, <a href="https://developers.google.com/search/docs/advanced/guidelines/video" class="markup--anchor markup--li-anchor">video</a>, and <a href="https://developers.google.com/search/docs/guides/intro-structured-data" class="markup--anchor markup--li-anchor">structured data</a>.</span>
+-   <span id="67f4">When using a content management system (for example, Wix or WordPress), make sure that it creates pages and links that search engines can crawl.</span>
+-   <span id="5fcd">To help Google fully understand your site’s contents, allow all site assets that would significantly affect page rendering to be crawled: for example, CSS and JavaScript files that affect the understanding of the pages. The Google indexing system renders a web page as the user would see it, including images, CSS, and JavaScript files. To see which page assets that Googlebot cannot crawl use the <a href="https://support.google.com/webmasters/answer/9012289" class="markup--anchor markup--li-anchor">URL Inspection tool</a>; to debug directives in your robots.txt file, use the <a href="https://support.google.com/webmasters/answer/6062598" class="markup--anchor markup--li-anchor">robots.txt Tester</a> tool.</span>
+-   <span id="b8ef">Allow search bots to crawl your site without session IDs or URL parameters that track their path through the site. These techniques are useful for tracking individual user behavior, but the access pattern of bots is entirely different. Using these techniques may result in incomplete indexing of your site, as bots may not be able to eliminate URLs that look different but actually point to the same page.</span>
+-   <span id="e5c6">Make your site’s important content visible by default. Google is able to crawl HTML content hidden inside navigational elements such as tabs or expanding sections, however we consider this content less accessible to users, and believe that you should make your most important information visible in the default page view.</span>
+-   <span id="58bf">Make a reasonable effort to ensure that advertisement links on your pages do not affect search engine rankings. For example, use <a href="https://developers.google.com/search/docs/advanced/robots/intro" class="markup--anchor markup--li-anchor">robots.txt</a>, `rel="nofollow"`, or `rel="sponsored"` to prevent advertisement links from being followed by a crawler.</span>
 
 ### Help visitors use your pages
 
-- <span id="76dc">Try to use text instead of images to display important names, content, or links. If you must use images for textual content, use the `alt` attribute to include a few words of descriptive text.</span>
-- <span id="d45e">Ensure that all links go to live web pages. Use <a href="https://validator.w3.org/" class="markup--anchor markup--li-anchor">valid HTML</a>.</span>
-- <span id="8b66">Optimize your page loading times. Fast sites make users happy and improve the overall quality of the web (especially for those users with slow Internet connections). Google recommends that you use tools like <a href="https://developers.google.com/speed/pagespeed/insights/" class="markup--anchor markup--li-anchor">PageSpeed Insights</a> and <a href="https://www.webpagetest.org/" class="markup--anchor markup--li-anchor">Webpagetest.org</a> to test the performance of your page.</span>
-- <span id="5f39">Design your site for all device types and sizes, including desktops, tablets, and smartphones. Use the <a href="https://search.google.com/test/mobile-friendly" class="markup--anchor markup--li-anchor">Mobile-Friendly Test</a> to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.</span>
-- <span id="5f9b">Ensure that your site <a href="https://developers.google.com/search/docs/advanced/guidelines/browser-compatibility" class="markup--anchor markup--li-anchor">appears correctly in different browsers</a>.</span>
-- <span id="717b">If possible, <a href="https://developers.google.com/search/docs/advanced/security/https" class="markup--anchor markup--li-anchor">secure your site’s connections</a> with HTTPS. Encrypting interactions between the user and your website is a good practice for communication on the web.</span>
-- <span id="4156">Ensure that your pages are useful for readers with visual impairments, for example, by testing usability with a screen-reader.</span>
+-   <span id="76dc">Try to use text instead of images to display important names, content, or links. If you must use images for textual content, use the `alt` attribute to include a few words of descriptive text.</span>
+-   <span id="d45e">Ensure that all links go to live web pages. Use <a href="https://validator.w3.org/" class="markup--anchor markup--li-anchor">valid HTML</a>.</span>
+-   <span id="8b66">Optimize your page loading times. Fast sites make users happy and improve the overall quality of the web (especially for those users with slow Internet connections). Google recommends that you use tools like <a href="https://developers.google.com/speed/pagespeed/insights/" class="markup--anchor markup--li-anchor">PageSpeed Insights</a> and <a href="https://www.webpagetest.org/" class="markup--anchor markup--li-anchor">Webpagetest.org</a> to test the performance of your page.</span>
+-   <span id="5f39">Design your site for all device types and sizes, including desktops, tablets, and smartphones. Use the <a href="https://search.google.com/test/mobile-friendly" class="markup--anchor markup--li-anchor">Mobile-Friendly Test</a> to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.</span>
+-   <span id="5f9b">Ensure that your site <a href="https://developers.google.com/search/docs/advanced/guidelines/browser-compatibility" class="markup--anchor markup--li-anchor">appears correctly in different browsers</a>.</span>
+-   <span id="717b">If possible, <a href="https://developers.google.com/search/docs/advanced/security/https" class="markup--anchor markup--li-anchor">secure your site’s connections</a> with HTTPS. Encrypting interactions between the user and your website is a good practice for communication on the web.</span>
+-   <span id="4156">Ensure that your pages are useful for readers with visual impairments, for example, by testing usability with a screen-reader.</span>
 
 ### Basic principles
 
-- <span id="0251">Make pages primarily for users, not for search engines.</span>
-- <span id="f565">Don’t deceive your users.</span>
-- <span id="5f8a">Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you’d feel comfortable explaining what you’ve done to a website that competes with you, or to a Google employee. Another useful test is to ask, “Does this help my users? Would I do this if search engines didn’t exist?”</span>
-- <span id="9acc">Think about what makes your website unique, valuable, or engaging. Make your website stand out from others in your field.</span>
+-   <span id="0251">Make pages primarily for users, not for search engines.</span>
+-   <span id="f565">Don’t deceive your users.</span>
+-   <span id="5f8a">Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you’d feel comfortable explaining what you’ve done to a website that competes with you, or to a Google employee. Another useful test is to ask, “Does this help my users? Would I do this if search engines didn’t exist?”</span>
+-   <span id="9acc">Think about what makes your website unique, valuable, or engaging. Make your website stand out from others in your field.</span>
 
 ### Specific guidelines
 
 **Avoid** the following techniques:
 
-- <span id="2686"><a href="https://developers.google.com/search/docs/advanced/guidelines/auto-gen-content" class="markup--anchor markup--li-anchor">Automatically generated content</a></span>
-- <span id="a921">Participating in <a href="https://developers.google.com/search/docs/advanced/guidelines/link-schemes" class="markup--anchor markup--li-anchor">link schemes</a></span>
-- <span id="bbd9">Creating pages with <a href="https://support.google.com/webmasters/answer/66361" class="markup--anchor markup--li-anchor">little or no original content</a></span>
-- <span id="7ddf"><a href="https://developers.google.com/search/docs/advanced/guidelines/cloaking" class="markup--anchor markup--li-anchor">Cloaking</a></span>
-- <span id="e9b8"><a href="https://developers.google.com/search/docs/advanced/guidelines/sneaky-redirects" class="markup--anchor markup--li-anchor">Sneaky redirects</a></span>
-- <span id="47d2"><a href="https://developers.google.com/search/docs/advanced/guidelines/hidden-text-links" class="markup--anchor markup--li-anchor">Hidden text or links</a></span>
-- <span id="7ae2"><a href="https://developers.google.com/search/docs/advanced/guidelines/doorway-pages" class="markup--anchor markup--li-anchor">Doorway pages</a></span>
-- <span id="98d8"><a href="https://developers.google.com/search/docs/advanced/guidelines/scraped-content" class="markup--anchor markup--li-anchor">Scraped content</a></span>
-- <span id="156f">Participating in <a href="https://developers.google.com/search/docs/advanced/guidelines/affiliate-programs" class="markup--anchor markup--li-anchor">affiliate programs without adding sufficient value</a></span>
-- <span id="42e4">Loading pages with <a href="https://developers.google.com/search/docs/advanced/guidelines/irrelevant-keywords" class="markup--anchor markup--li-anchor">irrelevant keywords</a></span>
-- <span id="f583">Creating pages with <a href="https://developers.google.com/search/docs/advanced/guidelines/malicious-behavior" class="markup--anchor markup--li-anchor">malicious behavior</a>, such as phishing or installing viruses, trojans, or other badware</span>
-- <span id="777a">Abusing <a href="https://developers.google.com/search/docs/guides/sd-policies" class="markup--anchor markup--li-anchor">structured data</a> markup</span>
-- <span id="6c9f">Sending <a href="https://developers.google.com/search/docs/advanced/guidelines/automated-queries" class="markup--anchor markup--li-anchor">automated queries</a> to Google</span>
+-   <span id="2686"><a href="https://developers.google.com/search/docs/advanced/guidelines/auto-gen-content" class="markup--anchor markup--li-anchor">Automatically generated content</a></span>
+-   <span id="a921">Participating in <a href="https://developers.google.com/search/docs/advanced/guidelines/link-schemes" class="markup--anchor markup--li-anchor">link schemes</a></span>
+-   <span id="bbd9">Creating pages with <a href="https://support.google.com/webmasters/answer/66361" class="markup--anchor markup--li-anchor">little or no original content</a></span>
+-   <span id="7ddf"><a href="https://developers.google.com/search/docs/advanced/guidelines/cloaking" class="markup--anchor markup--li-anchor">Cloaking</a></span>
+-   <span id="e9b8"><a href="https://developers.google.com/search/docs/advanced/guidelines/sneaky-redirects" class="markup--anchor markup--li-anchor">Sneaky redirects</a></span>
+-   <span id="47d2"><a href="https://developers.google.com/search/docs/advanced/guidelines/hidden-text-links" class="markup--anchor markup--li-anchor">Hidden text or links</a></span>
+-   <span id="7ae2"><a href="https://developers.google.com/search/docs/advanced/guidelines/doorway-pages" class="markup--anchor markup--li-anchor">Doorway pages</a></span>
+-   <span id="98d8"><a href="https://developers.google.com/search/docs/advanced/guidelines/scraped-content" class="markup--anchor markup--li-anchor">Scraped content</a></span>
+-   <span id="156f">Participating in <a href="https://developers.google.com/search/docs/advanced/guidelines/affiliate-programs" class="markup--anchor markup--li-anchor">affiliate programs without adding sufficient value</a></span>
+-   <span id="42e4">Loading pages with <a href="https://developers.google.com/search/docs/advanced/guidelines/irrelevant-keywords" class="markup--anchor markup--li-anchor">irrelevant keywords</a></span>
+-   <span id="f583">Creating pages with <a href="https://developers.google.com/search/docs/advanced/guidelines/malicious-behavior" class="markup--anchor markup--li-anchor">malicious behavior</a>, such as phishing or installing viruses, trojans, or other badware</span>
+-   <span id="777a">Abusing <a href="https://developers.google.com/search/docs/guides/sd-policies" class="markup--anchor markup--li-anchor">structured data</a> markup</span>
+-   <span id="6c9f">Sending <a href="https://developers.google.com/search/docs/advanced/guidelines/automated-queries" class="markup--anchor markup--li-anchor">automated queries</a> to Google</span>
 
 **Follow** good practices:
 
-- <span id="68a7">Monitoring your site for <a href="https://developers.google.com/search/docs/advanced/security/what-is-hacked" class="markup--anchor markup--li-anchor">hacking</a> and removing hacked content as soon as it appears</span>
-- <span id="8141">Preventing and removing <a href="https://developers.google.com/search/docs/advanced/guidelines/user-gen-spam" class="markup--anchor markup--li-anchor">user-generated spam</a> on your site</span>
+-   <span id="68a7">Monitoring your site for <a href="https://developers.google.com/search/docs/advanced/security/what-is-hacked" class="markup--anchor markup--li-anchor">hacking</a> and removing hacked content as soon as it appears</span>
+-   <span id="8141">Preventing and removing <a href="https://developers.google.com/search/docs/advanced/guidelines/user-gen-spam" class="markup--anchor markup--li-anchor">user-generated spam</a> on your site</span>
 
 If your site violates one or more of these guidelines, then Google may take <a href="https://support.google.com/webmasters/answer/9044175" class="markup--anchor markup--p-anchor">manual action</a> against it. Once you have remedied the problem, you can <a href="https://support.google.com/webmasters/answer/35843" class="markup--anchor markup--p-anchor">submit your site for reconsideration</a>.
 
@@ -169,12 +169,12 @@ It’s all too easy to miss (or break) something during the many back-and-forths
 
 To start, be sure to check your:
 
-- <span id="1b13">Spacing: Is spacing consistent across the site (i.e., did you stick to that 8px grid, or let a rogue 18px in there)? Do all elements have enough breathing room?</span>
-- <span id="589b">Colors: Have you stuck to a consistent, harmonious color palette? Are all instances of the brand blue _actually_ the brand blue?</span>
-- <span id="dcfc">Shadows: If you used drop shadows, is the light source consistent for each and every one? Did you use the same blur, opacity, and spread values?</span>
-- <span id="021b">Typography: Is your font stack logical and consistent (i.e., is there a reason that element is set in a sans)? Are your heading sizes consistent? Have you used proper (not faux) italics and bolding? Do all text links look right? Is all text both legible and readable?</span>
-- <span id="fbb2">Imagery: Do any images look blurry, pixelated, or otherwise funky? Are any images broken or crazily heavy in terms of file size? Do all _non-decorative_ images have alt tags?</span>
-- <span id="4760">Logo: It’s (usually) just another image, but it’s so important it warrants its own step. Is it the latest version? Is it crisp (not blurry or pixelated)?</span>
+-   <span id="1b13">Spacing: Is spacing consistent across the site (i.e., did you stick to that 8px grid, or let a rogue 18px in there)? Do all elements have enough breathing room?</span>
+-   <span id="589b">Colors: Have you stuck to a consistent, harmonious color palette? Are all instances of the brand blue _actually_ the brand blue?</span>
+-   <span id="dcfc">Shadows: If you used drop shadows, is the light source consistent for each and every one? Did you use the same blur, opacity, and spread values?</span>
+-   <span id="021b">Typography: Is your font stack logical and consistent (i.e., is there a reason that element is set in a sans)? Are your heading sizes consistent? Have you used proper (not faux) italics and bolding? Do all text links look right? Is all text both legible and readable?</span>
+-   <span id="fbb2">Imagery: Do any images look blurry, pixelated, or otherwise funky? Are any images broken or crazily heavy in terms of file size? Do all _non-decorative_ images have alt tags?</span>
+-   <span id="4760">Logo: It’s (usually) just another image, but it’s so important it warrants its own step. Is it the latest version? Is it crisp (not blurry or pixelated)?</span>
 
 Once you’ve made these initial visual checks, you’ll want to ensure that your site’s appearance is consistent and functional on any screen.
 
@@ -186,10 +186,10 @@ During this process (and the next, in multi-device testing) you’ll want to mak
 
 The elements that tend to vary most across browsers, and therefore are most important to check, are:
 
-- <span id="f7ff">Fonts</span>
-- <span id="32b8">Colors/gradients</span>
-- <span id="5871">Images</span>
-- <span id="be77">Logo</span>
+-   <span id="f7ff">Fonts</span>
+-   <span id="32b8">Colors/gradients</span>
+-   <span id="5871">Images</span>
+-   <span id="be77">Logo</span>
 
 ### Cross-device appearance
 
@@ -221,13 +221,13 @@ This one is super important, and can range from a quick task to a giant one, dep
 
 Some common integrations to test might be:
 
-- <span id="54e1">Web forms (check that the forms work _and_ that submitted information goes to the right place)</span>
-- <span id="5ad2">Autoresponders</span>
-- <span id="1079">Marketing emails (MailChimp, Constant Contact, HubSpot, drip campaigns, etc.)</span>
-- <span id="10e0">RSS feeds</span>
-- <span id="fe8e">Ecommerce</span>
-- <span id="5f3d">CRM</span>
-- <span id="dc4a">CMS</span>
+-   <span id="54e1">Web forms (check that the forms work _and_ that submitted information goes to the right place)</span>
+-   <span id="5ad2">Autoresponders</span>
+-   <span id="1079">Marketing emails (MailChimp, Constant Contact, HubSpot, drip campaigns, etc.)</span>
+-   <span id="10e0">RSS feeds</span>
+-   <span id="fe8e">Ecommerce</span>
+-   <span id="5f3d">CRM</span>
+-   <span id="dc4a">CMS</span>
 
 ### Link testing
 
@@ -235,10 +235,10 @@ This one can be a doozy, simply because most sites have dozens (if not hundreds)
 
 Some of the most important links to check are:
 
-- <span id="fd34">Top navigation links</span>
-- <span id="88d4">Footer links</span>
-- <span id="d42d">Social media links (Facebook, Twitter, etc.)</span>
-- <span id="cde4">Logo (typically links to the home page)</span>
+-   <span id="fd34">Top navigation links</span>
+-   <span id="88d4">Footer links</span>
+-   <span id="d42d">Social media links (Facebook, Twitter, etc.)</span>
+-   <span id="cde4">Logo (typically links to the home page)</span>
 
 Rather than doing all this manually, I’d suggest trying a link crawler like the <a href="https://validator.w3.org/checklink" class="markup--anchor markup--p-anchor">W3C Link Checker</a>, the Chrome plugin <a href="https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf?hl=en-GB" class="markup--anchor markup--p-anchor">Check My Links</a>, or <a href="http://www.screamingfrog.co.uk/seo-spider/" class="markup--anchor markup--p-anchor">Screaming Frog</a> (which is excellent for SEO audits, too).
 
@@ -264,25 +264,25 @@ Web crawlers (like Google’s bots) read through your website to get an understa
 
 Historically, this has meant using the following semantic tags:
 
-- <span id="93f0">h1–h6 (heading tags)</span>
-- <span id="f999">p (paragraph tags)</span>
-- <span id="c0ab">ul/ol (unordered and ordered Lists)</span>
+-   <span id="93f0">h1–h6 (heading tags)</span>
+-   <span id="f999">p (paragraph tags)</span>
+-   <span id="c0ab">ul/ol (unordered and ordered Lists)</span>
 
 You can also go above and beyond with some new <a href="https://webflow.com/blog/html5-semantic-elements-and-webflow-the-essential-guide" class="markup--anchor markup--p-anchor">HTML5 semantic tags</a>:
 
-- <span id="4d08">&lt;article&gt;</span>
-- <span id="8074">&lt;aside&gt;</span>
-- <span id="9b75">&lt;details&gt;</span>
-- <span id="0652">&lt;figcaption&gt;</span>
-- <span id="721c">&lt;figure&gt;</span>
-- <span id="0cc5">&lt;footer&gt;</span>
-- <span id="2e07">&lt;header&gt;</span>
-- <span id="0e37">&lt;main&gt;</span>
-- <span id="6be6">&lt;mark&gt;</span>
-- <span id="1656">&lt;nav&gt;</span>
-- <span id="e390">&lt;section&gt;</span>
-- <span id="2858">&lt;summary&gt;</span>
-- <span id="d970">&lt;time&gt;</span>
+-   <span id="4d08">&lt;article&gt;</span>
+-   <span id="8074">&lt;aside&gt;</span>
+-   <span id="9b75">&lt;details&gt;</span>
+-   <span id="0652">&lt;figcaption&gt;</span>
+-   <span id="721c">&lt;figure&gt;</span>
+-   <span id="0cc5">&lt;footer&gt;</span>
+-   <span id="2e07">&lt;header&gt;</span>
+-   <span id="0e37">&lt;main&gt;</span>
+-   <span id="6be6">&lt;mark&gt;</span>
+-   <span id="1656">&lt;nav&gt;</span>
+-   <span id="e390">&lt;section&gt;</span>
+-   <span id="2858">&lt;summary&gt;</span>
+-   <span id="d970">&lt;time&gt;</span>
 
 These tags are important because they let you identify the content that’s most relevant to users. In short: making it easy for search engines makes it easier for users to find you.
 
@@ -294,10 +294,10 @@ Aside from on-page structure, you can also help web crawlers understand your sit
 
 Your page’s meta title translates to the linked text people will see on search engine result pages (SERPs). It also displays on the browser tab when people click through to your page. Some best practices include:
 
-- <span id="ed19">Define the page’s central topic</span>
-- <span id="c50a">Keep it under 70 characters in length (including spaces)</span>
-- <span id="e656">Use relevant keywords</span>
-- <span id="c74d">Put important keywords in the front of the title</span>
+-   <span id="ed19">Define the page’s central topic</span>
+-   <span id="c50a">Keep it under 70 characters in length (including spaces)</span>
+-   <span id="e656">Use relevant keywords</span>
+-   <span id="c74d">Put important keywords in the front of the title</span>
 
 #### Meta description
 
@@ -305,9 +305,9 @@ The meta description is a short sentence (or two) that describes what your websi
 
 Some best practices include:
 
-- <span id="aec5">Include keywords that describe the page</span>
-- <span id="022c">Don’t go over 160 characters</span>
-- <span id="13ac">Write your description for people, not robots. (Google doesn’t use descriptions in web rankings).</span>
+-   <span id="aec5">Include keywords that describe the page</span>
+-   <span id="022c">Don’t go over 160 characters</span>
+-   <span id="13ac">Write your description for people, not robots. (Google doesn’t use descriptions in web rankings).</span>
 
 ### 3. Open Graph settings
 

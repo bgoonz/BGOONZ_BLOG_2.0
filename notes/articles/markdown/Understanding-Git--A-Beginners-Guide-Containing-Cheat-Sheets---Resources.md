@@ -23,9 +23,9 @@ Without version control, team members are subject to redundant tasks, slower tim
 
 According to the latest <a href="https://insights.stackoverflow.com/survey/2017#technology" class="markup--anchor markup--p-anchor">Stack Overflow developer survey</a>, more than 70 percent of developers use Git, making it the most-used VCS in the world. Git is commonly used for both open source and commercial software development, **with significant benefits** for individuals, teams and businesses.
 
-- <span id="0276">Git lets developers see the entire timeline of their changes, decisions, and progression of any project in one place. From the moment they access the history of a project, the developer has all the context they need to understand it and start contributing.</span>
-- <span id="2be5">Developers work in every time zone. With a DVCS like Git, collaboration can happen any time while maintaining source code integrity. Using branches, developers can safely propose changes to production code.</span>
-- <span id="6d54">Businesses using Git can break down communication barriers between teams and keep them focused on doing their best work. Plus, Git makes it possible to align experts across a business to collaborate on major projects.</span>
+-   <span id="0276">Git lets developers see the entire timeline of their changes, decisions, and progression of any project in one place. From the moment they access the history of a project, the developer has all the context they need to understand it and start contributing.</span>
+-   <span id="2be5">Developers work in every time zone. With a DVCS like Git, collaboration can happen any time while maintaining source code integrity. Using branches, developers can safely propose changes to production code.</span>
+-   <span id="6d54">Businesses using Git can break down communication barriers between teams and keep them focused on doing their best work. Plus, Git makes it possible to align experts across a business to collaborate on major projects.</span>
 
 ### Table Of Contents:
 
@@ -121,14 +121,14 @@ Working in repositories keeps development projects organized and protected. Deve
 
 ### 1. The first step is to clone the repo!
 
-- <span id="b2f6">Navigate to the repo you want to clone and hit the big green code button. Copy the link given.</span>
+-   <span id="b2f6">Navigate to the repo you want to clone and hit the big green code button. Copy the link given.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*63LoanrbOPBIwDC6oFarFA.png" class="graf-image" /></figure>-   <span id="8563">Navigate in your terminal to the directory where you want this repo to live. I’ve chosen downloads</span>
 -   <span id="c9b3">`git clone HTTPS://LINKTOURL/THATYOUCOPIED`</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*PRiaHOvU-wvpAYQtIqduGQ.png" class="graf-image" /></figure>### 2. Sweet, you have the cloned repo in your preferred directory. Now lets make your own repo. On github, create a new repository.
 
-- <span id="c98b">Default settings are fine. Hit the big green button `Create Repository`</span>
+-   <span id="c98b">Default settings are fine. Hit the big green button `Create Repository`</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*U1qwd0OEBYhcToXYt2i6iA.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*jk3-RTC0rRV_OF931B4Fsg.png" class="graf-image" /></figure>### 3. Next,
 
@@ -174,7 +174,7 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 #### It already has a .git directory with certain configurations set up. To be able to push this repo to your newly created GitHub repo we have to change the remote origin.
 
-- <span id="dda6">To do that, just run this command: (Make sure you are inside the repo you cloned)</span>
+-   <span id="dda6">To do that, just run this command: (Make sure you are inside the repo you cloned)</span>
 
 <!-- -->
 
@@ -186,13 +186,13 @@ OR:
 
 ### Basic Git Work Flow.
 
-- <span id="23ce">After making changes to a file and you are ready to commit / push to your repo you can run the following commands:</span>
-- <span id="9934">`git add .` - stages modified files to be committed.</span>
-- <span id="6ce0">`git status` - displays files that have been modified</span>
-- <span id="ce65">`git commit -m 'A helpfully commit message'` - commits the changes to your local repo. Get in the habit now of making helpful commit messages</span>
-- <span id="70ec">`git push` - pushes your local commits to your GitHub repo!</span>
-- <span id="4ca3">To pull down changes that your partner pushed to the repo you simply have to run:</span>
-- <span id="3bef">`git pull` - this will fetch the most recent updates!</span>
+-   <span id="23ce">After making changes to a file and you are ready to commit / push to your repo you can run the following commands:</span>
+-   <span id="9934">`git add .` - stages modified files to be committed.</span>
+-   <span id="6ce0">`git status` - displays files that have been modified</span>
+-   <span id="ce65">`git commit -m 'A helpfully commit message'` - commits the changes to your local repo. Get in the habit now of making helpful commit messages</span>
+-   <span id="70ec">`git push` - pushes your local commits to your GitHub repo!</span>
+-   <span id="4ca3">To pull down changes that your partner pushed to the repo you simply have to run:</span>
+-   <span id="3bef">`git pull` - this will fetch the most recent updates!</span>
 
 ### Cheat Sheet:
 
@@ -973,9 +973,9 @@ Configuring both the client and the server is unnecessary.
 
 **To configure SSH on the client side**:
 
-- <span id="7ae1">On UNIX, edit `~/.ssh/config` (create the file if it doesn’t exist) and add or edit:</span>
-- <span id="542f">`Host your-gitlab-instance-url.com ServerAliveInterval 60 ServerAliveCountMax 5`</span>
-- <span id="74d7">On Windows, if you are using PuTTY, go to your session properties, then navigate to “Connection” and under “Sending of null packets to keep session active”, set `Seconds between keepalives (0 to turn off)` to `60`.</span>
+-   <span id="7ae1">On UNIX, edit `~/.ssh/config` (create the file if it doesn’t exist) and add or edit:</span>
+-   <span id="542f">`Host your-gitlab-instance-url.com ServerAliveInterval 60 ServerAliveCountMax 5`</span>
+-   <span id="74d7">On Windows, if you are using PuTTY, go to your session properties, then navigate to “Connection” and under “Sending of null packets to keep session active”, set `Seconds between keepalives (0 to turn off)` to `60`.</span>
 
 **To configure SSH on the server side**, edit `/etc/ssh/sshd_config` and add:
 

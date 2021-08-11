@@ -37,7 +37,7 @@ Then, make sure that this code appears in your **~/.bashrc** file:
 
 If you want to try any of the aliases in this article for yourself, enter them into your **.bash_aliases** file, and then load them into your Bash session with the **source ~/.bashrc** command.
 
-- <span id="75f5"><a href="https://opensource.com/article/19/7/bash-aliases" class="markup--anchor markup--li-anchor">source</a></span>
+-   <span id="75f5"><a href="https://opensource.com/article/19/7/bash-aliases" class="markup--anchor markup--li-anchor">source</a></span>
 
 ### Here’s a list of my bash aliases:
 
