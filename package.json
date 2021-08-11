@@ -5,12 +5,12 @@
   "license": "MIT",
   "repository": "https://github.com/bgoonz/BGOONZ_BLOG_2.0.git",
   "author": "Bryan Guner",
-    "infiniteLoopProtection": true,
-    "hardReloadOnChange": false,
-    "view": "browser",
-    "container": {
-      "node": "14"
-    },
+  "infiniteLoopProtection": true,
+  "hardReloadOnChange": false,
+  "view": "browser",
+  "container": {
+    "node": "14"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",

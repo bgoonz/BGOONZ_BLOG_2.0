@@ -1,8 +1,14 @@
+import { ASTVisitor } from '../../language/visitor';
+import { ASTValidationContext } from '../ValidationContext';
+
+export function nonExecutableDefinitionMessage(defName: string): string;
+
 /**
- * @deprecated and will be removed in v16
- * Please use either:
- *   import { ExecutableDefinitionsRule } from 'graphql'
- * or
- *   import { ExecutableDefinitionsRule } from 'graphql/validation'
+ * Executable definitions
+ *
+ * A GraphQL document is only valid for execution if all definitions are either
+ * operation or fragment definitions.
  */
-export { ExecutableDefinitionsRule as ExecutableDefinitions } from './ExecutableDefinitionsRule';
+export function ExecutableDefinitions(
+  context: ASTValidationContext,
+): ASTVisitor;

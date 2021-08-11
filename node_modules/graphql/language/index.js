@@ -39,10 +39,10 @@ Object.defineProperty(exports, "TokenKind", {
     return _tokenKind.TokenKind;
   }
 });
-Object.defineProperty(exports, "Lexer", {
+Object.defineProperty(exports, "createLexer", {
   enumerable: true,
   get: function get() {
-    return _lexer.Lexer;
+    return _lexer.createLexer;
   }
 });
 Object.defineProperty(exports, "parse", {
@@ -81,6 +81,12 @@ Object.defineProperty(exports, "visitInParallel", {
     return _visitor.visitInParallel;
   }
 });
+Object.defineProperty(exports, "visitWithTypeInfo", {
+  enumerable: true,
+  get: function get() {
+    return _visitor.visitWithTypeInfo;
+  }
+});
 Object.defineProperty(exports, "getVisitFn", {
   enumerable: true,
   get: function get() {
@@ -91,18 +97,6 @@ Object.defineProperty(exports, "BREAK", {
   enumerable: true,
   get: function get() {
     return _visitor.BREAK;
-  }
-});
-Object.defineProperty(exports, "Location", {
-  enumerable: true,
-  get: function get() {
-    return _ast.Location;
-  }
-});
-Object.defineProperty(exports, "Token", {
-  enumerable: true,
-  get: function get() {
-    return _ast.Token;
   }
 });
 Object.defineProperty(exports, "isDefinitionNode", {
@@ -166,26 +160,24 @@ Object.defineProperty(exports, "DirectiveLocation", {
   }
 });
 
-var _source = require("./source.js");
+var _source = require("./source");
 
-var _location = require("./location.js");
+var _location = require("./location");
 
-var _printLocation = require("./printLocation.js");
+var _printLocation = require("./printLocation");
 
-var _kinds = require("./kinds.js");
+var _kinds = require("./kinds");
 
-var _tokenKind = require("./tokenKind.js");
+var _tokenKind = require("./tokenKind");
 
-var _lexer = require("./lexer.js");
+var _lexer = require("./lexer");
 
-var _parser = require("./parser.js");
+var _parser = require("./parser");
 
-var _printer = require("./printer.js");
+var _printer = require("./printer");
 
-var _visitor = require("./visitor.js");
+var _visitor = require("./visitor");
 
-var _ast = require("./ast.js");
+var _predicates = require("./predicates");
 
-var _predicates = require("./predicates.js");
-
-var _directiveLocation = require("./directiveLocation.js");
+var _directiveLocation = require("./directiveLocation");

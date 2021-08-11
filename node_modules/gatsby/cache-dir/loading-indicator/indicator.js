@@ -1,6 +1,6 @@
-import * as React from "react"
-import { ShadowPortal } from "../shadow-portal"
-import { Style } from "./style"
+import React from "react"
+import Portal from "./portal"
+import Style from "./style"
 import { isLoadingIndicatorEnabled } from "$virtual/loading-indicator"
 import { debugLog } from "../debug-log"
 
@@ -38,12 +38,11 @@ export function Indicator({ visible = true }) {
   }
 
   return (
-    <ShadowPortal identifier="gatsby-qod">
+    <Portal>
       <Style />
       <div
         data-gatsby-loading-indicator="root"
-        // preact doesn't render data attributes with a literal bool false value to dom
-        data-gatsby-loading-indicator-visible={visible.toString()}
+        data-gatsby-loading-indicator-visible={visible}
         aria-live="assertive"
       >
         <div data-gatsby-loading-indicator="spinner" aria-hidden="true">
@@ -60,6 +59,6 @@ export function Indicator({ visible = true }) {
           {visible ? `Preparing requested page` : ``}
         </div>
       </div>
-    </ShadowPortal>
+    </Portal>
   )
 }

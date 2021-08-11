@@ -1,10 +1,11 @@
-import devAssert from "../jsutils/devAssert.mjs";
-import { GraphQLError } from "../error/GraphQLError.mjs";
-import { visit, visitInParallel } from "../language/visitor.mjs";
-import { assertValidSchema } from "../type/validate.mjs";
-import { TypeInfo, visitWithTypeInfo } from "../utilities/TypeInfo.mjs";
-import { specifiedRules, specifiedSDLRules } from "./specifiedRules.mjs";
-import { SDLValidationContext, ValidationContext } from "./ValidationContext.mjs";
+import devAssert from '../jsutils/devAssert';
+import { GraphQLError } from '../error/GraphQLError';
+import { visit, visitInParallel, visitWithTypeInfo } from '../language/visitor';
+import { assertValidSchema } from '../type/validate';
+import { TypeInfo } from '../utilities/TypeInfo';
+import { specifiedRules, specifiedSDLRules } from './specifiedRules';
+import { SDLValidationContext, ValidationContext } from './ValidationContext';
+export var ABORT_VALIDATION = Object.freeze({});
 /**
  * Implements the "Validation" section of the spec.
  *
@@ -25,16 +26,15 @@ import { SDLValidationContext, ValidationContext } from "./ValidationContext.mjs
 export function validate(schema, documentAST) {
   var rules = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : specifiedRules;
   var typeInfo = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : new TypeInfo(schema);
-  var options = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {
-    maxErrors: undefined
-  };
-  documentAST || devAssert(0, 'Must provide document.'); // If the schema used for validation is invalid, throw an error.
+  var options = arguments.length > 4 ? arguments[4] : undefined;
+  documentAST || devAssert(0, 'Must provide document'); // If the schema used for validation is invalid, throw an error.
 
   assertValidSchema(schema);
   var abortObj = Object.freeze({});
   var errors = [];
+  var maxErrors = options && options.maxErrors;
   var context = new ValidationContext(schema, documentAST, typeInfo, function (error) {
-    if (options.maxErrors != null && errors.length >= options.maxErrors) {
+    if (maxErrors != null && errors.length >= maxErrors) {
       errors.push(new GraphQLError('Too many validation errors, error limit reached. Validation aborted.'));
       throw abortObj;
     }
@@ -56,10 +56,7 @@ export function validate(schema, documentAST) {
   }
 
   return errors;
-}
-/**
- * @internal
- */
+} // @internal
 
 export function validateSDL(documentAST, schemaToExtend) {
   var rules = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : specifiedSDLRules;

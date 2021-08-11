@@ -1,8 +1,13 @@
+import { ASTVisitor } from '../../language/visitor';
+import { SDLValidationContext } from '../ValidationContext';
+
+export function duplicateDirectiveNameMessage(directiveName: string): string;
+
+export function existedDirectiveNameMessage(directiveName: string): string;
+
 /**
- * @deprecated and will be removed in v16
- * Please use either:
- *   import { UniqueDirectiveNamesRule } from 'graphql'
- * or
- *   import { UniqueDirectiveNamesRule } from 'graphql/validation'
+ * Unique directive names
+ *
+ * A GraphQL document is only valid if all defined directives have unique names.
  */
-export { UniqueDirectiveNamesRule as UniqueDirectiveNames } from './UniqueDirectiveNamesRule';
+export function UniqueDirectiveNames(context: SDLValidationContext): ASTVisitor;

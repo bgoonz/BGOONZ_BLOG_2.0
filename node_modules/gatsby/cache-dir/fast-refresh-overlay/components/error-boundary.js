@@ -1,14 +1,23 @@
-import * as React from "react"
+import React from "react"
 
-export class ErrorBoundary extends React.Component {
-  state = { error: null }
+class ErrorBoundary extends React.Component {
+  state = { hasError: false }
 
   componentDidCatch(error) {
-    this.setState({ error })
+    this.props.onError(error)
+  }
+
+  componentDidMount() {
+    this.props.clearErrors()
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true }
   }
 
   render() {
-    // Without this check => possible infinite loop
-    return this.state.error && this.props.hasErrors ? null : this.props.children
+    return this.state.hasError ? null : this.props.children
   }
 }
+
+export default ErrorBoundary

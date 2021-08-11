@@ -1,8 +1,21 @@
+import { ASTVisitor } from '../../language/visitor';
+import { SDLValidationContext } from '../ValidationContext';
+
+export function duplicateFieldDefinitionNameMessage(
+  typeName: string,
+  fieldName: string,
+): string;
+
+export function existedFieldDefinitionNameMessage(
+  typeName: string,
+  fieldName: string,
+): string;
+
 /**
- * @deprecated and will be removed in v16
- * Please use either:
- *   import { UniqueFieldDefinitionNamesRule } from 'graphql'
- * or
- *   import { UniqueFieldDefinitionNamesRule } from 'graphql/validation'
+ * Unique field definition names
+ *
+ * A GraphQL complex type is only valid if all its fields are uniquely named.
  */
-export { UniqueFieldDefinitionNamesRule as UniqueFieldDefinitionNames } from './UniqueFieldDefinitionNamesRule';
+export function UniqueFieldDefinitionNames(
+  context: SDLValidationContext,
+): ASTVisitor;

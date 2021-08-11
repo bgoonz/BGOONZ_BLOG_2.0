@@ -3,6 +3,8 @@
 const plugins = require(`./api-runner-browser-plugins`);
 
 const {
+  getResourcesForPathname,
+  getResourcesForPathnameSync,
   getResourceURLsForPathname,
   loadPage,
   loadPageSync
@@ -23,8 +25,12 @@ exports.apiRunner = (api, args = {}, defaultReturn, argTransform) => {
   let results = plugins.map(plugin => {
     if (!plugin.plugin[api]) {
       return undefined;
-    }
+    } // Deprecated April 2019. Use `loadPageSync` instead
 
+
+    args.getResourcesForPathnameSync = getResourcesForPathnameSync; // Deprecated April 2019. Use `loadPage` instead
+
+    args.getResourcesForPathname = getResourcesForPathname;
     args.getResourceURLsForPathname = getResourceURLsForPathname;
     args.loadPage = loadPage;
     args.loadPageSync = loadPageSync;

@@ -6,9 +6,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = invariant;
 
 function invariant(condition, message) {
-  var booleanCondition = Boolean(condition); // istanbul ignore else (See transformation done in './resources/inlineInvariant.js')
+  var booleanCondition = Boolean(condition);
 
   if (!booleanCondition) {
-    throw new Error(message != null ? message : 'Unexpected invariant triggered.');
+    throw new Error(message || 'Unexpected invariant triggered');
   }
 }

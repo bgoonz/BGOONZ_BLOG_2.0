@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 /* eslint-disable no-redeclare */
-// $FlowFixMe[name-already-bound]
+// $FlowFixMe
 var find = Array.prototype.find ? function (list, predicate) {
   return Array.prototype.find.call(list, predicate);
 } : function (list, predicate) {

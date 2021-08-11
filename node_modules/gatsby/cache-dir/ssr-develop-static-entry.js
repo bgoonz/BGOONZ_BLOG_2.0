@@ -1,10 +1,9 @@
-/* global BROWSER_ESM_ONLY */
 import React from "react"
 import fs from "fs"
 import { renderToString, renderToStaticMarkup } from "react-dom/server"
 import { get, merge, isObject, flatten, uniqBy, concat } from "lodash"
-import nodePath from "path"
-import { apiRunner, apiRunnerAsync } from "./api-runner-ssr"
+import { join } from "path"
+import apiRunner from "./api-runner-ssr"
 import { grabMatchParams } from "./find-path"
 import syncRequires from "$virtual/ssr-sync-requires"
 
@@ -21,18 +20,9 @@ const testRequireError = (moduleName, err) => {
   return regex.test(firstLine)
 }
 
-let cachedStats
-const getStats = publicDir => {
-  if (cachedStats) {
-    return cachedStats
-  } else {
-    cachedStats = JSON.parse(
-      fs.readFileSync(nodePath.join(publicDir, `webpack.stats.json`), `utf-8`)
-    )
-
-    return cachedStats
-  }
-}
+const stats = JSON.parse(
+  fs.readFileSync(`${process.cwd()}/public/webpack.stats.json`, `utf-8`)
+)
 
 let Html
 try {
@@ -48,13 +38,7 @@ try {
 
 Html = Html && Html.__esModule ? Html.default : Html
 
-export default async function staticPage(
-  pagePath,
-  isClientOnlyPage,
-  publicDir,
-  error,
-  callback
-) {
+export default (pagePath, isClientOnlyPage, callback) => {
   let bodyHtml = ``
   let headComponents = [
     <meta key="environment" name="note" content="environment=development" />,
@@ -65,33 +49,7 @@ export default async function staticPage(
   let postBodyComponents = []
   let bodyProps = {}
 
-  if (error) {
-    postBodyComponents.push([
-      <script
-        key="dev-ssr-error"
-        dangerouslySetInnerHTML={{
-          __html: `window._gatsbyEvents = window._gatsbyEvents || []; window._gatsbyEvents.push(["FAST_REFRESH", { action: "SHOW_DEV_SSR_ERROR", payload: ${JSON.stringify(
-            error
-          )} }])`,
-        }}
-      />,
-      <noscript key="dev-ssr-error-noscript">
-        <h1>Failed to Server Render (SSR)</h1>
-        <h2>Error message:</h2>
-        <p>{error.sourceMessage}</p>
-        <h2>File:</h2>
-        <p>
-          {error.source}:{error.line}:{error.column}
-        </p>
-        <h2>Stack:</h2>
-        <pre>
-          <code>{error.stack}</code>
-        </pre>
-      </noscript>,
-    ])
-  }
-
-  const generateBodyHTML = async () => {
+  const generateBodyHTML = () => {
     const setHeadComponents = components => {
       headComponents = headComponents.concat(components)
     }
@@ -140,12 +98,12 @@ export default async function staticPage(
 
     const getPageDataPath = path => {
       const fixedPagePath = path === `/` ? `index` : path
-      return nodePath.join(`page-data`, fixedPagePath, `page-data.json`)
+      return join(`page-data`, fixedPagePath, `page-data.json`)
     }
 
     const getPageData = pagePath => {
       const pageDataPath = getPageDataPath(pagePath)
-      const absolutePageDataPath = nodePath.join(publicDir, pageDataPath)
+      const absolutePageDataPath = join(process.cwd(), `public`, pageDataPath)
       const pageDataJson = fs.readFileSync(absolutePageDataPath, `utf8`)
 
       try {
@@ -157,13 +115,12 @@ export default async function staticPage(
 
     const pageData = getPageData(pagePath)
 
-    const { componentChunkName } = pageData
+    const { componentChunkName, staticQueryHashes = [] } = pageData
 
     let scriptsAndStyles = flatten(
       [`commons`].map(chunkKey => {
         const fetchKey = `assetsByChunkName[${chunkKey}]`
 
-        const stats = getStats(publicDir)
         let chunks = get(stats, fetchKey)
         const namedChunkGroups = get(stats, `namedChunkGroups`)
 
@@ -179,26 +136,24 @@ export default async function staticPage(
         })
 
         namedChunkGroups[chunkKey].assets.forEach(asset =>
-          chunks.push({ rel: `preload`, name: asset.name })
+          chunks.push({ rel: `preload`, name: asset })
         )
 
         const childAssets = namedChunkGroups[chunkKey].childAssets
         for (const rel in childAssets) {
-          if (childAssets.hasownProperty(rel)) {
-            chunks = concat(
-              chunks,
-              childAssets[rel].map(chunk => {
-                return { rel, name: chunk }
-              })
-            )
-          }
+          chunks = concat(
+            chunks,
+            childAssets[rel].map(chunk => {
+              return { rel, name: chunk }
+            })
+          )
         }
 
         return chunks
       })
     )
       .filter(s => isObject(s))
-      .sort((s1, _s2) => (s1.rel == `preload` ? -1 : 1)) // given priority to preload
+      .sort((s1, s2) => (s1.rel == `preload` ? -1 : 1)) // given priority to preload
 
     scriptsAndStyles = uniqBy(scriptsAndStyles, item => item.name)
 
@@ -232,6 +187,10 @@ export default async function staticPage(
             ...grabMatchParams(this.props.location.pathname),
             ...(pageData.result?.pageContext?.__params || {}),
           },
+          // pathContext was deprecated in v2. Renamed to pageContext
+          pathContext: pageData.result
+            ? pageData.result.pageContext
+            : undefined,
         }
 
         let pageElement
@@ -281,7 +240,7 @@ export default async function staticPage(
     ).pop()
 
     // Let the site or plugin render the page component.
-    await apiRunnerAsync(`replaceRenderer`, {
+    apiRunner(`replaceRenderer`, {
       bodyComponent,
       replaceBodyHTMLString,
       setHeadComponents,
@@ -327,7 +286,7 @@ export default async function staticPage(
     return bodyHtml
   }
 
-  const bodyStr = await generateBodyHTML()
+  const bodyStr = generateBodyHTML()
 
   const htmlElement = React.createElement(Html, {
     ...bodyProps,
@@ -338,15 +297,10 @@ export default async function staticPage(
     htmlAttributes,
     bodyAttributes,
     preBodyComponents,
-    postBodyComponents: postBodyComponents.concat(
-      [
-        !BROWSER_ESM_ONLY && (
-          <script key={`polyfill`} src="/polyfill.js" noModule={true} />
-        ),
-        <script key={`framework`} src="/framework.js" />,
-        <script key={`commons`} src="/commons.js" />,
-      ].filter(Boolean)
-    ),
+    postBodyComponents: postBodyComponents.concat([
+      <script key={`polyfill`} src="/polyfill.js" noModule={true} />,
+      <script key={`commons`} src="/commons.js" />,
+    ]),
   })
   let htmlStr = renderToStaticMarkup(htmlElement)
   htmlStr = `<!DOCTYPE html>${htmlStr}`

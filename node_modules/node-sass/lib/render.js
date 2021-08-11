@@ -4,6 +4,7 @@
 
 var chalk = require('chalk'),
   fs = require('fs'),
+  mkdirp = require('mkdirp'),
   path = require('path'),
   sass = require('./');
 
@@ -65,7 +66,7 @@ module.exports = function(options, emitter) {
 
     emitter.emit('info', chalk.green('Rendering Complete, saving .css file...'));
 
-    fs.mkdir(path.dirname(destination), {recursive: true}, function(err) {
+    mkdirp(path.dirname(destination), function(err) {
       if (err) {
         return emitter.emit('error', chalk.red(err));
       }
@@ -84,7 +85,7 @@ module.exports = function(options, emitter) {
     if (sourceMap) {
       todo++;
 
-      fs.mkdir(path.dirname(sourceMap), {recursive: true}, function(err) {
+      mkdirp(path.dirname(sourceMap), function(err) {
         if (err) {
           return emitter.emit('error', chalk.red(err));
         }

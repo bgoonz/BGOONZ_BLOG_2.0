@@ -1,8 +1,13 @@
+import { ASTVisitor } from '../../language/visitor';
+import { SDLValidationContext } from '../ValidationContext';
+
+export function duplicateTypeNameMessage(typeName: string): string;
+
+export function existedTypeNameMessage(typeName: string): string;
+
 /**
- * @deprecated and will be removed in v16
- * Please use either:
- *   import { UniqueTypeNamesRule } from 'graphql'
- * or
- *   import { UniqueTypeNamesRule } from 'graphql/validation'
+ * Unique type names
+ *
+ * A GraphQL document is only valid if all defined types have unique names.
  */
-export { UniqueTypeNamesRule as UniqueTypeNames } from './UniqueTypeNamesRule';
+export function UniqueTypeNames(context: SDLValidationContext): ASTVisitor;

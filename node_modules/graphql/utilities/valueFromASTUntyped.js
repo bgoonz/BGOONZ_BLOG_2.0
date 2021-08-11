@@ -5,13 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.valueFromASTUntyped = valueFromASTUntyped;
 
-var _inspect = _interopRequireDefault(require("../jsutils/inspect.js"));
+var _inspect = _interopRequireDefault(require("../jsutils/inspect"));
 
-var _invariant = _interopRequireDefault(require("../jsutils/invariant.js"));
+var _invariant = _interopRequireDefault(require("../jsutils/invariant"));
 
-var _keyValMap = _interopRequireDefault(require("../jsutils/keyValMap.js"));
+var _keyValMap = _interopRequireDefault(require("../jsutils/keyValMap"));
 
-var _kinds = require("../language/kinds.js");
+var _isInvalid = _interopRequireDefault(require("../jsutils/isInvalid"));
+
+var _kinds = require("../language/kinds");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -60,9 +62,13 @@ function valueFromASTUntyped(valueNode, variables) {
       });
 
     case _kinds.Kind.VARIABLE:
-      return variables === null || variables === void 0 ? void 0 : variables[valueNode.name.value];
-  } // istanbul ignore next (Not reachable. All possible value nodes have been considered)
+      {
+        var variableName = valueNode.name.value;
+        return variables && !(0, _isInvalid.default)(variables[variableName]) ? variables[variableName] : undefined;
+      }
+  } // Not reachable. All possible value nodes have been considered.
 
 
-  false || (0, _invariant.default)(0, 'Unexpected value node: ' + (0, _inspect.default)(valueNode));
+  /* istanbul ignore next */
+  (0, _invariant.default)(false, 'Unexpected value node: ' + (0, _inspect.default)(valueNode));
 }

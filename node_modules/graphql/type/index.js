@@ -345,12 +345,6 @@ Object.defineProperty(exports, "GraphQLDeprecatedDirective", {
     return _directives.GraphQLDeprecatedDirective;
   }
 });
-Object.defineProperty(exports, "GraphQLSpecifiedByDirective", {
-  enumerable: true,
-  get: function get() {
-    return _directives.GraphQLSpecifiedByDirective;
-  }
-});
 Object.defineProperty(exports, "DEFAULT_DEPRECATION_REASON", {
   enumerable: true,
   get: function get() {
@@ -496,14 +490,14 @@ Object.defineProperty(exports, "assertValidSchema", {
   }
 });
 
-var _schema = require("./schema.js");
+var _schema = require("./schema");
 
-var _definition = require("./definition.js");
+var _definition = require("./definition");
 
-var _directives = require("./directives.js");
+var _directives = require("./directives");
 
-var _scalars = require("./scalars.js");
+var _scalars = require("./scalars");
 
-var _introspection = require("./introspection.js");
+var _introspection = require("./introspection");
 
-var _validate = require("./validate.js");
+var _validate = require("./validate");

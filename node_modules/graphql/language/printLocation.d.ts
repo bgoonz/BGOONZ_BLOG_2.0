@@ -1,6 +1,6 @@
-import { Location } from './ast';
-import { Source } from './source';
-import { SourceLocation } from './location';
+import { Location } from '../language/ast';
+import { Source } from '../language/source';
+import { SourceLocation } from '../language/location';
 
 /**
  * Render a helpful description of the location in the GraphQL Source document.

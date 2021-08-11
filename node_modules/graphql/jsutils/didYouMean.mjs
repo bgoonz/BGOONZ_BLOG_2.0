@@ -7,17 +7,13 @@ var MAX_SUGGESTIONS = 5;
 export default function didYouMean(firstArg, secondArg) {
   var _ref = typeof firstArg === 'string' ? [firstArg, secondArg] : [undefined, firstArg],
       subMessage = _ref[0],
-      suggestionsArg = _ref[1];
+      suggestions = _ref[1];
 
   var message = ' Did you mean ';
 
   if (subMessage) {
     message += subMessage + ' ';
   }
-
-  var suggestions = suggestionsArg.map(function (x) {
-    return "\"".concat(x, "\"");
-  });
 
   switch (suggestions.length) {
     case 0:
