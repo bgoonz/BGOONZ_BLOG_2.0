@@ -30,9 +30,9 @@ iframe {
     overflow-y: scroll;
     overflow-x: scroll;
     border-radius: 12px;
-    border: 1px solid gold;
-    height: 1700px !important;
-    width: 98%;
+    border: 2px solid gold;
+    height: 1500px !important;
+    width: 95%;
     resize: both;
     overflow: scroll;
 }
@@ -189,6 +189,7 @@ hr {
 img {
     height: auto;
     max-width: 100%;
+    border-radius:10px;
 }
 
 @media only screen and (min-width: 841px) {
