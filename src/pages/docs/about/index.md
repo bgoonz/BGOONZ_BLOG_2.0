@@ -1,26 +1,25 @@
 ---
 title: About
-excerpt: >-
-    Web-Dev-Hub is my personal blogand documentation site
+excerpt: Web-Dev-Hub is my personal blogand documentation site
 seo:
-    title: About
-    description: This is the About page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: About
-          keyName: property
-        - name: 'og:description'
-          value: This is the About page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: About
-        - name: 'twitter:description'
-          value: This is the About page
+  title: About
+  description: Bryan Guner personal blog about page
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: About
+      keyName: property
+    - name: 'og:description'
+      value: This is the About page
+      keyName: property
+    - name: 'twitter:card'
+      value: summary
+    - name: 'twitter:title'
+      value: About
+    - name: 'twitter:description'
+      value: This is the About page
 template: docs
 ---
 
