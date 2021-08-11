@@ -36,7 +36,21 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><style></style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"
+            integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <style></style>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css"
+            integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
     <body>
         <header id="title-block-header">
             <h1 class="title">Apendix</h1>
@@ -53,7 +67,7 @@
         </p>
         <h2 id="prefer-const-and-let-over-var">Prefer <code>const</code> and <code>let</code> over <code>var</code></h2>
         <p>If you’ve worked with ES5 JavaScript before, you’re likely used to seeing variables declared with <code>var</code>:</p>
-        <pre  class="language-javascript" class="text"><code>ar myVariable = 5;</code></pre>
+        <pre class="language-javascript" class="text"><code>ar myVariable = 5;</code></pre>
         <p>Both the <code>const</code> and <code>let</code> statements also declare variables. They were introduced in ES6.</p>
         <p>
             Use <code>const</code> in cases where a variable is never re-assigned. Using <code>const</code> makes this clear to whoever is reading your code. It
@@ -67,33 +81,33 @@
         </p>
         <h2 id="arrow-functions">Arrow functions</h2>
         <p>There are three ways to write arrow function bodies. For the examples below, let’s say we have an array of city objects:</p>
-        <pre  class="language-javascript" class="text"><code>onst cities = [
+        <pre class="language-javascript" class="text"><code>onst cities = [
   { name: &#39;Cairo&#39;, pop: 7764700 },
   { name: &#39;Lagos&#39;, pop: 8029200 },
 ];</code></pre>
         <p>If we write an arrow function that spans multiple lines, we must use braces to delimit the function body like this:</p>
-        <pre  class="language-javascript" class="text"><code>const formattedPopulations = cities.map((city) =&gt; {
+        <pre class="language-javascript" class="text"><code>const formattedPopulations = cities.map((city) =&gt; {
   const popMM = (city.pop / 1000000).toFixed(2);
   return popMM + &#39; million&#39;;
 });
 console.log(formattedPopulations);</code></pre>
         <p>Note that we must also explicitly specify a <code>return</code> for the function.</p>
         <p>However, if we write a function body that is only a single line (or single expression) we can use parentheses to delimit it:</p>
-        <pre  class="language-javascript" class="text"><code>const formattedPopulations2 = cities.map((city) =&gt; (
+        <pre class="language-javascript" class="text"><code>const formattedPopulations2 = cities.map((city) =&gt; (
   (city.pop / 1000000).toFixed(2) + &#39; million&#39;
 ));</code></pre>
         <p>Notably, we don’t use <code>return</code> as it’s implied.</p>
         <p>Furthermore, if your function body is terse you can write it like so:</p>
-        <pre  class="language-javascript" class="text"><code>const pops = cities.map(city =&gt; city.pop);
+        <pre class="language-javascript" class="text"><code>const pops = cities.map(city =&gt; city.pop);
 console.log(pops);</code></pre>
         <p>The terseness of arrow functions is one of two reasons that we use them. Compare the one-liner above to this:</p>
-        <pre  class="language-javascript" class="text"><code>const popsNoArrow = cities.map(function(city) { return city.pop });</code></pre>
+        <pre class="language-javascript" class="text"><code>const popsNoArrow = cities.map(function(city) { return city.pop });</code></pre>
         <p>Of greater benefit, though, is how arrow functions bind the <code>this</code> object.</p>
         <p>
             The traditional JavaScript function declaration syntax (<code>function () {}</code>) will bind <code>this</code> in anonymous functions to the
             global object. To illustrate the confusion this causes, consider the following example:
         </p>
-        <pre  class="language-javascript" class="text"><code>unction printSong() {
+        <pre class="language-javascript" class="text"><code>unction printSong() {
   console.log(&quot;Oops - The Global Object&quot;);
 }
 
@@ -132,7 +146,7 @@ jukebox.printSongs();</code></pre>
             <strong>capturing the <code>this</code> value of the enclosing context</strong>. Using an arrow function for <code>printSongs()</code> has the
             expected result:
         </p>
-        <pre  class="language-javascript" class="text"><code>  printSongs: function () {
+        <pre class="language-javascript" class="text"><code>  printSongs: function () {
     this.songs.forEach((song) =&gt; {
 
       this.printSong(song);
@@ -149,7 +163,7 @@ jukebox.printSongs();</code></pre>
             Inside any file, you can use <code>export</code> to specify a variable the module should expose. Here’s an example of a file that exports two
             functions:
         </p>
-        <pre  class="language-javascript" class="text"><code>export const sayHi = () =&gt; (console.log(&#39;Hi!&#39;));
+        <pre class="language-javascript" class="text"><code>export const sayHi = () =&gt; (console.log(&#39;Hi!&#39;));
 export const sayBye = () =&gt; (console.log(&#39;Bye!&#39;));
 
 const saySomething = () =&gt; (console.log(&#39;Something!&#39;));</code></pre>
@@ -157,7 +171,7 @@ const saySomething = () =&gt; (console.log(&#39;Something!&#39;));</code></pre>
             Now, anywhere we wanted to use these functions we could use <code>import</code>. We need to specify which functions we want to import. A common way
             of doing this is using ES6’s destructuring assignment syntax to list them out like this:
         </p>
-        <pre  class="language-javascript" class="text"><code>import { sayHi, sayBye } from &#39;./greetings&#39;;
+        <pre class="language-javascript" class="text"><code>import { sayHi, sayBye } from &#39;./greetings&#39;;
 
 sayHi();
 sayBye();</code></pre>
@@ -170,7 +184,7 @@ sayBye();</code></pre>
             Instead of inserting an <code>export</code> before each variable you’d like to export, you can use this syntax to list off all the exposed variables
             in one area:
         </p>
-        <pre  class="language-javascript" class="text"><code>const sayHi = () =&gt; (console.log(&#39;Hi!&#39;));
+        <pre class="language-javascript" class="text"><code>const sayHi = () =&gt; (console.log(&#39;Hi!&#39;));
 const sayBye = () =&gt; (console.log(&#39;Bye!&#39;));
 
 const saySomething = () =&gt; (console.log(&#39;Something!&#39;));
@@ -180,7 +194,7 @@ export { sayHi, sayBye };</code></pre>
             We can also specify that we’d like to import all of a module’s functionality underneath a given namespace with the
             <code>import * as &lt;Namespace&gt;</code> syntax:
         </p>
-        <pre  class="language-javascript" class="text"><code>import * as Greetings from &#39;./greetings&#39;;
+        <pre class="language-javascript" class="text"><code>import * as Greetings from &#39;./greetings&#39;;
 
 Greetings.sayHi();
 
@@ -189,7 +203,7 @@ Greetings.sayBye();
 Greetings.saySomething();</code></pre>
         <p><strong>Default export</strong></p>
         <p>The other type of export is a default export. A module can only contain one default export:</p>
-        <pre  class="language-javascript" class="text"><code>const sayHi = () =&gt; (console.log(&#39;Hi!&#39;));
+        <pre class="language-javascript" class="text"><code>const sayHi = () =&gt; (console.log(&#39;Hi!&#39;));
 const sayBye = () =&gt; (console.log(&#39;Bye!&#39;));
 
 const saySomething = () =&gt; (console.log(&#39;Something!&#39;));
@@ -200,7 +214,7 @@ export default Greetings;</code></pre>
         <p>
             This is a common pattern for libraries. It means you can easily import the library wholesale without specifying what individual functions you want:
         </p>
-        <pre  class="language-javascript" class="text"><code>import Greetings from &#39;./greetings&#39;;
+        <pre class="language-javascript" class="text"><code>import Greetings from &#39;./greetings&#39;;
 
 Greetings.sayHi();
 Greetings.sayBye();</code></pre>
@@ -208,19 +222,19 @@ Greetings.sayBye();</code></pre>
             It’s not uncommon for a module to use a mix of both named exports and default exports. For instance, with <code>react-dom</code>, you can import
             <code>ReactDOM</code> (a default export) like this:
         </p>
-        <pre  class="language-javascript" class="text"><code>import ReactDOM from &#39;react-dom&#39;;
+        <pre class="language-javascript" class="text"><code>import ReactDOM from &#39;react-dom&#39;;
 
 ReactDOM.render(
 
 );</code></pre>
         <p>Or, if you’re only going to use the <code>render()</code> function, you can import the named <code>render()</code> function like this:</p>
-        <pre  class="language-javascript" class="text"><code>import { render } from &#39;react-dom&#39;;
+        <pre class="language-javascript" class="text"><code>import { render } from &#39;react-dom&#39;;
 
 render(
 
 );</code></pre>
         <p>To achieve this flexibility, the export implementation for <code>react-dom</code> looks something like this:</p>
-        <pre  class="language-javascript" class="text"><code>export const render = (component, target) =&gt; {
+        <pre class="language-javascript" class="text"><code>export const render = (component, target) =&gt; {
 
 };
 
@@ -244,7 +258,7 @@ export default ReactDOM;</code></pre>
             <code>Object.assign()</code> accepts any number of objects as arguments. When the function receives two arguments, it <em>copies</em> the properties
             of the second object onto the first, like so:
         </p>
-        <pre  class="language-javascript" class="text"><code>onst coffee = { };
+        <pre class="language-javascript" class="text"><code>onst coffee = { };
 const noCream = { cream: false };
 const noMilk = { milk: false };
 Object.assign(coffee, noCream);</code></pre>
@@ -253,35 +267,38 @@ Object.assign(coffee, noCream);</code></pre>
             <code>Object.assign()</code> will ultimately return. The second is the object whose properties we’d like to build off of. The last is the changes
             we’d like to apply:
         </p>
-        <pre  class="language-javascript" class="text"><code>const coffeeWithMilk = Object.assign({}, coffee, { milk: true });</code></pre>
+        <pre class="language-javascript" class="text"><code>const coffeeWithMilk = Object.assign({}, coffee, { milk: true });</code></pre>
         <p><code>Object.assign()</code> is a handy method for working with “immutable” JavaScript objects.</p>
         <h2 id="template-literals">Template literals</h2>
         <p>In ES5 JavaScript, you’d interpolate variables into strings like this:</p>
-        <pre  class="language-javascript" class="text"><code>var greeting = &#39;Hello, &#39; + user + &#39;! It is &#39; + degF + &#39; degrees outside.&#39;;</code></pre>
+        <pre
+            class="language-javascript"
+            class="text"
+        ><code>var greeting = &#39;Hello, &#39; + user + &#39;! It is &#39; + degF + &#39; degrees outside.&#39;;</code></pre>
         <p>With ES6 template literals, we can create the same string like this:</p>
-        <pre  class="language-javascript" class="text"><code>const greeting = `Hello, ${user}! It is ${degF} degrees outside.`;</code></pre>
+        <pre class="language-javascript" class="text"><code>const greeting = `Hello, ${user}! It is ${degF} degrees outside.`;</code></pre>
         <h2 id="the-spread-operator-...">The spread operator (<code>...</code>)</h2>
         <p>
             In arrays, the ellipsis <code>...</code> operator will <em>expand</em> the array that follows into the parent array. The spread operator enables us
             to succinctly construct new arrays as a composite of existing arrays.
         </p>
         <p>Here is an example:</p>
-        <pre  class="language-javascript" class="text"><code>onst a = [ 1, 2, 3 ];
+        <pre class="language-javascript" class="text"><code>onst a = [ 1, 2, 3 ];
 const b = [ 4, 5, 6 ];
 const c = [ ...a, ...b, 7, 8, 9 ];
 
 console.log(c);</code></pre>
         <p>Notice how this is different than if we wrote:</p>
-        <pre  class="language-javascript" class="text"><code>const d = [ a, b, 7, 8, 9 ];
+        <pre class="language-javascript" class="text"><code>const d = [ a, b, 7, 8, 9 ];
 console.log(d);</code></pre>
         <h2 id="enhanced-object-literals">Enhanced object literals</h2>
         <p>In ES5, all objects were required to have explicit key and value declarations:</p>
-        <pre  class="language-javascript" class="text"><code>const explicit = {
+        <pre class="language-javascript" class="text"><code>const explicit = {
   getState: getState,
   dispatch: dispatch,
 };</code></pre>
         <p>In ES6, you can use this terser syntax whenever the property name and variable name are the same:</p>
-        <pre  class="language-javascript" class="text"><code>const implicit = {
+        <pre class="language-javascript" class="text"><code>const implicit = {
   getState,
   dispatch,
 };</code></pre>
@@ -292,18 +309,18 @@ console.log(d);</code></pre>
         <h2 id="default-arguments">Default arguments</h2>
         <p>With ES6, you can specify a default value for an argument in the case that it is <code>undefined</code> when the function is called.</p>
         <p>This:</p>
-        <pre  class="language-javascript" class="text"><code>unction divide(a, b) {
+        <pre class="language-javascript" class="text"><code>unction divide(a, b) {
 
   const divisor = typeof b === &#39;undefined&#39; ? 1 : b;
 
   return a / divisor;
 }</code></pre>
         <p>Can be written as this:</p>
-        <pre  class="language-javascript" class="text"><code>function divide(a, b = 1) {
+        <pre class="language-javascript" class="text"><code>function divide(a, b = 1) {
   return a / b;
 }</code></pre>
         <p>In both cases, using the function looks like this:</p>
-        <pre  class="language-javascript" class="text"><code>divide(14, 2);
+        <pre class="language-javascript" class="text"><code>divide(14, 2);
 
 divide(14, undefined);
 
@@ -312,15 +329,15 @@ divide(14);</code></pre>
             Whenever the argument <code>b</code> in the example above is <code>undefined</code>, the default argument is used. Note that <code>null</code> will
             not use the default argument:
         </p>
-        <pre  class="language-javascript" class="text"><code>divide(14, null);</code></pre>
+        <pre class="language-javascript" class="text"><code>divide(14, null);</code></pre>
         <h2 id="destructuring-assignments">Destructuring assignments</h2>
         <h3 id="for-arrays">For arrays</h3>
         <p>In ES5, extracting and assigning multiple elements from an array looked like this:</p>
-        <pre  class="language-javascript" class="text"><code>ar fruits = [ &#39;apples&#39;, &#39;bananas&#39;, &#39;oranges&#39; ];
+        <pre class="language-javascript" class="text"><code>ar fruits = [ &#39;apples&#39;, &#39;bananas&#39;, &#39;oranges&#39; ];
 var fruit1 = fruits[0];
 var fruit2 = fruits[1];</code></pre>
         <p>In ES6, we can use the destructuring syntax to accomplish the same task like this:</p>
-        <pre  class="language-javascript" class="text"><code>const [ veg1, veg2 ] = [ &#39;asparagus&#39;, &#39;broccoli&#39;, &#39;onion&#39; ];
+        <pre class="language-javascript" class="text"><code>const [ veg1, veg2 ] = [ &#39;asparagus&#39;, &#39;broccoli&#39;, &#39;onion&#39; ];
 console.log(veg1);
 console.log(veg2);</code></pre>
         <p>
@@ -329,7 +346,7 @@ console.log(veg2);</code></pre>
         </p>
         <h3 id="for-objects">For objects</h3>
         <p>We can do something similar for extracting object properties into variables:</p>
-        <pre  class="language-javascript" class="text"><code>const smoothie = {
+        <pre class="language-javascript" class="text"><code>const smoothie = {
   fats: [ &#39;avocado&#39;, &#39;peanut butter&#39;, &#39;greek yogurt&#39; ],
   liquids: [ &#39;almond milk&#39; ],
   greens: [ &#39;spinach&#39; ],
@@ -342,7 +359,7 @@ console.log(liquids);
 console.log(fruits);</code></pre>
         <h3 id="parameter-context-matching">Parameter context matching</h3>
         <p>We can use these same principles to bind arguments inside a function to properties of an object supplied as an argument:</p>
-        <pre  class="language-javascript" class="text"><code>const containsSpinach = ({ greens }) =&gt; {
+        <pre class="language-javascript" class="text"><code>const containsSpinach = ({ greens }) =&gt; {
   if (greens.find(g =&gt; g === &#39;spinach&#39;)) {
     return true;
   } else {
@@ -352,7 +369,7 @@ console.log(fruits);</code></pre>
 
 containsSpinach(smoothie);</code></pre>
         <p>We do this often with functional React components:</p>
-        <pre  class="language-javascript" class="text"><code>const IngredientList = ({ ingredients, onClick }) =&gt; (
+        <pre class="language-javascript" class="text"><code>const IngredientList = ({ ingredients, onClick }) =&gt; (
   &lt;ul className=&#39;IngredientList&#39;&gt;
     {
       ingredients.map(i =&gt; (
