@@ -1,7 +1,6 @@
 stackbitVersion: ~0.3.0
 ssgName: gatsby
 ssgVersion: 2.3.30
-nodeVersion: 14
 buildCommand: npm run build
 publishDir: public
 staticDir: static
@@ -572,4 +571,4 @@ models:
                         default: name
                       - type: boolean
                         name: relativeUrl
-
+nodeVersion: 14
