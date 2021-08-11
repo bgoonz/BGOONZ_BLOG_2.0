@@ -1,7 +1,7 @@
 ---
 title: 'Tools Page 2:'
 weight: 0
-excerpt: lorem-ipsum
+excerpt: more tools that I have created or collaborated on.
 seo:
     title: ''
     description: ''
@@ -11,25 +11,6 @@ seo:
 template: docs
 ---
 
-
-
-<br>
-
-<br>
-
-<br>
-<h1>  The Algorithms </h1>
-<br>
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="Excel To Markdown Table" src="https://bgoonz-branch-the-algos.vercel.app/" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/bgoonz/pen/JjNaPpL">
-  Excel To Markdown Table</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-
-
-
----
 # Paste Excel To Markdown Table:
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Excel To Markdown Table" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
