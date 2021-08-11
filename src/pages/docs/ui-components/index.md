@@ -24,6 +24,7 @@ seo:
           value: This is the UI components page
 template: docs
 ---
+
 # My Favorite VSCode Themes
 
 Themes

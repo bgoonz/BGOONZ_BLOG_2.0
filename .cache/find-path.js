@@ -1,41 +1,31 @@
-import { pick } from "@gatsbyjs/reach-router/lib/utils"
-import stripPrefix from "./strip-prefix"
-import normalizePagePath from "./normalize-page-path"
-import { maybeGetBrowserRedirect } from "./redirect-utils.js"
+import { pick } from '@gatsbyjs/reach-router/lib/utils';
+import stripPrefix from './strip-prefix';
+import normalizePagePath from './normalize-page-path';
+import { maybeGetBrowserRedirect } from './redirect-utils.js';
 
-const pathCache = new Map()
-let matchPaths = []
+const pathCache = new Map();
+let matchPaths = [];
 
-const trimPathname = rawPathname => {
-  const pathname = decodeURIComponent(rawPathname)
-  // Remove the pathPrefix from the pathname.
-  const trimmedPathname = stripPrefix(
-    pathname,
-    decodeURIComponent(__BASE_PATH__)
-  )
-    // Remove any hashfragment
-    .split(`#`)[0]
-    // Remove search query
-    .split(`?`)[0]
+const trimPathname = (rawPathname) => {
+    const pathname = decodeURIComponent(rawPathname);
+    // Remove the pathPrefix from the pathname.
+    const trimmedPathname = stripPrefix(pathname, decodeURIComponent(__BASE_PATH__))
+        // Remove any hashfragment
+        .split(`#`)[0]
+        // Remove search query
+        .split(`?`)[0];
 
-  return trimmedPathname
-}
+    return trimmedPathname;
+};
 
 function absolutify(path) {
-  // If it's already absolute, return as-is
-  if (
-    path.startsWith(`/`) ||
-    path.startsWith(`https://`) ||
-    path.startsWith(`http://`)
-  ) {
-    return path
-  }
-  // Calculate path relative to current location, adding a trailing slash to
-  // match behavior of @reach/router
-  return new URL(
-    path,
-    window.location.href + (window.location.href.endsWith(`/`) ? `` : `/`)
-  ).pathname
+    // If it's already absolute, return as-is
+    if (path.startsWith(`/`) || path.startsWith(`https://`) || path.startsWith(`http://`)) {
+        return path;
+    }
+    // Calculate path relative to current location, adding a trailing slash to
+    // match behavior of @reach/router
+    return new URL(path, window.location.href + (window.location.href.endsWith(`/`) ? `` : `/`)).pathname;
 }
 
 /**
@@ -43,9 +33,9 @@ function absolutify(path) {
  *
  * @param {Array<{path: string, matchPath: string}>} value collection of matchPaths
  */
-export const setMatchPaths = value => {
-  matchPaths = value
-}
+export const setMatchPaths = (value) => {
+    matchPaths = value;
+};
 
 /**
  * Return a matchpath url
@@ -55,24 +45,24 @@ export const setMatchPaths = value => {
  * @param {string} rawPathname A raw pathname
  * @return {string|null}
  */
-export const findMatchPath = rawPathname => {
-  const trimmedPathname = cleanPath(rawPathname)
+export const findMatchPath = (rawPathname) => {
+    const trimmedPathname = cleanPath(rawPathname);
 
-  const pickPaths = matchPaths.map(({ path, matchPath }) => {
-    return {
-      path: matchPath,
-      originalPath: path,
+    const pickPaths = matchPaths.map(({ path, matchPath }) => {
+        return {
+            path: matchPath,
+            originalPath: path
+        };
+    });
+
+    const path = pick(pickPaths, trimmedPathname);
+
+    if (path) {
+        return normalizePagePath(path.route.originalPath);
     }
-  })
 
-  const path = pick(pickPaths, trimmedPathname)
-
-  if (path) {
-    return normalizePagePath(path.route.originalPath)
-  }
-
-  return null
-}
+    return null;
+};
 
 /**
  * Return a matchpath params from reach/router rules
@@ -83,24 +73,24 @@ export const findMatchPath = rawPathname => {
  * @param {string} rawPathname A raw pathname
  * @return {object}
  */
-export const grabMatchParams = rawPathname => {
-  const trimmedPathname = cleanPath(rawPathname)
+export const grabMatchParams = (rawPathname) => {
+    const trimmedPathname = cleanPath(rawPathname);
 
-  const pickPaths = matchPaths.map(({ path, matchPath }) => {
-    return {
-      path: matchPath,
-      originalPath: path,
+    const pickPaths = matchPaths.map(({ path, matchPath }) => {
+        return {
+            path: matchPath,
+            originalPath: path
+        };
+    });
+
+    const path = pick(pickPaths, trimmedPathname);
+
+    if (path) {
+        return path.params;
     }
-  })
 
-  const path = pick(pickPaths, trimmedPathname)
-
-  if (path) {
-    return path.params
-  }
-
-  return {}
-}
+    return {};
+};
 
 // Given a raw URL path, returns the cleaned version of it (trim off
 // `#` and query params), or if it matches an entry in
@@ -110,27 +100,27 @@ export const grabMatchParams = rawPathname => {
 //
 // Or if `match-paths.json` contains `{ "/foo*": "/page1", ...}`, then
 // `/foo?bar=far` => `/page1`
-export const findPath = rawPathname => {
-  const trimmedPathname = trimPathname(absolutify(rawPathname))
-  if (pathCache.has(trimmedPathname)) {
-    return pathCache.get(trimmedPathname)
-  }
+export const findPath = (rawPathname) => {
+    const trimmedPathname = trimPathname(absolutify(rawPathname));
+    if (pathCache.has(trimmedPathname)) {
+        return pathCache.get(trimmedPathname);
+    }
 
-  const redirect = maybeGetBrowserRedirect(rawPathname)
-  if (redirect) {
-    return findPath(redirect.toPath)
-  }
+    const redirect = maybeGetBrowserRedirect(rawPathname);
+    if (redirect) {
+        return findPath(redirect.toPath);
+    }
 
-  let foundPath = findMatchPath(trimmedPathname)
+    let foundPath = findMatchPath(trimmedPathname);
 
-  if (!foundPath) {
-    foundPath = cleanPath(rawPathname)
-  }
+    if (!foundPath) {
+        foundPath = cleanPath(rawPathname);
+    }
 
-  pathCache.set(trimmedPathname, foundPath)
+    pathCache.set(trimmedPathname, foundPath);
 
-  return foundPath
-}
+    return foundPath;
+};
 
 /**
  * Clean a url and converts /index.html => /
@@ -139,15 +129,15 @@ export const findPath = rawPathname => {
  * @param {string} rawPathname A raw pathname
  * @return {string}
  */
-export const cleanPath = rawPathname => {
-  const trimmedPathname = trimPathname(absolutify(rawPathname))
+export const cleanPath = (rawPathname) => {
+    const trimmedPathname = trimPathname(absolutify(rawPathname));
 
-  let foundPath = trimmedPathname
-  if (foundPath === `/index.html`) {
-    foundPath = `/`
-  }
+    let foundPath = trimmedPathname;
+    if (foundPath === `/index.html`) {
+        foundPath = `/`;
+    }
 
-  foundPath = normalizePagePath(foundPath)
+    foundPath = normalizePagePath(foundPath);
 
-  return foundPath
-}
+    return foundPath;
+};

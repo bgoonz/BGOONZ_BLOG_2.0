@@ -56,9 +56,9 @@
         "react-instantsearch": "^6.12.0",
         "react-instantsearch-dom": "^6.12.1",
         "react-player": "^2.9.0",
-        "react-script-tag": "1.1.2",
+        "react-script-tag": "^1.1.2",
         "rehype-react": "^7.0.0",
-        "sprintf-js": "1.1.2",
+        "sprintf-js": "^1.1.2",
         "stackbit": "0.0.0"
     },
     "devDependencies": {

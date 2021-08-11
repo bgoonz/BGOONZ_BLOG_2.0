@@ -1,14 +1,14 @@
-import * as React from "react"
+import * as React from 'react';
 
 export class ErrorBoundary extends React.Component {
-  state = { error: null }
+    state = { error: null };
 
-  componentDidCatch(error) {
-    this.setState({ error })
-  }
+    componentDidCatch(error) {
+        this.setState({ error });
+    }
 
-  render() {
-    // Without this check => possible infinite loop
-    return this.state.error && this.props.hasErrors ? null : this.props.children
-  }
+    render() {
+        // Without this check => possible infinite loop
+        return this.state.error && this.props.hasErrors ? null : this.props.children;
+    }
 }

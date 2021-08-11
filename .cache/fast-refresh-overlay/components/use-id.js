@@ -4,28 +4,22 @@
 // Entrypoint: packages/react/src/internal/useId.js
 
 function setupGetInstanceId() {
-  let instanceId = 0
-  return function getInstanceId() {
-    return ++instanceId
-  }
+    let instanceId = 0;
+    return function getInstanceId() {
+        return ++instanceId;
+    };
 }
 
-import * as React from "react"
+import * as React from 'react';
 
-const getId = setupGetInstanceId()
-const useIsomorphicLayoutEffect = canUseDOM()
-  ? React.useLayoutEffect
-  : React.useEffect
+const getId = setupGetInstanceId();
+const useIsomorphicLayoutEffect = canUseDOM() ? React.useLayoutEffect : React.useEffect;
 
 function canUseDOM() {
-  return !!(
-    typeof window !== `undefined` &&
-    window.document &&
-    window.document.createElement
-  )
+    return !!(typeof window !== `undefined` && window.document && window.document.createElement);
 }
 
-let serverHandoffCompleted = false
+let serverHandoffCompleted = false;
 
 /**
  * Generate a unique ID with an optional prefix prepended to it
@@ -33,24 +27,24 @@ let serverHandoffCompleted = false
  * @returns {string}
  */
 export function useId(prefix = `id`) {
-  const [id, setId] = React.useState(() => {
-    if (serverHandoffCompleted) {
-      return `${prefix}-${getId()}`
-    }
-    return null
-  })
+    const [id, setId] = React.useState(() => {
+        if (serverHandoffCompleted) {
+            return `${prefix}-${getId()}`;
+        }
+        return null;
+    });
 
-  useIsomorphicLayoutEffect(() => {
-    if (id === null) {
-      setId(`${prefix}-${getId()}`)
-    }
-  }, [getId])
+    useIsomorphicLayoutEffect(() => {
+        if (id === null) {
+            setId(`${prefix}-${getId()}`);
+        }
+    }, [getId]);
 
-  React.useEffect(() => {
-    if (serverHandoffCompleted === false) {
-      serverHandoffCompleted = true
-    }
-  }, [])
+    React.useEffect(() => {
+        if (serverHandoffCompleted === false) {
+            serverHandoffCompleted = true;
+        }
+    }, []);
 
-  return id
+    return id;
 }

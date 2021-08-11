@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 exports.__esModule = true;
 exports.lock = lock;
@@ -13,42 +13,42 @@ let previousBodyOverflowSetting;
 let activeLocks = 0;
 
 function lock() {
-  setTimeout(() => {
-    if (activeLocks++ > 0) {
-      return;
-    }
+    setTimeout(() => {
+        if (activeLocks++ > 0) {
+            return;
+        }
 
-    const scrollBarGap = window.innerWidth - document.documentElement.clientWidth;
-    const rootElement = document.getElementById(`___gatsby`);
+        const scrollBarGap = window.innerWidth - document.documentElement.clientWidth;
+        const rootElement = document.getElementById(`___gatsby`);
 
-    if (scrollBarGap > 0) {
-      previousBodyPaddingRight = document.body.style.paddingRight;
-      document.body.style.paddingRight = `${scrollBarGap}px`;
-    }
+        if (scrollBarGap > 0) {
+            previousBodyPaddingRight = document.body.style.paddingRight;
+            document.body.style.paddingRight = `${scrollBarGap}px`;
+        }
 
-    previousBodyOverflowSetting = document.body.style.overflow;
-    document.body.style.overflow = `hidden`;
-    rootElement.setAttribute(`aria-hidden`, `true`);
-  });
+        previousBodyOverflowSetting = document.body.style.overflow;
+        document.body.style.overflow = `hidden`;
+        rootElement.setAttribute(`aria-hidden`, `true`);
+    });
 }
 
 function unlock() {
-  setTimeout(() => {
-    if (activeLocks === 0 || --activeLocks !== 0) {
-      return;
-    }
+    setTimeout(() => {
+        if (activeLocks === 0 || --activeLocks !== 0) {
+            return;
+        }
 
-    const rootElement = document.getElementById(`___gatsby`);
-    rootElement.removeAttribute(`aria-hidden`);
+        const rootElement = document.getElementById(`___gatsby`);
+        rootElement.removeAttribute(`aria-hidden`);
 
-    if (previousBodyPaddingRight !== undefined) {
-      document.body.style.paddingRight = previousBodyPaddingRight;
-      previousBodyPaddingRight = undefined;
-    }
+        if (previousBodyPaddingRight !== undefined) {
+            document.body.style.paddingRight = previousBodyPaddingRight;
+            previousBodyPaddingRight = undefined;
+        }
 
-    if (previousBodyOverflowSetting !== undefined) {
-      document.body.style.overflow = previousBodyOverflowSetting;
-      previousBodyOverflowSetting = undefined;
-    }
-  });
+        if (previousBodyOverflowSetting !== undefined) {
+            document.body.style.overflow = previousBodyOverflowSetting;
+            previousBodyOverflowSetting = undefined;
+        }
+    });
 }

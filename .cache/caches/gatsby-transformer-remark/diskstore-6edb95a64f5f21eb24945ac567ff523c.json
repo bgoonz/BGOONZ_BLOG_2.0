@@ -1,1 +1,994 @@
-{"expireTime":9007200883425155000,"key":"transformer-remark-markdown-ast-9cf352baf680c9924f35b1ed69e5d6a1-gatsby-remark-embed-gist-","val":{"type":"root","children":[{"type":"list","ordered":false,"start":null,"spread":true,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"introductory-react-part-2","position":{"start":{"line":2,"column":6,"offset":6},"end":{"line":2,"column":31,"offset":31}}}],"position":{"start":{"line":2,"column":5,"offset":5},"end":{"line":2,"column":164,"offset":164}}}],"position":{"start":{"line":2,"column":5,"offset":5},"end":{"line":2,"column":164,"offset":164}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":164,"offset":164}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"a-very-quick-guide-to-calculating-big-o-computational-complexity","position":{"start":{"line":4,"column":6,"offset":171},"end":{"line":4,"column":70,"offset":235}}}],"position":{"start":{"line":4,"column":5,"offset":170},"end":{"line":4,"column":242,"offset":407}}}],"position":{"start":{"line":4,"column":5,"offset":170},"end":{"line":4,"column":242,"offset":407}}}],"position":{"start":{"line":4,"column":1,"offset":166},"end":{"line":4,"column":242,"offset":407}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"introduction-to-react-for-complete-beginners","position":{"start":{"line":6,"column":6,"offset":414},"end":{"line":6,"column":50,"offset":458}}}],"position":{"start":{"line":6,"column":5,"offset":413},"end":{"line":6,"column":207,"offset":615}}}],"position":{"start":{"line":6,"column":5,"offset":413},"end":{"line":6,"column":207,"offset":615}}}],"position":{"start":{"line":6,"column":1,"offset":409},"end":{"line":6,"column":207,"offset":615}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"scheduling-settimeout-and-setinterval","position":{"start":{"line":8,"column":6,"offset":622},"end":{"line":8,"column":43,"offset":659}}}],"position":{"start":{"line":8,"column":5,"offset":621},"end":{"line":8,"column":193,"offset":809}}}],"position":{"start":{"line":8,"column":5,"offset":621},"end":{"line":8,"column":193,"offset":809}}}],"position":{"start":{"line":8,"column":1,"offset":617},"end":{"line":8,"column":193,"offset":809}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"css-animations","position":{"start":{"line":10,"column":6,"offset":816},"end":{"line":10,"column":20,"offset":830}}}],"position":{"start":{"line":10,"column":5,"offset":815},"end":{"line":10,"column":142,"offset":952}}}],"position":{"start":{"line":10,"column":5,"offset":815},"end":{"line":10,"column":142,"offset":952}}}],"position":{"start":{"line":10,"column":1,"offset":811},"end":{"line":10,"column":142,"offset":952}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"these-are-the-bash-shell-commands-that-stand-between-me-and-insanity","position":{"start":{"line":12,"column":6,"offset":959},"end":{"line":12,"column":74,"offset":1027}}}],"position":{"start":{"line":12,"column":5,"offset":958},"end":{"line":12,"column":250,"offset":1203}}}],"position":{"start":{"line":12,"column":5,"offset":958},"end":{"line":12,"column":250,"offset":1203}}}],"position":{"start":{"line":12,"column":1,"offset":954},"end":{"line":12,"column":250,"offset":1203}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"how-to-implement-native-es6-data-structures-using-arrays-objects","position":{"start":{"line":14,"column":6,"offset":1210},"end":{"line":14,"column":70,"offset":1274}}}],"position":{"start":{"line":14,"column":5,"offset":1209},"end":{"line":14,"column":242,"offset":1446}}}],"position":{"start":{"line":14,"column":5,"offset":1209},"end":{"line":14,"column":242,"offset":1446}}}],"position":{"start":{"line":14,"column":1,"offset":1205},"end":{"line":14,"column":242,"offset":1446}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"objects-in-javascript","position":{"start":{"line":16,"column":6,"offset":1453},"end":{"line":16,"column":27,"offset":1474}}}],"position":{"start":{"line":16,"column":5,"offset":1452},"end":{"line":16,"column":151,"offset":1598}}}],"position":{"start":{"line":16,"column":5,"offset":1452},"end":{"line":16,"column":151,"offset":1598}}}],"position":{"start":{"line":16,"column":1,"offset":1448},"end":{"line":16,"column":151,"offset":1598}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"absolute-beginners-guide-to-javascript-part1","position":{"start":{"line":18,"column":6,"offset":1605},"end":{"line":18,"column":50,"offset":1649}}}],"position":{"start":{"line":18,"column":5,"offset":1604},"end":{"line":18,"column":208,"offset":1807}}}],"position":{"start":{"line":18,"column":5,"offset":1604},"end":{"line":18,"column":208,"offset":1807}}}],"position":{"start":{"line":18,"column":1,"offset":1600},"end":{"line":18,"column":208,"offset":1807}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"web-developer-resource-list-part-4","position":{"start":{"line":20,"column":6,"offset":1814},"end":{"line":20,"column":40,"offset":1848}}}],"position":{"start":{"line":20,"column":5,"offset":1813},"end":{"line":20,"column":183,"offset":1991}}}],"position":{"start":{"line":20,"column":5,"offset":1813},"end":{"line":20,"column":183,"offset":1991}}}],"position":{"start":{"line":20,"column":1,"offset":1809},"end":{"line":20,"column":183,"offset":1991}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"vscode-extensions-specifically-for-javascript-development","position":{"start":{"line":22,"column":6,"offset":1998},"end":{"line":22,"column":63,"offset":2055}}}],"position":{"start":{"line":22,"column":5,"offset":1997},"end":{"line":22,"column":223,"offset":2215}}}],"position":{"start":{"line":22,"column":5,"offset":1997},"end":{"line":22,"column":223,"offset":2215}}}],"position":{"start":{"line":22,"column":1,"offset":1993},"end":{"line":22,"column":223,"offset":2215}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"a-list-of-all-of-my-articles-to-link-to-future-posts","position":{"start":{"line":24,"column":6,"offset":2222},"end":{"line":24,"column":58,"offset":2274}}}],"position":{"start":{"line":24,"column":5,"offset":2221},"end":{"line":24,"column":218,"offset":2434}}}],"position":{"start":{"line":24,"column":5,"offset":2221},"end":{"line":24,"column":218,"offset":2434}}}],"position":{"start":{"line":24,"column":1,"offset":2217},"end":{"line":24,"column":218,"offset":2434}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"lists-stacks-and-queues-in-javascript","position":{"start":{"line":26,"column":6,"offset":2441},"end":{"line":26,"column":43,"offset":2478}}}],"position":{"start":{"line":26,"column":5,"offset":2440},"end":{"line":26,"column":193,"offset":2628}}}],"position":{"start":{"line":26,"column":5,"offset":2440},"end":{"line":26,"column":193,"offset":2628}}}],"position":{"start":{"line":26,"column":1,"offset":2436},"end":{"line":26,"column":193,"offset":2628}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"web-development-resources-part-3","position":{"start":{"line":28,"column":6,"offset":2635},"end":{"line":28,"column":38,"offset":2667}}}],"position":{"start":{"line":28,"column":5,"offset":2634},"end":{"line":28,"column":178,"offset":2807}}}],"position":{"start":{"line":28,"column":5,"offset":2634},"end":{"line":28,"column":178,"offset":2807}}}],"position":{"start":{"line":28,"column":1,"offset":2630},"end":{"line":28,"column":178,"offset":2807}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"web-development-interview-part-3","position":{"start":{"line":30,"column":6,"offset":2814},"end":{"line":30,"column":38,"offset":2846}}}],"position":{"start":{"line":30,"column":5,"offset":2813},"end":{"line":30,"column":173,"offset":2981}}}],"position":{"start":{"line":30,"column":5,"offset":2813},"end":{"line":30,"column":173,"offset":2981}}}],"position":{"start":{"line":30,"column":1,"offset":2809},"end":{"line":30,"column":173,"offset":2981}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"running-list-of-interesting-articles-tools","position":{"start":{"line":32,"column":6,"offset":2988},"end":{"line":32,"column":48,"offset":3030}}}],"position":{"start":{"line":32,"column":5,"offset":2987},"end":{"line":32,"column":226,"offset":3208}}}],"position":{"start":{"line":32,"column":5,"offset":2987},"end":{"line":32,"column":226,"offset":3208}}}],"position":{"start":{"line":32,"column":1,"offset":2983},"end":{"line":32,"column":226,"offset":3208}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"the-best-cloud-based-code-playgrounds-of-2021-part-1","position":{"start":{"line":34,"column":6,"offset":3215},"end":{"line":34,"column":58,"offset":3267}}}],"position":{"start":{"line":34,"column":5,"offset":3214},"end":{"line":34,"column":218,"offset":3427}}}],"position":{"start":{"line":34,"column":5,"offset":3214},"end":{"line":34,"column":218,"offset":3427}}}],"position":{"start":{"line":34,"column":1,"offset":3210},"end":{"line":34,"column":218,"offset":3427}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"front-end-interview-questions-part-2","position":{"start":{"line":36,"column":6,"offset":3434},"end":{"line":36,"column":42,"offset":3470}}}],"position":{"start":{"line":36,"column":5,"offset":3433},"end":{"line":36,"column":181,"offset":3609}}}],"position":{"start":{"line":36,"column":5,"offset":3433},"end":{"line":36,"column":181,"offset":3609}}}],"position":{"start":{"line":36,"column":1,"offset":3429},"end":{"line":36,"column":181,"offset":3609}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"web-developer-resource-list-part-2","position":{"start":{"line":38,"column":6,"offset":3616},"end":{"line":38,"column":40,"offset":3650}}}],"position":{"start":{"line":38,"column":5,"offset":3615},"end":{"line":38,"column":183,"offset":3793}}}],"position":{"start":{"line":38,"column":5,"offset":3615},"end":{"line":38,"column":183,"offset":3793}}}],"position":{"start":{"line":38,"column":1,"offset":3611},"end":{"line":38,"column":183,"offset":3793}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"http-basics","position":{"start":{"line":40,"column":6,"offset":3800},"end":{"line":40,"column":17,"offset":3811}}}],"position":{"start":{"line":40,"column":5,"offset":3799},"end":{"line":40,"column":139,"offset":3933}}}],"position":{"start":{"line":40,"column":5,"offset":3799},"end":{"line":40,"column":139,"offset":3933}}}],"position":{"start":{"line":40,"column":1,"offset":3795},"end":{"line":40,"column":139,"offset":3933}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"javascript-frameworks-libraries","position":{"start":{"line":42,"column":6,"offset":3940},"end":{"line":42,"column":37,"offset":3971}}}],"position":{"start":{"line":42,"column":5,"offset":3939},"end":{"line":42,"column":181,"offset":4115}}}],"position":{"start":{"line":42,"column":5,"offset":3939},"end":{"line":42,"column":181,"offset":4115}}}],"position":{"start":{"line":42,"column":1,"offset":3935},"end":{"line":42,"column":181,"offset":4115}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"my-take-on-awesome-javascript","position":{"start":{"line":44,"column":6,"offset":4122},"end":{"line":44,"column":35,"offset":4151}}}],"position":{"start":{"line":44,"column":5,"offset":4121},"end":{"line":44,"column":177,"offset":4293}}}],"position":{"start":{"line":44,"column":5,"offset":4121},"end":{"line":44,"column":177,"offset":4293}}}],"position":{"start":{"line":44,"column":1,"offset":4117},"end":{"line":44,"column":177,"offset":4293}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"get-started-with-vscode-extensions","position":{"start":{"line":46,"column":6,"offset":4300},"end":{"line":46,"column":40,"offset":4334}}}],"position":{"start":{"line":46,"column":5,"offset":4299},"end":{"line":46,"column":218,"offset":4512}}}],"position":{"start":{"line":46,"column":5,"offset":4299},"end":{"line":46,"column":218,"offset":4512}}}],"position":{"start":{"line":46,"column":1,"offset":4295},"end":{"line":46,"column":218,"offset":4512}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"my-favorite-vscode-themes","position":{"start":{"line":48,"column":6,"offset":4519},"end":{"line":48,"column":31,"offset":4544}}}],"position":{"start":{"line":48,"column":5,"offset":4518},"end":{"line":48,"column":167,"offset":4680}}}],"position":{"start":{"line":48,"column":5,"offset":4518},"end":{"line":48,"column":167,"offset":4680}}}],"position":{"start":{"line":48,"column":1,"offset":4514},"end":{"line":48,"column":167,"offset":4680}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"object-oriented-programming-in-javascript","position":{"start":{"line":50,"column":6,"offset":4687},"end":{"line":50,"column":47,"offset":4728}}}],"position":{"start":{"line":50,"column":5,"offset":4686},"end":{"line":50,"column":199,"offset":4880}}}],"position":{"start":{"line":50,"column":5,"offset":4686},"end":{"line":50,"column":199,"offset":4880}}}],"position":{"start":{"line":50,"column":1,"offset":4682},"end":{"line":50,"column":199,"offset":4880}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"javascript-rotate-array-problemwalkthrough","position":{"start":{"line":52,"column":6,"offset":4887},"end":{"line":52,"column":48,"offset":4929}}}],"position":{"start":{"line":52,"column":5,"offset":4886},"end":{"line":52,"column":193,"offset":5074}}}],"position":{"start":{"line":52,"column":5,"offset":4886},"end":{"line":52,"column":193,"offset":5074}}}],"position":{"start":{"line":52,"column":1,"offset":4882},"end":{"line":52,"column":193,"offset":5074}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"super-simple-intro-to-html-651d695f9bc","position":{"start":{"line":54,"column":6,"offset":5081},"end":{"line":54,"column":44,"offset":5119}}}],"position":{"start":{"line":54,"column":5,"offset":5080},"end":{"line":54,"column":180,"offset":5255}}}],"position":{"start":{"line":54,"column":5,"offset":5080},"end":{"line":54,"column":180,"offset":5255}}}],"position":{"start":{"line":54,"column":1,"offset":5076},"end":{"line":54,"column":180,"offset":5255}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"everything-you-need-to-know-about-relational-databases-sql-postgresql","position":{"start":{"line":56,"column":6,"offset":5262},"end":{"line":56,"column":75,"offset":5331}}}],"position":{"start":{"line":56,"column":5,"offset":5261},"end":{"line":56,"column":270,"offset":5526}}}],"position":{"start":{"line":56,"column":5,"offset":5261},"end":{"line":56,"column":270,"offset":5526}}}],"position":{"start":{"line":56,"column":1,"offset":5257},"end":{"line":56,"column":270,"offset":5526}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107","position":{"start":{"line":58,"column":6,"offset":5533},"end":{"line":58,"column":88,"offset":5615}}}],"position":{"start":{"line":58,"column":5,"offset":5532},"end":{"line":58,"column":268,"offset":5795}}}],"position":{"start":{"line":58,"column":5,"offset":5532},"end":{"line":58,"column":268,"offset":5795}}}],"position":{"start":{"line":58,"column":1,"offset":5528},"end":{"line":58,"column":268,"offset":5795}}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------","children":[{"type":"text","value":"complete-javascript-reference-guide-64306cd6b0db","position":{"start":{"line":60,"column":6,"offset":5802},"end":{"line":60,"column":54,"offset":5850}}}],"position":{"start":{"line":60,"column":5,"offset":5801},"end":{"line":60,"column":202,"offset":5998}}}],"position":{"start":{"line":60,"column":5,"offset":5801},"end":{"line":60,"column":202,"offset":5998}}}],"position":{"start":{"line":60,"column":1,"offset":5797},"end":{"line":60,"column":202,"offset":5998}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":60,"column":202,"offset":5998}}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":61,"column":1,"offset":5999}}}}
+{
+    "expireTime": 9007200883425155000,
+    "key": "transformer-remark-markdown-ast-9cf352baf680c9924f35b1ed69e5d6a1-gatsby-remark-embed-gist-",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "list",
+                "ordered": false,
+                "start": null,
+                "spread": true,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "introductory-react-part-2",
+                                                "position": {
+                                                    "start": { "line": 2, "column": 6, "offset": 6 },
+                                                    "end": { "line": 2, "column": 31, "offset": 31 }
+                                                }
+                                            }
+                                        ],
+                                        "position": { "start": { "line": 2, "column": 5, "offset": 5 }, "end": { "line": 2, "column": 164, "offset": 164 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 2, "column": 5, "offset": 5 }, "end": { "line": 2, "column": 164, "offset": 164 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 164, "offset": 164 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "a-very-quick-guide-to-calculating-big-o-computational-complexity",
+                                                "position": {
+                                                    "start": { "line": 4, "column": 6, "offset": 171 },
+                                                    "end": { "line": 4, "column": 70, "offset": 235 }
+                                                }
+                                            }
+                                        ],
+                                        "position": { "start": { "line": 4, "column": 5, "offset": 170 }, "end": { "line": 4, "column": 242, "offset": 407 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 4, "column": 5, "offset": 170 }, "end": { "line": 4, "column": 242, "offset": 407 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 4, "column": 1, "offset": 166 }, "end": { "line": 4, "column": 242, "offset": 407 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "introduction-to-react-for-complete-beginners",
+                                                "position": {
+                                                    "start": { "line": 6, "column": 6, "offset": 414 },
+                                                    "end": { "line": 6, "column": 50, "offset": 458 }
+                                                }
+                                            }
+                                        ],
+                                        "position": { "start": { "line": 6, "column": 5, "offset": 413 }, "end": { "line": 6, "column": 207, "offset": 615 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 6, "column": 5, "offset": 413 }, "end": { "line": 6, "column": 207, "offset": 615 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 6, "column": 1, "offset": 409 }, "end": { "line": 6, "column": 207, "offset": 615 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "scheduling-settimeout-and-setinterval",
+                                                "position": {
+                                                    "start": { "line": 8, "column": 6, "offset": 622 },
+                                                    "end": { "line": 8, "column": 43, "offset": 659 }
+                                                }
+                                            }
+                                        ],
+                                        "position": { "start": { "line": 8, "column": 5, "offset": 621 }, "end": { "line": 8, "column": 193, "offset": 809 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 8, "column": 5, "offset": 621 }, "end": { "line": 8, "column": 193, "offset": 809 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 8, "column": 1, "offset": 617 }, "end": { "line": 8, "column": 193, "offset": 809 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "css-animations",
+                                                "position": {
+                                                    "start": { "line": 10, "column": 6, "offset": 816 },
+                                                    "end": { "line": 10, "column": 20, "offset": 830 }
+                                                }
+                                            }
+                                        ],
+                                        "position": { "start": { "line": 10, "column": 5, "offset": 815 }, "end": { "line": 10, "column": 142, "offset": 952 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 10, "column": 5, "offset": 815 }, "end": { "line": 10, "column": 142, "offset": 952 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 10, "column": 1, "offset": 811 }, "end": { "line": 10, "column": 142, "offset": 952 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "these-are-the-bash-shell-commands-that-stand-between-me-and-insanity",
+                                                "position": {
+                                                    "start": { "line": 12, "column": 6, "offset": 959 },
+                                                    "end": { "line": 12, "column": 74, "offset": 1027 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 12, "column": 5, "offset": 958 },
+                                            "end": { "line": 12, "column": 250, "offset": 1203 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 12, "column": 5, "offset": 958 }, "end": { "line": 12, "column": 250, "offset": 1203 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 12, "column": 1, "offset": 954 }, "end": { "line": 12, "column": 250, "offset": 1203 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "how-to-implement-native-es6-data-structures-using-arrays-objects",
+                                                "position": {
+                                                    "start": { "line": 14, "column": 6, "offset": 1210 },
+                                                    "end": { "line": 14, "column": 70, "offset": 1274 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 14, "column": 5, "offset": 1209 },
+                                            "end": { "line": 14, "column": 242, "offset": 1446 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 14, "column": 5, "offset": 1209 }, "end": { "line": 14, "column": 242, "offset": 1446 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 14, "column": 1, "offset": 1205 }, "end": { "line": 14, "column": 242, "offset": 1446 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "objects-in-javascript",
+                                                "position": {
+                                                    "start": { "line": 16, "column": 6, "offset": 1453 },
+                                                    "end": { "line": 16, "column": 27, "offset": 1474 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 16, "column": 5, "offset": 1452 },
+                                            "end": { "line": 16, "column": 151, "offset": 1598 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 16, "column": 5, "offset": 1452 }, "end": { "line": 16, "column": 151, "offset": 1598 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 16, "column": 1, "offset": 1448 }, "end": { "line": 16, "column": 151, "offset": 1598 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "absolute-beginners-guide-to-javascript-part1",
+                                                "position": {
+                                                    "start": { "line": 18, "column": 6, "offset": 1605 },
+                                                    "end": { "line": 18, "column": 50, "offset": 1649 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 18, "column": 5, "offset": 1604 },
+                                            "end": { "line": 18, "column": 208, "offset": 1807 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 18, "column": 5, "offset": 1604 }, "end": { "line": 18, "column": 208, "offset": 1807 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 18, "column": 1, "offset": 1600 }, "end": { "line": 18, "column": 208, "offset": 1807 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "web-developer-resource-list-part-4",
+                                                "position": {
+                                                    "start": { "line": 20, "column": 6, "offset": 1814 },
+                                                    "end": { "line": 20, "column": 40, "offset": 1848 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 20, "column": 5, "offset": 1813 },
+                                            "end": { "line": 20, "column": 183, "offset": 1991 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 20, "column": 5, "offset": 1813 }, "end": { "line": 20, "column": 183, "offset": 1991 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 20, "column": 1, "offset": 1809 }, "end": { "line": 20, "column": 183, "offset": 1991 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "vscode-extensions-specifically-for-javascript-development",
+                                                "position": {
+                                                    "start": { "line": 22, "column": 6, "offset": 1998 },
+                                                    "end": { "line": 22, "column": 63, "offset": 2055 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 22, "column": 5, "offset": 1997 },
+                                            "end": { "line": 22, "column": 223, "offset": 2215 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 22, "column": 5, "offset": 1997 }, "end": { "line": 22, "column": 223, "offset": 2215 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 22, "column": 1, "offset": 1993 }, "end": { "line": 22, "column": 223, "offset": 2215 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "a-list-of-all-of-my-articles-to-link-to-future-posts",
+                                                "position": {
+                                                    "start": { "line": 24, "column": 6, "offset": 2222 },
+                                                    "end": { "line": 24, "column": 58, "offset": 2274 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 24, "column": 5, "offset": 2221 },
+                                            "end": { "line": 24, "column": 218, "offset": 2434 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 24, "column": 5, "offset": 2221 }, "end": { "line": 24, "column": 218, "offset": 2434 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 24, "column": 1, "offset": 2217 }, "end": { "line": 24, "column": 218, "offset": 2434 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "lists-stacks-and-queues-in-javascript",
+                                                "position": {
+                                                    "start": { "line": 26, "column": 6, "offset": 2441 },
+                                                    "end": { "line": 26, "column": 43, "offset": 2478 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 26, "column": 5, "offset": 2440 },
+                                            "end": { "line": 26, "column": 193, "offset": 2628 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 26, "column": 5, "offset": 2440 }, "end": { "line": 26, "column": 193, "offset": 2628 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 26, "column": 1, "offset": 2436 }, "end": { "line": 26, "column": 193, "offset": 2628 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "web-development-resources-part-3",
+                                                "position": {
+                                                    "start": { "line": 28, "column": 6, "offset": 2635 },
+                                                    "end": { "line": 28, "column": 38, "offset": 2667 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 28, "column": 5, "offset": 2634 },
+                                            "end": { "line": 28, "column": 178, "offset": 2807 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 28, "column": 5, "offset": 2634 }, "end": { "line": 28, "column": 178, "offset": 2807 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 28, "column": 1, "offset": 2630 }, "end": { "line": 28, "column": 178, "offset": 2807 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "web-development-interview-part-3",
+                                                "position": {
+                                                    "start": { "line": 30, "column": 6, "offset": 2814 },
+                                                    "end": { "line": 30, "column": 38, "offset": 2846 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 30, "column": 5, "offset": 2813 },
+                                            "end": { "line": 30, "column": 173, "offset": 2981 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 30, "column": 5, "offset": 2813 }, "end": { "line": 30, "column": 173, "offset": 2981 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 30, "column": 1, "offset": 2809 }, "end": { "line": 30, "column": 173, "offset": 2981 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "running-list-of-interesting-articles-tools",
+                                                "position": {
+                                                    "start": { "line": 32, "column": 6, "offset": 2988 },
+                                                    "end": { "line": 32, "column": 48, "offset": 3030 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 32, "column": 5, "offset": 2987 },
+                                            "end": { "line": 32, "column": 226, "offset": 3208 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 32, "column": 5, "offset": 2987 }, "end": { "line": 32, "column": 226, "offset": 3208 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 32, "column": 1, "offset": 2983 }, "end": { "line": 32, "column": 226, "offset": 3208 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "the-best-cloud-based-code-playgrounds-of-2021-part-1",
+                                                "position": {
+                                                    "start": { "line": 34, "column": 6, "offset": 3215 },
+                                                    "end": { "line": 34, "column": 58, "offset": 3267 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 34, "column": 5, "offset": 3214 },
+                                            "end": { "line": 34, "column": 218, "offset": 3427 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 34, "column": 5, "offset": 3214 }, "end": { "line": 34, "column": 218, "offset": 3427 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 34, "column": 1, "offset": 3210 }, "end": { "line": 34, "column": 218, "offset": 3427 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "front-end-interview-questions-part-2",
+                                                "position": {
+                                                    "start": { "line": 36, "column": 6, "offset": 3434 },
+                                                    "end": { "line": 36, "column": 42, "offset": 3470 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 36, "column": 5, "offset": 3433 },
+                                            "end": { "line": 36, "column": 181, "offset": 3609 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 36, "column": 5, "offset": 3433 }, "end": { "line": 36, "column": 181, "offset": 3609 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 36, "column": 1, "offset": 3429 }, "end": { "line": 36, "column": 181, "offset": 3609 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "web-developer-resource-list-part-2",
+                                                "position": {
+                                                    "start": { "line": 38, "column": 6, "offset": 3616 },
+                                                    "end": { "line": 38, "column": 40, "offset": 3650 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 38, "column": 5, "offset": 3615 },
+                                            "end": { "line": 38, "column": 183, "offset": 3793 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 38, "column": 5, "offset": 3615 }, "end": { "line": 38, "column": 183, "offset": 3793 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 38, "column": 1, "offset": 3611 }, "end": { "line": 38, "column": 183, "offset": 3793 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "http-basics",
+                                                "position": {
+                                                    "start": { "line": 40, "column": 6, "offset": 3800 },
+                                                    "end": { "line": 40, "column": 17, "offset": 3811 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 40, "column": 5, "offset": 3799 },
+                                            "end": { "line": 40, "column": 139, "offset": 3933 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 40, "column": 5, "offset": 3799 }, "end": { "line": 40, "column": 139, "offset": 3933 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 40, "column": 1, "offset": 3795 }, "end": { "line": 40, "column": 139, "offset": 3933 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "javascript-frameworks-libraries",
+                                                "position": {
+                                                    "start": { "line": 42, "column": 6, "offset": 3940 },
+                                                    "end": { "line": 42, "column": 37, "offset": 3971 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 42, "column": 5, "offset": 3939 },
+                                            "end": { "line": 42, "column": 181, "offset": 4115 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 42, "column": 5, "offset": 3939 }, "end": { "line": 42, "column": 181, "offset": 4115 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 42, "column": 1, "offset": 3935 }, "end": { "line": 42, "column": 181, "offset": 4115 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "my-take-on-awesome-javascript",
+                                                "position": {
+                                                    "start": { "line": 44, "column": 6, "offset": 4122 },
+                                                    "end": { "line": 44, "column": 35, "offset": 4151 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 44, "column": 5, "offset": 4121 },
+                                            "end": { "line": 44, "column": 177, "offset": 4293 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 44, "column": 5, "offset": 4121 }, "end": { "line": 44, "column": 177, "offset": 4293 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 44, "column": 1, "offset": 4117 }, "end": { "line": 44, "column": 177, "offset": 4293 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "get-started-with-vscode-extensions",
+                                                "position": {
+                                                    "start": { "line": 46, "column": 6, "offset": 4300 },
+                                                    "end": { "line": 46, "column": 40, "offset": 4334 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 46, "column": 5, "offset": 4299 },
+                                            "end": { "line": 46, "column": 218, "offset": 4512 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 46, "column": 5, "offset": 4299 }, "end": { "line": 46, "column": 218, "offset": 4512 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 46, "column": 1, "offset": 4295 }, "end": { "line": 46, "column": 218, "offset": 4512 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "my-favorite-vscode-themes",
+                                                "position": {
+                                                    "start": { "line": 48, "column": 6, "offset": 4519 },
+                                                    "end": { "line": 48, "column": 31, "offset": 4544 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 48, "column": 5, "offset": 4518 },
+                                            "end": { "line": 48, "column": 167, "offset": 4680 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 48, "column": 5, "offset": 4518 }, "end": { "line": 48, "column": 167, "offset": 4680 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 48, "column": 1, "offset": 4514 }, "end": { "line": 48, "column": 167, "offset": 4680 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "object-oriented-programming-in-javascript",
+                                                "position": {
+                                                    "start": { "line": 50, "column": 6, "offset": 4687 },
+                                                    "end": { "line": 50, "column": 47, "offset": 4728 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 50, "column": 5, "offset": 4686 },
+                                            "end": { "line": 50, "column": 199, "offset": 4880 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 50, "column": 5, "offset": 4686 }, "end": { "line": 50, "column": 199, "offset": 4880 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 50, "column": 1, "offset": 4682 }, "end": { "line": 50, "column": 199, "offset": 4880 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "javascript-rotate-array-problemwalkthrough",
+                                                "position": {
+                                                    "start": { "line": 52, "column": 6, "offset": 4887 },
+                                                    "end": { "line": 52, "column": 48, "offset": 4929 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 52, "column": 5, "offset": 4886 },
+                                            "end": { "line": 52, "column": 193, "offset": 5074 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 52, "column": 5, "offset": 4886 }, "end": { "line": 52, "column": 193, "offset": 5074 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 52, "column": 1, "offset": 4882 }, "end": { "line": 52, "column": 193, "offset": 5074 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "super-simple-intro-to-html-651d695f9bc",
+                                                "position": {
+                                                    "start": { "line": 54, "column": 6, "offset": 5081 },
+                                                    "end": { "line": 54, "column": 44, "offset": 5119 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 54, "column": 5, "offset": 5080 },
+                                            "end": { "line": 54, "column": 180, "offset": 5255 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 54, "column": 5, "offset": 5080 }, "end": { "line": 54, "column": 180, "offset": 5255 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 54, "column": 1, "offset": 5076 }, "end": { "line": 54, "column": 180, "offset": 5255 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "everything-you-need-to-know-about-relational-databases-sql-postgresql",
+                                                "position": {
+                                                    "start": { "line": 56, "column": 6, "offset": 5262 },
+                                                    "end": { "line": 56, "column": 75, "offset": 5331 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 56, "column": 5, "offset": 5261 },
+                                            "end": { "line": 56, "column": 270, "offset": 5526 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 56, "column": 5, "offset": 5261 }, "end": { "line": 56, "column": 270, "offset": 5526 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 56, "column": 1, "offset": 5257 }, "end": { "line": 56, "column": 270, "offset": 5526 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107",
+                                                "position": {
+                                                    "start": { "line": 58, "column": 6, "offset": 5533 },
+                                                    "end": { "line": 58, "column": 88, "offset": 5615 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 58, "column": 5, "offset": 5532 },
+                                            "end": { "line": 58, "column": 268, "offset": 5795 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 58, "column": 5, "offset": 5532 }, "end": { "line": 58, "column": 268, "offset": 5795 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 58, "column": 1, "offset": 5528 }, "end": { "line": 58, "column": 268, "offset": 5795 } }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "link",
+                                        "title": null,
+                                        "url": "https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "complete-javascript-reference-guide-64306cd6b0db",
+                                                "position": {
+                                                    "start": { "line": 60, "column": 6, "offset": 5802 },
+                                                    "end": { "line": 60, "column": 54, "offset": 5850 }
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 60, "column": 5, "offset": 5801 },
+                                            "end": { "line": 60, "column": 202, "offset": 5998 }
+                                        }
+                                    }
+                                ],
+                                "position": { "start": { "line": 60, "column": 5, "offset": 5801 }, "end": { "line": 60, "column": 202, "offset": 5998 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 60, "column": 1, "offset": 5797 }, "end": { "line": 60, "column": 202, "offset": 5998 } }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 60, "column": 202, "offset": 5998 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 61, "column": 1, "offset": 5999 } }
+    }
+}

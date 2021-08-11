@@ -1,1 +1,49 @@
-{"expireTime":9007200883425168000,"key":"transformer-remark-markdown-html-ast-dd24af59935280995fe413572aa0ec3f-gatsby-remark-embed-gist-","val":{"type":"root","children":[{"type":"element","tagName":"ul","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://mybinder.org/v2/gh/bgoonz/Jupyter-Notebooks/439b0b3a1cae4bf7181996f1057221942c0c449f?filepath=00-Guide-to-Web-Scraping.ipynb"},"children":[{"type":"text","value":"Open Binder Jupyter Notebook","position":{"start":{"line":2,"column":6,"offset":6},"end":{"line":2,"column":34,"offset":34}}}],"position":{"start":{"line":2,"column":5,"offset":5},"end":{"line":2,"column":169,"offset":169}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":169,"offset":169}}},{"type":"text","value":"\n"}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":169,"offset":169}}},{"type":"text","value":"\n"},{"type":"raw","value":"<iframe src=\"https://mybinder.org/v2/gh/bgoonz/Jupyter-Notebooks/439b0b3a1cae4bf7181996f1057221942c0c449f\" height=\"900px\" width=\"100%\">\n</iframe>","position":{"start":{"line":4,"column":1,"offset":171},"end":{"line":5,"column":10,"offset":316}}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":6,"column":1,"offset":317}}}}
+{
+    "expireTime": 9007200883425168000,
+    "key": "transformer-remark-markdown-html-ast-dd24af59935280995fe413572aa0ec3f-gatsby-remark-embed-gist-",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": {
+                                    "href": "https://mybinder.org/v2/gh/bgoonz/Jupyter-Notebooks/439b0b3a1cae4bf7181996f1057221942c0c449f?filepath=00-Guide-to-Web-Scraping.ipynb"
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Open Binder Jupyter Notebook",
+                                        "position": { "start": { "line": 2, "column": 6, "offset": 6 }, "end": { "line": 2, "column": 34, "offset": 34 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 2, "column": 5, "offset": 5 }, "end": { "line": 2, "column": 169, "offset": 169 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 169, "offset": 169 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 169, "offset": 169 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe src=\"https://mybinder.org/v2/gh/bgoonz/Jupyter-Notebooks/439b0b3a1cae4bf7181996f1057221942c0c449f\" height=\"900px\" width=\"100%\">\n</iframe>",
+                "position": { "start": { "line": 4, "column": 1, "offset": 171 }, "end": { "line": 5, "column": 10, "offset": 316 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 6, "column": 1, "offset": 317 } }
+    }
+}
