@@ -676,7 +676,7 @@ export default class Footer extends React.Component {
 
 ---
 
-  ##  Header
+## Header
 
 ---
 
@@ -1317,12 +1317,10 @@ export default {
 </details>
 
 ---
+
 ---
 
-
 # Static Javascript:
-
-
 
 <details>
   <summary>Static Javascript:!</summary>
@@ -3102,7 +3100,7 @@ pattern:
 lookbehind: !0
 }
 ],
-number: /\b(?:(?:0[xX](<?:[\dA-Fa-f](?:_[\dA-Fa-f])?>)+|0[bB](<?:[01](?:_[01])?>)+|0[oO](<?:[0-7](?:_[0-7])?>)+)n?|(?:\d(?:*\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:*\d)?)+\.?(?:\d(?:\_\d)?)*|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
+number: /\b(?:(?:0[xX](<?:[\dA-Fa-f](?:_[\dA-Fa-f])?>)+|0[bB](<?:[01](?:_[01])?>)+|0[oO](<?:[0-7](?:_[0-7])?>)+)n?|(?:\d(?:*\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:_\d)?)+\.?(?:\d(?:\_\d)?)_|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
 function: /[\_$a-zA-Z\xA0-\uFFFF][$\w\xa0-\uffff]_(?=\s_(?:\.\s*(?:apply|bind|call)\s*)?\()/,
 operator: /-[-=]?|\+[+=]?|!=?=?|<<?=?|>>?>?=?|=(?:==?|>)?|&[&=]?|\|[|=]?|\*\*?=?|\/=?|~|\^=?|%=?|\?|\.{3}/
 })),
@@ -3652,7 +3650,7 @@ t['language-' + e] = { pattern: /[\s\S]+/, inside: Prism.languages[e] };
 var n = {};
 (n[a] = {
 pattern: RegExp(
-'(<**[^>]*>)(?:<!\\[CDATA\\[(?:[^\\]]|\\](?!\]>))*\\]\\]>|(?!<!\\[CDATA\\[)[^])\*?(?=</**>)'.replace(/\_\_/g, function () {
+'(<**[^>]*>)(?:<!\\[CDATA\\[(?:[^\\]]|\\](?!]>))*\\]\\]>|(?!<!\\[CDATA\\[)[^])\*?(?=</**>)'.replace(/\_\_/g, function () {
 return a;
 }),
 'i'
@@ -3758,7 +3756,7 @@ pattern:
         }
     ],
     function: /#?(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\s*(?:\.\s*(?:apply|bind|call)\s*)?\()/,
-number: /\b(?:(?:0[xX](<?:[\dA-Fa-f](?:_[\dA-Fa-f])?>)+|0[bB](<?:[01](?:_[01])?>)+|0[oO](<?:[0-7](?:_[0-7])?>)+)n?|(?:\d(?:*\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:*\d)?)+\.?(?:\d(?:\_\d)?)*|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
+number: /\b(?:(?:0[xX](<?:[\dA-Fa-f](?:_[\dA-Fa-f])?>)+|0[bB](<?:[01](?:_[01])?>)+|0[oO](<?:[0-7](?:_[0-7])?>)+)n?|(?:\d(?:*\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:_\d)?)+\.?(?:\d(?:\_\d)?)_|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
 operator: /--|\+\+|\*\*=?|=>|&&=?|\|\|=?|[!=]==|<<=?|>>>?=?|[-+*/%&|^!=<>]=?|\.{3}|\?\?=?|\?\.?|[~:]/
 })),
 (Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|interface|extends|implements|instanceof|new)\s+)[\w.\\]+/),
@@ -3821,7 +3819,7 @@ Prism.languages.markup.tag.addAttribute(
 )),
 (Prism.languages.js = Prism.languages.javascript);
 
-```
+````
 
 # main.js
 
@@ -4094,7 +4092,7 @@ window.onGatsbyInitialClientRender = function () {
 //--------------------------------New----------------------------------
 //-----------------------------------------------------------------------
 //-----------------------------------------------------------------------
-```
+````
 
 ---
 
@@ -5173,7 +5171,7 @@ Element.prototype.closest ||
 # Prism.js
 
 ```js
-     
+
 var \_self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
 Prism = (function (g) {
 var c = /\blang(?:uage)?-([\w-]+)\b/i,
@@ -6320,3 +6318,4 @@ Prism.languages.markup.tag.addAttribute(
 ```
 
 <details>
+```
