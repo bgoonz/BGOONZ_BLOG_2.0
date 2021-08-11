@@ -26,7 +26,7 @@ template: docs
 <br>
 <br>
 <br>
-`gist:bgoonz/ce54fdb1e5621b5966e146026995b974#syntax.text`
+`gist:[bgoonz/]730fd7c7fa1f7fd3404f2553da99db1f#AllMyRepos.md`
 <br>
 <br>
 <br>
