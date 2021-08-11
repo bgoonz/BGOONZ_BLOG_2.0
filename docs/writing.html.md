@@ -42,8 +42,7 @@ The flags you’ll likely use are
 
 (you can find more flags at <a href="https://nodejs.org/api/fs.html#fs_file_system_flags" class="uri">https://nodejs.org/api/fs.html#fs_file_system_flags</a>)
 
-Append to a file
-----------------
+## Append to a file
 
 A handy method to append content to the end of a file is `fs.appendFile()` (and its `fs.appendFileSync()` counterpart):
 
@@ -57,8 +56,7 @@ A handy method to append content to the end of a file is `fs.appendFile()` (and 
         //done!
     });
 
-Using streams
--------------
+## Using streams
 
 All those methods write the full content to the file before returning the control back to your program (in the async version, this means executing the callback)
 
