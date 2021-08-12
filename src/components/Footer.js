@@ -83,8 +83,6 @@ export default class Footer extends React.Component {
                                 </tr>
                             </tbody>
                         </table>
-
-      
                     </center>
                 </div>
                 <div className="inner">
