@@ -10,24 +10,24 @@
         margin-bottom: 3.625em;
 
         h1 {
-            font-size: 1.875em;
+            font-size: 1.975em;
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 1.6em;
         }
 
         h3 {
-            font-size: 1.25em;
+            font-size: 1.45em;
         }
 
         h4 {
-            font-size: 1.125em;
+            font-size: 1.35em;
         }
 
         h5,
         h6 {
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         .hash-link {
@@ -162,6 +162,9 @@
 
     & > .docs-menu-item > a {
         padding: 0.1875em 0;
+        border-radius:20px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+        margin:auto;
     }
 
     a {
