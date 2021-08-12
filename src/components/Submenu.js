@@ -1,8 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-//(alias) namespace _
-// (alias) const _: import("/workspace/BGOONZ_BLOG_2.0/node_modules/@types/lodash/index.d.ts").LoDashStatic
-// import _
+
 import { classNames } from '../utils';
 import ActionLink from './ActionLink';
 

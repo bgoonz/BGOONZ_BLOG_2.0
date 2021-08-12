@@ -2,30 +2,32 @@
 title: About
 excerpt: Web-Dev-Hub is my personal blogand documentation site
 seo:
-    title: About
-    description: Bryan Guner personal blog about page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: About
-          keyName: property
-        - name: 'og:description'
-          value: This is the About page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: About
-        - name: 'twitter:description'
-          value: This is the About page
+  title: About
+  description: Bryan Guner personal blog about page
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: About
+      keyName: property
+    - name: 'og:description'
+      value: This is the About page
+      keyName: property
+    - name: 'twitter:card'
+      value: summary
+    - name: 'twitter:title'
+      value: About
+    - name: 'twitter:description'
+      value: This is the About page
 template: docs
 ---
 
 <h1 align="center"> <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;">Hi 👋, I'm Bryan</span></h1>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
 
 ---
 
@@ -60,6 +62,8 @@ template: docs
 
 </div>
 
+
+
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_email_)
 
 ## ➤ _Email_
@@ -86,6 +90,7 @@ template: docs
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fbhoovxo6Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     
 ---
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/krRVGoK9NcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
