@@ -6,12 +6,6 @@
         "has_nav": true,
         "nav_links": [
             {
-                "label": "Home",
-                "url": "/",
-                "style": "primary",
-                "has_subnav": true
-            },
-            {
                 "url": "/docs/sitemap",
                 "label": "Navigation",
                 "style": "primary",
