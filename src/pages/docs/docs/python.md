@@ -18,8 +18,6 @@ Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod temp
 -   Lorem ipsum
 -   dolor sit amet
 
-
-
-<iframe src="https://golden-lobe-519.notion.site/Data-Structures-c3fe3debbe494b929ed2f20070b631f8"  title="YouTube video player" frameborder="0" allow="accelerometer;
-          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen</iframe>
+<iframe src="https://golden-lobe-519.notion.site/Data-Structures-c3fe3debbe494b929ed2f20070b631f8"
+  title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen</iframe>
