@@ -10,7 +10,7 @@
         "start": "npm run develop",
         "build": "gatsby build --prefix-paths",
         "serve": "gatsby serve",
-        "pretty": "prettier --write \"./**/*.{jsx,html,css,js,json}\""
+        "pretty": "prettier --write \"./**/*.{jsx,html,css}\""
     },
     "engines": {
         "node": ">=0.14"
