@@ -124,6 +124,8 @@ template: docs
 
 <img align="center" src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img>
 
+![ancestrial](http://www.youtube.com/watch?v=xGZSWvFess8 'Ancestrial Solo')
+
 ##### ➤ [Blog:](https://bgoonz-blog.netlify.app/)
 
 > I write articles for:
