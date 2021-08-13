@@ -1,6 +1,6 @@
 html {
     font-family: $font-primary;
-    font-size: 100%;
+    font-size: 110%;
 }
 
 body {
@@ -189,6 +189,7 @@ hr {
 img {
     height: auto;
     max-width: 100%;
+    border-radius:10px;
 }
 
 @media only screen and (min-width: 841px) {
@@ -222,7 +223,3 @@ img {
     }
 }
 
-.gcse-search {
-    width: 30%;
-    height: 50%;
-}
