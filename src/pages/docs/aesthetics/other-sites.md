@@ -1,9 +1,9 @@
 ---
-title: My Websites
+title: Typography
 weight: 1
 seo:
-    title: My Websites
-    description: These are my websites
+    title: Typography
+    description: This is the typography page
     extra:
         - name: 'og:type'
           value: website
@@ -12,14 +12,14 @@ seo:
           value: Typography
           keyName: property
         - name: 'og:description'
-          value: These are my websites
+          value: This is the typography page
           keyName: property
         - name: 'twitter:card'
           value: summary
         - name: 'twitter:title'
           value: Typography
         - name: 'twitter:description'
-          value: These are my websites
+          value: This is the typography page
 template: docs
 ---
 
