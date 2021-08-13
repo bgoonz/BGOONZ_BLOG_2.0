@@ -1,7 +1,6 @@
 ---
-title:Contact
-weight: 0
-excerpt: Contact me
+title: Contact!
+sections: []
 seo:
     title: ''
     description: ''
@@ -10,8 +9,6 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
-
-
 
 <br>
 <br>
