@@ -9,7 +9,8 @@ export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
-                <br />
+                
+                    <br />
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">
