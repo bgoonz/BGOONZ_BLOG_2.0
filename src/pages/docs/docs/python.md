@@ -1,7 +1,7 @@
 ---
 title: Python
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Python Resources
 seo:
   title: ''
   description: ''
