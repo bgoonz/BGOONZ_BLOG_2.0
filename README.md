@@ -18,8 +18,13 @@
 
 [![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
 
+    
+    
+    
 ![Demo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/iframes.gif?raw=true)
-
+    
+    
+    
 </div>
 
 ## Docs Structure:
