@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Python
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Python Resources
 seo:
   title: ''
   description: ''
@@ -12,9 +12,9 @@ template: docs
 ---
 # Python
 
+# 
 
 
-
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634692&amp;authkey=AHfsGpj1Un3UNuE&amp;em=2&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-
-
+<iframe src="https://golden-lobe-519.notion.site/Data-Structures-c3fe3debbe494b929ed2f20070b631f8"
+  title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen</iframe>
