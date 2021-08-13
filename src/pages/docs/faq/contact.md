@@ -1,6 +1,5 @@
 ---
 title: Contact!
-sections: []
 seo:
     title: ''
     description: ''
