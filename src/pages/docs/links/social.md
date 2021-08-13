@@ -1,13 +1,14 @@
 ---
-title: social Links
-sections: []
+title: Social Link
+weight: 1
+excerpt: Social Link
 seo:
     title: ''
     description: ''
     robots: []
     extra: []
     type: stackbit_page_meta
-template: post
+template: docs
 ---
 
 <div align="center">
