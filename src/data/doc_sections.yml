@@ -1,7 +1,6 @@
 root_docs_path: /docs
 sections:
     - about
-    - articles
     - audio
     - docs
     - faq
@@ -12,3 +11,4 @@ sections:
     - tools
     - aesthetics 
     - content
+    - articles
