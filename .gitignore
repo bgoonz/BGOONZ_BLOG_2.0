@@ -1,9 +1,23 @@
 
-node_modules/
 
 
-*.cache
-*public
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Logs
@@ -75,3 +89,9 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+node_modules/
+
+
+*.cache
+*public
