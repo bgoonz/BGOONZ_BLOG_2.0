@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
                         <br />
 
                         <br />
-                        <table cellPadding={0} cellSpacing={0} border={0} >
+                        <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
                                 <tr>
                                     <td style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }}>
