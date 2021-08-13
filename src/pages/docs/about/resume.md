@@ -26,6 +26,9 @@ seo:
 template: docs
 ---
 
+<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21491608&amp;authkey=APAVslLNuiwSi6E&amp;em=2" width="800px" height="1400px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
+
 # ➤ Technical Skills­­­
 
 | **Programming\*\*** Languages:\*\* | JavaScript ES-6, NodeJS, React, HTML5, CSS3, SCSS, Bash Shell, Excel, SQL, NoSQL, MATLAB, Python, C++ |
