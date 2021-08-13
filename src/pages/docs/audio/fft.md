@@ -1,6 +1,6 @@
 ---
 title: Fast Fourier Transform
-weight: 0
+weight: 1
 excerpt: The Basics Of Digital Signal Processing
 seo:
     title: ''

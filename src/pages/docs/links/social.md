@@ -1,7 +1,7 @@
 ---
-title:Social Link
-weight: 0
-excerpt:Social Link
+title: Social Link
+weight: 1
+excerpt: Social Link
 seo:
     title: ''
     description: ''

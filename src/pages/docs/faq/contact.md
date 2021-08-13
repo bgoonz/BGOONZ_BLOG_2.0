@@ -1,6 +1,6 @@
 ---
 title:Contact
-weight: 0
+weight: 1
 excerpt: Contact me
 seo:
     title: ''

@@ -1,6 +1,6 @@
 ---
 title:Basic Web Dev
-weight: 0
+weight: 1
 excerpt:Basic Web Dev
 seo:
     title: ''

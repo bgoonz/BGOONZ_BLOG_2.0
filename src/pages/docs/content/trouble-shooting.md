@@ -1,6 +1,6 @@
 ---
 title: Trouble Shooting
-weight: 0
+weight: 1
 excerpt: Here I will save details of problems I have been troubleshooting.
 seo:
     title: ''
