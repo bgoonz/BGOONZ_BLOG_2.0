@@ -1,40 +1,15 @@
 ---
-title: Article-Compilation
-subtitle: The ds-algo-overview provides you with a blueprint of default post and page styles.
-image: images/5.jpg
+title: Articles 
+weight: 0
+excerpt: Articles 
 seo:
-    title: ds-algo-overview
-    description: A reference for suggested typographic treatment and styles for your content
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: ds-algo-overview
-          keyName: property
-        - name: 'og:description'
-          value: >-
-              A reference for suggested typographic treatment and styles for your
-              content
-          keyName: property
-        - name: 'og:image'
-          value: images/5.jpg
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:card'
-          value: summary_large_image
-        - name: 'twitter:title'
-          value: ds-algo-overview
-        - name: 'twitter:description'
-          value: >-
-              A reference for suggested typographic treatment and styles for your
-              content
-        - name: 'twitter:image'
-          value: images/5.jpg
-          relativeUrl: true
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
-
 # Web Development Resources Site
 
 > webdevhub
@@ -4005,11 +3980,11 @@ Accessibility is an extremely important part of any web project. While the SOW, 
 
 [https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
 
-Fundamental Data Structures In JavaScript \* { font-family: Georgia, Cambria, “Times New Roman”, Times, serif; } html, body { margin: 0; padding: 0; } h1 { font-size: 50px; margin-bottom: 17px; color: #333; } h2 { font-size: 24px; line-height: 1.6; margin: 30px 0 0 0; margin-bottom: 18px; margin-top: 33px; color: #333; } h3 { font-size: 30px; margin: 10px 0 20px 0; color: #333; } header { width: 640px; margin: auto; } section { width: 640px; margin: auto; } section p { margin-bottom: 27px; font-size: 20px; line-height: 1.6; color: #333; } section img { max-width: 640px; } footer { padding: 0 20px; margin: 50px 0; text-align: center; font-size: 12px; } .aspectRatioPlaceholder { max-width: auto !important; max-height: auto !important; } .aspectRatioPlaceholder-fill { padding-bottom: 0 !important; } header, section\[data-field=subtitle\], section\[data-field=description\] { display: none; }
+Articles  \* { font-family: Georgia, Cambria, “Times New Roman”, Times, serif; } html, body { margin: 0; padding: 0; } h1 { font-size: 50px; margin-bottom: 17px; color: #333; } h2 { font-size: 24px; line-height: 1.6; margin: 30px 0 0 0; margin-bottom: 18px; margin-top: 33px; color: #333; } h3 { font-size: 30px; margin: 10px 0 20px 0; color: #333; } header { width: 640px; margin: auto; } section { width: 640px; margin: auto; } section p { margin-bottom: 27px; font-size: 20px; line-height: 1.6; color: #333; } section img { max-width: 640px; } footer { padding: 0 20px; margin: 50px 0; text-align: center; font-size: 12px; } .aspectRatioPlaceholder { max-width: auto !important; max-height: auto !important; } .aspectRatioPlaceholder-fill { padding-bottom: 0 !important; } header, section\[data-field=subtitle\], section\[data-field=description\] { display: none; }
 
 Data structures in JavaScript
 
-### Fundamental Data Structures In JavaScript
+### Articles 
 
 ### Data structures in JavaScript
 

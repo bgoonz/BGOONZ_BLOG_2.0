@@ -1,16 +1,16 @@
 ---
-title: Web Dev Review
-sections: []
+title:Basic Web Dev
+weight: 0
+excerpt:Basic Web Dev
 seo:
     title: ''
-    description: 'Review-Of-Previous-Concepts'
+    description: ''
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
 
----
 
 ## description: Review
 
@@ -940,3 +940,5 @@ Person.prototype.sayName = function () {
 
 const jane = new Person('Jane');
 ```
+
+---
