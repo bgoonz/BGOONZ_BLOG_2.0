@@ -1,27 +1,27 @@
 ---
-title: UI Components
+title: vscode-themes
 excerpt: >-
-    To make it easy to write documentation in plain Markdown, most UI components
+    To make it easy to write documentation in plain Markdown, most vscode-themes
     are styled using Markdown elements with few additional CSS classes.
 seo:
-    title: UI Components
-    description: This is the UI components page
+    title: vscode-themes
+    description: This is the vscode-themes page
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value: UI Components
+          value: vscode-themes
           keyName: property
         - name: 'og:description'
-          value: This is the UI components page
+          value: This is the vscode-themes page
           keyName: property
         - name: 'twitter:card'
           value: summary
         - name: 'twitter:title'
-          value: UI Components
+          value: vscode-themes
         - name: 'twitter:description'
-          value: This is the UI components page
+          value: This is the vscode-themes page
 template: docs
 ---
 
