@@ -1,37 +1,33 @@
 ---
 title: About
-excerpt: >-
-    Web-Dev-Hubis a Unibit theme created for project documentations. You can use
-    it for your project.
+excerpt: Web-Dev-Hub is my personal blogand documentation site
 seo:
-    title: About
-    description: This is the About page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: About
-          keyName: property
-        - name: 'og:description'
-          value: This is the About page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: About
-        - name: 'twitter:description'
-          value: This is the About page
+  title: About
+  description: Bryan Guner personal blog about page
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: About
+      keyName: property
+    - name: 'og:description'
+      value: This is the About page
+      keyName: property
+    - name: 'twitter:card'
+      value: summary
+    - name: 'twitter:title'
+      value: About
+    - name: 'twitter:description'
+      value: This is the About page
 template: docs
 ---
 
-<h1 align="center">Hi 👋, I'm Bryan</h1>
+<h1 align="center"> <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;">Hi 👋, I'm Bryan</span></h1>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fbhoovxo6Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-    
-<iframe width="560" height="315" src="https://www.youtube.com/embed/krRVGoK9NcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ---
 
@@ -66,6 +62,8 @@ template: docs
 
 </div>
 
+
+
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_email_)
 
 ## ➤ _Email_
@@ -86,6 +84,17 @@ template: docs
   <a href="mailto:bryan.guner@gmail.com"><img src="https://img.icons8.com/color/96/000000/gmail.png" alt="email"/></a><a href="https://www.facebook.com/bryan.guner/"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook"/></a><a href="https://twitter.com/bgooonz"><img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt="twitter"/></a><a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos"><img src="https://img.icons8.com/color/96/000000/youtube.png" alt="youtube"/></a><a href="https://www.instagram.com/bgoonz/?hl=en"><img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="instagram"/></a><a href="https://www.pinterest.com/bryanguner/_saved/"><img src="https://img.icons8.com/color/96/000000/pinterest--v1.png" alt="pinterest"/></a><a href="https://www.linkedin.com/in/bryan-guner-046199128/"><img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin"/></a>
   <a href="https://bryanguner.medium.com/"><img src="https://img.icons8.com/color/96/000000/medium-logo.png" alt="medium"/></a><a href="https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw"><img src="https://img.icons8.com/color/96/000000/spotify--v1.png" alt="spotify"/></a>
   </p>
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fbhoovxo6Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    
+---
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/krRVGoK9NcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 <div align="center">
 
@@ -115,7 +124,7 @@ template: docs
 
 <img align="center" src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img>
 
-[![](http://img.youtube.com/vi/xGZSWvFess8/0.jpg)](http://www.youtube.com/watch?v=xGZSWvFess8 'Ancestrial Solo')
+![ancestrial](http://www.youtube.com/watch?v=xGZSWvFess8 'Ancestrial Solo')
 
 ##### ➤ [Blog:](https://bgoonz-blog.netlify.app/)
 

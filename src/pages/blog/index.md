@@ -1,12 +1,14 @@
 ---
 title: Blog
 subtitle: Exclusive Blog Content
-image: images/curious-europa.gif
+image: images/maroon-onion.gif
 has_more_link: true
 more_link_text: Read more
 seo:
     title: Blog
-    description: This is the blog page
+    description: >-
+        These are blog posts... not nescisarily different from the docs section except these pieces are more subject to my own opinions.
+
     extra:
         - name: 'og:type'
           value: website

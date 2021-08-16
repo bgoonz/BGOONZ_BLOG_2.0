@@ -1,31 +1,33 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 80em;
+    width: 95%;
 }
-
+.post-content {
+    width: 85%;
+}
 .post {
     &.type-docs {
         margin-bottom: 3.625em;
 
         h1 {
-            font-size: 1.875em;
+            font-size: 1.975em;
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 1.6em;
         }
 
         h3 {
-            font-size: 1.25em;
+            font-size: 1.45em;
         }
 
         h4 {
-            font-size: 1.125em;
+            font-size: 1.35em;
         }
 
         h5,
         h6 {
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         .hash-link {
@@ -38,7 +40,7 @@
             text-align: center;
             text-decoration: none;
             -webkit-transition: opacity 0.2s;
-            transition: opacity 0.2s;
+            transition: opacity 0.4s;
             width: 1em;
 
             &:before {
@@ -79,8 +81,8 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 0.5em 0;
-            width: 70em;
+            padding: 0.3em;
+            width: 70vw;
         }
 
         .post-title {
@@ -90,7 +92,8 @@
         }
 
         .post-content {
-            padding: 0.875em;
+            padding: 0.775em;
+            word-wrap: break-word;
         }
     }
 }
@@ -108,7 +111,7 @@
     .docs-section-item {
         -ms-flex: 1 1 240px;
         flex: 1 1 240px;
-        // margin: 0 0.3125em 0.9375em;
+        margin: 0 0.3125em 0.9375em;
     }
 
     .docs-item-link {
@@ -139,7 +142,6 @@
         margin: 0;
         padding-right: 15px;
         text-align: left;
-        width: 90%;
     }
 
     .docs-submenu-toggle {
@@ -155,11 +157,14 @@
     font-weight: bold;
     line-height: 1.5;
     list-style: none;
-    margin: 0.3em;
+    margin: 0.5em;
     padding: 0;
 
     & > .docs-menu-item > a {
         padding: 0.1875em 0;
+        border-radius:20px;
+    
+        margin:auto;
     }
 
     a {
@@ -213,7 +218,7 @@
 }
 
 #page-nav {
-    display: none;
+    text-overflow: wrap;
 
     .page-nav-title {
         font-size: 1em;
@@ -258,36 +263,34 @@
     }
 }
 
-@media only screen and (min-width: 741px) {
+@media only screen and (min-width: 1200px) {
     .post {
         &.type-docs {
             .post-title,
             .post-content {
-                padding-left: 7%;
+                padding-left: 8%;
                 padding-right: 7%;
             }
         }
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
     .docs-content {
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
-        width: 1600px;
+        width: 100%;
     }
 
     .post.type-docs {
         -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-        overflow: hidden;
+        align-content: center;
     }
 
     .docs-nav,
     .page-nav {
         -ms-flex-negative: 0;
-        flex-shrink: 0;
         margin-bottom: 5.625em;
 
         .sticky {
@@ -303,7 +306,7 @@
 
     #page-nav {
         font-size: 12px;
-        margin: 5em;
+        margin: 4em;
     }
 
     #docs-nav-toggle {
@@ -325,7 +328,7 @@
         box-shadow: $box-shadow;
         box-sizing: border-box;
         margin-bottom: 5%;
-        padding: 0.75em 1em;
+        padding: 1em 1em;
     }
 
     .docs-nav-menu {

@@ -2,7 +2,7 @@
     padding-top: 3.75em;
 
     &:not(.block-hero) {
-        background: $gray-100;
+        background: white;
     }
 
     &:last-child {
@@ -19,6 +19,7 @@
 }
 
 .block-title {
+    align-self: center;
     margin: 0;
 }
 
@@ -50,7 +51,7 @@
 
 .block-buttons {
     -ms-flex-pack: center;
-    justify-content: left;
+    justify-content: center;
 
     a {
         margin: 0 0.375em 0.75em;
@@ -82,7 +83,7 @@
 .block-text {
     .grid-item {
         max-width: $container-sm;
-        text-align: left;
+        text-align: center;
     }
 
     .block-title {
@@ -108,7 +109,7 @@
             &:not(:only-child) {
                 -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
-                max-width: 80%;
+                max-width: 90%;
             }
         }
     }
@@ -188,10 +189,10 @@
         }
 
         .block-buttons {
-            -ms-flex: 0 0 36.333%;
-            flex: 0 0 36.333%;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
             margin-top: 0;
-            max-width: 36.333%;
+            max-width: 50%;
         }
     }
 }
@@ -215,7 +216,7 @@
     }
 
     .grid-item {
-        text-align: left;
+        text-align: center;
 
         display: -ms-flexbox;
         display: flex;

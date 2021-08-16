@@ -1,6 +1,5 @@
 ---
-title: Medium Articles
-excerpt: A list of my medium articles!
+title: My Medium Articles
 date: '2021-05-23'
 image: images/medium.png
 seo:
@@ -30,7 +29,7 @@ seo:
           value: images/medium.png
           relativeUrl: true
 template: post
-thumb_image: images/enthusiastic-tiger.png
+thumb_image: images/web-dev-back.jpg
 ---
 
 # A list of all of my articles to link to future posts

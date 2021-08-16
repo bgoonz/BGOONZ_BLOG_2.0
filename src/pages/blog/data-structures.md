@@ -11,8 +11,8 @@ seo:
     extra: []
     type: stackbit_page_meta
 template: post
-image: images/dtw.jpg
-thumb_image: images/green-spruce.png
+image: images/ds.PNG
+thumb_image: images/polite-sage.jpg
 ---
 
 ## Data Structures & Algorithms

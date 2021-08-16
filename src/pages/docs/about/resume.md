@@ -3,7 +3,10 @@ title: Resume
 weight: 1
 seo:
     title: Resume
-    description: This is the Resume page
+    description: >-
+        Successfully completed and delivered a platform to digitize a guitar signal
+        and perform filtering before executing frequency & time domain analysis to
+        track a current performance against prerecorded performance.
     extra:
         - name: 'og:type'
           value: website
@@ -22,6 +25,9 @@ seo:
           value: This is the Resume page
 template: docs
 ---
+
+<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21491608&amp;authkey=APAVslLNuiwSi6E&amp;em=2" width="800px" height="1400px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
 
 # ➤ Technical Skills­­­
 

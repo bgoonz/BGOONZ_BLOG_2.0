@@ -1,6 +1,6 @@
 ---
 date: '2021-06-03'
-image: images/2.jpg
+image: images/python.png
 seo:
     title: python
     description: Commodo ante vis placerat interdum massa massa primis
@@ -15,7 +15,7 @@ seo:
           value: Commodo ante vis placerat interdum massa massa primis
           keyName: property
         - name: 'og:image'
-          value: images/2.jpg
+          value: images/python.png
           keyName: property
           relativeUrl: true
         - name: 'twitter:card'
@@ -25,11 +25,11 @@ seo:
         - name: 'twitter:description'
           value: Commodo ante vis placerat interdum massa massa primis
         - name: 'twitter:image'
-          value: images/2.jpg
+          value: images/python.png
           relativeUrl: true
 template: post
 title: Python Resources
-thumb_image: images/violet-pluto.png
+thumb_image: images/superb-triceratops.jpg
 thumb_image_alt: python logo
 ---
 

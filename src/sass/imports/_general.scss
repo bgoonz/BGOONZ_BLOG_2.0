@@ -1,6 +1,6 @@
 html {
     font-family: $font-primary;
-    font-size: 100%;
+    font-size: 110%;
 }
 
 body {
@@ -27,12 +27,14 @@ a {
 }
 
 iframe {
-    overflow-y: auto;
-    overflow-x: auto;
+    overflow-y: scroll;
+    overflow-x: scroll;
     border-radius: 12px;
     border: 2px solid gold;
-    height: 1200px;
-    width: 1150px !important;
+    height: 1500px !important;
+    width: 95%;
+    resize: both;
+    overflow: scroll;
 }
 
 h1,
@@ -187,6 +189,7 @@ hr {
 img {
     height: auto;
     max-width: 100%;
+    border-radius:10px;
 }
 
 @media only screen and (min-width: 841px) {
@@ -219,3 +222,4 @@ img {
         font-size: 1.125em;
     }
 }
+
