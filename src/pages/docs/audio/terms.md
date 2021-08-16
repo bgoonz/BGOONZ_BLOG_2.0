@@ -1,6 +1,6 @@
 ---
-title: lorem-ipsum
-weight: 0
+title: Fast Fourier Transform
+weight: 1
 excerpt: lorem-ipsum
 seo:
   title: ''
