@@ -1,6 +1,7 @@
 root_docs_path: /docs
 sections:
     - about
+    - articles
     - audio
     - docs
     - faq
@@ -9,7 +10,5 @@ sections:
     - quick-reference
     - react
     - tools
-    - misc 
+    - aesthetics 
     - content
-    - articles
-    - audio
