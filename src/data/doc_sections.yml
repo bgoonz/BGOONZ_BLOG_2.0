@@ -3,6 +3,8 @@ sections:
     - about
     - articles
     - audio
+    - community    
+    - content
     - docs
     - faq
     - interact
@@ -10,5 +12,4 @@ sections:
     - quick-reference
     - react
     - tools
-    - aesthetics 
-    - content
+
