@@ -22,8 +22,9 @@ seo:
       value: This is the typography page
 template: docs
 ---
-<h1> Here are some other websites I have worked on since endeavoring to learn web development! </h1>
 
+
+<h1> Here are some other websites I have worked on since endeavoring to learn web development! </h1>
 
 <br>
 <h1>  Alternate Blog</h1>
