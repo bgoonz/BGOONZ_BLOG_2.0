@@ -22,15 +22,9 @@ seo:
       value: This is the typography page
 template: docs
 ---
+<h1> Here are some other websites I have worked on since endeavoring to learn web development! </h1>
 
-<div class="note">
-  <strong>Note:</strong> 
-  This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
-</div>
 
-<br>
-<br>
-<br>
 <br>
 <h1>  Alternate Blog</h1>
 <br>
