@@ -1,6 +1,6 @@
 ---
 title: Fundamental Data Structures In JavaScript
-weight: 0
+weight: 1
 excerpt: Fundamental Data Structures In JavaScript
 seo:
     title: ''

@@ -1,6 +1,6 @@
 ---
 title: Projects
-weight: 0
+weight: 1
 excerpt: These are some of my active projects.
 seo:
     title: ''

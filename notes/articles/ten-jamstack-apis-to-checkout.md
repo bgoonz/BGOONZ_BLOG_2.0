@@ -1,6 +1,6 @@
 ---
 title: Jamstack Apis
-weight: 0
+weight: 1
 excerpt: resources
 seo:
     title: Jamstack Apis

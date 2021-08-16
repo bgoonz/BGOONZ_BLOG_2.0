@@ -1,5 +1,11 @@
 ---
+<<<<<<< HEAD
 title: Contact!
+=======
+title: Contact
+weight: 1
+excerpt: Contact me
+>>>>>>> 3c71248b2ef4fa75ebd78a2cdd6cb58aab339e5f
 seo:
     title: ''
     description: ''

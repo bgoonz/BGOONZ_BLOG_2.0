@@ -1,6 +1,6 @@
 ---
 title:Page Gallery
-weight: 0
+weight: 1
 excerpt:Page Gallery
 seo:
     title: ''
