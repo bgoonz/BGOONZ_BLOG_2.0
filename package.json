@@ -18,7 +18,6 @@
     "dependencies": {
         "@algolia/client-search": "^4.10.3",
         "@stackbit/gatsby-plugin-menus": "0.0.4",
-        "algolia": "0.0.0",
         "babel-runtime": "6.26.0",
         "chokidar": "3.4.0",
         "classnames": "2.2.6",
