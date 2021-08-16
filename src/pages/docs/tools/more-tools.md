@@ -1,23 +1,40 @@
 ---
-title: 'Tools Page 2:'
-weight: 0
-excerpt: lorem-ipsum
+title: 'more tools'
+weight: 1
+excerpt: more tools that I have created or collaborated on.
 seo:
     title: ''
-    description: ''
+    description: 'embeded developer tools and utilities'
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
 
-# Paste Excel To Markdown Table:
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Excel To Markdown Table" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/bgoonz/pen/JjNaPpL">
-  Excel To Markdown Table</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+
+<br>
+<br>
+<br>
+<br>
+<h1>   Algorithms </h1>
+<br>
+<iframe  class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>   Excel To Markdown Table</h1>
+<br>
+<iframe  class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=dark" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
 <br>
 <h1>     Resource Archive           </h1>

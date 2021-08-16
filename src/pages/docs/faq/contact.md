@@ -1,6 +1,7 @@
 ---
-title: Contact!
-sections: []
+title: Contact
+weight: 1
+excerpt: Contact me
 seo:
     title: ''
     description: ''
