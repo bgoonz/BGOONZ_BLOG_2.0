@@ -31,7 +31,37 @@ template {
   display: none;
 }
 a {
-  background: transparent;
+  -ms-flex-align: center;
+    align-items: center;
+    background: $color-primary;
+    border: 0;
+    border-radius: 1.75em;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1em;
+    font-weight: bold;
+    -ms-flex-pack: center;
+    justify-content: center;
+    letter-spacing: 0.035em;
+    line-height: 1.2;
+    opacity: 1;
+    padding: 0.9em 2.14285em;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    vertical-align: middle;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+        opacity: 0.8;
+        outline: 0;
+    }
 }
 a:active,
 a:hover {
