@@ -1,6 +1,5 @@
 ## React Hooks and other methods
 
-
 Despite the wide availability of npm packages, at times, we might need to rely on a few external libraries that require us to import some JS files.
 
 For features used across the application, we can simply add JS files to `head` using the `<script>` tag in our global `index.html` file.
@@ -46,5 +45,5 @@ React allows us to build [custom Hooks](https://reactjs.org/docs/hooks-custom.ht
 Which could be used in components as below:
 
 import importScript from 'customHooks/importScript';const Demo = props => {  
-  importScript("/path/to/resource.js");  
+ importScript("/path/to/resource.js");  
 }

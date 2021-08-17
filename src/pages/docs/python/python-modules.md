@@ -11,17 +11,16 @@ seo:
 template: docs
 ---
 
-
 # Python Modules
 
 Python programming language is one of the most popular language nowadays. It has numerous applications and developers are switching over to python for the implementation it provides us with. The modular programming approach where the code is broken down into separate parts is where python modules come into the picture. This article will help you understand the above topic in detail.
 
 Following are the topics that will be covered in this article:
 
-- What Are Python Modules?
-- How To Create Python Modules?
-- How To Use Python Modules?
-- Built-in Modules In Python
+-   What Are Python Modules?
+-   How To Create Python Modules?
+-   How To Use Python Modules?
+-   Built-in Modules In Python
 
 Modules are simply a ‘program logic’ or a ‘python script’ that can be used for a variety of applications or functions. We can declare functions, classes, etc in a module.
 

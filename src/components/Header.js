@@ -38,6 +38,10 @@ export default class Header extends React.Component {
                             )}
                         </div>
                         <div id="search" className="inner"></div>
+<<<<<<< HEAD
+=======
+                        <div id="search" />
+>>>>>>> 4326e86818119be1225b2bf561a024d3f29bc423
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
@@ -122,6 +126,10 @@ export default class Header extends React.Component {
                         </svg>
                     </a>
                 </div>
+<<<<<<< HEAD
+=======
+                <div id="search" />
+>>>>>>> 4326e86818119be1225b2bf561a024d3f29bc423
             </header>
         );
     }

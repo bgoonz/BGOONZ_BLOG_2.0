@@ -138,6 +138,10 @@ export default class Footer extends React.Component {
                         </table>
                     </center>
                 </div>
+<<<<<<< HEAD
+=======
+                <div id="search" className="inner"></div>
+>>>>>>> 4326e86818119be1225b2bf561a024d3f29bc423
                 <div id="search" />
                 <div className="inner">
                     <div id="search" className="inner"></div>
