@@ -83,18 +83,6 @@ sections:
         image: images/curious-mustard.png
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
-  - title: Musical Pursuits
-    section_id: Search
-    image_alt: site search
-    image_position: right
-    content: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
-      title="YouTube video player" frameborder="0" allow="accelerometer;
-      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-    actions: []
-    type: section_content
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
@@ -219,6 +207,18 @@ sections:
         src="https://bgoonz.blogspot.com/" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - title: Musical Pursuits
+    section_id: Search
+    image_alt: site search
+    image_position: right
+    content: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
+      title="YouTube video player" frameborder="0" allow="accelerometer;
+      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Quick Links
