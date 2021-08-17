@@ -168,6 +168,15 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "depreciated-portfolio",
+                        "url": "https://portfolio42.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
                     }
                 ],
                 "type": "action_menu",
