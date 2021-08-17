@@ -83,20 +83,6 @@ sections:
         image: images/curious-mustard.png
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
-  - section_id: Web Audio DAW
-    image_alt: medium
-    image_position: left
-    actions:
-      - label: Go To Web Audio Daw
-        url: 'https://mihirbegmusiclab.netlify.app/'
-        style: primary
-        icon_class: dev
-        new_window: true
-        no_follow: false
-        type: action
-    type: section_content
-    image: images/goals.jpg
-    title: Web Audio DAW
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
@@ -221,6 +207,20 @@ sections:
       allowfullscreen></iframe>
     actions: []
     type: section_content
+  - section_id: Web Audio DAW
+    image_alt: medium
+    image_position: left
+    actions:
+      - label: Go To Web Audio Daw
+        url: 'https://mihirbegmusiclab.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+    image: images/goals.jpg
+    title: Web Audio DAW
   - title: Quick Links
     section_id: navigate from the home page
     col_number: three
