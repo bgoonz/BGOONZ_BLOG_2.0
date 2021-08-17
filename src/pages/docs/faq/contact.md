@@ -18,7 +18,16 @@ template: docs
 
 
 
-https://comments-3.bgoonz.repl.co/
+<br>
+<br>
+
+<iframe src="https://bgoonz-blog-v3-0.netlify.app/contact/" height="900px" width="100%">
+</iframe>
+
+
+
+
+
 
 ### Calendar:
 
