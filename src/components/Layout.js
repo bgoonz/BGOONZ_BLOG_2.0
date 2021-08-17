@@ -1,21 +1,21 @@
 import React from 'react';
 
-import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import _ from 'lodash';
+
 import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
-import Search from './search';
-const searchIndices = [{ name: `Pages`, title: `Pages` }];
+import addScript from './../hooks/addScript';
+const Script = (props) => {
+    importScript('./../hooks/addScript.js');
+};
 export default class Body extends React.Component {
     render() {
         return (
             <React.Fragment>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
                 <Helmet>
                     <title>
                         {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
@@ -42,27 +42,16 @@ export default class Body extends React.Component {
                             <meta key={meta_idx + '.1'} {...attribute(key_name, _.get(meta, 'name', null))} content={_.get(meta, 'value', null)} />
                         );
                     })}
-
+                    <link rel="preconnect" href="https://fonts.gstatic.com" />
+                    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
                     {_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
                         <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))} />
                     )}
                     <body className={'palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)} />
                 </Helmet>
-                <div
-                    style={{
-                        marginLeft: `auto`,
-                        marginRight: `auto`,
-                        maxWidth: rhythm(24),
-                        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
-                    }}
-                >
-                    <header {...this.props}>
-                        <Search indices={searchIndices} />
-                        {header}
-                    </header>
-                    <header />
-                    <Search indices={searchIndices} />
-
+                <div id="page" className="site">
+                    <Header {...this.props} />
+                    <div id="search" />
                     <main id="content" className="site-content">
                         {this.props.children}
                     </main>

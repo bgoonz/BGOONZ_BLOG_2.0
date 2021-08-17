@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="theme-color" content="#333333" />
+        <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
+
+        <script>
+            if (window.location.pathname.length <= 1 && window.location.hash.indexOf('https://') > -1) {
+                window.location.replace('https://gitpod.io/' + window.location.hash);
+            }
+        </script>
+
+        <link rel="preload" as="font" href="/fonts/ABCDiatype-Regular.woff" type="font/woff2" crossorigin="anonymous" />
+        <link rel="preload" as="font" href="/fonts/ABCDiatype-Bold.woff" type="font/woff2" crossorigin="anonymous" />
+        <link rel="stylesheet" rel="preload" href="/font.css" as="style" />
+        <link rel="stylesheet" href="/global.css" />
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
+        <link rel="icon" type="image/png" href="/favicon192.png" />
+
+        <!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+        <title>Terms</title>
+        <meta
+            name="keywords"
+            content="dev environment, development environment, devops, cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review"
+            data-svelte="svelte-15a2dzw"
+        />
+        <meta name="description" content="Gitpod&#39;s terms of service." data-svelte="svelte-15a2dzw" />
+        <meta property="og:image" content="https://www.gitpod.io/images/media-image.jpg" data-svelte="svelte-15a2dzw" />
+        <meta property="og:description" content="Gitpod&#39;s terms of service." data-svelte="svelte-15a2dzw" />
+        <meta property="og:title" content="Terms" data-svelte="svelte-15a2dzw" />
+        <meta property="og:type" content="website" data-svelte="svelte-15a2dzw" />
+        <meta property="og:url" content="https://undefined/terms" data-svelte="svelte-15a2dzw" />
+        <meta name="twitter:card" content="summary" data-svelte="svelte-15a2dzw" />
+        <meta name="twitter:site" content="@gitpod" data-svelte="svelte-15a2dzw" />
+        <meta name="twitter:creator" content="@gitpod" data-svelte="svelte-15a2dzw" />
+        <meta name="twitter:image" content="https://www.gitpod.io/images/twitter-preview.jpg" data-svelte="svelte-15a2dzw" />
+
+        <link rel="modulepreload" href="/./_app/pages/$layout.svelte-09f9cae4.js" />
+        <link rel="modulepreload" href="/./_app/chunks/index-0a115175.js" />
+        <link rel="modulepreload" href="/./_app/chunks/stores-6ede6f6c.js" />
+        <link rel="modulepreload" href="/./_app/chunks/singletons-6b53f818.js" />
+        <link rel="modulepreload" href="/./_app/chunks/helper-7638eca7.js" />
+        <link rel="modulepreload" href="/./_app/chunks/index-ab5856d2.js" />
+        <link rel="modulepreload" href="/./_app/chunks/logo-60efa4e2.js" />
+        <link rel="modulepreload" href="/./_app/chunks/index-05581432.js" />
+        <link rel="modulepreload" href="/./_app/pages/terms.svelte-233c7590.js" />
+        <link rel="modulepreload" href="/./_app/chunks/open-graph-b11e873e.js" />
+        <link rel="stylesheet" href="/./_app/assets/pages/$layout.svelte-0661c89d.css" />
+
+        <script type="module">
+            import { start } from '/./_app/start-765c3235.js';
+            start({
+                target: document.querySelector('#svelte'),
+                paths: { base: '', assets: '/.' },
+                session: (function (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y) {
+                    return {
+                        changelogEntries: [
+                            {
+                                date: '2021-07-31T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-07-31.jpg" alt="Faster workspace startup times"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="faster-workspace-startup-times"\u003EFaster workspace startup times\u003Ca href="#faster-workspace-startup-times"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EA key metric we deeply care about at Gitpod (and I’m sure you do too) is workspace startup time. In a world where you create and dispose of workspaces many times per day, the last thing you want is waiting for a workspace to start 🐌.\u003C\u002Fp\u003E\n\u003Cp\u003EIn this release, we made significant progress in lowering startup times 🏎. What initially may sound like complex changes turned out to be a \u003Ccode\u003E+4 -4\u003C\u002Fcode\u003E pull request (\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4847" rel="nofollow noopener noreferrer" target="_blank"\u003E#4847\u003C\u002Fa\u003E). Yay simplicity!\u003C\u002Fp\u003E\n\u003Cp\u003ETo give you an idea of the magnitute of improvement we’re talking about, here’s a before \u002F after comparison with 30 workspaces started twice:\u003C\u002Fp\u003E\n\u003Ctable\u003E\u003Cthead\u003E\u003Ctr\u003E\u003Cth\u003EBefore\u003C\u002Fth\u003E\n\u003Cth\u003ENow\u003C\u002Fth\u003E\u003C\u002Ftr\u003E\u003C\u002Fthead\u003E\n\u003Ctbody\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-07-31-before.jpg" alt="Plotted graph of workspace startup times ranging between 20s and 60s"\u003E\u003C\u002Ftd\u003E\n\u003Ctd\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-07-31-now.jpg" alt="Plotted graph of workspace startup times ranging between 5s and 20s"\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003C\u002Ftbody\u003E\u003C\u002Ftable\u003E\n\u003Cp\u003EDid you pay close attention to the y-axis? From between 20 to 60 seconds down to 5 to 20 seconds!\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cdel\u003EGreat work team, let’s shift our focus to other features.\u003C\u002Fdel\u003E These improvements are certainly worth celebrating 🎂, but we’re hungry to drop these times by at least the same magnitude once or twice more! Team, finish your cake and get back to work 😉.\u003C\u002Fp\u003E\n\u003Cp\u003EPlease do let us know if you notice any differences with your project startup times. You can find us at \u003Ca href="https:\u002F\u002Fwww.gitpod.io\u002Fchat" rel="nofollow noopener noreferrer" target="_blank"\u003Ewww.gitpod.io\u002Fchat\u003C\u002Fa\u003E.\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4844" rel="nofollow noopener noreferrer" target="_blank"\u003E#4844\u003C\u002Fa\u003E - Provide better feedback when gitpod.yml is invalid\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4816" rel="nofollow noopener noreferrer" target="_blank"\u003E#4816\u003C\u002Fa\u003E - [gp] env: handle multi-word values without quotes\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4813" rel="nofollow noopener noreferrer" target="_blank"\u003E#4813\u003C\u002Fa\u003E - [server] Handle releases\u002Ftag\u002F\u003Ctag\u003Ein GitHub context parser\u003C\u002Ftag\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4743" rel="nofollow noopener noreferrer" target="_blank"\u003E#4743\u003C\u002Fa\u003E - [code] confirm sharing\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4738" rel="nofollow noopener noreferrer" target="_blank"\u003E#4738\u003C\u002Fa\u003E - [code] serve each webview from own origin\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4734" rel="nofollow noopener noreferrer" target="_blank"\u003E#4734\u003C\u002Fa\u003E - [#4699] Handle error situations around \u002Fheadless-logs endpoint\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4115" rel="nofollow noopener noreferrer" target="_blank"\u003E#4115\u003C\u002Fa\u003E - [server] store separate email used for commits (GitHub and GitLab). Thanks to \u003Ca href="https:\u002F\u002Fgithub.com\u002Fphilschatz" rel="nofollow noopener noreferrer" target="_blank"\u003E@philschatz\u003C\u002Fa\u003E.\u003C\u002Fli\u003E\u003C\u002Ful\u003E\n\u003Ch3 id="gitpod-self-hosted"\u003EGitpod Self-hosted\u003Ca href="#gitpod-self-hosted"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cp\u003EWe released \u003Ccode\u003E0.10.0\u003C\u002Fcode\u003E and updated the documentation to match. Head over to \u003Ca href="https:\u002F\u002Fwww.gitpod.io\u002Fdocs\u002Fself-hosted\u002Flatest" rel="nofollow noopener noreferrer" target="_blank"\u003Ehttps:\u002F\u002Fwww.gitpod.io\u002Fdocs\u002Fself-hosted\u002Flatest\u003C\u002Fa\u003E to get started.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Ffntlnz" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Ffntlnz.png" alt="Avatar of fntlnz" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fghuntley" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fghuntley.png" alt="Avatar of ghuntley" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fphilschatz" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fphilschatz.png" alt="Avatar of philschatz" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fshaal" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fshaal.png" alt="Avatar of shaal" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E'
+                            },
+                            {
+                                date: '2021-06-30T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-06-30.jpg" alt="Gitpod Local Companion"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="introducing-the-gitpod-local-companion-app"\u003EIntroducing the Gitpod Local Companion app\u003Ca href="#introducing-the-gitpod-local-companion-app"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EAs of today, you can access your Gitpod workspace from your local environment 🎉!\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cstrong\u003EWhy does this matter?\u003C\u002Fstrong\u003E\nImagine you start a development server for your web application in Gitpod. You can preview that online at a \u003Ca href="https:\u002F\u002Fnnnn-x.y.gitpod.io" rel="nofollow noopener noreferrer" target="_blank"\u003Ehttps:\u002F\u002Fnnnn-x.y.gitpod.io\u003C\u002Fa\u003E URL, where “nnnn” is the port your dev server listens on. Sometimes though, development features such as live reloading may not be compatible with that URL format and rather require something like http:\u002F\u002Flocalhost:10000 to communicate with the dev server.\u003C\u002Fp\u003E\n\u003Cp\u003EWith the Gitpod Local Companion app, localhost URLs can now access your dev server running in a Gitpod workspace. The best part of that: It works with any TCP port. You could run a MySQL database in your Gitpod workspace and access the database with your favourite GUI through localhost:3306.\u003C\u002Fp\u003E\n\u003Cp\u003ETo learn more and get started today, please see \u003Ca href="\u002Fblog\u002Flocal-app"\u003Eour introduction blog post\u003C\u002Fa\u003E.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Frl-gitpod" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Frl-gitpod.png" alt="Avatar of rl-gitpod" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4548" rel="nofollow noopener noreferrer" target="_blank"\u003E#4548\u003C\u002Fa\u003E - \u003Cstrong\u003EBreaking Change\u003C\u002Fstrong\u003E: Make ports configured in \u003Ccode\u003E.gitpod.yml\u003C\u002Fcode\u003E private by default when no value for \u003Ccode\u003Evisibility\u003C\u002Fcode\u003E is given (was public). This change is for security reasons. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4614" rel="nofollow noopener noreferrer" target="_blank"\u003E#4614\u003C\u002Fa\u003E - Added a deprecation warning for Theia. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4543" rel="nofollow noopener noreferrer" target="_blank"\u003E#4543\u003C\u002Fa\u003E - Deprecate \u003Ccode\u003Eprebuild\u003C\u002Fcode\u003E task in \u003Ccode\u003Egitpod.yml\u003C\u002Fcode\u003E. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4542" rel="nofollow noopener noreferrer" target="_blank"\u003E#4542\u003C\u002Fa\u003E - Remove \u003Ccode\u003Eide\u003C\u002Fcode\u003E task in \u003Ccode\u003Egitpod.yml\u003C\u002Fcode\u003E. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4524" rel="nofollow noopener noreferrer" target="_blank"\u003E#4524\u003C\u002Fa\u003E - Remove deprecated \u003Ccode\u003EopenModes\u003C\u002Fcode\u003E in `.gitpod.yml. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4633" rel="nofollow noopener noreferrer" target="_blank"\u003E#4633\u003C\u002Fa\u003E - Fix gp open\u002Fpreview to await till VS Code UI is available. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fissues\u002F3259" rel="nofollow noopener noreferrer" target="_blank"\u003E#3259\u003C\u002Fa\u003E - Support VS Code web extensions which are running in a browser worker, (\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fissues\u002F3259#issuecomment-864355629" rel="nofollow noopener noreferrer" target="_blank"\u003Eparticularly Vim\u003C\u002Fa\u003E). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F2879" rel="nofollow noopener noreferrer" target="_blank"\u003E#2879\u003C\u002Fa\u003E - Fix unvalidated redirects (credit: \u003Ca href="https:\u002F\u002Ftwitter.com\u002Fpayloadartist" rel="nofollow noopener noreferrer" target="_blank"\u003EArif Khan\u003C\u002Fa\u003E from SaveBreach Team). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4580" rel="nofollow noopener noreferrer" target="_blank"\u003E#4580\u003C\u002Fa\u003E - Support workspace sharing from VS Code. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4627" rel="nofollow noopener noreferrer" target="_blank"\u003E#4627\u003C\u002Fa\u003E - Deprecate user uploaded extensions. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4560" rel="nofollow noopener noreferrer" target="_blank"\u003E#4560\u003C\u002Fa\u003E - Fix out of order typing in terminals. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4589" rel="nofollow noopener noreferrer" target="_blank"\u003E#4589\u003C\u002Fa\u003E - Add dodo to animals (thanks \u003Ca href="https:\u002F\u002Fgithub.com\u002Fa2br" rel="nofollow noopener noreferrer" target="_blank"\u003E@a2br\u003C\u002Fa\u003E!). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4287" rel="nofollow noopener noreferrer" target="_blank"\u003E#4287\u003C\u002Fa\u003E - Modify the “New Git Integration” experience to align with provider terminology (thanks @jordanhailey!). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjordanhailey" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjordanhailey.png" alt="Avatar of jordanhailey" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fmeysholdt" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fmeysholdt.png" alt="Avatar of meysholdt" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4401" rel="nofollow noopener noreferrer" target="_blank"\u003E#4401\u003C\u002Fa\u003E, \u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4490" rel="nofollow noopener noreferrer" target="_blank"\u003E#4490\u003C\u002Fa\u003E, \u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4571" rel="nofollow noopener noreferrer" target="_blank"\u003E#4571\u003C\u002Fa\u003E - Implement a new Teams UI in the dashboard (behind a feature flag). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E'
+                            },
+                            {
+                                date: '2021-05-31T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-05-31.jpg" alt="Incremental prebuilds"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="faster-incremental-prebuilds"\u003EFaster, incremental prebuilds\u003Ca href="#faster-incremental-prebuilds"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EWith \u003Ca href="\u002Fdocs\u002Fprebuilds"\u003Eprebuilds\u003C\u002Fa\u003E, Gitpod continously builds your development environment so that it is ready-to-code by the time you start a new workspace.\u003C\u002Fp\u003E\n\u003Cp\u003ESo far, Gitpod started each prebuild from a clean slate. With this latest release, Gitpod now supports incremental prebuilds, which means Gitpod will try to re-use a prebuild from an earlier commit in order to create new prebuilds faster. In short, it now takes less time for your prebuild to be ready after a new commit is pushed to your git provider.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cstrong\u003ENote\u003C\u002Fstrong\u003E: This is a controlled feature release so that we can measure the performance impact on projects. There is nothing you need to do other than wait and at some point experience quicker prebuild times 🚀.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3995" rel="nofollow noopener noreferrer" target="_blank"\u003E#3995\u003C\u002Fa\u003E - Implement new self-hosted setup flow. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4170" rel="nofollow noopener noreferrer" target="_blank"\u003E#4170\u003C\u002Fa\u003E - Hide “stopping” &amp; unpinned workspaces from “Active” in the dashboard. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4118" rel="nofollow noopener noreferrer" target="_blank"\u003E#4118\u003C\u002Fa\u003E - Fix Cross Origin Websocket Access (credit: \u003Ca href="https:\u002F\u002Fgitlab.com\u002Fjoernchen" rel="nofollow noopener noreferrer" target="_blank"\u003EJoern Schneeweisz\u003C\u002Fa\u003E from the GitLab Security Research Team). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E'
+                            },
+                            {
+                                date: '2021-04-30T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-04-30.png" alt="Redesigned Gitpod dashboard"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="hello-dark-mode"\u003EHello Dark mode\u003Ca href="#hello-dark-mode"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EWe heard you and implemented a dashboard dark mode (\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3901" rel="nofollow noopener noreferrer" target="_blank"\u003EPR #3901\u003C\u002Fa\u003E) 🌑! Head over to \u003Ca href="https:\u002F\u002Fgitpod.io\u002Fpreferences" rel="nofollow noopener noreferrer" target="_blank"\u003Ehttps:\u002F\u002Fgitpod.io\u002Fpreferences\u003C\u002Fa\u003E to pick the light or dark theme. Alternatively, select “System” and let us pick the theme that matches your system settings.\u003C\u002Fp\u003E\n\u003Cp\u003EIf you have specific feedback related to dark mode, please let us know in our \u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fissues\u002F4100" rel="nofollow noopener noreferrer" target="_blank"\u003Efeedback issue #3727\u003C\u002Fa\u003E 🙏🏻.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fmeysholdt" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fmeysholdt.png" alt="Avatar of meysholdt" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Ffiliptronicek" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Ffiliptronicek.png" alt="Avatar of filiptronicek" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3940" rel="nofollow noopener noreferrer" target="_blank"\u003E#3940\u003C\u002Fa\u003E - Add OAuth2 host check (credit: \u003Ca href="https:\u002F\u002Fgitlab.com\u002Fjoernchen" rel="nofollow noopener noreferrer" target="_blank"\u003EJoern Schneeweisz\u003C\u002Fa\u003E from the GitLab Security Research Team). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4051" rel="nofollow noopener noreferrer" target="_blank"\u003E#4051\u003C\u002Fa\u003E - Ask user for confirmation before deleting an environment variable. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4069" rel="nofollow noopener noreferrer" target="_blank"\u003E#4069\u003C\u002Fa\u003E - Fix loading Gitpod’s dashboard in Safari less than v14. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3830" rel="nofollow noopener noreferrer" target="_blank"\u003E#3830\u003C\u002Fa\u003E - Optimize Gitpod’s dashboard to make it lighter and load faster. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Faledbf" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Faledbf.png" alt="Avatar of aledbf" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FDivlo" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FDivlo.png" alt="Avatar of Divlo" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4018" rel="nofollow noopener noreferrer" target="_blank"\u003E#4018\u003C\u002Fa\u003E - Make the Docker daemon in workspaces auto-start when needed by introducing a socket activated ‘sudo docker-up’. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3945" rel="nofollow noopener noreferrer" target="_blank"\u003E#3945\u003C\u002Fa\u003E - UX: Fix accidental workspace deletion when using the ‘Enter’ key. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fapolopena" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fapolopena.png" alt="Avatar of apolopena" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3938" rel="nofollow noopener noreferrer" target="_blank"\u003E#3938\u003C\u002Fa\u003E - Also show environment variables with identical names but different scopes in the dashboard. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3866" rel="nofollow noopener noreferrer" target="_blank"\u003E#3866\u003C\u002Fa\u003E - Fix quantity type conversion in Team plans. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E'
+                            },
+                            {
+                                date: '2021-03-31T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-03-31.png" alt="Redesigned Gitpod dashboard"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="-dashboard-redesign"\u003E🍊 Dashboard Redesign\u003Ca href="#-dashboard-redesign"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EAligned with our \u003Ca href="\u002Fblog\u002Fnext-chapter-for-gitpod"\u003ENext Chapter for Gitpod\u003C\u002Fa\u003E announcement, we reimplemented and redesigned the Gitpod dashboard!\u003C\u002Fp\u003E\n\u003Cp\u003ETechnical improvements under the hood result in a more performant, snappier dashboard. We would love to hear your feedback and learn how we can provide you with an even better experience. Please provide your comments in our \u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fissues\u002F3727" rel="nofollow noopener noreferrer" target="_blank"\u003Efeedback issue #3727\u003C\u002Fa\u003E 🙏🏻.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E'
+                            },
+                            {
+                                date: '2021-02-28T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-02-28.jpg" alt="VS Code on Gitpod"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="synchronize-theia-user-settings-with-vs-code"\u003ESynchronize Theia user settings with VS Code\u003Ca href="#synchronize-theia-user-settings-with-vs-code"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EWe recently launched \u003Ca href="\u002Fblog\u002Froot-docker-and-vscode#vs-code"\u003Esupport for VS Code\u003C\u002Fa\u003E.\u003C\u002Fp\u003E\n\u003Cp\u003EIf you switch your editor to VS Code, your user settings and extensions configured in Theia will be synchronized with VS Code automatically when you start a new workspace (unless you manually uploaded an extension).\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3087" rel="nofollow noopener noreferrer" target="_blank"\u003E#3087\u003C\u002Fa\u003E - Remove the privileged feature flag. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3175" rel="nofollow noopener noreferrer" target="_blank"\u003E#3175\u003C\u002Fa\u003E - Fix Env Var context parsing. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3177" rel="nofollow noopener noreferrer" target="_blank"\u003E#3177\u003C\u002Fa\u003E - [supervisor] Let supervisor fail when first IDE start fails.\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3182" rel="nofollow noopener noreferrer" target="_blank"\u003E#3182\u003C\u002Fa\u003E - [registry-facade] Remove feature flag. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3228" rel="nofollow noopener noreferrer" target="_blank"\u003E#3228\u003C\u002Fa\u003E - Allow air-gap Gitpod installations. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003EImproved workspace startup time in high-load situations. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003EStarted to \u003Ca href="https:\u002F\u002Fkubernetes.io\u002Fdocs\u002Fconcepts\u002Farchitecture\u002Fcontroller\u002F" rel="nofollow noopener noreferrer" target="_blank"\u003Eadopt the controller framework\u003C\u002Fa\u003E which will lead to Gitpod producing less load on the Kubernetes API. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Faledbf" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Faledbf.png" alt="Avatar of aledbf" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E'
+                            }
+                        ],
+                        posts: [
+                            {
+                                author: f,
+                                date: 'Fr, 13 Aug 2021 3:00:00 UTC',
+                                excerpt: 'By 2023 working with ephemeral cloud-based dev environments will be the standard, just like CI\u002FCD is today.',
+                                image: a,
+                                slug: 'cloud-based-development-for-everyone',
+                                teaserImage: a,
+                                title: 'Cloud-based development for everyone',
+                                subtitle: c,
+                                filename: 'cloud-based-development-for-everyone.md'
+                            },
+                            {
+                                author: 'pawlean, mikenikles',
+                                date: 'Thu, 05 Aug 2021 11:00:00 UTC',
+                                excerpt: 'For our first DevX Digest, we explore the evolution of developer experience in the IDE world.',
+                                image: i,
+                                slug: 'the-evolution-of-devx',
+                                subtitle: c,
+                                teaserImage: i,
+                                title: 'DevX Digest 01 - The evolution of DevX 🌱',
+                                type: 'digest',
+                                filename: 'the-evolution-of-devx.md'
+                            },
+                            {
+                                author: j,
+                                date: 'Wed, 30 Jun 2021 3:00:00 UTC',
+                                excerpt:
+                                    'Stop maintaining your local development environment. Instead, automate the setup once and use a new environment for each task you work on - available in seconds and always ready-to-code.',
+                                image: a,
+                                slug: 'i-said-goodbye-to-local-development-and-so-can-you',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'I said goodbye to local development and so can you',
+                                filename: 'i-said-goodbye-to-local-development-and-so-can-you.md'
+                            },
+                            {
+                                author: 'akosyakov, csweichel, rl-gitpod',
+                                date: 'Wed, 9 Jun 2021 18:00:00 UTC',
+                                excerpt:
+                                    'While Gitpod can seamlessly integrate into your workflow in the vast majority of cases, there are times where you may want to access a workspace from localhost',
+                                image: k,
+                                slug: 'local-app',
+                                subtitle: c,
+                                teaserImage: k,
+                                title: 'Gitpod Local Companion - localhost is going remote',
+                                filename: 'local-app.md'
+                            },
+                            {
+                                author: g,
+                                date: 'Thursday, 3 Jun 2021 11:00:00 UTC',
+                                excerpt:
+                                    "As part of Gitpod’s Open-Source Sustainability Fund initiative attendees of DevX Conf were able to decide where $10,000 USD of funds (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. Here's the breakdown how the fund was split and our retrospective on running our first-ever conference.",
+                                image: d,
+                                slug: 'devxconf-wrap',
+                                subtitle: c,
+                                teaserImage: d,
+                                title: 'DevX Conf wrap & distributing $10k of open-source funding',
+                                filename: 'devxconf-wrap.md'
+                            },
+                            {
+                                author: 'arthursens',
+                                date: 'Sunday, 23 May 2021 11:00:00 UTC',
+                                excerpt:
+                                    'The SRE team at Gitpod is making the first moves to implement Site Reliability Engineering best practices. We document our approach to implement our very first Service Level Objective.',
+                                image: d,
+                                slug: 'journey-to-site-reliability-engineering-at-gitpod',
+                                subtitle: c,
+                                teaserImage: d,
+                                title: 'Journey to Site Reliability Engineering at Gitpod',
+                                filename: 'journey-to-site-reliability-engineering-at-gitpod.md'
+                            },
+                            {
+                                author: j,
+                                date: 'Sat, 08 May 2021 18:00:00 UTC',
+                                excerpt: 'A very tight deadline, a small team and a complete redesign - insights into why we use Svelte.',
+                                image: d,
+                                slug: 'from-gatsby-to-svelte',
+                                subtitle: c,
+                                teaserImage: d,
+                                title: 'From Gatsby to Svelte in 3 weeks',
+                                filename: 'from-gatsby-to-svelte.md'
+                            },
+                            {
+                                author: l,
+                                date: 'Monday, 26 Apr 2021 11:00:00 UTC',
+                                excerpt:
+                                    "The truth is free software isn't free. Hours have rates. Rates require payment. What if the high achievers that our digital society is built upon were empowered to become independent artists?",
+                                image: a,
+                                slug: 'gitpod-open-source-sustainability-fund',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'Gitpod Open-Source Sustainability Fund',
+                                filename: 'gitpod-open-source-sustainability-fund.md'
+                            },
+                            {
+                                author: l,
+                                date: 'Friday, 16 Apr 2021 11:00:00 UTC',
+                                excerpt:
+                                    'On the 27th of April there will be a one-day virtual conference where members from the Gitpod team will be spending dedicated time with you, our community.',
+                                image: a,
+                                slug: 'a-day-with-gitpod',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'A day with Gitpod',
+                                filename: 'a-day-with-gitpod.md'
+                            },
+                            {
+                                author: f,
+                                date: 'Thu, 08 Apr 2021 14:00:00 UTC',
+                                excerpt:
+                                    'Our focus has always been to remove friction from the developer experience. Today we announce a new funding round, our new brand, several product milestones, and DevX Conf.',
+                                image: a,
+                                slug: 'next-chapter-for-gitpod',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'Next Chapter for Gitpod',
+                                filename: 'next-chapter-for-gitpod.md'
+                            },
+                            {
+                                author: 'svenefftinge, JohannesLandgraf, csweichel',
+                                date: 'Tue Dec 09 2020 8:00:00 GMT+0000 (UTC)',
+                                excerpt: 'Fully automated development environments will be the standard for professional developers in 5-10 years.',
+                                image: a,
+                                slug: 'moving-software-development-to-the-cloud',
+                                subtitle: 'Gitpod & GitHub Codespaces',
+                                teaserImage: a,
+                                title: 'Moving software development to the cloud ☁️',
+                                filename: 'moving-software-development-to-the-cloud.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Thu Dec 07 2020 11:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    'The team has been focussing on shipping some major new features, which mark important milestones on our goal to eliminate all friction.',
+                                image: a,
+                                slug: 'root-docker-and-vscode',
+                                subtitle: 'New Release',
+                                teaserImage: a,
+                                title: 'Root, Docker and VS Code',
+                                filename: 'root-docker-and-vscode.md'
+                            },
+                            {
+                                author: 'corneliusludmann, svenefftinge',
+                                date: 'Thu, 06 Oct 2020 14:00:00 UTC',
+                                excerpt:
+                                    'Today, we are super excited to share that we’ve partnered with GitLab and built a native Gitpod integration in GitLab’s UI.',
+                                image: a,
+                                slug: 'gitlab-integration',
+                                subtitle: 'Launch Gitpod workspace from GitLab',
+                                title: 'Native GitLab Integration',
+                                filename: 'gitlab-integration.md'
+                            },
+                            {
+                                author: f,
+                                date: 'Tue, 25 Aug 2020 13:00:00 UTC',
+                                excerpt:
+                                    'As of today Gitpod is open source under the AGPL license at github.com\u002Fgitpod-io\u002Fgitpod. This allows the community to participate in the',
+                                image: a,
+                                slug: 'opensource',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'Gitpod is now Open Source 🎉',
+                                filename: 'opensource.md'
+                            },
+                            {
+                                author: h,
+                                date: 'Thu, 02 Jul 2020 14:00:00 UTC',
+                                excerpt: 'We’re excited to bring you instant development environments for all Bitbucket projects.',
+                                image: a,
+                                slug: 'bitbucket',
+                                subtitle: 'Instant dev environments for all Bitbucket projects',
+                                teaserImage: a,
+                                title: 'Gitpod for Bitbucket 🚀',
+                                filename: 'bitbucket.md'
+                            },
+                            {
+                                author: 'JesterOrNot, svenefftinge',
+                                date: 'Thu June 18 2020',
+                                excerpt:
+                                    "Until now, you installed VS Code extensions in Gitpod by drag-and-dropping `.vsix` files into your workspace. Today, we're excited to introduce a",
+                                image: a,
+                                slug: 'open-vsx-in-gitpod',
+                                subtitle: 'Open VSX is now integrated in Gitpod',
+                                teaserImage: a,
+                                title: 'Search & Install Extensions in Your Gitpod Workspace',
+                                filename: 'open-vsx-in-gitpod.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed May 06 2020 16:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Today, GitHub announced the private beta of GitHub Codespaces, which provide container-based dev environments for GitHub projects.',
+                                image: 'gh-cs-bg.jpg',
+                                slug: 'github-codespaces',
+                                subtitle: 'A Milestone for Automated Development Environments',
+                                title: 'GitHub Codespaces, Welcome to the Party!',
+                                filename: 'github-codespaces.md'
+                            },
+                            {
+                                author: m,
+                                date: 'Wed May 06 2020 14:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    'We are excited to announce the new release of Gitpod Self-Hosted in version 0.4.0. Gitpod Self-Hosted allows everyone to set-up and run a',
+                                image: n,
+                                slug: 'gitpod-self-hosted-0.4.0',
+                                subtitle: 'Features, Fixes, Fixes, and Fixes',
+                                teaserImage: n,
+                                title: 'Gitpod Self-Hosted 0.4.0',
+                                filename: 'gitpod-self-hosted-0.4.0.md'
+                            },
+                            {
+                                author: 'svenefftinge, spoenemann',
+                                date: 'Thu Apr 9 2020 17:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'VS Code is used by more than 50% of all developers worldwide. Its extension protocol enabled the broader developer community to create over',
+                                image: o,
+                                slug: 'open-vsx',
+                                subtitle: 'A Free Marketplace for VS Code Extensions',
+                                teaserImage: o,
+                                title: 'Open VSX',
+                                filename: 'open-vsx.md'
+                            },
+                            {
+                                author: h,
+                                date: 'Wed Jan 8 2020 09:00:00 GMT+0000 UTC',
+                                excerpt: 'Are you tired of apt-get? Can’t use sudo right now? ... You can now ’brew install anything’ in Gitpod! 🎉',
+                                image: p,
+                                slug: 'brew',
+                                subtitle: "'brew install anything' in Gitpod",
+                                teaserImage: p,
+                                title: 'Gitpod ❤️ Homebrew',
+                                filename: 'brew.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Thu Dec 23 2019 11:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    "Ho ho ho! Christmas came early! We’ve just released a bunch of exciting new features and I'm not talking about Gitpod Enterprise which was",
+                                image: q,
+                                slug: 'update-december-2019',
+                                subtitle: 'A Last, Big Update in 2019',
+                                teaserImage: q,
+                                title: 'Christmas Release 🎄',
+                                filename: 'update-december-2019.md'
+                            },
+                            {
+                                author: m,
+                                date: 'Thu Dec 19 2019 11:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Eighteen months ago we launched the public beta of Gitpod. That date marked the beginning of an amazing journey with plenty of feedback',
+                                image: r,
+                                slug: 'self-host-your-gitpod',
+                                subtitle: 'Gitpod on Your Infrastructure',
+                                teaserImage: r,
+                                title: 'Self-Host Your Gitpod',
+                                filename: 'self-host-your-gitpod.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed Dec 04 2019 13:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    "We are happy to announce that you can finally enjoy Gitpod's frictionless ready-to-code dev environments on GitLab as well.",
+                                image: 'teaser-gitlab-cover.png',
+                                slug: 'gitlab-support',
+                                subtitle: 'Your devops toolchain is finally complete!',
+                                title: 'GitLab Support for Gitpod is Here 🎉',
+                                filename: 'gitlab-support.md'
+                            },
+                            {
+                                author: e,
+                                date: 'Thu Nov 13 2019 09:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    "Some things just aren't exposed to the internet. Either because we do not want them out in the open, think some on-prem database, or because",
+                                image: s,
+                                slug: 'local-services-in-gitpod',
+                                teaserImage: s,
+                                title: 'Using local services in Gitpod',
+                                filename: 'local-services-in-gitpod.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Tue Nov 05 2019 16:16:17 GMT+0000 (UTC)',
+                                excerpt:
+                                    'With Visual Studio Online (VSO) Microsoft is entering the space of cloud-based development environments. So, what are the differences? Glad',
+                                image: 'gitpod-vs-code-online.png',
+                                slug: 'visual-studio-online-vs-gitpod',
+                                subtitle: 'What are the differences?',
+                                title: 'Visual Studio Online vs Gitpod',
+                                filename: 'visual-studio-online-vs-gitpod.md'
+                            },
+                            {
+                                author: 'nisarhassan12',
+                                date: 'Mon Oct 7 2019',
+                                excerpt:
+                                    "To celebrate Open Source and Hacktoberfest, we're stoked 🧙✨🥰 to announce contribute.dev, a list of welcoming open-source projects.",
+                                image: 'frictionless-oss-contributions.png',
+                                slug: 'frictionless-oss-contributions',
+                                subtitle: 'Frictionless Open Source Contributions For Everyone',
+                                title: 'Announcing contribute.dev — Open Source in One Click',
+                                filename: 'frictionless-oss-contributions.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed Aug 07 2019 11:57:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Continuous dev environments reduce friction in onboarding and task switching and improves reproducibility across the project.',
+                                image: t,
+                                slug: 'continuous-dev-environment-in-devops',
+                                subtitle: 'The Missing Piece in DevOps?',
+                                teaserImage: t,
+                                title: 'Continuous Dev Environments',
+                                filename: 'continuous-dev-environment-in-devops.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Fri Aug 2 2019 12:16:17 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Today, we are excited to announce the start of our public beta phase for VS Code extensions in Gitpod, the next generation cloud IDE. So far',
+                                image: u,
+                                slug: 'vscode-extension-in-online-ide',
+                                subtitle: 'Join the Beta!',
+                                teaserImage: u,
+                                title: 'Your Favorite VS Code Extension in an Online IDE',
+                                filename: 'vscode-extension-in-online-ide.md'
+                            },
+                            {
+                                author: 'anudeepreddy',
+                                date: 'Wed Jun 26 2019 11:57:00 GMT+0000 (UTC)',
+                                excerpt: 'Build your webhook for your Google Assistant action and host it temporarily on Gitpod and test your code.',
+                                image: 'Build-and-test-your-webhook.png',
+                                slug: 'build-a-webhook-for-google-assistant',
+                                subtitle: 'Build and test your webhook using Gitpod',
+                                title: 'Build a Webhook for Google Assistant Action',
+                                url: 'https:\u002F\u002Fblog.anudeepreddy.ml\u002Fbuild-a-webhook-for-google-assistant\u002F',
+                                filename: 'build-a-webhook-for-google-assistant.md'
+                            },
+                            {
+                                author: h,
+                                date: 'Thu Jun 6 2019 09:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'I recently stumbled upon a new project on GitHub that peaked my interest. It proposed a new type of database that I was dying to try out. So',
+                                image: v,
+                                slug: 'gitpodify',
+                                subtitle: 'How to fully automate your dev environments on GitHub',
+                                teaserImage: v,
+                                title: 'Gitpodifying — The Ultimate Guide',
+                                filename: 'gitpodify.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Mon Apr 5 2019 15:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Every day developers waste millions of hours switching contexts between projects and branches, setting up development environments, or',
+                                image: w,
+                                slug: 'gitpod-launch',
+                                subtitle: 'No Setup, Less Waiting, More Flow',
+                                teaserImage: w,
+                                title: 'Introducing Gitpod — Frictionless Coding on GitHub',
+                                filename: 'gitpod-launch.md'
+                            },
+                            {
+                                author: e,
+                                date: 'Mon Mar 18 2019 16:16:17 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous',
+                                image: 'compiling-xkcd.png',
+                                slug: 'prebuilds',
+                                subtitle: 'Prebuild your workspaces',
+                                title: 'Waiting for code to build is like watching paint dry',
+                                url: 'https:\u002F\u002Fmedium.com\u002F@csweichel\u002Fa1c6b25fd601',
+                                filename: 'prebuilds.md'
+                            },
+                            {
+                                author: e,
+                                date: 'Tue Jan 29 2019 10:32:22 GMT+0000 (UTC)',
+                                excerpt:
+                                    'A core value at Gitpod is transparency: a lot of what we do is out in the open, because we believe that that’s the best way to earn the',
+                                image: 'teaser-status-page.png',
+                                slug: 'status-page',
+                                subtitle: 'Status Update',
+                                title: 'Gitpod ❤️ Statusfy',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fstatus-update-gitpod-%EF%B8%8F-statusfy-ed8266d63a20',
+                                filename: 'status-page.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Thu Dec 20 2018 21:51:05 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Learn how to streamline your code review experience. Code reviews are one of the best things you can do to keep your codebase clean. They',
+                                image: x,
+                                slug: 'when-code-reviews-lgtm',
+                                subtitle: 'Say goodbye to shallow reviews!',
+                                teaserImage: x,
+                                title: 'When code reviews LGTM',
+                                url: 'https:\u002F\u002Fhackernoon.com\u002Fwhen-code-reviews-lgtm-say-goodbye-to-shallow-reviews-a4e01b84ddef',
+                                filename: 'when-code-reviews-lgtm.md'
+                            },
+                            {
+                                author: y,
+                                date: 'Wed Dec 12 2018 11:44:33 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Nowadays, there are many collaborative platforms for showcasing JS code snippets and frameworks. Most of them run in your browser, some even',
+                                image: 'node-js-development-with-only-a-browser.jpeg',
+                                slug: 'node-js-development',
+                                title: 'Sustainable Node.js development with only a browser',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fsustainable-node-js-development-with-only-a-browser-4887bc6e737b',
+                                filename: 'node-js-development.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed Nov 21 2018 13:34:27 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Whenever you want to share a reproducible example on StackOverflow or an issue report, providing real code that can be quickly tried',
+                                image: 'workspace-snapshots.jpeg',
+                                slug: 'workspace-snapshots',
+                                subtitle: 'Code never lies',
+                                title: 'Creating reproducibles for any programming language',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fcode-never-lies-creating-reproducibles-for-any-programming-language-7946021a68f2',
+                                filename: 'workspace-snapshots.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Mon Nov 19 2018 15:39:56 GMT+0000 (UTC)',
+                                excerpt: 'Imagine that only a decade ago system administrators deployed, configured, and maintained software systems manually.',
+                                image: 'dev-env-gilbert.png',
+                                slug: 'dev-env-as-code',
+                                subtitle: 'How to streamline developer onboarding',
+                                title: 'Dev environments as code',
+                                url: 'dev-env-gilbert.gif',
+                                filename: 'dev-env-as-code.md'
+                            },
+                            {
+                                author: y,
+                                date: 'Tue Nov 13 2018 12:41:55 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Gitpod is based on the open-source Theia IDE Framework, which is highly inspired by VS Code, reuses its major components like the Monaco',
+                                image: 'node-js-gitpod.png',
+                                slug: 'node-js-gitpod',
+                                title: 'Debugging Node.js applications in Theia',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fdebugging-node-js-applications-in-theia-76c94c76f0a1',
+                                filename: 'node-js-gitpod.md'
+                            },
+                            {
+                                author: e,
+                                date: 'Thu Oct 04 2018 12:47:53 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Gitpod is a web-based IDE. As such one would think it only works for web-based projects or anything else that does not require a native UI',
+                                image: 'virtual-x-sever-running-on-a-remote-desktop-client.png',
+                                slug: 'native-ui-with-vnc',
+                                subtitle: "Cloud IDEs aren't limited to web apps",
+                                title: 'Developing native UI applications in Gitpod',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fdeveloping-native-ui-applications-in-gitpod-15af2967c24e',
+                                filename: 'native-ui-with-vnc.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed Sep 26 2018 09:35:09 GMT+0000 (UTC)',
+                                excerpt:
+                                    'It has been a month already since we went public with Gitpod.io. We want to take a moment and send out a big thank you for all the great',
+                                image: 'october-2018-release.jpeg',
+                                slug: 'october-2018-release',
+                                subtitle: "What's new this month?",
+                                title: 'Gitpod — October 2018 Release',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fgitpod-october-2018-release-672c91294b40',
+                                filename: 'october-2018-release.md'
+                            },
+                            {
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fdeveloping-a-nuxt-js-app-entirely-in-your-browser-94e7525f5eca',
+                                date: 'Fri Sep 21 2018 13:23:34 GMT+0000 (UTC)',
+                                author: b,
+                                title: 'Developing a Nuxt.js app entirely in your browser',
+                                image: 'developing-nuxtjs-in-a-browser.jpeg',
+                                excerpt:
+                                    'A walkthrough to create a fully working Nuxt.js web application with only a browser, using Gitpod.io the online IDE for GitHub.',
+                                slug: 'developing-nuxtjs-in-browser',
+                                filename: 'developing-nuxtjs-in-browser.md'
+                            },
+                            {
+                                author: 'geropl',
+                                date: 'Wed Sep 12 2018 08:25:15 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Since we released Gitpod into Public Beta it has been incredibly exciting to see people from all over the world use our service.',
+                                image: 'docker-in-gitpod.jpeg',
+                                slug: 'docker-in-gitpod',
+                                title: 'Bring your own (Docker) image to Gitpod',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fbring-your-own-docker-image-to-gitpod-52db1aa861de',
+                                filename: 'docker-in-gitpod.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Tue Jul 31 2018 06:02:26 GMT+0000 (UTC)',
+                                excerpt:
+                                    'After over one year of intensive work, we are proud to announce the public Beta of Gitpod. Gitpod is an online IDE which can be launched',
+                                image: 'gitpod-online-ide.png',
+                                slug: 'gitpod-online-ide',
+                                subtitle: 'One Click to Coding!',
+                                title: 'Gitpod — Online IDE For GitHub',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fgitpod-gitpod-online-ide-for-github-6296b907a886',
+                                filename: 'gitpod-online-ide.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Thu Jul 05 2018 11:49:24 GMT+0000 (UTC)',
+                                excerpt: 'As software developers, we already spend a lot of our time in browsers.',
+                                image: 'a-better-github-flow.png',
+                                slug: 'github-flow',
+                                subtitle: 'Stop setting up, start coding!',
+                                title: 'A Better GitHub Flow',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fgithub-flows-better-with-gitpod-e455d17990f9',
+                                filename: 'github-flow.md'
+                            }
+                        ],
+                        guides: [
+                            {
+                                author: g,
+                                date: 'Friday, 5 Jun 2021 11:00:00 UTC',
+                                title: 'Zero-commitment onboarding to NEAR using Gitpod',
+                                slug: 'zero-commitment-onboarding-to-near-using-gitpod',
+                                excerpt:
+                                    'NEAR has discovered a fantastic tool called Gitpod that gives new developers a kick-start, improves the efficacy of community code reviews, and saves resources on a developer’s machine',
+                                teaserImage: a,
+                                image: a,
+                                filename: 'zero-commitment-onboarding-to-near-using-gitpod.md'
+                            },
+                            {
+                                author: g,
+                                date: 'Thursday, 4 Jun 2021 11:00:00 UTC',
+                                title: 'Set up a full Drupal dev environment in a browser',
+                                slug: 'set-up-a-full-drupal-dev-environment-in-a-browser',
+                                excerpt:
+                                    'This project demonstrates a complete Drupal 9 development environment, utilizing ddev and Gitpod, through your browser.',
+                                teaserImage: 'teaser-image.png',
+                                image: a,
+                                filename: 'set-up-a-full-drupal-dev-environment-in-a-browser.md'
+                            }
+                        ]
+                    };
+                })(
+                    'teaser.jpg',
+                    'svenefftinge',
+                    null,
+                    'teaser.png',
+                    'csweichel',
+                    'svenefftinge, JohannesLandgraf',
+                    'christinfrohne, ghuntley',
+                    'jankeromnes',
+                    'evolution-of-devx.jpg',
+                    'mikenikles',
+                    'header-desktop.png',
+                    'ghuntley',
+                    'meysholdt',
+                    'cloud-download.png',
+                    'open.jpg',
+                    'teaser-brew.png',
+                    'winter.jpeg',
+                    'globe.png',
+                    'local-services.jpg',
+                    'devops.jpg',
+                    'tools.jpg',
+                    'teaser-gitpodify.jpg',
+                    'teaser-launch-min.jpg',
+                    'when-code-reviews-lgtm.jpeg',
+                    'akosyakov'
+                ),
+                host: location.host,
+                route: true,
+                spa: false,
+                hydrate: {
+                    status: 200,
+                    error: null,
+                    nodes: [import('/./_app/pages/$layout.svelte-09f9cae4.js'), import('/./_app/pages/terms.svelte-233c7590.js')],
+                    page: {
+                        host: location.host, // TODO this is redundant
+                        path: '/terms',
+                        query: new URLSearchParams(''),
+                        params: {}
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div id="svelte">
+            <div class="svelte-expkgt">
+                <nav id="choose-project-observer-target-top" class="mx-auto w-full svelte-tcyliy">
+                    <div class="flex items-center justify-between h-20 px-4 sm:px-8">
+                        <a href="/" aria-label="Gitpod"
+                            ><svg width="131" height="40" viewBox="0 0 131 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M56.0449 30.4444C50.1877 30.4444 46 26.25 46 20.7222C46 15.1944 50.216 11 55.96 11C58.7895 11 60.9966 12.0833 62.8358 13.6667L61.6757 16.0278C60.2609 14.6389 58.45 13.5 55.8468 13.5C51.6025 13.5 48.5466 16.4167 48.5466 20.7222C48.5466 25.0278 51.5742 27.9444 55.8751 27.9444C59.5818 27.9444 62.2133 25.75 62.6377 22.4167H55.0828V19.9167H65.5239V20.0278C65.5239 26.1389 62.0152 30.4444 56.0449 30.4444Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path d="M68.1803 16.5556H70.6137V30.4444H68.1803V16.5556Z" fill="#12100C"></path>
+                                <path
+                                    d="M82.1393 30.25V28.1389C81.3753 28.2778 80.7528 28.3611 79.8473 28.3611C78.6589 28.3611 78.2345 27.75 78.2345 26.6944V18.6389H82.111V16.5556H78.2345V12.8333H75.8011V16.5556H72.9998V18.6389H75.8011V26.5556C75.8011 29.5 77.131 30.5833 79.7059 30.5833C80.6113 30.5833 81.4036 30.4444 82.1393 30.25Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M87.0989 36H84.6655V16.5556H87.0989V18.5556C88.259 17.0278 89.9851 16.2222 92.0789 16.2222C96.0969 16.2222 98.8981 19.2222 98.8981 23.5C98.8981 27.7778 96.0969 30.7778 92.0789 30.7778C90.07 30.7778 88.4288 30 87.0989 28.4167V36ZM86.9292 23.5C86.9292 26.5833 88.7967 28.5556 91.6545 28.5556C94.5123 28.5556 96.3798 26.5556 96.3798 23.5C96.3798 20.4444 94.5123 18.4444 91.6545 18.4444C88.7967 18.4444 86.9292 20.4167 86.9292 23.5Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M100.413 23.5C100.413 27.6667 103.582 30.7778 107.826 30.7778C112.071 30.7778 115.24 27.6667 115.24 23.5C115.24 19.3333 112.071 16.2222 107.826 16.2222C103.582 16.2222 100.413 19.3333 100.413 23.5ZM112.722 23.5C112.722 26.3889 110.769 28.4722 107.826 28.4722C104.884 28.4722 102.931 26.3889 102.931 23.5C102.931 20.6111 104.884 18.5278 107.826 18.5278C110.769 18.5278 112.722 20.6111 112.722 23.5Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M128.567 11H131V30.4444H128.567V28.4444C127.406 29.9722 125.68 30.7778 123.587 30.7778C119.569 30.7778 116.767 27.7778 116.767 23.5C116.767 19.2222 119.569 16.2222 123.587 16.2222C125.596 16.2222 127.237 17 128.567 18.5833V11ZM128.736 23.5C128.736 20.4167 126.869 18.4444 124.011 18.4444C121.153 18.4444 119.286 20.4444 119.286 23.5C119.286 26.5556 121.153 28.5556 124.011 28.5556C126.869 28.5556 128.736 26.5833 128.736 23.5Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    d="M69.4026 14.7302C70.3643 14.7302 71.1439 13.9679 71.1439 13.0275C71.1439 12.087 70.3643 11.3247 69.4026 11.3247C68.4408 11.3247 67.6612 12.087 67.6612 13.0275C67.6612 13.9679 68.4408 14.7302 69.4026 14.7302Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M21.388 1.99199C22.4572 3.8871 21.8071 6.30126 19.936 7.38418L8.30155 14.1176C7.99402 14.2956 7.8042 14.6271 7.8042 14.9861V25.5563C7.8042 25.9153 7.99402 26.2467 8.30155 26.4247L17.511 31.7548C17.8141 31.9301 18.1859 31.9301 18.489 31.7548L27.6985 26.4247C28.006 26.2467 28.1958 25.9153 28.1958 25.5563V18.9825L19.9175 23.7132C18.0406 24.7858 15.6605 24.1142 14.6015 22.2133C13.5425 20.3123 14.2056 17.9017 16.0825 16.8292L27.9277 10.0602C31.5358 7.99827 36 10.6386 36 14.8346V26.3588C36 29.0581 34.572 31.5504 32.258 32.8896L21.6846 39.009C19.4014 40.3303 16.5986 40.3303 14.3154 39.009L3.74196 32.8896C1.42803 31.5504 0 29.0581 0 26.3588V14.1835C0 11.4843 1.42803 8.99201 3.74196 7.65282L16.064 0.521394C17.9351 -0.561524 20.3188 0.0968851 21.388 1.99199Z"
+                                    fill="url(#paint0_linear)"
+                                ></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="27.0957" y1="6.04878" x2="8.28086" y2="35.2541" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFB45B"></stop>
+                                        <stop offset="1" stop-color="#FF8A00"></stop>
+                                    </linearGradient>
+                                </defs></svg
+                        ></a>
+                        <div class="nav-items hidden px-2 space-x-6 items-center md:space-x-12 svelte-tcyliy">
+                            <a
+                                href="/features"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Features</a
+                            ><a
+                                href="/screencasts"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u highlighted"
+                                >Screencasts</a
+                            ><a
+                                href="/blog"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Blog</a
+                            ><a
+                                href="/docs"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Docs</a
+                            ><a
+                                href="/changelog"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Changelog</a
+                            ><a
+                                href="/pricing"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Pricing</a
+                            >
+                        </div>
+                        <div class="login-wrapper hidden svelte-tcyliy">
+                            <a
+                                href="https://gitpod.io/login/"
+                                class="
+                                    flex
+                                    items-center
+                                    justify-center
+                                    h-8
+                                    w-20
+                                    rounded-xl
+                                    bg-black
+                                    font-bold
+                                    text-off-white text-sm
+                                    focus:text-off-white focus:bg-black-hover
+                                    hover:text-off-white hover:bg-black-hover
+                                "
+                                >Login
+                            </a>
+                        </div>
+                        <button aria-label="Show / hiide nav items" class="flex justify-center items-center h-6 w-12 rounded-xl bg-black svelte-z7a2ag">
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="16" height="2" rx="1" fill="#F4F2F1"></rect>
+                                <rect y="6" width="16" height="2" rx="1" fill="#F3F1F0"></rect>
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+                <main class="svelte-1c2lq7w">
+                    <article class="text-blob">
+                        <h1>Gitpod Terms of Service</h1>
+
+                        <p>
+                            The provider of the internet services and other products supplied or provided available at gitpod.io (the
+                            <strong>&quot;Website&quot;</strong>
+                            and together with the internet services and other products, the
+                            <strong>&quot;Service&quot;</strong>) is Gitpod GmbH, Am Germaniahafen 1, 24143 Kiel, Germany, registered at the commercial registry
+                            of the district court of Kiel under HRB 22228, represented by the managing directors Sven Efftinge, Moritz Eysholdt, Dr. Jan
+                            Köhnlein (<strong>&quot;Gitpod&quot;</strong> or <strong>&quot;we/our&quot;</strong>).
+                        </p>
+                        <p>
+                            The use of the scope of Services provided by us and used by our registered customers in form of individuals and businesses (each a
+                            <strong>&quot;Customer&quot;</strong> or <strong>&quot;you/your&quot;</strong>) is determined by the following general terms of
+                            service (<strong>&quot;Terms of Service&quot;</strong> or <strong>&quot;Agreement&quot;</strong>).
+                        </p>
+                        <p>
+                            These Terms of Service shall apply to all Customers including consumers according to Section 13 of the German Civil Code (BGB) and
+                            entrepreneurs according to Section 14 of the German Civil Code (BGB). A consumer is a natural person who places the order for a
+                            purpose which cannot be attributed to their commercial or self-employed professional activity (each a
+                            <strong>&quot;Consumer&quot;</strong>). An Entrepreneur is a natural or legal person or a partnership with legal capacity who, when
+                            concluding a legal transaction, acts in the exercise of his commercial or self-employed professional activity (each an
+                            <strong>&quot;Entrepreneur&quot;</strong>).
+                        </p>
+                        <p>
+                            Any provisions, which are contrary to these Terms of Service, are not part of the contract, unless we explicitly and in writing
+                            agree that these provisions shall be valid.
+                        </p>
+                        <ol type="A" class="toc">
+                            <li>
+                                <h2>Creating an Account and Conclusion of the Agreement</h2>
+                                <p>
+                                    It is a prerequisite to use the Service of Gitpod having an existing account of Customer at https://github.com operated by
+                                    GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA or any other third party service as set forth on the
+                                    Website (<strong>&quot;Existing Account&quot;</strong>).
+                                </p>
+                                <p>
+                                    You offer to conclude this Agreement when you (i) accept these Terms of Service by checking the box at the Website, (ii)
+                                    provide the data, which is managed in accordance with our <a href="/privacy">privacy policy</a>, required for opening a
+                                    Gitpod account in our Existing Account page as described throughout this Agreement; and (iii) declare your intention to
+                                    create, and create, an account by clicking on the respective button in the Existing Account page. By clicking on the button
+                                    <strong>&quot;Create my free account&quot;</strong> the Customer submits an offer on the conclusion of the contract about
+                                    the usage of the Service and agrees to the Agreement and the privacy policy of Gitpod which are valid at the time of
+                                    registration.
+                                </p>
+                                <p>
+                                    Notwithstanding anything in the contrary in this Agreement, upon your offer to enter into this Agreement, we may, at our
+                                    discretion, decide to accept or reject such offer. Unless an explicit declaration of the acceptance is given, our acceptance
+                                    can be deemed given when Gitpod grants the Service offered under this Agreement.
+                                </p>
+                                <p>
+                                    There is no legal entitlement for using the services provided by Gitpod. Gitpod has the right to stop or deny any
+                                    registration without giving any reasons.
+                                </p>
+                                <p>
+                                    By the time of sign-up the Customer must be at least 18 years old and fully contractually capable. In case of doubt Gitpod
+                                    is entitled to ask the individual Customer to submit a documentary evidence of age or contractual capability.
+                                </p>
+                                <p>
+                                    In order to access or amend the data relating to the Gitpod account the Customer shall access or amend such data within the
+                                    Existing Account.
+                                </p>
+                                <p>
+                                    During our Services, you remain in control of your Existing Account. Cancelation or termination of our Services has no
+                                    effect on your Existing Account.
+                                </p>
+                                <p>
+                                    After successful registration the Customer shall be able to log in for using our Service. A login is only possible via the
+                                    access data assigned to the Customer by Gitpod (user name and password).
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Support and Consulting</h2>
+                                <p>
+                                    Usually Gitpod does not offer any integration, support and consulting services as part of the Service. Within its sole
+                                    discretion Gitpod may offer support via email or in-Service communications as set forth in detail on the Website.
+                                </p>
+                                <p>The Customer’s rights in case of defects of the Service remain unaffected.</p>
+                            </li>
+                            <li>
+                                <h2>Rights of Use and Licenses; Open Source</h2>
+                                <p>
+                                    We retain ownership of all intellectual property rights of any kind related to the Website and Service unless explicitly
+                                    granted to you pursuant to this Agreement.
+                                </p>
+                                <p>
+                                    Upon successful registration for the Service and payment of Fees (as applicable) Gitpod hereby grants to Customer the
+                                    worldwide, non-exclusive, non-sublicensable, non-transferable right to use the Service for the term and subject to the
+                                    provisions of this Agreement. Customer accepts such grant of rights.
+                                </p>
+                                <p>
+                                    The Customer is aware that the Service contains open source components and such components are governed by the respective
+                                    open source licenses.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Fees and Payment</h2>
+                                <p>
+                                    Depending on the time of using the Service and subscription plan available on the Website chosen by Customer Gitpod demands
+                                    from the Customer a fee for using its Service based on <strong>&quot;Gitpod-Hours (GPh)&quot;</strong>
+                                    which is our internal unit to express amounts, credits and debits of Service use (the
+                                    <strong>&quot;Fee&quot;</strong>). The description, options and total amount of such Fee shall be based on the current list
+                                    shown on the Website or as provided to Customer in text form.
+                                </p>
+                                <p>
+                                    All prices for Customers that are Consumers (Section 13 BGB) do include the statutory VAT. All prices for Customers that are
+                                    Entrepreneurs (Section 14 BGB) do not include statutory VAT and such Customer as Entrepreneur shall be solely responsible
+                                    for any applicable taxes and related costs.
+                                </p>
+                                <p>
+                                    The Customer shall pay the Fee by using the payment methods set forth on the Website without any extra charge if Customer is
+                                    a consumer (Section 13 BGB). The currently valid prices are displayed before the respective purchase is finalized within the
+                                    Service. No further costs or fees shall arise for the Customer as Consumer when making a payment.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Availability</h2>
+                                <p>
+                                    Our Services are generally available on the Website. Exceptions are: Back-up processes, system maintenance, system or
+                                    database repair work, unavailability of the third party service for the Existing Account. We try to keep these disruptions
+                                    on a low level. Customers’ rights in case of defects remain unaffected.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Liability</h2>
+                                <p>We are liable without limitation for</p>
+                                <ol type="A">
+                                    <li>damages caused deliberately or due to gross negligence by Gitpod;</li>
+                                    <li>damages arising out of death, injury to body or health;</li>
+                                    <li>
+                                        damages due to a neglect of duty by Gitpod concerning essential contractual rights and obligations, which are absolutely
+                                        necessary for a proper execution of the contract, and which might endanger the fulfilment of the contractual purpose
+                                        (material contractual obligations). In that case, however, liability shall be limited to typical and foreseeable
+                                        damages;
+                                    </li>
+                                    <li>liability according to the Product Liability Act;</li>
+                                    <li>liability in case of a guarantee (without hereby giving such guarantee).</li>
+                                </ol>
+                                <p>
+                                    Any exemption from liability as well as limitations of liability of Gitpod shall also apply to the legal representatives and
+                                    assistants of Gitpod.
+                                </p>
+                                <p>
+                                    No further liability for Gitpod exists. In particular, Gitpod is not liable for a failure or delay in rendering Service to
+                                    the extent caused by circumstances beyond its reasonable control.
+                                </p>
+                                <p>
+                                    If Customer is an Entrepreneur the statutory provision shall apply and such Customer shall also be held responsible for all
+                                    its legal representatives, assistants and any assigned users of the Service according to Section 278 BGB.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Warranty for Material Defects and Guarantees</h2>
+                                <p>
+                                    We are liable for material defects according to the valid legal regulations if the Customer is a Consumer. The limitation
+                                    period begins with access to the Service. In such case the statutory warranty rules apply without restriction.
+                                </p>
+                                <p>
+                                    If the Customer is an Entrepreneur the following shall apply: The Customer shall check the contractual Service immediately
+                                    upon receipt for obvious defects and inform us immediately if they are present, otherwise a warranty for these defects is
+                                    excluded. The same applies if such a defect becomes apparent later. Section 377 of the German Commercial Code (HGB) applies
+                                    as far as legally permissible. The period for warranty claims is restricted to 12 calendar months from the first appearance
+                                    of the defect as far as permitted by law. The limitation period begins with access to the Service.
+                                </p>
+                                <p>
+                                    We are not accountable for defects of Service or defects concerning the rights of Service in case the Service was supplied
+                                    or provided without payment and the defects have not been left intentionally undisclosed.
+                                </p>
+                                <p>We do not offer any guarantees for our Service without an expressly given confirmation.</p>
+                            </li>
+                            <li>
+                                <h2>Customer&#39;s General Obligations</h2>
+                                <ol type="1">
+                                    <li>
+                                        <strong>True Data and Fair use:</strong> You must fill in all required fields in the sign-up sheet truthfully and
+                                        completely. You must respect and abide these Terms of Service, especially the obligations for Fair and Acceptable Use
+                                        set forth in Section I. You are responsible for the content you create, post, upload or otherwise store, make available,
+                                        or communicate in use of the Service.
+                                    </li>
+                                    <li>
+                                        <strong>Password and Security:</strong> You shall chose a safe password (we recommend at least 8 signs, including a
+                                        letter, cypher and special character) for your account and change such password on a regular basis. You shall only pass
+                                        such password information to authorized persons.
+                                    </li>
+                                    <li>
+                                        <strong>Defects and Bug reporting:</strong> You agree to support Gitpod in removing possible software defects by means
+                                        such as bugs reporting or providing any information that can help us finding source of errors, if you have any
+                                        available.
+                                    </li>
+                                    <li>
+                                        <strong>Backups:</strong> We do a regular backup of your data in the Service due to our legal obligations. However, you
+                                        shall conduct regular backups of your data integrated in the Service via copying of all your data outside of your Gitpod
+                                        account. Upon termination of the Service, we will delete your data according to these Terms of Service and our
+                                        <a href="/privacy">privacy policy</a>.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h2 id="fair-use">Fair and Acceptable Use; Indemnification</h2>
+                                <p>
+                                    Gitpod Services are to be used for lawful software development, demoing, showcasing or debugging the resulting software
+                                    and/or teaching software development. Your use of the Services must comply with general fair practices and you must, in
+                                    particular, not nor allow others through your Gitpod account to:
+                                </p>
+                                <ol type="1">
+                                    <li>breach any applicable laws, not limited to a specific jurisdiction;</li>
+                                    <li>
+                                        post, host, upload, communicate or transmit content that is unlawful, sexually obscene, discriminatory, abusive,
+                                        libelous, defamatory, fraudulent, harassing, threatening or infringes proprietary rights of any third party or us;
+                                    </li>
+                                    <li>
+                                        distribute any malware or other deceitful or destructive content, including, but not limited to viruses, worms, Trojan
+                                        horses, exploits, or corrupted files, distribution of unsolicited mass communications, advertising or solicitation;
+                                    </li>
+                                    <li>conduct illegal activities or their promotion;</li>
+                                    <li>
+                                        interfere or tamper with, violate, disable, impede or circumvent any part of the Service of GitPod and the equipment and
+                                        services used by GitPod to provide them;
+                                    </li>
+                                    <li>attack or break into computer systems;</li>
+                                    <li>abuse, scan other computer systems or networks, or place immoderate burden on any computing resources or systems;</li>
+                                    <li>conduct or participate in any manner in peer-to-peer file sharing activity;</li>
+                                    <li>engage in number crunching, data mining, cryptocurrency mining or similar schemes;</li>
+                                    <li>
+                                        make any use or failure thereof which could lead to, create, increase risk of, death, physical injury or health or
+                                        environmental damage;
+                                    </li>
+                                    <li>any other activity which can reasonably be deemed an unfair use of the Services.</li>
+                                </ol>
+                                <p>
+                                    Gitpod workspaces allow you to interact online with other people, computer networks and computer systems. You are solely
+                                    responsible for this interaction and especially any problems, material or immaterial damage this interaction might cause.
+                                    <strong
+                                        >Third party claims addressed to us which result from your interactions online or violation to these Terms of Service
+                                        shall be redirected to you and you shall hold us harmless and indemnify us for any damages, claims, liabilities and
+                                        expenses, including attorneys’ fees that your interaction causes to others and us provided you are held responsible for
+                                        such breach.</strong
+                                    >
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Customer Data; Indemnification</h2>
+                                <p>
+                                    The Customer has the possibility within his account to upload content and code, including but not limited to programs,
+                                    technical data, personal data (<strong>&quot;Customer Data&quot;</strong>). The Customer is solely responsible for this
+                                    Customer Data and undertakes not to upload or otherwise use any prohibited content within his customer profile in accordance
+                                    with these Terms of Service. Insofar as the Customer leaves these Customer Data to Gitpod and its Service, Customer grants
+                                    Gitpod all rights necessary for the execution of the contractual agreement with Gitpod. This includes, in particular, the
+                                    right to make the corresponding data accessible on the Website displaying them in the Customer’s account. Gitpod hereby
+                                    accepts this granting of rights.
+                                </p>
+                                <p>
+                                    In the event that Customer Data is removed from an account or that an account is/was deleted by the Customer or by us for
+                                    whatever reason, the rights to such Customer Data shall expire, except for legal retention periods and the Customer’s
+                                    statutory rights for a backup of such Customer Data.
+                                </p>
+                                <p>
+                                    Customer is solely responsible for such Customer Data, especially any copyrights, data protection requirements, problems,
+                                    material or immaterial damage these Customer Data might cause.
+                                    <strong
+                                        >Third party claims addressed to us which result from violations due to these Customer Data and to these Terms of
+                                        Service shall be redirected to you and you shall hold us harmless and indemnify us for any damages, claims, liabilities
+                                        and expenses, including attorneys’ fees that your interaction causes to others and us provided you are held responsible
+                                        for such breach.</strong
+                                    >
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Blocking Rights</h2>
+                                <p>In addition to our termination rights, we have the right to the following blocking measures:</p>
+                                <ol type="1">
+                                    <li>
+                                        In case a Customer is in breach of Section I. or a reasonable suspicion thereon considering the reasonable interests of
+                                        the Customer temporarily suspend providing the entire or any part of the Service to the Customer; and/or
+                                    </li>
+                                    <li>
+                                        In case the Customer Data (i) violate applicable laws or are subject to illegal activities each to the knowledge of
+                                        Gitpod, or (ii) harm or affect the provision of the Service, related services and networks or the security and integrity
+                                        of related networks, we may without previous notification block from access and/or execution or delete software or other
+                                        Customer Data.
+                                    </li>
+                                </ol>
+                                <p>We will inform the Customer of such blocking measures set forth above without hesitation.</p>
+                                <p>We may also disclose your personal data vis-à-vis authorities as set forth in the <a href="/privacy">privacy policy </a>.</p>
+                            </li>
+                            <li>
+                                <h2>L. Right of Withdrawal and Dispute Resolution</h2>
+                                <p>The following provisions of this Section L. shall only apply to Consumers.</p>
+                                <h3>Right of Withdrawal</h3>
+                                <p>
+                                    If you are a Consumer, you have the right of withdrawal in accordance with the statutory provisions. In all respects the
+                                    regulations, which are given in detail in the following instruction on withdrawal, apply to the right of withdrawal.
+                                </p>
+
+                                <div>
+                                    <div>-- begin instruction on withdrawal --</div>
+                                    <h4>Right of Withdrawal</h4>
+                                    <p>
+                                        You have the right to withdraw from this contract within 14 days without giving any reason. The withdrawal period will
+                                        expire 14 days from the day of the conclusion of the contract. To exercise the right of withdrawal, you must inform us
+                                        to:
+                                    </p>
+                                    <p>
+                                        Gitpod GmbH<br />
+                                        represented by: Sven Efftinge, Moritz Eysholdt, Dr. Jan Köhnlein<br />
+                                        Am Germaniahafen 1<br />
+                                        24143 Kiel/Germany<br />
+                                        Email: contact@gitpod.io
+                                    </p>
+                                    <p>
+                                        of your decision to withdraw from this contract by an unequivocal statement (e.g. a letter sent by post, fax or e-mail).
+                                        You may use the attached <a href="#withdrawal-form">model withdrawal form</a>, but it is not obligatory.
+                                    </p>
+                                    <p>
+                                        To meet the withdrawal deadline, it is sufficient for you to send your communication concerning your exercise of the
+                                        right of withdrawal before the withdrawal period has expired.
+                                    </p>
+                                    <h4>Effects of Withdrawal</h4>
+                                    <p>
+                                        If you withdraw from this contract, we shall reimburse to you all payments received from you, including the costs of
+                                        delivery (with the exception of the supplementary costs resulting from your choice of a type of delivery other than the
+                                        least expensive type of standard delivery offered by us), without undue delay and in any event not later than 14 days
+                                        from the day on which we are informed about your decision to withdraw from this contract. We will carry out such
+                                        reimbursement using the same means of payment as you used for the initial transaction, unless you have expressly agreed
+                                        otherwise; in any event, you will not incur any fees as a result of such reimbursement.
+                                    </p>
+                                    <p>
+                                        If you requested to begin the performance of services during the withdrawal period, you shall pay us an amount which is
+                                        in proportion to what has been provided until you have communicated us your withdrawal from this contract, in comparison
+                                        with the full coverage of the contract.
+                                    </p>
+                                    <p>
+                                        Your right to withdraw from this Agreement expires prematurely if the Services were initiated by us to you only after
+                                        you as Consumer have expressly agreed that we shall commence with the execution of the contract before expiry of the
+                                        withdrawal period, and at the same time have confirmed your knowledge of the fact that you lose your right to withdraw
+                                        from the contract with the beginning of the execution of the contract.
+                                    </p>
+                                    <div>-- end instruction on withdrawal --</div>
+                                </div>
+
+                                <h3>Alternative Settlements of Disputes</h3>
+                                <p>
+                                    The European Commission provides a platform for an online settlement of disputes which can be accessed under
+                                    http://ec.europa.eu/consumers/odr/. Gitpod is neither obliged to take part in alternative dispute resolutions before a
+                                    consumer dispute settlement commission or will do so voluntarily.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Term and Termination</h2>
+                                <p>
+                                    This Agreement is effective as of your creation of the Gitpod account and remains effective until terminated. You as
+                                    Customer or Gitpod may each terminate this Agreement without reason by giving a 15-day notice using the termination option
+                                    in the Gitpod account or as for Gitpod via email to Customer.
+                                </p>
+                                <p>
+                                    In addition, you as Customer or Gitpod can terminate this Agreement with immediate effect for good cause (wichtiger Grund).
+                                    Good cause <em>(wichtiger Grund)</em> on part of Gitpod shall include, among others, when (i) you are in breach or your
+                                    obligations under this Agreement; or (ii) fall behind in payment for more than six (6) weeks; or (iii) breach the terms of
+                                    Fair and Acceptable Use in Section I; or (iv) a major change in cooperation between Gitpod and other companies that is
+                                    central for Gitpod to supply its Service occur, including but not limited to the end or material change of the workings of a
+                                    software or service, a cancellation of the co-operation, or materially changed pricing; or (v) a major change of resources
+                                    availability that are central for Gitpod to supply its Service occur; or (vi) Gitpod Service is terminated due to reasons
+                                    beyond Gitpod’s control or as a whole.
+                                </p>
+                                <p>
+                                    Upon termination, regulations concerning Liability (Section F.), Warranty of Material Defects and Guarantee (Section G.),
+                                    Term (Section M.), Confidentiality (Section O.) and Miscellaneous (Section Q.) shall survive.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Privacy and Data</h2>
+                                <p>
+                                    We will process your data according to the German and European data protection laws. For details please refer to our
+                                    <a href="/privacy">privacy policy </a>.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Confidentiality</h2>
+                                <p>
+                                    Both Customer and Gitpod agree not to, and shall ensure that their employees, agents and advisors do not, disclose to third
+                                    parties, nor use for any purpose other than as contemplated in these Terms of Service and additional agreements, any
+                                    confidential or proprietary information arising or disclosed pursuant to the agreement (including but not limited to the
+                                    Terms of Service, the parties&#39; trade secrets and information not generally known to the public such as business plans,
+                                    strategies, practices, products, personnel and finances), except: (i) with the prior written permission of the party to whom
+                                    such information belongs; (ii) where the information is already known to, or obtained by independent means, or independently
+                                    developed without reference to the other party’s confidential information, by the recipient; (iii) is already in the public
+                                    domain through no fault of the recipient; (iv) the recipient receives from a third person free to make such disclosure
+                                    without breach of any legal obligation; or (v) the disclosure by both parties to an affiliated company (in the meaning of
+                                    sections 15 et seqq AktG) of either party. This Section O. shall survive the termination of this Agreement for three (3)
+                                    years after such termination. Notwithstanding the foregoing, a recipient may disclose confidential information of the other
+                                    party if required to do so by law, court order or request by any government or regulatory authority. In any of those events,
+                                    the recipient will in advance and promptly inform the other party about the requirement or respectively the request for
+                                    disclosure.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Terms of Service Changes</h2>
+                                <p>
+                                    We may change these Terms of Service as well as related documentation at any time at our sole discretion. We will inform you
+                                    at least in text form that the Terms of Service as well as related documentation have been modified and give information
+                                    when such changes become effective. The respective change will take effect when you do not object the new terms and
+                                    conditions within four (4) weeks after sending the email. In case you object to the modification within the four-week
+                                    period, we shall be entitled to cancel the contract with immediate effect, without you having any claims against us. If the
+                                    contractual relationship after the effective objection by you continues, the previous terms and conditions shall remain in
+                                    force.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>Miscellaneous</h2>
+                                <p>
+                                    You are not allowed to assign, transfer or delegate these Terms of Service to any person or entity at any time given, except
+                                    for certain rights as explicitly set forth in these Terms of Service.
+                                </p>
+                                <p>
+                                    This Agreement is governed by the laws of the Federal Republic of Germany, to the exclusion of the Convention of the United
+                                    Nations on Contracts for the International Sale of Goods. Any statutory provisions on the limitation of the choice of law as
+                                    well as the applicability of mandatory laws especially by the state, in which the Customer who is a Consumer has his usual
+                                    place of residence, shall not be deemed affected. Provided the Customer is a merchant, a legal entity under public law or a
+                                    special fund under public law and to the extent permitted by and compatible with the law the exclusive jurisdiction and
+                                    venue shall be the seat of Gitpod.
+                                </p>
+                                <p>
+                                    These Terms of Service and the documents referred hereto jointly constitute the whole Agreement between the Gitpod and
+                                    Customer and precede any other agreement, arrangement, proposal or communication. Gitpod does not waive any rights under
+                                    this Agreement by not exercising or delaying to exercise these rights.
+                                </p>
+                                <p>
+                                    In case individual provisions in these terms and conditions including this provision are or become invalid, or in case of
+                                    gaps arising in these terms and conditions, the validity of all other provisions will not be deemed affected thereby.
+                                    Instead of the ineffective provision or for replenishment of gaps an adequate provision will apply. If the Customer is a
+                                    Consumer and in case this may constitute an unreasonable hardship for one of the contracting parties the contract shall
+                                    become ineffective as a whole.
+                                </p>
+
+                                <h2>Transfer of the Agreement to Another Party</h2>
+                                <p>You agree that we may transfer this Agreement to:</p>
+                                <ol type="1">
+                                    <li>
+                                        <strong>Gitpod, Inc.</strong>, a corporation incorporated and validly existing under the laws of the State of Delaware,
+                                        United States, registered with the Division of Corporations of the State of Delaware under file number 3353320 and with
+                                        business address at: 1390 Market Street, Suite 200, San Francisco. CA 94102, United States (&quot;<strong
+                                            >Gitpod, Inc.</strong
+                                        >&quot;); or
+                                    </li>
+                                    <li>another third-party designated in our discretion (&quot;<strong>Third-Party</strong>&quot;)</li>
+                                </ol>
+                                <p>
+                                    by way of a transfer of contract with discharging effect (Vertragsübernahme mit schuldbefreiender Wirkung) with the effect
+                                    that Gitpod, Inc. or the Third-Party becomes your new contractual partner in our stead and assumes all our rights and
+                                    obligations under this Agreement.
+                                </p>
+                                <p>
+                                    We will notify you of a contemplated transfer of this Agreement and provide you with the identity of your new contractual
+                                    partner in text form with at least four three weeks&#39; notice prior to the contemplated transfer of this Agreement
+                                    becoming effective (&quot;<strong>Transfer Notice</strong>&quot;).
+                                </p>
+                                <p>
+                                    In case of a contemplated transfer of this Agreement to a Third-Party you shall be entitled to terminate this Agreement
+                                    without notice and without any additional cause being required. This termination right must be exercised within six weeks
+                                    following receipt of the Transfer Notice and must be exercised in text form.
+                                </p>
+                                <p>
+                                    The above termination right shall not exist in case of a transfer of this Agreement to Gitpod, Inc. Other rights you may
+                                    have to terminate the Agreement with or without cause shall remain unaffected.
+                                </p>
+                            </li>
+                        </ol>
+                        <h2 id="withdrawal-form">Appendix: Model Withdrawal Form</h2>
+                        <p>Complete and return this form only if you wish to withdraw from the contract.</p>
+
+                        <div class="card">
+                            <div>-- begin model withdrawal form --</div>
+                            <p>
+                                To<br />
+                                Gitpod GmbH represented by: Sven Efftinge, Moritz Eysholdt, Dr. Jan Köhnlein<br />
+                                Am Germaniahafen 1<br />
+                                24143 Kiel/Germany <br />
+                                Phone: +49-431-99026870<br />
+                                Email: contact@gitpod.io<br />
+                            </p>
+                            <p></p>
+                            <p>I/We (*) hereby give notice that I/We (*) withdraw from my/our (*) for the provision of the following service (*),</p>
+                            <p>Ordered on (*)/received on (*),</p>
+                            <p>Name of consumer(s),</p>
+                            <p>Address of consumer(s),</p>
+                            <p>Signature of consumer(s) (only if this form is notified on paper),</p>
+                            <p>Date</p>
+                            <p>_______________</p>
+                            <p>(*) Delete where inapplicable.</p>
+                            <div>-- end model withdrawal form --</div>
+                        </div>
+                    </article>
+                </main>
+                <div class="pb-8 bg-gray-100 text-p-footer">
+                    <footer class="footer py-large m-auto px-xx-small md:max-w-3xl md:py-small md:px-xx-small svelte-1ivs93t">
+                        <div class="flex justify-between flex-wrap pb-micro md:pb-small">
+                            <ul class="svelte-1ivs93t">
+                                <li class="svelte-1ivs93t">Gitpod</li>
+                                <li class="svelte-1ivs93t"><a href="/" class="svelte-1ivs93t">Home</a></li>
+                                <li class="svelte-1ivs93t"><a href="/features" class="svelte-1ivs93t">Features</a></li>
+                                <li class="svelte-1ivs93t"><a href="/pricing" class="svelte-1ivs93t">Pricing</a></li>
+                                <li class="svelte-1ivs93t"><a href="/changelog" class="svelte-1ivs93t">Changelog</a></li>
+                                <li class="svelte-1ivs93t"><a href="/self-hosted" class="svelte-1ivs93t">Self-Hosted</a></li>
+                                <li class="svelte-1ivs93t">
+                                    <a href="/gitpod-vs-github-codespaces" class="svelte-1ivs93t">Gitpod vs GitHub <br />Codespaces </a>
+                                </li>
+                                <li class="svelte-1ivs93t"><a href="https://www.gitpodstatus.com/" target="_blank" class="svelte-1ivs93t">Status</a></li>
+                            </ul>
+                            <ul class="svelte-1ivs93t">
+                                <li class="svelte-1ivs93t">Developer</li>
+                                <li class="svelte-1ivs93t"><a href="/#get-started" class="svelte-1ivs93t">Getting started</a></li>
+                                <li class="svelte-1ivs93t"><a href="/screencasts" class="svelte-1ivs93t">Screencasts</a></li>
+                                <li class="svelte-1ivs93t"><a href="/blog" class="svelte-1ivs93t">Blog</a></li>
+                                <li class="svelte-1ivs93t"><a href="/docs" class="svelte-1ivs93t">Documentation</a></li>
+
+                                <li class="svelte-1ivs93t">
+                                    <a
+                                        href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="svelte-1ivs93t"
+                                        >Report a bug</a
+                                    >
+                                </li>
+                                <li class="svelte-1ivs93t">
+                                    <a href="https://community.gitpod.io" target="_blank" rel="noopener" class="svelte-1ivs93t">Community</a>
+                                </li>
+                            </ul>
+                            <ul class="svelte-1ivs93t">
+                                <li class="svelte-1ivs93t">Company</li>
+                                <li class="svelte-1ivs93t"><a href="/about" class="svelte-1ivs93t">About</a></li>
+                                <li class="svelte-1ivs93t"><a href="/careers" class="highlighted svelte-1ivs93t">Careers</a></li>
+                                <li class="svelte-1ivs93t"><a href="/contact" class="svelte-1ivs93t">Contact</a></li>
+                                <li class="svelte-1ivs93t"><a href="/media-kit" class="svelte-1ivs93t">Media Kit</a></li>
+                            </ul>
+                            <ul class="svelte-1ivs93t">
+                                <li class="svelte-1ivs93t">Legal</li>
+                                <li class="svelte-1ivs93t"><a href="/imprint" class="svelte-1ivs93t">Imprint</a></li>
+                                <li class="svelte-1ivs93t"><a href="/terms" class="svelte-1ivs93t">Terms of Service</a></li>
+                                <li class="svelte-1ivs93t"><a href="/privacy" class="svelte-1ivs93t">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__bottom flex justify-between border-t border-solid border-sand-dark pt-xx-small md:pt-x-small svelte-1ivs93t">
+                            <div class="footer__copy flex items-center svelte-1ivs93t">
+                                <a href="/" class="svelte-1ivs93t"
+                                    ><div class="relative -top-px z-0"><img src="/svg/logo-textless.svg" alt="Gitpod" height="24" width="24" /></div></a
+                                ><span class="ml-macro">Copyright © 2021 Gitpod</span>
+                            </div>
+                            <div class="flex">
+                                <a href="https://twitter.com/gitpod" class="footer__social-link svelte-1ivs93t"
+                                    ><img src="/svg/brands/twitter.svg" alt="Twitter" height="24" width="24" /> </a
+                                ><a href="https://github.com/gitpod-io" class="footer__social-link svelte-1ivs93t"
+                                    ><img src="/svg/brands/github.svg" alt="GitHub" height="24" width="24" /> </a
+                                ><a href="https://community.gitpod.io/" class="footer__social-link svelte-1ivs93t"
+                                    ><img src="/svg/brands/discourse.svg" alt="Discourse" height="24" width="24" /> </a
+                                ><a href="https://www.gitpod.io/chat" class="footer__social-link svelte-1ivs93t"
+                                    ><img src="/svg/brands/discord.svg" alt="Discord" height="24" width="24" />
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
