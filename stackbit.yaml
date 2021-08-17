@@ -702,5 +702,5 @@ models:
           - section
         label: Seo
       - name: include
-        type: string
+        type: html
     folder: docs
