@@ -3,13 +3,14 @@ sections:
     - about
     - articles
     - audio
-    - community    
+    - community
     - content
     - docs
     - faq
     - interact
-    - links
+    - medium
     - quick-reference
     - react
     - tools
-
+    - python
+    - docs

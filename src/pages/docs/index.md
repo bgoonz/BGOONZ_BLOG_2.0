@@ -36,9 +36,9 @@ excerpt: docs quick reference
 <br>
 
 <br>
-
+       \<div id="search" />
 <br>
-
+               \<div id="search" className="inner"></div>
 <br>
 <h1>  Docs</h1>
 <br>
