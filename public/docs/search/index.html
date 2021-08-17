@@ -1914,6 +1914,19 @@
         <link as="script" rel="preload" href="/component---src-templates-docs-js-bf431cbe6f6b991ffc34.js" />
         <link as="fetch" rel="preload" href="/page-data/docs/search/page-data.json" crossorigin="anonymous" />
         <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous" />
+            <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+            <script type="text/javascript">
+                algoliasearchNetlify({
+                    appId: 'O6OT9G9U8Z',
+                    apiKey: 'b0cb3d390176e1ff4bd1ecb12fc15730',
+                    siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
+                    branch: 'master',
+                    selector: 'div#search',
+                });
+            </script>
     </head>
     <body class="palette-navy">
         <noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript>
@@ -1933,7 +1946,7 @@
                                         <a href="/"><img src="/images/logo-circle.png" alt="webdevhub logo" /></a>
                                     </p>
                                 </div>
-                                <div id="search" class="inner"></div>
+                            
                                 <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
                                     <div class="site-nav-inside">
                                         <button id="menu-close" class="menu-toggle">
@@ -2344,12 +2357,12 @@
                                         <div class="post-content">
                                             <h2>Search:</h2>
                                             <hr />
+                                         
                                             <h1>Actual Docs:</h1>
                                             <br /><br /><br /><br />
                                             <h1>Docs</h1>
                                             <br />
-                                            <div id="search"></div>
-                                            <div id="search"></div>
+                                
                                         </div>
                                     </div>
                                 </article>
