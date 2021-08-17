@@ -132,10 +132,7 @@ sections:
     image_alt: listen to my playlist
     image_position: left
     content: >
-      <iframe class="block-content" width="100%    
-      src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
-      width="100%" height="380" frameBorder="0" allowtransparency="true"
-      allow="encrypted-media"></iframe>
+     <div id="search" class="inner"></div>
     actions: []
     type: section_content
     title: Spotify
