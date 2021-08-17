@@ -1,7 +1,15 @@
 ---
 title: The npx Node.js Package Runner
-description: 'npx is a very cool way to run Node.js code, and provides many useful features'
+sections: []
+seo:
+    title: ''
+    description: npx is a very cool way to run Node.js code, and provides many useful features
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
 ---
+# NPX:
 
 `npx` is a very powerful command that's been available in **npm** starting version 5.2, released in July 2017.
 
@@ -30,7 +38,7 @@ A typical demonstration of using `npx` is through the `cowsay` command. `cowsay`
 
 `cowsay "Hello"` will print
 
-```console
+```
  _______
 < Hello >
  -------
