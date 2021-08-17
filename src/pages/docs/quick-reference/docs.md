@@ -1,14 +1,26 @@
 ---
-subtitle: Here are some of my github repositories to pay around with!
+title: Installation
+weight: 1
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
-template: page
-title: Useful Repos
-image: images/perpetual-comet.jpeg
+    title: Installation
+    description: This is the installation page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Installation
+          keyName: property
+        - name: 'og:description'
+          value: This is the installation page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Installation
+        - name: 'twitter:description'
+          value: This is the installation page
+template: docs
 ---
 
 # My Top Repos / Websites:
