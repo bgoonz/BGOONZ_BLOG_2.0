@@ -3,7 +3,7 @@ title: Audio
 weight: 0
 excerpt: lorem-ipsum
 seo:
-    title: ''
+    title: 'Automatic Triggered Guitar Effects'
     description: 'Dynamic Time Warping Triggered Guitar Effects Project'
     robots: []
     extra: []
