@@ -1,5 +1,5 @@
 const siteMetadata = require('./site-metadata.json');
-require('dotenv').config();
+
 module.exports = {
     pathPrefix: '/',
     siteMetadata: siteMetadata,
@@ -7,8 +7,6 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-source-data`,
         `gatsby-transformer-remark`,
-        `gatsby-plugin-styled-components`,
-        `gatsby-plugin-algolia`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -25,13 +23,6 @@ module.exports = {
             options: {}
         },
         {
-            resolve: `gatsby-plugin-algolia`,
-            options: {
-                appId: process.env.GATSBY_ALGOLIA_APP_ID,
-                apiKey: process.env.ALGOLIA_ADMIN_KEY,
-                queries: require('./src/utils/algolia-queries')
-            },
-
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {
                 sourceUrlPath: `fields.url`,
