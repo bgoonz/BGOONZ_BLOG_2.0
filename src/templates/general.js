@@ -3,7 +3,8 @@ import _ from 'lodash';
 import { graphql } from 'gatsby';
 
 import components, { Layout } from '../components/index';
-
+import { Layout } from '../components/index';
+import { toStyleObj, withPrefix, getPages, Link } from '../utils';
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
