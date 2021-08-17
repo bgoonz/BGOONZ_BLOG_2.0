@@ -46,8 +46,8 @@ sections:
                 https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             image: images/smiling-maple.png
           - content: >
-                This section exists for me to day dream ideas for the future... and
-                maybe... just maybe, hold myself accountable to them.
+                <div id="search"></div>
+                <div id="search" />
             actions:
                 - label: Learn More
                   url: /docs/tools
