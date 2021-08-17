@@ -14,6 +14,10 @@ sections:
         new_window: true
         no_follow: false
         type: action
+  - title: Quick Links
+    section_id: navigate from the home page
+    col_number: three
+    type: section_docs
   - section_id: features-two-col
     type: section_grid
     title: Resume & Portfolio
@@ -250,10 +254,6 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: Quick Links
-    section_id: navigate from the home page
-    col_number: three
-    type: section_docs
   - title: Contact
     section_id: lorem-ipsum
     actions:
