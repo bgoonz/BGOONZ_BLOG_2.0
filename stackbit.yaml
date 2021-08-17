@@ -665,3 +665,6 @@ models:
     label: general
     layout: general
     description: general purpose
+    fields:
+      - name: ''
+        type: string
