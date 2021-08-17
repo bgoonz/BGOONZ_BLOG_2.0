@@ -660,7 +660,7 @@ models:
             - type: boolean
               name: relativeUrl
               label: Relative Url
-  general:
+  General:
     type: page
     label: general
     layout: general
