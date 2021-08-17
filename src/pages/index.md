@@ -123,38 +123,6 @@ sections:
         image: images/curious-mustard.png
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
-  - section_id: Web Audio DAW
-    image_alt: medium
-    image_position: left
-    actions:
-      - label: Go To Web Audio Daw
-        url: 'https://mihirbegmusiclab.netlify.app/'
-        style: primary
-        icon_class: dev
-        new_window: true
-        no_follow: false
-        type: action
-    type: section_content
-    image: images/goals.jpg
-    title: Web Audio DAW
-  - title: Music
-    section_id: guitar
-    image_alt: bryan-guner
-    image_position: left
-    content: >-
-      <iframe class="block-content" width="100%
-      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
-      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions:
-      - label: Youtube
-        url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
-        style: link
-        icon_class: youtube
-        new_window: true
-        no_follow: false
-        type: action
-    type: section_content
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
@@ -199,6 +167,38 @@ sections:
         type: grid_item
         image: images/jamstack.png
     type: section_grid
+  - section_id: Web Audio DAW
+    image_alt: medium
+    image_position: left
+    actions:
+      - label: Go To Web Audio Daw
+        url: 'https://mihirbegmusiclab.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+    image: images/goals.jpg
+    title: Web Audio DAW
+  - title: Music
+    section_id: guitar
+    image_alt: bryan-guner
+    image_position: left
+    content: >-
+      <iframe class="block-content" width="100%
+      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
+      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions:
+      - label: Youtube
+        url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
+        style: link
+        icon_class: youtube
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
   - title: Code Playground(s)
     section_id: code-playground
     image_alt: lorem-ipsum
