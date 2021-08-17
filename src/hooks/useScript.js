@@ -1,29 +1,15 @@
-import { useEffect } from 'react';
-
-const useScript = (url) => {
-    useEffect(() => {
-        const script = document.createElement('script');
-
-        script.src = url;
-        script.async = true;
-
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, [url]);
+import {
+  useEffect
+} from 'react';
+const importScript = resourceUrl => {
+  useEffect( () => {
+    const script = document.createElement( 'script' );
+    script.src = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js";
+    script.async = true;
+    document.body.appendChild( script );
+    return () => {
+      document.body.removeChild( script );
+    }
+  }, [ resourceUrl ] );
 };
-
-export default useScript;
-
-/*
-import useScript from 'hooks/useScript';
-
-const ShareButtons = props => {
-  useScript('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946');
-
-
-}
-
-*/
+export default importScript;
