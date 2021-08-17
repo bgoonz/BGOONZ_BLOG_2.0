@@ -170,7 +170,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "depreciated-portfolio",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
