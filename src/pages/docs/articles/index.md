@@ -1,5 +1,5 @@
 ---
-title: Article Docs
+title: Articles
 weight: 0
 excerpt: resources
 seo:
