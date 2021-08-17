@@ -1,7 +1,7 @@
 ---
-title: Python & Data Structures
+title: Python General Notes
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Python General Notes & Resources
 seo:
     title: ''
     description: ''

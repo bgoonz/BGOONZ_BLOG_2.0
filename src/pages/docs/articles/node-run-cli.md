@@ -11,9 +11,13 @@ seo:
 template: docs
 ---
 
-## Lorem ipsum
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+The usual way to run a Node.js program is to run the `node` globally available command (once you install Node.js) and pass the name of the file you want to execute.
 
--   Lorem ipsum
--   dolor sit amet
+If your main Node.js application file is `app.js`, you can call it by typing:
+
+```bash
+node app.js
+```
+
+While running the command, make sure you are in the same directory which contains the `app.js` file.
