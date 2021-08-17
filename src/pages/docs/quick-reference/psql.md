@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Postgresql Cheat Sheet
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Postgresql Cheat Sheet
 seo:
   title: ''
   description: ''
