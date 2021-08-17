@@ -6,7 +6,10 @@ excerpt: >-
   application, or to other applications as well
 seo:
   title: ''
-  description: ''
+  description: |-
+    When you want to import something you use
+
+    const library = require('./library');
   robots: []
   extra: []
   type: stackbit_page_meta
