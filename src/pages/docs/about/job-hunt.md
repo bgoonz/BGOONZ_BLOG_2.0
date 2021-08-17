@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: module
 subtitle: lorem-ipsum
 seo:
   title: ''
