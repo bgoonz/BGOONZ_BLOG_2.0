@@ -184,6 +184,8 @@ models:
           - section_content
           - footer
           - section_grid
+          - section_hero
+          - action
         label: Seo
   advanced:
     type: page
