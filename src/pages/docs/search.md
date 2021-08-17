@@ -16,3 +16,4 @@ template: docs
 
 <div id="search"></div>
 
+        <div id="search" />
