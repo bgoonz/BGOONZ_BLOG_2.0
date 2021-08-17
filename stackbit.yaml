@@ -181,6 +181,9 @@ models:
           - action_menu
           - section
           - header
+          - section_content
+          - footer
+          - section_grid
         label: Seo
   advanced:
     type: page
