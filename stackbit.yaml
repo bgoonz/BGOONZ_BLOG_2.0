@@ -175,6 +175,7 @@ models:
         name: seo
         models:
           - section_content
+          - section_docs
         label: Seo
   advanced:
     type: page
