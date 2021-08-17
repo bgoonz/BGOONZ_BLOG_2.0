@@ -694,5 +694,7 @@ models:
           - section_docs
           - grid_item
           - section_cta
+          - section_grid
+          - section_hero
         label: Seo
     folder: docs
