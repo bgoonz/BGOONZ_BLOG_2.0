@@ -11,213 +11,211 @@ seo:
 template: docs
 ---
 
-
-
 ### A list of all of my articles to link to future posts
 
 [**Scope, Closures & Context In JavaScript**\
-*"JavaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your contact with...*bryanguner.medium.com](https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104 "https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104")[](https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104)
+*"JavaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your contact with...*bryanguner.medium.com](https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104 'https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104')[](https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104)
 
 [**Fundamental Javascript Concepts You Should Understand**\
-*Plain Old JS Object Lesson Concepts*bryanguner.medium.com](https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827 "https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827")[](https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827)
+*Plain Old JS Object Lesson Concepts*bryanguner.medium.com](https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827 'https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827')[](https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827)
 
 [**Mutability And Reference VS Privative Types in JavaScript**\
-*Mutability && Primitive && Reference Examples*bryanguner.medium.com](https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0 "https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0")[](https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0)
+*Mutability && Primitive && Reference Examples*bryanguner.medium.com](https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0 'https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0')[](https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0)
 
 [**Array Callback Methods Implemented With For Loops**\
-*How to implement array callback methods in JavaScript*javascript.plainenglish.io](https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777 "https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777")[](https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777)
+*How to implement array callback methods in JavaScript*javascript.plainenglish.io](https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777 'https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777')[](https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777)
 
 [**JavaScript in Plain English**\
-*New JavaScript and Web Development articles every day.*javascript.plainenglish.io](https://javascript.plainenglish.io/ "https://javascript.plainenglish.io")[](https://javascript.plainenglish.io/)
+*New JavaScript and Web Development articles every day.*javascript.plainenglish.io](https://javascript.plainenglish.io/ 'https://javascript.plainenglish.io')[](https://javascript.plainenglish.io/)
 
 [**Beginner's Guide To React Part 2**\
-*As I learn to build web applications in React I will blog about it in this series in an attempt to capture the...*bryanguner.medium.com](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186 "https://bryanguner.medium.com/introductory-react-part-2-cda01615a186")[](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186)
+*As I learn to build web applications in React I will blog about it in this series in an attempt to capture the...*bryanguner.medium.com](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186')[](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186)
 
 [**A Very Quick Guide To Calculating Big O Computational Complexity**\
-*Big O: big picture, broad strokes, not details*bryanguner.medium.com](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3 "https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3")[](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3)
+*Big O: big picture, broad strokes, not details*bryanguner.medium.com](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3 'https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3')[](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3)
 
 [**Introduction to React for Complete Beginners**\
-*All of the code examples below will be included a second time at the bottom of this article as an embedded gist.*javascript.plainenglish.io](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad "https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad")[](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad)
+*All of the code examples below will be included a second time at the bottom of this article as an embedded gist.*javascript.plainenglish.io](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad 'https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad')[](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad)
 
 [**Scheduling: setTimeout and setInterval**\
-*We may decide to execute a function not right now, but at a later time. That's called "scheduling a call".*javascript.plainenglish.io](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7 "https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7")[](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7)
+*We may decide to execute a function not right now, but at a later time. That's called "scheduling a call".*javascript.plainenglish.io](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7 'https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7')[](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7)
 
 [**LocalStorage VS SessionStorage**\
-*Web storage objects localStorage and sessionStorage allow to save key/value pairs in the browser.*bryanguner.medium.com](https://bryanguner.medium.com/css-animations-d196a20099a5 "https://bryanguner.medium.com/css-animations-d196a20099a5")[](https://bryanguner.medium.com/css-animations-d196a20099a5)
+*Web storage objects localStorage and sessionStorage allow to save key/value pairs in the browser.*bryanguner.medium.com](https://bryanguner.medium.com/css-animations-d196a20099a5 'https://bryanguner.medium.com/css-animations-d196a20099a5')[](https://bryanguner.medium.com/css-animations-d196a20099a5)
 
 [**These Are The Bash Shell Commands That Stand Between Me And Insanity.**\
-*I will not profess to be a bash shell wizard... but I have managed to scour some pretty helpful little scripts from Stack...*bryanguner.medium.com](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b "https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b")[](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b)
+*I will not profess to be a bash shell wizard... but I have managed to scour some pretty helpful little scripts from Stack...*bryanguner.medium.com](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b 'https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b')[](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b)
 
 [**How To Implement Native(ES6) Data Structures Using Arrays & Objects**\
-*Smart data structures and dumb code works better than the other way around -"Eric S. Raymond"*bryanguner.medium.com](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07 "https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07")[](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07)
+*Smart data structures and dumb code works better than the other way around -"Eric S. Raymond"*bryanguner.medium.com](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07 'https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07')[](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07)
 
 [**Objects in Javascript**\
-*Codepen with examples for you to practice with below!*medium.com](https://medium.com/codex/objects-in-javascript-cc578a781e1d "https://medium.com/codex/objects-in-javascript-cc578a781e1d")[](https://medium.com/codex/objects-in-javascript-cc578a781e1d)
+*Codepen with examples for you to practice with below!*medium.com](https://medium.com/codex/objects-in-javascript-cc578a781e1d 'https://medium.com/codex/objects-in-javascript-cc578a781e1d')[](https://medium.com/codex/objects-in-javascript-cc578a781e1d)
 
 [**The Beginner's Guide To JavaScript**\
-*Part 1*javascript.plainenglish.io](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1 "https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1")[](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1)
+*Part 1*javascript.plainenglish.io](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1 'https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1')[](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1)
 
 [**Web Developer Resource List Part 4**\
-*A all encompassing list of tools and resources for web developers*medium.com](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb "https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb")[](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb)
+*A all encompassing list of tools and resources for web developers*medium.com](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb 'https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb')[](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb)
 
 [**Star Gazers**\
-*The place that enthusiastic and stargazer to everything.*medium.com](https://medium.com/star-gazers "https://medium.com/star-gazers")[](https://medium.com/star-gazers)
+*The place that enthusiastic and stargazer to everything.*medium.com](https://medium.com/star-gazers 'https://medium.com/star-gazers')[](https://medium.com/star-gazers)
 
 [**VSCode Extensions Specifically for JavaScript Development**\
-*VSCode Extensions that are indispensable in JavaScript development*medium.com](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a "https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a")[](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a)
+*VSCode Extensions that are indispensable in JavaScript development*medium.com](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a 'https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a')[](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a)
 
 [**Fundamental Data Structures in JavaScript**\
-*A simple to follow guide to Lists Stacks and Queues, with animated gifs, diagrams, and code examples!*javascript.plainenglish.io](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb "https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb")[](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb)
+*A simple to follow guide to Lists Stacks and Queues, with animated gifs, diagrams, and code examples!*javascript.plainenglish.io](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb 'https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb')[](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb)
 
 [**Web Development Resources Part 3**\
-*I'm the psychological equivalent of a physical hoarder only instead of empty soda cans and dead racoons it's lists of...*bryanguner.medium.com](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a "https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a")[](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a)
+*I'm the psychological equivalent of a physical hoarder only instead of empty soda cans and dead racoons it's lists of...*bryanguner.medium.com](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a 'https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a')[](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a)
 
 [**Web Development Interview Part 3💻**\
-*This installment is going to be the least technically demanding thus far however these questions are a more realistic...*medium.com](https://medium.com/codex/web-development-interview-part-3-826ae81a9107 "https://medium.com/codex/web-development-interview-part-3-826ae81a9107")[](https://medium.com/codex/web-development-interview-part-3-826ae81a9107)
+*This installment is going to be the least technically demanding thus far however these questions are a more realistic...*medium.com](https://medium.com/codex/web-development-interview-part-3-826ae81a9107 'https://medium.com/codex/web-development-interview-part-3-826ae81a9107')[](https://medium.com/codex/web-development-interview-part-3-826ae81a9107)
 
 [**The Best Cloud-Based Code Playgrounds of 2021 (Part 1)**\
-*A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with...*bryanguner.medium.com](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24 "https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24")[](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24)
+*A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with...*bryanguner.medium.com](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24 'https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24')[](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24)
 
 [**Front End Interview Questions Part 2**\
-*These will focus more on vocabulary and concepts than the application driven approach in my last post!*medium.com](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443 "https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443")[](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443)
+*These will focus more on vocabulary and concepts than the application driven approach in my last post!*medium.com](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443 'https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443')[](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443)
 
 [**Web Developer Resource List Part 2**\
-*Because I compile these things compulsively anyway...*medium.com](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263 "https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263")[](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263)
+*Because I compile these things compulsively anyway...*medium.com](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263 'https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263')[](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263)
 
 [**HTTP Basics**\
-*"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders...*levelup.gitconnected.com](https://levelup.gitconnected.com/http-basics-8f02a96a834a "https://levelup.gitconnected.com/http-basics-8f02a96a834a")[](https://levelup.gitconnected.com/http-basics-8f02a96a834a)
+*"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders...*levelup.gitconnected.com](https://levelup.gitconnected.com/http-basics-8f02a96a834a 'https://levelup.gitconnected.com/http-basics-8f02a96a834a')[](https://levelup.gitconnected.com/http-basics-8f02a96a834a)
 
 [**JavaScript Frameworks & Libraries**\
-*My Awesome JavaScript List Part 2*javascript.plainenglish.io](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35 "https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35")[](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35)
+*My Awesome JavaScript List Part 2*javascript.plainenglish.io](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35 'https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35')[](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35)
 
 [**My 'awesome' list of JavaScript resources**\
-*Everyone's seen the 'Awesome' lists on GitHub... and they are indeed awesome... so today I am going to attempt to curate my...*javascript.plainenglish.io](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74 "https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74")[](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74)
+*Everyone's seen the 'Awesome' lists on GitHub... and they are indeed awesome... so today I am going to attempt to curate my...*javascript.plainenglish.io](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74 'https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74')[](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74)
 
 [**Everything You Need to Get Started With VSCode + Extensions & Resources**\
-*Commands:*levelup.gitconnected.com](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931 "https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931")[](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931)
+*Commands:*levelup.gitconnected.com](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931 'https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931')[](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931)
 
 [**My Favorite VSCode *Themes***\
-Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f "https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f")[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
+Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f 'https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f')[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
 
 [**Object Oriented Programming in JavaScript**\
-*Object-Oriented Programming*levelup.gitconnected.com](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333 "https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333")[](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333)
+*Object-Oriented Programming*levelup.gitconnected.com](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333 'https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333')[](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333)
 
 [**JavaScript Rotate (Array) ProblemWalkthrough**\
-*Explanation for Rotate Right*medium.com](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1 "https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1")[](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1)
+*Explanation for Rotate Right*medium.com](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1 'https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1')[](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1)
 
 [**Bryan Guner - Medium**\
-*A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with...*bryanguner.medium.com](https://bryanguner.medium.com/ "https://bryanguner.medium.com/")[](https://bryanguner.medium.com/)
+*A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with...*bryanguner.medium.com](https://bryanguner.medium.com/ 'https://bryanguner.medium.com/')[](https://bryanguner.medium.com/)
 
 [**Postgresql Cheat Sheet**\
-*PostgreSQL commands*medium.com](https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31 "https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31")[](https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31)
+*PostgreSQL commands*medium.com](https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31 'https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31')[](https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31)
 
 [**Everything You Need to Get Started With VSCode + Extensions & Resources**\
-*Commands:*levelup.gitconnected.com](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931 "https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931")[](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931)
+*Commands:*levelup.gitconnected.com](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931 'https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931')[](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931)
 
 [**Super Simple Intro To HTML**\
-*What is HTML, CSS & JS and why do we need all three?*levelup.gitconnected.com](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc "https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc")[](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc)
+*What is HTML, CSS & JS and why do we need all three?*levelup.gitconnected.com](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc 'https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc')[](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc)
 
 [**Understanding Git (A Beginners Guide Containing Cheat Sheets & Resources)**\
-*Basic Git Work Flow.*levelup.gitconnected.com](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107 "https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107")[](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107)
+*Basic Git Work Flow.*levelup.gitconnected.com](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107 'https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107')[](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107)
 
 [**Git-Tricks**\
-*Refs*bryanguner.medium.com](https://bryanguner.medium.com/git-tricks-57e8d0292285 "https://bryanguner.medium.com/git-tricks-57e8d0292285")[](https://bryanguner.medium.com/git-tricks-57e8d0292285)
+*Refs*bryanguner.medium.com](https://bryanguner.medium.com/git-tricks-57e8d0292285 'https://bryanguner.medium.com/git-tricks-57e8d0292285')[](https://bryanguner.medium.com/git-tricks-57e8d0292285)
 
 [**A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example**\
-*Curating Complexity: A Guide to Big-O Notation*medium.com](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522 "https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522")[](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
+*Curating Complexity: A Guide to Big-O Notation*medium.com](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522 'https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522')[](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
 
 [**Python Study Guide for a JavaScript Programmer**\
-*A guide to commands in Python from what you know in JavaScript*levelup.gitconnected.com](https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb "https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb")[](https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb)
+*A guide to commands in Python from what you know in JavaScript*levelup.gitconnected.com](https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb 'https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb')[](https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb)
 
 [**Lists Stacks and Queue's In JavaScript**\
-*A simple to follow guide to these fundamental data structures with animated gifs, diagrams, and code examples!*bryanguner.medium.com](https://bryanguner.medium.com/lists-stacks-and-queues-in-javascript-88466fae0fbb "https://bryanguner.medium.com/lists-stacks-and-queues-in-javascript-88466fae0fbb")[](https://bryanguner.medium.com/lists-stacks-and-queues-in-javascript-88466fae0fbb)
+*A simple to follow guide to these fundamental data structures with animated gifs, diagrams, and code examples!*bryanguner.medium.com](https://bryanguner.medium.com/lists-stacks-and-queues-in-javascript-88466fae0fbb 'https://bryanguner.medium.com/lists-stacks-and-queues-in-javascript-88466fae0fbb')[](https://bryanguner.medium.com/lists-stacks-and-queues-in-javascript-88466fae0fbb)
 
 [**Web Development Resources Part 3**\
-*I'm the psychological equivalent of a physical hoarder only instead of empty soda cans and dead racoons it's lists of...*bryanguner.medium.com](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a "https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a")[](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a)
+*I'm the psychological equivalent of a physical hoarder only instead of empty soda cans and dead racoons it's lists of...*bryanguner.medium.com](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a 'https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a')[](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a)
 
 [**My 'awesome' list of JavaScript resources**\
-*Everyone's seen the 'Awesome' lists on GitHub... and they are indeed awesome... so today I am going to attempt to curate my...*javascript.plainenglish.io](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74 "https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74")[](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74)
+*Everyone's seen the 'Awesome' lists on GitHub... and they are indeed awesome... so today I am going to attempt to curate my...*javascript.plainenglish.io](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74 'https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74')[](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74)
 
 [**Web Developer Resource List Part 2**\
-*Because I compile these things compulsively anyway...*medium.com](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263 "https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263")[](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263)
+*Because I compile these things compulsively anyway...*medium.com](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263 'https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263')[](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263)
 
 [**Web Development Interview Part 3💻**\
-*This installment is going to be the least technically demanding thus far however these questions are a more realistic...*bryanguner.medium.com](https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107 "https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107")[](https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107)
+*This installment is going to be the least technically demanding thus far however these questions are a more realistic...*bryanguner.medium.com](https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107 'https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107')[](https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107)
 
 [**The Web Developer's Technical Interview**\
-*Questions....Answers... and links to the missing pieces.*medium.com](https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822 "https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822")[](https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822)
+*Questions....Answers... and links to the missing pieces.*medium.com](https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822 'https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822')[](https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822)
 
 [**Front End Interview Questions Part 2**\
-*These will focus more on vocabulary and concepts than the application driven approach in my last post!*medium.com](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443 "https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443")[](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443)
+*These will focus more on vocabulary and concepts than the application driven approach in my last post!*medium.com](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443 'https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443')[](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443)
 
 [**Running List Of Interesting Articles, Tools and Ideas... as I Explore Them**\
-*Translation if you read this today (3/21/2021) it will be exceedingly short... because it's just gonna accumulate entries...*bryanguner.medium.com](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6 "https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6")[](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6)
+*Translation if you read this today (3/21/2021) it will be exceedingly short... because it's just gonna accumulate entries...*bryanguner.medium.com](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6 'https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6')[](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6)
 
 [**The Best Cloud-Based Code Playgrounds of 2021 (Part 1)**\
-*A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with...*bryanguner.medium.com](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24 "https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24")[](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24)
+*A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with...*bryanguner.medium.com](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24 'https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24')[](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24)
 
 [**Fundamental Data Structures In JavaScript**\
-*Data structures in JavaScript*medium.com](https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 "https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4")[](https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4)
+*Data structures in JavaScript*medium.com](https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 'https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4')[](https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4)
 
 [**HTTP Basics**\
-*"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders...*levelup.gitconnected.com](https://levelup.gitconnected.com/http-basics-8f02a96a834a "https://levelup.gitconnected.com/http-basics-8f02a96a834a")[](https://levelup.gitconnected.com/http-basics-8f02a96a834a)
+*"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders...*levelup.gitconnected.com](https://levelup.gitconnected.com/http-basics-8f02a96a834a 'https://levelup.gitconnected.com/http-basics-8f02a96a834a')[](https://levelup.gitconnected.com/http-basics-8f02a96a834a)
 
 [**JavaScript Frameworks & Libraries**\
-*My Awesome JavaScript List Part 2*javascript.plainenglish.io](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35 "https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35")[](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35)
+*My Awesome JavaScript List Part 2*javascript.plainenglish.io](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35 'https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35')[](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35)
 
 [**bgoonz/Cumulative-Resource-List**\
-*List of useful cheatsheets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a...*github.com](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s "https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s")[](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
+*List of useful cheatsheets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a...*github.com](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s 'https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s')[](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
 
 [**My Favorite VSCode *Themes***\
-Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f "https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f")[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
+Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f 'https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f')[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
 
 [**JavaScript Rotate (Array) ProblemWalkthrough**\
-*Explanation for Rotate Right*medium.com](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1 "https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1")[](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1)
+*Explanation for Rotate Right*medium.com](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1 'https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1')[](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1)
 
 [**Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build...**\
-*For Front end developers who like myself struggle with making the jump to fullstack.*bryanguner.medium.com](https://bryanguner.medium.com/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98 "https://bryanguner.medium.com/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98")[](https://bryanguner.medium.com/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98)
+*For Front end developers who like myself struggle with making the jump to fullstack.*bryanguner.medium.com](https://bryanguner.medium.com/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98 'https://bryanguner.medium.com/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98')[](https://bryanguner.medium.com/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98)
 
 [**The Complete JavaScript Reference Guide**\
-*You will want to bookmark this*javascript.plainenglish.io](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db "https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db")[](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db)
+*You will want to bookmark this*javascript.plainenglish.io](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db 'https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db')[](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db)
 
 [**Modules in Javascript**\
-*Differences between Node.js and browsers*medium.com](https://medium.com/geekculture/modules-in-javascript-a55333e35978 "https://medium.com/geekculture/modules-in-javascript-a55333e35978")[](https://medium.com/geekculture/modules-in-javascript-a55333e35978)
+*Differences between Node.js and browsers*medium.com](https://medium.com/geekculture/modules-in-javascript-a55333e35978 'https://medium.com/geekculture/modules-in-javascript-a55333e35978')[](https://medium.com/geekculture/modules-in-javascript-a55333e35978)
 
 [**An Introduction to Markdown (Bonus Markdown Templates Included)**\
-*Basic Syntax Guide*levelup.gitconnected.com](https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3 "https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3")[](https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3)
+*Basic Syntax Guide*levelup.gitconnected.com](https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3 'https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3')[](https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3)
 
 [**Web Dev Resources**\
-*Web Development*levelup.gitconnected.com](https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d "https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d")[](https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d)
+*Web Development*levelup.gitconnected.com](https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d 'https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d')[](https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d)
 
 [**Regular Expressions**\
-*description:*medium.com](https://medium.com/codex/regular-expressions-4d8fb3eb146b "https://medium.com/codex/regular-expressions-4d8fb3eb146b")[](https://medium.com/codex/regular-expressions-4d8fb3eb146b)
+*description:*medium.com](https://medium.com/codex/regular-expressions-4d8fb3eb146b 'https://medium.com/codex/regular-expressions-4d8fb3eb146b')[](https://medium.com/codex/regular-expressions-4d8fb3eb146b)
 
 [**A Collection of my most useful Gist Entries**\
-*This list is in no particular order!*bryanguner.medium.com](https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab "https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab")[](https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab)
+*This list is in no particular order!*bryanguner.medium.com](https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab 'https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab')[](https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab)
 
 [**VsCode Extension Readme Compilation**\
-*Markdown PDF*bryanguner.medium.com](https://bryanguner.medium.com/vscode-extension-readme-compilation-92c60342cc8a "https://bryanguner.medium.com/vscode-extension-readme-compilation-92c60342cc8a")[](https://bryanguner.medium.com/vscode-extension-readme-compilation-92c60342cc8a)
+*Markdown PDF*bryanguner.medium.com](https://bryanguner.medium.com/vscode-extension-readme-compilation-92c60342cc8a 'https://bryanguner.medium.com/vscode-extension-readme-compilation-92c60342cc8a')[](https://bryanguner.medium.com/vscode-extension-readme-compilation-92c60342cc8a)
 
 [**Learn CSS So That Your Site Doesn't Look Like Garbage**\
-*CSS Selectors*javascript.plainenglish.io](https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a "https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a")[](https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a)
+*CSS Selectors*javascript.plainenglish.io](https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a 'https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a')[](https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a)
 
 [**PostgreSQL Setup For Windows & WSL/Ubuntu**\
-*If you follow this guide to a tee... you will install PostgreSQL itself on your Windows installation. Then, you will...*bryanguner.medium.com](https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089 "https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089")[](https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089)
+*If you follow this guide to a tee... you will install PostgreSQL itself on your Windows installation. Then, you will...*bryanguner.medium.com](https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089 'https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089')[](https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089)
 
 [**Emmet Cheat Sheet**\
-*EMMET*bryanguner.medium.com](https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37 "https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37")[](https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37)
+*EMMET*bryanguner.medium.com](https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37 'https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37')[](https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37)
 
 [**Express Quick Sheet**\
-*Settings*bryanguner.medium.com](https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca "https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca")[](https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca)
+*Settings*bryanguner.medium.com](https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca 'https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca')[](https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca)
 
 [**Deploy React App To Heroku Using Postgres & Express**\
-*Heroku is an web application that makes deploying applications easy for a beginner.*bryanguner.medium.com](https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986 "https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986")[](https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986)
+*Heroku is an web application that makes deploying applications easy for a beginner.*bryanguner.medium.com](https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986 'https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986')[](https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986)
 
 [**Basic Web Development Environment Setup**\
-*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe "https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe")[](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)
+*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe 'https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe')[](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)
 
 [***Fetch* Quick Sheet**\
-Fetchbryanguner.medium.com](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4 "https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4")[](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4)
+Fetchbryanguner.medium.com](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4 'https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4')[](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [March 22, 2021](https://medium.com/p/1f6f88ebdf5b).
 
@@ -227,12 +225,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-list-of-my-articles.md)[A-list-of-my-articles.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-list-of-my-articles-md) hosted with ❤ by [GitHub](https://github.com/)
 
-A Very Quick Guide To Calculating Big O Computational Complexity
-================================================================
+# A Very Quick Guide To Calculating Big O Computational Complexity
 
 Big O: big picture, broad strokes, not details
 
-* * * * *
+---
 
 ### A Very Quick Guide To Calculating Big O Computational Complexity
 
@@ -241,7 +238,7 @@ Big O: big picture, broad strokes, not details
 For a more complete guide... checkout :
 
 [**A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example**\
-*Curating Complexity: A Guide to Big-O Notation*medium.com](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522 "https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522")[](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
+*Curating Complexity: A Guide to Big-O Notation*medium.com](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522 'https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522')[](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
 
 [![](https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67)](https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67)
 
@@ -313,7 +310,7 @@ no loops or exit & return = O(1)
 For similar content check out my GitHub:
 
 [**bgoonz - Overview**\
-*Web Developer, Electrical Engineer *](https://github.com/bgoonz "https://github.com/bgoonz")*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
+_Web Developer, Electrical Engineer _](https://github.com/bgoonz 'https://github.com/bgoonz')*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 19, 2021](https://medium.com/p/eb1557e85fa3).
 
@@ -323,12 +320,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-Very-Qui.md)[A-Very-Qui.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-very-qui-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Array Callback Methods Implemented With For Loops
-=================================================
+# Array Callback Methods Implemented With For Loops
 
 How to implement array callback methods in JavaScript
 
-* * * * *
+---
 
 ### Array Callback Methods Implemented With For Loops
 
@@ -535,15 +531,15 @@ function createSmoothie(ingredient) {
 References:
 
 [**App Academy Open**\
-*App Academy Open is the first free, online web development course that's meant to get you hired as a developer. Get...*open.appacademy.io](https://open.appacademy.io/learn "https://open.appacademy.io/learn")[](https://open.appacademy.io/learn)
+*App Academy Open is the first free, online web development course that's meant to get you hired as a developer. Get...*open.appacademy.io](https://open.appacademy.io/learn 'https://open.appacademy.io/learn')[](https://open.appacademy.io/learn)
 
 [**MDN Web Docs**\
-*Read more at hacks.mozilla.org Roughly a year ago at Mozilla we started an effort to improve Firefox stability on...*developer.mozilla.org](https://developer.mozilla.org/en-US/ "https://developer.mozilla.org/en-US/")[](https://developer.mozilla.org/en-US/)
+*Read more at hacks.mozilla.org Roughly a year ago at Mozilla we started an effort to improve Firefox stability on...*developer.mozilla.org](https://developer.mozilla.org/en-US/ 'https://developer.mozilla.org/en-US/')[](https://developer.mozilla.org/en-US/)
 
 [**Introduction: callbacks**\
-*To demonstrate the use of callbacks, promises and other abstract concepts, we'll be using some browser methods...*javascript.info](https://javascript.info/callbacks "https://javascript.info/callbacks")[](https://javascript.info/callbacks)
+*To demonstrate the use of callbacks, promises and other abstract concepts, we'll be using some browser methods...*javascript.info](https://javascript.info/callbacks 'https://javascript.info/callbacks')[](https://javascript.info/callbacks)
 
-*More content at* [***plainenglish.io***](http://plainenglish.io/)
+*More content at* [**_plainenglish.io_**](http://plainenglish.io/)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 27, 2021](https://medium.com/p/d08875df6777).
 
@@ -553,12 +549,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Array-Call.md)[Array-Call.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-array-call-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Bash Commands That Save Me Time and Frustration
-===============================================
+# Bash Commands That Save Me Time and Frustration
 
 Here's a list of bash commands that stand between me and insanity.
 
-* * * * *
+---
 
 ### Bash Commands That Save Me Time and Frustration
 
@@ -569,7 +564,7 @@ Here's a list of bash commands that stand between me and insanity.
 **This article will be accompanied by the following** [**github repository**](https://github.com/bgoonz/bash-commands-walkthrough) **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
 
 [**bgoonz/bash-commands-walkthrough**\
-*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough "https://github.com/bgoonz/bash-commands-walkthrough")[](https://github.com/bgoonz/bash-commands-walkthrough)
+*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough 'https://github.com/bgoonz/bash-commands-walkthrough')[](https://github.com/bgoonz/bash-commands-walkthrough)
 
 > The [readme](https://github.com/bgoonz/bash-commands-walkthrough#readme) for this git repo will provide a much more condensed list... whereas this article will break up the commands with explanations... images & links!
 
@@ -581,7 +576,7 @@ Here's a list of bash commands that stand between me and insanity.
 
 ### Getting Started (Advanced Users Skip Section):
 
-* * * * *
+---
 
 #### ✔ Check the Current Directory ➡ `pwd`:
 
@@ -718,7 +713,7 @@ Clear command is used to clear the terminal screen.
 
 The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
-* * * * *
+---
 
 ### MY COMMANDS:
 
@@ -733,7 +728,7 @@ find . -name "*.zip" -type f -print -delete
 
 ```
 
-* * * * *
+---
 
 ### 2.) Install node modules recursively:
 
@@ -744,7 +739,7 @@ npm-recursive-install
 
 ```
 
-* * * * *
+---
 
 ### 3.) Clean up unnecessary files/folders in git repo:
 
@@ -773,12 +768,12 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt
 The following output from my bash shell corresponds to the directory:
 
 [**bgoonz/bash-commands-walkthrough**\
-*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master "https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master")[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master)
+*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master 'https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master')[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master)
 
 #### which was created by running the aforementioned commands in in a perfect copy of this directory:
 
 [**bgoonz/DS-ALGO-OFFICIAL**\
-*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/DS-ALGO-OFFICIAL "https://github.com/bgoonz/DS-ALGO-OFFICIAL")[](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
+*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/DS-ALGO-OFFICIAL 'https://github.com/bgoonz/DS-ALGO-OFFICIAL')[](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
 
 > **.....below is the terminal output for the following commands:**
 
@@ -842,9 +837,9 @@ find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".g
 
 [![!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!](https://camo.githubusercontent.com/ea68eea425581d8683031170810ceb578f8bafb975c1d5323100965dd912a3fa/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72356447687462655a3456644f353455)](https://camo.githubusercontent.com/ea68eea425581d8683031170810ceb578f8bafb975c1d5323100965dd912a3fa/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72356447687462655a3456644f353455)
 
-!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "\*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
-* * * * *
+---
 
 ### 4.) Generate index.html file that links to all other files in working directory:
 
@@ -926,7 +921,7 @@ cmd $listing --sort=extension >>$html
 **I will use this copy of my Data Structures Practice Site to demonstrate the result:**
 
 [**side-projects-42/DS-Bash-Examples-Deploy**\
-*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/side-projects-42/DS-Bash-Examples-Deploy "https://github.com/side-projects-42/DS-Bash-Examples-Deploy")[](https://github.com/side-projects-42/DS-Bash-Examples-Deploy)
+*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/side-projects-42/DS-Bash-Examples-Deploy 'https://github.com/side-projects-42/DS-Bash-Examples-Deploy')[](https://github.com/side-projects-42/DS-Bash-Examples-Deploy)
 
 [![](https://camo.githubusercontent.com/0f97bdb9d1167b14f340044bcdca3eb0472acc4c80dcc9c1db4f13ad6900bf20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5075754454557669583547366d6a612d35654b5549772e706e67)](https://camo.githubusercontent.com/0f97bdb9d1167b14f340044bcdca3eb0472acc4c80dcc9c1db4f13ad6900bf20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5075754454557669583547366d6a612d35654b5549772e706e67)
 
@@ -935,11 +930,11 @@ cmd $listing --sort=extension >>$html
 > here is a link to and photo of the resulting html file:
 
 [**index.html**\
-*CONTENT/DS-n-Algos/*quirky-meninsky-4181b5.netlify.app](https://quirky-meninsky-4181b5.netlify.app/ "https://quirky-meninsky-4181b5.netlify.app/")[](https://quirky-meninsky-4181b5.netlify.app/)
+*CONTENT/DS-n-Algos/*quirky-meninsky-4181b5.netlify.app](https://quirky-meninsky-4181b5.netlify.app/ 'https://quirky-meninsky-4181b5.netlify.app/')[](https://quirky-meninsky-4181b5.netlify.app/)
 
 [![](https://camo.githubusercontent.com/ce04a06e4fc2c23c62fd6a9dbea96125b5920b8c53a1c62434325989768cd1a7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a414f5962577655474e39794a3463654e7a41474773772e706e67)](https://camo.githubusercontent.com/ce04a06e4fc2c23c62fd6a9dbea96125b5920b8c53a1c62434325989768cd1a7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a414f5962577655474e39794a3463654e7a41474773772e706e67)
 
-* * * * *
+---
 
 ### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
 
@@ -952,7 +947,7 @@ wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K
 
 [![](https://camo.githubusercontent.com/02861c1b49280db7ab6c017bc4dc93f0d22b7385e2b33e2154fc3e734b1da3c7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a38657656504f5f7a2d5f5441547a6b634454703135512e706e67)](https://camo.githubusercontent.com/02861c1b49280db7ab6c017bc4dc93f0d22b7385e2b33e2154fc3e734b1da3c7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a38657656504f5f7a2d5f5441547a6b634454703135512e706e67)
 
-* * * * *
+---
 
 ### 6.)Recursively remove lines of text containing the string badFolder from files in the working directory.
 
@@ -1010,7 +1005,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 ```
 
-***I modified the command slightly to apply only to files called 'result.md':***
+**_I modified the command slightly to apply only to files called 'result.md':_**
 
 > The result is :
 
@@ -1048,9 +1043,9 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 **the test.txt and result.md files can be found here:**
 
 [**bgoonz/bash-commands-walkthrough**\
-*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text "https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text")[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text)
+*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text 'https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text')[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text)
 
-* * * * *
+---
 
 ### 7.) Execute command recursively:
 
@@ -1076,7 +1071,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 [![](https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67)](https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67)
 
-*If you want to run any bash script recursively all you have to do is substitue out line #9 with the command you want to run once in every sub-folder.*
+_If you want to run any bash script recursively all you have to do is substitue out line #9 with the command you want to run once in every sub-folder._
 
 ```
 function RecurseDirs ()
@@ -1107,7 +1102,7 @@ RecurseDirs "./"
 
 ```
 
-* * * * *
+---
 
 ### TBC....
 
@@ -1120,7 +1115,7 @@ sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 
 ```
 
-* * * * *
+---
 
 ### 10\. Recursively Delete node_modules folders
 
@@ -1129,7 +1124,7 @@ find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
 
 ```
 
-* * * * *
+---
 
 ### 11\. Sanatize file and folder names to remove illegal characters and reserved words.
 
@@ -1159,7 +1154,7 @@ sanitize_dir '/path/to/somewhere'
 
 ```
 
-* * * * *
+---
 
 ### 12\. Start postgresql in terminal
 
@@ -1168,7 +1163,7 @@ sudo -u postgres psql
 
 ```
 
-* * * * *
+---
 
 ### 13\. Add closing body and script tags to each html file in working directory.
 
@@ -1182,7 +1177,7 @@ doneecho "<form>
 
 ```
 
-* * * * *
+---
 
 ### 14\. Batch Download Videos
 
@@ -1205,7 +1200,7 @@ done
 
 ```
 
-* * * * *
+---
 
 ### 15\. Change File Extension from '.txt' to .doc for all files in working directory.
 
@@ -1223,7 +1218,7 @@ find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 
 ```
 
-* * * * *
+---
 
 ### 17\. Copy folder structure including only files of a specific extension into an ouput Folder
 
@@ -1232,19 +1227,19 @@ find . -name '*.md' | cpio -pdm './../outputFolder'
 
 ```
 
-* * * * *
+---
 
 ### Discover More:
 
 [**Web-Dev-Hub**\
-*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ "https://bgoonz-blog.netlify.app/")[](https://bgoonz-blog.netlify.app/)
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ 'https://bgoonz-blog.netlify.app/')[](https://bgoonz-blog.netlify.app/)
 
 ### Part 2 of this series:
 
 [**Medium**\
-*Continued!!!medium.com*](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682 "https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682")[](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682)
+_Continued!!!medium.com_](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682 'https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682')[](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682)
 
-* * * * *
+---
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
 
@@ -1254,12 +1249,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Bash-Comma.md)[Bash-Comma.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-bash-comma-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Basic Web Development Environment Setup
-=======================================
+# Basic Web Development Environment Setup
 
 Windows Subsystem for Linux (WSL) and Ubuntu
 
-* * * * *
+---
 
 ### Basic Web Development Environment Setup
 
