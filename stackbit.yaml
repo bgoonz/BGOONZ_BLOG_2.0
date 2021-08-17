@@ -666,5 +666,5 @@ models:
     layout: general
     description: general purpose
     fields:
-      - name: ''
+      - name: title
         type: string
