@@ -38,6 +38,7 @@ export default class Header extends React.Component {
                             )}
                         </div>
                         <div id="search" className="inner"></div>
+                              <div id="search" />
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
