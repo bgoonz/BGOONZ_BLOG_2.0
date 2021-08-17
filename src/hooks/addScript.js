@@ -21,4 +21,4 @@ componentDidMount () {
 }
 
 
-export default importScript;
+export  importScript;
