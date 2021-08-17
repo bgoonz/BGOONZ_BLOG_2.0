@@ -20,5 +20,5 @@ template: general
 
 
 
-<div id="search" />
+| <div id="search" />
 
