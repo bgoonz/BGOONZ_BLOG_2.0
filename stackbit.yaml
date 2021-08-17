@@ -686,5 +686,6 @@ models:
           Short description of the documentation section. Displayed in
           documentation overview section.
       - name: seo
-        type: string
+        type: model
+        models: []
     folder: docs
