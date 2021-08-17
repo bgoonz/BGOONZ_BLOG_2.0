@@ -11,3 +11,11 @@ const importScript = (resourceUrl) => {
     }, [resourceUrl]);
 };
 export default importScript;
+componentDidMount () {
+    const script = document.createElement("script");
+
+    script.src = "https://use.typekit.net/foobar.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+}
