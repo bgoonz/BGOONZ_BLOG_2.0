@@ -174,7 +174,7 @@ models:
       - type: model
         name: seo
         models:
-          - section
+          - stackbit_page_meta
         label: Seo
   advanced:
     type: page
@@ -682,4 +682,27 @@ models:
       - name: excerpt
         type: string
         label: excerpt
+        description: >-
+          Short description of the documentation section. Displayed in
+          documentation overview section.
+      - name: seo
+        type: model
+        models:
+          - action
+          - section_content
+          - footer
+          - section_docs
+          - grid_item
+          - section_cta
+          - section_grid
+          - section_hero
+          - header
+          - stackbit_page_meta
+          - action_menu
+          - section
+        label: Seo
+      - name: html
+        type: html
+        label: html
+        description: include raw html
     folder: docs
