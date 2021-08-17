@@ -672,6 +672,7 @@ models:
         description: >-
           The title of the page, used both as a page title and as a navigation
           menu title
+        required: true
       - name: weight
         type: string
     folder: docs
