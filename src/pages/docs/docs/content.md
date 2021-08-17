@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Useful Snippets
 weight: 0
 excerpt: lorem-ipsum
 seo:
