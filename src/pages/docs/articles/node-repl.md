@@ -2,15 +2,15 @@
 title: The-package-lock.json-file
 weight: 1
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 excerpt: >-
-  The package-lock.json file is automatically generated when installing node
-  packages
+    The package-lock.json file is automatically generated when installing node
+    packages
 ---
 
 The `node` command is the one we use to run our Node.js scripts:

@@ -3,16 +3,15 @@ title: node-cli-args
 weight: 1
 excerpt: How to accept arguments in a Node.js program passed from the command line
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
+
 You can pass any number of arguments when invoking a Node.js application using
-
-
 
 Arguments can be standalone or have a key and a value.
 

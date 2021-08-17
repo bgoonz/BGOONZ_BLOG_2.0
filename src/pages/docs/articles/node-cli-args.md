@@ -3,20 +3,19 @@ title: where-is-npm-pack
 weight: 1
 excerpt: How to find out where npm installs the packages
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
+
 When you install a package using npm you can perform 2 types of installation:
 
+-   a local install
 
-
-*   a local install
-
-*   a global install
+-   a global install
 
 By default, when you type an npm install command, like:
 
