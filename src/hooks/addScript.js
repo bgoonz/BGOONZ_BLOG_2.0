@@ -20,5 +20,4 @@ const importScript = (resourceUrl) => {
 //     document.body.appendChild(script);
 // }
 
-
 export default importScript;

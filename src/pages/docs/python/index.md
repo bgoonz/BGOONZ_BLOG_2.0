@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 <br>
 <h1>  Python Resources</h1>
 <br>
@@ -21,10 +20,6 @@ template: docs
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
-
-
-
-
 
 ## Python For JS Developers:
 
