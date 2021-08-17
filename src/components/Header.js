@@ -4,17 +4,13 @@ import _ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
+
 export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-
-                <br />
+                
+                    <br />
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">
@@ -38,10 +34,6 @@ export default class Header extends React.Component {
                             )}
                         </div>
                         <div id="search" className="inner"></div>
-<<<<<<< HEAD
-=======
-                        <div id="search" />
->>>>>>> 4326e86818119be1225b2bf561a024d3f29bc423
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
@@ -92,7 +84,7 @@ export default class Header extends React.Component {
                         )}
                     </div>
                 </div>
-                <div id="search" />
+                <div id="search" className="inner"></div>
                 <div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
@@ -126,10 +118,6 @@ export default class Header extends React.Component {
                         </svg>
                     </a>
                 </div>
-<<<<<<< HEAD
-=======
-                <div id="search" />
->>>>>>> 4326e86818119be1225b2bf561a024d3f29bc423
             </header>
         );
     }

@@ -3,7 +3,7 @@ sections:
     - about
     - articles
     - audio
-    - community
+    - community    
     - content
     - docs
     - faq
@@ -12,5 +12,4 @@ sections:
     - quick-reference
     - react
     - tools
-    - python
-    - docs
+
