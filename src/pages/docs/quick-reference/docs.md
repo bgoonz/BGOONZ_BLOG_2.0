@@ -1,14 +1,26 @@
 ---
-subtitle: Here are some of my github repositories to pay around with!
+title: Top Repos
+weight: 1
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
-template: page
-title: Useful Repos
-image: images/perpetual-comet.jpeg
+    title: Top Repos
+    description: This is the Top Repos page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Top Repos
+          keyName: property
+        - name: 'og:description'
+          value: This is the Top Repos page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Top Repos
+        - name: 'twitter:description'
+          value: This is the Top Repos page
+template: docs
 ---
 
 # My Top Repos / Websites:
