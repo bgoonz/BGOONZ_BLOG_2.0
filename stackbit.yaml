@@ -676,4 +676,7 @@ models:
       - name: weight
         type: number
         label: Weight
+        description: >-
+          The navigation order of the documentation page. This value is ignored
+          for parent section pages.
     folder: docs
