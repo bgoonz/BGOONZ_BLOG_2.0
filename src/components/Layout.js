@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Helmet } from 'react-helmet';
 import _ from 'lodash';
-import algoliaApi from './../'
+import algoliaApi from './../../'
 import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
 import Header from './Header';
