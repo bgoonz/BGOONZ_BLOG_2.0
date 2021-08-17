@@ -5,7 +5,7 @@ excerpt: >-
   get connected.
 seo:
   title: Mediums
-  description: This is the community page
+  description: 'Medium '
   extra:
     - name: 'og:type'
       value: website
