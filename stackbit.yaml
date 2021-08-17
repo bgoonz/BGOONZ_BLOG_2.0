@@ -664,3 +664,4 @@ models:
     type: page
     label: general
     layout: general
+    description: general purpose
