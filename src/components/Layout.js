@@ -8,7 +8,7 @@ import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
 const Script = props => {
-  importScript("/path/to/resource.js");
+  importScript("./../hooks/addScript.js");
 }
 export default class Body extends React.Component {
     render() {
