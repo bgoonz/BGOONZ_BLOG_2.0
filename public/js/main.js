@@ -98,9 +98,7 @@ window.onGatsbyInitialClientRender = function () {
             const pageContent = document.querySelector('.type-docs .post-content');
 
             // Create in-page navigation
-            const headerLinks = getHeaderLinks({
-                root: pageContent
-            });
+            const headerLinks = getHeaderLinks({ root: pageContent });
             if (headerLinks.length > 0) {
                 pageToc.classList.add('has-links');
                 renderHeaderLinks(pageTocContainer, headerLinks);
@@ -261,8 +259,8 @@ window.onGatsbyInitialClientRender = function () {
     // Prism.highlightAll();
 };
 
-//-----------------------------------------------------------------------
-//-----------------------------------------------------------------------
-//--------------------------------New----------------------------------
-//-----------------------------------------------------------------------
-//-----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+// --------------------------------New----------------------------------
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
