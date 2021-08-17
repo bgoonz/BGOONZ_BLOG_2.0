@@ -175,6 +175,7 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+          - section_cta
         label: Seo
   advanced:
     type: page
