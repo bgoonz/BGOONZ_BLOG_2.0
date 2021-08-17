@@ -3,8 +3,8 @@ title: Sitemap
 weight: 0
 excerpt: Sitemap
 seo:
-  title: ''
-  description: ''
+  title: 'Sitemap'
+  description: 'Sitemap'
   robots: []
   extra: []
   type: stackbit_page_meta
