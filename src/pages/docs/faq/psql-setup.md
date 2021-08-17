@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: PostgreSQL Setup
 weight: 0
-excerpt: lorem-ipsum
+excerpt: PostgreSQL Setup
 seo:
   title: ''
   description: ''
