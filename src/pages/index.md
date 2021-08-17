@@ -115,18 +115,6 @@ sections:
             url: /showcase
             style: link
         image: images/My Post.png
-  - title: Musical Pursuits
-    section_id: Search
-    image_alt: site search
-    image_position: right
-    content: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
-      title="YouTube video player" frameborder="0" allow="accelerometer;
-      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-    actions: []
-    type: section_content
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
@@ -171,6 +159,18 @@ sections:
         type: grid_item
         image: images/jamstack.png
     type: section_grid
+  - title: Musical Pursuits
+    section_id: Search
+    image_alt: site search
+    image_position: right
+    content: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
+      title="YouTube video player" frameborder="0" allow="accelerometer;
+      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    actions: []
+    type: section_content
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
