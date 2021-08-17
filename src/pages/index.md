@@ -132,7 +132,10 @@ sections:
       image_alt: listen to my playlist
       image_position: left
       content: >
-          <div id="search" class="inner"></div>
+          <iframe class="block-content" width="100%   width="800" height="575"
+            src="./search.html" title="YouTube video
+            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       actions: []
       type: section_content
       title: Spotify

@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Search
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Search
 seo:
     label: lorem-ipsum
     url: '#'
