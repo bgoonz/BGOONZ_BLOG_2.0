@@ -4,7 +4,7 @@ excerpt: >-
   We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to
   get connected.
 seo:
-  title: Mediums
+  title: Medium
   description: |+
     introductory-react-part-2
     a-very-quick-guide-to-calculating-big-o-computational-complexity
