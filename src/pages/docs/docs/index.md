@@ -1,10 +1,10 @@
 ---
-title: Sitemap
+title: Documentation
 weight: 0
-excerpt: Sitemap
+excerpt: Documentation
 seo:
-  title: 'Sitemap'
-  description: 'Sitemap'
+  title: 'Documentation'
+  description: 'Documentation'
   robots: []
   extra: []
   type: stackbit_page_meta
