@@ -85,6 +85,7 @@ export default class Footer extends React.Component {
                         </table>
                     </center>
                 </div>
+                  <div id="search" />
                 <div className="inner">
                     <div className="site-footer-inside">
                         <p className="site-info">
