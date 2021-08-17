@@ -691,5 +691,8 @@ models:
           - action
           - section_content
           - footer
+          - section_docs
+          - grid_item
+          - section_cta
         label: Seo
     folder: docs
