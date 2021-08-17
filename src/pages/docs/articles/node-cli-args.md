@@ -1,5 +1,5 @@
 ---
-title: where-is-
+title: where-is-npm-pack
 weight: 1
 excerpt: How to find out where npm installs the packages
 seo:
