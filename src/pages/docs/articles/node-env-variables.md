@@ -11,7 +11,11 @@ seo:
 
     const library = require('./library');
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/cool-comet.png
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
