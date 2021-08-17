@@ -703,4 +703,5 @@ models:
         label: Seo
       - name: include
         type: html
+        label: html
     folder: docs
