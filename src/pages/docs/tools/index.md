@@ -17,7 +17,10 @@ seo:
       value: Tools
       keyName: property
     - name: 'og:description'
-      value: This is the tools page
+      value: >-
+        paste to markdown, excel table to markdown, excel to html, cloud
+        storage, text manipulation, ternary converter, github html preview, form
+        builder, border
       keyName: property
     - name: 'twitter:card'
       value: summary
