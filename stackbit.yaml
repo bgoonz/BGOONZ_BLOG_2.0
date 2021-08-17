@@ -671,4 +671,5 @@ models:
         label: Title
       - name: weight
         type: string
+        label: Weight
     folder: docs
