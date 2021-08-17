@@ -273,6 +273,11 @@ sections:
         no_follow: false
         type: action
     type: section_cta
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    subtitle: lorem-ipsum
+    col_number: three
+    type: section_docs
 seo:
   title: Web-Dev-Hub
   description: >-
