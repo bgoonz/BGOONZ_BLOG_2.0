@@ -1,5 +1,5 @@
 ---
-title: audio
+title: Audio
 weight: 0
 excerpt: lorem-ipsum
 seo:
