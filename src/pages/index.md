@@ -45,9 +45,8 @@ sections:
         title_url: >-
           https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
         image: images/smiling-maple.png
-      - content: >
-          This section exists for me to day dream ideas for the future... and
-          maybe... just maybe, hold myself accountable to them.
+      - content: |
+          <div id="search"></div> <div id="search" />
         actions:
           - label: Learn More
             url: /docs/tools
@@ -128,17 +127,6 @@ sections:
         no_follow: false
         type: action
     type: section_content
-  - section_id: Music
-    image_alt: listen to my playlist
-    image_position: left
-    content: >
-      <iframe class="block-content" width="100%    
-      src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
-      width="100%" height="380" frameBorder="0" allowtransparency="true"
-      allow="encrypted-media"></iframe>
-    actions: []
-    type: section_content
-    title: Spotify
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
@@ -262,6 +250,13 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
+  - title: Quick Links
+    section_id: navigate from the home page
+    col_number: three
+    type: section_docs
+  - title: ________________________
+    col_number: three
+    type: section_docs
   - title: Contact
     section_id: lorem-ipsum
     actions:
@@ -273,11 +268,6 @@ sections:
         no_follow: false
         type: action
     type: section_cta
-  - title: Quick Links
-    section_id: navigate from the home page
-    subtitle: lorem-ipsum
-    col_number: three
-    type: section_docs
 seo:
   title: Web-Dev-Hub
   description: >-

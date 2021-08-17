@@ -2,27 +2,26 @@
 title: Other Websites
 weight: 1
 seo:
-  title: Typography
-  description: This is the typography page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Typography
-      keyName: property
-    - name: 'og:description'
-      value: This is the typography page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Typography
-    - name: 'twitter:description'
-      value: This is the typography page
+    title: Typography
+    description: This is the typography page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Typography
+          keyName: property
+        - name: 'og:description'
+          value: This is the typography page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Typography
+        - name: 'twitter:description'
+          value: This is the typography page
 template: docs
 ---
-
 
 <h1> Here are some other websites I have worked on since endeavoring to learn web development! </h1>
 
@@ -100,10 +99,15 @@ template: docs
 
 <h1>  The Algos Bgoonz Branch </h1>
 <br>
-<iframe  class="block-content" src="   " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <br>
 <br>
+<br>
+
+<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
