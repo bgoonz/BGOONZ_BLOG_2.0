@@ -481,7 +481,7 @@
                 "type": "action"
             }
         ],
-        "content": "<div id=\"sear"
+        "content": "<div id=\"search\"></div>"
     },
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app/",
