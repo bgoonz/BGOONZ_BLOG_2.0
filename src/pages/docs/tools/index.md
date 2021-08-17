@@ -25,6 +25,10 @@ seo:
       value: Tools
     - name: 'twitter:description'
       value: This is the tools page
+    - name: 'og:image'
+      value: images/tex.PNG
+      keyName: property
+      relativeUrl: true
 template: docs
 ---
 
