@@ -36,3 +36,4 @@ template: docs
 
 
 
+<span id="search"></span>
