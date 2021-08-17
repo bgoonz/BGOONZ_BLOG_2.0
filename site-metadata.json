@@ -177,15 +177,6 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
-                        "label": "WebResourceRepo",
-                        "url": "https://github.com/bgoonz/UsefulResourceRepo2.0",
-                        "style": "secondary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
                     }
                 ],
                 "type": "action_menu",
