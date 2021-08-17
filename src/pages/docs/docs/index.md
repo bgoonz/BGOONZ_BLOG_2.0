@@ -1,10 +1,10 @@
 ---
 title: Documentation
-weight: 0
+weight: 1
 excerpt: Documentation
 seo:
-  title: 'Documentation'
-  description: 'Documentation'
+  title: Documentation
+  description: Documentation
   robots: []
   extra: []
   type: stackbit_page_meta
