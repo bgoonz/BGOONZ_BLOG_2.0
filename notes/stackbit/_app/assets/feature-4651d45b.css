@@ -1,0 +1,84 @@
+.aspect.svelte-zxn9ex.svelte-zxn9ex {
+    position: relative;
+    height: 100%;
+    max-height: 500px;
+    min-height: 240px;
+}
+.aspect.svelte-zxn9ex.svelte-zxn9ex:before {
+    content: '';
+    display: block;
+    padding-bottom: 125%;
+}
+.aspect.narrow.svelte-zxn9ex.svelte-zxn9ex:before {
+    padding-bottom: 70%;
+}
+@media (min-width: 769px) {
+    .aspect.svelte-zxn9ex.svelte-zxn9ex:before {
+        padding-bottom: 80%;
+    }
+    .aspect.narrow.svelte-zxn9ex.svelte-zxn9ex:before {
+        padding-bottom: 40%;
+    }
+}
+.wrapper.svelte-zxn9ex.svelte-zxn9ex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #f9f9f9;
+    border-radius: 20px;
+    transform: translateZ(0);
+}
+.wrapper.dark.svelte-zxn9ex.svelte-zxn9ex {
+    background: rgba(18, 16, 12, 0.7);
+}
+.wrapper.shadowGrey.svelte-zxn9ex.svelte-zxn9ex {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08), 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+.wrapper.shadowBrand.svelte-zxn9ex.svelte-zxn9ex {
+    box-shadow: var(--shadow-brand);
+}
+.titlebar.svelte-zxn9ex.svelte-zxn9ex {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: hsla(0, 0%, 97.6%, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.dark.svelte-zxn9ex .titlebar.svelte-zxn9ex {
+    background: #696662;
+}
+.titlebar.svelte-zxn9ex.svelte-zxn9ex:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    border-radius: 8px;
+    background: #e7e7e7;
+}
+.dark.svelte-zxn9ex .titlebar.svelte-zxn9ex:before {
+    background: #807c78;
+}
+figcaption.svelte-zxn9ex.svelte-zxn9ex {
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.feature-container-section:nth-of-type(2n) .preview.svelte-1i79qs2 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}

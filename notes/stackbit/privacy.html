@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="theme-color" content="#333333" />
+        <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
+
+        <script>
+            if (window.location.pathname.length <= 1 && window.location.hash.indexOf('https://') > -1) {
+                window.location.replace('https://gitpod.io/' + window.location.hash);
+            }
+        </script>
+
+        <link rel="preload" as="font" href="/fonts/ABCDiatype-Regular.woff" type="font/woff2" crossorigin="anonymous" />
+        <link rel="preload" as="font" href="/fonts/ABCDiatype-Bold.woff" type="font/woff2" crossorigin="anonymous" />
+        <link rel="stylesheet" rel="preload" href="/font.css" as="style" />
+        <link rel="stylesheet" href="/global.css" />
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
+        <link rel="icon" type="image/png" href="/favicon192.png" />
+
+        <!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+        <title>Privacy</title>
+        <meta
+            name="keywords"
+            content="dev environment, development environment, devops, cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review"
+            data-svelte="svelte-15a2dzw"
+        />
+        <meta name="description" content="Gitpod&#39;s privacy policy." data-svelte="svelte-15a2dzw" />
+        <meta property="og:image" content="https://www.gitpod.io/images/media-image.jpg" data-svelte="svelte-15a2dzw" />
+        <meta property="og:description" content="Gitpod&#39;s privacy policy." data-svelte="svelte-15a2dzw" />
+        <meta property="og:title" content="Privacy" data-svelte="svelte-15a2dzw" />
+        <meta property="og:type" content="website" data-svelte="svelte-15a2dzw" />
+        <meta property="og:url" content="https://undefined/privacy" data-svelte="svelte-15a2dzw" />
+        <meta name="twitter:card" content="summary" data-svelte="svelte-15a2dzw" />
+        <meta name="twitter:site" content="@gitpod" data-svelte="svelte-15a2dzw" />
+        <meta name="twitter:creator" content="@gitpod" data-svelte="svelte-15a2dzw" />
+        <meta name="twitter:image" content="https://www.gitpod.io/images/twitter-preview.jpg" data-svelte="svelte-15a2dzw" />
+
+        <link rel="modulepreload" href="/./_app/pages/$layout.svelte-09f9cae4.js" />
+        <link rel="modulepreload" href="/./_app/chunks/index-0a115175.js" />
+        <link rel="modulepreload" href="/./_app/chunks/stores-6ede6f6c.js" />
+        <link rel="modulepreload" href="/./_app/chunks/singletons-6b53f818.js" />
+        <link rel="modulepreload" href="/./_app/chunks/helper-7638eca7.js" />
+        <link rel="modulepreload" href="/./_app/chunks/index-ab5856d2.js" />
+        <link rel="modulepreload" href="/./_app/chunks/logo-60efa4e2.js" />
+        <link rel="modulepreload" href="/./_app/chunks/index-05581432.js" />
+        <link rel="modulepreload" href="/./_app/pages/privacy.svelte-81b4da0c.js" />
+        <link rel="modulepreload" href="/./_app/chunks/open-graph-b11e873e.js" />
+        <link rel="stylesheet" href="/./_app/assets/pages/$layout.svelte-0661c89d.css" />
+
+        <script type="module">
+            import { start } from '/./_app/start-765c3235.js';
+            start({
+                target: document.querySelector('#svelte'),
+                paths: { base: '', assets: '/.' },
+                session: (function (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y) {
+                    return {
+                        changelogEntries: [
+                            {
+                                date: '2021-07-31T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-07-31.jpg" alt="Faster workspace startup times"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="faster-workspace-startup-times"\u003EFaster workspace startup times\u003Ca href="#faster-workspace-startup-times"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EA key metric we deeply care about at Gitpod (and I’m sure you do too) is workspace startup time. In a world where you create and dispose of workspaces many times per day, the last thing you want is waiting for a workspace to start 🐌.\u003C\u002Fp\u003E\n\u003Cp\u003EIn this release, we made significant progress in lowering startup times 🏎. What initially may sound like complex changes turned out to be a \u003Ccode\u003E+4 -4\u003C\u002Fcode\u003E pull request (\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4847" rel="nofollow noopener noreferrer" target="_blank"\u003E#4847\u003C\u002Fa\u003E). Yay simplicity!\u003C\u002Fp\u003E\n\u003Cp\u003ETo give you an idea of the magnitute of improvement we’re talking about, here’s a before \u002F after comparison with 30 workspaces started twice:\u003C\u002Fp\u003E\n\u003Ctable\u003E\u003Cthead\u003E\u003Ctr\u003E\u003Cth\u003EBefore\u003C\u002Fth\u003E\n\u003Cth\u003ENow\u003C\u002Fth\u003E\u003C\u002Ftr\u003E\u003C\u002Fthead\u003E\n\u003Ctbody\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-07-31-before.jpg" alt="Plotted graph of workspace startup times ranging between 20s and 60s"\u003E\u003C\u002Ftd\u003E\n\u003Ctd\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-07-31-now.jpg" alt="Plotted graph of workspace startup times ranging between 5s and 20s"\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003C\u002Ftbody\u003E\u003C\u002Ftable\u003E\n\u003Cp\u003EDid you pay close attention to the y-axis? From between 20 to 60 seconds down to 5 to 20 seconds!\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cdel\u003EGreat work team, let’s shift our focus to other features.\u003C\u002Fdel\u003E These improvements are certainly worth celebrating 🎂, but we’re hungry to drop these times by at least the same magnitude once or twice more! Team, finish your cake and get back to work 😉.\u003C\u002Fp\u003E\n\u003Cp\u003EPlease do let us know if you notice any differences with your project startup times. You can find us at \u003Ca href="https:\u002F\u002Fwww.gitpod.io\u002Fchat" rel="nofollow noopener noreferrer" target="_blank"\u003Ewww.gitpod.io\u002Fchat\u003C\u002Fa\u003E.\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4844" rel="nofollow noopener noreferrer" target="_blank"\u003E#4844\u003C\u002Fa\u003E - Provide better feedback when gitpod.yml is invalid\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4816" rel="nofollow noopener noreferrer" target="_blank"\u003E#4816\u003C\u002Fa\u003E - [gp] env: handle multi-word values without quotes\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4813" rel="nofollow noopener noreferrer" target="_blank"\u003E#4813\u003C\u002Fa\u003E - [server] Handle releases\u002Ftag\u002F\u003Ctag\u003Ein GitHub context parser\u003C\u002Ftag\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4743" rel="nofollow noopener noreferrer" target="_blank"\u003E#4743\u003C\u002Fa\u003E - [code] confirm sharing\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4738" rel="nofollow noopener noreferrer" target="_blank"\u003E#4738\u003C\u002Fa\u003E - [code] serve each webview from own origin\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4734" rel="nofollow noopener noreferrer" target="_blank"\u003E#4734\u003C\u002Fa\u003E - [#4699] Handle error situations around \u002Fheadless-logs endpoint\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4115" rel="nofollow noopener noreferrer" target="_blank"\u003E#4115\u003C\u002Fa\u003E - [server] store separate email used for commits (GitHub and GitLab). Thanks to \u003Ca href="https:\u002F\u002Fgithub.com\u002Fphilschatz" rel="nofollow noopener noreferrer" target="_blank"\u003E@philschatz\u003C\u002Fa\u003E.\u003C\u002Fli\u003E\u003C\u002Ful\u003E\n\u003Ch3 id="gitpod-self-hosted"\u003EGitpod Self-hosted\u003Ca href="#gitpod-self-hosted"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cp\u003EWe released \u003Ccode\u003E0.10.0\u003C\u002Fcode\u003E and updated the documentation to match. Head over to \u003Ca href="https:\u002F\u002Fwww.gitpod.io\u002Fdocs\u002Fself-hosted\u002Flatest" rel="nofollow noopener noreferrer" target="_blank"\u003Ehttps:\u002F\u002Fwww.gitpod.io\u002Fdocs\u002Fself-hosted\u002Flatest\u003C\u002Fa\u003E to get started.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Ffntlnz" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Ffntlnz.png" alt="Avatar of fntlnz" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fghuntley" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fghuntley.png" alt="Avatar of ghuntley" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fphilschatz" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fphilschatz.png" alt="Avatar of philschatz" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fshaal" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fshaal.png" alt="Avatar of shaal" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E'
+                            },
+                            {
+                                date: '2021-06-30T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-06-30.jpg" alt="Gitpod Local Companion"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="introducing-the-gitpod-local-companion-app"\u003EIntroducing the Gitpod Local Companion app\u003Ca href="#introducing-the-gitpod-local-companion-app"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EAs of today, you can access your Gitpod workspace from your local environment 🎉!\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cstrong\u003EWhy does this matter?\u003C\u002Fstrong\u003E\nImagine you start a development server for your web application in Gitpod. You can preview that online at a \u003Ca href="https:\u002F\u002Fnnnn-x.y.gitpod.io" rel="nofollow noopener noreferrer" target="_blank"\u003Ehttps:\u002F\u002Fnnnn-x.y.gitpod.io\u003C\u002Fa\u003E URL, where “nnnn” is the port your dev server listens on. Sometimes though, development features such as live reloading may not be compatible with that URL format and rather require something like http:\u002F\u002Flocalhost:10000 to communicate with the dev server.\u003C\u002Fp\u003E\n\u003Cp\u003EWith the Gitpod Local Companion app, localhost URLs can now access your dev server running in a Gitpod workspace. The best part of that: It works with any TCP port. You could run a MySQL database in your Gitpod workspace and access the database with your favourite GUI through localhost:3306.\u003C\u002Fp\u003E\n\u003Cp\u003ETo learn more and get started today, please see \u003Ca href="\u002Fblog\u002Flocal-app"\u003Eour introduction blog post\u003C\u002Fa\u003E.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Frl-gitpod" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Frl-gitpod.png" alt="Avatar of rl-gitpod" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4548" rel="nofollow noopener noreferrer" target="_blank"\u003E#4548\u003C\u002Fa\u003E - \u003Cstrong\u003EBreaking Change\u003C\u002Fstrong\u003E: Make ports configured in \u003Ccode\u003E.gitpod.yml\u003C\u002Fcode\u003E private by default when no value for \u003Ccode\u003Evisibility\u003C\u002Fcode\u003E is given (was public). This change is for security reasons. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4614" rel="nofollow noopener noreferrer" target="_blank"\u003E#4614\u003C\u002Fa\u003E - Added a deprecation warning for Theia. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4543" rel="nofollow noopener noreferrer" target="_blank"\u003E#4543\u003C\u002Fa\u003E - Deprecate \u003Ccode\u003Eprebuild\u003C\u002Fcode\u003E task in \u003Ccode\u003Egitpod.yml\u003C\u002Fcode\u003E. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4542" rel="nofollow noopener noreferrer" target="_blank"\u003E#4542\u003C\u002Fa\u003E - Remove \u003Ccode\u003Eide\u003C\u002Fcode\u003E task in \u003Ccode\u003Egitpod.yml\u003C\u002Fcode\u003E. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4524" rel="nofollow noopener noreferrer" target="_blank"\u003E#4524\u003C\u002Fa\u003E - Remove deprecated \u003Ccode\u003EopenModes\u003C\u002Fcode\u003E in `.gitpod.yml. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4633" rel="nofollow noopener noreferrer" target="_blank"\u003E#4633\u003C\u002Fa\u003E - Fix gp open\u002Fpreview to await till VS Code UI is available. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fissues\u002F3259" rel="nofollow noopener noreferrer" target="_blank"\u003E#3259\u003C\u002Fa\u003E - Support VS Code web extensions which are running in a browser worker, (\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fissues\u002F3259#issuecomment-864355629" rel="nofollow noopener noreferrer" target="_blank"\u003Eparticularly Vim\u003C\u002Fa\u003E). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F2879" rel="nofollow noopener noreferrer" target="_blank"\u003E#2879\u003C\u002Fa\u003E - Fix unvalidated redirects (credit: \u003Ca href="https:\u002F\u002Ftwitter.com\u002Fpayloadartist" rel="nofollow noopener noreferrer" target="_blank"\u003EArif Khan\u003C\u002Fa\u003E from SaveBreach Team). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4580" rel="nofollow noopener noreferrer" target="_blank"\u003E#4580\u003C\u002Fa\u003E - Support workspace sharing from VS Code. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4627" rel="nofollow noopener noreferrer" target="_blank"\u003E#4627\u003C\u002Fa\u003E - Deprecate user uploaded extensions. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4560" rel="nofollow noopener noreferrer" target="_blank"\u003E#4560\u003C\u002Fa\u003E - Fix out of order typing in terminals. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4589" rel="nofollow noopener noreferrer" target="_blank"\u003E#4589\u003C\u002Fa\u003E - Add dodo to animals (thanks \u003Ca href="https:\u002F\u002Fgithub.com\u002Fa2br" rel="nofollow noopener noreferrer" target="_blank"\u003E@a2br\u003C\u002Fa\u003E!). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4287" rel="nofollow noopener noreferrer" target="_blank"\u003E#4287\u003C\u002Fa\u003E - Modify the “New Git Integration” experience to align with provider terminology (thanks @jordanhailey!). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjordanhailey" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjordanhailey.png" alt="Avatar of jordanhailey" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fmeysholdt" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fmeysholdt.png" alt="Avatar of meysholdt" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FJanKoehnlein" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FJanKoehnlein.png" alt="Avatar of JanKoehnlein" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4401" rel="nofollow noopener noreferrer" target="_blank"\u003E#4401\u003C\u002Fa\u003E, \u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4490" rel="nofollow noopener noreferrer" target="_blank"\u003E#4490\u003C\u002Fa\u003E, \u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4571" rel="nofollow noopener noreferrer" target="_blank"\u003E#4571\u003C\u002Fa\u003E - Implement a new Teams UI in the dashboard (behind a feature flag). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E'
+                            },
+                            {
+                                date: '2021-05-31T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-05-31.jpg" alt="Incremental prebuilds"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="faster-incremental-prebuilds"\u003EFaster, incremental prebuilds\u003Ca href="#faster-incremental-prebuilds"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EWith \u003Ca href="\u002Fdocs\u002Fprebuilds"\u003Eprebuilds\u003C\u002Fa\u003E, Gitpod continously builds your development environment so that it is ready-to-code by the time you start a new workspace.\u003C\u002Fp\u003E\n\u003Cp\u003ESo far, Gitpod started each prebuild from a clean slate. With this latest release, Gitpod now supports incremental prebuilds, which means Gitpod will try to re-use a prebuild from an earlier commit in order to create new prebuilds faster. In short, it now takes less time for your prebuild to be ready after a new commit is pushed to your git provider.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cstrong\u003ENote\u003C\u002Fstrong\u003E: This is a controlled feature release so that we can measure the performance impact on projects. There is nothing you need to do other than wait and at some point experience quicker prebuild times 🚀.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3995" rel="nofollow noopener noreferrer" target="_blank"\u003E#3995\u003C\u002Fa\u003E - Implement new self-hosted setup flow. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4170" rel="nofollow noopener noreferrer" target="_blank"\u003E#4170\u003C\u002Fa\u003E - Hide “stopping” &amp; unpinned workspaces from “Active” in the dashboard. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4118" rel="nofollow noopener noreferrer" target="_blank"\u003E#4118\u003C\u002Fa\u003E - Fix Cross Origin Websocket Access (credit: \u003Ca href="https:\u002F\u002Fgitlab.com\u002Fjoernchen" rel="nofollow noopener noreferrer" target="_blank"\u003EJoern Schneeweisz\u003C\u002Fa\u003E from the GitLab Security Research Team). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E'
+                            },
+                            {
+                                date: '2021-04-30T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-04-30.png" alt="Redesigned Gitpod dashboard"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="hello-dark-mode"\u003EHello Dark mode\u003Ca href="#hello-dark-mode"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EWe heard you and implemented a dashboard dark mode (\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3901" rel="nofollow noopener noreferrer" target="_blank"\u003EPR #3901\u003C\u002Fa\u003E) 🌑! Head over to \u003Ca href="https:\u002F\u002Fgitpod.io\u002Fpreferences" rel="nofollow noopener noreferrer" target="_blank"\u003Ehttps:\u002F\u002Fgitpod.io\u002Fpreferences\u003C\u002Fa\u003E to pick the light or dark theme. Alternatively, select “System” and let us pick the theme that matches your system settings.\u003C\u002Fp\u003E\n\u003Cp\u003EIf you have specific feedback related to dark mode, please let us know in our \u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fissues\u002F4100" rel="nofollow noopener noreferrer" target="_blank"\u003Efeedback issue #3727\u003C\u002Fa\u003E 🙏🏻.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fmeysholdt" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fmeysholdt.png" alt="Avatar of meysholdt" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Ffiliptronicek" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Ffiliptronicek.png" alt="Avatar of filiptronicek" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3940" rel="nofollow noopener noreferrer" target="_blank"\u003E#3940\u003C\u002Fa\u003E - Add OAuth2 host check (credit: \u003Ca href="https:\u002F\u002Fgitlab.com\u002Fjoernchen" rel="nofollow noopener noreferrer" target="_blank"\u003EJoern Schneeweisz\u003C\u002Fa\u003E from the GitLab Security Research Team). \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4051" rel="nofollow noopener noreferrer" target="_blank"\u003E#4051\u003C\u002Fa\u003E - Ask user for confirmation before deleting an environment variable. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4069" rel="nofollow noopener noreferrer" target="_blank"\u003E#4069\u003C\u002Fa\u003E - Fix loading Gitpod’s dashboard in Safari less than v14. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3830" rel="nofollow noopener noreferrer" target="_blank"\u003E#3830\u003C\u002Fa\u003E - Optimize Gitpod’s dashboard to make it lighter and load faster. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Faledbf" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Faledbf.png" alt="Avatar of aledbf" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FDivlo" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FDivlo.png" alt="Avatar of Divlo" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F4018" rel="nofollow noopener noreferrer" target="_blank"\u003E#4018\u003C\u002Fa\u003E - Make the Docker daemon in workspaces auto-start when needed by introducing a socket activated ‘sudo docker-up’. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3945" rel="nofollow noopener noreferrer" target="_blank"\u003E#3945\u003C\u002Fa\u003E - UX: Fix accidental workspace deletion when using the ‘Enter’ key. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fapolopena" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fapolopena.png" alt="Avatar of apolopena" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3938" rel="nofollow noopener noreferrer" target="_blank"\u003E#3938\u003C\u002Fa\u003E - Also show environment variables with identical names but different scopes in the dashboard. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3866" rel="nofollow noopener noreferrer" target="_blank"\u003E#3866\u003C\u002Fa\u003E - Fix quantity type conversion in Team plans. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E'
+                            },
+                            {
+                                date: '2021-03-31T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-03-31.png" alt="Redesigned Gitpod dashboard"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="-dashboard-redesign"\u003E🍊 Dashboard Redesign\u003Ca href="#-dashboard-redesign"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EAligned with our \u003Ca href="\u002Fblog\u002Fnext-chapter-for-gitpod"\u003ENext Chapter for Gitpod\u003C\u002Fa\u003E announcement, we reimplemented and redesigned the Gitpod dashboard!\u003C\u002Fp\u003E\n\u003Cp\u003ETechnical improvements under the hood result in a more performant, snappier dashboard. We would love to hear your feedback and learn how we can provide you with an even better experience. Please provide your comments in our \u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fissues\u002F3727" rel="nofollow noopener noreferrer" target="_blank"\u003Efeedback issue #3727\u003C\u002Fa\u003E 🙏🏻.\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fjankeromnes" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fjankeromnes.png" alt="Avatar of jankeromnes" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgtsiolis" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgtsiolis.png" alt="Avatar of gtsiolis" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E'
+                            },
+                            {
+                                date: '2021-02-28T00:00:00.000Z',
+                                content:
+                                    '\u003Cp\u003E\u003Cimg src="\u002Fimages\u002Fchangelog\u002F2021-02-28.jpg" alt="VS Code on Gitpod"\u003E\u003C\u002Fp\u003E\n\u003Ch2 id="synchronize-theia-user-settings-with-vs-code"\u003ESynchronize Theia user settings with VS Code\u003Ca href="#synchronize-theia-user-settings-with-vs-code"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\n\u003Cp\u003EWe recently launched \u003Ca href="\u002Fblog\u002Froot-docker-and-vscode#vs-code"\u003Esupport for VS Code\u003C\u002Fa\u003E.\u003C\u002Fp\u003E\n\u003Cp\u003EIf you switch your editor to VS Code, your user settings and extensions configured in Theia will be synchronized with VS Code automatically when you start a new workspace (unless you manually uploaded an extension).\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fsvenefftinge" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fsvenefftinge.png" alt="Avatar of svenefftinge" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Ch3 id="fixes-and-improvements"\u003EFixes and improvements\u003Ca href="#fixes-and-improvements"\u003E\u003Cspan class="icon icon-link"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\n\u003Cul\u003E\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3087" rel="nofollow noopener noreferrer" target="_blank"\u003E#3087\u003C\u002Fa\u003E - Remove the privileged feature flag. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fakosyakov" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fakosyakov.png" alt="Avatar of akosyakov" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3175" rel="nofollow noopener noreferrer" target="_blank"\u003E#3175\u003C\u002Fa\u003E - Fix Env Var context parsing. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002FAlexTugarev" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002FAlexTugarev.png" alt="Avatar of AlexTugarev" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3177" rel="nofollow noopener noreferrer" target="_blank"\u003E#3177\u003C\u002Fa\u003E - [supervisor] Let supervisor fail when first IDE start fails.\u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3182" rel="nofollow noopener noreferrer" target="_blank"\u003E#3182\u003C\u002Fa\u003E - [registry-facade] Remove feature flag. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcsweichel" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcsweichel.png" alt="Avatar of csweichel" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgitpod-io\u002Fgitpod\u002Fpull\u002F3228" rel="nofollow noopener noreferrer" target="_blank"\u003E#3228\u003C\u002Fa\u003E - Allow air-gap Gitpod installations. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fcorneliusludmann.png" alt="Avatar of corneliusludmann" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003EImproved workspace startup time in high-load situations. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Fgeropl" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Fgeropl.png" alt="Avatar of geropl" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\n\u003Cli\u003EStarted to \u003Ca href="https:\u002F\u002Fkubernetes.io\u002Fdocs\u002Fconcepts\u002Farchitecture\u002Fcontroller\u002F" rel="nofollow noopener noreferrer" target="_blank"\u003Eadopt the controller framework\u003C\u002Fa\u003E which will lead to Gitpod producing less load on the Kubernetes API. \u003Cspan class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row svelte-1qimm4u"\u003E\u003Cspan class="flex-shrink-0 svelte-1qimm4u"\u003E\u003Cspan class="avatars"\u003E\u003Ca href="https:\u002F\u002Fgithub.com\u002Faledbf" target="_blank" class="no-underline transition-none filter hover:drop-shadow showAvatar"\u003E\n        \u003Cimg src="https:\u002F\u002Fgithub.com\u002Faledbf.png" alt="Avatar of aledbf" height="24" width="24" class="inline rounded-full border border-solid border-off-white "\u003E\n      \n    \u003C\u002Fa\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\n  \u003C\u002Fspan\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E'
+                            }
+                        ],
+                        posts: [
+                            {
+                                author: f,
+                                date: 'Fr, 13 Aug 2021 3:00:00 UTC',
+                                excerpt: 'By 2023 working with ephemeral cloud-based dev environments will be the standard, just like CI\u002FCD is today.',
+                                image: a,
+                                slug: 'cloud-based-development-for-everyone',
+                                teaserImage: a,
+                                title: 'Cloud-based development for everyone',
+                                subtitle: c,
+                                filename: 'cloud-based-development-for-everyone.md'
+                            },
+                            {
+                                author: 'pawlean, mikenikles',
+                                date: 'Thu, 05 Aug 2021 11:00:00 UTC',
+                                excerpt: 'For our first DevX Digest, we explore the evolution of developer experience in the IDE world.',
+                                image: i,
+                                slug: 'the-evolution-of-devx',
+                                subtitle: c,
+                                teaserImage: i,
+                                title: 'DevX Digest 01 - The evolution of DevX 🌱',
+                                type: 'digest',
+                                filename: 'the-evolution-of-devx.md'
+                            },
+                            {
+                                author: j,
+                                date: 'Wed, 30 Jun 2021 3:00:00 UTC',
+                                excerpt:
+                                    'Stop maintaining your local development environment. Instead, automate the setup once and use a new environment for each task you work on - available in seconds and always ready-to-code.',
+                                image: a,
+                                slug: 'i-said-goodbye-to-local-development-and-so-can-you',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'I said goodbye to local development and so can you',
+                                filename: 'i-said-goodbye-to-local-development-and-so-can-you.md'
+                            },
+                            {
+                                author: 'akosyakov, csweichel, rl-gitpod',
+                                date: 'Wed, 9 Jun 2021 18:00:00 UTC',
+                                excerpt:
+                                    'While Gitpod can seamlessly integrate into your workflow in the vast majority of cases, there are times where you may want to access a workspace from localhost',
+                                image: k,
+                                slug: 'local-app',
+                                subtitle: c,
+                                teaserImage: k,
+                                title: 'Gitpod Local Companion - localhost is going remote',
+                                filename: 'local-app.md'
+                            },
+                            {
+                                author: g,
+                                date: 'Thursday, 3 Jun 2021 11:00:00 UTC',
+                                excerpt:
+                                    "As part of Gitpod’s Open-Source Sustainability Fund initiative attendees of DevX Conf were able to decide where $10,000 USD of funds (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. Here's the breakdown how the fund was split and our retrospective on running our first-ever conference.",
+                                image: d,
+                                slug: 'devxconf-wrap',
+                                subtitle: c,
+                                teaserImage: d,
+                                title: 'DevX Conf wrap & distributing $10k of open-source funding',
+                                filename: 'devxconf-wrap.md'
+                            },
+                            {
+                                author: 'arthursens',
+                                date: 'Sunday, 23 May 2021 11:00:00 UTC',
+                                excerpt:
+                                    'The SRE team at Gitpod is making the first moves to implement Site Reliability Engineering best practices. We document our approach to implement our very first Service Level Objective.',
+                                image: d,
+                                slug: 'journey-to-site-reliability-engineering-at-gitpod',
+                                subtitle: c,
+                                teaserImage: d,
+                                title: 'Journey to Site Reliability Engineering at Gitpod',
+                                filename: 'journey-to-site-reliability-engineering-at-gitpod.md'
+                            },
+                            {
+                                author: j,
+                                date: 'Sat, 08 May 2021 18:00:00 UTC',
+                                excerpt: 'A very tight deadline, a small team and a complete redesign - insights into why we use Svelte.',
+                                image: d,
+                                slug: 'from-gatsby-to-svelte',
+                                subtitle: c,
+                                teaserImage: d,
+                                title: 'From Gatsby to Svelte in 3 weeks',
+                                filename: 'from-gatsby-to-svelte.md'
+                            },
+                            {
+                                author: l,
+                                date: 'Monday, 26 Apr 2021 11:00:00 UTC',
+                                excerpt:
+                                    "The truth is free software isn't free. Hours have rates. Rates require payment. What if the high achievers that our digital society is built upon were empowered to become independent artists?",
+                                image: a,
+                                slug: 'gitpod-open-source-sustainability-fund',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'Gitpod Open-Source Sustainability Fund',
+                                filename: 'gitpod-open-source-sustainability-fund.md'
+                            },
+                            {
+                                author: l,
+                                date: 'Friday, 16 Apr 2021 11:00:00 UTC',
+                                excerpt:
+                                    'On the 27th of April there will be a one-day virtual conference where members from the Gitpod team will be spending dedicated time with you, our community.',
+                                image: a,
+                                slug: 'a-day-with-gitpod',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'A day with Gitpod',
+                                filename: 'a-day-with-gitpod.md'
+                            },
+                            {
+                                author: f,
+                                date: 'Thu, 08 Apr 2021 14:00:00 UTC',
+                                excerpt:
+                                    'Our focus has always been to remove friction from the developer experience. Today we announce a new funding round, our new brand, several product milestones, and DevX Conf.',
+                                image: a,
+                                slug: 'next-chapter-for-gitpod',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'Next Chapter for Gitpod',
+                                filename: 'next-chapter-for-gitpod.md'
+                            },
+                            {
+                                author: 'svenefftinge, JohannesLandgraf, csweichel',
+                                date: 'Tue Dec 09 2020 8:00:00 GMT+0000 (UTC)',
+                                excerpt: 'Fully automated development environments will be the standard for professional developers in 5-10 years.',
+                                image: a,
+                                slug: 'moving-software-development-to-the-cloud',
+                                subtitle: 'Gitpod & GitHub Codespaces',
+                                teaserImage: a,
+                                title: 'Moving software development to the cloud ☁️',
+                                filename: 'moving-software-development-to-the-cloud.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Thu Dec 07 2020 11:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    'The team has been focussing on shipping some major new features, which mark important milestones on our goal to eliminate all friction.',
+                                image: a,
+                                slug: 'root-docker-and-vscode',
+                                subtitle: 'New Release',
+                                teaserImage: a,
+                                title: 'Root, Docker and VS Code',
+                                filename: 'root-docker-and-vscode.md'
+                            },
+                            {
+                                author: 'corneliusludmann, svenefftinge',
+                                date: 'Thu, 06 Oct 2020 14:00:00 UTC',
+                                excerpt:
+                                    'Today, we are super excited to share that we’ve partnered with GitLab and built a native Gitpod integration in GitLab’s UI.',
+                                image: a,
+                                slug: 'gitlab-integration',
+                                subtitle: 'Launch Gitpod workspace from GitLab',
+                                title: 'Native GitLab Integration',
+                                filename: 'gitlab-integration.md'
+                            },
+                            {
+                                author: f,
+                                date: 'Tue, 25 Aug 2020 13:00:00 UTC',
+                                excerpt:
+                                    'As of today Gitpod is open source under the AGPL license at github.com\u002Fgitpod-io\u002Fgitpod. This allows the community to participate in the',
+                                image: a,
+                                slug: 'opensource',
+                                subtitle: c,
+                                teaserImage: a,
+                                title: 'Gitpod is now Open Source 🎉',
+                                filename: 'opensource.md'
+                            },
+                            {
+                                author: h,
+                                date: 'Thu, 02 Jul 2020 14:00:00 UTC',
+                                excerpt: 'We’re excited to bring you instant development environments for all Bitbucket projects.',
+                                image: a,
+                                slug: 'bitbucket',
+                                subtitle: 'Instant dev environments for all Bitbucket projects',
+                                teaserImage: a,
+                                title: 'Gitpod for Bitbucket 🚀',
+                                filename: 'bitbucket.md'
+                            },
+                            {
+                                author: 'JesterOrNot, svenefftinge',
+                                date: 'Thu June 18 2020',
+                                excerpt:
+                                    "Until now, you installed VS Code extensions in Gitpod by drag-and-dropping `.vsix` files into your workspace. Today, we're excited to introduce a",
+                                image: a,
+                                slug: 'open-vsx-in-gitpod',
+                                subtitle: 'Open VSX is now integrated in Gitpod',
+                                teaserImage: a,
+                                title: 'Search & Install Extensions in Your Gitpod Workspace',
+                                filename: 'open-vsx-in-gitpod.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed May 06 2020 16:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Today, GitHub announced the private beta of GitHub Codespaces, which provide container-based dev environments for GitHub projects.',
+                                image: 'gh-cs-bg.jpg',
+                                slug: 'github-codespaces',
+                                subtitle: 'A Milestone for Automated Development Environments',
+                                title: 'GitHub Codespaces, Welcome to the Party!',
+                                filename: 'github-codespaces.md'
+                            },
+                            {
+                                author: m,
+                                date: 'Wed May 06 2020 14:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    'We are excited to announce the new release of Gitpod Self-Hosted in version 0.4.0. Gitpod Self-Hosted allows everyone to set-up and run a',
+                                image: n,
+                                slug: 'gitpod-self-hosted-0.4.0',
+                                subtitle: 'Features, Fixes, Fixes, and Fixes',
+                                teaserImage: n,
+                                title: 'Gitpod Self-Hosted 0.4.0',
+                                filename: 'gitpod-self-hosted-0.4.0.md'
+                            },
+                            {
+                                author: 'svenefftinge, spoenemann',
+                                date: 'Thu Apr 9 2020 17:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'VS Code is used by more than 50% of all developers worldwide. Its extension protocol enabled the broader developer community to create over',
+                                image: o,
+                                slug: 'open-vsx',
+                                subtitle: 'A Free Marketplace for VS Code Extensions',
+                                teaserImage: o,
+                                title: 'Open VSX',
+                                filename: 'open-vsx.md'
+                            },
+                            {
+                                author: h,
+                                date: 'Wed Jan 8 2020 09:00:00 GMT+0000 UTC',
+                                excerpt: 'Are you tired of apt-get? Can’t use sudo right now? ... You can now ’brew install anything’ in Gitpod! 🎉',
+                                image: p,
+                                slug: 'brew',
+                                subtitle: "'brew install anything' in Gitpod",
+                                teaserImage: p,
+                                title: 'Gitpod ❤️ Homebrew',
+                                filename: 'brew.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Thu Dec 23 2019 11:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    "Ho ho ho! Christmas came early! We’ve just released a bunch of exciting new features and I'm not talking about Gitpod Enterprise which was",
+                                image: q,
+                                slug: 'update-december-2019',
+                                subtitle: 'A Last, Big Update in 2019',
+                                teaserImage: q,
+                                title: 'Christmas Release 🎄',
+                                filename: 'update-december-2019.md'
+                            },
+                            {
+                                author: m,
+                                date: 'Thu Dec 19 2019 11:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Eighteen months ago we launched the public beta of Gitpod. That date marked the beginning of an amazing journey with plenty of feedback',
+                                image: r,
+                                slug: 'self-host-your-gitpod',
+                                subtitle: 'Gitpod on Your Infrastructure',
+                                teaserImage: r,
+                                title: 'Self-Host Your Gitpod',
+                                filename: 'self-host-your-gitpod.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed Dec 04 2019 13:49:24 GMT+0000 (UTC)',
+                                excerpt:
+                                    "We are happy to announce that you can finally enjoy Gitpod's frictionless ready-to-code dev environments on GitLab as well.",
+                                image: 'teaser-gitlab-cover.png',
+                                slug: 'gitlab-support',
+                                subtitle: 'Your devops toolchain is finally complete!',
+                                title: 'GitLab Support for Gitpod is Here 🎉',
+                                filename: 'gitlab-support.md'
+                            },
+                            {
+                                author: e,
+                                date: 'Thu Nov 13 2019 09:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    "Some things just aren't exposed to the internet. Either because we do not want them out in the open, think some on-prem database, or because",
+                                image: s,
+                                slug: 'local-services-in-gitpod',
+                                teaserImage: s,
+                                title: 'Using local services in Gitpod',
+                                filename: 'local-services-in-gitpod.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Tue Nov 05 2019 16:16:17 GMT+0000 (UTC)',
+                                excerpt:
+                                    'With Visual Studio Online (VSO) Microsoft is entering the space of cloud-based development environments. So, what are the differences? Glad',
+                                image: 'gitpod-vs-code-online.png',
+                                slug: 'visual-studio-online-vs-gitpod',
+                                subtitle: 'What are the differences?',
+                                title: 'Visual Studio Online vs Gitpod',
+                                filename: 'visual-studio-online-vs-gitpod.md'
+                            },
+                            {
+                                author: 'nisarhassan12',
+                                date: 'Mon Oct 7 2019',
+                                excerpt:
+                                    "To celebrate Open Source and Hacktoberfest, we're stoked 🧙✨🥰 to announce contribute.dev, a list of welcoming open-source projects.",
+                                image: 'frictionless-oss-contributions.png',
+                                slug: 'frictionless-oss-contributions',
+                                subtitle: 'Frictionless Open Source Contributions For Everyone',
+                                title: 'Announcing contribute.dev — Open Source in One Click',
+                                filename: 'frictionless-oss-contributions.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed Aug 07 2019 11:57:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Continuous dev environments reduce friction in onboarding and task switching and improves reproducibility across the project.',
+                                image: t,
+                                slug: 'continuous-dev-environment-in-devops',
+                                subtitle: 'The Missing Piece in DevOps?',
+                                teaserImage: t,
+                                title: 'Continuous Dev Environments',
+                                filename: 'continuous-dev-environment-in-devops.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Fri Aug 2 2019 12:16:17 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Today, we are excited to announce the start of our public beta phase for VS Code extensions in Gitpod, the next generation cloud IDE. So far',
+                                image: u,
+                                slug: 'vscode-extension-in-online-ide',
+                                subtitle: 'Join the Beta!',
+                                teaserImage: u,
+                                title: 'Your Favorite VS Code Extension in an Online IDE',
+                                filename: 'vscode-extension-in-online-ide.md'
+                            },
+                            {
+                                author: 'anudeepreddy',
+                                date: 'Wed Jun 26 2019 11:57:00 GMT+0000 (UTC)',
+                                excerpt: 'Build your webhook for your Google Assistant action and host it temporarily on Gitpod and test your code.',
+                                image: 'Build-and-test-your-webhook.png',
+                                slug: 'build-a-webhook-for-google-assistant',
+                                subtitle: 'Build and test your webhook using Gitpod',
+                                title: 'Build a Webhook for Google Assistant Action',
+                                url: 'https:\u002F\u002Fblog.anudeepreddy.ml\u002Fbuild-a-webhook-for-google-assistant\u002F',
+                                filename: 'build-a-webhook-for-google-assistant.md'
+                            },
+                            {
+                                author: h,
+                                date: 'Thu Jun 6 2019 09:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'I recently stumbled upon a new project on GitHub that peaked my interest. It proposed a new type of database that I was dying to try out. So',
+                                image: v,
+                                slug: 'gitpodify',
+                                subtitle: 'How to fully automate your dev environments on GitHub',
+                                teaserImage: v,
+                                title: 'Gitpodifying — The Ultimate Guide',
+                                filename: 'gitpodify.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Mon Apr 5 2019 15:00:00 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Every day developers waste millions of hours switching contexts between projects and branches, setting up development environments, or',
+                                image: w,
+                                slug: 'gitpod-launch',
+                                subtitle: 'No Setup, Less Waiting, More Flow',
+                                teaserImage: w,
+                                title: 'Introducing Gitpod — Frictionless Coding on GitHub',
+                                filename: 'gitpod-launch.md'
+                            },
+                            {
+                                author: e,
+                                date: 'Mon Mar 18 2019 16:16:17 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous',
+                                image: 'compiling-xkcd.png',
+                                slug: 'prebuilds',
+                                subtitle: 'Prebuild your workspaces',
+                                title: 'Waiting for code to build is like watching paint dry',
+                                url: 'https:\u002F\u002Fmedium.com\u002F@csweichel\u002Fa1c6b25fd601',
+                                filename: 'prebuilds.md'
+                            },
+                            {
+                                author: e,
+                                date: 'Tue Jan 29 2019 10:32:22 GMT+0000 (UTC)',
+                                excerpt:
+                                    'A core value at Gitpod is transparency: a lot of what we do is out in the open, because we believe that that’s the best way to earn the',
+                                image: 'teaser-status-page.png',
+                                slug: 'status-page',
+                                subtitle: 'Status Update',
+                                title: 'Gitpod ❤️ Statusfy',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fstatus-update-gitpod-%EF%B8%8F-statusfy-ed8266d63a20',
+                                filename: 'status-page.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Thu Dec 20 2018 21:51:05 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Learn how to streamline your code review experience. Code reviews are one of the best things you can do to keep your codebase clean. They',
+                                image: x,
+                                slug: 'when-code-reviews-lgtm',
+                                subtitle: 'Say goodbye to shallow reviews!',
+                                teaserImage: x,
+                                title: 'When code reviews LGTM',
+                                url: 'https:\u002F\u002Fhackernoon.com\u002Fwhen-code-reviews-lgtm-say-goodbye-to-shallow-reviews-a4e01b84ddef',
+                                filename: 'when-code-reviews-lgtm.md'
+                            },
+                            {
+                                author: y,
+                                date: 'Wed Dec 12 2018 11:44:33 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Nowadays, there are many collaborative platforms for showcasing JS code snippets and frameworks. Most of them run in your browser, some even',
+                                image: 'node-js-development-with-only-a-browser.jpeg',
+                                slug: 'node-js-development',
+                                title: 'Sustainable Node.js development with only a browser',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fsustainable-node-js-development-with-only-a-browser-4887bc6e737b',
+                                filename: 'node-js-development.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed Nov 21 2018 13:34:27 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Whenever you want to share a reproducible example on StackOverflow or an issue report, providing real code that can be quickly tried',
+                                image: 'workspace-snapshots.jpeg',
+                                slug: 'workspace-snapshots',
+                                subtitle: 'Code never lies',
+                                title: 'Creating reproducibles for any programming language',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fcode-never-lies-creating-reproducibles-for-any-programming-language-7946021a68f2',
+                                filename: 'workspace-snapshots.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Mon Nov 19 2018 15:39:56 GMT+0000 (UTC)',
+                                excerpt: 'Imagine that only a decade ago system administrators deployed, configured, and maintained software systems manually.',
+                                image: 'dev-env-gilbert.png',
+                                slug: 'dev-env-as-code',
+                                subtitle: 'How to streamline developer onboarding',
+                                title: 'Dev environments as code',
+                                url: 'dev-env-gilbert.gif',
+                                filename: 'dev-env-as-code.md'
+                            },
+                            {
+                                author: y,
+                                date: 'Tue Nov 13 2018 12:41:55 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Gitpod is based on the open-source Theia IDE Framework, which is highly inspired by VS Code, reuses its major components like the Monaco',
+                                image: 'node-js-gitpod.png',
+                                slug: 'node-js-gitpod',
+                                title: 'Debugging Node.js applications in Theia',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fdebugging-node-js-applications-in-theia-76c94c76f0a1',
+                                filename: 'node-js-gitpod.md'
+                            },
+                            {
+                                author: e,
+                                date: 'Thu Oct 04 2018 12:47:53 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Gitpod is a web-based IDE. As such one would think it only works for web-based projects or anything else that does not require a native UI',
+                                image: 'virtual-x-sever-running-on-a-remote-desktop-client.png',
+                                slug: 'native-ui-with-vnc',
+                                subtitle: "Cloud IDEs aren't limited to web apps",
+                                title: 'Developing native UI applications in Gitpod',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fdeveloping-native-ui-applications-in-gitpod-15af2967c24e',
+                                filename: 'native-ui-with-vnc.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Wed Sep 26 2018 09:35:09 GMT+0000 (UTC)',
+                                excerpt:
+                                    'It has been a month already since we went public with Gitpod.io. We want to take a moment and send out a big thank you for all the great',
+                                image: 'october-2018-release.jpeg',
+                                slug: 'october-2018-release',
+                                subtitle: "What's new this month?",
+                                title: 'Gitpod — October 2018 Release',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fgitpod-october-2018-release-672c91294b40',
+                                filename: 'october-2018-release.md'
+                            },
+                            {
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fdeveloping-a-nuxt-js-app-entirely-in-your-browser-94e7525f5eca',
+                                date: 'Fri Sep 21 2018 13:23:34 GMT+0000 (UTC)',
+                                author: b,
+                                title: 'Developing a Nuxt.js app entirely in your browser',
+                                image: 'developing-nuxtjs-in-a-browser.jpeg',
+                                excerpt:
+                                    'A walkthrough to create a fully working Nuxt.js web application with only a browser, using Gitpod.io the online IDE for GitHub.',
+                                slug: 'developing-nuxtjs-in-browser',
+                                filename: 'developing-nuxtjs-in-browser.md'
+                            },
+                            {
+                                author: 'geropl',
+                                date: 'Wed Sep 12 2018 08:25:15 GMT+0000 (UTC)',
+                                excerpt:
+                                    'Since we released Gitpod into Public Beta it has been incredibly exciting to see people from all over the world use our service.',
+                                image: 'docker-in-gitpod.jpeg',
+                                slug: 'docker-in-gitpod',
+                                title: 'Bring your own (Docker) image to Gitpod',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fbring-your-own-docker-image-to-gitpod-52db1aa861de',
+                                filename: 'docker-in-gitpod.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Tue Jul 31 2018 06:02:26 GMT+0000 (UTC)',
+                                excerpt:
+                                    'After over one year of intensive work, we are proud to announce the public Beta of Gitpod. Gitpod is an online IDE which can be launched',
+                                image: 'gitpod-online-ide.png',
+                                slug: 'gitpod-online-ide',
+                                subtitle: 'One Click to Coding!',
+                                title: 'Gitpod — Online IDE For GitHub',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fgitpod-gitpod-online-ide-for-github-6296b907a886',
+                                filename: 'gitpod-online-ide.md'
+                            },
+                            {
+                                author: b,
+                                date: 'Thu Jul 05 2018 11:49:24 GMT+0000 (UTC)',
+                                excerpt: 'As software developers, we already spend a lot of our time in browsers.',
+                                image: 'a-better-github-flow.png',
+                                slug: 'github-flow',
+                                subtitle: 'Stop setting up, start coding!',
+                                title: 'A Better GitHub Flow',
+                                url: 'https:\u002F\u002Fmedium.com\u002Fgitpod\u002Fgithub-flows-better-with-gitpod-e455d17990f9',
+                                filename: 'github-flow.md'
+                            }
+                        ],
+                        guides: [
+                            {
+                                author: g,
+                                date: 'Friday, 5 Jun 2021 11:00:00 UTC',
+                                title: 'Zero-commitment onboarding to NEAR using Gitpod',
+                                slug: 'zero-commitment-onboarding-to-near-using-gitpod',
+                                excerpt:
+                                    'NEAR has discovered a fantastic tool called Gitpod that gives new developers a kick-start, improves the efficacy of community code reviews, and saves resources on a developer’s machine',
+                                teaserImage: a,
+                                image: a,
+                                filename: 'zero-commitment-onboarding-to-near-using-gitpod.md'
+                            },
+                            {
+                                author: g,
+                                date: 'Thursday, 4 Jun 2021 11:00:00 UTC',
+                                title: 'Set up a full Drupal dev environment in a browser',
+                                slug: 'set-up-a-full-drupal-dev-environment-in-a-browser',
+                                excerpt:
+                                    'This project demonstrates a complete Drupal 9 development environment, utilizing ddev and Gitpod, through your browser.',
+                                teaserImage: 'teaser-image.png',
+                                image: a,
+                                filename: 'set-up-a-full-drupal-dev-environment-in-a-browser.md'
+                            }
+                        ]
+                    };
+                })(
+                    'teaser.jpg',
+                    'svenefftinge',
+                    null,
+                    'teaser.png',
+                    'csweichel',
+                    'svenefftinge, JohannesLandgraf',
+                    'christinfrohne, ghuntley',
+                    'jankeromnes',
+                    'evolution-of-devx.jpg',
+                    'mikenikles',
+                    'header-desktop.png',
+                    'ghuntley',
+                    'meysholdt',
+                    'cloud-download.png',
+                    'open.jpg',
+                    'teaser-brew.png',
+                    'winter.jpeg',
+                    'globe.png',
+                    'local-services.jpg',
+                    'devops.jpg',
+                    'tools.jpg',
+                    'teaser-gitpodify.jpg',
+                    'teaser-launch-min.jpg',
+                    'when-code-reviews-lgtm.jpeg',
+                    'akosyakov'
+                ),
+                host: location.host,
+                route: true,
+                spa: false,
+                hydrate: {
+                    status: 200,
+                    error: null,
+                    nodes: [import('/./_app/pages/$layout.svelte-09f9cae4.js'), import('/./_app/pages/privacy.svelte-81b4da0c.js')],
+                    page: {
+                        host: location.host, // TODO this is redundant
+                        path: '/privacy',
+                        query: new URLSearchParams(''),
+                        params: {}
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div id="svelte">
+            <div class="svelte-expkgt">
+                <nav id="choose-project-observer-target-top" class="mx-auto w-full svelte-tcyliy">
+                    <div class="flex items-center justify-between h-20 px-4 sm:px-8">
+                        <a href="/" aria-label="Gitpod"
+                            ><svg width="131" height="40" viewBox="0 0 131 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M56.0449 30.4444C50.1877 30.4444 46 26.25 46 20.7222C46 15.1944 50.216 11 55.96 11C58.7895 11 60.9966 12.0833 62.8358 13.6667L61.6757 16.0278C60.2609 14.6389 58.45 13.5 55.8468 13.5C51.6025 13.5 48.5466 16.4167 48.5466 20.7222C48.5466 25.0278 51.5742 27.9444 55.8751 27.9444C59.5818 27.9444 62.2133 25.75 62.6377 22.4167H55.0828V19.9167H65.5239V20.0278C65.5239 26.1389 62.0152 30.4444 56.0449 30.4444Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path d="M68.1803 16.5556H70.6137V30.4444H68.1803V16.5556Z" fill="#12100C"></path>
+                                <path
+                                    d="M82.1393 30.25V28.1389C81.3753 28.2778 80.7528 28.3611 79.8473 28.3611C78.6589 28.3611 78.2345 27.75 78.2345 26.6944V18.6389H82.111V16.5556H78.2345V12.8333H75.8011V16.5556H72.9998V18.6389H75.8011V26.5556C75.8011 29.5 77.131 30.5833 79.7059 30.5833C80.6113 30.5833 81.4036 30.4444 82.1393 30.25Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M87.0989 36H84.6655V16.5556H87.0989V18.5556C88.259 17.0278 89.9851 16.2222 92.0789 16.2222C96.0969 16.2222 98.8981 19.2222 98.8981 23.5C98.8981 27.7778 96.0969 30.7778 92.0789 30.7778C90.07 30.7778 88.4288 30 87.0989 28.4167V36ZM86.9292 23.5C86.9292 26.5833 88.7967 28.5556 91.6545 28.5556C94.5123 28.5556 96.3798 26.5556 96.3798 23.5C96.3798 20.4444 94.5123 18.4444 91.6545 18.4444C88.7967 18.4444 86.9292 20.4167 86.9292 23.5Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M100.413 23.5C100.413 27.6667 103.582 30.7778 107.826 30.7778C112.071 30.7778 115.24 27.6667 115.24 23.5C115.24 19.3333 112.071 16.2222 107.826 16.2222C103.582 16.2222 100.413 19.3333 100.413 23.5ZM112.722 23.5C112.722 26.3889 110.769 28.4722 107.826 28.4722C104.884 28.4722 102.931 26.3889 102.931 23.5C102.931 20.6111 104.884 18.5278 107.826 18.5278C110.769 18.5278 112.722 20.6111 112.722 23.5Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M128.567 11H131V30.4444H128.567V28.4444C127.406 29.9722 125.68 30.7778 123.587 30.7778C119.569 30.7778 116.767 27.7778 116.767 23.5C116.767 19.2222 119.569 16.2222 123.587 16.2222C125.596 16.2222 127.237 17 128.567 18.5833V11ZM128.736 23.5C128.736 20.4167 126.869 18.4444 124.011 18.4444C121.153 18.4444 119.286 20.4444 119.286 23.5C119.286 26.5556 121.153 28.5556 124.011 28.5556C126.869 28.5556 128.736 26.5833 128.736 23.5Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    d="M69.4026 14.7302C70.3643 14.7302 71.1439 13.9679 71.1439 13.0275C71.1439 12.087 70.3643 11.3247 69.4026 11.3247C68.4408 11.3247 67.6612 12.087 67.6612 13.0275C67.6612 13.9679 68.4408 14.7302 69.4026 14.7302Z"
+                                    fill="#12100C"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M21.388 1.99199C22.4572 3.8871 21.8071 6.30126 19.936 7.38418L8.30155 14.1176C7.99402 14.2956 7.8042 14.6271 7.8042 14.9861V25.5563C7.8042 25.9153 7.99402 26.2467 8.30155 26.4247L17.511 31.7548C17.8141 31.9301 18.1859 31.9301 18.489 31.7548L27.6985 26.4247C28.006 26.2467 28.1958 25.9153 28.1958 25.5563V18.9825L19.9175 23.7132C18.0406 24.7858 15.6605 24.1142 14.6015 22.2133C13.5425 20.3123 14.2056 17.9017 16.0825 16.8292L27.9277 10.0602C31.5358 7.99827 36 10.6386 36 14.8346V26.3588C36 29.0581 34.572 31.5504 32.258 32.8896L21.6846 39.009C19.4014 40.3303 16.5986 40.3303 14.3154 39.009L3.74196 32.8896C1.42803 31.5504 0 29.0581 0 26.3588V14.1835C0 11.4843 1.42803 8.99201 3.74196 7.65282L16.064 0.521394C17.9351 -0.561524 20.3188 0.0968851 21.388 1.99199Z"
+                                    fill="url(#paint0_linear)"
+                                ></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="27.0957" y1="6.04878" x2="8.28086" y2="35.2541" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFB45B"></stop>
+                                        <stop offset="1" stop-color="#FF8A00"></stop>
+                                    </linearGradient>
+                                </defs></svg
+                        ></a>
+                        <div class="nav-items hidden px-2 space-x-6 items-center md:space-x-12 svelte-tcyliy">
+                            <a
+                                href="/features"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Features</a
+                            ><a
+                                href="/screencasts"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u highlighted"
+                                >Screencasts</a
+                            ><a
+                                href="/blog"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Blog</a
+                            ><a
+                                href="/docs"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Docs</a
+                            ><a
+                                href="/changelog"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Changelog</a
+                            ><a
+                                href="/pricing"
+                                sveltekit:prefetch
+                                class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black svelte-qtdv9u"
+                                >Pricing</a
+                            >
+                        </div>
+                        <div class="login-wrapper hidden svelte-tcyliy">
+                            <a
+                                href="https://gitpod.io/login/"
+                                class="
+                                    flex
+                                    items-center
+                                    justify-center
+                                    h-8
+                                    w-20
+                                    rounded-xl
+                                    bg-black
+                                    font-bold
+                                    text-off-white text-sm
+                                    focus:text-off-white focus:bg-black-hover
+                                    hover:text-off-white hover:bg-black-hover
+                                "
+                                >Login
+                            </a>
+                        </div>
+                        <button aria-label="Show / hiide nav items" class="flex justify-center items-center h-6 w-12 rounded-xl bg-black svelte-z7a2ag">
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="16" height="2" rx="1" fill="#F4F2F1"></rect>
+                                <rect y="6" width="16" height="2" rx="1" fill="#F3F1F0"></rect>
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+                <main class="svelte-1c2lq7w">
+                    <article class="text-blob">
+                        <h1>Privacy Policy</h1>
+
+                        <p>
+                            Below we provide you with an overview of what data we collect for what purpose and how we ensure the protection of the data
+                            <a href="#short">in short</a>
+                            and
+                            <a href="#detailed">in a more detailed form</a>.
+                        </p>
+
+                        <p>
+                            The controller is Gitpod GmbH, Am Germaniahafen 1, 24143 Kiel/Germany, registered with the commercial register of the local court
+                            (Amtsgericht) Kiel under HRB 22228, represented by the managing directors Sven Efftinge, Moritz Eysholdt, Dr. Jan Köhnlein (<strong
+                                >&quot;we/us/our&quot;</strong
+                            >
+                            or <strong>&quot;Gitpod&quot;</strong>). We offer services to our users and visitors (the
+                            <strong>&quot;User/you/your&quot;</strong>) on our website
+                            <a href="/">https://gitpod.io</a>
+                            (<strong>&quot;Website&quot;</strong>) as well as related services including the use of our service according to our
+                            <a href="/terms">terms of service</a> (jointly the <strong>&quot;Service&quot;</strong>).
+                        </p>
+                        <p>For any questions about data protection you may contact us via <a href="mailto:data@gitpod.io">data@gitpod.io</a>.</p>
+                        <h2 id="short">In Short</h2>
+
+                        <ul>
+                            <li>
+                                <h3>Controller</h3>
+                                <p>
+                                    Gitpod GmbH, am Germaniahafen 1, 24143 Kiel/Germany, registered with the commercial register of the local court
+                                    <em>(Amtsgericht)</em>
+                                    Kiel under HRB 22228, represented by the managing directors Sven Efftinge, Moritz Eysholdt, Dr. Jan Köhnlein, Email:
+                                    <a href="mailto:contact@gitpod.io">contact@gitpod.io</a>.
+                                </p>
+                                <p>We have appointed a data protection officer who may be contacted via <a href="mailto:data@gitpod.io">data@gitpod.io</a></p>
+                                <p>This privacy policy also contains further data controllers.</p>
+                            </li>
+                            <li>
+                                <h3>Purpose and Legal Basis of Processing Data; Provision and Recipients of Data</h3>
+                                <p>Your data will be used for the following purposes:</p>
+                                <ul>
+                                    <li>to provide the functioning Website,</li>
+                                    <li>to implement this privacy policy and carrying out the contractual relationship and our Service,</li>
+                                    <li>to analyze how our Service is used and improve it,</li>
+                                    <li>to detect and prevent fraudulent or abusive use,</li>
+                                    <li>to provide and analyze our pages on Social Media,</li>
+                                    <li>to send you important updates about our service,</li>
+                                    <li>to send you marketing content, including newsletters,</li>
+                                    <li>to act according to our legal obligations, or</li>
+                                    <li>as otherwise explained in this privacy policy or by any communication by us.</li>
+                                </ul>
+                                <p>Furthermore, your data will be processed by us with your explicit consent.</p>
+                                <p>
+                                    Applicable legal provisions are in particular those of the regulation (EU) 2016/679 of the European Parliament and Council
+                                    of 27 April 2016, repealing the directive 95/46/EC, on the protection of individuals with regard to the processing of
+                                    personal data, on the free movement of such data (&quot;General Data Protection Regulation&quot;, GDPR) as well as in the
+                                    Federal Data Protection Act <em>(Bundesdatenschutzgesetz, BDSG)</em> and the German Telemedia Act
+                                    <em>(Telemediengesetz, TMG) </em>.
+                                </p>
+                                <p>
+                                    We as well as our external service partners receive your data for processing those for the purpose of providing our Service.
+                                    You provide data if this is necessary for the aforementioned purposes. In the event you refrain from providing such data you
+                                    may face legal disadvantages, for example, limited or no possibility of using our Service.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Transfer of Data outside of the EU</h3>
+                                <p>
+                                    In course of data processing by us data may be transferred to third countries, i.e. countries outside the EU. This may
+                                    happen via implementation of third party providers such as cloud services and external service partners which process data
+                                    on our behalf.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Your Rights</h3>
+                                <p>
+                                    You have the right to withdraw your consent relating to the use of data any time with effect for the future when such data
+                                    processing is based in your consent.
+                                </p>
+                                <p>
+                                    You are entitled to access the data stored by us and are also entitled to amend or rectify your data if such data are
+                                    incorrect.
+                                </p>
+                                <p>
+                                    You have the right to object to the processing of your personal data, for example if your personal data are processed for
+                                    direct marketing purposes.
+                                </p>
+                                <p>You are entitled to request the erasure of your data.</p>
+                                <p>
+                                    You are entitled to receive information about the stored data (in a structured, current and machine-readable format) at any
+                                    time and to request the correction or deletion of the data in case of incorrect data storage.
+                                </p>
+                                <p>
+                                    You have also the right to lodge a complaint with a supervisory authority at your choice. An overview of the European
+                                    National Data Protection Authorities may be found here:
+                                    <a href="http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
+                                        >http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a
+                                    ><br />
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Period for Storing Data; Deletion</h3>
+                                <p>The data are deleted if such data are no longer necessary for the purpose of processing.</p>
+                            </li>
+                            <li>
+                                <h3>Data Security</h3>
+                                <p>
+                                    We have implemented measures to ensure data and IT security. The Website is operated through a safe SSL-connection. If an
+                                    SSL-connection is activated third parties are prevented from reading any data that are transferred by you to us.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <h2 id="detailed">More Detailed Information</h2>
+
+                        <ol type="I">
+                            <li><a href="#details-I">What are Personal Data?</a></li>
+                            <li><a href="#details-II">How are my Data processed when visiting the Website and contacting us?</a></li>
+                            <li><a href="#details-III">What Third Party Services, Cookies, Analytics and Social Plugins does the Website use?</a></li>
+                            <li><a href="#details-IV">How are my data processed when using the Gitpod Service (with User Account)?</a></li>
+                            <li><a href="#details-V">How are Data processed when visiting our Social Media pages?</a></li>
+                            <li>
+                                <a href="#details-VI"
+                                    >Are my Data transferred to Third Parties? Does automated decision making including profiling take place?</a
+                                >
+                            </li>
+                            <li><a href="#details-VII">Are my Data transferred outside the EU?</a></li>
+                            <li><a href="#details-VIII">Your Rights</a></li>
+                            <li>
+                                <a href="#details-IX"
+                                    >Duration of Storing your Data; Data Security; Access and Changes to this Privacy Policy; Contact Details</a
+                                >
+                            </li>
+                        </ol>
+                        <ol type="I" class="toc">
+                            <li>
+                                <h2 id="details-I">What are Personal Data?</h2>
+                                <p>
+                                    Personal data are any information relating to an identified or identifiable natural person. Personal data includes e.g.
+                                    name, email address or telephone number. Personal data also includes information about hobbies, memberships or websites
+                                    viewed. We will only collect, use and/or pass on personal data if this is permitted by law or if the User consents to the
+                                    data processing.
+                                </p>
+                            </li>
+                            <li>
+                                <h2 id="details-II">How are my Data processed when visiting the Website and contacting us?</h2>
+                                <h3>Visiting the Website</h3>
+                                <p>
+                                    If you browse our Website the provider of the website collects and stores information automatically in so-called
+                                    &quot;server-log-files&quot; that your browser transfers to us. These are:
+                                    <em
+                                        >type/version of the browser, system software used, referrer URL, hostname of the device, time of the server request,
+                                        IP-address or other unique device identifier.
+                                    </em>
+                                </p>
+
+                                <p>
+                                    If you are using a mobile device the following data may also be processed additionally through the Website:
+                                    <em>country code, language, hostname of the device, name and version of the operational system. </em>
+                                </p>
+
+                                <p>The data points in the preceding two paragraphs are also forwarded to a user data platform.</p>
+
+                                <p>
+                                    We use these data only for statistical analysis for the purpose of operation, security and optimization of the performance
+                                    and content on our Website. This data processing is based on Art. 6 (1) c. for providing a secure and stable Website and
+                                    Service. The data processing may also be based on Art. 6 (1) f. GDPR or TMG and we wish to achieve the legitimate interests
+                                    of stabilizing and improving our Website, quality insurance and fraud prevention.
+                                </p>
+
+                                <h3>Contacting us</h3>
+                                <p>
+                                    When contacting us via email, the User’s details are stored for the purpose of processing the enquiry and, if applicable,
+                                    follow-up questions based on your consent based on the legal basis of Art. 6 (1) a. GDPR or fulfilling your request based on
+                                    Art. 6 (1) b. GDPR.
+                                </p>
+
+                                <h3>Emails and Newsletters</h3>
+                                <p>With the newsletter we inform the user about the Website, our Service and us.</p>
+
+                                <p>
+                                    When registering for the newsletter via the Website, you have to provide an email address. This email address will be
+                                    transmitted to and stored by us (or a provider as specified below). By submitting your address you have given your consent
+                                    to the processing of your personal data for receiving our newsletter and analyzing such newsletters according to Art. 6 (1)
+                                    a. GDPR and we may process such data accordingly.
+                                </p>
+
+                                <p>
+                                    We may also send you newsletters referring to similar services and products if you have an existing contractual relationship
+                                    with us and you did not object receiving such emails. The legal basis for such processing of data for sending and analyzing
+                                    such newsletters is your consent (Art. 6 (1) a. GDPR) or an existing contractual relationship (Art. 6 (1) b. GDPR).
+                                </p>
+
+                                <p id="customer-io">
+                                    <strong>Use of Customer.io: </strong> The mail provider <strong>&quot;Customer.io&quot;</strong> by Peaberry Software Inc.,
+                                    921 SW Washington Street Suite 820 Portland, OR 97205, USA receives and processes on our behalf the data necessary for the
+                                    emails and newsletters, in particular the email address. Customer.io provides Data Residency in the EU. For more
+                                    information, refer to <a href="https://customer.io/legal/privacy-policy/">https://customer.io/legal/privacy-policy/</a>.
+                                </p>
+
+                                <p>
+                                    The data are stored for the purpose of newsletter subscription will be stored by us until you unsubscribe from the
+                                    newsletter and will be deleted from our servers as well as from the servers of Mailchimp after you unsubscribe from the
+                                    newsletter. Data stored by us for other purposes (e.g. email address for the use of our Service) remain unaffected.
+                                </p>
+
+                                <p>
+                                    <strong
+                                        >You can withdraw your consent or object to the processing of data (email address) and their respective use for sending
+                                        the newsletter and analyzing your data at any time.</strong
+                                    >
+                                    This can be done free of charge (except for the transmission costs) and via a link in the newsletter itself or notification
+                                    to us.
+                                </p>
+                            </li>
+                            <li>
+                                <h2 id="details-III">What Third Party Services, Cookies, Analytics and Social Plugins does the Website use?</h2>
+
+                                <h3>Cookies</h3>
+                                <p>
+                                    In order to offer you a convenient online service featuring numerous functions, our Website uses text files
+                                    (<strong>&quot;Cookies&quot;</strong>) containing information to identify returning visitors for the time of their visit to
+                                    our Website. Cookies are usually saved on your device and do not cause any harm. Cookies facilitate the transfer of specific
+                                    content, such as entering data, which has already been supplied, and help us identify popular sections of our Website.
+                                </p>
+
+                                <p>
+                                    The processing of data when using Cookies is based on our legitimate interests of a statistical analysis of the User
+                                    relationship for marketing and quality assurance purposes according to Art. 6 (1) f. GDPR or TMG.
+                                </p>
+
+                                <p>
+                                    <strong>OPT-OUT:</strong> You can deactivate the use of Cookies in the settings of your browser at any time. To find out how
+                                    to change the settings, please consult the help function of your browser. Users may also manage a lot of online Cookies by
+                                    different businesses on the US-website
+                                    <a href="http://www.aboutads.info/choices/">http://www.aboutads.info/choices/</a>
+                                    or the EU-website
+                                    <a href="http://www.youronlinechoices.com/uk/your-ad-choices/">http://www.youronlinechoices.com/uk/your-ad-choices/</a>.
+                                    However, we want to point out that without Cookies the use and comfort of use of our services may be restricted.
+                                </p>
+
+                                <h3>Customer.io</h3>
+                                <p>
+                                    We use the services by Customer.io for sending newsletters and emails. For details on Customer.io please refer to the
+                                    <a href="#customer-io">respective section above</a>.
+                                </p>
+
+                                <h3>Google Analytics</h3>
+                                <p>
+                                    We use Google Analytics a web analytics tool offered by Google (inter alia Google Ireland Limited, Gordon House, Barrow
+                                    Street, Dublin 4, Ireland and Google LLC, Mountain View, CA, USA (<strong>&quot;Google&quot;</strong>). For analysis, text
+                                    files will be stored on your device. The information stored in the corresponding files about the use of this website are
+                                    generally transmitted and stored in Google server in the USA. As the IP anonymization is active on this Website, your IP
+                                    address will be shortened by Google within the member states of the European Union (EU). This information will be used to
+                                    evaluate your use of the services offered here and enable the operator of this website to analyze your website activity and
+                                    provide other services associated with the website service. The IP address transmitted from your browser, as part of Google
+                                    Analytics will not be merged with other data from Google.
+                                </p>
+
+                                <p>
+                                    When the IP address is processed this is based on our legitimate interests of a statistical analysis of the relationship for
+                                    marketing and quality assurance purposes according to Art. 6 (1) f. GDPR or TMG.
+                                </p>
+
+                                <p>
+                                    We point out that an <a href="#details-VI">automated decision making or profiling</a> can take place when integrating Google
+                                    or an existing Google account.
+                                </p>
+                                <p>
+                                    For Users who have their usual residence in the European Economic Area or Switzerland, Google Ireland Limited is the data
+                                    controller for your data, unless otherwise stated in the privacy notices of a particular service. Google Ireland Limited is
+                                    therefore the company affiliated with Google which is responsible for processing your data and complying with applicable
+                                    data protection laws.
+                                </p>
+                                <p>
+                                    You can also find more information in Google&#39;s privacy policy
+                                    <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.
+                                </p>
+
+                                <p>
+                                    <strong>OPT-OUT:</strong> You can deactivate the use of Google Analytics by enabling the
+                                    <a href="https://allaboutdnt.com/">&quot;Do Not Track&quot;</a>
+                                    setting in your web browser. You may follow the instructions in
+                                    <a href="https://allaboutdnt.com/#adjust-settings">this guide.</a>
+                                </p>
+
+                                <h3>Google Fonts</h3>
+                                <p>
+                                    Our Website uses the <strong>&quot;Google Fonts&quot;</strong> service of Google (inter alia Google Ireland Limited, Gordon
+                                    House, Barrow Street, Dublin 4, Ireland and Google LLC, Mountain View, CA, USA to integrate and display text on the website.
+                                    For this purpose Google may process your data (including the IP address) on servers in the USA.
+                                </p>
+
+                                <p>
+                                    When the IP address is processed this is based on our legitimate interests of technical functionality of the Website based
+                                    on Art. 6 (1) f. GDPR or TMG.
+                                </p>
+                                <p>
+                                    For Users who have their usual residence in the European Economic Area or Switzerland, Google Ireland Limited is the data
+                                    controller for your data, unless otherwise stated in the privacy notices of a particular service. Google Ireland Limited is
+                                    therefore the company affiliated with Google which is responsible for processing your data and complying with applicable
+                                    data protection laws.
+                                </p>
+                                <p>
+                                    You can also find more information in Google&#39;s privacy policy:
+                                    <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.
+                                </p>
+
+                                <h3>Segment</h3>
+                                <p>
+                                    We use Segment, provided by Segment.io, Inc., on our Website and Product to capture marketing- and product-related user
+                                    information in order to offer the best experience to our users. Segment operates in
+                                    <a href="https://segment.com/docs/privacy/complying-with-the-gdpr/">compliance with the GDPR</a>.
+                                </p>
+                                <p>
+                                    You can also find more information in Segment&#39;s privacy policy:
+                                    <a href="https://segment.com/legal/privacy/">https://segment.com/legal/privacy/</a>.
+                                </p>
+
+                                <p>
+                                    <strong>OPT-OUT:</strong> You can deactivate the use of Segment by enabling the
+                                    <a href="https://allaboutdnt.com/">&quot;Do Not Track&quot;</a>
+                                    setting in your web browser. You may follow the instructions in
+                                    <a href="https://allaboutdnt.com/#adjust-settings">this guide.</a>
+                                </p>
+
+                                <h3>Mixpanel</h3>
+                                <p>
+                                    We use Mixpanel, provided by Mixpanel, Inc., on our Website and Product to capture marketing- and product-related user
+                                    information in order to offer the best experience to our users. Mixpanel operates in
+                                    <a href="https://mixpanel.com/legal/mixpanel-gdpr/">compliance with the GDPR</a>.
+                                </p>
+                                <p>
+                                    You can also find more information in Mixpanel&#39;s privacy policy:
+                                    <a href="https://mixpanel.com/legal/privacy-policy/">https://mixpanel.com/legal/privacy-policy/</a>.
+                                </p>
+
+                                <p>
+                                    <strong>OPT-OUT:</strong> You can deactivate the use of Mixpanel by enabling the
+                                    <a href="https://allaboutdnt.com/">&quot;Do Not Track&quot;</a>
+                                    setting in your web browser. You may follow the instructions in
+                                    <a href="https://allaboutdnt.com/#adjust-settings">this guide.</a>
+                                </p>
+
+                                <h3 id="youtube">Youtube</h3>
+                                <p>
+                                    We use the YouTube.com platform to [post our own videos and] make them publicly available. YouTube is operated by Google
+                                    (inter alia Youtube LLC, USA and Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland).
+                                </p>
+
+                                <p>
+                                    Some of our Website contain links to the YouTube platform. In general, we are not responsible for the content of websites to
+                                    which links are provided. In the event that you click a link on YouTube, we would like to point out that YouTube stores the
+                                    data of its users (e.g. personal information, IP address) in accordance with its own privacy guidelines and uses them for
+                                    business purposes.
+                                </p>
+                                <p>
+                                    On our Website we also integrate videos stored on YouTube directly. In this integration, content from the YouTube website is
+                                    displayed in sub-areas of a browser window. However, YouTube videos are only accessed by clicking on them separately. This
+                                    technique is also called ‘framing’. If you click on a (sub-)page of our Website where YouTube videos are included, a
+                                    connection is established to the YouTube servers and the content is displayed on the Website by notifying your browser.
+                                </p>
+                                <p>
+                                    YouTube content is only integrated in the ‘extended data protection mode’. YouTube provides this by itself, thereby ensuring
+                                    that YouTube does not initially store any cookies on your device. However, when you access the relevant pages, the IP
+                                    address and the other data are processed by Youtube. However, this information cannot be assigned to you unless you log in
+                                    your YouTube or another Google service (e.g. Gmail) account or are permanently registered before accessing the site.
+                                </p>
+                                <p>
+                                    As soon as you click on an integrated video, YouTube only stores cookies on your device that do not contain any personally
+                                    identifiable data, unless you are currently logged in to a Google service. These cookies can be prevented by appropriate
+                                    browser settings and extensions (see above [add link to opt-out in the “Cookies” section above].
+                                </p>
+                                <p>
+                                    For Users who have their usual residence in the European Economic Area or Switzerland, Google Ireland Limited is the data
+                                    controller for your data, unless otherwise stated in the privacy notices of a particular service. Google Ireland Limited is
+                                    therefore the company affiliated with Google which is responsible for processing your data and complying with applicable
+                                    data protection laws.
+                                </p>
+                                <p>Further information about data processing and privacy practices of YouTube and Google can be found here:</p>
+                                <ul>
+                                    <li><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+                                    <li>
+                                        <a href="https://support.google.com/youtube/answer/171780?hl=e"
+                                            >https://support.google.com/youtube/answer/171780?hl=e</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2 id="details-IV">How are my Data processed when using the Gitpod Service (with User Account)?</h2>
+
+                                <h3>Registration and Access to Existing Account</h3>
+                                <p>
+                                    In order to fully use our full online Service, you will need to register. You may only register if you have an existing user
+                                    account at the third party services set forth on the Website, for example the service offered on the website
+                                    <a href="https://github.com">https://github.com</a> operated by GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA
+                                    94107, USA, (<strong>&quot;Existing Account&quot;</strong>).
+                                </p>
+
+                                <p>
+                                    When you sign up for using the Gitpod Service via your Existing Account, data at such Existing Account with be accessible by
+                                    us with your explicit consent only. Such data include:
+                                    <em>user profile data (name, username and email address), list of repositories you have access to.</em>
+                                </p>
+
+                                <p>You can manage these data at any time via using your Existing Account linked to the Gitpod Service.</p>
+
+                                <p>
+                                    The data entered or transferred via the Existing Account as part of the registration process and any further data entered,
+                                    will only be used via the Website and with our support to the extent that this processing is necessary for the fulfillment
+                                    of a contract with us or for the implementation of pre-contractual measures, i.e. use of the Gitpod Service, as well as for
+                                    the execution and processing of inquiries by you.
+                                </p>
+
+                                <p>
+                                    The processing of data when using our Service is generally based on your explicit consent when signing up (based on Art. 6
+                                    (1) a. GDPR) as well as the legal basis of Art. 6 (1) b. GDPR or TMG, i.e. the data will be processed, when this is
+                                    necessary for the fulfillment of the contract between you and us or for executing any measures that take place on your
+                                    request prior to the contract.
+                                </p>
+
+                                <h3>Use of the Gitpod Service</h3>
+                                <p>
+                                    For the further use of the Gitpod Service on the Website you submit more data depending on the way of use of our services
+                                    according to our <a href="/terms">terms of service</a>.
+                                </p>
+
+                                <p>
+                                    We use the information and data collected in the Service, including your personal data, in order to fulfill our contractual
+                                    obligations for you/our customers based on the legal basis of Art. 6 (1) b. GDPR or TMG and as further set forth in this
+                                    privacy policy or our <a href="/terms">terms of service</a>. This also includes sending you emails and notifications
+                                    necessary for the Service.
+                                </p>
+
+                                <p>
+                                    In the event we process personal data controlled by the customer as data processor we will offer and enter into a respective
+                                    separate data processing agreement with such customer whereas such data processing agreement may be requested via email to
+                                    <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
+                                </p>
+
+                                <p>
+                                    We do not store or receive any kind of payment or credit card data but use external payment providers as set forth on the
+                                    Website.
+                                </p>
+
+                                <p>
+                                    We may also analyze your personal data when using the Gitpod Service for the purpose of improving our Service. We may also
+                                    store your data to assure fair use of our Service. The legal basis for analyzing and storing such data is Art. 6 (1) f. GDPR
+                                    with our legitimate interest of marketing, quality assurance and fraud prevention.
+                                </p>
+                                <p>
+                                    We also process your data if this is necessary to comply with our legal obligations (legal basis: Art. 6 (1) c. GDPR), for
+                                    example legal retention periods.
+                                </p>
+                                <p>For the abovementioned purposes your data may also be shared with our shareholders or affiliated companies.</p>
+                                <h3>Integration of Third Party Services</h3>
+                                <p>
+                                    When using the Gitpod Service your data may also be processed by third party providers as set forth in this privacy policy.
+                                    For details please refer to <a href="#details-III">III</a> above as well as <a href="#details-VI">VI</a> and
+                                    <a href="#details-VII">VIII</a> below.
+                                </p>
+
+                                <p>
+                                    When using our paid Service your data will be processed by external payment providers. Currently we use the payment services
+                                    by Stripe (for EU/EEA: Stripe Payments Europe, Ltd., 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Irland; more
+                                    information:
+                                    <a href="https://stripe.com/de/privacy">https://stripe.com/de/privacy</a>
+                                    ; contact:
+                                    <a href="https://stripe.com/contact">https://stripe.com/contact</a>) and Chargebee (by Chargebee Inc. 340 S Lemon Avenue,
+                                    1537 Walnut, CA 91789, USA; more information:
+                                    <a href="https://www.chargebee.com/privacy/">https://www.chargebee.com/privacy/</a>). When using such services your data may
+                                    be processed outside the EU. The US companies of Stripe and Chargebee are each certified according to ‘Privacy Shield’ to
+                                    comply with data protection standards applicable in the EU (for more information please refer to:
+                                    <a href="https://www.privacyshield.gov/">https://www.privacyshield.gov/</a>).
+                                </p>
+                                <p>
+                                    Our service may also include links to pages on Twitter, Medium, and Spectrum Chat. For details please refer to the
+                                    <a href="#details-V">respective section below</a>.
+                                </p>
+                            </li>
+                            <li>
+                                <h2 id="details-V">How are Data processed when visiting our Social Media pages?</h2>
+                                <p>We operate pages on</p>
+                                <ul>
+                                    <li>
+                                        Twitter (twitter.com or applications) by Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA,
+                                        please also refer to:
+                                        <ul>
+                                            <li><a href="https://twitter.com/de/privacy">https://twitter.com/de/privacy</a></li>
+                                            <li><a href="https://twitter.com/personalization">https://twitter.com/personalization</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Medium (medium.com or applications) by A Medium Corporation, 799 Market Street, 5th Floor, San Francisco, CA 94103, USA,
+                                        please also refer to:
+                                        <ul>
+                                            <li>
+                                                <a href="https://policy.medium.com/medium-privacy-policy-f03bf92035c9"
+                                                    >https://policy.medium.com/medium-privacy-policy-f03bf92035c9</a
+                                                >
+                                            </li>
+                                            <li><a href="https://medium.com/me/settings">https://medium.com/me/settings</a></li>
+                                            <li><a href="https://medium.com/me/following/suggestions">https://medium.com/me/following/suggestions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Spectrum Chat (spectrum.chat or applications) by GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA,
+                                        please also refer to:
+                                        <ul>
+                                            <li><a href="https://spectrum.chat/privacy.html">https://spectrum.chat/privacy.html</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>When you visit our Social Media pages, data is processed both by us and by the responsible social media provider.</p>
+                                <p>
+                                    The respective provider of Social Media assumes the data protection obligations towards you as the user, such as information
+                                    on data processing, and is the contact person for your rights. This results from the fact that such provider has direct
+                                    access to the relevant information on the Social Media page and the processing of your data. However, you are also welcome
+                                    to contact us if this should become necessary and we will then forward the request to the respective provider if necessary.
+                                </p>
+                                <p>
+                                    When using the Social Media providers set forth above data may also be processed outside the EU. The US companies of Github
+                                    and Twitter are certified in accordance with the EU-US Privacy Shield agreement, which guarantees compliance with data
+                                    protection regulations in the EU. For more information please refer to their respective privacy policies or
+                                    <a href="https://www.privacyshield.gov">https://www.privacyshield.gov</a>
+                                    . By using Medium Services, you authorize Medium to transfer, store, and use your information in the United States and any
+                                    other country where Medium operates. Where your data is disclosed to Medium’s processors, it is subject by contract to at
+                                    least the same level of data protection as that set forth under
+                                    <a href="https://medium.com/policy/medium-privacy-policy-f03bf92035c9"
+                                        >https://medium.com/policy/medium-privacy-policy-f03bf92035c9</a
+                                    >.
+                                </p>
+                                <p>
+                                    With our Social Media pages, we can communicate with you and provide you with interesting information. We may receive
+                                    further data from you through your comments, shared images, messages and reactions, which are then processed to answer or
+                                    communicate with you. If you use Social Media on several end devices, a cross-device analysis of the data can take place.
+                                    Furthermore, the providers of the Social Media pages may also use cookies and tracking technologies to analyze and improve
+                                    their services.
+                                </p>
+                                <p>
+                                    Data processing takes place with your consent or for the purpose of answering your enquiry (Art. 6 (1) a, b GDPR) or on the
+                                    basis of legitimate interests in improving the services, advertising and marketing activities and presentation to the
+                                    outside world (Art. 6 (1) f GDPR).
+                                </p>
+                                <p>
+                                    As Twitter user, you can at any time influence how your user behavior is recorded when you visit Twitter pages. To do this,
+                                    you can manage the settings for advertising preferences in your Twitter account or under
+                                    <a href="https://twitter.com/personalization">https://twitter.com/personalization</a>
+                                    or
+                                    <a href="https://twitter.com/de/privacy#overlay-chapter2.10.1">https://twitter.com/de/privacy#overlay-chapter2.10.1</a>
+                                    or without an account under
+                                    <a href="https://pscp.tv/account/settings">https://pscp.tv/account/settings</a>. Twitter also provides opportunities to
+                                    contact or exercise rights at <a href="https://help.twitter.com/forms/privacy">https://help.twitter.com/forms/privacy</a>.
+                                </p>
+                                <p>
+                                    As Medium user, you can at any time influence how your user behavior is recorded when you visit Medium pages. To do this,
+                                    you can manage the settings for advertising preferences in your Medium account or under
+                                    <a href="https://medium.com/me/settings">https://medium.com/me/settings</a>
+                                    or
+                                    <a href="https://medium.com/me/following/suggestions">https://medium.com/me/following/suggestions</a>. Medium also provides
+                                    opportunities to contact or exercise rights in their privacy policy under
+                                    <a href="https://medium.com/policy/medium-privacy- policy-f03bf92035c9"
+                                        >https://medium.com/policy/medium-privacy- policy-f03bf92035c9</a
+                                    >.
+                                </p>
+                                <p>
+                                    As a user of Spectrum Chat / Github you can find more information on how to influence the processing of your data in their
+                                    privacy policy
+                                    <a href="https://spectrum.chat/privacy.html">https://spectrum.chat/privacy.html</a>
+                                    or contact them via
+                                    <a href="mailto:help@spectrum.chat">help@spectrum.chat</a>.
+                                </p>
+                            </li>
+                            <li>
+                                <h2 id="details-VI">Are my Data transferred to Third Parties? Does Profiling or automated decision making take place?</h2>
+
+                                <h3>Transfer of Data to Third Parties</h3>
+                                <p>
+                                    We will transfer your personal data to a third party only (i) within the scope of legal provisions, i.e. if we are obliged
+                                    to transfer the data due to a government or court order, or, (ii) if applicable, legal provisions authorize the transfer,
+                                    e.g. if the transfer is required to pursue our legitimate interests or to fulfil a contract, for example in case of mergers
+                                    and acquisitions, (iii) or if you give your explicit consent.
+                                </p>
+
+                                <p>
+                                    For more information please refer to this privacy policy or contact us via
+                                    <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
+                                </p>
+
+                                <h3>Automated Decision Making including Profiling</h3>
+                                <p>
+                                    In general we do not process any personal data via automated decision making including profiling via the Website or Service.
+                                    However, such profiling or automated decision making may happen by third party providers through the Website or Service. We
+                                    will inform you about such fact if possible.
+                                </p>
+
+                                <p>
+                                    Profiling means any automated processing of personal data consisting in the use of such personal data to evaluate certain
+                                    personal aspects relating to a natural person, in particular to analyse or predict aspects relating to the performance of
+                                    work, economic situation, health, personal preferences, interests, reliability, behaviour, location or relocation of that
+                                    natural person. Examples of such profiling include the analysis of data (e.g. based on statistical methods) with the aim of
+                                    displaying personalized advertising to the user or giving shopping tips. The data subject shall not be subject to a decision
+                                    based exclusively on automated processing, including profiling, which has legal effect against him or significantly affects
+                                    him or her in a similar manner.
+                                </p>
+                            </li>
+                            <li>
+                                <h2 id="details-VII">Are my Data transferred outside the EU?</h2>
+                                <p>
+                                    When visiting the Website and using our Service data may be transferred to countries outside the EU by the third party
+                                    services referred to in <a href="#details-III">Section III</a>.
+                                </p>
+
+                                <p>
+                                    When using our Service your data may also be processed by our cloud service provider (namely: Google Cloud) on servers
+                                    outside the EU.
+                                </p>
+
+                                <p>
+                                    The US companies providing the services of Google, Customer.io, GitHub, Stripe, Segment.io, Mixpanel and Chargebee are each
+                                    certified under EU-US-Privacy-Shield and/or comply with data protection standards applicable in the EU. For more information
+                                    on EU-US-Privacy-Shield and details about the certificates please refer to:
+                                    <a href="https://www.privacyshield.gov">https://www.privacyshield.gov</a>.
+                                </p>
+                                <p>
+                                    Your data may also be processed outside the EU when visiting our Social Media pages. For further information please refer to
+                                    <a href="#details-V">section V.</a>
+                                </p>
+                            </li>
+                            <li>
+                                <h2 id="details-VIII">Your Rights</h2>
+
+                                <p><strong>As a data subject you have the right:</strong></p>
+                                <ul>
+                                    <li>
+                                        to withdraw your consent to us at any time. As a result, we are no longer allowed to continue the processing of data
+                                        based on this consent in the future;
+                                    </li>
+                                    <li>
+                                        to object to the processing of your personal data, if your personal data are processed on the basis of legitimate
+                                        interests pursuant to Art. 6 (1) f. GDPR insofar as there are reasons for this arising from your particular situation;
+                                    </li>
+                                    <li>to obtain from us access to your personal data;</li>
+                                    <li>to obtain from us without undue delay the rectification of inaccurate personal data concerning you;</li>
+                                    <li>
+                                        to obtain the erasure of your personal data stored with us, unless the processing is necessary to exercise the right to
+                                        free expression of opinion and information, to fulfill a legal obligation, for reasons of public interest or to assert,
+                                        exercise or defend legal claims;
+                                    </li>
+                                    <li>
+                                        to demand the restriction of the processing of your personal data, if the accuracy of the data is disputed by you, the
+                                        processing is unlawful, but you refuse its deletion and we no longer need the data, but you need it to assert, exercise
+                                        or defend legal claims or you have filed an objection against the processing; and
+                                    </li>
+                                    <li>
+                                        to receive your personal data, which you have provided to us, in a structured, current and machine-readable format or to
+                                        request the transmission to another controller.
+                                    </li>
+                                </ul>
+
+                                <p>
+                                    If you wish to make use of your rights mentioned above please send an email to
+                                    <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
+                                </p>
+
+                                <p>
+                                    If you obtain access to your personal data you may, in particular, request access to the following information: the purposes
+                                    of the processing, the categories of personal data concerned, the recipients or categories of recipients to whom the
+                                    personal data have been or will be disclosed. We also will, if possible, give information about the envisaged period of time
+                                    for which the personal data will be stored, the existence of the right to request from the controller rectification or
+                                    erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such
+                                    processing, the right to lodge a complaint with a supervisory authority and where the personal data are not collected from
+                                    the data subject, any available information as to their source and the existence of automated decision-making, including
+                                    profiling and meaningful information about this event.
+                                </p>
+
+                                <p>
+                                    <strong>You have the right to lodge a complaint vis-à-vis a supervisory authority of your choice. </strong>
+                                    For example for Berlin/Germany:
+                                    <a href="https://www.datenschutz-berlin.de/kontakt.html">https://www.datenschutz-berlin.de/kontakt.html</a>. An overview of
+                                    the European National Data Protection Authorities may be found here:
+                                    <a href="http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
+                                        >http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a
+                                    >
+                                </p>
+                            </li>
+                            <li>
+                                <h2 id="details-IX">
+                                    Duration of Storing your Data; Data Security; Access and Changes to this Privacy Policy; Contact Details
+                                </h2>
+
+                                <h3>Duration of Storing your Data</h3>
+                                <p>
+                                    As a rule, we only store your personal data for as long as it is necessary for the execution of the contract or the
+                                    respective purpose and limit the storage period to an absolutely necessary minimum. Your IP-address and server-log-files (as
+                                    set forth above) are stored for seven (7) days for security and technical reasons.
+                                </p>
+
+                                <p>
+                                    In the case of long-term contractual relationships, such as the use of our Service, these storage periods may vary, but are
+                                    generally limited to the duration of the contractual relationship or, with regard to the inventory data, to the maximum
+                                    legal retention periods, e.g. in accordance with the German Commercial Code <em>(Handelsgesetzbuch, HGB)</em>
+                                    and the Tax Code
+                                    <em>(Abgabenordnung, AO)</em>
+                                </p>
+
+                                <p>
+                                    Criteria for the storage period include whether the data are still up-to-date, whether the contractual relationship with us
+                                    still exists, whether an inquiry has already been processed, whether a process has been completed or not, and whether legal
+                                    retention periods for the personal data concerned are relevant or not.
+                                </p>
+
+                                <h3>Data Security</h3>
+                                <p>
+                                    We have installed technical and organizational measures in order to safeguard our Website and/or Service against loss,
+                                    destruction, access, changes or the distribution of your data by unauthorized persons.
+                                </p>
+
+                                <p>
+                                    The Website and Service is operated through a safe SSL-connection. If an SSL-connection is activated third parties are
+                                    prevented from reading any data that are transferred by you to us.
+                                </p>
+
+                                <h3>Access and Changes to this Privacy Policy</h3>
+                                <p>
+                                    This privacy policy is accessible via our Website under <a href="/privacy">https://gitpod.io/privacy</a>
+                                    and may be downloaded and printed anytime.
+                                </p>
+
+                                <p>
+                                    We reserve the right to change the regulations of this privacy policy at any time, taking into account currently applicable
+                                    data protection provisions. In case of any changes, you will be notified.
+                                </p>
+
+                                <h3>Contact Details</h3>
+                                <p>
+                                    For any inquiries and additional questions about processing personal data please contact
+                                    <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
+                                </p>
+                                <p>Further details may be found here: <a href="/imprint">https://gitpod.io/imprint</a>.</p>
+                            </li>
+                        </ol>
+                    </article>
+                </main>
+                <div class="pb-8 bg-gray-100 text-p-footer">
+                    <footer class="footer py-large m-auto px-xx-small md:max-w-3xl md:py-small md:px-xx-small svelte-1ivs93t">
+                        <div class="flex justify-between flex-wrap pb-micro md:pb-small">
+                            <ul class="svelte-1ivs93t">
+                                <li class="svelte-1ivs93t">Gitpod</li>
+                                <li class="svelte-1ivs93t"><a href="/" class="svelte-1ivs93t">Home</a></li>
+                                <li class="svelte-1ivs93t"><a href="/features" class="svelte-1ivs93t">Features</a></li>
+                                <li class="svelte-1ivs93t"><a href="/pricing" class="svelte-1ivs93t">Pricing</a></li>
+                                <li class="svelte-1ivs93t"><a href="/changelog" class="svelte-1ivs93t">Changelog</a></li>
+                                <li class="svelte-1ivs93t"><a href="/self-hosted" class="svelte-1ivs93t">Self-Hosted</a></li>
+                                <li class="svelte-1ivs93t">
+                                    <a href="/gitpod-vs-github-codespaces" class="svelte-1ivs93t">Gitpod vs GitHub <br />Codespaces </a>
+                                </li>
+                                <li class="svelte-1ivs93t"><a href="https://www.gitpodstatus.com/" target="_blank" class="svelte-1ivs93t">Status</a></li>
+                            </ul>
+                            <ul class="svelte-1ivs93t">
+                                <li class="svelte-1ivs93t">Developer</li>
+                                <li class="svelte-1ivs93t"><a href="/#get-started" class="svelte-1ivs93t">Getting started</a></li>
+                                <li class="svelte-1ivs93t"><a href="/screencasts" class="svelte-1ivs93t">Screencasts</a></li>
+                                <li class="svelte-1ivs93t"><a href="/blog" class="svelte-1ivs93t">Blog</a></li>
+                                <li class="svelte-1ivs93t"><a href="/docs" class="svelte-1ivs93t">Documentation</a></li>
+
+                                <li class="svelte-1ivs93t">
+                                    <a
+                                        href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="svelte-1ivs93t"
+                                        >Report a bug</a
+                                    >
+                                </li>
+                                <li class="svelte-1ivs93t">
+                                    <a href="https://community.gitpod.io" target="_blank" rel="noopener" class="svelte-1ivs93t">Community</a>
+                                </li>
+                            </ul>
+                            <ul class="svelte-1ivs93t">
+                                <li class="svelte-1ivs93t">Company</li>
+                                <li class="svelte-1ivs93t"><a href="/about" class="svelte-1ivs93t">About</a></li>
+                                <li class="svelte-1ivs93t"><a href="/careers" class="highlighted svelte-1ivs93t">Careers</a></li>
+                                <li class="svelte-1ivs93t"><a href="/contact" class="svelte-1ivs93t">Contact</a></li>
+                                <li class="svelte-1ivs93t"><a href="/media-kit" class="svelte-1ivs93t">Media Kit</a></li>
+                            </ul>
+                            <ul class="svelte-1ivs93t">
+                                <li class="svelte-1ivs93t">Legal</li>
+                                <li class="svelte-1ivs93t"><a href="/imprint" class="svelte-1ivs93t">Imprint</a></li>
+                                <li class="svelte-1ivs93t"><a href="/terms" class="svelte-1ivs93t">Terms of Service</a></li>
+                                <li class="svelte-1ivs93t"><a href="/privacy" class="svelte-1ivs93t">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__bottom flex justify-between border-t border-solid border-sand-dark pt-xx-small md:pt-x-small svelte-1ivs93t">
+                            <div class="footer__copy flex items-center svelte-1ivs93t">
+                                <a href="/" class="svelte-1ivs93t"
+                                    ><div class="relative -top-px z-0"><img src="/svg/logo-textless.svg" alt="Gitpod" height="24" width="24" /></div></a
+                                ><span class="ml-macro">Copyright © 2021 Gitpod</span>
+                            </div>
+                            <div class="flex">
+                                <a href="https://twitter.com/gitpod" class="footer__social-link svelte-1ivs93t"
+                                    ><img src="/svg/brands/twitter.svg" alt="Twitter" height="24" width="24" /> </a
+                                ><a href="https://github.com/gitpod-io" class="footer__social-link svelte-1ivs93t"
+                                    ><img src="/svg/brands/github.svg" alt="GitHub" height="24" width="24" /> </a
+                                ><a href="https://community.gitpod.io/" class="footer__social-link svelte-1ivs93t"
+                                    ><img src="/svg/brands/discourse.svg" alt="Discourse" height="24" width="24" /> </a
+                                ><a href="https://www.gitpod.io/chat" class="footer__social-link svelte-1ivs93t"
+                                    ><img src="/svg/brands/discord.svg" alt="Discord" height="24" width="24" />
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

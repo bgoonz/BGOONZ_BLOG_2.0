@@ -2,10 +2,7 @@ import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
+
 export default class Footer extends React.Component {
     render() {
         return (
@@ -138,7 +135,6 @@ export default class Footer extends React.Component {
                         </table>
                     </center>
                 </div>
-                <div id="search" className="inner"></div>
                 <div id="search" />
                 <div className="inner">
                     <div id="search" className="inner"></div>

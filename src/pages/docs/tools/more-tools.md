@@ -95,3 +95,16 @@ template: docs
 <br>
 <br>
 <br>
+
+
+<h1>Code Playgrounds </h1>
+<br>
+      <iframe class="block-content" width="100%   width="800" height="575"
+        src="https://code-playground.netlify.app/index.html" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+<br>
+<br>
+<br>
