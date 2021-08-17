@@ -12,10 +12,13 @@ seo:
     type: action
 template: general
 ---
+# Search:
 
-## Lorem ipsum
+<br>
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\<div id="search"></div>
 
--   Lorem ipsum
--   dolor sit amet
+
+
+<div id="search" />
+
