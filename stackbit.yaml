@@ -683,3 +683,4 @@ models:
         type: string
         label: excerpt
     folder: docs
+    
