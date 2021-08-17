@@ -274,7 +274,7 @@ sections:
         type: action
     type: section_cta
   - title: Quick Links
-    section_id: lorem-ipsum
+    section_id: navigate from the home page
     subtitle: lorem-ipsum
     col_number: three
     type: section_docs
