@@ -688,4 +688,5 @@ models:
       - name: seo
         type: model
         models: []
+        label: Seo
     folder: docs
