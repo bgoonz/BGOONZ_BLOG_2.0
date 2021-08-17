@@ -696,5 +696,9 @@ models:
           - section_cta
           - section_grid
           - section_hero
+          - header
+          - stackbit_page_meta
+          - action_menu
+          - section
         label: Seo
     folder: docs
