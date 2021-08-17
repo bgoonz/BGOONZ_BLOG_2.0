@@ -21,7 +21,7 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://bgoonz-blog-v3-0.netlify.app/contact/" height="900px" width="100%">
+<iframe src="https://comments-3.bgoonz.repl.co/" height="900px" width="100%">
 </iframe>
 
 
