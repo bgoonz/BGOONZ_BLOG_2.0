@@ -12,7 +12,7 @@ import SectionGrid from './SectionGrid';
 import SectionHero from './SectionHero';
 import Submenu from './Submenu';
 import Layout from './Layout';
-import AddScript from './../hooks/addScript';
+import addScript from './../hooks/addScript';
 export {
     ActionLink,
     CtaButtons,
@@ -27,7 +27,7 @@ export {
     SectionGrid,
     SectionHero,
     Submenu,
-    AddScript,
+    addScript,
     Layout
 };
 
@@ -45,5 +45,6 @@ export default {
     SectionGrid,
     SectionHero,
     Submenu,
-    Layout
+    Layout,
+    addScript
 };
