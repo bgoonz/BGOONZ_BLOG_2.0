@@ -669,14 +669,7 @@ models:
       - name: title
         type: string
         label: Title
-        description: >-
-          The title of the page, used both as a page title and as a navigation
-          menu title
-        required: true
       - name: weight
-        type: number
+        type: string
         label: Weight
-        description: >-
-          The navigation order of the documentation page. This value is ignored
-          for parent section pages.
     folder: docs
