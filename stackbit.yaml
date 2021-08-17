@@ -179,6 +179,8 @@ models:
           - section_docs
           - grid_item
           - action_menu
+          - section
+          - header
         label: Seo
   advanced:
     type: page
