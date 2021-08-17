@@ -31,7 +31,7 @@ seo:
     - name: 'twitter:description'
       value: This is the community page
     - name: 'og:image'
-      value: images/diligent-tiger.PNG
+      value: images/beige-maple.png
       keyName: property
       relativeUrl: true
 template: docs
