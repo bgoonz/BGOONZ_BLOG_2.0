@@ -4,7 +4,7 @@ weight: 0
 excerpt: lorem-ipsum
 seo:
     title: ''
-    description: ''
+    description: 'Dynamic Time Warping Triggered Guitar Effects Project'
     robots: []
     extra: []
     type: stackbit_page_meta
