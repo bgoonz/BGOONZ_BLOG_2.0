@@ -587,9 +587,4 @@ Or Checkout my personal Resource Site:
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/938871b4521a).
 
-<a href="https://medium.com/@bryanguner/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 6, 2021.
-
-
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634693&amp;authkey=AAQrdzlmcaPgMGA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
