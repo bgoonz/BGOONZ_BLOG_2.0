@@ -5,7 +5,9 @@ excerpt: >-
     it for your project.
 seo:
     title: Writing Files
-    description: This is the Writing Files page
+    description: >-
+        This is the Writing Files page. The easiest way to write to files in Node.js
+        is to use the fs.writeFile() API. const fs = require('fs');
     extra:
         - name: 'og:type'
           value: website
