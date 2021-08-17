@@ -1,30 +1,4 @@
 const siteMetadata = require('./site-metadata.json');
-<<<<<<< HEAD
-
-module.exports = {
-    pathPrefix: '/',
-    siteMetadata: siteMetadata,
-    plugins: [
-        `gatsby-plugin-react-helmet`,
-        `gatsby-source-data`,
-        `gatsby-transformer-remark`,
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `pages`,
-                path: `${__dirname}/src/pages`
-            }
-        },
-        {
-            resolve: `gatsby-plugin-sass`,
-            options: {}
-        },
-        {
-            resolve: `gatsby-remark-page-creator`,
-            options: {}
-        },
-        {
-=======
 require('dotenv').config();
 module.exports = {
     pathPrefix: '/',
@@ -58,7 +32,6 @@ module.exports = {
                 queries: require('./src/utils/algolia-queries')
             },
 
->>>>>>> 4326e86818119be1225b2bf561a024d3f29bc423
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {
                 sourceUrlPath: `fields.url`,
