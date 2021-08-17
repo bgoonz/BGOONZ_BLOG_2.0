@@ -11,6 +11,21 @@ seo:
 template: docs
 ---
 
+
+<br>
+<h1>  Python Resources</h1>
+<br>
+
+<iframe class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+
+
+
+
 ## Python For JS Developers:
 
 # Python Study Guide for a JavaScript Programmer
