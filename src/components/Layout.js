@@ -17,7 +17,7 @@ export default class Body extends React.Component {
             <React.Fragment>
              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
                 <Helmet>
-                  <div id="search" />
+          
                     <title>
                         {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
                             ? _.get(this.props, 'pageContext.frontmatter.seo.title', null)
@@ -52,6 +52,7 @@ export default class Body extends React.Component {
                 </Helmet>
                 <div id="page" className="site">
                     <Header {...this.props} />
+                            <div id="search" />
                     <main id="content" className="site-content">
                         {this.props.children}
                     </main>
