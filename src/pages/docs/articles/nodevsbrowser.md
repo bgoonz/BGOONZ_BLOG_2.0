@@ -5,7 +5,9 @@ excerpt: >-
   it for your project.
 seo:
   title: Node vs Browser
-  description: This is the Node vs Browser page
+  description: |+
+    Both the browser and Node.js use JavaScript as their programming language.
+
   extra:
     - name: 'og:type'
       value: website
@@ -14,7 +16,11 @@ seo:
       value: Node vs Browser
       keyName: property
     - name: 'og:description'
-      value: This is the Node vs Browser page
+      value: >-
+        Both the browser and Node.js use JavaScript as their programming
+        language.
+
+        Building apps that run in the browser 
       keyName: property
     - name: 'twitter:card'
       value: summary
