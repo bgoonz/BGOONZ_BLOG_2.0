@@ -704,4 +704,5 @@ models:
       - name: html
         type: html
         label: html
+        description: include raw html
     folder: docs
