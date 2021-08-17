@@ -1,7 +1,9 @@
 ---
 title: packagejson
 weight: 1
-excerpt: lorem-ipsum
+excerpt: >-
+  The package.json file is a key element in lots of app codebases based on the
+  Node.js ecosystem.
 seo:
   title: ''
   description: ''
