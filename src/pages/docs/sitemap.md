@@ -30,6 +30,11 @@ template: docs
 
 ---
 
+
+
+<div id="search"></div>
+
+
 ---
 
 ### - [✅] [HOME](https://bgoonz-blog.netlify.app/)
