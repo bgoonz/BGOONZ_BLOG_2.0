@@ -11,6 +11,9 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
+            
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+           
                 <div>
                     <center>
                         <br />
