@@ -1,2 +1,2 @@
-export { TechStack } from './TechStack'
-export { ProjectList } from './ProjectList'
+export { TechStack } from './TechStack';
+export { ProjectList } from './ProjectList';
