@@ -1,5 +1,5 @@
 ---
-title: Python & Data Structures
+title: Sitemap
 weight: 0
 excerpt: lorem-ipsum
 seo:
