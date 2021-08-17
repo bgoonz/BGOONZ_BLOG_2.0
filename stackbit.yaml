@@ -173,19 +173,7 @@ models:
           documentation overview section.
       - type: model
         name: seo
-        models:
-          - stackbit_page_meta
-          - section_cta
-          - section_docs
-          - grid_item
-          - action_menu
-          - section
-          - header
-          - section_content
-          - footer
-          - section_grid
-          - section_hero
-          - action
+        models: []
         label: Seo
   advanced:
     type: page
