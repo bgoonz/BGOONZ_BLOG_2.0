@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Learn Css
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Learn Css
 seo:
   title: ''
   description: ''
