@@ -27,6 +27,7 @@ export {
     SectionGrid,
     SectionHero,
     Submenu,
+    ,
     Layout
 };
 
