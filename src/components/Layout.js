@@ -2,11 +2,12 @@ import React from 'react';
 
 import { Helmet } from 'react-helmet';
 import _ from 'lodash';
-import addScript from './../hooks/addScript'
+
 import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
+import addScript from './../hooks/addScript'
 const Script = props => {
   importScript("./../hooks/addScript.js");
 }
