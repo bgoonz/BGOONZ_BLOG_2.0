@@ -675,4 +675,5 @@ models:
         required: true
       - name: weight
         type: number
+        label: Weight
     folder: docs
