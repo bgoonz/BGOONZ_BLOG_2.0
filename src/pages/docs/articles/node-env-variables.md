@@ -1,5 +1,5 @@
 ---
-title: Node Ex
+title: Node Export Module
 weight: 0
 excerpt: lorem-ipsum
 seo:
