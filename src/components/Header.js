@@ -4,18 +4,17 @@ import _ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
-import addScript from './../hooks/addScript'
-const Script = props => {
-  importScript("./../hooks/addScript.js");
-}
+import addScript from './../hooks/addScript';
+const Script = (props) => {
+    importScript('./../hooks/addScript.js');
+};
 export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
-                
-             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-           
-                    <br />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+
+                <br />
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">

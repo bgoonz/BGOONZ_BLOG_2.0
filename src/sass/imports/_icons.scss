@@ -1,7 +1,7 @@
 // SVG icons
 .icon {
     color: inherit;
-    fill:white;
+    fill: white;
     flex-shrink: 0;
     height: 1em;
     line-height: 1;
@@ -11,7 +11,7 @@
 // CSS icons
 .icon-menu,
 .icon-close {
-    background:white;
+    background: white;
     border-radius: 1px;
     color: inherit;
     height: 2px;
@@ -24,7 +24,7 @@
 
     &:before,
     &:after {
-        background:white;
+        background: white;
         border-radius: 1px;
         content: '';
         height: 100%;
@@ -64,7 +64,7 @@
 
 .icon-angle-right {
     background: 0;
-    border-color:white;
+    border-color: white;
     border-style: solid;
     border-width: 1px 1px 0 0;
     box-sizing: border-box;
