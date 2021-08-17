@@ -192,7 +192,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Dynamic Time Warping",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
