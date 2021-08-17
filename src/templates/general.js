@@ -68,6 +68,7 @@ export default class Advanced extends React.Component {
                     </div>
                     <div id="search" className="inner"></div>
                 </div>
+                
             </Layout>
         );
     }
