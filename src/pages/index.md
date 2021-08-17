@@ -255,8 +255,6 @@ sections:
     col_number: three
     type: section_docs
   - title: ________________________
-    section_id: lorem-ipsum
-    subtitle: lorem-ipsum
     col_number: three
     type: section_docs
   - title: Contact
