@@ -250,6 +250,11 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
+  - title: Quick Links
+    section_id: navigate from the home page
+    subtitle: lorem-ipsum
+    col_number: three
+    type: section_docs
   - title: Contact
     section_id: lorem-ipsum
     actions:
@@ -261,11 +266,6 @@ sections:
         no_follow: false
         type: action
     type: section_cta
-  - title: Quick Links
-    section_id: navigate from the home page
-    subtitle: lorem-ipsum
-    col_number: three
-    type: section_docs
 seo:
   title: Web-Dev-Hub
   description: >-
