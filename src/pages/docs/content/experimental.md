@@ -12,13 +12,11 @@ seo:
     type: action
 template: general
 ---
+
 # Search:
 
 <br>
 
 \<div id="search"></div>
 
-
-
 | <div id="search" />
-
