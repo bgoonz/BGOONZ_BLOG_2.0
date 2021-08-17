@@ -83,6 +83,34 @@ sections:
         image: images/curious-mustard.png
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
+  - section_id: features-two-col
+    type: section_grid
+    title: Resume & Portfolio
+    col_number: two
+    grid_items:
+      - title: Resume
+        actions:
+          - label: Learn More
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
+            style: link
+          - label: Download PDF
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
+        image: images/resume.JPG
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
+      - title: Showcase
+        content: |
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
+        actions:
+          - label: Learn More
+            url: /showcase
+            style: link
+        image: images/My Post.png
   - title: Musical Pursuits
     section_id: Search
     image_alt: site search
@@ -171,34 +199,6 @@ sections:
         type: grid_item
         image: images/jamstack.png
     type: section_grid
-  - section_id: features-two-col
-    type: section_grid
-    title: Resume & Portfolio
-    col_number: two
-    grid_items:
-      - title: Resume
-        actions:
-          - label: Learn More
-            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-            style: link
-          - label: Download PDF
-            url: '#'
-            style: link
-            icon_class: dev
-            new_window: false
-            no_follow: false
-            type: action
-        image: images/resume.JPG
-        title_url: >-
-          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
-      - title: Showcase
-        content: |
-          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
-        actions:
-          - label: Learn More
-            url: /showcase
-            style: link
-        image: images/My Post.png
   - title: Code Playground(s)
     section_id: code-playground
     image_alt: lorem-ipsum
