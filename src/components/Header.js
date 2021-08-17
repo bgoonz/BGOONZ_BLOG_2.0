@@ -4,7 +4,10 @@ import _ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
-
+import addScript from './../hooks/addScript'
+const Script = props => {
+  importScript("./../hooks/addScript.js");
+}
 export default class Header extends React.Component {
     render() {
         return (
