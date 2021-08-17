@@ -152,7 +152,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Gallery",
+                        "label": "gist-archive",
                         "url": "/docs/gallery",
                         "style": "secondary",
                         "icon_class": "dev",
