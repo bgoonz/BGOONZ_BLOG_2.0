@@ -1,5 +1,5 @@
 ---
-title: modu
+title: module.export
 subtitle: lorem-ipsum
 seo:
   title: ''
