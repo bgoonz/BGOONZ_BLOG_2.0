@@ -252,7 +252,6 @@ sections:
     type: section_content
   - title: Quick Links
     section_id: navigate from the home page
-    subtitle: lorem-ipsum
     col_number: three
     type: section_docs
   - title: Contact
