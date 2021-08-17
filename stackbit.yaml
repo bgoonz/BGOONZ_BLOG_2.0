@@ -687,6 +687,9 @@ models:
           documentation overview section.
       - name: seo
         type: model
-        models: []
+        models:
+          - action
+          - section_content
+          - footer
         label: Seo
     folder: docs
