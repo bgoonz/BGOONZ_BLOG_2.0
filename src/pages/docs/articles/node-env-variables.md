@@ -5,7 +5,7 @@ excerpt: >-
   How to use the module.exports API to expose data to other files in your
   application, or to other applications as well
 seo:
-  title: ''
+  title: 'module.exports API '
   description: |-
     When you want to import something you use
 
