@@ -1,142 +1,441 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
-  <loc>https://bgoonz-blog.netlify.app/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://bgoonz-blog.netlify.app/</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://bgoonz-blog.netlify.app/blog</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/showcase/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://bgoonz-blog.netlify.app/docs</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/gallery/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://bgoonz-blog.netlify.app/job-hunt</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/style-guide/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://bgoonz-blog.netlify.app/notes-template</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/about/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/review</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/faq/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/showcase</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/links/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/blog/blog-archive</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/links/my-websites/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/blog/blogwcomments</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/links/social/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/blog/data-structures</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/quick-reference/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/blog/my-medium</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/quick-reference/installation/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/blog/platform-docs</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/blog/python-for-js-dev</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/quick-reference/emmet/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/blog/python-resources</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/react/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/blog/web-scraping</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/react/react2/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/about</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/react/createreactapp/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/articles</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/tools/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/audio</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/tools/default-readme/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/community</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/tools/git-html-preview/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/content</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/tools/plug-ins/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/faq</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/tools/notes-template/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/gallery</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/interact</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/about/resume/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.51</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/medium</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/about/introduction2bg/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.51</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/quick-reference</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://bgoonz-blog.netlify.app/docs/about/me/</loc>
-  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
-  <priority>0.51</priority>
+<loc>https://bgoonz-blog.netlify.app/docs/react</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
-
-
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/react-in-depth</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/sitemap</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/tools</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/about/me</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/about/resume</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/algo</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/article-compilation</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/gallery</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/install</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/intro</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/python</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/reading-files</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/resources</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/writing-files</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/audio/audio</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/audio/terms</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/content/projects</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/content/trouble-shooting</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/docs/content</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/docs/git-repos</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/docs/python</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/docs/sitemap</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/faq/contact</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/interact/clock</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/interact/other-sites</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/medium/medium-links</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/medium/my-websites</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/medium/social</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/quick-reference/docs</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/quick-reference/installation</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/react/createReactApp</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/react/react2</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/tools/more-tools</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/tools/notes-template</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/tools/plug-ins</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/tools/vscode</loc>
+<lastmod>2021-08-17T04:03:40Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/node/intro</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/node/nodejs</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/node/nodevsbrowser</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/node/npm</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/node/reading-files</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://bgoonz-blog.netlify.app/docs/articles/node/writing-files</loc>
+<lastmod>2021-08-17T04:03:41Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
 </urlset>
