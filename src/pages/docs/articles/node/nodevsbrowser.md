@@ -5,11 +5,7 @@ excerpt: >-
     it for your project.
 seo:
     title: Node vs Browser
-    description: >+
-        Both the browser and Node.js use JavaScript as their programming
-        language.You can pass any number of arguments when invoking a Node.js
-        application using
-
+    description: This is the Node vs Browser page
     extra:
         - name: 'og:type'
           value: website
@@ -18,11 +14,7 @@ seo:
           value: Node vs Browser
           keyName: property
         - name: 'og:description'
-          value: >-
-              Both the browser and Node.js use JavaScript as their programming
-              language.
-
-              Building apps that run in the browser
+          value: This is the Node vs Browser page
           keyName: property
         - name: 'twitter:card'
           value: summary
@@ -30,10 +22,6 @@ seo:
           value: Node vs Browser
         - name: 'twitter:description'
           value: This is the Node vs Browser page
-        - name: 'og:image'
-          value: images/node.jpg
-          keyName: property
-          relativeUrl: true
 template: docs
 ---
 

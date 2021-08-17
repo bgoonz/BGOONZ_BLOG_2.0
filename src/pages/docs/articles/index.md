@@ -1,6 +1,6 @@
 ---
-title: Articles
-weight: 2
+title: Article Docs
+weight: 0
 excerpt: resources
 seo:
     title: ''
@@ -12,17 +12,3 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
-
-<div id="search"></div>
-
-<div id="search" />
-
-|<div id="search"></div>
-
-<div id="search" />
-
-<div id="search"></div>
-
-<div id="search" />
-
-<span id="search"></span>
