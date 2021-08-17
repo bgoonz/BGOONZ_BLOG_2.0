@@ -11,14 +11,14 @@ const importScript = (resourceUrl) => {
     }, [resourceUrl]);
 };
 
-export componentDidMount () {
-    const script = document.createElement("script");
+// export componentDidMount () {
+//     const script = document.createElement("script");
 
-    script.src = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js'";
-    script.async = true;
+//     script.src = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js'";
+//     script.async = true;
 
-    document.body.appendChild(script);
-}
+//     document.body.appendChild(script);
+// }
 
 
 export default importScript;
