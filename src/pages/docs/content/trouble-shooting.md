@@ -33,5 +33,5 @@ added
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         
-        https://links4242.netlify.app/
+        
 <br>
