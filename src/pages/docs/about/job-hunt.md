@@ -1,6 +1,5 @@
 ---
 title: module.export
-subtitle: lorem-ipsum
 seo:
   title: ''
   description: ''
