@@ -701,4 +701,6 @@ models:
           - action_menu
           - section
         label: Seo
+      - name: ''
+        type: string
     folder: docs
