@@ -10,9 +10,23 @@ seo:
   type: stackbit_page_meta
 template: docs
 ---
+
 ## Search:
 
 
+---
+
+# Actual Docs:
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+<h1>  Docs</h1>
+<br>
 
 <div id="search"></div>
 
