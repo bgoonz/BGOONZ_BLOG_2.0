@@ -8,6 +8,9 @@ seo:
   extra: []
   type: stackbit_page_meta
 template: docs
+excerpt: >-
+  The package-lock.json file is automatically generated when installing node
+  packages
 ---
 
 The `node` command is the one we use to run our Node.js scripts:
