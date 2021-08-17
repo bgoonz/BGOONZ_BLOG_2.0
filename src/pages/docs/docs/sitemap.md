@@ -1,7 +1,7 @@
 ---
 title: Sitemap
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Sitemap
 seo:
   title: ''
   description: ''
