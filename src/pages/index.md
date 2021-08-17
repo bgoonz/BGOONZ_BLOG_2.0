@@ -181,17 +181,6 @@ sections:
             url: /showcase
             style: link
         image: images/My Post.png
-  - title: Code Playground(s)
-    section_id: code-playground
-    image_alt: lorem-ipsum
-    image_position: left
-    content: |-
-      <iframe class="block-content" width="100%   width="800" height="575"
-        src="https://code-playground.netlify.app/index.html" title="YouTube video
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
   - title: Mini Projects
     section_id: Mini Projects
     image_alt: lorem-ipsum
