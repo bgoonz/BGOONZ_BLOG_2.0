@@ -705,4 +705,5 @@ models:
         type: html
         label: html
         description: include raw html
+        default: <div id="search"></div>
     folder: docs
