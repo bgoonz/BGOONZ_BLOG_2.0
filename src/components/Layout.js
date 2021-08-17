@@ -12,6 +12,7 @@ export default class Body extends React.Component {
     render() {
         return (
             <React.Fragment>
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
                 <Helmet>
                     <title>
                         {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
