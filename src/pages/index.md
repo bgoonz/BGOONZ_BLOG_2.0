@@ -254,6 +254,11 @@ sections:
     section_id: navigate from the home page
     col_number: three
     type: section_docs
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    subtitle: lorem-ipsum
+    col_number: three
+    type: section_docs
   - title: Contact
     section_id: lorem-ipsum
     actions:
