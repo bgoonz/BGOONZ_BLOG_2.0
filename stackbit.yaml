@@ -669,6 +669,6 @@ models:
       - name: title
         type: string
         label: Title
-      - name: ''
+      - name: weight
         type: string
     folder: docs
