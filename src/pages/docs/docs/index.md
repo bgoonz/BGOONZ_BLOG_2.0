@@ -3,16 +3,13 @@ title: Documentation
 weight: 1
 excerpt: Documentation
 seo:
-  title: Documentation
-  description: Documentation
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: Documentation
+    description: Documentation
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
-
-
-
 
 -   [/job-hunt/](https://preview--bgoonz-b2d7c.stackbit.dev/job-hunt/)
 -   [/notes-template/](https://preview--bgoonz-b2d7c.stackbit.dev/notes-template/)

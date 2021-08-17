@@ -2,27 +2,26 @@
 title: Other Websites
 weight: 1
 seo:
-  title: Typography
-  description: This is the typography page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Typography
-      keyName: property
-    - name: 'og:description'
-      value: This is the typography page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Typography
-    - name: 'twitter:description'
-      value: This is the typography page
+    title: Typography
+    description: This is the typography page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Typography
+          keyName: property
+        - name: 'og:description'
+          value: This is the typography page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Typography
+        - name: 'twitter:description'
+          value: This is the typography page
 template: docs
 ---
-
 
 <h1> Here are some other websites I have worked on since endeavoring to learn web development! </h1>
 
