@@ -11,7 +11,7 @@ seo:
 template: docs
 ---
 
-
+-  [Github Pages For This Site](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
 
 -   [/job-hunt/](https://preview--bgoonz-b2d7c.stackbit.dev/job-hunt/)
