@@ -11,7 +11,7 @@ const importScript = (resourceUrl) => {
     }, [resourceUrl]);
 };
 
-componentDidMount () {
+export componentDidMount () {
     const script = document.createElement("script");
 
     script.src = "https://use.typekit.net/foobar.js";
@@ -21,4 +21,4 @@ componentDidMount () {
 }
 
 
-export  importScript;
+export default importScript;
