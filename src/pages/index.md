@@ -83,82 +83,6 @@ sections:
             image: images/curious-mustard.png
             title_url: >-
                 https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
-    - title: Quick Links
-      section_id: navigate from the home page
-      col_number: three
-      type: section_docs
-    - section_id: features-two-col
-      type: section_grid
-      title: Resume & Portfolio
-      col_number: two
-      grid_items:
-          - title: Resume
-            actions:
-                - label: Learn More
-                  url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-                  style: link
-                - label: Download PDF
-                  url: '#'
-                  style: link
-                  icon_class: dev
-                  new_window: false
-                  no_follow: false
-                  type: action
-            image: images/resume.JPG
-            title_url: >-
-                https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
-          - title: Showcase
-            content: |
-                ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
-            actions:
-                - label: Learn More
-                  url: /showcase
-                  style: link
-            image: images/My Post.png
-    - title: Current Interests
-      section_id: interests
-      subtitle: From github repositories to existential questions.
-      col_number: three
-      grid_items:
-          - title: Angolia
-            title_url: angolia
-            image_alt: angolia
-            content: |
-                ## Full Text Search
-
-                [Full Text Search](https://www.algolia.com/)
-
-                ## &#xA;
-            actions: []
-            type: grid_item
-            image: images/spectacular-turmeric.png
-          - title: Convolutional Neural Networks
-            title_url: neural networks
-            image_alt: neural networks
-            content: >+
-                Artificial neural networks, usually simply called neural networks, are
-                computing systems vaguely inspired by the biological [neural
-                networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
-
-            actions: []
-            type: grid_item
-            image: images/neural.PNG
-          - title: Jamstack
-            title_url: jamstack
-            image_alt: jamstack
-            content: >
-                ## Why Jamstack
-
-
-                *Jamstack is the new standard architecture for the web. Using Git
-                workflows and modern build tools, pre-rendered content is served to a
-                CDN and made dynamic through APIs and serverless functions.
-                Technologies in the stack include JavaScript frameworks, Static Site
-                Generators, Headless CMSs, and CDNs.*
-            actions: []
-            type: grid_item
-            image: images/jamstack.png
-      type: section_grid
     - title: Musical Pursuits
       section_id: Search
       image_alt: site search
@@ -203,6 +127,78 @@ sections:
             no_follow: false
             type: action
       type: section_content
+    - title: Current Interests
+      section_id: interests
+      subtitle: From github repositories to existential questions.
+      col_number: three
+      grid_items:
+          - title: Angolia
+            title_url: angolia
+            image_alt: angolia
+            content: |
+                ## Full Text Search
+
+                [Full Text Search](https://www.algolia.com/)
+
+                ## &#xA;
+            actions: []
+            type: grid_item
+            image: images/spectacular-turmeric.png
+          - title: Convolutional Neural Networks
+            title_url: neural networks
+            image_alt: neural networks
+            content: >+
+                Artificial neural networks, usually simply called neural networks, are
+                computing systems vaguely inspired by the biological [neural
+                networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
+
+            actions: []
+            type: grid_item
+            image: images/neural.PNG
+          - title: Jamstack
+            title_url: jamstack
+            image_alt: jamstack
+            content: >
+                ## Why Jamstack
+
+
+                *Jamstack is the new standard architecture for the web. Using Git
+                workflows and modern build tools, pre-rendered content is served to a
+                CDN and made dynamic through APIs and serverless functions.
+                Technologies in the stack include JavaScript frameworks, Static Site
+                Generators, Headless CMSs, and CDNs.*
+            actions: []
+            type: grid_item
+            image: images/jamstack.png
+      type: section_grid
+    - section_id: features-two-col
+      type: section_grid
+      title: Resume & Portfolio
+      col_number: two
+      grid_items:
+          - title: Resume
+            actions:
+                - label: Learn More
+                  url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
+                  style: link
+                - label: Download PDF
+                  url: '#'
+                  style: link
+                  icon_class: dev
+                  new_window: false
+                  no_follow: false
+                  type: action
+            image: images/resume.JPG
+            title_url: >-
+                https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
+          - title: Showcase
+            content: |
+                ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
+            actions:
+                - label: Learn More
+                  url: /showcase
+                  style: link
+            image: images/My Post.png
     - title: Code Playground(s)
       section_id: code-playground
       image_alt: lorem-ipsum
@@ -254,6 +250,13 @@ sections:
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       actions: []
       type: section_content
+    - title: Quick Links
+      section_id: navigate from the home page
+      col_number: three
+      type: section_docs
+    - title: ________________________
+      col_number: three
+      type: section_docs
     - title: Contact
       section_id: lorem-ipsum
       actions:
