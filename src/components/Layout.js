@@ -7,7 +7,9 @@ import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
-
+const Demo = props => {
+  importScript("/path/to/resource.js");
+}
 export default class Body extends React.Component {
     render() {
         return (
