@@ -3,7 +3,7 @@ title: Dev Dependencies
 sections: []
 seo:
     title: ''
-    description: 'Dev Dependencies'
+    description: Dev Dependencies
     robots: []
     extra: []
     type: stackbit_page_meta

@@ -3,7 +3,7 @@ title: The Node.js Event Loop
 sections: []
 seo:
     title: ''
-    description: 'The Event Loop is one of the most important aspects to understand about Node.js'
+    description: The Event Loop is one of the most important aspects to understand about Node.js
     robots: []
     extra: []
     type: stackbit_page_meta
