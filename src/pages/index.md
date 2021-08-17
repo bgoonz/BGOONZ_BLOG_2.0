@@ -14,50 +14,6 @@ sections:
         new_window: true
         no_follow: false
         type: action
-  - title: Quick Links
-    section_id: navigate from the home page
-    col_number: three
-    type: section_docs
-  - section_id: features-two-col
-    type: section_grid
-    title: Resume & Portfolio
-    col_number: two
-    grid_items:
-      - title: Resume
-        actions:
-          - label: Learn More
-            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-            style: link
-          - label: Download PDF
-            url: '#'
-            style: link
-            icon_class: dev
-            new_window: false
-            no_follow: false
-            type: action
-        image: images/resume.JPG
-        title_url: >-
-          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
-      - title: Showcase
-        content: |
-          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
-        actions:
-          - label: Learn More
-            url: /showcase
-            style: link
-        image: images/My Post.png
-  - title: Musical Pursuits
-    section_id: Search
-    image_alt: site search
-    image_position: right
-    content: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
-      title="YouTube video player" frameborder="0" allow="accelerometer;
-      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-    actions: []
-    type: section_content
   - section_id: features
     type: section_grid
     col_number: three
@@ -127,6 +83,50 @@ sections:
         image: images/curious-mustard.png
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
+  - title: Quick Links
+    section_id: navigate from the home page
+    col_number: three
+    type: section_docs
+  - section_id: features-two-col
+    type: section_grid
+    title: Resume & Portfolio
+    col_number: two
+    grid_items:
+      - title: Resume
+        actions:
+          - label: Learn More
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
+            style: link
+          - label: Download PDF
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
+        image: images/resume.JPG
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
+      - title: Showcase
+        content: |
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
+        actions:
+          - label: Learn More
+            url: /showcase
+            style: link
+        image: images/My Post.png
+  - title: Musical Pursuits
+    section_id: Search
+    image_alt: site search
+    image_position: right
+    content: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
+      title="YouTube video player" frameborder="0" allow="accelerometer;
+      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    actions: []
+    type: section_content
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
