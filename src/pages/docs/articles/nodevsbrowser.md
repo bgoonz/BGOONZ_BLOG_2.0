@@ -31,7 +31,7 @@ seo:
     - name: 'twitter:description'
       value: This is the Node vs Browser page
     - name: 'og:image'
-      value: Node vs Browser
+      value: images/node.jpg
       keyName: property
       relativeUrl: true
 template: docs
