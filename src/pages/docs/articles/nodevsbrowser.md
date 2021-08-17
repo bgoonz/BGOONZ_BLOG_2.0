@@ -1,27 +1,31 @@
 ---
 title: Node vs Browser
 excerpt: >-
-    Web-Dev-Hubis a Unibit theme created for project documentations. You can use
-    it for your project.
+  Web-Dev-Hubis a Unibit theme created for project documentations. You can use
+  it for your project.
 seo:
-    title: Node vs Browser
-    description: This is the Node vs Browser page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Node vs Browser
-          keyName: property
-        - name: 'og:description'
-          value: This is the Node vs Browser page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Node vs Browser
-        - name: 'twitter:description'
-          value: This is the Node vs Browser page
+  title: Node vs Browser
+  description: This is the Node vs Browser page
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: Node vs Browser
+      keyName: property
+    - name: 'og:description'
+      value: This is the Node vs Browser page
+      keyName: property
+    - name: 'twitter:card'
+      value: summary
+    - name: 'twitter:title'
+      value: Node vs Browser
+    - name: 'twitter:description'
+      value: This is the Node vs Browser page
+    - name: 'og:image'
+      value: Node vs Browser
+      keyName: property
+      relativeUrl: true
 template: docs
 ---
 
