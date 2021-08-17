@@ -14,7 +14,7 @@ const importScript = (resourceUrl) => {
 export componentDidMount () {
     const script = document.createElement("script");
 
-    script.src = "https://use.typekit.net/foobar.js";
+    script.src = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js'";
     script.async = true;
 
     document.body.appendChild(script);
