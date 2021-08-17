@@ -173,7 +173,8 @@ models:
           documentation overview section.
       - type: model
         name: seo
-        models: []
+        models:
+          - section
         label: Seo
   advanced:
     type: page
