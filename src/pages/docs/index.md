@@ -36,7 +36,7 @@ excerpt: docs quick reference
 <br>
 
 <br>
-       <div id="search" />
+       \<div id="search" />
 <br>
                <div id="search" className="inner"></div>
 <br>
