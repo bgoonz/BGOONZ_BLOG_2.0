@@ -1,6 +1,6 @@
 ---
-title: The package-lock.json file
-weight: 0
+title: The-package-lock.json-file
+weight: 1
 excerpt: lorem-ipsum
 seo:
   title: ''
