@@ -701,7 +701,7 @@ models:
           - action_menu
           - section
         label: Seo
-      - name: include
+      - name: html
         type: html
         label: html
     folder: docs
