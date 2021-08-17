@@ -1,7 +1,7 @@
 ---
 title: node-cli-args
 weight: 1
-excerpt: lorem-ipsum
+excerpt: How to accept arguments in a Node.js program passed from the command line
 seo:
   title: ''
   description: ''
