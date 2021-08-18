@@ -125,6 +125,15 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
+                        "label": "Medium Articles",
+                        "url": "https://bryanguner.medium.com/",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "Resource-Archive-Server",
                         "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
@@ -152,7 +161,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "gist-archive",
+                        "label": "Gallery",
                         "url": "/docs/gallery",
                         "style": "secondary",
                         "icon_class": "dev",
@@ -168,15 +177,6 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
-                        "label": "depreciated-portfolio",
-                        "url": "https://portfolio42.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
                     }
                 ],
                 "type": "action_menu",
@@ -190,22 +190,12 @@
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
-                        "label": "Dynamic Time Warping",
-                        "url": "/docs/audio/audio",
-                        "style": "link",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    }
-                ],
+                "subnav_links": [],
                 "type": "action_menu"
             },
             {
                 "label": "Projects",
-                "url": "https://project-portfolio42.netlify.app/",
+                "url": "https://curious-zebra-a1329.netlify.app/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
@@ -298,7 +288,7 @@
                     },
                     {
                         "label": "Project Centric",
-                        "url": "https://project-portfolio42.netlify.app/",
+                        "url": "https://curious-zebra-a1329.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -316,7 +306,7 @@
                     },
                     {
                         "label": "Project Portfolio Gallery",
-                        "url": "https://project-portfolio42.netlify.app/",
+                        "url": "https://curious-zebra-a1329.netlify.app/",
                         "style": "secondary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -481,7 +471,7 @@
                 "type": "action"
             }
         ],
-        "content": "<div id=\"search\"></div>"
+        "content": "@bgoonz on almost every platform"
     },
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app/",

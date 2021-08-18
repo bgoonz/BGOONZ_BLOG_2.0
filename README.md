@@ -18,8 +18,13 @@
 
 [![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
 
+    
+    
+    
 ![Demo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/iframes.gif?raw=true)
-
+    
+    
+    
 </div>
 
 ## Docs Structure:
@@ -70,7 +75,9 @@
 
 ---
 
+
 # Sitemap:
+
 
 -   [/job-hunt/](https://bgoonz-blog.netlify.app/job-hunt/)
 -   [/notes-template/](https://bgoonz-blog.netlify.app/notes-template/)
@@ -142,6 +149,11 @@
 -   [/docs/medium/social/](https://bgoonz-blog.netlify.app/docs/medium/social/)
 -   [/docs/medium/medium-links/](https://bgoonz-blog.netlify.app/docs/medium/medium-links/)
 -   [/docs/medium/](https://bgoonz-blog.netlify.app/docs/medium/)
+
+
+
+
+
 
 ---
 
