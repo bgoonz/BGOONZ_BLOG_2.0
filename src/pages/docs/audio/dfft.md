@@ -1,7 +1,7 @@
 ---
 title: Frequency and the fast Fourier transform
 weight: 0
-excerpt: The discrete[^discrete] Fourier transform (DFT) is a mathematical technique
+excerpt: The discrete Fourier transform (DFT) is a mathematical technique
 to convert temporal or spatial data into *frequency domain* data.
 seo:
   title: ''
