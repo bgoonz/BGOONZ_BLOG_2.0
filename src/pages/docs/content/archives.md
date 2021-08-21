@@ -1,7 +1,7 @@
 ---
 title: Archives
 weight: 0
-excerpt: lorem-ipsum
+excerpt: These are sites that exist for documentation and reference
 seo:
   title: ''
   description: ''
