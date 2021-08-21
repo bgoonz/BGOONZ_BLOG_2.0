@@ -3,7 +3,7 @@ title: Fast Fourier Transform
 weight: 0
 excerpt: Fast Fourier Transform
 seo:
-    title: 'Automatic Triggered Guitar Effects'
+    title: 'fft'
     description: 'Dynamic Time Warping Triggered Guitar Effects Project'
     robots: []
     extra: []
