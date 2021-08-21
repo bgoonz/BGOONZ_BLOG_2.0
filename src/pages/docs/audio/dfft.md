@@ -4,7 +4,7 @@ weight: 0
 excerpt: Fast Fourier Transform
 seo:
     title: 'fft'
-    description: 'Dynamic Time Warping Triggered Guitar Effects Project'
+    description: 'fft'
     robots: []
     extra: []
     type: stackbit_page_meta
