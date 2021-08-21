@@ -1,14 +1,13 @@
 ---
-title: Fast Fourier transform
+title: Audio
 weight: 0
-excerpt: The discrete Fourier transform (DFT) is a mathematical technique
-to convert temporal or spatial data into frequency domain data.
+excerpt: Dynamic Time Warping Triggered Guitar Effects Project
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: 'Automatic Triggered Guitar Effects'
+    description: 'Dynamic Time Warping Triggered Guitar Effects Project'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
 # Frequency and the fast Fourier transform
