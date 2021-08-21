@@ -1,7 +1,7 @@
 ---
 title: Fast Fourier Transform
 weight: 0
-excerpt: Dynamic Time Warping Triggered Guitar Effects Project
+excerpt: Fast Fourier Transform
 seo:
     title: 'Automatic Triggered Guitar Effects'
     description: 'Dynamic Time Warping Triggered Guitar Effects Project'
