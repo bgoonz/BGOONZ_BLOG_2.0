@@ -10,9 +10,9 @@ seo:
   type: stackbit_page_meta
 template: docs
 ---
-## Lorem ipsum
+## Data Structures
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Data Structures dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-- Lorem ipsum
+- Data Structures
 - dolor sit amet
