@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Developer Resources
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Developer Resources
 seo:
   title: ''
   description: ''
