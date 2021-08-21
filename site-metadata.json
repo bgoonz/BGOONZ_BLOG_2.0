@@ -192,7 +192,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "DTW",
+                        "label": "DTW-guitar",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
