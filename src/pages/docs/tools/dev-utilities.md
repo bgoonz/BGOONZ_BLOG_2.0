@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: General Utilities
 weight: 0
-excerpt: lorem-ipsum
+excerpt: General Utilities
 seo:
   title: ''
   description: ''
