@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Frequency and the fast Fourier transform
 weight: 0
 excerpt: lorem-ipsum
 seo:
