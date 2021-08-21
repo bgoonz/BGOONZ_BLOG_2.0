@@ -193,7 +193,7 @@
                 "subnav_links": [
                     {
                         "label": "DTW-guitar-effects",
-                        "url": "/docs/audio/",
+                        "url": "/docs/audio/audio",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
