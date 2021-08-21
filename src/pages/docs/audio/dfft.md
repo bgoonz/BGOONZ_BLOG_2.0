@@ -1,5 +1,5 @@
 ---
-title: Audio
+title: Fast Fourier Transform
 weight: 0
 excerpt: Dynamic Time Warping Triggered Guitar Effects Project
 seo:
