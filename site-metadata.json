@@ -6,28 +6,16 @@
         "has_nav": true,
         "nav_links": [
             {
-                "label": "Home",
-                "url": "/",
-                "style": "link",
-                "has_subnav": false
-            },
-            {
-                "label": "Blog",
-                "url": "/blog",
-                "style": "link",
-                "has_subnav": false
-            },
-            {
-                "url": "docs/My-Content/my-websites/",
+                "url": "/docs/sitemap",
                 "label": "Navigation",
-                "style": "link",
+                "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "DOCS",
+                        "label": "Docs",
                         "url": "/docs",
                         "style": "primary",
                         "icon_class": "dev",
@@ -45,18 +33,18 @@
                         "type": "action"
                     },
                     {
-                        "label": "Portfolio",
-                        "style": "secondary",
+                        "label": "Contact!",
+                        "url": "/docs/faq/contact",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
-                        "type": "action",
-                        "url": "https://bg-portfolio.netlify.app/"
+                        "type": "action"
                     },
                     {
-                        "label": "posts",
-                        "url": "#",
-                        "style": "link",
+                        "label": "Python",
+                        "url": "/docs/docs/python",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -66,22 +54,76 @@
                 "type": "action_menu"
             },
             {
-                "label": "Archive",
-                "style": "link",
-                "icon_class": "github",
-                "new_window": true,
-                "no_follow": false,
+                "label": "Blog",
+                "url": "/blog/",
+                "style": "primary",
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Project Portfolio",
-                        "url": "https://curious-zebra-a1329.netlify.app/",
-                        "style": "link",
+                        "label": "Blog-Post-Archive",
+                        "url": "https://bgoonz.blogspot.com/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Top Blog Posts",
+                        "url": "https://blog-w-comments.vercel.app/",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
                     },
+                    {
+                        "label": "ds-algo",
+                        "url": "docs/articles/ds-algo-overview/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "platform docs",
+                        "url": "blog/platform-docs/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "nodejs",
+                        "url": "docs/articles/nodejs/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Blog w Comments",
+                        "url": "/blogWcomments/",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
+                "new_window": true
+            },
+            {
+                "label": "Archive",
+                "style": "primary",
+                "icon_class": "github",
+                "new_window": true,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [
                     {
                         "label": "Medium Articles",
                         "url": "https://bryanguner.medium.com/",
@@ -93,7 +135,7 @@
                     },
                     {
                         "label": "Resource-Archive-Server",
-                        "url": "https://lambda-static-server.netlify.app/directory.html",
+                        "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
@@ -101,9 +143,36 @@
                         "type": "action"
                     },
                     {
-                        "label": "Lambda Student Resource Site",
+                        "label": "Bootcamp Resources",
                         "url": "#",
                         "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "OG-Blog",
+                        "url": "https://web-dev-resource-hub.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Gallery",
+                        "url": "/docs/gallery",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Top Repos",
+                        "url": "/docs",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -111,12 +180,146 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "https://github.com/bgoonz/Learning-Assets"
+                "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
+            },
+            {
+                "label": "Audio",
+                "url": "/docs/audio/audio",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [],
+                "type": "action_menu"
+            },
+            {
+                "label": "Projects",
+                "url": "https://curious-zebra-a1329.netlify.app/",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": true,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "Potluck Planner",
+                        "url": "https://potluck-landing.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Meditation App",
+                        "url": "https://meditate42app.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "WebAudioLab",
+                        "url": "https://panoramic-eggplant-452e4.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
+                "type": "action_menu"
+            },
+            {
+                "label": "External Nav",
+                "url": "https://bgoonz-blog-v3-0.netlify.app/",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "Embeds Blog",
+                        "url": "https://friendly-panda-b61ab.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "alt-blogs",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Games",
+                        "url": "https://bgoonz-games.netlify.app/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Blog Backup",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Cover Letter",
+                        "url": "https://bgoonz-cv.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Project Centric",
+                        "url": "https://curious-zebra-a1329.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Wordpress Blog",
+                        "url": "https://web-dev-hub.com/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Project Portfolio Gallery",
+                        "url": "https://curious-zebra-a1329.netlify.app/",
+                        "style": "secondary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
+                "type": "action_menu"
             },
             {
                 "label": "Tools",
-                "url": "/style-guide",
-                "style": "link",
+                "url": "/docs/tools",
+                "style": "primary",
                 "has_subnav": true,
                 "subnav_links": [
                     {
@@ -165,6 +368,24 @@
                         "type": "action"
                     },
                     {
+                        "label": "PotluckPlanner",
+                        "url": "https://potluck-landing.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "WebDev Quizzes",
+                        "url": "https://web-dev-interview-prep-quiz-website.netlify.app/",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "Github-Advanced-Search",
                         "url": "https://github.com/search/advanced",
                         "style": "icon",
@@ -174,15 +395,8 @@
                         "type": "action"
                     }
                 ]
-            },
-            {
-                "label": "GitHub",
-                "url": "https://github.com/bgoonz/BGOONZ_BLOG_2.0",
-                "style": "primary",
-                "has_subnav": false
             }
         ],
-        "url": "WebDevHub",
         "title": "WebDevHub"
     },
     "footer": {
@@ -223,21 +437,21 @@
                 "url": "https://www.instagram.com/bgoonz/?hl=en",
                 "style": "icon",
                 "icon_class": "instagram",
-                "new_window": false,
+                "new_window": true,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "dev.to",
+                "url": "https://dev.to/bgoonz",
+                "style": "icon",
+                "icon_class": "dev",
+                "new_window": true,
                 "no_follow": false,
                 "type": "action"
             }
         ],
         "links": [
-            {
-                "label": "Old Blog",
-                "url": "https://lambda-resources.netlify.app/",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
             {
                 "label": "Medium",
                 "url": "https://bryanguner.medium.com/",
@@ -248,45 +462,18 @@
                 "type": "action"
             },
             {
-                "label": "Html Previewer",
-                "url": "#",
+                "label": "BLM",
+                "url": "https://optimistic-lewin-8586ae.netlify.app/blm.zip",
                 "style": "primary",
                 "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "Python",
-                "url": "https://github.com/bgoonz/PYTHON_PRAC",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "Freelance",
-                "url": "https://dribbble.com/bgoonz4242?onboarding=true",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
-                "label": "Github Pages",
-                "url": "https://bgoonz.github.io/BGOONZ_BLOG_2.0/",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
+                "new_window": true,
                 "no_follow": false,
                 "type": "action"
             }
         ],
-        "content": "@bgoonz"
+        "content": "@bgoonz on almost every platform"
     },
     "title": "webdevhub",
-    "domain": "https://best-celery-b2d7c.netlify.app",
-    "favicon": "images/magnificent-maple.ico"
+    "domain": "https://bgoonz-blog.netlify.app/",
+    "favicon": "images/webdevhublogo2.PNG"
 }

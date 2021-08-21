@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://bgoonz-blog.netlify.app/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/showcase/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/gallery/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/style-guide/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/about/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/faq/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/links/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/links/my-websites/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/links/social/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/quick-reference/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/quick-reference/installation/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/quick-reference/emmet/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/react/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/react/react2/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/react/createreactapp/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/tools/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/tools/default-readme/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/tools/git-html-preview/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/tools/plug-ins/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/tools/notes-template/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/about/resume/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/about/introduction2bg/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bgoonz-blog.netlify.app/docs/about/me/</loc>
+  <lastmod>2021-07-03T18:11:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
