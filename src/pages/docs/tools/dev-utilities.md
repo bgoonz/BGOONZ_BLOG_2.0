@@ -3,15 +3,15 @@ title: General Utilities
 weight: 0
 excerpt: General Utilities
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
-## General Utilities
 
+## General Utilities
 
 <br>
 

@@ -3,15 +3,15 @@ title: md and html
 weight: 1
 excerpt: Tools For Markdown & Html
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
-##  Tools For Markdown & Html
 
+## Tools For Markdown & Html
 
 <br>
 <br>

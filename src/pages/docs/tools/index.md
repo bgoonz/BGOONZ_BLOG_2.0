@@ -1,37 +1,37 @@
 ---
 title: Tools
 excerpt: >-
-  See some interesting tools developed by the Web-Dev-Hubcommunity to help
-  automate parts of your workflow.
+    See some interesting tools developed by the Web-Dev-Hubcommunity to help
+    automate parts of your workflow.
 seo:
-  title: Tools
-  description: >-
-    paste to markdown, excel table to markdown, excel to html, cloud storage,
-    text manipulation, ternary converter, github html preview, form builder,
-    border
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Tools
-      keyName: property
-    - name: 'og:description'
-      value: >-
-        paste to markdown, excel table to markdown, excel to html, cloud
-        storage, text manipulation, ternary converter, github html preview, form
-        builder, border
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Tools
-    - name: 'twitter:description'
-      value: This is the tools page
-    - name: 'og:image'
-      value: images/tex.PNG
-      keyName: property
-      relativeUrl: true
+    title: Tools
+    description: >-
+        paste to markdown, excel table to markdown, excel to html, cloud storage,
+        text manipulation, ternary converter, github html preview, form builder,
+        border
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Tools
+          keyName: property
+        - name: 'og:description'
+          value: >-
+              paste to markdown, excel table to markdown, excel to html, cloud
+              storage, text manipulation, ternary converter, github html preview, form
+              builder, border
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Tools
+        - name: 'twitter:description'
+          value: This is the tools page
+        - name: 'og:image'
+          value: images/tex.PNG
+          keyName: property
+          relativeUrl: true
 template: docs
 ---
 

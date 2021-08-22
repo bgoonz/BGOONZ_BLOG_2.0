@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 <br>
 <h1>My DevDocs Deploy</h1>
 <br>
@@ -19,7 +18,6 @@ template: docs
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
-
 
 -   [/job-hunt/](https://bgoonz-blog.netlify.app/job-hunt/)
 -   [/notes-template/](https://bgoonz-blog.netlify.app/notes-template/)
