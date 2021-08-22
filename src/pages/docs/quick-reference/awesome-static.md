@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Awesome Static Site Resources
 weight: 0
-excerpt: lorem-ipsum
+excerpt: inspired by Awesome Lists
 seo:
   title: ''
   description: ''
