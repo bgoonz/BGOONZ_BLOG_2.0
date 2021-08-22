@@ -10,6 +10,10 @@ seo:
   type: stackbit_page_meta
 template: docs
 ---
+
+# Awesome Static Site Resources
+
+
 ## Table of Contents
 
 - [Audio](#audio)
