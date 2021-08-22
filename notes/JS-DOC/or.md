@@ -1,10 +1,8 @@
-Atomics.or()
-============
+# Atomics.or()
 
-The static `Atomics``.or()` method computes a bitwise OR with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.
+The static ` Atomics``.or() ` method computes a bitwise OR with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.
 
-Syntax
-------
+## Syntax
 
     Atomics.or(typedArray, index, value)
 
@@ -28,8 +26,7 @@ The old value at the given position (`typedArray[index]`).
 -   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
 -   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
-Description
------------
+## Description
 
 The bitwise OR operation yields 1, if either `a` or `b` are 1. The truth table for the OR operation is:
 
@@ -42,8 +39,7 @@ For example, a bitwise OR of `5 | 1` results in `0101` which is 5 in decimal.
        ----
     5  0101
 
-Examples
---------
+## Examples
 
 ### Using or
 
@@ -54,14 +50,12 @@ Examples
     Atomics.or(ta, 0, 1); // returns 2, the old value
     Atomics.load(ta, 0);  // 3
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.or">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-atomics.or</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -145,8 +139,7 @@ No
 
 Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-See also
---------
+## See also
 
 -   [`Atomics`](../atomics)
 -   [`Atomics.and()`](and)

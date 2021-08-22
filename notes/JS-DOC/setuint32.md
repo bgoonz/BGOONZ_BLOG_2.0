@@ -1,10 +1,8 @@
-DataView.prototype.setUint32()
-==============================
+# DataView.prototype.setUint32()
 
 The `setUint32()` method stores an unsigned 32-bit integer (unsigned long) value at the specified byte offset from the start of the [`DataView`](../dataview).
 
-Syntax
-------
+## Syntax
 
     setUint32(byteOffset, value)
     setUint32(byteOffset, value, littleEndian)
@@ -29,8 +27,7 @@ The value to set.
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
-Examples
---------
+## Examples
 
 ### Using the setUint32 method
 
@@ -39,14 +36,12 @@ Examples
     dataview.setUint32(1, 3);
     dataview.getUint32(1); // 3
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint32">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-dataview.prototype.setuint32</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -102,8 +97,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

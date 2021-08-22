@@ -1,16 +1,14 @@
-RegExp
-======
+# RegExp
 
 The `RegExp` object is used for matching text with a pattern.
 
 For an introduction to regular expressions, read the [Regular Expressions chapter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
-Description
------------
+## Description
 
 ### Literal notation and constructor
 
-There are two ways to create a `RegExp` object: a *literal notation* and a *constructor*.
+There are two ways to create a `RegExp` object: a _literal notation_ and a _constructor_.
 
 -   **The literal notation's** parameters are enclosed between slashes and do not use quotation marks.
 -   **The constructor function's** parameters are not enclosed between slashes but do use quotation marks.
@@ -40,20 +38,17 @@ For example, the following are equivalent:
 
 Note that several of the [`RegExp`](regexp) properties have both long and short (Perl-like) names. Both names always refer to the same value. (Perl is the programming language from which JavaScript modeled its regular expressions.). See also [deprecated `RegExp` properties.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features#regexp_properties)
 
-Constructor
------------
+## Constructor
 
 [`RegExp()`](regexp/regexp)  
 Creates a new `RegExp` object.
 
-Static properties
------------------
+## Static properties
 
 [`get RegExp[@@species]`](regexp/@@species)  
 The constructor function that is used to create derived objects.
 
-Instance properties
--------------------
+## Instance properties
 
 [`RegExp.prototype.flags`](regexp/flags)  
 A string that contains the flags of the `RegExp` object.
@@ -85,10 +80,9 @@ Whether or not Unicode features are enabled.
 [`RegExp: lastIndex`](regexp/lastindex)  
 The index at which to start the next match.
 
-Instance methods
-----------------
+## Instance methods
 
- [`RegExp.prototype.compile()`](regexp/compile) <span class="icon deprecated" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This deprecated API should no longer be used, but will probably still work. </span>   
+[`RegExp.prototype.compile()`](regexp/compile) <span class="icon deprecated" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This deprecated API should no longer be used, but will probably still work. </span>  
 (Re-)compiles a regular expression during execution of a script.
 
 [`RegExp.prototype.exec()`](regexp/exec)  
@@ -115,12 +109,11 @@ Searches the match in given string and returns the index the pattern found in th
 [`RegExp.prototype[@@split]()`](regexp/@@split)  
 Splits given string into an array by separating the string into substrings.
 
-Examples
---------
+## Examples
 
 ### Using a regular expression to change data format
 
-The following script uses the [`replace()`](string/replace) method of the [`String`](string) instance to match a name in the format *first last* and output it in the format *last, first*.
+The following script uses the [`replace()`](string/replace) method of the [`String`](string) instance to match a name in the format _first last_ and output it in the format _last, first_.
 
 In the replacement text, the script uses `$1` and `$2` to indicate the results of the corresponding matching parentheses in the regular expression pattern.
 
@@ -208,14 +201,12 @@ The [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/Java
 
 **Note:** Instead of using regular expressions for parsing URLs, it is usually better to use the browsers built-in URL parser by using the [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL_API).
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp-regular-expression-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-regexp-regular-expression-objects</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -1099,8 +1090,7 @@ Starting with Firefox 34, in the case of a capturing group with quantifiers prev
 
 Note that due to web compatibility, `RegExp.$N` will still return an empty string instead of `undefined` ([bug 1053944](https://bugzilla.mozilla.org/show_bug.cgi?id=1053944)).
 
-See also
---------
+## See also
 
 -   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 -   [`String.prototype.match()`](string/match)

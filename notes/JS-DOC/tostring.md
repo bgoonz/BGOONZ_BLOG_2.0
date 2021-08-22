@@ -1,10 +1,8 @@
-Object.prototype.toString()
-===========================
+# Object.prototype.toString()
 
 The `toString()` method returns a string representing the object.
 
-Syntax
-------
+## Syntax
 
     toString()
 
@@ -12,8 +10,7 @@ Syntax
 
 A string representing the object.
 
-Description
------------
+## Description
 
 Every object has a `toString()` method that is automatically called when the object is to be represented as a text value or when an object is referred to in a manner in which a string is expected. By default, the `toString()` method is inherited by every object descended from `Object`. If this method is not overridden in a custom object, `toString()` returns "`[object type]`", where `type` is the object type. The following code illustrates this:
 
@@ -24,8 +21,7 @@ Every object has a `toString()` method that is automatically called when the obj
 
 See [Using `toString()` to detect object class](#using_tostring_to_detect_object_class).
 
-Parameters
-----------
+## Parameters
 
 For Numbers and BigInts `toString()` takes an optional parameter `radix` the value of radix must be minimum 2 and maximum 36.
 
@@ -48,8 +44,7 @@ Some common radix are
 -   10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
 -   16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
 
-Examples
---------
+## Examples
 
 ### Overriding the default toString method
 
@@ -114,14 +109,12 @@ Using `toString()` in this way is unreliable; objects can change the behavior of
     Date.prototype[Symbol.toStringTag] = 'prototype polluted';
     Object.prototype.toString.call(new Date()); // [object prototype polluted]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.tostring">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.prototype.tostring</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -177,8 +170,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Object.prototype.toSource()`](tosource)
 -   [`Object.prototype.valueOf()`](valueof)

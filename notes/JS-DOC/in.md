@@ -1,10 +1,8 @@
-in operator
-===========
+# in operator
 
 The `in` returns `true` if the specified property is in the specified object or its prototype chain.
 
-Syntax
-------
+## Syntax
 
     prop in object
 
@@ -16,8 +14,7 @@ A string or symbol representing a property name or array index (non-symbols will
 `object`  
 Object to check if it (or its prototype chain) <span class="short_text">contains</span> the property with specified name (`prop`).
 
-Examples
---------
+## Examples
 
 ### Basic usage
 
@@ -84,12 +81,11 @@ To avoid this, make sure a new array is always filled with non-empty values or n
 
 ### Inherited properties
 
-The `in` operator returns `true` for properties in the prototype chain. (If you want to check for only *non-inherited* properties, use [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty) instead.)
+The `in` operator returns `true` for properties in the prototype chain. (If you want to check for only _non-inherited_ properties, use [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty) instead.)
 
     'toString' in {}  // returns true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
@@ -120,8 +116,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   `for...in`
 -   `delete`

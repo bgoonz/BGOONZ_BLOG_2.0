@@ -1,16 +1,14 @@
-WebAssembly.Module.imports()
-============================
+# WebAssembly.Module.imports()
 
 The `WebAssembly.imports()` function returns an array containing descriptions of all the declared imports of the given `Module`.
 
-Syntax
-------
+## Syntax
 
     WebAssembly.Module.imports(module)
 
 ### Parameters
 
-*module*  
+_module_  
 A [`WebAssembly.Module`](../module) object.
 
 ### Return value
@@ -21,8 +19,7 @@ An array containing objects representing the imported functions of the given mod
 
 If module is not a [`WebAssembly.Module`](../module) object instance, a [`TypeError`](../../typeerror) is thrown.
 
-Examples
---------
+## Examples
 
 ### Using imports
 
@@ -38,8 +35,7 @@ The output looks like this:
 
     { module: "imports", name: "imported_func", kind: "function" }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-imports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#dom-module-imports</span></a></td></tr></tbody></table>
@@ -74,8 +70,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

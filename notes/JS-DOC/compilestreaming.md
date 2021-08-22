@@ -1,16 +1,14 @@
-WebAssembly.compileStreaming()
-==============================
+# WebAssembly.compileStreaming()
 
 The `WebAssembly.compileStreaming()` function compiles a [`WebAssembly.Module`](module) directly from a streamed underlying source. This function is useful if it is necessary to a compile a module before it can be instantiated (otherwise, the [`WebAssembly.instantiateStreaming()`](instantiatestreaming) function should be used).
 
-Syntax
-------
+## Syntax
 
     WebAssembly.compileStreaming(source)
 
 ### Parameters
 
-*source*  
+_source_  
 A [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object or a promise that will fulfill with one, representing the underlying source of a .wasm module you want to stream and compile.
 
 ### Return value
@@ -22,8 +20,7 @@ A `Promise` that resolves to a [`WebAssembly.Module`](module) object representin
 -   If `bufferSource` is not a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), a [`TypeError`](../typeerror) is thrown.
 -   If compilation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror).
 
-Examples
---------
+## Examples
 
 ### Compile streaming
 
@@ -37,8 +34,7 @@ The following example (see our [compile-streaming.html](https://github.com/mdn/w
 
 The resulting module instance is then instantiated using [`WebAssembly.instantiate()`](instantiate), and the exported function invoked.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-compilestreaming">WebAssembly Web API (WebAssembly Web API)<br />
 <span class="small">#dom-webassembly-compilestreaming</span></a></td></tr></tbody></table>
@@ -69,8 +65,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

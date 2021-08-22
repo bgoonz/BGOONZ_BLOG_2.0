@@ -1,10 +1,8 @@
-Array.prototype.copyWithin()
-============================
+# Array.prototype.copyWithin()
 
 The `copyWithin()` method shallow copies part of an array to another location in the same array and returns it without modifying its length.
 
-Syntax
-------
+## Syntax
 
     copyWithin(target)
     copyWithin(target, start)
@@ -17,12 +15,12 @@ Zero-based index at which to copy the sequence to. If negative, `target` will be
 
 If `target` is at or greater than `arr.length`, nothing will be copied. If `target` is positioned after `start`, the copied sequence will be trimmed to fit `arr.length`.
 
- `start` <span class="badge inline optional">Optional</span>   
+`start` <span class="badge inline optional">Optional</span>  
 Zero-based index at which to start copying elements from. If negative, `start` will be counted from the end.
 
 If `start` is omitted, `copyWithin` will copy from index `0`.
 
- `end` <span class="badge inline optional">Optional</span>   
+`end` <span class="badge inline optional">Optional</span>  
 Zero-based index at which to end copying elements from. `copyWithin` copies up to but not including `end`. If negative, `end` will be counted from the end.
 
 If `end` is omitted, `copyWithin` will copy until the last index (default to `arr.length`).
@@ -31,17 +29,15 @@ If `end` is omitted, `copyWithin` will copy until the last index (default to `ar
 
 The modified array.
 
-Description
------------
+## Description
 
 The `copyWithin` works like C and C++'s `memmove`, and is a high-performance method to shift the data of an [`Array`](../array). This especially applies to the [`TypedArray`](../typedarray/copywithin) method of the same name. The sequence is copied and pasted as one operation; pasted sequence will have the copied values even when the copy and paste region overlap.
 
-The `copyWithin` function is intentionally *generic*, it does not require that its `this` value be an [`Array`](../array) object.
+The `copyWithin` function is intentionally _generic_, it does not require that its `this` value be an [`Array`](../array) object.
 
 The `copyWithin` method is a mutable method. It does not alter the length of `this`, but it will change its content and create new properties, if necessary.
 
-Examples
---------
+## Examples
 
 ### Using copyWithin
 
@@ -70,8 +66,7 @@ Examples
     [].copyWithin.call(new Int32Array([1, 2, 3, 4, 5]), 0, 3, 4);
     // Int32Array [4, 2, 3, 4, 5]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.copywithin">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.copywithin</span></a></td></tr></tbody></table>
@@ -102,8 +97,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
 -   [`Array`](../array)

@@ -1,29 +1,24 @@
-TypeError: property "x" is non-configurable and can't be deleted
-================================================================
+# TypeError: property "x" is non-configurable and can't be deleted
 
 The JavaScript exception "property is non-configurable and can't be deleted" occurs when it was attempted to delete a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
 
-Message
--------
+## Message
 
     TypeError: Calling delete on 'x' is not allowed in strict mode (Edge)
     TypeError: property "x" is non-configurable and can't be deleted. (Firefox)
     TypeError: Cannot delete property 'x' of #<Object> (Chrome)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror) in strict mode only.
 
-What went wrong?
-----------------
+## What went wrong?
 
 It was attempted to delete a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties). The `configurable` attribute controls whether the property can be deleted from the object and whether its attributes (other than `writable`) can be changed.
 
 This error happens only in [strict mode code](../strict_mode). In non-strict code, the operation returns `false`.
 
-Examples
---------
+## Examples
 
 ### Attempting to delete non-configurable properties
 
@@ -47,8 +42,7 @@ There are also a few non-configurable properties built into JavaScript. Maybe yo
     'use strict';
     delete Math.PI;  // TypeError
 
-See also
---------
+## See also
 
 -   [delete operator](../operators/delete)
 -   [`Object.defineProperty()`](../global_objects/object/defineproperty)

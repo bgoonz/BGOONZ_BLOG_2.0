@@ -1,10 +1,8 @@
-Date.prototype.setFullYear()
-============================
+# Date.prototype.setFullYear()
 
 The `setFullYear()` method sets the full year for a specified date according to local time. Returns new timestamp.
 
-Syntax
-------
+## Syntax
 
     setFullYear(yearValue)
     setFullYear(yearValue, monthValue)
@@ -25,29 +23,25 @@ Optional. An integer between 1 and 31 representing the day of the month. If you 
 
 The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
 
-Description
------------
+## Description
 
 If you do not specify the `monthValue` and `dateValue` parameters, the values returned from the [`getMonth()`](getmonth) and [`getDate()`](getdate) methods are used.
 
 If a parameter you specify is outside of the expected range, `setFullYear()` attempts to update the other parameters and the date information in the [`Date`](../date) object accordingly. For example, if you specify 15 for `monthValue`, the year is incremented by 1 (`yearValue + 1`), and 3 is used for the month.
 
-Examples
---------
+## Examples
 
 ### Using setFullYear()
 
     var theBigDay = new Date();
     theBigDay.setFullYear(1997);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setfullyear">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.setfullyear</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -103,8 +97,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
 -   [`Date.prototype.setUTCFullYear()`](setutcfullyear)

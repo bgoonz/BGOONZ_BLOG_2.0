@@ -1,15 +1,12 @@
-new.target
-==========
+# new.target
 
 The `new.target` pseudo-property lets you detect whether a function or constructor was called using the [new](new) operator. In constructors and functions invoked using the [new](new) operator, `new.target` returns a reference to the constructor or function. In normal function calls, `new.target` is [`undefined`](../global_objects/undefined).
 
-Syntax
-------
+## Syntax
 
     new.target
 
-Description
------------
+## Description
 
 The `new.target` syntax consists of the keyword `new`, a dot, and the identifier `target`. Normally, the left-hand side of the dot is the object on which property access is performed, but here, `new` is not an object.
 
@@ -21,8 +18,7 @@ In ordinary functions, it refers to the function itself, assuming it was invoked
 
 In [arrow functions](../functions/arrow_functions), `new.target` is inherited from the surrounding scope.
 
-Examples
---------
+## Examples
 
 ### new.target in function calls
 
@@ -59,8 +55,7 @@ In class constructors, `new.target` refers to the constructor that was directly 
 
 Thus from the above example of class `C` and `D`, it seems that `new.target` points to the class definition of class which is initialized. For example, when `d` was initialized using `new D()`, the class definition of `D` was printed; and similarly, in case of `c`, the class `C` was printed.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-built-in-function-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-built-in-function-objects</span></a></td></tr></tbody></table>
@@ -91,8 +86,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [Functions](../functions)
 -   [Classes](../classes)

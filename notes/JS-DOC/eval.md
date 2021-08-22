@@ -1,12 +1,10 @@
-eval()
-======
+# eval()
 
 **Warning:** Executing JavaScript from a string is an enormous security risk. It is far too easy for a bad actor to run arbitrary code when you use `eval()`. See [Never use eval()!](#never_use_eval!), below.
 
 The `eval()` function evaluates JavaScript code represented as a string.
 
-Syntax
-------
+## Syntax
 
     eval(string)
 
@@ -19,8 +17,7 @@ A string representing a JavaScript expression, statement, or sequence of stateme
 
 The completion value of evaluating the given code. If the completion value is empty, [`undefined`](undefined) is returned.
 
-Description
------------
+## Description
 
 `eval()` is a function property of the global object.
 
@@ -38,7 +35,7 @@ You can work around this limitation in a generic fashion by using `toString()`.
     var expression = new String('2 + 2');
     eval(expression.toString());            // returns 4
 
-If you use the `eval` function *indirectly,* by invoking it via a reference other than `eval`, [as of ECMAScript 5](https://www.ecma-international.org/ecma-262/5.1/#sec-10.4.2) it works in the global scope rather than the local scope. This means, for instance, that function declarations create global functions, and that the code being evaluated doesn't have access to local variables within the scope where it's being called.
+If you use the `eval` function _indirectly,_ by invoking it via a reference other than `eval`, [as of ECMAScript 5](https://www.ecma-international.org/ecma-262/5.1/#sec-10.4.2) it works in the global scope rather than the local scope. This means, for instance, that function declarations create global functions, and that the code being evaluated doesn't have access to local variables within the scope where it's being called.
 
     function test() {
       var x = 2, y = 4;
@@ -51,8 +48,7 @@ If you use the `eval` function *indirectly,* by invoking it via a reference othe
       console.log(geval('x + y')); // Uses global scope, throws because x is undefined
     }
 
-Never use eval()!
------------------
+## Never use eval()!
 
 `eval()` is a dangerous function, which executes the code it's passed with the privileges of the caller. If you run `eval()` with a string that could be affected by a malicious party, you may end up running malicious code on the user's machine with the permissions of your webpage / extension. More importantly, a third-party code can see the scope in which `eval()` was invoked, which can lead to possible attacks in ways to which the similar [`Function`](function) is not susceptible.
 
@@ -180,7 +176,7 @@ JavaScript has [first-class functions](https://en.wikipedia.org/wiki/First-class
     setTimeout(function() { ... }, 1000);
 
     // instead of elt.setAttribute("onclick", "...") use:
-    elt.addEventListener('click', function() { ... } , false); 
+    elt.addEventListener('click', function() { ... } , false);
 
 [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) are also helpful as a way to create parameterized functions without concatenating strings.
 
@@ -194,8 +190,7 @@ Note that since JSON syntax is limited compared to JavaScript syntax, many valid
 
 For example, an extension designed to scrape contents of web-pages could have the scraping rules defined in [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath) instead of JavaScript code.
 
-Examples
---------
+## Examples
 
 ### Using `eval`
 
@@ -245,8 +240,7 @@ If you define multiple values then the last value is returned.
     var fct1 = eval(fctStr1)  // return undefined
     var fct2 = eval(fctStr2)  // return a function
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-eval-x">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-eval-x</span></a></td></tr></tbody></table>
@@ -277,11 +271,10 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`uneval()`](uneval)
 -   [Property accessors](../operators/property_accessors)
--   [WebExtensions: Using eval in content scripts](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#using_eval()_in_content_scripts)
+-   [WebExtensions: Using eval in content scripts](<https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#using_eval()_in_content_scripts>)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval</a>

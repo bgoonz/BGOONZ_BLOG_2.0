@@ -1,12 +1,10 @@
-Object.prototype.isPrototypeOf()
-================================
+# Object.prototype.isPrototypeOf()
 
 The `isPrototypeOf()` method checks if an object exists in another object's prototype chain.
 
 **Note:** `isPrototypeOf()` differs from the [`instanceof`](../../operators/instanceof) operator. In the expression "`object instanceof AFunction`", the `object` prototype chain is checked against `AFunction.prototype`, not against `AFunction` itself.
 
-Syntax
-------
+## Syntax
 
     isPrototypeOf(object)
 
@@ -24,13 +22,11 @@ A [`Boolean`](../boolean) indicating whether the calling object lies in the prot
 [`TypeError`](../typeerror)  
 A [`TypeError`](../typeerror) is thrown if `prototypeObj` is undefined or null.
 
-Description
------------
+## Description
 
 The `isPrototypeOf()` method allows you to check whether or not an object exists within another object's prototype chain.
 
-Examples
---------
+## Examples
 
 ### Using isPrototypeOf
 
@@ -68,8 +64,7 @@ For example, to execute some code that’s only safe to run if a `baz` object ha
       // do something safe
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.isprototypeof">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.prototype.isprototypeof</span></a></td></tr></tbody></table>
@@ -100,8 +95,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`instanceof`](../../operators/instanceof)
 -   [`Object.getPrototypeOf()`](getprototypeof)

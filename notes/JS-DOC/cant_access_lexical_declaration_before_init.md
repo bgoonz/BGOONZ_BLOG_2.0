@@ -1,27 +1,22 @@
-ReferenceError: can't access lexical declaration\`X' before initialization
-==========================================================================
+# ReferenceError: can't access lexical declaration\`X' before initialization
 
-The JavaScript exception "can't access lexical declaration \`*variable*' before initialization" occurs when a lexical variable was accessed before it was initialized. This happens within any block statement, when `let` or `const` declarations are accessed before they are defined.
+The JavaScript exception "can't access lexical declaration \`_variable_' before initialization" occurs when a lexical variable was accessed before it was initialized. This happens within any block statement, when `let` or `const` declarations are accessed before they are defined.
 
-Message
--------
+## Message
 
     ReferenceError: Use before delaration (Edge)
     ReferenceError: can't access lexical declaration `X' before initialization (Firefox)
     ReferenceError: 'x' is not defined (Chrome)
 
-Error type
-----------
+## Error type
 
 [`ReferenceError`](../global_objects/referenceerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 A lexical variable was accessed before it was initialized. This happens within any block statement, when `let` or `const` declarations are accessed before they are defined.
 
-Examples
---------
+## Examples
 
 ### Invalid cases
 
@@ -49,8 +44,7 @@ To change "foo" inside the if statement, you need to remove the `let` that cause
     }
     test();
 
-See also
---------
+## See also
 
 -   [Temporal Dead Zone and errors with let](../statements/let#temporal_dead_zone_and_errors_with_let)
 

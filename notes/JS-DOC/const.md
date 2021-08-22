@@ -1,10 +1,8 @@
-const
-=====
+# const
 
 Constants are block-scoped, much like variables declared using the `let` keyword. The value of a constant can't be changed through reassignment, and it can't be redeclared.
 
-Syntax
-------
+## Syntax
 
     const name1 = value1 [, name2 = value2 [, ... [, nameN = valueN]]];
 
@@ -19,8 +17,7 @@ The [Destructuring Assignment](../operators/destructuring_assignment) syntax can
     const { bar } = foo; // where foo = { bar:10, baz:12 };
     /* This creates a constant with the name 'bar', which has a value of 10 */
 
-Description
------------
+## Description
 
 This declaration creates a constant whose scope can be either global or local to the block in which it is declared. Global constants do **not** become properties of the [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) object, unlike [`var`](var) variables.
 
@@ -32,8 +29,7 @@ All the considerations about the "[temporal dead zone](let#temporal_dead_zone_td
 
 A constant cannot share its name with a function or a variable in the same scope.
 
-Examples
---------
+## Examples
 
 ### Basic const usage
 
@@ -106,8 +102,7 @@ const also works on objects and arrays.
     // Uncaught TypeError: Assignment to constant variable.
     MY_ARRAY = ['B'];
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
@@ -142,8 +137,7 @@ Specifications
 
 1.5
 
-See also
---------
+## See also
 
 -   [`var`](var)
 -   [`let`](let)

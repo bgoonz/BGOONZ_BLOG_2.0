@@ -1,18 +1,15 @@
-return
-======
+# return
 
 The `return` statement ends function execution and specifies a value to be returned to the function caller.
 
-Syntax
-------
+## Syntax
 
-    return [expression]; 
+    return [expression];
 
 `expression`  
 The expression whose value is to be returned. If omitted, `undefined` is returned instead.
 
-Description
------------
+## Description
 
 When a `return` statement is used in a function body, the execution of the function is stopped. If specified, a given value is returned to the function caller. For example, the following function returns the square of its argument, `x`, where `x` is a number.
 
@@ -54,8 +51,7 @@ To avoid this problem (to prevent ASI), you could use parentheses:
       a + b
     );
 
-Examples
---------
+## Examples
 
 ### Interrupt a function
 
@@ -96,14 +92,12 @@ See also the article about [Closures](https://developer.mozilla.org/en-US/docs/W
     var answer = magic();
     answer(1337); // 56154
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-return-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-return-statement</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -159,8 +153,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [Functions](../functions)
 -   [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)

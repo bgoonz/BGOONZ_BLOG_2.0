@@ -1,10 +1,8 @@
-RangeError
-==========
+# RangeError
 
 The `RangeError` object indicates an error when a value is not in the set or range of allowed values.
 
-Description
------------
+## Description
 
 A `RangeError` is thrown when trying to pass a value as an argument to a function that does not allow a range that includes the value.
 
@@ -14,14 +12,12 @@ This can be encountered when:
 -   when attempting to create an array of an illegal length with the [`Array`](array) constructor, or
 -   when passing bad values to the numeric methods [`Number.prototype.toExponential()`](number/toexponential), [`Number.prototype.toFixed()`](number/tofixed) or [`Number.prototype.toPrecision()`](number/toprecision).
 
-Constructor
------------
+## Constructor
 
 [`RangeError()`](rangeerror/rangeerror)  
 Creates a new `RangeError` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`RangeError.prototype.message`](error/message)  
 Error message. Although ECMA-262 specifies that [`RangeError`](rangeerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
@@ -41,8 +37,7 @@ Column number in line that raised this error. Inherited from [`Error`](error).
 [`RangeError.prototype.stack`](error/stack)  
 Stack trace. Inherited from [`Error`](error).
 
-Examples
---------
+## Examples
 
 ### Using RangeError (for numeric values)
 
@@ -88,14 +83,12 @@ Examples
         }
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-native-error-types-used-in-this-standard-rangeerror</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -177,8 +170,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Error`](error)
 -   [`Array`](array)

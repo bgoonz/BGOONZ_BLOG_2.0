@@ -1,12 +1,10 @@
-Template literals (Template strings)
-====================================
+# Template literals (Template strings)
 
 Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
 
 They were called "template strings" in prior editions of the ES2015 specification.
 
-Syntax
-------
+## Syntax
 
     `string text`
 
@@ -17,14 +15,13 @@ Syntax
 
     tag`string text ${expression} string text`
 
-Description
------------
+## Description
 
 Template literals are enclosed by the backtick (\` \`) ([grave accent](https://en.wikipedia.org/wiki/Grave_accent)) character instead of double or single quotes.
 
 Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (`${expression}`). The expressions in the placeholders and the text between the backticks (\` \`) get passed to a function.
 
-The default function just concatenates the parts into a single string. If there is an expression preceding the template literal (`tag` here), this is called a *tagged template*. In that case, the tag expression (usually a function) gets called with the template literal, which you can then manipulate before outputting.
+The default function just concatenates the parts into a single string. If there is an expression preceding the template literal (`tag` here), this is called a _tagged template_. In that case, the tag expression (usually a function) gets called with the template literal, which you can then manipulate before outputting.
 
 To escape a backtick in a template literal, put a backslash (`\`) before the backtick.
 
@@ -92,7 +89,7 @@ In ES2015 with nested template literals:
 
 ### Tagged templates
 
-A more advanced form of template literals are *tagged* templates.
+A more advanced form of template literals are _tagged_ templates.
 
 Tags allow you to parse template literals with a function. The first argument of a tag function contains an array of string values. The remaining arguments are related to the expressions.
 
@@ -205,18 +202,16 @@ However, illegal escape sequences must still be represented in the “cooked” 
 
     // { cooked: undefined, raw: "\\unicode" }
 
-Note that the escape sequence restriction is only dropped from *tagged* templates—not from *untagged* template literals:
+Note that the escape sequence restriction is only dropped from _tagged_ templates—not from _untagged_ template literals:
 
     let bad = `bad escape sequence: \unicode`;
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-template-literals">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-template-literals</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -298,8 +293,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [`String`](global_objects/string)
 -   [`String.raw()`](global_objects/string/raw)

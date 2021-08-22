@@ -1,25 +1,20 @@
-ReferenceError: invalid assignment left-hand side
-=================================================
+# ReferenceError: invalid assignment left-hand side
 
 The JavaScript exception "invalid assignment left-hand side" occurs when there was an unexpected assignment somewhere. For example, a single "`=`" sign was used instead of "`==`" or "`===`".
 
-Message
--------
+## Message
 
     ReferenceError: invalid assignment left-hand side
 
-Error type
-----------
+## Error type
 
 [`ReferenceError`](../global_objects/referenceerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 There was an unexpected assignment somewhere. This might be due to a mismatch of a [assignment operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators) and a [comparison operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators), for example. While a single "`=`" sign assigns a value to a variable, the "`==`" or "`===`" operators compare a value.
 
-Examples
---------
+## Examples
 
 ### Typical invalid assignments
 
@@ -43,8 +38,7 @@ In the `if` statement, you want to use a comparison operator ("=="), and for the
     + 'from the '
     + 'other side!';
 
-See also
---------
+## See also
 
 -   [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators)
 -   [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)

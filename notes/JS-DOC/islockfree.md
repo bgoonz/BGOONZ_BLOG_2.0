@@ -1,10 +1,8 @@
-Atomics.isLockFree()
-====================
+# Atomics.isLockFree()
 
-The static `Atomics``.isLockFree()` method is used to determine whether to use locks or atomic operations. It returns `true`, if the given size is one of the [BYTES\_PER\_ELEMENT](../typedarray/bytes_per_element) property of integer TypedArray types.
+The static ` Atomics``.isLockFree() ` method is used to determine whether to use locks or atomic operations. It returns `true`, if the given size is one of the [BYTES_PER_ELEMENT](../typedarray/bytes_per_element) property of integer TypedArray types.
 
-Syntax
-------
+## Syntax
 
     Atomics.isLockFree(size)
 
@@ -17,8 +15,7 @@ The size in bytes to check.
 
 A [`Boolean`](../boolean) indicating whether the operation is lock free.
 
-Examples
---------
+## Examples
 
 ### Using isLockFree
 
@@ -31,8 +28,7 @@ Examples
     Atomics.isLockFree(7); // false
     Atomics.isLockFree(8); // true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.islockfree">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-atomics.islockfree</span></a></td></tr></tbody></table>
@@ -91,8 +87,7 @@ No
 
 Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-See also
---------
+## See also
 
 -   [`Atomics`](../atomics)
 

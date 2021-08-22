@@ -1,10 +1,8 @@
-String.prototype.substring()
-============================
+# String.prototype.substring()
 
 The `substring()` method returns the part of the `string` between the start and end indexes, or to the end of the string.
 
-Syntax
-------
+## Syntax
 
     substring(indexStart)
     substring(indexStart, indexEnd)
@@ -14,17 +12,16 @@ Syntax
 `indexStart`  
 The index of the first character to include in the returned substring.
 
- `indexEnd` <span class="badge inline optional">Optional</span>   
+`indexEnd` <span class="badge inline optional">Optional</span>  
 The index of the first character to exclude from the returned substring.
 
 ### Return value
 
 A new string containing the specified part of the given string.
 
-Description
------------
+## Description
 
-`substring()` extracts characters from `indexStart` up to *but not including* `indexEnd`. In particular:
+`substring()` extracts characters from `indexStart` up to _but not including_ `indexEnd`. In particular:
 
 -   If `indexEnd` is omitted, `substring()` extracts characters to the end of the string.
 -   If `indexStart` is equal to `indexEnd`, `substring()` returns an empty string.
@@ -34,8 +31,7 @@ Any argument value that is less than `0` or greater than `stringName.length` is 
 
 Any argument value that is [`NaN`](../nan) is treated as if it were `0`.
 
-Examples
---------
+## Examples
 
 ### Using substring()
 
@@ -133,14 +129,12 @@ A better method for replacing strings is as follows:
 
 The code above serves as an example for substring operations. If you need to replace substrings, most of the time you will want to use [`String.prototype.replace()`](replace).
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.substring">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'String.prototype.substring' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -196,8 +190,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.substr()`](substr)
 -   [`String.prototype.slice()`](slice)

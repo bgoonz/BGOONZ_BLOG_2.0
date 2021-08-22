@@ -1,10 +1,8 @@
-Atomics
-=======
+# Atomics
 
 The `Atomics` object provides atomic operations as static methods. They are used with [`SharedArrayBuffer`](sharedarraybuffer) and [`ArrayBuffer`](arraybuffer) objects.
 
-Description
------------
+## Description
 
 The Atomic operations are installed on an `Atomics` module. Unlike the other global objects, `Atomics` is not a constructor. You cannot use it with a [`new` operator](../operators/new) or invoke the `Atomics` object as a function. All properties and methods of `Atomics` are static (as is the case with the [`Math`](math) object, for example).
 
@@ -16,8 +14,7 @@ When memory is shared, multiple threads can read and write the same data in memo
 
 The `wait()` and `notify()` methods are modeled on Linux futexes ("fast user-space mutex") and provide ways for waiting until a certain condition becomes true and are typically used as blocking constructs.
 
-Static methods
---------------
+## Static methods
 
 [`Atomics.add()`](atomics/add)  
 Adds the provided value to the existing value at the specified index of the array. Returns the old value at that index.
@@ -55,8 +52,7 @@ Verifies that the specified index of the array still contains a value and sleeps
 [`Atomics.xor()`](atomics/xor)  
 Computes a bitwise XOR on the value at the specified index of the array with the provided value. Returns the old value at that index.
 
-Examples
---------
+## Examples
 
 ### Using Atomics
 
@@ -112,8 +108,7 @@ A writing thread stores a new value and notifies the waiting thread once it has 
     Atomics.store(int32, 0, 123);
     Atomics.notify(int32, 0, 1);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics-object">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-atomics-object</span></a></td></tr></tbody></table>
@@ -866,8 +861,7 @@ No
 
 Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-See also
---------
+## See also
 
 -   [`ArrayBuffer`](arraybuffer)
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)

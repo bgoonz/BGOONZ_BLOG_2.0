@@ -1,12 +1,10 @@
-Strict mode
-===========
+# Strict mode
 
-Strict Mode Overview
---------------------
+## Strict Mode Overview
 
 **Note:** Sometimes you'll see the default, non-strict mode referred to as **" [sloppy mode](https://developer.mozilla.org/docs/Glossary/Sloppy_mode)"**. This isn't an official term, but be aware of it, just in case.
 
-JavaScript's strict mode, introduced in ECMAScript 5, is a way to *opt in* to a restricted variant of JavaScript, thereby implicitly opting-out of "[sloppy mode](https://developer.mozilla.org/docs/Glossary/Sloppy_mode)". Strict mode isn't just a subset: it *intentionally* has different semantics from normal code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don't rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
+JavaScript's strict mode, introduced in ECMAScript 5, is a way to _opt in_ to a restricted variant of JavaScript, thereby implicitly opting-out of "[sloppy mode](https://developer.mozilla.org/docs/Glossary/Sloppy_mode)". Strict mode isn't just a subset: it _intentionally_ has different semantics from normal code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don't rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
 
 Strict mode makes several changes to normal JavaScript semantics:
 
@@ -16,14 +14,13 @@ Strict mode makes several changes to normal JavaScript semantics:
 
 See [transitioning to strict mode](strict_mode/transitioning_to_strict_mode), if you want to change your code to work in the restricted variant of JavaScript.
 
-Invoking strict mode
---------------------
+## Invoking strict mode
 
-Strict mode applies to *entire scripts* or to *individual functions*. It doesn't apply to block statements enclosed in `{}` braces; attempting to apply it to such contexts does nothing. `eval` code, `Function` code, event handler attributes, strings passed to [`WindowTimers.setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout), and related functions are entire scripts, and invoking strict mode in them works as expected.
+Strict mode applies to _entire scripts_ or to _individual functions_. It doesn't apply to block statements enclosed in `{}` braces; attempting to apply it to such contexts does nothing. `eval` code, `Function` code, event handler attributes, strings passed to [`WindowTimers.setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout), and related functions are entire scripts, and invoking strict mode in them works as expected.
 
 ### Strict mode for scripts
 
-To invoke strict mode for an entire script, put the *exact* statement `"use strict";` (or `'use strict';`) before any other statements.
+To invoke strict mode for an entire script, put the _exact_ statement `"use strict";` (or `'use strict';`) before any other statements.
 
     // Whole-script strict mode syntax
     'use strict';
@@ -35,7 +32,7 @@ You can also take the approach of wrapping the entire contents of a script in a 
 
 ### Strict mode for functions
 
-Likewise, to invoke strict mode for a function, put the *exact* statement `"use strict";` (or `'use strict';`) in the function's body before any other statements.
+Likewise, to invoke strict mode for a function, put the _exact_ statement `"use strict";` (or `'use strict';`) in the function's body before any other statements.
 
     function strict() {
       // Function-level strict mode syntax
@@ -54,8 +51,7 @@ ECMAScript 2015 introduced [JavaScript modules](statements/export) and therefore
     }
     export default strict;
 
-Changes in strict mode
-----------------------
+## Changes in strict mode
 
 Strict mode changes both syntax and runtime behavior. Changes generally fall into these categories: changes converting mistakes into errors (as syntax errors or at runtime), changes simplifying how the particular variable for a given use of a name is computed, changes simplifying `eval` and `arguments`, changes making it easier to write "secure" JavaScript, and changes anticipating future ECMAScript evolution.
 
@@ -136,7 +132,7 @@ In ECMAScript 5 strict-mode code, duplicate property names were considered a [`S
 
 ### Simplifying variable uses
 
-Strict mode simplifies how variable names map to particular variable definitions in the code. Many compiler optimizations rely on the ability to say that variable *X* is stored in *that* location: this is critical to fully optimizing JavaScript code. JavaScript sometimes makes this basic mapping of name to variable definition in the code impossible to perform until runtime. Strict mode removes most cases where this happens, so the compiler can better optimize strict mode code.
+Strict mode simplifies how variable names map to particular variable definitions in the code. Many compiler optimizations rely on the ability to say that variable _X_ is stored in _that_ location: this is critical to fully optimizing JavaScript code. JavaScript sometimes makes this basic mapping of name to variable definition in the code impossible to perform until runtime. Strict mode removes most cases where this happens, so the compiler can better optimize strict mode code.
 
 First, strict mode prohibits [`with`](statements/with). The problem with `with` is that any name inside the block might map either to a property of the object passed to it, or to a variable in surrounding (or even global) scope, at runtime; it's impossible to know which beforehand. Strict mode makes `with` a syntax error, so there's no chance for a name in a `with` to refer to an unknown location at runtime:
 
@@ -230,7 +226,7 @@ Third, `arguments.callee` is no longer supported. In normal code `arguments.call
 
 ### "Securing" JavaScript
 
-Strict mode makes it easier to write "secure" JavaScript. Some websites now provide ways for users to write JavaScript which will be run by the website *on behalf of other users*. JavaScript in browsers can access the user's private information, so such JavaScript must be partially transformed before it is run, to censor access to forbidden functionality. JavaScript's flexibility makes it effectively impossible to do this without many runtime checks. Certain language functions are so pervasive that performing runtime checks has a considerable performance cost. A few strict mode tweaks, plus requiring that user-submitted JavaScript be strict mode code and that it be invoked in a certain manner, substantially reduce the need for those runtime checks.
+Strict mode makes it easier to write "secure" JavaScript. Some websites now provide ways for users to write JavaScript which will be run by the website _on behalf of other users_. JavaScript in browsers can access the user's private information, so such JavaScript must be partially transformed before it is run, to censor access to forbidden functionality. JavaScript's flexibility makes it effectively impossible to do this without many runtime checks. Certain language functions are so pervasive that performing runtime checks has a considerable performance cost. A few strict mode tweaks, plus requiring that user-submitted JavaScript be strict mode code and that it be invoked in a certain manner, substantially reduce the need for those runtime checks.
 
 First, the value passed as `this` to a function in strict mode is not forced into being an object (a.k.a. "boxed"). For a normal function, `this` is always an object: either the provided object if called with an object-valued `this`; the value, boxed, if called with a Boolean, string, or number `this`; or the global object if called with an `undefined` or `null` `this`. (Use [`call`](global_objects/function/call), [`apply`](global_objects/function/apply), or [`bind`](global_objects/function/bind) to specify a particular `this`.) Not only is automatic boxing a performance cost, but exposing the global object in browsers is a security hazard because the global object provides access to functionality that "secure" JavaScript environments must restrict. Thus for a strict mode function, the specified `this` is not boxed into an object, and if unspecified, `this` will be `undefined`:
 
@@ -287,7 +283,7 @@ First, in strict mode, a short list of identifiers become reserved keywords. The
 
 Two Mozilla-specific caveats: First, if your code is JavaScript 1.7 or greater (for example in chrome code or when using the right `<script type="">`) and is strict mode code, `let` and `yield` have the functionality they've had since those keywords were first introduced. But strict mode code on the web, loaded with `<script src="">` or `<script>...</script>`, won't be able to use `let`/`yield` as identifiers. Second, while ES5 unconditionally reserves the words `class`, `enum`, `export`, `extends`, `import`, and `super`, before Firefox 5 Mozilla reserved them only in strict mode.
 
-Second, [strict mode prohibits function statements that are not at the top level of a script or function](https://whereswalden.com/2011/01/24/new-es5-strict-mode-requirement-function-statements-not-at-top-level-of-a-program-or-function-are-prohibited/). In normal mode in browsers, function statements are permitted "everywhere". *This is not part of ES5 (or even ES3)!* It's an extension with incompatible semantics in different browsers. Note that function statements outside top level are permitted in ES2015.
+Second, [strict mode prohibits function statements that are not at the top level of a script or function](https://whereswalden.com/2011/01/24/new-es5-strict-mode-requirement-function-statements-not-at-top-level-of-a-program-or-function-are-prohibited/). In normal mode in browsers, function statements are permitted "everywhere". _This is not part of ES5 (or even ES3)!_ It's an extension with incompatible semantics in different browsers. Note that function statements outside top level are permitted in ES2015.
 
     'use strict';
     if (true) {
@@ -306,13 +302,11 @@ Second, [strict mode prohibits function statements that are not at the top level
 
 This prohibition isn't strict mode proper because such function statements are an extension of basic ES5. But it is the recommendation of the ECMAScript committee, and browsers will implement it.
 
-Strict mode in browsers
------------------------
+## Strict mode in browsers
 
-The major browsers now implement strict mode. However, don't blindly depend on it since there still are numerous [Browser versions used in the wild that only have partial support for strict mode](https://caniuse.com/use-strict) or do not support it at all (e.g. Internet Explorer below version 10!). *Strict mode changes semantics.* Relying on those changes will cause mistakes and errors in browsers which don't implement strict mode. Exercise caution in using strict mode, and back up reliance on strict mode with feature tests that check whether relevant parts of strict mode are implemented. Finally, make sure to *test your code in browsers that do and don't support strict mode*. If you test only in browsers that don't support strict mode, you're very likely to have problems in browsers that do, and vice versa.
+The major browsers now implement strict mode. However, don't blindly depend on it since there still are numerous [Browser versions used in the wild that only have partial support for strict mode](https://caniuse.com/use-strict) or do not support it at all (e.g. Internet Explorer below version 10!). _Strict mode changes semantics._ Relying on those changes will cause mistakes and errors in browsers which don't implement strict mode. Exercise caution in using strict mode, and back up reliance on strict mode with feature tests that check whether relevant parts of strict mode are implemented. Finally, make sure to _test your code in browsers that do and don't support strict mode_. If you test only in browsers that don't support strict mode, you're very likely to have problems in browsers that do, and vice versa.
 
-See also
---------
+## See also
 
 -   [Strict Mode Code in the ECMAScript specification](https://tc39.es/ecma262/#sec-strict-mode-code)
 -   [Where's Walden? » New ES5 strict mode support: now with poison pills!](https://whereswalden.com/2010/09/08/new-es5-strict-mode-support-now-with-poison-pills/)

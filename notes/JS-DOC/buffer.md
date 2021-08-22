@@ -1,10 +1,8 @@
-WebAssembly.Memory.prototype.buffer
-===================================
+# WebAssembly.Memory.prototype.buffer
 
 The `buffer` prototype property of the [`WebAssembly.Memory`](../memory) object returns the buffer contained in the memory.
 
-Examples
---------
+## Examples
 
 ### Using buffer
 
@@ -20,8 +18,7 @@ The following example (see [memory.html](https://github.com/mdn/webassembly-exam
       console.log(sum);
     });
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-buffer">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#dom-memory-buffer</span></a></td></tr></tbody></table>
@@ -56,8 +53,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

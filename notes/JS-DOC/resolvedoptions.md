@@ -1,10 +1,8 @@
-Intl.NumberFormat.prototype.resolvedOptions()
-=============================================
+# Intl.NumberFormat.prototype.resolvedOptions()
 
 The `Intl.NumberFormat.prototype.resolvedOptions()` method returns a new object with properties reflecting the locale and number formatting options computed during initialization of this [`Intl/NumberFormat`](../numberformat) object.
 
-Syntax
-------
+## Syntax
 
     resolvedOptions()
 
@@ -12,8 +10,7 @@ Syntax
 
 A new object with properties reflecting the locale and number formatting options computed during the initialization of the given [`Intl/NumberFormat`](../numberformat) object.
 
-Description
------------
+## Description
 
 The resulting object has the following properties:
 
@@ -51,8 +48,7 @@ The values provided for these properties in the `options` argument or filled in 
 `maximumSignificantDigits`  
 The values provided for these properties in the `options` argument or filled in as defaults. These properties are present only if at least one of them was provided in the `options` argument.
 
-Examples
---------
+## Examples
 
 ### Using the `resolvedOptions` method
 
@@ -69,14 +65,12 @@ Examples
     usedOptions.maximumFractionDigits; // 3
     usedOptions.useGrouping;           // true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-intl.numberformat.prototype.resolvedoptions</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -132,8 +126,7 @@ Samsung Internet
 
 1.5
 
-See also
---------
+## See also
 
 -   [`Intl.NumberFormat`](../numberformat)
 

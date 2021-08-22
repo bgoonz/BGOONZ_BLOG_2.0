@@ -1,10 +1,8 @@
-TypeError: "x" is read-only
-===========================
+# TypeError: "x" is read-only
 
 The JavaScript [strict mode](../strict_mode)-only exception "is read-only" occurs when a global variable or object property that was assigned to is a read-only property.
 
-Message
--------
+## Message
 
     TypeError: Assignment to read-only properties is not allowed in strict mode (Edge)
     TypeError: "x" is read-only (Firefox)
@@ -12,20 +10,17 @@ Message
     TypeError: Cannot assign to read only property 'x' of #<Object> (Chrome)
     TypeError: Cannot assign to read only property '0' of [object Array] (Chrome)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 The global variable or object property that was assigned to is a read-only property. (Technically, it is a [non-writable data property](../global_objects/object/defineproperty#writable_attribute).)
 
 This error happens only in [strict mode code](../strict_mode). In non-strict code, the assignment is silently ignored.
 
-Examples
---------
+## Examples
 
 ### Invalid cases
 
@@ -65,8 +60,7 @@ The global variable `undefined` is also read-only, so you can't silence the infa
     var LUNG_COUNT = 2;  // a `var` works, because it's not read-only
     LUNG_COUNT = 3;  // ok (anatomically unlikely, though)
 
-See also
---------
+## See also
 
 -   [`Object.defineProperty()`](../global_objects/object/defineproperty)
 -   [`Object.freeze()`](../global_objects/object/freeze)

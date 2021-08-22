@@ -1,10 +1,8 @@
-decodeURIComponent()
-====================
+# decodeURIComponent()
 
 The `decodeURIComponent()` function decodes a Uniform Resource Identifier (URI) component previously created by [`encodeURIComponent`](encodeuricomponent) or by a similar routine.
 
-Syntax
-------
+## Syntax
 
     decodeURIComponent(encodedURI)
 
@@ -21,13 +19,11 @@ A new string representing the decoded version of the given encoded Uniform Resou
 
 Throws an [`URIError`](urierror) ("malformed URI sequence") exception when used wrongly.
 
-Description
------------
+## Description
 
 Replaces each escape sequence in the encoded URI component with the character that it represents.
 
-Examples
---------
+## Examples
 
 ### Decoding a Cyrillic URL component
 
@@ -55,8 +51,7 @@ decodeURIComponent cannot be used directly to parse query parameters from a URL.
     decodeQueryParam('search+query%20%28correct%29');
     // 'search query (correct)'
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuricomponent-encodeduricomponent">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-decodeuricomponent-encodeduricomponent</span></a></td></tr></tbody></table>
@@ -87,8 +82,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`decodeURI`](decodeuri)
 -   [`encodeURI`](encodeuri)

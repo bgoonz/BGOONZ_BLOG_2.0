@@ -1,15 +1,12 @@
-Intl.Locale.prototype.script
-============================
+# Intl.Locale.prototype.script
 
 The `Intl.Locale.prototype.script` property is an accessor property which returns the script used for writing the particular language used in the locale.
 
-Description
------------
+## Description
 
 A script, sometimes called writing system, is one of the core attributes of a locale. It indicates the set of symbols, or glyphs, that are used to write a particular language. For instance, the script associated with English is Latin, whereas the script typically associated with Korean is Hangul. In many cases, denoting a script is not strictly necessary, since the language (which is necessary) is only written in a single script. There are exceptions to this rule, however, and it is important to indicate the script whenever possible, in order to have a complete Unicode language identifier.
 
-Examples
---------
+## Examples
 
 ### Setting the script in the locale identifer string argument
 
@@ -27,14 +24,12 @@ The [`Locale`](locale) constructor takes a configuration object, which can be us
 
     console.log(scriptObj.script); // Prints "Latn"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-Intl.Locale.prototype.script</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -90,8 +85,7 @@ No
 
 11.0
 
-See also
---------
+## See also
 
 -   [`Intl.Locale`](../locale)
 -   [Unicode's script subtag specification](https://www.unicode.org/reports/tr35/#unicode_script_subtag_validity)

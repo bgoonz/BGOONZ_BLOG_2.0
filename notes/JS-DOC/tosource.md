@@ -1,5 +1,4 @@
-Object.prototype.toSource()
-===========================
+# Object.prototype.toSource()
 
 **Deprecated**
 
@@ -7,8 +6,7 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `toSource()` method returns a string representing the source code of the object.
 
-Syntax
-------
+## Syntax
 
     toSource()
 
@@ -16,8 +14,7 @@ Syntax
 
 A string representing the source code of the object.
 
-Description
------------
+## Description
 
 The `toSource()` method returns the following values:
 
@@ -77,8 +74,7 @@ In the case of objects that contain references to themselves, e.g. a cyclically 
 
 If a cyclical structure is employed and `toSource()` is needed, the object must provide an override to `toSource()`, either using a reference to a constructor or providing an anonymous function.
 
-Examples
---------
+## Examples
 
 ### Using toSource()
 
@@ -98,13 +94,11 @@ Calling the `toSource()` method of `theDog` displays the JavaScript source that 
     theDog.toSource();
     // returns ({name:"Gabby", breed:"Lab", color:"chocolate", sex:"female"})
 
-Specifications
---------------
+## Specifications
 
 Not part of any standard.
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -162,8 +156,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`Object.prototype.toString()`](tostring)
 

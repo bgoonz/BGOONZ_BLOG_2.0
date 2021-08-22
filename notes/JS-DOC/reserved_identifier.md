@@ -1,22 +1,18 @@
-SyntaxError: "x" is a reserved identifier
-=========================================
+# SyntaxError: "x" is a reserved identifier
 
-The JavaScript exception "*variable* is a reserved identifier" occurs when [reserved keywords](../lexical_grammar#keywords) are used as identifiers.
+The JavaScript exception "_variable_ is a reserved identifier" occurs when [reserved keywords](../lexical_grammar#keywords) are used as identifiers.
 
-Message
--------
+## Message
 
     SyntaxError: The use of a future reserved word for an identifier is invalid (Edge)
     SyntaxError: "x" is a reserved identifier (Firefox)
     SyntaxError: Unexpected reserved word (Chrome)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 [Reserved keywords](../lexical_grammar#keywords) will throw in if they are used as identifiers. These are reserved in strict mode and sloppy mode:
 
@@ -33,8 +29,7 @@ The following are only reserved when they are found in strict mode code:
 -   `public`
 -   `static`
 
-Examples
---------
+## Examples
 
 ### Strict and non-strict reserved keywords
 
@@ -64,8 +59,7 @@ If you are using an older browser that does not yet implement `let` or `class`, 
     // SyntaxError: class is a reserved identifier
     // (throws in older browsers only, e.g. Firefox 44 and older)
 
-See also
---------
+## See also
 
 -   [Good variable names](https://wiki.c2.com/?GoodVariableNames)
 

@@ -1,5 +1,4 @@
-RegExp: lastIndex
-=================
+# RegExp: lastIndex
 
 `lastIndex` is a read/write integer property of [`RegExp`](../regexp) instances that specifies the index at which to start the next match.
 
@@ -19,8 +18,7 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
 This property is set only if the regular expression instance used the `g` flag to indicate a global search, or the `y` flag to indicate a sticky search. The following rules apply:
 
@@ -29,8 +27,7 @@ This property is set only if the regular expression instance used the `g` flag t
 -   If `lastIndex` is equal to the length of the string and if the regular expression does not match the empty string, then the regular expression mismatches input, and `lastIndex` is reset to 0.
 -   Otherwise, `lastIndex` is set to the next position following the most recent match.
 
-Examples
---------
+## Examples
 
 ### Using lastIndex
 
@@ -50,8 +47,7 @@ Returns `["hi", "hi"]` with `lastIndex` equal to 2.
 
 Returns `["", undefined]`, an empty array whose zeroth element is the match string. In this case, the empty string because `lastIndex` was 2 (and still is 2) and `hi` has length 2.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-regexp-instances">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-properties-of-regexp-instances</span></a></td></tr></tbody></table>
@@ -82,8 +78,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`RegExp.prototype.dotAll`](dotall)
 -   [`RegExp.prototype.global`](global)

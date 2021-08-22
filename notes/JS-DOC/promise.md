@@ -1,5 +1,4 @@
-Promise
-=======
+# Promise
 
 The `Promise` object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 
@@ -7,18 +6,17 @@ The `Promise` object represents the eventual completion (or failure) of an async
 
 To learn about the way promises work and how you can use them, we advise you to read [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) first.
 
-Description
------------
+## Description
 
-A `Promise` is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a *promise* to supply the value at some point in the future.
+A `Promise` is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a _promise_ to supply the value at some point in the future.
 
 A `Promise` is in one of these states:
 
--   *pending*: initial state, neither fulfilled nor rejected.
--   *fulfilled*: meaning that the operation was completed successfully.
--   *rejected*: meaning that the operation failed.
+-   _pending_: initial state, neither fulfilled nor rejected.
+-   _fulfilled_: meaning that the operation was completed successfully.
+-   _rejected_: meaning that the operation failed.
 
-A pending promise can either be *fulfilled* with a value or *rejected* with a reason (error). When either of these options happens, the associated handlers queued up by a promise's `then` method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
+A pending promise can either be _fulfilled_ with a value or _rejected_ with a reason (error). When either of these options happens, the associated handlers queued up by a promise's `then` method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
 
 As the `Promise.prototype.then()` and `Promise.prototype.catch()` methods return promises, they can be chained.
 
@@ -26,7 +24,7 @@ As the `Promise.prototype.then()` and `Promise.prototype.catch()` methods return
 
 **Note:** Several other languages have mechanisms for lazy evaluation and deferring a computation, which they also call "promises", e.g. Scheme. Promises in JavaScript represent processes that are already happening, which can be chained with callback functions. If you are looking to lazily evaluate an expression, consider the [arrow function](../functions/arrow_functions) with no arguments: `f = () => expression` to create the lazily-evaluated expression, and `f()` to evaluate.
 
-**Note:** A promise is said to be *settled* if it is either fulfilled or rejected, but not pending. You will also hear the term *resolved* used with promises — this means that the promise is settled or “locked-in” to match the state of another promise. [States and fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md) contain more details about promise terminology.
+**Note:** A promise is said to be _settled_ if it is either fulfilled or rejected, but not pending. You will also hear the term _resolved_ used with promises — this means that the promise is settled or “locked-in” to match the state of another promise. [States and fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md) contain more details about promise terminology.
 
 ### Chained Promises
 
@@ -45,7 +43,7 @@ The `.then()` method takes up to two arguments; the first argument is a callback
       .then(handleResolvedB, handleRejectedB)
       .then(handleResolvedC, handleRejectedC);
 
-Processing continues to the next link of the chain even when a `.then()` lacks a callback function that returns a Promise object. Therefore, a chain can safely omit every *rejection* callback function until the final `.catch()`.
+Processing continues to the next link of the chain even when a `.then()` lacks a callback function that returns a Promise object. Therefore, a chain can safely omit every _rejection_ callback function until the final `.catch()`.
 
 Handling a rejected promise in each `.then()` has consequences further down the promise chain. Sometimes there is no choice, because an error must be handled immediately. In such cases we must throw an error of some type to maintain error state down the chain. On the other hand, in the absence of an immediate need, it is simpler to leave out error handling until a final `.catch()` statement. A `.catch()` is really just a `.then()` without a slot for a callback function for the case when the promise is resolved.
 
@@ -152,14 +150,12 @@ In the above example, the inner text of the `<iframe>` will be updated only if t
 
 **Note:** Currently, incumbent realm tracking is fully implemented in Firefox, and has partial implementations in Chrome and Safari.
 
-Constructor
------------
+## Constructor
 
 [`Promise()`](promise/promise)  
 Creates a new `Promise` object. The constructor is primarily used to wrap functions that do not already support promises.
 
-Static methods
---------------
+## Static methods
 
 [`Promise.all(iterable)`](promise/all)  
 Wait for all promises to be resolved, or for any to be rejected.
@@ -191,8 +187,7 @@ Returns a new `Promise` object that is resolved with the given value. If the val
 
 Generally, if you don't know if a value is a promise or not, [`Promise.resolve(value)`](promise/resolve) it instead and work with the return value as a promise.
 
-Instance methods
-----------------
+## Instance methods
 
 See the [Microtask guide](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide) to learn more about how these methods use the Microtask queue and services.
 
@@ -205,8 +200,7 @@ Appends fulfillment and rejection handlers to the promise, and returns a new pro
 [`Promise.prototype.finally()`](promise/finally)  
 Appends a handler to the promise, and returns a new promise that is resolved when the original promise is resolved. The handler is called when the promise is settled, whether fulfilled or rejected.
 
-Examples
---------
+## Examples
 
 ### Basic Example
 
@@ -369,14 +363,12 @@ By clicking the button several times in a short amount of time, you'll even see 
 
 Another simple example using `Promise` and [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) to load an image is available at the MDN GitHub [js-examples](https://github.com/mdn/js-examples/tree/master/promises-test) repository. You can also [see it in action](https://mdn.github.io/js-examples/promises-test/). Each step is commented on and allows you to follow the Promise and XHR architecture closely.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-promise-objects</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -726,8 +718,7 @@ No
 
 2.0
 
-See also
---------
+## See also
 
 -   [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 -   [Promises/A+ specification](https://promisesaplus.com/)

@@ -1,10 +1,8 @@
-Spread syntax (...)
-===================
+# Spread syntax (...)
 
 **Spread syntax** (`...`) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
-Description
------------
+## Description
 
 Spread syntax can be used when all elements from an object or array need to be included in a list of some kind.
 
@@ -28,8 +26,7 @@ It is commonly used when you want to add a new item to a local data store, or di
 
 In the above example you can rerun the last line as many times as you like, to keep adding an additional 12 to the end of the array.
 
-Syntax
-------
+## Syntax
 
 For function calls:
 
@@ -41,15 +38,13 @@ For array literals or strings:
 
 For object literals (new in ECMAScript 2018):
 
-    let objClone = { ...obj }; // pass all key:value pairs from an object 
+    let objClone = { ...obj }; // pass all key:value pairs from an object
 
-Rest syntax (parameters)
-------------------------
+## Rest syntax (parameters)
 
 Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax. Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element. See [rest parameters](../functions/rest_parameters).
 
-Examples
---------
+## Examples
 
 ### Spread in function calls
 
@@ -208,7 +203,7 @@ Note that you cannot replace or mimic the [`Object.assign()`](../global_objects/
     let mergedObj2 = merge ({}, obj1, obj2);
     // Object { 0: {}, 1: { foo: 'bar', x: 42 }, 2: { foo: 'baz', y: 13 } }
 
-In the above example, the spread syntax does not work as one might expect: it spreads an *array* of arguments into the object literal, due to the rest parameter.
+In the above example, the spread syntax does not work as one might expect: it spreads an _array_ of arguments into the object literal, due to the rest parameter.
 
 ### Only for iterables
 
@@ -223,16 +218,14 @@ Spread syntax (other than in the case of spread properties) can be applied only 
 
 When using spread syntax for function calls, be aware of the possibility of exceeding the JavaScript engine's argument length limit. See [`apply()`](../global_objects/function/apply) for more details.
 
-Specifications
---------------
+## Specifications
 
 **No specification found**
 
 No specification data found for `javascript.operators.spread`.  
 [Check for problems with this page](#on-github) or contribute a missing `spec_url` to [mdn/browser-compat-data](https://github.com/mdn/browser-compat-data). Also make sure the specification is included in [w3c/browser-specs](https://github.com/w3c/browser-specs).
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -340,8 +333,7 @@ No
 
 8.2
 
-See also
---------
+## See also
 
 -   [Rest parameters](../functions/rest_parameters) (also ‘`...`’)
 -   [`Function.prototype.apply()`](../global_objects/function/apply) (also ‘`...`’)

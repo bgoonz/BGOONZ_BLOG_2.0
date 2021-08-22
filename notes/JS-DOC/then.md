@@ -1,12 +1,10 @@
-Promise.prototype.then()
-========================
+# Promise.prototype.then()
 
 The `then()` method returns a [`Promise`](../promise). It takes up to two arguments: callback functions for the success and failure cases of the `Promise`.
 
 **Note:** If one or both arguments are omitted or are provided non-functions, then `then` will be missing the handler(s), but will not generate any errors. If the `Promise` that `then` is called on adopts a state (`fulfillment` or `rejection`) for which `then` has no handler, the returned promise adopts the final state of the original `Promise` on which `then` was called.
 
-Syntax
-------
+## Syntax
 
     p.then(onFulfilled[, onRejected]);
 
@@ -18,10 +16,10 @@ Syntax
 
 ### Parameters
 
- `onFulfilled` <span class="badge inline optional">Optional</span>   
+`onFulfilled` <span class="badge inline optional">Optional</span>  
 A [`Function`](../function) called if the `Promise` is fulfilled. This function has one argument, the `fulfillment value`. If it is not a function, it is internally replaced with an "Identity" function (it returns the received argument).
 
- `onRejected` <span class="badge inline optional">Optional</span>   
+`onRejected` <span class="badge inline optional">Optional</span>  
 A [`Function`](../function) called if the `Promise` is rejected. This function has one argument, the `rejection reason`. If it is not a function, it is internally replaced with a "Thrower" function (it throws an error it received as argument).
 
 ### Return value
@@ -58,13 +56,11 @@ Following, an example to demonstrate the asynchronicity of the `then` method.
     // "this gets called after the end of the main stack. the value received and returned is: 33"
     // Promise {[[PromiseStatus]]: "resolved", [[PromiseValue]]: 33}
 
-Description
------------
+## Description
 
-As the `then` and [`Promise.prototype.catch()`](catch) methods return promises, they [can be chained](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#chaining) — an operation called *composition*.
+As the `then` and [`Promise.prototype.catch()`](catch) methods return promises, they [can be chained](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#chaining) — an operation called _composition_.
 
-Examples
---------
+## Examples
 
 ### Using the `then` method
 
@@ -248,14 +244,12 @@ Using a [`Function.prototype.bind()`](../function/bind) `Reflect.apply` ([`Refle
       return nextTick;
     })();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.then">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-promise.prototype.then</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -311,8 +305,7 @@ No
 
 2.0
 
-See also
---------
+## See also
 
 -   [`Promise`](../promise)
 -   [`Promise.prototype.catch()`](catch)

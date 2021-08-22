@@ -1,12 +1,10 @@
-Date.prototype.getFullYear()
-============================
+# Date.prototype.getFullYear()
 
 The `getFullYear()` method returns the year of the specified date according to local time.
 
 Use this method instead of the [`getYear()`](getyear) method.
 
-Syntax
-------
+## Syntax
 
     getFullYear()
 
@@ -14,13 +12,11 @@ Syntax
 
 A number corresponding to the year of the given date, according to local time.
 
-Description
------------
+## Description
 
 The value returned by `getFullYear()` is an absolute number. For dates between the years 1000 and 9999, `getFullYear()` returns a four-digit number, for example, 1995. Use this function to make sure a year is compliant with years after 2000.
 
-Examples
---------
+## Examples
 
 ### Using getFullYear()
 
@@ -29,8 +25,7 @@ The following example assigns the four-digit value of the current year to the va
     var today = new Date();
     var year = today.getFullYear();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getfullyear">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.getfullyear</span></a></td></tr></tbody></table>
@@ -61,8 +56,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
 -   [`Date.prototype.setFullYear()`](setfullyear)

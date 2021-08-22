@@ -1,10 +1,8 @@
-DataView.prototype.setFloat64()
-===============================
+# DataView.prototype.setFloat64()
 
 The `setFloat64()` method stores a signed 64-bit float (double) value at the specified byte offset from the start of the [`DataView`](../dataview).
 
-Syntax
-------
+## Syntax
 
     setFloat64(byteOffset, value)
     setFloat64(byteOffset, value, littleEndian)
@@ -29,8 +27,7 @@ The value to set.
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
-Examples
---------
+## Examples
 
 ### Using the setFloat64 method
 
@@ -39,14 +36,12 @@ Examples
     dataview.setFloat64(0, 3);
     dataview.getFloat64(0); // 3
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat64">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-dataview.prototype.setfloat64</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -102,8 +97,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

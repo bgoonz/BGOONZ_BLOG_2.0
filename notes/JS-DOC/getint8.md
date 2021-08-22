@@ -1,10 +1,8 @@
-DataView.prototype.getInt8()
-============================
+# DataView.prototype.getInt8()
 
 The `getInt8()` method gets a signed 8-bit integer (byte) at the specified byte offset from the start of the [`DataView`](../dataview).
 
-Syntax
-------
+## Syntax
 
     getInt8(byteOffset)
 
@@ -22,13 +20,11 @@ A signed 8-bit integer number.
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
-Description
------------
+## Description
 
 There is no alignment constraint; multi-byte values may be fetched from any offset.
 
-Examples
---------
+## Examples
 
 ### Using the getInt8 method
 
@@ -36,8 +32,7 @@ Examples
     var dataview = new DataView(buffer);
     dataview.getInt8(1); // 0
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint8">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-dataview.prototype.getint8</span></a></td></tr></tbody></table>
@@ -68,8 +63,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

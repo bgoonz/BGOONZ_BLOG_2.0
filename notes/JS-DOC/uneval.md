@@ -1,5 +1,4 @@
-uneval()
-========
+# uneval()
 
 **Non-standard**
 
@@ -11,8 +10,7 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `uneval()` function creates a string representation of the source code of an Object.
 
-Syntax
-------
+## Syntax
 
     uneval(object)
 
@@ -25,15 +23,13 @@ A JavaScript expression or statement.
 
 A string representing the source code of `object`.
 
-**Note:** This will *not* return a JSON representation of `object`.
+**Note:** This will _not_ return a JSON representation of `object`.
 
-Description
------------
+## Description
 
 `uneval()` is a top-level function and is not associated with any object.
 
-Examples
---------
+## Examples
 
 ### Using uneval
 
@@ -49,13 +45,11 @@ Examples
     var foo = eval(a);
     foo(); // returns "hi"
 
-Specifications
---------------
+## Specifications
 
 <span class="pl-s">Not part of any standard.</span>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -113,8 +107,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`eval()`](eval)
 -   [`JSON.stringify()`](json/stringify)

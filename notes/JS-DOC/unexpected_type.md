@@ -1,10 +1,8 @@
-TypeError: "x" is (not) "y"
-===========================
+# TypeError: "x" is (not) "y"
 
-The JavaScript exception "*x* is (not) *y*" occurs when there was an unexpected type. Oftentimes, unexpected [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
+The JavaScript exception "_x_ is (not) _y_" occurs when there was an unexpected type. Oftentimes, unexpected [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
 
-Message
--------
+## Message
 
     TypeError: Unable to get property {x} of undefined or null reference (Edge)
     TypeError: "x" is (not) "y" (Firefox)
@@ -16,20 +14,17 @@ Message
     TypeError: "x" is not an object or null
     TypeError: "x" is not a symbol
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 There was an unexpected type. This occurs oftentimes with [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
 
 Also, certain methods, such as [`Object.create()`](../global_objects/object/create) or [`Symbol.keyFor()`](../global_objects/symbol/keyfor), require a specific type, that must be provided.
 
-Examples
---------
+## Examples
 
 ### Invalid cases
 
@@ -60,8 +55,7 @@ To fix null pointer to `undefined` values, you can use the [typeof](../operators
       // because of the confusion between truly undefined and undeclared variables.
     }
 
-See also
---------
+## See also
 
 -   [`undefined`](../global_objects/undefined)
 -   [`null`](../global_objects/null)

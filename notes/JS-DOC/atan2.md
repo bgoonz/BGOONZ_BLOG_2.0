@@ -1,10 +1,8 @@
-Math.atan2()
-============
+# Math.atan2()
 
 The `Math.atan2()` function returns the angle in the plane (in radians) between the positive x-axis and the ray from (0,0) to the point (x,y), for `Math.atan2(y,x)`.
 
-Syntax
-------
+## Syntax
 
     Math.atan2(y, x)
 
@@ -20,8 +18,7 @@ The x coordinate of the point
 
 The angle in radians (in \[ − *π*, *π*\]) between the positive x-axis and the ray from (0,0) to the point (x,y).
 
-Description
------------
+## Description
 
 The `Math.atan2()` method returns a numeric value between -π and π representing the angle theta of an `(x, y)` point. This is the counterclockwise angle, measured in radians, between the positive X axis, and the point `(x, y)`. Note that the arguments to this function pass the y-coordinate first and the x-coordinate second.
 
@@ -31,8 +28,7 @@ The `Math.atan2()` method returns a numeric value between -π and π representin
 
 Because `atan2()` is a static method of `Math`, you always use it as `Math.atan2()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.atan2()
 
@@ -51,8 +47,7 @@ Examples
     Math.atan2(±Infinity, -Infinity); // ±3*PI/4.
     Math.atan2(±Infinity, +Infinity); // ±PI/4.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atan2">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.atan2</span></a></td></tr></tbody></table>
@@ -83,8 +78,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.acos()`](acos)
 -   [`Math.asin()`](asin)

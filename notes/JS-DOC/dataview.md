@@ -1,10 +1,8 @@
-DataView
-========
+# DataView
 
 The `DataView` view provides a low-level interface for reading and writing multiple number types in a binary [`ArrayBuffer`](arraybuffer), without having to care about the platform's [endianness](https://developer.mozilla.org/en-US/docs/Glossary/Endianness).
 
-Description
------------
+## Description
 
 ### Endianness
 
@@ -48,14 +46,12 @@ Alternatively, if you need full 64-bit range, you can create a [`BigInt`](bigint
       return littleEndian ? (right<<bigThirtyTwo)|left : (left<<bigThirtyTwo)|right;
     }
 
-Constructor
------------
+## Constructor
 
 [`DataView()`](dataview/dataview)  
 Creates a new `DataView` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`DataView.prototype.buffer`](dataview/buffer)  
 The [`ArrayBuffer`](arraybuffer) referenced by this view. Fixed at construction time and thus **read only.**
@@ -66,8 +62,7 @@ The length (in bytes) of this view from the start of its [`ArrayBuffer`](arraybu
 [`DataView.prototype.byteOffset`](dataview/byteoffset)  
 The offset (in bytes) of this view from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-Instance methods
-----------------
+## Instance methods
 
 [`DataView.prototype.getInt8()`](dataview/getint8)  
 Gets a signed 8-bit integer (byte) at the specified byte offset from the start of the view.
@@ -129,8 +124,7 @@ Stores a signed 64-bit integer (long long) value at the specified byte offset fr
 [`DataView.prototype.setBigUint64()`](dataview/setbiguint64)  
 Stores an unsigned 64-bit integer (unsigned long long) value at the specified byte offset from the start of the view.
 
-Examples
---------
+## Examples
 
 ### Using DataView
 
@@ -140,8 +134,7 @@ Examples
     view.setInt16(1, 42);
     view.getInt16(1); // 42
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-dataview-objects</span></a></td></tr></tbody></table>
@@ -796,8 +789,7 @@ No
 
 1.0
 
-See also
---------
+## See also
 
 -   [jDataView](https://github.com/jDataView/jDataView): JavaScript library that polyfills and extends the `DataView` API to all browsers and Node.js.
 -   [`ArrayBuffer`](arraybuffer)

@@ -1,9 +1,8 @@
-Math.LOG2E
-==========
+# Math.LOG2E
 
 The `Math.LOG2E` property represents the base 2 logarithm of e, approximately 1.442:
 
-`M``a``t``h``.``L``O``G``2``E` = log<sub>2</sub>(*e*) ≈ 1.442
+` M``a``t``h``.``L``O``G``2``E ` = log<sub>2</sub>(_e_) ≈ 1.442
 
 Property attributes of `Math.LOG2E`
 
@@ -19,13 +18,11 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
 Because `LOG2E` is a static property of `Math`, you always use it as `Math.LOG2E`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.LOG2E
 
@@ -37,8 +34,7 @@ The following function returns the base 2 logarithm of e:
 
     getLog2e(); // 1.4426950408889634
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log2e">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.log2e</span></a></td></tr></tbody></table>
@@ -69,8 +65,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.exp()`](exp)
 -   [`Math.log()`](log)

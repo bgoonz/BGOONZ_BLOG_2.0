@@ -1,5 +1,4 @@
-Number.MAX\_VALUE
-=================
+# Number.MAX_VALUE
 
 The `Number.MAX_VALUE` property represents the maximum numeric value representable in JavaScript.
 
@@ -17,17 +16,15 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
 The `MAX_VALUE` property has a value of approximately `1.79E+308`, or 2<sup>1024</sup>. Values larger than `MAX_VALUE` are represented as [`Infinity`](../infinity).
 
 Because `MAX_VALUE` is a static property of [`Number`](../number), you always use it as `Number.MAX_VALUE`, rather than as a property of a [`Number`](../number) object you created.
 
-Examples
---------
+## Examples
 
-### Using MAX\_VALUE
+### Using MAX_VALUE
 
 The following code multiplies two numeric values. If the result is less than or equal to `MAX_VALUE`, the `func1` function is called; otherwise, the `func2` function is called.
 
@@ -37,8 +34,7 @@ The following code multiplies two numeric values. If the result is less than or 
       func2();
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_value">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-number.max_value</span></a></td></tr></tbody></table>
@@ -69,8 +65,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Number.MIN_VALUE`](min_value)
 -   The [`Number`](../number) object it belongs to

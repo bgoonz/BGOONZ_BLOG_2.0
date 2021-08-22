@@ -1,10 +1,8 @@
-for...in
-========
+# for...in
 
 The `for...in` iterates over all [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) of an object that are keyed by strings (ignoring ones keyed by [Symbol](../global_objects/symbol)s), including inherited enumerable properties.
 
-Syntax
-------
+## Syntax
 
     for (variable in object)
       statement
@@ -15,8 +13,7 @@ A different property name is assigned to `variable` on each iteration.
 `object`  
 Object whose non-Symbol enumerable properties are iterated over.
 
-Description
------------
+## Description
 
 A `for...in` loop only iterates over enumerable, non-Symbol properties. Objects created from built–in constructors like `Array` and `Object` have inherited non–enumerable properties from `Object.prototype` and `String.prototype`, such as [`String`](../global_objects/string)'s [`indexOf()`](../global_objects/string/indexof) method or [`Object`](../global_objects/object)'s [`toString()`](../global_objects/object/tostring) method. The loop will iterate over all enumerable properties of the object itself and those the object inherits from its prototype chain (properties of nearer prototypes take precedence over those of prototypes further away from the object in its prototype chain).
 
@@ -40,15 +37,13 @@ Because the order of iteration is implementation-dependent, iterating over an ar
 
 If you only want to consider properties attached to the object itself, and not its prototypes, use [`getOwnPropertyNames()`](../global_objects/object/getownpropertynames) or perform a [`hasOwnProperty()`](../global_objects/object/hasownproperty) check ([`propertyIsEnumerable()`](../global_objects/object/propertyisenumerable) can also be used). Alternatively, if you know there won't be any outside code interference, you can extend built-in prototypes with a check method.
 
-Why Use for...in?
------------------
+## Why Use for...in?
 
 Given that `for...in` is built for iterating object properties, not recommended for use with arrays, and options like `Array.prototype.forEach()` and `for...of` exist, what might be the use of `for...in` at all?
 
 It may be most practically used for debugging purposes, being an easy way to check the properties of an object (by outputting to the console or otherwise). Although arrays are often more practical for storing data, in situations where a key-value pair is preferred for working with data (with properties acting as the "key"), there may be instances where you want to check if any of those keys hold a particular value.
 
-Examples
---------
+## Examples
 
 ### Using for...in
 
@@ -88,8 +83,7 @@ The following function illustrates the use of [`hasOwnProperty()`](../global_obj
     // Output:
     // "obj.color = red"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
@@ -136,10 +130,9 @@ This nonstandard behavior is now ignored in version 40 and later, and will prese
 
 Other engines such as v8 (Chrome), Chakra (IE/Edge), and JSC (WebKit/Safari) are investigating whether to remove the nonstandard behavior as well.
 
-See also
---------
+## See also
 
--   [`for...of`](for...of) – a similar statement that iterates over the property *values*
+-   [`for...of`](for...of) – a similar statement that iterates over the property _values_
 -   <span class="page-not-created">`for each...in`</span> – a similar but deprecated statement that iterates over the values of an object's properties, rather than the property names themselves
 -   [`for`](for)
 -   [Iterators and Generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) (usable with `for...of` syntax)

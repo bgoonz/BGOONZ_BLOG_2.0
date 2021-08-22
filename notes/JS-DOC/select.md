@@ -1,10 +1,8 @@
-Intl.PluralRules.select()
-=========================
+# Intl.PluralRules.select()
 
 The `Intl.PluralRules.prototype.select()` method returns a string indicating which plural rule to use for locale-aware formatting.
 
-Syntax
-------
+## Syntax
 
     select(number)
 
@@ -17,13 +15,11 @@ The number to get a plural rule for.
 
 A string representing the pluralization category of the `number`, can be one of `zero`, `one`, `two`, `few`, `many` or `other`.
 
-Description
------------
+## Description
 
 This function selects a pluralization category according to the locale and formatting options of a [`Intl/PluralRules`](../pluralrules) object.
 
-Examples
---------
+## Examples
 
 ### Using select()
 
@@ -42,14 +38,12 @@ Examples
     new Intl.PluralRules('ar-EG').select(18);
     // → 'many'
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-intl.pluralrules.prototype.select</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -105,8 +99,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [`Intl.PluralRules`](../pluralrules)
 

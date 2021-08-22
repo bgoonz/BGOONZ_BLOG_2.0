@@ -1,5 +1,4 @@
-Public class fields
-===================
+# Public class fields
 
 **Note:** This page describes experimental features.
 
@@ -9,8 +8,7 @@ Support in browsers is limited, but the feature can be used through a build step
 
 Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.
 
-Syntax
-------
+## Syntax
 
     class ClassWithInstanceField {
       instanceField = 'instance field'
@@ -26,8 +24,7 @@ Syntax
       }
     }
 
-Examples
---------
+## Examples
 
 ### Public static fields
 
@@ -225,14 +222,12 @@ Getters and setters are special methods that bind to a class property and are ca
     console.log(instance.msg)
     // expected output: "hello cake"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-FieldDefinition">Public and private instance fields proposal (Public and private instance fields proposal)<br />
 <span class="small">#prod-FieldDefinition</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -296,8 +291,7 @@ Doesn't support public static fields. See WebKit bug [194095](https://webkit.org
 
 No
 
-See also
---------
+## See also
 
 -   [Public and private class fields](https://v8.dev/features/class-fields) article at the v8.dev site.
 -   [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript) explainer, by the [Public and private instance fields](https://github.com/tc39/proposal-class-fields) authors

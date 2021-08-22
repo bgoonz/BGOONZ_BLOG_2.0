@@ -1,10 +1,8 @@
-instanceof
-==========
+# instanceof
 
 The `instanceof` tests to see if the `prototype` property of a constructor appears anywhere in the prototype chain of an object. The return value is a boolean value.
 
-Syntax
-------
+## Syntax
 
     object instanceof constructor
 
@@ -16,8 +14,7 @@ The object to test.
 `constructor`  
 Function to test against
 
-Description
------------
+## Description
 
 The `instanceof` operator tests the presence of `constructor.prototype` in `object`'s prototype chain.
 
@@ -54,14 +51,13 @@ Note that the value of an `instanceof` test can change based on changes to the `
 
 ### `instanceof` and multiple context (e.g. frames or windows)
 
-Different scopes have different execution environments. This means that they have different built-ins (different global object, different constructors, etc.). This may result in unexpected results. For instance, `[] instanceof window.frames[0].Array` will return `false`, because `Array.prototype !== ``window.frames[0].Array.prototype` and arrays inherit from the former.
+Different scopes have different execution environments. This means that they have different built-ins (different global object, different constructors, etc.). This may result in unexpected results. For instance, `[] instanceof window.frames[0].Array` will return `false`, because ` Array.prototype !== ``window.frames[0].Array.prototype ` and arrays inherit from the former.
 
 This may not make sense at first, but for scripts dealing with multiple frames or windows, and passing objects from one context to another via functions, this will be a valid and strong issue. For instance, you can securely check if a given object is, in fact, an Array using `Array.isArray(myObj)`
 
 For example, checking if a [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node) is a [SVGElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGElement) in a different context, you can use `myNode instanceof myNode.ownerDocument.defaultView.SVGElement`.
 
-Examples
---------
+## Examples
 
 ### Using instanceof with String
 
@@ -146,8 +142,7 @@ This is really different from:
 
 This will always be `false`. (`!mycar` will be evaluated before `instanceof`, so you always try to know if a boolean is an instance of `Car`).
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Relational Operators' in that specification.</span></a></td></tr></tbody></table>
@@ -178,8 +173,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   `typeof`
 -   [`Symbol.hasInstance`](../global_objects/symbol/hasinstance)

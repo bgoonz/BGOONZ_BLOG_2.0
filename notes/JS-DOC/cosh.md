@@ -1,12 +1,10 @@
-Math.cosh()
-===========
+# Math.cosh()
 
 The `Math.cosh()` function returns the hyperbolic cosine of a number, that can be expressed using the [constant e](e):
 
 $$\\mathtt{\\operatorname{Math.cosh(x)}} = \\frac{e^{x} + e^{- x}}{2}$$
 
-Syntax
-------
+## Syntax
 
     Math.cosh(x)
 
@@ -19,13 +17,11 @@ A number.
 
 The hyperbolic cosine of the given number.
 
-Description
------------
+## Description
 
 Because `cosh()` is a static method of `Math`, you always use it as `Math.cosh()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.cosh()
 
@@ -33,8 +29,7 @@ Examples
     Math.cosh(1);  // 1.5430806348152437
     Math.cosh(-1); // 1.5430806348152437
 
-Polyfill
---------
+## Polyfill
 
 This can be emulated with the help of the [`Math.exp()`](exp) function:
 
@@ -49,8 +44,7 @@ or using only one call to the [`Math.exp()`](exp) function:
       return (y + 1 / y) / 2;
     };
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cosh">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.cosh</span></a></td></tr></tbody></table>
@@ -81,8 +75,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Math.acosh()`](acosh)
 -   [`Math.asinh()`](asinh)

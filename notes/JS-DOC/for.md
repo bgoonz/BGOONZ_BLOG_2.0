@@ -1,10 +1,8 @@
-for
-===
+# for
 
 The **for statement** creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a [block statement](block)) to be executed in the loop.
 
-Syntax
-------
+## Syntax
 
     for ([initialization]; [condition]; [final-expression])
        statement
@@ -23,8 +21,7 @@ An expression to be evaluated at the end of each loop iteration. This occurs bef
 `statement`  
 A statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a [block](block) statement (`{ ... }`) to group those statements. To execute no statement within the loop, use an [empty](empty) statement (`;`).
 
-Examples
---------
+## Examples
 
 ### Using for
 
@@ -98,8 +95,7 @@ The following `for` cycle calculates the offset position of a node in the `final
 
 **Note:** This is one of the few cases in JavaScript where **the semicolon is mandatory**. Indeed, without the semicolon the line that follows the cycle declaration will be considered a statement.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-for-statement</span></a></td></tr></tbody></table>
@@ -130,8 +126,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [empty statement](empty)
 -   [`break`](break)

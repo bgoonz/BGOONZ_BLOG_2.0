@@ -1,10 +1,8 @@
-Symbol.toPrimitive
-==================
+# Symbol.toPrimitive
 
 The `Symbol.toPrimitive` is a symbol that specifies a function valued property that is called to convert an object to a corresponding primitive value.
 
-Description
------------
+## Description
 
 With the help of the `Symbol.toPrimitive` property (used as a function value), an object can be converted to a primitive value. The function is called with a string argument `hint`, which specifies the preferred type of the result primitive value. The `hint` argument can be one of "`number`", "`string`", and "`default`".
 
@@ -22,8 +20,7 @@ Configurable
 
 no
 
-Examples
---------
+## Examples
 
 ### Modifying primitive values converted from an object
 
@@ -51,14 +48,12 @@ Following example describes how `Symbol.toPrimitive` property can modify the pri
     console.log(`${obj2}`); // "hello"   -- hint is "string"
     console.log(obj2 + ''); // "true"    -- hint is "default"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.toprimitive">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-symbol.toprimitive</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -114,8 +109,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype[@@toPrimitive]`](../date/@@toprimitive)
 -   [`Symbol.prototype[@@toPrimitive]`](@@toprimitive)

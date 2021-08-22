@@ -1,22 +1,18 @@
-empty
-=====
+# empty
 
 An **empty statement** is used to provide no statement, although the JavaScript syntax would expect one.
 
-Syntax
-------
+## Syntax
 
     ;
 
-Description
------------
+## Description
 
 The empty statement is a semicolon (`;`) indicating that no statement will be executed, even if JavaScript syntax requires one.
 
 The opposite behavior, where you want multiple statements, but JavaScript only allows a single one, is possible using a [block statement](block), which combines several statements into a single one.
 
-Examples
---------
+## Examples
 
 ### Empty loop body
 
@@ -32,7 +28,7 @@ The empty statement is sometimes used with loop statements. See the following ex
 
 ### Unintentional usage
 
-It is a good idea to comment *intentional* use of the empty statement, as it is not really obvious to distinguish from a normal semicolon.
+It is a good idea to comment _intentional_ use of the empty statement, as it is not really obvious to distinguish from a normal semicolon.
 
 In the following example, the usage is probably not intentional:
 
@@ -54,8 +50,7 @@ If `three` is `true`, nothing will happen, `four` does not matter, and also the 
     else
       launchRocket();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-empty-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-empty-statement</span></a></td></tr></tbody></table>
@@ -86,8 +81,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Block statement`](block)
 

@@ -1,28 +1,23 @@
-SyntaxError: missing variable name
-==================================
+# SyntaxError: missing variable name
 
 The JavaScript exception "missing variable name" occurs way too often as naming things is so hard. Or maybe a comma is wrong. Check for typos!
 
-Message
--------
+## Message
 
     SyntaxError: missing variable name (Firefox)
     SyntaxError: Unexpected token = (Chrome)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 A variable is missing a name. This is likely due to a syntax error in your code. Probably a comma is wrong somewhere or you struggled with coming up with a name. Totally understandable! Naming things is so hard.
 
 -   Check to ensure the previous lines / declaration does not end with a comma instead of a semi-colon.
 
-Examples
---------
+## Examples
 
 ### Missing a variable name
 
@@ -70,8 +65,7 @@ This would be correct:
 
     var arr = [1,2,3,4,5];
 
-See also
---------
+## See also
 
 -   [Good variable names](https://wiki.c2.com/?GoodVariableNames)
 -   [`var`](../statements/var)

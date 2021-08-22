@@ -1,22 +1,18 @@
-Intl.ListFormat
-===============
+# Intl.ListFormat
 
 The `Intl.ListFormat` object enables language-sensitive list formatting.
 
-Constructor
------------
+## Constructor
 
 [`Intl.ListFormat()`](listformat/listformat)  
 Creates a new `Intl.ListFormat` object.
 
-Static methods
---------------
+## Static methods
 
 [`Intl.ListFormat.supportedLocalesOf()`](listformat/supportedlocalesof)  
 Returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.
 
-Instance methods
-----------------
+## Instance methods
 
 [`Intl.ListFormat.prototype.format()`](listformat/format)  
 Returns a language-specific formatted string representing the elements of the list.
@@ -24,8 +20,7 @@ Returns a language-specific formatted string representing the elements of the li
 [`Intl.ListFormat.prototype.formatToParts()`](listformat/formattoparts)  
 Returns an array of objects representing the different components that can be used to format a list of values in a locale-aware fashion.
 
-Examples
---------
+## Examples
 
 ### Using format
 
@@ -55,13 +50,11 @@ The following example shows how to create a List formatter returning formatted p
     //   { "type": "literal", "value": ", and " },
     //   { "type": "element", "value": "Car" } ];
 
-Polyfill
---------
+## Polyfill
 
 [formatjs Intl.ListFormat polyfill](https://formatjs.io/docs/polyfills/intl-listformat)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#listformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#listformat-objects</span></a></td></tr></tbody></table>
@@ -222,8 +215,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`Intl`](../intl)
 

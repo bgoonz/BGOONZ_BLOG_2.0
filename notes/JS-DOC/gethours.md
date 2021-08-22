@@ -1,10 +1,8 @@
-Date.prototype.getHours()
-=========================
+# Date.prototype.getHours()
 
 The `getHours()` method returns the hour for the specified date, according to local time.
 
-Syntax
-------
+## Syntax
 
     getHours()
 
@@ -12,8 +10,7 @@ Syntax
 
 An integer number, between 0 and 23, representing the hour for the given date according to local time.
 
-Examples
---------
+## Examples
 
 ### Using getHours()
 
@@ -24,8 +21,7 @@ The second statement below assigns the value 23 to the variable `hours`, based o
 
     console.log(hours); // 23
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gethours">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.gethours</span></a></td></tr></tbody></table>
@@ -56,8 +52,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getUTCHours()`](getutchours)
 -   [`Date.prototype.setHours()`](sethours)

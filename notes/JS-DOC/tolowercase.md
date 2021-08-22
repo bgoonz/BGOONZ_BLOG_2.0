@@ -1,10 +1,8 @@
-String.prototype.toLowerCase()
-==============================
+# String.prototype.toLowerCase()
 
 The `toLowerCase()` method returns the calling string value converted to lower case.
 
-Syntax
-------
+## Syntax
 
     toLowerCase()
 
@@ -12,26 +10,22 @@ Syntax
 
 A new string representing the calling string converted to lower case.
 
-Description
------------
+## Description
 
 The `toLowerCase()` method returns the value of the string converted to lower case. `toLowerCase()` does not affect the value of the string `str` itself.
 
-Examples
---------
+## Examples
 
 ### Using `toLowerCase()`
 
     console.log('ALPHABET'.toLowerCase()); // 'alphabet'
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.tolowercase">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'String.prototype.toLowerCase' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -87,8 +81,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.toLocaleLowerCase()`](tolocalelowercase)
 -   [`String.prototype.toLocaleUpperCase()`](tolocaleuppercase)

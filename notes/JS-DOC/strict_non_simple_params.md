@@ -1,10 +1,8 @@
-SyntaxError: "use strict" not allowed in function with non-simple parameters
-============================================================================
+# SyntaxError: "use strict" not allowed in function with non-simple parameters
 
 The JavaScript exception "`'use strict'` not allowed in function" occurs when a `"use strict"` directive is used at the top of a function with [default parameters](../functions/default_parameters), [rest parameters](../functions/rest_parameters), or [destructuring parameters](../operators/destructuring_assignment).
 
-Message
--------
+## Message
 
     Edge:
     Cannot apply strict mode on functions with non-simple parameter list
@@ -17,13 +15,11 @@ Message
     Chrome:
     SyntaxError: Illegal 'use strict' directive in function with non-simple parameter list
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 A `"use strict"` directive is written at the top of a function that has one of the following parameters:
 
@@ -33,8 +29,7 @@ A `"use strict"` directive is written at the top of a function that has one of t
 
 A `"use strict"` directive is not allowed at the top of such functions per the ECMAScript specification.
 
-Examples
---------
+## Examples
 
 ### Function statement
 
@@ -91,8 +86,7 @@ This can be converted to the following expression:
       };
     })();
 
-See also
---------
+## See also
 
 -   [Strict mode](../strict_mode)
 -   [function statement](../statements/function)

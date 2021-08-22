@@ -1,29 +1,24 @@
-InternalError: too much recursion
-=================================
+# InternalError: too much recursion
 
 The JavaScript exception "too much recursion" or "Maximum call stack size exceeded" occurs when there are too many function calls, or a function is missing a base case.
 
-Message
--------
+## Message
 
     Error: Out of stack space (Edge)
     InternalError: too much recursion (Firefox)
     RangeError: Maximum call stack size exceeded (Chrome)
 
-Error type
-----------
+## Error type
 
 [`InternalError`](../global_objects/internalerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
-A function that calls itself is called a *recursive function*. Once a condition is met, the function stops calling itself. This is called a *base case*.
+A function that calls itself is called a _recursive function_. Once a condition is met, the function stops calling itself. This is called a _base case_.
 
 In some ways, recursion is analogous to a loop. Both execute the same code multiple times, and both require a condition (to avoid an infinite loop, or rather, infinite recursion in this case). When there are too many function calls, or a function is missing a base case, JavaScript will throw this error.
 
-Examples
---------
+## Examples
 
 This recursive function runs 10 times, as per the exit condition.
 
@@ -77,7 +72,7 @@ When a value is assigned to the property name (this.name = name;) JavaScript nee
         this.name = name; // Recursive call
     }
 
-**Note:** In this example when the setter is triggered, it is told to do the same thing again: *to set the same property that it is meant to handle.* This causes the function to call itself, again and again, making it infinitely recursive.
+**Note:** In this example when the setter is triggered, it is told to do the same thing again: _to set the same property that it is meant to handle._ This causes the function to call itself, again and again, making it infinitely recursive.
 
 This issue also appears if the same variable is used in the getter.
 
@@ -100,8 +95,7 @@ To avoid this problem, make sure that the property being assigned to inside the 
     tony.name = "Tonisha";
     console.log(tony);
 
-See also
---------
+## See also
 
 -   [Recursion](https://developer.mozilla.org/en-US/docs/Glossary/Recursion)
 -   [Recursive functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#recursion)

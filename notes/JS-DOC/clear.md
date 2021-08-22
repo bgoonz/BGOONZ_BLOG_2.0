@@ -1,10 +1,8 @@
-Set.prototype.clear()
-=====================
+# Set.prototype.clear()
 
 The `clear()` method removes all elements from a `Set` object.
 
-Syntax
-------
+## Syntax
 
     clear()
 
@@ -12,8 +10,7 @@ Syntax
 
 [`undefined`](../undefined).
 
-Examples
---------
+## Examples
 
 ### Using the clear() method
 
@@ -29,8 +26,7 @@ Examples
     mySet.size;       // 0
     mySet.has('bar')  // false
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set.prototype.clear">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-set.prototype.clear</span></a></td></tr></tbody></table>
@@ -61,8 +57,7 @@ Specifications
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Set`](../set)
 -   [`Set.prototype.delete()`](delete)

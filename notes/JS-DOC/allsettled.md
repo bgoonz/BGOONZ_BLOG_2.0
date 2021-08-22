@@ -1,5 +1,4 @@
-Promise.allSettled()
-====================
+# Promise.allSettled()
 
 The `Promise.allSettled()` method returns a promise that resolves after all of the given promises have either fulfilled or rejected, with an array of objects that each describes the outcome of each promise.
 
@@ -7,8 +6,7 @@ It is typically used when you have multiple asynchronous tasks that are not depe
 
 In comparison, the Promise returned by [`Promise.all()`](all) may be more appropriate if the tasks are dependent on each other / if you'd like to immediately reject upon any of them rejecting.
 
-Syntax
-------
+## Syntax
 
     Promise.allSettled(iterable);
 
@@ -25,8 +23,7 @@ However, **if and only if** an empty iterable is passed as an argument, `Promise
 
 For each outcome object, a `status` string is present. If the status is `fulfilled`, then a `value` is present. If the status is `rejected`, then a `reason` is present. The value (or reason) reflects what value each promise was fulfilled (or rejected) with.
 
-Examples
---------
+## Examples
 
 ### Using Promise.allSettled
 
@@ -45,8 +42,7 @@ Examples
     //   {status: "rejected",  reason: Error: an error}
     // ]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.allsettled">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-promise.allsettled</span></a></td></tr></tbody></table>
@@ -77,8 +73,7 @@ No
 
 12.0
 
-See also
---------
+## See also
 
 -   [Promises](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Techniques/Promises)
 -   [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)

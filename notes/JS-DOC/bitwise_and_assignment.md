@@ -1,16 +1,13 @@
-Bitwise AND assignment (&=)
-===========================
+# Bitwise AND assignment (&=)
 
 The bitwise AND assignment operator (`&=`) uses the binary representation of both operands, does a bitwise AND operation on them and assigns the result to the variable.
 
-Syntax
-------
+## Syntax
 
     Operator: x &= y
     Meaning:  x  = x & y
 
-Examples
---------
+## Examples
 
 ### Using bitwise AND assignment
 
@@ -19,8 +16,7 @@ Examples
     // 2:     00000000000000000000000000000010
     a &= 2; // 0
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
@@ -51,8 +47,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Bitwise AND operator](bitwise_and)

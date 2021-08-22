@@ -1,15 +1,12 @@
-Division (/)
-============
+# Division (/)
 
 The division operator (`/`) produces the quotient of its operands where the left operand is the dividend and the right operand is the divisor.
 
-Syntax
-------
+## Syntax
 
     Operator: x / y
 
-Examples
---------
+## Examples
 
 ### Basic division
 
@@ -27,8 +24,7 @@ Examples
 
     2.0 / -0.0  // -Infinity
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Division operator' in that specification.</span></a></td></tr></tbody></table>
@@ -59,8 +55,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)

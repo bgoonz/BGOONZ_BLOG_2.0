@@ -1,25 +1,20 @@
-SyntaxError: missing \] after element list
-==========================================
+# SyntaxError: missing \] after element list
 
 The JavaScript exception "missing \] after element list" occurs when there is an error with the array initializer syntax somewhere. Likely there is a closing bracket ("`]`") or a comma ("`,`") missing.
 
-Message
--------
+## Message
 
     SyntaxError: missing ] after element list
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 There is an error with the array initializer syntax somewhere. Likely there is a closing bracket ("`]`") or a comma ("`,`") missing.
 
-Examples
---------
+## Examples
 
 ### Incomplete array initializer
 
@@ -45,8 +40,7 @@ Correct would be:
 
     var data = [{foo: 'bar'}, {bar: 'foo'}];
 
-See also
---------
+## See also
 
 -   [`Array`](../global_objects/array)
 

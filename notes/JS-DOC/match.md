@@ -1,10 +1,8 @@
-String.prototype.match()
-========================
+# String.prototype.match()
 
-The `match()` method retrieves the result of matching a *string* against a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
+The `match()` method retrieves the result of matching a _string_ against a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
-Syntax
-------
+## Syntax
 
     match(regexp)
 
@@ -37,8 +35,7 @@ The index of the search at which the result was found.
 `input`  
 A copy of the search string.
 
-Description
------------
+## Description
 
 If the regular expression does not include the `g` flag, `str.match()` will return the same result as [`RegExp.exec()`](../regexp/exec).
 
@@ -48,8 +45,7 @@ If the regular expression does not include the `g` flag, `str.match()` will retu
 -   If you only want the first match found, you might want to use [`RegExp.exec()`](../regexp/exec) instead.
 -   If you want to obtain capture groups and the global flag is set, you need to use [`RegExp.exec()`](../regexp/exec) or [`String.prototype.matchAll()`](matchall) instead.
 
-Examples
---------
+## Examples
 
 ### Using match()
 
@@ -122,8 +118,7 @@ If it is a positive number with a positive sign, `RegExp()` will ignore the posi
     str2.match(+65);        // A number with a positive sign. returns ["65"]
     str3.match(null);       // returns ["null"]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.match">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'String.prototype.match' in that specification.</span></a></td></tr></tbody></table>
@@ -154,8 +149,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.matchAll()`](matchall)
 -   [`RegExp`](../regexp)

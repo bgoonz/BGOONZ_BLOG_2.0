@@ -1,15 +1,12 @@
-void operator
-=============
+# void operator
 
 The `void` evaluates the given `expression` and then returns [`undefined`](../global_objects/undefined).
 
-Syntax
-------
+## Syntax
 
     void expression
 
-Description
------------
+## Description
 
 This operator allows evaluating expressions that produce a value into places where an expression that evaluates to [`undefined`](../global_objects/undefined) is desired.
 
@@ -20,8 +17,7 @@ It should be noted that [the precedence](operator_precedence) of the `void` oper
     void 2 == '2';   // (void 2) == '2', returns false
     void (2 == '2'); // void (2 == '2'), returns undefined
 
-Examples
---------
+## Examples
 
 ### Immediately Invoked Function Expressions
 
@@ -59,14 +55,12 @@ Arrow functions introduce a short-hand braceless syntax that returns an expressi
 
 This ensures the return value of `doSomething` changing from `undefined` to `true` will not change the behavior of this code.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-void-operator">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-void-operator</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -122,8 +116,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`undefined`](../global_objects/undefined)
 

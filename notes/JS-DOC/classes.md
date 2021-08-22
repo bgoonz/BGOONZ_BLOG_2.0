@@ -1,10 +1,8 @@
-Classes
-=======
+# Classes
 
 Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
 
-Defining classes
-----------------
+## Defining classes
 
 Classes are in fact "special [functions](functions)", and just as you can define [function expressions](operators/function) and [function declarations](statements/function), the class syntax has two components: [class expressions](operators/class) and [class declarations](statements/class).
 
@@ -53,8 +51,7 @@ A **class expression** is another way to define a class. Class expressions can b
 
 **Note:** Class **expressions** are subject to the same hoisting restrictions as described in the [Class declarations](#class_declarations) section.
 
-Class body and method definitions
----------------------------------
+## Class body and method definitions
 
 The body of a class is the part that is in curly brackets `{}`. This is where you define class members, such as methods or constructor.
 
@@ -113,7 +110,7 @@ See also [Iterators and generators](https://developer.mozilla.org/en-US/docs/Web
 
 ### Static methods and properties
 
-The [static](classes/static) keyword defines a static method or property for a class. Static members (properties and methods) are called without [instantiating](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects#the_object_(class_instance)) their class and **cannot** be called through a class instance. Static methods are often used to create utility functions for an application, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+The [static](classes/static) keyword defines a static method or property for a class. Static members (properties and methods) are called without [instantiating](<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects#the_object_(class_instance)>) their class and **cannot** be called through a class instance. Static methods are often used to create utility functions for an application, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
 
     class Point {
       constructor(x, y) {
@@ -241,10 +238,9 @@ Private fields cannot be created later through assigning to them, the way that n
 
 For more information, see [private class fields](classes/private_class_fields).
 
-Sub classing with `extends`
----------------------------
+## Sub classing with `extends`
 
-The [`extends`](classes/extends) keyword is used in *class declarations* or *class expressions* to create a class as a child of another class.
+The [`extends`](classes/extends) keyword is used in _class declarations_ or _class expressions_ to create a class as a child of another class.
 
     class Animal {
       constructor(name) {
@@ -312,8 +308,7 @@ Note that classes cannot extend regular (non-constructible) objects. If you want
     let d = new Dog('Mitzie');
     d.speak(); // Mitzie makes a noise.
 
-Species
--------
+## Species
 
 You might want to return [`Array`](global_objects/array) objects in your derived array class `MyArray`. The species pattern lets you override default constructors.
 
@@ -330,8 +325,7 @@ For example, when using methods such as [`map()`](global_objects/array/map) that
     console.log(mapped instanceof MyArray); // false
     console.log(mapped instanceof Array);   // true
 
-Super class calls with `super`
-------------------------------
+## Super class calls with `super`
 
 The [`super`](operators/super) keyword is used to call corresponding methods of super class. This is one advantage over prototype-based inheritance.
 
@@ -357,10 +351,9 @@ The [`super`](operators/super) keyword is used to call corresponding methods of 
     // Fuzzy makes a noise.
     // Fuzzy roars.
 
-Mix-ins
--------
+## Mix-ins
 
-Abstract subclasses or *mix-ins* are templates for classes. An ECMAScript class can only have a single superclass, so multiple inheritance from tooling classes, for example, is not possible. The functionality must be provided by the superclass.
+Abstract subclasses or _mix-ins_ are templates for classes. An ECMAScript class can only have a single superclass, so multiple inheritance from tooling classes, for example, is not possible. The functionality must be provided by the superclass.
 
 A function with a superclass as input and a subclass extending that superclass as output can be used to implement mix-ins in ECMAScript:
 
@@ -377,15 +370,13 @@ A class that uses these mix-ins can then be written like this:
     class Foo { }
     class Bar extends calculatorMixin(randomizerMixin(Foo)) { }
 
-Re-running a class definition
------------------------------
+## Re-running a class definition
 
 A class can't be redefined. Attempting to do so produces a `SyntaxError`.
 
 If you're experimenting with code in a web browser, such as the Firefox Web Console (**Tools** &gt; **Web Developer** &gt; **Web Console**) and you 'Run' a definition of a class with the same name twice, you'll get a `SyntaxError: redeclaration of let ClassName;`. (See further discussion of this issue in [bug 1428672](https://bugzilla.mozilla.org/show_bug.cgi?id=1428672).) Doing something similar in Chrome Developer Tools gives you a message like `Uncaught SyntaxError: Identifier 'ClassName' has already been declared at <anonymous>:1:1`.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Class definitions' in that specification.</span></a></td></tr></tbody></table>
@@ -712,8 +703,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [Functions](functions)
 -   [class declaration](statements/class)

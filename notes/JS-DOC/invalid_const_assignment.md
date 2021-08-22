@@ -1,28 +1,23 @@
-TypeError: invalid assignment to const "x"
-==========================================
+# TypeError: invalid assignment to const "x"
 
 The JavaScript exception "invalid assignment to const" occurs when it was attempted to alter a constant value. JavaScript `const` declarations can't be re-assigned or redeclared.
 
-Message
--------
+## Message
 
     TypeError: invalid assignment to const "x" (Firefox)
     TypeError: Assignment to constant variable. (Chrome)
     TypeError: Assignment to const (Edge)
     TypeError: Redeclaration of const 'x' (IE)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 A constant is a value that cannot be altered by the program during normal execution. It cannot change through re-assignment, and it can't be redeclared. In JavaScript, constants are declared using the `const` keyword.
 
-Examples
---------
+## Examples
 
 ### Invalid redeclaration
 
@@ -77,8 +72,7 @@ But you can mutate the properties in a variable:
     obj.foo = 'baz';
     obj; // Object { foo: "baz" }
 
-See also
---------
+## See also
 
 -   `const`
 -   `let`

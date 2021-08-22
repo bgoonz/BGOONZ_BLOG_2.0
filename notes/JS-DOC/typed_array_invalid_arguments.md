@@ -1,20 +1,16 @@
-TypeError: invalid arguments
-============================
+# TypeError: invalid arguments
 
 The JavaScript exception "invalid arguments" occurs when [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) constructors are provided with a wrong argument.
 
-Message
--------
+## Message
 
     TypeError: invalid arguments (Firefox)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 [Typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) constructors require either
 
@@ -26,8 +22,7 @@ What went wrong?
 
 to create a new typed array. Other constructor arguments will not create a valid typed array.
 
-Examples
---------
+## Examples
 
 ### No strings in typed arrays
 
@@ -63,8 +58,7 @@ Different ways to create a valid [`Uint8Array`](../global_objects/uint8array):
     var uint8 = new Uint8Array(iterable);
     // Uint8Array[1, 2, 3]
 
-See also
---------
+## See also
 
 -   [Typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`ArrayBuffer`](../global_objects/arraybuffer)

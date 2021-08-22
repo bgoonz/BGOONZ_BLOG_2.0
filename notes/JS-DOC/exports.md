@@ -1,16 +1,14 @@
-WebAssembly.Module.exports()
-============================
+# WebAssembly.Module.exports()
 
 The `WebAssembly.Module.exports()` function returns an array containing descriptions of all the declared exports of the given `Module`.
 
-Syntax
-------
+## Syntax
 
     WebAssembly.Module.exports(module)
 
 ### Parameters
 
-*module*  
+_module_  
 A [`WebAssembly.Module`](../module) object.
 
 ### Return value
@@ -21,8 +19,7 @@ An array containing objects representing the exported functions of the given mod
 
 If module is not a [`WebAssembly.Module`](../module) object instance, a [`TypeError`](../../typeerror) is thrown.
 
-Examples
---------
+## Examples
 
 ### Using exports
 
@@ -61,8 +58,7 @@ The `exports[0]` output looks like this:
 
     { name: "exported_func", kind: "function" }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-exports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#dom-module-exports</span></a></td></tr></tbody></table>
@@ -97,8 +93,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

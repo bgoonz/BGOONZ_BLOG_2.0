@@ -1,10 +1,8 @@
-String.raw()
-============
+# String.raw()
 
-The static `String.raw()` method is a tag function of [template literals](../../template_literals). This is *similar* to the `r` prefix in Python, or the `@` prefix in C\# for string literals. (But it is not *identical*; see explanations in [this issue](https://bugs.chromium.org/p/v8/issues/detail?id=5016).) It's used to get the raw string form of template literals, that is, substitutions (e.g. `${foo}`) are processed, but escapes (e.g. `\n`) are not.
+The static `String.raw()` method is a tag function of [template literals](../../template_literals). This is _similar_ to the `r` prefix in Python, or the `@` prefix in C\# for string literals. (But it is not _identical_; see explanations in [this issue](https://bugs.chromium.org/p/v8/issues/detail?id=5016).) It's used to get the raw string form of template literals, that is, substitutions (e.g. `${foo}`) are processed, but escapes (e.g. `\n`) are not.
 
-Syntax
-------
+## Syntax
 
     String.raw(callSite, ...substitutions)
 
@@ -30,15 +28,13 @@ The raw string form of a given template literal.
 [`TypeError`](../typeerror)  
 A [`TypeError`](../typeerror) is thrown if the first argument is not a well-formed object.
 
-Description
------------
+## Description
 
 In most cases, `String.raw()` is used with template literal. The first syntax mentioned above is only rarely used, because the JavaScript engine will call this with proper arguments for you, (just like with other [tag functions](../../template_literals#tagged_template_literals)).
 
 `String.raw()` is the only built-in tag function of template literals. It works just like the default template function and performs concatenation. You can even re-implement it with normal JavaScript code.
 
-Examples
---------
+## Examples
 
 ### Using String.raw()
 
@@ -75,14 +71,12 @@ Examples
     // `t${0}e${1}s${2}t`:
     String.raw({ raw: 'test' }, 0, 1, 2); // 't0e1s2t'
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.raw">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.raw</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -138,8 +132,7 @@ No
 
 4.0
 
-See also
---------
+## See also
 
 -   [Template literals](../../template_literals)
 -   [`String`](../string)

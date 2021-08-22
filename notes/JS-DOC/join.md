@@ -1,32 +1,28 @@
-Array.prototype.join()
-======================
+# Array.prototype.join()
 
 The `join()` method creates and returns a new string by concatenating all of the elements in an array (or an [array-like object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#working_with_array-like_objects)), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
 
-Syntax
-------
+## Syntax
 
     join()
     join(separator)
 
 ### Parameters
 
- `separator` <span class="badge inline optional">Optional</span>   
+`separator` <span class="badge inline optional">Optional</span>  
 Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma (","). If `separator` is an empty string, all elements are joined without any characters in between them.
 
 ### Return value
 
 A string with all array elements joined. If `arr.length` is `0`, the empty string is returned.
 
-Description
------------
+## Description
 
 The string conversions of all array elements are joined into one string.
 
 **Warning:** If an element is `undefined`, `null` or an empty array `[]`, it is converted to an empty string.
 
-Examples
---------
+## Examples
 
 ### Joining an array four different ways
 
@@ -49,8 +45,7 @@ The following example joins array-like object (`arguments`), by calling [`Functi
     f(1, 'a', true);
     //expected output: "1,a,true"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.join">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Array.prototype.join' in that specification.</span></a></td></tr></tbody></table>
@@ -81,8 +76,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.split()`](../string/split)
 -   [`Array.prototype.toString()`](tostring)

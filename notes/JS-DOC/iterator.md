@@ -1,10 +1,8 @@
-Symbol.iterator
-===============
+# Symbol.iterator
 
 The well-known `Symbol.iterator` symbol specifies the default iterator for an object. Used by [`for...of`](../../statements/for...of).
 
-Description
------------
+## Description
 
 Whenever an object needs to be iterated (such as at the beginning of a `for..of` loop), its `@@iterator` method is called with no arguments, and the returned **iterator** is used to obtain the values to be iterated.
 
@@ -32,8 +30,7 @@ Configurable
 
 no
 
-Examples
---------
+## Examples
 
 ### User-defined iterables
 
@@ -75,8 +72,7 @@ If an iterable's `@@iterator` method does not return an iterator object, then it
     nonWellFormedIterable[Symbol.iterator] = () => 1
     [...nonWellFormedIterable] // TypeError: [] is not a function
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.iterator">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Symbol.iterator' in that specification.</span></a></td></tr></tbody></table>
@@ -107,8 +103,7 @@ No
 
 4.0
 
-See also
---------
+## See also
 
 -   [Iteration protocols](../../iteration_protocols)
 -   [`Array.prototype[@@iterator]()`](../array/@@iterator)

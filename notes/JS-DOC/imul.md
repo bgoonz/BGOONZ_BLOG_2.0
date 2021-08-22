@@ -1,10 +1,8 @@
-Math.imul()
-===========
+# Math.imul()
 
 The `Math.imul()` function returns the result of the C-like 32-bit multiplication of the two parameters.
 
-Syntax
-------
+## Syntax
 
     Math.imul(a, b)
 
@@ -20,8 +18,7 @@ Second number.
 
 The result of the C-like 32-bit multiplication of the given arguments.
 
-Description
------------
+## Description
 
 `Math.imul()` allows for 32-bit integer multiplication with C-like semantics. This feature is useful for projects like [Emscripten](https://en.wikipedia.org/wiki/Emscripten).
 
@@ -29,8 +26,7 @@ Because `imul()` is a static method of `Math`, you always use it as `Math.imul()
 
 If you use normal JavaScript floating point numbers in imul, you will experience a degrade in performance. This is because of the costly conversion from a floating point to an integer for multiplication, and then converting the multiplied integer back into a floating point. The reason imul exists is because it is faster in only one (so far) circumstance: AsmJS. AsmJS allows for JIST-optimizers to more easily implement internal integers in JavaScript. Multiplying two numbers stored internally as integers (which is only possible with AsmJS) with imul is the only potential circumstance where Math.imul may prove performant in current browsers.
 
-Examples
---------
+## Examples
 
 ### Using Math.imul()
 
@@ -40,8 +36,7 @@ Examples
     Math.imul(0xffffffff, 5); // -5
     Math.imul(0xfffffffe, 5); // -10
 
-Polyfill
---------
+## Polyfill
 
 This can be emulated with the following function:
 
@@ -71,8 +66,7 @@ However, the following function is more performant because it is likely that bro
       return result |0;
     };
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.imul">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.imul</span></a></td></tr></tbody></table>
@@ -103,8 +97,7 @@ No
 
 1.5
 
-See also
---------
+## See also
 
 -   [Emscripten](https://en.wikipedia.org/wiki/Emscripten)
 

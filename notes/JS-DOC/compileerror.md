@@ -1,16 +1,13 @@
-WebAssembly.CompileError
-========================
+# WebAssembly.CompileError
 
 The `WebAssembly.CompileError` object indicates an error during WebAssembly decoding or validation.
 
-Constructor
------------
+## Constructor
 
 [`WebAssembly.CompileError()`](compileerror/compileerror)  
 Creates a new `WebAssembly.CompileError` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`WebAssembly.CompileError.prototype.message`](../error/message)  
 Error message. Although ECMA-262 specifies that [`URIError`](../urierror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](../error/message).
@@ -30,8 +27,7 @@ Column number in line that raised this error. Inherited from [`Error`](../error)
 [`WebAssembly.CompileError.prototype.stack`](../error/stack)  
 Stack trace. Inherited from [`Error`](../error).
 
-Instance methods
-----------------
+## Instance methods
 
 [`WebAssembly.CompileError.prototype.toSource()`](../error/tosource)  
 Returns code that could eval to the same error. Inherited from [`Error`](../error).
@@ -39,8 +35,7 @@ Returns code that could eval to the same error. Inherited from [`Error`](../erro
 [`WebAssembly.CompileError.prototype.toString()`](../error/tostring)  
 Returns a string representing the specified `Error` object.. Inherited from [`Error`](../error).
 
-Examples
---------
+## Examples
 
 ### Creating a new CompileError instance
 
@@ -58,8 +53,7 @@ The following snippet creates a new `CompileError` instance, and logs its detail
       console.log(e.stack);                   // returns the location where the code was run
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#exceptiondef-compileerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)<br />
@@ -125,8 +119,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

@@ -1,10 +1,8 @@
-Date.prototype.toISOString()
-============================
+# Date.prototype.toISOString()
 
-The `toISOString()` method returns a string in *simplified* extended ISO format ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)), which is always 24 or 27 characters long (`YYYY-MM-DDTHH:mm:ss.sssZ` or `±YYYYYY-MM-DDTHH:mm:ss.sssZ`, respectively). The timezone is always zero UTC offset, as denoted by the suffix "`Z`".
+The `toISOString()` method returns a string in _simplified_ extended ISO format ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)), which is always 24 or 27 characters long (`YYYY-MM-DDTHH:mm:ss.sssZ` or `±YYYYYY-MM-DDTHH:mm:ss.sssZ`, respectively). The timezone is always zero UTC offset, as denoted by the suffix "`Z`".
 
-Syntax
-------
+## Syntax
 
     toISOString()
 
@@ -12,8 +10,7 @@ Syntax
 
 A string representing the given date in the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format according to universal time.
 
-Examples
---------
+## Examples
 
 ### Using toISOString()
 
@@ -23,14 +20,12 @@ Examples
 
 The above example uses parsing of a non–standard string value that may not be correctly parsed in non–Mozilla browsers.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.toisostring">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.toisostring</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -86,8 +81,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
 -   [`Date.prototype.toTimeString()`](totimestring)

@@ -1,26 +1,21 @@
-SyntaxError: missing } after function body
-==========================================
+# SyntaxError: missing } after function body
 
 The JavaScript exception "missing } after function body" occurs when there is a syntax mistake when creating a function somewhere. Check if any closing curly brackets or parenthesis are in the correct order.
 
-Message
--------
+## Message
 
     SyntaxError: Expected '}' (Edge)
     SyntaxError: missing } after function body (Firefox)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 There is a syntax mistake when creating a function somewhere. Also check if any closing curly brackets or parenthesis are in the correct order. Indenting or formatting the code a bit nicer might also help you to see through the jungle.
 
-Examples
---------
+## Examples
 
 ### Forgotten closing curly bracket
 
@@ -55,8 +50,7 @@ Oftentimes, indenting differently or double checking indentation helps to spot t
       }
     });
 
-See also
---------
+## See also
 
 -   [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 

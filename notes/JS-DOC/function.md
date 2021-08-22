@@ -1,12 +1,10 @@
-function\*
-==========
+# function\*
 
-The `function*` declaration (`function` keyword followed by an asterisk) defines a *generator function*, which returns a [`Generator`](../global_objects/generator) object.
+The `function*` declaration (`function` keyword followed by an asterisk) defines a _generator function_, which returns a [`Generator`](../global_objects/generator) object.
 
 You can also define generator functions using the [`GeneratorFunction`](../global_objects/generatorfunction) constructor, or the function expression syntax.
 
-Syntax
-------
+## Syntax
 
     function* name([param[, param[, ... param]]]) {
        statements
@@ -15,14 +13,13 @@ Syntax
 `name`  
 The function name.
 
- `param` <span class="badge inline optional">Optional</span>   
+`param` <span class="badge inline optional">Optional</span>  
 The name of a formal parameter for the function.
 
 `statements`  
 The statements comprising the body of the function.
 
-Description
------------
+## Description
 
 Generators are functions that can be exited and later re-entered. Their context (variable bindings) will be saved across re-entrances.
 
@@ -34,8 +31,7 @@ A `return` statement in a generator, when executed, will make the generator fini
 Much like a `return` statement, an error thrown inside the generator will make the generator finished -- unless caught within the generator's body.  
 When a generator is finished, subsequent `next()` calls will not execute any of that generator's code, they will just return an object of this form: `{value: undefined, done: true}`.
 
-Examples
---------
+## Examples
 
 ### Simple example
 
@@ -193,8 +189,7 @@ Examples
            //32
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-generator-function-definitions</span></a></td></tr></tbody></table>
@@ -303,8 +298,7 @@ No
 
 7.0
 
-See also
---------
+## See also
 
 -   [`function*`](../operators/function*) expression
 -   [`GeneratorFunction`](../global_objects/generatorfunction) object
@@ -323,4 +317,4 @@ See also
 
 © 2005–2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*</a>

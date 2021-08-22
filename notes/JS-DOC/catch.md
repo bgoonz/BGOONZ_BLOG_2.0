@@ -1,10 +1,8 @@
-Promise.prototype.catch()
-=========================
+# Promise.prototype.catch()
 
 The `catch()` method returns a [`Promise`](../promise) and deals with rejected cases only. It behaves the same as calling [`Promise.prototype.then(undefined, onRejected)`](then) (in fact, calling `obj.catch(onRejected)` internally calls `obj.then(undefined, onRejected)`). This means that you have to provide an `onRejected` function even if you want to fall back to an `undefined` result value - for example `obj.catch(() => {})`.
 
-Syntax
-------
+## Syntax
 
     p.catch(onRejected);
 
@@ -53,13 +51,11 @@ Internally calls `Promise.prototype.then` on the object upon which it was called
     // > > > > > > called .catch on Promise{} with arguments: Arguments{1} [0: function XXX()]
     // > > > > > > called .then on Promise{} with arguments: Arguments{2} [0: undefined, 1: function XXX()]
 
-Description
------------
+## Description
 
 The `catch` method is used for error handling in promise composition. Since it returns a [`Promise`](../promise), it [can be chained](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#chaining_after_a_catch) in the same way as its sister method, [`then()`](then).
 
-Examples
---------
+## Examples
 
 ### Using and chaining the catch method
 
@@ -141,8 +137,7 @@ Examples
         console.log(reason);
     });
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.catch">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-promise.prototype.catch</span></a></td></tr></tbody></table>
@@ -173,8 +168,7 @@ No
 
 2.0
 
-See also
---------
+## See also
 
 -   [`Promise`](../promise)
 -   [`Promise.prototype.then()`](then)

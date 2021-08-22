@@ -1,10 +1,8 @@
-Array.prototype.every()
-=======================
+# Array.prototype.every()
 
 The `every()` method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
 
-Syntax
-------
+## Syntax
 
     // Arrow function
     every((element) => { ... } )
@@ -29,21 +27,20 @@ A function to test for each element, taking three arguments:
 `element`  
 The current element being processed in the array.
 
- `index` <span class="badge inline optional">Optional</span>   
+`index` <span class="badge inline optional">Optional</span>  
 The index of the current element being processed in the array.
 
- `array` <span class="badge inline optional">Optional</span>   
+`array` <span class="badge inline optional">Optional</span>  
 The array `every` was called upon.
 
- `thisArg` <span class="badge inline optional">Optional</span>   
+`thisArg` <span class="badge inline optional">Optional</span>  
 A value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
 `true` if the `callbackFn` function returns a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) value for every array element. Otherwise, `false`.
 
-Description
------------
+## Description
 
 The `every` method executes the provided `callbackFn` function once for each element present in the array until it finds the one where `callbackFn` returns a [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) value. If such an element is found, the `every` method immediately returns `false`. Otherwise, if `callbackFn` returns a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) value for all elements, `every` returns `true`.
 
@@ -61,8 +58,7 @@ The range of elements processed by `every` is set before the first invocation of
 
 `every` acts like the "for all" quantifier in mathematics. In particular, for an empty array, it returns `true`. (It is [vacuously true](https://en.wikipedia.org/wiki/Vacuous_truth) that all elements of the [empty set](https://en.wikipedia.org/wiki/Empty_set#Properties) satisfy any given condition.)
 
-Polyfill
---------
+## Polyfill
 
 `every` was added to the ECMA-262 standard in the 5<sup>th</sup> edition, and it may not be present in other implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of `every` in implementations which do not natively support it.
 
@@ -134,8 +130,7 @@ This algorithm is exactly the one specified in ECMA-262, 5<sup>th</sup> edition,
       };
     }
 
-Examples
---------
+## Examples
 
 ### Testing size of all array elements
 
@@ -207,8 +202,7 @@ The following examples tests the behavior of the `every` method when the array i
     // 1st iteration: [1,2,3][0] -> 1
     // 2nd iteration: [1,2][1] -> 2
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.every">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.every</span></a></td></tr></tbody></table>
@@ -239,8 +233,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.forEach()`](foreach)
 -   [`Array.prototype.some()`](some)

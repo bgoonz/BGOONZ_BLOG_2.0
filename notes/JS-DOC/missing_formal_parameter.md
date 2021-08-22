@@ -1,27 +1,22 @@
-SyntaxError: missing formal parameter
-=====================================
+# SyntaxError: missing formal parameter
 
 The JavaScript exception "missing formal parameter" occurs when your function declaration is missing valid parameters.
 
-Message
--------
+## Message
 
     SyntaxError: missing formal parameter (Firefox)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 "Formal parameter" is a fancy way of saying "function parameter". Your function declaration is missing valid parameters. In the declaration of a function, the parameters must be [identifiers](https://developer.mozilla.org/en-US/docs/Glossary/Identifier), not any value like numbers, strings, or objects. Declaring functions and calling functions are two separate steps. Declarations require identifier as parameters, and only when calling (invoking) the function, you provide the values the function should use.
 
 In [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript), identifiers can contain only alphanumeric characters (or "$" or "\_"), and may not start with a digit. An identifier differs from a **string** in that a string is data, while an identifier is part of the code.
 
-Examples
---------
+## Examples
 
 ### Provide proper function parameters
 
@@ -64,8 +59,7 @@ You can then call these functions with the arguments you like:
 
     log({obj: "value"}); // Object { obj: "value" }
 
-See also
---------
+## See also
 
 -   Other errors regarding formal parameters:
     -   [SyntaxError: Malformed formal parameter](malformed_formal_parameter)

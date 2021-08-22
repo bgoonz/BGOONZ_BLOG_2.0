@@ -1,27 +1,22 @@
-ReferenceError: "x" is not defined
-==================================
+# ReferenceError: "x" is not defined
 
-The JavaScript exception "*variable* is not defined" occurs when there is a non-existent variable referenced somewhere.
+The JavaScript exception "_variable_ is not defined" occurs when there is a non-existent variable referenced somewhere.
 
-Message
--------
+## Message
 
     ReferenceError: "x" is not defined
 
-Error type
-----------
+## Error type
 
 [`ReferenceError`](../global_objects/referenceerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 There is a non-existent variable referenced somewhere. This variable needs to be declared, or you need to make sure it is available in your current script or [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
 
 **Note:** When loading a library (such as jQuery), make sure it is loaded before you access library variables, such as "$". Put the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element that loads the library before your code that uses it.
 
-Examples
---------
+## Examples
 
 ### Variable not declared
 
@@ -55,8 +50,7 @@ However, a function can access all variables and functions defined inside the sc
 
     console.log(numbers()); // 5
 
-See also
---------
+## See also
 
 -   [Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
 -   [Declaring variables in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declaring_variables)

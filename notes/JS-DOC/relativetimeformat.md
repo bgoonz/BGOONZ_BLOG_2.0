@@ -1,22 +1,18 @@
-Intl.RelativeTimeFormat
-=======================
+# Intl.RelativeTimeFormat
 
 The `Intl.RelativeTimeFormat` object enables language-sensitive relative time formatting.
 
-Constructor
------------
+## Constructor
 
 [`Intl.RelativeTimeFormat()`](relativetimeformat/relativetimeformat)  
 Creates a new `Intl.RelativeTimeFormat` object.
 
-Static methods
---------------
+## Static methods
 
 [`Intl.RelativeTimeFormat.supportedLocalesOf()`](relativetimeformat/supportedlocalesof)  
 Returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.
 
-Instance methods
-----------------
+## Instance methods
 
 [`Intl.RelativeTimeFormat.prototype.format()`](relativetimeformat/format)  
 Formats a `value` and a `unit` according to the locale and formatting options of the given [`Intl.RelativeTimeFormat`](relativetimeformat) object.
@@ -27,8 +23,7 @@ Returns an [`Array`](../array) of objects representing the relative time format 
 [`Intl.RelativeTimeFormat.prototype.resolvedOptions()`](relativetimeformat/resolvedoptions)  
 Returns a new object with properties reflecting the locale and formatting options computed during initialization of the object.
 
-Examples
---------
+## Examples
 
 ### Basic format usage
 
@@ -65,19 +60,16 @@ The following example shows how to create a relative time formatter returning fo
     // >  { type: "integer", value: "100", unit: "day" },
     // >  { type: "literal", value: " days" }]
 
-Polyfill
---------
+## Polyfill
 
 [formatjs Intl.RelativeTimeFormat polyfill](https://formatjs.io/docs/polyfills/intl-relativetimeformat)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#relativetimeformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#relativetimeformat-objects</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -263,8 +255,7 @@ No
 
 10.0
 
-See also
---------
+## See also
 
 -   [`Intl`](../intl)
 -   [The Intl.RelativeTimeFormat API](https://developers.google.com/web/updates/2018/10/intl-relativetimeformat)

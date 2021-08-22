@@ -1,10 +1,8 @@
-Intl.DateTimeFormat.prototype.format()
-======================================
+# Intl.DateTimeFormat.prototype.format()
 
 The `Intl.DateTimeFormat.prototype.format()` method formats a date according to the locale and formatting options of this [`Intl.DateTimeFormat`](../datetimeformat) object.
 
-Syntax
-------
+## Syntax
 
     format(date)
 
@@ -13,13 +11,11 @@ Syntax
 `date`  
 The date to format.
 
-Description
------------
+## Description
 
 The `format` getter formats a date into a string according to the locale and formatting options of this [`Intl.DateTimeFormat`](../datetimeformat) object.
 
-Examples
---------
+## Examples
 
 ### Using format
 
@@ -63,8 +59,7 @@ For this reason you cannot expect to be able to compare the results of `format()
 
 **Note:** See also this [StackOverflow thread](https://stackoverflow.com/questions/25574963/ies-tolocalestring-has-strange-characters-in-results) for more details and examples.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.format">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-intl.datetimeformat.prototype.format</span></a></td></tr></tbody></table>
@@ -95,8 +90,7 @@ Specifications
 
 1.5
 
-See also
---------
+## See also
 
 -   [`Intl.DateTimeFormat`](../datetimeformat)
 -   [`Date.prototype.toLocaleString()`](../../date/tolocalestring)

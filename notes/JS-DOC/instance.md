@@ -1,22 +1,18 @@
-WebAssembly.Instance
-====================
+# WebAssembly.Instance
 
 A `WebAssembly.Instance` object is a stateful, executable instance of a [`WebAssembly.Module`](module). `Instance` objects contain all the [Exported WebAssembly functions](https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions) that allow calling into WebAssembly code from JavaScript.
 
-Constructor
------------
+## Constructor
 
 [`WebAssembly.Instance()`](instance/instance)  
 Creates a new `Instance` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`Instance.prototype.exports`](instance/exports)  
 Returns an object containing as its members all the functions exported from the WebAssembly module instance, to allow them to be accessed and used by JavaScript. Read-only.
 
-Examples
---------
+## Examples
 
 ### Synchronously instantiating a WebAssembly module
 
@@ -53,8 +49,7 @@ The preferred way to get an `Instance` is asynchronously, for example using the 
 
 This also demonstrates how the `exports` property is used to access exported functions.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#instances">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#instances</span></a></td></tr></tbody></table>
@@ -149,8 +144,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

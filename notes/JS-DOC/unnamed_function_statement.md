@@ -1,31 +1,26 @@
-SyntaxError: function statement requires a name
-===============================================
+# SyntaxError: function statement requires a name
 
 The JavaScript exception "function statement requires a name" occurs when there is a [function statement](../statements/function) in the code that requires a name.
 
-Message
--------
+## Message
 
     Syntax Error: Expected identifier (Edge)
     SyntaxError: function statement requires a name [Firefox]
     SyntaxError: Unexpected token ( [Chrome]
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 There is a [function statement](../statements/function) in the code that requires a name. You'll need to check how functions are defined and if you need to provide a name for it, or if the function in question needs to be a function expression, an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE), or if the function code is placed correctly in this context at all.
 
-Examples
---------
+## Examples
 
 ### Statements vs expressions
 
-A *[function statement](../statements/function)* (or *function declaration*) requires a name, this won't work:
+A _[function statement](../statements/function)_ (or _function declaration_) requires a name, this won't work:
 
     function () {
       return 'Hello world';
@@ -97,8 +92,7 @@ Correct would be:
       }
     );
 
-See also
---------
+## See also
 
 -   [Functions in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 -   [function statement](../statements/function)

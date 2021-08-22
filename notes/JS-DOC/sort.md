@@ -1,12 +1,10 @@
-Array.prototype.sort()
-======================
+# Array.prototype.sort()
 
-The `sort()` method sorts the elements of an array *[in place](https://en.wikipedia.org/wiki/In-place_algorithm)* and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+The `sort()` method sorts the elements of an array _[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_ and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
 
 The time and space complexity of the sort cannot be guaranteed as it depends on the implementation.
 
-Syntax
-------
+## Syntax
 
     // Functionless
     sort()
@@ -22,7 +20,7 @@ Syntax
 
 ### Parameters
 
- `compareFunction` <span class="badge inline optional">Optional</span>   
+`compareFunction` <span class="badge inline optional">Optional</span>  
 Specifies a function that defines the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
 
 `firstEl`  
@@ -33,10 +31,9 @@ The second element for comparison.
 
 ### Return value
 
-The sorted array. Note that the array is sorted *[in place](https://en.wikipedia.org/wiki/In-place_algorithm)*, and no copy is made.
+The sorted array. Note that the array is sorted _[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_, and no copy is made.
 
-Description
------------
+## Description
 
 If `compareFunction` is not supplied, all non-`undefined` array elements are sorted by converting them to strings and comparing strings in UTF-16 code units order. For example, "banana" comes before "cherry". In a numeric sort, 9 comes before 80, but because numbers are converted to strings, "80" comes before "9" in the Unicode order. All `undefined` elements are sorted to the end of the array.
 
@@ -117,8 +114,7 @@ Arrays of objects can be sorted by comparing the value of one of their propertie
       return 0;
     });
 
-Examples
---------
+## Examples
 
 ### Creating, displaying, and sorting an array
 
@@ -223,14 +219,12 @@ Before version 10 (or EcmaScript 2019), sort stabiliy was not guaranteed, meanin
       { name: "Alex",   grade: 15 }, // original order not maintained
     ];
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.sort">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.sort</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -312,8 +306,7 @@ No
 
 10.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.reverse()`](reverse)
 -   [`String.prototype.localeCompare()`](../string/localecompare)

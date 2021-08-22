@@ -1,10 +1,8 @@
-isNaN()
-=======
+# isNaN()
 
 The `isNaN()` function determines whether a value is [`NaN`](nan) or not. Because coercion inside the `isNaN` function can be [surprising](#confusing_special-case_behavior), you may alternatively want to use [`Number.isNaN()`](number/isnan).
 
-Syntax
-------
+## Syntax
 
     isNaN(value)
 
@@ -17,16 +15,15 @@ The value to be tested.
 
 `true` if the given value is [`NaN`](nan); otherwise, `false`.
 
-Description
------------
+## Description
 
 ### The necessity of an isNaN function
 
-Unlike all other possible values in JavaScript, it is not possible to use the equality operators (== and ===) to compare a value against [`NaN`](nan) to determine whether the value *is* `NaN` or not, because both `NaN == NaN` and `NaN === NaN` evaluate to `false`. Hence, the necessity of an `isNaN` function.
+Unlike all other possible values in JavaScript, it is not possible to use the equality operators (== and ===) to compare a value against [`NaN`](nan) to determine whether the value _is_ `NaN` or not, because both `NaN == NaN` and `NaN === NaN` evaluate to `false`. Hence, the necessity of an `isNaN` function.
 
 ### Origin of NaN values
 
-`NaN` values are generated when arithmetic operations result in *undefined* or *unrepresentable* values. Such values do not necessarily represent overflow conditions. A `NaN` also results from attempted coercion to numeric values of non-numeric values for which no primitive numeric value is available.
+`NaN` values are generated when arithmetic operations result in _undefined_ or _unrepresentable_ values. Such values do not necessarily represent overflow conditions. A `NaN` also results from attempted coercion to numeric values of non-numeric values for which no primitive numeric value is available.
 
 For example, dividing zero by zero results in a `NaN` — but dividing other numbers by zero does not.
 
@@ -43,8 +40,7 @@ A polyfill for `isNaN` would be (the polyfill leverages the unique never-equal-t
         return n !== n;
     };
 
-Examples
---------
+## Examples
 
     isNaN(NaN);       // true
     isNaN(undefined); // true
@@ -76,8 +72,7 @@ There is a more usage oriented way to think of `isNaN()`: If `isNaN(x)` returns 
 
 You can use this, for example, to test whether an argument to a function is arithmetically processable (usable "like" a number), or if it's not and you have to provide a default value or something else. This way you can have a function that makes use of the full versatility JavaScript provides by implicitly converting values depending on context.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-isnan-number">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'isNaN' in that specification.</span></a></td></tr></tbody></table>
@@ -108,8 +103,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`NaN`](nan)
 -   [`Number.isNaN()`](number/isnan)

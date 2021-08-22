@@ -1,10 +1,8 @@
-Function.prototype.bind()
-=========================
+# Function.prototype.bind()
 
 The `bind()` method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
 
-Syntax
-------
+## Syntax
 
     bind(thisArg)
     bind(thisArg, arg1)
@@ -16,17 +14,16 @@ Syntax
 `thisArg`  
 The value to be passed as the `this` parameter to the target function `func` when the bound function is called. The value is ignored if the bound function is constructed using the [`new`](../../operators/new) operator. When using `bind` to create a function (supplied as a callback) inside a `setTimeout`, any primitive value passed as `thisArg` is converted to object. If no arguments are provided to `bind `, or if the `thisArg` is `null` or `undefined`, the `this` of the executing scope is treated as the `thisArg` for the new function.
 
- `arg1, arg2, ...argN` <span class="badge inline optional">Optional</span>   
+`arg1, arg2, ...argN` <span class="badge inline optional">Optional</span>  
 Arguments to prepend to arguments provided to the bound function when invoking `func`.
 
 ### Return value
 
 A copy of the given function with the specified `this` value, and initial arguments (if provided).
 
-Description
------------
+## Description
 
-The `bind()` function creates a new **bound function**, which is an *exotic function object* (a term from ECMAScript 2015) that wraps the original function object. Calling the bound function generally results in the execution of its wrapped function.
+The `bind()` function creates a new **bound function**, which is an _exotic function object_ (a term from ECMAScript 2015) that wraps the original function object. Calling the bound function generally results in the execution of its wrapped function.
 
 A bound function has the following internal properties:
 
@@ -46,8 +43,7 @@ When a bound function is called, it calls internal method `[[Call]]` on `[[Bound
 
 A bound function may also be constructed using the [`new`](../../operators/new) operator. Doing so acts as though the target function had instead been constructed. The provided `this` value is ignored, while prepended arguments are provided to the emulated function.
 
-Examples
---------
+## Examples
 
 ### Creating a bound function
 
@@ -216,8 +212,7 @@ In the following piece of code, `slice()` is a bound function to the [`apply()`]
 
     slice(arguments);
 
-Polyfill
---------
+## Polyfill
 
 Because older browsers are generally also slower browsers, it is far more critical than most people recognize to create performance polyfills to make the browsing experience in outdated browsers slightly less horrible.
 
@@ -293,8 +288,7 @@ If you choose to use this partial implementation, **you must not rely on those c
 
 **If it's absolutely necessary and performance is not a concern**, a far slower (but more specification-compliant solution) can be found at <https://github.com/Raynos/function-bind>.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.bind">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-function.prototype.bind</span></a></td></tr></tbody></table>
@@ -325,8 +319,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Function.prototype.apply()`](apply)
 -   [`Function.prototype.call()`](call)

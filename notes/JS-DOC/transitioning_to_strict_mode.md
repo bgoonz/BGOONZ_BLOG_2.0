@@ -1,17 +1,14 @@
-Transitioning to strict mode
-============================
+# Transitioning to strict mode
 
 ECMAScript 5 introduced [strict mode](../strict_mode) which is now implemented in all major browsers (including IE10). While making web browsers interpret code as strict is easy (just add `'use strict';` at the top of your source code), transitioning an existing code base to strict mode requires a bit more work.
 
 This article aims at providing guidance for developers.
 
-Gradual transition
-------------------
+## Gradual transition
 
 Strict mode has been designed so that the transition to it can be made gradually. It is possible to change each file individually and even to transition code to strict mode down to the function granularity.
 
-Differences from non-strict to strict
--------------------------------------
+## Differences from non-strict to strict
 
 ### Syntax errors
 
@@ -102,8 +99,7 @@ In non-strict mode, modifying a value in the `arguments` object modifies the cor
 
 In strict mode code, `eval` doesn't create a new variable in the scope from which it was called. Also, of course, in strict mode, the string is evaluated with strict mode rules. Thorough testing will need to be performed to make sure nothing breaks. Not using eval if you don't really need it may be another pragmatic solution.
 
-Strictness-neutral code
------------------------
+## Strictness-neutral code
 
 A potential "downside" of moving strict code to strict mode is that the semantics may be different in legacy browsers which do not implement strict mode. In some rare occasions (like bad concatenation or minification), your code also may not run in the mode you wrote and tested it in. Here are the rules to make your code strictness-neutral:
 
@@ -115,8 +111,7 @@ A potential "downside" of moving strict code to strict mode is that the semantic
         as the first line of your function
     3.  `this`: only use `this` when it refers to an object you created.
 
-See also
---------
+## See also
 
 -   [Strict mode](../strict_mode)
 

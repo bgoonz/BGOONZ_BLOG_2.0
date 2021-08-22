@@ -1,10 +1,8 @@
-Map
-===
+# Map
 
 The `Map` object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)) may be used as either a key or a value.
 
-Description
------------
+## Description
 
 A `Map` object iterates its elements in insertion order — a [`for...of`](../statements/for...of) loop returns an array of `[key, value]` for each iteration.
 
@@ -12,7 +10,7 @@ A `Map` object iterates its elements in insertion order — a [`for...of`](../st
 
 -   Key equality is based on the [`sameValueZero`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm.
 -   [`NaN`](nan) is considered the same as `NaN` (even though `NaN !== NaN`) and all other values are considered equal according to the semantics of the `===` operator.
--   In the current ECMAScript specification, `-0` and `+0` are considered equal, although this was not so in earlier drafts. See *"Value equality for -0 and 0"* in the [Browser compatibility](#browser_compatibility) table for details.
+-   In the current ECMAScript specification, `-0` and `+0` are considered equal, although this was not so in earlier drafts. See _"Value equality for -0 and 0"_ in the [Browser compatibility](#browser_compatibility) table for details.
 
 ### Objects vs. Maps
 
@@ -52,26 +50,22 @@ The correct usage for storing data in the Map is through the `set(key, value)` m
     contacts.delete('Jessie') // true
     console.log(contacts.size) // 1
 
-Constructor
------------
+## Constructor
 
 [`Map()`](map/map)  
 Creates a new `Map` object.
 
-Static properties
------------------
+## Static properties
 
 [`get Map[@@species]`](map/@@species)  
 The constructor function that is used to create derived objects.
 
-Instance properties
--------------------
+## Instance properties
 
 [`Map.prototype.size`](map/size)  
 Returns the number of key/value pairs in the `Map` object.
 
-Instance methods
-----------------
+## Instance methods
 
 [`Map.prototype.clear()`](map/clear)  
 Removes all key-value pairs from the `Map` object.
@@ -102,11 +96,10 @@ Returns a new Iterator object that contains the **values** for each element in t
 [`Map.prototype.entries()`](map/entries)  
 Returns a new Iterator object that contains `[key, value]` for each element in the `Map` object in insertion order.
 
-[`Map.prototype.forEach(callbackFn[,     thisArg])`](map/foreach)  
+[`Map.prototype.forEach(callbackFn[, thisArg])`](map/foreach)  
 Calls `callbackFn` once for each key-value pair present in the `Map` object, in insertion order. If a `thisArg` parameter is provided to `forEach`, it will be used as the `this` value for each callback.
 
-Examples
---------
+## Examples
 
 ### Using the Map object
 
@@ -220,7 +213,7 @@ Just like `Array`s, `Map`s can be cloned:
     console.log(clone.get(1))       // one
     console.log(original === clone) // false (useful for shallow comparison)
 
-**Note:** Keep in mind that *the data itself* is not cloned.
+**Note:** Keep in mind that _the data itself_ is not cloned.
 
 Maps can be merged, maintaining key uniqueness:
 
@@ -263,8 +256,7 @@ Maps can be merged with Arrays, too:
     console.log(merged.get(2)) // dos
     console.log(merged.get(3)) // three
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-map-objects">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Map' in that specification.</span></a></td></tr></tbody></table>
@@ -707,8 +699,7 @@ No
 
 4.0
 
-See also
---------
+## See also
 
 -   [`Set`](set)
 -   [`WeakMap`](weakmap)

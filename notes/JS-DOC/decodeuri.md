@@ -1,10 +1,8 @@
-decodeURI()
-===========
+# decodeURI()
 
 The `decodeURI()` function decodes a Uniform Resource Identifier (URI) previously created by [`encodeURI()`](encodeuri) or by a similar routine.
 
-Syntax
-------
+## Syntax
 
     decodeURI(encodedURI)
 
@@ -21,13 +19,11 @@ A new string representing the unencoded version of the given encoded Uniform Res
 
 Throws an [`URIError`](urierror) ("malformed URI sequence") exception when `encodedURI` contains invalid character sequences.
 
-Description
------------
+## Description
 
 Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by [`encodeURI`](encodeuri). The character “`#`” is not decoded from escape sequences.
 
-Examples
---------
+## Examples
 
 ### Decoding a Cyrillic URL
 
@@ -44,8 +40,7 @@ Examples
 
     // URIError: malformed URI sequence
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuri-encodeduri">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-decodeuri-encodeduri</span></a></td></tr></tbody></table>
@@ -76,8 +71,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`decodeURIComponent()`](decodeuricomponent)
 -   [`encodeURI()`](encodeuri)

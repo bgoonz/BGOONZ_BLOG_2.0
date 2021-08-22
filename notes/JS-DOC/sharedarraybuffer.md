@@ -1,10 +1,8 @@
-SharedArrayBuffer
-=================
+# SharedArrayBuffer
 
 The `SharedArrayBuffer` object is used to represent a generic, fixed-length raw binary data buffer, similar to the [`ArrayBuffer`](arraybuffer) object, but in a way that they can be used to create views on shared memory. Unlike an `ArrayBuffer`, a `SharedArrayBuffer` cannot become detached.
 
-Description
------------
+## Description
 
 ### Allocating and sharing memory
 
@@ -27,7 +25,7 @@ Shared memory can be created and updated simultaneously in workers or the main t
 
 ### Security requirements
 
-Shared memory and high-resolution timers were effectively [disabled at the start of 2018](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/) in light of [Spectre](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)). In 2020, a new, secure approach has been standardized to re-enable shared memory. With a few security measures, `postMessage()` will no longer throw for `SharedArrayBuffer` objects and shared memory across threads will be available:
+Shared memory and high-resolution timers were effectively [disabled at the start of 2018](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/) in light of [Spectre](<https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)>). In 2020, a new, secure approach has been standardized to re-enable shared memory. With a few security measures, `postMessage()` will no longer throw for `SharedArrayBuffer` objects and shared memory across threads will be available:
 
 As a baseline requirement, your document needs to be in a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
 
@@ -61,26 +59,22 @@ See also [Planned changes to shared memory](sharedarraybuffer/planned_changes) w
 
     var sab = new SharedArrayBuffer(1024);
 
-Constructor
------------
+## Constructor
 
 [`SharedArrayBuffer()`](sharedarraybuffer/sharedarraybuffer)  
 Creates a new `SharedArrayBuffer` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`SharedArrayBuffer.prototype.byteLength`](sharedarraybuffer/bytelength)  
 The size, in bytes, of the array. This is established when the array is constructed and cannot be changed. **Read only.**
 
-Instance methods
-----------------
+## Instance methods
 
 [`SharedArrayBuffer.prototype.slice(begin, end)`](sharedarraybuffer/slice)  
 Returns a new `SharedArrayBuffer` whose contents are a copy of this `SharedArrayBuffer`'s bytes from `begin`, inclusive, up to `end`, exclusive. If either `begin` or `end` is negative, it refers to an index from the end of the array, as opposed to from the beginning.
 
-Examples
---------
+## Examples
 
 ### Creating a new SharedArrayBuffer
 
@@ -101,14 +95,12 @@ Examples
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
     gl.bufferData(gl.ARRAY_BUFFER, sab, gl.STATIC_DRAW);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-sharedarraybuffer-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-sharedarraybuffer-objects</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -378,8 +370,7 @@ No
 
 Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-See also
---------
+## See also
 
 -   [`Atomics`](atomics)
 -   [`ArrayBuffer`](arraybuffer)

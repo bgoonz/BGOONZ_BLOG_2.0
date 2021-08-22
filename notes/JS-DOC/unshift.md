@@ -1,10 +1,8 @@
-Array.prototype.unshift()
-=========================
+# Array.prototype.unshift()
 
 The `unshift()` method adds one or more elements to the beginning of an array and returns the new length of the array.
 
-Syntax
-------
+## Syntax
 
     unshift(element0)
     unshift(element0, element1)
@@ -19,8 +17,7 @@ The elements to add to the front of the `arr`.
 
 The new [`length`](length) property of the object upon which the method was called.
 
-Description
------------
+## Description
 
 The `unshift` method inserts the given values to the beginning of an array-like object.
 
@@ -45,8 +42,7 @@ See example:
     console.log(arr)
     // [3, 2, 1, 4, 5, 6]
 
-Examples
---------
+## Examples
 
 ### Using unshift
 
@@ -64,14 +60,12 @@ Examples
     arr.unshift([-7, -6], [-5])  // the new array length is 8
     // arr is [ [-7, -6], [-5], [-4, -3], -2, -1, 0, 1, 2 ]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.unshift">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.unshift</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -127,8 +121,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.push()`](push)
 -   [`Array.prototype.pop()`](pop)

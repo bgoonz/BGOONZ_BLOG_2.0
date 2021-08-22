@@ -1,19 +1,17 @@
-WebAssembly.Module.customSections()
-===================================
+# WebAssembly.Module.customSections()
 
 The `WebAssembly.customSections()` function returns a copy of the contents of all custom sections in the given module with the given string name.
 
-Syntax
-------
+## Syntax
 
     WebAssembly.Module.customSections(module, sectionName)
 
 ### Parameters
 
-*module*  
+_module_  
 The [`WebAssembly.Module`](../module) object whose custom sections are being considered.
 
-*sectionName*  
+_sectionName_  
 The string name of the desired custom section.
 
 ### Return value
@@ -24,8 +22,7 @@ A (possibly empty) array containing [`ArrayBuffer`](https://developer.mozilla.or
 
 If `module` is not a [`WebAssembly.Module`](../module) object instance, a [`TypeError`](../../typeerror) is thrown.
 
-Description
------------
+## Description
 
 A wasm module is comprised of a sequence of **sections**. Most of these sections are fully specified and validated by the wasm spec, but modules can also contain **custom sections** that are ignored and skipped over during validation. (Read [High level structure](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#high-level-structure) for information on section structures, and how normal sections ("known sections") and custom sections are distinguished.)
 
@@ -35,8 +32,7 @@ Note that the WebAssembly text format currently doesn't have a syntax specified 
 
     wast2wasm simple-name-section.was -o simple-name-section.wasm --debug-names
 
-Examples
---------
+## Examples
 
 ### Using customSections
 
@@ -53,8 +49,7 @@ We then do a check using `WebAssembly.Module.customSections`, looking to see whe
       };
     });
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-customsections">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#dom-module-customsections</span></a></td></tr></tbody></table>
@@ -89,8 +84,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

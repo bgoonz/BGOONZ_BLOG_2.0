@@ -1,10 +1,8 @@
-Math.pow()
-==========
+# Math.pow()
 
 The `Math.pow()` function returns the `base` to the `exponent` power, as in `baseexponent`.
 
-Syntax
-------
+## Syntax
 
     Math.pow(base, exponent)
 
@@ -20,15 +18,13 @@ The exponent used to raise the `base`.
 
 A number representing the given base taken to the power of the given exponent.
 
-Description
------------
+## Description
 
 The `Math.pow()` function returns the `base` to the `exponent` power, as in `baseexponent`, the `base` and the `exponent` are in decimal numeral system.
 
 Because `pow()` is a static method of `Math`, use it as `Math.pow()`, rather than as a method of a `Math` object you created. (`Math` has no constructor.) If the base is negative and the exponent is not an integer, the result is NaN.
 
-Examples
---------
+## Examples
 
 ### Using Math.pow()
 
@@ -53,14 +49,12 @@ Examples
     // negative bases with fractional exponents always return NaN
     Math.pow(-7, 1/3); // NaN
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.pow">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.pow</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -116,8 +110,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.cbrt()`](cbrt)
 -   [`Math.exp()`](exp)

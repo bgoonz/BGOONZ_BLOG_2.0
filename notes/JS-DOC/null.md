@@ -1,15 +1,12 @@
-null
-====
+# null
 
 The value `null` represents the intentional absence of any object value. It is one of JavaScript's [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) and is treated as [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) for boolean operations.
 
-Syntax
-------
+## Syntax
 
     null
 
-Description
------------
+## Description
 
 The value `null` is written with a literal: `null`. `null` is not an identifier for a property of the global object, like [`undefined`](undefined) can be. Instead, `null` expresses a lack of identification, indicating that a variable points to no object. In APIs, `null` is often retrieved in a place where an object can be expected but no object is relevant.
 
@@ -20,8 +17,7 @@ The value `null` is written with a literal: `null`. `null` is not an identifier 
     var foo = null;
     foo; //null
 
-Examples
---------
+## Examples
 
 ### Difference between `null` and `undefined`
 
@@ -37,14 +33,12 @@ When checking for `null` or `undefined`, beware of the [differences between equa
     isNaN(1 + null)      // false
     isNaN(1 + undefined) // true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-null-value">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-null-value</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -100,8 +94,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`undefined`](undefined)
 -   [`NaN`](nan)

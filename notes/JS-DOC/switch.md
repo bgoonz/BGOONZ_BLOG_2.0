@@ -1,10 +1,8 @@
-switch
-======
+# switch
 
 The `switch` statement evaluates an [expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators), matching the expression's value to a `case` clause, and executes [statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements) associated with that `case`, as well as statements in `case`s that follow the matching `case`.
 
-Syntax
-------
+## Syntax
 
     switch (expression) {
       case value1:
@@ -29,14 +27,13 @@ Syntax
 `expression`  
 An expression whose result is matched against each `case` clause.
 
- `case valueN` <span class="badge inline optional">Optional</span>   
+`case valueN` <span class="badge inline optional">Optional</span>  
 A `case` clause used to match against `expression`. If the `expression` matches the specified `valueN`, the statements inside the `case` clause are executed until either the end of the `switch` statement or a `break`.
 
- `default` <span class="badge inline optional">Optional</span>   
+`default` <span class="badge inline optional">Optional</span>  
 A `default` clause; if provided, this clause is executed if the value of `expression` doesn't match any of the `case` clauses.
 
-Description
------------
+## Description
 
 A `switch` statement first evaluates its expression. It then looks for the first `case` clause whose expression evaluates to the same value as the result of the input expression (using the [strict comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators), `===`) and transfers control to that clause, executing the associated statements. (If multiple `case`s match the provided value, the first `case` that matches is selected, even if the `case`s are not equal to each other.)
 
@@ -44,8 +41,7 @@ If no matching `case` clause is found, the program looks for the optional `defau
 
 The optional `break` statement associated with each `case` label ensures that the program breaks out of `switch` once the matched statement is executed and continues execution at the statement following `switch`. If `break` is omitted, the program continues execution at the next statement in the `switch` statement. The `break` statement is not required if a `return` statement precedes it.
 
-Examples
---------
+## Examples
 
 ### Using `switch`
 
@@ -218,14 +214,12 @@ We can easily fix this by wrapping our `case` clauses with brackets:
 
 This code will now output `hello` in the console as it should, without any errors at all.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-switch-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-switch-statement</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -281,8 +275,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`if...else`](if...else)
 

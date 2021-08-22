@@ -1,10 +1,8 @@
-String
-======
+# String
 
 The `String` object is used to represent and manipulate a sequence of characters.
 
-Description
------------
+## Description
 
 Strings are useful for holding data that can be represented in text form. Some of the most-used operations on strings are to check their [`length`](string/length), to build and concatenate them using the [+ and += string operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators), checking for the existence or location of substrings with the [`indexOf()`](string/indexof) method, or extracting substrings with the [`substring()`](string/substring) method.
 
@@ -117,37 +115,33 @@ That form looks like this:
 
 Both of the above methods result in identical strings.
 
-Constructor
------------
+## Constructor
 
 [`String()`](string/string)  
 Creates a new `String` object. It performs type conversion when called as a function, rather than as a constructor, which is usually more useful.
 
-Static methods
---------------
+## Static methods
 
-[`String.fromCharCode(num1 [, ...[,     numN]])`](string/fromcharcode)  
+[`String.fromCharCode(num1 [, ...[, numN]])`](string/fromcharcode)  
 Returns a string created by using the specified sequence of Unicode values.
 
-[`String.fromCodePoint(num1 [, ...[,     numN)`](string/fromcodepoint)  
+[`String.fromCodePoint(num1 [, ...[, numN)`](string/fromcodepoint)  
 Returns a string created by using the specified sequence of code points.
 
 [`String.raw()`](string/raw)  
 Returns a string created from a raw template string.
 
-Instance properties
--------------------
+## Instance properties
 
 [`String.prototype.length`](string/length)  
 Reflects the `length` of the string. Read-only.
 
-Instance methods
-----------------
+## Instance methods
 
- [`String.prototype.at(index)`](string/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>   
+[`String.prototype.at(index)`](string/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>  
 Returns the character (exactly one UTF-16 code unit) at the specified `index`. Accepts negative integers, which count back from the last string character.
 
- [`String.prototype.charAt(index)`](string/charat)   
+[`String.prototype.charAt(index)`](string/charat)  
 Returns the character (exactly one UTF-16 code unit) at the specified `index`.
 
 [`String.prototype.charCodeAt(index)`](string/charcodeat)  
@@ -156,7 +150,7 @@ Returns a number that is the UTF-16 code unit value at the given `index`.
 [`String.prototype.codePointAt(pos)`](string/codepointat)  
 Returns a nonnegative integer Number that is the code point value of the UTF-16 encoded code point starting at the specified `pos`.
 
-[`String.prototype.concat(str [,     ...strN ])`](string/concat)  
+[`String.prototype.concat(str [, ...strN ])`](string/concat)  
 Combines the text of two (or more) strings and returns a new string.
 
 [`String.prototype.includes(searchString [, position])`](string/includes)  
@@ -168,13 +162,13 @@ Determines whether a string ends with the characters of the string `searchString
 [`String.prototype.indexOf(searchValue [, fromIndex])`](string/indexof)  
 Returns the index within the calling [`String`](string) object of the first occurrence of `searchValue`, or `-1` if not found.
 
- [`String.prototype.lastIndexOf(searchValue [, fromIndex])`](string/lastindexof)   
+[`String.prototype.lastIndexOf(searchValue [, fromIndex])`](string/lastindexof)  
 Returns the index within the calling [`String`](string) object of the last occurrence of `searchValue`, or `-1` if not found.
 
-[`String.prototype.localeCompare(compareString [, locales [,     options]])`](string/localecompare)  
+[`String.prototype.localeCompare(compareString [, locales [, options]])`](string/localecompare)  
 Returns a number indicating whether the reference string `compareString` comes before, after, or is equivalent to the given string in sort order.
 
- [`String.prototype.match(regexp)`](string/match)   
+[`String.prototype.match(regexp)`](string/match)  
 Used to match regular expression `regexp` against a string.
 
 [`String.prototype.matchAll(regexp)`](string/matchall)  
@@ -189,7 +183,7 @@ Pads the current string from the end with a given string and returns a new strin
 [`String.prototype.padStart(targetLength [, padString])`](string/padstart)  
 Pads the current string from the start with a given string and returns a new string of the length `targetLength`.
 
- [`String.prototype.repeat(count)`](string/repeat)   
+[`String.prototype.repeat(count)`](string/repeat)  
 Returns a string consisting of the elements of the object repeated `count` times.
 
 [`String.prototype.replace(searchFor, replaceWith)`](string/replace)  
@@ -201,10 +195,10 @@ Used to replace all occurrences of `searchFor` using `replaceWith`. `searchFor` 
 [`String.prototype.search(regexp)`](string/search)  
 Search for a match between a regular expression `regexp` and the calling string.
 
-[`String.prototype.slice(beginIndex[,     endIndex])`](string/slice)  
+[`String.prototype.slice(beginIndex[, endIndex])`](string/slice)  
 Extracts a section of a string and returns a new string.
 
-[`String.prototype.split([sep [,     limit] ])`](string/split)  
+[`String.prototype.split([sep [, limit] ])`](string/split)  
 Returns an array of strings populated by splitting the calling string at occurrences of the substring `sep`.
 
 [`String.prototype.startsWith(searchString [, length])`](string/startswith)  
@@ -213,12 +207,12 @@ Determines whether the calling string begins with the characters of string `sear
 [`String.prototype.substring(indexStart [, indexEnd])`](string/substring)  
 Returns a new string containing characters of the calling string from (or between) the specified index (or indeces).
 
- [`String.prototype.toLocaleLowerCase( [locale, ...locales])`](string/tolocalelowercase)   
+[`String.prototype.toLocaleLowerCase( [locale, ...locales])`](string/tolocalelowercase)  
 The characters within a string are converted to lowercase while respecting the current locale.
 
 For most languages, this will return the same as [`toLowerCase()`](string/tolowercase).
 
- [`String.prototype.toLocaleUpperCase( [locale, ...locales])`](string/tolocaleuppercase)   
+[`String.prototype.toLocaleUpperCase( [locale, ...locales])`](string/tolocaleuppercase)  
 The characters within a string are converted to uppercase while respecting the current locale.
 
 For most languages, this will return the same as [`toUpperCase()`](string/touppercase).
@@ -247,8 +241,7 @@ Returns the primitive value of the specified object. Overrides the [`Object.prot
 [`String.prototype.@@iterator()`](string/@@iterator)  
 Returns a new iterator object that iterates over the code points of a String value, returning each code point as a String value.
 
-HTML wrapper methods
---------------------
+## HTML wrapper methods
 
 **Warning:** Deprecated. Avoid these methods.
 
@@ -293,8 +286,7 @@ They are of limited use, as they provide only a subset of the available HTML tag
 [`String.prototype.sup()`](string/sup)  
 [`<sup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup)
 
-Examples
---------
+## Examples
 
 ### String conversion
 
@@ -305,14 +297,12 @@ It's possible to use `String` as a more reliable [`toString()`](string/tostring)
       outputStrings.push(String(inputValues[i]));
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string-objects</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -1832,8 +1822,7 @@ A placeholder property named `iterator` is used.
 
 3.0
 
-See also
---------
+## See also
 
 -   [Text formatting in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting)
 -   [`RegExp`](regexp)

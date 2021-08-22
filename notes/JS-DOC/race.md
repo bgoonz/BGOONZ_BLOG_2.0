@@ -1,10 +1,8 @@
-Promise.race()
-==============
+# Promise.race()
 
 The `Promise.race()` method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise.
 
-Syntax
-------
+## Syntax
 
     Promise.race(iterable);
 
@@ -17,8 +15,7 @@ An iterable object, such as an [`Array`](../array). See [iterable](../../iterati
 
 A **pending** [`Promise`](../promise) that **asynchronously** yields the value of the first promise in the given iterable to fulfill or reject.
 
-Description
------------
+## Description
 
 The `race` function returns a `Promise` that is settled the same way (and takes the same value) as the first promise that settles amongst the promises of the iterable passed as an argument.
 
@@ -26,8 +23,7 @@ If the iterable passed is empty, the promise returned will be forever pending.
 
 If the iterable contains one or more non-promise value and/or an already settled promise, then `Promise.race` will resolve to the first of these values found in the iterable.
 
-Examples
---------
+## Examples
 
 ### Asynchronicity of Promise.race
 
@@ -174,14 +170,12 @@ If the iterable contains one or more non-promise value and/or an already settled
     });
     // expected output: "succeeded with value: one"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.race">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-promise.race</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -237,8 +231,7 @@ No
 
 2.0
 
-See also
---------
+## See also
 
 -   [`Promise`](../promise)
 -   [`Promise.all()`](all)

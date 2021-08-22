@@ -1,10 +1,8 @@
-Date.prototype.toJSON()
-=======================
+# Date.prototype.toJSON()
 
 The `toJSON()` method returns a string representation of the [`Date`](../date) object.
 
-Syntax
-------
+## Syntax
 
     toJSON()
 
@@ -12,13 +10,11 @@ Syntax
 
 A string representation of the given date.
 
-Description
------------
+## Description
 
 [`Date`](../date) instances refer to a specific point in time. Calling `toJSON()` returns a string (using [`toISOString()`](toisostring)) representing the [`Date`](../date) object's value. This method is generally intended to, by default, usefully serialize [`Date`](../date) objects during [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON) serialization.
 
-Examples
---------
+## Examples
 
 ### Using toJSON()
 
@@ -27,14 +23,12 @@ Examples
 
     console.log(jsonDate); //2015-10-26T07:46:36.611Z
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tojson">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.tojson</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -90,8 +84,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
 -   [`Date.prototype.toTimeString()`](totimestring)

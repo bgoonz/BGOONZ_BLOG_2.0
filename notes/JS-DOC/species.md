@@ -1,10 +1,8 @@
-Symbol.species
-==============
+# Symbol.species
 
 The well-known symbol `Symbol.species` specifies a function-valued property that the constructor function uses to create derived objects.
 
-Description
------------
+## Description
 
 The `species` accessor property allows subclasses to override the default constructor for objects.
 
@@ -22,8 +20,7 @@ Configurable
 
 no
 
-Examples
---------
+## Examples
 
 ### Using species
 
@@ -39,14 +36,12 @@ You might want to return [`Array`](../array) objects in your derived array class
     console.log(mapped instanceof MyArray); // false
     console.log(mapped instanceof Array);   // true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.species">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-symbol.species</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -102,8 +97,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`Map[@@species]`](../map/@@species)
 -   [`Set[@@species]`](../set/@@species)

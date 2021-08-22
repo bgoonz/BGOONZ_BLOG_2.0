@@ -1,10 +1,8 @@
-Destructuring assignment
-========================
+# Destructuring assignment
 
 The **destructuring assignment** syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
-Syntax
-------
+## Syntax
 
     let a, b, rest;
     [a, b] = [10, 20];
@@ -26,10 +24,9 @@ Syntax
     console.log(b); // 20
     console.log(rest); // {c: 30, d: 40}
 
-Description
------------
+## Description
 
-The object and array literal expressions provide an easy way to create *ad hoc* packages of data.
+The object and array literal expressions provide an easy way to create _ad hoc_ packages of data.
 
     const x = [1, 2, 3, 4, 5];
 
@@ -49,8 +46,7 @@ Similarly, you can destructure arrays on the left-hand side of the assignment
 
 This capability is similar to features present in languages such as Perl and Python.
 
-Examples
---------
+## Examples
 
 ### Array destructuring
 
@@ -381,8 +377,7 @@ When deconstructing an object, if a property is not accessed in itself, it will 
     // self "123"
     // prot "456" (Access to the prototype chain)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-destructuring-assignment">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-destructuring-assignment</span></a></td></tr></tbody></table>
@@ -497,8 +492,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
 -   ["ES6 in Depth: Destructuring" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)

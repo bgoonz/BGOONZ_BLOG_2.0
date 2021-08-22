@@ -1,12 +1,10 @@
-Math.asin()
-===========
+# Math.asin()
 
 The `Math.asin()` function returns the arcsine (in radians) of a number, that is
 
 $$\\forall x \\in \\lbrack{- 1};1\\rbrack,\\;\\mathtt{\\operatorname{Math.asin}(x)} = \\arcsin(x) = \\text{the\\ unique}\\; y \\in \\left\\lbrack {- \\frac{\\pi}{2};\\frac{\\pi}{2}} \\right\\rbrack\\,\\text{such\\ that}\\;\\sin(y) = x$$
 
-Syntax
-------
+## Syntax
 
     Math.asin(x)
 
@@ -19,15 +17,13 @@ A number.
 
 The arcsine (in radians) of the given number if it's between **-1** and **1**; otherwise, [`NaN`](../nan).
 
-Description
------------
+## Description
 
 The `Math.asin()` method returns a numeric value between $- \\frac{\\pi}{2}$ and $\\frac{\\pi}{2}$ radians for x between -1 and 1. If the value of x is outside this range, it returns [`NaN`](../nan).
 
 Because `asin()` is a static method of `Math`, you always use it as `Math.asin()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.asin()
 
@@ -40,8 +36,7 @@ Examples
 
 For values less than -1 or greater than 1, `Math.asin()` returns [`NaN`](../nan).
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asin">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.asin</span></a></td></tr></tbody></table>
@@ -72,8 +67,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.acos()`](acos)
 -   [`Math.atan()`](atan)

@@ -1,10 +1,8 @@
-Date.prototype.getUTCMilliseconds()
-===================================
+# Date.prototype.getUTCMilliseconds()
 
 The `getUTCMilliseconds()` method returns the milliseconds portion of the time object's value.
 
-Syntax
-------
+## Syntax
 
     getUTCMilliseconds()
 
@@ -14,8 +12,7 @@ An integer number, between 0 and 999, representing the milliseconds portion of t
 
 Not to be confused with Unix epoch time. To get total milliseconds since 1970/01/01, use the method ".getTime()".
 
-Examples
---------
+## Examples
 
 ### Using getUTCMilliseconds()
 
@@ -24,8 +21,7 @@ The following example assigns the milliseconds portion of the current time to th
     var today = new Date();
     var milliseconds = today.getUTCMilliseconds();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmilliseconds">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.getutcmilliseconds</span></a></td></tr></tbody></table>
@@ -56,8 +52,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getMilliseconds()`](getmilliseconds)
 -   [`Date.prototype.setUTCMilliseconds()`](setutcmilliseconds)

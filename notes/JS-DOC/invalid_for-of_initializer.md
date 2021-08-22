@@ -1,27 +1,22 @@
-SyntaxError: a declaration in the head of a for-of loop can't have an initializer
-=================================================================================
+# SyntaxError: a declaration in the head of a for-of loop can't have an initializer
 
 The JavaScript exception "a declaration in the head of a for-of loop can't have an initializer" occurs when the head of a [for...of](../statements/for...of) loop contains an initializer expression such as |`for (var i = 0 of iterable)`|. This is not allowed in for-of loops.
 
-Message
--------
+## Message
 
     SyntaxError: for-of loop head declarations cannot have an initializer (Edge)
     SyntaxError: a declaration in the head of a for-of loop can't have an initializer (Firefox)
     SyntaxError: for-of loop variable declaration may not have an initializer. (Chrome)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 The head of a [for...of](../statements/for...of) loop contains an initializer expression. That is, a variable is declared and assigned a value |`for (var i = 0 of iterable)`|. This is not allowed in for-of loops. You might want a `for` loop that does allow an initializer.
 
-Examples
---------
+## Examples
 
 ### Invalid `for-of` loop
 
@@ -48,8 +43,7 @@ You need to remove the initializer (`value = 50`) in the head of the `for-of` lo
     // 70
     // 80
 
-See also
---------
+## See also
 
 -   `for...of`
 -   `for...in` – disallows an initializer in strict mode as well ([SyntaxError: for-in loop head declarations may not have initializers](invalid_for-in_initializer))

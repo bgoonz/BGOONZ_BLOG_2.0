@@ -1,10 +1,8 @@
-Date.prototype.setUTCHours()
-============================
+# Date.prototype.setUTCHours()
 
 The `setUTCHours()` method sets the hour for a specified date according to universal time, and returns the number of milliseconds since January 1, 1970 00:00:00 UTC until the time represented by the updated [`Date`](../date) instance.
 
-Syntax
-------
+## Syntax
 
     setUTCHours(hoursValue)
     setUTCHours(hoursValue, minutesValue)
@@ -29,29 +27,25 @@ Optional. A number between 0 and 999, representing the milliseconds. If you spec
 
 The number of milliseconds between January 1, 1970 00:00:00 UTC and the updated date.
 
-Description
------------
+## Description
 
 If you do not specify the `minutesValue`, `secondsValue`, and `msValue` parameters, the values returned from the [`getUTCMinutes()`](getutcminutes), [`getUTCSeconds()`](getutcseconds), and [`getUTCMilliseconds()`](getutcmilliseconds) methods are used.
 
 If a parameter you specify is outside of the expected range, `setUTCHours()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes will be incremented by 1 (`minutesValue + 1`), and 40 will be used for seconds.
 
-Examples
---------
+## Examples
 
 ### Using setUTCHours()
 
     var theBigDay = new Date();
     theBigDay.setUTCHours(8);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutchours">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.setutchours</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -107,8 +101,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getUTCHours()`](getutchours)
 -   [`Date.prototype.setHours()`](sethours)

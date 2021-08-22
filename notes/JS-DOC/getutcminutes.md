@@ -1,10 +1,8 @@
-Date.prototype.getUTCMinutes()
-==============================
+# Date.prototype.getUTCMinutes()
 
 The `getUTCMinutes()` method returns the minutes in the specified date according to universal time.
 
-Syntax
-------
+## Syntax
 
     getUTCMinutes()
 
@@ -12,8 +10,7 @@ Syntax
 
 An integer number, between 0 and 59, representing the minutes in the given date according to universal time.
 
-Examples
---------
+## Examples
 
 ### Using getUTCMinutes()
 
@@ -22,8 +19,7 @@ The following example assigns the minutes portion of the current time to the var
     var today = new Date();
     var minutes = today.getUTCMinutes();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcminutes">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.getutcminutes</span></a></td></tr></tbody></table>
@@ -54,8 +50,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getMinutes()`](getminutes)
 -   [`Date.prototype.setUTCMinutes()`](setutcminutes)

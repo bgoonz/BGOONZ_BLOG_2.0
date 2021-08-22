@@ -1,10 +1,8 @@
-Object.prototype.valueOf()
-==========================
+# Object.prototype.valueOf()
 
 The `valueOf()` method returns the primitive value of the specified object.
 
-Syntax
-------
+## Syntax
 
     valueOf()
 
@@ -14,8 +12,7 @@ The primitive value of the specified object.
 
 **Note:** A [(unary) plus sign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_plus) can sometimes be used as a shorthand for `valueOf`, e.g. in `+new Number()`. Also see [Using unary plus](#using_unary_plus).
 
-Description
------------
+## Description
 
 JavaScript calls the `valueOf` method to convert an object to a primitive value. You rarely need to invoke the `valueOf` method yourself; JavaScript automatically invokes it when encountering an object where a primitive value is expected.
 
@@ -39,8 +36,7 @@ An object's `valueOf` method is usually invoked by JavaScript, but you can invok
 
 **Note:** Objects in string contexts convert via the [`toString()`](tostring) method, which is different from [`String`](../string) objects converting to string primitives using `valueOf`. All objects have a string conversion, if only "`[object type]`". But many objects do not convert to number, boolean, or function.
 
-Examples
---------
+## Examples
 
 ### Using valueOf on custom types
 
@@ -73,14 +69,12 @@ Examples
     +true // 1
     +false // 0
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.valueof">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.prototype.valueof</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -136,8 +130,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Object.prototype.toString()`](tostring)
 -   [`parseInt()`](../parseint)

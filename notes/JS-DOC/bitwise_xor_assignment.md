@@ -1,16 +1,13 @@
-Bitwise XOR assignment (^=)
-===========================
+# Bitwise XOR assignment (^=)
 
 The bitwise XOR assignment operator (`^=`) uses the binary representation of both operands, does a bitwise XOR operation on them and assigns the result to the variable.
 
-Syntax
-------
+## Syntax
 
     Operator: x ^= y
     Meaning:  x  = x ^ y
 
-Examples
---------
+## Examples
 
 ### Using bitwise XOR assignment
 
@@ -26,8 +23,7 @@ Examples
     console.log(b); // 00000000000000000000000000000101
     // 5
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
@@ -58,8 +54,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Bitwise XOR operator](bitwise_xor)

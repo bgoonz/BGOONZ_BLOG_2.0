@@ -1,12 +1,10 @@
-WebAssembly
-===========
+# WebAssembly
 
 The `WebAssembly` JavaScript object acts as the namespace for all [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)-related functionality.
 
 Unlike most other global objects, `WebAssembly` is not a constructor (it is not a function object). You can compare it to [`Math`](math), which is also a namespace object for mathematical constants and functions, or to [`Intl`](intl) which is the namespace object for internationalization constructors and other language-sensitive functions.
 
-Description
------------
+## Description
 
 The primary uses for the `WebAssembly` object are:
 
@@ -14,8 +12,7 @@ The primary uses for the `WebAssembly` object are:
 -   Creating new memory and table instances via the [`WebAssembly.Memory()`](webassembly/memory)/[`WebAssembly.Table()`](webassembly/table) constructors.
 -   Providing facilities to handle errors that occur in WebAssembly via the [`WebAssembly.CompileError()`](webassembly/compileerror)/[`WebAssembly.LinkError()`](webassembly/linkerror)/[`WebAssembly.RuntimeError()`](webassembly/runtimeerror) constructors.
 
-Constructor properties
-----------------------
+## Constructor properties
 
 [`WebAssembly.CompileError()`](webassembly/compileerror/compileerror)  
 Indicates an error during WebAssembly decoding or validation.
@@ -41,8 +38,7 @@ Error type that is thrown whenever WebAssembly specifies a [trap](https://webass
 [`WebAssembly.Table()`](webassembly/table/table)  
 An array-like structure representing a WebAssembly Table, which stores function references.
 
-Static methods
---------------
+## Static methods
 
 [`WebAssembly.instantiate()`](webassembly/instantiate)  
 The primary API for compiling and instantiating WebAssembly code, returning both a `Module` and its first `Instance`.
@@ -59,8 +55,7 @@ compiles a [`WebAssembly.Module`](webassembly/module) directly from a streamed u
 [`WebAssembly.validate()`](webassembly/validate)  
 Validates a given typed array of WebAssembly binary code, returning whether the bytes are valid WebAssembly code (`true`) or not (`false`).
 
-Examples
---------
+## Examples
 
 ### Stream a .wasm module then compile and instantiate it
 
@@ -73,14 +68,12 @@ The following example (see our [instantiate-streaming.html](https://github.com/m
 
 The `ResultObject`'s instance member is then accessed, and the contained exported function invoked.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#webassembly-namespace">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#webassembly-namespace</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -518,8 +511,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

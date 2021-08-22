@@ -1,15 +1,12 @@
-Logical OR assignment (||=)
-===========================
+# Logical OR assignment (||=)
 
 The logical OR assignment (`x ||= y`) operator only assigns if `x` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy).
 
-Syntax
-------
+## Syntax
 
     expr1 ||= expr2
 
-Description
------------
+## Description
 
 ### Short-circuit evaluation
 
@@ -31,8 +28,7 @@ And not equivalent to the following which would always perform an assignment:
 
 Note that this behavior is different to mathematical and bitwise assignment operators.
 
-Examples
---------
+## Examples
 
 ### Setting default content
 
@@ -44,8 +40,7 @@ Here the short-circuit is especially beneficial, since the element will not be u
 
 Note: Pay attention to the value returned by the API you're checking against. If an empty string is returned (a [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) value), `||=` must be used, otherwise you want to use the `??=` operator (for [`null`](../global_objects/null) or [`undefined`](../global_objects/undefined) return values).
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
@@ -76,8 +71,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [Logical OR (||)](logical_or)
 -   [The nullish coalescing operator (`??`)](nullish_coalescing_operator)

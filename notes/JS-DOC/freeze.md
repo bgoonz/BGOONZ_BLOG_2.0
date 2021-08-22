@@ -1,10 +1,8 @@
-Object.freeze()
-===============
+# Object.freeze()
 
 The `Object.freeze()` method **freezes** an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In addition, freezing an object also prevents its prototype from being changed. `freeze()` returns the same object that was passed in.
 
-Syntax
-------
+## Syntax
 
     Object.freeze(obj)
 
@@ -17,14 +15,13 @@ The object to freeze.
 
 The object that was passed to the function.
 
-Description
------------
+## Description
 
 Nothing can be added to or removed from the properties set of a frozen object. Any attempt to do so will fail, either silently or by throwing a [`TypeError`](../typeerror) exception (most commonly, but not exclusively, when in [strict mode](../../strict_mode)).
 
 For data properties of a frozen object, values cannot be changed, the writable and configurable attributes are set to false. Accessor properties (getters and setters) work the same (and still give the illusion that you are changing the value). Note that values that are objects can still be modified, unless they are also frozen. As an object, an array can be frozen; after doing so, its elements cannot be altered and no elements can be added to or removed from the array.
 
-`freeze()` returns the same object that was passed into the function. It *does not* create a frozen copy.
+`freeze()` returns the same object that was passed into the function. It _does not_ create a frozen copy.
 
 In ES5, if the argument to this method is not an object (a primitive), then it will cause a [`TypeError`](../typeerror). In ES2015, a non-object argument will be treated as if it were a frozen ordinary object, and be returned.
 
@@ -57,8 +54,7 @@ Note that; as the standard three properties (`buf.byteLength`, `buf.byteOffset` 
 
 Objects sealed with [`Object.seal()`](seal) can have their existing properties changed. Existing properties in objects frozen with `Object.freeze()` are made immutable.
 
-Examples
---------
+## Examples
 
 ### Freezing objects
 
@@ -126,7 +122,7 @@ Examples
     // Attempted to push
     a.push(2); // throws a TypeError
 
-The object being frozen is *immutable*. However, it is not necessarily *constant*. The following example shows that a frozen object is not constant (freeze is shallow).
+The object being frozen is _immutable_. However, it is not necessarily _constant_. The following example shows that a frozen object is not constant (freeze is shallow).
 
     const obj1 = {
       internal: {}
@@ -137,11 +133,11 @@ The object being frozen is *immutable*. However, it is not necessarily *constant
 
     obj1.internal.a // 'aValue'
 
-To be a constant object, the entire reference graph (direct and indirect references to other objects) must reference only immutable frozen objects. The object being frozen is said to be immutable because the entire object *state* (values and references to other objects) within the whole object is fixed. Note that strings, numbers, and booleans are always immutable and that Functions and Arrays are objects.
+To be a constant object, the entire reference graph (direct and indirect references to other objects) must reference only immutable frozen objects. The object being frozen is said to be immutable because the entire object _state_ (values and references to other objects) within the whole object is fixed. Note that strings, numbers, and booleans are always immutable and that Functions and Arrays are objects.
 
 #### What is "shallow freeze"?
 
-The result of calling `Object.freeze(object)` only applies to the immediate properties of `object` itself and will prevent future property addition, removal or value re-assignment operations *only* on `object`. If the value of those properties are objects themselves, those objects are not frozen and may be the target of property addition, removal or value re-assignment operations.
+The result of calling `Object.freeze(object)` only applies to the immediate properties of `object` itself and will prevent future property addition, removal or value re-assignment operations _only_ on `object`. If the value of those properties are objects themselves, those objects are not frozen and may be the target of property addition, removal or value re-assignment operations.
 
     const employee = {
       name: "Mayank",
@@ -159,7 +155,7 @@ The result of calling `Object.freeze(object)` only applies to the immediate prop
 
     console.log(employee.address.city) // Output: "Noida"
 
-To make an object immutable, recursively freeze each property which is of type object (deep freeze). Use the pattern on a case-by-case basis based on your design when you know the object contains no [cycles](https://en.wikipedia.org/wiki/Cycle_(graph_theory)) in the reference graph, otherwise an endless loop will be triggered. An enhancement to `deepFreeze()` would be to have an internal function that receives a path (e.g. an Array) argument so you can suppress calling `deepFreeze()` recursively when an object is in the process of being made immutable. You still run a risk of freezing an object that shouldn't be frozen, such as \[window\].
+To make an object immutable, recursively freeze each property which is of type object (deep freeze). Use the pattern on a case-by-case basis based on your design when you know the object contains no [cycles](<https://en.wikipedia.org/wiki/Cycle_(graph_theory)>) in the reference graph, otherwise an endless loop will be triggered. An enhancement to `deepFreeze()` would be to have an internal function that receives a path (e.g. an Array) argument so you can suppress calling `deepFreeze()` recursively when an object is in the process of being made immutable. You still run a risk of freezing an object that shouldn't be frozen, such as \[window\].
 
     function deepFreeze(object) {
       // Retrieve the property names defined on object
@@ -189,8 +185,7 @@ To make an object immutable, recursively freeze each property which is of type o
     obj2.internal.a = 'anotherValue'; // fails silently in non-strict mode
     obj2.internal.a; // null
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.freeze">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.freeze</span></a></td></tr></tbody></table>
@@ -221,8 +216,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Object.isFrozen()`](isfrozen)
 -   [`Object.preventExtensions()`](preventextensions)

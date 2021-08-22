@@ -1,28 +1,23 @@
-RangeError: invalid date
-========================
+# RangeError: invalid date
 
 The JavaScript exception "invalid date" occurs when a string leading to an invalid date has been provided to [`Date`](../global_objects/date) or [`Date.parse()`](../global_objects/date/parse).
 
-Message
--------
+## Message
 
     RangeError: invalid date (Edge)
     RangeError: invalid date (Firefox)
     RangeError: invalid time value (Chrome)
     RangeError: Provided date is not in valid range (Chrome)
 
-Error type
-----------
+## Error type
 
 [`RangeError`](../global_objects/rangeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 A string leading to an invalid date has been provided to [`Date`](../global_objects/date) or [`Date.parse()`](../global_objects/date/parse).
 
-Examples
---------
+## Examples
 
 ### Invalid cases
 
@@ -43,8 +38,7 @@ For more details, see the [`Date.parse()`](../global_objects/date/parse) documen
     new Date('05 October 2011 14:48 UTC');
     new Date(1317826080); // Unix Time Stamp for 05 October 2011 14:48:00 UTC
 
-See also
---------
+## See also
 
 -   [`Date`](../global_objects/date)
 -   [`Date.prototype.parse()`](../global_objects/date/parse)

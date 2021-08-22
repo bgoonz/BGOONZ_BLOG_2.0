@@ -1,10 +1,8 @@
-Intl
-====
+# Intl
 
 The `Intl` object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. The `Intl` object provides access to several constructors as well as functionality common to the internationalization constructors and other language sensitive functions.
 
-Constructor properties
-----------------------
+## Constructor properties
 
 [`Intl.Collator()`](intl/collator/collator)  
 Constructor for collators, which are objects that enable language-sensitive string comparison.
@@ -30,14 +28,12 @@ Constructor for objects that enable plural-sensitive formatting and language-spe
 [`Intl.RelativeTimeFormat()`](intl/relativetimeformat/relativetimeformat)  
 Constructor for objects that enable language-sensitive relative time formatting.
 
-Static methods
---------------
+## Static methods
 
 [`Intl.getCanonicalLocales()`](intl/getcanonicallocales)  
 Returns canonical locale names.
 
-Locale identification and negotiation
--------------------------------------
+## Locale identification and negotiation
 
 The internationalization constructors as well as several language sensitive methods of other constructors (listed under [See also](#see_also)) use a common pattern for identifying locales and determining the one they will actually use: they all accept `locales` and `options` arguments, and negotiate the requested locale(s) against the locales they support using an algorithm specified in the `options.localeMatcher` property.
 
@@ -74,7 +70,7 @@ BCP 47 extension sequences consist of a single digit or letter (other than `"x"`
 -   The `"u"` (Unicode) extension can be used to request additional customization of [`Intl/Collator`](intl/collator), [`Intl/NumberFormat`](intl/numberformat), or [`Intl/DateTimeFormat`](intl/datetimeformat) objects. Examples:
     -   "`de-DE-u-co-phonebk`": Use the phonebook variant of the German sort order, which interprets umlauted vowels as corresponding character pairs: ä → ae, ö → oe, ü → ue.
     -   "`th-TH-u-nu-thai`": Use Thai digits (๐, ๑, ๒, ๓, ๔, ๕, ๖, ๗, ๘, ๙) in number formatting.
-    -   "`ja-JP-u-ca-japanese`": Use the Japanese calendar in date and time formatting, so that 2013 is expressed as the year 25 of the Heisei period, or 平成25.
+    -   "`ja-JP-u-ca-japanese`": Use the Japanese calendar in date and time formatting, so that 2013 is expressed as the year 25 of the Heisei period, or 平成 25.
     -   "`en-GB-u-ca-islamic`": use British English with the Islamic (Hijri) calendar, where the Gregorian date 14 October, 2017 is the Hijri date 24 Muharram, 1439.
 -   The `"t"` (transformed) extension indicates transformed content: for example, text that was translated from another locale. No `Intl` functionality currently considers the `"t"` extension. However, this extension sometimes contains a nested locale (with no extensions): for example, the transformed extension in "`de-t-en`" contains the locale identifier for English. If a nested locale is present, it must be a valid locale identifier. For example, because "`en-emodeng-emodeng`" is invalid (because it contains a duplicate `emodeng` variant subtag), "`de-t-en-emodeng-emodeng`" is also invalid.
 
@@ -92,8 +88,7 @@ The `options` argument must be an object with properties that vary between const
 
 One property is supported by all language sensitive constructors and functions: The `localeMatcher` property, whose value must be a string "`lookup`" or "`best fit`" and which selects one of the locale matching algorithms described above.
 
-Examples
---------
+## Examples
 
 ### Formatting dates and numbers
 
@@ -114,8 +109,7 @@ You can use `Intl` to format dates and numbers in a form that's conventional for
     log("de-DE");
     // expected output: 24.5.2012 26.254,39
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-object">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#intl-object</span></a></td></tr></tbody></table>
@@ -406,8 +400,7 @@ No
 
 10.0
 
-See also
---------
+## See also
 
 -   Introduction: [The ECMAScript Internationalization API](https://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html)
 -   Constructors

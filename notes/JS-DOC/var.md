@@ -1,17 +1,15 @@
-var
-===
+# var
 
 The `var` declares a function-scoped or globally-scoped variable, optionally initializing it to a value.
 
-Syntax
-------
+## Syntax
 
     var varname1 [= value1] [, varname2 [= value2] ... [, varnameN [= valueN]]];
 
 `varnameN`  
 Variable name. It can be any legal identifier.
 
- `valueN` <span class="badge inline optional">Optional</span>   
+`valueN` <span class="badge inline optional">Optional</span>  
 Initial value of the variable. It can be any legal expression. Default value is `undefined`.
 
 Alternatively, the [Destructuring Assignment](../operators/destructuring_assignment) syntax can also be used to declare variables.
@@ -19,12 +17,11 @@ Alternatively, the [Destructuring Assignment](../operators/destructuring_assignm
     var { bar } = foo; // where foo = { bar:10, baz:12 };
     /* This creates a variable with the name 'bar', which has a value of 10 */
 
-Description
------------
+## Description
 
 `var` declarations, wherever they occur, are processed before any code is executed. This is called hoisting, and is discussed further below.
 
-The scope of a variable declared with `var` is its current *execution context and closures thereof*, which is either the enclosing function and functions declared within it, or, for variables declared outside any function, global. Duplicate variable declarations using `var` will not trigger an error, even in strict mode, and the variable will not lose its value, unless another assignment is performed.
+The scope of a variable declared with `var` is its current _execution context and closures thereof_, which is either the enclosing function and functions declared within it, or, for variables declared outside any function, global. Duplicate variable declarations using `var` will not trigger an error, even in strict mode, and the variable will not lose its value, unless another assignment is performed.
 
     'use strict';
     function foo() {
@@ -116,8 +113,7 @@ It's important to point out that the hoisting will affect the variable declarati
       console.log(bar); // 111
     }
 
-Examples
---------
+## Examples
 
 ### Declaring and initializing two variables
 
@@ -193,14 +189,12 @@ Variables that appear to be implicit globals may be references to variables in a
     console.log(x, z);     // 3 5
     console.log(typeof y); // "undefined", as y is local to function a
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-variable-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-variable-statement</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -256,8 +250,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`let`](let)
 -   [`const`](const)

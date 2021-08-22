@@ -1,10 +1,8 @@
-Array.prototype.concat()
-========================
+# Array.prototype.concat()
 
 The `concat()` method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 
-Syntax
-------
+## Syntax
 
     concat()
     concat(value0)
@@ -13,15 +11,14 @@ Syntax
 
 ### Parameters
 
- `valueN` <span class="badge inline optional">Optional</span>   
+`valueN` <span class="badge inline optional">Optional</span>  
 Arrays and/or values to concatenate into a new array. If all `valueN` parameters are omitted, `concat` returns a shallow copy of the existing array on which it is called. See the description below for more details.
 
 ### Return value
 
 A new [`Array`](../array) instance.
 
-Description
------------
+## Description
 
 The `concat` method creates a new array consisting of the elements in the object on which it is called, followed in order by, for each argument, the elements of that argument (if the argument is an array) or the argument itself (if the argument is not an array). It does not recurse into nested array arguments.
 
@@ -32,8 +29,7 @@ The `concat` method does not alter `this` or any of the arrays provided as argum
 
 **Note:** Concatenating array(s)/value(s) will leave the originals untouched. Furthermore, any operation on the new array (except operations on elements which are object references) will have no effect on the original arrays, and vice versa.
 
-Examples
---------
+## Examples
 
 ### Concatenating two arrays
 
@@ -87,8 +83,7 @@ The following code concatenates nested arrays and demonstrates retention of refe
     console.log(numbers);
     // results in [[1, 4], 2, [3]]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.concat</span></a></td></tr></tbody></table>
@@ -119,8 +114,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`push`](push) / [`pop`](pop) — add/remove elements from the end of the array
 -   [`unshift`](unshift) / [`shift`](shift) — add/remove elements from the beginning of the array

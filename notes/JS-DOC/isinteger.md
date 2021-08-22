@@ -1,10 +1,8 @@
-Number.isInteger()
-==================
+# Number.isInteger()
 
 The `Number.isInteger()` method determines whether the passed value is an integer.
 
-Syntax
-------
+## Syntax
 
     Number.isInteger(value)
 
@@ -17,13 +15,11 @@ The value to be tested for being an integer.
 
 A [`Boolean`](../boolean) indicating whether or not the given value is an integer.
 
-Description
------------
+## Description
 
 If the target value is an integer, return `true`, otherwise return `false`. If the value is [`NaN`](../nan) or [`Infinity`](../infinity), return `false`. The method will also return `true` for floating point numbers that can be represented as integer.
 
-Examples
---------
+## Examples
 
 ### Using isInteger
 
@@ -47,8 +43,7 @@ Examples
     Number.isInteger(5.000000000000001); // false
     Number.isInteger(5.0000000000000001); // true
 
-Polyfill
---------
+## Polyfill
 
     Number.isInteger = Number.isInteger || function(value) {
       return typeof value === 'number' &&
@@ -56,8 +51,7 @@ Polyfill
         Math.floor(value) === value;
     };
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isinteger">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-number.isinteger</span></a></td></tr></tbody></table>
@@ -88,8 +82,7 @@ No
 
 2.0
 
-See also
---------
+## See also
 
 -   The [`Number`](../number) object it belongs to.
 

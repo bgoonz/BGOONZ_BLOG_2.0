@@ -1,23 +1,19 @@
-SharedArrayBuffer.prototype.byteLength
-======================================
+# SharedArrayBuffer.prototype.byteLength
 
 The `byteLength` accessor property represents the length of an [`SharedArrayBuffer`](../sharedarraybuffer) in bytes.
 
-Description
------------
+## Description
 
 The `byteLength` property is an accessor property whose set accessor function is `undefined`, meaning that you can only read this property. The value is established when the shared array is constructed and cannot be changed.
 
-Examples
---------
+## Examples
 
 ### Using byteLength
 
     var sab = new SharedArrayBuffer(1024);
     sab.byteLength; // 1024
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-sharedarraybuffer.prototype.bytelength">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-get-sharedarraybuffer.prototype.bytelength</span></a></td></tr></tbody></table>
@@ -82,8 +78,7 @@ No
 
 Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-See also
---------
+## See also
 
 -   [`SharedArrayBuffer`](../sharedarraybuffer)
 

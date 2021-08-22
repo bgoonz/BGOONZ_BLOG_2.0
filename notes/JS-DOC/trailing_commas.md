@@ -1,5 +1,4 @@
-Trailing commas
-===============
+# Trailing commas
 
 **Trailing commas** (sometimes called "final commas") can be useful when adding new elements, parameters, or properties to JavaScript code. If you want to add a new property, you can add a new line without modifying the previously last line if that line already uses a trailing comma. This makes version-control diffs cleaner and editing code might be less troublesome.
 
@@ -7,13 +6,11 @@ JavaScript has allowed trailing commas in array literals since the beginning, an
 
 [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON), however, disallows trailing commas.
 
-Syntax
-------
+## Syntax
 
     ,
 
-Examples
---------
+## Examples
 
 ### Trailing commas in literals
 
@@ -30,7 +27,7 @@ JavaScript ignores trailing commas in arrays:
     arr; // [1, 2, 3]
     arr.length; // 3
 
-If more than one trailing comma is used, an elision (or hole) is produced. An array with holes is called *sparse* (a *dense* array has no holes). When iterating arrays for example with [`Array.prototype.forEach()`](global_objects/array/foreach) or [`Array.prototype.map()`](global_objects/array/map), array holes are skipped.
+If more than one trailing comma is used, an elision (or hole) is produced. An array with holes is called _sparse_ (a _dense_ array has no holes). When iterating arrays for example with [`Array.prototype.forEach()`](global_objects/array/foreach) or [`Array.prototype.map()`](global_objects/array/map), array holes are skipped.
 
     var arr = [1, 2, 3,,,];
     arr.length; // 5
@@ -127,16 +124,14 @@ Omit the trailing commas to parse the JSON correctly:
     JSON.parse('[1, 2, 3, 4 ]');
     JSON.parse('{"foo" : 1 }');
 
-Specifications
---------------
+## Specifications
 
 **No specification found**
 
 No specification data found for `javascript.grammar.trailing_commas`.  
 [Check for problems with this page](#on-github) or contribute a missing `spec_url` to [mdn/browser-compat-data](https://github.com/mdn/browser-compat-data). Also make sure the specification is included in [w3c/browser-specs](https://github.com/w3c/browser-specs).
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -244,8 +239,7 @@ No
 
 1.0
 
-See also
---------
+## See also
 
 -   Initial ECMAScript proposal: [trailing function commas](https://github.com/tc39/proposal-trailing-function-commas) by Jeff Morrison
 

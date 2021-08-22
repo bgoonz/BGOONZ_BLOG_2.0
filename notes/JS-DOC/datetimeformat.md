@@ -1,10 +1,8 @@
-Intl.DateTimeFormat() constructor
-=================================
+# Intl.DateTimeFormat() constructor
 
 The `Intl.DateTimeFormat()` constructor creates [`Intl.DateTimeFormat`](../datetimeformat) objects that enable language-sensitive date and time formatting.
 
-Syntax
-------
+## Syntax
 
     new Intl.DateTimeFormat()
     new Intl.DateTimeFormat(locales)
@@ -12,7 +10,7 @@ Syntax
 
 ### Parameters
 
- `locales` <span class="badge inline optional">Optional</span>   
+`locales` <span class="badge inline optional">Optional</span>  
 A string with a BCP 47 language tag, or an array of such strings. To use the browser's default locale, pass an empty array. Unicode extension are supported (for example "`en-US-u-ca-buddhist`"). For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page. The following Unicode extension keys are allowed:
 
 `nu`  
@@ -24,7 +22,7 @@ Calendar. Possible values include: "`buddhist`", "`chinese`", "`coptic`", "`ethi
 `hc`  
 Hour cycle. Possible values include: "`h11`", "`h12`", "`h23`", "`h24`".
 
- `options` <span class="badge inline optional">Optional</span>   
+`options` <span class="badge inline optional">Optional</span>  
 An object with some or all of the following properties:
 
 `dateStyle`  
@@ -143,8 +141,7 @@ The representation of the time zone name. Possible values are:
 
 The default value for each date-time component property is [`undefined`](../../undefined), but if all component properties are [`undefined`](../../undefined), then `year`, `month`, and `day` are assumed to be "`numeric`".
 
-Examples
---------
+## Examples
 
 ### Using DateTimeFormat
 
@@ -175,8 +172,7 @@ In basic use without specifying a locale, `DateTimeFormat` uses the default loca
     });
     console.log(o.format(Date.now())); // "07/07/20, 13:31:55 AM"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-datetimeformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-intl-datetimeformat-constructor</span></a></td></tr></tbody></table>
@@ -337,8 +333,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`Intl.DateTimeFormat`](../datetimeformat)
 -   [`Intl`](../../intl)

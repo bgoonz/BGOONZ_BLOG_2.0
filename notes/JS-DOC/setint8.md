@@ -1,10 +1,8 @@
-DataView.prototype.setInt8()
-============================
+# DataView.prototype.setInt8()
 
 The `setInt8()` method stores a signed 8-bit integer (byte) value at the specified byte offset from the start of the [`DataView`](../dataview).
 
-Syntax
-------
+## Syntax
 
     setInt8(byteOffset, value)
 
@@ -25,8 +23,7 @@ The value to set.
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
-Examples
---------
+## Examples
 
 ### Using the setInt8 method
 
@@ -35,14 +32,12 @@ Examples
     dataview.setInt8(1, 3);
     dataview.getInt8(1); // 3
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint8">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-dataview.prototype.setint8</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -98,8 +93,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

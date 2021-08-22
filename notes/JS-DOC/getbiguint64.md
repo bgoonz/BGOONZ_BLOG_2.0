@@ -1,10 +1,8 @@
-DataView.prototype.getBigUint64()
-=================================
+# DataView.prototype.getBigUint64()
 
 The `getBigUint64()` method gets an unsigned 64-bit integer (unsigned long long) at the specified byte offset from the start of the [`DataView`](../dataview).
 
-Syntax
-------
+## Syntax
 
     getBigUint64(byteOffset)
     getBigUint64(byteOffset, littleEndian)
@@ -26,13 +24,11 @@ A [`BigInt`](../bigint).
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such that it would read beyond the end of the view.
 
-Description
------------
+## Description
 
 There is no alignment constraint; multi-byte values may be fetched from any offset.
 
-Examples
---------
+## Examples
 
 ### Using the `getBigUint64` method
 
@@ -40,8 +36,7 @@ Examples
     var dataview = new DataView(buffer);
     dataview.getBigUint64(0); // 0n
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbiguint64">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-dataview.prototype.getbiguint64</span></a></td></tr></tbody></table>
@@ -72,8 +67,7 @@ No
 
 9.0
 
-See also
---------
+## See also
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

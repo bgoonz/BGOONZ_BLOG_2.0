@@ -1,10 +1,8 @@
-Array.prototype.filter()
-========================
+# Array.prototype.filter()
 
 The `filter()` method **creates a new array** with all elements that pass the test implemented by the provided function.
 
-Syntax
-------
+## Syntax
 
     // Arrow function
     filter((element) => { ... } )
@@ -31,21 +29,20 @@ It accepts three arguments:
 `element`  
 The current element being processed in the array.
 
- `index`<span class="badge inline optional">Optional</span>   
+`index`<span class="badge inline optional">Optional</span>  
 The index of the current element being processed in the array.
 
- `array`<span class="badge inline optional">Optional</span>   
+`array`<span class="badge inline optional">Optional</span>  
 The array `filter` was called upon.
 
- `thisArg`<span class="badge inline optional">Optional</span>   
+`thisArg`<span class="badge inline optional">Optional</span>  
 Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
 A new array with the elements that pass the test. If no elements pass the test, an empty array will be returned.
 
-Description
------------
+## Description
 
 `filter()` calls a provided `callbackFn` function once for each element in an array, and constructs a new array of all the values for which `callbackFn` returns [a value that coerces to `true`](https://developer.mozilla.org/en-US/docs/Glossary/Truthy). `callbackFn` is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the `callbackFn` test are skipped, and are not included in the new array.
 
@@ -61,8 +58,7 @@ If a `thisArg` parameter is provided to `filter`, it will be used as the callbac
 
 The range of elements processed by `filter()` is set before the first invocation of `callbackFn`. Elements which are appended to the array (from `callbackFn`) after the call to `filter()` begins will not be visited by `callbackFn`. If existing elements of the array are deleted in the same way they will not be visited.
 
-Polyfill
---------
+## Polyfill
 
 `filter()` was added to the ECMA-262 standard in the 5th edition. Therefore, it may not be present in all implementations of the standard.
 
@@ -107,8 +103,7 @@ You can work around this by inserting the following code at the beginning of you
       };
     }
 
-Examples
---------
+## Examples
 
 ### Filtering out all small values
 
@@ -243,8 +238,7 @@ The following examples tests the behavior of the `filter` method when the array 
     // Notice 'elite' is not even obtained as its been popped off `words` before filter can even get there
     // ["spray" ,"limit"]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.filter">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.filter</span></a></td></tr></tbody></table>
@@ -275,8 +269,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.forEach()`](foreach)
 -   [`Array.prototype.every()`](every)

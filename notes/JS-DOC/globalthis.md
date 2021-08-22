@@ -1,5 +1,4 @@
-globalThis
-==========
+# globalThis
 
 The global `globalThis` property contains the global `this` value, which is akin to the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object).
 
@@ -17,8 +16,7 @@ Configurable
 
 yes
 
-Description
------------
+## Description
 
 Historically, accessing the global object has required different syntax in different JavaScript environments. On the web you can use [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window/window), [`self`](https://developer.mozilla.org/en-US/docs/Web/API/Window/self), or [`frames`](https://developer.mozilla.org/en-US/docs/Web/API/Window/frames) - but in [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker) only `self` will work. In Node.js none of these work, and you must instead use `global`.  
 The `this` keyword could be used inside functions running in non–strict mode, but `this` will be `undefined` in Modules and inside functions running in strict mode. You can also use `Function('return this')()`, but environments that disable [`eval()`](eval), like [CSP](https://developer.mozilla.org/en-US/docs/Glossary/CSP) in browsers, prevent use of [`Function`](function) in this way.
@@ -33,8 +31,7 @@ In many engines `globalThis` will be a reference to the actual global object, bu
 
 Several other popular name choices such as `self` and `global` were removed from consideration because of their potential to break compatibility with existing code. See the [language proposal's "naming" document](https://github.com/tc39/proposal-global/blob/master/NAMING.md) for more details.
 
-Examples
---------
+## Examples
 
 ### Search for the global across environments
 
@@ -59,8 +56,7 @@ With `globalThis` available, the additional search for the global across environ
       // no setTimeout in this environment!
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-globalthis">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-globalthis</span></a></td></tr></tbody></table>
@@ -91,8 +87,7 @@ No
 
 10.0
 
-See also
---------
+## See also
 
 -   [`this`](../operators/this)
 

@@ -1,5 +1,4 @@
-String.prototype.strike()
-=========================
+# String.prototype.strike()
 
 **Deprecated**
 
@@ -7,8 +6,7 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `strike()` method creates a [`<strike>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike) HTML element that causes a string to be displayed as struck-out text.
 
-Syntax
-------
+## Syntax
 
     strike()
 
@@ -16,13 +14,11 @@ Syntax
 
 A string containing a [`<strike>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike) HTML element.
 
-Description
------------
+## Description
 
 The `strike()` method embeds a string in a `<strike>` element: "`<strike>str</strike>`".
 
-Examples
---------
+## Examples
 
 ### Using strike()
 
@@ -35,14 +31,12 @@ The following example uses string methods to change the formatting of a string:
     console.log(worldString.italics()); // <i>Hello, world</i>
     console.log(worldString.strike()); // <strike>Hello, world</strike>
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.strike">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.strike</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -98,8 +92,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.blink()`](blink)
 -   [`String.prototype.bold()`](bold)

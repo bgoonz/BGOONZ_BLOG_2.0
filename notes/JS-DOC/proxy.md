@@ -1,10 +1,8 @@
-Proxy
-=====
+# Proxy
 
 The `Proxy` object enables you to create a proxy for another object, which can intercept and redefine fundamental operations for that object.
 
-Description
------------
+## Description
 
 A `Proxy` is created with two parameters:
 
@@ -44,7 +42,7 @@ To customise the proxy, we define functions on the handler object:
 
 Here we've provided an implementation of the [`get()`](proxy/proxy/get) handler, which intercepts attempts to access properties in the target.
 
-Handler functions are sometimes called *traps*, presumably because they trap calls to the target object. The very simple trap in `handler2` above redefines all property accessors:
+Handler functions are sometimes called _traps_, presumably because they trap calls to the target object. The very simple trap in `handler2` above redefines all property accessors:
 
     console.log(proxy2.message1); // world
     console.log(proxy2.message2); // world
@@ -70,20 +68,17 @@ With the help of the [`Reflect`](reflect) class we can give some accessors the o
     console.log(proxy3.message1); // hello
     console.log(proxy3.message2); // world
 
-Constructor
------------
+## Constructor
 
 [`Proxy()`](proxy/proxy)  
 Creates a new `Proxy` object.
 
-Static methods
---------------
+## Static methods
 
 [`Proxy.revocable()`](proxy/revocable)  
 Creates a revocable `Proxy` object.
 
-Examples
---------
+## Examples
 
 ### Basic example
 
@@ -351,7 +346,7 @@ This proxy extends an array with some utility features. As you see, you can flex
 
 ### A complete `traps` list example
 
-Now in order to create a complete sample `traps` list, for didactic purposes, we will try to proxify a *non-native* object that is particularly suited to this type of operation: the `docCookies` global object created by [the "little framework" published on the `document.cookie` page](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework).
+Now in order to create a complete sample `traps` list, for didactic purposes, we will try to proxify a _non-native_ object that is particularly suited to this type of operation: the `docCookies` global object created by [the "little framework" published on the `document.cookie` page](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework).
 
     /*
       var docCookies = ... get the "docCookies" object here:
@@ -402,14 +397,12 @@ Now in order to create a complete sample `traps` list, for didactic purposes, we
     docCookies.setItem('my_cookie1', 'Changed value');
     console.log(docCookies.my_cookie1);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-objects">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Proxy' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -517,8 +510,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   ["Proxies are awesome" Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk) ([slides](https://www.slideshare.net/BrendanEich/metaprog-5303821))
 -   [ECMAScript Harmony Proxy proposal page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies) and [ECMAScript Harmony proxy semantics page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics)

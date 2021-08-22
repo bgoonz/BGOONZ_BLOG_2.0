@@ -1,5 +1,4 @@
-RegExp.prototype.hasIndices
-===========================
+# RegExp.prototype.hasIndices
 
 The `hasIndices` property indicates whether or not the "`d`" flag is used with the regular expression. `hasIndices` is a read-only property of an individual regular expression instance.
 
@@ -17,15 +16,13 @@ Configurable
 
 yes
 
-Description
------------
+## Description
 
 The value of `hasIndices` is a [`Boolean`](../boolean) and `true` if the "`d`" flag was used; otherwise, `false`. The "`d`" flag indicates that the result of a regular expression match should contain the start and end indices of the substrings of each capture group.
 
 You cannot change this property directly.
 
-Examples
---------
+## Examples
 
 ### Using `hasIndices`
 
@@ -46,14 +43,12 @@ Examples
 
     console.log(regex2.exec(str2).indices); // Output: undefined
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.hasIndices">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-get-regexp.prototype.hasIndices</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -109,8 +104,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`RegExp.lastIndex`](lastindex)
 -   [`RegExp.prototype.exec()`](exec)

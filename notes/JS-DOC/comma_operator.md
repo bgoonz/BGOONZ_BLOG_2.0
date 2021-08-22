@@ -1,27 +1,23 @@
-Comma operator (,)
-==================
+# Comma operator (,)
 
 The **comma operator** (`,`) evaluates each of its operands (from left to right) and returns the value of the last operand. This lets you create a compound expression in which multiple expressions are evaluated, with the compound expression's final value being the value of the rightmost of its member expressions. This is commonly used to provide multiple parameters to a `for` loop.
 
-Syntax
-------
+## Syntax
 
     expr1, expr2, expr3...
 
 ### Parameters
 
- `expr1`, `expr2`, `expr3`...  
+`expr1`, `expr2`, `expr3`...  
 One or more expressions, the last of which is returned as the value of the compound expression.
 
-Usage notes
------------
+## Usage notes
 
 You can use the comma operator when you want to include multiple expressions in a location that requires a single expression. The most common usage of this operator is to supply multiple parameters in a `for` loop.
 
 The comma operator is fully different from the comma within arrays, objects, and function arguments and parameters.
 
-Examples
---------
+## Examples
 
 If `a` is a 2-dimensional array with 10 elements on each side, the following code uses the comma operator to increment `i` and decrement `j` at once.
 
@@ -52,8 +48,7 @@ Another example that one could make with comma operator is processing before ret
       return (x += 1, x); // the same as return ++x;
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-comma-operator">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-comma-operator</span></a></td></tr></tbody></table>
@@ -84,8 +79,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`for` loop](../statements/for)
 

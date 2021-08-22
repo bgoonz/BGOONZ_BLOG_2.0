@@ -1,5 +1,4 @@
-Math.SQRT1\_2
-=============
+# Math.SQRT1_2
 
 The `Math.SQRT1_2` property represents the square root of 1/2 which is approximately 0.707:
 
@@ -19,15 +18,13 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
 Because `SQRT1_2` is a static property of `Math`, you always use it as `Math.SQRT1_2`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
-### Using Math.SQRT1\_2
+### Using Math.SQRT1_2
 
 The following function returns 1 over the square root of 2:
 
@@ -37,14 +34,12 @@ The following function returns 1 over the square root of 2:
 
     getRoot1_2(); // 0.7071067811865476
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt1_2">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.sqrt1_2</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -100,8 +95,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)

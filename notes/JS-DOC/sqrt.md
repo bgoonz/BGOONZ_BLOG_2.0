@@ -1,12 +1,10 @@
-Math.sqrt()
-===========
+# Math.sqrt()
 
 The `Math.sqrt()` function returns the square root of a number, that is
 
 $$\\forall x \\geq 0,\\mathtt{Math.sqrt(x)} = \\sqrt{x} = \\text{the\\ unique}\\; y \\geq 0\\;\\text{such\\ that}\\; y^{2} = x$$
 
-Syntax
-------
+## Syntax
 
     Math.sqrt(x)
 
@@ -19,15 +17,13 @@ A number.
 
 The square root of the given number. If the number is negative, [`NaN`](../nan) is returned.
 
-Description
------------
+## Description
 
 If the value of `x` is negative, `Math.sqrt()` returns [`NaN`](../nan).
 
 Because `sqrt()` is a static method of `Math`, you always use it as `Math.sqrt()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.sqrt()
 
@@ -39,14 +35,12 @@ Examples
     Math.sqrt(-1); // NaN
     Math.sqrt(-0); // -0
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.sqrt</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -102,8 +96,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.cbrt()`](cbrt)
 -   [`Math.exp()`](exp)

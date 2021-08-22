@@ -1,15 +1,12 @@
-debugger
-========
+# debugger
 
 The `debugger` invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect.
 
-Syntax
-------
+## Syntax
 
     debugger;
 
-Examples
---------
+## Examples
 
 ### Using the debugger statement
 
@@ -24,8 +21,7 @@ When the debugger is invoked, execution is paused at the `debugger` statement. I
 
 [<img src="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger/screen_shot_2014-02-07_at_9.14.35_am.png" alt="Paused at a debugger statement." width="2730" height="1446" />](https://mdn.mozillademos.org/files/6963/Screen%20Shot%202014-02-07%20at%209.14.35%20AM.png)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-debugger-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-debugger-statement</span></a></td></tr></tbody></table>
@@ -56,8 +52,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
 -   [The Debugger in the Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools/Debugger)

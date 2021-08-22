@@ -1,12 +1,10 @@
-About the JavaScript reference
-==============================
+# About the JavaScript reference
 
 The JavaScript reference serves as a repository of facts about the JavaScript language. The entire language is described here in detail. As you write JavaScript code, you'll refer to these pages often (thus the title "JavaScript reference"). If you're learning JavaScript, or need help understanding some of its capabilities or features, check out the [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
 
 The JavaScript language is intended to be used within some larger environment, be it a browser, server-side scripts, or similar. For the most part, this reference attempts to be environment-agnostic and does not target a web browser environment.
 
-Where to find JavaScript information
-------------------------------------
+## Where to find JavaScript information
 
 JavaScript documentation of core language features (pure [ECMAScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources), for the most part) includes the following:
 
@@ -15,8 +13,7 @@ JavaScript documentation of core language features (pure [ECMAScript](https://de
 
 If you are new to JavaScript, start with the [guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). Once you have a firm grasp of the fundamentals, you can use the [reference](index) to get more details on individual objects and language constructs.
 
-Structure of the reference
---------------------------
+## Structure of the reference
 
 In the JavaScript reference you can find the following chapters:
 

@@ -1,5 +1,4 @@
-RegExp.prototype.sticky
-=======================
+# RegExp.prototype.sticky
 
 The `sticky` property reflects whether or not the search is sticky (searches in strings only from the index indicated by the [`lastIndex`](lastindex) property of this regular expression). `sticky` is a read-only property of an individual regular expression object.
 
@@ -17,15 +16,13 @@ Configurable
 
 yes
 
-Description
------------
+## Description
 
 The value of `sticky` is a [`Boolean`](../boolean) and true if the "`y`" flag was used; otherwise, false. The "`y`" flag indicates that it matches only from the index indicated by the [`lastIndex`](lastindex) property of this regular expression in the target string (and does not attempt to match from any later indexes). A regular expression defined as both `sticky` and `global` ignores the `global` flag.
 
 You cannot change this property directly. It is read-only.
 
-Examples
---------
+## Examples
 
 ### Using a regular expression with the sticky flag
 
@@ -56,14 +53,12 @@ Examples of correct behavior:
     regex2.lastIndex = 2;
     regex2.test('.\nfoo'); // true - index 2 is the beginning of a line
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.sticky">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-get-regexp.prototype.sticky</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -171,8 +166,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`RegExp.lastIndex`](lastindex)
 -   [`RegExp.prototype.dotAll`](dotall)

@@ -1,10 +1,8 @@
-Array.prototype.reverse()
-=========================
+# Array.prototype.reverse()
 
-The `reverse()` method reverses an array *[in place](https://en.wikipedia.org/wiki/In-place_algorithm)*. The first array element becomes the last, and the last array element becomes the first.
+The `reverse()` method reverses an array _[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_. The first array element becomes the last, and the last array element becomes the first.
 
-Syntax
-------
+## Syntax
 
     reverse()
 
@@ -12,15 +10,13 @@ Syntax
 
 The reversed array.
 
-Description
------------
+## Description
 
 The `reverse` method transposes the elements of the calling array object in place, mutating the array, and returning a reference to the array.
 
 `reverse` is intentionally generic; this method can be [called](../function/call) or [applied](../function/apply) to objects resembling arrays. Objects which do not contain a `length` property reflecting the last in a series of consecutive, zero-based numerical properties may not behave in any meaningful manner.
 
-Examples
---------
+## Examples
 
 ### Reversing the elements in an array
 
@@ -46,14 +42,12 @@ The following example creates an array-like object `a`, containing three element
 
     console.log(a); // {0: 3, 1: 2, 2: 1, length: 3}
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reverse">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.reverse</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -109,8 +103,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.join()`](join)
 -   [`Array.prototype.sort()`](sort)

@@ -1,12 +1,10 @@
-async function
-==============
+# async function
 
 An async function is a function declared with the `async` keyword, and the `await` keyword is permitted within them. The `async` and `await` keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
 
 Async functions may also be defined [as expressions](../operators/async_function).
 
-Syntax
-------
+## Syntax
 
     async function name([param[, param[, ...param]]]) {
        statements
@@ -27,8 +25,7 @@ The statements comprising the body of the function. The `await` mechanism may be
 
 A [`Promise`](../global_objects/promise) which will be resolved with the value returned by the async function, or rejected with an exception thrown from, or uncaught within, the async function.
 
-Description
------------
+## Description
 
 Async functions can contain zero or more [`await`](../operators/await) expressions. Await expressions make promise-returning functions behave as though they're synchronous by suspending execution until the returned promise is fulfilled or rejected. The resolved value of the promise is treated as the return value of the await expression. Use of `async` and `await` enables the use of ordinary `try` / `catch` blocks around asynchronous code.
 
@@ -56,7 +53,7 @@ For example, the following:
 
 Even though the return value of an async function behaves as if it's wrapped in a `Promise.resolve`, they are not equivalent.
 
-An async function will return a different *reference*, whereas `Promise.resolve` returns the same reference if the given value is a promise.
+An async function will return a different _reference_, whereas `Promise.resolve` returns the same reference if the given value is a promise.
 
 It can be a problem when you want to check the equality of a promise and a return value of an async function.
 
@@ -116,8 +113,7 @@ For example, in the following code an unhandled promise rejection error will be 
     }
     foo().catch(() => {}) // Attempt to swallow all errors...
 
-Examples
---------
+## Examples
 
 ### Async functions and execution order
 
@@ -254,10 +250,9 @@ Consider the following rewrite of the above code. It returns `null` if `processD
 
 Writing `return processDataInWorker(v)` would have caused the [`Promise`](../global_objects/promise) returned by the function to reject, instead of resolving to `null` if `processDataInWorker(v)` rejects.
 
-This highlights the subtle difference between `return foo;` and `return await foo;` — `return foo` immediately returns `foo` and never throws, even if `foo` is a Promise that rejects. `return await foo` will *wait* for `foo` to resolve or reject if it's a Promise, and throws **before returning** if it rejects.
+This highlights the subtle difference between `return foo;` and `return await foo;` — `return foo` immediately returns `foo` and never throws, even if `foo` is a Promise that rejects. `return await foo` will _wait_ for `foo` to resolve or reject if it's a Promise, and throws **before returning** if it rejects.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-definitions">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-async-function-definitions</span></a></td></tr></tbody></table>
@@ -288,8 +283,7 @@ No
 
 6.0
 
-See also
---------
+## See also
 
 -   [`async function expression`](../operators/async_function)
 -   [`AsyncFunction`](../global_objects/asyncfunction) object

@@ -1,5 +1,4 @@
-Optional chaining (?.)
-======================
+# Optional chaining (?.)
 
 The **optional chaining** operator (`?.`) enables you to read the value of a property located deep within a chain of connected objects without having to check that each reference in the chain is valid.
 
@@ -9,16 +8,14 @@ This results in shorter and simpler expressions when accessing chained propertie
 
 Optional chaining cannot be used on a non-declared root object, but can be used with an undefined root object.
 
-Syntax
-------
+## Syntax
 
     obj.val?.prop
     obj.val?.[expr]
     obj.arr?.[index]
     obj.func?.(args)
 
-Description
------------
+## Description
 
 The optional chaining operator provides a way to simplify accessing values through connected objects when it's possible that a reference or function may be `undefined` or `null`.
 
@@ -47,7 +44,7 @@ Using optional chaining with function calls causes the expression to automatical
 
     let result = someInterface.customMethod?.();
 
-**Note:** If there is a property with such a name and which is not a function, using `?.` will still raise a [`TypeError`](../global_objects/typeerror) exception (`someInterface.customMethod is not a function`).
+**Note:** If there is a property with such a name and which is not a function, using `?.` will still raise a [`TypeError`](../global_objects/typeerror) exception (`someInterface.customMethod is not a function`).
 
 **Note:** If `someInterface` itself is `null` or `undefined`, a [`TypeError`](../global_objects/typeerror) exception will still be raised (`someInterface is null`). If you expect that `someInterface` itself may be `null` or `undefined`, you have to use `?.` at this position as well: `someInterface?.customMethod?.()`
 
@@ -92,8 +89,7 @@ You can also use the optional chaining operator when accessing properties with a
 
     let arrayItem = arr?.[42];
 
-Examples
---------
+## Examples
 
 ### Basic example
 
@@ -141,14 +137,12 @@ The [nullish coalescing operator](nullish_coalescing_operator) may be used after
     const customerCity = customer?.city ?? "Unknown city";
     console.log(customerCity); // Unknown city
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-OptionalExpression">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#prod-OptionalExpression</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -212,8 +206,7 @@ No
 
 13.0
 
-See also
---------
+## See also
 
 -   The [Nullish Coalescing Operator](nullish_coalescing_operator)
 

@@ -1,10 +1,8 @@
-Date.prototype.getTimezoneOffset()
-==================================
+# Date.prototype.getTimezoneOffset()
 
 The `getTimezoneOffset()` method returns the difference, in minutes, between a date as evaluated in the UTC time zone, and the same date as evaluated in the local time zone.
 
-Syntax
-------
+## Syntax
 
     getTimezoneOffset()
 
@@ -12,8 +10,7 @@ Syntax
 
 The difference, in minutes, between date, as evaluated in the UTC time zone, and as evaluated in the local time zone.
 
-Description
------------
+## Description
 
 `date.getTimezoneOffset()` returns the difference, in minutes, between date as evaluated in the UTC time zone, and date as evaluated in the local time zone — that is, the time zone of the host system in which the browser is being used (if the code is run from the Web in a browser), or otherwise the host system of whatever JavaScript runtime (for example, a Node.js environment) the code is executed in.
 
@@ -29,15 +26,14 @@ In a time zone that annually shifts in and out of Daylight Saving Time (DST), th
 
 Consider a given local time zone and a date date1 that are both in DST, and consider minutes, the number of minutes returned by calling `date1.getTimezoneOffset()`; then:
 
--   If the local time zone is currently in DST, but a given date date2 is *not* in DST, then the number of minutes returned by `date2.getTimezoneOffset()` is minutes ± 60.
--   If the local time zone is *not* currently in DST, but a given date date3 is in DST, then the number of minutes returned by `date3.getTimezoneOffset()` is minutes ± 60.
+-   If the local time zone is currently in DST, but a given date date2 is _not_ in DST, then the number of minutes returned by `date2.getTimezoneOffset()` is minutes ± 60.
+-   If the local time zone is _not_ currently in DST, but a given date date3 is in DST, then the number of minutes returned by `date3.getTimezoneOffset()` is minutes ± 60.
 
 In a time zone that doesn’t annually shift in and out of Daylight Saving Time (DST), the number of minutes returned by calling `getTimezoneOffset()` always returns the same number of minutes, regardless of the date instance it’s called from.
 
 **Note:** The above description is a simplification. In implementations, the [IANA time zone database](https://en.wikipedia.org/wiki/Daylight_saving_time#IANA_time_zone_database) (tzdata) is used for precisely determining the effect of DST on the calculation of the time-zone difference.
 
-Examples
---------
+## Examples
 
     // Create a Date instance for the current time
     let currentLocalDate = new Date();
@@ -47,8 +43,7 @@ Examples
     // true, always, in any timezone that doesn't annually shift in and out of DST
     // false, sometimes, in any timezone that annually shifts in and out of DST
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gettimezoneoffset">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.gettimezoneoffset</span></a></td></tr></tbody></table>
@@ -79,8 +74,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date`](../date)
 

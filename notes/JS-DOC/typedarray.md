@@ -1,10 +1,8 @@
-TypedArray
-==========
+# TypedArray
 
-A ***TypedArray*** object describes an array-like view of an underlying [binary data buffer](arraybuffer). There is no global property named `TypedArray`, nor is there a directly visible `TypedArray` constructor. Instead, there are a number of different global properties, whose values are typed array constructors for specific element types, listed below. On the following pages you will find common properties and methods that can be used with any typed array containing elements of any type.
+A **_TypedArray_** object describes an array-like view of an underlying [binary data buffer](arraybuffer). There is no global property named `TypedArray`, nor is there a directly visible `TypedArray` constructor. Instead, there are a number of different global properties, whose values are typed array constructors for specific element types, listed below. On the following pages you will find common properties and methods that can be used with any typed array containing elements of any type.
 
-Description
------------
+## Description
 
 ECMAScript 2015 defines a `TypedArray` constructor that serves as the `[[Prototype]]` of all `TypedArray` constructors. This constructor is not directly exposed: there is no global `%TypedArray%` or `TypedArray` property. It is only directly accessible through `Object.getPrototypeOf(Int8Array)` and similar. All `TypedArray`s constructors inherit common properties from the `%TypedArray%` constructor function. Additionally, all typed array prototypes (`TypedArray.prototype`) have `%TypedArray%.prototype` as their `[[Prototype]]`.
 
@@ -16,8 +14,7 @@ When creating an instance of a `TypedArray` (e.g. `Int8Array`), an array buffer 
 
 <table><thead><tr class="header"><th>Type</th><th>Value Range</th><th>Size in bytes</th><th>Description</th><th>Web IDL type</th><th>Equivalent C type</th></tr></thead><tbody><tr class="odd"><td><a href="int8array"><code>Int8Array</code></a></td><td><code>-128</code> to <code>127</code></td><td>1</td><td>8-bit two's complement signed integer</td><td><code>byte</code></td><td><code>int8_t</code></td></tr><tr class="even"><td><a href="uint8array"><code>Uint8Array</code></a></td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr class="odd"><td><a href="uint8clampedarray"><code>Uint8ClampedArray</code></a></td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer (clamped)</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr class="even"><td><a href="int16array"><code>Int16Array</code></a></td><td><code>-32768</code> to <code>32767</code></td><td>2</td><td>16-bit two's complement signed integer</td><td><code>short</code></td><td><code>int16_t</code></td></tr><tr class="odd"><td><a href="uint16array"><code>Uint16Array</code></a></td><td><code>0</code> to <code>65535</code></td><td>2</td><td>16-bit unsigned integer</td><td><code>unsigned short</code></td><td><code>uint16_t</code></td></tr><tr class="even"><td><a href="int32array"><code>Int32Array</code></a></td><td><code>-2147483648</code> to <code>2147483647</code></td><td>4</td><td>32-bit two's complement signed integer</td><td><code>long</code></td><td><code>int32_t</code></td></tr><tr class="odd"><td><a href="uint32array"><code>Uint32Array</code></a></td><td><code>0</code> to <code>4294967295</code></td><td>4</td><td>32-bit unsigned integer</td><td><code>unsigned long</code></td><td><code>uint32_t</code></td></tr><tr class="even"><td><a href="float32array"><code>Float32Array</code></a></td><td><code>1.2</code>×<code>10-38</code> to <code>3.4</code>×<code>1038</code></td><td>4</td><td>32-bit IEEE floating point number (7 significant digits e.g., <code>1.234567</code>)</td><td><code>unrestricted float</code></td><td><code>float</code></td></tr><tr class="odd"><td><a href="float64array"><code>Float64Array</code></a></td><td><code>5.0</code>×<code>10-324</code> to <code>1.8</code>×<code>10308</code></td><td>8</td><td>64-bit IEEE floating point number (16 significant digits e.g., <code>1.23456789012345</code>)</td><td><code>unrestricted double</code></td><td><code>double</code></td></tr><tr class="even"><td><a href="bigint64array"><code>BigInt64Array</code></a></td><td><code>-263</code> to <code>263-1</code></td><td>8</td><td>64-bit two's complement signed integer</td><td><code>bigint</code></td><td><code>int64_t (signed long long)</code></td></tr><tr class="odd"><td><a href="biguint64array"><code>BigUint64Array</code></a></td><td><code>0</code> to <code>264-1</code></td><td>8</td><td>64-bit unsigned integer</td><td><code>bigint</code></td><td><code>uint64_t (unsigned long long)</code></td></tr></tbody></table>
 
-Constructor
------------
+## Constructor
 
 This object cannot be instantiated directly. Instead, you create an instance of an array of a particular type, such as a [`Int8Array`](int8array) or a [`BigInt64Array`](bigint64array). These objects all have a common syntax for their constructors:
 
@@ -35,7 +32,7 @@ Where TypedArray is a constructor for one of the concrete types.
 ### Parameters
 
 `length`  
-When called with a `length` argument, an internal array buffer is created in memory, of size `length` *multiplied by `BYTES_PER_ELEMENT`* bytes, containing zeros.
+When called with a `length` argument, an internal array buffer is created in memory, of size `length` _multiplied by `BYTES_PER_ELEMENT`_ bytes, containing zeros.
 
 `typedArray`  
 When called with a `typedArray` argument, which can be an object of any of the typed array types (such as `Int32Array`), the `typedArray` gets copied into a new typed array. Each value in `typedArray` is converted to the corresponding type of the constructor before being copied into the new array. The length of the new typed array will be same as the length of the `typedArray` argument.
@@ -43,11 +40,10 @@ When called with a `typedArray` argument, which can be an object of any of the t
 `object`  
 When called with an `object` argument, a new typed array is created as if by the `TypedArray.from()` method.
 
- `buffer`, `byteOffset`, `length`   
+`buffer`, `byteOffset`, `length`  
 When called with a `buffer`, and optionally a `byteOffset` and a `length` argument, a new typed array view is created that views the specified [`ArrayBuffer`](arraybuffer). The `byteOffset` and `length` parameters specify the memory range that will be exposed by the typed array view. If both are omitted, all of `buffer` is viewed; if only `length` is omitted, the remainder of `buffer` is viewed.
 
-Static properties
------------------
+## Static properties
 
 [`TypedArray.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
 Returns a number value of the element size for the different `TypedArray` objects.
@@ -61,8 +57,7 @@ The constructor function used to create derived objects.
 [`TypedArray.prototype`](typedarray)  
 Prototype for `TypedArray` objects.
 
-Static methods
---------------
+## Static methods
 
 [`TypedArray.from()`](typedarray/from)  
 Creates a new `TypedArray` from an array-like or iterable object. See also [`Array.from()`](array/from).
@@ -70,8 +65,7 @@ Creates a new `TypedArray` from an array-like or iterable object. See also [`Arr
 [`TypedArray.of()`](typedarray/of)  
 Creates a new `TypedArray` with a variable number of arguments. See also [`Array.of()`](array/of).
 
-Instance properties
--------------------
+## Instance properties
 
 [`TypedArray.prototype.buffer`](typedarray/buffer)  
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the typed array. Fixed at construction time and thus **read only**.
@@ -85,8 +79,7 @@ Returns the offset (in bytes) of the typed array from the start of its [`ArrayBu
 [`TypedArray.prototype.length`](typedarray/length)  
 Returns the number of elements held in the typed array. Fixed at construction time and thus **read only.**
 
-Instance methods
-----------------
+## Instance methods
 
 [`TypedArray.prototype.at()`](typedarray/at)  
 Takes an integer value and returns the item at that index. This method allows for negative integers, which count back from the last item.
@@ -169,8 +162,7 @@ Returns a string representing the array and its elements. See also [`Array.proto
 [`TypedArray.prototype[@@iterator]()`](typedarray/@@iterator)  
 Returns a new array iterator object that contains the values for each index in the array.
 
-Examples
---------
+## Examples
 
 ### New is required
 
@@ -205,14 +197,12 @@ You can reference elements in the array using standard array index syntax (that 
     Int8Array.prototype.foo = 'bar';
     (new Int8Array(32)).foo; // "bar"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-typedarray-objects</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -1378,8 +1368,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`ArrayBuffer`](arraybuffer)

@@ -1,10 +1,8 @@
-Object.getOwnPropertyNames()
-============================
+# Object.getOwnPropertyNames()
 
 The `Object.getOwnPropertyNames()` method returns an array of all properties (including non-enumerable properties except for those which use Symbol) found directly in a given object.
 
-Syntax
-------
+## Syntax
 
     Object.getOwnPropertyNames(obj)
 
@@ -17,8 +15,7 @@ The object whose enumerable and non-enumerable properties are to be returned.
 
 An array of strings that corresponds to the properties found directly in the given object.
 
-Description
------------
+## Description
 
 `Object.getOwnPropertyNames()` returns an array whose elements are strings corresponding to the enumerable and non-enumerable properties found directly in a given object `obj`. The ordering of the enumerable properties in the array is consistent with the ordering exposed by a [`for...in`](../../statements/for...in) loop (or by [`Object.keys()`](keys)) over the properties of the object. According to ES6, the integer keys of the object (both enumerable and non-enumerable) are added in ascending order to the array first, followed by the string keys in the order of insertion.
 
@@ -30,8 +27,7 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
     Object.getOwnPropertyNames('foo');
     // ["0", "1", "2", "length"]  (ES2015 code)
 
-Examples
---------
+## Examples
 
 ### Using Object.getOwnPropertyNames()
 
@@ -108,8 +104,7 @@ This uses the [`Array.prototype.filter()`](../array/filter) function to remove t
 
     console.log(nonenum_only);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertynames">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.getownpropertynames</span></a></td></tr></tbody></table>
@@ -140,8 +135,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 -   [`Object.prototype.hasOwnProperty()`](hasownproperty)

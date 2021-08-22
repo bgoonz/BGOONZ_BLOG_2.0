@@ -1,12 +1,10 @@
-Math.log2()
-===========
+# Math.log2()
 
 The `Math.log2()` function returns the base 2 logarithm of a number, that is
 
-∀*x* &gt; 0, `Math.log2` `(``x``)` = log<sub>2</sub>(*x*) = the unique *y* such that 2<sup>*y*</sup> = *x*
+∀*x* &gt; 0, `Math.log2` ` (``x``) ` = log<sub>2</sub>(_x_) = the unique *y* such that 2<sup>_y_</sup> = *x*
 
-Syntax
-------
+## Syntax
 
     Math.log2(x)
 
@@ -19,8 +17,7 @@ A number.
 
 The base 2 logarithm of the given number. If the number is negative, [`NaN`](../nan) is returned.
 
-Description
------------
+## Description
 
 If the value of `x` is less than 0, the return value is always [`NaN`](../nan).
 
@@ -28,8 +25,7 @@ Because `log2()` is a static method of `Math`, you always use it as `Math.log2()
 
 This function is the equivalent of Math.log(x) / Math.log(2). For log2(e) use the constant [`Math.LOG2E`](log2e) which is 1 / [`Math.LN2`](ln2).
 
-Polyfill
---------
+## Polyfill
 
 This Polyfill emulates the `Math.log2` function. Note that it returns imprecise values on some inputs (like 1 &lt;&lt; 29), wrap into [`Math.round()`](round) if working with bit masks.
 
@@ -37,8 +33,7 @@ This Polyfill emulates the `Math.log2` function. Note that it returns imprecise 
       return Math.log(x) * Math.LOG2E;
     };
 
-Examples
---------
+## Examples
 
 ### Using Math.log2()
 
@@ -49,8 +44,7 @@ Examples
     Math.log2(-2);   // NaN
     Math.log2(1024); // 10
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log2">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.log2</span></a></td></tr></tbody></table>
@@ -81,8 +75,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Math.exp()`](exp)
 -   [`Math.log()`](log)

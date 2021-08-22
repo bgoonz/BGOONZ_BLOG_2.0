@@ -1,15 +1,12 @@
-Logical OR (||)
-===============
+# Logical OR (||)
 
 The logical OR (`||`) operator (logical disjunction) for a set of operands is true if and only if one or more of its operands is true. It is typically used with [`Boolean`](../global_objects/boolean) (logical) values. When it is, it returns a Boolean value. However, the `||` operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.
 
-Syntax
-------
+## Syntax
 
     expr1 || expr2
 
-Description
------------
+## Description
 
 If `expr1` can be converted to `true`, returns `expr1`; else, returns `expr2`.
 
@@ -20,7 +17,7 @@ Examples of expressions that can be converted to false are:
 -   `null`;
 -   `NaN`;
 -   `0`;
--   empty string (`""` or `''` or ``` `` ```);
+-   empty string (`""` or `''` or ` `` `);
 -   `undefined`.
 
 Even though the `||` operator can be used with operands that are not Boolean values, it can still be considered a boolean operator since its return value can always be converted to a [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). To explicitly convert its return value (or any expression in general) to the corresponding boolean value, use a double [NOT operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_not) or the [`Boolean`](../global_objects/boolean/boolean) constructor.
@@ -47,8 +44,7 @@ The following expressions might seem equivalent, but they are not, because the `
     true || false && false      // returns true, because && is executed first
     (true || false) && false    // returns false, because operator precedence cannot apply
 
-Examples
---------
+## Examples
 
 ### Using OR
 
@@ -65,7 +61,7 @@ The following code shows examples of the `||` (logical OR) operator.
     o9 = false || ''         // f || f returns ""
     o10 = false || varObject // f || object returns varObject
 
-**Note:** If you use this operator to provide a default value to some variable, be aware that any *falsy* value will not be used. If you only need to filter out [`null`](../global_objects/null) or [`undefined`](../global_objects/undefined), consider using [the nullish coalescing operator](nullish_coalescing_operator).
+**Note:** If you use this operator to provide a default value to some variable, be aware that any _falsy_ value will not be used. If you only need to filter out [`null`](../global_objects/null) or [`undefined`](../global_objects/undefined), consider using [the nullish coalescing operator](nullish_coalescing_operator).
 
 ### Conversion rules for booleans
 
@@ -101,8 +97,7 @@ is always equal to:
 
     !(!bCondition1 || !bCondition2 && !bCondition3)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-LogicalORExpression">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Logical OR expression' in that specification.</span></a></td></tr></tbody></table>
@@ -133,8 +128,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [The nullish coalescing operator (`??`)](nullish_coalescing_operator)
 -   [`Boolean`](../global_objects/boolean)

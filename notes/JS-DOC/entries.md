@@ -1,12 +1,10 @@
-Object.entries()
-================
+# Object.entries()
 
 The `Object.entries()` method returns an array of a given object's own enumerable string-keyed property `[key, value]` pairs, in the same order as that provided by a [`for...in`](../../statements/for...in) loop. (The only important difference is that a `for...in` loop enumerates properties in the prototype chain as well).
 
-The order of the array returned by `Object.entries()` does not depend on how an object is defined. If there is a need for certain ordering, then the array should be sorted first, like `Object.entries(obj).sort((a, b) => b[0].localeCompare(a[0]));`.
+The order of the array returned by `Object.entries()` does not depend on how an object is defined. If there is a need for certain ordering, then the array should be sorted first, like `Object.entries(obj).sort((a, b) => b[0].localeCompare(a[0]));`.
 
-Syntax
-------
+## Syntax
 
     Object.entries(obj)
 
@@ -19,13 +17,11 @@ The object whose own enumerable string-keyed property `[key, value]` pairs are t
 
 An array of the given object's own enumerable string-keyed property `[key, value]` pairs.
 
-Description
------------
+## Description
 
 `Object.entries()` returns an array whose elements are arrays corresponding to the enumerable string-keyed property `[key, value]` pairs found directly upon `object`. The ordering of the properties is the same as that given by looping over the property values of the object manually.
 
-Polyfill
---------
+## Polyfill
 
 To add compatible `Object.entries()` support in older environments that do not natively support it, you can use any of the following:
 
@@ -49,8 +45,7 @@ To add compatible `Object.entries()` support in older environments that do not n
 
 For the above polyfill code snippet, if you need support for IE&lt;9, then you will also need an `Object.keys()` polyfill (such as the one found on the [`Object.keys`](keys) page).
 
-Examples
---------
+## Examples
 
     const obj = { foo: 'bar', baz: 42 };
     console.log(Object.entries(obj)); // [ ['foo', 'bar'], ['baz', 42] ]
@@ -100,8 +95,7 @@ Using [Array Destructuring](../../operators/destructuring_assignment#array_destr
     const obj = { foo: 'bar', baz: 42 };
     Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); // "foo: bar", "baz: 42"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.entries">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Object.entries' in that specification.</span></a></td></tr></tbody></table>
@@ -132,8 +126,7 @@ No
 
 6.0
 
-See also
---------
+## See also
 
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 -   [`Object.keys()`](keys)

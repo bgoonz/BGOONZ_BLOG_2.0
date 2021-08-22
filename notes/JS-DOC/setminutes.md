@@ -1,10 +1,8 @@
-Date.prototype.setMinutes()
-===========================
+# Date.prototype.setMinutes()
 
 The `setMinutes()` method sets the minutes for a specified date according to local time.
 
-Syntax
-------
+## Syntax
 
     setMinutes(minutesValue)
     setMinutes(minutesValue, secondsValue)
@@ -25,29 +23,25 @@ Optional. A number between 0 and 999, representing the milliseconds. If you spec
 
 The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
 
-Description
------------
+## Description
 
 If you do not specify the `secondsValue` and `msValue` parameters, the values returned from [`getSeconds()`](getseconds) and [`getMilliseconds()`](getmilliseconds) methods are used.
 
 If a parameter you specify is outside of the expected range, `setMinutes()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes will be incremented by 1 (`minutesValue + 1`), and 40 will be used for seconds.
 
-Examples
---------
+## Examples
 
 ### Using setMinutes()
 
     var theBigDay = new Date();
     theBigDay.setMinutes(45);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setminutes">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.setminutes</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -103,8 +97,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getMinutes()`](getminutes)
 -   [`Date.prototype.setUTCMinutes()`](setutcminutes)

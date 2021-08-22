@@ -1,5 +1,4 @@
-Comparing Reflect and Object methods
-====================================
+# Comparing Reflect and Object methods
 
 The [`Reflect`](../reflect) object, introduced in ES2015, is a built-in object that provides methods to interface with JavaScript objects. Some of the static functions that exist on `Reflect` also correspond to methods available on [`Object`](../object), which predates ES2015. Although some of the methods appear to be similar in their behavior, there are often subtle differences between them.
 

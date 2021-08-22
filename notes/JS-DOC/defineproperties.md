@@ -1,10 +1,8 @@
-Object.defineProperties()
-=========================
+# Object.defineProperties()
 
 The `Object.defineProperties()` method defines new or modifies existing properties directly on an object, returning the object.
 
-Syntax
-------
+## Syntax
 
     Object.defineProperties(obj, props)
 
@@ -52,8 +50,7 @@ If a descriptor has neither of `value`, `writable`, `get` and `set` keys, it is 
 
 The object that was passed to the function.
 
-Examples
---------
+## Examples
 
 ### Using Object.defineProperties
 
@@ -70,8 +67,7 @@ Examples
       // etc. etc.
     });
 
-Polyfill
---------
+## Polyfill
 
 Assuming a pristine execution environment with all names and properties referring to their initial values, `Object.defineProperties` is almost completely equivalent (note the comment in `isCallable`) to the following reimplementation in JavaScript:
 
@@ -136,8 +132,7 @@ Assuming a pristine execution environment with all names and properties referrin
       return obj;
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.defineproperties">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.defineproperties</span></a></td></tr></tbody></table>
@@ -168,8 +163,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Object.defineProperty()`](defineproperty)
 -   [`Object.keys()`](keys)

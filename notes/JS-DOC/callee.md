@@ -1,10 +1,8 @@
-arguments.callee
-================
+# arguments.callee
 
 The `arguments.callee` property contains the currently executing function.
 
-Description
------------
+## Description
 
 `callee` is a property of the `arguments` object. It can be used to refer to the currently executing function inside the function body of that function. This is useful when the name of the function is unknown, such as within a function expression with no name (also called "anonymous functions").
 
@@ -69,8 +67,7 @@ Another feature that was deprecated was `arguments.callee.caller`, or more speci
 
 If the JavaScript interpreter cannot guarantee that all the provided arguments are numbers at the point that the call is made, it needs to either insert checks for all the arguments before the inlined code, or it cannot inline the function. Now in this particular case a smart interpreter should be able to rearrange the checks to be more optimal and not check any values that would not be used. However in many cases that's just not possible and therefore it becomes impossible to inline.
 
-Examples
---------
+## Examples
 
 ### Using `arguments.callee` in an anonymous recursive function
 
@@ -102,8 +99,7 @@ However, in a case like the following, there are not alternatives to `arguments.
 
     john();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
@@ -134,8 +130,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Function`](../../global_objects/function)
 

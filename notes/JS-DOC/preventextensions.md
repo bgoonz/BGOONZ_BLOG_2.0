@@ -1,10 +1,8 @@
-Object.preventExtensions()
-==========================
+# Object.preventExtensions()
 
 The `Object.preventExtensions()` method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object).
 
-Syntax
-------
+## Syntax
 
     Object.preventExtensions(obj)
 
@@ -17,10 +15,9 @@ The object which should be made non-extensible.
 
 The object being made non-extensible.
 
-Description
------------
+## Description
 
-An object is extensible if new properties can be added to it. `Object.preventExtensions()` marks an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible. Note that the properties of a non-extensible object, in general, may still be *deleted*. Attempting to add new properties to a non-extensible object will fail, either silently or by throwing a [`TypeError`](../typeerror) (most commonly, but not exclusively, when in [strict mode](../../strict_mode)).
+An object is extensible if new properties can be added to it. `Object.preventExtensions()` marks an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible. Note that the properties of a non-extensible object, in general, may still be _deleted_. Attempting to add new properties to a non-extensible object will fail, either silently or by throwing a [`TypeError`](../typeerror) (most commonly, but not exclusively, when in [strict mode](../../strict_mode)).
 
 `Object.preventExtensions()` only prevents addition of own properties. Properties can still be added to the object prototype.
 
@@ -28,8 +25,7 @@ This method makes the `[[prototype]]` of the target immutable; any `[[prototype]
 
 There is no way to make an object extensible again once it has been made non-extensible.
 
-Examples
---------
+## Examples
 
 ### Using Object.preventExtensions
 
@@ -80,14 +76,12 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
     Object.preventExtensions(1);
     // 1                             (ES2015 code)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.preventextensions">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.preventextensions</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -169,8 +163,7 @@ Samsung Internet
 
 4.0
 
-See also
---------
+## See also
 
 -   [`Object.isExtensible()`](isextensible)
 -   [`Object.seal()`](seal)

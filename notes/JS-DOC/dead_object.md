@@ -1,25 +1,20 @@
-TypeError: can't access dead object
-===================================
+# TypeError: can't access dead object
 
 The JavaScript exception "can't access dead object" occurs when Firefox disallows add-ons to keep strong references to DOM objects after their parent document has been destroyed to improve in memory usage and to prevent memory leaks.
 
-Message
--------
+## Message
 
     TypeError: can't access dead object
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 To improve in memory usage and to prevent memory leaks, Firefox disallows add-ons to keep strong references to DOM objects after their parent document has been destroyed. A dead object, is holding a strong (keep alive) reference to a DOM element that persists even after it was destroyed in the DOM. To avoid these issues, references to DOM nodes in foreign document should instead be stored in an object which is specific to that document, and cleaned up when the document is unloaded, or stored as [weak references](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_Bindings/Components.utils.getWeakReference).
 
-Examples
---------
+## Examples
 
 ### Checking if an object is dead
 
@@ -38,8 +33,7 @@ Unprivileged code has no access to Component.utils and might just be able catch 
       console.log("window is likely dead");
     }
 
-See also
---------
+## See also
 
 -   [What does “can’t access dead object” mean?](https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/)
 -   [Common causes of memory leaks in extensions](https://developer.mozilla.org/en-US/docs/Extensions/Common_causes_of_memory_leaks_in_extensions)

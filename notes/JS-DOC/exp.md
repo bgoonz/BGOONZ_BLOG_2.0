@@ -1,10 +1,8 @@
-Math.exp()
-==========
+# Math.exp()
 
 The `Math.exp()` function returns `ex`, where `x` is the argument, and `e` is [Euler's number (also known as Napier's constant)](e), the base of the natural logarithms.
 
-Syntax
-------
+## Syntax
 
     Math.exp(x)
 
@@ -17,13 +15,11 @@ A number.
 
 A number representing `ex`, where `e` is [Euler's number](e) and `x` is the argument.
 
-Description
------------
+## Description
 
 Because `exp()` is a static method of `Math`, you always use it as `Math.exp()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.exp()
 
@@ -31,8 +27,7 @@ Examples
     Math.exp(0);  // 1
     Math.exp(1);  // 2.718281828459045
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.exp">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.exp</span></a></td></tr></tbody></table>
@@ -63,8 +58,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.E`](e)
 -   [`Math.expm1()`](expm1)

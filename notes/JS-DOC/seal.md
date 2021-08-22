@@ -1,10 +1,8 @@
-Object.seal()
-=============
+# Object.seal()
 
 The `Object.seal()` method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.
 
-Syntax
-------
+## Syntax
 
     Object.seal(obj)
 
@@ -17,8 +15,7 @@ The object which should be sealed.
 
 The object being sealed.
 
-Description
------------
+## Description
 
 By default, objects are [extensible](isextensible) (new properties can be added to them). Sealing an object prevents new properties from being added and marks all existing properties as non-configurable. This has the effect of making the set of properties on the object fixed. Making all properties non-configurable also prevents them from being converted from data properties to accessor properties and vice versa, but it does not prevent the values of data properties from being changed. Attempting to delete or add properties to a sealed object, or to convert a data property to accessor or vice versa, will fail, either silently or by throwing a [`TypeError`](../typeerror) (most commonly, although not exclusively, when in [strict mode](../../strict_mode) code).
 
@@ -28,8 +25,7 @@ The prototype chain remains untouched. However, the [`__proto__`](proto) propert
 
 Existing properties in objects frozen with [`Object.freeze()`](freeze) are made immutable. Objects sealed with `Object.seal()` can have their existing properties changed.
 
-Examples
---------
+## Examples
 
 ### Using Object.seal
 
@@ -94,14 +90,12 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
     Object.seal(1);
     // 1                             (ES2015 code)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.seal">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Object.seal' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -157,8 +151,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Object.isSealed()`](issealed)
 -   [`Object.preventExtensions()`](preventextensions)

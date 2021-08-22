@@ -1,10 +1,8 @@
-typeof
-======
+# typeof
 
 The `typeof` operator returns a string indicating the type of the unevaluated operand.
 
-Syntax
-------
+## Syntax
 
 The `typeof` operator is followed by its operand:
 
@@ -16,8 +14,7 @@ The `typeof` operator is followed by its operand:
 `operand`  
 An expression representing the object or [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) whose type is to be returned.
 
-Description
------------
+## Description
 
 The following table summarizes the possible return values of `typeof`. For more information about types and primitives, see also the [JavaScript data structure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) page.
 
@@ -27,8 +24,7 @@ The following table summarizes the possible return values of `typeof`. For more 
 
 The only known browser to have actually taken advantage of this is old Internet Explorer (see [below](#ie-specific_notes)).
 
-Examples
---------
+## Examples
 
 ### Basic usage
 
@@ -175,16 +171,14 @@ For greater specificity in checking types, a `typeof` wrapper for usage in produ
            (typeof obj === 'object' || typeof obj === 'function') ? 'object' : typeof obj;
       }
 
-For checking non-existent variables that would otherwise throw a [`ReferenceError`](../global_objects/referenceerror), use `typeof nonExistentVar === 'undefined'`.
+For checking non-existent variables that would otherwise throw a [`ReferenceError`](../global_objects/referenceerror), use `typeof nonExistentVar === 'undefined'`.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typeof-operator">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'The typeof Operator' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -251,8 +245,7 @@ Some non-standard IE properties return other values ([tc39/ecma262\#1440 (commen
     typeof window.external.AddSearchProvider === "unknown";
     typeof window.external.IsSearchProviderInstalled === "unknown";
 
-See also
---------
+## See also
 
 -   [`instanceof`](instanceof)
 -   [`document.all` willful violation of the standard](https://github.com/tc39/ecma262/issues/668)

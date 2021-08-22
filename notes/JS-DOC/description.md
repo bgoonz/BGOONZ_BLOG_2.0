@@ -1,15 +1,12 @@
-Symbol.prototype.description
-============================
+# Symbol.prototype.description
 
 The read-only `description` property is a string returning the optional description of [`Symbol`](../symbol) objects.
 
-Description
------------
+## Description
 
 [`Symbol`](../symbol) objects can be created with an optional description which can be used for debugging but not to access the symbol itself. The `Symbol.prototype.description` property can be used to read that description. It is different to `Symbol.prototype.toString()` as it does not contain the enclosing "`Symbol()`" string. See the examples.
 
-Examples
---------
+## Examples
 
 ### Using description
 
@@ -26,8 +23,7 @@ Examples
     Symbol.for('foo').toString();  // "Symbol(foo)"
     Symbol.for('foo').description; // "foo"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.prototype.description">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-symbol.prototype.description</span></a></td></tr></tbody></table>
@@ -66,8 +62,7 @@ No support for an undefined description.
 
 10.0
 
-See also
---------
+## See also
 
 -   [`Symbol.prototype.toString()`](tostring)
 -   Polyfill: <https://npmjs.com/symbol.prototype.description>

@@ -1,10 +1,8 @@
-handler.getPrototypeOf()
-========================
+# handler.getPrototypeOf()
 
 The `handler.getPrototypeOf()` method is a trap for the `[[GetPrototypeOf]]` internal method.
 
-Syntax
-------
+## Syntax
 
     const p = new Proxy(obj, {
       getPrototypeOf(target) {
@@ -23,8 +21,7 @@ The target object.
 
 The `getPrototypeOf()` method must return an object or `null`.
 
-Description
------------
+## Description
 
 ### Interceptions
 
@@ -43,8 +40,7 @@ If the following invariants are violated, the proxy will throw a [`TypeError`](.
 -   `getPrototypeOf()` method must return an object or `null`.
 -   If `target` is not extensible, `Object.getPrototypeOf(proxy)` method must return the same value as `Object.getPrototypeOf(target)`.
 
-Examples
---------
+## Examples
 
 ### Basic usage
 
@@ -95,8 +91,7 @@ Examples
     });
     Object.getPrototypeOf(p); // TypeError: expected same prototype value
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof</span></a></td></tr></tbody></table>
@@ -127,8 +122,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`Proxy`](../../proxy)
 -   [`handler`](../proxy)

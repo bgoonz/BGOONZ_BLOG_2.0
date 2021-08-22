@@ -1,30 +1,25 @@
-WebAssembly.Memory
-==================
+# WebAssembly.Memory
 
 The `WebAssembly.Memory` object is a resizable [`ArrayBuffer`](../arraybuffer) or `SharedArrayBuffer` that holds the raw bytes of memory accessed by a WebAssembly `Instance`.
 
 A memory created by JavaScript or in WebAssembly code will be accessible and mutable from both JavaScript and WebAssembly.
 
-Constructor
------------
+## Constructor
 
 [`WebAssembly.Memory()`](memory/memory)  
 Creates a new `Memory` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`Memory.prototype.buffer`](memory/buffer)  
 An accessor property that returns the buffer contained in the memory.
 
-Instance methods
-----------------
+## Instance methods
 
 [`Memory.prototype.grow()`](memory/grow)  
 Increases the size of the memory instance by a specified number of WebAssembly pages (each one is 64KB in size).
 
-Examples
---------
+## Examples
 
 ### Creating a new Memory object
 
@@ -60,8 +55,7 @@ By default, WebAssembly memories are unshared. You can create a [shared memory](
 
 This memory's `buffer` property will return a `SharedArrayBuffer`.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#memories">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#memories</span></a></td></tr></tbody></table>
@@ -186,8 +180,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

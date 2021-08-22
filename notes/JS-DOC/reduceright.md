@@ -1,12 +1,10 @@
-Array.prototype.reduceRight()
-=============================
+# Array.prototype.reduceRight()
 
 The `reduceRight()` method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.
 
 See also [`Array.prototype.reduce()`](reduce) for left-to-right.
 
-Syntax
-------
+## Syntax
 
     // Arrow function
     reduceRight((accumulator, currentValue) => { ... } )
@@ -35,21 +33,20 @@ The value previously returned in the last invocation of the callback, or `initia
 `currentValue`  
 The current element being processed in the array.
 
- `index`<span class="badge inline optional">Optional</span>   
+`index`<span class="badge inline optional">Optional</span>  
 The index of the current element being processed in the array.
 
- `array`<span class="badge inline optional">Optional</span>   
+`array`<span class="badge inline optional">Optional</span>  
 The array `reduceRight()` was called upon.
 
- `initialValue` <span class="badge inline optional">Optional</span>   
+`initialValue` <span class="badge inline optional">Optional</span>  
 Value to use as accumulator to the first call of the `callbackFn`. If no initial value is supplied, the last element in the array will be used and skipped. Calling reduce or reduceRight on an empty array without an initial value creates a `TypeError`.
 
 ### Return value
 
 The value that results from the reduction.
 
-Description
------------
+## Description
 
 `reduceRight` executes the callback function once for each element present in the array, excluding holes in the array, receiving four arguments: the initial value (or value from the previous callback call), the value of the current element, the current index, and the array over which iteration is occurring.
 
@@ -85,8 +82,7 @@ And if you were to provide an `initialValue`, the result would look like this:
 
 The value returned by `reduceRight` this time would be, of course, `20`.
 
-Polyfill
---------
+## Polyfill
 
 `reduceRight` was added to the ECMA-262 standard in the 5th edition; as such it may not be present in all implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of `reduceRight` in implementations which do not natively support it.
 
@@ -122,8 +118,7 @@ Polyfill
       };
     }
 
-Examples
---------
+## Examples
 
 ### Sum up all values within an array
 
@@ -195,7 +190,7 @@ Examples
 
 Function composition is a mechanism for combining functions, in which the output of each function is passed into the next one, and the output of the last function is the final result. In this example we use `reduceRight()` to implement function composition.
 
-See also [Function composition](https://en.wikipedia.org/wiki/Function_composition_(computer_science)) on Wikipedia.
+See also [Function composition](<https://en.wikipedia.org/wiki/Function_composition_(computer_science)>) on Wikipedia.
 
     const compose = (...args) => (value) => args.reduceRight((acc, fn) => fn(acc), value)
 
@@ -211,14 +206,12 @@ See also [Function composition](https://en.wikipedia.org/wiki/Function_compositi
     // using composition function
     console.log(compose(inc, double)(2)); // 5
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduceright">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.reduceright</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -274,8 +267,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.reduce()`](reduce)
 

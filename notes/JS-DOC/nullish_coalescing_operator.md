@@ -1,19 +1,16 @@
-Nullish coalescing operator (??)
-================================
+# Nullish coalescing operator (??)
 
 The `??` is a logical operator that returns its right-hand side operand when its left-hand side operand is [`null`](../global_objects/null) or [`undefined`](../global_objects/undefined), and otherwise returns its left-hand side operand.
 
-This can be contrasted with the [logical OR (`||`) operator](logical_or), which returns the right-hand side operand if the left operand is *any* [falsy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#description)value, not only `null` or `undefined`. In other words, if you use `||` to provide some default value to another variable `foo`, you may encounter unexpected behaviors if you consider some falsy values as usable (e.g., `''` or `0`). See below for more examples.
+This can be contrasted with the [logical OR (`||`) operator](logical_or), which returns the right-hand side operand if the left operand is _any_ [falsy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#description)value, not only `null` or `undefined`. In other words, if you use `||` to provide some default value to another variable `foo`, you may encounter unexpected behaviors if you consider some falsy values as usable (e.g., `''` or `0`). See below for more examples.
 
 The nullish coalescing operator has the fifth-lowest [operator precedence](operator_precedence), directly lower than `||` and directly higher than the [conditional (ternary) operator](conditional_operator).
 
-Syntax
-------
+## Syntax
 
     leftExpr ?? rightExpr
 
-Examples
---------
+## Examples
 
 ### Using the nullish coalescing operator
 
@@ -40,7 +37,7 @@ Earlier, when one wanted to assign a default value to a variable, a common patte
     //  foo is never assigned any value so it is still undefined
     let someDummyText = foo || 'Hello!';
 
-However, due to `||` being a boolean logical operator, the left hand-side operand was coerced to a boolean for the evaluation and any *falsy* value (`0`, `''`, `NaN`, `null`, `undefined`) was not returned. This behavior may cause unexpected consequences if you consider `0`, `''`, or `NaN` as valid values.
+However, due to `||` being a boolean logical operator, the left hand-side operand was coerced to a boolean for the evaluation and any _falsy_ value (`0`, `''`, `NaN`, `null`, `undefined`) was not returned. This behavior may cause unexpected consequences if you consider `0`, `''`, or `NaN` as valid values.
 
     let count = 0;
     let text = "";
@@ -97,14 +94,12 @@ The nullish coalescing operator treats `undefined` and `null` as specific values
     console.log(foo.someFooProp?.toUpperCase() ?? "not available"); // "HI"
     console.log(foo.someBarProp?.toUpperCase() ?? "not available"); // "not available"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-CoalesceExpression">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#prod-CoalesceExpression</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -160,8 +155,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [The optional chaining operator](optional_chaining)
 -   [The logical OR (`||`) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_or_2)

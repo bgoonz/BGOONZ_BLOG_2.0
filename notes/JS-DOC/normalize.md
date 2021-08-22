@@ -1,17 +1,15 @@
-String.prototype.normalize()
-============================
+# String.prototype.normalize()
 
 The `normalize()` method returns the Unicode Normalization Form of the string.
 
-Syntax
-------
+## Syntax
 
     normalize()
     normalize(form)
 
 ### Parameters
 
- `form` <span class="badge inline optional">Optional</span>   
+`form` <span class="badge inline optional">Optional</span>  
 One of `"NFC"`, `"NFD"`, `"NFKC"`, or `"NFKD"`, specifying the Unicode Normalization Form. If omitted or [`undefined`](../undefined), `"NFC"` is used.
 
 These values have the following meanings:
@@ -37,10 +35,9 @@ A string containing the Unicode Normalization Form of the given string.
 [`RangeError`](../rangeerror)  
 A [`RangeError`](../rangeerror) is thrown if `form` isn't one of the values specified above.
 
-Description
------------
+## Description
 
-Unicode assigns a unique numerical value, called a *code point*, to each character. For example, the code point for `"A"` is given as U+0041. However, sometimes more than one code point, or sequence of code points, can represent the same abstract character — the character `"ñ"` for example can be represented by either of:
+Unicode assigns a unique numerical value, called a _code point_, to each character. For example, the code point for `"A"` is given as U+0041. However, sometimes more than one code point, or sequence of code points, can represent the same abstract character — the character `"ñ"` for example can be represented by either of:
 
 -   The single code point U+00F1.
 -   The code point for `"n"` (U+006E) followed by the code point for the combining tilde (U+0303).
@@ -134,8 +131,7 @@ When applying compatibility normalization it's important to consider what you in
 
 As with canonical normalization, you can ask for decomposed or composed compatible forms by passing `"NFKD"` or `"NFKC"`, respectively.
 
-Examples
---------
+## Examples
 
 ### Using `normalize()`
 
@@ -171,14 +167,12 @@ Examples
     // U+0307: COMBINING DOT ABOVE
     str.normalize('NFKD'); // '\u0073\u0323\u0307'
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.normalize">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.normalize</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -234,8 +228,7 @@ No
 
 2.0
 
-See also
---------
+## See also
 
 -   [Unicode Standard Annex \#15, Unicode Normalization Forms](https://www.unicode.org/reports/tr15/)
 -   [Unicode equivalence](https://en.wikipedia.org/wiki/Unicode_equivalence)

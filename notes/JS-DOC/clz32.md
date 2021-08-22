@@ -1,10 +1,8 @@
-Math.clz32()
-============
+# Math.clz32()
 
 The `Math.clz32()` function returns the number of leading zero bits in the 32-bit binary representation of a number.
 
-Syntax
-------
+## Syntax
 
     Math.clz32(x)
 
@@ -17,8 +15,7 @@ A number.
 
 The number of leading zero bits in the 32-bit binary representation of the given number.
 
-Description
------------
+## Description
 
 "`clz32`" is short for **CountLeadingZeroes32**.
 
@@ -103,8 +100,7 @@ Make these helper functions into ASM.JS module; then, you have a true performanc
     var ctrz = countTrailsMethods.a;
     var ctron = countTrailsMethods.b;
 
-Examples
---------
+## Examples
 
 ### Using Math.clz32()
 
@@ -118,8 +114,7 @@ Examples
     Math.clz32(true);        // 31
     Math.clz32(3.5);         // 30
 
-Polyfill
---------
+## Polyfill
 
 The following polyfill is the most efficient.
 
@@ -137,8 +132,7 @@ The following polyfill is the most efficient.
       };
     })(Math.log, Math.LN2);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.clz32">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.clz32</span></a></td></tr></tbody></table>
@@ -169,8 +163,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Math`](../math)
 -   [`Math.imul`](imul)

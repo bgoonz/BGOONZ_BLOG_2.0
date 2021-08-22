@@ -1,10 +1,8 @@
-Symbol.keyFor()
-===============
+# Symbol.keyFor()
 
 The `Symbol.keyFor(sym)` method retrieves a shared symbol key from the global symbol registry for the given symbol.
 
-Syntax
-------
+## Syntax
 
     Symbol.keyFor(sym);
 
@@ -17,8 +15,7 @@ Symbol, required. The symbol to find a key for.
 
 A string representing the key for the given symbol if one is found on the global registry; otherwise, [`undefined`](../undefined).
 
-Examples
---------
+## Examples
 
 ### Using keyFor()
 
@@ -32,8 +29,7 @@ Examples
     // in the global symbol registry
     Symbol.keyFor(Symbol.iterator) // undefined
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.keyfor">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-symbol.keyfor</span></a></td></tr></tbody></table>
@@ -64,8 +60,7 @@ No
 
 4.0
 
-See also
---------
+## See also
 
 -   [`Symbol.for()`](for)
 

@@ -1,5 +1,4 @@
-RegExp.prototype.unicode
-========================
+# RegExp.prototype.unicode
 
 The `unicode` property indicates whether or not the "`u`" flag is used with a regular expression. `unicode` is a read-only property of an individual regular expression instance.
 
@@ -17,15 +16,13 @@ Configurable
 
 yes
 
-Description
------------
+## Description
 
 The value of `unicode` is a [`Boolean`](../boolean) and `true` if the "`u`" flag was used; otherwise `false`. The "`u`" flag enables various Unicode-related features. With the "u" flag, any Unicode code point escapes will be interpreted as such, for example.
 
 You cannot change this property directly. It is read-only.
 
-Examples
---------
+## Examples
 
 ### Using the unicode property
 
@@ -33,14 +30,12 @@ Examples
 
     console.log(regex.unicode); // true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.unicode">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-get-regexp.prototype.unicode</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -98,8 +93,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`RegExp.lastIndex`](lastindex)
 -   [`RegExp.prototype.dotAll`](dotall)

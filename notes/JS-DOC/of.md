@@ -1,10 +1,8 @@
-TypedArray.of()
-===============
+# TypedArray.of()
 
 The `TypedArray.of()` method creates a new [typed array](../typedarray#typedarray_objects) from a variable number of arguments. This method is nearly the same as [`Array.of()`](../array/of).
 
-Syntax
-------
+## Syntax
 
     TypedArray.of(element0[, element1[, ...[, elementN]]])
 
@@ -31,16 +29,14 @@ Elements of which to create the typed array.
 
 A new [`TypedArray`](../typedarray) instance.
 
-Description
------------
+## Description
 
 Some subtle distinctions between [`Array.of()`](../array/of) and `TypedArray.of()`:
 
 -   If the `this` value passed to `TypedArray.of()` is not a constructor, `TypedArray.of()` will throw a [`TypeError`](../typeerror), where `Array.of()` defaults to creating a new [`Array`](../array).
 -   `TypedArray.of()` uses `[[Put]]` where `Array.of()` uses `[[DefineProperty]]`. Hence, when working with [`Proxy`](../proxy) objects, it calls [`handler.set`](../proxy/proxy/set) to create new elements rather than [`handler.defineProperty()`](../proxy/proxy/defineproperty).
 
-Examples
---------
+## Examples
 
 ### Using of()
 
@@ -49,14 +45,12 @@ Examples
     Float32Array.of(1, 2, 3);    // Float32Array [ 1, 2, 3 ]
     Int16Array.of(undefined);    // Int16Array [ 0 ]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of '%TypedArray%.of' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -112,8 +106,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`TypedArray.from()`](from)
 -   [`Array.of()`](../array/of)

@@ -1,5 +1,4 @@
-RegExp.prototype.source
-=======================
+# RegExp.prototype.source
 
 The `source` property returns a [`String`](../string) containing the source text of the regexp object, and it doesn't contain the two forward slashes on both sides and any flags.
 
@@ -17,8 +16,7 @@ Configurable
 
 yes
 
-Examples
---------
+## Examples
 
 ### Using source
 
@@ -35,14 +33,12 @@ Starting with ECMAScript 5, the `source` property no longer returns an empty str
     new RegExp('\n').source === '\n';  // true, prior to ES5
     new RegExp('\n').source === '\\n'; // true, starting with ES5
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.source">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-get-regexp.prototype.source</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -176,8 +172,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`RegExp.prototype.flags`](flags)
 

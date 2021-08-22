@@ -1,12 +1,10 @@
-Math.ceil()
-===========
+# Math.ceil()
 
 The `Math.ceil()` function always rounds a number up to the next largest integer.
 
 **Note:** `Math.ceil(null`) returns integer 0 and does not give a [`NaN`](../nan) error.
 
-Syntax
-------
+## Syntax
 
     Math.ceil(x)
 
@@ -19,13 +17,11 @@ A number.
 
 The smallest integer greater than or equal to the given number.
 
-Description
------------
+## Description
 
 Because `ceil()` is a static method of `Math`, you always use it as `Math.ceil()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.ceil()
 
@@ -109,8 +105,7 @@ The following example shows example usage of `Math.ceil()`.
     Math.ceil10(-55.59, -1);   // -55.5
     Math.ceil10(-59, 1);       // -50
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ceil">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.ceil</span></a></td></tr></tbody></table>
@@ -141,8 +136,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.abs()`](abs)
 -   [`Math.floor()`](floor)
