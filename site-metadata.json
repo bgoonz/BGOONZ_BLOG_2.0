@@ -80,7 +80,7 @@
                     {
                         "label": "ds-algo",
                         "url": "docs/articles/ds-algo-overview/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -89,7 +89,7 @@
                     {
                         "label": "platform docs",
                         "url": "blog/platform-docs/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -98,7 +98,7 @@
                     {
                         "label": "nodejs",
                         "url": "docs/articles/nodejs/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -127,7 +127,7 @@
                     {
                         "label": "Medium Articles",
                         "url": "https://bryanguner.medium.com/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -145,7 +145,7 @@
                     {
                         "label": "Bootcamp Resources",
                         "url": "#",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -163,7 +163,7 @@
                     {
                         "label": "Gallery",
                         "url": "/docs/gallery",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -263,7 +263,7 @@
                     {
                         "label": "alt-blogs",
                         "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -272,7 +272,7 @@
                     {
                         "label": "Games",
                         "url": "https://bgoonz-games.netlify.app/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -308,7 +308,7 @@
                     {
                         "label": "Wordpress Blog",
                         "url": "https://web-dev-hub.com/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -317,7 +317,7 @@
                     {
                         "label": "Project Portfolio Gallery",
                         "url": "https://project-portfolio42.netlify.app/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -335,7 +335,7 @@
                     {
                         "label": "Github HTML Previewer",
                         "url": "https://githtmlpreview.netlify.app/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -344,7 +344,7 @@
                     {
                         "label": "Text Tools",
                         "url": "https://devtools42.netlify.app/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -353,7 +353,7 @@
                     {
                         "label": "Ternary 2 If Else",
                         "url": "https://ternary42.netlify.app/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -362,7 +362,7 @@
                     {
                         "label": "Job Search Resources",
                         "url": "https://determined-dijkstra-ee7390.netlify.app/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -371,7 +371,7 @@
                     {
                         "label": "Setup Checker",
                         "url": "https://github.com/bgoonz/web-dev-setup-checker",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -389,7 +389,7 @@
                     {
                         "label": "WebDev Quizzes",
                         "url": "https://web-dev-interview-prep-quiz-website.netlify.app/",
-                       "style": "primary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
