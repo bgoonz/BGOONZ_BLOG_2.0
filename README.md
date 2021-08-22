@@ -4,7 +4,10 @@
 
 <div align="center">
 
-### [WEBSITE](https://bgoonz-blog.netlify.app/)
+# [WEBSITE](https://master--bgoonz-blog.netlify.app/)
+    
+# Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)    
+    
 
 ### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
 

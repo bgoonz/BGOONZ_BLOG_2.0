@@ -107,7 +107,7 @@
                     {
                         "label": "Blog w Comments",
                         "url": "/blogWcomments/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -190,7 +190,17 @@
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [],
+                "subnav_links": [
+                    {
+                        "label": "DTW-guitar-effects",
+                        "url": "/docs/audio/audio",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
                 "type": "action_menu"
             },
             {
