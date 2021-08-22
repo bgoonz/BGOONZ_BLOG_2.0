@@ -10,11 +10,6 @@ seo:
 template: docs
 ---
 
-
-
-
-
-
 The `fs` module provides a lot of very useful functionality to access and interact with the file system.
 
 There is no need to install it. Being part of the Node.js core, it can be used by simply requiring it:

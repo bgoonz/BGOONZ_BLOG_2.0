@@ -1,11 +1,11 @@
 ---
 title: module-exports
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: page
 image: images/theme.png
 subtitle: how we introduce modularity into our code in the node ecosystem

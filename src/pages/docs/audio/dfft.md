@@ -10,6 +10,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 # Frequency and the fast Fourier transform
 
 > If you want to find the secrets of the universe, think in terms of energy,
@@ -17,9 +18,7 @@ template: docs
 >
 > — Nikola Tesla
 
-*This chapter was written in collaboration with SW's father, PW van der Walt.*
-
-
+_This chapter was written in collaboration with SW's father, PW van der Walt._
 
 ## Introducing frequency
 
@@ -38,15 +37,15 @@ import numpy as np
 ```
 
 The discrete[^discrete] Fourier transform (DFT) is a mathematical technique
-to convert temporal or spatial data into *frequency domain* data.
-*Frequency* is a familiar concept, due to its colloquial occurrence in
+to convert temporal or spatial data into _frequency domain_ data.
+_Frequency_ is a familiar concept, due to its colloquial occurrence in
 the English language: the lowest notes your headphones can rumble out
 are around 20 Hertz, whereas middle C on a piano lies around 261.6
-Hertz.  Hertz (Hz), or oscillations per second, in this case literally
+Hertz. Hertz (Hz), or oscillations per second, in this case literally
 refers to the number of times per second at which the membrane inside
-the headphone moves to-and-fro.  That, in turn, creates compressed
+the headphone moves to-and-fro. That, in turn, creates compressed
 pulses of air which, upon arrival at your eardrum, induces a vibration
-at the same frequency.  So, if you take a simple periodic function, $\sin(10 \times 2 \pi t)$, you can view it as a wave:
+at the same frequency. So, if you take a simple periodic function, $\sin(10 \times 2 \pi t)$, you can view it as a wave:
 
 ```python
 f = 10  # Frequency, in cycles per second, or Hertz
@@ -60,17 +59,19 @@ ax.plot(t, x)
 ax.set_xlabel('Time [s]')
 ax.set_ylabel('Signal amplitude');
 ```
+
 <!-- caption text="A simple periodic function in time" -->
 
-[^discrete]: The discrete Fourier transform operates on sampled data,
-             in contrast to the standard Fourier transform which is
-             defined for continuous functions.
+[^discrete]:
+    The discrete Fourier transform operates on sampled data,
+    in contrast to the standard Fourier transform which is
+    defined for continuous functions.
 
 Or you can equivalently think of it as a repeating signal of
-*frequency* 10 Hertz (it repeats once every $1/10$ seconds—a length of
-time we call its *period*).  Although we naturally associate frequency
-with time, it can equally well be applied to space.  E.g., a
-photo of a textile patterns exhibits high *spatial frequency*, whereas
+_frequency_ 10 Hertz (it repeats once every $1/10$ seconds—a length of
+time we call its _period_). Although we naturally associate frequency
+with time, it can equally well be applied to space. E.g., a
+photo of a textile patterns exhibits high _spatial frequency_, whereas
 the sky or other smooth objects have low spatial frequency.
 
 Let us now examine our sinusoid through application of the discrete Fourier
@@ -90,22 +91,23 @@ ax.set_ylabel('Frequency Domain (Spectrum) Magnitude')
 ax.set_xlim(-f_s / 2, f_s / 2)
 ax.set_ylim(-5, 110)
 ```
+
 <!-- caption text="Frequencies that make up our periodic signal above" -->
 
 We see that the output of the FFT is a one-dimensional array of the
-same shape as the input, containing complex values.  All values are
-zero, except for two entries.  Traditionally, we visualize the
-magnitude of the result as a *stem plot*, in which the height of each
+same shape as the input, containing complex values. All values are
+zero, except for two entries. Traditionally, we visualize the
+magnitude of the result as a _stem plot_, in which the height of each
 stem corresponds to the underlying value.
 
 (We explain why you see positive and negative frequencies later on
-in the sidebox titled "Discrete Fourier transforms".  You may also
+in the sidebox titled "Discrete Fourier transforms". You may also
 refer to that section for a more in-depth overview of the underlying
 mathematics.)
 
-The Fourier transform takes us from the *time* to the *frequency*
+The Fourier transform takes us from the _time_ to the _frequency_
 domain, and this turns out to have a massive number of applications.
-The *fast Fourier transform* is an algorithm for computing the
+The _fast Fourier transform_ is an algorithm for computing the
 discrete Fourier transform; it achieves its high speed by storing and
 re-using results of computations as it progresses.
 
@@ -116,7 +118,7 @@ of goals.
 
 ## Illustration: a birdsong spectrogram
 
-Let's start with one of the most common applications, converting a sound signal (consisting of variations of air pressure over time) to a *spectrogram*.
+Let's start with one of the most common applications, converting a sound signal (consisting of variations of air pressure over time) to a _spectrogram_.
 You might have seen spectrograms on your music player's equalizer view, or even on an old-school stereo.
 
 ![The Numark EQ2600 Stereo Equalizer; image used with permission from the author, Sergey Gerasimuk. Source: http://sgerasimuk.blogspot.com/2014/06/numark-eq-2600-10-band-stereo-graphic.html](../images/sergey_gerasimuk_numark-eq-2600-IMG_0236.JPG)
@@ -130,7 +132,7 @@ Audio('data/nightingale.wav')
 ```
 
 If you are reading the paper version of this book, you'll have to use
-your imagination!  It goes something like this:
+your imagination! It goes something like this:
 chee-chee-woorrrr-hee-hee cheet-wheet-hoorrr-chi
 rrr-whi-wheo-wheo-wheo-wheo-wheo-wheo.
 
@@ -168,55 +170,58 @@ ax.plot(np.arange(N) / rate, audio)
 ax.set_xlabel('Time [s]')
 ax.set_ylabel('Amplitude [unknown]');
 ```
+
 <!-- caption text="Audio waveform plot of birdsong" -->
 
-Well, that's not very satisfying, is it?  If I sent this voltage to a
+Well, that's not very satisfying, is it? If I sent this voltage to a
 speaker, I might hear a bird chirping, but I can't very well imagine
-how it would sound like in my head.  Is there a better way of *seeing*
+how it would sound like in my head. Is there a better way of _seeing_
 what is going on?
 
 There is, and it is called the discrete Fourier transform, where
 discrete refers to the recording consisting of time-spaced sound
 measurements, in contrast to a continual recording as, e.g., on
-magnetic tape (remember casettes?).  The discrete Fourier
-transform is often computed using the *fast Fourier transform* (FFT)
+magnetic tape (remember casettes?). The discrete Fourier
+transform is often computed using the _fast Fourier transform_ (FFT)
 algorithm, a name informally used to refer to the DFT itself. The
 DFT tells us which frequencies or "notes" to expect in our signal.
 
 Of course, a bird sings many notes throughout the song, so we'd also
-like to know *when* each note occurs.  The Fourier transform takes a
+like to know _when_ each note occurs. The Fourier transform takes a
 signal in the time domain (i.e., a set of measurements over time) and
 turns it into a spectrum—a set of frequencies with corresponding
-(complex[^complex]) values.  The spectrum does not contain any information about
+(complex[^complex]) values. The spectrum does not contain any information about
 time! [^time]
 
-[^complex]: The Fourier transform essentially tells us how to combine
-            a set of sinusoids of varying frequency to form the input
-            signal.  The spectrum consists of complex numbers—one for
-            each sinusoid.  A complex number encodes two things: a
-            magnitude and an angle.  The magnitude is the strength of
-            the sinusoid in the signal, and the angle how much it is
-            shifted in time.  At this point, we only care about the
-            magnitude, which we calculate using ``np.abs``.
+[^complex]:
+    The Fourier transform essentially tells us how to combine
+    a set of sinusoids of varying frequency to form the input
+    signal. The spectrum consists of complex numbers—one for
+    each sinusoid. A complex number encodes two things: a
+    magnitude and an angle. The magnitude is the strength of
+    the sinusoid in the signal, and the angle how much it is
+    shifted in time. At this point, we only care about the
+    magnitude, which we calculate using `np.abs`.
 
-[^time]: For more on techniques for calculating both (approximate) frequencies
-         and time of occurrence, read up on wavelet analysis.
+[^time]:
+    For more on techniques for calculating both (approximate) frequencies
+    and time of occurrence, read up on wavelet analysis.
 
 So, to find both the frequencies and the time at which they were sung,
-we'll need to be somewhat clever.  Our strategy is as follows:
+we'll need to be somewhat clever. Our strategy is as follows:
 take the audio signal, split it into small, overlapping slices, and
 apply the Fourier transform to each (a technique known as the Short
 Time Fourier Transform).
 
 We'll split the signal into slices of 1024 samples—that's about 0.02
-seconds of audio.  Why we choose 1024 and not 1000 we'll explain in a
-second when we examine performance.  The slices will overlap by 100
+seconds of audio. Why we choose 1024 and not 1000 we'll explain in a
+second when we examine performance. The slices will overlap by 100
 samples as shown here:
 
 ![A sliding window operation](../figures/generated/sliding_window.png)
 
 Start by chopping up the signal into slices of 1024 samples, each
-slice overlapping the previous by 100 samples.  The resulting `slices`
+slice overlapping the previous by 100 samples. The resulting `slices`
 object contains one slice per row.
 
 ```python
@@ -244,7 +249,7 @@ slices = slices.T
 print('Shape of `slices`:', slices.shape)
 ```
 
-For each slice, calculate the discrete Fourier transform.  The DFT
+For each slice, calculate the discrete Fourier transform. The DFT
 returns both positive and negative frequencies (more on that in
 "Frequencies and their ordering"), so we slice out the positive M / 2
 frequencies for now.
@@ -255,7 +260,7 @@ spectrum = np.abs(spectrum)
 ```
 
 (As a quick aside, you'll note that we use `scipy.fftpack.fft` and
-`np.fft` interchangeably.  NumPy provides basic FFT functionality,
+`np.fft` interchangeably. NumPy provides basic FFT functionality,
 which SciPy extends further, but both include an `fft` function, based
 on the Fortran FFTPACK.)
 
@@ -278,16 +283,17 @@ ax.axis('tight')
 ax.set_ylabel('Frequency [kHz]')
 ax.set_xlabel('Time [s]');
 ```
+
 <!-- caption text="Birdsong spectrogram" -->
 
-Much better!  We can now see the frequencies vary over time, and it
-corresponds to the way the audio sounds.  See if you can match my
+Much better! We can now see the frequencies vary over time, and it
+corresponds to the way the audio sounds. See if you can match my
 earlier description: chee-chee-woorrrr-hee-hee cheet-wheet-hoorrr-chi
 rrr-whi-wheo-wheo-wheo-wheo-wheo-wheo (I didn't transcribe the section
 from 3 to 5 seconds—that's another bird).
 
 SciPy already includes an implementation of this
-procedure as ``scipy.signal.spectrogram``, which can be invoked as
+procedure as `scipy.signal.spectrogram`, which can be invoked as
 follows:
 
 ```python
@@ -302,61 +308,64 @@ ax.pcolormesh(times, freqs / 1000, 10 * np.log10(Sx), cmap='viridis')
 ax.set_ylabel('Frequency [kHz]')
 ax.set_xlabel('Time [s]');
 ```
+
 <!-- caption text="SciPy built-in rendition of birdsong spectrogram" -->
 
 The only differences are that SciPy returns the spectrum magnitude
 squared (which turns measured voltage into measured energy), and
 multiplies it by some normalization factors[^scaling].
 
-[^scaling]: SciPy goes to some effort to preserve the energy in the
-            spectrum.  Therefore, when taking only half the components
-            (for N even), it multiplies the remaining components,
-            apart from the first and last components, by two (those
-            two components are "shared" by the two halves of the
-            spectrum).  It also normalizes the window by dividing it
-            by its sum.
+[^scaling]:
+    SciPy goes to some effort to preserve the energy in the
+    spectrum. Therefore, when taking only half the components
+    (for N even), it multiplies the remaining components,
+    apart from the first and last components, by two (those
+    two components are "shared" by the two halves of the
+    spectrum). It also normalizes the window by dividing it
+    by its sum.
 
 ## History
 
-Tracing the exact origins of the Fourier transform is tricky.  Some
+Tracing the exact origins of the Fourier transform is tricky. Some
 related procedures go as far back as Babylonian times, but it was the
 hot topics of calculating asteroid orbits and solving the heat (flow)
-equation that led to several breakthroughs in the early 1800s.  Whom
+equation that led to several breakthroughs in the early 1800s. Whom
 exactly among Clairaut, Lagrange, Euler, Gauss and D'Alembert we
 should thank is not exactly clear, but Gauss was the first to describe
 the fast Fourier transform (an algorithm for computing the discrete
-Fourier transform, popularized by Cooley and Tukey in 1965).  Joseph
+Fourier transform, popularized by Cooley and Tukey in 1965). Joseph
 Fourier, after whom the transform is named, first claimed that
-*arbitrary* periodic [^periodic] functions can be expressed as a sum of
+_arbitrary_ periodic [^periodic] functions can be expressed as a sum of
 trigonometric functions.
 
-[^periodic]: The period can, in fact, also be infinite!  The general
-             continuous Fourier transform provides for this
-             possibility.  Discrete Fourier transforms are generally
-             defined over a finite interval, and this is implicitly
-             the period of the time domain function that is
-             transformed.  In other words, if you do the inverse
-             discrete Fourier transform, you *always* get a periodic
-             signal out.
+[^periodic]:
+    The period can, in fact, also be infinite! The general
+    continuous Fourier transform provides for this
+    possibility. Discrete Fourier transforms are generally
+    defined over a finite interval, and this is implicitly
+    the period of the time domain function that is
+    transformed. In other words, if you do the inverse
+    discrete Fourier transform, you _always_ get a periodic
+    signal out.
 
 ## Implementation
 
 The discrete Fourier transform functionality in SciPy lives in the
-`scipy.fftpack`` module.  Among other things, it provides the
+`scipy.fftpack`` module. Among other things, it provides the
 following DFT-related functionality:
 
- - ``fft``, ``fft2``, ``fftn``: Compute the discrete Fourier transform using
-   the Fast Fourier Transform algorithm in 1, 2, or `n` dimensions.
- - ``ifft``, ``ifft2``, ``ifftn``: Compute the inverse of the DFT
- - ``dct``, ``idct``, ``dst``, ``idst``: Compute the cosine and sine transforms, and their inverses.
- - ``fftshift``, ``ifftshift``: Shift the zero-frequency component to the center of the spectrum and back, respectively (more about that soon).
- - ``fftfreq``: Return the discrete Fourier transform sample frequencies.
- - ``rfft``: Compute the DFT of a real sequence, exploiting the symmetry of the resulting spectrum for increased performance.  Also used by ``fft`` internally when applicable.
+-   `fft`, `fft2`, `fftn`: Compute the discrete Fourier transform using
+    the Fast Fourier Transform algorithm in 1, 2, or `n` dimensions.
+-   `ifft`, `ifft2`, `ifftn`: Compute the inverse of the DFT
+-   `dct`, `idct`, `dst`, `idst`: Compute the cosine and sine transforms, and their inverses.
+-   `fftshift`, `ifftshift`: Shift the zero-frequency component to the center of the spectrum and back, respectively (more about that soon).
+-   `fftfreq`: Return the discrete Fourier transform sample frequencies.
+-   `rfft`: Compute the DFT of a real sequence, exploiting the symmetry of the resulting spectrum for increased performance. Also used by `fft` internally when applicable.
 
 This is complemented by the following functions in NumPy:
 
- - ``np.hanning``, ``np.hamming``, ``np.bartlett``, ``np.blackman``,
-   ``np.kaiser``: Tapered windowing functions.
+-   `np.hanning`, `np.hamming`, `np.bartlett`, `np.blackman`,
+    `np.kaiser`: Tapered windowing functions.
 
 It is also used to perform fast convolutions of large inputs by
 `scipy.signal.fftconvolve`.
@@ -367,34 +376,35 @@ software license.
 
 ## Choosing the length of the discrete Fourier transform (DFT)
 
-A naive calculation of the DFT takes $\mathcal{O}\left(N^2\right)$ operations [^big_O].
-How come?  Well, you have $N$
+A naive calculation of the DFT takes $\mathcal{O}\left(N^2\right)$ operations [^big_o].
+How come? Well, you have $N$
 (complex) sinusoids of different frequencies ($2 \pi f \times 0, 2 \pi f \times
 1, 2 \pi f \times 3, ..., 2 \pi f \times (N - 1)$), and you want to see how
-strongly your signal corresponds to each.  Starting with the first,
+strongly your signal corresponds to each. Starting with the first,
 you take the dot product with the signal (which, in itself, entails $N$
-multiplication operations).  Repeating this operation $N$ times, once
+multiplication operations). Repeating this operation $N$ times, once
 for each sinusoid, then gives $N^2$ operations.
 
-[^big_O]: In computer science, the computational cost of an algorithm
-          is often expressed in "Big O" notation.  The notation gives
-          us an indication of how an algorithm's execution time scales
-          with an increasing number of elements.  If an algorithm is $\mathcal{O}(N)$,
-          it means its execution time increases linearly with
-          the number of input elements (for example, searching for a
-          given value in an unsorted list is $\mathcal{O}\left(N\right)$).  Bubble sort is
-          an example of an $O\left(N^2\right)$ algorithm; the exact number of
-          operations performed may, hypothetically, be $N + \frac{1}{2} N^2$,
-          meaning that the computational cost grows quadratically with
-          the number of input elements.
+[^big_o]:
+    In computer science, the computational cost of an algorithm
+    is often expressed in "Big O" notation. The notation gives
+    us an indication of how an algorithm's execution time scales
+    with an increasing number of elements. If an algorithm is $\mathcal{O}(N)$,
+    it means its execution time increases linearly with
+    the number of input elements (for example, searching for a
+    given value in an unsorted list is $\mathcal{O}\left(N\right)$). Bubble sort is
+    an example of an $O\left(N^2\right)$ algorithm; the exact number of
+    operations performed may, hypothetically, be $N + \frac{1}{2} N^2$,
+    meaning that the computational cost grows quadratically with
+    the number of input elements.
 
 Now, contrast that with the fast Fourier transform, which is $\mathcal{O}\left(N \log N\right)$ in
 the ideal case due to the clever re-use of
-calculations—a great improvement!  However, the classical Cooley-Tukey
+calculations—a great improvement! However, the classical Cooley-Tukey
 algorithm implemented in FFTPACK (and used by SciPy) recursively breaks up the transform
 into smaller (prime-sized) pieces and only shows this improvement for
 "smooth" input lengths (an input length is considered smooth when its
-largest prime factor is small).  For large prime-sized pieces, the
+largest prime factor is small). For large prime-sized pieces, the
 Bluestein or Rader algorithms can be used in conjunction with the
 Cooley-Tukey algorithm, but this optimization is not implemented in
 FFTPACK.[^fast]
@@ -440,27 +450,29 @@ ax1.stem(lengths, smoothness)
 ax1.set_ylabel('Smoothness of input length\n(lower is better)')
 ax1.set_xlabel('Length of input');
 ```
+
 <!-- caption text="FFT execution time vs smoothness for different input lengths" -->
 
 The intuition is that, for smooth input lengths, the FFT can be broken up
 into many small pieces. After performing the FFT on the first piece,
-those results can be reused in subsequent computations.  This explains
+those results can be reused in subsequent computations. This explains
 why we chose a length of 1024 for our audio slices earlier—it has a
 smoothness of only 2, resulting in the optimal "radix-2 Cooley-Tukey"
 algorithm, which computes the FFT using only $(N/2) \log_2 N = 5120$ complex
-multiplications, instead of $N^2 = 1048576$.  Choosing $N = 2^m$
+multiplications, instead of $N^2 = 1048576$. Choosing $N = 2^m$
 always ensures a maximally smooth $N$ (and, thus, the fastest FFT).
 
-[^fast]: While ideally we don't want to reimplement existing
-         algorithms, sometimes it becomes necessary in order to obtain
-         the best execution speeds possible, and tools
-         like [Cython](http://cython.org)—which compiles Python to
-         C—and [Numba](http://numba.pydata.org)—which does
-         just-in-time compilation of Python code—make life a lot
-         easier (and faster!).  If you are able to use GPL-licenced
-         software, you may consider
-         using [PyFFTW](https://github.com/hgomersall/pyFFTW) for
-         faster FFTs.
+[^fast]:
+    While ideally we don't want to reimplement existing
+    algorithms, sometimes it becomes necessary in order to obtain
+    the best execution speeds possible, and tools
+    like [Cython](http://cython.org)—which compiles Python to
+    C—and [Numba](http://numba.pydata.org)—which does
+    just-in-time compilation of Python code—make life a lot
+    easier (and faster!). If you are able to use GPL-licenced
+    software, you may consider
+    using [PyFFTW](https://github.com/hgomersall/pyFFTW) for
+    faster FFTs.
 
 ## More discrete Fourier transform concepts
 
@@ -472,11 +484,11 @@ another real-world problem: analyzing target detection in radar data.
 
 For historical reasons, most implementations return an array where
 frequencies vary from low-to-high-to-low (see the box "Discrete
-Fourier transforms" for further explanation of frequencies).  E.g., when we do the real
+Fourier transforms" for further explanation of frequencies). E.g., when we do the real
 Fourier transform of a signal of all ones, an input that has no
 variation and therefore only has the slowest, constant Fourier
 component (also known as the "DC" or Direct Current component—just
-electronics jargon for "mean of the signal"), we see this DC component 
+electronics jargon for "mean of the signal"), we see this DC component
 appearing as the first entry:
 
 ```python
@@ -510,7 +522,7 @@ with np.printoptions(precision=2):
     print("Imaginary part:", X.imag)
 ```
 
-(And, again, recall that the first component is ``np.mean(x) * N``.)
+(And, again, recall that the first component is `np.mean(x) * N`.)
 
 The `fftfreq` function tells us which frequencies we are looking at
 specifically:
@@ -520,14 +532,14 @@ fftpack.fftfreq(10)
 ```
 
 The result tells us that our maximum component occured at a frequency
-of 0.5 cycles per sample.  This agrees with the input, where a
+of 0.5 cycles per sample. This agrees with the input, where a
 minus-one-plus-one cycle repeated every second sample.
 
 Sometimes, it is convenient to view the spectrum organized slightly
 differently, from high-negative to low to-high-positive (for now, we
 won't dive too deeply into the concept of negative frequency, other
 than saying a real-world sine wave is produced by a combination of
-positive and negative frequencies).  We re-shuffle the spectrum using
+positive and negative frequencies). We re-shuffle the spectrum using
 the `fftshift` function.
 
 > **Discrete Fourier transforms {.callout}**
@@ -538,10 +550,12 @@ the `fftshift` function.
 > application) into a sequence of $N$ complex numbers $X_{k}$ by the
 > summation
 >
-> $$X_{k}=\sum_{n=0}^{N-1}x_{n}e^{-j2\pi kn/N},\;k=0,1,\ldots,
-> N-1.$$
+> $$
+> X_{k}=\sum_{n=0}^{N-1}x_{n}e^{-j2\pi kn/N},\;k=0,1,\ldots,
+> N-1.
+> $$
 >
-> With the numbers $X_{k}$ known, the inverse DFT *exactly* recovers the
+> With the numbers $X_{k}$ known, the inverse DFT _exactly_ recovers the
 > sample values $x_{n}$ through the summation
 >
 > $$x_{n}=\frac{1}{N}\sum_{k=0}^{N-1}X_{k}e^{j2\pi kn/N}.$$
@@ -553,20 +567,20 @@ the `fftshift` function.
 >
 > $$x(t)=\sum_{n=-\infty}^{\infty}c_{n}e^{jn\omega_{0}t},$$
 >
-> the DFT is a *finite* series with $N$ terms defined at the equally
-> spaced discrete instances of the *angle* $(\omega_{0}t_{n})=2\pi\frac{k}{N}$
+> the DFT is a _finite_ series with $N$ terms defined at the equally
+> spaced discrete instances of the _angle_ $(\omega_{0}t_{n})=2\pi\frac{k}{N}$
 > in the interval $[0,2\pi)$,
-> i.e. *including* $0$  and *excluding* $2\pi$.
+> i.e. _including_ $0$ and _excluding_ $2\pi$.
 > This automatically normalizes the DFT so that time does
 > not appear explicitly in the forward or inverse transform.
 >
 > If the original function $x(t)$ is limited in frequency to less than
-> half of the sampling frequency (the so-called *Nyquist frequency*),
+> half of the sampling frequency (the so-called _Nyquist frequency_),
 > interpolation between sample values produced by the inverse DFT will
-> usually give a faithful reconstruction of $x(t)$. If $x(t)$ is *not*
+> usually give a faithful reconstruction of $x(t)$. If $x(t)$ is _not_
 > limited as such, the inverse DFT can, in general, not be used to
-> reconstruct $x(t)$ by interpolation.  Note that this limit does not
-> imply that there are *no* methods that can do such a
+> reconstruct $x(t)$ by interpolation. Note that this limit does not
+> imply that there are _no_ methods that can do such a
 > reconstruction—see, e.g., compressed sensing, or finite rate of
 > innovation sampling.
 >
@@ -577,7 +591,7 @@ the `fftshift` function.
 > sinusoid for which $n=1$.
 >
 > The way in which we defined the DFT leads to a few subtleties
-> when $n>\frac{N}{2}$, for even $N$ [^odd_N]. The function $e^{j2\pi kn/N}$ is plotted
+> when $n>\frac{N}{2}$, for even $N$ [^odd_n]. The function $e^{j2\pi kn/N}$ is plotted
 > for increasing values of $k$ in the figure below,
 > for the cases $n=1$ to $n=N-1$ for $N=16$. When $k$ increases from $k$
 > to $k+1$, the angle increases by $\frac{2\pi n}{N}$. When $n=1$,
@@ -585,8 +599,8 @@ the `fftshift` function.
 > increases by $2\pi\frac{N-1}{N}=2\pi-\frac{2\pi}{N}$. Since $2\pi$
 > is precisely once around the circle, the step equates to $-\frac{2\pi}{N}$,
 > i.e. in the direction of a negative
-> frequency. The components up to $N/2$ represent *positive* frequency
-> components, those above $N/2$ up to $N-1$ represent *negative*
+> frequency. The components up to $N/2$ represent _positive_ frequency
+> components, those above $N/2$ up to $N-1$ represent _negative_
 > frequencies. The angle increment for the component $N/2$
 > for $N$ even advances precisely halfway around the circle for
 > each increment in $k$ and can therefore be interpreted as either a
@@ -605,13 +619,14 @@ the `fftshift` function.
 >
 > ![Unit circle samples](../figures/unit_circle_samples.png)
 
-[^odd_N]: We leave it as an exercise for the reader to picture the
-          situation for $N$ odd.  In this chapter, all examples use
-          even-order DFTs.
+[^odd_n]:
+    We leave it as an exercise for the reader to picture the
+    situation for $N$ odd. In this chapter, all examples use
+    even-order DFTs.
 
-Let's examine the frequency components in a noisy image.  Note that,
+Let's examine the frequency components in a noisy image. Note that,
 while a static image has no time-varying component, its values do vary
-across *space*.  The DFT applies equally to either case.
+across _space_. The DFT applies equally to either case.
 
 First, load and display the image:
 
@@ -625,14 +640,15 @@ ax.imshow(image)
 
 print((M, N), image.dtype)
 ```
+
 <!-- caption text="A noisy image of the moon landing" -->
 
-Do not adjust your monitor!  The image you are seeing is real,
+Do not adjust your monitor! The image you are seeing is real,
 although clearly distorted by either the measurement or transmission
 equipment.
 
 To examine the spectrum of the image, we use `fftn` (instead of `fft`)
-to compute the DFT, since it has more than one dimension.  The
+to compute the DFT, since it has more than one dimension. The
 two-dimensional FFT is equivalent to taking the 1-D FFT across rows
 and then across columns (or vice versa).
 
@@ -654,12 +670,13 @@ ax.imshow(np.log(1 + F_magnitude), cmap='viridis',
           extent=(-N // 2, N // 2, -M // 2, M // 2))
 ax.set_title('Spectrum magnitude');
 ```
+
 <!-- caption text="Spectrum of the noisy moon landing image (magnitude)" -->
 
 Note the high values around the origin (middle) of the spectrum—these
 coefficients describe the low frequencies or smooth parts of the
-image; a vague canvas of the photo.  Higher frequency components,
-spread throughout the spectrum, fill in the edges and detail.  Peaks
+image; a vague canvas of the photo. Higher frequency components,
+spread throughout the spectrum, fill in the edges and detail. Peaks
 around higher frequencies correspond to the periodic noise.
 
 From the photo, we can see that the noise (measurement artifacts) is
@@ -697,6 +714,7 @@ ax0.set_title('Spectrum after suppression')
 ax1.imshow(image_filtered)
 ax1.set_title('Reconstructed image');
 ```
+
 <!-- caption text="Filtered moon landing image and its spectrum" -->
 
 ### Windowing
@@ -718,6 +736,7 @@ ax0.set_ylim(-0.1, 1.1)
 ax1.plot(fftpack.fftshift(np.abs(X)))
 ax1.set_ylim(-5, 55);
 ```
+
 <!-- caption text="Spectrum of a rectangular pulse (magnitude)" -->
 
 In theory, you would need a combination of infinitely many sinusoids
@@ -725,9 +744,9 @@ In theory, you would need a combination of infinitely many sinusoids
 typically have the same sidelobe structure as seen here for the pulse.
 
 Importantly, the discrete Fourier transform assumes that the input
-signal is periodic.  If the signal is not, the assumption is simply
+signal is periodic. If the signal is not, the assumption is simply
 that, right at the end of the signal, it jumps back to its beginning
-value.  Consider the function, $x(t)$, shown here:
+value. Consider the function, $x(t)$, shown here:
 
 <img src="../figures/periodic.png"/>
 <!-- caption text="Eight samples have been taken of a given
@@ -735,9 +754,9 @@ value.  Consider the function, $x(t)$, shown here:
  transform assuming periodicity, it creates a step discontinuity
  between the first and last samples." -->
 
-We only measure the signal for a short time, labeled $T_{eff}$.  The
+We only measure the signal for a short time, labeled $T_{eff}$. The
 Fourier transform assumes that $x(8) = x(0)$, and that the signal is
-continued as the dashed, rather than the solid line.  This introduces
+continued as the dashed, rather than the solid line. This introduces
 a big jump at the edge, with the expected oscillation in the spectrum:
 
 ```python
@@ -754,14 +773,15 @@ ax0.set_ylim(-1.1, 1.1)
 ax1.plot(fftpack.fftfreq(len(t)), np.abs(X))
 ax1.set_ylim(0, 190);
 ```
+
 <!-- caption text="Spectrum oscillation due to signal edge discontinuity" -->
 
 Instead of the expected two lines, the peaks are spread out in the
 spectrum.
 
-We can counter this effect by a process called *windowing*. The
+We can counter this effect by a process called _windowing_. The
 original function is multiplied with a window function such as the
-Kaiser window $K(N,\beta)$.  Here we visualize it for $\beta$ ranging
+Kaiser window $K(N,\beta)$. Here we visualize it for $\beta$ ranging
 from 0 to 100:
 
 ```python
@@ -784,6 +804,7 @@ sm._A = []
 
 plt.colorbar(sm).set_label(r'Kaiser $\beta$');
 ```
+
 <!-- caption text="The Kaiser window for various values of $\beta$" -->
 
 By changing the parameter $\beta$, the shape of the window can be
@@ -792,18 +813,19 @@ produces signals that smoothly increase from zero and decrease to zero
 at the endpoints of the sampled interval, producing very low side
 lobes ($\beta$ typically between 5 and 10) [^choosing_a_window].
 
-[^choosing_a_window]: The classical windowing functions include Hann,
-                      Hamming, and Blackman.  They differ in their
-                      sidelobe levels and in the broadening of the
-                      main lobe (in the Fourier domain).  A modern and
-                      flexible window function that is close to
-                      optimal for most applications is the Kaiser
-                      window—a good approximation to the optimal
-                      prolate spheroid window, which concentrates the
-                      most energy into the main lobe.  The Kaiser
-                      window can be tuned to suit the particular
-                      application, as illustrated in the main text, by
-                      adjusting the parameter $\beta$.
+[^choosing_a_window]:
+    The classical windowing functions include Hann,
+    Hamming, and Blackman. They differ in their
+    sidelobe levels and in the broadening of the
+    main lobe (in the Fourier domain). A modern and
+    flexible window function that is close to
+    optimal for most applications is the Kaiser
+    window—a good approximation to the optimal
+    prolate spheroid window, which concentrates the
+    most energy into the main lobe. The Kaiser
+    window can be tuned to suit the particular
+    application, as illustrated in the main text, by
+    adjusting the parameter $\beta$.
 
 <!--
 *For online notebook, use something like:*
@@ -836,6 +858,7 @@ ax0.set_ylim(-1.1, 1.1)
 ax1.plot(fftpack.fftfreq(len(t)), np.abs(X_win))
 ax1.set_ylim(0, 190);
 ```
+
 <!-- caption text="Spectrum of a windowed signal (magnitude)" -->
 
 ## Real-world Application: Analyzing Radar Data
@@ -849,15 +872,15 @@ detection.
 Roughly, an FMCW radar works like this (see box "A
 simple FMCW radar system" for more detail):
 
-A signal with changing frequency is generated.  This signal is
+A signal with changing frequency is generated. This signal is
 transmitted by an antenna, after which it travels outwards, away from the
-radar.  When it hits an object, part of the signal is reflected back
+radar. When it hits an object, part of the signal is reflected back
 to the radar, where it is received, multiplied by a copy of the
 transmitted signal, and sampled, turning it into
-numbers that are packed into an array.  Our challenge is to interpret
+numbers that are packed into an array. Our challenge is to interpret
 those numbers to form meaningful results.
 
-The multiplication step above is important.  From school, recall the
+The multiplication step above is important. From school, recall the
 trigonometric identity:
 
 $
@@ -872,7 +895,7 @@ signal, and one that is the sum of their frequencies.
 
 We are particularly interested in the first, since that gives us some
 indication of how long it took the signal to reflect back to the radar
-(in other words, how far away the object is from us!).  We discard the
+(in other words, how far away the object is from us!). We discard the
 other by applying a low-pass filter to the signal (i.e., a filter that
 discards any high frequencies).
 
@@ -906,14 +929,14 @@ discards any high frequencies).
 
 To summarize, we should note that:
 
- - The data that reaches the computer consists of $N$ samples sampled
-   (from the multiplied, filtered signal) at a sample frequency of
-   $f_{s}$.
- - The **amplitude** of the returned signal varies depending on the
-   **strength of the reflection** (i.e., is a property of the target
-   object and the distance between the target and the radar).
- - The **frequency measured** is an indication of the **distance** of the
-   target object from the radar.
+-   The data that reaches the computer consists of $N$ samples sampled
+    (from the multiplied, filtered signal) at a sample frequency of
+    $f_{s}$.
+-   The **amplitude** of the returned signal varies depending on the
+    **strength of the reflection** (i.e., is a property of the target
+    object and the distance between the target and the radar).
+-   The **frequency measured** is an indication of the **distance** of the
+    target object from the radar.
 
 <!--
 
@@ -976,8 +999,8 @@ To start off, we'll generate some synthetic signals, after which we'll
 turn our focus to the output of an actual radar.
 
 Recall that the radar is increasing its frequency as it transmits at a
-rate of $S$ Hz/s.  After a certain amount of time, $t$, has passed,
-the frequency will now be $t S$ higher.  In that same time span, the
+rate of $S$ Hz/s. After a certain amount of time, $t$, has passed,
+the frequency will now be $t S$ higher. In that same time span, the
 radar signal has traveled $d = t / v$ meters, where $v$ is the speed of
 the transmitted wave through air (roughly the same as the speed of
 light, $3 \times 10^8$ m/s).
@@ -990,8 +1013,7 @@ $$ t_R = 2R / v $$
 
 Therefore, the change in frequency for a target at range $R$ will be:
 
-$$ f_{d}= t_R S = \frac{2RS}{v}$$
-
+$$ f\_{d}= t_R S = \frac{2RS}{v}$$
 
 ```python
 pi = np.pi
@@ -1049,7 +1071,7 @@ v_sim = np.sum(M * signals, axis=1)
 ```
 
 Above, we generate a synthetic signal, $v_\mathrm{single}$, received when
-looking at a single target (see figure below).  By counting the number
+looking at a single target (see figure below). By counting the number
 of cycles seen in a given time period, we can compute the frequency of
 the signal and thus the distance to the target.
 
@@ -1057,7 +1079,7 @@ A real radar will rarely receive only a single echo, though. The
 simulated signal $v_\mathrm{sim}$ shows what a radar signal will look
 like with five targets at different ranges (including two close to one
 another at 154 and 159 meters), and $v_\mathrm{actual}(t)$ shows the
-output signal obtained with an actual radar.  When multiple echoes add
+output signal obtained with an actual radar. When multiple echoes add
 together, the result makes little intuitive sense; until, that is, we
 look at it more carefully through the lens of the discrete Fourier
 transform.
@@ -1079,13 +1101,12 @@ m.
 ![Receiver output signals: (a) single simulated target
  (b) five simulated targets (c) actual radar data](../figures/generated/radar_time_signals.png)
 
-The real-world radar data is read from a NumPy-format ``.npz`` file (a
+The real-world radar data is read from a NumPy-format `.npz` file (a
 light-weight, cross-platform and cross-version compatible storage
-format).  These files can be saved with the ``np.savez`` or
-``np.savez_compressed`` functions.  Note that SciPy's ``io`` submodule
+format). These files can be saved with the `np.savez` or
+`np.savez_compressed` functions. Note that SciPy's `io` submodule
 can also easily read other formats, such as MATLAB(R) and NetCDF
 files.
-
 
 ```python
 data = np.load('data/radar_scan_0.npz')
@@ -1109,22 +1130,22 @@ v_actual = v_actual * (2.5 / 8192)
 
 ```
 
-Since ``.npz``-files can store multiple variables, we have to select
-the one we want: ``data['scan']``.  That returns a
-*structured NumPy array* with the following fields:
+Since `.npz`-files can store multiple variables, we have to select
+the one we want: `data['scan']`. That returns a
+_structured NumPy array_ with the following fields:
 
-- **time** : unsigned 64-bit (8 byte) integer (`np.uint64`)
-- **size** : unsigned 32-bit (4 byte) integer (`np.uint32`)
-- **position**
+-   **time** : unsigned 64-bit (8 byte) integer (`np.uint64`)
+-   **size** : unsigned 32-bit (4 byte) integer (`np.uint32`)
+-   **position**
 
-  - **az** : 32-bit float (`np.float32`)
-  - **el** : 32-bit float (`np.float32`)
-  - **region_type** : unsigned 8-bit (1 byte) integer (`np.uint8`)
-  - **region_ID** : unsigned 16-bit (2 byte) integer (`np.uint16`)
-  - **gain** : unsigned 8-bit (1 byte) integer (`np.uin8`)
-  - **samples** : 2048 unsigned 16-bit (2 byte) integers (`np.uint16`)
+    -   **az** : 32-bit float (`np.float32`)
+    -   **el** : 32-bit float (`np.float32`)
+    -   **region_type** : unsigned 8-bit (1 byte) integer (`np.uint8`)
+    -   **region_ID** : unsigned 16-bit (2 byte) integer (`np.uint16`)
+    -   **gain** : unsigned 8-bit (1 byte) integer (`np.uin8`)
+    -   **samples** : 2048 unsigned 16-bit (2 byte) integers (`np.uint16`)
 
-While it is true that NumPy arrays are *homogeneous* (i.e., all the
+While it is true that NumPy arrays are _homogeneous_ (i.e., all the
 elements inside are the same), it does not mean that those elements
 cannot be compound elements, as is the case here.
 
@@ -1136,7 +1157,7 @@ azimuths = scan['position']['az']  # Get all azimuth measurements
 
 To summarize what we've seen so far: the shown measurements
 ($v_\mathrm{sim}$ and $v_\mathrm{actual}$) are the sum of sinusoidal
-signals reflected by each of several objects.  We need to determine
+signals reflected by each of several objects. We need to determine
 each of the constituent components of these composite radar
 signals. The FFT is the tool that will do this for us.
 
@@ -1144,8 +1165,8 @@ signals. The FFT is the tool that will do this for us.
 
 First, we take the FFTs of our three signals (synthetic single target,
 synthetic multi-target, and real) and then display the
-positive frequency components (i.e., components $0$ to $N/2$).  These
-are called the *range traces* in radar terminology.
+positive frequency components (i.e., components $0$ to $N/2$). These
+are called the _range traces_ in radar terminology.
 
 ```python
 fig, axes = plt.subplots(3, 1, sharex=True, figsize=(4.8, 2.4))
@@ -1178,7 +1199,8 @@ with plt.style.context('style/thinner.mplstyle'):
     for ax in axes:
         ax.grid()
 ```
-<!-- caption text="Range traces for: (a) single simulated target, (b) mutiple simulated targets, (c) real-world targets" --> 
+
+<!-- caption text="Range traces for: (a) single simulated target, (b) mutiple simulated targets, (c) real-world targets" -->
 
 Suddenly, the information makes sense!
 
@@ -1195,7 +1217,7 @@ Again, we use the formula:
 
 $$R_{n}=\frac{nv}{2B_{eff}}$$
 
-In radar terminology, each DFT component is known as a *range bin*.
+In radar terminology, each DFT component is known as a _range bin_.
 
 <!--
 The sinusoid associated with the first component of the DFT has a
@@ -1231,7 +1253,7 @@ normalized by dividing the amplitudes with the maximum value.
 -->
 
 This result is quite satisfying—but the dynamic range is so large
-that we could very easily miss some peaks.  Let's take the $\log$ as
+that we could very easily miss some peaks. Let's take the $\log$ as
 before with the spectrogram:
 
 ```python
@@ -1268,10 +1290,11 @@ ax1.set_xlim(0, 300)  # we are better able to see the shape of the peaks.
 ax2.set_xlim(0, len(V_actual) // 2)
 ax2.set_xlabel('range')
 ```
+
 <!-- caption text="Logarithm of range traces" -->
 
 The observable dynamic range is much improved in these plots. For
-instance, in the real radar signal the *noise floor* of the radar has
+instance, in the real radar signal the _noise floor_ of the radar has
 become visible (i.e., the level where electronic noise in the system
 starts to limit the radar's ability to detect a target).
 
@@ -1282,13 +1305,12 @@ shot noise, a noise mechanism inherent in all the electronic devices
 that are used for processing the radar signal. The noise floor of a
 radar limits its ability to detect weak echoes. -->
 
-
 ### Windowing, applied
 
 We're getting there, but in the spectrum of the simulated signal, we
-still cannot distinguish the peaks at 154 and 159 meters.  Who knows
-what we're missing in the real-world signal!  To sharpen the peaks,
-we'll return to our toolbox and make use of *windowing*.
+still cannot distinguish the peaks at 154 and 159 meters. Who knows
+what we're missing in the real-world signal! To sharpen the peaks,
+we'll return to our toolbox and make use of _windowing_.
 
 <!--
 
@@ -1326,6 +1348,7 @@ for n, (signal, label) in enumerate([(v_single, r'$v_0 [V]$'),
 axes[2].set_xlim(0, t_ms[-1])
 axes[2].set_xlabel('Time [ms]');
 ```
+
 <!-- caption text="Windowed signals for: (a) single simulated target, (b) multiple simulated targets, (c) real targets" -->
 
 And the corresponding FFTs (or "range traces", in radar terms):
@@ -1353,6 +1376,7 @@ ax1.annotate("New, previously unseen!", (160, -35), xytext=(10, 15),
              arrowprops=dict(width=0.5, headwidth=3, headlength=4,
                              fc='k', shrink=0.1));
 ```
+
 <!-- caption text="Range traces (spectrum) of windowed signals" -->
 
 Compare these with the earlier range traces. There is a dramatic
@@ -1383,7 +1407,7 @@ echoes from outside the spot will nevertheless still be visible.
 
 By varying the pencil beam's azimuth (left-right position) and
 elevation (up-down position), we can sweep it across the target area
-of interest.  When reflections are picked up, we can calculate the
+of interest. When reflections are picked up, we can calculate the
 distance to the reflector (the object hit by the radar signal).
 Together with the current pencil beam azimuth and elevation, this
 defines the reflector's position in 3D.
@@ -1404,14 +1428,13 @@ azimuth and $30^\circ$ elevation bins scanned in steps of $0.5^\circ$.
 
 We will now draw some contour plots of the resulting radar data.
 Please refer to the diagram below to see how the different slices are
-taken.  A first slice at fixed range shows the strength of echoes
-against elevation and azimuth.  Another two slices at fixed elevation
-and azimuth respectively shows the slope.  The stepped construction of
+taken. A first slice at fixed range shows the strength of echoes
+against elevation and azimuth. Another two slices at fixed elevation
+and azimuth respectively shows the slope. The stepped construction of
 the high wall in an opencast mine is visible in the azimuth plane.
 
 <img src="../figures/axes_slices.png"
      alt="Diagram showing azimuth, elevation and range slices through data volume"/>
-
 
 ```python
 data = np.load('data/radar_scan_1.npz')
@@ -1451,6 +1474,7 @@ with plt.style.context('style/thinner.mplstyle'):
     plot_slice(axes[1, 0], V[6, :, :].T, 'Elevation=6', 'Azimuth', 'Range')
     axes[1, 1].axis('off')
 ```
+
 <!-- caption text="Contour plots of range traces along various axes (see diagram)" -->
 
 #### 3D visualization
@@ -1458,8 +1482,8 @@ with plt.style.context('style/thinner.mplstyle'):
 We can also visualize the volume in three dimensions.
 
 We first compute the argmax (the index of the maximum value) in the
-range direction.  This should give an indication of the range at which
-the radar beam hit the rock slope.  Each argmax index is converted to
+range direction. This should give an indication of the range at which
+the radar beam hit the rock slope. Each argmax index is converted to
 a three-dimensional (elevation-azimuth-range) coordinate:
 
 ```python
@@ -1472,9 +1496,9 @@ coords = np.column_stack((el.flat, az.flat, r.flat))
 ```
 
 Taking these coordinates, we project them onto the plane (by dropping
-the range coordinate), and perform a Delaunay tesselation.  The
+the range coordinate), and perform a Delaunay tesselation. The
 tesselation returns a set of indices into our coordinates that define
-triangles (or simplices).  While the triangles are strictly speaking
+triangles (or simplices). While the triangles are strictly speaking
 defined on the projected coordinates, we use our original coordinates
 for the reconstruction, thereby adding back the range component:
 
@@ -1513,13 +1537,14 @@ with plt.style.context('style/thinner.mplstyle'):
 # Adjust the camera position to match our diagram above
 ax.view_init(azim=-50);
 ```
+
 <!-- caption text="3-D visualization of estimated rock slope position" -->
 
 ### Further applications of the FFT
 
 The examples above show just one of the uses of the FFT in
 radar. There are many others, such as movement (Doppler) measurement
-and target recognition.  The fast Fourier transform is pervasive, and is
+and target recognition. The fast Fourier transform is pervasive, and is
 seen anywhere from Magnetic Resonance Imaging (MRI) to statistics.
 With the basic techniques that this chapter outlines in hand, you
 should be well equipped to use it!
@@ -1528,35 +1553,35 @@ should be well equipped to use it!
 
 On the Fourier transform:
 
-- A. Papoulis, *The Fourier Integral and Its Applications*,
-  McGraw-Hill, 1960.
-- Ronald A. Bracewell, *The Fourier Transform and Its Applications*,
-  McGraw-Hill, 1986.
+-   A. Papoulis, _The Fourier Integral and Its Applications_,
+    McGraw-Hill, 1960.
+-   Ronald A. Bracewell, _The Fourier Transform and Its Applications_,
+    McGraw-Hill, 1986.
 
 On radar signal processing:
 
-- Mark A. Richards, *Principles of Modern Radar: Basic Principles*,
-  SciTech, 2010
-- Mark A. Richards, *Fundamentals of Radar Signal Processing*,
-  McGraw-Hill, 2014.
+-   Mark A. Richards, _Principles of Modern Radar: Basic Principles_,
+    SciTech, 2010
+-   Mark A. Richards, _Fundamentals of Radar Signal Processing_,
+    McGraw-Hill, 2014.
 
 <!-- exercise begin -->
 
 **Exercise:** The FFT is often used to speed up image convolution
-(convolution is the application of a moving filter mask).  Convolve an
-image with ``np.ones((5, 5))``, using a) numpy's ``np.convolve`` and
-b) ``np.fft.fft2``.  Confirm that the results are identical.
+(convolution is the application of a moving filter mask). Convolve an
+image with `np.ones((5, 5))`, using a) numpy's `np.convolve` and
+b) `np.fft.fft2`. Confirm that the results are identical.
 
 Hints:
 
- - The convolution of `x` and `y` is equivalent to `ifft2(X * Y)`, where
-   `X` and `Y` are the FFTs of x and y respectively.
- - In order to multiply `X` and `Y`, they have to be the same size.
-   Use `np.pad` to extend `x` and `y` with zeros (toward the right and
-   bottom) *before* taking their FFT.
- - You may see some edge effects.  These can be removed by increasing
-   the padding size, so that both `x` and `y` have dimensions
-   `shape(x) + shape(y) - 1`.
+-   The convolution of `x` and `y` is equivalent to `ifft2(X * Y)`, where
+    `X` and `Y` are the FFTs of x and y respectively.
+-   In order to multiply `X` and `Y`, they have to be the same size.
+    Use `np.pad` to extend `x` and `y` with zeros (toward the right and
+    bottom) _before_ taking their FFT.
+-   You may see some edge effects. These can be removed by increasing
+    the padding size, so that both `x` and `y` have dimensions
+    `shape(x) + shape(y) - 1`.
 
 <!-- solution begin -->
 
