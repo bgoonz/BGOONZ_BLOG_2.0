@@ -1,5 +1,4 @@
-Array.prototype.reduce()
-========================
+# Array.prototype.reduce()
 
 The `reduce()` method executes a **reducer** function (that you provide) on each element of the array, resulting in a single output value.
 
@@ -12,8 +11,7 @@ The **reducer** function takes four arguments:
 
 Your **reducer** function's returned value is assigned to the accumulator, whose value is remembered across each iteration throughout the array, and ultimately becomes the final, single resulting value.
 
-Syntax
-------
+## Syntax
 
     // Arrow function
     reduce((accumulator, currentValue) => { ... } )
@@ -44,21 +42,20 @@ The accumulator accumulates callback's return values. It is the accumulated valu
 `currentValue`  
 The current element being processed in the array.
 
- `index` <span class="badge inline optional">Optional</span>   
+`index` <span class="badge inline optional">Optional</span>  
 The index of the current element being processed in the array. Starts from index `0` if an `initialValue` is provided. Otherwise, it starts from index `1`.
 
- `array` <span class="badge inline optional">Optional</span>   
+`array` <span class="badge inline optional">Optional</span>  
 The array `reduce()` was called upon.
 
- `initialValue` <span class="badge inline optional">Optional</span>   
+`initialValue` <span class="badge inline optional">Optional</span>  
 A value to use as the first argument to the first call of the `callback`. If no `initialValue` is supplied, the first element in the array will be used as the initial `accumulator` value and skipped as `currentValue`. Calling `reduce()` on an empty array without an `initialValue` will throw a [`TypeError`](../typeerror).
 
 ### Return value
 
 The single value that results from the reduction.
 
-Description
------------
+## Description
 
 The `reduce()` method executes the `callback` once for each assigned value present in the array, taking four arguments:
 
@@ -73,9 +70,9 @@ The first time the callback is called, `accumulator` and `currentValue` can be o
 
 If the array is empty and no `initialValue` is provided, [`TypeError`](../typeerror) will be thrown.
 
-If the array only has one element (regardless of position) and no `initialValue` is provided, or if `initialValue` is provided but the array is empty, the solo value will be returned *without* calling *`callback`.*
+If the array only has one element (regardless of position) and no `initialValue` is provided, or if `initialValue` is provided but the array is empty, the solo value will be returned _without_ calling _`callback`._
 
-It is almost always safer to provide an `initialValue`, because there can be up to *four* possible output types without `initialValue`, as shown in the following example:
+It is almost always safer to provide an `initialValue`, because there can be up to _four_ possible output types without `initialValue`, as shown in the following example:
 
     let maxCallback = ( acc, cur ) => Math.max( acc.x, cur.x );
     let maxCallback2 = ( max, cur ) => Math.max( max, cur );
@@ -118,8 +115,7 @@ If you were to provide an `initialValue` as the second argument to `reduce()`, t
 
 The value returned by `reduce()` in this case would be `20`.
 
-Polyfill
---------
+## Polyfill
 
     // Production steps of ECMA-262, Edition 5, 15.4.4.21
     // Reference: https://es5.github.io/#x15.4.4.21
@@ -187,8 +183,7 @@ Polyfill
 
 **Note:** If you need to support truly obsolete JavaScript engines that do not support [`Object.defineProperty()`](../object/defineproperty), it is best not to polyfill `Array.prototype` methods at all, as you cannot make them **non-enumerable**.
 
-Examples
---------
+## Examples
 
 ### Sum all the values of an array
 
@@ -433,14 +428,12 @@ Using [`Array.filter()`](filter) then [`Array.map()`](map) traverses the array t
       (currentValue, index, array) => currentValue + index + array.length
     ) // [5, 7, , 10]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Array.prototype.reduce()' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -496,8 +489,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.reduceRight()`](reduceright)
 

@@ -1,12 +1,10 @@
-Date
-====
+# Date
 
 JavaScript `Date` objects represent a single moment in time in a platform-independent format. `Date` objects contain a `Number` that represents milliseconds since 1 January 1970 UTC.
 
 **Note:** TC39 is working on [Temporal](https://tc39.es/proposal-temporal/docs/index.html), a new Date/Time API. Read more about it on the [Igalia blog](https://blogs.igalia.com/compilers/2020/06/23/dates-and-times-in-javascript/). It is not yet ready for production use!
 
-Description
------------
+## Description
 
 ### The ECMAScript epoch and timestamps
 
@@ -18,12 +16,11 @@ It should be noted that the maximum `Date` is not of the same value as the maxim
 
 ### Date format and time zone conversions
 
-There are several methods available to obtain a date in various formats, as well as to perform time zone conversions. Particularly useful are the functions that output the date and time in Coordinated Universal Time (UTC), the global standard time defined by the World Time Standard. (This time is historically known as *Greenwich Mean Time*, as UTC lies along the meridian that includes London—and nearby Greenwich—in the United Kingdom.) The user's device provides the local time.
+There are several methods available to obtain a date in various formats, as well as to perform time zone conversions. Particularly useful are the functions that output the date and time in Coordinated Universal Time (UTC), the global standard time defined by the World Time Standard. (This time is historically known as _Greenwich Mean Time_, as UTC lies along the meridian that includes London—and nearby Greenwich—in the United Kingdom.) The user's device provides the local time.
 
 In addition to methods to read and alter individual components of the local date and time (such as [`getDay()`](date/getday) and [`setHours()`](date/sethours)), there are also versions of the same methods that read and manipulate the date and time using UTC (such as [`getUTCDay()`](date/getutcday) and [`setUTCHours()`](date/setutchours)).
 
-Constructor
------------
+## Constructor
 
 [`Date()`](date/date)  
 When called as a function, returns a string representation of the current date and time, exactly as `new Date().toString()` does.
@@ -31,8 +28,7 @@ When called as a function, returns a string representation of the current date a
 [`new Date()`](date/date)  
 When called as a constructor, returns a new `Date` object.
 
-Static methods
---------------
+## Static methods
 
 [`Date.now()`](date/now)  
 Returns the numeric value corresponding to the current time—the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored.
@@ -45,8 +41,7 @@ Parses a string representation of a date and returns the number of milliseconds 
 [`Date.UTC()`](date/utc)  
 Accepts the same parameters as the longest form of the constructor (i.e. 2 to 7) and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC, with leap seconds ignored.
 
-Instance methods
-----------------
+## Instance methods
 
 [`Date.prototype.getDate()`](date/getdate)  
 Returns the day of the month (`1`–`31`) for the specified date according to local time.
@@ -189,8 +184,7 @@ Converts a date to a string using the UTC timezone.
 [`Date.prototype.valueOf()`](date/valueof)  
 Returns the primitive value of a [`Date`](date) object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
-Examples
---------
+## Examples
 
 ### Several ways to create a Date object
 
@@ -263,10 +257,9 @@ Due to the differing lengths of days (due to daylight saving changeover), months
 
     let seconds = Math.floor(Date.now() / 1000)
 
-In this case, it's important to return only an integer—so a simple division won't do. It's also important to only return actually elapsed seconds. (That's why this code uses [`Math.floor()`](math/floor), and *not* [`Math.round()`](math/round).)
+In this case, it's important to return only an integer—so a simple division won't do. It's also important to only return actually elapsed seconds. (That's why this code uses [`Math.floor()`](math/floor), and _not_ [`Math.round()`](math/round).)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date-objects</span></a></td></tr></tbody></table>
@@ -1653,8 +1646,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`Date()`](date/date) constructor
 

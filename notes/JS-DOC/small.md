@@ -1,5 +1,4 @@
-String.prototype.small()
-========================
+# String.prototype.small()
 
 **Deprecated**
 
@@ -7,8 +6,7 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `small()` method creates a [`<small>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small) HTML element that causes a string to be displayed in a small font.
 
-Syntax
-------
+## Syntax
 
     small()
 
@@ -16,13 +14,11 @@ Syntax
 
 A string containing a [`<small>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small) HTML element.
 
-Description
------------
+## Description
 
 The `small()` method embeds a string in a `<small>` element: "`<small>str</small>`".
 
-Examples
---------
+## Examples
 
 ### Using small()
 
@@ -38,14 +34,12 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
     document.getElementById('yourElemId').style.fontSize = '0.7em';
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.small">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.small</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -101,8 +95,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.fontsize()`](fontsize)
 -   [`String.prototype.big()`](big)

@@ -1,36 +1,32 @@
-WeakMap
-=======
+# WeakMap
 
 The `WeakMap` object is a collection of key/value pairs in which the keys are weakly referenced. The keys must be objects and the values can be arbitrary values.
 
 You can learn more about `WeakMap`s in the [WeakMap object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#weakmap_object) guide (under [Keyed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections)).
 
-Description
------------
+## Description
 
 Keys of WeakMaps are of the type `Object` only. [Primitive data types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) as keys are not allowed (e.g. a [`Symbol`](symbol) can't be a `WeakMap` key).
 
 ### Why *Weak*Map?
 
-A map API *could* be implemented in JavaScript with two arrays (one for keys, one for values) shared by the four API methods. Setting elements on this map would involve pushing a key and value onto the end of each of those arrays simultaneously. As a result, the indices of the key and value would correspond to both arrays. Getting values from the map would involve iterating through all keys to find a match, then using the index of this match to retrieve the corresponding value from the array of values.
+A map API _could_ be implemented in JavaScript with two arrays (one for keys, one for values) shared by the four API methods. Setting elements on this map would involve pushing a key and value onto the end of each of those arrays simultaneously. As a result, the indices of the key and value would correspond to both arrays. Getting values from the map would involve iterating through all keys to find a match, then using the index of this match to retrieve the corresponding value from the array of values.
 
 Such an implementation would have two main inconveniences:
 
-1.  The first one is an *O(n)* set and search (n being the number of keys in the map) since both operations must iterate through the list of keys to find a matching value.
+1.  The first one is an _O(n)_ set and search (n being the number of keys in the map) since both operations must iterate through the list of keys to find a matching value.
 2.  The second inconvenience is a memory leak because the arrays ensure that references to each key and each value are maintained indefinitely. These references prevent the keys from being garbage collected, even if there are no other references to the object. This would also prevent the corresponding values from being garbage collected.
 
-By contrast, native `WeakMap`s hold "weak" references to key objects. As such native `WeakMap`s do not prevent garbage collection, which eventually removes references to the key object. "Weak" references also avoid preventing garbage collection of values in the map. `WeakMap`s can be particularly useful constructs when mapping keys to information about the key that is valuable *only if* the key has not been garbage collected.
+By contrast, native `WeakMap`s hold "weak" references to key objects. As such native `WeakMap`s do not prevent garbage collection, which eventually removes references to the key object. "Weak" references also avoid preventing garbage collection of values in the map. `WeakMap`s can be particularly useful constructs when mapping keys to information about the key that is valuable _only if_ the key has not been garbage collected.
 
 `WeakMap` There is no method to obtain a list of the keys. If there was, the list would depend on the state of garbage collection, introducing non-determinism. If you want to have a list of keys, you should use a [`Map`](map).
 
-Constructor
------------
+## Constructor
 
 [`WeakMap()`](weakmap/weakmap)  
 Creates a new `WeakMap` object.
 
-Instance methods
-----------------
+## Instance methods
 
 [`WeakMap.prototype.delete(key)`](weakmap/delete)  
 Removes any value associated to the `key`. `WeakMap.prototype.has(key)` will return `false` afterwards.
@@ -44,8 +40,7 @@ Returns a Boolean asserting whether a value has been associated to the `key` in 
 [`WeakMap.prototype.set(key, value)`](weakmap/set)  
 Sets the `value` for the `key` in the `WeakMap` object. Returns the `WeakMap` object.
 
-Examples
---------
+## Examples
 
 ### Using WeakMap
 
@@ -101,14 +96,12 @@ Examples
       }
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-weakmap-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-weakmap-objects</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -338,8 +331,7 @@ Prior to Firefox 38, this method threw a `TypeError` when the key parameter was 
 
 3.0
 
-See also
---------
+## See also
 
 -   [`WeakMap` in the JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#weakmap_object)
 -   [Hiding Implementation Details with ECMAScript 6 WeakMaps](https://fitzgeraldnick.com/weblog/53/)

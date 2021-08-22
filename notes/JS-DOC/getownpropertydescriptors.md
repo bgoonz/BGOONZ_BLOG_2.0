@@ -1,10 +1,8 @@
-Object.getOwnPropertyDescriptors()
-==================================
+# Object.getOwnPropertyDescriptors()
 
 The `Object.getOwnPropertyDescriptors()` method returns all own property descriptors of a given object.
 
-Syntax
-------
+## Syntax
 
     Object.getOwnPropertyDescriptors(obj)
 
@@ -17,8 +15,7 @@ The object for which to get all own property descriptors.
 
 An object containing all own property descriptors of an object. Might be an empty object, if there are no properties.
 
-Description
------------
+## Description
 
 This method permits examination of the precise description of all own properties of an object. A property in JavaScript consists of either a string-valued name or a [`Symbol`](../symbol) and a property descriptor. Further information about property descriptor types and their attributes can be found in [`Object.defineProperty()`](defineproperty).
 
@@ -42,8 +39,7 @@ A function which serves as a setter for the property, or [`undefined`](../undefi
 `enumerable`  
 `true` if and only if this property shows up during enumeration of the properties on the corresponding object.
 
-Examples
---------
+## Examples
 
 ### Creating a shallow clone
 
@@ -70,8 +66,7 @@ A typical way of creating a subclass is to define the subclass, set its prototyp
       }
     );
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptors">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Object.getOwnPropertyDescriptors' in that specification.</span></a></td></tr></tbody></table>
@@ -102,8 +97,7 @@ No
 
 6.0
 
-See also
---------
+## See also
 
 -   [`Object.getOwnPropertyDescriptor()`](getownpropertydescriptor)
 -   [`Object.defineProperty()`](defineproperty)

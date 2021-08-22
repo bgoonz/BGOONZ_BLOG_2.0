@@ -1,10 +1,8 @@
-Math.expm1()
-============
+# Math.expm1()
 
 The `Math.expm1()` function returns `ex - 1`, where `x` is the argument, and [e](e) the base of the natural logarithms.
 
-Syntax
-------
+## Syntax
 
     Math.expm1(x)
 
@@ -17,13 +15,11 @@ A number.
 
 A number representing `ex - 1`, where `e` is [Euler's number](e) and `x` is the argument.
 
-Description
------------
+## Description
 
 Because `expm1()` is a static method of `Math`, you always use it as `Math.expm1()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.expm1()
 
@@ -31,8 +27,7 @@ Examples
     Math.expm1(0);  // 0
     Math.expm1(1);  // 1.718281828459045
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.expm1">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.expm1</span></a></td></tr></tbody></table>
@@ -63,8 +58,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Math.E`](e)
 -   [`Math.exp()`](exp)

@@ -1,10 +1,8 @@
-Function.prototype.apply()
-==========================
+# Function.prototype.apply()
 
 The `apply()` method calls a function with a given `this` value, and `arguments` provided as an array (or an [array-like object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#working_with_array-like_objects)).
 
-Syntax
-------
+## Syntax
 
     apply(thisArg)
     apply(thisArg, argsArray)
@@ -16,7 +14,7 @@ The value of `this` provided for the call to `func`.
 
 Note that `this` may not be the actual value seen by the method: if the method is a function in [non-strict mode](../../strict_mode) code, [`null`](../null) and [`undefined`](../undefined) will be replaced with the global object, and primitive values will be boxed. This argument is required.
 
- `argsArray` <span class="badge inline optional">Optional</span>   
+`argsArray` <span class="badge inline optional">Optional</span>  
 An array-like object, specifying the arguments with which `func` should be called, or [`null`](../null) or [`undefined`](../undefined) if no arguments should be provided to the function.
 
 Starting with ECMAScript 5 these arguments can be a generic array-like object instead of an array. See below for [browser compatibility](#browser_compatibility) information.
@@ -25,8 +23,7 @@ Starting with ECMAScript 5 these arguments can be a generic array-like object in
 
 The result of calling the function with the specified `this` value and arguments.
 
-Description
------------
+## Description
 
 **Note:** While the syntax of this function is almost identical to that of [`call()`](call), the fundamental difference is that `call()` accepts an **argument list**, while `apply()` accepts a **single array of arguments**.
 
@@ -42,8 +39,7 @@ Since ECMAScript 5<sup>th</sup> Edition, you can also use any kind of object whi
 
 **Note:** Many older browsers—including Chrome &lt;17 and Internet Explorer &lt;9—don't accept array-like objects, and will throw an exception.
 
-Examples
---------
+## Examples
 
 ### Using apply to append an array to another
 
@@ -51,7 +47,7 @@ You can use `push` to append an element to an array. And, because `push` accepts
 
 But, if you pass an array to `push`, it will actually add that array as a single element, instead of adding the elements individually. So you end up with an array inside an array.
 
-What if that is not what you want? `concat` does have the desired behavior in this case, but it does not append to the *existing* array—it instead creates and returns a new array.
+What if that is not what you want? `concat` does have the desired behavior in this case, but it does not append to the _existing_ array—it instead creates and returns a new array.
 
 But you wanted to append to the existing array... So what now? Write a loop? Surely not?
 

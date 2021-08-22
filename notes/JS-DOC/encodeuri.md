@@ -1,10 +1,8 @@
-encodeURI()
-===========
+# encodeURI()
 
 The `encodeURI()` function encodes a [URI](https://developer.mozilla.org/en-US/docs/Glossary/URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the [UTF-8](https://developer.mozilla.org/en-US/docs/Glossary/UTF-8) encoding of the character (will only be four escape sequences for characters composed of two "surrogate" characters).
 
-Syntax
-------
+## Syntax
 
     encodeURI(URI)
 
@@ -17,8 +15,7 @@ A complete URI.
 
 A new string representing the provided string encoded as a URI.
 
-Description
------------
+## Description
 
 The `encodeURI()` function does not encode characters that have special meaning (reserved characters) for a URI. The following example shows all the parts that a URI "scheme" can possibly contain. Note how certain characters are used to signify special meaning:
 
@@ -32,8 +29,7 @@ Hence `encodeURI()` **does not** encode characters that are necessary to formula
 
         A-Z a-z 0-9 ; , / ? : @ & = + $ - _ . ! ~ * ' ( ) #
 
-Examples
---------
+## Examples
 
 ### encodeURI vs encodeURIComponent
 
@@ -51,7 +47,7 @@ Examples
     console.log(encodeURIComponent(set2)); // -_.!~*'()
     console.log(encodeURIComponent(set3)); // ABC%20abc%20123 (the space gets encoded as %20)
 
-Note that `encodeURI()` by itself *cannot* form proper HTTP [`GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) and [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) requests, such as for [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), because "`&`", "`+`", and "`=`" are not encoded, which are treated as special characters in `GET` and `POST` requests. `encodeURIComponent()`, however, does encode these characters.
+Note that `encodeURI()` by itself _cannot_ form proper HTTP [`GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) and [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) requests, such as for [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), because "`&`", "`+`", and "`=`" are not encoded, which are treated as special characters in `GET` and `POST` requests. `encodeURIComponent()`, however, does encode these characters.
 
 ### Encoding a lone high surrogate throws
 
@@ -74,8 +70,7 @@ If one wishes to follow the more recent [RFC3986](https://datatracker.ietf.org/d
         return encodeURI(str).replace(/%5B/g, '[').replace(/%5D/g, ']');
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuri-uri">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-encodeuri-uri</span></a></td></tr></tbody></table>
@@ -106,8 +101,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`decodeURI()`](decodeuri)
 -   [`encodeURIComponent()`](encodeuricomponent)

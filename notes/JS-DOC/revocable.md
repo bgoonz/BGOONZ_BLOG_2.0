@@ -1,10 +1,8 @@
-Proxy.revocable()
-=================
+# Proxy.revocable()
 
 The `Proxy.revocable()` method is used to create a revocable [`Proxy`](../proxy) object.
 
-Syntax
-------
+## Syntax
 
     Proxy.revocable(target, handler);
 
@@ -20,8 +18,7 @@ An object whose properties are functions define the behavior of proxy `p` when a
 
 A newly created revocable `Proxy` object is returned.
 
-Description
------------
+## Description
 
 A revocable `Proxy` is an object with following two properties `{proxy: proxy, revoke: revoke}`.
 
@@ -33,8 +30,7 @@ A function with no argument to invalidate (switch off) the `proxy`.
 
 If the `revoke()` function gets called, the proxy becomes unusable: Any trap to a handler will throw a [`TypeError`](../typeerror). Once a proxy is revoked, it will remain revoked and can be garbage collected. Calling `revoke()` again has no effect.
 
-Examples
---------
+## Examples
 
 ### Using Proxy.revocable
 
@@ -53,14 +49,12 @@ Examples
     delete proxy.foo;       // still TypeError
     typeof proxy            // "object", typeof doesn't trigger any trap
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy.revocable">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-proxy.revocable</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -116,8 +110,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [`Proxy`](../proxy)
 

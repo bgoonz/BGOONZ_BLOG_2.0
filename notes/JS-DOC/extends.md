@@ -1,22 +1,18 @@
-extends
-=======
+# extends
 
 The `extends` keyword is used in [class declarations](../statements/class) or [class expressions](../operators/class) to create a class that is a child of another class.
 
-Syntax
-------
+## Syntax
 
     class ChildClass extends ParentClass { ... }
 
-Description
------------
+## Description
 
 The `extends` keyword can be used to subclass custom classes as well as built-in objects.
 
 The `.prototype` of the extension must be an [`Object`](../global_objects/object) or [`null`](../global_objects/null).
 
-Examples
---------
+## Examples
 
 ### Using extends
 
@@ -49,8 +45,7 @@ This example extends the built-in [`Date`](../global_objects/date) object. This 
       }
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'extends' in that specification.</span></a></td></tr></tbody></table>
@@ -113,8 +108,7 @@ Strict mode is required.
 
 Strict mode is required.
 
-See also
---------
+## See also
 
 -   [Classes](../classes)
 -   [constructor](constructor)

@@ -1,13 +1,11 @@
-Atomics.notify()
-================
+# Atomics.notify()
 
-The static `Atomics``.notify()` method notifies up some agents that are sleeping in the wait queue.
+The static ` Atomics``.notify() ` method notifies up some agents that are sleeping in the wait queue.
 
 **Note:** This operation works with a shared [`Int32Array`](../int32array) only.  
 It will return `0` on non-shared `ArrayBuffer` objects.
 
-Syntax
-------
+## Syntax
 
     Atomics.notify(typedArray, index, count)
 
@@ -19,7 +17,7 @@ A shared [`Int32Array`](../int32array).
 `index`  
 The position in the `typedArray` to wake up on.
 
- `count` <span class="badge inline optional">Optional</span>   
+`count` <span class="badge inline optional">Optional</span>  
 The number of sleeping agents to notify. Defaults to [`+Infinity`](../infinity).
 
 ### Return value
@@ -32,8 +30,7 @@ The number of sleeping agents to notify. Defaults to [`+Infinity`](../infinity).
 -   Throws a [`TypeError`](../typeerror), if `typedArray` is not a [`Int32Array`](../int32array).
 -   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
-Examples
---------
+## Examples
 
 ### Using `notify`
 
@@ -53,14 +50,12 @@ A writing thread stores a new value and notifies the waiting thread once it has 
     Atomics.store(int32, 0, 123);
     Atomics.notify(int32, 0, 1);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.notify">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-atomics.notify</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -156,8 +151,7 @@ No
 
 Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-See also
---------
+## See also
 
 -   [`Atomics`](../atomics)
 -   [`Atomics.wait()`](wait)

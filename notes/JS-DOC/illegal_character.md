@@ -1,27 +1,22 @@
-SyntaxError: illegal character
-==============================
+# SyntaxError: illegal character
 
 The JavaScript exception "illegal character" occurs when there is an invalid or unexpected token that doesn't belong at this position in the code.
 
-Message
--------
+## Message
 
     SyntaxError: Invalid character (Edge)
     SyntaxError: illegal character (Firefox)
     SyntaxError: Invalid or unexpected token (Chrome)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
-There is an invalid or unexpected token that doesn't belong at this position in the code. Use an editor that supports syntax highlighting and carefully check your code against mismatches like a minus sign (` - `) versus a dash (` – `) or simple quotes (` " `) vs non-standard quotation marks (` “ `).
+There is an invalid or unexpected token that doesn't belong at this position in the code. Use an editor that supports syntax highlighting and carefully check your code against mismatches like a minus sign (`-`) versus a dash (`–`) or simple quotes (`"`) vs non-standard quotation marks (`“`).
 
-Examples
---------
+## Examples
 
 ### Mismatched characters
 
@@ -66,8 +61,7 @@ When inspecting this code in an editor like Vim, you can see that there is actua
 
     var foo = 'bar';<200b>
 
-See also
---------
+## See also
 
 -   [Lexical grammar](../lexical_grammar)
 

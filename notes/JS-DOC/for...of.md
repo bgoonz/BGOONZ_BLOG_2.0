@@ -1,10 +1,8 @@
-for...of
-========
+# for...of
 
 The `for...of` creates a loop iterating over [iterable objects](../iteration_protocols#the_iterable_protocol), including: built-in [`String`](../global_objects/string), [`Array`](../global_objects/array), array-like objects (e.g., [`arguments`](../functions/arguments) or [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)), [`TypedArray`](../global_objects/typedarray), [`Map`](../global_objects/map), [`Set`](../global_objects/set), and user-defined iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.
 
-Syntax
-------
+## Syntax
 
     for (variable of iterable) {
       statement
@@ -16,8 +14,7 @@ On each iteration a value of a different property is assigned to `variable`. `va
 `iterable`  
 Object whose iterable properties are iterated.
 
-Examples
---------
+## Examples
 
 ### Iterating over an `Array`
 
@@ -242,7 +239,7 @@ Every object will inherit the `objCustom` property and every object that is an [
       console.log(i); // logs 0, 1, 2, "foo", "arrCustom", "objCustom"
     }
 
-This loop logs only [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) of the `iterable` object, in arbitrary order. It doesn't log array **elements** `3`, `5`, `7` or `hello` because those are **not** enumerable properties, in fact they are not properties at all, they are **values**. It logs array **indexes** as well as `arrCustom` and `objCustom`, which are. If you're not sure why these properties are iterated over, there's a more thorough explanation of how [`array iteration and   for...in`](for...in#array_iteration_and_for...in) work.
+This loop logs only [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) of the `iterable` object, in arbitrary order. It doesn't log array **elements** `3`, `5`, `7` or `hello` because those are **not** enumerable properties, in fact they are not properties at all, they are **values**. It logs array **indexes** as well as `arrCustom` and `objCustom`, which are. If you're not sure why these properties are iterated over, there's a more thorough explanation of how [`array iteration and for...in`](for...in#array_iteration_and_for...in) work.
 
     for (const i in iterable) {
       if (iterable.hasOwnProperty(i)) {
@@ -258,8 +255,7 @@ This loop is similar to the first one, but it uses [`hasOwnProperty()`](../globa
 
 This loop iterates and logs **values** that `iterable`, as an [iterable object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#iterables), defines to be iterated over. The object's **elements** `3`, `5`, `7` are shown, but none of the object's **properties**.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
@@ -346,8 +342,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.forEach()`](../global_objects/array/foreach)
 -   [`Map.prototype.forEach()`](../global_objects/map/foreach)

@@ -1,15 +1,12 @@
-Unsigned right shift (&gt;&gt;&gt;)
-===================================
+# Unsigned right shift (&gt;&gt;&gt;)
 
 The `>>>` (zero-fill right shift) shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left. The sign bit becomes `0`, so the result is always non-negative. Unlike the other bitwise operators, zero-fill right shift returns an unsigned 32-bit integer.
 
-Syntax
-------
+## Syntax
 
     a >>> b
 
-Description
------------
+## Description
 
 This operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left. The sign bit becomes `0`, so the result is always non-negative. Unlike the other bitwise operators, zero-fill right shift returns an unsigned 32-bit integer.
 
@@ -25,22 +22,19 @@ However, this is not the case for negative numbers. For example, `-9 >>> 2` yiel
                         --------------------------------
     -9 >>> 2 (base 10): 00111111111111111111111111111101 (base 2) = 1073741821 (base 10)
 
-Examples
---------
+## Examples
 
 ### Using unsigned right shift
 
      9 >>> 2; // 2
     -9 >>> 2; // 1073741821
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-unsigned-right-shift-operator">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-unsigned-right-shift-operator</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -96,8 +90,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Unsigned right shift assignment operator](unsigned_right_shift_assignment)

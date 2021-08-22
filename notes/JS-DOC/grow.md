@@ -1,24 +1,21 @@
-WebAssembly.Memory.prototype.grow()
-===================================
+# WebAssembly.Memory.prototype.grow()
 
 The `grow()` protoype method of the `Memory` object increases the size of the memory instance by a specified number of WebAssembly pages.
 
-Syntax
-------
+## Syntax
 
     grow(number)
 
 ### Parameters
 
-*number*  
+_number_  
 The number of WebAssembly pages you want to grow the memory by (each one is 64KiB in size).
 
 ### Return value
 
 The previous size of the memory, in units of WebAssembly pages.
 
-Examples
---------
+## Examples
 
 ### Using grow
 
@@ -35,8 +32,7 @@ We can then grow the instance by one page like so:
 
 Note the return value of `grow()` here is the previous number of WebAssembly pages.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-grow">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#dom-memory-grow</span></a></td></tr></tbody></table>
@@ -71,8 +67,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

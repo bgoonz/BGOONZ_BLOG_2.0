@@ -1,28 +1,23 @@
-TypeError: invalid 'instanceof' operand 'x'
-===========================================
+# TypeError: invalid 'instanceof' operand 'x'
 
 The JavaScript exception "invalid 'instanceof' operand" occurs when the right hand side operands of the [`instanceof` operator](../operators/instanceof) isn't used with a constructor object, i.e. an object which has a `prototype` property and is callable.
 
-Message
--------
+## Message
 
     TypeError: invalid 'instanceof' operand "x" (Firefox)
     TypeError: "x" is not a function (Firefox)
     TypeError: Right-hand side of 'instanceof' is not an object (Chrome)
     TypeError: Right-hand side of 'instanceof' is not callable (Chrome)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 The [`instanceof` operator](../operators/instanceof) expects the right hand side operands to be a constructor object, i.e. an object which has a `prototype` property and is callable.
 
-Examples
---------
+## Examples
 
 ### instanceof vs typeof
 
@@ -48,8 +43,7 @@ To fix these errors, you will either need to replace the [`instanceof` operator]
     x instanceof f;            // true
     x instanceof Foo;          // true
 
-See also
---------
+## See also
 
 -   [`instanceof` operator](../operators/instanceof)
 -   [`typeof` operator](../operators/typeof)

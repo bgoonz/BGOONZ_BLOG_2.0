@@ -1,14 +1,12 @@
-AsyncFunction
-=============
+# AsyncFunction
 
 The `AsyncFunction` creates a new [async function](../statements/async_function) object. In JavaScript, every asynchronous function is actually an `AsyncFunction` object.
 
-Note that `AsyncFunction` is *not* a global object. It can be obtained with the following code:
+Note that `AsyncFunction` is _not_ a global object. It can be obtained with the following code:
 
     Object.getPrototypeOf(async function(){}).constructor
 
-Syntax
-------
+## Syntax
 
     new AsyncFunction(arg0, functionBody)
     new AsyncFunction(arg0, arg1, functionBody)
@@ -22,8 +20,7 @@ Names to be used by the function as formal argument names. Each must be a string
 `functionBody`  
 A string containing the JavaScript statements comprising the function definition.
 
-Description
------------
+## Description
 
 [`async function`](../statements/async_function) objects created with the `AsyncFunction` constructor are parsed when the function is created. This is less efficient than declaring an async function with an [`async function expression`](../statements/async_function) and calling it within your code, because such functions are parsed with the rest of the code.
 
@@ -37,8 +34,7 @@ This is different from using [`eval`](eval) with code for an async function expr
 
 Invoking the `AsyncFunction` constructor as a function (without using the `new` operator) has the same effect as invoking it as a constructor.
 
-Examples
---------
+## Examples
 
 ### Creating an async function from an AsyncFunction() constructor
 
@@ -60,8 +56,7 @@ Examples
       console.log(v); // prints 30 after 4 seconds
     });
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-async-function-objects</span></a></td></tr></tbody></table>
@@ -92,8 +87,7 @@ No
 
 6.0
 
-See also
---------
+## See also
 
 -   [async function function](../statements/async_function)
 -   [async function expression](../operators/async_function)

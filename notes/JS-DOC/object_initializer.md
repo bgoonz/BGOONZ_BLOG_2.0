@@ -1,10 +1,8 @@
-Object initializer
-==================
+# Object initializer
 
-Objects can be initialized using [`new Object()`](../global_objects/object/object), `Object.create()`, or using the *literal* notation (*initializer* notation). An object initializer is a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces (`{}`).
+Objects can be initialized using [`new Object()`](../global_objects/object/object), `Object.create()`, or using the _literal_ notation (_initializer_ notation). An object initializer is a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces (`{}`).
 
-Syntax
-------
+## Syntax
 
     let o = {}
     let o = {a: 'foo', b: 42, c: {}}
@@ -38,23 +36,21 @@ Please see the compatibility table for support for these notations. In non-suppo
       ['b' + 'ar']: 'there'
     }
 
-Description
------------
+## Description
 
-An object initializer is an expression that describes the initialization of an [`Object`](../global_objects/object). Objects consist of *properties*, which are used to describe an object. The values of object properties can either contain [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) data types or other objects.
+An object initializer is an expression that describes the initialization of an [`Object`](../global_objects/object). Objects consist of _properties_, which are used to describe an object. The values of object properties can either contain [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) data types or other objects.
 
 ### Object literal notation vs JSON
 
 The object literal notation is not the same as the **J**ava**S**cript **O**bject **N**otation ([JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON)). Although they look similar, there are differences between them:
 
--   JSON permits *only* property definition using `"property": value` syntax. The property name must be double-quoted, and the definition cannot be a shorthand.
+-   JSON permits _only_ property definition using `"property": value` syntax. The property name must be double-quoted, and the definition cannot be a shorthand.
 -   In JSON the values can only be strings, numbers, arrays, `true`, `false`, `null`, or another (JSON) object.
 -   A function value (see "Methods" below) can not be assigned to a value in JSON.
 -   Objects like [`Date`](../global_objects/date) will be a string after [`JSON.parse()`](../global_objects/json/parse).
 -   [`JSON.parse()`](../global_objects/json/parse) will reject computed property names and an error will be thrown.
 
-Examples
---------
+## Examples
 
 ### Creating objects
 
@@ -62,7 +58,7 @@ An empty object with no properties can be created like this:
 
     let object = {}
 
-However, the advantage of the *literal* or *initializer* notation is, that you are able to quickly create objects with properties inside the curly braces. You notate a list of `key: value` pairs delimited by commas.
+However, the advantage of the _literal_ or _initializer_ notation is, that you are able to quickly create objects with properties inside the curly braces. You notate a list of `key: value` pairs delimited by commas.
 
 The following code creates an object with three properties and the keys are `"foo"`, `"age"` and `"baz"`. The values of these keys are a string `"bar"`, the number `42`, and another object.
 
@@ -249,14 +245,12 @@ Property definitions that do not use "colon" notation are not prototype mutation
     let obj3 = {['__prot' + 'o__']: 17}
     assert(obj3.__proto__ === 17)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-initializer">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Object Initializer' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -416,8 +410,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [Property accessors](property_accessors)
 -   `get` / `set`

@@ -1,10 +1,8 @@
-Array.prototype.some()
-======================
+# Array.prototype.some()
 
 The `some()` method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
 
-Syntax
-------
+## Syntax
 
     // Arrow function
     some((element) => { ... } )
@@ -29,23 +27,22 @@ A function to test for each element, taking three arguments:
 `element`  
 The current element being processed in the array.
 
- `index`<span class="badge inline optional">Optional</span>   
+`index`<span class="badge inline optional">Optional</span>  
 The index of the current element being processed in the array.
 
- `array`<span class="badge inline optional">Optional</span>   
+`array`<span class="badge inline optional">Optional</span>  
 The array `some()` was called upon.
 
- `thisArg`<span class="badge inline optional">Optional</span>   
+`thisArg`<span class="badge inline optional">Optional</span>  
 A value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
 `true` if the callback function returns a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) value for at least one element in the array. Otherwise, `false`.
 
-Description
------------
+## Description
 
-The `some()` method executes the `callbackFn` function once for each element present in the array until it finds the one where `callbackFn` returns a *truthy* value (a value that becomes true when converted to a Boolean). If such an element is found, `some()` immediately returns `true`. Otherwise, `some()` returns `false`. `callbackFn` is invoked only for indexes of the array with assigned values. It is not invoked for indexes which have been deleted or which have never been assigned values.
+The `some()` method executes the `callbackFn` function once for each element present in the array until it finds the one where `callbackFn` returns a _truthy_ value (a value that becomes true when converted to a Boolean). If such an element is found, `some()` immediately returns `true`. Otherwise, `some()` returns `false`. `callbackFn` is invoked only for indexes of the array with assigned values. It is not invoked for indexes which have been deleted or which have never been assigned values.
 
 `callbackFn` is invoked with three arguments: the value of the element, the index of the element, and the Array object being traversed.
 
@@ -57,8 +54,7 @@ The range of elements processed by `some()` is set before the first invocation o
 
 **Note:** Calling this method on an empty array returns `false` for any condition!
 
-Polyfill
---------
+## Polyfill
 
 `some()` was added to the ECMA-262 standard in the 5<sup>th</sup> edition, and it may not be present in all implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of `some()` in implementations which do not natively support it.
 
@@ -91,8 +87,7 @@ This algorithm is exactly the one specified in ECMA-262, 5<sup>th</sup> edition,
       };
     }
 
-Examples
---------
+## Examples
 
 ### Testing value of array elements
 
@@ -159,14 +154,12 @@ To mimic the function of the `includes()` method, this custom function returns `
     getBoolean(1);       // true
     getBoolean('true');  // true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.some">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.some</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -222,8 +215,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.every()`](every)
 -   [`Array.prototype.forEach()`](foreach)

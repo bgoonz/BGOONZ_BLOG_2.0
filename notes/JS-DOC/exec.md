@@ -1,5 +1,4 @@
-RegExp.prototype.exec()
-=======================
+# RegExp.prototype.exec()
 
 The `exec()` method executes a search for a match in a specified string. Returns a result array, or [`null`](../null).
 
@@ -11,8 +10,7 @@ If you are executing a match to find `true` or `false`, use [`RegExp.prototype.t
 
 If you are executing a match to find its index position in the string, use [`String.prototype.search()`](../string/search) method instead.
 
-Syntax
-------
+## Syntax
 
     exec(str)
 
@@ -27,8 +25,7 @@ If the match succeeds, the `exec()` method returns an array (with extra properti
 
 If the match fails, the `exec()` method returns [`null`](../null), and sets [`lastIndex`](lastindex) to `0`.
 
-Description
------------
+## Description
 
 Consider the following example:
 
@@ -47,8 +44,7 @@ The following table shows the state of `re` after running this script:
 
 <table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Property/Index</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>lastIndex</code></td><td><p>The index at which to start the next match.</p><p>If <code>g</code> is absent, this will always be <code>0</code>.</p></td><td><code>25</code></td></tr><tr class="even"><td><code>dotAll</code></td><td>Indicates if the <code>s</code> flag was used to let <code>.</code> match newlines.</td><td><code>false</code></td></tr><tr class="odd"><td><code>hasIndices</code></td><td>Indicates if the <code>d</code> flag was used to generate an <code>indices</code> property in the returned value containing start and end indices of the substring matches.</td><td><code>true</code></td></tr><tr class="even"><td><code>ignoreCase</code></td><td>Indicates if the <code>i</code> flag was used to ignore case.</td><td><code>true</code></td></tr><tr class="odd"><td><code>global</code></td><td>Indicates if the <code>g</code> flag was used for a global match.</td><td><code>true</code></td></tr><tr class="even"><td><code>multiline</code></td><td>Indicates if the <code>m</code> flag was used to search across multiple lines.</td><td><code>false</code></td></tr><tr class="odd"><td><code>source</code></td><td>The text of the pattern.</td><td><code>quick\s(brown).+?(jumps)</code></td></tr><tr class="even"><td><code>sticky</code></td><td>Indicates if the <code>y</code> flag was used to match only from the index indicated by the <code>lastIndex</code> property.</td><td><code>false</code></td></tr><tr class="odd"><td><code>unicode</code></td><td>Indicates if the <code>u</code> flag was used to treat the pattern as a sequence of Unicode code points.</td><td><code>false</code></td></tr></tbody></table>
 
-Examples
---------
+## Examples
 
 ### Finding successive matches
 
@@ -70,7 +66,7 @@ This script displays the following text:
     Found abb. Next match starts at 3
     Found ab. Next match starts at 9
 
-**Warning:** **Do *not* place the regular expression literal (or [`RegExp`](../regexp) constructor) within the `while` condition!**
+**Warning:** **Do _not_ place the regular expression literal (or [`RegExp`](../regexp) constructor) within the `while` condition!**
 
 It will create an infinite loop if there is a match, due to the [`lastIndex`](lastindex) property being reset upon each iteration.
 
@@ -85,8 +81,7 @@ You can also use `exec()` without creating a [`RegExp`](../regexp) object explic
 
 This will log a message containing `'hello world!'`.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp.prototype.exec">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-regexp.prototype.exec</span></a></td></tr></tbody></table>
@@ -117,8 +112,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 -   [`RegExp`](../regexp)

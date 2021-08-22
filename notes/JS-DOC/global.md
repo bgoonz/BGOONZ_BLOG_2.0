@@ -1,26 +1,23 @@
-WebAssembly.Global() constructor
-================================
+# WebAssembly.Global() constructor
 
 A `WebAssembly.Global()` constructor creates a new `Global` object representing a global variable instance, accessible from both JavaScript and importable/exportable across one or more [`WebAssembly.Module`](../module) instances. This allows dynamic linking of multiple modules.
 
-Syntax
-------
+## Syntax
 
     new WebAssembly.Global(descriptor, value)
 
 ### Parameters
 
-*descriptor*  
+_descriptor_  
 A `GlobalDescriptor` dictionary object, which contains two properties:
 
 -   `value`: A [`USVString`](https://developer.mozilla.org/en-US/docs/Web/API/USVString) representing the data type of the global. This can be one of `i32`, `i64`, `f32`, and `f64`. USVString corresponds to the set of all possible sequences of unicode scalar values. USVString maps to a String when returned in JavaScript; it's generally only used for APIs that perform text processing and need a string of unicode scalar values to operate on. USVString is equivalent to DOMString except for not allowing unpaired surrogate codepoints. Unpaired surrogate codepoints present in USVString are converted by the browser to Unicode 'replacement character' U+FFFD, (�).
 -   `mutable`: A boolean value that determines whether the global is mutable or not. By default, this is `false`.
 
-*value*  
+_value_  
 The value the variable contains. This can be any value, as long as its type matches the variable's data type. If no value is specified, a typed 0 value is used, as specified by the [`DefaultValue` algorithm](https://webassembly.github.io/spec/js-api/#defaultvalue).
 
-Examples
---------
+## Examples
 
 ### Creating a new Global instance
 
@@ -53,8 +50,7 @@ The value of the global is then changed, first to `42` using the `Global.value` 
 
 **Note:** You can see the example [running live on GitHub](https://mdn.github.io/webassembly-examples/js-api-examples/global.html); see also the [source code](https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/global.html).
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-global-global">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#dom-global-global</span></a></td></tr></tbody></table>
@@ -85,8 +81,7 @@ No
 
 10.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

@@ -1,26 +1,21 @@
-SyntaxError: missing ) after argument list
-==========================================
+# SyntaxError: missing ) after argument list
 
 The JavaScript exception "missing ) after argument list" occurs when there is an error with how a function is called. This might be a typo, a missing operator, or an unescaped string.
 
-Message
--------
+## Message
 
     SyntaxError: Expected ')' (Edge)
     SyntaxError: missing ) after argument list (Firefox)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 There is an error with how a function is called. This might be a typo, a missing operator, or an unescaped string, for example.
 
-Examples
---------
+## Examples
 
 Because there is no "+" operator to concatenate the string, JavaScript expects the argument for the `log` function to be just `"PI: "`. In that case, it should be terminated by a closing parenthesis.
 
@@ -42,8 +37,7 @@ Here JavaScript thinks that you meant to have `);` inside the string and ignores
     console.log('"Java" + "Script" = \"' + 'Java' + 'Script\"');
     // '"Java" + "Script" = "JavaScript"'
 
-See also
---------
+## See also
 
 -   [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 

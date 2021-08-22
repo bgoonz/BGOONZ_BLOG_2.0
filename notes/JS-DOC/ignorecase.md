@@ -1,5 +1,4 @@
-RegExp.prototype.ignoreCase
-===========================
+# RegExp.prototype.ignoreCase
 
 The `ignoreCase` property indicates whether or not the "`i`" flag is used with the regular expression. `ignoreCase` is a read-only property of an individual regular expression instance.
 
@@ -17,15 +16,13 @@ Configurable
 
 yes
 
-Description
------------
+## Description
 
 The value of `ignoreCase` is a [`Boolean`](../boolean) and `true` if the "`i`" flag was used; otherwise, `false`. The "`i`" flag indicates that case should be ignored while attempting a match in a string.
 
 You cannot change this property directly.
 
-Examples
---------
+## Examples
 
 ### Using ignoreCase
 
@@ -33,8 +30,7 @@ Examples
 
     console.log(regex.ignoreCase); // true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.ignorecase">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-get-regexp.prototype.ignorecase</span></a></td></tr></tbody></table>
@@ -91,8 +87,7 @@ Specifications
 
 5.0
 
-See also
---------
+## See also
 
 -   [`RegExp.lastIndex`](lastindex)
 -   [`RegExp.prototype.dotAll`](dotall)

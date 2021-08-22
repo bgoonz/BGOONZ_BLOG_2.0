@@ -1,10 +1,8 @@
-TypeError: X.prototype.y called on incompatible type
-====================================================
+# TypeError: X.prototype.y called on incompatible type
 
 The JavaScript exception "called on incompatible target (or object)" occurs when a function (on a given object), is called with a `this` not corresponding to the type expected by the function.
 
-Message
--------
+## Message
 
     TypeError: 'this' is not a Set object (EdgE)
     TypeError: Function.prototype.toString called on incompatible object (Firefox)
@@ -12,13 +10,11 @@ Message
     TypeError: Method Set.prototype.add called on incompatible receiver undefined (Chrome)
     TypeError: Bind must be called on a function (Chrome)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 When this error is thrown, a function (on a given object), is called with a `this` not corresponding to the type expected by the function.
 
@@ -26,8 +22,7 @@ This issue can arise when using the [`Function.prototype.call()`](../global_obje
 
 This issue can also happen when providing a function that is stored as a property of an object as an argument to another function. In this case, the object that stores the function won't be the `this` target of that function when it is called by the other function. To work-around this issue, you will either need to provide a lambda which is making the call, or use the [`Function.prototype.bind()`](../global_objects/function/bind) function to force the `this` argument to the expected object.
 
-Examples
---------
+## Examples
 
 ### Invalid cases
 
@@ -53,8 +48,7 @@ Examples
     ['bar', 'baz'].forEach(x => myFun.bind(x));
     // This works using the "bind" function. It creates a lambda forwarding the argument.
 
-See also
---------
+## See also
 
 -   [`Function.prototype.call()`](../global_objects/function/call)
 -   [`Function.prototype.apply()`](../global_objects/function/apply)

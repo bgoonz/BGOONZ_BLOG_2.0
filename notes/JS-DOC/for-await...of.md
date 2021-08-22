@@ -1,12 +1,10 @@
-for await...of
-==============
+# for await...of
 
 The `for await...of` creates a loop iterating over async iterable objects as well as on sync iterables, including: built-in [`String`](../global_objects/string), [`Array`](../global_objects/array), `Array`-like objects (e.g., [`arguments`](../functions/arguments) or [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)), [`TypedArray`](../global_objects/typedarray), [`Map`](../global_objects/map), [`Set`](../global_objects/set), and user-defined async/sync iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object. This statement can only be used inside an [async function](async_function).
 
 **Note:** `for await...of` doesn't work with async iterators that are not async iterables.
 
-Syntax
-------
+## Syntax
 
     for await (variable of iterable) {
       statement
@@ -18,8 +16,7 @@ On each iteration a value of a different property is assigned to `variable`. `va
 `iterable`  
 Object whose iterable properties are to be iterated over.
 
-Examples
---------
+## Examples
 
 ### Iterating over async iterables
 
@@ -202,8 +199,7 @@ To make `finally` blocks of a sync generator to be always called use appropriate
     // caught 3
     // called finally
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
@@ -234,8 +230,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [`Symbol.asyncIterator`](../global_objects/symbol/asynciterator)
 -   [`for...of`](for...of)

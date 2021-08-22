@@ -1,10 +1,8 @@
-Math.round()
-============
+# Math.round()
 
 The `Math.round()` function returns the value of a number rounded to the nearest integer.
 
-Syntax
-------
+## Syntax
 
     Math.round(x)
 
@@ -17,15 +15,13 @@ A number.
 
 The value of the given number rounded to the nearest integer.
 
-Description
------------
+## Description
 
-If the fractional portion of the argument is greater than 0.5, the argument is rounded to the integer with the next higher absolute value. If it is less than 0.5, the argument is rounded to the integer with the lower absolute value. If the fractional portion is exactly 0.5, the argument is rounded to the next integer in the direction of +∞. **Note that this differs from many languages' `round()` functions, which often round this case to the next integer *away from zero***, instead giving a different result in the case of negative numbers with a fractional part of exactly 0.5.
+If the fractional portion of the argument is greater than 0.5, the argument is rounded to the integer with the next higher absolute value. If it is less than 0.5, the argument is rounded to the integer with the lower absolute value. If the fractional portion is exactly 0.5, the argument is rounded to the next integer in the direction of +∞. **Note that this differs from many languages' `round()` functions, which often round this case to the next integer _away from zero_**, instead giving a different result in the case of negative numbers with a fractional part of exactly 0.5.
 
 Because `round()` is a static method of `Math`, you always use it as `Math.round()`, rather than as a method of a `Math` object you created (`Math` has no constructor).
 
-Examples
---------
+## Examples
 
 ### Using round
 
@@ -35,14 +31,12 @@ Examples
     Math.round(-20.5 ); // -20
     Math.round(-20.51); // -21
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.round">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.round</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -98,8 +92,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Number.toPrecision()`](../number/toprecision)
 -   [`Number.toFixed()`](../number/tofixed)

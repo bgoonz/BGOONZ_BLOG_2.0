@@ -1,26 +1,21 @@
-SyntaxError: missing } after property list
-==========================================
+# SyntaxError: missing } after property list
 
 The JavaScript exception "missing } after property list" occurs when there is a mistake in the [object initializer](../operators/object_initializer) syntax somewhere. Might be in fact a missing curly bracket, but could also be a missing comma.
 
-Message
--------
+## Message
 
     SyntaxError: Expected '}' (Edge)
     SyntaxError: missing } after property list (Firefox)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 There is a mistake in the [object initializer](../operators/object_initializer) syntax somewhere. Might be in fact a missing curly bracket, but could also be a missing comma, for example. Also check if any closing curly brackets or parenthesis are in the correct order. Indenting or formatting the code a bit nicer might also help you to see through the jungle.
 
-Examples
---------
+## Examples
 
 ### Forgotten comma
 
@@ -40,8 +35,7 @@ Correct would be:
       c: 3
     };
 
-See also
---------
+## See also
 
 -   [Object initializer](../operators/object_initializer)
 

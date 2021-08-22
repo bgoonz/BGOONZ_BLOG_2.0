@@ -1,10 +1,8 @@
-BigInt.asUintN()
-================
+# BigInt.asUintN()
 
 The `BigInt.asUintN` static method clamps a BigInt value to an unsigned integer value, and returns that value.
 
-Syntax
-------
+## Syntax
 
     BigInt.asUintN(bits, bigint);
 
@@ -20,8 +18,7 @@ The BigInt value to clamp to fit into the supplied bits.
 
 The value of `bigint` modulo 2<sup>`bits`</sup>, as an unsigned integer.
 
-Examples
---------
+## Examples
 
 ### Staying in 64-bit ranges
 
@@ -36,8 +33,7 @@ The `BigInt.asUintN()` method can be useful to stay in the range of 64-bit arith
     // ↪ 0n
     // zero because of overflow
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint.asuintn">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-bigint.asuintn</span></a></td></tr></tbody></table>
@@ -68,8 +64,7 @@ No
 
 9.0
 
-See also
---------
+## See also
 
 -   [`BigInt`](../bigint)
 -   [`BigInt.asIntN()`](asintn)

@@ -1,19 +1,17 @@
-WebAssembly.instantiateStreaming()
-==================================
+# WebAssembly.instantiateStreaming()
 
 The `WebAssembly.instantiateStreaming()` function compiles and instantiates a WebAssembly module directly from a streamed underlying source. This is the most efficient, optimized way to load wasm code.
 
-Syntax
-------
+## Syntax
 
     WebAssembly.instantiateStreaming(source, importObject)
 
 ### Parameters
 
-*source*  
+_source_  
 A [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object or a promise that will fulfill with one, representing the underlying source of a .wasm module you want to stream, compile, and instantiate.
 
- *importObject* <span class="badge inline optional">Optional</span>   
+_importObject_ <span class="badge inline optional">Optional</span>  
 An object containing the values to be imported into the newly-created `Instance`, such as functions or [`WebAssembly.Memory`](memory) objects. There must be one matching property for each declared import of the compiled module or else a `WebAssembly.LinkError` is thrown.
 
 ### Return value
@@ -28,8 +26,7 @@ A `Promise` that resolves to a `ResultObject` which contains two fields:
 -   If either of the parameters are not of the correct type or structure, a [`TypeError`](../typeerror) is thrown.
 -   If the operation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror), [`WebAssembly.LinkError`](linkerror), or [`WebAssembly.RuntimeError`](runtimeerror), depending on the cause of the failure.
 
-Examples
---------
+## Examples
 
 ### Instantiating streaming
 
@@ -44,8 +41,7 @@ The `ResultObject`'s instance member is then accessed, and the contained exporte
 
 **Note:** For this to work, `.wasm` files should be returned with an `application/wasm` MIME type by the server.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-instantiatestreaming">WebAssembly Web API (WebAssembly Web API)<br />
 <span class="small">#dom-webassembly-instantiatestreaming</span></a></td></tr></tbody></table>
@@ -76,8 +72,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

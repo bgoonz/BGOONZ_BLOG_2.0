@@ -1,12 +1,10 @@
-Array.prototype.at()
-====================
+# Array.prototype.at()
 
 The `at()` method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.
 
 This is not to suggest there is anything wrong with using the square bracket notation. For example `array[0]` would return the first item. However instead of using [`array.length`](length) for latter items; e.g. `array[array.length-1]` for the last item, you can call `array.at(-1)`. [(See the examples below)](#examples)
 
-Syntax
-------
+## Syntax
 
     at(index)
 
@@ -19,8 +17,7 @@ The index (position) of the array element to be returned. Supports relative inde
 
 The element in the array matching the given index. Returns [`undefined`](../undefined) if the given index can not be found.
 
-Examples
---------
+## Examples
 
 ### Return the last value of an array
 

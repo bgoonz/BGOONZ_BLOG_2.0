@@ -1,15 +1,12 @@
-Less than (&lt;)
-================
+# Less than (&lt;)
 
 The less than operator (`<`) returns `true` if the left operand is less than the right operand, and `false` otherwise.
 
-Syntax
-------
+## Syntax
 
      x < y
 
-Description
------------
+## Description
 
 The operands are compared using the [Abstract Relational Comparison](https://tc39.es/ecma262/#sec-abstract-relational-comparison) algorithm, which is roughly summarised below:
 
@@ -23,8 +20,7 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 -   If either value is `NaN`, the operator returns `false`.
 -   Otherwise the values are compared as numeric values.
 
-Examples
---------
+## Examples
 
 ### String to string comparison
 
@@ -72,8 +68,7 @@ Examples
     console.log(3 < NaN);          // false
     console.log(NaN < 3);          // false
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
@@ -104,8 +99,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Greater than operator](greater_than)
 -   [Greater than or equal operator](greater_than_or_equal)

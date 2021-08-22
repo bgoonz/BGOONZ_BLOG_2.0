@@ -1,5 +1,4 @@
-NaN
-===
+# NaN
 
 The global `NaN` property is a value representing Not-A-Number.
 
@@ -17,10 +16,9 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
-`NaN` is a property of the *global object*. In other words, it is a variable in global scope.
+`NaN` is a property of the _global object_. In other words, it is a variable in global scope.
 
 The initial value of `NaN` is Not-A-Number — the same as the value of [`Number.NaN`](number/nan). In modern browsers, `NaN` is a non-configurable, non-writable property. Even when this is not the case, avoid overriding it. It is rather rare to use `NaN` in a program.
 
@@ -32,8 +30,7 @@ There are five different types of operations that return `NaN`:
 -   Indeterminate form (e.g. `0 * Infinity`, or `undefined + undefined`)
 -   Any operation that involves a string and is not an addition operation (e.g. `"foo" / 3`)
 
-Examples
---------
+## Examples
 
 ### Testing against NaN
 
@@ -62,8 +59,7 @@ Additionally, some array methods cannot find `NaN`, while others can.
     arr.includes(NaN);                     // true
     arr.findIndex(n => Number.isNaN(n));   // 2
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-nan">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-value-properties-of-the-global-object-nan</span></a></td></tr></tbody></table>
@@ -94,8 +90,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Number.NaN`](number/nan)
 -   [`Number.isNaN()`](number/isnan)

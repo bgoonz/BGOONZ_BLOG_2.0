@@ -1,5 +1,4 @@
-Symbol.toStringTag
-==================
+# Symbol.toStringTag
 
 The `Symbol.toStringTag` well-known symbol is a string valued property that is used in the creation of the default string description of an object. It is accessed internally by the [`Object.prototype.toString()`](../object/tostring) method.
 
@@ -17,8 +16,7 @@ Configurable
 
 no
 
-Examples
---------
+## Examples
 
 ### Default tags
 
@@ -65,14 +63,12 @@ Due to a [WebIDL spec change](https://github.com/heycam/webidl/pull/357) in mid-
     test.toString(); // Returns [object HTMLButtonElement]
     test[Symbol.toStringTag];  // Returns HTMLButtonElement
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.tostringtag">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-symbol.tostringtag</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -154,8 +150,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`Object.prototype.toString()`](../object/tostring)
 

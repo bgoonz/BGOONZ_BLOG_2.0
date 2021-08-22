@@ -1,16 +1,14 @@
-import
-======
+# import
 
 The static `import` statement is used to import read only live bindings which are [exported](export) by another module.
 
-Imported modules are in [`strict mode`](../strict_mode) whether you declare them as such or not. The `import` statement cannot be used in embedded scripts unless such script has a `type="module"`. Bindings imported are called live bindings because they are updated by the module that exported the binding.
+Imported modules are in [`strict mode`](../strict_mode) whether you declare them as such or not. The `import` statement cannot be used in embedded scripts unless such script has a `type="module"`. Bindings imported are called live bindings because they are updated by the module that exported the binding.
 
 There is also a function-like dynamic `import()`, which does not require scripts of `type="module"`.
 
 Backward compatibility can be ensured using attribute `nomodule` on the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) tag.
 
-Syntax
-------
+## Syntax
 
     import defaultExport from "module-name";
     import * as name from "module-name";
@@ -39,8 +37,7 @@ Name of the exports to be imported.
 `aliasN`  
 Names that will refer to the named imports.
 
-Description
------------
+## Description
 
 The `name` parameter is the name of the "module object" which will be used as a kind of namespace to refer to the exports. The `export` parameters specify individual named exports, while the `import * as name` syntax imports all of them. Below are examples to clarify the syntax.
 
@@ -148,8 +145,7 @@ This form also supports the `await` keyword.
 
     let module = await import('/modules/my-module.js');
 
-Examples
---------
+## Examples
 
 ### Standard Import
 
@@ -196,8 +192,7 @@ This example shows how to load functionality on to a page based on a user action
       });
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-imports">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-imports</span></a></td></tr></tbody></table>
@@ -296,8 +291,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`export`](export)
 -   [`import.meta`](import.meta)

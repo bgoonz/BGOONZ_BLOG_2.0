@@ -1,10 +1,8 @@
-RegExp.prototype.test()
-=======================
+# RegExp.prototype.test()
 
 The `test()` method executes a search for a match between a regular expression and a specified string. Returns `true` or `false`.
 
-Syntax
-------
+## Syntax
 
     test(str)
 
@@ -17,8 +15,7 @@ The string against which to match the regular expression.
 
 `true` if there is a match between the regular expression and the string `str`. Otherwise, `false`.
 
-Description
------------
+## Description
 
 Use `test()` whenever you want to know whether a pattern is found in a string. `test()` returns a boolean, unlike the [`String.prototype.search()`](../string/search) method (which returns the index of a match, or `-1` if not found).
 
@@ -26,8 +23,7 @@ To get more information (but with slower execution), use the [`exec()`](exec) me
 
 As with `exec()` (or in combination with it), `test()` called multiple times on the same global regular expression instance will advance past the previous match.
 
-Examples
---------
+## Examples
 
 ### Using test()
 
@@ -56,7 +52,7 @@ When a regex has the [global flag](https://developer.mozilla.org/en-US/docs/Web/
 
 Further calls to `test(str)` will resume searching `str` starting from `lastIndex`. The `lastIndex` property will continue to increase each time `test()` returns `true`.
 
-**Note:** As long as `test()` returns `true`, `lastIndex` will *not* reset—even when testing a different string!
+**Note:** As long as `test()` returns `true`, `lastIndex` will _not_ reset—even when testing a different string!
 
 When `test()` returns `false`, the calling regex's `lastIndex` property will reset to `0`.
 
@@ -79,14 +75,12 @@ The following example demonstrates this behavior:
     // regex.lastIndex is at 0
     // (...and so on)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp.prototype.test">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-regexp.prototype.test</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -142,8 +136,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 -   [`RegExp`](../regexp)

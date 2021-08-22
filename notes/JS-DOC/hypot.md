@@ -1,12 +1,10 @@
-Math.hypot()
-============
+# Math.hypot()
 
 The `Math.hypot()` function returns the square root of the sum of squares of its arguments, that is:
 
 $$\\mathtt{\\operatorname{Math.hypot}(v\_{1},v\_{2},\\ldots,v\_{n})} = \\sqrt{\\sum\\limits\_{i = 1}^{n}v\_{i}^{2}} = \\sqrt{v\_{1}^{2} + v\_{2}^{2} + \\ldots + v\_{n}^{2}}$$
 
-Syntax
-------
+## Syntax
 
     Math.hypot()
     Math.hypot(value0)
@@ -22,8 +20,7 @@ Numbers.
 
 The square root of the sum of squares of the given arguments. If at least one of the arguments cannot be converted to a number, [`NaN`](../nan) is returned.
 
-Description
------------
+## Description
 
 Calculating the hypotenuse of a right triangle, or the magnitude of a complex number, uses the formula `Math.sqrt(v1*v1 + v2*v2)`, where v1 and v2 are the lengths of the triangle's legs, or the complex number's real and complex components. The corresponding distance in 2 or more dimensions can be calculated by adding more squares under the square root: `Math.sqrt(v1*v1 + v2*v2 + v3*v3 + v4*v4)`.
 
@@ -37,8 +34,7 @@ If no arguments are given, the result is +0. If any of the arguments is ±Infini
 
 With one argument, `Math.hypot()` is equivalent to `Math.abs()`.
 
-Examples
---------
+## Examples
 
 ### Using Math.hypot()
 
@@ -51,8 +47,7 @@ Examples
     Math.hypot(3, 4, '5');     // 7.0710678118654755, +'5' => 5
     Math.hypot(-3);            // 3, the same as Math.abs(-3)
 
-Polyfill
---------
+## Polyfill
 
 A naive approach that does not handle overflow/underflow issues:
 
@@ -86,8 +81,7 @@ A polyfill that avoids underflows and overflows:
       return containsInfinity ? Infinity : (max === 1 / 0 ? 1 / 0 : max * Math.sqrt(s));
     };
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.hypot">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.hypot</span></a></td></tr></tbody></table>
@@ -118,8 +112,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Math.abs()`](abs)
 -   [`Math.pow()`](pow)

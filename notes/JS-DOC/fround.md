@@ -1,10 +1,8 @@
-Math.fround()
-=============
+# Math.fround()
 
 The `Math.fround()` function returns the nearest [32-bit single precision](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) float representation of a [`Number`](../number).
 
-Syntax
-------
+## Syntax
 
     Math.fround(doubleFloat)
 
@@ -17,8 +15,7 @@ A [`Number`](../number). If the parameter is of a different type, it will get co
 
 The nearest [32-bit single precision](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) float representation of the given number.
 
-Description
------------
+## Description
 
 JavaScript uses 64-bit double floating-point numbers internally, which offer a very high precision. However, sometimes you may be working with 32-bit floating-point numbers, for example if you are reading values from a [`Float32Array`](../float32array). This can create confusion: Checking a 64-bit float and a 32-bit float for equality may fail even though the numbers are seemingly identical.
 
@@ -26,8 +23,7 @@ To solve this, `Math.fround()` can be used to cast the 64-bit float to a 32-bit 
 
 Because `fround()` is a static method of `Math`, you always use it as `Math.fround()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.fround()
 
@@ -51,8 +47,7 @@ If the parameter cannot be converted to a number, or it is [not-a-number](https:
     Math.fround('abc'); // NaN
     Math.fround(NaN); // NaN
 
-Polyfill
---------
+## Polyfill
 
 This can be emulated with the following function, if [`Float32Array`](../float32array) are supported:
 
@@ -81,8 +76,7 @@ Supporting older browsers is slower, but also possible:
       return sign * powexp * (leading - mantissa / 0x800000);
     };
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.fround">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.fround</span></a></td></tr></tbody></table>
@@ -113,8 +107,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Math.round()`](round)
 

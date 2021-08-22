@@ -1,10 +1,8 @@
-DataView.prototype.setBigInt64()
-================================
+# DataView.prototype.setBigInt64()
 
 The `setBigInt64()` method stores a signed 64-bit integer (long long) value at the specified byte offset from the start of the [`DataView`](../dataview).
 
-Syntax
-------
+## Syntax
 
     setBigInt64(byteOffset, value)
     setBigInt64(byteOffset, value, littleEndian)
@@ -29,8 +27,7 @@ littleEndian
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such that it would store beyond the end of the view.
 
-Examples
---------
+## Examples
 
 ### Using the `setBigInt64` method
 
@@ -39,14 +36,12 @@ Examples
     dataview.setBigInt64(0, 3n);
     dataview.getBigInt64(0); // 3n
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbigint64">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-dataview.prototype.setbigint64</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -102,8 +97,7 @@ No
 
 9.0
 
-See also
---------
+## See also
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

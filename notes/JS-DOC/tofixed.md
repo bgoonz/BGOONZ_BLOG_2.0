@@ -1,17 +1,15 @@
-Number.prototype.toFixed()
-==========================
+# Number.prototype.toFixed()
 
 The `toFixed()` method formats a number using fixed-point notation.
 
-Syntax
-------
+## Syntax
 
     toFixed()
     toFixed(digits)
 
 ### Parameters
 
- `digits` <span class="badge inline optional">Optional</span>   
+`digits` <span class="badge inline optional">Optional</span>  
 The number of digits to appear after the decimal point; this may be a value between `0` and `20`, inclusive, and implementations may optionally support a larger range of values. If this argument is omitted, it is treated as `0`.
 
 ### Return value
@@ -26,15 +24,13 @@ If `digits` is too small or too large. Values between `0` and `100`, inclusive, 
 [`TypeError`](../typeerror)  
 If this method is invoked on an object that is not a [`Number`](../number).
 
-Description
------------
+## Description
 
 `toFixed()` returns a string representation of `numObj` that does not use exponential notation and has exactly `digits` digits after the decimal place. The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length. If the absolute value of `numObj` is greater or equal to `1e+21`, this method calls [`Number.prototype.toString()`](tostring) and returns a string in exponential notation.
 
 **Warning:** Floating point numbers cannot represent all decimals precisely in binary. This can lead to unexpected results, such as `0.1 + 0.2 === 0.3` returning `false` .
 
-Examples
---------
+## Examples
 
 ### Using toFixed
 
@@ -51,14 +47,12 @@ Examples
     -2.34.toFixed(1)       // Returns -2.3 (due to operator precedence, negative number literals don't return a string...)
     (-2.34).toFixed(1)     // Returns '-2.3'
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.prototype.tofixed">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-number.prototype.tofixed</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -114,8 +108,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Number.prototype.toExponential()`](toexponential)
 -   [`Number.prototype.toPrecision()`](toprecision)

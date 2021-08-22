@@ -1,15 +1,12 @@
-Exponentiation (\*\*)
-=====================
+# Exponentiation (\*\*)
 
 The exponentiation operator (`**`) returns the result of raising the first operand to the power of the second operand. It is equivalent to `Math.pow`, except it also accepts BigInts as operands.
 
-Syntax
-------
+## Syntax
 
     Operator: var1 ** var2
 
-Description
------------
+## Description
 
 The exponentiation operator is right-associative: `a ** b ** c` is equal to `a ** (b ** c)`.
 
@@ -26,8 +23,7 @@ In JavaScript, it is impossible to write an ambiguous exponentiation expression.
 
 Note that some programming languages use the caret symbol ^ for exponentiation, but JavaScript uses that symbol for the [bitwise logical XOR operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_xor).
 
-Examples
---------
+## Examples
 
 ### Basic exponentiation
 
@@ -53,8 +49,7 @@ To force the base of an exponentiation expression to be a negative number:
 
     (-2) ** 2 // 4
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exp-operator">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-exp-operator</span></a></td></tr></tbody></table>
@@ -85,8 +80,7 @@ No
 
 6.0
 
-See also
---------
+## See also
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)

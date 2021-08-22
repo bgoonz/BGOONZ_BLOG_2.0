@@ -1,25 +1,20 @@
-Error: Permission denied to access property "x"
-===============================================
+# Error: Permission denied to access property "x"
 
 The JavaScript exception "Permission denied to access property" occurs when there was an attempt to access an object for which you have no permission.
 
-Message
--------
+## Message
 
     Error: Permission denied to access property "x"
 
-Error type
-----------
+## Error type
 
 [`Error`](../global_objects/error).
 
-What went wrong?
-----------------
+## What went wrong?
 
 There was attempt to access an object for which you have no permission. This is likely an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element loaded from a different domain for which you violated the [same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy).
 
-Examples
---------
+## Examples
 
 ### No permission to access document
 
@@ -37,8 +32,7 @@ Examples
       <body></body>
     </html>
 
-See also
---------
+## See also
 
 -   [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
 -   [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)

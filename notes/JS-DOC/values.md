@@ -1,10 +1,8 @@
-TypedArray.prototype.values()
-=============================
+# TypedArray.prototype.values()
 
 The `values()` method returns a new array iterator object that contains the values for each index in the array.
 
-Syntax
-------
+## Syntax
 
     values()
 
@@ -12,8 +10,7 @@ Syntax
 
 A new array iterator object.
 
-Examples
---------
+## Examples
 
 ### Iteration using for...of loop
 
@@ -38,7 +35,7 @@ Examples
     iterator.next();               // Object { value: "d", done: false }
     iterator.next();               // Object { value: "e", done: false }
     iterator.next();               // Object { value: undefined, done: true }
-    iteraror.next().value;         // undefined 
+    iteraror.next().value;         // undefined
 
 **Warning:** One-use: the array iterator object is one use or temporary object
 
@@ -66,14 +63,12 @@ example:
 
 **Note:** If the values in the array changed the array iterator object values change too.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-%typedarray%.prototype.values</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -129,8 +124,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.keys()`](../array/keys)
 -   [`Array.prototype.entries()`](../array/entries)

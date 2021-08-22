@@ -1,27 +1,22 @@
-TypeError: cannot use 'in' operator to search for 'x' in 'y'
-============================================================
+# TypeError: cannot use 'in' operator to search for 'x' in 'y'
 
 The JavaScript exception "right-hand side of 'in' should be an object" occurs when the [`in` operator](../operators/in) was used to search in strings, or in numbers, or other primitive types. It can only be used to check if a property is in an object.
 
-Message
--------
+## Message
 
     TypeError: Invalid operand to 'in' (Edge)
     TypeError: right-hand side of 'in' should be an object, got 'x' (Firefox)
     TypeError: cannot use 'in' operator to search for 'x' in 'y' (Firefox, Chrome)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 The [`in` operator](../operators/in) can only be used to check if a property is in an object. You can't search in strings, or in numbers, or other primitive types.
 
-Examples
---------
+## Examples
 
 ### Searching in strings
 
@@ -60,8 +55,7 @@ Be careful when using the `in` operator to search in [`Array`](../global_objects
     3 in trees; // true
     "oak" in trees; // false
 
-See also
---------
+## See also
 
 -   [`in` operator](../operators/in)
 

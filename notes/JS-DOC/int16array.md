@@ -1,16 +1,13 @@
-Int16Array
-==========
+# Int16Array
 
 The `Int16Array` typed array represents an array of twos-complement 16-bit signed integers in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
 
-Constructor
------------
+## Constructor
 
 [`Int16Array()`](int16array/int16array)  
 Creates a new `Int16Array` object.
 
-Static properties
------------------
+## Static properties
 
 [`Int16Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
 Returns a number value of the element size. `2` in the case of an `Int16Array`.
@@ -18,8 +15,7 @@ Returns a number value of the element size. `2` in the case of an `Int16Array`.
 [`Int16Array.name`](typedarray/name)  
 Returns the string value of the constructor name. In the case of the `Int16Array` type: "`Int16Array`".
 
-Static methods
---------------
+## Static methods
 
 [`Int16Array.from()`](typedarray/from)  
 Creates a new `Int16Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
@@ -27,8 +23,7 @@ Creates a new `Int16Array` from an array-like or iterable object. See also [`Arr
 [`Int16Array.of()`](typedarray/of)  
 Creates a new `Int16Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
-Instance properties
--------------------
+## Instance properties
 
 [`Int16Array.prototype.buffer`](typedarray/buffer)  
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Int16Array`. Fixed at construction time and thus **read only**.
@@ -42,14 +37,13 @@ Returns the offset (in bytes) of the `Int16Array` from the start of its [`ArrayB
 [`Int16Array.prototype.length`](typedarray/length)  
 Returns the number of elements held in the `Int16Array`. Fixed at construction time and thus **read only.**
 
-Instance methods
-----------------
+## Instance methods
 
 [`Int16Array.prototype.copyWithin()`](typedarray/copywithin)  
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
 
 [`Int16Array.prototype.entries()`](typedarray/entries)  
-Returns a new *array iterator* object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
+Returns a new _array iterator_ object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
 
 [`Int16Array.prototype.every()`](typedarray/every)  
 Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
@@ -79,7 +73,7 @@ Returns the first (least) index of an element within the array equal to the spec
 Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
 
 [`Int16Array.prototype.keys()`](typedarray/keys)  
-Returns a new *array iterator* that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
+Returns a new _array iterator_ that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
 
 [`Int16Array.prototype.lastIndexOf()`](typedarray/lastindexof)  
 Returns the last (greatest) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
@@ -121,10 +115,9 @@ Returns a new **array iterator object that contains the values for each index in
 **Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).**
 
 **[`Int16Array.prototype[@@iterator]()`](typedarray/@@iterator)**  
-**Returns a new *array iterator* object that contains the values for each index in the array.**
+**Returns a new _array iterator_ object that contains the values for each index in the array.**
 
-Examples
---------
+## Examples
 
 ### Different ways to create an Int16Array
 
@@ -153,8 +146,7 @@ Examples
     var int16 = new Int16Array(iterable);
     // Int16Array[1, 2, 3]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#table-49</span></a></td></tr></tbody></table>
@@ -211,8 +203,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   **[JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)**
 -   **[`ArrayBuffer`](arraybuffer)**

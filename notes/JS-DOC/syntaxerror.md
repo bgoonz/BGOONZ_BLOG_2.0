@@ -1,16 +1,13 @@
-SyntaxError
-===========
+# SyntaxError
 
 The `SyntaxError` object represents an error when trying to interpret syntactically invalid code. It is thrown when the JavaScript engine encounters tokens or token order that does not conform to the syntax of the language when parsing code.
 
-Constructor
------------
+## Constructor
 
 [`SyntaxError()`](syntaxerror/syntaxerror)  
 Creates a new `SyntaxError` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`SyntaxError.prototype.message`](error/message)  
 Error message. Although ECMA-262 specifies that [`SyntaxError`](syntaxerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
@@ -30,8 +27,7 @@ Column number in line that raised this error. Inherited from [`Error`](error).
 [`SyntaxError.prototype.stack`](error/stack)  
 Stack trace. Inherited from [`Error`](error).
 
-Examples
---------
+## Examples
 
 ### Catching a SyntaxError
 
@@ -61,14 +57,12 @@ Examples
       console.error(e.stack);                  // @debugger eval code:3:9
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-syntaxerror">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-native-error-types-used-in-this-standard-syntaxerror</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -150,8 +144,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Error`](error)
 

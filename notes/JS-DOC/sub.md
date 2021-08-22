@@ -1,10 +1,8 @@
-Atomics.sub()
-=============
+# Atomics.sub()
 
 The static `Atomics.sub()` method substracts a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.
 
-Syntax
-------
+## Syntax
 
     Atomics.sub(typedArray, index, value)
 
@@ -28,8 +26,7 @@ The old value at the given position (`typedArray[index]`).
 -   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
 -   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
-Examples
---------
+## Examples
 
 ### Using sub
 
@@ -40,14 +37,12 @@ Examples
     Atomics.sub(ta, 0, 12); // returns 48, the old value
     Atomics.load(ta, 0); // 36
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.sub">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-atomics.sub</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -131,8 +126,7 @@ No
 
 Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-See also
---------
+## See also
 
 -   [`Atomics`](../atomics)
 -   [`Atomics.add()`](add)

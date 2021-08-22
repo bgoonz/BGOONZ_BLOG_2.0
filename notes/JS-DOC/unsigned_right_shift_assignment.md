@@ -1,16 +1,13 @@
-Unsigned right shift assignment (&gt;&gt;&gt;=)
-===============================================
+# Unsigned right shift assignment (&gt;&gt;&gt;=)
 
-The unsigned right shift assignment operator (*`>>>=`*) moves the specified amount of bits to the right and assigns the result to the variable.
+The unsigned right shift assignment operator (_`>>>=`_) moves the specified amount of bits to the right and assigns the result to the variable.
 
-Syntax
-------
+## Syntax
 
     Operator: x >>>= y
     Meaning:  x    = x >>> y
 
-Examples
---------
+## Examples
 
 ### Using unsigned right shift assignment
 
@@ -20,14 +17,12 @@ Examples
     let b = -5; // (-00000000000000000000000000000101)
     b >>>= 2;   // 1073741822 (00111111111111111111111111111110)
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -83,8 +78,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Unsigned right shift operator](unsigned_right_shift)

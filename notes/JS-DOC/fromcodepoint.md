@@ -1,10 +1,8 @@
-String.fromCodePoint()
-======================
+# String.fromCodePoint()
 
 The static `String.fromCodePoint()` method returns a string created by using the specified sequence of code points.
 
-Syntax
-------
+## Syntax
 
     String.fromCodePoint(num1)
     String.fromCodePoint(num1, num2)
@@ -23,15 +21,13 @@ A string created by using the specified sequence of code points.
 
 -   A [`RangeError`](../../errors/not_a_codepoint) is thrown if an invalid Unicode code point is given (e.g. `"RangeError: NaN is not a valid code point"`).
 
-Description
------------
+## Description
 
-This method returns a string (and *not* a [`String`](../string) object).
+This method returns a string (and _not_ a [`String`](../string) object).
 
 Because `fromCodePoint()` is a static method of [`String`](../string), you must call it as `String.fromCodePoint()`, rather than as a method of a [`String`](../string) object you created.
 
-Polyfill
---------
+## Polyfill
 
 The `String.fromCodePoint()` method has been added to ECMAScript 2015 and may not be supported in all web browsers or environments yet.
 
@@ -73,8 +69,7 @@ Use the code below for a polyfill:
         }
     }(String.fromCharCode));
 
-Examples
---------
+## Examples
 
 ### Using `fromCodePoint()`
 
@@ -107,8 +102,7 @@ Invalid input:
 
     String.fromCodePoint(0x1F303); // or 127747 in decimal
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcodepoint">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.fromcodepoint</span></a></td></tr></tbody></table>
@@ -139,8 +133,7 @@ No
 
 4.0
 
-See also
---------
+## See also
 
 -   [`String.fromCharCode()`](fromcharcode)
 -   [`String.prototype.charAt()`](charat)

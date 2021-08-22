@@ -1,20 +1,16 @@
-TypeError: Reduce of empty array with no initial value
-======================================================
+# TypeError: Reduce of empty array with no initial value
 
 The JavaScript exception "reduce of empty array with no initial value" occurs when a reduce function is used.
 
-Message
--------
+## Message
 
     TypeError: reduce of empty array with no initial value
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 In JavaScript, there are several reduce functions:
 
@@ -23,8 +19,7 @@ In JavaScript, there are several reduce functions:
 
 These functions optionally take an `initialValue` (which will be used as the first argument to the first call of the `callback`). However, if no initial value is provided, it will use the first element of the [`Array`](../global_objects/array) or [`TypedArray`](../global_objects/typedarray) as the initial value. This error is raised when an empty array is provided because no initial value can be returned in that case.
 
-Examples
---------
+## Examples
 
 ### Invalid cases
 
@@ -65,8 +60,7 @@ Another way would be to handle the empty case, either before calling `reduce`, o
     }, "");
     // name_list2 == "" when names is empty.
 
-See also
---------
+## See also
 
 -   [`Array.prototype.reduce()`](../global_objects/array/reduce)
 -   [`Array.prototype.reduceRight()`](../global_objects/array/reduceright)

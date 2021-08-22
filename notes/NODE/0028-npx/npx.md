@@ -10,10 +10,6 @@ seo:
 template: docs
 ---
 
-
-
-
-
 `npx` is a very powerful command that's been available in **npm** starting version 5.2, released in July 2017.
 
 > If you don't want to install npm, you can [install npx as a standalone package](https://www.npmjs.com/package/npx)

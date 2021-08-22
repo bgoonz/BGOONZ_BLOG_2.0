@@ -1,15 +1,12 @@
-Logical NOT (!)
-===============
+# Logical NOT (!)
 
 The logical NOT (`!`) operator (logical complement, negation) takes truth to falsity and vice versa. It is typically used with [`Boolean`](../global_objects/boolean) (logical) values. When used with non-Boolean values, it returns `false` if its single operand can be converted to `true`; otherwise, returns `true`.
 
-Syntax
-------
+## Syntax
 
     !expr
 
-Description
------------
+## Description
 
 Returns `false` if its single operand can be converted to `true`; otherwise, returns `true`.
 
@@ -20,13 +17,12 @@ Examples of expressions that can be converted to false are:
 -   `null`;
 -   `NaN`;
 -   `0`;
--   empty string (`""` or `''` or ``` `` ```);
+-   empty string (`""` or `''` or ` `` `);
 -   `undefined`.
 
 Even though the `!` operator can be used with operands that are not Boolean values, it can still be considered a boolean operator since its return value can always be converted to a [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). To explicitly convert its return value (or any expression in general) to the corresponding boolean value, use a double [NOT operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_not) or the [`Boolean`](../global_objects/boolean/boolean) constructor.
 
-Examples
---------
+## Examples
 
 ### Using NOT
 
@@ -60,8 +56,7 @@ is always equal to:
 
     bCondition
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-logical-not-operator">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Logical NOT expression' in that specification.</span></a></td></tr></tbody></table>
@@ -92,8 +87,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Boolean`](../global_objects/boolean)
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)

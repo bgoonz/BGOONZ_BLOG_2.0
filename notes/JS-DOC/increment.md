@@ -1,22 +1,18 @@
-Increment (++)
-==============
+# Increment (++)
 
 The increment operator (`++`) increments (adds one to) its operand and returns a value.
 
-Syntax
-------
+## Syntax
 
     Operator: x++ or ++x
 
-Description
------------
+## Description
 
 If used postfix, with operator after operand (for example, `x++`), the increment operator increments and returns the value before incrementing.
 
 If used prefix, with operator before operand (for example, `++x`), the increment operator increments and returns the value after incrementing.
 
-Examples
---------
+## Examples
 
 ### Postfix increment
 
@@ -34,8 +30,7 @@ Examples
     // a = 3
     // b = 3
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-increment-operator">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Increment operator' in that specification.</span></a></td></tr></tbody></table>
@@ -66,8 +61,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)

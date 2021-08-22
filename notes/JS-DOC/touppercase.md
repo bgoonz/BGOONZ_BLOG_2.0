@@ -1,10 +1,8 @@
-String.prototype.toUpperCase()
-==============================
+# String.prototype.toUpperCase()
 
 The `toUpperCase()` method returns the calling string value converted to uppercase (the value will be converted to a string if it isn't one).
 
-Syntax
-------
+## Syntax
 
     toUpperCase()
 
@@ -17,13 +15,11 @@ A new string representing the calling string converted to upper case.
 [`TypeError`](../typeerror)  
 When called on [`null`](../null) or [`undefined`](../undefined), for example, `String.prototype.toUpperCase.call(undefined)`.
 
-Description
------------
+## Description
 
 The `toUpperCase()` method returns the value of the string converted to uppercase. This method does not affect the value of the string itself since JavaScript strings are immutable.
 
-Examples
---------
+## Examples
 
 ### Basic usage
 
@@ -44,14 +40,12 @@ This method will convert any non-string value to a string, when you set its `thi
     // prints out 'ABCDEF TRUE'.
     console.log(a, b);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.touppercase">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.touppercase</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -107,8 +101,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.toLocaleLowerCase()`](tolocalelowercase)
 -   [`String.prototype.toLocaleUpperCase()`](tolocaleuppercase)

@@ -1,10 +1,8 @@
-Array.prototype.forEach()
-=========================
+# Array.prototype.forEach()
 
 The `forEach()` method executes a provided function once for each array element.
 
-Syntax
-------
+## Syntax
 
     // Arrow function
     forEach((element) => { ... } )
@@ -29,21 +27,20 @@ Function to execute on each element. It accepts between one and three arguments:
 `element`  
 The current element being processed in the array.
 
- `index` <span class="badge inline optional">Optional</span>   
+`index` <span class="badge inline optional">Optional</span>  
 The index of `element` in the array.
 
- `array` <span class="badge inline optional">Optional</span>   
+`array` <span class="badge inline optional">Optional</span>  
 The array `forEach()` was called upon.
 
- `thisArg` <span class="badge inline optional">Optional</span>   
+`thisArg` <span class="badge inline optional">Optional</span>  
 Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
 `undefined`.
 
-Description
------------
+## Description
 
 `forEach()` calls a provided `callbackFn` function once for each element in an array in ascending index order. It is not invoked for index properties that have been deleted or are uninitialized. (For sparse arrays, [see example below](#sparsearray).)
 
@@ -94,8 +91,7 @@ Array methods: [`every()`](every), [`some()`](some), [`find()`](find), and [`fin
     // Naively expected output: 14
     // Actual output: 0
 
-Polyfill
---------
+## Polyfill
 
 `forEach()` was added to the ECMA-262 standard in the 5<sup>th</sup> edition, and it may not be present in all implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of `forEach()` in implementations which do not natively support it.
 
@@ -159,8 +155,7 @@ This algorithm is exactly the one specified in ECMA-262, 5<sup>th</sup> edition,
       };
     }
 
-Examples
---------
+## Examples
 
 ### No operation for uninitialized values (sparse arrays)
 
@@ -303,8 +298,7 @@ The following example is only here for learning purpose. If you want to flatten 
 
     flatten(nested) // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.foreach">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.foreach</span></a></td></tr></tbody></table>
@@ -335,8 +329,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.find()`](find)
 -   [`Array.prototype.findIndex()`](findindex)

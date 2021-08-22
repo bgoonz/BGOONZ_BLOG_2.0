@@ -1,14 +1,12 @@
-Math.log()
-==========
+# Math.log()
 
 The `Math.log()` function returns the natural logarithm (base [`e`](e)) of a number, that is
 
-∀*x* &gt; 0, `Math.log` `(``x``)` = ln (*x*) = the unique *y* such that *e*<sup>*y*</sup> = *x*
+∀*x* &gt; 0, `Math.log` ` (``x``) ` = ln (_x_) = the unique *y* such that *e*<sup>_y_</sup> = *x*
 
-The JavaScript `Math.log()` function is equivalent to *ln(x)* in mathematics.
+The JavaScript `Math.log()` function is equivalent to _ln(x)_ in mathematics.
 
-Syntax
-------
+## Syntax
 
     Math.log(x)
 
@@ -21,8 +19,7 @@ A number.
 
 The natural logarithm (base [`e`](e)) of the given number. If the number is negative, [`NaN`](../nan) is returned.
 
-Description
------------
+## Description
 
 If the value of `x` is 0, the return value is always [`-Infinity`](../number/negative_infinity).
 
@@ -32,8 +29,7 @@ Because `log()` is a static method of `Math`, you always use it as `Math.log()`,
 
 If you need the natural log of 2 or 10, use the constants [`Math.LN2`](ln2) or [`Math.LN10`](ln10). If you need a logarithm to base 2 or 10, use [`Math.log2()`](log2) or [`Math.log10()`](log10). If you need a logarithm to other bases, use Math.log(x) / Math.log(otherBase) as in the example below; you might want to precalculate 1 / Math.log(otherBase).
 
-Examples
---------
+## Examples
 
 ### Using Math.log()
 
@@ -44,7 +40,7 @@ Examples
 
 ### Using Math.log() with a different base
 
-The following function returns the logarithm of `y` with base `x` (ie. log<sub>*x*</sub>*y*):
+The following function returns the logarithm of `y` with base `x` (ie. log<sub>_x_</sub>_y_):
 
     function getBaseLog(x, y) {
       return Math.log(y) / Math.log(x);
@@ -52,8 +48,7 @@ The following function returns the logarithm of `y` with base `x` (ie. log<sub>*
 
 If you run `getBaseLog(10, 1000)` it returns `2.9999999999999996` due to floating-point rounding, which is very close to the actual answer of 3.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.log</span></a></td></tr></tbody></table>
@@ -84,8 +79,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.exp()`](exp)
 -   [`Math.log1p()`](log1p)

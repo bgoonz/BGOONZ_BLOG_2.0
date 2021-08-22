@@ -1,22 +1,18 @@
-Decrement (--)
-==============
+# Decrement (--)
 
 The decrement operator (`--`) decrements (subtracts one from) its operand and returns a value.
 
-Syntax
-------
+## Syntax
 
     Operator: x-- or --x
 
-Description
------------
+## Description
 
 If used postfix, with operator after operand (for example, `x--`), the decrement operator decrements and returns the value before decrementing.
 
 If used prefix, with operator before operand (for example, `--x`), the decrement operator decrements and returns the value after decrementing.
 
-Examples
---------
+## Examples
 
 ### Postfix decrement
 
@@ -34,8 +30,7 @@ Examples
     // a = 1
     // b = 1
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-decrement-operator">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-postfix-decrement-operator</span></a></td></tr></tbody></table>
@@ -66,8 +61,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)

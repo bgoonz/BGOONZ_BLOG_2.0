@@ -1,22 +1,18 @@
-ReferenceError: assignment to undeclared variable "x"
-=====================================================
+# ReferenceError: assignment to undeclared variable "x"
 
 The JavaScript [strict mode](../strict_mode)-only exception "Assignment to undeclated variable" occurs when the value has been assigned to an undeclared variable.
 
-Message
--------
+## Message
 
     ReferenceError: assignment to undeclared variable "x" (Firefox)
     ReferenceError: "x" is not defined (Chrome)
     ReferenceError: Variable undefined in strict mode (Edge)
 
-Error type
-----------
+## Error type
 
 [`ReferenceError`](../global_objects/referenceerror) warning in [strict mode](../strict_mode) only.
 
-What went wrong?
-----------------
+## What went wrong?
 
 A value has been assigned to an undeclared variable. In other words, there was an assignment without the `var` keyword. There are some differences between declared and undeclared variables, which might lead to unexpected results and that's why JavaScript presents an error in strict mode.
 
@@ -30,8 +26,7 @@ For more details and examples, see the `var` reference page.
 
 Errors about undeclared variable assignments occur in [strict mode code](../strict_mode) only. In non-strict code, they are silently ignored.
 
-Examples
---------
+## Examples
 
 ### Invalid cases
 
@@ -53,8 +48,7 @@ To make "bar" a declared variable, you can add the `var` keyword in front of it.
     }
     foo();
 
-See also
---------
+## See also
 
 -   [Strict mode](../strict_mode)
 

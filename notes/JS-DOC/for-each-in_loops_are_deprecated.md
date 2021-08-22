@@ -1,25 +1,20 @@
-Warning: JavaScript 1.6's for-each-in loops are deprecated
-==========================================================
+# Warning: JavaScript 1.6's for-each-in loops are deprecated
 
-The JavaScript warning "JavaScript 1.6's for-each-in loops are deprecated; consider using ES6 for-of instead" occurs when a <span class="page-not-created">`for each   (variable in obj)`</span> statement is used.
+The JavaScript warning "JavaScript 1.6's for-each-in loops are deprecated; consider using ES6 for-of instead" occurs when a <span class="page-not-created">`for each (variable in obj)`</span> statement is used.
 
-Message
--------
+## Message
 
     Warning: JavaScript 1.6's for-each-in loops are deprecated; consider using ES6 for-of instead
 
-Error type
-----------
+## Error type
 
 Warning
 
-What went wrong?
-----------------
+## What went wrong?
 
 JavaScript 1.6's <span class="page-not-created">`for each (variable in obj)`</span> statement is deprecated, and will be removed in the near future.
 
-Examples
---------
+## Examples
 
 ### Object iteration
 
@@ -147,8 +142,7 @@ Or, using [`for...of`](../statements/for...of) (ES2015) and [`Object.entries`](.
                                 // "b", 20
     }
 
-See also
---------
+## See also
 
 -   [`for...of`](../statements/for...of)
 -   [`Object.values`](../global_objects/object/values)

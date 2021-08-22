@@ -1,10 +1,8 @@
-Date.prototype.getUTCMonth()
-============================
+# Date.prototype.getUTCMonth()
 
 The `getUTCMonth()` returns the month of the specified date according to universal time, as a zero-based value (where zero indicates the first month of the year).
 
-Syntax
-------
+## Syntax
 
     getUTCMonth()
 
@@ -12,8 +10,7 @@ Syntax
 
 An integer number, between 0 and 11, corresponding to the month of the given date according to universal time. 0 for January, 1 for February, 2 for March, and so on.
 
-Examples
---------
+## Examples
 
 ### Using getUTCMonth()
 
@@ -22,8 +19,7 @@ The following example assigns the month portion of the current date to the varia
     var today = new Date();
     var month = today.getUTCMonth();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmonth">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.getutcmonth</span></a></td></tr></tbody></table>
@@ -54,8 +50,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getMonth()`](getmonth)
 -   [`Date.prototype.setUTCMonth()`](setutcmonth)

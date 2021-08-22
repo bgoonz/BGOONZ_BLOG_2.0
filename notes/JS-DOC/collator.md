@@ -1,10 +1,8 @@
-Intl.Collator() constructor
-===========================
+# Intl.Collator() constructor
 
 The `Intl.Collator()` constructor creates [`Intl.Collator`](../collator) objects that enable language-sensitive string comparison.
 
-Syntax
-------
+## Syntax
 
     new Intl.Collator()
     new Intl.Collator(locales)
@@ -12,7 +10,7 @@ Syntax
 
 ### Parameters
 
- `locales` <span class="badge inline optional">Optional</span>   
+`locales` <span class="badge inline optional">Optional</span>  
 Optional. A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the `locales` argument, see the [Intl page](../../intl#locale_identification_and_negotiation).
 
 The following Unicode extension keys are allowed:
@@ -28,7 +26,7 @@ Whether numeric collation should be used, such that "1" &lt; "2" &lt; "10". Poss
 `kf`  
 Whether upper case or lower case should sort first. Possible values are "`upper`", "`lower`", or "`false`" (use the locale's default). This option can be also be set through the `options` property "`caseFirst`".
 
- `options` <span class="badge inline optional">Optional</span>   
+`options` <span class="badge inline optional">Optional</span>  
 An object with some or all of the following properties:
 
 `localeMatcher`  
@@ -65,8 +63,7 @@ Variant collations for certain locales. Possible values include: "`big5han`", "`
 
 **Note:** This option can also be set through the `co` Unicode extension key; if both are provided, this `options` property takes precedence.
 
-Examples
---------
+## Examples
 
 ### Using Collator
 
@@ -78,8 +75,7 @@ The following example demonstrates the different potential results for a string 
 
 Note that the results shown in the code above can vary between browsers and browser versions. This is because the values are implementation-specific. That is, the specification requires only that the before and after values are negative and positive.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-the-intl-collator-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-the-intl-collator-constructor</span></a></td></tr></tbody></table>
@@ -162,8 +158,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`Intl.Collator`](../collator)
 -   [`Intl`](../../intl)

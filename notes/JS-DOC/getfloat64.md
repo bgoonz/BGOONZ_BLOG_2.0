@@ -1,10 +1,8 @@
-DataView.prototype.getFloat64()
-===============================
+# DataView.prototype.getFloat64()
 
 The `getFloat64()` method gets a signed 64-bit float (double) at the specified byte offset from the start of the [`DataView`](../dataview).
 
-Syntax
-------
+## Syntax
 
     getFloat64(byteOffset)
     getFloat64(byteOffset, littleEndian)
@@ -26,13 +24,11 @@ A signed 64-bit float number.
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
-Description
------------
+## Description
 
 There is no alignment constraint; multi-byte values may be fetched from any offset.
 
-Examples
---------
+## Examples
 
 ### Using the getFloat64 method
 
@@ -40,8 +36,7 @@ Examples
     var dataview = new DataView(buffer);
     dataview.getFloat64(0); // 0
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat64">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-dataview.prototype.getfloat64</span></a></td></tr></tbody></table>
@@ -72,8 +67,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

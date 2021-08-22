@@ -1,10 +1,8 @@
-let
-===
+# let
 
 The `let` statement declares a block-scoped local variable, optionally initializing it to a value.
 
-Syntax
-------
+## Syntax
 
     let name1 [= value1] [, name2 [= value2]] [, ..., nameN [= valueN];
 
@@ -13,7 +11,7 @@ Syntax
 `nameN`  
 The names of the variable or variables to declare. Each must be a legal JavaScript identifier.
 
- `value``N` <span class="badge inline optional">Optional</span>   
+` value``N ` <span class="badge inline optional">Optional</span>  
 For each variable declared, you may optionally specify its initial value to any legal JavaScript expression.
 
 Alternatively, the [Destructuring Assignment](../operators/destructuring_assignment) syntax can also be used to declare variables.
@@ -21,19 +19,17 @@ Alternatively, the [Destructuring Assignment](../operators/destructuring_assignm
     let { bar } = foo; // where foo = { bar:10, baz:12 };
     /* This creates a variable with the name 'bar', which has a value of 10 */
 
-Description
------------
+## Description
 
 `let` allows you to declare variables that are limited to the scope of a [block](block) statement, or expression on which it is used, unlike the [`var`](var) keyword, which declares a variable globally, or locally to an entire function regardless of block scope. The other difference between [`var`](var) and `let` is that the latter is initialized to a value only when a [parser evaluates it (see below)](#temporal_dead_zone).
 
-Just like [`const`](const#description) the `let` does *not* create properties of the [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) object when declared globally (in the top-most scope).
+Just like [`const`](const#description) the `let` does _not_ create properties of the [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) object when declared globally (in the top-most scope).
 
 An explanation of why the name "**let**" was chosen can be found [here](https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri).
 
 **Note:** Many issues with `let` variables can be avoided by declaring them at the top of the scope in which they are used (doing so may impact readibility).
 
-Examples
---------
+## Examples
 
 ### Scoping rules
 
@@ -159,7 +155,7 @@ The variable is said to be in a "temporal dead zone" (TDZ) from the start of the
       let foo = 2; // End of TDZ (for foo)
     }
 
-The term "temporal" is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the `let` variable appears before the variable is declared, the function is *called* outside the TDZ.
+The term "temporal" is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the `let` variable appears before the variable is declared, the function is _called_ outside the TDZ.
 
     {
         // TDZ starts at beginning of scope
@@ -196,7 +192,7 @@ The following code results in a `ReferenceError` at the line shown:
     }
     test();
 
-The `if` block is evaluated because the outer `var foo` has a value. However due to lexical scoping this value is not available inside the block: the identifier `foo` *inside* the `if` block is the `let foo`. The expression `(foo + 55)` throws a `ReferenceError` because initialization of `let foo` has not completed — it is still in the temporal dead zone.
+The `if` block is evaluated because the outer `var foo` has a value. However due to lexical scoping this value is not available inside the block: the identifier `foo` _inside_ the `if` block is the `let foo`. The expression `(foo + 55)` throws a `ReferenceError` because initialization of `let foo` has not completed — it is still in the temporal dead zone.
 
 This phenomenon can be confusing in a situation like the following. The instruction `let n of n.a` is already inside the private scope of the for loop's block. So, the identifier `n.a` is resolved to the property '`a`' of the '`n`' object located in the first part of the instruction itself (`let n`).
 
@@ -239,8 +235,7 @@ However, this combination of `var` and `let` declaration below is a [`SyntaxErro
       var x = 2; // SyntaxError for re-declaration
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
@@ -305,8 +300,7 @@ Support outside of [strict mode](https://developer.mozilla.org/docs/Web/JavaScri
 
 [Strict mode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode) is required.
 
-See also
---------
+## See also
 
 -   [`var`](var)
 -   [`const`](const)

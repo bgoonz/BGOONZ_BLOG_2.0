@@ -1,10 +1,8 @@
-Date.prototype.getUTCFullYear()
-===============================
+# Date.prototype.getUTCFullYear()
 
 The `getUTCFullYear()` method returns the year in the specified date according to universal time.
 
-Syntax
-------
+## Syntax
 
     getUTCFullYear()
 
@@ -12,13 +10,11 @@ Syntax
 
 A number representing the year in the given date according to universal time.
 
-Description
------------
+## Description
 
 The value returned by `getUTCFullYear()` is an absolute number that is compliant with year-2000, for example, 1995.
 
-Examples
---------
+## Examples
 
 ### Using getUTCFullYear()
 
@@ -27,8 +23,7 @@ The following example assigns the four-digit value of the current year to the va
     var today = new Date();
     var year = today.getUTCFullYear();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcfullyear">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.getutcfullyear</span></a></td></tr></tbody></table>
@@ -59,8 +54,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getFullYear()`](getfullyear)
 -   [`Date.prototype.setFullYear()`](setfullyear)

@@ -1,10 +1,8 @@
-Intl.Locale.prototype.hourCycle
-===============================
+# Intl.Locale.prototype.hourCycle
 
 The `Intl.Locale.prototype.hourCycle` property is an accessor property that returns the time keeping format convention used by the locale.
 
-Description
------------
+## Description
 
 There are 2 main types of time keeping conventions (clocks) used around the world: the 12 hour clock and the 24 hour clock. The `hourCycle` property makes it easier for JavaScript programmers to access the clock type used by a particular locale. Like other additional locale data, hour cycle type is an [extension subtag](https://www.unicode.org/reports/tr35/#u_Extension), which extends the data contained in a locale string. The hour cycle type can have several different values, which are listed in the table below.
 
@@ -12,8 +10,7 @@ There are 2 main types of time keeping conventions (clocks) used around the worl
 
 <table><thead><tr class="header"><th>Hour cycle type</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>h12</code></td><td>Hour system using 1–12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am.</td></tr><tr class="even"><td><code>h23</code></td><td>Hour system using 0–23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.</td></tr><tr class="odd"><td><code>h11</code></td><td>Hour system using 0–11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.</td></tr><tr class="even"><td><code>h24</code></td><td>Hour system using 1–24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.</td></tr></tbody></table>
 
-Examples
---------
+## Examples
 
 These examples will show you how to add hour cycle data to your [`Locale`](../locale) object.
 
@@ -31,8 +28,7 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
     let us12hour = new Intl.Locale("en-US", {hourCycle: "h12"});
     console.log(us12hour.hourCycle); // Prints "h12"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.hourCycle">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-Intl.Locale.prototype.hourCycle</span></a></td></tr></tbody></table>
@@ -63,8 +59,7 @@ No
 
 11.0
 
-See also
---------
+## See also
 
 -   [`Intl.Locale`](../locale)
 -   [Unicode Hour Cycle extension key spec](https://www.unicode.org/reports/tr35/#UnicodeHourCycleIdentifier)

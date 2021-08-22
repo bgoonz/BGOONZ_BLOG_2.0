@@ -1,10 +1,8 @@
-encodeURIComponent()
-====================
+# encodeURIComponent()
 
 The `encodeURIComponent()` function encodes a [URI](https://developer.mozilla.org/en-US/docs/Glossary/URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the [UTF-8](https://developer.mozilla.org/en-US/docs/Glossary/UTF-8) encoding of the character (will only be four escape sequences for characters composed of two "surrogate" characters).
 
-Syntax
-------
+## Syntax
 
     encodeURIComponent(str);
 
@@ -17,8 +15,7 @@ String. A component of a URI.
 
 A new string representing the provided string encoded as a URI component.
 
-Description
------------
+## Description
 
 `encodeURIComponent()` escapes all characters **except**:
 
@@ -68,8 +65,7 @@ To be more stringent in adhering to [RFC 3986](https://datatracker.ietf.org/doc/
       });
     }
 
-Examples
---------
+## Examples
 
 ### Encoding for Content-Disposition and Link headers
 
@@ -105,8 +101,7 @@ The following example provides the special encoding required within UTF-8 [`Cont
         replace(/%(7C|60|5E)/g, (str, hex) => String.fromCharCode(parseInt(hex, 16)));
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuricomponent-uricomponent">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'encodeURIComponent' in that specification.</span></a></td></tr></tbody></table>
@@ -137,8 +132,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`decodeURI`](decodeuri)
 -   [`encodeURI`](encodeuri)

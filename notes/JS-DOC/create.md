@@ -1,10 +1,8 @@
-Object.create()
-===============
+# Object.create()
 
 The `Object.create()` method creates a new object, using an existing object as the prototype of the newly created object.
 
-Syntax
-------
+## Syntax
 
     Object.create(proto)
     Object.create(proto, propertiesObject)
@@ -14,8 +12,8 @@ Syntax
 `proto`  
 The object which should be the prototype of the newly-created object.
 
- `propertiesObject` <span class="badge inline optional">Optional</span>   
-If specified and not [`undefined`](../undefined), an object whose enumerable own properties (that is, those properties defined upon itself and *not* enumerable properties along its prototype chain) specify property descriptors to be added to the newly-created object, with the corresponding property names. These properties correspond to the second argument of [`Object.defineProperties()`](defineproperties).
+`propertiesObject` <span class="badge inline optional">Optional</span>  
+If specified and not [`undefined`](../undefined), an object whose enumerable own properties (that is, those properties defined upon itself and _not_ enumerable properties along its prototype chain) specify property descriptors to be added to the newly-created object, with the corresponding property names. These properties correspond to the second argument of [`Object.defineProperties()`](defineproperties).
 
 ### Return value
 
@@ -30,8 +28,7 @@ The `proto` parameter has to be either
 
 If `proto` is neither of these a [`TypeError`](../typeerror) is thrown.
 
-Custom and Null objects
------------------------
+## Custom and Null objects
 
 A new object created from a completely custom object (especially one created from the `null` object, which is basically a custom object with NO members) can behave in unexpected ways. This is especially true when debugging, since common object-property converting/detecting utility functions may generate errors, or lose information (especially if using silent error-traps that ignore errors). For example, here are two objects:
 
@@ -72,7 +69,7 @@ Testing just a few of the many most basic built-in functions shows the magnitude
 
 As said, these differences can make debugging even simple-seeming problems quickly go astray. For example:
 
-*A simple common debugging function:*
+_A simple common debugging function:_
 
     // display top-level property name:value pairs of given object
     function ShowProperties(obj){
@@ -81,7 +78,7 @@ As said, these differences can make debugging even simple-seeming problems quick
       }
     }
 
-*Not such simple results: (especially if silent error-trapping had hidden the error messages)*
+_Not such simple results: (especially if silent error-trapping had hidden the error messages)_
 
     ob={}; ob.po=oco; ob.pn=ocn; // create a compound object using the test objects from above as property values
 
@@ -91,7 +88,7 @@ As said, these differences can make debugging even simple-seeming problems quick
 
     Note that only first property gets shown.
 
-*(But if the same object is created in a different order -- at least in some implementations...)*
+_(But if the same object is created in a different order -- at least in some implementations...)_
 
     ob={}; ob.pn=ocn; ob.po=oco; // create same compound object again, but create same properties in different order
 
@@ -123,7 +120,6 @@ Adding the missing object-method directly from the standard-object does NOT work
 
     > ocn.toString() // error: Function.prototype.toString requires that 'this' be a Function
 
-  
 Adding the missing object-method directly to new object's "prototype" does not work either, since the new object does not have a real prototype (which is really the cause of ALL these problems) and one cannot be **directly** added:
 
     ocn = Object.create( null ); // create "null" object (same as before)
@@ -135,7 +131,6 @@ Adding the missing object-method directly to new object's "prototype" does not w
 
     > ocn.toString() // error: ocn.toString is not a function
 
-  
 Adding the missing object-method by using the standard-object as new object's prototype does not work either:
 
     ocn = Object.create( null );        // create "null" object (same as before)
@@ -165,7 +160,7 @@ However, setting the generic **prototype** as the new object's prototype works e
     ocn = Object.create( null );                  // create "null" object (same as before)
     Object.setPrototypeOf(ocn, Object.prototype); // set new object's prototype to the "generic" object (NOT standard-object)
 
-*(In addition to all the string-related functions shown above, this also adds:)*
+_(In addition to all the string-related functions shown above, this also adds:)_
 
     > ocn.valueOf() // shows {}
     > ocn.hasOwnProperty("x") // shows "false"
@@ -175,8 +170,7 @@ However, setting the generic **prototype** as the new object's prototype works e
 
 As shown, objects modified this way now look very much like ordinary objects.
 
-Polyfill
---------
+## Polyfill
 
 This polyfill covers the main use case, which is creating a new object for which the prototype has been chosen but doesn't take the second argument into account.
 
@@ -201,8 +195,7 @@ Note that while the setting of `null` as `[[Prototype]]` is supported in the rea
         };
     }
 
-Examples
---------
+## Examples
 
 ### Classical inheritance with `Object.create()`
 
@@ -336,8 +329,7 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
     This will create an object with prototype : {p: 42 }
     o2 = Object.create({p: 42}) */
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.create</span></a></td></tr></tbody></table>
@@ -368,8 +360,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Object.defineProperty()`](defineproperty)
 -   [`Object.defineProperties()`](defineproperties)

@@ -1,20 +1,18 @@
-Functions
-=========
+# Functions
 
-Generally speaking, a function is a "subprogram" that can be *called* by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the *function body*. Values can be *passed* to a function, and the function will *return* a value.
+Generally speaking, a function is a "subprogram" that can be _called_ by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the _function body_. Values can be _passed_ to a function, and the function will _return_ a value.
 
 In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called. In brief, they are `Function` objects.
 
 For more examples and explanations, see also the [JavaScript guide about functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
 
-Description
------------
+## Description
 
 Every function in JavaScript is a `Function` object. See [`Function`](global_objects/function) for information on properties and methods of `Function` objects.
 
 To return a value other than the default, a function must have a `return` statement that specifies the value to return. A function without a return statement will return a default value. In the case of a [constructor](global_objects/object/constructor) called with the `new` keyword, the default value is the value of its `this` parameter. For all other functions, the default return value is [`undefined`](global_objects/undefined).
 
-The parameters of a function call are the function's *arguments*. Arguments are passed to functions *by value*. If the function changes the value of an argument, this change is not reflected globally or in the calling function. However, object references are values, too, and they are special: if the function changes the referred object's properties, that change is visible outside the function, as shown in the following example:
+The parameters of a function call are the function's _arguments_. Arguments are passed to functions _by value_. If the function changes the value of an argument, this change is not reflected globally or in the calling function. However, object references are values, too, and they are special: if the function changes the referred object's properties, that change is visible outside the function, as shown in the following example:
 
     /* Declare the function 'myFunc' */
     function myFunc(theObject) {
@@ -46,8 +44,7 @@ The parameters of a function call are the function's *arguments*. Arguments are 
 
 The [`this` keyword](operators/this) does not refer to the currently executing function, so you must refer to `Function` objects by name, even within the function body.
 
-Defining functions
-------------------
+## Defining functions
 
 There are several ways to define functions:
 
@@ -70,7 +67,7 @@ The statements comprising the body of the function.
 
 ### The function expression (`function` expression)
 
-A function expression is similar to and has the same syntax as a function declaration (see [function expression](operators/function) for details). A function expression may be a part of a larger expression. One can define "named" function expressions (where the name of the expression might be used in the call stack for example) or "anonymous" function expressions. Function expressions are not *hoisted* onto the beginning of the scope, therefore they cannot be used before they appear in the code.
+A function expression is similar to and has the same syntax as a function declaration (see [function expression](operators/function) for details). A function expression may be a part of a larger expression. One can define "named" function expressions (where the name of the expression might be used in the call stack for example) or "anonymous" function expressions. Function expressions are not _hoisted_ onto the beginning of the scope, therefore they cannot be used before they appear in the code.
 
     function [name]([param[, param[, ... param]]]) {
        statements
@@ -156,7 +153,7 @@ An arrow function expression has a shorter syntax and lexically binds its `this`
 `param`  
 The name of an argument. Zero arguments need to be indicated with `()`. For only one argument, the parentheses are not required. (like `foo => 1`)
 
- `statements` or `expression`   
+`statements` or `expression`  
 Multiple statements need to be enclosed in brackets. A single expression requires no brackets. The expression is also the implicit return value of the function.
 
 ### The `Function` constructor
@@ -193,8 +190,7 @@ A string containing the JavaScript statements comprising the function definition
 
 Invoking the `GeneratorFunction` constructor as a function (without using the `new` operator) has the same effect as invoking it as a constructor.
 
-Function parameters
--------------------
+## Function parameters
 
 ### Default parameters
 
@@ -204,8 +200,7 @@ Default function parameters allow formal parameters to be initialized with defau
 
 The rest parameter syntax allows representing an indefinite number of arguments as an array. For more details, see [rest parameters](functions/rest_parameters).
 
-The `arguments` object
-----------------------
+## The `arguments` object
 
 You can refer to a function's arguments within the function by using the `arguments` object. See [arguments](functions/arguments).
 
@@ -214,8 +209,7 @@ You can refer to a function's arguments within the function by using the `argume
 -   `arguments.caller` : The function that invoked the currently executing function.
 -   `arguments.length`: The number of arguments passed to the function.
 
-Defining method functions
--------------------------
+## Defining method functions
 
 ### Getter and setter functions
 
@@ -236,28 +230,27 @@ Starting with ECMAScript 2015, you are able to define own methods in a shorter s
       bar() {}
     };
 
-Constructor vs. declaration vs. expression
-------------------------------------------
+## Constructor vs. declaration vs. expression
 
 Compare the following:
 
-A function defined with the `Function` *constructor* assigned to the variable `multiply`:
+A function defined with the `Function` _constructor_ assigned to the variable `multiply`:
 
     var multiply = new Function('x', 'y', 'return x * y');
 
-A *function declaration* of a function named `multiply`:
+A _function declaration_ of a function named `multiply`:
 
     function multiply(x, y) {
        return x * y;
     } // there is no semicolon here
 
-A *function expression* of an anonymous function assigned to the variable `multiply`:
+A _function expression_ of an anonymous function assigned to the variable `multiply`:
 
     var multiply = function(x, y) {
        return x * y;
     };
 
-A *function expression* of a function named `func_name` assigned to the variable `multiply`:
+A _function expression_ of a function named `func_name` assigned to the variable `multiply`:
 
     var multiply = function func_name(x, y) {
        return x * y;
@@ -386,8 +379,7 @@ A function declaration is very easily (and often unintentionally) turned into a 
        }
     }
 
-Block-level functions
----------------------
+## Block-level functions
 
 In [strict mode](strict_mode), starting with ES2015, functions inside blocks are now scoped to that block. Prior to ES2015, block-level functions were forbidden in strict mode.
 
@@ -432,8 +424,7 @@ A safer way to define functions conditionally is to assign a function expression
        };
     }
 
-Examples
---------
+## Examples
 
 ### Returning a formatted number
 
@@ -468,8 +459,7 @@ You can determine whether a function exists by using the `typeof` operator. In t
 
 Note that in the `if` test, a reference to `noFunc` is used—there are no brackets "()" after the function name so the actual function is not called.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
@@ -712,8 +702,7 @@ No
 
 1.0
 
-See also
---------
+## See also
 
 -   [`function statement`](statements/function)
 -   [`function expression`](operators/function)

@@ -1,23 +1,19 @@
-super
-=====
+# super
 
 The **super** keyword is used to access and call functions on an object's parent.
 
 The `super.prop` and `super[expr]` expressions are valid in any [method definition](../functions/method_definitions) in both [classes](../classes) and [object literals](object_initializer).
 
-Syntax
-------
+## Syntax
 
     super([arguments]); // calls the parent constructor.
     super.functionOnParent([arguments]);
 
-Description
------------
+## Description
 
 When used in a constructor, the `super` keyword appears alone and must be used before the `this` keyword is used. The `super` keyword can also be used to call functions on a parent object.
 
-Examples
---------
+## Examples
 
 ### Using `super` in classes
 
@@ -84,7 +80,7 @@ You cannot use the [delete operator](delete) and `super.prop` or `super[expr]` t
       }
     }
 
-    new Derived().delete(); // ReferenceError: invalid delete involving 'super'. 
+    new Derived().delete(); // ReferenceError: invalid delete involving 'super'.
 
 ### `super.prop` cannot overwrite non-writable properties
 
@@ -132,14 +128,12 @@ Super can also be used in the [object initializer / literal](object_initializer)
     Object.setPrototypeOf(obj2, obj1);
     obj2.method2(); // logs "method 1"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-super-keyword">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'super' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -195,8 +189,7 @@ No
 
 4.0
 
-See also
---------
+## See also
 
 -   [Classes](../classes)
 

@@ -1,10 +1,8 @@
-Private class fields
-====================
+# Private class fields
 
 Class properties are public by default and can be examined or modified outside the class. There is however [a stage 3 proposal](https://github.com/tc39/proposal-private-methods) to allow defining private class fields using a hash `#` prefix.
 
-Syntax
-------
+## Syntax
 
     class ClassWithPrivateField {
       #privateField
@@ -20,8 +18,7 @@ Syntax
       static #PRIVATE_STATIC_FIELD
     }
 
-Examples
---------
+## Examples
 
 ### Private static fields
 
@@ -67,7 +64,7 @@ This can lead to unexpected behavior when using `this`.
 
 ### Private instance fields
 
-Private instance fields are declared with **\# names** (pronounced "*hash names*"), which are identifiers prefixed with `#`. The `#` is a part of the name itself. It is used for declaration and accessing as well.
+Private instance fields are declared with **\# names** (pronounced "_hash names_"), which are identifiers prefixed with `#`. The `#` is a part of the name itself. It is used for declaration and accessing as well.
 
 The encapsulation is enforced by the language. It is a syntax error to refer to `#` names from out of scope.
 
@@ -166,14 +163,12 @@ Private instance methods may be generator, async, or async generator functions. 
     new ClassWithPrivateAccessor();
     // expected output: "✨hello world✨"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-PrivateIdentifier">Public and private instance fields proposal (Public and private instance fields proposal)<br />
 <span class="small">#prod-PrivateIdentifier</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -233,8 +228,7 @@ Available only in nightly builds. See [bug 1562054](https://bugzil.la/1562054).
 
 No
 
-See also
---------
+## See also
 
 -   [Public class fields](public_class_fields)
 -   [Public and private class fields](https://v8.dev/features/class-fields) article at the v8.dev site.

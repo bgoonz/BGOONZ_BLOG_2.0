@@ -1,39 +1,33 @@
-Set
-===
+# Set
 
 The `Set` object lets you store unique values of any type, whether [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) or object references.
 
-Description
------------
+## Description
 
 `Set` objects are collections of values. You can iterate through the elements of a set in insertion order. A value in the `Set` **may only occur once**; it is unique in the `Set`'s collection.
 
 ### Value equality
 
-Because each value in the `Set` has to be unique, the value equality will be checked. In an earlier version of ECMAScript specification, this was not based on the same algorithm as the one used in the `===` operator. Specifically, for `Set`s, `+0` (which is strictly equal to `-0`) and `-0` were different values. However, this was changed in the ECMAScript 2015 specification. See *"Key equality for -0 and 0"* in the [browser compatibility](#browser_compatibility) table for details.
+Because each value in the `Set` has to be unique, the value equality will be checked. In an earlier version of ECMAScript specification, this was not based on the same algorithm as the one used in the `===` operator. Specifically, for `Set`s, `+0` (which is strictly equal to `-0`) and `-0` were different values. However, this was changed in the ECMAScript 2015 specification. See _"Key equality for -0 and 0"_ in the [browser compatibility](#browser_compatibility) table for details.
 
 [`NaN`](nan) and [`undefined`](undefined) can also be stored in a Set. All `NaN` values are equated (i.e. `NaN` is considered the same as `NaN`, even though `NaN !== NaN`).
 
-Constructor
------------
+## Constructor
 
 [`Set()`](set/set)  
 Creates a new `Set` object.
 
-Static properties
------------------
+## Static properties
 
 [`get Set[@@species]`](set/@@species)  
 The constructor function that is used to create derived objects.
 
-Instance properties
--------------------
+## Instance properties
 
 [`Set.prototype.size`](set/size)  
 Returns the number of values in the `Set` object.
 
-Instance methods
-----------------
+## Instance methods
 
 [`Set.prototype.add(value)`](set/add)  
 Appends `value` to the `Set` object. Returns the `Set` object with added value.
@@ -61,13 +55,12 @@ Returns a new iterator object that yields the **values** for each element in the
 [`Set.prototype.entries()`](set/entries)  
 Returns a new iterator object that contains `[value, value]` for each element in the `Set` object, in insertion order.
 
-This is similar to the [`Map`](map) object, so that each entry's *key* is the same as its *value* for a `Set`.
+This is similar to the [`Map`](map) object, so that each entry's _key_ is the same as its _value_ for a `Set`.
 
 [`Set.prototype.forEach(callbackFn[, thisArg])`](set/foreach)  
 Calls `callbackFn` once for each value present in the `Set` object, in insertion order. If a `thisArg` parameter is provided, it will be used as the `this` value for each invocation of `callbackFn`.
 
-Examples
---------
+## Examples
 
 ### Using the Set object
 
@@ -248,14 +241,12 @@ Examples
     const set = new Set(array);
     console.assert(set.size == array.length);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-set-objects</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -667,8 +658,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [`Map`](map)
 -   [`WeakMap`](weakmap)

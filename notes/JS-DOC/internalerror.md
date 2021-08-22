@@ -1,5 +1,4 @@
-InternalError
-=============
+# InternalError
 
 **Non-standard**
 
@@ -14,14 +13,12 @@ Example cases are mostly when something is too large, e.g.:
 -   "array initializer too large",
 -   "too much recursion".
 
-Constructor
------------
+## Constructor
 
 [`InternalError()`](internalerror/internalerror)  
 Creates a new `InternalError` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`InternalError.prototype.message`](error/message)  
 Error message. Inherited from [`Error`](error).
@@ -41,8 +38,7 @@ Column number in line that raised this error. Inherited from [`Error`](error).
 [`InternalError.prototype.stack`](error/stack)  
 Stack trace. Inherited from [`Error`](error).
 
-Examples
---------
+## Examples
 
 ### Too much recursion
 
@@ -70,8 +66,7 @@ Setting this condition to an extremely high value, won't work:
 
 For more information, see [InternalError: too much recursion.](../errors/too_much_recursion)
 
-Specifications
---------------
+## Specifications
 
 Not part of any standard.
 
@@ -127,8 +122,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`Error`](error)
 -   [InternalError: too much recursion](../errors/too_much_recursion)

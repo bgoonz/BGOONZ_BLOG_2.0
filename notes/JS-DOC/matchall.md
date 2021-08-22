@@ -1,10 +1,8 @@
-String.prototype.matchAll()
-===========================
+# String.prototype.matchAll()
 
-The `matchAll()` method returns an iterator of all results matching a string against a *[regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)*, including [capturing groups](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges).
+The `matchAll()` method returns an iterator of all results matching a string against a _[regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)_, including [capturing groups](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges).
 
-Syntax
-------
+## Syntax
 
     matchAll(regexp)
 
@@ -23,8 +21,7 @@ An [iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iter
 
 Each match is an array (with extra properties `index` and `input`; see the return value for [`RegExp.exec`](../regexp/exec)). The match array has the matched text as the first item, and then one item for each parenthetical capture group of the matched text.
 
-Examples
---------
+## Examples
 
 ### Regexp.exec() and matchAll()
 
@@ -95,8 +92,7 @@ Using `matchAll`, you can access capture groups easily:
     array[1];
     // ['test2', 'e', 'st2', '2', index: 5, input: 'test1test2', length: 4]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.matchall">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.matchall</span></a></td></tr></tbody></table>
@@ -127,8 +123,7 @@ No
 
 11.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.match()`](match)
 -   [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)

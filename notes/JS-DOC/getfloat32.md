@@ -1,10 +1,8 @@
-DataView.prototype.getFloat32()
-===============================
+# DataView.prototype.getFloat32()
 
 The `getFloat32()` method gets a signed 32-bit float (float) at the specified byte offset from the start of the [`DataView`](../dataview).
 
-Syntax
-------
+## Syntax
 
     getFloat32(byteOffset)
     getFloat32(byteOffset, littleEndian)
@@ -26,13 +24,11 @@ A signed 32-bit float number.
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
-Description
------------
+## Description
 
 There is no alignment constraint; multi-byte values may be fetched from any offset.
 
-Examples
---------
+## Examples
 
 ### Using the getFloat32 method
 
@@ -40,8 +36,7 @@ Examples
     var dataview = new DataView(buffer);
     dataview.getFloat32(1); // 0
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat32">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-dataview.prototype.getfloat32</span></a></td></tr></tbody></table>
@@ -72,8 +67,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

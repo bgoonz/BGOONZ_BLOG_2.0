@@ -1,10 +1,8 @@
-Warning: String.x is deprecated; use String.prototype.x instead
-===============================================================
+# Warning: String.x is deprecated; use String.prototype.x instead
 
 The JavaScript warning about string generics occurs in Firefox versions prior to 68. String generics have been removed starting with Firefox 68.
 
-Message
--------
+## Message
 
     Warning: String.charAt            is deprecated; use String.prototype.charAt            instead
     Warning: String.charCodeAt        is deprecated; use String.prototype.charCodeAt        instead
@@ -32,18 +30,15 @@ Message
     Warning: String.trimLeft          is deprecated; use String.prototype.trimLeft          instead
     Warning: String.trimRight         is deprecated; use String.prototype.trimRight         instead
 
-Error type
-----------
+## Error type
 
 Warning. JavaScript execution won't be halted.
 
-What went wrong?
-----------------
+## What went wrong?
 
 The non-standard generic [`String`](../global_objects/string) methods are deprecated and have been removed in Firefox 68 and later. String generics provide `String` instance methods on the `String` object allowing `String` methods to be applied to any object.
 
-Examples
---------
+## Examples
 
 ### Deprecated syntax
 
@@ -55,8 +50,7 @@ Examples
     var num = 15;
     String(num).replace(/5/, '2');
 
-Shim
-----
+## Shim
 
 The following is a shim to provide support to non-supporting browsers:
 
@@ -92,8 +86,7 @@ The following is a shim to provide support to non-supporting browsers:
       }
     }());
 
-See also
---------
+## See also
 
 -   [`String`](../global_objects/string)
 

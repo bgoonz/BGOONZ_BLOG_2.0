@@ -1,22 +1,19 @@
-Property accessors
-==================
+# Property accessors
 
 **Property accessors** provide access to an object's properties by using the dot notation or the bracket notation.
 
-Syntax
-------
+## Syntax
 
     object.property
     object['property']
 
-Description
------------
+## Description
 
-One can think of an object as an *associative array* (a.k.a. *map*, *dictionary*, *hash*, *lookup table*). The *keys* in this array are the names of the object's properties.
+One can think of an object as an _associative array_ (a.k.a. _map_, _dictionary_, _hash_, _lookup table_). The _keys_ in this array are the names of the object's properties.
 
 It's typical when speaking of an object's properties to make a distinction between properties and methods. However, the property/method distinction is little more than a convention. A method is a property that can be called (for example, if it has a reference to a [`Function`](../global_objects/function) instance as its value).
 
-There are two ways to access properties: *dot notation* and *bracket notation*.
+There are two ways to access properties: _dot notation_ and _bracket notation_.
 
 ### Dot notation
 
@@ -87,8 +84,7 @@ In the [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/
 
 A method is not bound to the object that it is a method of. Specifically, `this` is not fixed in a method. Put another way, `this` does not necessarily refer to the object containing a method. Instead, `this` is "passed" by the function call. See [method binding](this#method_binding).
 
-Examples
---------
+## Examples
 
 ### Bracket notation vs. `eval`
 
@@ -102,14 +98,12 @@ For example, the following syntax is often seen in many scripts.
 
     x = document.forms['form_name'].elements[strFormControl].value
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-property-accessors">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Property Accessors' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -165,8 +159,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Object`](../global_objects/object)
 -   [`Object.defineProperty()`](../global_objects/object/defineproperty)

@@ -1,12 +1,10 @@
-export
-======
+# export
 
 The `export` statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the [`import`](import) statement. Bindings that are exported can still be modified locally; when imported, although they can only be read by the importing module the value updates whenever it is updated by the exporting module.
 
 Exported modules are in [strict mode](../strict_mode) whether you declare them as such or not. The export statement cannot be used in embedded scripts.
 
-Syntax
-------
+## Syntax
 
 There are two types of exports:
 
@@ -46,8 +44,7 @@ There are two types of exports:
 `nameN`  
 Identifier to be exported (so that it can be imported via [`import`](import) in another script).
 
-Description
------------
+## Description
 
 There are two different types of export, **named** and **default**. You can have multiple named exports per module but only one default export. Each type corresponds to one of the above syntax:
 
@@ -119,8 +116,7 @@ The "export from" syntax allows the `as` token to be omitted; however this will 
 
     export { default, function2 } from 'bar.js';
 
-Examples
---------
+## Examples
 
 ### Using named exports
 
@@ -209,8 +205,7 @@ This is what it would look like using code snippets:
     // "collected"/"bundled" them in a single source
     import { myFunction, myVariable, myClass } from 'parentModule.js'
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exports">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-exports</span></a></td></tr></tbody></table>
@@ -305,8 +300,7 @@ No
 
 11.0
 
-See also
---------
+## See also
 
 -   [`import`](import)
 -   [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) guide

@@ -1,27 +1,22 @@
-TypeError: "x" has no properties
-================================
+# TypeError: "x" has no properties
 
 The JavaScript exception "null (or undefined) has no properties" occurs when you attempt to access properties of [`null`](../global_objects/null) and [`undefined`](../global_objects/undefined). They don't have any.
 
-Message
--------
+## Message
 
     TypeError: Unable to get property {x} of undefined or null reference (Edge)
     TypeError: null has no properties (Firefox)
     TypeError: undefined has no properties (Firefox)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 Both, [`null`](../global_objects/null) and [`undefined`](../global_objects/undefined), have no properties you could access.
 
-Examples
---------
+## Examples
 
 ### null and undefined have no properties
 
@@ -31,8 +26,7 @@ Examples
     undefined.bar;
     // TypeError: undefined has no properties
 
-See also
---------
+## See also
 
 -   [`null`](../global_objects/null)
 -   [`undefined`](../global_objects/undefined)

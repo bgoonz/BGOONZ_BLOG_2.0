@@ -1,5 +1,4 @@
-WebAssembly.instantiate()
-=========================
+# WebAssembly.instantiate()
 
 The `WebAssembly.instantiate()` function allows you to compile and instantiate WebAssembly code. This function has two overloads:
 
@@ -8,8 +7,7 @@ The `WebAssembly.instantiate()` function allows you to compile and instantiate W
 
 **Warning:** This method is not the most efficient way of fetching and instantiating wasm modules. If at all possible, you should use the newer [`WebAssembly.instantiateStreaming()`](instantiatestreaming) method instead, which fetches, compiles, and instantiates a module all in one step, directly from the raw bytecode, so doesn't require conversion to an [`ArrayBuffer`](../arraybuffer).
 
-Syntax
-------
+## Syntax
 
 ### Primary overload — taking wasm binary code
 
@@ -17,10 +15,10 @@ Syntax
 
 #### Parameters
 
-*bufferSource*  
+_bufferSource_  
 A [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [`ArrayBuffer`](../arraybuffer) containing the binary code of the .wasm module you want to compile.
 
- *importObject* <span class="badge inline optional">Optional</span>   
+_importObject_ <span class="badge inline optional">Optional</span>  
 An object containing the values to be imported into the newly-created `Instance`, such as functions or [`WebAssembly.Memory`](memory) objects. There must be one matching property for each declared import of the compiled module or else a [`WebAssembly.LinkError`](linkerror) is thrown.
 
 #### Return value
@@ -41,10 +39,10 @@ A `Promise` that resolves to a `ResultObject` which contains two fields:
 
 #### Parameters
 
-*module*  
+_module_  
 The [`WebAssembly.Module`](module) object to be instantiated.
 
- *importObject* <span class="badge inline optional">Optional</span>   
+_importObject_ <span class="badge inline optional">Optional</span>  
 An object containing the values to be imported into the newly-created `Instance`, such as functions or [`WebAssembly.Memory`](memory) objects. There must be one matching property for each declared import of `module` or else a [`WebAssembly.LinkError`](linkerror) is thrown.
 
 #### Return value
@@ -56,8 +54,7 @@ A `Promise` that resolves to an [`WebAssembly.Instance`](instance) object.
 -   If either of the parameters are not of the correct type or structure, a [`TypeError`](../typeerror) is thrown.
 -   If the operation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror), [`WebAssembly.LinkError`](linkerror), or [`WebAssembly.RuntimeError`](runtimeerror), depending on the cause of the failure.
 
-Examples
---------
+## Examples
 
 **Note**: You'll probably want to use [`WebAssembly.instantiateStreaming()`](instantiatestreaming) in most cases, as it is more efficient than `instantiate()`.
 
@@ -113,8 +110,7 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
       });
     };
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#dom-webassembly-instantiate</span></a></td></tr></tbody></table>
@@ -149,8 +145,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

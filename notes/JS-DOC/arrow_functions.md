@@ -1,5 +1,4 @@
-Arrow function expressions
-==========================
+# Arrow function expressions
 
 An **arrow function expression** is a compact alternative to a traditional [function expression](../operators/function), but is limited and can't be used in all situations.
 
@@ -82,8 +81,7 @@ And finally, for **named functions** we treat arrow expressions like variables
     // Arrow Function
     let bob = a => a + 100;
 
-Syntax
-------
+## Syntax
 
 ### Basic syntax
 
@@ -128,8 +126,7 @@ To return an object literal expression requires parentheses around expression:
     ([a, b] = [10, 20]) => a + b;  // result is 30
     ({ a, b } = { a: 10, b: 20 }) => a + b; // result is 30
 
-Description
------------
+## Description
 
 ### Arrow functions used as methods
 
@@ -369,8 +366,7 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
     callback = callback || (() => {});    // ok
 
-Examples
---------
+## Examples
 
 ### Basic usage
 
@@ -416,8 +412,7 @@ Examples
       }, 1);
     }, 1);
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-arrow-function-definitions</span></a></td></tr></tbody></table>
@@ -478,8 +473,7 @@ No
 
 7.0
 
-See also
---------
+## See also
 
 -   ["ES6 In Depth: Arrow functions" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
 

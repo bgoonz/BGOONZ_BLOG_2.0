@@ -1,10 +1,8 @@
-TypeError: can't access property "x" of "y"
-===========================================
+# TypeError: can't access property "x" of "y"
 
 The JavaScript exception "can't access property" occurs when property access was operated on [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
 
-Message
--------
+## Message
 
     TypeError: Unable to get property {x} of undefined or null reference (Edge)
     TypeError: can't access property {x} of {y} (Firefox)
@@ -17,18 +15,15 @@ Message
     TypeError: can't access property "prop" of undefined
     TypeError: can't access property "prop" of null
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 The property access was operated on [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) value.
 
-Examples
---------
+## Examples
 
 ### Invalid cases
 
@@ -47,8 +42,7 @@ To fix null pointer to `undefined` or `null` values, you can use the [typeof](..
       // Now we know that foo is defined, we are good to go.
     }
 
-See also
---------
+## See also
 
 -   [`undefined`](../global_objects/undefined)
 -   [`null`](../global_objects/null)

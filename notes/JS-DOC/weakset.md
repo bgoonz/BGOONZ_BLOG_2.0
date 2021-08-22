@@ -1,17 +1,15 @@
-WeakSet
-=======
+# WeakSet
 
-The `WeakSet` object lets you store weakly held *objects* in a collection.
+The `WeakSet` object lets you store weakly held _objects_ in a collection.
 
-Description
------------
+## Description
 
 `WeakSet` objects are collections of objects. Just as with [`Set`](set)s, each object in a `WeakSet` may occur only once; all objects in a `WeakSet`'s collection are unique.
 
 The main differences to the [`Set`](set) object are:
 
 -   `WeakSet`s are collections of **objects only**. They cannot contain arbitrary values of any type, as [`Set`](set)s can.
--   The `WeakSet` is *weak*, meaning references to objects in a `WeakSet` are held *weakly*. If no other references to an object stored in the `WeakSet` exist, those objects can be garbage collected.
+-   The `WeakSet` is _weak_, meaning references to objects in a `WeakSet` are held _weakly_. If no other references to an object stored in the `WeakSet` exist, those objects can be garbage collected.
     **Note:** This also means that there is no list of current objects stored in the collection. `WeakSets` are not enumerable.
 
 ### Use case: Detecting circular references
@@ -51,14 +49,12 @@ Here, a `WeakSet` is created on the first run, and passed along with every subse
 
 The number of objects or their traversal order is immaterial, so a `WeakSet` is more suitable (and performant) than a [`Set`](set) for tracking object references, especially if a very large number of objects is involved.
 
-Constructor
------------
+## Constructor
 
 [`WeakSet()`](weakset/weakset)  
 Creates a new `WeakSet` object.
 
-Instance methods
-----------------
+## Instance methods
 
 [`WeakSet.prototype.add(value)`](weakset/add)  
 Appends `value` to the `WeakSet` object.
@@ -69,8 +65,7 @@ Removes `value` from the `WeakSet`. `WeakSet.prototype.has(value)` will return `
 [`WeakSet.prototype.has(value)`](weakset/has)  
 Returns a boolean asserting whether `value` is present in the `WeakSet` object or not.
 
-Examples
---------
+## Examples
 
 ### Using the WeakSet object
 
@@ -88,16 +83,14 @@ Examples
     ws.has(foo);    // false, foo has been removed
     ws.has(bar);    // true, bar is retained
 
-Note that `foo !== bar`. While they are similar objects, *they are not **the same object***. And so they are both added to the set.
+Note that `foo !== bar`. While they are similar objects, \*they are not **the same object\***. And so they are both added to the set.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-weakset-objects">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'WeakSet' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -283,8 +276,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Map`](map)
 -   [`Set`](set)

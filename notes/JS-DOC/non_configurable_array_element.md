@@ -1,21 +1,17 @@
-TypeError: can't delete non-configurable array element
-======================================================
+# TypeError: can't delete non-configurable array element
 
 The JavaScript exception "can't delete non-configurable array element" occurs when it was attempted to [shorten the length](../global_objects/array/length#shortening_an_array) of an array, but one of the array's elements is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
 
-Message
--------
+## Message
 
     TypeError: can't delete non-configurable array element (Firefox)
     TypeError: Cannot delete property '2' of [object Array] (Chrome)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 It was attempted to [shorten the length](../global_objects/array/length#shortening_an_array) of an array, but one of the array's elements is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties). When shortening an array, the elements beyond the new array length will be deleted, which failed in this situation.
 
@@ -23,8 +19,7 @@ The `configurable` attribute controls whether the property can be deleted from t
 
 Usually, properties in an object created by an [array initializer](../global_objects/array#syntax) are configurable. However, for example, when using [`Object.defineProperty()`](../global_objects/object/defineproperty), the property isn't configurable by default.
 
-Examples
---------
+## Examples
 
 ### Non-configurable properties created by `Object.defineProperty`
 
@@ -65,8 +60,7 @@ You either need to remove the [`Object.seal()`](../global_objects/object/seal) c
     copy.length = 1;
     // arr.length == 3
 
-See also
---------
+## See also
 
 -   [\[\[Configurable\]\]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties)
 -   [`Array.length`](../global_objects/array/length)

@@ -1,10 +1,8 @@
-Date.prototype.getUTCDate()
-===========================
+# Date.prototype.getUTCDate()
 
 The `getUTCDate()` method returns the day of the month(from 1 to 31) in the specified date according to universal time.
 
-Syntax
-------
+## Syntax
 
     getUTCDate()
 
@@ -12,8 +10,7 @@ Syntax
 
 An integer number ranging from 1 to 31 representing day of month for the given date, according to universal time.
 
-Examples
---------
+## Examples
 
 ### Using getUTCDate()
 
@@ -22,8 +19,7 @@ The following example assigns the day of month of the current date to the variab
     var today = new Date();
     var dayOfMonth = today.getUTCDate();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcdate">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.getutcdate</span></a></td></tr></tbody></table>
@@ -54,8 +50,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getUTCDate()`](getutcdate)
 -   [`Date.prototype.getDay()`](getday)

@@ -1,27 +1,22 @@
-SyntaxError: missing = in const declaration
-===========================================
+# SyntaxError: missing = in const declaration
 
 The JavaScript exception "missing = in const declaration" occurs when a const declaration was not given a value in the same statement (like `const RED_FLAG;`). You need to provide one (`const RED_FLAG = '#ff0'`).
 
-Message
--------
+## Message
 
     SyntaxError: Const must be initialized (Edge)
     SyntaxError: missing = in const declaration (Firefox)
     SyntaxError: Missing initializer in const declaration (Chrome)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 A constant is a value that cannot be altered by the program during normal execution. It cannot change through re-assignment, and it can't be redeclared. In JavaScript, constants are declared using the `const` keyword. An initializer for a constant is required; that is, you must specify its value in the same statement in which it's declared (which makes sense, given that it can't be changed later).
 
-Examples
---------
+## Examples
 
 ### Missing const initializer
 
@@ -46,8 +41,7 @@ Do not use `const` if you weren't meaning to declare a constant. Maybe you meant
 
     let columns;
 
-See also
---------
+## See also
 
 -   `const`
 -   `let`

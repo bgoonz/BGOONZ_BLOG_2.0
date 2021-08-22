@@ -1,27 +1,22 @@
-TypeError: can't define property "x": "obj" is not extensible
-=============================================================
+# TypeError: can't define property "x": "obj" is not extensible
 
 The JavaScript exception "can't define property "x": "obj" is not extensible" occurs when [`Object.preventExtensions()`](../global_objects/object/preventextensions) marked an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible.
 
-Message
--------
+## Message
 
     TypeError: Cannot create property for a non-extensible object (Edge)
     TypeError: can't define property "x": "obj" is not extensible (Firefox)
     TypeError: Cannot define property: "x", object is not extensible. (Chrome)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 Usually, an object is extensible and new properties can be added to it. However, in this case [`Object.preventExtensions()`](../global_objects/object/preventextensions) marked an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible.
 
-Examples
---------
+## Examples
 
 ### Adding new properties to a non-extensible objects
 
@@ -54,8 +49,7 @@ To fix this error, you will either need to remove the call to [`Object.preventEx
 
     Object.preventExtensions(obj);
 
-See also
---------
+## See also
 
 -   [`Object.preventExtensions()`](../global_objects/object/preventextensions)
 

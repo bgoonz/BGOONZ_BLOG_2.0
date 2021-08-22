@@ -1,12 +1,10 @@
-Math.atanh()
-============
+# Math.atanh()
 
 The `Math.atanh()` function returns the hyperbolic arctangent of a number, that is
 
-∀*x* ∈ (−1,1), `Math.atanh` `(``x``)` = arctanh (*x*) = the unique *y* such that tanh (*y*) = *x*
+∀*x* ∈ (−1,1), `Math.atanh` ` (``x``) ` = arctanh (_x_) = the unique *y* such that tanh (_y_) = *x*
 
-Syntax
-------
+## Syntax
 
     Math.atanh(x)
 
@@ -19,13 +17,11 @@ A number.
 
 The hyperbolic arctangent of the given number.
 
-Description
------------
+## Description
 
 Because `atanh()` is a static method of `Math`, you always use it as `Math.atanh()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.atanh()
 
@@ -38,17 +34,15 @@ Examples
 
 For values greater than 1 or less than -1, [`NaN`](../nan) is returned.
 
-Polyfill
---------
+## Polyfill
 
-For |*x*| &lt; 1, we have $\\operatorname{artanh}(x) = \\frac{1}{2}\\ln\\left( \\frac{1 + x}{1 - x} \\right)$ so this can be emulated by the following function:
+For |_x_| &lt; 1, we have $\\operatorname{artanh}(x) = \\frac{1}{2}\\ln\\left( \\frac{1 + x}{1 - x} \\right)$ so this can be emulated by the following function:
 
     Math.atanh = Math.atanh || function(x) {
       return Math.log((1+x)/(1-x)) / 2;
     };
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atanh">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.atanh</span></a></td></tr></tbody></table>
@@ -79,8 +73,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Math.acosh()`](acosh)
 -   [`Math.asinh()`](asinh)

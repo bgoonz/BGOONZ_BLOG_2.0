@@ -1,10 +1,8 @@
-Number.isFinite()
-=================
+# Number.isFinite()
 
 The `Number.isFinite()` method determines whether the passed value is a finite number — that is, it checks that the type of a given value is [`Number`](../number), and the number is neither positive [`Infinity`](../infinity), negative `Infinity`, nor [`NaN`](../nan).
 
-Syntax
-------
+## Syntax
 
     Number.isFinite(value)
 
@@ -17,13 +15,11 @@ The value to be tested for finiteness.
 
 A [`Boolean`](../boolean) indicating whether or not the given value is a finite number.
 
-Description
------------
+## Description
 
-In comparison to the global [`isFinite()`](../isfinite) function, this method doesn't first convert the parameter to a number. This means only values of the type number *and* are finite return `true`.
+In comparison to the global [`isFinite()`](../isfinite) function, this method doesn't first convert the parameter to a number. This means only values of the type number _and_ are finite return `true`.
 
-Examples
---------
+## Examples
 
 ### Using isFinite
 
@@ -39,15 +35,13 @@ Examples
     Number.isFinite(null);      // false, would've been true with
                                 // global isFinite(null)
 
-Polyfill
---------
+## Polyfill
 
     if (Number.isFinite === undefined) Number.isFinite = function(value) {
         return typeof value === 'number' && isFinite(value);
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isfinite">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-number.isfinite</span></a></td></tr></tbody></table>
@@ -78,8 +72,7 @@ No
 
 1.5
 
-See also
---------
+## See also
 
 -   The [`Number`](../number) object it belongs to.
 -   The global function [`isFinite`](../isfinite).

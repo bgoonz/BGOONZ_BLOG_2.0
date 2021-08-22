@@ -1,5 +1,4 @@
-Function.displayName
-====================
+# Function.displayName
 
 **Non-standard**
 
@@ -7,8 +6,7 @@ This feature is non-standard and is not on a standards track. Do not use it on p
 
 The `function.displayName` property returns the display name of the function.
 
-Examples
---------
+## Examples
 
 ### Setting a displayName
 
@@ -64,8 +62,7 @@ You can dynamically change the `displayName` of a function:
     object.someMethod('123')
     console.log(object.someMethod.displayName); // "someMethod (123)"
 
-Specifications
---------------
+## Specifications
 
 <span class="pl-s">Not part of any standard.</span>
 
@@ -95,8 +92,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`Function.name`](name)
 

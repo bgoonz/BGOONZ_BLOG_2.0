@@ -1,5 +1,4 @@
-TypeError
-=========
+# TypeError
 
 The `TypeError` object represents an error when an operation could not be performed, typically (but not exclusively) when a value is not of the expected type.
 
@@ -9,14 +8,12 @@ A `TypeError` may be thrown when:
 -   when attempting to modify a value that cannot be changed; or
 -   when attempting to use a value in an inappropriate way.
 
-Constructor
------------
+## Constructor
 
 [`TypeError()`](typeerror/typeerror)  
 Creates a new `TypeError` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`TypeError.prototype.message`](error/message)  
 Error message. Although ECMA-262 specifies that [`TypeError`](typeerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
@@ -36,8 +33,7 @@ Column number in line that raised this error. Inherited from [`Error`](error).
 [`TypeError.prototype.stack`](error/stack)  
 Stack trace. Inherited from [`Error`](error).
 
-Examples
---------
+## Examples
 
 ### Catching a TypeError
 
@@ -67,14 +63,12 @@ Examples
       console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'TypeError' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -156,8 +150,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Error`](error)
 

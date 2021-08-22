@@ -1,5 +1,4 @@
-String.prototype.big()
-======================
+# String.prototype.big()
 
 **Deprecated**
 
@@ -9,8 +8,7 @@ The `big()` method creates a [`<big>`](https://developer.mozilla.org/en-US/docs/
 
 **Note:** The &lt;big&gt; element has been removed in [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) and shouldn't be used anymore. Instead web developers should use [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) properties.
 
-Syntax
-------
+## Syntax
 
     big()
 
@@ -18,13 +16,11 @@ Syntax
 
 A string containing a [`<big>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big) HTML element.
 
-Description
------------
+## Description
 
 The `big()` method embeds a string in a `<big>` element: "`<big>str</big>`".
 
-Examples
---------
+## Examples
 
 ### Using big()
 
@@ -40,8 +36,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
     document.getElementById('yourElemId').style.fontSize = '2em';
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.big">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.big</span></a></td></tr></tbody></table>
@@ -72,8 +67,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.fontsize()`](fontsize)
 -   [`String.prototype.small()`](small)

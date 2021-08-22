@@ -1,17 +1,14 @@
-Rest parameters
-===============
+# Rest parameters
 
 The **rest parameter** syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent [variadic functions](https://en.wikipedia.org/wiki/Variadic_function) in JavaScript.
 
-Syntax
-------
+## Syntax
 
     function f(a, b, ...theArgs) {
       // ...
     }
 
-Description
------------
+## Description
 
 A function definition's last parameter can be prefixed with "`...`" (three U+002E FULL STOP characters), which will cause all remaining (user supplied) parameters to be placed within a ["standard" JavaScript array.](../global_objects/array). Only the last parameter in a function definition can be a rest parameter.
 
@@ -73,8 +70,7 @@ Rest parameters were introduced to reduce the boilerplate code that was commonly
       let first = normalArray.shift() // OK, gives the first argument
     }
 
-Examples
---------
+## Examples
 
 ### Using rest parameters
 
@@ -167,14 +163,12 @@ To use `Array` methods on the `arguments` object, it must be converted to a real
     }
     console.log(sortArguments(5, 3, 7, 1))  // 1, 3, 5, 7
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -256,8 +250,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [Spread syntax](../operators/spread_syntax) (also ‘`...`’)
 -   [Arguments object](arguments)

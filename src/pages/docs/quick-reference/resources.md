@@ -3,14 +3,13 @@ title: Developer Resources
 weight: 0
 excerpt: Developer Resources
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
-
 
 ### Web Dev Resources
 
@@ -105,10 +104,7 @@ Here’s a repo where I hoard resource lists!
 <a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong><br />
 <em>Inspired by Awesome Lists. Contribute to bgoonz/Cumulative-Resource-List development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-
-
 ## MOAR!
-
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*eEDATI6RAaEQw71I.jpg" class="graf-image" /></figure>-   <span id="84dc"><a href="https://bgoonz.github.io/about.html#ansible" class="markup--anchor markup--li-anchor">Ansible</a></span>
 -   <span id="1d08"><a href="https://bgoonz.github.io/about.html#awesome-lists" class="markup--anchor markup--li-anchor">Awesome Lists</a></span>

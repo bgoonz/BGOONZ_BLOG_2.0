@@ -1,28 +1,23 @@
-SyntaxError: missing ; before statement
-=======================================
+# SyntaxError: missing ; before statement
 
 The JavaScript exception "missing ; before statement" occurs when there is a semicolon (`;`) missing somewhere and can't be added by [automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion). You need to provide a semicolon, so that JavaScript can parse the source code correctly.
 
-Message
--------
+## Message
 
     SyntaxError: Expected ';' (Edge)
     SyntaxError: missing ; before statement (Firefox)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 There is a semicolon (`;`) missing somewhere. [JavaScript statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements) must be terminated with semicolons. Some of them are affected by [automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion), but in this case you need to provide a semicolon, so that JavaScript can parse the source code correctly.
 
 However, oftentimes, this error is only a consequence of another error, like not escaping strings properly, or using `var` wrongly. You might also have too many parenthesis somewhere. Carefully check the syntax when this error is thrown.
 
-Examples
---------
+## Examples
 
 ### Unescaped strings
 
@@ -68,8 +63,7 @@ Instead, use `function` instead of `def`:
       console.log(info);
     };
 
-See also
---------
+## See also
 
 -   [Automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion)
 -   [JavaScript statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)

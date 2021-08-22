@@ -1,10 +1,8 @@
-Generator
-=========
+# Generator
 
 The `Generator` object is returned by a [generator function](../statements/function*) and it conforms to both the [iterable protocol](../iteration_protocols#the_iterable_protocol) and the [iterator protocol](../iteration_protocols#the_iterator_protocol).
 
-Constructor
------------
+## Constructor
 
 This object cannot be instantiated directly. Instead, a `Generator` instance can be returned from a [generator function](../statements/function*):
 
@@ -20,8 +18,7 @@ This object cannot be instantiated directly. Instead, a `Generator` instance can
     console.log(generator().next().value); // 1
     console.log(generator().next().value); // 1
 
-Instance methods
-----------------
+## Instance methods
 
 [`Generator.prototype.next()`](generator/next)  
 Returns a value yielded by the [`yield`](../operators/yield) expression.
@@ -32,8 +29,7 @@ Returns the given value and finishes the generator.
 [`Generator.prototype.throw()`](generator/throw)  
 Throws an error to a generator (also finishes the generator, unless caught from within that generator).
 
-Examples
---------
+## Examples
 
 ### An infinite iterator
 
@@ -54,8 +50,7 @@ With a generator function, values are not evaluated until they are needed. There
     console.log(generator.next().value); // 2
     // ...
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-generator-objects</span></a></td></tr></tbody></table>
@@ -164,8 +159,7 @@ No
 
 4.0
 
-See also
---------
+## See also
 
 -   [`function*`](../statements/function*)
 -   [`function*` expression](../operators/function*)

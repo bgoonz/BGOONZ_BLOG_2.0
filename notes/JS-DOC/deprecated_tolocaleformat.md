@@ -1,25 +1,20 @@
-Warning: Date.prototype.toLocaleFormat is deprecated
-====================================================
+# Warning: Date.prototype.toLocaleFormat is deprecated
 
 The JavaScript warning "Date.prototype.toLocaleFormat is deprecated; consider using Intl.DateTimeFormat instead" occurs when the non-standard <span class="page-not-created">`Date.prototype.toLocaleFormat`</span> method is used.
 
-Message
--------
+## Message
 
     Warning: Date.prototype.toLocaleFormat is deprecated; consider using Intl.DateTimeFormat instead
 
-Error type
-----------
+## Error type
 
 Warning. JavaScript execution won't be halted.
 
-What went wrong?
-----------------
+## What went wrong?
 
 The non-standard <span class="page-not-created">`Date.prototype.toLocaleFormat`</span> method is deprecated and shouldn't be used anymore. It uses a format string in the same format expected by the `strftime()` function in C. **The function is no longer available in Firefox 58+**.
 
-Examples
---------
+## Examples
 
 ### Deprecated syntax
 
@@ -76,8 +71,7 @@ Can be converted to:
     console.log(date);
     // "20170310"
 
-See also
---------
+## See also
 
 -   <span class="page-not-created">`Date.prototype.toLocaleFormat`</span>
 -   [`Date.prototype.toLocaleDateString`](../global_objects/date/tolocaledatestring)

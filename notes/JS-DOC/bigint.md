@@ -1,10 +1,8 @@
-BigInt
-======
+# BigInt
 
-`BigInt` is a built-in object whose constructor returns a `bigint` [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) — also called a **BigInt value**, or sometimes just a **BigInt** — to represent whole numbers larger than 2<sup>53</sup> - 1 ([`Number.MAX_SAFE_INTEGER`](number/max_safe_integer)), which is the largest number JavaScript can represent with a `number` [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) (or *Number value*). BigInt values can be used for arbitrarily large integers.
+`BigInt` is a built-in object whose constructor returns a `bigint` [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) — also called a **BigInt value**, or sometimes just a **BigInt** — to represent whole numbers larger than 2<sup>53</sup> - 1 ([`Number.MAX_SAFE_INTEGER`](number/max_safe_integer)), which is the largest number JavaScript can represent with a `number` [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) (or _Number value_). BigInt values can be used for arbitrarily large integers.
 
-Description
------------
+## Description
 
 A **BigInt value**, also sometimes just called a **BigInt**, is a `bigint` [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive), created by appending `n` to the end of an integer literal, or by calling the [`BigInt()`](bigint/bigint) constructor (but without the `new` operator) and giving it an integer value or string value.
 
@@ -82,7 +80,7 @@ The `/` operator also works as expected with whole numbers — but operations wi
 
 ### Comparisons
 
-A BigInt value is not strictly equal to a Number value, but it *is* loosely so:
+A BigInt value is not strictly equal to a Number value, but it _is_ loosely so:
 
     0n === 0
     // ↪ false
@@ -167,14 +165,12 @@ A BigInt value behaves like a Number value in cases where:
     !0n
     // ↪ true
 
-Constructor
------------
+## Constructor
 
 [`BigInt()`](bigint/bigint)  
 Creates a new BigInt value.
 
-Static methods
---------------
+## Static methods
 
 [`BigInt.asIntN()`](bigint/asintn)  
 Clamps a BigInt value to a signed integer value, and returns that value.
@@ -182,8 +178,7 @@ Clamps a BigInt value to a signed integer value, and returns that value.
 [`BigInt.asUintN()`](bigint/asuintn)  
 Clamps a BigInt value to an unsigned integer value, and returns that value.
 
-Instance methods
-----------------
+## Instance methods
 
 [`BigInt.prototype.toLocaleString()`](bigint/tolocalestring)  
 Returns a string with a language-sensitive representation of this BigInt value. Overrides the [`Object.prototype.toLocaleString()`](object/tolocalestring) method.
@@ -194,8 +189,7 @@ Returns a string representing this BigInt value in the specified radix (base). O
 [`BigInt.prototype.valueOf()`](bigint/valueof)  
 Returns this BigInt value. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
-Usage recommendations
----------------------
+## Usage recommendations
 
 ### Coercion
 
@@ -219,8 +213,7 @@ Instead of throwing, `JSON.stringify` now produces a string like this:
     JSON.stringify(BigInt(1))
     // '"1"'
 
-Examples
---------
+## Examples
 
 ### Calculating Primes
 
@@ -251,8 +244,7 @@ Examples
     nthPrime(20n)
     // ↪ 73n
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-bigint-objects</span></a></td></tr></tbody></table>
@@ -439,8 +431,7 @@ No
 
 9.0
 
-See also
---------
+## See also
 
 -   [`Number`](number)
 -   [`Number.MAX_SAFE_INTEGER`](number/max_safe_integer)

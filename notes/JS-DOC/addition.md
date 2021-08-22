@@ -1,15 +1,12 @@
-Addition (+)
-============
+# Addition (+)
 
 The addition operator (`+`) produces the sum of numeric operands or string concatenation.
 
-Syntax
-------
+## Syntax
 
     Operator: x + y
 
-Examples
---------
+## Examples
 
 ### Numeric addition
 
@@ -33,8 +30,7 @@ Examples
     // String + Boolean -> concatenation
     'foo' + false // "foofalse"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-addition-operator-plus">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Addition operator' in that specification.</span></a></td></tr></tbody></table>
@@ -65,8 +61,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Subtraction operator](subtraction)
 -   [Division operator](division)

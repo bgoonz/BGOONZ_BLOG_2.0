@@ -1,15 +1,12 @@
-Default parameters
-==================
+# Default parameters
 
 **Default function parameters** allow named parameters to be initialized with default values if no value or `undefined` is passed.
 
-Syntax
-------
+## Syntax
 
     function fnName(param1 = defaultValue1, ..., paramN = defaultValueN) { ... }
 
-Description
------------
+## Description
 
 In JavaScript, function parameters default to [`undefined`](../global_objects/undefined). However, it's often useful to set a different default value. This is where default parameters can help.
 
@@ -44,8 +41,7 @@ With default parameters in ES2015, checks in the function body are no longer nec
     multiply(5)             // 5
     multiply(5, undefined)  // 5
 
-Examples
---------
+## Examples
 
 ### Passing `undefined` vs. other falsy values
 
@@ -64,7 +60,7 @@ In the second call in this example, even if the first argument is set explicitly
 
 ### Evaluated at call time
 
-The default argument is evaluated at *call time*. So, unlike (for example) Python, a new object is created each time the function is called.
+The default argument is evaluated at _call time_. So, unlike (for example) Python, a new object is created each time the function is called.
 
     function append(value, array = []) {
       array.push(value)
@@ -180,8 +176,7 @@ You can use default value assignment with the [destructuring assignment](../oper
 
     f()  // 6
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
@@ -264,8 +259,7 @@ No
 
 5.0
 
-See also
---------
+## See also
 
 -   [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:parameter_default_values)
 

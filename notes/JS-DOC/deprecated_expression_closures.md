@@ -1,25 +1,20 @@
-Warning: expression closures are deprecated
-===========================================
+# Warning: expression closures are deprecated
 
 The JavaScript warning "expression closures are deprecated" occurs when the non-standard [expression closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures) syntax (shorthand function syntax) is used.
 
-Message
--------
+## Message
 
     Warning: expression closures are deprecated
 
-Error type
-----------
+## Error type
 
 Warning. JavaScript execution won't be halted.
 
-What went wrong?
-----------------
+## What went wrong?
 
 The non-standard [expression closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures) syntax (shorthand function syntax) is deprecated and shouldn't be used anymore. This syntax will be removed entirely in [bug 1083458](https://bugzilla.mozilla.org/show_bug.cgi?id=1083458) and scripts using it will throw a [`SyntaxError`](../global_objects/syntaxerror) then.
 
-Examples
---------
+## Examples
 
 ### Deprecated syntax
 
@@ -63,8 +58,7 @@ With ES2015 [method definitions](../functions/method_definitions), this can be c
       set x(v) { this.v = v }
     };
 
-See also
---------
+## See also
 
 -   [Expression closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures)
 -   [Arrow functions](../functions/arrow_functions)

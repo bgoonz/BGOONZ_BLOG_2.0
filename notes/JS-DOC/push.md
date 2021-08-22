@@ -1,10 +1,8 @@
-Array.prototype.push()
-======================
+# Array.prototype.push()
 
 The `push()` method adds one or more elements to the end of an array and returns the new length of the array.
 
-Syntax
-------
+## Syntax
 
     push(element0)
     push(element0, element1)
@@ -19,8 +17,7 @@ The element(s) to add to the end of the array.
 
 The new [`length`](length) property of the object upon which the method was called.
 
-Description
------------
+## Description
 
 The `push` method appends values to an array.
 
@@ -28,8 +25,7 @@ The `push` method appends values to an array.
 
 Although [strings](../string) are native, Array-like objects, they are not suitable in applications of this method, as strings are immutable. Similarly for the native, Array-like object [arguments](../../functions/arguments).
 
-Examples
---------
+## Examples
 
 ### Adding elements to an array
 
@@ -45,7 +41,7 @@ The following code creates the `sports` array containing two elements, then appe
 
 This example uses [`apply()`](../function/apply) to push all elements from a second array.
 
-Do *not* use this method if the second array (`moreVegs` in the example) is very large because the maximum number of parameters that one function can take is limited in practice. See [`apply()`](../function/apply) for more details.
+Do _not_ use this method if the second array (`moreVegs` in the example) is very large because the maximum number of parameters that one function can take is limited in practice. See [`apply()`](../function/apply) for more details.
 
     let vegetables = ['parsnip', 'potato']
     let moreVegs = ['celery', 'beetroot']
@@ -80,14 +76,12 @@ Note that we don't create an array to store a collection of objects. Instead, we
 
 Note that although `obj` is not an array, the method `push` successfully incremented `obj`'s `length` property just like if we were dealing with an actual array.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.push">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.push</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -143,8 +137,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.pop()`](pop)
 -   [`Array.prototype.shift()`](shift)

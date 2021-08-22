@@ -1,12 +1,10 @@
-Object.prototype.constructor
-============================
+# Object.prototype.constructor
 
-The `constructor` property returns a reference to the [`Object`](../object) constructor function that created the instance object. Note that the value of this property is a reference to *the function itself*, not a string containing the function's name.
+The `constructor` property returns a reference to the [`Object`](../object) constructor function that created the instance object. Note that the value of this property is a reference to _the function itself_, not a string containing the function's name.
 
 The value is only read-only for primitive values such as `1`, `true`, and `"test"`.
 
-Description
------------
+## Description
 
 All objects (with the exception of objects created with `Object.create(null)`) will have a `constructor` property. Objects created without the explicit use of a constructor function (such as object- and array-literals) will have a `constructor` property that points to the Fundamental Object constructor type for that object.
 
@@ -25,8 +23,7 @@ All objects (with the exception of objects created with `Object.create(null)`) w
     let n = new Number(3)
     n.constructor === Number // true
 
-Examples
---------
+## Examples
 
 ### Displaying the constructor of an object
 
@@ -92,7 +89,7 @@ Mostly this property is used for defining a function as a **function-constructor
 
     Child.prototype.constructor = Child // return original constructor to Child
 
-But when do we need to perform the last line here? Unfortunately, the answer is: *it depends*.
+But when do we need to perform the last line here? Unfortunately, the answer is: _it depends_.
 
 Let's try to define the cases in which re-assignment of the original constructor will play a major role, and when it will be one superfluous line of code.
 
@@ -177,8 +174,7 @@ or assign parent constructor identifier to a separate property on the Child cons
 
 **Note:** Manually updating or setting the constructor can lead to different and sometimes confusing consequences. To prevent this, just define the role of `constructor` in each specific case. In most cases, `constructor` is not used and reassignment of it is not necessary.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.constructor">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Object.prototype.constructor' in that specification.</span></a></td></tr></tbody></table>
@@ -209,8 +205,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Class declaration](../../statements/class)
 -   [Class constructor](../../classes/constructor)

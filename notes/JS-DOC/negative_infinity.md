@@ -1,5 +1,4 @@
-Number.NEGATIVE\_INFINITY
-=========================
+# Number.NEGATIVE_INFINITY
 
 The `Number.NEGATIVE_INFINITY` property represents the negative Infinity value.
 
@@ -17,8 +16,7 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
 The value of `Number.NEGATIVE_INFINITY` is the same as the negative value of the global object's [`Infinity`](../infinity) property.
 
@@ -38,10 +36,9 @@ You might use the `Number.NEGATIVE_INFINITY` property to indicate an error condi
 
 Because `NEGATIVE_INFINITY` is a static property of [`Number`](../number), you always use it as `Number.NEGATIVE_INFINITY`, rather than as a property of a [`Number`](../number) object you created.
 
-Examples
---------
+## Examples
 
-### Using NEGATIVE\_INFINITY
+### Using NEGATIVE_INFINITY
 
 In the following example, the variable `smallNumber` is assigned a value that is smaller than the minimum value. When the [`if`](../../statements/if...else) statement executes, `smallNumber` has the value `-Infinity`, so `smallNumber` is set to a more manageable value before continuing.
 
@@ -51,8 +48,7 @@ In the following example, the variable `smallNumber` is assigned a value that is
       smallNumber = returnFinite();
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.negative_infinity">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-number.negative_infinity</span></a></td></tr></tbody></table>
@@ -83,8 +79,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Number.POSITIVE_INFINITY`](positive_infinity)
 -   [`Number.isFinite()`](isfinite)

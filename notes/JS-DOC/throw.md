@@ -1,18 +1,15 @@
-throw
-=====
+# throw
 
 The `throw` throws a user-defined exception. Execution of the current function will stop (the statements after `throw` won't be executed), and control will be passed to the first [`catch`](try...catch) block in the call stack. If no `catch` block exists among caller functions, the program will terminate.
 
-Syntax
-------
+## Syntax
 
-    throw expression; 
+    throw expression;
 
 `expression`  
 The expression to throw.
 
-Description
------------
+## Description
 
 Use the `throw` statement to throw an exception. When you throw an exception, `expression` specifies the value of the exception. Each of the following throws an exception:
 
@@ -23,8 +20,7 @@ Use the `throw` statement to throw an exception. When you throw an exception, `e
 
 Also note that the `throw` statement is affected by [automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion) as no line terminator between the `throw` keyword and the expression is allowed.
 
-Examples
---------
+## Examples
 
 ### Throw an object
 
@@ -138,14 +134,12 @@ You can use `throw` to rethrow an exception after you catch it. The following ex
       }
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-throw-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-throw-statement</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -201,8 +195,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`try...catch`](try...catch)
 -   [`Error`](../global_objects/error)

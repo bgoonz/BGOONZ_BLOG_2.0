@@ -1,10 +1,8 @@
-String.fromCharCode()
-=====================
+# String.fromCharCode()
 
 The static `String.fromCharCode()` method returns a string created from the specified sequence of UTF-16 code units.
 
-Syntax
-------
+## Syntax
 
     String.fromCharCode(num1)
     String.fromCharCode(num1, num2)
@@ -19,8 +17,7 @@ A sequence of numbers that are UTF-16 code units. The range is between `0` and `
 
 A string of length `N` consisting of the `N` specified UTF-16 code units.
 
-Description
------------
+## Description
 
 This method returns a string and not a [`String`](../string) object.
 
@@ -34,8 +31,7 @@ Because `fromCharCode()` only works with 16-bit values (same as the `\u` escape 
 
 While there is a mathematical relationship between the supplementary code point value (e.g. `0x1F303`) and both surrogate values that represent it (e.g., `0xD83C` and `0xDF03`), it does require an extra step to either calculate or look up the surrogate pair values every time a supplementary code point is to be used. For this reason, it's more convenient to use [`String.fromCodePoint()`](fromcodepoint) (part of the ES2015 standard), which allows for returning supplementary characters based on their actual code point value. For example, `String.fromCodePoint(0x1F303)` returns code point `U+1F303` "Night with Stars".
 
-Examples
---------
+## Examples
 
 ### Using fromCharCode()
 
@@ -53,8 +49,7 @@ Supplementary characters, in UTF-16, require two code units (i.e. a surrogate pa
 
     String.fromCharCode(0xD834, 0xDF06, 0x61, 0xD834, 0xDF07); // "\uD834\uDF06a\uD834\uDF07"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcharcode">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'String.fromCharCode' in that specification.</span></a></td></tr></tbody></table>
@@ -85,8 +80,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.fromCodePoint()`](fromcodepoint)
 -   [`String.prototype.charAt()`](charat)

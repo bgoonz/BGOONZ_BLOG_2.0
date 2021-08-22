@@ -1,15 +1,12 @@
-Intl.DateTimeFormat.prototype.formatRange()
-===========================================
+# Intl.DateTimeFormat.prototype.formatRange()
 
 The `Intl.DateTimeFormat.prototype.formatRange()` formats a date range in the most concise way based on the `locale` and `options` provided when instantiating [`Intl.DateTimeFormat`](../datetimeformat) object.
 
-Syntax
-------
+## Syntax
 
     formatRange(startDate, endDate)
 
-Examples
---------
+## Examples
 
 ### Basic formatRange usage
 
@@ -48,8 +45,7 @@ This method receives two [`Date`](../../date)s and formats the date range in the
     // > 'Jan 10, 2007'
     // > 'Jan 10 – 20, 2007'
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.formatRange">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-intl.datetimeformat.prototype.formatRange</span></a></td></tr></tbody></table>
@@ -80,8 +76,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`Intl.DateTimeFormat`](../datetimeformat)
 

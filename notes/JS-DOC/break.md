@@ -1,25 +1,21 @@
-break
-=====
+# break
 
 The `break` terminates the current loop, [`switch`](switch), or [label](label) statement and transfers program control to the statement following the terminated statement.
 
-Syntax
-------
+## Syntax
 
     break [label];
 
- `label` <span class="badge inline optional">Optional</span>   
+`label` <span class="badge inline optional">Optional</span>  
 Identifier associated with the label of the statement. If the statement is not a loop or [`switch`](switch), this is required.
 
-Description
------------
+## Description
 
 The `break` statement includes an optional label that allows the program to break out of a labeled statement. The `break` statement needs to be nested within the referenced label. The labeled statement can be any [block](block) statement; it does not have to be preceded by a loop statement.
 
 A `break` statement, with or without a following label, cannot be used within the body of a function that is itself nested within the current loop, switch, or label statement that the `break` statement is intended to break out of.
 
-Examples
---------
+## Examples
 
 ### break in while loop
 
@@ -110,8 +106,7 @@ The following code also uses `break` statements with labeled blocks, but generat
       })();
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-break-statement">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Break statement' in that specification.</span></a></td></tr></tbody></table>
@@ -142,8 +137,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`continue`](continue)
 -   [label](label)

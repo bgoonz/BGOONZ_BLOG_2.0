@@ -1,10 +1,8 @@
-Object.defineProperty()
-=======================
+# Object.defineProperty()
 
 The static method `Object.defineProperty()` defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
 
-Syntax
-------
+## Syntax
 
     Object.defineProperty(obj, prop, descriptor)
 
@@ -23,12 +21,11 @@ The descriptor for the property being defined or modified.
 
 The object that was passed to the function.
 
-Description
------------
+## Description
 
 This method allows a precise addition to or modification of a property on an object. Normal property addition through assignment creates properties which show up during property enumeration ([`for...in`](../../statements/for...in) loop or [`Object.keys`](keys) method), whose values may be changed, and which may be [deleted](../../operators/delete). This method allows these extra details to be changed from their defaults. By default, values added using `Object.defineProperty()` are immutable and not enumerable.
 
-Property descriptors present in objects come in two main flavors: data descriptors and accessor descriptors. A *data descriptor* is a property that has a value, which may or may not be writable. An *accessor descriptor* is a property described by a getter-setter pair of functions. A descriptor must be one of these two flavors; it cannot be both.
+Property descriptors present in objects come in two main flavors: data descriptors and accessor descriptors. A _data descriptor_ is a property that has a value, which may or may not be writable. An _accessor descriptor_ is a property described by a getter-setter pair of functions. A descriptor must be one of these two flavors; it cannot be both.
 
 Both data and accessor descriptors are objects. They share the following optional keys (please note: the **defaults** mentioned here are in the case of defining properties using `Object.defineProperty()`):
 
@@ -104,8 +101,7 @@ Bear in mind that these attributes are not necessarily the descriptor's own prop
     // (value, get, set, enumerable, writable, configurable)
     (Object.freeze || Object)(Object.prototype);
 
-Examples
---------
+## Examples
 
 ### Creating a property
 
@@ -405,8 +401,7 @@ Unlike accessor properties, value properties are always set on the object itself
     console.log(a.y); // 1
     console.log(myclass.prototype.y); // 1
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.defineproperty">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.defineproperty</span></a></td></tr></tbody></table>
@@ -455,7 +450,7 @@ Versions of Chrome which implement `Object.defineProperty()` in some circumstanc
 
 Versions of Safari which implement `Object.defineProperty()` ignore a `length` value different from the array's current [`length`](../array/length) property, and attempts to change writability execute without error but do not actually change the property's writability.
 
-Only Internet Explorer 9 and later, and Firefox 23 and later, appear to fully and correctly implement redefinition of the [`length`](../array/length) property of arrays. For now, don't rely on redefining the [`length`](../array/length) property of an array to either work, or to work in a particular manner. And even when you *can* rely on it, [there's really no good reason to do so](https://whereswalden.com/2013/08/05/new-in-firefox-23-the-length-property-of-an-array-can-be-made-non-writable-but-you-shouldnt-do-it/).
+Only Internet Explorer 9 and later, and Firefox 23 and later, appear to fully and correctly implement redefinition of the [`length`](../array/length) property of arrays. For now, don't rely on redefining the [`length`](../array/length) property of an array to either work, or to work in a particular manner. And even when you _can_ rely on it, [there's really no good reason to do so](https://whereswalden.com/2013/08/05/new-in-firefox-23-the-length-property-of-an-array-can-be-made-non-writable-but-you-shouldnt-do-it/).
 
 ### Internet Explorer 8 specific notes
 
@@ -469,8 +464,7 @@ Internet Explorer 8 implemented a `Object.defineProperty()` method that could [o
 
 Chrome 37 (and below) has a [bug](https://bugs.chromium.org/p/v8/issues/detail?id=3448) where an attempt to define a "prototype" property, on a function, with `writable: false` doesn't work as expected.
 
-See also
---------
+## See also
 
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 -   [`Object.defineProperties()`](defineproperties)

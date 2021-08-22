@@ -1,10 +1,8 @@
-Date.prototype.setTime()
-========================
+# Date.prototype.setTime()
 
 The `setTime()` method sets the [`Date`](../date) object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC.
 
-Syntax
-------
+## Syntax
 
     setTime(timeValue)
 
@@ -17,13 +15,11 @@ An integer representing the number of milliseconds since 1 January 1970, 00:00:0
 
 The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date (effectively, the value of the argument).
 
-Description
------------
+## Description
 
 Use the `setTime()` method to help assign a date and time to another [`Date`](../date) object.
 
-Examples
---------
+## Examples
 
 ### Using setTime()
 
@@ -31,14 +27,12 @@ Examples
     var sameAsBigDay = new Date();
     sameAsBigDay.setTime(theBigDay.getTime());
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.settime">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Date.prototype.setTime' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -94,8 +88,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getTime()`](gettime)
 -   [`Date.prototype.setUTCHours()`](setutchours)

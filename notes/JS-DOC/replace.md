@@ -1,12 +1,10 @@
-String.prototype.replace()
-==========================
+# String.prototype.replace()
 
 The `replace()` method returns a new string with some or all matches of a `pattern` replaced by a `replacement`. The `pattern` can be a string or a [`RegExp`](../regexp), and the `replacement` can be a string or a function to be called for each match. If `pattern` is a string, only the first occurrence will be replaced.
 
 The original string is left unchanged.
 
-Syntax
-------
+## Syntax
 
     replace(regexp, newSubstr)
     replace(regexp, replacerFunction)
@@ -16,24 +14,23 @@ Syntax
 
 ### Parameters
 
- `regexp` (pattern)  
+`regexp` (pattern)  
 A [`RegExp`](../regexp) object or literal. The match or matches are replaced with `newSubstr` or the value returned by the specified `replacerFunction`.
 
 `substr`  
-A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is *not* interpreted as a regular expression. Only the first occurrence will be replaced.
+A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is _not_ interpreted as a regular expression. Only the first occurrence will be replaced.
 
- `newSubstr` (replacement)  
+`newSubstr` (replacement)  
 The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the "[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)" section below.
 
- `replacerFunction` (replacement)  
+`replacerFunction` (replacement)  
 A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the "[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)" section below.
 
 ### Return value
 
 A new string, with some or all matches of a pattern replaced by a replacement.
 
-Description
------------
+## Description
 
 This method does not change the calling [`String`](../string) object. It returns a new string.
 
@@ -47,7 +44,7 @@ The replacement string can include the following special replacement patterns:
 
 ### Specifying a function as a parameter
 
-You can specify a function as the second parameter. In this case, the function will be invoked after the match has been performed. The function's result (return value) will be used as the replacement string. (**Note:** The above-mentioned special replacement patterns do *not* apply in this case.)
+You can specify a function as the second parameter. In this case, the function will be invoked after the match has been performed. The function's result (return value) will be used as the replacement string. (**Note:** The above-mentioned special replacement patterns do _not_ apply in this case.)
 
 Note that the function will be invoked multiple times for each full match to be replaced if the regular expression in the first parameter is global.
 
@@ -66,8 +63,7 @@ The following example will set `newString` to `'abc - 12345 - #$*%'`:
     let newString = 'abc12345#$*%'.replace(/([^\d]*)(\d*)([^\w]*)/, replacer);
     console.log(newString);  // abc - 12345 - #$*%
 
-Examples
---------
+## Examples
 
 ### Defining the regular expression in replace()
 
@@ -118,7 +114,7 @@ The replacement function accepts the matched snippet as its parameter, and uses 
 
 Given `styleHyphenFormat('borderTop')`, this returns `'border-top'`.
 
-Because we want to further transform the *result* of the match before the final substitution is made, we must use a function. This forces the evaluation of the match prior to the [`toLowerCase()`](tolowercase) method. If we had tried to do this using the match without a function, the [`toLowerCase()`](tolowercase) would have no effect.
+Because we want to further transform the _result_ of the match before the final substitution is made, we must use a function. This forces the evaluation of the match prior to the [`toLowerCase()`](tolowercase) method. If we had tried to do this using the match without a function, the [`toLowerCase()`](tolowercase) would have no effect.
 
     let newString = propertyName.replace(/[A-Z]/g, '-' + '$&'.toLowerCase());  // won't work
 
@@ -139,14 +135,12 @@ The regular expression `test` checks for any number that ends with `F`. The numb
       return s.replace(test, convert);
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replace">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'String.prototype.replace' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -206,8 +200,7 @@ A replacement function as second argument is not supported.
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.replaceAll()`](replaceall)
 -   [`String.prototype.match()`](match)

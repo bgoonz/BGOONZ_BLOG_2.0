@@ -1,27 +1,22 @@
-SyntaxError: return not in function
-===================================
+# SyntaxError: return not in function
 
 The JavaScript exception "return (or yield) not in function" occurs when a `return` or `yield` statement is called outside of a [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
 
-Message
--------
+## Message
 
     SyntaxError: 'return' statement outside of function (Edge)
     SyntaxError: return not in function (Firefox)
     SyntaxError: yield not in function (Firefox)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 A `return` or `yield` statement is called outside of a [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions). Maybe there are missing curly brackets somewhere? The `return` and `yield` statements must be in a function, because they end (or pause and resume) function execution and specify a value to be returned to the function caller.
 
-Examples
---------
+## Examples
 
 ### Missing curly brackets
 
@@ -47,8 +42,7 @@ The curly brackets look correct at a first glance, but this code snippet is miss
       }
     };
 
-See also
---------
+## See also
 
 -   `return`
 -   `yield`

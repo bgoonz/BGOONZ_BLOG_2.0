@@ -1,12 +1,10 @@
-with
-====
+# with
 
 **Warning:**Use of the `with` statement is not recommended, as it may be the source of confusing bugs and compatibility issues. See the "Ambiguity Contra" paragraph in the "Description" section below for details.
 
 The **with statement** extends the scope chain for a statement.
 
-Syntax
-------
+## Syntax
 
     with (expression)
       statement
@@ -17,8 +15,7 @@ Adds the given expression to the scope chain used when evaluating the statement.
 `statement`  
 Any statement. To execute multiple statements, use a [block](block) statement ({ ... }) to group those statements.
 
-Description
------------
+## Description
 
 JavaScript looks up an unqualified name by searching a scope chain associated with the execution context of the script or function containing that unqualified name. The 'with' statement adds the given object to the head of this scope chain during the evaluation of its statement body. If an unqualified name used in the body matches a property in the scope chain, then the name is bound to the property and the object containing the property. Otherwise a [`ReferenceError`](../global_objects/referenceerror) is thrown.
 
@@ -52,8 +49,7 @@ Only when `f` is called is `x` either found or not, and if found, either in `o` 
 
 If you call `f([1,2,3], obj)` in an ECMAScript 5 environment, then the `values` reference inside the `with` statement will resolve to `obj`. However, ECMAScript 2015 introduces a `values` property on <span class="page-not-created">`Array.prototype`</span> (so that it will be available on every array). So, in a JavaScript environment that supports ECMAScript 2015, the `values` reference inside the `with` statement could resolve to `[1,2,3].values`. However, in this particular example, <span class="page-not-created">`Array.prototype`</span> has been defined with `values` in its [`Symbol.unscopables`](../global_objects/symbol/unscopables) object. If it were not, one can see how this would be a difficult issue to debug.
 
-Examples
---------
+## Examples
 
 ### Using with
 
@@ -68,14 +64,12 @@ The following `with` statement specifies that the [`Math`](../global_objects/mat
       y = r * sin(PI / 2);
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-with-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-with-statement</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -131,8 +125,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [block](block)
 -   [Strict mode](../strict_mode)

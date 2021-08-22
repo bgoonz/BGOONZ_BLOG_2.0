@@ -1,12 +1,10 @@
-Math.atan()
-===========
+# Math.atan()
 
 The `Math.atan()` function returns the arctangent (in radians) of a number, that is
 
 $$\\mathtt{\\operatorname{Math.atan}(x)} = \\arctan(x) = \\text{the\\ unique}\\; y \\in \\left\\lbrack {- \\frac{\\pi}{2};\\frac{\\pi}{2}} \\right\\rbrack\\,\\text{such\\ that}\\;\\tan(y) = x$$
 
-Syntax
-------
+## Syntax
 
     Math.atan(x)
 
@@ -19,15 +17,13 @@ A number.
 
 The arctangent (in radians) of the given number.
 
-Description
------------
+## Description
 
 The `Math.atan()` method returns a numeric value between $- \\frac{\\pi}{2}$ and $\\frac{\\pi}{2}$ radians.
 
 Because `atan()` is a static method of `Math`, you always use it as `Math.atan()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.atan()
 
@@ -43,8 +39,7 @@ Examples
 
 Note that you may want to avoid using **±**`Infinity` for stylistic reasons. In this case, [`Math.atan2()`](atan2) with `0` as the second argument may be a better solution.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atan">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.atan</span></a></td></tr></tbody></table>
@@ -75,8 +70,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.acos()`](acos)
 -   [`Math.asin()`](asin)

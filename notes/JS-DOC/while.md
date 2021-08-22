@@ -1,10 +1,8 @@
-while
-=====
+# while
 
 The **while statement** creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.
 
-Syntax
-------
+## Syntax
 
     while (condition)
       statement
@@ -13,12 +11,11 @@ Syntax
 An expression evaluated before each pass through the loop. If this condition evaluates to true, `statement` is executed. When condition evaluates to false, execution continues with the statement after the `while` loop.
 
 `statement`  
-An optional statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a [block](block) statement (`{ ... }`) to group those statements.  
-  
+An optional statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a [block](block) statement (`{ ... }`) to group those statements.
+
 Note: Use the `break` statement to stop a loop before condition evaluates to true.
 
-Examples
---------
+## Examples
 
 ### Using while
 
@@ -40,14 +37,12 @@ Each iteration, the loop increments `n` and adds it to `x`. Therefore, `x` and `
 
 After completing the third pass, the condition `n` &lt; 3 is no longer true, so the loop terminates.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-while-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-while-statement</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -103,8 +98,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`do...while`](do...while)
 -   [`for`](for)

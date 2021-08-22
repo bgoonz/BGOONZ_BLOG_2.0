@@ -1,10 +1,8 @@
-Date.prototype.getMonth()
-=========================
+# Date.prototype.getMonth()
 
 The `getMonth()` method returns the month in the specified date according to local time, as a zero-based value (where zero indicates the first month of the year).
 
-Syntax
-------
+## Syntax
 
     getMonth()
 
@@ -12,8 +10,7 @@ Syntax
 
 An integer number, between 0 and 11, representing the month in the given date according to local time. 0 corresponds to January, 1 to February, and so on.
 
-Examples
---------
+## Examples
 
 ### Using getMonth()
 
@@ -32,8 +29,7 @@ The second statement below assigns the value 11 to the variable `month`, based o
     console.log(new Intl.DateTimeFormat('de-DE', options).format(Xmas95));
     // Dezember
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getmonth">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.getmonth</span></a></td></tr></tbody></table>
@@ -64,8 +60,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getUTCMonth()`](getutcmonth)
 -   [`Date.prototype.setMonth()`](setmonth)

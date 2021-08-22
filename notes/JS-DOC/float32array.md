@@ -1,16 +1,13 @@
-Float32Array
-============
+# Float32Array
 
 The `Float32Array` typed array represents an array of 32-bit floating point numbers (corresponding to the C `float` data type) in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
 
-Constructor
------------
+## Constructor
 
 [`Float32Array()`](float32array/float32array)  
 Creates a new `Float32Array` object.
 
-Static properties
------------------
+## Static properties
 
 [`Float32Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
 Returns a number value of the element size. `4` in the case of an `Float32Array`.
@@ -18,8 +15,7 @@ Returns a number value of the element size. `4` in the case of an `Float32Array`
 [`Float32Array.name`](typedarray/name)  
 Returns the string value of the constructor name. In the case of the `Float32Array` type: "Float32Array".
 
-Static methods
---------------
+## Static methods
 
 [`Float32Array.from()`](typedarray/from)  
 Creates a new `Float32Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
@@ -27,8 +23,7 @@ Creates a new `Float32Array` from an array-like or iterable object. See also [`A
 [`Float32Array.of()`](typedarray/of)  
 Creates a new `Float32Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
-Instance properties
--------------------
+## Instance properties
 
 [`Float32Array.prototype.buffer`](typedarray/buffer)  
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Float32Array` Fixed at construction time and thus **read only**.
@@ -42,8 +37,7 @@ Returns the offset (in bytes) of the `Float32Array` from the start of its [`Arra
 [`Float32Array.prototype.length`](typedarray/length)  
 Returns the number of elements hold in the `Float32Array`. Fixed at construction time and thus **read only.**
 
-Instance methods
-----------------
+## Instance methods
 
 [`Float32Array.prototype.copyWithin()`](typedarray/copywithin)  
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
@@ -123,8 +117,7 @@ Returns a string representing the array and its elements. See also [`Array.proto
 [`Float32Array.prototype[@@iterator]()`](typedarray/@@iterator)  
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
-Examples
---------
+## Examples
 
 ### Different ways to create a `Float32Array`
 
@@ -153,8 +146,7 @@ Examples
     var float32 = new Float32Array(iterable);
     // Float32Array[1, 2, 3]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#table-49</span></a></td></tr></tbody></table>
@@ -211,8 +203,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`ArrayBuffer`](arraybuffer)

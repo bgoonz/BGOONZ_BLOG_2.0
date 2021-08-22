@@ -1,21 +1,18 @@
-yield
-=====
+# yield
 
 The `yield` keyword is used to pause and resume a generator function ([`function*`](../statements/function*) or [legacy generator function](https://developer.mozilla.org/en-US/docs/Archive/Web/JavaScript/Legacy_generator_function_statement)).
 
-Syntax
-------
+## Syntax
 
     [rv] = yield [expression]
 
- `expression` <span class="badge inline optional">Optional</span>   
+`expression` <span class="badge inline optional">Optional</span>  
 Defines the value to return from the generator function via [the iterator protocol](../iteration_protocols#the_iterator_protocol). If omitted, `undefined` is returned instead.
 
- `rv` <span class="badge inline optional">Optional</span>   
+`rv` <span class="badge inline optional">Optional</span>  
 Retrieves the optional value passed to the generator's `next()` method to resume its execution.
 
-Description
------------
+## Description
 
 The `yield` keyword pauses generator function execution and the value of the expression following the `yield` keyword is returned to the generator's caller. It can be thought of as a generator-based version of the `return` keyword.
 
@@ -36,8 +33,7 @@ Between the generator's code path, its `yield` operators, and the ability to spe
 
 **Warning:** Unfortunately, `next()` is asymmetric, but that can’t be helped: It always sends a value to the currently suspended `yield`, but returns the operand of the following `yield`.
 
-Examples
---------
+## Examples
 
 ### Using yield
 
@@ -80,14 +76,12 @@ You can also send a value with next(value) into the generator. 'step' evaluates 
     console.log(generatorFunc.next().value);   // 15
     console.log(generatorFunc.next(10).value); // 26
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-YieldExpression">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#prod-YieldExpression</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -147,8 +141,7 @@ No
 
 4.0
 
-See also
---------
+## See also
 
 -   [The Iterator protocol](../iteration_protocols)
 -   [`function*`](../statements/function*)

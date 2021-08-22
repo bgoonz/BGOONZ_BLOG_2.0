@@ -1,12 +1,10 @@
-Date.prototype.toUTCString()
-============================
+# Date.prototype.toUTCString()
 
 The `toUTCString()` method converts a date to a string, using the UTC time zone.
 
 Based on [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231#section-7.1.1.1) and modified according to [ecma-262 toUTCString](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-date.prototype.toutcstring), it can have negative values in the [2021 version](https://tc39.es/ecma262/#sec-date.prototype.toutcstring)
 
-Syntax
-------
+## Syntax
 
     toUTCString()
 
@@ -14,8 +12,7 @@ Syntax
 
 A string representing the given date using the UTC time zone.
 
-Description
------------
+## Description
 
 The value returned by `toUTCString()` is a string in the form `Www, dd Mmm yyyy hh:mm:ss GMT`, Where:
 
@@ -23,22 +20,19 @@ The value returned by `toUTCString()` is a string in the form `Www, dd Mmm yyyy 
 
 Prior to ECMAScript 2018, the format of the return value varied according to the platform. The most common return value was an RFC-1123 formatted date stamp, which is a slightly updated version of RFC-822 date stamps.
 
-Examples
---------
+## Examples
 
 ### Using toUTCString()
 
     let today = new Date('Wed, 14 Jun 2017 00:00:00 PDT');
     let UTCstring = today.toUTCString(); // Wed, 14 Jun 2017 07:00:00 GMT
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.toutcstring">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.toutcstring</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -94,8 +88,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.toLocaleString()`](tolocalestring)
 -   [`Date.prototype.toDateString()`](todatestring)

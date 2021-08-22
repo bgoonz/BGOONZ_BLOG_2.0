@@ -1,25 +1,20 @@
-SyntaxError: missing name after . operator
-==========================================
+# SyntaxError: missing name after . operator
 
 The JavaScript exception "missing name after . operator" occurs when there is a problem with how the dot operator (`.`) is used for [property access](../operators/property_accessors).
 
-Message
--------
+## Message
 
     SyntaxError: missing name after . operator
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 The dot operator (`.`) is used for [property access](../operators/property_accessors). You will have to specify the name of the property that you want to access. For computed property access, you might need to change your property access from using a dot to using square brackets. These will allow you to compute an expression. Maybe you intended to do concatenation instead? A plus operator (`+`) is needed in that case. Please see the examples below.
 
-Examples
---------
+## Examples
 
 ### Property access
 
@@ -55,8 +50,7 @@ Instead you need to use a plus sign for concatenation:
 
     console.log("Hello" + "World");
 
-See also
---------
+## See also
 
 -   [Property accessors](../operators/property_accessors)
 

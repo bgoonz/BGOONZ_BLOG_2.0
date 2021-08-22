@@ -1,10 +1,8 @@
-String.prototype.padStart()
-===========================
+# String.prototype.padStart()
 
 The `padStart()` method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.
 
-Syntax
-------
+## Syntax
 
     padStart(targetLength)
     padStart(targetLength, padString)
@@ -14,15 +12,14 @@ Syntax
 `targetLength`  
 The length of the resulting string once the current `str` has been padded. If the value is less than `str.length`, then `str` is returned as-is.
 
- `padString` <span class="badge inline optional">Optional</span>   
+`padString` <span class="badge inline optional">Optional</span>  
 The string to pad the current `str` with. If `padString` is too long to stay within the `targetLength`, it will be truncated from the end. The default value is "" (`U+0020 'SPACE'`).
 
 ### Return value
 
 A [`String`](../string) of the specified `targetLength` with `padString` applied from the start.
 
-Examples
---------
+## Examples
 
 ### Basic examples
 
@@ -44,14 +41,12 @@ Examples
     console.log(leftFillNum(num, 5));
     // expected output: "00123"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padstart">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.padstart</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -107,8 +102,7 @@ No
 
 7.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.padEnd()`](padend)
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)

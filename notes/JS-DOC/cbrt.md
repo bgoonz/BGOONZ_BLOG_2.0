@@ -1,12 +1,10 @@
-Math.cbrt()
-===========
+# Math.cbrt()
 
 The `Math.cbrt()` function returns the cube root of a number, that is
 
 $$\\mathtt{Math.cbrt(x)} = \\sqrt\[3\]{x} = \\text{the\\ unique}\\; y\\;\\text{such\\ that}\\; y^{3} = x$$
 
-Syntax
-------
+## Syntax
 
     Math.cbrt(x)
 
@@ -19,13 +17,11 @@ A number.
 
 The cube root of the given number.
 
-Description
------------
+## Description
 
 Because `cbrt()` is a static method of `Math`, you always use it as `Math.cbrt()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Polyfill
---------
+## Polyfill
 
 For all *x* ≥ 0, have $\\sqrt\[3\]{x} = x^{1/3}$ so this can be emulated by the following function:
 
@@ -38,8 +34,7 @@ For all *x* ≥ 0, have $\\sqrt\[3\]{x} = x^{1/3}$ so this can be emulated b
       })(Math.pow); // localize Math.pow to increase efficiency
     }
 
-Examples
---------
+## Examples
 
 ### Using Math.cbrt()
 
@@ -53,8 +48,7 @@ Examples
     Math.cbrt(null); // 0
     Math.cbrt(2);  // 1.2599210498948732
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cbrt">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.cbrt</span></a></td></tr></tbody></table>
@@ -85,8 +79,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)

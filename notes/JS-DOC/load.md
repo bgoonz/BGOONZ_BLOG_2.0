@@ -1,10 +1,8 @@
-Atomics.load()
-==============
+# Atomics.load()
 
-The static `Atomics``.load()` method returns a value at a given position in the array.
+The static ` Atomics``.load() ` method returns a value at a given position in the array.
 
-Syntax
-------
+## Syntax
 
     Atomics.load(typedArray, index)
 
@@ -25,8 +23,7 @@ The value at the given position (`typedArray[index]`).
 -   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
 -   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
-Examples
---------
+## Examples
 
 ### Using `load`
 
@@ -36,8 +33,7 @@ Examples
     Atomics.add(ta, 0, 12);
     Atomics.load(ta, 0); // 12
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.load">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-atomics.load</span></a></td></tr></tbody></table>
@@ -96,8 +92,7 @@ No
 
 Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-See also
---------
+## See also
 
 -   [`Atomics`](../atomics)
 -   [`Atomics.store()`](store)

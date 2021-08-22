@@ -1,27 +1,22 @@
-SyntaxError: for-in loop head declarations may not have initializers
-====================================================================
+# SyntaxError: for-in loop head declarations may not have initializers
 
 The JavaScript [strict mode](../strict_mode)-only exception "for-in loop head declarations may not have initializers" occurs when the head of a [for...in](../statements/for...in) contains an initializer expression, such as |`for (var i = 0 in obj)`|. This is not allowed in for-of loops in strict mode.
 
-Message
--------
+## Message
 
     SyntaxError: for-in loop head declarations cannot have an initializer (Edge)
     SyntaxError: for-in loop head declarations may not have initializers (Firefox)
     SyntaxError: for-in loop variable declaration may not have an initializer. (Chrome)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror) in [strict mode](../strict_mode) only.
 
-What went wrong?
-----------------
+## What went wrong?
 
 The head of a [for...in](../statements/for...in) loop contains an initializer expression. That is, a variable is declared and assigned a value |`for (var i = 0 in obj)`|. In non-strict mode, this head declaration is silently ignored and behaves like `|for (var i in obj)|`. In [strict mode](../strict_mode), however, a `SyntaxError` is thrown.
 
-Examples
---------
+## Examples
 
 This example throws a `SyntaxError`:
 
@@ -59,8 +54,7 @@ The for...in loop [shouldn't be used for Array iteration](../statements/for...in
 
     // "c"
 
-See also
---------
+## See also
 
 -   `for...in`
 -   `for...of` – also disallows an initializer in both strict and non-strict mode.

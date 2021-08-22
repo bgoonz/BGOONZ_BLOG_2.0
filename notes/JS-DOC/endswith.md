@@ -1,10 +1,8 @@
-String.prototype.endsWith()
-===========================
+# String.prototype.endsWith()
 
 The `endsWith()` method determines whether a string ends with the characters of a specified string, returning `true` or `false` as appropriate.
 
-Syntax
-------
+## Syntax
 
     endsWith(searchString)
     endsWith(searchString, length)
@@ -14,20 +12,18 @@ Syntax
 `searchString`  
 The characters to be searched for at the end of `str`.
 
- `length` <span class="badge inline optional">Optional</span>   
+`length` <span class="badge inline optional">Optional</span>  
 If provided, it is used as the length of `str`. Defaults to `str.length`.
 
 ### Return value
 
 `true` if the given characters are found at the end of the string; otherwise, `false`.
 
-Description
------------
+## Description
 
 This method lets you determine whether or not a string ends with another string. This method is case-sensitive.
 
-Examples
---------
+## Examples
 
 ### Using endsWith()
 
@@ -37,8 +33,7 @@ Examples
     console.log(str.endsWith('to be'))      // false
     console.log(str.endsWith('to be', 19))  // true
 
-Polyfill
---------
+## Polyfill
 
 This method has been added to the ECMAScript 6 specification and may not be available in all JavaScript implementations yet. However, you can polyfill `String.prototype.endsWith()` with the following snippet:
 
@@ -51,8 +46,7 @@ This method has been added to the ECMAScript 6 specification and may not be avai
       };
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.endswith">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.endswith</span></a></td></tr></tbody></table>
@@ -83,8 +77,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.startsWith()`](startswith)
 -   [`String.prototype.includes()`](includes)

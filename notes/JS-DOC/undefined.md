@@ -1,5 +1,4 @@
-undefined
-=========
+# undefined
 
 The global `undefined` property represents the primitive value `undefined`. It is one of JavaScript's [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive).
 
@@ -17,15 +16,13 @@ Configurable
 
 no
 
-Syntax
-------
+## Syntax
 
     undefined
 
-Description
------------
+## Description
 
-`undefined` is a property of the *global object*. That is, it is a variable in global scope. The initial value of `undefined` is the primitive value `undefined`.
+`undefined` is a property of the _global object_. That is, it is a variable in global scope. The initial value of `undefined` is the primitive value `undefined`.
 
 In modern browsers (JavaScript 1.8.5 / Firefox 4+), `undefined` is a non-configurable, non-writable property, per the ECMAScript 5 specification. (Even when this is not the case, avoid overriding it.)
 
@@ -46,8 +43,7 @@ A variable that has not been assigned a value is of type `undefined`. A method o
       console.log(undefined, typeof undefined);
     })('foo');
 
-Examples
---------
+## Examples
 
 ### Strict equality and undefined
 
@@ -61,7 +57,7 @@ You can use `undefined` and the strict equality and inequality operators to dete
       // these statements do not execute
     }
 
-**Note:** The *strict equality* operator (as opposed to the *standard equality* operator) must be used here, because `x == undefined` also checks whether `x` is `null`, while strict equality doesn't. This is because `null` is not equivalent to `undefined`.
+**Note:** The _strict equality_ operator (as opposed to the _standard equality_ operator) must be used here, because `x == undefined` also checks whether `x` is `null`, while strict equality doesn't. This is because `null` is not equivalent to `undefined`.
 
 See [comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators) for details.
 
@@ -87,7 +83,7 @@ One reason to use [`typeof`](../operators/typeof) is that it does not throw an e
 
 However, there is another alternative. JavaScript is a statically scoped language, so knowing if a variable is declared can be read by seeing whether it is declared in an enclosing context.
 
-The global scope is bound to the [global object](globalthis), so checking the existence of a variable in the global context can be done by checking the existence of a property on the *global object*, using the [`in`](../operators/in) operator, for instance:
+The global scope is bound to the [global object](globalthis), so checking the existence of a variable in the global context can be done by checking the existence of a property on the _global object_, using the [`in`](../operators/in) operator, for instance:
 
     if ('x' in window) {
       //  these statements execute only if x is defined globally
@@ -107,14 +103,12 @@ The [`void`](../operators/void) operator is a third alternative.
       //  throws Uncaught ReferenceError: y is not defined
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-undefined">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-undefined</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -170,8 +164,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   JavaScript's [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
 -   [`null`](null)

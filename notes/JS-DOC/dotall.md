@@ -1,5 +1,4 @@
-RegExp.prototype.dotAll
-=======================
+# RegExp.prototype.dotAll
 
 The `dotAll` property indicates whether or not the "`s`" flag is used with the regular expression. `dotAll` is a read-only property of an individual regular expression instance.
 
@@ -17,8 +16,7 @@ Configurable
 
 yes
 
-Description
------------
+## Description
 
 The value of `dotAll` is a [`Boolean`](../boolean) and `true` if the "`s`" flag was used; otherwise, `false`. The "`s`" flag indicates that the dot special character ("`.`") should additionally match the following line terminator ("newline") characters in a string, which it would not match otherwise:
 
@@ -31,8 +29,7 @@ This effectively means the dot will match any character on the Unicode Basic Mul
 
 You cannot change this property directly.
 
-Examples
---------
+## Examples
 
 ### Using `dotAll`
 
@@ -53,8 +50,7 @@ Examples
     console.log(str2.replace(regex2,'')); // Output: bar
                                           //         example foo example
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.dotAll">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-get-regexp.prototype.dotAll</span></a></td></tr></tbody></table>
@@ -85,8 +81,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [`RegExp.lastIndex`](lastindex)
 -   [`RegExp.prototype.global`](global)

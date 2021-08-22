@@ -1,10 +1,8 @@
-Object.fromEntries()
-====================
+# Object.fromEntries()
 
 The `Object.fromEntries()` method transforms a list of key-value pairs into an object.
 
-Syntax
-------
+## Syntax
 
     Object.fromEntries(iterable);
 
@@ -17,15 +15,13 @@ An iterable such as [`Array`](../array) or [`Map`](../map) or other objects impl
 
 A new object whose properties are given by the entries of the iterable.
 
-Description
------------
+## Description
 
 The `Object.fromEntries()` method takes a list of key-value pairs and returns a new object whose properties are given by those entries. The iterable argument is expected to be an object that implements an `@@iterator` method, that returns an iterator object, that produces a two element array-like object, whose first element is a value that will be used as a property key, and whose second element is the value to associate with that property key.
 
 `Object.fromEntries()` performs the reverse of [`Object.entries()`](entries).
 
-Examples
---------
+## Examples
 
 ### Converting a Map to an Object
 
@@ -57,8 +53,7 @@ With `Object.fromEntries`, its reverse method [`Object.entries()`](entries), and
     console.log(object2);
     // { a: 2, b: 4, c: 6 }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.fromentries">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.fromentries</span></a></td></tr></tbody></table>
@@ -89,8 +84,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`Object.entries()`](entries)
 -   [`Object.keys()`](keys)

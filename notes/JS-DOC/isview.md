@@ -1,10 +1,8 @@
-ArrayBuffer.isView()
-====================
+# ArrayBuffer.isView()
 
 The `ArrayBuffer.isView()` method determines whether the passed value is one of the `ArrayBuffer` views, such as [typed array objects](../typedarray) or a [`DataView`](../dataview).
 
-Syntax
-------
+## Syntax
 
     ArrayBuffer.isView(value)
 
@@ -17,8 +15,7 @@ The value to be checked.
 
 `true` if the given argument is one of the [`ArrayBuffer`](../arraybuffer) views; otherwise, `false`.
 
-Examples
---------
+## Examples
 
 ### Using isView
 
@@ -37,8 +34,7 @@ Examples
     const dv = new DataView(buffer);
     ArrayBuffer.isView(dv); // true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer.isview">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-arraybuffer.isview</span></a></td></tr></tbody></table>
@@ -69,8 +65,7 @@ Specifications
 
 2.0
 
-See also
---------
+## See also
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 

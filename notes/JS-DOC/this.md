@@ -1,12 +1,10 @@
-this
-====
+# this
 
 A `this` behaves a little differently in JavaScript compared to other languages. It also has some differences between [strict mode](../strict_mode) and non-strict mode.
 
 In most cases, the value of `this` is determined by how a function is called (runtime binding). It can't be set by assignment during execution, and it may be different each time the function is called. ES5 introduced the [`bind()`](../global_objects/function/bind) method to [set the value of a function's `this` regardless of how it's called](#The_bind_method), and ES2015 introduced [arrow functions](../functions/arrow_functions) which don't provide their own `this` binding (it retains the `this` value of the enclosing lexical context).
 
-Syntax
-------
+## Syntax
 
     this
 
@@ -14,8 +12,7 @@ Syntax
 
 A property of an execution context (global, function or eval) that, in non–strict mode, is always a reference to an object and in strict mode can be any value.
 
-Description
------------
+## Description
 
 ### Global context
 
@@ -107,8 +104,7 @@ Derived classes must not return before calling `super()`, unless they return an 
     new AlsoGood();
     new Bad(); // ReferenceError
 
-Examples
---------
+## Examples
 
 ### this in function contexts
 
@@ -412,14 +408,12 @@ Just like with regular functions, the value of `this` within methods depends on 
 
 **Note:** Classes are always strict mode code. Calling methods with an undefined `this` will throw an error.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-this-keyword">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'The this keyword' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -475,8 +469,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [Strict mode](../strict_mode)
 -   [Gentle explanation of 'this' keyword in JavaScript](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)

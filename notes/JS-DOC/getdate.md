@@ -1,10 +1,8 @@
-Date.prototype.getDate()
-========================
+# Date.prototype.getDate()
 
 The `getDate()` method returns the day of the month for the specified date according to local time.
 
-Syntax
-------
+## Syntax
 
     getDate()
 
@@ -12,8 +10,7 @@ Syntax
 
 An integer number, between 1 and 31, representing the day of the month for the given date according to local time.
 
-Examples
---------
+## Examples
 
 ### Using getDate()
 
@@ -24,8 +21,7 @@ The second statement below assigns the value 25 to the variable `day`, based on 
 
     console.log(day); // 25
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getdate">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.getdate</span></a></td></tr></tbody></table>
@@ -56,8 +52,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.getUTCDate()`](getutcdate)
 -   [`Date.prototype.getUTCDay()`](getutcday)

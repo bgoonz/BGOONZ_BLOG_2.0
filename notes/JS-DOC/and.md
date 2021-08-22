@@ -1,10 +1,8 @@
-Atomics.and()
-=============
+# Atomics.and()
 
-The static `Atomics``.and()` method computes a bitwise AND with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.
+The static ` Atomics``.and() ` method computes a bitwise AND with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.
 
-Syntax
-------
+## Syntax
 
     Atomics.and(typedArray, index, value)
 
@@ -28,8 +26,7 @@ The old value at the given position (`typedArray[index]`).
 -   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
 -   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
-Description
------------
+## Description
 
 The bitwise AND operation only yields 1, if both `a` and `b` are 1. The truth table for the AND operation is:
 
@@ -42,8 +39,7 @@ For example, a bitwise AND of `5 & 1` results in `0001` which is 1 in decimal.
        ----
     1  0001
 
-Examples
---------
+## Examples
 
 ### Using and()
 
@@ -54,8 +50,7 @@ Examples
     Atomics.and(ta, 0, 1); // returns 0, the old value
     Atomics.load(ta, 0);  // 1
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.and">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-atomics.and</span></a></td></tr></tbody></table>
@@ -114,8 +109,7 @@ No
 
 Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-See also
---------
+## See also
 
 -   [`Atomics`](../atomics)
 -   [`Atomics.or()`](or)

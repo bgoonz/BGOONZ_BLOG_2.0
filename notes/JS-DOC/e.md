@@ -1,9 +1,8 @@
-Math.E
-======
+# Math.E
 
 The `Math.E` property represents Euler's number, the base of natural logarithms, e, which is approximately 2.718.
 
-`M``a``t``h``.``E` = *e* ≈ 2.718
+` M``a``t``h``.``E ` = *e* ≈ 2.718
 
 Property attributes of `Math.E`
 
@@ -19,13 +18,11 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
 Because `E` is a static property of `Math`, you always use it as `Math.E`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.E
 
@@ -37,8 +34,7 @@ The following function returns e:
 
     getNapier(); // 2.718281828459045
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.e">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.e</span></a></td></tr></tbody></table>
@@ -69,8 +65,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.exp()`](exp)
 -   [`Math.log()`](log)

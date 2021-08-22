@@ -1,15 +1,12 @@
-Subtraction (-)
-===============
+# Subtraction (-)
 
 The subtraction operator (`-`) subtracts the two operands, producing their difference.
 
-Syntax
-------
+## Syntax
 
     Operator: x - y
 
-Examples
---------
+## Examples
 
 ### Subtraction with numbers
 
@@ -20,14 +17,12 @@ Examples
 
     'foo' - 3 // NaN
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-subtraction-operator-minus">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-subtraction-operator-minus</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -83,8 +78,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [Addition operator](addition)
 -   [Division operator](division)

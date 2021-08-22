@@ -1,5 +1,4 @@
-Math.SQRT2
-==========
+# Math.SQRT2
 
 The `Math.SQRT2` property represents the square root of 2, approximately 1.414:
 
@@ -19,13 +18,11 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
 Because `SQRT2` is a static property of `Math`, you always use it as `Math.SQRT2`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Using Math.SQRT2
 
@@ -37,14 +34,12 @@ The following function returns the square root of 2:
 
     getRoot2(); // 1.4142135623730951
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt2">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.sqrt2</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -100,8 +95,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)

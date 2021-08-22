@@ -1,14 +1,12 @@
-Object.setPrototypeOf()
-=======================
+# Object.setPrototypeOf()
 
 The `Object.setPrototypeOf()` method sets the prototype (i.e., the internal `[[Prototype]]` property) of a specified object to another object or [`null`](../null).
 
-**Warning:** Changing the `[[Prototype]]` of an object is, by the nature of [how modern JavaScript engines optimize property accesses](https://mathiasbynens.be/notes/prototypes), currently a very slow operation in every browser and JavaScript engine. In addition, the effects of altering inheritance are subtle and far-flung, and are not limited to the time spent in the `Object.setPrototypeOf(...)` statement, but may extend to ***any*** code that has access to any object whose `[[Prototype]]` has been altered.
+**Warning:** Changing the `[[Prototype]]` of an object is, by the nature of [how modern JavaScript engines optimize property accesses](https://mathiasbynens.be/notes/prototypes), currently a very slow operation in every browser and JavaScript engine. In addition, the effects of altering inheritance are subtle and far-flung, and are not limited to the time spent in the `Object.setPrototypeOf(...)` statement, but may extend to **_any_** code that has access to any object whose `[[Prototype]]` has been altered.
 
 Because this feature is a part of the language, it is still the burden on engine developers to implement that feature performantly (ideally). Until engine developers address this issue, if you are concerned about performance, you should avoid setting the `[[Prototype]]` of an object. Instead, create a new object with the desired `[[Prototype]]` using [`Object.create()`](create).
 
-Syntax
-------
+## Syntax
 
     Object.setPrototypeOf(obj, prototype)
 
@@ -24,15 +22,13 @@ The object's new prototype (an object or [`null`](../null)).
 
 The specified object.
 
-Description
------------
+## Description
 
 Throws a [`TypeError`](../typeerror) exception if the object whose `[[Prototype]]` is to be modified is non-extensible according to [`Object.isExtensible()`](isextensible). Does nothing if the `prototype` parameter isn't an object or [`null`](../null) (i.e., number, string, boolean, or [`undefined`](../undefined)). Otherwise, this method changes the `[[Prototype]]` of `obj` to the new value.
 
 `Object.setPrototypeOf()` is in the ECMAScript 2015 specification. It is generally considered the proper way to set the prototype of an object, vs. the more controversial [`Object.prototype.__proto__`](proto) property.
 
-Appending Prototype Chains
---------------------------
+## Appending Prototype Chains
 
 A combination of `Object.getPrototypeOf()` and [`Object.prototype.__proto__`](proto) permits appending a whole prototype chain to a new prototype object:
 
@@ -134,15 +130,13 @@ A combination of `Object.getPrototypeOf()` and [`Object.prototype.__proto__`](pr
     console.log(george.identity); // 'George'
     george(); // 'Hello guys!!'
 
-Examples
---------
+## Examples
 
 ### Using Object.setPrototypeOf
 
     var dict = Object.setPrototypeOf({}, null);
 
-Polyfill
---------
+## Polyfill
 
 Using the older [`Object.prototype.__proto__`](proto) property, we can easily define `Object.setPrototypeOf` if it isn't available already:
 
@@ -167,14 +161,12 @@ Using the older [`Object.prototype.__proto__`](proto) property, we can easily de
          }
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.setprototypeof">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.setprototypeof</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -230,8 +222,7 @@ Samsung Internet
 
 2.0
 
-See also
---------
+## See also
 
 -   [`Reflect.setPrototypeOf()`](../reflect/setprototypeof)
 -   [`Object.prototype.isPrototypeOf()`](isprototypeof)

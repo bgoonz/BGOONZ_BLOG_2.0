@@ -1,5 +1,4 @@
-TypedArray.BYTES\_PER\_ELEMENT
-==============================
+# TypedArray.BYTES_PER_ELEMENT
 
 The `TypedArray.BYTES_PER_ELEMENT` property represents the size in bytes of each element in an typed array.
 
@@ -17,15 +16,13 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
 `TypedArray` objects differ from each other in the number of bytes per element and in the way the bytes are interpreted. The `BYTES_PER_ELEMENT` constant contains the number of bytes each element in the given `TypedArray` has.
 
-Examples
---------
+## Examples
 
-### Using BYTES\_PER\_ELEMENT
+### Using BYTES_PER_ELEMENT
 
     Int8Array.BYTES_PER_ELEMENT;         // 1
     Uint8Array.BYTES_PER_ELEMENT;        // 1
@@ -37,8 +34,7 @@ Examples
     Float32Array.BYTES_PER_ELEMENT;      // 4
     Float64Array.BYTES_PER_ELEMENT;      // 8
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray.bytes_per_element">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-typedarray.bytes_per_element</span></a></td></tr></tbody></table>
@@ -69,8 +65,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`TypedArray`](../typedarray)

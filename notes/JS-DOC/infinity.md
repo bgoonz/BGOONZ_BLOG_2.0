@@ -1,5 +1,4 @@
-Infinity
-========
+# Infinity
 
 The global property `Infinity` is a numeric value representing infinity.
 
@@ -17,10 +16,9 @@ Configurable
 
 no
 
-Description
------------
+## Description
 
-`Infinity` is a property of the *global object*. In other words, it is a variable in global scope.
+`Infinity` is a property of the _global object_. In other words, it is a variable in global scope.
 
 The initial value of `Infinity` is [`Number.POSITIVE_INFINITY`](number/positive_infinity). The value `Infinity` (positive infinity) is greater than any other number.
 
@@ -28,8 +26,7 @@ This value behaves slightly differently than mathematical infinity; see [`Number
 
 As defined by the ECMAScript 5 specification, `Infinity` is read-only (implemented in JavaScript 1.8.5 / Firefox 4).
 
-Examples
---------
+## Examples
 
 ### Using Infinity
 
@@ -40,8 +37,7 @@ Examples
     console.log(1 / Infinity      ); /* 0 */
     console.log(1 / 0             ); /* Infinity */
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-infinity">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-value-properties-of-the-global-object-infinity</span></a></td></tr></tbody></table>
@@ -72,8 +68,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Number.NEGATIVE_INFINITY`](number/negative_infinity)
 -   [`Number.POSITIVE_INFINITY`](number/positive_infinity)

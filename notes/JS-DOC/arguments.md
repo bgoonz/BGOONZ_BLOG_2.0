@@ -1,10 +1,8 @@
-The arguments object
-====================
+# The arguments object
 
 <span class="summary">`arguments` is an `Array`-like object accessible inside [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) that contains the values of the arguments passed to that function.</span>
 
-Description
------------
+## Description
 
 **Note:** If you're writing ES6 compatible code, then [rest parameters](rest_parameters) should be preferred.
 
@@ -54,14 +52,13 @@ You can use [`arguments.length`](arguments/length) to count how many arguments t
 
 The [`typeof`](../operators/typeof) operator returns `'object'` when used with `arguments`
 
-    console.log(typeof arguments); // 'object' 
+    console.log(typeof arguments); // 'object'
 
 The type of individual arguments can be determined by indexing `arguments`:
 
     console.log(typeof arguments[0]); // returns the type of the first argument
 
-Properties
-----------
+## Properties
 
 [`arguments.callee`](arguments/callee)  
 Reference to the currently executing function that the arguments belong to. Forbidden in strict mode.
@@ -72,8 +69,7 @@ The number of arguments that were passed to the function.
 [`arguments[@@iterator]`](arguments/@@iterator)  
 Returns a new [Array iterator](../global_objects/array/@@iterator) object that contains the values for each index in `arguments`.
 
-Examples
---------
+## Examples
 
 ### Defining a function that concatenates several strings
 
@@ -170,8 +166,7 @@ And also:
     }
     func(); // undefined
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
@@ -280,8 +275,7 @@ No
 
 6.0
 
-See also
---------
+## See also
 
 -   [`Function`](../global_objects/function)
 -   [Rest parameters](rest_parameters)

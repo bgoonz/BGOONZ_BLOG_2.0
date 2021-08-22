@@ -1,10 +1,8 @@
-if...else
-=========
+# if...else
 
 The `if` statement executes a statement if a specified condition is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy). If the condition is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy), another statement can be executed.
 
-Syntax
-------
+## Syntax
 
     if (condition) {
        statement1
@@ -21,8 +19,7 @@ Statement that is executed if condition is [truthy](https://developer.mozilla.or
 `statement2`  
 Statement that is executed if `condition` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and the `else` clause exists. Can be any statement, including block statements and further nested `if` statements.
 
-Description
------------
+## Description
 
 Multiple `if...else` statements can be nested to create an `else if` clause. Note that there is no `elseif` (in one word) keyword in JavaScript.
 
@@ -60,8 +57,7 @@ Do not confuse the primitive Boolean values `true` and `false` with truthiness o
     var b = new Boolean(false);
     if (b) // this condition is truthy
 
-Examples
---------
+## Examples
 
 ### Using if...else
 
@@ -98,8 +94,7 @@ If you need to use an assignment in a conditional expression, a common practice 
       /* do something */
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-if-statement">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-if-statement</span></a></td></tr></tbody></table>
@@ -130,8 +125,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`block`](block)
 -   [`switch`](switch)

@@ -1,28 +1,23 @@
-TypeError: More arguments needed
-================================
+# TypeError: More arguments needed
 
 The JavaScript exception "more arguments needed" occurs when there is an error with how a function is called. More arguments need to be provided.
 
-Message
--------
+## Message
 
     TypeError: argument is not an Object and is not null (Edge)
     TypeError: Object.create requires at least 1 argument, but only 0 were passed
     TypeError: Object.setPrototypeOf requires at least 2 arguments, but only 0 were passed
     TypeError: Object.defineProperties requires at least 1 argument, but only 0 were passed
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror).
 
-What went wrong?
-----------------
+## What went wrong?
 
 There is an error with how a function is called. More arguments need to be provided.
 
-Examples
---------
+## Examples
 
 ### Required arguments not provided
 
@@ -40,8 +35,7 @@ You can fix this by setting [`null`](../global_objects/null) as the prototype, f
 
     var obj = Object.setPrototypeOf({}, null);
 
-See also
---------
+## See also
 
 -   [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 

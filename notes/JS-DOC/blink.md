@@ -1,5 +1,4 @@
-String.prototype.blink()
-========================
+# String.prototype.blink()
 
 **Deprecated**
 
@@ -9,8 +8,7 @@ The `blink()` method creates a [`<blink>`](https://developer.mozilla.org/en-US/d
 
 **Warning:** Blinking text is frowned upon by several accessibility standards. The `<blink>` element itself is non-standard and deprecated!
 
-Syntax
-------
+## Syntax
 
     blink()
 
@@ -18,13 +16,11 @@ Syntax
 
 A string containing a [`<blink>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink) HTML element.
 
-Description
------------
+## Description
 
 The `blink()` method embeds a string in a `<blink>` element: "`<blink>str</blink>`".
 
-Examples
---------
+## Examples
 
 ### Using blink()
 
@@ -37,8 +33,7 @@ The following example uses string methods to change the formatting of a string:
     console.log(worldString.italics()); // <i>Hello, world</i>
     console.log(worldString.strike());  // <strike>Hello, world</strike>
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.blink">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.blink</span></a></td></tr></tbody></table>
@@ -69,8 +64,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.bold()`](bold)
 -   [`String.prototype.italics()`](italics)

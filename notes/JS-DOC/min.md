@@ -1,10 +1,8 @@
-Math.min()
-==========
+# Math.min()
 
 The static function `Math.min()` returns the lowest-valued number passed into it, or [`NaN`](../nan) if any parameter isn't a number and can't be converted into one.
 
-Syntax
-------
+## Syntax
 
     Math.min()
     Math.min(value0)
@@ -20,8 +18,7 @@ Zero or more numbers among which the lowest value will be selected and returned.
 
 The smallest of the given numbers. If any one or more of the parameters cannot be converted into a number, [`NaN`](../nan) is returned. The result is [`Infinity`](../infinity) if no parameters are provided.
 
-Description
------------
+## Description
 
 Because `min()` is a static method of `Math`, you always use it as `Math.min()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
@@ -29,8 +26,7 @@ If no arguments are given, the result is [`Infinity`](../infinity).
 
 If at least one of arguments cannot be converted to a number, the result is [`NaN`](../nan).
 
-Examples
---------
+## Examples
 
 ### Using Math.min()
 
@@ -55,8 +51,7 @@ may be written as this
 
 [`Math.max()`](max) can be used in a similar way to clip a value at the other end.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.min">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.min</span></a></td></tr></tbody></table>
@@ -87,8 +82,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.max()`](max)
 

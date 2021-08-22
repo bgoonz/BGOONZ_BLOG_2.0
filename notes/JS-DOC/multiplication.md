@@ -1,15 +1,12 @@
-Multiplication (\*)
-===================
+# Multiplication (\*)
 
 The multiplication operator (`*`) produces the product of the operands.
 
-Syntax
-------
+## Syntax
 
     Operator: x * y
 
-Examples
---------
+## Examples
 
 ### Multiplication using numbers
 
@@ -25,8 +22,7 @@ Examples
 
     'foo' * 2 // NaN
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-multiplicative-operators</span></a></td></tr></tbody></table>
@@ -57,8 +53,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)

@@ -1,24 +1,21 @@
-Intl.DateTimeFormat.prototype.formatToParts()
-=============================================
+# Intl.DateTimeFormat.prototype.formatToParts()
 
 The `Intl.DateTimeFormat.prototype.formatToParts()` method allows locale-aware formatting of strings produced by [`Intl.DateTimeFormat`](../datetimeformat) formatters.
 
-Syntax
-------
+## Syntax
 
     formatToParts(date)
 
 ### Parameters
 
- `date` <span class="badge inline optional">Optional</span>   
+`date` <span class="badge inline optional">Optional</span>  
 The date to format.
 
 ### Return value
 
 An [`Array`](../../array) of objects containing the formatted date in parts.
 
-Description
------------
+## Description
 
 The `formatToParts()` method is useful for custom formatting of date strings. It returns an [`Array`](../../array) of objects containing the locale-specific tokens from which it possible to build custom strings while preserving the locale-specific parts. The structure the `formatToParts()` method returns, looks like this:
 
@@ -71,13 +68,11 @@ The string used for the year, for example "`2012`" or "`96`".
 yearName  
 The string used for the yearName in relevant contexts, for example "`geng-zi`"
 
-Polyfill
---------
+## Polyfill
 
 A polyfill for this feature is available in the [proposal repository](https://github.com/zbraniecki/proposal-intl-formatToParts).
 
-Examples
---------
+## Examples
 
 `DateTimeFormat` outputs localized, opaque strings that cannot be manipulated directly:
 
@@ -202,8 +197,7 @@ And `formatToParts`:
       { type: 'relatedYear', value: '2012' }
     ]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-Intl.DateTimeFormat.prototype.formatToParts</span></a></td></tr></tbody></table>
@@ -246,8 +240,7 @@ Before version 50, `formatToParts()` returned an object with an incorrectly case
 
 Before version 71, `formatToParts()` returned an object with an incorrectly cased type key of `dayperiod`. Version 71 and later use the specification defined `dayPeriod`. See [Chromium bug 865351](https://crbug.com/865351).
 
-See also
---------
+## See also
 
 -   [`Intl.DateTimeFormat`](../datetimeformat)
 -   [`Intl.DateTimeFormat.prototype.format()`](format)

@@ -1,10 +1,8 @@
-Promise.any()
-=============
+# Promise.any()
 
 `Promise.any()` takes an iterable of [`Promise`](../promise) objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise. If no promises in the iterable fulfill (if all of the given promises are rejected), then the returned promise is rejected with an [`AggregateError`](../aggregateerror), a new subclass of [`Error`](../error) that groups together individual errors. Essentially, this method is the opposite of [`Promise.all()`](all).
 
-Syntax
-------
+## Syntax
 
     Promise.any(iterable);
 
@@ -19,18 +17,17 @@ An [iterable](../../iteration_protocols#the_iterable_protocol) object, such as a
 -   An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises.
 -   A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when any of the promises in the given iterable resolve, or if all the promises have rejected.
 
-Description
------------
+## Description
 
-This method is useful for returning the first promise that fulfills. It short-circuits after a promise fulfills, so it does not wait for the other promises to complete once it finds one. Unlike [`Promise.all()`](all), which returns an *array* of fulfillment values, we only get one fulfillment value (assuming at least one promise fulfills). This can be beneficial if we need only one promise to fulfill but we do not care which one does. Note another difference: This method rejects upon receiving an *empty iterable*, since, truthfully, the iterable contains no items that fulfill.
+This method is useful for returning the first promise that fulfills. It short-circuits after a promise fulfills, so it does not wait for the other promises to complete once it finds one. Unlike [`Promise.all()`](all), which returns an _array_ of fulfillment values, we only get one fulfillment value (assuming at least one promise fulfills). This can be beneficial if we need only one promise to fulfill but we do not care which one does. Note another difference: This method rejects upon receiving an _empty iterable_, since, truthfully, the iterable contains no items that fulfill.
 
-Also, unlike [`Promise.race()`](race), which returns the first *settled* value (either fulfillment or rejection), this method returns the first *fulfilled* value. This method will ignore all rejected promises up until the first promise that fulfils.
+Also, unlike [`Promise.race()`](race), which returns the first _settled_ value (either fulfillment or rejection), this method returns the first _fulfilled_ value. This method will ignore all rejected promises up until the first promise that fulfils.
 
 ### Fulfillment
 
 The returned promise is fulfilled with **the first** resolved value (or non-promise value) in the iterable passed as the argument, whether or not the other promises have rejected.
 
--   If a nonempty *iterable* is passed, and **any** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
+-   If a nonempty _iterable_ is passed, and **any** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
 
 ### Rejection
 
@@ -38,8 +35,7 @@ If all of the passed-in promises reject, `Promise.any` asynchronously rejects wi
 
 -   If an empty iterable is passed, then the promise returned by this method is rejected synchronously. The rejected reason is an `AggregateError` object whose `errors` property is an empty array.
 
-Examples
---------
+## Examples
 
 ### First to fulfil
 
@@ -103,8 +99,7 @@ In this example, we have a function that fetches an image and returns a blob. We
       console.log(e.message);
     });
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-promise.any</span></a></td></tr></tbody></table>
@@ -135,8 +130,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`Promise`](../promise)
 -   [`Promise.allSettled()`](allsettled)

@@ -1,10 +1,8 @@
-Promise.reject()
-================
+# Promise.reject()
 
 The `Promise.reject()` method returns a `Promise` object that is rejected with a given reason.
 
-Syntax
-------
+## Syntax
 
     Promise.reject(reason);
 
@@ -17,13 +15,11 @@ Reason why this `Promise` rejected.
 
 A [`Promise`](../promise) that is rejected with the given reason.
 
-Description
------------
+## Description
 
 The static `Promise.reject` function returns a `Promise` that is rejected. For debugging purposes and selective error catching, it is useful to make `reason` an `instanceof` [`Error`](../error).
 
-Examples
---------
+## Examples
 
 ### Using the static Promise.reject() method
 
@@ -33,14 +29,12 @@ Examples
       console.error(error); // Stacktrace
     });
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-promise.reject</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -96,8 +90,7 @@ No
 
 2.0
 
-See also
---------
+## See also
 
 -   [`Promise`](../promise)
 

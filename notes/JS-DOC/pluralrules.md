@@ -1,10 +1,8 @@
-Intl.PluralRules() constructor
-==============================
+# Intl.PluralRules() constructor
 
 The `Intl.PluralRules()` constructor creates [`Intl.PluralRules`](../pluralrules) objects.
 
-Syntax
-------
+## Syntax
 
     new Intl.PluralRules()
     new Intl.PluralRules(locales)
@@ -12,10 +10,10 @@ Syntax
 
 ### Parameters
 
- `locales` <span class="badge inline optional">Optional</span>   
+`locales` <span class="badge inline optional">Optional</span>  
 A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page.
 
- `options` <span class="badge inline optional">Optional</span>   
+`options` <span class="badge inline optional">Optional</span>  
 An object with some or all of the following properties:
 
 `localeMatcher`  
@@ -44,8 +42,7 @@ The minimum number of significant digits to use. Possible values are from 1 to 2
 `maximumSignificantDigits`  
 The maximum number of significant digits to use. Possible values are from 1 to 21; the default is 21.
 
-Examples
---------
+## Examples
 
 ### Basic usage
 
@@ -81,14 +78,12 @@ The results can be customized using the `options` argument, which has one proper
     pr.select(42);
     // → 'two'
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-pluralrules-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sec-intl-pluralrules-constructor</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -144,8 +139,7 @@ No
 
 8.0
 
-See also
---------
+## See also
 
 -   [`Intl.PluralRules`](../pluralrules)
 -   [`Intl`](../../intl)

@@ -1,22 +1,18 @@
-SyntaxError: applying the 'delete' operator to an unqualified name is deprecated
-================================================================================
+# SyntaxError: applying the 'delete' operator to an unqualified name is deprecated
 
 The JavaScript [strict mode](../strict_mode)-only exception "applying the 'delete' operator to an unqualified name is deprecated" occurs when variables are attempted to be deleted using the `delete` operator.
 
-Message
--------
+## Message
 
     SyntaxError: Calling delete on expression not allowed in strict mode (Edge)
     SyntaxError: applying the 'delete' operator to an unqualified name is deprecated (Firefox)
     SyntaxError: Delete of an unqualified identifier in strict mode. (Chrome)
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror) in [strict mode](../strict_mode) only.
 
-What went wrong?
-----------------
+## What went wrong?
 
 Normal variables in JavaScript can't be deleted using the `delete` operator. In strict mode, an attempt to delete a variable will throw an error and is not allowed.
 
@@ -26,8 +22,7 @@ Unlike what common belief suggests, the `delete` operator has **nothing** to do 
 
 This error only happens in [strict mode code](../strict_mode). In non-strict code, the operation just returns `false`.
 
-Examples
---------
+## Examples
 
 ### Freeing the contents of a variable
 
@@ -56,8 +51,7 @@ To free the contents of a variable, you can set it to [`null`](../global_objects
 
     // x can be garbage collected
 
-See also
---------
+## See also
 
 -   `delete`
 -   [Memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)

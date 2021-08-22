@@ -1,10 +1,8 @@
-Math.abs()
-==========
+# Math.abs()
 
 The `Math.abs()` function returns the absolute value of a number. That is, it returns `x` if `x` is positive or zero, and the negation of `x` if `x` is negative.
 
-Syntax
-------
+## Syntax
 
     Math.abs(x)
 
@@ -17,13 +15,11 @@ A number.
 
 The absolute value of the given number.
 
-Description
------------
+## Description
 
 Because `abs()` is a static method of `Math`, you always use it as `Math.abs()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Examples
---------
+## Examples
 
 ### Behavior of Math.abs()
 
@@ -40,8 +36,7 @@ Passing an empty object, an array with more than one member, a non-numeric strin
     Math.abs('string'); // NaN
     Math.abs();         // NaN
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.abs">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Math.abs' in that specification.</span></a></td></tr></tbody></table>
@@ -72,8 +67,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Math.ceil()`](ceil)
 -   [`Math.floor()`](floor)

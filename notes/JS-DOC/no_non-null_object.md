@@ -1,28 +1,23 @@
-TypeError: "x" is not a non-null object
-=======================================
+# TypeError: "x" is not a non-null object
 
 The JavaScript exception "is not a non-null object" occurs when an object is expected somewhere and wasn't provided. [`null`](../global_objects/null) is not an object and won't work.
 
-Message
--------
+## Message
 
     TypeError: Invalid descriptor for property {x} (Edge)
     TypeError: "x" is not a non-null object (Firefox)
     TypeError: Property description must be an object: "x" (Chrome)
     TypeError: Invalid value used in weak set (Chrome)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 An object is expected somewhere and wasn't provided. [`null`](../global_objects/null) is not an object and won't work. You must provide a proper object in the given situation.
 
-Examples
---------
+## Examples
 
 ### Property descriptor expected
 
@@ -51,8 +46,7 @@ Use objects instead:
     ws.add({foo: 'bar'});
     ws.add(window);
 
-See also
---------
+## See also
 
 -   [`Object.create()`](../global_objects/object/create)
 -   [`Object.defineProperty()`](../global_objects/object/defineproperty), [`Object.defineProperties()`](../global_objects/object/defineproperties)

@@ -1,12 +1,10 @@
-Math.sinh()
-===========
+# Math.sinh()
 
 The `Math.sinh()` function returns the hyperbolic sine of a number, that can be expressed using the [constant e](e):
 
 $$\\mathtt{\\operatorname{Math.sinh(x)}} = \\frac{e^{x} - e^{- x}}{2}$$
 
-Syntax
-------
+## Syntax
 
     Math.sinh(x)
 
@@ -19,13 +17,11 @@ A number.
 
 The hyperbolic sine of the given number.
 
-Description
------------
+## Description
 
 Because `sinh()` is a static method of `Math`, you always use it as `Math.sinh()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-Polyfill
---------
+## Polyfill
 
 This can be emulated with the help of the [`Math.exp()`](exp) function:
 
@@ -40,22 +36,19 @@ or using only one call to the [`Math.exp()`](exp) function:
       return (y - 1 / y) / 2;
     }
 
-Examples
---------
+## Examples
 
 ### Using Math.sinh()
 
     Math.sinh(0); // 0
     Math.sinh(1); // 1.1752011936438014
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sinh">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-math.sinh</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -111,8 +104,7 @@ No
 
 3.0
 
-See also
---------
+## See also
 
 -   [`Math.acosh()`](acosh)
 -   [`Math.asinh()`](asinh)

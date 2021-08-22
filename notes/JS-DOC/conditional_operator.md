@@ -1,10 +1,8 @@
-Conditional (ternary) operator
-==============================
+# Conditional (ternary) operator
 
 The **conditional (ternary) operator** is the only JavaScript operator that takes three operands: a condition followed by a question mark (`?`), then an expression to execute if the condition is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) followed by a colon (`:`), and finally the expression to execute if the condition is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy). This operator is frequently used as a shortcut for the [`if`](../statements/if...else) statement.
 
-Syntax
-------
+## Syntax
 
     condition ? exprIfTrue : exprIfFalse
 
@@ -19,13 +17,11 @@ An expression which is evaluated if the `condition` evaluates to a [truthy](http
 `exprIfFalse`  
 An expression which is executed if the `condition` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) (that is, has a value which can be converted to `false`).
 
-Description
------------
+## Description
 
 Besides `false`, possible falsy expressions are: `null`, `NaN`, `0`, the empty string (`""`), and `undefined`. If `condition` is any of these, the result of the conditional expression will be the result of executing the expression `exprIfFalse`.
 
-Examples
---------
+## Examples
 
 ### A simple example
 
@@ -65,8 +61,7 @@ The ternary operator is right-associative, which means it can be "chained" in th
         else { return value4; }
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-conditional-operator">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-conditional-operator</span></a></td></tr></tbody></table>
@@ -97,8 +92,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [if statement](../statements/if...else)
 -   [Nullish coalescing operator](nullish_coalescing_operator)

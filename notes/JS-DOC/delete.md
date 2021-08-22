@@ -1,12 +1,10 @@
-delete operator
-===============
+# delete operator
 
 The JavaScript `delete` removes a property from an object; if no more references to the same property are held, it is eventually released automatically.
 
-Syntax
-------
+## Syntax
 
-    delete expression 
+    delete expression
 
 Where `expression` should evaluate to a [property](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript) reference, e.g.:
 
@@ -29,8 +27,7 @@ The property to delete.
 
 Throws [`TypeError`](../global_objects/typeerror) in [`strict mode`](../strict_mode) if the property is an own non-configurable property.
 
-Description
------------
+## Description
 
 Unlike what common belief suggests (perhaps due to other programming languages like [delete in C++](https://docs.microsoft.com/en-us/cpp/cpp/delete-operator-cpp?view=vs-2019)), the `delete` operator has **nothing** to do with directly freeing memory. Memory management is done indirectly via breaking references. See the [memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management) page for more details.
 
@@ -112,12 +109,11 @@ When in strict mode, if `delete` is used on a direct reference to a variable, a 
 
 ### Cross-browser notes
 
-Although ECMAScript makes iteration order of objects implementation-dependent, it may appear that all major browsers support an iteration order based on the earliest added property coming first (at least for properties not on the prototype). However, in the case of Internet Explorer, when one uses `delete` on a property, some confusing behavior results, preventing other browsers from using simple objects like object literals as ordered associative arrays. In Explorer, while the property *value* is indeed set to `undefined`, if one later adds back a property with the same name, the property will be iterated in its *old* position--not at the end of the iteration sequence as one might expect after having deleted the property and then added it back.
+Although ECMAScript makes iteration order of objects implementation-dependent, it may appear that all major browsers support an iteration order based on the earliest added property coming first (at least for properties not on the prototype). However, in the case of Internet Explorer, when one uses `delete` on a property, some confusing behavior results, preventing other browsers from using simple objects like object literals as ordered associative arrays. In Explorer, while the property _value_ is indeed set to `undefined`, if one later adds back a property with the same name, the property will be iterated in its _old_ position--not at the end of the iteration sequence as one might expect after having deleted the property and then added it back.
 
 If you want to use an ordered associative array in a cross-browser environment, use a [`Map`](../global_objects/map) object if available, or simulate this structure with two separate arrays (one for the keys and the other for the values), or build an array of single-property objects, etc.
 
-Examples
---------
+## Examples
 
     // Creates the property adminName on the global scope.
     adminName = 'xyz';
@@ -219,8 +215,7 @@ If instead, you want to remove an array element by changing the contents of the 
     trees.splice(3,1);
     console.log(trees); // ["redwood", "bay", "cedar", "maple"]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-delete-operator">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-delete-operator</span></a></td></tr></tbody></table>
@@ -251,8 +246,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [In depth analysis on delete](http://perfectionkills.com/understanding-delete/)
 -   [`Reflect.deleteProperty()`](../global_objects/reflect/deleteproperty)

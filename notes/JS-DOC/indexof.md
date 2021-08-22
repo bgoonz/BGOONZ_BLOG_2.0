@@ -1,10 +1,8 @@
-Array.prototype.indexOf()
-=========================
+# Array.prototype.indexOf()
 
 The `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
-Syntax
-------
+## Syntax
 
     indexOf(searchElement)
     indexOf(searchElement, fromIndex)
@@ -14,22 +12,20 @@ Syntax
 `searchElement`  
 Element to locate in the array.
 
- `fromIndex` <span class="badge inline optional">Optional</span>   
+`fromIndex` <span class="badge inline optional">Optional</span>  
 The index to start the search at. If the index is greater than or equal to the array's length, -1 is returned, which means the array will not be searched. If the provided index value is a negative number, it is taken as the offset from the end of the array. Note: if the provided index is negative, the array is still searched from front to back. If the provided index is 0, then the whole array will be searched. Default: 0 (entire array is searched).
 
 ### Return value
 
 The first index of the element in the array; **-1** if not found.
 
-Description
------------
+## Description
 
 `indexOf()` compares `searchElement` to elements of the Array using [strict equality](../../operators/strict_equality) (the same method used by the `===` or triple-equals operator).
 
 **Note:** For the String method, see [`String.prototype.indexOf()`](../string/indexof).
 
-Examples
---------
+## Examples
 
 ### Using indexOf()
 
@@ -73,8 +69,7 @@ The following example uses `indexOf()` to locate values in an array.
     updateVegetablesCollection(veggies, 'spinach');
     // spinach already exists in the veggies collection.
 
-Polyfill
---------
+## Polyfill
 
 `indexOf()` was added to the ECMA-262 standard in the 5th edition; as such it may not be present in all browsers. You can work around this by utilizing the following code at the beginning of your scripts. This will allow you to use `indexOf()` when there is still no native support. This algorithm matches the one specified in ECMA-262, 5th edition, assuming [`TypeError`](../typeerror) and [`Math.abs()`](../math/abs) have their original values.
 
@@ -165,8 +160,7 @@ However, if you are more interested in all the little technical bits defined by 
       };
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.indexof">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.indexof</span></a></td></tr></tbody></table>
@@ -197,8 +191,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.lastIndexOf()`](lastindexof)
 -   [`TypedArray.prototype.indexOf()`](../typedarray/indexof)

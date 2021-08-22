@@ -1,5 +1,4 @@
-Function.caller
-===============
+# Function.caller
 
 **Deprecated**
 
@@ -7,8 +6,7 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `function.caller` property returns the function that invoked the specified function. It returns `null` for strict, async function and generator function callers.
 
-Description
------------
+## Description
 
 If the function `f` was invoked by the top level code, the value of `f.caller` is [`null`](../null), otherwise it's the function that called `f`. It's also `null` for strict, async function and generator function callers.
 
@@ -43,8 +41,7 @@ so if you tried to get the stack trace in the `stop()` function like this:
 
 the loop would never stop.
 
-Examples
---------
+## Examples
 
 ### Checking the value of a function's `caller` property
 
@@ -58,8 +55,7 @@ The following code checks the value a function's `caller` property.
       }
     }
 
-Specifications
---------------
+## Specifications
 
 <span class="pl-s">Not part of any standard.</span>
 
@@ -89,8 +85,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Function.name`](name)
 -   [`arguments`](../../functions/arguments)

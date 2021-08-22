@@ -1,10 +1,8 @@
-Date.prototype.toLocaleTimeString()
-===================================
+# Date.prototype.toLocaleTimeString()
 
 The `toLocaleTimeString()` method returns a string with a language sensitive representation of the time portion of this date. The new `locales` and `options` arguments let applications specify the language whose formatting conventions should be used and customize the behavior of the function. In older implementations, which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation dependent.
 
-Syntax
-------
+## Syntax
 
     toLocaleTimeString()
     toLocaleTimeString(locales)
@@ -22,13 +20,11 @@ The default value for each date-time component property is [`undefined`](../unde
 
 A string representing the time portion of the given [`Date`](../date) instance according to language-specific conventions.
 
-Performance
------------
+## Performance
 
 When formatting large numbers of dates, it is better to create an [`Intl.DateTimeFormat`](../intl/datetimeformat) object and use the function provided by its [`format`](../intl/datetimeformat/format) property.
 
-Examples
---------
+## Examples
 
 ### Using toLocaleTimeString()
 
@@ -103,15 +99,13 @@ The results provided by `toLocaleTimeString()` can be customized using the `opti
     console.log(date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     // → "20:01"
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tolocaletimestring">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.tolocaletimestring</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-date.prototype.tolocaletimestring">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sup-date.prototype.tolocaletimestring</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -245,8 +239,7 @@ No
 
 1.5
 
-See also
---------
+## See also
 
 -   [`Intl.DateTimeFormat`](../intl/datetimeformat)
 -   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)

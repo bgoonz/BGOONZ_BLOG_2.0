@@ -1,5 +1,4 @@
-String.prototype.fontcolor()
-============================
+# String.prototype.fontcolor()
 
 **Deprecated**
 
@@ -9,8 +8,7 @@ The `fontcolor()` method creates a [`<font>`](https://developer.mozilla.org/en-U
 
 **Note:** The &lt;font&gt; element has been removed in [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) and shouldn't be used anymore. Instead web developers should use [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) properties.
 
-Syntax
-------
+## Syntax
 
     fontcolor(color)
 
@@ -23,13 +21,11 @@ A string expressing the color as a hexadecimal RGB triplet or as a string litera
 
 A string containing a [`<font>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font) HTML element.
 
-Description
------------
+## Description
 
 If you express color as a hexadecimal RGB triplet, you must use the format `rrggbb`. For example, the hexadecimal RGB values for salmon are red=FA, green=80, and blue=72, so the RGB triplet for salmon is "`FA8072`".
 
-Examples
---------
+## Examples
 
 ### Using fontcolor()
 
@@ -47,8 +43,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
     document.getElementById('yourElemId').style.color = 'red';
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fontcolor">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.fontcolor</span></a></td></tr></tbody></table>
@@ -79,8 +74,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.fontsize()`](fontsize)
 

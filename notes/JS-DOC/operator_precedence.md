@@ -1,10 +1,8 @@
-Operator precedence
-===================
+# Operator precedence
 
 **Operator precedence** determines how operators are parsed concerning each other. Operators with higher precedence become the operands of operators with lower precedence.
 
-Precedence And Associativity
-----------------------------
+## Precedence And Associativity
 
 Consider an expression describable by the representation below. Note that both OP<sub>1</sub> and OP<sub>2</sub> are fill-in-the-blanks for OPerators.
 
@@ -83,8 +81,7 @@ Short-circuiting is jargon for conditional evaluation. For example, in the expre
     a ?? (b || c); // evaluate `a` first, then produce `a` if `a` is not `null` and not `undefined`
     a?.b.c;        // evaluate `a` first, then produce `undefined` if `a` is `null` or `undefined`
 
-Examples
---------
+## Examples
 
     3 > 2 && 2 > 1
     // returns true
@@ -94,8 +91,7 @@ Examples
     // in inequality operators, therefore true > 1 becomes 1 > 1, which
     //  is false. Adding parentheses makes things clear: (3 > 2) > 1.
 
-Table
------
+## Table
 
 The following table lists operators in order from highest precedence (21) to lowest precedence (1).
 

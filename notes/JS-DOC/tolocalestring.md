@@ -1,5 +1,4 @@
-Date.prototype.toLocaleString()
-===============================
+# Date.prototype.toLocaleString()
 
 The `toLocaleString()` method returns a string with a language sensitive representation of this date.
 
@@ -7,8 +6,7 @@ The new `locales` and `options` arguments let applications specify the language 
 
 In older implementations, which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation-dependent.
 
-Syntax
-------
+## Syntax
 
     toLocaleString()
     toLocaleString(locales)
@@ -26,8 +24,7 @@ The default value for each date-time component property is [`undefined`](../unde
 
 A string representing the given date according to language-specific conventions.
 
-Examples
---------
+## Examples
 
 ### Using toLocaleString()
 
@@ -125,15 +122,13 @@ For this reason, you cannot expect to be able to compare the results of `toLocal
 
 **Note:** See also this [StackOverflow thread](https://stackoverflow.com/questions/25574963/ies-tolocalestring-has-strange-characters-in-results) for more details and examples.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tolocalestring">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.tolocalestring</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-date.prototype.tolocalestring">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
 <span class="small">#sup-date.prototype.tolocalestring</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -267,8 +262,7 @@ No
 
 1.5
 
-See also
---------
+## See also
 
 -   [`Intl.DateTimeFormat`](../intl/datetimeformat)
 -   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)

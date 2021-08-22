@@ -1,10 +1,8 @@
-Array.prototype.flatMap()
-=========================
+# Array.prototype.flatMap()
 
 The `flatMap()` method returns a new array formed by applying a given callback function to each element of the array, and then flattening the result by one level. It is identical to a [`map()`](map) followed by a [`flat()`](flat) of depth 1, but slightly more efficient than calling those two methods separately.
 
-Syntax
-------
+## Syntax
 
     // Arrow function
     flatMap((currentValue) => { ... } )
@@ -29,21 +27,20 @@ Function that produces an element of the new Array, taking three arguments:
 `currentValue`  
 The current element being processed in the array.
 
- `index`<span class="badge inline optional">Optional</span>   
+`index`<span class="badge inline optional">Optional</span>  
 The index of the current element being processed in the array.
 
- `array`<span class="badge inline optional">Optional</span>   
+`array`<span class="badge inline optional">Optional</span>  
 The array `map` was called upon.
 
- `thisArg`<span class="badge inline optional">Optional</span>   
+`thisArg`<span class="badge inline optional">Optional</span>  
 Value to use as `this` when executing `callback`.
 
 ### Return value
 
 A new array with each element being the result of the callback function and flattened to a depth of 1.
 
-Description
------------
+## Description
 
 See [`Array.prototype.map()`](map) for a detailed description of the callback function. The `flatMap` method is identical to a `map` followed by a call to `flat` of depth 1.
 
@@ -60,8 +57,7 @@ See [`Array.prototype.map()`](map) for a detailed description of the callback fu
 
 Note, however, that this is inefficient and should be avoided for large arrays: in each iteration, it creates a new temporary array that must be garbage-collected, and it copies elements from the current accumulator array into a new array instead of just adding the new elements to the existing array.
 
-Examples
---------
+## Examples
 
 ### `map()` and `flatMap()`
 
@@ -93,7 +89,7 @@ Notice, the output list length can be different from the input list length.
 
 ### For adding and removing items during a `map()`
 
-`flatMap` can be used as a way to add and remove items (modify the number of items) during a `map`. In other words, it allows you to map *many items to many items* (by handling each input item separately), rather than always *one-to-one*. In this sense, it works like the opposite of [filter](filter). Return a 1-element array to keep the item, a multiple-element array to add items, or a 0-element array to remove the item.
+`flatMap` can be used as a way to add and remove items (modify the number of items) during a `map`. In other words, it allows you to map _many items to many items_ (by handling each input item separately), rather than always _one-to-one_. In this sense, it works like the opposite of [filter](filter). Return a 1-element array to keep the item, a multiple-element array to add items, or a 0-element array to remove the item.
 
     // Let's say we want to remove all the negative numbers
     // and split the odd numbers into an even number and a 1
@@ -109,8 +105,7 @@ Notice, the output list length can be different from the input list length.
 
     // expected output: [4, 1, 4, 20, 16, 1, 18]
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flatmap">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.flatmap</span></a></td></tr></tbody></table>
@@ -141,8 +136,7 @@ No
 
 10.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.flat()`](flat)
 -   [`Array.prototype.map()`](map)

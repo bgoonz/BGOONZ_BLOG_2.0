@@ -1,5 +1,4 @@
-static
-======
+# static
 
 The `static` keyword defines a static method or property for a class. Neither static methods nor static properties can be called on instances of the class. Instead, they're called on the class itself.
 
@@ -7,14 +6,12 @@ Static methods are often utility functions, such as functions to create or clone
 
 Note that the examples throughout this article use [public class fields](public_class_fields) (including static public class fields), which are not yet part of the ECMAScript specification, but are instead specified in a [Public and private instance fields](https://tc39.es/proposal-class-fields/) proposal at [TC39](https://tc39.es/).
 
-Syntax
-------
+## Syntax
 
     static methodName() { ... }
     static propertyName [= value];
 
-Examples
---------
+## Examples
 
 ### Using static members in classes
 
@@ -93,14 +90,12 @@ Static members are not directly accessible using the [`this`](../operators/this)
       }
     }
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Class definitions' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -188,8 +183,7 @@ Strict mode is required.
 
 Strict mode is required.
 
-See also
---------
+## See also
 
 -   [`class` expression](../operators/class)
 -   [`class` declaration](../statements/class)

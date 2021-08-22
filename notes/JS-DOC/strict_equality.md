@@ -1,15 +1,12 @@
-Strict equality (===)
-=====================
+# Strict equality (===)
 
 The strict equality operator (`===`) checks whether its two operands are equal, returning a Boolean result. Unlike the [equality](equality) operator, the strict equality operator always considers operands of different types to be different.
 
-Syntax
-------
+## Syntax
 
     x === y
 
-Description
------------
+## Description
 
 The strict equality operators (`===` and `!==`) use the [Strict Equality Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6) to compare two operands.
 
@@ -24,8 +21,7 @@ The strict equality operators (`===` and `!==`) use the [Strict Equality Compari
 
 The most notable difference between this operator and the [equality](equality) (`==`) operator is that if the operands are of different types, the `==` operator attempts to convert them to the same type before comparing.
 
-Examples
---------
+## Examples
 
 ### Comparing operands of the same type
 
@@ -61,14 +57,12 @@ Examples
     console.log(object1 === object2);  // false
     console.log(object1 === object1);  // true
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -124,8 +118,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [Equality operator](equality)
 -   [Inequality operator](inequality)

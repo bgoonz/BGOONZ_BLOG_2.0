@@ -1,10 +1,8 @@
-JSON.stringify()
-================
+# JSON.stringify()
 
 The `JSON.stringify()` method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified.
 
-Syntax
-------
+## Syntax
 
     JSON.stringify(value)
     JSON.stringify(value, replacer)
@@ -15,10 +13,10 @@ Syntax
 `value`  
 The value to convert to a JSON string.
 
- `replacer` <span class="badge inline optional">Optional</span>   
+`replacer` <span class="badge inline optional">Optional</span>  
 A function that alters the behavior of the stringification process, or an array of [`String`](../string) and [`Number`](../number) that serve as an allowlist for selecting/filtering the properties of the value object to be included in the JSON string. If this value is [`null`](../null) or not provided, all properties of the object are included in the resulting JSON string.
 
- `space` <span class="badge inline optional">Optional</span>   
+`space` <span class="badge inline optional">Optional</span>  
 A [`String`](../string) or [`Number`](../number) object that's used to insert white space into the output JSON string for readability purposes.
 
 If this is a `Number`, it indicates the number of space characters to use as white space; this number is capped at 10 (if it is greater, the value is just `10`). Values less than 1 indicate that no space should be used.
@@ -34,8 +32,7 @@ A JSON string representing the given value, or undefined.
 -   Throws a [`TypeError`](../typeerror) ("cyclic object value") exception when a circular reference is found.
 -   Throws a [`TypeError`](../typeerror) ("BigInt value can't be serialized in JSON") when trying to stringify a [`BigInt`](../bigint) value.
 
-Description
------------
+## Description
 
 `JSON.stringify()` converts a value to JSON notation representing it:
 
@@ -47,8 +44,7 @@ Description
 -   The numbers [`Infinity`](../infinity) and [`NaN`](../nan), as well as the value [`null`](../null), are all considered `null`.
 -   All the other [`Object`](../object) instances (including [`Map`](../map), [`Set`](../set), [`WeakMap`](../weakmap), and [`WeakSet`](../weakset)) will have only their enumerable properties serialized.
 
-Examples
---------
+## Examples
 
 ### Using JSON.stringify
 
@@ -292,20 +288,18 @@ Engines implementing the [well-formed JSON.stringify specification](https://gith
 
     JSON.stringify("\uD800"); // '"�"'
 
-But with this change `JSON.stringify` represents lone surrogates using JSON escape sequences that *can* be encoded in valid UTF-8 or UTF-16:
+But with this change `JSON.stringify` represents lone surrogates using JSON escape sequences that _can_ be encoded in valid UTF-8 or UTF-16:
 
     JSON.stringify("\uD800"); // '"\\ud800"'
 
-This change should be backwards-compatible as long as you pass the result of `JSON.stringify` to APIs such as `JSON.parse` that will accept any valid JSON text, because they will treat Unicode escapes of lone surrogates as identical to the lone surrogates themselves. *Only* if you are directly interpreting the result of `JSON.stringify` do you need to carefully handle `JSON.stringify`'s two possible encodings of these code points.
+This change should be backwards-compatible as long as you pass the result of `JSON.stringify` to APIs such as `JSON.parse` that will accept any valid JSON text, because they will treat Unicode escapes of lone surrogates as identical to the lone surrogates themselves. _Only_ if you are directly interpreting the result of `JSON.stringify` do you need to carefully handle `JSON.stringify`'s two possible encodings of these code points.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-json.stringify">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-json.stringify</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -387,8 +381,7 @@ No
 
 No
 
-See also
---------
+## See also
 
 -   [`JSON.parse()`](parse)
 

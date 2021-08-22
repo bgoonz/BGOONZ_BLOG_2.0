@@ -1,10 +1,8 @@
-new operator
-============
+# new operator
 
 The `new` lets developers create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
 
-Syntax
-------
+## Syntax
 
     new constructor[([arguments])]
 
@@ -16,8 +14,7 @@ A class or function that specifies the type of the object instance.
 `arguments`  
 A list of values that the `constructor` will be called with.
 
-Description
------------
+## Description
 
 The `new` keyword does the following things:
 
@@ -74,8 +71,7 @@ You can add a shared property to a previously defined object type by using the `
 
 **Note:** While the constructor function can be invoked like any regular function (i.e. without the `new` operator), in this case a new Object is not created and the value of `this` is also different.
 
-Examples
---------
+## Examples
 
 ### Object type and object instance
 
@@ -130,8 +126,7 @@ Instead of passing a literal string or integer value when creating the new objec
 
     car2.owner.name
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-new-operator">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-new-operator</span></a></td></tr></tbody></table>
@@ -162,8 +157,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Function`](../global_objects/function)
 -   [`Reflect.construct()`](../global_objects/reflect/construct)

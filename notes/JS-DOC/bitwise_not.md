@@ -1,22 +1,19 @@
-Bitwise NOT (~)
-===============
+# Bitwise NOT (~)
 
 The bitwise NOT operator (`~`) inverts the bits of its operand.
 
-Syntax
-------
+## Syntax
 
     ~a
 
-Description
------------
+## Description
 
 The operands are converted to 32-bit integers and expressed by a series of bits (zeroes and ones). Numbers with more than 32 bits get their most significant bits discarded. For example, the following integer with more than 32 bits will be converted to a 32 bit integer:
 
     Before: 11100110111110100000000000000110000000000001
     After:              10100000000000000110000000000001
 
-Each bit in the first operand is paired with the corresponding bit in the second operand: *first bit* to *first bit*, *second bit* to *second bit*, and so on.
+Each bit in the first operand is paired with the corresponding bit in the second operand: _first bit_ to _first bit_, _second bit_ to _second bit_, and so on.
 
 The operator is applied to each pair of bits, and the result is constructed bitwise.
 
@@ -32,8 +29,7 @@ Bitwise NOTing any number `x` yields `-(x + 1)`. For example, `~-5` yields `4`.
 
 Note that due to using 32-bit representation for numbers both `~-1` and `~4294967295` (2<sup>32</sup>-1) results in `0`.
 
-Examples
---------
+## Examples
 
 ### Using bitwise NOT
 
@@ -41,8 +37,7 @@ Examples
     ~-1; // 0
     ~1;  // -2
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bitwise-not-operator">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-bitwise-not-operator</span></a></td></tr></tbody></table>
@@ -73,8 +68,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 

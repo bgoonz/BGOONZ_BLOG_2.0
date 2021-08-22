@@ -1,26 +1,21 @@
-TypeError: 'x' is not iterable
-==============================
+# TypeError: 'x' is not iterable
 
 The JavaScript exception "is not iterable" occurs when the value which is given as the right hand-side of [for…of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement) or as argument of a function such as [`Promise.all`](../global_objects/promise/all) or [`TypedArray.from`](../global_objects/typedarray/from), is not an [iterable object](../iteration_protocols).
 
-Message
--------
+## Message
 
     TypeError: 'x' is not iterable (Firefox, Chrome)
     TypeError: 'x' is not a function or its return value is not iterable (Chrome)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 The value which is given as the right hand-side of [for…of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement) or as argument of a function such as [`Promise.all`](../global_objects/promise/all) or [`TypedArray.from`](../global_objects/typedarray/from), is not an [iterable object](../iteration_protocols). An iterable can be a built-in iterable type such as [`Array`](../global_objects/array), [`String`](../global_objects/string) or [`Map`](../global_objects/map), a generator result, or an object implementing the [iterable protocol](../iteration_protocols#the_iterable_protocol).
 
-Examples
---------
+## Examples
 
 ### Iterating over Object properties
 
@@ -104,8 +99,7 @@ Here is a correct implementation:
 
     Array.from(myEmptyIterable);  // []
 
-See also
---------
+## See also
 
 -   [iterable protocol](../iteration_protocols#the_iterable_protocol)
 -   [`Object.keys`](../global_objects/object/keys)

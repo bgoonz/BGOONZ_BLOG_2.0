@@ -1,5 +1,4 @@
-Date.prototype.toGMTString()
-============================
+# Date.prototype.toGMTString()
 
 **Deprecated**
 
@@ -9,8 +8,7 @@ The `toGMTString()` method converts a date to a string, using Internet Greenwich
 
 **Note:** `toGMTString()` is deprecated and should no longer be used. It remains implemented only for backward compatibility; please use [`toUTCString()`](toutcstring) instead.
 
-Syntax
-------
+## Syntax
 
     toGMTString()
 
@@ -18,8 +16,7 @@ Syntax
 
 A string representing the given date following the Internet Greenwich Mean Time (GMT) convention.
 
-Examples
---------
+## Examples
 
 ### Simple example
 
@@ -30,14 +27,12 @@ In this example, the `toGMTString()` method converts the date to GMT (UTC) using
 
     console.log(str);               // Mon, 18 Dec 1995 17:28:35 GMT
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.togmtstring">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-date.prototype.togmtstring</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -93,8 +88,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
 -   [`Date.prototype.toTimeString()`](totimestring)

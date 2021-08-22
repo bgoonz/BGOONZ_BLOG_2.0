@@ -1,27 +1,22 @@
-TypeError: cyclic object value
-==============================
+# TypeError: cyclic object value
 
 The JavaScript exception "cyclic object value" occurs when object references were found in [JSON](https://www.json.org/). [`JSON.stringify()`](../global_objects/json/stringify) doesn't try to solve them and fails accordingly.
 
-Message
--------
+## Message
 
     TypeError: cyclic object value (Firefox)
     TypeError: Converting circular structure to JSON (Chrome and Opera)
     TypeError: Circular reference in value argument not supported (Edge)
 
-Error type
-----------
+## Error type
 
 [`TypeError`](../global_objects/typeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 The [JSON format](https://www.json.org/) per se doesn't support object references (although an [IETF draft exists](https://datatracker.ietf.org/doc/html/draft-pbryan-zyp-json-ref-03)), hence [`JSON.stringify()`](../global_objects/json/stringify) doesn't try to solve them and fails accordingly.
 
-Examples
---------
+## Examples
 
 ### Circular references
 
@@ -55,8 +50,7 @@ The snippet below illustrates how to find and filter (thus causing data loss) a 
     JSON.stringify(circularReference, getCircularReplacer());
     // {"otherData":123}
 
-See also
---------
+## See also
 
 -   [`JSON.stringify`](../global_objects/json/stringify)
 -   [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) – Introduces two functions, `JSON.decycle` and `JSON.retrocycle`, which makes it possible to encode and decode cyclical structures and dags into an extended and retrocompatible JSON format.

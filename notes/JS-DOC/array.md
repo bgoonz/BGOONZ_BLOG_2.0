@@ -1,10 +1,8 @@
-Array
-=====
+# Array
 
 The JavaScript `Array` class is a global object that is used in the construction of arrays; which are high-level, list-like objects.
 
-Description
------------
+## Description
 
 Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays.
 
@@ -119,7 +117,7 @@ For example, if you had an object with a property named `3d`, it can only be ref
     renderer.3d.setTexture(model, 'character.png')     // a syntax error
     renderer['3d'].setTexture(model, 'character.png')  // works properly
 
-In the `3d` example, `'3d'` *had* to be quoted (because it begins with a digit). But it's also possible to quote the array indexes as well (e.g., `years['2']` instead of `years[2]`), although it's not necessary.
+In the `3d` example, `'3d'` _had_ to be quoted (because it begins with a digit). But it's also possible to quote the array indexes as well (e.g., `years['2']` instead of `years[2]`), although it's not necessary.
 
 The `2` in `years[2]` is coerced into a string by the JavaScript engine through an implicit `toString` conversion. As a result, `'2'` and `'02'` would refer to two different slots on the `years` object, and the following example could be `true`:
 
@@ -182,20 +180,17 @@ The properties and elements returned from this match are as follows:
 <span class="badge inline readonly">Read only </span></td><td>The last matched characters.</td><td><code>"dbBd"</code></td></tr><tr class="even"><td><code>[1], ...[n]</code><br />
 <span class="badge inline readonly">Read only </span></td><td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td><td><code>[1]: "bB"     [2]: "d"</code></td></tr></tbody></table>
 
-Constructor
------------
+## Constructor
 
 [`Array()`](array/array)  
 Creates a new `Array` object.
 
-Static properties
------------------
+## Static properties
 
 [`get Array[@@species]`](array/@@species)  
 The constructor function is used to create derived objects.
 
-Static methods
---------------
+## Static methods
 
 [`Array.from()`](array/from)  
 Creates a new `Array` instance from an array-like or iterable object.
@@ -206,8 +201,7 @@ Returns `true` if the argument is an array, or `false` otherwise.
 [`Array.of()`](array/of)  
 Creates a new `Array` instance with a variable number of arguments, regardless of number or type of the arguments.
 
-Instance properties
--------------------
+## Instance properties
 
 [`Array.prototype.length`](array/length)  
 Reflects the number of elements in an array.
@@ -215,10 +209,9 @@ Reflects the number of elements in an array.
 [`Array.prototype[@@unscopables]`](array/@@unscopables)  
 A symbol containing property names to exclude from a [`with`](../statements/with) binding scope.
 
-Instance methods
-----------------
+## Instance methods
 
- [`Array.prototype.at()`](array/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>   
+[`Array.prototype.at()`](array/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>  
 Returns the array item at the given index. Accepts negative integers, which count back from the last item.
 
 [`Array.prototype.concat()`](array/concat)  
@@ -279,7 +272,7 @@ Apply a function against an accumulator and each value of the array (from left-t
 Apply a function against an accumulator&gt; and each value of the array (from right-to-left) as to reduce it to a single value.
 
 [`Array.prototype.reverse()`](array/reverse)  
-Reverses the order of the elements of an array *in place*. (First becomes the last, last becomes first.)
+Reverses the order of the elements of an array _in place_. (First becomes the last, last becomes first.)
 
 [`Array.prototype.shift()`](array/shift)  
 Removes the first element from an array and returns that element.
@@ -311,8 +304,7 @@ Returns a new `Array Iterator` object that contains the values for each index in
 [`Array.prototype[@@iterator]()`](array/@@iterator)  
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
-Examples
---------
+## Examples
 
 ### Creating an array
 

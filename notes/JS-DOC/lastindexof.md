@@ -1,10 +1,8 @@
-Array.prototype.lastIndexOf()
-=============================
+# Array.prototype.lastIndexOf()
 
 The `lastIndexOf()` method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at `fromIndex`.
 
-Syntax
-------
+## Syntax
 
     lastIndexOf(searchElement)
     lastIndexOf(searchElement, fromIndex)
@@ -14,20 +12,18 @@ Syntax
 `searchElement`  
 Element to locate in the array.
 
- `fromIndex` <span class="badge inline optional">Optional</span>   
+`fromIndex` <span class="badge inline optional">Optional</span>  
 The index at which to start searching backwards. Defaults to the array's length minus one (`arr.length - 1`), i.e. the whole array will be searched. If the index is greater than or equal to the length of the array, the whole array will be searched. If negative, it is taken as the offset from the end of the array. Note that even when the index is negative, the array is still searched from back to front. If the calculated index is less than 0, -1 is returned, i.e. the array will not be searched.
 
 ### Return value
 
 The last index of the element in the array; **-1** if not found.
 
-Description
------------
+## Description
 
 `lastIndexOf` compares `searchElement` to elements of the Array using [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#using_the_equality_operators) (the same method used by the ===, or triple-equals, operator).
 
-Examples
---------
+## Examples
 
 ### Using `lastIndexOf`
 
@@ -59,8 +55,7 @@ The following example uses `lastIndexOf` to find all the indices of an element i
 
 Note that we have to handle the case `idx == 0` separately here because the element will always be found regardless of the `fromIndex` parameter if it is the first element of the array. This is different from the [`indexOf`](indexof) method.
 
-Polyfill
---------
+## Polyfill
 
 `lastIndexOf` was added to the ECMA-262 standard in the 5th edition; as such it may not be present in other implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of `lastIndexOf` in implementations which do not natively support it. This algorithm is exactly the one specified in ECMA-262, 5th edition, assuming [`Object`](../object), [`TypeError`](../typeerror), [`Number`](../number), [`Math.floor`](../math/floor), [`Math.abs`](../math/abs), and [`Math.min`](../math/min) have their original values.
 
@@ -103,8 +98,7 @@ Polyfill
 
 Again, note that this implementation aims for absolute compatibility with `lastIndexOf` in Firefox and the SpiderMonkey JavaScript engine, including in several cases which are arguably edge cases. If you intend to use this in real-world applications, you may be able to calculate `from` with less complicated code if you ignore those cases.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.lastindexof">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-array.prototype.lastindexof</span></a></td></tr></tbody></table>
@@ -135,8 +129,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`Array.prototype.indexOf()`](indexof)
 -   [`TypedArray.prototype.lastIndexOf()`](../typedarray/lastindexof)

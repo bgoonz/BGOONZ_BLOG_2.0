@@ -1,5 +1,4 @@
-String.prototype.fontsize()
-===========================
+# String.prototype.fontsize()
 
 **Deprecated**
 
@@ -9,8 +8,7 @@ The `fontsize()` method creates a [`<font>`](https://developer.mozilla.org/en-US
 
 **Note:** The &lt;font&gt; element has been removed in [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) and shouldn't be used anymore. Instead web developers should use [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) properties.
 
-Syntax
-------
+## Syntax
 
     fontsize(size)
 
@@ -23,13 +21,11 @@ An integer between 1 and 7, a string representing a signed integer between 1 and
 
 A string containing a [`<font>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font) HTML element.
 
-Description
------------
+## Description
 
 When you specify size as an integer, you set the font size of `str` to one of the 7 defined sizes. When you specify `size` as a string such as "-2", you adjust the font size of `str` relative to the size set in the [`<basefont>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont) element.
 
-Examples
---------
+## Examples
 
 ### Using fontsize()
 
@@ -45,8 +41,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
     document.getElementById('yourElemId').style.fontSize = '0.7em';
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fontsize">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-string.prototype.fontsize</span></a></td></tr></tbody></table>
@@ -77,8 +72,7 @@ Specifications
 
 1.0
 
-See also
---------
+## See also
 
 -   [`String.prototype.big()`](big)
 -   [`String.prototype.small()`](small)

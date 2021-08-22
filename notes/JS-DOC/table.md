@@ -1,24 +1,20 @@
-WebAssembly.Table
-=================
+# WebAssembly.Table
 
 The `WebAssembly.Table()` object is a JavaScript wrapper object — an array-like structure representing a WebAssembly Table, which stores function references. A table created by JavaScript or in WebAssembly code will be accessible and mutable from both JavaScript and WebAssembly.
 
 **Note:** Tables can currently only store function references, but this will likely be expanded in the future.
 
-Constructor
------------
+## Constructor
 
 [`WebAssembly.Table()`](table/table)  
 Creates a new `Table` object.
 
-Instance properties
--------------------
+## Instance properties
 
 [`Table.prototype.length`](table/length)  
 Returns the length of the table, i.e. the number of elements.
 
-Instance methods
-----------------
+## Instance methods
 
 [`Table.prototype.get()`](table/get)  
 Accessor function — gets the element stored at a given index.
@@ -29,8 +25,7 @@ Increases the size of the Table instance by a specified number of elements.
 [`Table.prototype.set()`](table/set)  
 Sets an element stored at a given index to a given value.
 
-Examples
---------
+## Examples
 
 ### Creating a new WebAssembly Table instance
 
@@ -62,14 +57,12 @@ Note how you've got to include a second function invocation operator at the end 
 
 This example shows that we're creating and accessing the table from JavaScript, but the same table is visible and callable inside the wasm instance too.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#tables">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
 <span class="small">#tables</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -279,8 +272,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-See also
---------
+## See also
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)

@@ -1,10 +1,8 @@
-SyntaxError: Unexpected token
-=============================
+# SyntaxError: Unexpected token
 
 The JavaScript exceptions "unexpected token" occur when a specific language construct was expected, but something else was provided. This might be a simple typo.
 
-Message
--------
+## Message
 
     SyntaxError: expected expression, got "x"
     SyntaxError: expected property name, got "x"
@@ -13,18 +11,15 @@ Message
     SyntaxError: expected closing parenthesis, got "x"
     SyntaxError: expected '=>' after argument list, got "x"
 
-Error type
-----------
+## Error type
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 A specific language construct was expected, but something else was provided. This might be a simple typo.
 
-Examples
---------
+## Examples
 
 ### Expression expected
 
@@ -67,8 +62,7 @@ The brackets may look correct at first, but note how the `||` is outside the bra
       }
     }
 
-See also
---------
+## See also
 
 -   [`SyntaxError`](../global_objects/syntaxerror)
 

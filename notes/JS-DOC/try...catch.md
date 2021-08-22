@@ -1,10 +1,8 @@
-try...catch
-===========
+# try...catch
 
 The `try...catch` statement marks a block of statements to try and specifies a response should an exception be thrown.
 
-Syntax
-------
+## Syntax
 
     try {
       try_statements
@@ -28,8 +26,7 @@ An optional identifier to hold an exception object for the associated `catch`-bl
 `finally_statements`  
 Statements that are executed after the `try` statement completes. These statements execute regardless of whether an exception was thrown or caught.
 
-Description
------------
+## Description
 
 The `try` statement consists of a `try`-block, which contains one or more statements. `{}` must always be used, even for single statements. At least one `catch`-block, or a `finally`-block, must be present. This gives us three forms for the `try` statement:
 
@@ -91,7 +88,7 @@ A common use case for this is to only catch (and silence) a small subset of expe
 
 ### The exception identifier
 
-When an exception is thrown in the `try`-block, *`exception_var`* (i.e., the `e` in `catch (e)`) holds the exception value. You can use this identifier to get information about the exception that was thrown. This identifier is only available in the `catch`-block's [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope). If you don't need the exception value, it could be omitted.
+When an exception is thrown in the `try`-block, _`exception_var`_ (i.e., the `e` in `catch (e)`) holds the exception value. You can use this identifier to get information about the exception that was thrown. This identifier is only available in the `catch`-block's [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope). If you don't need the exception value, it could be omitted.
 
     function isValidJSON(text) {
       try {
@@ -116,8 +113,7 @@ The following example shows one use case for the `finally`-block. The code opens
       closeMyFile(); // always close the resource
     }
 
-Examples
---------
+## Examples
 
 ### Nested try-blocks
 
@@ -203,14 +199,12 @@ If the `finally`-block returns a value, this value becomes the return value of t
 
 The outer "oops" is not thrown because of the return in the `finally`-block. The same would apply to any value returned from the `catch`-block.
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-try-statement">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'try statement' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -292,8 +286,7 @@ No
 
 9.0
 
-See also
---------
+## See also
 
 -   [`Error`](../global_objects/error)
 -   [`throw`](throw)

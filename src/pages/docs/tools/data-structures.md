@@ -3,13 +3,14 @@ title: Data Structures
 weight: 0
 excerpt: Data Structures
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
+
 ## Data Structures
 
 <br>
@@ -24,7 +25,6 @@ template: docs
 <br>
 <br>
 <br>
-
 
 <h1>  The Algos Bgoonz Branch </h1>
 <br>

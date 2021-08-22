@@ -1,10 +1,8 @@
-RangeError: precision is out of range
-=====================================
+# RangeError: precision is out of range
 
 The JavaScript exception "precision is out of range" occurs when a number that's outside of the range of 0 and 20 (or 21) was passed into `toFixed` or `toPrecision`.
 
-Message
--------
+## Message
 
     RangeError: The number of fractional digits is out of range (Edge)
     RangeError: The precision is out of range (Edge)
@@ -13,13 +11,11 @@ Message
     RangeError: toFixed() digits argument must be between 0 and 20 (Chrome)
     RangeError: toPrecision() argument must be between 1 and 21 (Chrome)
 
-Error type
-----------
+## Error type
 
 [`RangeError`](../global_objects/rangeerror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 There was an out of range precision argument in one of these methods:
 
@@ -31,8 +27,7 @@ The allowed range for these methods is usually between 0 and 20 (or 21). However
 
 <table><thead><tr class="header"><th>Method</th><th>Firefox (SpiderMonkey)</th><th>Chrome, Opera (V8)</th></tr></thead><tbody><tr class="odd"><td><a href="../global_objects/number/toexponential"><code>Number.prototype.toExponential()</code></a></td><td>0 to 100</td><td>0 to 20</td></tr><tr class="even"><td><a href="../global_objects/number/tofixed"><code>Number.prototype.toFixed()</code></a></td><td>-20 to 100</td><td>0 to 20</td></tr><tr class="odd"><td><a href="../global_objects/number/toprecision"><code>Number.prototype.toPrecision()</code></a></td><td>1 to 100</td><td>1 to 21</td></tr></tbody></table>
 
-Examples
---------
+## Examples
 
 ### Invalid cases
 
@@ -57,8 +52,7 @@ Examples
     5.123456.toPrecision(2); // 5.1
     5.123456.toPrecision(1); // 5
 
-See also
---------
+## See also
 
 -   [`Number.prototype.toExponential()`](../global_objects/number/toexponential)
 -   [`Number.prototype.toFixed()`](../global_objects/number/tofixed)

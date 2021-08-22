@@ -1,10 +1,8 @@
-Object.prototype.propertyIsEnumerable()
-=======================================
+# Object.prototype.propertyIsEnumerable()
 
 The `propertyIsEnumerable()` method returns a Boolean indicating whether the specified property is enumerable and is the object's own property.
 
-Syntax
-------
+## Syntax
 
     propertyIsEnumerable(prop)
 
@@ -17,15 +15,13 @@ The name of the property to test.
 
 A [`Boolean`](../boolean) indicating whether the specified property is enumerable and is the object's own property.
 
-Description
------------
+## Description
 
 Every object has a `propertyIsEnumerable` method. This method can determine whether the specified property in an object can be enumerated by a [`for...in`](../../statements/for...in) loop, with the exception of properties inherited through the prototype chain. If the object does not have the specified property, this method returns `false`.
 
 **Note:** Bear in mind that enumerable properties are looped over by [`for...in`](../../statements/for...in) loops, with the exception of [`Symbol`](../symbol)s.
 
-Examples
---------
+## Examples
 
 ### A basic use of `propertyIsEnumerable`
 
@@ -87,14 +83,12 @@ The following example demonstrates the enumerability of user-defined vs. built-i
     o.propertyIsEnumerable('constructor'); // returns false
     o.propertyIsEnumerable('firstMethod'); // returns false
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.propertyisenumerable">ECMAScript Language Specification (ECMAScript)<br />
 <span class="small">#sec-object.prototype.propertyisenumerable</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -150,8 +144,7 @@ Samsung Internet
 
 1.0
 
-See also
---------
+## See also
 
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 -   [`for...in`](../../statements/for...in)

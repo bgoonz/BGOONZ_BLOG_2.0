@@ -1,10 +1,8 @@
-Object
-======
+# Object
 
 The `Object` class represents one of [JavaScript's data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures). It is used to store various keyed collections and more complex entities. Objects can be created using the [`Object()`](object/object) constructor or the [object initializer / literal syntax](../operators/object_initializer).
 
-Description
------------
+## Description
 
 Nearly all objects in JavaScript are instances of [`Object`](object); a typical object inherits properties (including methods) from `Object.prototype`, although these properties may be shadowed (a.k.a. overridden). However, an `Object` may be deliberately created for which this is not true (e.g. by [`Object.create(null)`](object/create)), or it may be altered so that this is no longer true (e.g. with [`Object.setPrototypeOf`](object/setprototypeof)).
 
@@ -24,14 +22,12 @@ See also the [object initializer / literal syntax](../operators/object_initializ
 
 There isn't any method in an Object itself to delete its own properties (such as [`Map.prototype.delete()`](map/delete)). To do so, one must use the [delete operator](../operators/delete).
 
-Constructor
------------
+## Constructor
 
 [`Object()`](object/object)  
 Creates a new `Object` object. It is a wrapper for the given value.
 
-Static methods
---------------
+## Static methods
 
 [`Object.assign()`](object/assign)  
 Copies the values of all enumerable own properties from one or more source objects to a target object.
@@ -96,8 +92,7 @@ Sets the object's prototype (its internal `[[Prototype]]` property).
 [`Object.values()`](object/values)  
 Returns an array containing the values that correspond to all of a given object's **own** enumerable string properties.
 
-Instance properties
--------------------
+## Instance properties
 
 [`Object.prototype.constructor`](object/constructor)  
 Specifies the function that creates an object's prototype.
@@ -105,8 +100,7 @@ Specifies the function that creates an object's prototype.
 [`Object/proto`](object/proto)  
 Points to the object which was used as prototype when the object was instantiated.
 
-Instance methods
-----------------
+## Instance methods
 
 [`Object.prototype.__defineGetter__()`](object/__definegetter__)  
 Associates a function with a property that, when accessed, executes that function and returns its return value.
@@ -138,8 +132,7 @@ Returns a string representation of the object.
 [`Object.prototype.valueOf()`](object/valueof)  
 Returns the primitive value of the specified object.
 
-Examples
---------
+## Examples
 
 ### Using `Object` given `undefined` and `null` types
 
@@ -253,14 +246,12 @@ Since JavaScript doesn't exactly have sub-class objects, prototype is a useful w
 
     mime.greet();
 
-Specifications
---------------
+## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-objects">ECMAScript (ECMA-262)<br />
 <span class="small">The definition of 'Object' in that specification.</span></a></td></tr></tbody></table>
 
-Browser compatibility
----------------------
+## Browser compatibility
 
 Desktop
 
@@ -1244,8 +1235,7 @@ No
 
 6.0
 
-See also
---------
+## See also
 
 -   [Object initializer](../operators/object_initializer)
 

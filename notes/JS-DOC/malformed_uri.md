@@ -1,27 +1,22 @@
-URIError: malformed URI sequence
-================================
+# URIError: malformed URI sequence
 
 The JavaScript exception "malformed URI sequence" occurs when URI encoding or decoding wasn't successful.
 
-Message
--------
+## Message
 
     URIError: The URI to be encoded contains invalid character (Edge)
     URIError: malformed URI sequence (Firefox)
     URIError: URI malformed (Chrome)
 
-Error type
-----------
+## Error type
 
 [`URIError`](../global_objects/urierror)
 
-What went wrong?
-----------------
+## What went wrong?
 
 URI encoding or decoding wasn't successful. An argument given to either the [`decodeURI`](../global_objects/decodeuri), [`encodeURI`](../global_objects/encodeuri), [`encodeURIComponent`](../global_objects/encodeuricomponent), or [`decodeURIComponent`](../global_objects/decodeuricomponent) function was not valid, so that the function was unable encode or decode properly.
 
-Examples
---------
+## Examples
 
 ### Encoding
 
@@ -50,8 +45,7 @@ With proper input, this should usually look like something like this:
     decodeURIComponent('JavaScript_%D1%88%D0%B5%D0%BB%D0%BB%D1%8B');
     // "JavaScript_шеллы"
 
-See also
---------
+## See also
 
 -   [`URIError`](../global_objects/urierror)
 -   [`decodeURI`](../global_objects/decodeuri)
