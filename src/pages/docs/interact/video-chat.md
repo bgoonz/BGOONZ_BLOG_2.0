@@ -28,16 +28,12 @@ seo:
   type: stackbit_page_meta
 template: docs
 ---
-## Zumzi Video Conrerence:
-
-
+# Zumzi Video Conference:
 
 <iframe class="block-content" width="100%  width="800" height="575"
         src="https://goofy-perlman-0f61df.netlify.app/web/login.html" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 
 ## Zumzi Live Demo
 
@@ -45,78 +41,78 @@ template: docs
 
 ## Features:
 
-- Group Voice and Video Call with unlimited members
-- Live Streaming
-- Screen Sharing
-- Fine control over all video & audio parameters and user permissions
-- Supports video streaming at various resolutions: Standard, HD, FHD and 4K
-- Group Chat
-- One-to-One chat
-- Invite Participants
+*   Group Voice and Video Call with unlimited members
+*   Live Streaming
+*   Screen Sharing
+*   Fine control over all video & audio parameters and user permissions
+*   Supports video streaming at various resolutions: Standard, HD, FHD and 4K
+*   Group Chat
+*   One-to-One chat
+*   Invite Participants
 
 There are two sub-folders:
 
-- **backend** contains the source code for hosting the backend APIs for the app
-- **web** contains the source code for the app which you can directly integrate into your website.
+*   **backend** contains the source code for hosting the backend APIs for the app
+*   **web** contains the source code for the app which you can directly integrate into your website.
 
 ## Apendix
 
-- access token:
-  > An Access Token needs to be generated for every user who needs to access mesibo real-time messaging API. You can generate Access Token for every user of your application on demand and send it to the user. The user will then use this access token to initialize mesibo client-side API..
+*   access token:
+    > An Access Token needs to be generated for every user who needs to access mesibo real-time messaging API. You can generate Access Token for every user of your application on demand and send it to the user. The user will then use this access token to initialize mesibo client-side API..
 
----
+***
 
-- api key
-  > API key is a unique alphanumeric identifier associated with your Mesibo account. You can view, change or regenerate the API key from the Mesibo console.
+*   api key
+    > API key is a unique alphanumeric identifier associated with your Mesibo account. You can view, change or regenerate the API key from the Mesibo console.
 
----
+***
 
-- Application Token
-  > is a unique alphanumeric identifier with one of your application. You can view and change the app token from the Mesibo Console.
+*   Application Token
+    > is a unique alphanumeric identifier with one of your application. You can view and change the app token from the Mesibo Console.
 
----
+***
 
-- Mesibo container
-  > A container is a runtime instance of mesibo in-premises docker image.
+*   Mesibo container
+    > A container is a runtime instance of mesibo in-premises docker image.
 
----
+***
 
-- MAU
-  > MAU is counted when a user connects to mesibo server within monthly billing period. To further clarify, it will be only counted as one when a unique user connects to mesibo server multiple times within monthly billing period
+*   MAU
+    > MAU is counted when a user connects to mesibo server within monthly billing period. To further clarify, it will be only counted as one when a unique user connects to mesibo server multiple times within monthly billing period
 
----
+***
 
-- High-availability clusters
-  > (also known as HA clusters or fail-over clusters) are
-  > groups of computers that support server applications that can be reliably utilized with a minimum amount of down-time
+*   High-availability clusters
+    > (also known as HA clusters or fail-over clusters) are
+    > groups of computers that support server applications that can be reliably utilized with a minimum amount of down-time
 
----
+***
 
-- namespace
-  > in mesibo is refer to a mesibo feature that isolates users and groups of an application from another application. Users can only interact with users and groups of the same application that are part of the same namespace. Namespaces are an important part of Mesibo’s isolation model
+*   namespace
+    > in mesibo is refer to a mesibo feature that isolates users and groups of an application from another application. Users can only interact with users and groups of the same application that are part of the same namespace. Namespaces are an important part of Mesibo’s isolation model
 
----
+***
 
-- node
-  > A [node]is a physical or virtual machine running an instance of the mesibo.
+*   node
+    > A \[node]is a physical or virtual machine running an instance of the mesibo.
 
----
+***
 
-- On premises deployment
-  > Mesibo On-premises deploment allows you to run Mesibo in your own data center or cloud.
+*   On premises deployment
+    > Mesibo On-premises deploment allows you to run Mesibo in your own data center or cloud.
 
----
+***
 
-- 1-1 Communication
-  > Communication is between two parties; for example, a chat or a call
+*   1-1 Communication
+    > Communication is between two parties; for example, a chat or a call
 
----
+***
 
-- Peer-to-peer
-  (P2P)
-  > It is a distributed application architecture that partitions tasks or workloads between peers. Peers are equally privileged, equipotent participants in the application.They are said to form a peer-to-peer network of nodes.
+*   Peer-to-peer
+    (P2P)
+    > It is a distributed application architecture that partitions tasks or workloads between peers. Peers are equally privileged, equipotent participants in the application.They are said to form a peer-to-peer network of nodes.
 
----
+***
 
 ![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.PNG?raw=true)
 
@@ -254,26 +250,24 @@ For the best experience using the messenger app, make sure you have some contact
 
 You can provide a list of local contacts that will be loaded as a list of available users. Set local contacts as follows in `config.js`
 
-```
-var MESIBO_LOCAL_CONTACTS =[
+    var MESIBO_LOCAL_CONTACTS =[
 
-{
-        "address" : "18885551001",
-        "groupid" : 0,
-        "picture" : "images/profile/default-profile-icon.jpg",
-        "name"    : "MesiboTest",
-        "status": "Let's Chat.."
-},
+    {
+            "address" : "18885551001",
+            "groupid" : 0,
+            "picture" : "images/profile/default-profile-icon.jpg",
+            "name"    : "MesiboTest",
+            "status": "Let's Chat.."
+    },
 
-{
-        "groupid" : 104661,
-        "picture" : "images/profile/default-group-icon.jpg",
-        "name"    : "Mesibo Group",
-        "members" : "1:123,456,789"             //Members list. Add 1: to mark as admin
-},
+    {
+            "groupid" : 104661,
+            "picture" : "images/profile/default-group-icon.jpg",
+            "name"    : "Mesibo Group",
+            "members" : "1:123,456,789"             //Members list. Add 1: to mark as admin
+    },
 
-]
-```
+    ]
 
 ## Popup
 
@@ -315,19 +309,15 @@ Ensure that you perform a hard reload so that you have the latest Mesibo Javascr
 
 The easiest way to install Mesibo Javascript SDK is to include following in `<HEAD>` section of your HTML file:
 
-```
-<script type="text/javascript" src="https://api.mesibo.com/mesibo.js"></script>
-```
+    <script type="text/javascript" src="https://api.mesibo.com/mesibo.js"></script>
 
 You can also use `async` and `defer` attributes inside `script` tag if requires.
 
 Alternatively, you may also use DOM method to load the mesibo JS on demand when it is not possible to use the script tag.
 
-```
-const script = document.createElement("script");
-script.src = "https://api.mesibo.com/mesibo.js";
-document.body.appendChild(script);
-```
+    const script = document.createElement("script");
+    script.src = "https://api.mesibo.com/mesibo.js";
+    document.body.appendChild(script);
 
 > You must use a secure website (https) to use mesibo javascript. It may NOT work from `http://` or `file://` sites due to browser security restrictions.
 
@@ -335,8 +325,8 @@ document.body.appendChild(script);
 
 Due to the browser security model, camera and microphone access require the following:
 
-- You MUST use a secure URL (`https://`). The `http://` or `file://` URLs will NOT work.
-- You MUST also use a valid certificate with recognized authority, the self-signed certificate will NOT work.
+*   You MUST use a secure URL (`https://`). The `http://` or `file://` URLs will NOT work.
+*   You MUST also use a valid certificate with recognized authority, the self-signed certificate will NOT work.
 
 The browser will not grant the camera and microphone permissions unless your app meets the above requirements. If permissions are not granted, calls and conferencing will not work.
 
