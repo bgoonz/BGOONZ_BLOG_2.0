@@ -1877,6 +1877,16 @@ class Calculator extends React.Component {
 
 [](https://codepen.io/bgoonz/pen/QWgwpGv?editors=0010)<https://codepen.io/bgoonz/pen/QWgwpGv?editors=0010>
 
+
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/WZpxpz?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
+
+
 We have two inputs now, but when you enter the temperature in one of them, the other doesn't update. This contradicts our requirement: we want to keep them in sync.
 
 We also can't display the `BoilingVerdict` from `Calculator`. The `Calculator` doesn't know the current temperature because it is hidden inside the `TemperatureInput`.
