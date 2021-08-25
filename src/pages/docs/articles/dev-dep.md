@@ -8,7 +8,11 @@ seo:
     installing it as a dependency.
 
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/react2.jpg
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
