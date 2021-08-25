@@ -3,11 +3,13 @@ title: React In Depth
 weight: 0
 excerpt: lorem-ipsum
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: >-
+    React embraces the fact that rendering logic is inherently coupled with
+    other UI logic: how events are handled, how the state changes over time.
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
