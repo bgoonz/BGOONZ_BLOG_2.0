@@ -1159,6 +1159,15 @@ ReactDOM.render(
 
 [](https://codepen.io/bgoonz/pen/mdwyWmJ?editors=0011)<https://codepen.io/bgoonz/pen/mdwyWmJ?editors=0011>
 
+
+
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/QKzAgB?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
 This example renders a different greeting depending on the value of `isLoggedIn` prop.
 
 Element Variables
