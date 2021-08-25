@@ -1,7 +1,7 @@
 ---
 title: Fast Fourier Transform
 weight: 1
-excerpt: lorem-ipsum
+excerpt: 
 seo:
     title: ''
     description: ''
