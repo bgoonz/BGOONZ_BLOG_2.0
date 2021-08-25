@@ -2,11 +2,13 @@
 title: Node Buffers
 sections: []
 seo:
-    title: ''
-    description: Node Buffers
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: >-
+    A buffer is an area of memory. JavaScript developers are not familiar with
+    this concept, much less than C, C++ or Go developers
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
