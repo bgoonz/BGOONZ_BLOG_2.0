@@ -1,7 +1,10 @@
 ---
 title: React Docs
 weight: 1
-excerpt: lorem-ipsum
+excerpt: >-
+  In this guide, we will examine the building blocks of React apps: elements and
+  components. Once you master them, you can create complex apps from small
+  reusable pieces.
 seo:
   title: ''
   description: ''
