@@ -21,6 +21,10 @@ seo:
       value: images/fft.jpg
       keyName: property
       relativeUrl: true
+    - name: 'og:title'
+      value: Fast Fourier Transform
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
