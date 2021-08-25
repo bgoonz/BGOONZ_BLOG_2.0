@@ -32,6 +32,10 @@ seo:
       value: React Docs
       keyName: name
       relativeUrl: false
+    - name: 'twitter:image'
+      value: images/react2-b4316710.jpg
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
