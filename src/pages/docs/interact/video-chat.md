@@ -25,6 +25,10 @@ seo:
       value: 'Zumzi Video Conference:'
       keyName: property
       relativeUrl: false
+    - name: 'og:image'
+      value: images/zumzi-video-chat-0aba1c15.png
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
