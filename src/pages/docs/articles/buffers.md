@@ -7,7 +7,13 @@ seo:
     A buffer is an area of memory. JavaScript developers are not familiar with
     this concept, much less than C, C++ or Go developers
   robots: []
-  extra: []
+  extra:
+    - name: 'og:description'
+      value: >-
+        A buffer is an area of memory. JavaScript developers are not familiar
+        with this concept, much less than C, C++ or Go developers
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
