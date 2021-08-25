@@ -23,7 +23,7 @@ template: docs
 
 ## Zumzi Live Demo
 
-![demo](./../../static/images/zumzi-video-chat.PNG)
+![demo](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi-video-chat.PNG?raw=true)
 
 ## Features:
 
