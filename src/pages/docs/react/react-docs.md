@@ -1566,6 +1566,14 @@ function NumberList(props) {
 [](https://codepen.io/bgoonz/pen/JjJoWEw?editors=0010)<https://codepen.io/bgoonz/pen/JjJoWEw?editors=0010>
 
 
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/VmmPgp?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
+
 Sometimes this results in clearer code, but this style can also be abused. Like in JavaScript, it is up to you to decide whether it is worth extracting a variable for readability. Keep in mind that if the `map()` body is too nested, it might be a good time to [extract a component](https://reactjs.org/docs/components-and-props.html#extracting-components).
 
 **Forms**
