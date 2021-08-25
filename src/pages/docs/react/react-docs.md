@@ -970,6 +970,14 @@ function FormattedDate(props) {
 
 [](https://codepen.io/bgoonz/pen/GREgWEp?editors=0010)<https://codepen.io/bgoonz/pen/GREgWEp?editors=0010>
 
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/zKRqNB?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
+
 This is commonly called a "top-down" or "unidirectional" data flow. Any state is always owned by some specific component, and any data or UI derived from that state can only affect components "below" them in the tree.
 
 If you imagine a component tree as a waterfall of props, each component's state is like an additional water source that joins it at an arbitrary point but also flows down.
@@ -992,6 +1000,15 @@ ReactDOM.render(
 **[Try it on CodePen](https://codepen.io/gaearon/pen/vXdGmd?editors=0010)**
 
 [](https://codepen.io/bgoonz/pen/YzQPZQK?editors=0010)<https://codepen.io/bgoonz/pen/YzQPZQK?editors=0010>
+
+
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/vXdGmd?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
 
 Each `Clock` sets up its own timer and updates independently.
 
@@ -1073,6 +1090,15 @@ ReactDOM.render(
 ```
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/xEmzGg?editors=0010)**
+
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/xEmzGg?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
+
 
 You have to be careful about the meaning of `this` in JSX callbacks. In JavaScript, class methods are not [bound](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind) by default. If you forget to bind `this.handleClick` and pass it to `onClick`, `this` will be `undefined` when the function is actually called.
 
@@ -1159,6 +1185,15 @@ ReactDOM.render(
 
 [](https://codepen.io/bgoonz/pen/mdwyWmJ?editors=0011)<https://codepen.io/bgoonz/pen/mdwyWmJ?editors=0011>
 
+
+
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/ZpVxNq?editors=0011" height="900px" width="100%"> </iframe>
+
+
+
 This example renders a different greeting depending on the value of `isLoggedIn` prop.
 
 Element Variables
@@ -1223,6 +1258,14 @@ ReactDOM.render(
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/QKzAgB?editors=0010)**
 
+
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/QKzAgB?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
 While declaring a variable and using an `if` statement is a fine way to conditionally render a component, sometimes you might want to use a shorter syntax. There are a few ways to inline conditions in JSX, explained below.
 
 Inline If with Logical && Operator
@@ -1248,6 +1291,12 @@ ReactDOM.render(
 **[Try it on CodePen](https://codepen.io/gaearon/pen/ozJddz?editors=0010)**
 
 [](https://codepen.io/bgoonz/pen/VwWYppo?editors=0010)<https://codepen.io/bgoonz/pen/VwWYppo?editors=0010>
+
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/ozJddz?editors=0010" height="900px" width="100%"> </iframe>
+
 
 It works because in JavaScript, `true && expression` always evaluates to `expression`, and `false && expression` always evaluates to `false`.
 
