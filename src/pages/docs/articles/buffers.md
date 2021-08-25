@@ -14,6 +14,10 @@ seo:
         with this concept, much less than C, C++ or Go developers
       keyName: property
       relativeUrl: false
+    - name: 'og:title'
+      value: Buffer
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
