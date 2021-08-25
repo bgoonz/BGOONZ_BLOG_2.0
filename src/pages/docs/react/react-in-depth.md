@@ -33,6 +33,10 @@ seo:
         other UI logic: how events are handled, how the state changes over time.
       keyName: name
       relativeUrl: false
+    - name: 'twitter:card'
+      value: react_img_intro
+      keyName: name
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
