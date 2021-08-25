@@ -3,7 +3,7 @@ title: React In Depth
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
+  title: Intro To React
   description: >-
     React embraces the fact that rendering logic is inherently coupled with
     other UI logic: how events are handled, how the state changes over time.
