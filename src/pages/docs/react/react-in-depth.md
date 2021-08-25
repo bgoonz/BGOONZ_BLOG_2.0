@@ -23,6 +23,10 @@ seo:
       value: images/kind-whale.gif
       keyName: property
       relativeUrl: true
+    - name: 'twitter:title'
+      value: Intro To React
+      keyName: name
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
