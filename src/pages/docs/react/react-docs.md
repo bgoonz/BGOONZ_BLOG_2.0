@@ -6,7 +6,7 @@ excerpt: >-
   components. Once you master them, you can create complex apps from small
   reusable pieces.
 seo:
-  title: ''
+  title: React
   description: >-
     We will examine the building blocks of React apps: elements and components.
     Once you master them, you can create complex apps from small reusable
