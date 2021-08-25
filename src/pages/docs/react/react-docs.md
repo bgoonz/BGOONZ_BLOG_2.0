@@ -36,6 +36,10 @@ seo:
       value: images/react2-b4316710.jpg
       keyName: property
       relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_image
+      keyName: name
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
