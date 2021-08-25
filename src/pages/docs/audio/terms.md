@@ -1,10 +1,10 @@
 ---
 title: Fast Fourier Transform
 weight: 1
-excerpt: 
+excerpt: Visualizing the Discrete Fourier Transform
 seo:
     title: ''
-    description: ''
+    description: 'Visualizing the Discrete Fourier Transform'
     robots: []
     extra: []
     type: stackbit_page_meta
