@@ -1833,6 +1833,8 @@ class Calculator extends React.Component {
 
 [](https://codepen.io/bgoonz/pen/zYzxZoL?editors=0010)<https://codepen.io/bgoonz/pen/zYzxZoL?editors=0010>
 
+<iframe src="https://codepen.io/gaearon/pen/jGBryx?editors=0010" height="900px" width="100%"> </iframe>
+
 Adding a Second Input
 =====================
 
