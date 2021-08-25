@@ -2,11 +2,18 @@
 title: Dev Dependencies
 sections: []
 seo:
-    title: ''
-    description: Dev Dependencies
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: Dependencies
+  description: >+
+    When you install an npm package using npm install <package-name>, you are
+    installing it as a dependency.
+
+  robots: []
+  extra:
+    - name: 'og:image'
+      value: images/react2.jpg
+      keyName: property
+      relativeUrl: true
+  type: stackbit_page_meta
 template: docs
 ---
 
