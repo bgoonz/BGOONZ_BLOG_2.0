@@ -27,6 +27,12 @@ seo:
       value: Intro To React
       keyName: name
       relativeUrl: false
+    - name: 'twitter:description'
+      value: >-
+        React embraces the fact that rendering logic is inherently coupled with
+        other UI logic: how events are handled, how the state changes over time.
+      keyName: name
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
