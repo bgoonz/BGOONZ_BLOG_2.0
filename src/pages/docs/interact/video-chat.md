@@ -23,7 +23,7 @@ template: docs
 
 ## Zumzi Live Demo
 
-![demo](./../../zumzi-video-chat.PNG)
+![demo](./../../static/images/zumzi-video-chat.PNG)
 
 ## Features:
 
