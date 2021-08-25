@@ -21,7 +21,7 @@ seo:
       keyName: property
       relativeUrl: false
     - name: 'og:image'
-      value: React Docs
+      value: images/react2-1cfd4b21.jpg
       keyName: property
       relativeUrl: true
     - name: 'og:type'
