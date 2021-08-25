@@ -970,6 +970,14 @@ function FormattedDate(props) {
 
 [](https://codepen.io/bgoonz/pen/GREgWEp?editors=0010)<https://codepen.io/bgoonz/pen/GREgWEp?editors=0010>
 
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/vXdGmd?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
+
 This is commonly called a "top-down" or "unidirectional" data flow. Any state is always owned by some specific component, and any data or UI derived from that state can only affect components "below" them in the tree.
 
 If you imagine a component tree as a waterfall of props, each component's state is like an additional water source that joins it at an arbitrary point but also flows down.
