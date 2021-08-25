@@ -746,6 +746,19 @@ ReactDOM.render(
 
 [](https://codepen.io/bgoonz/pen/oNwgZbV?editors=0010)<https://codepen.io/bgoonz/pen/oNwgZbV?editors=0010>
 
+
+
+
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/amqdNA?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
+
+
+
 Next, we'll make the `Clock` set up its own timer and update itself every second.
 
 Adding Lifecycle Methods to a Class
