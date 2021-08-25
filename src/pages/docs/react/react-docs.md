@@ -28,6 +28,10 @@ seo:
       value: Docs
       keyName: property
       relativeUrl: false
+    - name: 'twitter:title'
+      value: React Docs
+      keyName: name
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
