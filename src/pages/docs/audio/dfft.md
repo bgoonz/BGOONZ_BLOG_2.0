@@ -17,6 +17,10 @@ seo:
         defined for continuous functions.
       keyName: property
       relativeUrl: false
+    - name: 'og:image'
+      value: images/fft.jpg
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
