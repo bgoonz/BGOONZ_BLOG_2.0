@@ -4,7 +4,12 @@ weight: 0
 excerpt: lorem-ipsum
 seo:
   title: ''
-  description: ''
+  description: |-
+    Features:
+    Group Voice and Video Call with unlimited members
+    Live Streaming
+    Screen Sharing
+    Supports video streaming at various resolutions.
   robots: []
   extra: []
   type: stackbit_page_meta
