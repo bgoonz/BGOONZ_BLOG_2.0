@@ -21,7 +21,7 @@ seo:
       keyName: property
       relativeUrl: false
     - name: 'og:image'
-      value: React
+      value: React Docs
       keyName: property
       relativeUrl: true
     - name: 'og:type'
