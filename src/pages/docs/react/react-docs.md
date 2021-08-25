@@ -1249,6 +1249,12 @@ ReactDOM.render(
 
 [](https://codepen.io/bgoonz/pen/VwWYppo?editors=0010)<https://codepen.io/bgoonz/pen/VwWYppo?editors=0010>
 
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/Xjoqwm?editors=0010" height="900px" width="100%"> </iframe>
+
+
 It works because in JavaScript, `true && expression` always evaluates to `expression`, and `false && expression` always evaluates to `false`.
 
 Therefore, if the condition is `true`, the element right after `&&` will appear in the output. If it is `false`, React will ignore and skip it.
