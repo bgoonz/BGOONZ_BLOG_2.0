@@ -7,7 +7,10 @@ excerpt: >-
   reusable pieces.
 seo:
   title: ''
-  description: ''
+  description: >-
+    We will examine the building blocks of React apps: elements and components.
+    Once you master them, you can create complex apps from small reusable
+    pieces.
   robots: []
   extra:
     - name: 'og:description'
