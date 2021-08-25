@@ -20,6 +20,10 @@ seo:
         reusable pieces.
       keyName: property
       relativeUrl: false
+    - name: 'og:image'
+      value: React
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
