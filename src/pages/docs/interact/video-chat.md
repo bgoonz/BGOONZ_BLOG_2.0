@@ -3,7 +3,7 @@ title: Zumzi Video Conferencing (Mesibo API Backend)
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
+  title: 'Zumzi Video Conference:'
   description: |-
     Features:
     Group Voice and Video Call with unlimited members
