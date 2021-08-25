@@ -201,8 +201,8 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
-                        "url": "/docs",
+                        "label": "Fast Fourier Transform",
+                        "url": "/docs/audio/dfft",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
