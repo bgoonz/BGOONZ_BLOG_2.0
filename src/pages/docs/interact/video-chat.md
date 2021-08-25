@@ -21,6 +21,10 @@ seo:
         Supports video streaming at various resolutions.
       keyName: property
       relativeUrl: false
+    - name: 'og:title'
+      value: 'Zumzi Video Conference:'
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
