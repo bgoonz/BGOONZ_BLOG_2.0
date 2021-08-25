@@ -8,7 +8,13 @@ seo:
     React embraces the fact that rendering logic is inherently coupled with
     other UI logic: how events are handled, how the state changes over time.
   robots: []
-  extra: []
+  extra:
+    - name: 'og:description'
+      value: >-
+        React embraces the fact that rendering logic is inherently coupled with
+        other UI logic: how events are handled, how the state changes over time.
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
