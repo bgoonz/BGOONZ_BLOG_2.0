@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: React Docs
 weight: 0
 excerpt: lorem-ipsum
 seo:
