@@ -2,7 +2,7 @@
 title: Dev Dependencies
 sections: []
 seo:
-  title: ''
+  title: Dependencies
   description: >+
     When you install an npm package using npm install <package-name>, you are
     installing it as a dependency.
