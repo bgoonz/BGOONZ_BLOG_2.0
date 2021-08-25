@@ -2043,6 +2043,9 @@ class Calculator extends React.Component {
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/WZpxpz?editors=0010)**
 
+<iframe src="https://ds-algo-official.netlify.app/" height="900px" width="100%"> </iframe>
+
+
 Now, no matter which input you edit, `this.state.temperature` and `this.state.scale` in the `Calculator` get updated. One of the inputs gets the value as is, so any user input is preserved, and the other input value is always recalculated based on it.
 
 Let's recap what happens when you edit an input:
