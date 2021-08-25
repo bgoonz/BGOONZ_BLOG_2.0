@@ -15,6 +15,10 @@ seo:
         other UI logic: how events are handled, how the state changes over time.
       keyName: property
       relativeUrl: false
+    - name: 'og:title'
+      value: Intro To React
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
