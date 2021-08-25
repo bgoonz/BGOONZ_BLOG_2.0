@@ -1,7 +1,7 @@
 ---
 title: Youtube
 weight: 1
-excerpt: lorem-ipsum
+excerpt: youtube
 seo:
   title: ''
   description: ''
