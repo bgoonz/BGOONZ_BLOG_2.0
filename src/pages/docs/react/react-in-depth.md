@@ -19,6 +19,10 @@ seo:
       value: Intro To React
       keyName: property
       relativeUrl: false
+    - name: 'og:image'
+      value: images/kind-whale.gif
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
