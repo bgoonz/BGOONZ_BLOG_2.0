@@ -24,6 +24,10 @@ seo:
       value: React
       keyName: property
       relativeUrl: true
+    - name: 'og:type'
+      value: Docs
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
