@@ -1,5 +1,5 @@
 ---
-title: Fast Fourier Transform
+title: Discrete Fast Fourier Transform
 weight: 0
 excerpt: Fast Fourier Transform
 seo:
