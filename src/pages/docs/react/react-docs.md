@@ -9,7 +9,14 @@ seo:
   title: ''
   description: ''
   robots: []
-  extra: []
+  extra:
+    - name: 'og:description'
+      value: >-
+        We will examine the building blocks of React apps: elements and
+        components. Once you master them, you can create complex apps from small
+        reusable pieces.
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
