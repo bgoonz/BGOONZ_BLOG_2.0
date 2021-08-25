@@ -1,10 +1,10 @@
 ---
 title: Jupyter Notebooks
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Jupyter Notebooks allow us to combine the power of a python script with the simplicity of a markdown file. 
 seo:
-    title: ''
-    description: ''
+    title: 'Jupyter Notebooks'
+    description: ' Jupyter Notebooks allow us to combine the power of a python script with the simplicity of a markdown file'
     robots: []
     extra: []
     type: stackbit_page_meta
