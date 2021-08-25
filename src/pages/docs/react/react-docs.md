@@ -1223,6 +1223,10 @@ ReactDOM.render(
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/QKzAgB?editors=0010)**
 
+
+
+
+
 While declaring a variable and using an `if` statement is a fine way to conditionally render a component, sometimes you might want to use a shorter syntax. There are a few ways to inline conditions in JSX, explained below.
 
 Inline If with Logical && Operator
