@@ -833,6 +833,14 @@ ReactDOM.render(
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/amqdNA?editors=0010)**
 
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/amqdNA?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
+
 Now the clock ticks every second.
 
 Let's quickly recap what's going on and the order in which the methods are called:
