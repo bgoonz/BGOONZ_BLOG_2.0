@@ -1492,6 +1492,19 @@ ReactDOM.render(
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/ZXeOGM?editors=0010)**
 
+
+
+
+<iframe src="https://codepen.io/gaearon/pen/NRZYGN?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
+
+
+
+
+
+
 A good rule of thumb is that elements inside the `map()` call need keys.
 
 Keys Must Only Be Unique Among Siblings
