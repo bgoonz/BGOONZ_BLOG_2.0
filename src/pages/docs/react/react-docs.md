@@ -1227,6 +1227,10 @@ ReactDOM.render(
 
 
 
+<iframe src="https://codepen.io/gaearon/pen/ozJddz?editors=0010" height="900px" width="100%"> </iframe>
+
+
+
 While declaring a variable and using an `if` statement is a fine way to conditionally render a component, sometimes you might want to use a shorter syntax. There are a few ways to inline conditions in JSX, explained below.
 
 Inline If with Logical && Operator
