@@ -1693,7 +1693,7 @@ class FlavorForm extends React.Component {
 **[Try it on CodePen](https://codepen.io/gaearon/pen/JbbEzX?editors=0010)**
 
 
-
+<iframe src="https://codepen.io/gaearon/pen/wgedvV?editors=0010" height="900px" width="100%"> </iframe>
 
 Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select>` all work very similarly - they all accept a `value` attribute that you can use to implement a controlled component.
 
