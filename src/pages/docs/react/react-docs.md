@@ -1,12 +1,45 @@
 ---
-title: lorem-ipsum
-weight: 0
-excerpt: lorem-ipsum
+title: React Docs
+weight: 1
+excerpt: >-
+  In this guide, we will examine the building blocks of React apps: elements and
+  components. Once you master them, you can create complex apps from small
+  reusable pieces.
 seo:
-  title: ''
-  description: ''
+  title: React
+  description: >-
+    We will examine the building blocks of React apps: elements and components.
+    Once you master them, you can create complex apps from small reusable
+    pieces.
   robots: []
-  extra: []
+  extra:
+    - name: 'og:description'
+      value: >-
+        We will examine the building blocks of React apps: elements and
+        components. Once you master them, you can create complex apps from small
+        reusable pieces.
+      keyName: property
+      relativeUrl: false
+    - name: 'og:image'
+      value: images/react2-1cfd4b21.jpg
+      keyName: property
+      relativeUrl: true
+    - name: 'og:type'
+      value: website
+      keyName: property
+      relativeUrl: false
+    - name: 'twitter:title'
+      value: React Docs
+      keyName: name
+      relativeUrl: false
+    - name: 'twitter:image'
+      value: images/react2-b4316710.jpg
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_image
+      keyName: name
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
