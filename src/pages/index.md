@@ -155,42 +155,13 @@ sections:
             url: /showcase
             style: link
         image: images/My Post.png
-  - title: Mini Projects
-    section_id: Mini Projects
-    image_alt: lorem-ipsum
-    image_position: left
-    content: |
-      <iframe class="block-content" width="100%     width="800" height="575"
-       src="https://iframeshowcase.netlify.app/" title="YouTube video
-       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions:
-      - label: Go To Mini Projects Page
-        url: 'https://iframeshowcase.netlify.app/'
-        style: primary
-        icon_class: dev
-        new_window: true
-        no_follow: false
-        type: action
-    type: section_content
-  - title: Mini Projects
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
-    image_position: left
-    content: |-
-      <iframe class="block-content" width="100%   width="800" height="575"
-       src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
-       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
-  - title: Blog-Archive
+  - title: Blog-Archive-And-Mini-Projects
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     image_position: left
     content: |-
       <iframe class="block-content" width="100%  width="800" height="575"
-        src="https://bgoonz.blogspot.com/" title="YouTube video
+        src="https://random-static-html-deploys.netlify.app/rotate.html" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
