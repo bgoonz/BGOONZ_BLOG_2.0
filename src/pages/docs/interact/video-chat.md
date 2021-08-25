@@ -100,7 +100,7 @@ There are two sub-folders:
 
 ---
 
-![zzumzi](./zumzi.PNG)
+![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.PNG?raw=true)
 
 [.](.)<br>
 ├── [./backend](./backend)<br>
