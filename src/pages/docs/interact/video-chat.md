@@ -11,7 +11,16 @@ seo:
     Screen Sharing
     Supports video streaming at various resolutions.
   robots: []
-  extra: []
+  extra:
+    - name: 'og:description'
+      value: |-
+        Features:
+        Group Voice and Video Call with unlimited members
+        Live Streaming
+        Screen Sharing
+        Supports video streaming at various resolutions.
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
