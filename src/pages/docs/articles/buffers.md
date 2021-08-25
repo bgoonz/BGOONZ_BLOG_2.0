@@ -18,6 +18,10 @@ seo:
       value: Buffer
       keyName: property
       relativeUrl: false
+    - name: 'og:image'
+      value: images/javascript-4ced5a19.gif
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
