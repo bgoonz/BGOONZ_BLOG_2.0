@@ -1881,7 +1881,7 @@ class Calculator extends React.Component {
 
 
 
-<iframe src="https://codepen.io/gaearon/pen/WZpxpz?editors=0010" height="900px" width="100%"> </iframe>
+<iframe src="https://codepen.io/gaearon/pen/jGBryx?editors=0010" height="900px" width="100%"> </iframe>
 
 
 
