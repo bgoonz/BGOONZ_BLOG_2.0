@@ -1,7 +1,7 @@
 ---
 title: Job Search
 weight: 0
-excerpt: lorem-ipsum
+excerpt: the hunt for a we
 seo:
   title: ''
   description: ''
