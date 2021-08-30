@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Job Search
 weight: 0
-excerpt: lorem-ipsum
+excerpt: the hunt for a webdev position
 seo:
   title: ''
   description: ''
