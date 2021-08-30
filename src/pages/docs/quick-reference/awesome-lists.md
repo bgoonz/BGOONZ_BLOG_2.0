@@ -1,7 +1,7 @@
 ---
 title: Awesome Lists
-weight: 0
-excerpt: lorem-ipsum
+weight: 1
+excerpt: this is an awesome list of awesome lists
 seo:
   title: ''
   description: ''
