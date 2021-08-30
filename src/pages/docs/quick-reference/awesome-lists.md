@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Awesome Lists
 weight: 0
 excerpt: lorem-ipsum
 seo:
