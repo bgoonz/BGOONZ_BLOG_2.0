@@ -1,7 +1,7 @@
 ---
 title: Job Search
 weight: 0
-excerpt: the hunt for a we
+excerpt: 'the hunt for a webdev '
 seo:
   title: ''
   description: ''
