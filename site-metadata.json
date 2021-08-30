@@ -80,7 +80,7 @@
                     {
                         "label": "ds-algo",
                         "url": "docs/articles/ds-algo-overview/",
-                        "style": "secondary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -89,7 +89,7 @@
                     {
                         "label": "platform docs",
                         "url": "blog/platform-docs/",
-                        "style": "secondary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -98,7 +98,7 @@
                     {
                         "label": "nodejs",
                         "url": "docs/articles/nodejs/",
-                        "style": "secondary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -107,7 +107,7 @@
                     {
                         "label": "Blog w Comments",
                         "url": "/blogWcomments/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -125,6 +125,15 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
+                        "label": "Medium Articles",
+                        "url": "https://bryanguner.medium.com/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "Resource-Archive-Server",
                         "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
@@ -136,7 +145,7 @@
                     {
                         "label": "Bootcamp Resources",
                         "url": "#",
-                        "style": "secondary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -152,9 +161,9 @@
                         "type": "action"
                     },
                     {
-                        "label": "gist-archive",
+                        "label": "Gallery",
                         "url": "/docs/gallery",
-                        "style": "secondary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -166,15 +175,6 @@
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "depreciated-portfolio",
-                        "url": "https://portfolio42.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     }
@@ -192,9 +192,18 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Dynamic Time Warping",
+                        "label": "DTW-guitar-effects",
                         "url": "/docs/audio/audio",
-                        "style": "link",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Fast Fourier Transform",
+                        "url": "/docs/audio/dfft",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -205,7 +214,7 @@
             },
             {
                 "label": "Projects",
-                "url": "https://curious-zebra-a1329.netlify.app/",
+                "url": "https://project-portfolio42.netlify.app/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
@@ -238,6 +247,15 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
                     }
                 ],
                 "type": "action_menu"
@@ -263,7 +281,7 @@
                     {
                         "label": "alt-blogs",
                         "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                        "style": "secondary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -272,7 +290,7 @@
                     {
                         "label": "Games",
                         "url": "https://bgoonz-games.netlify.app/",
-                        "style": "secondary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -298,7 +316,7 @@
                     },
                     {
                         "label": "Project Centric",
-                        "url": "https://curious-zebra-a1329.netlify.app/",
+                        "url": "https://project-portfolio42.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -308,7 +326,7 @@
                     {
                         "label": "Wordpress Blog",
                         "url": "https://web-dev-hub.com/",
-                        "style": "secondary",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -316,8 +334,8 @@
                     },
                     {
                         "label": "Project Portfolio Gallery",
-                        "url": "https://curious-zebra-a1329.netlify.app/",
-                        "style": "secondary",
+                        "url": "https://project-portfolio42.netlify.app/",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
@@ -335,7 +353,7 @@
                     {
                         "label": "Github HTML Previewer",
                         "url": "https://githtmlpreview.netlify.app/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -344,7 +362,7 @@
                     {
                         "label": "Text Tools",
                         "url": "https://devtools42.netlify.app/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -353,7 +371,7 @@
                     {
                         "label": "Ternary 2 If Else",
                         "url": "https://ternary42.netlify.app/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -362,7 +380,7 @@
                     {
                         "label": "Job Search Resources",
                         "url": "https://determined-dijkstra-ee7390.netlify.app/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -371,7 +389,7 @@
                     {
                         "label": "Setup Checker",
                         "url": "https://github.com/bgoonz/web-dev-setup-checker",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false,
@@ -389,7 +407,7 @@
                     {
                         "label": "WebDev Quizzes",
                         "url": "https://web-dev-interview-prep-quiz-website.netlify.app/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,

@@ -1,24 +1,24 @@
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 
 export const query = graphql`
-  fragment sharpSrc on File {
-    alt: name
-    sharp: childImageSharp {
-      fluid(maxWidth: 1500) {
-        ...GatsbyImageSharpFluid_withWebp_tracedSVG
-      }
+    fragment sharpSrc on File {
+        alt: name
+        sharp: childImageSharp {
+            fluid(maxWidth: 1500) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+        }
+        src: publicURL
+        dataURI
     }
-    src: publicURL
-    dataURI
-  }
-  fragment cover on MdxFrontmatter {
-    cover {
-      source
-      url
-      caption
-      img {
-        ...sharpSrc
-      }
+    fragment cover on MdxFrontmatter {
+        cover {
+            source
+            url
+            caption
+            img {
+                ...sharpSrc
+            }
+        }
     }
-  }
-`
+`;

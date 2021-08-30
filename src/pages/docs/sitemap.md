@@ -23,6 +23,10 @@ seo:
           value: Web Dev Hub
         - name: 'twitter:description'
           value: Navigation Home
+        - name: 'og:image'
+          value: images/background.gif
+          keyName: property
+          relativeUrl: true
 template: docs
 ---
 

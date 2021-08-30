@@ -4,18 +4,15 @@
 
 <div align="center">
 
-### [WEBSITE](https://bgoonz-blog.netlify.app/)
+# [WEBSITE](https://bgoonz-blog.netlify.app/)
+
+# Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
 
 ### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
 
 ## [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
 
 ## [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
-    
-
-- [NETLIFY](https://app.netlify.com/teams/bgoonz/overview)
-
-    
 
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
