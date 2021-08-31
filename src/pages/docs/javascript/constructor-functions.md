@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Constructor Functions
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Constructor Functions
 seo:
   title: ''
   description: ''
