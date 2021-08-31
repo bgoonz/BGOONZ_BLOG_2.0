@@ -10,7 +10,8 @@ seo:
   type: stackbit_page_meta
 template: docs
 ---
-## Sorting Algorithms (W7D3) - Learning Objectives
+## Sorting Algorithms
+
 
 ### Sorting Algorithms
 1. Explain the complexity of and write a function that performs bubble sort on an array of numbers.
