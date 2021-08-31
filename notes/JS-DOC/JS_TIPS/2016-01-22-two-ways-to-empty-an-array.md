@@ -1,15 +1,10 @@
-
-
 title: Two ways to empty an array
 tip-number: 22
 tip-username: microlv
 tip-username-profile: https://github.com/microlv
 tip-tldr: In JavaScript when you want to empty an array, there are a lot ways, but this is the most performant.
 
-
-  - /en/two-ways-to-empty-an-array/
-
-
+-   /en/two-ways-to-empty-an-array/
 
 You define an array and want to empty its contents.
 Usually, you would do it like this:
@@ -23,6 +18,7 @@ function empty() {
 }
 empty();
 ```
+
 But there is another way to empty an array that is more performant.
 
 You should use code like this:
@@ -36,18 +32,18 @@ function empty() {
 empty();
 ```
 
-* `list = []` assigns a reference to a new array to a variable, while any other references are unaffected.
-which means that references to the contents of the previous array are still kept in memory, leading to memory leaks.
+-   `list = []` assigns a reference to a new array to a variable, while any other references are unaffected.
+    which means that references to the contents of the previous array are still kept in memory, leading to memory leaks.
 
-* `list.length = 0` deletes everything in the array, which does hit other references.
+-   `list.length = 0` deletes everything in the array, which does hit other references.
 
 In other words, if you have two references to the same array (`a = [1,2,3]; a2 = a;`), and you delete the array's contents using `list.length = 0`, both references (a and a2) will now point to the same empty array. (So don't use this technique if you don't want a2 to hold an empty array!)
 
 Think about what this will output:
 
 ```js
-var foo = [1,2,3];
-var bar = [1,2,3];
+var foo = [1, 2, 3];
+var bar = [1, 2, 3];
 var foo2 = foo;
 var bar2 = bar;
 foo = [];

@@ -1,5 +1,3 @@
-
-
 title: Insert item inside an Array
 
 tip-number: 00
@@ -8,10 +6,7 @@ tip-username-profile: https://github.com/loverajoel
 tip-tldr: Inserting an item into an existing array is a daily common task. You can add elements to the end of an array using push, to the beginning using unshift, or to the middle using splice.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
-
-  - /en/insert-item-inside-an-array/
-
-
+-   /en/insert-item-inside-an-array/
 
 # Inserting an item into an existing array
 
@@ -24,14 +19,14 @@ Those are known methods, but it doesn't mean there isn't a more performant way. 
 Adding an element at the end of the array is easy with push(), but it can be done in different ways.
 
 ```javascript
-
-var arr = [1,2,3,4,5];
+var arr = [1, 2, 3, 4, 5];
 var arr2 = [];
 
 arr.push(6);
 arr[arr.length] = 6;
 arr2 = arr.concat([6]);
 ```
+
 Both first methods modify the original array. Don't believe me? Check the [jsperf](http://jsperf.com/push-item-inside-an-array)
 
 ### Performance on mobile :
@@ -39,7 +34,7 @@ Both first methods modify the original array. Don't believe me? Check the [jsper
 #### Android (v4.2.2)
 
 1. _arr.push(6);_ and _arr[arr.length] = 6;_ have the same performance // 3 319 694 ops/sec
-3. _arr2 = arr.concat([6]);_ 50.61 % slower than the other two methods
+2. _arr2 = arr.concat([6]);_ 50.61 % slower than the other two methods
 
 #### Chrome Mobile (v33.0.0)
 
@@ -106,11 +101,12 @@ Final victor
 Now if we are trying to add an item to the beginning of the array:
 
 ```javascript
-var arr = [1,2,3,4,5];
+var arr = [1, 2, 3, 4, 5];
 
 arr.unshift(0);
 [0].concat(arr);
 ```
+
 Here is a little more detail: unshift edits the original array; concat returns a new array. [jsperf](http://jsperf.com/unshift-item-inside-an-array)
 
 ### Performance on mobile :

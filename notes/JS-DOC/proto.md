@@ -86,8 +86,6 @@ The `__proto__` property is a simple accessor property on [`Object.prototype`](.
 
     obj.myname(); // myname
 
-
-
 ## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-additional-properties-of-the-object.prototype-object">ECMAScript Language Specification (ECMAScript)<br />

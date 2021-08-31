@@ -1,15 +1,10 @@
-
-
 title: Safe string concatenation
 tip-number: 19
 tip-username: gogainda
 tip-username-profile: https://twitter.com/gogainda
 tip-tldr: Suppose you have a couple of variables with unknown types and you want to concatenate them in a string. To be sure that the arithmetical operation is not be applied during concatenation, use concat
 
-
-  - /en/safe-string-concatenation/
-
-
+-   /en/safe-string-concatenation/
 
 Suppose you have a couple of variables with unknown types and you want to concatenate them in a string. To be sure that the arithmetical operation is not be applied during concatenation, use `concat`:
 

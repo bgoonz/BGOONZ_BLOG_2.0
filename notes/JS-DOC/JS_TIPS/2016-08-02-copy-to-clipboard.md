@@ -1,5 +1,3 @@
-
-
 title: Copy to Clipboard
 tip-number: 56
 tip-username: loverajoel
@@ -7,12 +5,10 @@ tip-username-profile: https://twitter.com/loverajoel
 tip-tldr: This week I had to create a common "Copy to Clipboard" button, I've never created one before and I want to share how I made it.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
+-   /en/copy-to-clipboard/
 
-  - /en/copy-to-clipboard/
+categories: - en - javascript
 
-categories:
-    - en
-    - javascript
 ---
 
 This is a simple tip, this week I had to create a common "Copy to Clipboard" button, I've never created one before and I want to share how I made it.
@@ -27,6 +23,7 @@ document.execCommand('copy');
 ```
 
 ##### Playground
+
 <div>
   <a class="jsbin-embed" href="http://jsbin.com/huhozu/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.11"></script>
 </div>

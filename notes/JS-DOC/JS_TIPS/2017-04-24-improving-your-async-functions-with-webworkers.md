@@ -1,14 +1,11 @@
-
-
 title: Improving your Async functions with WebWorkers
 tip-number: 74
 tip-username: loverajoel
 tip-username-profile: https://github.com/loverajoel
 tip-tldr: JS runs in a single thread in the browser, this is the truth. In this tip I'll show you how to unleash the full power of asynchronous processing with Web Workers.
 
-categories:
-    - en
-    - javascript
+categories: - en - javascript
+
 ---
 
 > JS shall have but one Thread (in the browser at least)
@@ -45,7 +42,7 @@ To do so, you separate the processing part in a different file (possibly
 'my_worker.js'), create a worker with `newWorker = new Worker('my_worker.js');`
 and offload the processing to it.
 
-``` javascript
+```javascript
 // my_worker.js
 const do_a_lot_of_processing = (data) => {
     ....

@@ -1,15 +1,10 @@
-
-
 title: Even simpler way of using `indexOf` as a contains clause
 tip-number: 15
 tip-username: jhogoforbroke
 tip-username-profile: https://twitter.com/jhogoforbroke
 tip-tldr: JavaScript by default does not have a contains method. And for checking existence of a substring in a string or an item in an array you may do this.
 
-
-  - /en/even-simpler-way-of-using-indexof-as-a-contains-clause/
-
-
+-   /en/even-simpler-way-of-using-indexof-as-a-contains-clause/
 
 JavaScript by default does not have a contains method. And for checking existence of a substring in a string or an item in an array you may do this:
 
@@ -27,7 +22,6 @@ But let's look at these [Expressjs](https://github.com/strongloop/express) code 
 
 [examples/mvc/lib/boot.js](https://github.com/strongloop/express/blob/2f8ac6726fa20ab5b4a05c112c886752868ac8ce/examples/mvc/lib/boot.js#L26)
 
-
 ```javascript
 for (var key in obj) {
   // "reserved" exports
@@ -36,17 +30,13 @@ for (var key in obj) {
 
 [lib/utils.js](https://github.com/strongloop/express/blob/2f8ac6726fa20ab5b4a05c112c886752868ac8ce/lib/utils.js#L93)
 
-
 ```javascript
-exports.normalizeType = function(type){
-  return ~type.indexOf('/')
-    ? acceptParams(type)
-    : { value: mime.lookup(type), params: {} };
+exports.normalizeType = function (type) {
+    return ~type.indexOf('/') ? acceptParams(type) : { value: mime.lookup(type), params: {} };
 };
 ```
 
 [examples/web-service/index.js](https://github.com/strongloop/express/blob/2f8ac6726fa20ab5b4a05c112c886752868ac8ce/examples/web-service/index.js#L35)
-
 
 ```javascript
 // key is invalid

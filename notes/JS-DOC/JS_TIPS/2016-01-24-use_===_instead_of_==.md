@@ -1,15 +1,10 @@
-
-
 title: Use === instead of ==
 tip-number: 24
 tip-username: bhaskarmelkani
 tip-username-profile: https://www.twitter.com/bhaskarmelkani
 tip-tldr: The `==` (or `!=`) operator performs an automatic type conversion if needed. The `===` (or `!==`) operator will not perform any conversion. It compares the value and the type, which could be considered faster ([jsPref](http://jsperf.com/strictcompare)) than `==`.
 
-
-  - /en/use_===_instead_of_==/
-
-
+-   /en/use*===\_instead_of*==/
 
 The `==` (or `!=`) operator performs an automatic type conversion if needed. The `===` (or `!==`) operator will not perform any conversion. It compares the value and the type, which could be considered faster ([jsPref](http://jsperf.com/strictcompare)) than `==`.
 
@@ -24,6 +19,6 @@ The `==` (or `!=`) operator performs an automatic type conversion if needed. The
  []  === 0       // is false
 
  ''  ==  false   // is true but true == "a" is false
- ''  === false   // is false 
+ ''  === false   // is false
 
 ```

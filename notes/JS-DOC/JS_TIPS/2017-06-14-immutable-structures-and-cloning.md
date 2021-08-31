@@ -1,14 +1,11 @@
-
-
 title: Immutable structures and cloning
 tip-number: 78
 tip-username: loverajoel
 tip-username-profile: https://github.com/loverajoel
 tip-tldr: Object cloning is a tricky, full of edge-cases, endeavor. The reason is simple enough. Objects maintain internal state, and that is much abused. There are countless techniques, or better phrased, countless derivations of the same technique.
 
-categories:
-    - en
-    - javascript
+categories: - en - javascript
+
 ---
 
 Object cloning is a tricky, full of edge-cases, endeavor. The reason is simple
@@ -44,10 +41,10 @@ library and focus on what matters the most, i.e, your application itself.
 One such library is [pvorb/clone](https://github.com/pvorb/clone), which has a
 very simple API. To clone an object you only have to
 
-``` javascript
+```javascript
 var clone = require('clone');
 
-var a = {foo: {bar: 'baz'}};
+var a = { foo: { bar: 'baz' } };
 var b = clone(a);
 a.foo.bar = 'foo';
 console.log(a); // {foo: {bar: 'foo'}}

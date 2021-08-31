@@ -1,22 +1,17 @@
-
-
 title: Create array sequence `[0, 1, ..., N-1]` in one line
 tip-number: 33
 tip-username: SarjuHansaliya
 tip-username-profile: https://github.com/SarjuHansaliya
 tip-tldr: Compact one-liners that generate ordinal sequence arrays
 
-
-  - /en/create-range-0...n-easily-using-one-line/
-
-
+-   /en/create-range-0...n-easily-using-one-line/
 
 Here are two compact code sequences to generate the `N`-element array `[0, 1, ..., N-1]`:
 
 ### Solution 1 (requires ES5)
 
 ```js
-Array.apply(null, {length: N}).map(Function.call, Number);
+Array.apply(null, { length: N }).map(Function.call, Number);
 ```
 
 #### Brief explanation
@@ -29,9 +24,11 @@ Array.apply(null, {length: N}).map(Function.call, Number);
 For a more thorough explanation, go [here](https://github.com/gromgit/jstips-xe/blob/master/tips/33.md).
 
 ### Solution 2 (requires ES6)
+
 It uses `Array.from` [https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+
 ```js
-Array.from(new Array(N),(val,index)=>index);
+Array.from(new Array(N), (val, index) => index);
 ```
 
 ### Solution 3 (requires ES6)
@@ -52,13 +49,13 @@ Array.from(Array(N).keys());
 If you actually want the sequence [1, 2, ..., N], **Solution 1** becomes:
 
 ```js
-Array.apply(null, {length: N}).map(function(value, index){
-  return index + 1;
+Array.apply(null, { length: N }).map(function (value, index) {
+    return index + 1;
 });
 ```
 
 and **Solution 2**:
 
 ```js
-Array.from(new Array(N),(val,index)=>index+1);
+Array.from(new Array(N), (val, index) => index + 1);
 ```

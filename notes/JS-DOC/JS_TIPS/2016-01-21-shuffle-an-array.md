@@ -1,32 +1,26 @@
-
-
 title: Shuffle an Array
 tip-number: 21
 tip-username: 0xmtn
 tip-username-profile: https://github.com/0xmtn/
 tip-tldr: Fisher-Yates Shuffling it's an algorithm to shuffle an array.
 
+-   /en/shuffle-an-array/
 
-  - /en/shuffle-an-array/
-
-
-
- This snippet here uses [Fisher-Yates Shuffling](https://www.wikiwand.com/en/Fisher%E2%80%93Yates_shuffle) Algorithm to shuffle a given array.
+This snippet here uses [Fisher-Yates Shuffling](https://www.wikiwand.com/en/Fisher%E2%80%93Yates_shuffle) Algorithm to shuffle a given array.
 
 ```javascript
 function shuffle(arr) {
-    var i,
-        j,
-        temp;
+    var i, j, temp;
     for (i = arr.length - 1; i > 0; i--) {
         j = Math.floor(Math.random() * (i + 1));
         temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-    return arr;    
-};
+    return arr;
+}
 ```
+
 An example:
 
 ```javascript
