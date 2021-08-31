@@ -26,6 +26,10 @@ seo:
       value: website
       keyName: property
       relativeUrl: false
+    - name: 'twitter:image'
+      value: images/browserify-25532eef.png
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
