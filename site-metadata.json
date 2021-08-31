@@ -253,7 +253,7 @@
                         "url": "https://bgoonz.github.io/searchAwesome/",
                         "style": "link",
                         "icon_class": "github",
-                        "new_window": false,
+                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     },
