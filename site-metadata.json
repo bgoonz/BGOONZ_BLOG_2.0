@@ -249,7 +249,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "SearchAwesome",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
