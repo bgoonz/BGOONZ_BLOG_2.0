@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Using JSON.Stringify
 tip-number: 40
@@ -11,10 +10,7 @@ tip-tldr: Create string from selected properties of JSON object.
 redirect_from:
   - /en/using-json-stringify/
 
-categories:
-    - en
-    - javascript
----
+
 
 Let's say there is an object with properties "prop1", "prop2", "prop3".
 We can pass __additional params__ to __JSON.stringify__ to selectively write properties of the object to string like:

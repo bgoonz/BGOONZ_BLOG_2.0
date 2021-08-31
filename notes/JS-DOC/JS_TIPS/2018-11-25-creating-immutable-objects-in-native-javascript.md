@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Creating immutable objects in native JavaScript
 tip-number: 74

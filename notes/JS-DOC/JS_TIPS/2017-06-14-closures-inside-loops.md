@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Closures inside loops
 tip-number: 76

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Assignment Operators
 tip-number: 35
@@ -10,10 +9,7 @@ tip-tldr: Assigning is very common. Sometimes typing becomes time consuming for 
 redirect_from:
   - /en/assignment-shorthands/
 
-categories:
-    - en
-    - javascript
----
+
 
 Assigning is very common. Sometimes typing becomes time consuming for us 'Lazy programmers'.
 So, we can use some tricks to help us and make our code cleaner and simpler.

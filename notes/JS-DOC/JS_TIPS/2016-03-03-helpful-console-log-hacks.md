@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Helpful Console Logging Tricks
 tip-number: 50
@@ -10,10 +9,7 @@ tip-tldr: Helpful logging techniques using coercion and conditonal breakpoints.
 redirect_from:
   - /en/helpful-console-log-hacks/
 
-categories:
-    - en
-    - javascript
----
+
 
 ## Using conditional breakpoints to log data
 

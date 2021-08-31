@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Shuffle an Array
 tip-number: 21
@@ -10,10 +9,7 @@ tip-tldr: Fisher-Yates Shuffling it's an algorithm to shuffle an array.
 redirect_from:
   - /en/shuffle-an-array/
 
-categories:
-    - en
-    - javascript
----
+
 
  This snippet here uses [Fisher-Yates Shuffling](https://www.wikiwand.com/en/Fisher%E2%80%93Yates_shuffle) Algorithm to shuffle a given array.
 

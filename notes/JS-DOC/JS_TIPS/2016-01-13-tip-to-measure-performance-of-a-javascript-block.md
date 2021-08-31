@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Tip to measure performance of a javascript block
 tip-number: 13
@@ -10,10 +9,7 @@ tip-tldr: For quickly measuring performance of a javascript block, we can use th
 redirect_from:
   - /en/tip-to-measure-performance-of-a-javascript-block/
 
-categories:
-    - en
-    - javascript
----
+
 
 For quickly measuring performance of a javascript block, we can use the console functions like
 [`console.time(label)`](https://developer.chrome.com/devtools/docs/console-api#consoletimelabel) and [`console.timeEnd(label)`](https://developer.chrome.com/devtools/docs/console-api#consoletimeendlabel)

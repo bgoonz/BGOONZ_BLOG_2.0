@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Passing arguments to callback functions
 tip-number: 16
@@ -10,10 +9,7 @@ tip-tldr: By default you cannot pass arguments to a callback function, but you c
 redirect_from:
   - /en/passing-arguments-to-callback-functions/
 
-categories:
-    - en
-    - javascript
----
+
 
 By default you cannot pass arguments to a callback function. For example:
 

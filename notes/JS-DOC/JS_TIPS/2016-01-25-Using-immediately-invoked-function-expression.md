@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Using immediately invoked function expression
 tip-number: 25
@@ -11,10 +10,7 @@ tip-tldr: Called as "Iffy" ( IIFE - immediately invoked function expression) is 
 redirect_from:
   - /en/Using-immediately-invoked-function-expression/
 
-categories:
-    - en
-    - javascript
----
+
 
 Called as "Iffy" ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.
 

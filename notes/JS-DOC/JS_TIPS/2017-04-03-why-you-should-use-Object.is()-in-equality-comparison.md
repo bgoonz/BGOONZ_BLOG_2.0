@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Why you should use Object.is() in equality comparison 
 tip-number: 68

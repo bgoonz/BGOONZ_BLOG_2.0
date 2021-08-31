@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: DOM event listening made easy
 tip-number: 51
@@ -10,10 +9,7 @@ tip-tldr: An elegant and easy way to handle DOM events
 redirect_from:
   - /en/DOM-event-listening-made-easy/
 
-categories:
-    - en
-    - javascript
----
+
 Many of us are still doing these things:
 
 - `element.addEventListener('type', obj.method.bind(obj))`

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Hash maps without side effects
 tip-number: 73

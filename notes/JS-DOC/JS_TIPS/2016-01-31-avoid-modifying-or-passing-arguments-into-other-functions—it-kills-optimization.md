@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Avoid modifying or passing `arguments` into other functions — it kills optimization
 tip-number: 31
@@ -11,10 +10,7 @@ tip-tldr: Within JavaScript functions, the variable name `arguments` lets you ac
 redirect_from:
   - /en/avoid-modifying-or-passing-arguments-into-other-functions-it-kills-optimization/
 
-categories:
-    - en
-    - javascript
----
+
 
 ###Background
 

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: What is Functional Inheritance?
 tip-number: 75

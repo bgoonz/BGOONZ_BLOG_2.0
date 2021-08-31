@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Get File Extension
 tip-number: 53

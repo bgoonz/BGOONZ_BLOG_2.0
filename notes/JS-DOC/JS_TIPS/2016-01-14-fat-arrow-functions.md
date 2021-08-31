@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Fat Arrow Functions
 tip-number: 14
@@ -10,10 +9,7 @@ tip-tldr: Introduced as a new feature in ES6, fat arrow functions may come as a 
 redirect_from:
   - /en/fat-arrow-functions/
 
-categories:
-    - en
-    - javascript
----
+
 
 Introduced as a new feature in ES6, fat arrow functions may come as a handy tool to write more code in fewer lines. The name comes from its syntax, `=>`, which is a 'fat arrow', as compared to a thin arrow `->`. Some programmers might already know this type of function from different languages such as Haskell, as 'lambda expressions', or as 'anonymous functions'. It is called anonymous, as these arrow functions do not have a descriptive function name.
 

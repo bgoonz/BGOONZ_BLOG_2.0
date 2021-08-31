@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Even simpler way of using `indexOf` as a contains clause
 tip-number: 15
@@ -10,10 +9,7 @@ tip-tldr: JavaScript by default does not have a contains method. And for checkin
 redirect_from:
   - /en/even-simpler-way-of-using-indexof-as-a-contains-clause/
 
-categories:
-    - en
-    - javascript
----
+
 
 JavaScript by default does not have a contains method. And for checking existence of a substring in a string or an item in an array you may do this:
 

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Binding objects to functions
 tip-number: 61

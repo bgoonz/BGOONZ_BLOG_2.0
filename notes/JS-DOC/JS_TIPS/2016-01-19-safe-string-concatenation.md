@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Safe string concatenation
 tip-number: 19
@@ -10,10 +9,7 @@ tip-tldr: Suppose you have a couple of variables with unknown types and you want
 redirect_from:
   - /en/safe-string-concatenation/
 
-categories:
-    - en
-    - javascript
----
+
 
 Suppose you have a couple of variables with unknown types and you want to concatenate them in a string. To be sure that the arithmetical operation is not be applied during concatenation, use `concat`:
 

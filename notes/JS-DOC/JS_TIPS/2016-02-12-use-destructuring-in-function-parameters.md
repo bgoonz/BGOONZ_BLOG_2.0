@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Use destructuring in function parameters
 tip-number: 43
@@ -10,10 +9,7 @@ tip-tldr: Did you know that you can use destructuring in function parameters?
 redirect_from:
   - /en/use-destructuring-in-function-parameters/
 
-categories:
-    - en
-    - javascript
----
+
 
 I am sure many of you are already familiar with the [ES6 Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). Did you know that you can also use it in function parameters? 
 

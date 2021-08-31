@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Speed up recursive functions with memoization
 tip-number: 29
@@ -11,10 +10,7 @@ tip-tldr: Fibonacci sequence is very familiar to everybody. we can write the fol
 redirect_from:
   - /en/speed-up-recursive-functions-with-memoization/
 
-categories:
-    - en
-    - javascript
----
+
 
 Fibonacci sequence is very familiar to everybody. We can write the following function in 20 seconds.
 

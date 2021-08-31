@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Create array sequence `[0, 1, ..., N-1]` in one line
 tip-number: 33
@@ -10,10 +9,7 @@ tip-tldr: Compact one-liners that generate ordinal sequence arrays
 redirect_from:
   - /en/create-range-0...n-easily-using-one-line/
 
-categories:
-    - en
-    - javascript
----
+
 
 Here are two compact code sequences to generate the `N`-element array `[0, 1, ..., N-1]`:
 

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: ES6, var vs let
 tip-number: 59

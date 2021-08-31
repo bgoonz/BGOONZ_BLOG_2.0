@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Implementing asynchronous loop
 tip-number: 34
@@ -10,10 +9,7 @@ tip-tldr: You may run into problems while implementing asynchronous loops.
 redirect_from:
   - /en/implementing-asynchronous-loops/
 
-categories:
-    - en
-    - javascript
----
+
 
 Let's try out writing an asynchronous function which prints the value of the loop index every second.
 

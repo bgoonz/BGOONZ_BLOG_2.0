@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Preventing Unapply Attacks
 tip-number: 42
@@ -10,10 +9,7 @@ tip-tldr: Freeze the builtin prototypes.
 redirect_from:
   - /en/preventing-unapply-attacks/
 
-categories:
-    - en
-    - javascript
----
+
 
 By overriding the builtin prototypes, external code can cause code to break by rewriting code to expose and change bound arguments. This can be an issue that seriously breaks applications that works by using polyfill es5 methods.
 

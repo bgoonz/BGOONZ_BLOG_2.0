@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Basics declarations
 tip-number: 47
@@ -10,10 +9,7 @@ tip-tldr: Understand and work with declarations.
 redirect_from:
   - /en/basics-declarations/
 
-categories:
-    - en
-    - javascript
----
+
 
 Below, different ways to declare variables in JavaScript. 
 Comments and console.log should be enough to explain what's happening here:

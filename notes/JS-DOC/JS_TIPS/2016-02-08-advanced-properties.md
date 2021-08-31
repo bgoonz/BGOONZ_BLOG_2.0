@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Advanced Javascript Properties
 tip-number: 39
@@ -11,10 +10,7 @@ tip-tldr: How to add private properties, getters and setters to objects.
 redirect_from:
   - /en/advanced-properties/
 
-categories:
-    - en
-    - javascript
----
+
 
 It is possible to configure object properties in Javascript for example to set properties to be pseudo-private or readonly. This feature is available since ECMAScript 5.1, therefore supported by all recent browsers.
 

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: What is a spread operator?
 tip-number: 78

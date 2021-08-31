@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: How to use optional arguments in functions (with optional callback)
 tip-number: 54

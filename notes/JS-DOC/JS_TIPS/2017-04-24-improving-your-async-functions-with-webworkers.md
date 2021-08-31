@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Improving your Async functions with WebWorkers
 tip-number: 74

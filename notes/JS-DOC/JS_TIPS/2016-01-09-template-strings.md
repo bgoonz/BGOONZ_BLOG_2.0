@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Template Strings
 tip-number: 09
@@ -10,10 +9,7 @@ tip-tldr: As of ES6, JS now has template strings as an alternative to the classi
 redirect_from:
   - /en/template-strings/
 
-categories:
-    - en
-    - javascript
----
+
 
 As of ES6, JS now has template strings as an alternative to the classic end quotes strings.
 

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Recursion, iteration and tail calls in JS
 tip-number: 67

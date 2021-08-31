@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Map() to the rescue; adding order to Object properties
 tip-number: 32
@@ -11,10 +10,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 redirect_from:
   - /en/map-to-the-rescue-adding-order-to-object-properties/
 
-categories:
-    - en
-    - javascript
----
+
 
 ## Object properties order
 

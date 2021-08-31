@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Use === instead of ==
 tip-number: 24
@@ -10,10 +9,7 @@ tip-tldr: The `==` (or `!=`) operator performs an automatic type conversion if n
 redirect_from:
   - /en/use_===_instead_of_==/
 
-categories:
-    - en
-    - javascript
----
+
 
 The `==` (or `!=`) operator performs an automatic type conversion if needed. The `===` (or `!==`) operator will not perform any conversion. It compares the value and the type, which could be considered faster ([jsPref](http://jsperf.com/strictcompare)) than `==`.
 

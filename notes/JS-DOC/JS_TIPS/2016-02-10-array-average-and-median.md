@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Array average and median
 tip-number: 41
@@ -11,10 +10,7 @@ tip-tldr: Calculate the average and median from array values
 redirect_from:
   - /en/array-average-and-median/
 
-categories:
-    - en
-    - javascript
----
+
 
 The following examples will be based on the following array:
 

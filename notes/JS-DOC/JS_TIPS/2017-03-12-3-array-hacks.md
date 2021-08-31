@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: 3 Array Hacks
 tip-number: 64

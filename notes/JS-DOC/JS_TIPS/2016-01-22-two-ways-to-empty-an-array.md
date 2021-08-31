@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Two ways to empty an array
 tip-number: 22
@@ -10,10 +9,7 @@ tip-tldr: In JavaScript when you want to empty an array, there are a lot ways, b
 redirect_from:
   - /en/two-ways-to-empty-an-array/
 
-categories:
-    - en
-    - javascript
----
+
 
 You define an array and want to empty its contents.
 Usually, you would do it like this:

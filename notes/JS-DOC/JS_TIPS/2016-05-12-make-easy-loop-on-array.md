@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Create an easy loop using an array
 tip-number: 55

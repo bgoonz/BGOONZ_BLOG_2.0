@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: What is a currying function?
 tip-number: 75

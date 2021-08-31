@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Immutable structures and cloning
 tip-number: 78

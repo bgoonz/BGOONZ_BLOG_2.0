@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Observe DOM changes in extensions
 tip-number: 36
@@ -11,10 +10,7 @@ tip-tldr: When you develop extensions to existent sites it's not so easy to play
 redirect_from:
   - /en/observe-dom-changes/
 
-categories:
-    - en
-    - javascript
----
+
 [MutationObserver](https://developer.mozilla.org/en/docs/Web/API/MutationObserver) is a solution to listen DOM changes and do what you want to do with elements when they changed. In following example there is some emulation of dynamic content loading with help of timers, after first "target" element creation goes "subTarget".
 In extension code firstly rootObserver works till targetElement appearance then elementObserver starts. This cascading observing helps finally get moment when subTargetElement found.
 This useful to develop extensions to complex sites with dynamic content loading.

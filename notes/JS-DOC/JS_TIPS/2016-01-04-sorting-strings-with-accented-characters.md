@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Sorting strings with accented characters
 tip-number: 04
@@ -11,10 +10,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 redirect_from:
   - /en/sorting-strings-with-accented-characters/
 
-categories:
-    - en
-    - javascript
----
+
 
 Javascript has a native method **[sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)** that allows sorting arrays. Doing a simple `array.sort()` will treat each array entry as a string and sort it alphabetically. Also you can provide your [own custom sorting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters) function.
 

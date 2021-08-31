@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Improve Nested Conditionals
 tip-number: 03
@@ -10,10 +9,7 @@ tip-tldr: How can we improve and make a more efficient nested `if` statement in 
 redirect_from:
   - /en/improve-nested-conditionals/
 
-categories:
-    - en
-    - javascript
----
+
 
 How can we improve and make a more efficient nested `if` statement in javascript?
 

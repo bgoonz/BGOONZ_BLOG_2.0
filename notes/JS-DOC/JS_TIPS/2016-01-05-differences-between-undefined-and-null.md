@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Differences between `undefined` and `null`
 tip-number: 05
@@ -11,10 +10,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 redirect_from:
   - /en/differences-between-undefined-and-null/
 
-categories:
-    - en
-    - javascript
----
+
 
 - `undefined` means a variable has not been declared, or has been declared but has not yet been assigned a value
 - `null` is an assignment value that means "no value"

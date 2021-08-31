@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: What is a void operator?
 tip-number: 79

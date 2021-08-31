@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Comma operator in JS
 tip-number: 57

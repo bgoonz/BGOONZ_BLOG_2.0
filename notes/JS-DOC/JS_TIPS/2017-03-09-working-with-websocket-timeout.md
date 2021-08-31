@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Working With Websocket Timeout
 tip-number: 63

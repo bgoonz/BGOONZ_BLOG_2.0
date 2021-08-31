@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Converting truthy/falsy values to boolean
 tip-number: 30
@@ -11,10 +10,7 @@ tip-tldr: Logical operators are a core part of JavaScript, here you can see a a 
 redirect_from:
   - /en/converting-truthy-falsy-values-to-boolean/
 
-categories:
-    - en
-    - javascript
----
+
 
 You can convert a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) or [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) value to true boolean with the `!!` operator.
 

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Know the passing mechanism
 tip-number: 44
@@ -10,10 +9,7 @@ tip-tldr: JavaScript technically only passes by value for both primitives and ob
 redirect_from:
   - /en/know-the-passing-mechanism/
 
-categories:
-    - en
-    - javascript
----
+
 
 JavaScript is pass-by-value, technically. It is neither pass-by-value nor pass-by-reference, going by the truest sense of these terms. To understand this passing mechanism, take a look at the following two example code snippets and the explanations.
 

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Insert item inside an Array
 
@@ -12,10 +11,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 redirect_from:
   - /en/insert-item-inside-an-array/
 
-categories:
-    - en
-    - javascript
----
+
 
 # Inserting an item into an existing array
 

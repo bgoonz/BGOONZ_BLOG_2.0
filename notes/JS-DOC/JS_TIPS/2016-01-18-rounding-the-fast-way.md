@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Truncating the fast (but risky) way
 tip-number: 18
@@ -10,10 +9,7 @@ tip-tldr: .`~~X` is usually a faster `Math.trunc(X)`, but can also make your cod
 redirect_from:
   - /en/rounding-the-fast-way/
 
-categories:
-    - en
-    - javascript
----
+
 
 This tip is about performance...with a hidden price tag.
 

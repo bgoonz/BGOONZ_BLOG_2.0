@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: How to `reduce()` arrays
 tip-number: 48
@@ -10,10 +9,7 @@ tip-tldr: Some reminders about using `reduce()`
 redirect_from:
   - /en/reminders-about-reduce-function-usage/
 
-categories:
-    - en
-    - javascript
----
+
 
 As written in documentation the `reduce()` method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.
 

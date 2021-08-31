@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: What is the difference between Target and currentTarget in the event context?
 tip-number: 77

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Filtering and Sorting a List of Strings
 tip-number: 26
@@ -10,10 +9,7 @@ tip-tldr: You may have a big list of names you need to filter in order to remove
 credirect_from:
   - /en/filtering-and-sorting-a-list-of-strings/
 
-categories:
-    - en
-    - javascript
----
+
 
 You may have a big list of names you need to filter in order to remove duplicates and sort them alphabetically.
 

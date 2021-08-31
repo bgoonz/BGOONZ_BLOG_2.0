@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: use strict and get lazy
 tip-number: 07
@@ -10,10 +9,7 @@ tip-tldr: Strict-mode JavaScript makes it easier for the developer to write "sec
 redirect_from:
   - /en/use-strict-and-get-lazy/
 
-categories:
-    - en
-    - javascript
----
+
 
 Strict-mode JavaScript makes it easier for the developer to write "secure" JavaScript.
 

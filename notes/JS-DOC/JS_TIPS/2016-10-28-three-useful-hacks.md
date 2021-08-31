@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Three useful hacks
 tip-number: 60

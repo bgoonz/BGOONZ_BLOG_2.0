@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Easiest way to extract unix timestamp in JS
 tip-number: 49
@@ -10,10 +9,7 @@ tip-tldr: In Javascript you can easily get the unix timestamp
 redirect_from:
   - /en/extract-unix-timestamp-easily/
 
-categories:
-    - en
-    - javascript
----
+
 
 We frequently need to calculate with unix timestamp. There are several ways to grab the timestamp. For current unix timestamp easiest and fastest way is
 

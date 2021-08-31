@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Protocols for the Brave 
 tip-number: 73

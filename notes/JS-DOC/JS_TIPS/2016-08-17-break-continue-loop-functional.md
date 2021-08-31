@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Breaking or continuing loop in functional programming
 tip-number: 58

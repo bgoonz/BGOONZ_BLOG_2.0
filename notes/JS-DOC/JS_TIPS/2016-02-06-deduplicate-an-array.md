@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Deduplicate an Array
 tip-number: 37
@@ -11,10 +10,7 @@ tip-tldr: How to remove duplicate elements, of different data types, from an Arr
 redirect_from:
   - /en/deduplicate-an-array/
 
-categories:
-    - en
-    - javascript
----
+
 
 # Primitives
 If an Array only contains primitive values, we can deduplicate it by

@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Picking and rejecting object properties 
 tip-number: 70

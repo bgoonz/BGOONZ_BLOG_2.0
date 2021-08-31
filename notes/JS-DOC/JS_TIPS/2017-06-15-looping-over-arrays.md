@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Looping over arrays
 tip-number: 79

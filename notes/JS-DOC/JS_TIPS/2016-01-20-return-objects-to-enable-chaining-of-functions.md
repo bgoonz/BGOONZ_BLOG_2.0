@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Return objects to enable chaining of functions
 tip-number: 20
@@ -10,10 +9,7 @@ tip-tldr: When creating functions on an object in Object Oriented Javascript, re
 redirect_from:
   - /en/return-objects-to-enable-chaining-of-functions/
 
-categories:
-    - en
-    - javascript
----
+
 
 When creating functions on an object in Object Oriented Javascript, returning the object in the function will enable you to chain functions together.
 

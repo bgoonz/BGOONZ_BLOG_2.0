@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: What is the Temporal Dead Zone?
 tip-number: 76

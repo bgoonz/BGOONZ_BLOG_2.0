@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Calculate the Max/Min value from an array
 tip-number: 45
@@ -11,10 +10,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 redirect_from:
   - /en/calculate-the-max-min-value-from-an-array/
 
-categories:
-    - en
-    - javascript
----
+
 
 The built-in functions [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max) and [Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min) find the maximum and minimum value of the arguments, respectively.
 

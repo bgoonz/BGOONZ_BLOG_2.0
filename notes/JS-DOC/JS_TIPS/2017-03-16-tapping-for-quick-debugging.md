@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Tapping for quick debugging
 tip-number: 65

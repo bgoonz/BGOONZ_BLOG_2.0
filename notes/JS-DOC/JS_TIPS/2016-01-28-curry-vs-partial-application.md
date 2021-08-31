@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Currying vs partial application
 tip-number: 28
@@ -11,10 +10,7 @@ tip-tldr: Currying and partial application are two ways of transforming a functi
 redirect_from:
   - /en/curry-vs-partial-application/
 
-categories:
-    - en
-    - javascript
----
+
 
 **Currying**
 

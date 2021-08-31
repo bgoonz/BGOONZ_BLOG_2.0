@@ -1,5 +1,4 @@
----
-layout: post
+
 
 title: Copy to Clipboard
 tip-number: 56
