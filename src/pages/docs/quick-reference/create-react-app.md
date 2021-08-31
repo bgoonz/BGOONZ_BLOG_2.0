@@ -1,6 +1,5 @@
 ---
-title: lorem-ipsum
-weight: 0
+title: Getting Started W Create React App
 excerpt: lorem-ipsum
 seo:
   title: ''
