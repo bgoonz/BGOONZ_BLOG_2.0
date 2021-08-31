@@ -14,6 +14,14 @@ seo:
       value: images/react2.jpg
       keyName: property
       relativeUrl: true
+    - name: 'og:description'
+      value: >+
+        install an npm package using npm install you are installing it as a
+        dependency. (npm install --production) to avoid installing those
+        development dependencies.
+
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
