@@ -6,7 +6,7 @@ tip-username: jhogoforbroke
 tip-username-profile: https://twitter.com/jhogoforbroke
 tip-tldr: JavaScript by default does not have a contains method. And for checking existence of a substring in a string or an item in an array you may do this.
 
-redirect_from:
+
   - /en/even-simpler-way-of-using-indexof-as-a-contains-clause/
 
 

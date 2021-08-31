@@ -6,7 +6,7 @@ tip-username: alphashuro
 tip-username-profile: https://github.com/alphashuro
 tip-tldr: You can make function arguments and callback optional
 
-redirect_from:
+
   - /en/use-optional-arguments/
 
 categories:

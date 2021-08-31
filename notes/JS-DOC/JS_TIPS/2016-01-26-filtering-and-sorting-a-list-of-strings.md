@@ -6,7 +6,7 @@ tip-username: davegomez
 tip-username-profile: https://github.com/davegomez
 tip-tldr: You may have a big list of names you need to filter in order to remove duplicates and sort them alphabetically.
 
-credirect_from:
+c
   - /en/filtering-and-sorting-a-list-of-strings/
 
 

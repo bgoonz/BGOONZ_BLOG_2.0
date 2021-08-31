@@ -6,7 +6,7 @@ tip-username: adaniloff
 tip-username-profile: https://github.com/adaniloff
 tip-tldr: Understand and work with declarations.
 
-redirect_from:
+
   - /en/basics-declarations/
 
 

@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/hingsir
 tip-tldr: Fibonacci sequence is very familiar to everybody. we can write the following function in 20 seconds.it works, but not efficient. it did lots of duplicate computing works, we can cache its previously computed results to speed it up.
 
 
-redirect_from:
+
   - /en/speed-up-recursive-functions-with-memoization/
 
 

@@ -7,7 +7,7 @@ tip-username-profile: https://www.twitter.com/loverajoel
 tip-tldr: The cross-browser way to check if the document has loaded in pure JavaScript
 tip-writer-support: https://www.coinbase.com/loverajoel
 
-redirect_from:
+
   - /en/detect-document-ready-in-pure-js/
 
 

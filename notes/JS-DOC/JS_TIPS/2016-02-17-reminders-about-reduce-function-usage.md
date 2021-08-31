@@ -6,7 +6,7 @@ tip-username: darul75
 tip-username-profile: https://twitter.com/darul75
 tip-tldr: Some reminders about using `reduce()`
 
-redirect_from:
+
   - /en/reminders-about-reduce-function-usage/
 
 

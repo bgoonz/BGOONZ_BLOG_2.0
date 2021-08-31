@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/loverajoel
 tip-tldr: Understanding how to use `Bind` method with objects and functions in JavaScript
 
 
-redirect_from:
+
   - /en/binding-objects-to-functions/
 
 categories:

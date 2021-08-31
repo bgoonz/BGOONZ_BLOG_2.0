@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/beyondns
 tip-tldr: When you develop extensions to existent sites it's not so easy to play with DOM 'cause of modern dynamic javascript.
 
 
-redirect_from:
+
   - /en/observe-dom-changes/
 
 

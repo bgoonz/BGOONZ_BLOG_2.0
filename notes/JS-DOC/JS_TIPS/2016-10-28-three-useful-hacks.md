@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/leandrosimoes
 tip-tldr: Three very useful and syntax sugar hacks to speed up your development.
 
 
-redirect_from:
+
   - /en/three-useful-hacks/
 
 categories:

@@ -6,7 +6,7 @@ tip-username: dislick
 tip-username-profile: https://github.com/dislick
 tip-tldr: Did you know that you can use destructuring in function parameters?
 
-redirect_from:
+
   - /en/use-destructuring-in-function-parameters/
 
 

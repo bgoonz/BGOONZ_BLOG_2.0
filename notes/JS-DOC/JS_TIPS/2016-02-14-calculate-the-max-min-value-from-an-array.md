@@ -7,7 +7,7 @@ tip-username-profile: https://www.twitter.com/loverajoel
 tip-tldr: Ways to use the built-in functions Math.max() and Math.min() with arrays of numbers
 tip-writer-support: https://www.coinbase.com/loverajoel
 
-redirect_from:
+
   - /en/calculate-the-max-min-value-from-an-array/
 
 

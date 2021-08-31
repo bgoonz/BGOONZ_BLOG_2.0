@@ -6,7 +6,7 @@ tip-username: emars
 tip-username-profile: https://twitter.com/marseltov
 tip-tldr: Freeze the builtin prototypes.
 
-redirect_from:
+
   - /en/preventing-unapply-attacks/
 
 

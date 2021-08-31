@@ -6,7 +6,7 @@ tip-username: pklinger
 tip-username-profile: https://github.com/pklinger/
 tip-tldr: Introduced as a new feature in ES6, fat arrow functions may come as a handy tool to write more code in fewer lines
 
-redirect_from:
+
   - /en/fat-arrow-functions/
 
 

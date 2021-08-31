@@ -6,7 +6,7 @@ tip-username: richzw
 tip-username-profile: https://github.com/richzw
 tip-tldr: How to get the file extension more efficiently?
 
-redirect_from:
+
   - /en/get-file-extension/
 
 categories:

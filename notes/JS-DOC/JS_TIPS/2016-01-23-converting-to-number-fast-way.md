@@ -6,7 +6,7 @@ tip-username: sonnyt
 tip-username-profile: http://twitter.com/sonnyt
 tip-tldr: Converting strings to numbers is extremely common. The easiest and fastest way to achieve that would be using the + operator.
 
-redirect_from:
+
   - /en/converting-to-number-fast-way/
 
 

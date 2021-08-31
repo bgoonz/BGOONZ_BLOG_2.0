@@ -6,7 +6,7 @@ tip-username: Avraam Mavridis
 tip-username-profile: https://github.com/AvraamMavridis
 tip-tldr: In many programming languages the parameters of a function are by default mandatory and the developer has to explicitly define that a parameter is optional.
 
-redirect_from:
+
   - /en/pseudomandatory-parameters-in-es6-functions/
 
 

@@ -8,7 +8,7 @@ tip-tldr: Three different solutions to merge multidimensional array into a singl
 tip-writer-support: https://www.coinbase.com/loverajoel
 
 
-redirect_from:
+
   - /en/flattening-multidimensional-arrays-in-javascript/
 
 

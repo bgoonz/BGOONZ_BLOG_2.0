@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/berkana
 tip-tldr: Within JavaScript functions, the variable name `arguments` lets you access all of the arguments passed to the function. `arguments` is an *array-like object*; `arguments` can be accessed using array notation, and it has the *length* property, but it doesn't have many of the built-in methods that arrays have such as `filter` and `map` and `forEach`. Because of this, it is a fairly common practice to convert `arguments` into an array using the following snipet
 
 
-redirect_from:
+
   - /en/avoid-modifying-or-passing-arguments-into-other-functions-it-kills-optimization/
 
 

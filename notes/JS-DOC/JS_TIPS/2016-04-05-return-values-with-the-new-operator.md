@@ -6,7 +6,7 @@ tip-username: Morklympious
 tip-username-profile: https://github.com/morklympious
 tip-tldr: Understand what gets returned when using new vs. not using new.
 
-redirect_from:
+
   - /en/return-values-with-the-new-operator/
 
 

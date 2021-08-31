@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/vamshisuram
 tip-tldr: A common task for us is iterate over a list looking for a value or values, but we can't return from inside a loop so we will have to iterate the whole array, even if the item we search is the first in the list, in this tip we will see how to short circuit with `.some` and `.every`.
 
 
-redirect_from:
+
   - /en/break-continue-loop-functional/
 
 categories:

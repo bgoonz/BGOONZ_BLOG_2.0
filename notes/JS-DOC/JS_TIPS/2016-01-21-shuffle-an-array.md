@@ -6,7 +6,7 @@ tip-username: 0xmtn
 tip-username-profile: https://github.com/0xmtn/
 tip-tldr: Fisher-Yates Shuffling it's an algorithm to shuffle an array.
 
-redirect_from:
+
   - /en/shuffle-an-array/
 
 

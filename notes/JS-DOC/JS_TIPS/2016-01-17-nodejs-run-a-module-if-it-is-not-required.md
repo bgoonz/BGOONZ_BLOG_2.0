@@ -6,7 +6,7 @@ tip-username: odsdq
 tip-username-profile: https://twitter.com/odsdq
 tip-tldr: In node, you can tell your program to do two different things depending on whether the code is run from `require('./something.js')` or `node something.js`. This is useful if you want to interact with one of your modules independently.
 
-redirect_from:
+
   - /en/nodejs-run-a-module-if-it-is-not-required/
 
 

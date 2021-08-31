@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/vamshisuram
 tip-tldr: Create string from selected properties of JSON object.
 
 
-redirect_from:
+
   - /en/using-json-stringify/
 
 

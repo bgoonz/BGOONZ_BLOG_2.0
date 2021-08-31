@@ -6,7 +6,7 @@ tip-username: microlv
 tip-username-profile: https://github.com/microlv
 tip-tldr: In JavaScript when you want to empty an array, there are a lot ways, but this is the most performant.
 
-redirect_from:
+
   - /en/two-ways-to-empty-an-array/
 
 

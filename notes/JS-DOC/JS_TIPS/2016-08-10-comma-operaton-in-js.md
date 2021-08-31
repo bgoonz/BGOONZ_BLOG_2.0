@@ -6,7 +6,7 @@ tip-username: bhaskarmelkani
 tip-username-profile: https://www.twitter.com/bhaskarmelkani
 tip-tldr: When placed in an expression, it evaluates every expression from left to right and returns the last one.
 
-redirect_from:
+
   - /en/comma-operaton-in-js/
 
 categories:

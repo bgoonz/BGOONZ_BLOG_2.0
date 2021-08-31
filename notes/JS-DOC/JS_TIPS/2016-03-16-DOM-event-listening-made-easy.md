@@ -6,7 +6,7 @@ tip-username: octopitus
 tip-username-profile: https://github.com/octopitus
 tip-tldr: An elegant and easy way to handle DOM events
 
-redirect_from:
+
   - /en/DOM-event-listening-made-easy/
 
 

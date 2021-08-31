@@ -6,7 +6,7 @@ tip-username: SarjuHansaliya
 tip-username-profile: https://github.com/SarjuHansaliya
 tip-tldr: Compact one-liners that generate ordinal sequence arrays
 
-redirect_from:
+
   - /en/create-range-0...n-easily-using-one-line/
 
 

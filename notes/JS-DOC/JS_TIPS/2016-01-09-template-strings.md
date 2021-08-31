@@ -6,7 +6,7 @@ tip-username: JakeRawr
 tip-username-profile: https://github.com/JakeRawr
 tip-tldr: As of ES6, JS now has template strings as an alternative to the classic end quotes strings.
 
-redirect_from:
+
   - /en/template-strings/
 
 

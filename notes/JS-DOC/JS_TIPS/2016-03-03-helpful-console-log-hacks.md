@@ -6,7 +6,7 @@ tip-username: zackhall
 tip-username-profile: https://twitter.com/zthall
 tip-tldr: Helpful logging techniques using coercion and conditonal breakpoints.
 
-redirect_from:
+
   - /en/helpful-console-log-hacks/
 
 

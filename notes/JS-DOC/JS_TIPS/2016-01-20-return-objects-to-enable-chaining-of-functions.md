@@ -6,7 +6,7 @@ tip-username: WakeskaterX
 tip-username-profile: https://twitter.com/WakeStudio
 tip-tldr: When creating functions on an object in Object Oriented Javascript, returning the object in the function will enable you to chain functions together.
 
-redirect_from:
+
   - /en/return-objects-to-enable-chaining-of-functions/
 
 

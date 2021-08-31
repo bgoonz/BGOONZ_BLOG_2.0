@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/soyuka
 tip-tldr: Calculate the average and median from array values
 
 
-redirect_from:
+
   - /en/array-average-and-median/
 
 

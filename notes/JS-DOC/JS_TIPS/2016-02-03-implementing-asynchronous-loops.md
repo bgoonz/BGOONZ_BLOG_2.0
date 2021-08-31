@@ -6,7 +6,7 @@ tip-username: madmantalking
 tip-username-profile: https://github.com/madmantalking
 tip-tldr: You may run into problems while implementing asynchronous loops. 
 
-redirect_from:
+
   - /en/implementing-asynchronous-loops/
 
 

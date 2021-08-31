@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/richzw
 tip-tldr: In this tip, I will introduce the block-scope difference between keyword var and let. Should I replace var by let? let's take a look
 
 
-redirect_from:
+
   - /en/keyword-var-vs-let/
 
 categories:

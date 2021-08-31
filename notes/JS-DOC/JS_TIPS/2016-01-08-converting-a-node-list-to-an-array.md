@@ -6,7 +6,7 @@ tip-username: Tevko
 tip-username-profile: https://twitter.com/tevko
 tip-tldr: Here's a quick, safe, and reusable way to convert a node list into an array of DOM elements.
 
-redirect_from:
+
   - /en/converting-a-node-list-to-an-array/
 
 

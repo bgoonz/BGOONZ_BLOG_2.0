@@ -6,7 +6,7 @@ tip-username: manmadareddy
 tip-username-profile: https://twitter.com/manmadareddy
 tip-tldr: For quickly measuring performance of a javascript block, we can use the console functions like `console.time(label)` and `console.timeEnd(label)`
 
-redirect_from:
+
   - /en/tip-to-measure-performance-of-a-javascript-block/
 
 

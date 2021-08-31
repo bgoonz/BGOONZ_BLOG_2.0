@@ -7,7 +7,7 @@ tip-username-profile: https://www.twitter.com/danillouz
 tip-tldr: How to remove duplicate elements, of different data types, from an Array.
 
 
-redirect_from:
+
   - /en/deduplicate-an-array/
 
 

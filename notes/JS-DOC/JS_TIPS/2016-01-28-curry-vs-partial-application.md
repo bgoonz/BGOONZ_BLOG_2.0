@@ -7,7 +7,7 @@ tip-username-profile: https://www.twitter.com/bhaskarmelkani
 tip-tldr: Currying and partial application are two ways of transforming a function into another function with a generally smaller arity.
 
 
-redirect_from:
+
   - /en/curry-vs-partial-application/
 
 

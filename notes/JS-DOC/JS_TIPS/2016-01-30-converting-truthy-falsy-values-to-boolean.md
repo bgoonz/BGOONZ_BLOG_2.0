@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/hakhag
 tip-tldr: Logical operators are a core part of JavaScript, here you can see a a way you always get a true or false no matter what was given to it.
 
 
-redirect_from:
+
   - /en/converting-truthy-falsy-values-to-boolean/
 
 

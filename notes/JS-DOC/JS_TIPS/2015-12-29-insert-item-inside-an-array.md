@@ -8,7 +8,7 @@ tip-username-profile: https://github.com/loverajoel
 tip-tldr: Inserting an item into an existing array is a daily common task. You can add elements to the end of an array using push, to the beginning using unshift, or to the middle using splice.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
-redirect_from:
+
   - /en/insert-item-inside-an-array/
 
 

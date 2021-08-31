@@ -6,7 +6,7 @@ tip-username: nainslie
 tip-username-profile: https://twitter.com/nat5an
 tip-tldr: Strict-mode JavaScript makes it easier for the developer to write "secure" JavaScript.
 
-redirect_from:
+
   - /en/use-strict-and-get-lazy/
 
 

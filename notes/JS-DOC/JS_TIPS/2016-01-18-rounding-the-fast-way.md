@@ -6,7 +6,7 @@ tip-username: pklinger
 tip-username-profile: https://github.com/pklinger
 tip-tldr: .`~~X` is usually a faster `Math.trunc(X)`, but can also make your code do nasty things.
 
-redirect_from:
+
   - /en/rounding-the-fast-way/
 
 

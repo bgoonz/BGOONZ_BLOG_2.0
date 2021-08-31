@@ -6,7 +6,7 @@ tip-username: bmkmanoj
 tip-username-profile: https://github.com/bmkmanoj
 tip-tldr: JavaScript technically only passes by value for both primitives and object (or reference) types. In case of reference types the reference value itself is passed by value.
 
-redirect_from:
+
   - /en/know-the-passing-mechanism/
 
 

@@ -6,7 +6,7 @@ tip-username: minhazav
 tip-username-profile: https://twitter.com/minhazav
 tip-tldr: By default you cannot pass arguments to a callback function, but you can take advantage of the closure scope in Javascript to pass arguments to callback functions.
 
-redirect_from:
+
   - /en/passing-arguments-to-callback-functions/
 
 

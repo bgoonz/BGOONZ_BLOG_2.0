@@ -7,7 +7,7 @@ tip-username-profile: https://twitter.com/loverajoel
 tip-tldr: This week I had to create a common "Copy to Clipboard" button, I've never created one before and I want to share how I made it.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
-redirect_from:
+
   - /en/copy-to-clipboard/
 
 categories:

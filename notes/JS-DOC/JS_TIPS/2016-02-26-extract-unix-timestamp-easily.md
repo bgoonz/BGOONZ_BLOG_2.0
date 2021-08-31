@@ -6,7 +6,7 @@ tip-username: nmrony
 tip-username-profile: https://github.com/nmrony
 tip-tldr: In Javascript you can easily get the unix timestamp
 
-redirect_from:
+
   - /en/extract-unix-timestamp-easily/
 
 

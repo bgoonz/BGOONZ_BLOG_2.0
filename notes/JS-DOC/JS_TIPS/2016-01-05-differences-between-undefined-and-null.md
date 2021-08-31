@@ -7,7 +7,7 @@ tip-username-profile: https://github.com/loverajoel
 tip-tldr: Understanding the differences between `undefined` and `null`.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
-redirect_from:
+
   - /en/differences-between-undefined-and-null/
 
 

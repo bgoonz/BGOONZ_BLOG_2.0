@@ -6,7 +6,7 @@ tip-username: jamet-julien
 tip-username-profile: https://github.com/jamet-julien
 tip-tldr: Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it “looping powers” 
 
-redirect_from:
+
   - /en/make-easy-loop-on-array/
 
 categories:
