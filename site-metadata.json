@@ -43,7 +43,7 @@
                     },
                     {
                         "label": "Python",
-                        "url": "/docs/docs/python",
+                        "url": "/docs/python/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
