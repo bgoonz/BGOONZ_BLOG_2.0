@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Sorting Algorithms
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Sorting Algorithms
 seo:
   title: ''
   description: ''
