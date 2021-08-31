@@ -34,6 +34,10 @@ seo:
       value: summary_large_image
       keyName: name
       relativeUrl: false
+    - name: 'og:title'
+      value: Dev Dependencies
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
