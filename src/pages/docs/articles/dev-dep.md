@@ -4,8 +4,9 @@ sections: []
 seo:
   title: Dependencies
   description: >+
-    When you install an npm package using npm install <package-name>, you are
-    installing it as a dependency.
+    install an npm package using npm install you are installing it as a
+    dependency. (npm install --production) to avoid installing those development
+    dependencies.
 
   robots: []
   extra:
