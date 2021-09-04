@@ -126,7 +126,7 @@ sections:
         actions: []
         type: grid_item
         image: images/jamstack.png
-      - title: Asynchronous Code
+      - title: Asynchronous JavaScript
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
