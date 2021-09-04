@@ -24,6 +24,343 @@
 
 </div>
 
+
+[Global Site Tag](https://trends.builtwith.com/analytics/Global-Site-Tag)
+-------------------------------------------------------------------------
+
+[Global Site Tag Usage Statistics](https://trends.builtwith.com/analytics/Global-Site-Tag) - [Download List of All Websites using Global Site Tag](https://trends.builtwith.com/websitelist/Global-Site-Tag)
+
+Google's primary tag for Google Measurement/Conversion Tracking, Adwords and DoubleClick.
+
+[Google Analytics](https://trends.builtwith.com/analytics/Google-Analytics)
+---------------------------------------------------------------------------
+
+[Google Analytics Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics) - [Download List of All Websites using Google Analytics](https://trends.builtwith.com/websitelist/Google-Analytics)
+
+Google Analytics offers a host of compelling features and benefits for everyone from senior executives and advertising and marketing professionals to site owners and content developers.
+
+[Application Performance](https://trends.builtwith.com/analytics/application-performance) - [Audience Measurement](https://trends.builtwith.com/analytics/audience-measurement) - [Visitor Count Tracking](https://trends.builtwith.com/analytics/visitor-count-tracking)
+
+##### [Google Analytics 4](https://trends.builtwith.com/analytics/Google-Analytics-4)
+
+[Google Analytics 4 Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics-4) - [Download List of All Websites using Google Analytics 4](https://trends.builtwith.com/websitelist/Google-Analytics-4)
+
+Google Analytics 4 formerly known as App + Web is a new version of Google Analytics that was released in October 2020.
+
+###### Widgets
+
+[View Global Trends](https://trends.builtwith.com/widgets)
+
+[Imgur](https://trends.builtwith.com/widgets/Imgur)
+---------------------------------------------------
+
+[Imgur Usage Statistics](https://trends.builtwith.com/widgets/Imgur) - [Download List of All Websites using Imgur](https://trends.builtwith.com/websitelist/Imgur)
+
+The page contains content from image sharing website imgur.
+
+[Google Font API](https://trends.builtwith.com/widgets/Google-Font-API)
+-----------------------------------------------------------------------
+
+[Google Font API Usage Statistics](https://trends.builtwith.com/widgets/Google-Font-API) - [Download List of All Websites using Google Font API](https://trends.builtwith.com/websitelist/Google-Font-API)
+
+The Google Font API helps you add web fonts to any web page.
+
+[Fonts](https://trends.builtwith.com/widgets/fonts)
+
+[Google Tag Manager](https://trends.builtwith.com/widgets/Google-Tag-Manager)
+-----------------------------------------------------------------------------
+
+[Google Tag Manager Usage Statistics](https://trends.builtwith.com/widgets/Google-Tag-Manager) - [Download List of All Websites using Google Tag Manager](https://trends.builtwith.com/websitelist/Google-Tag-Manager)
+
+Tag management that lets you add and update website tags without changes to underlying website code.
+
+[Tag Management](https://trends.builtwith.com/widgets/tag-management)
+
+[Icons8](https://trends.builtwith.com/widgets/Icons8)
+-----------------------------------------------------
+
+[Icons8 Usage Statistics](https://trends.builtwith.com/widgets/Icons8) - [Download List of All Websites using Icons8](https://trends.builtwith.com/websitelist/Icons8)
+
+Icons, photos and illustrations.
+
+[Image Provider](https://trends.builtwith.com/widgets/image-provider)
+
+[Lorem Ipsum](https://trends.builtwith.com/widgets/Lorem-Ipsum)
+---------------------------------------------------------------
+
+[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
+
+This website contains the phrase 'lorem ipsum' which means it may have placeholder text.
+
+[AddThis](https://trends.builtwith.com/widgets/AddThis)
+-------------------------------------------------------
+
+[AddThis Usage Statistics](https://trends.builtwith.com/widgets/AddThis) - [Download List of All Websites using AddThis](https://trends.builtwith.com/websitelist/AddThis)
+
+Widgets that allow visitors to save and promote the site.
+
+[Social Sharing](https://trends.builtwith.com/widgets/social-sharing) - [Bookmarking](https://trends.builtwith.com/widgets/bookmarking)
+
+[tawk.to](https://trends.builtwith.com/widgets/tawk.to)
+-------------------------------------------------------
+
+[tawk.to Usage Statistics](https://trends.builtwith.com/widgets/tawk.to) - [Download List of All Websites using tawk.to](https://trends.builtwith.com/websitelist/tawk.to)
+
+tawk.to is a free live chat app that lets you monitor and chat with visitors.
+
+[Live Chat](https://trends.builtwith.com/widgets/live-chat)
+
+###### Frameworks
+
+[View Global Trends](https://trends.builtwith.com/framework)
+
+[Gatsby JS](https://trends.builtwith.com/framework/Gatsby-JS)
+-------------------------------------------------------------
+
+[Gatsby JS Usage Statistics](https://trends.builtwith.com/framework/Gatsby-JS) - [Download List of All Websites using Gatsby JS](https://trends.builtwith.com/websitelist/Gatsby-JS)
+
+Modern website and web apps generator for React.
+
+###### Mobile
+
+[View Global Trends](https://trends.builtwith.com/mobile)
+
+[Viewport Meta](https://trends.builtwith.com/mobile/Viewport-Meta)
+------------------------------------------------------------------
+
+[Viewport Meta Usage Statistics](https://trends.builtwith.com/mobile/Viewport-Meta) - [Download List of All Websites using Viewport Meta](https://trends.builtwith.com/websitelist/Viewport-Meta)
+
+This page uses the viewport meta tag which means the content may be optimized for mobile content.
+
+[IPhone / Mobile Compatible](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible)
+--------------------------------------------------------------------------------------------
+
+[IPhone / Mobile Compatible Usage Statistics](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible) - [Download List of All Websites using IPhone / Mobile Compatible](https://trends.builtwith.com/websitelist/IPhone---Mobile-Compatible)
+
+The website contains code that allows the page to support IPhone / Mobile Content.
+
+[Apple Mobile Web Clips Icon](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon)
+----------------------------------------------------------------------------------------------
+
+[Apple Mobile Web Clips Icon Usage Statistics](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon) - [Download List of All Websites using Apple Mobile Web Clips Icon](https://trends.builtwith.com/websitelist/Apple-Mobile-Web-Clips-Icon)
+
+This page contains an icon for iPhone, iPad and iTouch devices.
+
+###### Content Delivery Network
+
+[View Global Trends](https://trends.builtwith.com/cdn)
+
+[AJAX Libraries API](https://trends.builtwith.com/cdn/AJAX-Libraries-API)
+-------------------------------------------------------------------------
+
+[AJAX Libraries API Usage Statistics](https://trends.builtwith.com/cdn/AJAX-Libraries-API) - [Download List of All Websites using AJAX Libraries API](https://trends.builtwith.com/websitelist/AJAX-Libraries-API)
+
+The AJAX Libraries API is a content distribution network and loading architecture for the most popular, open source JavaScript libraries.
+
+[jsDelivr](https://trends.builtwith.com/cdn/jsDelivr)
+-----------------------------------------------------
+
+[jsDelivr Usage Statistics](https://trends.builtwith.com/cdn/jsDelivr) - [Download List of All Websites using jsDelivr](https://trends.builtwith.com/websitelist/jsDelivr)
+
+A free CDN where Javascript developers can host their files. Encompasses MaxCDN, and BootstrapCDN.
+
+[CloudFront](https://trends.builtwith.com/cdn/CloudFront)
+---------------------------------------------------------
+
+[CloudFront Usage Statistics](https://trends.builtwith.com/cdn/CloudFront) - [Download List of All Websites using CloudFront](https://trends.builtwith.com/websitelist/CloudFront)
+
+Amazon CloudFront is a web service for content delivery. It integrates with other Amazon Web Services to give developers and businesses an easy way to distribute content to end users with low latency, high data transfer speeds, and no commitments.
+
+###### Content Management System
+
+[View Global Trends](https://trends.builtwith.com/cms)
+
+[Netlify](https://trends.builtwith.com/cms/Netlify)
+---------------------------------------------------
+
+[Netlify Usage Statistics](https://trends.builtwith.com/cms/Netlify) - [Download List of All Websites using Netlify](https://trends.builtwith.com/websitelist/Netlify)
+
+Netlify is a platform that automates your code to create web sites.
+
+###### JavaScript Libraries and Functions
+
+[View Global Trends](https://trends.builtwith.com/javascript)
+
+[Google Hosted Libraries](https://trends.builtwith.com/javascript/Google-Hosted-Libraries)
+------------------------------------------------------------------------------------------
+
+[Google Hosted Libraries Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-Libraries) - [Download List of All Websites using Google Hosted Libraries](https://trends.builtwith.com/websitelist/Google-Hosted-Libraries)
+
+Google Hosted Libraries is a globally available content distribution network for the most popular, open-source JavaScript libraries.
+
+##### [Google Hosted jQuery](https://trends.builtwith.com/javascript/Google-Hosted-jQuery)
+
+[Google Hosted jQuery Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-jQuery) - [Download List of All Websites using Google Hosted jQuery](https://trends.builtwith.com/websitelist/Google-Hosted-jQuery)
+
+jQuery hoted at Google.
+
+###### Advertising
+
+[View Global Trends](https://trends.builtwith.com/ads)
+
+[Google Adsense](https://trends.builtwith.com/ads/Google-Adsense)
+-----------------------------------------------------------------
+
+[Google Adsense Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense) - [Download List of All Websites using Google Adsense](https://trends.builtwith.com/websitelist/Google-Adsense)
+
+A contextual advertising solution for delivering Google AdWords ads that are relevant to site content pages.
+
+[Contextual Advertising](https://trends.builtwith.com/ads/contextual-advertising)
+
+##### [Google Adsense Asynchronous](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous)
+
+[Google Adsense Asynchronous Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous) - [Download List of All Websites using Google Adsense Asynchronous](https://trends.builtwith.com/websitelist/Google-Adsense-Asynchronous)
+
+Fully asynchronous version of the AdSense ad code.
+
+###### Document Encoding
+
+[View Global Trends](https://trends.builtwith.com/encoding)
+
+[UTF-8](https://trends.builtwith.com/encoding/UTF-8)
+----------------------------------------------------
+
+[UTF-8 Usage Statistics](https://trends.builtwith.com/encoding/UTF-8) - [Download List of All Websites using UTF-8](https://trends.builtwith.com/websitelist/UTF-8)
+
+UTF-8 (8-bit UCS/Unicode Transformation Format) is a variable-length character encoding for Unicode. It is the preferred encoding for web pages.
+
+###### Document Standards
+
+[View Global Trends](https://trends.builtwith.com/docinfo)
+
+[HTML5 DocType](https://trends.builtwith.com/docinfo/HTML5-DocType)
+-------------------------------------------------------------------
+
+[HTML5 DocType Usage Statistics](https://trends.builtwith.com/docinfo/HTML5-DocType) - [Download List of All Websites using HTML5 DocType](https://trends.builtwith.com/websitelist/HTML5-DocType)
+
+The DOCTYPE is a required preamble for HTML5 websites.
+
+[Cascading Style Sheets](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets)
+-------------------------------------------------------------------------------------
+
+[Cascading Style Sheets Usage Statistics](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets) - [Download List of All Websites using Cascading Style Sheets](https://trends.builtwith.com/websitelist/Cascading-Style-Sheets)
+
+Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in a markup language. Its most common application is to style web pages written in HTML
+
+[Open Graph Protocol](https://trends.builtwith.com/docinfo/Open-Graph-Protocol)
+-------------------------------------------------------------------------------
+
+[Open Graph Protocol Usage Statistics](https://trends.builtwith.com/docinfo/Open-Graph-Protocol) - [Download List of All Websites using Open Graph Protocol](https://trends.builtwith.com/websitelist/Open-Graph-Protocol)
+
+The Open Graph protocol enables any web page to become a rich object in a social graph, a open protocol supported by Facebook
+
+[Twitter Cards](https://trends.builtwith.com/docinfo/Twitter-Cards)
+-------------------------------------------------------------------
+
+[Twitter Cards Usage Statistics](https://trends.builtwith.com/docinfo/Twitter-Cards) - [Download List of All Websites using Twitter Cards](https://trends.builtwith.com/websitelist/Twitter-Cards)
+
+Twitter cards make it possible for you to attach media experiences to Tweets that link to your content.
+
+[Javascript](https://trends.builtwith.com/docinfo/Javascript)
+-------------------------------------------------------------
+
+[Javascript Usage Statistics](https://trends.builtwith.com/docinfo/Javascript) - [Download List of All Websites using Javascript](https://trends.builtwith.com/websitelist/Javascript)
+
+JavaScript is a scripting language most often used for client-side web development.
+
+[IFrame](https://trends.builtwith.com/docinfo/IFrame)
+-----------------------------------------------------
+
+[IFrame Usage Statistics](https://trends.builtwith.com/docinfo/IFrame) - [Download List of All Websites using IFrame](https://trends.builtwith.com/websitelist/IFrame)
+
+The page shows content with an iframe; an embedded frame that loads another webpage.
+
+[Font Face Rule](https://trends.builtwith.com/docinfo/Font-Face-Rule)
+---------------------------------------------------------------------
+
+[Font Face Rule Usage Statistics](https://trends.builtwith.com/docinfo/Font-Face-Rule) - [Download List of All Websites using Font Face Rule](https://trends.builtwith.com/websitelist/Font-Face-Rule)
+
+The @font-face rule allows for linking to fonts that are automatically activated when needed.
+
+[X-UA-Compatible](https://trends.builtwith.com/docinfo/X-UA-Compatible)
+-----------------------------------------------------------------------
+
+[X-UA-Compatible Usage Statistics](https://trends.builtwith.com/docinfo/X-UA-Compatible) - [Download List of All Websites using X-UA-Compatible](https://trends.builtwith.com/websitelist/X-UA-Compatible)
+
+Allows a website to define how a page is rendered in Internet Explorer 8, allowing a website to decide to use IE7 style rendering over IE8 rendering.
+
+[Meta Keywords](https://trends.builtwith.com/docinfo/Meta-Keywords)
+-------------------------------------------------------------------
+
+[Meta Keywords Usage Statistics](https://trends.builtwith.com/docinfo/Meta-Keywords) - [Download List of All Websites using Meta Keywords](https://trends.builtwith.com/websitelist/Meta-Keywords)
+
+Meta tag containing keywords related to the page.
+
+[Meta Description](https://trends.builtwith.com/docinfo/Meta-Description)
+-------------------------------------------------------------------------
+
+[Meta Description Usage Statistics](https://trends.builtwith.com/docinfo/Meta-Description) - [Download List of All Websites using Meta Description](https://trends.builtwith.com/websitelist/Meta-Description)
+
+The description attribute provides a concise explanation of the page content.
+
+[HTML 5 Specific Tags](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags)
+---------------------------------------------------------------------------------
+
+[HTML 5 Specific Tags Usage Statistics](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags) - [Download List of All Websites using HTML 5 Specific Tags](https://trends.builtwith.com/websitelist/HTML-5-Specific-Tags)
+
+This page contains tags that are specific to an HTML 5 implementation.
+
+[WAI-ARIA](https://trends.builtwith.com/docinfo/WAI-ARIA)
+---------------------------------------------------------
+
+[WAI-ARIA Usage Statistics](https://trends.builtwith.com/docinfo/WAI-ARIA) - [Download List of All Websites using WAI-ARIA](https://trends.builtwith.com/websitelist/WAI-ARIA)
+
+A way to make Web content and Web applications more accessible to people with disabilities. It especially helps with dynamic content and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
+
+[Strict Transport Security](https://trends.builtwith.com/docinfo/Strict-Transport-Security)
+-------------------------------------------------------------------------------------------
+
+[Strict Transport Security Usage Statistics](https://trends.builtwith.com/docinfo/Strict-Transport-Security) - [Download List of All Websites using Strict Transport Security](https://trends.builtwith.com/websitelist/Strict-Transport-Security)
+
+The HTTP Strict-Transport-Security (HSTS) header instructs the browser to only use https.
+
+[HSTS](https://trends.builtwith.com/docinfo/HSTS)
+-------------------------------------------------
+
+[HSTS Usage Statistics](https://trends.builtwith.com/docinfo/HSTS) - [Download List of All Websites using HSTS](https://trends.builtwith.com/websitelist/HSTS)
+
+Forces browsers to only communicate with the site using HTTPS.
+
+[HSTS IncludeSubdomains PreLoad](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad)
+-----------------------------------------------------------------------------------------------------
+
+[HSTS IncludeSubdomains PreLoad Usage Statistics](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad) - [Download List of All Websites using HSTS IncludeSubdomains PreLoad](https://trends.builtwith.com/websitelist/HSTS-IncludeSubdomains-PreLoad)
+
+This website includes instructions for HSTS loading that would allow it to be submitted to the HSTS preload list.
+
+###### Web Master Registration
+
+[View Global Trends](https://trends.builtwith.com/web-master)
+
+[Google Webmaster](https://trends.builtwith.com/Web-Master/Google-Webmaster)
+----------------------------------------------------------------------------
+
+[Google Webmaster Usage Statistics](https://trends.builtwith.com/Web-Master/Google-Webmaster) - [Download List of All Websites using Google Webmaster](https://trends.builtwith.com/websitelist/Google-Webmaster)
+
+Webmaster tools provide you with a free and easy way to make your site more Google-friendly.
+
+###### Content Delivery Network
+
+[View Global Trends](https://trends.builtwith.com/cdn)
+
+[Content Delivery Network](https://trends.builtwith.com/CDN/Content-Delivery-Network)
+-------------------------------------------------------------------------------------
+
+[Content Delivery Network Usage Statistics](https://trends.builtwith.com/CDN/Content-Delivery-Network) - [Download List of All Websites using Content Delivery Network](https://trends.builtwith.com/websitelist/Content-Delivery-Network)
+
+This page contains links that give the impression that some of the site contents are stored on a content delivery network.
+
+
 ## Docs Structure:
 
 ```
