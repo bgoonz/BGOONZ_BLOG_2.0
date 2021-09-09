@@ -2,10 +2,11 @@
 title: Variables
 chapter: Variables
 ---
-Variables are declared with the `var` keyword. JavaScript is
-*dynamically typed* so every variable can hold a value of any data type.
 
-Variables can be declared *without an initial value*.
+Variables are declared with the `var` keyword. JavaScript is
+_dynamically typed_ so every variable can hold a value of any data type.
+
+Variables can be declared _without an initial value_.
 
 Some example declarations:
 
@@ -13,20 +14,22 @@ Some example declarations:
 var foo;
 var bar = 42;
 var foo, bar, baz;
-var foo = 42, bar = 'baz', z;
+var foo = 42,
+    bar = 'baz',
+    z;
 ```
 
-Variables that don't explicitly get assigned an initial value have the value 
+Variables that don't explicitly get assigned an initial value have the value
 `undefined`.
 
 <div class="callout secondary">
 
 <i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
 
-Since ES2015, `let` and `const` can be used in addition to `var`. We will learn 
-how they differ from `var` later. For now, lets have a look how `const` differs 
-from `var` or `let`: `const` can be assigned a value only *once* (*const*ant).  
-Reassigning a value will either throw an error (in strict mode, see below) or 
+Since ES2015, `let` and `const` can be used in addition to `var`. We will learn
+how they differ from `var` later. For now, lets have a look how `const` differs
+from `var` or `let`: `const` can be assigned a value only _once_ (*const*ant).  
+Reassigning a value will either throw an error (in strict mode, see below) or
 is silently ignored:
 
 ```js
@@ -34,7 +37,7 @@ const foo = 42;
 foo = 21; // error or ignored
 ```
 
-`const`s *must* be initialized with a value:
+`const`s _must_ be initialized with a value:
 
 ```js
 const foo; // error
@@ -47,9 +50,9 @@ foo = 42;
 
 ## Variable names
 
-Valid characters for variable names include [a wide range of *unicode 
-characters*](http://mathiasbynens.be/notes/javascript-identifiers).
-However, the name *must* start with a letter, `_` or `$`. Not doing so will 
+Valid characters for variable names include [a wide range of _unicode
+characters_](http://mathiasbynens.be/notes/javascript-identifiers).
+However, the name _must_ start with a letter, `_` or `$`. Not doing so will
 result in a syntax error.
 
 Examples:
@@ -64,19 +67,19 @@ var 0_bar = '...'; // Syntax error
 
 ## Variable access
 
-Trying to *read* an *undeclared variable* results in a runtime error:
+Trying to _read_ an _undeclared variable_ results in a runtime error:
 
 ```javascript
 var foo;
 console.log(bar); // ReferenceError: bar is not defined.
 ```
 
-However, *writing* to an undeclared variable is valid by default. It will
-create an *implicit global variable* and should thus be avoided:
+However, _writing_ to an undeclared variable is valid by default. It will
+create an _implicit global variable_ and should thus be avoided:
 
 ```javascript
 function foo() {
-  bar = 42;
+    bar = 42;
 }
 foo();
 console.log(bar); // no error
@@ -84,8 +87,8 @@ console.log(bar); // no error
 
 <div class="callout primary">
 
-  If code runs in *[strict mode][]*, assigning to an undeclared variable throws 
-  an *error*.
+If code runs in _[strict mode][]_, assigning to an undeclared variable throws
+an _error_.
 
 </div>
 
@@ -93,14 +96,14 @@ console.log(bar); // no error
 
 ### Strict mode
 
-[Strict mode][] is a mode of evaluating JavaScript that enforces stricter 
-rules. It was introduced to "deprecate" certain patterns/behaviors that are 
+[Strict mode][] is a mode of evaluating JavaScript that enforces stricter
+rules. It was introduced to "deprecate" certain patterns/behaviors that are
 considered bad or confusing.
 
 Strict mode can be enabled for a JavaScript or a function by putting
 
 ```js
-"use strict";
+'use strict';
 ```
 
 at the beginning of it.

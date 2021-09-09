@@ -3,21 +3,19 @@ title: Job Search
 weight: 0
 excerpt: the hunt for a webdev position
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
 
-
-Job Boards and The Hunt
-=======================
+# Job Boards and The Hunt
 
 I can’t imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It’s part of the…
 
-------------------------------------------------------------------------
+---
 
 ### Job Boards and The Hunt
 
@@ -26,7 +24,7 @@ I can’t imagine the kind of masochism it would take to enjoy the act of postin
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### Update(After The Interview):
 
@@ -38,33 +36,33 @@ As a candidate, there are key next steps that you can and should after every int
 
 ‍
 
-*Hi (name),*
+_Hi (name),_
 
-> *Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team’s priorities), I’m even more excited to bring my skills in (1–3 relevant skills) to the team.*
+> _Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team’s priorities), I’m even more excited to bring my skills in (1–3 relevant skills) to the team._
 
-> *I look forward to hearing from you about next steps, and if there is anything that I can clarify about my experience or qualifications for the (role title) position, please don’t hesitate to reach out.*
+> _I look forward to hearing from you about next steps, and if there is anything that I can clarify about my experience or qualifications for the (role title) position, please don’t hesitate to reach out._
 
-> *Thank you for your consideration,*
+> _Thank you for your consideration,_
 
-> *(your name)*
+> _(your name)_
 
 **Follow up**
 
 Don’t wait for the company to reach out to you! Be proactive in showing your interest by checking in to see where you stand in the process. If a company indicates a deadline by which you will hear back, and the deadline has passed, follow-up!
 
 **Check your email and phone regularly  
-‍***  
-*Don’t ghost on a company at any stage in the process; make sure you add their domain to your safe senders list and respond to any messages within 24 hours.
+‍\***  
+\*Don’t ghost on a company at any stage in the process; make sure you add their domain to your safe senders list and respond to any messages within 24 hours.
 
 ‍
 
 **Be prepared  
-‍***  
-*You might be invited for another interview on short notice; review the description regularly so it doesn’t slip from your memory, and keep brushing up on skills you may need for an interview (chances are, this won’t be the only job you’ll need them for anyway!)
+‍\***  
+\*You might be invited for another interview on short notice; review the description regularly so it doesn’t slip from your memory, and keep brushing up on skills you may need for an interview (chances are, this won’t be the only job you’ll need them for anyway!)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*H4pwwuDEjkYTWKpJ.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 > Here I will maintain a running list of applicable job boards and below I will go into detail about the niches they occupy and whatever I resource I have found to use them to your maximum advantage. !
 
@@ -96,7 +94,7 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 24. <span id="f209"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancer" class="markup--anchor markup--li-anchor">Freelancer</a></span>
 25. <span id="5ec4"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancermap" class="markup--anchor markup--li-anchor">freelancermap</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### List:
 
@@ -149,7 +147,7 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 
 **I am intentionally not linking glassdoor because they have irritated me for the last time by insisting I provide a job review every time I want to access their content… (To the makers of glassdoor… HOW MANY TIMES A MONTH DO YOU THINK I CHANGE JOBS!!!!) I don’t have 15 minutes to make up a job experience every time I want to read a review.**
 
-------------------------------------------------------------------------
+---
 
 > Also here is a repo of compiled job search and interviewing resources:
 
@@ -164,11 +162,11 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 
 Seek to leverage the connections you have with people you know and companies you want to work with. I know that that’s a violation of the premise of this article but without even feeling the need to provide quantitative proof; I can confidently assume that this is the most <a href="https://www.investopedia.com/terms/r/returnoninvestment.asp" class="markup--anchor markup--p-anchor">RO</a>I efficient way to produce a desirable result. (Sorry introverts… 2020 may have been your year but this is our world. 😘)
 
-**If personal connections don’t come through, the next best thing is cold outreach (*best in terms of results…. personally I hate cold calling strangers and I am an extrovert*.)**
+**If personal connections don’t come through, the next best thing is cold outreach (_best in terms of results…. personally I hate cold calling strangers and I am an extrovert_.)**
 
 1.  <span id="2139">Before or after submitting an application, **identify 1–3 professionals to reach out to** at the company to express interest in opportunities.</span>
 2.  <span id="fb8b">**Send a message to express interest and request an informational interview** with the individual via LinkedIn, email, Twitter, or other available communication methods.</span>
-3.  <span id="840d">**If you hear back** and the individual is willing to connect, **confirm a day and time to conduct a preliminary interview.** *OR* **If you have yet to hear back after 3 business days, follow-up.**</span>
+3.  <span id="840d">**If you hear back** and the individual is willing to connect, **confirm a day and time to conduct a preliminary interview.** _OR_ **If you have yet to hear back after 3 business days, follow-up.**</span>
 
 Once you send off a message in step two, there are a variety of responses you may receive. Sometimes an individual will forward you along to someone who may be of better assistance, other times your message may be overlooked with no reply, and its possible (best case scenario) your request for a chat becomes an invitation to interview.
 
@@ -180,7 +178,7 @@ I am going to devote a lot of time to this one because it is the largest and mos
 
 LinkedIn now has <a href="https://news.linkedin.com/about-us#Statistics" class="markup--anchor markup--p-anchor">almost 740 million members</a> with over 55 million registered companies. (for comparison 12.3 million people visited Indeed in October, up 19.6 percent. <a href="http://www.monster.com/" class="markup--anchor markup--p-anchor">Monster.com</a> attracted 12.1 million people, and <a href="http://www.careerbuilder.com/" class="markup--anchor markup--p-anchor">CareerBuilder.com</a>attractedd 11.3 million in that same time) and LinkedIn is the most-used social media platform amongst Fortune 500 companies as it provides far more networking capabilities than pure recruitment.
 
-If you put your resume and skills on LinkedIn.com as a software Engineer, and state that you are open to new opportunities, you *will* be contacted by multiple recruiters, and if your skills are desirable possibly also directly by companies seeking to hire you. It’s a developer’s market; there’s not enough people out there, especially in America.
+If you put your resume and skills on LinkedIn.com as a software Engineer, and state that you are open to new opportunities, you _will_ be contacted by multiple recruiters, and if your skills are desirable possibly also directly by companies seeking to hire you. It’s a developer’s market; there’s not enough people out there, especially in America.
 
 Here’s my profile… feel free to connect… the larger your network the greater your exposure is to someone who works at your potential dream job.
 
@@ -213,7 +211,7 @@ Here’s A Linkedin Checklist I will be using before I return to the job hunt!
 
 **Follow business owners and senior managers, successful team leaders in large organizations, startup owners. You would be surprised how willing some otherwise busy executives are to rub elbows with veritable newcomers. They’re not just doing this out of the kindness of their hearts, just like you… they have an ulterior motive. They are hoping to build goodwill with the incoming workforce in a bid to make their company more attractive to high quality candidates. If they give you any of their time…treat it like an interview.**
 
-> *To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher’s past have said… mark my words…* ***THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION****…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).*
+> _To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher’s past have said… mark my words…_ **\*THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION\*\***…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).\*
 
 <a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://hbr.org/2018/05/the-surprising-power-of-questions"><strong>How to Ask Great Questions</strong><br />
 <em>In Brief The Problem Some professionals such as litigators, journalists and even doctors, are taught to ask questions…</em>hbr.org</a><a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -240,7 +238,7 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Why it matters*¿*
 
@@ -248,15 +246,15 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 Most of us are familiar with the concept of six degrees of separation — the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you’re effectively connected to the Queen of England, Jim Belushi or even yo mamma.
 
-------------------------------------------------------------------------
+---
 
 ### Back to the other Job Board Niches:
 
-***3. Traditional job boards***. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
+**_3. Traditional job boards_**. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
 
-***4. Local-focused sites***. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn’t have otherwise come across.
+**_4. Local-focused sites_**. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn’t have otherwise come across.
 
-***5. Freelancer websites***. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you’re not looking for traditional full-time employment or remote work.
+**_5. Freelancer websites_**. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you’re not looking for traditional full-time employment or remote work.
 
 -   <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
 
@@ -270,140 +268,140 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*5-FYxWj0q8sUvpDoAR3ZLA.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Discover More:
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-
 # **General**
 
-- **[How To Break Into Tech - Job Hunting and Interviews by Haseeb Qureshi](https://haseebq.com/how-to-break-into-tech-job-hunting-and-interviews/)**
-- **[Mintbean.io - Hackathons and Workshops](https://mintbean.io/)**
-- **[Data on the job search and how to do it!](https://talent.works/category/science-of-the-job-search/)**
-- **[LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/inspect/)**
-- **[LinkedIn Featured Images](https://medium.com/@jamesyhiggs/how-to-add-thumbnail-images-to-the-featured-section-of-your-linkedin-profile-for-web-apps-sites-917346235932)**
-- **[Frontend Masters](https://frontendmasters.com/)** - Expensive, but worth every penny
+-   **[How To Break Into Tech - Job Hunting and Interviews by Haseeb Qureshi](https://haseebq.com/how-to-break-into-tech-job-hunting-and-interviews/)**
+-   **[Mintbean.io - Hackathons and Workshops](https://mintbean.io/)**
+-   **[Data on the job search and how to do it!](https://talent.works/category/science-of-the-job-search/)**
+-   **[LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/inspect/)**
+-   **[LinkedIn Featured Images](https://medium.com/@jamesyhiggs/how-to-add-thumbnail-images-to-the-featured-section-of-your-linkedin-profile-for-web-apps-sites-917346235932)**
+-   **[Frontend Masters](https://frontendmasters.com/)** - Expensive, but worth every penny
 
 <hr>
 
 # **Resume**
 
-- **[Spelling/Grammar mistakes on Resume costs jobs](http://blog.alinelerner.com/lessons-from-a-years-worth-of-hiring-data/)**
+-   **[Spelling/Grammar mistakes on Resume costs jobs](http://blog.alinelerner.com/lessons-from-a-years-worth-of-hiring-data/)**
 
 # **Cover Letter**
 
-- **[Six C's of Business Communication](http://www.fsb.miamioh.edu/fsb/content/programs/howe-writing-initiative/HWI-handout-CsofBusComm.html)**
+-   **[Six C's of Business Communication](http://www.fsb.miamioh.edu/fsb/content/programs/howe-writing-initiative/HWI-handout-CsofBusComm.html)**
 
 <hr>
 
 # **Heroku** - _Use at your own risk_
 
-- **[Keep Heroku App Awake For Free Using Google App Script](https://medium.com/@pandachain/keep-free-heroku-app-awake-during-a-specific-period-using-google-app-script-in-2017-63fe37ee9e9f)**
-- **[UptimeRobot](https://uptimerobot.com/)**
-- **[Kaffeine](https://kaffeine.herokuapp.com/)**
-- **[UptimeRobot and Dyno Lecture](https://docs.google.com/document/d/1_BZswbvmcEtVul9gD59Lk4IUk2mHp1Wbe2ucaHTY7A0/edit)**
+-   **[Keep Heroku App Awake For Free Using Google App Script](https://medium.com/@pandachain/keep-free-heroku-app-awake-during-a-specific-period-using-google-app-script-in-2017-63fe37ee9e9f)**
+-   **[UptimeRobot](https://uptimerobot.com/)**
+-   **[Kaffeine](https://kaffeine.herokuapp.com/)**
+-   **[UptimeRobot and Dyno Lecture](https://docs.google.com/document/d/1_BZswbvmcEtVul9gD59Lk4IUk2mHp1Wbe2ucaHTY7A0/edit)**
 
 <hr>
 
 # **Trivia**
 
-- ## **JavaScript Trivia**
-  - **[Fullstack Cafe - EVERYTHING](https://www.fullstack.cafe/)**
-  - **[Front-end trivia](https://www.thatjsdude.com/interview/)**
-- ## **Python Trivia**
-- ## **Frontend Trivia**
-  - [**12 Essential Web Design Interview Questions**](https://www.toptal.com/designers/web/interview-questions)
+-   ## **JavaScript Trivia**
+    -   **[Fullstack Cafe - EVERYTHING](https://www.fullstack.cafe/)**
+    -   **[Front-end trivia](https://www.thatjsdude.com/interview/)**
+-   ## **Python Trivia**
+-   ## **Frontend Trivia**
+    -   [**12 Essential Web Design Interview Questions**](https://www.toptal.com/designers/web/interview-questions)
 
 <hr>
 
 # **Language Resources**
 
-- ## **JavaScript Resources**
-  - **[TypeScript Learning Plan](https://github.com/antonjb/TypeScript-Learning-Plan)**
-  - **React Native**
-    - **[Code With Mosh Enrolled](https://codewithmosh.com/courses/enrolled)**
-      - *satagonia@gmail.com / qqqq1111*
-- ## **Python Resources**
-  -
-- ## **HTML5 Resources**
-  - [**HTML5 Cheat Sheet**](https://digital.com/tools/html-cheatsheet/)
-  - [**HTML5 Rocks**](https://www.html5rocks.com/en/resources.html)
-  - [**MDN - HTML**](https://developer.mozilla.org/en-US/docs/Web/HTML)
-  - [**MDN - HTML5**](https://developer.mozilla.org/en-US/docs/Learn/HTML)
-  - [**HTML5 Doctor**](http://html5doctor.com/)
-  -
-- ## **CSS3 Resources**
+-   ## **JavaScript Resources**
+    -   **[TypeScript Learning Plan](https://github.com/antonjb/TypeScript-Learning-Plan)**
+    -   **React Native**
+        -   **[Code With Mosh Enrolled](https://codewithmosh.com/courses/enrolled)**
+            -   *satagonia@gmail.com / qqqq1111*
+-   ## **Python Resources**
+    -
+-   ## **HTML5 Resources**
+    -   [**HTML5 Cheat Sheet**](https://digital.com/tools/html-cheatsheet/)
+    -   [**HTML5 Rocks**](https://www.html5rocks.com/en/resources.html)
+    -   [**MDN - HTML**](https://developer.mozilla.org/en-US/docs/Web/HTML)
+    -   [**MDN - HTML5**](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+    -   [**HTML5 Doctor**](http://html5doctor.com/)
+    -
+-   ## **CSS3 Resources**
 
-  - [**W3 Schools CSS3 Tutorial**](https://www.w3schools.com/css/)
-  - [**Tutorial Republic - Ultimate Tutorial for Beginners**](https://www.tutorialrepublic.com/css-tutorial/)
-  - [**MDN - CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
-  - [**CSS3.info**](https://www.css3.info/)
-  - [**CSS Tricks**](https://css-tricks.com/)
-    - [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-    - [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-  - [**Interactive CSS Grid Generator**](https://grid.layoutit.com/)
-  - [**CSS Zen Garden**](http://csszengarden.com/)
-  - [**Flexbox Grid (Package)**](http://flexboxgrid.com/)
-  - [**Specifishity**](http://www.specifishity.com/)
-  - [**CSS3 Cheat Sheet**](https://www.onblastblog.com/css3-cheat-sheet/)
-  - [**Jen Simmons Labs**](https://labs.jensimmons.com/)
+    -   [**W3 Schools CSS3 Tutorial**](https://www.w3schools.com/css/)
+    -   [**Tutorial Republic - Ultimate Tutorial for Beginners**](https://www.tutorialrepublic.com/css-tutorial/)
+    -   [**MDN - CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
+    -   [**CSS3.info**](https://www.css3.info/)
+    -   [**CSS Tricks**](https://css-tricks.com/)
+        -   [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+        -   [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+    -   [**Interactive CSS Grid Generator**](https://grid.layoutit.com/)
+    -   [**CSS Zen Garden**](http://csszengarden.com/)
+    -   [**Flexbox Grid (Package)**](http://flexboxgrid.com/)
+    -   [**Specifishity**](http://www.specifishity.com/)
+    -   [**CSS3 Cheat Sheet**](https://www.onblastblog.com/css3-cheat-sheet/)
+    -   [**Jen Simmons Labs**](https://labs.jensimmons.com/)
 
-- ## **Miscellaneous Resources**
+-   ## **Miscellaneous Resources**
 
-  - [**CodePen**](https://codepen.io/)
-    - [2020 Most Popular Pens (replace year for more)](https://codepen.io/202/popular/pens/)
-  - [**Web Design Weekly**](https://web-design-weekly.com/)
-  - [**Responsive Design Weekly**](https://responsivedesign.is/)
+    -   [**CodePen**](https://codepen.io/)
+        -   [2020 Most Popular Pens (replace year for more)](https://codepen.io/202/popular/pens/)
+    -   [**Web Design Weekly**](https://web-design-weekly.com/)
+    -   [**Responsive Design Weekly**](https://responsivedesign.is/)
 
 <hr>
 
 # **DS&A**
 
-- **[Leetcode](https://leetcode.com/explore)**
-- **[AlgoExpert](https://www.algoexpert.io/)**
+-   **[Leetcode](https://leetcode.com/explore)**
+-   **[AlgoExpert](https://www.algoexpert.io/)**
 
 ## **Hash Tables:**
-  - **[What is a Hash Table](https://www.youtube.com/watch?v=shs0KM3wKv8)**
-    - O(1) for a "good" table
-    - O(n) for a terrible table (lots of collisions, etc.)
+
+-   **[What is a Hash Table](https://www.youtube.com/watch?v=shs0KM3wKv8)**
+    -   O(1) for a "good" table
+    -   O(n) for a terrible table (lots of collisions, etc.)
 
 <hr>
 
 # **System Design**
 
-- **[The Basics](https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG)**
-- **[Caching](https://levelup.gitconnected.com/everything-you-need-to-know-about-caching-system-design-932a6bdf3334)**
-- **[Load Balancing](https://codeburst.io/system-design-basics-load-balancer-101-adc4f602d08f)**
+-   **[The Basics](https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG)**
+-   **[Caching](https://levelup.gitconnected.com/everything-you-need-to-know-about-caching-system-design-932a6bdf3334)**
+-   **[Load Balancing](https://codeburst.io/system-design-basics-load-balancer-101-adc4f602d08f)**
 
 <hr>
 
 # **Interviewing**
 
-- ### **Mock Interviewing**
-  - **[Interviewing.io](https://interviewing.io/)**
+-   ### **Mock Interviewing**
+    -   **[Interviewing.io](https://interviewing.io/)**
 
 <hr>
 
 # **Networking**
 
-- **[MeetUp](https://www.meetup.com/)**
+-   **[MeetUp](https://www.meetup.com/)**
 
 <hr>
 
 # **Managing and Organizing Job Search**
 
-- **[Notion](notion.so)**
-  - Trillo clone but with added features that make it really great! Consider creating a template for new job seekers!
+-   **[Notion](notion.so)**
+    -   Trillo clone but with added features that make it really great! Consider creating a template for new job seekers!
 
 <hr>
 
 # **Negotiations**
 
-- **[Haseeb's 10 Rules - Part 1](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)**
-- **[Haseeb's 10 Rules - Part 2](https://haseebq.com/how-not-to-bomb-your-offer-negotiation/)**
+-   **[Haseeb's 10 Rules - Part 1](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)**
+-   **[Haseeb's 10 Rules - Part 2](https://haseebq.com/how-not-to-bomb-your-offer-negotiation/)**
 
 <hr>
 
@@ -413,12 +411,12 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 
 ## **Template Sources**
 
-- [**Free CSS Templates**](http://www.free-css.com/template-categories/portfolio)
-- [**HTML5 UP**](http://html5up.net/)
-- [**Start Bootstrap**](http://startbootstrap.com/)
-- [**Theme Wagon**](https://themewagon.com/top-html-landing-page-templates/)
-- [**Templatemo**](https://templatemo.com/tag/portfolio)
-- [**One Page Love**](https://onepagelove.com/templates/free-templates)
+-   [**Free CSS Templates**](http://www.free-css.com/template-categories/portfolio)
+-   [**HTML5 UP**](http://html5up.net/)
+-   [**Start Bootstrap**](http://startbootstrap.com/)
+-   [**Theme Wagon**](https://themewagon.com/top-html-landing-page-templates/)
+-   [**Templatemo**](https://templatemo.com/tag/portfolio)
+-   [**One Page Love**](https://onepagelove.com/templates/free-templates)
 
 1. Once you’ve decided on a template, download it to your machine.
 2. Rename the folder `{$yourGitHubUserName}.github.io`, (e.g. if my GitHub
@@ -438,8 +436,8 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 
 # **QA Engineering**
 
-- **[Full course in 7 day trial](https://teamtreehouse.com/library/introduction-to-qa-engineering)**
-- **[Prep Notes](https://docs.google.com/document/d/1REtlnM0j88iGgIkPmOyeuwf-VdhOSV6U0QkcPEz81Oc/edit)**
+-   **[Full course in 7 day trial](https://teamtreehouse.com/library/introduction-to-qa-engineering)**
+-   **[Prep Notes](https://docs.google.com/document/d/1REtlnM0j88iGgIkPmOyeuwf-VdhOSV6U0QkcPEz81Oc/edit)**
 
 # **Alternative Roles**
 
@@ -461,57 +459,57 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 
 # **Externship**
 
-- **[insidesherpa](https://www.insidesherpa.com/)**
+-   **[insidesherpa](https://www.insidesherpa.com/)**
 
 <hr>
 
 # **Open Source**
 
-- **[GitHub's open source guides](https://opensource.guide/)**
-- **[Getting started with open source](https://opensource.com/resources/getting-started-open-source)**
-- **[First timers only](https://www.firsttimersonly.com/)**
-- **[Open Source Underdogs](https://opensourceunderdogs.com/episodes/)**
-- **[Code Triage](https://www.codetriage.com/)**
+-   **[GitHub's open source guides](https://opensource.guide/)**
+-   **[Getting started with open source](https://opensource.com/resources/getting-started-open-source)**
+-   **[First timers only](https://www.firsttimersonly.com/)**
+-   **[Open Source Underdogs](https://opensourceunderdogs.com/episodes/)**
+-   **[Code Triage](https://www.codetriage.com/)**
 
 <hr>
 
 # **Volunteer**
 
-- **[Code For America](https://www.codeforamerica.org/)**
-- **[Donate Code](https://www.donatecode.com/)**
-- **[Social Coder](https://socialcoder.org/Home/Index)**
-- **[Catch A Fire](https://www.catchafire.org/)**
-- **[Hackers For Charity](https://www.hackersforcharity.org/)**
+-   **[Code For America](https://www.codeforamerica.org/)**
+-   **[Donate Code](https://www.donatecode.com/)**
+-   **[Social Coder](https://socialcoder.org/Home/Index)**
+-   **[Catch A Fire](https://www.catchafire.org/)**
+-   **[Hackers For Charity](https://www.hackersforcharity.org/)**
 
 <hr>
 
 # **Imposter Syndrome**
 
-- **[The Imposter's Advantage - Zain Rizvi](https://www.zainrizvi.io/blog/the-impostors-advantage/)**
-- **[Stats on the tech giants](https://www.techrepublic.com/article/why-58-of-tech-employees-suffer-from-imposter-syndrome/)**
-- **[Why MS degrees are shit](http://blog.alinelerner.com/how-different-is-a-b-s-in-computer-science-from-a-m-s-in-computer-science-when-it-comes-to-recruiting/)**
+-   **[The Imposter's Advantage - Zain Rizvi](https://www.zainrizvi.io/blog/the-impostors-advantage/)**
+-   **[Stats on the tech giants](https://www.techrepublic.com/article/why-58-of-tech-employees-suffer-from-imposter-syndrome/)**
+-   **[Why MS degrees are shit](http://blog.alinelerner.com/how-different-is-a-b-s-in-computer-science-from-a-m-s-in-computer-science-when-it-comes-to-recruiting/)**
 
 <hr>
 
 # **Podcasts**
 
-- **[FreeCodeCamp Podcast](https://freecodecamp.libsyn.com/)**
-- **[Codish Podcast](https://www.heroku.com/podcasts/codeish/85-the-new-definition-of-frontend-development)**
+-   **[FreeCodeCamp Podcast](https://freecodecamp.libsyn.com/)**
+-   **[Codish Podcast](https://www.heroku.com/podcasts/codeish/85-the-new-definition-of-frontend-development)**
 
 <hr>
 
 # **Books**
 
-- **Grokking the Coding Interview**
-  - [GitHub Coding Questions](https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)
-  - [Purchase Course](https://www.educative.io/courses/grokking-the-coding-interview)
-- **Grokking the System Design Interview**
-  - [Quizzes](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes)
-  - [Purchase Course](https://www.educative.io/courses/grokking-the-system-design-interview)
-- **Elements of Programming Interviews (EPI) in Python**
-  - [Amazon](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949)
-- **Skienna Algorithm Design Manual**
-  - [Amazon](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena-ebook-dp-B00B8139Z8/dp/B00B8139Z8/ref=mt_other?_encoding=UTF8&me=&qid=)
+-   **Grokking the Coding Interview**
+    -   [GitHub Coding Questions](https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)
+    -   [Purchase Course](https://www.educative.io/courses/grokking-the-coding-interview)
+-   **Grokking the System Design Interview**
+    -   [Quizzes](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes)
+    -   [Purchase Course](https://www.educative.io/courses/grokking-the-system-design-interview)
+-   **Elements of Programming Interviews (EPI) in Python**
+    -   [Amazon](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949)
+-   **Skienna Algorithm Design Manual**
+    -   [Amazon](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena-ebook-dp-B00B8139Z8/dp/B00B8139Z8/ref=mt_other?_encoding=UTF8&me=&qid=)
 
 <hr>
 
@@ -519,12 +517,12 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 
 **10:22:12 From Alexis Kozak to Everyone : Scenario 1**
 
-- It's 7:00 pm on a Friday, and you receive a message from Dev Ops that they haven't been able to upgrade a live Production environment as planned. There were feature updates in this release that customers have planned marketing campaigns around. It also included a bug fix for one customer that’s currently having to maintain a very manual workaround. What do you do?
+-   It's 7:00 pm on a Friday, and you receive a message from Dev Ops that they haven't been able to upgrade a live Production environment as planned. There were feature updates in this release that customers have planned marketing campaigns around. It also included a bug fix for one customer that’s currently having to maintain a very manual workaround. What do you do?
 
 **10:24:40 From Alexis Kozak to Everyone : Scenario 2**
 
-- An application has been configured to send an email every time a patient requests a changed email. The automated email sends something to the old email, acknowledging that they changed their email, and if that isn’t right, to please contact Secular Health Network. When you come into the office one morning, you see that thousands of emails have been generated in the space of two hours. What do you do? How do you find the number of emails sent?
+-   An application has been configured to send an email every time a patient requests a changed email. The automated email sends something to the old email, acknowledging that they changed their email, and if that isn’t right, to please contact Secular Health Network. When you come into the office one morning, you see that thousands of emails have been generated in the space of two hours. What do you do? How do you find the number of emails sent?
 
 **10:28:11 From Alexis Kozak to Everyone : Scenario 3**
 
-- A customer has requested a change to SSO logic such that only users from a certain region can access SmartExam. You’ve implemented the rule on their demo environments and given them a testing plan that is simple and straightforward. During testing, you’re included in multiple email chains with different parties, as well as some one-off calls and texts messages. Resources seem scattered, but the testing happens. After receiving confirmation from the customer that testing was successful, you’re told the code is good to go into production. However, upon doing some quick checks, you discover that the rule you wrote doesn’t work and would actually prevent any user from logging into SmartExam. The fix is quite simple. What do you do?
+-   A customer has requested a change to SSO logic such that only users from a certain region can access SmartExam. You’ve implemented the rule on their demo environments and given them a testing plan that is simple and straightforward. During testing, you’re included in multiple email chains with different parties, as well as some one-off calls and texts messages. Resources seem scattered, but the testing happens. After receiving confirmation from the customer that testing was successful, you’re told the code is good to go into production. However, upon doing some quick checks, you discover that the rule you wrote doesn’t work and would actually prevent any user from logging into SmartExam. The fix is quite simple. What do you do?

@@ -1,7 +1,7 @@
 ---
 title: Jupyter Notebooks
 weight: 0
-excerpt: Jupyter Notebooks allow us to combine the power of a python script with the simplicity of a markdown file. 
+excerpt: Jupyter Notebooks allow us to combine the power of a python script with the simplicity of a markdown file.
 seo:
     title: 'Jupyter Notebooks'
     description: ' Jupyter Notebooks allow us to combine the power of a python script with the simplicity of a markdown file'

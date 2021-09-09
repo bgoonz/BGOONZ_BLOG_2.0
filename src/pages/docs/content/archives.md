@@ -11,11 +11,9 @@ seo:
 template: docs
 ---
 
-Querying Data in Components using StaticQuery
-=============================================
+# Querying Data in Components using StaticQuery
 
-TABLE OF CONTENTS
------------------
+## TABLE OF CONTENTS
 
 -   [How to use StaticQuery in components](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-to-use-staticquery-in-components)
     -   [Basic example](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#basic-example)
@@ -27,10 +25,9 @@ Gatsby v2 introduces `StaticQuery`, a new API that allows components to retriev
 
 In this guide, you'll see an example using `StaticQuery`, and learn about [the difference between a StaticQuery and a page query](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-staticquery-differs-from-page-query).
 
-[](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-to-use-staticquery-in-components)How to use `StaticQuery` in components
------------------------------------------------------------------------------------------------------------------------------------------------
+## [](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-to-use-staticquery-in-components)How to use `StaticQuery` in components
 
-*Video hosted on [egghead.io](https://egghead.io/lessons/gatsby-load-data-using-graphql-queries-directly-in-a-gatsby-v2-component-with-staticquery)*.
+_Video hosted on [egghead.io](https://egghead.io/lessons/gatsby-load-data-using-graphql-queries-directly-in-a-gatsby-v2-component-with-staticquery)_.
 
 ### [](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#basic-example)Basic example
 
@@ -40,35 +37,35 @@ src/components/header.js
 
 Copysrc/components/header.js: copy code to clipboard`
 
-import React from  "react"
+import React from "react"
 
-import  { StaticQuery, graphql }  from  "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
-export  default  function  Header()  {
+export default function Header() {
 
-  return  (
+return (
 
-  <StaticQuery
+<StaticQuery
 
- query={graphql`
+query={graphql`
 
- query HeadingQuery {
+query HeadingQuery {
 
- site {
+site {
 
- siteMetadata {
+siteMetadata {
 
- title
+title
 
- }
+}
 
- }
+}
 
- }
+}
 
-  `}
+`}
 
- render={data  =>  (
+render={data => (
 
   <header>
 
@@ -76,11 +73,11 @@ export  default  function  Header()  {
 
   </header>
 
-  )}
+)}
 
-  />
+/>
 
-  )
+)
 
 }
 
@@ -100,13 +97,13 @@ src/components/header.js
 
 Copysrc/components/header.js: copy code to clipboard`
 
-import React from  "react"
+import React from "react"
 
-import  { StaticQuery, graphql }  from  "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
-import PropTypes from  "prop-types"
+import PropTypes from "prop-types"
 
-const  Header  =  ({ data })  =>  (
+const Header = ({ data }) => (
 
   <header>
 
@@ -116,60 +113,59 @@ const  Header  =  ({ data })  =>  (
 
 )
 
-export  default  function  MyHeader(props)  {
+export default function MyHeader(props) {
 
-  return  (
+return (
 
-  <StaticQuery
+<StaticQuery
 
- query={graphql`
+query={graphql`
 
- query {
+query {
 
- site {
+site {
 
- siteMetadata {
+siteMetadata {
 
- title
-
- }
-
- }
-
- }
-
-  `}
-
- render={data  =>  <Header  data={data}  {...props}  />}
-
-  />
-
-  )
+title
 
 }
 
-Header.propTypes =  {
+}
 
- data: PropTypes.shape({
+}
 
- site: PropTypes.shape({
+`}
 
- siteMetadata: PropTypes.shape({
+render={data => <Header data={data} {...props} />}
 
- title: PropTypes.string.isRequired,
+/>
 
-  }).isRequired,
+)
 
-  }).isRequired,
+}
 
-  }).isRequired,
+Header.propTypes = {
+
+data: PropTypes.shape({
+
+site: PropTypes.shape({
+
+siteMetadata: PropTypes.shape({
+
+title: PropTypes.string.isRequired,
+
+}).isRequired,
+
+}).isRequired,
+
+}).isRequired,
 
 }
 
 `
 
-[](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-staticquery-differs-from-page-query)How StaticQuery differs from page query
----------------------------------------------------------------------------------------------------------------------------------------------------
+## [](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-staticquery-differs-from-page-query)How StaticQuery differs from page query
 
 StaticQuery can do most of the things that page query can, including fragments. The main differences are:
 
@@ -177,41 +173,37 @@ StaticQuery can do most of the things that page query can, including fragments. 
 -   StaticQuery does not accept variables (hence the name "static"), but can be used in *any* component, including pages
 -   StaticQuery does not work with raw React.createElement calls; please use JSX, e.g. `<StaticQuery />`
 
-
-
 # GraphQL
 
-Queries and Mutations
-=====================
+# Queries and Mutations
 
 On this page, you'll learn in detail about how to query a GraphQL server.
 
-Fields[](https://graphql.org/learn/queries/#fields)
----------------------------------------------------
+## Fields[](https://graphql.org/learn/queries/#fields)
 
 At its simplest, GraphQL is about asking for specific fields on objects. Let's start by looking at a very simple query and the result we get when we run it:
 
 {
 
-  hero  {
+hero {
 
-  name
+name
 
-  }
+}
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "hero":  {
+"hero": {
 
-  "name":  "R2-D2"
+"name": "R2-D2"
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -225,90 +217,89 @@ In the previous example, we just asked for the name of our hero which returned a
 
 {
 
-  hero  {
+hero {
 
-  name
+name
 
-  # Queries can have comments!
+# Queries can have comments!
 
-  friends  {
+friends {
 
-  name
+name
 
-  }
+}
 
-  }
+}
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "hero":  {
+"hero": {
 
-  "name":  "R2-D2",
+"name": "R2-D2",
 
-  "friends":  [
+"friends": [
 
-  {
+{
 
-  "name":  "Luke Skywalker"
+"name": "Luke Skywalker"
 
-  },
+},
 
-  {
+{
 
-  "name":  "Han Solo"
+"name": "Han Solo"
 
-  },
+},
 
-  {
+{
 
-  "name":  "Leia Organa"
+"name": "Leia Organa"
 
-  }
+}
 
-  ]
+]
 
-  }
+}
 
-  }
+}
 
 }
 
 Note that in this example, the `friends` field returns an array of items. GraphQL queries look the same for both single items or lists of items, however we know which one to expect based on what is indicated in the schema.
 
-Arguments[](https://graphql.org/learn/queries/#arguments)
----------------------------------------------------------
+## Arguments[](https://graphql.org/learn/queries/#arguments)
 
 If the only thing we could do was traverse objects and their fields, GraphQL would already be a very useful language for data fetching. But when you add the ability to pass arguments to fields, things get much more interesting.
 
 {
 
-  human(id:  "1000")  {
+human(id: "1000") {
 
-  name
+name
 
-  height
+height
 
-  }
+}
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "human":  {
+"human": {
 
-  "name":  "Luke Skywalker",
+"name": "Luke Skywalker",
 
-  "height":  1.72
+"height": 1.72
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -316,29 +307,29 @@ In a system like REST, you can only pass a single set of arguments - the query p
 
 {
 
-  human(id:  "1000")  {
+human(id: "1000") {
 
-  name
+name
 
-  height(unit:  FOOT)
+height(unit: FOOT)
 
-  }
+}
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "human":  {
+"human": {
 
-  "name":  "Luke Skywalker",
+"name": "Luke Skywalker",
 
-  "height":  5.6430448
+"height": 5.6430448
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -346,51 +337,49 @@ Arguments can be of many different types. In the above example, we have used an 
 
 [Read more about the GraphQL type system here.](https://graphql.org/learn/schema)
 
-Aliases[](https://graphql.org/learn/queries/#aliases)
------------------------------------------------------
+## Aliases[](https://graphql.org/learn/queries/#aliases)
 
 If you have a sharp eye, you may have noticed that, since the result object fields match the name of the field in the query but don't include arguments, you can't directly query for the same field with different arguments. That's why you need *aliases* - they let you rename the result of a field to anything you want.
 
 {
 
-  empireHero:  hero(episode:  EMPIRE)  {
+empireHero: hero(episode: EMPIRE) {
 
-  name
+name
 
-  }
+}
 
-  jediHero:  hero(episode:  JEDI)  {
+jediHero: hero(episode: JEDI) {
 
-  name
+name
 
-  }
+}
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "empireHero":  {
+"empireHero": {
 
-  "name":  "Luke Skywalker"
+"name": "Luke Skywalker"
 
-  },
+},
 
-  "jediHero":  {
+"jediHero": {
 
-  "name":  "R2-D2"
+"name": "R2-D2"
 
-  }
+}
 
-  }
+}
 
 }
 
 In the above example, the two `hero` fields would have conflicted, but since we can alias them to different names, we can get both results in one request.
 
-Fragments[](https://graphql.org/learn/queries/#fragments)
----------------------------------------------------------
+## Fragments[](https://graphql.org/learn/queries/#fragments)
 
 Let's say we had a relatively complicated page in our app, which lets us look at two heroes side by side, along with their friends. You can imagine that such a query could quickly get complicated, because we would need to repeat the fields at least once - one for each side of the comparison.
 
@@ -398,123 +387,123 @@ That's why GraphQL includes reusable units called *fragments*. Fragments let yo
 
 {
 
-  leftComparison:  hero(episode:  EMPIRE)  {
+leftComparison: hero(episode: EMPIRE) {
 
-  ...comparisonFields
+...comparisonFields
 
-  }
+}
 
-  rightComparison:  hero(episode:  JEDI)  {
+rightComparison: hero(episode: JEDI) {
 
-  ...comparisonFields
+...comparisonFields
 
-  }
+}
 
 }
 
 ​
 
-fragment  comparisonFields  on  Character  {
+fragment comparisonFields on Character {
 
-  name
+name
 
-  appearsIn
+appearsIn
 
-  friends  {
+friends {
 
-  name
+name
 
-  }
+}
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "leftComparison":  {
+"leftComparison": {
 
-  "name":  "Luke Skywalker",
+"name": "Luke Skywalker",
 
-  "appearsIn":  [
+"appearsIn": [
 
-  "NEWHOPE",
+"NEWHOPE",
 
-  "EMPIRE",
+"EMPIRE",
 
-  "JEDI"
+"JEDI"
 
-  ],
+],
 
-  "friends":  [
+"friends": [
 
-  {
+{
 
-  "name":  "Han Solo"
+"name": "Han Solo"
 
-  },
+},
 
-  {
+{
 
-  "name":  "Leia Organa"
+"name": "Leia Organa"
 
-  },
+},
 
-  {
+{
 
-  "name":  "C-3PO"
+"name": "C-3PO"
 
-  },
+},
 
-  {
+{
 
-  "name":  "R2-D2"
+"name": "R2-D2"
 
-  }
+}
 
-  ]
+]
 
-  },
+},
 
-  "rightComparison":  {
+"rightComparison": {
 
-  "name":  "R2-D2",
+"name": "R2-D2",
 
-  "appearsIn":  [
+"appearsIn": [
 
-  "NEWHOPE",
+"NEWHOPE",
 
-  "EMPIRE",
+"EMPIRE",
 
-  "JEDI"
+"JEDI"
 
-  ],
+],
 
-  "friends":  [
+"friends": [
 
-  {
+{
 
-  "name":  "Luke Skywalker"
+"name": "Luke Skywalker"
 
-  },
+},
 
-  {
+{
 
-  "name":  "Han Solo"
+"name": "Han Solo"
 
-  },
+},
 
-  {
+{
 
-  "name":  "Leia Organa"
+"name": "Leia Organa"
 
-  }
+}
 
-  ]
+]
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -524,43 +513,43 @@ You can see how the above query would be pretty repetitive if the fields were re
 
 It is possible for fragments to access variables declared in the query or mutation. See [variables](https://graphql.org/learn/queries/#variables).
 
-query  HeroComparison($first:  Int  =  3)  {
+query HeroComparison($first: Int = 3) {
 
-  leftComparison:  hero(episode:  EMPIRE)  {
+leftComparison: hero(episode: EMPIRE) {
 
-  ...comparisonFields
+...comparisonFields
 
-  }
+}
 
-  rightComparison:  hero(episode:  JEDI)  {
+rightComparison: hero(episode: JEDI) {
 
-  ...comparisonFields
+...comparisonFields
 
-  }
+}
 
 }
 
 ​
 
-fragment  comparisonFields  on  Character  {
+fragment comparisonFields on Character {
 
-  name
+name
 
-  friendsConnection(first:  $first)  {
+friendsConnection(first: $first) {
 
-  totalCount
+totalCount
 
-  edges  {
+edges {
 
-  node  {
+node {
 
-  name
+name
 
-  }
+}
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -568,128 +557,127 @@ fragment  comparisonFields  on  Character  {
 
 {
 
-  "errors":  [
+"errors": [
 
-  {
+{
 
-  "message":  "Buffer is not defined",
+"message": "Buffer is not defined",
 
-  "locations":  [
+"locations": [
 
-  {
+{
 
-  "line":  12,
+"line": 12,
 
-  "column":  3
-
-  }
-
-  ],
-
-  "path":  [
-
-  "leftComparison",
-
-  "friendsConnection"
-
-  ]
-
-  },
-
-  {
-
-  "message":  "Buffer is not defined",
-
-  "locations":  [
-
-  {
-
-  "line":  12,
-
-  "column":  3
-
-  }
-
-  ],
-
-  "path":  [
-
-  "rightComparison",
-
-  "friendsConnection"
-
-  ]
-
-  }
-
-  ],
-
-  "data":  {
-
-  "leftComparison":  null,
-
-  "rightComparison":  null
-
-  }
+"column": 3
 
 }
 
-Operation name[](https://graphql.org/learn/queries/#operation-name)
--------------------------------------------------------------------
+],
+
+"path": [
+
+"leftComparison",
+
+"friendsConnection"
+
+]
+
+},
+
+{
+
+"message": "Buffer is not defined",
+
+"locations": [
+
+{
+
+"line": 12,
+
+"column": 3
+
+}
+
+],
+
+"path": [
+
+"rightComparison",
+
+"friendsConnection"
+
+]
+
+}
+
+],
+
+"data": {
+
+"leftComparison": null,
+
+"rightComparison": null
+
+}
+
+}
+
+## Operation name[](https://graphql.org/learn/queries/#operation-name)
 
 Up until now, we have been using a shorthand syntax where we omit both the `query` keyword and the query name, but in production apps it's useful to use these to make our code less ambiguous.
 
 Here's an example that includes the keyword `query` as *operation type* and `HeroNameAndFriends` as *operation name* :
 
-query  HeroNameAndFriends  {
+query HeroNameAndFriends {
 
-  hero  {
+hero {
 
-  name
+name
 
-  friends  {
+friends {
 
-  name
+name
 
-  }
+}
 
-  }
+}
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "hero":  {
+"hero": {
 
-  "name":  "R2-D2",
+"name": "R2-D2",
 
-  "friends":  [
+"friends": [
 
-  {
+{
 
-  "name":  "Luke Skywalker"
+"name": "Luke Skywalker"
 
-  },
+},
 
-  {
+{
 
-  "name":  "Han Solo"
+"name": "Han Solo"
 
-  },
+},
 
-  {
+{
 
-  "name":  "Leia Organa"
+"name": "Leia Organa"
 
-  }
+}
 
-  ]
+]
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -697,8 +685,7 @@ The *operation type* is either *query*, *mutation*, or *subscription* and 
 
 The *operation name* is a meaningful and explicit name for your operation. It is only required in multi-operation documents, but its use is encouraged because it is very helpful for debugging and server-side logging. When something goes wrong (you see errors either in your network logs, or in the logs of your GraphQL server) it is easier to identify a query in your codebase by name instead of trying to decipher the contents. Think of this just like a function name in your favorite programming language. For example, in JavaScript we can easily work only with anonymous functions, but when we give a function a name, it's easier to track it down, debug our code, and log when it's called. In the same way, GraphQL query and mutation names, along with fragment names, can be a useful debugging tool on the server side to identify different GraphQL requests.
 
-Variables[](https://graphql.org/learn/queries/#variables)
----------------------------------------------------------
+## Variables[](https://graphql.org/learn/queries/#variables)
 
 So far, we have been writing all of our arguments inside the query string. But in most applications, the arguments to fields will be dynamic: For example, there might be a dropdown that lets you select which Star Wars episode you are interested in, or a search field, or a set of filters.
 
@@ -712,61 +699,61 @@ When we start working with variables, we need to do three things:
 
 Here's what it looks like all together:
 
-query  HeroNameAndFriends($episode:  Episode)  {
+query HeroNameAndFriends($episode: Episode) {
 
-  hero(episode:  $episode)  {
+hero(episode: $episode) {
 
-  name
+name
 
-  friends  {
+friends {
 
-  name
+name
 
-  }
+}
 
-  }
+}
 
 }
 
 {
 
-  "episode":  "JEDI"
+"episode": "JEDI"
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "hero":  {
+"hero": {
 
-  "name":  "R2-D2",
+"name": "R2-D2",
 
-  "friends":  [
+"friends": [
 
-  {
+{
 
-  "name":  "Luke Skywalker"
+"name": "Luke Skywalker"
 
-  },
+},
 
-  {
+{
 
-  "name":  "Han Solo"
+"name": "Han Solo"
 
-  },
+},
 
-  {
+{
 
-  "name":  "Leia Organa"
+"name": "Leia Organa"
 
-  }
+}
 
-  ]
+]
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -786,66 +773,65 @@ To learn more about the syntax for these variable definitions, it's useful to le
 
 Default values can also be assigned to the variables in the query by adding the default value after the type declaration.
 
-query HeroNameAndFriends($episode: Episode = JEDI)  {
+query HeroNameAndFriends($episode: Episode = JEDI) {
 
- hero(episode:  $episode)  {
+hero(episode: $episode) {
 
- name
+name
 
- friends {
+friends {
 
- name
+name
 
-  }
+}
 
-  }
+}
 
 }
 
 When default values are provided for all variables, you can call the query without passing any variables. If any variables are passed as part of the variables dictionary, they will override the defaults.
 
-Directives[](https://graphql.org/learn/queries/#directives)
------------------------------------------------------------
+## Directives[](https://graphql.org/learn/queries/#directives)
 
 We discussed above how variables enable us to avoid doing manual string interpolation to construct dynamic queries. Passing variables in arguments solves a pretty big class of these problems, but we might also need a way to dynamically change the structure and shape of our queries using variables. For example, we can imagine a UI component that has a summarized and detailed view, where one includes more fields than the other.
 
 Let's construct a query for such a component:
 
-query  Hero($episode:  Episode, $withFriends:  Boolean!)  {
+query Hero($episode: Episode, $withFriends: Boolean!) {
 
-  hero(episode:  $episode)  {
+hero(episode: $episode) {
 
-  name
+name
 
-  friends  @include(if:  $withFriends)  {
+friends @include(if: $withFriends) {
 
-  name
+name
 
-  }
+}
 
-  }
+}
 
 }
 
 {
 
-  "episode":  "JEDI",
+"episode": "JEDI",
 
-  "withFriends":  false
+"withFriends": false
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "hero":  {
+"hero": {
 
-  "name":  "R2-D2"
+"name": "R2-D2"
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -858,8 +844,7 @@ We needed to use a new feature in GraphQL called a *directive*. A directive can
 
 Directives can be useful to get out of situations where you otherwise would need to do string manipulation to add and remove fields in your query. Server implementations may also add experimental features by defining completely new directives.
 
-Mutations[](https://graphql.org/learn/queries/#mutations)
----------------------------------------------------------
+## Mutations[](https://graphql.org/learn/queries/#mutations)
 
 Most discussions of GraphQL focus on data fetching, but any complete data platform needs a way to modify server-side data as well.
 
@@ -867,45 +852,45 @@ In REST, any request might end up causing some side-effects on the server, but b
 
 Just like in queries, if the mutation field returns an object type, you can ask for nested fields. This can be useful for fetching the new state of an object after an update. Let's look at a simple example mutation:
 
-mutation  CreateReviewForEpisode($ep:  Episode!, $review:  ReviewInput!)  {
+mutation CreateReviewForEpisode($ep: Episode!, $review: ReviewInput!) {
 
-  createReview(episode:  $ep, review:  $review)  {
+createReview(episode: $ep, review: $review) {
 
-  stars
+stars
 
-  commentary
+commentary
 
-  }
+}
 
 }
 
 {
 
-  "ep":  "JEDI",
+"ep": "JEDI",
 
-  "review":  {
+"review": {
 
-  "stars":  5,
+"stars": 5,
 
-  "commentary":  "This is a great movie!"
+"commentary": "This is a great movie!"
 
-  }
+}
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "createReview":  {
+"createReview": {
 
-  "stars":  5,
+"stars": 5,
 
-  "commentary":  "This is a great movie!"
+"commentary": "This is a great movie!"
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -921,54 +906,53 @@ A mutation can contain multiple fields, just like a query. There's one important
 
 This means that if we send two `incrementCredits` mutations in one request, the first is guaranteed to finish before the second begins, ensuring that we don't end up with a race condition with ourselves.
 
-Inline Fragments[](https://graphql.org/learn/queries/#inline-fragments)
------------------------------------------------------------------------
+## Inline Fragments[](https://graphql.org/learn/queries/#inline-fragments)
 
 Like many other type systems, GraphQL schemas include the ability to define interfaces and union types. [Learn about them in the schema guide.](https://graphql.org/learn/schema/#interfaces)
 
 If you are querying a field that returns an interface or a union type, you will need to use *inline fragments* to access data on the underlying concrete type. It's easiest to see with an example:
 
-query  HeroForEpisode($ep:  Episode!)  {
+query HeroForEpisode($ep: Episode!) {
 
-  hero(episode:  $ep)  {
+hero(episode: $ep) {
 
-  name
+name
 
-  ...  on  Droid  {
+... on Droid {
 
-  primaryFunction
+primaryFunction
 
-  }
+}
 
-  ...  on  Human  {
+... on Human {
 
-  height
+height
 
-  }
+}
 
-  }
+}
 
 }
 
 {
 
-  "ep":  "JEDI"
+"ep": "JEDI"
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "hero":  {
+"hero": {
 
-  "name":  "R2-D2",
+"name": "R2-D2",
 
-  "primaryFunction":  "Astromech"
+"primaryFunction": "Astromech"
 
-  }
+}
 
-  }
+}
 
 }
 
@@ -984,68 +968,68 @@ Given that there are some situations where you don't know what type you'll get b
 
 {
 
-  search(text:  "an")  {
+search(text: "an") {
 
-  __typename
+\_\_typename
 
-  ...  on  Human  {
+... on Human {
 
-  name
+name
 
-  }
+}
 
-  ...  on  Droid  {
+... on Droid {
 
-  name
+name
 
-  }
+}
 
-  ...  on  Starship  {
+... on Starship {
 
-  name
+name
 
-  }
+}
 
-  }
+}
 
 }
 
 {
 
-  "data":  {
+"data": {
 
-  "search":  [
+"search": [
 
-  {
+{
 
-  "__typename":  "Human",
+"\_\_typename": "Human",
 
-  "name":  "Han Solo"
+"name": "Han Solo"
 
-  },
+},
 
-  {
+{
 
-  "__typename":  "Human",
+"\_\_typename": "Human",
 
-  "name":  "Leia Organa"
+"name": "Leia Organa"
 
-  },
+},
 
-  {
+{
 
-  "__typename":  "Starship",
+"\_\_typename": "Starship",
 
-  "name":  "TIE Advanced x1"
+"name": "TIE Advanced x1"
 
-  }
+}
 
-  ]
+]
 
-  }
+}
 
 }
 
 In the above query, `search` returns a union type that can be one of three options. It would be impossible to tell apart the different types from the client without the `__typename` field.
 
-GraphQL services provide a few meta fields, the rest of which are used to expose the [Introspection](https://graphql.org/learn/introspection/) system.****
+GraphQL services provide a few meta fields, the rest of which are used to expose the [Introspection](https://graphql.org/learn/introspection/) system.\*\*\*\*
