@@ -1,15 +1,29 @@
 ---
 title: Javascript Interview Questions
-subtitle: lorem-ipsum
+subtitle: Object Oriented JavaScript
 date: '2021-09-11'
-thumb_image_alt: lorem-ipsum
-excerpt: lorem-ipsum
+thumb_image_alt: big o
+excerpt: What are the possible ways to create objects in JavaScript
 seo:
   title: ''
-  description: ''
+  description: What are the possible ways to create objects in JavaScript
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/code-299f1fc7.png
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:title'
+      value: JS-Interview
+      keyName: name
+      relativeUrl: false
+    - name: 'twitter:description'
+      value: What are the possible ways to create objects in JavaScript
+      keyName: name
+      relativeUrl: false
 template: post
+thumb_image: images/bigo.png
+image: images/green-spruce-4e3a1745.png
 ---
 
 # Javascript Interview Questions:

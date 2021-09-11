@@ -43,7 +43,7 @@
                     },
                     {
                         "label": "Python",
-                        "url": "/docs/python/python-ds",
+                        "url": "/docs/python/index",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
@@ -214,7 +214,7 @@
             },
             {
                 "label": "Projects",
-                "url": "https://project-portfolio42.netlify.app/",
+                "url": "docs/content/projects",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
@@ -251,7 +251,7 @@
                     {
                         "label": "SearchAwesome",
                         "url": "https://bgoonz.github.io/searchAwesome/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "github",
                         "new_window": true,
                         "no_follow": false,
