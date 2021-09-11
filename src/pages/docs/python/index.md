@@ -23,7 +23,7 @@ template: docs
 
 ## My Python Docs:
 
-## [My Python Website]()
+## [My Python Website](https://bgoonz42.gitbook.io/datastructures-in-pytho/)
 
 # Python Study Guide for a JavaScript Programmer
 
