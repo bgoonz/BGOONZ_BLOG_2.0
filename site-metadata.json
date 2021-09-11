@@ -342,7 +342,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "github-stats-website",
                         "url": "https://bgoonz.github.io/github-stats-website/",
                         "style": "link",
                         "icon_class": "dev",
