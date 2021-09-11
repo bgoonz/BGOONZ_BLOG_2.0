@@ -1,5 +1,5 @@
 ---
-title: 'Python '
+title: My Python Docs
 weight: 0
 excerpt: Python
 seo:
