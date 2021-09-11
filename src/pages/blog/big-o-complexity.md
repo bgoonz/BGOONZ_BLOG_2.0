@@ -2,7 +2,7 @@
 title: Big O Computational Complexity
 subtitle: Explained using gif animations
 date: '2021-09-11'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt: neural network
 excerpt: lorem-ipsum
 seo:
   title: ''
