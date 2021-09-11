@@ -6,7 +6,7 @@ thumb_image_alt: big o
 excerpt: What are the possible ways to create objects in JavaScript
 seo:
   title: ''
-  description: ''
+  description: What are the possible ways to create objects in JavaScript
   robots: []
   extra: []
 template: post
