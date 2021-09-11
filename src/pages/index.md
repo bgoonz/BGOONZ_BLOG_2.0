@@ -223,6 +223,7 @@ sections:
     section_id: navigate from the home page
     col_number: three
     type: section_docs
+    subtitle: quick links
   - title: Contact
     section_id: lorem-ipsum
     actions:
