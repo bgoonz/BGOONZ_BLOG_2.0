@@ -21,7 +21,9 @@ template: docs
 
 <br>
 
-## Python For JS Developers:
+## My Python Docs:
+
+## [My Python Website]
 
 # Python Study Guide for a JavaScript Programmer
 
