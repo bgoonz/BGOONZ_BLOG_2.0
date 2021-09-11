@@ -1,6 +1,6 @@
 ---
 title: Big O Computational Complexity
-subtitle: lorem-ipsum
+subtitle: Explained using gif animations
 date: '2021-09-11'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
