@@ -25,4 +25,3 @@ template: docs
 <br>
 <br>
 
-https://web-dev-resource-hub.netlify.app/
