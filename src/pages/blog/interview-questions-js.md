@@ -8,7 +8,11 @@ seo:
   title: ''
   description: What are the possible ways to create objects in JavaScript
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/code-299f1fc7.png
+      keyName: property
+      relativeUrl: true
 template: post
 thumb_image: images/bigo.png
 image: images/green-spruce-4e3a1745.png
