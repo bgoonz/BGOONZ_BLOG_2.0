@@ -1,5 +1,5 @@
 ---
-title: "The\_gcloud\_cheat sheet"
+title: "The\_google cloud\_cheat sheet"
 weight: 0
 excerpt: lorem-ipsum
 seo:
