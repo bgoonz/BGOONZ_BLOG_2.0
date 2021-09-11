@@ -21,7 +21,7 @@ template: docs
 
 <br>
 
-<br>https://project-portfolio42.netlify.app/
+<br>
 <br>
 <br>
 <h1>  Project Image Portfolio   </h1>
