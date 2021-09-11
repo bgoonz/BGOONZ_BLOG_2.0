@@ -1,6 +1,6 @@
 ---
-title: Queries and Mutations
-weight: 0
+title: Queries and Mutations (Gatsby)
+weight: 1
 excerpt: Queries and Mutations
 seo:
     title: ''
