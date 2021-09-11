@@ -241,7 +241,7 @@ sections:
         new_window: false
         no_follow: false
     type: section_cta
-    subtitle: 'get in touch! '
+    subtitle: get in touch! +1
 seo:
   title: Web-Dev-Hub
   description: >-
