@@ -235,7 +235,7 @@ sections:
         no_follow: false
         type: action
       - label: email
-        url: '#'
+        url: 'mailto:bryan.guner@gmail.com'
         style: primary
         icon_class: dev
         new_window: false
