@@ -81,7 +81,6 @@ export default class Footer extends React.Component {
                                             </table>
                                         </center>
 
-                                        
                                         <form
                                             style={{
                                                 margin: '0px',
@@ -138,7 +137,7 @@ export default class Footer extends React.Component {
                         </table>
                     </center>
                 </div>
-                
+
                 <div className="inner">
                     <div id="search" className="inner"></div>
                     <div className="site-footer-inside">

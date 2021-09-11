@@ -3,29 +3,29 @@ title: Discrete Fast Fourier Transform
 weight: 0
 excerpt: Fast Fourier Transform
 seo:
-  title: fft
-  description: |-
-    The discrete Fourier transform operates on sampled data,
-    in contrast to the standard Fourier transform which is
-    defined for continuous functions.
-  robots: []
-  extra:
-    - name: 'og:description'
-      value: |-
+    title: fft
+    description: |-
         The discrete Fourier transform operates on sampled data,
         in contrast to the standard Fourier transform which is
         defined for continuous functions.
-      keyName: property
-      relativeUrl: false
-    - name: 'og:image'
-      value: images/fft.jpg
-      keyName: property
-      relativeUrl: true
-    - name: 'og:title'
-      value: Fast Fourier Transform
-      keyName: property
-      relativeUrl: false
-  type: stackbit_page_meta
+    robots: []
+    extra:
+        - name: 'og:description'
+          value: |-
+              The discrete Fourier transform operates on sampled data,
+              in contrast to the standard Fourier transform which is
+              defined for continuous functions.
+          keyName: property
+          relativeUrl: false
+        - name: 'og:image'
+          value: images/fft.jpg
+          keyName: property
+          relativeUrl: true
+        - name: 'og:title'
+          value: Fast Fourier Transform
+          keyName: property
+          relativeUrl: false
+    type: stackbit_page_meta
 template: docs
 ---
 
