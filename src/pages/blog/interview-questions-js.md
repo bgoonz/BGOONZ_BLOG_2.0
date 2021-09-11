@@ -17,6 +17,10 @@ seo:
       value: JS-Interview
       keyName: name
       relativeUrl: false
+    - name: 'twitter:description'
+      value: What are the possible ways to create objects in JavaScript
+      keyName: name
+      relativeUrl: false
 template: post
 thumb_image: images/bigo.png
 image: images/green-spruce-4e3a1745.png
