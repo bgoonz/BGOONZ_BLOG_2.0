@@ -258,7 +258,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Condensed ",
+                        "label": "Condensed -Portfolio",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
