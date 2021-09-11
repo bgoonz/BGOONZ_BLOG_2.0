@@ -1,6 +1,6 @@
 ---
 title: Javascript Interview Questions
-subtitle: lorem-ipsum
+subtitle: Object Oriented JavaScript
 date: '2021-09-11'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
