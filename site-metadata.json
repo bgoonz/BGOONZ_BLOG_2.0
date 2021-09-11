@@ -258,7 +258,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Condense",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
