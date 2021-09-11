@@ -24,7 +24,7 @@ template: docs
 <br>https://project-portfolio42.netlify.app/
 <br>
 <br>
-<h1>  Search Awesome Lists      </h1>
+<h1>  Project Image Portfolio   </h1>
 <br>
 
 <iframe src="https://bgoonz.github.io/searchAwesome/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
