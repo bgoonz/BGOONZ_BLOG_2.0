@@ -11,6 +11,7 @@ seo:
   extra: []
 template: post
 thumb_image: images/bigo.png
+image: images/green-spruce-4e3a1745.png
 ---
 
 # Javascript Interview Questions:
