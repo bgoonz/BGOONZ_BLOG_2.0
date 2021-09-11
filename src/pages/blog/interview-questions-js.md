@@ -3,7 +3,7 @@ title: Javascript Interview Questions
 subtitle: Object Oriented JavaScript
 date: '2021-09-11'
 thumb_image_alt: big o
-excerpt: lorem-ipsum
+excerpt: What are the possible ways to create objects in JavaScript
 seo:
   title: ''
   description: ''
