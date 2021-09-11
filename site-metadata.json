@@ -214,7 +214,7 @@
             },
             {
                 "label": "Projects",
-                "url": "https://project-portfolio42.netlify.app/",
+                "url": "/content/projects",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
