@@ -2,7 +2,7 @@
 title: Javascript Interview Questions
 subtitle: Object Oriented JavaScript
 date: '2021-09-11'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt: big o
 excerpt: lorem-ipsum
 seo:
   title: ''
