@@ -2,16 +2,17 @@
 title: Constructor functions
 chapter: Constructors/Classes
 ---
-JavaScript doesn't have classes like class-based OOP languages have, but it has 
-something similar: *constructor functions*.
 
-Constructor functions are functions which *construct objects*. Technically
-*every* function can be used as a constructor function, it just has to be 
+JavaScript doesn't have classes like class-based OOP languages have, but it has
+something similar: _constructor functions_.
+
+Constructor functions are functions which _construct objects_. Technically
+_every_ function can be used as a constructor function, it just has to be
 called with the [`new` operator][new]:
 
 ```javascript
 function Person(name) {
-   this.name = name;
+    this.name = name;
 }
 
 var felix = new Person('Felix');
@@ -29,9 +30,11 @@ Example:
 
 ```javascript
 function Person(name) {
-   this.name = name;
+    this.name = name;
 }
-Person.prototype.sayName = function(){ return this.name; };
+Person.prototype.sayName = function () {
+    return this.name;
+};
 
 var felix = new Person('Felix');
 console.log(felix.sayName());

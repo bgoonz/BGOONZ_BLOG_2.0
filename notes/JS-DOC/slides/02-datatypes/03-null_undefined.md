@@ -1,6 +1,7 @@
 ---
 title: null and undefined
 ---
+
 JavaScript has two data types to express the **absence of a value**, null and
 undefined.
 
@@ -10,10 +11,10 @@ undefined.
 The difference between those two is subtle and is best explained by how to use
 them:
 
-- `undefined` is the value JavaScript itself uses to indicate the absence of a
-  value.
-- `null` is the value the engineer should use to indicate the absence of a
-  value.
+-   `undefined` is the value JavaScript itself uses to indicate the absence of a
+    value.
+-   `null` is the value the engineer should use to indicate the absence of a
+    value.
 
 Examples:
 
@@ -28,9 +29,9 @@ There are other native occurrence of `undefined` which we will mention later.
 
 <div class="callout primary">
 
-**Remember:** A variable that doesn't exist cannot be accessed at all (it will 
-throw a reference error). Instead of saying "the variable is undefined" we 
-rather say "the variable is not *declared*" to avoid confusion.
+**Remember:** A variable that doesn't exist cannot be accessed at all (it will
+throw a reference error). Instead of saying "the variable is undefined" we
+rather say "the variable is not _declared_" to avoid confusion.
 
 ```js
 var foo;

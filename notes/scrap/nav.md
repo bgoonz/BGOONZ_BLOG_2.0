@@ -1,5 +1,3 @@
-
-
 https://bgoonz-blog.netlify.app/docs/docs/
 https://bgoonz-blog.netlify.app/docs/docs/about/
 https://bgoonz-blog.netlify.app/docs/docs/about/me/
@@ -38,7 +36,7 @@ https://bgoonz-blog.netlify.app/docs/docs/interact/clock/
 https://bgoonz-blog.netlify.app/docs/docs/interact/jupyter-notebooks/
 https://bgoonz-blog.netlify.app/docs/docs/interact/other-sites/
 https://bgoonz-blog.netlify.app/docs/docs/medium/
-https://bgoonz-blog.netlify.app/docs/docs/medium/Github 
+https://bgoonz-blog.netlify.app/docs/docs/medium/Github
 https://bgoonz-blog.netlify.app/docs/docs/medium/medium-links/
 https://bgoonz-blog.netlify.app/docs/docs/medium/my-websites/
 https://bgoonz-blog.netlify.app/docs/docs/medium/social/
@@ -62,4 +60,3 @@ https://bgoonz-blog.netlify.app/docs/job-hunt/
 https://bgoonz-blog.netlify.app/docs/notes-template/
 https://bgoonz-blog.netlify.app/docs/review/
 https://bgoonz-blog.netlify.app/docs/showcase/
-

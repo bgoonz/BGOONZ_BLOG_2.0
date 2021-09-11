@@ -14,8 +14,6 @@ template: docs
 <br>
 <br>
 
-
-
 <br>
 <h1>  Web Audio DAW      </h1>
 <br>
@@ -39,7 +37,6 @@ template: docs
 
 <br>
 
-
 <br>
 
 <br>
@@ -54,11 +51,6 @@ template: docs
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
-
-
-
-
-
 
 <br>
 

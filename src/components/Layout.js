@@ -51,7 +51,7 @@ export default class Body extends React.Component {
                 </Helmet>
                 <div id="page" className="site">
                     <Header {...this.props} />
-                    
+
                     <main id="content" className="site-content">
                         {this.props.children}
                     </main>

@@ -3,35 +3,36 @@ title: Zumzi Video Conferencing (Mesibo API Backend)
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: 'Zumzi Video Conference:'
-  description: |-
-    Features:
-    Group Voice and Video Call with unlimited members
-    Live Streaming
-    Screen Sharing
-    Supports video streaming at various resolutions.
-  robots: []
-  extra:
-    - name: 'og:description'
-      value: |-
+    title: 'Zumzi Video Conference:'
+    description: |-
         Features:
         Group Voice and Video Call with unlimited members
         Live Streaming
         Screen Sharing
         Supports video streaming at various resolutions.
-      keyName: property
-      relativeUrl: false
-    - name: 'og:title'
-      value: 'Zumzi Video Conference:'
-      keyName: property
-      relativeUrl: false
-    - name: 'og:image'
-      value: images/zumzi-video-chat-0aba1c15.png
-      keyName: property
-      relativeUrl: true
-  type: stackbit_page_meta
+    robots: []
+    extra:
+        - name: 'og:description'
+          value: |-
+              Features:
+              Group Voice and Video Call with unlimited members
+              Live Streaming
+              Screen Sharing
+              Supports video streaming at various resolutions.
+          keyName: property
+          relativeUrl: false
+        - name: 'og:title'
+          value: 'Zumzi Video Conference:'
+          keyName: property
+          relativeUrl: false
+        - name: 'og:image'
+          value: images/zumzi-video-chat-0aba1c15.png
+          keyName: property
+          relativeUrl: true
+    type: stackbit_page_meta
 template: docs
 ---
+
 # Zumzi Video Conference:
 
 <iframe class="block-content" width="100%  width="800" height="575"
@@ -45,78 +46,78 @@ template: docs
 
 ## Features:
 
-*   Group Voice and Video Call with unlimited members
-*   Live Streaming
-*   Screen Sharing
-*   Fine control over all video & audio parameters and user permissions
-*   Supports video streaming at various resolutions: Standard, HD, FHD and 4K
-*   Group Chat
-*   One-to-One chat
-*   Invite Participants
+-   Group Voice and Video Call with unlimited members
+-   Live Streaming
+-   Screen Sharing
+-   Fine control over all video & audio parameters and user permissions
+-   Supports video streaming at various resolutions: Standard, HD, FHD and 4K
+-   Group Chat
+-   One-to-One chat
+-   Invite Participants
 
 There are two sub-folders:
 
-*   **backend** contains the source code for hosting the backend APIs for the app
-*   **web** contains the source code for the app which you can directly integrate into your website.
+-   **backend** contains the source code for hosting the backend APIs for the app
+-   **web** contains the source code for the app which you can directly integrate into your website.
 
 ## Apendix
 
-*   access token:
+-   access token:
     > An Access Token needs to be generated for every user who needs to access mesibo real-time messaging API. You can generate Access Token for every user of your application on demand and send it to the user. The user will then use this access token to initialize mesibo client-side API..
 
-***
+---
 
-*   api key
+-   api key
     > API key is a unique alphanumeric identifier associated with your Mesibo account. You can view, change or regenerate the API key from the Mesibo console.
 
-***
+---
 
-*   Application Token
+-   Application Token
     > is a unique alphanumeric identifier with one of your application. You can view and change the app token from the Mesibo Console.
 
-***
+---
 
-*   Mesibo container
+-   Mesibo container
     > A container is a runtime instance of mesibo in-premises docker image.
 
-***
+---
 
-*   MAU
+-   MAU
     > MAU is counted when a user connects to mesibo server within monthly billing period. To further clarify, it will be only counted as one when a unique user connects to mesibo server multiple times within monthly billing period
 
-***
+---
 
-*   High-availability clusters
+-   High-availability clusters
     > (also known as HA clusters or fail-over clusters) are
     > groups of computers that support server applications that can be reliably utilized with a minimum amount of down-time
 
-***
+---
 
-*   namespace
+-   namespace
     > in mesibo is refer to a mesibo feature that isolates users and groups of an application from another application. Users can only interact with users and groups of the same application that are part of the same namespace. Namespaces are an important part of Mesibo’s isolation model
 
-***
+---
 
-*   node
+-   node
     > A \[node]is a physical or virtual machine running an instance of the mesibo.
 
-***
+---
 
-*   On premises deployment
+-   On premises deployment
     > Mesibo On-premises deploment allows you to run Mesibo in your own data center or cloud.
 
-***
+---
 
-*   1-1 Communication
+-   1-1 Communication
     > Communication is between two parties; for example, a chat or a call
 
-***
+---
 
-*   Peer-to-peer
+-   Peer-to-peer
     (P2P)
     > It is a distributed application architecture that partitions tasks or workloads between peers. Peers are equally privileged, equipotent participants in the application.They are said to form a peer-to-peer network of nodes.
 
-***
+---
 
 ![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.PNG?raw=true)
 
@@ -227,9 +228,9 @@ Refer to the [Get-Started Guide](https://mesibo.com/documentation/tutorials/get-
 To open messenger demo launch `messenger.html`
 
 ```javascript
-const MESIBO_ACCESS_TOKEN = "xxxxxxx";
-const MESIBO_APP_ID = "xxxx";
-const MESIBO_API_URL = "https://app.mesibo.com/api.php";
+const MESIBO_ACCESS_TOKEN = 'xxxxxxx';
+const MESIBO_APP_ID = 'xxxx';
+const MESIBO_API_URL = 'https://app.mesibo.com/api.php';
 ```
 
 If you are hosting mesibo-backend on your own server, you need to change the API URL to point to your server.
@@ -278,9 +279,9 @@ You can provide a list of local contacts that will be loaded as a list of availa
 To launch popup demo you can configure the following for setting the displayed user avatar and destination user(to which all messages will be sent) in `config.js` and launch `popup.html`
 
 ```javascript
-const POPUP_DISPLAY_NAME = "xxxx";
-const POPUP_DISPLAY_PICTURE = "images/profile/default-profile-icon.jpg";
-const POPUP_DESTINATION_USER = "xxxx";
+const POPUP_DISPLAY_NAME = 'xxxx';
+const POPUP_DISPLAY_PICTURE = 'images/profile/default-profile-icon.jpg';
+const POPUP_DESTINATION_USER = 'xxxx';
 ```
 
 ## FAQ & Troubleshooting
@@ -329,8 +330,8 @@ Alternatively, you may also use DOM method to load the mesibo JS on demand when 
 
 Due to the browser security model, camera and microphone access require the following:
 
-*   You MUST use a secure URL (`https://`). The `http://` or `file://` URLs will NOT work.
-*   You MUST also use a valid certificate with recognized authority, the self-signed certificate will NOT work.
+-   You MUST use a secure URL (`https://`). The `http://` or `file://` URLs will NOT work.
+-   You MUST also use a valid certificate with recognized authority, the self-signed certificate will NOT work.
 
 The browser will not grant the camera and microphone permissions unless your app meets the above requirements. If permissions are not granted, calls and conferencing will not work.
 

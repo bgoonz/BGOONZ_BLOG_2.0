@@ -3,11 +3,11 @@ title: Other Open Source Utilities
 weight: 0
 excerpt: embedded utilities
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
 
@@ -57,7 +57,6 @@ template: docs
 
 <br>
 
-
 <br>
 
 <br>
@@ -72,11 +71,6 @@ template: docs
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
-
-
-
-
-
 
 <br>
 

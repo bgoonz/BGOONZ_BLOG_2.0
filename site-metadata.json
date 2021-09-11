@@ -256,6 +256,14 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "Condensed -Portfolio",
+                        "url": "https://bg-portfolio.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false
                     }
                 ],
                 "type": "action_menu"
@@ -340,6 +348,14 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "github-stats-website",
+                        "url": "https://bgoonz.github.io/github-stats-website/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
                     }
                 ],
                 "type": "action_menu"

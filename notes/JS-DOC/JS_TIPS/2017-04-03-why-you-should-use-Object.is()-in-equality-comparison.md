@@ -12,8 +12,7 @@ We all know that JavaScript is loosely typed and in some cases it fall behind sp
 
 ```javascript
 0 == ' '; //true
-(null ==
-    undefined[1]) == //true
+(null == undefined[1]) == //true
     true; //true
 ```
 

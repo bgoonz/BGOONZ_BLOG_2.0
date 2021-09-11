@@ -1,6 +1,7 @@
 ---
 title: Function definitions
 ---
+
 There are two syntactic constructs to create functions: function **declaration**
 and function **expressions**.
 
@@ -9,17 +10,18 @@ and function **expressions**.
 
 ```javascript
 function foo(a, b, c) {
-  // do something
+    // do something
 }
 ```
 
 **Function expressions** have the same structure, but their name is optional:
 
 ```javascript
-var foo = function(a, b, c) {
-  // do something
+var foo = function (a, b, c) {
+    // do something
 };
 ```
+
 <div class="callout primary">
 
 <strong>Note:</strong> Since functions are objects, they can be treated like any
@@ -41,7 +43,7 @@ function () { }
 generates an error (function declaration without name), but
 
 ```javascript
-(function () { })
+(function () {});
 ```
 
 does not, because the grouping operator (`(...)`) can only contain expressions.
