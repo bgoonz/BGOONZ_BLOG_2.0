@@ -10,6 +10,7 @@ seo:
   robots: []
   extra: []
 template: post
+thumb_image: images/bigo.png
 ---
 
 # Javascript Interview Questions:
