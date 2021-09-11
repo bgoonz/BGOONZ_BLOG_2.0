@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Data Structures Docs
 weight: 0
-excerpt: lorem-ipsum
+excerpt:  Data Structures Docs
 seo:
     title: ''
     description: ''
