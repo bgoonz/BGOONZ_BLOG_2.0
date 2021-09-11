@@ -225,7 +225,7 @@ sections:
     type: section_docs
     subtitle: quick links
   - title: Contact
-    section_id: get in touch!
+    section_id: contact
     actions:
       - label: Contact
         url: /docs/faq/contact
