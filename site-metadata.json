@@ -43,7 +43,7 @@
                     },
                     {
                         "label": "Python",
-                        "url": "/docs/python/",
+                        "url": "/docs/python/ind",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
