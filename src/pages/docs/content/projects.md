@@ -63,7 +63,7 @@ template: docs
 
 <br>
 
-<br>https://bg-portfolio.netlify.app/
+<br>
 
 <br>
 <h1>Portfolio </h1>
