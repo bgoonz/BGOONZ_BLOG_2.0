@@ -3,7 +3,7 @@ title: Audio
 weight: 0
 excerpt: Audio Projects
 seo:
-    title: 'Automatic Triggered Guitar Effects'
+    title: 'Audio Projects'
     description: 'A collection of web audio projects'
     robots: []
     extra: []
