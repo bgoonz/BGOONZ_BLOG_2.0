@@ -49,7 +49,7 @@ template: docs
 <h1>  Projects         </h1>
 <br>
 
-<iframe src=" https://curious-zebra-a1329.netlify.app/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src=" https://project-portfolio42.netlify.app/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

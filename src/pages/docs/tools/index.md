@@ -1,41 +1,37 @@
 ---
 title: Tools
 excerpt: >-
-    See some interesting tools developed by the Web-Dev-Hubcommunity to help automate
-    parts of your workflow.
+    See some interesting tools developed by the Web-Dev-Hubcommunity to help
+    automate parts of your workflow.
 seo:
     title: Tools
-    description: This is the tools page
+    description: >-
+        paste to markdown, excel table to markdown, excel to html, cloud storage,
+        text manipulation, ternary converter, github html preview, form builder,
+        border
     extra:
         - name: 'og:type'
-
           value: website
           keyName: property
-
         - name: 'og:title'
-
           value: Tools
-
           keyName: property
-
         - name: 'og:description'
-
-          value: This is the tools page
-
+          value: >-
+              paste to markdown, excel table to markdown, excel to html, cloud
+              storage, text manipulation, ternary converter, github html preview, form
+              builder, border
           keyName: property
-
         - name: 'twitter:card'
-
           value: summary
-
         - name: 'twitter:title'
-
           value: Tools
-
         - name: 'twitter:description'
-
           value: This is the tools page
-
+        - name: 'og:image'
+          value: images/tex.PNG
+          keyName: property
+          relativeUrl: true
 template: docs
 ---
 
@@ -169,3 +165,4 @@ template: docs
 </iframe>
 
 <br>
+<a class="twitter-timeline" href="https://twitter.com/bgooonz?ref_src=twsrc%5Etfw">Tweets by bgooonz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

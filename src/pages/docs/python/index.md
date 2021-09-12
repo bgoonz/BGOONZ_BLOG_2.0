@@ -1,13 +1,13 @@
 ---
-title: Python For JS Devs
+title: My Python Docs
 weight: 0
 excerpt: Python
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
@@ -21,7 +21,9 @@ template: docs
 
 <br>
 
-## Python For JS Developers:
+## My Python Docs:
+
+## [My Python Website](https://bgoonz42.gitbook.io/datastructures-in-pytho/)
 
 # Python Study Guide for a JavaScript Programmer
 

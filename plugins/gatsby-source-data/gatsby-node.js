@@ -33,12 +33,7 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     reporter.info(`[gatsby-source-data] setup file watcher and create site data`);
 
     const dataPath = pluginOptions.path;
-    const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, {
-        dataPath,
-        createNode,
-        createContentDigest,
-        reporter
-    });
+    const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, { dataPath, createNode, createContentDigest, reporter });
     const watcher = chokidar.watch([dataPath, metadataFileName], {
         cwd: '.',
         ignoreInitial: true
