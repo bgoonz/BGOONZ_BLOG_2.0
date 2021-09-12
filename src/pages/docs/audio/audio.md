@@ -12,7 +12,7 @@ template: docs
 ---
 # Audio
 
-# Dynamic Time Warping Triggered Guitar Effects Project:
+
 
 # Audio
 
