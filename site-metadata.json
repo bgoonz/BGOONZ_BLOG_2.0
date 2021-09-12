@@ -3,7 +3,7 @@
     "header": {
         "logo_img": "images/logo-circle.png",
         "logo_img_alt": "webdevhub logo",
-        "has_nav": true,
+        "has_nav": false,
         "nav_links": [
             {
                 "url": "/docs/sitemap",
