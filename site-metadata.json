@@ -3,7 +3,7 @@
     "header": {
         "logo_img": "images/logo-circle.png",
         "logo_img_alt": "webdevhub logo",
-        "has_nav": false,
+        "has_nav": true,
         "nav_links": [
             {
                 "url": "/docs/sitemap",
@@ -177,18 +177,10 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
-                        "label": "ResourceRepo",
-                        "url": "https://github.com/bgoonz/UsefulResourceRepo2.0",
-                        "style": "link",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
                     }
                 ],
                 "type": "action_menu",
-                "url": "content/archive"
+                "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
             },
             {
                 "label": "Audio",
