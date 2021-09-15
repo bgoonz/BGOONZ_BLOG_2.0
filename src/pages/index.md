@@ -156,7 +156,7 @@ sections:
           - dolor sit amet
         actions: []
         type: grid_item
-        image: images/iter.jpg
+        image: images/iter-zoomed.PNG
     type: section_grid
   - section_id: features-two-col
     type: section_grid
