@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Web Standards Checklist
 weight: 0
 excerpt: lorem-ipsum
 seo:
