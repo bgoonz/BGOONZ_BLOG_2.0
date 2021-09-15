@@ -126,7 +126,7 @@
                 "subnav_links": [
                     {
                         "label": "Resource-Repo-Archive",
-                        "url": "content/archive",
+                        "url": "https://github.com/bgoonz/UsefulResourceRepo2.0",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
