@@ -3,24 +3,34 @@ title: Python General Notes
 weight: 0
 excerpt: Python General Notes & Resources
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
-
 ## Python Notes
 
-| [https://lambda-6.gitbook.io/python/](https://lambda-6.gitbook.io/python/) | This Gitbook As A Website |
+| <https://lambda-6.gitbook.io/python/> | This Gitbook As A Website |
 | :------------------------------------------------------------------------: | :------------------------ |
 
-{% embed url="https://ds-unit-5-lambda.netlify.app/\#." %}
+> ******
+>
+> [***https://ds-unit-5-lambda.netlify.app***](https://ds-unit-5-lambda.netlify.app/)
+>
+> ***/***
 
-{% embed url="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" caption="My Notion Notes" %}
+> ******
+>
+> [***https://bryan-guner.gitbook.io/datastructures-in-pytho/***](https://bryan-guner.gitbook.io/datastructures-in-pytho/)
+>
+> ******
 
-{% embed url="https://replit.com/@bgoonz/DATASTRUCPYTHONNOTES-2" %}
+> ***
+> ***
+>
+> [***https://replit.com/@bgoonz/DATASTRUCPYTHONNOTES-2***](https://replit.com/@bgoonz/DATASTRUCPYTHONNOTES-2)
 
 **Keywords**:
 
@@ -36,11 +46,11 @@ def       finally   in        print***
 
 [py-notes.pdf](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c25bca5-0198-42ad-aa8b-7668cb904571/py-notes.pdf)
 
-[https://bryan-guner.gitbook.io/notesarchive/](https://bryan-guner.gitbook.io/notesarchive/)
+<https://bryan-guner.gitbook.io/notesarchive/>
 
 ## DOCS:
 
-[https://docs.python.org/3/](https://docs.python.org/3/)
+<https://docs.python.org/3/>
 
 ```python
 import math
@@ -514,19 +524,19 @@ print(list(newPerson.items()))
 
 ## **2.1.7 Indentation**
 
-Leading whitespace \(spaces and tabs\) at the beginning of a logical line is used to compute the indentation level of the line, which in turn is used to determine the grouping of statements.
+Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the indentation level of the line, which in turn is used to determine the grouping of statements.
 
-First, tabs are replaced \(from left to right\) by one to eight spaces such that the total number of characters up to and including the replacement is a multiple of eight \(this is intended to be the same rule as used by Unix\). The total number of spaces preceding the first non-blank character then determines the line's indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace up to the first backslash determines the indentation.
+First, tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up to and including the replacement is a multiple of eight (this is intended to be the same rule as used by Unix). The total number of spaces preceding the first non-blank character then determines the line's indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace up to the first backslash determines the indentation.
 
 **Cross-platform compatibility note:** because of the nature of text editors on non-UNIX platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
 
-A formfeed character may be present at the start of the line; it will be ignored for the indentation calculations above. Formfeed characters occurring elsewhere in the leading whitespace have an undefined effect \(for instance, they may reset the space count to zero\).
+A formfeed character may be present at the start of the line; it will be ignored for the indentation calculations above. Formfeed characters occurring elsewhere in the leading whitespace have an undefined effect (for instance, they may reset the space count to zero).
 
 The indentation levels of consecutive lines are used to generate INDENT and DEDENT tokens, using a stack, as follows.
 
 Before the first line of the file is read, a single zero is pushed on the stack; this will never be popped off again. The numbers pushed on the stack will always be strictly increasing from bottom to top. At the beginning of each logical line, the line's indentation level is compared to the top of the stack. If it is equal, nothing happens. If it is larger, it is pushed on the stack, and one INDENT token is generated. If it is smaller, it must be one of the numbers occurring on the stack; all numbers on the stack that are larger are popped off, and for each number popped off a DEDENT token is generated. At the end of the file, a DEDENT token is generated for each number remaining on the stack that is larger than zero.
 
-Here is an example of a correctly \(though confusingly\) indented piece of Python code:
+Here is an example of a correctly (though confusingly) indented piece of Python code:
 
 `def perm(l): # Compute the list of all permutations of l if len(l) <= 1: return [l] r = [] for i in range(len(l)): s = l[:i] + l[i+1:] p = perm(s) for x in p: r.append(l[i:i+1] + x) return r`
 
@@ -542,9 +552,9 @@ for i in range(len(l)):             # error: not indented
             return r                # error: inconsistent dedent`
 ```
 
-\(Actually, the first three errors are detected by the parser; only the last error is found by the lexical analyzer -- the indentation of `return r` does not match a level popped off the stack.\)
+(Actually, the first three errors are detected by the parser; only the last error is found by the lexical analyzer -- the indentation of `return r` does not match a level popped off the stack.)
 
-[https://ds-unit-5-lambda.netlify.app/](https://ds-unit-5-lambda.netlify.app/)
+<https://ds-unit-5-lambda.netlify.app/>
 
 ## Python Study Guide for a JavaScript Programmer
 
@@ -552,18 +562,18 @@ for i in range(len(l)):             # error: not indented
 
 [Mar 5](https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb?source=post_page-----5cfdf3d2bdfb--------------------------------) · 15 min read
 
-![https://miro.medium.com/max/1400/1*3V9VOfPk_hrFdbEAd3j-QQ.png](https://miro.medium.com/max/1400/1*3V9VOfPk_hrFdbEAd3j-QQ.png)
+![https://miro.medium.com/max/1400/1\*3V9VOfPk_hrFdbEAd3j-QQ.png](https://miro.medium.com/max/1400/1\*3V9VOfPk_hrFdbEAd3j-QQ.png)
 
-## **Applications of Tutorial & Cheat Sheet Respectivley \(At Bottom Of Tutorial\):**
+## **Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):**
 
 ## **Basics**
 
--   **PEP8** : Python Enhancement Proposals, style-guide for Python.
--   `print` is the equivalent of `console.log`.
+*   **PEP8** : Python Enhancement Proposals, style-guide for Python.
+*   `print` is the equivalent of `console.log`.
 
-> ‘print\(\) == console.log\(\)’
+> ‘print() == console.log()’
 
-## **`#` is used to make comments in your code.**
+## ``** is used to make comments in your code.**
 
 ```text
 def foo():
@@ -579,14 +589,14 @@ def foo():
 
 ## **Numbers**
 
--   Python has three types of numbers:
+*   Python has three types of numbers:
 
-1. **Integer**
-2. **Positive and Negative Counting Numbers.**
+1.  **Integer**
+2.  **Positive and Negative Counting Numbers.**
 
 No Decimal Point
 
-> Created by a literal non-decimal point number … or … with the int\(\) constructor.
+> Created by a literal non-decimal point number … or … with the int() constructor.
 
 ```text
 print(3) # => 3
@@ -600,7 +610,7 @@ print(int()) # => 0
 
 ### **Boolean is a subtype of integer in Python.🤷‍♂️**
 
-> If you came from a background in JavaScript and learned to accept the premise\(s\) of the following meme…
+> If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…
 
 > Than I am sure you will find the means to suspend your disbelief.
 
@@ -615,7 +625,7 @@ print(27e-5) # => 0.00027
 
 > The i is switched to a j in programming.
 
-**T**_his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space** when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
+**T***his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space** when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
 
 ```text
 print(7j) # => 7j
@@ -625,7 +635,7 @@ print(complex(17)) # => 17+0j
 print(complex()) # => 0j
 ```
 
--   **Type Casting** : The process of converting one number to another.
+*   **Type Casting** : The process of converting one number to another.
 
 ```text
 # Using Float
@@ -638,17 +648,17 @@ print(str(17.0) + ' and ' + str(17))        # => 17.0 and 17
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   _“\*\*” : Double asterisk for exponent._
--   _“//” : Integer Division._
--   **There are no spaces between math operations in Python.**
--   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing `Math.floor()` in JS.**
--   **There are no `++` and `-` in Python, the only shorthand operators are:**
+*   *“\*\*” : Double asterisk for exponent.*
+*   *“//” : Integer Division.*
+*   **There are no spaces between math operations in Python.**
+*   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing `Math.floor()` in JS.**
+*   **There are no `++` and `-` in Python, the only shorthand operators are:**
 
 ## **Strings**
 
--   Python uses both single and double quotes.
--   You can escape strings like so `'Jodi asked, "What\\'s up, Sam?"'`
--   Multiline strings use triple quotes.
+*   Python uses both single and double quotes.
+*   You can escape strings like so `'Jodi asked, "What\\'s up, Sam?"'`
+*   Multiline strings use triple quotes.
 
 ```text
 print('''My instructions are very long so to make them
@@ -666,15 +676,15 @@ print(len(“Spaghetti”)) # => 9
 
 ## **Python uses `zero-based indexing`**
 
-### **Python allows negative indexing \(thank god!\)**
+### **Python allows negative indexing (thank god!)**
 
 ```text
 print(“Spaghetti”[-1]) # => i print(“Spaghetti”[-4]) # => e
 ```
 
--   Python let’s you use ranges
+*   Python let’s you use ranges
 
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _\(mind you that in JS … strings are wrapped in an object \(under the hood\)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.\)_
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
 
 ```text
 print(“Spaghetti”[1:4]) # => pag
@@ -682,7 +692,7 @@ print(“Spaghetti”[4:-1]) # => hett
 print(“Spaghetti”[4:4]) # => (empty string)
 ```
 
--   The end range is exclusive just like `slice` in JS.
+*   The end range is exclusive just like `slice` in JS.
 
 ```text
 # Shortcut to get from the beginning of a string to a certain index.
@@ -692,14 +702,14 @@ print("Spaghetti"[1:])  # => paghetti
 print("Spaghetti"[-4:])    # => etti
 ```
 
--   The `index` string function is the equiv. of `indexOf()` in JS
+*   The `index` string function is the equiv. of `indexOf()` in JS
 
 ```text
 print("Spaghetti".index("h"))    # => 4
 print("Spaghetti".index("t"))    # => 6
 ```
 
--   The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
+*   The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
 
 ```text
 print("Spaghetti".count("h"))    # => 1
@@ -713,9 +723,9 @@ postpone, and one which we intend to win, and the others, too.
 '''.count('the '))                # => 4
 ```
 
--   **You can use `+` to concatenate strings, just like in JS.**
--   **You can also use “\*” to repeat strings or multiply strings.**
--   **Use the `format()` function to use placeholders in a string to input values later on.**
+*   **You can use `+` to concatenate strings, just like in JS.**
+*   **You can also use “\*” to repeat strings or multiply strings.**
+*   **Use the `format()` function to use placeholders in a string to input values later on.**
 
 ```text
 first_name = "Billy"
@@ -723,23 +733,23 @@ last_name = "Bob"
 print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
 ```
 
--   _Shorthand way to use format function is:_`print(f'Your name is {first_name} {last_name}')`
+*   *Shorthand way to use format function is:*`print(f'Your name is {first_name} {last_name}')`
 
 ### **Some useful string methods.**
 
--   **Note that in JS `join` is used on an Array, in Python it is used on String.**
+*   **Note that in JS `join` is used on an Array, in Python it is used on String.**
 
-![https://miro.medium.com/max/630/0*eE3E5H0AoqkhqK1z.png](https://miro.medium.com/max/630/0*eE3E5H0AoqkhqK1z.png)
+![https://miro.medium.com/max/630/0\*eE3E5H0AoqkhqK1z.png](https://miro.medium.com/max/630/0\*eE3E5H0AoqkhqK1z.png)
 
--   There are also many handy testing methods.
+*   There are also many handy testing methods.
 
-![https://miro.medium.com/max/630/0*Q0CMqFd4PozLDFPB.png](https://miro.medium.com/max/630/0*Q0CMqFd4PozLDFPB.png)
+![https://miro.medium.com/max/630/0\*Q0CMqFd4PozLDFPB.png](https://miro.medium.com/max/630/0\*Q0CMqFd4PozLDFPB.png)
 
 ## **Variables and Expressions**
 
--   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
--   Duck Typing is the fundamental approach of Python.
--   Assignment of a value automatically declares a variable.
+*   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
+*   Duck Typing is the fundamental approach of Python.
+*   Assignment of a value automatically declares a variable.
 
 ```text
 a = 7
@@ -748,7 +758,7 @@ print(a)         # => 7
 print(b)         # => Marbles
 ```
 
--   _**You can chain variable assignments to give multiple var names the same value.**_
+*   ***You can chain variable assignments to give multiple var names the same value.***
 
 ### **Use with caution as this is highly unreadable**
 
@@ -768,17 +778,17 @@ a = 'seventeen'
 print(a)         # => seventeen
 ```
 
--   _`NaN` does not exist in Python, but you can 'create' it like so:**`print(float("nan"))`**_
--   _Python replaces `null` with `none`._
--   _**`none` is an object** and can be directly assigned to a variable._
+*   ``* does not exist in Python, but you can 'create' it like so:``*
+*   *Python replaces `null` with `none`.*
+*   ``*** is an object** and can be directly assigned to a variable.*
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
 ## **Boolean Data Type**
 
--   One of the biggest benefits of Python is that it reads more like English than JS does.
+*   One of the biggest benefits of Python is that it reads more like English than JS does.
 
-![https://miro.medium.com/max/1400/0*HQpndNhm1Z_xSoHb.png](https://miro.medium.com/max/1400/0*HQpndNhm1Z_xSoHb.png)
+![https://miro.medium.com/max/1400/0\*HQpndNhm1Z_xSoHb.png](https://miro.medium.com/max/1400/0\*HQpndNhm1Z_xSoHb.png)
 
 ```text
 # Logical AND
@@ -793,25 +803,25 @@ print(not False and True)   # => True
 print(not True or False)    # => False
 ```
 
--   By default, Python considers an object to be true UNLESS it is one of the following:
--   Constant `None` or `False`
--   Zero of any numeric type.
--   Empty Sequence or Collection.
--   `True` and `False` must be capitalized
+*   By default, Python considers an object to be true UNLESS it is one of the following:
+*   Constant `None` or `False`
+*   Zero of any numeric type.
+*   Empty Sequence or Collection.
+*   `True` and `False` must be capitalized
 
 ## **Comparison Operators**
 
--   Python uses all the same equality operators as JS.
--   In Python, equality operators are processed from left to right.
--   Logical operators are processed in this order:
+*   Python uses all the same equality operators as JS.
+*   In Python, equality operators are processed from left to right.
+*   Logical operators are processed in this order:
 
-1. **NOT**
-2. **AND**
-3. **OR**
+1.  **NOT**
+2.  **AND**
+3.  **OR**
 
 > Just like in JS, you can use parentheses to change the inherent order of operations.Short Circuit : Stopping a program when a true or false has been reached.
 
-![https://miro.medium.com/max/630/0*qHzGRLTOMTf30miT.png](https://miro.medium.com/max/630/0*qHzGRLTOMTf30miT.png)
+![https://miro.medium.com/max/630/0\*qHzGRLTOMTf30miT.png](https://miro.medium.com/max/630/0\*qHzGRLTOMTf30miT.png)
 
 ## **Identity vs Equality**
 
@@ -828,11 +838,11 @@ print (2 == 2.0)    # => True
 print (2 is 2.0)    # => False
 ```
 
--   In the Python community it is better to use `is` and `is not` over `==` or `!=`
+*   In the Python community it is better to use `is` and `is not` over `==` or `!=`
 
 **If Statements**
 
-`if name == 'Monica': print('Hi, Monica.')if name == 'Monica': print('Hi, Monica.')else: print('Hello, stranger.')if name == 'Monica': print('Hi, Monica.')elif age < 12: print('You are not Monica, kiddo.')elif age > 2000: print('Unlike you, Monica is not an undead, immortal vampire.')elif age > 100: print('You are not Monica, grannie.')`_Remember the order of `elif` statements matter._
+`if name == 'Monica': print('Hi, Monica.')if name == 'Monica': print('Hi, Monica.')else: print('Hello, stranger.')if name == 'Monica': print('Hi, Monica.')elif age < 12: print('You are not Monica, kiddo.')elif age > 2000: print('Unlike you, Monica is not an undead, immortal vampire.')elif age > 100: print('You are not Monica, grannie.')`*Remember the order of `elif` statements matter.*
 
 ## **While Statements**
 
@@ -843,7 +853,7 @@ while spam < 5:
   spam = spam + 1
 ```
 
--   `Break` statement also exists in Python.
+*   `Break` statement also exists in Python.
 
 ```text
 spam = 0
@@ -854,7 +864,7 @@ while True:
     break
 ```
 
--   As are `continue` statements
+*   As are `continue` statements
 
 ```text
 spam = 0
@@ -868,7 +878,7 @@ while True:
 
 ## **Try/Except Statements**
 
--   Python equivalent to `try/catch`
+*   Python equivalent to `try/catch`
 
 ```text
 a = 321
@@ -886,7 +896,7 @@ except:
     print(len(a))
 ```
 
--   You can name an error to give the output more specificity.
+*   You can name an error to give the output more specificity.
 
 ```text
 a = 100
@@ -898,7 +908,7 @@ except ZeroDivisionError:
 print(c)
 ```
 
--   You can also use the `pass` commmand to by pass a certain error.
+*   You can also use the `pass` commmand to by pass a certain error.
 
 ```text
 a = 100
@@ -909,7 +919,7 @@ except ZeroDivisionError:
     pass
 ```
 
--   The `pass` method won't allow you to bypass every single error so you can chain an exception series like so:
+*   The `pass` method won't allow you to bypass every single error so you can chain an exception series like so:
 
 ```text
 a = 100
@@ -922,7 +932,7 @@ except (TypeError, NameError):
     print("ERROR!")
 ```
 
--   You can use an `else` statement to end a chain of `except` statements.
+*   You can use an `else` statement to end a chain of `except` statements.
 
 ```text
 # tuple of file names
@@ -941,7 +951,7 @@ for filename in files:
         f.close()
 ```
 
--   `finally` is used at the end to clean up all actions under any circumstance.
+*   `finally` is used at the end to clean up all actions under any circumstance.
 
 ```text
 def divide(x, y):
@@ -955,7 +965,7 @@ def divide(x, y):
         print("Finally...")
 ```
 
--   Using duck typing to check to see if some value is able to use a certain method.
+*   Using duck typing to check to see if some value is able to use a certain method.
 
 ```text
 # Try a number - nothing will print out
@@ -969,7 +979,7 @@ if hasattr(b, '__len__'):
 
 ## **Pass**
 
--   Pass Keyword is required to write the JS equivalent of :
+*   Pass Keyword is required to write the JS equivalent of :
 
 ```text
 if (true) {
@@ -980,13 +990,13 @@ if (true) {
 
 ## **Functions**
 
--   **Function definition includes:**
--   **The `def` keyword**
--   **The name of the function**
--   **A list of parameters enclosed in parentheses.**
--   **A colon at the end of the line.**
--   **One tab indentation for the code to run.**
--   **You can use default parameters just like in JS**
+*   **Function definition includes:**
+*   **The `def` keyword**
+*   **The name of the function**
+*   **A list of parameters enclosed in parentheses.**
+*   **A colon at the end of the line.**
+*   **One tab indentation for the code to run.**
+*   **You can use default parameters just like in JS**
 
 ```text
 def greeting(name, saying="Hello"):
@@ -1003,7 +1013,7 @@ def increment(delta=1, value):
     return delta + value
 ```
 
--   _You can specify arguments by name without destructuring in Python._
+*   *You can specify arguments by name without destructuring in Python.*
 
 ```text
 def greeting(name, saying="Hello"):
@@ -1012,7 +1022,7 @@ def greeting(name, saying="Hello"):
 greeting("Monica", saying="Hi")
 ```
 
--   The `lambda` keyword is used to create anonymous functions and are supposed to be `one-liners`.
+*   The `lambda` keyword is used to create anonymous functions and are supposed to be `one-liners`.
 
 `toUpper = lambda s: s.upper()`
 
@@ -1020,7 +1030,7 @@ greeting("Monica", saying="Hi")
 
 ### **Formatted Strings**
 
-> Remember that in Python join\(\) is called on a string with an array/list passed in as the argument.Python has a very powerful formatting engine.format\(\) is also applied directly to strings.
+> Remember that in Python join() is called on a string with an array/list passed in as the argument.Python has a very powerful formatting engine.format() is also applied directly to strings.
 
 ```text
 shopping_list = [‘bread’,’milk’,’eggs’]
@@ -1069,7 +1079,7 @@ Programming Script : A set of code that runs in a linear fashion.
 The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.
 ```
 
-\*\*Python can be used to display html, css, and JS.\*\*_It is common to use Python as an API \(Application Programming Interface\)_
+\*\*Python can be used to display html, css, and JS.\*\**It is common to use Python as an API (Application Programming Interface)*
 
 ### **Structured Data**
 
@@ -1113,7 +1123,7 @@ colors = ‘red’,’blue’,’green’
 numbers = 1, 2, 3
 ```
 
-### **Tuple\(\) built in can be used to convert other data into a tuple**
+### **Tuple() built in can be used to convert other data into a tuple**
 
 ```text
 tuple(‘abc’) # returns (‘a’, ‘b’, ‘c’)
@@ -1125,7 +1135,7 @@ tuple([1,2,3]) # returns (1, 2, 3)
 
 **Declared using one to three parameters**.
 
-> Start : opt. default 0, first \# in sequence.Stop : required next number past the last number in the sequence.Step : opt. default 1, difference between each number in the sequence.
+> Start : opt. default 0, first # in sequence.Stop : required next number past the last number in the sequence.Step : opt. default 1, difference between each number in the sequence.
 
 ```python
 range(5) # [0, 1, 2, 3, 4]
@@ -1150,7 +1160,7 @@ c = dict([(‘two’, 2), (‘one’, 1), (‘three’, 3)])
 # a, b, and c are all equal
 ```
 
-_**Declared with curly braces of the built in dict\(\)**_
+***Declared with curly braces of the built in dict()***
 
 > Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.
 
@@ -1180,11 +1190,11 @@ print(letters)
 #Functions using iterables
 ```
 
-**filter\(function, iterable\) : creates new iterable of the same type which includes each item for which the function returns true.**
+**filter(function, iterable) : creates new iterable of the same type which includes each item for which the function returns true.**
 
-**map\(function, iterable\) : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.**
+**map(function, iterable) : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.**
 
-**sorted\(iterable, key=None, reverse=False\) : creates a new sorted list from the items in the iterable.**
+**sorted(iterable, key=None, reverse=False) : creates a new sorted list from the items in the iterable.**
 
 **Output is always a list**
 
@@ -1192,7 +1202,7 @@ print(letters)
 
 **reverse: optional boolean.**
 
-**enumerate\(iterable, start=0\) : starts with a sequence and converts it to a series of tuples**
+**enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
 
 ```text
 quarters = [‘First’, ‘Second’, ‘Third’, ‘Fourth’]
@@ -1200,33 +1210,33 @@ print(enumerate(quarters))
 print(enumerate(quarters, start=1))
 ```
 
-### **\(0, ‘First’\), \(1, ‘Second’\), \(2, ‘Third’\), \(3, ‘Fourth’\)**
+### **(0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)**
 
-### **\(1, ‘First’\), \(2, ‘Second’\), \(3, ‘Third’\), \(4, ‘Fourth’\)**
+### **(1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)**
 
-> zip\(\*iterables\) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.Functions that analyze iterable
+> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.Functions that analyze iterable
 
-**len\(iterable\) : returns the count of the number of items.**
+**len(iterable) : returns the count of the number of items.**
 
-\*_max\(args, key=None\) : returns the largest of two or more arguments._
+\**max(args, key=None) : returns the largest of two or more arguments.*
 
-**max\(iterable, key=None\) : returns the largest item in the iterable.**
+**max(iterable, key=None) : returns the largest item in the iterable.**
 
-_key optional function which converts an item to a value to be compared.min works the same way as max_
+*key optional function which converts an item to a value to be compared.min works the same way as max*
 
-**sum\(iterable\) : used with a list of numbers to generate the total.**
+**sum(iterable) : used with a list of numbers to generate the total.**
 
-_There is a faster way to concatenate an array of strings into one string, so do not use sum for that._
+*There is a faster way to concatenate an array of strings into one string, so do not use sum for that.*
 
-**any\(iterable\) : returns True if any items in the iterable are true.**
+**any(iterable) : returns True if any items in the iterable are true.**
 
-**all\(iterable\) : returns True is all items in the iterable are true.**
+**all(iterable) : returns True is all items in the iterable are true.**
 
 ## **Working with dictionaries**
 
-**dir\(dictionary\) : returns the list of keys in the dictionary.Working with sets**
+**dir(dictionary) : returns the list of keys in the dictionary.Working with sets**
 
-\*_Union : The pipe \| operator or union\(sets\) function can be used to produce a new set which is a combination of all elements in the provided set._
+\**Union : The pipe | operator or union(sets) function can be used to produce a new set which is a combination of all elements in the provided set.*
 
 ```text
 a = {1, 2, 3}
@@ -1258,7 +1268,7 @@ print(a ^ b) # => {1, 3, 4, 6}
 
 Always Includes:
 
-> 1. The for keyword2. A variable name3. The ‘in’ keyword4. An iterable of some kid5. A colon6. On the next line, an indented block of code called the for clause.
+> 1.  The for keyword2. A variable name3. The ‘in’ keyword4. An iterable of some kid5. A colon6. On the next line, an indented block of code called the for clause.
 
 **You can use break and continue statements inside for loops as well.**
 
@@ -1278,7 +1288,7 @@ for i in lst:
 print(i)
 ```
 
-_**Common technique is to use the len\(\) on a pre-defined list with a for loop to iterate over the indices of the list.**_
+***Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.***
 
 ```python
 supplies = [‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’]
@@ -1299,7 +1309,7 @@ print(a, ‘, ‘, b)
 
 > Prints 1, 2Prints 3, 4Prints 5, 6
 
-**You can use values\(\) and keys\(\) to loop over dictionaries.**
+**You can use values() and keys() to loop over dictionaries.**
 
 ```text
 spam = {‘color’: ‘red’, ‘age’: 42}
@@ -1307,18 +1317,18 @@ for v in spam.values():
 print(v)
 ```
 
-_Prints red_
+*Prints red*
 
-_Prints 42_
+*Prints 42*
 
 ```text
 for k in spam.keys():
 print(k)
 ```
 
-_Prints color_
+*Prints color*
 
-_Prints age_
+*Prints age*
 
 **For loops can also iterate over both keys and values.**
 
@@ -1329,20 +1339,20 @@ for i in spam.items():
 print(i)
 ```
 
-_Prints \(‘color’, ‘red’\)_
+*Prints (‘color’, ‘red’)*
 
-_Prints \(‘age’, 42\)_
+*Prints (‘age’, 42)*
 
-_Destructuring to values_
+*Destructuring to values*
 
 ```text
 for k, v in spam.items():
 print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
 ```
 
-_Prints Key: age Value: 42_
+*Prints Key: age Value: 42*
 
-_Prints Key: color Value: red_
+*Prints Key: color Value: red*
 
 **Looping over string**
 
@@ -1353,13 +1363,13 @@ print(c)
 
 **When you order arguments within a function or function call, the args need to occur in a particular order:**
 
-_formal positional args._
+*formal positional args.*
 
--   args
+*   args
 
-_keyword args with default values_
+*keyword args with default values*
 
--   \*kwargs
+*   \*kwargs
 
 ```text
 def example(arg_1, arg_2, *args, **kwargs):
@@ -1386,9 +1396,9 @@ Custom.
 
 **A module can be any file but it is usually created by placing a special file** [**init.py**](http://init.py) **into a folder. pic**
 
-_Try to avoid importing with wildcards in Python._
+*Try to avoid importing with wildcards in Python.*
 
-_Use multiple lines for clarity when importing._
+*Use multiple lines for clarity when importing.*
 
 ```text
 from urllib.request import (
@@ -1403,21 +1413,21 @@ urlopen,
 
 ## **Watching Out for Python 2**
 
-**Python 3 removed &lt;&gt; and only uses !=**
+**Python 3 removed <> and only uses !=**
 
-**format\(\) was introduced with P3**
+**format() was introduced with P3**
 
 **All strings in P3 are unicode and encoded.md5 was removed.**
 
-**ConfigParser was renamed to configparsersets were killed in favor of set\(\) class.**
+**ConfigParser was renamed to configparsersets were killed in favor of set() class.**
 
 ### **print was a statement in P2, but is a function in P3.**
 
-[https://gist.github.com/bgoonz/82154f50603f73826c27377ebaa498b5\#file-python-study-guide-py](https://gist.github.com/bgoonz/82154f50603f73826c27377ebaa498b5#file-python-study-guide-py)
+<https://gist.github.com/bgoonz/82154f50603f73826c27377ebaa498b5#file-python-study-guide-py>
 
-[https://gist.github.com/bgoonz/282774d28326ff83d8b42ae77ab1fee3\#file-python-cheatsheet-py](https://gist.github.com/bgoonz/282774d28326ff83d8b42ae77ab1fee3#file-python-cheatsheet-py)
+<https://gist.github.com/bgoonz/282774d28326ff83d8b42ae77ab1fee3#file-python-cheatsheet-py>
 
-[https://gist.github.com/bgoonz/999163a278b987fe47fb247fd4d66904\#file-python-cheat-sheet-md](https://gist.github.com/bgoonz/999163a278b987fe47fb247fd4d66904#file-python-cheat-sheet-md)
+<https://gist.github.com/bgoonz/999163a278b987fe47fb247fd4d66904#file-python-cheat-sheet-md>
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/be5715e2-c834-458f-8c5b-ea185717fe37/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/be5715e2-c834-458f-8c5b-ea185717fe37/Untitled.png)
 
