@@ -1,44 +1,43 @@
 ---
 title: Docs
 seo:
-    title: Web Dev Hub
-    description: >-
-        Application, Back-end, Bootstrap, Browser, Caching, Code, CSS, Content
-        Management System (CMS) , Cookies, Domain Name ,Frameworks, Front-end,
-        JavaScript, Python
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Web Dev Hub
-          keyName: property
-        - name: 'og:description'
-          value: Docs Home
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Web Dev Hub
-        - name: 'twitter:description'
-          value: Docs Home
+  title: Web Dev Hub
+  description: >-
+    Application, Back-end, Bootstrap, Browser, Caching, Code, CSS, Content
+    Management System (CMS) , Cookies, Domain Name ,Frameworks, Front-end,
+    JavaScript, Python
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: Web Dev Hub
+      keyName: property
+    - name: 'og:description'
+      value: Docs Home
+      keyName: property
+    - name: 'twitter:card'
+      value: summary
+    - name: 'twitter:title'
+      value: Web Dev Hub
+    - name: 'twitter:description'
+      value: Docs Home
 template: docs
 weight: 900
 excerpt: docs quick reference
 ---
-
 # Go To Sitemap: [Go Now -->](./docs/sitemap/)
 
----
+***
 
 # Actual Docs:
 
 <br>
 
 <br>
-       \<div id="search" />
+       <div id="search" />
 <br>
-               \<div id="search" className="inner"></div>
+               <div id="search" className="inner"></div>
 <br>
 <h1>  Docs</h1>
 <br>
@@ -49,20 +48,20 @@ excerpt: docs quick reference
 
 <br>
 
----
+***
 
 ## Doc Websites & Repos
 
--   [Python Practice](https://github.com/bgoonz/PYTHON_PRAC)
--   [Lambda Bootcamp Website](https://lambda-resources.netlify.app/)
--   [React Notes](https://github.com/bgoonz/React_Notes_V3)
--   [Project Showcase](https://github.com/bgoonz/Project-Showcase)
--   [Data Structures & Algorithms](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
--   [Lambda Site Static Content Server](https://github.com/bgoonz/Lambda-Resource-Static-Assets)
--   [Mini-Project Showcase](https://github.com/bgoonz/mini-project-showcase)
--   [Useful Snippets](https://github.com/bgoonz/Useful-Snippets-js)
--   [Markdown Templates](https://github.com/bgoonz/Markdown-Templates)
--   [Zumzi Video Conferencing App (mesibo api backend)](https://github.com/bgoonz/zumzi-chat-messenger)
+*   [Python Practice](https://github.com/bgoonz/PYTHON_PRAC)
+*   [Lambda Bootcamp Website](https://lambda-resources.netlify.app/)
+*   [React Notes](https://github.com/bgoonz/React_Notes_V3)
+*   [Project Showcase](https://github.com/bgoonz/Project-Showcase)
+*   [Data Structures & Algorithms](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
+*   [Lambda Site Static Content Server](https://github.com/bgoonz/Lambda-Resource-Static-Assets)
+*   [Mini-Project Showcase](https://github.com/bgoonz/mini-project-showcase)
+*   [Useful Snippets](https://github.com/bgoonz/Useful-Snippets-js)
+*   [Markdown Templates](https://github.com/bgoonz/Markdown-Templates)
+*   [Zumzi Video Conferencing App (mesibo api backend)](https://github.com/bgoonz/zumzi-chat-messenger)
 
 # Core Concepts
 
@@ -70,7 +69,7 @@ excerpt: docs quick reference
 
 This appendix is a non-exhaustive list of new syntactic features and methods that were added to JavaScript in ES6. These features are the most commonly used and most helpful.
 
-While this appendix doesn't cover ES6 classes, we go over the basics while learning about components in the book. In addition, this appendix doesn't include descriptions of some larger new features like promises and generators. If you'd like more info on those or on any topic below, we encourage you to reference the [Mozilla Developer Network's website](https://developer.mozilla.org/) \(MDN\).
+While this appendix doesn't cover ES6 classes, we go over the basics while learning about components in the book. In addition, this appendix doesn't include descriptions of some larger new features like promises and generators. If you'd like more info on those or on any topic below, we encourage you to reference the [Mozilla Developer Network's website](https://developer.mozilla.org/) (MDN).
 
 ## Prefer `const` and `let` over `var`
 
@@ -86,7 +85,7 @@ Use `const` in cases where a variable is never re-assigned. Using `const` makes 
 
 If the variable will be re-assigned, use `let`.
 
-We encourage the use of `const` and `let` instead of `var`. In addition to the restriction introduced by `const`, both `const` and `let` are _block scoped_ as opposed to _function scoped_. This scoping can help avoid unexpected bugs.
+We encourage the use of `const` and `let` instead of `var`. In addition to the restriction introduced by `const`, both `const` and `let` are *block scoped* as opposed to *function scoped*. This scoping can help avoid unexpected bugs.
 
 ## Arrow functions
 
@@ -111,7 +110,7 @@ console.log(formattedPopulations);
 
 Note that we must also explicitly specify a `return` for the function.
 
-However, if we write a function body that is only a single line \(or single expression\) we can use parentheses to delimit it:
+However, if we write a function body that is only a single line (or single expression) we can use parentheses to delimit it:
 
 ```js
 const formattedPopulations2 = cities.map((city) => (city.pop / 1000000).toFixed(2) + ' million');
@@ -136,7 +135,7 @@ const popsNoArrow = cities.map(function (city) {
 
 Of greater benefit, though, is how arrow functions bind the `this` object.
 
-The traditional JavaScript function declaration syntax \(`function () {}`\) will bind `this` in anonymous functions to the global object. To illustrate the confusion this causes, consider the following example:
+The traditional JavaScript function declaration syntax (`function () {}`) will bind `this` in anonymous functions to the global object. To illustrate the confusion this causes, consider the following example:
 
 ```js
 unction printSong() {
@@ -169,7 +168,7 @@ const jukebox = {
 jukebox.printSongs();
 ```
 
-The method `printSongs()` iterates over `this.songs` with `forEach()`. In this context, `this` is bound to the object \(`jukebox`\) as expected. However, the anonymous function passed to `forEach()` binds its internal `this` to the global object. As such, `this.printSong(song)` calls the function declared at the top of the example, _not_ the method on `jukebox`.
+The method `printSongs()` iterates over `this.songs` with `forEach()`. In this context, `this` is bound to the object (`jukebox`) as expected. However, the anonymous function passed to `forEach()` binds its internal `this` to the global object. As such, `this.printSong(song)` calls the function declared at the top of the example, *not* the method on `jukebox`.
 
 JavaScript developers have traditionally used workarounds for this behavior, but arrow functions solve the problem by **capturing the `this` value of the enclosing context**. Using an arrow function for `printSongs()` has the expected result:
 
@@ -211,7 +210,7 @@ sayHi();
 sayBye();
 ```
 
-Importantly, the function that was _not_ exported \(`saySomething`\) is unavailable outside of the module.
+Importantly, the function that was *not* exported (`saySomething`) is unavailable outside of the module.
 
 Also note that we supply a **relative path** to `from`, indicating that the ES6 module is a local file as opposed to an npm package.
 
@@ -262,7 +261,7 @@ Greetings.sayHi();
 Greetings.sayBye();
 ```
 
-It's not uncommon for a module to use a mix of both named exports and default exports. For instance, with `react-dom`, you can import `ReactDOM` \(a default export\) like this:
+It's not uncommon for a module to use a mix of both named exports and default exports. For instance, with `react-dom`, you can import `ReactDOM` (a default export) like this:
 
 ```js
 import ReactDOM from 'react-dom';
@@ -298,7 +297,7 @@ For more reading on ES6 modules, see this article from Mozilla: "[ES6 in Depth: 
 
 We use `Object.assign()` often throughout the book. We use it in areas where we want to create a modified version of an existing object.
 
-`Object.assign()` accepts any number of objects as arguments. When the function receives two arguments, it _copies_ the properties of the second object onto the first, like so:
+`Object.assign()` accepts any number of objects as arguments. When the function receives two arguments, it *copies* the properties of the second object onto the first, like so:
 
 ```js
 onst coffee = { };
@@ -329,9 +328,9 @@ With ES6 template literals, we can create the same string like this:
 const greeting = `Hello, ${user}! It is ${degF} degrees outside.`;
 ```
 
-## The spread operator \(`...`\)
+## The spread operator (`...`)
 
-In arrays, the ellipsis `...` operator will _expand_ the array that follows into the parent array. The spread operator enables us to succinctly construct new arrays as a composite of existing arrays.
+In arrays, the ellipsis `...` operator will *expand* the array that follows into the parent array. The spread operator enables us to succinctly construct new arrays as a composite of existing arrays.
 
 Here is an example:
 
@@ -481,4 +480,4 @@ const IngredientList = ({ ingredients, onClick }) => (
 );
 ```
 
-Here, we use destructuring to extract the props into variables \(`ingredients` and `onClick`\) that we then use inside the component's function body.
+Here, we use destructuring to extract the props into variables (`ingredients` and `onClick`) that we then use inside the component's function body.
