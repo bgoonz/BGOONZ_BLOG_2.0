@@ -367,7 +367,7 @@
                     },
                     {
                         "label": "lorem-ipsum",
-                        "url": "#",
+                        "url": "https://bryan-guner.gitbook.io/datastructures-in-pytho/",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
