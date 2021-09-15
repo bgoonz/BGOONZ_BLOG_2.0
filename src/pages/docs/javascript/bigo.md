@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: A Very Quick Guide To Calculating Big O Computational Complexity
 weight: 0
 excerpt: lorem-ipsum
 seo:
