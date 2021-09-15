@@ -17,6 +17,10 @@ seo:
         independent of our input. No new arrays are created.
       keyName: property
       relativeUrl: false
+    - name: 'og:type'
+      value: website
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
