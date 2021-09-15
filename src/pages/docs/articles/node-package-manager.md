@@ -3,11 +3,15 @@ title: Sorting Algorithms
 weight: 0
 excerpt: Sorting Algorithms
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: ''
+  robots: []
+  extra:
+    - name: 'og:title'
+      value: Sorting Algorithms
+      keyName: property
+      relativeUrl: false
+  type: stackbit_page_meta
 template: docs
 ---
 
