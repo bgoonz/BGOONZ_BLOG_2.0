@@ -9,17 +9,19 @@ seo:
   extra: []
 template: docs
 ---
-### Understanding PATH&#xA;![](images/pypath.jpeg)&#xA;
+### Understanding PATH
 
 
 
 
 
+
+
+
+![](images/pypath.jpeg)
 
 
 ![](images/pypath2.PNG)
-
-
 
 When you run a command like python or pip, your operating system searches through a list of directories to find an executable file with that name. This list of directories lives in an environment variable called PATH, with each directory in the list separated by a colon:
 
@@ -71,4 +73,4 @@ As far as Pyenv is concerned, version names are simply directories under $(pyen
 
 ### Managing Virtual Environments
 
-There is a pyenv plugin named [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv) which comes with various features to help pyenv users to manage virtual environments created by virtualenv or Anaconda. Because the activate script of those virtual environments are relying on mutating $PATH variable of user's interactive shell, it will intercept pyenv's shim style command execution hooks. We'd recommend to install pyenv-virtualenv as well if you have some plan to play with those virtual environments.
+There is a pyenv plugin named [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv) which comes with various features to help pyenv users to manage virtual environments created by virtualenv or Anaconda. Because the activate script of those virtual environments are relying on mutating $PATH variable of user's interactive shell, it will intercept pyenv's shim style command execution hooks. We'd recommend to install pyenv-virtualenv as well if you have some plan to play with those virtual environments.![](https://i.imgur.com/0hQBL4d.png)![](https://i.imgur.com/0hQBL4d.png)![](images/festive-zebra.png)
