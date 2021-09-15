@@ -73,12 +73,7 @@ template: docs
 
 ## Main Notes:
 
-![](images/md-cheat-sheet.PNG)
-
-```html
-```
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
+![](images/md-cheat-sheet-174e6927.PNG)
 
 ```js
 ```
