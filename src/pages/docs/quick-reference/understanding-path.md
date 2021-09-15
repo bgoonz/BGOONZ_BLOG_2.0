@@ -9,7 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-### Understanding PATH&#xA;&#xA;
+### Understanding PATH&#xA;![](images/pypath.jpeg)&#xA;
 
 When you run a command like python or pip, your operating system searches through a list of directories to find an executable file with that name. This list of directories lives in an environment variable called PATH, with each directory in the list separated by a colon:
 
