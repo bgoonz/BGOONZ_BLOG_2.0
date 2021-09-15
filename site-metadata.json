@@ -184,7 +184,7 @@
             },
             {
                 "label": "Audio",
-                "url": "/docs/audio/audio",
+                "url": "/docs/audio/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
