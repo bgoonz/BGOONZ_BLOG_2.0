@@ -140,7 +140,7 @@ sections:
         actions: []
         type: grid_item
         image: images/njdevils.jpg
-      - title: lorem-ipsum
+      - title: ITER Fusion Reactor Experiment (Sout
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
