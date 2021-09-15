@@ -1,6 +1,6 @@
 ---
 title: Leetcode (Data Structures)
-subtitle: lorem-ipsum
+subtitle: practice
 date: '2021-09-14'
 thumb_image_alt: Big O Cheat Sheet
 excerpt: A guide to computational complexity
