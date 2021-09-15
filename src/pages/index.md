@@ -140,7 +140,7 @@ sections:
         actions: []
         type: grid_item
         image: images/njdevils.jpg
-      - title: ITER Fusion Reactor Experiment (Sout
+      - title: ITER Fusion Reactor Experiment (Southern France)
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: >-
