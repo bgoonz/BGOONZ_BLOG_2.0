@@ -125,6 +125,14 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
+                        "label": "Resource-Repo-Archive",
+                        "url": "content/archive",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
                         "label": "Medium Articles",
                         "url": "https://bryanguner.medium.com/",
                         "style": "primary",
@@ -177,14 +185,6 @@
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
-                    },
-                    {
-                        "label": "Resource-Repo-Archive",
-                        "url": "content/archive",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
                     }
                 ],
                 "type": "action_menu",
