@@ -29,6 +29,10 @@ seo:
       value: sorting algos
       keyName: name
       relativeUrl: false
+    - name: 'og:image'
+      value: images/image (9).png
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
