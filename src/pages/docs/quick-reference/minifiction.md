@@ -1,5 +1,5 @@
 ---
-title: 'How To Minify Code For '
+title: How To Minify Code For Faster Website
 weight: 0
 excerpt: lorem-ipsum
 seo:
