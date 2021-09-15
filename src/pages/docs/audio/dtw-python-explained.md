@@ -66,7 +66,7 @@ Create an empty cost matrix M with x and y labels as amplitudes of the two serie
 
 ![](https://miro.medium.com/max/630/1*MrjHYFHyeeE3aiBEA-E5cw.png)
 
-*Step 2: Cost Calculation*
+_Step 2: Cost Calculation_
 
 Fill the cost matrix using the formula mentioned below starting from left and bottom corner.
 
@@ -192,33 +192,27 @@ DTW distance ,D =
 
 Zero DTW distance implies that the time series are very similar and that is indeed the case as observed in the plot.
 
-
-
-
-
 # Resummation (Spaced Repitition)
 
 Dynamic Time Warping (DTW) is a way to compare two -usually temporal- sequences that do not sync up perfectly. It is a method to calculate the optimal matching between two sequences. DTW is useful in many domains such as speech recognition, data mining, financial markets, etc. It's commonly used in data mining to measure the distance between two time-series.
 
 In this post, we will go over the mathematics behind DTW. Then, two illustrative examples are provided to better understand the concept. If you are not interested in the math behind it, please jump to examples.
 
-Formulation
-===========
+# Formulation
 
 Let's assume we have two sequences like the following:
 
-*𝑋=𝑥[1], 𝑥[2], ..., x[i], ..., x[n]*
+_𝑋=𝑥[1], 𝑥[2], ..., x[i], ..., x[n]_
 
-*Y=y[1], y[2], ..., y[j], ..., y[m]*
+_Y=y[1], y[2], ..., y[j], ..., y[m]_
 
 The sequences 𝑋 and 𝑌 can be arranged to form an 𝑛-by-𝑚 grid, where each point (𝑖, j) is the alignment between 𝑥[𝑖] and 𝑦[𝑗].
 
 A warping path 𝑊 maps the elements of 𝑋 and 𝑌 to minimize the *distance* between them. 𝑊 is a sequence of grid points (𝑖, 𝑗). We will see an example of the warping path later.
 
-Warping Path and DTW distance
------------------------------
+## Warping Path and DTW distance
 
-The Optimal path to (𝑖_𝑘, 𝑗_𝑘) can be computed by:
+The Optimal path to (𝑖*𝑘, 𝑗*𝑘) can be computed by:
 
 ![](https://miro.medium.com/max/60/1*8hJEJWuxrccwCMuUG_aPbQ.png?q=20)
 
@@ -230,8 +224,7 @@ where 𝑑 is the Euclidean distance. Then, the overall path cost can be calcula
 
 ![](https://miro.medium.com/max/272/1*2OGDOJ-a0zTO_9T1FIGejQ.png)
 
-Restrictions on the Warping function
-====================================
+# Restrictions on the Warping function
 
 The warping path is found using a dynamic programming approach to align two sequences. Going through all possible paths is "combinatorically explosive" [1]. Therefore, for efficiency purposes, it's important to limit the number of possible warping paths, and hence the following constraints are outlined:
 
@@ -269,8 +262,7 @@ An acceptable warping path has combinations of chess king moves that are:
 -   Vertical moves: (𝑖, 𝑗) → (𝑖+1, 𝑗)
 -   Diagonal moves: (𝑖, 𝑗) → (𝑖+1, 𝑗+1)
 
-Implementation
-==============
+# Implementation
 
 Let's import all python packages we need.
 
@@ -286,12 +278,12 @@ from fastdtw import fastdtw
 
 Let's define a method to compute the accumulated cost matrix *D* for the warp path. The cost matrix uses the Euclidean distance to calculate the distance between every two points. The methods to compute the Euclidean distance matrix and accumulated cost matrix are defined below:
 
-Example 1
-=========
+# Example 1
 
 In this example, we have two sequences *x* and *y* with different lengths.
 
 # Create two sequences\
+
 x = [3, 1, 2, 2, 1]\
 y = [2, 0, 0, 3, 3, 1, 0]
 
@@ -303,8 +295,7 @@ We cannot calculate the Euclidean distance between *x* and *y* since they do
 
 Example 1: Euclidean distance between x and y (is it possible? 🤔) (Image by Author)
 
-Compute DTW distance and warp path
-==================================
+# Compute DTW distance and warp path
 
 Many Python packages calculate the DTW by just providing the sequences and the type of distance (usually Euclidean). Here, we use a popular Python implementation of DTW that is [FastDTW](https://github.com/slaypni/fastdtw) which is an approximate DTW algorithm with lower time and memory complexities [2].
 
@@ -324,8 +315,8 @@ Example 1: Accumulated cost matrix and warping path (Image by Author)
 
 The color bar shows the cost of each point in the grid. As can be seen, the warp path (blue line) is going through the lowest cost on the grid. Let's see the DTW distance and the warping path by printing these two variables.
 
->>> DTW distance:  6.0\
->>> Warp path: [(0, 0), (1, 1), (1, 2), (2, 3), (3, 4), (4, 5), (4, 6)]
+> > > DTW distance: 6.0\
+> > > Warp path: [(0, 0), (1, 1), (1, 2), (2, 3), (3, 4), (4, 5), (4, 6)]
 
 The warping path starts at point (0, 0) and ends at (4, 6) by 6 moves. Let's also calculate the accumulated cost most using the functions we defined earlier and compare the values with the heatmap.
 
@@ -350,8 +341,7 @@ Example 1: Python code to plot (and save) the DTW distance between x and y
 
 Example 1: DTW distance between x and y (Image by Author)
 
-Example 2
-=========
+# Example 2
 
 In this example, we will use two sinusoidal signals and see how they will be matched by calculating the DTW distance between them.
 
@@ -375,15 +365,13 @@ You may spot an issue with dynamic time warping from the figure above. Can you g
 
 The issue is around the head and tail of time-series that do not properly match. This is because the DTW algorithm cannot afford the warping invariance for at the endpoints. In short, the effect of this is that a small difference at the sequence endpoints will tend to contribute disproportionately to the estimated similarity[3].
 
-Conclusion
-==========
+# Conclusion
 
 DTW is an algorithm to find an optimal alignment between two sequences and a useful distance metric to have in our toolbox. This technique is useful when we are working with two non-linear sequences, particularly if one sequence is a non-linear stretched/shrunk version of the other. The warping path is a combination of "chess king" moves that starts from the head of two sequences and ends with their tails.
 
 You can find the Jupyter notebook for this blog post [here](https://github.com/e-alizadeh/medium/blob/master/notebooks/intro_to_dtw.ipynb). Thanks for reading!
 
-References
-==========
+# References
 
 [1] Donald J. Berndt and James Clifford, [Using Dynamic Time Warping to Find Patterns in Time Series](https://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf), 3rd International Conference on Knowledge Discovery and Data Mining
 
@@ -391,16 +379,11 @@ References
 
 [3] Diego Furtado Silva, *et al.*, [On the effect of endpoints on dynamic time warping](https://core.ac.uk/display/147806669) (2016), SIGKDD Workshop on Mining and Learning from Time Series
 
-Useful Links
-============
+# Useful Links
 
 [1] <https://nipunbatra.github.io/blog/ml/2014/05/01/dtw.html>
 
 [2] <https://databricks.com/blog/2019/04/30/understanding-dynamic-time-warping.html>
-
-
-
-
 
 Sounds like time traveling or some kind of future technic, however, it is not. Dynamic Time Warping is used to compare the similarity or calculate the distance between two arrays or time series with different length.
 
@@ -416,15 +399,13 @@ b = [2, 2, 2, 3, 4]
 
 How to match them up? Which should map to which? To solve the problem, there comes dynamic time warping. Just as its name indicates, to warp the series so that they can match up.
 
-Use Cases
-=========
+# Use Cases
 
 Before digging into the algorithm, you might have the question that is it useful? Do we really need to compare the distance between two unequal-length time series?
 
 Yes, in a lot of scenarios DTW is playing a key role.
 
-Sound Pattern Recognition
--------------------------
+## Sound Pattern Recognition
 
 One use case is to detect the sound pattern of the same kind. Suppose we want to recognise the voice of a person by analysing his sound track, and we are able to collect his sound track of saying `Hello` in one scenario. However, people speak in the same word in different ways, what if he speaks hello in a much slower pace like `Heeeeeeelloooooo` , we will need an algorithm to match up the sound track of different lengths and be able to identify they come from the same person.
 
@@ -432,8 +413,7 @@ One use case is to detect the sound pattern of the same kind. Suppose we want to
 
 ![](https://miro.medium.com/max/630/1*gi1TtOqFCsb2M_U7iAUAag.png)
 
-Stock Market
-------------
+## Stock Market
 
 In a stock market, people always hope to be able to predict the future, however using general machine learning algorithms can be exhaustive, as most prediction task requires test and training set to have the same dimension of features. However, if you ever speculate in the stock market, you will know that even the same pattern of a stock can have very different length reflection on klines and indicators.
 
@@ -441,14 +421,13 @@ In a stock market, people always hope to be able to predict the future, however 
 
 ![](https://miro.medium.com/max/630/1*4QUO4Tqm_z-8ydMBGgqmPg.png)
 
-Definition & Idea
-=================
+# Definition & Idea
 
 A concise explanation of DTW from wiki,
 
 > In time series analysis, dynamic time warping (DTW) is one of the algorithms for measuring similarity between two temporal sequences, which may vary in speed. DTW has been applied to temporal sequences of video, audio, and graphics data --- indeed, any data that can be turned into a linear sequence can be analysed with DTW.
 
-*The idea to compare arrays with different length is to build one-to-many and many-to-one matches so that the total distance can be minimised between the two.*
+_The idea to compare arrays with different length is to build one-to-many and many-to-one matches so that the total distance can be minimised between the two._
 
 Suppose we have two different arrays red and blue with different length:
 
@@ -460,8 +439,7 @@ Clearly these two series follow the same pattern, but the blue curve is longer t
 
 DTW overcomes the issue by developing a one-to-many match so that the troughs and peaks with the same pattern are perfectly matched, and there is no left out for both curves(shown in the bottom top).
 
-Rules
-=====
+# Rules
 
 In general, DTW is a method that calculates an optimal match between two given sequences (e.g. time series) with certain restriction and rules(comes from wiki):
 
@@ -474,8 +452,7 @@ The optimal match is denoted by the match that satisfies all the restrictions an
 
 To summarise is that *head and tail must be positionally matched, no cross-match and no left out.*
 
-Implementation
-==============
+# Implementation
 
 The implementation of the algorithm looks extremely concise:
 
@@ -487,11 +464,11 @@ where `DTW[i, j]` is the distance between `s[1:i]` and `t[1:j]` with the b
 
 The key lies in:
 
-DTW[i, j] := cost + minimum(DTW[i-1, j  ],\
-                            DTW[i  , j-1],\
-                            DTW[i-1, j-1])
+DTW[i, j] := cost + minimum(DTW[i-1, j ],\
+ DTW[i , j-1],\
+ DTW[i-1, j-1])
 
-Which is saying that the cost of between two arrays with length `i and j` equals *the distance between the tails + the minimum of cost in arrays with length *`*i-1, j*`* , *`*i, j-1*`* , and *`*i-1, j-1*`* .*
+Which is saying that the cost of between two arrays with length `i and j` equals *the distance between the tails + the minimum of cost in arrays with length *`*i-1, j*`_ , _`*i, j-1*`_ , and _`*i-1, j-1*`_ ._
 
 Put it in python would be:
 
@@ -503,8 +480,7 @@ Example:
 
 The distance between `a and b` would be the last element of the matrix, which is 2.
 
-Add Window Constraint
----------------------
+## Add Window Constraint
 
 One issue of the above algorithm is that we allow one element in an array to match an unlimited number of elements in the other array(as long as the tail can match in the end), this would cause the mapping to bent over a lot, for example, the following array:
 
@@ -525,8 +501,7 @@ The implementation and example would be:
 
 ![](https://miro.medium.com/max/630/1*2K6C-3QrRmbbhpe-jt9UQA.png)
 
-Apply a Package
-===============
+# Apply a Package
 
 There is also contributed packages available on Pypi to use directly. Here I demonstrate an example using [fastdtw](https://pypi.org/project/fastdtw/):
 

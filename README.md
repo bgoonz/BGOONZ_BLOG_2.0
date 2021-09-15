@@ -6,13 +6,10 @@
     
  
 ![](https://komarev.com/ghpvc/?username=bgoonz)
-   
 
 # [WEBSITE](https://bgoonz-blog.netlify.app/)
 
 # Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
-
-### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
 
 ## [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
 
@@ -25,6 +22,10 @@
 [![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
 
 ![Demo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/iframes.gif?raw=true)
+
+# Homepage
+
+![Homepage](./static/images/bgoonzblog20.png)
 
 </div>
 

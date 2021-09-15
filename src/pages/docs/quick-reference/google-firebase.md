@@ -3,15 +3,14 @@ title: Firebase (Firebasics)
 weight: 1
 excerpt: "Add Firebase to your JavaScript project\_Note"
 seo:
-  title: "Add Firebase to your JavaScript project\_Note:"
-  description: "Add Firebase to your JavaScript project\_Note:"
-  robots: []
-  extra: []
+    title: "Add Firebase to your JavaScript project\_Note:"
+    description: "Add Firebase to your JavaScript project\_Note:"
+    robots: []
+    extra: []
 template: docs
 ---
+
 Add Firebase to your JavaScript project **Note:** Upgrading from the version 8 Firebase SDK? Check out our [upgrade guide](https://firebase.google.com/docs/web/modular-upgrade).[####  **Create a Firebase project** ]()**Note:** Using the v9 SDK is strongly recommended, especially for production apps. If you need support for other SDK management options, like **window.firebase**, see [Upgrade from version 8 to the modular Web SDK](https://firebase.google.com/docs/web/modular-upgrade#window-compat).**Note:** You can skip this step if you are using a JavaScript framework CLI tool like the [Angular CLI](https://angular.io/cli), [Next.js](https://nextjs.org/), [Vue CLI](https://cli.vuejs.org/), or [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). Check out [our guide on module bundling](https://firebase.google.com/docs/web/module-bundling) for more information.
-
-
 
 Follow this guide to use the Firebase JavaScript SDK in your web app or as a client for end-user access, for example, in a Node.js desktop or IoT application.
 
@@ -35,21 +34,19 @@ This workflow uses npm and requires module bundlers or JavaScript framework tool
 
     A Firebase App is a container-like object that stores common configuration and shares authentication across Firebase services. After you initialize a Firebase App object in your code, you can add and start using Firebase services.
 
-    Do you use ESM and want to use browser modules? Replace all your 
+    Do you use ESM and want to use browser modules? Replace all your
 
     **import**
 
-     lines to use the following pattern:
-
+    lines to use the following pattern:
 
     **import { } from 'https://www.gstatic.com/firebasejs/9.0.2/firebase-SERVICE.js'**
 
-
-    (where 
+    (where
 
     **SERVICE**
 
-     is an SDK name such as 
+    is an SDK name such as
 
     **firebase-firestore**
 

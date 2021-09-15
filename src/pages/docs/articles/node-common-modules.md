@@ -13,14 +13,7 @@ seo:
 template: docs
 ---
 
-
-
-
-
-
-
-Modules: CommonJS modules[#](https://nodejs.org/api/modules.html#modules_modules_commonjs_modules)
---------------------------------------------------------------------------------------------------
+## Modules: CommonJS modules[#](https://nodejs.org/api/modules.html#modules_modules_commonjs_modules)
 
 [Stability: 2](https://nodejs.org/api/documentation.html#documentation_stability_index) - Stable
 
@@ -118,6 +111,7 @@ To get the exact filename that will be loaded when `require()` is called, use 
 Putting together all of the above, here is the high-level algorithm in pseudocode of what `require()` does:
 
 require(X) from module at path Y
+
 1. If X is a core module,
    a. return the core module
    b. STOP
@@ -134,17 +128,20 @@ require(X) from module at path Y
 7. THROW "not found"
 
 LOAD_AS_FILE(X)
+
 1. If X is a file, load X as its file extension format. STOP
 2. If X.js is a file, load X.js as JavaScript text. STOP
 3. If X.json is a file, parse X.json to a JavaScript Object. STOP
 4. If X.node is a file, load X.node as binary addon. STOP
 
 LOAD_INDEX(X)
+
 1. If X/index.js is a file, load X/index.js as JavaScript text. STOP
 2. If X/index.json is a file, parse X/index.json to a JavaScript object. STOP
 3. If X/index.node is a file, load X/index.node as binary addon. STOP
 
 LOAD_AS_DIRECTORY(X)
+
 1. If X/package.json is a file,
    a. Parse X/package.json, and look for "main" field.
    b. If "main" is a falsy value, GOTO 2.
@@ -156,6 +153,7 @@ LOAD_AS_DIRECTORY(X)
 2. LOAD_INDEX(X)
 
 LOAD_NODE_MODULES(X, START)
+
 1. let DIRS = NODE_MODULES_PATHS(START)
 2. for each DIR in DIRS:
    a. LOAD_PACKAGE_EXPORTS(X, DIR)
@@ -163,6 +161,7 @@ LOAD_NODE_MODULES(X, START)
    c. LOAD_AS_DIRECTORY(DIR/X)
 
 NODE_MODULES_PATHS(START)
+
 1. let PARTS = path split(START)
 2. let I = count of PARTS - 1
 3. let DIRS = [GLOBAL_FOLDERS]
@@ -174,14 +173,16 @@ NODE_MODULES_PATHS(START)
 5. return DIRS
 
 LOAD_PACKAGE_IMPORTS(X, DIR)
+
 1. Find the closest package scope SCOPE to DIR.
 2. If no scope was found, return.
 3. If the SCOPE/package.json "imports" is null or undefined, return.
 4. let MATCH = PACKAGE_IMPORTS_RESOLVE(X, pathToFileURL(SCOPE),
-  ["node", "require"]) [defined in the ESM resolver](https://nodejs.org/api/esm.md#resolver-algorithm-specification).
+   ["node", "require"]) [defined in the ESM resolver](https://nodejs.org/api/esm.md#resolver-algorithm-specification).
 5. RESOLVE_ESM_MATCH(MATCH).
 
 LOAD_PACKAGE_EXPORTS(X, DIR)
+
 1. Try to interpret X as a combination of NAME and SUBPATH where the name
    may have a @scope/ prefix and the subpath begins with a slash (`/`).
 2. If X does not match this pattern or DIR/NAME/package.json is not a file,
@@ -193,6 +194,7 @@ LOAD_PACKAGE_EXPORTS(X, DIR)
 6. RESOLVE_ESM_MATCH(MATCH)
 
 LOAD_PACKAGE_SELF(X, DIR)
+
 1. Find the closest package scope SCOPE to DIR.
 2. If no scope was found, return.
 3. If the SCOPE/package.json "exports" is null or undefined, return.
@@ -203,11 +205,12 @@ LOAD_PACKAGE_SELF(X, DIR)
 6. RESOLVE_ESM_MATCH(MATCH)
 
 RESOLVE_ESM_MATCH(MATCH)
+
 1. let { RESOLVED, EXACT } = MATCH
 2. let RESOLVED_PATH = fileURLToPath(RESOLVED)
 3. If EXACT is true,
    a. If the file at RESOLVED_PATH exists, load RESOLVED_PATH as its extension
-      format. STOP
+   format. STOP
 4. Otherwise, if EXACT is false,
    a. LOAD_AS_FILE(RESOLVED_PATH)
    b. LOAD_AS_DIRECTORY(RESOLVED_PATH)
