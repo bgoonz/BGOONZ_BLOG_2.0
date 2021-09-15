@@ -136,35 +136,28 @@ sections:
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
-
-
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-          - Lorem ipsum
-
-          - dolor sit amet
+        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
         actions: []
         type: grid_item
-      - title: lorem-ipsum
+        image: images/njdevils.jpg
+      - title: ITER Fusion Reactor Experiment (Southern France)
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: >-
-          ## Lorem ipsum
+        content: >+
+          # Break Even Nuclear Fusion Candidate
 
 
-          Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          In December, researchers at the Joint European Torus (JET) started
+          conducting fusion experiments with tritium — a rare and radioactive
+          isotope of hydrogen. The facility is a one-tenth-volume mock-up of the
+          US$22-billion ITER project and has the same doughnut-shaped ‘tokamak’
+          design — the world’s most developed approach to fusion energy. It is
+          the first time since 1997 that researchers have done experiments in a
+          tokamak with any significant amount of tritium.
 
-
-          - Lorem ipsum
-
-          - dolor sit amet
         actions: []
         type: grid_item
+        image: images/iter-zoomed.PNG
     type: section_grid
   - section_id: features-two-col
     type: section_grid
