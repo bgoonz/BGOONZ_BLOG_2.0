@@ -24,8 +24,6 @@ template: docs
 ---
 # Title
 
-
-
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
 
 *   Description:
@@ -74,8 +72,6 @@ template: docs
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
 
 ## Main Notes:
-
-
 
 ![](images/md-cheat-sheet.PNG)
 
