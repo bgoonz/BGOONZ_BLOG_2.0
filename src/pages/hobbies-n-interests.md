@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: My Hobbies & Interests
 sections: []
 seo:
   title: ''
