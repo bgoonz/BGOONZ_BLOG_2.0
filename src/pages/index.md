@@ -245,6 +245,12 @@ sections:
         icon_class: dev
         new_window: false
         no_follow: false
+      - label: lorem-ipsum
+        url: '#'
+        style: link
+        icon_class: dev
+        new_window: false
+        no_follow: false
     type: section_cta
     subtitle: get in touch! +1 (551) - 254 - 5505
 seo:
