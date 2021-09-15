@@ -246,10 +246,16 @@ sections:
         icon_class: dev
         new_window: false
         no_follow: false
-      - label: Subscribe
+      - label: Subscribe (Youtube)
         url: >-
           https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA?sub_confirmation=1
         style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+      - label: lorem-ipsum
+        url: '#'
+        style: link
         icon_class: dev
         new_window: false
         no_follow: false
