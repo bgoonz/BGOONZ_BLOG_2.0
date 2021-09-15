@@ -184,7 +184,7 @@ export default class Body extends React.Component {
 
 
 
-###
+### DocsSubmenu.js
 
 ```js
 
@@ -192,14 +192,14 @@ export default class Body extends React.Component {
 ```
 
 
-###
+### Footer.js
 
 ```js
 
 
 ```
 
-###
+### Header.js
 
 
 ```js
@@ -207,7 +207,7 @@ export default class Body extends React.Component {
 
 ```
 
-###
+### Icon.js
 
 ```js
 
@@ -218,7 +218,7 @@ export default class Body extends React.Component {
 
 
 
-###
+### SectionContent.js
 
 ```js
 
