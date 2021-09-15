@@ -246,7 +246,7 @@ sections:
         icon_class: dev
         new_window: false
         no_follow: false
-      - label: lorem-ipsum
+      - label: Subscribe
         url: '#'
         style: primary
         icon_class: dev
