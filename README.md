@@ -6708,3 +6708,176 @@ Prism.languages.markup.tag.addAttribute(
 
 <details>
 ```
+
+
+
+
+---
+---
+
+## Dependencies:
+
+<br>
+
+[![@algolia](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript ](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
+
+`^ 4.10.3`
+
+[![@algolia](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript ](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
+
+`4.10.5`
+
+![@ghost](https://avatars.githubusercontent.com/u/10137?s=40&v=4)@algolia/requester-common
+
+`4.10.5`
+
+[![@algolia](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript ](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
+
+`4.10.5`
+
+[![@stackbit](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)](https://github.com/stackbit)[stackbit / gatsby-plugin-menus ](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
+
+`0.0.4`
+
+[![@facebook](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest ](https://github.com/facebook/jest)babel-jest
+
+`^ 24.7.1`
+
+[![@gatsbyjs](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby ](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
+
+`^ 0.1.11`
+
+[![@gatsbyjs](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby](https://github.com/gatsbyjs/gatsby)
+
+`^ 2.5.0`
+
+[![@keyz](https://avatars.githubusercontent.com/u/2268452?s=40&u=c3f56fe1d943474ffe4577a82ad79c1a79d7eb6e&v=4)](https://github.com/keyz)[keyz / identity-obj-proxy](https://github.com/keyz/identity-obj-proxy)
+
+`^ 3.0.0`
+
+[![@facebook](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest](https://github.com/facebook/jest)
+
+`^ 24.7.1`
+
+[![@lodash](https://avatars.githubusercontent.com/u/2565403?s=40&v=4)](https://github.com/lodash)[lodash / lodash](https://github.com/lodash/lodash)
+
+`^ 4.17.11`
+
+[![@facebook](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / react ](https://github.com/facebook/react)react-test-renderer
+
+`^ 16.8.6`
+
+[![@getkirby-v2](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin ](https://github.com/getkirby-v2/algolia-plugin)algolia
+
+`0.0.0`
+
+[![@ecomfe](https://avatars.githubusercontent.com/u/2268460?s=40&v=4)](https://github.com/ecomfe)[ecomfe / babel-runtime](https://github.com/ecomfe/babel-runtime)
+
+`6.26.0`
+
+[![@paulmillr](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)](https://github.com/paulmillr)[paulmillr / chokidar](https://github.com/paulmillr/chokidar)
+
+`3.4.0`
+
+[![@DefinitelyTyped](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped ](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
+
+`^ 13`
+
+[![@micromatch](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / anymatch](https://github.com/micromatch/anymatch)
+
+`~ 3.1.1`
+
+[![@micromatch](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / braces](https://github.com/micromatch/braces)
+
+`~ 3.0.2`
+
+[![@chaijs](https://avatars.githubusercontent.com/u/1515293?s=40&v=4)](https://github.com/chaijs)[chaijs / chai](https://github.com/chaijs/chai)
+
+`^ 4.2`
+
+[![@microsoft](https://avatars.githubusercontent.com/u/6154722?s=40&v=4)](https://github.com/microsoft)[microsoft / dtslint](https://github.com/microsoft/dtslint)
+
+`^ 3.3.0`
+
+[![@eslint](https://avatars.githubusercontent.com/u/6019716?s=40&v=4)](https://github.com/eslint)[eslint / eslint](https://github.com/eslint/eslint)
+
+`^ 6.6.0`
+
+[![@fsevents](https://avatars.githubusercontent.com/u/48760001?s=40&v=4)](https://github.com/fsevents)[fsevents / fsevents](https://github.com/fsevents/fsevents)
+
+`~ 2.1.2`
+
+[![@gulpjs](https://avatars.githubusercontent.com/u/6200624?s=40&v=4)](https://github.com/gulpjs)[gulpjs / glob-parent](https://github.com/gulpjs/glob-parent)
+
+`~ 5.1.0`
+
+[![@sindresorhus](https://avatars.githubusercontent.com/u/170270?s=40&u=34acd557a042ac478d273a4621570cadb6b0bd89&v=4)](https://github.com/sindresorhus)[sindresorhus / is-binary-path](https://github.com/sindresorhus/is-binary-path)
+
+`~ 2.1.0`
+
+[![@micromatch](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / is-glob](https://github.com/micromatch/is-glob)
+
+`~ 4.0.1`
+
+[![@mochajs](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)](https://github.com/mochajs)[mochajs / mocha](https://github.com/mochajs/mocha)
+
+`^ 7.0.0`
+
+[![@jonschlinkert](https://avatars.githubusercontent.com/u/383994?s=40&u=335f06277f72722162e89bd5516849f2e82f37cf&v=4)](https://github.com/jonschlinkert)[jonschlinkert / normalize-path](https://github.com/jonschlinkert/normalize-path)
+
+`~ 3.0.0`
+
+[![@istanbuljs](https://avatars.githubusercontent.com/u/13523395?s=40&v=4)](https://github.com/istanbuljs)[istanbuljs / nyc](https://github.com/istanbuljs/nyc)
+
+`^ 15.0.0`
+
+[![@paulmillr](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)](https://github.com/paulmillr)[paulmillr / readdirp](https://github.com/paulmillr/readdirp)
+
+`~ 3.4.0`
+
+[![@isaacs](https://avatars.githubusercontent.com/u/9287?s=40&u=60a280618307ae965cadbe52da4baa7e351c848c&v=4)](https://github.com/isaacs)[isaacs / rimraf](https://github.com/isaacs/rimraf)
+
+`^ 3.0.0`
+
+[![@sinonjs](https://avatars.githubusercontent.com/u/6570253?s=40&v=4)](https://github.com/sinonjs)[sinonjs / sinon](https://github.com/sinonjs/sinon)
+
+`^ 9.0.1`
+
+[![@domenic](https://avatars.githubusercontent.com/u/617481?s=40&v=4)](https://github.com/domenic)[domenic / sinon-chai](https://github.com/domenic/sinon-chai)
+
+`^ 3.3.0`
+
+[![@anodynos](https://avatars.githubusercontent.com/u/856453?s=40&v=4)](https://github.com/anodynos)[anodynos / upath](https://github.com/anodynos/upath)
+
+`^ 1.2.0`
+
+[![@JedWatson](https://avatars.githubusercontent.com/u/872310?s=40&u=9548676d01f104232ee42e5ac0d985db77e6a5a4&v=4)](https://github.com/JedWatson)[JedWatson / classnames](https://github.com/JedWatson/classnames)
+
+`2.2.6`
+
+[![@bestiejs](https://avatars.githubusercontent.com/u/802850?s=40&v=4)](https://github.com/bestiejs)[bestiejs / benchmark.js ](https://github.com/bestiejs/benchmark.js)benchmark
+
+`^ 1.0.0`
+
+[![@browserify](https://avatars.githubusercontent.com/u/6320506?s=40&v=4)](https://github.com/browserify)[browserify / browserify](https://github.com/browserify/browserify)
+
+`^ 14.1.0`
+
+[![@mochajs](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)](https://github.com/mochajs)[mochajs / mocha](https://github.com/mochajs/mocha)
+
+`^ 2.1.0`
+
+[![@jeromedecoster](https://avatars.githubusercontent.com/u/158071?s=40&u=470a733fdc34a9fedab18ae4cf5109d2ea357425&v=4)](https://github.com/jeromedecoster)[jeromedecoster / opn-cli](https://github.com/jeromedecoster/opn-cli)
+
+`^ 3.1.0`
+
+[![@documentationjs](https://avatars.githubusercontent.com/u/11415556?s=40&v=4)](https://github.com/documentationjs)[documentationjs / documentation](https://github.com/documentationjs/documentation)
+
+`^ 13.2.5`
+
+[![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)](https://github.com/babel)[babel / babel ](https://github.com/babel/babel)@babel/core
+
+`7.12.3`
+
+
+
