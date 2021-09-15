@@ -145,6 +145,7 @@ sections:
             no_follow: false
         type: grid_item
         image: images/njdevils.jpg
+        title_url: 'https://www.allaboutthejersey.com/'
       - title: ITER Fusion Reactor Experiment (Southern France)
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
