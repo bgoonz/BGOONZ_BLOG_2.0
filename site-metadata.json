@@ -188,7 +188,7 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "content/archive"
+                "url": "/docs/content/archive/"
             },
             {
                 "label": "Audio",
