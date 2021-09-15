@@ -1,7 +1,7 @@
 ---
 title: Web Standards Checklist
 weight: 0
-excerpt: lorem-ipsum
+excerpt: (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and *pursue best practices* (valid code, accessible code, semantically correct code, user-friendly URLs etc).
 seo:
   title: ''
   description: 'as an aid for developers who are interested in moving towards web standards'
