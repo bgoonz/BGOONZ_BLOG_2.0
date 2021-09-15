@@ -22,6 +22,10 @@ seo:
       value: This is the Gatsby Plugins For This Sites Content Model page
 template: docs
 ---
+![](images/0001-76d89ef6.jpg)
+
+
+
 # Title
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
