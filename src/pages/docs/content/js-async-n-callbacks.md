@@ -1,9 +1,7 @@
 ---
 title: JavaScript Asynchronous Programming and Callbacks
 weight: 0
-excerpt: Computers are asynchronous by design.
-
-Asynchronous means that things can happen independently of the main program flow.
+excerpt: Computers are asynchronous by design.Asynchronous means that things can happen independently of the main program flow.
 seo:
   title: 'JavaScript Asynchronous Programming and Callbacks'
   description: 'JavaScript is synchronous by default, and is single threaded. This means that code cannot create new threads and run in parallel. Find out what asynchronous code means and how it looks like'
