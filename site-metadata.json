@@ -179,7 +179,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Resource-Repo-Archive",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
