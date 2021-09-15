@@ -1,7 +1,7 @@
 ---
 title: Dynamic Time Warping Algorithm Explained (Python)
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Dynamic Time Warping Algorithm Explained (Python)
 seo:
     title: ''
     description: ''
