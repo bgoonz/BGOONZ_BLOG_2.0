@@ -25,7 +25,6 @@
 
 # Homepage
 
-
 ![Homepage](./static/images/bgoonzblog20.png)
 
 </div>

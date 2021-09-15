@@ -1,5 +1,3 @@
-
-
 <br>
 <br>
 ---
@@ -18,10 +16,6 @@
             └──  ./plugins/gatsby-source-data/gatsby-node.js
 ```
 
-
-
-
-
 <br>
 <br>
 ---
@@ -30,7 +24,6 @@
 ---
 <br>
 <br>
-
 
 # Components:
 
@@ -83,16 +76,13 @@ export default {
     SectionGrid,
     SectionHero,
     Submenu,
-    Layout,
+    Layout
 };
-
-
 ```
 
 ### Layout.js
 
 ```js
-
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import _ from 'lodash';
@@ -153,23 +143,17 @@ export default class Body extends React.Component {
         );
     }
 }
-
-
-
 ```
 
 ### ActionLink.js
 
 ```js
 
-
 ```
 
 ### CtaButtons.js
 
-
 ```js
-
 
 ```
 
@@ -177,33 +161,23 @@ export default class Body extends React.Component {
 
 ```js
 
-
 ```
-
-
-
-
 
 ### DocsSubmenu.js
 
 ```js
 
-
 ```
-
 
 ### Footer.js
 
 ```js
 
-
 ```
 
 ### Header.js
 
-
 ```js
-
 
 ```
 
@@ -211,57 +185,43 @@ export default class Body extends React.Component {
 
 ```js
 
-
 ```
-
-
-
-
 
 ### SectionContent.js
 
 ```js
 
-
 ```
 
-
-###
+### SectionCta.js
 
 ```js
 
-
 ```
 
-###
-
+### SectionDocs.js
 
 ```js
 
-
 ```
 
-###
+### SectionGrid.js
 
 ```js
 
-
 ```
 
-
-
-
-
-###
+### SectionHero.js
 
 ```js
 
-
 ```
 
+### Submenu.js
 
+```js
 
-
+```
 <br>
 <br>
 ---
@@ -271,10 +231,6 @@ export default class Body extends React.Component {
 <br>
 <br>
 
-
-
-
-
 <br>
 <br>
 ---
@@ -283,12 +239,6 @@ export default class Body extends React.Component {
 ---
 <br>
 <br>
-
-
-
-
-
-
 
 <br>
 <br>
@@ -313,9 +263,6 @@ export default class Body extends React.Component {
 ## Gatsby Browser:
 
 ```js
-
-
-
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
@@ -389,14 +336,11 @@ module.exports = {
         }
     ]
 };
-
-
 ```
 
-
 ---
-## Gatsby-node
 
+## Gatsby-node
 
 ## [Gatsby Node](https://www.gatsbyjs.org/docs/node-apis/)
 
@@ -406,12 +350,9 @@ module.exports = {
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-
-
 ```
-Gatsby Node APIs
-================
 
+# Gatsby Node APIs
 
 Gatsby gives plugins and site builders many APIs for building your site. Code in the file `gatsby-node.js` is run once in the process of building your site. You can use its APIs to create pages dynamically, add data into GraphQL, or respond to events during the build lifecycle. To use the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/), create a file named `gatsby-node.js` in the root of your site. Export any of the APIs you wish to use in this file.
 
@@ -419,7 +360,8 @@ Every Gatsby Node API gets passed a [set of helper functions](https://www.gatsb
 
 An example gatsby-node.js file that implements two APIs, `onPostBuild`, and `createPages`.
 
->gatsby-node.js
+> gatsby-node.js
+
 ```js
 Copygatsby-node.js: copy code to clipboard`
 
@@ -487,51 +429,39 @@ exports.createPages  =  async  ({ graphql, actions })  =>  {
 
 ```
 
-[](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/#async-vs-sync-work)Async vs. sync work
------------------------------------------------------------------------------------------------------------
+## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/#async-vs-sync-work)Async vs. sync work
 
 If your plugin performs async operations (disk I/O, database access, calling remote APIs, etc.) you must either return a promise (explicitly using `Promise` API or implicitly using `async`/`await` syntax) or use the callback passed to the 3rd argument. Gatsby needs to know when plugins are finished as some APIs, to work correctly, require previous APIs to be complete first. See [Debugging Async Lifecycles](https://www.gatsbyjs.com/docs/debugging-async-lifecycles/) for more info.
 
-
-
 // Async/await
+
 ```js
-exports.createPages  =  async  ()  =>  {
+exports.createPages = async () => {
+    // do async work
 
-  // do async work
-
-  const result =  await  fetchExternalData()
-
-}
+    const result = await fetchExternalData();
+};
 
 // Promise API
 
-exports.createPages  =  ()  =>  {
-
-  return  new  Promise((resolve, reject)  =>  {
-
-  // do async work
-
-  })
-
-}
+exports.createPages = () => {
+    return new Promise((resolve, reject) => {
+        // do async work
+    });
+};
 
 // Callback API
 
-exports.createPages  =  (_, pluginOptions, cb)  =>  {
+exports.createPages = (_, pluginOptions, cb) => {
+    // do async work
 
-  // do async work
-
-  cb()
-
-}
-
+    cb();
+};
 ```
 
 If your plugin does not do async work, you can return directly.
 
-APIs
-----
+## APIs
 
 ###
 
@@ -586,55 +516,58 @@ No return value required, but the caller will `await` any promise that's retur
 #### Example
 
 ```js
-const path = require(`path`)
+const path = require(`path`);
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
-  // Query for markdown nodes to use in creating pages.
-  // You can query for whatever data you want to create pages for e.g.
-  // products, portfolio items, landing pages, etc.
-  // Variables can be added as the second function parameter
-  return graphql(`
-    query loadPagesQuery ($limit: Int!) {
-      allMarkdownRemark(limit: $limit) {
-        edges {
-          node {
-            frontmatter {
-              slug
+    const { createPage } = actions;
+    const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
+    // Query for markdown nodes to use in creating pages.
+    // You can query for whatever data you want to create pages for e.g.
+    // products, portfolio items, landing pages, etc.
+    // Variables can be added as the second function parameter
+    return graphql(
+        `
+            query loadPagesQuery($limit: Int!) {
+                allMarkdownRemark(limit: $limit) {
+                    edges {
+                        node {
+                            frontmatter {
+                                slug
+                            }
+                        }
+                    }
+                }
             }
-          }
+        `,
+        { limit: 1000 }
+    ).then((result) => {
+        if (result.errors) {
+            throw result.errors;
         }
-      }
-    }
-  `, { limit: 1000 }).then(result => {
-    if (result.errors) {
-      throw result.errors
-    }
 
-    // Create blog post pages.
-    result.data.allMarkdownRemark.edges.forEach(edge => {
-      createPage({
-        // Path for this page --- required
-        path: `${edge.node.frontmatter.slug}`,
-        component: blogPostTemplate,
-        context: {
-          // Add optional context data to be inserted
-          // as props into the page component.
-          //
-          // The context data can also be used as
-          // arguments to the page GraphQL query.
-          //
-          // The page "path" is always available as a GraphQL
-          // argument.
-        },
-      })
-    })
-  })
-}
+        // Create blog post pages.
+        result.data.allMarkdownRemark.edges.forEach((edge) => {
+            createPage({
+                // Path for this page --- required
+                path: `${edge.node.frontmatter.slug}`,
+                component: blogPostTemplate,
+                context: {
+                    // Add optional context data to be inserted
+                    // as props into the page component.
+                    //
+                    // The context data can also be used as
+                    // arguments to the page GraphQL query.
+                    //
+                    // The page "path" is always available as a GraphQL
+                    // argument.
+                }
+            });
+        });
+    });
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -644,7 +577,7 @@ Like `createPages` but for plugins who want to manage creating and removing pa
 
 An example of a plugin that uses this extension point is the plugin [gatsby-plugin-page-creator](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-page-creator) which monitors the `src/pages` directory for the adding and removal of JS pages. As its source of truth, files in the pages directory, is not known by Gatsby, it needs to keep its own state about its world to know when to add and remove pages.
 
-* * * * *
+---
 
 ###
 
@@ -713,32 +646,30 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs
 
 ```js
 exports.createResolvers = ({ createResolvers }) => {
-  const resolvers = {
-    Author: {
-      fullName: {
-        resolve: (source, args, context, info) => {
-          return source.firstName + source.lastName
+    const resolvers = {
+        Author: {
+            fullName: {
+                resolve: (source, args, context, info) => {
+                    return source.firstName + source.lastName;
+                }
+            }
+        },
+        Query: {
+            allRecentPosts: {
+                type: [`BlogPost`],
+                resolve: (source, args, context, info) => {
+                    const posts = context.nodeModel.getAllNodes({ type: `BlogPost` });
+                    const recentPosts = posts.filter((post) => post.publishedAt > Date.UTC(2018, 0, 1));
+                    return recentPosts;
+                }
+            }
         }
-      },
-    },
-    Query: {
-      allRecentPosts: {
-        type: [`BlogPost`],
-        resolve: (source, args, context, info) => {
-          const posts = context.nodeModel.getAllNodes({ type: `BlogPost` })
-          const recentPosts = posts.filter(
-            post => post.publishedAt > Date.UTC(2018, 0, 1)
-          )
-          return recentPosts
-        }
-      }
-    }
-  }
-  createResolvers(resolvers)
-}
+    };
+    createResolvers(resolvers);
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -776,18 +707,18 @@ This API runs immediately before schema generation. For modifications of the gen
 
 ```js
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes, createFieldExtension } = actions
+    const { createTypes, createFieldExtension } = actions;
 
-  createFieldExtension({
-    name: 'shout',
-    extend: () => ({
-      resolve(source, args, context, info) {
-        return String(source[info.fieldName]).toUpperCase()
-      }
-    })
-  })
+    createFieldExtension({
+        name: 'shout',
+        extend: () => ({
+            resolve(source, args, context, info) {
+                return String(source[info.fieldName]).toUpperCase();
+            }
+        })
+    });
 
-  const typeDefs = `
+    const typeDefs = `
     type MarkdownRemark implements Node @dontInfer {
       frontmatter: Frontmatter
     }
@@ -797,12 +728,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       image: File @fileByRelativePath
     }
-  `
-  createTypes(typeDefs)
-}
+  `;
+    createTypes(typeDefs);
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -836,14 +767,14 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelP
 
 ```js
 exports.onCreateBabelConfig = ({ actions }) => {
-  actions.setBabelPlugin({
-    name: `babel-plugin-that-i-like`,
-    options: {}
-  })
-}
+    actions.setBabelPlugin({
+        name: `babel-plugin-that-i-like`,
+        options: {}
+    });
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -867,13 +798,13 @@ Run when the `gatsby develop` server is started. It can be used for adding pro
 
 ```js
 exports.onCreateDevServer = ({ app }) => {
-  app.get('/hello', function (req, res) {
-    res.send('hello world')
-  })
-}
+    app.get('/hello', function (req, res) {
+        res.send('hello world');
+    });
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -891,13 +822,13 @@ The [Creating a Source Plugin](https://www.gatsbyjs.com/docs/how-to/plugins-and
 
 ```js
 exports.onCreateNode = ({ node, actions }) => {
-  const { createNode, createNodeField } = actions
-  // Transform the new node here and create a new node or
-  // create a new node field.
-}
+    const { createNode, createNodeField } = actions;
+    // Transform the new node here and create a new node or
+    // create a new node field.
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -909,7 +840,7 @@ There is a mechanism in Gatsby to prevent calling onCreatePage for pages created
 
 See the guide [Creating and Modifying Pages](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/) for more on this API.
 
-* * * * *
+---
 
 ###
 
@@ -964,23 +895,21 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/do
 #### Example
 
 ```js
-exports.onCreateWebpackConfig = ({
- stage, getConfig, rules, loaders, actions
-}) => {
-  actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: 'my-css',
-          use: [loaders.style(), loaders.css()]
-        },
-      ],
-    },
-  });
-}
+exports.onCreateWebpackConfig = ({ stage, getConfig, rules, loaders, actions }) => {
+    actions.setWebpackConfig({
+        module: {
+            rules: [
+                {
+                    test: 'my-css',
+                    use: [loaders.style(), loaders.css()]
+                }
+            ]
+        }
+    });
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -991,14 +920,14 @@ Lifecycle executed in each process (one time per process). Used to store actions
 #### Example
 
 ```js
-let createJobV2
+let createJobV2;
 exports.onPluginInit = ({ actions }) => {
-  // store job creation action to use it later
-  createJobV2 = actions.createJobV2
-}
+    // store job creation action to use it later
+    createJobV2 = actions.createJobV2;
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -1006,7 +935,7 @@ exports.onPluginInit = ({ actions }) => {
 
 Called at the end of the bootstrap process after all other extension APIs have been called.
 
-* * * * *
+---
 
 ###
 
@@ -1014,7 +943,7 @@ Called at the end of the bootstrap process after all other extension APIs have b
 
 The last extension point called after all other parts of the build process are complete.
 
-* * * * *
+---
 
 ###
 
@@ -1022,7 +951,7 @@ The last extension point called after all other parts of the build process are c
 
 Called once Gatsby has initialized itself and is ready to bootstrap your site.
 
-* * * * *
+---
 
 ###
 
@@ -1030,7 +959,7 @@ Called once Gatsby has initialized itself and is ready to bootstrap your site.
 
 The first extension point called during the build process. Called after the bootstrap has completed but before the build steps start.
 
-* * * * *
+---
 
 ###
 
@@ -1040,7 +969,7 @@ Run before GraphQL queries/fragments are extracted from JavaScript files. Useful
 
 See gatsby-transformer-sharp and gatsby-source-contentful for examples.
 
-* * * * *
+---
 
 ###
 
@@ -1048,7 +977,7 @@ See gatsby-transformer-sharp and gatsby-source-contentful for examples.
 
 The first API called during Gatsby execution, runs as soon as plugins are loaded, before cache initialization and bootstrap preparation.
 
-* * * * *
+---
 
 ###
 
@@ -1072,14 +1001,14 @@ Run during the bootstrap phase. Plugins can use this to define a schema for thei
 
 ```js
 exports.pluginOptionsSchema = ({ Joi }) => {
-  return Joi.object({
-    // Validate that the anonymize option is defined by the user and is a boolean
-    anonymize: Joi.boolean().required(),
-  })
-}
+    return Joi.object({
+        // Validate that the anonymize option is defined by the user and is a boolean
+        anonymize: Joi.boolean().required()
+    });
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -1087,7 +1016,7 @@ exports.pluginOptionsSchema = ({ Joi }) => {
 
 Ask compile-to-js plugins to process source to JavaScript so the query runner can extract out GraphQL queries for running.
 
-* * * * *
+---
 
 ###
 
@@ -1103,7 +1032,7 @@ string[]
 
 array of extensions
 
-* * * * *
+---
 
 ###
 
@@ -1137,32 +1066,32 @@ Many transformer plugins use this to add fields that take arguments.
 #### Example
 
 ```js
-import { GraphQLString } from "gatsby/graphql"
+import { GraphQLString } from 'gatsby/graphql';
 
 exports.setFieldsOnGraphQLNodeType = ({ type }) => {
-  if (type.name === `File`) {
-    return {
-      newField: {
-        type: GraphQLString,
-        args: {
-          myArgument: {
-            type: GraphQLString,
-          }
-        },
-        resolve: (source, fieldArgs) => {
-          return `Id of this node is ${source.id}.
-                  Field was called with argument: ${fieldArgs.myArgument}`
-        }
-      }
+    if (type.name === `File`) {
+        return {
+            newField: {
+                type: GraphQLString,
+                args: {
+                    myArgument: {
+                        type: GraphQLString
+                    }
+                },
+                resolve: (source, fieldArgs) => {
+                    return `Id of this node is ${source.id}.
+                  Field was called with argument: ${fieldArgs.myArgument}`;
+                }
+            }
+        };
     }
-  }
 
-  // by default return empty object
-  return {}
-}
+    // by default return empty object
+    return {};
+};
 ```
 
-* * * * *
+---
 
 ###
 
@@ -1178,43 +1107,41 @@ See also the documentation for [`createNode`](https://www.gatsbyjs.com/docs/act
 
 ```js
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
-  const { createNode } = actions
+    const { createNode } = actions;
 
-  // Data can come from anywhere, but for now create it manually
-  const myData = {
-    key: 123,
-    foo: `The foo field of my node`,
-    bar: `Baz`
-  }
+    // Data can come from anywhere, but for now create it manually
+    const myData = {
+        key: 123,
+        foo: `The foo field of my node`,
+        bar: `Baz`
+    };
 
-  const nodeContent = JSON.stringify(myData)
+    const nodeContent = JSON.stringify(myData);
 
-  const nodeMeta = {
-    id: createNodeId(`my-data-${myData.key}`),
-    parent: null,
-    children: [],
-    internal: {
-      type: `MyNodeType`,
-      mediaType: `text/html`,
-      content: nodeContent,
-      contentDigest: createContentDigest(myData)
-    }
-  }
+    const nodeMeta = {
+        id: createNodeId(`my-data-${myData.key}`),
+        parent: null,
+        children: [],
+        internal: {
+            type: `MyNodeType`,
+            mediaType: `text/html`,
+            content: nodeContent,
+            contentDigest: createContentDigest(myData)
+        }
+    };
 
-  const node = Object.assign({}, myData, nodeMeta)
-  createNode(node)
-}
+    const node = Object.assign({}, myData, nodeMeta);
+    createNode(node);
+};
 ```
 
-* * * * *
+---
 
 ###
 
 [`unstable_shouldOnCreateNode`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/#unstable_shouldOnCreateNode)
 
-Called before scheduling a `onCreateNode` callback for a plugin. If it returns falsy then Gatsby will not schedule the `onCreateNode` callback for this node for this plugin. Note: this API does not receive the regular `api` that other callbacks get as first arg.
----
-
+## Called before scheduling a `onCreateNode` callback for a plugin. If it returns falsy then Gatsby will not schedule the `onCreateNode` callback for this node for this plugin. Note: this API does not receive the regular `api` that other callbacks get as first arg.
 
 ## Gatsby-ssr
 
@@ -1240,12 +1167,9 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
         </React.Fragment>
     ]);
 };
-
-
 ```
-Gatsby Server Rendering APIs
-============================
 
+# Gatsby Server Rendering APIs
 
 The file `gatsby-ssr.js` lets you alter the content of static HTML files as they are being Server-Side Rendered (SSR) by Gatsby and Node.js. To use the [Gatsby SSR APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/), create a file called `gatsby-ssr.js` in the root of your site. Export any of the APIs you wish to use in this file.
 
@@ -1255,39 +1179,37 @@ gatsby-ssr.js
 
 Copygatsby-ssr.js: copy code to clipboard`
 
-const React =  require("react")
+const React = require("react")
 
-const Layout =  require("./src/components/layout")
+const Layout = require("./src/components/layout")
 
 // Adds a class name to the body element
 
-exports.onRenderBody  =  ({ setBodyAttributes }, pluginOptions)  =>  {
+exports.onRenderBody = ({ setBodyAttributes }, pluginOptions) => {
 
-  setBodyAttributes({
+setBodyAttributes({
 
- className:  "my-body-class",
+className: "my-body-class",
 
-  })
+})
 
 }
 
 // Wraps every page in a component
 
-exports.wrapPageElement  =  ({ element, props })  =>  {
+exports.wrapPageElement = ({ element, props }) => {
 
-  return  <Layout  {...props}>{element}</Layout>
+return <Layout {...props}>{element}</Layout>
 
 }
 
 `
 
-[](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#usage)Usage
--------------------------------------------------------------------------------
+## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#usage)Usage
 
 Implement any of these APIs by exporting them from a file named `gatsby-ssr.js` in the root of your project.
 
-APIs
-----
+## APIs
 
 ###
 
@@ -1373,7 +1295,7 @@ exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
 }
 ```
 
-* * * * *
+---
 
 ###
 
@@ -1476,7 +1398,7 @@ exports.onRenderBody = ({
 }
 ```
 
-* * * * *
+---
 
 ###
 
@@ -1569,7 +1491,7 @@ exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString }) => {
 }
 ```
 
-* * * * *
+---
 
 ###
 
@@ -1630,7 +1552,7 @@ exports.wrapPageElement = ({ element, props }) => {
 }
 ```
 
-* * * * *
+---
 
 ###
 
