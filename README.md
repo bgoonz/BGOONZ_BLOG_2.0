@@ -23,9 +23,10 @@
 
 ![Demo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/iframes.gif?raw=true)
 
-# 
+# Homepage
 
-![Homepage](./static/images/bgoonzblog20.png_)
+
+![Homepage](./static/images/bgoonzblog20.png)
 
 </div>
 
