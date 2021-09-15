@@ -1,7 +1,7 @@
 ---
 title: Python at length
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Variables are simply declarations that are used to store certain values.
 seo:
   title: ''
   description: ''
