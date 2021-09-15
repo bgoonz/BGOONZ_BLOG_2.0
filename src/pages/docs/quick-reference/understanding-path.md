@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Understanding PATH
 weight: 0
 excerpt: lorem-ipsum
 seo:
