@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: README
 subtitle: lorem-ipsum
 seo:
   title: ''
