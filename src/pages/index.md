@@ -240,7 +240,8 @@ sections:
         new_window: false
         no_follow: false
       - label: Collaborate
-        url: '#'
+        url: >-
+          https://webdevhub.jetbrains.space/oauth/auth/invite/419dd305ba717a392a02aa5b4e41e09c
         style: link
         icon_class: dev
         new_window: false
