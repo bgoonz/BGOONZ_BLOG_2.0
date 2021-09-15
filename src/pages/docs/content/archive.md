@@ -2,16 +2,14 @@
 title: Archive
 weight: 1
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
 
 # Archives:
-
-
 
 <br>
 
@@ -78,9 +76,7 @@ template: docs
 
 <br>
 
-
 ## Archives
-
 
 <br>
 
@@ -95,4 +91,3 @@ template: docs
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <br>
-

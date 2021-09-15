@@ -2,17 +2,16 @@ title: Audio
 weight: 0
 excerpt: Audio Projects
 seo:
-    title: 'Audio Projects'
-    description: 'A collection of web audio projects'
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+title: 'Audio Projects'
+description: 'A collection of web audio projects'
+robots: []
+extra: []
+type: stackbit_page_meta
 template: docs
+
 ---
 
-
 # Audio
-
 
 <br>
 <br>

@@ -3,11 +3,11 @@ title: My Python Docs
 weight: 0
 excerpt: Python
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
 
