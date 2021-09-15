@@ -1,6 +1,6 @@
 ---
 title: README
-subtitle: lorem-ipsum
+subtitle: for this website
 seo:
   title: ''
   description: ''
