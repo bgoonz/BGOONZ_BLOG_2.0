@@ -5,15 +5,16 @@ date: '2021-06-03'
 thumb_image_alt: lorem-ipsum
 excerpt: A guide to computational complexity
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: post
 image: images/ds.PNG
 thumb_image: images/polite-sage.jpg
 ---
+# Leetcode
 
 ## Data Structures & Algorithms
 
@@ -31,43 +32,39 @@ A subsequence of a string is a new string which is formed from the original stri
 
 **Example 1:**
 
-```
-Input: S = "rabbbit", T = "rabbit"
-Output: 3
-Explanation:
+    Input: S = "rabbbit", T = "rabbit"
+    Output: 3
+    Explanation:
 
-As shown below, there are 3 ways you can generate "rabbit" from S.
-(The caret symbol ^ means the chosen letters)
+    As shown below, there are 3 ways you can generate "rabbit" from S.
+    (The caret symbol ^ means the chosen letters)
 
-rabbbit
-^^^^ ^^
-rabbbit
-^^ ^^^^
-rabbbit
-^^^ ^^^
-```
+    rabbbit
+    ^^^^ ^^
+    rabbbit
+    ^^ ^^^^
+    rabbbit
+    ^^^ ^^^
 
 **Example 2:**
 
-```
-Input: S = "babgbag", T = "bag"
-Output: 5
-Explanation:
+    Input: S = "babgbag", T = "bag"
+    Output: 5
+    Explanation:
 
-As shown below, there are 5 ways you can generate "bag" from S.
-(The caret symbol ^ means the chosen letters)
+    As shown below, there are 5 ways you can generate "bag" from S.
+    (The caret symbol ^ means the chosen letters)
 
-babgbag
-^^ ^
-babgbag
-^^    ^
-babgbag
-^    ^^
-babgbag
-  ^  ^^
-babgbag
-    ^^^
-```
+    babgbag
+    ^^ ^
+    babgbag
+    ^^    ^
+    babgbag
+    ^    ^^
+    babgbag
+      ^  ^^
+    babgbag
+        ^^^
 
 ### Solution:
 
@@ -105,7 +102,7 @@ let numDistinct = function (s, t) {
 };
 ```
 
----
+***
 
 Difficulty: Medium
 Related Topics:
@@ -115,7 +112,7 @@ Similar Questions:
 "Populating Next Right Pointers in Each Node II": https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii
 "Binary Tree Right Side View": https://leetcode.com/problems/binary-tree-right-side-view
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#116-populating-next-right-pointers-in-each-nodehttpsleetcodecomproblemspopulating-next-right-pointers-in-each-nodedescription)
 
@@ -140,9 +137,9 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
--   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
+*   You may only use constant extra space.
+*   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+*   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
 
 **Example:**
 
@@ -176,8 +173,8 @@ Recursive.
 
 For every `node`:
 
--   Left child: points to `node.right`.
--   Right child: points to `node.next.left` if `node.next` exists.
+*   Left child: points to `node.right`.
+*   Right child: points to `node.next.left` if `node.next` exists.
 
 ```javascript
 /**
@@ -251,7 +248,7 @@ let connect = function (root) {
 };
 ```
 
----
+***
 
 Difficulty: Medium
 Related Topics:
@@ -260,7 +257,7 @@ Related Topics:
 Similar Questions:
 "Populating Next Right Pointers in Each Node": https://leetcode.com/problems/populating-next-right-pointers-in-each-node
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#117-populating-next-right-pointers-in-each-node-iihttpsleetcodecomproblemspopulating-next-right-pointers-in-each-node-iidescription)
 
@@ -285,8 +282,8 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+*   You may only use constant extra space.
+*   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
 
 **Example:**
 
@@ -403,7 +400,7 @@ let connect = function (root) {
 };
 ```
 
----
+***
 
 Difficulty: Easy
 Related Topics:
@@ -411,7 +408,7 @@ Related Topics:
 Similar Questions:
 "Pascal's Triangle II": https://leetcode.com/problems/pascals-triangle-ii
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#118-pascals-trianglehttpsleetcodecomproblemspascals-triangledescription)
 
@@ -419,7 +416,7 @@ Similar Questions:
 
 ### Problem:
 
-Given a non-negative integer _numRows_, generate the first _numRows_ of Pascal's triangle.
+Given a non-negative integer *numRows*, generate the first *numRows* of Pascal's triangle.
 
 ![PascalTriangleAnimated2.gif](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
 
@@ -469,7 +466,7 @@ let generate = function (numRows) {
 };
 ```
 
----
+***
 
 Difficulty: Easy
 Related Topics:
@@ -477,7 +474,7 @@ Related Topics:
 Similar Questions:
 "Pascal's Triangle": https://leetcode.com/problems/pascals-triangle
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#119-pascals-triangle-iihttpsleetcodecomproblemspascals-triangle-iidescription)
 
@@ -485,7 +482,7 @@ Similar Questions:
 
 ### Problem:
 
-Given a non-negative index _k_ where _k_ ≤ 33, return the *k*th index row of the Pascal's triangle.
+Given a non-negative index *k* where *k* ≤ 33, return the *k*th index row of the Pascal's triangle.
 
 Note that the row index starts from 0.
 
@@ -503,7 +500,7 @@ Output: [1,3,3,1]
 
 **Follow up:**
 
-Could you optimize your algorithm to use only _O_(_k_) extra space?
+Could you optimize your algorithm to use only *O*(*k*) extra space?
 
 ### Solution:
 
@@ -533,14 +530,14 @@ let getRow = function (rowIndex) {
 };
 ```
 
----
+***
 
 Difficulty: Medium
 Related Topics:
 "Array": https://leetcode.com/tag/array
 "Dynamic Programming": https://leetcode.com/tag/dynamic-programming
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#120-trianglehttpsleetcodecomproblemstriangledescription)
 
@@ -566,17 +563,15 @@ The minimum path sum from top to bottom is `11` (i.e., **2** + **3** + **5** + *
 
 **Note:**
 
-Bonus point if you are able to do this using only _O_(_n_) extra space, where _n_ is the total number of rows in the triangle.
+Bonus point if you are able to do this using only *O*(*n*) extra space, where *n* is the total number of rows in the triangle.
 
 ### Solution:
 
 Define `f(i, j)` to be the minimum path sum from `triangle[0][0]` to `triangle[i][j]`.
 
-```
-f(i, 0) = f(i-1, j) + triangle[i][0]
-f(i, j) = min( f(i-1, j-1), f(i-1, j) ) + triangle[i][j], 0 < j < i
-f(i, i) = f(i-1, i-1) + triangle[i][i], i > 0
-```
+    f(i, 0) = f(i-1, j) + triangle[i][0]
+    f(i, j) = min( f(i-1, j-1), f(i-1, j) ) + triangle[i][j], 0 < j < i
+    f(i, i) = f(i-1, i-1) + triangle[i][i], i > 0
 
 Dynamic array can be used.
 
@@ -602,7 +597,7 @@ let minimumTotal = function (triangle) {
 };
 ```
 
----
+***
 
 Difficulty: Easy
 Related Topics:
@@ -615,7 +610,7 @@ Similar Questions:
 "Best Time to Buy and Sell Stock IV": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
 "Best Time to Buy and Sell Stock with Cooldown": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#121-best-time-to-buy-and-sell-stockhttpsleetcodecomproblemsbest-time-to-buy-and-sell-stockdescription)
 
@@ -623,7 +618,7 @@ Similar Questions:
 
 ### Problem:
 
-Say you have an array for which the *i*th element is the price of a given stock on day _i_.
+Say you have an array for which the *i*th element is the price of a given stock on day *i*.
 
 If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.
 
@@ -674,7 +669,7 @@ let maxProfit = function (prices) {
 };
 ```
 
----
+***
 
 Difficulty: Easy
 Related Topics:
@@ -687,7 +682,7 @@ Similar Questions:
 "Best Time to Buy and Sell Stock with Cooldown": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
 "Best Time to Buy and Sell Stock with Transaction Fee": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#122-best-time-to-buy-and-sell-stock-iihttpsleetcodecomproblemsbest-time-to-buy-and-sell-stock-iidescription)
 
@@ -695,7 +690,7 @@ Similar Questions:
 
 ### Problem:
 
-Say you have an array for which the *i*th element is the price of a given stock on day _i_.
+Say you have an array for which the *i*th element is the price of a given stock on day *i*.
 
 Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
 
@@ -724,11 +719,9 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
 
 **Example 3:**
 
-```
-Input: [7,6,4,3,1]
-Output: 0
-Explanation: In this case, no transaction is done, i.e. max profit = 0.
-```
+    Input: [7,6,4,3,1]
+    Output: 0
+    Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 ### Solution:
 
@@ -750,7 +743,7 @@ let maxProfit = function (prices) {
 };
 ```
 
----
+***
 
 Difficulty: Hard
 Related Topics:
@@ -762,7 +755,7 @@ Similar Questions:
 "Best Time to Buy and Sell Stock IV": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
 "Maximum Sum of 3 Non-Overlapping Subarrays": https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#123-best-time-to-buy-and-sell-stock-iiihttpsleetcodecomproblemsbest-time-to-buy-and-sell-stock-iiidescription)
 
@@ -770,20 +763,18 @@ Similar Questions:
 
 ### Problem:
 
-Say you have an array for which the *i*th element is the price of a given stock on day _i_.
+Say you have an array for which the *i*th element is the price of a given stock on day *i*.
 
-Design an algorithm to find the maximum profit. You may complete at most _two_ transactions.
+Design an algorithm to find the maximum profit. You may complete at most *two* transactions.
 
-**Note:**You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
+\*\*Note:\*\*You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
 
 **Example 1:**
 
-```
-Input: [3,3,5,0,0,3,1,4]
-Output: 6
-Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
-             Then buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.
-```
+    Input: [3,3,5,0,0,3,1,4]
+    Output: 6
+    Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+                 Then buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.
 
 **Example 2:**
 
@@ -798,29 +789,23 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
 
 **Example 3:**
 
-```
-Input: [7,6,4,3,1]
-Output: 0
-Explanation: In this case, no transaction is done, i.e. max profit = 0.
-```
+    Input: [7,6,4,3,1]
+    Output: 0
+    Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 ### Solution:
 
-Multiple transactions may not be engaged in at the same time. That means if we view the days that involed in the same transaction as a group, there won't be any intersection. We may complete at most _two_ transactions, so divide the days into two groups, `[0...k]` and `[k...n-1]`. Notice `k` exists in both groups because technically we can sell out then immediately buy in at the same day.
+Multiple transactions may not be engaged in at the same time. That means if we view the days that involed in the same transaction as a group, there won't be any intersection. We may complete at most *two* transactions, so divide the days into two groups, `[0...k]` and `[k...n-1]`. Notice `k` exists in both groups because technically we can sell out then immediately buy in at the same day.
 
 Define `p1(i)` to be the max profit of day `[0...i]`. This is just like the problem of [121. Best Time to Buy and Sell Stock](./121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md).
 
-```
-p1(0) = 0
-p1(i) = max( p1(i-1), prices[i] - min(prices[0], ..., prices[i-1]) ), 0 < i <= n-1
-```
+    p1(0) = 0
+    p1(i) = max( p1(i-1), prices[i] - min(prices[0], ..., prices[i-1]) ), 0 < i <= n-1
 
 Define `p2(i)` to be the max profit of day `[i...n-1]`. This is the mirror of `p1`.
 
-```
-p2(n-1) = 0
-p2(i) = max( p2(i+1), max(prices[i], ..., prices[n-1]) - prices[i] ), n-1 > i >= 0
-```
+    p2(n-1) = 0
+    p2(i) = max( p2(i+1), max(prices[i], ..., prices[n-1]) - prices[i] ), n-1 > i >= 0
 
 Define `f(k)` to be `p1(k) + p2(k)`. We need to get `max( f(0), ..., f(n-1) )`.
 
@@ -855,7 +840,7 @@ let maxProfit = function (prices) {
 };
 ```
 
----
+***
 
 Difficulty: Hard
 Related Topics:
@@ -867,7 +852,7 @@ Similar Questions:
 "Path Sum IV": https://leetcode.com/problems/path-sum-iv
 "Longest Univalue Path": https://leetcode.com/problems/longest-univalue-path
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#124-binary-tree-maximum-path-sumhttpsleetcodecomproblemsbinary-tree-maximum-path-sumdescription)
 
@@ -911,14 +896,14 @@ Output: 42
 
 For every `node`, there are six possible ways to get the max path sum:
 
--   With `node.val`
-    1. `node.val` plus the max sum of a path that ends with `node.left`.
-    2. `node.val` plus the max sum of a path that starts with `node.right`.
-    3. `node.val` plus the max sum of both paths.
-    4. Just `node.val` (the max sum of both paths are negative).
--   Without`node.val` (disconnected)
-    1. The max-sum path is somewhere under the `node.left` subtree.
-    2. The max-sum path is somewhere under the `node.right` subtree.
+*   With `node.val`
+    1.  `node.val` plus the max sum of a path that ends with `node.left`.
+    2.  `node.val` plus the max sum of a path that starts with `node.right`.
+    3.  `node.val` plus the max sum of both paths.
+    4.  Just `node.val` (the max sum of both paths are negative).
+*   Without`node.val` (disconnected)
+    1.  The max-sum path is somewhere under the `node.left` subtree.
+    2.  The max-sum path is somewhere under the `node.right` subtree.
 
 There are two ways to implement this.
 
@@ -998,7 +983,7 @@ function _maxPathSum(root, global) {
 }
 ```
 
----
+***
 
 Difficulty: Easy
 Related Topics:
@@ -1008,7 +993,7 @@ Similar Questions:
 "Palindrome Linked List": https://leetcode.com/problems/palindrome-linked-list
 "Valid Palindrome II": https://leetcode.com/problems/valid-palindrome-ii
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#125-valid-palindromehttpsleetcodecomproblemsvalid-palindromedescription)
 
@@ -1113,7 +1098,7 @@ let isPalindrome = function (s) {
 };
 ```
 
----
+***
 
 Difficulty: Hard
 Related Topics:
@@ -1124,7 +1109,7 @@ Related Topics:
 Similar Questions:
 "Word Ladder": https://leetcode.com/problems/word-ladder
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#126-word-ladder-iihttpsleetcodecomproblemsword-ladder-iidescription)
 
@@ -1132,18 +1117,18 @@ Similar Questions:
 
 ### Problem:
 
-Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find all shortest transformation sequence(s) from _beginWord_ to _endWord_, such that:
+Given two words (*beginWord* and *endWord*), and a dictionary's word list, find all shortest transformation sequence(s) from *beginWord* to *endWord*, such that:
 
-1. Only one letter can be changed at a time
-2. Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
+1.  Only one letter can be changed at a time
+2.  Each transformed word must exist in the word list. Note that *beginWord* is *not* a transformed word.
 
 **Note:**
 
--   Return an empty list if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+*   Return an empty list if there is no such transformation sequence.
+*   All words have the same length.
+*   All words contain only lowercase alphabetic characters.
+*   You may assume no duplicates in the word list.
+*   You may assume *beginWord* and *endWord* are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1245,7 +1230,7 @@ function findLadders(beginWord, endWord, wordList) {
 }
 ```
 
----
+***
 
 Difficulty: Medium
 Related Topics:
@@ -1254,7 +1239,7 @@ Similar Questions:
 "Word Ladder II": https://leetcode.com/problems/word-ladder-ii
 "Minimum Genetic Mutation": https://leetcode.com/problems/minimum-genetic-mutation
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#127-word-ladderhttpsleetcodecomproblemsword-ladderdescription)
 
@@ -1262,18 +1247,18 @@ Similar Questions:
 
 ### Problem:
 
-Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find the length of shortest transformation sequence from _beginWord_ to _endWord_, such that:
+Given two words (*beginWord* and *endWord*), and a dictionary's word list, find the length of shortest transformation sequence from *beginWord* to *endWord*, such that:
 
-1. Only one letter can be changed at a time.
-2. Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
+1.  Only one letter can be changed at a time.
+2.  Each transformed word must exist in the word list. Note that *beginWord* is *not* a transformed word.
 
 **Note:**
 
--   Return 0 if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+*   Return 0 if there is no such transformation sequence.
+*   All words have the same length.
+*   All words contain only lowercase alphabetic characters.
+*   You may assume no duplicates in the word list.
+*   You may assume *beginWord* and *endWord* are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1362,7 +1347,7 @@ let ladderLength = function (beginWord, endWord, wordList) {
 };
 ```
 
----
+***
 
 Difficulty: Hard
 Related Topics:
@@ -1371,7 +1356,7 @@ Related Topics:
 Similar Questions:
 "Binary Tree Longest Consecutive Sequence": https://leetcode.com/problems/binary-tree-longest-consecutive-sequence
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#128-longest-consecutive-sequencehttpsleetcodecomproblemslongest-consecutive-sequencedescription)
 
@@ -1381,7 +1366,7 @@ Similar Questions:
 
 Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 
-Your algorithm should run in O(_n_) complexity.
+Your algorithm should run in O(*n*) complexity.
 
 **Example:**
 
@@ -1422,7 +1407,7 @@ let longestConsecutive = function (nums) {
 };
 ```
 
----
+***
 
 Difficulty: Medium
 Related Topics:
@@ -1432,7 +1417,7 @@ Similar Questions:
 "Path Sum": https://leetcode.com/problems/path-sum
 "Binary Tree Maximum Path Sum": https://leetcode.com/problems/binary-tree-maximum-path-sum
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#129-sum-root-to-leaf-numbershttpsleetcodecomproblemssum-root-to-leaf-numbersdescription)
 
@@ -1450,34 +1435,30 @@ Find the total sum of all root-to-leaf numbers.
 
 **Example:**
 
-```
-Input: [1,2,3]
-    1
-   / \
-  2   3
-Output: 25
-Explanation:
-The root-to-leaf path 1->2 represents the number 12.
-The root-to-leaf path 1->3 represents the number 13.
-Therefore, sum = 12 + 13 = 25.
-```
+    Input: [1,2,3]
+        1
+       / \
+      2   3
+    Output: 25
+    Explanation:
+    The root-to-leaf path 1->2 represents the number 12.
+    The root-to-leaf path 1->3 represents the number 13.
+    Therefore, sum = 12 + 13 = 25.
 
 **Example 2:**
 
-```
-Input: [4,9,0,5,1]
-    4
-   / \
-  9   0
- / \
-5   1
-Output: 1026
-Explanation:
-The root-to-leaf path 4->9->5 represents the number 495.
-The root-to-leaf path 4->9->1 represents the number 491.
-The root-to-leaf path 4->0 represents the number 40.
-Therefore, sum = 495 + 491 + 40 = 1026.
-```
+    Input: [4,9,0,5,1]
+        4
+       / \
+      9   0
+     / \
+    5   1
+    Output: 1026
+    Explanation:
+    The root-to-leaf path 4->9->5 represents the number 495.
+    The root-to-leaf path 4->9->1 represents the number 491.
+    The root-to-leaf path 4->0 represents the number 40.
+    Therefore, sum = 495 + 491 + 40 = 1026.
 
 ### Solution:
 
@@ -1504,7 +1485,7 @@ let sumNumbers = function (root, sum = 0) {
 };
 ```
 
----
+***
 
 Difficulty: Medium
 Related Topics:
@@ -1515,7 +1496,7 @@ Similar Questions:
 "Number of Islands": https://leetcode.com/problems/number-of-islands
 "Walls and Gates": https://leetcode.com/problems/walls-and-gates
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#130-surrounded-regionshttpsleetcodecomproblemssurrounded-regionsdescription)
 
@@ -1634,7 +1615,7 @@ let solve = function (board) {
 };
 ```
 
----
+***
 
 Difficulty: Medium
 Related Topics:
@@ -1644,7 +1625,7 @@ Related Topics:
 Similar Questions:
 "Copy List with Random Pointer": https://leetcode.com/problems/copy-list-with-random-pointer
 
----
+***
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#133-clone-graphhttpsleetcodecomproblemsclone-graphdescription)
 
@@ -1664,9 +1645,9 @@ As an example, consider the serialized graph `{0,1,2#1,2#2,2}`.
 
 The graph has a total of three nodes, and therefore contains three parts as separated by `#`.
 
-1. First node is labeled as `0`. Connect node `0` to both nodes `1` and `2`.
-2. Second node is labeled as `1`. Connect node `1` to node `2`.
-3. Third node is labeled as `2`. Connect node `2` to node `2` (itself), thus forming a self-cycle.
+1.  First node is labeled as `0`. Connect node `0` to both nodes `1` and `2`.
+2.  Second node is labeled as `1`. Connect node `1` to node `2`.
+3.  Third node is labeled as `2`. Connect node `2` to node `2` (itself), thus forming a self-cycle.
 
 Visually, the graph looks like the following:
 
@@ -1717,7 +1698,7 @@ let cloneGraph = function (graph) {
 };
 ```
 
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/binary-tree-upside-down.webp 'binary-tree-upside-down')
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/binary-tree-upside-down.webp "binary-tree-upside-down")
 
 ```js
 /**
@@ -1762,7 +1743,7 @@ const upsideDownBinaryTree = function (root) {
 };
 ```
 
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png 'maximum-sum-circular-subarray')
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png "maximum-sum-circular-subarray")
 
 ```js
 /**
@@ -1796,31 +1777,31 @@ Given a binary tree, determine if it is height-balanced.
 
 For this problem, a height-balanced binary tree is defined as:
 
-> a binary tree in which the left and right subtrees of _every_ node differ in height by no more than 1.
+> a binary tree in which the left and right subtrees of *every* node differ in height by no more than 1.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg)
+![](https://assets.leetcode.com/uploads/2020/10/06/balance\_1.jpg)
 
-**Input:** root = \[3,9,20,null,null,15,7\]
+**Input:** root = \[3,9,20,null,null,15,7]
 **Output:** true
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg)
+![](https://assets.leetcode.com/uploads/2020/10/06/balance\_2.jpg)
 
-**Input:** root = \[1,2,2,3,3,null,null,4,4\]
+**Input:** root = \[1,2,2,3,3,null,null,4,4]
 **Output:** false
 
 **Example 3:**
 
-**Input:** root = \[\]
+**Input:** root = \[]
 **Output:** true
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 5000]`.
--   `-104 <= Node.val <= 104`
+*   The number of nodes in the tree is in the range `[0, 5000]`.
+*   `-104 <= Node.val <= 104`
 
 [Source](https://leetcode.com/problems/balanced-binary-tree/)# Convert Sorted Array to Binary Search Tree
 
@@ -1828,20 +1809,20 @@ For this problem, a height-balanced binary tree is defined as:
 
 Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
 
-For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of _every_ node never differ by more than 1.
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of *every* node never differ by more than 1.
 
 **Example:**
 
-Given the sorted array: \[-10,-3,0,5,9\],
+Given the sorted array: \[-10,-3,0,5,9],
 
-One possible answer is: \[0,-3,9,-10,null,5\], which represents the following height balanced BST:
+One possible answer is: \[0,-3,9,-10,null,5], which represents the following height balanced BST:
 
       0
      / \\
 
--3 9
+\-3 9
 / /
--10 5
+\-10 5
 
 [Source](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)# Delete Node in a BST
 
@@ -1858,36 +1839,36 @@ Basically, the deletion can be divided into two stages:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg)
+![](https://assets.leetcode.com/uploads/2020/09/04/del_node\_1.jpg)
 
-**Input:** root = \[5,3,6,2,4,null,7\], key = 3
-**Output:** \[5,4,6,2,null,null,7\]
+**Input:** root = \[5,3,6,2,4,null,7], key = 3
+**Output:** \[5,4,6,2,null,null,7]
 **Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it.
-One valid answer is \[5,4,6,2,null,null,7\], shown in the above BST.
-Please notice that another valid answer is \[5,2,6,null,4,null,7\] and it's also accepted.
+One valid answer is \[5,4,6,2,null,null,7], shown in the above BST.
+Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also accepted.
 ![](https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg)
 
 **Example 2:**
 
-**Input:** root = \[5,3,6,2,4,null,7\], key = 0
-**Output:** \[5,3,6,2,4,null,7\]
+**Input:** root = \[5,3,6,2,4,null,7], key = 0
+**Output:** \[5,3,6,2,4,null,7]
 **Explanation:** The tree does not contain a node with value = 0.
 
 **Example 3:**
 
-**Input:** root = \[\], key = 0
-**Output:** \[\]
+**Input:** root = \[], key = 0
+**Output:** \[]
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 104]`.
--   `-105 <= Node.val <= 105`
--   Each node has a **unique** value.
--   `root` is a valid binary search tree.
--   `-105 <= key <= 105`
+*   The number of nodes in the tree is in the range `[0, 104]`.
+*   `-105 <= Node.val <= 105`
+*   Each node has a **unique** value.
+*   `root` is a valid binary search tree.
+*   `-105 <= key <= 105`
 
-[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg 'meeting-room-ii')
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg 'meeting-room-ii')
+[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg "meeting-room-ii")
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg "meeting-room-ii")
 
 ```javascript
 /**
