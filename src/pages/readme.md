@@ -7,7 +7,7 @@ seo:
   robots: []
   extra: []
 template: page
-image: images/bgoonzblog2-mini.png
+image: images/bgoonzblog20-a6a3bfc3.png
 ---
 ## Lorem ipsum
 
