@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Dynamic Time Warping Algorithm Explained (Python)
 weight: 0
 excerpt: lorem-ipsum
 seo:
