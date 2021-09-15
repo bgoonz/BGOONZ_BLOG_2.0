@@ -4,7 +4,7 @@ weight: 0
 excerpt: lorem-ipsum
 seo:
   title: ''
-  description: ''
+  description: 'as an aid for developers who are interested in moving towards web standards'
   robots: []
   extra: []
 template: docs
