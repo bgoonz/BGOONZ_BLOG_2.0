@@ -145,6 +145,7 @@ sections:
 
         actions: []
         type: grid_item
+        image: images/njdevils.jpg
       - title: lorem-ipsum
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
