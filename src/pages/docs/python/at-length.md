@@ -3,8 +3,8 @@ title: Python at length
 weight: 0
 excerpt: Variables are simply declarations that are used to store certain values.
 seo:
-  title: ''
-  description: ''
+  title: 'Python at length'
+  description: 'Python at length'
   robots: []
   extra: []
 template: docs
