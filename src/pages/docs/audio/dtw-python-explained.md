@@ -1,12 +1,12 @@
 ---
-title: Dynamic Time Warping Algorithm Explained (Python)
+title: lorem-ipsum
 weight: 0
-excerpt: Dynamic Time Warping (DTW) is a way to compare two -usually temporal- sequences that do not sync up perfectly. It is a method to calculate the optimal matching between two sequences. DTW is useful in many domains such as speech recognition, data mining, financial markets, etc. It's commonly used in data mining to measure the distance between two time-series.
-seo: Dynamic Time Warping (DTW) is a way to compare two -usually temporal- sequences that do not sync up perfectly. It is a method to calculate the optimal matching between two sequences. DTW is useful in many domains such as speech recognition, data mining, financial markets, etc. It's commonly used in data mining to measure the distance between two time-series.
-  title: 'Dynamic Time Warping Algorithm Explained (Python)'
-  description: 'Dynamic Time Warping (DTW) is a way to compare two -usually temporal- sequences that do not sync up perfectly. It is a method to calculate the optimal matching between two sequences. DTW is useful in many domains such as speech recognition, data mining, financial markets, etc. It's commonly used in data mining to measure the distance between two time-series.'
-  robots: []
-  extra: []
+excerpt: lorem-ipsum
+seo:
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
 
