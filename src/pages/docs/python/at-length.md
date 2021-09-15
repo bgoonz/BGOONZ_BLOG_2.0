@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Python at length
 weight: 0
 excerpt: lorem-ipsum
 seo:
