@@ -17,7 +17,7 @@ In other words, a site built to web standards should ideally be *lean, clean, C
 
 ### About the checklist
 
-This is not an uber-checklist. There are probably many items that could be added. More importantly, it should not be seen as a list of items that *must* be addressed on every site that you develop. It is simply a guide that can be used:
+This is a guide that can be used:
 
 -   to show the breadth of web standards
 -   as a handy tool for developers during the production phase of websites
