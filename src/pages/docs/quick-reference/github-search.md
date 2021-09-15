@@ -1,10 +1,11 @@
 ---
 title: Github Search
 weight: 1
-excerpt: "Add Firebase to your JavaScript project\_Note"
+excerpt: The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. Its designed to help you find the one result youre looking for (or maybe the few results youre looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, the GitHub Search API provides **up to 1,000 results for each search**.
+
 seo:
-    title: "Add Firebase to your JavaScript project\_Note:"
-    description: "Add Firebase to your JavaScript project\_Note:"
+    title: "The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. It's designed to help you find the one result you're looking for (or maybe the few results you're looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, the GitHub Search API provides **up to 1,000 results for each search**.:"
+    description: "The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. It's designed to help you find the one result you're looking for (or maybe the few results you're looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, the GitHub Search API provides **up to 1,000 results for each search**.:"
     robots: []
     extra: []
 template: docs
