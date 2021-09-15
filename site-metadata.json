@@ -366,7 +366,7 @@
                         "no_follow": false
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Python Docs",
                         "url": "https://bryan-guner.gitbook.io/datastructures-in-pytho/",
                         "style": "link",
                         "icon_class": "dev",
