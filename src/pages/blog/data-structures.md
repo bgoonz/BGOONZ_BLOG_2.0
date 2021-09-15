@@ -1,5 +1,5 @@
 ---
-title: Data Structures
+title: Leetcode (Data Structures
 subtitle: lorem-ipsum
 date: '2021-06-03'
 thumb_image_alt: lorem-ipsum
