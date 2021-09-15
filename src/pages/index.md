@@ -214,7 +214,7 @@ sections:
     title: Web Audio DAW
   - title: Quick Links
     section_id: navigate from the home page
-    col_number: three
+    col_number: two
     type: section_docs
     subtitle: quick links home
   - title: Contact
