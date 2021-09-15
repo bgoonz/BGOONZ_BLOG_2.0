@@ -137,7 +137,13 @@ sections:
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
         type: grid_item
         image: images/njdevils.jpg
       - title: ITER Fusion Reactor Experiment (Southern France)
