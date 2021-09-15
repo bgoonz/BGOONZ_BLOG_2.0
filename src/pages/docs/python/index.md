@@ -2563,3 +2563,8 @@ Let’s quickly revise the important concepts we have learned during this small 
 * The syntax of the `for` loop was very simple. `for var in range(1, 10) : ...`, followed by statements you would want to execute in a loop, with indentation. For the sake of indentation we left four `<SPACE>`s in front of each statement inside the `for` loop.
 
 So that, in a nutshell, is what we have learned over the course of our first section.
+
+
+
+
+
