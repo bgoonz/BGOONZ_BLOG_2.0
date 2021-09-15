@@ -1,8 +1,8 @@
 ---
 title: My Hobbies & Interests
 sections:
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
+  - title: My Hobbies & Interests
+    section_id: links
     subtitle: lorem-ipsum
     col_number: three
     type: section_docs
