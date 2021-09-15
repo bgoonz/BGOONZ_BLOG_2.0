@@ -11,6 +11,12 @@ seo:
       value: Sorting Algorithms
       keyName: property
       relativeUrl: false
+    - name: 'og:description'
+      value: >-
+        We are creating the same number of variables with an exact size,
+        independent of our input. No new arrays are created.
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
