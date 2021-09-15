@@ -180,7 +180,7 @@
                     },
                     {
                         "label": "Resource-Repo-Archive",
-                        "url": "#",
+                        "url": "content/archive",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
