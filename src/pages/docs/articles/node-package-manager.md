@@ -21,6 +21,10 @@ seo:
       value: website
       keyName: property
       relativeUrl: false
+    - name: 'twitter:image'
+      value: images/Classical-2D-floorplanning-data-structures-left-and-their-3D.png
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
