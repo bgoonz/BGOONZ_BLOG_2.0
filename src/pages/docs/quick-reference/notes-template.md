@@ -73,13 +73,6 @@ template: docs
 
 ## Main Notes:
 
-![](images/md-cheat-sheet.PNG)
-
-```html
-```
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
-
 ```js
 ```
 
@@ -408,6 +401,8 @@ Some text to show that the reference links can follow later.
 <a name="images"/>
 
 ## Images
+
+![](images/md-cheat-sheet-42411273.PNG)
 
 ```no-highlight
 Here's our logo (hover to see the title text):
