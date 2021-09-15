@@ -368,7 +368,7 @@
                     {
                         "label": "Python Docs",
                         "url": "https://bryan-guner.gitbook.io/datastructures-in-pytho/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
