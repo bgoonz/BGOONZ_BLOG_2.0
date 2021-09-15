@@ -242,7 +242,7 @@ sections:
       - label: Collaborate
         url: >-
           https://webdevhub.jetbrains.space/oauth/auth/invite/419dd305ba717a392a02aa5b4e41e09c
-        style: link
+        style: primary
         icon_class: dev
         new_window: false
         no_follow: false
