@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Quick Links
 weight: 0
 excerpt: lorem-ipsum
 seo:
