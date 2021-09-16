@@ -9,7 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-## Lorem ipsum
+## Callstack Visualizer
 
 
 <iframe src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
