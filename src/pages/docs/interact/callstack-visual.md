@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Callstack Visualizer
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Callstack Visualizer
 seo:
   title: ''
   description: ''
