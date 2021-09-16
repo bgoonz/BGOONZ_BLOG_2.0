@@ -277,7 +277,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "Contact",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
