@@ -9,9 +9,18 @@ seo:
   extra: []
 template: docs
 ---
-## Lorem ipsum
+# Gitbook Websites:
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+*   [Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/)
 
-- Lorem ipsum
-- dolor sit amet
+*   [General](https://bryan-guner.gitbook.io/web-dev-hub-docs/)
+
+*   [Blockchain & NFTs](https://bryan-guner.gitbook.io/solidarity-blockchain-nfts/)
+
+*   [React](https://bryan-guner.gitbook.io/mynotes/)
+
+
+
+# Sites I Wish To Revisit:
+
+*   [Hasura](https://hasura.io/learn/)
