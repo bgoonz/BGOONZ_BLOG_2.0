@@ -2,18 +2,19 @@
 title: JavaScript Asynchronous Programming and Callbacks
 weight: 0
 excerpt: >-
-  Computers are asynchronous by design.Asynchronous means that things can happen
-  independently of the main program flow.
+    Computers are asynchronous by design.Asynchronous means that things can happen
+    independently of the main program flow.
 seo:
-  title: JavaScript Asynchronous Programming and Callbacks
-  description: >-
-    JavaScript is synchronous by default, and is single threaded. This means
-    that code cannot create new threads and run in parallel. Find out what
-    asynchronous code means and how it looks like
-  robots: []
-  extra: []
+    title: JavaScript Asynchronous Programming and Callbacks
+    description: >-
+        JavaScript is synchronous by default, and is single threaded. This means
+        that code cannot create new threads and run in parallel. Find out what
+        asynchronous code means and how it looks like
+    robots: []
+    extra: []
 template: docs
 ---
+
 ## Asynchronicity in Programming Languages
 
 Computers are asynchronous by design.
@@ -22,7 +23,7 @@ Asynchronous means that things can happen independently of the main program flow
 
 In the current consumer computers, every program runs for a specific time slot and then it stops its execution to let another program continue their execution. This thing runs in a cycle so fast that it's impossible to notice. We think our computers run many programs simultaneously, but this is an illusion (except on multiprocessor machines).
 
-Programs internally use *interrupts*, a signal that's emitted to the processor to gain the attention of the system.
+Programs internally use _interrupts_, a signal that's emitted to the processor to gain the attention of the system.
 
 I won't go into the internals of this, but just keep in mind that it's normal for programs to be asynchronous and halt their execution until they need attention, allowing the computer to execute other things in the meantime. When a program is waiting for a response from the network, it cannot halt the processor until the request finishes.
 
@@ -145,9 +146,9 @@ Here, the action is performed one line at a time. So, line 1 and 2 will be execu
 
 ## What is a Call Stack?
 
-![A GIF explaining the working of a Stack Data Structure.](https://miro.medium.com/freeze/max/27/1\*fOsu7oCcYn-HpVREkMD8sg.gif?q=20)
+![A GIF explaining the working of a Stack Data Structure.](https://miro.medium.com/freeze/max/27/1*fOsu7oCcYn-HpVREkMD8sg.gif?q=20)
 
-![A GIF explaining the working of a Stack Data Structure.](https://miro.medium.com/max/360/1\*fOsu7oCcYn-HpVREkMD8sg.gif)
+![A GIF explaining the working of a Stack Data Structure.](https://miro.medium.com/max/360/1*fOsu7oCcYn-HpVREkMD8sg.gif)
 
 A Stack Data Structure
 
@@ -162,9 +163,9 @@ Output:\
 
 In the beginning of the execution of the code by the engine, the call stack will be empty. Then, the following will happen:
 
-![](https://miro.medium.com/max/27/1\*CrYp7k87He63XLd0qLYrCw.png?q=20)
+![](https://miro.medium.com/max/27/1*CrYp7k87He63XLd0qLYrCw.png?q=20)
 
-![](https://miro.medium.com/max/630/1\*CrYp7k87He63XLd0qLYrCw.png)
+![](https://miro.medium.com/max/630/1*CrYp7k87He63XLd0qLYrCw.png)
 
 Working of the Call Stack during program execution.
 
@@ -174,11 +175,9 @@ Since these all are *Blocking Statements*, the are pushed into the stack and ar
 
 To further understand the working of a Call Stack, observe the execution of the below code:
 
-![Using animation to explain how the Call Stack actually executes the code one statement at a time.](https://miro.medium.com/freeze/max/27/1\*FB2VAMUAMVJpzxMBkGDR7Q.gif?q=20)
+![Using animation to explain how the Call Stack actually executes the code one statement at a time.](https://miro.medium.com/freeze/max/27/1*FB2VAMUAMVJpzxMBkGDR7Q.gif?q=20)
 
-![Using animation to explain how the Call Stack actually executes the code one statement at a time.](https://miro.medium.com/max/360/1\*FB2VAMUAMVJpzxMBkGDR7Q.gif)
-
-
+![Using animation to explain how the Call Stack actually executes the code one statement at a time.](https://miro.medium.com/max/360/1*FB2VAMUAMVJpzxMBkGDR7Q.gif)
 
 ## Why is having Single Thread considered a problem then?
 
@@ -213,7 +212,7 @@ If you are able to follow till now, this means you are aware about something kno
 
 The reason is, that the browser is more than just the runtime. To support the Runtime, the browser also provides WebAPIs, which are effectively like threads but we can't access them like normal threads, instead we can make calls to them to achieve some functionality. In case of Node.js, instead of WebAPIs, we have C++ APIs where all the threading and stuff is hidden from us at C++ side. Along with WebAPIs, there is another thing involved in this process, which is called *"Event (or Callback) Queue"*. Collectively, all these components with the help of \*"Event Loop" \*helps JavaScript perform asynchronous opetations. Consider the below diagram:
 
-![A Diagram explaining the structure of the Event Loop.](https://miro.medium.com/max/630/1\*eiYb9y9q_dODrq3XLNEZMQ.png)
+![A Diagram explaining the structure of the Event Loop.](https://miro.medium.com/max/630/1*eiYb9y9q_dODrq3XLNEZMQ.png)
 
 Event Loop in JavaScript--- <https://medium.com/@aditya.shukla278>
 
@@ -224,21 +223,19 @@ Event Loop in JavaScript--- <https://medium.com/@aditya.shukla278>
 
 That is too much of words, I bet you must be sleepy by now. Consider the below code to understand the working of the Event Loop.
 
-![Explaining the working of the Event Loop using Animated GIF.](https://miro.medium.com/freeze/max/27/1\*IneExnDz3O-NAk40aY3vKQ.gif?q=20)
+![Explaining the working of the Event Loop using Animated GIF.](https://miro.medium.com/freeze/max/27/1*IneExnDz3O-NAk40aY3vKQ.gif?q=20)
 
-![Explaining the working of the Event Loop using Animated GIF.](https://miro.medium.com/max/630/1\*IneExnDz3O-NAk40aY3vKQ.gif)
-
-
+![Explaining the working of the Event Loop using Animated GIF.](https://miro.medium.com/max/630/1*IneExnDz3O-NAk40aY3vKQ.gif)
 
 > Point to be noted here: Event loop will only add the callback from the event queue to the call stack when it finds the call stack empty. If JavaScript's main thread is busy executing a long running function, it would keep the callback in the event queue. That is why it is important that we make sure that the main call stack does not have long running functions which may block it, as that time browser would not be able to respond to user events as they would be stuck in event queue.
 
-![](https://miro.medium.com/max/612/1\*yfN8N5u3n2z9-dD6cxUpaw.jpeg)
+![](https://miro.medium.com/max/612/1*yfN8N5u3n2z9-dD6cxUpaw.jpeg)
 
 ## To Summarize the above topics ---
 
-*   We understood that JavaScript is a \*Single Threaded \*language, which basically means that the statements are executed one at a time.
-*   These statements block the execution of the immediate next statements until they are completed executed. Because of this reason they are also known as *Blocking Statements.*
-*   The statements are executed using a \*Call Stack. \*A statement which has to be executed, it is pushed into the stack, executed, and then popped out of the stack. All the nested/recurring function calls are stacked on top of each other.
-*   An *Event loop* is browser's mechanism to perform *non-blocking* operations by providing WebAPIs (setTimeout, setInterval, etc.) which are capable of maintaining callback references in memory.
-*   The callbacks are then added to event queue.
-*   Finally. the *Event loop* pushes the callback back to the \*Call Stack *from the E*vent queue \*when the call stack is empty. Here the callback is executed.
+-   We understood that JavaScript is a \*Single Threaded \*language, which basically means that the statements are executed one at a time.
+-   These statements block the execution of the immediate next statements until they are completed executed. Because of this reason they are also known as *Blocking Statements.*
+-   The statements are executed using a \*Call Stack. \*A statement which has to be executed, it is pushed into the stack, executed, and then popped out of the stack. All the nested/recurring function calls are stacked on top of each other.
+-   An *Event loop* is browser's mechanism to perform *non-blocking* operations by providing WebAPIs (setTimeout, setInterval, etc.) which are capable of maintaining callback references in memory.
+-   The callbacks are then added to event queue.
+-   Finally. the *Event loop* pushes the callback back to the \*Call Stack *from the E*vent queue \*when the call stack is empty. Here the callback is executed.

@@ -3,15 +3,16 @@ title: Web Standards Checklist
 weight: 0
 excerpt: (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and *pursue best practices* (valid code, accessible code, semantically correct code, user-friendly URLs etc).
 seo:
-  title: 'Web Standards Checklist'
-  description: 'as an aid for developers who are interested in moving towards web standards'
-  robots: []
-  extra: []
+    title: 'Web Standards Checklist'
+    description: 'as an aid for developers who are interested in moving towards web standards'
+    robots: []
+    extra: []
 template: docs
 ---
+
 ## Web Standards Checklist
 
-The term web standards can mean different things to different people. For some, it is '*table-free sites*', for others it is '*using valid code*'. However, web standards are much broader than that. A site built to web standards should *adhere to standards* (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and *pursue best practices* (valid code, accessible code, semantically correct code, user-friendly URLs etc).
+The term web standards can mean different things to different people. For some, it is '_table-free sites_', for others it is '_using valid code_'. However, web standards are much broader than that. A site built to web standards should *adhere to standards* (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and *pursue best practices* (valid code, accessible code, semantically correct code, user-friendly URLs etc).
 
 In other words, a site built to web standards should ideally be *lean, clean, CSS-based, accessible, usable and search engine friendly*.
 
@@ -82,7 +83,7 @@ This is a guide that can be used:
 
 > A doctype (short for 'document type declaration') informs the validator which version of (X)HTML you're using, and must appear at the very top of every web page. Doctypes are a key component of compliant web pages: your markup and CSS won't validate without them.
 >
-> *[Fix your site with the right doctype](http://www.alistapart.com/articles/doctype/)*
+> _[Fix your site with the right doctype](http://www.alistapart.com/articles/doctype/)_
 
 More:
 
@@ -94,7 +95,7 @@ More:
 
 > If a user agent (eg. a browser) is unable to detect the character encoding used in a Web document, the user may be presented with unreadable text. This information is particularly important for those maintaining and extending a multilingual site, but  declaring the character encoding of the document is important for anyone producing XHTML/HTML or CSS.
 >
-> *[Tutorial: Character sets & encodings in XHTML, HTML and CSS](http://www.w3.org/International/tutorials/tutorial-char-enc/)*
+> _[Tutorial: Character sets & encodings in XHTML, HTML and CSS](http://www.w3.org/International/tutorials/tutorial-char-enc/)_
 
 More:
 
@@ -112,7 +113,7 @@ More:
 
 > You need to make sure that there aren't any errors in either your HTML or your CSS, since mistakes in either place can result in botched document appearance.
 >
-> *[Help! My CSS Isn't Working!](http://www.meyerweb.com/eric/articles/webrev/199904.html)*
+> _[Help! My CSS Isn't Working!](http://www.meyerweb.com/eric/articles/webrev/199904.html)_
 
 More:
 
@@ -122,7 +123,7 @@ More:
 
 > Basically, hacks come down to personal choice, the amount of knowledge you have of workarounds, the specific design you are trying to achieve.
 >
-> *[Standard Hacks?](http://www.mail-archive.com/wsg@webstandardsgroup.org/msg05823.html)*
+> _[Standard Hacks?](http://www.mail-archive.com/wsg@webstandardsgroup.org/msg05823.html)_
 
 More:
 
@@ -134,7 +135,7 @@ More:
 
 > I've noticed that developers learning new skills often end up with good CSS but poor XHTML. Specifically, the HTML code tends to be full of unnecessary divs and ids. This results in fairly meaningless HTML and bloated style sheets.
 >
-> *[Markup tactics](http://www.clagnut.com/blog/228/)*
+> _[Markup tactics](http://www.clagnut.com/blog/228/)_
 
 #### 1.7 Is the code well structured?
 
@@ -156,7 +157,7 @@ More:
 
 > Don't make me wait... That's the message users give us in survey after survey. Even broadband users can suffer the slow-loading blues.
 >
-> *[Speed Up Your Site: Web Site Optimization](http://www.websiteoptimization.com/speed/)*
+> _[Speed Up Your Site: Web Site Optimization](http://www.websiteoptimization.com/speed/)_
 
 #### 1.10 Does the site have JavaScript errors?
 
@@ -168,7 +169,7 @@ Internet Explore for Windows allows you to turn on a debugger that will pop up a
 
 > Use style sheets to control layout and presentation
 >
-> *[Web Content Accessibility Guidelines 1.0 -- checkpoint 3.3](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets)*
+> _[Web Content Accessibility Guidelines 1.0 -- checkpoint 3.3](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets)_
 
 #### 2.2 Are all decorative images in the CSS, or do they appear in the (X)HTML?
 
@@ -180,13 +181,13 @@ Internet Explore for Windows allows you to turn on a debugger that will pop up a
 
 > Provide a text equivalent for every non-text element
 >
-> *[Web Content Accessibility Guidelines -- checkpoint 1.1](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent)*
+> _[Web Content Accessibility Guidelines -- checkpoint 1.1](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent)_
 
 #### 3.2 Does the site use relative units rather than absolute units for text size?
 
 > Use relative rather than absolute units in markup language attribute values and style sheet property values'
 >
-> *[Web Content Accessibility Guidelines -- checkpoint 3.4](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-relative-units)*
+> _[Web Content Accessibility Guidelines -- checkpoint 3.4](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-relative-units)_
 
 More:
 
@@ -201,21 +202,21 @@ Try this simple test. Look at your website in a browser that supports easy incre
 
 > A method shall be provided that permits users to skip repetitive navigation links.
 >
-> *[Section 508](http://www.section508.gov/index.cfm?FuseAction=Content&ID=12)*
+> _[Section 508](http://www.section508.gov/index.cfm?FuseAction=Content&ID=12)_
 
 > Group related links, identify the group (for user agents), and, until user agents do so, provide a way to bypass the group
 >
-> *[Web Content Accessibility Guidelines -- checkpoint 13.6](http://www.w3.org/TR/WCAG10-TECHS/#tech-group-links)*
+> _[Web Content Accessibility Guidelines -- checkpoint 13.6](http://www.w3.org/TR/WCAG10-TECHS/#tech-group-links)_
 
 > ...blind visitors are not the only ones inconvenienced by too many links in a navigation area. Recall that a mobility-impaired person with poor adaptive technology might be stuck tabbing through that morass.
 >
-> *[Keep them visible!](http://joeclark.org/book/sashay/serialization/Chapter08.html#h4-2020)*
+> _[Keep them visible!](http://joeclark.org/book/sashay/serialization/Chapter08.html#h4-2020)_
 
 #### 3.5 Does the site use accessible forms?
 
 > Forms aren't the easiest of things to use for people with disabilities. Navigating around a page with written content is one thing, hopping between form fields and inputting information is another
 >
-> *[Accessible forms](http://www.htmldog.com/guides/htmladvanced/forms/)*
+> _[Accessible forms](http://www.htmldog.com/guides/htmladvanced/forms/)_
 
 More:
 
@@ -226,7 +227,7 @@ More:
 
 > For data tables, identify row and column headers... For data tables that have two or more logical levels of row or column headers, use markup to associate data cells and header cells.
 >
-> *[Web Content Accessiblity Guidelines -- checkpoint 5.1](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-headers)*
+> _[Web Content Accessiblity Guidelines -- checkpoint 5.1](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-headers)_
 
 More:
 
@@ -238,7 +239,7 @@ More:
 
 > Ensure that foreground and background colour combinations provide sufficient contrast when viewed by someone having colour deficits
 >
-> *[Web Content Accessibilty Guidelines -- checkpoint 2.2](http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-color-contrast)*
+> _[Web Content Accessibilty Guidelines -- checkpoint 2.2](http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-color-contrast)_
 
 More:
 
@@ -248,7 +249,7 @@ More:
 
 > Ensure that all information conveyed with colour is also available without colour, for example from context or markup
 >
-> *[Web Content Accessibilty Guidelines -- checkpoint 2.1](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-convey)*
+> _[Web Content Accessibilty Guidelines -- checkpoint 2.1](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-convey)_
 
 There are basically three types of colour deficiency; Deuteranope (a form of red/green colour deficit), Protanope (another form of red/green colour deficit) and Tritanope (a blue/yellow deficit- very rare).
 
@@ -265,7 +266,7 @@ Users with reduced motor skills may find dropdown menus hard to use if responsiv
 
 > Link text should be meaningful enough to make sense when read out of context -- either on its own or as part of a sequence of links. Link text should also be terse.
 >
-> *[Web Content Accessibility Guidelines 1.0 -- checkpoint 13.1](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links)*
+> _[Web Content Accessibility Guidelines 1.0 -- checkpoint 13.1](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links)_
 
 ### 4\. Accessibility for devices
 
@@ -293,7 +294,7 @@ More:
 
 > You can take any (X)HTML document and simply style it for print, without having to touch the markup.
 >
-> *[Going to print](http://www.alistapart.com/articles/goingtoprint/)*
+> _[Going to print](http://www.alistapart.com/articles/goingtoprint/)_
 
 More:
 
@@ -307,7 +308,7 @@ This is a hard one to deal with until hand held devices consistently support the
 
 > Metadata is machine understandable information for the web
 >
-> *[W3C -- Metadata and Resource Description](http://www.w3.org/Metadata/)*
+> _[W3C -- Metadata and Resource Description](http://www.w3.org/Metadata/)_
 
 Metadata is structured information that is created specifically to describe another resource. In other words, metadata is 'data about data'.
 
@@ -321,37 +322,37 @@ It is a common assumption amongst developers that average screen sizes are incre
 
 > Organise and prioritise the contents of a page by using size, prominence and content relationships
 >
-> *[Create a Clear Visual Hierarchy](http://www.great-web-design-tips.com/web-site-design/165.html)*
+> _[Create a Clear Visual Hierarchy](http://www.great-web-design-tips.com/web-site-design/165.html)_
 
 #### 5.2 Are heading levels easy to distinguish?
 
 > Use header elements to convey document structure and use them according to specification
 >
-> *[Web Content Accessibility Guidelines 1.0 -- checkpoint 3.5](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings)*
+> _[Web Content Accessibility Guidelines 1.0 -- checkpoint 3.5](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings)_
 
 #### 5.3 Is the site's navigation easy to understand?
 
 > Your navigation system should give your visitor a clue as to what page of the site they are currently on and where they can go next.
 >
-> *[Design Tutorial -- Navigation](http://www.1stsitefree.com/design_nav.htm)*
+> _[Design Tutorial -- Navigation](http://www.1stsitefree.com/design_nav.htm)_
 
 #### 5.4 Is the site's navigation consistent?
 
 > If each page on your site has a consistent style of presentation, visitors will find it easier to navigate between pages and find information
 >
-> *[Juicy studios -- Navigation](http://www.juicystudio.com/tutorial/accessibility/navigation.asp)*
+> _[Juicy studios -- Navigation](http://www.juicystudio.com/tutorial/accessibility/navigation.asp)_
 
 #### 5.5 Does the site use consistent and appropriate language?
 
 > The use of clear and simple language promotes effective communication. Trying to come across as articulate can be as difficult to read as poorly written grammar, especially if the language used isn't the visitor's primary language.
 >
-> *[Clear language](http://www.juicystudio.com/tutorial/accessibility/clear.asp)*
+> _[Clear language](http://www.juicystudio.com/tutorial/accessibility/clear.asp)_
 
 #### 5.6 Does the site have a sitemap page and contact page? Are they  easy to find?
 
 > Most site maps fail to convey multiple levels of the site's information architecture. In usability tests, users often overlook site maps or can't find them. Complexity is also a problem: a map should be a map, not a navigational challenge of its own.
 >
-> *[Site Map Usability](http://www.useit.com/alertbox/20020106.html)*
+> _[Site Map Usability](http://www.useit.com/alertbox/20020106.html)_
 
 #### 5.7 For large sites, is there a search tool?
 
@@ -365,13 +366,13 @@ Some users like to go back to a site's home page after navigating to content wit
 
 > To maximise the [perceived affordance](http://www.jnd.org/dn.mss/affordances-and-design.html) of clickability, colour and underline the link text. Users shouldn't have to guess or scrub the page to find out where they can click.
 >
-> *[Guidelines for Visualizing Links](http://www.useit.com/alertbox/20040510.html)*
+> _[Guidelines for Visualizing Links](http://www.useit.com/alertbox/20040510.html)_
 
 #### 5.10 Are visited links clearly defined?
 
 > Most important, knowing which pages they've already visited frees users from unintentionally revisiting the same pages over and over again.
 >
-> *[Change the Color of Visited Links](http://www.useit.com/alertbox/20040503.html)*
+> _[Change the Color of Visited Links](http://www.useit.com/alertbox/20040503.html)_
 
 ### 6\. Site management
 
@@ -379,17 +380,17 @@ Some users like to go back to a site's home page after navigating to content wit
 
 > You've requested a page -- either by typing a URL directly into the address bar or clicking on an out-of-date link and you've found yourself in the middle of cyberspace nowhere. A user-friendly website will give you a helping hand while many others will simply do nothing, relying on the browser's built-in ability to explain what the problem is.
 >
-> *[The perfect 404](http://www.alistapart.com/articles/perfect404/)*
+> _[The perfect 404](http://www.alistapart.com/articles/perfect404/)_
 
 #### 6.2 Does the site use friendly URLs?
 
 > Most search engines (with a few exceptions -- namely Google) will not index any pages that have a question mark or other character (like an ampersand or equals sign) in the URL... what good is a site if no one can find it?
 >
-> *[Search Engine-Friendly URLs](http://www.sitepoint.com/article/search-engine-friendly-urls)*
+> _[Search Engine-Friendly URLs](http://www.sitepoint.com/article/search-engine-friendly-urls)_
 
 > One of the worst elements of the web from a user interface standpoint is the URL. However, if they're short, logical, and self-correcting, URLs can be acceptably usable
 >
-> *[How to make URLs user-friendly](http://www.merges.net/theory/20010305.html)*
+> _[How to make URLs user-friendly](http://www.merges.net/theory/20010305.html)_
 
 More:
 
@@ -404,6 +405,6 @@ While this is not critical, and in some cases is not even possible, it is always
 
 > A Favicon is a multi-resolution image included on nearly all professionally developed sites. The Favicon allows the webmaster to further promote their site, and to create a more customized appearance within a visitor's browser
 >
-> *[Favicon.com](http://www.favicon.com/)*
+> _[Favicon.com](http://www.favicon.com/)_
 
 Favicons are definitely not critical. However, if they are not present, they can cause 404 errors in your logs (site statistics). Browsers like IE will request them from the server when a site is bookmarked. If a favicon isn't available, a 404 error may be generated. Therefore, having a favicon could cut down on favicon specific 404 errors. The same is true of a 'robots.txt' file.

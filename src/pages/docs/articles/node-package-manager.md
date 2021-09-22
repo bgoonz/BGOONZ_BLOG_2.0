@@ -3,37 +3,37 @@ title: Sorting Algorithms
 weight: 0
 excerpt: Sorting Algorithms
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra:
-    - name: 'og:title'
-      value: Sorting Algorithms
-      keyName: property
-      relativeUrl: false
-    - name: 'og:description'
-      value: >-
-        We are creating the same number of variables with an exact size,
-        independent of our input. No new arrays are created.
-      keyName: property
-      relativeUrl: false
-    - name: 'og:type'
-      value: website
-      keyName: property
-      relativeUrl: false
-    - name: 'twitter:image'
-      value: images/Classical-2D-floorplanning-data-structures-left-and-their-3D.png
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:card'
-      value: sorting algos
-      keyName: name
-      relativeUrl: false
-    - name: 'og:image'
-      value: images/image (9).png
-      keyName: property
-      relativeUrl: true
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra:
+        - name: 'og:title'
+          value: Sorting Algorithms
+          keyName: property
+          relativeUrl: false
+        - name: 'og:description'
+          value: >-
+              We are creating the same number of variables with an exact size,
+              independent of our input. No new arrays are created.
+          keyName: property
+          relativeUrl: false
+        - name: 'og:type'
+          value: website
+          keyName: property
+          relativeUrl: false
+        - name: 'twitter:image'
+          value: images/Classical-2D-floorplanning-data-structures-left-and-their-3D.png
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: sorting algos
+          keyName: name
+          relativeUrl: false
+        - name: 'og:image'
+          value: images/image (9).png
+          keyName: property
+          relativeUrl: true
+    type: stackbit_page_meta
 template: docs
 ---
 

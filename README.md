@@ -23,9 +23,8 @@
 
 ![Demo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/iframes.gif?raw=true)
 
-## [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)    
-    
-    
+## [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+
 # Homepage
 
 ![Homepage](./static/images/bgoonzblog20.png)
@@ -1310,7 +1309,9 @@ export default class Body extends React.Component {
     }
 }
 ```
+
     </details>
+
 ---
 
 <details>
@@ -6709,10 +6710,8 @@ Prism.languages.markup.tag.addAttribute(
 <details>
 ```
 
-
-
-
 ---
+
 ---
 
 ## Dependencies:
@@ -6878,6 +6877,3 @@ Prism.languages.markup.tag.addAttribute(
 [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)](https://github.com/babel)[babel / babel ](https://github.com/babel/babel)@babel/core
 
 `7.12.3`
-
-
-
