@@ -2,82 +2,82 @@
 title: Notes Template
 weight: 2
 seo:
-  title: Gatsby Plugins For This Sites Content Model
-  description: This is my markdown notes tempate
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Gatsby Plugins For This Sites Content Model
-      keyName: property
-    - name: 'og:description'
-      value: This is the Gatsby Plugins For This Sites Content Model page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Gatsby Plugins For This Sites Content Model
-    - name: 'twitter:description'
-      value: This is the Gatsby Plugins For This Sites Content Model page
+    title: Gatsby Plugins For This Sites Content Model
+    description: This is my markdown notes tempate
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Gatsby Plugins For This Sites Content Model
+          keyName: property
+        - name: 'og:description'
+          value: This is the Gatsby Plugins For This Sites Content Model page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Gatsby Plugins For This Sites Content Model
+        - name: 'twitter:description'
+          value: This is the Gatsby Plugins For This Sites Content Model page
 template: docs
 ---
+
 ![](images/0001-76d89ef6.jpg)
-
-
 
 # Title
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
 
-*   Description:
+-   Description:
     > /\_ Description here \_/
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
 
 ## ToC:
 
-*   [Title](#title)
-    *   [ToC:](#toc)
-    *   [Main Notes:](#main-notes)
-    *   [Resource Links:](#resource-links)
-    *   [10 X 10 Table](#10-x-10-table)
-    *   [Headers](#headers)
-*   [H1](#h1)
-    *   [H2](#h2)
-        *   [H3](#h3)
-            *   [H4](#h4)
-                *   [H5](#h5)
-                    *   [H6](#h6)
-*   [Alt-H1](#alt-h1)
-    *   [Alt-H2](#alt-h2)
-    *   [Emphasis](#emphasis)
-    *   [Lists](#lists)
-    *   [Links](#links)
-    *   [Images](#images)
-    *   [Code and Syntax Highlighting](#code-and-syntax-highlighting)
-    *   [Tables](#tables)
-    *   [Blockquotes](#blockquotes)
-    *   [Inline HTML](#inline-html)
-    *   [Horizontal Rule](#horizontal-rule)
-    *   [Line Breaks](#line-breaks)
-    *   [YouTube Videos](#youtube-videos)
-*   [This is an H1](#this-is-an-h1)
-    *   [This is an H2](#this-is-an-h2)
-        *   [This is an H3](#this-is-an-h3)
-            *   [This is an H4](#this-is-an-h4)
-    *   [Quoting](#quoting)
-    *   [Unordered Lists](#unordered-lists)
-    *   [Ordered Lists](#ordered-lists)
-    *   [Video Embeds](#video-embeds)
-    *   [Code Blocks](#code-blocks)
-    *   [Tables](#tables-1)
+-   [Title](#title)
+    -   [ToC:](#toc)
+    -   [Main Notes:](#main-notes)
+    -   [Resource Links:](#resource-links)
+    -   [10 X 10 Table](#10-x-10-table)
+    -   [Headers](#headers)
+-   [H1](#h1)
+    -   [H2](#h2)
+        -   [H3](#h3)
+            -   [H4](#h4)
+                -   [H5](#h5)
+                    -   [H6](#h6)
+-   [Alt-H1](#alt-h1)
+    -   [Alt-H2](#alt-h2)
+    -   [Emphasis](#emphasis)
+    -   [Lists](#lists)
+    -   [Links](#links)
+    -   [Images](#images)
+    -   [Code and Syntax Highlighting](#code-and-syntax-highlighting)
+    -   [Tables](#tables)
+    -   [Blockquotes](#blockquotes)
+    -   [Inline HTML](#inline-html)
+    -   [Horizontal Rule](#horizontal-rule)
+    -   [Line Breaks](#line-breaks)
+    -   [YouTube Videos](#youtube-videos)
+-   [This is an H1](#this-is-an-h1)
+    -   [This is an H2](#this-is-an-h2)
+        -   [This is an H3](#this-is-an-h3)
+            -   [This is an H4](#this-is-an-h4)
+    -   [Quoting](#quoting)
+    -   [Unordered Lists](#unordered-lists)
+    -   [Ordered Lists](#ordered-lists)
+    -   [Video Embeds](#video-embeds)
+    -   [Code Blocks](#code-blocks)
+    -   [Tables](#tables-1)
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
 
 ## Main Notes:
 
 ```js
+
 ```
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
@@ -290,11 +290,11 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 ```
 
-Emphasis, aka italics, with *asterisks* or *underscores*.
+Emphasis, aka italics, with _asterisks_ or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or **underscores**.
 
-Combined emphasis with **asterisks and *underscores***.
+Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
 
@@ -326,7 +326,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 1.  First ordered list item
 2.  Another item
 
-*   Unordered sub-list.
+-   Unordered sub-list.
 
 1.  Actual numbers don't matter, just that it's a number
 2.  Ordered sub-list
@@ -338,15 +338,15 @@ Strikethrough uses two tildes. ~~Scratch this.~~
     Note that this line is separate, but within the same paragraph.\
     (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 
-*   Unordered list can use asterisks
+-   Unordered list can use asterisks
 
 <!---->
 
-*   Or minuses
+-   Or minuses
 
 <!---->
 
-*   Or pluses
+-   Or pluses
 
 <a name="links"/>
 
@@ -397,9 +397,7 @@ example.com (but not on Github, for example).
 Some text to show that the reference links can follow later.
 
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
-
 [1]: http://slashdot.org
-
 [link text itself]: http://www.reddit.com
 
 <a name="images"/>
@@ -423,18 +421,18 @@ Reference-style:
 Here's our logo (hover to see the title text):
 
 Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
 
 Reference-style:
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
 
 <a name="code"/>
 
 ## Code and Syntax Highlighting
 
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and _Markdown Here_ -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. _Markdown Here_ supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
 ```no-highlight
 Inline `code` has `back-ticks around` it.
@@ -477,7 +475,7 @@ print s
 
 ## Tables
 
-Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
+Tables aren't part of the core Markdown spec, but they are part of GFM and _Markdown Here_ supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
 
 ```no-highlight
 Colons can be used to align columns.
@@ -510,7 +508,7 @@ There must be at least 3 dashes separating each header cell. The outer pipes (|)
 
 | Markdown | Less      | Pretty     |
 | -------- | --------- | ---------- |
-| *Still*  | `renders` | **nicely** |
+| _Still_  | `renders` | **nicely** |
 | 1        | 2         | 3          |
 
 <a name="blockquotes"/>
@@ -531,7 +529,7 @@ Quote break.
 
 Quote break.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
 
 <a name="html"/>
 
@@ -581,11 +579,11 @@ Three or more...
 
 Hyphens
 
-***
+---
 
 Asterisks
 
-***
+---
 
 Underscores
 
@@ -606,12 +604,12 @@ Here are some things to try out:
 
 Here's a line for us to start with.
 
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+This line is separated from the one above by two newlines, so it will be a _separate paragraph_.
 
 This line is also begins a separate paragraph, but...\
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
 
-(Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
+(Technical note: _Markdown Here_ uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
 <a name="videos"/>
 
@@ -631,7 +629,7 @@ Or, in pure Markdown, but losing the image sizing and border:
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 ```
 
-**This is a paragraph**. Pellentesque habitant morbi *tristique senectus et netus et malesuada* fames ac turpis egestas. Vestibulum [tortor quam](https://www.google.com), feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit <mark>amet est et sapien ullamcorper</mark> pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+**This is a paragraph**. Pellentesque habitant morbi _tristique senectus et netus et malesuada_ fames ac turpis egestas. Vestibulum [tortor quam](https://www.google.com), feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit <mark>amet est et sapien ullamcorper</mark> pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
 
 # This is an H1
 
@@ -661,11 +659,11 @@ Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar
 
 ## Unordered Lists
 
-*   Donec non tortor in arcu mollis feugiat
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-*   Donec id eros eget quam aliquam gravida
-*   Vivamus convallis urna id felis
-*   Nulla porta tempus sapien
+-   Donec non tortor in arcu mollis feugiat
+-   Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+-   Donec id eros eget quam aliquam gravida
+-   Vivamus convallis urna id felis
+-   Nulla porta tempus sapien
 
 ## Ordered Lists
 

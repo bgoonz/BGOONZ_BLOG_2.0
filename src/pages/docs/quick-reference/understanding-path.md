@@ -3,23 +3,16 @@ title: Understanding PATH
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 ### Understanding PATH
 
-
-
-
-
-
-
-
 ![](images/pypath.jpeg)
-
 
 ![](images/pypath2.PNG)
 
@@ -35,11 +28,11 @@ Through a process called rehashing, pyenv maintains shims in that directory to 
 
 Shims are lightweight executables that simply pass your command along to pyenv. So with pyenv installed, when you run, say, pip, your operating system will do the following:
 
-*   Search your PATH for an executable file named pip
+-   Search your PATH for an executable file named pip
 
-*   Find the pyenv shim named pip at the beginning of your PATH
+-   Find the pyenv shim named pip at the beginning of your PATH
 
-*   Run the shim named pip, which in turn passes the command along to pyenv
+-   Run the shim named pip, which in turn passes the command along to pyenv
 
 ### Choosing the Python Version
 
@@ -63,11 +56,11 @@ Each Python version is installed into its own directory under $(pyenv root)/ver
 
 For example, you might have these versions installed:
 
-*   $(pyenv root)/versions/2.7.8/
+-   $(pyenv root)/versions/2.7.8/
 
-*   $(pyenv root)/versions/3.4.2/
+-   $(pyenv root)/versions/3.4.2/
 
-*   $(pyenv root)/versions/pypy-2.4.0/
+-   $(pyenv root)/versions/pypy-2.4.0/
 
 As far as Pyenv is concerned, version names are simply directories under $(pyenv root)/versions.
 

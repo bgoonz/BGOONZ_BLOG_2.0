@@ -2,13 +2,14 @@
 title: README
 subtitle: for this website
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: page
 image: images/bgoonzblog20-a6a3bfc3.png
 ---
+
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
 ---
@@ -460,8 +461,6 @@ This page contains links that give the impression that some of the site contents
 -   [/docs/medium/social/](https://bgoonz-blog.netlify.app/docs/medium/social/)
 -   [/docs/medium/medium-links/](https://bgoonz-blog.netlify.app/docs/medium/medium-links/)
 -   [/docs/medium/](https://bgoonz-blog.netlify.app/docs/medium/)
-
-
 
 # Sitemap:
 
@@ -6823,6 +6822,7 @@ Prism.languages.markup.tag.addAttribute(
 
 <details>
 ```
+
 <br>
 <br>
 ---
