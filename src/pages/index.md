@@ -5,7 +5,7 @@ sections:
       type: section_hero
       title: 'I am a musician, electrical engineer & web developer'
       image: images/api-c99e353f761d318322c853c03ebcf21b.gif
-      content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[ ](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryans github activity graph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n  <div class="fb-save" data-uri="https://www.instagram.com/facebook/" data-size="large"></div> \n"
+      content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[ ](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryans github activity graph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n"
       actions:
           - label: Contact
             url: 'https://sidebar-blog.netlify.app/contact/'
@@ -137,7 +137,7 @@ sections:
             image_alt: nj-devils
             content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
             actions:
-                - label: njdevils
+                - label: lorem-ipsum
                   url: '#'
                   style: link
                   icon_class: dev
