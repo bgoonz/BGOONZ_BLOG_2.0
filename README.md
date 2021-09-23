@@ -1,5 +1,8 @@
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
+
+- [Privacy policy](https://codepen.io/bgoonz/pen/LYLJZrW)
+
 ---
 
 <div align="center">
@@ -21,7 +24,7 @@
 
 [![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
 
-![Demo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/iframes.gif?raw=true)
+
 
 ## [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
