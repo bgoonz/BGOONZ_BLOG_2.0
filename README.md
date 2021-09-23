@@ -1,5 +1,8 @@
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
+
+- [Privacy policy](https://codepen.io/bgoonz/pen/LYLJZrW)
+
 ---
 
 <div align="center">
