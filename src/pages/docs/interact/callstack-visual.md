@@ -9,6 +9,10 @@ seo:
     extra: []
 template: docs
 ---
+<script async src="//jsfiddle.net/bgoonz/tu3Lw57r/embed/result/dark/"></script>
+
+
+
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/MWbZoOa">
