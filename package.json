@@ -1,6 +1,6 @@
 {
-  "name": "stackbit-libris-theme",
-  "description": "Stackbit Libris Theme",
+  "name": "bgoonzblog20",
+  "description": "",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
@@ -35,5 +35,6 @@
     "react-script-tag": "1.1.2",
     "rehype-react": "3.0.2",
     "sprintf-js": "1.1.2"
-  }
+  },
+  "keywords": []
 }
