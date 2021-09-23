@@ -10,6 +10,17 @@ seo:
 template: docs
 ---
 
+<iframe height="300" style="width: 100%;" scrolling="no" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bgoonz/pen/MWbZoOa">
+  Linear vs Binary Search</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+
+
+
+
+
 ## Callstack Visualizer
 
 <iframe src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
