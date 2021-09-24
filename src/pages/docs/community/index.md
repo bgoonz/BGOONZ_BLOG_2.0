@@ -63,7 +63,7 @@ template: docs
 Message @bgooonz</a>
 
 <a class="twitter-follow-button"
-  href="https://twitter.com/TwitterDev">
+  href="https://twitter.com/bgooonz">
 Follow @bgooonz</a>
 
 
