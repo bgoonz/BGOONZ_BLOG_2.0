@@ -5,9 +5,11 @@
 
 ---
 
+<span align="center">
 
 ![QRCODE](./static/images/blog-qr.png)
 
+ </span>
 
 <div align="center">
     
