@@ -5,6 +5,10 @@
 
 ---
 
+
+![QRCODE](./static/images/blog-qr.png)
+
+
 <div align="center">
     
  
