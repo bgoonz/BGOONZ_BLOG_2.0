@@ -11,7 +11,11 @@
 ![](https://komarev.com/ghpvc/?username=bgoonz)
 
 # [WEBSITE](https://bgoonz-blog.netlify.app/)
-
+    
+    
+## [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/)
+    
+    
 # Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
 
 ## [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
