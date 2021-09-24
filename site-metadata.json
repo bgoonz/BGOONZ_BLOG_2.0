@@ -79,7 +79,7 @@
                     },
                     {
                         "label": "ds-algo",
-                        "url": "docs/articles/ds-algo-overview/",
+                        "url": "content/algo",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
