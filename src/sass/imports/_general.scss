@@ -1,7 +1,7 @@
 html {
     font-family: $font-primary;
     font-size: 110%;
-    zoom:0.9;
+    zoom: 0.9;
 }
 
 body {
@@ -18,7 +18,7 @@ a {
     color: $color-primary;
     text-decoration: underline;
 
-   -webkit-transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
 
     &:hover {
