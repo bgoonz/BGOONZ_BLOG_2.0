@@ -14,7 +14,7 @@
 <div align="center">
  
  
-## -[Community Profile](https://i.imgur.com/Vypoumi.png) 
+![Community Profile](https://i.imgur.com/Vypoumi.png) 
  
 # Google Lighthouse Report:
  
