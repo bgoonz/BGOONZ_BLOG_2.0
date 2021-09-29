@@ -12,6 +12,13 @@
  </span>
 
 <div align="center">
+ 
+ 
+# Google Lighthouse Report:
+ 
+ [![Edit clever-cloud-hj40i](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/clever-cloud-hj40i?autoresize=1&codemirror=1&fontsize=10&hidenavigation=1&theme=light&view=preview)
+ 
+ - [Sandbox](https://codesandbox.io/embed/clever-cloud-hj40i?autoresize=1&codemirror=1&fontsize=10&hidenavigation=1&theme=light&view=preview)
     
  
 ![](https://komarev.com/ghpvc/?username=bgoonz)
