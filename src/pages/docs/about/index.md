@@ -85,6 +85,9 @@ template: docs
 
 </div>
 
+<center>
+
+
 <details>
 
 <summary>About Me</summary>
