@@ -277,16 +277,6 @@
                 "type": "action_menu"
             },
             {
-                "label": "Contact",
-                "url": "contact/",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": false,
-                "subnav_links": []
-            },
-            {
                 "label": "External Nav",
                 "url": "https://bgoonz-blog-v3-0.netlify.app/",
                 "style": "primary",
