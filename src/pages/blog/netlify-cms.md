@@ -20,6 +20,10 @@ seo:
       value: Intro to Netlify CMS
       keyName: property
       relativeUrl: false
+    - name: 'twitter:card'
+      value: Intro to Netlify CMS
+      keyName: name
+      relativeUrl: false
 template: post
 thumb_image: images/netlify.svg
 image: images/netlify-26904b46.svg
