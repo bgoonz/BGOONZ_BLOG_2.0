@@ -7,6 +7,8 @@
 
 <span align="center">
 
+ [![](https://data.jsdelivr.com/v1/package/npm/lodash/badge)](https://www.jsdelivr.com/package/npm/lodash)
+ 
 ![QRCODE](./static/images/blog-qr.png)
 
  </span>
