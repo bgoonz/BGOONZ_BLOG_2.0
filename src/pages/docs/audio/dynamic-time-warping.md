@@ -1,9 +1,9 @@
 ---
-title: lorem-ipsum
+title: dynamic-time-warping
 weight: 0
-excerpt: lorem-ipsum
+excerpt: dynamic-time-warping
 seo:
-    title: ''
+    title: 'dynamic-time-warping'
     description: ''
     robots: []
     extra: []
