@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: History API
 weight: 0
 excerpt: lorem-ipsum
 seo:
