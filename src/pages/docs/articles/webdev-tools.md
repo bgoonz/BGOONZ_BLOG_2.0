@@ -9,13 +9,13 @@ seo:
   extra: []
 template: docs
 ---
-# What Are Web Development Tools?
+1.  What Are Web Development Tools?
 
 ##### **Client-side**Otherwise known as front-end web development, this refers to anything a user can see or engage with—an app or website are good examples. This is about providing a top-notch user experience and smooth interface (usually with a combination of HTML, CSS and various JavaScript libraries.**Server-side**Otherwise known as back-end web development, this refers to the stuff behind the scenes of apps and websites that users can't see. It's the frameworks, servers and databases that keep things running.Image Source: Paperform&#xA;&#xA;
 
 When people speak about web development tools (or devtools in the biz), they're usually referring to the apps and software that allows web developers to test and debug the code and interface of a website or web application.
 
-Technically, the term doesn't refer to tools that *actually help you *build a webpage or app*. *But that distinction isn't helpful. Web developers require a range of tools that go beyond debugging and testing—whether it be a remote collaboration tool like Slack, a design tool like Figma, or even just an online forum like [StackOverflow](https://stackoverflow.com/).
+Technically, the term doesn't refer to tools that \*actually help you *build a webpage or app*. \*But that distinction isn't helpful. Web developers require a range of tools that go beyond debugging and testing—whether it be a remote collaboration tool like Slack, a design tool like Figma, or even just an online forum like [StackOverflow](https://stackoverflow.com/).
 
 For that reason, we've gone beyond the traditional definition of devtools with the aim of giving a  realistic view of the kind of apps and software devs use in their day to day workflows. We think you'll find some familiar favourites, as well as some useful tools to add to your tech stack.
 
@@ -103,8 +103,6 @@ There is a bevy of appearance options, including the ability to customise fonts,
 
 VS Code is the text editor of choice for Dean McPherson, Paperform’s co-founder and resident code-geek. He uses the remote plugins for version control and to keep our global dev team working in the same virtual environment.
 
-
-
 ## Web Application Frameworks
 
 Web application frameworks (or just web frameworks) are software libraries that are designed to help you build web services, resources and APIs.
@@ -175,13 +173,11 @@ What sets it apart from other frameworks is that it uses C# instead of JavaScrip
 
 If you’re looking to learn NET then there are plenty of resources. Microsoft has plenty of [learning materials](https://dotnet.microsoft.com/learn/aspnet) and there’s an active [community on GitHub](https://github.com/dotnet?WT.mc_id=dotnet-35129-website) with over 100,000 people and 3,700 companies contributing.
 
-
-
 ## Front-End Frameworks
 
 Front-end frameworks (or “CSS frameworks”) are packages containing pre-written, standardised code for easy application. It’s kind of like a coding dictionary to help you quickly complete actions without having to come up with code yourself.
 
-Keep in mind that there is some crossover with tools we’ve previously covered. For example, according to the [State of JavaScript 2020](https://2020.stateofjs.com/en-US/technologies/javascript-flavors/)*, in the US, React, Angular and Vue *are the three most popular front-end frameworks.
+Keep in mind that there is some crossover with tools we’ve previously covered. For example, according to the [State of JavaScript 2020](https://2020.stateofjs.com/en-US/technologies/javascript-flavors/)\*, in the US, React, Angular and Vue \*are the three most popular front-end frameworks.
 
 Here are some other viable options:
 
@@ -217,14 +213,13 @@ It doesn’t have as many features as the other options on this list, but it doe
 
 ### 18. Svelte
 
-We love [Svelte](https://svelte.dev/) for two reasons. One, it just sounds awesome and two, it’s all about empowering folks to build their projects with *way less code, *which is something we’re passionate about here at Paperform.
+We love [Svelte](https://svelte.dev/) for two reasons. One, it just sounds awesome and two, it’s all about empowering folks to build their projects with \*way less code, \*which is something we’re passionate about here at Paperform.
 
 Technically, Svelte isn’t a framework or a library. It’s a “compiler”, and it’s gained quite a reputation in the web dev community for being one of the best frontend frameworks on the market. It’s lightweight, SEO-optimised and unlike tools like React or Vue, doesn’t require heavy browser processing.
 
 Svelte’s “killer app” is that is has no virtual Dom. This means there’s considerably less re-renders of the UI, leading to a lightning fast experience. Some devs will be put off by this, but it makes it an ideal option for beginners or smaller projects.
 
 ### 19. Ember
-
 
 [Ember.js](https://emberjs.com/) is an open-source JavaScript web framework released back in 2011. Since then it’s been adopted by a large chunk of the web dev community and it’s easy to see why—using it's simple and, whether you’re creating feature-rich apps or client-side websites, the user experience is seamless.
 
@@ -260,7 +255,7 @@ In terms of functionality, it’s definitely a more low-level solution. But if y
 
 In Britain, 'Git' is slang for someone you think is a bit stupid. But in the world of web development, Git is the name for the software used to track changes in file sets. Most of the time it’s used to help devs collaborate during software development.
 
-A Git *client *is the software you use to work with Git repositories, which can be either remote or locally stored. These allow you to make changes to your Git project (e.g. pushing changes and staging). There are a bunch of different Git clients available across various operating systems.
+A Git \*client \*is the software you use to work with Git repositories, which can be either remote or locally stored. These allow you to make changes to your Git project (e.g. pushing changes and staging). There are a bunch of different Git clients available across various operating systems.
 
 **💡Pro Tip:** Git is a command line interface and Git clients aren’t strictly necessary. It’s kind of like using a translator versus learning a language natively. GUIs don’t have all the same functionality that a command line client offers, which is why many web devs go that route instead.
 
@@ -302,7 +297,7 @@ When testing and building with web APIs it’s crucial to have reliable tools. H
 
 [Postman](https://www.postman.com/) is an API platform for building using APIs (duh) with features centred around simplifying the process and streamlining team collaboration. [They promise](https://www.postman.com/api-platform/) 5x faster development, 4x faster bug fixes and a whopping 10x more effective team collaboration.
 
-Do they back it up? The *15 million *developers that use Postman would say so. There are integrated tools for every stage of the API lifecycle, from design, mocking, testing and deploying all the way through to maintenance and deprecation.
+Do they back it up? The \*15 million \*developers that use Postman would say so. There are integrated tools for every stage of the API lifecycle, from design, mocking, testing and deploying all the way through to maintenance and deprecation.
 
 ### 27. REST Assured
 
@@ -374,9 +369,9 @@ There's a gradual learning curve which makes it great for beginners. Prototypes 
 
 If you're comfortable with code, then [Framer](https://framer.com/) is an awesome tool to empower you to create interactive, highly-customisable prototypes. Web devs around the world use it to build apps, websites, design systems and even slick new video game interfaces.
 
-What sets it apart from something like Figma? Well, with Framer the idea is that you can work with designs that can *realistically be implemented *with code. It's a bridge for UX designers and developers to collaborate and rapidly experiment in a shared workspace.
+What sets it apart from something like Figma? Well, with Framer the idea is that you can work with designs that can \*realistically be implemented \*with code. It's a bridge for UX designers and developers to collaborate and rapidly experiment in a shared workspace.
 
-📚 **Related reading: **[**How to stand out as a UX Designer**](https://paperform.co/blog/in-conversation-kyro-samaan/)  
+📚 \*\*Related reading: \*\*[**How to stand out as a UX Designer**](https://paperform.co/blog/in-conversation-kyro-samaan/)  
 
 Even if code isn't your thing, Framer is great. The GUI and design elements are on part with Sketch (or at least in the same ballpark) and the built-in prototyping is a breeze to use. There are also plenty of third-party packages to add new elements.
 
@@ -424,7 +419,7 @@ At Paperform we use Asana to assign tasks to team members, create projects split
 
 ### 40. JIRA
 
-[JIRA](https://www.atlassian.com/software/jira) is the go-to project management platform for software teams to plan, track and release their products. From creating user stories and planning sprints to the final stages of shipping and data analysis, JIRA is *the *way to take any product to launch and beyond.
+[JIRA](https://www.atlassian.com/software/jira) is the go-to project management platform for software teams to plan, track and release their products. From creating user stories and planning sprints to the final stages of shipping and data analysis, JIRA is \*the \*way to take any product to launch and beyond.
 
 One big advantage JIRA has over other similar tools is that it’s so customisable. It is possible to build the perfect workflow for your specific product or team—this is also a slight drawback, as it results in a slightly steeper learning curve upfront.
 
@@ -448,7 +443,7 @@ This happened for a reason: Zoom is awesome. While nothing replaces the feeling 
 
 Zoom is free for 40-minute calls, meaning your meetings come with a convenient end timer. Plus you can record any calls (with your companion’s permission), which has become a popular way to record [webinars](https://paperform.co/blog/how-to-record-a-webinar/) and podcasts.
 
-**📚 Related reading: **[**How to be a good interviewer**](https://paperform.co/blog/how-to-be-a-good-interviewer/)
+\*\*📚 Related reading: \*\*[**How to be a good interviewer**](https://paperform.co/blog/how-to-be-a-good-interviewer/)
 
 ## Miscellaneous Web Development Tools
 
@@ -500,7 +495,7 @@ Whether you're designing a website, putting together a UI or creating a [Canva 
 
 Colour picking tools allow you to identify the Hex codes of elements on the web to gain inspiration or keep designs consistent. There are thousands of tools in this space, but you won't find one easier than [ColorPick Eyedropper for Chrome](https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en).
 
-Just click the extension and hover over *any* element on *any *webpage. A small box appears with the Hex code and RGB model. These are automatically copied to the clipboard for you to use. If your only experience working with colours was using crayons in kindergarten, Material.io has a great to the [Material Design system](https://material.io/design/color/the-color-system.html#color-usage-and-palettes).  
+Just click the extension and hover over *any* element on \*any \*webpage. A small box appears with the Hex code and RGB model. These are automatically copied to the clipboard for you to use. If your only experience working with colours was using crayons in kindergarten, Material.io has a great to the [Material Design system](https://material.io/design/color/the-color-system.html#color-usage-and-palettes).  
 
 ### 48. Google Lighthouse
 
@@ -532,9 +527,4 @@ But that’s not all you can do. Want to collect feedback from [satisfied custo
 
 With Paperform you can do all that and more. And with our 3,000+ Direct and Zapier integrations, connecting with the rest of your tech stack to streamline your web development workflow is so easy your grandma could do it
 
-
-
-
-
 ![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/PF-STACK.jpg)![](https://lh4.googleusercontent.com/TGU36vvkMGBvyuV-3moKfrSXGILBOwxz43E7jYdef4p2Vqeb2P90yFchj_RYj3OpvgAZxYQ9MRYpNwuSLFo3NIYD6p96Rb8uw4QXOsribEx_JjDoxTUWE1dSBMTJ17aC4ZH70E25)Image Source: [Atom](https://atom.io/)![](https://lh5.googleusercontent.com/me7eP6zI6TqSg-oyEJyqTAoveecqRgW9NNFHRIfuAVvbIJzl9af3yArn0QMuVXH51E-MeZv6BFNk3P1qKl4eJlsaMFWAIT0z2jUWFaVCvD_GDfro_GJbe9srCT299c8Aa2yg2oO9)Image Source: [Sublime Text](https://www.sublimetext.com/)![](https://lh6.googleusercontent.com/D44i98NM_KaAxB0vloVdqpkW3QQrOeh-gahRhYT_FT1wGaN9o4BOkV4bDecBTXQRqgSmXNf8emg5FEDMjvievgGr4\_UADd6xGReiBqKVEi0FvfauKVDmYOOlEA4XSqmL9ND8EMk9)Image Source: [Notepad++](https://notepad-plus-plus.org/)![](https://lh5.googleusercontent.com/D-ZILznlMZ64gUXl3ODwXyyLvJOOV6Tgem2e7Nzt8p02Yz3v4JCA5tmyFKlz7JczYh_CpJcUAN0wHxf_Z5rzVxCX50EHbctJQ2iyaMAhtARmoJqYF3Ikl-G0g\_4XILXJaF62b60S)Source: [Wikipedia Commons](https://commons.wikimedia.org/wiki/File:Vim-\(logiciel\)-console.png)![](https://lh6.googleusercontent.com/252gQ1IpAEUNr3lCHi-MvLrULiBMFo56aGsb47nNy6W6ZshOFQgk4FFYaKRn8Fyy4fOBJrcVBIDBEHQU9zg59G8XbmNxkcot4zMf28sJDQWNwxBCjv-UaH8weY6BKQU6ErDlmzu5)Image Source: [Visual Studio](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcode.visualstudio.com%2Fassets%2Fupdates%2F1\_37%2Ficons.gif\&imgrefurl=https%3A%2F%2Fcode.visualstudio.com%2Fupdates%2Fv1\_37\&tbnid=FK\_-tkfGX0bzmM\&vet=12ahUKEwjznbKQ2YfyAhXUnUsFHULwDJQQMygAegUIARDOAQ..i\&docid=xSPl9orBLj6FKM\&w=1930\&h=1282\&q=vs%20code\&ved=2ahUKEwjznbKQ2YfyAhXUnUsFHULwDJQQMygAegUIARDOAQ)![](https://lh5.googleusercontent.com/sMHy-q3-qu13ZaFwDwrHy6sKhDnR_K5GdFtsL3J7Wknw9lUFNDOLx8LtRq7owH4GJIQ2bsxePWLN-CrMAdmE0TmsK71mrvaF-7pBlFqwXNMKzNhpdLYre9YmSuqpCP_URy7NxUJx)Image Source: [Django](https://www.djangoproject.com/)![](https://lh5.googleusercontent.com/mxpPHMijc7hvVz5LGZYx-QA9knoI7o3F4inDBERqyXqT7sFOqXky2R2WoyponK1WcZXMc6K5-5s3LYc1iedDCjOpu67Go6uEaTUKMc_CHfzMxFOFr_yN1TbnyTcfg7DhiKUirO9S)Image Source: [Ruby on Rails](https://rubyonrails.org/)![](https://lh4.googleusercontent.com/Xddm--wmths99nAn-\_6kEFm_nwZxr1LHX-e585zbH9DVsCUMeMNYnfp2zSNVk7AZ7FvjZ4FTA_Qt23\_cL4\_HD6pqq5EqiVTjziFQAHgU9fbnFp0d42au3FA-LqLTRe7vORIbR8oB)Image Source: [Angular](https://angular.io/)![](https://lh5.googleusercontent.com/SF8F6NLYMhdsbjPY8lYimBA1R-A39nC2JEmDQIQAxQP0zjcVM5Cn-VBFxlKx2mNCFZY0R6E61BmeKuT6\_MN5OZ5EKgIqQ6hRLkFi5pQIy0yeiNmJ_z861aE8txtAnFix2stdDPXf)Image Source: [React](https://reactjs.org/)![](https://lh4.googleusercontent.com/pdrGHJeVHJujGzs9PFtJY7E1s0aiDruAGdUquFd0iHKTIXhUaxnECP9GMwYpzmWgsejhmj0TGi6h9ej6FqI-ogSuNcYFDZqiTiGFy13PAFxVXJHKeT2PCD1lIQabE4uaLRFeeCX6)Image Source: [Vue](https://vuejs.org/) ![](https://lh6.googleusercontent.com/Vwun5FAge-Hh-IB-O2tJ9qMPuoLaSos0GRH1GxS-FD_F_EDuKJZNZk0hlOpB4Xv2gauE1vjC4sY38Ik19s0KtqgeR4IHivFcPCnDFMlAJ8EgfbGdA6fg9K8zOuiFF1GNR4mAwnes)Image Source: [Meteor](https://www.meteor.com/)![](https://lh3.googleusercontent.com/Zi7hE50XUZBiBZf9G9Jd8-gdp5GMeQ8ymf5XvkPX0wHKdC60ZlKf_uNeqcDoZo9iOaXFRMsFszhHl3Gy4N1XB7d7U1bfwCtlKXu4TJRYzh\_206wQRBSK4eeAs_jatl2qyp4Rjv-m)Image Source: [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)![](https://lh6.googleusercontent.com/NXYMRFbspS4M_OKEtx4AywW_r5xJdkgfIvGNYUcQhp5D5ocZYMdWKLzjMFGyVVENpsaK66j77qX8PhKXV2D1xFEPhUClwppQml00ehBAWCkt6Pzimu4EqS8A37QmxzzEKrAGznqD)Image Source: [Bootstrap](http://getbootstrap.com/)![](https://lh6.googleusercontent.com/yxo-yyVy5TmurN540Ka207\_sQbyGKBqd00nvilE-fqtqYZv33OkE8jWRpBjNWO3tIxKtoi7ujMYfNS6Mbc9MCI3Fw18tjIRLo0kWosD9FRMd7t99nHbKcE_p1ArhMWppx65u0A9U)Image Source: [Semantic UI](https://semantic-ui.com/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628736193378.png)Image Source: [Foundation](https://foundation.zurb.com/)![](https://lh4.googleusercontent.com/\_-hHtXVr3\_H96K1TcXksh7ZrmhMucG7eIZ97alh5H-2z7ZDiWVnD6XKOAbOE-jOsgxPubVhcHNvfNPfVZq9SVbeB134GJom3h5HWbLikVv5i3SxQObohCtfqPq71JoSG1YfkUNA\_)Image Source: [Materialize](https://materializecss.com/)![](https://lh5.googleusercontent.com/Xh6Lar3pQSSFHp6yhyU2ZLzuw77eVd-kqYgluxW0qLZ3KpO5\_J3OTINaHVta53n5rOrcl3vjwUIupb6YaFcalhXxV0eFSpANCcczX5wjefmRMsHv6YmRzg3Xo3mUvW_WzN-lmX-B)Image Source: [ChromeDevTools](https://developer.chrome.com/docs/devtools/)![](https://lh3.googleusercontent.com/pEMKE5gpTl7SHgXBCl1r6gyGDHBeIyuoerr5dsSETZqyavGRu1VOghqgu-ZPodrZJ1QS1pBDwBHHcxDLczWZg6303oektGn-ttIjmnr\_2RzXbsKwYwRbJ-nQ7NvvXOvoU7Bs-HgD)Image Source: [Svelte](https://svelte.dev/)![](https://lh6.googleusercontent.com/FdOwMdbWSLMXcnJ2gyj2NtGs5l5ShVxOPxRdw1Qj6OEeDiEXw-JPxYoN7Sbi8QLR_EquaOxyT_jey2R6JQXaqhDC_zbpMwy45PoMLjNZrk_QI6IJ3gCjBvCbA_rQl1Dabf0kX2nD)Image Source: [Ember](https://emberjs.com/)![](https://lh3.googleusercontent.com/7scAnAsMX-TlzJ6PLimPYY2Tb6aH6p1EtjLbBdz5M8SX3bIk78Q6sr1-mdc9LUgttgj2Ks_EVPP9XD6fb5LyMHK6-A8A1O-dFnVXW52AG5ZGurdFDe3AvIzO0ddGZ5DGWdE1k2mA)Image Source: [Yarn](https://yarnpkg.com/lang/en/)![](https://lh5.googleusercontent.com/6kCFq5M0LzWPsqts2sa5HMCU7NVeAG2HfaqQKmbe_sAuwH4fh_reNO1lkqn2Aq_FQO9BMNrXPv-8lTsTBhgaNIVPBy-l-hXqaHURRvhTlXdRChL6f0n2j0J0ZvnvjzUrtzubpK4D)Image Source: [npm](https://www.npmjs.com/)![](https://lh6.googleusercontent.com/sihMGTxUb8BieGKwjsMZSHtErIikM2B3ioRYAQ-U8RnRYkN9xdfYjLCA_dTbVuSxFoXFgjZsd7ljFMeBzZOcs5lSih1SJO1SLR5mTtcVGioSvOdjrUJCF20a6so4aNxnbQobt0hv)Image Source: [DPKG](https://man7.org/linux/man-pages/man1/dpkg.1.html)![](https://lh3.googleusercontent.com/9huTvL7gtUbXzzwMaYxE8GwC5Nh6RBD1984zLAbB3sx2ES98MqooBO9EN1UyTXr8uyANfcKfdWdGP2hwe3JdmdbjyK-XWkeJxymmpJd7HTKqU3QFPBXm3siMkEC9pB5sIw1RWiCi)Image Source: [Github Desktop](https://desktop.github.com/)![](https://lh4.googleusercontent.com/vEhY-y601AhXiD9FedJhwwwkd66UeRQQeyaHw9SL7LsyqUJCm7Vc4n5p0dLgQrCPJWUhiZmbFRugcKOfIlJYT3ah9W0lHjcMd3B4Pdh5kHx4yKdTOrmx709i4SYRuosO3L40\_y0Y)Image Source: [GitKraken](https://www.gitkraken.com/)![](https://lh6.googleusercontent.com/IhG5Y6dLenofqcIvTY5sOrZoy7rf3f1CagwBeit_m0QZU_QZ5eoMpsWENAU2y4DB93nHq25dgX3WnTVKNNWnnYmoFaEIyT4WYE_JAi5OsjG1przlD9KLSX5-ar1CpXu1\_wEhq2SY)Image Source: [Sourcetree](https://www.sourcetreeapp.com/)![](https://lh6.googleusercontent.com/1hWg3CPX-XkaeJXPECAninfnozi2o3p3RSk57Y7B8WdvZKsMODbZi3rxR5gyLORQyxbARj2-VoESeqwtWthttAZAItVnheneivMIG0ZTbPludRnzq6rMtzN2eTlEHeODaxrqmRIa)Image Source: [Postman](https://www.postman.com/)![](https://lh4.googleusercontent.com/Qg-U_I4ZNgtaun616Nlky0T5ram5v_kZ3h-F33Zmai5t9QoNqutJruPxl2yybA1elIk7J_Qs21\_G4wpUR32-TYVP6bx7wCmtOIvIZaTZ3BxI1EqoIVklH-6KRRtnQT8deRXOWSZl)![](https://lh5.googleusercontent.com/XROFNSk7cll32bNRftZzEeL9VDSS3IiLRIgZ4QRhMfadnJ_LLnohR_SMSGQW_CPbiqklUkOutHhK3yRICKp4b9OMb6nLn1M1i76COiDIv\_9CTTm0XgxCRt7ZH_VKIgIawnWXskPm)Image Source: [HoppScotch](https://hoppscotch.io/)![](https://lh5.googleusercontent.com/cUod2uM6ebt50jQq4JtQ7SPMfAy8Xp8Ad05fe7bSREmHxh-kiJT5el1czMEqBfjEUiPiPTUQCqOZU8Ylw386MW3G0E2jQ35T_FKsksw_cieFbsmY8ubbmMNqwWwTLwXI1z8qtfvo)Image Source: [LambdaTest](https://www.lambdatest.com/)![](https://lh5.googleusercontent.com/qlIEiSqu53w7iAu9a6DbOtf6Mhpw1PFBKQHDhr1Fpoyq5Z8md6ctRU-mZcltNt3L6o1NZw29ibT7PvOmGMj4G0t0VbU\_2y5Qvs0Nd3dykkA7fyVZkYij-qcHqveR-jMrwemNP4JQ)Image Source: [Figma](https://www.figma.com/ui-design-tool/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628742272023.png)Image Source: [Adobe XD](https://www.adobe.com/products/xd.html)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628743157849.png)Image Source: [Sketch](https://www.sketch.com/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628752045112.png)Image Source: [ProtoPie](https://www.protopie.io/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628749998307.png)Image Source: [Framer](https://framer.com/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628747997257.png)Image Source: [Toolset](https://toolset.com/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628748611285.png)Image Source: [Animator by Haiku](https://www.haikuforteams.com/animator/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628751023068.png)Image Source: [Affinity Designer](https://affinity.serif.com/en-gb/designer/)![](https://lh6.googleusercontent.com/zSjT3K_KLXPwq32-5oA8RLQMAXmjNSBfTUXgxxJir7KQ6fOdd1yRYd0jzBxo7O42N3mNv5UQgIzgGmCvFb_Cc18h17DAED2ShKiPvl6qpn2LFWVogn9QcEMIX6DgHCvopX0pFB\_1)Image Source: [ClickUp](https://clickup.com/)![](https://lh6.googleusercontent.com/8gm\_048J2wEJ_WD\_9vXB7esjB0bzTnj7hNPyhIewLbQSyEeqtuRhsYzUz7jE_n0E3GylWvamewgWYkbWSawAkAo3t5ZD-bM10TT-ZkSRSrEc3Fmib7Y7L_XTWe-OGOfdIT5zAOn1)Image Source: [Asana](https://asana.com/)![](https://lh4.googleusercontent.com/DOfqKLR_ON8XzgdLDjTuVMSa_bTKVSm9tZ3lbx3CW03AX8Q3Y9qYbP17d1EhH4F7KGNFbYRciB-NUFM775UhBHWkJbfPuhahhroh9P4EDUf714Zc-zBrXtKK644je6G8n589jewp)Image Source: [JIRA](https://www.atlassian.com/software/jira)![](https://lh4.googleusercontent.com/ES8WaJ_R9ZY9kYtfAlc-Wt28uUDmTMoRvA1zQLp2ijGfTvhVEuBYFYAS7FHSspYMokpuIv9VLqwhtxYxlnrImdxTLwFqnS_k6AqvXhPWSwqpNGc5lpfcHcbglV-I3Imcz1yOI2c\_)Image Source: [Slack](https://slack.com/intl/en-au/)![](https://lh3.googleusercontent.com/9MTbGgNToiS4BrnLGuDkrIykZFtGbDE9g6khzKy7w52VnFQqnXwi2mlYjRFA9EI\_49dmEyD53M3WFOxuR49RcAu_yQi3qxGI3NGs79qVKM4HJyDsQF6-5YH-hUDHrqvxnG_b_EUI)Image Source: [Zoom](https://zoom.us/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628831608408.png)Image Source: [TypeScript](https://www.typescriptlang.org/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628828564183-1.png)Image Source: [Sass](https://sass-lang.com/guide)![](https://lh6.googleusercontent.com/GVUZo-jhQxvyTfdhcC0SIpT7yTjtXiVUFDzhtxc-NuVtF5AXqQcgpCSEIZyWdLZs7rPtUYvu-lIHvY-eKymaFAT5sprEffolutJJ1gGAWJB9s37ZmGUlH6UIqleVpfciapcMvAR7)Image Source: [Stack Overflow](https://stackoverflow.com/)![](https://lh4.googleusercontent.com/VkP8y5mQdyGHN36GWELx53tup1fhCQiOPMmce1-wCGTBF18UTLrXnEa2KmDy6Op9QfwU00frx_xQBnRLIYJx7TERs0SwTNeufbMnM3RTIRS2ZDcrynUlQSEaEzoPTO7jD94kvtzr)Image Source: [Squoosh](https://squoosh.app/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/screely-1628823617932.png)Image Source: Paperform![](https://lh6.googleusercontent.com/ALDwwi8tDvEmnWjsFJlyzFwWQ4p4V4uuS7egg1DNcbRWG0B02BeYbXO2o7aiRIHuSzTdStodCMJh7dSyT-L6XoyGhQArSNJam0\_6HqDiEEkx4H7YkJ5fvOHy0sU3dUEE9UzqdPEa)Image Source: [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/)![](https://img.paperform.co/fetch/f_webp,w\_1500/https://s3.amazonaws.com/paperform-blog/2021/08/Facebook-post---5--2-.png)Image Source: Stack Overflow![](https://lh3.googleusercontent.com/-B-6-8bBUycMywsPV65wJs1vKrkW3QCCo_Bd4eXovfkHh3uMkLyGdvBTYNDOj05o97iTVm7M4B9rLjINH8PZ9NLsIzJ7peSOcf3T2yJ9\_8Efz5Rn5jMUv4xLpetCt3zF1PDs8iiU)
-
