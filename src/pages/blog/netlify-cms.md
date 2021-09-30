@@ -186,6 +186,193 @@ If you left your site registration open, or for return visits after confirming a
 
 **Note:** No matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it always fetches and commits files in your hosted repository (for example, on GitHub), on the branch you configured in your Netlify CMS config.yml file. This means that content fetched in the admin UI matches the content in the repository, which may be different from your locally running site. It also means that content saved using the admin UI saves directly to the hosted repository, even if you're running the UI locally or in staging.
 
+Examples
+
+Do
+you have a great, open source example? Submit a pull request to this page!
+
+ 
+
+Example
+Tools
+Type
+Source
+More info
+
+[Gatsby & Netlify
+CMS Meetup Group Template](https://github.com/robertcoopercode/gatsby-netlify-cms)
+Gatsby
+demo
+[robertcoopercode/gatsby-netlify-cms](https://github.com/robertcoopercode/gatsby-netlify-cms)
+[blog
+post](https://blog.logrocket.com/gatsby-netlify-cms-a-perfect-pairing-d50d59d16f67)
+
+[This
+Developing Journey](https://briandouglas.me/)
+middleman
+blog
+[bdougie/blog](https://github.com/bdougie/blog)
+[blog
+post](https://www.netlify.com/blog/2017/04/20/creating-a-blog-with-middleman-and-netlify-cms/)
+
+[Jamstack Recipes](https://jamstack-cms.netlify.com/)
+Hugo, Azure
+demo
+[hlaueriksson/jamstack-cms](https://github.com/hlaueriksson/jamstack-cms)
+[blog
+post](http://conductofcode.io/post/managing-content-for-a-jamstack-site-with-netlify-cms/)
+
+[Bael](https://bael-theme.jake101.com/)
+Vue, Nuxt
+blog
+[jake-101/bael-template](https://github.com/jake-101/bael-template)
+[blog
+post](https://bael-theme.jake101.com/blog/2018-06-19-top-10-reasons-why)
+
+[Forest
+Garden Wales](https://www.forestgarden.wales/)
+Hugo
+blog
+[forestgardenwales/forestgarden.wales](https://github.com/forestgardenwales/forestgarden.wales)
+[blog
+post](https://www.forestgarden.wales/blog/now-using-netlify-cms/)
+
+[Jekyll Demo](https://jekyll-netlifycms.netlify.com/)
+Jekyll, Gulp
+demo
+[NickStees/jekyll-cms](https://github.com/NickStees/jekyll-cms)
+[read me](https://github.com/NickStees/jekyll-cms)
+
+[Jekyll feat Alembic
+Theme Demo](https://alembic-kit-demo.netlify.com/)
+Jekyll
+demo
+[DavidDarnes/alembic-netlifycms-kit](https://github.com/daviddarnes/alembic-netlifycms-kit)
+[read
+me](https://github.com/daviddarnes/alembic-netlifycms-kit#starter-kit-for-alembic-with-netlify-cms)
+
+[Eleventy Starter
+Project](https://eleventy-netlify-boilerplate.netlify.com/)
+Eleventy
+demo
+[danurbanowicz/eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate)
+[read
+me](https://github.com/danurbanowicz/eleventy-netlify-boilerplate)
+
+[YellowCake
+\- Complete website with blog](https://yellowcake.netlify.com/)
+Gatsby, Netlify-CMS, Uploadcare
+demo
+[thriveweb/yellowcake](https://github.com/thriveweb/yellowcake/)
+[blog
+post](https://thriveweb.com.au/the-lab/yellowcake-gatsby-react-js-starter-project/)
+
+[Vue.js
+\- Nuxt.js Starter Project](https://github.com/renestalder/nuxt-netlify-cms-starter-template)
+Vue, Nuxt
+demo
+[renestalder/nuxt-netlify-cms-starter-template](https://github.com/renestalder/nuxt-netlify-cms-starter-template)
+[read
+me](https://github.com/renestalder/nuxt-netlify-cms-starter-template)
+
+[Hexo
+Demo](https://hexocms.imst.xyz/)
+Hexo
+demo
+[DemoMacro/Hexo-NetlifyCMS](https://github.com/DemoMacro/Hexo-NetlifyCMS)
+[read me](https://github.com/DemoMacro/Hexo-NetlifyCMS)
+
+[Gitbook
+Demo](https://gitbook.imst.xyz/)
+Gitbook
+demo
+[DemoMacro/Gitbook-NetlifyCMS](https://github.com/DemoMacro/Gitbook-NetlifyCMS)
+[read me](https://github.com/DemoMacro/Gitbook-NetlifyCMS)
+
+[VuePress
+Demo](https://vuepress.imst.xyz/)
+VuePress
+demo
+[DemoMacro/VuePress-NetlifyCMS](https://github.com/DemoMacro/VuePress-NetlifyCMS)
+[read
+me](https://github.com/DemoMacro/VuePress-NetlifyCMS)
+
+[Jigsaw
+Blog Starter Template Demo](https://jigsaw-blog-netlify-netlifycms-template.netlify.com/)
+Jigsaw
+demo
+[erickpatrick/jigsaw-blog-netlify-netlifycms-template](https://github.com/erickpatrick/jigsaw-blog-netlify-netlifycms-template)
+[blog
+post](https://www.erickpatrick.net/blog/augmenting-tightenco-jigsaw-with-netlifycms/)
+
+[Nuxt &
+NetlifyCMS Boilerplate](https://nuxt-netlifycms-boilerplate.netlify.com/)
+Vue, Nuxt
+demo
+[tylermercer/nuxt-netlifycms-boilerplate](https://github.com/tylermercer/nuxt-netlifycms-boilerplate)
+[read
+me](https://github.com/tylermercer/nuxt-netlifycms-boilerplate)
+
+[Next.js demo](https://netlifycms-nextjs.netlify.com/)
+Next.js
+blog
+[masives/netlifycms-nextjs](https://github.com/masives/netlifycms-nextjs)
+[read me](https://github.com/masives/netlifycms-nextjs)
+
+[Delog - Jamstack
+Blog with Netlify CMS](https://delog-w3layouts.netlify.com/)
+Gatsby, Netlify-CMS
+demo
+[W3Layouts/gatsby-starter-delog](https://github.com/W3Layouts/gatsby-starter-delog)
+[blog
+post](https://w3layouts.com/articles/delog-gatsby-starter-netlify-cms/)
+
+[Netlify CMS template
+for Gridsome](https://netlifycms-gridsome.suits.at/)
+Gridsome, Vue
+demo
+[suits-at/netlifycms-gridsome](https://github.com/suits-at/netlifycms-gridsome)
+[read me](https://github.com/suits-at/netlifycms-gridsome)
+
+[Next.js blogging
+template for Netlify](https://nextjs-netlify-blog-template.netlify.app/)
+Next.js, Netlify
+blog
+[wutali/nextjs-netlify-blog-template](https://github.com/wutali/nextjs-netlify-blog-template)
+[read
+me](https://github.com/wutali/nextjs-netlify-blog-template)
+
+[Netlify
+CMS and OAuth server on AWS](https://github.com/pulumi/examples/tree/master/aws-ts-netlify-cms-and-oauth)
+Netlify, Pulumi, AWS
+blog
+[pulumi/examples/aws-ts-netlify-cms-and-oauth](https://github.com/pulumi/examples/tree/master/aws-ts-netlify-cms-and-oauth)
+[blog
+post](https://www.pulumi.com/blog/deploying-the-infrastructure-of-oauth-server-for-cms-app/)
+
+[Eleventy
+Starter Boilerplate](https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/eleventy-starter-boilerplate-presentation/)
+Eleventy, Netlify
+demo
+[ixartz/Eleventy-Starter-Boilerplate](https://github.com/ixartz/Eleventy-Starter-Boilerplate)
+[read
+me](https://github.com/ixartz/Eleventy-Starter-Boilerplate)
+
+[Nuxt, Tailwind &
+NetlifyCMS Boilerplate](https://ntn-boilerplate.netlify.app/)
+Vue, Nuxt
+demo
+[Knogobert/ntn-boilerplate](https://github.com/Knogobert/ntn-boilerplate)
+[read
+me](https://github.com/Knogobert/ntn-boilerplate#readme)
+
+[Gatsby & Netlify
+CMS Personal Portfolio](https://kind-mestorf-5a2bc0.netlify.com/)
+Gatsby
+portfolio
+[EarlGeorge/React-Gatsby](https://github.com/EarlGeorge/React-Gatsby)
+[read
+me](https://github.com/EarlGeorge/React-Gatsby/blob/master/README.md)
 
 
 
@@ -193,243 +380,67 @@ If you left your site registration open, or for return visits after confirming a
 
 
 
- 
- 
- 
- 
- 
- 
-  Examples
-  
-  
-  
-  
- 
- 
-  
-  Do
-  you have a great, open source example? Submit a pull request to this page!
-  
-  
-  
-  
- 
- 
-   
-  
-  
-  
-  
- 
- 
-  Example
-  Tools
-  Type
-  Source
-  More info
- 
- 
-  [Gatsby & Netlify
-  CMS Meetup Group Template](https://github.com/robertcoopercode/gatsby-netlify-cms)
-  Gatsby
-  demo
-  [robertcoopercode/gatsby-netlify-cms](https://github.com/robertcoopercode/gatsby-netlify-cms)
-  [blog
-  post](https://blog.logrocket.com/gatsby-netlify-cms-a-perfect-pairing-d50d59d16f67)
- 
- 
-  [This
-  Developing Journey](https://briandouglas.me/)
-  middleman
-  blog
-  [bdougie/blog](https://github.com/bdougie/blog)
-  [blog
-  post](https://www.netlify.com/blog/2017/04/20/creating-a-blog-with-middleman-and-netlify-cms/)
- 
- 
-  [Jamstack Recipes](https://jamstack-cms.netlify.com/)
-  Hugo, Azure
-  demo
-  [hlaueriksson/jamstack-cms](https://github.com/hlaueriksson/jamstack-cms)
-  [blog
-  post](http://conductofcode.io/post/managing-content-for-a-jamstack-site-with-netlify-cms/)
- 
- 
-  [Bael](https://bael-theme.jake101.com/)
-  Vue, Nuxt
-  blog
-  [jake-101/bael-template](https://github.com/jake-101/bael-template)
-  [blog
-  post](https://bael-theme.jake101.com/blog/2018-06-19-top-10-reasons-why)
- 
- 
-  [Forest
-  Garden Wales](https://www.forestgarden.wales/)
-  Hugo
-  blog
-  [forestgardenwales/forestgarden.wales](https://github.com/forestgardenwales/forestgarden.wales)
-  [blog
-  post](https://www.forestgarden.wales/blog/now-using-netlify-cms/)
- 
- 
-  [Jekyll Demo](https://jekyll-netlifycms.netlify.com/)
-  Jekyll, Gulp
-  demo
-  [NickStees/jekyll-cms](https://github.com/NickStees/jekyll-cms)
-  [read me](https://github.com/NickStees/jekyll-cms)
- 
- 
-  [Jekyll feat Alembic
-  Theme Demo](https://alembic-kit-demo.netlify.com/)
-  Jekyll
-  demo
-  [DavidDarnes/alembic-netlifycms-kit](https://github.com/daviddarnes/alembic-netlifycms-kit)
-  [read
-  me](https://github.com/daviddarnes/alembic-netlifycms-kit#starter-kit-for-alembic-with-netlify-cms)
- 
- 
-  [Eleventy Starter
-  Project](https://eleventy-netlify-boilerplate.netlify.com/)
-  Eleventy
-  demo
-  [danurbanowicz/eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate)
-  [read
-  me](https://github.com/danurbanowicz/eleventy-netlify-boilerplate)
- 
- 
-  [YellowCake
-  \- Complete website with blog](https://yellowcake.netlify.com/)
-  Gatsby, Netlify-CMS, Uploadcare
-  demo
-  [thriveweb/yellowcake](https://github.com/thriveweb/yellowcake/)
-  [blog
-  post](https://thriveweb.com.au/the-lab/yellowcake-gatsby-react-js-starter-project/)
- 
- 
-  [Vue.js
-  \- Nuxt.js Starter Project](https://github.com/renestalder/nuxt-netlify-cms-starter-template)
-  Vue, Nuxt
-  demo
-  [renestalder/nuxt-netlify-cms-starter-template](https://github.com/renestalder/nuxt-netlify-cms-starter-template)
-  [read
-  me](https://github.com/renestalder/nuxt-netlify-cms-starter-template)
- 
- 
-  [Hexo
-  Demo](https://hexocms.imst.xyz/)
-  Hexo
-  demo
-  [DemoMacro/Hexo-NetlifyCMS](https://github.com/DemoMacro/Hexo-NetlifyCMS)
-  [read me](https://github.com/DemoMacro/Hexo-NetlifyCMS)
- 
- 
-  [Gitbook
-  Demo](https://gitbook.imst.xyz/)
-  Gitbook
-  demo
-  [DemoMacro/Gitbook-NetlifyCMS](https://github.com/DemoMacro/Gitbook-NetlifyCMS)
-  [read me](https://github.com/DemoMacro/Gitbook-NetlifyCMS)
- 
- 
-  [VuePress
-  Demo](https://vuepress.imst.xyz/)
-  VuePress
-  demo
-  [DemoMacro/VuePress-NetlifyCMS](https://github.com/DemoMacro/VuePress-NetlifyCMS)
-  [read
-  me](https://github.com/DemoMacro/VuePress-NetlifyCMS)
- 
- 
-  [Jigsaw
-  Blog Starter Template Demo](https://jigsaw-blog-netlify-netlifycms-template.netlify.com/)
-  Jigsaw
-  demo
-  [erickpatrick/jigsaw-blog-netlify-netlifycms-template](https://github.com/erickpatrick/jigsaw-blog-netlify-netlifycms-template)
-  [blog
-  post](https://www.erickpatrick.net/blog/augmenting-tightenco-jigsaw-with-netlifycms/)
- 
- 
-  [Nuxt &
-  NetlifyCMS Boilerplate](https://nuxt-netlifycms-boilerplate.netlify.com/)
-  Vue, Nuxt
-  demo
-  [tylermercer/nuxt-netlifycms-boilerplate](https://github.com/tylermercer/nuxt-netlifycms-boilerplate)
-  [read
-  me](https://github.com/tylermercer/nuxt-netlifycms-boilerplate)
- 
- 
-  [Next.js demo](https://netlifycms-nextjs.netlify.com/)
-  Next.js
-  blog
-  [masives/netlifycms-nextjs](https://github.com/masives/netlifycms-nextjs)
-  [read me](https://github.com/masives/netlifycms-nextjs)
- 
- 
-  [Delog - Jamstack
-  Blog with Netlify CMS](https://delog-w3layouts.netlify.com/)
-  Gatsby, Netlify-CMS
-  demo
-  [W3Layouts/gatsby-starter-delog](https://github.com/W3Layouts/gatsby-starter-delog)
-  [blog
-  post](https://w3layouts.com/articles/delog-gatsby-starter-netlify-cms/)
- 
- 
-  [Netlify CMS template
-  for Gridsome](https://netlifycms-gridsome.suits.at/)
-  Gridsome, Vue
-  demo
-  [suits-at/netlifycms-gridsome](https://github.com/suits-at/netlifycms-gridsome)
-  [read me](https://github.com/suits-at/netlifycms-gridsome)
- 
- 
-  [Next.js blogging
-  template for Netlify](https://nextjs-netlify-blog-template.netlify.app/)
-  Next.js, Netlify
-  blog
-  [wutali/nextjs-netlify-blog-template](https://github.com/wutali/nextjs-netlify-blog-template)
-  [read
-  me](https://github.com/wutali/nextjs-netlify-blog-template)
- 
- 
-  [Netlify
-  CMS and OAuth server on AWS](https://github.com/pulumi/examples/tree/master/aws-ts-netlify-cms-and-oauth)
-  Netlify, Pulumi, AWS
-  blog
-  [pulumi/examples/aws-ts-netlify-cms-and-oauth](https://github.com/pulumi/examples/tree/master/aws-ts-netlify-cms-and-oauth)
-  [blog
-  post](https://www.pulumi.com/blog/deploying-the-infrastructure-of-oauth-server-for-cms-app/)
- 
- 
-  [Eleventy
-  Starter Boilerplate](https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/eleventy-starter-boilerplate-presentation/)
-  Eleventy, Netlify
-  demo
-  [ixartz/Eleventy-Starter-Boilerplate](https://github.com/ixartz/Eleventy-Starter-Boilerplate)
-  [read
-  me](https://github.com/ixartz/Eleventy-Starter-Boilerplate)
- 
- 
-  [Nuxt, Tailwind &
-  NetlifyCMS Boilerplate](https://ntn-boilerplate.netlify.app/)
-  Vue, Nuxt
-  demo
-  [Knogobert/ntn-boilerplate](https://github.com/Knogobert/ntn-boilerplate)
-  [read
-  me](https://github.com/Knogobert/ntn-boilerplate#readme)
- 
- 
-  [Gatsby & Netlify
-  CMS Personal Portfolio](https://kind-mestorf-5a2bc0.netlify.com/)
-  Gatsby
-  portfolio
-  [EarlGeorge/React-Gatsby](https://github.com/EarlGeorge/React-Gatsby)
-  [read
-  me](https://github.com/EarlGeorge/React-Gatsby/blob/master/README.md)
-  
- 
+# Gatsby&#xA;&#xA;
 
+This guide will help you get started using Netlify CMS and Gatsby.
 
+To get up and running with Gatsby, you’ll need to have [Node.js](https://nodejs.org/) installed on your computer. *Note: Gatsby's minimum supported Node.js version is Node 8.*
 
+## Create a new Gatsby site
 
+Let's create a new site using the default Gatsby Starter Blog. Run the following commands in the terminal, in the folder where you'd like to create the blog:
 
+## Get to know Gatsby
+
+In your favorite code editor, open up the code generated for your "Gatsby Starter Blog" site, and take a look at the content directory.
+
+You will see that there are multiple Markdown files that represent blog posts. Open one .md file and you will see something like this:
+
+We can see above that each blog post has a title, a date, a description and a body. Now, let's recreate this using Netlify CMS.
+
+## Add Netlify CMS to your site
+
+First let's install some dependencies. We'll need netlify-cms-app and gatsby-plugin-netlify-cms. Run the following command in the terminal at the root of your site:
+
+### Configuration
+
+For the purpose of this guide we will deploy to Netlify from a GitHub repository which requires the minimum configuration.
+
+Create a config.yml file in the directory structure you see below:
+
+In your config.yml file paste the following configuration:
+
+**Note:** The above configuration allows assets to be stored relative to their content. Therefore posts would be stored in the format below as it is in gatsby-starter-blog.
+
+Finally, add the plugin to your gatsby-config.js.
+
+### Push to GitHub
+
+It's now time to commit your changes and push to GitHub. The Gatsby starter initializes Git automatically for you, so you only need to do:
+
+### Add your repo to Netlify
+
+Go to Netlify and select 'New Site from Git'. Select GitHub and the repository you just pushed to. Click Configure Netlify on GitHub and give access to your repository. Finish the setup by clicking Deploy Site. Netlify will begin reading your repository and starting building your project.
+
+### Enable Identity and Git Gateway
+
+Netlify's Identity and Git Gateway services allow you to manage CMS admin users for your site without requiring them to have an account with your Git host or commit access on your repo. From your site dashboard on Netlify:
+
+1.  Go to **Settings > Identity**, and select **Enable Identity service**.
+
+2.  Under **Registration preferences**, select **Open** or **Invite only**. In most cases, you want only invited users to access your CMS, but if you're just experimenting, you can leave it open for convenience.
+
+3.  If you'd like to allow one-click login with services like Google and GitHub, check the boxes next to the services you'd like to use, under **External providers**.
+
+4.  Scroll down to **Services > Git Gateway**, and click **Enable Git Gateway**. This authenticates with your Git host and generates an API access token. In this case, we're leaving the **Roles** field blank, which means any logged in user may access the CMS. For information on changing this, check the [Netlify Identity documentation](https://www.netlify.com/docs/identity/).
+
+## Start publishing
+
+It's time to create your first blog post. Login to your site's /admin/ page and create a new post by clicking New Blog. Add a title, a date and some text. When you click Publish, a new commit will be created in your GitHub repo with this format Create Blog “year-month-date-title”.
+
+Then Netlify will detect that there was a commit in your repo, and will start rebuilding your project. When your project is deployed you'll be able to see the post you created.
+
+### Cleanup
+
+It is now safe to remove the default Gatsby blog posts.
 
