@@ -1,13 +1,13 @@
 ---
-title: Other Open Source Utilities
+title: RECENT PROJECTS
 weight: 0
 excerpt: embedded utilities
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
