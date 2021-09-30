@@ -86,7 +86,7 @@ template: docs
 </div>
 
 <center>
-
+</center>
 
 <details>
 
