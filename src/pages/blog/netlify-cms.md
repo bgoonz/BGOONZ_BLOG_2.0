@@ -1,5 +1,5 @@
 ---
-title: Netlify Reference Sheet
+title: Netlify CMS Reference Sheet
 subtitle: lorem-ipsum
 date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
