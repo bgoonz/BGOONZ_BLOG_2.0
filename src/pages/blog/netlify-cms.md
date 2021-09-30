@@ -5,7 +5,7 @@ date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
+  title: netlify cms
   description: ''
   robots: []
   extra: []
