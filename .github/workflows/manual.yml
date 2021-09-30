@@ -1,0 +1,2 @@
+name: Algolia Crawler Automatic Crawl
+  uses: algolia/algoliasearch-crawler-github-actions@v1.0.2
