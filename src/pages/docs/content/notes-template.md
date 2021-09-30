@@ -1,5 +1,5 @@
 ---
-title: Notes Template
+title: Embeded Websites & Projects
 weight: 2
 seo:
     title: Gatsby Plugins For This Sites Content Model
