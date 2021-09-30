@@ -54,3 +54,13 @@ Finally, absolute URLs (like http://example.org/static/style.css) will be used 
 One final form of relative URL looks like this:
 
 This URL is only missing the protocol part and is turned into an absolute URL by adding the protocol part of the current page URL. So if the current page was requested over http or https, this URL will use the same protocol. This is often useful if a site can be served over both protocols although it is increasingly the case that https is being used everywhere so this may become less common as time progresses.
+
+
+
+
+
+
+
+
+
+[Share To Facebook:](https://www.facebook.com/sharer/sharer.php?u=https://bgoonz-blog.netlify.app/)
