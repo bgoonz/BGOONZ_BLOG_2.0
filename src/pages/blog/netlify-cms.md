@@ -16,6 +16,10 @@ seo:
       value: images/netlify-dee8d6ae.svg
       keyName: property
       relativeUrl: true
+    - name: 'og:title'
+      value: Intro to Netlify CMS
+      keyName: property
+      relativeUrl: false
 template: post
 thumb_image: images/netlify.svg
 image: images/netlify-26904b46.svg
