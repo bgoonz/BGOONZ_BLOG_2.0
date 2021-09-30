@@ -10,6 +10,7 @@ seo:
   robots: []
   extra: []
 template: post
+thumb_image: images/netlify.svg
 ---
 # Overview&#xA;&#xA;
 
