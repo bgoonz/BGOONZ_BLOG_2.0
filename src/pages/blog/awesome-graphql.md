@@ -11,6 +11,7 @@ seo:
   extra: []
 template: post
 thumb_image: images/graphql.png
+image: images/graphql-f3b94d65.png
 ---
 ## Table of Contents&#xA;&#xA;
 
