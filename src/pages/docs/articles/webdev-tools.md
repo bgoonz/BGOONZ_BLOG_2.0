@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Web Developer Tools
 weight: 0
 excerpt: lorem-ipsum
 seo:
