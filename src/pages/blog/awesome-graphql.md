@@ -1,6 +1,6 @@
 ---
 title: Awesome GraphQL
-subtitle: lorem-ipsum
+subtitle: The Death Of REST
 date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
