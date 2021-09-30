@@ -17,6 +17,11 @@ template: docs
 
 ## Asynchronicity in Programming Languages
 
+
+<iframe src="https://web-dev-interview-prep-quiz-website.netlify.app/promises-async.html" height="100%" width="100%"></iframe>
+
+
+
 Computers are asynchronous by design.
 
 Asynchronous means that things can happen independently of the main program flow.
