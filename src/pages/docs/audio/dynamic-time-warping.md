@@ -4,7 +4,7 @@ weight: 0
 excerpt: dynamic-time-warping
 seo:
     title: 'dynamic-time-warping'
-    description: ''
+    description: 'dynamic-time-warping'
     robots: []
     extra: []
 template: docs
