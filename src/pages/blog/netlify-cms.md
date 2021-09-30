@@ -5,8 +5,11 @@ date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: netlify cms
-  description: ''
+  title: ''
+  description: >-
+    Netlify CMS is an open source content management system for your Git
+    workflow that enables you to provide editors with a friendly UI and
+    intuitive workflows
   robots: []
   extra: []
 template: post
