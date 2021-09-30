@@ -11,6 +11,7 @@ seo:
   extra: []
 template: post
 thumb_image: images/netlify.svg
+image: images/netlify-26904b46.svg
 ---
 # Overview&#xA;&#xA;
 
