@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: How The Web Works
 weight: 0
 excerpt: lorem-ipsum
 seo:
