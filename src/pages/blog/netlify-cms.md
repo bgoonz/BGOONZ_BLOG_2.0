@@ -11,7 +11,11 @@ seo:
     workflow that enables you to provide editors with a friendly UI and
     intuitive workflows
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/netlify-dee8d6ae.svg
+      keyName: property
+      relativeUrl: true
 template: post
 thumb_image: images/netlify.svg
 image: images/netlify-26904b46.svg
