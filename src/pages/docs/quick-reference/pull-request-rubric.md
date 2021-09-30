@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Pull Request Template
 weight: 0
 excerpt: lorem-ipsum
 seo:
