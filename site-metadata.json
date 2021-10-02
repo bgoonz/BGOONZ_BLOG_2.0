@@ -274,7 +274,7 @@
                         "no_follow": false
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Web Dev Bookmarks",
                         "url": "https://bgoonz-bookmarks.netlify.app/",
                         "style": "link",
                         "icon_class": "dev",
