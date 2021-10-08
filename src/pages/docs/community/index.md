@@ -50,13 +50,7 @@ template: docs
 |                                                                                                                            |                                                                                     |                                                   |                                                                           |                                                                              |
 |                                                                                                                            |                                                                                     |                                                   |                                                                           |                                                                              |
 
-
-
 ---
-
-
-
-
 
 <a href="https://twitter.com/messages/compose?recipient_id=3805104374"
   class="twitter-dm-button" data-screen-name="@furni">
@@ -65,8 +59,6 @@ Message @bgooonz</a>
 <a class="twitter-follow-button"
   href="https://twitter.com/bgooonz">
 Follow @bgooonz</a>
-
-
 
 <br>
 <a class="twitter-timeline" href="https://twitter.com/bgooonz?ref_src=twsrc%5Etfw">Tweets by bgooonz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

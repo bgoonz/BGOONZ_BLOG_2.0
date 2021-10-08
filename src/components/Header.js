@@ -4,10 +4,7 @@ import _ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
+
 export default class Header extends React.Component {
     render() {
         return (
@@ -20,6 +17,7 @@ export default class Header extends React.Component {
                         <div className="site-branding">
                             {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null) ? (
                                 <p className="site-logo">
+                                    <div id="search"></div>
                                     <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
                                         <img
                                             src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null))}

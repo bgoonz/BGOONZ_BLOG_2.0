@@ -3,15 +3,14 @@ title: History API
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 # History Api
-
-
 
 # &#xA;&#xA;
 
@@ -51,8 +50,6 @@ Allows manipulation of the browser *session history* (that is, the pages visit
 
 The following example assigns a listener to the onpopstate property. And then illustrates some of the methods of the history object to add, replace, and move within the browser history for the current tab.
 
-
-
 # Working with the History API&#xA;
 
 HTML5 introduced the [pushState()](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) and [replaceState()](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState) methods for add and modifying history entries, respectively. These methods work in conjunction with the [onpopstate](https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate) event.
@@ -89,13 +86,13 @@ In a sense, calling pushState() is similar to setting window.location = "#foo
 
 But pushState() has a few advantages:
 
-*   The new URL can be any URL in the same origin as the current URL. In contrast, setting window.location keeps you at the same [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) only if you modify only the hash.
+-   The new URL can be any URL in the same origin as the current URL. In contrast, setting window.location keeps you at the same [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) only if you modify only the hash.
 
-*   You don't have to change the URL if you don't want to. In contrast, setting window.location = "#foo"; creates a new history entry only if the current hash isn't #foo.
+-   You don't have to change the URL if you don't want to. In contrast, setting window.location = "#foo"; creates a new history entry only if the current hash isn't #foo.
 
-*   You can associate arbitrary data with your new history entry. With the hash-based approach, you need to encode all of the relevant data into a short string.
+-   You can associate arbitrary data with your new history entry. With the hash-based approach, you need to encode all of the relevant data into a short string.
 
-*   If title is subsequently used by browsers, this data can be utilized (independent of, say, the hash).
+-   If title is subsequently used by browsers, this data can be utilized (independent of, say, the hash).
 
 Note that pushState() never causes a hashchange event to be fired, even if the new URL differs from the old URL only in its hash.
 
@@ -113,7 +110,7 @@ replaceState() is particularly useful when you want to update the state object 
 
 Suppose https://mozilla.org/foo.html executes the following JavaScript:
 
-The explanation of these two lines above can be found at the above section [*Example of pushState() method*](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API#example_of_pushstate_method) section.
+The explanation of these two lines above can be found at the above section [_Example of pushState() method_](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API#example_of_pushstate_method) section.
 
 Next, suppose https://mozilla.org/bar.html executes the following JavaScript:
 
@@ -135,13 +132,11 @@ You can read the state of the current history entry without waiting for a popst
 
 ## [See also](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API#see_also)
 
-*   [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
+-   [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
 
-*   [Ajax navigation example](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Example)
+-   [Ajax navigation example](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Example)
 
-*   [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history)
-
-
+-   [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history)
 
 # Window.historyCopy to Clipboard&#xA;&#xA;
 

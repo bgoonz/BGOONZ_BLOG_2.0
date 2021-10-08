@@ -1,7 +1,7 @@
 html {
     font-family: $font-primary;
     font-size: 110%;
-    zoom:0.9;
+    zoom: 0.9;
 }
 
 body {
@@ -18,7 +18,7 @@ a {
     color: $color-primary;
     text-decoration: underline;
 
-   -webkit-transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
 
     &:hover {
@@ -27,11 +27,10 @@ a {
 }
 
 iframe {
-
     border-radius: 12px;
     border: 2px solid gold;
     height: 1000px !important;
-    width: 100%!important;
+    width: 100% !important;
     resize: both;
     overflow: auto;
 }
