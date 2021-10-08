@@ -1,7 +1,6 @@
 html {
     font-family: $font-primary;
     font-size: 110%;
-    zoom: 0.9;
 }
 
 body {
@@ -12,12 +11,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     overflow: auto;
+    zoom: 0.85;
 }
-
+#search {
+    z-index: -1;
+}
 a {
     color: $color-primary;
     text-decoration: underline;
-
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.125em;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
 
@@ -27,12 +30,14 @@ a {
 }
 
 iframe {
+    overflow-y: scroll;
+    overflow-x: scroll;
     border-radius: 12px;
     border: 2px solid gold;
-    height: 1000px !important;
-    width: 100% !important;
+    height: 1500px !important;
+    width: 100%;
     resize: both;
-    overflow: auto;
+    overflow: scroll;
 }
 
 h1,
@@ -219,9 +224,4 @@ img {
     h6 {
         font-size: 1.125em;
     }
-}
-
-.gcse-search {
-    width: 30%;
-    height: 50%;
 }
