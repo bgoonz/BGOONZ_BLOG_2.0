@@ -1,0 +1,405 @@
+{
+    "expireTime": 9007200888440673000,
+    "key": "transformer-remark-markdown-html-ast-bb3e6684eddbe54acce43e7945be5d57--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "h1",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Git Bash‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌",
+                        "position": { "start": { "line": 1, "column": 3, "offset": 2 }, "end": { "line": 1, "column": 26, "offset": 25 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "\n",
+                        "position": { "start": { "line": 1, "column": 26, "offset": 25 }, "end": { "line": 1, "column": 31, "offset": 30 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": "\n",
+                        "position": { "start": { "line": 1, "column": 31, "offset": 30 }, "end": { "line": 1, "column": 36, "offset": 35 } }
+                    }
+                ],
+                "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 36, "offset": 35 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "At its core, Git is a set of command line utility programs that are designed to execute on a Unix style command-line environment. Modern operating systems like Linux and macOS both include built-in Unix command line terminals. This makes Linux and macOS complementary operating systems when working with Git. Microsoft Windows instead uses Windows command prompt, a non-Unix terminal environment.",
+                        "position": { "start": { "line": 3, "column": 1, "offset": 37 }, "end": { "line": 3, "column": 397, "offset": 433 } }
+                    }
+                ],
+                "position": { "start": { "line": 3, "column": 1, "offset": 37 }, "end": { "line": 3, "column": 397, "offset": 433 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In Windows environments, Git is often packaged as part of higher level GUI applications. GUIs for Git may attempt to abstract and hide the underlying version control system primitives. This can be a great aid for Git beginners to rapidly contribute to a project. Once a project's collaboration requirements grow with other team members, it is critical to be aware of how the actual raw Git methods work. This is when it can be beneficial to drop a GUI version for the command line tools. Git Bash is offered to provide a terminal Git experience.",
+                        "position": { "start": { "line": 5, "column": 1, "offset": 435 }, "end": { "line": 5, "column": 546, "offset": 980 } }
+                    }
+                ],
+                "position": { "start": { "line": 5, "column": 1, "offset": 435 }, "end": { "line": 5, "column": 546, "offset": 980 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What is Git Bash?",
+                        "position": { "start": { "line": 7, "column": 4, "offset": 985 }, "end": { "line": 7, "column": 21, "offset": 1002 } }
+                    }
+                ],
+                "position": { "start": { "line": 7, "column": 1, "offset": 982 }, "end": { "line": 7, "column": 21, "offset": 1002 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.",
+                        "position": { "start": { "line": 9, "column": 1, "offset": 1004 }, "end": { "line": 9, "column": 438, "offset": 1441 } }
+                    }
+                ],
+                "position": { "start": { "line": 9, "column": 1, "offset": 1004 }, "end": { "line": 9, "column": 438, "offset": 1441 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "How to install Git Bash",
+                        "position": { "start": { "line": 11, "column": 4, "offset": 1446 }, "end": { "line": 11, "column": 27, "offset": 1469 } }
+                    }
+                ],
+                "position": { "start": { "line": 11, "column": 1, "offset": 1443 }, "end": { "line": 11, "column": 27, "offset": 1469 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Git Bash comes included as part of the ",
+                        "position": { "start": { "line": 13, "column": 1, "offset": 1471 }, "end": { "line": 13, "column": 40, "offset": 1510 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://gitforwindows.org/" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Git For Windows",
+                                "position": { "start": { "line": 13, "column": 41, "offset": 1511 }, "end": { "line": 13, "column": 56, "offset": 1526 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 13, "column": 40, "offset": 1510 }, "end": { "line": 13, "column": 85, "offset": 1555 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " package. Download and install Git For Windows like other Windows applications. Once downloaded find the included .exe file and open to execute Git Bash.",
+                        "position": { "start": { "line": 13, "column": 85, "offset": 1555 }, "end": { "line": 13, "column": 238, "offset": 1708 } }
+                    }
+                ],
+                "position": { "start": { "line": 13, "column": 1, "offset": 1471 }, "end": { "line": 13, "column": 238, "offset": 1708 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "How to use Git Bash",
+                        "position": { "start": { "line": 15, "column": 4, "offset": 1713 }, "end": { "line": 15, "column": 23, "offset": 1732 } }
+                    }
+                ],
+                "position": { "start": { "line": 15, "column": 1, "offset": 1710 }, "end": { "line": 15, "column": 23, "offset": 1732 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Git Bash has the same operations as a standard Bash experience. It will be helpful to review basic Bash usage. Advanced usage of Bash is outside the scope of this Git focused document.",
+                        "position": { "start": { "line": 17, "column": 1, "offset": 1734 }, "end": { "line": 17, "column": 185, "offset": 1918 } }
+                    }
+                ],
+                "position": { "start": { "line": 17, "column": 1, "offset": 1734 }, "end": { "line": 17, "column": 185, "offset": 1918 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "How to navigate folders",
+                        "position": { "start": { "line": 19, "column": 4, "offset": 1923 }, "end": { "line": 19, "column": 27, "offset": 1946 } }
+                    }
+                ],
+                "position": { "start": { "line": 19, "column": 1, "offset": 1920 }, "end": { "line": 19, "column": 27, "offset": 1946 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The Bash command pwd is used to print the 'present working directory'. pwd is equivalent to executing cd on a DOS(Windows console host) terminal. This is the folder or path that the current Bash session resides in.",
+                        "position": { "start": { "line": 21, "column": 1, "offset": 1948 }, "end": { "line": 21, "column": 215, "offset": 2162 } }
+                    }
+                ],
+                "position": { "start": { "line": 21, "column": 1, "offset": 1948 }, "end": { "line": 21, "column": 215, "offset": 2162 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The Bash command ls is used to 'list' contents of the current working directory. ls is equivalent to DIR on a Windows console host terminal.",
+                        "position": { "start": { "line": 23, "column": 1, "offset": 2164 }, "end": { "line": 23, "column": 141, "offset": 2304 } }
+                    }
+                ],
+                "position": { "start": { "line": 23, "column": 1, "offset": 2164 }, "end": { "line": 23, "column": 141, "offset": 2304 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Both Bash and Windows console host have a cd command. cd is an acronym for 'Change Directory'. cd is invoked with an appended directory name. Executing cd will change the terminal sessions current working directory to the passed directory argument.",
+                        "position": { "start": { "line": 25, "column": 1, "offset": 2306 }, "end": { "line": 25, "column": 249, "offset": 2554 } }
+                    }
+                ],
+                "position": { "start": { "line": 25, "column": 1, "offset": 2306 }, "end": { "line": 25, "column": 249, "offset": 2554 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Git Bash Commands",
+                        "position": { "start": { "line": 27, "column": 4, "offset": 2559 }, "end": { "line": 27, "column": 21, "offset": 2576 } }
+                    }
+                ],
+                "position": { "start": { "line": 27, "column": 1, "offset": 2556 }, "end": { "line": 27, "column": 21, "offset": 2576 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Git Bash is packaged with additional commands that can be found in the /usr/bin directory of the Git Bash emulation. Git Bash can actually provide a fairly robust shell experience on Windows. Git Bash comes packaged with the following shell commands which are outside the scope of this document: ",
+                        "position": { "start": { "line": 29, "column": 1, "offset": 2578 }, "end": { "line": 29, "column": 297, "offset": 2874 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://man.openbsd.org/ssh.1" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Ssh",
+                                "position": { "start": { "line": 29, "column": 298, "offset": 2875 }, "end": { "line": 29, "column": 301, "offset": 2878 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 29, "column": 297, "offset": 2874 }, "end": { "line": 29, "column": 333, "offset": 2910 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", ",
+                        "position": { "start": { "line": 29, "column": 333, "offset": 2910 }, "end": { "line": 29, "column": 335, "offset": 2912 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://linux.die.net/man/1/scp" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "scp",
+                                "position": { "start": { "line": 29, "column": 336, "offset": 2913 }, "end": { "line": 29, "column": 339, "offset": 2916 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 29, "column": 335, "offset": 2912 }, "end": { "line": 29, "column": 373, "offset": 2950 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", ",
+                        "position": { "start": { "line": 29, "column": 373, "offset": 2950 }, "end": { "line": 29, "column": 375, "offset": 2952 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "http://man7.org/linux/man-pages/man1/cat.1.html" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "cat",
+                                "position": { "start": { "line": 29, "column": 376, "offset": 2953 }, "end": { "line": 29, "column": 379, "offset": 2956 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 29, "column": 375, "offset": 2952 }, "end": { "line": 29, "column": 429, "offset": 3006 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", ",
+                        "position": { "start": { "line": 29, "column": 429, "offset": 3006 }, "end": { "line": 29, "column": 431, "offset": 3008 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://linux.die.net/man/1/find" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "find",
+                                "position": { "start": { "line": 29, "column": 432, "offset": 3009 }, "end": { "line": 29, "column": 436, "offset": 3013 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 29, "column": 431, "offset": 3008 }, "end": { "line": 29, "column": 471, "offset": 3048 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 29, "column": 471, "offset": 3048 }, "end": { "line": 29, "column": 472, "offset": 3049 } }
+                    }
+                ],
+                "position": { "start": { "line": 29, "column": 1, "offset": 2578 }, "end": { "line": 29, "column": 472, "offset": 3049 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In addition the previously discussed set of Bash commands, Git Bash includes the full set of Git core commands discussed through out this site. Learn more at the corresponding documentation pages for ",
+                        "position": { "start": { "line": 31, "column": 1, "offset": 3051 }, "end": { "line": 31, "column": 201, "offset": 3251 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "git clone",
+                                "position": { "start": { "line": 31, "column": 202, "offset": 3252 }, "end": { "line": 31, "column": 211, "offset": 3261 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 31, "column": 201, "offset": 3251 }, "end": { "line": 31, "column": 287, "offset": 3337 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", ",
+                        "position": { "start": { "line": 31, "column": 287, "offset": 3337 }, "end": { "line": 31, "column": 289, "offset": 3339 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://www.atlassian.com/git/tutorials/saving-changes/git-commit" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "git commit",
+                                "position": { "start": { "line": 31, "column": 290, "offset": 3340 }, "end": { "line": 31, "column": 300, "offset": 3350 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 31, "column": 289, "offset": 3339 }, "end": { "line": 31, "column": 368, "offset": 3418 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", ",
+                        "position": { "start": { "line": 31, "column": 368, "offset": 3418 }, "end": { "line": 31, "column": 370, "offset": 3420 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://www.atlassian.com/git/tutorials/using-branches/git-checkout" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "git checkout",
+                                "position": { "start": { "line": 31, "column": 371, "offset": 3421 }, "end": { "line": 31, "column": 383, "offset": 3433 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 31, "column": 370, "offset": 3420 }, "end": { "line": 31, "column": 453, "offset": 3503 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", ",
+                        "position": { "start": { "line": 31, "column": 453, "offset": 3503 }, "end": { "line": 31, "column": 455, "offset": 3505 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://www.atlassian.com/git/tutorials/syncing/git-push" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "git push",
+                                "position": { "start": { "line": 31, "column": 456, "offset": 3506 }, "end": { "line": 31, "column": 464, "offset": 3514 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 31, "column": 455, "offset": 3505 }, "end": { "line": 31, "column": 523, "offset": 3573 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", and more.",
+                        "position": { "start": { "line": 31, "column": 523, "offset": 3573 }, "end": { "line": 31, "column": 534, "offset": 3584 } }
+                    }
+                ],
+                "position": { "start": { "line": 31, "column": 1, "offset": 3051 }, "end": { "line": 31, "column": 534, "offset": 3584 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 32, "column": 1, "offset": 3585 } }
+    }
+}

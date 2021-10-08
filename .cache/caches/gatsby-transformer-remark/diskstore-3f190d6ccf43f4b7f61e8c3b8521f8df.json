@@ -1,0 +1,911 @@
+{
+    "expireTime": 9007200888440671000,
+    "key": "transformer-remark-markdown-ast-10d3e12df26a8c52ae13d8c827efbb95--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "heading",
+                "depth": 1,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "await",
+                        "position": { "start": { "line": 2, "column": 3, "offset": 3 }, "end": { "line": 2, "column": 8, "offset": 8 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 8, "offset": 8 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The ",
+                        "position": { "start": { "line": 4, "column": 1, "offset": 10 }, "end": { "line": 4, "column": 5, "offset": 14 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": { "start": { "line": 4, "column": 5, "offset": 14 }, "end": { "line": 4, "column": 12, "offset": 21 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " operator is used to wait for a ",
+                        "position": { "start": { "line": 4, "column": 12, "offset": 21 }, "end": { "line": 4, "column": 44, "offset": 53 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "../global_objects/promise",
+                        "children": [
+                            {
+                                "type": "inlineCode",
+                                "value": "Promise",
+                                "position": {
+                                    "start": { "line": 4, "column": 45, "offset": 54 },
+                                    "end": { "line": 4, "column": 54, "offset": 63 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 4, "column": 44, "offset": 53 }, "end": { "line": 4, "column": 82, "offset": 91 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ". It can only be used inside an ",
+                        "position": { "start": { "line": 4, "column": 82, "offset": 91 }, "end": { "line": 4, "column": 114, "offset": 123 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "../statements/async_function",
+                        "children": [
+                            {
+                                "type": "inlineCode",
+                                "value": "async function",
+                                "position": {
+                                    "start": { "line": 4, "column": 115, "offset": 124 },
+                                    "end": { "line": 4, "column": 131, "offset": 140 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 4, "column": 114, "offset": 123 }, "end": { "line": 4, "column": 162, "offset": 171 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " within regular JavaScript code; however it can be used on its own with ",
+                        "position": { "start": { "line": 4, "column": 162, "offset": 171 }, "end": { "line": 4, "column": 234, "offset": 243 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "JavaScript modules.",
+                                "position": {
+                                    "start": { "line": 4, "column": 235, "offset": 244 },
+                                    "end": { "line": 4, "column": 254, "offset": 263 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 4, "column": 234, "offset": 243 }, "end": { "line": 4, "column": 326, "offset": 335 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 10 }, "end": { "line": 4, "column": 326, "offset": 335 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Syntax",
+                        "position": { "start": { "line": 6, "column": 4, "offset": 340 }, "end": { "line": 6, "column": 10, "offset": 346 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 6, "column": 1, "offset": 337 }, "end": { "line": 6, "column": 10, "offset": 346 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": null,
+                "meta": null,
+                "value": "[rv] = await expression;",
+                "position": { "start": { "line": 8, "column": 1, "offset": 348 }, "end": { "line": 8, "column": 29, "offset": 376 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "inlineCode",
+                        "value": "expression",
+                        "position": { "start": { "line": 10, "column": 1, "offset": 378 }, "end": { "line": 10, "column": 13, "offset": 390 }, "indent": [] }
+                    },
+                    {
+                        "type": "break",
+                        "position": { "start": { "line": 10, "column": 13, "offset": 390 }, "end": { "line": 11, "column": 1, "offset": 393 }, "indent": [1] }
+                    },
+                    {
+                        "type": "text",
+                        "value": "A ",
+                        "position": { "start": { "line": 11, "column": 1, "offset": 393 }, "end": { "line": 11, "column": 3, "offset": 395 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "../global_objects/promise",
+                        "children": [
+                            {
+                                "type": "inlineCode",
+                                "value": "Promise",
+                                "position": {
+                                    "start": { "line": 11, "column": 4, "offset": 396 },
+                                    "end": { "line": 11, "column": 13, "offset": 405 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 11, "column": 3, "offset": 395 }, "end": { "line": 11, "column": 41, "offset": 433 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " or any value to wait for.",
+                        "position": { "start": { "line": 11, "column": 41, "offset": 433 }, "end": { "line": 11, "column": 67, "offset": 459 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 378 }, "end": { "line": 11, "column": 67, "offset": 459 }, "indent": [1] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "inlineCode",
+                        "value": "rv",
+                        "position": { "start": { "line": 13, "column": 1, "offset": 461 }, "end": { "line": 13, "column": 5, "offset": 465 }, "indent": [] }
+                    },
+                    {
+                        "type": "break",
+                        "position": { "start": { "line": 13, "column": 5, "offset": 465 }, "end": { "line": 14, "column": 1, "offset": 468 }, "indent": [1] }
+                    },
+                    {
+                        "type": "text",
+                        "value": "Returns the fulfilled value of the promise, or the value itself if it's not a ",
+                        "position": { "start": { "line": 14, "column": 1, "offset": 468 }, "end": { "line": 14, "column": 79, "offset": 546 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 14, "column": 79, "offset": 546 }, "end": { "line": 14, "column": 88, "offset": 555 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 14, "column": 88, "offset": 555 }, "end": { "line": 14, "column": 89, "offset": 556 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 13, "column": 1, "offset": 461 }, "end": { "line": 14, "column": 89, "offset": 556 }, "indent": [1] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Description",
+                        "position": { "start": { "line": 16, "column": 4, "offset": 561 }, "end": { "line": 16, "column": 15, "offset": 572 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 16, "column": 1, "offset": 558 }, "end": { "line": 16, "column": 15, "offset": 572 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The ",
+                        "position": { "start": { "line": 18, "column": 1, "offset": 574 }, "end": { "line": 18, "column": 5, "offset": 578 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": { "start": { "line": 18, "column": 5, "offset": 578 }, "end": { "line": 18, "column": 12, "offset": 585 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " expression causes ",
+                        "position": { "start": { "line": 18, "column": 12, "offset": 585 }, "end": { "line": 18, "column": 31, "offset": 604 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "async",
+                        "position": { "start": { "line": 18, "column": 31, "offset": 604 }, "end": { "line": 18, "column": 38, "offset": 611 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " function execution to pause until a ",
+                        "position": { "start": { "line": 18, "column": 38, "offset": 611 }, "end": { "line": 18, "column": 75, "offset": 648 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 18, "column": 75, "offset": 648 }, "end": { "line": 18, "column": 84, "offset": 657 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is settled (that is, fulfilled or rejected), and to resume execution of the ",
+                        "position": { "start": { "line": 18, "column": 84, "offset": 657 }, "end": { "line": 18, "column": 161, "offset": 734 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "async",
+                        "position": { "start": { "line": 18, "column": 161, "offset": 734 }, "end": { "line": 18, "column": 168, "offset": 741 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " function after fulfillment. When resumed, the value of the ",
+                        "position": { "start": { "line": 18, "column": 168, "offset": 741 }, "end": { "line": 18, "column": 228, "offset": 801 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": { "start": { "line": 18, "column": 228, "offset": 801 }, "end": { "line": 18, "column": 235, "offset": 808 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " expression is that of the fulfilled ",
+                        "position": { "start": { "line": 18, "column": 235, "offset": 808 }, "end": { "line": 18, "column": 272, "offset": 845 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 18, "column": 272, "offset": 845 }, "end": { "line": 18, "column": 281, "offset": 854 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 18, "column": 281, "offset": 854 }, "end": { "line": 18, "column": 282, "offset": 855 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 18, "column": 1, "offset": 574 }, "end": { "line": 18, "column": 282, "offset": 855 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "If the ",
+                        "position": { "start": { "line": 20, "column": 1, "offset": 857 }, "end": { "line": 20, "column": 8, "offset": 864 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 20, "column": 8, "offset": 864 }, "end": { "line": 20, "column": 17, "offset": 873 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is rejected, the ",
+                        "position": { "start": { "line": 20, "column": 17, "offset": 873 }, "end": { "line": 20, "column": 35, "offset": 891 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": { "start": { "line": 20, "column": 35, "offset": 891 }, "end": { "line": 20, "column": 42, "offset": 898 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " expression throws the rejected value.",
+                        "position": { "start": { "line": 20, "column": 42, "offset": 898 }, "end": { "line": 20, "column": 80, "offset": 936 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 20, "column": 1, "offset": 857 }, "end": { "line": 20, "column": 80, "offset": 936 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "If the value of the ",
+                        "position": { "start": { "line": 22, "column": 1, "offset": 938 }, "end": { "line": 22, "column": 21, "offset": 958 }, "indent": [] }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "expression",
+                                "position": {
+                                    "start": { "line": 22, "column": 22, "offset": 959 },
+                                    "end": { "line": 22, "column": 32, "offset": 969 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 22, "column": 21, "offset": 958 }, "end": { "line": 22, "column": 33, "offset": 970 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " following the ",
+                        "position": { "start": { "line": 22, "column": 33, "offset": 970 }, "end": { "line": 22, "column": 48, "offset": 985 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": { "start": { "line": 22, "column": 48, "offset": 985 }, "end": { "line": 22, "column": 55, "offset": 992 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " operator is not a ",
+                        "position": { "start": { "line": 22, "column": 55, "offset": 992 }, "end": { "line": 22, "column": 74, "offset": 1011 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 22, "column": 74, "offset": 1011 }, "end": { "line": 22, "column": 83, "offset": 1020 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", it's converted to a ",
+                        "position": {
+                            "start": { "line": 22, "column": 83, "offset": 1020 },
+                            "end": { "line": 22, "column": 105, "offset": 1042 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "../global_objects/promise/resolve",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "resolved Promise",
+                                "position": {
+                                    "start": { "line": 22, "column": 106, "offset": 1043 },
+                                    "end": { "line": 22, "column": 122, "offset": 1059 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 22, "column": 105, "offset": 1042 },
+                            "end": { "line": 22, "column": 158, "offset": 1095 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": {
+                            "start": { "line": 22, "column": 158, "offset": 1095 },
+                            "end": { "line": 22, "column": 159, "offset": 1096 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 22, "column": 1, "offset": 938 }, "end": { "line": 22, "column": 159, "offset": 1096 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "An ",
+                        "position": { "start": { "line": 24, "column": 1, "offset": 1098 }, "end": { "line": 24, "column": 4, "offset": 1101 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": { "start": { "line": 24, "column": 4, "offset": 1101 }, "end": { "line": 24, "column": 11, "offset": 1108 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " splits execution flow, allowing the caller of the async function to resume execution. After the ",
+                        "position": {
+                            "start": { "line": 24, "column": 11, "offset": 1108 },
+                            "end": { "line": 24, "column": 108, "offset": 1205 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": {
+                            "start": { "line": 24, "column": 108, "offset": 1205 },
+                            "end": { "line": 24, "column": 115, "offset": 1212 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " defers the continuation of the async function, execution of subsequent statements ensues. If this ",
+                        "position": {
+                            "start": { "line": 24, "column": 115, "offset": 1212 },
+                            "end": { "line": 24, "column": 214, "offset": 1311 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": {
+                            "start": { "line": 24, "column": 214, "offset": 1311 },
+                            "end": { "line": 24, "column": 221, "offset": 1318 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is the last expression executed by its function, execution continues by returning to the function's caller a pending ",
+                        "position": {
+                            "start": { "line": 24, "column": 221, "offset": 1318 },
+                            "end": { "line": 24, "column": 339, "offset": 1436 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": {
+                            "start": { "line": 24, "column": 339, "offset": 1436 },
+                            "end": { "line": 24, "column": 348, "offset": 1445 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " for completion of the ",
+                        "position": {
+                            "start": { "line": 24, "column": 348, "offset": 1445 },
+                            "end": { "line": 24, "column": 371, "offset": 1468 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": {
+                            "start": { "line": 24, "column": 371, "offset": 1468 },
+                            "end": { "line": 24, "column": 378, "offset": 1475 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": "'s function and resuming execution of that caller.",
+                        "position": {
+                            "start": { "line": 24, "column": 378, "offset": 1475 },
+                            "end": { "line": 24, "column": 428, "offset": 1525 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 24, "column": 1, "offset": 1098 }, "end": { "line": 24, "column": 428, "offset": 1525 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Examples",
+                        "position": { "start": { "line": 26, "column": 4, "offset": 1530 }, "end": { "line": 26, "column": 12, "offset": 1538 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 26, "column": 1, "offset": 1527 }, "end": { "line": 26, "column": 12, "offset": 1538 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Awaiting a promise to be fulfilled",
+                        "position": { "start": { "line": 28, "column": 5, "offset": 1544 }, "end": { "line": 28, "column": 39, "offset": 1578 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 28, "column": 1, "offset": 1540 }, "end": { "line": 28, "column": 39, "offset": 1578 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "If a ",
+                        "position": { "start": { "line": 30, "column": 1, "offset": 1580 }, "end": { "line": 30, "column": 6, "offset": 1585 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 30, "column": 6, "offset": 1585 }, "end": { "line": 30, "column": 15, "offset": 1594 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is passed to an ",
+                        "position": { "start": { "line": 30, "column": 15, "offset": 1594 }, "end": { "line": 30, "column": 32, "offset": 1611 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": { "start": { "line": 30, "column": 32, "offset": 1611 }, "end": { "line": 30, "column": 39, "offset": 1618 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " expression, it waits for the ",
+                        "position": { "start": { "line": 30, "column": 39, "offset": 1618 }, "end": { "line": 30, "column": 69, "offset": 1648 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 30, "column": 69, "offset": 1648 }, "end": { "line": 30, "column": 78, "offset": 1657 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " to be fulfilled and returns the fulfilled value.",
+                        "position": {
+                            "start": { "line": 30, "column": 78, "offset": 1657 },
+                            "end": { "line": 30, "column": 127, "offset": 1706 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 30, "column": 1, "offset": 1580 }, "end": { "line": 30, "column": 127, "offset": 1706 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": null,
+                "meta": null,
+                "value": "function resolveAfter2Seconds(x) {\n  return new Promise(resolve => {\n    setTimeout(() => {\n      resolve(x);\n    }, 2000);\n  });\n}\n\nasync function f1() {\n  var x = await resolveAfter2Seconds(10);\n  console.log(x); // 10\n}\n\nf1();",
+                "position": {
+                    "start": { "line": 32, "column": 1, "offset": 1708 },
+                    "end": { "line": 45, "column": 10, "offset": 1985 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Thenable objects",
+                        "position": { "start": { "line": 47, "column": 5, "offset": 1991 }, "end": { "line": 47, "column": 21, "offset": 2007 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 47, "column": 1, "offset": 1987 }, "end": { "line": 47, "column": 21, "offset": 2007 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "../global_objects/promise/then",
+                        "children": [
+                            {
+                                "type": "inlineCode",
+                                "value": "Thenable objects",
+                                "position": {
+                                    "start": { "line": 49, "column": 2, "offset": 2010 },
+                                    "end": { "line": 49, "column": 20, "offset": 2028 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 49, "column": 1, "offset": 2009 }, "end": { "line": 49, "column": 53, "offset": 2061 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " will be fulfilled just the same.",
+                        "position": { "start": { "line": 49, "column": 53, "offset": 2061 }, "end": { "line": 49, "column": 86, "offset": 2094 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 49, "column": 1, "offset": 2009 }, "end": { "line": 49, "column": 86, "offset": 2094 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": null,
+                "meta": null,
+                "value": "async function f2() {\n  const thenable = {\n    then: function(resolve, _reject) {\n      resolve('resolved!')\n    }\n  };\n  console.log(await thenable); // resolved!\n}\n\nf2();",
+                "position": {
+                    "start": { "line": 51, "column": 1, "offset": 2096 },
+                    "end": { "line": 60, "column": 10, "offset": 2304 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Conversion to promise",
+                        "position": { "start": { "line": 62, "column": 5, "offset": 2310 }, "end": { "line": 62, "column": 26, "offset": 2331 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 62, "column": 1, "offset": 2306 }, "end": { "line": 62, "column": 26, "offset": 2331 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "If the value is not a ",
+                        "position": { "start": { "line": 64, "column": 1, "offset": 2333 }, "end": { "line": 64, "column": 23, "offset": 2355 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 64, "column": 23, "offset": 2355 }, "end": { "line": 64, "column": 32, "offset": 2364 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", it converts the value to a resolved ",
+                        "position": { "start": { "line": 64, "column": 32, "offset": 2364 }, "end": { "line": 64, "column": 70, "offset": 2402 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 64, "column": 70, "offset": 2402 }, "end": { "line": 64, "column": 79, "offset": 2411 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", and waits for it.",
+                        "position": { "start": { "line": 64, "column": 79, "offset": 2411 }, "end": { "line": 64, "column": 98, "offset": 2430 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 64, "column": 1, "offset": 2333 }, "end": { "line": 64, "column": 98, "offset": 2430 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": null,
+                "meta": null,
+                "value": "async function f3() {\n  var y = await 20;\n  console.log(y); // 20\n}\n\nf3();",
+                "position": {
+                    "start": { "line": 66, "column": 1, "offset": 2432 },
+                    "end": { "line": 71, "column": 10, "offset": 2526 },
+                    "indent": [1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Promise rejection",
+                        "position": { "start": { "line": 73, "column": 5, "offset": 2532 }, "end": { "line": 73, "column": 22, "offset": 2549 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 73, "column": 1, "offset": 2528 }, "end": { "line": 73, "column": 22, "offset": 2549 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "If the ",
+                        "position": { "start": { "line": 75, "column": 1, "offset": 2551 }, "end": { "line": 75, "column": 8, "offset": 2558 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 75, "column": 8, "offset": 2558 }, "end": { "line": 75, "column": 17, "offset": 2567 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is rejected, the rejected value is thrown.",
+                        "position": { "start": { "line": 75, "column": 17, "offset": 2567 }, "end": { "line": 75, "column": 60, "offset": 2610 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 75, "column": 1, "offset": 2551 }, "end": { "line": 75, "column": 60, "offset": 2610 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": null,
+                "meta": null,
+                "value": "async function f4() {\n  try {\n    var z = await Promise.reject(30);\n  } catch(e) {\n    console.error(e); // 30\n  }\n}\n\nf4();",
+                "position": {
+                    "start": { "line": 77, "column": 1, "offset": 2612 },
+                    "end": { "line": 85, "column": 10, "offset": 2767 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Handling rejected promises",
+                        "position": { "start": { "line": 87, "column": 5, "offset": 2773 }, "end": { "line": 87, "column": 31, "offset": 2799 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 87, "column": 1, "offset": 2769 }, "end": { "line": 87, "column": 31, "offset": 2799 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Handle rejected ",
+                        "position": { "start": { "line": 89, "column": 1, "offset": 2801 }, "end": { "line": 89, "column": 17, "offset": 2817 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "Promise",
+                        "position": { "start": { "line": 89, "column": 17, "offset": 2817 }, "end": { "line": 89, "column": 26, "offset": 2826 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " without try block.",
+                        "position": { "start": { "line": 89, "column": 26, "offset": 2826 }, "end": { "line": 89, "column": 45, "offset": 2845 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 89, "column": 1, "offset": 2801 }, "end": { "line": 89, "column": 45, "offset": 2845 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": null,
+                "meta": null,
+                "value": "var response = await promisedFunction().catch((err) => { console.error(err); });\n// response will be undefined if the promise is rejected",
+                "position": { "start": { "line": 91, "column": 1, "offset": 2847 }, "end": { "line": 92, "column": 61, "offset": 2992 }, "indent": [1] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Top level await",
+                        "position": { "start": { "line": 94, "column": 5, "offset": 2998 }, "end": { "line": 94, "column": 20, "offset": 3013 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 94, "column": 1, "offset": 2994 }, "end": { "line": 94, "column": 20, "offset": 3013 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can use the ",
+                        "position": { "start": { "line": 96, "column": 1, "offset": 3015 }, "end": { "line": 96, "column": 17, "offset": 3031 }, "indent": [] }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": { "start": { "line": 96, "column": 17, "offset": 3031 }, "end": { "line": 96, "column": 24, "offset": 3038 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " keyword on its own (outside of an async function) within a ",
+                        "position": { "start": { "line": 96, "column": 24, "offset": 3038 }, "end": { "line": 96, "column": 84, "offset": 3098 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "JavaScript module",
+                                "position": {
+                                    "start": { "line": 96, "column": 85, "offset": 3099 },
+                                    "end": { "line": 96, "column": 102, "offset": 3116 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 96, "column": 84, "offset": 3098 },
+                            "end": { "line": 96, "column": 174, "offset": 3188 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ". This means modules, with child modules that use ",
+                        "position": {
+                            "start": { "line": 96, "column": 174, "offset": 3188 },
+                            "end": { "line": 96, "column": 224, "offset": 3238 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "await",
+                        "position": {
+                            "start": { "line": 96, "column": 224, "offset": 3238 },
+                            "end": { "line": 96, "column": 231, "offset": 3245 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", wait for the child module to execute before they themselves run. All while not blocking other child modules from loading.",
+                        "position": {
+                            "start": { "line": 96, "column": 231, "offset": 3245 },
+                            "end": { "line": 96, "column": 354, "offset": 3368 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 96, "column": 1, "offset": 3015 }, "end": { "line": 96, "column": 354, "offset": 3368 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Here is an example of a simple module using the ",
+                        "position": { "start": { "line": 98, "column": 1, "offset": 3370 }, "end": { "line": 98, "column": 49, "offset": 3418 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Fetch API",
+                                "position": {
+                                    "start": { "line": 98, "column": 50, "offset": 3419 },
+                                    "end": { "line": 98, "column": 59, "offset": 3428 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 98, "column": 49, "offset": 3418 },
+                            "end": { "line": 98, "column": 120, "offset": 3489 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " and specifying await within the ",
+                        "position": {
+                            "start": { "line": 98, "column": 120, "offset": 3489 },
+                            "end": { "line": 98, "column": 153, "offset": 3522 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "inlineCode",
+                        "value": "export statement",
+                        "position": {
+                            "start": { "line": 98, "column": 153, "offset": 3522 },
+                            "end": { "line": 98, "column": 171, "offset": 3540 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Any modules that include this will wait for the fetch to resolve before running any code.",
+                        "position": {
+                            "start": { "line": 98, "column": 171, "offset": 3540 },
+                            "end": { "line": 98, "column": 262, "offset": 3631 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 98, "column": 1, "offset": 3370 }, "end": { "line": 98, "column": 262, "offset": 3631 }, "indent": [] }
+            },
+            {
+                "type": "code",
+                "lang": null,
+                "meta": null,
+                "value": "// fetch request\nconst colors = fetch('../data/colors.json')\n  .then(response => response.json());\n\nexport default await colors;",
+                "position": {
+                    "start": { "line": 100, "column": 1, "offset": 3633 },
+                    "end": { "line": 104, "column": 33, "offset": 3777 },
+                    "indent": [1, 1, 1, 1]
+                }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 105, "column": 1, "offset": 3778 } }
+    }
+}
