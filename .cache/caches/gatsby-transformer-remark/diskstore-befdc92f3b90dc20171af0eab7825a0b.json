@@ -1,1 +1,765 @@
-{"expireTime":9007200888440672000,"key":"transformer-remark-markdown-html-ast-2048a56a96386e7aca9a69b29b906278--","val":{"type":"root","children":[{"type":"element","tagName":"h1","properties":{},"children":[{"type":"text","value":"NPX:","position":{"start":{"line":2,"column":3,"offset":3},"end":{"line":2,"column":7,"offset":7}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":7,"offset":7}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"npx"}],"position":{"start":{"line":4,"column":1,"offset":9},"end":{"line":4,"column":6,"offset":14}}},{"type":"text","value":" is a very powerful command that's been available in ","position":{"start":{"line":4,"column":6,"offset":14},"end":{"line":4,"column":59,"offset":67}}},{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"npm","position":{"start":{"line":4,"column":61,"offset":69},"end":{"line":4,"column":64,"offset":72}}}],"position":{"start":{"line":4,"column":59,"offset":67},"end":{"line":4,"column":66,"offset":74}}},{"type":"text","value":" starting version 5.2, released in July 2017.","position":{"start":{"line":4,"column":66,"offset":74},"end":{"line":4,"column":111,"offset":119}}}],"position":{"start":{"line":4,"column":1,"offset":9},"end":{"line":4,"column":111,"offset":119}}},{"type":"text","value":"\n"},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"If you don't want to install npm, you can ","position":{"start":{"line":6,"column":3,"offset":123},"end":{"line":6,"column":45,"offset":165}}},{"type":"element","tagName":"a","properties":{"href":"https://www.npmjs.com/package/npx"},"children":[{"type":"text","value":"install npx as a standalone package","position":{"start":{"line":6,"column":46,"offset":166},"end":{"line":6,"column":81,"offset":201}}}],"position":{"start":{"line":6,"column":45,"offset":165},"end":{"line":6,"column":117,"offset":237}}}],"position":{"start":{"line":6,"column":3,"offset":123},"end":{"line":6,"column":117,"offset":237}}},{"type":"text","value":"\n"}],"position":{"start":{"line":6,"column":1,"offset":121},"end":{"line":6,"column":117,"offset":237}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"npx"}],"position":{"start":{"line":8,"column":1,"offset":239},"end":{"line":8,"column":6,"offset":244}}},{"type":"text","value":" lets you run code built with Node.js and published through the npm registry.","position":{"start":{"line":8,"column":6,"offset":244},"end":{"line":8,"column":83,"offset":321}}}],"position":{"start":{"line":8,"column":1,"offset":239},"end":{"line":8,"column":83,"offset":321}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"Easily run local commands","position":{"start":{"line":10,"column":4,"offset":326},"end":{"line":10,"column":29,"offset":351}}}],"position":{"start":{"line":10,"column":1,"offset":323},"end":{"line":10,"column":29,"offset":351}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Node.js developers used to publish most of the executable commands as global packages, in order for them to be in the path and executable immediately.","position":{"start":{"line":12,"column":1,"offset":353},"end":{"line":12,"column":151,"offset":503}}}],"position":{"start":{"line":12,"column":1,"offset":353},"end":{"line":12,"column":151,"offset":503}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This was a pain because you could not really install different versions of the same command.","position":{"start":{"line":14,"column":1,"offset":505},"end":{"line":14,"column":93,"offset":597}}}],"position":{"start":{"line":14,"column":1,"offset":505},"end":{"line":14,"column":93,"offset":597}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Running ","position":{"start":{"line":16,"column":1,"offset":599},"end":{"line":16,"column":9,"offset":607}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"npx commandname"}],"position":{"start":{"line":16,"column":9,"offset":607},"end":{"line":16,"column":26,"offset":624}}},{"type":"text","value":" automatically finds the correct reference of the command inside the ","position":{"start":{"line":16,"column":26,"offset":624},"end":{"line":16,"column":95,"offset":693}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"node_modules"}],"position":{"start":{"line":16,"column":95,"offset":693},"end":{"line":16,"column":109,"offset":707}}},{"type":"text","value":" folder of a project, without needing to know the exact path, and without requiring the package to be installed globally and in the user's path.","position":{"start":{"line":16,"column":109,"offset":707},"end":{"line":16,"column":253,"offset":851}}}],"position":{"start":{"line":16,"column":1,"offset":599},"end":{"line":16,"column":253,"offset":851}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"Installation-less command execution","position":{"start":{"line":18,"column":4,"offset":856},"end":{"line":18,"column":39,"offset":891}}}],"position":{"start":{"line":18,"column":1,"offset":853},"end":{"line":18,"column":39,"offset":891}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"There is another great feature of ","position":{"start":{"line":20,"column":1,"offset":893},"end":{"line":20,"column":35,"offset":927}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"npx"}],"position":{"start":{"line":20,"column":35,"offset":927},"end":{"line":20,"column":40,"offset":932}}},{"type":"text","value":", which is allowing to run commands without first installing them.","position":{"start":{"line":20,"column":40,"offset":932},"end":{"line":20,"column":106,"offset":998}}}],"position":{"start":{"line":20,"column":1,"offset":893},"end":{"line":20,"column":106,"offset":998}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This is pretty useful, mostly because:","position":{"start":{"line":22,"column":1,"offset":1000},"end":{"line":22,"column":39,"offset":1038}}}],"position":{"start":{"line":22,"column":1,"offset":1000},"end":{"line":22,"column":39,"offset":1038}}},{"type":"text","value":"\n"},{"type":"element","tagName":"ol","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"text","value":"you don't need to install anything","position":{"start":{"line":24,"column":4,"offset":1043},"end":{"line":24,"column":38,"offset":1077}}}],"position":{"start":{"line":24,"column":1,"offset":1040},"end":{"line":24,"column":38,"offset":1077}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"text","value":"you can run different versions of the same command, using the syntax @version","position":{"start":{"line":25,"column":4,"offset":1081},"end":{"line":25,"column":81,"offset":1158}}}],"position":{"start":{"line":25,"column":1,"offset":1078},"end":{"line":25,"column":81,"offset":1158}}},{"type":"text","value":"\n"}],"position":{"start":{"line":24,"column":1,"offset":1040},"end":{"line":25,"column":81,"offset":1158}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A typical demonstration of using ","position":{"start":{"line":27,"column":1,"offset":1160},"end":{"line":27,"column":34,"offset":1193}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"npx"}],"position":{"start":{"line":27,"column":34,"offset":1193},"end":{"line":27,"column":39,"offset":1198}}},{"type":"text","value":" is through the ","position":{"start":{"line":27,"column":39,"offset":1198},"end":{"line":27,"column":55,"offset":1214}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"cowsay"}],"position":{"start":{"line":27,"column":55,"offset":1214},"end":{"line":27,"column":63,"offset":1222}}},{"type":"text","value":" command. ","position":{"start":{"line":27,"column":63,"offset":1222},"end":{"line":27,"column":73,"offset":1232}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"cowsay"}],"position":{"start":{"line":27,"column":73,"offset":1232},"end":{"line":27,"column":81,"offset":1240}}},{"type":"text","value":" will print a cow saying what you wrote in the command. For example:","position":{"start":{"line":27,"column":81,"offset":1240},"end":{"line":27,"column":149,"offset":1308}}}],"position":{"start":{"line":27,"column":1,"offset":1160},"end":{"line":27,"column":149,"offset":1308}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"cowsay \"Hello\""}],"position":{"start":{"line":29,"column":1,"offset":1310},"end":{"line":29,"column":17,"offset":1326}}},{"type":"text","value":" will print","position":{"start":{"line":29,"column":17,"offset":1326},"end":{"line":29,"column":28,"offset":1337}}}],"position":{"start":{"line":29,"column":1,"offset":1310},"end":{"line":29,"column":28,"offset":1337}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":" _______\n< Hello >\n -------\n        \\   ^__^\n         \\  (oo)\\_______\n            (__)\\       )\\/\\\n                ||----w |\n                ||     ||\n"}],"position":{"start":{"line":31,"column":1,"offset":1339},"end":{"line":40,"column":4,"offset":1497}}}],"position":{"start":{"line":31,"column":1,"offset":1339},"end":{"line":40,"column":4,"offset":1497}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This only works if you have the ","position":{"start":{"line":42,"column":1,"offset":1499},"end":{"line":42,"column":33,"offset":1531}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"cowsay"}],"position":{"start":{"line":42,"column":33,"offset":1531},"end":{"line":42,"column":41,"offset":1539}}},{"type":"text","value":" command globally installed from npm previously. Otherwise you'll get an error when you try to run the command.","position":{"start":{"line":42,"column":41,"offset":1539},"end":{"line":42,"column":152,"offset":1650}}}],"position":{"start":{"line":42,"column":1,"offset":1499},"end":{"line":42,"column":152,"offset":1650}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"npx"}],"position":{"start":{"line":44,"column":1,"offset":1652},"end":{"line":44,"column":6,"offset":1657}}},{"type":"text","value":" allows you to run that npm command without having it installed locally:","position":{"start":{"line":44,"column":6,"offset":1657},"end":{"line":44,"column":78,"offset":1729}}}],"position":{"start":{"line":44,"column":1,"offset":1652},"end":{"line":44,"column":78,"offset":1729}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-bash"]},"children":[{"type":"text","value":"npx cowsay \"Hello\"\n"}],"position":{"start":{"line":46,"column":1,"offset":1731},"end":{"line":48,"column":4,"offset":1761}}}],"position":{"start":{"line":46,"column":1,"offset":1731},"end":{"line":48,"column":4,"offset":1761}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"will do the job.","position":{"start":{"line":50,"column":1,"offset":1763},"end":{"line":50,"column":17,"offset":1779}}}],"position":{"start":{"line":50,"column":1,"offset":1763},"end":{"line":50,"column":17,"offset":1779}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Now, this is a funny useless command.\nOther scenarios include:","position":{"start":{"line":52,"column":1,"offset":1781},"end":{"line":53,"column":25,"offset":1843}}}],"position":{"start":{"line":52,"column":1,"offset":1781},"end":{"line":53,"column":25,"offset":1843}}},{"type":"text","value":"\n"},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"text","value":"running the ","position":{"start":{"line":55,"column":5,"offset":1849},"end":{"line":55,"column":17,"offset":1861}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"vue"}],"position":{"start":{"line":55,"column":17,"offset":1861},"end":{"line":55,"column":22,"offset":1866}}},{"type":"text","value":" CLI tool to create new applications and run them: ","position":{"start":{"line":55,"column":22,"offset":1866},"end":{"line":55,"column":73,"offset":1917}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"npx @vue/cli create my-vue-app"}],"position":{"start":{"line":55,"column":73,"offset":1917},"end":{"line":55,"column":105,"offset":1949}}}],"position":{"start":{"line":55,"column":1,"offset":1845},"end":{"line":55,"column":105,"offset":1949}}},{"type":"text","value":"\n"},{"type":"element","tagName":"li","properties":{},"children":[{"type":"text","value":"creating a new React app using ","position":{"start":{"line":56,"column":5,"offset":1954},"end":{"line":56,"column":36,"offset":1985}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"create-react-app"}],"position":{"start":{"line":56,"column":36,"offset":1985},"end":{"line":56,"column":54,"offset":2003}}},{"type":"text","value":": ","position":{"start":{"line":56,"column":54,"offset":2003},"end":{"line":56,"column":56,"offset":2005}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"npx create-react-app my-react-app"}],"position":{"start":{"line":56,"column":56,"offset":2005},"end":{"line":56,"column":91,"offset":2040}}}],"position":{"start":{"line":56,"column":1,"offset":1950},"end":{"line":56,"column":91,"offset":2040}}},{"type":"text","value":"\n"}],"position":{"start":{"line":55,"column":1,"offset":1845},"end":{"line":56,"column":91,"offset":2040}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"and many more.","position":{"start":{"line":58,"column":1,"offset":2042},"end":{"line":58,"column":15,"offset":2056}}}],"position":{"start":{"line":58,"column":1,"offset":2042},"end":{"line":58,"column":15,"offset":2056}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Once downloaded, the downloaded code will be wiped.","position":{"start":{"line":60,"column":1,"offset":2058},"end":{"line":60,"column":52,"offset":2109}}}],"position":{"start":{"line":60,"column":1,"offset":2058},"end":{"line":60,"column":52,"offset":2109}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"Run some code using a different Node.js version","position":{"start":{"line":62,"column":4,"offset":2114},"end":{"line":62,"column":51,"offset":2161}}}],"position":{"start":{"line":62,"column":1,"offset":2111},"end":{"line":62,"column":51,"offset":2161}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Use the ","position":{"start":{"line":64,"column":1,"offset":2163},"end":{"line":64,"column":9,"offset":2171}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"@"}],"position":{"start":{"line":64,"column":9,"offset":2171},"end":{"line":64,"column":12,"offset":2174}}},{"type":"text","value":" to specify the version, and combine that with the ","position":{"start":{"line":64,"column":12,"offset":2174},"end":{"line":64,"column":63,"offset":2225}}},{"type":"element","tagName":"a","properties":{"href":"https://www.npmjs.com/package/node"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"node"}],"position":{"start":{"line":64,"column":64,"offset":2226},"end":{"line":64,"column":70,"offset":2232}}},{"type":"text","value":" npm package","position":{"start":{"line":64,"column":70,"offset":2232},"end":{"line":64,"column":82,"offset":2244}}}],"position":{"start":{"line":64,"column":63,"offset":2225},"end":{"line":64,"column":119,"offset":2281}}},{"type":"text","value":":","position":{"start":{"line":64,"column":119,"offset":2281},"end":{"line":64,"column":120,"offset":2282}}}],"position":{"start":{"line":64,"column":1,"offset":2163},"end":{"line":64,"column":120,"offset":2282}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-bash"]},"children":[{"type":"text","value":"npx node@10 -v #v10.18.1\nnpx node@12 -v #v12.14.1\n"}],"position":{"start":{"line":66,"column":1,"offset":2284},"end":{"line":69,"column":4,"offset":2345}}}],"position":{"start":{"line":66,"column":1,"offset":2284},"end":{"line":69,"column":4,"offset":2345}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This helps to avoid tools like ","position":{"start":{"line":71,"column":1,"offset":2347},"end":{"line":71,"column":32,"offset":2378}}},{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"nvm"}],"position":{"start":{"line":71,"column":32,"offset":2378},"end":{"line":71,"column":37,"offset":2383}}},{"type":"text","value":" or the other Node.js version management tools.","position":{"start":{"line":71,"column":37,"offset":2383},"end":{"line":71,"column":84,"offset":2430}}}],"position":{"start":{"line":71,"column":1,"offset":2347},"end":{"line":71,"column":84,"offset":2430}}},{"type":"text","value":"\n"},{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"Run arbitrary code snippets directly from a URL","position":{"start":{"line":73,"column":4,"offset":2435},"end":{"line":73,"column":51,"offset":2482}}}],"position":{"start":{"line":73,"column":1,"offset":2432},"end":{"line":73,"column":51,"offset":2482}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"npx"}],"position":{"start":{"line":75,"column":1,"offset":2484},"end":{"line":75,"column":6,"offset":2489}}},{"type":"text","value":" does not limit you to the packages published on the npm registry.","position":{"start":{"line":75,"column":6,"offset":2489},"end":{"line":75,"column":72,"offset":2555}}}],"position":{"start":{"line":75,"column":1,"offset":2484},"end":{"line":75,"column":72,"offset":2555}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"You can run code that sits in a GitHub gist, for example:","position":{"start":{"line":77,"column":1,"offset":2557},"end":{"line":77,"column":58,"offset":2614}}}],"position":{"start":{"line":77,"column":1,"offset":2557},"end":{"line":77,"column":58,"offset":2614}}},{"type":"text","value":"\n"},{"type":"element","tagName":"pre","properties":{},"children":[{"type":"element","tagName":"code","properties":{"className":["language-bash"]},"children":[{"type":"text","value":"npx https://gist.github.com/zkat/4bc19503fe9e9309e2bfaa2c58074d32\n"}],"position":{"start":{"line":79,"column":1,"offset":2616},"end":{"line":81,"column":4,"offset":2693}}}],"position":{"start":{"line":79,"column":1,"offset":2616},"end":{"line":81,"column":4,"offset":2693}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Of course, you need to be careful when running code that you do not control, as with great power comes great responsibility.","position":{"start":{"line":83,"column":1,"offset":2695},"end":{"line":83,"column":125,"offset":2819}}}],"position":{"start":{"line":83,"column":1,"offset":2695},"end":{"line":83,"column":125,"offset":2819}}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":84,"column":1,"offset":2820}}}}
+{
+    "expireTime": 9007200888440672000,
+    "key": "transformer-remark-markdown-html-ast-2048a56a96386e7aca9a69b29b906278--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "h1",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "NPX:",
+                        "position": { "start": { "line": 2, "column": 3, "offset": 3 }, "end": { "line": 2, "column": 7, "offset": 7 } }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 7, "offset": 7 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "npx" }],
+                        "position": { "start": { "line": 4, "column": 1, "offset": 9 }, "end": { "line": 4, "column": 6, "offset": 14 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is a very powerful command that's been available in ",
+                        "position": { "start": { "line": 4, "column": 6, "offset": 14 }, "end": { "line": 4, "column": 59, "offset": 67 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "npm",
+                                "position": { "start": { "line": 4, "column": 61, "offset": 69 }, "end": { "line": 4, "column": 64, "offset": 72 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 4, "column": 59, "offset": 67 }, "end": { "line": 4, "column": 66, "offset": 74 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " starting version 5.2, released in July 2017.",
+                        "position": { "start": { "line": 4, "column": 66, "offset": 74 }, "end": { "line": 4, "column": 111, "offset": 119 } }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 9 }, "end": { "line": 4, "column": 111, "offset": 119 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "If you don't want to install npm, you can ",
+                                "position": { "start": { "line": 6, "column": 3, "offset": 123 }, "end": { "line": 6, "column": 45, "offset": 165 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "a",
+                                "properties": { "href": "https://www.npmjs.com/package/npx" },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "install npx as a standalone package",
+                                        "position": { "start": { "line": 6, "column": 46, "offset": 166 }, "end": { "line": 6, "column": 81, "offset": 201 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 6, "column": 45, "offset": 165 }, "end": { "line": 6, "column": 117, "offset": 237 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 6, "column": 3, "offset": 123 }, "end": { "line": 6, "column": 117, "offset": 237 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 6, "column": 1, "offset": 121 }, "end": { "line": 6, "column": 117, "offset": 237 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "npx" }],
+                        "position": { "start": { "line": 8, "column": 1, "offset": 239 }, "end": { "line": 8, "column": 6, "offset": 244 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " lets you run code built with Node.js and published through the npm registry.",
+                        "position": { "start": { "line": 8, "column": 6, "offset": 244 }, "end": { "line": 8, "column": 83, "offset": 321 } }
+                    }
+                ],
+                "position": { "start": { "line": 8, "column": 1, "offset": 239 }, "end": { "line": 8, "column": 83, "offset": 321 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Easily run local commands",
+                        "position": { "start": { "line": 10, "column": 4, "offset": 326 }, "end": { "line": 10, "column": 29, "offset": 351 } }
+                    }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 323 }, "end": { "line": 10, "column": 29, "offset": 351 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Node.js developers used to publish most of the executable commands as global packages, in order for them to be in the path and executable immediately.",
+                        "position": { "start": { "line": 12, "column": 1, "offset": 353 }, "end": { "line": 12, "column": 151, "offset": 503 } }
+                    }
+                ],
+                "position": { "start": { "line": 12, "column": 1, "offset": 353 }, "end": { "line": 12, "column": 151, "offset": 503 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "This was a pain because you could not really install different versions of the same command.",
+                        "position": { "start": { "line": 14, "column": 1, "offset": 505 }, "end": { "line": 14, "column": 93, "offset": 597 } }
+                    }
+                ],
+                "position": { "start": { "line": 14, "column": 1, "offset": 505 }, "end": { "line": 14, "column": 93, "offset": 597 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Running ",
+                        "position": { "start": { "line": 16, "column": 1, "offset": 599 }, "end": { "line": 16, "column": 9, "offset": 607 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "npx commandname" }],
+                        "position": { "start": { "line": 16, "column": 9, "offset": 607 }, "end": { "line": 16, "column": 26, "offset": 624 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " automatically finds the correct reference of the command inside the ",
+                        "position": { "start": { "line": 16, "column": 26, "offset": 624 }, "end": { "line": 16, "column": 95, "offset": 693 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "node_modules" }],
+                        "position": { "start": { "line": 16, "column": 95, "offset": 693 }, "end": { "line": 16, "column": 109, "offset": 707 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " folder of a project, without needing to know the exact path, and without requiring the package to be installed globally and in the user's path.",
+                        "position": { "start": { "line": 16, "column": 109, "offset": 707 }, "end": { "line": 16, "column": 253, "offset": 851 } }
+                    }
+                ],
+                "position": { "start": { "line": 16, "column": 1, "offset": 599 }, "end": { "line": 16, "column": 253, "offset": 851 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Installation-less command execution",
+                        "position": { "start": { "line": 18, "column": 4, "offset": 856 }, "end": { "line": 18, "column": 39, "offset": 891 } }
+                    }
+                ],
+                "position": { "start": { "line": 18, "column": 1, "offset": 853 }, "end": { "line": 18, "column": 39, "offset": 891 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "There is another great feature of ",
+                        "position": { "start": { "line": 20, "column": 1, "offset": 893 }, "end": { "line": 20, "column": 35, "offset": 927 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "npx" }],
+                        "position": { "start": { "line": 20, "column": 35, "offset": 927 }, "end": { "line": 20, "column": 40, "offset": 932 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", which is allowing to run commands without first installing them.",
+                        "position": { "start": { "line": 20, "column": 40, "offset": 932 }, "end": { "line": 20, "column": 106, "offset": 998 } }
+                    }
+                ],
+                "position": { "start": { "line": 20, "column": 1, "offset": 893 }, "end": { "line": 20, "column": 106, "offset": 998 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "This is pretty useful, mostly because:",
+                        "position": { "start": { "line": 22, "column": 1, "offset": 1000 }, "end": { "line": 22, "column": 39, "offset": 1038 } }
+                    }
+                ],
+                "position": { "start": { "line": 22, "column": 1, "offset": 1000 }, "end": { "line": 22, "column": 39, "offset": 1038 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ol",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "you don't need to install anything",
+                                "position": { "start": { "line": 24, "column": 4, "offset": 1043 }, "end": { "line": 24, "column": 38, "offset": 1077 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 24, "column": 1, "offset": 1040 }, "end": { "line": 24, "column": 38, "offset": 1077 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "you can run different versions of the same command, using the syntax @version",
+                                "position": { "start": { "line": 25, "column": 4, "offset": 1081 }, "end": { "line": 25, "column": 81, "offset": 1158 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 25, "column": 1, "offset": 1078 }, "end": { "line": 25, "column": 81, "offset": 1158 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 24, "column": 1, "offset": 1040 }, "end": { "line": 25, "column": 81, "offset": 1158 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "A typical demonstration of using ",
+                        "position": { "start": { "line": 27, "column": 1, "offset": 1160 }, "end": { "line": 27, "column": 34, "offset": 1193 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "npx" }],
+                        "position": { "start": { "line": 27, "column": 34, "offset": 1193 }, "end": { "line": 27, "column": 39, "offset": 1198 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " is through the ",
+                        "position": { "start": { "line": 27, "column": 39, "offset": 1198 }, "end": { "line": 27, "column": 55, "offset": 1214 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "cowsay" }],
+                        "position": { "start": { "line": 27, "column": 55, "offset": 1214 }, "end": { "line": 27, "column": 63, "offset": 1222 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " command. ",
+                        "position": { "start": { "line": 27, "column": 63, "offset": 1222 }, "end": { "line": 27, "column": 73, "offset": 1232 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "cowsay" }],
+                        "position": { "start": { "line": 27, "column": 73, "offset": 1232 }, "end": { "line": 27, "column": 81, "offset": 1240 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " will print a cow saying what you wrote in the command. For example:",
+                        "position": { "start": { "line": 27, "column": 81, "offset": 1240 }, "end": { "line": 27, "column": 149, "offset": 1308 } }
+                    }
+                ],
+                "position": { "start": { "line": 27, "column": 1, "offset": 1160 }, "end": { "line": 27, "column": 149, "offset": 1308 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "cowsay \"Hello\"" }],
+                        "position": { "start": { "line": 29, "column": 1, "offset": 1310 }, "end": { "line": 29, "column": 17, "offset": 1326 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " will print",
+                        "position": { "start": { "line": 29, "column": 17, "offset": 1326 }, "end": { "line": 29, "column": 28, "offset": 1337 } }
+                    }
+                ],
+                "position": { "start": { "line": 29, "column": 1, "offset": 1310 }, "end": { "line": 29, "column": 28, "offset": 1337 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": " _______\n< Hello >\n -------\n        \\   ^__^\n         \\  (oo)\\_______\n            (__)\\       )\\/\\\n                ||----w |\n                ||     ||\n"
+                            }
+                        ],
+                        "position": { "start": { "line": 31, "column": 1, "offset": 1339 }, "end": { "line": 40, "column": 4, "offset": 1497 } }
+                    }
+                ],
+                "position": { "start": { "line": 31, "column": 1, "offset": 1339 }, "end": { "line": 40, "column": 4, "offset": 1497 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "This only works if you have the ",
+                        "position": { "start": { "line": 42, "column": 1, "offset": 1499 }, "end": { "line": 42, "column": 33, "offset": 1531 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "cowsay" }],
+                        "position": { "start": { "line": 42, "column": 33, "offset": 1531 }, "end": { "line": 42, "column": 41, "offset": 1539 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " command globally installed from npm previously. Otherwise you'll get an error when you try to run the command.",
+                        "position": { "start": { "line": 42, "column": 41, "offset": 1539 }, "end": { "line": 42, "column": 152, "offset": 1650 } }
+                    }
+                ],
+                "position": { "start": { "line": 42, "column": 1, "offset": 1499 }, "end": { "line": 42, "column": 152, "offset": 1650 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "npx" }],
+                        "position": { "start": { "line": 44, "column": 1, "offset": 1652 }, "end": { "line": 44, "column": 6, "offset": 1657 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " allows you to run that npm command without having it installed locally:",
+                        "position": { "start": { "line": 44, "column": 6, "offset": 1657 }, "end": { "line": 44, "column": 78, "offset": 1729 } }
+                    }
+                ],
+                "position": { "start": { "line": 44, "column": 1, "offset": 1652 }, "end": { "line": 44, "column": 78, "offset": 1729 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-bash"] },
+                        "children": [{ "type": "text", "value": "npx cowsay \"Hello\"\n" }],
+                        "position": { "start": { "line": 46, "column": 1, "offset": 1731 }, "end": { "line": 48, "column": 4, "offset": 1761 } }
+                    }
+                ],
+                "position": { "start": { "line": 46, "column": 1, "offset": 1731 }, "end": { "line": 48, "column": 4, "offset": 1761 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "will do the job.",
+                        "position": { "start": { "line": 50, "column": 1, "offset": 1763 }, "end": { "line": 50, "column": 17, "offset": 1779 } }
+                    }
+                ],
+                "position": { "start": { "line": 50, "column": 1, "offset": 1763 }, "end": { "line": 50, "column": 17, "offset": 1779 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Now, this is a funny useless command.\nOther scenarios include:",
+                        "position": { "start": { "line": 52, "column": 1, "offset": 1781 }, "end": { "line": 53, "column": 25, "offset": 1843 } }
+                    }
+                ],
+                "position": { "start": { "line": 52, "column": 1, "offset": 1781 }, "end": { "line": 53, "column": 25, "offset": 1843 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "running the ",
+                                "position": { "start": { "line": 55, "column": 5, "offset": 1849 }, "end": { "line": 55, "column": 17, "offset": 1861 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "vue" }],
+                                "position": { "start": { "line": 55, "column": 17, "offset": 1861 }, "end": { "line": 55, "column": 22, "offset": 1866 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " CLI tool to create new applications and run them: ",
+                                "position": { "start": { "line": 55, "column": 22, "offset": 1866 }, "end": { "line": 55, "column": 73, "offset": 1917 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "npx @vue/cli create my-vue-app" }],
+                                "position": { "start": { "line": 55, "column": 73, "offset": 1917 }, "end": { "line": 55, "column": 105, "offset": 1949 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 55, "column": 1, "offset": 1845 }, "end": { "line": 55, "column": 105, "offset": 1949 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "creating a new React app using ",
+                                "position": { "start": { "line": 56, "column": 5, "offset": 1954 }, "end": { "line": 56, "column": 36, "offset": 1985 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "create-react-app" }],
+                                "position": { "start": { "line": 56, "column": 36, "offset": 1985 }, "end": { "line": 56, "column": 54, "offset": 2003 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": ": ",
+                                "position": { "start": { "line": 56, "column": 54, "offset": 2003 }, "end": { "line": 56, "column": 56, "offset": 2005 } }
+                            },
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "npx create-react-app my-react-app" }],
+                                "position": { "start": { "line": 56, "column": 56, "offset": 2005 }, "end": { "line": 56, "column": 91, "offset": 2040 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 56, "column": 1, "offset": 1950 }, "end": { "line": 56, "column": 91, "offset": 2040 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 55, "column": 1, "offset": 1845 }, "end": { "line": 56, "column": 91, "offset": 2040 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "and many more.",
+                        "position": { "start": { "line": 58, "column": 1, "offset": 2042 }, "end": { "line": 58, "column": 15, "offset": 2056 } }
+                    }
+                ],
+                "position": { "start": { "line": 58, "column": 1, "offset": 2042 }, "end": { "line": 58, "column": 15, "offset": 2056 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Once downloaded, the downloaded code will be wiped.",
+                        "position": { "start": { "line": 60, "column": 1, "offset": 2058 }, "end": { "line": 60, "column": 52, "offset": 2109 } }
+                    }
+                ],
+                "position": { "start": { "line": 60, "column": 1, "offset": 2058 }, "end": { "line": 60, "column": 52, "offset": 2109 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Run some code using a different Node.js version",
+                        "position": { "start": { "line": 62, "column": 4, "offset": 2114 }, "end": { "line": 62, "column": 51, "offset": 2161 } }
+                    }
+                ],
+                "position": { "start": { "line": 62, "column": 1, "offset": 2111 }, "end": { "line": 62, "column": 51, "offset": 2161 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Use the ",
+                        "position": { "start": { "line": 64, "column": 1, "offset": 2163 }, "end": { "line": 64, "column": 9, "offset": 2171 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "@" }],
+                        "position": { "start": { "line": 64, "column": 9, "offset": 2171 }, "end": { "line": 64, "column": 12, "offset": 2174 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " to specify the version, and combine that with the ",
+                        "position": { "start": { "line": 64, "column": 12, "offset": 2174 }, "end": { "line": 64, "column": 63, "offset": 2225 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://www.npmjs.com/package/node" },
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "code",
+                                "properties": {},
+                                "children": [{ "type": "text", "value": "node" }],
+                                "position": { "start": { "line": 64, "column": 64, "offset": 2226 }, "end": { "line": 64, "column": 70, "offset": 2232 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " npm package",
+                                "position": { "start": { "line": 64, "column": 70, "offset": 2232 }, "end": { "line": 64, "column": 82, "offset": 2244 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 64, "column": 63, "offset": 2225 }, "end": { "line": 64, "column": 119, "offset": 2281 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ":",
+                        "position": { "start": { "line": 64, "column": 119, "offset": 2281 }, "end": { "line": 64, "column": 120, "offset": 2282 } }
+                    }
+                ],
+                "position": { "start": { "line": 64, "column": 1, "offset": 2163 }, "end": { "line": 64, "column": 120, "offset": 2282 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-bash"] },
+                        "children": [{ "type": "text", "value": "npx node@10 -v #v10.18.1\nnpx node@12 -v #v12.14.1\n" }],
+                        "position": { "start": { "line": 66, "column": 1, "offset": 2284 }, "end": { "line": 69, "column": 4, "offset": 2345 } }
+                    }
+                ],
+                "position": { "start": { "line": 66, "column": 1, "offset": 2284 }, "end": { "line": 69, "column": 4, "offset": 2345 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "This helps to avoid tools like ",
+                        "position": { "start": { "line": 71, "column": 1, "offset": 2347 }, "end": { "line": 71, "column": 32, "offset": 2378 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "nvm" }],
+                        "position": { "start": { "line": 71, "column": 32, "offset": 2378 }, "end": { "line": 71, "column": 37, "offset": 2383 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " or the other Node.js version management tools.",
+                        "position": { "start": { "line": 71, "column": 37, "offset": 2383 }, "end": { "line": 71, "column": 84, "offset": 2430 } }
+                    }
+                ],
+                "position": { "start": { "line": 71, "column": 1, "offset": 2347 }, "end": { "line": 71, "column": 84, "offset": 2430 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Run arbitrary code snippets directly from a URL",
+                        "position": { "start": { "line": 73, "column": 4, "offset": 2435 }, "end": { "line": 73, "column": 51, "offset": 2482 } }
+                    }
+                ],
+                "position": { "start": { "line": 73, "column": 1, "offset": 2432 }, "end": { "line": 73, "column": 51, "offset": 2482 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [{ "type": "text", "value": "npx" }],
+                        "position": { "start": { "line": 75, "column": 1, "offset": 2484 }, "end": { "line": 75, "column": 6, "offset": 2489 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " does not limit you to the packages published on the npm registry.",
+                        "position": { "start": { "line": 75, "column": 6, "offset": 2489 }, "end": { "line": 75, "column": 72, "offset": 2555 } }
+                    }
+                ],
+                "position": { "start": { "line": 75, "column": 1, "offset": 2484 }, "end": { "line": 75, "column": 72, "offset": 2555 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can run code that sits in a GitHub gist, for example:",
+                        "position": { "start": { "line": 77, "column": 1, "offset": 2557 }, "end": { "line": 77, "column": 58, "offset": 2614 } }
+                    }
+                ],
+                "position": { "start": { "line": 77, "column": 1, "offset": 2557 }, "end": { "line": 77, "column": 58, "offset": 2614 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "pre",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": { "className": ["language-bash"] },
+                        "children": [{ "type": "text", "value": "npx https://gist.github.com/zkat/4bc19503fe9e9309e2bfaa2c58074d32\n" }],
+                        "position": { "start": { "line": 79, "column": 1, "offset": 2616 }, "end": { "line": 81, "column": 4, "offset": 2693 } }
+                    }
+                ],
+                "position": { "start": { "line": 79, "column": 1, "offset": 2616 }, "end": { "line": 81, "column": 4, "offset": 2693 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Of course, you need to be careful when running code that you do not control, as with great power comes great responsibility.",
+                        "position": { "start": { "line": 83, "column": 1, "offset": 2695 }, "end": { "line": 83, "column": 125, "offset": 2819 } }
+                    }
+                ],
+                "position": { "start": { "line": 83, "column": 1, "offset": 2695 }, "end": { "line": 83, "column": 125, "offset": 2819 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 84, "column": 1, "offset": 2820 } }
+    }
+}

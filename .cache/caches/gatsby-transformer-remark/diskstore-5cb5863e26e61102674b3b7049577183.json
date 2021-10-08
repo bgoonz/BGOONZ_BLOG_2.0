@@ -1,1 +1,33 @@
-{"expireTime":9007200888440671000,"key":"transformer-remark-markdown-ast-89a8838ac3b62559ddf7d61dd3223a4f--","val":{"type":"root","children":[{"type":"html","value":"<br>\n<br>\n<br>\n<hr>\n<br>\n<iframe width=\"100%\" height=\"500\" frameborder=\"0\"\nsrc=\"https://observablehq.com/embed/@bgoonz/mode-lighting/2?cell=*\"></iframe>\n<br>\n<br>","position":{"start":{"line":3,"column":1,"offset":2},"end":{"line":11,"column":5,"offset":164},"indent":[1,1,1,1,1,1,1,1]}},{"type":"html","value":"<br>\n<hr>\n<br>\n    <iframe\n      width=\"100%\"\n      height=\"1000\"\n      frameborder=\"0\"\n      src=\"https://observablehq.com/embed/@bgoonz/determining-the-key-of-bwv1001-1st-movement-adagio?cell=*\"\n    ></iframe>\n<br>\n<br>\n<br>\n<hr>\n<br>\n    <iframe\n      width=\"100%\"\n      height=\"784\"\n      frameborder=\"0\"\n      src=\"https://observablehq.com/embed/@bgoonz/can-sound-add-value-to-data-visualizations?cells=viewof+chart\"\n    ></iframe>\n<br>\n<br>","position":{"start":{"line":13,"column":1,"offset":166},"end":{"line":34,"column":5,"offset":612},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"html","value":"<br>\n<hr>\n<br>","position":{"start":{"line":36,"column":1,"offset":614},"end":{"line":38,"column":5,"offset":628},"indent":[1,1]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":39,"column":1,"offset":629}}}}
+{
+    "expireTime": 9007200888440671000,
+    "key": "transformer-remark-markdown-ast-89a8838ac3b62559ddf7d61dd3223a4f--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "html",
+                "value": "<br>\n<br>\n<br>\n<hr>\n<br>\n<iframe width=\"100%\" height=\"500\" frameborder=\"0\"\nsrc=\"https://observablehq.com/embed/@bgoonz/mode-lighting/2?cell=*\"></iframe>\n<br>\n<br>",
+                "position": {
+                    "start": { "line": 3, "column": 1, "offset": 2 },
+                    "end": { "line": 11, "column": 5, "offset": 164 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "html",
+                "value": "<br>\n<hr>\n<br>\n    <iframe\n      width=\"100%\"\n      height=\"1000\"\n      frameborder=\"0\"\n      src=\"https://observablehq.com/embed/@bgoonz/determining-the-key-of-bwv1001-1st-movement-adagio?cell=*\"\n    ></iframe>\n<br>\n<br>\n<br>\n<hr>\n<br>\n    <iframe\n      width=\"100%\"\n      height=\"784\"\n      frameborder=\"0\"\n      src=\"https://observablehq.com/embed/@bgoonz/can-sound-add-value-to-data-visualizations?cells=viewof+chart\"\n    ></iframe>\n<br>\n<br>",
+                "position": {
+                    "start": { "line": 13, "column": 1, "offset": 166 },
+                    "end": { "line": 34, "column": 5, "offset": 612 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "html",
+                "value": "<br>\n<hr>\n<br>",
+                "position": { "start": { "line": 36, "column": 1, "offset": 614 }, "end": { "line": 38, "column": 5, "offset": 628 }, "indent": [1, 1] }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 39, "column": 1, "offset": 629 } }
+    }
+}
