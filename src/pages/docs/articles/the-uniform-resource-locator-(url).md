@@ -3,12 +3,13 @@ title: The Uniform Resource Locator (URL)
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 ### Let's look at the anatomy of a URL:&#xA;&#xA;
 
 The first part of the URL is http://, this is often left out when URLs are written, so we might see the above as www.mq.edu.au/about/profile/history.html. This will work when you type it into your web browser because the browser will assume you meant this as an HTTP URL. However, if we are being pedantic, the prefix is required as it tells us something about the web address - that we should use the HTTP protocol to access it.
@@ -54,13 +55,5 @@ Finally, absolute URLs (like http://example.org/static/style.css) will be used 
 One final form of relative URL looks like this:
 
 This URL is only missing the protocol part and is turned into an absolute URL by adding the protocol part of the current page URL. So if the current page was requested over http or https, this URL will use the same protocol. This is often useful if a site can be served over both protocols although it is increasingly the case that https is being used everywhere so this may become less common as time progresses.
-
-
-
-
-
-
-
-
 
 [Share To Facebook:](https://www.facebook.com/sharer/sharer.php?u=https://bgoonz-blog.netlify.app/)

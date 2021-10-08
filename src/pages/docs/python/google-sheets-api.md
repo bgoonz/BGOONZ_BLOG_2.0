@@ -3,31 +3,24 @@ title: google-sheets-api
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
-**If you’re maintaining a dataset that frequently has to be updated in a predictable and consistent manner, automating that process has obvious benefits. It might cost some time to set up the code to automate the work, but you’ll likely save time in the long run. And, if you’re like me, writing the code will be less mind-numbing than repeatedly updating the same spreadsheet over and over again!**![](https://miro.medium.com/max/30/1\*5RtrFThuAvHiqxxwPp5Ptg.png?q=20)
 
+**If you’re maintaining a dataset that frequently has to be updated in a predictable and consistent manner, automating that process has obvious benefits. It might cost some time to set up the code to automate the work, but you’ll likely save time in the long run. And, if you’re like me, writing the code will be less mind-numbing than repeatedly updating the same spreadsheet over and over again!**![](https://miro.medium.com/max/30/1*5RtrFThuAvHiqxxwPp5Ptg.png?q=20)
 
+![](https://miro.medium.com/max/709/1*5RtrFThuAvHiqxxwPp5Ptg.png)
 
-![](https://miro.medium.com/max/709/1\*5RtrFThuAvHiqxxwPp5Ptg.png)
+Screenshot of Google Cloud Console edited by the author.![](https://miro.medium.com/max/30/1*ahdHCrx8ngiDP0dBANKvgg.png?q=20)![](https://miro.medium.com/max/709/1*ahdHCrx8ngiDP0dBANKvgg.png)
 
-Screenshot of Google Cloud Console edited by the author.![](https://miro.medium.com/max/30/1\*ahdHCrx8ngiDP0dBANKvgg.png?q=20)![](https://miro.medium.com/max/709/1\*ahdHCrx8ngiDP0dBANKvgg.png)
+taken after successfully running the quickstart script.![](https://miro.medium.com/max/30/1*E_PHwbLycJ7mQSad2QszKw.png?q=20)![](https://miro.medium.com/max/709/1*E_PHwbLycJ7mQSad2QszKw.png)
 
- taken after successfully running the quickstart script.![](https://miro.medium.com/max/30/1\*E_PHwbLycJ7mQSad2QszKw.png?q=20)![](https://miro.medium.com/max/709/1\*E_PHwbLycJ7mQSad2QszKw.png)
+![](https://miro.medium.com/max/709/1*cN14i55zhZfg_X63kQcBEw.png)
 
-
-
-![](https://miro.medium.com/max/709/1\*cN14i55zhZfg_X63kQcBEw.png)
-
-
-
-
-
-.![](https://miro.medium.com/max/30/1\*wH0Dop5RSg3tS3sEnfIY4g.png?q=20)![](https://miro.medium.com/max/709/1\*wH0Dop5RSg3tS3sEnfIY4g.png)
+.![](https://miro.medium.com/max/30/1*wH0Dop5RSg3tS3sEnfIY4g.png?q=20)![](https://miro.medium.com/max/709/1*wH0Dop5RSg3tS3sEnfIY4g.png)
 
 Screenshot by the author.
 
@@ -49,31 +42,31 @@ To get started with any of the Google workspace APIs, you need to have a so-call
 
 After creating a GCP project (step 1), we need to set up our credentials for accessing the API. Our credentials are like a key for the API to know who is requesting access to its data and services. You can follow the steps listed [here](https://developers.google.com/workspace/guides/create-credentials) to *create desktop application credentials*. In my experience, some steps were missing in this tutorial, so I’m giving the detailed version below.
 
-*   Start by navigating back to your [Google Cloud Console](https://console.cloud.google.com/home/dashboard).
+-   Start by navigating back to your [Google Cloud Console](https://console.cloud.google.com/home/dashboard).
 
-*   Find the *APIs & Services* tab, and then select the *Credentials* page
+-   Find the *APIs & Services* tab, and then select the *Credentials* page
 
-*   Click on \*+Create Credentials \*and select *OAuth client ID*.
+-   Click on \*+Create Credentials \*and select *OAuth client ID*.
 
 <!---->
 
-*   Select *Desktop app* as the application type and give your app a name. Then click create.
+-   Select *Desktop app* as the application type and give your app a name. Then click create.
 
-*   You will be prompted to set up your OAuth consent screen. Follow the steps you are prompted with and make sure to add yourself as a test user.
+-   You will be prompted to set up your OAuth consent screen. Follow the steps you are prompted with and make sure to add yourself as a test user.
 
-*   After generating your client ID, you will be able to see it on your credentials page.
+-   After generating your client ID, you will be able to see it on your credentials page.
 
-*   Click the download button to download a JSON file with your credentials. Rename it to *credentials.json*. You will need this in the next step.
+-   Click the download button to download a JSON file with your credentials. Rename it to *credentials.json*. You will need this in the next step.
 
 ## Step 3: Set up the API
 
 After creating a GCP project and generating your credentials, it is time to connect to the API with Python for the first time. You can follow the steps outlined [here](https://developers.google.com/sheets/api/quickstart/python). The steps given on the Google developers page are pretty self-explanatory. Three things I want to add:
 
-*   Make sure to have a look at the prerequisites before diving in.
+-   Make sure to have a look at the prerequisites before diving in.
 
-*   Don’t forget to move your *credentials.json* file to the same folder where your *quickstart.py* file is.
+-   Don’t forget to move your *credentials.json* file to the same folder where your *quickstart.py* file is.
 
-*   Change the URL in the SCOPE list in the quickstart script to *https://www.googleapis.com/auth/spreadsheets* to make sure that you have both read and write access.
+-   Change the URL in the SCOPE list in the quickstart script to *https://www.googleapis.com/auth/spreadsheets* to make sure that you have both read and write access.
 
 If everything goes as expected, you should see this in your browser after running the sample script:
 

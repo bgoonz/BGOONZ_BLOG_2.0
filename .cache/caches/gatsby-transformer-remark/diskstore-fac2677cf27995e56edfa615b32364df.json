@@ -1,0 +1,181 @@
+{
+    "expireTime": 9007200888440672000,
+    "key": "transformer-remark-markdown-html-ast-1e88d43240e8b1058d4d56fa4d974934--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "h2",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Visualizing the Discrete Fourier Transform",
+                        "position": { "start": { "line": 2, "column": 4, "offset": 4 }, "end": { "line": 2, "column": 46, "offset": 46 } }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 46, "offset": 46 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "A couple of years ago I suggested a way of thinking about ",
+                        "position": { "start": { "line": 4, "column": 1, "offset": 48 }, "end": { "line": 4, "column": 59, "offset": 106 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://blog.revolutionanalytics.com/2014/01/the-fourier-transform-explained-in-one-sentence.html" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "how the Discrete Fourier Transform works",
+                                "position": { "start": { "line": 4, "column": 60, "offset": 107 }, "end": { "line": 4, "column": 100, "offset": 147 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 4, "column": 59, "offset": 106 }, "end": { "line": 4, "column": 200, "offset": 247 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", based on Stuart Riffle's elegant colour-coding of the equation:",
+                        "position": { "start": { "line": 4, "column": 200, "offset": 247 }, "end": { "line": 4, "column": 265, "offset": 312 } }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 48 }, "end": { "line": 4, "column": 265, "offset": 312 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "http://revolution-computing.typepad.com/.a/6a010534b1db25970b019b0172129c970c-pi" },
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "img",
+                                "properties": {
+                                    "src": "https://revolution-computing.typepad.com/.a/6a010534b1db25970b019b0172129c970c-800wi",
+                                    "alt": "The fourier transform, explained in one color-coded sentence",
+                                    "title": "The fourier transform, explained in one color-coded sentence"
+                                },
+                                "children": [],
+                                "position": { "start": { "line": 6, "column": 2, "offset": 315 }, "end": { "line": 6, "column": 214, "offset": 527 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 6, "column": 1, "offset": 314 }, "end": { "line": 6, "column": 297, "offset": 610 } }
+                    }
+                ],
+                "position": { "start": { "line": 6, "column": 1, "offset": 314 }, "end": { "line": 6, "column": 297, "offset": 610 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "(Sadly, Stuart's ",
+                        "position": { "start": { "line": 8, "column": 1, "offset": 612 }, "end": { "line": 8, "column": 18, "offset": 629 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "http://www.altdevblogaday.com/2011/05/17/understanding-the-fourier-transform/" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "original post",
+                                "position": { "start": { "line": 8, "column": 19, "offset": 630 }, "end": { "line": 8, "column": 32, "offset": 643 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 8, "column": 18, "offset": 629 }, "end": { "line": 8, "column": 112, "offset": 723 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " describing the equation has been lost to bitrot, and can't even be found in the Wayback Machine.) My contribution was the following analogy:",
+                        "position": { "start": { "line": 8, "column": 112, "offset": 723 }, "end": { "line": 8, "column": 253, "offset": 864 } }
+                    }
+                ],
+                "position": { "start": { "line": 8, "column": 1, "offset": 612 }, "end": { "line": 8, "column": 253, "offset": 864 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "blockquote",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "p",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Imagine an enormous speaker, mounted on a pole, playing a repeating sound. The speaker is so large, you can see the cone move back and forth with the sound. Mark a point on the cone, and now rotate the pole. Trace the point from an above-ground view, if the resulting squiggly curve is off-center, then there is frequency corresponding the pole's rotational frequency represented in the sound.",
+                                "position": { "start": { "line": 10, "column": 3, "offset": 868 }, "end": { "line": 10, "column": 396, "offset": 1261 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 10, "column": 3, "offset": 868 }, "end": { "line": 10, "column": 396, "offset": 1261 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 866 }, "end": { "line": 10, "column": 396, "offset": 1261 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Dr Bill Connelly from Australia National University has created an interactive simulation of the analogy. Here, the sound from the speaker is a chord of two tones: just enter their frequency and amplitude, and see how the DFT is calculated from the analysis of the rotation:",
+                        "position": { "start": { "line": 12, "column": 1, "offset": 1263 }, "end": { "line": 12, "column": 275, "offset": 1537 } }
+                    }
+                ],
+                "position": { "start": { "line": 12, "column": 1, "offset": 1263 }, "end": { "line": 12, "column": 275, "offset": 1537 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "http://www.billconnelly.net/?p=276" },
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "img",
+                                "properties": {
+                                    "src": "https://revolution-computing.typepad.com/.a/6a010534b1db25970b01bb08743789970d-800wi",
+                                    "alt": "DFT",
+                                    "title": "DFT"
+                                },
+                                "children": [],
+                                "position": { "start": { "line": 14, "column": 2, "offset": 1540 }, "end": { "line": 14, "column": 100, "offset": 1638 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 14, "column": 1, "offset": 1539 }, "end": { "line": 14, "column": 137, "offset": 1675 } }
+                    }
+                ],
+                "position": { "start": { "line": 14, "column": 1, "offset": 1539 }, "end": { "line": 14, "column": 137, "offset": 1675 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 15, "column": 1, "offset": 1676 } }
+    }
+}

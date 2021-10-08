@@ -3,12 +3,13 @@ title: Git Bash
 weight: 0
 excerpt: Git Bash
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 # Git Bash‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌&#xA;&#xA;
 
 At its core, Git is a set of command line utility programs that are designed to execute on a Unix style command-line environment. Modern operating systems like Linux and macOS both include built-in Unix command line terminals. This makes Linux and macOS complementary operating systems when working with Git. Microsoft Windows instead uses Windows command prompt, a non-Unix terminal environment.

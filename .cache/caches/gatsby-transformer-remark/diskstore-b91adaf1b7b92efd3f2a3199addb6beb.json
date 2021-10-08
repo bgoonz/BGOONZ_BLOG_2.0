@@ -1,0 +1,1826 @@
+{
+    "expireTime": 9007200888440671000,
+    "key": "transformer-remark-markdown-ast-3e34b2ed3a2335b21ba0735912254c4f--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Sorting Algorithms",
+                        "position": { "start": { "line": 2, "column": 4, "offset": 4 }, "end": { "line": 2, "column": 22, "offset": 22 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 22, "offset": 22 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 3,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Sorting Algorithms",
+                        "position": { "start": { "line": 4, "column": 5, "offset": 28 }, "end": { "line": 4, "column": 23, "offset": 46 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 24 }, "end": { "line": 4, "column": 23, "offset": 46 }, "indent": [] }
+            },
+            {
+                "type": "list",
+                "ordered": true,
+                "start": 1,
+                "spread": true,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Explain the complexity of and write a function that performs bubble sort on an array of numbers.",
+                                        "position": {
+                                            "start": { "line": 6, "column": 4, "offset": 51 },
+                                            "end": { "line": 6, "column": 100, "offset": 147 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 6, "column": 4, "offset": 51 },
+                                    "end": { "line": 6, "column": 100, "offset": 147 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 6, "column": 1, "offset": 48 }, "end": { "line": 7, "column": 1, "offset": 148 }, "indent": [1] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Time Complexity: O(n^2)",
+                                        "position": {
+                                            "start": { "line": 8, "column": 5, "offset": 153 },
+                                            "end": { "line": 8, "column": 28, "offset": 176 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 8, "column": 5, "offset": 153 },
+                                    "end": { "line": 8, "column": 28, "offset": 176 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "In our worst case, our input is in the opposite order. We have to perform n swaps and loop through our input n times because a swap is made each time.",
+                                                        "position": {
+                                                            "start": { "line": 9, "column": 9, "offset": 185 },
+                                                            "end": { "line": 9, "column": 159, "offset": 335 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 9, "column": 9, "offset": 185 },
+                                                    "end": { "line": 9, "column": 159, "offset": 335 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 9, "column": 5, "offset": 181 },
+                                            "end": { "line": 9, "column": 159, "offset": 335 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 9, "column": 5, "offset": 181 },
+                                    "end": { "line": 9, "column": 159, "offset": 335 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 8, "column": 1, "offset": 149 }, "end": { "line": 9, "column": 159, "offset": 335 }, "indent": [1] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Space Complexity: O(1)",
+                                        "position": {
+                                            "start": { "line": 10, "column": 5, "offset": 340 },
+                                            "end": { "line": 10, "column": 27, "offset": 362 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 10, "column": 5, "offset": 340 },
+                                    "end": { "line": 10, "column": 27, "offset": 362 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.",
+                                                        "position": {
+                                                            "start": { "line": 11, "column": 9, "offset": 371 },
+                                                            "end": { "line": 11, "column": 126, "offset": 488 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 11, "column": 9, "offset": 371 },
+                                                    "end": { "line": 11, "column": 126, "offset": 488 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 11, "column": 5, "offset": 367 },
+                                            "end": { "line": 11, "column": 126, "offset": 488 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 11, "column": 5, "offset": 367 },
+                                    "end": { "line": 11, "column": 126, "offset": 488 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 10, "column": 1, "offset": 336 }, "end": { "line": 11, "column": 126, "offset": 488 }, "indent": [1] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Code example for bubbleSort:",
+                                        "position": {
+                                            "start": { "line": 12, "column": 5, "offset": 493 },
+                                            "end": { "line": 12, "column": 33, "offset": 521 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 12, "column": 5, "offset": 493 },
+                                    "end": { "line": 12, "column": 33, "offset": 521 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 12, "column": 1, "offset": 489 }, "end": { "line": 12, "column": 33, "offset": 521 }, "indent": [] }
+                    }
+                ],
+                "position": {
+                    "start": { "line": 6, "column": 1, "offset": 48 },
+                    "end": { "line": 12, "column": 33, "offset": 521 },
+                    "indent": [1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "code",
+                "lang": "javascript",
+                "meta": null,
+                "value": "function bubbleSort(array) {\n    // We could have also had a 'sorted = false' flag and flipped our logic below\n    let swapped = true;\n\n    while (swapped) {\n        swapped = false;\n\n        for (let i = 0; i < array.length - 1; i++) {\n            if (array[i] > array[i + 1]) {\n                let temp = array[i];\n                array[i] = array[i + 1];\n                array[i + 1] = temp;\n                // The above three lines could also be in a helper swap function\n                // swap(array, i, i+1);\n                swapped = true;\n            }\n        }\n    }\n\n    return array;\n}",
+                "position": {
+                    "start": { "line": 14, "column": 1, "offset": 523 },
+                    "end": { "line": 36, "column": 4, "offset": 1139 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "list",
+                "ordered": true,
+                "start": 2,
+                "spread": true,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Explain the complexity of and write a function that performs selection sort on an array of numbers.",
+                                        "position": {
+                                            "start": { "line": 38, "column": 4, "offset": 1144 },
+                                            "end": { "line": 38, "column": 103, "offset": 1243 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 38, "column": 4, "offset": 1144 },
+                                    "end": { "line": 38, "column": 103, "offset": 1243 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 38, "column": 1, "offset": 1141 }, "end": { "line": 39, "column": 1, "offset": 1244 }, "indent": [1] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Time Complexity: O(n^2)",
+                                        "position": {
+                                            "start": { "line": 40, "column": 5, "offset": 1249 },
+                                            "end": { "line": 40, "column": 28, "offset": 1272 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 40, "column": 5, "offset": 1249 },
+                                    "end": { "line": 40, "column": 28, "offset": 1272 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Our nested loop structure is dependent on the size of our input.",
+                                                        "position": {
+                                                            "start": { "line": 41, "column": 9, "offset": 1281 },
+                                                            "end": { "line": 41, "column": 73, "offset": 1345 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 41, "column": 9, "offset": 1281 },
+                                                    "end": { "line": 41, "column": 73, "offset": 1345 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 41, "column": 5, "offset": 1277 },
+                                            "end": { "line": 41, "column": 73, "offset": 1345 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "The outer loop always occurs n times.",
+                                                        "position": {
+                                                            "start": { "line": 42, "column": 9, "offset": 1354 },
+                                                            "end": { "line": 42, "column": 46, "offset": 1391 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 42, "column": 9, "offset": 1354 },
+                                                    "end": { "line": 42, "column": 46, "offset": 1391 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 42, "column": 5, "offset": 1350 },
+                                            "end": { "line": 42, "column": 46, "offset": 1391 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "For each of those iterations, we have another loop that runs (n - i) times. This just means that the inner loop runs one less time each iteration, but this averages out to (n/2).",
+                                                        "position": {
+                                                            "start": { "line": 43, "column": 9, "offset": 1400 },
+                                                            "end": { "line": 43, "column": 187, "offset": 1578 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 43, "column": 9, "offset": 1400 },
+                                                    "end": { "line": 43, "column": 187, "offset": 1578 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 43, "column": 5, "offset": 1396 },
+                                            "end": { "line": 43, "column": 187, "offset": 1578 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Our nested structure is then T(n ",
+                                                        "position": {
+                                                            "start": { "line": 44, "column": 9, "offset": 1587 },
+                                                            "end": { "line": 44, "column": 42, "offset": 1620 },
+                                                            "indent": []
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "value": "*",
+                                                        "position": {
+                                                            "start": { "line": 44, "column": 42, "offset": 1620 },
+                                                            "end": { "line": 44, "column": 44, "offset": 1622 },
+                                                            "indent": []
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "value": " n/2) = O(n^2)",
+                                                        "position": {
+                                                            "start": { "line": 44, "column": 44, "offset": 1622 },
+                                                            "end": { "line": 44, "column": 58, "offset": 1636 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 44, "column": 9, "offset": 1587 },
+                                                    "end": { "line": 44, "column": 58, "offset": 1636 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 44, "column": 5, "offset": 1583 },
+                                            "end": { "line": 44, "column": 58, "offset": 1636 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 41, "column": 5, "offset": 1277 },
+                                    "end": { "line": 44, "column": 58, "offset": 1636 },
+                                    "indent": [5, 5, 5]
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 40, "column": 1, "offset": 1245 },
+                            "end": { "line": 44, "column": 58, "offset": 1636 },
+                            "indent": [1, 1, 1, 1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Space Complexity: O(1)",
+                                        "position": {
+                                            "start": { "line": 45, "column": 5, "offset": 1641 },
+                                            "end": { "line": 45, "column": 27, "offset": 1663 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 45, "column": 5, "offset": 1641 },
+                                    "end": { "line": 45, "column": 27, "offset": 1663 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.",
+                                                        "position": {
+                                                            "start": { "line": 46, "column": 9, "offset": 1672 },
+                                                            "end": { "line": 46, "column": 126, "offset": 1789 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 46, "column": 9, "offset": 1672 },
+                                                    "end": { "line": 46, "column": 126, "offset": 1789 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 46, "column": 5, "offset": 1668 },
+                                            "end": { "line": 46, "column": 126, "offset": 1789 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 46, "column": 5, "offset": 1668 },
+                                    "end": { "line": 46, "column": 126, "offset": 1789 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 45, "column": 1, "offset": 1637 },
+                            "end": { "line": 46, "column": 126, "offset": 1789 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Code example for selectSort:",
+                                        "position": {
+                                            "start": { "line": 47, "column": 5, "offset": 1794 },
+                                            "end": { "line": 47, "column": 33, "offset": 1822 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 47, "column": 5, "offset": 1794 },
+                                    "end": { "line": 47, "column": 33, "offset": 1822 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 47, "column": 1, "offset": 1790 }, "end": { "line": 47, "column": 33, "offset": 1822 }, "indent": [] }
+                    }
+                ],
+                "position": {
+                    "start": { "line": 38, "column": 1, "offset": 1141 },
+                    "end": { "line": 47, "column": 33, "offset": 1822 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "code",
+                "lang": "javascript",
+                "meta": null,
+                "value": "function selectionSort(arr) {\n    for (let i = 0; i < arr.length; i++) {\n        let minIndex = i;\n\n        for (let j = i + 1; j < arr.length; j++) {\n            if (arr[minIndex] > arr[j]) {\n                minIndex = j;\n            }\n        }\n\n        let temp = arr[i];\n        arr[i] = arr[minIndex];\n        arr[minIndex] = temp;\n        // The above three lines could also be in a helper swap function\n        // swap(arr, i, minIndex);\n    }\n    return arr;\n}",
+                "position": {
+                    "start": { "line": 49, "column": 1, "offset": 1824 },
+                    "end": { "line": 68, "column": 4, "offset": 2310 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "list",
+                "ordered": true,
+                "start": 3,
+                "spread": true,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Explain the complexity of and write a function that performs insertion sort on an array of numbers.",
+                                        "position": {
+                                            "start": { "line": 70, "column": 4, "offset": 2315 },
+                                            "end": { "line": 70, "column": 103, "offset": 2414 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 70, "column": 4, "offset": 2315 },
+                                    "end": { "line": 70, "column": 103, "offset": 2414 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 70, "column": 1, "offset": 2312 }, "end": { "line": 71, "column": 1, "offset": 2415 }, "indent": [1] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Time Complexity: O(n^2)",
+                                        "position": {
+                                            "start": { "line": 72, "column": 5, "offset": 2420 },
+                                            "end": { "line": 72, "column": 28, "offset": 2443 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 72, "column": 5, "offset": 2420 },
+                                    "end": { "line": 72, "column": 28, "offset": 2443 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Our nested loop structure is dependent on the size of our input.",
+                                                        "position": {
+                                                            "start": { "line": 73, "column": 9, "offset": 2452 },
+                                                            "end": { "line": 73, "column": 73, "offset": 2516 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 73, "column": 9, "offset": 2452 },
+                                                    "end": { "line": 73, "column": 73, "offset": 2516 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 73, "column": 5, "offset": 2448 },
+                                            "end": { "line": 73, "column": 73, "offset": 2516 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "The outer loop always occurs n times.",
+                                                        "position": {
+                                                            "start": { "line": 74, "column": 9, "offset": 2525 },
+                                                            "end": { "line": 74, "column": 46, "offset": 2562 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 74, "column": 9, "offset": 2525 },
+                                                    "end": { "line": 74, "column": 46, "offset": 2562 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 74, "column": 5, "offset": 2521 },
+                                            "end": { "line": 74, "column": 46, "offset": 2562 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "For each of those iterations, we have another loop that runs a maximum of (i - 1) times. This just means that the inner loop runs one more time each iteration, but this averages out to (n/2).",
+                                                        "position": {
+                                                            "start": { "line": 75, "column": 9, "offset": 2571 },
+                                                            "end": { "line": 75, "column": 200, "offset": 2762 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 75, "column": 9, "offset": 2571 },
+                                                    "end": { "line": 75, "column": 200, "offset": 2762 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 75, "column": 5, "offset": 2567 },
+                                            "end": { "line": 75, "column": 200, "offset": 2762 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Our nested structure is then T(n ",
+                                                        "position": {
+                                                            "start": { "line": 76, "column": 9, "offset": 2771 },
+                                                            "end": { "line": 76, "column": 42, "offset": 2804 },
+                                                            "indent": []
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "value": "*",
+                                                        "position": {
+                                                            "start": { "line": 76, "column": 42, "offset": 2804 },
+                                                            "end": { "line": 76, "column": 44, "offset": 2806 },
+                                                            "indent": []
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "value": " n/2) = O(n^2)",
+                                                        "position": {
+                                                            "start": { "line": 76, "column": 44, "offset": 2806 },
+                                                            "end": { "line": 76, "column": 58, "offset": 2820 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 76, "column": 9, "offset": 2771 },
+                                                    "end": { "line": 76, "column": 58, "offset": 2820 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 76, "column": 5, "offset": 2767 },
+                                            "end": { "line": 76, "column": 58, "offset": 2820 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 73, "column": 5, "offset": 2448 },
+                                    "end": { "line": 76, "column": 58, "offset": 2820 },
+                                    "indent": [5, 5, 5]
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 72, "column": 1, "offset": 2416 },
+                            "end": { "line": 76, "column": 58, "offset": 2820 },
+                            "indent": [1, 1, 1, 1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Space Complexity: O(1)",
+                                        "position": {
+                                            "start": { "line": 77, "column": 5, "offset": 2825 },
+                                            "end": { "line": 77, "column": 27, "offset": 2847 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 77, "column": 5, "offset": 2825 },
+                                    "end": { "line": 77, "column": 27, "offset": 2847 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.",
+                                                        "position": {
+                                                            "start": { "line": 78, "column": 9, "offset": 2856 },
+                                                            "end": { "line": 78, "column": 126, "offset": 2973 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 78, "column": 9, "offset": 2856 },
+                                                    "end": { "line": 78, "column": 126, "offset": 2973 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 78, "column": 5, "offset": 2852 },
+                                            "end": { "line": 78, "column": 126, "offset": 2973 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 78, "column": 5, "offset": 2852 },
+                                    "end": { "line": 78, "column": 126, "offset": 2973 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 77, "column": 1, "offset": 2821 },
+                            "end": { "line": 78, "column": 126, "offset": 2973 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Code example for insertionSort:",
+                                        "position": {
+                                            "start": { "line": 79, "column": 5, "offset": 2978 },
+                                            "end": { "line": 79, "column": 36, "offset": 3009 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 79, "column": 5, "offset": 2978 },
+                                    "end": { "line": 79, "column": 36, "offset": 3009 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 79, "column": 1, "offset": 2974 }, "end": { "line": 79, "column": 36, "offset": 3009 }, "indent": [] }
+                    }
+                ],
+                "position": {
+                    "start": { "line": 70, "column": 1, "offset": 2312 },
+                    "end": { "line": 79, "column": 36, "offset": 3009 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "code",
+                "lang": "javascript",
+                "meta": null,
+                "value": "function insertionSort(arr) {\n    for (let i = 1; i < arr.length; i++) {\n        let currElement = arr[i];\n        for (var j = i - 1; j >= 0 && currElement < arr[j]; j--) {\n            arr[j + 1] = arr[j];\n        }\n        arr[j + 1] = currElement;\n    }\n    return arr;\n}",
+                "position": {
+                    "start": { "line": 81, "column": 1, "offset": 3011 },
+                    "end": { "line": 92, "column": 4, "offset": 3303 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "list",
+                "ordered": true,
+                "start": 4,
+                "spread": true,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Explain the complexity of and write a function that performs merge sort on an array of numbers.",
+                                        "position": {
+                                            "start": { "line": 94, "column": 4, "offset": 3308 },
+                                            "end": { "line": 94, "column": 99, "offset": 3403 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 94, "column": 4, "offset": 3308 },
+                                    "end": { "line": 94, "column": 99, "offset": 3403 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 94, "column": 1, "offset": 3305 }, "end": { "line": 95, "column": 1, "offset": 3404 }, "indent": [1] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Time Complexity: O(n log n)",
+                                        "position": {
+                                            "start": { "line": 96, "column": 5, "offset": 3409 },
+                                            "end": { "line": 96, "column": 32, "offset": 3436 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 96, "column": 5, "offset": 3409 },
+                                    "end": { "line": 96, "column": 32, "offset": 3436 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Our mergeSort function divides our input in half at each step, recursively calling itself with smaller and smaller input. This results in log n stack frames.",
+                                                        "position": {
+                                                            "start": { "line": 97, "column": 9, "offset": 3445 },
+                                                            "end": { "line": 97, "column": 166, "offset": 3602 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 97, "column": 9, "offset": 3445 },
+                                                    "end": { "line": 97, "column": 166, "offset": 3602 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 97, "column": 5, "offset": 3441 },
+                                            "end": { "line": 97, "column": 166, "offset": 3602 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "On each stack frame, our worst case scenario is having to make n comparisons in our merge function in order to determine which element should come next in our sorted array.",
+                                                        "position": {
+                                                            "start": { "line": 98, "column": 9, "offset": 3611 },
+                                                            "end": { "line": 98, "column": 181, "offset": 3783 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 98, "column": 9, "offset": 3611 },
+                                                    "end": { "line": 98, "column": 181, "offset": 3783 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 98, "column": 5, "offset": 3607 },
+                                            "end": { "line": 98, "column": 181, "offset": 3783 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Since we have log n stack frames and n operations on each frame, we end up with an O(n log n) time complexity",
+                                                        "position": {
+                                                            "start": { "line": 99, "column": 9, "offset": 3792 },
+                                                            "end": { "line": 99, "column": 118, "offset": 3901 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 99, "column": 9, "offset": 3792 },
+                                                    "end": { "line": 99, "column": 118, "offset": 3901 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 99, "column": 5, "offset": 3788 },
+                                            "end": { "line": 99, "column": 118, "offset": 3901 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 97, "column": 5, "offset": 3441 },
+                                    "end": { "line": 99, "column": 118, "offset": 3901 },
+                                    "indent": [5, 5]
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 96, "column": 1, "offset": 3405 },
+                            "end": { "line": 99, "column": 118, "offset": 3901 },
+                            "indent": [1, 1, 1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Space Complexity: O(n)",
+                                        "position": {
+                                            "start": { "line": 100, "column": 5, "offset": 3906 },
+                                            "end": { "line": 100, "column": 27, "offset": 3928 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 100, "column": 5, "offset": 3906 },
+                                    "end": { "line": 100, "column": 27, "offset": 3928 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "We are ultimately creating n subarrays, making our space complexity linear to our input size.",
+                                                        "position": {
+                                                            "start": { "line": 101, "column": 9, "offset": 3937 },
+                                                            "end": { "line": 101, "column": 102, "offset": 4030 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 101, "column": 9, "offset": 3937 },
+                                                    "end": { "line": 101, "column": 102, "offset": 4030 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 101, "column": 5, "offset": 3933 },
+                                            "end": { "line": 101, "column": 102, "offset": 4030 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 101, "column": 5, "offset": 3933 },
+                                    "end": { "line": 101, "column": 102, "offset": 4030 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 100, "column": 1, "offset": 3902 },
+                            "end": { "line": 101, "column": 102, "offset": 4030 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Code example for mergeSort:",
+                                        "position": {
+                                            "start": { "line": 102, "column": 5, "offset": 4035 },
+                                            "end": { "line": 102, "column": 32, "offset": 4062 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 102, "column": 5, "offset": 4035 },
+                                    "end": { "line": 102, "column": 32, "offset": 4062 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 102, "column": 1, "offset": 4031 },
+                            "end": { "line": 102, "column": 32, "offset": 4062 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": {
+                    "start": { "line": 94, "column": 1, "offset": 3305 },
+                    "end": { "line": 102, "column": 32, "offset": 4062 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "code",
+                "lang": "javascript",
+                "meta": null,
+                "value": "// The merge function is what is combining our sorted sub-arrays\nfunction merge(array1, array2) {\n    let merged = [];\n\n    // keep running while either array still contains elements\n    while (array1.length || array2.length) {\n        // if array1 is nonempty, take its the first element as ele1\n        // otherwise array1 is empty, so take Infinity as ele1\n        let ele1 = array1.length ? array1[0] : Infinity;\n\n        // do the same for array2, ele2\n        let ele2 = array2.length ? array2[0] : Infinity;\n\n        let next;\n        // remove the smaller of the eles from it's array\n        if (ele1 < ele2) {\n            next = array1.shift();\n        } else {\n            next = array2.shift();\n        }\n\n        // and add that ele to the new array\n        merged.push(next);\n    }\n\n    return merged;\n}\n\n// The mergeSort function breaks apart our input into smaller sub-arrays until we have an input of length <= 1, which is inherently sorted.\n// Once we have a left and right subarray that's sorted, we can merge them together to get our sorted result of this sub-problem, passing the sorted version back up the call stack.\nfunction mergeSort(array) {\n    if (array.length <= 1) {\n        return array;\n    }\n\n    let midIdx = Math.floor(array.length / 2);\n    let leftHalf = array.slice(0, midIdx);\n    let rightHalf = array.slice(midIdx);\n\n    let sortedLeft = mergeSort(leftHalf);\n    let sortedRight = mergeSort(rightHalf);\n\n    return merge(sortedLeft, sortedRight);\n}",
+                "position": {
+                    "start": { "line": 104, "column": 1, "offset": 4064 },
+                    "end": { "line": 149, "column": 4, "offset": 5570 },
+                    "indent": [
+                        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+                    ]
+                }
+            },
+            {
+                "type": "list",
+                "ordered": true,
+                "start": 5,
+                "spread": true,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Explain the complexity of and write a function that performs quick sort on an array of numbers.",
+                                        "position": {
+                                            "start": { "line": 151, "column": 4, "offset": 5575 },
+                                            "end": { "line": 151, "column": 99, "offset": 5670 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 151, "column": 4, "offset": 5575 },
+                                    "end": { "line": 151, "column": 99, "offset": 5670 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 151, "column": 1, "offset": 5572 },
+                            "end": { "line": 152, "column": 1, "offset": 5671 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Time Complexity: Average O(n log n), Worst O(n^2)",
+                                        "position": {
+                                            "start": { "line": 153, "column": 5, "offset": 5676 },
+                                            "end": { "line": 153, "column": 54, "offset": 5725 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 153, "column": 5, "offset": 5676 },
+                                    "end": { "line": 153, "column": 54, "offset": 5725 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "In our worst case, the pivot that we select results in every element going into either the left or right array. If this happens we end up making n recursive calls to quickSort, with n comparisons at each call.",
+                                                        "position": {
+                                                            "start": { "line": 154, "column": 9, "offset": 5734 },
+                                                            "end": { "line": 154, "column": 218, "offset": 5943 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 154, "column": 9, "offset": 5734 },
+                                                    "end": { "line": 154, "column": 218, "offset": 5943 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 154, "column": 5, "offset": 5730 },
+                                            "end": { "line": 154, "column": 218, "offset": 5943 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "In our average case, we pick something that more evenly splits the arrays, resulting in approximately log n recursive calls and an overall complexity of O(n log n).",
+                                                        "position": {
+                                                            "start": { "line": 155, "column": 9, "offset": 5952 },
+                                                            "end": { "line": 155, "column": 173, "offset": 6116 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 155, "column": 9, "offset": 5952 },
+                                                    "end": { "line": 155, "column": 173, "offset": 6116 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 155, "column": 5, "offset": 5948 },
+                                            "end": { "line": 155, "column": 173, "offset": 6116 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Quick sort is unique in that the worst case is so exceedingly rare that it is often considered an O(n log n) complexity, even though this is not technically accurate.",
+                                                        "position": {
+                                                            "start": { "line": 156, "column": 9, "offset": 6125 },
+                                                            "end": { "line": 156, "column": 175, "offset": 6291 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 156, "column": 9, "offset": 6125 },
+                                                    "end": { "line": 156, "column": 175, "offset": 6291 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 156, "column": 5, "offset": 6121 },
+                                            "end": { "line": 156, "column": 175, "offset": 6291 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 154, "column": 5, "offset": 5730 },
+                                    "end": { "line": 156, "column": 175, "offset": 6291 },
+                                    "indent": [5, 5]
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 153, "column": 1, "offset": 5672 },
+                            "end": { "line": 156, "column": 175, "offset": 6291 },
+                            "indent": [1, 1, 1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Space Complexity: Our implementation O(n), Possible implementation O(log n)",
+                                        "position": {
+                                            "start": { "line": 157, "column": 5, "offset": 6296 },
+                                            "end": { "line": 157, "column": 80, "offset": 6371 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 157, "column": 5, "offset": 6296 },
+                                    "end": { "line": 157, "column": 80, "offset": 6371 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "The partition arrays that we create are directly proportional to the size of the input, resulting in O(n) space complexity.",
+                                                        "position": {
+                                                            "start": { "line": 158, "column": 9, "offset": 6380 },
+                                                            "end": { "line": 158, "column": 132, "offset": 6503 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 158, "column": 9, "offset": 6380 },
+                                                    "end": { "line": 158, "column": 132, "offset": 6503 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 158, "column": 5, "offset": 6376 },
+                                            "end": { "line": 158, "column": 132, "offset": 6503 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "With some tweaking, we could implement an in-place quick sort, which would eliminate the creation of new arrays. In this case, the log n stack frames from the recursion are the only proportional amount of space that is used, resulting in O(log n) space complexity.",
+                                                        "position": {
+                                                            "start": { "line": 159, "column": 9, "offset": 6512 },
+                                                            "end": { "line": 159, "column": 273, "offset": 6776 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 159, "column": 9, "offset": 6512 },
+                                                    "end": { "line": 159, "column": 273, "offset": 6776 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 159, "column": 5, "offset": 6508 },
+                                            "end": { "line": 159, "column": 273, "offset": 6776 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 158, "column": 5, "offset": 6376 },
+                                    "end": { "line": 159, "column": 273, "offset": 6776 },
+                                    "indent": [5]
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 157, "column": 1, "offset": 6292 },
+                            "end": { "line": 159, "column": 273, "offset": 6776 },
+                            "indent": [1, 1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Code example for quickSort:",
+                                        "position": {
+                                            "start": { "line": 160, "column": 5, "offset": 6781 },
+                                            "end": { "line": 160, "column": 32, "offset": 6808 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 160, "column": 5, "offset": 6781 },
+                                    "end": { "line": 160, "column": 32, "offset": 6808 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 160, "column": 1, "offset": 6777 },
+                            "end": { "line": 160, "column": 32, "offset": 6808 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": {
+                    "start": { "line": 151, "column": 1, "offset": 5572 },
+                    "end": { "line": 160, "column": 32, "offset": 6808 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "code",
+                "lang": "javascript",
+                "meta": null,
+                "value": "function quickSort(array) {\n    if (array.length <= 1) {\n        return array;\n    }\n\n    let pivot = array.shift();\n    // This implementation uses filter, which returns a new array with any element that passes the criteria (ie the callback returns true).\n    // We also could have iterated over the array (array.forEach(el => ...)) and pushed each value into the appropriate left/right subarray as we encountered it.\n    let left = array.filter((el) => el < pivot);\n    let right = array.filter((el) => el >= pivot);\n\n    let leftSorted = quickSort(left);\n    let rightSorted = quickSort(right);\n\n    return [...leftSorted, pivot, ...rightSorted];\n    // We also could have concatenated the arrays instead of spreading their contents\n    // return leftSorted.concat([pivot]).concat(rightSorted);\n}",
+                "position": {
+                    "start": { "line": 162, "column": 1, "offset": 6810 },
+                    "end": { "line": 181, "column": 4, "offset": 7627 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "list",
+                "ordered": true,
+                "start": 6,
+                "spread": true,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Explain the complexity of and write a function that performs a binary search on a sorted array of numbers.",
+                                        "position": {
+                                            "start": { "line": 183, "column": 4, "offset": 7632 },
+                                            "end": { "line": 183, "column": 110, "offset": 7738 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 183, "column": 4, "offset": 7632 },
+                                    "end": { "line": 183, "column": 110, "offset": 7738 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 183, "column": 1, "offset": 7629 },
+                            "end": { "line": 184, "column": 1, "offset": 7739 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Time Complexity: O(log n)",
+                                        "position": {
+                                            "start": { "line": 185, "column": 5, "offset": 7744 },
+                                            "end": { "line": 185, "column": 30, "offset": 7769 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 185, "column": 5, "offset": 7744 },
+                                    "end": { "line": 185, "column": 30, "offset": 7769 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "With each recursive call, we split our input in half. This means we have to make at most log n checks to know if the element is in our array.",
+                                                        "position": {
+                                                            "start": { "line": 186, "column": 9, "offset": 7778 },
+                                                            "end": { "line": 186, "column": 150, "offset": 7919 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 186, "column": 9, "offset": 7778 },
+                                                    "end": { "line": 186, "column": 150, "offset": 7919 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 186, "column": 5, "offset": 7774 },
+                                            "end": { "line": 186, "column": 150, "offset": 7919 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 186, "column": 5, "offset": 7774 },
+                                    "end": { "line": 186, "column": 150, "offset": 7919 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 185, "column": 1, "offset": 7740 },
+                            "end": { "line": 186, "column": 150, "offset": 7919 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Space Complexity: Our implementation O(n), Possible implementation O(1)",
+                                        "position": {
+                                            "start": { "line": 187, "column": 5, "offset": 7924 },
+                                            "end": { "line": 187, "column": 76, "offset": 7995 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 187, "column": 5, "offset": 7924 },
+                                    "end": { "line": 187, "column": 76, "offset": 7995 },
+                                    "indent": []
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "start": null,
+                                "spread": false,
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "We have to make a subarray for each recursive call. In the worst case (we don't find the element), the total length of these arrays is approximately equal to the length of the original (n).",
+                                                        "position": {
+                                                            "start": { "line": 188, "column": 9, "offset": 8004 },
+                                                            "end": { "line": 188, "column": 198, "offset": 8193 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 188, "column": 9, "offset": 8004 },
+                                                    "end": { "line": 188, "column": 198, "offset": 8193 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 188, "column": 5, "offset": 8000 },
+                                            "end": { "line": 188, "column": 198, "offset": 8193 },
+                                            "indent": []
+                                        }
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": false,
+                                        "checked": null,
+                                        "children": [
+                                            {
+                                                "type": "paragraph",
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "If we kept references to the beginning and end index of the portion of the array that we are searching, we could eliminate the need for creating new subarrays. We could also use a while loop to perform this functionality until we either found our target or our beginning and end indices crossed. This would eliminate the space required for recursive calls (adding stack frames). Ultimately we would be using the same number of variables independent of input size, resulting in O(1).",
+                                                        "position": {
+                                                            "start": { "line": 189, "column": 9, "offset": 8202 },
+                                                            "end": { "line": 189, "column": 491, "offset": 8684 },
+                                                            "indent": []
+                                                        }
+                                                    }
+                                                ],
+                                                "position": {
+                                                    "start": { "line": 189, "column": 9, "offset": 8202 },
+                                                    "end": { "line": 189, "column": 491, "offset": 8684 },
+                                                    "indent": []
+                                                }
+                                            }
+                                        ],
+                                        "position": {
+                                            "start": { "line": 189, "column": 5, "offset": 8198 },
+                                            "end": { "line": 189, "column": 491, "offset": 8684 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 188, "column": 5, "offset": 8000 },
+                                    "end": { "line": 189, "column": 491, "offset": 8684 },
+                                    "indent": [5]
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 187, "column": 1, "offset": 7920 },
+                            "end": { "line": 189, "column": 491, "offset": 8684 },
+                            "indent": [1, 1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Code example for binarySearch and binarySearchIndex:",
+                                        "position": {
+                                            "start": { "line": 190, "column": 5, "offset": 8689 },
+                                            "end": { "line": 190, "column": 57, "offset": 8741 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 190, "column": 5, "offset": 8689 },
+                                    "end": { "line": 190, "column": 57, "offset": 8741 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 190, "column": 1, "offset": 8685 },
+                            "end": { "line": 190, "column": 57, "offset": 8741 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": {
+                    "start": { "line": 183, "column": 1, "offset": 7629 },
+                    "end": { "line": 190, "column": 57, "offset": 8741 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "code",
+                "lang": "javascript",
+                "meta": null,
+                "value": "// Returns simply true/false for presence\nfunction binarySearch(array, target) {\n    if (array.length === 0) {\n        return false;\n    }\n\n    let midIdx = Math.floor(array.length / 2);\n    let leftHalf = array.slice(0, midIdx);\n    let rightHalf = array.slice(midIdx + 1);\n\n    if (target < array[midIdx]) {\n        return binarySearch(leftHalf, target);\n    } else if (target > array[midIdx]) {\n        return binarySearch(rightHalf, target);\n    } else {\n        return true;\n    }\n}\n\n// Returns the index or -1 if not found\nfunction binarySearchIndex(array, target) {\n    if (!array.length) return -1;\n\n    const midIdx = Math.floor(array.length / 2);\n    const midEl = array[midIdx];\n\n    if (target < midEl) {\n        return binarySearchIndex(array.slice(0, midIdx), target);\n    } else if (target > midEl) {\n        // Since our recursive call will have new indices for the subarray, we have to adjust the return value to align it with the indices of our original array.\n        // If the recursive call returns -1, it was not found and we can immediately return -1\n        // If it was found in the subarray, we have to add on the number of elements that were removed from the beginning of our larger original array.\n        // For example, if we try to find 15 in an array of [5, 10, 15]:\n        // - Our first call to binarySearchIndex will check our middle element of 10\n        // - Since our target is greater, we will recursively call our search on elements to the right, being the subarray [15]\n        // - On our recursive call we found our target! It's index in this call is 0.\n        // - When we return 0 to where binarySearchIndex was called, we need to adjust it to line up with this larger array (the 0th element of this larger array is 5, but our target was at the 0th index of the subarray)\n        // - Since we sliced off 2 elements from the beginning before making our recursive call, we add 2 to the return value to adjust it back to line up with our original array.\n        const idxShift = binarySearchIndex(array.slice(midIdx + 1), target);\n        return idxShift === -1 ? -1 : idxShift + midIdx + 1;\n    } else {\n        return midIdx;\n    }\n}",
+                "position": {
+                    "start": { "line": 192, "column": 1, "offset": 8743 },
+                    "end": { "line": 237, "column": 4, "offset": 10941 },
+                    "indent": [
+                        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+                    ]
+                }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 238, "column": 1, "offset": 10942 } }
+    }
+}

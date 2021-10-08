@@ -5,46 +5,47 @@ date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: >-
-    Netlify CMS is an open source content management system for your Git
-    workflow that enables you to provide editors with a friendly UI and
-    intuitive workflows
-  robots: []
-  extra:
-    - name: 'og:image'
-      value: images/netlify-dee8d6ae.svg
-      keyName: property
-      relativeUrl: true
-    - name: 'og:title'
-      value: Intro to Netlify CMS
-      keyName: property
-      relativeUrl: false
-    - name: 'twitter:card'
-      value: Intro to Netlify CMS
-      keyName: name
-      relativeUrl: false
+    title: ''
+    description: >-
+        Netlify CMS is an open source content management system for your Git
+        workflow that enables you to provide editors with a friendly UI and
+        intuitive workflows
+    robots: []
+    extra:
+        - name: 'og:image'
+          value: images/netlify-dee8d6ae.svg
+          keyName: property
+          relativeUrl: true
+        - name: 'og:title'
+          value: Intro to Netlify CMS
+          keyName: property
+          relativeUrl: false
+        - name: 'twitter:card'
+          value: Intro to Netlify CMS
+          keyName: name
+          relativeUrl: false
 template: post
 thumb_image: images/netlify.svg
 image: images/netlify-26904b46.svg
 ---
+
 # Overview&#xA;&#xA;
 
 Netlify CMS is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and intuitive workflows. You can use it with any static site generator to create faster, more flexible web projects. Content is stored in your Git repository alongside your code for easier versioning, multi-channel publishing, and the option to handle content updates directly in Git.
 
 At its core, Netlify CMS is an open-source React app that acts as a wrapper for the Git workflow, using the GitHub, GitLab, or Bitbucket API. This provides many advantages, including:
 
-*   **Fast, web-based UI:** With rich-text editing, real-time preview, and drag-and-drop media uploads.
+-   **Fast, web-based UI:** With rich-text editing, real-time preview, and drag-and-drop media uploads.
 
-*   **Platform agnostic:** Works with most static site generators.
+-   **Platform agnostic:** Works with most static site generators.
 
-*   **Easy installation:** Add two files to your site and hook up the backend by including those files in your build process or linking to our Content Delivery Network (CDN).
+-   **Easy installation:** Add two files to your site and hook up the backend by including those files in your build process or linking to our Content Delivery Network (CDN).
 
-*   **Modern authentication:** Using GitHub, GitLab, or Bitbucket and JSON web tokens.
+-   **Modern authentication:** Using GitHub, GitLab, or Bitbucket and JSON web tokens.
 
-*   **Flexible content types:** Specify an unlimited number of content types with custom fields.
+-   **Flexible content types:** Specify an unlimited number of content types with custom fields.
 
-*   **Fully extensible:** Create custom-styled previews, UI widgets, and editor plugins.
+-   **Fully extensible:** Create custom-styled previews, UI widgets, and editor plugins.
 
 ## Netlify CMS vs. Netlify
 
@@ -54,15 +55,15 @@ The folks at Netlify created Netlify CMS to fill a gap in the static site genera
 
 With this in mind, you can:
 
-*   Use Netlify CMS without Netlify and deploy your site where you always have, hooking up your own CI, site hosting, CDN, etc.
+-   Use Netlify CMS without Netlify and deploy your site where you always have, hooking up your own CI, site hosting, CDN, etc.
 
-*   Use Netlify without Netlify CMS and edit your static site in your code editor.
+-   Use Netlify without Netlify CMS and edit your static site in your code editor.
 
-*   Or, use them together and have a fully-working CMS-enabled site with [one click](https://www.netlifycms.org/docs/start-with-a-template/)!
+-   Or, use them together and have a fully-working CMS-enabled site with [one click](https://www.netlifycms.org/docs/start-with-a-template/)!
 
 If you hook up Netlify CMS to your website, you're basically adding a tool for content editors to make commits to your site repository without touching code or learning Git.
 
-*   Add to Your Site**These generatorsstore static files in**Jekyll, GitBook/ (project root)Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper/staticNext/publicHexo, Middleman, Jigsaw/sourceSpike/viewsWyam/inputPelican/contentVuePress/.vuepress/publicElmstatic/\_site11ty/\_sitepreact-cli/src/staticnamePost type identifier, used in routes. Must be unique.labelWhat the admin UI calls the post type.folderWhere files of this type are stored, relative to the repo root.createSet to true to allow users to create new files in this collection.slugTemplate for filenames. {{year}}, {{month}}, and {{day}} pulls from the post's date field or save date. {{slug}} is a url-safe version of the post's title. Default is simply {{slug}}.fieldsFields listed here are shown as fields in the content editor, then saved as front matter at the beginning of the document (except for body, which follows the front matter). Each field contains the following properties:
+-   Add to Your Site**These generatorsstore static files in**Jekyll, GitBook/ (project root)Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper/staticNext/publicHexo, Middleman, Jigsaw/sourceSpike/viewsWyam/inputPelican/contentVuePress/.vuepress/publicElmstatic/\_site11ty/\_sitepreact-cli/src/staticnamePost type identifier, used in routes. Must be unique.labelWhat the admin UI calls the post type.folderWhere files of this type are stored, relative to the repo root.createSet to true to allow users to create new files in this collection.slugTemplate for filenames. {{year}}, {{month}}, and {{day}} pulls from the post's date field or save date. {{slug}} is a url-safe version of the post's title. Default is simply {{slug}}.fieldsFields listed here are shown as fields in the content editor, then saved as front matter at the beginning of the document (except for body, which follows the front matter). Each field contains the following properties:
 
 You can adapt Netlify CMS to a wide variety of projects. It works with any content written in markdown, JSON, YAML, or TOML files, stored in a repo on [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), or [Bitbucket](https://bitbucket.org/). You can also create your own custom backend.
 
@@ -98,7 +99,7 @@ We're using [Netlify](https://www.netlify.com/) for our hosting and authentica
 
 For GitHub and GitLab repositories, you can start your Netlify CMS config.yml file with these lines:
 
-*(For Bitbucket repositories, use the *[*Bitbucket backend*](https://www.netlifycms.org/docs/bitbucket-backend)* instructions instead.)*
+_(For Bitbucket repositories, use the _[_Bitbucket backend_](https://www.netlifycms.org/docs/bitbucket-backend)_ instructions instead.)_
 
 The configuration above specifies your backend protocol and your publication branch. Git Gateway is an open source API that acts as a proxy between authenticated users of your site and your site repo. (We'll get to the details of that in the [Authentication section](https://www.netlifycms.org/docs/add-to-your-site/#authentication) below.) If you leave out the branch declaration, it defaults to master.
 
@@ -118,25 +119,25 @@ Note that themedia_folder file path is relative to the project root, so the exa
 
 The configuration above adds a new setting, public_folder. While media_folder specifies where uploaded files are saved in the repo, public_folder indicates where they are found in the published site. Image src attributes use this path, which is relative to the file where it's called. For this reason, we usually start the path at the site root, using the opening /.
 
-*If public_folder is not set, Netlify CMS defaults to the same value as media_folder, adding an opening / if one is not included.*
+_If public_folder is not set, Netlify CMS defaults to the same value as media_folder, adding an opening / if one is not included._
 
 ### Collections
 
 Collections define the structure for the different content types on your static site. Since every site is different, the collections settings differ greatly from one site to the next.
 
-Let's say your site has a blog, with the posts stored in \_posts/blog, and files saved in a date-title format, like 1999-12-31-lets-party.md. Each post begins with settings in yaml-formatted front matter, like so:
+Let's say your site has a blog, with the posts stored in _posts/blog, and files saved in a date-title format, like 1999-12-31-lets-party.md. Each post begins with settings in yaml-formatted front matter, like so:
 
 Given this example, our collections settings would look like this in your NetlifyCMS config.yml file:
 
 Let's break that down:
 
-*   label: Field label in the editor UI.
+-   label: Field label in the editor UI.
 
-*   name: Field name in the document front matter.
+-   name: Field name in the document front matter.
 
-*   widget: Determines UI style and value data type (details below).
+-   widget: Determines UI style and value data type (details below).
 
-*   default (optional): Sets a default value for the field.
+-   default (optional): Sets a default value for the field.
 
 As described above, the widget property specifies a built-in or custom UI widget for a given field. When a content editor enters a value into a widget, that value is saved in the document front matter as the value for the name specified for that field. A full listing of available widgets can be found in the [Widgets doc](https://www.netlifycms.org/docs/widgets).
 
@@ -191,7 +192,7 @@ Examples
 Do
 you have a great, open source example? Submit a pull request to this page!
 
- 
+
 
 Example
 Tools
@@ -374,12 +375,6 @@ portfolio
 [read
 me](https://github.com/EarlGeorge/React-Gatsby/blob/master/README.md)
 
-
-
-
-
-
-
 # Gatsby&#xA;&#xA;
 
 This guide will help you get started using Netlify CMS and Gatsby.
@@ -443,4 +438,3 @@ Then Netlify will detect that there was a commit in your repo, and will start re
 ### Cleanup
 
 It is now safe to remove the default Gatsby blog posts.
-

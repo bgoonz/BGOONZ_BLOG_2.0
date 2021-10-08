@@ -1,0 +1,1422 @@
+{
+    "expireTime": 9007200888440671000,
+    "key": "transformer-remark-markdown-ast-a4216c3c11527475d82f273081e7a4bd--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "What is the World Wide Web?",
+                        "position": { "start": { "line": 1, "column": 4, "offset": 3 }, "end": { "line": 1, "column": 31, "offset": 30 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": "\n",
+                        "position": { "start": { "line": 1, "column": 31, "offset": 30 }, "end": { "line": 1, "column": 36, "offset": 35 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": "\n",
+                        "position": { "start": { "line": 1, "column": 36, "offset": 35 }, "end": { "line": 1, "column": 41, "offset": 40 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 41, "offset": 40 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Perhaps the first thing to establish in our discussion of the web is what exactly it is. This chapter will look in brief overview at the core technologies that go together to make the World Wide Web.",
+                        "position": { "start": { "line": 3, "column": 1, "offset": 42 }, "end": { "line": 3, "column": 200, "offset": 241 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 3, "column": 1, "offset": 42 }, "end": { "line": 3, "column": 200, "offset": 241 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "We can start by differentiating the Internet and the World Wide Web. These are often confused because the Web is the main use that most people have for the Internet and a common web browser is called \"Internet Explorer\". However, we can properly distinguish between them. The Internet is a collection of inter-connected computers using the TCP/IP protocol to exchange information. The World Wide Web is a particular use of the Internet to exchange HTML web pages (and other documents) using the Hypertext Transfer Protocol (HTTP).",
+                        "position": { "start": { "line": 5, "column": 1, "offset": 243 }, "end": { "line": 5, "column": 531, "offset": 773 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 5, "column": 1, "offset": 243 }, "end": { "line": 5, "column": 531, "offset": 773 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Let's look briefly at the four basic ingredients of the Web:",
+                        "position": { "start": { "line": 7, "column": 1, "offset": 775 }, "end": { "line": 7, "column": 61, "offset": 835 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 7, "column": 1, "offset": 775 }, "end": { "line": 7, "column": 61, "offset": 835 }, "indent": [] }
+            },
+            {
+                "type": "list",
+                "ordered": false,
+                "start": null,
+                "spread": true,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "TCP/IP - is a low level message protocol that is used to transfer messages between computers on the Internet.",
+                                        "position": {
+                                            "start": { "line": 9, "column": 5, "offset": 841 },
+                                            "end": { "line": 9, "column": 114, "offset": 950 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 9, "column": 5, "offset": 841 },
+                                    "end": { "line": 9, "column": 114, "offset": 950 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 9, "column": 1, "offset": 837 }, "end": { "line": 10, "column": 1, "offset": 951 }, "indent": [1] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "HTTP - is used by a Web Client to make a request to a Web Server and for the server to return the response.",
+                                        "position": {
+                                            "start": { "line": 11, "column": 5, "offset": 956 },
+                                            "end": { "line": 11, "column": 112, "offset": 1063 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 11, "column": 5, "offset": 956 },
+                                    "end": { "line": 11, "column": 112, "offset": 1063 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 11, "column": 1, "offset": 952 }, "end": { "line": 12, "column": 1, "offset": 1064 }, "indent": [1] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "URL - is a way of writing down the address of something on the Web so that a browser can work out where to get it from.",
+                                        "position": {
+                                            "start": { "line": 13, "column": 5, "offset": 1069 },
+                                            "end": { "line": 13, "column": 124, "offset": 1188 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 13, "column": 5, "offset": 1069 },
+                                    "end": { "line": 13, "column": 124, "offset": 1188 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 13, "column": 1, "offset": 1065 }, "end": { "line": 14, "column": 1, "offset": 1189 }, "indent": [1] }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "HTML - is a language for writing web pages containing text, images and other content.",
+                                        "position": {
+                                            "start": { "line": 15, "column": 5, "offset": 1194 },
+                                            "end": { "line": 15, "column": 90, "offset": 1279 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 15, "column": 5, "offset": 1194 },
+                                    "end": { "line": 15, "column": 90, "offset": 1279 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 15, "column": 1, "offset": 1190 }, "end": { "line": 15, "column": 90, "offset": 1279 }, "indent": [] }
+                    }
+                ],
+                "position": {
+                    "start": { "line": 9, "column": 1, "offset": 837 },
+                    "end": { "line": 15, "column": 90, "offset": 1279 },
+                    "indent": [1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Together, these four technologies allow a web client - the web browser on your computer - to fetch pages from a web server anywhere in the world that might contain links to other documents and so on. It's the links between documents that make this a ",
+                        "position": { "start": { "line": 17, "column": 1, "offset": 1281 }, "end": { "line": 17, "column": 251, "offset": 1531 }, "indent": [] }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Web",
+                                "position": {
+                                    "start": { "line": 17, "column": 252, "offset": 1532 },
+                                    "end": { "line": 17, "column": 255, "offset": 1535 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 17, "column": 251, "offset": 1531 },
+                            "end": { "line": 17, "column": 256, "offset": 1536 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " and the Internet that allows it to be the ",
+                        "position": {
+                            "start": { "line": 17, "column": 256, "offset": 1536 },
+                            "end": { "line": 17, "column": 299, "offset": 1579 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "World Wide Web",
+                                "position": {
+                                    "start": { "line": 17, "column": 300, "offset": 1580 },
+                                    "end": { "line": 17, "column": 314, "offset": 1594 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 17, "column": 299, "offset": 1579 },
+                            "end": { "line": 17, "column": 315, "offset": 1595 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": {
+                            "start": { "line": 17, "column": 315, "offset": 1595 },
+                            "end": { "line": 17, "column": 316, "offset": 1596 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 17, "column": 1, "offset": 1281 }, "end": { "line": 17, "column": 316, "offset": 1596 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Let's look at each of these technologies in a little more detail; although we'll explore most of them a lot more throughout the rest of this book.",
+                        "position": { "start": { "line": 19, "column": 1, "offset": 1598 }, "end": { "line": 19, "column": 147, "offset": 1744 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 19, "column": 1, "offset": 1598 }, "end": { "line": 19, "column": 147, "offset": 1744 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "TCP/IP and DNS",
+                        "position": { "start": { "line": 21, "column": 4, "offset": 1749 }, "end": { "line": 21, "column": 18, "offset": 1763 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 21, "column": 1, "offset": 1746 }, "end": { "line": 21, "column": 18, "offset": 1763 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "TCP/IP, the Transmission Control Protocol/Internet Protocol, is the standard way of exchanging messages on the Internet - in fact it effectively defines what the Internet is: a network of computers communicating via TCP/IP. For our purposes, there's no need to have a deep understanding of the low level details of TCP/IP, though many of you will learn more about it if you study any networking topics. However there are a few higher level things that touch on how we use the Internet in the context of the World Wide Web.",
+                        "position": { "start": { "line": 23, "column": 1, "offset": 1765 }, "end": { "line": 23, "column": 523, "offset": 2287 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 23, "column": 1, "offset": 1765 }, "end": { "line": 23, "column": 523, "offset": 2287 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "A ",
+                        "position": { "start": { "line": 25, "column": 1, "offset": 2289 }, "end": { "line": 25, "column": 3, "offset": 2291 }, "indent": [] }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Protocol",
+                                "position": {
+                                    "start": { "line": 25, "column": 4, "offset": 2292 },
+                                    "end": { "line": 25, "column": 12, "offset": 2300 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 25, "column": 3, "offset": 2291 }, "end": { "line": 25, "column": 13, "offset": 2301 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " in this sense is a formal standard for how two machines will talk to each other over a communications channel. It describes what messages are allowed and what they mean and how data is transferred over the network. Later, we'll look at HTTP which is a higher level protocol for web requests. TCP/IP deals with the low level exchange of data and doesn't really care what the content of that data is.",
+                        "position": {
+                            "start": { "line": 25, "column": 13, "offset": 2301 },
+                            "end": { "line": 25, "column": 412, "offset": 2700 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 25, "column": 1, "offset": 2289 }, "end": { "line": 25, "column": 412, "offset": 2700 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The Internet is a collection of computer networks joined by physical network channels. Within an organisation, there may be a physical network based on the Ethernet standard (wired or wireless) which effectively connects all computers on the network to each other. Organisations connect to each other via DSL or cable connections. These ",
+                        "position": { "start": { "line": 27, "column": 1, "offset": 2702 }, "end": { "line": 27, "column": 338, "offset": 3039 }, "indent": [] }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "inter",
+                                "position": {
+                                    "start": { "line": 27, "column": 339, "offset": 3040 },
+                                    "end": { "line": 27, "column": 344, "offset": 3045 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 27, "column": 338, "offset": 3039 },
+                            "end": { "line": 27, "column": 345, "offset": 3046 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": "-connected ",
+                        "position": {
+                            "start": { "line": 27, "column": 345, "offset": 3046 },
+                            "end": { "line": 27, "column": 356, "offset": 3057 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "net",
+                                "position": {
+                                    "start": { "line": 27, "column": 357, "offset": 3058 },
+                                    "end": { "line": 27, "column": 360, "offset": 3061 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 27, "column": 356, "offset": 3057 },
+                            "end": { "line": 27, "column": 361, "offset": 3062 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": "works make up the Internet. The role of TCP/IP is to allow a computer within one organisation (your laptop) to establish a connection to a computer in another (a web server). Importantly, this connection is a ",
+                        "position": {
+                            "start": { "line": 27, "column": 361, "offset": 3062 },
+                            "end": { "line": 27, "column": 570, "offset": 3271 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "point-to-point",
+                                "position": {
+                                    "start": { "line": 27, "column": 571, "offset": 3272 },
+                                    "end": { "line": 27, "column": 585, "offset": 3286 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 27, "column": 570, "offset": 3271 },
+                            "end": { "line": 27, "column": 586, "offset": 3287 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " connection - like a private channel between the two computers, even though the data is carried by this shared network of networks.",
+                        "position": {
+                            "start": { "line": 27, "column": 586, "offset": 3287 },
+                            "end": { "line": 27, "column": 717, "offset": 3418 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 27, "column": 1, "offset": 2702 }, "end": { "line": 27, "column": 717, "offset": 3418 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "TCP/IP is a ",
+                        "position": { "start": { "line": 29, "column": 1, "offset": 3420 }, "end": { "line": 29, "column": 13, "offset": 3432 }, "indent": [] }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "packet oriented",
+                                "position": {
+                                    "start": { "line": 29, "column": 14, "offset": 3433 },
+                                    "end": { "line": 29, "column": 29, "offset": 3448 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 29, "column": 13, "offset": 3432 }, "end": { "line": 29, "column": 30, "offset": 3449 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " protocol. To send a message, it is broken up into small chunks (packets) which are each addressed and sent over the network. The receiving computer intercepts these packets, notices that they are addressed to them, and re-assembles the original message. Packets can arrive out of order (or not at all) and TCP/IP defines what the two communicating computers should do in this case.",
+                        "position": {
+                            "start": { "line": 29, "column": 30, "offset": 3449 },
+                            "end": { "line": 29, "column": 412, "offset": 3831 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 29, "column": 1, "offset": 3420 }, "end": { "line": 29, "column": 412, "offset": 3831 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Each computer on the network is assigned a unique ",
+                        "position": { "start": { "line": 31, "column": 1, "offset": 3833 }, "end": { "line": 31, "column": 51, "offset": 3883 }, "indent": [] }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "IP address",
+                                "position": {
+                                    "start": { "line": 31, "column": 52, "offset": 3884 },
+                                    "end": { "line": 31, "column": 62, "offset": 3894 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 31, "column": 51, "offset": 3883 }, "end": { "line": 31, "column": 63, "offset": 3895 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " which is a 32 bit number usually expressed as four 8 bit digits separated by dots. For example 192.168.1.2 or 137.111.158.22. These numbers are used as the addresses of the packets sent around the Internet. Within an organisation, all computers will share the first part of their address; for example, all Macquarie University computers will have addresses starting with 137.111. This means that any packet sent from within Macquarie to an address in the range 137.111.x.x will find it's destination somewhere inside the organisation. However, if we send a packet to 143.119.160.16 (the NSW Government website) the network protocols need to know that this packet should be forwarded to the NSW Government network before it can be delivered. We can pretend that this all happens by magic (this isn't a networking course) and rest assured that a clever ",
+                        "position": {
+                            "start": { "line": 31, "column": 63, "offset": 3895 },
+                            "end": { "line": 31, "column": 915, "offset": 4747 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "network routing",
+                                "position": {
+                                    "start": { "line": 31, "column": 916, "offset": 4748 },
+                                    "end": { "line": 31, "column": 931, "offset": 4763 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 31, "column": 915, "offset": 4747 },
+                            "end": { "line": 31, "column": 932, "offset": 4764 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " algorithm will get the packets to where they need to go. As long as we know the IP address of the destination computer, we can establish a point-to-point channel and send data back and forth.",
+                        "position": {
+                            "start": { "line": 31, "column": 932, "offset": 4764 },
+                            "end": { "line": 31, "column": 1124, "offset": 4956 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 31, "column": 1, "offset": 3833 }, "end": { "line": 31, "column": 1124, "offset": 4956 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Within your home you might have your own private network, often established by a wireless router that connects to your ADSL or cable service. While this router will have a proper IP address, the network it establishes in your home is a ",
+                        "position": { "start": { "line": 33, "column": 1, "offset": 4958 }, "end": { "line": 33, "column": 237, "offset": 5194 }, "indent": [] }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "private network",
+                                "position": {
+                                    "start": { "line": 33, "column": 238, "offset": 5195 },
+                                    "end": { "line": 33, "column": 253, "offset": 5210 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 33, "column": 237, "offset": 5194 },
+                            "end": { "line": 33, "column": 254, "offset": 5211 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " and will use one of two address ranges: 192.168.x.x or 10.10.x.x. Both of these are reserved for private use, so that my laptop and your printer might have the same IP address of 192.168.100.13. A trick called Network Address Translation (NAT) carried out by your router allows each of these devices to connect to the Internet through the router, even though they don't have a full IP address. Again, we don't need to worry about the details but sometimes it's useful to know how to communicate directly with devices on your own network, in which case you might start finding out about these private IP addresses.",
+                        "position": {
+                            "start": { "line": 33, "column": 254, "offset": 5211 },
+                            "end": { "line": 33, "column": 868, "offset": 5825 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 33, "column": 1, "offset": 4958 }, "end": { "line": 33, "column": 868, "offset": 5825 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "A significant issue with the success and ubiquity of the Internet is that we might run out of unique addresses. Since an IP address is a 32 bit number, that means there are only 4,294,967,296 unique addresses. If every computer, mobile phone, printer and electricity meter is to be connected to the Internet, the it's clear that more addresses will be needed. There are two responses to this. The first is that many of these devices share a single IP address (using NAT) which multiplies the number available significantly. THe second is a new standard called IPv6 (rather than IPv4 which I've described here) where addresses are 128 bits long. Most modern devices are able to use IPv6 addressing so the crisis is unlikely to hit us catastrophically.",
+                        "position": { "start": { "line": 35, "column": 1, "offset": 5827 }, "end": { "line": 35, "column": 751, "offset": 6577 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 35, "column": 1, "offset": 5827 }, "end": { "line": 35, "column": 751, "offset": 6577 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "IP addresses give a unique identifier for each device but they aren't very easy to remember. We're used to giving the names of web-sites via names like www.nsw.gov.au or sales.example.com. These names are translated into numerical IP addresses via the Domain Name System (DNS) which works using a clever hierarchical algorithm. For example, to work out what sales.example.com means our local DNS server would look at the last part of the address and forward the query to a server that it knows is authoritative for all addresses ending in .com. The .com server may not know which IP address corresponds to sales.example.com so it sends the query on to the DNS server for example.com which will respond with the answer. As the result is passed back to the original DNS server, it is cached (remembered) so that it can be returned more quickly the next time it is requested.",
+                        "position": { "start": { "line": 37, "column": 1, "offset": 6579 }, "end": { "line": 37, "column": 873, "offset": 7451 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 37, "column": 1, "offset": 6579 }, "end": { "line": 37, "column": 873, "offset": 7451 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "DNS allows an organisation to set up whatever names it needs and link those names to its servers. It's common to have the main web server called www.example.com but the same server could also be referred to as example.com, sales.example.com or test.example.com. We'll see later how this arrangement can be used to provide a lot of flexibility when setting up web servers.",
+                        "position": { "start": { "line": 39, "column": 1, "offset": 7453 }, "end": { "line": 39, "column": 372, "offset": 7824 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 39, "column": 1, "offset": 7453 }, "end": { "line": 39, "column": 372, "offset": 7824 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "HTTP",
+                        "position": { "start": { "line": 41, "column": 4, "offset": 7829 }, "end": { "line": 41, "column": 8, "offset": 7833 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 41, "column": 1, "offset": 7826 }, "end": { "line": 41, "column": 8, "offset": 7833 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In 1991 Tim Berners-Lee invented the World Wide Web. He was building on the existing technology of the Internet that allowed computers to exchange information around the world. His invention consisted essentially of three things: the Hypertext Transfer Protocol (HTTP), the Universal Resource Locator (URL) and the Hypertext Markup Language (HTML). HTTP is the language that a web client (your browser) talks to a web server to ask for a page and get the response back. It's a protocol, just like TCP/IP, but it's a much higher level protocol and it's one that we need to understand very well as web programmers.",
+                        "position": { "start": { "line": 43, "column": 1, "offset": 7835 }, "end": { "line": 43, "column": 613, "offset": 8447 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 43, "column": 1, "offset": 7835 }, "end": { "line": 43, "column": 613, "offset": 8447 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "HTTP requires that we first establish a point-to-point connection between a client (who is sending a request) and a server (who will fulfil the request if possible). This connection is usually via TCP/IP over the Internet but could also be over any other communication medium such as ",
+                        "position": { "start": { "line": 45, "column": 1, "offset": 8449 }, "end": { "line": 45, "column": 285, "offset": 8733 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "http://code.google.com/p/bt-http-server/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "bluetooth",
+                                "position": {
+                                    "start": { "line": 45, "column": 286, "offset": 8734 },
+                                    "end": { "line": 45, "column": 295, "offset": 8743 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 45, "column": 285, "offset": 8733 },
+                            "end": { "line": 45, "column": 338, "offset": 8786 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Once the connection is established, the conversation can begin.",
+                        "position": {
+                            "start": { "line": 45, "column": 338, "offset": 8786 },
+                            "end": { "line": 45, "column": 403, "offset": 8851 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 45, "column": 1, "offset": 8449 }, "end": { "line": 45, "column": 403, "offset": 8851 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "One of the important features of HTTP is that it is a simple, text based protocol. The request and response consist of a number of lines of text in a well defined format. Here is an example request that might be sent to a server:",
+                        "position": { "start": { "line": 47, "column": 1, "offset": 8853 }, "end": { "line": 47, "column": 230, "offset": 9082 }, "indent": [] }
+                    }
+                ],
+                "position": { "start": { "line": 47, "column": 1, "offset": 8853 }, "end": { "line": 47, "column": 230, "offset": 9082 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The first word in the request is always one of the defined ",
+                        "position": { "start": { "line": 49, "column": 1, "offset": 9084 }, "end": { "line": 49, "column": 60, "offset": 9143 }, "indent": [] }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "HTTP verbs",
+                                "position": {
+                                    "start": { "line": 49, "column": 61, "offset": 9144 },
+                                    "end": { "line": 49, "column": 71, "offset": 9154 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": { "start": { "line": 49, "column": 60, "offset": 9143 }, "end": { "line": 49, "column": 72, "offset": 9155 }, "indent": [] }
+                    },
+                    {
+                        "type": "text",
+                        "value": " (most frequently GET, HEAD or POST, we'll explore these in more detail later). A GET request asks the server to return the given resource, in this case '/storefront.html' which is probably an HTML file stored somewhere on the server. The last part of the first line (HTTP/1.1) defines the version of the standard that we are using; there was a version 1.0 but most modern browsers will use 1.1. The remaining lines of the request include other ",
+                        "position": {
+                            "start": { "line": 49, "column": 72, "offset": 9155 },
+                            "end": { "line": 49, "column": 517, "offset": 9600 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "headers",
+                                "position": {
+                                    "start": { "line": 49, "column": 518, "offset": 9601 },
+                                    "end": { "line": 49, "column": 525, "offset": 9608 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 49, "column": 517, "offset": 9600 },
+                            "end": { "line": 49, "column": 526, "offset": 9609 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " that qualify the request in some way. The ",
+                        "position": {
+                            "start": { "line": 49, "column": 526, "offset": 9609 },
+                            "end": { "line": 49, "column": 569, "offset": 9652 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Host",
+                                "position": {
+                                    "start": { "line": 49, "column": 570, "offset": 9653 },
+                                    "end": { "line": 49, "column": 574, "offset": 9657 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 49, "column": 569, "offset": 9652 },
+                            "end": { "line": 49, "column": 575, "offset": 9658 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " header is required and denotes the server that the request is being sent to. The Accept header defines what kinds of document we'd like in return; in this case, any kind of text document is ok. The request ends with a blank line, which is how the server knows that all headers have been received.",
+                        "position": {
+                            "start": { "line": 49, "column": 575, "offset": 9658 },
+                            "end": { "line": 49, "column": 872, "offset": 9955 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 49, "column": 1, "offset": 9084 }, "end": { "line": 49, "column": 872, "offset": 9955 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The request is received and processed by the server and a response is sent back to the client containing the web page that was asked for. Again the format of the response is easy to understand:",
+                        "position": {
+                            "start": { "line": 51, "column": 1, "offset": 9957 },
+                            "end": { "line": 51, "column": 194, "offset": 10150 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 51, "column": 1, "offset": 9957 }, "end": { "line": 51, "column": 194, "offset": 10150 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The first word of the response must be HTTP/1.1, the remainder of the first line contains a response code (200) and explanation (OK) in this case saying everything is fine, here's the page you asked for. The second header here defines the type of document being returned (it's an HTML page). There is then a blank line which ends the headers (as with the request) and the HTML content is then sent.",
+                        "position": {
+                            "start": { "line": 53, "column": 1, "offset": 10152 },
+                            "end": { "line": 53, "column": 399, "offset": 10550 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 53, "column": 1, "offset": 10152 }, "end": { "line": 53, "column": 399, "offset": 10550 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "A real request and response pair will have many more headers than this but their format follows this basic pattern: header lines followed by a blank line and an optional body. The point here is that HTTP is a very simple conversation between web client and server.",
+                        "position": {
+                            "start": { "line": 55, "column": 1, "offset": 10552 },
+                            "end": { "line": 55, "column": 265, "offset": 10816 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 55, "column": 1, "offset": 10552 }, "end": { "line": 55, "column": 265, "offset": 10816 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "One important feature of HTTP is that each request/response pair is independent of every other. This means that all the information about your request must be included in the request headers; the server doesn't remember anything you told it last time. This is one reason that HTTP and the web have been so successful. It is very easy to implement an HTTP server and it can be done on very small devices. This might be one of the reasons why the Web succeeded where other similar systems failed. Since the protocol is so simple, it was easy to write a web server and many people did. This meant that the web was used by many small groups to publish content, forming the groundswell that led to institutional and corporate adoption.",
+                        "position": {
+                            "start": { "line": 57, "column": 1, "offset": 10818 },
+                            "end": { "line": 57, "column": 731, "offset": 11548 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 57, "column": 1, "offset": 10818 }, "end": { "line": 57, "column": 731, "offset": 11548 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "We'll look at HTTP in more detail later, for now the take home message is:",
+                        "position": {
+                            "start": { "line": 59, "column": 1, "offset": 11550 },
+                            "end": { "line": 59, "column": 75, "offset": 11624 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 59, "column": 1, "offset": 11550 }, "end": { "line": 59, "column": 75, "offset": 11624 }, "indent": [] }
+            },
+            {
+                "type": "list",
+                "ordered": false,
+                "start": null,
+                "spread": true,
+                "children": [
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "HTTP is a simple text based protocol",
+                                        "position": {
+                                            "start": { "line": 61, "column": 5, "offset": 11630 },
+                                            "end": { "line": 61, "column": 41, "offset": 11666 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 61, "column": 5, "offset": 11630 },
+                                    "end": { "line": 61, "column": 41, "offset": 11666 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 61, "column": 1, "offset": 11626 },
+                            "end": { "line": 62, "column": 1, "offset": 11667 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "The client (browser) sends a request to the server",
+                                        "position": {
+                                            "start": { "line": 63, "column": 5, "offset": 11672 },
+                                            "end": { "line": 63, "column": 55, "offset": 11722 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 63, "column": 5, "offset": 11672 },
+                                    "end": { "line": 63, "column": 55, "offset": 11722 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 63, "column": 1, "offset": 11668 },
+                            "end": { "line": 64, "column": 1, "offset": 11723 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "The server receives the request and returns a response",
+                                        "position": {
+                                            "start": { "line": 65, "column": 5, "offset": 11728 },
+                                            "end": { "line": 65, "column": 59, "offset": 11782 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 65, "column": 5, "offset": 11728 },
+                                    "end": { "line": 65, "column": 59, "offset": 11782 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 65, "column": 1, "offset": 11724 },
+                            "end": { "line": 66, "column": 1, "offset": 11783 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "The server doesn't need to remember the client - every request is independant.",
+                                        "position": {
+                                            "start": { "line": 67, "column": 5, "offset": 11788 },
+                                            "end": { "line": 67, "column": 83, "offset": 11866 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 67, "column": 5, "offset": 11788 },
+                                    "end": { "line": 67, "column": 83, "offset": 11866 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 67, "column": 1, "offset": 11784 },
+                            "end": { "line": 68, "column": 1, "offset": 11867 },
+                            "indent": [1]
+                        }
+                    },
+                    {
+                        "type": "listItem",
+                        "spread": false,
+                        "checked": null,
+                        "children": [
+                            {
+                                "type": "paragraph",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "The simple nature of HTTP makes it easy to understand and makes writing web servers relatively easy.",
+                                        "position": {
+                                            "start": { "line": 69, "column": 5, "offset": 11872 },
+                                            "end": { "line": 69, "column": 105, "offset": 11972 },
+                                            "indent": []
+                                        }
+                                    }
+                                ],
+                                "position": {
+                                    "start": { "line": 69, "column": 5, "offset": 11872 },
+                                    "end": { "line": 69, "column": 105, "offset": 11972 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 69, "column": 1, "offset": 11868 },
+                            "end": { "line": 69, "column": 105, "offset": 11972 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": {
+                    "start": { "line": 61, "column": 1, "offset": 11626 },
+                    "end": { "line": 69, "column": 105, "offset": 11972 },
+                    "indent": [1, 1, 1, 1, 1, 1, 1, 1]
+                }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Uniform Resource Locators: URL",
+                        "position": {
+                            "start": { "line": 71, "column": 4, "offset": 11977 },
+                            "end": { "line": 71, "column": 34, "offset": 12007 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 71, "column": 1, "offset": 11974 }, "end": { "line": 71, "column": 34, "offset": 12007 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Another part of Tim Berners-Lee's invention is the Uniform Resource Locator, URL. These days, URLs are ubiquitous. We see them on advertisments, on the TV, we send them to each other in email, even reference them in books and reports. Most organisations today will have at least one top-level URL for their website and often have many connected to particular services, departments or advertising campaigns.",
+                        "position": {
+                            "start": { "line": 73, "column": 1, "offset": 12009 },
+                            "end": { "line": 73, "column": 407, "offset": 12415 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 73, "column": 1, "offset": 12009 }, "end": { "line": 73, "column": 407, "offset": 12415 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "See ",
+                        "position": { "start": { "line": 75, "column": 1, "offset": 12417 }, "end": { "line": 75, "column": 5, "offset": 12421 }, "indent": [] }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "https://pwp.stevecassidy.net/web/urls.html",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "the URL chapter",
+                                "position": {
+                                    "start": { "line": 75, "column": 6, "offset": 12422 },
+                                    "end": { "line": 75, "column": 21, "offset": 12437 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 75, "column": 5, "offset": 12421 },
+                            "end": { "line": 75, "column": 66, "offset": 12482 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " for a detaile discussion.",
+                        "position": {
+                            "start": { "line": 75, "column": 66, "offset": 12482 },
+                            "end": { "line": 75, "column": 92, "offset": 12508 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 75, "column": 1, "offset": 12417 }, "end": { "line": 75, "column": 92, "offset": 12508 }, "indent": [] }
+            },
+            {
+                "type": "heading",
+                "depth": 2,
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Hypertext Markup Language: HTML",
+                        "position": {
+                            "start": { "line": 77, "column": 4, "offset": 12513 },
+                            "end": { "line": 77, "column": 35, "offset": 12544 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 77, "column": 1, "offset": 12510 }, "end": { "line": 77, "column": 35, "offset": 12544 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "HTML is the last link in the chain that makes the Web. It is a language that allows authors to write Hypertext documents that include structure and formatting instructions. ",
+                        "position": {
+                            "start": { "line": 79, "column": 1, "offset": 12546 },
+                            "end": { "line": 79, "column": 174, "offset": 12719 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Hypertext",
+                                "position": {
+                                    "start": { "line": 79, "column": 175, "offset": 12720 },
+                                    "end": { "line": 79, "column": 184, "offset": 12729 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 79, "column": 174, "offset": 12719 },
+                            "end": { "line": 79, "column": 185, "offset": 12730 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " describes the idea of linking one document to another via ",
+                        "position": {
+                            "start": { "line": 79, "column": 185, "offset": 12730 },
+                            "end": { "line": 79, "column": 244, "offset": 12789 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "hyperlinks",
+                                "position": {
+                                    "start": { "line": 79, "column": 245, "offset": 12790 },
+                                    "end": { "line": 79, "column": 255, "offset": 12800 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 79, "column": 244, "offset": 12789 },
+                            "end": { "line": 79, "column": 256, "offset": 12801 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " so that when you activate a link, you jump to a new document. There were hypertext systems before the birth of the web (",
+                        "position": {
+                            "start": { "line": 79, "column": 256, "offset": 12801 },
+                            "end": { "line": 79, "column": 377, "offset": 12922 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "http://www.xanadu.com/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Project Xanadu",
+                                "position": {
+                                    "start": { "line": 79, "column": 378, "offset": 12923 },
+                                    "end": { "line": 79, "column": 392, "offset": 12937 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 79, "column": 377, "offset": 12922 },
+                            "end": { "line": 79, "column": 417, "offset": 12962 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", ",
+                        "position": {
+                            "start": { "line": 79, "column": 417, "offset": 12962 },
+                            "end": { "line": 79, "column": 419, "offset": 12964 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "http://en.wikipedia.org/wiki/HyperCard",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Hypercard",
+                                "position": {
+                                    "start": { "line": 79, "column": 420, "offset": 12965 },
+                                    "end": { "line": 79, "column": 429, "offset": 12974 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 79, "column": 419, "offset": 12964 },
+                            "end": { "line": 79, "column": 470, "offset": 13015 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ") but HTML has been much more successful than any other standard in this space.",
+                        "position": {
+                            "start": { "line": 79, "column": 470, "offset": 13015 },
+                            "end": { "line": 79, "column": 549, "offset": 13094 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 79, "column": 1, "offset": 12546 }, "end": { "line": 79, "column": 549, "offset": 13094 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "HTML is a ",
+                        "position": {
+                            "start": { "line": 81, "column": 1, "offset": 13096 },
+                            "end": { "line": 81, "column": 11, "offset": 13106 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Markup Language",
+                                "position": {
+                                    "start": { "line": 81, "column": 12, "offset": 13107 },
+                                    "end": { "line": 81, "column": 27, "offset": 13122 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 81, "column": 11, "offset": 13106 },
+                            "end": { "line": 81, "column": 28, "offset": 13123 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " which means that it provides a way of adding additional information or markup to plain text. In this case, the markup defines the structure of the document - headers, paragraphs, lists, tables - as well as the hypertext features - links and anchors. There are other markup languages, for example LaTeX is used to write scientific papers by adding markup to text (e.g. \\textbf{bold text} or \\section{A heading}). All markup languages have some way of differentiating the text in a document from the markup instructions. In HTML this is via the angle brackets which surround tag names: ",
+                        "position": {
+                            "start": { "line": 81, "column": 28, "offset": 13123 },
+                            "end": { "line": 81, "column": 613, "offset": 13708 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": "<",
+                        "position": {
+                            "start": { "line": 81, "column": 613, "offset": 13708 },
+                            "end": { "line": 81, "column": 615, "offset": 13710 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": "tag>.",
+                        "position": {
+                            "start": { "line": 81, "column": 615, "offset": 13710 },
+                            "end": { "line": 81, "column": 620, "offset": 13715 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 81, "column": 1, "offset": 13096 }, "end": { "line": 81, "column": 620, "offset": 13715 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "HTML was invented by Tim Berners-Lee but it derives from an earlier standard called SGML (Standard Generalised Markup Language) that had been in use for some years as a language for writing technical documentation. It came out of work by IBM on their technical documentation and became an industry standard ratified by the ISO. SGML is in fact a meta-standard in that it defines a way of defining a markup language. HTML is one such markup language and can strictly be treated as such; however, since HTML is so much more common than any other SGML language, it is usually treated as a special case. So, for example, while we could use general purpose SGML authoring tools to write HTML, we generally use applications tailored to writing web pages that only understand HTML.",
+                        "position": {
+                            "start": { "line": 83, "column": 1, "offset": 13717 },
+                            "end": { "line": 83, "column": 775, "offset": 14491 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 83, "column": 1, "offset": 13717 }, "end": { "line": 83, "column": 775, "offset": 14491 }, "indent": [] }
+            },
+            {
+                "type": "paragraph",
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Another related markup language is ",
+                        "position": {
+                            "start": { "line": 85, "column": 1, "offset": 14493 },
+                            "end": { "line": 85, "column": 36, "offset": 14528 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "http://www.w3.org/XML/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "XML",
+                                "position": {
+                                    "start": { "line": 85, "column": 37, "offset": 14529 },
+                                    "end": { "line": 85, "column": 40, "offset": 14532 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 85, "column": 36, "offset": 14528 },
+                            "end": { "line": 85, "column": 65, "offset": 14557 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", the eXtensible Markup Language. XML began as an attempt to streamline the SGML standard to make it more suitable for the web. Like SGML, XML is a meta-standard that defines how markup languages can be written. There is a version of HTML defined as an XML language called ",
+                        "position": {
+                            "start": { "line": 85, "column": 65, "offset": 14557 },
+                            "end": { "line": 85, "column": 338, "offset": 14830 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "link",
+                        "title": null,
+                        "url": "http://www.w3.org/MarkUp/",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "XHTML",
+                                "position": {
+                                    "start": { "line": 85, "column": 339, "offset": 14831 },
+                                    "end": { "line": 85, "column": 344, "offset": 14836 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 85, "column": 338, "offset": 14830 },
+                            "end": { "line": 85, "column": 372, "offset": 14864 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " but this never really took off and the standardisation work around it was stopped in 2010. Instead, XML has become widely used to describe ",
+                        "position": {
+                            "start": { "line": 85, "column": 372, "offset": 14864 },
+                            "end": { "line": 85, "column": 512, "offset": 15004 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "data",
+                                "position": {
+                                    "start": { "line": 85, "column": 513, "offset": 15005 },
+                                    "end": { "line": 85, "column": 517, "offset": 15009 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 85, "column": 512, "offset": 15004 },
+                            "end": { "line": 85, "column": 518, "offset": 15010 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " rather than ",
+                        "position": {
+                            "start": { "line": 85, "column": 518, "offset": 15010 },
+                            "end": { "line": 85, "column": 531, "offset": 15023 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "emphasis",
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "documents",
+                                "position": {
+                                    "start": { "line": 85, "column": 532, "offset": 15024 },
+                                    "end": { "line": 85, "column": 541, "offset": 15033 },
+                                    "indent": []
+                                }
+                            }
+                        ],
+                        "position": {
+                            "start": { "line": 85, "column": 531, "offset": 15023 },
+                            "end": { "line": 85, "column": 542, "offset": 15034 },
+                            "indent": []
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " and we'll look at how it is used today on the web later in this book.",
+                        "position": {
+                            "start": { "line": 85, "column": 542, "offset": 15034 },
+                            "end": { "line": 85, "column": 612, "offset": 15104 },
+                            "indent": []
+                        }
+                    }
+                ],
+                "position": { "start": { "line": 85, "column": 1, "offset": 14493 }, "end": { "line": 85, "column": 612, "offset": 15104 }, "indent": [] }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 86, "column": 1, "offset": 15105 } }
+    }
+}

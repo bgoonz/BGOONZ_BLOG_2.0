@@ -1,0 +1,339 @@
+{
+    "expireTime": 9007200888440673000,
+    "key": "transformer-remark-markdown-html-ast-340f4e10cd83bdbee6894e5361089f37--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "raw",
+                "value": "<br>\n<br>\n<br>",
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 4, "column": 5, "offset": 15 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<br>\n<br>\n<h1>   Family-Promise Application</h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://a.familypromiseservicetracker.dev/dashboard\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<h1>   Speach Recognition api </h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://random-static-html-deploys.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n<br>\n<br>\n<br>\n<br>\n<br>\n<h1>   Paste To Markdown </h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://euangoddard.github.io/clipboard2markdown/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n        \n        \n        \n<br>\n<br>\n<h1>   Paste Excel Tabel To Markdown </h1>\n<iframe  class=\"block-content\" src=\"https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n<br>",
+                "position": { "start": { "line": 6, "column": 1, "offset": 17 }, "end": { "line": 45, "column": 5, "offset": 1909 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 47, "column": 1, "offset": 1911 }, "end": { "line": 47, "column": 5, "offset": 1915 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>Paste excel to HTML</h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://pedantic-wing-adbf82.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n<br>",
+                "position": { "start": { "line": 49, "column": 1, "offset": 1917 }, "end": { "line": 55, "column": 5, "offset": 2349 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<h1>  Cloud Storage </h1>\n<br>",
+                "position": { "start": { "line": 57, "column": 1, "offset": 2351 }, "end": { "line": 58, "column": 5, "offset": 2381 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<h2> Up to 1TB of cloud Storage for file sharing!</h2>\n<iframe src=\"https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E\" height=\"275px\" width=\"17%\" style=\"zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;\">\n</iframe>",
+                "position": { "start": { "line": 60, "column": 1, "offset": 2383 }, "end": { "line": 62, "column": 10, "offset": 2687 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 64, "column": 1, "offset": 2689 }, "end": { "line": 64, "column": 5, "offset": 2693 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 66, "column": 1, "offset": 2695 }, "end": { "line": 66, "column": 5, "offset": 2699 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>     Resource Archive           </h1>\n<br>",
+                "position": { "start": { "line": 68, "column": 1, "offset": 2701 }, "end": { "line": 70, "column": 5, "offset": 2752 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe src=\"https://resourcerepo2.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 72, "column": 1, "offset": 2754 }, "end": { "line": 74, "column": 82, "offset": 3112 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 76, "column": 1, "offset": 3114 }, "end": { "line": 76, "column": 5, "offset": 3118 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 78, "column": 1, "offset": 3120 }, "end": { "line": 78, "column": 5, "offset": 3124 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 80, "column": 1, "offset": 3126 }, "end": { "line": 80, "column": 5, "offset": 3130 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>   Lambda Student Site </h1>\n<br>",
+                "position": { "start": { "line": 82, "column": 1, "offset": 3132 }, "end": { "line": 84, "column": 5, "offset": 3174 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe class=\"inner\" src=\"https://lambda-resources.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 86, "column": 1, "offset": 3176 }, "end": { "line": 88, "column": 82, "offset": 3551 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 90, "column": 1, "offset": 3553 }, "end": { "line": 90, "column": 5, "offset": 3557 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 92, "column": 1, "offset": 3559 }, "end": { "line": 92, "column": 5, "offset": 3563 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 94, "column": 1, "offset": 3565 }, "end": { "line": 94, "column": 5, "offset": 3569 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 96, "column": 1, "offset": 3571 }, "end": { "line": 96, "column": 5, "offset": 3575 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 98, "column": 1, "offset": 3577 }, "end": { "line": 98, "column": 5, "offset": 3581 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 100, "column": 1, "offset": 3583 }, "end": { "line": 100, "column": 5, "offset": 3587 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 102, "column": 1, "offset": 3589 }, "end": { "line": 102, "column": 5, "offset": 3593 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Text Tools     </h1>\n<br>",
+                "position": { "start": { "line": 104, "column": 1, "offset": 3595 }, "end": { "line": 106, "column": 5, "offset": 3630 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe src=\"https://devtools42.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 108, "column": 1, "offset": 3632 }, "end": { "line": 110, "column": 82, "offset": 3987 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 112, "column": 1, "offset": 3989 }, "end": { "line": 112, "column": 5, "offset": 3993 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 114, "column": 1, "offset": 3995 }, "end": { "line": 114, "column": 5, "offset": 3999 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Ternary Converter   </h1>\n<br>\n<iframe src=\"https://ternary42.netlify.app/\" height=\"800px\" width=\"600px!important\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 116, "column": 1, "offset": 4001 }, "end": { "line": 121, "column": 82, "offset": 4405 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 123, "column": 1, "offset": 4407 }, "end": { "line": 123, "column": 5, "offset": 4411 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 125, "column": 1, "offset": 4413 }, "end": { "line": 125, "column": 5, "offset": 4417 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>  Github HTML Render from link </h1>\n<br>",
+                "position": { "start": { "line": 127, "column": 1, "offset": 4419 }, "end": { "line": 129, "column": 5, "offset": 4469 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe src=\"https://githtmlpreview.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 131, "column": 1, "offset": 4471 }, "end": { "line": 133, "column": 82, "offset": 4830 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 135, "column": 1, "offset": 4832 }, "end": { "line": 135, "column": 5, "offset": 4836 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 137, "column": 1, "offset": 4838 }, "end": { "line": 137, "column": 5, "offset": 4842 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Data Structures</h1>\n<br>",
+                "position": { "start": { "line": 139, "column": 1, "offset": 4844 }, "end": { "line": 141, "column": 5, "offset": 4879 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe src=\"https://determined-dijkstra-ee7390.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 143, "column": 1, "offset": 4881 }, "end": { "line": 145, "column": 82, "offset": 5252 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 147, "column": 1, "offset": 5254 }, "end": { "line": 147, "column": 5, "offset": 5258 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 149, "column": 1, "offset": 5260 }, "end": { "line": 149, "column": 5, "offset": 5264 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>  Interview     </h1>\n<br>",
+                "position": { "start": { "line": 151, "column": 1, "offset": 5266 }, "end": { "line": 153, "column": 5, "offset": 5301 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe  src=\"https://web-dev-interview-prep-quiz-website.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 155, "column": 1, "offset": 5303 }, "end": { "line": 157, "column": 82, "offset": 5684 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 159, "column": 1, "offset": 5686 }, "end": { "line": 159, "column": 5, "offset": 5690 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 161, "column": 1, "offset": 5692 }, "end": { "line": 161, "column": 5, "offset": 5696 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 163, "column": 1, "offset": 5698 }, "end": { "line": 163, "column": 5, "offset": 5702 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Form Builder GUI </h1>\n<br>",
+                "position": { "start": { "line": 165, "column": 1, "offset": 5704 }, "end": { "line": 167, "column": 5, "offset": 5741 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe  src=\"https://fourm-builder-gui.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 169, "column": 1, "offset": 5743 }, "end": { "line": 171, "column": 82, "offset": 6106 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1> Border Builder </h1>\n<br>",
+                "position": { "start": { "line": 173, "column": 1, "offset": 6108 }, "end": { "line": 175, "column": 5, "offset": 6143 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<iframe  src=\"https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                "position": { "start": { "line": 177, "column": 1, "offset": 6145 }, "end": { "line": 179, "column": 82, "offset": 6535 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 181, "column": 1, "offset": 6537 }, "end": { "line": 181, "column": 5, "offset": 6541 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 183, "column": 1, "offset": 6543 }, "end": { "line": 183, "column": 5, "offset": 6547 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 185, "column": 1, "offset": 6549 }, "end": { "line": 185, "column": 5, "offset": 6553 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 187, "column": 1, "offset": 6555 }, "end": { "line": 187, "column": 5, "offset": 6559 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>                </h1>\n<br>\n<iframe  class=\"block-content\" src=\"https://ds-algo-official.netlify.app/\" height=\"800px\" width=\"1600px\" scrolling=\"yes\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\" title=\"YouTube video\n        player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write;\n        encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n        \n        \n        \n<br>",
+                "position": { "start": { "line": 189, "column": 1, "offset": 6561 }, "end": { "line": 198, "column": 5, "offset": 7013 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 200, "column": 1, "offset": 7015 }, "end": { "line": 200, "column": 5, "offset": 7019 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<h1>                </h1>\n<br>\n        \n        \n <iframe height=\"800\" style=\"width: 100%;\" scrolling=\"yes\" title=\"Simple Typing Carousel \" src=\"https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n  See the Pen <a href=\"https://codepen.io/bgoonz/pen/ExZvGoZ\">\n  Simple Typing Carousel </a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.\n</iframe>",
+                "position": { "start": { "line": 202, "column": 1, "offset": 7021 }, "end": { "line": 211, "column": 10, "offset": 7535 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>",
+                "position": { "start": { "line": 213, "column": 1, "offset": 7537 }, "end": { "line": 213, "column": 5, "offset": 7541 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "raw",
+                "value": "<br>\n<br>\n<br>\n <iframe height=\"300\" style=\"width: 90%;\" scrolling=\"no\" title=\"Fibonacci Carousel\"\n      src=\"https://codepen.io/bgoonz/embed/JjNagJo?default-tab=result&theme-id=dark\" frameborder=\"no\" loading=\"lazy\"\n      allowtransparency=\"true\" allowfullscreen=\"true\">\n      See the Pen <a href=\"https://codepen.io/bgoonz/pen/JjNagJo\">\n        Fibonacci Carousel</a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n      on <a href=\"https://codepen.io\">CodePen</a>.\n    </iframe>\n    <br>\n    <br>\n    <br>\n    <iframe height=\"300\" style=\"width: 90%;\" scrolling=\"no\" title=\"embed-twitter-feed\"\n      src=\"https://codepen.io/bgoonz/embed/poPOqEO?default-tab=result&theme-id=dark\" frameborder=\"no\" loading=\"lazy\"\n      allowtransparency=\"true\" allowfullscreen=\"true\">\n      See the Pen <a href=\"https://codepen.io/bgoonz/pen/poPOqEO\">\n        embed-twitter-feed</a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n      on <a href=\"https://codepen.io\">CodePen</a>.\n    </iframe>\n    <br>\n    <br>\n    <br>\n    <iframe height=\"300\" style=\"width: 90%;\" scrolling=\"no\" src=\"//jsfiddle.net/bgoonz/j4xt839d/embedded/result/\"\n      allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe>\n    <br>\n    <br>\n    <br>\n    <iframe height=\"300\" style=\"width: 90%;\" scrolling=\"no\" src=\"//jsfiddle.net/bgoonz/76osauer/1/embedded/result/\"\n      allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe>\n    <br>\n    <br>\n    <br>\n    <iframe height=\"300\" style=\"width: 90%;\" scrolling=\"no\" src=\"//jsfiddle.net/bgoonz/vtz7820m/embedded/result/dark/\"\n      allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe>\n    <br>\n    <br>\n    <br>\n    <iframe height=\"300\" style=\"width: 90%;\" scrolling=\"no\"\n      src=\"//jsfiddle.net/bgoonz/1dye9uws/2/embedded/js,html,css,result/dark/\" allowfullscreen=\"allowfullscreen\"\n      frameborder=\"0\"></iframe>\n    <br>\n    <br>\n    <br>\n    <iframe height=\"300\" style=\"width: 90%;\" scrolling=\"no\" src=\"//jsfiddle.net/bgoonz/3mpgzkx7/1/embedded/\"\n      allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe> \n    <br>\n    <br>\n    <br>\n    <iframe loading=\"lazy\" src=\"https://codepen.io/bgoonz/embed/zYwJQaw?default-tab=html%2Cresult\"\n      style=\"width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;\" title=\"hvbrd-sockets (forked)\"\n      sandbox=\"allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts\"></iframe>\n    <br>\n    <br>\n    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->\n    <br>\n    <iframe loading=\"lazy\" src=\"https://codesandbox.io/embed/bigo-3wqy4?fontsize=14&hidenavigation=1&theme=dark\"\n      style=\"width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;\" title=\"hvbrd-sockets (forked)\"\n      sandbox=\"allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts\"></iframe>\n    <br>\n    <br>\n    <br>\n    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->\n    <iframe loading=\"lazy\"\n      src=\"https://codesandbox.io/embed/hvbrd-sockets-forked-vsi2o?fontsize=14&hidenavigation=1&theme=dark\"\n      style=\"width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;\" title=\"hvbrd-sockets (forked)\"\n      sandbox=\"allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts\"></iframe>\n    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->\n    <br>\n    <br>\n    <iframe loading=\"lazy\" src=\"https://codesandbox.io/embed/summer-surf-p6dei?fontsize=14&hidenavigation=1&theme=dark\"\n      style=\"width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;\" title=\"summer-surf-p6dei\"\n      sandbox=\"allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts\"></iframe>\n    <br>\n    <br>\n    <br>\n    <br>\n    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->\n    <br> <br>\n    <br>\n    <iframe loading=\"lazy\"\n      src=\"https://codesandbox.io/embed/sharp-feistel-x8bvv?fontsize=14&hidenavigation=1&theme=dark\"\n      style=\"width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;\" title=\"sharp-feistel-x8bvv\"\n      sandbox=\"allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts\"></iframe>\n    <br>\n    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->\n    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->\n    <center>\n      <br>\n      <br>\n      <br>\n      <br>\n      <iframe loading=\"lazy\" height=\"575\" style=\"width: 90%;\" scrolling=\"no\"\n        title=\"3D Cover Flow in React! | @keyframers 3.7\"\n        src=\"https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\"\n        allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href='https://codepen.io/bgoonz42/pen/RwpeaWr'>3D Cover Flow in React! | @keyframers\n          3.7</a> by Bryan\n        C Guner\n        (<a href='https://codepen.io/bgoonz42'>@bgoonz42</a>) on <a href='https://codepen.io'>CodePen</a>.\n      </iframe>\n      <br>\n      <br>\n      <br>\n      <br>\n      <br>\n      <iframe loading=\"lazy\" height=\"575\" style=\"width: 90%;\" scrolling=\"no\" title=\"Simple Typing Carousel \"\n        src=\"https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\"\n        allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/bgoonz/pen/ExZvGoZ\">\n          Simple Typing Carousel </a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>\n      <br>\n      <br>\n      <br>\n      <iframe loading=\"lazy\" height=\"575\" style=\"width: 90%;\" scrolling=\"no\"\n        title=\"3D Cover Flow in React! | @keyframers 3.7\"\n        src=\"https://codepen.io/bgoonz42/embed/RwpeaWr?height=375&theme=dark&default-tab=js,result\" frameborder=\"no\"\n        loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href='https://codepen.io/bgoonz42/pen/RwpeaWr'>3D Cover Flow in React! | @keyframers\n          3.7</a> by Bryan\n        C Guner\n        (<a href='https://codepen.io/bgoonz42'>@bgoonz42</a>) on <a href='https://codepen.io'>CodePen</a>.\n      </iframe>\n      <br>\n      <br>\n      <br>\n      <br>\n      <!-------------------------------------------------------------------------------------->\n      <iframe loading=\"lazy\" height=\"575\" style=\"width: 90%;\" scrolling=\"no\" title=\"Video Background 1\"\n        src=\"https://codesandbox.io/embed/bgoonzblog20-oo3x5?fontsize=14&hidenavigation=1&theme=dark\"\n        style=\"width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;\" title=\"bgoonzblog2.0\"\n        sandbox=\"allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts\"></iframe>\n      <br>\n      <br>\n      <br>\n      <!-------------------------------------------------------------------------------------->\n      <br>\n      <iframe loading=\"lazy\" height=\"575\" style=\"width: 90%;\" scrolling=\"no\" title=\"Video Background 1\"\n        src=\"https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark\" frameborder=\"no\"\n        loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/bgoonz/pen/BaRLKBd\">\n          Video Background 1</a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>\n      <!-------------------------------------------------------------------------------------->\n      <br><br>\n      <!-------------------------------------------------------------------------------------->\n      <br><br>\n      <center>\n        <br>\n        <br>\n        <iframe loading=\"lazy\" height=\"575\" style=\"width: 90%;\" scrolling=\"no\"\n          title=\"CSS-only Colorful Calendar Concept\" src=\"https://documentation-site-react2.vercel.app/\"\n          frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n          See the Pen <a href=\"https://codepen.io/bgoonz/pen/vYmKQYj\">\n            CSS-only Colorful Calendar Concept</a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n          on <a href=\"https://codepen.io\">CodePen</a>.\n        </iframe>\n        <br>\n        <br>\n        <br>\n        <!-------------------------------------------------------------------------------------->\n        <br><br>\n        <iframe loading=\"lazy\" height=\"575\" style=\"width: 90%;\" scrolling=\"no\" title=\"FullTextSearchjs\"\n          src=\"https://codepen.io/bgoonz/embed/QWvMWoQ?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\"\n          allowtransparency=\"true\" allowfullscreen=\"true\">\n          See the Pen <a href=\"https://codepen.io/bgoonz/pen/QWvMWoQ\">\n            FullTextSearchjs</a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n          on <a href=\"https://codepen.io\">CodePen</a>.\n        </iframe>\n        <br>\n        <br>\n        <br>\n        <!-------------------------------------------------------------------------------------->\n        <br>\n        <iframe loading=\"lazy\" height=\"575\" style=\"width: 90%;\" scrolling=\"no\" title=\"CSS Grid: Info Card\"\n          src=\"https://codepen.io/bgoonz42/embed/MWmpjmy?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\"\n          allowtransparency=\"true\" allowfullscreen=\"true\">\n          See the Pen <a href=\"https://codepen.io/bgoonz42/pen/MWmpjmy\">\n            CSS Grid: Info Card</a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz42\">@bgoonz42</a>)\n          on <a href=\"https://codepen.io\">CodePen</a>.\n        </iframe>\n        <br>\n        <br>\n        <br>\n        <br>\n        <!-------------------------------------------------------------------------------------->\n        <iframe loading=\"lazy\" height=\"575\" style=\"width: 90%;\" scrolling=\"no\"\n          title=\"CSS-only Colorful Calendar Concept\"\n          src=\"https://codepen.io/bgoonz/embed/vYmKQYj?default-tab=html%2Cresult&theme-id=dark\" frameborder=\"no\"\n          loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n          See the Pen <a href=\"https://codepen.io/bgoonz/pen/vYmKQYj\">\n            CSS-only Colorful Calendar Concept</a> by Bryan C Guner (<a href=\"https://codepen.io/bgoonz\">@bgoonz</a>)\n          on <a href=\"https://codepen.io\">CodePen</a>.\n        </iframe>\n        <br>\n        <br>\n        <br>",
+                "position": { "start": { "line": 215, "column": 1, "offset": 7543 }, "end": { "line": 414, "column": 13, "offset": 18776 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 415, "column": 1, "offset": 18777 } }
+    }
+}

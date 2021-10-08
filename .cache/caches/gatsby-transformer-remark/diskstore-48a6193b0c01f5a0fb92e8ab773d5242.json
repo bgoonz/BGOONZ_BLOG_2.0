@@ -1,0 +1,433 @@
+{
+    "expireTime": 9007200888440672000,
+    "key": "transformer-remark-markdown-html-ast-6cd9b0322eafddb4ec5afde22f843a2d--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The main difference between local and global packages is this:",
+                        "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 63, "offset": 63 } }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 63, "offset": 63 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "strong",
+                                "properties": {},
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "local packages",
+                                        "position": { "start": { "line": 4, "column": 7, "offset": 71 }, "end": { "line": 4, "column": 21, "offset": 85 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 4, "column": 5, "offset": 69 }, "end": { "line": 4, "column": 23, "offset": 87 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " are installed in the directory where you run npm install ",
+                                "position": { "start": { "line": 4, "column": 23, "offset": 87 }, "end": { "line": 4, "column": 81, "offset": 145 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "<",
+                                "position": { "start": { "line": 4, "column": 81, "offset": 145 }, "end": { "line": 4, "column": 83, "offset": 147 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "package-name>, and they are put in the node_modules folder under this directory",
+                                "position": { "start": { "line": 4, "column": 83, "offset": 147 }, "end": { "line": 4, "column": 162, "offset": 226 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 4, "column": 1, "offset": 65 }, "end": { "line": 5, "column": 1, "offset": 227 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "strong",
+                                "properties": {},
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "global packages",
+                                        "position": { "start": { "line": 6, "column": 7, "offset": 234 }, "end": { "line": 6, "column": 22, "offset": 249 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 6, "column": 5, "offset": 232 }, "end": { "line": 6, "column": 24, "offset": 251 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": " are all put in a single place in your system (exactly where depends on your setup), regardless of where you run npm install -g ",
+                                "position": { "start": { "line": 6, "column": 24, "offset": 251 }, "end": { "line": 6, "column": 152, "offset": 379 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "<",
+                                "position": { "start": { "line": 6, "column": 152, "offset": 379 }, "end": { "line": 6, "column": 154, "offset": 381 } }
+                            },
+                            {
+                                "type": "text",
+                                "value": "package-name>",
+                                "position": { "start": { "line": 6, "column": 154, "offset": 381 }, "end": { "line": 6, "column": 167, "offset": 394 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 6, "column": 1, "offset": 228 }, "end": { "line": 6, "column": 167, "offset": 394 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 65 }, "end": { "line": 6, "column": 167, "offset": 394 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In your code you can only require local packages:",
+                        "position": { "start": { "line": 8, "column": 1, "offset": 396 }, "end": { "line": 8, "column": 50, "offset": 445 } }
+                    }
+                ],
+                "position": { "start": { "line": 8, "column": 1, "offset": 396 }, "end": { "line": 8, "column": 50, "offset": 445 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "so when should you install in one way or another?",
+                        "position": { "start": { "line": 10, "column": 1, "offset": 447 }, "end": { "line": 10, "column": 50, "offset": 496 } }
+                    }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 447 }, "end": { "line": 10, "column": 50, "offset": 496 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "In general, ",
+                        "position": { "start": { "line": 12, "column": 1, "offset": 498 }, "end": { "line": 12, "column": 13, "offset": 510 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "all packages should be installed locally",
+                                "position": { "start": { "line": 12, "column": 15, "offset": 512 }, "end": { "line": 12, "column": 55, "offset": 552 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 12, "column": 13, "offset": 510 }, "end": { "line": 12, "column": 57, "offset": 554 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ".",
+                        "position": { "start": { "line": 12, "column": 57, "offset": 554 }, "end": { "line": 12, "column": 58, "offset": 555 } }
+                    }
+                ],
+                "position": { "start": { "line": 12, "column": 1, "offset": 498 }, "end": { "line": 12, "column": 58, "offset": 555 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "This makes sure you can have dozens of applications in your computer, all running a different version of each package if needed.",
+                        "position": { "start": { "line": 14, "column": 1, "offset": 557 }, "end": { "line": 14, "column": 129, "offset": 685 } }
+                    }
+                ],
+                "position": { "start": { "line": 14, "column": 1, "offset": 557 }, "end": { "line": 14, "column": 129, "offset": 685 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Updating a global package would make all your projects use the new release, and as you can imagine this might cause nightmares in terms of maintenance, as some packages might break compatibility with further dependencies, and so on.",
+                        "position": { "start": { "line": 16, "column": 1, "offset": 687 }, "end": { "line": 16, "column": 233, "offset": 919 } }
+                    }
+                ],
+                "position": { "start": { "line": 16, "column": 1, "offset": 687 }, "end": { "line": 16, "column": 233, "offset": 919 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "All projects have their own local version of a package, even if this might appear like a waste of resources, it's minimal compared to the possible negative consequences.",
+                        "position": { "start": { "line": 18, "column": 1, "offset": 921 }, "end": { "line": 18, "column": 170, "offset": 1090 } }
+                    }
+                ],
+                "position": { "start": { "line": 18, "column": 1, "offset": 921 }, "end": { "line": 18, "column": 170, "offset": 1090 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "A package ",
+                        "position": { "start": { "line": 20, "column": 1, "offset": 1092 }, "end": { "line": 20, "column": 11, "offset": 1102 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "should be installed globally",
+                                "position": { "start": { "line": 20, "column": 13, "offset": 1104 }, "end": { "line": 20, "column": 41, "offset": 1132 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 20, "column": 11, "offset": 1102 }, "end": { "line": 20, "column": 43, "offset": 1134 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " when it provides an executable command that you run from the shell (CLI), and it's reused across projects.",
+                        "position": { "start": { "line": 20, "column": 43, "offset": 1134 }, "end": { "line": 20, "column": 150, "offset": 1241 } }
+                    }
+                ],
+                "position": { "start": { "line": 20, "column": 1, "offset": 1092 }, "end": { "line": 20, "column": 150, "offset": 1241 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You can also install executable commands locally and run them using npx, but some packages are just better installed globally.",
+                        "position": { "start": { "line": 22, "column": 1, "offset": 1243 }, "end": { "line": 22, "column": 127, "offset": 1369 } }
+                    }
+                ],
+                "position": { "start": { "line": 22, "column": 1, "offset": 1243 }, "end": { "line": 22, "column": 127, "offset": 1369 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Great examples of popular global packages which you might know are",
+                        "position": { "start": { "line": 24, "column": 1, "offset": 1371 }, "end": { "line": 24, "column": 67, "offset": 1437 } }
+                    }
+                ],
+                "position": { "start": { "line": 24, "column": 1, "offset": 1371 }, "end": { "line": 24, "column": 67, "offset": 1437 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "ul",
+                "properties": {},
+                "children": [
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "npm",
+                                "position": { "start": { "line": 26, "column": 5, "offset": 1443 }, "end": { "line": 26, "column": 8, "offset": 1446 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 26, "column": 1, "offset": 1439 }, "end": { "line": 27, "column": 1, "offset": 1447 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "create-react-app",
+                                "position": { "start": { "line": 28, "column": 5, "offset": 1452 }, "end": { "line": 28, "column": 21, "offset": 1468 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 28, "column": 1, "offset": 1448 }, "end": { "line": 29, "column": 1, "offset": 1469 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "vue-cli",
+                                "position": { "start": { "line": 30, "column": 5, "offset": 1474 }, "end": { "line": 30, "column": 12, "offset": 1481 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 30, "column": 1, "offset": 1470 }, "end": { "line": 31, "column": 1, "offset": 1482 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "grunt-cli",
+                                "position": { "start": { "line": 32, "column": 5, "offset": 1487 }, "end": { "line": 32, "column": 14, "offset": 1496 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 32, "column": 1, "offset": 1483 }, "end": { "line": 33, "column": 1, "offset": 1497 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "mocha",
+                                "position": { "start": { "line": 34, "column": 5, "offset": 1502 }, "end": { "line": 34, "column": 10, "offset": 1507 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 34, "column": 1, "offset": 1498 }, "end": { "line": 35, "column": 1, "offset": 1508 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "react-native-cli",
+                                "position": { "start": { "line": 36, "column": 5, "offset": 1513 }, "end": { "line": 36, "column": 21, "offset": 1529 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 36, "column": 1, "offset": 1509 }, "end": { "line": 37, "column": 1, "offset": 1530 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "gatsby-cli",
+                                "position": { "start": { "line": 38, "column": 5, "offset": 1535 }, "end": { "line": 38, "column": 15, "offset": 1545 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 38, "column": 1, "offset": 1531 }, "end": { "line": 39, "column": 1, "offset": 1546 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "forever",
+                                "position": { "start": { "line": 40, "column": 5, "offset": 1551 }, "end": { "line": 40, "column": 12, "offset": 1558 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 40, "column": 1, "offset": 1547 }, "end": { "line": 41, "column": 1, "offset": 1559 } }
+                    },
+                    { "type": "text", "value": "\n" },
+                    {
+                        "type": "element",
+                        "tagName": "li",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "nodemon",
+                                "position": { "start": { "line": 42, "column": 5, "offset": 1564 }, "end": { "line": 42, "column": 12, "offset": 1571 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 42, "column": 1, "offset": 1560 }, "end": { "line": 42, "column": 12, "offset": 1571 } }
+                    },
+                    { "type": "text", "value": "\n" }
+                ],
+                "position": { "start": { "line": 26, "column": 1, "offset": 1439 }, "end": { "line": 42, "column": 12, "offset": 1571 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "You probably have some packages installed globally already on your system. You can see them by running",
+                        "position": { "start": { "line": 44, "column": 1, "offset": 1573 }, "end": { "line": 44, "column": 103, "offset": 1675 } }
+                    }
+                ],
+                "position": { "start": { "line": 44, "column": 1, "offset": 1573 }, "end": { "line": 44, "column": 103, "offset": 1675 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "on your command line.",
+                        "position": { "start": { "line": 46, "column": 1, "offset": 1677 }, "end": { "line": 46, "column": 22, "offset": 1698 } }
+                    }
+                ],
+                "position": { "start": { "line": 46, "column": 1, "offset": 1677 }, "end": { "line": 46, "column": 22, "offset": 1698 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 47, "column": 1, "offset": 1699 } }
+    }
+}
