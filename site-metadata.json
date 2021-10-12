@@ -272,14 +272,6 @@
                         "icon_class": "dev",
                         "new_window": true,
                         "no_follow": false
-                    },
-                    {
-                        "label": "Web Dev Bookmarks",
-                        "url": "https://bgoonz-bookmarks.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
                     }
                 ],
                 "type": "action_menu"

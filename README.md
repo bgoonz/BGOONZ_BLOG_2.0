@@ -1,13 +1,14 @@
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
--   [Privacy policy](https://codepen.io/bgoonz/pen/LYLJZrW)
+
+- [Privacy policy](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 ---
 
 <span align="center">
 
-[![](https://data.jsdelivr.com/v1/package/npm/lodash/badge)](https://www.jsdelivr.com/package/npm/lodash)
-
+ [![](https://data.jsdelivr.com/v1/package/npm/lodash/badge)](https://www.jsdelivr.com/package/npm/lodash)
+ 
 ![QRCODE](./static/images/blog-qr.png)
 
  </span>
@@ -29,9 +30,11 @@
 ![](https://komarev.com/ghpvc/?username=bgoonz)
 
 # [WEBSITE](https://bgoonz-blog.netlify.app/)
-
+    
+    
 ## [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/)
-
+    
+    
 # Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
 
 ## [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
@@ -43,6 +46,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
 
 [![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
+
+
 
 ## [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
