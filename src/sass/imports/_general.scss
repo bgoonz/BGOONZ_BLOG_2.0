@@ -11,7 +11,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     overflow: auto;
-    zoom: 0.85;
 }
 #search {
     z-index: -1;
@@ -35,7 +34,7 @@ iframe {
     border-radius: 12px;
     border: 2px solid gold;
     height: 1500px !important;
-    width: 100%;
+    width: 95%;
     resize: both;
     overflow: scroll;
 }
@@ -224,4 +223,9 @@ img {
     h6 {
         font-size: 1.125em;
     }
+}
+
+.gcse-search {
+    width: 30%;
+    height: 50%;
 }

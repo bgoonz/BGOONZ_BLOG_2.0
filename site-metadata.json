@@ -43,7 +43,7 @@
                     },
                     {
                         "label": "Python",
-                        "url": "/docs/python/index",
+                        "url": "/docs/python/python-ds",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
@@ -79,7 +79,7 @@
                     },
                     {
                         "label": "ds-algo",
-                        "url": "content/algo",
+                        "url": "docs/articles/ds-algo-overview/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
@@ -124,14 +124,6 @@
                 "no_follow": false,
                 "has_subnav": true,
                 "subnav_links": [
-                    {
-                        "label": "Resource-Repo-Archive",
-                        "url": "https://github.com/bgoonz/UsefulResourceRepo2.0",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
-                    },
                     {
                         "label": "Medium Articles",
                         "url": "https://bryanguner.medium.com/",
@@ -188,11 +180,11 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "/docs/content/archive/"
+                "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
             },
             {
                 "label": "Audio",
-                "url": "/docs/audio/",
+                "url": "/docs/audio/audio",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
@@ -222,7 +214,7 @@
             },
             {
                 "label": "Projects",
-                "url": "docs/content/projects",
+                "url": "https://project-portfolio42.netlify.app/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
@@ -259,7 +251,7 @@
                     {
                         "label": "SearchAwesome",
                         "url": "https://bgoonz.github.io/searchAwesome/",
-                        "style": "primary",
+                        "style": "link",
                         "icon_class": "github",
                         "new_window": true,
                         "no_follow": false,
@@ -360,14 +352,6 @@
                     {
                         "label": "github-stats-website",
                         "url": "https://bgoonz.github.io/github-stats-website/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
-                    },
-                    {
-                        "label": "Python Docs",
-                        "url": "https://bryan-guner.gitbook.io/datastructures-in-pytho/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,

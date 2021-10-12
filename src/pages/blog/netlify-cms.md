@@ -192,8 +192,6 @@ Examples
 Do
 you have a great, open source example? Submit a pull request to this page!
 
-
-
 Example
 Tools
 Type
