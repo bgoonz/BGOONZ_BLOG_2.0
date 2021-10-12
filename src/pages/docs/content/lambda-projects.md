@@ -39,26 +39,7 @@ This product will take multiple Labs cohorts to complete.
 
 For the first round, students laid a solid foundation for the application. They built out user roles and profiles, an interface for user management, and a way for users to manage programs in the application.
 
-The next round focused on ensuring individual services can be tracked for recipients at the household and individual level.
-
-This round, we'll pick up the previous team's work building out **metrics** to serve as the main window our users will have into conducting monitoring and evaluation of their programs and services. Then we'll let Administrators and Program Managers define **Goals** based on one or more metrics, and provide **analytics** and **visualizations** to display relevant data for each user type.
-
-![](<../.gitbook/assets/image (7).png>)
-
-### Contacts
-
-**Stakeholder Name:** J Wylie
-
-**Stakeholder Email:** [jwylie@familypromiseofspokane.org](mailto:jwylie@familypromiseofspokane.org)
-
-### Technology Stack
-
-* **BE:** Node
-* **FE:** React
-* **Auth:** Okta
-
-### User Base
-
+The next round focused on ensuring individual services can be tracked for recipients at the household and 
 
 
 
