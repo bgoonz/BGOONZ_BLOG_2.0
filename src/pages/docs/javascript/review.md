@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Javascript Concepts Review
 weight: 0
 excerpt: lorem-ipsum
 seo:
@@ -9,7 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-## Lorem ipsum
+## Core Concept Review
 
 
 
