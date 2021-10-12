@@ -1,7 +1,7 @@
 ---
 title: Javascript Concepts Review
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Javascript Concepts Review
 seo:
   title: ''
   description: ''
