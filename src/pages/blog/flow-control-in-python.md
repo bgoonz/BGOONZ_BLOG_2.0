@@ -1,6 +1,6 @@
 ---
-title: lorem-ipsum
-subtitle: lorem-ipsum
+title: flow-control-in-python
+subtitle: flow-control-in-python
 date: '2021-10-12'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
