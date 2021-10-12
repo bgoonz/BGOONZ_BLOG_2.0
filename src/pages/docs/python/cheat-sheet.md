@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Python Cheat Sheet
 weight: 0
 excerpt: lorem-ipsum
 seo:
