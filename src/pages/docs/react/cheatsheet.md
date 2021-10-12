@@ -1,7 +1,7 @@
 ---
 title: 'React Cheat Sheets:'
 weight: 0
-excerpt: lorem-ipsum
+excerpt: cheat sheet
 seo:
   title: ''
   description: ''
