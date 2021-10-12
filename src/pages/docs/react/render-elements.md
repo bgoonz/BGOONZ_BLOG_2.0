@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Rendering Elements With React
 weight: 0
 excerpt: lorem-ipsum
 seo:
