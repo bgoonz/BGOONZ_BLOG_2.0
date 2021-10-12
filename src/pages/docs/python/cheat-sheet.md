@@ -6,7 +6,11 @@ seo:
   title: python cheat sheet
   description: cheat sheet for python developers
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/py-code.png
+      keyName: property
+      relativeUrl: true
 template: docs
 ---
 ## Lorem ipsum
