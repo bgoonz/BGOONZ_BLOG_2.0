@@ -9,9 +9,6 @@ seo:
   extra: []
 template: docs
 ---
-## 
-
-
 ## Functions
 
 ```python
