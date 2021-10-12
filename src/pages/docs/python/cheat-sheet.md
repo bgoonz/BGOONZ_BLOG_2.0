@@ -3576,3 +3576,13 @@ class WithoutExplicitTypes:
    name: Any
    value: Any = 42
 ```
+
+
+
+
+
+
+
+
+
+
