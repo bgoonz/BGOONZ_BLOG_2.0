@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://bgoonz-blog.netlify.app/</title>
+  <link>https://bgoonz-blog.netlify.app/</link>
+
+<item>
+     <link>https://bgoonz-blog.netlify.app/</link>
+     <title>Web-Dev-Hub</title>
+     <description>bigO, Python, Javascript, Audio, Processing, Learning, Blog, React, PostgreSQL, Scope, Closure, Web Development, Embed, API, Website, Design, Music, Search</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/sitemap/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This website contains docs, blogs, a personal portfolio spread out across multiple pages as well as interactive animations and tools.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Application, Back-end, Bootstrap, Browser, Caching, Code, CSS, Content Management System (CMS) , Cookies, Domain Name ,Frameworks, Front-end, JavaScript, Python</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/showcase/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Git HTML PREVIEW, Guitar Effects, Data Structures, Redux, Podcast Blog, Contact Form, Potluck Planner, Video Conferencing, Web Audio Workstation</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/faq/contact/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/python/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/</link>
+     <title>Web-Dev-Hub</title>
+     <description>These are blog posts... not nescisarily different from the docs section except these pieces are more subject to my own opinions.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/platform-docs/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/nodejs/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the Javascript and Node page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/archive/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/gallery/</link>
+     <title>Web-Dev-Hub</title>
+     <description>A collection of my github gists</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/audio/</link>
+     <title>Web-Dev-Hub</title>
+     <description>A collection of web audio projects</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/audio/dfft/</link>
+     <title>Web-Dev-Hub</title>
+     <description>The discrete Fourier transform operates on sampled data,
+in contrast to the standard Fourier transform which is
+defined for continuous functions.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/projects/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/</link>
+     <title>Web-Dev-Hub</title>
+     <description>paste to markdown, excel table to markdown, excel to html, cloud storage, text manipulation, ternary converter, github html preview, form builder, border</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Bryan Guner personal blog about page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This section is similar to a blog but is more technical in nature and time invariant with regard to content.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/community/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the community page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the manage content page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Documentation</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/faq/</link>
+     <title>Web-Dev-Hub</title>
+     <description>FAQ What&amp;#x27;s your favorite non-business book?
+Hitchhiker&amp;#x27;s Guide To The Galaxy</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/javascript/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/</link>
+     <title>Web-Dev-Hub</title>
+     <description>here is content the user can interact with</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/medium/</link>
+     <title>Web-Dev-Hub</title>
+     <description>introductory-react-part-2
+a-very-quick-guide-to-calculating-big-o-computational-complexity
+introduction-to-react css-animations
+
+</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the Cheat Sheets page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/react/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the React page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/job-search/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/intrests/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/resume/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp;amp; time domain analysis to track a current performance against prerecorded performance.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/about/eng-portfolio/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is an Engineering Portfolio page that contains a powerpoint portfolio of my work as an electrical engineer!</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/http/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/semantic-html/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/webdev-tools/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/node-package-manager/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/npm/</link>
+     <title>Web-Dev-Hub</title>
+     <description>npm is the standard package manager for Node.js.
+In January 2017 over 350000 packages were reported being listed in the npm registry.
+</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist/</link>
+     <title>Web-Dev-Hub</title>
+     <description>as an aid for developers who are interested in moving towards web standards</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/node-cli-args/</link>
+     <title>Web-Dev-Hub</title>
+     <description>When you install a package using npm you can perform 2 types of installation:
+a local install
+a global install
+
+By default, when you type an npm install command, like:
+the package is installed in the current file tree, under the node_modules subfolder.
+</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/node-env-variables/</link>
+     <title>Web-Dev-Hub</title>
+     <description>When you want to import something you use
+
+const library = require(&amp;#x27;./library&amp;#x27;);</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/node-run-cli/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/node-js-language/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/v8/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/node-repl/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/node-common-modules/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This section is similar to a blog but is more technical in nature and time invariant with regard to content.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/buffers/</link>
+     <title>Web-Dev-Hub</title>
+     <description>A buffer is an area of memory. JavaScript developers are not familiar with this concept, much less than C, C++ or Go developers</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/dev-dep/</link>
+     <title>Web-Dev-Hub</title>
+     <description>install an npm package using npm install you are installing it as a dependency. (npm install --production) to avoid installing those development dependencies.
+
+</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/event-loop/</link>
+     <title>Web-Dev-Hub</title>
+     <description>The Event Loop is one of the most important aspects to understand about Node.js</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Review-Of-Previous-Concepts</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/fs-module/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Fs-Module</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/install/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the Install page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/module-exports/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/intro/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the Intro To Node page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/nodevsbrowser/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Both the browser and Node.js use JavaScript as their programming language.You can pass any number of arguments when invoking a Node.js application using
+
+</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/npx/</link>
+     <title>Web-Dev-Hub</title>
+     <description>npx is a very cool way to run Node.js code, and provides many useful features</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/os-module/</link>
+     <title>Web-Dev-Hub</title>
+     <description>OS-Module</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/reading-files/</link>
+     <title>Web-Dev-Hub</title>
+     <description>The simplest way to read a file in Node.js is to use the fs.readFile() method, passing it the file path, encoding and a callback function that will be called</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/semantic/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Semantic Versioning using npm</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/writing-files/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the Writing Files page. The easiest way to write to files in Node.js is to use the fs.writeFile() API. const fs = require(&amp;#x27;fs&amp;#x27;);</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/articles/node-api-express/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Review-Of-Previous-Concepts</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping/</link>
+     <title>Web-Dev-Hub</title>
+     <description>dynamic-time-warping</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/audio/discrete-fft/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Visualizing the Discrete Fourier Transform</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/community/video-chat/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/data-structures-algo/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/js-async-n-callbacks/</link>
+     <title>Web-Dev-Hub</title>
+     <description>JavaScript is synchronous by default, and is single threaded. This means that code cannot create new threads and run in parallel. Find out what asynchronous code means and how it looks like</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/history-api/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/trouble-shooting/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/gatsby-queries-mutations/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/recent-projects/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is my markdown notes tempate</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/content/algo/</link>
+     <title>Web-Dev-Hub</title>
+     <description>A reference for suggested typographic treatment and styles for your content</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/bash/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/await-keyword/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/appendix/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/git-repos/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/css/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/sitemap/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Sitemap</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/regex-in-js/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/docs/content/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/faq/plug-ins/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the Gatsby Plugins For This Sites Content Model page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/javascript/bigo/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/callstack-visual/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/</link>
+     <title>Web-Dev-Hub</title>
+     <description> Jupyter Notebooks allow us to combine the power of a python script with the simplicity of a markdown file</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/video-chat/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Features:
+Group Voice and Video Call with unlimited members
+Live Streaming
+Screen Sharing
+Supports video streaming at various resolutions.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/clock/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/other-sites/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the typography page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/medium/my-websites/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the My Sites page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/medium/medium-links/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the community page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/git-bash/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/pull-request-rubric/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/psql-setup/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/awesome-static/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/minifiction/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/heroku-error-codes/</link>
+     <title>Web-Dev-Hub</title>
+     <description>embeded developer tools and utilities</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/quick-links/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/understanding-path/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/psql/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/resources/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/installation/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the installation page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Add Firebase to your JavaScript project Note:</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/toprepos/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the Top Repos page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/github-search/</link>
+     <title>Web-Dev-Hub</title>
+     <description>The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. It&amp;#x27;s designed to help you find the one result you&amp;#x27;re looking for (or maybe the few results you&amp;#x27;re looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, t</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/awesome-lists/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/notes-template/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is my markdown notes tempate</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the new-repo-git page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/vscode/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the vscode page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/create-react-app/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/emmet/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the Emmet Cheat Sheet page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the vscode-themes page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/react/react2/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/react/react-in-depth/</link>
+     <title>Web-Dev-Hub</title>
+     <description>React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/react/createreactapp/</link>
+     <title>Web-Dev-Hub</title>
+     <description>This is the npx-create-react-app page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/react/react-docs/</link>
+     <title>Web-Dev-Hub</title>
+     <description>We will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/data-structures/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/dev-utilities/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/more-tools/</link>
+     <title>Web-Dev-Hub</title>
+     <description>embeded developer tools and utilities</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/cloudstorage/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/tools/markdown-html/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/python/google-sheets-api/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/python/python-ds/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/python/snippets/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/python/at-length/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Python at length</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/data-structures/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/my-medium/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/python-for-js-dev/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Commodo ante vis placerat interdum massa massa primis</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/python-resources/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Commodo ante vis placerat interdum massa massa primis</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/git-gateway/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/web-dev-trends/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/awesome-graphql/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/netlify-cms/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Netlify CMS is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and intuitive workflows</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/big-o-complexity/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/interview-questions-js/</link>
+     <title>Web-Dev-Hub</title>
+     <description>What are the possible ways to create objects in JavaScript</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/blog-archive/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/blogwcomments/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/blog/web-scraping/</link>
+     <title>Web-Dev-Hub</title>
+     <description>There are a lot of use cases for web scraping</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/review/</link>
+     <title>Web-Dev-Hub</title>
+     <description>Web-Dev-Hub</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bgoonz-blog.netlify.app/docs/interact/video-chat/.</link>
+     <title>Web-Dev-Hub</title>
+     <description>Features:
+Group Voice and Video Call with unlimited members
+Live Streaming
+Screen Sharing
+Supports video streaming at various resolutions.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
