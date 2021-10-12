@@ -1,7 +1,7 @@
 ---
 title: React Class Components Demo
 weight: 0
-excerpt: lorem-ipsum
+excerpt: React Class Components Demo
 seo:
   title: ''
   description: ''
