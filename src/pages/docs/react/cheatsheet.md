@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Cheat Sheet
 weight: 0
 excerpt: lorem-ipsum
 seo:
