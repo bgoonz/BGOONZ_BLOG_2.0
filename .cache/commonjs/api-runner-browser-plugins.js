@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // During bootstrap, we write requires at top of this file which looks
 // basically like:

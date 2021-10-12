@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
 
 exports.__esModule = true;
 exports.default = void 0;
 
-var _mitt = _interopRequireDefault(require("mitt"));
+var _mitt = _interopRequireDefault(require('mitt'));
 
 const emitter = (0, _mitt.default)();
 var _default = emitter;
