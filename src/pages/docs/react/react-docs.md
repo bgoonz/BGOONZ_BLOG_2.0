@@ -46,6 +46,12 @@ template: docs
 
 # React:
 
+
+
+
+
+
+
 # **Hello World**
 
 # The smallest React example looks like this:
