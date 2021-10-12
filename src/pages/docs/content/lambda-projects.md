@@ -216,18 +216,7 @@ This is a **user experience-heavy challenge**. We can't present the model in the
 
 [Data](https://drive.google.com/file/d/1faYmEHN0Braa-Gyc-fLpQjBjHw8SjixD/view?usp=sharing) (2 years, redacted, "semi-"cleaned)
 
-[Current Intake Packet](https://drive.google.com/file/d/1iLUgQtalpiRlW1x_nNg75CcIO09hunAr/view?usp=sharing) \[Google Drive]
 
-[Currently Deployed Prediction Model](https://fp-prediction.herokuapp.com) (binary classification)
-
-**FamilyPromise Colors:**
-
-* Purple: #472D5B
-* Blue: #006FBA
-* Lilac: #8D4982
-* Yellow: #FEC357
-
-[PAIR People + AI Guidebook](https://pair.withgoogle.com/guidebook/)
 
 
 
