@@ -1,5 +1,0 @@
-{
-    "expireTime": 9007200888441269000,
-    "key": "transformer-remark-markdown-ast-1dc31eb3734ed7a28d7a768045657f06--",
-    "val": { "type": "root", "children": [], "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 1, "offset": 0 } } }
-}

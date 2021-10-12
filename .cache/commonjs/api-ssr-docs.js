@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Object containing options defined in `gatsby-config.js`
