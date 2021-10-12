@@ -94,4 +94,4 @@ node_modules/
 
 
 *.cache
-# *public
+*public
