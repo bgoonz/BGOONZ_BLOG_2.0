@@ -9,9 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-## 
-
-
+## React Cheat Sheet
 
 
 React:
