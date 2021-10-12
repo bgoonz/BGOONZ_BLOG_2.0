@@ -3,7 +3,7 @@ title: Python Cheat Sheet
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
+  title: python cheat sheet
   description: ''
   robots: []
   extra: []
