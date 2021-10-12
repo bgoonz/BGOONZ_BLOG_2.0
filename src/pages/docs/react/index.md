@@ -25,6 +25,12 @@ seo:
 template: docs
 ---
 
+# React
+
+
+
+
+
 
 ### For more resources visit:
 
@@ -33,6 +39,20 @@ template: docs
 [Use this appendix to get any prerequisite concepts and terminology under your belt:](https://gist.github.com/bgoonz/e07d9e7917ae9e98807358d1e7cc4a67)
 
 Here I will walk through a demo…. skip down below for more fundamental examples and resources…
+
+
+## Learn Redux:
+
+<iframe class="block-content" src="https://learning-redux42.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+
+<script src="https://gist.github.com/bgoonz/0e9d7ba47f02d41d8cecfd23beecd2b1.js"></script>
+
+<iframe class="block-content" src="https://gist.github.com/bgoonz/0e9d7ba47f02d41d8cecfd23beecd2b1.js" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 ## React Demo <a id="b2b8"></a>
 
