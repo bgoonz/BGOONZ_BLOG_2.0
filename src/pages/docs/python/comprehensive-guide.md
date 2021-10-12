@@ -9,12 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-## 
-
-
-
-
-## Python Cheatsheet
+## Comprehensive Python Guide
 
 - [About](#about)
   - [Contribute](#contribute)
