@@ -13,6 +13,17 @@ template: docs
 
 
 
+<br>
+<h1>  Github HTML Render from link </h1>
+<br>
+
+<iframe src="https://githtmlpreview.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+
 Git is a distributed version control and source code management system.
 
 It does this through a series of snapshots of your project, and it works
