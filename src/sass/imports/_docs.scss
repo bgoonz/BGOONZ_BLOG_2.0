@@ -1,9 +1,9 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 95%;
+    width: 100%;
 }
 .post-content {
-    width: 85%;
+    width: 95%;
 }
 .post {
     &.type-docs {
@@ -56,13 +56,13 @@
 
         h2 {
             .hash-link {
-                margin-top: 0.22em;
+                margin-top: 0.72em;
             }
         }
 
         h3 {
             .hash-link {
-                margin-top: 0.1em;
+                margin-top: 0.5em;
             }
         }
 
@@ -71,7 +71,7 @@
             &:hover,
             &:focus {
                 .hash-link {
-                    opacity: 1;
+                    opacity: 0.9;
                 }
             }
         }
@@ -81,14 +81,14 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 0.3em;
-            width: 70vw;
+            padding: 0.5em;
+            width: 80vw;
         }
 
         .post-title {
-            font-size: 1.875em;
-            margin: 0 0 1.25em;
-            padding: 0 1em;
+            font-size: 2em;
+            margin: 0 0 1.55em;
+            padding: 0 1.2em;
         }
 
         .post-content {
