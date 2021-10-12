@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Git Reference
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Git Reference
 seo:
     title: ''
     description: ''
