@@ -1,1 +1,709 @@
-{"expireTime":9007200888441165000,"key":"transformer-remark-markdown-html-ast-26d9bad9a00ab1a50e540616796d4a4b--","val":{"type":"root","children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"1. AI Chatbots","position":{"start":{"line":2,"column":3,"offset":3},"end":{"line":2,"column":17,"offset":17}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":19,"offset":19}}},{"type":"element","tagName":"img","properties":{"src":"https://blog.sagipl.com/wp-content/uploads/2019/05/AI-Chatbots-1-1024x573.png","alt":null},"children":[],"position":{"start":{"line":2,"column":19,"offset":19},"end":{"line":2,"column":101,"offset":101}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":101,"offset":101}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Artificial Intelligence (AI) refers to the intelligence displayed by machines. It is primarily used to replace human intelligence.","position":{"start":{"line":4,"column":1,"offset":103},"end":{"line":4,"column":131,"offset":233}}}],"position":{"start":{"line":4,"column":1,"offset":103},"end":{"line":4,"column":131,"offset":233}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"As the demand for AI-powered automation, communication, and analytics solutions will rise this year, more web developers will be focusing on building AI-based chatbots and virtual assistant apps.","position":{"start":{"line":6,"column":1,"offset":235},"end":{"line":6,"column":196,"offset":430}}}],"position":{"start":{"line":6,"column":1,"offset":235},"end":{"line":6,"column":196,"offset":430}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"2. Single Page Application","position":{"start":{"line":8,"column":3,"offset":434},"end":{"line":8,"column":29,"offset":460}}}],"position":{"start":{"line":8,"column":1,"offset":432},"end":{"line":8,"column":31,"offset":462}}}],"position":{"start":{"line":8,"column":1,"offset":432},"end":{"line":8,"column":31,"offset":462}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://www.sagipl.com/ipad-apps-development/"},"children":[{"type":"text","value":"Single-page applications","position":{"start":{"line":10,"column":2,"offset":465},"end":{"line":10,"column":26,"offset":489}}}],"position":{"start":{"line":10,"column":1,"offset":464},"end":{"line":10,"column":74,"offset":537}}},{"type":"text","value":", being light in weight, faster, and more efficient, increased both in demand and popularity in recent years.","position":{"start":{"line":10,"column":74,"offset":537},"end":{"line":10,"column":183,"offset":646}}}],"position":{"start":{"line":10,"column":1,"offset":464},"end":{"line":10,"column":183,"offset":646}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Developers will continue to use SPA for building responsive sites and apps in 2021.","position":{"start":{"line":12,"column":1,"offset":648},"end":{"line":12,"column":84,"offset":731}}}],"position":{"start":{"line":12,"column":1,"offset":648},"end":{"line":12,"column":84,"offset":731}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"3. JavaScript Frameworks","position":{"start":{"line":14,"column":3,"offset":735},"end":{"line":14,"column":27,"offset":759}}}],"position":{"start":{"line":14,"column":1,"offset":733},"end":{"line":14,"column":29,"offset":761}}}],"position":{"start":{"line":14,"column":1,"offset":733},"end":{"line":14,"column":29,"offset":761}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"JavaScript continues to remain one of the ","position":{"start":{"line":16,"column":1,"offset":763},"end":{"line":16,"column":43,"offset":805}}},{"type":"element","tagName":"a","properties":{"href":"https://blog.sagipl.com/top-programming-languages/"},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"most preferred web development languages","position":{"start":{"line":16,"column":46,"offset":808},"end":{"line":16,"column":86,"offset":848}}}],"position":{"start":{"line":16,"column":44,"offset":806},"end":{"line":16,"column":88,"offset":850}}}],"position":{"start":{"line":16,"column":43,"offset":805},"end":{"line":16,"column":141,"offset":903}}},{"type":"text","value":" owing to its flexibility, power and evolving frameworks.","position":{"start":{"line":16,"column":141,"offset":903},"end":{"line":16,"column":198,"offset":960}}}],"position":{"start":{"line":16,"column":1,"offset":763},"end":{"line":16,"column":198,"offset":960}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This year too, we will see many new applications being developed in this developer-friendly language.","position":{"start":{"line":18,"column":1,"offset":962},"end":{"line":18,"column":102,"offset":1063}}}],"position":{"start":{"line":18,"column":1,"offset":962},"end":{"line":18,"column":102,"offset":1063}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"4. Progressive Web Apps (PWAs)","position":{"start":{"line":20,"column":3,"offset":1067},"end":{"line":20,"column":33,"offset":1097}}}],"position":{"start":{"line":20,"column":1,"offset":1065},"end":{"line":20,"column":35,"offset":1099}}}],"position":{"start":{"line":20,"column":1,"offset":1065},"end":{"line":20,"column":35,"offset":1099}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"These are special web applications which are designed to load with progressive enhancement.","position":{"start":{"line":22,"column":1,"offset":1101},"end":{"line":22,"column":92,"offset":1192}}}],"position":{"start":{"line":22,"column":1,"offset":1101},"end":{"line":22,"column":92,"offset":1192}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Because of its fast-loading and high functionality features, PWA will continue to remain one of the year’s hottest web trends.","position":{"start":{"line":24,"column":1,"offset":1194},"end":{"line":24,"column":127,"offset":1320}}}],"position":{"start":{"line":24,"column":1,"offset":1194},"end":{"line":24,"column":127,"offset":1320}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"5. Mobile-Friendly Website","position":{"start":{"line":26,"column":3,"offset":1324},"end":{"line":26,"column":29,"offset":1350}}}],"position":{"start":{"line":26,"column":1,"offset":1322},"end":{"line":26,"column":31,"offset":1352}}}],"position":{"start":{"line":26,"column":1,"offset":1322},"end":{"line":26,"column":31,"offset":1352}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Mobile-responsive sites are the ones that are designed to work smoothly across devices of all sizes.","position":{"start":{"line":28,"column":1,"offset":1354},"end":{"line":28,"column":101,"offset":1454}}}],"position":{"start":{"line":28,"column":1,"offset":1354},"end":{"line":28,"column":101,"offset":1454}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Owing to Google’s mobile-first index and other search guidelines, developers will keep offering mobile-optimized sites this year and beyond.","position":{"start":{"line":30,"column":1,"offset":1456},"end":{"line":30,"column":141,"offset":1596}}}],"position":{"start":{"line":30,"column":1,"offset":1456},"end":{"line":30,"column":141,"offset":1596}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"6. Blockchain Technology","position":{"start":{"line":32,"column":3,"offset":1600},"end":{"line":32,"column":27,"offset":1624}}}],"position":{"start":{"line":32,"column":1,"offset":1598},"end":{"line":32,"column":29,"offset":1626}}}],"position":{"start":{"line":32,"column":1,"offset":1598},"end":{"line":32,"column":29,"offset":1626}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Blockchain, which was founded as a technology for secure digital payments, is now finding its place as a distributed ledger, which is secure, decentralized and public and will dominate the web development industry in the coming years.","position":{"start":{"line":34,"column":1,"offset":1628},"end":{"line":34,"column":235,"offset":1862}}}],"position":{"start":{"line":34,"column":1,"offset":1628},"end":{"line":34,"column":235,"offset":1862}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"7. Motion UI","position":{"start":{"line":36,"column":3,"offset":1866},"end":{"line":36,"column":15,"offset":1878}}}],"position":{"start":{"line":36,"column":1,"offset":1864},"end":{"line":36,"column":17,"offset":1880}}}],"position":{"start":{"line":36,"column":1,"offset":1864},"end":{"line":36,"column":17,"offset":1880}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Motion UI (User Interface) is a technology for creating visually appealing apps, especially animations, graphics, and transitions.","position":{"start":{"line":38,"column":1,"offset":1882},"end":{"line":38,"column":131,"offset":2012}}}],"position":{"start":{"line":38,"column":1,"offset":1882},"end":{"line":38,"column":131,"offset":2012}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Owing to its great ability for ","position":{"start":{"line":40,"column":1,"offset":2014},"end":{"line":40,"column":32,"offset":2045}}},{"type":"element","tagName":"a","properties":{"href":"https://www.sagipl.com/website-design/"},"children":[{"type":"text","value":"creating an interactive web design","position":{"start":{"line":40,"column":33,"offset":2046},"end":{"line":40,"column":67,"offset":2080}}}],"position":{"start":{"line":40,"column":32,"offset":2045},"end":{"line":40,"column":108,"offset":2121}}},{"type":"text","value":", Motion UI will be a primary tool for web developers in 2021.","position":{"start":{"line":40,"column":108,"offset":2121},"end":{"line":40,"column":170,"offset":2183}}}],"position":{"start":{"line":40,"column":1,"offset":2014},"end":{"line":40,"column":170,"offset":2183}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"8. Accelerated Mobile Pages (AMP)","position":{"start":{"line":42,"column":3,"offset":2187},"end":{"line":42,"column":36,"offset":2220}}}],"position":{"start":{"line":42,"column":1,"offset":2185},"end":{"line":42,"column":38,"offset":2222}}}],"position":{"start":{"line":42,"column":1,"offset":2185},"end":{"line":42,"column":38,"offset":2222}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Accelerated mobile pages are an initiative by Google to ensure that existing desktop websites give an equally amazing user experience across mobile devices.","position":{"start":{"line":44,"column":1,"offset":2224},"end":{"line":44,"column":157,"offset":2380}}}],"position":{"start":{"line":44,"column":1,"offset":2224},"end":{"line":44,"column":157,"offset":2380}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Web developers who are familiar with this tech are helping companies to implement the same on their websites.","position":{"start":{"line":46,"column":1,"offset":2382},"end":{"line":46,"column":110,"offset":2491}}}],"position":{"start":{"line":46,"column":1,"offset":2382},"end":{"line":46,"column":110,"offset":2491}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"9. Cybersecurity","position":{"start":{"line":48,"column":3,"offset":2495},"end":{"line":48,"column":19,"offset":2511}}}],"position":{"start":{"line":48,"column":1,"offset":2493},"end":{"line":48,"column":21,"offset":2513}}}],"position":{"start":{"line":48,"column":1,"offset":2493},"end":{"line":48,"column":21,"offset":2513}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Cybersecurity, which is another term for IT security, will continue to have its place in the online space as long as the world of internet is threatened by data breaches, hacking and similar cyber attacks.","position":{"start":{"line":50,"column":1,"offset":2515},"end":{"line":50,"column":206,"offset":2720}}}],"position":{"start":{"line":50,"column":1,"offset":2515},"end":{"line":50,"column":206,"offset":2720}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Developers with specialization in IT security will be in high demand this year.","position":{"start":{"line":52,"column":1,"offset":2722},"end":{"line":52,"column":80,"offset":2801}}}],"position":{"start":{"line":52,"column":1,"offset":2722},"end":{"line":52,"column":80,"offset":2801}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"10. VR and AR","position":{"start":{"line":54,"column":3,"offset":2805},"end":{"line":54,"column":16,"offset":2818}}}],"position":{"start":{"line":54,"column":1,"offset":2803},"end":{"line":54,"column":18,"offset":2820}}}],"position":{"start":{"line":54,"column":1,"offset":2803},"end":{"line":54,"column":18,"offset":2820}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The Augmented Reality and Virtual Reality Technologies, which were introduced only two years back, have now become a core part of the modern web development frameworks.","position":{"start":{"line":56,"column":1,"offset":2822},"end":{"line":56,"column":169,"offset":2990}}}],"position":{"start":{"line":56,"column":1,"offset":2822},"end":{"line":56,"column":169,"offset":2990}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"From digital reality to visualization to 3D replicas, AR/VR will be used for enhancing user experience in the online space.","position":{"start":{"line":58,"column":1,"offset":2992},"end":{"line":58,"column":124,"offset":3115}}}],"position":{"start":{"line":58,"column":1,"offset":2992},"end":{"line":58,"column":124,"offset":3115}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"11. Voice Search","position":{"start":{"line":60,"column":3,"offset":3119},"end":{"line":60,"column":19,"offset":3135}}}],"position":{"start":{"line":60,"column":1,"offset":3117},"end":{"line":60,"column":21,"offset":3137}}}],"position":{"start":{"line":60,"column":1,"offset":3117},"end":{"line":60,"column":21,"offset":3137}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Following Google’s increased focus on voice search queries, websites based on voice search optimization are now trending more than ever.","position":{"start":{"line":62,"column":1,"offset":3139},"end":{"line":62,"column":137,"offset":3275}}}],"position":{"start":{"line":62,"column":1,"offset":3139},"end":{"line":62,"column":137,"offset":3275}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"As the number of people using voice searches will increase this year, so will the demand for websites optimized for the same.","position":{"start":{"line":64,"column":1,"offset":3277},"end":{"line":64,"column":126,"offset":3402}}}],"position":{"start":{"line":64,"column":1,"offset":3277},"end":{"line":64,"column":126,"offset":3402}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"12.","position":{"start":{"line":66,"column":3,"offset":3406},"end":{"line":66,"column":6,"offset":3409}}}],"position":{"start":{"line":66,"column":1,"offset":3404},"end":{"line":66,"column":8,"offset":3411}}},{"type":"text","value":" ","position":{"start":{"line":66,"column":8,"offset":3411},"end":{"line":66,"column":9,"offset":3412}}},{"type":"element","tagName":"strong","properties":{},"children":[{"type":"text","value":"Push Notification","position":{"start":{"line":66,"column":11,"offset":3414},"end":{"line":66,"column":28,"offset":3431}}}],"position":{"start":{"line":66,"column":9,"offset":3412},"end":{"line":66,"column":30,"offset":3433}}}],"position":{"start":{"line":66,"column":1,"offset":3404},"end":{"line":66,"column":30,"offset":3433}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Push Notification is replacing the Newsletter service. It is not very old but maintaining a high conversion rate better than Newsletters.","position":{"start":{"line":68,"column":1,"offset":3435},"end":{"line":68,"column":138,"offset":3572}}}],"position":{"start":{"line":68,"column":1,"offset":3435},"end":{"line":68,"column":138,"offset":3572}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Services and platforms like Onesignal, ZoPush, Push Engage are improving day by day, so it will be in trend in upcoming years and web developers also have to take care of it.","position":{"start":{"line":70,"column":1,"offset":3574},"end":{"line":70,"column":175,"offset":3748}}}],"position":{"start":{"line":70,"column":1,"offset":3574},"end":{"line":70,"column":175,"offset":3748}}},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"SAG IPL is a leading global ","position":{"start":{"line":72,"column":1,"offset":3750},"end":{"line":72,"column":29,"offset":3778}}},{"type":"element","tagName":"a","properties":{"href":"https://www.sagipl.com/web-development/"},"children":[{"type":"text","value":"web development company","position":{"start":{"line":72,"column":30,"offset":3779},"end":{"line":72,"column":53,"offset":3802}}}],"position":{"start":{"line":72,"column":29,"offset":3778},"end":{"line":72,"column":95,"offset":3844}}},{"type":"text","value":" providing modern web/app development services to clients worldwide.","position":{"start":{"line":72,"column":95,"offset":3844},"end":{"line":72,"column":163,"offset":3912}}}],"position":{"start":{"line":72,"column":1,"offset":3750},"end":{"line":72,"column":163,"offset":3912}}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":73,"column":1,"offset":3913}}}}
+{
+    "expireTime": 9007200888441165000,
+    "key": "transformer-remark-markdown-html-ast-26d9bad9a00ab1a50e540616796d4a4b--",
+    "val": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "1. AI Chatbots",
+                                "position": { "start": { "line": 2, "column": 3, "offset": 3 }, "end": { "line": 2, "column": 17, "offset": 17 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 19, "offset": 19 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "img",
+                        "properties": { "src": "https://blog.sagipl.com/wp-content/uploads/2019/05/AI-Chatbots-1-1024x573.png", "alt": null },
+                        "children": [],
+                        "position": { "start": { "line": 2, "column": 19, "offset": 19 }, "end": { "line": 2, "column": 101, "offset": 101 } }
+                    }
+                ],
+                "position": { "start": { "line": 2, "column": 1, "offset": 1 }, "end": { "line": 2, "column": 101, "offset": 101 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Artificial Intelligence (AI) refers to the intelligence displayed by machines. It is primarily used to replace human intelligence.",
+                        "position": { "start": { "line": 4, "column": 1, "offset": 103 }, "end": { "line": 4, "column": 131, "offset": 233 } }
+                    }
+                ],
+                "position": { "start": { "line": 4, "column": 1, "offset": 103 }, "end": { "line": 4, "column": 131, "offset": 233 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "As the demand for AI-powered automation, communication, and analytics solutions will rise this year, more web developers will be focusing on building AI-based chatbots and virtual assistant apps.",
+                        "position": { "start": { "line": 6, "column": 1, "offset": 235 }, "end": { "line": 6, "column": 196, "offset": 430 } }
+                    }
+                ],
+                "position": { "start": { "line": 6, "column": 1, "offset": 235 }, "end": { "line": 6, "column": 196, "offset": 430 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "2. Single Page Application",
+                                "position": { "start": { "line": 8, "column": 3, "offset": 434 }, "end": { "line": 8, "column": 29, "offset": 460 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 8, "column": 1, "offset": 432 }, "end": { "line": 8, "column": 31, "offset": 462 } }
+                    }
+                ],
+                "position": { "start": { "line": 8, "column": 1, "offset": 432 }, "end": { "line": 8, "column": 31, "offset": 462 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://www.sagipl.com/ipad-apps-development/" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Single-page applications",
+                                "position": { "start": { "line": 10, "column": 2, "offset": 465 }, "end": { "line": 10, "column": 26, "offset": 489 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 10, "column": 1, "offset": 464 }, "end": { "line": 10, "column": 74, "offset": 537 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", being light in weight, faster, and more efficient, increased both in demand and popularity in recent years.",
+                        "position": { "start": { "line": 10, "column": 74, "offset": 537 }, "end": { "line": 10, "column": 183, "offset": 646 } }
+                    }
+                ],
+                "position": { "start": { "line": 10, "column": 1, "offset": 464 }, "end": { "line": 10, "column": 183, "offset": 646 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Developers will continue to use SPA for building responsive sites and apps in 2021.",
+                        "position": { "start": { "line": 12, "column": 1, "offset": 648 }, "end": { "line": 12, "column": 84, "offset": 731 } }
+                    }
+                ],
+                "position": { "start": { "line": 12, "column": 1, "offset": 648 }, "end": { "line": 12, "column": 84, "offset": 731 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "3. JavaScript Frameworks",
+                                "position": { "start": { "line": 14, "column": 3, "offset": 735 }, "end": { "line": 14, "column": 27, "offset": 759 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 14, "column": 1, "offset": 733 }, "end": { "line": 14, "column": 29, "offset": 761 } }
+                    }
+                ],
+                "position": { "start": { "line": 14, "column": 1, "offset": 733 }, "end": { "line": 14, "column": 29, "offset": 761 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "JavaScript continues to remain one of the ",
+                        "position": { "start": { "line": 16, "column": 1, "offset": 763 }, "end": { "line": 16, "column": 43, "offset": 805 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://blog.sagipl.com/top-programming-languages/" },
+                        "children": [
+                            {
+                                "type": "element",
+                                "tagName": "strong",
+                                "properties": {},
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "most preferred web development languages",
+                                        "position": { "start": { "line": 16, "column": 46, "offset": 808 }, "end": { "line": 16, "column": 86, "offset": 848 } }
+                                    }
+                                ],
+                                "position": { "start": { "line": 16, "column": 44, "offset": 806 }, "end": { "line": 16, "column": 88, "offset": 850 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 16, "column": 43, "offset": 805 }, "end": { "line": 16, "column": 141, "offset": 903 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " owing to its flexibility, power and evolving frameworks.",
+                        "position": { "start": { "line": 16, "column": 141, "offset": 903 }, "end": { "line": 16, "column": 198, "offset": 960 } }
+                    }
+                ],
+                "position": { "start": { "line": 16, "column": 1, "offset": 763 }, "end": { "line": 16, "column": 198, "offset": 960 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "This year too, we will see many new applications being developed in this developer-friendly language.",
+                        "position": { "start": { "line": 18, "column": 1, "offset": 962 }, "end": { "line": 18, "column": 102, "offset": 1063 } }
+                    }
+                ],
+                "position": { "start": { "line": 18, "column": 1, "offset": 962 }, "end": { "line": 18, "column": 102, "offset": 1063 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "4. Progressive Web Apps (PWAs)",
+                                "position": { "start": { "line": 20, "column": 3, "offset": 1067 }, "end": { "line": 20, "column": 33, "offset": 1097 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 20, "column": 1, "offset": 1065 }, "end": { "line": 20, "column": 35, "offset": 1099 } }
+                    }
+                ],
+                "position": { "start": { "line": 20, "column": 1, "offset": 1065 }, "end": { "line": 20, "column": 35, "offset": 1099 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "These are special web applications which are designed to load with progressive enhancement.",
+                        "position": { "start": { "line": 22, "column": 1, "offset": 1101 }, "end": { "line": 22, "column": 92, "offset": 1192 } }
+                    }
+                ],
+                "position": { "start": { "line": 22, "column": 1, "offset": 1101 }, "end": { "line": 22, "column": 92, "offset": 1192 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Because of its fast-loading and high functionality features, PWA will continue to remain one of the year’s hottest web trends.",
+                        "position": { "start": { "line": 24, "column": 1, "offset": 1194 }, "end": { "line": 24, "column": 127, "offset": 1320 } }
+                    }
+                ],
+                "position": { "start": { "line": 24, "column": 1, "offset": 1194 }, "end": { "line": 24, "column": 127, "offset": 1320 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "5. Mobile-Friendly Website",
+                                "position": { "start": { "line": 26, "column": 3, "offset": 1324 }, "end": { "line": 26, "column": 29, "offset": 1350 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 26, "column": 1, "offset": 1322 }, "end": { "line": 26, "column": 31, "offset": 1352 } }
+                    }
+                ],
+                "position": { "start": { "line": 26, "column": 1, "offset": 1322 }, "end": { "line": 26, "column": 31, "offset": 1352 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Mobile-responsive sites are the ones that are designed to work smoothly across devices of all sizes.",
+                        "position": { "start": { "line": 28, "column": 1, "offset": 1354 }, "end": { "line": 28, "column": 101, "offset": 1454 } }
+                    }
+                ],
+                "position": { "start": { "line": 28, "column": 1, "offset": 1354 }, "end": { "line": 28, "column": 101, "offset": 1454 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Owing to Google’s mobile-first index and other search guidelines, developers will keep offering mobile-optimized sites this year and beyond.",
+                        "position": { "start": { "line": 30, "column": 1, "offset": 1456 }, "end": { "line": 30, "column": 141, "offset": 1596 } }
+                    }
+                ],
+                "position": { "start": { "line": 30, "column": 1, "offset": 1456 }, "end": { "line": 30, "column": 141, "offset": 1596 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "6. Blockchain Technology",
+                                "position": { "start": { "line": 32, "column": 3, "offset": 1600 }, "end": { "line": 32, "column": 27, "offset": 1624 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 32, "column": 1, "offset": 1598 }, "end": { "line": 32, "column": 29, "offset": 1626 } }
+                    }
+                ],
+                "position": { "start": { "line": 32, "column": 1, "offset": 1598 }, "end": { "line": 32, "column": 29, "offset": 1626 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Blockchain, which was founded as a technology for secure digital payments, is now finding its place as a distributed ledger, which is secure, decentralized and public and will dominate the web development industry in the coming years.",
+                        "position": { "start": { "line": 34, "column": 1, "offset": 1628 }, "end": { "line": 34, "column": 235, "offset": 1862 } }
+                    }
+                ],
+                "position": { "start": { "line": 34, "column": 1, "offset": 1628 }, "end": { "line": 34, "column": 235, "offset": 1862 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "7. Motion UI",
+                                "position": { "start": { "line": 36, "column": 3, "offset": 1866 }, "end": { "line": 36, "column": 15, "offset": 1878 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 36, "column": 1, "offset": 1864 }, "end": { "line": 36, "column": 17, "offset": 1880 } }
+                    }
+                ],
+                "position": { "start": { "line": 36, "column": 1, "offset": 1864 }, "end": { "line": 36, "column": 17, "offset": 1880 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Motion UI (User Interface) is a technology for creating visually appealing apps, especially animations, graphics, and transitions.",
+                        "position": { "start": { "line": 38, "column": 1, "offset": 1882 }, "end": { "line": 38, "column": 131, "offset": 2012 } }
+                    }
+                ],
+                "position": { "start": { "line": 38, "column": 1, "offset": 1882 }, "end": { "line": 38, "column": 131, "offset": 2012 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Owing to its great ability for ",
+                        "position": { "start": { "line": 40, "column": 1, "offset": 2014 }, "end": { "line": 40, "column": 32, "offset": 2045 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://www.sagipl.com/website-design/" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "creating an interactive web design",
+                                "position": { "start": { "line": 40, "column": 33, "offset": 2046 }, "end": { "line": 40, "column": 67, "offset": 2080 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 40, "column": 32, "offset": 2045 }, "end": { "line": 40, "column": 108, "offset": 2121 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": ", Motion UI will be a primary tool for web developers in 2021.",
+                        "position": { "start": { "line": 40, "column": 108, "offset": 2121 }, "end": { "line": 40, "column": 170, "offset": 2183 } }
+                    }
+                ],
+                "position": { "start": { "line": 40, "column": 1, "offset": 2014 }, "end": { "line": 40, "column": 170, "offset": 2183 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "8. Accelerated Mobile Pages (AMP)",
+                                "position": { "start": { "line": 42, "column": 3, "offset": 2187 }, "end": { "line": 42, "column": 36, "offset": 2220 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 42, "column": 1, "offset": 2185 }, "end": { "line": 42, "column": 38, "offset": 2222 } }
+                    }
+                ],
+                "position": { "start": { "line": 42, "column": 1, "offset": 2185 }, "end": { "line": 42, "column": 38, "offset": 2222 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Accelerated mobile pages are an initiative by Google to ensure that existing desktop websites give an equally amazing user experience across mobile devices.",
+                        "position": { "start": { "line": 44, "column": 1, "offset": 2224 }, "end": { "line": 44, "column": 157, "offset": 2380 } }
+                    }
+                ],
+                "position": { "start": { "line": 44, "column": 1, "offset": 2224 }, "end": { "line": 44, "column": 157, "offset": 2380 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Web developers who are familiar with this tech are helping companies to implement the same on their websites.",
+                        "position": { "start": { "line": 46, "column": 1, "offset": 2382 }, "end": { "line": 46, "column": 110, "offset": 2491 } }
+                    }
+                ],
+                "position": { "start": { "line": 46, "column": 1, "offset": 2382 }, "end": { "line": 46, "column": 110, "offset": 2491 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "9. Cybersecurity",
+                                "position": { "start": { "line": 48, "column": 3, "offset": 2495 }, "end": { "line": 48, "column": 19, "offset": 2511 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 48, "column": 1, "offset": 2493 }, "end": { "line": 48, "column": 21, "offset": 2513 } }
+                    }
+                ],
+                "position": { "start": { "line": 48, "column": 1, "offset": 2493 }, "end": { "line": 48, "column": 21, "offset": 2513 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Cybersecurity, which is another term for IT security, will continue to have its place in the online space as long as the world of internet is threatened by data breaches, hacking and similar cyber attacks.",
+                        "position": { "start": { "line": 50, "column": 1, "offset": 2515 }, "end": { "line": 50, "column": 206, "offset": 2720 } }
+                    }
+                ],
+                "position": { "start": { "line": 50, "column": 1, "offset": 2515 }, "end": { "line": 50, "column": 206, "offset": 2720 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Developers with specialization in IT security will be in high demand this year.",
+                        "position": { "start": { "line": 52, "column": 1, "offset": 2722 }, "end": { "line": 52, "column": 80, "offset": 2801 } }
+                    }
+                ],
+                "position": { "start": { "line": 52, "column": 1, "offset": 2722 }, "end": { "line": 52, "column": 80, "offset": 2801 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "10. VR and AR",
+                                "position": { "start": { "line": 54, "column": 3, "offset": 2805 }, "end": { "line": 54, "column": 16, "offset": 2818 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 54, "column": 1, "offset": 2803 }, "end": { "line": 54, "column": 18, "offset": 2820 } }
+                    }
+                ],
+                "position": { "start": { "line": 54, "column": 1, "offset": 2803 }, "end": { "line": 54, "column": 18, "offset": 2820 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "The Augmented Reality and Virtual Reality Technologies, which were introduced only two years back, have now become a core part of the modern web development frameworks.",
+                        "position": { "start": { "line": 56, "column": 1, "offset": 2822 }, "end": { "line": 56, "column": 169, "offset": 2990 } }
+                    }
+                ],
+                "position": { "start": { "line": 56, "column": 1, "offset": 2822 }, "end": { "line": 56, "column": 169, "offset": 2990 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "From digital reality to visualization to 3D replicas, AR/VR will be used for enhancing user experience in the online space.",
+                        "position": { "start": { "line": 58, "column": 1, "offset": 2992 }, "end": { "line": 58, "column": 124, "offset": 3115 } }
+                    }
+                ],
+                "position": { "start": { "line": 58, "column": 1, "offset": 2992 }, "end": { "line": 58, "column": 124, "offset": 3115 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "11. Voice Search",
+                                "position": { "start": { "line": 60, "column": 3, "offset": 3119 }, "end": { "line": 60, "column": 19, "offset": 3135 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 60, "column": 1, "offset": 3117 }, "end": { "line": 60, "column": 21, "offset": 3137 } }
+                    }
+                ],
+                "position": { "start": { "line": 60, "column": 1, "offset": 3117 }, "end": { "line": 60, "column": 21, "offset": 3137 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Following Google’s increased focus on voice search queries, websites based on voice search optimization are now trending more than ever.",
+                        "position": { "start": { "line": 62, "column": 1, "offset": 3139 }, "end": { "line": 62, "column": 137, "offset": 3275 } }
+                    }
+                ],
+                "position": { "start": { "line": 62, "column": 1, "offset": 3139 }, "end": { "line": 62, "column": 137, "offset": 3275 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "As the number of people using voice searches will increase this year, so will the demand for websites optimized for the same.",
+                        "position": { "start": { "line": 64, "column": 1, "offset": 3277 }, "end": { "line": 64, "column": 126, "offset": 3402 } }
+                    }
+                ],
+                "position": { "start": { "line": 64, "column": 1, "offset": 3277 }, "end": { "line": 64, "column": 126, "offset": 3402 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "12.",
+                                "position": { "start": { "line": 66, "column": 3, "offset": 3406 }, "end": { "line": 66, "column": 6, "offset": 3409 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 66, "column": 1, "offset": 3404 }, "end": { "line": 66, "column": 8, "offset": 3411 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " ",
+                        "position": { "start": { "line": 66, "column": 8, "offset": 3411 }, "end": { "line": 66, "column": 9, "offset": 3412 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "strong",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Push Notification",
+                                "position": { "start": { "line": 66, "column": 11, "offset": 3414 }, "end": { "line": 66, "column": 28, "offset": 3431 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 66, "column": 9, "offset": 3412 }, "end": { "line": 66, "column": 30, "offset": 3433 } }
+                    }
+                ],
+                "position": { "start": { "line": 66, "column": 1, "offset": 3404 }, "end": { "line": 66, "column": 30, "offset": 3433 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Push Notification is replacing the Newsletter service. It is not very old but maintaining a high conversion rate better than Newsletters.",
+                        "position": { "start": { "line": 68, "column": 1, "offset": 3435 }, "end": { "line": 68, "column": 138, "offset": 3572 } }
+                    }
+                ],
+                "position": { "start": { "line": 68, "column": 1, "offset": 3435 }, "end": { "line": 68, "column": 138, "offset": 3572 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Services and platforms like Onesignal, ZoPush, Push Engage are improving day by day, so it will be in trend in upcoming years and web developers also have to take care of it.",
+                        "position": { "start": { "line": 70, "column": 1, "offset": 3574 }, "end": { "line": 70, "column": 175, "offset": 3748 } }
+                    }
+                ],
+                "position": { "start": { "line": 70, "column": 1, "offset": 3574 }, "end": { "line": 70, "column": 175, "offset": 3748 } }
+            },
+            { "type": "text", "value": "\n" },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "SAG IPL is a leading global ",
+                        "position": { "start": { "line": 72, "column": 1, "offset": 3750 }, "end": { "line": 72, "column": 29, "offset": 3778 } }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "a",
+                        "properties": { "href": "https://www.sagipl.com/web-development/" },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "web development company",
+                                "position": { "start": { "line": 72, "column": 30, "offset": 3779 }, "end": { "line": 72, "column": 53, "offset": 3802 } }
+                            }
+                        ],
+                        "position": { "start": { "line": 72, "column": 29, "offset": 3778 }, "end": { "line": 72, "column": 95, "offset": 3844 } }
+                    },
+                    {
+                        "type": "text",
+                        "value": " providing modern web/app development services to clients worldwide.",
+                        "position": { "start": { "line": 72, "column": 95, "offset": 3844 }, "end": { "line": 72, "column": 163, "offset": 3912 } }
+                    }
+                ],
+                "position": { "start": { "line": 72, "column": 1, "offset": 3750 }, "end": { "line": 72, "column": 163, "offset": 3912 } }
+            }
+        ],
+        "position": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 73, "column": 1, "offset": 3913 } }
+    }
+}
