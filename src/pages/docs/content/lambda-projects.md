@@ -14,33 +14,7 @@ template: docs
 
 
 ---
-
-# Roadmap:
-
-## Roadmap
-
-![](<../.gitbook/assets/image (1).png>)
-
-### Type
-
-**Web (Node) + DS** (Build-on)
-
-![](<../.gitbook/assets/image (12).png>)
-
-### Overview
-
-Family Promise helps local communities coordinate their compassion to address the root causes of family homelessness. They tap existing local resources to empower families towards economic stability. Families come to them in crisis; they help them rebuild their lives with new skills and ongoing support. They address the issue holistically, providing prevention services before families reach crisis, shelter and case management when they become homeless, and stabilization programs once they have secured housing to ensure they remain independent.
-
-Family Promise needs a way to **track and visualize the services they provide external to the shelter to gain actionable insights**.
-
-Our goal is to build a _**generalizable**_** monitoring and evaluation (M\&E) platform** that meets Family Promise's needs, with an eye toward additional potential use cases that would be useful for many other organizations.
-
-This product will take multiple Labs cohorts to complete.
-
-For the first round, students laid a solid foundation for the application. They built out user roles and profiles, an interface for user management, and a way for users to manage programs in the application.
-
-The next round focused on ensuring individual services can be tracked for recipients at the household and 
-
+#Family Promise Project:
 
 
 
