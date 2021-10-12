@@ -1,7 +1,7 @@
 ---
 title: Practice
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Example Problems
 seo:
   title: ''
   description: ''
