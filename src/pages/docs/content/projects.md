@@ -20,7 +20,7 @@ template: docs
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
-https://useful-resource-repo3-0.vercel.app/
+
 <br>
 <br>
 <h1>  Useful Resource Archive #3   </h1>
