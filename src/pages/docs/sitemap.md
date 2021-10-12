@@ -37,35 +37,6 @@ template: docs
 <div id="search"></div>
 
 ---
-
-### - [✅] [HOME](https://bgoonz-blog.netlify.app/)
-
----
-
-### - [✅] [showcase](https://bgoonz-blog.netlify.app/showcase/)
-
----
-
-### - [✅] [blog](https://bgoonz-blog.netlify.app/blog/)
-
-### - [✅] [blog/data-structures](https://bgoonz-blog.netlify.app/blog/data-structures/)
-
-### - [✅] [blog/my-medium](https://bgoonz-blog.netlify.app/blog/my-medium/)
-
-### - [✅] [blog/python-for-js-dev](https://bgoonz-blog.netlify.app/blog/python-for-js-dev/)
-
-### - [✅] [blog/python-resources](https://bgoonz-blog.netlify.app/blog/python-resources/)
-
----
-
-### - [✅] [docs](https://bgoonz-blog.netlify.app/docs/)
-
-### - [✅] [docs/sitemap](https://bgoonz-blog.netlify.app/docs/sitemap/)
-
----
-
----
-
 ### - [✅] [docs/about](https://bgoonz-blog.netlify.app/docs/about/)
 
 ### - [✅] [docs/about/me](https://bgoonz-blog.netlify.app/docs/about/me/)
