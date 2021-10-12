@@ -3,10 +3,18 @@ title: Python Cheat Sheet
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: python cheat sheet
+  description: cheat sheet for python developers
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/py-code.png
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:title'
+      value: python cheat sheet
+      keyName: name
+      relativeUrl: false
 template: docs
 ---
 ## Lorem ipsum
