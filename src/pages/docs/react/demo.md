@@ -9,7 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-## 
+## React Class Components Demo
 
 
 
