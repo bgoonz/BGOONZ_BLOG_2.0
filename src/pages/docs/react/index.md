@@ -27,23 +27,20 @@ template: docs
 
 # React
 
-
 ### Cheat Sheet:
 
-
 ```js
-
 /* *******************************************************************************************
  * REACT.JS CHEATSHEET
  * DOCUMENTATION: https://reactjs.org/docs/
  * FILE STRUCTURE: https://reactjs.org/docs/faq-structure.html
  * ******************************************************************************************* */
-
-
 ```
-npm install --save react       // declarative and flexible JavaScript library for building UI
-npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
-npm install --save prop-types  // runtime type checking for React props and similar objects
+
+npm install --save react // declarative and flexible JavaScript library for building UI
+npm install --save react-dom // serves as the entry point of the DOM-related rendering paths
+npm install --save prop-types // runtime type checking for React props and similar objects
+
 ```
 
 // notes: don't forget the command lines
@@ -120,7 +117,7 @@ class Component extends React.Component {
     // Binding makes sure the method has access to component attributes like this.props and this.state
     this.method = this.method.bind(this);
 
-    // The constructor is the right place to initialize state. 
+    // The constructor is the right place to initialize state.
     this.state = {
       active: true,
 
@@ -375,9 +372,6 @@ MyComponent.propTypes = {
 
 ```
 
-
-
-
 ### For more resources visit:
 
 [bgoonz/React_Notes_V3A JavaScript library for building user interfaces React makes it painless to create interactive UIs. Design simple…github.com](https://github.com/bgoonz/React_Notes_V3)
@@ -386,19 +380,15 @@ MyComponent.propTypes = {
 
 Here I will walk through a demo…. skip down below for more fundamental examples and resources…
 
-
 ## Learn Redux:
 
 <iframe class="block-content" src="https://learning-redux42.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
-
 <script src="https://gist.github.com/bgoonz/0e9d7ba47f02d41d8cecfd23beecd2b1.js"></script>
 
 <iframe class="block-content" src="https://gist.github.com/bgoonz/0e9d7ba47f02d41d8cecfd23beecd2b1.js" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 
 ## React Demo <a id="b2b8"></a>
 
