@@ -28,11 +28,16 @@ template: docs
 # React
 
 
-# Examples
-
-# E
+# Examples:
 
 
+
+<iframe src="https://codesandbox.io/embed/thirsty-cori-c9qxq?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="thirsty-cori-c9qxq"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 ### Cheat Sheet:
 
 ```js
