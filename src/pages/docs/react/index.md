@@ -27,7 +27,6 @@ template: docs
 
 # React
 
-:
 
 # Examples
 
