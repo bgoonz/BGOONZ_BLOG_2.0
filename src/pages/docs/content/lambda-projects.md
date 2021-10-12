@@ -59,17 +59,6 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 ### User Base
 
-* **Administrators:** Manage all aspects of the application, including:
-  * Users
-  * Programs
-  * Services
-* **Program Managers:** Manage one or more programs.
-* **Service Providers:** Manage one or more services.
-
-[Feature List](https:ta exposed and your commit of a secret key will be forever tied to your GitHub ID. Use dotenv to be make managing secrets easier and use git-secrets to prevent accidents.
-
-
-
 
 
 
