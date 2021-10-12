@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title:  Functions in Python
 subtitle: lorem-ipsum
 date: '2021-10-12'
 thumb_image_alt: lorem-ipsum
