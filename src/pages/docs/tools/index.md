@@ -36,8 +36,9 @@ template: docs
 ---
 
 <br>
+<br><iframe src="https://widgetscode.com/wc/uc/all?skin=blk0" style="width:320px;height:267px;margin:0;border:0"></iframe>
 <br>
-<br>
+<iframe src="https://widgetscode.com/wc/sudoku/all?skin=blk0" style="width:320px;height:368px;margin:0;border:0"></iframe>
 
 <br>
 <h1>   Paste To Markdown </h1>
