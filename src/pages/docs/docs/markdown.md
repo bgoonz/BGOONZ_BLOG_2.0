@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Markdown
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Markdown
 seo:
   title: ''
   description: ''
