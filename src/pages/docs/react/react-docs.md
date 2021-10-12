@@ -47,7 +47,7 @@ template: docs
 # React:
 
 
-![React ]
+![React Lifecycles](https://i.imgur.com/3fhEosP.png)
 
 
 
