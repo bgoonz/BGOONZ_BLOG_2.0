@@ -11,11 +11,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     overflow: auto;
-    zoom: 0.85;
 }
-#search {
-    z-index: -1;
-}
+
 a {
     color: $color-primary;
     text-decoration: underline;
@@ -35,7 +32,7 @@ iframe {
     border-radius: 12px;
     border: 2px solid gold;
     height: 1500px !important;
-    width: 100%;
+    width: 95%;
     resize: both;
     overflow: scroll;
 }
@@ -192,7 +189,7 @@ hr {
 img {
     height: auto;
     max-width: 100%;
-    border-radius: 10px;
+    border-radius:10px;
 }
 
 @media only screen and (min-width: 841px) {
@@ -224,4 +221,9 @@ img {
     h6 {
         font-size: 1.125em;
     }
+}
+
+.gcse-search {
+    width: 30%;
+    height: 50%;
 }
