@@ -11,6 +11,10 @@ seo:
       value: images/py-code.png
       keyName: property
       relativeUrl: true
+    - name: 'twitter:title'
+      value: python cheat sheet
+      keyName: name
+      relativeUrl: false
 template: docs
 ---
 ## Lorem ipsum
