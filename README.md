@@ -1,6 +1,5 @@
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
-
 ---
 
 # [WEBSITE](https://bgoonz-blog.netlify.app/)
@@ -24,7 +23,6 @@
 # Homepage
 
 ![Homepage](./static/images/bgoonzblog20.png)
-
 
 ---
 
@@ -55,7 +53,6 @@
     
  
 ![](https://komarev.com/ghpvc/?username=bgoonz)
-
 
 </div>
 
