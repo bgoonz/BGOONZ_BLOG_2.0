@@ -1,7 +1,7 @@
 ---
 title: Lambda School Projects
 weight: 0
-excerpt: lorem-ipsum
+excerpt: family promise web app
 seo:
   title: ''
   description: ''
