@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Lambda School Projects
 weight: 0
 excerpt: lorem-ipsum
 seo:
