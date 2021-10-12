@@ -118,10 +118,6 @@ template: docs
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
-
-
-
-
 <br>
 <h1> Text Tools     </h1>
 <br>

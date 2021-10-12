@@ -396,13 +396,7 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 Exported from [Medium](https://medium.com) on May 23, 2021.
 
-
-
-
-
-
 # Snippets:
-
 
 <p>Renders an accordion menu with multiple collapsible content elements.</p>
 <ul>
@@ -427,12 +421,9 @@ Exported from [Medium](https://medium.com) on May 23, 2021.
 <a class="sourceLine" id="cb1-11" title="11">  <span class="kw">width</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb1-12" title="12">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const AccordionItem = ({ label, isCollapsed, handleClick, children }) =&gt; {
   return (
@@ -491,7 +482,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders an alert component with <code>type</code> prop.</p>
@@ -554,12 +545,9 @@ ReactDOM.render(
 <a class="sourceLine" id="cb4-51" title="51">  <span class="kw">content</span>: <span class="st">&quot;x&quot;</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb4-52" title="52">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const Alert = ({ isDefaultShown = false, timeout = 250, type, message }) =&gt; {
   const [isShown, setIsShown] = React.useState(isDefaultShown);
@@ -606,7 +594,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders a string as plaintext, with URLs converted to appropriate link elements.</p>
@@ -698,12 +686,9 @@ ReactDOM.render(
 <a class="sourceLine" id="cb11-11" title="11">  <span class="kw">visibility</span>: <span class="dv">visible</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb11-12" title="12">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const Carousel = ({ carouselItems, ...rest }) =&gt; {
   const [active, setActive] = React.useState(0);
@@ -746,7 +731,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders a component with collapsible content.</p>
@@ -769,12 +754,9 @@ ReactDOM.render(
 <a class="sourceLine" id="cb14-11" title="11">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb14-12" title="12">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const Collapse = ({ collapsed, children }) =&gt; {
   const [isCollapsed, setIsCollapsed] = React.useState(collapsed);
@@ -811,7 +793,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders a controlled <code>&lt;input&gt;</code> element that uses a callback function to inform its parent about value updates.</p>
@@ -1019,12 +1001,9 @@ ReactDOM.render(&lt;DataTable data={people} /&gt;, document.getElementById(&quot
 <a class="sourceLine" id="cb25-15" title="15">  <span class="kw">border</span>: <span class="dv">3</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#32cd32</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb25-16" title="16">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const FileDrop = ({ onDrop }) =&gt; {
   const [drag, setDrag] = React.useState(false);
@@ -1100,7 +1079,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders a textarea component with a character limit.</p>
@@ -1250,12 +1229,9 @@ ReactDOM.render(
 <a class="sourceLine" id="cb32-27" title="27">  }</a>
 <a class="sourceLine" id="cb32-28" title="28">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const Loader = ({ size }) =&gt; {
   return (
@@ -1284,7 +1260,7 @@ const Loader = ({ size }) =&gt; {
 
 ReactDOM.render(&lt;Loader size={24} /&gt;, document.getElementById(&quot;root&quot;));
 
-```
+````
 
 <hr />
 <p>Renders a link formatted to send an email (<code>mailto:</code> link).</p>
@@ -1469,12 +1445,9 @@ ReactDOM.render(
 <a class="sourceLine" id="cb39-81" title="81">  }</a>
 <a class="sourceLine" id="cb39-82" title="82">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const Modal = ({ isVisible = false, title, content, footer, onClose }) =&gt; {
   const keydownHandler = ({ key }) =&gt; {
@@ -1533,7 +1506,7 @@ const App = () =&gt; {
 
 ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;));
 
-```
+````
 
 <hr />
 <p>Renders a checkbox list that uses a callback function to pass its selected value/values to the parent component.</p>
@@ -1677,12 +1650,9 @@ ReactDOM.render(&lt;PasswordRevealer /&gt;, document.getElementById(&quot;root&q
 <a class="sourceLine" id="cb46-42" title="42">  <span class="kw">z-index</span>: <span class="dv">2</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb46-43" title="43">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const RippleButton = ({ children, onClick }) =&gt; {
   const [coords, setCoords] = React.useState({ x: -1, y: -1 });
@@ -1735,7 +1705,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders an uncontrolled <code>&lt;select&gt;</code> element that uses a callback function to pass its value to the parent component.</p>
@@ -1843,12 +1813,9 @@ ReactDOM.render(
 <a class="sourceLine" id="cb53-3" title="3">  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb53-4" title="4">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const Star = ({ marked, starId }) =&gt; {
   return (
@@ -1895,7 +1862,7 @@ marked={selection ? selection &gt;= i + 1 : rating &gt;= i + 1}
 
 ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;root&quot;));
 
-```
+````
 
 <hr />
 <p>Renders a tabbed menu and view component.</p>
@@ -1930,12 +1897,9 @@ ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;ro
 <a class="sourceLine" id="cb56-22" title="22">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb56-23" title="23">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const TabItem = (props) =&gt; &lt;div {...props} /&gt;;
 
@@ -1991,7 +1955,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders a tag input field.</p>
@@ -2064,12 +2028,9 @@ ReactDOM.render(
 <a class="sourceLine" id="cb59-59" title="59">  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb59-60" title="60">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const TagInput = ({ tags }) =&gt; {
   const [tagData, setTagData] = React.useState(tags);
@@ -2117,7 +2078,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders an uncontrolled <code>&lt;textarea&gt;</code> element that uses a callback function to pass its value to the parent component.</p>
@@ -2180,12 +2141,9 @@ ReactDOM.render(
 <a class="sourceLine" id="cb64-10" title="10">  <span class="kw">background-color</span>: <span class="cn">red</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb64-11" title="11">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const Toggle = ({ defaultToggled = false }) =&gt; {
   const [isToggleOn, setIsToggleOn] = React.useState(defaultToggled);
@@ -2210,7 +2168,7 @@ onChange={() =&gt; setIsToggleOn(!isToggleOn)}
 
 ReactDOM.render(&lt;Toggle /&gt;, document.getElementById(&quot;root&quot;));
 
-```
+````
 
 <hr />
 <p>Renders a tooltip component.</p>
@@ -2246,12 +2204,9 @@ ReactDOM.render(&lt;Toggle /&gt;, document.getElementById(&quot;root&quot;));
 <a class="sourceLine" id="cb67-25" title="25">  <span class="kw">border-color</span>: <span class="dv">transparent</span> <span class="dv">transparent</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.7</span><span class="fu">)</span> <span class="dv">transparent</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb67-26" title="26">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const Tooltip = ({ children, text, ...rest }) =&gt; {
   const [show, setShow] = React.useState(false);
@@ -2286,7 +2241,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders a tree view of a JSON object or array with collapsible content.</p>
@@ -2339,12 +2294,9 @@ ReactDOM.render(
 <a class="sourceLine" id="cb70-40" title="40">  <span class="kw">display</span>: <span class="dv">none</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb70-41" title="41">}</a>
 
-
-
 </div>
 
-
-```js
+````js
 
 const TreeView = ({
   data,
@@ -2428,7 +2380,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-```
+````
 
 <hr />
 <p>Renders an uncontrolled <code>&lt;input&gt;</code> element that uses a callback function to inform its parent about value updates.</p>

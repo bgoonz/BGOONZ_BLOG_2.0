@@ -3,23 +3,20 @@ title: lorem-ipsum
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 ## Git Reference
-
-
-
 
 <iframe src="https://bgoonz.github.io/GIT_GUIDE_Bgoonz/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
-
 
 Git is a distributed version control and source code management system.
 
@@ -35,24 +32,24 @@ Version control is a system that records changes to a file(s), over time.
 
 ### Centralized Versioning vs. Distributed Versioning
 
-* Centralized version control focuses on synchronizing, tracking, and backing
-up files.
-* Distributed version control focuses on sharing changes. Every change has a
-unique id.
-* Distributed systems have no defined structure. You could easily have a SVN
-style, centralized system, with git.
+-   Centralized version control focuses on synchronizing, tracking, and backing
+    up files.
+-   Distributed version control focuses on sharing changes. Every change has a
+    unique id.
+-   Distributed systems have no defined structure. You could easily have a SVN
+    style, centralized system, with git.
 
 [Additional Information](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
 
 ### Why Use Git?
 
-* Can work offline.
-* Collaborating with others is easy!
-* Branching is easy!
-* Branching is fast!
-* Merging is easy!
-* Git is fast.
-* Git is flexible.
+-   Can work offline.
+-   Collaborating with others is easy!
+-   Branching is easy!
+-   Branching is fast!
+-   Merging is easy!
+-   Git is fast.
+-   Git is flexible.
 
 ## Git Architecture
 
@@ -101,20 +98,21 @@ functionality to mark release points (v1.0, and so on).
 ### HEAD and head (component of .git dir)
 
 HEAD is a pointer that points to the current branch. A repository only has 1
-*active* HEAD.
+_active_ HEAD.
 head is a pointer that points to any commit. A repository can have any number
 of heads.
 
 ### Stages of Git
-* Modified - Changes have been made to a file but file has not been committed
-to Git Database yet
-* Staged - Marks a modified file to go into your next commit snapshot
-* Committed - Files have been committed to the Git Database
+
+-   Modified - Changes have been made to a file but file has not been committed
+    to Git Database yet
+-   Staged - Marks a modified file to go into your next commit snapshot
+-   Committed - Files have been committed to the Git Database
 
 ### Conceptual Resources
 
-* [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
-* [Git For Designers](http://hoth.entp.com/output/git_for_designers.html)
+-   [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
+-   [Git For Designers](http://hoth.entp.com/output/git_for_designers.html)
 
 ## Commands
 
@@ -462,6 +460,7 @@ Now you can pull!
 ```bash
 git pull
 ```
+
 `...changes apply...`
 
 Now check that everything is OK
@@ -506,7 +505,7 @@ Now you're ready to get back to work on your stuff!
 
 Take all changes that were committed on one branch, and replay them onto
 another branch.
-*Do not rebase commits that you have pushed to a public repo*.
+_Do not rebase commits that you have pushed to a public repo_.
 
 ```bash
 # Rebase experimentBranch onto master
@@ -559,6 +558,7 @@ You can do this:
 ed8ddf2 HEAD@{4}: rebase -i (pick): pythonstatcomp spanish translation (#1748)
 2e6c386 HEAD@{5}: rebase -i (start): checkout 02fb96d
 ```
+
 2. Select where to reset to, in our case its `2e6c386`, or `HEAD@{5}`
 3. 'git reset --hard HEAD@{5}' this will reset your repo to that head
 4. You can start the rebase again or leave it alone.
@@ -590,28 +590,28 @@ $ git rm /pather/to/the/file/HelloWorld.c
 
 ## Further Information
 
-* [tryGit - A fun interactive way to learn Git.](http://try.github.io/levels/1/challenges/1)
+-   [tryGit - A fun interactive way to learn Git.](http://try.github.io/levels/1/challenges/1)
 
-* [Learn Git Branching - the most visual and interactive way to learn Git on the web](http://learngitbranching.js.org/)
+-   [Learn Git Branching - the most visual and interactive way to learn Git on the web](http://learngitbranching.js.org/)
 
-* [Udemy Git Tutorial: A Comprehensive Guide](https://blog.udemy.com/git-tutorial-a-comprehensive-guide/)
+-   [Udemy Git Tutorial: A Comprehensive Guide](https://blog.udemy.com/git-tutorial-a-comprehensive-guide/)
 
-* [Git Immersion - A Guided tour that walks through the fundamentals of git](http://gitimmersion.com/)
+-   [Git Immersion - A Guided tour that walks through the fundamentals of git](http://gitimmersion.com/)
 
-* [git-scm - Video Tutorials](http://git-scm.com/videos)
+-   [git-scm - Video Tutorials](http://git-scm.com/videos)
 
-* [git-scm - Documentation](http://git-scm.com/docs)
+-   [git-scm - Documentation](http://git-scm.com/docs)
 
-* [Atlassian Git - Tutorials & Workflows](https://www.atlassian.com/git/)
+-   [Atlassian Git - Tutorials & Workflows](https://www.atlassian.com/git/)
 
-* [SalesForce Cheat Sheet](http://res.cloudinary.com/hy4kyit2a/image/upload/SF_git_cheatsheet.pdf)
+-   [SalesForce Cheat Sheet](http://res.cloudinary.com/hy4kyit2a/image/upload/SF_git_cheatsheet.pdf)
 
-* [GitGuys](http://www.gitguys.com/)
+-   [GitGuys](http://www.gitguys.com/)
 
-* [Git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
+-   [Git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
 
-* [Pro Git](http://www.git-scm.com/book/en/v2)
+-   [Pro Git](http://www.git-scm.com/book/en/v2)
 
-* [An introduction to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+-   [An introduction to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
-* [The New Boston tutorial to Git covering basic commands and workflow](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)
+-   [The New Boston tutorial to Git covering basic commands and workflow](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)
