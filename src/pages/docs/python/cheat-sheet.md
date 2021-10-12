@@ -4,7 +4,7 @@ weight: 0
 excerpt: lorem-ipsum
 seo:
   title: python cheat sheet
-  description: ''
+  description: cheat sheet for python developers
   robots: []
   extra: []
 template: docs
