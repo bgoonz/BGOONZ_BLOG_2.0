@@ -3,16 +3,14 @@ title: Javascript Concepts Review
 weight: 0
 excerpt: Javascript Concepts Review
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 ## Core Concept Review
-
-
-
 
 # Core Concepts
 

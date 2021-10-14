@@ -3,24 +3,24 @@ title: Python Cheat Sheet
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: python cheat sheet
-  description: cheat sheet for python developers
-  robots: []
-  extra:
-    - name: 'og:image'
-      value: images/py-code.png
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:title'
-      value: python cheat sheet
-      keyName: name
-      relativeUrl: false
+    title: python cheat sheet
+    description: cheat sheet for python developers
+    robots: []
+    extra:
+        - name: 'og:image'
+          value: images/py-code.png
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:title'
+          value: python cheat sheet
+          keyName: name
+          relativeUrl: false
 template: docs
 ---
+
 ## Lorem ipsum
 
 # Python Cheat Sheet
-
 
 ## Python Basics
 
@@ -30,11 +30,11 @@ From **Highest** to **Lowest** precedence:
 
 | Operators | Operation        | Example         |
 | --------- | ---------------- | --------------- |
-| **        | Exponent         | `2 ** 3 = 8`    |
+| \*\*      | Exponent         | `2 ** 3 = 8`    |
 | %         | Modulus/Remaider | `22 % 8 = 6`    |
 | //        | Integer division | `22 // 8 = 2`   |
 | /         | Division         | `22 / 8 = 2.75` |
-| *         | Multiplication   | `3 * 3 = 9`     |
+| \*        | Multiplication   | `3 * 3 = 9`     |
 | -         | Subtraction      | `5 - 2 = 3`     |
 | +         | Addition         | `2 + 2 = 4`     |
 
@@ -303,7 +303,7 @@ if not a:
 
 There are three Boolean operators: and, or, and not.
 
-The *and* Operator’s *Truth* Table:
+The _and_ Operator’s _Truth_ Table:
 
 | Expression      | Evaluates to |
 | --------------- | ------------ |
@@ -312,7 +312,7 @@ The *and* Operator’s *Truth* Table:
 | False and True  | False        |
 | False and False | False        |
 
-The *or* Operator’s *Truth* Table:
+The _or_ Operator’s _Truth_ Table:
 
 | Expression     | Evaluates to |
 | -------------- | ------------ |
@@ -321,7 +321,7 @@ The *or* Operator’s *Truth* Table:
 | False or True  | True         |
 | False or False | False        |
 
-The *not* Operator’s *Truth* Table:
+The _not_ Operator’s _Truth_ Table:
 
 | Expression | Evaluates to |
 | ---------- | ------------ |
@@ -402,7 +402,7 @@ while spam < 5:
 
 ### break Statements
 
- If the execution reaches a break statement, it immediately exits the while loop’s clause:
+If the execution reaches a break statement, it immediately exits the while loop’s clause:
 
 ```python
 while True:
@@ -440,7 +440,7 @@ for i in range(5):
     print('Jimmy Five Times ({})'.format(str(i)))
 ```
 
-The *range()* function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
+The _range()_ function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
 
 ```python
 for i in range(0, 10, 2):
@@ -508,9 +508,9 @@ def hello(name):
 
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
 
-- The return keyword.
+-   The return keyword.
 
-- The value or expression that the function should return.
+-   The value or expression that the function should return.
 
 ```python
 import random
@@ -565,13 +565,13 @@ print('cats', 'dogs', 'mice', sep=',')
 
 ### Local and Global Scope
 
-- Code in the global scope cannot use any local variables.
+-   Code in the global scope cannot use any local variables.
 
-- However, a local scope can access global variables.
+-   However, a local scope can access global variables.
 
-- Code in a function’s local scope cannot use variables in any other local scope.
+-   Code in a function’s local scope cannot use variables in any other local scope.
 
-- You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+-   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 ### The global Statement
 
@@ -1094,7 +1094,7 @@ s = {1, 2, 3}
 s = set([1, 2, 3])
 ```
 
-When creating an empty set, be sure to not use the curly braces `{}`  or you will get an empty dictionary instead.
+When creating an empty set, be sure to not use the curly braces `{}` or you will get an empty dictionary instead.
 
 ```python
 s = {}
@@ -1173,7 +1173,7 @@ s1.union(s2)  # or 's1 | s2'
 
 ### set intersection
 
-`intersection`  or `&`  will return a set containing only the elements that are common to all of them.
+`intersection` or `&` will return a set containing only the elements that are common to all of them.
 
 ```python
 s1 = {1, 2, 3}
@@ -1204,13 +1204,13 @@ s1.symmetric_difference(s2)  # or 's1 ^ s2'
 
 ## itertools Module
 
-The *itertools* module is a collection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
+The _itertools_ module is a collection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
 
 From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
 
 > The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
 
-The *itertools* module comes in the standard library and must be imported.
+The _itertools_ module comes in the standard library and must be imported.
 
 The [operator](https://docs.python.org/3/library/operator.html) module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.
 
@@ -1816,11 +1816,11 @@ spam.isupper()
 
 ### The isX String Methods
 
-- **isalpha()** returns True if the string consists only of letters and is not blank.
-- **isalnum()** returns True if the string consists only of lettersand numbers and is not blank.
-- **isdecimal()** returns True if the string consists only ofnumeric characters and is not blank.
-- **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
-- **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
+-   **isalpha()** returns True if the string consists only of letters and is not blank.
+-   **isalnum()** returns True if the string consists only of lettersand numbers and is not blank.
+-   **isdecimal()** returns True if the string consists only ofnumeric characters and is not blank.
+-   **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
+-   **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
 
 ### The startswith and endswith String Methods
 
@@ -2033,7 +2033,7 @@ f'Five plus ten is {a + b} and not {2 * (a + b)}.'
 
 ### Template Strings
 
- A simpler and less powerful mechanism, but it is recommended when handling format strings generated by users. Due to their reduced complexity template strings are a safer choice.
+A simpler and less powerful mechanism, but it is recommended when handling format strings generated by users. Due to their reduced complexity template strings are a safer choice.
 
 ```python
 from string import Template
@@ -2143,7 +2143,7 @@ mo2.group()
 
 ### Matching Zero or More with the Star
 
-The * (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
+The \* (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
 
 ```python
 bat_regex = re.compile(r'Bat(wo)*man')
@@ -2163,7 +2163,7 @@ mo3.group()
 
 ### Matching One or More with the Plus
 
-While * means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
+While \* means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
 
 ```python
 bat_regex = re.compile(r'Bat(wo)+man')
@@ -2225,9 +2225,9 @@ phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
 
 To summarize what the findall() method returns, remember the following:
 
-- When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
+-   When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
 
-- When called on a regex that has groups, such as (\d\d\d)-d\d)-(\d\ d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', ', '9999'), ('212', '555', '0000')].
+-   When called on a regex that has groups, such as (\d\d\d)-d\d)-(\d\ d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', ', '9999'), ('212', '555', '0000')].
 
 ### Making Your Own Character Classes
 
@@ -2249,11 +2249,11 @@ consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
 
 ### The Caret and Dollar Sign Characters
 
-- You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
+-   You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
 
-- Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
+-   Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
 
-- And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
+-   And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -2302,7 +2302,7 @@ mo.group(1)
 mo.group(2)
 ```
 
-The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.*?). The question mark tells Python to match in a nongreedy way:
+The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.\*?). The question mark tells Python to match in a nongreedy way:
 
 ```python
 nongreedy_regex = re.compile(r'<.*?>')
@@ -2348,7 +2348,7 @@ newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the
 | `\d`, `\w`, and `\s`     | a digit, word, or space character, resectively.              |
 | `\D`, `\W`, and `\S`     | anything except a digit, word, or space acter, respectively. |
 | `[abc]`                  | any character between the brackets (such as a, b, ).         |
-| `[^abc]`                 | any character that isn’t between the brackets.              |
+| `[^abc]`                 | any character that isn’t between the brackets.               |
 
 ### Case-Insensitive Matching
 
@@ -2540,8 +2540,8 @@ And all is good :)
 
 There are two ways to specify a file path.
 
-- An absolute path, which always begins with the root folder
-- A relative path, which is relative to the program’s current working directory
+-   An absolute path, which always begins with the root folder
+-   A relative path, which is relative to the program’s current working directory
 
 There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
 
@@ -2834,7 +2834,7 @@ The destination path can also specify a filename. In the following example, the 
 shutil.move('C:\\bacon.txt', 'C:\\eggs\\new_bacon.txt')
 ```
 
- If there is no eggs folder, then move() will rename bacon.txt to a file named eggs.
+If there is no eggs folder, then move() will rename bacon.txt to a file named eggs.
 
 ```python
 shutil.move('C:\\bacon.txt', 'C:\\eggs')
@@ -2842,15 +2842,15 @@ shutil.move('C:\\bacon.txt', 'C:\\eggs')
 
 ### Permanently Deleting Files and Folders
 
-- Calling os.unlink(path) or Path.unlink() will delete the file at path.
+-   Calling os.unlink(path) or Path.unlink() will delete the file at path.
 
-- Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
+-   Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
 
-- Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
+-   Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
 
 ### Safe Deletes with the send2trash Module
 
- You can install this module by running pip install send2trash from a Terminal window.
+You can install this module by running pip install send2trash from a Terminal window.
 
 ```python
 import send2trash
@@ -2899,7 +2899,7 @@ with open('C:\\Users\\your_home_folder\\hello.txt') as hello_file:
 hello_content
 ```
 
-Alternatively, you can use the *readlines()* method to get a list of string values from the file, one string for each line of text:
+Alternatively, you can use the _readlines()_ method to get a list of string values from the file, one string for each line of text:
 
 ```python
 with open('sonnet29.txt') as sonnet_file:
@@ -3050,8 +3050,8 @@ It is a convinient choice for configuration files where human will have to edit.
 
 There are two main librairies allowing to access to YAML files:
 
-- [PyYaml](https://pypi.python.org/pypi/PyYAML)
-- [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
+-   [PyYaml](https://pypi.python.org/pypi/PyYAML)
+-   [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
 
 Install them using `pip install` in your virtual environment.
 
@@ -3092,9 +3092,9 @@ conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
 
 Exceptions are raised with a raise statement. In code, a raise statement consists of the following:
 
-- The raise keyword
-- A call to the Exception() function
-- A string with a helpful error message passed to the Exception() function
+-   The raise keyword
+-   A call to the Exception() function
+-   A string with a helpful error message passed to the Exception() function
 
 ```python
 raise Exception('This is the error message.')
@@ -3150,10 +3150,10 @@ The 116 is the return value from the write() method, since 116 characters were w
 
 An assertion is a sanity check to make sure your code isn’t doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
 
-- The assert keyword
-- A condition (that is, an expression that evaluates to True or False)
-- A comma
-- A string to display when the condition is False
+-   The assert keyword
+-   A condition (that is, an expression that evaluates to True or False)
+-   A comma
+-   A string to display when the condition is False
 
 ```python
 pod_bay_door_status = 'open'
@@ -3215,7 +3215,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 | ---------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `DEBUG`    | `logging.debug()`    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
 | `INFO`     | `logging.info()`     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
-| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.             |
+| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.              |
 | `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
 | `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
 
@@ -3254,7 +3254,7 @@ def add(x, y):
 add(5, 3)
 ```
 
-Is equivalent to the *lambda* function:
+Is equivalent to the _lambda_ function:
 
 ```python
 add = lambda x, y: x + y
@@ -3314,11 +3314,11 @@ else:
 
 ## args and kwargs
 
-The names ```args and kwargs``` are arbitrary - the important thing are the ```*``` and ```**``` operators. They can mean:
+The names `args and kwargs` are arbitrary - the important thing are the `*` and `**` operators. They can mean:
 
-1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named `<name>`”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
+1. In a function declaration, `*` means “pack all remaining positional arguments into a tuple named `<name>`”, while `**` is the same for keyword arguments (except it uses a dictionary, not a tuple).
 
-2. In a function call, ```*``` means “unpack tuple or list named `<name>` to positional arguments at this position”, while ```**``` is the same for keyword arguments.
+2. In a function call, `*` means “unpack tuple or list named `<name>` to positional arguments at this position”, while `**` is the same for keyword arguments.
 
 For example you can make a function that you can use to call any other function, no matter what parameters it has:
 
@@ -3329,7 +3329,7 @@ def forward(f, *args, **kwargs):
 
 Inside forward, args is a tuple (of all positional arguments except the first one, because we specified it - the f), kwargs is a dict. Then we call f and unpack them so they become normal arguments to f.
 
-You use ```*args``` when you have an indefinite amount of positional arguments.
+You use `*args` when you have an indefinite amount of positional arguments.
 
 ```python
 def fruits(*args):
@@ -3339,7 +3339,7 @@ def fruits(*args):
 fruits("apples", "bananas", "grapes")
 ```
 
-Similarly, you use ```**kwargs``` when you have an indefinite number of keyword arguments.
+Similarly, you use `**kwargs` when you have an indefinite number of keyword arguments.
 
 ```python
 def fruit(**kwargs):
@@ -3369,7 +3369,7 @@ show(*data1,*data2, kwarg1="python",kwarg2="cheatsheet",**data3)
 show(*data1, *data2, **data3)
 ```
 
-If you do not specify ** for kwargs
+If you do not specify \*\* for kwargs
 
 ```python
 show(*data1, *data2, *data3)
@@ -3377,10 +3377,10 @@ show(*data1, *data2, *data3)
 
 ### Thinks to Remember(args)
 
-1. Functions can accept a variable number of positional arguments by using ```*args``` in the def statement.
-2. You can use the items from a sequence as the positional arguments for a function with the ```*``` operator.
-3. Using the ```*``` operator with a generator may cause your program to run out of memory and crash.
-4. Adding new positional parameters to functions that accept ```*args``` can introduce hard-to-find bugs.
+1. Functions can accept a variable number of positional arguments by using `*args` in the def statement.
+2. You can use the items from a sequence as the positional arguments for a function with the `*` operator.
+3. Using the `*` operator with a generator may cause your program to run out of memory and crash.
+4. Adding new positional parameters to functions that accept `*args` can introduce hard-to-find bugs.
 
 ### Thinks to remember(kwargs)
 
@@ -3410,7 +3410,7 @@ Anything that ends execution of the block causes the context manager's exit meth
 
 ### Writing your own contextmanager using generator syntax
 
-It is also possible to write a context manager using generator syntax thanks to the ```contextlib.contextmanager``` decorator:
+It is also possible to write a context manager using generator syntax thanks to the `contextlib.contextmanager` decorator:
 
 ```python
 import contextlib
@@ -3430,7 +3430,7 @@ with context_manager(2) as cm:
 ## `__main__` Top-level script environment
 
 `__main__` is the name of the scope in which top-level code executes.
-A module’s __name__ is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
+A module’s **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
 
 A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
 
@@ -3440,7 +3440,7 @@ if __name__ == "__main__":
     main()
 ```
 
-For a package, the same effect can be achieved by including a __main__.py module, the contents of which will be executed when the module is run with -m.
+For a package, the same effect can be achieved by including a **main**.py module, the contents of which will be executed when the module is run with -m.
 
 For example we are developing script which is designed to be used as module, we should do:
 
@@ -3468,7 +3468,7 @@ calculate.add(3, 5)
 ### Advantages
 
 1. Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
-2. If you import this script as a module in another script, the __name__ is set to the name of the script/module.
+2. If you import this script as a module in another script, the **name** is set to the name of the script/module.
 3. Python files can act as either reusable modules, or as standalone programs.
 4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
 
@@ -3565,7 +3565,7 @@ obj.price
 
 ### Type hints
 
-It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use ```typing.Any```.
+It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use `typing.Any`.
 
 ```python
 from dataclasses import dataclass
@@ -3577,18 +3577,12 @@ class WithoutExplicitTypes:
    value: Any = 42
 ```
 
-
-
-
-
-
-
-
-
+---
 
 ---
+
 ---
----
+
 ---
 
 # PART 2:
@@ -3596,690 +3590,869 @@ class WithoutExplicitTypes:
 # Single line comments start with a number symbol.
 
 """ Multiline strings can be written
-    using three "s, and are often used
-    as documentation.
+using three "s, and are often used
+as documentation.
 """
 
 ####################################################
+
 ## 1. Primitive Datatypes and Operators
+
 ####################################################
 
 # You have numbers
-3  # => 3
+
+3 # => 3
 
 # Math is what you would expect
-1 + 1   # => 2
-8 - 1   # => 7
-10 * 2  # => 20
-35 / 5  # => 7.0
+
+1 + 1 # => 2
+8 - 1 # => 7
+10 \* 2 # => 20
+35 / 5 # => 7.0
 
 # Integer division rounds down for both positive and negative numbers.
-5 // 3       # => 1
--5 // 3      # => -2
-5.0 // 3.0   # => 1.0 # works on floats too
--5.0 // 3.0  # => -2.0
+
+5 // 3 # => 1
+-5 // 3 # => -2
+5.0 // 3.0 # => 1.0 # works on floats too
+-5.0 // 3.0 # => -2.0
 
 # The result of division is always a float
-10.0 / 3  # => 3.3333333333333335
+
+10.0 / 3 # => 3.3333333333333335
 
 # Modulo operation
-7 % 3  # => 1
 
-# Exponentiation (x**y, x to the yth power)
-2**3  # => 8
+7 % 3 # => 1
+
+# Exponentiation (x\*\*y, x to the yth power)
+
+2\*\*3 # => 8
 
 # Enforce precedence with parentheses
-(1 + 3) * 2  # => 8
+
+(1 + 3) \* 2 # => 8
 
 # Boolean values are primitives (Note: the capitalization)
+
 True
 False
 
 # negate with not
-not True   # => False
-not False  # => True
+
+not True # => False
+not False # => True
 
 # Boolean Operators
+
 # Note "and" and "or" are case-sensitive
-True and False  # => False
-False or True   # => True
+
+True and False # => False
+False or True # => True
 
 # True and False are actually 1 and 0 but with different keywords
+
 True + True # => 2
-True * 8    # => 8
-False - 5   # => -5
+True \* 8 # => 8
+False - 5 # => -5
 
 # Comparison operators look at the numerical value of True and False
-0 == False  # => True
-1 == True   # => True
-2 == True   # => False
+
+0 == False # => True
+1 == True # => True
+2 == True # => False
 -5 != False # => True
 
 # Using boolean logical operators on ints casts them to booleans for evaluation, but their non-cast value is returned
+
 # Don't mix up with bool(ints) and bitwise and/or (&,|)
-bool(0)     # => False
-bool(4)     # => True
-bool(-6)    # => True
-0 and 2     # => 0
--5 or 0     # => -5
+
+bool(0) # => False
+bool(4) # => True
+bool(-6) # => True
+0 and 2 # => 0
+-5 or 0 # => -5
 
 # Equality is ==
-1 == 1  # => True
-2 == 1  # => False
+
+1 == 1 # => True
+2 == 1 # => False
 
 # Inequality is !=
-1 != 1  # => False
-2 != 1  # => True
+
+1 != 1 # => False
+2 != 1 # => True
 
 # More comparisons
-1 < 10  # => True
-1 > 10  # => False
-2 <= 2  # => True
-2 >= 2  # => True
+
+1 < 10 # => True
+1 > 10 # => False
+2 <= 2 # => True
+2 >= 2 # => True
 
 # Seeing whether a value is in a range
-1 < 2 and 2 < 3  # => True
-2 < 3 and 3 < 2  # => False
+
+1 < 2 and 2 < 3 # => True
+2 < 3 and 3 < 2 # => False
+
 # Chaining makes this look nicer
-1 < 2 < 3  # => True
-2 < 3 < 2  # => False
+
+1 < 2 < 3 # => True
+2 < 3 < 2 # => False
 
 # (is vs. ==) is checks if two variables refer to the same object, but == checks
+
 # if the objects pointed to have the same values.
-a = [1, 2, 3, 4]  # Point a at a new list, [1, 2, 3, 4]
-b = a             # Point b at what a is pointing to
-b is a            # => True, a and b refer to the same object
-b == a            # => True, a's and b's objects are equal
-b = [1, 2, 3, 4]  # Point b at a new list, [1, 2, 3, 4]
-b is a            # => False, a and b do not refer to the same object
-b == a            # => True, a's and b's objects are equal
+
+a = [1, 2, 3, 4] # Point a at a new list, [1, 2, 3, 4]
+b = a # Point b at what a is pointing to
+b is a # => True, a and b refer to the same object
+b == a # => True, a's and b's objects are equal
+b = [1, 2, 3, 4] # Point b at a new list, [1, 2, 3, 4]
+b is a # => False, a and b do not refer to the same object
+b == a # => True, a's and b's objects are equal
 
 # Strings are created with " or '
+
 "This is a string."
 'This is also a string.'
 
 # Strings can be added too! But try not to do this.
-"Hello " + "world!"  # => "Hello world!"
+
+"Hello " + "world!" # => "Hello world!"
+
 # String literals (but not variables) can be concatenated without using '+'
-"Hello " "world!"    # => "Hello world!"
+
+"Hello " "world!" # => "Hello world!"
 
 # A string can be treated like a list of characters
-"This is a string"[0]  # => 'T'
+
+"This is a string"[0] # => 'T'
 
 # You can find the length of a string
-len("This is a string")  # => 16
+
+len("This is a string") # => 16
 
 # .format can be used to format strings, like this:
-"{} can be {}".format("Strings", "interpolated")  # => "Strings can be interpolated"
+
+"{} can be {}".format("Strings", "interpolated") # => "Strings can be interpolated"
 
 # You can repeat the formatting arguments to save some typing.
+
 "{0} be nimble, {0} be quick, {0} jump over the {1}".format("Jack", "candle stick")
+
 # => "Jack be nimble, Jack be quick, Jack jump over the candle stick"
 
 # You can use keywords if you don't want to count.
-"{name} wants to eat {food}".format(name="Bob", food="lasagna")  # => "Bob wants to eat lasagna"
+
+"{name} wants to eat {food}".format(name="Bob", food="lasagna") # => "Bob wants to eat lasagna"
 
 # If your Python 3 code also needs to run on Python 2.5 and below, you can also
+
 # still use the old style of formatting:
-"%s can be %s the %s way" % ("Strings", "interpolated", "old")  # => "Strings can be interpolated the old way"
+
+"%s can be %s the %s way" % ("Strings", "interpolated", "old") # => "Strings can be interpolated the old way"
 
 # You can also format using f-strings or formatted string literals (in Python 3.6+)
+
 name = "Reiko"
 f"She said her name is {name}." # => "She said her name is Reiko"
+
 # You can basically put any Python statement inside the braces and it will be output in the string.
+
 f"{name} is {len(name)} characters long." # => "Reiko is 5 characters long."
 
-
 # None is an object
-None  # => None
+
+None # => None
 
 # Don't use the equality "==" symbol to compare objects to None
+
 # Use "is" instead. This checks for equality of object identity.
-"etc" is None  # => False
-None is None   # => True
+
+"etc" is None # => False
+None is None # => True
 
 # None, 0, and empty strings/lists/dicts/tuples all evaluate to False.
+
 # All other values are True
-bool(0)   # => False
-bool("")  # => False
-bool([])  # => False
-bool({})  # => False
-bool(())  # => False
+
+bool(0) # => False
+bool("") # => False
+bool([]) # => False
+bool({}) # => False
+bool(()) # => False
 
 ####################################################
+
 ## 2. Variables and Collections
+
 ####################################################
 
 # Python has a print function
-print("I'm Python. Nice to meet you!")  # => I'm Python. Nice to meet you!
+
+print("I'm Python. Nice to meet you!") # => I'm Python. Nice to meet you!
 
 # By default the print function also prints out a newline at the end.
+
 # Use the optional argument end to change the end string.
-print("Hello, World", end="!")  # => Hello, World!
+
+print("Hello, World", end="!") # => Hello, World!
 
 # Simple way to get input data from console
+
 input_string_var = input("Enter some data: ") # Returns the data as a string
+
 # Note: In earlier versions of Python, input() method was named as raw_input()
 
 # There are no declarations, only assignments.
+
 # Convention is to use lower_case_with_underscores
+
 some_var = 5
-some_var  # => 5
+some_var # => 5
 
 # Accessing a previously unassigned variable is an exception.
+
 # See Control Flow to learn more about exception handling.
-some_unknown_var  # Raises a NameError
+
+some_unknown_var # Raises a NameError
 
 # if can be used as an expression
+
 # Equivalent of C's '?:' ternary operator
-"yahoo!" if 3 > 2 else 2  # => "yahoo!"
+
+"yahoo!" if 3 > 2 else 2 # => "yahoo!"
 
 # Lists store sequences
+
 li = []
+
 # You can start with a prefilled list
+
 other_li = [4, 5, 6]
 
 # Add stuff to the end of a list with append
-li.append(1)    # li is now [1]
-li.append(2)    # li is now [1, 2]
-li.append(4)    # li is now [1, 2, 4]
-li.append(3)    # li is now [1, 2, 4, 3]
+
+li.append(1) # li is now [1]
+li.append(2) # li is now [1, 2]
+li.append(4) # li is now [1, 2, 4]
+li.append(3) # li is now [1, 2, 4, 3]
+
 # Remove from the end with pop
-li.pop()        # => 3 and li is now [1, 2, 4]
+
+li.pop() # => 3 and li is now [1, 2, 4]
+
 # Let's put it back
-li.append(3)    # li is now [1, 2, 4, 3] again.
+
+li.append(3) # li is now [1, 2, 4, 3] again.
 
 # Access a list like you would any array
-li[0]   # => 1
+
+li[0] # => 1
+
 # Look at the last element
-li[-1]  # => 3
+
+li[-1] # => 3
 
 # Looking out of bounds is an IndexError
-li[4]  # Raises an IndexError
+
+li[4] # Raises an IndexError
 
 # You can look at ranges with slice syntax.
+
 # The start index is included, the end index is not
+
 # (It's a closed/open range for you mathy types.)
-li[1:3]   # Return list from index 1 to 3 => [2, 4]
-li[2:]    # Return list starting from index 2 => [4, 3]
-li[:3]    # Return list from beginning until index 3  => [1, 2, 4]
-li[::2]   # Return list selecting every second entry => [1, 4]
-li[::-1]  # Return list in reverse order => [3, 4, 2, 1]
+
+li[1:3] # Return list from index 1 to 3 => [2, 4]
+li[2:] # Return list starting from index 2 => [4, 3]
+li[:3] # Return list from beginning until index 3 => [1, 2, 4]
+li[::2] # Return list selecting every second entry => [1, 4]
+li[::-1] # Return list in reverse order => [3, 4, 2, 1]
+
 # Use any combination of these to make advanced slices
+
 # li[start:end:step]
 
 # Make a one layer deep copy using slices
-li2 = li[:]  # => li2 = [1, 2, 4, 3] but (li2 is li) will result in false.
+
+li2 = li[:] # => li2 = [1, 2, 4, 3] but (li2 is li) will result in false.
 
 # Remove arbitrary elements from a list with "del"
-del li[2]  # li is now [1, 2, 3]
+
+del li[2] # li is now [1, 2, 3]
 
 # Remove first occurrence of a value
-li.remove(2)  # li is now [1, 3]
-li.remove(2)  # Raises a ValueError as 2 is not in the list
+
+li.remove(2) # li is now [1, 3]
+li.remove(2) # Raises a ValueError as 2 is not in the list
 
 # Insert an element at a specific index
-li.insert(1, 2)  # li is now [1, 2, 3] again
+
+li.insert(1, 2) # li is now [1, 2, 3] again
 
 # Get the index of the first item found matching the argument
-li.index(2)  # => 1
-li.index(4)  # Raises a ValueError as 4 is not in the list
+
+li.index(2) # => 1
+li.index(4) # Raises a ValueError as 4 is not in the list
 
 # You can add lists
+
 # Note: values for li and for other_li are not modified.
-li + other_li  # => [1, 2, 3, 4, 5, 6]
+
+li + other_li # => [1, 2, 3, 4, 5, 6]
 
 # Concatenate lists with "extend()"
-li.extend(other_li)  # Now li is [1, 2, 3, 4, 5, 6]
+
+li.extend(other_li) # Now li is [1, 2, 3, 4, 5, 6]
 
 # Check for existence in a list with "in"
-1 in li  # => True
+
+1 in li # => True
 
 # Examine the length with "len()"
-len(li)  # => 6
 
+len(li) # => 6
 
 # Tuples are like lists but are immutable.
+
 tup = (1, 2, 3)
-tup[0]      # => 1
-tup[0] = 3  # Raises a TypeError
+tup[0] # => 1
+tup[0] = 3 # Raises a TypeError
 
 # Note that a tuple of length one has to have a comma after the last element but
+
 # tuples of other lengths, even zero, do not.
-type((1))   # => <class 'int'>
-type((1,))  # => <class 'tuple'>
-type(())    # => <class 'tuple'>
+
+type((1)) # => <class 'int'>
+type((1,)) # => <class 'tuple'>
+type(()) # => <class 'tuple'>
 
 # You can do most of the list operations on tuples too
-len(tup)         # => 3
-tup + (4, 5, 6)  # => (1, 2, 3, 4, 5, 6)
-tup[:2]          # => (1, 2)
-2 in tup         # => True
+
+len(tup) # => 3
+tup + (4, 5, 6) # => (1, 2, 3, 4, 5, 6)
+tup[:2] # => (1, 2)
+2 in tup # => True
 
 # You can unpack tuples (or lists) into variables
-a, b, c = (1, 2, 3)  # a is now 1, b is now 2 and c is now 3
-# You can also do extended unpacking
-a, *b, c = (1, 2, 3, 4)  # a is now 1, b is now [2, 3] and c is now 4
-# Tuples are created by default if you leave out the parentheses
-d, e, f = 4, 5, 6  # tuple 4, 5, 6 is unpacked into variables d, e and f
-# respectively such that d = 4, e = 5 and f = 6
-# Now look how easy it is to swap two values
-e, d = d, e  # d is now 5 and e is now 4
 
+a, b, c = (1, 2, 3) # a is now 1, b is now 2 and c is now 3
+
+# You can also do extended unpacking
+
+a, \*b, c = (1, 2, 3, 4) # a is now 1, b is now [2, 3] and c is now 4
+
+# Tuples are created by default if you leave out the parentheses
+
+d, e, f = 4, 5, 6 # tuple 4, 5, 6 is unpacked into variables d, e and f
+
+# respectively such that d = 4, e = 5 and f = 6
+
+# Now look how easy it is to swap two values
+
+e, d = d, e # d is now 5 and e is now 4
 
 # Dictionaries store mappings from keys to values
+
 empty_dict = {}
+
 # Here is a prefilled dictionary
+
 filled_dict = {"one": 1, "two": 2, "three": 3}
 
 # Note keys for dictionaries have to be immutable types. This is to ensure that
+
 # the key can be converted to a constant hash value for quick look-ups.
+
 # Immutable types include ints, floats, strings, tuples.
-invalid_dict = {[1,2,3]: "123"}  # => Raises a TypeError: unhashable type: 'list'
-valid_dict = {(1,2,3):[1,2,3]}   # Values can be of any type, however.
+
+invalid_dict = {[1,2,3]: "123"} # => Raises a TypeError: unhashable type: 'list'
+valid_dict = {(1,2,3):[1,2,3]} # Values can be of any type, however.
 
 # Look up values with []
-filled_dict["one"]  # => 1
+
+filled_dict["one"] # => 1
 
 # Get all keys as an iterable with "keys()". We need to wrap the call in list()
-# to turn it into a list. We'll talk about those later.  Note - for Python
-# versions <3.7, dictionary key ordering is not guaranteed. Your results might
-# not match the example below exactly. However, as of Python 3.7, dictionary
-# items maintain the order at which they are inserted into the dictionary.
-list(filled_dict.keys())  # => ["three", "two", "one"] in Python <3.7
-list(filled_dict.keys())  # => ["one", "two", "three"] in Python 3.7+
 
+# to turn it into a list. We'll talk about those later. Note - for Python
+
+# versions <3.7, dictionary key ordering is not guaranteed. Your results might
+
+# not match the example below exactly. However, as of Python 3.7, dictionary
+
+# items maintain the order at which they are inserted into the dictionary.
+
+list(filled_dict.keys()) # => ["three", "two", "one"] in Python <3.7
+list(filled_dict.keys()) # => ["one", "two", "three"] in Python 3.7+
 
 # Get all values as an iterable with "values()". Once again we need to wrap it
+
 # in list() to get it out of the iterable. Note - Same as above regarding key
+
 # ordering.
-list(filled_dict.values())  # => [3, 2, 1]  in Python <3.7
-list(filled_dict.values())  # => [1, 2, 3] in Python 3.7+
+
+list(filled_dict.values()) # => [3, 2, 1] in Python <3.7
+list(filled_dict.values()) # => [1, 2, 3] in Python 3.7+
 
 # Check for existence of keys in a dictionary with "in"
-"one" in filled_dict  # => True
-1 in filled_dict      # => False
+
+"one" in filled_dict # => True
+1 in filled_dict # => False
 
 # Looking up a non-existing key is a KeyError
-filled_dict["four"]  # KeyError
+
+filled_dict["four"] # KeyError
 
 # Use "get()" method to avoid the KeyError
-filled_dict.get("one")      # => 1
-filled_dict.get("four")     # => None
+
+filled_dict.get("one") # => 1
+filled_dict.get("four") # => None
+
 # The get method supports a default argument when the value is missing
-filled_dict.get("one", 4)   # => 1
-filled_dict.get("four", 4)  # => 4
+
+filled_dict.get("one", 4) # => 1
+filled_dict.get("four", 4) # => 4
 
 # "setdefault()" inserts into a dictionary only if the given key isn't present
-filled_dict.setdefault("five", 5)  # filled_dict["five"] is set to 5
-filled_dict.setdefault("five", 6)  # filled_dict["five"] is still 5
+
+filled_dict.setdefault("five", 5) # filled_dict["five"] is set to 5
+filled_dict.setdefault("five", 6) # filled_dict["five"] is still 5
 
 # Adding to a dictionary
-filled_dict.update({"four":4})  # => {"one": 1, "two": 2, "three": 3, "four": 4}
-filled_dict["four"] = 4         # another way to add to dict
+
+filled_dict.update({"four":4}) # => {"one": 1, "two": 2, "three": 3, "four": 4}
+filled_dict["four"] = 4 # another way to add to dict
 
 # Remove keys from a dictionary with del
-del filled_dict["one"]  # Removes the key "one" from filled dict
+
+del filled_dict["one"] # Removes the key "one" from filled dict
 
 # From Python 3.5 you can also use the additional unpacking options
-{'a': 1, **{'b': 2}}  # => {'a': 1, 'b': 2}
-{'a': 1, **{'a': 2}}  # => {'a': 2}
 
-
+{'a': 1, **{'b': 2}} # => {'a': 1, 'b': 2}
+{'a': 1, **{'a': 2}} # => {'a': 2}
 
 # Sets store ... well sets
+
 empty_set = set()
+
 # Initialize a set with a bunch of values. Yeah, it looks a bit like a dict. Sorry.
-some_set = {1, 1, 2, 2, 3, 4}  # some_set is now {1, 2, 3, 4}
+
+some_set = {1, 1, 2, 2, 3, 4} # some_set is now {1, 2, 3, 4}
 
 # Similar to keys of a dictionary, elements of a set have to be immutable.
-invalid_set = {[1], 1}  # => Raises a TypeError: unhashable type: 'list'
+
+invalid_set = {[1], 1} # => Raises a TypeError: unhashable type: 'list'
 valid_set = {(1,), 1}
 
 # Add one more item to the set
+
 filled_set = some_set
-filled_set.add(5)  # filled_set is now {1, 2, 3, 4, 5}
+filled_set.add(5) # filled_set is now {1, 2, 3, 4, 5}
+
 # Sets do not have duplicate elements
-filled_set.add(5)  # it remains as before {1, 2, 3, 4, 5}
+
+filled_set.add(5) # it remains as before {1, 2, 3, 4, 5}
 
 # Do set intersection with &
+
 other_set = {3, 4, 5, 6}
-filled_set & other_set  # => {3, 4, 5}
+filled_set & other_set # => {3, 4, 5}
 
 # Do set union with |
-filled_set | other_set  # => {1, 2, 3, 4, 5, 6}
+
+filled_set | other_set # => {1, 2, 3, 4, 5, 6}
 
 # Do set difference with -
-{1, 2, 3, 4} - {2, 3, 5}  # => {1, 4}
+
+{1, 2, 3, 4} - {2, 3, 5} # => {1, 4}
 
 # Do set symmetric difference with ^
-{1, 2, 3, 4} ^ {2, 3, 5}  # => {1, 4, 5}
+
+{1, 2, 3, 4} ^ {2, 3, 5} # => {1, 4, 5}
 
 # Check if set on the left is a superset of set on the right
+
 {1, 2} >= {1, 2, 3} # => False
 
 # Check if set on the left is a subset of set on the right
+
 {1, 2} <= {1, 2, 3} # => True
 
 # Check for existence in a set with in
-2 in filled_set   # => True
-10 in filled_set  # => False
 
-
+2 in filled_set # => True
+10 in filled_set # => False
 
 ####################################################
+
 ## 3. Control Flow and Iterables
+
 ####################################################
 
 # Let's just make a variable
+
 some_var = 5
 
 # Here is an if statement. Indentation is significant in Python!
-# Convention is to use four spaces, not tabs.
-# This prints "some_var is smaller than 10"
-if some_var > 10:
-    print("some_var is totally bigger than 10.")
-elif some_var < 10:    # This elif clause is optional.
-    print("some_var is smaller than 10.")
-else:                  # This is optional too.
-    print("some_var is indeed 10.")
 
+# Convention is to use four spaces, not tabs.
+
+# This prints "some_var is smaller than 10"
+
+if some_var > 10:
+print("some_var is totally bigger than 10.")
+elif some_var < 10: # This elif clause is optional.
+print("some_var is smaller than 10.")
+else: # This is optional too.
+print("some_var is indeed 10.")
 
 """
 For loops iterate over lists
 prints:
-    dog is a mammal
-    cat is a mammal
-    mouse is a mammal
+dog is a mammal
+cat is a mammal
+mouse is a mammal
 """
-for animal in ["dog", "cat", "mouse"]:
-    # You can use format() to interpolate formatted strings
-    print("{} is a mammal".format(animal))
+for animal in ["dog", "cat", "mouse"]: # You can use format() to interpolate formatted strings
+print("{} is a mammal".format(animal))
 
 """
 "range(number)" returns an iterable of numbers
 from zero to the given number
 prints:
-    0
-    1
-    2
-    3
+0
+1
+2
+3
 """
 for i in range(4):
-    print(i)
+print(i)
 
 """
 "range(lower, upper)" returns an iterable of numbers
 from the lower number to the upper number
 prints:
-    4
-    5
-    6
-    7
+4
+5
+6
+7
 """
 for i in range(4, 8):
-    print(i)
+print(i)
 
 """
 "range(lower, upper, step)" returns an iterable of numbers
 from the lower number to the upper number, while incrementing
 by step. If step is not indicated, the default value is 1.
 prints:
-    4
-    6
+4
+6
 """
 for i in range(4, 8, 2):
-    print(i)
+print(i)
 
 """
 To loop over a list, and retrieve both the index and the value of each item in the list
 prints:
-    0 dog
-    1 cat
-    2 mouse
+0 dog
+1 cat
+2 mouse
 """
 list = ["dog", "cat", "mouse"]
 for i, value in enumerate(list):
-    print(i, value)
+print(i, value)
 
 """
 While loops go until a condition is no longer met.
 prints:
-    0
-    1
-    2
-    3
+0
+1
+2
+3
 """
 x = 0
 while x < 4:
-    print(x)
-    x += 1  # Shorthand for x = x + 1
+print(x)
+x += 1 # Shorthand for x = x + 1
 
 # Handle exceptions with a try/except block
-try:
-    # Use "raise" to raise an error
-    raise IndexError("This is an index error")
+
+try: # Use "raise" to raise an error
+raise IndexError("This is an index error")
 except IndexError as e:
-    pass                 # Pass is just a no-op. Usually you would do recovery here.
+pass # Pass is just a no-op. Usually you would do recovery here.
 except (TypeError, NameError):
-    pass                 # Multiple exceptions can be handled together, if required.
-else:                    # Optional clause to the try/except block. Must follow all except blocks
-    print("All good!")   # Runs only if the code in try raises no exceptions
-finally:                 #  Execute under all circumstances
-    print("We can clean up resources here")
+pass # Multiple exceptions can be handled together, if required.
+else: # Optional clause to the try/except block. Must follow all except blocks
+print("All good!") # Runs only if the code in try raises no exceptions
+finally: # Execute under all circumstances
+print("We can clean up resources here")
 
 # Instead of try/finally to cleanup resources you can use a with statement
+
 with open("myfile.txt") as f:
-    for line in f:
-        print(line)
+for line in f:
+print(line)
 
 # Writing to a file
+
 contents = {"aa": 12, "bb": 21}
 with open("myfile1.txt", "w+") as file:
-    file.write(str(contents))        # writes a string to a file
+file.write(str(contents)) # writes a string to a file
 
 with open("myfile2.txt", "w+") as file:
-    file.write(json.dumps(contents)) # writes an object to a file
+file.write(json.dumps(contents)) # writes an object to a file
 
 # Reading from a file
+
 with open('myfile1.txt', "r+") as file:
-    contents = file.read()           # reads a string from a file
+contents = file.read() # reads a string from a file
 print(contents)
+
 # print: {"aa": 12, "bb": 21}
 
 with open('myfile2.txt', "r+") as file:
-    contents = json.load(file)       # reads a json object from a file
-print(contents)     
+contents = json.load(file) # reads a json object from a file
+print(contents)
+
 # print: {"aa": 12, "bb": 21}
 
-
 # Python offers a fundamental abstraction called the Iterable.
+
 # An iterable is an object that can be treated as a sequence.
+
 # The object returned by the range function, is an iterable.
 
 filled_dict = {"one": 1, "two": 2, "three": 3}
 our_iterable = filled_dict.keys()
-print(our_iterable)  # => dict_keys(['one', 'two', 'three']). This is an object that implements our Iterable interface.
+print(our_iterable) # => dict_keys(['one', 'two', 'three']). This is an object that implements our Iterable interface.
 
 # We can loop over it.
+
 for i in our_iterable:
-    print(i)  # Prints one, two, three
+print(i) # Prints one, two, three
 
 # However we cannot address elements by index.
-our_iterable[1]  # Raises a TypeError
+
+our_iterable[1] # Raises a TypeError
 
 # An iterable is an object that knows how to create an iterator.
+
 our_iterator = iter(our_iterable)
 
 # Our iterator is an object that can remember the state as we traverse through it.
+
 # We get the next object with "next()".
-next(our_iterator)  # => "one"
+
+next(our_iterator) # => "one"
 
 # It maintains state as we iterate.
-next(our_iterator)  # => "two"
-next(our_iterator)  # => "three"
+
+next(our_iterator) # => "two"
+next(our_iterator) # => "three"
 
 # After the iterator has returned all of its data, it raises a StopIteration exception
-next(our_iterator)  # Raises StopIteration
+
+next(our_iterator) # Raises StopIteration
 
 # We can also loop over it, in fact, "for" does this implicitly!
+
 our_iterator = iter(our_iterable)
 for i in our_iterator:
-    print(i)  # Prints one, two, three
+print(i) # Prints one, two, three
 
 # You can grab all the elements of an iterable or iterator by calling list() on it.
-list(our_iterable)  # => Returns ["one", "two", "three"]
-list(our_iterator)  # => Returns [] because state is saved
 
+list(our_iterable) # => Returns ["one", "two", "three"]
+list(our_iterator) # => Returns [] because state is saved
 
 ####################################################
+
 ## 4. Functions
+
 ####################################################
 
 # Use "def" to create new functions
+
 def add(x, y):
-    print("x is {} and y is {}".format(x, y))
-    return x + y  # Return values with a return statement
+print("x is {} and y is {}".format(x, y))
+return x + y # Return values with a return statement
 
 # Calling functions with parameters
-add(5, 6)  # => prints out "x is 5 and y is 6" and returns 11
+
+add(5, 6) # => prints out "x is 5 and y is 6" and returns 11
 
 # Another way to call functions is with keyword arguments
-add(y=6, x=5)  # Keyword arguments can arrive in any order.
+
+add(y=6, x=5) # Keyword arguments can arrive in any order.
 
 # You can define functions that take a variable number of
+
 # positional arguments
-def varargs(*args):
-    return args
 
-varargs(1, 2, 3)  # => (1, 2, 3)
+def varargs(\*args):
+return args
+
+varargs(1, 2, 3) # => (1, 2, 3)
 
 # You can define functions that take a variable number of
+
 # keyword arguments, as well
-def keyword_args(**kwargs):
-    return kwargs
+
+def keyword_args(\*\*kwargs):
+return kwargs
 
 # Let's call it to see what happens
-keyword_args(big="foot", loch="ness")  # => {"big": "foot", "loch": "ness"}
 
+keyword_args(big="foot", loch="ness") # => {"big": "foot", "loch": "ness"}
 
 # You can do both at once, if you like
-def all_the_args(*args, **kwargs):
-    print(args)
-    print(kwargs)
+
+def all_the_args(\*args, \*\*kwargs):
+print(args)
+print(kwargs)
 """
 all_the_args(1, 2, a=3, b=4) prints:
-    (1, 2)
-    {"a": 3, "b": 4}
+(1, 2)
+{"a": 3, "b": 4}
 """
 
 # When calling functions, you can do the opposite of args/kwargs!
-# Use * to expand tuples and use ** to expand kwargs.
+
+# Use \* to expand tuples and use \*\* to expand kwargs.
+
 args = (1, 2, 3, 4)
 kwargs = {"a": 3, "b": 4}
-all_the_args(*args)            # equivalent to all_the_args(1, 2, 3, 4)
-all_the_args(**kwargs)         # equivalent to all_the_args(a=3, b=4)
-all_the_args(*args, **kwargs)  # equivalent to all_the_args(1, 2, 3, 4, a=3, b=4)
+all_the_args(*args) # equivalent to all_the_args(1, 2, 3, 4)
+all_the_args(\*\*kwargs) # equivalent to all_the_args(a=3, b=4)
+all_the_args(*args, \*\*kwargs) # equivalent to all_the_args(1, 2, 3, 4, a=3, b=4)
 
 # Returning multiple values (with tuple assignments)
+
 def swap(x, y):
-    return y, x  # Return multiple values as a tuple without the parenthesis.
-                 # (Note: parenthesis have been excluded but can be included)
+return y, x # Return multiple values as a tuple without the parenthesis. # (Note: parenthesis have been excluded but can be included)
 
 x = 1
 y = 2
-x, y = swap(x, y)     # => x = 2, y = 1
-# (x, y) = swap(x,y)  # Again parenthesis have been excluded but can be included.
+x, y = swap(x, y) # => x = 2, y = 1
+
+# (x, y) = swap(x,y) # Again parenthesis have been excluded but can be included.
 
 # Function Scope
+
 x = 5
 
-def set_x(num):
-    # Local var x not the same as global variable x
-    x = num    # => 43
-    print(x)   # => 43
+def set_x(num): # Local var x not the same as global variable x
+x = num # => 43
+print(x) # => 43
 
 def set_global_x(num):
-    global x
-    print(x)   # => 5
-    x = num    # global var x is now set to 6
-    print(x)   # => 6
+global x
+print(x) # => 5
+x = num # global var x is now set to 6
+print(x) # => 6
 
 set_x(43)
 set_global_x(6)
 
-
 # Python has first class functions
+
 def create_adder(x):
-    def adder(y):
-        return x + y
-    return adder
+def adder(y):
+return x + y
+return adder
 
 add_10 = create_adder(10)
-add_10(3)   # => 13
+add_10(3) # => 13
 
 # There are also anonymous functions
-(lambda x: x > 2)(3)                  # => True
-(lambda x, y: x ** 2 + y ** 2)(2, 1)  # => 5
+
+(lambda x: x > 2)(3) # => True
+(lambda x, y: x ** 2 + y ** 2)(2, 1) # => 5
 
 # There are built-in higher order functions
-list(map(add_10, [1, 2, 3]))          # => [11, 12, 13]
-list(map(max, [1, 2, 3], [4, 2, 1]))  # => [4, 2, 3]
 
-list(filter(lambda x: x > 5, [3, 4, 5, 6, 7]))  # => [6, 7]
+list(map(add_10, [1, 2, 3])) # => [11, 12, 13]
+list(map(max, [1, 2, 3], [4, 2, 1])) # => [4, 2, 3]
+
+list(filter(lambda x: x > 5, [3, 4, 5, 6, 7])) # => [6, 7]
 
 # We can use list comprehensions for nice maps and filters
+
 # List comprehension stores the output as a list which can itself be a nested list
-[add_10(i) for i in [1, 2, 3]]         # => [11, 12, 13]
-[x for x in [3, 4, 5, 6, 7] if x > 5]  # => [6, 7]
+
+[add_10(i) for i in [1, 2, 3]] # => [11, 12, 13]
+[x for x in [3, 4, 5, 6, 7] if x > 5] # => [6, 7]
 
 # You can construct set and dict comprehensions as well.
-{x for x in 'abcddeef' if x not in 'abc'}  # => {'d', 'e', 'f'}
-{x: x**2 for x in range(5)}  # => {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
 
+{x for x in 'abcddeef' if x not in 'abc'} # => {'d', 'e', 'f'}
+{x: x\*\*2 for x in range(5)} # => {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
 
 ####################################################
+
 ## 5. Modules
+
 ####################################################
 
 # You can import modules
+
 import math
-print(math.sqrt(16))  # => 4.0
+print(math.sqrt(16)) # => 4.0
 
 # You can get specific functions from a module
+
 from math import ceil, floor
-print(ceil(3.7))   # => 4.0
-print(floor(3.7))  # => 3.0
+print(ceil(3.7)) # => 4.0
+print(floor(3.7)) # => 3.0
 
 # You can import all functions from a module.
+
 # Warning: this is not recommended
-from math import *
+
+from math import \*
 
 # You can shorten module names
+
 import math as m
-math.sqrt(16) == m.sqrt(16)  # => True
+math.sqrt(16) == m.sqrt(16) # => True
 
 # Python modules are just ordinary Python files. You
+
 # can write your own, and import them. The name of the
+
 # module is the same as the name of the file.
 
 # You can find out which functions and attributes
+
 # are defined in a module.
+
 import math
 dir(math)
 
 # If you have a Python script named math.py in the same
+
 # folder as your current script, the file math.py will
+
 # be loaded instead of the built-in Python module.
+
 # This happens because the local folder has priority
+
 # over Python's built-in libraries.
 
-
 ####################################################
+
 ## 6. Classes
+
 ####################################################
 
 # We use the "class" statement to create a class
+
 class Human:
 
     # A class attribute. It is shared by all instances of this class
@@ -4334,17 +4507,17 @@ class Human:
     def age(self):
         del self._age
 
-
 # When a Python interpreter reads a source file it executes all its code.
-# This __name__ check makes sure this code block is only executed when this
+
+# This **name** check makes sure this code block is only executed when this
+
 # module is the main program.
-if __name__ == '__main__':
-    # Instantiate a class
-    i = Human(name="Ian")
-    i.say("hi")                     # "Ian: hi"
-    j = Human("Joel")
-    j.say("hello")                  # "Joel: hello"
-    # i and j are instances of type Human, or in other words: they are Human objects
+
+if **name** == '**main**': # Instantiate a class
+i = Human(name="Ian")
+i.say("hi") # "Ian: hi"
+j = Human("Joel")
+j.say("hello") # "Joel: hello" # i and j are instances of type Human, or in other words: they are Human objects
 
     # Call our class method
     i.say(i.get_species())          # "Ian: H. sapiens"
@@ -4355,11 +4528,11 @@ if __name__ == '__main__':
 
     # Call the static method
     print(Human.grunt())            # => "*grunt*"
-    
-    # Cannot call static method with instance of object 
+
+    # Cannot call static method with instance of object
     # because i.grunt() will automatically put "self" (the object i) as an argument
     print(i.grunt())                # => TypeError: grunt() takes 0 positional arguments but 1 was given
-                                    
+
     # Update the property for this instance
     i.age = 42
     # Get the property
@@ -4369,29 +4542,36 @@ if __name__ == '__main__':
     del i.age
     # i.age                         # => this would raise an AttributeError
 
-
 ####################################################
+
 ## 6.1 Inheritance
+
 ####################################################
 
 # Inheritance allows new child classes to be defined that inherit methods and
-# variables from their parent class. 
+
+# variables from their parent class.
 
 # Using the Human class defined above as the base or parent class, we can
+
 # define a child class, Superhero, which inherits the class variables like
+
 # "species", "name", and "age", as well as methods, like "sing" and "grunt"
+
 # from the Human class, but can also have its own unique properties.
 
 # To take advantage of modularization by file you could place the classes above in their own files,
+
 # say, human.py
 
 # To import functions from other files use the following format
+
 # from "filename-without-extension" import "function-or-class"
 
 from human import Human
 
-
 # Specify the parent class(es) as parameters to the class definition
+
 class Superhero(Human):
 
     # If the child class should inherit all of the parent's definitions without
@@ -4430,9 +4610,8 @@ class Superhero(Human):
         for power in self.superpowers:
             print("I wield the power of {pow}!".format(pow=power))
 
-
-if __name__ == '__main__':
-    sup = Superhero(name="Tick")
+if **name** == '**main**':
+sup = Superhero(name="Tick")
 
     # Instance type checks
     if isinstance(sup, Human):
@@ -4466,11 +4645,15 @@ if __name__ == '__main__':
     print('Am I Oscar eligible? ' + str(sup.movie))
 
 ####################################################
+
 ## 6.2 Multiple Inheritance
+
 ####################################################
 
 # Another class definition
+
 # bat.py
+
 class Bat:
 
     species = 'Baty'
@@ -4487,29 +4670,31 @@ class Bat:
     def sonar(self):
         return '))) ... ((('
 
-if __name__ == '__main__':
-    b = Bat()
-    print(b.say('hello'))
-    print(b.fly)
-
+if **name** == '**main**':
+b = Bat()
+print(b.say('hello'))
+print(b.fly)
 
 # And yet another class definition that inherits from Superhero and Bat
+
 # superhero.py
+
 from superhero import Superhero
 from bat import Bat
 
 # Define Batman as a child that inherits from both Superhero and Bat
+
 class Batman(Superhero, Bat):
 
     def __init__(self, *args, **kwargs):
         # Typically to inherit attributes you have to call super:
-        # super(Batman, self).__init__(*args, **kwargs)      
+        # super(Batman, self).__init__(*args, **kwargs)
         # However we are dealing with multiple inheritance here, and super()
         # only works with the next base class in the MRO list.
         # So instead we explicitly call __init__ for all ancestors.
         # The use of *args and **kwargs allows for a clean way to pass arguments,
         # with each parent "peeling a layer of the onion".
-        Superhero.__init__(self, 'anonymous', movie=True, 
+        Superhero.__init__(self, 'anonymous', movie=True,
                            superpowers=['Wealthy'], *args, **kwargs)
         Bat.__init__(self, *args, can_fly=False, **kwargs)
         # override the value for the name attribute
@@ -4518,15 +4703,14 @@ class Batman(Superhero, Bat):
     def sing(self):
         return 'nan nan nan nan nan batman!'
 
-
-if __name__ == '__main__':
-    sup = Batman()
+if **name** == '**main**':
+sup = Batman()
 
     # Get the Method Resolution search Order used by both getattr() and super().
     # This attribute is dynamic and can be updated
-    print(Batman.__mro__)       # => (<class '__main__.Batman'>, 
-                                # => <class 'superhero.Superhero'>, 
-                                # => <class 'human.Human'>, 
+    print(Batman.__mro__)       # => (<class '__main__.Batman'>,
+                                # => <class 'superhero.Superhero'>,
+                                # => <class 'human.Human'>,
                                 # => <class 'bat.Bat'>, <class 'object'>)
 
     # Calls parent method but uses its own class attribute
@@ -4548,60 +4732,67 @@ if __name__ == '__main__':
     # Inherited attribute from 2nd ancestor whose default value was overridden.
     print('Can I fly? ' + str(sup.fly)) # => Can I fly? False
 
-
-
 ####################################################
+
 ## 7. Advanced
+
 ####################################################
 
 # Generators help you make lazy code.
+
 def double_numbers(iterable):
-    for i in iterable:
-        yield i + i
+for i in iterable:
+yield i + i
 
 # Generators are memory-efficient because they only load the data needed to
+
 # process the next value in the iterable. This allows them to perform
+
 # operations on otherwise prohibitively large value ranges.
+
 # NOTE: `range` replaces `xrange` in Python 3.
-for i in double_numbers(range(1, 900000000)):  # `range` is a generator.
-    print(i)
-    if i >= 30:
-        break
+
+for i in double_numbers(range(1, 900000000)): # `range` is a generator.
+print(i)
+if i >= 30:
+break
 
 # Just as you can create a list comprehension, you can create generator
+
 # comprehensions as well.
+
 values = (-x for x in [1,2,3,4,5])
 for x in values:
-    print(x)  # prints -1 -2 -3 -4 -5 to console/terminal
+print(x) # prints -1 -2 -3 -4 -5 to console/terminal
 
 # You can also cast a generator comprehension directly to a list.
+
 values = (-x for x in [1,2,3,4,5])
 gen_to_list = list(values)
-print(gen_to_list)  # => [-1, -2, -3, -4, -5]
-
+print(gen_to_list) # => [-1, -2, -3, -4, -5]
 
 # Decorators
+
 # In this example `beg` wraps `say`. If say_please is True then it
+
 # will change the returned message.
+
 from functools import wraps
 
-
 def beg(target_function):
-    @wraps(target_function)
-    def wrapper(*args, **kwargs):
-        msg, say_please = target_function(*args, **kwargs)
-        if say_please:
-            return "{} {}".format(msg, "Please! I am poor :(")
-        return msg
+@wraps(target_function)
+def wrapper(*args, \*\*kwargs):
+msg, say_please = target_function(*args, \*\*kwargs)
+if say_please:
+return "{} {}".format(msg, "Please! I am poor :(")
+return msg
 
     return wrapper
 
-
 @beg
 def say(say_please=False):
-    msg = "Can you buy me a beer?"
-    return msg, say_please
+msg = "Can you buy me a beer?"
+return msg, say_please
 
-
-print(say())                 # Can you buy me a beer?
-print(say(say_please=True))  # Can you buy me a beer? Please! I am poor :(
+print(say()) # Can you buy me a beer?
+print(say(say_please=True)) # Can you buy me a beer? Please! I am poor :(

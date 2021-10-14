@@ -3,12 +3,13 @@ title: Introducing JSX
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 # Introducing JSX&#xA;&#xA;
 
 Consider this variable declaration:
