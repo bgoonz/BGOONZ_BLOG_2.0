@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: How To Reinstall NPM and Node.js On Your System
 weight: 0
 excerpt: lorem-ipsum
 seo:
