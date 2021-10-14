@@ -11,49 +11,27 @@ template: docs
 ---
 The Node Package Manager (usually shortened to npm) and Node.js are popular technologies among JavaScript developers. npm is the default package management utility that is installed automatically on your machine when you download and install Node.js.
 
-
-
 npm assists in building, consuming, managing, and sharing small pieces of code. On the other hand, Node.js provides a server-side environment for creating powerful applications. 
 
 However, at times, npm can get corrupted, become incompatible with other programs, or just experience performance issues. In such cases, it may help to reinstall npm on your system and save yourself the hassles. Similarly, reinstalling Node.js may assist you in clearing out any performance errors.
 
 And since npm is shipped with Node.js by default, installing Node.js will also install npm on your system.
 
-In this article, you’re going to learn how to reinstall npm and Node.js on different operating systems—Windows, macOS, and Linux.
 
-These are the topics we’ll talk about:
-
-*   [How to check if reinstallation succeeded](https://www.whitesourcesoftware.com/free-developer-tools/blog/reinstall-npm-node-js/#1)
-
-*   [How to reinstall npm and Node.js on Windows](https://www.whitesourcesoftware.com/free-developer-tools/blog/reinstall-npm-node-js/#2)
-
-*   [How to reinstall npm and Node.js on macOS](https://www.whitesourcesoftware.com/free-developer-tools/blog/reinstall-npm-node-js/#3)
-
-*   [How to reinstall npm and Node.js on Linux](https://www.whitesourcesoftware.com/free-developer-tools/blog/reinstall-npm-node-js/#4)
-
-*   [Conclusion](https://www.whitesourcesoftware.com/free-developer-tools/blog/reinstall-npm-node-js/#5)
 
 ## How to check if reinstallation succeeded
 
 Note that after completing the reinstallation process, you can check if it was successful by running the following commands on the terminal:
 
-
-
 Then, if everything went well, the system will output your installed versions.
 
 Something like this:
-
-
 
 Since npm is usually updated more frequently than Node.js, your installation may not come with the latest npm version. 
 
 So, if your installed npm version is not the latest, you can update it by running the following command:
 
-
-
 The above command will install the latest, stable npm version. However, if you want to experiment with things by using a version that will be released in the future, you can run the following:
-
-
 
 If you want to update Node.js to the latest version, [you can read this article.](https://renovate.whitesourcesoftware.com/blog/update-node-js/)
 
@@ -89,23 +67,13 @@ Then, once your system is clean, go to [this page](https://github.com/coreybutl
 
 If you want to reinstall a specific Node.js version, you can run the following command:
 
-
-
 Let’s say you want to reinstall Node.js version 12.18.0, you can run:
-
-
 
 If you want to reinstall the latest stable Node.js version, you can run:
 
-
-
 If you want to check the list of Node.js versions available for download, you can run:
 
-
-
 To use the installed Node.js version in your project, you can switch to it:
-
-
 
 ### b) Reinstalling using a Node installer
 
@@ -133,8 +101,6 @@ Here are some ways you can use to uninstall them:
 
 *   Using [Homebrew](https://brew.sh/)—this package management utility lets you complete the uninstallation process fast and easily. You can run the following command:
 
-
-
 Then, once your system is clean, you can use any of the following methods to reinstall Node.js and npm on macOS:
 
 *   Reinstalling using a Node installer
@@ -155,8 +121,6 @@ Remember to choose the macOS installer option. If you run the installer, it wi
 
 To reinstall using Homebrew, just run the following command on the macOS terminal:
 
-
-
 ### c) Reinstalling using a Node version manager
 
 You can also reinstall the two tools using the [nvm](https://github.com/nvm-sh/nvm) Node version manager. Since the process for using nvm is the same for both macOS and Linux, we’ll describe how to use it in the next section. 
@@ -169,15 +133,9 @@ Here are some ways you can use to uninstall them:
 
 *   Using the apt package manager—you can remove Node.js by running the following command:
 
-
-
 The above command will delete the distro-stable version while retaining the configuration files for later use. However, if you intend to remove the package as well as its configuration files, run the following:
 
-
-
 Finally, you can delete any unused packages that were installed automatically with the deleted package:
-
-
 
  
 
@@ -203,17 +161,11 @@ To install the script-based tool, you can use either Wget or cURL.
 
 If using Wget, execute the following on the terminal:
 
-
-
 If using cURL, execute this:
-
-
 
 The above commands will install nvm version 0.35.0 on your system. Remember to check [the latest version](https://github.com/nvm-sh/nvm/releases) and refer to it accordingly on the command you want to run.
 
 To verify if it was installed successfully, run the following:
-
-
 
 If all went well, it would output nvm.
 
@@ -221,34 +173,19 @@ After installing nvm, you can use it to reinstall Node.js on your system.
 
 Simply, execute the following command:
 
-
-
 To reinstall a specific Node.js version, run:
-
-
 
 For example, to reinstall Node.js version 12.18.0, execute:
 
-
-
 Once reinstallation is complete, you can set that Node.js version for use as the system-wide default version:
-
-
 
 Furthermore, you can check the list of Node.js versions available for download by executing the following:
 
-
-
 To remove a Node.js version that you’ve set up using nvm, start by establishing if the version is currently active on your system:
-
 
 If it is not actively running, execute the following to uninstall it:
 
-
-
 On the other hand, if the version targeted for removal is the current active version, you’ll need to deactivate nvm first:
-
-
 
 Then, you can use the above uninstall command to remove it from your system. 
 
@@ -260,15 +197,9 @@ A simpler way to reinstall Node.js and npm on a Linux distribution, such as Ubun
 
 To do so, you can start by refreshing your local package index:
 
-
-
 Then, reinstall the distro-stable Node.js version from the repositories: 
 
-
-
 In most cases, this is all you need to get up and running with Node.js. Also, you may want to reinstall npm by running the following command:
-
-
 
 ## Conclusion
 
