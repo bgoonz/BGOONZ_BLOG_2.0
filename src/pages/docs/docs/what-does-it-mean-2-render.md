@@ -9,9 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-#
-
-# There Are 7 Key Components of Any Web Browser[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-2.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-2.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-3.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-3.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-4.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-4.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-5.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-5.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-6.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-6.png)&#xA;&#xA;
+# [![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-2.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-2.png)There[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-3.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-3.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-4.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-4.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-5.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-5.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-6.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-6.png)&#xA;&#xA;
 
 1.  **Layout Engine –**
 
@@ -21,7 +19,7 @@ template: docs
 
      – this takes HTML code and interprets it into what you see visually. For instance, a <b> tag would be interpreted by the rendering engine as a set of instructions to make the text inside of the element bold.
 
-3.  **User Interface **
+3.  \*\*User Interface \*\*
 
     – This is the visual presentation of controls in the browser, for instance the back and forward buttons, bookmarks, and all chrome that appears around the main browser window where web pages display.
 
