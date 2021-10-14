@@ -1,7 +1,7 @@
 ---
 title: flow-control-in-python
 subtitle: flow-control-in-python
-date: '2021-10-12'
+date: '2021-10-14'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
@@ -11,6 +11,7 @@ seo:
   extra: []
 template: post
 thumb_image: images/python1.jpg
+image: images/python1-00990432.jpg
 ---
 
 ## Read It
