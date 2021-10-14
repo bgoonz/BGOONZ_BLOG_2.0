@@ -1,7 +1,7 @@
 ---
 title: The HTTP Protocol
 weight: 0
-excerpt: lorem-ipsum
+excerpt: The HTTP Protocol
 seo:
     title: ''
     description: ''
