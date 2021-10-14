@@ -11,7 +11,7 @@ seo:
   extra: []
 template: post
 thumb_image: images/python1.jpg
-image: images/python1-00990432.jpg
+image: images/python2-15e88a3a.jpg
 ---
 
 ## Read It
