@@ -4,6 +4,8 @@ description: 'Find out how to extract the data sent as JSON through an HTTP requ
 ---
 # Get HTTP request body data using Node.js
 
+##
+Find out how to extract the data sent as JSON through an HTTP request body using Node.js
 
 Here is how you can extract the data that was sent as JSON in the request body.
 
