@@ -3,16 +3,14 @@ title: React Class Components Demo
 weight: 0
 excerpt: React Class Components Demo
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 ## React Class Components Demo
-
-
-
 
 ## React Demo <a id="b2b8"></a>
 
@@ -888,4 +886,3 @@ Using `props` and `state`, we can put together a small Todo application. This ex
 ### A Component Using External Plugins <a id="2276"></a>
 
 React allows you to interface with other libraries and frameworks. This example uses remarkable, an external Markdown library, to convert the `<textarea>`’s value in real time.
-

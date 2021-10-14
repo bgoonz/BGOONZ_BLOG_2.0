@@ -11,6 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     overflow: auto;
+    zoom:0.85;
 }
 #search {
     z-index: -1;
@@ -30,12 +31,12 @@ a {
 
 iframe {
 
-    border-radius: 12px;
+    border-radius: 20px;
     border: 2px solid gold;
-    height: 1250px !important;
-    width: 100%;
+    height: 1500px !important;
+    width: 100%!important;
     resize: both!important;
-    overflow: auto;
+    overflow: scroll;
 }
 
 h1,

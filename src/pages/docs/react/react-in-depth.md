@@ -54,8 +54,6 @@ template: docs
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-   
-
 # Random Things to Remember
 
 ![](https://miro.medium.com/max/60/0*LHVHf7SPZ1t0UVAj?q=20)

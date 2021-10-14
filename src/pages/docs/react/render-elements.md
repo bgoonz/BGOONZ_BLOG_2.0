@@ -3,12 +3,13 @@ title: Rendering Elements With React
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 # Rendering Elements&#xA;&#xA;
 
 Elements are the smallest building blocks of React apps.
@@ -31,10 +32,6 @@ Applications built with just React usually have a single root DOM node. If you a
 
 To render a React element into a root DOM node, pass both to [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render):
 
-
-
-
-
 [Try it on CodePen](https://reactjs.org/redirect-to-codepen/rendering-elements/render-an-element)
 
 It displays “Hello, world” on the page.
@@ -46,10 +43,6 @@ React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object).
 With our knowledge so far, the only way to update the UI is to create a new element, and pass it to [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render).
 
 Consider this ticking clock example:
-
-
-
-
 
 [Try it on CodePen](https://reactjs.org/redirect-to-codepen/rendering-elements/update-rendered-element)
 

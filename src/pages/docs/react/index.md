@@ -27,7 +27,6 @@ template: docs
 
 # React
 
-
 # Examples:
 
 <iframe src="https://codesandbox.io/embed/react-embeds-w6oec?fontsize=14&hidenavigation=1&theme=dark"
@@ -59,9 +58,6 @@ Here I will walk through a demo…. skip down below for more fundamental example
 ---
 
 <script src="https://gist.github.com/bgoonz/0e9d7ba47f02d41d8cecfd23beecd2b1.js"></script>
-
-
-
 
 ## ALL CODE:
 

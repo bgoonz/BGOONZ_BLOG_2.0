@@ -46,11 +46,7 @@ template: docs
 
 # React:
 
-
 ![React Lifecycles](https://i.imgur.com/3fhEosP.png)
-
-
-
 
 # **Hello World**
 

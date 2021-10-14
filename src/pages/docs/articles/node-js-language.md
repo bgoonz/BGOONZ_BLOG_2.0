@@ -227,9 +227,6 @@ Given that using semver (semantic versioning) all versions have 3 digits, the fi
 
 You can combine most of the versions in ranges, like this: 1.0.0 || >=1.1.0 <1.2.0, to either use 1.0.0 or one release from 1.1.0 up, but lower than 1.2.0.
 
-
-
-
 # Cheat Sheet:
 
 ```js
@@ -404,7 +401,7 @@ child.disconnect();                                           // Close the IPC c
 child_process.spawn(command, [args], [options]);              // Launches a new process with the given command, with command line arguments in args. If omitted, args defaults to an empty Array.
 child_process.exec(command, [options], callback);             // Runs a command in a shell and buffers the output.
 child_process.execFile(file, [args], [options], [callback]);  // Runs a command in a shell and buffers the output.
-child_process.fork(modulePath, [args], [options]);            // This is a special case of the spawn() functionality for spawning Node processes. In addition to having all the methods in a normal ChildProcess instance, the returned object has a communication channel built-in. 
+child_process.fork(modulePath, [args], [options]);            // This is a special case of the spawn() functionality for spawning Node processes. In addition to having all the methods in a normal ChildProcess instance, the returned object has a communication channel built-in.
 
 
 /* *******************************************************************************************
@@ -542,7 +539,7 @@ fs.fchmodSync(fd, mode);                // Synchronous fchmod.
 fs.lchmod(path, mode, callback);        // Asynchronous lchmod. No arguments other than a possible exception are given to the completion callback.
 fs.lchmodSync(path, mode);              // Synchronous lchmod.
 
-fs.stat(path, callback);                // Asynchronous stat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. 
+fs.stat(path, callback);                // Asynchronous stat. The callback gets two arguments (err, stats) where stats is a fs.Stats object.
 fs.statSync(path);                      // Synchronous stat. Returns an instance of fs.Stats.
 fs.lstat(path, callback);               // Asynchronous lstat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. lstat() is identical to stat(), except that if path is a symbolic link, then the link itself is stat-ed, not the file that it refers to.
 fs.lstatSync(path);                     // Synchronous lstat. Returns an instance of fs.Stats.
@@ -645,7 +642,7 @@ server = http.createServer([requestListener]);                 // Returns a new 
 server.listen(port, [hostname], [backlog], [callback]);        // Begin accepting connections on the specified port and hostname.
 server.listen(path, [callback]);                               // Start a UNIX socket server listening for connections on the given path.
 server.listen(handle, [callback]);                             // The handle object can be set to either a server or socket (anything with an underlying _handle member), or a {fd: <n>} object.
-server.close([callback]);                                      // Stops the server from accepting new connections. 
+server.close([callback]);                                      // Stops the server from accepting new connections.
 server.setTimeout(msecs, callback);                            // Sets the timeout value for sockets, and emits a 'timeout' event on the Server object, passing the socket as an argument, if a timeout occurs.
 
 server.maxHeadersCount;  // Limits maximum incoming headers count, equal to 1000 by default. If set to 0 - no limit will be applied.
@@ -687,7 +684,7 @@ response.headersSent;                                          // Boolean (read-
 response.sendDate;                                             // When true, the Date header will be automatically generated and sent in the response if it is not already present in the headers. Defaults to true.
 
 response.on('close', function () { });  // Indicates that the underlying connection was terminated before response.end() was called or able to flush.
-response.on('finish', function() { });  // Emitted when the response has been sent. 
+response.on('finish', function() { });  // Emitted when the response has been sent.
 
 message.httpVersion;                    // In case of server request, the HTTP version sent by the client. In the case of client response, the HTTP version of the connected-to server.
 message.headers;                        // The request/response headers object.
@@ -793,7 +790,7 @@ buf.write(string, [offset], [length], [encoding]);                  // Writes st
 buf.toString([encoding], [start], [end]);                           // Decodes and returns a string from buffer data encoded with encoding (defaults to 'utf8') beginning at start (defaults to 0) and ending at end (defaults to buffer.length).
 buf.toJSON();                                                       // Returns a JSON-representation of the Buffer instance, which is identical to the output for JSON Arrays
 buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd]);  // Does copy between buffers. The source and target regions can be overlapped
-buf.slice([start], [end]);                                          // Returns a new buffer which references the same memory as the old, but offset and cropped by the start (defaults to 0) and end (defaults to buffer.length) indexes. Negative indexes start from the end of the buffer.   
+buf.slice([start], [end]);                                          // Returns a new buffer which references the same memory as the old, but offset and cropped by the start (defaults to 0) and end (defaults to buffer.length) indexes. Negative indexes start from the end of the buffer.
 buf.fill(value, [offset], [end]);                                   // Fills the buffer with the specified value
 buf[index];                                                         // Get and set the octet at index
 buf.length;                                                         // The size of the buffer in bytes, Note that this is not necessarily the size of the contents
