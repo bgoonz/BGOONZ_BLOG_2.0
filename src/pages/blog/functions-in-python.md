@@ -3,12 +3,12 @@ title: Functions in Python
 subtitle: Functions in Python
 date: '2021-10-12'
 thumb_image_alt: lorem-ipsum
-excerpt: lorem-ipsum
+excerpt: wubalubadubdub
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
+  title: ''
+  description: ''
+  robots: []
+  extra: []
 template: post
 ---
 
