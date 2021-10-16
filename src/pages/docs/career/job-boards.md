@@ -335,22 +335,6 @@ A curated list of awesome job boards.
 * [Eluta](https://www.eluta.ca/)
 * [CareerBeacon](https://www.careerbeacon.com/)
 
-### Europe
-* [findwrk](https://findwrk.app/)
-
-#### United Kingdom
-
-* [Jobsite](https://www.jobsite.co.uk/)
-* [Job Serve](https://www.jobserve.com/gb/en/Job-Search/)
-* [Wired Sussex](https://www.wiredsussex.com/jobs/all/)
-* [CWJobs](https://www.cwjobs.co.uk/)
-* [reed](https://www.reed.co.uk/)
-* [CV-Library](https://www.cv-library.co.uk/)
-* [IT Jobs Watch](https://www.itjobswatch.co.uk/)
-* [Gumtree](https://www.gumtree.com/jobs)
-* [Analytics Jobs](https://www.analyticsjobs.co.uk/)
-* [WikiJob](https://www.wikijob.co.uk/uk/jobs/)
-* [DevITjobs UK](https://devitjobs.uk/)
 
 
 ### United States
