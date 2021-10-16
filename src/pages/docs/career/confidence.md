@@ -1,5 +1,4 @@
 ---
-title: Confidenc
 weight: 0
 excerpt: lorem-ipsum
 seo:
