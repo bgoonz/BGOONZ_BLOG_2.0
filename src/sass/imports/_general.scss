@@ -249,3 +249,6 @@ thead tr {
 tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
