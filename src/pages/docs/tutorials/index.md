@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Tutorials
 weight: 0
 excerpt: lorem-ipsum
 seo:
