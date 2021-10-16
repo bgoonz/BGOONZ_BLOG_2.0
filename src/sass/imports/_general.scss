@@ -252,3 +252,7 @@ tbody tr:nth-of-type(even) {
 tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
 }
+tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
