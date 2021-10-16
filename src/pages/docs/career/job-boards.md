@@ -352,19 +352,6 @@ A curated list of awesome job boards.
 * [WikiJob](https://www.wikijob.co.uk/uk/jobs/)
 * [DevITjobs UK](https://devitjobs.uk/)
 
-#### Germany
-
-* [Jobsuche](https://www.jobsintown.de/jobsuche/)
-* [StepStone](https://www.stepstone.de/en)
-* [jobvector](https://www.jobvector.de/en/)
-* [Jobware](https://www.jobware.de/)
-* [Stellenanzeigen](https://www.stellenanzeigen.de/)
-* [JobScout24](https://www.jobs.de/)
-* [StellenOnline](https://www.stellenonline.de/)
-* [Berlin Startup Jobs](https://berlinstartupjobs.com/)
-* [Jobs in Berlin](https://www.jobsinberlin.eu/)
-* [GermanTech Jobs](https://germantechjobs.de/)
-
 
 ### United States
 
