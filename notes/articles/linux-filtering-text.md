@@ -37,7 +37,7 @@ These filters output lines matching a given pattern. They read lines from a file
 
 $ egrep = grep -E
 $ fgrep = grep -F
-$ rgrep = grep -r  
+$ rgrep = grep -r
 
 Below are some basic grep commands:
 
@@ -54,23 +54,23 @@ You can read more about [What’s Difference Between Grep, Egrep and Fgrep in Li
 **head** is used to display the first parts of a file, it outputs the first **10** lines by default. You can use the `-n` num flag to specify the number of lines to be displayed:
 
 **tecmint@TecMint ~ $** **head /var/log/auth.log**  
-Jan  2 10:45:01 TecMint CRON\[3383\]: pam\_unix(cron:session): session opened for user root by (uid=0)
-Jan  2 10:45:01 TecMint CRON\[3383\]: pam\_unix(cron:session): session closed for user root
-Jan  2 10:51:34 TecMint sudo:  tecmint : TTY=unknown ; PWD=/home/tecmint ; USER=root ; COMMAND=/usr/lib/linuxmint/mintUpdate/checkAPT.py
-Jan  2 10:51:34 TecMint sudo: pam\_unix(sudo:session): session opened for user root by (uid=0)
-Jan  2 10:51:39 TecMint sudo: pam\_unix(sudo:session): session closed for user root
-Jan  2 10:55:01 TecMint CRON\[4099\]: pam\_unix(cron:session): session opened for user root by (uid=0)
-Jan  2 10:55:01 TecMint CRON\[4099\]: pam\_unix(cron:session): session closed for user root
-Jan  2 11:05:01 TecMint CRON\[4138\]: pam\_unix(cron:session): session opened for user root by (uid=0)
-Jan  2 11:05:01 TecMint CRON\[4138\]: pam\_unix(cron:session): session closed for user root
-Jan  2 11:09:01 TecMint CRON\[4146\]: pam\_unix(cron:session): session opened for user root by (uid=0)
+Jan 2 10:45:01 TecMint CRON\[3383\]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan 2 10:45:01 TecMint CRON\[3383\]: pam_unix(cron:session): session closed for user root
+Jan 2 10:51:34 TecMint sudo: tecmint : TTY=unknown ; PWD=/home/tecmint ; USER=root ; COMMAND=/usr/lib/linuxmint/mintUpdate/checkAPT.py
+Jan 2 10:51:34 TecMint sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 2 10:51:39 TecMint sudo: pam_unix(sudo:session): session closed for user root
+Jan 2 10:55:01 TecMint CRON\[4099\]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan 2 10:55:01 TecMint CRON\[4099\]: pam_unix(cron:session): session closed for user root
+Jan 2 11:05:01 TecMint CRON\[4138\]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan 2 11:05:01 TecMint CRON\[4138\]: pam_unix(cron:session): session closed for user root
+Jan 2 11:09:01 TecMint CRON\[4146\]: pam_unix(cron:session): session opened for user root by (uid=0)
 
-**tecmint@TecMint ~ $** **head  -n 5 /var/log/auth.log**  
-Jan  2 10:45:01 TecMint CRON\[3383\]: pam\_unix(cron:session): session opened for user root by (uid=0)
-Jan  2 10:45:01 TecMint CRON\[3383\]: pam\_unix(cron:session): session closed for user root
-Jan  2 10:51:34 TecMint sudo:  tecmint : TTY=unknown ; PWD=/home/tecmint ; USER=root ; COMMAND=/usr/lib/linuxmint/mintUpdate/checkAPT.py
-Jan  2 10:51:34 TecMint sudo: pam\_unix(sudo:session): session opened for user root by (uid=0)
-Jan  2 10:51:39 TecMint sudo: pam\_unix(sudo:session): session closed for user root
+**tecmint@TecMint ~ $** **head -n 5 /var/log/auth.log**  
+Jan 2 10:45:01 TecMint CRON\[3383\]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan 2 10:45:01 TecMint CRON\[3383\]: pam_unix(cron:session): session closed for user root
+Jan 2 10:51:34 TecMint sudo: tecmint : TTY=unknown ; PWD=/home/tecmint ; USER=root ; COMMAND=/usr/lib/linuxmint/mintUpdate/checkAPT.py
+Jan 2 10:51:34 TecMint sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 2 10:51:39 TecMint sudo: pam_unix(sudo:session): session closed for user root
 
 Learn how to use [head command with tail and cat commands](https://www.tecmint.com/view-contents-of-file-in-linux/) for effective usage in Linux.
 
@@ -81,27 +81,27 @@ Learn how to use [head command with tail and cat commands](https://www.tecmint.c
 The command below will output the last **5** lines of the specified file:
 
 **tecmint@TecMint ~ $** **tail -n 5 /var/log/auth.log**
-Jan  6 13:01:27 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Server listening on :: port 22.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Received SIGHUP; restarting.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Server listening on :: port 22.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Server listening on :: port 22.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Received SIGHUP; restarting.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Server listening on :: port 22.
 
 Additionally, **tail** has a special option `-f` for [watching changes in a file in real-time](https://www.tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/) (especially log files).
 
 The following command will enable you monitor changes in the specified file:
 
 **tecmint@TecMint ~ $** **tail -f /var/log/auth.log**
-Jan  6 12:58:01 TecMint sshd\[1269\]: Server listening on :: port 22.
-Jan  6 12:58:11 TecMint sshd\[1269\]: Received SIGHUP; restarting.
-Jan  6 12:58:12 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
-Jan  6 12:58:12 TecMint sshd\[1269\]: Server listening on :: port 22.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Received SIGHUP; restarting.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Server listening on :: port 22.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Received SIGHUP; restarting.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
-Jan  6 13:01:27 TecMint sshd\[1269\]: Server listening on :: port 22.
+Jan 6 12:58:01 TecMint sshd\[1269\]: Server listening on :: port 22.
+Jan 6 12:58:11 TecMint sshd\[1269\]: Received SIGHUP; restarting.
+Jan 6 12:58:12 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
+Jan 6 12:58:12 TecMint sshd\[1269\]: Server listening on :: port 22.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Received SIGHUP; restarting.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Server listening on :: port 22.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Received SIGHUP; restarting.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Server listening on 0.0.0.0 port 22.
+Jan 6 13:01:27 TecMint sshd\[1269\]: Server listening on :: port 22.
 
 Read through the **tail** man page for a complete list of usage options and instructions:
 
@@ -159,11 +159,11 @@ linuxsay.com
 linuxsay.com
 windowsmint.com
 
-**tecmint@TecMint ~ $** **sort domains.list | uniq -c** 
+**tecmint@TecMint ~ $** **sort domains.list | uniq -c**
 2 linuxsay.com
 2 news.tecmint.com
 2 tecmint.com
-1 windowsmint.com 
+1 windowsmint.com
 
 Read through the **uniq** man page for further usage info and flags:
 
@@ -179,13 +179,13 @@ The following is the content extracted from the file **domain-list.txt**:
 
 To reformat the above content to a standard list, run the following command with `-w` switch is used to define the maximum line width:
 
-**tecmint@TecMint ~ $** **cat domain-list.txt** 
+**tecmint@TecMint ~ $** **cat domain-list.txt**
 1.tecmint.com 2.news.tecmint.com 3.linuxsay.com 4.windowsmint.com
 
 **tecmint@TecMint ~ $** **fmt -w 1 domain-list.txt**
-1.tecmint.com 
-2.news.tecmint.com 
-3.linuxsay.com 
+1.tecmint.com
+2.news.tecmint.com
+3.linuxsay.com
 4.windowsmint.com
 
 ### 9\. pr Command
@@ -196,36 +196,33 @@ $ dpkg -l
 
 To organize the list in pages and columns ready for printing, issue the following command.
 
-**tecmint@TecMint ~ $** **dpkg -l | pr --columns 3 -l 20**  
+**tecmint@TecMint ~ $** **dpkg -l | pr --columns 3 -l 20**
 
-2017-01-06 13:19                                                  Page 1
+2017-01-06 13:19 Page 1
 
+Desired=Unknown/Install ii adduser ii apg
+| Status=Not/Inst/Conf- ii adwaita-icon-theme ii app-install-data
+|/ Err?=(none)/Reinst-r ii adwaita-icon-theme- ii apparmor
+||/ Name ii alsa-base ii apt
++++-=================== ii alsa-utils ii apt-clone
+ii accountsservice ii anacron ii apt-transport-https
+ii acl ii apache2 ii apt-utils
+ii acpi-support ii apache2-bin ii apt-xapian-index
+ii acpid ii apache2-data ii aptdaemon
+ii add-apt-key ii apache2-utils ii aptdaemon-data
 
-Desired=Unknown/Install ii  adduser		ii  apg
-| Status=Not/Inst/Conf- ii  adwaita-icon-theme	ii  app-install-data
-|/ Err?=(none)/Reinst-r ii  adwaita-icon-theme- ii  apparmor
-||/ Name		ii  alsa-base		ii  apt
-+++-=================== ii  alsa-utils		ii  apt-clone
-ii  accountsservice	ii  anacron		ii  apt-transport-https
-ii  acl			ii  apache2		ii  apt-utils
-ii  acpi-support	ii  apache2-bin		ii  apt-xapian-index
-ii  acpid		ii  apache2-data	ii  aptdaemon
-ii  add-apt-key		ii  apache2-utils	ii  aptdaemon-data
+2017-01-06 13:19 Page 2
 
-
-2017-01-06 13:19                                                  Page 2
-
-
-ii  aptitude		ii  avahi-daemon	ii  bind9-host
-ii  aptitude-common	ii  avahi-utils		ii  binfmt-support
-ii  apturl		ii  aview		ii  binutils
-ii  apturl-common	ii  banshee		ii  bison
-ii  archdetect-deb	ii  baobab		ii  blt
-ii  aspell		ii  base-files		ii  blueberry
-ii  aspell-en		ii  base-passwd		ii  bluetooth
-ii  at-spi2-core	ii  bash		ii  bluez
-ii  attr		ii  bash-completion	ii  bluez-cups
-ii  avahi-autoipd	ii  bc			ii  bluez-obexd
+ii aptitude ii avahi-daemon ii bind9-host
+ii aptitude-common ii avahi-utils ii binfmt-support
+ii apturl ii aview ii binutils
+ii apturl-common ii banshee ii bison
+ii archdetect-deb ii baobab ii blt
+ii aspell ii base-files ii blueberry
+ii aspell-en ii base-passwd ii bluetooth
+ii at-spi2-core ii bash ii bluez
+ii attr ii bash-completion ii bluez-cups
+ii avahi-autoipd ii bc ii bluez-obexd
 
 .....
 
@@ -259,29 +256,29 @@ NEWS.TECMINT.COM
 You can use it to view large files like so:
 
 **tecmint@TecMint ~ $** **dmesg | more**
-\[    0.000000\] Initializing cgroup subsys cpuset
-\[    0.000000\] Initializing cgroup subsys cpu
-\[    0.000000\] Initializing cgroup subsys cpuacct
-\[    0.000000\] Linux version 4.4.0-21-generic (buildd@lgw01-21) (gcc version 5.3.1 20160413 (Ubuntu 5.3.1-14ubuntu2) ) #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016 (Ubuntu 4.4.0-21.37-generic
- 4.4.6)
-\[    0.000000\] Command line: BOOT\_IMAGE=/boot/vmlinuz-4.4.0-21-generic root=UUID=bb29dda3-bdaa-4b39-86cf-4a6dc9634a1b ro quiet splash vt.handoff=7
-\[    0.000000\] KERNEL supported cpus:
-\[    0.000000\]   Intel GenuineIntel
-\[    0.000000\]   AMD AuthenticAMD
-\[    0.000000\]   Centaur CentaurHauls
-\[    0.000000\] x86/fpu: xstate\_offset\[2\]:  576, xstate\_sizes\[2\]:  256
-\[    0.000000\] x86/fpu: Supporting XSAVE feature 0x01: 'x87 floating point registers'
-\[    0.000000\] x86/fpu: Supporting XSAVE feature 0x02: 'SSE registers'
-\[    0.000000\] x86/fpu: Supporting XSAVE feature 0x04: 'AVX registers'
-\[    0.000000\] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
-\[    0.000000\] x86/fpu: Using 'eager' FPU context switches.
-\[    0.000000\] e820: BIOS-provided physical RAM map:
-\[    0.000000\] BIOS-e820: \[mem 0x0000000000000000-0x000000000009d3ff\] usable
-\[    0.000000\] BIOS-e820: \[mem 0x000000000009d400-0x000000000009ffff\] reserved
-\[    0.000000\] BIOS-e820: \[mem 0x00000000000e0000-0x00000000000fffff\] reserved
-\[    0.000000\] BIOS-e820: \[mem 0x0000000000100000-0x00000000a56affff\] usable
-\[    0.000000\] BIOS-e820: \[mem 0x00000000a56b0000-0x00000000a5eaffff\] reserved
-\[    0.000000\] BIOS-e820: \[mem 0x00000000a5eb0000-0x00000000aaabefff\] usable
+\[ 0.000000\] Initializing cgroup subsys cpuset
+\[ 0.000000\] Initializing cgroup subsys cpu
+\[ 0.000000\] Initializing cgroup subsys cpuacct
+\[ 0.000000\] Linux version 4.4.0-21-generic (buildd@lgw01-21) (gcc version 5.3.1 20160413 (Ubuntu 5.3.1-14ubuntu2) ) #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016 (Ubuntu 4.4.0-21.37-generic
+4.4.6)
+\[ 0.000000\] Command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0-21-generic root=UUID=bb29dda3-bdaa-4b39-86cf-4a6dc9634a1b ro quiet splash vt.handoff=7
+\[ 0.000000\] KERNEL supported cpus:
+\[ 0.000000\] Intel GenuineIntel
+\[ 0.000000\] AMD AuthenticAMD
+\[ 0.000000\] Centaur CentaurHauls
+\[ 0.000000\] x86/fpu: xstate_offset\[2\]: 576, xstate_sizes\[2\]: 256
+\[ 0.000000\] x86/fpu: Supporting XSAVE feature 0x01: 'x87 floating point registers'
+\[ 0.000000\] x86/fpu: Supporting XSAVE feature 0x02: 'SSE registers'
+\[ 0.000000\] x86/fpu: Supporting XSAVE feature 0x04: 'AVX registers'
+\[ 0.000000\] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+\[ 0.000000\] x86/fpu: Using 'eager' FPU context switches.
+\[ 0.000000\] e820: BIOS-provided physical RAM map:
+\[ 0.000000\] BIOS-e820: \[mem 0x0000000000000000-0x000000000009d3ff\] usable
+\[ 0.000000\] BIOS-e820: \[mem 0x000000000009d400-0x000000000009ffff\] reserved
+\[ 0.000000\] BIOS-e820: \[mem 0x00000000000e0000-0x00000000000fffff\] reserved
+\[ 0.000000\] BIOS-e820: \[mem 0x0000000000100000-0x00000000a56affff\] usable
+\[ 0.000000\] BIOS-e820: \[mem 0x00000000a56b0000-0x00000000a5eaffff\] reserved
+\[ 0.000000\] BIOS-e820: \[mem 0x00000000a5eb0000-0x00000000aaabefff\] usable
 **\--More--**
 
 ### 12\. less Command
@@ -291,37 +288,36 @@ You can use it to view large files like so:
 Use it in the same way as more:
 
 **tecmint@TecMint ~ $** **dmesg | less**
-\[    0.000000\] Initializing cgroup subsys cpuset
-\[    0.000000\] Initializing cgroup subsys cpu
-\[    0.000000\] Initializing cgroup subsys cpuacct
-\[    0.000000\] Linux version 4.4.0-21-generic (buildd@lgw01-21) (gcc version 5.3.1 20160413 (Ubuntu 5.3.1-14ubuntu2) ) #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016 (Ubuntu 4.4.0-21.37-generic
- 4.4.6)
-\[    0.000000\] Command line: BOOT\_IMAGE=/boot/vmlinuz-4.4.0-21-generic root=UUID=bb29dda3-bdaa-4b39-86cf-4a6dc9634a1b ro quiet splash vt.handoff=7
-\[    0.000000\] KERNEL supported cpus:
-\[    0.000000\]   Intel GenuineIntel
-\[    0.000000\]   AMD AuthenticAMD
-\[    0.000000\]   Centaur CentaurHauls
-\[    0.000000\] x86/fpu: xstate\_offset\[2\]:  576, xstate\_sizes\[2\]:  256
-\[    0.000000\] x86/fpu: Supporting XSAVE feature 0x01: 'x87 floating point registers'
-\[    0.000000\] x86/fpu: Supporting XSAVE feature 0x02: 'SSE registers'
-\[    0.000000\] x86/fpu: Supporting XSAVE feature 0x04: 'AVX registers'
-\[    0.000000\] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
-\[    0.000000\] x86/fpu: Using 'eager' FPU context switches.
-\[    0.000000\] e820: BIOS-provided physical RAM map:
-\[    0.000000\] BIOS-e820: \[mem 0x0000000000000000-0x000000000009d3ff\] usable
-\[    0.000000\] BIOS-e820: \[mem 0x000000000009d400-0x000000000009ffff\] reserved
-\[    0.000000\] BIOS-e820: \[mem 0x00000000000e0000-0x00000000000fffff\] reserved
-\[    0.000000\] BIOS-e820: \[mem 0x0000000000100000-0x00000000a56affff\] usable
-\[    0.000000\] BIOS-e820: \[mem 0x00000000a56b0000-0x00000000a5eaffff\] reserved
-\[    0.000000\] BIOS-e820: \[mem 0x00000000a5eb0000-0x00000000aaabefff\] usable
+\[ 0.000000\] Initializing cgroup subsys cpuset
+\[ 0.000000\] Initializing cgroup subsys cpu
+\[ 0.000000\] Initializing cgroup subsys cpuacct
+\[ 0.000000\] Linux version 4.4.0-21-generic (buildd@lgw01-21) (gcc version 5.3.1 20160413 (Ubuntu 5.3.1-14ubuntu2) ) #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016 (Ubuntu 4.4.0-21.37-generic
+4.4.6)
+\[ 0.000000\] Command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0-21-generic root=UUID=bb29dda3-bdaa-4b39-86cf-4a6dc9634a1b ro quiet splash vt.handoff=7
+\[ 0.000000\] KERNEL supported cpus:
+\[ 0.000000\] Intel GenuineIntel
+\[ 0.000000\] AMD AuthenticAMD
+\[ 0.000000\] Centaur CentaurHauls
+\[ 0.000000\] x86/fpu: xstate_offset\[2\]: 576, xstate_sizes\[2\]: 256
+\[ 0.000000\] x86/fpu: Supporting XSAVE feature 0x01: 'x87 floating point registers'
+\[ 0.000000\] x86/fpu: Supporting XSAVE feature 0x02: 'SSE registers'
+\[ 0.000000\] x86/fpu: Supporting XSAVE feature 0x04: 'AVX registers'
+\[ 0.000000\] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+\[ 0.000000\] x86/fpu: Using 'eager' FPU context switches.
+\[ 0.000000\] e820: BIOS-provided physical RAM map:
+\[ 0.000000\] BIOS-e820: \[mem 0x0000000000000000-0x000000000009d3ff\] usable
+\[ 0.000000\] BIOS-e820: \[mem 0x000000000009d400-0x000000000009ffff\] reserved
+\[ 0.000000\] BIOS-e820: \[mem 0x00000000000e0000-0x00000000000fffff\] reserved
+\[ 0.000000\] BIOS-e820: \[mem 0x0000000000100000-0x00000000a56affff\] usable
+\[ 0.000000\] BIOS-e820: \[mem 0x00000000a56b0000-0x00000000a5eaffff\] reserved
+\[ 0.000000\] BIOS-e820: \[mem 0x00000000a5eb0000-0x00000000aaabefff\] usable
 :
 
 Learn Why [‘less’ is Faster Than ‘more’ Command](https://www.tecmint.com/linux-more-command-and-less-command-examples/) for effective file navigation in Linux.
 
 That’s all for now, do let us know of any [useful command line tools](https://www.tecmint.com/tag/linux-tricks/) not mentioned here, that act as a text filters in Linux via the comment section below.
 
-If You Appreciate What We Do Here On TecMint, You Should Consider:
-------------------------------------------------------------------
+## If You Appreciate What We Do Here On TecMint, You Should Consider:
 
 TecMint is the fastest growing and most trusted community site for any kind of Linux Articles, Guides and Books on the web. Millions of people visit TecMint! to search or browse the thousands of published articles available FREELY to all.
 
@@ -330,6 +326,5 @@ If you like what you are reading, please consider buying us a coffee ( or 2 ) as
 [![Support Us](https://www.tecmint.com/wp-content/uploads/2015/01/coffee.png)](https://www.buymeacoffee.com/tecmint)
 
 **We are thankful for your never ending support.**
-
 
 [Source](https://www.tecmint.com/linux-file-operations-commands/)
