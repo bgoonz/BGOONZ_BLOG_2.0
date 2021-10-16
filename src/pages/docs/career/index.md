@@ -1,5 +1,5 @@
 ---
-title: Career Resources
+title: Career
 weight: 0
 excerpt: lorem-ipsum
 seo:
