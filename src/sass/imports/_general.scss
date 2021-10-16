@@ -1,6 +1,6 @@
 html {
     font-family: $font-primary;
-    font-size: 100%;
+    font-size: 110%;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     overflow: auto;
-font-size: larger;
+    zoom:0.85;
 }
 #search {
     z-index: -1;
@@ -19,7 +19,8 @@ font-size: larger;
 a {
     color: $color-primary;
     text-decoration: underline;
-  
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.125em;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
 
@@ -29,11 +30,12 @@ a {
 }
 
 iframe {
-
-    border-radius: 20px;
-    border: 4px solid gold;
-    height: 1500px !important;
-    width: 98%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    border-radius: 12px;
+    border: 2px solid gold;
+    height: 1000px !important;
+    width: 900px!important;
     resize: both!important;
     overflow: scroll;
 }
@@ -56,15 +58,15 @@ h6 {
 }
 
 h1 {
-    font-size: 2.9em;
-}
-
-h2 {
     font-size: 2em;
 }
 
-h3 {
+h2 {
     font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 h4 {
