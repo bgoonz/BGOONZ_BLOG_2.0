@@ -263,18 +263,18 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .post {
-        &.type-docs {
-            .post-title,
-            .post-content {
-                padding-left: 8%;
-                padding-right: 7%;
-            }
-        }
-    }
-}
 
+@media only screen and (min-width: 641px) {
+  .post {
+    &.type-docs {
+      .post-title,
+      .post-content {
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+    }
+  }
+}
 
 
 
