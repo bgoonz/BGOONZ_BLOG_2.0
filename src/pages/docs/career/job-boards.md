@@ -385,24 +385,7 @@ A curated list of awesome job boards.
 * [Bulldogjob](https://bulldogjob.com/)
 * [Just Join IT](https://justjoin.it/)
 
-#### Switzerland
 
-* [SwissDev Jobs](https://swissdevjobs.ch/)
-* [WeJob.ch](https://WeJob.ch/)
-* [Jobwinner](https://jobwinner.ch/en/)
-* [JobScout24](https://www.jobscout24.ch/en)
-
-#### Europe - Other
-
-* [Landing.jobs](https://landing.jobs/)
-* [Work in Estonia](https://www.workinestonia.com/latest-offers/)
-* [CV Keskus](https://www.cvkeskus.ee/)
-* [Zalando Jobs](https://jobs.zalando.com/en/jobs/)
-* [Euro Engineer Jobs](https://www.euroengineerjobs.com/)
-* [No Fluff Jobs](https://nofluffjobs.com/) (Poland & Hungary)
-* [Duunitori](https://duunitori.fi/tyopaikat) (Finland)
-* [NIJOBS](https://www.nijobs.com/) (Ireland)
-* [Hyper Island](https://www.hyperisland.com/jobs)
 
 
 
