@@ -419,9 +419,6 @@ A curated list of awesome job boards.
 * [Nexxt](https://www.nexxt.com/)
 * [National Labor Exchange](https://usnlx.com/)
 
-### Asia
-
-* [Tech Jobs Asia](https://www.techjobsasia.com/)
 
 ### Free & Open Source
 
