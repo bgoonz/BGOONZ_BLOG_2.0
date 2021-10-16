@@ -9,7 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-## Dos & Don'
+## Do & Don'
 
 #### Legend
 
