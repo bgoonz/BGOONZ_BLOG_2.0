@@ -404,12 +404,7 @@ A curated list of awesome job boards.
 * [NIJOBS](https://www.nijobs.com/) (Ireland)
 * [Hyper Island](https://www.hyperisland.com/jobs)
 
-### Turkey
 
-* [Kodilan](https://kodilan.com/)
-* [Randstad Türkiye](https://www.randstad.com.tr/jobs/)
-* [Startup Jobs İstanbul](https://startupjobs.istanbul/)
-* [Toptalent](https://toptalent.co/is-ilanlari/)
 
 ### United States
 
