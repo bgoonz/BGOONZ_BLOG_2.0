@@ -1,13 +1,13 @@
 ---
-title: Interactive Examples
+title: Interactive
 weight: 1
 excerpt: feel free to try the examples
 seo:
-    title: 'Interactive Examples'
-    description: 'here is content the user can interact with'
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: Interactive Examples
+  description: here is content the user can interact with
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
