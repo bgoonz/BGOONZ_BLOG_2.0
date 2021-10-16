@@ -316,24 +316,7 @@ A curated list of awesome job boards.
 * [Unicorn Hunt](https://unicornhunt.io/)
 * [StartupHire](https://www.startuphire.com/) 
 
-### Australia
 
-* [austechjobs](https://austechjobs.com.au/)
-* [SEEK](https://www.seek.com.au/)
-* [CareerOne](https://www.careerone.com.au/)
-* [Jobaroo](https://www.jobaroo.com/)
-* [Breakout Careers](https://breakout.careers/jobs)
-* [Headhunted](https://www.headhunted.com.au/jobs/)
-
-### Canada
-
-* [Work in Tech](https://www.workintech.ca/)
-* [Toronto Startup Jobs](https://to9to5.com/)
-* [Jobboom](https://www.jobboom.com/en/job/)
-* [Jobillico](https://www.jobillico.com/search-jobs)
-* [Jobbank](https://www.jobbank.gc.ca/jobsearch/)
-* [Eluta](https://www.eluta.ca/)
-* [CareerBeacon](https://www.careerbeacon.com/)
 
 
 
