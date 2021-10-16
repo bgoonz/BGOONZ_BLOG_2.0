@@ -13,7 +13,7 @@ template: docs
 
 
 
-![](images/map.jpg)
+
 
 * [SITEMAP🗺🟈]\(https://bgoonz-blog.netlify.app/docs/sitemap/)
 
