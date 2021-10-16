@@ -1,7 +1,7 @@
 ---
 title: Do & Don't of Interviewing!
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Do & Don't of Interviewing!
 seo:
   title: ''
   description: ''
