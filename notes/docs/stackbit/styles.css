@@ -525,7 +525,7 @@ h6 {
 .homeh1 {
     font-size: 5rem;
     font-size: var(--h1);
-    line-height: 110%;
+    line-height: 100%;
 }
 @media (max-width: 375px) {
     .homeh1 {
