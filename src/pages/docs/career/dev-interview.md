@@ -1,7 +1,7 @@
 ---
 title: Developer Interview Questions
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Developer Interview Questions
 seo:
   title: ''
   description: ''
