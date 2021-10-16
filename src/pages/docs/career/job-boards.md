@@ -365,13 +365,6 @@ A curated list of awesome job boards.
 * [Jobs in Berlin](https://www.jobsinberlin.eu/)
 * [GermanTech Jobs](https://germantechjobs.de/)
 
-#### Netherlands
-
-* [Jobs in Amsterdam](http://www.jobinamsterdam.com/)
-* [HOITALENT](https://hoitalent.com/position/)
-* [Together Abroad](https://www.togetherabroad.nl/jobs.html)
-
-
 
 ### United States
 
