@@ -371,22 +371,6 @@ A curated list of awesome job boards.
 * [HOITALENT](https://hoitalent.com/position/)
 * [Together Abroad](https://www.togetherabroad.nl/jobs.html)
 
-#### Denmark
-
-* [Jobindex](https://www.jobindex.dk/)
-* [It Job Bank](https://www.it-jobbank.dk/)
-* [Jobs in Copenhagen](https://www.jobsincopenhagen.com/)
-* [Open Jobs in Denmark](https://www.state-of-denmark.com/jobs)
-
-#### Poland
-
-* [Careers in Poland](https://www.careersinpoland.com/)
-* [Crossweb](https://crossweb.pl/en/job/oferty-pracy/)
-* [Bulldogjob](https://bulldogjob.com/)
-* [Just Join IT](https://justjoin.it/)
-
-
-
 
 
 ### United States
