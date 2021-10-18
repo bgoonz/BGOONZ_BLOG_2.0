@@ -1,7 +1,7 @@
 ---
 title: Web Dev Bookmarks
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Web Dev Bookmarks
 seo:
   title: ''
   description: ''
