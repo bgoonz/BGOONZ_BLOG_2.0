@@ -1,7 +1,7 @@
 ---
 title: Markdown Dropdown:
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Markdown Dropdown:
 seo:
     title: ''
     description: ''
