@@ -13,19 +13,17 @@ body {
     overflow: auto;
    
 }
-#search {
-    z-index: -1;
-}
+
 a {
     color: $color-primary;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.125em;
     -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 
     &:hover {
-        color: $gray-600;
+        color: $gray-500;
     }
 }
 
