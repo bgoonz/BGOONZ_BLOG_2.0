@@ -136,19 +136,13 @@ The above command will delete the distro-stable version while retaining the conf
 
 Finally, you can delete any unused packages that were installed automatically with the deleted package:
 
-
-
 -   Using nvm—you can also use the nvm Node version manager to uninstall Node.js from your system. We’ll illustrate how to do this in the next section.
-
-
 
 Then, once your machine is clean, you can use any of the following methods to reinstall Node.js and npm on Linux:
 
 -   Reinstalling using a Node version manager
 
 -   Reinstalling using the apt package manager
-
-
 
 Let’s talk about each of them.
 
@@ -187,8 +181,6 @@ If it is not actively running, execute the following to uninstall it:
 On the other hand, if the version targeted for removal is the current active version, you’ll need to deactivate nvm first:
 
 Then, you can use the above uninstall command to remove it from your system.
-
-
 
 ### b) Reinstalling using the apt package manager
 
@@ -232,21 +224,13 @@ These are the updating options we’ll talk about:
 
 -   Updating using Homebrew on macOS
 
-
-
 ## Checking your version of Node.js
 
 Before getting started, you can check the version of Node.js currently deployed on your system by running the following command on the terminal:
 
-
-
 or (shortened method):
 
-
-
 Let’s now talk about the different ways on how to update Node.js.
-
-
 
 ## 1. Updating using a Node version manager on macOS or Linux
 
@@ -278,33 +262,21 @@ If everything went well, it’d output nvm.
 
 Next, you can simply download and update to the latest Node.js version by running the following:
 
-
-
 Note that node refers to an alias of the latest Node.js version.
 
 You can also reference LTS versions in aliases as well as .nvmrc files using the notation lts/\* for the most recent LTS releases.
 
 Here is an example:
 
-
-
 If you want to install and upgrade to a specific version, you can run the following:
-
-
 
 For example, if you want to update Node.js to version 12.18.3, you can run:
 
-
-
 After the upgrade, you can set that version to be the default version to use throughout your system:
-
-
 
 You can see the list of installed Node.js versions by running this command:
 
 Also, you can see the list of versions available for installation by running this command:
-
-
 
 b) n
 
@@ -314,13 +286,9 @@ Since it’s an [npm-based package](https://renovate.whitesourcesoftware.com/bl
 
 Then, to download and update to your desired Node.js version, execute the following:
 
-
-
 For example, if you want to update Node.js to version 12.18.3, you can run:
 
 To see a list of your downloaded Node.js versions, run n on its own:
-
-
 
 You can specify to update to the newest LTS version by running:
 
@@ -329,8 +297,6 @@ You can also specify to update to the latest current version by running:
 You can specify to update to the newest LTS version by running:
 
 ##
-
-
 
 ## 2. Updating using a Node version manager on Windows
 
@@ -354,8 +320,6 @@ If you want to install and upgrade to a specific version, you can run the follow
 
 You can specify to update to the newest LTS version by running:
 
-
-
 For example, if you want to update Node.js to version 12.18.3, you can run:
 
 After the upgrade, you can switch to that version:
@@ -368,8 +332,6 @@ Also, you can see the list of versions available for download by running this co
 
 ##
 
-
-
 ## 3. Updating using a Node installer on Linux
 
 Using a Node installer is the least recommended way of upgrading Node.js on Linux. Nonetheless, if it’s the only route you can use, then follow the following steps:
@@ -380,11 +342,7 @@ Using a Node installer is the least recommended way of upgrading Node.js on Linu
 
 ![](https://www.whitesourcesoftware.com/wp-content/media/2020/08/node-js-linux.png)
 
-
-
 -   Download the binary package using your browser. Or, you can download it using the following Wget command on the terminal:
-
-
 
 Remember to change the version number on the Wget command depending on the one you want.
 
@@ -392,13 +350,9 @@ Remember to change the version number on the Wget command depending on the one y
 
 This utility will be used for unpacking the binary package.
 
-
-
 -   Finally, run the following command to unpack and install the binary package on usr/local:
 
 ##
-
-
 
 ## 4. Updating using a Node installer on macOS and Windows
 
@@ -414,8 +368,6 @@ You can follow the following steps to update it using this method:
 
 -   Run the installation wizard. It will magically complete the installation process and upgrade your Node.js version by replacing it with the new, updated one.
 
-
-
 ## 5. Updating using Homebrew on macOS
 
 [Homebrew](https://brew.sh/) is a popular package management utility for macOS.
@@ -423,9 +375,5 @@ You can follow the following steps to update it using this method:
 To use it for installing Node.js, run the following command on your macOS terminal:
 
 Later, if you’d like to update it, run the following commands:
-
-
-
-
 
 Furthermore, you can switch between installed Node.js versions:
