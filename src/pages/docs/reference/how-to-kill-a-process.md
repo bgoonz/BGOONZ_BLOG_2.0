@@ -1,19 +1,18 @@
 ---
-title: Kill a Process in Linux 
+title: Kill a Process in Linux
 weight: 0
-excerpt: Kill a Process in Linux 
+excerpt: Kill a Process in Linux
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
-# How to Kill a Process in Linux 
 
+# How to Kill a Process in Linux
 
-
-***Learn how to kill errant processes in this tutorial.***
+**_Learn how to kill errant processes in this tutorial._**
 
 Picture this: You've launched an application (be it from your favorite desktop menu or from the command line) and you start using that launched app, only to have it lock up on you, stop performing, or unexpectedly die. You try to run the app again, but it turns out the original never truly shut down completely.
 
@@ -79,80 +78,80 @@ The most common kill signals are:
 
 Signal Name
 
- |
+|
 
 Single Value
 
- |
+|
 
 Effect
 
- |
+|
 |
 
 SIGHUP
 
- |
+|
 
 1
 
- |
+|
 
 Hangup
 
- |
+|
 |
 
 SIGINT
 
- |
+|
 
 2
 
- |
+|
 
 Interrupt from keyboard
 
- |
+|
 |
 
 SIGKILL
 
- |
+|
 
 9
 
- |
+|
 
 Kill signal
 
- |
+|
 |
 
 SIGTERM
 
- |
+|
 
 15
 
- |
+|
 
 Termination signal
 
- |
+|
 |
 
 SIGSTOP
 
- |
+|
 
 17, 19, 23
 
- |
+|
 
 Stop the process
 
- |
+|
 
 What's nice about this is that you can use the Signal Value in place of the Signal Name. So you don't have to memorize all of the names of the various signals.\
 So, let's now use the *kill *command to kill our instance of chrome. The structure for this command would be:
@@ -173,7 +172,7 @@ Once we've issued the above commands, all of the chrome processes will have been
 
 Let's take the easy route! If we already know the process we want to kill is named chrome, we can make use of the *killall *command and send the same signal the process like so:
 
-*killall -9 chrome*
+_killall -9 chrome_
 
 The only caveat to the above command is that it may not catch all of the running chrome processes. If, after running the above command, you issue the ps aux|grep chrome command and see remaining processes running, your best bet is to go back to the *kill *command and send signal 9 to terminate the process by PID.
 

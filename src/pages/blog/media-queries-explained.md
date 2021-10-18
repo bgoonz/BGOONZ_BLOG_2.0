@@ -5,16 +5,20 @@ date: '2021-10-18'
 thumb_image_alt: lorem-ipsum
 excerpt: Media Queries 
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: post
 image: images/media-querry.png
 ---
+
+
 ## Media Queries 
 
+
 Media queries are a way to target browser by certain characteristics, features, and user preferences, then apply styles or run other code based on those things. Perhaps the most common media queries in the world are those that target particular viewport ranges and apply custom styles, which birthed the whole idea of responsive design.
+
 
 ```css
 /* When the browser is at least 600px and above */
@@ -662,3 +666,4 @@ More info
 * * * * *
 
 #### s/#provide-bigger-touch-targets-when-devices-have-a-course-pointer)Provide bigger touch targets when devices have a `course` pointer
+

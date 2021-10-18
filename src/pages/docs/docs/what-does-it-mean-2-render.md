@@ -3,21 +3,22 @@ title: lorem-ipsum
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 # [![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-2.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-2.png)There[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-3.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-3.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-4.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-4.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-5.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browsers-Work-5.png)[![](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-6.png)](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-6.png)&#xA;&#xA;
 
 1.  **Layout Engine –**
 
-     this takes input from the browser (URL bar, search box, mouse clicks and key presses) and passes them to the rendering engine
+    this takes input from the browser (URL bar, search box, mouse clicks and key presses) and passes them to the rendering engine
 
 2.  **Rendering Engine**
 
-     – this takes HTML code and interprets it into what you see visually. For instance, a <b> tag would be interpreted by the rendering engine as a set of instructions to make the text inside of the element bold.
+    – this takes HTML code and interprets it into what you see visually. For instance, a <b> tag would be interpreted by the rendering engine as a set of instructions to make the text inside of the element bold.
 
 3.  \*\*User Interface \*\*
 
@@ -25,19 +26,19 @@ template: docs
 
 4.  **JavaScript Engine**
 
-     – This engine takes JavaScript code, parses it, executes it, and returns the results.
+    – This engine takes JavaScript code, parses it, executes it, and returns the results.
 
 5.  **Network Layer**
 
-     – This is a function of the browser that happens behind the scenes and handles network functions such as encryption, http and ftp requests, and all network settings such as timeouts and the handling of HTTP status codes
+    – This is a function of the browser that happens behind the scenes and handles network functions such as encryption, http and ftp requests, and all network settings such as timeouts and the handling of HTTP status codes
 
 6.  **Storage**
 
-     – Browser’s must store some data which can include cached files, cookies, and recently browsers have updated to be able to store data and objects created with JavaScript
+    – Browser’s must store some data which can include cached files, cookies, and recently browsers have updated to be able to store data and objects created with JavaScript
 
 7.  **Operating System Interface**
 
-     – The browser must interact with the operating system to draw out several elements of the page like drop down boxes and the chrome of a window (close, maximize, and minimize buttons)
+    – The browser must interact with the operating system to draw out several elements of the page like drop down boxes and the chrome of a window (close, maximize, and minimize buttons)
 
 ## Let’s Focus on the Rendering Engine
 
@@ -60,17 +61,17 @@ An example of this is the Like button on Facebook. When you look at it on page l
 
 Content on the page can be manipulated by JavaScript to display things in your browser that do not appear when you view a web page’s source code. You can have words that appear in the body of your page to a user that do not appear in the source code of the site and search engine spiders who do not render the page will be unable to detect that content.
 
-*This is how Facebook would look to a search engine spider that did not render content*
+_This is how Facebook would look to a search engine spider that did not render content_
 
 ## What Does This Mean for SEO?
 
 The fact that Google looks at the fully rendered version of a webpage means that you can no longer look solely at the source code of a site to understand how it is perceived by a search engine spider. You should assume that search engine spiders see the same page you see in your browser as it appears on page load. Here are some examples of when this matters:
 
-*   If you use an image carousel, images are hidden and you have to wait or click through to see all of the images. You should assume that Google perceives these types of sliders the same way a user would and puts more weight on the images and text that appear to the user the second the page is loaded.
+-   If you use an image carousel, images are hidden and you have to wait or click through to see all of the images. You should assume that Google perceives these types of sliders the same way a user would and puts more weight on the images and text that appear to the user the second the page is loaded.
 
-*   If you have content that is dynamically served through JavaScript, for instance widgets or feeds that are overlaid on the page or A/B tests that are overlaid with JavaScript, Google will see that content
+-   If you have content that is dynamically served through JavaScript, for instance widgets or feeds that are overlaid on the page or A/B tests that are overlaid with JavaScript, Google will see that content
 
-*   If you use 3rd party scripts or style sheets, Google will see the content of those resources if they can. You can verify that everything on your page can be seen by Google by using the new fetch as Googlebot rendering tool in Webmaster Tools.
+-   If you use 3rd party scripts or style sheets, Google will see the content of those resources if they can. You can verify that everything on your page can be seen by Google by using the new fetch as Googlebot rendering tool in Webmaster Tools.
 
 How to Use the New Rendering Tool in Webmaster Tools
 

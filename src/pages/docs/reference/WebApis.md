@@ -3,23 +3,22 @@ title: Web Apis
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 ## Web Audio Api
 
-Basic concepts behind Web Audio API
-===================================
+# Basic concepts behind Web Audio API
 
 This article explains some of the audio theory behind how the features of the Web Audio API work, to help you make informed decisions while designing how audio is routed through your app.
 
 It won't turn you into a master sound engineer, but it will give you enough background to understand why the Web Audio API works like it does.
 
-[Audio graphs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_graphs "Permalink to Audio graphs")
------------------------------------------------------------------------------------------------------------------------------------------------------------
+## [Audio graphs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_graphs 'Permalink to Audio graphs')
 
 The [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) involves handling audio operations inside an [audio context](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext), and has been designed to allow **modular routing**. Basic audio operations are performed with **audio nodes**, which are linked together to form an **audio routing graph**. Several sources --- with different types of channel layout --- are supported even within a single context. This modular design provides the flexibility to create complex audio functions with dynamic effects.
 
@@ -31,7 +30,7 @@ Audio nodes are linked via their inputs and outputs, forming a chain that starts
 4.  Choose the final destination for the audio, such as the user's computer speakers.
 5.  Establish connections from the audio sources through zero or more effects, eventually ending at the chosen destination.
 
-**Note:** The number of audio channels available on a signal is frequently presented in a numeric format, such as 2.0 or 5.1. This is called [channel notation](https://en.wikipedia.org/wiki/Surround_sound#Channel_notation "channel notation"). The first number is the number of full frequency range audio channels that the signal includes. The number after the period indicates the number of those channels which are reserved for low-frequency effect (LFE) outputs; these are often referred to as **subwoofers**.
+**Note:** The number of audio channels available on a signal is frequently presented in a numeric format, such as 2.0 or 5.1. This is called [channel notation](https://en.wikipedia.org/wiki/Surround_sound#Channel_notation 'channel notation'). The first number is the number of full frequency range audio channels that the signal includes. The number after the period indicates the number of those channels which are reserved for low-frequency effect (LFE) outputs; these are often referred to as **subwoofers**.
 
 ![A simple box diagram with an outer box labeled Audio context, and three inner boxes labeled Sources, Effects and Destination. The three inner boxes have arrow between them pointing from left to right, indicating the flow of audio information.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API/webaudioapi_en.svg)
 
@@ -46,15 +45,13 @@ Audio sources can be obtained in a number of ways:
 -   Taken from HTML media elements (such as [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) or [`<audio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)).
 -   Taken directly from a [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) (such as a webcam or microphone).
 
-[Audio data: what's in a sample](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_data_whats_in_a_sample "Permalink to Audio data: what's in a sample")
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## [Audio data: what's in a sample](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_data_whats_in_a_sample "Permalink to Audio data: what's in a sample")
 
-When an audio signal is processed, **sampling** means the conversion of a [continuous signal](https://en.wikipedia.org/wiki/Continuous_signal "Continuous signal") to a [discrete signal](https://en.wikipedia.org/wiki/Discrete_signal "Discrete signal"); or put another way, a continuous sound wave, such as a band playing live, is converted to a sequence of samples (a discrete-time signal) that allow a computer to handle the audio in distinct blocks.
+When an audio signal is processed, **sampling** means the conversion of a [continuous signal](https://en.wikipedia.org/wiki/Continuous_signal 'Continuous signal') to a [discrete signal](https://en.wikipedia.org/wiki/Discrete_signal 'Discrete signal'); or put another way, a continuous sound wave, such as a band playing live, is converted to a sequence of samples (a discrete-time signal) that allow a computer to handle the audio in distinct blocks.
 
 A lot more information can be found on the Wikipedia page [Sampling (signal processing)](https://en.wikipedia.org/wiki/Sampling_%28signal_processing%29).
 
-[Audio buffers: frames, samples and channels](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_buffers_frames_samples_and_channels "Permalink to Audio buffers: frames, samples and channels")
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## [Audio buffers: frames, samples and channels](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_buffers_frames_samples_and_channels 'Permalink to Audio buffers: frames, samples and channels')
 
 An [`AudioBuffer`](https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer) takes as its parameters a number of channels (1 for mono, 2 for stereo, etc), a length, meaning the number of sample frames inside the buffer, and a sample rate, which is the number of sample frames played per second.
 
@@ -81,13 +78,11 @@ var buffer = context.createBuffer(2, 22050, 44100);
 
 ```
 
+**Note:** In [digital audio](https://en.wikipedia.org/wiki/Digital_audio 'Digital audio'), **44,100 [Hz](https://en.wikipedia.org/wiki/Hertz)** (alternately represented as **44.1 kHz**) is a common [sampling frequency](https://en.wikipedia.org/wiki/Sampling_frequency 'Sampling frequency'). Why 44.1kHz?
 
+Firstly, because the [hearing range](https://en.wikipedia.org/wiki/Hearing_range 'Hearing range') of human ears is roughly 20 Hz to 20,000 Hz. Via the [Nyquist--Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem 'Nyquist--Shannon sampling theorem'), the sampling frequency must be greater than twice the maximum frequency one wishes to reproduce. Therefore, the sampling rate has to be greater than 40 kHz.
 
-**Note:** In [digital audio](https://en.wikipedia.org/wiki/Digital_audio "Digital audio"), **44,100 [Hz](https://en.wikipedia.org/wiki/Hertz)** (alternately represented as **44.1 kHz**) is a common [sampling frequency](https://en.wikipedia.org/wiki/Sampling_frequency "Sampling frequency"). Why 44.1kHz?
-
-Firstly, because the [hearing range](https://en.wikipedia.org/wiki/Hearing_range "Hearing range") of human ears is roughly 20 Hz to 20,000 Hz. Via the [Nyquist--Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem "Nyquist--Shannon sampling theorem"), the sampling frequency must be greater than twice the maximum frequency one wishes to reproduce. Therefore, the sampling rate has to be greater than 40 kHz.
-
-Secondly, signals must be [low-pass filtered](https://en.wikipedia.org/wiki/Low-pass_filter "Low-pass filter") before sampling, otherwise [aliasing](https://en.wikipedia.org/wiki/Aliasing) occurs. While an ideal low-pass filter would perfectly pass frequencies below 20 kHz (without attenuating them) and perfectly cut off frequencies above 20 kHz, in practice a [transition band](https://en.wikipedia.org/wiki/Transition_band "Transition band") is necessary, where frequencies are partly attenuated. The wider this transition band is, the easier and more economical it is to make an [anti-aliasing filter](https://en.wikipedia.org/wiki/Anti-aliasing_filter "Anti-aliasing filter"). The 44.1 kHz sampling frequency allows for a 2.05 kHz transition band.
+Secondly, signals must be [low-pass filtered](https://en.wikipedia.org/wiki/Low-pass_filter 'Low-pass filter') before sampling, otherwise [aliasing](https://en.wikipedia.org/wiki/Aliasing) occurs. While an ideal low-pass filter would perfectly pass frequencies below 20 kHz (without attenuating them) and perfectly cut off frequencies above 20 kHz, in practice a [transition band](https://en.wikipedia.org/wiki/Transition_band 'Transition band') is necessary, where frequencies are partly attenuated. The wider this transition band is, the easier and more economical it is to make an [anti-aliasing filter](https://en.wikipedia.org/wiki/Anti-aliasing_filter 'Anti-aliasing filter'). The 44.1 kHz sampling frequency allows for a 2.05 kHz transition band.
 
 If you use this call above, you will get a stereo buffer with two channels, that when played back on an AudioContext running at 44100Hz (very common, most normal sound cards run at this rate), will last for 0.5 seconds: 22050 frames/44100Hz = 0.5 seconds.
 
@@ -97,13 +92,11 @@ var buffer = context.createBuffer(1, 22050, 22050);
 
 ```
 
-
-
 If you use this call, you will get a mono buffer with just one channel), that when played back on an AudioContext running at 44100Hz, will be automatically *resampled* to 44100Hz (and therefore yield 44100 frames), and last for 1.0 second: 44100 frames/44100Hz = 1 second.
 
 **Note:** Audio resampling is very similar to image resizing. Say you've got a 16 x 16 image, but you want it to fill a 32x32 area. You resize (or resample) it. The result has less quality (it can be blurry or edgy, depending on the resizing algorithm), but it works, with the resized image taking up less space. Resampled audio is exactly the same: you save space, but in practice you will be unable to properly reproduce high frequency content, or treble sound.
 
-### [Planar versus interleaved buffers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#planar_versus_interleaved_buffers "Permalink to Planar versus interleaved buffers")
+### [Planar versus interleaved buffers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#planar_versus_interleaved_buffers 'Permalink to Planar versus interleaved buffers')
 
 The Web Audio API uses a planar buffer format. The left and right channels are stored like this:
 
@@ -119,31 +112,26 @@ This format is very common for storing and playing back audio without much proce
 
 The Web Audio API exposes **only** planar buffers, because it's made for processing. It works with planar, but converts the audio to interleaved when it is sent to the sound card for playback. Conversely, when an MP3 is decoded, it starts off in interleaved format, but is converted to planar for processing.
 
-[Audio channels](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_channels "Permalink to Audio channels")
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## [Audio channels](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_channels 'Permalink to Audio channels')
 
 Different audio buffers contain different numbers of channels: from the more basic mono (only one channel) and stereo (left and right channels), to more complex sets like quad and 5.1, which have different sound samples contained in each channel, leading to a richer sound experience. The channels are usually represented by standard abbreviations detailed in the table below:
 
-| Name | Channels |
-| --- | --- |
-| *Mono* | `0: M: mono` |
-| *Stereo* | `0: L: left 1: R: right` |
-| *Quad* | `0: L: left 1: R: right 2: SL: surround left 3: SR: surround right` |
-| *5.1* | `0: L: left 1: R: right 2: C: center 3: LFE: subwoofer 4: SL: surround left 5: SR: surround right` |
+| Name     | Channels                                                                                           |
+| -------- | -------------------------------------------------------------------------------------------------- |
+| _Mono_   | `0: M: mono`                                                                                       |
+| _Stereo_ | `0: L: left 1: R: right`                                                                           |
+| _Quad_   | `0: L: left 1: R: right 2: SL: surround left 3: SR: surround right`                                |
+| _5.1_    | `0: L: left 1: R: right 2: C: center 3: LFE: subwoofer 4: SL: surround left 5: SR: surround right` |
 
-### [Up-mixing and down-mixing](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#up-mixing_and_down-mixing "Permalink to Up-mixing and down-mixing")
+### [Up-mixing and down-mixing](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#up-mixing_and_down-mixing 'Permalink to Up-mixing and down-mixing')
 
 When the number of channels doesn't match between an input and an output, up- or down-mixing happens according the following rules. This can be somewhat controlled by setting the [`AudioNode.channelInterpretation`](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelInterpretation) property to `speakers` or `discrete`:
 
-
-
-Web Audio API
-=============
+# Web Audio API
 
 The Web Audio API provides a powerful and versatile system for controlling audio on the Web, allowing developers to choose audio sources, add effects to audio, create audio visualizations, apply spatial effects (such as panning) and much more.
 
-[Web audio concepts and usage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#web_audio_concepts_and_usage "Permalink to Web audio concepts and usage")
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## [Web audio concepts and usage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#web_audio_concepts_and_usage 'Permalink to Web audio concepts and usage')
 
 The Web Audio API involves handling audio operations inside an **audio context**, and has been designed to allow **modular routing**. Basic audio operations are performed with **audio nodes**, which are linked together to form an **audio routing graph**. Several sources --- with different types of channel layout --- are supported even within a single context. This modular design provides the flexibility to create complex audio functions with dynamic effects.
 
@@ -167,8 +155,7 @@ The Web Audio API also allows us to control how audio is *spatialized*. Using a
 
 **Note:** You can read about the theory of the Web Audio API in a lot more detail in our article [Basic concepts behind Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API).
 
-[Web Audio API target audience](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#web_audio_api_target_audience "Permalink to Web Audio API target audience")
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## [Web Audio API target audience](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#web_audio_api_target_audience 'Permalink to Web Audio API target audience')
 
 The Web Audio API can seem intimidating to those that aren't familiar with audio or music terms, and as it incorporates a great deal of functionality it can prove difficult to get started if you are a developer.
 
@@ -186,12 +173,11 @@ If you are more familiar with the musical side of things, are familiar with musi
 
 If you aren't familiar with the programming basics, you might want to consult some beginner's JavaScript tutorials first and then come back here --- see our [Beginner's JavaScript learning module](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) for a great place to begin.
 
-[Web Audio API interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#web_audio_api_interfaces "Permalink to Web Audio API interfaces")
------------------------------------------------------------------------------------------------------------------------------------------------------------
+## [Web Audio API interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#web_audio_api_interfaces 'Permalink to Web Audio API interfaces')
 
 The Web Audio API has a number of interfaces and associated events, which we have split up into nine categories of functionality.
 
-### [General audio graph definition](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#general_audio_graph_definition "Permalink to General audio graph definition")
+### [General audio graph definition](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#general_audio_graph_definition 'Permalink to General audio graph definition')
 
 General containers and definitions that shape audio graphs in Web Audio API usage.
 
@@ -219,7 +205,7 @@ The `[ended](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/
 
 The `ended` event is fired when playback has stopped because the end of the media was reached.
 
-### [Defining audio sources](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#defining_audio_sources "Permalink to Defining audio sources")
+### [Defining audio sources](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#defining_audio_sources 'Permalink to Defining audio sources')
 
 Interfaces that define audio sources for use in the Web Audio API.
 
@@ -245,13 +231,13 @@ The **`MediaElementAudioSourceNode`** interface represents an audio source con
 
 [`MediaStreamAudioSourceNode`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode)
 
-The **`MediaStreamAudioSourceNode`** interface represents an audio source consisting of a [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) (such as a webcam, microphone, or a stream being sent from a remote computer). If multiple audio tracks are present on the stream, the track whose [`id`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/id "id") comes first lexicographically (alphabetically) is used. It is an [`AudioNode`](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode) that acts as an audio source.
+The **`MediaStreamAudioSourceNode`** interface represents an audio source consisting of a [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) (such as a webcam, microphone, or a stream being sent from a remote computer). If multiple audio tracks are present on the stream, the track whose [`id`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/id 'id') comes first lexicographically (alphabetically) is used. It is an [`AudioNode`](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode) that acts as an audio source.
 
 [`MediaStreamTrackAudioSourceNode`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceNode)
 
-A node of type [`MediaStreamTrackAudioSourceNode`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceNode) represents an audio source whose data comes from a [`MediaStreamTrack`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack). When creating the node using the [`createMediaStreamTrackSource()`](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamTrackSource "createMediaStreamTrackSource()") method to create the node, you specify which track to use. This provides more control than `MediaStreamAudioSourceNode`.
+A node of type [`MediaStreamTrackAudioSourceNode`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceNode) represents an audio source whose data comes from a [`MediaStreamTrack`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack). When creating the node using the [`createMediaStreamTrackSource()`](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamTrackSource 'createMediaStreamTrackSource()') method to create the node, you specify which track to use. This provides more control than `MediaStreamAudioSourceNode`.
 
-### [Defining audio effects filters](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#defining_audio_effects_filters "Permalink to Defining audio effects filters")
+### [Defining audio effects filters](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#defining_audio_effects_filters 'Permalink to Defining audio effects filters')
 
 Interfaces for defining effects that you want to apply to your audio sources.
 
@@ -285,9 +271,9 @@ Describes a periodic waveform that can be used to shape the output of an [`Osci
 
 [`IIRFilterNode`](https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode)
 
-Implements a general **[infinite impulse response](https://en.wikipedia.org/wiki/infinite%20impulse%20response "infinite impulse response")** (IIR)  filter; this type of filter can be used to implement tone control devices and graphic equalizers as well.
+Implements a general **[infinite impulse response](https://en.wikipedia.org/wiki/infinite%20impulse%20response 'infinite impulse response')** (IIR)  filter; this type of filter can be used to implement tone control devices and graphic equalizers as well.
 
-### [Defining audio destinations](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#defining_audio_destinations "Permalink to Defining audio destinations")
+### [Defining audio destinations](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#defining_audio_destinations 'Permalink to Defining audio destinations')
 
 Once you are done processing your audio, these interfaces define where to output it.
 
@@ -297,9 +283,9 @@ The **`AudioDestinationNode`** interface represents the end destination of an 
 
 [`MediaStreamAudioDestinationNode`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioDestinationNode)
 
-The **`MediaStreamAudioDestinationNode`** interface represents an audio destination consisting of a [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) with a single `AudioMediaStreamTrack`, which can be used in a similar way to a [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) obtained from [`getUserMedia()`](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia "getUserMedia()"). It is an [`AudioNode`](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode) that acts as an audio destination.
+The **`MediaStreamAudioDestinationNode`** interface represents an audio destination consisting of a [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) with a single `AudioMediaStreamTrack`, which can be used in a similar way to a [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) obtained from [`getUserMedia()`](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia 'getUserMedia()'). It is an [`AudioNode`](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode) that acts as an audio destination.
 
-### [Data analysis and visualization](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#data_analysis_and_visualization "Permalink to Data analysis and visualization")
+### [Data analysis and visualization](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#data_analysis_and_visualization 'Permalink to Data analysis and visualization')
 
 If you want to extract time, frequency, and other data from your audio, the `AnalyserNode` is what you need.
 
@@ -307,7 +293,7 @@ If you want to extract time, frequency, and other data from your audio, the `An
 
 The **`AnalyserNode`** interface represents a node able to provide real-time frequency and time-domain analysis information, for the purposes of data analysis and visualization.
 
-### [Splitting and merging audio channels](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#splitting_and_merging_audio_channels "Permalink to Splitting and merging audio channels")
+### [Splitting and merging audio channels](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#splitting_and_merging_audio_channels 'Permalink to Splitting and merging audio channels')
 
 To split and merge audio channels, you'll use these interfaces.
 
@@ -319,7 +305,7 @@ The **`ChannelSplitterNode`** interface separates the different channels of an
 
 The **`ChannelMergerNode`** interface reunites different mono inputs into a single output. Each input will be used to fill a channel of the output.
 
-### [Audio spatialization](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#audio_spatialization "Permalink to Audio spatialization")
+### [Audio spatialization](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#audio_spatialization 'Permalink to Audio spatialization')
 
 These interfaces allow you to add audio spatialization panning effects to your audio sources.
 
@@ -335,13 +321,13 @@ The **`PannerNode`** interface represents the position and behavior of an audi
 
 The **`StereoPannerNode`** interface represents a simple stereo panner node that can be used to pan an audio stream left or right.
 
-### [Audio processing in JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#audio_processing_in_javascript "Permalink to Audio processing in JavaScript")
+### [Audio processing in JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#audio_processing_in_javascript 'Permalink to Audio processing in JavaScript')
 
 Using audio worklets, you can define custom audio nodes written in JavaScript or [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly). Audio worklets implement the [`Worklet`](https://developer.mozilla.org/en-US/docs/Web/API/Worklet) interface, a lightweight version of the [`Worker`](https://developer.mozilla.org/en-US/docs/Web/API/Worker) interface.
 
 [`AudioWorklet`](https://developer.mozilla.org/en-US/docs/Web/API/AudioWorklet)
 
-The `AudioWorklet` interface is available through the [`AudioContext`](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext) object's [`audioWorklet`](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/audioWorklet "audioWorklet"), and lets you add modules to the audio worklet to be executed off the main thread.
+The `AudioWorklet` interface is available through the [`AudioContext`](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext) object's [`audioWorklet`](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/audioWorklet 'audioWorklet'), and lets you add modules to the audio worklet to be executed off the main thread.
 
 [`AudioWorkletNode`](https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode)
 
@@ -359,19 +345,19 @@ The `AudioWorkletGlobalScope` interface is a `WorkletGlobalScope`-derived obj
 
 Before audio worklets were defined, the Web Audio API used the `ScriptProcessorNode`  for JavaScript-based audio processing. Because the code runs in the main thread, they have bad performance. The `ScriptProcessorNode` is kept for historic reasons but is marked as deprecated.
 
-[`ScriptProcessorNode`](https://developer.mozilla.org/en-US/docs/Web/API/ScriptProcessorNode) 
+[`ScriptProcessorNode`](https://developer.mozilla.org/en-US/docs/Web/API/ScriptProcessorNode)
 
 The **`ScriptProcessorNode`** interface allows the generation, processing, or analyzing of audio using JavaScript. It is an [`AudioNode`](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode) audio-processing module that is linked to two buffers, one containing the current input, one containing the output. An event, implementing the [`AudioProcessingEvent`](https://developer.mozilla.org/en-US/docs/Web/API/AudioProcessingEvent) interface, is sent to the object each time the input buffer contains new data, and the event handler terminates when it has filled the output buffer with data.
 
-`[audioprocess](https://developer.mozilla.org/en-US/docs/Web/API/ScriptProcessorNode/audioprocess_event "/en-US/docs/Web/Events/audioprocess")` (event) 
+`[audioprocess](https://developer.mozilla.org/en-US/docs/Web/API/ScriptProcessorNode/audioprocess_event "/en-US/docs/Web/Events/audioprocess")` (event)
 
 The `audioprocess` event is fired when an input buffer of a Web Audio API [`ScriptProcessorNode`](https://developer.mozilla.org/en-US/docs/Web/API/ScriptProcessorNode) is ready to be processed.
 
-[`AudioProcessingEvent`](https://developer.mozilla.org/en-US/docs/Web/API/AudioProcessingEvent) 
+[`AudioProcessingEvent`](https://developer.mozilla.org/en-US/docs/Web/API/AudioProcessingEvent)
 
 The `AudioProcessingEvent` represents events that occur when a [`ScriptProcessorNode`](https://developer.mozilla.org/en-US/docs/Web/API/ScriptProcessorNode) input buffer is ready to be processed.
 
-### [Offline/background audio processing](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#offlinebackground_audio_processing "Permalink to Offline/background audio processing")
+### [Offline/background audio processing](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#offlinebackground_audio_processing 'Permalink to Offline/background audio processing')
 
 It is possible to process/render an audio graph very quickly in the background --- rendering it to an [`AudioBuffer`](https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer) rather than to the device's speakers --- with the following.
 
@@ -387,8 +373,7 @@ The `complete` event is fired when the rendering of an [`OfflineAudioContext`
 
 The `OfflineAudioCompletionEvent` represents events that occur when the processing of an [`OfflineAudioContext`](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext) is terminated. The `[complete](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/complete_event "/en-US/docs/Web/Events/complete")` event uses this interface.
 
-[Guides and tutorials](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#guides_and_tutorials "Permalink to Guides and tutorials")
------------------------------------------------------------------------------------------------------------------------------------------------
+## [Guides and tutorials](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#guides_and_tutorials 'Permalink to Guides and tutorials')
 
 [Advanced techniques: Creating and sequencing audio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Advanced_techniques)
 
@@ -437,4 +422,3 @@ There's no strict right or wrong way when writing creative code. As long as you 
 [Web audio spatialization basics](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Web_audio_spatialization_basics)
 
 As if its extensive variety of sound processing (and other) options wasn't enough, the Web Audio API also includes facilities to allow you to emulate the difference in sound as a listener moves around a sound source, for example panning as you move around a sound source inside a 3D game. The official term for this is **spatialization**, and this article will cover the basics of how to implement such a system.
-

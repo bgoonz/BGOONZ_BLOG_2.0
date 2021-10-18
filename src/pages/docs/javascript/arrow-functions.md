@@ -3,12 +3,13 @@ title: JS Fat Arrow Functions
 weight: 0
 excerpt: JS Fat Arrow Functions
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 ## JS Fat Arrow Functions
 
 Classical JavaScript function syntax doesn't provide for any flexibility, be that a 1 statement function or an unfortunate multi-page function. Every time you need a function you have to type out the dreaded `function () {}`. More concise function syntax was one of the many reasons why [CoffeeScript](http://coffeescript.org/) gained so much momentum back in the day. This is especially pronounced in the case of tiny callback functions. Lets look at a Promise chain:
@@ -110,8 +111,7 @@ function () { return arguments[0]; }
 
 ```
 
-Lexical `this`
---------------
+## Lexical `this`
 
 The story of clobbering `this` in JavaScript is a really old one. Each `function` in JavaScript defines its own `this` context, which is as easy to get around as it is annoying. The example below tries to display a clock that updates every second using jQuery:
 
@@ -146,8 +146,7 @@ $('.current-time').each(function () {
 
 ```
 
-What about arguments?
----------------------
+## What about arguments?
 
 One of the caveats with arrow functions is that they also don't have their own `arguments` variable like regular functions:
 
@@ -173,13 +172,11 @@ log('hello'); // LOG: hello
 
 ```
 
-What about yield?
------------------
+## What about yield?
 
 Fat arrow functions can't be used as generators. That's it -- no exceptions, no caveats and no workarounds.
 
-Bottom Line
------------
+## Bottom Line
 
 Fat arrow functions are one of my favorite additions to JavaScript. It might be very tempting to just start using `=>` instead of `function` everywhere. I've seen whole libraries written just using `=>` and I don't think it's the right thing to do because of the special features that `=>` introduces. I recommend using arrow functions only in places where you explicitly want to use the new features:
 

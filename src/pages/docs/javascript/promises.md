@@ -3,12 +3,13 @@ title: lorem-ipsum
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 ## Lorem ipsum
 
 JavaScript is single threaded, meaning that two bits of script cannot run at the same time; they have to run one after another. In browsers, JavaScript shares a thread with a load of other stuff that differs from browser to browser. But typically JavaScript is in the same queue as painting, updating styles, and handling user actions (such as highlighting text and interacting with form controls). Activity in one of these things delays the others.
@@ -31,8 +32,7 @@ var img1 = document.querySelector('.img-1');function loaded() {  // woo yey imag
 
 This doesn't catch images that errored before we got a chance to listen for them; unfortunately the DOM doesn't give us a way to do that. Also, this is loading one image. Things get even more complex if we want to know when a set of images have loaded.
 
-Events aren't always the best way [#](https://web.dev/promises/#events-aren't-always-the-best-way)
---------------------------------------------------------------------------------------------------
+## Events aren't always the best way [#](https://web.dev/promises/#events-aren't-always-the-best-way)
 
 Events are great for things that can happen multiple times on the same object---`keyup`, `touchstart` etc. With those events you don't really care about what happened before you attached the listener. But when it comes to async success/failure, ideally you want something like this:
 
@@ -53,8 +53,7 @@ At their most basic, promises are a bit like event listeners except:
 
 This is extremely useful for async success/failure, because you're less interested in the exact time something became available, and more interested in reacting to the outcome.
 
-Promise terminology [#](https://web.dev/promises/#promise-terminology)
-----------------------------------------------------------------------
+## Promise terminology [#](https://web.dev/promises/#promise-terminology)
 
 [Domenic Denicola](https://twitter.com/domenic) proof read the first draft of this article and graded me "F" for terminology. He put me in detention, forced me to copy out [States and Fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md) 100 times, and wrote a worried letter to my parents. Despite that, I still get a lot of the terminology mixed up, but here are the basics:
 
@@ -67,8 +66,7 @@ A promise can be:
 
 [The spec](https://www.ecma-international.org/ecma-262/#sec-promise-objects) also uses the term thenable to describe an object that is promise-like, in that it has a `then` method. This term reminds me of ex-England Football Manager [Terry Venables](https://en.wikipedia.org/wiki/Terry_Venables) so I'll be using it as little as possible.
 
-Promises arrive in JavaScript! [#](https://web.dev/promises/#promises-arrive-in-javascript!)
---------------------------------------------------------------------------------------------
+## Promises arrive in JavaScript! [#](https://web.dev/promises/#promises-arrive-in-javascript!)
 
 Promises have been around for a while in the form of libraries, such as:
 
@@ -101,8 +99,7 @@ JavaScript promises started out in the DOM as "Futures", renamed to "Promises", 
 
 Although they're a JavaScript feature, the DOM isn't afraid to use them. In fact, all new DOM APIs with async success/failure methods will use promises. This is happening already with [Quota Management](https://dvcs.w3.org/hg/quota/raw-file/tip/Overview.html#idl-def-StorageQuota), [Font Load Events](http://dev.w3.org/csswg/css-font-loading/#font-face-set-ready), [ServiceWorker](https://github.com/slightlyoff/ServiceWorker/blob/cf459d473ae09f6994e8539113d277cbd2bce939/service_worker.ts#L17), [Web MIDI](https://webaudio.github.io/web-midi-api/#widl-Navigator-requestMIDIAccess-Promise-MIDIOptions-options), [Streams](https://github.com/whatwg/streams#basereadablestream), and more.
 
-Browser support & polyfill [#](https://web.dev/promises/#browser-support-and-polyfill)
---------------------------------------------------------------------------------------
+## Browser support & polyfill [#](https://web.dev/promises/#browser-support-and-polyfill)
 
 There are already implementations of promises in browsers today.
 
@@ -110,8 +107,7 @@ As of Chrome 32, Opera 19, Firefox 29, Safari 8 & Microsoft Edge, promises are e
 
 To bring browsers that lack a complete promises implementation up to spec compliance, or add promises to other browsers and Node.js, check out [the polyfill](https://github.com/jakearchibald/ES6-Promises#readme) (2k gzipped).
 
-Compatibility with other libraries [#](https://web.dev/promises/#compatibility-with-other-libraries)
-----------------------------------------------------------------------------------------------------
+## Compatibility with other libraries [#](https://web.dev/promises/#compatibility-with-other-libraries)
 
 The JavaScript promises API will treat anything with a `then()` method as promise-like (or `thenable` in promise-speak *sigh*), so if you use a library that returns a Q promise, that's fine, it'll play nice with the new JavaScript promises.
 
@@ -135,8 +131,7 @@ jsPromise.then(function(response) {  // ...}, function(xhrObj) {  // ...})
 
 Thankfully this is usually what you want, or at least gives you access to what you want. Also, be aware that jQuery doesn't follow the convention of passing Error objects into rejections.
 
-Complex async code made easier [#](https://web.dev/promises/#complex-async-code-made-easier)
---------------------------------------------------------------------------------------------
+## Complex async code made easier [#](https://web.dev/promises/#complex-async-code-made-easier)
 
 Right, let's code some things. Say we want to:
 
@@ -153,8 +148,7 @@ Of course, you wouldn't use JavaScript to deliver a story, [serving as HTML is 
 
 To start with, let's deal with fetching data from the network:
 
-Promisifying XMLHttpRequest [#](https://web.dev/promises/#promisifying-xmlhttprequest)
---------------------------------------------------------------------------------------
+## Promisifying XMLHttpRequest [#](https://web.dev/promises/#promisifying-xmlhttprequest)
 
 Old APIs will be updated to use promises, if it's possible in a backwards compatible way. `XMLHttpRequest` is a prime candidate, but in the mean time let's write a simple function to make a GET request:
 
@@ -170,8 +164,7 @@ get('story.json').then(function(response) {  console.log("Success!", response);}
 
 Now we can make HTTP requests without manually typing `XMLHttpRequest`, which is great, because the less I have to see the infuriating camel-casing of `XMLHttpRequest`, the happier my life will be.
 
-Chaining [#](https://web.dev/promises/#chaining)
-------------------------------------------------
+## Chaining [#](https://web.dev/promises/#chaining)
 
 `then()` isn't the end of the story, you can chain `then`s together to transform values or run additional async actions one after another.
 
@@ -229,8 +222,7 @@ var storyPromise;function getChapter(i) {  storyPromise = storyPromise || getJSO
 
 We don't download `story.json` until `getChapter` is called, but the next time(s) `getChapter` is called we reuse the story promise, so `story.json` is only fetched once. Yay Promises!
 
-Error handling [#](https://web.dev/promises/#error-handling)
-------------------------------------------------------------
+## Error handling [#](https://web.dev/promises/#error-handling)
 
 As we saw earlier, `then()` takes two arguments, one for success, one for failure (or fulfill and reject, in promises-speak):
 
@@ -300,8 +292,7 @@ function getJSON(url) {  return get(url).then(JSON.parse).catch(function(err) { 
 
 So we've managed to fetch one chapter, but we want them all. Let's make that happen.
 
-Parallelism and sequencing: getting the best of both [#](https://web.dev/promises/#parallelism-and-sequencing:-getting-the-best-of-both)
-----------------------------------------------------------------------------------------------------------------------------------------
+## Parallelism and sequencing: getting the best of both [#](https://web.dev/promises/#parallelism-and-sequencing:-getting-the-best-of-both)
 
 Thinking async isn't easy. If you're struggling to get off the mark, try writing the code as if it were synchronous. In this case:
 

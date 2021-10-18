@@ -5,10 +5,10 @@ date: '2021-10-14'
 thumb_image_alt: lorem-ipsum
 excerpt: wubalubadubdub
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: post
 thumb_image: images/python2.jpg
 ---
