@@ -222,7 +222,7 @@
             },
             {
                 "label": "Cool Stuff",
-                "url": "#",
+                "url": "reference",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
