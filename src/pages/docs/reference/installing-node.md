@@ -10,11 +10,7 @@ seo:
 template: docs
 ---
 
-
-
-
-Android[](https://nodejs.org/en/download/package-manager/#android)
-------------------------------------------------------------------
+## Android[](https://nodejs.org/en/download/package-manager/#android)
 
 Android support is still experimental in Node.js, so precompiled binaries are not yet provided by Node.js developers.
 
@@ -27,8 +23,7 @@ pkg install nodejs
 
 Currently, Termux Node.js binaries are linked against `system-icu` (depending on `libicu` package).
 
-Arch Linux[](https://nodejs.org/en/download/package-manager/#arch-linux)
-------------------------------------------------------------------------
+## Arch Linux[](https://nodejs.org/en/download/package-manager/#arch-linux)
 
 Node.js and npm packages are available in the Community Repository.
 
@@ -37,8 +32,7 @@ pacman -S nodejs npm
 
 ```
 
-CentOS, Fedora and Red Hat Enterprise Linux[](https://nodejs.org/en/download/package-manager/#centos-fedora-and-red-hat-enterprise-linux)
------------------------------------------------------------------------------------------------------------------------------------------
+## CentOS, Fedora and Red Hat Enterprise Linux[](https://nodejs.org/en/download/package-manager/#centos-fedora-and-red-hat-enterprise-linux)
 
 Node.js is available as a module called `nodejs` in CentOS/RHEL 8 and Fedora.
 
@@ -70,8 +64,7 @@ These resources provide packages compatible with CentOS, Fedora, and RHEL.
 -   [Node.js snaps](https://nodejs.org/en/download/package-manager/#snap) maintained and supported at <https://github.com/nodejs/snap>
 -   [Node.js binary distributions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions) maintained and supported by [NodeSource](https://github.com/nodesource/distributions)
 
-Debian and Ubuntu based Linux distributions[](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
-------------------------------------------------------------------------------------------------------------------------------------------
+## Debian and Ubuntu based Linux distributions[](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 
 [Node.js binary distributions](https://github.com/nodesource/distributions/blob/master/README.md) are available from NodeSource.
 
@@ -79,15 +72,13 @@ Debian and Ubuntu based Linux distributions[](https://nodejs.org/en/download/pac
 
 Packages compatible with Debian and Ubuntu based Linux distributions are available via [Node.js snaps](https://nodejs.org/en/download/package-manager/#snap).
 
-fnm[](https://nodejs.org/en/download/package-manager/#fnm)
-----------------------------------------------------------
+## fnm[](https://nodejs.org/en/download/package-manager/#fnm)
 
 Fast and simple Node.js version manager built in Rust used to manage multiple released Node.js versions. It allows you to perform operations like install, uninstall, switch Node versions automatically based on the current directory, etc. To install fnm, use this [install script](https://github.com/Schniz/fnm#using-a-script-macoslinux).
 
 fnm has cross-platform support (macOS, Windows, Linux) & all popular shells (Bash, Zsh, Fish, PowerShell, Windows Command Line Prompt). fnm is built with speed in mind and compatibility support for `.node-version` and `.nvmrc` files.
 
-FreeBSD[](https://nodejs.org/en/download/package-manager/#freebsd)
-------------------------------------------------------------------
+## FreeBSD[](https://nodejs.org/en/download/package-manager/#freebsd)
 
 The most recent release of Node.js is available via the [www/node](https://www.freshports.org/www/node) port.
 
@@ -105,8 +96,7 @@ cd /usr/ports/www/node && make install
 
 ```
 
-Gentoo[](https://nodejs.org/en/download/package-manager/#gentoo)
-----------------------------------------------------------------
+## Gentoo[](https://nodejs.org/en/download/package-manager/#gentoo)
 
 Node.js is available in the portage tree.
 
@@ -115,12 +105,11 @@ emerge nodejs
 
 ```
 
-IBM i[](https://nodejs.org/en/download/package-manager/#ibm-i)
---------------------------------------------------------------
+## IBM i[](https://nodejs.org/en/download/package-manager/#ibm-i)
 
 LTS versions of Node.js are available from IBM, and are available via [the 'yum' package manager](https://ibm.biz/ibmi-rpms). The package name is `nodejs` followed by the major version number (for instance, `nodejs12`, `nodejs14` etc)
 
-To install Node.js 14.x from the command line, run the following as a user with *ALLOBJ special authority:
+To install Node.js 14.x from the command line, run the following as a user with \*ALLOBJ special authority:
 
 ```
 yum install nodejs14
@@ -129,12 +118,11 @@ yum install nodejs14
 
 Node.js can also be installed with the IBM i Access Client Solutions product. See [this support document](http://www-01.ibm.com/support/docview.wss?uid=nas8N1022619) for more details
 
-macOS[](https://nodejs.org/en/download/package-manager/#macos)
---------------------------------------------------------------
+## macOS[](https://nodejs.org/en/download/package-manager/#macos)
 
 Download the [macOS Installer](https://nodejs.org/en/#home-downloadhead) directly from the [nodejs.org](https://nodejs.org/) web site.
 
-*If you want to download the package with bash:*
+_If you want to download the package with bash:_
 
 ```
 curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
@@ -176,8 +164,7 @@ cd pkgsrc/lang/nodejs && bmake install
 
 ```
 
-n[](https://nodejs.org/en/download/package-manager/#n)
-------------------------------------------------------
+## n[](https://nodejs.org/en/download/package-manager/#n)
 
 `n` is a simple to use Node.js version manager for Mac and Linux. Specify the target version to install using a rich syntax, or select from a menu of previously downloaded versions. The versions are installed system-wide or user-wide, and for more targeted use you can run a version directly from the cached downloads.
 
@@ -191,8 +178,7 @@ n lts
 
 ```
 
-NetBSD[](https://nodejs.org/en/download/package-manager/#netbsd)
-----------------------------------------------------------------
+## NetBSD[](https://nodejs.org/en/download/package-manager/#netbsd)
 
 Node.js is available in the pkgsrc tree:
 
@@ -208,15 +194,13 @@ pkgin -y install nodejs
 
 ```
 
-Nodenv[](https://nodejs.org/en/download/package-manager/#nodenv)
-----------------------------------------------------------------
+## Nodenv[](https://nodejs.org/en/download/package-manager/#nodenv)
 
 `nodenv` is a lightweight node version manager, similar to `nvm`. It's simple and predictable. A rich plugin ecosystem lets you tailor it to suit your needs. Use `nodenv` to pick a Node version for your application and guarantee that your development environment matches production.
 
 Nodenv installation instructions are maintained [on its Github page](https://github.com/nodenv/nodenv#installation). Please visit that page to ensure you're following the latest version of the installation steps.
 
-nvm[](https://nodejs.org/en/download/package-manager/#nvm)
-----------------------------------------------------------
+## nvm[](https://nodejs.org/en/download/package-manager/#nvm)
 
 Node Version Manager is a bash script used to manage multiple released Node.js versions. It allows you to perform operations like install, uninstall, switch version, etc. To install nvm, use this [install script](https://github.com/nvm-sh/nvm#install--update-script).
 
@@ -241,8 +225,7 @@ nvm uninstall 8
 
 ```
 
-nvs[](https://nodejs.org/en/download/package-manager/#nvs)
-----------------------------------------------------------
+## nvs[](https://nodejs.org/en/download/package-manager/#nvs)
 
 #### Windows[](https://nodejs.org/en/download/package-manager/#windows)
 
@@ -295,8 +278,7 @@ nvs link lts
 
 ```
 
-OpenBSD[](https://nodejs.org/en/download/package-manager/#openbsd)
-------------------------------------------------------------------
+## OpenBSD[](https://nodejs.org/en/download/package-manager/#openbsd)
 
 Node.js is available through the ports system.
 
@@ -312,8 +294,7 @@ pkg_add node
 
 ```
 
-openSUSE and SLE[](https://nodejs.org/en/download/package-manager/#opensuse-and-sle)
-------------------------------------------------------------------------------------
+## openSUSE and SLE[](https://nodejs.org/en/download/package-manager/#opensuse-and-sle)
 
 Node.js is available in the main repositories under the following packages:
 
@@ -331,8 +312,7 @@ zypper install nodejs14
 
 Different major versions of Node can be installed and used concurrently.
 
-SmartOS and illumos[](https://nodejs.org/en/download/package-manager/#smartos-and-illumos)
-------------------------------------------------------------------------------------------
+## SmartOS and illumos[](https://nodejs.org/en/download/package-manager/#smartos-and-illumos)
 
 SmartOS images come with pkgsrc pre-installed. On other illumos distributions, first install [pkgsrc](https://pkgsrc.joyent.com/install-on-illumos/), then you may install the binary package as normal:
 
@@ -348,13 +328,11 @@ cd pkgsrc/lang/nodejs && bmake install
 
 ```
 
-Snap[](https://nodejs.org/en/download/package-manager/#snap)
-------------------------------------------------------------
+## Snap[](https://nodejs.org/en/download/package-manager/#snap)
 
 [Node.js snaps](https://github.com/nodejs/snap) are available as [`node`](https://snapcraft.io/node) on the Snap store.
 
-Solus[](https://nodejs.org/en/download/package-manager/#solus)
---------------------------------------------------------------
+## Solus[](https://nodejs.org/en/download/package-manager/#solus)
 
 Solus provides Node.js in its main repository.
 
@@ -363,8 +341,7 @@ sudo eopkg install nodejs
 
 ```
 
-Void Linux[](https://nodejs.org/en/download/package-manager/#void-linux)
-------------------------------------------------------------------------
+## Void Linux[](https://nodejs.org/en/download/package-manager/#void-linux)
 
 Void Linux ships Node.js stable in the main repository.
 
@@ -373,8 +350,7 @@ xbps-install -Sy nodejs
 
 ```
 
-Windows[](https://nodejs.org/en/download/package-manager/#windows-1)
---------------------------------------------------------------------
+## Windows[](https://nodejs.org/en/download/package-manager/#windows-1)
 
 Download the [Windows Installer](https://nodejs.org/en/#home-downloadhead) directly from the [nodejs.org](https://nodejs.org/) web site.
 
