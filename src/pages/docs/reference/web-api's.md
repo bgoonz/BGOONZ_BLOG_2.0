@@ -1,7 +1,7 @@
 ---
 title: Web Apis
 weight: 0
-excerpt: lorem-ipsum
+excerpt: When writing code for the Web, there are a large number of Web APIs available. Below is a list of all the APIs and interfaces (object types) that you may be able to use while developing your Web app or site
 seo:
   title: ''
   description: ''
