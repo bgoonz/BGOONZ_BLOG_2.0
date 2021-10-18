@@ -12,7 +12,7 @@ seo:
 template: post
 image: images/media-querry.png
 ---
-## Lorem ipsum
+## Media Queries 
 
 Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
