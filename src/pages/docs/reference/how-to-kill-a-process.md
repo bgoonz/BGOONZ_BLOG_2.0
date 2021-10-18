@@ -1,7 +1,7 @@
 ---
 title: Kill a Process in Linux 
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Kill a Process in Linux 
 seo:
   title: ''
   description: ''
