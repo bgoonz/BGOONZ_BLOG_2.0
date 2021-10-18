@@ -757,26 +757,18 @@ Email Address
 ##### FAMILY
 
 -   [CodePen](https://codepen.io/)
--   [ShopTalk Show](https://shoptalkshow.com/)
-
-##### MINISITES
+-   [ShopTalk Show](https://shoptalkshow.com##### MINISITES
 
 -   [The Power of Serverless](https://serverless.css-tricks.com/)
 -   [Upcoming Conferences](https://conferences.css-tricks.com/)
--   [Coding Fonts](https://coding-fonts.css-tricks.com/)
-
-##### CONTACT
+-   [Coding Fonts](https://coding-fonts.css-tricks.com##### CONTACT
 
 -   [Email](mailto:team@css-tricks.com)
 -   [Sponsorship Info](https://www.notion.so/csstricks/Sponsorship-Possibilities-cb5b33a3f6f64c239220547fe7965d78)
--   [Guest Writing](https://css-tricks.com/guest-posting/)
-
-##### BUY
+-   [Guest Writing](https://css-tricks.com/guest-posting##### BUY
 
 -   [Posters & Swag](https://css-tricks.com/shop/)
--   [Membership](https://css-tricks.com/product/mvp-supporter/)
-
-##### FOLLOW
+-   [Membership](https://css-tricks.com/product/mvp-supporter##### FOLLOW
 
 -   [Twitter](https://twitter.com/css)
 -   [Instagram](https://www.instagram.com/real_css_tricks/)
@@ -784,96 +776,28 @@ Email Address
 -   [CodePen](https://codepen.io/team/css-tricks)
 -   [GitHub](https://github.com/CSS-Tricks)
 -   [iTunes](https://podcasts.apple.com/us/podcast/css-tricks-screencasts/id273881728)
--   [RSS](https://css-tricks.com/feed/)
+-   [RSS](https://css-tricks.com/feed[Back to Top](https://css-tricks.com/a-complete-guide-to-css-media-queries/#top-of-site)
 
-[Back to Top](https://css-tricks.com/a-complete-guide-to-css-media-queries/#top-of-site)
-
-1.  ### snippets/css/a-guide-to-flexbox/)
-
-    [](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-
-    [
+1.  ### snippets/css/a-guide-to-flexbox    [](https://css-tricks.com/snippets/css/a-guide-to-flexbox    [
 
     ![A Complete Guide to Flexbox](https://i1.wp.com/css-tricks.com/wp-content/uploads/2018/12/guide-flexbox.png?resize=600%2C600)
 
-    ](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-
-2.  ### snippets/css/complete-guide-grid/)
-
-    [](https://css-tricks.com/snippets/css/complete-guide-grid/)
-
-    [
+    ](https://css-tricks.com/snippets/css/a-guide-to-flexbox2.  ### snippets/css/complete-guide-grid    [](https://css-tricks.com/snippets/css/complete-guide-grid    [
 
     ![A Complete Guide to Grid](https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/12/grid-guide.png?resize=600%2C600)
 
-    ](https://css-tricks.com/snippets/css/complete-guide-grid/)
-
-3.  ### perfect-full-page-background-image/)
-
-    [](https://css-tricks.com/perfect-full-page-background-image/)
-
-    [
+    ](https://css-tricks.com/snippets/css/complete-guide-grid3.  ### perfect-full-page-background-image    [](https://css-tricks.com/perfect-full-page-background-image    [
 
     ![Perfect Full Page Background Image](https://i1.wp.com/css-tricks.com/wp-content/csstricks-uploads/fullpagebackground.jpg?resize=600%2C600)
 
-    ](https://css-tricks.com/perfect-full-page-background-image/)
-
-4.  ### archives/)
-
-    [](https://css-tricks.com/archives/)
-
-    [](https://css-tricks.com/archives/)
-
-5.  ### creating-the-perfect-commit-in-git/)
-
-    [](https://css-tricks.com/creating-the-perfect-commit-in-git/)
-
-    [
+    ](https://css-tricks.com/perfect-full-page-background-image4.  ### archives    [](https://css-tricks.com/archives    [](https://css-tricks.com/archives5.  ### creating-the-perfect-commit-in-git    [](https://css-tricks.com/creating-the-perfect-commit-in-git    [
 
     ![Creating the Perfect Commit in Git](https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/09/better-commits.png?resize=600%2C600)
 
-    ](https://css-tricks.com/creating-the-perfect-commit-in-git/)
-
-6.  ### so-many-little-design-helper-sites/)
-
-    [](https://css-tricks.com/so-many-little-design-helper-sites/)
-
-    [
+    ](https://css-tricks.com/creating-the-perfect-commit-in-git6.  ### so-many-little-design-helper-sites    [](https://css-tricks.com/so-many-little-design-helper-sites    [
 
     ![So many little design helper sites!](https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/09/low-poly-grid-haikei.png?resize=600%2C600)
 
-    ](https://css-tricks.com/so-many-little-design-helper-sites/)
-
-7.  ### snippets/css/media-queries-for-standard-devices/)
-
-    [](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
-
-    [](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
-
-8.  ### using-svg/)
-
-    [](https://css-tricks.com/using-svg/)
-
-    [](https://css-tricks.com/using-svg/)
-
-9.  ### the-shapes-of-css/)
-
-    [](https://css-tricks.com/the-shapes-of-css/)
-
-    [](https://css-tricks.com/the-shapes-of-css/)
-
-10. ### designing-beautiful-shadows-in-css/)
-
-    [](https://css-tricks.com/designing-beautiful-shadows-in-css/)
-
-    [](https://css-tricks.com/designing-beautiful-shadows-in-css/)
-
-11. ### grainy-gradients/)
-
-    [](https://css-tricks.com/grainy-gradients/)
-
-    [](https://css-tricks.com/grainy-gradients/)
-
-[![](https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/09/Jetpack-Search-on-CSS-Tricks-Instant-Search.png?fit=600%2C444&ssl=1)](https://jetpack.com/upgrade/search/?aff=8638)
+    ](https://css-tricks.com/so-many-little-design-helper-sites7.  ### snippets/css/media-queries-for-standard-devices    [](https://css-tricks.com/snippets/css/media-queries-for-standard-devices    [](https://css-tricks.com/snippets/css/media-queries-for-standard-devices8.  ### using-svg    [](https://css-tricks.com/using-svg    [](https://css-tricks.com/using-svg9.  ### the-shapes-of-css    [](https://css-tricks.com/the-shapes-of-css    [](https://css-tricks.com/the-shapes-of-css10. ### designing-beautiful-shadows-in-css    [](https://css-tricks.com/designing-beautiful-shadows-in-css    [](https://css-tricks.com/designing-beautiful-shadows-in-css11. ### grainy-gradients    [](https://css-tricks.com/grainy-gradients    [](https://css-tricks.com/grainy-gradients[![](https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/09/Jetpack-Search-on-CSS-Tricks-Instant-Search.png?fit=600%2C444&ssl=1)](https://jetpack.com/upgrade/search/?aff=8638)
 
 [](https://jetpack.com/search?utm_source=poweredby)
