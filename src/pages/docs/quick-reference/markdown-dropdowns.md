@@ -1,7 +1,7 @@
 ---
-title: Markdown Dropdown:
+title: Markdown Dropdown
 weight: 0
-excerpt: Markdown Dropdown:
+excerpt: Markdown Dropdown
 seo:
     title: ''
     description: ''
