@@ -4,7 +4,7 @@ weight: 0
 excerpt: Arrow functions are great because the inner value of this cant be changed, its *always* the same as the outer this.
 seo:
   title: ''
-  description: ''
+  description: 'Arrow functions are great because the inner value of this cant be changed, its *always* the same as the outer this.'
   robots: []
   extra: []
 template: docs
