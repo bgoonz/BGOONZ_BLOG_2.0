@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: JS Fat Arrow Functions
 weight: 0
 excerpt: lorem-ipsum
 seo:
