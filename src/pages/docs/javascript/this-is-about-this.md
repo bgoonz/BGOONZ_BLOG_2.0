@@ -34,17 +34,20 @@ Arrow functions are great because the inner value of `this` can't be changed, 
 
 ### Other examples 
 
-With arrow functions, the value of `this` *can't* be changed with [`bind`](https:
-//web.dev/bound):
+With arrow functions, the value of `this` *can't* be changed with [`bind`]
 
-```
+
+---
+
+```js
+
 
 // Logs `true` - bound `this` value is ignored:arrowFunction.bind({foo: 'bar'})();
 
 ```
 
-With arrow functions, the value of `this` *can't* be changed with [`call` or `apply`](https:
-//web.dev/call-apply):
+With arrow functions, the value of `this` *can't* be changed with [`call` or `apply`]
+call-apply):
 
 ```js
 // Logs `true` - called `this` value is ignored:arrowFunction.call({foo: 'bar'});
@@ -62,7 +65,10 @@ const obj = { arrowFunction };
 
 With arrow functions, the value of `this` *can't* be changed by calling the function as a constructor:
 
-```
+---
+
+```js
+
 
 // TypeError: arrowFunction is not a constructornew arrowFunction();
 
@@ -70,7 +76,7 @@ With arrow functions, the value of `this` *can't* be changed by calling the f
 
 ### 'Bound' instance methods 
 
-With instance methods, if you want to ensure `this` always refers to the class instance, the best way is to use arrow functions and [class fields](https:
+With instance methods, if you want to ensure `this` always refers to the class instance, the best way is to use arrow functions and [class fields]
 //developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Public_class_fields):
 
 ```js
@@ -81,6 +87,10 @@ class Whatever {
   };
 }
 ```
+---
+
+
+
 
 This pattern is really useful when using instance methods as event listeners in components (such as React components, or web components).
 
@@ -116,7 +126,7 @@ class Whatever {
 }
 ```
 
-## Otherwise, if the function/class is called with `new`: new)
+## Otherwise, if the function/class is called with `new`: 
 
 ```js
 new Whatever();
@@ -146,10 +156,9 @@ function MyClass() {
 // Logs `true`:new MyClass();
 ```
 
-### Other examples other-examples-2)
-
-When called with `new`, the value of `this` *can't* be changed with [`bind`](https:
-//web.dev/bound):
+### Other examples 
+When called with `new`, the value of `this` *can't* be changed with [`bind`]
+bound):
 
 ```js
 const BoundMyClass = MyClass.bind({ foo: "bar" });
@@ -167,7 +176,7 @@ const obj = { MyClass };
 
 Otherwise, if the function has a 'bound' `this` value:
 
-## /bound)
+## bound
 
 ```js
 function someFunction() {
@@ -187,8 +196,8 @@ Whenever `boundFunction` is called, its `this` value will be the object pass
 
 ```
 
-Warning: Avoid using `bind` to bind a function to its outer `this`. Instead, use [arrow functions](https:
-//web.dev/arrow-functions), as they make `this` clear from the function declaration, rather than something that happens later in the code.
+Warning: Avoid using `bind` to bind a function to its outer `this`. Instead, use [arrow functions]
+arrow-functions), as they make `this` clear from the function declaration, rather than something that happens later in the code.
 
 Don't use `bind` to set `this` to some value unrelated to the parent object; it's usually unexpected and it's why `this` gets such a bad reputation. Consider passing the value as an argument instead; it's more explicit, and works with arrow functions.
 
@@ -196,8 +205,8 @@ Don't use `bind` to set `this` to some value unrelated to the parent object;
 
 /other-examples-3)
 
-When calling a bound function, the value of `this` *can't* be changed with [`call` or `apply`](https:
-//web.dev/call-apply):
+When calling a bound function, the value of `this` *can't* be changed with [`call` or `apply`]
+call-apply):
 
 ```js
 // Logs `true` - called `this` value is ignored:console.log(boundFunction.call({foo: 'bar'}) === boundObject);
@@ -295,7 +304,10 @@ const $ = document.querySelector;
 
 This breaks because the implementation of `querySelector` looks at its own `this` value and expects it to be a DOM node of sorts, and the above breaks that connection. To achieve the above correctly:
 
-```
+---
+
+```js
+
 const $ = document.querySelector.bind(document);
 
 // Or:const $ = (...args) => document.querySelector(...args);
@@ -309,13 +321,16 @@ Warning: Don't transplant a function onto an object just to set `this` to some
 Otherwise, if the function or parent scope is in strict mode: strict)
 ----------------------------------------------------------------------------------------------------------
 
-```
+---
+
+```js
+
 function someFunction() {  'use strict';  return this;}
 // Logs `true`:console.log(someFunction() === undefined);
 
 ```
 
-In this case, the value of `this` is undefined. `'use strict'` isn't needed in the function if the parent scope is in [strict mode](https:
+In this case, the value of `this` is undefined. `'use strict'` isn't needed in the function if the parent scope is in [strict mode]
 //developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode) (and all modules are in strict mode).
 
 Warning: Don't rely on this. I mean, there are easier ways to get an `undefined` value 😀.
@@ -323,7 +338,10 @@ Warning: Don't rely on this. I mean, there are easier ways to get an `undefined
 Otherwise: otherwise)
 ----------------------------------------------------------
 
-```
+---
+
+```js
+
 function someFunction() {  return this;}
 // Logs `true`:console.log(someFunction() === globalThis);
 
@@ -332,4 +350,7 @@ function someFunction() {  return this;}
 In this case, the value of `this` is the same as `globalThis`.
 
 
-````
+`---
+
+```js
+
