@@ -1,5 +1,5 @@
 ---
-title: Web Apis
+title: Web Api
 weight: 0
 excerpt: lorem-ipsum
 seo:
