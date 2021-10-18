@@ -13,7 +13,7 @@ template: docs
 
 
 
-***Learn how to kill errant processes in this tutorial from our archives.***
+***Learn how to kill errant processes in this tutorial.***
 
 Picture this: You've launched an application (be it from your favorite desktop menu or from the command line) and you start using that launched app, only to have it lock up on you, stop performing, or unexpectedly die. You try to run the app again, but it turns out the original never truly shut down completely.
 
