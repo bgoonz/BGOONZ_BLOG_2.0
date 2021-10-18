@@ -1,5 +1,5 @@
 ---
-title: Media QueriQueries 
+title: Media Queries 
 subtitle: lorem-ipsum
 date: '2021-10-18'
 thumb_image_alt: lorem-ipsum
