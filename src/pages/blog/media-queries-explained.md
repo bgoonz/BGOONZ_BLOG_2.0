@@ -1,6 +1,6 @@
 ---
 title: Media Queries 
-subtitle: lorem-ipsum
+subtitle: explained
 date: '2021-10-18'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
