@@ -11,6 +11,131 @@ template: docs
 ---
 ## Web Audio Api
 
+Basic concepts behind Web Audio API
+===================================
+
+This article explains some of the audio theory behind how the features of the Web Audio API work, to help you make informed decisions while designing how audio is routed through your app.
+
+It won't turn you into a master sound engineer, but it will give you enough background to understand why the Web Audio API works like it does.
+
+[Audio graphs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_graphs "Permalink to Audio graphs")
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) involves handling audio operations inside an [audio context](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext), and has been designed to allow **modular routing**. Basic audio operations are performed with **audio nodes**, which are linked together to form an **audio routing graph**. Several sources --- with different types of channel layout --- are supported even within a single context. This modular design provides the flexibility to create complex audio functions with dynamic effects.
+
+Audio nodes are linked via their inputs and outputs, forming a chain that starts with one or more sources, goes through one or more nodes, then ends up at a destination. Although, you don't have to provide a destination if you, say, just want to visualize some audio data. A simple, typical workflow for web audio would look something like this:
+
+1.  Create the audio context.
+2.  Inside the context, create sources --- such as [`<audio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio), oscillator, or stream.
+3.  Create effects nodes, such as reverb, biquad filter, panner, or compressor.
+4.  Choose the final destination for the audio, such as the user's computer speakers.
+5.  Establish connections from the audio sources through zero or more effects, eventually ending at the chosen destination.
+
+**Note:** The number of audio channels available on a signal is frequently presented in a numeric format, such as 2.0 or 5.1. This is called [channel notation](https://en.wikipedia.org/wiki/Surround_sound#Channel_notation "channel notation"). The first number is the number of full frequency range audio channels that the signal includes. The number after the period indicates the number of those channels which are reserved for low-frequency effect (LFE) outputs; these are often referred to as **subwoofers**.
+
+![A simple box diagram with an outer box labeled Audio context, and three inner boxes labeled Sources, Effects and Destination. The three inner boxes have arrow between them pointing from left to right, indicating the flow of audio information.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API/webaudioapi_en.svg)
+
+Each input or output is composed of one or more audio **channels,** which together represent a specific audio layout. Any discrete channel structure is supported, including *mono*, *stereo*, *quad*, *5.1*, and so on.
+
+![Show the ability of AudioNodes to connect via their inputs and outputs and the channels inside these inputs/outputs.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API/mdn.png)
+
+Audio sources can be obtained in a number of ways:
+
+-   Sound can be generated directly in JavaScript by an audio node (such as an oscillator).
+-   Created from raw PCM data (the audio context has methods to decode supported audio formats).
+-   Taken from HTML media elements (such as [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) or [`<audio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)).
+-   Taken directly from a [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) (such as a webcam or microphone).
+
+[Audio data: what's in a sample](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_data_whats_in_a_sample "Permalink to Audio data: what's in a sample")
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+When an audio signal is processed, **sampling** means the conversion of a [continuous signal](https://en.wikipedia.org/wiki/Continuous_signal "Continuous signal") to a [discrete signal](https://en.wikipedia.org/wiki/Discrete_signal "Discrete signal"); or put another way, a continuous sound wave, such as a band playing live, is converted to a sequence of samples (a discrete-time signal) that allow a computer to handle the audio in distinct blocks.
+
+A lot more information can be found on the Wikipedia page [Sampling (signal processing)](https://en.wikipedia.org/wiki/Sampling_%28signal_processing%29).
+
+[Audio buffers: frames, samples and channels](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_buffers_frames_samples_and_channels "Permalink to Audio buffers: frames, samples and channels")
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+An [`AudioBuffer`](https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer) takes as its parameters a number of channels (1 for mono, 2 for stereo, etc), a length, meaning the number of sample frames inside the buffer, and a sample rate, which is the number of sample frames played per second.
+
+A sample is a single float32 value that represents the value of the audio stream at each specific point in time, in a specific channel (left or right, if in the case of stereo). A frame, or sample frame, is the set of all values for all channels that will play at a specific point in time: all the samples of all the channels that play at the same time (two for a stereo sound, six for 5.1, etc.)
+
+The sample rate is the number of those samples (or frames, since all samples of a frame play at the same time) that will play in one second, measured in Hz. The higher the sample rate, the better the sound quality.
+
+Let's look at a Mono and a Stereo audio buffer, each is one second long, and playing at 44100Hz:
+
+-   The Mono buffer will have 44100 samples, and 44100 frames. The `length` property will be 44100.
+-   The Stereo buffer will have 88200 samples, but still 44100 frames. The `length` property will still be 44100 since it's equal to the number of frames.
+
+![A diagram showing several frames in an audio buffer in a long line, each one containing two samples, as the buffer has two channels, it is stereo.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API/sampleframe-english.png)
+
+When a buffer plays, you will hear the left most sample frame, and then the one right next to it, etc. In the case of stereo, you will hear both channels at the same time. Sample frames are very useful, because they are independent of the number of channels, and represent time, in a useful way for doing precise audio manipulation.
+
+**Note:** To get a time in seconds from a frame count, divide the number of frames by the sample rate. To get a number of frames from a number of samples, divide by the channel count.
+
+Here's a couple of simple examples:
+
+```
+var context = new AudioContext();
+var buffer = context.createBuffer(2, 22050, 44100);
+
+```
+
+Copy to Clipboard
+
+**Note:** In [digital audio](https://en.wikipedia.org/wiki/Digital_audio "Digital audio"), **44,100 [Hz](https://en.wikipedia.org/wiki/Hertz)** (alternately represented as **44.1 kHz**) is a common [sampling frequency](https://en.wikipedia.org/wiki/Sampling_frequency "Sampling frequency"). Why 44.1kHz?
+
+Firstly, because the [hearing range](https://en.wikipedia.org/wiki/Hearing_range "Hearing range") of human ears is roughly 20 Hz to 20,000 Hz. Via the [Nyquist--Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem "Nyquist--Shannon sampling theorem"), the sampling frequency must be greater than twice the maximum frequency one wishes to reproduce. Therefore, the sampling rate has to be greater than 40 kHz.
+
+Secondly, signals must be [low-pass filtered](https://en.wikipedia.org/wiki/Low-pass_filter "Low-pass filter") before sampling, otherwise [aliasing](https://en.wikipedia.org/wiki/Aliasing) occurs. While an ideal low-pass filter would perfectly pass frequencies below 20 kHz (without attenuating them) and perfectly cut off frequencies above 20 kHz, in practice a [transition band](https://en.wikipedia.org/wiki/Transition_band "Transition band") is necessary, where frequencies are partly attenuated. The wider this transition band is, the easier and more economical it is to make an [anti-aliasing filter](https://en.wikipedia.org/wiki/Anti-aliasing_filter "Anti-aliasing filter"). The 44.1 kHz sampling frequency allows for a 2.05 kHz transition band.
+
+If you use this call above, you will get a stereo buffer with two channels, that when played back on an AudioContext running at 44100Hz (very common, most normal sound cards run at this rate), will last for 0.5 seconds: 22050 frames/44100Hz = 0.5 seconds.
+
+```
+var context = new AudioContext();
+var buffer = context.createBuffer(1, 22050, 22050);
+
+```
+
+Copy to Clipboard
+
+If you use this call, you will get a mono buffer with just one channel), that when played back on an AudioContext running at 44100Hz, will be automatically *resampled* to 44100Hz (and therefore yield 44100 frames), and last for 1.0 second: 44100 frames/44100Hz = 1 second.
+
+**Note:** Audio resampling is very similar to image resizing. Say you've got a 16 x 16 image, but you want it to fill a 32x32 area. You resize (or resample) it. The result has less quality (it can be blurry or edgy, depending on the resizing algorithm), but it works, with the resized image taking up less space. Resampled audio is exactly the same: you save space, but in practice you will be unable to properly reproduce high frequency content, or treble sound.
+
+### [Planar versus interleaved buffers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#planar_versus_interleaved_buffers "Permalink to Planar versus interleaved buffers")
+
+The Web Audio API uses a planar buffer format. The left and right channels are stored like this:
+
+LLLLLLLLLLLLLLLLRRRRRRRRRRRRRRRR (for a buffer of 16 frames)
+
+This is very common in audio processing: it makes it easy to process each channel independently.
+
+The alternative is to use an interleaved buffer format:
+
+LRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLR (for a buffer of 16 frames)
+
+This format is very common for storing and playing back audio without much processing, for example a decoded MP3 stream.
+
+The Web Audio API exposes **only** planar buffers, because it's made for processing. It works with planar, but converts the audio to interleaved when it is sent to the sound card for playback. Conversely, when an MP3 is decoded, it starts off in interleaved format, but is converted to planar for processing.
+
+[Audio channels](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_channels "Permalink to Audio channels")
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Different audio buffers contain different numbers of channels: from the more basic mono (only one channel) and stereo (left and right channels), to more complex sets like quad and 5.1, which have different sound samples contained in each channel, leading to a richer sound experience. The channels are usually represented by standard abbreviations detailed in the table below:
+
+| Name | Channels |
+| --- | --- |
+| *Mono* | `0: M: mono` |
+| *Stereo* | `0: L: left 1: R: right` |
+| *Quad* | `0: L: left 1: R: right 2: SL: surround left 3: SR: surround right` |
+| *5.1* | `0: L: left 1: R: right 2: C: center 3: LFE: subwoofer 4: SL: surround left 5: SR: surround right` |
+
+### [Up-mixing and down-mixing](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#up-mixing_and_down-mixing "Permalink to Up-mixing and down-mixing")
+
+When the number of channels doesn't match between an input and an output, up- or down-mixing happens according the following rules. This can be somewhat controlled by setting the [`AudioNode.channelInterpretation`](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelInterpretation) property to `speakers` or `discrete`:
+
+
 
 Web Audio API
 =============
