@@ -3,7 +3,7 @@ title: What is THIS
 weight: 0
 excerpt: Arrow functions are great because the inner value of this cant be changed, its *always* the same as the outer this.
 seo:
-  title: ''
+  title: 'This in JavaScript'
   description: 'Arrow functions are great because the inner value of this cant be changed, its *always* the same as the outer this.'
   robots: []
   extra: []
