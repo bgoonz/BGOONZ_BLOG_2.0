@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: All Emojis
 weight: 0
 excerpt: All Emojis
 seo:
