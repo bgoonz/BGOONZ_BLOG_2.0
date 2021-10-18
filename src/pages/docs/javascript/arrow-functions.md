@@ -9,7 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-## Lorem ipsum
+## JS Fat Arrow Functions
 
 Classical JavaScript function syntax doesn't provide for any flexibility, be that a 1 statement function or an unfortunate multi-page function. Every time you need a function you have to type out the dreaded `function () {}`. More concise function syntax was one of the many reasons why [CoffeeScript](http://coffeescript.org/) gained so much momentum back in the day. This is especially pronounced in the case of tiny callback functions. Lets look at a Promise chain:
 
