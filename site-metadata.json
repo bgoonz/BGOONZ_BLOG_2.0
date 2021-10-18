@@ -213,6 +213,16 @@
                 "type": "action_menu"
             },
             {
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": false,
+                "subnav_links": []
+            },
+            {
                 "label": "Projects",
                 "url": "https://project-portfolio42.netlify.app/",
                 "style": "primary",
