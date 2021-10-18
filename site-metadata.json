@@ -221,7 +221,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "Cool Stuff",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
