@@ -81,7 +81,7 @@ var buffer = context.createBuffer(2, 22050, 44100);
 
 ```
 
-Copy to Clipboard
+
 
 **Note:** In [digital audio](https://en.wikipedia.org/wiki/Digital_audio "Digital audio"), **44,100 [Hz](https://en.wikipedia.org/wiki/Hertz)** (alternately represented as **44.1 kHz**) is a common [sampling frequency](https://en.wikipedia.org/wiki/Sampling_frequency "Sampling frequency"). Why 44.1kHz?
 
@@ -97,7 +97,7 @@ var buffer = context.createBuffer(1, 22050, 22050);
 
 ```
 
-Copy to Clipboard
+
 
 If you use this call, you will get a mono buffer with just one channel), that when played back on an AudioContext running at 44100Hz, will be automatically *resampled* to 44100Hz (and therefore yield 44100 frames), and last for 1.0 second: 44100 frames/44100Hz = 1 second.
 
