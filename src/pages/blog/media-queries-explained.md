@@ -666,4 +666,4 @@ More info
 * * * * *
 
 #### s/#provide-bigger-touch-targets-when-devices-have-a-course-pointer)Provide bigger touch targets when devices have a `course` pointer
->>>>>>> 427aa83b4372acc29713e0034e51e8665e298be5
+
