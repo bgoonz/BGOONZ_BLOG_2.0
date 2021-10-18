@@ -27,7 +27,6 @@ template: docs
 <br>
 <br>
 
-
 # Family Promise Project:
 
 # Table of contents

@@ -12,6 +12,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 ## Articles
 
 ### [**✅⇒articles/basic-web-dev/🌍**](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)

@@ -3,17 +3,16 @@ title: What is THIS
 weight: 0
 excerpt: Arrow functions are great because the inner value of this cant be changed, its *always* the same as the outer this.
 seo:
-  title: 'This in JavaScript'
-  description: 'Arrow functions are great because the inner value of this cant be changed, its *always* the same as the outer this.'
-  robots: []
-  extra: []
+    title: 'This in JavaScript'
+    description: 'Arrow functions are great because the inner value of this cant be changed, its *always* the same as the outer this.'
+    robots: []
+    extra: []
 template: docs
 ---
+
 # What is THIS
 
-
-If the function is defined as an arrow function: [#](https://web.dev/javascript-this/#arrow-functions)
-------------------------------------------------------------------------------------------------------
+## If the function is defined as an arrow function: [#](https://web.dev/javascript-this/#arrow-functions)
 
 ```
 const arrowFunction = () => {  console.log(this);};
@@ -75,8 +74,7 @@ Alternative pattens involve binding an existing function in the constructor, or 
 class Whatever {  constructor() {    this.someMethod = () => {      // ...    };  }}
 ```
 
-Otherwise, if the function/class is called with `new`: [#](https://web.dev/javascript-this/#new)
-------------------------------------------------------------------------------------------------
+## Otherwise, if the function/class is called with `new`: [#](https://web.dev/javascript-this/#new)
 
 ```
 new Whatever();
@@ -108,8 +106,7 @@ When called with `new`, the value of `this` *can't* be changed by calling th
 const obj = {MyClass};// Logs `true` - parent object is ignored:new obj.MyClass();
 ```
 
-Otherwise, if the function has a 'bound' `this` value: [#](https://web.dev/javascript-this/#bound)
---------------------------------------------------------------------------------------------------
+## Otherwise, if the function has a 'bound' `this` value: [#](https://web.dev/javascript-this/#bound)
 
 ```
 function someFunction() {  return this;}const boundObject = {hello: 'world'};const boundFunction = someFunction.bind(boundObject);
@@ -139,8 +136,7 @@ When calling a bound function, the value of `this` *can't* be changed by call
 const obj = {boundFunction};// Logs `true` - parent object is ignored:console.log(obj.boundFunction() === boundObject);
 ```
 
-Otherwise, if `this` is set at call-time: [#](https://web.dev/javascript-this/#call-apply)
-------------------------------------------------------------------------------------------
+## Otherwise, if `this` is set at call-time: [#](https://web.dev/javascript-this/#call-apply)
 
 ```
 function someFunction() {  return this;}const someObject = {hello: 'world'};// Logs `true`:console.log(someFunction.call(someObject) === someObject);// Logs `true`:console.log(someFunction.apply(someObject) === someObject);
@@ -166,8 +162,7 @@ Do
 element.addEventListener('click', (event) => {  // Ideally, grab it from a parent scope:  console.log(element);  // But if you can't do that, get it from the event object:  console.log(event.currentTarget);});
 ```
 
-Otherwise, if the function is called via a parent object (`parent.func()`): [#](https://web.dev/javascript-this/#object-member)
--------------------------------------------------------------------------------------------------------------------------------
+## Otherwise, if the function is called via a parent object (`parent.func()`): [#](https://web.dev/javascript-this/#object-member)
 
 ```
 const obj = {  someMethod() {    return this;  },};// Logs `true`:console.log(obj.someMethod() === obj);
@@ -195,8 +190,7 @@ Fun fact: Not all APIs use `this` internally. Console methods like `console.l
 
 Warning: Don't transplant a function onto an object just to set `this` to some value unrelated to the parent object; it's usually unexpected and it's why `this` gets such a bad reputation. Consider passing the value as an argument instead; it's more explicit, and works with arrow functions.
 
-Otherwise, if the function or parent scope is in strict mode: [#](https://web.dev/javascript-this/#strict)
-----------------------------------------------------------------------------------------------------------
+## Otherwise, if the function or parent scope is in strict mode: [#](https://web.dev/javascript-this/#strict)
 
 ```
 function someFunction() {  'use strict';  return this;}// Logs `true`:console.log(someFunction() === undefined);
@@ -206,13 +200,10 @@ In this case, the value of `this` is undefined. `'use strict'` isn't needed 
 
 Warning: Don't rely on this. I mean, there are easier ways to get an `undefined` value 😀.
 
-Otherwise: [#](https://web.dev/javascript-this/#otherwise)
-----------------------------------------------------------
+## Otherwise: [#](https://web.dev/javascript-this/#otherwise)
 
 ```
 function someFunction() {  return this;}// Logs `true`:console.log(someFunction() === globalThis);
 ```
 
 In this case, the value of `this` is the same as `globalThis`.
-
-

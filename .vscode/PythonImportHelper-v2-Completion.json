@@ -1,0 +1,90 @@
+[
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "quote",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "process_dir",
+        "kind": 2,
+        "importPath": "notes.dirhtml",
+        "description": "notes.dirhtml",
+        "peekOfCode": "def process_dir(top_dir, opts):\n    glob_patt = opts.filter or '*'\n    path_top_dir: Path\n    path_top_dir = Path(top_dir)\n    index_file = None\n    index_path = Path(path_top_dir, opts.output_file)\n    if opts.verbose:\n        print(f'Traversing dir {path_top_dir.absolute()}')\n    try:\n        index_file = open(index_path, 'w')",
+        "detail": "notes.dirhtml",
+        "documentation": {}
+    },
+    {
+        "label": "pretty_size",
+        "kind": 2,
+        "importPath": "notes.dirhtml",
+        "description": "notes.dirhtml",
+        "peekOfCode": "def pretty_size(bytes, units=UNITS_MAPPING):\n    \"\"\"Human-readable file sizes.\n    ripped from https://pypi.python.org/pypi/hurry.filesize/\n    \"\"\"\n    for factor, suffix in units:\n        if bytes >= factor:\n            break\n    amount = int(bytes / factor)\n    if isinstance(suffix, tuple):\n        singular, multiple = suffix",
+        "detail": "notes.dirhtml",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_OUTPUT_FILE",
+        "kind": 5,
+        "importPath": "notes.dirhtml",
+        "description": "notes.dirhtml",
+        "peekOfCode": "DEFAULT_OUTPUT_FILE = 'sitemap.html'\ndef process_dir(top_dir, opts):\n    glob_patt = opts.filter or '*'\n    path_top_dir: Path\n    path_top_dir = Path(top_dir)\n    index_file = None\n    index_path = Path(path_top_dir, opts.output_file)\n    if opts.verbose:\n        print(f'Traversing dir {path_top_dir.absolute()}')\n    try:",
+        "detail": "notes.dirhtml",
+        "documentation": {}
+    },
+    {
+        "label": "UNITS_MAPPING",
+        "kind": 5,
+        "importPath": "notes.dirhtml",
+        "description": "notes.dirhtml",
+        "peekOfCode": "UNITS_MAPPING = [\n    (1024 ** 5, ' PB'),\n    (1024 ** 4, ' TB'),\n    (1024 ** 3, ' GB'),\n    (1024 ** 2, ' MB'),\n    (1024 ** 1, ' KB'),\n    (1024 ** 0, (' byte', ' bytes')),\n]\ndef pretty_size(bytes, units=UNITS_MAPPING):\n    \"\"\"Human-readable file sizes.",
+        "detail": "notes.dirhtml",
+        "documentation": {}
+    }
+]

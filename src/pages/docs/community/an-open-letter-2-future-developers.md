@@ -3,23 +3,20 @@ title: lorem-ipsum
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
 
-
-1\. Why are frameworks useful?
-------------------------------
+## 1\. Why are frameworks useful?
 
 Essentially the allure of these is the amount of time that is saved and the resulting efficiency in getting a project rolled out faster because there's a lot less of the initial work to be done.
 
 Frameworks take care of tasks like default browser settings, file structures, and layout templates for your website. This automation generates a uniform design for page elements like text, tables, forms, and buttons, amongst other things. Even complex navigation menus become standardized with frameworks as it can be consistently applied across your website with ease.
 
-2\. Types of framework
-----------------------
+## 2\. Types of framework
 
 There are many different kinds of this platform available for programmers. Typically, like a lot of things within this discipline can be split between [frontend and backend development](https://careerfoundry.com/en/blog/web-development/whats-the-difference-between-frontend-and-backend/)---first let's make the distinction between the two to help you understand the usefulness of these solutions.
 
@@ -41,12 +38,11 @@ Best of all, frontend frameworks resolve any issues with browser compatibility a
 
 #### Curious about a career in Web Development?
 
-Start learning for free! 
+Start learning for free!
 
 [![](https://careerfoundry.com/en/wp-content/uploads/2021/07/web-image@3x.jpg)](https://careerfoundry.com/en/short-courses/become-a-web-developer/?popup-tracking=blog-inline-DEV)
 
-3\. Popular frameworks
-----------------------
+## 3\. Popular frameworks
 
 There are many of these tools that have become must-haves for beginner and expert web developers alike. As well as different languages, they focus on different directives and outcomes.
 
@@ -60,8 +56,7 @@ Skeleton is a lighter example that doesn't come with all the bells and whistles
 
 A simple Google search will turn up a lot of results for top tools being used and recommended. It's definitely beneficial to check out the different options and see which suits your development needs and design goals.
 
-4\. How do I use frameworks?
-----------------------------
+## 4\. How do I use frameworks?
 
 Regardless of whether a developer uses a full frontend framework like Bootstrap or a lightweight option like Skeleton, these are efficient tools that should be seriously considered in every developer's process.
 
@@ -69,8 +64,7 @@ Recognized frameworks offer more ease in collaboration as developers can access 
 
 The ease of implementation and efficiency makes it almost a necessity to employ these tools in a web developer's process. Any time a programmer is finding themselves creating an ever-growing proprietary list of CSS rules, it's probably a good idea to look into using a framework to tidy things up.
 
-5\. What is a responsive framework?
------------------------------------
+## 5\. What is a responsive framework?
 
 One of the best features of these systems is that they help create websites that are easily accessible and are able to be viewed across different browsers on different devices. A lot of frameworks accomplish this with dynamic code---utilizing classes that can be reused and formatted to take into consideration the device and/or browser that is being used.
 
@@ -78,8 +72,7 @@ In other words, the layouts of webpages will change---certain elements will disa
 
 In this current age when users are [more likely to view websites on their mobile devices](https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/) than their computers, it's important to have a mobile responsive website that creates an enriching user experience no matter what interface the user interacts with. In this video, our in-house web developer Abhi explains more about styling a mobile-responsive website with CSS:
 
-6\. Final thoughts
-------------------
+## 6\. Final thoughts
 
 Critics of frontend frameworks cite them as the source of a lot of cookie-cutter websites that are identical in appearance and interaction. This however, is an oversimplification. Why? Let's go back to the cooking example: a spatula is just a spatula---a lot of people have one and use the tool in the kitchen. But the food that is created will vary wildly across the spectrum, depending on the cook.
 
