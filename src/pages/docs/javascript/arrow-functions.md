@@ -1,7 +1,7 @@
 ---
 title: JS Fat Arrow Functions
 weight: 0
-excerpt: lorem-ipsum
+excerpt: JS Fat Arrow Functions
 seo:
   title: ''
   description: ''
