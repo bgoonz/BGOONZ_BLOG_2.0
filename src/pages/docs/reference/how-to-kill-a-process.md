@@ -9,216 +9,174 @@ seo:
   extra: []
 template: docs
 ---
-# How to Kill a Process in Linux Using ps, pgrep, pkill and More
+# How to Kill a Process in Linux 
 
-> Managing processes in Linux can appear daunting to a new system administrator (sysadmin) at first. But with a little explanation and demonstration, you’ll learn how to fi...
 
-Managing processes in Linux can appear daunting to a new system administrator (sysadmin) at first. But with a little explanation and demonstration, you’ll learn how to find and kill processes in Linux is just a matter of using command-line tools such as ps and kill.
 
-In this article, you will learn commands for locating running and errant processes, killing (terminating) running processes, finding background processes, and much more on any Linux operating system.
+***Learn how to kill errant processes in this tutorial from our archives.***
 
-1 second of 1 minute, 4 secondsVolume 0%
+Picture this: You've launched an application (be it from your favorite desktop menu or from the command line) and you start using that launched app, only to have it lock up on you, stop performing, or unexpectedly die. You try to run the app again, but it turns out the original never truly shut down completely.
 
-This ad will end in 7
+What do you do? You kill the process. But how? Believe it or not, your best bet most often lies within the command line. Thankfully, Linux has every tool necessary to empower you, the user, to kill an errant process. However, before you immediately launch that command to kill the process, you first have to know what the process is. How do you take care of this layered task? It's actually quite simple...once you know the tools at your disposal.
 
-00:08
+Let me introduce you to said tools.
 
-00:06
+The steps I'm going to outline will work on almost every Linux distribution, whether it is a desktop or a server. I will be dealing strictly with the command line, so open up your terminal and prepare to type.
 
-00:15
+### Locating the process
 
-By the end of the article, you will be managing processes based on process identification numbers (PIDs) from the command line like a Linux pro. Keep reading to learn all about process management commands in Linux!
+The first step in killing the unresponsive process is locating it. There are two commands I use to locate a process: *top *and *ps*. Top is a tool every administrator should get to know. With *top*, you get a full listing of currently running process. From the command line, issue *top* to see a list of your running processes (Figure 1).
 
-## Prerequisites
+![](https://lcom.static.linuxfound.org/sites/lcom/files/killa.jpg)
 
-This article is going to be a walk-through of how to manage processes in Linux. If you want to be hands-on, you will need the following:
+Figure 1: The top command gives you plenty of information.
 
-*   A Linux host, which can be a virtual machine or a physical machine.
+From this list you will see some rather important information. Say, for example, Chrome has become unresponsive. According to our *top* display, we can discern there are four instances of chrome running with Process IDs (PID) 3827, 3919, 10764, and 11679. This information will be important to have with one particular method of killing the process.
 
-*   To try the PowerShell examples, install [*PowerShell 7.1.1*](https://github.com/PowerShell/PowerShell) on a Linux host.
+Although *top* is incredibly handy, it's not always the most efficient means of getting the information you need. Let's say you know the Chrome process is what you need to kill, and you don't want to have to glance through the real-time information offered by *top*. For that, you can make use of the *ps *command and filter the output through *grep*. The *ps* command reports a snapshot of a current process and *grep *prints lines matching a pattern. The reason why we filter *ps* through *grep* is simple: If you issue the *ps* command by itself, you will get a snapshot listing of all current processes. We only want the listing associated with Chrome. So this command would look like:
 
-*   A non-root user account. While root access is not required, there will be an example where the root user can kill the running process of another user.
+ps aux | grep chrome
 
-> *The distribution of Linux, you choose to use, is up to you. This article will be based on Ubuntu 20.04 LTS. However, the commands are standard for the Linux operating system.*
+The *aux* options are as follows:
 
-Ready to get started? Good, let’s dive in.
+-   a = show processes for all users
 
-## Managing Processes in Linux
+-   u = display the process's user/owner
 
-On occasion, you may run into a scenario where you need to stop a running process on a Linux system. As an example, you may have a bash script that runs on a schedule. That bash script is configured to run as another user via a [*cron*](https://man7.org/linux/man-pages/man8/cron.8.html) job (Linux process scheduler).
+-   x = also show processes not attached to a terminal
 
-Sometimes, this script spawns errant processes that can make the script fail. How do you kill those errant processes without rebooting the system or stopping the script?
+The *x* option is important when you're hunting for information regarding a graphical application.
 
-In the next sections, you will walk through commands used to locate and terminate or *kill* processes on a Linux system. Each section will build on the last. You will learn about ps, top, pgrep, kill, and pkill commands all native to Linux.
+When you issue the command above, you'll be given more information than you need (Figure 2) for the killing of a process, but it is sometimes more efficient than using top.
 
-As a bonus, PowerShell equivalent commands \[Get-Process]\(https://adamtheautomator.com/powershell-get-process/ "Get-Process") and Stop-Process are included if Linux native commands are not your style.
+![](https://lcom.static.linuxfound.org/sites/lcom/files/killb.jpg)
 
-Before killing a process you must locate the correct process to target. The unique PID allows for precise targeting. Read on to learn how to locate the correct processes for termination.
+Figure 2: Locating the necessary information with the ps command.
 
-### Using the ps Command to Display Process Information
+### Killing the process
 
-The [*Process Status*](https://man7.org/linux/man-pages/man1/ps.1.html) or ps command displays information related to active processes on a Linux system. You can locate a running process and even *background processes* with ps.
+Now we come to the task of killing the process. We have two pieces of information that will help us kill the errant process:
 
-The command ps will, by default, display all of the processes for the  (EUID) of the current user. Running the ps command, as shown below, will return every running process that your user can terminate.
+-   Process name
 
-    ps
+-   Process ID
 
+Which you use will determine the command used for termination. There are two commands used to kill a process:
 
+-   kill -- Kill a process by ID
 
-Displaying processes matching the EUID (effective user ID) for the user bkindle.
+-   killall -- Kill a process by name
 
-### Finding Expanded Process Information Using the top Command
+There are also different signals that can be sent to both kill commands. What signal you send will be determined by what results you want from the kill command. For instance, you can send the HUP (hang up) signal to the kill command, which will effectively restart the process. This is always a wise choice when you need the process to immediately restart (such as in the case of a daemon). You can get a list of all the signals that can be sent to the kill command by issuing kill -l. You'll find quite a large number of signals (Figure 3).
 
-What if you want to find constantly refreshing information on running processes and system metrics, in that case, you can use the top command. Unlike ps, the top command updates the process information on the screen over a set interval.
+![](https://lcom.static.linuxfound.org/sites/lcom/files/killc.jpg)
 
-When you run the top command, you will see more than just a PID. Included with process details are CPU and memory percentages, [*Nice values (CPU scheduling process priority)*](https://www.tecmint.com/set-linux-process-priority-using-nice-and-renice-commands/), and the process priority (PR) set by the Linux kernel.
+Figure 3: The available kill signals.
 
-For a new or experienced sysadmin, the top command is often the primary tool for managing vital system resources and processes. As shown below, the top command output displays more process information than the ps command including overall system metrics.
+The most common kill signals are:
 
+|
 
+Signal Name
 
-The top command on Ubuntu Desktop 20.04 LTS showing all running PID’s.
+ |
 
-* is an enhanced variant of top which includes various improvements, such as a colorized terminal output.*
+Single Value
 
-Let’s say you’d like to inspect the memory or CPU resources a process is consuming. In that case, you can use the p switch of top as shown below.
+ |
 
-    top -p 2113
+Effect
 
+ |
+|
 
+SIGHUP
 
-The top command displaying information on only one PID, 2113.
+ |
 
-Perhaps you need to display all running processes for a specific username. The top command offers the **u** switch to display only a specific user’s processes. As seen in the example below, PIDs matching only the user ID bkindle are shown.
+1
 
-    top -u bkindle
+ |
 
+Hangup
 
+ |
+|
 
-The top command displaying only processes for the user bkindle.
+SIGINT
 
-### Locating Specific Process PIDs with the pgrep Command
+ |
 
-Originally a Solaris command, \[pgrep]\(https://man7.org/linux/man-pages/man1/pgrep.1.html) was ported for use with Linux. Combining the search power of the grep command and the process management of ps, pgrep offers flexibility in finding the exact process to target.
+2
 
-Although ps displays more information, pgrep is designed to return only the PID of the returned processes. pgrep helps with locating the process using the [*many available search parameters*](https://man7.org/linux/man-pages/man1/pgrep.1.html). In the following example, pgrep is shown searching for any process matching vmtoolsd.
+ |
 
-    pgrep vmtoolsd
+Interrupt from keyboard
 
+ |
+|
 
+SIGKILL
 
-Using pgrep to obtain all PIDs associated with vmtoolsd.
+ |
 
-Similarly, specify a user ID with the u switch to retrieve only processes associated with that specific user. As shown below, only a single PID is returned for the user bkindle and the vmtoolsd process.
+9
 
-    pgrep -u bkindle vmtoolsd
+ |
 
+Kill signal
 
+ |
+|
 
-Retrieving the specific PID for the vmtoolsd process associated with the user bkindle.
+SIGTERM
 
-### Finding Processes with PowerShell’s Get-Process in Linux
+ |
 
-Typical Linux commands work great, but did you know PowerShell is able to manage Linux processes too? The Get-Process cmdlet works similar to the Linux ps command and returns process information. For example, perhaps you need to find all running processes by the current user, bkindle. As shown below, find all PIDs (labeled ID by Get-Process) of the user bkindle.
+15
 
-    Get-Process -IncludeUserName |
-    	Where-Object {$_.UserName -eq 'bkindle'} |
-    	Select-Object -Property 'Id','UserName','ProcessName'
+ |
 
+Termination signal
 
+ |
+|
 
-Retrieving Linux PID’s with PowerShell’s Get-Process cmdlet.
+SIGSTOP
 
-***Related: ***
+ |
 
-Having learned how to locate different processes, read on to discover all the ways to terminate or kill a process in Linux!
+17, 19, 23
 
-## Killing Processes Using the Kill Commands in Linux
+ |
 
-In previous sections, you learned how to locate the PID of the process you want to send a kill signal to using native Linux and PowerShell commands. The next sections will explain how to use the [\_kill\_](https://man7.org/linux/man-pages/man2/kill.2.html) and pkill programs, its associated signals, and command-line switches.
+Stop the process
 
-### Linux Signals and Process Management
+ |
 
-Signals are the method that Linux uses to communicate with processes running in the operating system. The three primary signals that the kill command uses to terminate processes are:
+What's nice about this is that you can use the Signal Value in place of the Signal Name. So you don't have to memorize all of the names of the various signals.\
+So, let's now use the *kill *command to kill our instance of chrome. The structure for this command would be:
 
-*   1 (SIGHUP) – Terminates interactive programs and causes daemons (background services) to re-read the configuration files the process uses.
+kill SIGNAL PID
 
-*   9 (SIGKILL) – Forces the process to exit without performing graceful shutdown tasks.
+Where SIGNAL is the signal to be sent and PID is the Process ID to be killed. We already know, from our *ps* command that the IDs we want to kill are 3827, 3919, 10764, and 11679. So to send the kill signal, we'd issue the commands:
 
-*   15 (SIGTERM) – Allows a process to terminate gracefully, such as closing open files when finished. This is the default signal used when no number is specified when using the kill command.
+kill -9 3827
 
-> *While this article only focuses on the three main signals used for killing processes, there are a total of 64 available signals. Use kill -l to get the list of signals and their corresponding number.*
+kill -9 3919
 
-Great video on understanding process signals
+kill -9 10764
 
-Now that you understand the three main signals used in terminating a process, learn how to kill a process in the next sections.
+kill -9 11679
 
-### Using the kill Command to Terminate a Process
+Once we've issued the above commands, all of the chrome processes will have been successfully killed.
 
-In this next example, you will use the kill command. Pretend for a moment that you are running a PowerShell instance, named pwsh, and the PID assigned is 22687. One way to terminate this process is shown below.
+Let's take the easy route! If we already know the process we want to kill is named chrome, we can make use of the *killall *command and send the same signal the process like so:
 
-1.  Use pgrep pwsh to determine the PID for the process pwsh, used in the kill command.
+*killall -9 chrome*
 
-2.  Use kill -s TERM 22687 to terminate the pwsh process gracefully. The TERM command maps to the 15 (SIGTERM) signal and indicated using the s parameter of the kill command.
+The only caveat to the above command is that it may not catch all of the running chrome processes. If, after running the above command, you issue the ps aux|grep chrome command and see remaining processes running, your best bet is to go back to the *kill *command and send signal 9 to terminate the process by PID.
 
-3.  Use your choice of top, ps, or pgrep to verify the PID is no longer listed.
+### Ending processes made easy
 
-Shown below is an example of the above process from an Ubuntu 20.04 LTS bash terminal.
-
-
-
-Using kill and associated commands to terminate the pwsh process.
-
-> *The  command will terminate all processes based on a name instead of PID, which can make this command pretty destructive if used carelessly. If you choose to use this command, however, use the i option to cause the command to ask for confirmation.*
-
-### Killing Processes by Name with pkill
-
-You may have noticed that the kill command only works with process IDs. This can make terminating a process a complicated multi-step process. The \_\[pkill]\(https://linuxize.com/post/pkill-command-in-linux/)\_ command, included in the [*procps and procps-ng*](https://gitlab.com/procps-ng/procps) packages, terminates a process based on a searched name.
-
-Functionally, the pkill command acts as a wrapper around the pgrep program. The pkill command sends a specified signal to each process found instead of only listing the PIDs in the terminal. pkill differs from kill in that pkill can only use the name of a process, not the PID.
-
-> *The pkill command is not available, by default, in Ubuntu 20.04 LTS. You will have to download and install the application. To do so, run sudo apt install mcollective-plugins-process -y.*
-
-To kill a process using pkill , perform the following steps:
-
-1.  Use ps to verify the nano application (a command-line text editor) is currently running. This step is optional, but a safety check before killing a process.
-
-2.  Use pkill -9 nano to forcefully terminate the nano application.
-
-Shown below is an example of the above process from an Ubuntu 20.04 LTS bash terminal.
-
-
-
-Using the pkill command to forcefully terminate the nano process.
-
-### Killing a Process with the Top Command
-
-When you run the top command to view running processes, you can kill a given process with the **k** keystroke. You’ll see an interactive prompt asking for the PID of a process to kill.
-
-As shown below, run the top command and press **k.** Enter the PID that you want to kill, and press the **Enter** key to immediately terminate the PID.
-
-
-
-Use top to specify a process to terminate using the **k** keystroke.
-
-Next, learn one more alternative to native Linux commands using the PowerShell Stop-Process command!
-
-### Using the PowerShell Stop-Process Command to Terminate a Process
-
-If Linux native commands aren’t your style, PowerShell has you covered! Just as with the kill command, you can terminate processes using the  cmdlet in Linux. Once again, pretend you are running a PowerShell pwsh process.
-
-1.  Find the PID with Get-Process -ProcessName 'pwsh' and note the PIDs to terminate.
-
-2.  Use Stop-Process -Id 29992,30014 to terminate the multiple processes returned.
-
-3.  Use Get-Process -ProcessName 'pwsh' and verify the PIDs, 29992 and 30014 are no longer listed, meaning they have been terminated.
-
-> *You can also use Get-Process and the kill method to terminate one or multiple processes: (Get-Process -Id \[PID]).Kill() or (Get-Process -Id \[PID1,2,3,4]).Kill().*
->
-> ***Exercise caution when using the ProcessName parameter. Using this parameter behaves similar to the killall command, and will kill all processes matching the name(s) provided.***
-
-Below is an example of the above process from an Ubuntu 20.04 LTS bash terminal.
-
-
-
-Using PowerShell, Stop-Process to kill processes in Linux.
+As you can see, killing errant processes isn't nearly as challenging as you might have thought. When I wind up with a stubborn process, I tend to start off with the *killall *command as it is the most efficient route to termination. However, when you wind up with a really feisty process, the *kill *command is the way to go.
