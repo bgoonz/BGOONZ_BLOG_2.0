@@ -15,7 +15,7 @@ export default class Body extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+             
                 <Helmet>
                     <title>
                         {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
@@ -51,7 +51,7 @@ export default class Body extends React.Component {
                 </Helmet>
                 <div id="page" className="site">
                     <Header {...this.props} />
-
+                    <div className="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width={100} data-layout="standard" data-action="like" data-size="small" data-share="true" />
                     <main id="content" className="site-content">
                         {this.props.children}
                     </main>
