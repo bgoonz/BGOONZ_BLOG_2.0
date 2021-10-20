@@ -36,5 +36,4 @@ template: docs
 -   [Markdown Templates](https://github.com/bgoonz/Markdown-Templates)
 -   [Zumzi Video Conferencing App (mesibo api backend)](https://github.com/bgoonz/zumzi-chat-messenger)
 
-
 https://pages.databricks.com/rs/094-YMS-629/images/dynamic-time-warping-background.html

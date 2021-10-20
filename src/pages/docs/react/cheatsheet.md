@@ -9,6 +9,7 @@ seo:
     extra: []
 template: docs
 ---
+
 # React Patterns:
 
 <iframe src="https://codesandbox.io/embed/lucid-pateu-ln8ex?fontsize=14&hidenavigation=1&theme=dark&view=preview"
@@ -18,12 +19,7 @@ template: docs
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-
-
 ## React Cheat Sheet
-
-
-
 
 React:
 
