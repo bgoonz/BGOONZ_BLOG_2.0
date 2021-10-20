@@ -1,5 +1,5 @@
 ---
-title: Intro To NodeJ
+title: Intro To NodeJS
 weight: 0
 excerpt: lorem-ipsum
 seo:
