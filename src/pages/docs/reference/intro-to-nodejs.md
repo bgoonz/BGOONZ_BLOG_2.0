@@ -95,5 +95,3 @@ Many of those established over time as popular options. Here is a non-comprehens
 -   [**Sapper**](https://sapper.svelte.dev/): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
 -   [**Socket.io**](https://socket.io/): A real-time communication engine to build network applications.
 -   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
-
-##### CONTRIBUTORS
