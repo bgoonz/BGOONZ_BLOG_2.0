@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Git Tricks
 weight: 0
 excerpt: lorem-ipsum
 seo:
