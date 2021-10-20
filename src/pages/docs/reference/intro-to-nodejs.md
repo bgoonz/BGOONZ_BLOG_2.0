@@ -1,7 +1,7 @@
 ---
 title: Intro To NodeJS
 weight: 0
-excerpt: lorem-ipsum
+excerpt: A Node.js app runs in a single process, without creating a new thread for every request.
 seo:
   title: ''
   description: ''
