@@ -527,3 +527,5 @@ When we used `npm install <packagename>` command for the first time, NPM creat
 > Actually, since NPM v.5, `npm install` command looks at `package-lock.json` command to install the dependencies since it contains the exact versions of the packages and their dependencies (which were installed by the developer of the project). This minimizes the conflict of versions between the development machine and production machine.
 
 By ignoring `node_modules`, we are actually saving a lot of time and bandwidth of transferring the project from a development machine to production.
+
+[![Edit nodejs-examples](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/nodejs-examples-4ohjz?autoresize=1&expanddevtools=1&fontsize=13&hidenavigation=1&theme=light&view=editor)
