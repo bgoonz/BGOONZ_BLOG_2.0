@@ -140,7 +140,7 @@ template: docs
 <br>
 <h1>                </h1>
 <br>
-<iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px"style="width: 100%;" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
