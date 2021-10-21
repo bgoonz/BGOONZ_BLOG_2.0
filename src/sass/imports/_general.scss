@@ -27,6 +27,13 @@ a {
         color: $gray-600;
     }
 }
+#social-embed{
+    position: absolute!important;
+    left: 0!important; 
+    bottom: 0!important;
+     width:600px!important;
+     margin:auto!important;
+}
 
 iframe {
     overflow-y: scroll;
