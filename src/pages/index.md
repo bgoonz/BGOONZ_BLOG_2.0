@@ -218,6 +218,7 @@ sections:
         type: action
     type: section_content
     title: Web Audio DAW
+    image: images/goals.jpg
   - title: Quick Links
     section_id: navigate from the home page
     col_number: two
