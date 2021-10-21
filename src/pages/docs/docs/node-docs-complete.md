@@ -1,7 +1,7 @@
 ---
 title: Node Docs
 weight: 0
-excerpt: lorem-ipsum
+excerpt:  Node Docs
 seo:
     title: ''
     description: ''
