@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Guidance For New Developers
 weight: 0
 excerpt: lorem-ipsum
 seo:
