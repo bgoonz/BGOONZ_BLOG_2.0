@@ -136,6 +136,10 @@ export default class Footer extends React.Component {
                                 </tr>
                             </tbody>
                         </table>
+                        <a href="//pdfcrowd.com/url_to_pdf/?"
+onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+Save to PDF
+</a>
                     </center>
                 </div>
 
