@@ -51,7 +51,8 @@ export default class Body extends React.Component {
                 </Helmet>
                 <div id="page" className="site">
                     <Header {...this.props} />
-                    <div className="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width={100} data-layout="standard" data-action="like" data-size="small" data-share="true" />
+                    {/* INSERT SEARCH BAR HERE */}
+                    {/* <div className="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width={100} data-layout="standard" data-action="like" data-size="small" data-share="true" /> */}
                     <main id="content" className="site-content">
                         {this.props.children}
                     </main>
