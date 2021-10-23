@@ -1,0 +1,40 @@
+    1 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+    2 tasks:
+    3   - init: make bootstrap
+    4     command: make watch
+    5   - openMode: split-right
+    6     command: |-
+    7       clear && echo '
+    8       Welcome to Gitpod!
+    9 
+   10       If you haven'\''t forked Babel yet and you want to prepare a PR, you can use
+   11       the Ctrl+P (or ⌘P) shortcut, type `>Fork` and press ENTER: Gitpod\ will
+   12       create the fork for you.
+   13 
+   14       <-- The other terminal is building Babel. It should automatically rebuild
+   15           when you change a file, so you don'\''t need to worry about it.
+   16           If it'\''s still building, please wait until it'\''s finished!
+   17 
+   18       If you want to run the tests, you can run `yarn jest` in this terminal,
+   19       or filter by package name (for example, `yarn jest babel-parser`).
+   20       '
+   21 
+   22 #' # <-- This is just because the gitpod theme has broken syntax highlighting
+   23 
+   24 github:
+   25   # https://www.gitpod.io/docs/prebuilds/#configure-prebuilds
+   26   prebuilds:
+   27     master: true # enable for the default branch (even if it's not named "master")
+   28     branches: true
+   29     pullRequests: true
+   30     pullRequestsFromForks: true
+   31     addCheck: true
+   32     addComment: false
+   33     addBadge: true
+   34     addLabel: false
+   35 
+   36 vscode:
+   37   extensions:
+   38     - dbaeumer.vscode-eslint@2.1.5:9Wg0Glx/TwD8ElFBg+FKcQ==
+   39     - esbenp.prettier-vscode@5.0.0:qca7d0cHbKkrkb5rvNlpcg==
+   40     - flowtype.flow-for-vscode@1.5.0:AwOT6wgHTF43loZQCAUMLA==
