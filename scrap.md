@@ -1,62 +1,94 @@
-"@stackbit/gatsby-plugin-menus": "0.0.4",
-"babel-runtime": "6.26.0",
-"chokidar": "3.4.0",
-"classnames": "2.2.6",
-"fs-extra": "7.0.1",
-"gatsby": "2.25.4",
-"gatsby-plugin-sass": "2.8.0",
-"gatsby-plugin-react-helmet": "3.3.3",
-"gatsby-plugin-typescript": "2.4.4",
-"gatsby-source-filesystem": "2.3.10",
-"gatsby-transformer-remark": "2.8.14",
-"js-yaml": "3.12.2",
-"lodash": "4.17.11",
-"marked": "0.6.1",
-"moment": "2.23.0",
-"moment-strftime": "0.5.0",
-"node-sass": "4.14.0",
-"node-sass-utils": "1.1.2",
-"react": "16.5.1",
-"react-dom": "16.13.1",
-"react-helmet": "5.2.1",
-"react-html-parser": "2.0.2",
-"react-script-tag": "1.1.2",
-"rehype-react": "3.0.2",
-"sprintf-js": "1.1.2"
+.site-footer {
+    background-color: black;
+    background-image: url('https://i.imgur.com/CEYEZp8.jpeg');
+    padding-bottom: 6.5em;
+    padding-top: 10.5em;
+    color: white !important;
+    border:4px solid black;
+}
 
-    "@algolia/client-search": "^4.10.3",
-        "@stackbit/gatsby-plugin-menus": "0.0.4",
-        "algolia": "0.0.0",
-        "babel-runtime": "6.26.0",
-        "chokidar": "3.4.0",
-        "classnames": "2.2.6",
-        "documentation": "^13.2.5",
-        "fs-extra": "7.0.1",
-        "gatsby": "2.32.8",
-        "gatsby-plugin-algolia": "^0.22.0",
-        "gatsby-plugin-dark-mode": "^1.1.2",
-        "gatsby-plugin-google-tagmanager": "^3.7.1",
-        "gatsby-plugin-react-helmet": "3.3.3",
-        "gatsby-plugin-sass": "2.8.0",
-        "gatsby-plugin-sitemap": "^4.3.1",
-        "gatsby-plugin-typescript": "2.4.4",
-        "gatsby-source-contentful": "^5.7.1",
-        "gatsby-source-filesystem": "2.3.10",
-        "gatsby-transformer-remark": "2.8.14",
-        "js-yaml": "3.14.1",
-        "lodash": "4.17.21",
-        "marked": "0.6.1",
-        "moment": "2.23.0",
-        "moment-strftime": "0.5.0",
-        "node-sass": "4.14.0",
-        "node-sass-utils": "1.1.2",
-        "react": "17.0.0",
-        "react-dom": "16.13.1",
-        "react-helmet": "5.2.1",
-        "react-html-parser": "2.0.2",
-        "react-instantsearch": "^6.12.0",
-        "react-instantsearch-dom": "^6.12.0",
-        "react-player": "^2.9.0",
-        "react-script-tag": "1.1.2",
-        "rehype-react": "3.0.2",
-        "sprintf-js": "1.1.2"
+#colophon {
+    a:not(.button) {
+        color: inherit;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+}
+
+.site-info,
+.social-links {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 0.675em;
+    line-height: 1.2;
+
+    .button:not(.button-icon) {
+        font-size: inherit;
+        line-height: 1.2;
+        padding: 0.3em 1em;
+    }
+}
+
+.site-info {
+    margin: 0.25em 0 0;
+    text-align: center;
+
+    .copyright,
+    > a {
+        margin: 0 4px 0.2em 0;
+    }
+}
+
+.social-links {
+    margin-top: 0.5375em;
+
+    a {
+        margin: 0 50px 0.2em;
+    }
+
+    .icon {
+        font-size: 20px;
+        color:rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .site-footer-inside {
+        -ms-flex-align: start;
+        align-items: flex-start;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .site-info {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .social-links {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-top: 0;
+
+        a {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+    }
+}
