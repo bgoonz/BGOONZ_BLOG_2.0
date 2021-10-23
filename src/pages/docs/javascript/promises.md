@@ -1,7 +1,7 @@
 ---
 title: lorem-ipsum
 weight: 0
-excerpt: loremc
+excerpt: Promises
 seo:
     title: ''
     description: ''
