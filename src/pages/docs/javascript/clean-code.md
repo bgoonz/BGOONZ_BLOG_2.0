@@ -1,7 +1,7 @@
 ---
 title: Clean Code
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Clean Code
 seo:
     title: ''
     description: ''
