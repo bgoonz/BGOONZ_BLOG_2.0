@@ -4,7 +4,6 @@
     4     command: make 
     6     command: npm i prettier -g
     && prettier --write .
-
    24 github:
    25   # https://www.gitpod.io/docs/prebuilds/#configure-prebuilds
    26   prebuilds:
