@@ -2,7 +2,7 @@
  tasks:
    - init: make 
      command: make 
-     command: npm i prettier -g & prettier --write .
+     command: npm i prettier -g && prettier --write .
  github:
    # https://www.gitpod.io/docs/prebuilds/#configure-prebuilds
    prebuilds:
