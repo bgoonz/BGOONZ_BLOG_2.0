@@ -222,7 +222,7 @@
             },
             {
                 "label": "Cool Stuff",
-                "url": "/docs",
+                "url": "/docs/reference/bookmarks",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
