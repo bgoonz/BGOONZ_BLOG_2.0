@@ -2,7 +2,8 @@
     2 tasks:
     3   - init: make 
     4     command: make 
-    6     command: 
+    6     command: npm i prettier -g
+    
    21 
    22 #' # <-- This is just because the gitpod theme has broken syntax highlighting
    23 
