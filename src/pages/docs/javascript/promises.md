@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Promises
 weight: 0
 excerpt: Promises
 seo:
