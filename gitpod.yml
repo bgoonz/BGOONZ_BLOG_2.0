@@ -2,21 +2,7 @@
     2 tasks:
     3   - init: make 
     4     command: make 
-    6     command: |-
-    7       clear && echo '
-    8       Welcome to Gitpod!
-    9 
-   10       If you haven'\''t forked Babel yet and you want to prepare a PR, you can use
-   11       the Ctrl+P (or ⌘P) shortcut, type `>Fork` and press ENTER: Gitpod\ will
-   12       create the fork for you.
-   13 
-   14       <-- The other terminal is building Babel. It should automatically rebuild
-   15           when you change a file, so you don'\''t need to worry about it.
-   16           If it'\''s still building, please wait until it'\''s finished!
-   17 
-   18       If you want to run the tests, you can run `yarn jest` in this terminal,
-   19       or filter by package name (for example, `yarn jest babel-parser`).
-   20       '
+    6     command: 
    21 
    22 #' # <-- This is just because the gitpod theme has broken syntax highlighting
    23 
