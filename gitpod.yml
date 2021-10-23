@@ -1,7 +1,7 @@
     1 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
     2 tasks:
     3   - init: make bootstrap
-    4     command: make watch
+    4     command: make 
     5   - openMode: split-right
     6     command: |-
     7       clear && echo '
@@ -42,4 +42,3 @@
 
 
 
-   
