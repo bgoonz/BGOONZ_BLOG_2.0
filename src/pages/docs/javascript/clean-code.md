@@ -71,7 +71,7 @@ const yyyymmdstr = moment().format("YYYY/MM/DD");
 const currentDate = moment().format("YYYY/MM/DD");
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Use the same vocabulary for the same type of variable
 
@@ -89,7 +89,7 @@ getCustomerRecord();
 getUser();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Use searchable names
 
@@ -117,7 +117,7 @@ const MILLISECONDS_PER_DAY = 60 * 60 * 24 * 1000; //86400000;
 setTimeout(blastOff, MILLISECONDS_PER_DAY);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Use explanatory variables
 
@@ -141,7 +141,7 @@ const [_, city, zipCode] = address.match(cityZipCodeRegex) || [];
 saveCityZipCode(city, zipCode);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Avoid Mental Mapping
 
@@ -176,7 +176,7 @@ locations.forEach(location => {
 });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Don't add unneeded context
 
@@ -211,7 +211,7 @@ function paintCar(car, color) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Use default arguments instead of short circuiting or conditionals
 
@@ -237,7 +237,7 @@ function createMicrobrewery(name = "Hipster Brew Co.") {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## **Functions**
 
@@ -297,7 +297,7 @@ createMenu({
 });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Functions should do one thing
 
@@ -333,7 +333,7 @@ function isActiveClient(client) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Function names should say what they do
 
@@ -361,7 +361,7 @@ const date = new Date();
 addMonthToDate(1, date);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Functions should only be one level of abstraction
 
@@ -433,7 +433,7 @@ function parse(tokens) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Remove duplicate code
 
@@ -519,7 +519,7 @@ function showEmployeeList(employees) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Set default objects with Object.assign
 
@@ -572,7 +572,7 @@ function createMenu(config) {
 createMenu(menuConfig);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Don't use flags as function parameters
 
@@ -602,7 +602,7 @@ function createTempFile(name) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Avoid Side Effects (part 1)
 
@@ -651,7 +651,7 @@ console.log(name); // 'Ryan McDermott';
 console.log(newName); // ['Ryan', 'McDermott'];
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Avoid Side Effects (part 2)
 
@@ -707,7 +707,7 @@ const addItemToCart = (cart, item) => {
 };
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Don't write to global functions
 
@@ -741,7 +741,7 @@ class SuperArray extends Array {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Favor functional programming over imperative programming
 
@@ -806,7 +806,7 @@ const totalOutput = programmerOutput.reduce(
 );
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Encapsulate conditionals
 
@@ -830,7 +830,7 @@ if (shouldShowSpinner(fsmInstance, listNodeInstance)) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Avoid negative conditionals
 
@@ -858,7 +858,7 @@ if (isDOMNodePresent(node)) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Avoid conditionals
 
@@ -918,7 +918,7 @@ class Cessna extends Airplane {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Avoid type-checking (part 1)
 
@@ -947,7 +947,7 @@ function travelToTexas(vehicle) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Avoid type-checking (part 2)
 
@@ -984,7 +984,7 @@ function combine(val1, val2) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Don't over-optimize
 
@@ -1012,7 +1012,7 @@ for (let i = 0; i < list.length; i++) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Remove dead code
 
@@ -1046,7 +1046,7 @@ const req = newRequestModule;
 inventoryTracker("apples", req, "www.inventory-awesome.io");
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## **Objects and Data Structures**
 
@@ -1109,7 +1109,7 @@ const account = makeBankAccount();
 account.setBalance(100);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Make objects have private members
 
@@ -1149,7 +1149,7 @@ delete employee.name;
 console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## **Classes**
 
@@ -1236,7 +1236,7 @@ class Human extends Mammal {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Use method chaining
 
@@ -1316,7 +1316,7 @@ class Car {
 const car = new Car("Ford", "F-150", "red").setColor("pink").save();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Prefer composition over inheritance
 
@@ -1386,7 +1386,7 @@ class Employee {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## **SOLID**
 
@@ -1448,7 +1448,7 @@ class UserSettings {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Open/Closed Principle (OCP)
 
@@ -1539,7 +1539,7 @@ class HttpRequester {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Liskov Substitution Principle (LSP)
 
@@ -1658,7 +1658,7 @@ const shapes = [new Rectangle(4, 5), new Rectangle(4, 5), new Square(5)];
 renderLargeShapes(shapes);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Interface Segregation Principle (ISP)
 
@@ -1736,7 +1736,7 @@ const $ = new DOMTraverser({
 });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Dependency Inversion Principle (DIP)
 
@@ -1839,7 +1839,7 @@ const inventoryTracker = new InventoryTracker(
 inventoryTracker.requestItems();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## **Testing**
 
@@ -1910,7 +1910,7 @@ describe("MomentJS", () => {
 });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## **Concurrency**
 
@@ -1961,7 +1961,7 @@ get("https://en.wikipedia.org/wiki/Robert_Cecil_Martin")
   });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Async/Await are even cleaner than Promises
 
@@ -2010,7 +2010,7 @@ async function getCleanCodeArticle() {
 getCleanCodeArticle()
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## **Error Handling**
 
@@ -2089,7 +2089,7 @@ getdata()
   });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## **Formatting**
 
@@ -2140,7 +2140,7 @@ class Animal {}
 class Alpaca {}
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Function callers and callees should be close
 
@@ -2228,7 +2228,7 @@ const review = new PerformanceReview(employee);
 review.perfReview();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## **Comments**
 
@@ -2275,7 +2275,7 @@ function hashIt(data) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Don't leave commented out code in your codebase
 
@@ -2296,7 +2296,7 @@ doStuff();
 doStuff();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Don't have journal comments
 
@@ -2325,7 +2325,7 @@ function combine(a, b) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ### Avoid positional markers
 
@@ -2364,7 +2364,7 @@ const actions = function() {
 };
 ```
 
-**[⬆ back to top](#table-of-contents)**
+
 
 ## Translation
 
@@ -2394,4 +2394,4 @@ This is also available in other languages:
 - ![ua](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png) **Ukrainian**: [mindfr1k/clean-code-javascript-ua](https://github.com/mindfr1k/clean-code-javascript-ua)
 - ![vi](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [hienvd/clean-code-javascript/](https://github.com/hienvd/clean-code-javascript/)
 
-**[⬆ back to top](#table-of-contents)**
+
