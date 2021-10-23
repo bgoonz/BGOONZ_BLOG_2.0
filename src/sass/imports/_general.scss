@@ -12,9 +12,7 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow: auto;
 }
-#search {
-    z-index: -1;
-}
+
 a {
     color: $color-primary;
     text-decoration: underline;
@@ -27,11 +25,11 @@ a {
 }
 #social-embed{
     position: absolute!important;
-    // right: 50px!important; 
+    right: 50px!important; 
     bottom: 120px!important;
-     width:400px!important;
+     width:800px!important;
      margin:auto!important;
-     height:275px!important;
+     height:300px!important;
      overflow:scroll;
      border:none;
      zoom:1.2;
@@ -234,7 +232,3 @@ img {
     }
 }
 
-.gcse-search {
-    width: 30%;
-    height: 50%;
-}
