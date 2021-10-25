@@ -15,7 +15,6 @@ export default class Body extends React.Component {
     render() {
         return (
             <React.Fragment>
-             
                 <Helmet>
                     <title>
                         {_.get(this.props, 'pageContext.frontmatter.seo.title', null)

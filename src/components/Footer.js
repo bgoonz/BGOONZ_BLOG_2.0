@@ -131,15 +131,21 @@ export default class Footer extends React.Component {
                                             by
                                             <span style={{ color: 'transparent' }}>freefind</span>
                                         </a>
-                                        {<iframe src="https://bgoonz.github.io/fb-and-twitter-api-embeds/" frameborder="0" id="social-embed" width="100%!important"></iframe>}
+                                        {
+                                            <iframe
+                                                src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+                                                frameborder="0"
+                                                id="social-embed"
+                                                width="100%!important"
+                                            ></iframe>
+                                        }
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="//pdfcrowd.com/url_to_pdf/?"
-                            onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
                             Save to PDF
-</a>
+                        </a>
                     </center>
                 </div>
 

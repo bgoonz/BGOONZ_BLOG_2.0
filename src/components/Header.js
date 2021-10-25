@@ -5,7 +5,6 @@ import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
 
-
 export default class Header extends React.Component {
     render() {
         return (

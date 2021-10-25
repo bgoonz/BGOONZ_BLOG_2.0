@@ -3,12 +3,13 @@ title: Intro To NodeJS
 weight: 0
 excerpt: A Node.js app runs in a single process, without creating a new thread for every request.
 seo:
-  title: ''
-  description: 'Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!'
-  robots: []
-  extra: []
+    title: ''
+    description: 'Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!'
+    robots: []
+    extra: []
 template: docs
 ---
+
 ## Enter the NodeJS
 
 Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
@@ -25,13 +26,11 @@ Node.js has a unique advantage because millions of frontend developers that writ
 
 In Node.js the new ECMAScript standards can be used without problems, as you don't have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.
 
-[](https://nodejs.dev/learn#a-vast-number-of-libraries)A Vast Number of Libraries
----------------------------------------------------------------------------------
+## [](https://nodejs.dev/learn#a-vast-number-of-libraries)A Vast Number of Libraries
 
 npm with its simple structure helped the ecosystem of Node.js proliferate, and now the npm registry hosts over 1,000,000 open source packages you can freely use.
 
-[](https://nodejs.dev/learn#an-example-nodejs-application)An Example Node.js Application
-----------------------------------------------------------------------------------------
+## [](https://nodejs.dev/learn#an-example-nodejs-application)An Example Node.js Application
 
 The most common example Hello World of Node.js is a web server:
 
@@ -55,7 +54,7 @@ In this case with:
 
 JScopy
 
-res.statusCode  =  200
+res.statusCode = 200
 
 we set the statusCode property to 200, to indicate a successful response.
 
@@ -63,7 +62,7 @@ We set the Content-Type header:
 
 JScopy
 
-res.setHeader('Content-Type',  'text/plain')
+res.setHeader('Content-Type', 'text/plain')
 
 and we close the response, adding the content as an argument to `end()`:
 
@@ -71,8 +70,7 @@ JScopy
 
 res.end('Hello World\n')
 
-[](https://nodejs.dev/learn#nodejs-frameworks-and-tools)Node.js Frameworks and Tools
-------------------------------------------------------------------------------------
+## [](https://nodejs.dev/learn#nodejs-frameworks-and-tools)Node.js Frameworks and Tools
 
 Node.js is a low-level platform. In order to make things easy and exciting for developers, thousands of libraries were built upon Node.js by the community.
 
@@ -96,12 +94,7 @@ Many of those established over time as popular options. Here is a non-comprehens
 -   [**Socket.io**](https://socket.io/): A real-time communication engine to build network applications.
 -   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
 
-
-
-
-
 # Extended Version:
-
 
 <iframe src="https://codesandbox.io/embed/nodejs-examples-4ohjz?autoresize=1&expanddevtools=1&fontsize=13&hidenavigation=1&theme=light&view=editor"
      style="width:100%; height:400px; border:2; border-radius: 15px; overflow:auto;resize:both;"
@@ -110,14 +103,13 @@ Many of those established over time as popular options. Here is a non-comprehens
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-Introduction to JavaScript
-==========================
+# Introduction to JavaScript
 
 JavaScript is dynamically typed single-threaded interpreted languages for the Web. That means if you are doing web development, you can use this language to perform some operating on the web page, like running some JavaScript code when a button is clicked by the user.
 
 JavaScript is a dynamically typed language which means a variable can hold any data type like String or Number in its lifetime and JavaScript interpreter won't complain about it. It's single-threaded which means your JavaScript code runs synchronously or sequentially line by line. It's interpreted which means you don't need to compile your JavaScript code.
 
-JavaScript is interactive, which means you can directly feed JavaScript code to the interpreter and it will be executed immediately. You can try this by opening [DevTools](https://developers.google.com/web/tools/chrome-devtools/) in the browser (*in Chrome, press *`*command** + **option** + **i*`) or right-click anywhere on the page and click inspect. Then go to the console tab, here you can type any valid JavaScript code and press enter to run it. Use `shift + enter` to add a new-line in your code.
+JavaScript is interactive, which means you can directly feed JavaScript code to the interpreter and it will be executed immediately. You can try this by opening [DevTools](https://developers.google.com/web/tools/chrome-devtools/) in the browser (_in Chrome, press _`*command** + **option** + **i*`) or right-click anywhere on the page and click inspect. Then go to the console tab, here you can type any valid JavaScript code and press enter to run it. Use `shift + enter` to add a new-line in your code.
 
 ![](https://miro.medium.com/max/675/1*iSdHW-r4lmJ41vrpm_0lxQ.png)
 
@@ -125,20 +117,19 @@ JavaScript is interactive, which means you can directly feed JavaScript code to 
 
 Every browser ships a JavaScript Interpreter also called a JavaScript Engine. [V8](https://v8.dev/) is the JavaScript engine designed by Google and used in the Google Chrome browser while [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) is a JavaScript engine developed by Mozilla for their Firefox browser.
 
-Since JavaScript engine designed by every browser is different, [ECMA](https://en.wikipedia.org/wiki/Ecma_International) standardizes features of JavaScript. This standard is known as [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) (*pronounced as ek-ma-script*). Whenever ECMA adds a feature to this JavaScript standard, the browser has to add it in their JavaScript engine to stay in the competition (*though this process is very slow*).
+Since JavaScript engine designed by every browser is different, [ECMA](https://en.wikipedia.org/wiki/Ecma_International) standardizes features of JavaScript. This standard is known as [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) (_pronounced as ek-ma-script_). Whenever ECMA adds a feature to this JavaScript standard, the browser has to add it in their JavaScript engine to stay in the competition (_though this process is very slow_).
 
 JavaScript is a very easy language to learn and fun to write. Every year, new features are added to ECMAScript which brings JavaScript one more step closer to dominate the planet. The latest major revision of JavaScript is [ES6](http://es6-features.org/) or ECMAScript 6 or ECMAScript 2015 which has dumped a ton of features to make it more fun to code in. At the moment, JavaScript supports the OOP paradigm very well and can be used in functional programming as well.
 
 [Mozilla](https://en.wikipedia.org/wiki/Mozilla) is an open-source foundation that documents JavaScript very well on their developer documentation AKA [Mozilla Developer Network](https://developer.mozilla.org/en-US/) or [MDN](https://developer.mozilla.org/en-US/). It is one of the top online destinations to learn JavaScript, though there are other online resources as well. If you want to take a look at the JavaScript specifications and learn simple tutorials, visit [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
-JavaScript is sometimes abbreviated as JS or .js/.JS (*dot J S*) to state that an entity is related to JavaScript, like Node.js or ReactJS or AngularJS. But in no ways, JavaScript is related to Java, or so you think 👻. If you need a history lesson about JavaScript and its evolution, watch this amazing video.
+JavaScript is sometimes abbreviated as JS or .js/.JS (_dot J S_) to state that an entity is related to JavaScript, like Node.js or ReactJS or AngularJS. But in no ways, JavaScript is related to Java, or so you think 👻. If you need a history lesson about JavaScript and its evolution, watch this amazing video.
 
 <https://www.youtube.com/watch?v=Sh6lK57Cuk4>
 
 Assuming that you are familiar with JavaScript and gained a good amount of knowledge, we can move forward. But if you don't know JavaScript at all, learn basic JavaScript from the MDN documentation I explained earlier. Because learning about Node.js without knowledge of JavaScript is like understanding web development without HTML.
 
-What is server-side JavaScript?
-===============================
+# What is server-side JavaScript?
 
 JavaScript is a single-threaded language, it knows how to get things done one at a time. It can't do asynchronous tasks or run JavaScript code in multiple threads for efficiency. It just knows about JavaScript as defined in ECMAScript specification and nothing more.
 
@@ -160,7 +151,7 @@ For example, `[setTimeout(callback, delay)](https://www.w3schools.com/jsref/met
 
 (an oversimplification of how JavaScript runs in a browser)
 
-So far we know that JavaScript is essential in a browser. But if you think about JavaScript engine alone, it can exist anywhere. You can take the V8 JavaScript engine and install it on your computer (*let's call it as a server*). With some fiddling, you can feed JavaScript code to it and it will run that code for you and may return the result. In theory, it looks pretty simple.
+So far we know that JavaScript is essential in a browser. But if you think about JavaScript engine alone, it can exist anywhere. You can take the V8 JavaScript engine and install it on your computer (_let's call it as a server_). With some fiddling, you can feed JavaScript code to it and it will run that code for you and may return the result. In theory, it looks pretty simple.
 
 The concept of server-side JavaScript comes from this simple idea. You can take any JavaScript engine, wrap inside an application that gives a clean interface to take the user's JavaScript code and execute it in the JavaScript engine. You can also provide APIs to perform operations like File System IO, Networking, etc. which do not run on JavaScript engine.
 
@@ -174,32 +165,30 @@ The concept of server-side JavaScript comes from this simple idea. You can tak
 
 > To understand more about how a JavaScript engine works in a browser, you should read my article on [How JavaScript engine works in browser and Node](https://itnext.io/how-javascript-works-in-browser-and-node-ab7d0d09ac2f). This article also explain concept of Web APIs in depth.
 
-How Node.js works?
-==================
+# How Node.js works?
 
 Sometimes, Node.js is also called simply Node or node.
 
-Node.js is a framework that contains the V8 JavaScript engine, the standard library of packages, and some binaries. In reality, it is more complex than that as explained in the below diagram (*follow the link for more details*).
+Node.js is a framework that contains the V8 JavaScript engine, the standard library of packages, and some binaries. In reality, it is more complex than that as explained in the below diagram (_follow the link for more details_).
 
 ![](https://miro.medium.com/max/405/1*iTdvBPVxYZdJZQKsP3yILw.jpeg)
 
 (Source: [Stackoverflow](https://stackoverflow.com/questions/36766696/which-is-correct-node-js-architecture))
 
-Like Web APIs in the browser, Node.js has a standard library that contains JavaScript packages (*we will learn about packages later*) which may also provide an interface to low-level APIs. For example, Node.js comes with `fs` package which contains `readFile` function among many. This function reads the file on the disk of the machine and returns file content back.
+Like Web APIs in the browser, Node.js has a standard library that contains JavaScript packages (_we will learn about packages later_) which may also provide an interface to low-level APIs. For example, Node.js comes with `fs` package which contains `readFile` function among many. This function reads the file on the disk of the machine and returns file content back.
 
 Most of these packages contain code written in a low-level programming language to communicate with the device, like for file system access. These packages export JavaScript functions and other types to run this code. Since JavaScript can not talk to C++ or some other language, Node.js has to create a binding to facilitate this communication. The process to create such packages is very tricky, but it is explained [here](https://medium.com/the-node-js-collection/native-extensions-for-node-js-767e221b3d26) in-depth.
 
 Node.js uses different threads to perform low-level non-JavaScript time-taking operations. This way, our JavaScript is not blocked while a time taking operation like reading a file is in progress. Since these operations are running in the background once initiated, we need a confirmation or a callback when the operation is finished. This callback is a JavaScript function that will execute as soon as the operation is finished.
 
 const fs = require('fs'); // fs is built-in packagefs.readFile('/path/to/file.txt', function(error, data){\
-  // if error is not empty, show error log\
-  // read data and do something with it\
+ // if error is not empty, show error log\
+ // read data and do something with it\
 });
 
 The Node.js architecture is very complex and made of different parts as seen in the earlier diagram. It also contains an event loop that facilitates the execution of these callback functions. You should watch the below video on the event loop, though it is in the context of the browser but things are pretty similar in Node.js as well. This will clear your remaining doubts.
 
-Installing Node.js
-==================
+# Installing Node.js
 
 You should install Node.js from their official website at [nodejs.org](https://nodejs.org/en/). If you are using Windows, Mac OS, or Linux, you can get precompiled binaries and installers. The best way to go is by using an installer.
 
@@ -219,8 +208,7 @@ Like we saw in DevTools of the browser, using the simple command `node` will o
 
 (node interpreter)
 
-Running JavaScript code with Node.js
-====================================
+# Running JavaScript code with Node.js
 
 Now that we have a good understanding of what Node.js is and how JavaScript engine works, we can start messing with it.
 
@@ -238,8 +226,7 @@ Since `node` can only execute `.js` files, adding `.js` extension to the f
 
 (executing index.js in the current directory with Node)
 
-Importing scripts in the program
-================================
+# Importing scripts in the program
 
 Normally our application is broken down to different parts. For example, if a set of functions are used over and over, we would like them to be contained in a separate file and import that file wherever those functions are to be used.
 
@@ -267,10 +254,10 @@ Since we know that `exports` is an object that will be exported from the mod
 
 // lib/math.js// add `add` function to `exports`\
 exports.add = function( num1, num2 ) {\
-  return num1 + num2\
+ return num1 + num2\
 };
 
-From `math` module, we are exporting `add` function which returns the sum of the two numbers (*arguments*). Let's see what `math` variable looks like.
+From `math` module, we are exporting `add` function which returns the sum of the two numbers (_arguments_). Let's see what `math` variable looks like.
 
 // calculate.js\
 var math = require( './lib/math' );console.log(math);\
@@ -283,8 +270,7 @@ var math = require( './lib/math' );// add 1 + 2\
 var result = math.add(1, 2);\
 console.log( result ); // 3
 
-What the heck is module.exports then?
--------------------------------------
+## What the heck is module.exports then?
 
 I kind of skipped over this part so that you can understand module import with ease. I have a simple question, what if my `math` module exports only one function like `add` but I don't want to export it inside an object. This is the only function my module is exporting, so I want `require()` call to return this function only so that I can start using it like below.
 
@@ -293,7 +279,7 @@ var math = require( './lib/math' );// add 1 + 2\
 var result = math(1, 2); // math is a function\
 console.log( result ); // 3
 
-This is where `module` global variable comes into the picture. Like `exports`, `module` is also globally available everywhere. `module` is an object and it contains information about module (*auto injected by Node.js in key-value pairs*). The important key in this object we should know about is `exports`.
+This is where `module` global variable comes into the picture. Like `exports`, `module` is also globally available everywhere. `module` is an object and it contains information about module (_auto injected by Node.js in key-value pairs_). The important key in this object we should know about is `exports`.
 
 `exports` variable inside a module points to `exports` property on the `module` object, as you can prove in the below test.
 
@@ -306,21 +292,21 @@ That means when we were setting `exports.add`, we were actually setting `modul
 
 // lib/math.js// export function only\
 module.exports = function( num1, num2 ) {\
-  return num1 + num2\
+ return num1 + num2\
 };
 
 If your module import path is a directory, then `require` function will resolve `index.js` file inside it. Using this feature, you can have multiple .`js` files in a directory that contains different exports and you can import them inside `index.js` to exports them again from a single point.
 
 └── lib/\
-  ├── index.js (import `math` and `graph` and export them)\
-  ├── math.js\
-  └── graph.js
+ ├── index.js (import `math` and `graph` and export them)\
+ ├── math.js\
+ └── graph.js
 
 This way, the importer does not need to target individual module files in a directory. The importer can just point to `index.js` file.
 
 // lib/math.js\
 exports.add = function( num1, num2 ) {\
-  return num1 + num2\
+ return num1 + num2\
 };// lib/index.js\
 var math = require('./math');\
 exports.add = math.add\
@@ -328,24 +314,23 @@ exports.add = math.add\
 const lib = require('./lib'); // points to './lib/index.js'\
 lib.add(1, 2) // 3
 
-In Node.js, a module or a package is loaded only once (*per thread or session*) even when you `require()` them multiple times in the program. Once loaded, it will be cached by the Node for performance enhancement.
+In Node.js, a module or a package is loaded only once (_per thread or session_) even when you `require()` them multiple times in the program. Once loaded, it will be cached by the Node for performance enhancement.
 
 There are other tricks with CommonJS module system and sometimes we also need to be careful. Read [this article](https://www.sitepoint.com/understanding-module-exports-exports-node-js/) to understand more about imports.
 
-Packages in Node.js
-===================
+# Packages in Node.js
 
 A package is nothing but a directory that contains a bunch of modules. Like for example `lib` in our previous example can be called a package but not quite yet. The most important feature about a node package is that, from anywhere in the program, we should be able to import it, without providing a relative or an absolute path.
 
 Well, that sounds absurd. If our `.js` files are nested, the import path will also change. Let's say that, we have a `src` directory and it contains `compute.js`. If we need to import `lib` package, the import path will be `../lib`.
 
 ├── lib/\
-|  ├── index.js\
-|  └── math.js\
+| ├── index.js\
+| └── math.js\
 └── src/\
-   ├── compute.js // require( '../lib')\
-   └── deep/\
-      └── nested.js // require( '../../lib')
+ ├── compute.js // require( '../lib')\
+ └── deep/\
+ └── nested.js // require( '../../lib')
 
 As we nest our files deeper, the import path is very difficult to track. What would be easy is instead of the relative path, we would just use `lib` and Node.js just finds the path to that package for us.
 
@@ -357,7 +342,7 @@ This might sound like a fantasy but it is actually very real. Node.js can do thi
 
 > You might wonder, why they are called `node_modules` and not `node_packages`? In a conventional sense, a module is a file and package is a collection of modules. But when it comes to `require` function, they are ambiguous. Hence, let's stick to a common name, module. But normally, when people say node module, it is a package inside `node_modules` directory.
 
-But the real question is, how does Node knows where the `node_modules` directory is. The answer is, it doesn't. When we import a package, it searches that package inside `node_modules` directory of the current file path (*where import statement is written*). If it doesn't find `node_modules` directory or the package directory, it performs a similar search in the parent directory.
+But the real question is, how does Node knows where the `node_modules` directory is. The answer is, it doesn't. When we import a package, it searches that package inside `node_modules` directory of the current file path (_where import statement is written_). If it doesn't find `node_modules` directory or the package directory, it performs a similar search in the parent directory.
 
 This continues until the last directory in the file system is reached. If it doesn't find the package, it throws `Error: Cannot find module 'lib'` error.
 
@@ -373,10 +358,9 @@ Even though packages seems easy, their management if done manually is very diffi
 
 This is where NPM comes into the picture.
 
-> This whole modules and packages theory might sound familiar to you if you are a python developer. But you don't need __init__.py like file in Node.js 😉
+> This whole modules and packages theory might sound familiar to you if you are a python developer. But you don't need **init**.py like file in Node.js 😉
 
-What is NPM?
-============
+# What is NPM?
 
 When we installed Node.js, we also got `npm` command. [NPM](https://www.npmjs.com/) or [Node Package Manager](https://www.npmjs.com/) is the default package manager for Node.js. A role of a package manager is to download and install remote package, with ease.
 
@@ -399,7 +383,7 @@ To install a package, we use `npm install <packagename>` command. For example,
 This command will do the following things.
 
 1.  At first, it searches for this package on `[registry.npm.com](http://registry.npmjs.org/)` which contains the database of all packages. You can see the documentation of a package by visiting `[https://www.npmjs.com/package/<packagename>](https://www.npmjs.com/package/lodash)` URL.
-2.  Then it downloads the compressed zip (*or tar*) file that contains all the source code of the package. If a version of the package was not specified in the command, it will download the latest version.
+2.  Then it downloads the compressed zip (_or tar_) file that contains all the source code of the package. If a version of the package was not specified in the command, it will download the latest version.
 3.  Then it adds the package entry to the `dependencies` section of `package.json` with the version of the package. If the entry of the package already exists, it will just override the version of the package downloaded.
 4.  Then it creates `node_modules` folder in the same directory if it doesn't already exist.
 5.  Then it will copy all the files from the downloaded compressed file in the directory with the name of the package inside `node_modules`.
@@ -420,12 +404,11 @@ console.log( result ); // HELLO WORLD!
 
 When we run this file using the command `node src/transform.js`, we get `HELLO WORLD!` printed in the terminal.
 
-When you install a package, NPM also creates `package-lock.json` file if not already present. This file contains a list of dependency packages with their versions that your project has installed as well as dependencies of those packages (*because a package might use other packages and so on*). This file including `package.json` should be tracked by your [VCS](https://en.wikipedia.org/wiki/Version_control) while `node_module` directory should be ignored (*reasons explained later*).
+When you install a package, NPM also creates `package-lock.json` file if not already present. This file contains a list of dependency packages with their versions that your project has installed as well as dependencies of those packages (_because a package might use other packages and so on_). This file including `package.json` should be tracked by your [VCS](https://en.wikipedia.org/wiki/Version_control) while `node_module` directory should be ignored (_reasons explained later_).
 
 > NPM and package management is far more sophisticated (and for good) than this but we will discuss it later in details.
 
-Built-in Packages AKA Built-in Modules
-======================================
+# Built-in Packages AKA Built-in Modules
 
 Node.js ships with a collection of built-in packages called as a Node Standard Library. These packages are essential to perform low-level operations like File System I/O and Networking. We do not have to install them using NPM.
 
@@ -436,7 +419,7 @@ These packages do not exist on disk like `lodash`. They are compiled into low-l
 `[fs](https://nodejs.org/api/fs.html)` package is used to perform File System operations like file read and write while `[path](https://nodejs.org/api/path.html)` package is used to resolve a file or directory path on the system. Let's use these packages to demonstrate a cool example.
 
 ├── res\
-|  └── hello-world.txt\
+| └── hello-world.txt\
 └── fs-example.js
 
 According to the above project structure, we have `hello-world.txt` file which contains `Hello World!` text. Using `fs-example.js`, we want to read the text in the file and log in to the console.
@@ -459,7 +442,7 @@ Let's talk about the example in detail. Inside `fs-example.js` file, we import
 
 1.  filePath: A absolute or relative path to the file we are trying to read.
 2.  options: An object that contains a configuration about reading. In the above example, we set `encoding` to `utf-8` which converts binary data to Text format. This will convert file content to Text.
-3.  callback: Sync file read operation using `readFile` function is asynchronous, we need a callback function to execute when the file is read completely. This function will receive read error (*if any*) as the first argument and file data as the second argument.
+3.  callback: Sync file read operation using `readFile` function is asynchronous, we need a callback function to execute when the file is read completely. This function will receive read error (_if any_) as the first argument and file data as the second argument.
 
 Notice the console log. The first `-end-of-the-program-` statement got printed as `fs.readFile` was reading the file in the background. Once file reading was completed, the callback function was called.
 
@@ -469,8 +452,7 @@ Node.js can also perform synchronous (blocking) operations. For example, using 
 
 ([Reading a file synchronously](https://github.com/course-one/node-js-introduction/blob/master/fs-example.js))
 
-Creating an HTTP server in Node.js
-==================================
+# Creating an HTTP server in Node.js
 
 Node.js can do anything, literally anything. Node.js has built-in `[http](https://nodejs.org/api/http.html)` module as well as `[https](https://nodejs.org/api/https.html)` module to create an HTTP/HTTPS server. But their implementation is kind of hard.
 
@@ -498,12 +480,11 @@ To stop the server, we need to stop the locked Node.js process. We can do that b
 
 [PM2](http://pm2.keymetrics.io/) is one of the best process managers that can run a Node process in the background. When you install it, it will give you a clean command-line interface to start a Node.js process and PM2 will monitor it.
 
-Execute a Bash command from Node.js
-===================================
+# Execute a Bash command from Node.js
 
 If you make Node.js your life and want to do everything from Node, then this topic is very important. Let's say that from a JavaScript program, you want to execute a BASH command. A Bash command would be `echo Hello World!`. You can try this command in the terminal and it will print `Hello World!`.
 
-Node.js provides a built-in `[child_process](https://nodejs.org/api/child_process.html)` command to run Bash command in a separate process. `[child_process.exec](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback)` function takes a Bash command and executes it. It takes an optional callback function to execute (*with some process information*) when the process is terminated.
+Node.js provides a built-in `[child_process](https://nodejs.org/api/child_process.html)` command to run Bash command in a separate process. `[child_process.exec](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback)` function takes a Bash command and executes it. It takes an optional callback function to execute (_with some process information_) when the process is terminated.
 
 Let's create a `echo.js` file that executes `echo Hello World!` Bash command.
 
@@ -515,8 +496,7 @@ In the above program, the callback function to `child_process.exec` receives t
 
 `child_process` module can do many things, like execute a Bash file using `[child_process.execFile](https://nodejs.org/api/child_process.html#child_process_child_process_execfile_file_args_options_callback)` function. It also supports synchronous variants to run a bash command synchronously, like `[child_process.execSync](https://nodejs.org/api/child_process.html#child_process_child_process_execsync_command_options)` function.
 
-How to ship your code to Production?
-====================================
+# How to ship your code to Production?
 
 Now that we have a good understanding of Node.js and NPM, we can move forward to this most important topic.
 
@@ -525,11 +505,12 @@ Now that we have a good understanding of Node.js and NPM, we can move forward to
 So if our project is managed using a VCS like Git then should we commit all our code? The answer is, 😱 NOOOOOOOOOOO. `node_modules` directory can be very large as it contains deeply nested dependencies. Hence it should be ignored by the VCS. Use `.gitignore` file to do that.
 
 # .gitignore\
+
 node_modules
 
 But then when your buddy takes the clone or a pull of the project, he/she won't get `node_modules`. Nothing to worry about here because NPM can take care of that.
 
-When we used `npm install <packagename>` command for the first time, NPM created `node_modules` directory and install `packagename` package. Using `npm install` command (*without a package name*), NPM will look at `pakage.json` to install all the dependencies listed inside it.
+When we used `npm install <packagename>` command for the first time, NPM created `node_modules` directory and install `packagename` package. Using `npm install` command (_without a package name_), NPM will look at `pakage.json` to install all the dependencies listed inside it.
 
 > Actually, since NPM v.5, `npm install` command looks at `package-lock.json` command to install the dependencies since it contains the exact versions of the packages and their dependencies (which were installed by the developer of the project). This minimizes the conflict of versions between the development machine and production machine.
 
