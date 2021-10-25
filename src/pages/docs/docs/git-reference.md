@@ -591,11 +591,6 @@ $ git rm /pather/to/the/file/HelloWorld.c
 
 ```
 
-
-
-
-
-
 -   `git checkout`
 -   `git reset`
 -   `git restore`
@@ -633,6 +628,7 @@ This is the most complicated part, and to really understand it, we need to know 
 
     -   that particular commit is the *tip commit* of that branch; and
     -   all commits leading up to and including that tip commit are *on* that branch.
+
 -   We're also going to talk about Git's *index* in a moment, and your *working tree*. They're separate from these but worth mentioning early, especially since the index has three names: Git sometimes calls it the *index*, sometimes calls it the *staging area*, and sometimes---rarely these days---calls it the *cache*. All three names refer to the same thing.
 
 Everything up through the *branch name* is, I think, best understood via pictures (at least for most people). If we draw a series of commits, with newer commits towards the right, using `o` for each commit and omitting some commits for space or whatever, we get something like this:
@@ -648,7 +644,7 @@ o--o--o--o--...--o---o--o   <-- main
 
 which, as you can see, is a boat repository. 😀 There are three branches. The mainline branch holds *every commit*, including all the commits on the top row and bottom (hull) row. The `feature-top` branch holds the top three commits and also the three commits along the main line to the left, but not any of the commits on the bottom row. All the connectors *between* commits are---well, *should be* but I don't have a good enough font---one-way arrows, pointing left, or down-and-left, or up-and-left.
 
-These "arrows", or one way connections from commit to commit, are technically [*arcs*, or one-way edges](https://math.stackexchange.com/a/31208), in a [*directed graph*](https://en.wikipedia.org/wiki/Directed_graph). This directed graph is one without cycles, making it a Directed Acyclic Graph or [DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph), which has a bunch of properties that are useful to Git.
+These "arrows", or one way connections from commit to commit, are technically [_arcs_, or one-way edges](https://math.stackexchange.com/a/31208), in a [_directed graph_](https://en.wikipedia.org/wiki/Directed_graph). This directed graph is one without cycles, making it a Directed Acyclic Graph or [DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph), which has a bunch of properties that are useful to Git.
 
 If you're just using Git to store files inside commits, all you really care about are the round `o` [*nodes* or *vertices* (again two words for the same thing)](https://math.stackexchange.com/a/1441525), each of which acts to store your files, but you should at least be vaguely aware of how they are arranged. It matters, especially because of *merges*. Merge commits are those with two outgoing arcs, pointing backwards to two of what Git calls *parent commits*. The child commit is the one "later": just as human parents are always older than their children, Git parent commits are older than their children.
 
@@ -817,10 +813,6 @@ Let's look at each of the various commands now:
     ```
 
     which may not match the source snapshot of any previous commit!
-
-
-
-
 
 ## Further Information
 
