@@ -13,7 +13,7 @@
     "pretty": "prettier --write \"./**/*.{jsx,html,css}\""
   },
   "engines": {
-    "node": ">=0.12"
+    "node": ">=0.14"
   },
   "dependencies": {
     "@algolia/client-search": "^4.10.3",
@@ -40,7 +40,7 @@
     "marked": "0.6.1",
     "moment": "2.23.0",
     "moment-strftime": "0.5.0",
-    "node-sass": "4.13.0",
+    "node-sass": "4.14.0",
     "node-sass-utils": "1.1.2",
     "react": "17.0.0",
     "react-dom": "16.13.1",
