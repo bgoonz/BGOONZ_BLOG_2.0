@@ -11,6 +11,14 @@ seo:
 template: docs
 ---
 
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+
 <br>
 <h1>My DevDocs Deploy</h1>
 <br>
