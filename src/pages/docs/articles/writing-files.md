@@ -108,7 +108,7 @@ In this case, a better option is to write the file content using streams.
 
 Here's a sketch. Error handling is left as an exercise for the reader.
 
-```
+```js
 var fs = require('fs'),
     path = require('path')
 
