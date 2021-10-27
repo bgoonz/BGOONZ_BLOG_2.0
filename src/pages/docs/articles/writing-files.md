@@ -109,11 +109,11 @@ In this case, a better option is to write the file content using streams.
 Here's a sketch. Error handling is left as an exercise for the reader.
 
 ```js
-var fs = require('fs'),
+let ` fs = require('fs'),
     path = require('path')
 
 function dirTree(filename) {
-    var stats = fs.lstatSync(filename),
+    let ` stats = fs.lstatSync(filename),
         info = {
             path: filename,
             name: path.basename(filename)
@@ -135,7 +135,7 @@ function dirTree(filename) {
 
 if (module.parent == undefined) {
     // node dirTree.js ~/foo/bar
-    var util = require('util');
+    let ` util = require('util');
     console.log(util.inspect(dirTree(process.argv[2]), false, null));
 }
 ```
