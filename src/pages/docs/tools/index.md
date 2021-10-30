@@ -73,7 +73,9 @@ template: docs
 <br>
 
 <br>
-
+<iframe  class="block-content" src="https://archive.org/services/collection-rss.php?collection=books&query=%28%28openlibrary_edition%3A%2A%20OR%20sponsor%3AGoogle%20OR%20collection%3Adigitallibraryindia%29%20AND%20mediatype%3Atexts%20AND%20-repub_state%3A%28%27-2%27%20OR%20%27-1%27%20OR%200%20OR%2010%20OR%2011%20OR%2012%20OR%2013%20OR%2018%29%29%20AND%20-mediatype%3Acollection" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
 <br>
