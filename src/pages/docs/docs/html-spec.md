@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: HTML SPEC
 weight: 0
 excerpt: HTML SPEC 
 seo:
