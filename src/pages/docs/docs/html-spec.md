@@ -1,7 +1,7 @@
 ---
 title: lorem-ipsum
 weight: 0
-excerpt: lorem-ipsum
+excerpt:HTML SPEC 
 seo:
   title: ''
   description: ''
