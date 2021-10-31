@@ -99,12 +99,8 @@ class Link extends React.Component {
 ---
 ---
 
-```js
-/* *******************************************************************************************
- * REACT.JS CHEATSHEET
- * DOCUMENTATION: https://reactjs.org/docs/
- * FILE STRUCTURE: https://reactjs.org/docs/faq-structure.html
- * ******************************************************************************************* */
+```sh
+
 
 
 
@@ -114,7 +110,7 @@ npm install --save prop-types  // runtime type checking for React props and simi
 ```
 
 // notes: don't forget the command lines
-
+```js
 
 /* *******************************************************************************************
  * REACT
