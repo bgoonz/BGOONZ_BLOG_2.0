@@ -107,7 +107,7 @@ class Link extends React.Component {
  * ******************************************************************************************* */
 
 
-```
+
 npm install --save react       // declarative and flexible JavaScript library for building UI
 npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
 npm install --save prop-types  // runtime type checking for React props and similar objects
