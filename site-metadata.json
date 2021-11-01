@@ -236,7 +236,7 @@
                         "no_follow": false
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Family Promise Tracker",
                         "url": "https://a.familypromiseservicetracker.dev/",
                         "style": "link",
                         "icon_class": "dev",
