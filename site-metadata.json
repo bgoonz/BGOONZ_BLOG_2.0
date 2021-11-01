@@ -221,25 +221,6 @@
                 "type": "action_menu"
             },
             {
-                "label": "Cool Stuff",
-                "url": "/docs/reference/bookmarks",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": false,
-                "subnav_links": [
-                    {
-                        "label": "lorem-ipsum",
-                        "url": "#",
-                        "style": "link",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
-                    }
-                ]
-            },
-            {
                 "label": "Projects",
                 "url": "https://project-portfolio42.netlify.app/",
                 "style": "primary",
