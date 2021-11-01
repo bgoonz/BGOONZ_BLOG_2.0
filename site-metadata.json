@@ -183,44 +183,6 @@
                 "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
             },
             {
-                "label": "Audio",
-                "url": "/docs/audio/audio",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": true,
-                "subnav_links": [
-                    {
-                        "label": "DTW-guitar-effects",
-                        "url": "/docs/audio/audio",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Fast Fourier Transform",
-                        "url": "/docs/audio/dfft",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "lorem-ipsum",
-                        "url": "#",
-                        "style": "link",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
-                    }
-                ],
-                "type": "action_menu"
-            },
-            {
                 "label": "Projects",
                 "url": "https://project-portfolio42.netlify.app/",
                 "style": "primary",
