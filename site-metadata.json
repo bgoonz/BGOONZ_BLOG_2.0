@@ -238,7 +238,7 @@
                     {
                         "label": "Family Promise Tracker",
                         "url": "https://a.familypromiseservicetracker.dev/",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
