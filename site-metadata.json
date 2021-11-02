@@ -78,15 +78,6 @@
                         "type": "action"
                     },
                     {
-                        "label": "ds-algo",
-                        "url": "docs/articles/ds-algo-overview/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
                         "label": "platform docs",
                         "url": "blog/platform-docs/",
                         "style": "primary",
