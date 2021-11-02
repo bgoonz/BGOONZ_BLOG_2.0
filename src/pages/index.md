@@ -200,7 +200,7 @@ sections:
     content: >-
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
-        src="https://random-static-html-deploys.netlify.app/rotate.html" title="YouTube video
+        src="https://random-static-html-deploys.netlify.app/showcase2.html" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
