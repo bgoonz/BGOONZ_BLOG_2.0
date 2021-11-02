@@ -6,7 +6,7 @@ sections:
     title: 'I am a musician, electrical engineer & web developer'
     image: images/api-c99e353f761d318322c853c03ebcf21b.gif
     content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[ ](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryans github activity graph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n \n \n ![Jokes](https://readme-jokes.vercel.app/api)\n \n  ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python) ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5) ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js) ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat&logo=Docker) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat&logo=postgresql)![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git) ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github) ![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat&logo=gitlab) ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)"
-    actions:
+     actions:
       - label: Contact
         url: 'https://sidebar-blog.netlify.app/contact/'
         style: secondary
@@ -14,6 +14,75 @@ sections:
         new_window: true
         no_follow: false
         type: action
+  - section_id: features
+    type: section_grid
+    col_number: three
+    grid_items:
+      - content: >
+          Memoization, Tabulation, and Sorting Algorithms by Example
+
+          Why is looking at runtime not a reliable method of calculating time
+          complexity?
+        actions:
+          - label: Get Started
+            url: /docs
+            style: link
+        title: A Quick Guide To Big O
+        image: images/my-back.png
+        title_url: >-
+          https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
+      - content: >
+          *Python has a built in help function that let’s you see a description
+          of the source code without having to navigate to it… “-SickNasty …
+          Autor Unknown”  .*
+        actions:
+          - label: View Posts
+            url: >-
+              https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
+            style: link
+        image_alt: python
+        title: Python Guide
+        title_url: >-
+          https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
+        image: images/smiling-maple.png
+      - content: |
+          <div id="search"></div> <div id="search" />
+        actions:
+          - label: Learn More
+            url: /docs/tools
+            style: link
+        title: Guitar Effects Triggering w DTW
+        title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
+        image: images/panoramic-owl.png
+      - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
+        image_alt: img of dtw
+        content: >
+          As I learn to build web applications in React I will blog about it in
+          this series in an attempt to capture the questions that a complete
+          beginner might encounter that a more seasoned developer would take for
+          granted!
+        actions: []
+        type: grid_item
+        title: Beginner Guide React
+        image: images/successful-panda.gif
+      - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
+        image_alt: img of react
+        content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
+        actions: []
+        type: grid_item
+        image: images/pleasant-birch.png
+        title: Scope & Closure
+      - image_alt: Every idea needs a medium
+        content: >
+          PostgreSQL Cheat Sheet, Everything You Need to Get Started With VSCode
+          + Extensions & Resources, Super Simple Intro To HTML,  Understanding
+          Git... etc....
+        actions: []
+        type: grid_item
+        title: My Medium Blog
+        image: images/curious-mustard.png
+        title_url: >-
+          https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
