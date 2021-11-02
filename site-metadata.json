@@ -473,15 +473,6 @@
         ],
         "links": [
             {
-                "label": "Medium",
-                "url": "https://bryanguner.medium.com/",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false,
-                "type": "action"
-            },
-            {
                 "label": "BLM",
                 "url": "https://optimistic-lewin-8586ae.netlify.app/blm.zip",
                 "style": "primary",
