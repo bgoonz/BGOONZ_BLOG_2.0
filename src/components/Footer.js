@@ -10,6 +10,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
+                   <div id="search"></div>
                 <div>
                     <center>
                         <br />
