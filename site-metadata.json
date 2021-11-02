@@ -126,7 +126,7 @@
                     },
                     {
                         "label": "Bootcamp Resources",
-                        "url": "#",
+                        "url": "https://lambda-resources.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
