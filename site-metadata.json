@@ -161,9 +161,9 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
-                        "url": "#",
-                        "style": "link",
+                        "label": "MY_DOCS",
+                        "url": "https://bryan-guner.gitbook.io/my-docs/",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
