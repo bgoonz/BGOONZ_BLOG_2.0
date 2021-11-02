@@ -1,6 +1,6 @@
 function MakerBadge(t) {
   (this.userId = ""),
-    (this.position = "right"),
+    (this.position = "left"),
     (this.layout = 1),
     (this.coffee = !1),
     (this.customHTML = ""),
