@@ -171,7 +171,7 @@ export default class Footer extends React.Component {
                         )}{' '}
                     </div>
                 </div>
-                   <div id="search">
+                   <div id="search"></div>
             </footer>
         );
     }
