@@ -33,6 +33,7 @@ a {
     overflow: scroll !important;
     border: none;
     zoom: 1;
+    z-index: -1;
 }
 
 iframe {
