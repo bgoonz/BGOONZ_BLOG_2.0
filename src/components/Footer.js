@@ -30,7 +30,7 @@ export default class Footer extends React.Component {
                                             fontFamily: 'Arial, Helvetica, sans-serif',
                                             fontSize: '7.5pt'
                                         }}
-                                    >   <div id="search">
+                                    >
                                         <center>
                                             <table
                                                 width="95%"
