@@ -14,10 +14,7 @@ export default class Footer extends React.Component {
                     <center>
                         <br />
                         <div id="search">
-                            <link
-                                rel="stylesheet"
-                                href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"
-                            />{' '}
+                          {' '}
                             {Script}{' '}
                         </div>
                         <br />
