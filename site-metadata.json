@@ -165,7 +165,7 @@
                         "url": "https://bryan-guner.gitbook.io/my-docs/",
                         "style": "primary",
                         "icon_class": "dev",
-                        "new_window": false,
+                        "new_window": true,
                         "no_follow": false
                     }
                 ],
