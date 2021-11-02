@@ -116,15 +116,6 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "Medium Articles",
-                        "url": "https://bryanguner.medium.com/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
                         "label": "Resource-Archive-Server",
                         "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
