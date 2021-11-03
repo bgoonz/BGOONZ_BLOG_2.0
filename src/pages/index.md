@@ -80,7 +80,7 @@ sections:
         actions: []
         type: grid_item
         title: My Medium Blog
-        image: images/curious-mustard.png
+        image: images/7a8bc98e902a2f6dea90386cdfb154c2-502fced8.png
         title_url: >-
           https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
   - title: Current Interests
