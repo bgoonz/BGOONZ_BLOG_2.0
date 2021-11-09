@@ -24,4 +24,3 @@ seo:
           value: This is the community page
 template: docs
 ---
-

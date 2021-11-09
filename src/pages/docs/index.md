@@ -33,7 +33,6 @@ excerpt: docs quick reference
 
 <div id="search"></div>
 
-
 # Actual Docs:
 
 <br>

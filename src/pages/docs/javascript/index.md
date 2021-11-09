@@ -3,11 +3,11 @@ title: Javascript
 weight: 0
 excerpt: Javascript articles  and docs
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
 

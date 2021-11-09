@@ -10,18 +10,12 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
-                   <div id="search"></div>
+                <div id="search"></div>
                 <div>
                     <center>
                         <br />
-                          <link
-                                rel="stylesheet"
-                                href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"
-                            />
-                        <div id="search">
-                          {' '}
-                            {Script}{' '}
-                        </div>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+                        <div id="search"> {Script} </div>
                         <br />
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
@@ -171,7 +165,7 @@ export default class Footer extends React.Component {
                         )}{' '}
                     </div>
                 </div>
-                   <div id="search"></div>
+                <div id="search"></div>
             </footer>
         );
     }
