@@ -10,8 +10,8 @@ seo:
     robots: []
     extra: []
 template: post
-thumb_image: images/graphql.png
-image: images/graphql-f3b94d65.png
+thumb_image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/225px-GraphQL_Logo.svg.png
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/225px-GraphQL_Logo.svg.png
 ---
 
 ## Table of Contents&#xA;&#xA;
