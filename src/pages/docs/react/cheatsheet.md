@@ -97,6 +97,7 @@ class Link extends React.Component {
 ```
 
 ---
+
 ---
 
 ```sh
@@ -110,6 +111,7 @@ npm install --save prop-types  // runtime type checking for React props and simi
 ```
 
 // notes: don't forget the command lines
+
 ```js
 
 /* *******************************************************************************************
@@ -183,7 +185,7 @@ class Component extends React.Component {
     // Binding makes sure the method has access to component attributes like this.props and this.state
     this.method = this.method.bind(this);
 
-    // The constructor is the right place to initialize state. 
+    // The constructor is the right place to initialize state.
     this.state = {
       active: true,
 
@@ -441,8 +443,8 @@ MyComponent.propTypes = {
 ```
 
 ---
----
 
+---
 
 ## Advanced Components
 

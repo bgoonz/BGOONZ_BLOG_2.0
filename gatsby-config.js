@@ -1,4 +1,4 @@
-const siteMetadata = require('./site-metadata.json')
+const siteMetadata = require('./site-metadata.json');
 
 module.exports = {
     pathPrefix: '/',
@@ -26,7 +26,7 @@ module.exports = {
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {
                 sourceUrlPath: `fields.url`,
-                pageContextProperty: `menus`,
+                pageContextProperty: `menus`
             }
         }
     ]

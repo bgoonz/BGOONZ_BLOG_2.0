@@ -350,7 +350,6 @@ template: docs
 
 ### [**✅showcase/🌍**]https://bgoonz-blog.netlify.app/showcase/)
 
-
 # [**🌍⇒https://bgoonz-blog.netlify.app/🗺️**](https://bgoonz-blog.netlify.app/)
 
 <br>
@@ -671,7 +670,7 @@ template: docs
 
 <br>
 
-### [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url))
+### [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
 
 <br>
 
