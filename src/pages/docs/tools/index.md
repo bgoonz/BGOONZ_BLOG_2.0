@@ -51,9 +51,23 @@ template: docs
 <iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                       
+<br>
+<br>
+  <h1>  Text Tools </h1>
+<br>
+<iframe  class="block-content" src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
         
-        
-   
+<br>
+<br>
+  <h1>  Other Tools </h1>
+<br>
+<iframe  class="block-content" src="https://bgoonz.github.io/more-tools-textool-template-format/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
+           
 <br>
 <br>
 <h1>   Paste Excel Tabel To Markdown </h1>
