@@ -1,7 +1,7 @@
 title: Breaking or continuing loop in functional programming
 tip-number: 58
-tip-username: vamshisuram
-tip-username-profile: https://github.com/vamshisuram
+
+
 tip-tldr: A common task for us is iterate over a list looking for a value or values, but we can't return from inside a loop so we will have to iterate the whole array, even if the item we search is the first in the list, in this tip we will see how to short circuit with `.some` and `.every`.
 
 -   /en/break-continue-loop-functional/
