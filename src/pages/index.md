@@ -217,6 +217,24 @@ sections:
     type: section_content
     title: Web Audio DAW
     image: images/goals.jpg
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    image_position: left
+    content: >-
+      ## Lorem ipsum
+
+
+      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+      - Lorem ipsum
+
+      - dolor sit amet
+    actions: []
+    type: section_content
+    '': lorem-ipsum
   - title: Quick Links
     section_id: navigate from the home page
     col_number: two
