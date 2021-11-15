@@ -23,6 +23,7 @@ a {
         color: $gray-600;
     }
 }
+
 #social-embed {
     // position: absolute !important;
     // right: 50px !important;
@@ -42,7 +43,7 @@ iframe {
     border-radius: 12px;
     border: 2px solid gold;
     height: 1200px;
-    width: 100%;
+    width: 1000px;
     resize: both;
     overflow: auto;
 }
@@ -120,7 +121,7 @@ pre {
     }
 }
 
-:not(pre) > code {
+:not(pre)>code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -180,8 +181,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
     margin-bottom: 0;
 }
 
