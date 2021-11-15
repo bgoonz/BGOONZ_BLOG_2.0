@@ -18,7 +18,6 @@ template: docs
   data-show-faces="true">
 </div>
 
-
 <br>
 <h1>My DevDocs Deploy</h1>
 <br>

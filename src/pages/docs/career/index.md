@@ -3,10 +3,10 @@ title: Career
 weight: 0
 excerpt: Reference materials and descriptions of fundamental concepts as well as visua
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
 
