@@ -1,12 +1,12 @@
 ---
-title: lorem-ipsum
+title: insert-into-array
 weight: 0
 excerpt: lorem-ipsum
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
+  title: ''
+  description: ''
+  robots: []
+  extra: []
 template: docs
 ---
 
