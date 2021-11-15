@@ -159,75 +159,23 @@ sections:
                 the first time since 1997 that researchers have done experiments in a
                 tokamak with any significant amount of tritium.
 
-            actions: []
-            type: grid_item
-            image: images/iter-zoomed.PNG
-      type: section_grid
-    - section_id: features-two-col
-      type: section_grid
-      title: Resume & Portfolio
-      col_number: two
-      grid_items:
-          - title: Resume
-            actions:
-                - label: Learn More
-                  url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-                  style: link
-                - label: Download PDF
-                  url: '#'
-                  style: link
-                  icon_class: dev
-                  new_window: false
-                  no_follow: false
-                  type: action
-            image: images/bryan_guner_resume_2021-v4IMG.jpeg
-            title_url: >-
-                https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
-          - title: Showcase
-            content: |
-                ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
-            actions:
-                - label: Learn More
-                  url: /showcase
-                  style: link
-            image: images/My Post.png
-    - title: Blog-Archive-And-Mini-Projects
-      section_id: lorem-ipsum
-      image_alt: rotating pages
-      image_position: left
-      content: >-
-          <iframe class="block-content" width="100%  width="1200px!important"
-          height="1000px!important"
-            src="https://random-static-html-deploys.netlify.app/showcase2.html" title="YouTube video
-            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      actions: []
-      type: section_content
-    - section_id: Web Audio DAW
-      image_alt: medium
-      image_position: left
-      actions:
-          - label: Go To Web Audio Daw
-            url: 'https://mihirbegmusiclab.netlify.app/'
-            style: primary
-            icon_class: dev
-            new_window: true
-            no_follow: false
-            type: action
-      type: section_content
-      title: Web Audio DAW
-      image: images/goals.jpg
-    - title: Quick Links
-      section_id: navigate from the home page
-      col_number: two
-      type: section_docs
-      subtitle: quick links home
-    - title: Contact
-      section_id: contact
-      actions:
-          - label: Contact
-            url: /docs/faq/contact
-            style: primary
+        actions: []
+        type: grid_item
+        image: images/iter.jpg
+    type: section_grid
+  - section_id: features-two-col
+    type: section_grid
+    title: Resume & Portfolio
+    col_number: two
+    grid_items:
+      - title: Resume
+        actions:
+          - label: Learn More
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
+            style: link
+          - label: Download PDF
+            url: '#'
+            style: link
             icon_class: dev
             new_window: false
             no_follow: false
