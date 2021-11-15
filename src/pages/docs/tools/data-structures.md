@@ -49,9 +49,9 @@ template: docs
 <br>
 <br>
 <br>
-<h1>   Algorithms </h1>
+<h1>   Leetcode </h1>
 <br>
-<iframe  class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://bgoonz.github.io/Leetcode-JS-PY-MD/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
