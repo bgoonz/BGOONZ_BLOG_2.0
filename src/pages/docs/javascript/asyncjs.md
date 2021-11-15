@@ -1,7 +1,7 @@
 ---
 title: AsynchAsynchronous JavaScript
 weight: 0
-excerpt: lorem-ipsum
+excerpt: AsynchAsynchronous JavaScript
 seo:
   title: ''
   description: ''
