@@ -1,5 +1,5 @@
 ---
-title: Asynch
+title: AsynchAsynchronous JavaScript
 weight: 0
 excerpt: lorem-ipsum
 seo:
