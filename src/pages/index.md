@@ -116,39 +116,39 @@ sections:
                 ## Why Jamstack
 
 
-                *Jamstack is the new standard architecture for the web. Using Git
-                workflows and modern build tools, pre-rendered content is served to a
-                CDN and made dynamic through APIs and serverless functions.
-                Technologies in the stack include JavaScript frameworks, Static Site
-                Generators, Headless CMSs, and CDNs.*
-            actions: []
-            type: grid_item
-            image: images/jamstack.png
-          - title: Asynchronous JavaScript
-            title_url: /docs/javascript/asyncjs
-            image_alt: lorem-ipsum
-            content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
-            actions: []
-            type: grid_item
-            image: images/eventloop.gif
-          - title: NJ Devils
-            image_alt: nj-devils
-            content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
-            actions:
-                - label: Learn More
-                  url: '#'
-                  style: link
-                  icon_class: dev
-                  new_window: false
-                  no_follow: false
-            type: grid_item
-            image: images/njdevils.jpg
-            title_url: 'https://www.allaboutthejersey.com/'
-          - title: ITER Fusion Reactor Experiment (Southern France)
-            title_url: lorem-ipsum
-            image_alt: lorem-ipsum
-            content: >+
-                # Break Even Nuclear Fusion Candidate
+          *Jamstack is the new standard architecture for the web. Using Git
+          workflows and modern build tools, pre-rendered content is served to a
+          CDN and made dynamic through APIs and serverless functions.
+          Technologies in the stack include JavaScript frameworks, Static Site
+          Generators, Headless CMSs, and CDNs.*
+        actions: []
+        type: grid_item
+        image: images/jamstack.png
+      - title: Asynchronous JavaScript
+        title_url: /docs/javascript/asyncjs
+        image_alt: lorem-ipsum
+        content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
+        actions: []
+        type: grid_item
+        image: images/eventloop.gif
+      - title: NJ Devils
+        image_alt: nj-devils
+        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
+        actions:
+          - label: Learn More
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+        type: grid_item
+        image: images/njdev.jpg
+        title_url: 'https://www.allaboutthejersey.com/'
+      - title: ITER Fusion Reactor Experiment (Southern France)
+        title_url: lorem-ipsum
+        image_alt: lorem-ipsum
+        content: >+
+          # Break Even Nuclear Fusion Candidate
 
 
                 In December, researchers at the Joint European Torus (JET) started
@@ -159,75 +159,23 @@ sections:
                 the first time since 1997 that researchers have done experiments in a
                 tokamak with any significant amount of tritium.
 
-            actions: []
-            type: grid_item
-            image: images/iter-zoomed.PNG
-      type: section_grid
-    - section_id: features-two-col
-      type: section_grid
-      title: Resume & Portfolio
-      col_number: two
-      grid_items:
-          - title: Resume
-            actions:
-                - label: Learn More
-                  url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-                  style: link
-                - label: Download PDF
-                  url: '#'
-                  style: link
-                  icon_class: dev
-                  new_window: false
-                  no_follow: false
-                  type: action
-            image: images/bryan_guner_resume_2021-v4IMG.jpeg
-            title_url: >-
-                https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
-          - title: Showcase
-            content: |
-                ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
-            actions:
-                - label: Learn More
-                  url: /showcase
-                  style: link
-            image: images/My Post.png
-    - title: Blog-Archive-And-Mini-Projects
-      section_id: lorem-ipsum
-      image_alt: rotating pages
-      image_position: left
-      content: >-
-          <iframe class="block-content" width="100%  width="1200px!important"
-          height="1000px!important"
-            src="https://random-static-html-deploys.netlify.app/showcase2.html" title="YouTube video
-            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      actions: []
-      type: section_content
-    - section_id: Web Audio DAW
-      image_alt: medium
-      image_position: left
-      actions:
-          - label: Go To Web Audio Daw
-            url: 'https://mihirbegmusiclab.netlify.app/'
-            style: primary
-            icon_class: dev
-            new_window: true
-            no_follow: false
-            type: action
-      type: section_content
-      title: Web Audio DAW
-      image: images/goals.jpg
-    - title: Quick Links
-      section_id: navigate from the home page
-      col_number: two
-      type: section_docs
-      subtitle: quick links home
-    - title: Contact
-      section_id: contact
-      actions:
-          - label: Contact
-            url: /docs/faq/contact
-            style: primary
+        actions: []
+        type: grid_item
+        image: images/iter.jpg
+    type: section_grid
+  - section_id: features-two-col
+    type: section_grid
+    title: Resume & Portfolio
+    col_number: two
+    grid_items:
+      - title: Resume
+        actions:
+          - label: Learn More
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
+            style: link
+          - label: Download PDF
+            url: '#'
+            style: link
             icon_class: dev
             new_window: false
             no_follow: false
