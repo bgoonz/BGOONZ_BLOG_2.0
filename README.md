@@ -2,23 +2,23 @@
 
 ---
 
-# [WEBSITE🗺️\*\*](https://bgoonz-blog.netlify.app/)
+# [WEBSITE](https://bgoonz-blog.netlify.app/)
 
-## [Cloudfare-Backup🗺️\*\*](https://bgoonz-blog-2-0.pages.dev/)
+## [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/)
 
-# Search Website: [search🗺️\*\*](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
+# Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
 
-## [Backup Repo Deploy🗺️\*\*](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
+## [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
 
-## [Github pages🗺️\*\*](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+## [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
-![Profile views🗺️**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter🗺️**](https://badges.gitter.im/bgoonz/community.svg)🗺️\*\*](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+![Profile views🗺️**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter🗺️**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-[![Netlify Status🗺️**](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)🗺️\*\*](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
+[![Netlify Status🗺️**](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
 
-[![CodeScene System Mastery🗺️**](https://codescene.io/projects/17026/status-badges/system-mastery)🗺️\*\*](https://codescene.io/projects/17026)
+[![CodeScene System Mastery🗺️**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
 
-## [Go To Site Wiki🗺️\*\*](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+## [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
 ---
 
