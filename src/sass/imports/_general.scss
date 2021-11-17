@@ -30,7 +30,7 @@ a {
     bottom: 120px !important;
     width: 800px !important;
     margin: 0 auto !important;
-    height: 350px !important;
+    height: 380px !important;
     overflow: scroll !important;
     border: none;
     zoom: 1;
@@ -121,7 +121,7 @@ pre {
     }
 }
 
-:not(pre) > code {
+:not(pre)>code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -181,8 +181,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
     margin-bottom: 0;
 }
 
