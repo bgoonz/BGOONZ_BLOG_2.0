@@ -20,7 +20,6 @@ sections:
     grid_items:
       - content: >
           Memoization, Tabulation, and Sorting Algorithms by Example
-
           Why is looking at runtime not a reliable method of calculating time
           complexity?
         actions:
@@ -91,9 +90,7 @@ sections:
         image_alt: angolia
         content: |
           ## Full Text Search
-
           [Full Text Search](https://www.algolia.com/)
-
           ## &#xA;
         actions: []
         type: grid_item
@@ -105,52 +102,47 @@ sections:
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
           networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
-
-        actions: []
-        type: grid_item
-        image: images/neural.PNG
-      - title: Jamstack
-        title_url: jamstack
-        image_alt: jamstack
-        content: >
-          ## Why Jamstack
-
-
-          *Jamstack is the new standard architecture for the web. Using Git
-          workflows and modern build tools, pre-rendered content is served to a
-          CDN and made dynamic through APIs and serverless functions.
-          Technologies in the stack include JavaScript frameworks, Static Site
-          Generators, Headless CMSs, and CDNs.*
-        actions: []
-        type: grid_item
-        image: images/jamstack.png
-      - title: Asynchronous JavaScript
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
-        content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
-        actions: []
-        type: grid_item
-        image: images/eventloop.gif
-      - title: NJ Devils
-        image_alt: nj-devils
-        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
-        actions:
-          - label: lorem-ipsum
-            url: '#'
-            style: link
-            icon_class: dev
-            new_window: false
-            no_follow: false
-        type: grid_item
-        image: images/njdevils.jpg
-        title_url: 'https://www.allaboutthejersey.com/'
-      - title: ITER Fusion Reactor Experiment (Southern France)
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
-        content: >+
-          # Break Even Nuclear Fusion Candidate
-
-
+            actions: []
+            type: grid_item
+            image: images/neural.PNG
+          - title: Jamstack
+            title_url: jamstack
+            image_alt: jamstack
+            content: >
+                ## Why Jamstack
+                Jamstack is the new standard architecture for the web. Using Git
+                workflows and modern build tools, pre-rendered content is served to a
+                CDN and made dynamic through APIs and serverless functions.
+                Technologies in the stack include JavaScript frameworks, Static Site
+                Generators, Headless CMSs, and CDNs.
+            actions: []
+            type: grid_item
+            image: images/jamstack.png
+          - title: Asynchronous JavaScript
+            title_url: lorem-ipsum
+            image_alt: lorem-ipsum
+            content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
+            actions: []
+            type: grid_item
+            image: images/eventloop.gif
+          - title: NJ Devils
+            image_alt: nj-devils
+            content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
+            actions:
+                - label: lorem-ipsum
+                  url: '#'
+                  style: link
+                  icon_class: dev
+                  new_window: false
+                  no_follow: false
+            type: grid_item
+            image: images/njdevils.jpg
+            title_url: 'https://www.allaboutthejersey.com/'
+          - title: ITER Fusion Reactor Experiment (Southern France)
+            title_url: lorem-ipsum
+            image_alt: lorem-ipsum
+            content: >+
+                # Break Even Nuclear Fusion Candidate
           In December, researchers at the Joint European Torus (JET) started
           conducting fusion experiments with tritium — a rare and radioactive
           isotope of hydrogen. The facility is a one-tenth-volume mock-up of the
@@ -158,7 +150,6 @@ sections:
           design — the world’s most developed approach to fusion energy. It is
           the first time since 1997 that researchers have done experiments in a
           tokamak with any significant amount of tritium.
-
         actions: []
         type: grid_item
         image: images/iter-zoomed.PNG
@@ -209,14 +200,9 @@ sections:
     image_position: left
     content: >-
       ## Lorem ipsum
-
-
       Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
       - Lorem ipsum
-
       - dolor sit amet
     actions: []
     type: section_content
