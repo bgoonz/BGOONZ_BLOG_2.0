@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Tips
 weight: 0
 excerpt: lorem-ipsum
 seo:
