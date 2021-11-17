@@ -141,7 +141,7 @@ template: docs
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br>
+<!-- <br>
 <h1> Border Builder </h1>
 <br>
 
@@ -153,7 +153,7 @@ template: docs
 
 <br>
 
-<br>
+<br> -->
 
 <br>
 
