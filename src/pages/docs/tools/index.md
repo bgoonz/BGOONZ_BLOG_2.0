@@ -145,7 +145,7 @@ template: docs
 <h1> Border Builder </h1>
 <br>
 
-<iframe  src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  src="https://random-static-html-deploys.netlify.app/web-speech-api-master/speak-easy-synthesis/index.html" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
