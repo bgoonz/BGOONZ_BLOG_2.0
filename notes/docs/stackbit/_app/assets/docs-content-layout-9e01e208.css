@@ -1,0 +1,16 @@
+a.svelte-164hpj2:after {
+    display: none !important;
+}
+.btn-otherbrand.svelte-164hpj2 {
+    display: inline-flex !important;
+    border-radius: 1rem;
+    font-size: var(--btn-small);
+    padding-left: var(--micro);
+    padding-right: var(--micro);
+}
+.logo.svelte-164hpj2 {
+    transform: -1px;
+}
+a.svelte-1kanmwt {
+    font-weight: 100;
+}

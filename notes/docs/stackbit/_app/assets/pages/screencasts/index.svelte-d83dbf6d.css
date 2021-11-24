@@ -1,0 +1,17 @@
+time.svelte-1gv8tr3 {
+    color: var(--light-grey);
+}
+article.svelte-1gv8tr3 {
+    max-width: 400px;
+    min-width: 320px;
+}
+p.svelte-1gv8tr3,
+time.svelte-1gv8tr3 {
+    margin-left: 1rem;
+}
+time.svelte-1gv8tr3 {
+    font-size: var(--fine-print);
+}
+h1.svelte-1idb770 {
+    text-align: center;
+}
