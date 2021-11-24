@@ -3,7 +3,7 @@ title: Job search
 weight: 1
 excerpt: Job search
 seo:
-    title: Documentation
+    title: Job search
     description: Documentation
     robots: []
     extra: []
