@@ -23,14 +23,13 @@ a {
         color: $gray-600;
     }
 }
-
 #social-embed {
     // position: absolute !important;
     // right: 50px !important;
     bottom: 120px !important;
-    width: 800px !important;
+    width:100% !important;
     margin: 0 auto !important;
-    height: 380px !important;
+    height: 350px !important;
     overflow: scroll !important;
     border: none;
     zoom: 1;
@@ -43,9 +42,9 @@ iframe {
     border-radius: 12px;
     border: 2px solid gold;
     height: 1200px;
-    width: 1200px;
+    width: 100%;
     resize: both;
-    overflow: auto;
+    overflow:auto;
 }
 
 h1,
