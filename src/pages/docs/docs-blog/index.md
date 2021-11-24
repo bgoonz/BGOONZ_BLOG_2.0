@@ -1,5 +1,5 @@
 ---
-title: Docs
+title: Docsblog
 weight: 1
 excerpt: Documentation
 seo:
