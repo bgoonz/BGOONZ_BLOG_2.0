@@ -28,17 +28,13 @@ a {
     // position: absolute !important;
     // right: 50px !important;
     bottom: 120px !important;
-<<<<<<< HEAD
     width: 100% !important;
-=======
-
     width: 1000px !important;
 
->>>>>>> ac1ebcc1ef75c0891e5a6b962d138b9412aa3d31
     margin: 0 auto !important;
     height: 400px !important;
     overflow: scroll !important;
-    border: none;
+    border: 2px solid black;
     zoom: 1;
     z-index: -1;
 }
@@ -53,10 +49,6 @@ iframe {
     width: 1200px;
     resize: both;
     overflow: auto;
-<<<<<<< HEAD
-=======
-
->>>>>>> ac1ebcc1ef75c0891e5a6b962d138b9412aa3d31
 }
 
 h1,
