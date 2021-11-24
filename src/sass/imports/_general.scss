@@ -47,8 +47,8 @@ iframe {
     height: 1200px;
 
     width: 1200px;
-    resize: both;
-    overflow: auto;
+    resize: both !important;
+    overflow: scroll !important;
 }
 
 h1,
