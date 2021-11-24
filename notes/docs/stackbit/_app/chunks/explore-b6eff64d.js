@@ -23,24 +23,24 @@ import {
 } from './index-0a115175.js';
 import { S as j } from './section-16fe1b30.js';
 function G(s) {
-    let a,
-        t,
-        e,
-        r,
-        l,
-        c,
-        o,
-        i,
-        j,
-        G,
-        _,
-        I,
-        b,
-        D,
-        S,
-        V,
-        k,
-        w = s[2].text + '';
+    let a;
+    let t;
+    let e;
+    let r;
+    let l;
+    let c;
+    let o;
+    let i;
+    let j;
+    let G;
+    let _;
+    let I;
+    let b;
+    let D;
+    let S;
+    let V;
+    let k;
+    let w = `${s[2].text}`;
     return {
         c() {
             (a = n('div')),
@@ -62,17 +62,17 @@ function G(s) {
         },
         l(n) {
             a = f(n, 'DIV', { class: !0 });
-            var p = m(a);
+            const p = m(a);
             t = f(p, 'DIV', { class: !0 });
-            var h = m(t);
+            const h = m(t);
             e = f(h, 'H2', { class: !0 });
-            var $ = m(e);
+            const $ = m(e);
             (r = d($, s[0])), $.forEach(u), (l = g(h)), (c = f(h, 'P', { class: !0 }));
-            var v = m(c);
+            const v = m(c);
             (o = d(v, s[1])), v.forEach(u), (i = g(h)), (j = f(h, 'A', { href: !0, class: !0 }));
-            var x = m(j);
+            const x = m(j);
             (G = d(x, w)), x.forEach(u), h.forEach(u), (_ = g(p)), (I = f(p, 'DIV', { class: !0 }));
-            var E = m(I);
+            const E = m(I);
             (b = f(E, 'IMG', { src: !0, alt: !0 })), (S = g(E)), (V = f(E, 'IMG', { src: !0, class: !0, alt: !0 })), E.forEach(u), p.forEach(u), this.h();
         },
         h() {
@@ -99,7 +99,8 @@ function G(s) {
     };
 }
 function _(s) {
-    let a, t;
+    let a;
+    let t;
     return (
         (a = new j({ props: { $$slots: { default: [G] }, $$scope: { ctx: s } } })),
         {
