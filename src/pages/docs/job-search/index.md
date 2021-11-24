@@ -1,7 +1,7 @@
 ---
 title: Job search
 weight: 1
-excerpt: Documentation
+excerpt: Job search
 seo:
     title: Documentation
     description: Documentation
