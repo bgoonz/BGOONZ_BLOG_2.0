@@ -28,11 +28,15 @@ a {
     // position: absolute !important;
     // right: 50px !important;
     bottom: 120px !important;
+<<<<<<< HEAD
+    width: 100% !important;
+=======
 
     width: 1000px !important;
 
+>>>>>>> ac1ebcc1ef75c0891e5a6b962d138b9412aa3d31
     margin: 0 auto !important;
-    height: 350px !important;
+    height: 400px !important;
     overflow: scroll !important;
     border: none;
     zoom: 1;
@@ -49,7 +53,10 @@ iframe {
     width: 1200px;
     resize: both;
     overflow: auto;
+<<<<<<< HEAD
+=======
 
+>>>>>>> ac1ebcc1ef75c0891e5a6b962d138b9412aa3d31
 }
 
 h1,
@@ -125,7 +132,7 @@ pre {
     }
 }
 
-:not(pre) > code {
+:not(pre)>code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -185,8 +192,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
     margin-bottom: 0;
 }
 
