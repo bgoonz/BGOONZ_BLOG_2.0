@@ -1,12 +1,12 @@
 ---
 title: Reference
 weight: 0
-excerpt: lorem-ipsum
+excerpt: helpful reference guides
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
+  title: ''
+  description: ''
+  robots: []
+  extra: []
 template: docs
 ---
 

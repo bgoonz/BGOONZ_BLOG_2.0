@@ -48,7 +48,12 @@ function q(e) {
     return e * e * e;
 }
 function R(e) {
-    let t, r, g, p, w, v;
+    let t;
+    let r;
+    let g;
+    let p;
+    let w;
+    let v;
     return {
         c() {
             (t = i('header')),
@@ -60,11 +65,11 @@ function R(e) {
         },
         l(e) {
             t = o(e, 'HEADER', {});
-            var i = l(t);
+            const i = l(t);
             r = o(i, 'H1', {});
-            var a = l(r);
+            const a = l(r);
             (g = h(a, 'Features')), a.forEach(n), (p = c(i)), (w = o(i, 'P', {}));
-            var s = l(w);
+            const s = l(w);
             (v = h(s, 'Automated workspaces that supercharge your development workflow. Squash your code-to-commit times.')), s.forEach(n), i.forEach(n);
         },
         m(e, i) {
@@ -84,7 +89,16 @@ class Q extends e {
     }
 }
 function X(e) {
-    let t, r, i, a, s, h, c, w, v, m;
+    let t;
+    let r;
+    let i;
+    let a;
+    let s;
+    let h;
+    let c;
+    let w;
+    let v;
+    let m;
     return {
         c() {
             (t = g('svg')),
@@ -101,7 +115,7 @@ function X(e) {
         },
         l(e) {
             t = o(e, 'svg', { width: !0, height: !0, viewBox: !0, fill: !0, xmlns: !0, 'aria-hidden': !0 }, 1);
-            var f = l(t);
+            const f = l(t);
             (r = o(f, 'rect', { width: !0, height: !0, fill: !0 }, 1)),
                 l(r).forEach(n),
                 (i = o(f, 'rect', { width: !0, height: !0, fill: !0 }, 1)),
@@ -187,7 +201,16 @@ class W extends e {
     }
 }
 function Y(e) {
-    let t, r, i, a, s, h, c, w, v, m;
+    let t;
+    let r;
+    let i;
+    let a;
+    let s;
+    let h;
+    let c;
+    let w;
+    let v;
+    let m;
     return {
         c() {
             (t = g('svg')),
@@ -204,7 +227,7 @@ function Y(e) {
         },
         l(e) {
             t = o(e, 'svg', { width: !0, height: !0, viewBox: !0, fill: !0, xmlns: !0, 'aria-hidden': !0 }, 1);
-            var f = l(t);
+            const f = l(t);
             (r = o(f, 'rect', { width: !0, height: !0, fill: !0 }, 1)),
                 l(r).forEach(n),
                 (i = o(f, 'rect', { width: !0, height: !0, fill: !0 }, 1)),
@@ -290,7 +313,17 @@ class K extends e {
     }
 }
 function Z(e) {
-    let t, r, i, a, s, h, c, w, v, m, y;
+    let t;
+    let r;
+    let i;
+    let a;
+    let s;
+    let h;
+    let c;
+    let w;
+    let v;
+    let m;
+    let y;
     return {
         c() {
             (t = g('svg')),
@@ -308,7 +341,7 @@ function Z(e) {
         },
         l(e) {
             t = o(e, 'svg', { width: !0, height: !0, viewBox: !0, fill: !0, xmlns: !0, 'aria-hidden': !0 }, 1);
-            var f = l(t);
+            const f = l(t);
             (r = o(f, 'rect', { width: !0, height: !0, fill: !0 }, 1)),
                 l(r).forEach(n),
                 (i = o(f, 'rect', { width: !0, height: !0, fill: !0 }, 1)),
@@ -401,7 +434,27 @@ class J extends e {
     }
 }
 function ee(e) {
-    let t, r, i, a, s, h, c, w, v, m, y, E, x, $, F, b, k, C, G, I, z;
+    let t;
+    let r;
+    let i;
+    let a;
+    let s;
+    let h;
+    let c;
+    let w;
+    let v;
+    let m;
+    let y;
+    let E;
+    let x;
+    let $;
+    let F;
+    let b;
+    let k;
+    let C;
+    let G;
+    let I;
+    let z;
     return {
         c() {
             (t = g('svg')),
@@ -429,9 +482,9 @@ function ee(e) {
         },
         l(e) {
             t = o(e, 'svg', { width: !0, height: !0, viewBox: !0, fill: !0, xmlns: !0, 'aria-hidden': !0 }, 1);
-            var f = l(t);
+            const f = l(t);
             r = o(f, 'g', { 'clip-path': !0 }, 1);
-            var d = l(r);
+            const d = l(r);
             (i = o(d, 'rect', { width: !0, height: !0, fill: !0 }, 1)),
                 l(i).forEach(n),
                 (a = o(d, 'rect', { width: !0, height: !0, fill: !0 }, 1)),
@@ -448,30 +501,30 @@ function ee(e) {
                 l(v).forEach(n),
                 d.forEach(n),
                 (m = o(f, 'defs', {}, 1));
-            var u = l(m);
+            const u = l(m);
             y = o(u, 'linearGradient', { id: !0, x1: !0, y1: !0, x2: !0, y2: !0, gradientUnits: !0 }, 1);
-            var g = l(y);
+            const g = l(y);
             (E = o(g, 'stop', { 'stop-color': !0 }, 1)),
                 l(E).forEach(n),
                 (x = o(g, 'stop', { offset: !0, 'stop-color': !0 }, 1)),
                 l(x).forEach(n),
                 g.forEach(n),
                 ($ = o(u, 'linearGradient', { id: !0, x1: !0, y1: !0, x2: !0, y2: !0, gradientUnits: !0 }, 1));
-            var p = l($);
+            const p = l($);
             (F = o(p, 'stop', { 'stop-color': !0 }, 1)),
                 l(F).forEach(n),
                 (b = o(p, 'stop', { offset: !0, 'stop-color': !0 }, 1)),
                 l(b).forEach(n),
                 p.forEach(n),
                 (k = o(u, 'linearGradient', { id: !0, x1: !0, y1: !0, x2: !0, y2: !0, gradientUnits: !0 }, 1));
-            var S = l(k);
+            const S = l(k);
             (C = o(S, 'stop', { 'stop-color': !0 }, 1)),
                 l(C).forEach(n),
                 (G = o(S, 'stop', { offset: !0, 'stop-color': !0 }, 1)),
                 l(G).forEach(n),
                 S.forEach(n),
                 (I = o(u, 'clipPath', { id: !0 }, 1));
-            var V = l(I);
+            const V = l(I);
             (z = o(V, 'rect', { width: !0, height: !0, fill: !0 }, 1)), l(z).forEach(n), V.forEach(n), u.forEach(n), f.forEach(n), this.h();
         },
         h() {
@@ -591,73 +644,79 @@ function re(e, t, r) {
     return (i[10] = t[r].Component), (i[11] = t[r].top), (i[12] = t[r].left), (i[13] = t[r].width), (i[14] = t[r].id), i;
 }
 function ie(e, t) {
-    let r, a, h, u, g, I, z, S;
-    var D = t[10];
-    return (
-        D && (a = new D({})),
-        {
-            key: e,
-            first: null,
-            c() {
-                (r = i('div')), a && $(a.$$.fragment), (h = s()), this.h();
-            },
-            l(e) {
-                r = o(e, 'DIV', { class: !0, style: !0 });
-                var t = l(r);
-                a && V(a.$$.fragment, t), (h = c(t)), t.forEach(n), this.h();
-            },
-            h() {
-                p(r, 'class', 'item svelte-1bzlj62'),
-                    w(r, 'top', (t[11] / le) * 100 + '%'),
-                    w(r, 'left', (t[12] / oe) * 100 + '%'),
-                    w(r, 'width', (t[13] / oe) * 100 + '%'),
-                    (this.first = r);
-            },
-            m(e, i) {
-                f(e, r, i), a && b(a, r, null), d(r, h), (I = !0), z || ((S = v(r, 'outroend', t[4])), (z = !0));
-            },
-            p(e, i) {
-                if (D !== (D = (t = e)[10])) {
-                    if (a) {
-                        m();
-                        const e = a;
-                        y(e.$$.fragment, 1, 0, () => {
-                            E(e, 1);
-                        }),
-                            x();
-                    }
-                    D ? ((a = new D({})), $(a.$$.fragment), F(a.$$.fragment, 1), b(a, r, h)) : (a = null);
-                }
-                (!I || 4 & i) && w(r, 'top', (t[11] / le) * 100 + '%'),
-                    (!I || 4 & i) && w(r, 'left', (t[12] / oe) * 100 + '%'),
-                    (!I || 4 & i) && w(r, 'width', (t[13] / oe) * 100 + '%');
-            },
-            i(e) {
-                I ||
-                    (a && F(a.$$.fragment, e),
-                    k(() => {
-                        g && g.end(1), u || (u = C(r, _, { duration: 1500, easing: q })), u.start();
+    let r;
+    let a;
+    let h;
+    let u;
+    let g;
+    let I;
+    let z;
+    let S;
+    let D = t[10];
+    return D && (a = new D({})),
+    {
+        key: e,
+        first: null,
+        c() {
+            (r = i('div')), a && $(a.$$.fragment), (h = s()), this.h();
+        },
+        l(e) {
+            r = o(e, 'DIV', { class: !0, style: !0 });
+            const t = l(r);
+            a && V(a.$$.fragment, t), (h = c(t)), t.forEach(n), this.h();
+        },
+        h() {
+            p(r, 'class', 'item svelte-1bzlj62'),
+                w(r, 'top', `${(t[11] / le) * 100}%`),
+                w(r, 'left', `${(t[12] / oe) * 100}%`),
+                w(r, 'width', `${(t[13] / oe) * 100}%`),
+                (this.first = r);
+        },
+        m(e, i) {
+            f(e, r, i), a && b(a, r, null), d(r, h), (I = !0), z || ((S = v(r, 'outroend', t[4])), (z = !0));
+        },
+        p(e, i) {
+            if (D !== (D = (t = e)[10])) {
+                if (a) {
+                    m();
+                    const e = a;
+                    y(e.$$.fragment, 1, 0, () => {
+                        E(e, 1);
                     }),
-                    (I = !0));
-            },
-            o(e) {
-                a && y(a.$$.fragment, e), u && u.invalidate(), e && (g = G(r, t[3], { duration: 1500, delay: 1500, factor: 1.015, easing: q })), (I = !1);
-            },
-            d(e) {
-                e && n(r), a && E(a), e && g && g.end(), (z = !1), S();
+                        x();
+                }
+                D ? ((a = new D({})), $(a.$$.fragment), F(a.$$.fragment, 1), b(a, r, h)) : (a = null);
             }
+            (!I || 4 & i) && w(r, 'top', `${(t[11] / le) * 100}%`),
+                (!I || 4 & i) && w(r, 'left', `${(t[12] / oe) * 100}%`),
+                (!I || 4 & i) && w(r, 'width', `${(t[13] / oe) * 100}%`);
+        },
+        i(e) {
+            I ||
+                (a && F(a.$$.fragment, e),
+                k(() => {
+                    g && g.end(1), u || (u = C(r, _, { duration: 1500, easing: q })), u.start();
+                }),
+                (I = !0));
+        },
+        o(e) {
+            a && y(a.$$.fragment, e), u && u.invalidate(), e && (g = G(r, t[3], { duration: 1500, delay: 1500, factor: 1.015, easing: q })), (I = !1);
+        },
+        d(e) {
+            e && n(r), a && E(a), e && g && g.end(), (z = !1), S();
         }
-    );
+    };
 }
 function ae(e) {
-    let t, r;
+    let t;
+    let r;
     return {
         c() {
             (t = i('figcaption')), (r = a(e[0])), this.h();
         },
         l(i) {
             t = o(i, 'FIGCAPTION', { class: !0 });
-            var a = l(t);
+            const a = l(t);
             (r = h(a, e[0])), a.forEach(n), this.h();
         },
         h() {
@@ -675,17 +734,17 @@ function ae(e) {
     };
 }
 function se(e) {
-    let t,
-        r,
-        a,
-        h,
-        u = [],
-        g = new Map(),
-        v = e[2];
+    let t;
+    let r;
+    let a;
+    let h;
+    let u = [];
+    let g = new Map();
+    let v = e[2];
     const E = (e) => e[14];
     for (let i = 0; i < v.length; i += 1) {
-        let t = re(e, v, i),
-            r = E(t);
+        let t = re(e, v, i);
+        let r = E(t);
         g.set(r, (u[i] = ie(r, t)));
     }
     let $ = e[0] && ae(e);
@@ -697,9 +756,9 @@ function se(e) {
         },
         l(e) {
             t = o(e, 'FIGURE', { class: !0, style: !0 });
-            var i = l(t);
+            const i = l(t);
             r = o(i, 'DIV', { class: !0 });
-            var s = l(r);
+            const s = l(r);
             for (let t = 0; t < u.length; t += 1) u[t].l(s);
             s.forEach(n), (a = c(i)), $ && $.l(i), i.forEach(n), this.h();
         },
@@ -732,61 +791,61 @@ function se(e) {
         }
     };
 }
-let oe = 632,
-    le = 500;
+let oe = 632;
+let le = 500;
 function he(e, t, r) {
-    let i,
-        { alt: a = '' } = t,
-        { iterations: s = 3 } = t,
-        o = [
-            { id: '1', left: 34, top: 92, width: 337, Component: W },
-            { id: '2', left: 110, top: 52, width: 286, Component: K },
-            { id: '3', left: 166, top: 196, width: 337, Component: J },
-            { id: '4', left: 260, top: 24, width: 372, Component: te }
-        ],
-        l = o.slice(0, 2),
-        h = 2,
-        n = s;
+    let i;
+    let { alt: a = '' } = t;
+    let { iterations: s = 3 } = t;
+
+    let o = [
+        { id: '1', left: 34, top: 92, width: 337, Component: W },
+        { id: '2', left: 110, top: 52, width: 286, Component: K },
+        { id: '3', left: 166, top: 196, width: 337, Component: J },
+        { id: '4', left: 260, top: 24, width: 372, Component: te }
+    ];
+
+    let l = o.slice(0, 2);
+    let h = 2;
+    let n = s;
     function c() {
         0 !== n ? (r(2, (l = [o[h], ...l.slice(0, 1)])), (h = (h + 1) % o.length), n--) : r(2, (l = [o[h], ...l]));
     }
-    return (
-        S(() => {
-            const e = new IntersectionObserver(([t]) => {
-                t.isIntersecting && (e.unobserve(i), c());
-            });
-            return (
-                e.observe(i),
-                () => {
-                    e.disconnect();
-                }
-            );
-        }),
-        (e.$$set = (e) => {
-            'alt' in e && r(0, (a = e.alt)), 'iterations' in e && r(5, (s = e.iterations));
-        }),
-        [
-            a,
-            i,
-            l,
-            function (e, t) {
-                const r = getComputedStyle(e).transform.replace('none', '');
-                return {
-                    delay: t.delay || 0,
-                    duration: t.duration || 400,
-                    easing: t.easing || j,
-                    css: (e, i) => `opacity: ${e}; transform: ${r} scale(${1 + ((t.factor || 1.5) - 1) * i})`
-                };
-            },
-            c,
-            s,
-            function (e) {
-                B[e ? 'unshift' : 'push'](() => {
-                    (i = e), r(1, i);
-                });
+    return S(() => {
+        const e = new IntersectionObserver(([t]) => {
+            t.isIntersecting && (e.unobserve(i), c());
+        });
+        return (
+            e.observe(i),
+            () => {
+                e.disconnect();
             }
-        ]
-    );
+        );
+    }),
+    (e.$$set = (e) => {
+        'alt' in e && r(0, (a = e.alt)), 'iterations' in e && r(5, (s = e.iterations));
+    }),
+    [
+        a,
+        i,
+        l,
+        (e, {delay, duration, easing, factor}) => {
+            const r = getComputedStyle(e).transform.replace('none', '');
+            return {
+                delay: delay || 0,
+                duration: duration || 400,
+                easing: easing || j,
+                css: (e, i) => `opacity: ${e}; transform: ${r} scale(${1 + ((factor || 1.5) - 1) * i})`
+            };
+        },
+        c,
+        s,
+        e => {
+            B[e ? 'unshift' : 'push'](() => {
+                (i = e), r(1, i);
+            });
+        }
+    ];
 }
 const ne = [
     {
@@ -813,153 +872,184 @@ function ce(e, t, r) {
     return (i[2] = t[r]), (i[4] = r), i;
 }
 function fe(e) {
-    let t, r, g, w, m, x, k, C, G, I, z, S, D, j, B, M, A, H, O, P, T, _, N, q, R, Q, X, W, Y, K, Z, J;
-    return (
-        (H = new L({ props: { source: U, dark: !0, shadow: !1, narrow: !0, skipToEnd: !0 } })),
-        {
-            c() {
-                (t = i('div')),
-                    (r = i('div')),
-                    (g = i('div')),
-                    (w = i('img')),
-                    (x = s()),
-                    (k = i('h2')),
-                    (C = a('Collaboration with workspace sharing')),
-                    (G = s()),
-                    (I = i('p')),
-                    (z = a(
-                        'Collaborate with your friends, co-workers, and clients. Whenever you\n        want to share a reproducible example of code or hunt down a bug\n        together, simply take Snapshot.'
-                    )),
-                    (S = s()),
-                    (D = i('a')),
-                    (j = a('More about collaboration.')),
-                    (B = s()),
-                    (M = i('div')),
-                    (A = i('div')),
-                    $(H.$$.fragment),
-                    (O = s()),
-                    (P = i('h2')),
-                    (T = a('Full linux machine ')),
-                    (_ = i('span')),
-                    (N = a('(incl sudo/docker)')),
-                    (q = s()),
-                    (R = i('p')),
-                    (Q = a(
-                        'Instantly start a container in the cloud based on your Docker image.\n        Leverage the power of the cloud and free yourself from the limitations\n        of local silicon.'
-                    )),
-                    (X = s()),
-                    (W = i('a')),
-                    (Y = a('Learn more about sudo/Docker in Gitpod.')),
-                    this.h();
-            },
-            l(e) {
-                t = o(e, 'DIV', { class: !0 });
-                var i = l(t);
-                r = o(i, 'DIV', { class: !0 });
-                var a = l(r);
-                g = o(a, 'DIV', { class: !0 });
-                var s = l(g);
-                (w = o(s, 'IMG', { src: !0, role: !0, height: !0, width: !0, class: !0 })), s.forEach(n), (x = c(a)), (k = o(a, 'H2', { class: !0 }));
-                var f = l(k);
-                (C = h(f, 'Collaboration with workspace sharing')), f.forEach(n), (G = c(a)), (I = o(a, 'P', { class: !0 }));
-                var d = l(I);
-                (z = h(
-                    d,
+    let t;
+    let r;
+    let g;
+    let w;
+    let m;
+    let x;
+    let k;
+    let C;
+    let G;
+    let I;
+    let z;
+    let S;
+    let D;
+    let j;
+    let B;
+    let M;
+    let A;
+    let H;
+    let O;
+    let P;
+    let T;
+    let _;
+    let N;
+    let q;
+    let R;
+    let Q;
+    let X;
+    let W;
+    let Y;
+    let K;
+    let Z;
+    let J;
+    return (H = new L({ props: { source: U, dark: !0, shadow: !1, narrow: !0, skipToEnd: !0 } })),
+    {
+        c() {
+            (t = i('div')),
+                (r = i('div')),
+                (g = i('div')),
+                (w = i('img')),
+                (x = s()),
+                (k = i('h2')),
+                (C = a('Collaboration with workspace sharing')),
+                (G = s()),
+                (I = i('p')),
+                (z = a(
                     'Collaborate with your friends, co-workers, and clients. Whenever you\n        want to share a reproducible example of code or hunt down a bug\n        together, simply take Snapshot.'
                 )),
-                    d.forEach(n),
-                    (S = c(a)),
-                    (D = o(a, 'A', { href: !0, class: !0 }));
-                var u = l(D);
-                (j = h(u, 'More about collaboration.')), u.forEach(n), a.forEach(n), (B = c(i)), (M = o(i, 'DIV', { class: !0 }));
-                var p = l(M);
-                A = o(p, 'DIV', { class: !0 });
-                var v = l(A);
-                V(H.$$.fragment, v), v.forEach(n), (O = c(p)), (P = o(p, 'H2', { class: !0 }));
-                var m = l(P);
-                (T = h(m, 'Full linux machine ')), (_ = o(m, 'SPAN', {}));
-                var y = l(_);
-                (N = h(y, '(incl sudo/docker)')), y.forEach(n), m.forEach(n), (q = c(p)), (R = o(p, 'P', { class: !0 }));
-                var E = l(R);
-                (Q = h(
-                    E,
+                (S = s()),
+                (D = i('a')),
+                (j = a('More about collaboration.')),
+                (B = s()),
+                (M = i('div')),
+                (A = i('div')),
+                $(H.$$.fragment),
+                (O = s()),
+                (P = i('h2')),
+                (T = a('Full linux machine ')),
+                (_ = i('span')),
+                (N = a('(incl sudo/docker)')),
+                (q = s()),
+                (R = i('p')),
+                (Q = a(
                     'Instantly start a container in the cloud based on your Docker image.\n        Leverage the power of the cloud and free yourself from the limitations\n        of local silicon.'
                 )),
-                    E.forEach(n),
-                    (X = c(p)),
-                    (W = o(p, 'A', { href: !0, rel: !0, target: !0, class: !0 }));
-                var $ = l(W);
-                (Y = h($, 'Learn more about sudo/Docker in Gitpod.')), $.forEach(n), p.forEach(n), i.forEach(n), this.h();
-            },
-            h() {
-                w.src !== (m = '/images/features/features-3.svg') && p(w, 'src', '/images/features/features-3.svg'),
-                    p(w, 'role', 'presentation'),
-                    p(w, 'height', '223'),
-                    p(w, 'width', '382'),
-                    p(w, 'class', 'svelte-zlhvfn'),
-                    p(g, 'class', 'h-72 pb-4'),
-                    p(k, 'class', 'h4 svelte-zlhvfn'),
-                    p(I, 'class', 'text-large'),
-                    p(D, 'href', '/docs/sharing-and-collaboration'),
-                    p(D, 'class', 'svelte-zlhvfn'),
-                    p(r, 'class', 'card svelte-zlhvfn'),
-                    p(A, 'class', 'h-72 pb-6'),
-                    p(P, 'class', 'h4 svelte-zlhvfn'),
-                    p(R, 'class', 'text-large'),
-                    p(W, 'href', 'https://www.youtube.com/watch?v=iYLCHQgj0fE'),
-                    p(W, 'rel', 'noopener'),
-                    p(W, 'target', '_blank'),
-                    p(W, 'class', 'svelte-zlhvfn'),
-                    p(M, 'class', 'card svelte-zlhvfn'),
-                    p(t, 'class', 'cards double svelte-zlhvfn');
-            },
-            m(i, a) {
-                f(i, t, a),
-                    d(t, r),
-                    d(r, g),
-                    d(g, w),
-                    d(r, x),
-                    d(r, k),
-                    d(k, C),
-                    d(r, G),
-                    d(r, I),
-                    d(I, z),
-                    d(r, S),
-                    d(r, D),
-                    d(D, j),
-                    d(t, B),
-                    d(t, M),
-                    d(M, A),
-                    b(H, A, null),
-                    d(M, O),
-                    d(M, P),
-                    d(P, T),
-                    d(P, _),
-                    d(_, N),
-                    d(M, q),
-                    d(M, R),
-                    d(R, Q),
-                    d(M, X),
-                    d(M, W),
-                    d(W, Y),
-                    (K = !0),
-                    Z || ((J = v(W, 'click', e[1])), (Z = !0));
-            },
-            p: u,
-            i(e) {
-                K || (F(H.$$.fragment, e), (K = !0));
-            },
-            o(e) {
-                y(H.$$.fragment, e), (K = !1);
-            },
-            d(e) {
-                e && n(t), E(H), (Z = !1), J();
-            }
+                (X = s()),
+                (W = i('a')),
+                (Y = a('Learn more about sudo/Docker in Gitpod.')),
+                this.h();
+        },
+        l(e) {
+            t = o(e, 'DIV', { class: !0 });
+            const i = l(t);
+            r = o(i, 'DIV', { class: !0 });
+            const a = l(r);
+            g = o(a, 'DIV', { class: !0 });
+            const s = l(g);
+            (w = o(s, 'IMG', { src: !0, role: !0, height: !0, width: !0, class: !0 })), s.forEach(n), (x = c(a)), (k = o(a, 'H2', { class: !0 }));
+            const f = l(k);
+            (C = h(f, 'Collaboration with workspace sharing')), f.forEach(n), (G = c(a)), (I = o(a, 'P', { class: !0 }));
+            const d = l(I);
+            (z = h(
+                d,
+                'Collaborate with your friends, co-workers, and clients. Whenever you\n        want to share a reproducible example of code or hunt down a bug\n        together, simply take Snapshot.'
+            )),
+                d.forEach(n),
+                (S = c(a)),
+                (D = o(a, 'A', { href: !0, class: !0 }));
+            const u = l(D);
+            (j = h(u, 'More about collaboration.')), u.forEach(n), a.forEach(n), (B = c(i)), (M = o(i, 'DIV', { class: !0 }));
+            const p = l(M);
+            A = o(p, 'DIV', { class: !0 });
+            const v = l(A);
+            V(H.$$.fragment, v), v.forEach(n), (O = c(p)), (P = o(p, 'H2', { class: !0 }));
+            const m = l(P);
+            (T = h(m, 'Full linux machine ')), (_ = o(m, 'SPAN', {}));
+            const y = l(_);
+            (N = h(y, '(incl sudo/docker)')), y.forEach(n), m.forEach(n), (q = c(p)), (R = o(p, 'P', { class: !0 }));
+            const E = l(R);
+            (Q = h(
+                E,
+                'Instantly start a container in the cloud based on your Docker image.\n        Leverage the power of the cloud and free yourself from the limitations\n        of local silicon.'
+            )),
+                E.forEach(n),
+                (X = c(p)),
+                (W = o(p, 'A', { href: !0, rel: !0, target: !0, class: !0 }));
+            const $ = l(W);
+            (Y = h($, 'Learn more about sudo/Docker in Gitpod.')), $.forEach(n), p.forEach(n), i.forEach(n), this.h();
+        },
+        h() {
+            w.src !== (m = '/images/features/features-3.svg') && p(w, 'src', '/images/features/features-3.svg'),
+                p(w, 'role', 'presentation'),
+                p(w, 'height', '223'),
+                p(w, 'width', '382'),
+                p(w, 'class', 'svelte-zlhvfn'),
+                p(g, 'class', 'h-72 pb-4'),
+                p(k, 'class', 'h4 svelte-zlhvfn'),
+                p(I, 'class', 'text-large'),
+                p(D, 'href', '/docs/sharing-and-collaboration'),
+                p(D, 'class', 'svelte-zlhvfn'),
+                p(r, 'class', 'card svelte-zlhvfn'),
+                p(A, 'class', 'h-72 pb-6'),
+                p(P, 'class', 'h4 svelte-zlhvfn'),
+                p(R, 'class', 'text-large'),
+                p(W, 'href', 'https://www.youtube.com/watch?v=iYLCHQgj0fE'),
+                p(W, 'rel', 'noopener'),
+                p(W, 'target', '_blank'),
+                p(W, 'class', 'svelte-zlhvfn'),
+                p(M, 'class', 'card svelte-zlhvfn'),
+                p(t, 'class', 'cards double svelte-zlhvfn');
+        },
+        m(i, a) {
+            f(i, t, a),
+                d(t, r),
+                d(r, g),
+                d(g, w),
+                d(r, x),
+                d(r, k),
+                d(k, C),
+                d(r, G),
+                d(r, I),
+                d(I, z),
+                d(r, S),
+                d(r, D),
+                d(D, j),
+                d(t, B),
+                d(t, M),
+                d(M, A),
+                b(H, A, null),
+                d(M, O),
+                d(M, P),
+                d(P, T),
+                d(P, _),
+                d(_, N),
+                d(M, q),
+                d(M, R),
+                d(R, Q),
+                d(M, X),
+                d(M, W),
+                d(W, Y),
+                (K = !0),
+                Z || ((J = v(W, 'click', e[1])), (Z = !0));
+        },
+        p: u,
+        i(e) {
+            K || (F(H.$$.fragment, e), (K = !0));
+        },
+        o(e) {
+            y(H.$$.fragment, e), (K = !1);
+        },
+        d(e) {
+            e && n(t), E(H), (Z = !1), J();
         }
-    );
+    }
+;
 }
 function de(e) {
-    let t, r;
+    let t;
+    let r;
     return (
         (t = new H({ props: { screencast: e[2], screencastNumber: e[4] + 1 } })),
         {
@@ -986,73 +1076,73 @@ function de(e) {
     );
 }
 function ue(e) {
-    let t,
-        r,
-        u,
-        g,
-        w,
-        v,
-        k,
-        C,
-        G,
-        I,
-        z,
-        S,
-        D,
-        j,
-        B,
-        L,
-        H,
-        O,
-        P,
-        U,
-        _,
-        q,
-        R,
-        X,
-        W,
-        Y,
-        K,
-        Z,
-        J,
-        ee,
-        te,
-        re,
-        ie,
-        ae,
-        se,
-        oe,
-        le,
-        he,
-        ue,
-        ge,
-        pe,
-        we,
-        ve,
-        me,
-        ye,
-        Ee,
-        xe,
-        $e,
-        Fe,
-        be,
-        ke,
-        Ce,
-        Ge,
-        Ie,
-        ze,
-        Se,
-        Ve,
-        De,
-        je,
-        Be,
-        Me,
-        Le,
-        Ae,
-        He,
-        Oe,
-        Pe,
-        Te;
+    let t;
+    let r;
+    let u;
+    let g;
+    let w;
+    let v;
+    let k;
+    let C;
+    let G;
+    let I;
+    let z;
+    let S;
+    let D;
+    let j;
+    let B;
+    let L;
+    let H;
+    let O;
+    let P;
+    let U;
+    let _;
+    let q;
+    let R;
+    let X;
+    let W;
+    let Y;
+    let K;
+    let Z;
+    let J;
+    let ee;
+    let te;
+    let re;
+    let ie;
+    let ae;
+    let se;
+    let oe;
+    let le;
+    let he;
+    let ue;
+    let ge;
+    let pe;
+    let we;
+    let ve;
+    let me;
+    let ye;
+    let Ee;
+    let xe;
+    let $e;
+    let Fe;
+    let be;
+    let ke;
+    let Ce;
+    let Ge;
+    let Ie;
+    let ze;
+    let Se;
+    let Ve;
+    let De;
+    let je;
+    let Be;
+    let Me;
+    let Le;
+    let Ae;
+    let He;
+    let Oe;
+    let Pe;
+    let Te;
     (t = new A({
         props: {
             data: {
@@ -1064,8 +1154,8 @@ function ue(e) {
         (u = new Q({})),
         (w = new T({ props: { features: ne } })),
         (k = new N({ props: { $$slots: { default: [fe] }, $$scope: { ctx: e } } }));
-    let Ue = e[0],
-        _e = [];
+    let Ue = e[0];
+    let _e = [];
     for (let i = 0; i < Ue.length; i += 1) _e[i] = de(ce(e, Ue, i));
     const Ne = (e) =>
         y(_e[e], 1, 1, () => {
@@ -1147,35 +1237,35 @@ function ue(e) {
                 V(k.$$.fragment, e),
                 (C = c(e)),
                 (G = o(e, 'SECTION', { class: !0 }));
-            var i = l(G);
+            const i = l(G);
             I = o(i, 'DIV', { class: !0 });
-            var a = l(I);
+            const a = l(I);
             (z = o(a, 'IMG', { src: !0, role: !0, height: !0, width: !0, class: !0 })), (D = c(a)), (j = o(a, 'H2', { class: !0 }));
-            var s = l(j);
+            const s = l(j);
             (B = h(s, 'Customize your workspace')), s.forEach(n), (L = c(a)), (H = o(a, 'P', { class: !0 }));
-            var f = l(H);
+            const f = l(H);
             (O = h(f, 'Tweak your environment to suit your needs. From themes to extensions you\n      have full control over it all.')),
                 f.forEach(n),
                 (P = c(a)),
                 (U = o(a, 'A', { href: !0 }));
-            var d = l(U);
+            const d = l(U);
             (_ = h(d, 'More about customization.')), d.forEach(n), a.forEach(n), (q = c(i)), (R = o(i, 'DIV', { class: !0 }));
-            var p = l(R);
+            const p = l(R);
             (X = o(p, 'IMG', { src: !0, role: !0, height: !0, width: !0, class: !0 })), (Y = c(p)), (K = o(p, 'H2', { class: !0 }));
-            var m = l(K);
+            const m = l(K);
             (Z = h(m, 'GitLab, GitHub, and Bitbucket integration')), m.forEach(n), (J = c(p)), (ee = o(p, 'P', { class: !0 }));
-            var y = l(ee);
+            const y = l(ee);
             (te = h(y, 'Start your workflow from the Git hosting platform of your choice and let\n      Gitpod beam you in a ready-to-code dev environment.')),
                 y.forEach(n),
                 (re = c(p)),
                 (ie = o(p, 'A', { href: !0 }));
-            var E = l(ie);
+            const E = l(ie);
             (ae = h(E, 'More about integrations.')), E.forEach(n), p.forEach(n), (se = c(i)), (oe = o(i, 'DIV', { class: !0 }));
-            var x = l(oe);
+            const x = l(oe);
             (le = o(x, 'IMG', { src: !0, role: !0, height: !0, width: !0, class: !0 })), (ue = c(x)), (ge = o(x, 'H2', { class: !0 }));
-            var $ = l(ge);
+            const $ = l(ge);
             (pe = h($, 'Code reviews within the IDE')), $.forEach(n), (we = c(x)), (ve = o(x, 'P', { class: !0 }));
-            var F = l(ve);
+            const F = l(ve);
             (me = h(
                 F,
                 'Open pull requests in Gitpod to run, navigate, and review the code. Reply\n      to comments and publish code reviews right within Gitpod.'
@@ -1183,13 +1273,13 @@ function ue(e) {
                 F.forEach(n),
                 (ye = c(x)),
                 (Ee = o(x, 'A', { href: !0 }));
-            var b = l(Ee);
+            const b = l(Ee);
             (xe = h(b, 'More about code reviews.')), b.forEach(n), x.forEach(n), i.forEach(n), ($e = c(e)), (Fe = o(e, 'SECTION', { class: !0 }));
-            var S = l(Fe);
+            const S = l(Fe);
             be = o(S, 'H2', {});
-            var M = l(be);
+            const M = l(be);
             (ke = h(M, 'VS Code and extensions in your browser')), M.forEach(n), (Ce = c(S)), (Ge = o(S, 'P', { class: !0 }));
-            var A = l(Ge);
+            const A = l(Ge);
             (Ie = h(A, 'Install any VS Code extension with one click via the integrated\n    vendor-neutral marketplace Open VSX.')),
                 A.forEach(n),
                 (ze = c(S)),
@@ -1197,14 +1287,14 @@ function ue(e) {
                 S.forEach(n),
                 (De = c(e)),
                 (je = o(e, 'SECTION', { class: !0 }));
-            var T = l(je);
+            const T = l(je);
             Be = o(T, 'H2', {});
-            var N = l(Be);
+            const N = l(Be);
             (Me = h(N, 'Get started with screencasts')), N.forEach(n), (Le = c(T)), (Ae = o(T, 'DIV', { class: !0 }));
-            var Q = l(Ae);
+            const Q = l(Ae);
             for (let t = 0; t < _e.length; t += 1) _e[t].l(Q);
             Q.forEach(n), (He = c(T)), (Oe = o(T, 'A', { href: !0, class: !0 }));
-            var W = l(Oe);
+            const W = l(Oe);
             (Pe = h(W, 'See all screencasts')), W.forEach(n), T.forEach(n), this.h();
         },
         h() {

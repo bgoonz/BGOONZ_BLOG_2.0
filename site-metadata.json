@@ -108,6 +108,25 @@
                 "new_window": true
             },
             {
+                "label": "Job Search",
+                "url": "job-search",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    }
+                ]
+            },
+            {
                 "label": "Archive",
                 "style": "primary",
                 "icon_class": "github",
@@ -236,7 +255,7 @@
                     {
                         "label": "DTW-Guitar-FX-Automation",
                         "url": "https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false

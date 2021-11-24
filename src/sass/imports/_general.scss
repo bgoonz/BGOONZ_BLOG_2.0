@@ -28,11 +28,13 @@ a {
     // position: absolute !important;
     // right: 50px !important;
     bottom: 120px !important;
-    width: 800px !important;
+    width: 100% !important;
+    width: 1000px !important;
+
     margin: 0 auto !important;
-    height: 350px !important;
+    height: 400px !important;
     overflow: scroll !important;
-    border: none;
+    border: 2px solid black;
     zoom: 1;
     z-index: -1;
 }
@@ -43,9 +45,10 @@ iframe {
     border-radius: 12px;
     border: 2px solid gold;
     height: 1200px;
+
     width: 1200px;
-    resize: both;
-    overflow: auto;
+    resize: both !important;
+    overflow: scroll !important;
 }
 
 h1,
@@ -121,7 +124,7 @@ pre {
     }
 }
 
-:not(pre) > code {
+:not(pre)>code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -181,8 +184,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
     margin-bottom: 0;
 }
 

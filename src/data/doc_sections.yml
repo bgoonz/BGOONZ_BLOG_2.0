@@ -6,6 +6,7 @@ sections:
     - community
     - content
     - docs
+    - job-search
     - faq
     - javascript
     - interact
@@ -14,7 +15,6 @@ sections:
     - quick-reference
     - react
     - other-content
-    - tips
     - tools
     - python
     - projects

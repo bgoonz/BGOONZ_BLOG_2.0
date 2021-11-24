@@ -23,23 +23,23 @@ import {
 } from './index-0a115175.js';
 import { L as k } from './logo-60efa4e2.js';
 function S(e) {
-    let t,
-        a,
-        o = e[0].title + '';
+    let t;
+    let a;
+    let o = `${e[0].title}`;
     return {
         c() {
             (t = r('h2')), (a = s(o));
         },
         l(e) {
             t = i(e, 'H2', {});
-            var r = c(t);
+            const r = c(t);
             (a = l(r, o)), r.forEach(d);
         },
         m(e, r) {
             f(e, t, r), g(t, a);
         },
         p(e, t) {
-            1 & t && o !== (o = e[0].title + '') && b(a, o);
+            1 & t && o !== (o = `${e[0].title}`) && b(a, o);
         },
         d(e) {
             e && d(t);
@@ -47,16 +47,16 @@ function S(e) {
     };
 }
 function j(e) {
-    let t,
-        a,
-        o = e[0].title + '';
+    let t;
+    let a;
+    let o = `${e[0].title}`;
     return {
         c() {
             (t = r('h3')), (a = s(o)), this.h();
         },
         l(e) {
             t = i(e, 'H3', { class: !0 });
-            var r = c(t);
+            const r = c(t);
             (a = l(r, o)), r.forEach(d), this.h();
         },
         h() {
@@ -66,7 +66,7 @@ function j(e) {
             f(e, t, r), g(t, a);
         },
         p(e, t) {
-            1 & t && o !== (o = e[0].title + '') && b(a, o);
+            1 & t && o !== (o = `${e[0].title}`) && b(a, o);
         },
         d(e) {
             e && d(t);
@@ -74,64 +74,71 @@ function j(e) {
     };
 }
 function x(e) {
-    let t, a, x, $, D, C, I, E, P, Y;
+    let t;
+    let a;
+    let x;
+    let $;
+    let D;
+    let C;
+    let I;
+    let E;
+    let P;
+    let Y;
     function H(e, t) {
         return 'h3' === e[1] ? j : S;
     }
-    let G = H(e),
-        N = G(e);
-    return (
-        (E = new k({})),
-        {
-            c() {
-                (t = r('a')), (a = r('div')), (x = r('data')), ($ = s('Screencast ')), (D = s(e[2])), (C = o()), N.c(), (I = o()), n(E.$$.fragment), this.h();
-            },
-            l(r) {
-                t = i(r, 'A', { href: !0, class: !0 });
-                var s = c(t);
-                a = i(s, 'DIV', {});
-                var o = c(a);
-                x = i(o, 'DATA', {});
-                var n = c(x);
-                ($ = l(n, 'Screencast ')),
-                    (D = l(n, e[2])),
-                    n.forEach(d),
-                    (C = u(o)),
-                    N.l(o),
-                    (I = u(o)),
-                    p(E.$$.fragment, o),
-                    o.forEach(d),
-                    s.forEach(d),
-                    this.h();
-            },
-            h() {
-                h(t, 'href', (P = '/screencasts/' + e[0].title.toLowerCase().replace(/\s/g, '-'))), h(t, 'class', 'cast min-w-full');
-            },
-            m(e, r) {
-                f(e, t, r), g(t, a), g(a, x), g(x, $), g(x, D), g(a, C), N.m(a, null), g(a, I), m(E, a, null), (Y = !0);
-            },
-            p(e, [r]) {
-                (!Y || 4 & r) && b(D, e[2]),
-                    G === (G = H(e)) && N ? N.p(e, r) : (N.d(1), (N = G(e)), N && (N.c(), N.m(a, I))),
-                    (!Y || (1 & r && P !== (P = '/screencasts/' + e[0].title.toLowerCase().replace(/\s/g, '-')))) && h(t, 'href', P);
-            },
-            i(e) {
-                Y || (y(E.$$.fragment, e), (Y = !0));
-            },
-            o(e) {
-                w(E.$$.fragment, e), (Y = !1);
-            },
-            d(e) {
-                e && d(t), N.d(), v(E);
-            }
+    let G = H(e);
+    let N = G(e);
+    return (E = new k({})),
+    {
+        c() {
+            (t = r('a')), (a = r('div')), (x = r('data')), ($ = s('Screencast ')), (D = s(e[2])), (C = o()), N.c(), (I = o()), n(E.$$.fragment), this.h();
+        },
+        l(r) {
+            t = i(r, 'A', { href: !0, class: !0 });
+            const s = c(t);
+            a = i(s, 'DIV', {});
+            const o = c(a);
+            x = i(o, 'DATA', {});
+            const n = c(x);
+            ($ = l(n, 'Screencast ')),
+                (D = l(n, e[2])),
+                n.forEach(d),
+                (C = u(o)),
+                N.l(o),
+                (I = u(o)),
+                p(E.$$.fragment, o),
+                o.forEach(d),
+                s.forEach(d),
+                this.h();
+        },
+        h() {
+            h(t, 'href', (P = `/screencasts/${e[0].title.toLowerCase().replace(/\s/g, '-')}`)), h(t, 'class', 'cast min-w-full');
+        },
+        m(e, r) {
+            f(e, t, r), g(t, a), g(a, x), g(x, $), g(x, D), g(a, C), N.m(a, null), g(a, I), m(E, a, null), (Y = !0);
+        },
+        p(e, [r]) {
+            (!Y || 4 & r) && b(D, e[2]),
+                G === (G = H(e)) && N ? N.p(e, r) : (N.d(1), (N = G(e)), N && (N.c(), N.m(a, I))),
+                (!Y || (1 & r && P !== (P = `/screencasts/${e[0].title.toLowerCase().replace(/\s/g, '-')}`))) && h(t, 'href', P);
+        },
+        i(e) {
+            Y || (y(E.$$.fragment, e), (Y = !0));
+        },
+        o(e) {
+            w(E.$$.fragment, e), (Y = !1);
+        },
+        d(e) {
+            e && d(t), N.d(), v(E);
         }
-    );
+    };
 }
 function $(e, t, a) {
-    let r,
-        { screencast: s } = t,
-        { screencastNumber: o } = t,
-        { headlineOrder: n } = t;
+    let r;
+    let { screencast: s } = t;
+    let { screencastNumber: o } = t;
+    let { headlineOrder: n } = t;
     return (
         (e.$$set = (e) => {
             'screencast' in e && a(0, (s = e.screencast)),

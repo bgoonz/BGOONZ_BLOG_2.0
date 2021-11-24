@@ -1,11 +1,21 @@
 import { S as t, i as e, s as n, e as o, c as a, b as d, f as c, d as m, W as i, G as r, C as s, D as p } from './index-0a115175.js';
 import { p as h } from './stores-6ede6f6c.js';
 function u(t) {
-    let e, n, p, h, u, l, g, w, y, E, T, A;
+    let e;
+    let n;
+    let p;
+    let h;
+    let u;
+    let l;
+    let g;
+    let w;
+    let y;
+    let E;
+    let T;
+    let A;
     document.title = e = t[2];
     let M =
-        t[5] &&
-        (function (t) {
+        t[5] && (t => {
             let e;
             return {
                 c() {
@@ -68,7 +78,7 @@ function u(t) {
                 d(p, 'name', 'description'),
                 d(p, 'content', t[0]),
                 d(h, 'property', 'og:image'),
-                d(h, 'content', 'https://www.gitpod.io/' + t[1]),
+                d(h, 'content', `https://www.gitpod.io/${t[1]}`),
                 d(u, 'property', 'og:description'),
                 d(u, 'content', t[0]),
                 d(l, 'property', 'og:title'),
@@ -84,7 +94,7 @@ function u(t) {
                 d(T, 'name', 'twitter:creator'),
                 d(T, 'content', '@gitpod'),
                 d(A, 'name', 'twitter:image'),
-                d(A, 'content', 'https://www.gitpod.io/' + t[4]);
+                d(A, 'content', `https://www.gitpod.io/${t[4]}`);
         },
         m(t, e) {
             r(document.head, n),
@@ -114,6 +124,7 @@ function l(t, e, n) {
     let o;
     p(t, h, (t) => n(8, (o = t)));
     let { data: a } = e;
+
     const {
             description: d,
             image: c = 'images/media-image.jpg',
@@ -121,8 +132,9 @@ function l(t, e, n) {
             type: i = 'website',
             imageTwitter: r = 'images/twitter-preview.jpg',
             norobots: s = !1
-        } = a || {},
-        u = `https://${o.host}${o.path}`;
+        } = a || {};
+
+    const u = `https://${o.host}${o.path}`;
     return (
         (t.$$set = (t) => {
             'data' in t && n(7, (a = t.data));

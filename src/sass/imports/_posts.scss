@@ -5,11 +5,12 @@
 .post-full,
 .post-feed {
     &:last-child {
-        margin-bottom: 5em;
+        margin-bottom: 7em;
     }
 }
 
 .has-gradient {
+
     &.page-header,
     &.post-header {
         padding-bottom: 9.5em;
@@ -54,7 +55,7 @@
 
 .post-full .post-content,
 .post-feed {
-    margin-top: -5em;
+    margin-top: -8em;
     position: relative;
 }
 
@@ -68,7 +69,7 @@
 
 .post-full {
     .post-content {
-        padding: 2.5em 1.5em;
+        padding: 4em 1.5em;
     }
 
     .post-meta {
@@ -85,8 +86,8 @@
         color: $gray-500;
         font-size: 0.875em;
         margin: 0 0 0.5em;
-        padding-left: 1.71428em;
-        padding-right: 1.71428em;
+        padding-left: 2.1428em;
+        padding-right: 2.1428em;
     }
 
     .post-header {
@@ -119,7 +120,7 @@
 
         &:after {
             font-size: 1.125em;
-            content: '\2192';
+            content: "\2192";
             line-height: 1.5;
             margin-left: 5px;
         }
@@ -132,6 +133,7 @@
 
 @media only screen and (min-width: 641px) {
     .has-gradient {
+
         .page-title,
         .post-title {
             font-size: 3em;

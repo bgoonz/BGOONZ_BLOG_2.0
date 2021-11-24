@@ -30,140 +30,140 @@ import '../../chunks/feedback-widget-3009e59d.js';
 import '../../chunks/menu-62fb98ae.js';
 import '../../chunks/index-ab5856d2.js';
 function x(e) {
-    let o,
-        r,
-        a,
-        t,
-        n,
-        i,
-        s,
-        c,
-        l,
-        d,
-        u,
-        G,
-        x,
-        P,
-        A,
-        S,
-        j,
-        N,
-        W,
-        R,
-        I,
-        M,
-        T,
-        $,
-        C,
-        L,
-        O,
-        D,
-        H,
-        F,
-        q,
-        z,
-        B,
-        Y,
-        Q,
-        V,
-        U,
-        J,
-        K,
-        X,
-        Z,
-        _,
-        ee,
-        oe,
-        re,
-        ae,
-        te,
-        ne,
-        ie,
-        se,
-        ce,
-        le,
-        de,
-        ue,
-        he,
-        pe,
-        fe,
-        me,
-        ye,
-        ve,
-        ge,
-        be,
-        we,
-        ke,
-        Ee,
-        Ge,
-        xe,
-        Pe,
-        Ae,
-        Se,
-        je,
-        Ne,
-        We,
-        Re,
-        Ie,
-        Me,
-        Te,
-        $e,
-        Ce,
-        Le,
-        Oe,
-        De,
-        He,
-        Fe,
-        qe,
-        ze,
-        Be,
-        Ye,
-        Qe,
-        Ve,
-        Ue,
-        Je,
-        Ke,
-        Xe,
-        Ze,
-        _e,
-        eo,
-        oo,
-        ro,
-        ao,
-        to,
-        no,
-        io,
-        so,
-        co,
-        lo,
-        uo,
-        ho,
-        po,
-        fo,
-        mo,
-        yo,
-        vo,
-        go,
-        bo,
-        wo,
-        ko,
-        Eo,
-        Go,
-        xo,
-        Po,
-        Ao,
-        So,
-        jo,
-        No,
-        Wo,
-        Ro,
-        Io,
-        Mo,
-        To,
-        $o,
-        Co,
-        Lo,
-        Oo;
+    let o;
+    let r;
+    let a;
+    let t;
+    let n;
+    let i;
+    let s;
+    let c;
+    let l;
+    let d;
+    let u;
+    let G;
+    let x;
+    let P;
+    let A;
+    let S;
+    let j;
+    let N;
+    let W;
+    let R;
+    let I;
+    let M;
+    let T;
+    let $;
+    let C;
+    let L;
+    let O;
+    let D;
+    let H;
+    let F;
+    let q;
+    let z;
+    let B;
+    let Y;
+    let Q;
+    let V;
+    let U;
+    let J;
+    let K;
+    let X;
+    let Z;
+    let _;
+    let ee;
+    let oe;
+    let re;
+    let ae;
+    let te;
+    let ne;
+    let ie;
+    let se;
+    let ce;
+    let le;
+    let de;
+    let ue;
+    let he;
+    let pe;
+    let fe;
+    let me;
+    let ye;
+    let ve;
+    let ge;
+    let be;
+    let we;
+    let ke;
+    let Ee;
+    let Ge;
+    let xe;
+    let Pe;
+    let Ae;
+    let Se;
+    let je;
+    let Ne;
+    let We;
+    let Re;
+    let Ie;
+    let Me;
+    let Te;
+    let $e;
+    let Ce;
+    let Le;
+    let Oe;
+    let De;
+    let He;
+    let Fe;
+    let qe;
+    let ze;
+    let Be;
+    let Ye;
+    let Qe;
+    let Ve;
+    let Ue;
+    let Je;
+    let Ke;
+    let Xe;
+    let Ze;
+    let _e;
+    let eo;
+    let oo;
+    let ro;
+    let ao;
+    let to;
+    let no;
+    let io;
+    let so;
+    let co;
+    let lo;
+    let uo;
+    let ho;
+    let po;
+    let fo;
+    let mo;
+    let yo;
+    let vo;
+    let go;
+    let bo;
+    let wo;
+    let ko;
+    let Eo;
+    let Go;
+    let xo;
+    let Po;
+    let Ao;
+    let So;
+    let jo;
+    let No;
+    let Wo;
+    let Ro;
+    let Io;
+    let Mo;
+    let To;
+    let $o;
+    let Co;
+    let Lo;
+    let Oo;
     return {
         c() {
             (o = h('h1')),
@@ -326,38 +326,38 @@ function x(e) {
         },
         l(e) {
             o = m(e, 'H1', { id: !0 });
-            var h = y(o);
+            const h = y(o);
             (r = v(h, 'Introduction to Gitpod')), (a = m(h, 'A', { href: !0 }));
-            var p = y(a);
+            const p = y(a);
             (t = m(p, 'SPAN', { class: !0 })), y(t).forEach(g), p.forEach(g), h.forEach(g), (n = b(e)), (i = m(e, 'P', {}));
-            var f = y(i);
+            const f = y(i);
             s = m(f, 'A', { href: !0 });
-            var w = y(s);
+            const w = y(s);
             (c = v(w, 'Gitpod')),
                 w.forEach(g),
                 (l = v(f, ' is a container-based development platform that puts developer experience first. Gitpod provisions ')),
                 (d = m(f, 'STRONG', {}));
-            var k = y(d);
+            const k = y(d);
             (u = v(k, 'ready-to-code development environments')),
                 k.forEach(g),
                 (G = v(f, ' in the cloud accessible through your browser and ')),
                 (x = m(f, 'A', { href: !0 }));
-            var E = y(x);
+            const E = y(x);
             (P = v(E, 'your local IDE')), E.forEach(g), (A = v(f, '.')), f.forEach(g), (S = b(e)), (j = m(e, 'P', {}));
-            var Do = y(j);
+            const Do = y(j);
             (N = v(Do, 'Gitpod enables development teams to describe their dev environment as code and ')), (W = m(Do, 'STRONG', {}));
-            var Ho = y(W);
+            const Ho = y(W);
             (R = v(Ho, 'start configurable and fresh development environments for each new task')),
                 Ho.forEach(g),
                 (I = v(Do, ' entirely in the cloud. Think CI/CD for dev environments.')),
                 Do.forEach(g),
                 (M = b(e)),
                 (T = m(e, 'H2', { id: !0 }));
-            var Fo = y(T);
+            const Fo = y(T);
             ($ = v(Fo, 'Always ready-to-code')), (C = m(Fo, 'A', { href: !0 }));
-            var qo = y(C);
+            const qo = y(C);
             (L = m(qo, 'SPAN', { class: !0 })), y(L).forEach(g), qo.forEach(g), Fo.forEach(g), (O = b(e)), (D = m(e, 'P', {}));
-            var zo = y(D);
+            const zo = y(D);
             (H = v(
                 zo,
                 'Too much time is lost to a poor development experience. Setting up local dev environments that are brittle. Waiting for compilation. Downloading dependencies. Massaging them over time to make sure they work with all projects. “Works on my machine” situations, configuration drift and broken tool chains are slowing down professional software teams.'
@@ -365,7 +365,7 @@ function x(e) {
                 zo.forEach(g),
                 (F = b(e)),
                 (q = m(e, 'P', {}));
-            var Bo = y(q);
+            const Bo = y(q);
             (z = v(
                 Bo,
                 'With Gitpod this stops. Instead you treat dev environments as automated resources you spin up when you need them and close down (and forget about) when you are done with your task. Dev environments become fully ephemeral.'
@@ -373,14 +373,14 @@ function x(e) {
                 Bo.forEach(g),
                 (B = b(e)),
                 (Y = m(e, 'P', {}));
-            var Yo = y(Y);
+            const Yo = y(Y);
             (Q = v(Yo, 'You even start switching between workspaces - one for your feature, one for reviewing a PR/MR, one for a bug, one for another MR/PR.')),
                 Yo.forEach(g),
                 (V = b(e)),
                 (U = m(e, 'P', {}));
-            var Qo = y(U);
+            const Qo = y(U);
             (J = v(Qo, 'Only then you are ')), (K = m(Qo, 'STRONG', {}));
-            var Vo = y(K);
+            const Vo = y(K);
             (X = v(Vo, 'always ready-to-code')),
                 Vo.forEach(g),
                 (Z = v(
@@ -390,11 +390,11 @@ function x(e) {
                 Qo.forEach(g),
                 (_ = b(e)),
                 (ee = m(e, 'H2', { id: !0 }));
-            var Uo = y(ee);
+            const Uo = y(ee);
             (oe = v(Uo, 'Your computer in the cloud')), (re = m(Uo, 'A', { href: !0 }));
-            var Jo = y(re);
+            const Jo = y(re);
             (ae = m(Jo, 'SPAN', { class: !0 })), y(ae).forEach(g), Jo.forEach(g), Uo.forEach(g), (te = b(e)), (ne = m(e, 'P', {}));
-            var Ko = y(ne);
+            const Ko = y(ne);
             (ie = v(
                 Ko,
                 'A Gitpod workspace includes everything developers need to be productive: source code, a Linux shell with root/sudo, a file system, the full VS Code editing experience including extensions, language support and all other tools and binaries that run on Linux.'
@@ -402,7 +402,7 @@ function x(e) {
                 Ko.forEach(g),
                 (se = b(e)),
                 (ce = m(e, 'P', {}));
-            var Xo = y(ce);
+            const Xo = y(ce);
             (le = v(
                 Xo,
                 'Workspaces are highly customizable and can be pre-configured and optimized on both a team/project as well as an individual/developer level. From themes to extensions developers have full control. Workspaces work with all major git hosting platforms including GitHub, GitLab and Bitbucket.'
@@ -410,22 +410,22 @@ function x(e) {
                 Xo.forEach(g),
                 (de = b(e)),
                 (ue = m(e, 'P', {}));
-            var Zo = y(ue);
+            const Zo = y(ue);
             (he = v(Zo, 'Leveraging the power of the cloud Gitpod provisions ')), (pe = m(Zo, 'STRONG', {}));
-            var _o = y(pe);
+            const _o = y(pe);
             (fe = v(_o, 'blazingly fast, ephemeral and secure development environments')),
                 _o.forEach(g),
                 (me = v(Zo, '.')),
                 Zo.forEach(g),
                 (ye = b(e)),
                 (ve = m(e, 'H3', { id: !0 }));
-            var er = y(ve);
+            const er = y(ve);
             (ge = v(er, '⚡ Fast')), (be = m(er, 'A', { href: !0 }));
-            var or = y(be);
+            const or = y(be);
             (we = m(or, 'SPAN', { class: !0 })), y(we).forEach(g), or.forEach(g), er.forEach(g), (ke = b(e)), (Ee = m(e, 'P', {}));
-            var rr = y(Ee);
+            const rr = y(Ee);
             (Ge = v(rr, 'Gitpod ')), (xe = m(rr, 'STRONG', {}));
-            var ar = y(xe);
+            const ar = y(xe);
             (Pe = v(ar, 'launches workspaces in seconds')),
                 ar.forEach(g),
                 (Ae = v(
@@ -433,33 +433,33 @@ function x(e) {
                     ' and removes long init and build times by continuously pre-building workspaces for your project. This enables you and everybody collaborating on your project to '
                 )),
                 (Se = m(rr, 'STRONG', {}));
-            var tr = y(Se);
+            const tr = y(Se);
             (je = v(tr, 'start coding or debugging immediately')),
                 tr.forEach(g),
                 (Ne = v(rr, ', from any git context, at any time, from any device. No more waiting for NPM or Maven to download the Internet.')),
                 rr.forEach(g),
                 (We = b(e)),
                 (Re = m(e, 'P', {}));
-            var nr = y(Re);
+            const nr = y(Re);
             (Ie = v(
                 nr,
                 'Spinning up dev environments is easily repeatable and reproducible, because Gitpod creates a single configuration file in your repository allowing you to '
             )),
                 (Me = m(nr, 'STRONG', {}));
-            var ir = y(Me);
+            const ir = y(Me);
             (Te = v(ir, 'automate, version-control and share consistent dev environments across your team')),
                 ir.forEach(g),
                 ($e = v(nr, '. We call this ')),
                 (Ce = m(nr, 'A', { href: !0 }));
-            var sr = y(Ce);
+            const sr = y(Ce);
             (Le = v(sr, 'dev-environments-as-code')), sr.forEach(g), (Oe = v(nr, '.')), nr.forEach(g), (De = b(e)), (He = m(e, 'H3', { id: !0 }));
-            var cr = y(He);
+            const cr = y(He);
             (Fe = v(cr, '⚙️ Ephemeral')), (qe = m(cr, 'A', { href: !0 }));
-            var lr = y(qe);
+            const lr = y(qe);
             (ze = m(lr, 'SPAN', { class: !0 })), y(ze).forEach(g), lr.forEach(g), cr.forEach(g), (Be = b(e)), (Ye = m(e, 'P', {}));
-            var dr = y(Ye);
+            const dr = y(Ye);
             (Qe = v(dr, 'Gitpod continuously builds ')), (Ve = m(dr, 'EM', {}));
-            var ur = y(Ve);
+            const ur = y(Ve);
             (Ue = v(ur, 'all')),
                 ur.forEach(g),
                 (Je = v(
@@ -467,16 +467,16 @@ function x(e) {
                     ' your git branches like a CI server. Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the '
                 )),
                 (Ke = m(dr, 'CODE', {}));
-            var hr = y(Ke);
+            const hr = y(Ke);
             (Xe = v(hr, 'init')), hr.forEach(g), (Ze = v(dr, ' commands in your ')), (_e = m(dr, 'CODE', {}));
-            var pr = y(_e);
+            const pr = y(_e);
             (eo = v(pr, '.gitpod.yml')),
                 pr.forEach(g),
                 (oo = v(dr, ' configuration file before you even start a workspace.')),
                 dr.forEach(g),
                 (ro = b(e)),
                 (ao = m(e, 'P', {}));
-            var fr = y(ao);
+            const fr = y(ao);
             (to = v(
                 fr,
                 'Then, when someone from your team does create a new workspace on a branch or Pull/Merge Request a workspace will load almost instantly, because all dependencies will have been already downloaded ahead of time and your code will be already compiled.'
@@ -484,7 +484,7 @@ function x(e) {
                 fr.forEach(g),
                 (no = b(e)),
                 (io = m(e, 'P', {}));
-            var mr = y(io);
+            const mr = y(io);
             (so = v(
                 mr,
                 'As a result you can treat your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you’ll use a fresh one.'
@@ -492,15 +492,15 @@ function x(e) {
                 mr.forEach(g),
                 (co = b(e)),
                 (lo = m(e, 'P', {}));
-            var yr = y(lo);
+            const yr = y(lo);
             (uo = v(yr, 'More on ')), (ho = m(yr, 'A', { href: !0 }));
-            var vr = y(ho);
+            const vr = y(ho);
             (po = v(vr, 'prebuilds')), vr.forEach(g), (fo = v(yr, '.')), yr.forEach(g), (mo = b(e)), (yo = m(e, 'H3', { id: !0 }));
-            var gr = y(yo);
+            const gr = y(yo);
             (vo = v(gr, '🔒 Secure')), (go = m(gr, 'A', { href: !0 }));
-            var br = y(go);
+            const br = y(go);
             (bo = m(br, 'SPAN', { class: !0 })), y(bo).forEach(g), br.forEach(g), gr.forEach(g), (wo = b(e)), (ko = m(e, 'P', {}));
-            var wr = y(ko);
+            const wr = y(ko);
             (Eo = v(
                 wr,
                 'We are living in a remote world, where copies of your source code stored locally on countless unsecure machines and networks is considered bad practice. With Gitpod your code stays in the cloud only accessible from a secure browser connection. Gitpod works on any machine such as your Chromebook or iPad. All you need is a browser. Gitpod natively integrates with GitHub, GitLab and Bitbucket and creates one source of truth for your intellectual property. Gitpod is built with security in mind and currently in the process of becoming SOC 2 compliant.'
@@ -508,24 +508,24 @@ function x(e) {
                 wr.forEach(g),
                 (Go = b(e)),
                 (xo = m(e, 'H2', { id: !0 }));
-            var kr = y(xo);
+            const kr = y(xo);
             (Po = v(kr, 'Next Steps')), (Ao = m(kr, 'A', { href: !0 }));
-            var Er = y(Ao);
+            const Er = y(Ao);
             (So = m(Er, 'SPAN', { class: !0 })), y(So).forEach(g), Er.forEach(g), kr.forEach(g), (jo = b(e)), (No = m(e, 'UL', {}));
-            var Gr = y(No);
+            const Gr = y(No);
             Wo = m(Gr, 'LI', {});
-            var xr = y(Wo);
+            const xr = y(Wo);
             Ro = m(xr, 'A', { href: !0 });
-            var Pr = y(Ro);
+            const Pr = y(Ro);
             (Io = v(Pr, 'Quickstart with example project')),
                 Pr.forEach(g),
                 (Mo = v(xr, ' - understand the benefits in a learning environment')),
                 xr.forEach(g),
                 (To = b(Gr)),
                 ($o = m(Gr, 'LI', {}));
-            var Ar = y($o);
+            const Ar = y($o);
             Co = m(Ar, 'A', { href: !0 });
-            var Sr = y(Co);
+            const Sr = y(Co);
             (Lo = v(Sr, 'Getting started with your project')),
                 Sr.forEach(g),
                 (Oo = v(Ar, ' - configure one of your own existing projects')),
@@ -750,7 +750,8 @@ function x(e) {
     };
 }
 function P(e) {
-    let o, r;
+    let o;
+    let r;
     const h = [A];
     let p = { $$slots: { default: [x] }, $$scope: { ctx: e } };
     for (let t = 0; t < h.length; t += 1) p = a(p, h[t]);
@@ -782,8 +783,8 @@ function P(e) {
         }
     );
 }
-const A = { section: null, title: 'Introduction' },
-    S = !0;
+const A = { section: null, title: 'Introduction' };
+const S = !0;
 export default class extends e {
     constructor(e) {
         super(), o(this, e, null, P, r, {});
