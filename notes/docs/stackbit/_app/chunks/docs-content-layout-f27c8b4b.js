@@ -34,18 +34,18 @@ import { O as P } from './open-graph-b11e873e.js';
 import { F as V } from './feedback-widget-3009e59d.js';
 import { g as B, d as I } from './menu-62fb98ae.js';
 function S(t) {
-    let e,
-        a,
-        c = t[0] && _();
+    let e;
+    let a;
+    let c = t[0] && _();
     return {
         c() {
             (e = s('div')), (a = s('blockquote')), c && c.c();
         },
         l(t) {
             e = r(t, 'DIV', {});
-            var s = o(e);
+            const s = o(e);
             a = r(s, 'BLOCKQUOTE', {});
-            var l = o(a);
+            const l = o(a);
             c && c.l(l), l.forEach(n), s.forEach(n);
         },
         m(t, s) {
@@ -60,7 +60,13 @@ function S(t) {
     };
 }
 function _(t) {
-    let e, a, f, p, u, m, $;
+    let e;
+    let a;
+    let f;
+    let p;
+    let u;
+    let m;
+    let $;
     return {
         c() {
             (e = s('p')),
@@ -74,15 +80,15 @@ function _(t) {
         },
         l(t) {
             e = r(t, 'P', {});
-            var s = o(e);
+            const s = o(e);
             a = r(s, 'STRONG', {});
-            var l = o(a);
+            const l = o(a);
             (f = h(l, 'Beta Docs')),
                 l.forEach(n),
                 s.forEach(n),
                 (p = h(t, '\n        Welcome to the next version of the docs 🎉. We are actively working on this\n        page, please\n        ')),
                 (u = r(t, 'A', { href: !0, target: !0 }));
-            var i = o(u);
+            const i = o(u);
             (m = h(i, 'provide feedback on GitHub')), i.forEach(n), ($ = h(t, ' 🙏.')), this.h();
         },
         h() {
@@ -97,8 +103,8 @@ function _(t) {
     };
 }
 function F(t) {
-    let e,
-        a = t[0] && S(t);
+    let e;
+    let a = t[0] && S(t);
     return {
         c() {
             a && a.c(), (e = f());
@@ -120,7 +126,8 @@ function F(t) {
     };
 }
 function H(t, e, a) {
-    let s, r;
+    let s;
+    let r;
     return (
         u(t, N, (t) => a(1, (r = t))),
         (t.$$.update = () => {
@@ -135,7 +142,15 @@ class W extends t {
     }
 }
 function O(t) {
-    let e, a, s, c, h, f, u, $, g;
+    let e;
+    let a;
+    let s;
+    let c;
+    let h;
+    let f;
+    let u;
+    let $;
+    let g;
     return {
         c() {
             (e = m('svg')),
@@ -151,20 +166,20 @@ function O(t) {
         },
         l(t) {
             e = r(t, 'svg', { viewBox: !0, height: !0, width: !0, fill: !0, xmlns: !0 }, 1);
-            var l = o(e);
+            const l = o(e);
             a = r(l, 'g', { 'clip-path': !0 }, 1);
-            var i = o(a);
+            const i = o(a);
             (s = r(i, 'path', { 'fill-rule': !0, 'clip-rule': !0, d: !0, fill: !0 }, 1)), o(s).forEach(n), i.forEach(n), (c = r(l, 'defs', {}, 1));
-            var d = o(c);
+            const d = o(c);
             h = r(d, 'linearGradient', { id: !0, x1: !0, y1: !0, x2: !0, y2: !0, gradientUnits: !0 }, 1);
-            var p = o(h);
+            const p = o(h);
             (f = r(p, 'stop', { 'stop-color': !0 }, 1)),
                 o(f).forEach(n),
                 (u = r(p, 'stop', { offset: !0, 'stop-color': !0 }, 1)),
                 o(u).forEach(n),
                 p.forEach(n),
                 ($ = r(d, 'clipPath', { id: !0 }, 1));
-            var m = o($);
+            const m = o($);
             (g = r(m, 'path', { fill: !0, d: !0 }, 1)), o(g).forEach(n), m.forEach(n), d.forEach(n), l.forEach(n), this.h();
         },
         h() {
@@ -212,47 +227,55 @@ class U extends t {
     }
 }
 function z(t) {
-    let e, a, f, u, m, G, D, j, A, N;
-    return (
-        (u = new U({})),
-        {
-            c() {
-                (e = s('div')), (a = s('a')), (f = s('span')), $(u.$$.fragment), (m = g()), (G = s('span')), (D = c('Edit in Gitpod')), this.h();
-            },
-            l(t) {
-                e = r(t, 'DIV', { class: !0 });
-                var s = o(e);
-                a = r(s, 'A', { href: !0, target: !0, class: !0 });
-                var l = o(a);
-                f = r(l, 'SPAN', { class: !0 });
-                var i = o(f);
-                v(u.$$.fragment, i), i.forEach(n), (m = x(l)), (G = r(l, 'SPAN', { class: !0 }));
-                var c = o(G);
-                (D = h(c, 'Edit in Gitpod')), c.forEach(n), l.forEach(n), s.forEach(n), this.h();
-            },
-            h() {
-                d(f, 'class', 'logo svelte-164hpj2'),
-                    d(G, 'class', 'ml-macro'),
-                    d(a, 'href', t[0]),
-                    d(a, 'target', '_blank'),
-                    d(a, 'class', 'btn-otherbrand svelte-164hpj2'),
-                    d(e, 'class', 'flex justify-end mb-micro');
-            },
-            m(s, r) {
-                l(s, e, r), i(e, a), i(a, f), E(u, f, null), i(a, m), i(a, G), i(G, D), (j = !0), A || ((N = w(a, 'click', t[1])), (A = !0));
-            },
-            p: p,
-            i(t) {
-                j || (b(u.$$.fragment, t), (j = !0));
-            },
-            o(t) {
-                k(u.$$.fragment, t), (j = !1);
-            },
-            d(t) {
-                t && n(e), y(u), (A = !1), N();
-            }
+    let e;
+    let a;
+    let f;
+    let u;
+    let m;
+    let G;
+    let D;
+    let j;
+    let A;
+    let N;
+    return (u = new U({})),
+    {
+        c() {
+            (e = s('div')), (a = s('a')), (f = s('span')), $(u.$$.fragment), (m = g()), (G = s('span')), (D = c('Edit in Gitpod')), this.h();
+        },
+        l(t) {
+            e = r(t, 'DIV', { class: !0 });
+            const s = o(e);
+            a = r(s, 'A', { href: !0, target: !0, class: !0 });
+            const l = o(a);
+            f = r(l, 'SPAN', { class: !0 });
+            const i = o(f);
+            v(u.$$.fragment, i), i.forEach(n), (m = x(l)), (G = r(l, 'SPAN', { class: !0 }));
+            const c = o(G);
+            (D = h(c, 'Edit in Gitpod')), c.forEach(n), l.forEach(n), s.forEach(n), this.h();
+        },
+        h() {
+            d(f, 'class', 'logo svelte-164hpj2'),
+                d(G, 'class', 'ml-macro'),
+                d(a, 'href', t[0]),
+                d(a, 'target', '_blank'),
+                d(a, 'class', 'btn-otherbrand svelte-164hpj2'),
+                d(e, 'class', 'flex justify-end mb-micro');
+        },
+        m(s, r) {
+            l(s, e, r), i(e, a), i(a, f), E(u, f, null), i(a, m), i(a, G), i(G, D), (j = !0), A || ((N = w(a, 'click', t[1])), (A = !0));
+        },
+        p: p,
+        i(t) {
+            j || (b(u.$$.fragment, t), (j = !0));
+        },
+        o(t) {
+            k(u.$$.fragment, t), (j = !1);
+        },
+        d(t) {
+            t && n(e), y(u), (A = !1), N();
         }
-    );
+    }
+;
 }
 function C(t, e, a) {
     let s;
@@ -286,14 +309,15 @@ function M(t) {
     };
 }
 function K(t) {
-    let e, a;
+    let e;
+    let a;
     return {
         c() {
             (e = s('a')), (a = c('Previous')), this.h();
         },
         l(t) {
             e = r(t, 'A', { href: !0, title: !0, class: !0 });
-            var s = o(e);
+            const s = o(e);
             (a = h(s, 'Previous')), s.forEach(n), this.h();
         },
         h() {
@@ -327,14 +351,15 @@ function T(t) {
     };
 }
 function q(t) {
-    let e, a;
+    let e;
+    let a;
     return {
         c() {
             (e = s('a')), (a = c('Next')), this.h();
         },
         l(t) {
             e = r(t, 'A', { href: !0, title: !0, class: !0 });
-            var s = o(e);
+            const s = o(e);
             (a = h(s, 'Next')), s.forEach(n), this.h();
         },
         h() {
@@ -350,9 +375,10 @@ function q(t) {
     };
 }
 function Q(t) {
-    let e, a;
+    let e;
+    let a;
     let c = (t[0].prev ? K : M)(t);
-    let h = (function (t, e) {
+    let h = ((t, e) => {
         return t[0].next ? q : T;
     })(t)(t);
     return {
@@ -361,7 +387,7 @@ function Q(t) {
         },
         l(t) {
             e = r(t, 'DIV', { class: !0 });
-            var s = o(e);
+            const s = o(e);
             c.l(s), (a = x(s)), h.l(s), s.forEach(n), this.h();
         },
         h() {
@@ -391,7 +417,20 @@ class J extends t {
     }
 }
 function X(t) {
-    let e, a, c, h, f, p, u, m, w, A, N, B, I, S;
+    let e;
+    let a;
+    let c;
+    let h;
+    let f;
+    let p;
+    let u;
+    let m;
+    let w;
+    let A;
+    let N;
+    let B;
+    let I;
+    let S;
     (c = new P({
         props: {
             data: {
@@ -402,93 +441,92 @@ function X(t) {
     })),
         (p = new W({})),
         (m = new L({}));
-    const _ = t[3].default,
-        F = G(_, t, t[2], null);
-    return (
-        (N = new V({ props: { type: 'docs', class: 'my-huge' } })),
-        (I = new J({})),
-        {
-            c() {
-                (e = s('link')),
-                    (a = g()),
-                    $(c.$$.fragment),
-                    (h = g()),
-                    (f = s('div')),
-                    $(p.$$.fragment),
-                    (u = g()),
-                    $(m.$$.fragment),
-                    (w = g()),
-                    F && F.c(),
-                    (A = g()),
-                    $(N.$$.fragment),
-                    (B = g()),
-                    $(I.$$.fragment),
-                    this.h();
-            },
-            l(t) {
-                const s = D('[data-svelte="svelte-1idk49p"]', document.head);
-                (e = r(s, 'LINK', { rel: !0, href: !0 })), s.forEach(n), (a = x(t)), v(c.$$.fragment, t), (h = x(t)), (f = r(t, 'DIV', { class: !0 }));
-                var l = o(f);
-                v(p.$$.fragment, l),
-                    (u = x(l)),
-                    v(m.$$.fragment, l),
-                    (w = x(l)),
-                    F && F.l(l),
-                    (A = x(l)),
-                    v(N.$$.fragment, l),
-                    (B = x(l)),
-                    v(I.$$.fragment, l),
-                    l.forEach(n),
-                    this.h();
-            },
-            h() {
-                d(e, 'rel', 'stylesheet'), d(e, 'href', '/prism-solarized-light.min.css'), d(f, 'class', 'content-docs');
-            },
-            m(t, s) {
-                i(document.head, e),
-                    l(t, a, s),
-                    E(c, t, s),
-                    l(t, h, s),
-                    l(t, f, s),
-                    E(p, f, null),
-                    i(f, u),
-                    E(m, f, null),
-                    i(f, w),
-                    F && F.m(f, null),
-                    i(f, A),
-                    E(N, f, null),
-                    i(f, B),
-                    E(I, f, null),
-                    (S = !0);
-            },
-            p(t, [e]) {
-                const a = {};
-                1 & e &&
-                    (a.data = {
-                        description: 'Explore the documentation to learn more about Gitpod.io and Gitpod Self-Hosted.',
-                        title: t[0] ? t[0] : 'Gitpod Documentation'
-                    }),
-                    c.$set(a),
-                    F && F.p && 4 & e && j(F, _, t, t[2], e, null, null);
-            },
-            i(t) {
-                S || (b(c.$$.fragment, t), b(p.$$.fragment, t), b(m.$$.fragment, t), b(F, t), b(N.$$.fragment, t), b(I.$$.fragment, t), (S = !0));
-            },
-            o(t) {
-                k(c.$$.fragment, t), k(p.$$.fragment, t), k(m.$$.fragment, t), k(F, t), k(N.$$.fragment, t), k(I.$$.fragment, t), (S = !1);
-            },
-            d(t) {
-                n(e), t && n(a), y(c, t), t && n(h), t && n(f), y(p), y(m), F && F.d(t), y(N), y(I);
-            }
+    const _ = t[3].default;
+    const F = G(_, t, t[2], null);
+    return (N = new V({ props: { type: 'docs', class: 'my-huge' } })),
+    (I = new J({})),
+    {
+        c() {
+            (e = s('link')),
+                (a = g()),
+                $(c.$$.fragment),
+                (h = g()),
+                (f = s('div')),
+                $(p.$$.fragment),
+                (u = g()),
+                $(m.$$.fragment),
+                (w = g()),
+                F && F.c(),
+                (A = g()),
+                $(N.$$.fragment),
+                (B = g()),
+                $(I.$$.fragment),
+                this.h();
+        },
+        l(t) {
+            const s = D('[data-svelte="svelte-1idk49p"]', document.head);
+            (e = r(s, 'LINK', { rel: !0, href: !0 })), s.forEach(n), (a = x(t)), v(c.$$.fragment, t), (h = x(t)), (f = r(t, 'DIV', { class: !0 }));
+            const l = o(f);
+            v(p.$$.fragment, l),
+                (u = x(l)),
+                v(m.$$.fragment, l),
+                (w = x(l)),
+                F && F.l(l),
+                (A = x(l)),
+                v(N.$$.fragment, l),
+                (B = x(l)),
+                v(I.$$.fragment, l),
+                l.forEach(n),
+                this.h();
+        },
+        h() {
+            d(e, 'rel', 'stylesheet'), d(e, 'href', '/prism-solarized-light.min.css'), d(f, 'class', 'content-docs');
+        },
+        m(t, s) {
+            i(document.head, e),
+                l(t, a, s),
+                E(c, t, s),
+                l(t, h, s),
+                l(t, f, s),
+                E(p, f, null),
+                i(f, u),
+                E(m, f, null),
+                i(f, w),
+                F && F.m(f, null),
+                i(f, A),
+                E(N, f, null),
+                i(f, B),
+                E(I, f, null),
+                (S = !0);
+        },
+        p(t, [e]) {
+            const a = {};
+            1 & e &&
+                (a.data = {
+                    description: 'Explore the documentation to learn more about Gitpod.io and Gitpod Self-Hosted.',
+                    title: t[0] ? t[0] : 'Gitpod Documentation'
+                }),
+                c.$set(a),
+                F && F.p && 4 & e && j(F, _, t, t[2], e, null, null);
+        },
+        i(t) {
+            S || (b(c.$$.fragment, t), b(p.$$.fragment, t), b(m.$$.fragment, t), b(F, t), b(N.$$.fragment, t), b(I.$$.fragment, t), (S = !0));
+        },
+        o(t) {
+            k(c.$$.fragment, t), k(p.$$.fragment, t), k(m.$$.fragment, t), k(F, t), k(N.$$.fragment, t), k(I.$$.fragment, t), (S = !1);
+        },
+        d(t) {
+            n(e), t && n(a), y(c, t), t && n(h), t && n(f), y(p), y(m), F && F.d(t), y(N), y(I);
         }
-    );
+    }
+;
 }
 function Y(t, e, a) {
     let s;
     u(t, I, (t) => a(4, (s = t)));
-    let { $$slots: r = {}, $$scope: o } = e,
-        { section: n } = e,
-        { title: l } = e;
+    let { $$slots: r = {}, $$scope: o } = e;
+    let { section: n } = e;
+    let { title: l } = e;
     return (
         (t.$$set = (t) => {
             'section' in t && a(1, (n = t.section)), 'title' in t && a(0, (l = t.title)), '$$scope' in t && a(2, (o = t.$$scope));

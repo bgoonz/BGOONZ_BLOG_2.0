@@ -48,72 +48,71 @@ import { L as K } from '../chunks/logo-60efa4e2.js';
 import { f as O } from '../chunks/index-05581432.js';
 function U(e, t, s) {
     let l;
-    var c;
+    let c;
     a(e, P, (e) => s(1, (l = e)));
     const o =
         'undefined' != typeof window && 'www.gitpod.io' === window.location.hostname ? '5aJzy2ASNbqx8I0kwppRflDZpL7pS1GO' : 'Xe5zR3MbnyxHsveZr4HvrY35PL9iT0EH';
-    return (
-        r(async () => {
-            var e = (window.analytics = window.analytics || []);
-            if (!e.initialize)
-                if (e.invoked) window.console && console.error && console.error('Segment snippet included twice.');
-                else {
-                    (e.invoked = !0),
-                        (e.methods = [
-                            'trackSubmit',
-                            'trackClick',
-                            'trackLink',
-                            'trackForm',
-                            'pageview',
-                            'identify',
-                            'reset',
-                            'group',
-                            'track',
-                            'ready',
-                            'alias',
-                            'debug',
-                            'page',
-                            'once',
-                            'off',
-                            'on',
-                            'addSourceMiddleware',
-                            'addIntegrationMiddleware',
-                            'setAnonymousId',
-                            'addDestinationMiddleware'
-                        ]),
-                        (e.factory = function (t) {
-                            return function () {
-                                var s = Array.prototype.slice.call(arguments);
-                                return s.unshift(t), e.push(s), e;
-                            };
-                        });
-                    for (var t = 0; t < e.methods.length; t++) {
-                        var s = e.methods[t];
-                        e[s] = e.factory(s);
-                    }
-                    (e.load = function (t, s) {
-                        var a = document.createElement('script');
-                        (a.type = 'text/javascript'), (a.async = !0), (a.src = 'https://cdn.segment.com/analytics.js/v1/' + t + '/analytics.min.js');
-                        var r = document.getElementsByTagName('script')[0];
-                        r.parentNode.insertBefore(a, r), (e._loadOptions = s);
-                    }),
-                        (e._writeKey = o),
-                        (e.SNIPPET_VERSION = '4.13.2'),
-                        'undefined' == typeof navigator ||
-                        (1 !== parseInt(navigator.doNotTrack) &&
-                            1 !== parseInt(window.doNotTrack) &&
-                            1 !== parseInt(navigator.msDoNotTrack) &&
-                            'yes' !== navigator.doNotTrack)
-                            ? e.load(o)
-                            : (e.initialize = !0),
-                        e.page();
-                }
-        }),
-        (e.$$.update = () => {
-            3 & e.$$.dirty && (l.path, 'undefined' != typeof window && (null === s(0, (c = window.analytics)) || void 0 === c || c.page()));
-        }),
-        [c, l]
-    );
+    return r(async () => {
+        const e = (window.analytics = window.analytics || []);
+        if (!e.initialize)
+            if (e.invoked) window.console && console.error && console.error('Segment snippet included twice.');
+            else {
+                (e.invoked = !0),
+                    (e.methods = [
+                        'trackSubmit',
+                        'trackClick',
+                        'trackLink',
+                        'trackForm',
+                        'pageview',
+                        'identify',
+                        'reset',
+                        'group',
+                        'track',
+                        'ready',
+                        'alias',
+                        'debug',
+                        'page',
+                        'once',
+                        'off',
+                        'on',
+                        'addSourceMiddleware',
+                        'addIntegrationMiddleware',
+                        'setAnonymousId',
+                        'addDestinationMiddleware'
+                    ]),
+                    (e.factory = t => {
+                        return (...args) => {
+                            const s = Array.prototype.slice.call(args);
+                            return s.unshift(t), e.push(s), e;
+                        };
+                    });
+
+                e.methods.forEach(s => {
+                    e[s] = e.factory(s);
+                });
+
+                (e.load = (t, s) => {
+                    const a = document.createElement('script');
+                    (a.type = 'text/javascript'), (a.async = !0), (a.src = `https://cdn.segment.com/analytics.js/v1/${t}/analytics.min.js`);
+                    const r = document.getElementsByTagName('script')[0];
+                    r.parentNode.insertBefore(a, r), (e._loadOptions = s);
+                }),
+                    (e._writeKey = o),
+                    (e.SNIPPET_VERSION = '4.13.2'),
+                    'undefined' == typeof navigator ||
+                    (1 !== parseInt(navigator.doNotTrack) &&
+                        1 !== parseInt(window.doNotTrack) &&
+                        1 !== parseInt(navigator.msDoNotTrack) &&
+                        'yes' !== navigator.doNotTrack)
+                        ? e.load(o)
+                        : (e.initialize = !0),
+                    e.page();
+            }
+    }),
+    (e.$$.update = () => {
+        3 & e.$$.dirty && (l.path, 'undefined' != typeof window && (null === s(0, (c = window.analytics)) || void 0 === c || c.page()));
+    }),
+    [c, l];
 }
 class q extends e {
     constructor(e) {
@@ -121,16 +120,17 @@ class q extends e {
     }
 }
 function J(e) {
-    let t, s;
-    const a = e[1].default,
-        r = l(a, e, e[0], null);
+    let t;
+    let s;
+    const a = e[1].default;
+    const r = l(a, e, e[0], null);
     return {
         c() {
             (t = c('main')), r && r.c(), this.h();
         },
         l(e) {
             t = o(e, 'MAIN', { class: !0 });
-            var s = n(t);
+            const s = n(t);
             r && r.l(s), s.forEach(i), this.h();
         },
         h() {
@@ -168,16 +168,17 @@ class Z extends e {
     }
 }
 function Q(e) {
-    let t, s;
-    const a = e[1].default,
-        r = l(a, e, e[0], null);
+    let t;
+    let s;
+    const a = e[1].default;
+    const r = l(a, e, e[0], null);
     return {
         c() {
             (t = c('div')), r && r.c(), this.h();
         },
         l(e) {
             t = o(e, 'DIV', { class: !0 });
-            var s = n(t);
+            const s = n(t);
             r && r.l(s), s.forEach(i), this.h();
         },
         h() {
@@ -214,18 +215,21 @@ class W extends e {
         super(), t(this, e, X, Q, s, {});
     }
 }
-const ee = async function (e, t) {
+const ee = async (e, t) => {
     return z.goto(e, t, []);
 };
 function te(e) {
-    let t, s, a, r;
+    let t;
+    let s;
+    let a;
+    let r;
     return {
         c() {
             (t = c('a')), (s = g('Login')), this.h();
         },
         l(e) {
             t = o(e, 'A', { href: !0, class: !0 });
-            var a = n(t);
+            const a = n(t);
             (s = m(a, 'Login')), a.forEach(i), this.h();
         },
         h() {
@@ -256,14 +260,17 @@ class ae extends e {
     }
 }
 function re(e) {
-    let t, s, a, r;
+    let t;
+    let s;
+    let a;
+    let r;
     return {
         c() {
             (t = c('a')), (s = g(e[3])), this.h();
         },
         l(a) {
             t = o(a, 'A', { href: !0, 'sveltekit:prefetch': !0, class: !0 });
-            var r = n(t);
+            const r = n(t);
             (s = m(r, e[3])), r.forEach(i), this.h();
         },
         h() {
@@ -287,104 +294,103 @@ function re(e) {
     };
 }
 function le(e, t, s) {
-    let r, l;
+    let r;
+    let l;
     a(e, P, (e) => s(5, (l = e)));
     let { navItem: c } = t;
     const { href: o, isHighlighted: n, label: i } = c;
-    return (
-        (e.$$set = (e) => {
-            'navItem' in e && s(4, (c = e.navItem));
-        }),
-        (e.$$.update = () => {
-            32 & e.$$.dirty && s(0, (r = '/' === l.path ? /\/$/.test(o) : o.indexOf(l.path) >= 0));
-        }),
-        [
-            r,
-            o,
-            n,
-            i,
-            c,
-            l,
-            function (t) {
-                b(e, t);
-            }
-        ]
-    );
+    return (e.$$set = (e) => {
+        'navItem' in e && s(4, (c = e.navItem));
+    }),
+    (e.$$.update = () => {
+        32 & e.$$.dirty && s(0, (r = '/' === l.path ? /\/$/.test(o) : o.includes(l.path)));
+    }),
+    [
+        r,
+        o,
+        n,
+        i,
+        c,
+        l,
+        t => {
+            b(e, t);
+        }
+    ];
 }
 class ce extends e {
     constructor(e) {
         super(), t(this, e, le, re, s, { navItem: 4 });
     }
 }
-var oe = R(!1);
+const oe = R(!1);
 function ne(e, t, s) {
     const a = e.slice();
     return (a[3] = t[s]), a;
 }
 function ie(e) {
-    let t,
-        s,
-        a,
-        r,
-        l = e[0],
-        v = [];
+    let t;
+    let s;
+    let a;
+    let r;
+    let l = e[0];
+    let v = [];
     for (let c = 0; c < l.length; c += 1) v[c] = fe(ne(e, l, c));
     const g = (e) =>
         u(v[e], 1, 1, () => {
             v[e] = null;
         });
-    return (
-        (a = new ae({})),
-        {
-            c() {
-                t = c('div');
-                for (let e = 0; e < v.length; e += 1) v[e].c();
-                (s = y()), E(a.$$.fragment), this.h();
-            },
-            l(e) {
-                t = o(e, 'DIV', { class: !0 });
-                var r = n(t);
-                for (let t = 0; t < v.length; t += 1) v[t].l(r);
-                (s = k(r)), I(a.$$.fragment, r), r.forEach(i), this.h();
-            },
-            h() {
-                f(t, 'class', 'nav-items absolute flex flex-col pt-10 pb-16 w-screen items-center bg-off-white space-y-xx-small z-10 shadow-md svelte-1aoyuzy');
-            },
-            m(e, l) {
-                h(e, t, l);
-                for (let s = 0; s < v.length; s += 1) v[s].m(t, null);
-                p(t, s), L(a, t, null), (r = !0);
-            },
-            p(e, a) {
-                if (3 & a) {
-                    let r;
-                    for (l = e[0], r = 0; r < l.length; r += 1) {
-                        const c = ne(e, l, r);
-                        v[r] ? (v[r].p(c, a), d(v[r], 1)) : ((v[r] = fe(c)), v[r].c(), d(v[r], 1), v[r].m(t, s));
-                    }
-                    for (D(), r = l.length; r < v.length; r += 1) g(r);
-                    N();
+    return (a = new ae({})),
+    {
+        c() {
+            t = c('div');
+            for (let e = 0; e < v.length; e += 1) v[e].c();
+            (s = y()), E(a.$$.fragment), this.h();
+        },
+        l(e) {
+            t = o(e, 'DIV', { class: !0 });
+            const r = n(t);
+            for (let t = 0; t < v.length; t += 1) v[t].l(r);
+            (s = k(r)), I(a.$$.fragment, r), r.forEach(i), this.h();
+        },
+        h() {
+            f(t, 'class', 'nav-items absolute flex flex-col pt-10 pb-16 w-screen items-center bg-off-white space-y-xx-small z-10 shadow-md svelte-1aoyuzy');
+        },
+        m(e, l) {
+            h(e, t, l);
+            for (let s = 0; s < v.length; s += 1) v[s].m(t, null);
+            p(t, s), L(a, t, null), (r = !0);
+        },
+        p(e, a) {
+            if (3 & a) {
+                let r;
+                for (l = e[0], r = 0; r < l.length; r += 1) {
+                    const c = ne(e, l, r);
+                    v[r] ? (v[r].p(c, a), d(v[r], 1)) : ((v[r] = fe(c)), v[r].c(), d(v[r], 1), v[r].m(t, s));
                 }
-            },
-            i(e) {
-                if (!r) {
-                    for (let e = 0; e < l.length; e += 1) d(v[e]);
-                    d(a.$$.fragment, e), (r = !0);
-                }
-            },
-            o(e) {
-                v = v.filter(Boolean);
-                for (let t = 0; t < v.length; t += 1) u(v[t]);
-                u(a.$$.fragment, e), (r = !1);
-            },
-            d(e) {
-                e && i(t), _(v, e), A(a);
+                for (D(), r = l.length; r < v.length; r += 1) g(r);
+                N();
             }
+        },
+        i(e) {
+            if (!r) {
+                for (let e = 0; e < l.length; e += 1) d(v[e]);
+                d(a.$$.fragment, e), (r = !0);
+            }
+        },
+        o(e) {
+            v = v.filter(Boolean);
+            for (let t = 0; t < v.length; t += 1) u(v[t]);
+            u(a.$$.fragment, e), (r = !1);
+        },
+        d(e) {
+            e && i(t), _(v, e), A(a);
         }
-    );
+    }
+;
 }
 function fe(e) {
-    let t, s;
+    let t;
+    let s;
     return (
         (t = new ce({ props: { navItem: e[3] } })),
         t.$on('click', e[2]),
@@ -415,9 +421,9 @@ function fe(e) {
     );
 }
 function he(e) {
-    let t,
-        s,
-        a = e[1] && ie(e);
+    let t;
+    let s;
+    let a = e[1] && ie(e);
     return {
         c() {
             a && a.c(), (t = S());
@@ -456,8 +462,8 @@ function ve(e, t, s) {
     a(e, oe, (e) => s(1, (l = e)));
     let { navItems: c = [] } = t;
     r(() => {
-        window.matchMedia('(min-width: 931px)').addEventListener('change', (e) => {
-            e.matches && (j(oe, (l = !1), l), M(!1));
+        window.matchMedia('(min-width: 931px)').addEventListener('change', ({matches}) => {
+            matches && (j(oe, (l = !1), l), M(!1));
         });
     });
     return (
@@ -479,14 +485,16 @@ class de extends e {
     }
 }
 function ue(e) {
-    let t, s, a;
+    let t;
+    let s;
+    let a;
     return {
         c() {
             (t = C('svg')), (s = C('rect')), (a = C('rect')), this.h();
         },
         l(e) {
             t = o(e, 'svg', { width: !0, height: !0, viewBox: !0, fill: !0, xmlns: !0 }, 1);
-            var r = n(t);
+            const r = n(t);
             (s = o(r, 'rect', { width: !0, height: !0, rx: !0, fill: !0 }, 1)),
                 n(s).forEach(i),
                 (a = o(r, 'rect', { y: !0, width: !0, height: !0, rx: !0, fill: !0 }, 1)),
@@ -519,14 +527,15 @@ function ue(e) {
     };
 }
 function ge(e) {
-    let t, s;
+    let t;
+    let s;
     return {
         c() {
             (t = C('svg')), (s = C('path')), this.h();
         },
         l(e) {
             t = o(e, 'svg', { xmlns: !0, fill: !0, width: !0, height: !0, viewBox: !0 }, 1);
-            var a = n(t);
+            const a = n(t);
             (s = o(a, 'path', { fill: !0, 'fill-rule': !0, d: !0, 'clip-rule': !0 }, 1)), n(s).forEach(i), a.forEach(i), this.h();
         },
         h() {
@@ -553,19 +562,21 @@ function ge(e) {
     };
 }
 function me(e) {
-    let t, s, a;
+    let t;
+    let s;
+    let a;
     function r(e, t) {
         return e[0] ? ge : ue;
     }
-    let l = r(e),
-        v = l(e);
+    let l = r(e);
+    let v = l(e);
     return {
         c() {
             (t = c('button')), v.c(), this.h();
         },
         l(e) {
             t = o(e, 'BUTTON', { 'aria-label': !0, class: !0 });
-            var s = n(t);
+            const s = n(t);
             v.l(s), s.forEach(i), this.h();
         },
         h() {
@@ -604,7 +615,8 @@ function we(e, t, s) {
     return (a[5] = t[s]), a;
 }
 function xe(e) {
-    let t, s;
+    let t;
+    let s;
     return (
         (t = new ce({ props: { navItem: e[5] } })),
         t.$on('click', e[4]),
@@ -632,90 +644,104 @@ function xe(e) {
     );
 }
 function be(e) {
-    let t, s, a, r, l, v, g, m, w, x, b, S, j, C, F, V, H;
+    let t;
+    let s;
+    let a;
+    let r;
+    let l;
+    let v;
+    let g;
+    let m;
+    let w;
+    let x;
+    let b;
+    let S;
+    let j;
+    let C;
+    let F;
+    let V;
+    let H;
     r = new K({});
-    let P = e[1],
-        z = [];
+    let P = e[1];
+    let z = [];
     for (let c = 0; c < P.length; c += 1) z[c] = xe(we(e, P, c));
     const M = (e) =>
         u(z[e], 1, 1, () => {
             z[e] = null;
         });
-    return (
-        (w = new ae({})),
-        (b = new $e({})),
-        (j = new de({ props: { navItems: e[1] } })),
-        {
-            c() {
-                (t = c('nav')), (s = c('div')), (a = c('a')), E(r.$$.fragment), (l = y()), (v = c('div'));
-                for (let e = 0; e < z.length; e += 1) z[e].c();
-                (g = y()), (m = c('div')), E(w.$$.fragment), (x = y()), E(b.$$.fragment), (S = y()), E(j.$$.fragment), this.h();
-            },
-            l(e) {
-                t = o(e, 'NAV', { id: !0, class: !0 });
-                var c = n(t);
-                s = o(c, 'DIV', { class: !0 });
-                var f = n(s);
-                a = o(f, 'A', { href: !0, 'aria-label': !0 });
-                var h = n(a);
-                I(r.$$.fragment, h), h.forEach(i), (l = k(f)), (v = o(f, 'DIV', { class: !0 }));
-                var d = n(v);
-                for (let t = 0; t < z.length; t += 1) z[t].l(d);
-                d.forEach(i), (g = k(f)), (m = o(f, 'DIV', { class: !0 }));
-                var u = n(m);
-                I(w.$$.fragment, u), u.forEach(i), (x = k(f)), I(b.$$.fragment, f), f.forEach(i), (S = k(c)), I(j.$$.fragment, c), c.forEach(i), this.h();
-            },
-            h() {
-                f(a, 'href', '/'),
-                    f(a, 'aria-label', 'Gitpod'),
-                    f(v, 'class', 'nav-items hidden px-2 space-x-6 items-center md:space-x-12 svelte-tcyliy'),
-                    f(m, 'class', 'login-wrapper hidden svelte-tcyliy'),
-                    f(s, 'class', 'flex items-center justify-between h-20 px-4 sm:px-8'),
-                    f(t, 'id', 'choose-project-observer-target-top'),
-                    f(t, 'class', (C = B((e[0] ? 'bg-off-white ' : '') + 'mx-auto w-full') + ' svelte-tcyliy'));
-            },
-            m(c, o) {
-                h(c, t, o), p(t, s), p(s, a), L(r, a, null), p(s, l), p(s, v);
-                for (let e = 0; e < z.length; e += 1) z[e].m(v, null);
-                p(s, g),
-                    p(s, m),
-                    L(w, m, null),
-                    p(s, x),
-                    L(b, s, null),
-                    p(t, S),
-                    L(j, t, null),
-                    (F = !0),
-                    V || ((H = [$(a, 'contextmenu', T(e[2])), $(a, 'click', e[3])]), (V = !0));
-            },
-            p(e, [s]) {
-                if (3 & s) {
-                    let t;
-                    for (P = e[1], t = 0; t < P.length; t += 1) {
-                        const a = we(e, P, t);
-                        z[t] ? (z[t].p(a, s), d(z[t], 1)) : ((z[t] = xe(a)), z[t].c(), d(z[t], 1), z[t].m(v, null));
-                    }
-                    for (D(), t = P.length; t < z.length; t += 1) M(t);
-                    N();
+    return (w = new ae({})),
+    (b = new $e({})),
+    (j = new de({ props: { navItems: e[1] } })),
+    {
+        c() {
+            (t = c('nav')), (s = c('div')), (a = c('a')), E(r.$$.fragment), (l = y()), (v = c('div'));
+            for (let e = 0; e < z.length; e += 1) z[e].c();
+            (g = y()), (m = c('div')), E(w.$$.fragment), (x = y()), E(b.$$.fragment), (S = y()), E(j.$$.fragment), this.h();
+        },
+        l(e) {
+            t = o(e, 'NAV', { id: !0, class: !0 });
+            const c = n(t);
+            s = o(c, 'DIV', { class: !0 });
+            const f = n(s);
+            a = o(f, 'A', { href: !0, 'aria-label': !0 });
+            const h = n(a);
+            I(r.$$.fragment, h), h.forEach(i), (l = k(f)), (v = o(f, 'DIV', { class: !0 }));
+            const d = n(v);
+            for (let t = 0; t < z.length; t += 1) z[t].l(d);
+            d.forEach(i), (g = k(f)), (m = o(f, 'DIV', { class: !0 }));
+            const u = n(m);
+            I(w.$$.fragment, u), u.forEach(i), (x = k(f)), I(b.$$.fragment, f), f.forEach(i), (S = k(c)), I(j.$$.fragment, c), c.forEach(i), this.h();
+        },
+        h() {
+            f(a, 'href', '/'),
+                f(a, 'aria-label', 'Gitpod'),
+                f(v, 'class', 'nav-items hidden px-2 space-x-6 items-center md:space-x-12 svelte-tcyliy'),
+                f(m, 'class', 'login-wrapper hidden svelte-tcyliy'),
+                f(s, 'class', 'flex items-center justify-between h-20 px-4 sm:px-8'),
+                f(t, 'id', 'choose-project-observer-target-top'),
+                f(t, 'class', (C = `${B(`${e[0] ? 'bg-off-white ' : ''}mx-auto w-full`)} svelte-tcyliy`));
+        },
+        m(c, o) {
+            h(c, t, o), p(t, s), p(s, a), L(r, a, null), p(s, l), p(s, v);
+            for (let e = 0; e < z.length; e += 1) z[e].m(v, null);
+            p(s, g),
+                p(s, m),
+                L(w, m, null),
+                p(s, x),
+                L(b, s, null),
+                p(t, S),
+                L(j, t, null),
+                (F = !0),
+                V || ((H = [$(a, 'contextmenu', T(e[2])), $(a, 'click', e[3])]), (V = !0));
+        },
+        p(e, [s]) {
+            if (3 & s) {
+                let t;
+                for (P = e[1], t = 0; t < P.length; t += 1) {
+                    const a = we(e, P, t);
+                    z[t] ? (z[t].p(a, s), d(z[t], 1)) : ((z[t] = xe(a)), z[t].c(), d(z[t], 1), z[t].m(v, null));
                 }
-                (!F || (1 & s && C !== (C = B((e[0] ? 'bg-off-white ' : '') + 'mx-auto w-full') + ' svelte-tcyliy'))) && f(t, 'class', C);
-            },
-            i(e) {
-                if (!F) {
-                    d(r.$$.fragment, e);
-                    for (let e = 0; e < P.length; e += 1) d(z[e]);
-                    d(w.$$.fragment, e), d(b.$$.fragment, e), d(j.$$.fragment, e), (F = !0);
-                }
-            },
-            o(e) {
-                u(r.$$.fragment, e), (z = z.filter(Boolean));
-                for (let t = 0; t < z.length; t += 1) u(z[t]);
-                u(w.$$.fragment, e), u(b.$$.fragment, e), u(j.$$.fragment, e), (F = !1);
-            },
-            d(e) {
-                e && i(t), A(r), _(z, e), A(w), A(b), A(j), (V = !1), G(H);
+                for (D(), t = P.length; t < z.length; t += 1) M(t);
+                N();
             }
+            (!F || (1 & s && C !== (C = `${B(`${e[0] ? 'bg-off-white ' : ''}mx-auto w-full`)} svelte-tcyliy`))) && f(t, 'class', C);
+        },
+        i(e) {
+            if (!F) {
+                d(r.$$.fragment, e);
+                for (let e = 0; e < P.length; e += 1) d(z[e]);
+                d(w.$$.fragment, e), d(b.$$.fragment, e), d(j.$$.fragment, e), (F = !0);
+            }
+        },
+        o(e) {
+            u(r.$$.fragment, e), (z = z.filter(Boolean));
+            for (let t = 0; t < z.length; t += 1) u(z[t]);
+            u(w.$$.fragment, e), u(b.$$.fragment, e), u(j.$$.fragment, e), (F = !1);
+        },
+        d(e) {
+            e && i(t), A(r), _(z, e), A(w), A(b), A(j), (V = !1), G(H);
         }
-    );
+    };
 }
 function ye(e, t, s) {
     let r;
@@ -747,7 +773,12 @@ function ke(e, t, s) {
     return (a[5] = t[s]), a;
 }
 function Ie(e) {
-    let t, s, a, r, l, v;
+    let t;
+    let s;
+    let a;
+    let r;
+    let l;
+    let v;
     function d() {
         return e[4](e[5]);
     }
@@ -757,7 +788,7 @@ function Ie(e) {
         },
         l(e) {
             t = o(e, 'A', { href: !0, class: !0 });
-            var a = n(t);
+            const a = n(t);
             (s = o(a, 'IMG', { src: !0, alt: !0, height: !0, width: !0 })), (r = k(a)), a.forEach(i), this.h();
         },
         h() {
@@ -780,125 +811,125 @@ function Ie(e) {
     };
 }
 function Le(e) {
-    let t,
-        s,
-        a,
-        r,
-        l,
-        v,
-        d,
-        u,
-        x,
-        b,
-        E,
-        I,
-        L,
-        A,
-        D,
-        N,
-        S,
-        j,
-        C,
-        B,
-        T,
-        F,
-        V,
-        H,
-        P,
-        z,
-        M,
-        R,
-        K,
-        O,
-        U,
-        q,
-        J,
-        Y,
-        Z,
-        Q,
-        X,
-        W,
-        ee,
-        te,
-        se,
-        ae,
-        re,
-        le,
-        ce,
-        oe,
-        ne,
-        ie,
-        fe,
-        he,
-        ve,
-        de,
-        ue,
-        ge,
-        me,
-        pe,
-        $e,
-        we,
-        xe,
-        be,
-        ye,
-        Ee,
-        Le,
-        Ae,
-        De,
-        Ne,
-        _e,
-        Se,
-        je,
-        Ce,
-        Be,
-        Te,
-        Ge,
-        Fe,
-        Ve,
-        He,
-        Pe,
-        ze,
-        Me,
-        Re,
-        Ke,
-        Oe,
-        Ue,
-        qe,
-        Je,
-        Ye,
-        Ze,
-        Qe,
-        Xe,
-        We,
-        et,
-        tt,
-        st,
-        at,
-        rt,
-        lt,
-        ct,
-        ot,
-        nt,
-        it,
-        ft,
-        ht,
-        vt,
-        dt,
-        ut,
-        gt,
-        mt,
-        pt,
-        $t,
-        wt,
-        xt,
-        bt,
-        yt,
-        Et,
-        kt,
-        It,
-        Lt = new Date().getFullYear() + '',
-        At = e[0],
-        Dt = [];
+    let t;
+    let s;
+    let a;
+    let r;
+    let l;
+    let v;
+    let d;
+    let u;
+    let x;
+    let b;
+    let E;
+    let I;
+    let L;
+    let A;
+    let D;
+    let N;
+    let S;
+    let j;
+    let C;
+    let B;
+    let T;
+    let F;
+    let V;
+    let H;
+    let P;
+    let z;
+    let M;
+    let R;
+    let K;
+    let O;
+    let U;
+    let q;
+    let J;
+    let Y;
+    let Z;
+    let Q;
+    let X;
+    let W;
+    let ee;
+    let te;
+    let se;
+    let ae;
+    let re;
+    let le;
+    let ce;
+    let oe;
+    let ne;
+    let ie;
+    let fe;
+    let he;
+    let ve;
+    let de;
+    let ue;
+    let ge;
+    let me;
+    let pe;
+    let $e;
+    let we;
+    let xe;
+    let be;
+    let ye;
+    let Ee;
+    let Le;
+    let Ae;
+    let De;
+    let Ne;
+    let _e;
+    let Se;
+    let je;
+    let Ce;
+    let Be;
+    let Te;
+    let Ge;
+    let Fe;
+    let Ve;
+    let He;
+    let Pe;
+    let ze;
+    let Me;
+    let Re;
+    let Ke;
+    let Oe;
+    let Ue;
+    let qe;
+    let Je;
+    let Ye;
+    let Ze;
+    let Qe;
+    let Xe;
+    let We;
+    let et;
+    let tt;
+    let st;
+    let at;
+    let rt;
+    let lt;
+    let ct;
+    let ot;
+    let nt;
+    let it;
+    let ft;
+    let ht;
+    let vt;
+    let dt;
+    let ut;
+    let gt;
+    let mt;
+    let pt;
+    let $t;
+    let wt;
+    let xt;
+    let bt;
+    let yt;
+    let Et;
+    let kt;
+    let It;
+    let Lt = `${new Date().getFullYear()}`;
+    let At = e[0];
+    let Dt = [];
     for (let c = 0; c < At.length; c += 1) Dt[c] = Ie(ke(e, At, c));
     return {
         c() {
@@ -1020,39 +1051,39 @@ function Le(e) {
         },
         l(e) {
             t = o(e, 'DIV', { class: !0 });
-            var c = n(t);
+            const c = n(t);
             s = o(c, 'FOOTER', { class: !0 });
-            var f = n(s);
+            const f = n(s);
             a = o(f, 'DIV', { class: !0 });
-            var h = n(a);
+            const h = n(a);
             r = o(h, 'UL', { class: !0 });
-            var g = n(r);
+            const g = n(r);
             l = o(g, 'LI', { class: !0 });
-            var p = n(l);
+            const p = n(l);
             (v = m(p, 'Gitpod')), p.forEach(i), (d = k(g)), (u = o(g, 'LI', { class: !0 }));
-            var $ = n(u);
+            const $ = n(u);
             x = o($, 'A', { href: !0, class: !0 });
-            var w = n(x);
+            const w = n(x);
             (b = m(w, 'Home')), w.forEach(i), $.forEach(i), (E = k(g)), (I = o(g, 'LI', { class: !0 }));
-            var y = n(I);
+            const y = n(I);
             L = o(y, 'A', { href: !0, class: !0 });
-            var _ = n(L);
+            const _ = n(L);
             (A = m(_, 'Features')), _.forEach(i), y.forEach(i), (D = k(g)), (N = o(g, 'LI', { class: !0 }));
-            var G = n(N);
+            const G = n(N);
             S = o(G, 'A', { href: !0, class: !0 });
-            var ke = n(S);
+            const ke = n(S);
             (j = m(ke, 'Pricing')), ke.forEach(i), G.forEach(i), (C = k(g)), (B = o(g, 'LI', { class: !0 }));
-            var Ie = n(B);
+            const Ie = n(B);
             T = o(Ie, 'A', { href: !0, class: !0 });
-            var mt = n(T);
+            const mt = n(T);
             (F = m(mt, 'Changelog')), mt.forEach(i), Ie.forEach(i), (V = k(g)), (H = o(g, 'LI', { class: !0 }));
-            var kt = n(H);
+            const kt = n(H);
             P = o(kt, 'A', { href: !0, class: !0 });
-            var It = n(P);
+            const It = n(P);
             (z = m(It, 'Self-Hosted')), It.forEach(i), kt.forEach(i), (M = k(g)), (R = o(g, 'LI', { class: !0 }));
-            var At = n(R);
+            const At = n(R);
             K = o(At, 'A', { href: !0, class: !0 });
-            var Nt = n(K);
+            const Nt = n(K);
             (O = m(Nt, 'Gitpod vs GitHub ')),
                 (U = o(Nt, 'BR', {})),
                 (q = m(Nt, 'Codespaces')),
@@ -1060,83 +1091,83 @@ function Le(e) {
                 At.forEach(i),
                 (J = k(g)),
                 (Y = o(g, 'LI', { class: !0 }));
-            var _t = n(Y);
+            const _t = n(Y);
             Z = o(_t, 'A', { href: !0, target: !0, class: !0 });
-            var St = n(Z);
+            const St = n(Z);
             (Q = m(St, 'Status')), St.forEach(i), _t.forEach(i), g.forEach(i), (X = k(h)), (W = o(h, 'UL', { class: !0 }));
-            var jt = n(W);
+            const jt = n(W);
             ee = o(jt, 'LI', { class: !0 });
-            var Ct = n(ee);
+            const Ct = n(ee);
             (te = m(Ct, 'Developer')), Ct.forEach(i), (se = k(jt)), (ae = o(jt, 'LI', { class: !0 }));
-            var Bt = n(ae);
+            const Bt = n(ae);
             re = o(Bt, 'A', { href: !0, class: !0 });
-            var Tt = n(re);
+            const Tt = n(re);
             (le = m(Tt, 'Getting started')), Tt.forEach(i), Bt.forEach(i), (ce = k(jt)), (oe = o(jt, 'LI', { class: !0 }));
-            var Gt = n(oe);
+            const Gt = n(oe);
             ne = o(Gt, 'A', { href: !0, class: !0 });
-            var Ft = n(ne);
+            const Ft = n(ne);
             (ie = m(Ft, 'Screencasts')), Ft.forEach(i), Gt.forEach(i), (fe = k(jt)), (he = o(jt, 'LI', { class: !0 }));
-            var Vt = n(he);
+            const Vt = n(he);
             ve = o(Vt, 'A', { href: !0, class: !0 });
-            var Ht = n(ve);
+            const Ht = n(ve);
             (de = m(Ht, 'Blog')), Ht.forEach(i), Vt.forEach(i), (ue = k(jt)), (ge = o(jt, 'LI', { class: !0 }));
-            var Pt = n(ge);
+            const Pt = n(ge);
             me = o(Pt, 'A', { href: !0, class: !0 });
-            var zt = n(me);
+            const zt = n(me);
             (pe = m(zt, 'Documentation')), zt.forEach(i), Pt.forEach(i), ($e = k(jt)), (we = o(jt, 'LI', { class: !0 }));
-            var Mt = n(we);
+            const Mt = n(we);
             xe = o(Mt, 'A', { href: !0, target: !0, rel: !0, class: !0 });
-            var Rt = n(xe);
+            const Rt = n(xe);
             (be = m(Rt, 'Report a bug')), Rt.forEach(i), Mt.forEach(i), (ye = k(jt)), (Ee = o(jt, 'LI', { class: !0 }));
-            var Kt = n(Ee);
+            const Kt = n(Ee);
             Le = o(Kt, 'A', { href: !0, target: !0, rel: !0, class: !0 });
-            var Ot = n(Le);
+            const Ot = n(Le);
             (Ae = m(Ot, 'Community')), Ot.forEach(i), Kt.forEach(i), jt.forEach(i), (De = k(h)), (Ne = o(h, 'UL', { class: !0 }));
-            var Ut = n(Ne);
+            const Ut = n(Ne);
             _e = o(Ut, 'LI', { class: !0 });
-            var qt = n(_e);
+            const qt = n(_e);
             (Se = m(qt, 'Company')), qt.forEach(i), (je = k(Ut)), (Ce = o(Ut, 'LI', { class: !0 }));
-            var Jt = n(Ce);
+            const Jt = n(Ce);
             Be = o(Jt, 'A', { href: !0, class: !0 });
-            var Yt = n(Be);
+            const Yt = n(Be);
             (Te = m(Yt, 'About')), Yt.forEach(i), Jt.forEach(i), (Ge = k(Ut)), (Fe = o(Ut, 'LI', { class: !0 }));
-            var Zt = n(Fe);
+            const Zt = n(Fe);
             Ve = o(Zt, 'A', { href: !0, class: !0 });
-            var Qt = n(Ve);
+            const Qt = n(Ve);
             (He = m(Qt, 'Careers')), Qt.forEach(i), Zt.forEach(i), (Pe = k(Ut)), (ze = o(Ut, 'LI', { class: !0 }));
-            var Xt = n(ze);
+            const Xt = n(ze);
             Me = o(Xt, 'A', { href: !0, class: !0 });
-            var Wt = n(Me);
+            const Wt = n(Me);
             (Re = m(Wt, 'Contact')), Wt.forEach(i), Xt.forEach(i), (Ke = k(Ut)), (Oe = o(Ut, 'LI', { class: !0 }));
-            var es = n(Oe);
+            const es = n(Oe);
             Ue = o(es, 'A', { href: !0, class: !0 });
-            var ts = n(Ue);
+            const ts = n(Ue);
             (qe = m(ts, 'Media Kit')), ts.forEach(i), es.forEach(i), Ut.forEach(i), (Je = k(h)), (Ye = o(h, 'UL', { class: !0 }));
-            var ss = n(Ye);
+            const ss = n(Ye);
             Ze = o(ss, 'LI', { class: !0 });
-            var as = n(Ze);
+            const as = n(Ze);
             (Qe = m(as, 'Legal')), as.forEach(i), (Xe = k(ss)), (We = o(ss, 'LI', { class: !0 }));
-            var rs = n(We);
+            const rs = n(We);
             et = o(rs, 'A', { href: !0, class: !0 });
-            var ls = n(et);
+            const ls = n(et);
             (tt = m(ls, 'Imprint')), ls.forEach(i), rs.forEach(i), (st = k(ss)), (at = o(ss, 'LI', { class: !0 }));
-            var cs = n(at);
+            const cs = n(at);
             rt = o(cs, 'A', { href: !0, class: !0 });
-            var os = n(rt);
+            const os = n(rt);
             (lt = m(os, 'Terms of Service')), os.forEach(i), cs.forEach(i), (ct = k(ss)), (ot = o(ss, 'LI', { class: !0 }));
-            var ns = n(ot);
+            const ns = n(ot);
             nt = o(ns, 'A', { href: !0, class: !0 });
-            var is = n(nt);
+            const is = n(nt);
             (it = m(is, 'Privacy Policy')), is.forEach(i), ns.forEach(i), ss.forEach(i), h.forEach(i), (ft = k(f)), (ht = o(f, 'DIV', { class: !0 }));
-            var fs = n(ht);
+            const fs = n(ht);
             vt = o(fs, 'DIV', { class: !0 });
-            var hs = n(vt);
+            const hs = n(vt);
             dt = o(hs, 'A', { href: !0, class: !0 });
-            var vs = n(dt);
+            const vs = n(dt);
             ut = o(vs, 'DIV', { class: !0 });
-            var ds = n(ut);
+            const ds = n(ut);
             (gt = o(ds, 'IMG', { src: !0, alt: !0, height: !0, width: !0 })), (pt = k(ds)), ds.forEach(i), vs.forEach(i), ($t = o(hs, 'SPAN', { class: !0 }));
-            var us = n($t);
+            const us = n($t);
             (wt = m(us, 'Copyright © ')),
                 (xt = m(us, Lt)),
                 (bt = m(us, ' Gitpod')),
@@ -1144,7 +1175,7 @@ function Le(e) {
                 hs.forEach(i),
                 (yt = k(fs)),
                 (Et = o(fs, 'DIV', { class: !0 }));
-            var gs = n(Et);
+            const gs = n(Et);
             for (let t = 0; t < Dt.length; t += 1) Dt[t].l(gs);
             gs.forEach(i), fs.forEach(i), f.forEach(i), c.forEach(i), this.h();
         },
@@ -1388,7 +1419,7 @@ function Ae(e) {
                 url: 'https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md'
             }),
         () => window.analytics.track('social_opened', { context: 'footer', platform: 'discourse' }),
-        (e) => window.analytics.track('social_opened', { context: 'footer-logo', platform: e.trackingName })
+        ({trackingName}) => window.analytics.track('social_opened', { context: 'footer-logo', platform: trackingName })
     ];
 }
 class De extends e {
@@ -1396,26 +1427,29 @@ class De extends e {
         super(), t(this, e, Ae, Le, s, {});
     }
 }
-const Ne = (e) => ({}),
-    _e = (e) => ({ closeBanner: e[2] });
+const Ne = (e) => ({});
+const _e = (e) => ({ closeBanner: e[2] });
 function Se(e) {
-    let t, s, a, r;
-    const g = e[5].default,
-        m = l(g, e, e[4], _e);
+    let t;
+    let s;
+    let a;
+    let r;
+    const g = e[5].default;
+    const m = l(g, e, e[4], _e);
     return {
         c() {
             (t = c('div')), m && m.c(), this.h();
         },
         l(e) {
             t = o(e, 'DIV', { class: !0 });
-            var s = n(t);
+            const s = n(t);
             m && m.l(s), s.forEach(i), this.h();
         },
         h() {
             f(
                 t,
                 'class',
-                (s = e[0] + ' px-4 py-2 flex justify-between items-center w-full bg-sand-dark shadow-sm text-xs sm:text-sm md:text-base svelte-1xzd5em')
+                (s = `${e[0]} px-4 py-2 flex justify-between items-center w-full bg-sand-dark shadow-sm text-xs sm:text-sm md:text-base svelte-1xzd5em`)
             );
         },
         m(e, s) {
@@ -1427,8 +1461,7 @@ function Se(e) {
                     (1 & a &&
                         s !==
                             (s =
-                                e[0] +
-                                ' px-4 py-2 flex justify-between items-center w-full bg-sand-dark shadow-sm text-xs sm:text-sm md:text-base svelte-1xzd5em'))) &&
+                                `${e[0]} px-4 py-2 flex justify-between items-center w-full bg-sand-dark shadow-sm text-xs sm:text-sm md:text-base svelte-1xzd5em`))) &&
                     f(t, 'class', s);
         },
         i(e) {
@@ -1448,9 +1481,9 @@ function Se(e) {
     };
 }
 function je(e) {
-    let t,
-        s,
-        a = e[1] && Se(e);
+    let t;
+    let s;
+    let a = e[1] && Se(e);
     return {
         c() {
             a && a.c(), (t = S());
@@ -1485,10 +1518,10 @@ function je(e) {
     };
 }
 function Ce(e, t, s) {
-    let { $$slots: a = {}, $$scope: l } = t,
-        { storageKey: c } = t,
-        { location: o = 'top' } = t,
-        n = !1;
+    let { $$slots: a = {}, $$scope: l } = t;
+    let { storageKey: c } = t;
+    let { location: o = 'top' } = t;
+    let n = !1;
     return (
         r(() => {
             s(1, (n = !window.localStorage.getItem(c)));
@@ -1514,7 +1547,16 @@ class Be extends e {
     }
 }
 function Te(e) {
-    let t, s, a, r, l, v, d, u, w, x;
+    let t;
+    let s;
+    let a;
+    let r;
+    let l;
+    let v;
+    let d;
+    let u;
+    let w;
+    let x;
     return {
         c() {
             (t = c('p')),
@@ -1529,11 +1571,11 @@ function Te(e) {
         },
         l(e) {
             t = o(e, 'P', { class: !0 });
-            var c = n(t);
+            const c = n(t);
             (s = m(c, 'This website uses cookies to enhance the user experience. Read our ')), (a = o(c, 'A', { href: !0 }));
-            var f = n(a);
+            const f = n(a);
             (r = m(f, 'privacy policy')), f.forEach(i), (l = m(c, ' for more info.')), c.forEach(i), (v = k(e)), (d = o(e, 'BUTTON', { class: !0 }));
-            var h = n(d);
+            const h = n(d);
             (u = m(h, 'Accept Cookies')), h.forEach(i), this.h();
         },
         h() {
@@ -1549,8 +1591,8 @@ function Te(e) {
                 h(c, d, o),
                 p(d, u),
                 w ||
-                    ((x = $(d, 'click', function () {
-                        H(e[0]) && e[0].apply(this, arguments);
+                    ((x = $(d, 'click', function(...args) {
+                        H(e[0]) && e[0].apply(this, args);
                     })),
                     (w = !0));
         },
@@ -1563,7 +1605,8 @@ function Te(e) {
     };
 }
 function Ge(e) {
-    let t, s;
+    let t;
+    let s;
     return (
         (t = new Be({
             props: {
@@ -1606,8 +1649,8 @@ class Fe extends e {
 }
 function Ve(e) {
     let t;
-    const s = e[0].default,
-        a = l(s, e, e[1], null);
+    const s = e[0].default;
+    const a = l(s, e, e[1], null);
     return {
         c() {
             a && a.c();
@@ -1633,7 +1676,12 @@ function Ve(e) {
     };
 }
 function He(e) {
-    let t, s, a, r, l, c;
+    let t;
+    let s;
+    let a;
+    let r;
+    let l;
+    let c;
     return (
         (t = new Ee({})),
         (a = new Z({ props: { $$slots: { default: [Ve] }, $$scope: { ctx: e } } })),
@@ -1665,7 +1713,12 @@ function He(e) {
     );
 }
 function Pe(e) {
-    let t, s, a, r, l, c;
+    let t;
+    let s;
+    let a;
+    let r;
+    let l;
+    let c;
     return (
         (t = new W({ props: { $$slots: { default: [He] }, $$scope: { ctx: e } } })),
         (a = new Fe({})),

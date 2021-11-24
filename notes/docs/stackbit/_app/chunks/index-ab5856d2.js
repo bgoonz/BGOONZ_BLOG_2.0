@@ -6,10 +6,11 @@ function s(s, o = n) {
     function i(n) {
         if (t(s, n) && ((s = n), c)) {
             const n = !e.length;
-            for (let t = 0; t < l.length; t += 1) {
-                const n = l[t];
+
+            l.forEach(n => {
                 n[1](), e.push(n, s);
-            }
+            });
+
             if (n) {
                 for (let n = 0; n < e.length; n += 2) e[n][0](e[n + 1]);
                 e.length = 0;
@@ -18,10 +19,10 @@ function s(s, o = n) {
     }
     return {
         set: i,
-        update: function (n) {
+        update(n) {
             i(n(s));
         },
-        subscribe: function (t, e = n) {
+        subscribe(t, e = n) {
             const u = [t, e];
             return (
                 l.push(u),

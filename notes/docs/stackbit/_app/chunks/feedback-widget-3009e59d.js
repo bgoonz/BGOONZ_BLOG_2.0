@@ -29,13 +29,13 @@ function I(t, e, a) {
     return (s[10] = e[a]), (s[12] = a), s;
 }
 function T(t) {
-    let e,
-        a,
-        l,
-        n,
-        u,
-        m = new Array(4),
-        b = [];
+    let e;
+    let a;
+    let l;
+    let n;
+    let u;
+    let m = new Array(4);
+    let b = [];
     for (let s = 0; s < m.length; s += 1) b[s] = D(I(t, m, s));
     let v = t[1] && F(t);
     return {
@@ -46,9 +46,9 @@ function T(t) {
         },
         l(t) {
             e = r(t, 'FORM', {});
-            var s = o(e);
+            const s = o(e);
             a = r(s, 'DIV', { class: !0 });
-            var c = o(a);
+            const c = o(a);
             for (let e = 0; e < b.length; e += 1) b[e].l(c);
             c.forEach(i), (l = h(s)), v && v.l(s), s.forEach(i), this.h();
         },
@@ -78,14 +78,15 @@ function T(t) {
     };
 }
 function A(t) {
-    let e, a;
+    let e;
+    let a;
     return {
         c() {
             (e = s('p')), (a = l(t[3])), this.h();
         },
         l(s) {
             e = r(s, 'P', { class: !0 });
-            var l = o(e);
+            const l = o(e);
             (a = n(l, t[3])), l.forEach(i), this.h();
         },
         h() {
@@ -103,7 +104,12 @@ function A(t) {
     };
 }
 function D(t) {
-    let e, a, l, n, u, m;
+    let e;
+    let a;
+    let l;
+    let n;
+    let u;
+    let m;
     function b() {
         return t[7](t[12]);
     }
@@ -113,13 +119,13 @@ function D(t) {
         },
         l(t) {
             e = r(t, 'BUTTON', { class: !0 });
-            var s = o(e);
+            const s = o(e);
             (a = r(s, 'IMG', { src: !0, alt: !0, title: !0, class: !0 })), (n = h(s)), s.forEach(i), this.h();
         },
         h() {
-            a.src !== (l = '/images/docs/feedback-widget/' + (t[12] + 1) + '.svg') && f(a, 'src', l),
-                f(a, 'alt', 'Feedback ' + (t[12] + 1) + ' of 4'),
-                f(a, 'title', 'Feedback ' + (t[12] + 1) + ' of 4'),
+            a.src !== (l = `/images/docs/feedback-widget/${t[12] + 1}.svg`) && f(a, 'src', l),
+                f(a, 'alt', `Feedback ${t[12] + 1} of 4`),
+                f(a, 'title', `Feedback ${t[12] + 1} of 4`),
                 f(a, 'class', 'h-6 w-6'),
                 f(e, 'class', 'filter grayscale transform transition duration-150 hover:grayscale-0 hover:scale-150 svelte-xb3wsu'),
                 v(e, 'selected', t[1] === t[12] + 1);
@@ -136,7 +142,20 @@ function D(t) {
     };
 }
 function F(t) {
-    let e, a, u, m, b, v, g, x, E, k, I, T, A, D;
+    let e;
+    let a;
+    let u;
+    let m;
+    let b;
+    let v;
+    let g;
+    let x;
+    let E;
+    let k;
+    let I;
+    let T;
+    let A;
+    let D;
     return {
         c() {
             (e = s('div')),
@@ -155,11 +174,11 @@ function F(t) {
         },
         l(t) {
             e = r(t, 'DIV', { class: !0 });
-            var s = o(e);
+            const s = o(e);
             a = r(s, 'LABEL', { for: !0 });
-            var l = o(a);
+            const l = o(a);
             (u = n(l, 'Feedback')), l.forEach(i), (m = h(s)), (b = r(s, 'DIV', {}));
-            var c = o(b);
+            const c = o(b);
             (v = r(c, 'TEXTAREA', {
                 id: !0,
                 width: !0,
@@ -175,13 +194,13 @@ function F(t) {
                 c.forEach(i),
                 (g = h(s)),
                 (x = r(s, 'DIV', {}));
-            var f = o(x);
+            const f = o(x);
             E = r(f, 'SPAN', {});
-            var d = o(E);
+            const d = o(E);
             k = r(d, 'BUTTON', { role: !0, type: !0, disabled: !0, class: !0 });
-            var p = o(k);
+            const p = o(k);
             I = r(p, 'SPAN', {});
-            var y = o(I);
+            const y = o(I);
             (T = n(y, 'Send')), y.forEach(i), p.forEach(i), d.forEach(i), f.forEach(i), s.forEach(i), this.h();
         },
         h() {
@@ -226,36 +245,41 @@ function F(t) {
     };
 }
 function N(t) {
-    let e, a, b, v, y, g;
+    let e;
+    let a;
+    let b;
+    let v;
+    let y;
+    let g;
     function w(t, e) {
         return t[3] ? A : T;
     }
-    let x = w(t),
-        E = x(t);
+    let x = w(t);
+    let E = x(t);
     return {
         c() {
             (e = s('div')), (a = s('div')), (b = s('h5')), (v = l('Was this helpful?')), (y = c()), E.c(), this.h();
         },
         l(t) {
             e = r(t, 'DIV', { class: !0 });
-            var s = o(e);
+            const s = o(e);
             a = r(s, 'DIV', { class: !0 });
-            var l = o(a);
+            const l = o(a);
             b = r(l, 'H5', { class: !0 });
-            var c = o(b);
+            const c = o(b);
             (v = n(c, 'Was this helpful?')), c.forEach(i), (y = h(l)), E.l(l), l.forEach(i), s.forEach(i), this.h();
         },
         h() {
             f(b, 'class', 'mb-6 text-center justify-center w-full'),
                 f(a, 'class', 'bg-white shadow-normal rounded-2xl max-w-md py-small px-xx-small m-auto'),
-                f(e, 'class', (g = u(t[0]) + ' svelte-xb3wsu'));
+                f(e, 'class', (g = `${u(t[0])} svelte-xb3wsu`));
         },
         m(t, s) {
             d(t, e, s), p(e, a), p(a, b), p(b, v), p(a, y), E.m(a, null);
         },
         p(t, [s]) {
             x === (x = w(t)) && E ? E.p(t, s) : (E.d(1), (E = x(t)), E && (E.c(), E.m(a, null))),
-                1 & s && g !== (g = u(t[0]) + ' svelte-xb3wsu') && f(e, 'class', g);
+                1 & s && g !== (g = `${u(t[0])} svelte-xb3wsu`) && f(e, 'class', g);
         },
         i: m,
         o: m,
@@ -265,13 +289,14 @@ function N(t) {
     };
 }
 function O(t, e, a) {
-    let s, l;
+    let s;
+    let l;
     b(t, k, (t) => a(9, (s = t)));
-    let c,
-        r = '',
-        o = !1,
-        { class: n = '' } = e,
-        { type: i } = e;
+    let c;
+    let r = '';
+    let o = !1;
+    let { class: n = '' } = e;
+    let { type: i } = e;
     return (
         (t.$$set = (t) => {
             'class' in t && a(0, (n = t.class)), 'type' in t && a(6, (i = t.type));
