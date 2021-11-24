@@ -124,6 +124,7 @@
 .grid {
     display: -ms-flexbox;
     display: flex;
+    border-radius: 5px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-left: -$grid-gap / 2;
