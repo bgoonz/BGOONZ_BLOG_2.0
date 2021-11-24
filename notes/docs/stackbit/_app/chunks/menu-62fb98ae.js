@@ -1,7 +1,7 @@
 import { w as t } from './index-ab5856d2.js';
-var e = t('');
+const e = t('');
 function a(t, e, a) {
-    return { title: t, path: '/docs' + (e ? '/' + e : ''), subMenu: a };
+    return { title: t, path: `/docs${e ? `/${e}` : ''}`, subMenu: a };
 }
 const s = [
     a('Introduction', ''),

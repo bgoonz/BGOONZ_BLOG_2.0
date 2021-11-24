@@ -1,6 +1,18 @@
 import { S as l, i, s as C, M as e, c as a, a as r, d as t, b as o, f, G as d, C as s } from './index-0a115175.js';
 function h(l) {
-    let i, C, h, p, c, n, u, V, v, E, H, M, x;
+    let i;
+    let C;
+    let h;
+    let p;
+    let c;
+    let n;
+    let u;
+    let V;
+    let v;
+    let E;
+    let H;
+    let M;
+    let x;
     return {
         c() {
             (i = e('svg')),
@@ -20,7 +32,7 @@ function h(l) {
         },
         l(l) {
             i = a(l, 'svg', { width: !0, height: !0, viewBox: !0, fill: !0, xmlns: !0 }, 1);
-            var e = r(i);
+            const e = r(i);
             (C = a(e, 'path', { d: !0, fill: !0 }, 1)),
                 r(C).forEach(t),
                 (h = a(e, 'path', { d: !0, fill: !0 }, 1)),
@@ -38,9 +50,9 @@ function h(l) {
                 (v = a(e, 'path', { 'fill-rule': !0, 'clip-rule': !0, d: !0, fill: !0 }, 1)),
                 r(v).forEach(t),
                 (E = a(e, 'defs', {}, 1));
-            var o = r(E);
+            const o = r(E);
             H = a(o, 'linearGradient', { id: !0, x1: !0, y1: !0, x2: !0, y2: !0, gradientUnits: !0 }, 1);
-            var f = r(H);
+            const f = r(H);
             (M = a(f, 'stop', { 'stop-color': !0 }, 1)),
                 r(M).forEach(t),
                 (x = a(f, 'stop', { offset: !0, 'stop-color': !0 }, 1)),

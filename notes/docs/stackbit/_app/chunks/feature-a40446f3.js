@@ -31,14 +31,15 @@ import {
 } from './index-0a115175.js';
 import { S as V } from './section-16fe1b30.js';
 function z(t) {
-    let e, r;
+    let e;
+    let r;
     return {
         c() {
             (e = a('figcaption')), (r = n(t[3])), this.h();
         },
         l(a) {
             e = s(a, 'FIGCAPTION', { class: !0 });
-            var n = l(e);
+            const n = l(e);
             (r = i(n, t[3])), n.forEach(c), this.h();
         },
         h() {
@@ -56,22 +57,22 @@ function z(t) {
     };
 }
 function A(t) {
-    let e,
-        r,
-        n,
-        i,
-        f,
-        $,
-        x = t[3] && z(t);
+    let e;
+    let r;
+    let n;
+    let i;
+    let f;
+    let $;
+    let x = t[3] && z(t);
     return {
         c() {
             (e = a('div')), (r = a('figure')), (n = a('div')), (i = p()), (f = a('canvas')), ($ = p()), x && x.c(), this.h();
         },
         l(t) {
             e = s(t, 'DIV', { class: !0 });
-            var a = l(e);
+            const a = l(e);
             r = s(a, 'FIGURE', { class: !0 });
-            var o = l(r);
+            const o = l(r);
             (n = s(o, 'DIV', { class: !0 })),
                 l(n).forEach(c),
                 (i = d(o)),
@@ -110,198 +111,193 @@ function A(t) {
     };
 }
 function C(t, e, r) {
-    let a,
+    let a;
+    let n;
+    let s;
+    let { source: l = '' } = e;
+    let { dark: i = !1 } = e;
+    let { shadow: c = 'grey' } = e;
+    let { narrow: o = !1 } = e;
+    let { skipToEnd: u = !1 } = e;
+    let { alt: h = '' } = e;
+    return $(() => {
+        let t;
+        let e;
+        let i;
+        let c;
+        let h;
+        let f;
+        let p;
+        let d;
+        let m = s.getContext('2d');
+        function g() {
+            (c = n.clientWidth), (h = n.clientHeight);
+            let l = devicePixelRatio > 1 ? 2 : 1;
+            r(5, (s.width = l * c), s),
+                r(5, (s.height = l * h), s),
+                r(5, (s.style.width = `${c}px`), s),
+                r(5, (s.style.height = `${h}px`), s),
+                m.scale(l, l),
+                c < 500
+                    ? ((t = 12), (e = 19), (i = { top: 52 + e, right: 10, bottom: 15, left: 15 }))
+                    : ((t = o ? 16 : 18), (e = o ? 28 : 33), (i = { top: 52 + e, right: o ? 20 : 40, bottom: o ? 20 : 48, left: o ? 20 : 40 })),
+                (m.font = `${t}px SF Mono, monospace`),
+                (m.fillStyle = a.black),
+                (f = m.measureText(' '.repeat(64)).width / 64),
+                (p = Math.floor((c - i.left - i.right) / f));
+        }
+        function $() {
+            let t = (t => {
+                let e;
+                let r = a.black;
+                let n = [];
+                let s = 0;
+                function l() {
+                    (s = 0), (e = { input: [], output: [] }), n.push(e);
+                }
+                function i(t, n) {
+                    n.replace(
+                        /(\u001b\[30m)|(\u001b\[31m)|(\u001b\[32m)|(\u001b\[33m)|(\u001b\[34m)|(\u001b\[39m)|([^\u001b]+)/g,
+                        (n, i, c, o, u, h, f, d) => {
+                            if (
+                                (i && (r = a.black), c && (r = a.orange), o && (r = a.green), u && (r = a.orange), h && (r = a.blue), f && (r = a.black), d)
+                            ) {
+                                let a;
+                                let n = 0;
+                                let i = Math.min(d.length, p - s);
+                                for (; (a = d.slice(n, i)); )
+                                    e[t].push({ type: t, color: r, text: a }),
+                                        (s += i - n),
+                                        s >= p && i < d.length && l(),
+                                        (n = i),
+                                        (i = Math.min(d.length, i + p - s));
+                            }
+                        }
+                    );
+                }
+                for (let a of t.split('\n'))
+                    if ((l(), a.includes('$') || a.includes('>') || a.includes('#'))) {
+                        let [, t, e] = a.match(/([^$>#]+(?:[$>#]))(.*)/);
+                        i('output', t), i('input', e);
+                    } else i('output', a);
+                function c(t) {
+                    return t.reduce((t, {text}) => t + text.length, 0);
+                }
+                for (let a of n) (a.input.characters = c(a.input)), (a.output.characters = c(a.output));
+                return n;
+            })(l);
+            d = u
+                ? { tick: -1, line: t.length - 1, character: t[t.length - 1].input.characters - 1, lines: t, triggers: { line: 0, character: -1 } }
+                : { tick: -1, line: -1, character: -1, lines: t, triggers: { line: 0, character: -1 } };
+        }
+        function x(t) {
+            return d.tick === t;
+        }
+        function v(t, e) {
+            return Math.floor(t + (e - t) * Math.random());
+        }
+        g(), $();
+        let w =
+            ((b = () => {
+                c !== n.clientWidth && (g(), $());
+            }),
+            (k = 1e3),
+            (E = !1),
+            function(...args) {
+                if (!k) return b.apply(this, args);
+                const t = this;
+                const e = args;
+                const r = E && !y;
+                return clearTimeout(y),
+                (y = setTimeout(() => {
+                    if (((y = null), !r)) return b.apply(t, e);
+                }, k)),
+                r ? b.apply(this, args) : void 0;
+            });
+        var b;
+        var k;
+        var E;
+        var y;
+        window.addEventListener('resize', w);
+        let I = !0;
+        let T = !1;
+        const F = new IntersectionObserver(([t]) => {
+            T = t.isIntersecting;
+        });
+        return F.observe(n),
+        requestAnimationFrame(function t(r) {
+            I &&
+                (requestAnimationFrame(t),
+                T &&
+                    (d.tick += 1, x(d.triggers.line) &&
+                    d.line < d.lines.length - 1 &&
+                    ((d.line += 1),
+                    (d.character = 0),
+                    d.character < d.lines[d.line].input.characters - 1
+                        ? (d.triggers.character = d.tick + v(2, 3))
+                        : (d.triggers.line = d.tick + v(1, 2))), x(d.triggers.character) &&
+                    (d.character < d.lines[d.line].input.characters - 1
+                        ? ((d.character += 1), (d.triggers.character = d.tick + v(2, 3)))
+                        : d.line < d.lines.length - 1 &&
+                          (d.lines[d.line + 1].output.characters ? (d.triggers.line = d.tick + v(20, 30)) : (d.triggers.line = d.tick + v(2, 3)))), (t => {
+                    m.clearRect(0, 0, c, h);
+                    let r = 0;
+                    d.line * e + i.top >= h - i.bottom && (r = d.line * e - h + i.top + i.bottom);
+                    for (let a = 0; a <= d.line; a++) {
+                        let n = 0;
+                        for (let t of d.lines[a].output)
+                            (m.fillStyle = t.color), m.fillText(t.text, i.left + n * f, i.top + e * a - r), (n += t.text.length);
+                        let s = n;
+                        for (let l of d.lines[a].input) {
+                            if (((m.fillStyle = l.color), a === d.line)) {
+                                let c = d.character - (n - s) + 1;
+                                m.fillText(l.text.slice(0, c), i.left + n * f, i.top + e * a - r),
+                                    t % 1e3 < 500 && m.fillRect(i.left + (n + c) * f + 0.5, i.top + e * a - r - 0.575 * e, f, 0.7 * e);
+                            } else m.fillText(l.text, i.left + n * f, i.top + e * a - r);
+                            n += l.text.length;
+                        }
+                    }
+                })(r)));
+        }),
+        () => {
+            (I = !1), window.removeEventListener('resize', w), F.disconnect();
+        }
+    ;
+    }),
+    (t.$$set = (t) => {
+        'source' in t && r(6, (l = t.source)),
+            'dark' in t && r(0, (i = t.dark)),
+            'shadow' in t && r(1, (c = t.shadow)),
+            'narrow' in t && r(2, (o = t.narrow)),
+            'skipToEnd' in t && r(7, (u = t.skipToEnd)),
+            'alt' in t && r(3, (h = t.alt));
+    }),
+    (t.$$.update = () => {
+        1 & t.$$.dirty &&
+            (a = i
+                ? { black: '#F9F9F9', orange: '#fc8800', green: '#57c700', blue: '#FFE4BC' }
+                : { black: 'rgba(18, 16, 12, 0.7)', orange: '#fc8800', green: '#57c700', blue: '#0099EF' });
+    }),
+    [
+        i,
+        c,
+        o,
+        h,
         n,
         s,
-        { source: l = '' } = e,
-        { dark: i = !1 } = e,
-        { shadow: c = 'grey' } = e,
-        { narrow: o = !1 } = e,
-        { skipToEnd: u = !1 } = e,
-        { alt: h = '' } = e;
-    return (
-        $(() => {
-            let t,
-                e,
-                i,
-                c,
-                h,
-                f,
-                p,
-                d,
-                m = s.getContext('2d');
-            function g() {
-                (c = n.clientWidth), (h = n.clientHeight);
-                let l = devicePixelRatio > 1 ? 2 : 1;
-                r(5, (s.width = l * c), s),
-                    r(5, (s.height = l * h), s),
-                    r(5, (s.style.width = c + 'px'), s),
-                    r(5, (s.style.height = h + 'px'), s),
-                    m.scale(l, l),
-                    c < 500
-                        ? ((t = 12), (e = 19), (i = { top: 52 + e, right: 10, bottom: 15, left: 15 }))
-                        : ((t = o ? 16 : 18), (e = o ? 28 : 33), (i = { top: 52 + e, right: o ? 20 : 40, bottom: o ? 20 : 48, left: o ? 20 : 40 })),
-                    (m.font = `${t}px SF Mono, monospace`),
-                    (m.fillStyle = a.black),
-                    (f = m.measureText(' '.repeat(64)).width / 64),
-                    (p = Math.floor((c - i.left - i.right) / f));
-            }
-            function $() {
-                let t = (function (t) {
-                    let e,
-                        r = a.black,
-                        n = [],
-                        s = 0;
-                    function l() {
-                        (s = 0), (e = { input: [], output: [] }), n.push(e);
-                    }
-                    function i(t, n) {
-                        n.replace(
-                            /(\u001b\[30m)|(\u001b\[31m)|(\u001b\[32m)|(\u001b\[33m)|(\u001b\[34m)|(\u001b\[39m)|([^\u001b]+)/g,
-                            (n, i, c, o, u, h, f, d) => {
-                                if (
-                                    (i && (r = a.black), c && (r = a.orange), o && (r = a.green), u && (r = a.orange), h && (r = a.blue), f && (r = a.black), d)
-                                ) {
-                                    let a,
-                                        n = 0,
-                                        i = Math.min(d.length, p - s);
-                                    for (; (a = d.slice(n, i)); )
-                                        e[t].push({ type: t, color: r, text: a }),
-                                            (s += i - n),
-                                            s >= p && i < d.length && l(),
-                                            (n = i),
-                                            (i = Math.min(d.length, i + p - s));
-                                }
-                            }
-                        );
-                    }
-                    for (let a of t.split('\n'))
-                        if ((l(), -1 !== a.indexOf('$') || -1 !== a.indexOf('>') || -1 !== a.indexOf('#'))) {
-                            let [, t, e] = a.match(/([^$>#]+(?:[$>#]))(.*)/);
-                            i('output', t), i('input', e);
-                        } else i('output', a);
-                    function c(t) {
-                        return t.reduce((t, e) => t + e.text.length, 0);
-                    }
-                    for (let a of n) (a.input.characters = c(a.input)), (a.output.characters = c(a.output));
-                    return n;
-                })(l);
-                d = u
-                    ? { tick: -1, line: t.length - 1, character: t[t.length - 1].input.characters - 1, lines: t, triggers: { line: 0, character: -1 } }
-                    : { tick: -1, line: -1, character: -1, lines: t, triggers: { line: 0, character: -1 } };
-            }
-            function x(t) {
-                return d.tick === t;
-            }
-            function v(t, e) {
-                return Math.floor(t + (e - t) * Math.random());
-            }
-            g(), $();
-            let w =
-                ((b = () => {
-                    c !== n.clientWidth && (g(), $());
-                }),
-                (k = 1e3),
-                (E = !1),
-                function () {
-                    if (!k) return b.apply(this, arguments);
-                    var t = this,
-                        e = arguments,
-                        r = E && !y;
-                    return (
-                        clearTimeout(y),
-                        (y = setTimeout(function () {
-                            if (((y = null), !r)) return b.apply(t, e);
-                        }, k)),
-                        r ? b.apply(this, arguments) : void 0
-                    );
-                });
-            var b, k, E, y;
-            window.addEventListener('resize', w);
-            let I = !0,
-                T = !1;
-            const F = new IntersectionObserver(([t]) => {
-                T = t.isIntersecting;
+        l,
+        u,
+        t => {
+            x[t ? 'unshift' : 'push'](() => {
+                (s = t), r(5, s);
             });
-            return (
-                F.observe(n),
-                requestAnimationFrame(function t(r) {
-                    I &&
-                        (requestAnimationFrame(t),
-                        T &&
-                            ((d.tick += 1),
-                            x(d.triggers.line) &&
-                                d.line < d.lines.length - 1 &&
-                                ((d.line += 1),
-                                (d.character = 0),
-                                d.character < d.lines[d.line].input.characters - 1
-                                    ? (d.triggers.character = d.tick + v(2, 3))
-                                    : (d.triggers.line = d.tick + v(1, 2))),
-                            x(d.triggers.character) &&
-                                (d.character < d.lines[d.line].input.characters - 1
-                                    ? ((d.character += 1), (d.triggers.character = d.tick + v(2, 3)))
-                                    : d.line < d.lines.length - 1 &&
-                                      (d.lines[d.line + 1].output.characters ? (d.triggers.line = d.tick + v(20, 30)) : (d.triggers.line = d.tick + v(2, 3)))),
-                            (function (t) {
-                                m.clearRect(0, 0, c, h);
-                                let r = 0;
-                                d.line * e + i.top >= h - i.bottom && (r = d.line * e - h + i.top + i.bottom);
-                                for (let a = 0; a <= d.line; a++) {
-                                    let n = 0;
-                                    for (let t of d.lines[a].output)
-                                        (m.fillStyle = t.color), m.fillText(t.text, i.left + n * f, i.top + e * a - r), (n += t.text.length);
-                                    let s = n;
-                                    for (let l of d.lines[a].input) {
-                                        if (((m.fillStyle = l.color), a === d.line)) {
-                                            let c = d.character - (n - s) + 1;
-                                            m.fillText(l.text.slice(0, c), i.left + n * f, i.top + e * a - r),
-                                                t % 1e3 < 500 && m.fillRect(i.left + (n + c) * f + 0.5, i.top + e * a - r - 0.575 * e, f, 0.7 * e);
-                                        } else m.fillText(l.text, i.left + n * f, i.top + e * a - r);
-                                        n += l.text.length;
-                                    }
-                                }
-                            })(r)));
-                }),
-                () => {
-                    (I = !1), window.removeEventListener('resize', w), F.disconnect();
-                }
-            );
-        }),
-        (t.$$set = (t) => {
-            'source' in t && r(6, (l = t.source)),
-                'dark' in t && r(0, (i = t.dark)),
-                'shadow' in t && r(1, (c = t.shadow)),
-                'narrow' in t && r(2, (o = t.narrow)),
-                'skipToEnd' in t && r(7, (u = t.skipToEnd)),
-                'alt' in t && r(3, (h = t.alt));
-        }),
-        (t.$$.update = () => {
-            1 & t.$$.dirty &&
-                (a = i
-                    ? { black: '#F9F9F9', orange: '#fc8800', green: '#57c700', blue: '#FFE4BC' }
-                    : { black: 'rgba(18, 16, 12, 0.7)', orange: '#fc8800', green: '#57c700', blue: '#0099EF' });
-        }),
-        [
-            i,
-            c,
-            o,
-            h,
-            n,
-            s,
-            l,
-            u,
-            function (t) {
-                x[t ? 'unshift' : 'push'](() => {
-                    (s = t), r(5, s);
-                });
-            },
-            function (t) {
-                x[t ? 'unshift' : 'push'](() => {
-                    (n = t), r(4, n);
-                });
-            }
-        ]
-    );
+        },
+        t => {
+            x[t ? 'unshift' : 'push'](() => {
+                (n = t), r(4, n);
+            });
+        }
+    ];
 }
 class M extends t {
     constructor(t) {
@@ -309,49 +305,51 @@ class M extends t {
     }
 }
 function S(t) {
-    let e,
-        r,
-        f,
-        m,
-        $ = t[1].text + '',
-        x =
-            t[0] &&
-            (function (t) {
-                let e, r;
-                return {
-                    c() {
-                        (e = a('a')), (r = n('Documentation')), this.h();
-                    },
-                    l(t) {
-                        e = s(t, 'A', { href: !0, class: !0 });
-                        var a = l(e);
-                        (r = i(a, 'Documentation')), a.forEach(c), this.h();
-                    },
-                    h() {
-                        o(e, 'href', t[0]), o(e, 'class', 'btn-secondary');
-                    },
-                    m(t, a) {
-                        u(t, e, a), h(e, r);
-                    },
-                    p: g,
-                    d(t) {
-                        t && c(e);
-                    }
-                };
-            })(t);
+    let e;
+    let r;
+    let f;
+    let m;
+    let $ = `${t[1].text}`;
+
+    let x =
+        t[0] && (t => {
+            let e;
+            let r;
+            return {
+                c() {
+                    (e = a('a')), (r = n('Documentation')), this.h();
+                },
+                l(t) {
+                    e = s(t, 'A', { href: !0, class: !0 });
+                    const a = l(e);
+                    (r = i(a, 'Documentation')), a.forEach(c), this.h();
+                },
+                h() {
+                    o(e, 'href', t[0]), o(e, 'class', 'btn-secondary');
+                },
+                m(t, a) {
+                    u(t, e, a), h(e, r);
+                },
+                p: g,
+                d(t) {
+                    t && c(e);
+                }
+            };
+        })(t);
+
     return {
         c() {
             (e = a('div')), (r = a('a')), (f = n($)), (m = p()), x && x.c(), this.h();
         },
         l(t) {
             e = s(t, 'DIV', { class: !0 });
-            var a = l(e);
+            const a = l(e);
             r = s(a, 'A', { href: !0, class: !0 });
-            var n = l(r);
+            const n = l(r);
             (f = i(n, $)), n.forEach(c), (m = d(a)), x && x.l(a), a.forEach(c), this.h();
         },
         h() {
-            o(r, 'href', t[1].href), o(r, 'class', I(`btn-${t[1].type || 'primary'}`) + ' svelte-1i79qs2'), o(e, 'class', 'mt-xx-small md:mt-x-large');
+            o(r, 'href', t[1].href), o(r, 'class', `${I(`btn-${t[1].type || 'primary'}`)} svelte-1i79qs2`), o(e, 'class', 'mt-xx-small md:mt-x-large');
         },
         m(t, a) {
             u(t, e, a), h(e, r), h(r, f), h(e, m), x && x.m(e, null);
@@ -365,115 +363,120 @@ function S(t) {
     };
 }
 function G(t) {
-    let e,
-        r,
-        f,
-        m,
-        $,
-        x,
-        I,
-        V,
-        z,
-        A,
-        C,
-        G,
-        B,
-        N,
-        O = (t[1] || t[0]) && S(t),
-        j =
-            t[4] &&
-            (function (t) {
-                let e, r;
-                return (
-                    (e = new M({ props: { source: t[4].source, skipToEnd: t[4].skipToEnd } })),
-                    {
-                        c() {
-                            v(e.$$.fragment);
-                        },
-                        l(t) {
-                            w(e.$$.fragment, t);
-                        },
-                        m(t, a) {
-                            b(e, t, a), (r = !0);
-                        },
-                        p: g,
-                        i(t) {
-                            r || (k(e.$$.fragment, t), (r = !0));
-                        },
-                        o(t) {
-                            E(e.$$.fragment, t), (r = !1);
-                        },
-                        d(t) {
-                            y(e, t);
-                        }
-                    }
-                );
-            })(t),
-        q =
-            t[5] &&
-            (function (t) {
-                let e, r;
-                return {
+    let e;
+    let r;
+    let f;
+    let m;
+    let $;
+    let x;
+    let I;
+    let V;
+    let z;
+    let A;
+    let C;
+    let G;
+    let B;
+    let N;
+    let O = (t[1] || t[0]) && S(t);
+
+    let j =
+        t[4] && (t => {
+            let e;
+            let r;
+            return (
+                (e = new M({ props: { source: t[4].source, skipToEnd: t[4].skipToEnd } })),
+                {
                     c() {
-                        (e = a('img')), this.h();
+                        v(e.$$.fragment);
                     },
                     l(t) {
-                        (e = s(t, 'IMG', { src: !0, alt: !0, class: !0 })), this.h();
+                        w(e.$$.fragment, t);
                     },
-                    h() {
-                        e.src !== (r = t[5].src) && o(e, 'src', r), o(e, 'alt', t[5].alt), o(e, 'class', 'block rounded-2xl shadow-medium');
-                    },
-                    m(t, r) {
-                        u(t, e, r);
+                    m(t, a) {
+                        b(e, t, a), (r = !0);
                     },
                     p: g,
+                    i(t) {
+                        r || (k(e.$$.fragment, t), (r = !0));
+                    },
+                    o(t) {
+                        E(e.$$.fragment, t), (r = !1);
+                    },
                     d(t) {
-                        t && c(e);
+                        y(e, t);
                     }
-                };
-            })(t),
-        R =
-            t[6] &&
-            (function (t) {
-                let e, r, a;
-                var n = t[6];
-                return (
-                    n && (e = new n({})),
-                    {
-                        c() {
-                            e && v(e.$$.fragment), (r = T());
-                        },
-                        l(t) {
-                            e && w(e.$$.fragment, t), (r = T());
-                        },
-                        m(t, n) {
-                            e && b(e, t, n), u(t, r, n), (a = !0);
-                        },
-                        p(t, a) {
-                            if (n !== (n = t[6])) {
-                                if (e) {
-                                    F();
-                                    const t = e;
-                                    E(t.$$.fragment, 1, 0, () => {
-                                        y(t, 1);
-                                    }),
-                                        D();
-                                }
-                                n ? ((e = new n({})), v(e.$$.fragment), k(e.$$.fragment, 1), b(e, r.parentNode, r)) : (e = null);
+                }
+            );
+        })(t);
+
+    let q =
+        t[5] && (t => {
+            let e;
+            let r;
+            return {
+                c() {
+                    (e = a('img')), this.h();
+                },
+                l(t) {
+                    (e = s(t, 'IMG', { src: !0, alt: !0, class: !0 })), this.h();
+                },
+                h() {
+                    e.src !== (r = t[5].src) && o(e, 'src', r), o(e, 'alt', t[5].alt), o(e, 'class', 'block rounded-2xl shadow-medium');
+                },
+                m(t, r) {
+                    u(t, e, r);
+                },
+                p: g,
+                d(t) {
+                    t && c(e);
+                }
+            };
+        })(t);
+
+    let R =
+        t[6] && (t => {
+            let e;
+            let r;
+            let a;
+            let n = t[6];
+            return (
+                n && (e = new n({})),
+                {
+                    c() {
+                        e && v(e.$$.fragment), (r = T());
+                    },
+                    l(t) {
+                        e && w(e.$$.fragment, t), (r = T());
+                    },
+                    m(t, n) {
+                        e && b(e, t, n), u(t, r, n), (a = !0);
+                    },
+                    p(t, a) {
+                        if (n !== (n = t[6])) {
+                            if (e) {
+                                F();
+                                const t = e;
+                                E(t.$$.fragment, 1, 0, () => {
+                                    y(t, 1);
+                                }),
+                                    D();
                             }
-                        },
-                        i(t) {
-                            a || (e && k(e.$$.fragment, t), (a = !0));
-                        },
-                        o(t) {
-                            e && E(e.$$.fragment, t), (a = !1);
-                        },
-                        d(t) {
-                            t && c(r), e && y(e, t);
+                            n ? ((e = new n({})), v(e.$$.fragment), k(e.$$.fragment, 1), b(e, r.parentNode, r)) : (e = null);
                         }
+                    },
+                    i(t) {
+                        a || (e && k(e.$$.fragment, t), (a = !0));
+                    },
+                    o(t) {
+                        e && E(e.$$.fragment, t), (a = !1);
+                    },
+                    d(t) {
+                        t && c(r), e && y(e, t);
                     }
-                );
-            })(t);
+                }
+            );
+        })(t);
+
     return {
         c() {
             (e = a('div')),
@@ -497,17 +500,17 @@ function G(t) {
         },
         l(a) {
             e = s(a, 'DIV', { class: !0 });
-            var n = l(e);
+            const n = l(e);
             r = s(n, 'DIV', { class: !0 });
-            var o = l(r);
+            const o = l(r);
             f = s(o, 'DIV', { class: !0 });
-            var u = l(f);
+            const u = l(f);
             m = s(u, 'H2', { class: !0 });
-            var h = l(m);
+            const h = l(m);
             ($ = i(h, t[3])), h.forEach(c), (x = d(u)), (I = s(u, 'P', {}));
-            var p = l(I);
+            const p = l(I);
             (V = i(p, t[2])), p.forEach(c), u.forEach(c), (z = d(o)), O && O.l(o), o.forEach(c), (A = d(n)), (C = s(n, 'DIV', { class: !0 }));
-            var g = l(C);
+            const g = l(C);
             j && j.l(g), (G = d(g)), q && q.l(g), (B = d(g)), R && R.l(g), g.forEach(c), n.forEach(c), this.h();
         },
         h() {
@@ -552,7 +555,8 @@ function G(t) {
     };
 }
 function B(t) {
-    let e, r;
+    let e;
+    let r;
     return (
         (e = new V({ props: { className: 'feature-container-section', $$slots: { default: [G] }, $$scope: { ctx: t } } })),
         {

@@ -46,11 +46,12 @@ import { d as G, M as O } from '../../chunks/menu-62fb98ae.js';
 import { p as z } from '../../chunks/stores-6ede6f6c.js';
 import { w as F } from '../../chunks/index-ab5856d2.js';
 /* empty css                                    */ function H(t) {
-    let e, l;
-    const m = t[6].default,
-        g = s(m, t, t[5], null);
-    let v = [{ href: t[0] }, { 'sveltekit:prefetch': '' }, t[2]],
-        b = {};
+    let e;
+    let l;
+    const m = t[6].default;
+    const g = s(m, t, t[5], null);
+    let v = [{ href: t[0] }, { 'sveltekit:prefetch': '' }, t[2]];
+    let b = {};
     for (let s = 0; s < v.length; s += 1) b = n(b, v[s]);
     return {
         c() {
@@ -58,7 +59,7 @@ import { w as F } from '../../chunks/index-ab5856d2.js';
         },
         l(t) {
             e = c(t, 'A', { href: !0, 'sveltekit:prefetch': !0 });
-            var l = a(e);
+            const l = a(e);
             g && g.l(l), l.forEach(o), this.h();
         },
         h() {
@@ -85,10 +86,12 @@ import { w as F } from '../../chunks/index-ab5856d2.js';
     };
 }
 function Q(t, e, l) {
-    let s, r, c;
+    let s;
+    let r;
+    let c;
     m(t, z, (t) => l(4, (c = t)));
-    let { $$slots: a = {}, $$scope: o } = e,
-        { href: i } = e;
+    let { $$slots: a = {}, $$scope: o } = e;
+    let { href: i } = e;
     return (
         (t.$$set = (t) => {
             l(2, (e = n(n({}, e), g(t)))), 'href' in t && l(0, (i = t.href)), '$$scope' in t && l(5, (o = t.$$scope));
@@ -111,8 +114,8 @@ function W(t, e, l) {
     return (s[3] = e[l]), s;
 }
 function X(t) {
-    let e,
-        l = t[0].title + '';
+    let e;
+    let l = `${t[0].title}`;
     return {
         c() {
             e = U(l);
@@ -124,7 +127,7 @@ function X(t) {
             u(t, e, l);
         },
         p(t, s) {
-            1 & s && l !== (l = t[0].title + '') && S(e, l);
+            1 & s && l !== (l = `${t[0].title}`) && S(e, l);
         },
         d(t) {
             t && o(e);
@@ -132,10 +135,10 @@ function X(t) {
     };
 }
 function J(t) {
-    let e,
-        l,
-        s = t[0].subMenu,
-        n = [];
+    let e;
+    let l;
+    let s = t[0].subMenu;
+    let n = [];
     for (let r = 0; r < s.length; r += 1) n[r] = Z(W(t, s, r));
     const i = (t) =>
         p(n[t], 1, 1, () => {
@@ -149,7 +152,7 @@ function J(t) {
         },
         l(t) {
             e = c(t, 'UL', { class: !0 });
-            var l = a(e);
+            const l = a(e);
             for (let e = 0; e < n.length; e += 1) n[e].l(l);
             l.forEach(o), this.h();
         },
@@ -189,8 +192,8 @@ function J(t) {
     };
 }
 function Y(t) {
-    let e,
-        l = t[3].title + '';
+    let e;
+    let l = `${t[3].title}`;
     return {
         c() {
             e = U(l);
@@ -202,7 +205,7 @@ function Y(t) {
             u(t, e, l);
         },
         p(t, s) {
-            1 & s && l !== (l = t[3].title + '') && S(e, l);
+            1 & s && l !== (l = `${t[3].title}`) && S(e, l);
         },
         d(t) {
             t && o(e);
@@ -210,42 +213,48 @@ function Y(t) {
     };
 }
 function Z(t) {
-    let e, l, s, n;
-    return (
-        (l = new R({ props: { href: t[3].path, $$slots: { default: [Y] }, $$scope: { ctx: t } } })),
-        {
-            c() {
-                (e = r('li')), b(l.$$.fragment), (s = w()), this.h();
-            },
-            l(t) {
-                e = c(t, 'LI', { class: !0 });
-                var n = a(e);
-                E(l.$$.fragment, n), (s = k(n)), n.forEach(o), this.h();
-            },
-            h() {
-                v(e, 'class', 'menu-item svelte-kua03s');
-            },
-            m(t, r) {
-                u(t, e, r), x(l, e, null), I(e, s), (n = !0);
-            },
-            p(t, e) {
-                const s = {};
-                1 & e && (s.href = t[3].path), 65 & e && (s.$$scope = { dirty: e, ctx: t }), l.$set(s);
-            },
-            i(t) {
-                n || ($(l.$$.fragment, t), (n = !0));
-            },
-            o(t) {
-                p(l.$$.fragment, t), (n = !1);
-            },
-            d(t) {
-                t && o(e), y(l);
-            }
+    let e;
+    let l;
+    let s;
+    let n;
+    return (l = new R({ props: { href: t[3].path, $$slots: { default: [Y] }, $$scope: { ctx: t } } })),
+    {
+        c() {
+            (e = r('li')), b(l.$$.fragment), (s = w()), this.h();
+        },
+        l(t) {
+            e = c(t, 'LI', { class: !0 });
+            const n = a(e);
+            E(l.$$.fragment, n), (s = k(n)), n.forEach(o), this.h();
+        },
+        h() {
+            v(e, 'class', 'menu-item svelte-kua03s');
+        },
+        m(t, r) {
+            u(t, e, r), x(l, e, null), I(e, s), (n = !0);
+        },
+        p(t, e) {
+            const s = {};
+            1 & e && (s.href = t[3].path), 65 & e && (s.$$scope = { dirty: e, ctx: t }), l.$set(s);
+        },
+        i(t) {
+            n || ($(l.$$.fragment, t), (n = !0));
+        },
+        o(t) {
+            p(l.$$.fragment, t), (n = !1);
+        },
+        d(t) {
+            t && o(e), y(l);
         }
-    );
+    }
+;
 }
 function tt(t) {
-    let e, l, s, n, i;
+    let e;
+    let l;
+    let s;
+    let n;
+    let i;
     s = new R({ props: { href: t[0].path, class: 'text-large', $$slots: { default: [X] }, $$scope: { ctx: t } } });
     let f = t[0].subMenu && t[1] && J(t);
     return {
@@ -254,9 +263,9 @@ function tt(t) {
         },
         l(t) {
             e = c(t, 'LI', { class: !0 });
-            var r = a(e);
+            const r = a(e);
             l = c(r, 'DIV', { class: !0 });
-            var i = a(l);
+            const i = a(l);
             E(s.$$.fragment, i), (n = k(i)), f && f.l(i), i.forEach(o), r.forEach(o), this.h();
         },
         h() {
@@ -294,19 +303,19 @@ function tt(t) {
     };
 }
 function et(t, e, l) {
-    let s, n;
+    let s;
+    let n;
     m(t, G, (t) => l(2, (n = t)));
     let { menuItem: r } = e;
-    return (
-        (t.$$set = (t) => {
-            'menuItem' in t && l(0, (r = t.menuItem));
-        }),
-        (t.$$.update = () => {
-            5 & t.$$.dirty &&
-                l(1, (s = n ? r.path.indexOf(/self-hosted\/\d\.\d\.\d/.test(n) ? n.replace(/\d\.\d\.\d/, 'latest') : n) >= 0 : /\/docs\/?$/.test(r.path)));
-        }),
-        [r, s, n]
-    );
+    return (t.$$set = (t) => {
+        'menuItem' in t && l(0, (r = t.menuItem));
+    }),
+    (t.$$.update = () => {
+        5 & t.$$.dirty &&
+            l(1, (s = n ? r.path.includes(/self-hosted\/\d\.\d\.\d/.test(n) ? n.replace(/\d\.\d\.\d/, 'latest') : n) : /\/docs\/?$/.test(r.path)));
+    }),
+    [r, s, n]
+;
 }
 class lt extends t {
     constructor(t) {
@@ -318,7 +327,8 @@ function st(t, e, l) {
     return (s[1] = e[l]), s;
 }
 function nt(t) {
-    let e, l;
+    let e;
+    let l;
     return (
         (e = new lt({ props: { menuItem: t[1] } })),
         {
@@ -348,10 +358,10 @@ function nt(t) {
     );
 }
 function rt(t) {
-    let e,
-        l,
-        s = t[0],
-        n = [];
+    let e;
+    let l;
+    let s = t[0];
+    let n = [];
     for (let r = 0; r < s.length; r += 1) n[r] = nt(st(t, s, r));
     const i = (t) =>
         p(n[t], 1, 1, () => {
@@ -365,7 +375,7 @@ function rt(t) {
         },
         l(t) {
             e = c(t, 'UL', { class: !0 });
-            var l = a(e);
+            const l = a(e);
             for (let e = 0; e < n.length; e += 1) n[e].l(l);
             l.forEach(o), this.h();
         },
@@ -418,16 +428,18 @@ class at extends t {
         super(), e(this, t, ct, rt, l, { MENU: 0 });
     }
 }
-var ot = F(!1);
+const ot = F(!1);
 function it(t) {
-    let e, l, s;
+    let e;
+    let l;
+    let s;
     return {
         c() {
             (e = r('div')), (l = r('img')), this.h();
         },
         l(t) {
             e = c(t, 'DIV', { class: !0, 'aria-hidden': !0 });
-            var s = a(e);
+            const s = a(e);
             (l = c(s, 'IMG', { class: !0, src: !0, alt: !0, width: !0, height: !0 })), s.forEach(o), this.h();
         },
         h() {
@@ -448,9 +460,15 @@ function it(t) {
     };
 }
 function ht(t) {
-    let e, l, n, i, h, d, m;
-    const g = t[4].default,
-        b = s(g, t, t[3], null);
+    let e;
+    let l;
+    let n;
+    let i;
+    let h;
+    let d;
+    let m;
+    const g = t[4].default;
+    const b = s(g, t, t[3], null);
     let E = t[2] && it();
     return {
         c() {
@@ -458,11 +476,11 @@ function ht(t) {
         },
         l(t) {
             e = c(t, 'LI', { class: !0 });
-            var s = a(e);
+            const s = a(e);
             l = c(s, 'A', { href: !0, class: !0 });
-            var r = a(l);
+            const r = a(l);
             n = c(r, 'DIV', { class: !0 });
-            var h = a(n);
+            const h = a(n);
             b && b.l(h), h.forEach(o), (i = k(r)), E && E.l(r), r.forEach(o), s.forEach(o), this.h();
         },
         h() {
@@ -480,8 +498,8 @@ function ht(t) {
                 E && E.m(l, null),
                 (h = !0),
                 d ||
-                    ((m = D(l, 'click', function () {
-                        V(t[1]) && t[1].apply(this, arguments);
+                    ((m = D(l, 'click', function(...args) {
+                        V(t[1]) && t[1].apply(this, args);
                     })),
                     (d = !0));
         },
@@ -503,10 +521,10 @@ function ht(t) {
     };
 }
 function ut(t, e, l) {
-    let { $$slots: s = {}, $$scope: n } = e,
-        { href: r } = e,
-        { onClick: c } = e,
-        { showIcon: a = !1 } = e;
+    let { $$slots: s = {}, $$scope: n } = e;
+    let { href: r } = e;
+    let { onClick: c } = e;
+    let { showIcon: a = !1 } = e;
     return (
         (t.$$set = (t) => {
             'href' in t && l(0, (r = t.href)),
@@ -527,9 +545,9 @@ function dt(t, e, l) {
     return (s[3] = e[l]), s;
 }
 function $t(t) {
-    let e,
-        l,
-        s = t[3].title + '';
+    let e;
+    let l;
+    let s = `${t[3].title}`;
     return {
         c() {
             (e = U(s)), (l = w());
@@ -541,7 +559,7 @@ function $t(t) {
             u(t, e, s), u(t, l, s);
         },
         p(t, l) {
-            1 & l && s !== (s = t[3].title + '') && S(e, s);
+            1 & l && s !== (s = `${t[3].title}`) && S(e, s);
         },
         d(t) {
             t && o(e), t && o(l);
@@ -549,7 +567,8 @@ function $t(t) {
     };
 }
 function pt(t) {
-    let e, l;
+    let e;
+    let l;
     return (
         (e = new ft({ props: { href: t[3].path, showIcon: !0, onClick: t[2], $$slots: { default: [$t] }, $$scope: { ctx: t } } })),
         {
@@ -579,11 +598,11 @@ function pt(t) {
     );
 }
 function mt(t) {
-    let e,
-        l,
-        s,
-        n = t[0],
-        i = [];
+    let e;
+    let l;
+    let s;
+    let n = t[0];
+    let i = [];
     for (let r = 0; r < n.length; r += 1) i[r] = pt(dt(t, n, r));
     const h = (t) =>
         p(i[t], 1, 1, () => {
@@ -597,9 +616,9 @@ function mt(t) {
         },
         l(t) {
             e = c(t, 'DIV', { role: !0, 'aria-label': !0 });
-            var s = a(e);
+            const s = a(e);
             l = c(s, 'UL', {});
-            var n = a(l);
+            const n = a(l);
             for (let e = 0; e < i.length; e += 1) i[e].l(n);
             n.forEach(o), s.forEach(o), this.h();
         },
@@ -654,33 +673,34 @@ class vt extends t {
         super(), e(this, t, gt, mt, l, { MENU: 0 });
     }
 }
-var bt = F(!1);
+const bt = F(!1);
 function wt(t, e, l) {
     const s = t.slice();
     return (s[6] = e[l]), s;
 }
 function Et(t) {
-    var e, l;
-    let s,
-        n,
-        i,
-        h,
-        f,
-        d,
-        m,
-        g,
-        b,
-        E,
-        x,
-        y,
-        V,
-        C,
-        A,
-        q,
-        B,
-        T = (null == (e = t[0]) ? void 0 : e.title) + '',
-        K = null == (l = t[0]) ? void 0 : l.subMenu,
-        P = [];
+    let e;
+    let l;
+    let s;
+    let n;
+    let i;
+    let h;
+    let f;
+    let d;
+    let m;
+    let g;
+    let b;
+    let E;
+    let x;
+    let y;
+    let V;
+    let C;
+    let A;
+    let q;
+    let B;
+    let T = `${null == (e = t[0]) ? void 0 : e.title}`;
+    let K = null == (l = t[0]) ? void 0 : l.subMenu;
+    let P = [];
     for (let r = 0; r < K.length; r += 1) P[r] = xt(wt(t, K, r));
     const G = (t) =>
         p(P[t], 1, 1, () => {
@@ -694,28 +714,28 @@ function Et(t) {
         },
         l(t) {
             s = c(t, 'DIV', { class: !0 });
-            var e = a(s);
+            const e = a(s);
             n = c(e, 'BUTTON', { class: !0, type: !0, 'aria-controls': !0, 'aria-expanded': !0 });
-            var l = a(n);
+            const l = a(n);
             i = c(l, 'DIV', { class: !0 });
-            var r = a(i);
+            const r = a(i);
             (h = _(r, T)), r.forEach(o), (f = k(l)), (d = c(l, 'DIV', { class: !0 }));
-            var u = a(d);
+            const u = a(d);
             (m = c(u, 'IMG', { class: !0, src: !0, alt: !0, width: !0, height: !0 })),
                 u.forEach(o),
                 l.forEach(o),
                 (E = k(e)),
                 (x = c(e, 'DIV', { 'aria-label': !0, role: !0, class: !0, id: !0 }));
-            var $ = a(x);
+            const $ = a(x);
             y = c($, 'UL', {});
-            var p = a(y);
+            const p = a(y);
             for (let s = 0; s < P.length; s += 1) P[s].l(p);
             p.forEach(o), $.forEach(o), e.forEach(o), this.h();
         },
         h() {
-            var e;
+            let e;
             v(i, 'class', 'toggle-button__label svelte-1dtjh89'),
-                v(m, 'class', (g = L('toggle-button__icon-arrow ' + (t[2] ? 'open' : '')) + ' svelte-1dtjh89')),
+                v(m, 'class', (g = `${L(`toggle-button__icon-arrow ${t[2] ? 'open' : ''}`)} svelte-1dtjh89`)),
                 m.src !== (b = '/arrow.svg') && v(m, 'src', '/arrow.svg'),
                 v(m, 'alt', 'Toggle sub menu'),
                 v(m, 'width', '12'),
@@ -727,7 +747,7 @@ function Et(t) {
                 v(n, 'aria-expanded', t[2]),
                 v(x, 'aria-label', (V = null == (e = t[0]) ? void 0 : e.title)),
                 v(x, 'role', 'navigation'),
-                v(x, 'class', (C = L('px-4 ' + (t[2] ? 'block' : 'hidden')) + ' svelte-1dtjh89')),
+                v(x, 'class', (C = `${L(`px-4 ${t[2] ? 'block' : 'hidden'}`)} svelte-1dtjh89`)),
                 v(x, 'id', 'sub-menu'),
                 v(s, 'class', 'sub-menu-container bg-white svelte-1dtjh89');
         },
@@ -737,10 +757,12 @@ function Et(t) {
             (A = !0), q || ((B = D(n, 'click', t[4])), (q = !0));
         },
         p(t, e) {
-            var l, s, r;
+            var l;
+            var s;
+            let r;
             if (
-                ((!A || 1 & e) && T !== (T = (null == (l = t[0]) ? void 0 : l.title) + '') && S(h, T),
-                (!A || (4 & e && g !== (g = L('toggle-button__icon-arrow ' + (t[2] ? 'open' : '')) + ' svelte-1dtjh89'))) && v(m, 'class', g),
+                ((!A || 1 & e) && T !== (T = `${null == (l = t[0]) ? void 0 : l.title}`) && S(h, T),
+                (!A || (4 & e && g !== (g = `${L(`toggle-button__icon-arrow ${t[2] ? 'open' : ''}`)} svelte-1dtjh89`))) && v(m, 'class', g),
                 (!A || 4 & e) && v(n, 'aria-expanded', t[2]),
                 5 & e)
             ) {
@@ -753,7 +775,7 @@ function Et(t) {
                 j();
             }
             (!A || (1 & e && V !== (V = null == (r = t[0]) ? void 0 : r.title))) && v(x, 'aria-label', V),
-                (!A || (4 & e && C !== (C = L('px-4 ' + (t[2] ? 'block' : 'hidden')) + ' svelte-1dtjh89'))) && v(x, 'class', C);
+                (!A || (4 & e && C !== (C = `${L(`px-4 ${t[2] ? 'block' : 'hidden'}`)} svelte-1dtjh89`))) && v(x, 'class', C);
         },
         i(t) {
             if (!A) {
@@ -772,9 +794,9 @@ function Et(t) {
     };
 }
 function kt(t) {
-    let e,
-        l,
-        s = t[6].title + '';
+    let e;
+    let l;
+    let s = `${t[6].title}`;
     return {
         c() {
             (e = U(s)), (l = w());
@@ -786,7 +808,7 @@ function kt(t) {
             u(t, e, s), u(t, l, s);
         },
         p(t, l) {
-            1 & l && s !== (s = t[6].title + '') && S(e, s);
+            1 & l && s !== (s = `${t[6].title}`) && S(e, s);
         },
         d(t) {
             t && o(e), t && o(l);
@@ -794,7 +816,8 @@ function kt(t) {
     };
 }
 function xt(t) {
-    let e, l;
+    let e;
+    let l;
     return (
         (e = new ft({ props: { href: t[6].path, onClick: t[5], $$slots: { default: [kt] }, $$scope: { ctx: t } } })),
         {
@@ -824,27 +847,27 @@ function xt(t) {
     );
 }
 function It(t) {
-    var e;
-    let l,
-        s,
-        n,
-        i,
-        h,
-        f,
-        d,
-        m,
-        g,
-        b,
-        E = (null == (e = t[0]) ? void 0 : e.subMenu) && Et(t);
+    let e;
+    let l;
+    let s;
+    let n;
+    let i;
+    let h;
+    let f;
+    let d;
+    let m;
+    let g;
+    let b;
+    let E = (null == (e = t[0]) ? void 0 : e.subMenu) && Et(t);
     return {
         c() {
             (l = r('button')), (s = r('div')), (n = r('img')), (h = U('\n  All topics')), (f = w()), E && E.c(), (d = A()), this.h();
         },
         l(t) {
             l = c(t, 'BUTTON', { class: !0, type: !0 });
-            var e = a(l);
+            const e = a(l);
             s = c(e, 'DIV', { class: !0 });
-            var r = a(s);
+            const r = a(s);
             (n = c(r, 'IMG', { class: !0, src: !0, alt: !0, width: !0, height: !0 })),
                 r.forEach(o),
                 (h = _(e, '\n  All topics')),
@@ -868,7 +891,7 @@ function It(t) {
             u(e, l, r), I(l, s), I(s, n), I(l, h), u(e, f, r), E && E.m(e, r), u(e, d, r), (m = !0), g || ((b = D(l, 'click', t[3])), (g = !0));
         },
         p(t, [e]) {
-            var l;
+            let l;
             (null == (l = t[0]) ? void 0 : l.subMenu)
                 ? E
                     ? (E.p(t, e), 1 & e && $(E, 1))
@@ -892,7 +915,8 @@ function It(t) {
     };
 }
 function yt(t, e, l) {
-    let s, n;
+    let s;
+    let n;
     m(t, ot, (t) => l(1, (s = t))), m(t, bt, (t) => l(2, (n = t)));
     let { currentSection: r = null } = e;
     return (
@@ -917,7 +941,8 @@ class Mt extends t {
     }
 }
 function jt(t) {
-    let e, l;
+    let e;
+    let l;
     return (
         (e = new Mt({ props: { currentSection: t[1] } })),
         {
@@ -947,7 +972,8 @@ function jt(t) {
     );
 }
 function Nt(t) {
-    let e, l;
+    let e;
+    let l;
     return (
         (e = new vt({ props: { MENU: t[0] } })),
         {
@@ -977,76 +1003,79 @@ function Nt(t) {
     );
 }
 function Ut(t) {
-    let e, l, s, n;
-    const i = [Nt, jt],
-        h = [];
+    let e;
+    let l;
+    let s;
+    let n;
+    const i = [Nt, jt];
+    const h = [];
     function f(t, e) {
         return t[2] ? 0 : 1;
     }
-    return (
-        (l = f(t)),
-        (s = h[l] = i[l](t)),
-        {
-            c() {
-                (e = r('div')), s.c(), this.h();
-            },
-            l(t) {
-                e = c(t, 'DIV', { class: !0 });
-                var l = a(e);
-                s.l(l), l.forEach(o), this.h();
-            },
-            h() {
-                v(e, 'class', 'mobile-menu svelte-17tjvcy');
-            },
-            m(t, s) {
-                u(t, e, s), h[l].m(e, null), (n = !0);
-            },
-            p(t, [n]) {
-                let r = l;
-                (l = f(t)),
-                    l === r
-                        ? h[l].p(t, n)
-                        : (M(),
-                          p(h[r], 1, 1, () => {
-                              h[r] = null;
-                          }),
-                          j(),
-                          (s = h[l]),
-                          s ? s.p(t, n) : ((s = h[l] = i[l](t)), s.c()),
-                          $(s, 1),
-                          s.m(e, null));
-            },
-            i(t) {
-                n || ($(s), (n = !0));
-            },
-            o(t) {
-                p(s), (n = !1);
-            },
-            d(t) {
-                t && o(e), h[l].d();
-            }
+    return (l = f(t)),
+    (s = h[l] = i[l](t)),
+    {
+        c() {
+            (e = r('div')), s.c(), this.h();
+        },
+        l(t) {
+            e = c(t, 'DIV', { class: !0 });
+            const l = a(e);
+            s.l(l), l.forEach(o), this.h();
+        },
+        h() {
+            v(e, 'class', 'mobile-menu svelte-17tjvcy');
+        },
+        m(t, s) {
+            u(t, e, s), h[l].m(e, null), (n = !0);
+        },
+        p(t, [n]) {
+            let r = l;
+            (l = f(t)),
+                l === r
+                    ? h[l].p(t, n)
+                    : (M(),
+                      p(h[r], 1, 1, () => {
+                          h[r] = null;
+                      }),
+                      j(),
+                      (s = h[l]),
+                      s ? s.p(t, n) : ((s = h[l] = i[l](t)), s.c()),
+                      $(s, 1),
+                      s.m(e, null));
+        },
+        i(t) {
+            n || ($(s), (n = !0));
+        },
+        o(t) {
+            p(s), (n = !1);
+        },
+        d(t) {
+            t && o(e), h[l].d();
         }
-    );
+    }
+;
 }
 function _t(t, e, l) {
-    let s, n, r;
+    let s;
+    let n;
+    let r;
     m(t, G, (t) => l(3, (n = t))), m(t, ot, (t) => l(2, (r = t)));
     let { MENU: c } = e;
-    return (
-        (t.$$set = (t) => {
-            'MENU' in t && l(0, (c = t.MENU));
-        }),
-        (t.$$.update = () => {
-            9 & t.$$.dirty &&
-                l(
-                    1,
-                    (s = c.find(({ path: t }) =>
-                        n ? t.indexOf(/self-hosted\/\d\.\d\.\d/.test(n) ? n.replace(/\d\.\d\.\d/, 'latest') : n) >= 0 : /\/docs$/.test(t)
-                    ))
-                );
-        }),
-        [c, s, r, n]
-    );
+    return (t.$$set = (t) => {
+        'MENU' in t && l(0, (c = t.MENU));
+    }),
+    (t.$$.update = () => {
+        9 & t.$$.dirty &&
+            l(
+                1,
+                (s = c.find(({ path: t }) =>
+                    n ? t.includes(/self-hosted\/\d\.\d\.\d/.test(n) ? n.replace(/\d\.\d\.\d/, 'latest') : n) : /\/docs$/.test(t)
+                ))
+            );
+    }),
+    [c, s, r, n]
+;
 }
 class St extends t {
     constructor(t) {
@@ -1054,7 +1083,22 @@ class St extends t {
     }
 }
 function Dt(t) {
-    let e, l, s, n, i, h, f, d, $, p, m, g, b, E, x, y;
+    let e;
+    let l;
+    let s;
+    let n;
+    let i;
+    let h;
+    let f;
+    let d;
+    let $;
+    let p;
+    let m;
+    let g;
+    let b;
+    let E;
+    let x;
+    let y;
     return {
         c() {
             (e = r('link')),
@@ -1079,9 +1123,9 @@ function Dt(t) {
                 (n = k(t)),
                 (i = k(t)),
                 (h = c(t, 'DIV', { class: !0 }));
-            var r = a(h);
+            const r = a(h);
             f = c(r, 'LABEL', { for: !0, class: !0 });
-            var u = a(f);
+            const u = a(f);
             (d = _(u, 'Search')),
                 u.forEach(o),
                 ($ = k(r)),
@@ -1093,8 +1137,8 @@ function Dt(t) {
         },
         h() {
             v(e, 'rel', 'stylesheet'),
-                v(e, 'href', 'https://cdn.jsdelivr.net/npm/docsearch.js@' + Vt + '/dist/cdn/docsearch.min.css'),
-                l.src !== (s = 'https://cdn.jsdelivr.net/npm/docsearch.js@' + Vt + '/dist/cdn/docsearch.min.js') && v(l, 'src', s),
+                v(e, 'href', `https://cdn.jsdelivr.net/npm/docsearch.js@${Vt}/dist/cdn/docsearch.min.css`),
+                l.src !== (s = `https://cdn.jsdelivr.net/npm/docsearch.js@${Vt}/dist/cdn/docsearch.min.js`) && v(l, 'src', s),
                 v(f, 'for', Ct),
                 v(f, 'class', 'sr-only'),
                 v(p, 'class', 'input-icon svelte-123f4xb'),
@@ -1109,7 +1153,7 @@ function Dt(t) {
                     'class',
                     'box-border block w-full pl-11 pr-3 py-2 border border-transparent leading-5 text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-gray-900 svelte-123f4xb'
                 ),
-                v(h, 'class', (E = L('input-container relative bg-white rounded-xl w-full mb-12 ' + (t[3] ? 'topics-active' : '')) + ' svelte-123f4xb'));
+                v(h, 'class', (E = `${L(`input-container relative bg-white rounded-xl w-full mb-12 ${t[3] ? 'topics-active' : ''}`)} svelte-123f4xb`));
         },
         m(s, r) {
             I(document.head, e),
@@ -1130,7 +1174,7 @@ function Dt(t) {
         p(t, [e]) {
             4 & e && v(b, 'placeholder', t[2]),
                 8 & e &&
-                    E !== (E = L('input-container relative bg-white rounded-xl w-full mb-12 ' + (t[3] ? 'topics-active' : '')) + ' svelte-123f4xb') &&
+                    E !== (E = `${L(`input-container relative bg-white rounded-xl w-full mb-12 ${t[3] ? 'topics-active' : ''}`)} svelte-123f4xb`) &&
                     v(h, 'class', E);
         },
         i: B,
@@ -1140,51 +1184,51 @@ function Dt(t) {
         }
     };
 }
-const Vt = '2.6.3',
-    Ct = 'search-doc-input';
+const Vt = '2.6.3';
+const Ct = 'search-doc-input';
 function Lt(t, e, l) {
-    let s, n, r;
+    let s;
+    let n;
+    let r;
     m(t, ot, (t) => l(3, (s = t)));
-    let c = !1,
-        a = 'Quick search';
-    return (
-        K(() => {
-            if (!navigator.userAgent.toLowerCase().match(/mobile/i)) {
-                const t = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? '⌘' : 'Ctrl';
-                l(2, (a += ` ${t}+K`));
-            }
-        }),
-        (t.$$.update = () => {
-            67 & t.$$.dirty &&
-                n &&
-                (r || c) &&
-                window.docsearch &&
-                window.docsearch({ apiKey: '1a880f3060e9ff81ff84087fc90878fc', indexName: 'gitpod', inputSelector: `#${Ct}`, debug: !1 });
-        }),
-        [
-            n,
-            r,
-            a,
-            s,
-            () => {
-                l(6, (c = !0));
-            },
-            (t) => {
-                (t.ctrlKey || t.metaKey) && 'k' === t.key && n.focus();
-            },
-            c,
-            function (t) {
-                P[t ? 'unshift' : 'push'](() => {
-                    (r = t), l(1, r);
-                });
-            },
-            function (t) {
-                P[t ? 'unshift' : 'push'](() => {
-                    (n = t), l(0, n);
-                });
-            }
-        ]
-    );
+    let c = !1;
+    let a = 'Quick search';
+    return K(() => {
+        if (!navigator.userAgent.toLowerCase().match(/mobile/i)) {
+            const t = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? '⌘' : 'Ctrl';
+            l(2, (a += ` ${t}+K`));
+        }
+    }),
+    (t.$$.update = () => {
+        67 & t.$$.dirty &&
+            n &&
+            (r || c) &&
+            window.docsearch &&
+            window.docsearch({ apiKey: '1a880f3060e9ff81ff84087fc90878fc', indexName: 'gitpod', inputSelector: `#${Ct}`, debug: !1 });
+    }),
+    [
+        n,
+        r,
+        a,
+        s,
+        () => {
+            l(6, (c = !0));
+        },
+        ({ctrlKey, metaKey, key}) => {
+            (ctrlKey || metaKey) && 'k' === key && n.focus();
+        },
+        c,
+        t => {
+            P[t ? 'unshift' : 'push'](() => {
+                (r = t), l(1, r);
+            });
+        },
+        t => {
+            P[t ? 'unshift' : 'push'](() => {
+                (n = t), l(0, n);
+            });
+        }
+    ];
 }
 class At extends t {
     constructor(t) {
@@ -1192,10 +1236,19 @@ class At extends t {
     }
 }
 function qt(t) {
-    let e, l, n, i, h, d, m, g, M, j;
+    let e;
+    let l;
+    let n;
+    let i;
+    let h;
+    let d;
+    let m;
+    let g;
+    let M;
+    let j;
     (n = new at({ props: { MENU: O } })), (d = new At({})), (g = new St({ props: { MENU: O } }));
-    const N = t[1].default,
-        U = s(N, t, t[0], null);
+    const N = t[1].default;
+    const U = s(N, t, t[0], null);
     return {
         c() {
             (e = r('div')),
@@ -1212,11 +1265,11 @@ function qt(t) {
         },
         l(t) {
             e = c(t, 'DIV', { class: !0 });
-            var s = a(e);
+            const s = a(e);
             l = c(s, 'DIV', { class: !0 });
-            var r = a(l);
+            const r = a(l);
             E(n.$$.fragment, r), r.forEach(o), (i = k(s)), (h = c(s, 'DIV', { class: !0 }));
-            var u = a(h);
+            const u = a(h);
             E(d.$$.fragment, u), (m = k(u)), E(g.$$.fragment, u), (M = k(u)), U && U.l(u), u.forEach(o), s.forEach(o), this.h();
         },
         h() {
