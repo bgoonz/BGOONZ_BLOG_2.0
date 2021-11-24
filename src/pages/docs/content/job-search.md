@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Job Search
 weight: 0
 excerpt: These are some of my active projects.
 seo:
