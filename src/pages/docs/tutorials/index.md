@@ -1,12 +1,12 @@
 ---
 title: Tutorials
 weight: 0
-excerpt: lorem-ipsum
+excerpt: 'Coding '
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
+  title: ''
+  description: ''
+  robots: []
+  extra: []
 template: docs
 ---
 
