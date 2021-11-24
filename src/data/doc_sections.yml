@@ -6,6 +6,7 @@ sections:
     - community
     - content
     - docs
+    - docs-blog
     - faq
     - javascript
     - interact
