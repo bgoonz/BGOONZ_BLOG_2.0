@@ -318,7 +318,7 @@
 
 <br>
 
-### [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
+### [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url))
 
 <br>
 
