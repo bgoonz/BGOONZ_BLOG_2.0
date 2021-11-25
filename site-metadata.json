@@ -51,7 +51,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "JavaScript",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
