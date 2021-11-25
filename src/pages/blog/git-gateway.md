@@ -1,7 +1,7 @@
 ---
 title: Git Bash
 subtitle: understanding git bsh
-date: '2021-09-30'
+date: '2021-09-02'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
