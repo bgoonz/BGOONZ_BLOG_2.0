@@ -5,27 +5,27 @@ date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-    title: ''
-    description: >-
-        Netlify CMS is an open source content management system for your Git
-        workflow that enables you to provide editors with a friendly UI and
-        intuitive workflows
-    robots: []
-    extra:
-        - name: 'og:image'
-          value: images/netlify-dee8d6ae.svg
-          keyName: property
-          relativeUrl: true
-        - name: 'og:title'
-          value: Intro to Netlify CMS
-          keyName: property
-          relativeUrl: false
-        - name: 'twitter:card'
-          value: Intro to Netlify CMS
-          keyName: name
-          relativeUrl: false
+  title: ''
+  description: >-
+    Netlify CMS is an open source content management system for your Git
+    workflow that enables you to provide editors with a friendly UI and
+    intuitive workflows
+  robots: []
+  extra:
+    - name: 'og:image'
+      value: images/netlify-dee8d6ae.svg
+      keyName: property
+      relativeUrl: true
+    - name: 'og:title'
+      value: Intro to Netlify CMS
+      keyName: property
+      relativeUrl: false
+    - name: 'twitter:card'
+      value: Intro to Netlify CMS
+      keyName: name
+      relativeUrl: false
 template: post
-thumb_image: images/netlify.svg
+thumb_image: images/netlify.png
 image: images/netlify-26904b46.svg
 ---
 
