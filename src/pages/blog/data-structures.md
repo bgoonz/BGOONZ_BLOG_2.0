@@ -5,14 +5,14 @@ date: '2021-09-14'
 thumb_image_alt: Big O Cheat Sheet
 excerpt: A guide to computational complexity
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: post
 image: images/ds.PNG
-thumb_image: images/bigo-446eaa35.png
+thumb_image: images/bigo-8f9701e1.jpg
 ---
 
 # Leetcode
