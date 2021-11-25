@@ -5,12 +5,12 @@ date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
+  title: ''
+  description: ''
+  robots: []
+  extra: []
 template: post
-thumb_image: images/27697c1a901d3b3673aeb98edae4d2ae (2)-35ae1413.png
+thumb_image: images/webdev.png
 ---
 
 **1. AI Chatbots**![](https://blog.sagipl.com/wp-content/uploads/2019/05/AI-Chatbots-1-1024x573.png)
