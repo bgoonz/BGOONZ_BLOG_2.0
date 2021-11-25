@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: ECMAScript 6
 weight: 0
 excerpt: lorem-ipsum
 seo:
