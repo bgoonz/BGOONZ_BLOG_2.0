@@ -1,7 +1,7 @@
 ---
 title: ECMAScript 6
 weight: 0
-excerpt: lorem-ipsum
+excerpt: is the latest version of the ECMAScript standard
 seo:
   title: ''
   description: ''
