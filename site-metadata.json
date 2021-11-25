@@ -52,7 +52,7 @@
                     },
                     {
                         "label": "JavaScript",
-                        "url": "#",
+                        "url": "javascript",
                         "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
