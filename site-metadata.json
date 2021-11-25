@@ -117,7 +117,7 @@
                 "has_subnav": true,
                 "subnav_links": [
                     {
-                        "label": "lorem-ipsum",
+                        "label": "J",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
