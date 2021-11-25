@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Es6 Features
 subtitle: lorem-ipsum
 date: '2021-11-24'
 thumb_image_alt: lorem-ipsum
