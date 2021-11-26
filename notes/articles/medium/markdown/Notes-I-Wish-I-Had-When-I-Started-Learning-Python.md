@@ -1,9 +1,8 @@
-Notes I Wish I Had When I Started Learning Python
-=================================================
+# Notes I Wish I Had When I Started Learning Python
 
 Plus resources for learning data structures and algorithms in python at the bottom of this article!
 
-------------------------------------------------------------------------
+---
 
 ### Notes I Wish I Had When I Started Learning Python
 
@@ -29,7 +28,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 -   <span id="dcbc">Python has a built in help function that let’s you see a description of the source code without having to navigate to it.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Numbers
 
@@ -82,7 +81,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kq_3dH4n7wsmAy7u.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Strings
 
@@ -169,7 +168,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*BIsBBI09FpFa1ntJ.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Variables and Expressions
 
@@ -209,7 +208,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="2ce7">`none` is an object and can be directly assigned to a variable.</span>
 -   <span id="d6aa">Using none is a convenient way to check to see why an action may not be operating correctly in your program.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Boolean Data Type
 
@@ -236,7 +235,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="30b9">Empty Sequence or Collection.</span>
 -   <span id="29da">`True` and `False` must be capitalized</span>
 
-------------------------------------------------------------------------
+---
 
 ### Comparison Operators
 
@@ -253,7 +252,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*nlYkqe_JubdBB2mv.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Identity vs Equality
 
@@ -269,7 +268,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 -   <span id="9344">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
 
-------------------------------------------------------------------------
+---
 
 ### If Statements
 
@@ -292,7 +291,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 -   <span id="bbd3">Remember the order of `elif` statements matter.</span>
 
-------------------------------------------------------------------------
+---
 
 ### While Statements
 
@@ -324,7 +323,7 @@ Plus resources for learning data structures and algorithms in python at the bott
         continue
       break
 
-------------------------------------------------------------------------
+---
 
 ### Try/Except Statements
 
@@ -437,7 +436,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     if hasattr(b, '__len__'):
         print(len(b))
 
-------------------------------------------------------------------------
+---
 
 ### Pass
 
@@ -456,7 +455,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     while True:
       pass
 
-------------------------------------------------------------------------
+---
 
 ### Functions
 
@@ -508,7 +507,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 `toUpper = lambda s: s.upper()`
 
-------------------------------------------------------------------------
+---
 
 ### Notes
 
@@ -550,14 +549,14 @@ Plus resources for learning data structures and algorithms in python at the bott
             print('{0:{width}{base}}'.format(num, base=base, width=width), end=' ')
         print()
 
-------------------------------------------------------------------------
+---
 
 ### Getting Input from the Command Line
 
 -   <span id="67f1">Python runs synchronously, all programs and processes will stop when listening for a user input.</span>
 -   <span id="21d9">The `input` function shows a prompt to a user and waits for them to type 'ENTER'.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Scripts vs Programs
 
@@ -566,7 +565,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="a0e0">Python can be used to display html, css, and JS.</span>
 -   <span id="1ffd">We will be using Python as an API (Application Programming Interface)</span>
 
-------------------------------------------------------------------------
+---
 
 ### Structured Data
 
@@ -582,7 +581,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="a86f">**Iterable** : Generic name for a sequence or collection; any object that can be iterated through.</span>
 -   <span id="bcb9">Can be mutable or immutable.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Built In Data Types
 
@@ -645,7 +644,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     b = dict(one=1, two=2, three=3)
     c = dict([('two', 2), ('one', 1), ('three', 3)])
 
-> *a, b, and c are all equal*
+> _a, b, and c are all equal_
 
 -   <span id="b63b">Declared with curly braces of the built in `dict()`</span>
 -   <span id="40be">Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.</span>
@@ -670,7 +669,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     letters = set('abracadabra')
     print(letters)
 
-------------------------------------------------------------------------
+---
 
 ### Built-In Functions
 
@@ -740,7 +739,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     print(b - a)        # => {4, 6}
     print(a ^ b)        # => {1, 3, 4, 6}
 
-------------------------------------------------------------------------
+---
 
 ### For Statements
 
@@ -839,7 +838,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     for c in "abcdefg":
         print(c)
 
-------------------------------------------------------------------------
+---
 
 ### More On Functions
 
@@ -889,7 +888,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blowfish", **kwargs):
       pass
 
-------------------------------------------------------------------------
+---
 
 ### Importing in Python
 
@@ -919,7 +918,7 @@ Plus resources for learning data structures and algorithms in python at the bott
       urlopen,
     )
 
-------------------------------------------------------------------------
+---
 
 ### Watching Out for Python 2
 
@@ -931,7 +930,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="9716">`sets` were killed in favor of `set()` class.</span>
 -   <span id="e034">`print` was a statement in P2, but is a function in P3.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Classes In Python
 
@@ -1001,7 +1000,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     bird.move_up_by(5)
     print(bird.y)
 
--   <span id="e971">*Use one leading underscore only for non-public methods and instance variables*</span>
+-   <span id="e971">_Use one leading underscore only for non-public methods and instance variables_</span>
 
 <!-- -->
 
@@ -1022,7 +1021,7 @@ Plus resources for learning data structures and algorithms in python at the bott
         def get_y(self):
             return self._y
 
--   <span id="9c5d">*All instance variables should be considered non-public*</span>
+-   <span id="9c5d">_All instance variables should be considered non-public_</span>
 -   <span id="9262">\***\*slots\*\*** : Dunder class variable used to reserve memory for the instance variables that you know will you will use.</span>
 
 <!-- -->
@@ -1072,7 +1071,7 @@ Plus resources for learning data structures and algorithms in python at the bott
         def __repr__(self):
             return f"<AngryBird ({self._x}, {self._y})>"
 
-------------------------------------------------------------------------
+---
 
 ### Properties for Classes
 
@@ -1137,7 +1136,7 @@ Plus resources for learning data structures and algorithms in python at the bott
                 value = 0
             self._y = value
 
-------------------------------------------------------------------------
+---
 
 ### List Comprehensions
 
@@ -1185,7 +1184,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     #     [0, 1, 2, 3, 4]
     # ]
 
-------------------------------------------------------------------------
+---
 
 ### My Blog:
 

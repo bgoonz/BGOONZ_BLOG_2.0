@@ -1,9 +1,8 @@
-My Favorite VSCode Themes
-=========================
+# My Favorite VSCode Themes
 
 Themes
 
-------------------------------------------------------------------------
+---
 
 ### My Favorite VSCode Themes
 
@@ -23,7 +22,7 @@ A product icon theme for Visual Studio Code
 
 ### TBC…
 
-------------------------------------------------------------------------
+---
 
 ### <a href="https://vscodethemes.com/e/pushqrdx.theme-monokai-oblique-vscode" class="markup--anchor markup--h3-anchor">Monokai Oblique by pushqrdx</a>
 

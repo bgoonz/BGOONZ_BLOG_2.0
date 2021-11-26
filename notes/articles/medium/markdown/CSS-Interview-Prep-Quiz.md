@@ -1,9 +1,8 @@
-CSS Interview Prep Quiz
-=======================
+# CSS Interview Prep Quiz
 
 Plus Css Cheat Sheet (82 questions total)
 
-------------------------------------------------------------------------
+---
 
 ### CSS Interview Prep Quiz
 
@@ -43,7 +42,7 @@ Plus Css Cheat Sheet (82 questions total)
 
 #### Q4. What element(s) do the following selectors match to?
 
-`1) .nav {...}` `2) nav {...}` `3) #nav {...}`
+`1) .nav {...}` `2) nav {...}` `3) #nav {...}`
 
 -   <span id="59b9">\[ \]</span>
 

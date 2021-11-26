@@ -56,7 +56,7 @@ To see the list of files and directories in the current directory use `ls` comma
 -   <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
 -   <span id="5cd8">Some useful `ls` command options:-</span>
 
-OptionDescriptionls -alist all files including hidden file starting with ‘.’ls -llist with the long formatls -lalist long format including hidden files
+OptionDescriptionls -alist all files including hidden file starting with '.’ls -llist with the long formatls -lalist long format including hidden files
 
 #### ✔ Create a Directory ➡ `mkdir`:
 
@@ -399,7 +399,7 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Thursday, April 22, 2021 by Teon Brooks
 
-**_I modified the command slightly to apply only to files called ‘result.md’:_**
+**_I modified the command slightly to apply only to files called 'result.md’:_**
 
 > The result is :
 
@@ -440,7 +440,7 @@ The following output from my bash shell corresponds to the directory:
 
 ### 7.) Execute command recursively:
 
-**Here I have modified the command I wish to run recursively to account for the fact that the ‘find’ command already works recursively, by appending the -maxdepth 1 flag…**
+**Here I have modified the command I wish to run recursively to account for the fact that the 'find’ command already works recursively, by appending the -maxdepth 1 flag…**
 
 > **I am essentially removing the recursive action of the find command…**
 
@@ -570,7 +570,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
 ---
 
-### 15. Change File Extension from ‘.txt’ to .doc for all files in working directory.
+### 15. Change File Extension from '.txt’ to .doc for all files in working directory.
 
     sudo apt install rename
 

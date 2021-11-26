@@ -188,7 +188,7 @@ Variables are used to store information to be referenced and manipulated in a pr
 
 ### Functions
 
-A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as ‘subprograms’)
+A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as 'subprograms’)
 
 -   <span id="4c89">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="d3fe">Includes three things:</span>

@@ -4621,7 +4621,7 @@ Usage:
 
 1.  Deactivate
 
-    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
+    To move onto something else in the command line type 'deactivate’ to deactivate your environment.
 
         deactivate
 
@@ -4629,7 +4629,7 @@ Usage:
 
 1.  Workon
 
-    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
+    Open up the command prompt and type 'workon HelloWold’ to activate the environment and move into your root project folder
 
         workon HelloWold
 

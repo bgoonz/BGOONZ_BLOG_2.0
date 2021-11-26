@@ -1,13 +1,12 @@
-All The Things You Can Embed In A Medium Article
-================================================
+# All The Things You Can Embed In A Medium Article
 
 I have this innate desire to make everything available all in one place and it’s usually an unnecessary waste of time… but here I will…
 
-------------------------------------------------------------------------
+---
 
 ### All The Things You Can Embed In A Medium Article
 
-#### I have this innate desire to make everything available all in one place and it’s usually an unnecessary waste of time… but here I will conduct and ‘experiment’ where I intentionally indulge that tendency.
+#### I have this innate desire to make everything available all in one place and it’s usually an unnecessary waste of time… but here I will conduct and 'experiment’ where I intentionally indulge that tendency.
 
 Here you can see in just the first frame of my blog site 5 different embedded widgets that I inject onto nearly every page of the site using javascript to append my widgets to various anchor points in the html.
 

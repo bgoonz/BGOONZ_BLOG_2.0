@@ -1,24 +1,22 @@
-
-
 **Skills:**
 
 **Languages**:                          JavaScript ES-6, NodeJS, HTML5, CSS3, SCSS, Bash Shell, SQL, MATLAB, Python, C++
 
-**Frameworks / Libraries**:   React, Redux, ExpressJS, Gatsby, NextJS, Ant-Design, SCSS, Loadash, Jest,  Sequelize, GraphQL, AJAX
+**Frameworks / Libraries**:   React, Redux, ExpressJS, Gatsby, NextJS, Ant-Design, SCSS, Loadash, Jest, Sequelize, GraphQL, AJAX
 
-**Databases**:                           PostgreSQL, MongoDB,  SQlite3
+**Databases**:                           PostgreSQL, MongoDB, SQlite3
 
-**Tools**:                                    Figma, Git, AWS S3, Heroku, Docker,  Jira, Trello, Confluence, Netlify, Digital Ocean,  VSCode, Google Analytics, Excel
+**Tools**:                                    Figma, Git, AWS S3, Heroku, Docker, Jira, Trello, Confluence, Netlify, Digital Ocean, VSCode, Google Analytics, Excel
 
 **Operating Systems**:          Linux, Windows (WSL), IOS
 
 **Projects**
 
-**Gatsby-Gr****aphQL-Blog**[Live Site  ](https://bgoonz-blog.netlify.app/)[GitHub](https://github.com/bgoonz/BGOONZ_BLOG_2.0)
+**Gatsby-Gr\*\***aphQL-Blog\*\*[Live Site  ](https://bgoonz-blog.netlify.app/)[GitHub](https://github.com/bgoonz/BGOONZ_BLOG_2.0)
 
-*JavaScript, React / Gatsby | GraphQL | SCSS | Lodash | Jamstack | Facebook Comments API | jQuery*
+_JavaScript, React / Gatsby | GraphQL | SCSS | Lodash | Jamstack | Facebook Comments API | jQuery_
 
-***A ***[***web development blog***](https://bgoonz-blog.netlify.app/)***, featuring convenient web development tools and interactive content.***
+**_A _**[**_web development blog_**](https://bgoonz-blog.netlify.app/)**_, featuring convenient web development tools and interactive content._**
 
 ● Implemented 4 Gatsby page models and GraphQL schema to fetch markdown content and feed it into react components.
 
@@ -28,9 +26,9 @@
 
 [**Autonomously Triggered Guitar Effects Platform**](https://www.youtube.com/watch?v=pRKjaprdWx4)[Live Site ](https://bgoonz.github.io/Revamped-Automatic-Guitar-Effect-Triggering/)  [GitHub](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering/tree/master/Triggered-Guitar-Effects-Platform)
 
-*C++ | Python | MATLAB | PureData*
+_C++ | Python | MATLAB | PureData_
 
-[***Platform***](https://bgoonz.github.io/Revamped-Automatic-Guitar-Effect-Triggering/SR%20Project%20II%20Presentation.pdf)*** designed to analyze a time sequence of notes and autonomously trigger guitar effects at a predetermined point in the song.***
+[**_Platform_**](https://bgoonz.github.io/Revamped-Automatic-Guitar-Effect-Triggering/SR%20Project%20II%20Presentation.pdf)**_ designed to analyze a time sequence of notes and autonomously trigger guitar effects at a predetermined point in the song._**
 
 ● Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency & time domain analysis ­to track a current performance against pre-recorded performance.
 
@@ -38,9 +36,9 @@
 
 [**Family Promise**](https://familypromise.org/) **Service Tracker**[Live Site  ](https://a.familypromiseservicetracker.dev/) [GitHub](https://github.com/Lambda-School-Labs/family-promise-service-tracker-fe-a)
 
-*React | ExpressJS | Figma | Okta*
+_React | ExpressJS | Figma | Okta_
 
-***An ***[***app***](https://bryan-guner.gitbook.io/lambda-labs/navigation/roadmap)*** built to helps local communities coordinate their compassion to address the root causes of family homelessness.***
+**_An _**[**_app_**](https://bryan-guner.gitbook.io/lambda-labs/navigation/roadmap)**_ built to helps local communities coordinate their compassion to address the root causes of family homelessness._**
 
 ● Collaborated on state management using Redux to handle application state and middleware using redux-promise & redux-thunk.
 
@@ -50,9 +48,9 @@
 
 **Data Structures Playground**[Live Site ](https://ds-algo-official.netlify.app/) [GitHub](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
 
-*jQuery | ExpressJS | Google Analytics |Algolia Full Text Search | Amazon S3*
+_jQuery | ExpressJS | Google Analytics |Algolia Full Text Search | Amazon S3_
 
-***A ***[***website***](https://potluck-landing.netlify.app/style-guide/)*** for visualizing and practicing data structures and algorithms in JavaScript & Python.***
+**_A _**[**_website_**](https://potluck-landing.netlify.app/style-guide/)**_ for visualizing and practicing data structures and algorithms in JavaScript & Python._**
 
 ● Implemented an repl.it backend to enable commenting using express and the fs module to write user comments to a storage.json file.
 
@@ -66,7 +64,7 @@
 
 **Product Development Engineer | Nov 2019 - Mar 2020**
 
-[*Cembre*](https://www.cembre.com/)*, Edison, NJ*
+[_Cembre_](https://www.cembre.com/)_, Edison, NJ_
 
 ● Converted client's product needs into technical specs to be sent to the development team in Italy.
 
@@ -78,7 +76,7 @@
 
 **Education**
 
-[**Lambda School**](https://www.credly.com/badges/bd145ba3-0f09-42fc-8d1f-a3bc4e0a46b4/public_url)**, *Full Stack Web Development* ****                                                                                                             May 2020 - Nov 2021**
+[**Lambda School**](https://www.credly.com/badges/bd145ba3-0f09-42fc-8d1f-a3bc4e0a46b4/public_url)**, _Full Stack Web Development_ \*\***                                                                                                             May 2020 - Nov 2021\*\*
 
 [![Logo
 

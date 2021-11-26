@@ -276,7 +276,7 @@ So if linked lists are so great, why do we usually store strings in an array? **
 
 Lookups with a linked list are more of a process, because we have no way of knowing where the ith node is in memory. So we have to walk through the linked list node by node, counting as we go, until we hit the ith item.
 
-def get_ith_item_in_linked_list(head, i): if i &lt; 0: raise ValueError(“i can’t be negative: %d” % i) current_node = head current_position = 0 while current_node: if current_position == i: \# Found it! return current_node \# Move on to the next node current_node = current_node.next current_position += 1 raise ValueError(‘List has fewer than i + 1 (%d) nodes’ % (i + 1))
+def get_ith_item_in_linked_list(head, i): if i &lt; 0: raise ValueError(“i can’t be negative: %d” % i) current_node = head current_position = 0 while current_node: if current_position == i: \# Found it! return current_node \# Move on to the next node current_node = current_node.next current_position += 1 raise ValueError('List has fewer than i + 1 (%d) nodes’ % (i + 1))
 
 That’s i + 1 steps down our linked list to get to the ith node (we made our function zero-based to match indices in arrays). **So linked lists have -time lookups.** Much slower than the -time lookups for arrays and dynamic arrays.
 
@@ -310,9 +310,9 @@ Quick lookups are often really important. For that reason, we tend to use arrays
 
 For example, suppose we wanted to count how many times each ASCII character appears in <a href="https://raw.githubusercontent.com/GITenberg/The-Tragedy-of-Romeo-and-Juliet_1112/master/1112.txt" class="markup--anchor markup--p-anchor">Romeo and Juliet</a>. How would we store those counts?
 
-We can use arrays in a clever way here. Remember — characters are just numbers. In ASCII (a common character encoding) ‘A’ is 65, ‘B’ is 66, etc.
+We can use arrays in a clever way here. Remember — characters are just numbers. In ASCII (a common character encoding) 'A’ is 65, 'B’ is 66, etc.
 
-So we can use the character(‘s number value) as the _index_ in our array, and store the _count_ for that character _at that index_ in the array:
+So we can use the character('s number value) as the _index_ in our array, and store the _count_ for that character _at that index_ in the array:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*84jW_RfhW2MNqLGl" class="graf-image" /></figure>With this array, we can look up (and edit) the count for any character in constant time. Because we can access any index in our array in constant time.
 

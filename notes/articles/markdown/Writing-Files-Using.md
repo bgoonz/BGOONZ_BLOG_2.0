@@ -118,7 +118,7 @@ This is not necessarily best practice, but it does give you other options for wr
 
 ### Appending Data to a File
 
-So far, we have stored data in new files or in overwritten data in existing files. But what if we want to append data to the end of an existing file? In this case we would need to open the existing file using a different access mode. We change that to ‘a’ instead of ‘w’.
+So far, we have stored data in new files or in overwritten data in existing files. But what if we want to append data to the end of an existing file? In this case we would need to open the existing file using a different access mode. We change that to 'a’ instead of 'w’.
 
 _Listing 9_ shows how to handle that. And _Listing 10_ does the same thing, but it uses the `with` statement rather.
 

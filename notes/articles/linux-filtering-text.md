@@ -22,8 +22,8 @@ $ man awk
 
 **sed** is a powerful stream editor for filtering and transforming text. We’ve already written a two useful articles on sed, that you can go through it here:
 
-1.  [How to use GNU ‘sed’ Command to Create, Edit, and Manipulate files in Linux](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
-2.  [15 Useful ‘sed’ Command Tips and Tricks for Daily Linux System Administration Tasks](https://www.tecmint.com/linux-sed-command-tips-tricks/)
+1.  [How to use GNU 'sed’ Command to Create, Edit, and Manipulate files in Linux](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
+2.  [15 Useful 'sed’ Command Tips and Tricks for Daily Linux System Administration Tasks](https://www.tecmint.com/linux-sed-command-tips-tricks/)
 
 The sed man page has added control options and instructions:
 
@@ -137,10 +137,10 @@ windowsmint.com
 
 You can use **sort** command in many ways, go through some of the useful articles on sort command as follows:
 
-1.  [14 Useful Examples of Linux ‘sort’ Command – Part 1](https://www.tecmint.com/sort-command-linux/)
-2.  [7 Interesting Linux ‘sort’ Command Examples – Part 2](https://www.tecmint.com/linux-sort-command-examples/)
+1.  [14 Useful Examples of Linux 'sort’ Command – Part 1](https://www.tecmint.com/sort-command-linux/)
+2.  [7 Interesting Linux 'sort’ Command Examples – Part 2](https://www.tecmint.com/linux-sort-command-examples/)
 3.  [How to Find and Sort Files Based on Modification Date and Time](https://www.tecmint.com/find-and-sort-files-modification-date-and-time-in-linux/)
-4.  [How to Sort Output of ‘ls’ Command By Last Modified Date and Time](https://www.tecmint.com/sort-ls-output-by-last-modified-date-and-time/)
+4.  [How to Sort Output of 'ls’ Command By Last Modified Date and Time](https://www.tecmint.com/sort-ls-output-by-last-modified-date-and-time/)
 
 ### 7\. uniq Command
 
@@ -313,7 +313,7 @@ Use it in the same way as more:
 \[ 0.000000\] BIOS-e820: \[mem 0x00000000a5eb0000-0x00000000aaabefff\] usable
 :
 
-Learn Why [‘less’ is Faster Than ‘more’ Command](https://www.tecmint.com/linux-more-command-and-less-command-examples/) for effective file navigation in Linux.
+Learn Why ['less’ is Faster Than 'more’ Command](https://www.tecmint.com/linux-more-command-and-less-command-examples/) for effective file navigation in Linux.
 
 That’s all for now, do let us know of any [useful command line tools](https://www.tecmint.com/tag/linux-tricks/) not mentioned here, that act as a text filters in Linux via the comment section below.
 

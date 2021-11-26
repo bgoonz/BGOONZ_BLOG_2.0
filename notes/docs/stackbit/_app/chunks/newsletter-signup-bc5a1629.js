@@ -153,32 +153,33 @@ function O(s, a, e) {
     let { class: t = '' } = a;
     let r = '';
     let n = !1;
-    return (s.$$set = (s) => {
-        'class' in s && e(0, (t = s.class));
-    }),
-    [
-        t,
-        l,
-        r,
-        n,
-        async () => {
-            e(3, (n = !0));
-            try {
-                (await fetch('/.netlify/functions/newsletter', { method: 'post', body: l })).ok
-                    ? e(2, (r = 'Thanks you are now signed up for our newsletter.'))
-                    : e(2, (r = 'Oh no, something went wrong :(.'));
-            } catch (s) {
-                console.error(s);
+    return (
+        (s.$$set = (s) => {
+            'class' in s && e(0, (t = s.class));
+        }),
+        [
+            t,
+            l,
+            r,
+            n,
+            async () => {
+                e(3, (n = !0));
+                try {
+                    (await fetch('/.netlify/functions/newsletter', { method: 'post', body: l })).ok
+                        ? e(2, (r = 'Thanks you are now signed up for our newsletter.'))
+                        : e(2, (r = 'Oh no, something went wrong :(.'));
+                } catch (s) {
+                    console.error(s);
+                }
+            },
+            (a) => {
+                b(s, a);
+            },
+            function () {
+                (l = this.value), e(1, l);
             }
-        },
-        a => {
-            b(s, a);
-        },
-        function () {
-            (l = this.value), e(1, l);
-        }
-    ]
-;
+        ]
+    );
 }
 class P extends s {
     constructor(s) {

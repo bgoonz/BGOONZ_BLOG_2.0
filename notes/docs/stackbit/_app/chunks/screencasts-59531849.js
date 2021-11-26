@@ -89,50 +89,52 @@ function x(e) {
     }
     let G = H(e);
     let N = G(e);
-    return (E = new k({})),
-    {
-        c() {
-            (t = r('a')), (a = r('div')), (x = r('data')), ($ = s('Screencast ')), (D = s(e[2])), (C = o()), N.c(), (I = o()), n(E.$$.fragment), this.h();
-        },
-        l(r) {
-            t = i(r, 'A', { href: !0, class: !0 });
-            const s = c(t);
-            a = i(s, 'DIV', {});
-            const o = c(a);
-            x = i(o, 'DATA', {});
-            const n = c(x);
-            ($ = l(n, 'Screencast ')),
-                (D = l(n, e[2])),
-                n.forEach(d),
-                (C = u(o)),
-                N.l(o),
-                (I = u(o)),
-                p(E.$$.fragment, o),
-                o.forEach(d),
-                s.forEach(d),
-                this.h();
-        },
-        h() {
-            h(t, 'href', (P = `/screencasts/${e[0].title.toLowerCase().replace(/\s/g, '-')}`)), h(t, 'class', 'cast min-w-full');
-        },
-        m(e, r) {
-            f(e, t, r), g(t, a), g(a, x), g(x, $), g(x, D), g(a, C), N.m(a, null), g(a, I), m(E, a, null), (Y = !0);
-        },
-        p(e, [r]) {
-            (!Y || 4 & r) && b(D, e[2]),
-                G === (G = H(e)) && N ? N.p(e, r) : (N.d(1), (N = G(e)), N && (N.c(), N.m(a, I))),
-                (!Y || (1 & r && P !== (P = `/screencasts/${e[0].title.toLowerCase().replace(/\s/g, '-')}`))) && h(t, 'href', P);
-        },
-        i(e) {
-            Y || (y(E.$$.fragment, e), (Y = !0));
-        },
-        o(e) {
-            w(E.$$.fragment, e), (Y = !1);
-        },
-        d(e) {
-            e && d(t), N.d(), v(E);
+    return (
+        (E = new k({})),
+        {
+            c() {
+                (t = r('a')), (a = r('div')), (x = r('data')), ($ = s('Screencast ')), (D = s(e[2])), (C = o()), N.c(), (I = o()), n(E.$$.fragment), this.h();
+            },
+            l(r) {
+                t = i(r, 'A', { href: !0, class: !0 });
+                const s = c(t);
+                a = i(s, 'DIV', {});
+                const o = c(a);
+                x = i(o, 'DATA', {});
+                const n = c(x);
+                ($ = l(n, 'Screencast ')),
+                    (D = l(n, e[2])),
+                    n.forEach(d),
+                    (C = u(o)),
+                    N.l(o),
+                    (I = u(o)),
+                    p(E.$$.fragment, o),
+                    o.forEach(d),
+                    s.forEach(d),
+                    this.h();
+            },
+            h() {
+                h(t, 'href', (P = `/screencasts/${e[0].title.toLowerCase().replace(/\s/g, '-')}`)), h(t, 'class', 'cast min-w-full');
+            },
+            m(e, r) {
+                f(e, t, r), g(t, a), g(a, x), g(x, $), g(x, D), g(a, C), N.m(a, null), g(a, I), m(E, a, null), (Y = !0);
+            },
+            p(e, [r]) {
+                (!Y || 4 & r) && b(D, e[2]),
+                    G === (G = H(e)) && N ? N.p(e, r) : (N.d(1), (N = G(e)), N && (N.c(), N.m(a, I))),
+                    (!Y || (1 & r && P !== (P = `/screencasts/${e[0].title.toLowerCase().replace(/\s/g, '-')}`))) && h(t, 'href', P);
+            },
+            i(e) {
+                Y || (y(E.$$.fragment, e), (Y = !0));
+            },
+            o(e) {
+                w(E.$$.fragment, e), (Y = !1);
+            },
+            d(e) {
+                e && d(t), N.d(), v(E);
+            }
         }
-    };
+    );
 }
 function $(e, t, a) {
     let r;

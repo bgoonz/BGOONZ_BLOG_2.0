@@ -1,9 +1,8 @@
-An Introduction to Markdown (Bonus Markdown Templates Included)
-===============================================================
+# An Introduction to Markdown (Bonus Markdown Templates Included)
 
 Basic Syntax Guide
 
-------------------------------------------------------------------------
+---
 
 ### An Introduction to Markdown (Bonus Markdown Templates Included)
 
@@ -16,7 +15,7 @@ This topic is meant to give you a very basic overview of how Markdown works, sho
 
 ### What is Markdown
 
-Markdown is very easy to learn and get comfortable with due it’s relatively small set of markup ‘commands’. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
+Markdown is very easy to learn and get comfortable with due it’s relatively small set of markup 'commands’. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
 
 Markdown also allows for raw HTML inside of a markdown document, so if you want to embed something more fancy than what Markdowns syntax can do you can always fall back to HTML. However to keep documents readable that’s generally not recommended.
 
@@ -28,11 +27,11 @@ The following are a few examples of the most common things you are likely to do 
 
     markdown
 
-    This text **is bold**. 
+    This text **is bold**.
     This text *is italic*.
 
 This text is bold.  
-This text *is italic*.
+This text _is italic_.
 
 ### Header Text
 
@@ -66,7 +65,7 @@ By default Markdown adds paragraphs at double line breaks. Single line breaks by
     Theses two lines should display as a single
     line because there's no double space at the end.
 
-    The following line has a soft break at the end (two spaces at end)  
+    The following line has a soft break at the end (two spaces at end)
     This line should be following on the very next line.
 
 This line has a paragraph break at the end (empty line after).
@@ -103,13 +102,13 @@ Block quotes are callouts that are great for adding notes or warnings into docum
     markdown
 
     > ###  Headers break on their own
-    > Note that headers don't need line continuation characters 
+    > Note that headers don't need line continuation characters
     as they are block elements and automatically break. Only text
     lines require the double spaces for single line breaks.
 
-> *Headers break on their own*
+> _Headers break on their own_
 
-> *Note that headers don’t need line continuation characters as they are block elements and automatically break. Only text lines require the double spaces for single line breaks.*
+> _Note that headers don’t need line continuation characters as they are block elements and automatically break. Only text lines require the double spaces for single line breaks._
 
 ### Fontawesome Icons
 
@@ -127,7 +126,7 @@ You can also embed plain HTML markup into the page if you like. For example, if 
 
     markdown
 
-    This text can be **embedded** into Markdown:  
+    This text can be **embedded** into Markdown:
     <i class="fa fa-refresh fa-spin fa-lg"></i> Refresh Page
 
 This text can be embedded into Markdown:  
@@ -155,9 +154,9 @@ A double line break, breaks out of the list.
 
     markdown
 
-    1. **Item 1**  
+    1. **Item 1**
     Item 1 is really something
-    2. **Item 2**  
+    2. **Item 2**
     Item two is really something else
 
     If you want lines to break using soft returns use two spaces at the end of a line.
@@ -174,7 +173,7 @@ If you want to embed code in the middle of a paragraph of text to highlight a co
 
     markdown
 
-    Structured statements like `for x =1 to 10` loop structures 
+    Structured statements like `for x =1 to 10` loop structures
     can be codified using single back ticks.
 
 Structured statements like `for x =1 to 10` loop structures can be codified using single back ticks.

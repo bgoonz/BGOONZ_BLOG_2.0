@@ -259,7 +259,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-select.html" class="markup--
 
 ### 4. UPDATE query in PostgreSQL
 
-<a href="https://www.postgresql.org/docs/12/sql-update.html" class="markup--anchor markup--p-anchor">UPDATE</a> is used to make updates to the data or row(s) of a database table. In the example below we use UPDATE to change the age of a person whose name is ‘PQR’:
+<a href="https://www.postgresql.org/docs/12/sql-update.html" class="markup--anchor markup--p-anchor">UPDATE</a> is used to make updates to the data or row(s) of a database table. In the example below we use UPDATE to change the age of a person whose name is 'PQR’:
 
     postgres=# update dummy_table set age=50 where name='PQR';
             UPDATE 1
@@ -272,7 +272,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-select.html" class="markup--
             PQR  | location-D |  50
             (4 rows)
 
-Next, we’ll use the UPDATE command to change the name and age of a person whose address is ‘location-D’:
+Next, we’ll use the UPDATE command to change the name and age of a person whose address is 'location-D’:
 
     postgres=# update dummy_table set name='GHI',age=54 where address='location-D';
     UPDATE 1
@@ -515,14 +515,14 @@ The ILIKE operator is a <a href="https://www.postgresql.org/docs/12/functions-ma
       manager_no        int
     );
 
-Insert data into ‘test_table’:
+Insert data into 'test_table’:
 
     insert into test_table values(10,'A1','CEO',null);
     insert into test_table values(11, 'B1', 'VP', 10);
     insert into test_table values(12, 'B2', 'VP', 10);
     insert into test_table values(13, 'B3', 'VP', 10);
     insert into test_table values(14, 'C1', 'DIRECTOR', 13);
-    insert into test_table values(15, ‘C2’, ‘DIRECTOR’, 13);
+    insert into test_table values(15, 'C2’, 'DIRECTOR’, 13);
     insert into test_table values(16, 'D1', 'MANAGER', 15);
     insert into test_table values(17 ,'E1', 'ENGINEER', 11);
     insert into test_table values(18, 'E2', 'ENGINEER', 11);
@@ -606,7 +606,7 @@ To avoid such errors, we can either use PERFORM or declare a variable and use it
     a date;
     begin
     select now() into a;
-    raise notice ‘%s’,a;
+    raise notice '%s’,a;
     return 1;
     end;
     $$ language 'plpgsql';
@@ -902,8 +902,8 @@ We can also configure PostgreSQL to generate log output by enabling these parame
 
     logging_collector = on
     log_directory = 'log'
-    log_filename = ‘postgresql-%Y-%m-%d_%H%M%S.log'
-    log_destination = ‘stderr’
+    log_filename = 'postgresql-%Y-%m-%d_%H%M%S.log'
+    log_destination = 'stderr’
     Log file will be created under the pg_log directory which resides under the data folder.
 
     [centos@tushar-ldap-docker bin]$ ls  data/log
@@ -1234,7 +1234,7 @@ To Identify or select rows that have NULL values, the <a href="https://www.postg
      PQR  | location-D |
     (5 rows)
 
-Identifying null values in ‘age’ column:
+Identifying null values in 'age’ column:
 
     postgres=# select name from dummy_table where age is null;
      name

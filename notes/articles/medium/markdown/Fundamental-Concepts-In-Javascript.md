@@ -1,9 +1,8 @@
-Fundamental Concepts In Javascript
-==================================
+# Fundamental Concepts In Javascript
 
 This is the stuff that comes up on interviews…
 
-------------------------------------------------------------------------
+---
 
 ### Fundamental Concepts In Javascript
 
@@ -33,7 +32,7 @@ This is the stuff that comes up on interviews…
 
 ### put it in brackets to access the value of the variable, rather than just making the value that string
 
--   <span id="d0b0">Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object</span>
+-   <span id="d0b0">Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object</span>
 -   <span id="9f75">can also use `(key in object)` syntax interchangeably (returns a boolean)</span>
 -   <span id="811d">Utilize Object.keys and Object.values in a function</span>
 -   <span id="1f44">`Object.keys(obj)` returns an array of all the keys in `obj`</span>
@@ -68,33 +67,33 @@ This is the stuff that comes up on interviews…
 
 ### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
 
-------------------------------------------------------------------------
+---
 
 ### Scope Lesson Concepts
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*2WT03WQBOGKWH_9i.png" class="graf-image" /></figure>-   <span id="cd3f">Identify the difference between `const`, `let`, and `var` declarations</span>
 
-> `const` ***- cannot reassign variable, scoped to block***
+> `const` **_- cannot reassign variable, scoped to block_**
 
-> `let` ***- can reassign variable, scoped to block***
+> `let` **_- can reassign variable, scoped to block_**
 
-> `var` ***- outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!***
+> `var` **_- outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!_**
 
--   <span id="dc31">*a variable will always evaluate to the value it contains regardless of how it was declared*</span>
+-   <span id="dc31">_a variable will always evaluate to the value it contains regardless of how it was declared_</span>
 
 #### Explain the difference between `const`, `let`, and `var` declarations
 
-> `var` *is function scoped—so if you declare it anywhere in a function, the declaration* ***(but not assignment…the fact that it exists is known to the javascript engine but the value assigned to it is a mystery until the code is run line by line!) is "hoisted"*** *so it will* ***exist in memory as “undefined”*** *which is bad and unpredictable*
+> `var` _is function scoped—so if you declare it anywhere in a function, the declaration_ **_(but not assignment…the fact that it exists is known to the javascript engine but the value assigned to it is a mystery until the code is run line by line!) is "hoisted"_** _so it will_ **_exist in memory as “undefined”_** _which is bad and unpredictable_
 
-> `var` *will also allow you to redeclare a variable, while* `let` *or* `const` *will raise a syntax error. you shouldn't be able to do that!*
+> `var` _will also allow you to redeclare a variable, while_ `let` _or_ `const` _will raise a syntax error. you shouldn't be able to do that!_
 
-#### `!!const` *won't let you reassign a variable!!*
+#### `!!const` _won't let you reassign a variable!!_
 
-> *but if it points to a mutable object, you will still be able to change the value by mutating the object*
+> _but if it points to a mutable object, you will still be able to change the value by mutating the object_
 
 -   <span id="2e8a">**block-scoped variables allow new variables with the same name in new scopes**</span>
 -   <span id="b7a6">block-scoped still performs hoisting of all variables within the block, but it doesn’t **initialize to the value of** `undefined` **like** `var` **does,** so it throws a specific reference error if you try to access the value before it has been declared</span>
--   <span id="d64f">**if you do not use** `var` **or** `let` **or** `const` **when initializing, it will be declared as global—THIS IS BAD** *(pretend that’s something you didn’t even know you could do)*</span>
+-   <span id="d64f">**if you do not use** `var` **or** `let` **or** `const` **when initializing, it will be declared as global—THIS IS BAD** _(pretend that’s something you didn’t even know you could do)_</span>
 -   <span id="a6c4">if you assign a value without a declaration*(la la la la….I’m not listening)*, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run.</span>
 
 ### Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
@@ -130,7 +129,7 @@ This is the stuff that comes up on interviews…
 -   <span id="87c8">closures have access to any variables within their own scope + scope of outer functions + global scope</span>
 -   <span id="a9e4">the set of all these available variables is “lexical environemnt”</span>
 -   <span id="8562">closure keeps reference to all variables \*\* even if the outer function has returned</span>
--   <span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function ‘closed’ over …each function has a private mutable state that cannot be accessed externally</span>
+-   <span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function 'closed’ over …each function has a private mutable state that cannot be accessed externally</span>
 -   <span id="2d6a">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span>
 -   <span id="d0d9">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span>
 
@@ -153,16 +152,16 @@ This is the stuff that comes up on interviews…
 -   <span id="fa5a">Utilize the built in `Function#bind` on a callback to maintain the context of this</span>
 -   <span id="5e6d">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
 
-can also work with arguments, so you can have a version of a function with particular arguments and a particular context.the first arg will be the context aka the \`this\` you want it to use.the next arguments will be the functions arguments that you are binding — if you just want to bind it to those arguments in particular, you can use \`null\` as the first argument, so the context won ‘t be bound, just the arguments — Given a code snippet, identify what \`this\` refers to
+can also work with arguments, so you can have a version of a function with particular arguments and a particular context.the first arg will be the context aka the \`this\` you want it to use.the next arguments will be the functions arguments that you are binding — if you just want to bind it to those arguments in particular, you can use \`null\` as the first argument, so the context won 't be bound, just the arguments — Given a code snippet, identify what \`this\` refers to
 
 > Important to recognize the difference between scope and context
 
--   <span id="a071">**scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block ‘s scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it)**</span>
+-   <span id="a071">**scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block 's scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it)**</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ATcQhZwwSH5EPFWk.gif" class="graf-image" /></figure>-   <span id="f933">**context refers to the value of the \`this\` keyword**</span>
 -   <span id="03e2">the keyword \`this\` exists in every function and it evaluates to the object that is currently invoking that function</span>
 -   <span id="7933">so the context is fairly straightforward when we talk about methods being called on specific objects</span>
--   <span id="f7bb">you could, however, call an object ‘s method on something other than that object, and then this would refer to the context where/how it was called, e.g.</span>
+-   <span id="f7bb">you could, however, call an object 's method on something other than that object, and then this would refer to the context where/how it was called, e.g.</span>
 
 ### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
@@ -177,7 +176,7 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 -   <span id="b227">you could also overwrite values or assign values to exist in a space where they should not exist</span>
 -   <span id="a0a0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
-> *we can use strict mode with* `"use strict";` *this will prevent you from accessing the global object with* `this` *in functions, so if you try to call* `this` *in the global context and change a value, you will get a type error, and the things you try to access will be undefined*
+> _we can use strict mode with_ `"use strict";` _this will prevent you from accessing the global object with_ `this` _in functions, so if you try to call_ `this` _in the global context and change a value, you will get a type error, and the things you try to access will be undefined_
 
 ### POJOs
 
@@ -185,7 +184,7 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
 #### 1. Label variables as either Primitive vs. Reference
 
-Javascript considers most data types to be ‘primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered ‘reference’ data types, and are passed by reference.
+Javascript considers most data types to be 'primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference’ data types, and are passed by reference.
 
 -   <span id="05bb">Boolean — Primitive</span>
 -   <span id="a5ab">Null — Primitive</span>

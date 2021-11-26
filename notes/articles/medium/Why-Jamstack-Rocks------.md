@@ -1,9 +1,8 @@
-Why Jamstack Rocks🤘😎🤙
-=====================
+# Why Jamstack Rocks🤘😎🤙
 
 JAMstack websites don’t use the microservices architecture, but they go for the micro frontends architecture. Each static page with HTML…
 
-------------------------------------------------------------------------
+---
 
 ### Why Jamstack Rocks🤘😎🤙
 
@@ -14,9 +13,9 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kFwbfuUYkD3-jQq-.jpeg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*ScYd6pUibdFOSaiSuJsaTA.png" class="graf-image" /></figure>### JAM stands for JavaScript, API & Markup.
 
-> *“A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup”*
+> _“A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup”_
 
-> *— Mathias Biilmann (CEO & Co-founder of Netlify).*
+> _— Mathias Biilmann (CEO & Co-founder of Netlify)._
 
 #### JavaScript
 
@@ -53,7 +52,7 @@ Jamstack is an architecture designed to make the web faster, more secure, and ea
 
 Explore more of the <a href="https://jamstack.org/why-jamstack" class="markup--anchor markup--p-anchor">benefits of Jamstack</a>.
 
-------------------------------------------------------------------------
+---
 
 ### Pre-rendering
 
@@ -61,13 +60,13 @@ With Jamstack, the entire front end is prebuilt into highly optimized static pag
 
 With so many popular tools for generating sites, like <a href="https://jamstack.org/generators/gatsby/" class="markup--anchor markup--p-anchor">Gatsby</a>, <a href="https://jamstack.org/generators/hugo/" class="markup--anchor markup--p-anchor">Hugo</a>, <a href="https://jamstack.org/generators/jekyll/" class="markup--anchor markup--p-anchor">Jekyll</a>, <a href="https://jamstack.org/generators/eleventy/" class="markup--anchor markup--p-anchor">Eleventy</a>, <a href="https://jamstack.org/generators/next/" class="markup--anchor markup--p-anchor">NextJS</a>, <a href="https://jamstack.org/generators/" class="markup--anchor markup--p-anchor">and very many more</a>, many web developers are already familiar with the tools needed to become productive Jamstack developers.
 
-------------------------------------------------------------------------
+---
 
 ### Enhancing with JavaScript
 
 With the <a href="https://jamstack.org/glossary/markup/" class="markup--anchor markup--p-anchor">markup</a> and other user interface assets of Jamstack sites served directly from a CDN, they can be delivered very quickly and securely. On this foundation, Jamstack sites can use JavaScript and APIs to talk to backend services, allowing experiences to be enhanced and personalized.
 
-------------------------------------------------------------------------
+---
 
 ### Supercharging with services
 
@@ -79,7 +78,7 @@ Jamstack sites might utilise such services at build time, and also at run time d
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*K9Dcp8Q-sJ8_XOBO.png" class="graf-image" /></figure>When a user requests a page, your server queries a MySQL database and uses a PHP interpreter, combined with data from the active theme and plugins, to stitch together an HTML document which can then be served to the user’s browser. What this extraordinarily complex operation amounts to, in essence, is **templating**. Given that even a modest blog is far too complex to code every page by hand, this method of dividing content into reusable components and automating the assembly makes sense.
 
-But why does this templating operation need to happen on the server? Do we *really* need databases and server-side software (which opens up dozens of security holes along the way) just to create a simple blog? At a time when browsers themselves have become operating systems, capable of interacting with countless APIs and running complex applications client-side, and when front-end development is dominated by JavaScript-based automation using npm, haven’t we outgrown this model?
+But why does this templating operation need to happen on the server? Do we _really_ need databases and server-side software (which opens up dozens of security holes along the way) just to create a simple blog? At a time when browsers themselves have become operating systems, capable of interacting with countless APIs and running complex applications client-side, and when front-end development is dominated by JavaScript-based automation using npm, haven’t we outgrown this model?
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*zUEq7vaq3GKgq1dr.png" class="graf-image" /></figure>Static site generators like Jekyll and Hugo are part of what makes this possible. They essentially replace PHP as our templating system, but instead of running on a server and generating content on-the-fly, they **run locally** as part of your development process. Your HTML is generated up-front, and your website — now a collection of easily-cached static files — can be distributed to users by a blisteringly fast CDN (content distribution network).
 
@@ -193,7 +192,7 @@ JAMstack sites can also be controlled via a Content Management System, these are
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*ScYd6pUibdFOSaiSuJsaTA.png" class="graf-image" /></figure>### Resources
 
-------------------------------------------------------------------------
+---
 
 Here’s a list of hand-picked JAMstack resources ranging from learning materials to third party services.
 
@@ -218,11 +217,11 @@ Here’s a list of hand-picked JAMstack resources ranging from learning material
 
 ### resources and links:
 
--   <span id="a6ca"><a href="https://julesforrest.com/moving-to-gatsby/" class="markup--anchor markup--li-anchor">Moving to Gatsby</a> *by* <a href="https://twitter.com/julesforrest" class="markup--anchor markup--li-anchor"><em>Jules Forrest</em></a></span>
--   <span id="b8bf"><a href="https://www.gatsbyjs.org/blog/2017-11-08-migrate-from-jekyll-to-gatsby/" class="markup--anchor markup--li-anchor">Migrate from Jekyll to Gatsby</a> *by* <a href="https://twitter.com/@singuerinc" class="markup--anchor markup--li-anchor"><em>Nahuel Scotti</em></a></span>
+-   <span id="a6ca"><a href="https://julesforrest.com/moving-to-gatsby/" class="markup--anchor markup--li-anchor">Moving to Gatsby</a> _by_ <a href="https://twitter.com/julesforrest" class="markup--anchor markup--li-anchor"><em>Jules Forrest</em></a></span>
+-   <span id="b8bf"><a href="https://www.gatsbyjs.org/blog/2017-11-08-migrate-from-jekyll-to-gatsby/" class="markup--anchor markup--li-anchor">Migrate from Jekyll to Gatsby</a> _by_ <a href="https://twitter.com/@singuerinc" class="markup--anchor markup--li-anchor"><em>Nahuel Scotti</em></a></span>
 -   <span id="7623"><a href="https://jamstack.org/" class="markup--anchor markup--li-anchor">JAMstack website</a></span>
 -   <span id="e3a9"><a href="https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/" class="markup--anchor markup--li-anchor">Smashing Magazine just got 10x faster</a></span>
--   <span id="9324"><a href="https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e" class="markup--anchor markup--li-anchor">Image Optimization Made Easy with Gatsby.js</a> *by* <a href="https://medium.com/@kyle.robert.gill?source=post_header_lockup" class="markup--anchor markup--li-anchor"><em>Kyle Gill</em></a></span>
+-   <span id="9324"><a href="https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e" class="markup--anchor markup--li-anchor">Image Optimization Made Easy with Gatsby.js</a> _by_ <a href="https://medium.com/@kyle.robert.gill?source=post_header_lockup" class="markup--anchor markup--li-anchor"><em>Kyle Gill</em></a></span>
 -   <span id="b4c7">Page loading bar with <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-nprogress//" class="markup--anchor markup--li-anchor"><em>gatsy-plugin-nprogress</em></a></span>
 -   <span id="5d04">Support for SASS/SCSS with <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-sass/" class="markup--anchor markup--li-anchor"><em>gatsby-plugin-sass</em></a></span>
 -   <span id="dd5d">Default Netlify CMS implementation with <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms/" class="markup--anchor markup--li-anchor"><em>gatsby-plugin-netlify-cms</em></a></span>

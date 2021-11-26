@@ -17,7 +17,7 @@ Curating Complexity: A Guide to Big-O Notation
 -   <span id="1cad">We also need to ask if our code remains performant if we increase the size of the input.</span>
 -   <span id="3cb7">The real question we need to answering is: `How does our performance scale?`.</span>
 
-### big ‘O’ notation
+### big 'O’ notation
 
 -   <span id="9b21">Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.</span>
 -   <span id="c0e6">Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:</span>
@@ -54,7 +54,7 @@ Common Complexity Classes
 
 #### `O(log(n)) Logarithmic`
 
-> **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm’s will typically display ‘halving’ the size of the input (like binary search!)**
+> **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm’s will typically display 'halving’ the size of the input (like binary search!)**
 
 #### `O(n) Linear`
 
@@ -81,7 +81,7 @@ Common Complexity Classes
 ### Memoization
 
 -   <span id="b3b0">Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use recursive strategies to solve.</span>
--   <span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only ‘solve’ each problem once.</span>
+-   <span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only 'solve’ each problem once.</span>
 -   <span id="65c9">Two features that comprise memoization:</span>
 
 1.  <span id="b2d2">FUNCTION MUST BE RECURSIVE.</span>
@@ -125,7 +125,7 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 #### Steps for tabulation
 
 -   <span id="8918">_Create a table array based off the size of the input._</span>
--   <span id="b4e7">_Initialize some values in the table to ‘answer’ the trivially small subproblem._</span>
+-   <span id="b4e7">_Initialize some values in the table to 'answer’ the trivially small subproblem._</span>
 -   <span id="072e">_Iterate through the array and fill in the remaining entries._</span>
 -   <span id="192e">_Your final answer is usually the last entry in the table._</span>
 

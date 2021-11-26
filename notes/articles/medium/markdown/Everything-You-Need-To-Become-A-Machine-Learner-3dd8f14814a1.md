@@ -1,19 +1,18 @@
-Everything You Need To Become A Machine Learner
-===============================================
+# Everything You Need To Become A Machine Learner
 
 This list of resources is specifically targeted at Web Developers and Data Scientists…. so do with it what you will…This list borrows…
 
-------------------------------------------------------------------------
+---
 
 ### Everything You Need To Become A Machine Learner
 
-#### *This list of resources is specifically targeted at Web Developers and Data Scientists…. so do with it what you will…This list borrows heavily from multiple lists created by :* <a href="https://github.com/sindresorhus" class="markup--anchor markup--h4-anchor"><em>sindresorhus</em></a>
+#### _This list of resources is specifically targeted at Web Developers and Data Scientists…. so do with it what you will…This list borrows heavily from multiple lists created by :_ <a href="https://github.com/sindresorhus" class="markup--anchor markup--h4-anchor"><em>sindresorhus</em></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*KLzv9YgXVEYUpnk8.jpg" class="graf-image" /></figure>Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.
 
-> *The goal of AI is to create computer models that exhibit “intelligent behaviors” like humans, according to* <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>*, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world.*
+> _The goal of AI is to create computer models that exhibit “intelligent behaviors” like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
 
-> *Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer* <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> *as “the field of study that gives computers the ability to learn without explicitly being programmed.”*
+> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> _as “the field of study that gives computers the ability to learn without explicitly being programmed.”_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*c767tks1CPvxbbb5.png" class="graf-image" /></figure>-   <span id="3c14">\[📖\] <a href="https://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446576220" class="markup--anchor markup--li-anchor">Delivering Happiness</a></span>
 -   <span id="accd">\[📖\] <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6" class="markup--anchor markup--li-anchor">Good to Great: Why Some Companies Make the Leap…And Others Don’t</a></span>
@@ -33,7 +32,7 @@ This list of resources is specifically targeted at Web Developers and Data Scien
 -   <span id="29cb">\[🅤\]ꭏ <a href="https://www.udacity.com/course/app-marketing--ud719" class="markup--anchor markup--li-anchor">App Marketing</a></span>
 -   <span id="5781">\[🅤\]ꭏ <a href="https://www.udacity.com/course/how-to-build-a-startup--ep245" class="markup--anchor markup--li-anchor">How to Build a Startup</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Natural language processing
 
@@ -75,7 +74,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="03d7">\[ \] <a href="https://www.youtube.com/watch?v=V5aZjsWM2wo" class="markup--anchor markup--li-anchor">Healed through A.I. | The Age of A.I.</a> `0:39:55`</span>
 -   <span id="fc3f">\[ \] <a href="https://www.youtube.com/watch?v=lrv8ga02VNg" class="markup--anchor markup--li-anchor">Using A.I. to build a better human | The Age of A.I.</a> `0:44:27`</span>
 -   <span id="67bf">\[ \] <a href="https://www.youtube.com/watch?v=Kr1fmKVY3cA" class="markup--anchor markup--li-anchor">Love, art and stories: decoded | The Age of A.I.</a> `0:38:57`</span>
--   <span id="f892">\[ \] <a href="https://www.youtube.com/watch?v=lIvrIKaNCRE" class="markup--anchor markup--li-anchor">The ‘Space Architects’ of Mars | The Age of A.I.</a> `0:30:10`</span>
+-   <span id="f892">\[ \] <a href="https://www.youtube.com/watch?v=lIvrIKaNCRE" class="markup--anchor markup--li-anchor">The 'Space Architects’ of Mars | The Age of A.I.</a> `0:30:10`</span>
 -   <span id="e84f">\[ \] <a href="https://www.youtube.com/watch?v=f2aocKWrPG8" class="markup--anchor markup--li-anchor">Will a robot take my job? | The Age of A.I.</a> `0:36:14`</span>
 -   <span id="8867">\[ \] <a href="https://www.youtube.com/watch?v=0wy4u34fii4" class="markup--anchor markup--li-anchor">Saving the world one algorithm at a time | The Age of A.I.</a> `0:46:37`</span>
 -   <span id="140d">\[ \] <a href="https://www.youtube.com/watch?v=VwtC_4t2g5M" class="markup--anchor markup--li-anchor">How A.I. is searching for Aliens | The Age of A.I.</a> `0:36:12`</span>
@@ -103,7 +102,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="db4e">\[📺 \] <a href="https://www.youtube.com/watch?v=_Ot35PspXw4" class="markup--anchor markup--li-anchor">Brandon Rohrer — Machine Learning in Production for Robots</a> `0:34:31`</span>
 -   <span id="b256">\[📺 \] <a href="https://youtu.be/g6bOwQdCJrc" class="markup--anchor markup--li-anchor">[CVPR’21 WAD] Keynote — Andrej Karpathy, Tesla</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Be able to frame anMachine Learning problem
 
@@ -179,7 +178,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 · **\[📺 \]** <a href="https://youtu.be/xNGI0B_Sn1E?list=LL" class="markup--anchor markup--p-anchor"><strong>Building intuitions before building models</strong></a>
 
-------------------------------------------------------------------------
+---
 
 ### Be familiar with data ethics
 
@@ -232,7 +231,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="1fa7">**\[📺 \]** <a href="https://www.youtube.com/watch?v=6e6aI4yjAxc" class="markup--anchor markup--li-anchor"><strong>SE4AI: Data Programming and Intro to Big Data Processing</strong></a> **0:33:04**</span>
 -   <span id="ea6c">**\[📺 \]** <a href="https://www.youtube.com/watch?v=iPmQ5ezQNPY" class="markup--anchor markup--li-anchor"><strong>SE4AI: Managing and Processing Large Datasets</strong></a> **1:21:27**</span>
 
-------------------------------------------------------------------------
+---
 
 ### Be able to manipulate data with Numpy
 
@@ -330,9 +329,9 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 > <a href="https://bryanguner.medium.com/bash-d3077114aea7" class="markup--anchor markup--blockquote-anchor">My Bash Cheatsheet Index:</a>
 
-------------------------------------------------------------------------
+---
 
-> <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><em>holy grail</em></a> *of learning bash*
+> <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><em>holy grail</em></a> _of learning bash_
 
 -   <span id="2fd9">**\[📰\]** <a href="https://dev.to/yankee/streamline-projects-using-makefile-28fe" class="markup--anchor markup--li-anchor"><strong>Streamline your projects using Makefile</strong></a></span>
 -   <span id="6805">**\[📰\]** <a href="https://www.tecmint.com/understand-linux-load-averages-and-monitor-performance/" class="markup--anchor markup--li-anchor"><strong>Understand Linux Load Averages and Monitor Performance of Linux</strong></a></span>
@@ -644,7 +643,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="2f73">**\[📺 \]** <a href="https://www.youtube.com/watch?v=EuBBz3bI-aA" class="markup--anchor markup--li-anchor"><strong>Machine Learning Fundamentals: Bias and Variance</strong></a> **0:06:36**</span>
 -   <span id="c150">**\[📺 \]** <a href="https://www.youtube.com/watch?v=4jRBRDbJemM" class="markup--anchor markup--li-anchor"><strong>ROC and AUC, Clearly Explained!</strong></a> **0:16:26**</span>
 
-------------------------------------------------------------------------
+---
 
 ### Be familiar with inner working of models
 
@@ -743,7 +742,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="acf3">**\[📺 \]** <a href="https://www.youtube.com/watch?v=CRRPLlgYWZw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–18 — Neural Networks</strong></a> **1:19:36**</span>
 -   <span id="1e1f">**\[📺 \]** <a href="https://www.youtube.com/watch?v=bmBezdqHTAg" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–12 — AutoML (plus some feature selection)</strong></a> **1:25:38**</span>
 
-------------------------------------------------------------------------
+---
 
 ### Be able to improve models
 
@@ -758,7 +757,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="c8e2">**\[📺 \]** <a href="https://www.youtube.com/watch?v=w3OPq0V8fr8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–10 — Calibration, Imbalanced data</strong></a> `1:16:14`</span>
 -   <span id="a96b">**\[📺 \]** <a href="https://youtu.be/GwGTwPcG0YM" class="markup--anchor markup--li-anchor"><strong>Lecture 10: Troubleshooting Deep Neural Networks</strong></a></span>
 
-------------------------------------------------------------------------
+---
 
 ### **Be familiar with fundamental Machine Learning concepts**
 
@@ -820,7 +819,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="39d1">**\[📺 \]** <a href="https://www.youtube.com/watch?v=bDdjebakjbA" class="markup--anchor markup--li-anchor"><strong>Multilabel and Multioutput Classification -Machine Learning with TensorFlow &amp; scikit-learn on Python</strong></a></span>
 -   <span id="c1f5">**\[📺 \]** <a href="https://youtu.be/7pykC5m24Z0?list=LL" class="markup--anchor markup--li-anchor"><strong>DABL: Automatic machine learning with a human in the loop- AI Latim American SumMIT Day 1</strong></a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Be able to implement models in Tensorflow and Keras
 
@@ -917,7 +916,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="f092">\[📺 \] <a href="https://www.youtube.com/watch?v=wG_nF1awSSY" class="markup--anchor markup--li-anchor">What is Automatic Differentiation?</a></span>
 -   <span id="0b29">\[📺 \] <a href="https://www.youtube.com/watch?v=BzuEGdGHKjc" class="markup--anchor markup--li-anchor">JAX: accelerated machine learning research via composable function transformations in Python</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### Be able to implement models using cloud services
 

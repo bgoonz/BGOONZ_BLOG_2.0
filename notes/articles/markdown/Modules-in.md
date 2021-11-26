@@ -28,7 +28,7 @@ Browsers have access to a location that contains information about the web addre
 
 Node has a predefined require function that we can use to import installed modules like readline. We can also import and export across our own files using require and module.exports. For example, say we had two different files, animals.js and cat.js, that existed in the same directory:
 
-If we execute animals.js in Node, the program would print ‘Sennacy is a great pet!’.
+If we execute animals.js in Node, the program would print 'Sennacy is a great pet!’.
 
 Browsers don’t have a notion of a file system so we cannot use require or module.exports in the same way.
 
@@ -110,7 +110,7 @@ _Using the same_ `poetry.txt` _file from before:_
 
     I do not know why
 
-Let’s replace occurrences of the phrase ‘do not’ with the word ‘should’.
+Let’s replace occurrences of the phrase 'do not’ with the word 'should’.
 
 We can read the contents of the file as a string, manipulate this string, then write this new string back into the file.
 

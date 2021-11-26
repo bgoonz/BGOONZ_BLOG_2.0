@@ -1,7 +1,7 @@
 const e = () => {
-        const e = new Date().getTimezoneOffset();
-        return e <= 0 && e >= -180;
-    };
+    const e = new Date().getTimezoneOffset();
+    return e <= 0 && e >= -180;
+};
 
 const s = (e = '') => e.toLocaleLowerCase().replace(/\s/g, '-');
 

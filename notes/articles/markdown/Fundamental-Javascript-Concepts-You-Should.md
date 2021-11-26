@@ -533,7 +533,7 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
 #### 1. Label variables as either Primitive vs. Reference
 
-Javascript considers most data types to be ‘primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered ‘reference’ data types, and are passed by reference.
+Javascript considers most data types to be 'primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference’ data types, and are passed by reference.
 
 -   <span id="6f83">Boolean — Primitive</span>
 -   <span id="6556">Null — Primitive</span>

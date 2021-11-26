@@ -202,7 +202,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 -   <span id="38b0"><a href="https://www.udacity.com/course/object-oriented-javascript--ud015" class="markup--anchor markup--li-anchor">Intermediate Course — Udacity — OOP JS</a></span>
 -   <span id="dde3"><a href="https://www.sololearn.com/Course/JavaScript/" class="markup--anchor markup--li-anchor">JavaScript Tutorial</a></span>
 -   <span id="49f1">Understanding Tougher Topics</span>
--   <span id="bc33"><a href="https://codeburst.io/javascript-the-keyword-this-for-beginners-fb5238d99f85" class="markup--anchor markup--li-anchor">JavaScript — The keyword ‘this’ for beginners</a></span>
+-   <span id="bc33"><a href="https://codeburst.io/javascript-the-keyword-this-for-beginners-fb5238d99f85" class="markup--anchor markup--li-anchor">JavaScript — The keyword 'this’ for beginners</a></span>
 -   <span id="ef2f"><a href="https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc" class="markup--anchor markup--li-anchor">JavaScript — Arrow Functions for Beginners</a></span>
 -   <span id="83e3"><a href="https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced" class="markup--anchor markup--li-anchor">JavaScript: What the heck is a Callback?</a></span>
 -   <span id="9e55"><a href="https://codeburst.io/javascript-what-the-heck-is-an-immediately-invoked-function-expression-a0ed32b66c18" class="markup--anchor markup--li-anchor">JavaScript: What the heck is an Immediately-Invoked Function Expression?</a></span>
@@ -520,7 +520,7 @@ These sites are good to get a general idea of possible layouts and style paths t
 -   <span id="c3ed"><a href="http://httpster.net/" class="markup--anchor markup--li-anchor">Httpster</a> — A curated list of the best sites around the Internet.</span>
 -   <span id="89f0"><a href="https://saaspages.xyz/" class="markup--anchor markup--li-anchor">SaaS Pages</a> — An inspection of Netlify’s page made especially to bring you inspiration.</span>
 -   <span id="18fd"><a href="http://www.siteinspire.com/" class="markup--anchor markup--li-anchor">siteInspire</a> — Get inspired.</span>
--   <span id="3704"><a href="https://www.designernews.co/" class="markup--anchor markup--li-anchor">Designer News</a> — The best design / development links from the ‘net.</span>
+-   <span id="3704"><a href="https://www.designernews.co/" class="markup--anchor markup--li-anchor">Designer News</a> — The best design / development links from the 'net.</span>
 -   <span id="d303"><a href="http://www.csswinner.com/" class="markup--anchor markup--li-anchor">CSS Winner</a> — Reviewed list of great websites.</span>
 -   <span id="8813"><a href="https://onepagelove.com/" class="markup--anchor markup--li-anchor">OnePageLove</a> — Great influence for one page and general website design.</span>
 -   <span id="b2d5"><a href="https://codemyui.com/" class="markup--anchor markup--li-anchor">CodeMyUI</a> — List of code snippets for fancy CSS/JS that make an awesome UI.</span>

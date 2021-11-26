@@ -1,13 +1,12 @@
-Heroku Deploy Guides & Cheatsheet Compilation
-=============================================
+# Heroku Deploy Guides & Cheatsheet Compilation
 
 Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a…
 
-------------------------------------------------------------------------
+---
 
 ### Heroku Deploy Guides & Cheatsheet Compilation
 
-#### Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a collection of *source code* written in one of these languages, perhaps a framework, and some *dependency description* that instructs a build system as to which additional dependencies are needed in order to build and run the application.
+#### Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a collection of _source code_ written in one of these languages, perhaps a framework, and some _dependency description_ that instructs a build system as to which additional dependencies are needed in order to build and run the application.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*gAOfoFENBTwE5mqJ.gif" class="graf-image" /></figure>#### This is a quick tutorial explaining how to get a static website hosted on Heroku.
 
@@ -80,25 +79,25 @@ If you open the application at this point, you should see something like this:
 If you remember, we ran the command `node app.js` to start the application locally.  
 Heroku has no way of knowing what commands it needs to run to start the application, and that's why it threw an error.
 
-To solve this problem, we must create a new file named `Procfile` with the following content: `web: node ./app.js`.
+To solve this problem, we must create a new file named `Procfile` with the following content: `web: node ./app.js`.
 
 To update our application, all we need to do is push a new commit to GitHub. If we have enabled the `Automatic Deploys` option, then the code will be automatically pulled to Heroku. Otherwise we need to click on `Deploy Branch` again.
 
-------------------------------------------------------------------------
+---
 
 ### Cheat Sheet:
 
-------------------------------------------------------------------------
+---
 
 ### Git-Heroku Workflow:
 
-------------------------------------------------------------------------
+---
 
 ### Full Stack Deploy:
 
 ### Alternative Approach:
 
-------------------------------------------------------------------------
+---
 
 ### This one was created by Nick G and originally posted on medium Aug 29 2020.
 

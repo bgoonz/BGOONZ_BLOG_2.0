@@ -46,7 +46,7 @@ You will need to provide some information that identifies your account to the Al
 
 If you don’t already have an Algolia account, [create one](https://www.algolia.com/users/sign_up). There is a free trial that does not require a credit card.
 
-Then, go to [the ‘API Keys’ section of your Algolia profile](https://www.algolia.com/api-keys). It should look like this screenshot, only with letters and numbers instead of black boxes:
+Then, go to [the 'API Keys’ section of your Algolia profile](https://www.algolia.com/api-keys). It should look like this screenshot, only with letters and numbers instead of black boxes:
 
 [![The API Keys section of the Algolia profile](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/321ea/algolia-api-keys.png 'The API Keys section of the Algolia profile')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/d26de/algolia-api-keys.png)
 

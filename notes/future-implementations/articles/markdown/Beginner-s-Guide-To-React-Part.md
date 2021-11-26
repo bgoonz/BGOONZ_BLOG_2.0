@@ -193,7 +193,7 @@ We added a key-value pair to our state object inside our constructor.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*6sYhFUNpUkt6xN9kkn4pJQ.png" class="graf-image" /></figure>
 
-This new syntax is what is often referred to as ‘syntactic sugar’: under the hood, the React library translates this back into the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter.
+This new syntax is what is often referred to as 'syntactic sugar’: under the hood, the React library translates this back into the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter.
 
 The clue to this is the fact that when we want to access some data from the state object, we still need to call it with `this.state.someData` ; changing it to just `state.someData` does not work.
 
@@ -247,7 +247,7 @@ Additionally, we want to be able to easily update lists and have React re-render
 
 We’ll see how both of these are done and how they work together within a single component in order to create the behavior of a dynamic list.
 
-The first change to note is that our state object now has an ‘ingredients’ array, and a ‘newIngredient’ field that has been initialized to an empty string.
+The first change to note is that our state object now has an 'ingredients’ array, and a 'newIngredient’ field that has been initialized to an empty string.
 
 The ingredients array contains the elements that we’ll want to render in our list.
 
@@ -325,16 +325,16 @@ We can see this to be the case if we open up the developer console and inspect t
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*q_XLnJ2h1L5yZjNnSKzj5w.png" alt="child-left: parent-right" class="graf-image" /><figcaption><strong>child-left: parent-right</strong></figcaption></figure>
 
-Note also that we’re passing each ingredient as a ‘thing’ to the ChildComponent component.
+Note also that we’re passing each ingredient as a 'thing’ to the ChildComponent component.
 
-This is how a parent component passes data to a child component. It doesn’t need to be called ‘thing’; you can call it whatever you want.
+This is how a parent component passes data to a child component. It doesn’t need to be called 'thing’; you can call it whatever you want.
 
-Conceptually though, **every piece of data that a parent component passes down to a child component is called a ‘prop’ in React lingo.**
+Conceptually though, **every piece of data that a parent component passes down to a child component is called a 'prop’ in React lingo.**
 
 Let’s take a look now at the Child Component. It serves two purposes:
 
 1.  <span id="4db5">to render the props data that it gets from a parent component,</span>
-2.  <span id="f8e1">to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is ‘complete’.</span>
+2.  <span id="f8e1">to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is 'complete’.</span>
 
 The overall structure of the child component is nothing we haven’t seen. It’s just another class component with its own s**tate object and a method called** `handleClick`** .**
 
@@ -362,7 +362,7 @@ The overall structure of React applications can be represented as a hierarchical
 
 > React manages the **creation and continuous updating of DOM nodes in your Web page**.
 
--   <span id="c9b6">_It does not handle_ <a href="https://skillcrush.com/blog/what-is-ajax/" class="markup--anchor markup--li-anchor"><em>AJAX</em></a> _requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in ‘state’. Because it’s function is so limited in scope you may hear it referred to as a library… (not a framework … like Angular for example) and you may also hear it described as unopinionated._</span>
+-   <span id="c9b6">_It does not handle_ <a href="https://skillcrush.com/blog/what-is-ajax/" class="markup--anchor markup--li-anchor"><em>AJAX</em></a> _requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in 'state’. Because it’s function is so limited in scope you may hear it referred to as a library… (not a framework … like Angular for example) and you may also hear it described as unopinionated._</span>
 
 #### 2. Why use react?
 
@@ -416,7 +416,7 @@ If you want React to treat a functional component as a pure component, you’ll 
 
 React encourages you to think in terms of reusability as you construct the user  
 interface from elements and components that you create. When you  
-make a list or a button, you can then reuse those components to show different data ‘state’ in the same UI structure as you have built for different data previously.
+make a list or a button, you can then reuse those components to show different data 'state’ in the same UI structure as you have built for different data previously.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*cBLQ5aBP2qihrT59.jpeg" class="graf-image" /></figure>#### Component-Based
 
@@ -456,7 +456,7 @@ makes React one of the speediest front-end libraries available.
 
 #### 6. Imperative vs Declarative <a href="https://medium.com/trabe/why-is-react-declarative-a-story-about-function-components-aaae83198f79" class="markup--anchor markup--h4-anchor">(React is Declarative)</a>
 
--   <span id="d48c">**Imperative, ‘telling to computer HOW to do something’ e.g looping over an array of numbers using a for loop.**</span>
+-   <span id="d48c">**Imperative, 'telling to computer HOW to do something’ e.g looping over an array of numbers using a for loop.**</span>
 -   <span id="8f2d">**Declarative, is concerned about WHAT we want to happen. e.g using a reduce method on an array.**</span>
 -   <span id="b625">Benefits of using declarative code:</span>
 -   <span id="1164">Reduce side effects</span>

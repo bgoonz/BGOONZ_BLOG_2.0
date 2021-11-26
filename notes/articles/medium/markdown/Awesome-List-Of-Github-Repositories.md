@@ -1,9 +1,8 @@
-Awesome List Of Github Repositories
-===================================
+# Awesome List Of Github Repositories
 
 Platforms
 
-------------------------------------------------------------------------
+---
 
 ### Awesome List Of Github Repositories
 
@@ -691,7 +690,7 @@ Platforms
 -   <span id="5761"><a href="http://awesome.digitalbunker.dev" class="markup--anchor markup--li-anchor" title="http://awesome.digitalbunker.dev">Awesome Viewer</a> — A visualizer for all of the above Awesome lists.</span>
 -   <span id="a14d"><a href="https://www.trackawesomelist.com" class="markup--anchor markup--li-anchor" title="https://www.trackawesomelist.com">Track Awesome List</a> — View the latest updates of Awesome lists.</span>
 
-------------------------------------------------------------------------
+---
 
 ### All Of My Repositories:
 

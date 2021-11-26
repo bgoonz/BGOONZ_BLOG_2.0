@@ -100,7 +100,7 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*sl4vb3fP9-MErkioiCOyKQ.png" class="graf-image" /></figure>### Then just paste the embed code in an iframe and you’re good to go!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*PjhrjtInF1dPudtO.png" class="graf-image" /></figure><a href="https://stackblitz.com/" class="markup--anchor markup--blockquote-anchor"><strong><em>On StackBlitz.com</em></strong></a>**, you can create new projects and get the embed code from the ‘Share’ dropdown link in the top navigation like so:**
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*PjhrjtInF1dPudtO.png" class="graf-image" /></figure><a href="https://stackblitz.com/" class="markup--anchor markup--blockquote-anchor"><strong><em>On StackBlitz.com</em></strong></a>**, you can create new projects and get the embed code from the 'Share’ dropdown link in the top navigation like so:**
 
 ### Embed Options
 
@@ -153,7 +153,7 @@ An existing project will be identified by Glitch as a **static** site if it does
 
 ### Here’s a (temporarily) broken version of my personal portfolio .. hosted on glitch
 
-#### Click ‘view app’ below to see how it renders
+#### Click 'view app’ below to see how it renders
 
 ---
 

@@ -19,8 +19,6 @@ My Awesome JavaScript List Part 2
 
 ### Web Development frameworks
 
-‌
-
 > · ​<a href="https://github.com/vercel/next.js" class="markup--anchor markup--pullquote-anchor">Next.js</a> — Framework for server-rendered or statically-exported React apps.
 
 > · ​<a href="https://github.com/baidu/san" class="markup--anchor markup--pullquote-anchor">San</a> — Flexible JavaScript component framework.
@@ -1091,7 +1089,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/zloirock/core-js" class="markup--anchor markup--pullquote-anchor">core-js</a> — Modular standard library for JavaScript.
 
-> · ​<a href="https://github.com/hustcc/timeago.js" class="markup--anchor markup--pullquote-anchor">timeago.js</a> — Nano library (less than 2 kb) used to format datetime with \*\*\* time ago statement. eg: ‘3 hours ago’.
+> · ​<a href="https://github.com/hustcc/timeago.js" class="markup--anchor markup--pullquote-anchor">timeago.js</a> — Nano library (less than 2 kb) used to format datetime with \*\*\* time ago statement. eg: '3 hours ago’.
 
 > · ​<a href="https://github.com/yahoo/serialize-javascript" class="markup--anchor markup--pullquote-anchor">Serialize JavaScript</a> — Serialize JavaScript to a superset of JSON that includes regular expressions, dates and functions.
 
@@ -1560,8 +1558,6 @@ My Awesome JavaScript List Part 2
 > · ​<a href="https://github.com/fingerprintjs/fingerprintjs" class="markup--anchor markup--blockquote-anchor">FingerprintJS</a> — Browser fingerprinting library with the highest accuracy and stability.
 
 > · ​<a href="https://github.com/ivan7237d/antiutils" class="markup--anchor markup--pullquote-anchor">Antiutils</a> — TypeScript/JavaScript utilities for those who don’t like utilities.
-
-‌
 
 ### General:
 

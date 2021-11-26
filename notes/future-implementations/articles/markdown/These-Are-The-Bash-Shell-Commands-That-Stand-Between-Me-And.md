@@ -18,11 +18,11 @@ I will not profess to be a bash shell wizard… but I have managed to scour some
 
 ### Find and replace in string/folder names
 
-    find . -type f -exec rename ‘s/string1/string2/g’ {} +
+    find . -type f -exec rename 's/string1/string2/g’ {} +
 
 ### Remove numbers from file names
 
-    find $dir -type f | sed ‘s|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \”&\” \”\1\2\”|’ | sh
+    find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \”&\” \”\1\2\”|’ | sh
 
 ### Delete files within size range ( for when GitHub cries about file size):
 
@@ -38,7 +38,7 @@ I will not profess to be a bash shell wizard… but I have managed to scour some
 
 ### Replace spaces in filenames with underscores
 
-    for file in *; do mv “$file” `echo $file | tr ‘ ‘ ‘_’` ; done
+    for file in *; do mv “$file” `echo $file | tr ' ' '_’` ; done
 
 ### Remove Empty Files and Folders:
 

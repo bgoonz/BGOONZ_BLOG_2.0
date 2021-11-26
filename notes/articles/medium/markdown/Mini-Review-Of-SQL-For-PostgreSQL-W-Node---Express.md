@@ -1,9 +1,8 @@
-Mini Review Of SQL For PostgreSQL W Node & Express
-==================================================
+# Mini Review Of SQL For PostgreSQL W Node & Express
 
 What is a Query?
 
-------------------------------------------------------------------------
+---
 
 ### Mini Review Of SQL For PostgreSQL W Node & Express
 
@@ -15,7 +14,7 @@ What is a Query?
 
 -   <span id="2026">`Query` : A question we're asking a database, aiming to get a response back.</span>
 -   <span id="e626">`psql -U postgres`</span>
--   <span id="f34d">Let’s us access the postgres server as the user ‘postgres’</span>
+-   <span id="f34d">Let’s us access the postgres server as the user 'postgres’</span>
 -   <span id="113b">`-U` stands for 'user'.</span>
 -   <span id="60c5">`\q` is used to quit postgres at any time.</span>
 
@@ -47,7 +46,7 @@ What is a Query?
 
 -   <span id="2c10">SQL Data Types listed here:</span>
 -   <span id="e3ef">`varchar(n)` : variable length char, n represents the limit.</span>
--   <span id="3af6">`numeric(p, s)` : floating point number, with *p* digits and *s* number of places after the decimal point.</span>
+-   <span id="3af6">`numeric(p, s)` : floating point number, with _p_ digits and _s_ number of places after the decimal point.</span>
 -   <span id="2eff">`int` : 4 byte integer.</span>
 -   <span id="a736">`boolean` : regular boolean value.</span>
 -   <span id="1ff4">`SELECT Query` : Query used to get results back from a table.</span>
@@ -64,7 +63,7 @@ What is a Query?
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*tj99LLWFAJYMoZIf" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### USING WHERE
 
@@ -84,7 +83,7 @@ What is a Query?
     SELECT name, breed FROM puppies
       WHERE breed IN ('Corgi', 'Beagle', 'Yorkshire Terrier');
 
--   <span id="94cc">Use the structure WHERE \[col\] IN (‘val’, ‘val2’…)</span>
+-   <span id="94cc">Use the structure WHERE \[col\] IN ('val’, 'val2’…)</span>
 
 **WHERE clause for a range of values**
 
@@ -137,7 +136,7 @@ What is a Query?
     SELECT name, breed, weight_lbs FROM puppies
       WHERE weight_lbs > 50;
 
-------------------------------------------------------------------------
+---
 
 ### Using INSERT
 
@@ -163,14 +162,14 @@ What is a Query?
 ### Using INNER JOIN
 
 -   <span id="8c61">Relationships are key in RD’s.</span>
--   <span id="b080">We create table associations through *foreign keys* and *primary keys*.</span>
+-   <span id="b080">We create table associations through _foreign keys_ and _primary keys_.</span>
 
 <!-- -->
 
     SELECT * FROM puppies
     INNER JOIN breeds ON (puppies.breed_id = breeds.id);
 
-------------------------------------------------------------------------
+---
 
 ### Using Seed Files
 
@@ -254,7 +253,7 @@ What is a Query?
 1.  <span id="f73a">`Apply Normalization Rules.`</span>
 
 -   <span id="16ec">`Normalization` : Process of optimizing the database structure so that redundancy and confusion are eliminated.</span>
--   <span id="6e1e">Rules are called ‘normal forms’</span>
+-   <span id="6e1e">Rules are called 'normal forms’</span>
 
 1.  <span id="950c">First normal form.</span>
 
@@ -276,7 +275,7 @@ What is a Query?
 
 -   <span id="49d0">The first three are widely used in practice and the fourth/fifth less so.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Transactions
 
@@ -358,7 +357,7 @@ What is a Query?
 
 -   <span id="1cd4">A SQL transaction has four properties known collectively as `ACID` (Atomic, Consistent, Isolated, and Durable)</span>
 -   <span id="7c59">`Atomicity` : All changes to data are performed as if they are a single operation.</span>
--   <span id="1e1b">You can also refer to the A as ‘Abortability’</span>
+-   <span id="1e1b">You can also refer to the A as 'Abortability’</span>
 -   <span id="34fa">I.E. if an app transfers funds from one account to another, the atomic nature of transactions will ensure that if a debt is successfully made, the credit will be properly transferred.</span>
 -   <span id="1be1">`Consistency` : Data is in a consistent start when a transaction starts and ends.</span>
 -   <span id="0ffb">I.E. if a transfer is scheduled, this prop ensures total value of funds in both accounts is the same at the start and end of a transaction.</span>
@@ -380,7 +379,7 @@ What is a Query?
           WHERE name = (SELECT branch_name FROM accounts WHERE name = 'Bob');
     COMMIT;
 
-------------------------------------------------------------------------
+---
 
 ### Subqueries and JOINs
 
@@ -466,7 +465,7 @@ What is a Query?
 -   <span id="3175">Subqueries work great when you’re only returning a single value.</span>
 -   <span id="b6fb">When returning multiple rows, you could go with either subQ’s or joins.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Indexes and Performance Analysis
 
@@ -518,7 +517,7 @@ There are several types of indexes use in Postgres: B-tree, Hash, GiST, and GIN.
              Index Cond: (unique2 = t1.unique2)
      Total runtime: 14.452 ms
 
-------------------------------------------------------------------------
+---
 
 ### Accessing Data from Node.js
 

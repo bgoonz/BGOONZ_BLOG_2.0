@@ -179,7 +179,7 @@ With App Academy Open you’ll get free access to App Academy’s entire in-pers
 
 Navigate to <a href="https://open.appacademy.io/" class="markup--anchor markup--p-anchor">App Academy Open</a> and sign up for a free account. All you’ll need to provide is your email address and name. You’ll be redirected to our learning platform where you’ll be starting your first lesson immediately.
 
-The rest of the courses from our legendary Full-Stack curriculum are available to you from the moment you sign up. To switch, simply click the ‘Course Outline’ at the top of the page. The menu should have a ‘Switch’ button which will list all available courses.
+The rest of the courses from our legendary Full-Stack curriculum are available to you from the moment you sign up. To switch, simply click the 'Course Outline’ at the top of the page. The menu should have a 'Switch’ button which will list all available courses.
 
 <a href="https://github.com/appacademy/welcome-to-open" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/appacademy/welcome-to-open"><strong>appacademy/welcome-to-open</strong><br />
 <em>tl;dr: click here to learn to code for free With App Academy Open you'll get free access to App Academy's entire…</em>github.com</a><a href="https://github.com/appacademy/welcome-to-open" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -281,7 +281,7 @@ here’s a list of what’s covered
 
 ### Web Development for Beginners — A Curriculum
 
-Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and HTML basics. Each lesson includes pre- and post-lesson quizzes, written instructions to complete the lesson, a solution, an assignment and more. Our project-based pedagogy allows you to learn while building, a proven way for new skills to ‘stick’.
+Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and HTML basics. Each lesson includes pre- and post-lesson quizzes, written instructions to complete the lesson, a solution, an assignment and more. Our project-based pedagogy allows you to learn while building, a proven way for new skills to 'stick’.
 
 <a href="https://github.com/microsoft/Web-Dev-For-Beginners" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/microsoft/Web-Dev-For-Beginners"><strong>microsoft/Web-Dev-For-Beginners</strong><br />
 <em>Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and…</em>github.com</a><a href="https://github.com/microsoft/Web-Dev-For-Beginners" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

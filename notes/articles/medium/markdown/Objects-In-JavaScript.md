@@ -1,9 +1,8 @@
-Objects In JavaScript
-=====================
+# Objects In JavaScript
 
 The object is a data structure that stores other data, similar to how an array stores elements.
 
-------------------------------------------------------------------------
+---
 
 ### Objects In JavaScript
 
@@ -218,7 +217,7 @@ So far we have learned about 6 different data types:
 
 **With Objects**
 
-------------------------------------------------------------------------
+---
 
 ### Learn More On My Blog:
 

@@ -1,9 +1,8 @@
-VSCode Extensions Specifically for JavaScript Development
-=========================================================
+# VSCode Extensions Specifically for JavaScript Development
 
 VSCode Extensions that are indispensable in JavaScript development
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -18,7 +17,7 @@ VSCode Extensions that are indispensable in JavaScript development
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*hsbombFMlu6yICjz.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Bracket Pair Colorizer 2
 
@@ -27,7 +26,7 @@ VSCode Extensions that are indispensable in JavaScript development
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*MT-BCptwnKGYk1Pk.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Babel Javascript
 
@@ -36,7 +35,7 @@ VSCode Extensions that are indispensable in JavaScript development
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*b5t9hd_8soPq26pq.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Code Runner
 
@@ -89,7 +88,7 @@ VSCode Extensions that are indispensable in JavaScript development
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*lCmaRsgOMINbFJps.gif" class="graf-image" /></figure>-   <span id="dbab">To run custom command, then use shortcut `Ctrl+Alt+K`, or press `F1` and then select/type `Run Custom Command`</span>
 
-------------------------------------------------------------------------
+---
 
 ### Color Highlight
 
@@ -103,7 +102,7 @@ VSCode Extensions that are indispensable in JavaScript development
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*eAKBnl6yXJgXZXvZ.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### GitLens
 
@@ -151,7 +150,7 @@ Here are just some of the **features** that GitLens provides,
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ZznZkr2qdB6qT2sX.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Markdown All in One
 
@@ -212,7 +211,7 @@ Tip: also support the option `completion.root`
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ZYCqFh0MHuE153Ed.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Mocah Test Explorer
 
@@ -239,7 +238,7 @@ Tip: also support the option `completion.root`
         "npm-intellisense.importDeclarationType": "const",
     }
 
-------------------------------------------------------------------------
+---
 
 ### NPM Intellisense
 
@@ -274,7 +273,7 @@ Npm intellisense scans only dependencies by default. Set scanDevDependencies to 
         "npm-intellisense.scanDevDependencies": true,
     }
 
-------------------------------------------------------------------------
+---
 
 ### Path Intellisense
 

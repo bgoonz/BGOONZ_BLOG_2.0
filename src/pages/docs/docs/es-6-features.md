@@ -107,7 +107,7 @@ Object literals are extended to support setting the prototype at construction, s
 var obj = {
     // __proto__
     __proto__: theProtoObj,
-    // Shorthand for ‘handler: handler’
+    // Shorthand for 'handler: handler’
     handler,
     // Methods
     toString() {
@@ -270,7 +270,7 @@ More info: [MDN for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 ### Generators
 Generators simplify iterator-authoring using `function*` and `yield`.  A function declared as function* returns a Generator instance.  Generators are subtypes of iterators which include additional  `next` and `throw`.  These enable values to flow back into the generator, so `yield` is an expression form which returns a value (or throws).
 
-Note: Can also be used to enable ‘await’-like async programming, see also ES7 `await` proposal.
+Note: Can also be used to enable 'await’-like async programming, see also ES7 `await` proposal.
 
 ```JavaScript
 var fibonacci = {
@@ -311,7 +311,7 @@ Non-breaking additions to support full Unicode, including new Unicode literal fo
 // same as ES5.1
 "𠮷".length == 2
 
-// new RegExp behaviour, opt-in ‘u’
+// new RegExp behaviour, opt-in 'u’
 "𠮷".match(/./u)[0].length == 2
 
 // new form
@@ -378,14 +378,14 @@ Module loaders support:
 The default module loader can be configured, and new loaders can be constructed to evaluate and load code in isolated or constrained contexts.
 
 ```JavaScript
-// Dynamic loading – ‘System’ is default loader
+// Dynamic loading – 'System’ is default loader
 System.import('lib/math').then(function(m) {
   alert("2π = " + m.sum(m.pi, m.pi));
 });
 
 // Create execution sandboxes – new Loaders
 var loader = new Loader({
-  global: fixup(window) // replace ‘console.log’
+  global: fixup(window) // replace 'console.log’
 });
 loader.eval("console.log('hello world!');");
 

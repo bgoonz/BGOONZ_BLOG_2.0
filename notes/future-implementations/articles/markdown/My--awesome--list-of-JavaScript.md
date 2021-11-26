@@ -1,12 +1,12 @@
-# My ‘awesome’ list of JavaScript resources
+# My 'awesome’ list of JavaScript resources
 
-Everyone’s seen the ‘Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
+Everyone’s seen the 'Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
 
 ---
 
-### My ‘awesome’ list of JavaScript resources
+### My 'awesome’ list of JavaScript resources
 
-#### Everyone’s seen the ‘Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
+#### Everyone’s seen the 'Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*3pwY-HRi2sjgBBJ0eISwqw.png" class="graf-image" /></figure><a href="https://github.com/topics/awesome" class="markup--anchor markup--blockquote-anchor"><strong>https://github.com/topics/awesome</strong></a>
 
@@ -227,7 +227,7 @@ Everyone’s seen the ‘Awesome’ lists on GitHub… and they are indeed aweso
 -   <span id="9f6b"><a href="https://github.com/caderek/benny" class="markup--anchor markup--li-anchor">Benny</a> — Dead simple benchmarking framework for JS/TS libs.</span>
 -   <span id="def2"><a href="https://11sigma.com/blog/functional-programming-in-js-part-i-composition" class="markup--anchor markup--li-anchor">Functional Programming in JS — Composition (Currying, Lodash and Ramda) (2020)</a></span>
 -   <span id="4421"><a href="https://www.taniarascia.com/javascript-modules-import-export/" class="markup--anchor markup--li-anchor">Understanding Modules, Import and Export in JavaScript (2020)</a></span>
--   <span id="c4c2"><a href="https://github.com/sindresorhus/meta/issues/7" class="markup--anchor markup--li-anchor">Intent to stop using ‘null’ in my JS code</a> (<a href="https://news.ycombinator.com/item?id=24956156" class="markup--anchor markup--li-anchor">HN</a>)</span>
+-   <span id="c4c2"><a href="https://github.com/sindresorhus/meta/issues/7" class="markup--anchor markup--li-anchor">Intent to stop using 'null’ in my JS code</a> (<a href="https://news.ycombinator.com/item?id=24956156" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="80c6"><a href="https://dmitripavlutin.com/javascript-prototypal-inheritance/" class="markup--anchor markup--li-anchor">What Makes JavaScript JavaScript? Prototypal Inheritance (2020)</a></span>
 -   <span id="07aa"><a href="https://github.com/antfu/ni" class="markup--anchor markup--li-anchor">ni</a> — Use the right package manager. Detect whether to use npm/yarn/pnpm.</span>
 -   <span id="ad0d"><a href="https://pitayan.com/posts/modernest-lib-hello-world/" class="markup--anchor markup--li-anchor">Making a modern JS library in 2020</a></span>

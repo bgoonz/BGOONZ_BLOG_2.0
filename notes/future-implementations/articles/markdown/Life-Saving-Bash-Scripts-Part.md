@@ -217,11 +217,11 @@ Recursively find suid executables
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 19.) Convert from Markdown==⇒ HTML
 
-    find ./ -iname “*.md” -type f -exec sh -c ‘pandoc — standalone “${0}” -o “${0%.md}.html”’ {} \;
+    find ./ -iname “*.md” -type f -exec sh -c 'pandoc — standalone “${0}” -o “${0%.md}.html”’ {} \;
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 20.) Convert from HTML ==⇒ Markdown
 
-    find ./ -iname “*.html” -type f -exec sh -c ‘pandoc — wrap=none — from html — to markdown_strict “${0}” -o “${0%.html}.md”’ {} \;
+    find ./ -iname “*.html” -type f -exec sh -c 'pandoc — wrap=none — from html — to markdown_strict “${0}” -o “${0%.html}.md”’ {} \;
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### Discover More:
 

@@ -31,11 +31,11 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 > _because JSX is a syntactic extension of JavaScript, you can actually write JavaScript directly within JSX_
 
-> _include the code you want to be treated as JavaScript within curly braces: { ‘this is treated as JavaScript code’ }_
+> _include the code you want to be treated as JavaScript within curly braces: { 'this is treated as JavaScript code’ }_
 
 > _JSX code must be compiled into JavaScript_
 
-> _under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById(‘root’))_
+> _under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById('root’))_
 
 > _One important thing to know about nested JSX is that it must return a single element._
 

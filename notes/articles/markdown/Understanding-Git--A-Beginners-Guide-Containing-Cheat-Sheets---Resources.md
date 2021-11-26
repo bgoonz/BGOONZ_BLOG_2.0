@@ -83,7 +83,7 @@ According to the latest <a href="https://insights.stackoverflow.com/survey/2017#
 
 > <a href="#why-checkout" class="markup--anchor markup--blockquote-anchor"><em>Why checkout?</em></a>
 
-> <a href="#git-do-overs-reset-rebase" class="markup--anchor markup--blockquote-anchor"><em>Git ‘Do-Overs’: Reset &amp; Rebase</em></a>
+> <a href="#git-do-overs-reset-rebase" class="markup--anchor markup--blockquote-anchor"><em>Git 'Do-Overs’: Reset &amp; Rebase</em></a>
 
 > <a href="#resetting-thepast" class="markup--anchor markup--blockquote-anchor"><em>Resetting the past</em></a>
 
@@ -93,7 +93,7 @@ According to the latest <a href="https://insights.stackoverflow.com/survey/2017#
 
 > <a href="#red-alert-hardresets" class="markup--anchor markup--blockquote-anchor"><em>Red alert! Hard resets</em></a>
 
-> <a href="#rebase-alt-time-travel" class="markup--anchor markup--blockquote-anchor"><em>Rebase: ‘Alt-time travel’</em></a>
+> <a href="#rebase-alt-time-travel" class="markup--anchor markup--blockquote-anchor"><em>Rebase: 'Alt-time travel’</em></a>
 
 > <a href="#i-see-you-too-like-to-live-life-dangerously-tell-me-aboutrebase" class="markup--anchor markup--blockquote-anchor"><em>I see you too like to live life Dangerously… tell me about Rebase..</em></a>
 
@@ -459,7 +459,7 @@ Most of Git’s power comes from a simple ability: viewing commits in the past a
 
 That said, you’ll likely use shortcuts like `git checkout -` far more often than specifically checking out commit hashes. Especially with the advent of user-friendly tools like GitHub, it's much easier to visualize changes outside the command line. We'll demonstrate browsing commit histories on GitHub in a future lesson.
 
-### Git ‘Do-Overs’: Reset & Rebase
+### Git 'Do-Overs’: Reset & Rebase
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*5yBLWI2EMAqgm01n.jpg" class="graf-image" /></figure>Git is designed to protect you — not only from others, but also from yourself! Of course, there are times where you’d like to exercise your own judgement, even if it may not be the best thing to do. For this, Git provides some helpful tools to change commits and “time travel”.
 
@@ -531,7 +531,7 @@ Our Git log output is much simpler now:
 
 If your teammate came rushing in to tell you that the boss has changed their mind and wants that homepage text after all, you’re going to be re-doing all that work! Be very confident that the changes you’re losing are unimportant before embarking on a hard reset.
 
-### Rebase: ‘Alt-time travel’
+### Rebase: 'Alt-time travel’
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*C_Y5Tr_o5BAS1l-3.jpeg" class="graf-image" /></figure>Sometimes we want to change more than a few commits on a linear timeline. What if we want to move multiple commits across branches? `git rebase` is the tool for us!
 
@@ -615,7 +615,7 @@ If you want to add all files in your project to the staging area, you can use a 
 
 ### How to add only certain files to the staging area in Git
 
-With the asterisk in the command below, you can add all files starting with ‘fil’ in the staging area.
+With the asterisk in the command below, you can add all files starting with 'fil’ in the staging area.
 
     git add fil*
 
@@ -944,7 +944,7 @@ The preceding code example creates a new alias `unstage`. This now enables the i
 
 ### Broken pipe errors on `git push`
 
-‘Broken pipe’ errors can occur when attempting to push to a remote repository. When pushing you usually see:
+'Broken pipe’ errors can occur when attempting to push to a remote repository. When pushing you usually see:
 
     Write failed: Broken pipe
     fatal: The remote end hung up unexpectedly
@@ -965,7 +965,7 @@ The value is specified in bytes, so in the above case the buffer size has been s
 
 ### Check your SSH configuration
 
-**If pushing over SSH**, first check your SSH configuration as ‘Broken pipe’ errors can sometimes be caused by underlying issues with SSH (such as authentication). Make sure that SSH is correctly configured by following the instructions in the <a href="https://docs.gitlab.com/ee/ssh/README.html#troubleshooting-ssh-connections" class="markup--anchor markup--p-anchor">SSH troubleshooting</a> documentation.
+**If pushing over SSH**, first check your SSH configuration as 'Broken pipe’ errors can sometimes be caused by underlying issues with SSH (such as authentication). Make sure that SSH is correctly configured by following the instructions in the <a href="https://docs.gitlab.com/ee/ssh/README.html#troubleshooting-ssh-connections" class="markup--anchor markup--p-anchor">SSH troubleshooting</a> documentation.
 
 If you’re a GitLab administrator and have access to the server, you can also prevent session timeouts by configuring SSH `keep alive` either on the client or on the server.
 
@@ -984,7 +984,7 @@ Configuring both the client and the server is unnecessary.
 
 ### Running a `git repack`
 
-**If ‘pack-objects’ type errors are also being displayed**, you can try to run a `git repack` before attempting to push to the remote repository again:
+**If 'pack-objects’ type errors are also being displayed**, you can try to run a `git repack` before attempting to push to the remote repository again:
 
     git repack
     git push
@@ -1008,7 +1008,7 @@ or
     ssh_exchange_identification: Connection closed by remote host
     fatal: The remote end hung up unexpectedly
 
-This error usually indicates that SSH daemon’s `MaxStartups` value is throttling SSH connections. This setting specifies the maximum number of concurrent, unauthenticated connections to the SSH daemon. This affects users with proper authentication credentials (SSH keys) because every connection is ‘unauthenticated’ in the beginning. The default value is `10`.
+This error usually indicates that SSH daemon’s `MaxStartups` value is throttling SSH connections. This setting specifies the maximum number of concurrent, unauthenticated connections to the SSH daemon. This affects users with proper authentication credentials (SSH keys) because every connection is 'unauthenticated’ in the beginning. The default value is `10`.
 
 Increase `MaxStartups` on the GitLab server by adding or modifying the value in `/etc/ssh/sshd_config`:
 

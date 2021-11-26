@@ -59,7 +59,7 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 #### <a href="https://aglowiditsolutions.com/blog/react-vs-angular/" class="markup--anchor markup--h4-anchor">React is a framework</a>:
 
-<a href="https://aglowiditsolutions.com/blog/react-vs-angular/" class="markup--anchor markup--p-anchor">Many developers an</a>d aspiring students misinterpret React to be a fully functional framework. It is because we often compare React with major frameworks such as Angular and Ember. This comparison is not to compare the best frameworks but to focus on the differences and similarities of React and Angular’s approach that makes their offerings worth studying. Angular works on **the MVC model** to support the Model, View, and Controller layers of an app. React focuses only on the ‘V,’ which is the **view layer** of an application and how to make handling it easier to integrate smoothly into a project.
+<a href="https://aglowiditsolutions.com/blog/react-vs-angular/" class="markup--anchor markup--p-anchor">Many developers an</a>d aspiring students misinterpret React to be a fully functional framework. It is because we often compare React with major frameworks such as Angular and Ember. This comparison is not to compare the best frameworks but to focus on the differences and similarities of React and Angular’s approach that makes their offerings worth studying. Angular works on **the MVC model** to support the Model, View, and Controller layers of an app. React focuses only on the 'V,’ which is the **view layer** of an application and how to make handling it easier to integrate smoothly into a project.
 
 #### React’s Virtual DOM is faster than DOM.
 

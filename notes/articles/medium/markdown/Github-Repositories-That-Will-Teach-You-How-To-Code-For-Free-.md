@@ -1,9 +1,8 @@
-Github Repositories That Will Teach You How To Code For Free!
-=============================================================
+# Github Repositories That Will Teach You How To Code For Free!
 
 Update: here’s a repo full of helpful repos:
 
-------------------------------------------------------------------------
+---
 
 ### Github Repositories That Will Teach You How To Code For Free!
 
@@ -12,11 +11,11 @@ Update: here’s a repo full of helpful repos:
 <a href="https://github.com/bgoonz/awesome-4-new-developers" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/awesome-4-new-developers"><strong>GitHub - bgoonz/awesome-4-new-developers: Top repos for new developers all in one place</strong><br />
 <em>Top repos for new developers all in one place. Contribute to bgoonz/awesome-4-new-developers development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/awesome-4-new-developers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### 30-seconds/30-seconds-of-code
 
-> *Short JavaScript code snippets for all your development needs*
+> _Short JavaScript code snippets for all your development needs_
 
 -   <span id="bac4">Visit <a href="https://30secondsofcode.org/" class="markup--anchor markup--li-anchor">their website</a> to view multiple snippet collections.</span>
 -   <span id="7276">Use the <a href="https://30secondsofcode.org/search" class="markup--anchor markup--li-anchor">Search page</a> to find snippets that suit your needs. You can search by name, tag, language or using a snippet’s description. Just start typing a term and see what comes up.</span>
@@ -27,7 +26,7 @@ Update: here’s a repo full of helpful repos:
 <a href="https://github.com/30-seconds/30-seconds-of-code" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/30-seconds/30-seconds-of-code"><strong>30-seconds/30-seconds-of-code</strong><br />
 <em>Short JavaScript code snippets for all your development needs Visit our website to view our snippet collection. Use the…</em>github.com</a><a href="https://github.com/30-seconds/30-seconds-of-code" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### railsgirls/railsgirls.github.io
 
@@ -42,7 +41,7 @@ You can use our materials and instructions to roll out your own workshop in your
 <a href="https://github.com/railsgirls/railsgirls.github.io" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/railsgirls/railsgirls.github.io"><strong>railsgirls/railsgirls.github.io</strong><br />
 <em>The purpose of Rails Girls is to give tools for women to understand technology. The Rails Girls events do this by…</em>github.com</a><a href="https://github.com/railsgirls/railsgirls.github.io" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### railsbridge/docs
 
@@ -57,7 +56,7 @@ Each subproject (a “site”) comprises files stored under the “sites” dire
 <a href="https://github.com/railsbridge/docs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/railsbridge/docs"><strong>railsbridge/docs</strong><br />
 <em>This is a Sinatra app, deployed at http://docs.railsbridge.org. The RailsBridge documentation project is home to a few…</em>github.com</a><a href="https://github.com/railsbridge/docs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### freeCodeCamp/freeCodeCamp
 
@@ -70,7 +69,7 @@ Our full-stack web development and machine learning curriculum is completely fre
 <a href="https://github.com/freeCodeCamp/freeCodeCamp" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/freeCodeCamp/freeCodeCamp"><strong>freeCodeCamp/freeCodeCamp</strong><br />
 <em>freeCodeCamp.org is a friendly community where you can learn to code for free. It is run by a donor-supported 501(c)(3)…</em>github.com</a><a href="https://github.com/freeCodeCamp/freeCodeCamp" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### leachim6/hello-world
 
@@ -87,7 +86,7 @@ Make sure to see <a href="https://github.com/leachim6/hello-world/blob/master/co
 <a href="https://github.com/leachim6/hello-world" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/leachim6/hello-world"><strong>leachim6/hello-world</strong><br />
 <em>Hello World in every computer language. As I watch the collection expand, this project has blown up more than I ever…</em>github.com</a><a href="https://github.com/leachim6/hello-world" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### datasciencemasters/go
 
@@ -125,7 +124,7 @@ The open-source curriculum for learning Data Science. Foundational in both theor
 <a href="https://github.com/datasciencemasters/go" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/datasciencemasters/go"><strong>datasciencemasters/go</strong><br />
 <em>The open-source curriculum for learning Data Science. Foundational in both theory and technologies, the OSDSM breaks…</em>github.com</a><a href="https://github.com/datasciencemasters/go" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### tuvtran/project-based-learning
 
@@ -136,7 +135,7 @@ A list of programming tutorials in which learners build an application from scra
 <a href="https://github.com/tuvtran/project-based-learning" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/tuvtran/project-based-learning"><strong>tuvtran/project-based-learning</strong><br />
 <em>A list of programming tutorials in which learners build an application from scratch. These tutorials are divided into…</em>github.com</a><a href="https://github.com/tuvtran/project-based-learning" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### zhiwehu/Python-programming-exercises
 
@@ -152,7 +151,7 @@ A list of programming tutorials in which learners build an application from scra
 <a href="https://github.com/zhiwehu/Python-programming-exercises" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/zhiwehu/Python-programming-exercises"><strong>zhiwehu/Python-programming-exercises</strong><br />
 <em>100+ Python challenge programming exercises. https://github.com/zhiwehu/100_plus_Python_Projects_Challenge Hey guys I…</em>github.com</a><a href="https://github.com/zhiwehu/Python-programming-exercises" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### MunGell/awesome-for-beginners
 
@@ -171,7 +170,7 @@ If you are not a programmer but would like to contribute, check out the <a href=
 <a href="https://github.com/MunGell/awesome-for-beginners" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/MunGell/awesome-for-beginners"><strong>MunGell/awesome-for-beginners</strong><br />
 <em>A list of awesome beginners-friendly projects. Contribute to MunGell/awesome-for-beginners development by creating an…</em>github.com</a><a href="https://github.com/MunGell/awesome-for-beginners" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### appacademy/welcome-to-open
 
@@ -187,12 +186,12 @@ With App Academy Open you’ll get free access to App Academy’s entire in-pers
 
 Navigate to <a href="https://open.appacademy.io/" class="markup--anchor markup--p-anchor">App Academy Open</a> and sign up for a free account. All you’ll need to provide is your email address and name. You’ll be redirected to our learning platform where you’ll be starting your first lesson immediately.
 
-The rest of the courses from our legendary Full-Stack curriculum are available to you from the moment you sign up. To switch, simply click the ‘Course Outline’ at the top of the page. The menu should have a ‘Switch’ button which will list all available courses.
+The rest of the courses from our legendary Full-Stack curriculum are available to you from the moment you sign up. To switch, simply click the 'Course Outline’ at the top of the page. The menu should have a 'Switch’ button which will list all available courses.
 
 <a href="https://github.com/appacademy/welcome-to-open" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/appacademy/welcome-to-open"><strong>appacademy/welcome-to-open</strong><br />
 <em>tl;dr: click here to learn to code for free With App Academy Open you'll get free access to App Academy's entire…</em>github.com</a><a href="https://github.com/appacademy/welcome-to-open" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### webgems/webgems
 
@@ -203,19 +202,19 @@ This project should help anyone to find new resources but especially beginners i
 <a href="https://github.com/lostdesign/webgems" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/lostdesign/webgems"><strong>lostdesign/webgems</strong><br />
 <em>A curated list of resources for devs and designers. Join me on devcord.com if you are up for a chit chat :) Permalink…</em>github.com</a><a href="https://github.com/lostdesign/webgems" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### kamranahmedse/developer-roadmap
 
 ### Purpose of these Roadmaps
 
-> *The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would be better suited for some cases than the other and remember hip and trendy never means best suited for the job.*
+> _The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would be better suited for some cases than the other and remember hip and trendy never means best suited for the job._
 
 ### Note to Beginners
 
-> *These roadmaps cover everything that is there to learn for the paths listed below. Don’t feel overwhelmed, you don’t need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will* <a href="https://roadmap.sh/" class="markup--anchor markup--blockquote-anchor"><em>release it soon</em></a> *after we are done with the 2021 release of the Backend and DevOps roadmaps.*
+> _These roadmaps cover everything that is there to learn for the paths listed below. Don’t feel overwhelmed, you don’t need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will_ <a href="https://roadmap.sh/" class="markup--anchor markup--blockquote-anchor"><em>release it soon</em></a> _after we are done with the 2021 release of the Backend and DevOps roadmaps._
 
-------------------------------------------------------------------------
+---
 
 If you think that these can be improved in any way, please do suggest.
 
@@ -228,7 +227,7 @@ If you think that these can be improved in any way, please do suggest.
 <a href="https://github.com/kamranahmedse/developer-roadmap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/kamranahmedse/developer-roadmap"><strong>kamranahmedse/developer-roadmap</strong><br />
 <em>Roadmap to becoming a web developer in 2021 Below you find a set of charts demonstrating the paths that you can take…</em>github.com</a><a href="https://github.com/kamranahmedse/developer-roadmap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### AMAI-GmbH/AI-Expert-Roadmap
 
@@ -255,14 +254,14 @@ The purpose of these roadmaps is to give you an idea about the landscape and to 
 <a href="https://github.com/AMAI-GmbH/AI-Expert-Roadmap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/AMAI-GmbH/AI-Expert-Roadmap"><strong>AMAI-GmbH/AI-Expert-Roadmap</strong><br />
 <em>Roadmap to becoming an Artificial Intelligence Expert in 2021 Below you find a set of charts demonstrating the paths…</em>github.com</a><a href="https://github.com/AMAI-GmbH/AI-Expert-Roadmap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### trekhleb/javascript-algorithms
 
 <a href="https://github.com/trekhleb/javascript-algorithms" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/trekhleb/javascript-algorithms"><strong>trekhleb/javascript-algorithms</strong><br />
 <em>This repository contains JavaScript based examples of many popular algorithms and data structures. Each algorithm and…</em>github.com</a><a href="https://github.com/trekhleb/javascript-algorithms" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### My personal Contribution:
 
@@ -283,18 +282,18 @@ The purpose of these roadmaps is to give you an idea about the landscape and to 
 
 here’s a list of what’s covered
 
-------------------------------------------------------------------------
+---
 
 ### Microsoft/web-dev-for-beginners
 
 ### Web Development for Beginners — A Curriculum
 
-Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and HTML basics. Each lesson includes pre- and post-lesson quizzes, written instructions to complete the lesson, a solution, an assignment and more. Our project-based pedagogy allows you to learn while building, a proven way for new skills to ‘stick’.
+Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and HTML basics. Each lesson includes pre- and post-lesson quizzes, written instructions to complete the lesson, a solution, an assignment and more. Our project-based pedagogy allows you to learn while building, a proven way for new skills to 'stick’.
 
 <a href="https://github.com/microsoft/Web-Dev-For-Beginners" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/microsoft/Web-Dev-For-Beginners"><strong>microsoft/Web-Dev-For-Beginners</strong><br />
 <em>Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and…</em>github.com</a><a href="https://github.com/microsoft/Web-Dev-For-Beginners" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### karan/Projects
 
@@ -315,7 +314,7 @@ You can find implementations of these projects in many other languages by other 
 <a href="https://github.com/karan/Projects" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/karan/Projects"><strong>karan/Projects</strong><br />
 <em>A list of practical projects that anyone can solve in any programming language (See solutions). These projects are…</em>github.com</a><a href="https://github.com/karan/Projects" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### sindresorhus/awesome
 
@@ -336,7 +335,7 @@ This badge is for Awesome lists.
 <a href="https://github.com/sindresorhus/awesome" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/sindresorhus/awesome"><strong>sindresorhus/awesome</strong><br />
 <em>What is an awesome list? Contribution guide Creating a list Twitter Stickers &amp; t-shirts Just type to go here. Check out…</em>github.com</a><a href="https://github.com/sindresorhus/awesome" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### donnemartin/system-design-primer
 
@@ -344,9 +343,9 @@ This badge is for Awesome lists.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*_kFGBEcaXcLzTweK.png" class="graf-image" /></figure>### Motivation
 
-> *Learn how to design large-scale systems.*
+> _Learn how to design large-scale systems._
 
-> *Prep for the system design interview.*
+> _Prep for the system design interview._
 
 ### Learn how to design large-scale systems
 
@@ -371,7 +370,7 @@ Practice common system design interview questions and compare your results with 
 <a href="https://github.com/donnemartin/system-design-primer" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/donnemartin/system-design-primer"><strong>donnemartin/system-design-primer</strong><br />
 <em>Learn how to design large-scale systems. Prep for the system design interview. Learning how to design scalable systems…</em>github.com</a><a href="https://github.com/donnemartin/system-design-primer" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### danistefanovic/build-your-own-x
 
@@ -409,7 +408,7 @@ Practice common system design interview questions and compare your results with 
 
 ### Tutorials
 
-#### Build your own `3D Renderer`
+#### Build your own `3D Renderer`
 
 -   <span id="fc13"><a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work" class="markup--anchor markup--li-anchor">C++: <em>Introduction to Ray Tracing: a Simple Method for Creating 3D Images</em></a></span>
 -   <span id="0ce6"><a href="https://github.com/ssloy/tinyrenderer/wiki" class="markup--anchor markup--li-anchor">C++: <em>How OpenGL works: software rendering in 500 lines of code</em></a></span>
@@ -425,13 +424,13 @@ Practice common system design interview questions and compare your results with 
 <a href="https://github.com/danistefanovic/build-your-own-x" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/danistefanovic/build-your-own-x"><strong>danistefanovic/build-your-own-x</strong><br />
 <em>🤓 Build your own (insert technology here). Contribute to danistefanovic/build-your-own-x development by creating an…</em>github.com</a><a href="https://github.com/danistefanovic/build-your-own-x" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### public-apis/public-apis
 
 ### Public APIs
 
-*A collective list of free APIs for use in software and web development.*
+_A collective list of free APIs for use in software and web development._
 
 A public API for this project can be found <a href="https://github.com/davemachado/public-api" class="markup--anchor markup--p-anchor">here</a>!
 
@@ -442,7 +441,7 @@ NOTE: A passing build status indicates all listed APIs are available since the l
 <a href="https://github.com/public-apis/public-apis" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/public-apis/public-apis"><strong>public-apis/public-apis</strong><br />
 <em>A collective list of free APIs. Contribute to public-apis/public-apis development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/public-apis/public-apis" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### EbookFoundation/free-programming-books
 
@@ -459,7 +458,7 @@ The <a href="https://ebookfoundation.org/" class="markup--anchor markup--p-ancho
 <a href="https://github.com/EbookFoundation/free-programming-books" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/EbookFoundation/free-programming-books"><strong>EbookFoundation/free-programming-books</strong><br />
 <em>This page is available as an easy-to-read website at https://ebookfoundation.github.io/. This list was originally a…</em>github.com</a><a href="https://github.com/EbookFoundation/free-programming-books" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### amitness/learning
 
@@ -528,7 +527,7 @@ The <a href="https://ebookfoundation.org/" class="markup--anchor markup--p-ancho
 <a href="https://github.com/amitness/learning" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/amitness/learning"><strong>amitness/learning</strong><br />
 <em>Becoming better at data science every day. Contribute to amitness/learning development by creating an account on…</em>github.com</a><a href="https://github.com/amitness/learning" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### mhinz/vim-galore
 
@@ -570,7 +569,7 @@ Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0" class="m
 <a href="https://github.com/mhinz/vim-galore" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/mhinz/vim-galore"><strong>mhinz/vim-galore</strong><br />
 <em>Vim is a text editor with a long line of ancestors that goes back to qed. Bram Moolenaar released it in 1991. The…</em>github.com</a><a href="https://github.com/mhinz/vim-galore" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### tayllan/awesome-algorithms
 
@@ -592,7 +591,7 @@ If you want to contribute, please read the <a href="https://github.com/tayllan/a
 <a href="https://github.com/tayllan/awesome-algorithms" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/tayllan/awesome-algorithms"><strong>tayllan/awesome-algorithms</strong><br />
 <em>A curated list of awesome places to learn and/or practice algorithms. Inspired by awesome-awesomeness and all the other…</em>github.com</a><a href="https://github.com/tayllan/awesome-algorithms" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### karlhorky/learn-to-program
 
@@ -609,78 +608,78 @@ This list aims to be a curated set of high quality educational resources. The av
 #### <a href="https://webmaker.org/" class="markup--anchor markup--h4-anchor">Mozilla Webmaker</a>
 
 Free community and toolset to learn to create web pages and apps  
-*(HTML, CSS, JavaScript?)*
+_(HTML, CSS, JavaScript?)_
 
 #### <a href="https://www.codecademy.com/" class="markup--anchor markup--h4-anchor">Codecademy</a>
 
 Free platform for learning to code in web technologies  
-*(HTML, CSS, JavaScript, jQuery, Python, Ruby, Rails, PHP)*
+_(HTML, CSS, JavaScript, jQuery, Python, Ruby, Rails, PHP)_
 
 #### <a href="https://www.khanacademy.org/hourofcode" class="markup--anchor markup--h4-anchor">Khan Academy’s Hour of Code</a>
 
 Free interactive 1-hour course to learn the very basics of web development  
-*(HTML, CSS, JavaScript, SQL)*
+_(HTML, CSS, JavaScript, SQL)_
 
 #### <a href="https://learn.upleveled.io/" class="markup--anchor markup--h4-anchor">UpLeveled Bootcamp Prep Course</a>
 
 Freemium platform for learning the basics of web development  
-*(HTML, CSS, JavaScript, Node.js, Git, GitHub)*
+_(HTML, CSS, JavaScript, Node.js, Git, GitHub)_
 
 #### <a href="https://teamtreehouse.com/" class="markup--anchor markup--h4-anchor">Treehouse</a>
 
 Paid platform for courses how to build websites & apps  
-*(Web Design, Front End Web Development, Rails, iOS, Android, PHP)*
+_(Web Design, Front End Web Development, Rails, iOS, Android, PHP)_
 
 #### <a href="https://learnlayout.com/" class="markup--anchor markup--h4-anchor">Learn CSS Layout</a>
 
 Free tutorial for how to do layout with CSS  
-*(CSS)*
+_(CSS)_
 
 #### Udemy <a href="https://www.udemy.com/courses/search/?q=programming" class="markup--anchor markup--h4-anchor">Programming</a>, <a href="https://www.udemy.com/courses/Development/" class="markup--anchor markup--h4-anchor">Development</a>
 
 Freemium marketplace of courses from third party providers. Quality may vary.  
-*(HTML, CSS, JavaScript, Ruby, Rails, Python, iOS, Android)*
+_(HTML, CSS, JavaScript, Ruby, Rails, Python, iOS, Android)_
 
 #### <a href="https://www.codeavengers.com/" class="markup--anchor markup--h4-anchor">Code Avengers</a>
 
 Freemium platform for basic web and app develoment courses  
-*(HTML, CSS, JavaScript)*
+_(HTML, CSS, JavaScript)_
 
 #### <a href="https://learn.shayhowe.com/" class="markup--anchor markup--h4-anchor">learn.shayhowe.com</a>
 
 Free beginner to intermediate guides on web development  
-*(HTML, CSS, JavaScript)*
+_(HTML, CSS, JavaScript)_
 
 #### <a href="https://www.htmldog.com/" class="markup--anchor markup--h4-anchor">HTML Dog</a>
 
 Free beginner and intermediate guides on web development  
-*(HTML, CSS, JavaScript)*
+_(HTML, CSS, JavaScript)_
 
 #### Degreed <a href="https://degreed.com/learning/web%20development" class="markup--anchor markup--h4-anchor">Web Development</a>, <a href="https://degreed.com/learning/programming" class="markup--anchor markup--h4-anchor">Programming</a>
 
 Mixed directory of courses, videos and other learning resources for web development and programming. Quality may vary.  
-*(HTML, CSS, JavaScript, AngularJS, Rails)*
+_(HTML, CSS, JavaScript, AngularJS, Rails)_
 
 #### <a href="https://courses.platzi.com/" class="markup--anchor markup--h4-anchor">Platzi</a>
 
 Free Platform for classes on Design, Marketing, Startup and Code. Learn the future of the web.  
-*(RethinkDB, SailsJs, NodeJS, Git, Startup Class, etc)*
+_(RethinkDB, SailsJs, NodeJS, Git, Startup Class, etc)_
 
 #### <a href="https://www.freecodecamp.org/" class="markup--anchor markup--h4-anchor">Free Code Camp</a>
 
 Free Learn to code and help nonprofits. An open source community of people who learn to code and help nonprofits.  
-*(HTML, CSS, JavaScript, Databases, Git & GitHub, Node.js, React.js, D3.js)*
+_(HTML, CSS, JavaScript, Databases, Git & GitHub, Node.js, React.js, D3.js)_
 
 <a href="https://github.com/karlhorky/learn-to-program" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/karlhorky/learn-to-program"><strong>karlhorky/learn-to-program</strong><br />
 <em>Foundation in Web Development The Internet is filled with an ever-expanding number of courses, books and guides for…</em>github.com</a><a href="https://github.com/karlhorky/learn-to-program" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### therebelrobot/awesome-workshopper
 
 ### awesome-workshopper
 
-*alternatively, awesome-adventure*
+_alternatively, awesome-adventure_
 
 A list of workshopper/adventure-based tutorials for various things. Inspired by awesome. These are terminal-based guides to learning a new programming concept. Here’s an example screenshot from rvagg’s <a href="https://github.com/workshopper/learnyounode" class="markup--anchor markup--p-anchor">learnyounode</a>:
 
@@ -689,13 +688,13 @@ A list of workshopper/adventure-based tutorials for various things. Inspired by 
 <a href="https://github.com/therebelrobot/awesome-workshopper" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/therebelrobot/awesome-workshopper"><strong>therebelrobot/awesome-workshopper</strong><br />
 <em>A list of workshopper/adventure-based tutorials for various things. Inspired by awesome. These are terminal-based…</em>github.com</a><a href="https://github.com/therebelrobot/awesome-workshopper" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### jlevy/the-art-of-command-line
 
 ### The Art of Command Line
 
-*Note: I’m planning to revise this and looking for a new co-author to help with expanding this into a more comprehensive guide. While it’s very popular, it could be broader and a bit deeper. If you like to write and are close to being an expert on this material and willing to consider helping, please drop me a note at josh (0x40) holloway.com. –*<a href="https://github.com/jlevy" class="markup--anchor markup--p-anchor"><em>jlevy</em></a>*,* <a href="https://www.holloway.com/" class="markup--anchor markup--p-anchor"><em>Holloway</em></a>*. Thank you!*
+_Note: I’m planning to revise this and looking for a new co-author to help with expanding this into a more comprehensive guide. While it’s very popular, it could be broader and a bit deeper. If you like to write and are close to being an expert on this material and willing to consider helping, please drop me a note at josh (0x40) holloway.com. –_<a href="https://github.com/jlevy" class="markup--anchor markup--p-anchor"><em>jlevy</em></a>_,_ <a href="https://www.holloway.com/" class="markup--anchor markup--p-anchor"><em>Holloway</em></a>_. Thank you!_
 
 -   <span id="714a"><a href="https://github.com/jlevy/the-art-of-command-line#meta" class="markup--anchor markup--li-anchor">Meta</a></span>
 -   <span id="eb25"><a href="https://github.com/jlevy/the-art-of-command-line#basics" class="markup--anchor markup--li-anchor">Basics</a></span>
@@ -716,20 +715,20 @@ This work is the result of <a href="https://github.com/jlevy/the-art-of-command-
 <a href="https://github.com/jlevy/the-art-of-command-line" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/jlevy/the-art-of-command-line"><strong>jlevy/the-art-of-command-line</strong><br />
 <em>Master the command line, in one page. Contribute to jlevy/the-art-of-command-line development by creating an account on…</em>github.com</a><a href="https://github.com/jlevy/the-art-of-command-line" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### papers-we-love/papers-we-love
 
-Papers We Love (*PWL*) is a community built around reading, discussing and learning more about academic computer science papers. This repository serves as a directory of some of the best papers the community can find, bringing together documents scattered across the web. You can also visit the <a href="http://paperswelove.org/" class="markup--anchor markup--p-anchor">Papers We Love site</a> for more info.
+Papers We Love (_PWL_) is a community built around reading, discussing and learning more about academic computer science papers. This repository serves as a directory of some of the best papers the community can find, bringing together documents scattered across the web. You can also visit the <a href="http://paperswelove.org/" class="markup--anchor markup--p-anchor">Papers We Love site</a> for more info.
 
 Due to <a href="https://github.com/papers-we-love/papers-we-love/blob/master/.github/CONTRIBUTING.md#respect-content-licenses" class="markup--anchor markup--p-anchor">licenses</a> we cannot always host the papers themselves (when we do, you will see a 📜 emoji next to its title in the directory README) but we can provide links to their locations.
 
-If you enjoy the papers, perhaps stop by a local chapter meetup and join in on the vibrant discussions around them. You can also discuss *PWL* events, the content in this repository, and/or anything related to *PWL* on our <a href="https://paperswelove.slack.com/messages/general/" class="markup--anchor markup--p-anchor">Slack</a>, after <a href="http://papersweloveslack.herokuapp.com/" class="markup--anchor markup--p-anchor">signing-up</a> to join it, or on our *\#paperswelove* IRC channel on freenode.
+If you enjoy the papers, perhaps stop by a local chapter meetup and join in on the vibrant discussions around them. You can also discuss _PWL_ events, the content in this repository, and/or anything related to _PWL_ on our <a href="https://paperswelove.slack.com/messages/general/" class="markup--anchor markup--p-anchor">Slack</a>, after <a href="http://papersweloveslack.herokuapp.com/" class="markup--anchor markup--p-anchor">signing-up</a> to join it, or on our _\#paperswelove_ IRC channel on freenode.
 
 <a href="https://github.com/papers-we-love/papers-we-love" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/papers-we-love/papers-we-love"><strong>papers-we-love/papers-we-love</strong><br />
 <em>Papers We Love ( PWL) is a community built around reading, discussing and learning more about academic computer science…</em>github.com</a><a href="https://github.com/papers-we-love/papers-we-love" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### awesome-selfhosted/awesome-selfhosted
 
@@ -744,7 +743,7 @@ See <a href="https://github.com/awesome-selfhosted/awesome-selfhosted/blob/maste
 <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/awesome-selfhosted/awesome-selfhosted"><strong>awesome-selfhosted/awesome-selfhosted</strong><br />
 <em>A list of Free Software network services and web applications which can be hosted on your own servers …</em>github.com</a><a href="https://github.com/awesome-selfhosted/awesome-selfhosted" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### ripienaar/free-for-dev
 
@@ -758,12 +757,12 @@ The scope of this particular list is limited to things that infrastructure devel
 
 This list is the result of Pull Requests, reviews, ideas and work done by 900+ people. You too can help by sending <a href="https://github.com/ripienaar/free-for-dev" class="markup--anchor markup--p-anchor">Pull Requests</a> to add more services or by remove ones whose offerings have changed or been retired.
 
-*NOTE:* This list is only for as-a-Service offerings, not for self-hosted software. For a service to be eligible it has to offer a free tier and not just a free trial. If the free tier is time-bucketed it has to be for at least a year. We also consider the free tier from a security perspective, so SSO is fine but I will not accept services that restrict TLS to paid-only tiers.
+_NOTE:_ This list is only for as-a-Service offerings, not for self-hosted software. For a service to be eligible it has to offer a free tier and not just a free trial. If the free tier is time-bucketed it has to be for at least a year. We also consider the free tier from a security perspective, so SSO is fine but I will not accept services that restrict TLS to paid-only tiers.
 
 <a href="https://github.com/ripienaar/free-for-dev" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/ripienaar/free-for-dev"><strong>ripienaar/free-for-dev</strong><br />
 <em>Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to…</em>github.com</a><a href="https://github.com/ripienaar/free-for-dev" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### gothinkster/realworld
 
@@ -771,11 +770,11 @@ This list is the result of Pull Requests, reviews, ideas and work done by 900+ p
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*OGbTycPsogJHNqrZ.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*u2EbjIkzp7eZwBtY.png" class="graf-image" /></figure>### See how the exact same Medium.com clone (called <a href="https://demo.realworld.io/" class="markup--anchor markup--h3-anchor">Conduit</a>) is built using different <a href="https://codebase.show/projects/realworld?category=frontend" class="markup--anchor markup--h3-anchor">frontends</a> and <a href="https://codebase.show/projects/realworld?category=backend" class="markup--anchor markup--h3-anchor">backends</a>. Yes, you can mix and match them, because they all adhere to the same <a href="https://github.com/gothinkster/realworld/blob/master/spec" class="markup--anchor markup--h3-anchor">API spec</a> 😮😎
 
-While most “todo” demos provide an excellent cursory glance at a framework’s capabilities, they typically don’t convey the knowledge & perspective required to actually build *real* applications with it.
+While most “todo” demos provide an excellent cursory glance at a framework’s capabilities, they typically don’t convey the knowledge & perspective required to actually build _real_ applications with it.
 
 RealWorld solves this by allowing you to choose any frontend (React, Angular 2, & more) and any backend (Node, Django, & more) and see how they power a real world, beautifully designed fullstack app called “<a href="https://demo.realworld.io/" class="markup--anchor markup--p-anchor">Conduit</a>”.
 
-*Read the* <a href="https://medium.com/@ericsimons/introducing-realworld-6016654d36b5" class="markup--anchor markup--p-anchor"><em>full blog post announcing RealWorld on Medium.</em></a>
+_Read the_ <a href="https://medium.com/@ericsimons/introducing-realworld-6016654d36b5" class="markup--anchor markup--p-anchor"><em>full blog post announcing RealWorld on Medium.</em></a>
 
 ### Implementations
 
@@ -817,7 +816,7 @@ Forks, tutorials, workshops, and other resources based on the RealWorld project:
 <a href="https://github.com/gothinkster/realworld" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/gothinkster/realworld"><strong>gothinkster/realworld</strong><br />
 <em>"The mother of all demo apps" - Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many…</em>github.com</a><a href="https://github.com/gothinkster/realworld" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### thedaviddias/Front-End-Checklist
 
@@ -832,7 +831,7 @@ Other Checklists:
 
 It is based on Front-End developers’ years of experience, with the additions coming from some other open-source checklists.
 
-------------------------------------------------------------------------
+---
 
 ### How to use?
 
@@ -848,12 +847,12 @@ Some resources possess an emoticon to help you understand which type of content 
 -   <span id="108b">🛠: online tool / testing tool</span>
 -   <span id="a16f">📹: media or video content</span>
 
-> *You can contribute to the* Front-End Checklist App *reading the* <a href="https://github.com/thedaviddias/Front-End-Checklist/blob/master/CONTRIBUTING.md" class="markup--anchor markup--blockquote-anchor"><em>CONTRIBUTING.md file</em></a> *which explains everything about the project.*
+> _You can contribute to the_ Front-End Checklist App _reading the_ <a href="https://github.com/thedaviddias/Front-End-Checklist/blob/master/CONTRIBUTING.md" class="markup--anchor markup--blockquote-anchor"><em>CONTRIBUTING.md file</em></a> _which explains everything about the project._
 
 <a href="https://github.com/thedaviddias/Front-End-Checklist" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/thedaviddias/Front-End-Checklist"><strong>thedaviddias/Front-End-Checklist</strong><br />
 <em>The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your website…</em>github.com</a><a href="https://github.com/thedaviddias/Front-End-Checklist" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### Level Up Coding
 

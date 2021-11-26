@@ -1,9 +1,8 @@
-React State
-===========
+# React State
 
 Demystified
 
-------------------------------------------------------------------------
+---
 
 ### React State
 
@@ -85,7 +84,7 @@ Demystified
 
 **When to use state**
 
--   <span id="0936">*Only Use State when it is absolutely necessary*</span>
+-   <span id="0936">_Only Use State when it is absolutely necessary_</span>
 -   <span id="2052">If the data never changes, or if it’s needed through an entire application use props instead.</span>
 -   <span id="04ff">State is more often used when creating components that retrieve data from APIs or render forms.</span>
 -   <span id="5a9f">**The general rule of thumb**: If a component doesn’t need to use state or Lifecyle methods, it should be prioritized as a `function component`.</span>
@@ -279,7 +278,7 @@ Demystified
       document.getElementById('root');
     )
 
--   <span id="c3f2">One thing to note about this workaround is that the caller of the component *must* set the quotes prop or the component will throw an error =&gt; so use `defaultProps`!</span>
+-   <span id="c3f2">One thing to note about this workaround is that the caller of the component _must_ set the quotes prop or the component will throw an error =&gt; so use `defaultProps`!</span>
 
 <!-- -->
 
@@ -457,7 +456,7 @@ Demystified
 
 ### Forms in React
 
-*Exercise being done in a separate file*
+_Exercise being done in a separate file_
 
 **Random Notes**
 
@@ -501,7 +500,7 @@ Demystified
 
 -   <span id="588f">Server-side validation is not optional.</span>
 -   <span id="e35c">Tech-savvy users can manipulate client-side validations.</span>
--   <span id="03da">Sometimes the ‘best approach’ is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
+-   <span id="03da">Sometimes the 'best approach’ is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
 
 ### Component Lifecycle
 
@@ -547,12 +546,12 @@ Demystified
 **Avoiding the legacy lifecycle methods**
 
 -   <span id="732f">Occasionally you will encounter some deprecated lifecycle methods:</span>
--   <span id="fb04">UNSAFE\_componentWillMount</span>
--   <span id="5f6e">UNSAFE\_componentWillReceiveProps</span>
--   <span id="b7aa">UNSAFE\_componentWillUpdate</span>
+-   <span id="fb04">UNSAFE_componentWillMount</span>
+-   <span id="5f6e">UNSAFE_componentWillReceiveProps</span>
+-   <span id="b7aa">UNSAFE_componentWillUpdate</span>
 -   <span id="6277">Just know they will be removed soon from React’s API…☮️</span>
 
-------------------------------------------------------------------------
+---
 
 ### React Docs:
 

@@ -1,9 +1,8 @@
-Getting Comfortable With Python:
-================================
+# Getting Comfortable With Python:
 
 An introduction by example
 
-------------------------------------------------------------------------
+---
 
 ### **Getting Comfortable With Python:**
 
@@ -25,18 +24,18 @@ An introduction by example
 <a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12"><strong>Notes I Wish I Had When I Started Learning Python</strong><br />
 <em>Plus resources for learning data structures and algorithms in python at the bottom of this article!</em>medium.com</a><a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### **Use a print statement**
 
 **Overview**
 
-Learning to use the print function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some *output* from your program. The print function is how you output the value of an object to the screen. You will learn how to use the print function in Python.
+Learning to use the print function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some _output_ from your program. The print function is how you output the value of an object to the screen. You will learn how to use the print function in Python.
 
 Using print with no arguments:
 
     >>> print()
-     
+
      >>>
 
 Note: the empty line after calling the print function. The default end value when calling print is the newline character \\\\n.
@@ -77,11 +76,11 @@ Using print with other object types:
      >>> print(False)
      False
      >>> print([“WebDevHub”, “School”, 2, 0, 2, 0])
-     [‘WebDevHub’, ‘School’, 2, 0, 2, 0]
+     ['WebDevHub’, 'School’, 2, 0, 2, 0]
      >>> print((“WebDevHub”, “School”))
-     (‘WebDevHub’, ‘School’)
+     ('WebDevHub’, 'School’)
      >>> print({“school”: “WebDevHub School”, “year”: 2021})
-     {‘school’: ‘WebDevHub School’, ‘year’: 2021}
+     {'school’: 'WebDevHub School’, 'year’: 2021}
      >>>
 
 Any object passed as an argument into print will get converted into a string type before outputted to the screen.
@@ -149,7 +148,7 @@ Whitespace is any character represented by something that appears empty (usually
 
     >>> import string
      >>> string.whitespace
-     ‘ \\t\\n\\r\\x0b\\x0c’
+     ' \\t\\n\\r\\x0b\\x0c’
      >>>
 
 Note: the characters are “ “ (space), \\\\t (tab), \\\\n (newline), \\\\r (return), \\\\x0b (unicode line tabulation), and \\\\x0c (unicode form feed).
@@ -163,11 +162,11 @@ Whitespace is used to denote the end of a logical line of code. In Python, a log
     >>> first = “WebDevHub”
      >>> second = “School”
      >>> first + second
-     ‘WebDevHubSchool’
+     'WebDevHubSchool’
      >>> first \\
      … + \\
      … second
-     ‘WebDevHubSchool’
+     'WebDevHubSchool’
      >>>
 
 Note: how the REPL evaluates the expression first + second when I return on line 3. Below that, I can write one logical line of code over multiple lines by ending each line with a \\\\ character. That \\\\ character lets the Python interpreter that even though there is a newline, you don’t want it to treat it as the end of a logical line.

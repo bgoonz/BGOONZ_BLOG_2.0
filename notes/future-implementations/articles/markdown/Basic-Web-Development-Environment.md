@@ -8,11 +8,7 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 #### Windows Subsystem for Linux (WSL) and Ubuntu
 
-‌
-
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" /></figure>Test if you have Ubuntu installed by typing “Ubuntu” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads **“Ubuntu 20.04 LTS”** with “App” under it, then you have it installed.
-
-‌
 
 1.  <span id="110a">In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”</span>
 2.  <span id="54fd">Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu</span>
@@ -23,13 +19,13 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 7.  <span id="74c1">Click the “Search” button in the upper-right corner of the window</span>
 8.  <span id="9d35">Type in “Ubuntu”</span>
 9.  <span id="4205">Click “Run Linux on Windows (Get the apps)”</span>
-10. <span id="1799">Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu’</span>
+10. <span id="1799">Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled 'Ubuntu’</span>
 11. <span id="edec">Click “Install”</span>
 12. <span id="2935">After it downloads, click “Launch”</span>
 13. <span id="a859">If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose “Pin to taskbar”</span>
 14. <span id="669c">When prompted to “Enter new UNIX username”, type your first name with no spaces</span>
 15. <span id="e9c1">When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)</span>
-16. <span id="4217">Confirm your installation by typing the command `whoami ‘as in who-am-i'`followed by Enter at the prompt (it should print your first name)</span>
+16. <span id="4217">Confirm your installation by typing the command `whoami 'as in who-am-i'`followed by Enter at the prompt (it should print your first name)</span>
 17. <span id="48fe">You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)</span>
 18. <span id="d12f">You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)</span>
 
@@ -46,13 +42,9 @@ Git comes with Ubuntu, so there’s nothing to install. However, you should conf
 
     $ git config --global credential.helper store
 
-‌
-
 ### Google Chrome
 
 Test if you have Chrome installed by typing “Chrome” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads “Chrome” with “App” under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
-
-‌
 
 1.  <span id="578c">Open Microsoft Edge, the blue “e” in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.</span>
 2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.</span>
@@ -78,21 +70,13 @@ You will often have to download a zip file and unzip it. It is easier to do this
 
 Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you're good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
 
-‌
-
 ### Python 3
 
 Ubuntu does not come with Python 3. Install it using the command `sudo apt install python3`. Test it by typing `python3 --version` and seeing it print a number.
 
-‌
-
 ### Note about WSL
 
-‌
-
 As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
-
-‌
 
 ### Some other common instillations
 

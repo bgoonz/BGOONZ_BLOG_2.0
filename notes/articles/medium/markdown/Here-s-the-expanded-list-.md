@@ -1,17 +1,16 @@
-Here’s the expanded list:
-=========================
+# Here’s the expanded list:
 
 https://github.com/igorbarinov/awesome-bitcoin
 
-------------------------------------------------------------------------
+---
 
 ### Here’s the expanded list:
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*W5ornP061IYuqINU" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 <a href="https://github.com/sindresorhus/awesome-nodejs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/sindresorhus/awesome-nodejs"><strong>GitHub - sindresorhus/awesome-nodejs: Delightful Node.js packages and resources</strong><br />
 <em>zap: Delightful Node.js packages and resources. Contribute to sindresorhus/awesome-nodejs development by creating an…</em>github.com</a><a href="https://github.com/sindresorhus/awesome-nodejs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -83,7 +82,7 @@ https://github.com/igorbarinov/awesome-bitcoin
 <em>A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources…</em>github.com</a><a href="https://github.com/donnemartin/awesome-aws" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/Awesome-Windows/Awesome" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/Awesome-Windows/Awesome"><strong>GitHub - Awesome-Windows/Awesome: 🎉 An awesome &amp; curated list of best applications and tools for…</strong><br />
-<em>An awesome &amp; curated list of best applications and tools for Windows. *Please, consider supporting my work as a lot of…</em>github.com</a><a href="https://github.com/Awesome-Windows/Awesome" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>An awesome &amp; curated list of best applications and tools for Windows. \*Please, consider supporting my work as a lot of…</em>github.com</a><a href="https://github.com/Awesome-Windows/Awesome" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/ipfs/awesome-ipfs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/ipfs/awesome-ipfs"><strong>GitHub - ipfs/awesome-ipfs: Useful resources for using IPFS and building things on top of it</strong><br />
 <em>Useful resources for using IPFS and building things on top of it This list is for projects, tools, or pretty much any…</em>github.com</a><a href="https://github.com/ipfs/awesome-ipfs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -398,7 +397,7 @@ https://github.com/igorbarinov/awesome-bitcoin
 <em>Tools Online. Contribute to lvwzhen/tools development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/lvwzhen/tools" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/awesome-css-group/awesome-css" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/awesome-css-group/awesome-css"><strong>GitHub - awesome-css-group/awesome-css: A curated contents of amazing CSS :)</strong><br />
-<em>A curated list of awesome frameworks, style guides, and other cool nuggets for writing amazing CSS. */ This document is…</em>github.com</a><a href="https://github.com/awesome-css-group/awesome-css" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>A curated list of awesome frameworks, style guides, and other cool nuggets for writing amazing CSS. \*/ This document is…</em>github.com</a><a href="https://github.com/awesome-css-group/awesome-css" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/addyosmani/critical-path-css-tools" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/addyosmani/critical-path-css-tools"><strong>GitHub - addyosmani/critical-path-css-tools: Tools to prioritize above-the-fold (critical-path) CSS</strong><br />
 <em>Tools to help prioritize above-the-fold CSS For best performance, PageSpeed Insights recommends inlining the critical…</em>github.com</a><a href="https://github.com/addyosmani/critical-path-css-tools" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -1445,7 +1444,7 @@ GeoJSON utilities that will make your life easier.github.com</a><a href="https:/
 <em>This is list of discounts on software (SaaS, PaaS, IaaS, etc.) and other offerings for developers who are students …</em>github.com</a><a href="https://github.com/AchoArnold/discount-for-student-dev" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/kyleterry/awesome-radio" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/kyleterry/awesome-radio"><strong>GitHub — kyleterry/awesome-radio: Awesome radio stuff</strong><br />
-<em>A curated list of awesome radio resources. Inspired by awesome-*. I recently pulled out my CB radio and installed it in…</em>github.com</a><a href="https://github.com/kyleterry/awesome-radio" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>A curated list of awesome radio resources. Inspired by awesome-\*. I recently pulled out my CB radio and installed it in…</em>github.com</a><a href="https://github.com/kyleterry/awesome-radio" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/sindresorhus/awesome" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/sindresorhus/awesome"><strong>GitHub — sindresorhus/awesome: 😎 Awesome lists about all kinds of interesting topics</strong><br />
 <em>😎 Awesome lists about all kinds of interesting topics — GitHub — sindresorhus/awesome: 😎 Awesome lists about all…</em>github.com</a><a href="https://github.com/sindresorhus/awesome" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

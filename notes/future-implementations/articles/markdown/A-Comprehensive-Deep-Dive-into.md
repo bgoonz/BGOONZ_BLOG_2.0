@@ -411,7 +411,7 @@ The Diffing Algorithm
 
     <div className=”before” title=”stuff” /> <div className=”after” title=”stuff” />
 
-    <div style={{ color: “red”, fontWeight: “bold” }} /> <div style={{color: ‘green’, fontWeight: ‘bold’}} />
+    <div style={{ color: “red”, fontWeight: “bold” }} /> <div style={{color: 'green’, fontWeight: 'bold’}} />
 
 -   <span id="0a0c">Component Elements Of The Same Type</span>
 -   <span id="cf3a">When components update, instances will remain the same, so that state maintains across renders.</span>
@@ -1048,7 +1048,7 @@ create Element equivalent
     }
 
 -   <span id="dbc1">We wrap what want to return in parenthesis so JS doesn’t auto add semi-colons after every line and run the code incorrectly.</span>
--   <span id="62c0">Just remember if you decided to use the return keyword in a function to ‘return some JSX’, then make sure you wrap the JSX in parenthesis.</span>
+-   <span id="62c0">Just remember if you decided to use the return keyword in a function to 'return some JSX’, then make sure you wrap the JSX in parenthesis.</span>
 
 ---
 
@@ -1716,7 +1716,7 @@ Note About Client-side vs server-side validation
 
 -   <span id="5808">Server-side validation is not optional.</span>
 -   <span id="3bb8">Tech-savvy users can manipulate client-side validations.</span>
--   <span id="311f">Sometimes the ‘best approach’ is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
+-   <span id="311f">Sometimes the 'best approach’ is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
 
 ---
 
@@ -2750,7 +2750,7 @@ Configuration based tools allow you to create your build tasks by declaring (usu
 
 <a href="https://gruntjs.com/" class="markup--anchor markup--p-anchor">Grunt</a> is a JSON configuration based task runner that can be used to orchestrate the various tasks that make up your front-end build. Grunt was very quickly supplanted by <a href="https://gulpjs.com/" class="markup--anchor markup--p-anchor">Gulp</a>, which allowed developers to write JavaScript to define front-end build tasks. After Gulp, the front-end tooling landscape became a bit more muddled. Some developers preferred the simplicity of using <a href="https://docs.npmjs.com/misc/scripts" class="markup--anchor markup--p-anchor">npm scripts</a> to define build tasks while others preferred the power of configuration based bundlers like <a href="https://webpack.js.org/" class="markup--anchor markup--p-anchor">webpack</a>.
 
-### Babel and webpack (yes, that’s intentionally a lowercase ‘w’)
+### Babel and webpack (yes, that’s intentionally a lowercase 'w’)
 
 As front-end or client-side applications grew in complexity, developers found themselves wanting to leverage more advanced JavaScript features and newer syntax like classes, arrow functions, destructuring, async/await, etc. Using a code transpiler, like <a href="https://babeljs.io/" class="markup--anchor markup--p-anchor">Babel</a>, allows you to use all of the latest and greatest features and syntax without worrying about what browsers support what.
 

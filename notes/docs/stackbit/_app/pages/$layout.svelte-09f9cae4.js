@@ -52,67 +52,69 @@ function U(e, t, s) {
     a(e, P, (e) => s(1, (l = e)));
     const o =
         'undefined' != typeof window && 'www.gitpod.io' === window.location.hostname ? '5aJzy2ASNbqx8I0kwppRflDZpL7pS1GO' : 'Xe5zR3MbnyxHsveZr4HvrY35PL9iT0EH';
-    return r(async () => {
-        const e = (window.analytics = window.analytics || []);
-        if (!e.initialize)
-            if (e.invoked) window.console && console.error && console.error('Segment snippet included twice.');
-            else {
-                (e.invoked = !0),
-                    (e.methods = [
-                        'trackSubmit',
-                        'trackClick',
-                        'trackLink',
-                        'trackForm',
-                        'pageview',
-                        'identify',
-                        'reset',
-                        'group',
-                        'track',
-                        'ready',
-                        'alias',
-                        'debug',
-                        'page',
-                        'once',
-                        'off',
-                        'on',
-                        'addSourceMiddleware',
-                        'addIntegrationMiddleware',
-                        'setAnonymousId',
-                        'addDestinationMiddleware'
-                    ]),
-                    (e.factory = t => {
-                        return (...args) => {
-                            const s = Array.prototype.slice.call(args);
-                            return s.unshift(t), e.push(s), e;
-                        };
+    return (
+        r(async () => {
+            const e = (window.analytics = window.analytics || []);
+            if (!e.initialize)
+                if (e.invoked) window.console && console.error && console.error('Segment snippet included twice.');
+                else {
+                    (e.invoked = !0),
+                        (e.methods = [
+                            'trackSubmit',
+                            'trackClick',
+                            'trackLink',
+                            'trackForm',
+                            'pageview',
+                            'identify',
+                            'reset',
+                            'group',
+                            'track',
+                            'ready',
+                            'alias',
+                            'debug',
+                            'page',
+                            'once',
+                            'off',
+                            'on',
+                            'addSourceMiddleware',
+                            'addIntegrationMiddleware',
+                            'setAnonymousId',
+                            'addDestinationMiddleware'
+                        ]),
+                        (e.factory = (t) => {
+                            return (...args) => {
+                                const s = Array.prototype.slice.call(args);
+                                return s.unshift(t), e.push(s), e;
+                            };
+                        });
+
+                    e.methods.forEach((s) => {
+                        e[s] = e.factory(s);
                     });
 
-                e.methods.forEach(s => {
-                    e[s] = e.factory(s);
-                });
-
-                (e.load = (t, s) => {
-                    const a = document.createElement('script');
-                    (a.type = 'text/javascript'), (a.async = !0), (a.src = `https://cdn.segment.com/analytics.js/v1/${t}/analytics.min.js`);
-                    const r = document.getElementsByTagName('script')[0];
-                    r.parentNode.insertBefore(a, r), (e._loadOptions = s);
-                }),
-                    (e._writeKey = o),
-                    (e.SNIPPET_VERSION = '4.13.2'),
-                    'undefined' == typeof navigator ||
-                    (1 !== parseInt(navigator.doNotTrack) &&
-                        1 !== parseInt(window.doNotTrack) &&
-                        1 !== parseInt(navigator.msDoNotTrack) &&
-                        'yes' !== navigator.doNotTrack)
-                        ? e.load(o)
-                        : (e.initialize = !0),
-                    e.page();
-            }
-    }),
-    (e.$$.update = () => {
-        3 & e.$$.dirty && (l.path, 'undefined' != typeof window && (null === s(0, (c = window.analytics)) || void 0 === c || c.page()));
-    }),
-    [c, l];
+                    (e.load = (t, s) => {
+                        const a = document.createElement('script');
+                        (a.type = 'text/javascript'), (a.async = !0), (a.src = `https://cdn.segment.com/analytics.js/v1/${t}/analytics.min.js`);
+                        const r = document.getElementsByTagName('script')[0];
+                        r.parentNode.insertBefore(a, r), (e._loadOptions = s);
+                    }),
+                        (e._writeKey = o),
+                        (e.SNIPPET_VERSION = '4.13.2'),
+                        'undefined' == typeof navigator ||
+                        (1 !== parseInt(navigator.doNotTrack) &&
+                            1 !== parseInt(window.doNotTrack) &&
+                            1 !== parseInt(navigator.msDoNotTrack) &&
+                            'yes' !== navigator.doNotTrack)
+                            ? e.load(o)
+                            : (e.initialize = !0),
+                        e.page();
+                }
+        }),
+        (e.$$.update = () => {
+            3 & e.$$.dirty && (l.path, 'undefined' != typeof window && (null === s(0, (c = window.analytics)) || void 0 === c || c.page()));
+        }),
+        [c, l]
+    );
 }
 class q extends e {
     constructor(e) {
@@ -299,23 +301,25 @@ function le(e, t, s) {
     a(e, P, (e) => s(5, (l = e)));
     let { navItem: c } = t;
     const { href: o, isHighlighted: n, label: i } = c;
-    return (e.$$set = (e) => {
-        'navItem' in e && s(4, (c = e.navItem));
-    }),
-    (e.$$.update = () => {
-        32 & e.$$.dirty && s(0, (r = '/' === l.path ? /\/$/.test(o) : o.includes(l.path)));
-    }),
-    [
-        r,
-        o,
-        n,
-        i,
-        c,
-        l,
-        t => {
-            b(e, t);
-        }
-    ];
+    return (
+        (e.$$set = (e) => {
+            'navItem' in e && s(4, (c = e.navItem));
+        }),
+        (e.$$.update = () => {
+            32 & e.$$.dirty && s(0, (r = '/' === l.path ? /\/$/.test(o) : o.includes(l.path)));
+        }),
+        [
+            r,
+            o,
+            n,
+            i,
+            c,
+            l,
+            (t) => {
+                b(e, t);
+            }
+        ]
+    );
 }
 class ce extends e {
     constructor(e) {
@@ -339,54 +343,55 @@ function ie(e) {
         u(v[e], 1, 1, () => {
             v[e] = null;
         });
-    return (a = new ae({})),
-    {
-        c() {
-            t = c('div');
-            for (let e = 0; e < v.length; e += 1) v[e].c();
-            (s = y()), E(a.$$.fragment), this.h();
-        },
-        l(e) {
-            t = o(e, 'DIV', { class: !0 });
-            const r = n(t);
-            for (let t = 0; t < v.length; t += 1) v[t].l(r);
-            (s = k(r)), I(a.$$.fragment, r), r.forEach(i), this.h();
-        },
-        h() {
-            f(t, 'class', 'nav-items absolute flex flex-col pt-10 pb-16 w-screen items-center bg-off-white space-y-xx-small z-10 shadow-md svelte-1aoyuzy');
-        },
-        m(e, l) {
-            h(e, t, l);
-            for (let s = 0; s < v.length; s += 1) v[s].m(t, null);
-            p(t, s), L(a, t, null), (r = !0);
-        },
-        p(e, a) {
-            if (3 & a) {
-                let r;
-                for (l = e[0], r = 0; r < l.length; r += 1) {
-                    const c = ne(e, l, r);
-                    v[r] ? (v[r].p(c, a), d(v[r], 1)) : ((v[r] = fe(c)), v[r].c(), d(v[r], 1), v[r].m(t, s));
+    return (
+        (a = new ae({})),
+        {
+            c() {
+                t = c('div');
+                for (let e = 0; e < v.length; e += 1) v[e].c();
+                (s = y()), E(a.$$.fragment), this.h();
+            },
+            l(e) {
+                t = o(e, 'DIV', { class: !0 });
+                const r = n(t);
+                for (let t = 0; t < v.length; t += 1) v[t].l(r);
+                (s = k(r)), I(a.$$.fragment, r), r.forEach(i), this.h();
+            },
+            h() {
+                f(t, 'class', 'nav-items absolute flex flex-col pt-10 pb-16 w-screen items-center bg-off-white space-y-xx-small z-10 shadow-md svelte-1aoyuzy');
+            },
+            m(e, l) {
+                h(e, t, l);
+                for (let s = 0; s < v.length; s += 1) v[s].m(t, null);
+                p(t, s), L(a, t, null), (r = !0);
+            },
+            p(e, a) {
+                if (3 & a) {
+                    let r;
+                    for (l = e[0], r = 0; r < l.length; r += 1) {
+                        const c = ne(e, l, r);
+                        v[r] ? (v[r].p(c, a), d(v[r], 1)) : ((v[r] = fe(c)), v[r].c(), d(v[r], 1), v[r].m(t, s));
+                    }
+                    for (D(), r = l.length; r < v.length; r += 1) g(r);
+                    N();
                 }
-                for (D(), r = l.length; r < v.length; r += 1) g(r);
-                N();
+            },
+            i(e) {
+                if (!r) {
+                    for (let e = 0; e < l.length; e += 1) d(v[e]);
+                    d(a.$$.fragment, e), (r = !0);
+                }
+            },
+            o(e) {
+                v = v.filter(Boolean);
+                for (let t = 0; t < v.length; t += 1) u(v[t]);
+                u(a.$$.fragment, e), (r = !1);
+            },
+            d(e) {
+                e && i(t), _(v, e), A(a);
             }
-        },
-        i(e) {
-            if (!r) {
-                for (let e = 0; e < l.length; e += 1) d(v[e]);
-                d(a.$$.fragment, e), (r = !0);
-            }
-        },
-        o(e) {
-            v = v.filter(Boolean);
-            for (let t = 0; t < v.length; t += 1) u(v[t]);
-            u(a.$$.fragment, e), (r = !1);
-        },
-        d(e) {
-            e && i(t), _(v, e), A(a);
         }
-    }
-;
+    );
 }
 function fe(e) {
     let t;
@@ -462,7 +467,7 @@ function ve(e, t, s) {
     a(e, oe, (e) => s(1, (l = e)));
     let { navItems: c = [] } = t;
     r(() => {
-        window.matchMedia('(min-width: 931px)').addEventListener('change', ({matches}) => {
+        window.matchMedia('(min-width: 931px)').addEventListener('change', ({ matches }) => {
             matches && (j(oe, (l = !1), l), M(!1));
         });
     });
@@ -669,79 +674,81 @@ function be(e) {
         u(z[e], 1, 1, () => {
             z[e] = null;
         });
-    return (w = new ae({})),
-    (b = new $e({})),
-    (j = new de({ props: { navItems: e[1] } })),
-    {
-        c() {
-            (t = c('nav')), (s = c('div')), (a = c('a')), E(r.$$.fragment), (l = y()), (v = c('div'));
-            for (let e = 0; e < z.length; e += 1) z[e].c();
-            (g = y()), (m = c('div')), E(w.$$.fragment), (x = y()), E(b.$$.fragment), (S = y()), E(j.$$.fragment), this.h();
-        },
-        l(e) {
-            t = o(e, 'NAV', { id: !0, class: !0 });
-            const c = n(t);
-            s = o(c, 'DIV', { class: !0 });
-            const f = n(s);
-            a = o(f, 'A', { href: !0, 'aria-label': !0 });
-            const h = n(a);
-            I(r.$$.fragment, h), h.forEach(i), (l = k(f)), (v = o(f, 'DIV', { class: !0 }));
-            const d = n(v);
-            for (let t = 0; t < z.length; t += 1) z[t].l(d);
-            d.forEach(i), (g = k(f)), (m = o(f, 'DIV', { class: !0 }));
-            const u = n(m);
-            I(w.$$.fragment, u), u.forEach(i), (x = k(f)), I(b.$$.fragment, f), f.forEach(i), (S = k(c)), I(j.$$.fragment, c), c.forEach(i), this.h();
-        },
-        h() {
-            f(a, 'href', '/'),
-                f(a, 'aria-label', 'Gitpod'),
-                f(v, 'class', 'nav-items hidden px-2 space-x-6 items-center md:space-x-12 svelte-tcyliy'),
-                f(m, 'class', 'login-wrapper hidden svelte-tcyliy'),
-                f(s, 'class', 'flex items-center justify-between h-20 px-4 sm:px-8'),
-                f(t, 'id', 'choose-project-observer-target-top'),
-                f(t, 'class', (C = `${B(`${e[0] ? 'bg-off-white ' : ''}mx-auto w-full`)} svelte-tcyliy`));
-        },
-        m(c, o) {
-            h(c, t, o), p(t, s), p(s, a), L(r, a, null), p(s, l), p(s, v);
-            for (let e = 0; e < z.length; e += 1) z[e].m(v, null);
-            p(s, g),
-                p(s, m),
-                L(w, m, null),
-                p(s, x),
-                L(b, s, null),
-                p(t, S),
-                L(j, t, null),
-                (F = !0),
-                V || ((H = [$(a, 'contextmenu', T(e[2])), $(a, 'click', e[3])]), (V = !0));
-        },
-        p(e, [s]) {
-            if (3 & s) {
-                let t;
-                for (P = e[1], t = 0; t < P.length; t += 1) {
-                    const a = we(e, P, t);
-                    z[t] ? (z[t].p(a, s), d(z[t], 1)) : ((z[t] = xe(a)), z[t].c(), d(z[t], 1), z[t].m(v, null));
+    return (
+        (w = new ae({})),
+        (b = new $e({})),
+        (j = new de({ props: { navItems: e[1] } })),
+        {
+            c() {
+                (t = c('nav')), (s = c('div')), (a = c('a')), E(r.$$.fragment), (l = y()), (v = c('div'));
+                for (let e = 0; e < z.length; e += 1) z[e].c();
+                (g = y()), (m = c('div')), E(w.$$.fragment), (x = y()), E(b.$$.fragment), (S = y()), E(j.$$.fragment), this.h();
+            },
+            l(e) {
+                t = o(e, 'NAV', { id: !0, class: !0 });
+                const c = n(t);
+                s = o(c, 'DIV', { class: !0 });
+                const f = n(s);
+                a = o(f, 'A', { href: !0, 'aria-label': !0 });
+                const h = n(a);
+                I(r.$$.fragment, h), h.forEach(i), (l = k(f)), (v = o(f, 'DIV', { class: !0 }));
+                const d = n(v);
+                for (let t = 0; t < z.length; t += 1) z[t].l(d);
+                d.forEach(i), (g = k(f)), (m = o(f, 'DIV', { class: !0 }));
+                const u = n(m);
+                I(w.$$.fragment, u), u.forEach(i), (x = k(f)), I(b.$$.fragment, f), f.forEach(i), (S = k(c)), I(j.$$.fragment, c), c.forEach(i), this.h();
+            },
+            h() {
+                f(a, 'href', '/'),
+                    f(a, 'aria-label', 'Gitpod'),
+                    f(v, 'class', 'nav-items hidden px-2 space-x-6 items-center md:space-x-12 svelte-tcyliy'),
+                    f(m, 'class', 'login-wrapper hidden svelte-tcyliy'),
+                    f(s, 'class', 'flex items-center justify-between h-20 px-4 sm:px-8'),
+                    f(t, 'id', 'choose-project-observer-target-top'),
+                    f(t, 'class', (C = `${B(`${e[0] ? 'bg-off-white ' : ''}mx-auto w-full`)} svelte-tcyliy`));
+            },
+            m(c, o) {
+                h(c, t, o), p(t, s), p(s, a), L(r, a, null), p(s, l), p(s, v);
+                for (let e = 0; e < z.length; e += 1) z[e].m(v, null);
+                p(s, g),
+                    p(s, m),
+                    L(w, m, null),
+                    p(s, x),
+                    L(b, s, null),
+                    p(t, S),
+                    L(j, t, null),
+                    (F = !0),
+                    V || ((H = [$(a, 'contextmenu', T(e[2])), $(a, 'click', e[3])]), (V = !0));
+            },
+            p(e, [s]) {
+                if (3 & s) {
+                    let t;
+                    for (P = e[1], t = 0; t < P.length; t += 1) {
+                        const a = we(e, P, t);
+                        z[t] ? (z[t].p(a, s), d(z[t], 1)) : ((z[t] = xe(a)), z[t].c(), d(z[t], 1), z[t].m(v, null));
+                    }
+                    for (D(), t = P.length; t < z.length; t += 1) M(t);
+                    N();
                 }
-                for (D(), t = P.length; t < z.length; t += 1) M(t);
-                N();
+                (!F || (1 & s && C !== (C = `${B(`${e[0] ? 'bg-off-white ' : ''}mx-auto w-full`)} svelte-tcyliy`))) && f(t, 'class', C);
+            },
+            i(e) {
+                if (!F) {
+                    d(r.$$.fragment, e);
+                    for (let e = 0; e < P.length; e += 1) d(z[e]);
+                    d(w.$$.fragment, e), d(b.$$.fragment, e), d(j.$$.fragment, e), (F = !0);
+                }
+            },
+            o(e) {
+                u(r.$$.fragment, e), (z = z.filter(Boolean));
+                for (let t = 0; t < z.length; t += 1) u(z[t]);
+                u(w.$$.fragment, e), u(b.$$.fragment, e), u(j.$$.fragment, e), (F = !1);
+            },
+            d(e) {
+                e && i(t), A(r), _(z, e), A(w), A(b), A(j), (V = !1), G(H);
             }
-            (!F || (1 & s && C !== (C = `${B(`${e[0] ? 'bg-off-white ' : ''}mx-auto w-full`)} svelte-tcyliy`))) && f(t, 'class', C);
-        },
-        i(e) {
-            if (!F) {
-                d(r.$$.fragment, e);
-                for (let e = 0; e < P.length; e += 1) d(z[e]);
-                d(w.$$.fragment, e), d(b.$$.fragment, e), d(j.$$.fragment, e), (F = !0);
-            }
-        },
-        o(e) {
-            u(r.$$.fragment, e), (z = z.filter(Boolean));
-            for (let t = 0; t < z.length; t += 1) u(z[t]);
-            u(w.$$.fragment, e), u(b.$$.fragment, e), u(j.$$.fragment, e), (F = !1);
-        },
-        d(e) {
-            e && i(t), A(r), _(z, e), A(w), A(b), A(j), (V = !1), G(H);
         }
-    };
+    );
 }
 function ye(e, t, s) {
     let r;
@@ -1419,7 +1426,7 @@ function Ae(e) {
                 url: 'https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md'
             }),
         () => window.analytics.track('social_opened', { context: 'footer', platform: 'discourse' }),
-        ({trackingName}) => window.analytics.track('social_opened', { context: 'footer-logo', platform: trackingName })
+        ({ trackingName }) => window.analytics.track('social_opened', { context: 'footer-logo', platform: trackingName })
     ];
 }
 class De extends e {
@@ -1460,8 +1467,7 @@ function Se(e) {
                 (!r ||
                     (1 & a &&
                         s !==
-                            (s =
-                                `${e[0]} px-4 py-2 flex justify-between items-center w-full bg-sand-dark shadow-sm text-xs sm:text-sm md:text-base svelte-1xzd5em`))) &&
+                            (s = `${e[0]} px-4 py-2 flex justify-between items-center w-full bg-sand-dark shadow-sm text-xs sm:text-sm md:text-base svelte-1xzd5em`))) &&
                     f(t, 'class', s);
         },
         i(e) {
@@ -1591,7 +1597,7 @@ function Te(e) {
                 h(c, d, o),
                 p(d, u),
                 w ||
-                    ((x = $(d, 'click', function(...args) {
+                    ((x = $(d, 'click', function (...args) {
                         H(e[0]) && e[0].apply(this, args);
                     })),
                     (w = !0));

@@ -275,7 +275,7 @@ export default ClassComponentWithState;
 
 ![](https://miro.medium.com/max/3064/1*6sYhFUNpUkt6xN9kkn4pJQ.png)
 
-This new syntax is what is often referred to as ‘syntactic sugar’: under the hood, the React library translates this back into the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter.
+This new syntax is what is often referred to as 'syntactic sugar’: under the hood, the React library translates this back into the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter.
 
 The clue to this is the fact that when we want to access some data from the state object, we still need to call it with `this.state.someData` ; changing it to just `state.someData` does not work.
 
@@ -473,7 +473,7 @@ class ClassComponentIteratingState extends Component {
 export default ClassComponentIteratingState;
 ```
 
-The first change to note is that our state object now has an ‘ingredients’ array, and a ‘newIngredient’ field that has been initialized to an empty string.
+The first change to note is that our state object now has an 'ingredients’ array, and a 'newIngredient’ field that has been initialized to an empty string.
 
 The ingredients array contains the elements that we’ll want to render in our list.
 
@@ -604,16 +604,16 @@ We can see this to be the case if we open up the developer console and inspect t
 
 ![](https://miro.medium.com/max/2602/1*q_XLnJ2h1L5yZjNnSKzj5w.png)
 
-Note also that we’re passing each ingredient as a ‘thing’ to the ChildComponent component.
+Note also that we’re passing each ingredient as a 'thing’ to the ChildComponent component.
 
-This is how a parent component passes data to a child component. It doesn’t need to be called ‘thing’; you can call it whatever you want.
+This is how a parent component passes data to a child component. It doesn’t need to be called 'thing’; you can call it whatever you want.
 
-Conceptually though, **every piece of data that a parent component passes down to a child component is called a ‘prop’ in React lingo.**
+Conceptually though, **every piece of data that a parent component passes down to a child component is called a 'prop’ in React lingo.**
 
 Let’s take a look now at the Child Component. It serves two purposes:
 
 1.  to render the props data that it gets from a parent component,
-2.  to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is ‘complete’.
+2.  to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is 'complete’.
 
 ```jsx
 import React, { Component } from 'react';
@@ -665,7 +665,7 @@ The overall structure of React applications can be represented as a hierarchical
 
 > React manages the **creation and continuous updating of DOM nodes in your Web page**.
 
--   _It does not handle_ [_AJAX_ ](https://skillcrush.com/blog/what-is-ajax/)_requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in ‘state’. Because it’s function is so limited in scope you may hear it referred to as a library… (not a framework … like Angular for example) and you may also hear it described as unopinionated._
+-   _It does not handle_ [_AJAX_ ](https://skillcrush.com/blog/what-is-ajax/)_requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in 'state’. Because it’s function is so limited in scope you may hear it referred to as a library… (not a framework … like Angular for example) and you may also hear it described as unopinionated._
 
 ### 2. Why use react? <a id="643d"></a>
 
@@ -746,7 +746,7 @@ class PercentageStat extends React.PureComponent {
 
 React encourages you to think in terms of reusability as you construct the user\
 interface from elements and components that you create. When you\
-make a list or a button, you can then reuse those components to show different data ‘state’ in the same UI structure as you have built for different data previously.![](https://miro.medium.com/max/60/0*cBLQ5aBP2qihrT59.jpeg?q=20)![](https://miro.medium.com/max/1885/0*cBLQ5aBP2qihrT59.jpeg)
+make a list or a button, you can then reuse those components to show different data 'state’ in the same UI structure as you have built for different data previously.![](https://miro.medium.com/max/60/0*cBLQ5aBP2qihrT59.jpeg?q=20)![](https://miro.medium.com/max/1885/0*cBLQ5aBP2qihrT59.jpeg)
 
 ### Component-Based <a id="a38d"></a>
 
@@ -788,7 +788,7 @@ makes React one of the speediest front-end libraries available.![](https://miro.
 
 ### 6. Imperative vs Declarative [(React is Declarative)](https://medium.com/trabe/why-is-react-declarative-a-story-about-function-components-aaae83198f79) <a id="ea7a"></a>
 
--   **Imperative, ‘telling to computer HOW to do something’ e.g looping over an array of numbers using a for loop.**
+-   **Imperative, 'telling to computer HOW to do something’ e.g looping over an array of numbers using a for loop.**
 -   **Declarative, is concerned about WHAT we want to happen. e.g using a reduce method on an array.**
 -   Benefits of using declarative code:
 -   Reduce side effects

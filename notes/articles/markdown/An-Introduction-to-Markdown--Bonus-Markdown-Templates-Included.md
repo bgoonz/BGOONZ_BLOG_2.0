@@ -18,7 +18,7 @@ This topic is meant to give you a very basic overview of how Markdown works, sho
 
 ### What is Markdown
 
-Markdown is very easy to learn and get comfortable with due it’s relatively small set of markup ‘commands’. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
+Markdown is very easy to learn and get comfortable with due it’s relatively small set of markup 'commands’. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
 
 Markdown also allows for raw HTML inside of a markdown document, so if you want to embed something more fancy than what Markdowns syntax can do you can always fall back to HTML. However to keep documents readable that’s generally not recommended.
 

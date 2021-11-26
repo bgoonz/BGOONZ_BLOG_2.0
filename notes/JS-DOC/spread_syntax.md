@@ -335,8 +335,8 @@ No
 
 ## See also
 
--   [Rest parameters](../functions/rest_parameters) (also ‘`...`’)
--   [`Function.prototype.apply()`](../global_objects/function/apply) (also ‘`...`’)
+-   [Rest parameters](../functions/rest_parameters) (also '`...`’)
+-   [`Function.prototype.apply()`](../global_objects/function/apply) (also '`...`’)
 
 © 2005–2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  

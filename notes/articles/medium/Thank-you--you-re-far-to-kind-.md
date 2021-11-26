@@ -1,9 +1,8 @@
-Thank you, you're far to kind!
-==============================
+# Thank you, you're far to kind!
 
 There's a bunch of unpublished articles on my personal blog but it's under construction and so a fair number of them are dysfunctional…
 
-------------------------------------------------------------------------
+---
 
 Thank you, you're far to kind! You might like this one... depending on what you do in relation to computer science: <a href="https://medium.com/codex/these-are-a-few-of-my-favorite-things-82e8b6e61879" class="markup--anchor markup--p-anchor">https://medium.com/codex/these-are-a-few-of-my-favorite-things-82e8b6e61879</a>
 

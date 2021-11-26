@@ -1,6 +1,6 @@
 # Regular Expressions :: Eloquent JavaScript
 
-> Some people, when confronted with a problem, think ‘I know, I’ll use regular expressions.’ Now they have two problems.
+> Some people, when confronted with a problem, think 'I know, I’ll use regular expressions.’ Now they have two problems.
 
 <<<<<<< HEAD
 [◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
@@ -9,9 +9,9 @@
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
-> [](#p_MWUwIAb0uO)Some people, when confronted with a problem, think ‘I know, I’ll use regular expressions.’ Now they have two problems.
+> [](#p_MWUwIAb0uO)Some people, when confronted with a problem, think 'I know, I’ll use regular expressions.’ Now they have two problems.
 
-> [](#p_icxlw7+18l)Yuan-Ma said, ‘When you cut against the grain of the wood, much strength is needed. When you program against the grain of the problem, much code is needed.’
+> [](#p_icxlw7+18l)Yuan-Ma said, 'When you cut against the grain of the wood, much strength is needed. When you program against the grain of the problem, much code is needed.’
 
 ![A railroad diagram](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/img/chapter_picture_9.jpg)
 

@@ -15,7 +15,8 @@ function u(t) {
     let A;
     document.title = e = t[2];
     let M =
-        t[5] && (t => {
+        t[5] &&
+        ((t) => {
             let e;
             return {
                 c() {
@@ -126,13 +127,13 @@ function l(t, e, n) {
     let { data: a } = e;
 
     const {
-            description: d,
-            image: c = 'images/media-image.jpg',
-            title: m,
-            type: i = 'website',
-            imageTwitter: r = 'images/twitter-preview.jpg',
-            norobots: s = !1
-        } = a || {};
+        description: d,
+        image: c = 'images/media-image.jpg',
+        title: m,
+        type: i = 'website',
+        imageTwitter: r = 'images/twitter-preview.jpg',
+        norobots: s = !1
+    } = a || {};
 
     const u = `https://${o.host}${o.path}`;
     return (

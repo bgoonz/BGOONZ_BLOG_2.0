@@ -64,17 +64,17 @@ forEach iterates over an array item by item, and map calls a function on each ar
 
 · **What is the difference between a function and a method?**
 
-Every function is an object. If a value is a function, it is a method. Methods have to be ‘received’ by something; functions do not.
+Every function is an object. If a value is a function, it is a method. Methods have to be 'received’ by something; functions do not.
 
 · **What is closure?**
 
 It is code identified elsewhere that we can use later; gives the ability to put functions together. If a variable isn’t defined, a function looks outward for context.
 
-· **Describe the four rules of the ‘this’ keyword.**
+· **Describe the four rules of the 'this’ keyword.**
 
-1. Window/global binding — this is the window/console object. ‘use strict’; to prevent window binding.
+1. Window/global binding — this is the window/console object. 'use strict’; to prevent window binding.
 
-2. Implicit binding — when a function is called by a dot, the object preceding the dot is the ‘this’. 80 percent of ‘this’ is from this type of binding.
+2. Implicit binding — when a function is called by a dot, the object preceding the dot is the 'this’. 80 percent of 'this’ is from this type of binding.
 
 3. New binding — points to new object created & returned by constructor function
 
@@ -86,7 +86,7 @@ Super ties the parent to the child.
 
 -   <span id="d57b">**What is the DOM?**</span>
 
-Document object model, the ‘window’ or container that holds all the page’s elements
+Document object model, the 'window’ or container that holds all the page’s elements
 
 -   <span id="6172">**What is an event?**</span>
 
@@ -94,7 +94,7 @@ An event is something happening on or to the page, like a mouse click, doublecli
 
 -   <span id="75c5">**What is an event listener?**</span>
 
-Javascript command that ‘listens’ for an event to happen on the page to a given element and then runs a function when that event happens
+Javascript command that 'listens’ for an event to happen on the page to a given element and then runs a function when that event happens
 
 -   <span id="157d">**Why would we convert a NodeList into an Array?**</span>
 
@@ -134,7 +134,7 @@ Because some companies still use class components and don’t want to switch the
 
 · **Name three lifecycle methods and their purposes.**
 
-componentDidMount = do the stuff inside this ‘function’ after the component mounted
+componentDidMount = do the stuff inside this 'function’ after the component mounted
 
 componentDidUpdate = do the stuff inside this function after the component updated
 
@@ -152,7 +152,7 @@ Gets bugs fixed faster, reduces regression risk, makes you consider/work out the
 
 You can store data in a context object instead of prop drilling.
 
-· **In your own words, describe actions, reducers and the store and their role in Redux. What does each piece do? Why is the store known as a ‘single source of truth’ in a redux application?**
+· **In your own words, describe actions, reducers and the store and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth’ in a redux application?**
 
 Everything that changes within your app is represented by a single JS object called the store. The store contains state for our application. When changes are made to our application state, we never write to our store object but rather clone the state object, modify the clone, and replace the original state with the new copy, never mutating the original object. Reducers are the only place we can update our state. Actions tell our reducers “how” to update the state, and perhaps with what data it should be updated, but only a reducer can actually update the state.
 
@@ -216,7 +216,7 @@ o management of resources is done via **HTTP methods**.
 
 · **How can we partition our application into sub-applications?**
 
-By dividing the code up into multiple files and ‘requiring’ them in the main server file.
+By dividing the code up into multiple files and 'requiring’ them in the main server file.
 
 · **Explain the difference between Relational Databases and SQL.**
 

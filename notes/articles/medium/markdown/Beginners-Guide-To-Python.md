@@ -1,9 +1,8 @@
-Beginners Guide To Python
-=========================
+# Beginners Guide To Python
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional…
 
-------------------------------------------------------------------------
+---
 
 ### Beginners Guide To Python
 
@@ -17,7 +16,7 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d"><strong>PYTHON</strong><br />
-<em>Keywords: ***and del for is raise assert elif from lambda return break else global not try class except if or while…</em>golden-lobe-519.notion.site</a><a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Keywords: \*\*\*and del for is raise assert elif from lambda return break else global not try class except if or while…</em>golden-lobe-519.notion.site</a><a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*per3wJrNyChrgJtUBySo1Q.png" class="graf-image" /></figure>
 
@@ -73,7 +72,7 @@ To determine if your Windows computer already has Python 3:
 
 > Download Link: <a href="https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe" class="markup--anchor markup--blockquote-anchor">https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe</a>
 
-------------------------------------------------------------------------
+---
 
 ### Python
 
@@ -337,7 +336,7 @@ Python has two primitive loop commands:
 -   <span id="89e4">Functions by default return `None`</span>
 -   <span id="7041">We can return any datatype.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Python Syntax
 
@@ -345,11 +344,11 @@ Python syntax was made for readability, and easy editing. For example, the pytho
 
 ### First Program
 
-Lets create a <a href="https://repl.it/languages/python3" class="markup--anchor markup--p-anchor">python 3</a> repl, and call it *Hello World*. Now you have a blank file called *main.py*. Now let us write our first line of code:
+Lets create a <a href="https://repl.it/languages/python3" class="markup--anchor markup--p-anchor">python 3</a> repl, and call it _Hello World_. Now you have a blank file called _main.py_. Now let us write our first line of code:
 
     print('Hello world!')
 
-> *Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.*
+> _Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards._
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -380,7 +379,7 @@ If you have a huge comment, do **not** comment all the 350 lines, just put `'''`
 
 Unlike many other languages, there is no `var`, `let`, or `const` to declare a variable in python. You simply go `name = 'value'`.
 
-Remember, there is a difference between integers and strings. *Remember: String =* `""`*.* To convert between these two, you can put an int in a `str()` function, and a string in a `int()` function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the `float()` command.
+Remember, there is a difference between integers and strings. _Remember: String =_ `""`_._ To convert between these two, you can put an int in a `str()` function, and a string in a `int()` function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the `float()` command.
 
 <a href="https://repl.it/@bgoonz/second-scr?lite=true&amp;amp;referrer=https%3A%2F%2Fbryanguner.medium.com" class="markup--anchor markup--p-anchor">https://repl.it/@bgoonz/second-scr?lite=true&amp;amp;referrer=https%3A%2F%2Fbryanguner.medium.com</a>
 
@@ -413,7 +412,7 @@ There are many operators in python:
 
 You should already know everything shown above, as it is similar to other languages. If you continue down, you will see more complicated ones.
 
-*complexop.py*
+_complexop.py_
 
     a += 1
     a -= 1
@@ -432,13 +431,13 @@ If you really want to know about the others, view <a href="https://www.tutorials
 Like the title?  
 Anyways, a `'` and a `"` both indicate a string, but **do not combine them!**
 
-*quotes.py*
+_quotes.py_
 
     x = 'hello' # Good
     x = "hello" # Good
     x = "hello' # ERRORRR!!!
 
-*slicing.py*
+_slicing.py_
 
 ### String Slicing
 
@@ -471,7 +470,7 @@ Here is a list of functions/methods we will go over:
 
 Input is a function that gathers input entered from the user in the command line. It takes one optional parameter, which is the users prompt.
 
-*inp.py*
+_inp.py_
 
     print('Type something: ')
     x = input()
@@ -479,18 +478,18 @@ Input is a function that gathers input entered from the user in the command line
 
 If you wanted to make it smaller, and look neater to the user, you could do…
 
-*inp2.py*
+_inp2.py_
 
     print('Here is what you said: ', input('Type something: '))
 
 Running:  
-*inp.py*
+_inp.py_
 
     Type something:
     Hello World
     Here is what you said: Hello World
 
-*inp2.py*
+_inp2.py_
 
     Type something: Hello World
     Here is what you said: Hello World
@@ -499,20 +498,20 @@ Running:
 
 Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write `input <modulename>`. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
 
-*module.py*
+_module.py_
 
     import random
 
 Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do `<module>.<function>`. For example:
 
-*module2.py*
+_module2.py_
 
     import random
     print(random.randint(3,5)) # Prints a random number between 3 and 5
 
-> *Pro Tip:  
-> Do* `from random import randint` *to not have to do* `random.randint()`*, just* `randint()`*  
-> To import all functions from a module, you could do* `from random import *`
+> _Pro Tip:  
+> Do_ `from random import randint` _to not have to do_ `random.randint()`_, just_ `randint()`_  
+> To import all functions from a module, you could do_ `from random import *`
 
 ### New: Loops!
 
@@ -523,7 +522,7 @@ Loops allow you to repeat code over and over again. This is useful if you want t
 The for loop goes through a list of variables, making a seperate variable equal one of the list every time.  
 Let’s say we wanted to create the example above.
 
-*loop.py*
+_loop.py_
 
     from time import sleep
     for i in range(100):
@@ -532,7 +531,7 @@ Let’s say we wanted to create the example above.
 
 This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
 
-*loop2.py*
+_loop2.py_
 
     import time
     for number in range(100):
@@ -545,14 +544,14 @@ This will print Hello with a .3 second delay 100 times. This is just one way to
 
 The while loop runs the code while something stays true. You would put `while <expression>`. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:
 
-*while.py*
+_while.py_
 
     while True: # Runs forever
          print('Hello World!')
 
 Or you could do:
 
-*while2.py*
+_while2.py_
 
     import random
     position = '<placeholder>'
@@ -564,7 +563,7 @@ Or you could do:
 
 The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes **only once**. An if statement is written:
 
-*if.py*
+_if.py_
 
     import random
     num = random.randint(1, 10)
@@ -577,7 +576,7 @@ The if statement allows you to check if something is True. If so, it runs the co
 
 Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an `elif` statement:
 
-*elif.py*
+_elif.py_
 
     import random
     num = random.randint(1, 10)
@@ -588,7 +587,7 @@ Now, you may think that it would be better if you could make it print only one m
 
 Now, you may wonder how to run code if none work. Well, there is a simple statement called `else:`
 
-*else.py*
+_else.py_
 
     import random
     num = random.randint(1, 10)
@@ -606,7 +605,7 @@ It is quite tiring to type:
 
 Characters: 389
 
-*nofunc.py*
+_nofunc.py_
 
     import random
     print(random.randint(1, 9))
@@ -626,7 +625,7 @@ Now with functions, you can seriously lower the amount of characters:
 
 Characters: 254
 
-*functions.py*
+_functions.py_
 
     import random
     def r(t):
@@ -639,7 +638,7 @@ Characters: 254
     r('Hi')
     r('j')
 
-------------------------------------------------------------------------
+---
 
 ### Project Based Learning:
 
@@ -667,28 +666,28 @@ Ok, now we have the player’s name and nickname, let’s welcome them to the ga
 Now for the story. The most important part of all stories is the introduction, so let’s print our introduction
 
     print(“Long ago, there was a magical meal known as Summuh and Spich Atip”) #We can drop a line by making a new print statement, or we can use the escape code \n
-    print(“It was said that this meal had the power to save lives, restore peace, and stop evil\nBecuase it was so powerful, it was hidden away on a mountain that could not be climbed\nBut it’s power brought unwanted attention, and a great war broke out.\nFinally, the leaders of the good side chose a single hero to go and find the Summah and Spich Atip, that hero was “ + name + “\n so ” + nickname + ‘ headed out to find this great power, and stop the war…’)
+    print(“It was said that this meal had the power to save lives, restore peace, and stop evil\nBecuase it was so powerful, it was hidden away on a mountain that could not be climbed\nBut it’s power brought unwanted attention, and a great war broke out.\nFinally, the leaders of the good side chose a single hero to go and find the Summah and Spich Atip, that hero was “ + name + “\n so ” + nickname + ' headed out to find this great power, and stop the war…’)
 
 Now, we’ll give the player their first choice
 
     print(“After hiking through the wastelands for a long time, you come to a massive ravine, there is only a single way across\nA rickety old bridge, taking that could be very dangerous, but… maybe you could jump across?”)
     choice1 = input(“[1]  Take the bridge     [2] Try and jump over”)
     #Now we check to see what the player chose
-    If choice1 == ‘1’:
+    If choice1 == '1’:
       print(“You slowly walk across the bride, it creakes ominously, then suddenly breaks! You flail through the air before hitting the ground a thousand feet below. Judging by the fact that you hit the ground with the equivalent force of being hit by a cement truck moving at 125 miles an hour, you are dead…”)
       #The player lost, so now we’ll boot them out of the program with the exit command
       exit()
     #Then we check to see if they made the other choice, we can do with with else if, written as elif
-    elif choice1 == ‘2’:
+    elif choice1 == '2’:
       print(“You make the jump! You see a feather hit the bridge, the weight breakes it and sends it to the bottom of the ravine\nGood thing you didn’t use that bridge.”)
     #Now we can continue the story
     print(“A few more hours of travel and you come to the unclimbable mountain.”)
     choice2 == input(“[1]   Give up    [2]    Try and climb the mountain”)
-    if choice2 == ‘1’:
+    if choice2 == '1’:
       print(“You gave up and lost…”)
       #now we exit them again
       exit()
-    elif choice2 == ‘1’:
+    elif choice2 == '1’:
       print(“you continue up the mountain. Climbing is hard, but finally you reach the top.\nTo your surprise there is a man standing at the top of the mountain, he is very old.”)
       print(“Old Man: Hey “ + nickname)
       print(“You: How do you know my name!?!”)
@@ -698,7 +697,7 @@ Now, we’ll give the player their first choice
       print(“You: Pita…chips…humus, what power do those have?”)
       print(“Old Man: Pretty simple kid, their organic…”)
       #Now let’s clear the screen
-      os.system(‘clear’)
+      os.system('clear’)
       print(“YOU WON!!!”)
 
 There you have it, a pretty simple choose your own ending story. You can make it as complex or uncomplex as you like.
@@ -722,15 +721,15 @@ Now we need to convert the characters into code, well do this with a for loop:
 
     out = []
     for x in encode:
-      if x == ‘a’:
-        out.append(‘1’)
-      elif x == ‘b’:
-        out.append(‘2’)
+      if x == 'a’:
+        out.append('1’)
+      elif x == 'b’:
+        out.append('2’)
     #And we’ll continue on though this with each letter of the alphabet
 
 Once we’ve encoded the text, we’ll print it back for the user
 
-    x = ‘ ‘.join(out)
+    x = ' '.join(out)
     #this will turn out into a string that we can print
     print(x)
 
@@ -760,28 +759,28 @@ Now, we need to ask the user for input, we’ll to this with a while loop
         break   #this will remove us from the loop, so we can display the win message
       else:
         print(“Nope, that isn’t it”)
-    #outside our loop, we’ll have the win message that is displayed if the player gets the correct number. 
+    #outside our loop, we’ll have the win message that is displayed if the player gets the correct number.
     print(“You won!”)
 
 Have fun with this!
 
 ### 4. Notes
 
-Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it ‘notes.txt’  
-Now, to open a file in python we use open(‘filename’, type) The type can be ‘r’ for read, or ‘w’ for write. There is another option, but we won’t be using that here. Now, the first thing we are going to do is get what the user would like to save:
+Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt’  
+Now, to open a file in python we use open('filename’, type) The type can be 'r’ for read, or 'w’ for write. There is another option, but we won’t be using that here. Now, the first thing we are going to do is get what the user would like to save:
 
     message = input(“What would you like to save?”)
 
 Now we’ll open our file and save that text
 
-    o = open(‘notes.txt’, ‘w’)
+    o = open('notes.txt’, 'w’)
     o.write(message)
     #this next part is very important, you need to always remember to close your file or what you wrote to it won’t be saved
     o.close()
 
 There we go, now the information is in the file. Next, we’ll retrieve it
 
-    read = open(‘notes.txt’, ‘r’)
+    read = open('notes.txt’, 'r’)
     out = read.read()
     # now we need to close the file
     read.close()
@@ -795,13 +794,13 @@ There we go, that’s how you can open files and close files with python
 Who doesn’t love a good dare? Here is a program that can generate random dares. The first thing we’ll need to do is as always, import random. Then we’ll make some lists of dares
 
     import random
-    list1 = [‘jump on’, ‘sit on’, ‘rick roll on’, ‘stop on’, ‘swing on’]
-    list2 = [‘your cat’, ‘your neighbor’, ‘a dog’, ‘a tree’, ‘a house’]
-    list3 = [‘your mom’, ‘your best friend’, ‘your dad’, ‘your teacher’]
+    list1 = ['jump on’, 'sit on’, 'rick roll on’, 'stop on’, 'swing on’]
+    list2 = ['your cat’, 'your neighbor’, 'a dog’, 'a tree’, 'a house’]
+    list3 = ['your mom’, 'your best friend’, 'your dad’, 'your teacher’]
     #now we’ll generate a dare
     while True:
-      if input() == ‘’: #this will trigger if they hit enter
-        print(“I dare you to “ + random.choice(list1) + ‘ ‘ + random.choice(list2) + ‘ in front of ‘  + random.choice(list3)
+      if input() == '’: #this will trigger if they hit enter
+        print(“I dare you to “ + random.choice(list1) + ' ' + random.choice(list2) + ' in front of '  + random.choice(list3)
 
 ### Discover More:
 

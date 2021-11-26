@@ -7,7 +7,7 @@ function s(s, o = n) {
         if (t(s, n) && ((s = n), c)) {
             const n = !e.length;
 
-            l.forEach(n => {
+            l.forEach((n) => {
                 n[1](), e.push(n, s);
             });
 

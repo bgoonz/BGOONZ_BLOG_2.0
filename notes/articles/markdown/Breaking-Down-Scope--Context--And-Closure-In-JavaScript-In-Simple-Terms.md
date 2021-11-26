@@ -39,7 +39,7 @@ Quiz yourself with this website I made:
 -   <span id="b34e">**Global Scope:** “The scope that is visible in all other scopes.” — MDN</span>
 -   <span id="df88">**Global Variable:** A variable defined at the Global Scope.</span>
 -   <span id="ae7a">**IIFE:** Imediatly-Invoked Function Expression — a function wrapped in `()` to create an expression, and immediatly followed by a pair of `()` to invoke that function imediatly.</span>
--   <span id="42a6">**Closure:** “Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure ‘remembers’ the environment in which it was created.” — MDN</span>
+-   <span id="42a6">**Closure:** “Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers’ the environment in which it was created.” — MDN</span>
 -   <span id="023f">**Variable Shadowing:** “occurs when a variable declared within a certain scope … has the same name as a variable declared in an outer scope.” — Wikipedia</span>
 -   <span id="7ba5">**for statement:** “The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement or a set of statements executed in the loop.” — MDN</span>
 -   <span id="6f95">**initialization:** “An expression (including assignment expressions) or variable declaration. Typically used to initialize a counter variable. This expression may optionally declare new variables with the var keyword. These variables are not local to the loop, i.e. they are in the same scope the for loop is in. The result of this expression is discarded.” — MDN</span>
@@ -145,7 +145,7 @@ Let’s step things up and see what happens when we start actually adding code t
 #### Execution Context ≠(NOT EQUAL)≠≠≠Scope
 
 1.  <span id="0fcc">The **global execution context** is created **_before_** any code is executed.</span>
-2.  <span id="de32">Whenever a function is _executed_ invoked (this means the function is told to run… i.e. after the doSomething function has been declared … calling ‘doSomething()’, a **new execution context** gets created.</span>
+2.  <span id="de32">Whenever a function is _executed_ invoked (this means the function is told to run… i.e. after the doSomething function has been declared … calling 'doSomething()’, a **new execution context** gets created.</span>
 3.  <span id="20c3">**Every** execution context provides `this` keyword, which points to an **object** to which the current code that’s being executed belongs.</span>
 
 For more info read about <a href="https://medium.com/@Rahulx1/understanding-event-loop-call-stack-event-job-queue-in-javascript-63dcd2c71ecd" class="markup--anchor markup--p-anchor">Event Queue and Call Stack</a>
@@ -173,7 +173,7 @@ We can see this flow from `Creation` **phase to** `Execution` **phase** in the G
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*QHJcijvusr0_rqAH.gif" class="graf-image" /></figure>During the `Creation` phase:
 
-**The JavaScript engine said ‘let there be** `window` **and** `this`‘
+**The JavaScript engine said 'let there be** `window` **and** `this`'
 
 > and there was `window` and `this`… and it was good
 
@@ -327,7 +327,7 @@ Things that create block-scopes:
 -   <span id="9a99">While Loops</span>
 -   <span id="dc88">Switch Statements</span>
 -   <span id="c5fb">For Loops</span>
--   <span id="089b">Curly Boiz **‘{}’ ….. anything between cury brackets is scoped to within those brackets.**</span>
+-   <span id="089b">Curly Boiz **'{}’ ….. anything between cury brackets is scoped to within those brackets.**</span>
 
 #### **Properties of Const declared variables:**
 
@@ -424,7 +424,7 @@ In it’s most simplest of forms this is a closure:
     returnFoo();
     // -> reaches outside its scope to find foo because it doesn't exist inside of return Foo's scope when foo is referenced.
 
-The function body (code inside returnFoo) has access to the outside scope (code outside of returnFoo) and can access that ‘foo’ variable.
+The function body (code inside returnFoo) has access to the outside scope (code outside of returnFoo) and can access that 'foo’ variable.
 
 Let’s look at another example:
 
@@ -435,7 +435,7 @@ Let’s look at another example:
     }
     console.log(lastName);
 
-Not much different than the idea presented above, but the thought remains the same. When ‘greet’ is called, it has no context in its local scope of finding `lastName` so, it looks outside its scope to find it and use the `lastName` that is found there.
+Not much different than the idea presented above, but the thought remains the same. When 'greet’ is called, it has no context in its local scope of finding `lastName` so, it looks outside its scope to find it and use the `lastName` that is found there.
 
 Let’s take this a step further. In the given examples, we’ve seen that we have created two environments for our code. The first would be the global environment where `lastName` and `greet` exist. The second would be the local environment where the alert function is called. Let's represent those two environments like this:
 
@@ -657,7 +657,7 @@ In the picture below… sayHi (and name) are identifiers and the function and (s
 
 A closure is to put it simply, when a nested function is defined inside of another function gains access to the outer functions variables.
 
-Returning the nested function from the ‘parent function’ that enclosed the nested function definition, allows you to maintain access to the local variables, (arguments, and potentially even more inner function declarations) of its outer function… without exposing the variables or arguments of outer function…. to any of the other functions that were not declared inside of it.
+Returning the nested function from the 'parent function’ that enclosed the nested function definition, allows you to maintain access to the local variables, (arguments, and potentially even more inner function declarations) of its outer function… without exposing the variables or arguments of outer function…. to any of the other functions that were not declared inside of it.
 
 ### What is “this” Context
 
@@ -716,7 +716,7 @@ Variables declared with `let` and `const` have block scope. `var` doesn’t have
 
 ### CITAIONS:
 
-#### 1.) JavaScript <a href="https://medium.com/@marjanrab/javascript-scope-context-and-this-under-the-hood-43c32033c9f9" class="markup--anchor markup--h4-anchor">Scope Context and ‘this’ under the hood</a>
+#### 1.) JavaScript <a href="https://medium.com/@marjanrab/javascript-scope-context-and-this-under-the-hood-43c32033c9f9" class="markup--anchor markup--h4-anchor">Scope Context and 'this’ under the hood</a>
 
 #### 2.) MDN <a href="https://github.com/mdn/content" class="markup--anchor markup--h4-anchor">Content Repo:</a>
 

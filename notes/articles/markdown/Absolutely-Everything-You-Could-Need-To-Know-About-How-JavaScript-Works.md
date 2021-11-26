@@ -188,7 +188,7 @@ in a program.
 
 A function is a procedure of code that will run when called. Functions  
 are used so that we do not have to rewrite code to do the same thing  
-over and over. (Think of them as ‘subprograms’)
+over and over. (Think of them as 'subprograms’)
 
 -   <span id="01bb">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="963b">Includes three things:</span>
@@ -924,10 +924,10 @@ The find() method returns a value of the first element in the array that satisfi
 <a href="https://medium.com/nerd-for-tech/understanding-this-binding-in-javascript-86687397c76d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/nerd-for-tech/understanding-this-binding-in-javascript-86687397c76d"><strong>Understanding “this” binding in Javascript</strong><br />
 <em>In order to understand “this” keyword clearly, we need to go through of how the execution context works at first. Every…</em>medium.com</a><a href="https://medium.com/nerd-for-tech/understanding-this-binding-in-javascript-86687397c76d" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<a href="https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e"><strong>JavaScript For Beginners: the ‘new’ operator</strong><br />
+<a href="https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e"><strong>JavaScript For Beginners: the 'new’ operator</strong><br />
 <em>Preface</em>codeburst.io</a><a href="https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.freecodecamp.org/demystifying-javascripts-new-keyword-874df126184c" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.freecodecamp.org/demystifying-javascripts-new-keyword-874df126184c"><strong>Let’s demystify JavaScript’s ‘new’ keyword</strong><br />
+<a href="https://medium.freecodecamp.org/demystifying-javascripts-new-keyword-874df126184c" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.freecodecamp.org/demystifying-javascripts-new-keyword-874df126184c"><strong>Let’s demystify JavaScript’s 'new’ keyword</strong><br />
 <em>Over the weekend, I completed Will Sentance’s JavaScript: The Hard Parts. It might not sound like the most glorious way…</em>medium.freecodecamp.org</a><a href="https://medium.freecodecamp.org/demystifying-javascripts-new-keyword-874df126184c" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://javascript.info/constructor-new" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.info/constructor-new"><strong>Constructor, operator "new"</strong><br />
@@ -1413,7 +1413,7 @@ Inheritancecodeburst.io</a><a href="https://codeburst.io/master-javascript-proto
 <em>What is a promise?</em>medium.freecodecamp.org</a><a href="https://medium.freecodecamp.org/how-to-write-a-javascript-promise-4ed8d44292b8" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://medium.com/swlh/a-coding-writers-guide-an-introduction-to-es6-promises-9ff9f9e88f6c" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/swlh/a-coding-writers-guide-an-introduction-to-es6-promises-9ff9f9e88f6c"><strong>A Coding Writer’s Guide: An Introduction To ES6 Promises</strong><br />
-<em>Welcome back to the ‘A Coding Writer’s Guide’ series! If you have been keeping up with this series, you’d know that I…</em>medium.com</a><a href="https://medium.com/swlh/a-coding-writers-guide-an-introduction-to-es6-promises-9ff9f9e88f6c" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Welcome back to the 'A Coding Writer’s Guide’ series! If you have been keeping up with this series, you’d know that I…</em>medium.com</a><a href="https://medium.com/swlh/a-coding-writers-guide-an-introduction-to-es6-promises-9ff9f9e88f6c" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://dev.to/itnext/reverse-engineering-understand-promises-1jfc" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dev.to/itnext/reverse-engineering-understand-promises-1jfc"><strong>Reverse engineering - Understanding Promises in JavaScript</strong><br />
 <em>We will reverse engineer Promises in JavaScript together with some 90s nostalgia. Tagged with showdev, tutorial…</em>dev.to</a><a href="https://dev.to/itnext/reverse-engineering-understand-promises-1jfc" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

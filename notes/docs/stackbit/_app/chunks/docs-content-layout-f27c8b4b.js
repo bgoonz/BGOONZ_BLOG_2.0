@@ -237,45 +237,46 @@ function z(t) {
     let j;
     let A;
     let N;
-    return (u = new U({})),
-    {
-        c() {
-            (e = s('div')), (a = s('a')), (f = s('span')), $(u.$$.fragment), (m = g()), (G = s('span')), (D = c('Edit in Gitpod')), this.h();
-        },
-        l(t) {
-            e = r(t, 'DIV', { class: !0 });
-            const s = o(e);
-            a = r(s, 'A', { href: !0, target: !0, class: !0 });
-            const l = o(a);
-            f = r(l, 'SPAN', { class: !0 });
-            const i = o(f);
-            v(u.$$.fragment, i), i.forEach(n), (m = x(l)), (G = r(l, 'SPAN', { class: !0 }));
-            const c = o(G);
-            (D = h(c, 'Edit in Gitpod')), c.forEach(n), l.forEach(n), s.forEach(n), this.h();
-        },
-        h() {
-            d(f, 'class', 'logo svelte-164hpj2'),
-                d(G, 'class', 'ml-macro'),
-                d(a, 'href', t[0]),
-                d(a, 'target', '_blank'),
-                d(a, 'class', 'btn-otherbrand svelte-164hpj2'),
-                d(e, 'class', 'flex justify-end mb-micro');
-        },
-        m(s, r) {
-            l(s, e, r), i(e, a), i(a, f), E(u, f, null), i(a, m), i(a, G), i(G, D), (j = !0), A || ((N = w(a, 'click', t[1])), (A = !0));
-        },
-        p: p,
-        i(t) {
-            j || (b(u.$$.fragment, t), (j = !0));
-        },
-        o(t) {
-            k(u.$$.fragment, t), (j = !1);
-        },
-        d(t) {
-            t && n(e), y(u), (A = !1), N();
+    return (
+        (u = new U({})),
+        {
+            c() {
+                (e = s('div')), (a = s('a')), (f = s('span')), $(u.$$.fragment), (m = g()), (G = s('span')), (D = c('Edit in Gitpod')), this.h();
+            },
+            l(t) {
+                e = r(t, 'DIV', { class: !0 });
+                const s = o(e);
+                a = r(s, 'A', { href: !0, target: !0, class: !0 });
+                const l = o(a);
+                f = r(l, 'SPAN', { class: !0 });
+                const i = o(f);
+                v(u.$$.fragment, i), i.forEach(n), (m = x(l)), (G = r(l, 'SPAN', { class: !0 }));
+                const c = o(G);
+                (D = h(c, 'Edit in Gitpod')), c.forEach(n), l.forEach(n), s.forEach(n), this.h();
+            },
+            h() {
+                d(f, 'class', 'logo svelte-164hpj2'),
+                    d(G, 'class', 'ml-macro'),
+                    d(a, 'href', t[0]),
+                    d(a, 'target', '_blank'),
+                    d(a, 'class', 'btn-otherbrand svelte-164hpj2'),
+                    d(e, 'class', 'flex justify-end mb-micro');
+            },
+            m(s, r) {
+                l(s, e, r), i(e, a), i(a, f), E(u, f, null), i(a, m), i(a, G), i(G, D), (j = !0), A || ((N = w(a, 'click', t[1])), (A = !0));
+            },
+            p: p,
+            i(t) {
+                j || (b(u.$$.fragment, t), (j = !0));
+            },
+            o(t) {
+                k(u.$$.fragment, t), (j = !1);
+            },
+            d(t) {
+                t && n(e), y(u), (A = !1), N();
+            }
         }
-    }
-;
+    );
 }
 function C(t, e, a) {
     let s;
@@ -443,83 +444,84 @@ function X(t) {
         (m = new L({}));
     const _ = t[3].default;
     const F = G(_, t, t[2], null);
-    return (N = new V({ props: { type: 'docs', class: 'my-huge' } })),
-    (I = new J({})),
-    {
-        c() {
-            (e = s('link')),
-                (a = g()),
-                $(c.$$.fragment),
-                (h = g()),
-                (f = s('div')),
-                $(p.$$.fragment),
-                (u = g()),
-                $(m.$$.fragment),
-                (w = g()),
-                F && F.c(),
-                (A = g()),
-                $(N.$$.fragment),
-                (B = g()),
-                $(I.$$.fragment),
-                this.h();
-        },
-        l(t) {
-            const s = D('[data-svelte="svelte-1idk49p"]', document.head);
-            (e = r(s, 'LINK', { rel: !0, href: !0 })), s.forEach(n), (a = x(t)), v(c.$$.fragment, t), (h = x(t)), (f = r(t, 'DIV', { class: !0 }));
-            const l = o(f);
-            v(p.$$.fragment, l),
-                (u = x(l)),
-                v(m.$$.fragment, l),
-                (w = x(l)),
-                F && F.l(l),
-                (A = x(l)),
-                v(N.$$.fragment, l),
-                (B = x(l)),
-                v(I.$$.fragment, l),
-                l.forEach(n),
-                this.h();
-        },
-        h() {
-            d(e, 'rel', 'stylesheet'), d(e, 'href', '/prism-solarized-light.min.css'), d(f, 'class', 'content-docs');
-        },
-        m(t, s) {
-            i(document.head, e),
-                l(t, a, s),
-                E(c, t, s),
-                l(t, h, s),
-                l(t, f, s),
-                E(p, f, null),
-                i(f, u),
-                E(m, f, null),
-                i(f, w),
-                F && F.m(f, null),
-                i(f, A),
-                E(N, f, null),
-                i(f, B),
-                E(I, f, null),
-                (S = !0);
-        },
-        p(t, [e]) {
-            const a = {};
-            1 & e &&
-                (a.data = {
-                    description: 'Explore the documentation to learn more about Gitpod.io and Gitpod Self-Hosted.',
-                    title: t[0] ? t[0] : 'Gitpod Documentation'
-                }),
-                c.$set(a),
-                F && F.p && 4 & e && j(F, _, t, t[2], e, null, null);
-        },
-        i(t) {
-            S || (b(c.$$.fragment, t), b(p.$$.fragment, t), b(m.$$.fragment, t), b(F, t), b(N.$$.fragment, t), b(I.$$.fragment, t), (S = !0));
-        },
-        o(t) {
-            k(c.$$.fragment, t), k(p.$$.fragment, t), k(m.$$.fragment, t), k(F, t), k(N.$$.fragment, t), k(I.$$.fragment, t), (S = !1);
-        },
-        d(t) {
-            n(e), t && n(a), y(c, t), t && n(h), t && n(f), y(p), y(m), F && F.d(t), y(N), y(I);
+    return (
+        (N = new V({ props: { type: 'docs', class: 'my-huge' } })),
+        (I = new J({})),
+        {
+            c() {
+                (e = s('link')),
+                    (a = g()),
+                    $(c.$$.fragment),
+                    (h = g()),
+                    (f = s('div')),
+                    $(p.$$.fragment),
+                    (u = g()),
+                    $(m.$$.fragment),
+                    (w = g()),
+                    F && F.c(),
+                    (A = g()),
+                    $(N.$$.fragment),
+                    (B = g()),
+                    $(I.$$.fragment),
+                    this.h();
+            },
+            l(t) {
+                const s = D('[data-svelte="svelte-1idk49p"]', document.head);
+                (e = r(s, 'LINK', { rel: !0, href: !0 })), s.forEach(n), (a = x(t)), v(c.$$.fragment, t), (h = x(t)), (f = r(t, 'DIV', { class: !0 }));
+                const l = o(f);
+                v(p.$$.fragment, l),
+                    (u = x(l)),
+                    v(m.$$.fragment, l),
+                    (w = x(l)),
+                    F && F.l(l),
+                    (A = x(l)),
+                    v(N.$$.fragment, l),
+                    (B = x(l)),
+                    v(I.$$.fragment, l),
+                    l.forEach(n),
+                    this.h();
+            },
+            h() {
+                d(e, 'rel', 'stylesheet'), d(e, 'href', '/prism-solarized-light.min.css'), d(f, 'class', 'content-docs');
+            },
+            m(t, s) {
+                i(document.head, e),
+                    l(t, a, s),
+                    E(c, t, s),
+                    l(t, h, s),
+                    l(t, f, s),
+                    E(p, f, null),
+                    i(f, u),
+                    E(m, f, null),
+                    i(f, w),
+                    F && F.m(f, null),
+                    i(f, A),
+                    E(N, f, null),
+                    i(f, B),
+                    E(I, f, null),
+                    (S = !0);
+            },
+            p(t, [e]) {
+                const a = {};
+                1 & e &&
+                    (a.data = {
+                        description: 'Explore the documentation to learn more about Gitpod.io and Gitpod Self-Hosted.',
+                        title: t[0] ? t[0] : 'Gitpod Documentation'
+                    }),
+                    c.$set(a),
+                    F && F.p && 4 & e && j(F, _, t, t[2], e, null, null);
+            },
+            i(t) {
+                S || (b(c.$$.fragment, t), b(p.$$.fragment, t), b(m.$$.fragment, t), b(F, t), b(N.$$.fragment, t), b(I.$$.fragment, t), (S = !0));
+            },
+            o(t) {
+                k(c.$$.fragment, t), k(p.$$.fragment, t), k(m.$$.fragment, t), k(F, t), k(N.$$.fragment, t), k(I.$$.fragment, t), (S = !1);
+            },
+            d(t) {
+                n(e), t && n(a), y(c, t), t && n(h), t && n(f), y(p), y(m), F && F.d(t), y(N), y(I);
+            }
         }
-    }
-;
+    );
 }
 function Y(t, e, a) {
     let s;

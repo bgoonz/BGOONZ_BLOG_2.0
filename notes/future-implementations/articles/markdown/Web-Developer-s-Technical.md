@@ -156,7 +156,7 @@ value of an existing piece of data or delete an existing piece of data.
 specified resources on a web page to be requested from another domain outside  
 the domain from which the first resource was served. E.g. uploading images using  
 different domains using Amazon S3. For more about origin policies see  
-‘Same-origin Policy’.
+'Same-origin Policy’.
 
 <a href="https://en.wikipedia.org/wiki/JavaScript_syntax#Destructuring_assignment" class="markup--anchor markup--p-anchor"><strong>Destructuring Assignment</strong></a> -  
 the ability to unpack and assign variables when there are multiple parameters.

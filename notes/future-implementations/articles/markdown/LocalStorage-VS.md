@@ -67,7 +67,7 @@ That’s allowed for historical reasons, and mostly works, but generally not rec
 
 <!-- -->
 
-    let key = ‘length’; localStorage[key] = 5; // Error, can’t assign length
+    let key = 'length’; localStorage[key] = 5; // Error, can’t assign length
 
 1.  <span id="3020">There’s a `storage` event, it triggers when we modify the data. That event does not happen for object-like access. We'll see that later in this chapter.</span>
 

@@ -166,7 +166,7 @@ We can also destructure **incoming parameters** of a function.
 ### Prototype
 
 -   <span id="b567">Every object has a prototype object from which it inherits properties</span>
--   <span id="943e">_Object.prototype_ comes standard with Javascript and is almost like a ‘root parent’</span>
+-   <span id="943e">_Object.prototype_ comes standard with Javascript and is almost like a 'root parent’</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*1MKtZt0a5gREie59" class="graf-image" /></figure>-   <span id="2293">The `Object.create` method is now available in ES5 (but the method is in the book if required for older versions)</span>
 -   <span id="5001">If an object does not have a property you ask it for, it will keep looking up the prototype chain until it finds it</span>
@@ -183,7 +183,7 @@ More details in <a href="https://github.com/Lambda-April/Unsorted-Notes/blob/mai
 
 <!-- -->
 
-    today.hasOwnProperty(‘number’) //will return true today.hasOwnProperty(‘constructor’) //will return false
+    today.hasOwnProperty('number’) //will return true today.hasOwnProperty('constructor’) //will return false
 
 ### Enumeration
 
@@ -192,9 +192,9 @@ More details in <a href="https://github.com/Lambda-April/Unsorted-Notes/blob/mai
 <!-- -->
 
     let i;
-    let properties = [ ‘day’, ‘month’, ‘year’ ];
+    let properties = [ 'day’, 'month’, 'year’ ];
     for (i = 0; i < properties.length; i++) {
-        document.writeIn(properties[i] + ‘:’ + today[properties[i]]);
+        document.writeIn(properties[i] + ':’ + today[properties[i]]);
      }
 
 -   <span id="5d1f">This ensures you get the properties you want (i.e. not up the prototype chain) and in the order you want, as opposed to a _for in_ loop which achieves neither of these</span>

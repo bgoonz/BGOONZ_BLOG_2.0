@@ -101,7 +101,7 @@ CSS Selectors
 -   <span id="0360">Format is a `Selector:Pseudo-Class Name` or `A:B`</span>
 -   <span id="91ee">`a:hover { font-family: "Roboto Condensed", sans-serif; color: #4fc3f7; text-decoration: none; border-bottom: 2px solid #4fc3f7; }`</span>
 -   <span id="27ac">Some common pseudo-classes that are frequently used are:</span>
--   <span id="9b2b">`active` : ‘push down’, when ele are activated.</span>
+-   <span id="9b2b">`active` : 'push down’, when ele are activated.</span>
 -   <span id="5b2f">`checked` : applies to things like radio buttons or checkbox inputs.</span>
 -   <span id="58da">`disabled` : any disabled element.</span>
 -   <span id="d3bd">`first-child` : first element in a group of children/siblings.</span>
@@ -347,7 +347,7 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="46aa">Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.</span>
 -   <span id="ebb3">Float was used back in the day to display position of elements in a container.</span>
 -   <span id="2a8e">A very inconvenient aspect of float is the need to _clear_ the float.</span>
--   <span id="ba98">To ‘clear’ a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
+-   <span id="ba98">To 'clear’ a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
 
 **Using Flexbox**
 
@@ -417,7 +417,7 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="26c3">Columns and Rows can be defined with: pixels, percentages, auto, named grid lines, using `repeat`, fractions.</span>
 -   <span id="a117">`Grid Template Areas` gives us a handy way to map out and visualize areas of the grid layout.</span>
 -   <span id="17ae">Combine areas with templates to define how much space an area should take up.</span>
--   <span id="f90a">`Grid Gaps` can be used to create ‘gutters’ between grid item.s</span>
+-   <span id="f90a">`Grid Gaps` can be used to create 'gutters’ between grid item.s</span>
 -   <span id="d7c0">The way we have defined our grid with `grid-templates` and `areas` are considered **explicit**.</span>
 -   <span id="cef6">We can also `implicitly` define grids.</span>
 

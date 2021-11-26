@@ -177,7 +177,7 @@ In order to perform a JOIN query, the required information we need are:
 
 **Sample table: foods**
 
-To join two tables ‘company’ and ‘foods’, the following SQL statement can be used :
+To join two tables 'company’ and 'foods’, the following SQL statement can be used :
 
 **SQL Code:**
 
@@ -1244,7 +1244,7 @@ In order to perform a JOIN query, the required information we need are:
 
 **Sample table: foods**
 
-To join two tables ‘company’ and ‘foods’, the following SQL statement can be used :
+To join two tables 'company’ and 'foods’, the following SQL statement can be used :
 
 **SQL Code:**
 

@@ -1,9 +1,8 @@
-Adding CSS To Your HTML
-=======================
+# Adding CSS To Your HTML
 
 For beginners … very picture heavy since CSS is such a visual discipline!
 
-------------------------------------------------------------------------
+---
 
 ### Adding CSS To Your HTML
 
@@ -24,7 +23,7 @@ For beginners … very picture heavy since CSS is such a visual discipline!
       <body></body>
     </html>
 
--   <span id="36f1">*To connect your CSS sheet to your HTML page, use the link tag like so.*</span>
+-   <span id="36f1">_To connect your CSS sheet to your HTML page, use the link tag like so._</span>
 -   <span id="f743">Many developers use External pre-written CSS stylesheets for consistent design.</span>
 -   <span id="af3f">You can connect multiple stylesheets.</span>
 
@@ -85,7 +84,7 @@ For beginners … very picture heavy since CSS is such a visual discipline!
     <div class="circle orange"></div>
 
 -   <span id="e8ca">i.e. .box.yellow will select only the first element.</span>
--   <span id="34a4">**KEEP IN MIND** that if you do include a space it will make the selector into a *descendant selector*.</span>
+-   <span id="34a4">**KEEP IN MIND** that if you do include a space it will make the selector into a _descendant selector_.</span>
 
 <!-- -->
 
@@ -128,13 +127,13 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 <!-- -->
 
-    h1 + h2 { font-style: italic;   }  
+    h1 + h2 { font-style: italic;   }
 
     //HTML:
 
     <h1>Big header</h1> <h2>This one is styled because it is directly adjacent to the H1</h2> <h2>This one is NOT styled because there is no H1 right before it</h2>
 
-    h1 + h2 { font-style: italic;   }  
+    h1 + h2 { font-style: italic;   }
 
     <h1>Big header</h1> <h2>This one is styled because it is directly adjacent to the H1</h2> <h2>This one is NOT styled because there is no H1 right before it</h2>
 
@@ -145,10 +144,10 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 <!-- -->
 
-    a:hover { 
-    font-family: "Roboto Condensed", sans-serif; 
+    a:hover {
+    font-family: "Roboto Condensed", sans-serif;
     color: #4fc3f7;
-    text-decoration: none; 
+    text-decoration: none;
     border-bottom: 2px solid #4fc3f7;
     }
 

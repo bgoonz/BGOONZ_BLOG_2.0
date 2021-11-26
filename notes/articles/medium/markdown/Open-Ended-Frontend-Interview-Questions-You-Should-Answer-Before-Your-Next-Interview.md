@@ -1,9 +1,8 @@
-Open Ended Frontend Interview Questions You Should Answer Before Your Next Interview
-====================================================================================
+# Open Ended Frontend Interview Questions You Should Answer Before Your Next Interview
 
 Explain event delegation.
 
-------------------------------------------------------------------------
+---
 
 ### Open Ended Frontend Interview Questions You Should Answer Before Your Next Interview
 

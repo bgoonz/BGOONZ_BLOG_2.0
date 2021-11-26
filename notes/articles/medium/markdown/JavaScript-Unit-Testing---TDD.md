@@ -1,15 +1,14 @@
-JavaScript Unit Testing & TDD
-=============================
+# JavaScript Unit Testing & TDD
 
 All about Testing
 
-------------------------------------------------------------------------
+---
 
 ### JavaScript Unit Testing & TDD
 
 ### All about Testing
 
--   <span id="640f">*The general idea across all testing frameworks is to allow developers to write code that would specify the behavior of a function or module or class.*</span>
+-   <span id="640f">_The general idea across all testing frameworks is to allow developers to write code that would specify the behavior of a function or module or class._</span>
 -   <span id="11e6">Testing one function at a time is vulnerable to false negatives and false positives.</span>
 
 ### Why do we test?
@@ -63,7 +62,7 @@ A**utomated Tests** are known as **Specs**, they:
 
 ### Test-Driven Development
 
--   <span id="abf2">TDD is a quick repetitive cycle that revolves around first determining what a piece of code should do and writing tests for that behavior *before actually writing any code*.</span>
+-   <span id="abf2">TDD is a quick repetitive cycle that revolves around first determining what a piece of code should do and writing tests for that behavior _before actually writing any code_.</span>
 
 ### A simple example just to give an idea of what test code looks like… note that it reads more like spoken english than normal code…
 

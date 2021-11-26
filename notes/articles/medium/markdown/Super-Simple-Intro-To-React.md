@@ -1,9 +1,8 @@
-Super Simple Intro To React
-===========================
+# Super Simple Intro To React
 
 This is a basic introduction for those who feel overwhelmed by the vast microcosm that is the React ecosystem!
 
-------------------------------------------------------------------------
+---
 
 ### Super Simple Intro To React
 
@@ -179,7 +178,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 -   <span id="5608">If we fetch multiple pieces of data, we can render many things by using `map`.</span>
 -   <span id="3ad4">You need to assign a unique key to each of the clues.</span>
 -   <span id="8b0d">We need to keep track of them individually so that React can easily refer to a specific one if there is an issue.  
-    `clue => { key:clue.id, ...clue }`</span>
+    `clue => { key:clue.id, ...clue }`</span>
 
 <!-- -->
 
@@ -315,7 +314,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 -   <span id="fb2b">`style` : Accepts a JS object with camelCase properties rather than a CSS string.</span>
 -   <span id="8f1c">`value` : Supported by Input, Select, and TextArea components; use it to set the value of the component.</span>
 
-> ***Note: React uses camel-case!!!***
+> **_Note: React uses camel-case!!!_**
 
 #### **The JSX semicolon gotcha**
 
@@ -347,9 +346,9 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
       );
     }
 
--   <span id="6898">Just remember if you decided to use the return keyword in a function to ‘return some JSX’, then make sure you wrap the JSX in parenthesis.</span>
+-   <span id="6898">Just remember if you decided to use the return keyword in a function to 'return some JSX’, then make sure you wrap the JSX in parenthesis.</span>
 
-------------------------------------------------------------------------
+---
 
 `npx create-react-app my-app`
 

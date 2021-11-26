@@ -334,8 +334,8 @@ Have fun with this!
 
 ### 4. Notes
 
-Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it ‘notes.txt’
-Now, to open a file in python we use open(‘filename’, type) The type can be ‘r’ for read, or ‘w’ for write. There is another option, but we won’t be using that here. Now, the first thing we are going to do is get what the user would like to save:
+Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt’
+Now, to open a file in python we use open('filename’, type) The type can be 'r’ for read, or 'w’ for write. There is another option, but we won’t be using that here. Now, the first thing we are going to do is get what the user would like to save:
 
 Now we’ll open our file and save that text
 

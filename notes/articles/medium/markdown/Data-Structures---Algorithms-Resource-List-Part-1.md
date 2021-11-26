@@ -1,19 +1,18 @@
-Data Structures & Algorithms Resource List Part 1
-=================================================
+# Data Structures & Algorithms Resource List Part 1
 
 Guess the author of the following quotes:
 
-------------------------------------------------------------------------
+---
 
 ### Data Structures & Algorithms Resource List Part 1
 
 Guess the author of the following quotes:
 
-> *Talk is cheap. Show me the code.*
+> _Talk is cheap. Show me the code._
 
-> *Software is like sex: it’s better when it’s free.*
+> _Software is like sex: it’s better when it’s free._
 
-> *Microsoft isn’t evil, they just make really crappy operating systems.*
+> _Microsoft isn’t evil, they just make really crappy operating systems._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*rbMyH5LxQQFozL7F" class="graf-image" /></figure>### Update:
 
@@ -154,7 +153,7 @@ Guess the author of the following quotes:
 -   <span id="85a7"><a href="https://arxiv.org/pdf/1911.06347.pdf" class="markup--anchor markup--li-anchor">In search of the fastest concurrent Union-Find algorithm (2019)</a></span>
 -   <span id="5d1b"><a href="https://www.cs.princeton.edu/courses/archive/fall13/cos521/" class="markup--anchor markup--li-anchor">Computer Science 521 Advanced Algorithm Design</a></span>
 
-------------------------------------------------------------------------
+---
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*2fb7io8VD9z8080F.jpg" class="graf-image" /></figure>### Data Structures:
 

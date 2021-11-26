@@ -1,9 +1,8 @@
-Web Development Interview Roadmap
-=================================
+# Web Development Interview Roadmap
 
 Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.
 
-------------------------------------------------------------------------
+---
 
 ### Web Development Interview Roadmap
 
@@ -26,9 +25,9 @@ Most good programmers do programming not because they expect to get paid or get 
 -   <span id="6580"><a href="http://it-ebooks.info/" class="markup--anchor markup--li-anchor">it-ebooks.info</a></span>
 -   <span id="0cbf">S. Dasgupta, C. H. Papadimitriou, and U. V. Vazirani -<a href="http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf" class="markup--anchor markup--li-anchor">Algorithms</a></span>
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Coding practice
 
@@ -114,7 +113,7 @@ Most good programmers do programming not because they expect to get paid or get 
 -   <span id="4f59">Moxie Marlinspike — <a href="https://moxie.org/blog/career-advice/" class="markup--anchor markup--li-anchor">Career Advice</a></span>
 -   <span id="b428">Dan Luu — <a href="http://danluu.com/programmer-moneyball/" class="markup--anchor markup--li-anchor">We Only Hire the Trendiest</a></span>
 -   <span id="57b3">Reginald Long — <a href="http://reginaldlong.com/how-i-went-from-failing-every-interview-to-a-job-at-amazon/" class="markup--anchor markup--li-anchor">How I went from failing every interview to a job at Amazon</a></span>
--   <span id="1430">Shivan Kaul Sahib — <a href="http://shivankaul.com/blog/2016/12/07/clean-your-desk-yet-another-amazon-interview-experience.html" class="markup--anchor markup--li-anchor">‘Clean your desk’ : My Amazon interview experience</a></span>
+-   <span id="1430">Shivan Kaul Sahib — <a href="http://shivankaul.com/blog/2016/12/07/clean-your-desk-yet-another-amazon-interview-experience.html" class="markup--anchor markup--li-anchor">'Clean your desk’ : My Amazon interview experience</a></span>
 -   <span id="c878">Key Values — <a href="https://www.keyvalues.io/" class="markup--anchor markup--li-anchor">A website which helps to find the best team due to your values</a></span>
 -   <span id="5455">Laurie Voss — <a href="http://seldo.com/weblog/2014/08/26/you_suck_at_technical_interviews" class="markup--anchor markup--li-anchor">You suck at technical interviews</a></span>
 -   <span id="e331"><a href="http://www.gwan.com/blog/20160405.html" class="markup--anchor markup--li-anchor">Google’s “Director of Engineering” Hiring Test</a></span>
@@ -124,7 +123,7 @@ Most good programmers do programming not because they expect to get paid or get 
 ### Mock interviews
 
 -   <span id="010a"><a href="https://interviewing.io/" class="markup--anchor markup--li-anchor">interviewing.io</a></span>
--   <span id="beff"><a href="https://www.pramp.com/" class="markup--anchor markup--li-anchor">Pramp</a> *“Practice coding interviews for free”*</span>
+-   <span id="beff"><a href="https://www.pramp.com/" class="markup--anchor markup--li-anchor">Pramp</a> _“Practice coding interviews for free”_</span>
 -   <span id="902c"><a href="https://refdash.com/" class="markup--anchor markup--li-anchor">Refdash</a></span>
 -   <span id="9ce1"><a href="http://www.gainlo.co/" class="markup--anchor markup--li-anchor">Gainlo</a></span>
 -   <span id="dd27"><a href="https://www.candidacy.io/" class="markup--anchor markup--li-anchor">Candidacy.io</a></span>
@@ -145,7 +144,7 @@ Most good programmers do programming not because they expect to get paid or get 
 -   <span id="2888"><a href="https://www.hiredintech.com/" class="markup--anchor markup--li-anchor">HiredInTech</a></span>
 -   <span id="756c"><a href="https://www.codela.net/" class="markup--anchor markup--li-anchor">Codela</a></span>
 -   <span id="2dee"><a href="https://www.testdome.com/" class="markup--anchor markup--li-anchor">TestDome</a></span>
--   <span id="6330"><a href="https://www.freecodecamp.com/" class="markup--anchor markup--li-anchor">FreeCodeCamp</a> *“Learn to code and help nonprofits”*</span>
+-   <span id="6330"><a href="https://www.freecodecamp.com/" class="markup--anchor markup--li-anchor">FreeCodeCamp</a> _“Learn to code and help nonprofits”_</span>
 -   <span id="1ab1"><a href="https://people.cs.clemson.edu/~bcdean/dp_practice/" class="markup--anchor markup--li-anchor">Dynamic Programming Practice Problems</a></span>
 -   <span id="a659"><a href="https://app.codility.com/programmers/lessons/1-iterations/" class="markup--anchor markup--li-anchor">Codility Lessons</a></span>
 -   <span id="b184"><a href="https://introtcs.org/" class="markup--anchor markup--li-anchor">Introduction to Theoretical Computer Science</a></span>
@@ -212,7 +211,7 @@ Most good programmers do programming not because they expect to get paid or get 
 -   <span id="ca68"><a href="https://www.toptal.com/react/interview-questions" class="markup--anchor markup--li-anchor">12 Essential React.js Interview Questions</a></span>
 -   <span id="7195"><a href="https://tylermcginnis.com/react-interview-questions/" class="markup--anchor markup--li-anchor">React Interview Questions</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### If that wasn’t enough … try this on for size:
 

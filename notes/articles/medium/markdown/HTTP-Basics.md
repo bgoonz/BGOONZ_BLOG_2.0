@@ -1,13 +1,12 @@
-HTTP Basics
-===========
+# HTTP Basics
 
 “If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to…
 
-------------------------------------------------------------------------
+---
 
 ### HTTP Basics
 
-> *“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;*
+> _“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LUQe60D2FeVzDEi8.png" class="graf-image" /></figure>-   <span id="cb9d">`HTTP` : Hypertext Transfer Protocol.</span>
 -   <span id="8248">`HT` : Hypertext - content with references to other content.</span>
@@ -27,7 +26,7 @@ HTTP Basics
 
 HTTP is a client-server protocol: requests are sent by one entity, the user-agent (or a proxy on behalf of it). Most of the time the user-agent is a Web browser, but it can be anything, for example a robot that crawls the Web to populate and maintain a search engine index.
 
-Each individual request is sent to a server, which handles it and provides an answer, called the *response*. Between the client and the server there are numerous entities, collectively called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Proxy_server" class="markup--anchor markup--p-anchor">proxies</a>, which perform different operations and act as gateways or <a href="https://developer.mozilla.org/en-US/docs/Glossary/Cache" class="markup--anchor markup--p-anchor">caches</a>, for example.
+Each individual request is sent to a server, which handles it and provides an answer, called the _response_. Between the client and the server there are numerous entities, collectively called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Proxy_server" class="markup--anchor markup--p-anchor">proxies</a>, which perform different operations and act as gateways or <a href="https://developer.mozilla.org/en-US/docs/Glossary/Cache" class="markup--anchor markup--p-anchor">caches</a>, for example.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*WR6l6JwNOvkfrljt.png" class="graf-image" /></figure>**Properties of HTTP**
 
@@ -41,7 +40,7 @@ Each individual request is sent to a server, which handles it and provides an an
 2.  <span id="bd02">`Gateways` : Pretend to be the resource server you requested.</span>
 3.  <span id="06a0">`Tunnels` : Simply passes your request along.</span>
 
-------------------------------------------------------------------------
+---
 
 ### HTTP Requests
 
@@ -86,7 +85,7 @@ Each individual request is sent to a server, which handles it and provides an an
 
 **Body**
 
--   <span id="8af8">For when we need to send data that doesn’t fit into the header & is too complex for the URI we can use the *body*.</span>
+-   <span id="8af8">For when we need to send data that doesn’t fit into the header & is too complex for the URI we can use the _body_.</span>
 -   <span id="9271">`URL encoding` : Most common way form data is formatted.</span>
 -   <span id="852a">`name=claire&age=29&iceCream=vanilla`</span>
 -   <span id="cb18">We can also format using JSON or XML.</span>
@@ -98,7 +97,7 @@ Each individual request is sent to a server, which handles it and provides an an
 -   <span id="07dd">`nc -v appacademy.io 80`</span>
 -   <span id="b93e">`man nc` to open the netcat manual.</span>
 
-------------------------------------------------------------------------
+---
 
 ### HTTP Responses
 
@@ -149,12 +148,12 @@ Each individual request is sent to a server, which handles it and provides an an
 -   <span id="003b">Let the client know if there has been a change.</span>
 -   <span id="0ca4">Common Examples: 301 Moved Permanently (resource you requested is in a totally new location) & 302 Found (indicates a temporary move)</span>
 
-### `Status codes 400 - 499: Client Error`
+### `Status codes 400 - 499: Client Error`
 
 -   <span id="1f8a">Indicate problem with client’s request.</span>
 -   <span id="d68d">Common Examples: 400 Bad Request (received, but could not understand) & 401 Unauthorized (resource exists but you’re not allowed to see w/o authentication) & 403 Forbidden (resource exists but you’re not allowed to see it at all ) & 404 Not Found (resource requested does not exist);</span>
 
-### `Status codes 500 - 599: Server Error`
+### `Status codes 500 - 599: Server Error`
 
 -   <span id="93fc">Indicates request was formatted correctly, but the server couldn’t do what you asked due to an internal problem.</span>
 -   <span id="96cf">Common Examples: 500 Internal Server Error (Server had trouble processing) & 504 Gateway Timeout (Server timeout);</span>

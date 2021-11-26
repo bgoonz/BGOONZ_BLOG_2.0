@@ -1,15 +1,14 @@
-My Personal Arsenal Of Convenience Scripts
-==========================================
+# My Personal Arsenal Of Convenience Scripts
 
 At the bottom the following commands are listed as a markdown file and embed in this article as a github gist.
 
-------------------------------------------------------------------------
+---
 
 ### My Personal Arsenal Of Convenience Scripts
 
 #### At the bottom the following commands are listed as a markdown file and embed in this article as a github gist.
 
-------------------------------------------------------------------------
+---
 
 ### Pandoc File Conversions:
 
@@ -19,7 +18,7 @@ At the bottom the following commands are listed as a markdown file and embed in 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*FWFnnWJL20CskMovSMbHCA.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Resources:
 
@@ -41,7 +40,7 @@ At the bottom the following commands are listed as a markdown file and embed in 
 <a href="https://bryanguner.medium.com/bash-d3077114aea7" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/bash-d3077114aea7"><strong>BASH CHEAT SHEET</strong><br />
 <em>My Bash Cheatsheet Index:</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/bash-d3077114aea7" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 > <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><strong>holy grail</strong></a> **of learning bash**
 
@@ -49,13 +48,13 @@ At the bottom the following commands are listed as a markdown file and embed in 
 
 ### 1. Remove spaces from file and folder names and then remove numbers from files and folder names….
 
-### Description: need to : `sudo apt install rename`
+### Description: need to : `sudo apt install rename`
 
-> *Notes: Issue when renaming file without numbers collides with existing file name…*
+> _Notes: Issue when renaming file without numbers collides with existing file name…_
 
 code:
 
-    find . -name "* *" -type d | rename 's/ /_/g'   
+    find . -name "* *" -type d | rename 's/ /_/g'
     find . -name "* *" -type f | rename 's/ /_/g'
 
     ```sh
@@ -88,35 +87,35 @@ code:
 
 ### Description:
 
-> *Notes: ==&gt; sudo apt install wget*
+> _Notes: ==&gt; sudo apt install wget_
 
 code:
 
     wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
-------------------------------------------------------------------------
+---
 
 ### 3. Clean Out Messy Git Repo:
 
 ### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 
-> *Notes: To clear up clutter in repositories that only get used on your local machine.*
+> _Notes: To clear up clutter in repositories that only get used on your local machine._
 
 code:
 
-    find . -empty -type d -print -delete        
+    find . -empty -type d -print -delete
 
     find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
     find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
-------------------------------------------------------------------------
+---
 
 ### 4. clone all of a user’s git repositories
 
 ### Description: clone all of a user or organization’s git repositories.
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -144,7 +143,7 @@ code:
       cut -d \" -f 4 |
       xargs -L1 git clone
 
-------------------------------------------------------------------------
+---
 
 ### 5. Git Workflow
 
@@ -178,13 +177,13 @@ code:
     git commit -m"update"
     git push -u origin preview
 
-------------------------------------------------------------------------
+---
 
 ### 6. Recursive Unzip In Place
 
 ### Description: recursively unzips folders and then deletes the zip file by the same name.
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -192,13 +191,13 @@ code:
 
     find . -name "*.zip" -type f -print -delete
 
-------------------------------------------------------------------------
+---
 
 ### 7. git pull keeping local changes:
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -206,13 +205,13 @@ code:
     git pull
     git stash pop
 
-------------------------------------------------------------------------
+---
 
 ### 8. Prettier Code Formatter:
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -220,13 +219,13 @@ code:
 
     prettier --write .
 
-------------------------------------------------------------------------
+---
 
 ### 9. Pandoc
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -236,17 +235,17 @@ code:
 
     find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
 
-------------------------------------------------------------------------
+---
 
 ### 10. Gitpod Installs
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
-    sudo apt install tree 
+    sudo apt install tree
     sudo apt install pandoc -y
     sudo apt install rename -y
     sudo apt install black -y
@@ -260,25 +259,25 @@ code:
     prettier --write .
     npm-recursive-install
 
-------------------------------------------------------------------------
+---
 
 ### 11. Repo Utils Package:
 
 ### Description: my standard repo utis package
 
-> *Notes:*
+> _Notes:_
 
 code:
 
     npm i @bgoonz11/repoutils
 
-------------------------------------------------------------------------
+---
 
 ### 12. Unix Tree Package Usage:
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -296,13 +295,13 @@ code:
 
     tree -f >README.md
 
-------------------------------------------------------------------------
+---
 
 ### 13. Find & Replace string in file & folder names recursively..
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -314,19 +313,19 @@ code:
 
     find . -type d -exec rename 's/-main//g' {} +
 
-    rename 's/\.js\.download$/.js/' *.js\.download 
+    rename 's/\.js\.download$/.js/' *.js\.download
 
-    rename 's/\.html\.markdown$/.md/' *.html\.markdown 
+    rename 's/\.html\.markdown$/.md/' *.html\.markdown
 
     find . -type d -exec rename 's/es6//g' {} +
 
-------------------------------------------------------------------------
+---
 
 ### 14. Remove double extensions :
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -356,25 +355,25 @@ code:
         mv "${file}" "${file%.png}"
     done
 
-------------------------------------------------------------------------
+---
 
 ### 15. Truncate folder names down to 12 characters:
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
     for d in ./*; do mv $d ${d:0:12}; done
 
-------------------------------------------------------------------------
+---
 
 ### 16.Appendir.js
 
 ### Description: combine the contents of every file in the containing directory.
 
-> *Notes: this includes the contents of the file it’s self…*
+> _Notes: this includes the contents of the file it’s self…_
 
 code:
 
@@ -387,13 +386,13 @@ code:
       if (err) throw err;
     });
 
-------------------------------------------------------------------------
+---
 
 ### 17. Replace space in filename with underscore
 
 ### Description: followed by replace `'#' with '_'` in directory name
 
-> *Notes: Can be re-purposed to find and replace any set of strings in file or folder names.*
+> _Notes: Can be re-purposed to find and replace any set of strings in file or folder names._
 
 code:
 
@@ -401,13 +400,13 @@ code:
 
     find . -name "* *" -type d | rename 's/#/_/g'
 
-------------------------------------------------------------------------
+---
 
 ### 18. Filter & delete files by name and extension
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -425,13 +424,13 @@ code:
 
     find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
-------------------------------------------------------------------------
+---
 
 ### 19. Remove lines containing string:
 
 ### Description:
 
-> *Notes: Remove lines not containing* `'.js'`
+> _Notes: Remove lines not containing_ `'.js'`
 
     sudo sed -i '/\.js/!d' ./*scrap2.md
 
@@ -445,13 +444,13 @@ code:
 
     sudo sed -i '/author/d' ./*
 
-------------------------------------------------------------------------
+---
 
 ### 20. Remove duplicate lines from a text file
 
 ### Description:
 
-> *Notes: //…syntax of uniq…// $uniq \[OPTION\] \[INPUT\[OUTPUT\]\] The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn’t specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn’t specified then uniq writes to the standard output.*
+> _Notes: //…syntax of uniq…// $uniq \[OPTION\] \[INPUT\[OUTPUT\]\] The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn’t specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn’t specified then uniq writes to the standard output._
 
 Now, let’s understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 
@@ -460,13 +459,13 @@ code:
     sudo apt install uniq
     uniq -u input.txt output.txt
 
-------------------------------------------------------------------------
+---
 
 ### 21. Remove lines containing string:
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -495,13 +494,13 @@ code:
     sudo sed -i '/right\.html/d' ./index.html
     sudo sed -i '/right\.html/d' ./right.html
 
-------------------------------------------------------------------------
+---
 
-### 22. Zip directory excluding .git and node\_modules all the way down (Linux)
+### 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -511,20 +510,20 @@ code:
 
     printf "\nCreated: $1.$TSTAMP.zip\n"
 
-    # usage: 
+    # usage:
     # - zipdir thedir
     # - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
 
-    # if in windows/git-bash, add 'zip' command this way: 
+    # if in windows/git-bash, add 'zip' command this way:
     # https://stackoverflow.com/a/55749636/1482990
 
-------------------------------------------------------------------------
+---
 
 ### 23. Delete files containing a certain string:
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -532,13 +531,13 @@ code:
     vi doit.sh // check for murphy and his law
     source doit.sh
 
-------------------------------------------------------------------------
+---
 
 ### 24.
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -637,13 +636,13 @@ code:
 
     cmd $listing --sort=extension >>$html
 
-------------------------------------------------------------------------
+---
 
 ### 25. Index of Iframes
 
 ### Description: Creates an index.html file that contains all the files in the working directory or any of it’s sub folders as iframes instead of anchor tags.
 
-> *Notes: Useful Follow up Code:*
+> _Notes: Useful Follow up Code:_
 
 code:
 
@@ -741,19 +740,19 @@ code:
 
     cmd $listing --sort=extension >>$html
 
-------------------------------------------------------------------------
+---
 
 ### 26. Filter Corrupted Git Repo For Troublesome File:
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
     git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
-------------------------------------------------------------------------
+---
 
 ### 27. OVERWRITE LOCAL CHANGES:
 
@@ -761,7 +760,7 @@ code:
 
 Important: If you have any local changes, they will be lost. With or without — hard option, any local commits that haven’t been pushed will be lost.\[\*\] If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
 
-> *Notes: First, run a fetch to update all origin/ refs to latest:*
+> _Notes: First, run a fetch to update all origin/ refs to latest:_
 
 code:
 
@@ -782,27 +781,27 @@ code:
     git fetch --all
     git reset --hard origin/master
 
-------------------------------------------------------------------------
+---
 
 ### 28. Remove Submodules:
 
 ### Description: To remove a submodule you need to:
 
-> *Notes:*
+> _Notes:_
 
-> *Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path\_to\_submodule (no trailing slash). Run rm -rf .git/modules/path\_to\_submodule (no trailing slash). Commit git commit -m “Removed submodule “ Delete the now untracked submodule files rm -rf path\_to\_submodule*
+> _Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m “Removed submodule “ Delete the now untracked submodule files rm -rf path_to_submodule_
 
 code:
 
     git submodule deinit
 
-------------------------------------------------------------------------
+---
 
 ### 29. GET GISTS
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -816,49 +815,49 @@ code:
 
     wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
 
-------------------------------------------------------------------------
+---
 
 ### 30. Remove Remote OriginL
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
     git remote remove origin
 
-------------------------------------------------------------------------
+---
 
 ### 31. just clone .git folder:
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
     git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
-------------------------------------------------------------------------
+---
 
 ### 32. Undo recent pull request:
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
     git reset --hard master@{"10 minutes ago"}
 
-------------------------------------------------------------------------
+---
 
 ### 33. Lebab
 
 ### Description: ES5 → ES6
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -884,12 +883,12 @@ code:
     lebab --replace ./ --transform arg-rest
     lebab --replace ./ --transform for-each
     lebab --replace ./ --transform for-of
-    lebab --replace ./ --transform commonjs 
+    lebab --replace ./ --transform commonjs
     lebab --replace ./ --transform exponent
     lebab --replace ./ --transform multi-var
     lebab --replace ./ --transform template
     lebab --replace ./ --transform default-param
-    lebab --replace ./ --transform  destruct-param 
+    lebab --replace ./ --transform  destruct-param
     lebab --replace ./ --transform includes
     lebab --replace ./ --transform obj-method
     lebab --replace ./ --transform class
@@ -898,21 +897,21 @@ code:
     lebab --replace ./ --transform arg-rest
     lebab --replace ./ --transform for-each
     lebab --replace ./ --transform for-of
-    lebab --replace ./ --transform commonjs 
+    lebab --replace ./ --transform commonjs
     lebab --replace ./ --transform exponent
     lebab --replace ./ --transform multi-var
     lebab --replace ./ --transform template
     lebab --replace ./ --transform default-param
-    lebab --replace ./ --transform  destruct-param 
+    lebab --replace ./ --transform  destruct-param
     lebab --replace ./ --transform includes
 
-------------------------------------------------------------------------
+---
 
 ### 34. Troubleshoot Ubuntu Input/Output Error
 
 ### Description: Open Powershell as Administrator…
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -920,13 +919,13 @@ code:
 
      Get-Service LxssManager | Restart-Service
 
-------------------------------------------------------------------------
+---
 
 ### 35. Export Medium as Markdown
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -934,13 +933,13 @@ code:
 
     mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
 
-------------------------------------------------------------------------
+---
 
 ### 36. Delete files in violation of a given size range (100MB for git)
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
@@ -948,31 +947,31 @@ code:
 
     find . -size +98M -a -print -a -exec rm -f {} \;
 
-------------------------------------------------------------------------
+---
 
 ### 37. download all links of given file type
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
     wget -r -A.pdf https://overapi.com/git
 
-------------------------------------------------------------------------
+---
 
 ### 38. Kill all node processes
 
 ### Description:
 
-> *Notes:*
+> _Notes:_
 
 code:
 
     killall -s KILL node
 
-------------------------------------------------------------------------
+---
 
 ### 39. Remove string from file names recursively
 
@@ -984,23 +983,23 @@ code:
 
     find . -type f -exec rename 's/-master//g' {} +
 
-> *Notes: The same could be done for folder names by changing the* -type f *flag (for file) to a* -type d *flag (for directory)*
+> _Notes: The same could be done for folder names by changing the_ -type f _flag (for file) to a_ -type d _flag (for directory)_
 
     find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 
     find . -type d -exec rename 's/-master//g' {} +
 
-------------------------------------------------------------------------
+---
 
 ### 40. Remove spaces from file and folder names recursively
 
 ### Description: replaces spaces in file and folder names with an `_` underscore
 
-> *Notes: need to run* `sudo apt install rename` *to use this command*
+> _Notes: need to run_ `sudo apt install rename` _to use this command_
 
 code:
 
-    find . -name "* *" -type d | rename 's/ /_/g'   
+    find . -name "* *" -type d | rename 's/ /_/g'
     find . -name "* *" -type f | rename 's/ /_/g'
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 24, 2021](https://medium.com/p/3c7869fdae53).

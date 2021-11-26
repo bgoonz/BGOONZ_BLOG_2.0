@@ -49,7 +49,7 @@ thumb_image_alt: python logo
 
 -   print is the equivalent of console.log.
 
-> ‘print() == console.log()’
+> 'print() == console.log()’
 
 # # is used to make comments in your code.
 
@@ -372,9 +372,9 @@ Sets created by putting comma seperated values inside braces:**
 
 **enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
 
-## (0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)
+## (0, 'First’), (1, 'Second’), (2, 'Third’), (3, 'Fourth’)
 
-## (1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)
+## (1, 'First’), (2, 'Second’), (3, 'Third’), (4, 'Fourth’)
 
 > zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.
 > Functions that analyze iterable
@@ -413,7 +413,7 @@ Always Includes:
 
 > 1\. The for keyword
 > 2\. A variable name
-> 3\. The ‘in’ keyword
+> 3\. The 'in’ keyword
 > 4\. An iterable of some kid
 > 5\. A colon
 > 6\. On the next line, an indented block of code called the for clause.
@@ -446,9 +446,9 @@ _Prints age_
 
 **Getting tuples**
 
-_Prints (‘color’, ‘red’)_
+_Prints ('color’, 'red’)_
 
-_Prints (‘age’, 42)_
+_Prints ('age’, 42)_
 
 _Destructuring to values_
 

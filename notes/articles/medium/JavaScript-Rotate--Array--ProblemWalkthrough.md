@@ -1,9 +1,8 @@
-JavaScript Rotate (Array) ProblemWalkthrough
-============================================
+# JavaScript Rotate (Array) ProblemWalkthrough
 
 Explanation for Rotate Right
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -24,7 +23,7 @@ Explanation for Rotate Right
 
 **HINT:** you can use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" class="markup--anchor markup--p-anchor">Array#slice</a> to create a copy of an array
 
-------------------------------------------------------------------------
+---
 
 > JavaScript gives us four methods to add or remove items from the beginning or end of arrays:
 
@@ -66,7 +65,7 @@ Explanation for Rotate Right
 
 **We are being asked for two things:**
 
-1.  <span id="0000">To return an array with all the elements shifted over ‘num’ times.</span>
+1.  <span id="0000">To return an array with all the elements shifted over 'num’ times.</span>
 2.  <span id="8d90">To `NOT` mutate the original array</span>
 
 **Step 1.**  
@@ -92,7 +91,7 @@ We need to put some executable code within our for loop to be run during every c
 -   <span id="ab3a">`['a', 'b', 'c', 'd', 'e'];` (how it looks like at the start)</span>
 -   <span id="5fab">`['e', 'a', 'b', 'c', 'd'];` (after one run of the for loop)</span>
 -   <span id="e31e">`['d', 'e', 'a', 'b', 'c'];` (after second/last run of the for loop)</span>
--   <span id="aa2f">To accomplish this we first need to ‘`pop`' off or remove our last element.</span>
+-   <span id="aa2f">To accomplish this we first need to '`pop`' off or remove our last element.</span>
 -   <span id="d19e">Two things happen when we use this built-in function.</span>
 -   <span id="687c">Our copied array is mutated to lose it’s last ele.</span>
 -   <span id="392e">The removed element is stored in the variable we assigned to the function.</span>

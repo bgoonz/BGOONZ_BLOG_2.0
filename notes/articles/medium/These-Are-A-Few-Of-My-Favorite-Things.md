@@ -1,9 +1,8 @@
-These Are A Few Of My Favorite Things
-=====================================
+# These Are A Few Of My Favorite Things
 
 A web development student’s declassified school survival guide.
 
-------------------------------------------------------------------------
+---
 
 ### These Are A Few Of My Favorite Things
 
@@ -19,7 +18,7 @@ Also here’s an even better list by someone I don’t know but would be doing y
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/0*dfyNFX1AFX9E3Z6R" class="graf-image" /></figure>### Disclaimer: This guide roughly goes in reverse order of awesomeness… i.e. you have to scroll to get to the coolest content… sorry not sorry
 
-------------------------------------------------------------------------
+---
 
 > UPDATE:
 
@@ -73,9 +72,9 @@ Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible, AngularJ
 
 Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email. As <a href="http://daringfireball.net/" class="markup--anchor markup--p-anchor">John Gruber</a> writes on the <a href="http://daringfireball.net/projects/markdown/" class="markup--anchor markup--p-anchor">Markdown site</a>
 
-> *The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.*
+> _The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions._
 
-This text you see here is *actually* written in Markdown! To get a feel for Markdown’s syntax, type some text into the left window and watch the results in the right.
+This text you see here is _actually_ written in Markdown! To get a feel for Markdown’s syntax, type some text into the left window and watch the results in the right.
 
 Dillinger was first designed and developed by <a href="https://twitter.com/joemccann" class="markup--anchor markup--p-anchor">@joemccann</a> because he needed a decent Markdown editor. 2014, it got redesigned and coded by <a href="https://twitter.com/mrtnbroder" class="markup--anchor markup--p-anchor">@mrtnbroder</a>.
 
@@ -107,9 +106,9 @@ By default, Pens are public, meaning the Pen will have a URL you can share anywh
 
 Just by virtue of saving a public Pen, you’re also making it public to the world of CodePen. Your followers will see it in <a href="https://codepen.io/following" class="markup--anchor markup--p-anchor">their following page</a> and it will be available in global search.
 
-**Important Concept:** You can <a href="https://blog.codepen.io/documentation/privacy/" class="markup--anchor markup--p-anchor">make Pens private</a> as well. A private Pen will not show up in global search (we’ll even try to hide it from search engines) and won’t be on your public profile or anywhere else. *But you can still share a private Pen.* If you give someone the URL, they’ll still be able to see it.
+**Important Concept:** You can <a href="https://blog.codepen.io/documentation/privacy/" class="markup--anchor markup--p-anchor">make Pens private</a> as well. A private Pen will not show up in global search (we’ll even try to hide it from search engines) and won’t be on your public profile or anywhere else. _But you can still share a private Pen._ If you give someone the URL, they’ll still be able to see it.
 
-------------------------------------------------------------------------
+---
 
 ### 2.) Free Code Camp:
 
@@ -119,7 +118,7 @@ More than 40,000 people have gotten developer jobs after completing this —�
 
 And if you want to learn more math and computer science theory, we also have thousands of hours of video courses on <a href="https://youtube.com/freecodecamp" class="markup--anchor markup--p-anchor">freeCodeCamp’s YouTube channel</a>. If you want to get a developer job or freelance clients, programming skills will be just part of the puzzle. You also need to build your personal network and your reputation as a developer. You can do this on Twitter and GitHub, and also on <a href="https://forum.freecodecamp.org/" class="markup--anchor markup--p-anchor">the freeCodeCamp forum</a>.
 
-------------------------------------------------------------------------
+---
 
 ### 3.) Cloudconvert(and Pandoc):
 
@@ -138,7 +137,7 @@ Just upload the file you want to convert and CloudConvert gives you a list of fi
 
 CloudConvert supports over 200 formats from audio, spreadsheet, video, document, image, eBook, and presentation. And yes, CloudConvert is a safe platform that uses SSL encryption.
 
-------------------------------------------------------------------------
+---
 
 ### 4.) Pandoc:
 
@@ -204,7 +203,7 @@ It can create files in the following formats, which are not necessarily the same
 -   <span id="34a9"><a href="https://en.wikipedia.org/wiki/Web-based_slideshow" class="markup--anchor markup--li-anchor" title="Web-based slideshow">Web-based slideshows</a>: LaTeX Beamer, Slideous, Slidy, DZSlides, reveal.js and S5 variants</span>
 -   <span id="1cbf"><a href="https://en.wikipedia.org/wiki/Wiki_markup" class="markup--anchor markup--li-anchor" title="Wiki markup">Wiki markup</a>: <a href="https://en.wikipedia.org/wiki/DokuWiki" class="markup--anchor markup--li-anchor" title="DokuWiki">DokuWiki</a>, <a href="https://en.wikipedia.org/wiki/MediaWiki" class="markup--anchor markup--li-anchor" title="Document converter">MediaWiki</a>, <a href="https://en.wikipedia.org/wiki/Adobe_Muse" class="markup--anchor markup--li-anchor" title="Adobe Muse">Muse</a>, <a href="https://en.wikipedia.org/wiki/TikiWiki" class="markup--anchor markup--li-anchor" title="TikiWiki">TikiWiki</a>, <a href="https://en.wikipedia.org/wiki/TWiki" class="markup--anchor markup--li-anchor" title="TWiki">TWiki</a> and <a href="https://en.wikipedia.org/wiki/Vimwiki" class="markup--anchor markup--li-anchor">Vimwiki</a> variants</span>
 
-------------------------------------------------------------------------
+---
 
 ### 3.) Code Sandbox:
 
@@ -214,7 +213,7 @@ Codesandbox client templates for React, Vue, Angular, Preact, Svelte, Dojo, CX, 
 
 Pre-configured: Node.js, Angular, Adonis, Gatsby, Marko, Nuxt, Next, Sapper, Apollo, Ember, Nest, Styleguidist, MDX Deck, Gridsome, Quasar, Docusaurus, and Vuepress.
 
-------------------------------------------------------------------------
+---
 
 ### 4.) DirHTML
 
@@ -246,7 +245,7 @@ This enables me to take a folder full of my notes … no matter the file extens
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*uTU2LjT81NAVDZDskAvKzw.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### 5.) **Google Colaboratory**
 
@@ -283,7 +282,7 @@ Here’s a repo where I backup my gists… I keep hundreds:
 <a href="https://github.com/bgoonz/my-gists" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/my-gists"><strong>bgoonz/my-gists</strong><br />
 <em>Contribute to bgoonz/my-gists development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/my-gists" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### 7.) Screen To Gif:
 
@@ -310,7 +309,7 @@ You can also switch to the window and screen modes.
 -   <span id="ed71">Newer UI Beta</span>
 -   <span id="3c47">Enter selection mode, which lets you select a region, a window or an entire screen to capture.</span>
 
-------------------------------------------------------------------------
+---
 
 <a href="https://www.screentogif.com/features#webcam" class="markup--anchor markup--p-anchor">#</a>Webcam
 
@@ -320,17 +319,17 @@ You can also switch to the window and screen modes.
 -   <span id="29da">Select the maximum FPS of the capture.</span>
 -   <span id="c7c1">Resize the window to adjust the size of the capture.</span>
 
-------------------------------------------------------------------------
+---
 
 <a href="https://www.screentogif.com/features#sketchboard" class="markup--anchor markup--p-anchor">#</a>Sketch board
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*jRY7wVZR7yDX4eIR.png" class="graf-image" /></figure>The board recorder lets you capture your drawings automatically as you draw them.
 
--   <span id="724c">Enable the auto-capture or press Ctrl to toggle (*pauses* or *captures* it, depending if the auto-capture is enabled or disabled).</span>
+-   <span id="724c">Enable the auto-capture or press Ctrl to toggle (_pauses_ or _captures_ it, depending if the auto-capture is enabled or disabled).</span>
 -   <span id="6441">Select the maximum FPS of the capture.</span>
 -   <span id="33cf">Resize the window to adjust the size of the capture.</span>
 
-------------------------------------------------------------------------
+---
 
 ### <a href="https://www.screentogif.com/features#editor" class="markup--anchor markup--h3-anchor">#</a>Editor
 
@@ -371,7 +370,7 @@ You can also switch to the window and screen modes.
 -   <span id="ecfc">Watermarks (pick your own image).</span>
 -   <span id="3751">Cinemagraph (select parts of the animation to stay static or move).</span>
 
-------------------------------------------------------------------------
+---
 
 ### 8. <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" class="markup--anchor markup--h3-anchor">Traversy Media</a> (Free)
 
@@ -381,7 +380,7 @@ Traversy media is a youtube channel created by Brad Traversy. **His youtube chan
 
 #### While I am at it I will list some youtube videos/channels that I think provide amazing content … just for the love of sharing knowledge.
 
-------------------------------------------------------------------------
+---
 
 ### 9.) Stackbit:
 
@@ -425,7 +424,7 @@ Due to the nature of static site generators and how their development server wor
 
 Of course, in order for Stackbit to show you the preview of your site, your SSG’s development server must work without crashing.
 
-------------------------------------------------------------------------
+---
 
 ### 10.) File Locator Pro:
 
@@ -450,7 +449,7 @@ In the search result section, you can not only see a list of files that match yo
 <a href="https://www.ctrl.blog/entry/review-filelocator.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.ctrl.blog/entry/review-filelocator.html"><strong>FileLocator Lite and Pro review</strong><br />
 <em>Find "everything" with Lite Finding even more and do it faster with Pro Windows and tabs management, and keyboard…</em>www.ctrl.blog</a><a href="https://www.ctrl.blog/entry/review-filelocator.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### Rapid Fire Bonus Inclusions:
 
@@ -463,7 +462,7 @@ The best note taking app ever:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*G_bpCx8Yq7r126TW2m2LeQ.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Team wiki
 
@@ -485,7 +484,7 @@ Systems that keep notes organized. Add any type of content.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Py87Kt8JyWW_dNyr.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Gitbook:
 

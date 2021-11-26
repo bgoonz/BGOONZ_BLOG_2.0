@@ -217,37 +217,38 @@ function Z(t) {
     let l;
     let s;
     let n;
-    return (l = new R({ props: { href: t[3].path, $$slots: { default: [Y] }, $$scope: { ctx: t } } })),
-    {
-        c() {
-            (e = r('li')), b(l.$$.fragment), (s = w()), this.h();
-        },
-        l(t) {
-            e = c(t, 'LI', { class: !0 });
-            const n = a(e);
-            E(l.$$.fragment, n), (s = k(n)), n.forEach(o), this.h();
-        },
-        h() {
-            v(e, 'class', 'menu-item svelte-kua03s');
-        },
-        m(t, r) {
-            u(t, e, r), x(l, e, null), I(e, s), (n = !0);
-        },
-        p(t, e) {
-            const s = {};
-            1 & e && (s.href = t[3].path), 65 & e && (s.$$scope = { dirty: e, ctx: t }), l.$set(s);
-        },
-        i(t) {
-            n || ($(l.$$.fragment, t), (n = !0));
-        },
-        o(t) {
-            p(l.$$.fragment, t), (n = !1);
-        },
-        d(t) {
-            t && o(e), y(l);
+    return (
+        (l = new R({ props: { href: t[3].path, $$slots: { default: [Y] }, $$scope: { ctx: t } } })),
+        {
+            c() {
+                (e = r('li')), b(l.$$.fragment), (s = w()), this.h();
+            },
+            l(t) {
+                e = c(t, 'LI', { class: !0 });
+                const n = a(e);
+                E(l.$$.fragment, n), (s = k(n)), n.forEach(o), this.h();
+            },
+            h() {
+                v(e, 'class', 'menu-item svelte-kua03s');
+            },
+            m(t, r) {
+                u(t, e, r), x(l, e, null), I(e, s), (n = !0);
+            },
+            p(t, e) {
+                const s = {};
+                1 & e && (s.href = t[3].path), 65 & e && (s.$$scope = { dirty: e, ctx: t }), l.$set(s);
+            },
+            i(t) {
+                n || ($(l.$$.fragment, t), (n = !0));
+            },
+            o(t) {
+                p(l.$$.fragment, t), (n = !1);
+            },
+            d(t) {
+                t && o(e), y(l);
+            }
         }
-    }
-;
+    );
 }
 function tt(t) {
     let e;
@@ -307,15 +308,16 @@ function et(t, e, l) {
     let n;
     m(t, G, (t) => l(2, (n = t)));
     let { menuItem: r } = e;
-    return (t.$$set = (t) => {
-        'menuItem' in t && l(0, (r = t.menuItem));
-    }),
-    (t.$$.update = () => {
-        5 & t.$$.dirty &&
-            l(1, (s = n ? r.path.includes(/self-hosted\/\d\.\d\.\d/.test(n) ? n.replace(/\d\.\d\.\d/, 'latest') : n) : /\/docs\/?$/.test(r.path)));
-    }),
-    [r, s, n]
-;
+    return (
+        (t.$$set = (t) => {
+            'menuItem' in t && l(0, (r = t.menuItem));
+        }),
+        (t.$$.update = () => {
+            5 & t.$$.dirty &&
+                l(1, (s = n ? r.path.includes(/self-hosted\/\d\.\d\.\d/.test(n) ? n.replace(/\d\.\d\.\d/, 'latest') : n) : /\/docs\/?$/.test(r.path)));
+        }),
+        [r, s, n]
+    );
 }
 class lt extends t {
     constructor(t) {
@@ -498,7 +500,7 @@ function ht(t) {
                 E && E.m(l, null),
                 (h = !0),
                 d ||
-                    ((m = D(l, 'click', function(...args) {
+                    ((m = D(l, 'click', function (...args) {
                         V(t[1]) && t[1].apply(this, args);
                     })),
                     (d = !0));
@@ -1012,49 +1014,50 @@ function Ut(t) {
     function f(t, e) {
         return t[2] ? 0 : 1;
     }
-    return (l = f(t)),
-    (s = h[l] = i[l](t)),
-    {
-        c() {
-            (e = r('div')), s.c(), this.h();
-        },
-        l(t) {
-            e = c(t, 'DIV', { class: !0 });
-            const l = a(e);
-            s.l(l), l.forEach(o), this.h();
-        },
-        h() {
-            v(e, 'class', 'mobile-menu svelte-17tjvcy');
-        },
-        m(t, s) {
-            u(t, e, s), h[l].m(e, null), (n = !0);
-        },
-        p(t, [n]) {
-            let r = l;
-            (l = f(t)),
-                l === r
-                    ? h[l].p(t, n)
-                    : (M(),
-                      p(h[r], 1, 1, () => {
-                          h[r] = null;
-                      }),
-                      j(),
-                      (s = h[l]),
-                      s ? s.p(t, n) : ((s = h[l] = i[l](t)), s.c()),
-                      $(s, 1),
-                      s.m(e, null));
-        },
-        i(t) {
-            n || ($(s), (n = !0));
-        },
-        o(t) {
-            p(s), (n = !1);
-        },
-        d(t) {
-            t && o(e), h[l].d();
+    return (
+        (l = f(t)),
+        (s = h[l] = i[l](t)),
+        {
+            c() {
+                (e = r('div')), s.c(), this.h();
+            },
+            l(t) {
+                e = c(t, 'DIV', { class: !0 });
+                const l = a(e);
+                s.l(l), l.forEach(o), this.h();
+            },
+            h() {
+                v(e, 'class', 'mobile-menu svelte-17tjvcy');
+            },
+            m(t, s) {
+                u(t, e, s), h[l].m(e, null), (n = !0);
+            },
+            p(t, [n]) {
+                let r = l;
+                (l = f(t)),
+                    l === r
+                        ? h[l].p(t, n)
+                        : (M(),
+                          p(h[r], 1, 1, () => {
+                              h[r] = null;
+                          }),
+                          j(),
+                          (s = h[l]),
+                          s ? s.p(t, n) : ((s = h[l] = i[l](t)), s.c()),
+                          $(s, 1),
+                          s.m(e, null));
+            },
+            i(t) {
+                n || ($(s), (n = !0));
+            },
+            o(t) {
+                p(s), (n = !1);
+            },
+            d(t) {
+                t && o(e), h[l].d();
+            }
         }
-    }
-;
+    );
 }
 function _t(t, e, l) {
     let s;
@@ -1062,20 +1065,21 @@ function _t(t, e, l) {
     let r;
     m(t, G, (t) => l(3, (n = t))), m(t, ot, (t) => l(2, (r = t)));
     let { MENU: c } = e;
-    return (t.$$set = (t) => {
-        'MENU' in t && l(0, (c = t.MENU));
-    }),
-    (t.$$.update = () => {
-        9 & t.$$.dirty &&
-            l(
-                1,
-                (s = c.find(({ path: t }) =>
-                    n ? t.includes(/self-hosted\/\d\.\d\.\d/.test(n) ? n.replace(/\d\.\d\.\d/, 'latest') : n) : /\/docs$/.test(t)
-                ))
-            );
-    }),
-    [c, s, r, n]
-;
+    return (
+        (t.$$set = (t) => {
+            'MENU' in t && l(0, (c = t.MENU));
+        }),
+        (t.$$.update = () => {
+            9 & t.$$.dirty &&
+                l(
+                    1,
+                    (s = c.find(({ path: t }) =>
+                        n ? t.includes(/self-hosted\/\d\.\d\.\d/.test(n) ? n.replace(/\d\.\d\.\d/, 'latest') : n) : /\/docs$/.test(t)
+                    ))
+                );
+        }),
+        [c, s, r, n]
+    );
 }
 class St extends t {
     constructor(t) {
@@ -1193,42 +1197,44 @@ function Lt(t, e, l) {
     m(t, ot, (t) => l(3, (s = t)));
     let c = !1;
     let a = 'Quick search';
-    return K(() => {
-        if (!navigator.userAgent.toLowerCase().match(/mobile/i)) {
-            const t = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? '⌘' : 'Ctrl';
-            l(2, (a += ` ${t}+K`));
-        }
-    }),
-    (t.$$.update = () => {
-        67 & t.$$.dirty &&
-            n &&
-            (r || c) &&
-            window.docsearch &&
-            window.docsearch({ apiKey: '1a880f3060e9ff81ff84087fc90878fc', indexName: 'gitpod', inputSelector: `#${Ct}`, debug: !1 });
-    }),
-    [
-        n,
-        r,
-        a,
-        s,
-        () => {
-            l(6, (c = !0));
-        },
-        ({ctrlKey, metaKey, key}) => {
-            (ctrlKey || metaKey) && 'k' === key && n.focus();
-        },
-        c,
-        t => {
-            P[t ? 'unshift' : 'push'](() => {
-                (r = t), l(1, r);
-            });
-        },
-        t => {
-            P[t ? 'unshift' : 'push'](() => {
-                (n = t), l(0, n);
-            });
-        }
-    ];
+    return (
+        K(() => {
+            if (!navigator.userAgent.toLowerCase().match(/mobile/i)) {
+                const t = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? '⌘' : 'Ctrl';
+                l(2, (a += ` ${t}+K`));
+            }
+        }),
+        (t.$$.update = () => {
+            67 & t.$$.dirty &&
+                n &&
+                (r || c) &&
+                window.docsearch &&
+                window.docsearch({ apiKey: '1a880f3060e9ff81ff84087fc90878fc', indexName: 'gitpod', inputSelector: `#${Ct}`, debug: !1 });
+        }),
+        [
+            n,
+            r,
+            a,
+            s,
+            () => {
+                l(6, (c = !0));
+            },
+            ({ ctrlKey, metaKey, key }) => {
+                (ctrlKey || metaKey) && 'k' === key && n.focus();
+            },
+            c,
+            (t) => {
+                P[t ? 'unshift' : 'push'](() => {
+                    (r = t), l(1, r);
+                });
+            },
+            (t) => {
+                P[t ? 'unshift' : 'push'](() => {
+                    (n = t), l(0, n);
+                });
+            }
+        ]
+    );
 }
 class At extends t {
     constructor(t) {

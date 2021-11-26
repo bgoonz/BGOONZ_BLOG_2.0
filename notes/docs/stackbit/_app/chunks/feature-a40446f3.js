@@ -120,184 +120,192 @@ function C(t, e, r) {
     let { narrow: o = !1 } = e;
     let { skipToEnd: u = !1 } = e;
     let { alt: h = '' } = e;
-    return $(() => {
-        let t;
-        let e;
-        let i;
-        let c;
-        let h;
-        let f;
-        let p;
-        let d;
-        let m = s.getContext('2d');
-        function g() {
-            (c = n.clientWidth), (h = n.clientHeight);
-            let l = devicePixelRatio > 1 ? 2 : 1;
-            r(5, (s.width = l * c), s),
-                r(5, (s.height = l * h), s),
-                r(5, (s.style.width = `${c}px`), s),
-                r(5, (s.style.height = `${h}px`), s),
-                m.scale(l, l),
-                c < 500
-                    ? ((t = 12), (e = 19), (i = { top: 52 + e, right: 10, bottom: 15, left: 15 }))
-                    : ((t = o ? 16 : 18), (e = o ? 28 : 33), (i = { top: 52 + e, right: o ? 20 : 40, bottom: o ? 20 : 48, left: o ? 20 : 40 })),
-                (m.font = `${t}px SF Mono, monospace`),
-                (m.fillStyle = a.black),
-                (f = m.measureText(' '.repeat(64)).width / 64),
-                (p = Math.floor((c - i.left - i.right) / f));
-        }
-        function $() {
-            let t = (t => {
-                let e;
-                let r = a.black;
-                let n = [];
-                let s = 0;
-                function l() {
-                    (s = 0), (e = { input: [], output: [] }), n.push(e);
-                }
-                function i(t, n) {
-                    n.replace(
-                        /(\u001b\[30m)|(\u001b\[31m)|(\u001b\[32m)|(\u001b\[33m)|(\u001b\[34m)|(\u001b\[39m)|([^\u001b]+)/g,
-                        (n, i, c, o, u, h, f, d) => {
-                            if (
-                                (i && (r = a.black), c && (r = a.orange), o && (r = a.green), u && (r = a.orange), h && (r = a.blue), f && (r = a.black), d)
-                            ) {
-                                let a;
-                                let n = 0;
-                                let i = Math.min(d.length, p - s);
-                                for (; (a = d.slice(n, i)); )
-                                    e[t].push({ type: t, color: r, text: a }),
-                                        (s += i - n),
-                                        s >= p && i < d.length && l(),
-                                        (n = i),
-                                        (i = Math.min(d.length, i + p - s));
-                            }
-                        }
-                    );
-                }
-                for (let a of t.split('\n'))
-                    if ((l(), a.includes('$') || a.includes('>') || a.includes('#'))) {
-                        let [, t, e] = a.match(/([^$>#]+(?:[$>#]))(.*)/);
-                        i('output', t), i('input', e);
-                    } else i('output', a);
-                function c(t) {
-                    return t.reduce((t, {text}) => t + text.length, 0);
-                }
-                for (let a of n) (a.input.characters = c(a.input)), (a.output.characters = c(a.output));
-                return n;
-            })(l);
-            d = u
-                ? { tick: -1, line: t.length - 1, character: t[t.length - 1].input.characters - 1, lines: t, triggers: { line: 0, character: -1 } }
-                : { tick: -1, line: -1, character: -1, lines: t, triggers: { line: 0, character: -1 } };
-        }
-        function x(t) {
-            return d.tick === t;
-        }
-        function v(t, e) {
-            return Math.floor(t + (e - t) * Math.random());
-        }
-        g(), $();
-        let w =
-            ((b = () => {
-                c !== n.clientWidth && (g(), $());
-            }),
-            (k = 1e3),
-            (E = !1),
-            function(...args) {
-                if (!k) return b.apply(this, args);
-                const t = this;
-                const e = args;
-                const r = E && !y;
-                return clearTimeout(y),
-                (y = setTimeout(() => {
-                    if (((y = null), !r)) return b.apply(t, e);
-                }, k)),
-                r ? b.apply(this, args) : void 0;
-            });
-        var b;
-        var k;
-        var E;
-        var y;
-        window.addEventListener('resize', w);
-        let I = !0;
-        let T = !1;
-        const F = new IntersectionObserver(([t]) => {
-            T = t.isIntersecting;
-        });
-        return F.observe(n),
-        requestAnimationFrame(function t(r) {
-            I &&
-                (requestAnimationFrame(t),
-                T &&
-                    (d.tick += 1, x(d.triggers.line) &&
-                    d.line < d.lines.length - 1 &&
-                    ((d.line += 1),
-                    (d.character = 0),
-                    d.character < d.lines[d.line].input.characters - 1
-                        ? (d.triggers.character = d.tick + v(2, 3))
-                        : (d.triggers.line = d.tick + v(1, 2))), x(d.triggers.character) &&
-                    (d.character < d.lines[d.line].input.characters - 1
-                        ? ((d.character += 1), (d.triggers.character = d.tick + v(2, 3)))
-                        : d.line < d.lines.length - 1 &&
-                          (d.lines[d.line + 1].output.characters ? (d.triggers.line = d.tick + v(20, 30)) : (d.triggers.line = d.tick + v(2, 3)))), (t => {
-                    m.clearRect(0, 0, c, h);
-                    let r = 0;
-                    d.line * e + i.top >= h - i.bottom && (r = d.line * e - h + i.top + i.bottom);
-                    for (let a = 0; a <= d.line; a++) {
-                        let n = 0;
-                        for (let t of d.lines[a].output)
-                            (m.fillStyle = t.color), m.fillText(t.text, i.left + n * f, i.top + e * a - r), (n += t.text.length);
-                        let s = n;
-                        for (let l of d.lines[a].input) {
-                            if (((m.fillStyle = l.color), a === d.line)) {
-                                let c = d.character - (n - s) + 1;
-                                m.fillText(l.text.slice(0, c), i.left + n * f, i.top + e * a - r),
-                                    t % 1e3 < 500 && m.fillRect(i.left + (n + c) * f + 0.5, i.top + e * a - r - 0.575 * e, f, 0.7 * e);
-                            } else m.fillText(l.text, i.left + n * f, i.top + e * a - r);
-                            n += l.text.length;
-                        }
+    return (
+        $(() => {
+            let t;
+            let e;
+            let i;
+            let c;
+            let h;
+            let f;
+            let p;
+            let d;
+            let m = s.getContext('2d');
+            function g() {
+                (c = n.clientWidth), (h = n.clientHeight);
+                let l = devicePixelRatio > 1 ? 2 : 1;
+                r(5, (s.width = l * c), s),
+                    r(5, (s.height = l * h), s),
+                    r(5, (s.style.width = `${c}px`), s),
+                    r(5, (s.style.height = `${h}px`), s),
+                    m.scale(l, l),
+                    c < 500
+                        ? ((t = 12), (e = 19), (i = { top: 52 + e, right: 10, bottom: 15, left: 15 }))
+                        : ((t = o ? 16 : 18), (e = o ? 28 : 33), (i = { top: 52 + e, right: o ? 20 : 40, bottom: o ? 20 : 48, left: o ? 20 : 40 })),
+                    (m.font = `${t}px SF Mono, monospace`),
+                    (m.fillStyle = a.black),
+                    (f = m.measureText(' '.repeat(64)).width / 64),
+                    (p = Math.floor((c - i.left - i.right) / f));
+            }
+            function $() {
+                let t = ((t) => {
+                    let e;
+                    let r = a.black;
+                    let n = [];
+                    let s = 0;
+                    function l() {
+                        (s = 0), (e = { input: [], output: [] }), n.push(e);
                     }
-                })(r)));
+                    function i(t, n) {
+                        n.replace(
+                            /(\u001b\[30m)|(\u001b\[31m)|(\u001b\[32m)|(\u001b\[33m)|(\u001b\[34m)|(\u001b\[39m)|([^\u001b]+)/g,
+                            (n, i, c, o, u, h, f, d) => {
+                                if (
+                                    (i && (r = a.black), c && (r = a.orange), o && (r = a.green), u && (r = a.orange), h && (r = a.blue), f && (r = a.black), d)
+                                ) {
+                                    let a;
+                                    let n = 0;
+                                    let i = Math.min(d.length, p - s);
+                                    for (; (a = d.slice(n, i)); )
+                                        e[t].push({ type: t, color: r, text: a }),
+                                            (s += i - n),
+                                            s >= p && i < d.length && l(),
+                                            (n = i),
+                                            (i = Math.min(d.length, i + p - s));
+                                }
+                            }
+                        );
+                    }
+                    for (let a of t.split('\n'))
+                        if ((l(), a.includes('$') || a.includes('>') || a.includes('#'))) {
+                            let [, t, e] = a.match(/([^$>#]+(?:[$>#]))(.*)/);
+                            i('output', t), i('input', e);
+                        } else i('output', a);
+                    function c(t) {
+                        return t.reduce((t, { text }) => t + text.length, 0);
+                    }
+                    for (let a of n) (a.input.characters = c(a.input)), (a.output.characters = c(a.output));
+                    return n;
+                })(l);
+                d = u
+                    ? { tick: -1, line: t.length - 1, character: t[t.length - 1].input.characters - 1, lines: t, triggers: { line: 0, character: -1 } }
+                    : { tick: -1, line: -1, character: -1, lines: t, triggers: { line: 0, character: -1 } };
+            }
+            function x(t) {
+                return d.tick === t;
+            }
+            function v(t, e) {
+                return Math.floor(t + (e - t) * Math.random());
+            }
+            g(), $();
+            let w =
+                ((b = () => {
+                    c !== n.clientWidth && (g(), $());
+                }),
+                (k = 1e3),
+                (E = !1),
+                function (...args) {
+                    if (!k) return b.apply(this, args);
+                    const t = this;
+                    const e = args;
+                    const r = E && !y;
+                    return (
+                        clearTimeout(y),
+                        (y = setTimeout(() => {
+                            if (((y = null), !r)) return b.apply(t, e);
+                        }, k)),
+                        r ? b.apply(this, args) : void 0
+                    );
+                });
+            var b;
+            var k;
+            var E;
+            var y;
+            window.addEventListener('resize', w);
+            let I = !0;
+            let T = !1;
+            const F = new IntersectionObserver(([t]) => {
+                T = t.isIntersecting;
+            });
+            return (
+                F.observe(n),
+                requestAnimationFrame(function t(r) {
+                    I &&
+                        (requestAnimationFrame(t),
+                        T &&
+                            ((d.tick += 1),
+                            x(d.triggers.line) &&
+                                d.line < d.lines.length - 1 &&
+                                ((d.line += 1),
+                                (d.character = 0),
+                                d.character < d.lines[d.line].input.characters - 1
+                                    ? (d.triggers.character = d.tick + v(2, 3))
+                                    : (d.triggers.line = d.tick + v(1, 2))),
+                            x(d.triggers.character) &&
+                                (d.character < d.lines[d.line].input.characters - 1
+                                    ? ((d.character += 1), (d.triggers.character = d.tick + v(2, 3)))
+                                    : d.line < d.lines.length - 1 &&
+                                      (d.lines[d.line + 1].output.characters ? (d.triggers.line = d.tick + v(20, 30)) : (d.triggers.line = d.tick + v(2, 3)))),
+                            ((t) => {
+                                m.clearRect(0, 0, c, h);
+                                let r = 0;
+                                d.line * e + i.top >= h - i.bottom && (r = d.line * e - h + i.top + i.bottom);
+                                for (let a = 0; a <= d.line; a++) {
+                                    let n = 0;
+                                    for (let t of d.lines[a].output)
+                                        (m.fillStyle = t.color), m.fillText(t.text, i.left + n * f, i.top + e * a - r), (n += t.text.length);
+                                    let s = n;
+                                    for (let l of d.lines[a].input) {
+                                        if (((m.fillStyle = l.color), a === d.line)) {
+                                            let c = d.character - (n - s) + 1;
+                                            m.fillText(l.text.slice(0, c), i.left + n * f, i.top + e * a - r),
+                                                t % 1e3 < 500 && m.fillRect(i.left + (n + c) * f + 0.5, i.top + e * a - r - 0.575 * e, f, 0.7 * e);
+                                        } else m.fillText(l.text, i.left + n * f, i.top + e * a - r);
+                                        n += l.text.length;
+                                    }
+                                }
+                            })(r)));
+                }),
+                () => {
+                    (I = !1), window.removeEventListener('resize', w), F.disconnect();
+                }
+            );
         }),
-        () => {
-            (I = !1), window.removeEventListener('resize', w), F.disconnect();
-        }
-    ;
-    }),
-    (t.$$set = (t) => {
-        'source' in t && r(6, (l = t.source)),
-            'dark' in t && r(0, (i = t.dark)),
-            'shadow' in t && r(1, (c = t.shadow)),
-            'narrow' in t && r(2, (o = t.narrow)),
-            'skipToEnd' in t && r(7, (u = t.skipToEnd)),
-            'alt' in t && r(3, (h = t.alt));
-    }),
-    (t.$$.update = () => {
-        1 & t.$$.dirty &&
-            (a = i
-                ? { black: '#F9F9F9', orange: '#fc8800', green: '#57c700', blue: '#FFE4BC' }
-                : { black: 'rgba(18, 16, 12, 0.7)', orange: '#fc8800', green: '#57c700', blue: '#0099EF' });
-    }),
-    [
-        i,
-        c,
-        o,
-        h,
-        n,
-        s,
-        l,
-        u,
-        t => {
-            x[t ? 'unshift' : 'push'](() => {
-                (s = t), r(5, s);
-            });
-        },
-        t => {
-            x[t ? 'unshift' : 'push'](() => {
-                (n = t), r(4, n);
-            });
-        }
-    ];
+        (t.$$set = (t) => {
+            'source' in t && r(6, (l = t.source)),
+                'dark' in t && r(0, (i = t.dark)),
+                'shadow' in t && r(1, (c = t.shadow)),
+                'narrow' in t && r(2, (o = t.narrow)),
+                'skipToEnd' in t && r(7, (u = t.skipToEnd)),
+                'alt' in t && r(3, (h = t.alt));
+        }),
+        (t.$$.update = () => {
+            1 & t.$$.dirty &&
+                (a = i
+                    ? { black: '#F9F9F9', orange: '#fc8800', green: '#57c700', blue: '#FFE4BC' }
+                    : { black: 'rgba(18, 16, 12, 0.7)', orange: '#fc8800', green: '#57c700', blue: '#0099EF' });
+        }),
+        [
+            i,
+            c,
+            o,
+            h,
+            n,
+            s,
+            l,
+            u,
+            (t) => {
+                x[t ? 'unshift' : 'push'](() => {
+                    (s = t), r(5, s);
+                });
+            },
+            (t) => {
+                x[t ? 'unshift' : 'push'](() => {
+                    (n = t), r(4, n);
+                });
+            }
+        ]
+    );
 }
 class M extends t {
     constructor(t) {
@@ -312,7 +320,8 @@ function S(t) {
     let $ = `${t[1].text}`;
 
     let x =
-        t[0] && (t => {
+        t[0] &&
+        ((t) => {
             let e;
             let r;
             return {
@@ -380,7 +389,8 @@ function G(t) {
     let O = (t[1] || t[0]) && S(t);
 
     let j =
-        t[4] && (t => {
+        t[4] &&
+        ((t) => {
             let e;
             let r;
             return (
@@ -410,7 +420,8 @@ function G(t) {
         })(t);
 
     let q =
-        t[5] && (t => {
+        t[5] &&
+        ((t) => {
             let e;
             let r;
             return {
@@ -434,7 +445,8 @@ function G(t) {
         })(t);
 
     let R =
-        t[6] && (t => {
+        t[6] &&
+        ((t) => {
             let e;
             let r;
             let a;

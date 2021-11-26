@@ -477,7 +477,7 @@ A quick word of caution on Windows
 
 Once you have installed Python, you can launch the Python Shell.
 
--   Windows - Launch cmd prompt by typing in ‘cmd’ command.
+-   Windows - Launch cmd prompt by typing in 'cmd’ command.
 -   Mac or Linux - Launch up terminal.
 
 Command to launch Python 3 is different in Mac.
@@ -607,9 +607,9 @@ Using our knowledge of school math, let’s try `5 X 5`.
 
 The Python Shell hits back at us, saying “_invalid syntax_”. This is how Python complains, when it doesn’t fully understand the code you type in. Here, it says our code has a “**SyntaxError**”.
 
-The reason why it complains, is because ‘`X`’ is not a valid **operator** in Python.
+The reason why it complains, is because '`X`’ is not a valid **operator** in Python.
 
-The way you can do multiplication is by using the ‘`*`’ _operator_ .
+The way you can do multiplication is by using the '`*`’ _operator_ .
 
 “_5 into 5_” is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
 
@@ -1409,7 +1409,7 @@ When we run a `for` loop, we need to specify the range of values - `1` to `10` o
     >>> range(1,10)    range(1, 10)
 ```
 
-The syntax of the `for` loop is: `for i in range(1, 10): ...`. Here, `i` is the name of the **control variable**. In Python, you need to put a colon, ‘`:`’, and in the next line give indentation.
+The syntax of the `for` loop is: `for i in range(1, 10): ...`. Here, `i` is the name of the **control variable**. In Python, you need to put a colon, '`:`’, and in the next line give indentation.
 
 ```python
     >>> for i in range(1,10):    ...   print(i)    ...    1    2    3    4    5    6    7    8    9
@@ -2270,7 +2270,7 @@ Let’s get started with creating a simple script file.
 
 We want to type in a simple Python script, or a piece of Python code, such as `print("Hello world")`. Does it get any simpler than this?
 
-We’ll save this into any folder on our hard disk, with a name ‘first.py’ .
+We’ll save this into any folder on our hard disk, with a name 'first.py’ .
 
 _**first.py**_
 
@@ -2278,12 +2278,12 @@ _**first.py**_
 print("Hello world")
 ```
 
-The ‘.py’ is not really mandatory, but typically all python files end with a ‘.py’ extension.
+The '.py’ is not really mandatory, but typically all python files end with a '.py’ extension.
 
 Here’s how you can run it:
 
 -   Launch your terminal, or command prompt
--   ‘cd’ to the folder where this python script file is saved
+-   'cd’ to the folder where this python script file is saved
 -   execute the command `python first.py`
 
 You will see that `Hello World` will be printed.
@@ -2377,17 +2377,17 @@ Launch the VSCode IDE. You’ll see that it takes a little while to launch the f
 
 We would want to create a number of Python files. All these files will be in a project. You can think of our project as a collection of Python scripts, or modules.
 
-To get started, let’s create a new project by clicking ‘create new project’. Let’s name it - ‘01-first-python-project’.
+To get started, let’s create a new project by clicking 'create new project’. Let’s name it - '01-first-python-project’.
 
 Right now there are no files in the project.
 
 Let’s create our first Python file, using the IDE.
 
-The way you can do that is by saying ‘right-click’ -&gt; ‘new’ -&gt; ‘Python file’, and then we’ll give this a name of ‘hello_world’, and click OK.
+The way you can do that is by saying 'right-click’ -&gt; 'new’ -&gt; 'Python file’, and then we’ll give this a name of 'hello_world’, and click OK.
 
 Now you can go ahead and write your first Python program. Let’s write some simple code, like `print("Hello World")`, and save it.
 
-You can do a right-click here, and say ‘Run hello_world’.
+You can do a right-click here, and say 'Run hello_world’.
 
 A small window comes up below, which shows the output. It says `'Hello World'`.
 
@@ -2528,7 +2528,7 @@ If you can do `number1 // number2`, can you also do this: `number1 //= number2`?
     >>> number1 //= 2    >>> number1    2
 ```
 
-`5 ** 3` is `5` ‘to the power of’ `3`, which is `5 * 5 * 5`, or `125`.
+`5 ** 3` is `5` 'to the power of’ `3`, which is `5 * 5 * 5`, or `125`.
 
 ```python
     >>> 5 ** 3    125    >>> pow(5,3)    125
@@ -2865,7 +2865,7 @@ How do we get input from the user? We want to get input from the console, and as
     value = input("Enter a Value: ")    print("you entered ", value)
 ```
 
-We can call the `input()` method with a text ‘prompt’, such as `"Enter A Value: "`. What we can initially do here, is print the value which was entered, back to the console, by `print("you entered ", integer_value)`.
+We can call the `input()` method with a text 'prompt’, such as `"Enter A Value: "`. What we can initially do here, is print the value which was entered, back to the console, by `print("you entered ", integer_value)`.
 
 An interesting point to explore here, is the type of data input at the console.
 
@@ -3237,7 +3237,7 @@ A new object is created with value `'HELLO'` at a different location `B`.
 
 A reference ot location `B` is stored into `message` variable.
 
-Summary : The original value at location `A` has not changed and cannot be changed for `str` variables. Hence ‘str’ objects are immutable.
+Summary : The original value at location `A` has not changed and cannot be changed for `str` variables. Hence 'str’ objects are immutable.
 
 Variables are just names referring to a location. They don’t really contain the value. Variables contain a reference to the location that contains the object.
 
@@ -4418,7 +4418,7 @@ A quick word of caution on Windows
 
 Once you have installed Python, you can launch the Python Shell.
 
--   Windows - Launch cmd prompt by typing in ‘cmd’ command.
+-   Windows - Launch cmd prompt by typing in 'cmd’ command.
 -   Mac or Linux - Launch up terminal.
 
 Command to launch Python 3 is different in Mac.
@@ -4552,9 +4552,9 @@ Using our knowledge of school math, let’s try `5 X 5`.
 
 The Python Shell hits back at us, saying “_invalid syntax_”. This is how Python complains, when it doesn’t fully understand the code you type in. Here, it says our code has a “**SyntaxError**”.
 
-The reason why it complains, is because ‘`X`’ is not a valid **operator** in Python.
+The reason why it complains, is because '`X`’ is not a valid **operator** in Python.
 
-The way you can do multiplication is by using the ‘`*`’ _operator_ .
+The way you can do multiplication is by using the '`*`’ _operator_ .
 
 “_5 into 5_” is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
 
@@ -5593,7 +5593,7 @@ When we run a `for` loop, we need to specify the range of values - `1` to `10` o
     range(1, 10)
 ```
 
-The syntax of the `for` loop is: `for i in range(1, 10): ...`. Here, `i` is the name of the **control variable**. In Python, you need to put a colon, ‘`:`’, and in the next line give indentation.
+The syntax of the `for` loop is: `for i in range(1, 10): ...`. Here, `i` is the name of the **control variable**. In Python, you need to put a colon, '`:`’, and in the next line give indentation.
 
 ```python
     >>> for i in range(1,10):
@@ -6968,7 +6968,7 @@ Let’s get started with creating a simple script file.
 
 We want to type in a simple Python script, or a piece of Python code, such as `print("Hello world")`. Does it get any simpler than this?
 
-We’ll save this into any folder on our hard disk, with a name ‘first.py’ .
+We’ll save this into any folder on our hard disk, with a name 'first.py’ .
 
 _**first.py**_
 
@@ -6976,12 +6976,12 @@ _**first.py**_
 print("Hello world")
 ```
 
-The ‘.py’ is not really mandatory, but typically all python files end with a ‘.py’ extension.
+The '.py’ is not really mandatory, but typically all python files end with a '.py’ extension.
 
 Here’s how you can run it:
 
 -   Launch your terminal, or command prompt
--   ‘cd’ to the folder where this python script file is saved
+-   'cd’ to the folder where this python script file is saved
 -   execute the command `python first.py`
 
 You will see that `Hello World` will be printed.
@@ -7075,17 +7075,17 @@ Launch the VSCode IDE. You’ll see that it takes a little while to launch the f
 
 We would want to create a number of Python files. All these files will be in a project. You can think of our project as a collection of Python scripts, or modules.
 
-To get started, let’s create a new project by clicking ‘create new project’. Let’s name it - ‘01-first-python-project’.
+To get started, let’s create a new project by clicking 'create new project’. Let’s name it - '01-first-python-project’.
 
 Right now there are no files in the project.
 
 Let’s create our first Python file, using the IDE.
 
-The way you can do that is by saying ‘right-click’ -&gt; ‘new’ -&gt; ‘Python file’, and then we’ll give this a name of ‘hello_world’, and click OK.
+The way you can do that is by saying 'right-click’ -&gt; 'new’ -&gt; 'Python file’, and then we’ll give this a name of 'hello_world’, and click OK.
 
 Now you can go ahead and write your first Python program. Let’s write some simple code, like `print("Hello World")`, and save it.
 
-You can do a right-click here, and say ‘Run hello_world’.
+You can do a right-click here, and say 'Run hello_world’.
 
 A small window comes up below, which shows the output. It says `'Hello World'`.
 
@@ -7282,7 +7282,7 @@ If you can do `number1 // number2`, can you also do this: `number1 //= number2`?
     2
 ```
 
-`5 ** 3` is `5` ‘to the power of’ `3`, which is `5 * 5 * 5`, or `125`.
+`5 ** 3` is `5` 'to the power of’ `3`, which is `5 * 5 * 5`, or `125`.
 
 ```python
     >>> 5 ** 3
@@ -7833,7 +7833,7 @@ How do we get input from the user? We want to get input from the console, and as
     print("you entered ", value)
 ```
 
-We can call the `input()` method with a text ‘prompt’, such as `"Enter A Value: "`. What we can initially do here, is print the value which was entered, back to the console, by `print("you entered ", integer_value)`.
+We can call the `input()` method with a text 'prompt’, such as `"Enter A Value: "`. What we can initially do here, is print the value which was entered, back to the console, by `print("you entered ", integer_value)`.
 
 An interesting point to explore here, is the type of data input at the console.
 
@@ -8372,7 +8372,7 @@ A new object is created with value `'HELLO'` at a different location `B`.
 
 A reference ot location `B` is stored into `message` variable.
 
-Summary : The original value at location `A` has not changed and cannot be changed for `str` variables. Hence ‘str’ objects are immutable.
+Summary : The original value at location `A` has not changed and cannot be changed for `str` variables. Hence 'str’ objects are immutable.
 
 Variables are just names referring to a location. They don’t really contain the value. Variables contain a reference to the location that contains the object.
 

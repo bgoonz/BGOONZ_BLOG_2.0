@@ -1,9 +1,8 @@
-Most Common Javascript Errors
-=============================
+# Most Common Javascript Errors
 
 Written in quiz format
 
-------------------------------------------------------------------------
+---
 
 ### Most Common Javascript Errors
 
@@ -38,7 +37,7 @@ Written in quiz format
       console.log("I'm broke")
     }}
 
--   <span id="d2b1">SyntaxError: Unexpected token ‘}’</span>
+-   <span id="d2b1">SyntaxError: Unexpected token '}’</span>
 
 **5. What kind of error will the below code throw when executed?**
 
