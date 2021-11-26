@@ -168,10 +168,10 @@ seo:
           value: Showcase
           keyName: property
         - name: 'og:description'
-          value: This is the showcase page
+          value: project showcase
           keyName: property
         - name: 'og:image'
-          value: images/5.jpg
+          value: images/My Post-4ecb169f.png
           keyName: property
           relativeUrl: true
         - name: 'twitter:card'

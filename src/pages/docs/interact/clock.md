@@ -17,3 +17,6 @@ template: docs
 
 <iframe src="https://observablehq.com/embed/1b6399182c98cd36@480?cells=chart%2Cviewof+date" loading="lazy"
 width="90%" height="629" frameborder="0">
+
+<iframe src="https://codepen.io/bgoonz/full/QWgYoBp" loading="lazy"
+width="90%" height="629" frameborder="0">

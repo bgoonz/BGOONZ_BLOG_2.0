@@ -1,6 +1,8 @@
 ---
-title: Quick Reference
-excerpt: In this section you'll find basic information about Web-Dev-Hub and how to use it.
+title: QuickRef
+excerpt: >-
+    In this section you'll find basic information about Web-Dev-Hub and how to use
+    it.
 seo:
     title: Cheat Sheets
     description: This is the Cheat Sheets page
@@ -23,6 +25,10 @@ seo:
 template: docs
 ---
 
-<iframe src="https://inspiring-jennings-d14689.netlify.app/" height="1600px" width="100%" style="zoom:0.75;align-self:center;"></iframe>
+# Quick Reference
+
+<iframe src="https://bgoonz-bookmarks.netlify.app/" height="1600px" width="100%" style="zoom:0.75;align-self:center;"></iframe>
+
+<iframe src="https://search-awesome.vercel.app/" height="1600px" width="100%" style="zoom:0.75;align-self:center;"></iframe>
 
 <iframe src="https://sidebar-blog.netlify.app/" height="1600px" width="100%" style="zoom:0.75;align-self:center;"></iframe>
