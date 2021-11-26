@@ -1,6 +1,6 @@
 ---
 title: Git Repo List
-weight: 1
+weight: 0
 excerpt: lorem-ipsum
 seo:
     title: ''

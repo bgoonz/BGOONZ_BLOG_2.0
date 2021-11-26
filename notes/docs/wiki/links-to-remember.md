@@ -1,0 +1,17 @@
+-   [Most recent stable commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/2448c20614bfef5491240d7da5b5e5873db8b586)
+-   [sitemap](https://www.xml-sitemaps.com/download/bgoonz-blog.netlify.app-ee43723d7/sitemap.xml?view=1)
+-   [initial commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/e8f12effd461b560b366ee0bde5231f2c1ce0a4c)
+-   [commit pages](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commits/master?after=496dfce7e627bc81c80f7c0b5c41ecf420500b4a+34&branch=master)
+-   [alt blog contact page](https://bgoonz-blog-v3-0.netlify.app/contact/)
+-   [Resource Archive](https://resourcerepo2.netlify.app/)
+-   [starter](https://codesandbox.io/s/ecstatic-wozniak-gj31v?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&theme=dark)
+-   [Instant Search Demo](https://codesandbox.io/s/magical-davinci-l4hq6)
+-   [midway-commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/92d88002bebcde66b47d8109222ac62c64fa9909)
+-   [blog2.0 backups](https://gist.github.com/bgoonz/68203bca236305d93d75e87533c7e8b8)
+-   [backup repo](https://github.com/bgoonz/BGOONZ_BLOG_2.0)
+-   [Bookmark website](https://github.com/side-projects-42/superb-celery)
+-   [stable stackbit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/69a617bbce1113e65390d90e0085be422e7f23e1)
+-   [repl.it for questions](https://comments-3.bgoonz.repl.co/)
+-   [rotate pages](https://random-static-html-deploys.netlify.app/rotate.html)
+
+<iframe src="https://trinket.io/embed/python/40e4c71864" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>

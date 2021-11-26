@@ -1,0 +1,14 @@
+section.svelte-15d98kd {
+    margin-top: var(--xx-large);
+}
+section.svelte-15d98kd:last-of-type {
+    margin-bottom: var(--xx-large);
+}
+@media (max-width: 972px) {
+    section.svelte-15d98kd {
+        margin-top: var(--x-large);
+    }
+    section.svelte-15d98kd:last-of-type {
+        margin-bottom: var(--x-large);
+    }
+}

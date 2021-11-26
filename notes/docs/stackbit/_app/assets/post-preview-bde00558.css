@@ -1,0 +1,23 @@
+@media (min-width: 1280px) {
+    .blurb.svelte-i5xvka > .svelte-i5xvka:first-child {
+        flex: 0 0 75%;
+    }
+}
+h2.svelte-i5xvka.svelte-i5xvka,
+h3.svelte-i5xvka.svelte-i5xvka {
+    font-size: var(--h4);
+}
+h2.svelte-i5xvka a.svelte-i5xvka,
+h3.svelte-i5xvka a.svelte-i5xvka {
+    color: var(--black);
+    text-decoration: none;
+}
+h2.svelte-i5xvka a.svelte-i5xvka:focus,
+h2.svelte-i5xvka a.svelte-i5xvka:hover,
+h3.svelte-i5xvka a.svelte-i5xvka:focus,
+h3.svelte-i5xvka a.svelte-i5xvka:hover {
+    text-decoration: underline;
+}
+p.svelte-i5xvka.svelte-i5xvka {
+    margin-top: var(--micro);
+}
